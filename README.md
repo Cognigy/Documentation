@@ -1,20 +1,17 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Overview
+This repo contains a prototype of how we can use `mkdocs` in order to write our product documentation.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+# Usage
+In order to work on the documentation and generate new static pages, you can use the following `docker run` statement in order to start a container with the current folder being bind-mounted - so you don't need to install mkdocs on your machine.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+We are using the following Docker image which includes a development server:
+https://hub.docker.com/r/squidfunk/mkdocs-material
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+```
+docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+```
+
+# Theming
+We are using `mkdocs` with the theme `material ui`:
+https://squidfunk.github.io/mkdocs-material/
