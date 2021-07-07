@@ -49,3 +49,13 @@ Important topics to consider:
 
 - **SEO & redirects**:<br>
   We already have quite some product documentation and Google already integrated our docs-pages into their search index. We need to make sure that we `configure redirects` so that the old links for the old documentation still works and simply points to the new pages.
+
+** Iterations**
+
+1. Migrate a small section of our product documentation for AI to this repository. Deal with images, other assets. Also deal with multiple languages.
+
+2. Build a build-pipeline using Azure Pipelines which can build and deploy the state into a Kubernetes cluster.
+
+3. Deal with re-directs so "old" links can be transparently redirected (302 Moved permanently) to the new links.
+
+4. Migrate the whole content.
