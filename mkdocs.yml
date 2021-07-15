@@ -1,4 +1,122 @@
-site_name: Cognigy.AI
+# Base info
+site_name: ""
 
+
+# Theme configuration
 theme:
-  name: material
+  generator: false
+  custom_dir: overrides
+  name: material 
+  locale: en
+  include_sidebar: true
+  logo: assets/logo-full-transparent.png
+  palette:
+    primary: rgb(19,61,139)
+  font: 
+    text: Mulish
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.tracking
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+
+# Stylesheet
+extra_css:
+  - stylesheets/extra.css
+
+# Page tree
+nav:
+  - Home: 'index.md'
+  - Cognigy.AI Docs: 
+    - Platform Overview: 'platform-overview.md'
+    - Recources: 
+      - Agents: 'agents/agents.md'
+      - Journeys: 'agents/journeys.md'
+      - Tasks: 'agents/tasks.md'
+  - Insights Docs: 'insights-docs.md'
+
+# plugins:
+#   - mike
+
+# Localization
+extra:
+  generator: false
+  alternate:
+    # Switch to English
+    - name: English
+      link: http://0.0.0.0:8000/
+      lang: en
+
+    # Switch to German
+    - name: Deutsch
+      link: locales/de/
+      lang: de
+
+# Versioning
+  version:
+    provider: mike
+    default: stable
+
+# Footer
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/squidfunk
+      name: squidfunk on Twitter
+
+# Markdoen Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.critic:
+      mode: view
+
+# Copyright
+copyright: Copyright &copy; 2021 Cognigy.AI
