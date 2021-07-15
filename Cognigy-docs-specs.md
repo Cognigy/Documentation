@@ -94,3 +94,7 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 ## Out of Scope 
 Legacy documentation – disabled sections 
+
+## Timeline
+
+Estimated completion of the project: 
