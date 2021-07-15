@@ -12,7 +12,7 @@ This page contains a full description of the Cognigy Documentation migration fro
 
 ## Background 
 
-Readme.io is a documentation solution that makes it complicated to control the growing documentation of Cognigy and also wastes space on the webpage. It was does not have functionalities 
+Readme.io is a documentation solution that makes it complicated to control the growing documentation of Cognigy will needs a different setup regarding localization and different products. Also, the template wastes space on the webpage. 
 
  ## Goals / Acceptance criteria 
 
@@ -32,7 +32,7 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 **Milestone 3 - Deal with re-directs so "old" links can be transparently redirected (302 Moved permanently) to the new links.**
 
-- As a customer, I want all links I used to use still be reachable 
+- As a customer, I want all links I used to use still to be reachable 
 - As a Support team member, I want all docs links to be the same for the Knowledge base articles 
 
 **Milestone 4 - Migrate the whole content and test.**
@@ -43,10 +43,10 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 ### TASK: Setup MKdocs pages 
 
-* Wireframe of the page - (consider localization/versioning and customization, different products, links to help center, possibility of contributing to the documentation) 
+* Wireframe of the page - (consider localization/versioning and customization, different products, links to help center, the possibility of contributing to the documentation) 
 * Yml doc setup (meta data etc - https://ibm.github.io/workshop-setup/MKDOCS/ ) https://www.mkdocs.org/user-guide/configuration/  
 * Folder structure creation (consider localization/versioning and customization, different products) https://squidfunk.github.io/mkdocs-material/customization/#setup-and-theme-structure 
-* Customization of template: 
+* Customization of the template: [Mockups](https://cognigy-my.sharepoint.com/:p:/p/e_helms/ERmzmCBm6yRCvzeoO2lWWXgBVDmxG63AN8B0bemyePyg-w?e=ocrF9x)
 	* Basic - YML doc 
 	* Deep - extra CSS 
 * Markdown extensions needed for the theme: https://squidfunk.github.io/mkdocs-material/reference/abbreviations/ Formatting options: https://www.mkdocs.org/user-guide/configuration/  
@@ -67,7 +67,7 @@ Readme.io is a documentation solution that makes it complicated to control the g
 ### TASK: Content carry over 
 
 * Carrying over the installation docs from pdf to markdown 
-* Carrying over all content from CDocs in ReadMe.io 
+* Carrying overall content from CDocs in ReadMe.io 
 
 ### TASK: SEO & Redirecting links 
 
@@ -80,7 +80,7 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 * Deploy containerized Documentation website 
 
-### TASK: Cross checking and updating the pages that were updated since the start of the migration 
+### TASK: Cross-checking and updating the pages that were updated since the start of the migration 
 
 ### TASK: Testing 
 
@@ -94,8 +94,9 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 ## Out of Scope 
 Legacy documentation – disabled sections 
-Versions until 3.4
+Versions until 3.6
 
 ## Timeline
 
-Estimated completion of the project: 
+Estimated completion of the project: max 10 weeks
+[Calculations](https://cognigy-my.sharepoint.com/:w:/p/e_helms/EVVQbFjLDJFAp1N2Idy2Jl8BiJxcayCFH2MUqDWIiLzigQ?e=KAX8xD)
