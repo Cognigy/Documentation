@@ -43,24 +43,24 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 ### TASK: Setup MKdocs pages 
 
-* Wireframe of the page - (consider localization/versioning and customization, different products, links to help center, the possibility of contributing to the documentation) 
-* Yml doc setup (meta data etc - https://ibm.github.io/workshop-setup/MKDOCS/ ) https://www.mkdocs.org/user-guide/configuration/  
-* Folder structure creation (consider localization/versioning and customization, different products) https://squidfunk.github.io/mkdocs-material/customization/#setup-and-theme-structure 
-* Customization of the template: [Mockups](https://cognigy-my.sharepoint.com/:p:/p/e_helms/ERmzmCBm6yRCvzeoO2lWWXgBVDmxG63AN8B0bemyePyg-w?e=ocrF9x)
+* Wireframe of the page - (consider localization/versioning and customization, different products, links to help center, the possibility of contributing to the documentation) [Mockups](https://cognigy-my.sharepoint.com/:p:/p/e_helms/ERmzmCBm6yRCvzeoO2lWWXgBVDmxG63AN8B0bemyePyg-w?e=ocrF9x)
+* Customization of the template: 
 	* Basic - YML doc 
 	* Deep - extra CSS 
-* Markdown extensions needed for the theme: https://squidfunk.github.io/mkdocs-material/reference/abbreviations/ Formatting options: https://www.mkdocs.org/user-guide/configuration/  
+* Yml doc setup (config files) 
+* Folder structure creation (consider localization/versioning and customization, different products) 
+* Markdown extensions needed for the theme to do the necessary formating with Markdown syntax
 
 ### TASK: Readme.io content transformation to MKDocs 
 
 * Export markdown files from ReadMe.io 
-* Run scripts to convert to normal MD files (https://github.com/phantombuster/readme.io-to-markdown)  
+* Run scripts to convert to normal MD files (if decided) 
 * Image migration/storage to MKDocs 
  
 ### TASK: Localization setup 
 
 * Localization of the template – MK Docs integrated languages 
-* Integrate translations of the theme into MKDocs Cognigy (https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language) - Consider using a Unicode-aware slug function 
+* Integrate translations of the theme into MKDocs Cognigy - Consider using a Unicode-aware slug function 
 * Localization of the content 
 * Set up at least one translation directory - Consider: Separation of languages to single MKDocs instances (because of bandwidth) 
 
@@ -71,7 +71,7 @@ Readme.io is a documentation solution that makes it complicated to control the g
 
 ### TASK: SEO & Redirecting links 
 
-* Redirect prototype creation (link structure e.g. /ai/en/intents) Azure reverse proxy 
+* Redirect prototype creation (link structure e.g. /ai/en/4.6/intents) Azure reverse proxy 
 * Create a list/map of links to redirect (maybe with site crawl) add priority (best ranking pages) 
 * Set up redirects according to priority (1:1 redirect, no loops, no chains) 
 * Testing redirects, crawling for 404 
