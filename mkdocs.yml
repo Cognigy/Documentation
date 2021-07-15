@@ -45,7 +45,7 @@ nav:
   - Home: 'index.md'
   - Cognigy.AI Docs: 
     - Platform Overview: 'platform-overview.md'
-    - Recources: 
+    - Resources: 
       - Agents: 'agents/agents.md'
       - Journeys: 'agents/journeys.md'
       - Tasks: 'agents/tasks.md'
