@@ -1,2 +1,0 @@
-# Cognigy.AI Documentation
-## German

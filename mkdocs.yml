@@ -1,26 +1,24 @@
 # Base info
 site_name: ""
 
-
 # Theme configuration
 theme:
-  generator: false
   custom_dir: overrides
   name: material 
-  locale: en
-  include_sidebar: true
+  language: en
+
   logo: assets/logo-full-transparent.png
   palette:
     primary: rgb(19,61,139)
   font: 
     text: Mulish
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.tracking
-    - navigation.expand
-    - navigation.indexes
-    - navigation.top
+   - navigation.tabs
+  #   - navigation.sections
+  #   - navigation.tracking
+   - navigation.indexes
+  #   - navigation.expand
+  #   - navigation.top
   icon:
     admonition:
       note: octicons/tag-16
@@ -40,44 +38,56 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-# Page tree
+# # Page tree
 nav:
   - Home: 'index.md'
   - Cognigy.AI Docs: 
-    - Platform Overview: 'platform-overview.md'
+    - Platform Overview: 'cognigyAI-docs/platform-overview/platform-overview.md'
     - Resources: 
-      - Agents: 'agents/agents.md'
-      - Journeys: 'agents/journeys.md'
-      - Tasks: 'agents/tasks.md'
-  - Insights Docs: 'insights-docs.md'
+      - Agents: 'cognigyAI-docs/recources/agents/agents.md'
+      - Journeys: 'cognigyAI-docs/recources/journeys/journeys.md'
+      - Tasks: 'cognigyAI-docs/recources/tasks/tasks.md'
+  - Insights Docs: 'insights-docs/insights-docs.md'
 
-# plugins:
-#   - mike
-
+plugins:
+  - search 
+  - i18n:
+      default_language: en
+      languages:
+        de: Deutsch
+      nav_translations:
+        de:
+          Topic1: Sujet1
+          Topic2: Sujet2
+      
 # Localization
 extra:
-  generator: false
   alternate:
-    # Switch to English
-    - name: English
-      link: http://0.0.0.0:8000/
+    - name: Default (en)
+      link: ./
       lang: en
-
-    # Switch to German
     - name: Deutsch
-      link: locales/de/
+      link: ./de/
       lang: de
-
-# Versioning
-  version:
-    provider: mike
-    default: stable
+  generator: false
 
 # Footer
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/squidfunk
-      name: squidfunk on Twitter
+      link: https://twitter.com/cognigy
+      name: Cognigy on Twitter
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/cognigy/
+      name: Cognigy on Facebook
+    - icon: fontawesome/brands/github
+      link: https://github.com/Cognigy
+      name: Cognigy on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/cognigy/mycompany/
+      name: Cognigy on LinkedIn
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/c/Cognigy
+      name: Cognigy on YouTube
 
 # Markdoen Extensions
 markdown_extensions:
@@ -86,6 +96,8 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
+  # - markdown_include.include:
+  #     base_path: docs
   - meta
   - toc:
       permalink: true

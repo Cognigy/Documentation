@@ -24,3 +24,4 @@ Continue with our Platform Overview or use the menu on the left for more detaile
 </a>
 </div>
 
+ {!release-notes/v4.7.0.md!}
