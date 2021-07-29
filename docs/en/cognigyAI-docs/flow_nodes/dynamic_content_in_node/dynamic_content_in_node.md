@@ -1,0 +1,1 @@
+# Daynamic Content in Nodes
