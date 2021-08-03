@@ -42,7 +42,11 @@ extra_css:
 nav:
   - Home: 'index.md'
   - Cognigy.AI Docs: 
-    - Platform Overview: 'en/cognigyAI-docs/platform-overview/platform-overview.md'
+    - Welcome: 
+      - Cognigy.AI Documentation: 'en/cognigyAI-docs/wellcome/cognigy_ai_documentation/cognigy_ai_documentation.md'
+      - Platform Overview: 'en/cognigyAI-docs/wellcome/platform_overview/platform_overview.md'
+    - Notes: 
+      - Release notes: 'en/cognigyAI-docs/notes/release_notes/release_notes.md'
     - Resources: 
       - Agents: 
         - Agents: 'en/cognigyAI-docs/resources/agents/agents.md'
@@ -173,6 +177,78 @@ nav:
         - No NLU: 'en/cognigyAI-docs/nlu/external_nlu/no_nlu.md'
       - Language Support: 'en/cognigyAI-docs/nlu/language_support/language_support.md'
       - NLU Warnings: 'en/cognigyAI-docs/nlu/nlu_warnings/nlu_warnings.md'
+    - Tools:
+      - User Menu:
+        - User Menu: 'en/cognigyAI-docs/tools/user_menu/user_menu.md'
+        - My Profile: 'en/cognigyAI-docs/tools/user_menu/my_profile.md'
+        - Access Control: 'en/cognigyAI-docs/tools/user_menu/access_control.md'
+        - Usage Statistics: 'en/cognigyAI-docs/tools/user_menu/usage_statistics.md'
+      - Interaction Panal: 
+        - Interaction Panal: 'en/cognigyAI-docs/tools/interaction_panel/interaction_panel.md'
+        - Input: 'en/cognigyAI-docs/tools/interaction_panel/input.md'
+        - State: 'en/cognigyAI-docs/tools/interaction_panel/state.md'
+        - Context: 'en/cognigyAI-docs/tools/interaction_panel/context.md'
+        - Profile: 'en/cognigyAI-docs/tools/interaction_panel/profile.md'
+      - CognigyScript: 'en/cognigyAI-docs/tools/cognigy_Script/cognigy_Script.md'
+      - Analytics: 
+        - Analytics: 'en/cognigyAI-docs/tools/analytics/analytics.md'
+        - Agent Analytics: 'en/cognigyAI-docs/tools/analytics/agents_analytics.md'
+        - OData Analytics Endpoint: 'en/cognigyAI-docs/tools/analytics/odata_analytics_endpoint.md'
+        - Analytics Concepts: 'en/cognigyAI-docs/tools/analytics/analytics_concepts.md'
+      - Hotkeys: 'en/cognigyAI-docs/tools/hotkeys/hotkeys.md'
+      - Management UI: 'en/cognigyAI-docs/tools/management_ui/management_ui.md'
+      - Agent Handover: 'en/cognigyAI-docs/tools/agent_handover/agent_handover.md'
+      - Live Agent: 'en/cognigyAI-docs/tools/live_agent/live_agent.md'
+    - Endpoints:
+      - Overview: 'en/cognigyAI-docs/endpoints/overview/overview.md'
+      - Data Protection & Analytics: 'en/cognigyAI-docs/endpoints/data_protection_and_analytics/data_protection_and_analytics.md'
+      - Session Managemen: 'en/cognigyAI-docs/endpoints/session_management/session_management.md'
+      - Handover Settings: 'en/cognigyAI-docs/endpoints/handover_settings/handover_settings.md'
+      - Transformers:
+        - Transformers: 'en/cognigyAI-docs/endpoints/transformers/transformers.md'
+        - Input Transformer: 'en/cognigyAI-docs/endpoints/transformers/input_transformer.md'
+        - Output Transformer: 'en/cognigyAI-docs/endpoints/transformers/output_transformer.md'
+        - Execution Finished Transformer: 'en/cognigyAI-docs/endpoints/transformers/execution_finished_transformer.md'
+        - Notify Transformer: 'en/cognigyAI-docs/endpoints/transformers/notify_transformer.md'
+        - Inject Transformer: 'en/cognigyAI-docs/endpoints/transformers/inject_transformer.md'
+      - Inject & Notify: 'en/cognigyAI-docs/endpoints/inject_and_notify/inject_and_notify.md'
+      - Cognigy Webchat: 
+        - Cognigy Webchat: 'en/cognigyAI-docs/endpoints/cognigy_webchat/cognigy_webchat.md'
+        - Deploy a Webchat Endpoint: 'en/cognigyAI-docs/endpoints/cognigy_webchat/deploy_a_webchat_endpoit.md'
+        - Webchat Features: 'en/cognigyAI-docs/endpoints/cognigy_webchat/webchat_features.md'
+        - Triggering Webchat Plugins: 'en/cognigyAI-docs/endpoints/cognigy_webchat/triggering_webchat_plugins.md'
+        - integrated Demo Page: 'en/cognigyAI-docs/endpoints/cognigy_webchat/integrated_demo_page.md'
+      - Cognigy Voice Gateway: 'en/cognigyAI-docs/endpoints/cognigy_voice_gateway/cognigy_voice_gateway.md'
+      - REST: 'en/cognigyAI-docs/endpoints/rest/rest.md'
+      - socket.io: 'en/cognigyAI-docs/endpoints/socket_io/socket_io.md'
+      - Webhock: 'en/cognigyAI-docs/endpoints/webhook/webhook.md'
+      - Amazon Alexa: 'en/cognigyAI-docs/endpoints/amazon_alexa/amazon_alexa.md'
+      - Dialogflow: 'en/cognigyAI-docs/endpoints/dialogflow/dialogflow.md'
+      - Facebook Messenger: 'en/cognigyAI-docs/endpoints/fasebook_messenger/fasebook_messenger.md'
+      - Google Actions: 'en/cognigyAI-docs/endpoints/google_actions/google_actions.md'
+      - Intercom: 'en/cognigyAI-docs/endpoints/intercom/intercom.md'
+      - LINE Messenger: 'en/cognigyAI-docs/endpoints/line_messenger/line_messenger.md'
+      - Azure Bot Services: 'en/cognigyAI-docs/endpoints/azure_bot_services/azure_bot_services.md'
+      - Microsoft Teams: 'en/cognigyAI-docs/endpoints/microsoft_teams/microsoft_teams.md'
+      - RingCentral Engage: 'en/cognigyAI-docs/endpoints/ringcentral_engage/ringcentral_engage.md'
+      - Slack: 'en/cognigyAI-docs/endpoints/slack/slack.md'
+      - Sunshine Conversations: 'en/cognigyAI-docs/endpoints/sunshine_conversations/sunshine_conversations.md'
+      - Twillo: 'en/cognigyAI-docs/endpoints/twillio/twillio.md'
+      - Userlike: 'en/cognigyAI-docs/endpoints/userlike/userlike.md'
+      - Workplace by Facebook: 'en/cognigyAI-docs/endpoints/workplace_by_facebook/workplace_by_facebook.md'
+    - Installation & Configuration:
+      - Installation & Updating: 'en/cognigyAI-docs/installation_and_configuration/installation_and_updating/installation_and_updating.md'
+      - Browser Requirements: 'en/cognigyAI-docs/installation_and_configuration/browser_requirements/browser_requirements.md'
+      - Single Sign-on using SAML 2.0: 'en/cognigyAI-docs/installation_and_configuration/single_sign_on_using_saml_20/single_sign_on_using_saml_20.md'
+      - Single Sign-on using OpenID Connect: 'en/cognigyAI-docs/installation_and_configuration/single_sign_on_using_openid_connect/single_sign_on_using_openid_connect.md'
+      - IP Ranges Shared Envionments: 'en/cognigyAI-docs/installation_and_configuration/ip_ranges_shared_environments/ip_ranges_shared_environments.md'
+    - Developer Guides:
+      - API Reference: 'en/cognigyAI-docs/developer_guides/api_reference/api_reference.md'
+      - Using the API: 'en/cognigyAI-docs/developer_guides/using_the_api/using_the_api.md'
+      - Clients: 'en/cognigyAI-docs/developer_guides/clients/clients.md'
+    - Help & Cotact:
+      - Get Help & Report Problems: 'en/cognigyAI-docs/help_and_contact/get_help_and_report_problems/get_help_and_report_problems.md'
+      - Community: 'en/cognigyAI-docs/help_and_contact/community/community.md'
 
   - Insights Docs: 'en/insights-docs/insights-docs.md'
 
