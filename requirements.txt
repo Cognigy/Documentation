@@ -1,0 +1,4 @@
+typer-cli
+mkdocs
+mkdocs-material
+mdx-include

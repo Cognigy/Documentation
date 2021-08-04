@@ -29,8 +29,13 @@
 
 }
 
+.md-nav__link--active {
+  background-color: #0b3694;
+  color: white !important;
+  padding: 2px;
+}
+
 .md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2) > a{
-        
   display: none;
 }
 

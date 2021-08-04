@@ -59,3 +59,24 @@ Important topics to consider:
 3. Deal with re-directs so "old" links can be transparently redirected (302 Moved permanently) to the new links.
 
 4. Migrate the whole content.
+
+# Run Mkdocs multiple language build
+## Requirements
+
+- python3 3.8.10
+- typer-cli 0.0.12
+- mkdocs 1.2.2
+- mkdocs-material 7.2.1
+
+## Commands to deploy
+
+ pip install -r requirements.txt
+
+### see live view
+python3 ./scripts/docs.py live 
+
+### build all languages
+python3 ./scripts/docs.py build-all
+
+### serve the site
+python3 ./scripts/docs.py serve
