@@ -646,6 +646,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.cognigy.com/ai/notes/release-notes/</loc>
+         <lastmod>2021-08-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.cognigy.com/ai/release-notes/4.8.0/</loc>
          <lastmod>2021-08-04</lastmod>
          <changefreq>daily</changefreq>
