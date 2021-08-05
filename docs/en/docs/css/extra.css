@@ -35,7 +35,7 @@
   padding: 2px;
 }
 
-.md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2) > a{
+.md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2) {
   display: none;
 }
 

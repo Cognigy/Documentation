@@ -125,3 +125,6 @@ extra_css:
 extra_javascript:
 - http://127.0.0.1:8008/js/termynal.js
 - http://127.0.0.1:8008/js/custom.js
+plugins:
+- macros
+- search

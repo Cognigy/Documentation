@@ -318,3 +318,6 @@ extra_css:
 extra_javascript:
 - js/termynal.js
 - js/custom.js
+plugins:
+- macros
+- search

@@ -54,7 +54,7 @@ def complete_existing_lang(incomplete: str):
 
 def get_base_lang_config(lang: str):
     en_config = get_en_config()
-    fastapi_url_base = "http://127.0.0.1:8008/"
+    fastapi_url_base = "http://127.0.0.1:8008/" 
     new_config = en_config.copy()
     new_config["site_url"] = en_config["site_url"] + f"{lang}/"
     new_config["theme"]["logo"] = fastapi_url_base + en_config["theme"]["logo"]
