@@ -67,6 +67,7 @@ Important topics to consider:
 - typer 0.3.2
 - mkdocs 1.2.2
 - mkdocs-material 7.2.1
+- mkdocs-macros-plugin
 
 ## Commands to deploy
 

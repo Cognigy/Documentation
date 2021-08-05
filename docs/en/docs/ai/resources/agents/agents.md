@@ -3,6 +3,8 @@
 
 All your conversational AI resources in one place.
 
+{{config.site_url}}
+
 ## Description
 <img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
 
