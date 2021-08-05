@@ -64,7 +64,7 @@ Important topics to consider:
 ## Requirements
 
 - python3 3.8.10
-- typer-cli 0.0.12
+- typer 0.3.2
 - mkdocs 1.2.2
 - mkdocs-material 7.2.1
 

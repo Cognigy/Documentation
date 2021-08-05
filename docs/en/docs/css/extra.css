@@ -9,6 +9,14 @@
   border-radius: 20px;
 }
 
+.md-typeset__table {
+  min-width: 100%;
+}
+
+.md-typeset__table table, .md-typeset__table table thead, .md-typeset__table table tbody {
+  min-width: 100%;
+}
+
 .md-header__inner, .md-tabs__inner {
   max-width: 90%;
 }
@@ -35,7 +43,7 @@
   padding: 2px;
 }
 
-.md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2) > a{
+.md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2) {
   display: none;
 }
 
