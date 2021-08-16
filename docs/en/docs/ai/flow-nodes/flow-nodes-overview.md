@@ -13,7 +13,7 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
 | [NLU Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#nlu-nodes)   |
 
 ## Basic Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px; height: 3px">
 
 **Basic Nodes** are Nodes that are commonly used in[ basic conversational Flows. Included are typical Nodes like the [**Say Node**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#say), the [**Question Node**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#question) as well as well as certain Flow actions like [**Stop and Return**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#stop-and-return). 
 ## Message Nodes

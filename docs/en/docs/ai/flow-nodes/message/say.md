@@ -10,7 +10,7 @@ Depending on the current Channel, additional rich media formats are available. A
 If there is a Channel-specific configuration for the current Channel, this configuration will be used *instead* of the one on the default section.
 
 ## AI (default channel) 
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px; height: 3px">
 ![AI](../images/894062b-1AI.jpg){ width=100% }
 ???+ success "Automatic Conversion to Channel Specific Output"
     In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Please check the specific Output Type above to verify channel support.
@@ -18,7 +18,7 @@ If there is a Channel-specific configuration for the current Channel, this confi
     In case the automatic conversion to channel specific output cannot take place, the Fallback Text will be triggered.
 
 ## Output Types
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px; height: 3px">
 
 The AI Channel allows for the configuration of different **Output Types**:
 
