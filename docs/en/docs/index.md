@@ -6,6 +6,7 @@ Continue with our Platform Overview or use the menu on the left for more detaile
 ## Choose product
 
 <div class="card-container">
+
 <a class="card-link" href="http://0.0.0.0:8000/platform-overview.html">
 <div class="card">
   <img class="card-image" src="/img/logo_prod.jpeg" alt="Cognigy Logo">
@@ -14,6 +15,7 @@ Continue with our Platform Overview or use the menu on the left for more detaile
   </div>
 </div>
 </a>
+
 <a class="card-link" href="http://0.0.0.0:8008/insights-docs.html">
 <div class="card">
   <img class="card-image" src="/img/logo_prod.jpeg" alt="Cognigy Logo" >
@@ -39,5 +41,5 @@ Continue with our Platform Overview or use the menu on the left for more detaile
   </div>
 </div>
 </a>
-</div>
 
+</div>

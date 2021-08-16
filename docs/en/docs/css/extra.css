@@ -68,17 +68,26 @@
 }
 
 /* Landing page cards */
+.card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-link{
+  width: 50%;
+  padding: 1em;
+}
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
   border-radius: 10px;
   display: flex;
-}
-.card-link{
-  width: 100%;
-  margin: 1em;
 }
 
 .card-image {
@@ -98,12 +107,4 @@
   width: 70%;
   display: flex;
   align-items: center;
-}
-
-.card-container {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
 }

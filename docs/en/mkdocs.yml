@@ -38,6 +38,7 @@ theme:
   logo: img/logo.png
   favicon: img/favicon.png
   language: en
+
 nav:
 - Home: index.md
 - Languages:
@@ -48,7 +49,7 @@ nav:
   - Release Notes:
     - ai/release-notes/4.8.0.md
   - Recources:
-    - ai/resources/overview.md
+    # - ai/resources/overview.md
     - Agents:
       - ai/resources/agents/agents.md
       - ai/resources/agents/journeys.md
@@ -79,10 +80,11 @@ nav:
       - ai/resources/manage/contact-profiles.md
       - ai/resources/manage/packages.md
   - Flow Nodes:
-    - ai/flow-nodes/flow-nodes-overview.md
+    - Flow Nodes Overview: ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
     - Message:
+      - ai/flow-nodes/message/message.md
       - ai/flow-nodes/message/say.md
       - ai/flow-nodes/message/question.md
       - ai/flow-nodes/message/optional-question.md
@@ -319,5 +321,6 @@ extra_javascript:
 - js/termynal.js
 - js/custom.js
 plugins:
+- section-index
 - macros
 - search
