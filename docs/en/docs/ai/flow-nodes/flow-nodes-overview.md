@@ -13,11 +13,11 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
 | [NLU Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#nlu-nodes)   |
 
 ## Basic Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px; height: 3px">
+<div class="divider"></div>
 
 **Basic Nodes** are Nodes that are commonly used in[ basic conversational Flows. Included are typical Nodes like the [**Say Node**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#say), the [**Question Node**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#question) as well as well as certain Flow actions like [**Stop and Return**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#stop-and-return). 
 ## Message Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<div class="divider"></div>
 Message Nodes generate certain output that is returned to the user. They are generally multi-channel capable, which means that they work across a broad-range of Endpoints.
 
 ### Say
@@ -36,7 +36,7 @@ The Send Email Node can be used to send an email message directly from within th
 The Datepicker can be used to render a date selection widget in certain channels. It has an extensive list of configurable options.
 ![node-datepicker](./images/906e522-node-datepicker.jpg){ width=100% }
 ## Logic Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<div class="divider"></div>
 
 Logic Nodes can be used to execute a certain logic in the flow. They include classical conditions, as well as specific Flow behavior like waiting for a user input.
 ### If
@@ -77,7 +77,7 @@ With the Set State Node, the Flow's [**State**]({{config.site_url}}ai/tools/inte
 With the Reset State Node, the Flow's [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) can be reset.
 ![logic-resetstate](./images/f1bd127-logic-resetstate.jpg){ width=100% }
 ## Profile Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<div class="divider"></div>
 
 Profile Nodes are used to update  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/)  information. Common operations are:
 ### Activate Profile
@@ -105,7 +105,7 @@ Deletes the currently active  [**Contact Profile**]({{config.site_url}}ai/resour
 ### Complete Goal
 Can be used to add a custom Goal to the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/). Custom Goals are KPIs that can be dynamically configured and that show up in the output analytics as well as the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/)  overview.
 ## Service Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<div class="divider"></div>
 
 Service Nodes can be used to trigger external services, like databases and email servers. Cognigy.AI ships with a number of built-in services. Additional services can be added through [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) .
 ### HTTP Request
@@ -173,7 +173,7 @@ Runs a transaction.
   * **Run StoredProcedure**
 Triggers a StoredProcedure.
 ## NLU Nodes
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px;">
+<div class="divider"></div>
 NLU Nodes are a collection of Nodes that are related to the platform's [**NLU**]({{config.site_url}}ai/nlu/overview/). It features a range of different Nodes.
 
 ### Question
