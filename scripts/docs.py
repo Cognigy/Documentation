@@ -12,7 +12,6 @@ import mkdocs.config
 import mkdocs.utils
 import typer
 import yaml
-from jinja2 import Template
 
 app = typer.Typer()
 
@@ -54,11 +53,11 @@ def complete_existing_lang(incomplete: str):
 
 def get_base_lang_config(lang: str):
     en_config = get_en_config()
-    fastapi_url_base = "http://127.0.0.1:8008/" 
+    cognigy_url_base = "http://127.0.0.1:8008/" 
     new_config = en_config.copy()
     new_config["site_url"] = en_config["site_url"] + f"{lang}/"
-    new_config["theme"]["logo"] = fastapi_url_base + en_config["theme"]["logo"]
-    new_config["theme"]["favicon"] = fastapi_url_base + en_config["theme"]["favicon"]
+    new_config["theme"]["logo"] = cognigy_url_base + en_config["theme"]["logo"]
+    new_config["theme"]["favicon"] = cognigy_url_base + en_config["theme"]["favicon"]
     new_config["theme"]["language"] = lang
     new_config["nav"] = en_config["nav"][:2]
     extra_css = []
@@ -67,7 +66,7 @@ def get_base_lang_config(lang: str):
         if css.startswith("http"):
             extra_css.append(css)
         else:
-            extra_css.append(fastapi_url_base + css)
+            extra_css.append(cognigy_url_base + css)
     new_config["extra_css"] = extra_css
 
     extra_js = []
@@ -76,7 +75,7 @@ def get_base_lang_config(lang: str):
         if js.startswith("http"):
             extra_js.append(js)
         else:
-            extra_js.append(fastapi_url_base + js)
+            extra_js.append(cognigy_url_base + js)
     new_config["extra_javascript"] = extra_js
     return new_config
 
@@ -152,7 +151,7 @@ def build_lang(
         lang_config_path.read_text(encoding="utf-8")
     )
     lang_nav = lang_config["nav"]
-    # Exclude first 2 entries FastAPI and Languages, for custom handling
+    # Exclude first 2 entries Home and Languages, for custom handling
     use_nav = nav[2:]
     lang_use_nav = lang_nav[2:]
     file_to_nav = get_file_to_nav_map(use_nav)
@@ -176,9 +175,12 @@ def build_lang(
                 for key_part in file_key:
                     composite_key += (key_part,)
                     key_first_file = sections[composite_key]
-                    if key_first_file in lang_file_to_nav:
-                        new_key = lang_file_to_nav[key_first_file]
-                    else:
+                    try:
+                        if key_first_file in lang_file_to_nav:
+                            new_key = lang_file_to_nav[key_first_file]
+                        else:
+                            new_key += (key_part,)
+                    except TypeError: 
                         new_key += (key_part,)
                 use_lang_file_to_nav[file] = new_key
     key_to_section = {(): []}
@@ -338,7 +340,7 @@ def update_config(lang: str):
         else:
             use_name = alternate_dict[url]
             new_alternate.append({"link": url, "name": use_name})
-    config["nav"][1] = {"Languages": languages}
+    #config["nav"][1] = {"Languages": languages}
     config["extra"]["alternate"] = new_alternate
     config_path.write_text(
         yaml.dump(config, sort_keys=False, width=200, allow_unicode=True),

@@ -1,9 +1,8 @@
-# Cognigy.AI Product Documentation
 
 Welcome to the platform documentation of Cognigy.AI, a Conversational AI platform that helps you create advanced virtual agents that can be rolled out across a wide range of channels.
 Continue with our Platform Overview or use the menu on the left for more detailed information on the wide array of Cognigy.AI features.
 
-## Choose product
+Choose product
 
 <div class="card-container">
 

@@ -43,7 +43,7 @@
   padding: 2px;
 }
 
-.md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2) {
+.md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2), body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
   display: none;
 }
 

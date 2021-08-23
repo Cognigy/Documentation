@@ -1,4 +1,4 @@
-site_name: ''
+site_name: Cognigy.AI
 site_description: Documentation from Cognigy.AI products
 site_url: https://docs.cognigy.com/
 theme:
@@ -38,9 +38,8 @@ theme:
   logo: img/logo.png
   favicon: img/favicon.png
   language: en
-
 nav:
-- Home: index.md
+- Cognigy.AI Product Documentation: index.md
 - Languages:
   - en: /
   - de: /de/
@@ -49,7 +48,6 @@ nav:
   - Release Notes:
     - ai/release-notes/4.8.0.md
   - Recources:
-    # - ai/resources/overview.md
     - Agents:
       - ai/resources/agents/agents.md
       - ai/resources/agents/journeys.md
@@ -80,7 +78,7 @@ nav:
       - ai/resources/manage/contact-profiles.md
       - ai/resources/manage/packages.md
   - Flow Nodes:
-    - Flow Nodes Overview: ai/flow-nodes/flow-nodes-overview.md
+    - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
     - Message:
@@ -240,8 +238,6 @@ nav:
   - webchat/index.md
 - Live Agent:
   - live-agent/index.md
-- Voice Gateway:
-  - vg/index.md
 markdown_extensions:
 - toc:
     permalink: true

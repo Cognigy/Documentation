@@ -1,4 +1,4 @@
-site_name: ''
+site_name: Cognigy.AI
 site_description: Documentation from Cognigy.AI products
 site_url: https://docs.cognigy.com/de/
 theme:
@@ -126,5 +126,6 @@ extra_javascript:
 - http://127.0.0.1:8008/js/termynal.js
 - http://127.0.0.1:8008/js/custom.js
 plugins:
+- section-index
 - macros
 - search

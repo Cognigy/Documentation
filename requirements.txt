@@ -3,3 +3,4 @@ mkdocs
 mkdocs-material
 mdx-include
 mkdocs-macros-plugin
+mkdocs-section-index
