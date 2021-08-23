@@ -6,7 +6,7 @@ All your conversational AI resources in one place.
 {{config.site_url}}
 
 ## Description
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 
 Agents contain collections of conversational AI resources, including [Flows](doc:flows), [Lexicons](doc:lexicons), [Endpoints](doc:endpoints) and more. It is possible to work on a given Agent with multiple team members and Agents can deployed on a wide range of channels. 
@@ -16,14 +16,14 @@ Agents contain collections of conversational AI resources, including [Flows](doc
 
 ## Agent Dashboard
 
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 <img src="https://files.readme.io/e56ba84-agent-overview.png" width="100%" style="margin-bottom: 5px">
 
 The Agent Dashboard contains serves as an overview page for you Virtual Agent. It displays information that is relevant to your agent, including Analytics, Project Members, Recently Changed resources and more information on Cognigy.AI itself.
 
 ## Top Toolbar
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 <img src="https://files.readme.io/a6094e4-agent-header.jpg" width="100%" style="margin-bottom: 5px">
 
