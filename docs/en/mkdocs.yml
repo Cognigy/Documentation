@@ -39,7 +39,7 @@ theme:
   favicon: img/favicon.png
   language: en
 nav:
-- Cognigy.AI Product Documentation: index.md
+- Cognigy.AI: index.md
 - Languages:
   - en: /
   - de: /de/

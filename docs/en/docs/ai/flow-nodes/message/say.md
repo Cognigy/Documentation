@@ -55,5 +55,8 @@ Text with Quick Replies can be used to show the user a number of configurable Qu
 
 The click action can be configured to be **Phone Number** or **Send Postback**.
 
-![select_button_type](../images/3dbf220-select_button_type.jpg){ width=100% }
-
+![select_button_type]({{config.site_url}}ai/flow-nodes/images/3dbf220-select_button_type.jpg){ width=60% }
+<!-- <figure>
+  <img src="{{config.site_url}}ai/flow-nodes/images/3dbf220-select_button_type.jpg" width="50%" />
+  <figcaption>Image caption</figcaption>
+</figure> -->
