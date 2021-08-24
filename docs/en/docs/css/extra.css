@@ -115,3 +115,13 @@
   display: flex;
   align-items: center;
 }
+
+/* image */
+.image-center {
+  margin: auto;
+}
+
+
+li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
+  font-weight: bold;
+}
