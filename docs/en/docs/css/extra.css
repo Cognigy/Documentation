@@ -50,6 +50,10 @@
   padding: 2px;
 }
 
+li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
+  font-weight: bold;
+}
+
 .md-footer__inner, .md_grid, .md-footer-copyright__highlight::backdrop, body > div.md-container > nav > div > ul > li:nth-child(2), body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
   display: none;
 }
@@ -119,9 +123,4 @@
 /* image */
 .image-center {
   margin: auto;
-}
-
-
-li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
-  font-weight: bold;
 }
