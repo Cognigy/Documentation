@@ -30,6 +30,12 @@ python3 ./scripts/docs.py serve
 ## Pulling/Pushing changes to the repository
 
 ## Creating new pages
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/..../images/img.jpg" width="100%" />
+  <figcaption>Image caption</figcaption>
+</figure>
+
  ### adjusting yaml file
  ### md file location
  ### naming the file

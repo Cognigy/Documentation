@@ -4,7 +4,9 @@ Inside most Cognigy Flow Nodes you can use what we call [CognigyScript]({{config
 
 See below for an example.
 
-![cognigyscript](./images/e3c8d1e-cognigyscript.jpg){ width=100% }
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e3c8d1e-cognigyscript.jpg" width="80%" />
+</figure>
 
 If the user for example says "hi there", Cognigy would parse the CognigyScript at runtime and change the text above to "You said HI THERE".
 
