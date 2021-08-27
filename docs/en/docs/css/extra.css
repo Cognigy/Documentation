@@ -12,6 +12,17 @@
     margin-bottom: 5px
   }
 
+.center-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image{
+  display: flex;
+  justify-content: flex-end;
+}
+
 .md-button {
   border-radius: 20px;
 }
