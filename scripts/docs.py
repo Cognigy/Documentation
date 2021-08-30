@@ -11,7 +11,8 @@ import mkdocs.commands.serve
 import mkdocs.config
 import mkdocs.utils
 import typer
-import yaml
+import yaml 
+from jinja2 import Template
 
 app = typer.Typer()
 

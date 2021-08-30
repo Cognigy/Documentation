@@ -1,6 +1,6 @@
 site_name: Cognigy.AI
 site_description: Documentation from Cognigy.AI products
-site_url: https://docs.cognigy.com/
+site_url: http://127.0.0.1:8008/
 theme:
   name: material
   custom_dir: overrides
@@ -47,29 +47,29 @@ nav:
   - ai/platform-overview.md
   - Release Notes:
     - ai/release-notes/4.8.0.md
-  - Recources:
-    - Agents:
+  - Ressourcen:
+    - Agenten:
       - ai/resources/agents/agents.md
       - ai/resources/agents/journeys.md
       - ai/resources/agents/tasks.md
-    - Build:
+    - Bauen:
       - ai/resources/build/build.md
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
       - ai/resources/build/connections.md
       - ai/resources/build/NLUconnectors.md
       - ai/resources/build/functions.md
-    - Deploy:
+    - Einsetzen:
       - ai/resources/deploy/endpoints.md
       - ai/resources/deploy/snapshots.md
-    - Test:
+    - Testen:
       - ai/resources/test/playbooks.md
       - ai/resources/test/logs.md
-    - Tweak:
+    - Optimieren:
       - ai/resources/tweak/intent-trainer.md
-    - Analytics:
+    - Statistiken:
       - ai/resources/analytics.md
-    - Manage:
+    - Verwalten:
       - ai/resources/manage/settings.md
       - ai/resources/manage/localization.md
       - ai/resources/manage/tokens.md
@@ -238,6 +238,8 @@ nav:
   - webchat/index.md
 - Live Agent:
   - live-agent/index.md
+- Usage:
+  - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true
@@ -311,6 +313,8 @@ extra:
     name: en
   - link: /de/
     name: de
+  - link: /jp/
+    name: jp
 extra_css:
 - css/extra.css
 extra_javascript:
