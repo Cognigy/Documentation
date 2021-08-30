@@ -103,6 +103,11 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
   padding: 1em;
 }
 
+.card-link-2{
+  width: 25%;
+  padding: 1em;
+}
+
 .card {
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -110,6 +115,10 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
   width: 100%;
   border-radius: 10px;
   display: flex;
+}
+
+.card-link-2 > .card{
+  border: 1px solid #0b3694;
 }
 
 .card-image {
@@ -120,6 +129,10 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 /* On mouse-over, add a deeper shadow */
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card-link-2 > .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
 }
 
 /* Add some padding inside the card container */
