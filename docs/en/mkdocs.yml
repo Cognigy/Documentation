@@ -39,7 +39,7 @@ theme:
   favicon: img/favicon.png
   language: en
 nav:
-- Cognigy.AI: index.md
+- Cognigy Products: index.md
 - Languages:
   - en: /
   - de: /de/
@@ -47,29 +47,29 @@ nav:
   - ai/platform-overview.md
   - Release Notes:
     - ai/release-notes/4.8.0.md
-  - Ressourcen:
-    - Agenten:
+  - Resources:
+    - Agents:
       - ai/resources/agents/agents.md
       - ai/resources/agents/journeys.md
       - ai/resources/agents/tasks.md
-    - Bauen:
+    - Build:
       - ai/resources/build/build.md
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
       - ai/resources/build/connections.md
       - ai/resources/build/NLUconnectors.md
       - ai/resources/build/functions.md
-    - Einsetzen:
+    - Deploy:
       - ai/resources/deploy/endpoints.md
       - ai/resources/deploy/snapshots.md
-    - Testen:
+    - Test:
       - ai/resources/test/playbooks.md
       - ai/resources/test/logs.md
-    - Optimieren:
+    - Tweak:
       - ai/resources/tweak/intent-trainer.md
-    - Statistiken:
+    - Analytics:
       - ai/resources/analytics.md
-    - Verwalten:
+    - Manage:
       - ai/resources/manage/settings.md
       - ai/resources/manage/localization.md
       - ai/resources/manage/tokens.md
@@ -234,7 +234,7 @@ nav:
     - ai/help/get-help.md
 - Insights:
   - insights/index.md
-- Webchat:
+- Webchat Widget:
   - webchat/index.md
 - Live Agent:
   - live-agent/index.md
@@ -313,8 +313,6 @@ extra:
     name: en
   - link: /de/
     name: de
-  - link: /jp/
-    name: jp
 extra_css:
 - css/extra.css
 extra_javascript:

@@ -1,4 +1,4 @@
-# Platform Overview
+# Plattformübersicht
 
 Cognigy.AI was developed in order to overcome most of the challenges in building conversational AIs. One of the unique aspects of the platform, is the bundling of - conversational AI related resources - in a user-friendly interface.
 

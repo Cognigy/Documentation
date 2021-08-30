@@ -4,7 +4,7 @@ Clone repository from Documentation [repo on Azure DevOps](https://cognigy.visua
 Find here on how to do [SSH authentication on Ubuntu Linux](https://www.thomas-krenn.com/en/wiki/SSH_public_key_authentication_under_Ubuntu).
 
 <div class="divider"></div>
-## Running documentation on your PC
+## Running Cognigy documentation on your PC
 
 **Requirements:**
 

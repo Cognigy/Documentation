@@ -138,7 +138,7 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 25px;
-  background-color: #f5f9fc;
+  background-color: #f7f6f9;
   width: 70%;
   display: flex;
   align-items: center;
