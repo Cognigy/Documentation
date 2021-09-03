@@ -1,7 +1,7 @@
 # Cognigy Product Documentation
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/1259f02-logo_cognigy.ai_387x401xpng.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}img/Cognigy-black.svg" width="50%" />
   <br>
 </figure>
 
@@ -16,7 +16,7 @@ Continue with our choosing a product to get more detailed information on the wid
 
   <a class="card-link" href="{{config.site_url}}ai/platform-overview/">
     <div class="card">
-      <img class="card-image" src="{{config.site_url}}img/Insights.png" alt="Cognigy Logo">
+      <img class="card-image" src="{{config.site_url}}img/AI-blue.svg" alt="Cognigy Logo">
       <div class="container">
         <h4><b> AI</b></h4>
       </div>
@@ -25,7 +25,7 @@ Continue with our choosing a product to get more detailed information on the wid
 
   <a class="card-link" href="{{config.site_url}}insights/">
     <div class="card">
-      <img class="card-image" src="{{config.site_url}}img/Insights.png" alt="Cognigy Logo" >
+      <img class="card-image" src="{{config.site_url}}img/IN-blue.svg" alt="Cognigy Logo" >
       <div class="container">
         <h4><b>Insights</b></h4>
       </div>
@@ -34,7 +34,7 @@ Continue with our choosing a product to get more detailed information on the wid
 
   <a class="card-link" href="{{config.site_url}}webchat/">
     <div class="card">
-      <img class="card-image" src="{{config.site_url}}img/Insights.png" alt="Cognigy Logo">
+      <img class="card-image" src="{{config.site_url}}img/webchat.svg" alt="Cognigy Logo">
       <div class="container">
         <h4><b>Webchat Widget</b></h4>
       </div>
@@ -43,7 +43,7 @@ Continue with our choosing a product to get more detailed information on the wid
 
   <a class="card-link" href="{{config.site_url}}live-agent/">
     <div class="card">
-      <img class="card-image" src="{{config.site_url}}img/Insights.png" alt="Cognigy Logo">
+      <img class="card-image" src="{{config.site_url}}img/LA-blue.svg" alt="Cognigy Logo">
       <div class="container">
         <h4><b>Live Agent</b></h4>
       </div>

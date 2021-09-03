@@ -35,7 +35,7 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-  logo: img/logo.png
+  logo: img/Cognigy-white.svg
   favicon: img/favicon.png
   language: en
 nav:
@@ -147,7 +147,7 @@ nav:
   - NLU:
     - ai/nlu/overview.md
     - NLU Overview:
-      - ai/nlu/nlu-overview/ML-intents.md
+      - Machine learning Intents: ai/nlu/nlu-overview/ML-intents.md
       - ai/nlu/nlu-overview/annotations.md
       - ai/nlu/nlu-overview/intent-analyzer.md
       - ai/nlu/nlu-overview/rule-intents.md
@@ -156,6 +156,7 @@ nav:
       - ai/nlu/nlu-overview/intent-upload-download.md
       - ai/nlu/nlu-overview/reject-intents.md
     - Slot Mapping:
+      - ai/nlu/slot-mapping/slot-mapping.md 
       - ai/nlu/slot-mapping/any-slots.md
     - Attachments:
       - ai/nlu/attachments/attached-flows.md
