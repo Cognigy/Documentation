@@ -91,7 +91,7 @@ Configurable default minute.
 #### Step to increase hours
 The increment step size for hours. The default is 1 hour.
 
-##### Step to increase minutes
+#### Step to increase minutes
 The incremental increase in minutes, when the minute selection is used. The default is 5 minutes.
 
 #### Show seconds in picker
