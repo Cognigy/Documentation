@@ -35,7 +35,7 @@ Commands to run MKdocs:
 
 ### New .md file location in the directory tree
 
-### Adding page to navigation in YAML file
+### Adding page to navigation in YML file
 
 ### Naming the files
 
@@ -149,8 +149,8 @@ The "en" version of the documentation has a css directory that contains extra.cs
 
 - Make a copy of the en directory and rename it to another language abbreviation (e.g. de, ru, ja, fr)
 - Delete unnescesarry directories (css, js, img)
-- Modify the YAML file located in the directory of the specific language
-  - Add the language to the Language changer drop down by adding the language to the "alternate" section of YAML file
+- Modify the YML file located in the directory of the specific language
+  - Add the language to the Language changer drop down by adding the language to the "alternate" section of YML file
 
 <figure>
   <img class="image-center" src="{{config.site_url}}img/alternate language.png" width="100%" />
@@ -162,7 +162,7 @@ The "en" version of the documentation has a css directory that contains extra.cs
   <img class="image-center" src="{{config.site_url}}img/localizing_nav_sections.png" width="100%" />
 </figure>
 
-  - Localize the Section names in the nav section of the YAML file
+  - Localize the Section names in the nav section of the YML file
 <figure>
   <img class="image-center" src="{{config.site_url}}img/template language.png" width="100%" />
 </figure>

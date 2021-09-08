@@ -1,4 +1,4 @@
-# Cognigy Product Documentation
+# 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}img/1259f02-logo_cognigy.ai_387x401xpng.png" width="100%" />
@@ -52,7 +52,7 @@ Continue with our choosing a product to get more detailed information on the wid
 
 </div>
 
-<h4>Still useing Cognigy V3 ? then <a href="https://docs.cognigy.com/v3.6/docs">click here</a> to get more help.</h4>
+<h4>Still using Cognigy V3 ? then <a href="https://docs.cognigy.com/v3.6/docs">click here</a> to get more help.</h4>
 
 <h3>Looking for something else?</h3>
 

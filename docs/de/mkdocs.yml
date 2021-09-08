@@ -35,8 +35,8 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-  logo: http://127.0.0.1:8008/img/logo.png
-  favicon: http://127.0.0.1:8008/img/favicon.png
+  logo: http://127.0.0.1:8008/de/img/logo.png
+  favicon: http://127.0.0.1:8008/de/img/favicon.png
   language: de
 nav:
 - Cognigy Produkte: index.md
@@ -310,11 +310,13 @@ extra:
     name: en
   - link: /de/
     name: de
+  - link: /ja/
+    name: ja
 extra_css:
-- http://127.0.0.1:8008/css/extra.css
+- http://127.0.0.1:8008/de/css/extra.css
 extra_javascript:
-- http://127.0.0.1:8008/js/termynal.js
-- http://127.0.0.1:8008/js/custom.js
+- http://127.0.0.1:8008/de/js/termynal.js
+- http://127.0.0.1:8008/de/js/custom.js
 plugins:
 - section-index
 - macros

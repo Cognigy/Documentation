@@ -313,6 +313,8 @@ extra:
     name: en
   - link: /de/
     name: de
+  - link: /ja/
+    name: ja
 extra_css:
 - css/extra.css
 extra_javascript:
