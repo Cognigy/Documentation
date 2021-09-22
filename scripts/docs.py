@@ -54,7 +54,7 @@ def complete_existing_lang(incomplete: str):
 
 def get_base_lang_config(lang: str):
     en_config = get_en_config()
-    cognigy_url_base = "http://127.0.0.1:8008/" 
+    cognigy_url_base = "http://localhost:4444/" 
     new_config = en_config.copy()
     new_config["site_url"] = en_config["site_url"] + f"{lang}/"
     new_config["theme"]["logo"] = cognigy_url_base + en_config["theme"]["logo"]
@@ -286,7 +286,7 @@ def serve():
     os.chdir("site")
     server_address = ("", 8008)
     server = HTTPServer(server_address, SimpleHTTPRequestHandler)
-    typer.echo(f"Serving at: http://127.0.0.1:8008")
+    typer.echo(f"Serving at: http://localhost:4444/")
     server.serve_forever()
 
 
