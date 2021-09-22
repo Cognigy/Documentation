@@ -1,0 +1,43 @@
+name: documentation
+
+trigger:
+  batch: "true"
+  branches:
+    include:
+      - "local"
+
+resources:
+  - repo: self
+
+variables:
+  DOCKER_BUILDKIT: 1
+  containerRegistryReference: "Azure Container Registry"
+  imageName: "documentation"
+
+pool:
+  vmImage: ubuntu-20.04
+
+stages:
+  - stage: Build
+    displayName: Build product documentation
+    jobs:
+      - job:
+        displayName: Build product documentation
+        steps:
+          - checkout: self
+            persistCredentials: "true"
+            clean: "true"
+
+          - task: Docker@2
+            displayName: Login into Docker-Registry
+            inputs:
+              command: "login"
+              containerRegistry: $(containerRegistryReference)
+
+          - task: Docker@2
+            displayName: Build and push container image
+            inputs:
+              command: "buildAndPush"
+              repository: $(imageName)
+              containerRegistry: $(containerRegistryReference)
+              tags: $(Build.BuildId)
