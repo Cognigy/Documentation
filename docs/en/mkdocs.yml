@@ -1,6 +1,6 @@
 site_name: Cognigy.AI
 site_description: Documentation from Cognigy.AI products
-site_url: http://127.0.0.1:8008/
+site_url: http://localhost:4444/
 theme:
   name: material
   custom_dir: overrides

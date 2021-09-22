@@ -284,7 +284,7 @@ def serve():
     typer.echo("This is here only to preview a site with translations already built.")
     typer.echo("Make sure you run the build-all command first.")
     os.chdir("site")
-    server_address = ("", 8008)
+    server_address = ("", 4444)
     server = HTTPServer(server_address, SimpleHTTPRequestHandler)
     typer.echo(f"Serving at: http://localhost:4444/")
     server.serve_forever()
