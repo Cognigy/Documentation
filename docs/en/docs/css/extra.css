@@ -122,8 +122,6 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 }
 
 .card-image {
-  padding: 1.5rem;
-  background-color: #f7f6f9;
   border-radius: 10px 0px 0px 10px;
   width: 30%;
 }
