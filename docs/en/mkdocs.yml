@@ -91,6 +91,7 @@ nav:
       - ai/flow-nodes/message/send-text.md
       - ai/flow-nodes/message/datepicker.md
     - Logic:
+      - ai/flow-nodes/logic/logic.md
       - ai/flow-nodes/logic/if.md
       - ai/flow-nodes/logic/lookup.md
       - ai/flow-nodes/logic/go-to.md
@@ -172,6 +173,7 @@ nav:
       - ai/tools/user-menu/access-control.md
       - ai/tools/user-menu/usage-statistics.md
     - Interaction Panel:
+      - ai/tools/interaction-panel/interaction-panel.md
       - ai/tools/interaction-panel/input.md
       - ai/tools/interaction-panel/state.md
       - ai/tools/interaction-panel/context.md
