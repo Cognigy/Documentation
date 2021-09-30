@@ -44,56 +44,61 @@ nav:
   - en: /
   - de: /de/
 - AI:
-  - ai/platform-overview.md
+  - ai/platform-overview.md #converted
   - Release Notes:
-    - ai/release-notes/4.8.0.md
+    - ai/release-notes/releases.md #converted
   - Resources:
     - Agents:
-      - ai/resources/agents/agents.md
-      - ai/resources/agents/journeys.md
-      - ai/resources/agents/tasks.md
+      - ai/resources/agents/agents.md #converted
+      - ai/resources/agents/journeys.md #converted
+      - ai/resources/agents/tasks.md #converted
     - Build:
-      - ai/resources/build/build.md
-      - ai/resources/build/flows.md
-      - ai/resources/build/lexicons.md
-      - ai/resources/build/connections.md
-      - ai/resources/build/NLUconnectors.md
-      - ai/resources/build/functions.md
+      - ai/resources/build/build.md #converted
+      - ai/resources/build/flows.md #converted
+      - ai/resources/build/lexicons.md #converted
+      - ai/resources/build/connections.md #converted
+      - ai/resources/build/NLUconnectors.md #converted
+      - ai/resources/build/functions.md #converted
     - Deploy:
-      - ai/resources/deploy/endpoints.md
-      - ai/resources/deploy/snapshots.md
+      - ai/resources/deploy/deploy.md #converted
+      - ai/resources/deploy/endpoints.md #converted
+      - ai/resources/deploy/snapshots.md #converted
     - Test:
-      - ai/resources/test/playbooks.md
-      - ai/resources/test/logs.md
+      - ai/resources/test/test.md #converted
+      - ai/resources/test/playbooks.md #converted
+      - ai/resources/test/logs.md #converted
     - Tweak:
-      - ai/resources/tweak/intent-trainer.md
+      - ai/resources/tweak/tweak.md #converted
+      - ai/resources/tweak/intent-trainer.md #converted
     - Analytics:
-      - ai/resources/analytics.md
+      - ai/resources/analytics.md #converted
     - Manage:
-      - ai/resources/manage/settings.md
-      - ai/resources/manage/localization.md
-      - ai/resources/manage/tokens.md
-      - ai/resources/manage/extensions.md
-      - ai/resources/manage/members.md
-      - ai/resources/manage/contact-profiles.md
-      - ai/resources/manage/packages.md
+      - ai/resources/manage/manage.md #converted
+      - ai/resources/manage/settings.md #converted
+      - ai/resources/manage/localization.md #converted
+      - ai/resources/manage/tokens.md #converted
+      - ai/resources/manage/extensions.md #converted
+      - ai/resources/manage/members.md #converted
+      - ai/resources/manage/contact-profiles.md #converted
+      - ai/resources/manage/packages.md #converted
   - Flow Nodes:
-    - ai/flow-nodes/flow-nodes-overview.md
-    - ai/flow-nodes/node-usage.md
-    - ai/flow-nodes/dynamic-content.md
+    - ai/flow-nodes/flow-nodes-overview.md #converted
+    - ai/flow-nodes/node-usage.md #converted
+    - ai/flow-nodes/dynamic-content.md #converted
+    - ai/flow-nodes/dynamic-node-fields.md #converted
     - Message:
-      - ai/flow-nodes/message/message.md
-      - ai/flow-nodes/message/say.md
-      - ai/flow-nodes/message/question.md
-      - ai/flow-nodes/message/optional-question.md
-      - ai/flow-nodes/message/send-email.md
-      - ai/flow-nodes/message/send-email-notification.md
-      - ai/flow-nodes/message/send-text.md
-      - ai/flow-nodes/message/datepicker.md
+      - ai/flow-nodes/message/message.md #converted
+      - ai/flow-nodes/message/say.md #converted
+      - ai/flow-nodes/message/question.md #converted
+      - ai/flow-nodes/message/optional-question.md #converted
+      - ai/flow-nodes/message/send-email.md #converted
+      - ai/flow-nodes/message/send-email-notification.md #converted
+      - ai/flow-nodes/message/send-text.md #converted
+      - ai/flow-nodes/message/datepicker.md #converted
     - Logic:
-      - ai/flow-nodes/logic/logic.md
-      - ai/flow-nodes/logic/if.md
-      - ai/flow-nodes/logic/lookup.md
+      - ai/flow-nodes/logic/logic.md #converted
+      - ai/flow-nodes/logic/if.md #converted
+      - ai/flow-nodes/logic/lookup.md #converted
       - ai/flow-nodes/logic/go-to.md
       - ai/flow-nodes/logic/execute-flow.md
       - ai/flow-nodes/logic/think.md
@@ -111,6 +116,7 @@ nav:
       - ai/flow-nodes/logic/switch-locale.md
       - ai/flow-nodes/logic/trigger-function.md
     - Profile:
+      - ai/flow-nodes/profile/profile.md
       - ai/flow-nodes/profile/update-profile.md
       - ai/flow-nodes/profile/deactivate-profile.md
       - ai/flow-nodes/profile/delete-profile.md
@@ -187,6 +193,8 @@ nav:
     - ai/tools/managementUI.md
     - ai/tools/agent-handover.md
     - ai/tools/live-agent.md
+    - ai/tools/auto-localization.md
+    - ai/tools/real-time-translation.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -222,26 +230,28 @@ nav:
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
   - Installation & Configuration:
-    - ai/installation/installation-and-updating.md
-    - ai/installation/browser-requirements.md
-    - ai/installation/single-signin-SAML2.md
-    - ai/installation/single-signin-openID-connect.md
-    - ai/installation/IP-ranges-shared-environments.md
-  - Developer Guides:
-    - ai/developer-guides/api-reference.md
-    - ai/developer-guides/using-api.md
-    - ai/developer-guides/clients.md
+    - ai/installation/installation-and-updating.md #converted
+    - ai/installation/browser-requirements.md #converted
+    - ai/installation/single-signin-SAML2.md #converted
+    - ai/installation/single-signin-openID-connect.md #converted
+    - ai/installation/IP-ranges-shared-environments.md #converted
+  - Developer Guides: 
+    - ai/developer-guides/api-reference.md #converted
+    - ai/developer-guides/using-api.md #converted
+    - ai/developer-guides/clients.md #converted
   - Help & Contact:
-    - ai/help/community.md
-    - ai/help/get-help.md
+    - ai/help/get-help.md #converted
+    - ai/help/community.md #converted
 - Insights:
   - insights/index.md
 - Webchat Widget:
   - webchat/index.md
 - Live Agent:
   - live-agent/index.md
-- Usage:
-  - usage-doc.md
+- Marketplace:
+  - ai/resources/manage/extensions#marketplace #converted
+# - Usage:
+#   - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true
