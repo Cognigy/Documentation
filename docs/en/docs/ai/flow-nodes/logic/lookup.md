@@ -24,7 +24,7 @@ When using the Intent operand, all intents that have been trained to the NLU wil
 </figure>
 
 ???+ info "Want to know more about using Intents?"
-    Find more information about building flows with intents on the **[NLU Overview Page]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/)**.
+    Find more information about building flows with intents on the **[NLU Overview Page]({{config.site_url}}ai/nlu/overview/)**.
 
 ### State
 By changing the lookup type to **[State]({{config.site_url}}ai/tools/interaction-panel/state/)**, the flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
