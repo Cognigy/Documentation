@@ -247,11 +247,39 @@ nav:
 - Webchat Widget:
   - webchat/index.md
 - Live Agent:
-  - live-agent/index.md
+  - live-agent/platform-overview.md #converted
+  - Release Notes:
+    - live-agent/release-notes/releases.md #converted
+  - Installation & configuration:
+    - Deployment:
+      - Architecture:
+        - live-agent/installation/deployment/architecture.md
+      - Requirements:
+        - live-agent/installation/deployment/requirements.md
+      - Helm Charts:
+        - live-agent/installation/deployment/helm-charts.md
+    - Performance:
+      - Cloudfront CDN:
+        - live-agent/installation/performance/cloudfront-cdn.md
+    - Configuration:
+      - Environment Variables:
+        - live-agent/installation/configuration/environment-variables.md
+    - Monitoring:
+      - Super Admin Console:
+        - live-agent/installation/monitoring/super-admin-console.md
+      - Rate Limiting:
+        - live-agent/installation/monitoring/rate-limiting.md
+    - Email Channel:
+      - Conversation Continuity:
+        - live-agent/installation/email-channel/conversation-continuity.md
+      - Sendgrid:
+        - live-agent/installation/email-channel/sendgrid.md
+      - Channel Setup:
+        - live-agent/installation/email-channel/channel-setup.md
 - Marketplace:
   - ai/resources/manage/extensions#marketplace #converted
-# - Usage:
-#   - usage-doc.md
+- Usage:
+  - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true
