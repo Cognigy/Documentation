@@ -81,3 +81,22 @@ python3 ./scripts/docs.py build-all
 
 ### serve the site
 python3 ./scripts/docs.py serve
+
+**Requirements:**
+
+* python3 3.8.10
+* typer 0.3.2
+* mkdocs 1.2.2
+* mkdocs-material 7.2.1
+* mkdocs-macros-plugin
+* mkdocs-section-index
+
+### Commands to deploy
+cd into documentation directory and run command **pip install -r requirements.txt**
+
+Commands to run MKdocs:
+
+- See live view for EN version: **python3 ./scripts/docs.py live**
+- Build all languages: **python3 ./scripts/docs.py build-all**
+- Build one language: **python3 ./scripts/docs.py build de**
+- Serve the site for testing all languages **python3 ./scripts/docs.py serve**
