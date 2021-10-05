@@ -10,7 +10,7 @@
 ### On Linux
 **Steps to start:**
   1. Clone repository from Documentation [repo on Azure DevOps](https://docs.docker.com/engine/install/ubuntu/) with SSH authentication
-  2. Run command ```docker run --rm -it --net host -v ${​​PWD}​​:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
+  2. Run command ```docker run --rm -it --net host -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
   3. The documentation will be accessible via http://localhost:8008
 
 ### On MAC
@@ -19,7 +19,7 @@
   1. Install [Docker](https://docs.docker.com/desktop/mac/install/) and [VS Code](https://code.visualstudio.com/download) 
   2. Login to the Azure registry of Cognigy
   3. Clone repository from Documentation [repo on Azure DevOps](https://cognigy.visualstudio.com/Documentation/_git/documentation) with SSH authentication
-  4. Run command ```docker run --rm -it --net host -v ${​​PWD}​​:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
+  4. Run command ```docker run --rm -it --net host -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
   5. Changing the line 302 in scripts/docs.py to ```mkdocs.commands.serve.serve(dev_addr="0.0.0.0:8008")```. By doing that you will remove --dev-addr 0.0.0.0:8008 from docs-live.sh. NOTE! ```--net host``` is not working in Mac
 
 ### On Windows
@@ -28,7 +28,7 @@
   1. Install [Docker](https://docs.docker.com/desktop/windows/install/) and [VS Code](https://code.visualstudio.com/download) 
   2. Login to the Azure registry of Cognigy
   3. Clone repository from Documentation [repo on Azure DevOps](https://cognigy.visualstudio.com/Documentation/_git/documentation) with SSH authentication
-  4. Run command inside the ``documentation/`` directory```docker run --rm -it --net host -v ${​​PWD}​​:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
+  4. Run command inside the ``documentation/`` directory```docker run --rm -it --net host -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
 
 
 #### Logging in to Azure
@@ -112,7 +112,7 @@ Example of a bad name for an image - e.g. "Screenshot-2021-06-04-1254566"
 Meta data is an important part of the Search Engine Optimization (SEO), thus it is really important to set it at the beggining of every Markdown file, especially for the pages we want to be easily/best listed in the results fot he search engines.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/metadata-add.png" width="100%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/metadata-add.png" width="100%" />
 </figure>
 
 Meta data template to add in the very bedinning of your new .md page:
@@ -135,7 +135,7 @@ metadata:
 
  **Example of Developer Guides Section image storage:**
  <figure>
-  <img class="image-center" src="{{config.site_url}}img/Dev_guide_images.png" width="100%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/Dev_guide_images.png" width="100%" />
 </figure>
 
 ## Image standard
@@ -146,13 +146,13 @@ All images should be:
 
 ### Adding an image to the .md file
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/logo_prod.jpeg" width="30%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/logo_prod.jpeg" width="30%" />
   <figcaption>Image caption</figcaption>
 </figure>
 
 `````
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/logo_prod.jpeg" width="50%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/logo_prod.jpeg" width="50%" />
   <figcaption>Image caption</figcaption>
 </figure>
 `````
@@ -177,7 +177,7 @@ Example: 30%, 50%, 100%
 All links have to have a variable config.site_url for easy localization. When adding links to any Markdown file, make sure to use this variable.
 **Example of the variable usage:**
 `````
-"{{config.site_url}}img/logo_prod.jpeg"
+"{{config.site_url}}assets/img/logo_prod.jpeg"
 `````
 ## Additional styling 
 
@@ -194,7 +194,7 @@ The "en/docs" directory contains a "css/extra.css" file that can be used to add 
 **Example of using the class in the Markdown file**
 `````
 <figure>
-  <img class="image-center" src="img/logo_prod.jpeg" width="50%" />
+  <assets/img class="image-center" src="assets/img/logo_prod.jpeg" width="50%" />
   <figcaption>Image caption</figcaption>
 </figure>
 `````
@@ -203,23 +203,22 @@ You can combine multiple classes by separating them with spaces ```class="image-
 **Steps to make a new translation for the Documentation**
 
   - Make a copy of the en directory and rename it to another language abbreviation (e.g. de, ru, ja, fr)
-  - Delete unnescesarry directories (css, js, img, they will be served from the en version)
   - Modify the YML file located in the directory of the specific language
     - Add the language to the Language changer drop down by adding the language to the "alternate" section of YML file
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/alternate language.png" width="100%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/alternate language.png" width="100%" />
 </figure>
 
   - Change the language of the template language abbreviations and [languages available for MKDocs material template](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/localizing_nav_sections.png" width="100%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/localizing_nav_sections.png" width="100%" />
 </figure>
 
   - Localize the Section names in the "nav" section of the YML file
 <figure>
-  <img class="image-center" src="{{config.site_url}}img/template language.png" width="100%" />
+  <assets/img class="image-center" src="{{config.site_url}}assets/img/template language.png" width="100%" />
 </figure>
 
 ???+ warning "Make sure to:"
