@@ -140,6 +140,7 @@ nav:
       - ai/flow-nodes/code/AI-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
     - Voice Gateway:
+      - ai/flow-nodes/vg/voice-gateway.md
       - ai/flow-nodes/vg/send-message.md
       - ai/flow-nodes/vg/set-session-params.md
       - ai/flow-nodes/vg/play-url.md
@@ -175,6 +176,7 @@ nav:
   - Tools:
     - ai/tools/overview.md
     - User menu:
+      - ai/tools/user-menu/user-menu.md
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
       - ai/tools/user-menu/usage-statistics.md
@@ -201,6 +203,7 @@ nav:
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
     - Transformers:
+      - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
       - ai/endpoints/transformers/output-transformer.md
       - ai/endpoints/transformers/execution-finished-transformer.md

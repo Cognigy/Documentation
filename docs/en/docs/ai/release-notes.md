@@ -37,7 +37,8 @@ This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did no
 
 
  # 4.10.0
-###**Released:** September 14th, 2021
+ 
+**Released:** September 14th, 2021
 
 ## Features
 ### Cognigy Insights
