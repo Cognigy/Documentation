@@ -18,9 +18,9 @@ app = typer.Typer()
 
 mkdocs_name = "mkdocs.yml"
 
-missing_translation_snippet = """
-{!../../../docs/missing-translation.md!}
-"""
+# missing_translation_snippet = """
+# {!../../../docs/missing-translation.md!}
+# """
 
 docs_path = Path("docs")
 en_docs_path = Path("docs/en")
@@ -67,7 +67,7 @@ def get_base_lang_config(lang: str):
         if css.startswith("http"):
             extra_css.append(css)
         else:
-            extra_css.append(cognigy_url_base + css)
+            extra_css.append(cognigy_url_base + "/assets/" + css)
     new_config["extra_css"] = extra_css
 
     extra_js = []
@@ -76,7 +76,7 @@ def get_base_lang_config(lang: str):
         if js.startswith("http"):
             extra_js.append(js)
         else:
-            extra_js.append(cognigy_url_base + js)
+            extra_js.append(cognigy_url_base + "/assets/" + js)
     new_config["extra_javascript"] = extra_js
     return new_config
 
@@ -104,8 +104,8 @@ def new_lang(lang: str = typer.Argument(..., callback=lang_callback)):
     en_index_path: Path = en_docs_path / "docs" / "index.md"
     new_index_path: Path = new_config_docs_path / "index.md"
     en_index_content = en_index_path.read_text(encoding="utf-8")
-    new_index_content = f"{missing_translation_snippet}\n\n{en_index_content}"
-    new_index_path.write_text(new_index_content, encoding="utf-8")
+    #new_index_content = f"{missing_translation_snippet}\n\n{en_index_content}"
+    #new_index_path.write_text(new_index_content, encoding="utf-8")
     new_overrides_gitignore_path = new_path / "overrides" / ".gitignore"
     new_overrides_gitignore_path.parent.mkdir(parents=True, exist_ok=True)
     new_overrides_gitignore_path.write_text("")
@@ -165,9 +165,9 @@ def build_lang(
         en_file_path: Path = en_lang_path / "docs" / file_path
         lang_file_path.parent.mkdir(parents=True, exist_ok=True)
         if not lang_file_path.is_file():
-            en_text = en_file_path.read_text(encoding="utf-8")
-            lang_text = get_text_with_translate_missing(en_text)
-            lang_file_path.write_text(lang_text, encoding="utf-8")
+            #en_text = en_file_path.read_text(encoding="utf-8")
+            # lang_text = get_text_with_translate_missing(en_text)
+            #lang_file_path.write_text(lang_text, encoding="utf-8")
             file_key = file_to_nav[file]
             use_lang_file_to_nav[file] = file_key
             if file_key:
@@ -284,9 +284,9 @@ def serve():
     typer.echo("This is here only to preview a site with translations already built.")
     typer.echo("Make sure you run the build-all command first.")
     os.chdir("site")
-    server_address = ("", 4444)
+    server_address = ("", 8008)
     server = HTTPServer(server_address, SimpleHTTPRequestHandler)
-    typer.echo(f"Serving at: http://localhost:4444/")
+    typer.echo(f"Serving at: http://localhost:8008/")
     server.serve_forever()
 
 
@@ -310,6 +310,7 @@ def live(
     lang_path: Path = docs_path / lang
     os.chdir(lang_path)
     mkdocs.commands.serve.serve(dev_addr="127.0.0.1:8008")
+    typer.secho(f"http://127.0.0.1:8008/")
 
 
 def update_config(lang: str):
@@ -363,11 +364,11 @@ def get_key_section(
     return new_section
 
 
-def get_text_with_translate_missing(text: str) -> str:
-    lines = text.splitlines()
-    lines.insert(1, missing_translation_snippet)
-    new_text = "\n".join(lines)
-    return new_text
+# def get_text_with_translate_missing(text: str) -> str:
+#     lines = text.splitlines()
+#     lines.insert(1, missing_translation_snippet)
+#     new_text = "\n".join(lines)
+#     return new_text
 
 
 def get_file_to_nav_map(nav: list) -> Dict[str, Tuple[str, ...]]:

@@ -35,8 +35,8 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-  logo: img/Cognigy-white.svg
-  favicon: img/favicon.png
+  logo: assets/img/Cognigy-white.svg
+  favicon: assets/img/favicon.png
   language: en
 nav:
 - Cognigy Products: index.md
@@ -44,61 +44,61 @@ nav:
   - en: /
   - de: /de/
 - AI:
-  - ai/platform-overview.md #converted
+  - ai/platform-overview.md
   - Release Notes:
-    - ai/release-notes/releases.md #converted
+    - ai/release-notes.md
   - Resources:
     - Agents:
-      - ai/resources/agents/agents.md #converted
-      - ai/resources/agents/journeys.md #converted
-      - ai/resources/agents/tasks.md #converted
+      - ai/resources/agents/agents.md
+      - ai/resources/agents/journeys.md
+      - ai/resources/agents/tasks.md
     - Build:
-      - ai/resources/build/build.md #converted
-      - ai/resources/build/flows.md #converted
-      - ai/resources/build/lexicons.md #converted
-      - ai/resources/build/connections.md #converted
-      - ai/resources/build/NLUconnectors.md #converted
-      - ai/resources/build/functions.md #converted
+      - ai/resources/build/build.md
+      - ai/resources/build/flows.md
+      - ai/resources/build/lexicons.md
+      - ai/resources/build/connections.md
+      - ai/resources/build/NLUconnectors.md
+      - ai/resources/build/functions.md
     - Deploy:
-      - ai/resources/deploy/deploy.md #converted
-      - ai/resources/deploy/endpoints.md #converted
-      - ai/resources/deploy/snapshots.md #converted
+      - ai/resources/deploy/deploy.md
+      - ai/resources/deploy/endpoints.md
+      - ai/resources/deploy/snapshots.md
     - Test:
-      - ai/resources/test/test.md #converted
-      - ai/resources/test/playbooks.md #converted
-      - ai/resources/test/logs.md #converted
+      - ai/resources/test/test.md
+      - ai/resources/test/playbooks.md
+      - ai/resources/test/logs.md
     - Tweak:
-      - ai/resources/tweak/tweak.md #converted
-      - ai/resources/tweak/intent-trainer.md #converted
+      - ai/resources/tweak/tweak.md
+      - ai/resources/tweak/intent-trainer.md
     - Analytics:
-      - ai/resources/analytics.md #converted
+      - ai/resources/analytics.md
     - Manage:
-      - ai/resources/manage/manage.md #converted
-      - ai/resources/manage/settings.md #converted
-      - ai/resources/manage/localization.md #converted
-      - ai/resources/manage/tokens.md #converted
-      - ai/resources/manage/extensions.md #converted
-      - ai/resources/manage/members.md #converted
-      - ai/resources/manage/contact-profiles.md #converted
-      - ai/resources/manage/packages.md #converted
+      - ai/resources/manage/manage.md
+      - ai/resources/manage/settings.md
+      - ai/resources/manage/localization.md
+      - ai/resources/manage/tokens.md
+      - ai/resources/manage/extensions.md
+      - ai/resources/manage/members.md
+      - ai/resources/manage/contact-profiles.md
+      - ai/resources/manage/packages.md
   - Flow Nodes:
-    - ai/flow-nodes/flow-nodes-overview.md #converted
-    - ai/flow-nodes/node-usage.md #converted
-    - ai/flow-nodes/dynamic-content.md #converted
-    - ai/flow-nodes/dynamic-node-fields.md #converted
+    - ai/flow-nodes/flow-nodes-overview.md
+    - ai/flow-nodes/node-usage.md
+    - ai/flow-nodes/dynamic-content.md
+    - ai/flow-nodes/dynamic-node-fields.md
     - Message:
-      - ai/flow-nodes/message/message.md #converted
-      - ai/flow-nodes/message/say.md #converted
-      - ai/flow-nodes/message/question.md #converted
-      - ai/flow-nodes/message/optional-question.md #converted
-      - ai/flow-nodes/message/send-email.md #converted
-      - ai/flow-nodes/message/send-email-notification.md #converted
-      - ai/flow-nodes/message/send-text.md #converted
-      - ai/flow-nodes/message/datepicker.md #converted
+      - ai/flow-nodes/message/message.md
+      - ai/flow-nodes/message/say.md
+      - ai/flow-nodes/message/question.md
+      - ai/flow-nodes/message/optional-question.md
+      - ai/flow-nodes/message/send-email.md
+      - ai/flow-nodes/message/send-email-notification.md
+      - ai/flow-nodes/message/send-text.md
+      - ai/flow-nodes/message/datepicker.md
     - Logic:
-      - ai/flow-nodes/logic/logic.md #converted
-      - ai/flow-nodes/logic/if.md #converted
-      - ai/flow-nodes/logic/lookup.md #converted
+      - ai/flow-nodes/logic/logic.md
+      - ai/flow-nodes/logic/if.md
+      - ai/flow-nodes/logic/lookup.md
       - ai/flow-nodes/logic/go-to.md
       - ai/flow-nodes/logic/execute-flow.md
       - ai/flow-nodes/logic/think.md
@@ -140,6 +140,7 @@ nav:
       - ai/flow-nodes/code/AI-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
     - Voice Gateway:
+      - ai/flow-nodes/vg/voice-gateway.md
       - ai/flow-nodes/vg/send-message.md
       - ai/flow-nodes/vg/set-session-params.md
       - ai/flow-nodes/vg/play-url.md
@@ -152,7 +153,7 @@ nav:
       - ai/flow-nodes/other-nodes/log-message.md
       - ai/flow-nodes/other-nodes/overwrite-analytics.md
   - NLU:
-    - NLU Overview: 
+    - NLU Overview:
       - ai/nlu/overview.md
       - ai/nlu/nlu-overview/ML-intents.md
       - ai/nlu/nlu-overview/annotations.md
@@ -175,6 +176,7 @@ nav:
   - Tools:
     - ai/tools/overview.md
     - User menu:
+      - ai/tools/user-menu/user-menu.md
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
       - ai/tools/user-menu/usage-statistics.md
@@ -201,6 +203,7 @@ nav:
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
     - Transformers:
+      - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
       - ai/endpoints/transformers/output-transformer.md
       - ai/endpoints/transformers/execution-finished-transformer.md
@@ -230,28 +233,36 @@ nav:
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
   - Installation & Configuration:
-    - ai/installation/installation-and-updating.md #converted
-    - ai/installation/browser-requirements.md #converted
-    - ai/installation/single-signin-SAML2.md #converted
-    - ai/installation/single-signin-openID-connect.md #converted
-    - ai/installation/IP-ranges-shared-environments.md #converted
-  - Developer Guides: 
-    - ai/developer-guides/api-reference.md #converted
-    - ai/developer-guides/using-api.md #converted
-    - ai/developer-guides/clients.md #converted
+    - ai/installation/installation-and-updating.md
+    - ai/installation/browser-requirements.md
+    - ai/installation/single-signin-SAML2.md
+    - ai/installation/single-signin-openID-connect.md
+    - ai/installation/IP-ranges-shared-environments.md
+  - Developer Guides:
+    - ai/developer-guides/api-reference.md
+    - ai/developer-guides/using-api.md
+    - ai/developer-guides/clients.md
   - Help & Contact:
-    - ai/help/get-help.md #converted
-    - ai/help/community.md #converted
+    - ai/help/get-help.md
+    - ai/help/community.md
 - Insights:
-  - insights/index.md
+  - insights/cognigy-insights.md
+  - insights/global-filter.md
+  - insights/dashboard-overview.md
+  - insights/dashboard-engagement.md
+  - insights/dashboard-nlu-performance.md
+  - insights/step-explorer.md
+  - insights/transcript-explorer.md
+  - insights/message-explorer.md
+  - insights/download-report.md
 - Webchat Widget:
   - webchat/index.md
 - Live Agent:
   - live-agent/index.md
 - Marketplace:
-  - ai/resources/manage/extensions#marketplace #converted
-# - Usage:
-#   - usage-doc.md
+  - ai/resources/manage/extensions#marketplace
+- Usage:
+  - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true
@@ -324,10 +335,10 @@ extra:
   - link: /
     name: en
 extra_css:
-- css/extra.css
+- assets/css/extra.css
 extra_javascript:
-- js/termynal.js
-- js/custom.js
+- assets/js/termynal.js
+- assets/js/custom.js
 plugins:
 - section-index
 - macros
