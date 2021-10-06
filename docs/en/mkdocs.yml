@@ -281,7 +281,7 @@ nav:
       - Architecture:
         - live-agent/installation/architecture.md
     - Installation using Helm:
-        - live-agent/installation/installation-using-helm.md
+      - live-agent/installation/installation-using-helm.md
     - Installation updates:
       - live-agent/installation/installation-updates.md
     - Configuration/Tweaking:
@@ -296,9 +296,9 @@ nav:
   - Contacts:
     - live-agent/contacts.md
   - Reports:
-    - live-agent/reports.md/
+    - live-agent/reports.md
   - Settings:
-    - live-agent/settings.md/
+    - live-agent/settings.md
   - Help & Support:
     - live-agent/help.md
 - Marketplace:
