@@ -258,9 +258,51 @@ nav:
 - Webchat Widget:
   - webchat/index.md
 - Live Agent:
-  - live-agent/index.md
+  - live-agent/platform-overview.md
+  - Release Notes:
+    - live-agent/release-notes/releases.md
+  - Getting started:
+    - Creating an account:
+      - live-agent/getting-started/creating-an-account.md
+    - Inviting your agents:
+      - live-agent/getting-started/inviting-your-agents.md
+    - Add an inbox:
+      - live-agent/getting-started/add-an-inbox.md
+    - Handover flow with Cognigy.AI:
+      - live-agent/getting-started/handover-flow-with-cognigy-ai.md
+    - Add Teams:
+      - live-agent/getting-started/add-teams.md
+    - Add label:
+      - live-agent/getting-started/add-label.md
+  - Installation & configuration:
+    - Deployment:
+      - Prerequisites:
+        - live-agent/installation/prerequisites.md
+      - Architecture:
+        - live-agent/installation/architecture.md
+    - Installation using Helm:
+        - live-agent/installation/installation-using-helm.md
+    - Installation updates:
+      - live-agent/installation/installation-updates.md
+    - Configuration/Tweaking:
+        - Database:
+          - live-agent/installation/configuration/database.md
+        - Redis:
+          - live-agent/installation/configuration/redis.md
+        - Mail:
+          - live-agent/installation/configuration/mail.md
+  - Agent:
+    - live-agent/agent.md
+  - Contacts:
+    - live-agent/contacts.md
+  - Reports:
+    - live-agent/reports.md/
+  - Settings:
+    - live-agent/settings.md/
+  - Help & Support:
+    - live-agent/help.md
 - Marketplace:
-  - ai/resources/manage/extensions#marketplace
+  - ai/resources/manage/extensions#marketplace #converted
 - Usage:
   - usage-doc.md
 markdown_extensions:
