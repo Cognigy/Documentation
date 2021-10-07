@@ -7,29 +7,11 @@
   - docker
   - VS Code
 
-### On Linux
+### On for all OS systems
 **Steps to start:**
   1. Clone repository from Documentation [repo on Azure DevOps](https://docs.docker.com/engine/install/ubuntu/) with SSH authentication
-  2. Run command ```docker run --rm -it --net host -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
+  2. Run command ```docker run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
   3. The documentation will be accessible via http://localhost:8008
-
-### On MAC
-**Steps to start:**
-
-  1. Install [Docker](https://docs.docker.com/desktop/mac/install/) and [VS Code](https://code.visualstudio.com/download) 
-  2. Login to the Azure registry of Cognigy
-  3. Clone repository from Documentation [repo on Azure DevOps](https://cognigy.visualstudio.com/Documentation/_git/documentation) with SSH authentication
-  4. Run command ```docker run --rm -it --net host -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
-  5. Changing the line 302 in scripts/docs.py to ```mkdocs.commands.serve.serve(dev_addr="0.0.0.0:8008")```. By doing that you will remove --dev-addr 0.0.0.0:8008 from docs-live.sh. NOTE! ```--net host``` is not working in Mac
-
-### On Windows
-**Steps to start:**
-
-  1. Install [Docker](https://docs.docker.com/desktop/windows/install/) and [VS Code](https://code.visualstudio.com/download) 
-  2. Login to the Azure registry of Cognigy
-  3. Clone repository from Documentation [repo on Azure DevOps](https://cognigy.visualstudio.com/Documentation/_git/documentation) with SSH authentication
-  4. Run command inside the ``documentation/`` directory```docker run --rm -it --net host -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
-
 
 #### Logging in to Azure
 Run command: 
@@ -134,6 +116,7 @@ metadata:
  All images are stored directly in the repository. Every "Section" will have an "images" directory that stores images from all .md files of that section.
 
  **Example of Developer Guides Section image storage:**
+
  <figure>
   <assets/img class="image-center" src="{{config.site_url}}assets/img/Dev_guide_images.png" width="100%" />
 </figure>
@@ -145,8 +128,9 @@ All images should be:
   2. should be taken with a minimum resolution of 1920 x 1080 
 
 ### Adding an image to the .md file
+
 <figure>
-  <assets/img class="image-center" src="{{config.site_url}}assets/img/logo_prod.jpeg" width="30%" />
+  <assets/img class="image-center" src="{{config.site_url}}/assets/img/logo_prod.jpeg" width="30%" />
   <figcaption>Image caption</figcaption>
 </figure>
 
@@ -204,7 +188,7 @@ You can combine multiple classes by separating them with spaces ```class="image-
 
   - Make a copy of the en directory and rename it to another language abbreviation (e.g. de, ru, ja, fr)
   - Modify the YML file located in the directory of the specific language
-    - Add the language to the Language changer drop down by adding the language to the "alternate" section of YML file
+  - Add the language to the Language changer drop down by adding the language to the "alternate" section of YML file
 
 <figure>
   <assets/img class="image-center" src="{{config.site_url}}assets/img/alternate language.png" width="100%" />

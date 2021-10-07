@@ -13,7 +13,7 @@ Please sign-in to our Help Center if you like to actively constribute and post a
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/help/images/550e629-community_screenshot.png" width="100%" />
-    <figcaption>Figure 1: Cognigy Community in Help Center</figcaption>
+    <figcaption>Cognigy Community in Help Center</figcaption>
 </figure>
 
 ## Rcommendations

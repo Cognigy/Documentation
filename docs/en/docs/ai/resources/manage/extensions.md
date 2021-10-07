@@ -6,17 +6,16 @@ Extensions enable anyone to build JavaScript modules and to expose them as Flow 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/2f43014-extensions.png" width="100%" />
 </figure>
 
-
 <blockquote class="callout callout_info" theme="📘">
-   <h3 class="callout-heading false">
-      <span class="callout-icon">▶️</span>
-      <p>
+    <span class="callout-icon">▶️</span>
+    <div class="callout-heading">
+      <div class="callout-text">
          <a href="https://support.cognigy.com/hc/en-us/articles/360019893139-Cognigy-Sessions-Extensions" target="_blank" >Techinar video "Cognigy Extensions"</a>
-      </p>
-   </h3>
-   <p>
+      </div>
+      <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive
-   </p>
+      </div>
+   </div>
 </blockquote>
 
 
@@ -31,11 +30,15 @@ Please have a look at the [**Extensions Github Repository**](https://github.com/
 If you're just after finding Cognigy's currently released Extensions to install into your Cognigy.AI instance, please see the link below.
 
 <blockquote class="callout callout_info" theme="📘">
-   <h3 class="callout-heading false">
-      <p>
+    <span class="callout-icon">📘</span>
+    <div class="callout-heading">
+      <div class="callout-text">
          <a href="https://support.cognigy.com/hc/en-us/articles/360016409380-Extensions-Overview" target="_blank" >Extension Overview</a>
-      </p>
-   </h3>
+      </div>
+      <div class="callout-subtext">
+            Cognigy Helpcenter article
+      </div>
+   </div>
 </blockquote>
 
 ## Source Code
@@ -43,33 +46,40 @@ If you're just after finding Cognigy's currently released Extensions to install 
 If you want to develop your own Extensions and would like to see examples, visit our GitHub repository.
 
 <blockquote class="callout callout_info" theme="📘">
-   <h3 class="callout-heading false">
-      <p>
+    <span class="callout-icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span>
+    <div class="callout-heading">
+      <div class="callout-text">
          <a href="https://github.com/Cognigy/Extensions" target="_blank" >Cognigy Extensions</a>
-      </p>
-   </h3>
+      </div>
+      <div class="callout-subtext">
+            Reference to Cognigy repository on GitHub
+      </div>
+   </div>
 </blockquote>
 
 ## Get Started
 
 <blockquote class="callout callout_info" theme="📘">
-   <h3 class="callout-heading false">
-      <p>
+    <span class="callout-icon">📘</span>
+    <div class="callout-heading">
+      <div class="callout-text">
          <a href="https://support.cognigy.com/hc/en-us/articles/360016534459-Get-Started" target="_blank" >Get Started</a>
-      </p>
-   </h3>
+      </div>
+      <div class="callout-subtext">
+            Cognigy Helpcenter article
+      </div>
+   </div>
 </blockquote>
 
 
 ???+ info "Where are Custom Modules?"
     Extensions are the successor to the Cognigy Integration Framework Custom Modules and replace them completely.
 
-
+<br>
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.6-blue.svg)](https://shields.io/)
+
 ## Extension Performance
-
 <div class="divider"></div>
-
 Cognigy.AI considers the code within an extension to be "un-trusted", meaning that the code will be executed in a secure and additional hardened environment by default. There is a certain overhead in bootstrapping this secure environment per execution - hence Flow Nodes from Extensions generally execute slower than our built-in ones (e.g. our "Say"-Node).
 
 With Cognigy.AI v4.1.6 we have introduced the ability to "trust" the code of an Extension by letting customers decide whether they want to execute the code in a secure environment or in the normal execution environment in which our own Flow Nodes run.
@@ -96,13 +106,12 @@ Enabling the feature will not change anything automatically. Once the feature wa
 ???+ danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
 
+
 <br>
 [![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)](https://shields.io/)
 
 ## Extension organization-wide embeddable
-
 <div class="divider"></div>
-
 With Cognigy.AI v4.8 we have introduced the ability for on-premise customers to embed certain extensions organization-wide.
 
 To enable the feature, the following additional environment variable can be used to update the GitHub **config.map** file: 
