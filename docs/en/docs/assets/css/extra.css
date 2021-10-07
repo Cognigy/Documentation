@@ -150,3 +150,39 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 .image-center {
   margin: auto;
 }
+
+/* Block quote classes */
+
+.callout{
+  background-color: #e2eef2;
+  display: flex;
+}
+
+.callout-icon{
+  font-size: 60px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+
+.callout-heading{
+  padding-left: 20px;
+}
+
+.callout-text{
+  font-size: 26px;
+  text-decoration: underline;
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
+.callout-subtext {
+  padding-top: 10px;
+  line-height: 10px;
+}
+
+.callout-icon-svg {
+  font-size: 60px;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}

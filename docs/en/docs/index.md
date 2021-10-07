@@ -1,5 +1,4 @@
-# 
-
+#
 <figure>
   <img class="image-center" src="{{config.site_url}}assets/img/Cognigy-black.svg" width="50%" />
   <br>

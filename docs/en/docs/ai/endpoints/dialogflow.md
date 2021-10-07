@@ -33,3 +33,9 @@ By enabling the **Reparse Slots** toggle you can combine your Dialogflow and Cog
 
 ???+ info "Help Center"
     For more detailed information on how to set up a **Dialogflow** Endpoint, please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016153980).
+
+## More information
+
+
+- [Helpcenter: Dialogflow Intro ](https://support.cognigy.com/hc/en-us/articles/360016153980)
+- [Helpcenter: Dialogflow Deployment](https://support.cognigy.com/hc/en-us/articles/360016154040)

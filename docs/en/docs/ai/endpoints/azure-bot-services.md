@@ -55,3 +55,9 @@ When clicking the postback button in a [quick reply, gallery, list, or button]({
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c891b0a-Eatery_make_order_2.svg" width="100%" />
 </figure>
+
+## More information
+
+
+- [Help Center: Microsoft Bot Framework Deployment ](https://support.cognigy.com/hc/en-us/articles/360016183720-Microsoft-Bot-Framework-Deploy-an-Endpoint)
+- [Help Center: Microsoft Bot Framework Adaptive Cards](https://support.cognigy.com/hc/en-us/articles/360016184000-Microsoft-Bot-Framework-Using-Adaptive-Cards)

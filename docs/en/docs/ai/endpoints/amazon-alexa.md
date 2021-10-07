@@ -47,3 +47,9 @@ Once a skill has been selected, click the **DEPLOY** button to configure your sk
 
 ???+ info "Help Center"
     More detailed information on how to set up an **Alexa** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
+
+## More information
+
+- [Helpcenter: Amazon Alexa Intro ](https://support.cognigy.com/hc/en-us/articles/360016192979)
+- [Helpcenter: Amazon Alexa Deployment ](https://support.cognigy.com/hc/en-us/articles/360016193099-Amazon-Alexa-Deploy-an-Endpoint)
+- [Helpcenter: Amazon Alexa Account Linking ](https://support.cognigy.com/hc/en-us/articles/360016153600-Amazon-Alexa-Account-Linking)

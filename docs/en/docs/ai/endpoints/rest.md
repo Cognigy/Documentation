@@ -1,1 +1,72 @@
 # REST
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/d4a23f8-EP_REST.png" width="100%" />
+</figure>
+
+Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **Rest** client by using our Rest Endpoint integration.
+
+## Generic Endpoint Settings
+
+- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
+- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers) 
+- [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors)
+
+## Connect your Application
+
+<div class="divider"></div>
+
+After creating a REST Endpoint you are able to send **POST** requests to the **Endpoint URL**. The body of the requests should have the following format:
+
+```
+{
+  "userId":"userId",
+  "sessionId": "someUniqueId",
+  "text":"message text",
+  "data": {
+    "key": "value"
+  }
+}
+```
+
+**Parameters**
+*userId* - a user ID of the end user in form of a string
+*sessionId* - a unique ID that is used to track the current conversation in form of a string
+*text* - message text that should get processed by the assigned flow in form of a string
+*data* - message data that should get processed by the assigned flow in form of an object
+
+???+ info "Sending text and data"
+    By default, you can use the REST Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the REST Endpoint throws an error.
+
+???+ success "Session ID"
+    The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
+
+
+The response contains the output text, output data and the outputStack, which is an array of all Flow outputs. Since the Rest Endpoint will concatenate all Flow Outputs (e.g. all Say Nodes) into one text / data output, you can use the outputStack for debugging purposes.
+
+```
+{
+    "text": "output2",
+    "data": {
+        "output": 2
+    },
+    "outputStack": [
+        {
+            "text": "output 1",
+            "data": {
+                "output": 1
+            }
+        },
+        {
+            "text": "output 2",
+            "data": {
+                "output": 2
+            }
+        }
+    ]
+}
+```
+
+???+ info "AI Default Channel Formats"
+    You can find out more about the format for the default channels [**here**]({{config.site_url}ai/flow-nodes/code/AI-default-channel-formats)
