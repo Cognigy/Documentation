@@ -7,15 +7,15 @@
 Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **Voice Gateway**, allowing customers to speak to your **Agent** instead of just writing with it.
 
 <blockquote class="callout callout_info" theme="📘">
-   <h3 class="callout-heading false">
-      <span class="callout-icon">▶️</span>
-      <p>
+    <span class="callout-icon">▶️</span>
+    <div class="callout-heading">
+      <div class="callout-text">
          <a href="https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway" target="_blank" >Techinar video "Building a Phone Bot with Voice Gateway"</a>
-      </p>
-   </h3>
-   <p>
-      Watch this Episide of Cognigy Sessions for a technical deep dive
-   </p>
+      </div>
+      <div class="callout-subtext">
+      Watch this Episode of Cognigy Sessions for a technical deep dive
+      </div>
+   </div>
 </blockquote>
 
 

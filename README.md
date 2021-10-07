@@ -19,11 +19,10 @@ For this workflow to work properly, you need to install `Docker` which is availa
 ## Development server
 Once you have Docker installed, you can run the following command in order to start the development server which will reload once you have changed content:
 ```
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material
+docker run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live
 ```
 
-We are using the following Docker image which includes a development server:
-https://hub.docker.com/r/squidfunk/mkdocs-material
+You need to make sure that you execute this command in this repository as it will bind-mount the current folder into the running container!
 
 ---
 # Roadmap

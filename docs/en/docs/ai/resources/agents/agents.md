@@ -19,11 +19,11 @@ Agents contain collections of conversational AI resources, including [Flows]({{c
 The Agent Dashboard contains serves as an overview page for you Virtual Agent. It displays information that is relevant to your agent, including Analytics, Project Members, Recently Changed resources and more information on Cognigy.AI itself.
 
 <br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
 
 **Analytics Widget**
 
-As of release v4.8x Cognigy provides a completely new designed Analytics solution **"[Insights]({{config.site_url}}insights/index.md)"**.
+As of release v4.10 Cognigy provides a completely new designed Analytics solution **"[Insights]({{config.site_url}}insights/index.md)"**.
 - When the "Insights" application is enabled in your product you will be led to the Insights Overview dashboard when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
 - When the Insights application is not enabled in your product you will be led to the Analytics page as before when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
 
@@ -80,7 +80,7 @@ The search interface can be used to search for resources that are part of the Ag
 <img src="{{config.site_url}}ai/resources/images/7325127-tasks.jpg" width="70%" style="margin-bottom: 5px">
 </div>
 
-Certain activities, like training **Intents**, importing **Snapshots **or the creation of a new **Agent**, generate so-called **Tasks**. A Task is an **asynchronous process **that can run in the background and is tied to the **notification system**.
+Certain activities, like training **Intents**, importing **Snapshots** or the creation of a new **Agent**, generate so-called **Tasks**. A Task is an **asynchronous process** that can run in the background and is tied to the **notification system**.
 
 ???+ info "Tasks"
     Head over to the [**Help Center**](https://support.cognigy.com/hc/en-us) for more information.

@@ -16,7 +16,7 @@ Enable the collection of Analytics data for this endpoint.
 
 ## Mask Sensitive Analytics
 
-Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}/ai/resources/tweak/intent-trainer) can't be used as we will not e.g. store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint) endpoint.
+Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer) can't be used as we will not e.g. store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint) endpoint.
 
 ### Ignore specific fields
 

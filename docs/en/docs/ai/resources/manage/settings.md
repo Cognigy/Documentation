@@ -10,7 +10,7 @@ The **Agent Settings** are used to configure:
 - The **Thresholds** for NLU recognition
 - The **Analytics** of the agent
 
-Within your agent, from the left toolbar click **Manage** > **Settings** to access the agent settings menu.
+Within your agent, from the left toolbar click **Manage** --> **Settings** to access the agent settings menu.
 
 ## General Flow Logic || Flow Settings
 <div class="divider"></div>
@@ -23,7 +23,7 @@ Add your own customized responses to confirm an [Intent]({{config.site_url}}ai/n
 
 Add your own customized responses to negate an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) and [Question Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview#question).
 
-### Continue **main **Flow after attached Flow
+### Continue **main** Flow after attached Flow
 
 You can disable this setting and stop your main flow after an attached flow has been executed.
 
@@ -56,8 +56,11 @@ When enabled, case sensitivity and punctuation will be taken into account by the
 - Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow the Attached Flow is mapped.
 - Map Attached Flow first: first maps the Attached Flow Intents separately. If no Intent is found in the Attached Flow the Main Flow is mapped.
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.4-blue.svg)](https://shields.io/)
 ### Implicit Slot Parsing
 Determines whether slots in NLU example sentences should be parsed implicitly or only slot annotations should be used for training. Configurable from 4.1.4 onwards. Prior to 4.1.4 the behavior was as in "Full" mode, existing agents will retain this default.
+
 - Disabled: Only use slot annotations: This will only consider user-annotated User, Lexicon or Any Slots in example sentences.
 - Full: Parse both System and Lexicon slots implicitly
 - System Slots - No Lexicon Slots: Parse only System slots like numbers, dates, email implicitly. Only consider annotations for Lexicon Slots.

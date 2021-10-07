@@ -1,5 +1,4 @@
-# 
-
+#
 <figure>
   <img class="image-center" src="{{config.site_url}}assets/img/Cognigy-black.svg" width="50%" />
   <br>
@@ -41,7 +40,7 @@ Continue with our choosing a product to get more detailed information on the wid
     </div>
   </a>
 
-  <a class="card-link" href="{{config.site_url}}live-agent/">
+  <a class="card-link" href="{{config.site_url}}live-agent/platform-overview/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">
       <div class="container">

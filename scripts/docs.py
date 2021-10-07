@@ -309,8 +309,8 @@ def live(
         lang = "en"
     lang_path: Path = docs_path / lang
     os.chdir(lang_path)
-    mkdocs.commands.serve.serve(dev_addr="127.0.0.1:8008")
-    typer.secho(f"http://127.0.0.1:8008/")
+    mkdocs.commands.serve.serve(dev_addr="0.0.0.0:8008")
+    typer.secho(f"http://0.0.0.0:8008/")
 
 
 def update_config(lang: str):
