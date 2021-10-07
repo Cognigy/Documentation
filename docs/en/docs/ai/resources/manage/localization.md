@@ -8,11 +8,13 @@ Cognigy.AI features a powerful Localization concept, that allows for customizabi
 
 The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fallback to another Locale that has.
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
 
 With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents has been added to the Cognigy.AI platform. Cognigy's solution is a native integration of leading machine translation providers into the Conversational AI platform.
 
 ???+ info "Automatic Localization"
-    More details about automatic localization you will find here: [Automatc Localization](doc:auto-translation).
+    More details about automatic localization you will find here: [Automatc Localization]({{config.site_url}}ai/tools/auto-localization/).
 
 ### Using localization in Flows
 

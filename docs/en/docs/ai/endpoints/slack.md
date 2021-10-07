@@ -1,7 +1,7 @@
 # Slack
 
 <figure>
-  <img class="image-center" src="{{config.site_url}ai/endpoints/images/4c350b3-Slack.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4c350b3-Slack.PNG" width="100%" />
 </figure>
 
 

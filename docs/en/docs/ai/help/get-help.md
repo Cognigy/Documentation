@@ -32,11 +32,15 @@ Every article in the Help Widget comes from the Cognigy Help Center, which can b
 Alternatively, you can always reach the Help Center by following the link below.
 
 <blockquote class="callout callout_info" theme="📘">
-   <h3 class="callout-heading false">
-      <p>
+    <span class="callout-icon">📘</span>
+    <div class="callout-heading">
+      <div class="callout-text">
          <a href="https://support.cognigy.com/hc/en-us" target="_blank" >Cognigy.AI Help Center</a>
-      </p>
-   </h3>
+      </div>
+      <div class="callout-subtext">
+            Cognigy Helpcenter
+      </div>
+   </div>
 </blockquote>
 
 ## Cognigy Community

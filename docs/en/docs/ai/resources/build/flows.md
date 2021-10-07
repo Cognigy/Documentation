@@ -47,7 +47,7 @@ In some cases there are **multiple Entry Points.** This can be the case if an Op
 ## NLU 
 <div class="divider"></div>
 
-In addition to the visual **Chart **, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
+In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
 
 ???+ info "NLU (Natural Language Understanding)"
     Please refer to [**NLU Overview**]({{config.site_url}}ai/nlu/overview) to learn more.

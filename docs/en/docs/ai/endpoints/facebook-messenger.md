@@ -46,7 +46,7 @@ This value is a unique App ID used by Facebook to identify you app.
 Your Facebook app's Secret that is a randomly generated value from Facebook. The value of this field must be the SECRET associated with the Page access token and App ID entered in the previous fields.
 
 ???+ info "Help Center"
-   For more information on how to configure the **Page Access Token**, **App ID** and **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
+    For more information on how to configure the **Page Access Token**, **App ID** an   **App Secret** head over to our Help Center article [**here**](https://suppor   cognigy.com/hc/en-us/article   360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
 
 ## Facebook Profiles
 

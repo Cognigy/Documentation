@@ -80,7 +80,7 @@ The search interface can be used to search for resources that are part of the Ag
 <img src="{{config.site_url}}ai/resources/images/7325127-tasks.jpg" width="70%" style="margin-bottom: 5px">
 </div>
 
-Certain activities, like training **Intents**, importing **Snapshots **or the creation of a new **Agent**, generate so-called **Tasks**. A Task is an **asynchronous process **that can run in the background and is tied to the **notification system**.
+Certain activities, like training **Intents**, importing **Snapshots** or the creation of a new **Agent**, generate so-called **Tasks**. A Task is an **asynchronous process** that can run in the background and is tied to the **notification system**.
 
 ???+ info "Tasks"
     Head over to the [**Help Center**](https://support.cognigy.com/hc/en-us) for more information.

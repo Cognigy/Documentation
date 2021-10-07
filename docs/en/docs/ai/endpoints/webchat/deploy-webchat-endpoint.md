@@ -59,6 +59,9 @@ Enable Typing Indicatros	This settings controls whether animated dots are displa
 
 [^1]: This Setting is exclusive to or works differently on [Integrated Demo Pages]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page).
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
+
 **Webchat Rating options**
 
 As of Cognigy.AI 4.9.0, Cognigy introduces [Cognigy Insights]({{config.site_url}}insights) as a new analytics application. The introduction of Insights caused following additional rating options in the Webchat endpoint configuration settings:
@@ -76,6 +79,8 @@ As of Cognigy.AI 4.9.0, Cognigy introduces [Cognigy Insights]({{config.site_url}
 |**Message History Rating Text**|	Example: "Your rating"|
 |**Message History Comment Text**	|Example:"Your comment"
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
 ### Further Webchat Settings
 
 With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new sections called "**Minimized Webchat Settings**", "**Webchat Layout**", and "**Additional Settings**".
@@ -181,13 +186,12 @@ To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0c3448e-EP_webchat_persistent_menu.png" width="100%" />
-  <figcaption>Persistent Menu</figcaption>
+  <figcaption>Persistent Menu Configuration</figcaption>
 </figure>
 
 ## More information
 
-
-[Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat)
-[Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features)
-[Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins)
-[Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page)
+- [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat)
+- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features)
+- [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins)
+- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page)

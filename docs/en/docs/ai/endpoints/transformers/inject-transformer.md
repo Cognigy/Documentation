@@ -35,7 +35,7 @@ The `Inject Transformer` has to return a valid user ID, session ID and text and/
 
 If the `Inject Transformer` returns a falsy value, then the message is never forwarded to the user.
 
-???+ info "Return Value Validation"
+???+ warning "Return Value Validation"
     The return value of the `Inject Transformer` will be validated against a set of rules and rejected if the rules are not met. The rules are:
 
     - The user ID is required in the return value. It has a max length of 256 characters.

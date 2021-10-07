@@ -97,9 +97,9 @@ The default error handling for Transformers is to log the error on the logs page
 If the Transformer is a vital part of the pipeline, for instance when building a custom Endpoint integration, then it might not make sense to execute the underlying Endpoint in case of an error. There is a setting called `Abort On Error`, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
 
 ???+ warning "Line Number in Error Logs"
-   When an error is thrown in a Transformer during execution, the line number where the error occurred will be listed in the log. The line number can be a bit incorrect, since it does not take lines occupied by interfaces and comments into account.
+      When an error is thrown in a Transformer during execution, the line number where the error occurred will be listed in the log. The line number can be a bit incorrect, since it does not take lines occupied by interfaces and comments into account.
 
-   Also note that if the error is caused by a return value validation error, no line number will be shown.
+      Also note that if the error is caused by a return value validation error, no line number will be shown.
 
 ## Stopping Transformer Execution
 
@@ -110,7 +110,7 @@ Every Transformer function expects a certain return value, which it will then us
 ## Available Modules
 <div class="divider"></div>
 
-## NPM Modules
+### NPM Modules
 The following NPM modules are available in the Transformer:
 
 |NPM Modules|

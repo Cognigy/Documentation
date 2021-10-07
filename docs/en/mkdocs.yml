@@ -204,12 +204,12 @@ nav:
     - ai/endpoints/session-management.md #converted
     - ai/endpoints/handover-settings.md #converted
     - Transformers:
-      - ai/endpoints/transformers/transformers.md
-      - ai/endpoints/transformers/input-transformer.md
-      - ai/endpoints/transformers/output-transformer.md
-      - ai/endpoints/transformers/execution-finished-transformer.md
-      - ai/endpoints/transformers/notify-transformer.md
-      - ai/endpoints/transformers/inject-transformer.md
+      - ai/endpoints/transformers/transformers.md #converted
+      - ai/endpoints/transformers/input-transformer.md #converted
+      - ai/endpoints/transformers/output-transformer.md #converted
+      - ai/endpoints/transformers/execution-finished-transformer.md #converted
+      - ai/endpoints/transformers/notify-transformer.md #converted
+      - ai/endpoints/transformers/inject-transformer.md #converted
     - ai/endpoints/inject-and-notify.md #converted
     - Cognigy Webchat:
       - ai/endpoints/webchat/webchat.md #converted

@@ -58,7 +58,7 @@ This dropdown menu allows the delivery voice of a Twilio voice bot to be customi
 ## Twilio Autopilot Endpoint Settings
 
  <div class="center-image">
- <img src="{{config.site_url}}ai/endpoints/images/23c2c49-TwilioAutopilot.PNG" width="50%" style="margin-bottom: 5px">
+ <img src="{{config.site_url}}ai/endpoints/images/23c2c49-TwilioAutopilot.PNG" width="30%" style="margin-bottom: 5px">
  </div>
 
  The **Twilio Autopilot Settings** dropdown menu is available in a **Twilio Autopilot** type endpoint and provides options to configure the interaction between Cognigy.AI a Twilio Autopilot deployment.

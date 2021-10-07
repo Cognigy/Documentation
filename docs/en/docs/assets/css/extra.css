@@ -25,6 +25,7 @@
 
 .md-button {
   border-radius: 20px;
+  align-self: center;
 }
 
 .md-typeset__table {

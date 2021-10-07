@@ -29,9 +29,9 @@ A Snapshot is an exported Agent and includes the following resources:
 
 <div class="divider"></div>
 
-You can manage your Snapshots by going to **Deploy **-> **Snapshots**:
+You can manage your Snapshots by going to **Deploy** --> **Snapshots**:
 
-???+ note "Note"
+???+ info "Note"
     Note that since Snapshots are a complete and runnable copy of your full Agent, there is a limit on how many Snapshots can exist 'online' in your Agent project. The default limit is 10 snapshots but can be changed if required via environment variable in the cognigy-env config-map: MAX_AMOUNT_SNAPSHOTS_IN_AGENT.
     Note that there is also a size limit of snapshots. That limit can also be changed via an environment variable in the cognigy-env config-map:
     SNAPSHOT_MAX_FILE_SIZE. There is no limit to how many Snapshots you can save 'offline', as these are simply files that you can download and store.
@@ -53,7 +53,7 @@ You can manage your Snapshots by going to **Deploy **-> **Snapshots**:
 #### 2. Download the .csnap file
   * Once the preparation is finished, a light blue download button will appear on the Snapshot, click it to start the download.
 
-???+ note ".CSNAP File Type"
+???+ info ".CSNAP File Type"
     The .csnap (Cognigy Snapshot) file type is a dedicated file type that can only be uploaded and opened within the Snapshot module of a Cognigy.AI platform.
 
 ### Upload a Snapshot file
@@ -64,7 +64,7 @@ You can manage your Snapshots by going to **Deploy **-> **Snapshots**:
 * Select the "Upload Snapshot" button.
 * Restoring a Snapshot will overwrite everything except Endpoints, Snapshots, Analytics and Contact Profiles with the Snapshot content.
 
-???+ note "Snapshot resources do not automatically populate in the agent after upload"
+???+ info "Snapshot resources do not automatically populate in the agent after upload"
     Uploading a Snapshot does not directly affect anything in your agent beside adding the snapshot to the list so it can be linked to an endpoint. To edit the flows contained within a snapshot, it must also be manually restored (See below).
 
 ### Restore a Snapshot
