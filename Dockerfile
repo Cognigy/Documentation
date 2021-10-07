@@ -20,4 +20,4 @@ FROM nginx:1.20.1-alpine
 
 COPY --from=build /app/site/ /usr/share/nginx/html/
 
-COPY ./.htaccess /usr/share/nginx/html/
+COPY ./default.conf /etc/nginx/conf.d/default.conf
