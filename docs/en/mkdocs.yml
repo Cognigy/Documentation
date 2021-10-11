@@ -251,15 +251,15 @@ nav:
     - ai/help/get-help.md #converted
     - ai/help/community.md #converted
 - Insights:
-  - insights/cognigy-insights.md
-  - insights/global-filter.md
-  - insights/dashboard-overview.md
-  - insights/dashboard-engagement.md
-  - insights/dashboard-nlu-performance.md
+  - insights/cognigy-insights.md #converted
+  - insights/global-filter.md #converted
+  - insights/dashboard-overview.md #converted
+  - insights/dashboard-engagement.md #converted
+  - insights/dashboard-nlu-performance.md #converted
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
-  - insights/download-report.md
+  - insights/download-report.md #converted
 - Webchat Widget:
   - ai/endpoints/webchat/webchat.md  #converted
   - ai/endpoints/webchat/webchat.md #converted
