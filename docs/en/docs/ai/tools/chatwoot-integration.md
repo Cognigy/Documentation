@@ -4,7 +4,7 @@
 
 <div class="divider"></div>
 
-Cognigy has integrated **"Chatwoot"** as an additional handover provider that can be used by our customers to connect their users with real agents (in third-party sources). Chatwoot is an open-source solution and free to use. You can read more about Agent Handover [here](https://docs.cognigy.com/docs/live-chat). 
+Cognigy has integrated **"Chatwoot"** as an additional handover provider that can be used by our customers to connect their users with real agents (in third-party sources). Chatwoot is an open-source solution and free to use. You can read more about Agent Handover [here]({{config.site_url}}ai/tools/agent-handover). 
 
 ## Setup
 <div class="divider"></div>

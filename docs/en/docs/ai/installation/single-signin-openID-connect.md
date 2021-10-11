@@ -35,7 +35,7 @@ https://<API ADRESS>/v2.0/identityprovider/configure
 
 And attach the following JSON payload settings to the request with your unique values (see below):
 
-````
+````JSON
 {
 "idpType": "oidc",
 "idpIssuer": "<DOMAIN>",

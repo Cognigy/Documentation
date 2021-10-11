@@ -129,7 +129,7 @@ It is possible to send HTTP requests to external services from within a Transfor
 
 
 **HTTP Request**
-```
+```JavaScript
 handleInput: async () => {
   const result = await httpRequest({
     uri: "some-uri",
@@ -154,7 +154,7 @@ The Session Storage is a storage object available to all Transformer functions a
       Complex objects (e.g. Arrays) should not be mutated (e.g. pushed to) directly, but instead locally and the re-assigned to the sessionStorage. See below.
 
 **Session Storage**
-```
+```JavaScript
 const handleOutput: async ({ userId, sessionId }) => {
 	const sessionStorage = await getSessionStorage(userId, sessionId);
 

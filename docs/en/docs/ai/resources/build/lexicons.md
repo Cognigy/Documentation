@@ -43,10 +43,10 @@ You can search through your Keyphrases via the search bar in the top right corne
 At the bottom, you can navigate to different pages and toggle the amount of Keyphrases you wish to show per page. This is quite handy when your Lexicons start to grow and have dozens of entries - just switch to a smaller page-size on smaller screens or increase the limit of entries on a page for large monitor usage.
 
 ???+ warning "Attach your Lexicons"
-    Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specifc flows where they are to be used. See the [Attached Lexicons Page](doc:attached-lexicons) for more information.
+    Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specifc flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons) for more information.
 
 ???+ success "Access slots in your Flow"
-    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU slot mapping results. See the [Slot Mapping Page](doc:slot-mapping) for more information.
+    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping) for more information.
 
 ## Importing & Exporting Lexicons
 

@@ -37,10 +37,10 @@ The URL Token is the last part of the displayed Endpoint URL:
 In the given example you would connect to **https://endpoint-trial.cognigy.ai**.
 
 ### Sending Messages
----
+
 Messages are sent by using the **processInput** event with a payload of the following format:
 
-```
+```JSON
 {
     "URLToken": "urlToken",
     "sessionId": "sessionId",
@@ -57,10 +57,10 @@ Messages are sent by using the **processInput** event with a payload of the foll
 When the `resetFlow` flag is set to `true`, the new flow will start from the beginning. Such payload may or may not have a message. If it does then this message will become the first one in a new flow. Don't forget to set `resetFlow` flag to `false` when sending the following messages, otherwise each such message will start a new flow.
 
 ### Receiving Messages
----
+
 Messages can be received by listening to the **output** event. The responses have the following format:
 
-```
+```JSON
 {
   "type":"output",
   "data":
@@ -75,5 +75,4 @@ Messages can be received by listening to the **output** event. The responses hav
 ```
 
 ### Cognigy Socket Client
----
 Cognigy provides a socket client for connecting with a Cognigy Socket Endpoint. The documentation and open source code for this client is available on the [Cognigy Github Page](https://github.com/Cognigy/SocketClient)

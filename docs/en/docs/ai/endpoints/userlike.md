@@ -23,7 +23,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 ## Message types in Userlike unified messaging channels
 
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 As of Release v4.5, you can add message types to the Userlike unified messaging channel.
 
@@ -44,7 +44,7 @@ The below message types will be properly displayed in the Userlike unified messa
 
 How to create and configure an Endpoint for a Userlike unified messaging channel see in our Help-Center [Userlike: Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310079).
 
-You will find an overview of Third Party Endpoints [here](https://docs.cognigy.com/docs/overview).
+You will find an overview of Third Party Endpoints [here]({{config.site_url}}ai/endpoints/overview/).
 
 ## More information
 

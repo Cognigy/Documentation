@@ -22,7 +22,7 @@ Masks potential sensitive information in analytics information. Replaces potenti
 
 In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) using the `analyticsdata` variable:
 
-```
+``` JavaScript
 analyticsdata.text = "overwritten text";
 delete analyticsdata.data.token;
 ```
@@ -30,7 +30,7 @@ delete analyticsdata.data.token;
 In this example, the token will be deleted from the analytics data before it's written to the database.
 
 ## Mask Sensitive Logging
----
+
 Masks potential sensitive information in system logs produced by the underlying infrastructure. This will also include the logs page within our UI. Here is an example of a log which gets produced when a new message arrives in our system:
 
 <figure>

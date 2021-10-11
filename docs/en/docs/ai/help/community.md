@@ -7,7 +7,7 @@
 The Cognigy Community is a place for discussion, collaboration and mutual support. Anyone can actively contribute to the community which is part of our Help Center.
 
 
-[Join our Community!](https://support.cognigy.com/hc/en-us/community/topics){ .md-button .md-button--primary }
+[Join our Community!](https://support.cognigy.com/hc/en-us/community/topics){ .md-button .md-button--primary .center}
 
 Please sign-in to our Help Center if you like to actively constribute and post articles and comments.
 
@@ -16,7 +16,7 @@ Please sign-in to our Help Center if you like to actively constribute and post a
     <figcaption>Cognigy Community in Help Center</figcaption>
 </figure>
 
-## Rcommendations
+## Recommendations
 
 <div class="divider"></div>
 

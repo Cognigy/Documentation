@@ -1,1 +1,140 @@
 # Real-time Translation
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+
+<div class="divider"></div>
+
+As of Cognigy.AI 4.10.0 real-time translation has been added to our Conversational AI product.
+
+Real-time translation is a type of translation where not everything has to be pre-translated or pre-localized (see [Localization](doc:localization), even if it is done with machine translation, but where the translation machine translates the conversation as it happens.
+
+Virtual Agents are deployed in Cognigy.AI with so-called [Endpoints](doc:endpoints). Webchat, for example, is such an Endpoint and is linked to the currently selected Flow of the Virtual Agent.
+Real-time translation works on chats and for all our Endpoint types (for example the "Voice Gateway" Endpoint). The Voice Gateway (VG) can be configured in the settings for real-time translation in the same way as for a Webchat.
+
+- You do not need to have agents that speak all the required languages of your business. You can concentrate on two or three core languages but using Cognigy's real-time translation capabilities you can serve customers in hundred languages.
+ 
+- Real-time translation by Cognigy.AI works with any Live Agent system like Genesys, LivePerson, Ring Central,... 
+
+- Cognigy.AI can act as a real-time translation service provider for your global service communications and also work with third-party contact center systems.
+
+We can consider two use cases regarding the real-time translation:
+
+- **Translation between User and Virtual Agent in real-time**, even with auto-detection
+(working for Virtual Agents conversations and also for phone calls). 
+
+- **Translation between User and a Human Agent (Live Agent) in real-time**, whilst keeping a record of both for compliance purposes.
+
+
+## Real-Time Translation between User and Virtual Agent
+
+<div class="divider"></div>
+
+In Cognigy.AI Virtual Agents are deployed with so-called [Endpoints](doc:endpoints), for example, the [Webchat Endpoint](doc:webchat-features). 
+It may be necessary for customers to make this chat available in another language.
+
+In that case, we have to activate the "**Real Time Translation Settings**".
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/9029ef1-Webchat_real-time_translation_settings_4.svg" width="100%" />
+  <figcaption>Endpoint Editor: "Real Time Translation Settings"</figcaption>
+</figure>
+
+- Go to the Endpoint editor and activate "**Real Time Translation**" in the "**Real Time Translation Settings**".
+
+- "**Enable Translation**" using the slidebar.
+- Select the "**User Input Language**" using the drop-down menu.
+- Select "**Flow Language**" using the drop-down menu.
+- "**Save**" the settings.
+
+- With a click on "Open Webchat" you can chat with the Virtual Agent. 
+
+**Example**: 
+
+Webchat conversation with the **preseletced** user language.
+
+In Webchat we assuming that the language that is being typed in is Russian. The Virtual Agent content is being translated into Russian in real-time.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/b145f04-preselected_user_language_1.svg" width="100%" />
+  <figcaption>Webchat Real-time translation and preselected language for user inputs</figcaption>
+</figure>
+
+The whole conversation of everything is translated including e.g. calendar of the date picker (day, month, week,...).
+
+
+## Real-Time Translation Settings
+
+The configuration options and their functions are listed below:
+
+|Parameter|	Description|
+|--|--|
+|Configured Translation Provider|	The currently selected translation provider.|
+|Enable Translation|	Whether or not Translation is enabled for the Endpoint.|
+|User Input Language|	The language of the user inputs.|
+|Flow Language|	The language of the Flow outputs.|
+|Set user input language on execution count|	If the input language is set to 'Auto-Detect', it will be fixed to its current value on this execution count.|
+|No-Translation Marker|	Do not translate texts encapsulated in this marker (e.g. 'I love the Cognigy.AI platform' will not translate 'Cognigy.AI').|
+|Always remove No-Translation Markers|	Whether we remove No-Translation Markers, even if the translation is not enabled.|
+|Prevent payloads from being translated	|If active, prevents all user inputs based on [payloads]() to be translated.|
+
+## Auto-Detect User Inputs
+
+We can not just have a preselected language in the settings but we can also say "**Auto-Detect(auto)**" as "**User Input Language**".
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/3f2d53f-auto-detected_user_language.svg" width="100%" />
+  <figcaption>Auto-detected user input (german language)</figcaption>
+</figure>
+
+When auto-detection for user inputs is activated, then we have an extra setting: "**Set user input language on execution count**".
+
+- Use the slidebar to set the option "**Set user input language on execution count**" as you want. The slide bar can be set between "0" and "5".
+
+**Example**:  Slidebar is set to "1" which means: Whatever language the user is using on their first input is the language that the Virtual Agent will use from then on. These settings work with every language we support.
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/3c54cd6-Input_language_Auto-Detect_4.svg" width="100%" />
+  <figcaption>Endpoint Editor: "Auto-Detect" setting</figcaption>
+</figure>
+
+## Real-Time Translation between User and Live Agent
+
+<div class="divider"></div>
+
+
+- In the Endpoint settings set "Flow" to "Handover", which will hand the conversation over to a Live Agent (human agent). 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/2a0093d-Endpoint_Editor_Webchat_Handover.svg" width="100%" />
+  <figcaption>Webchat Editor: set "Flow" to "Handover"</figcaption>
+</figure>
+
+**Example**:
+
+- User language is assumed in the German language. 
+- Handover Flow and Agent use the English language.
+
+The  Webchat conversation of a user with the Virtual Agent starts. At any point of the conversation the user would like to talk to a human agent like " I would like to talk to a human Agent" and Cognigy's Virtual Agent reacts to the Intent, stops the Flow execution, and leads the conversation over to a Live Agent who can overtake and continue with the conversation.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/c4c00c8-Webchat_1.svg" width="100%" />
+  <figcaption>Webchat conversation with a users handover request</figcaption>
+</figure>
+
+Chat flow process between the user and Live Agent using real-time translation is as follows:
+
+- The Live Agent will see in his chat the real-time translated user inputs in English and replies in English also.
+
+- The user will get the real-time translated Live Agent replies in German in his Webchat application and replies in German.   
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/e82bfb2-real-time_translation_Webchat-Live_Agent_4.svg" width="100%" />
+  <figcaption>Live Agent (English) conversation with a user (German) in real-time translation</figcaption>
+</figure>
+
+With a click on "**Resolve**," the Live Agent can close the conversation and the user is back to the Virtual Agent conversation as it was before.

@@ -49,7 +49,6 @@ Any kind of information that is visible and any kind of action that can be perfo
 To use the API, you will need to have two things:
 
 ## The API baseurl
----
 This is the url which the API is available at.
 
 <table>
@@ -76,7 +75,7 @@ This is the url which the API is available at.
 </table>
 
 ## Valid API key
----
+
 An API key is used to authenticate to the COGNIGY.AI API as a user in the system without exposing the user's credentials.
 
 You can get an API key by logging into the frontend, going to your own user profile by clicking your avatar in the top right, then click "My Profile" in the menu.
@@ -110,7 +109,7 @@ Most of the APIs in Cognigy.AI are agent-bound, meaning that a developer using o
 
 This feature is, by default, disabled in all Cognigy.AI installations. Our on-premise customers can activate this feature by setting the following environment variable to "true":
 
-````
+````JavaScript
 FEATURE_USE_SUPERAPIKEY_API
 ````
 

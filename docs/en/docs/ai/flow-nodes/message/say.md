@@ -199,7 +199,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 Defines what an Amazon Echo enabled system will say as an answer. 
 
 ### SSML Editor
----
+
 In addition to regular text output, Alexa supports SSML which enables the admin to define the way the output is pronounced.
 
 ???+ warning "Multiple voice outputs"
@@ -208,7 +208,7 @@ In addition to regular text output, Alexa supports SSML which enables the admin 
 ???+ info "CognigyScript in SSML"
     You can also use CognigyScript expressions within SSML parameters.
 ### Home Cards
----
+
 ???+ warning "Multiple Cards"
     If more than one Card is being output during one Flow execution, only the last one will be sent.
 
@@ -219,7 +219,7 @@ The following Card Templates are available:
 - Text & Image
 - Link Account
 ### Display Templates for Echo Show
----
+
 ???+ warning "Multiple Displays"
     If more than one Display configuration is being output during one Flow execution, only the last one will be sent.
 
@@ -233,7 +233,7 @@ The following Display Templates are available:
 * Vertical List
 * Horizontal List
 ### Custom JSON Directives
----
+
 Instead of going with the WYSIWYG approach, you may also define a directive manually using a CognigyScript-enabled JSON field.
 
 For further details see the [Amazon Alexa Documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).
@@ -260,7 +260,7 @@ The following Facebook Messenger Templates are available:
 ???+ success "Using Code Nodes to output Facebook Markup"
     You can use the output action in Code Nodes to send JSON directly to Facebook. To do that, set the following code as the data property:
 
-    ```
+    ```JSON
     {
       "_cognigy": {
         "_facebook": {      
@@ -287,13 +287,13 @@ The following Facebook Messenger Templates are available:
 If you want to output a card, list, ssml or any other advanced options on the Google Assistant, then you can use the **Google Actions** tab.
 
 ### **Keep Session Open**
----
+
 This toggle defines whether the session should be kept open or whether it should end after this output. This should be turned off when you wish to end the conversations and turned on otherwise
 
 ???+ warning "Multiple Keep Session Open Values"
     If more than one Say Node is hit during Flow Execution, then the Keep Session Open value of the last output is used
 ### SSML editor
----
+
 With our **Google Actions SSML Editor** you're able to build your Google Asisstant output speech by either entering SSML markup or by using our SSML markup templates (see figure below).
 
 <figure>
@@ -309,7 +309,7 @@ With our **Google Actions SSML Editor** you're able to build your Google Asissta
 For further details see the [Google Actions Documentation](https://developers.google.com/actions/reference/ssml)
 
 ### Display - Rich Response
----
+
 <table>
   <tr>
     <th>Type</th>
@@ -363,7 +363,7 @@ For further details see the [Google Actions Documentation](https://developers.go
 
 For details and requirements see the [Google Actions Documentation](https://developers.google.com/assistant/conversational/df-asdk/rich-responses)
 ### Display - Suggestions
----
+
 A suggestion/chip is used to point the conversation to a defined direction.
 
 ???+ warning "Multiple Suggestions"
@@ -372,7 +372,7 @@ A suggestion/chip is used to point the conversation to a defined direction.
 - you can add a **maximum of 8 chips** to a response
 - a suggestion/chip can contain text with a **maximum length of 20 characters**
 ### Custom Google Action Response JSON
----
+
 Within the **custom JSON** field you are able to define complex responses. Please visit the [Google Actions Documentation](https://developers.google.com/actions/reference/rest/Shared.Types/AppResponse) for further details.
 ## Webchat
 <div class="divider"></div>

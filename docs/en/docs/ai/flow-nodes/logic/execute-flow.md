@@ -35,15 +35,15 @@ Here you can select the target Node which is executed whenever the Flow executio
 </figure>
 
 #### Parse Intents
----
+
 This toggle decides whether we should **parse intents** within the sub Flow.
 
 #### Parse Keyphrases
----
+
 This toggle decides whether we should **find keyphrases** within the sub Flow.
 
 #### Absorb Context
----
+
 This toggle decides whether the **default Flow Context** of the **sub Flow** should be applied to the current Context. If the sub Flow has a value within its **default Context**, the value will be copied into the current Context as soon as you enter the child Flow.
 
 ???+ warning "Loops" 

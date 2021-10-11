@@ -36,7 +36,7 @@ You can create **Tokens** either from flow node text fields showing the **AI** s
 
 Creating a **Token** requires the following information:
   * Name - The name that will be shown on the token to platform users
-  * Script - The [CognigyScript](doc:cognigy-script) path used to access the data
+  * Script - The [CognigyScript]({{config.site_url}}ai/tools/cognigy-script) path used to access the data
   * Type - The data location (used for sorting the token in the search window)
 
 

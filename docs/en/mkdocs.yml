@@ -165,6 +165,7 @@ nav:
       - ai/nlu/nlu-overview/intent-upload-download.md
       - ai/nlu/nlu-overview/reject-intents.md
     - Slot Mapping:
+      - ai/nlu/slot-mapping/slot-mapping.md
       - ai/nlu/slot-mapping/any-slots.md
     - Attachments:
       - ai/nlu/attachments/attached-flows.md
@@ -175,29 +176,30 @@ nav:
     - ai/nlu/language-support.md
     - ai/nlu/nlu-warnings.md
   - Tools:
-    - ai/tools/overview.md
     - User menu:
-      - ai/tools/user-menu/user-menu.md
-      - ai/tools/user-menu/my-profile.md
-      - ai/tools/user-menu/access-control.md
-      - ai/tools/user-menu/usage-statistics.md
+      - ai/tools/user-menu/user-menu.md #converted
+      - ai/tools/user-menu/my-profile.md #converted
+      - ai/tools/user-menu/access-control.md #converted
+      - ai/tools/user-menu/usage-statistics.md #converted
     - Interaction Panel:
-      - ai/tools/interaction-panel/interaction-panel.md
-      - ai/tools/interaction-panel/input.md
-      - ai/tools/interaction-panel/state.md
-      - ai/tools/interaction-panel/context.md
-      - ai/tools/interaction-panel/profile.md
-    - ai/tools/cognigy-script.md
+      - ai/tools/interaction-panel/interaction-panel.md #converted
+      - ai/tools/interaction-panel/input.md #converted
+      - ai/tools/interaction-panel/state.md #converted
+      - ai/tools/interaction-panel/context.md #converted
+      - ai/tools/interaction-panel/profile.md #converted
+    - ai/tools/cognigy-script.md  #converted
     - Analytics:
-      - ai/tools/analytics/agents-analytics.md
-      - ai/tools/analytics/odata-analytics-endpoint.md
-      - ai/tools/analytics/analytics-concepts.md
-    - ai/tools/hotkeys.md
-    - ai/tools/managementUI.md
-    - ai/tools/agent-handover.md
-    - ai/tools/live-agent.md
-    - ai/tools/auto-localization.md
-    - ai/tools/real-time-translation.md
+      - ai/tools/analytics/analytics.md #converted
+      - ai/tools/analytics/agents-analytics.md #converted
+      - ai/tools/analytics/odata-analytics-endpoint.md #converted
+      - ai/tools/analytics/analytics-concepts.md #converted
+    - ai/tools/hotkeys.md #converted
+    - ai/tools/managementUI.md #converted
+    - ai/tools/agent-handover.md #converted
+    - ai/tools/live-agent.md #converted
+    - ai/tools/chatwoot-integration.md #converted
+    - ai/tools/auto-localization.md #converted
+    - ai/tools/real-time-translation.md #converted
   - Endpoints:
     - ai/endpoints/overview.md #converted
     - ai/endpoints/data-protection-and-analytics.md #converted
@@ -220,7 +222,7 @@ nav:
     - ai/endpoints/cognigy-vg.md #converted
     - ai/endpoints/rest.md #converted
     - ai/endpoints/socketio.md #converted
-    - ai/endpoints/webhook.md
+    - ai/endpoints/webhook.md #converted
     - ai/endpoints/amazon-alexa.md #converted
     - ai/endpoints/dialogflow.md #converted
     - ai/endpoints/facebook-messenger.md #converted
@@ -235,7 +237,6 @@ nav:
     - ai/endpoints/twilio.md #converted
     - ai/endpoints/userlike.md #converted
     - ai/endpoints/workplace-by-fb.md #converted
-    - ai/endpoints/chatwoot-integration.md #converted
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md #converted
     - ai/installation/browser-requirements.md #converted
@@ -250,17 +251,22 @@ nav:
     - ai/help/get-help.md #converted
     - ai/help/community.md #converted
 - Insights:
-  - insights/cognigy-insights.md
-  - insights/global-filter.md
-  - insights/dashboard-overview.md
-  - insights/dashboard-engagement.md
-  - insights/dashboard-nlu-performance.md
+  - insights/cognigy-insights.md #converted
+  - insights/global-filter.md #converted
+  - insights/dashboard-overview.md #converted
+  - insights/dashboard-engagement.md #converted
+  - insights/dashboard-nlu-performance.md #converted
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
-  - insights/download-report.md
+  - insights/download-report.md #converted
 - Webchat Widget:
-  - webchat/index.md
+  - ai/endpoints/webchat/webchat.md  #converted
+  - ai/endpoints/webchat/webchat.md #converted
+  - ai/endpoints/webchat/deploy-webchat-endpoint.md #converted
+  - ai/endpoints/webchat/webchat-features.md #converted
+  - ai/endpoints/webchat/triggering-webchat-plugins.md #converted
+  - ai/endpoints/webchat/integrated-demo-page.md #converted
 - Live Agent:
   - live-agent/platform-overview.md
   - Release Notes:
