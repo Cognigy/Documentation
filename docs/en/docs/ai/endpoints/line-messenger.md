@@ -20,7 +20,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/) 
 
 ???+ success "Supports Inject & Notify"
-    You can use the **[Inject & Notify](doc:inject-notify)** functionality with this type of Endpoint.
+    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Channel Specific Settings
 

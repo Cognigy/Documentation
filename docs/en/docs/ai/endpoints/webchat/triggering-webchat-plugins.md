@@ -10,7 +10,7 @@ As an example, let's imagine we have a plugin that displays images in the chat, 
 The `match` field is set to `inline-image` and it reads the image url from `message.data._plugin.url`.
 In order to trigger the plugin, we would need to send a message with the `data` field set up like this:
 
-```
+```JSON
 {
   "_plugin": {
     "type": "inline-image",
@@ -45,14 +45,14 @@ If you prefer using a Code Node to send a message, you can pass the structured `
 
 <div class="divider"></div>
 
-To get the best user experience for the editors of a Conversational AI, you can build a customized [Extension](doc:extensions) that sends a message triggering the webchat plugin, abstracting away everything but the required parameters.
+To get the best user experience for the editors of a Conversational AI, you can build a customized [Extension]({{config.site_url}}ai/resources/manage/extensions/) that sends a message triggering the webchat plugin, abstracting away everything but the required parameters.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/f123a42-imagePlugin.PNG" width="100%" />
 </figure>
 
 **Custom Module Example**
-```
+```JavaScript
 /**
  * Sends an Image to the user via webchat
  * @arg {CognigyScript} `url` The url of the image

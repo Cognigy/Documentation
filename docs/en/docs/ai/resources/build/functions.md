@@ -33,7 +33,7 @@ You can access the `parameters` and `api` objects from the Function's arguments.
 ## Interacting with Third-Party Systems
 You can use HTTP requests to interact with third-party systems.
 
-````
+````JavaScript
 const response = await api.httpRequest({
     method: "get",
     url: "https://example.com/api/v2",
@@ -47,7 +47,7 @@ const response = await api.httpRequest({
 You can use Functions to interact with Flows using the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) APIs.
 The following examples assume that you pass the userId, sessionId and URLToken through the Function's Parameters.
 
-````
+````JavaScript
 const { userId, sessionId, URLToken } = parameters;
 
 api.inject({
@@ -59,7 +59,7 @@ api.inject({
 ````
 
 **Performing a "Norify" call**
-````
+````JavaScript
 const { userId, sessionId, URLToken } = parameters;
 
 api.notify({

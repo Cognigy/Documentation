@@ -48,7 +48,7 @@ The return value of the `Output Transformer` depends on the type of Transformer.
 The `Output Transformer` has to return an output which will be stored in an `outputs` array, which is available in the `handleExecutionFinished` Transformer function. The outputs would normally have the format as seen below, but it is also possible to store a different output format into the outputs array.
 
 **Rest Return format**
-```
+```JavaScript
 handleOutput: async ({ }) => {
   const modifiedOutput = {
     text: "someText",
@@ -67,7 +67,7 @@ The `Output Transformer` has to return an output which can be sent directly to t
 Here is an example of the correct return format for a Sunshine Conversations Endpoint:
 
 **Webhook / Socket Return format**
-```
+```JavaScript
 handleOutput: async ({ }) => {
    const requestPayload = {
 	   role: "appMaker",

@@ -19,7 +19,7 @@ Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources
 
 After creating a REST Endpoint you are able to send **POST** requests to the **Endpoint URL**. The body of the requests should have the following format:
 
-```
+```JSON
 {
   "userId":"userId",
   "sessionId": "someUniqueId",
@@ -45,7 +45,7 @@ After creating a REST Endpoint you are able to send **POST** requests to the **E
 
 The response contains the output text, output data and the outputStack, which is an array of all Flow outputs. Since the Rest Endpoint will concatenate all Flow Outputs (e.g. all Say Nodes) into one text / data output, you can use the outputStack for debugging purposes.
 
-```
+```JSON
 {
     "text": "output2",
     "data": {

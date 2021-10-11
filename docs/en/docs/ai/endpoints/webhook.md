@@ -31,7 +31,7 @@ You need to run a Webserver that receives POST calls. Enter the **Webhook URL** 
 
 All **POST** requests that are sent to the **Endpoint URL** are processed by the assigned *Flow* and the triggered outputs are forwarded to the **Webhook URL**. The body of the requests should have the following format:
 
-```
+```JSON
 {
   "userId":"userId",
   "sessionId": "someUniqueId",

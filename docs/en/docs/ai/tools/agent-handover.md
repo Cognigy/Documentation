@@ -21,7 +21,7 @@ CognigyScript is essentially JavaScript, but gives you access to the Cognigy obj
 Accessing the CognigyScript functionality differs between different types of arguments.
 
 ## For Text arguments
----
+
 Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{ { } }` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
 
 ???+ info "Invalid expressions return an empty string"
@@ -37,7 +37,7 @@ CognigyScript in Node Arguments is always returned as string, unless you force t
 `{ {context.anObject.preserveType()} }` will return whatever `anObject` is, so for example a JavaScript Object.
 
 ## For JSON arguments
----
+
 Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"} }` has to be used to run CognigyScript. We have to supply a script and a return type. If the return type isn't equal to the requested type, Cognigy.AI will try to convert the return type to it.
 
 **Example with Typing**
@@ -61,7 +61,6 @@ Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"
 This would try to retrieve the orders object from the Context and assign it to customer_orders. If it doesn't exist, it would return undefined.
 
 ## IF Conditions and SWITCH Operands
----
 
 Within conditions, CognigyScript is also written without `{ {` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
 
@@ -70,7 +69,6 @@ Within conditions, CognigyScript is also written without `{ {` tags. It is evalu
 
 
 ## Code Nodes
----
 
 Within Code Nodes you don't need to use the { { } } tags. The `input`, `context`, `profile` and `actions` variables are exposed by default, as are `_` and `moment`.
 

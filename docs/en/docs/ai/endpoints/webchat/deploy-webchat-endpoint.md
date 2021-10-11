@@ -4,7 +4,7 @@
 
 <div class="divider"></div>
 
-First, create an Endpoint that uses the Webchat Channel. When you created the Endpoint and assigned the Flow that the Endpoint should use, then you can already click on the ``Open Webchat`` button in the upper right corner. This will open the configured Webchat in an [Integrated Demo Page](doc:integrated-demo-page), and you can already start talking to your flow. Read on to figure out how you can configure the appearance of the Webchat to style it in your company colors, add a background image and much more. 
+First, create an Endpoint that uses the Webchat Channel. When you created the Endpoint and assigned the Flow that the Endpoint should use, then you can already click on the ``Open Webchat`` button in the upper right corner. This will open the configured Webchat in an [Integrated Demo Page]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page), and you can already start talking to your flow. Read on to figure out how you can configure the appearance of the Webchat to style it in your company colors, add a background image and much more. 
 
 
 ## Generic Endpoint Settings

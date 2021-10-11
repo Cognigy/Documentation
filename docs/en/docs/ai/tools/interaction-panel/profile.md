@@ -9,7 +9,7 @@ The [Flow]({{config.site_url}}ai/resources/build/flows/) can read from and write
 ## Accessing the Profile object
 <div class="divider"></div>
 
-Flow nodes can dynamically access **Profile ** properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens) or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script) e.g. `{{profile.property}}`. The Cognigy Script used to access the profile object follows the dot-notation `property.child.child`.
+Flow nodes can dynamically access **Profile ** properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens) or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script) e.g. `{ {profile.property} }`. The Cognigy Script used to access the profile object follows the dot-notation `property.child.child`.
 
 **Example Profile Object**
 
@@ -20,6 +20,6 @@ Flow nodes can dynamically access **Profile ** properties via [Tokens]({{config.
 }
 ```
 
-* `{{profile.firstname}}` would return `Thijs`
+* `{ {profile.firstname} }` would return `Thijs`
 
 Flow nodes can also be used to update the stored profile data for a user. Find out more about which nodes to use on the [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#profile-nodes) page.

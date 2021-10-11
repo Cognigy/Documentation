@@ -13,7 +13,7 @@ Cognigy.AI features built-in support for a number of third-party NLU engines. Th
 </figure>
 
 ???+ info "Want to learn how to connect an External NLU Service?"
-    Find out how to create an manage NLU connectors on the [External NLU](https://docs.cognigy.com/docs/external-nlu#creating-nlu-connectors) page.
+    Find out how to create an manage NLU connectors on the [External NLU]({{config.site_url}}ai/nlu/external-nlu/external-nlu#creating-nlu-connectors) page.
     Find out how to connect to each supported external NLU service via the Help Center articles listed below:
     
     * Alexa NLU (Article coming soon)
@@ -22,4 +22,4 @@ Cognigy.AI features built-in support for a number of third-party NLU engines. Th
     * [Dialogflow: External NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)
 
 ???+ info "Testing and Deploying with an External NLU"
-    Find out how to test and deploy an agent using a third-party NLU on the [External NLU](https://docs.cognigy.com/docs/external-nlu#testing-and-deploying-with-an-external-nlu) page.
+    Find out how to test and deploy an agent using a third-party NLU on the [External NLU]({{config.site_url}}ai/nlu/external-nlu/external-nlu#testing-and-deploying-with-an-external-nlu) page.

@@ -64,15 +64,15 @@ For a better and faster handling of your ticket you should provide as much infor
 The following sections describe recommended attachments and informations you could send us to accelerate the ticket handling process. 
 
 ## General Problems
----
+
 For an issue which you can't really associate with a specific resource (flow, endpoint etc.) please add at least a screenshot of the console (**F12**) as an attachment to the ticket.
 
 ## Problems with a Flow
----
+
 The ticket for a problem with a flow should have the Flow and all it's dependencies attached.
 
 You can also attach a screenshot of the logs (see [Logs]({{config.site_url}}ai/resources/test/logs)) to the ticket. 
 
 ## Problems with the UI
----
+
 Please add - in addition to your description - a screenshot of the bug to your ticket.

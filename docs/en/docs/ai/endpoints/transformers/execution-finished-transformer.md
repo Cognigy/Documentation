@@ -49,7 +49,7 @@ The `Execution Finished Transformer` has to return an output which can be sent d
 Here is an example of the correct return format for a Alexa Endpoint:
 
 **Webhook / Socket Return Format**
-```
+```JavaScript
 handleExecutionFinished: async ({ processedOutput, outputs, userId, sessionId, endpoint, response }) => {
     /**
      * Combine all of the Flow outputs into one message
