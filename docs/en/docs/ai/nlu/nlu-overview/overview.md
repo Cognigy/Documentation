@@ -15,6 +15,18 @@ Intent Mapping is at the core of the NLU engine and the process uses machine lea
     </h3>
     Watch this Episode of Cognigy Sessions for a technical deep dive
 
+<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon">▶️</span>
+    <div class="callout-heading">
+      <div class="callout-text">
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU" target="_blank" >Techinar video "Cognigy NLU"</a>
+      </div>
+      <div class="callout-subtext">
+      Watch this Episode of Cognigy Sessions for a technical deep dive
+      </div>
+   </div>
+</blockquote>
+
 **Intents** can be created right within the Intents section of the NLU tab and can be fed with **training data** in the form of **example sentences**. These example sentences should include a certain degree of variation for the model to work well. The following image shows an example intent library within the intent creation menu:
 
 <figure>
@@ -139,11 +151,17 @@ States can be used to deliberately block certain Intents. This can help with edg
 ## Slot Fillers
 <div class="divider"></div>
 
-!!! info ""
-    <h3 >
-         <span>▶️ </span><a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
-    </h3>
-    Watch this Episode of Cognigy Sessions for a technical deep dive
+<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon">▶️</span>
+    <div class="callout-heading">
+      <div class="callout-text">
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
+      </div>
+      <div class="callout-subtext">
+      Watch this Episode of Cognigy Sessions for a technical deep dive
+      </div>
+   </div>
+</blockquote>
     
 Slot Fillers allow for advanced Slot filling with very little effort. They can be configured with a certain Type of Slot and are executed whenever the NLU is executed (typically with every input). Slot Fillers automatically copy found Slots to the [Context]({{config.site_url}}ai/tools/interaction-panel/context/)  object, meaning that they can be filled using a number of subsequent user utterances. When combined with Question Nodes, this allows for a very natural information gathering mechanism since it allows users to "over answer". 
 

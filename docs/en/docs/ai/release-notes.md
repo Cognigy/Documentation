@@ -2,7 +2,7 @@
 
 
 ## 4.11.0
-**Released:**** September 20th, 2021
+**Released:** September 20th, 2021
 
 ### Features
 #### Custom theme for Cognigy Insights
@@ -31,7 +31,7 @@ Added a JSON field to Webchat Endpoint Editor to configure additional settings n
 
 
 ## 4.10.1
-###**Released:** September 15th, 2021
+**Released:** September 15th, 2021
 
 This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did not do that. An opt-out is available for customers that do not want to use Cognigy Insights right now. This opt-out will be removed with one of the next releases.
 
@@ -170,7 +170,7 @@ This release of Cognigy.AI adds the ability for on-premise customers to embed ce
 
 
 ## 4.7.0
-**Released:** July 22nd, 2021
+****Released:**eleased:** July 22nd, 2021
 
 ### Features
 #### Hiding Endpoints
@@ -385,7 +385,8 @@ We have added the ability to copy the Agent ID to the context menu on the Index 
 - Fixed issue regarding project-manager
 
 ## 4.2.4
-###**Released:** May 7th, 2021
+
+**Released:** May 7th, 2021
 
 ### Bugfixes
 - Fixed a bug where certain Arabic inputs into an English Flow could crash one of our NLU services
@@ -823,8 +824,6 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 
 This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make COGNIGY.AI the most advanced conversational AI platform on the market. Please feel free to explore our new documentation and signup for your free product trial:
 https://signup.cognigy.ai/
-
-**Released:** August 2nd, 2018
 
 ### Features
 - Improved ``NLU System`` that was introduced in ``3.0.3`` for german language

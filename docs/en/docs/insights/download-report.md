@@ -41,8 +41,18 @@ Cognigy Insights:
 
 ## More information
 
-- [Dashboard Overview](doc:dashboard)
+- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 
-- [Dashboard Engagement](doc:dashboard-engagement)
+- [Global Filter]({{config.site_url}}insights/global-filter/)
 
-- [Dashboard NLU Performance](doc:dashboard-nlu-performance)
+- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
+
+- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
+
+- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
+
+- [Step Explorer]({{config.site_url}}insights/step-explorer/)
+
+- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
+
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)

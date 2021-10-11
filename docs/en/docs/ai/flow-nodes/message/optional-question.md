@@ -12,11 +12,17 @@ An Optional Question Node is used to ask a question that requests specific infor
 ???+ warning "Difference with Question Node"
     The **Optional Question** Node is **non-blocking**. This means that the user will be able to continue their conversation with the Flow if they have not provided an answer to the Optional Question. Before regular Flow execution, the System will check if the User Input answers the Optional Question to find a result. If not, the flow execution will follow a different path.
 
-!!! info ""
-    <h3 >
-         <span>▶️ </span><a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
-    </h3>
-    Watch this Episode of Cognigy Sessions for a technical deep dive
+<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon">▶️</span>
+    <div class="callout-heading">
+      <div class="callout-text">
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
+      </div>
+      <div class="callout-subtext">
+      Watch this Episode of Cognigy Sessions for a technical deep dive
+      </div>
+   </div>
+</blockquote>
 
 !!! info "Question Types"
     There are different types of queries that you can use, which are described in detail below:

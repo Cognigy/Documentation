@@ -19,9 +19,9 @@ As of Cognigy.AI 4.10.0 Cognigy provides a translation solution to avoid that bo
 
 Multilingualism is a first-level concept in Cognigy.AI along with service automation in global setups.
 
-Cognigy works with an NLU system that supports over 100 [**languages**](doc:nlu-languages) and uses a [**generic model**](doc:nlu-languages#generic-language) to support the other languages.
+Cognigy works with an NLU system that supports over 100 [**languages**]({{config.site_url}}ai/nlu/language-support) and uses a [**generic model**]({{config.site_url}}ai/nlu/language-support#generic-language) to support the other languages.
 
-Cognigy supports [localization](doc:localization) of Flows, Intent models with fallbacks, partial translation, and locale variations.
+Cognigy supports [localization]({{config.site_url}}ai/resources/manage/localization) of Flows, Intent models with fallbacks, partial translation, and locale variations.
 
 With Cognigy.AI 4.10.0 we have integrated machine translation capabilities into the Cognigy.AI platform.
 
@@ -54,7 +54,7 @@ These providers can be selected in the "Agent Settings" and provide the followin
 
 Cognigy's Virtual Agent is the default in English. When required, you can localize your Flow language.
 
-To have another locale Cognigy.AI provides [localization](doc:localization) to create a localized Virtual Agent. 
+To have another locale Cognigy.AI provides [localization]({{config.site_url}}ai/resources/manage/localization) to create a localized Virtual Agent. 
 
 The localization option you can find in the sidebar when clicking the "Manage" item.
 
@@ -63,7 +63,7 @@ The localization option you can find in the sidebar when clicking the "Manage" i
   <figcaption>Create new Locale</figcaption>
 </figure>
 
-- ["+ Create new Locale"](doc:localization#adding-a-locale-to-a-node), select a new language and a fallback language (US-eng).
+- ["+ Create new Locale"]({{config.site_url}}ai/resources/manage/localization#adding-a-locale-to-a-node), select a new language and a fallback language (US-eng).
 
 When going back to the Flow you can now have the option to switch the locale and to localize the Flow Nodes.
 
@@ -79,7 +79,7 @@ The Localization view allows for the configuration of any number of localization
 **You need to localize the Node settings manually using the Node editor.**
 
 ???+ info "Node Localization"
-    To localize Nodes in your Flow see details here: [Localization](doc:localization)
+    To localize Nodes in your Flow see details here: [Localization]({{config.site_url}}ai/resources/manage/localization)
 
 ## Machine Translation of Nodes and Intents
 
@@ -101,7 +101,7 @@ In order to enable machine translation, you need to configure the "**Translation
 
 - Select a Translation Provider (for example Microsoft Translator).
 
-- Enter the API key for the selected provider. The required API keys of available translation providers you can find here: [API keys Translation Provider](doc:localization#translation-settings).
+- Enter the API key for the selected provider. The required API keys of available translation providers you can find here: [API keys Translation Provider]({{config.site_url}}ai/resources/manage/localization#translation-settings).
    
 As soon as you have configured a translation provider you will get extra configuration options in the "Agent Settings" section:
 
@@ -112,7 +112,7 @@ As soon as you have configured a translation provider you will get extra configu
 - Define "**Sentence Cache Expiry Timeout**".
 
 ???+ info "Translation Settings"
-    **Details on how to configure the translation settings can be found here: [Translation Settings](doc:localization#translation-settings)** 
+    **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization#translation-settings)** 
 
 # Localization of Nodes
 
@@ -159,7 +159,7 @@ As soon as you have configured a translation provider you will get extra configu
 ## Localization of Intents
 
 
-When using machine translation for **Intents** go to the "[Intent configuration](doc:machine-learning)" and configure the "**Translation Settings**" in the same way as for Flow Nodes. 
+When using machine translation for **Intents** go to the "[Intent configuration]({{config.site_url}}ai/nlu/nlu-overview/ML-intents)" and configure the "**Translation Settings**" in the same way as for Flow Nodes. 
 
 
 <figure>

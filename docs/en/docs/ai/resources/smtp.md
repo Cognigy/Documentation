@@ -25,4 +25,4 @@ Use the **Send Email** button to send an email to the entered account.
 
 <div class="divider"></div>
 
-After you've set up the SMTP Connection, you can use it in a [Send Email Node](doc:send-email) within a Flow.
+After you've set up the SMTP Connection, you can use it in a [Send Email Node]({{config.site_url}}ai/flow-nodes/message/send-email-notification/) within a Flow.

@@ -14,7 +14,7 @@ The currently selected dashboard is displayed next to the agent in the top left 
 The dashboard overview page contains various metrics displayed as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts.
 
 ???+ info "Note"
-    **All data displayed in the charts relate to the global filter settings. You can configure global filter settings as described here: [Global filter options](doc:cognigy-insights)**
+    **All data displayed in the charts relate to the global filter settings. You can configure global filter settings as described here: [Global filter options]({{config.site_url}}insights/cognigy-insights/)**
 
 ???+ info "Note"
     **When hovering any chart or metrics field, rating details will be displayed in a tooltip.**
@@ -63,29 +63,29 @@ When hovering the line chart, details as for example the rated month, the year a
 |--|--|
 |Top Slots|	Top-rated number of slots displayed in a bar chart.|
 |Understood/Misunderstood Messages|	Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart.|
-|Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]()
+|Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts)
 |Unique Contacts|	Time-related number of unique contacts displayed in a line chart.|
 
 ##Download Report
 
 Every widget on the Insights dashboard provides a '**Download report as .csv file**' item in a dropdown menu. 
-To create a report file follow instructions here: [Download Report](doc:download-report) 
+To create a report file follow instructions here: [Download Report]({{config.site_url}}insights/download-report/) 
 
 
 ## More information
 
-- [Dashboard Engagement](doc:dashboard-engagement)
+- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 
-- [Dashboard NLU Performance](doc:dashboard-nlu-performance)
+- [Global Filter]({{config.site_url}}insights/global-filter/)
 
-<div class="divider"></div>
+- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
 
-- [Global Filter](doc:global-filter)
+- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
 
-- [Cognigy Insigths](doc:cognigy-insights)
+- [Step Explorer]({{config.site_url}}insights/step-explorer/)
 
-- [Step Explorer](doc:step-explorer)
+- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
 
-- [Transcript Explorer](doc:transcript-explorer)
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)
 
-- [Message Explorer](doc:message-explorer)
+- [Download Report]({{config.site_url}}insights/download-report/)

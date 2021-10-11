@@ -91,7 +91,7 @@ You can select one or more Locales to be analyzed.
 
 Using the **"Negate"** slider bar "all but the selected" locales will be analyzed.
 
-You can find more information here: [Localization](doc:localization).
+You can find more information here: [Localization]({{config.site_url}}ai/resources/manage/localization/).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/2e76d97-Global_filter_Locales_2.svg" width="100%" />
@@ -106,8 +106,8 @@ You can find more information here: [Localization](doc:localization).
 <div class="divider"></div>
 
 
-If you intend to update certain analytics fields on Insights dashboards for an ongoing session you need to use the update API for analytics, available on https://api-trial.cognigy.ai/openapi.
-More information you can find here: [Using the API](doc:using-the-api).
+If you intend to update certain analytics fields on Insights dashboards for an ongoing session you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
+More information you can find here: [Using the API]{{config.site_url}}(ai/developer-guides/using-api).
 
 Using the "analytics" API you need to specify **userId**, **sessionId** and **inputId** in the request.
 
@@ -138,18 +138,18 @@ Your advantages:
 
 ## More information
 
-- [Cognigy Insights](doc:cognigy-insights)
+- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 
-- [Dashboard Overview](doc:dashboard)
+- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
 
-- [Dashboard Engagement](doc:dashboard-engagement)
+- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
 
-- [Dashboard NLU Performance](doc:dashboard-nlu-performance)
+- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
 
-<div class="divider"></div>
+- [Step Explorer]({{config.site_url}}insights/step-explorer/)
 
-- [Step Explorer](doc:step-explorer)
+- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
 
-- [Transcript Explorer](doc:transcript-explorer)
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)
 
-- [Message Explorer](doc:message-explorer)
+- [Download Report]({{config.site_url}}insights/download-report/)
