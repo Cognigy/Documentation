@@ -1,5 +1,8 @@
 # Dynamic Node Fields
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
+
 ## Dynamic Fields in Flow Nodes
 <div class="divider"></div>
 

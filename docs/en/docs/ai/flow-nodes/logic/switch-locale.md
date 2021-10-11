@@ -17,6 +17,10 @@ In order to switch the locale for the current execution, one needs to use a [Thi
 </figure>
 
 ## Locale Reference ID
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)](https://shields.io/)
+
 As of release v4.8 Cognigy Script can be used to switch to another locale by using the locale reference ID. 
 
 <figure>

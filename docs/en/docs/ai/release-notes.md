@@ -36,7 +36,7 @@ Added a JSON field to Webchat Endpoint Editor to configure additional settings n
 This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did not do that. An opt-out is available for customers that do not want to use Cognigy Insights right now. This opt-out will be removed with one of the next releases.
 
 
- ## 4.10.0
+## 4.10.0
  
 **Released:** September 14th, 2021
 
@@ -95,7 +95,7 @@ This release of Cognigy.AI adds an embed code for our WebchatWidget onto the End
 #### Jump to Flow functionality
 This release of Cognigy.AI adds a "Jump to Flow" button in our Endpoint editor. This allows users to quickly access Flows their Endpoints point to
 
-### Dynamic Fields in Flow Nodes
+#### Dynamic Fields in Flow Nodes
 This release of Cognigy.AI adds new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through e.g. an external API call
 
 ### Improvements
@@ -170,7 +170,7 @@ This release of Cognigy.AI adds the ability for on-premise customers to embed ce
 
 
 ## 4.7.0
-****Released:**eleased:** July 22nd, 2021
+**Released:** July 22nd, 2021
 
 ### Features
 #### Hiding Endpoints
@@ -650,6 +650,7 @@ We have introduced a quicker way for you to train your Intents. If users do not 
 
 #### Indian languages
 These release of Cognigy.AI introduces support for the following new languages:
+
 - Hindi
 - Bengali
 - Tamil

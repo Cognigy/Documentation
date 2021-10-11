@@ -61,6 +61,10 @@ Question node output types carry the same functionality as the [**Say Node**]({{
 ???+ success "Date Questions"
     In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Please refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
 ## Reprompt Options
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+
 <div class="divider"></div>
 
 ### Reprompt Message
@@ -94,6 +98,10 @@ If **Store Result in Context** is enabled, the Question Result will also be stor
 
 If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) object.
 ## Escalation to Handover
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.4.0-blue.svg)](https://shields.io/)
+
 <div class="divider"></div>
 
 As of Release v4.4.0, we added the option "Handover to Human Agent". Open the **Node Editor** and you will find this option as an escalation action for **"Intents"** and **"Wrong_Answers"** that offers the ability to escalate questions by creating handovers to a real human agent.  
@@ -152,12 +160,24 @@ When enabled, this setting will skip the Question if the answer is already provi
 </figure>
 
 ### Additional Validation
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+
 A [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition which must return `true` in order for the answer to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
 
 ### Result Location
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+
 The location of an answer is determined by default by the question type (e.g. `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (e.g., `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
 
 ### Forget Question Threshold
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+
 This setting determines how long a user can have been "away" from the Node after the question was initially asked. With the default setting `1` this means that the question has to be answered on the next user input. If a user input comes back to the question at a later stage, it will be treated as if the question was hit for the first time and the quesiton will be asked.
 
 <div class="divider"></div>

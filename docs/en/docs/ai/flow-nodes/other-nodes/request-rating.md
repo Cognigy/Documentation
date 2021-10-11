@@ -1,5 +1,8 @@
 # Request Rating
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+
 ## Description
 <div class="divider"></div>
 Cognigy introduces as of release Cognigy.AI (4.10.0)  a new Flow Node "**Request Rating**". 

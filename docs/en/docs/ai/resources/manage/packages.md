@@ -1,5 +1,8 @@
 # Packages
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+
 ## Introduction
 
 <div class="divider"></div>
