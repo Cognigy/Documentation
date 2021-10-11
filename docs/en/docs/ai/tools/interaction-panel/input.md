@@ -11,7 +11,9 @@ The input object is passed to the agent's [Flow]({{config.site_url}}ai/resources
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/d2f39be-interaction-input.jpg" width="100%" />
-  <figcaption>Image caption</figcaption>
+  <figcaption>Inspect the current Input object from the INFO tab of the Interaction Panel
+
+</figcaption>
 </figure>
 
 ## Properties

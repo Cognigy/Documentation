@@ -1,5 +1,8 @@
 # Live Agent
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+
 Cognigy Live Agent (lite) was released with Cognigy.AI 4.1.0 and is a tool that can help you to enrich the customer experience of a Contact even beyond the capabilities of your Conversational AI. Our goal here at Cognigy is to provide tools for you that you can use to improve the customer experience of your customers.
 
 There are situations where your Bots might not be able to understand your users or you might have situations where your customers directly want to talk to a specific person. In these scenarios, you can create the handover capability into your bots and forward your user's inputs to Cognigy Live Agent and a real human.

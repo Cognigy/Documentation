@@ -45,114 +45,114 @@ nav:
   - en: /
   - de: /de/
 - AI:
-  - ai/platform-overview.md  #converted
+  - ai/platform-overview.md
   - Release Notes:
-    - ai/release-notes.md #converted
+    - ai/release-notes.md
   - Resources:
     - Agents:
-      - ai/resources/agents/agents.md #converted
-      - ai/resources/agents/journeys.md #converted
-      - ai/resources/agents/tasks.md #converted
+      - ai/resources/agents/agents.md
+      - ai/resources/agents/journeys.md
+      - ai/resources/agents/tasks.md
     - Build:
-      - ai/resources/build/build.md #converted
-      - ai/resources/build/flows.md #converted
-      - ai/resources/build/lexicons.md #converted
-      - ai/resources/build/connections.md #converted
-      - ai/resources/build/NLUconnectors.md #converted
-      - ai/resources/build/functions.md #converted
+      - ai/resources/build/build.md
+      - ai/resources/build/flows.md
+      - ai/resources/build/lexicons.md
+      - ai/resources/build/connections.md
+      - ai/resources/build/NLUconnectors.md
+      - ai/resources/build/functions.md
     - Deploy:
-      - ai/resources/deploy/deploy.md #converted
-      - ai/resources/deploy/endpoints.md #converted
-      - ai/resources/deploy/snapshots.md #converted
+      - ai/resources/deploy/deploy.md
+      - ai/resources/deploy/endpoints.md
+      - ai/resources/deploy/snapshots.md
     - Test:
-      - ai/resources/test/test.md #converted
-      - ai/resources/test/playbooks.md #converted
-      - ai/resources/test/logs.md #converted
+      - ai/resources/test/test.md
+      - ai/resources/test/playbooks.md
+      - ai/resources/test/logs.md
     - Tweak:
-      - ai/resources/tweak/tweak.md #converted
-      - ai/resources/tweak/intent-trainer.md #converted
+      - ai/resources/tweak/tweak.md
+      - ai/resources/tweak/intent-trainer.md
     - Analytics:
-      - ai/resources/analytics.md #converted
+      - ai/resources/analytics.md
     - Manage:
-      - ai/resources/manage/manage.md #converted
-      - ai/resources/manage/settings.md #converted
-      - ai/resources/manage/localization.md #converted
-      - ai/resources/manage/tokens.md #converted
-      - ai/resources/manage/extensions.md #converted
-      - ai/resources/manage/members.md #converted
-      - ai/resources/manage/contact-profiles.md #converted
-      - ai/resources/manage/packages.md #converted
+      - ai/resources/manage/manage.md
+      - ai/resources/manage/settings.md
+      - ai/resources/manage/localization.md
+      - ai/resources/manage/tokens.md
+      - ai/resources/manage/extensions.md
+      - ai/resources/manage/members.md
+      - ai/resources/manage/contact-profiles.md
+      - ai/resources/manage/packages.md
   - Flow Nodes:
-    - ai/flow-nodes/flow-nodes-overview.md #converted
-    - ai/flow-nodes/node-usage.md #converted
-    - ai/flow-nodes/dynamic-content.md #converted
-    - ai/flow-nodes/dynamic-node-fields.md #converted
+    - ai/flow-nodes/flow-nodes-overview.md
+    - ai/flow-nodes/node-usage.md
+    - ai/flow-nodes/dynamic-content.md
+    - ai/flow-nodes/dynamic-node-fields.md
     - Message:
-      - ai/flow-nodes/message/message.md #converted
-      - ai/flow-nodes/message/say.md #converted
-      - ai/flow-nodes/message/question.md #converted
-      - ai/flow-nodes/message/optional-question.md #converted
-      - ai/flow-nodes/message/send-email.md #converted
-      - ai/flow-nodes/message/send-email-notification.md #converted
-      - ai/flow-nodes/message/send-text.md #converted
-      - ai/flow-nodes/message/datepicker.md #converted
+      - ai/flow-nodes/message/message.md
+      - ai/flow-nodes/message/say.md
+      - ai/flow-nodes/message/question.md
+      - ai/flow-nodes/message/optional-question.md
+      - ai/flow-nodes/message/send-email.md
+      - ai/flow-nodes/message/send-email-notification.md
+      - ai/flow-nodes/message/send-text.md
+      - ai/flow-nodes/message/datepicker.md
     - Logic:
-      - ai/flow-nodes/logic/logic.md #converted
-      - ai/flow-nodes/logic/if.md #converted
-      - ai/flow-nodes/logic/lookup.md #converted
-      - ai/flow-nodes/logic/go-to.md #converted
-      - ai/flow-nodes/logic/execute-flow.md #converted
-      - ai/flow-nodes/logic/think.md #converted
-      - ai/flow-nodes/logic/once.md #converted
-      - ai/flow-nodes/logic/interval.md #converted
-      - ai/flow-nodes/logic/stop-and-return.md #converted
-      - ai/flow-nodes/logic/wait-for-input.md #converted
-      - ai/flow-nodes/logic/sleep.md #converted
-      - ai/flow-nodes/logic/reset-state.md #converted
-      - ai/flow-nodes/logic/disable-slot-fillers.md #converted
-      - ai/flow-nodes/logic/set-state.md #converted
-      - ai/flow-nodes/logic/enable-slot-fillers.md #converted
-      - ai/flow-nodes/logic/add-to-context.md #converted
-      - ai/flow-nodes/logic/remove-from-context.md #converted
-      - ai/flow-nodes/logic/switch-locale.md #converted
-      - ai/flow-nodes/logic/trigger-function.md #converted
+      - ai/flow-nodes/logic/logic.md
+      - ai/flow-nodes/logic/if.md
+      - ai/flow-nodes/logic/lookup.md
+      - ai/flow-nodes/logic/go-to.md
+      - ai/flow-nodes/logic/execute-flow.md
+      - ai/flow-nodes/logic/think.md
+      - ai/flow-nodes/logic/once.md
+      - ai/flow-nodes/logic/interval.md
+      - ai/flow-nodes/logic/stop-and-return.md
+      - ai/flow-nodes/logic/wait-for-input.md
+      - ai/flow-nodes/logic/sleep.md
+      - ai/flow-nodes/logic/reset-state.md
+      - ai/flow-nodes/logic/disable-slot-fillers.md
+      - ai/flow-nodes/logic/set-state.md
+      - ai/flow-nodes/logic/enable-slot-fillers.md
+      - ai/flow-nodes/logic/add-to-context.md
+      - ai/flow-nodes/logic/remove-from-context.md
+      - ai/flow-nodes/logic/switch-locale.md
+      - ai/flow-nodes/logic/trigger-function.md
     - Profile:
-      - ai/flow-nodes/profile/profile.md #converted
-      - ai/flow-nodes/profile/update-profile.md #converted
-      - ai/flow-nodes/profile/deactivate-profile.md #converted
-      - ai/flow-nodes/profile/delete-profile.md #converted
-      - ai/flow-nodes/profile/activate-profile.md #converted
-      - ai/flow-nodes/profile/merge-profile.md #converted
-      - ai/flow-nodes/profile/complete-goal.md #converted
+      - ai/flow-nodes/profile/profile.md
+      - ai/flow-nodes/profile/update-profile.md
+      - ai/flow-nodes/profile/deactivate-profile.md
+      - ai/flow-nodes/profile/delete-profile.md
+      - ai/flow-nodes/profile/activate-profile.md
+      - ai/flow-nodes/profile/merge-profile.md
+      - ai/flow-nodes/profile/complete-goal.md
     - Services:
-      - ai/flow-nodes/services/ms-sql.md #converted
-      - ai/flow-nodes/services/mongo-db.md #converted
-      - ai/flow-nodes/services/http-request.md #converted
+      - ai/flow-nodes/services/ms-sql.md
+      - ai/flow-nodes/services/mongo-db.md
+      - ai/flow-nodes/services/http-request.md
     - NLU:
-      - ai/flow-nodes/nlu/copy-slots-to-context.md #converted
-      - ai/flow-nodes/nlu/add-lexicon-keyphrase.md #converted
-      - ai/flow-nodes/nlu/execute-cognigy-nlu.md #converted
-      - ai/flow-nodes/nlu/regex-slotfiller.md #converted
+      - ai/flow-nodes/nlu/copy-slots-to-context.md
+      - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
+      - ai/flow-nodes/nlu/execute-cognigy-nlu.md
+      - ai/flow-nodes/nlu/regex-slotfiller.md
     - Code:
-      - ai/flow-nodes/code/code.md #converted
-      - ai/flow-nodes/code/actions.md #converted
-      - ai/flow-nodes/code/modules.md #converted
-      - ai/flow-nodes/code/channel-output.md #converted
-      - ai/flow-nodes/code/AI-default-channel-formats.md #converted
-      - ai/flow-nodes/code/analytics-data.md #converted
+      - ai/flow-nodes/code/code.md
+      - ai/flow-nodes/code/actions.md
+      - ai/flow-nodes/code/modules.md
+      - ai/flow-nodes/code/channel-output.md
+      - ai/flow-nodes/code/AI-default-channel-formats.md
+      - ai/flow-nodes/code/analytics-data.md
     - Voice Gateway:
-      - ai/flow-nodes/vg/voice-gateway.md #converted
-      - ai/flow-nodes/vg/send-message.md #converted
-      - ai/flow-nodes/vg/set-session-params.md #converted
-      - ai/flow-nodes/vg/play-url.md #converted
-      - ai/flow-nodes/vg/handoverVG.md #converted
-      - ai/flow-nodes/vg/hangup.md #converted
-      - ai/flow-nodes/vg/send-meta-data.md #converted
-      - ai/flow-nodes/vg/call-recording.md #converted
-      - ai/flow-nodes/vg/agent-assist.md #converted
+      - ai/flow-nodes/vg/voice-gateway.md
+      - ai/flow-nodes/vg/send-message.md
+      - ai/flow-nodes/vg/set-session-params.md
+      - ai/flow-nodes/vg/play-url.md
+      - ai/flow-nodes/vg/handoverVG.md
+      - ai/flow-nodes/vg/hangup.md
+      - ai/flow-nodes/vg/send-meta-data.md
+      - ai/flow-nodes/vg/call-recording.md
+      - ai/flow-nodes/vg/agent-assist.md
     - Other Nodes:
-      - ai/flow-nodes/other-nodes/log-message.md #converted
-      - ai/flow-nodes/other-nodes/overwrite-analytics.md #converted
+      - ai/flow-nodes/other-nodes/log-message.md
+      - ai/flow-nodes/other-nodes/overwrite-analytics.md
   - NLU:
     - NLU Overview:
       - ai/nlu/overview.md
@@ -177,96 +177,96 @@ nav:
     - ai/nlu/nlu-warnings.md
   - Tools:
     - User menu:
-      - ai/tools/user-menu/user-menu.md #converted
-      - ai/tools/user-menu/my-profile.md #converted
-      - ai/tools/user-menu/access-control.md #converted
-      - ai/tools/user-menu/usage-statistics.md #converted
+      - ai/tools/user-menu/user-menu.md
+      - ai/tools/user-menu/my-profile.md
+      - ai/tools/user-menu/access-control.md
+      - ai/tools/user-menu/usage-statistics.md
     - Interaction Panel:
-      - ai/tools/interaction-panel/interaction-panel.md #converted
-      - ai/tools/interaction-panel/input.md #converted
-      - ai/tools/interaction-panel/state.md #converted
-      - ai/tools/interaction-panel/context.md #converted
-      - ai/tools/interaction-panel/profile.md #converted
-    - ai/tools/cognigy-script.md  #converted
+      - ai/tools/interaction-panel/interaction-panel.md
+      - ai/tools/interaction-panel/input.md
+      - ai/tools/interaction-panel/state.md
+      - ai/tools/interaction-panel/context.md
+      - ai/tools/interaction-panel/profile.md
+    - ai/tools/cognigy-script.md
     - Analytics:
-      - ai/tools/analytics/analytics.md #converted
-      - ai/tools/analytics/agents-analytics.md #converted
-      - ai/tools/analytics/odata-analytics-endpoint.md #converted
-      - ai/tools/analytics/analytics-concepts.md #converted
-    - ai/tools/hotkeys.md #converted
-    - ai/tools/managementUI.md #converted
-    - ai/tools/agent-handover.md #converted
-    - ai/tools/live-agent.md #converted
-    - ai/tools/chatwoot-integration.md #converted
-    - ai/tools/auto-localization.md #converted
-    - ai/tools/real-time-translation.md #converted
+      - ai/tools/analytics/analytics.md
+      - ai/tools/analytics/agents-analytics.md
+      - ai/tools/analytics/odata-analytics-endpoint.md
+      - ai/tools/analytics/analytics-concepts.md
+    - ai/tools/hotkeys.md
+    - ai/tools/managementUI.md
+    - ai/tools/agent-handover.md
+    - ai/tools/live-agent.md
+    - ai/tools/chatwoot-integration.md
+    - ai/tools/auto-localization.md
+    - ai/tools/real-time-translation.md
   - Endpoints:
-    - ai/endpoints/overview.md #converted
-    - ai/endpoints/data-protection-and-analytics.md #converted
-    - ai/endpoints/session-management.md #converted
-    - ai/endpoints/handover-settings.md #converted
+    - ai/endpoints/overview.md
+    - ai/endpoints/data-protection-and-analytics.md
+    - ai/endpoints/session-management.md
+    - ai/endpoints/handover-settings.md
     - Transformers:
-      - ai/endpoints/transformers/transformers.md #converted
-      - ai/endpoints/transformers/input-transformer.md #converted
-      - ai/endpoints/transformers/output-transformer.md #converted
-      - ai/endpoints/transformers/execution-finished-transformer.md #converted
-      - ai/endpoints/transformers/notify-transformer.md #converted
-      - ai/endpoints/transformers/inject-transformer.md #converted
-    - ai/endpoints/inject-and-notify.md #converted
+      - ai/endpoints/transformers/transformers.md
+      - ai/endpoints/transformers/input-transformer.md
+      - ai/endpoints/transformers/output-transformer.md
+      - ai/endpoints/transformers/execution-finished-transformer.md
+      - ai/endpoints/transformers/notify-transformer.md
+      - ai/endpoints/transformers/inject-transformer.md
+    - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
-      - ai/endpoints/webchat/webchat.md #converted
-      - ai/endpoints/webchat/deploy-webchat-endpoint.md #converted
-      - ai/endpoints/webchat/webchat-features.md #converted
-      - ai/endpoints/webchat/triggering-webchat-plugins.md #converted
-      - ai/endpoints/webchat/integrated-demo-page.md #converted
-    - ai/endpoints/cognigy-vg.md #converted
-    - ai/endpoints/rest.md #converted
-    - ai/endpoints/socketio.md #converted
-    - ai/endpoints/webhook.md #converted
-    - ai/endpoints/amazon-alexa.md #converted
-    - ai/endpoints/dialogflow.md #converted
-    - ai/endpoints/facebook-messenger.md #converted
-    - ai/endpoints/google-actions.md #converted
-    - ai/endpoints/intercom.md #converted
-    - ai/endpoints/line-messenger.md #converted
-    - ai/endpoints/azure-bot-services.md #converted
-    - ai/endpoints/microsoft-teams.md #converted
-    - ai/endpoints/sunshine-conversations.md #converted
-    - ai/endpoints/slack.md #converted
-    - ai/endpoints/ringcentral-engage.md #converted
-    - ai/endpoints/twilio.md #converted
-    - ai/endpoints/userlike.md #converted
-    - ai/endpoints/workplace-by-fb.md #converted
+      - ai/endpoints/webchat/webchat.md
+      - ai/endpoints/webchat/deploy-webchat-endpoint.md
+      - ai/endpoints/webchat/webchat-features.md
+      - ai/endpoints/webchat/triggering-webchat-plugins.md
+      - ai/endpoints/webchat/integrated-demo-page.md
+    - ai/endpoints/cognigy-vg.md
+    - ai/endpoints/rest.md
+    - ai/endpoints/socketio.md
+    - ai/endpoints/webhook.md
+    - ai/endpoints/amazon-alexa.md
+    - ai/endpoints/dialogflow.md
+    - ai/endpoints/facebook-messenger.md
+    - ai/endpoints/google-actions.md
+    - ai/endpoints/intercom.md
+    - ai/endpoints/line-messenger.md
+    - ai/endpoints/azure-bot-services.md
+    - ai/endpoints/microsoft-teams.md
+    - ai/endpoints/sunshine-conversations.md
+    - ai/endpoints/slack.md
+    - ai/endpoints/ringcentral-engage.md
+    - ai/endpoints/twilio.md
+    - ai/endpoints/userlike.md
+    - ai/endpoints/workplace-by-fb.md
   - Installation & Configuration:
-    - ai/installation/installation-and-updating.md #converted
-    - ai/installation/browser-requirements.md #converted
-    - ai/installation/single-signin-SAML2.md #converted
-    - ai/installation/single-signin-openID-connect.md #converted
-    - ai/installation/IP-ranges-shared-environments.md #converted
+    - ai/installation/installation-and-updating.md
+    - ai/installation/browser-requirements.md
+    - ai/installation/single-signin-SAML2.md
+    - ai/installation/single-signin-openID-connect.md
+    - ai/installation/IP-ranges-shared-environments.md
   - Developer Guides:
-    - ai/developer-guides/api-reference.md #converted
-    - ai/developer-guides/using-api.md #converted
-    - ai/developer-guides/clients.md #converted
+    - ai/developer-guides/api-reference.md
+    - ai/developer-guides/using-api.md
+    - ai/developer-guides/clients.md
   - Help & Contact:
-    - ai/help/get-help.md #converted
-    - ai/help/community.md #converted
+    - ai/help/get-help.md
+    - ai/help/community.md
 - Insights:
-  - insights/cognigy-insights.md #converted
-  - insights/global-filter.md #converted
-  - insights/dashboard-overview.md #converted
-  - insights/dashboard-engagement.md #converted
-  - insights/dashboard-nlu-performance.md #converted
+  - insights/cognigy-insights.md
+  - insights/global-filter.md
+  - insights/dashboard-overview.md
+  - insights/dashboard-engagement.md
+  - insights/dashboard-nlu-performance.md
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
-  - insights/download-report.md #converted
+  - insights/download-report.md
 - Webchat Widget:
-  - ai/endpoints/webchat/webchat.md  #converted
-  - ai/endpoints/webchat/webchat.md #converted
-  - ai/endpoints/webchat/deploy-webchat-endpoint.md #converted
-  - ai/endpoints/webchat/webchat-features.md #converted
-  - ai/endpoints/webchat/triggering-webchat-plugins.md #converted
-  - ai/endpoints/webchat/integrated-demo-page.md #converted
+  - ai/endpoints/webchat/webchat.md
+  - ai/endpoints/webchat/webchat.md
+  - ai/endpoints/webchat/deploy-webchat-endpoint.md
+  - ai/endpoints/webchat/webchat-features.md
+  - ai/endpoints/webchat/triggering-webchat-plugins.md
+  - ai/endpoints/webchat/integrated-demo-page.md
 - Live Agent:
   - live-agent/platform-overview.md
   - Release Notes:

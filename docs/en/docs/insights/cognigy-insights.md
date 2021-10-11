@@ -1,14 +1,13 @@
 # Cognigy Insights 
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
 ## Description
 
 <div class="divider"></div>
 
-
 Cognigy is committed to providing you with the tools you need to improve the customer experience of your customers.
 
 Cognigy.AI has integrated analytics reporting functionalities, as well as an ODATA, interface our customers can rely on to retrieve their raw analytics data. Our integrated analytics dashboard provides a range of key metrics to understand the usage and the performance of your bots. We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots - hence we have created a new product called **Cognigy Insights** which entirely replaces the static analytics dashboard with a whole set of new tools.
+
+As of release v4.10 Cognigy provides a completely new designed Analytics solution **"Insights"**.
 
 ## Dashboard
 
@@ -33,10 +32,10 @@ With Cognigy.AI 4.10.0 we improved our capabilities to create metrics to have cu
   <figcaption>Agent dashboard with sidebar menu - select "Insights" to switch to the analytics solution</figcaption>
 </figure>
 
-- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click on "**Insights**". We have used this option prior to guiding users to our [Analytics](doc:agent-analytics) application.
+- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click on "**Insights**". We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics) application.
 
 ???+ info "Note"
-    **When you are in an agent-specific route in Cognigy.AI (Agent is selected) you should see 'Insights' in the [user menu](doc:cognigy-insights#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.**
+    **When you are in an agent-specific route in Cognigy.AI (Agent is selected) you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.**
 
 When switching from Cognigy.AI to Cognigy Insights you will be redirected to the Insights **Dashboard** section, starting on the "Overview" dashboard.
 
@@ -49,9 +48,9 @@ You will find all sorts of different report types that visualize key metrics of 
 
 Cognigy provides three categories of dashboards available via the Insight sideboard menu:
 
-- [Overview Dashboard](doc:dashboard) (deals with general analytics)  
-- [Engagement  Dashboard](doc:dashboard-engagement) (analytics focused on customer reactions in conversations)
-- [NLU Performance Dashboard](doc:dashboard-nlu-performance) (these analytics relates to Natural Language Understanding) 
+- [Overview Dashboard]({{config.site_url}}insights/dashboard-overview/) (deals with general analytics)  
+- [Engagement  Dashboard]({{config.site_url}}insights/dashboard-engagement) (analytics focused on customer reactions in conversations)
+- [NLU Performance Dashboard]({{config.site_url}}insights/dashboard-nlu-performance) (these analytics relates to Natural Language Understanding) 
 
 
 ## Local filter
@@ -81,38 +80,38 @@ Cognigy Insights comes with so-called global filters. These filters will be visi
 
 ???+ info "Note"
     **The global filter options are available in all applications running in Cognigy Insights.**
-    **More information about global filter you can find here: [Global Filter](doc:global-filter).**
+    **More information about global filter you can find here: [Global Filter]({{config.site_url}}insights/global-filter).**
 
 ## User menu
 
 <div class="divider"></div>
 
 
-You can find the [user menu](doc:user-menu) in the upper right corner of the screen (user profile icon)
+You can find the [user menu]({{config.site_url}}ai/tools/user-menu/user-menu) in the upper right corner of the screen (user profile icon)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/32749de-tooltip_Insights_user_menu_80.svg" width="100%" />
   <figcaption>User menu icon with tooltip</figcaption>
 </figure>
 
-- **[MyProfile](doc:my-profile)**
+- **[MyProfile]({{config.site_url}}ai/tools/user-menu/my-profile)**
 In the "**Preferences**" section the **user interface language** can be selected.
 Language settings in Insights or Cognigy.AI have automatically effect on both applications.
 Insights currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
-You can find more information here: [My Profile](doc:my-profile)
+You can find more information here: [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile)
 
-- **[Access Control](doc:access-control)**
+- **[Access Control]({{config.site_url}}ai/tools/user-menu/access-control)**
 The Insights user administration allows you to create new user accounts.
 Users need to have sufficient permissions for access to the Insights applications.   
 
-- **[Usage Statistics](doc:usage-statistics)** 
+- **[Usage Statistics]({{config.site_url}}ai/tools/user-menu/usage-statistics)** 
 This section shows the total number of user conversations and displays a timeline-related number of conversations as a line chart.  You can select the time period in a drop-down menu. 
 
-- **[Documentation](doc:welcome)** 
+- **[Documentation]({{config.site_url}})** 
 Clicking on this menu item leads you to the Cognigy product documentation.
 
 
-- **[Cognigy.AI](doc:projects)**
+- **[Cognigy.AI]({{config.site_url}}ai/resources/agents/agents/)**
 You can always go back to Cognigy.AI and your virtual Agent. Open the user pop-up menu at the right top corner of your screen and click on the "Cognigy.AI" menu item.
 
 <figure>
@@ -144,19 +143,18 @@ The currently selected application is highlighted in a primary color and will be
 
 ## More information
 
-- [Global Filter](doc:global-filter)
+- [Global Filter]({{config.site_url}}insights/global-filter/)
 
-- [Dashboard Overview](doc:dashboard)
+- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
 
-- [Dashboard Engagement](doc:dashboard-engagement)
+- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
 
-- [Dashboard NLU Performance](doc:dashboard-nlu-performance)
+- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
 
-<div class="divider"></div>
+- [Step Explorer]({{config.site_url}}insights/step-explorer/)
 
+- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
 
-- [Step Explorer](doc:step-explorer)
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)
 
-- [Transcript Explorer](doc:transcript-explorer)
-
-- [Message Explorer](doc:message-explorer)
+- [Download Report]({{config.site_url}}insights/download-report/)
