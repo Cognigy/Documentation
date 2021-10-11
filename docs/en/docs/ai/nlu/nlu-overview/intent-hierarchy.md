@@ -1,1 +1,35 @@
 # Intent Hierarchy
+
+The intent training module includes a **Hierarchy** feature that enable intent grouping and layering. This means that parent intents are created which can inherit the example sentences from child intents to provide more flexibility to the agent's understanding and increase the chances of the correct intent being identified.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/51146c7-hierarchy.PNG" width="80%" />
+</figure>
+
+## Overview
+<div class="divider"></div>
+Intents are added as children by dragging and dropping on the parent intent via the intent list.
+
+Intents can be structured into three layers:
+
+- Parent Intents
+- Child Intents
+- Grandchild Intents
+
+???+ success "Tip: Use Intent Naming Conventions"
+    It is recommended to follow a pattern when naming your intents. Either create a topic category name or use a numbering system to group intent families.
+
+Parent Intents can inherit Example Sentences from their child Intents, which can inherit Example Sentences from the grandchild Intents. 
+
+## Inheritance
+<div class="divider"></div>
+Enable the *"Inherit Example Sentences from Child Intents"* slider for each intent to incorporate the example sentences of all child intents in the training model. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/df59f39-inherit.PNG" width="80%" />
+</figure>
+
+When an inherited example sentence is found, both the parent and the child intent will score a high intent mapping result but the child intent will be placed in the `input.intent` property. Find the parent as an additional high scoring intent in the `input.nlu.intentMapperResults.scores` array.
+
+???+ info "Inheritance is not mandatory"
+    Inheritance of child intents is not required to use intent hierarchy. Layering can simply be used to group larger intent databases for ease of maintenance.
