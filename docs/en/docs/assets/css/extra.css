@@ -155,7 +155,7 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 /* Block quote classes */
 
 .callout{
-  background-color: #e2eef2;
+  background-color: #e5f8fb;
   display: flex;
 }
 
@@ -186,4 +186,10 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
   margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
+}
+
+.md-typeset blockquote {
+  border-left: .2rem solid #0b3694;
+  color: #00b8d4;
+  padding-left: .6rem;
 }

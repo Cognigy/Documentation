@@ -8,11 +8,18 @@
 
 A Question Node is used to ask a question that requests specific information from the user. 
 
-!!! info ""
-    <h3 >
-         <span>▶️ </span><a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
-    </h3>
-    Watch this Episode of Cognigy Sessions for a technical deep dive
+<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon">▶️</span>
+    <div class="callout-heading">
+      <div class="callout-text">
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
+      </div>
+      <div class="callout-subtext">
+      Watch this Episode of Cognigy Sessions for a technical deep dive
+      </div>
+   </div>
+</blockquote>
+
 ## Question Types
 <div class="divider"></div> 
 
