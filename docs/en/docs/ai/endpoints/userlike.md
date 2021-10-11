@@ -23,6 +23,10 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 ## Message types in Userlike unified messaging channels
 
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+
+
 <div class="divider"></div>
 
 As of Release v4.5, you can add message types to the Userlike unified messaging channel.

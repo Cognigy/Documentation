@@ -92,10 +92,13 @@ Analytics data is generated through the whole lifecycle of an input message bein
 Analytics Steps are created in Cognigy.AI to track the conversation paths that users are taking when talking to the virtual agent.
 
 ## Creating a Step
----
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)](https://shields.io/)
+
 A step entity is either a [Flow Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview) or an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents). Each type of entity can be assigned as a step via the settings menu for the respective entity. 
 
-###Flow Node Steps
+### Flow Node Steps
 A flow node is created as an analytics step by entering a text label in the "Analytics Step" field within the "settings" dropdown menu of the node settings:
 
 

@@ -121,6 +121,7 @@ FEATURE_ADDITIONAL_SYSTEM_WIDE_EXTENSIONS_PATH
 ```
 <br>
 [![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)](https://shields.io/)
+
 ## Caching Extensions in local Directory
 <div class="divider"></div>
 
@@ -143,6 +144,9 @@ The cache is within the [Kubernetes pod](https://kubernetes.io/docs/concepts/wor
 EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
 ```
 ## Marketplace
+
+<br>
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
 <div class="divider"></div>
 
 Cognigy provides Marketplace as a tool to strengthen the usage of Extensions and to improve the developer user experience for customers using the product.
