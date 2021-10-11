@@ -21,6 +21,7 @@ theme:
   - navigation.tabs
   - navigation.tracking
   - navigation.indexes
+  - navigation.top
   icon:
     admonition:
       note: octicons/tag-16
@@ -35,8 +36,8 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-  logo: img/Cognigy-white.svg
-  favicon: img/favicon.png
+  logo: assets/img/Cognigy-white.svg
+  favicon: assets/img/favicon.png
   language: en
 nav:
 - Cognigy Products: index.md
@@ -44,44 +45,44 @@ nav:
   - en: /
   - de: /de/
 - AI:
-  - ai/platform-overview.md
+  - ai/platform-overview.md  #converted
   - Release Notes:
-    - ai/release-notes/releases.md
+    - ai/release-notes.md #converted
   - Resources:
     - Agents:
-      - ai/resources/agents/agents.md
-      - ai/resources/agents/journeys.md
-      - ai/resources/agents/tasks.md
+      - ai/resources/agents/agents.md #converted
+      - ai/resources/agents/journeys.md #converted
+      - ai/resources/agents/tasks.md #converted
     - Build:
-      - ai/resources/build/build.md
-      - ai/resources/build/flows.md
-      - ai/resources/build/lexicons.md
-      - ai/resources/build/connections.md
-      - ai/resources/build/NLUconnectors.md
-      - ai/resources/build/functions.md
+      - ai/resources/build/build.md #converted
+      - ai/resources/build/flows.md #converted
+      - ai/resources/build/lexicons.md #converted
+      - ai/resources/build/connections.md #converted
+      - ai/resources/build/NLUconnectors.md #converted
+      - ai/resources/build/functions.md #converted
     - Deploy:
-      - ai/resources/deploy/deploy.md
-      - ai/resources/deploy/endpoints.md
-      - ai/resources/deploy/snapshots.md
+      - ai/resources/deploy/deploy.md #converted
+      - ai/resources/deploy/endpoints.md #converted
+      - ai/resources/deploy/snapshots.md #converted
     - Test:
-      - ai/resources/test/test.md
-      - ai/resources/test/playbooks.md
-      - ai/resources/test/logs.md
+      - ai/resources/test/test.md #converted
+      - ai/resources/test/playbooks.md #converted
+      - ai/resources/test/logs.md #converted
     - Tweak:
-      - ai/resources/tweak/tweak.md
-      - ai/resources/tweak/intent-trainer.md
+      - ai/resources/tweak/tweak.md #converted
+      - ai/resources/tweak/intent-trainer.md #converted
     - Analytics:
-      - ai/resources/analytics.md
+      - ai/resources/analytics.md #converted
     - Manage:
-      - ai/resources/manage/manage.md
-      - ai/resources/manage/settings.md
-      - ai/resources/manage/localization.md
-      - ai/resources/manage/tokens.md
-      - ai/resources/manage/extensions.md
-      - ai/resources/manage/members.md
-      - ai/resources/manage/contact-profiles.md
-      - ai/resources/manage/packages.md
-  - Flow Nodes:
+      - ai/resources/manage/manage.md #converted
+      - ai/resources/manage/settings.md #converted
+      - ai/resources/manage/localization.md #converted
+      - ai/resources/manage/tokens.md #converted
+      - ai/resources/manage/extensions.md #converted
+      - ai/resources/manage/members.md #converted
+      - ai/resources/manage/contact-profiles.md #converted
+      - ai/resources/manage/packages.md #converted
+  -  Flow Nodes:
     - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
@@ -182,85 +183,145 @@ nav:
     - ai/nlu/language-support.md
     - ai/nlu/nlu-warnings.md
   - Tools:
-    - ai/tools/overview.md
     - User menu:
-      - ai/tools/user-menu/my-profile.md
-      - ai/tools/user-menu/access-control.md
-      - ai/tools/user-menu/usage-statistics.md
+      - ai/tools/user-menu/user-menu.md #converted
+      - ai/tools/user-menu/my-profile.md #converted
+      - ai/tools/user-menu/access-control.md #converted
+      - ai/tools/user-menu/usage-statistics.md #converted
     - Interaction Panel:
-      - ai/tools/interaction-panel/interaction-panel.md
-      - ai/tools/interaction-panel/input.md
-      - ai/tools/interaction-panel/state.md
-      - ai/tools/interaction-panel/context.md
-      - ai/tools/interaction-panel/profile.md
-    - ai/tools/cognigy-script.md
+      - ai/tools/interaction-panel/interaction-panel.md #converted
+      - ai/tools/interaction-panel/input.md #converted
+      - ai/tools/interaction-panel/state.md #converted
+      - ai/tools/interaction-panel/context.md #converted
+      - ai/tools/interaction-panel/profile.md #converted
+    - ai/tools/cognigy-script.md  #converted
     - Analytics:
-      - ai/tools/analytics/agents-analytics.md
-      - ai/tools/analytics/odata-analytics-endpoint.md
-      - ai/tools/analytics/analytics-concepts.md
-    - ai/tools/hotkeys.md
-    - ai/tools/managementUI.md
-    - ai/tools/agent-handover.md
-    - ai/tools/live-agent.md
-    - ai/tools/auto-localization.md
-    - ai/tools/real-time-translation.md
+      - ai/tools/analytics/analytics.md #converted
+      - ai/tools/analytics/agents-analytics.md #converted
+      - ai/tools/analytics/odata-analytics-endpoint.md #converted
+      - ai/tools/analytics/analytics-concepts.md #converted
+    - ai/tools/hotkeys.md #converted
+    - ai/tools/managementUI.md #converted
+    - ai/tools/agent-handover.md #converted
+    - ai/tools/live-agent.md #converted
+    - ai/tools/chatwoot-integration.md #converted
+    - ai/tools/auto-localization.md #converted
+    - ai/tools/real-time-translation.md #converted
   - Endpoints:
-    - ai/endpoints/overview.md
-    - ai/endpoints/data-protection-and-analytics.md
-    - ai/endpoints/session-management.md
-    - ai/endpoints/handover-settings.md
+    - ai/endpoints/overview.md #converted
+    - ai/endpoints/data-protection-and-analytics.md #converted
+    - ai/endpoints/session-management.md #converted
+    - ai/endpoints/handover-settings.md #converted
     - Transformers:
-      - ai/endpoints/transformers/input-transformer.md
-      - ai/endpoints/transformers/output-transformer.md
-      - ai/endpoints/transformers/execution-finished-transformer.md
-      - ai/endpoints/transformers/notify-transformer.md
-      - ai/endpoints/transformers/inject-transformer.md
-    - ai/endpoints/inject-and-notify.md
+      - ai/endpoints/transformers/transformers.md #converted
+      - ai/endpoints/transformers/input-transformer.md #converted
+      - ai/endpoints/transformers/output-transformer.md #converted
+      - ai/endpoints/transformers/execution-finished-transformer.md #converted
+      - ai/endpoints/transformers/notify-transformer.md #converted
+      - ai/endpoints/transformers/inject-transformer.md #converted
+    - ai/endpoints/inject-and-notify.md #converted
     - Cognigy Webchat:
-      - ai/endpoints/webchat/webchat.md
-      - ai/endpoints/webchat/deploy-webchat-endpoint.md
-      - ai/endpoints/webchat/webchat-features.md
-      - ai/endpoints/webchat/triggering-webchat-plugins.md
-      - ai/endpoints/webchat/integrated-demo-page.md
-    - ai/endpoints/cognigy-vg.md
-    - ai/endpoints/rest.md
-    - ai/endpoints/socketio.md
-    - ai/endpoints/webhook.md
-    - ai/endpoints/amazon-alexa.md
-    - ai/endpoints/dialogflow.md
-    - ai/endpoints/facebook-messenger.md
-    - ai/endpoints/google-actions.md
-    - ai/endpoints/intercom.md
-    - ai/endpoints/line-messenger.md
-    - ai/endpoints/azure-bot-services.md
-    - ai/endpoints/microsoft-teams.md
-    - ai/endpoints/ringcentral-engage.md
-    - ai/endpoints/twilio.md
-    - ai/endpoints/userlike.md
-    - ai/endpoints/workplace-by-fb.md
+      - ai/endpoints/webchat/webchat.md #converted
+      - ai/endpoints/webchat/deploy-webchat-endpoint.md #converted
+      - ai/endpoints/webchat/webchat-features.md #converted
+      - ai/endpoints/webchat/triggering-webchat-plugins.md #converted
+      - ai/endpoints/webchat/integrated-demo-page.md #converted
+    - ai/endpoints/cognigy-vg.md #converted
+    - ai/endpoints/rest.md #converted
+    - ai/endpoints/socketio.md #converted
+    - ai/endpoints/webhook.md #converted
+    - ai/endpoints/amazon-alexa.md #converted
+    - ai/endpoints/dialogflow.md #converted
+    - ai/endpoints/facebook-messenger.md #converted
+    - ai/endpoints/google-actions.md #converted
+    - ai/endpoints/intercom.md #converted
+    - ai/endpoints/line-messenger.md #converted
+    - ai/endpoints/azure-bot-services.md #converted
+    - ai/endpoints/microsoft-teams.md #converted
+    - ai/endpoints/sunshine-conversations.md #converted
+    - ai/endpoints/slack.md #converted
+    - ai/endpoints/ringcentral-engage.md #converted
+    - ai/endpoints/twilio.md #converted
+    - ai/endpoints/userlike.md #converted
+    - ai/endpoints/workplace-by-fb.md #converted
   - Installation & Configuration:
-    - ai/installation/installation-and-updating.md
-    - ai/installation/browser-requirements.md
-    - ai/installation/single-signin-SAML2.md
-    - ai/installation/single-signin-openID-connect.md
-    - ai/installation/IP-ranges-shared-environments.md
-  - Developer Guides: 
-    - ai/developer-guides/api-reference.md
-    - ai/developer-guides/using-api.md
-    - ai/developer-guides/clients.md
+    - ai/installation/installation-and-updating.md #converted
+    - ai/installation/browser-requirements.md #converted
+    - ai/installation/single-signin-SAML2.md #converted
+    - ai/installation/single-signin-openID-connect.md #converted
+    - ai/installation/IP-ranges-shared-environments.md #converted
+  - Developer Guides:
+    - ai/developer-guides/api-reference.md #converted
+    - ai/developer-guides/using-api.md #converted
+    - ai/developer-guides/clients.md #converted
   - Help & Contact:
-    - ai/help/get-help.md
-    - ai/help/community.md
+    - ai/help/get-help.md #converted
+    - ai/help/community.md #converted
 - Insights:
-  - insights/index.md
+  - insights/cognigy-insights.md #converted
+  - insights/global-filter.md #converted
+  - insights/dashboard-overview.md #converted
+  - insights/dashboard-engagement.md #converted
+  - insights/dashboard-nlu-performance.md #converted
+  - insights/step-explorer.md
+  - insights/transcript-explorer.md
+  - insights/message-explorer.md
+  - insights/download-report.md #converted
 - Webchat Widget:
-  - webchat/index.md
+  - ai/endpoints/webchat/webchat.md  #converted
+  - ai/endpoints/webchat/webchat.md #converted
+  - ai/endpoints/webchat/deploy-webchat-endpoint.md #converted
+  - ai/endpoints/webchat/webchat-features.md #converted
+  - ai/endpoints/webchat/triggering-webchat-plugins.md #converted
+  - ai/endpoints/webchat/integrated-demo-page.md #converted
 - Live Agent:
-  - live-agent/index.md
+  - live-agent/platform-overview.md
+  - Release Notes:
+    - live-agent/release-notes/releases.md
+  - Getting started:
+    - Creating an account:
+      - live-agent/getting-started/creating-an-account.md
+    - Inviting your agents:
+      - live-agent/getting-started/inviting-your-agents.md
+    - Add an inbox:
+      - live-agent/getting-started/add-an-inbox.md
+    - Handover flow with Cognigy.AI:
+      - live-agent/getting-started/handover-flow-with-cognigy-ai.md
+    - Add Teams:
+      - live-agent/getting-started/add-teams.md
+    - Add label:
+      - live-agent/getting-started/add-label.md
+  - Installation & configuration:
+    - Deployment:
+      - Prerequisites:
+        - live-agent/installation/prerequisites.md
+      - Architecture:
+        - live-agent/installation/architecture.md
+    - Installation using Helm:
+      - live-agent/installation/installation-using-helm.md
+    - Installation updates:
+      - live-agent/installation/installation-updates.md
+    - Configuration/Tweaking:
+      - Database:
+        - live-agent/installation/configuration/database.md
+      - Redis:
+        - live-agent/installation/configuration/redis.md
+      - Mail:
+        - live-agent/installation/configuration/mail.md
+  - Agent:
+    - live-agent/agent.md
+  - Contacts:
+    - live-agent/contacts.md
+  - Reports:
+    - live-agent/reports.md
+  - Settings:
+    - live-agent/settings.md
+  - Help & Support:
+    - live-agent/help.md
 - Marketplace:
   - ai/resources/manage/extensions#marketplace
-# - Usage:
-#   - usage-doc.md
+- Usage:
+  - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true
@@ -333,10 +394,10 @@ extra:
   - link: /
     name: en
 extra_css:
-- css/extra.css
+- assets/css/extra.css
 extra_javascript:
-- js/termynal.js
-- js/custom.js
+- assets/js/termynal.js
+- assets/js/custom.js
 plugins:
 - section-index
 - macros
