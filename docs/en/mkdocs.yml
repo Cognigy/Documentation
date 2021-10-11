@@ -125,10 +125,12 @@ nav:
       - ai/flow-nodes/profile/merge-profile.md
       - ai/flow-nodes/profile/complete-goal.md
     - Services:
+      - ai/flow-nodes/services/services.md
       - ai/flow-nodes/services/ms-sql.md
       - ai/flow-nodes/services/mongo-db.md
       - ai/flow-nodes/services/http-request.md
     - NLU:
+      - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
       - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
       - ai/flow-nodes/nlu/execute-cognigy-nlu.md
@@ -151,11 +153,14 @@ nav:
       - ai/flow-nodes/vg/call-recording.md
       - ai/flow-nodes/vg/agent-assist.md
     - Other Nodes:
-      - ai/flow-nodes/other-nodes/log-message.md
+      - Log Message: ai/flow-nodes/other-nodes/log-message.md
       - ai/flow-nodes/other-nodes/overwrite-analytics.md
+      - ai/flow-nodes/other-nodes/set-rating.md
+      - ai/flow-nodes/other-nodes/set-translation.md
+      - ai/flow-nodes/other-nodes/request-rating.md
   - NLU:
     - NLU Overview:
-      - ai/nlu/overview.md
+      - ai/nlu/nlu-overview/overview.md
       - ai/nlu/nlu-overview/ML-intents.md
       - ai/nlu/nlu-overview/annotations.md
       - ai/nlu/nlu-overview/intent-analyzer.md
@@ -168,9 +173,11 @@ nav:
       - ai/nlu/slot-mapping/slot-mapping.md
       - ai/nlu/slot-mapping/any-slots.md
     - Attachments:
+      - ai/nlu/attachments/attachments.md
       - ai/nlu/attachments/attached-flows.md
       - ai/nlu/attachments/attached-lexicons.md
     - External NLU:
+      - ai/nlu/external-nlu/external-nlu.md
       - ai/nlu/external-nlu/nlu-transformers.md
       - ai/nlu/external-nlu/no-nlu.md
     - ai/nlu/language-support.md
