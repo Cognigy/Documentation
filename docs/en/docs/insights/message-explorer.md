@@ -7,7 +7,7 @@ The task characteristic of the Insights Message Explorer is that you can see wha
 **Global filter options**
 <div class="divider"></div>
 
-Using the global filter options you can define the search criteria to find the intended messages you want to evaluate (see details here: [Global Filter](http://127.0.0.1:8008/insights/global-filter/)). 
+Using the global filter options you can define the search criteria to find the intended messages you want to evaluate (see details here: [Global Filter]({{config.site_url}}insights/global-filter/)). 
 
 **Local filter options**
 <div class="divider"></div>
