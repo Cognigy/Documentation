@@ -146,7 +146,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | inputText               | The input text | String   | Hello World!                     |
 | inputData              | The input data object as a string | String   | {"key":"value"}                    |
 | state                  | State of the Flow at input                                                                 | String   | default                      |
-| mode                   | [Mode](../flow/concepts/input.html#InputProperties) of the input                           | String   | TextOnly                     |
+| mode                   | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties) of the input                           | String   | TextOnly                     |
 | userType               | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                     |
 | channel                | Channel the input came through                                                             | String   | facebook                     |
 | flowVersion            | Version of the Flow                                                                        | Number   | 1                            |
