@@ -5,12 +5,12 @@ The Message Explorer allows you to search for specific customer messages or Virt
 The task characteristic of the Insights Message Explorer is that you can see what message came before the selected message and what came after this message. As result you can better understand customers' reactions, for example how often did customers react in the same way or in a specific way and what are the reasons for that.
 
 **Global filter options**
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 Using the global filter options you can define the search criteria to find the intended messages you want to evaluate (see details here: [Global Filter](http://127.0.0.1:8008/insights/global-filter/)). 
 
 **Local filter options**
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 - You can search for specific customer messages by entering a key phrase in the „Search“ field (for example "appointment").
   
