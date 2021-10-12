@@ -32,8 +32,16 @@
   min-width: 100%;
 }
 
-.md-typeset__table table, .md-typeset__table table thead, .md-typeset__table table tbody {
-  min-width: 100%;
+.md-typeset table:not([class]) {
+  display: inline-table;
+  box-shadow: 0 0.2rem 0.5rem rgb(0 0 0 / 5%), 0 0 0.05rem rgb(0 0 0 / 10%);
+  border: none;
+  border: .05rem solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #0b3694;
+  color: #ffffff;
 }
 
 .md-header__inner, .md-tabs__inner {
