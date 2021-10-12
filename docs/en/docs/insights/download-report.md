@@ -40,6 +40,7 @@ Cognigy Insights:
 
 
 ## More information
+<div class="divider"></div>
 
 - [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 

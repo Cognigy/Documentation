@@ -73,6 +73,7 @@ To create a report file follow instructions here: [Download Report]({{config.sit
 
 
 ## More information
+<div class="divider"></div>
 
 - [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 
