@@ -18,7 +18,7 @@ The customer conversations will be displayed in a list with their contact IDs, m
   <figcaption>Transcript Explorer displaying a list of transcripts (conversations) - local filter menu is open</figcaption>
 </figure>
 
-- Use the **[global filter](http://127.0.0.1:8008/insights/global-filter/)** options to configure your research.
+- Use the **[global filter]({{config.site_url}}insights/global-filter/)** options to configure your research.
 
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
 
@@ -84,7 +84,7 @@ When you click on the "profile" icon on the left top side of the conversation pa
 </figure>
 
 ### Open Flow 
-To check your [Flow](http://127.0.0.1:8008/ai/resources/build/flows/) or to improve the configuration the Transcript Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific message displayed in the conversation panel.
+To check your [Flow]({{config.site_url}}ai/resources/build/flows/) or to improve the configuration the Transcript Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific message displayed in the conversation panel.
 Clicking the button leads you to the related Flow in Cognigy.AI.
 
 ???+ info "Note"
@@ -117,7 +117,7 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
 ???+ info "Message Explorer"
-    **More information to our Message Explorer see here: [Message Explorer](http://127.0.0.1:8008/insights/message-explorer/)**
+    **More information to our Message Explorer see here: [Message Explorer]({{config.site_url}}insights/message-explorer/)**
 
 
 ## More information

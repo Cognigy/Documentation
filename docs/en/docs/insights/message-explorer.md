@@ -7,7 +7,7 @@ The task characteristic of the Insights Message Explorer is that you can see wha
 **Global filter options**
 <div class="divider"></div>
 
-Using the global filter options you can define the search criteria to find the intended messages you want to evaluate (see details here: [Global Filter](http://127.0.0.1:8008/insights/global-filter/)). 
+Using the global filter options you can define the search criteria to find the intended messages you want to evaluate (see details here: [Global Filter]({{config.site_url}}insights/global-filter/)). 
 
 **Local filter options**
 <div class="divider"></div>
@@ -38,7 +38,7 @@ Using the **"Negate "** slider bar "all but the selected" filter option(s) will 
 </figure>
 
 **Message research**
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 - Click on a specific message and the Message Explorer will display this message exclusive in the center column, and the prior conversation is added in the left column and the following conversation is added in the right column of the Message Explorer.
 

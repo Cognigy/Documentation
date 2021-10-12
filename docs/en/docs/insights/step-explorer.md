@@ -33,7 +33,7 @@ When the Step Explorer is selected, the agent name is displayed in the top left 
 
 **Starting Step**
 
-Conversational [steps](http://127.0.0.1:8008/ai/tools/analytics/analytics-concepts/#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations](http://127.0.0.1:8008/insights/step-explorer/#annotations) in the “Analytics steps” section e.g. with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point.
+Conversational [steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations]({{config.site_url}}insights/step-explorer/#annotations) in the “Analytics steps” section e.g. with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/c54d50d-Step_Explorer_Starting_Step_250.svg" width="60%" />
@@ -55,7 +55,7 @@ If you apply the backward direction, the step report starts at the last step (fr
 <div class="divider"></div>
 ???+ info "Note"
     The global filter options at the bottom apply to all applications running in Cognigy Insights.
-    More information about global filters you can find here: [Global Filter](http://127.0.0.1:8008/insights/global-filter/).
+    More information about global filters you can find here: [Global Filter]({{config.site_url}}insights/global-filter/).
 
 ## Annotations
 <div class="divider"></div>
@@ -110,7 +110,7 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
 
 ???+ info "Note"
     **The red marked areas of a step represent the number of users who dropped off at that point. 
-    You may take an early "drop off" in a conversation to improve your Agent and to inspect with our [Message Explorer](http://127.0.0.1:8008/insights/message-explorer/) what did the Virtual Agent say before the user dropped off.**
+    You may take an early "drop off" in a conversation to improve your Agent and to inspect with our [Message Explorer]({{config.site_url}}insights/message-explorer/) what did the Virtual Agent say before the user dropped off.**
 
 - You can get more details displayed when you hover the mouse over any step.   
 
