@@ -142,6 +142,7 @@ The currently selected application is highlighted in a primary color and will be
     - [Insights product introduction / English](https://youtu.be/hYB2iQ_dT5g)
 
 ## More information
+<div class="divider"></div>
 
 - [Global Filter]({{config.site_url}}insights/global-filter/)
 
