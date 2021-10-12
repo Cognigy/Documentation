@@ -28,6 +28,12 @@
   align-self: center;
 }
 
+.md-typeset .md-button{
+  display: table;
+  margin: auto;
+}
+
+
 .md-typeset__table {
   min-width: 100%;
 }
