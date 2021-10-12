@@ -301,12 +301,12 @@ nav:
     - Installation Updates:
       - live-agent/installation/installation-updates.md
     - Configuration/Tweaking:
-        - Database:
-          - live-agent/installation/configuration/database.md
-        - Redis:
-          - live-agent/installation/configuration/redis.md
-        - Mail:
-          - live-agent/installation/configuration/mail.md
+      - Database:
+        - live-agent/installation/configuration/database.md
+      - Redis:
+        - live-agent/installation/configuration/redis.md
+      - Mail:
+        - live-agent/installation/configuration/mail.md
   - Agents:
     - live-agent/agent.md
   - Teams:
