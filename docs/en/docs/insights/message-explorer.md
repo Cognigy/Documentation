@@ -38,7 +38,7 @@ Using the **"Negate "** slider bar "all but the selected" filter option(s) will 
 </figure>
 
 **Message research**
-<img src="https://files.readme.io/abf9750-divider-new.png" width="100%" style="margin-bottom: 5px">
+<div class="divider"></div>
 
 - Click on a specific message and the Message Explorer will display this message exclusive in the center column, and the prior conversation is added in the left column and the following conversation is added in the right column of the Message Explorer.
 
