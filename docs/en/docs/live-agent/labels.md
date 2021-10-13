@@ -7,7 +7,7 @@ Labels help you to categorize conversations and prioritize them. You can assign 
 
 Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom color to a label, it makes it easier to identify the label. You will be able to display the label on the sidebar to filter the conversations easily.
 
-- Click on Settings on Live Agent home screen.
+Click on Settings on Live Agent home screen.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard home screen" />
@@ -15,7 +15,7 @@ Labels are tied to the account and can be used to create custom workflows in you
 </figure>
 
 
-- Click on Labels and then Add Label button on the Right hand side.
+Click on Labels and then Add Label button on the Right hand side.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-labels-home.png" width="100%" alt="Live Agent Labels Home Screen" />
@@ -38,7 +38,7 @@ Screen opens up where you can design your own labels. Make sure you give meaning
 | Colour                 | Select a colour for the label for easy  identification                   | After Selection click on the small square again                                          |
 | Show Label on  Sidebar | Select this option if you want the label to  be displayed on the sidebar | This will help in easy identification of the conversations                               |
 
-- Click on Create.
+Click on Create.
 Label added successfully message will be displayed. New Label has been created. You can create as many Labels as you need. Labels can be used across teams.
 
 <figure>

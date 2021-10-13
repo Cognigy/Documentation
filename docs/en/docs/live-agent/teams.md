@@ -7,14 +7,14 @@ title: "Teams"
 Teams let you organize your agents into groups based on their responsibilities.
 A user can be part of multiple teams. You can assign conversations to a team when you are working collaboratively.
 
-- Click on Settings on Live Agent home screen.
+Click on Settings on Live Agent home screen.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Home Screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
-- Click on Teams and then on Create new team button on the Right Hand Side.
+Click on Teams and then on Create new team button on the Right Hand Side.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-teams-home.png" width="100%" alt="Live Agent Teams Home Screen" />
@@ -42,14 +42,14 @@ Below screen will open where you can add Teams as per your need. Create Teams an
   <figcaption>Add Agents to Teams</figcaption>
 </figure>
 
-- Click on Add Agents after selecting the Checkboxes for Agents needed for this team. Only these agents will be able to see these teams on their screen.
+Click on Add Agents after selecting the Checkboxes for Agents needed for this team. Only these agents will be able to see these teams on their screen.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-teams-team-ready.png" width="100%" alt="Teams Create Finish Screen" />
   <figcaption>Finish</figcaption>
 </figure>
 
-- Click on Finish.
+Click on Finish.
 
 Team has been created. You can always Edit or Delete the Team as per your need.
 

@@ -6,7 +6,7 @@ title: "Contacts"
 Contacts section in Live Agent contains the details of End Users/Customers that you have interacted with using Live Agent Widget. 
 You can consider it as Customer Data Base. 
 
-- Click on Contacts on Home Screen.
+Click on Contacts on Home Screen.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-dashboard-contacts.png" width="100%" alt="Live Agent Home Screen" />

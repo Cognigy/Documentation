@@ -323,8 +323,8 @@ nav:
     - live-agent/reports.md
   - Profile Settings:
     - live-agent/profile-settings.md
-  - Super Admin:
-    - live-agent/super-admin.md
+  # - Super Admin:
+  #   - live-agent/super-admin.md Disabled for now
   - Help & Support:
     - live-agent/help.md
 - Marketplace:

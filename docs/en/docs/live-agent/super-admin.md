@@ -24,7 +24,7 @@ docker exec -it $(docker ps --filter name=srv-captain--chatwoot-web -q) /bin/sh
 <div class="divider"></div>
 
 
-- Execure the following command to create a super admin in your Rails console.
+Execure the following command to create a super admin in your Rails console.
 ```rb
 s = SuperAdmin.create!(email: "admin@xyc.com", password: "yourpassword")
 ```

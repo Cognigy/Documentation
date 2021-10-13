@@ -5,7 +5,7 @@ title: "Reports"
 
 Reports of the conversations which has happened over time, can be viewed in the Reports Section.
 
-- Click on Reports on home page.
+Click on Reports on home page.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-dashboard-reports.png" width="100%" alt="Live Agent Home Screen" />
@@ -31,7 +31,7 @@ Report can be generated for various durations. This can be done by selecting the
 ### Conversations
 <div class="divider"></div>
 
-- Click on Conversations tab in Reports. The graph will show the conversation happened on the selected days. On pointing the mouse to a particular graph of the day, the details of the conversations happened on that day can be found out.
+Click on Conversations tab in Reports. The graph will show the conversation happened on the selected days. On pointing the mouse to a particular graph of the day, the details of the conversations happened on that day can be found out.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-reports-conversations.png" width="100%" alt="Conversations Report Screen" />
@@ -42,7 +42,7 @@ Report can be generated for various durations. This can be done by selecting the
 
 ### Incoming Messages
 <div class="divider"></div>
-- Click on Incoming Messages tab in Reports. The graph will show the number of incoming messages happened on the selected days. On pointing the mouse to a particular graph of the day, the details of the number of incoming messages happened on that day can be found out.
+Click on Incoming Messages tab in Reports. The graph will show the number of incoming messages happened on the selected days. On pointing the mouse to a particular graph of the day, the details of the number of incoming messages happened on that day can be found out.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-reports-incoming-messages.png" width="100%" alt="Incoming Messages Report Screen" />
@@ -52,7 +52,7 @@ Report can be generated for various durations. This can be done by selecting the
 
 ### Outgoing Messages
 <div class="divider"></div>
-- Click on Outgoing Messages tab in Reports. The graph will show the number of outgoing messages happened on the selected days. On pointing the mouse to a particular graph of the day, the details of the number of outgoing messages happened on that day can be found out.
+Click on Outgoing Messages tab in Reports. The graph will show the number of outgoing messages happened on the selected days. On pointing the mouse to a particular graph of the day, the details of the number of outgoing messages happened on that day can be found out.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-reports-outgoing-messages.png" width="100%" alt="Outgoing Messages Report Screen" />
@@ -62,7 +62,7 @@ Report can be generated for various durations. This can be done by selecting the
 
 ### First Response Time
 <div class="divider"></div>
-- Click on First Response Time tab in Reports. The graph will show the average number of hours taken to give first response to a conversation with a customer. On pointing the mouse to a particular graph of the day, the average number of hours taken for first response for that particular day can be found out.
+Click on First Response Time tab in Reports. The graph will show the average number of hours taken to give first response to a conversation with a customer. On pointing the mouse to a particular graph of the day, the average number of hours taken for first response for that particular day can be found out.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-reports-first-response-time.png" width="100%" alt="First Response Time Report Screen" />
@@ -72,7 +72,7 @@ Report can be generated for various durations. This can be done by selecting the
 
 ### Resolution Time
 <div class="divider"></div>
-- Click on Resolution Time tab in Reports. The graph will show the average number of hours taken to resolve a particular conversation with a customer. On pointing the mouse to a particular graph of the day, the average number of hours taken for resolving conversations for that particular day can be found out.
+Click on Resolution Time tab in Reports. The graph will show the average number of hours taken to resolve a particular conversation with a customer. On pointing the mouse to a particular graph of the day, the average number of hours taken for resolving conversations for that particular day can be found out.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-reports-resolution-time.png" width="100%" alt="Resolution Time Report Screen" />
@@ -82,7 +82,7 @@ Report can be generated for various durations. This can be done by selecting the
 
 ### Resolution Count
 <div class="divider"></div>
-- Click on Resolution count tab in Reports. The graph will show the number of conversations resolved on the selected days. On pointing the mouse to a particular graph of the day, the details of the number of conversations resolved on that day can be found out.
+Click on Resolution count tab in Reports. The graph will show the number of conversations resolved on the selected days. On pointing the mouse to a particular graph of the day, the details of the number of conversations resolved on that day can be found out.
 
 
 <figure>

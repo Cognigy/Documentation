@@ -17,10 +17,10 @@ The Below Section will Open. Your Name will be listed by default as Administrato
 
 <figure>
 <img class="image-center" src="{{config.site_url}}assets/img/LA-agents-home.png" width="100%" alt="Live Agent Agents Home Screen">
-  <figcaption>Agents Home Screen</figcaption>
+  <figcaption>Agents Administration Screen</figcaption>
 </figure>
 
-- Click on Add Agent button on the Top Right Hand Side. A pop up window will open in which you can enter the details of the Agent like name, role and email address. 
+Click on Add Agent button on the Top Right Hand Side. A pop up window will open in which you can enter the details of the Agent like name, role and email address. 
 
 <figure>
 <img class="image-center" src="{{config.site_url}}assets/img/LA-agents-add-agent-to-team.png" width="100%" alt="Live Agent Add Agent to Team">
@@ -34,7 +34,7 @@ The Below Section will Open. Your Name will be listed by default as Administrato
 | Role                 | Enter the Role - Agent or  Administrator | Agents can only access inbox, reports, and  conversations. Administrators have all privilages of agents  and have access to all features of Live Agent |
 | Your e-mail  address | Enter the e-mail id you  registered      |                                                                                                                                                     |
 
-- Click on Add Agent Button. "Agent Added Successfully" message will be displayed and the New Agent will be listed on the page.
+Click on Add Agent Button. "Agent Added Successfully" message will be displayed and the New Agent will be listed on the page.
 
 In case, you have entered the details incorrectly, this can be corrected using the Edit option in the Agents Screen.
 <figure>

@@ -5,14 +5,14 @@ title: "Account Settings"
 
 Here you can change general settings for the account, like name and language
 
-- Click on Settings on Live Agent home screen.
+Click on Settings on Live Agent home screen.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard home screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
-- Click on Account Settings
+Click on Account Settings
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-account-settings.png" width="100%" alt="Live Agent Account Settings" />
