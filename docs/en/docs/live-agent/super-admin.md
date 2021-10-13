@@ -1,0 +1,119 @@
+---
+title: "Super admin Console"
+---
+
+To access super admin console and Sidekiq console, you have to create a super admin.
+
+## Access Rails console
+<div class="divider"></div>
+
+Run the following command in your console from the root folder of your Live Agent Rails app.
+
+```bash
+RAILS_ENV=production bundle exec rails c
+```
+
+- If you running Live Agent in a Docker container, you would need to access the shell inside your container first.*
+- If you are running Live Agent on Caprover, use the following command to access the command line.
+```
+docker exec -it $(docker ps --filter name=srv-captain--chatwoot-web -q) /bin/sh
+```
+
+
+## Access super admin console
+<div class="divider"></div>
+
+
+- Execure the following command to create a super admin in your Rails console.
+```rb
+s = SuperAdmin.create!(email: "admin@xyc.com", password: "yourpassword")
+```
+- Access `<live-agent-installation-url>/super_admin`.
+- Authenticate and you can find Sidekiq option on the sidebar.
+
+## Super Admin Dashboard
+<div class="divider"></div>
+
+Here we can see an overview of the accounts, users, inboxes, and some statistics regarding conversations
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-dashboard.png" width="100%"  alt="Live Agent Super Admin Dashboard" />
+  <figcaption>Super Admin Dashboard</figcaption>
+</figure>
+
+## Accounts
+<div class="divider"></div>
+
+This is an overview of the current accounts, they can be edited or deleted.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-accounts.png" width="100%"  alt="Live Agent Super Admin Accounts" />
+  <figcaption>Accounts</figcaption>
+</figure>
+
+Press the "New Account" Button at the top right corner to create a new account, add its name and locale.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-accounts-create-account.png" width="100%"  alt="Live Agent Super Admin Accounts Creation" />
+  <figcaption>Create an account</figcaption>
+</figure>
+
+## Users
+<div class="divider"></div>
+
+This is an overview of the current users, they can be edited.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-users-home.png" width="100%"  alt="Live Agent Super Admin Users" />
+  <figcaption>Users</figcaption>
+</figure>
+
+Press the "New User" Button at the top right corner to create a new user, add its name, email and password.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-users-create-new-user.png" width="100%"  alt="Live Agent Super Admin Create User" />
+  <figcaption>Create New User</figcaption>
+</figure>
+
+## Super Admins
+<div class="divider"></div>
+
+This is an overview of the current Super Admins, they can be edited or deleted.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-super-admins.png" width="100%"  alt="Live Agent Super Admins" />
+  <figcaption>Super Admins</figcaption>
+</figure>
+
+Press the "New super admin" Button at the top right corner to create a new super admin, add its email and password.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-super-admins-create.png" width="100%"  alt="Live Agent Create Super Admin" />
+  <figcaption>Create New Super Admin</figcaption>
+</figure>
+
+## Access Tokens
+
+This is an overview of all Users's Access Tokens
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-access-tokens.png" width="100%"  alt="Live Agent Super Admin Access Tokens" />
+  <figcaption>Users's Access Tokens</figcaption>
+</figure>
+
+## Installation Configs
+<div class="divider"></div>
+
+This is an overview of the current installation configurations and environmental variables. The configuration can be manipulated here and this will show in the product without any other action required. You can edit and create new configs from here.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-installation-configs.png" width="100%"  alt="Live Agent Super Admin Installation Configs" />
+  <figcaption>Installation Configs</figcaption>
+</figure>
+
+Press the "New installation config" Button at the top right corner to create a new config, add its name and value.
+
+<figure>
+ <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-installation-configs-create.png" width="100%"  alt="Live Agent Create Config" />
+  <figcaption>Create New Config</figcaption>
+</figure>
