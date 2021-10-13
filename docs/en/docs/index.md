@@ -1,8 +1,9 @@
 #
-<figure>
-  <img class="image-center" src="{{config.site_url}}assets/img/Cognigy-black.svg" width="50%" />
+<figure >
+  <img class="image-center logo-home-page" width="50%" />
   <br>
 </figure>
+
 
 Welcome to the documentation of Cognigy products, a Conversational AI platform that helps you create advanced virtual agents that can be rolled out across a wide range of channels.
 Continue with our choosing a product to get more detailed information on the wide array of its features.
