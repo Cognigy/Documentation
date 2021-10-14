@@ -1,4 +1,4 @@
-# Add an Inbox for Handling The Handover
+# Add an Inbox for Handling the Handover
 
 From the Live Agent Dashboard screen, do click on **Inboxes** in the sidebar.
 

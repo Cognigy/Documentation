@@ -280,15 +280,15 @@ nav:
   - Release Notes:
     - live-agent/release-notes/releases.md
   - Getting started:
-    - Creating An Account:
+    - Creating an Account:
       - live-agent/getting-started/creating-an-account.md
-    - Inviting Your Agents:
+    - Inviting your Agents:
       - live-agent/getting-started/inviting-your-agents.md
-    - Configuring A Cognigy.AI Endpoint For Handover:
+    - Configuring a Cognigy.AI Endpoint for Handover:
       - live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover.md
-    - Add an Inbox for Handling The Handover:
+    - Add an Inbox for Handling the Handover:
       - live-agent/getting-started/add-an-inbox-for-handling-the-handover.md
-    - Creating A Cognigy.AI Handover Flow:
+    - Creating a Cognigy.AI Handover Flow:
       - live-agent/getting-started/creating-a-cognigy-handover-flow.md
   - Installation & Configuration:
     - Deployment:

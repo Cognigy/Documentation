@@ -1,4 +1,4 @@
-# Inviting you agents
+# Inviting your agents
 
 For attending incoming chats, it is good to have several agents for distributing and handling them. From the main screen, clicking **Settings**, the **Agents** section will be displayed. From here, new agents can be added by clicking on the green right top button **Add Agent**.
 

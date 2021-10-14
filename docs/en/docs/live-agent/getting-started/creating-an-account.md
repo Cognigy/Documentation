@@ -1,4 +1,4 @@
-# Creating An Account
+# Creating an Account
 
 The first time Live Agent is installed, the signup screen is displayed. After that, the company and administrator data must be filled in to start using it.
 
