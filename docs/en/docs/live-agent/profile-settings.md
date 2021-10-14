@@ -3,16 +3,16 @@ title: "Profile Settings"
 ---
 # Profile Settings
 
-Change basic settings for the Profile account.
+Change basic settings for the user profile.
 
-Click on the 3 dots menu next to the account profile and click on Profile Settings.
+Click on the three dots menu next to the account profile and click on **Profile Settings**.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-profile-settings-menu.png" width="100%" alt="Live Agent Profile  Menu" />
   <figcaption>Profile Menu</figcaption>
 </figure>
 
-On this section, the Profile data can be changed.
+On this section, the user profile data can be changed.
 
 Name, e-mail address and profile picture.
 
@@ -35,7 +35,7 @@ Notifications.
   <figcaption>Notifications</figcaption>
 </figure>
 
-Here you can also find the account access token.
+Here you can also find the user access token.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />
