@@ -17,10 +17,6 @@ table th {
   padding: 20px;
   font-size: 15px;
 }
-table tr:hover {
-    background-color: #DDD;
-    color: #000;
-  }
  table .type {
    font-weight: bold;
    font-size: 16px;
