@@ -19,7 +19,7 @@ Click on Settings.
   <figcaption>Inboxes</figcaption>
 </figure>
 
-Here you can change a lot of settings to adjust to your necessities.
+Here you can change a lot of settings to adjust to your needs.
 
 >Additional settings like adding collaborators, and additional configuration are also available. Be sure to explore and adjust what is best for your case.
 

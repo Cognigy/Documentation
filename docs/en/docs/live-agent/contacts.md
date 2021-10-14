@@ -6,7 +6,7 @@ title: "Contacts"
 Contacts section in Live Agent contains the details of End Users/Customers that you have interacted with using Live Agent Widget. 
 You can consider it as Customer Data Base. 
 
-Click on Contacts on Home Live Agent Dashboard.
+Click on Contacts on the Live Agent Dashboard.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-dashboard-contacts.png" width="100%" alt="Live Agent Dashboard Screen" />
@@ -14,7 +14,7 @@ Click on Contacts on Home Live Agent Dashboard.
 </figure>
 
 
-A Screen will open which will have Contacts(if already added). Or else a blank screen where Contacts can be added.
+A screen will open which will have Contacts (if already added). Or else a blank screen where Contacts can be added.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-contacts-home.png" width="100%" alt="Contacts Home Screen" />
