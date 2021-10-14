@@ -12,7 +12,7 @@ Click on the sidebar **Settings** button on the Live Agent Dashboard.
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
-Click on Settings.
+Click on **Settings** button in the inbox listed.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-inboxes-home.png" width="100%"  alt="Live Agent Inboxes Home Screen" />

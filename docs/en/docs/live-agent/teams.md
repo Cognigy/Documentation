@@ -14,7 +14,7 @@ Click on the sidebar **Settings** button on the Live Agent Dashboard.
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
-Click on Teams and then on Create new team button on the Right Hand Side.
+Click on **Teams** and then on Create new team button on the Right Hand Side.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-teams-home.png" width="100%" alt="Live Agent Teams Home Screen" />
@@ -42,14 +42,14 @@ The below screen will open where you can add Teams as per your need. Create Team
   <figcaption>Add Agents to Teams</figcaption>
 </figure>
 
-Click on Add Agents after selecting the Checkboxes for Agents needed for this team. Only these agents will be able to see these teams on their screens.
+Click on **Add Agents** after selecting the Checkboxes for Agents needed for this team. Only these agents will be able to see these teams on their screens.
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-teams-team-ready.png" width="100%" alt="Teams Create Finish Screen" />
   <figcaption>Finish</figcaption>
 </figure>
 
-Click on Finish.
+Click on **Finish**.
 
 The team has been created. You can always Edit or Delete the Team as per your need.
 
