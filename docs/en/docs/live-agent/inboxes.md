@@ -24,11 +24,6 @@ Here you can change a lot of settings to adjust to your necessities.
 >Additional settings like adding collaborators, and additional configuration are also available. Be sure to explore and adjust what is best for your case.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-inboxes-settings-1.png" width="100%"  alt="Live Agent Inbox Settings" />
+<img src="{{config.site_url}}assets/img/LA-inboxes-settings.png" width="100%"  alt="Live Agent Inbox Settings" />
   <figcaption>Inbox Settings</figcaption>
-</figure>
-
-<figure>
-<img src="{{config.site_url}}assets/img/LA-inboxes-settings-2.png" width="100%"  alt="Live Agent Inbox Settings 2" />
-  <figcaption>Inbox Settings - 2</figcaption>
 </figure>
