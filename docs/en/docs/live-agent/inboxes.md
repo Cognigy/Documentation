@@ -3,12 +3,12 @@ title: "Inboxes"
 ---
 # Inboxes
 
-An Inbox shows the connection of a website page to Live Agent. You can have unlimited inboxes in your Live Agent account. Also there are some settings you can change in your already existent inboxes.
+An Inbox shows the connection of Cognigy.AI to Live Agent. You can have unlimited inboxes in your Live Agent account. Also there are some settings you can change in your already existent inboxes.
 
-Click on Settings on Live Agent home screen.
+Click on Settings on Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Home Screen" />
+<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
@@ -19,7 +19,7 @@ Click on Settings.
   <figcaption>Inboxes</figcaption>
 </figure>
 
-Here you can change a lot of settings to adjust to your necessities
+Here you can change a lot of settings to adjust to your necessities.
 
 >Additional settings like adding collaborators, and additional configuration are also available. Be sure to explore and adjust what is best for your case.
 
@@ -30,5 +30,5 @@ Here you can change a lot of settings to adjust to your necessities
 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-inboxes-settings-2.png" width="100%"  alt="Live Agent Inbox Settings 2" />
-  <figcaption>Inbox Settings</figcaption>
+  <figcaption>Inbox Settings - 2</figcaption>
 </figure>

@@ -16,7 +16,7 @@ Click on 'Settings' on the Left Hand Side to Add Agents
 The Below Section will Open. Your Name will be listed by default as Administrator An Administrator will have access to all Live Agent features enabled for your account, including settings, along with all of a normal agents' privileges.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}assets/img/LA-agents-home.png" width="100%" alt="Live Agent Agents Home Screen">
+<img class="image-center" src="{{config.site_url}}assets/img/LA-agents-home.png" width="100%" alt="Live Agent Agents Administration Screen">
   <figcaption>Agents Administration Screen</figcaption>
 </figure>
 

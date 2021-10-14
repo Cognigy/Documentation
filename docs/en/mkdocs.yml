@@ -325,8 +325,8 @@ nav:
     - live-agent/profile-settings.md
   # - Super Admin:
   #   - live-agent/super-admin.md Disabled for now
-  - Help & Support:
-    - live-agent/help.md
+  # - Help & Support:
+  #   - live-agent/help.md Disabled for now
 - Marketplace:
   - ai/resources/manage/extensions#marketplace
 - Usage:

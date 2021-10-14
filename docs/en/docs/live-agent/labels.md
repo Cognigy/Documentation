@@ -7,10 +7,10 @@ Labels help you to categorize conversations and prioritize them. You can assign 
 
 Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom color to a label, it makes it easier to identify the label. You will be able to display the label on the sidebar to filter the conversations easily.
 
-Click on Settings on Live Agent home screen.
+Click on Settings on Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard home screen" />
+<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard Screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 

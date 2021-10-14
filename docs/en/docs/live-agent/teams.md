@@ -7,10 +7,10 @@ title: "Teams"
 Teams let you organize your agents into groups based on their responsibilities.
 A user can be part of multiple teams. You can assign conversations to a team when you are working collaboratively.
 
-Click on Settings on Live Agent home screen.
+Click on Settings on Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Home Screen" />
+<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 

@@ -5,10 +5,10 @@ title: "Reports"
 
 Reports of the conversations which has happened over time, can be viewed in the Reports Section.
 
-Click on Reports on home page.
+Click on Reports on Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-dashboard-reports.png" width="100%" alt="Live Agent Home Screen" />
+<img src="{{config.site_url}}assets/img/LA-dashboard-reports.png" width="100%" alt="Live Agent Dashboard Screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
