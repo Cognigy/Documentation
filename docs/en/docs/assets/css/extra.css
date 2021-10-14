@@ -94,7 +94,7 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 .md-footer-copyright__highlight::backdrop,
 body > div.md-container > nav > div > ul > li:nth-child(2),
 body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
-  display: none;
+  display: none !important;
 }
 
 /* Landing page cards */
