@@ -1,3 +1,17 @@
+---
+hide:
+  - navigation
+  - toc
+---
+<style>
+  @media only screen and (min-width: 76.25em) {
+  .md-content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 65rem;
+  }
+}
+</style>
 #
 <figure >
   <img class="image-center logo-home-page" src="{{config.site_url}}assets/img/Cognigy-black.svg" width="50%" />

@@ -20,6 +20,10 @@
   --block-quote-bg-color: hsl(0deg 0% 100% / 8%);
 }
 
+body > div.md-container > main > div {
+  max-width: 85rem; 
+}
+
 .logo-home-page {
   margin-top: -2.5em !important;
   filter: var(--logo-home-page)
@@ -226,6 +230,9 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 
 /*Media Queries*/
 @media only screen and (min-width: 76.25em) {
+  .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    display: none;
+  }
   .md-main__inner {
     max-width: 90%;
   }
@@ -249,6 +256,9 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 }
 
 @media only screen and (max-width: 76.25em) {
+  body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > ul > li:nth-child(2) {
+    display: none;
+  }
   .md-nav__title .md-nav__button.md-logo img,
   .md-nav__title .md-nav__button.md-logo svg {
     width: 90%;
