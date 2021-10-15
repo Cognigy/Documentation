@@ -20,8 +20,8 @@
   --block-quote-bg-color: hsl(0deg 0% 100% / 8%);
 }
 
-body > div.md-container > main > div {
-  max-width: 85rem; 
+.md-grid  {
+  max-width: 85rem !important;
 }
 
 .logo-home-page {
@@ -98,7 +98,7 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 .md-footer-copyright__highlight::backdrop,
 body > div.md-container > nav > div > ul > li:nth-child(2),
 body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
-  display: none !important;
+  display: none;
 }
 
 /* Landing page cards */
@@ -236,17 +236,18 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
   .md-main__inner {
     max-width: 90%;
   }
-  .md-sidebar--primary {
+  /* .md-sidebar--primary {
     left: 100px;
-  }
+  } */
+
+  /* .md-content__inner.md-typeset {
+    margin-left: 48px !important;
+  } */
   .md-sidebar--secondary {
     right: 0;
     margin-left: 0;
     -webkit-transform: none;
     transform: none;
-  }
-  .md-content__inner.md-typeset {
-    margin-left: 48px !important;
   }
   .md-nav__title .md-nav__button.md-logo img,
   .md-nav__title .md-nav__button.md-logo svg {
