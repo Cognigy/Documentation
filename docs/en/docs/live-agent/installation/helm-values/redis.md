@@ -1,16 +1,18 @@
 # Redis
 
-Redis is used for caching and having a better performance across the application. It can be run internally in the same Kubernetes cluster or externally.
+Redis is an in-memory data structure store used for caching and having a better performance across the application. It can either run inside of the Kubernetes cluster as an additional workload or outside of the cluster. You can also use a fully managed solution for PostgreSQL.
+
+Compatible and tested Redis versions **>= 5** and **<= 6**
 
 ## Redis variables
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | `redis.enabled`       | Bool | true | Set to `false` if using external redis and modify the below variables. |
-| `redis.host`      | string | `Redis Pod Name` | Redis host name                                                            | `"cognigy-live-agent-redis-master"`                         |
+| `redis.host`      | string | `Internal Redis Deployment Name` | Redis host name                                                            | `"cognigy-live-agent-redis-master"`                         |
 | `redis.auth.password` | string | `"redis"` | Redis password |
 | `redis.master.persistence.enabled` | bool | `true` | Persistence can be disabled completely, if you want your data to just exist as long as the server is running. |
-| `redis.nameOverride` | string | `"live-agent-redis"` | Override Pod Name |
+| `redis.nameOverride` | string | `"live-agent-redis"` | Override the deployment name if internal Redis is enabled |
 | `configmap.REDIS_SENTINELS` | string | `""` | Redis Sentinel can be used by passing list of sentinel host and ports. For example, `sentinel_host1:port1`, `sentinel_host2:port2` |
 | `configmap.REDIS_SENTINEL_MASTER_NAME` | string | `""` | Redis sentinel master name is required when using sentinel. |
 

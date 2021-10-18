@@ -1,6 +1,6 @@
 ### Browser Requirements
 
-Web dashboard works with most of the modern web browsers. To see the support browser versions, see the table below.
+The Live Agent web frontend works with most modern web browsers. The following table shows the list of supported web browsers:
 
 | Browser | Minimum version |
 | -- | -- |

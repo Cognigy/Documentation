@@ -300,21 +300,20 @@ nav:
         - live-agent/installation/deployment/prerequisites.md
       - Installation using Helm:
         - live-agent/installation/deployment/installation-using-helm.md
+      - Helm Values:
+          - live-agent/installation/helm-values/index.md
+          - Database:
+            - live-agent/installation/helm-values/database.md
+          - Redis:
+            - live-agent/installation/helm-values/redis.md
+          - Storage:
+            - live-agent/installation/helm-values/storage.md
+          - SMTP:
+            - live-agent/installation/helm-values/smtp.md
+          - Email Templates:
+            - live-agent/installation/helm-values/email-templates.md
       - Installation Updates:
         - live-agent/installation/deployment/installation-updates.md
-    - Configuration/Tweaking:
-        - Helm Values:
-          - live-agent/installation/configuration/helm-values.md
-        - Database:
-          - live-agent/installation/configuration/database.md
-        - Redis:
-          - live-agent/installation/configuration/redis.md
-        - Storage:
-          - live-agent/installation/configuration/storage.md
-        - SMTP:
-          - live-agent/installation/configuration/smtp.md
-        - Email Templates:
-          - live-agent/installation/configuration/email-templates.md
   - Agents:
     - live-agent/agents.md
   - Teams:

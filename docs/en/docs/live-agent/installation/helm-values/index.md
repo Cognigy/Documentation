@@ -1,13 +1,58 @@
 # Helm values
 
-Here is a description of all the values used inside the Helm package.
+## Quick introduction
+
+Helm values are all the variables used for configuring the Live Agent app and resources. These are stored on a file called `values.yaml`. It can be edited with complete freedom to set the Live Agent behaviour. An example of this file:
+
+```yaml
+# Defining Ingress host
+ingress:
+  enabled: false
+  annotations:
+    kubernetes.io/ingress.class: traefik
+  hosts:
+    - host: "live-agent-domain.com"
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: live-agent
+
+configmap:
+  # Comment about a commented variable, it is ignored
+  # REST_CLIENT_SSL_VERIFICATION=false
+  FORCE_SSL: true
+```
+
+Apart from modifying or commenting the variables inside the `values.yaml` file, parameters can be modified also using the `--set key=value[,key=value]` argument to `helm install`. For example:
+
+```sh
+helm install my-release \
+  --set configmap.SSL_CA_FILE="/etc/ca.pem"\
+    ./cognigy-live-agent
+```
+
+The above command sets the Live Agent certificate file path to `/etc/ca.pem`. More information can be found at the Helm documentation [Template and Values](https://helm.sh/docs/chart_best_practices/values)
+
+Next, you can find a definition for each of these values to understand how to modify them accordingly. 
+
+## Specific configurations
+
+For specific values and logic, here you can find dedicated sections:
+
+- [Database](/live-agent/installation/helm-values/database)
+- [Redis](/live-agent/installation/helm-values/redis)
+- [Storage](/live-agent/installation/helm-values/storage)
+- [SMTP](/live-agent/installation/helm-values/smtp)
+- [Email Templates](/live-agent/installation/helm-values/email-templates)
 
 ## Image Values
 
 | Name                | Description                                          | Value                 |
 | ------------------- | ---------------------------------------------------- | --------------------- |
 | `image.repository`  | Live Agent image repository                           | `cognigy.azurecr.io/live-agent`    |
-| `image.tag`         | Live Agent image tag                                  | `7166`              |
+| `image.tag`         | Live Agent image tag                                  | `e.g. 7166`              |
 | `image.pullPolicy`  | Live Agent image pull policy                          | `IfNotPresent`         |
 
 
@@ -20,11 +65,9 @@ Here is a description of all the values used inside the Helm package.
 | `configmap.CHATWOOT_INSTALLATION_ENV`     | Sets Live Agent installation method.                                  | `"helm"`                                                   |
 | `configmap.ENABLE_ACCOUNT_SIGNUP`         |  `true` : default option, allows sign ups, `false` : disables all the end points related to sign ups, `api_only`: disables the UI for signup but you can create sign ups via the account apis.  | `"false"`                                                  |
 | `configmap.FORCE_SSL`                     | Force all access to the app over SSL, default is set to false.                  | `"false"`                                                  |
-| `configmap.FRONTEND_URL`                  | Replace with the URL you are planning to use for your app.                      | `"http://0.0.0.0:3000/"`                                   |
 | `configmap.RAILS_ENV`                     | Sets rails environment.                                                         | `"production"`                                             |
 | `configmap.RAILS_MAX_THREADS`             | Number of threads each worker will use.                                         | `"5"`                                                      |
 | `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
-| `configmap.SENTRY_DSN`                    | Sentry data source name.                                                        | `""`                                                       |
 | `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot customizations                                                              | `"true"`                                                   |
 
 ### Rest Client SSL
@@ -66,6 +109,7 @@ In case you have a custom CA to trust or that need SSL to be disabled, these set
 | `autoscaling.maxReplicas` | int | `100` |
 | `autoscaling.minReplicas` | int | `1` |
 | `autoscaling.targetCPUUtilizationPercentage` | int | `80` |
+| `frontendUrlOverride`                  | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary                      | `"https://live-agent-domain.com/"`                                   |
 | `fullnameOverride` | string | `""` |
 | `hooks.affinity` | object | `{}` |
 | `hooks.migrate.env` | list | `[]` |
@@ -100,22 +144,3 @@ In case you have a custom CA to trust or that need SSL to be disabled, these set
 | `tolerations` | list | `[]` |
 | `web.replica` | int | `1` |
 | `worker.replica` | int | `1` |
-
-
-Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
-
-```sh
-helm install my-release \
-  --set configmap.FRONTEND_URL="live-agent.yourdomain.com"\
-    ./cognigy-live-agent
-```
-
-The above command sets the Live Agent server frontend URL to `live-agent.yourdoamain.com`.
-
-Alternatively, a YAML file that specifies the values for the parameters can be provided while installing the chart. For example,
-
-```sh
-helm install my-release -f values.yaml ./cognigy-live-agent
-```
-
-> **Note:** You can use the default values.yaml file

@@ -1,6 +1,8 @@
 # Database
 
-The database used is PostgreSQL. It can be run internally in the same Kubernetes cluster or externally.
+The database used is PostgreSQL. It can either run inside of the Kubernetes cluster as an additional workload or outside of the cluster. You can also use a fully managed solution for PostgreSQL.
+
+Compatible and tested PostgreSQL versions **>= 10** and **<= 14**
 
 ## Postgres variables
 
