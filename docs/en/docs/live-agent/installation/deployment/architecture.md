@@ -5,7 +5,7 @@
   <figcaption>Live Agent Architecture Diagram</figcaption>
 </figure>
 
-Live is composed of a Ruby On Rails application that serves a Vue.js Frontend along with an API for performing actions such as CRUD operations, WebSockets, etc...
+Live Agent is composed of a Ruby On Rails application that serves a Vue.js Frontend along with an API for performing actions such as CRUD operations, WebSockets, etc...
 
 Live Agent has the following set of services running:
 
