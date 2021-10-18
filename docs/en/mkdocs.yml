@@ -291,22 +291,29 @@ nav:
     - Creating a Cognigy.AI Handover Flow:
       - live-agent/getting-started/creating-a-cognigy-handover-flow.md
   - Installation & Configuration:
+    - Browser Requirements:
+      - live-agent/installation/browser-requirements.md
     - Deployment:
-      - Prerequisites:
-        - live-agent/installation/prerequisites.md
       - Architecture:
-        - live-agent/installation/architecture.md
-    - Installation Using Helm:
-      - live-agent/installation/installation-using-helm.md
-    - Installation Updates:
-      - live-agent/installation/installation-updates.md
-    - Configuration/Tweaking:
-      - Database:
-        - live-agent/installation/configuration/database.md
-      - Redis:
-        - live-agent/installation/configuration/redis.md
-      - Mail:
-        - live-agent/installation/configuration/mail.md
+        - live-agent/installation/deployment/architecture.md
+      - Prerequisites:
+        - live-agent/installation/deployment/prerequisites.md
+      - Installation using Helm:
+        - live-agent/installation/deployment/installation-using-helm.md
+      - Helm Values:
+          - live-agent/installation/helm-values/index.md
+          - Database:
+            - live-agent/installation/helm-values/database.md
+          - Redis:
+            - live-agent/installation/helm-values/redis.md
+          - Storage:
+            - live-agent/installation/helm-values/storage.md
+          - SMTP:
+            - live-agent/installation/helm-values/smtp.md
+          - Email Templates:
+            - live-agent/installation/helm-values/email-templates.md
+      - Installation Updates:
+        - live-agent/installation/deployment/installation-updates.md
   - Agents:
     - live-agent/agents.md
   - Teams:
