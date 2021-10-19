@@ -5,7 +5,7 @@ All your conversational AI resources in one place.
 ## Description
 <div class="divider"></div>
 
-Agents contain collections of conversational AI resources, including [Flows]({{config.site_url}}ai/resources/build/flows), [Lexicons]({{config.site_url}}ai/resources/build/lexicons), [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints) and more. It is possible to work on a given Agent with multiple team members and Agents can deployed on a wide range of channels. 
+Agents contain collections of conversational AI resources, including [Flows]({{config.site_url}}ai/resources/build/flows/), [Lexicons]({{config.site_url}}ai/resources/build/lexicons/), [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) and more. It is possible to work on a given Agent with multiple team members and Agents can deployed on a wide range of channels. 
 
 ???+ info "How to create a new Agent"
     Looking for more information on how to setup an agent? Have a look at [**Create a Virtual Agent**](https://support.cognigy.com/hc/en-us/articles/360014523060-Create-a-Virtual-Agent#-1-create-your-va-0-0) in our Help Center.
