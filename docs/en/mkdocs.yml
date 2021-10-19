@@ -1,6 +1,8 @@
 site_name: Cognigy Documentation
-site_description: Documentation from Cognigy.AI products
+site_description: Documentation of Cognigy products
 site_url: https://ndocs.cognigy.com/
+site_author: Cognigy
+copyright: Cognigy
 theme:
   name: material
   custom_dir: overrides
@@ -254,9 +256,6 @@ nav:
     - ai/developer-guides/api-reference.md
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
-  - Help & Contact:
-    - ai/help/get-help.md
-    - ai/help/community.md
 - Insights:
   - insights/cognigy-insights.md
   - insights/global-filter.md
@@ -336,8 +335,12 @@ nav:
   #   - live-agent/help.md Disabled for now
 - Marketplace:
   - ai/resources/manage/extensions#marketplace
-- Usage:
-  - usage-doc.md
+
+- Help & Contact:
+  - help/get-help.md
+  - help/community.md
+# - Usage:
+#   - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true
