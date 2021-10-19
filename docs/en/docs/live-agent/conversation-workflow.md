@@ -107,7 +107,7 @@ Various options are there in the Reply area to enhance the messages.
 This Button is to select and include Emoji in the message.
 <img src="{{config.site_url}}assets/img/LA-conversation-workflow-10.png" width="5%" alt="" />
 This Button is to select and include attachments in the message
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-11.png" width="5%" alt="" />
+<!-- <img src="{{config.site_url}}assets/img/LA-conversation-workflow-11.png" width="5%" alt="" />
 This Button enables to use the Rich Text Editor. Additional options appear on the Reply screen as shown below.
 
 
@@ -124,7 +124,7 @@ Once the message is typed and edited, you need to tick the checkbox to send the 
 <figure>
 <img src="{{config.site_url}}assets/img/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Rich Message" />
   <figcaption>Rich Message</figcaption>
-</figure>
+</figure> -->
 
 
 ###  How to Send Canned Responses
