@@ -40,7 +40,7 @@ More information on Cognigy Analytics you can find here: [Agent Analytics]({{con
  <img src="{{config.site_url}}ai/resources/images/a6094e4-agent-header.jpg" width="70%" style="margin-bottom: 5px">
  </div>
 
-Agents contain a **Top Toolbar ** that is present in every view and provides quick access to Agent-specific resources like Search, Tasks and the Interaction Panel. The **Top Toolbar**, however, also contains items - like the **User Menu** and **Interaction Panel** -  that are always present.
+Agents contain a **Top Toolbar** that is present in every view and provides quick access to Agent-specific resources like Search, Tasks and the Interaction Panel. The **Top Toolbar**, however, also contains items - like the **User Menu** and **Interaction Panel** -  that are always present.
 
 ## Help Center Search
 
