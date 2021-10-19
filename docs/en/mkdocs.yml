@@ -321,6 +321,10 @@ nav:
     - live-agent/contacts.md
   - Reports:
     - live-agent/reports.md
+  - Conversation Workflow:
+    - live-agent/conversation-workflow.md
+  - Conversation Routing:
+    - live-agent/conversation-routing.md
   - Profile Settings:
     - live-agent/profile-settings.md
   # - Super Admin:
