@@ -29,6 +29,7 @@ As of release v4.10 Cognigy provides a completely new designed Analytics solutio
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/7d29be7-Analytics_Insights_link.svg" width="100%" />
+  <figcaption>Agent dashboard - Analytics widget</figcaption>
 </figure>
 
 More information on Cognigy Analytics you can find here: [Agent Analytics]({{config.site_url}}ai/tools/analytics/analytics.md).
