@@ -14,7 +14,7 @@ The `Input Transformer` is configured by implementing the ``handleInput`` functi
 
 <div class="divider"></div>
 
-The `handleInput` function gets a configuration object as an argument. This object always contains the key `endpoint`, which contains the Endpoint configuration. The rest of the keys in the object depends on the [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) of the Transformer. An overview of the keys in the object can be seen below
+The `handleInput` function gets a configuration object as an argument. This object always contains the key `endpoint`, which contains the Endpoint configuration. The rest of the keys in the object depends on the [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types/) of the Transformer. An overview of the keys in the object can be seen below
 
 |Argument|	Description|	Webhook Transformers|	REST Transformers|	Socket Transformers|
 |--|--|--|--|--|

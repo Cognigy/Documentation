@@ -14,8 +14,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors)
+- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors/)
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/) 
 

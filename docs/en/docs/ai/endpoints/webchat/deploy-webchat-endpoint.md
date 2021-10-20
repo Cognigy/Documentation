@@ -4,7 +4,7 @@
 
 <div class="divider"></div>
 
-First, create an Endpoint that uses the Webchat Channel. When you created the Endpoint and assigned the Flow that the Endpoint should use, then you can already click on the ``Open Webchat`` button in the upper right corner. This will open the configured Webchat in an [Integrated Demo Page]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page), and you can already start talking to your flow. Read on to figure out how you can configure the appearance of the Webchat to style it in your company colors, add a background image and much more. 
+First, create an Endpoint that uses the Webchat Channel. When you created the Endpoint and assigned the Flow that the Endpoint should use, then you can already click on the ``Open Webchat`` button in the upper right corner. This will open the configured Webchat in an [Integrated Demo Page]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/), and you can already start talking to your flow. Read on to figure out how you can configure the appearance of the Webchat to style it in your company colors, add a background image and much more. 
 
 
 ## Generic Endpoint Settings
@@ -57,14 +57,14 @@ Enable Typing Indicatros	This settings controls whether animated dots are displa
 |Message Delay|	This settings controls the interval between each bot output, simulating human typing delays|
 |Webchat Plugins|	Here you define the links to your webchat plugings this Endpoint should use|
 
-[^1]: This Setting is exclusive to or works differently on [Integrated Demo Pages]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page).
+[^1]: This Setting is exclusive to or works differently on [Integrated Demo Pages]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/).
 
 <br>
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
 
 **Webchat Rating options**
 
-As of Cognigy.AI 4.9.0, Cognigy introduces [Cognigy Insights]({{config.site_url}}insights) as a new analytics application. The introduction of Insights caused following additional rating options in the Webchat endpoint configuration settings:
+As of Cognigy.AI 4.9.0, Cognigy introduces [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) as a new analytics application. The introduction of Insights caused following additional rating options in the Webchat endpoint configuration settings:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/13c441a-Rating_settings_in_webchat_endpoint_settings_4.svg" width="100%" />
@@ -191,7 +191,7 @@ To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The 
 
 ## More information
 
-- [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat)
-- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features)
-- [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins)
-- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page)
+- [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
+- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)
+- [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/)
+- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/)

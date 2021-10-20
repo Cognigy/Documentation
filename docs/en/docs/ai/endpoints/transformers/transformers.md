@@ -62,11 +62,11 @@ The list below gives an overview of all the Transformer functions that are avail
 
 |Transformer Function|	Description|
 |--|--|
-|[handleInput]({{config.site_url}}ai/endpoints/transformers/input-transformer)|This Transformer function is executed when a user sends a message to an Endpoint, before the Flow is executed. The return value of the function will be sent to the Flow.|
-|[handleOutput]({{config.site_url}}ai/endpoints/transformers/output-transformer)|	This Transformer function is executed on each output from the Flow. For Webhook and Socket based Endpoints, the return value will be sent to the user. Read more [here](#different-base-transformer-types).|
-|[handleExecutionFinished]({{config.site_url}}ai/endpoints/transformers/execution-finished-transformer)	|This Transformer function is executed when the Flow execution has finished. For REST based Endpoints, the return value will be sent to the user. Read more [here](#different-base-transformer-types).|
-|[handleNotify]({{config.site_url}}ai/endpoints/transformers/notify-transformer)	|This Transformer function is executed when the Endpoint Notify API is used. The return value of the function will be sent directly to the user as a notification.|
-|[handleInject]({{config.site_url}}ai/endpoints/transformers/inject-transformer)	|This Transformer function is executed when the Endpoint Inject API is used. The return value of the function will be sent to the Flow.|
+|[handleInput]({{config.site_url}}ai/endpoints/transformers/input-transformer/)|This Transformer function is executed when a user sends a message to an Endpoint, before the Flow is executed. The return value of the function will be sent to the Flow.|
+|[handleOutput]({{config.site_url}}ai/endpoints/transformers/output-transformer/)|	This Transformer function is executed on each output from the Flow. For Webhook and Socket based Endpoints, the return value will be sent to the user. Read more [here](#different-base-transformer-types).|
+|[handleExecutionFinished]({{config.site_url}}ai/endpoints/transformers/execution-finished-transformer/)	|This Transformer function is executed when the Flow execution has finished. For REST based Endpoints, the return value will be sent to the user. Read more [here](#different-base-transformer-types).|
+|[handleNotify]({{config.site_url}}ai/endpoints/transformers/notify-transformer/)	|This Transformer function is executed when the Endpoint Notify API is used. The return value of the function will be sent directly to the user as a notification.|
+|[handleInject]({{config.site_url}}ai/endpoints/transformers/inject-transformer/)	|This Transformer function is executed when the Endpoint Inject API is used. The return value of the function will be sent to the Flow.|
 
 
 ## Creating a Transformer
@@ -122,7 +122,7 @@ The following NPM modules are available in the Transformer:
 |xmljs|
 
 ## Logging
-It is possible to use the exposed modules console.log, console.info and console.error in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs) as a debug log, info log and error log respectively.
+It is possible to use the exposed modules console.log, console.info and console.error in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
 
 ## Sending HTTP Requests
 It is possible to send HTTP requests to external services from within a Transformer. All Transformer functions can access the `httpRequest` module for this purpose. The module is invoked as a function which takes a single configuration object as arguments. This object has the same format as the options object for the NPM module [Request](https://www.npmjs.com/package/request#requestoptions-callback). Example:

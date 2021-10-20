@@ -35,9 +35,9 @@ Notify, in contrast to inject, can only be used to send a simple **text** and/or
 
 <div class="divider"></div>
 
-Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) and can therefore easily be accessed with [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) and the JSON syntax. Please have a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject)  to get more information about /inject and /notify.
+Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) and can therefore easily be accessed with [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) and the JSON syntax. Please have a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject/)  to get more information about /inject and /notify.
 
-You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/http-request) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
+You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/http-request/) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 
 
 <figure>
@@ -86,8 +86,8 @@ The following list shows all endpoints both APIs are compatible with:
 - [LINE Messenger]({{config.site_url}}ai/endpoints/line-messenger/)
 - [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/)
 - [RingCentral Engage]({{config.site_url}}ai/endpoints/ringcentral-engage/)
-- [Slack]({{config.site_url}}ai/endpoints/slack)
-- [Socket]({{config.site_url}}ai/endpoints/socketio)
-- [Sunshine Conversations]({{config.site_url}}ai/endpoints/sunshine-conversations)
+- [Slack]({{config.site_url}}ai/endpoints/slack/)
+- [Socket]({{config.site_url}}ai/endpoints/socketio/)
+- [Sunshine Conversations]({{config.site_url}}ai/endpoints/sunshine-conversations/)
 - [Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
 - [Webhook]({{config.site_url}}ai/endpoints/webhook/)
