@@ -4,7 +4,7 @@
 
 <div class="divider"></div>
 
-The `Execution Finished Transformer` is triggered when the Flow execution has finished, however, the behavior of the Transformer function differs greatly depending on which [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types/) of Transformer is being used, which is described in more detail below.
+The `Execution Finished Transformer` is triggered when the Flow execution has finished, however, the behavior of the Transformer function differs greatly depending on which [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) of Transformer is being used, which is described in more detail below.
 
 The `Execution Finished Transformer` is configured by implementing the `handleExecutionFinished` function in the Transformer in the Endpoint.
 

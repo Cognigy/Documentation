@@ -4,7 +4,7 @@
 
 <div class="divider"></div>
 
-The `Output Transformer` is triggered on every output from the Flow, however, the behavior of the Transformer function differs greatly depending on which [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types/) of Transformer is being used, which is described in more detail below.
+The `Output Transformer` is triggered on every output from the Flow, however, the behavior of the Transformer function differs greatly depending on which [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) of Transformer is being used, which is described in more detail below.
 
 The `Output Transformer` is configured by implementing the `handleOutput` function in the Transformer in the Endpoint.
 

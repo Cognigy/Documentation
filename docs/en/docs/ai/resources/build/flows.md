@@ -55,7 +55,7 @@ In addition to the visual **Chart**, Flows also contain a tab named **NLU**. Thi
 ## Settings
 <div class="divider"></div>
 
-Certain settings can be configured per Flow. For now, this section contains the Default Context, which can be used as a starting point for the Flow's Context object. More information about the **General Flow Settings** can be found here: [Flow Settings]({{config.site_url}}ai/resources/manage/settings/#general-flow-logic/)
+Certain settings can be configured per Flow. For now, this section contains the Default Context, which can be used as a starting point for the Flow's Context object. More information about the **General Flow Settings** can be found here: [Flow Settings]({{config.site_url}}ai/resources/manage/settings/#general-flow-logic)
 
 ???+ info "Default Context"
     Head over to [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information.

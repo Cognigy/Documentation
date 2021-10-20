@@ -49,7 +49,7 @@ This value is the **Microsoft App Password** of your Bot, also referred to as th
 
 As of release v4.9 the display changes for clicked postback buttons in a Microsoft Teams chat. 
 
-When clicking the postback button in a [quick reply, gallery, list, or button]({{config.site_url}}ai/flow-nodes/message/say/#text-with-quick-replies/) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
+When clicking the postback button in a [quick reply, gallery, list, or button]({{config.site_url}}ai/flow-nodes/message/say/#text-with-quick-replies) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0d08fc8-Azur_Bot_Service_with_Microsoft_Teams_chat_1.svg" width="100%" />

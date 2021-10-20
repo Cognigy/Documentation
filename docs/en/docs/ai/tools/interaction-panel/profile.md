@@ -22,4 +22,4 @@ Flow nodes can dynamically access **Profile ** properties via [Tokens]({{config.
 
 * `{ {profile.firstname} }` would return `Thijs`
 
-Flow nodes can also be used to update the stored profile data for a user. Find out more about which nodes to use on the [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#profile-nodes/) page.
+Flow nodes can also be used to update the stored profile data for a user. Find out more about which nodes to use on the [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#profile-nodes) page.

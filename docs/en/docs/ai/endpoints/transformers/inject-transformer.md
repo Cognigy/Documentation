@@ -2,7 +2,7 @@
 
 ## Description
 
-The `Inject Transformer` makes it possible to hook into the [Inject API]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types/). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Inject Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Inject API`. This can now all be handled in the `Inject Transformer`.
+The `Inject Transformer` makes it possible to hook into the [Inject API]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Inject Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Inject API`. This can now all be handled in the `Inject Transformer`.
 
 The `Inject Transformer` is triggered when the `Inject Transformer API` is called. The custom request body from the external service can thereby be parsed to return the necessary values for the Inject API, namely the  user ID and session ID as well as text and/or data, which will be sent to the user as a notification.
 
