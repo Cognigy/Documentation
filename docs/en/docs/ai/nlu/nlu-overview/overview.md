@@ -93,7 +93,7 @@ or
 Cognigy NLU comes with an intent confirmation mechanism that works by configuring Confirmation Sentences in each intent. Whenever an Intent score falls within a (configurable) range - let's say 0,4 - 0,6, the Confirmation Sentence is triggered and shown to the user. If the user confirms the Intent, the Intent will be triggered.
 
 ???+ info "Adding Reconfirmation Sentences"
-    Read more about how reconfirmation works on our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) page.
+    Read more about how reconfirmation works on our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) page.
 
 ### Intent Options Menu
 The Intent Options Menu can be selected by clicking on the three dots next to the Create Intent button. The menu provides a number of options:

@@ -2,7 +2,7 @@
 
 Intents are collections of identified user intents (e.g. what does the user want).
 
-The user input is scored against all example sentences and Cognigy.AI will identify the intent with the highest score as the intent for this input if it is above the configured [thresholds]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/#thresholds).
+The user input is scored against all example sentences and Cognigy.AI will identify the intent with the highest score as the intent for this input if it is above the configured [thresholds]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/#thresholds).
 
 ## Building the NLU Model
 <div class="divider"></div>

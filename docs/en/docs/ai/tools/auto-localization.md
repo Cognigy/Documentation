@@ -159,7 +159,7 @@ As soon as you have configured a translation provider you will get extra configu
 ## Localization of Intents
 
 
-When using machine translation for **Intents** go to the "[Intent configuration]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/)" and configure the "**Translation Settings**" in the same way as for Flow Nodes. 
+When using machine translation for **Intents** go to the "[Intent configuration]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)" and configure the "**Translation Settings**" in the same way as for Flow Nodes. 
 
 
 <figure>

@@ -54,7 +54,7 @@ nav:
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
       - ai/resources/build/connections.md
-      - ai/resources/build/NLUconnectors.md
+      - ai/resources/build/nlu-connectors.md
       - ai/resources/build/functions.md
     - Einsetzen:
       - ai/resources/deploy/endpoints.md
@@ -127,7 +127,7 @@ nav:
       - ai/flow-nodes/code/actions.md
       - ai/flow-nodes/code/modules.md
       - ai/flow-nodes/code/channel-output.md
-      - ai/flow-nodes/code/AI-default-channel-formats.md
+      - ai/flow-nodes/code/ai-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
     - Voice Gateway:
       - ai/flow-nodes/vg/send-message.md
@@ -144,7 +144,7 @@ nav:
   - NLU:
     - ai/nlu/overview.md
     - NLU Überblick:
-      - ai/nlu/nlu-overview/ML-intents.md
+      - ai/nlu/nlu-overview/ml-intents.md
       - ai/nlu/nlu-overview/annotations.md
       - ai/nlu/nlu-overview/intent-analyzer.md
       - ai/nlu/nlu-overview/rule-intents.md
