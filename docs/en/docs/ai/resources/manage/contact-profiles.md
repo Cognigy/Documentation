@@ -23,7 +23,6 @@ Here you can search for contact profiles in the top right search box and sort th
 
 The Profile Schema contains the following default schema values:
 
-The user's access rights will only be available for the assigned locales.
 
 | Property Name      |
 | ----------- | 

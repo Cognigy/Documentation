@@ -24,6 +24,7 @@ Cognigy.AI comes with a selection of default tokens that are associated with bas
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/bc8e21d-Token_Answer_Snippet_6.svg" width="100%" />
+  <figcaption>Token "Answer" used in a Say Node</figcaption>
 </figure>
 
 ## Creating Tokens
@@ -35,6 +36,7 @@ You can create **Tokens** either from flow node text fields showing the **AI** s
 </figure>
 
 Creating a **Token** requires the following information:
+
   * Name - The name that will be shown on the token to platform users
   * Script - The [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) path used to access the data
   * Type - The data location (used for sorting the token in the search window)
