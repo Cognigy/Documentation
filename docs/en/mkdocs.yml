@@ -224,10 +224,10 @@ nav:
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
       - ai/endpoints/webchat/webchat.md
-      - ai/endpoints/webchat/deploy-webchat-endpoint.md
-      - ai/endpoints/webchat/webchat-features.md
-      - ai/endpoints/webchat/triggering-webchat-plugins.md
-      - ai/endpoints/webchat/integrated-demo-page.md
+      # - ai/endpoints/webchat/deploy-webchat-endpoint.md
+      # - ai/endpoints/webchat/webchat-features.md
+      # - ai/endpoints/webchat/triggering-webchat-plugins.md
+      # - ai/endpoints/webchat/integrated-demo-page.md
     - ai/endpoints/cognigy-vg.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md

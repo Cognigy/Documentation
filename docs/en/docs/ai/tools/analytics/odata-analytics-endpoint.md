@@ -18,7 +18,7 @@ Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records.
 
 <div class="divider"></div>
 
-You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile#api-keys)  by connecting to respective OData URL on your server.
+You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile#api-keys/)  by connecting to respective OData URL on your server.
 
 An OData URL is combined of the service root, api version, the collection and api key parameter as follows:
 
@@ -40,11 +40,11 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 ## Version 2.0
 The current version of the OData endpoint is `v2.0`. This endpoint version is available from Cognigy.AI Version 4.2.0 onwards. In this version, the following OData collections are available:
 
-- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#inputs) (`/Inputs`)
-- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#chathistory) (`/ChatHistory`)
-- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#steps) (`/Steps`)
-- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#executedsteps) (`/ExecutedSteps`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#conversations) (`/Conversations`)
+- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#inputs/) (`/Inputs`)
+- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#chathistory/) (`/ChatHistory`)
+- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#steps/) (`/Steps`)
+- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#executedsteps/) (`/ExecutedSteps`)
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#conversations/) (`/Conversations`)
 
 The URL for accessing the V2.0 OData endpoint is as follows:
 `https://<hostname>/v2.0/<collection>?apikey=YOURAPIKEY`
@@ -55,8 +55,8 @@ The URL for accessing the V2.0 OData endpoint is as follows:
 ## Version 1.0
 This is the legacy version of the OData endpoint that excludes step monitoring analytics. This OData endpoint contains the following collections:
 
-- [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#inputs) (`/Records`) - Renamed to Inputs in V2.0 Endpoint
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#chathistory) (`/Conversations`) - Renamed to ChatHistory in V2.0 Endpoint
+- [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#inputs/) (`/Records`) - Renamed to Inputs in V2.0 Endpoint
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#chathistory/) (`/Conversations`) - Renamed to ChatHistory in V2.0 Endpoint
 
 The URL for accessing the V1 OData endpoint is as follows:
 `https://<hostname>/<collection>?apikey=YOURAPIKEY`
@@ -103,13 +103,13 @@ For a full reference please refer to the [extensive collection of resources at O
 
 <div class="divider"></div>
 
-You control and manage the data available in the OData Endpoint via the agent settings menu. See [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics) ) for more details:
+You control and manage the data available in the OData Endpoint via the agent settings menu. See [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/) for more details:
 
 - If you disable *Collect Analytics* no analytics data will be logged or available in OData
 
 - If you enable *Mask Sensitive Analytics* the *inputText* and *inputData* fields will be masked.
 
-Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview) nodes that will disable or mask analytics data available in OData according to your node settings.
+Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) nodes that will disable or mask analytics data available in OData according to your node settings.
 
 ## Cognigy.AI OData Collections
 
@@ -124,7 +124,7 @@ This section details the data types the exist within the OData Collections that 
 
 ## Inputs
 #### Description:
-Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Input record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics).
+Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Input record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
 
 #### Example Query:
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`.
@@ -146,7 +146,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | inputText               | The input text | String   | Hello World!                     |
 | inputData              | The input data object as a string | String   | {"key":"value"}                    |
 | state                  | State of the Flow at input                                                                 | String   | default                      |
-| mode                   | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties) of the input                           | String   | TextOnly                     |
+| mode                   | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties/) of the input                           | String   | TextOnly                     |
 | userType               | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                     |
 | channel                | Channel the input came through                                                             | String   | facebook                     |
 | flowVersion            | Version of the Flow                                                                        | Number   | 1                            |

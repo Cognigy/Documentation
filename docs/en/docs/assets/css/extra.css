@@ -4,6 +4,7 @@
   --md-primary-fg-color--dark: #0d1117;
   --md-accent-fg-color: #0b3694;
   --logo-home-page: invert(0%) sepia(100%) saturate(7500%) hue-rotate(59deg) brightness(89%) contrast(111%);
+  --card-2-home-page: filter: invert(9%) sepia(80%) saturate(5455%) hue-rotate(223deg) brightness(91%) contrast(91%);
   --block-quote-bg-color: #e5f8fb;
 }
 

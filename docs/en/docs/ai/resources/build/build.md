@@ -11,7 +11,7 @@ The **Flow **is an important (and powerful) concept within Cognigy.AI. It provid
 </figure>
 
 ???+ info "Flows"
-    Head over to [**Flows**]({{config.site_url}}ai/resources/build/flows) for more information.
+    Head over to [**Flows**]({{config.site_url}}ai/resources/build/flows/) for more information.
 
 ## Lexicons
 
@@ -25,13 +25,13 @@ The **Flow **is an important (and powerful) concept within Cognigy.AI. It provid
     Head over to [**Lexicons**]({{config.site_url}}ai/resources/build/lexicons) for more information.
 
 ## Connections
-Connections are encrypted credentials that can be used with [**Extensions**]({{config.site_url}}ai/resources/build/connections) . The Connections view can be used to update and delete existing Connections. New Connections are created directly within the Extension Nodes that use them.
+Connections are encrypted credentials that can be used with [**Extensions**]({{config.site_url}}ai/resources/build/connections/) . The Connections view can be used to update and delete existing Connections. New Connections are created directly within the Extension Nodes that use them.
 
 ???+ info "Connections"
-    Head over to [**Connections**]({{config.site_url}}ai/resources/build/connections) for more information.
+    Head over to [**Connections**]({{config.site_url}}ai/resources/build/connections/) for more information.
 
 ## NLU Connectors
 NLU Connectors can be used to connect to third-party NLU engines, like Google Dialogflow and IBM Watson.  
 
 ???+ info "Connections"
-    Head over to [**NLU Connectors**]({{config.site_url}}ai/resources/build/NLUconnectors) for more information.
+    Head over to [**NLU Connectors**]({{config.site_url}}ai/resources/build/NLUconnectors/) for more information.

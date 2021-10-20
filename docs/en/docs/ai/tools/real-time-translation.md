@@ -7,9 +7,9 @@
 
 As of Cognigy.AI 4.10.0 real-time translation has been added to our Conversational AI product.
 
-Real-time translation is a type of translation where not everything has to be pre-translated or pre-localized (see [Localization]({{config.site_url}}ai/resources/manage/localization), even if it is done with machine translation, but where the translation machine translates the conversation as it happens.
+Real-time translation is a type of translation where not everything has to be pre-translated or pre-localized (see [Localization]({{config.site_url}}ai/resources/manage/localization/), even if it is done with machine translation, but where the translation machine translates the conversation as it happens.
 
-Virtual Agents are deployed in Cognigy.AI with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). Webchat, for example, is such an Endpoint and is linked to the currently selected Flow of the Virtual Agent.
+Virtual Agents are deployed in Cognigy.AI with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/). Webchat, for example, is such an Endpoint and is linked to the currently selected Flow of the Virtual Agent.
 Real-time translation works on chats and for all our Endpoint types (for example the "Voice Gateway" Endpoint). The Voice Gateway (VG) can be configured in the settings for real-time translation in the same way as for a Webchat.
 
 - You do not need to have agents that speak all the required languages of your business. You can concentrate on two or three core languages but using Cognigy's real-time translation capabilities you can serve customers in hundred languages.
@@ -30,7 +30,7 @@ We can consider two use cases regarding the real-time translation:
 
 <div class="divider"></div>
 
-In Cognigy.AI Virtual Agents are deployed with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints), for example, the [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/). 
+In Cognigy.AI Virtual Agents are deployed with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/), for example, the [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/). 
 It may be necessary for customers to make this chat available in another language.
 
 In that case, we have to activate the "**Real Time Translation Settings**".
