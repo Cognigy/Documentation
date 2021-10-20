@@ -58,6 +58,7 @@ With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/eacbff5-Agent_Settings_4.svg" width="100%" />
+  <figcaption>Agent "Translation Settings"</figcaption>
 </figure>
 
 #### Options

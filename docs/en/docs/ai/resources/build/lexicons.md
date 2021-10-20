@@ -18,7 +18,7 @@ Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **
   <img class="image-center" src="{{config.site_url}}ai/resources/images/973f877-lexicon-keyphrase.jpg" width="100%" />
 </figure>
 
-In the example above, the **Keyphrase** is* Apple iPhone*. The **Slots** that are filled when this Keyphrase is detected, are *device *and *mobile*. Its synomym is *Cool phone*. 
+In the example above, the **Keyphrase** is *Apple iPhone*. The **Slots** that are filled when this Keyphrase is detected, are *device* and *mobile*. Its synomym is *Cool phone*. 
 
 ### Adding Keyphrases
 To add a new Keyphrase, go to the ``Enter new keyphrase`` input field, type the name of the Keyphrase and hit enter.

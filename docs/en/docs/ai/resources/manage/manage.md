@@ -24,7 +24,7 @@ The **Localization** feature provides tools for enabling multi-lingual agents. H
 
 ## Extensions
 
-The **Extensions ** feature provides creators with the ability to add their own **Flow Nodes** to the Cognigy.AI platform to extend the capability of agents. Extensions perform specific customized tasks such as interacting with back-end systems or triggering processed that are unique to an organization.
+The **Extensions** feature provides creators with the ability to add their own **Flow Nodes** to the Cognigy.AI platform to extend the capability of agents. Extensions perform specific customized tasks such as interacting with back-end systems or triggering processed that are unique to an organization.
 
 ???+ info "Extensions"
     Head over to [Extensions]({{config.site_url}}ai/resources/manage/extensions/)  for more information.

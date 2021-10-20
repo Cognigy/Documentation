@@ -62,3 +62,4 @@ The locale restrictions feature allows a user's access to be granted to a single
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/cd61670-localeRestrictions.PNG" width="100%" />
 </figure>
+The user's access rights will only be available for the assigned locales.

@@ -4,6 +4,7 @@ Extensions enable anyone to build JavaScript modules and to expose them as Flow 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/2f43014-extensions.png" width="100%" />
+  <figcaption>Example Extensions Page</figcaption>
 </figure>
 
 <blockquote class="callout callout_info" theme="📘">
@@ -155,6 +156,7 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/391d3bc-Marketplace_5.svg" width="100%" />
+  <figcaption>Extension Marketplace</figcaption>
 </figure>
 
 - You can install, uninstall, upload, drag, and drop Extensions from the Marketplace.
@@ -163,7 +165,7 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
      **Icon (avatar), name, and version**
      **Basic Information**
      **Connections**
-     **Nodes **
+     **Nodes**
 
 - You can copy the URL and open it in another tab, also when reloading the page.
 
@@ -171,6 +173,7 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/917a2b9-Marketplace_6.svg" width="100%" />
+  <figcaption>Marketplace sidebar panel</figcaption>
 </figure>
 
 ## Dynamic Fields

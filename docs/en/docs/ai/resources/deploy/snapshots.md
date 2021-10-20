@@ -69,10 +69,11 @@ You can manage your Snapshots by going to **Deploy** --> **Snapshots**:
 
 ### Restore a Snapshot
 If you have a Snapshot as an offline file, please upload the Snapshot file first as described above.
-  * Select "Restore" from the submenu (indicated by three vertical dots) for the individual snapshot that is to be restored.
-  * A warning message will appear and ask for the name of the snapshot to be entered. Enter the name of the snapshot and click "confirm".
-  * A restoration task will be started and take a few moments to complete. Resources (flows, lexicons, etc) within the agent cannot be accessed while the restore is taking place. An error message will be received if this is attempted.
-  * When the snapshot restore is complete, a success notification will appear and the resources will be available to edit within agent.
+
+  - Select "Restore" from the submenu (indicated by three vertical dots) for the individual snapshot that is to be restored.
+  - A warning message will appear and ask for the name of the snapshot to be entered. Enter the name of the snapshot and click "confirm".
+  - A restoration task will be started and take a few moments to complete. Resources (flows, lexicons, etc) within the agent cannot be accessed while the restore is taking place. An error message will be received if this is attempted.
+  - When the snapshot restore is complete, a success notification will appear and the resources will be available to edit within agent.
 
 ???+ danger "Restoring a Snapshot Overwrites all existing agent resources"
     Care should be exercised when restoring a snapshot to ensure all current agent resources are either backed up within another snapshot, or no longer required. A snapshot restore process will overwrite all current resources (listed at the top of this page) within the agent.
