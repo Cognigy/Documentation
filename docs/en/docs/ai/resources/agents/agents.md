@@ -24,6 +24,7 @@ The Agent Dashboard contains serves as an overview page for you Virtual Agent. I
 **Analytics Widget**
 
 As of release v4.10 Cognigy provides a completely new designed Analytics solution **"[Insights]({{config.site_url}}insights/cognigy-insights.md)"**.
+
 - When the "Insights" application is enabled in your product you will be led to the Insights Overview dashboard when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
 - When the Insights application is not enabled in your product you will be led to the Analytics page as before when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
 
@@ -40,15 +41,16 @@ More information on Cognigy Analytics you can find here: [Agent Analytics]({{con
  <div class="right-image">
  <img src="{{config.site_url}}ai/resources/images/a6094e4-agent-header.jpg" width="70%" style="margin-bottom: 5px">
  </div>
-
+ 
 Agents contain a **Top Toolbar** that is present in every view and provides quick access to Agent-specific resources like Search, Tasks and the Interaction Panel. The **Top Toolbar**, however, also contains items - like the **User Menu** and **Interaction Panel** -  that are always present.
 
 ## Help Center Search
 
-The Help Center Search feature can be used in order to find a potential answer in the list of articles provided under [https://support.cognigy.com/](https://support.cognigy.com/):
+The **Help Center** Search feature can be used in order to find a potential answer in the list of articles provided under [https://support.cognigy.com/](https://support.cognigy.com/):
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/5586f34-helpCenterArticleSearchResult.PNG" width="100%" />
+  <figcaption>List of available Help Center articles</figcaption>
 </figure>
 
 ???+ info "Help Center"
@@ -97,6 +99,7 @@ The User Menu provides access to a set of views.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/a0487aa-usermenu-screenshot.jpg" width="100%" />
+  <figcaption>User menu</figcaption>
 </figure>
 
 
