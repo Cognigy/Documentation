@@ -85,4 +85,4 @@ Now your inbox is ready to be used. You can now fill the _Account ID_ field in t
 </figure>
 
 Now a handover flow needs to be connected to the inbox, head over to 
-[Creating a Cognigy.AI Handover Flow](/live-agent/getting-started/creating-a-cognigy-handover-flow).
+[Creating a Cognigy.AI Handover Flow]({{config.site_url}}live-agent/getting-started/creating-a-cognigy-handover-flow/).
