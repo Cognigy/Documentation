@@ -8,7 +8,7 @@ Reject intents give you the capability to intentionally prevent the NLU from rec
 
 ## Concept
 <div class="divider"></div>
-Reject intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) via the **NLU** tab in the flow editor. Select **Create 'Reject Intent'** from the extended menu available next to the create intent butting. Then simply add example sentences to match the user input that should be ignored from the NLU.
+Reject intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. Select **Create 'Reject Intent'** from the extended menu available next to the create intent butting. Then simply add example sentences to match the user input that should be ignored from the NLU.
 
 Reject Intents require the following:
 

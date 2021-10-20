@@ -64,7 +64,7 @@ It is common for messages to be sent to Cognigy.AI with attached data. It is pos
 The Interaction Panel can be configured with a number of settings across different sections.
 
 #### Chat Input
-This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/NLUconnectors/) page. 
+This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/7f829ba-interaction-settings-nlu.jpg" width="100%" />

@@ -29,7 +29,7 @@ This collection contains one record per user input, one record per virtual agent
 
 ## Steps
 
-This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question]({{config.site_url}}ai/flow-nodes/message/question/) Nodes and [Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) are automatically created with an attached analytics step but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
+This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question]({{config.site_url}}ai/flow-nodes/message/question/) Nodes and [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) are automatically created with an attached analytics step but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
 
 
 ## Executed Steps
@@ -96,7 +96,7 @@ Analytics Steps are created in Cognigy.AI to track the conversation paths that u
 <br>
 [![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)](https://shields.io/)
 
-A step entity is either a [Flow Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) or an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/). Each type of entity can be assigned as a step via the settings menu for the respective entity. 
+A step entity is either a [Flow Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) or an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/). Each type of entity can be assigned as a step via the settings menu for the respective entity. 
 
 ### Flow Node Steps
 A flow node is created as an analytics step by entering a text label in the "Analytics Step" field within the "settings" dropdown menu of the node settings:

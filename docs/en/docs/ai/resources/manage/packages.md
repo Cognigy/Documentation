@@ -18,7 +18,7 @@ Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connec
 
     * [Flows]({{config.site_url}}ai/resources/build/flows/) 
     * [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)
-    * [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors/) 
+    * [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) 
     * [Functions]({{config.site_url}}ai/resources/build/functions/) 
     * [Endpoints]({{config.site_url}}ai/endpoints/overview/)
     * [Playbooks]({{config.site_url}}ai/resources/test/playbooks/)

@@ -34,4 +34,4 @@ Connections are encrypted credentials that can be used with [**Extensions**]({{c
 NLU Connectors can be used to connect to third-party NLU engines, like Google Dialogflow and IBM Watson.  
 
 ???+ info "Connections"
-    Head over to [**NLU Connectors**]({{config.site_url}}ai/resources/build/NLUconnectors) for more information.
+    Head over to [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors) for more information.

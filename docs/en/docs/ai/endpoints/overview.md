@@ -26,7 +26,7 @@ Selected Endpoints also have the option to customize the NLU that provides the I
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/675c2d2-nluConnector.PNG" width="100%" />
 </figure>
 
-The [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors/) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU]({{config.site_url}}ai/nlu/external-nlu/no-nlu/) option can be selected to completely disable the intent and slot mapping for an endpoint. 
+The [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU]({{config.site_url}}ai/nlu/external-nlu/no-nlu/) option can be selected to completely disable the intent and slot mapping for an endpoint. 
 
 Additionally, there are **Endpoint** specific features and configuration options available.
 

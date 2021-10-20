@@ -11,7 +11,7 @@ Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors/)
+- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 
 ## Connect your Application
 
@@ -69,4 +69,4 @@ The response contains the output text, output data and the outputStack, which is
 ```
 
 ???+ info "AI Default Channel Formats"
-    You can find out more about the format for the default channels [**here**]({{config.site_url}}ai/flow-nodes/code/AI-default-channel-formats/)
+    You can find out more about the format for the default channels [**here**]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/)
