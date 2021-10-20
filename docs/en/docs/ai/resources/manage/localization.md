@@ -33,7 +33,7 @@ When switching Localization, the Flow will change its appearance. **"Greyed out"
 </figure>
 
 ???+ success "Switch Locale during a conversation"
-    It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/ node.
+    It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/) node.
 
 ### Adding a Locale to a Node
 

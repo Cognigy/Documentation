@@ -32,7 +32,7 @@ As of release v4.10 Cognigy provides a completely new designed Analytics solutio
   <figcaption>Agent dashboard - Analytics widget</figcaption>
 </figure>
 
-More information on Cognigy Analytics you can find here: [Agent Analytics]({{config.site_url}}ai/tools/analytics/analytics.md).
+More information on Cognigy Analytics you can find here: [Agent Analytics]({{config.site_url}}ai/tools/analytics/analytics/).
 
 ## Top Toolbar
 <div class="divider"></div>
@@ -63,7 +63,7 @@ The Help Center Search feature can be used in order to find a potential answer i
 Journeys are on-screen tutorials that are part of the [Help Center](https://support.cognigy.com/hc/en-us) and provide step-by-step instructions, directly within the Cognigy.AI user interface. 
 
 ???+ info "Journeys"
-    Head over to [**Journeys**]({{config.site_url}}ai/resources/agents/journeys.md) for more information.
+    Head over to [**Journeys**]({{config.site_url}}ai/resources/agents/journeys/) for more information.
 
 ## Search
 <div class="right-image">
@@ -101,11 +101,11 @@ The User Menu provides access to a set of views.
 
 
 ???+ info "User Menu"
-    Head over to [**User Menu**]({{config.site_url}}ai/tools/user-menu/user-menu.md) for more information.
+    Head over to [**User Menu**]({{config.site_url}}ai/tools/user-menu/user-menu/) for more information.
 
 ## Interaction Panel
 
 The Interaction Panel can be used to interact with your virtual agent at any time. It is a useful tool that gives an impression of channel-specific output and can display more detailed debugging information. 
 
 ???+ info "Interaction Panel"
-    Head over to [**Interaction Panel**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel.md) for more information.
+    Head over to [**Interaction Panel**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/) for more information.

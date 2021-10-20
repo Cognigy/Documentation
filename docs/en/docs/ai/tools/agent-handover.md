@@ -1,6 +1,6 @@
 # Agent Handover
 
-CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input) and [Context]({{config.site_url}}ai/tools/interaction-panel/context) objects within text and JSON.
+CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) and [Context]({{config.site_url}}ai/tools/interaction-panel/context/) objects within text and JSON.
 
 Using CognigyScript, you can execute powerful scripts to create the replies you want to return to the client.
 

@@ -7,7 +7,7 @@
 ## Description
 <div class="divider"></div>
 
-Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url}}ai/resources/smtp) to a recipient. 
+Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url}}ai/resources/smtp/) to a recipient. 
 <!-- need to change the link up [SMTP Connection] -->
 ## Properties
 <div class="divider"></div>

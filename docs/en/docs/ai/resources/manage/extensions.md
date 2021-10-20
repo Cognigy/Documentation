@@ -175,4 +175,4 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
 
 ## Dynamic Fields
 
-Details about using dynamic fields in Flow Nodes can be found here: [Dynamic Node Fields]({{config.site_url}}ai/flow-nodes/dynamic-node-fields).
+Details about using dynamic fields in Flow Nodes can be found here: [Dynamic Node Fields]({{config.site_url}}ai/flow-nodes/dynamic-node-fields/).

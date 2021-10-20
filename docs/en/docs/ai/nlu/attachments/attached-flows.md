@@ -18,7 +18,7 @@ As described above, the Intents of the Attached Flow are added to the list of In
 ???+ warning "Beware of Overlapping Intents"
     Cognigy small-talk Flows, and any other Attached Flow, may contain Overlapping Intents. You must ensure Intents across all attached Flows are distinct.
 
-The order in which the Intents are scored is determined by the `Map global Intents first` setting in [Agent Settings]({{config.site_url}}ai/resources/manage/settings) .
+The order in which the Intents are scored is determined by the `Map global Intents first` setting in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/) .
 
 If the intents scored first get a score of 1.0 (highest match), then the other intents are not evaluated.
 

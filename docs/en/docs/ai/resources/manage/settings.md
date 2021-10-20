@@ -17,11 +17,11 @@ Within your agent, from the left toolbar click **Manage** --> **Settings** to ac
 
 ### Additional confirmation words
 
-Add your own customized responses to confirm an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) and [Question Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview#question).
+Add your own customized responses to confirm an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) and [Question Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview#question/).
 
 ### Additional negative confirmation words 
 
-Add your own customized responses to negate an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) and [Question Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview#question).
+Add your own customized responses to negate an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) and [Question Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview#question/).
 
 ### Continue **main** Flow after attached Flow
 
