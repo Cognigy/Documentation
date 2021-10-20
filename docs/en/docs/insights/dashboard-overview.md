@@ -63,7 +63,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |--|--|
 |Top Slots|	Top-rated number of slots displayed in a bar chart.|
 |Understood/Misunderstood Messages|	Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart.|
-|Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts)
+|Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts/)
 |Unique Contacts|	Time-related number of unique contacts displayed in a line chart.|
 
 ##Download Report

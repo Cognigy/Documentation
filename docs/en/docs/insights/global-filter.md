@@ -48,7 +48,7 @@ Available preset time periods are:
 
 Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many different channels by configuring Endpoints.
 Endpoints examples are Webchat / Voice Gateway, Microsoft Teams, Google Actions,…
-You can find more information here: [Endpoints](https://docs.cognigy.com/docs/endpoints)
+You can find more information here: [Endpoints]({{config.site_url}}ai/endpoints/overview/)
 
 You can select one or more Endpoint(s) to be analyzed. 
 
@@ -107,7 +107,7 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
 
 
 If you intend to update certain analytics fields on Insights dashboards for an ongoing session you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
-More information you can find here: [Using the API]{{config.site_url}}(ai/developer-guides/using-api).
+More information you can find here: [Using the API]({{config.site_url}}ai/developer-guides/using-api/).
 
 Using the "analytics" API you need to specify **userId**, **sessionId** and **inputId** in the request.
 
