@@ -4,6 +4,7 @@ The **Intent Trainer** enables you to analyze the collected user inputs (records
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/31f53b3-Intent_Trainer_filter_options_800px.svg" width="100%" />
+  <figcaption>Intent Trainer with filter options</figcaption>
 </figure>
 
 ## Export/Import
@@ -11,6 +12,7 @@ You can export and import Intent Trainer records by selecting the option after c
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/936a209-Export_Intent_Trainer_records.svg" width="100%" />
+  <figcaption>Export Intent Trainer records</figcaption>
 </figure>
 
 <br>
@@ -37,6 +39,7 @@ The **"Filter Preset"** drop-down menu allows you to preset filter options with 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/a68ad17-Filter_Preset.svg" width="100%" />
+  <figcaption>Available filter presets</figcaption>
 </figure>
 
 ## Add to Intent
