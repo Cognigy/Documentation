@@ -4,8 +4,7 @@ From the Live Agent Dashboard screen, do click on **Inboxes** in the sidebar.
 
 >You can also add new inboxes from the welcome message or clicking on the plus button next to Inboxes in the sidebar
 
-Choose API as the inbox channel.
-
+Live Agent will show you a screen to configure your API connection.
 <figure>
     <img src="{{config.site_url}}assets/img/LA-add-inbox-screen.png" width="100%" alt="Live Agent Add Inbox Screen">
   <figcaption>Live Agent Add Inbox Screen</figcaption>
