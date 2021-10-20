@@ -24,7 +24,7 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 | **Voice Gateway**   | Voice Gateway lets you connect to SIP interfaces, which means that your Virtual Agent can be connected to the phone network. |
 | **Intercom**    | Intercome is a live chat suite. |
 | **Line**    | Line is a popular messaging and voice call app.|
-|**Azure Bot Services**    | The [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services) Endpoint allows you to connect your Virtual Agent to all Azure Bot Service channels. |
+|**Azure Bot Services**    | The [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/) Endpoint allows you to connect your Virtual Agent to all Azure Bot Service channels. |
 | **Microsoft Teams**    | Microsoft Teams is a popular communication and collaboration platform.|
 | **REST**   | The REST Endpoint lets you connect to a Cognigy Flow directly through a REST interface.|
 | **RingCentral Engage**    | RingCentral Engage is a customer engagement platform that features built-in support for many channels and live-chat capabilities.|

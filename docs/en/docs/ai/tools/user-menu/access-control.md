@@ -11,14 +11,14 @@ Find the **Access Control** panel by:
 
 <div class="divider"></div>
 
-The **Users overview** lists all members of a particular **Organization**. Individual **Users**can subsequently be assigned to **specific Agents**, using the [**Members**]({{config.site_url}}ai/resources/manage/members) interface.
+The **Users overview** lists all members of a particular **Organization**. Individual **Users**can subsequently be assigned to **specific Agents**, using the [**Members**]({{config.site_url}}ai/resources/manage/members/) interface.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.jpg" width="100%" />
 </figure>
 
 ???+ info "Tip: Global Users and Local Users (Members)"
-    Administrators can create **Global Users** on an organizational-level, that can then be assigned to specific Agents. These **Local Users** can have more granular roles within specific Agent projects that are configured using the [Members]({{config.site_url}}ai/resources/manage/members) panel within each Agent.
+    Administrators can create **Global Users** on an organizational-level, that can then be assigned to specific Agents. These **Local Users** can have more granular roles within specific Agent projects that are configured using the [Members]({{config.site_url}}ai/resources/manage/members/) panel within each Agent.
 
 ## Create new Users
 Administrators can use the *Create new User* button to add a User to the Organization. The following fields have to be filled out: 
@@ -43,7 +43,7 @@ Assign agents to a user by clicking the *+* button under *Assigned Projects* and
 
 ### Global Roles
 
-*Roles* provide any given user profile with the privilege to execute create, read, update or delete (CRUD) actions and can be granted in a customized manner. **Global Roles** are assigned to a user to define the base access control list (ACL) displayed in the [Members Panel]({{config.site_url}}ai/resources/manage/members) for each Agent.
+*Roles* provide any given user profile with the privilege to execute create, read, update or delete (CRUD) actions and can be granted in a customized manner. **Global Roles** are assigned to a user to define the base access control list (ACL) displayed in the [Members Panel]({{config.site_url}}ai/resources/manage/members/) for each Agent.
 
 The following **Global Roles** are available:
 
@@ -59,11 +59,11 @@ The following **Global Roles** are available:
 |Livechat|	Can access the built-in Cognigy live chat feature|
 
 ???+ info "Control of Global Access Rights"
-    The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members) to boost a user's rights to author selected elements of a specific agent.
+    The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.
 
-More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members) panel of each agent.
+More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message/) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members/) panel of each agent.
 
 ## More information
 
-- [Members]({{config.site_url}}ai/tools/user-menu/usage-statistics)
-- [Usage Statistics]({{config.site_url}}ai/resources/manage/members)
+- [Members]({{config.site_url}}ai/tools/user-menu/usage-statistics/)
+- [Usage Statistics]({{config.site_url}}ai/resources/manage/members/)

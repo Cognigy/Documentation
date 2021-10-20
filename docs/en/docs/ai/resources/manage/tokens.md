@@ -8,13 +8,13 @@ The **Tokens** feature allows **Cognigyscript** expressions to be packaged into 
 
 ## Using Tokens
 
-The example below shows two responses that access the user's last message. Both sentences produce the same output. The first message uses a default system token whereas the second sentence uses the coded [CognigyScript]({{config.site_url}}ai/tools/cognigy-script) format.
+The example below shows two responses that access the user's last message. Both sentences produce the same output. The first message uses a default system token whereas the second sentence uses the coded [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) format.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/deb1830-TokenExample.PNG" width="100%" />
 </figure>
 
-Tokens can be added to a dialog message from any text field displaying the **AI** symbol. Simply click the **AI** symbol to expand the tokens menu which displays a searchable list of available tokens. The tokens are sorted into categories based on the location of the data which they access i.e. [Input]({{config.site_url}}ai/tools/interaction-panel/input), [Context]({{config.site_url}}ai/tools/interaction-panel/context), [Profile]({{config.site_url}}ai/flow-nodes/profile/profile/) or Custom.
+Tokens can be added to a dialog message from any text field displaying the **AI** symbol. Simply click the **AI** symbol to expand the tokens menu which displays a searchable list of available tokens. The tokens are sorted into categories based on the location of the data which they access i.e. [Input]({{config.site_url}}ai/tools/interaction-panel/input/), [Context]({{config.site_url}}ai/tools/interaction-panel/context/), [Profile]({{config.site_url}}ai/flow-nodes/profile/profile/) or Custom.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/f00f6f8-createTokenNode.PNG" width="100%" />
@@ -36,7 +36,7 @@ You can create **Tokens** either from flow node text fields showing the **AI** s
 
 Creating a **Token** requires the following information:
   * Name - The name that will be shown on the token to platform users
-  * Script - The [CognigyScript]({{config.site_url}}ai/tools/cognigy-script) path used to access the data
+  * Script - The [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) path used to access the data
   * Type - The data location (used for sorting the token in the search window)
 
 

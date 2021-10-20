@@ -224,10 +224,10 @@ nav:
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
       - ai/endpoints/webchat/webchat.md
-      - ai/endpoints/webchat/deploy-webchat-endpoint.md
-      - ai/endpoints/webchat/webchat-features.md
-      - ai/endpoints/webchat/triggering-webchat-plugins.md
-      - ai/endpoints/webchat/integrated-demo-page.md
+      # - ai/endpoints/webchat/deploy-webchat-endpoint.md
+      # - ai/endpoints/webchat/webchat-features.md
+      # - ai/endpoints/webchat/triggering-webchat-plugins.md
+      # - ai/endpoints/webchat/integrated-demo-page.md
     - ai/endpoints/cognigy-vg.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
@@ -274,8 +274,7 @@ nav:
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
 - Live Agent:
-  - Overview:
-    - live-agent/overview.md
+  - live-agent/overview.md
   - Release Notes:
     - live-agent/release-notes/releases.md
   - Getting started:
@@ -327,6 +326,10 @@ nav:
     - live-agent/contacts.md
   - Reports:
     - live-agent/reports.md
+  - Conversation Workflow:
+    - live-agent/conversation-workflow.md
+  - Conversation Routing:
+    - live-agent/conversation-routing.md
   - Profile Settings:
     - live-agent/profile-settings.md
   # - Super Admin:
