@@ -30,7 +30,7 @@ Flows are executed from top to bottom and use a logic-based system to determine 
 ## Entry Points
 <div class="divider"></div>
 
-Flow execution typically starts at the top with the green **Start Node** . This is where the [NLU]({{config.site_url}}ai/nlu/overview/) takes place and the NLU results are susequently published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
+Flow execution typically starts at the top with the green **Start Node** . This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are susequently published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/620d8e2-nodes-start.jpg" width="100%" />
@@ -42,7 +42,7 @@ The **Entry Point** can change depending on the state of the conversation. It is
   <img class="image-center" src="{{config.site_url}}ai/resources/images/9c4cb06-nodes-question.jpg" width="100%" />
 </figure>
 
-In some cases there are **multiple Entry Points.** This can be the case if an Optional Question was triggered or if a given **Intent Entrypoint **has been set explicitly.
+In some cases there are **multiple Entry Points.** This can be the case if an Optional Question was triggered or if a given **Intent Entrypoint** has been set explicitly.
 
 ## NLU 
 <div class="divider"></div>

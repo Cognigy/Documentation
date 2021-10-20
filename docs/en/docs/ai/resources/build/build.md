@@ -15,7 +15,7 @@ The **Flow** is an important (and powerful) concept within Cognigy.AI. It provid
 
 ## Lexicons
 
-**Lexicons **are collections of **domain-specific Keyphrases** (also known as **Entities**) that can be attached to a **Flow**. A **Lexicon **can be seen as a dictionary, that allows the **Virtual Agent** to "understand" specific words, like car brands, product groups or zipcodes.
+**Lexicons** are collections of **domain-specific Keyphrases** (also known as **Entities**) that can be attached to a **Flow**. A **Lexicon** can be seen as a dictionary, that allows the **Virtual Agent** to "understand" specific words, like car brands, product groups or zipcodes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/62602a8-lexicon-small.jpg" width="100%" />
