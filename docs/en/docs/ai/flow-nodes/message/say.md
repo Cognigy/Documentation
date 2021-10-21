@@ -215,6 +215,7 @@ In addition to regular text output, Alexa supports SSML which enables the admin 
 Defines an optional additional Card that is available to the user through a connected Alexa app. They can be used to provide additional information that is not perceptible without a screen.
 
 The following Card Templates are available:
+
 - Text
 - Text & Image
 - Link Account
@@ -226,6 +227,7 @@ The following Card Templates are available:
 Defines content that will be shown on Amazon Echo Show devices.
 
 The following Display Templates are available:
+
 * Full-width Text
 * Text & Image right
 * Text & Image left
@@ -248,6 +250,7 @@ For further details see the [Amazon Alexa Documentation](https://developer.amazo
 Defines Templates that can be displayed in a special way in the Facebook Messenger Channel.
 
 The following Facebook Messenger Templates are available:
+
 - Text & Quick Replies
 - Buttons
 - Gallery
@@ -298,6 +301,7 @@ With our **Google Actions SSML Editor** you're able to build your Google Asissta
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f0aa08b-ssml.jpg" width="100%" />
+  <figcaption>SSML Markup Templates</figcaption>
 </figure>
 
 ???+ warning "Multiple Voice Outputs"
