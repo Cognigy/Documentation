@@ -40,8 +40,7 @@ Any time adjustments are made to the model data, the NLU model must be rebuilt t
 
 ### Quick Build
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 When clicking the arrow on the **Build Model** button, a **Quick Build** option can be selected. This option will build a machine learning model for your intents which doesn't contain specifications for [States]({{config.site_url}}ai/tools/interaction-panel/state/) and Intent Conditions and is thus significantly faster in building your model.
 

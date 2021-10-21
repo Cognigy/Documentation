@@ -44,8 +44,7 @@ This value is the **Microsoft App Password** of your Bot, also referred to as th
 
 ### Microsoft Teams
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 As of release v4.9 the display changes for clicked postback buttons in a Microsoft Teams chat. 
 

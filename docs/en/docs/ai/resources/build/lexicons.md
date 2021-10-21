@@ -66,6 +66,36 @@ To upload a Lexicon click on the "Choose CSV File" button. The .csv file should 
 
 #### Example
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/adc9dd8-lexicon-upload-download.jpg" width="100%" />
-</figure>
+**CSV Format  Example**
+
+```CSV
+Keyphrase1,"tag","synonym1","{""key1"":""value""}"
+Keyphrase2,"tag,tag2","synonym2,synonym2_2","{""key2"":""value""}"
+Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""}"
+```
+
+???+ warning "UTF-8 Encoding"
+    In order to avoid any issues with special characters, make sure your CSV files are UTF-8 encoded.
+
+
+### Built-in Slots
+
+<div class="divider"></div>
+
+Cognigy.AI features built-in slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built in slot types are listed below:
+
+|Slot type|
+|---|
+|Date|
+|Number|
+|Duration|
+|Temperature|
+|Age|
+|Email|
+|Percentage|
+
+???+ info "Built in Slot Details"
+    Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
+
+
+

@@ -465,8 +465,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option „Text with Buttons“, „Gallery“ or „List“.
 

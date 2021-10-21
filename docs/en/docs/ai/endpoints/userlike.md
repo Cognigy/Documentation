@@ -23,8 +23,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 ## Message types in Userlike unified messaging channels
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 
 <div class="divider"></div>

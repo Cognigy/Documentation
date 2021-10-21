@@ -59,3 +59,15 @@ Certain settings can be configured per Flow. For now, this section contains the 
 
 ???+ info "Default Context"
     Head over to [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information.
+
+
+### Switching to different Flows
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+
+<div class="divider"></div>
+
+With Cognigy.AI 4.10.0 switching between Flows with different settings and different Intents has ben improved as follows:
+
+- When you are in the **NLU tab** of Flow A and you switch to Flow B you will still be in the NLU tab.
+- When you are in the **Settings tab** of Flow A and you switch to Flow B you will still be in the Settings tab.

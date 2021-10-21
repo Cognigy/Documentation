@@ -93,8 +93,7 @@ Analytics Steps are created in Cognigy.AI to track the conversation paths that u
 
 ## Creating a Step
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
 A step entity is either a [Flow Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) or an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/). Each type of entity can be assigned as a step via the settings menu for the respective entity. 
 

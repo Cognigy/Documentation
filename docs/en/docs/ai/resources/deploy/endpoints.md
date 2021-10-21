@@ -36,3 +36,64 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 | **Twilio SMS**   | Twilio is a popular cloud communications platform. The Twilio SMS Endpoint lets you connect Flows to Twilio Programmable SMS.|
 | **Userlike**  | Userlike is a popular live-chat platform |
 | **Webhook**   | The Webhook Endpoint lets you expose Cognigy Flows via Webhook.|
+
+???+ success "Endpoint Setup"
+    Some Endpoints act as **channel aggregators**, in the sense that they allow you to connect to the channels that they provide. **Examples are:** [**Sunshine Conversations**](https://smooch.io/channels/), [**DialogFlow**](https://cloud.google.com/dialogflow/es/docs/integrations), [**Azure Bot Service**](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0) and [**RingCentral Engage**](https://www.ringcentral.com/digital-customer-engagement.html#ring-cc-off).
+
+
+### Endpoint Configuration
+
+<div class="divider"></div>
+
+#### Snapshot
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/3c33561-endpoints-snapshot.jpg" width="100%" />
+</figure>
+
+Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
+
+#### Flow
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+
+Endpoints also need an entry [**Flow**]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Please note that it is possible to switch Flows during a conversation. 
+As of Cognigy.AI 4.9.0, you can use the "**jump to Flow**" button next to the Flow selection field on the right-hand side.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/6f3084d-Endpoint_Webchat_jump_to_Flow_button_5.svg" width="100%" />
+</figure>
+
+Clicking on the link "Manual Input" below the Flow drop-down field displays the Flow ID of the currently selected Flow. Clicking the "Select from Dropdown" link will take you back to the drop-down selection list of Flows.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/99b555f-Flow_select_from_Dropdown.svg" width="100%" />
+</figure>
+
+#### Endpoint URL
+The Endpoint URL states the **technical interface** to the specific Endpoint. For most channels, it needs to be copied / configured in the channel's settings so that the channel knows how to contact Cognigy.AI. 
+
+#### General Settings > Enabled
+This switch allows you to quickly enable or **disable the Endpoint**.
+
+#### Natural Language Understanding
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/af0d4ec-endpoints-nlu.jpg" width="100%" />
+</figure>
+
+This drop-down allows you to select a different **NLU engine** for this particular Endpoint. Only NLUs that are configured under [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) are shown in this list.
+
+#### Data Protection & Analytics (*previously called Data Management*)
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/0c950c4-Data_Protection__Analytics.PNG" width="100%" />
+</figure>
+
+The Data Protection & Analytics section lets you configure which analytics (if any) are collected. 
+
+**Chatbase**
+Cognigy.AI can be connect directly to Google's Chatbase analytics platform. When enabled, an API key needs to be entered. All relevant data that enters the Endpoint, is forwarded to Chatbase.
+
+**Dashbot**
+The Endpoint can also be setup to forward all relevant analytics to Dashbot.
