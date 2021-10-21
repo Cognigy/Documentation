@@ -174,6 +174,24 @@ Payloads can be text, JSON, XML, Formdata (see below) or any other textual data.
 ???+ success "application/x-www-form-urlencoded"
     You can send URL Encoded data by setting no specific header and then sending a URLEncoded non-JSON payload such as *"To=%2B49555262626&Url=https%3A%2F%2Fhandler.twilio.com%2Ftwiml%2FEHf9b7af093c31b5baa1414be891"*
 
+With Cognigy.AI 4.10.0 **Form-Data** as "Payload Type" has been added to the HTTP Node descriptor.
+
+How to use it:
+
+• Insert an HTTP Request Node in your Flow.
+
+• The methods POST, PUT, PATCH section "payload" provide an additional payload-type in the dropdown: "Form-Data".
+
+• When you select Form-Data, you are able to save key-value pairs as JSON payload.
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/images/HTTP request Node.png" width="80%" />
+  <figcaption>HTTP Request Node editor</figcaption>
+</figure>
+???+ info "Note"
+    The key-value pairs must be of type text. Data is not supported.
+
+When using the Interaction Panel you can inspect the response in the "Interaction Panel" INFO tab.
+
 ## DELETE Requests
 <div class="divider"></div>
 The DELETE request configuration prompt exposes the **General Configuration** fields (see above).
