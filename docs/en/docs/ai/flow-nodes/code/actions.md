@@ -126,7 +126,7 @@ Resets the context.
 none
 
 #### Returns
-Promise object
+Promise
 
 ### actions.removeFromContext || api.removeFromContext
 ---

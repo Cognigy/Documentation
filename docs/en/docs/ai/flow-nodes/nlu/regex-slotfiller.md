@@ -6,7 +6,7 @@
 
 ## Description
 <div class="divider"></div>
-Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags see [**Lexicons & Slots**]({{config.site_url}}ai/flow-nodes/nlu/add-lexicon-keyphrase/%7Bconfig.site_url%7D%7Dai/resources/build/lexicons/).
+Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags see [**Lexicons & Slots**]({{config.site_url}}ai/resources/build/lexicons/).
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |

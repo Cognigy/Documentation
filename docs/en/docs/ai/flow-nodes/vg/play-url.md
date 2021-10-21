@@ -18,4 +18,4 @@ The Play URL Node lets you retrieve a WAV file from a URL location and play it b
 
 
 ???+ info "This Node supports Activity Parameters"
-    To learn more about activity parameters, visit our Help Center at: https://support.cognigy.com/hc/en-us/articles/360017413959
+    To learn more about activity parameters, visit our Help Center at: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)
