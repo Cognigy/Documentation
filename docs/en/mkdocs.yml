@@ -299,17 +299,17 @@ nav:
       - Installation using Helm:
         - live-agent/installation/deployment/installation-using-helm.md
       - Helm Values:
-          - live-agent/installation/helm-values/index.md
-          - Database:
-            - live-agent/installation/helm-values/database.md
-          - Redis:
-            - live-agent/installation/helm-values/redis.md
-          - Storage:
-            - live-agent/installation/helm-values/storage.md
-          - SMTP:
-            - live-agent/installation/helm-values/smtp.md
-          - Email Templates:
-            - live-agent/installation/helm-values/email-templates.md
+        - live-agent/installation/helm-values/index.md
+        - Database:
+          - live-agent/installation/helm-values/database.md
+        - Redis:
+          - live-agent/installation/helm-values/redis.md
+        - Storage:
+          - live-agent/installation/helm-values/storage.md
+        - SMTP:
+          - live-agent/installation/helm-values/smtp.md
+        - Email Templates:
+          - live-agent/installation/helm-values/email-templates.md
       - Installation Updates:
         - live-agent/installation/deployment/installation-updates.md
   - Agents:
