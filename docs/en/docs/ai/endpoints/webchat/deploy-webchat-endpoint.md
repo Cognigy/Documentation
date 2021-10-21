@@ -59,8 +59,7 @@ Enable Typing Indicatros	This settings controls whether animated dots are displa
 
 [^1]: This Setting is exclusive to or works differently on [Integrated Demo Pages]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/).
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 **Webchat Rating options**
 
@@ -79,8 +78,7 @@ As of Cognigy.AI 4.9.0, Cognigy introduces [Cognigy Insights]({{config.site_url}
 |**Message History Rating Text**|	Example: "Your rating"|
 |**Message History Comment Text**	|Example:"Your comment"
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 ### Further Webchat Settings
 
 With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new sections called "**Minimized Webchat Settings**", "**Webchat Layout**", and "**Additional Settings**".
@@ -153,8 +151,7 @@ With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new 
 ||Input Placeholder Text|	The text to display as a placeholder in the input field.|
 ||Webchat plugins|	https://url.to/plugin.js|
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.11.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.11.0-blue.svg)]({{config.site_url}})
 
 #### Custom JSON
 

@@ -45,8 +45,7 @@ The **Members** feature is an administration tool that is used to manage the acc
 
 ## Packages
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 **Packages** allow our customers to export individual resources like Flows or Lexicons in order to share those assets with other teams. Packages automatically contain their direct dependencies and can be shared as a portable zip archive once downloaded. Customers can also upload packages and get merge resolution steps displayed.
 

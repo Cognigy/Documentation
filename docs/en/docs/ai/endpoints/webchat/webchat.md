@@ -56,10 +56,9 @@ When you have set up a Webchat Endpoint in Cognigy, you can follow the [embeddin
 
 It also features an expressive [technical documentation](https://github.com/Cognigy/WebchatWidget/tree/master/docs) with examples for integrators, which can help you build a seamless and powerful integration into your Website.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
-
 **Embedding HTML Code available in Endpoint Editor**
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 As of release v4.9 Cognigy.AI adds a form section to the Webchat Endpoint configuration to provide embedding-ready code to users.
 Clicking the link "**Open Embedding Documentation**" below the embed field takes you to the [GitHub Webchat Widget embedding documentation](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md) for detailed specifications and examples.

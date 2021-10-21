@@ -26,8 +26,7 @@ You can select two **"Advanced"** options to integrate a Think Node functionalit
 1. **Think Text** (default setting)
 2. **Trigger Intent**
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/558c716-Screen_Shot_057.PNG" width="100%" />

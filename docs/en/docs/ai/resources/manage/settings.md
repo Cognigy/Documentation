@@ -56,8 +56,9 @@ When enabled, case sensitivity and punctuation will be taken into account by the
 - Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow the Attached Flow is mapped.
 - Map Attached Flow first: first maps the Attached Flow Intents separately. If no Intent is found in the Attached Flow the Main Flow is mapped.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.4-blue.svg)](https://shields.io/)
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.4-blue.svg)]({{config.site_url}})
+
 ### Implicit Slot Parsing
 Determines whether slots in NLU example sentences should be parsed implicitly or only slot annotations should be used for training. Configurable from 4.1.4 onwards. Prior to 4.1.4 the behavior was as in "Full" mode, existing agents will retain this default.
 

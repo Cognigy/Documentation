@@ -15,8 +15,8 @@ You can export and import Intent Trainer records by selecting the option after c
   <figcaption>Export Intent Trainer records</figcaption>
 </figure>
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)](https://shields.io/)
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
 
 ## Filter Records
 As of release v4.8 you can filter records by **Snapshot**, **Locale**, **Flow**, **Intent**, **Review Status**, **Found Intent**, **[Found a Slot]({{config.site_url}}ai/nlu/slot-mapping/any-slots/)**,  **Intent Score**, **Intent Types** and **[Slot]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/#slots-and-lexicons)**.

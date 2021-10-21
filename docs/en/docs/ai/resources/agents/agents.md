@@ -18,8 +18,7 @@ Agents contain collections of conversational AI resources, including [Flows]({{c
 
 The Agent Dashboard contains serves as an overview page for you Virtual Agent. It displays information that is relevant to your agent, including Analytics, Project Members, Recently Changed resources and more information on Cognigy.AI itself.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 **Analytics Widget**
 
