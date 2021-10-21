@@ -2,7 +2,7 @@
 
 Intents are collections of identified user intents (e.g. what does the user want).
 
-The user input is scored against all example sentences and Cognigy.AI will identify the intent with the highest score as the intent for this input if it is above the configured [thresholds]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/#thresholds).
+The user input is scored against all example sentences and Cognigy.AI will identify the intent with the highest score as the intent for this input if it is above the configured [thresholds]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/#thresholds).
 
 ## Building the NLU Model
 <div class="divider"></div>
@@ -40,8 +40,7 @@ Any time adjustments are made to the model data, the NLU model must be rebuilt t
 
 ### Quick Build
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 When clicking the arrow on the **Build Model** button, a **Quick Build** option can be selected. This option will build a machine learning model for your intents which doesn't contain specifications for [States]({{config.site_url}}ai/tools/interaction-panel/state/) and Intent Conditions and is thus significantly faster in building your model.
 

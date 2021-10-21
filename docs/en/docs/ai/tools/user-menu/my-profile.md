@@ -18,7 +18,7 @@ This section shows a list of previous login-sessions and their location (if avai
 </figure>
 
 #### API Keys
-Application Programming Interface (API) Keys are a security token registered to a user account that can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to login to the platform. API keys adopt the same permissions (e.g. Admin, Project Manager, Odata) as the user profile with which they are associated. This provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint).
+Application Programming Interface (API) Keys are a security token registered to a user account that can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to login to the platform. API keys adopt the same permissions (e.g. Admin, Project Manager, Odata) as the user profile with which they are associated. This provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
 
 A user that holds the required global permissions to create their own API keys can do so from this menu. Click the "+" button to generate a new **API Key**.  When creating a new API key, the user will be prompted to enter a name. The name will be displayed together with the API key in the list.
 API Keys can also be revoked by clicking the menu icon to the right of the key and selecting *Revoke API Key*. 
@@ -42,5 +42,5 @@ This section lets users manage their **Connected Accounts**, 3rd-party accounts 
 #### Extended Menu
 The Profile page includes an extended menu accessed by clicking the three dots in the top right hand corner of the page. This provides access to the following functions:
   * Edit Profile
-  * Copy Organization ID (Used for [Single Sign-on]({{config.site_url}}ai/installation/single-signin-SAML2))
+  * Copy Organization ID (Used for [Single Sign-on]({{config.site_url}}ai/installation/single-signin-SAML2/))
   * Delete Account

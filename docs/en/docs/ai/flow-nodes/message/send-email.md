@@ -7,7 +7,7 @@
 ## Description
 <div class="divider"></div>
 
-Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url}}ai/resources/smtp) to a recipient. 
+Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url}}ai/resources/smtp/) to a recipient. 
 <!-- need to change the link up [SMTP Connection] -->
 ## Properties
 <div class="divider"></div>
@@ -19,8 +19,7 @@ Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url
 ### Authentication
 #### Email Service
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
 Select the Email Provider of the address you want to send from. 
 If yours is not listed, you can select "Other SMTP Service" to do a manual configuration.

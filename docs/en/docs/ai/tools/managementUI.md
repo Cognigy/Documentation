@@ -194,7 +194,7 @@ This expiration value determines the amount of minutes from when a conversation 
 
 This expiration value determines the amount of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session.
 
-The [session expiration]({{config.site_url}}ai/endpoints/session-management) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used.
+The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used.
 
 It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
 
@@ -202,4 +202,4 @@ It is also possible to set a server-wide maximum expiration time for all the sen
 
 <div class="divider"></div>
 
-Further information about installing the Cognigy Management UI can be found on the [Installation & Updating]({{config.site_url}}ai/installation/installation-and-updating) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
+Further information about installing the Cognigy Management UI can be found on the [Installation & Updating]({{config.site_url}}ai/installation/installation-and-updating/) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.

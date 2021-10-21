@@ -21,7 +21,7 @@ The following fields can be overwritten in a Code Node:
 | intentScore | The score of the intent that was found | Number |
 | inputText | The input text. | String |
 | inputData | The input data object. | {"key":"value"} |
-| state | The [State]({{config.site_url}}states) the Flow is currently in | String |
+| state | The [State]({{config.site_url}}ai/tools/interaction-panel/state/) the Flow is currently in | String |
 | slots | The slots that were found in the user's input | Object |
 | completedGoals | A list of goals the user has completed | List of Strings |
 | understood | Whether the input was understood | Boolean |

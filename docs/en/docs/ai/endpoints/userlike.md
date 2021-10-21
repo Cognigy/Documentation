@@ -14,8 +14,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors)
+- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 
 
 ???+ info "Help Center"
@@ -23,8 +23,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 ## Message types in Userlike unified messaging channels
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 
 <div class="divider"></div>

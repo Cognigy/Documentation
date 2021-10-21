@@ -1,12 +1,12 @@
 # Rule Intents
 
-Rule intents gives you the capability to use advanced rules to understand what a user wants. You can often get by with only using our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) that use various Machine Learning techniques to understand what your users are saying, but sometimes you need more power than this. 
+Rule intents gives you the capability to use advanced rules to understand what a user wants. You can often get by with only using our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) that use various Machine Learning techniques to understand what your users are saying, but sometimes you need more power than this. 
 
 For example, if you use the Generic Language and want to match an intent on a specific data input or if you want to make sure that you have a specific entry in the context before triggering the intent.
 
 ## Concept
 <div class="divider"></div>
-Rule intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) via the **NLU** tab in the flow editor. However, example sentences are not required for Rule Intents. The rule intents field can be found in the intent editor below the machine learning intents.
+Rule intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. However, example sentences are not required for Rule Intents. The rule intents field can be found in the intent editor below the machine learning intents.
 
 Rule Intents require the following:
 

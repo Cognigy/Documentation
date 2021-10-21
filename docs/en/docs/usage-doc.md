@@ -76,7 +76,7 @@ docs/                         # main containing files available for changes
     - index.md                                # Page that will appear while clicking on NLU Section
     - NLU Overview:                           # Subsection name (optional)
       - ai/nlu/overview.md                    # Page that will appear while clicking on NLU Overview section
-      - ai/nlu/nlu-overview/ML-intents.md     # Another page under the NLU Overview section
+      - ai/nlu/nlu-overview/ml-intents.md     # Another page under the NLU Overview section
 ```
 
 ### Naming the files

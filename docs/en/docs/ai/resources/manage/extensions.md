@@ -4,6 +4,7 @@ Extensions enable anyone to build JavaScript modules and to expose them as Flow 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/2f43014-extensions.png" width="100%" />
+  <figcaption>Example Extensions Page</figcaption>
 </figure>
 
 <blockquote class="callout callout_info" theme="📘">
@@ -75,11 +76,11 @@ If you want to develop your own Extensions and would like to see examples, visit
 ???+ info "Where are Custom Modules?"
     Extensions are the successor to the Cognigy Integration Framework Custom Modules and replace them completely.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.6-blue.svg)](https://shields.io/)
-
 ## Extension Performance
 <div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.6-blue.svg)]({{config.site_url}})
+
 Cognigy.AI considers the code within an extension to be "un-trusted", meaning that the code will be executed in a secure and additional hardened environment by default. There is a certain overhead in bootstrapping this secure environment per execution - hence Flow Nodes from Extensions generally execute slower than our built-in ones (e.g. our "Say"-Node).
 
 With Cognigy.AI v4.1.6 we have introduced the ability to "trust" the code of an Extension by letting customers decide whether they want to execute the code in a secure environment or in the normal execution environment in which our own Flow Nodes run.
@@ -106,12 +107,11 @@ Enabling the feature will not change anything automatically. Once the feature wa
 ???+ danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
 
-
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)](https://shields.io/)
-
 ## Extension organization-wide embeddable
 <div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
+
 With Cognigy.AI v4.8 we have introduced the ability for on-premise customers to embed certain extensions organization-wide.
 
 To enable the feature, the following additional environment variable can be used to update the GitHub **config.map** file: 
@@ -119,8 +119,8 @@ To enable the feature, the following additional environment variable can be used
 ```
 FEATURE_ADDITIONAL_SYSTEM_WIDE_EXTENSIONS_PATH
 ```
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)](https://shields.io/)
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
 
 ## Caching Extensions in local Directory
 <div class="divider"></div>
@@ -145,8 +145,7 @@ EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
 ```
 ## Marketplace
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 <div class="divider"></div>
 
 Cognigy provides Marketplace as a tool to strengthen the usage of Extensions and to improve the developer user experience for customers using the product.
@@ -155,6 +154,7 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/391d3bc-Marketplace_5.svg" width="100%" />
+  <figcaption>Extension Marketplace</figcaption>
 </figure>
 
 - You can install, uninstall, upload, drag, and drop Extensions from the Marketplace.
@@ -163,7 +163,7 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
      **Icon (avatar), name, and version**
      **Basic Information**
      **Connections**
-     **Nodes **
+     **Nodes**
 
 - You can copy the URL and open it in another tab, also when reloading the page.
 
@@ -171,8 +171,9 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/917a2b9-Marketplace_6.svg" width="100%" />
+  <figcaption>Marketplace sidebar panel</figcaption>
 </figure>
 
 ## Dynamic Fields
 
-Details about using dynamic fields in Flow Nodes can be found here: [Dynamic Node Fields]({{config.site_url}}ai/flow-nodes/dynamic-node-fields).
+Details about using dynamic fields in Flow Nodes can be found here: [Dynamic Node Fields]({{config.site_url}}ai/flow-nodes/dynamic-node-fields/).

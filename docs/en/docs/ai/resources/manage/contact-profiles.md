@@ -14,8 +14,7 @@ The **Contact Profiles** menu is available under the **Manage** tab of the agent
    <figcaption>The Contact Profile management interface</figcaption>
 </figure>
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
 Here you can search for contact profiles in the top right search box and sort the table by clicking on the column headers. **With Cognigy.AI 4.2.0, we have introduced a new checkbox "Hide inactive Profiles" which will be activated by default.** This way, our customers will only browse through active Profiles.
 
@@ -23,7 +22,6 @@ Here you can search for contact profiles in the top right search box and sort th
 
 The Profile Schema contains the following default schema values:
 
-The user's access rights will only be available for the assigned locales.
 
 | Property Name      |
 | ----------- | 
@@ -92,8 +90,8 @@ Cognigy helps our customers to stay fully compliant to Europe's General Data Pro
 
 It is possible to configure an expiration time for contact profiles so that they will automatically be deleted from the system. This can be configured in the Management UI.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.11.0-blue.svg)](https://shields.io/)
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.11.0-blue.svg)]({{config.site_url}})
 ## Sorting Conversation List
 <div class="divider"></div>
 

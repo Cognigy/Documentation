@@ -37,4 +37,4 @@ The analytics dashboard consists of 20 graphs displaying the following agent met
 ## Customization
 <div class="divider"></div>
 
-Customization of the built-in analytics dashboard is not possible, however the data used to populate the dashboard is accessible via the **OData Analytics Endpoint**. Find out more about how to access the OData feed [here]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint).
+Customization of the built-in analytics dashboard is not possible, however the data used to populate the dashboard is accessible via the **OData Analytics Endpoint**. Find out more about how to access the OData feed [here]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).

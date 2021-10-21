@@ -26,7 +26,7 @@ Selected Endpoints also have the option to customize the NLU that provides the I
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/675c2d2-nluConnector.PNG" width="100%" />
 </figure>
 
-The [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU]({{config.site_url}}ai/nlu/external-nlu/no-nlu/) option can be selected to completely disable the intent and slot mapping for an endpoint. 
+The [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU]({{config.site_url}}ai/nlu/external-nlu/no-nlu/) option can be selected to completely disable the intent and slot mapping for an endpoint. 
 
 Additionally, there are **Endpoint** specific features and configuration options available.
 
@@ -65,7 +65,7 @@ The following Endpoints provide integrations with third party products:
 - [**Microsoft Teams**]({{config.site_url}}ai/endpoints/microsoft-teams/) 
 - [**RingCentral Engage**]({{config.site_url}}ai/endpoints/ringcentral-engage/)
 - [**Slack**]({{config.site_url}}ai/endpoints/slack/) 
-- [**Sunshine Conversations**]({{config.site_url}}ai/endpoints/sunshine-conversations) 
-- [**Twilio**]({{config.site_url}}ai/endpoints/twilio) 
+- [**Sunshine Conversations**]({{config.site_url}}ai/endpoints/sunshine-conversations/) 
+- [**Twilio**]({{config.site_url}}ai/endpoints/twilio/) 
 - [**Userlike**]({{config.site_url}}ai/endpoints/userlike/) 
 - [**Workplace by Facebook**]({{config.site_url}}ai/endpoints/workplace-by-fb/)

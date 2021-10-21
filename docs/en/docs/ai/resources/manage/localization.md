@@ -8,8 +8,7 @@ Cognigy.AI features a powerful Localization concept, that allows for customizabi
 
 The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fallback to another Locale that has.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents has been added to the Cognigy.AI platform. Cognigy's solution is a native integration of leading machine translation providers into the Conversational AI platform.
 
@@ -33,7 +32,7 @@ When switching Localization, the Flow will change its appearance. **"Greyed out"
 </figure>
 
 ???+ success "Switch Locale during a conversation"
-    It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/ node.
+    It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/) node.
 
 ### Adding a Locale to a Node
 
@@ -47,8 +46,7 @@ This can be done by click on a specific Node and then selecting **Add Localizati
   <img class="image-center" src="{{config.site_url}}ai/resources/images/a6dac29-localization-inflows-node.jpg" width="100%" />
 </figure>
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 ### Translation Settings
 
@@ -58,6 +56,7 @@ With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/eacbff5-Agent_Settings_4.svg" width="100%" />
+  <figcaption>Agent "Translation Settings"</figcaption>
 </figure>
 
 #### Options

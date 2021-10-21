@@ -1,6 +1,8 @@
 site_name: Cognigy Documentation
-site_description: Documentation from Cognigy.AI products
+site_description: Documentation of Cognigy products
 site_url: https://ndocs.cognigy.com/
+site_author: Cognigy
+copyright: Cognigy
 theme:
   name: material
   custom_dir: overrides
@@ -58,7 +60,7 @@ nav:
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
       - ai/resources/build/connections.md
-      - ai/resources/build/NLUconnectors.md
+      - ai/resources/build/nlu-connectors.md
       - ai/resources/build/functions.md
     - Deploy:
       - ai/resources/deploy/deploy.md
@@ -140,7 +142,7 @@ nav:
       - ai/flow-nodes/code/actions.md
       - ai/flow-nodes/code/modules.md
       - ai/flow-nodes/code/channel-output.md
-      - ai/flow-nodes/code/AI-default-channel-formats.md
+      - ai/flow-nodes/code/ai-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
     - Voice Gateway:
       - ai/flow-nodes/vg/voice-gateway.md
@@ -161,7 +163,7 @@ nav:
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
-      - ai/nlu/nlu-overview/ML-intents.md
+      - ai/nlu/nlu-overview/ml-intents.md
       - ai/nlu/nlu-overview/annotations.md
       - ai/nlu/nlu-overview/intent-analyzer.md
       - ai/nlu/nlu-overview/rule-intents.md
@@ -222,10 +224,10 @@ nav:
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
       - ai/endpoints/webchat/webchat.md
-      - ai/endpoints/webchat/deploy-webchat-endpoint.md
-      - ai/endpoints/webchat/webchat-features.md
-      - ai/endpoints/webchat/triggering-webchat-plugins.md
-      - ai/endpoints/webchat/integrated-demo-page.md
+      # - ai/endpoints/webchat/deploy-webchat-endpoint.md
+      # - ai/endpoints/webchat/webchat-features.md
+      # - ai/endpoints/webchat/triggering-webchat-plugins.md
+      # - ai/endpoints/webchat/integrated-demo-page.md
     - ai/endpoints/cognigy-vg.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
@@ -254,9 +256,6 @@ nav:
     - ai/developer-guides/api-reference.md
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
-  - Help & Contact:
-    - ai/help/get-help.md
-    - ai/help/community.md
 - Insights:
   - insights/cognigy-insights.md
   - insights/global-filter.md
@@ -290,22 +289,29 @@ nav:
     - Creating a Cognigy.AI Handover Flow:
       - live-agent/getting-started/creating-a-cognigy-handover-flow.md
   - Installation & Configuration:
+    - Browser Requirements:
+      - live-agent/installation/browser-requirements.md
     - Deployment:
-      - Prerequisites:
-        - live-agent/installation/prerequisites.md
       - Architecture:
-        - live-agent/installation/architecture.md
-    - Installation Using Helm:
-      - live-agent/installation/installation-using-helm.md
-    - Installation Updates:
-      - live-agent/installation/installation-updates.md
-    - Configuration/Tweaking:
-      - Database:
-        - live-agent/installation/configuration/database.md
-      - Redis:
-        - live-agent/installation/configuration/redis.md
-      - Mail:
-        - live-agent/installation/configuration/mail.md
+        - live-agent/installation/deployment/architecture.md
+      - Prerequisites:
+        - live-agent/installation/deployment/prerequisites.md
+      - Installation using Helm:
+        - live-agent/installation/deployment/installation-using-helm.md
+      - Helm Values:
+          - live-agent/installation/helm-values/index.md
+          - Database:
+            - live-agent/installation/helm-values/database.md
+          - Redis:
+            - live-agent/installation/helm-values/redis.md
+          - Storage:
+            - live-agent/installation/helm-values/storage.md
+          - SMTP:
+            - live-agent/installation/helm-values/smtp.md
+          - Email Templates:
+            - live-agent/installation/helm-values/email-templates.md
+      - Installation Updates:
+        - live-agent/installation/deployment/installation-updates.md
   - Agents:
     - live-agent/agents.md
   - Teams:
@@ -332,8 +338,12 @@ nav:
   #   - live-agent/help.md Disabled for now
 - Marketplace:
   - ai/resources/manage/extensions#marketplace
-- Usage:
-  - usage-doc.md
+
+- Help & Contact:
+  - help/get-help.md
+  - help/community.md
+# - Usage:
+#   - usage-doc.md
 markdown_extensions:
 - toc:
     permalink: true

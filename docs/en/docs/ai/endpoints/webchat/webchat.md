@@ -12,7 +12,7 @@ The Webchat can be used free of additional charges when used with Cognigy and is
 
 <div class="divider"></div>
 
-In addition to sending and receiving regular text messages, the Webchat can also present content and provide interactive inputs in various ways to improve the user experience. Read more about that in our [Webchat Features]({{config.site_url}}ai/endpoints/webchat/webchat-features) documentation. 
+In addition to sending and receiving regular text messages, the Webchat can also present content and provide interactive inputs in various ways to improve the user experience. Read more about that in our [Webchat Features]({{config.site_url}}ai/endpoints/webchat/webchat-features/) documentation. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/76766ec-Screenshot_from_2019-12-02_14-32-33.png" width="100%" />
@@ -32,7 +32,7 @@ You can find a [collection of Webchat Plugins](https://github.com/Cognigy/Webcha
 
 To learn how to embed Webchat Plugins on your Website, take a look at the ["Using Webchat Plugins" section in our embedding guide](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md#using-webchat-plugins).
 
-For instructions on how to work with Webchat Plugins from within Cognigy, please refer to our Guide on [Triggering Webchat Plugins]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins).
+For instructions on how to work with Webchat Plugins from within Cognigy, please refer to our Guide on [Triggering Webchat Plugins]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/).
 
 ## Embedding
 
@@ -56,10 +56,9 @@ When you have set up a Webchat Endpoint in Cognigy, you can follow the [embeddin
 
 It also features an expressive [technical documentation](https://github.com/Cognigy/WebchatWidget/tree/master/docs) with examples for integrators, which can help you build a seamless and powerful integration into your Website.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
-
 **Embedding HTML Code available in Endpoint Editor**
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 As of release v4.9 Cognigy.AI adds a form section to the Webchat Endpoint configuration to provide embedding-ready code to users.
 Clicking the link "**Open Embedding Documentation**" below the embed field takes you to the [GitHub Webchat Widget embedding documentation](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md) for detailed specifications and examples.
@@ -78,7 +77,7 @@ That makes your Webchat configuration for your own purposes much easier now.
 
 ## More information
 
-- [Deploy a Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/deploy-webchat-endpoint)
-- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features)
--  [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins)
-- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page)
+- [Deploy a Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/deploy-webchat-endpoint/)
+- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)
+-  [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/)
+- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/)

@@ -31,7 +31,7 @@ An Optional Question Node is used to ask a question that requests specific infor
 | ---- | ----------- |
 | Text | Any text input |
 | Yes / No	 | A positive or negative response |
-| Intent | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) must be identified from the user's response |
+| Intent | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) must be identified from the user's response |
 | Slot | A [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) or [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) must be detected within the user's response. The slot is defined by name. |
 | Date | Any date (system-defined) |
 | Number | Any number (system-defined) |

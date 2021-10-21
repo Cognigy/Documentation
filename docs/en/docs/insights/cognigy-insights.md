@@ -32,7 +32,7 @@ With Cognigy.AI 4.10.0 we improved our capabilities to create metrics to have cu
   <figcaption>Agent dashboard with sidebar menu - select "Insights" to switch to the analytics solution</figcaption>
 </figure>
 
-- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click on "**Insights**". We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics) application.
+- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click on "**Insights**". We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics/) application.
 
 ???+ info "Note"
     **When you are in an agent-specific route in Cognigy.AI (Agent is selected) you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.**
@@ -49,8 +49,8 @@ You will find all sorts of different report types that visualize key metrics of 
 Cognigy provides three categories of dashboards available via the Insight sideboard menu:
 
 - [Overview Dashboard]({{config.site_url}}insights/dashboard-overview/) (deals with general analytics)  
-- [Engagement  Dashboard]({{config.site_url}}insights/dashboard-engagement) (analytics focused on customer reactions in conversations)
-- [NLU Performance Dashboard]({{config.site_url}}insights/dashboard-nlu-performance) (these analytics relates to Natural Language Understanding) 
+- [Engagement  Dashboard]({{config.site_url}}insights/dashboard-engagement/) (analytics focused on customer reactions in conversations)
+- [NLU Performance Dashboard]({{config.site_url}}insights/dashboard-nlu-performance/) (these analytics relates to Natural Language Understanding) 
 
 
 ## Local filter
@@ -80,31 +80,31 @@ Cognigy Insights comes with so-called global filters. These filters will be visi
 
 ???+ info "Note"
     **The global filter options are available in all applications running in Cognigy Insights.**
-    **More information about global filter you can find here: [Global Filter]({{config.site_url}}insights/global-filter).**
+    **More information about global filter you can find here: [Global Filter]({{config.site_url}}insights/global-filter/).**
 
 ## User menu
 
 <div class="divider"></div>
 
 
-You can find the [user menu]({{config.site_url}}ai/tools/user-menu/user-menu) in the upper right corner of the screen (user profile icon)
+You can find the [user menu]({{config.site_url}}ai/tools/user-menu/user-menu/) in the upper right corner of the screen (user profile icon)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/32749de-tooltip_Insights_user_menu_80.svg" width="100%" />
   <figcaption>User menu icon with tooltip</figcaption>
 </figure>
 
-- **[MyProfile]({{config.site_url}}ai/tools/user-menu/my-profile)**
+- **[MyProfile]({{config.site_url}}ai/tools/user-menu/my-profile/)**
 In the "**Preferences**" section the **user interface language** can be selected.
 Language settings in Insights or Cognigy.AI have automatically effect on both applications.
 Insights currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
-You can find more information here: [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile)
+You can find more information here: [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/)
 
-- **[Access Control]({{config.site_url}}ai/tools/user-menu/access-control)**
+- **[Access Control]({{config.site_url}}ai/tools/user-menu/access-control/)**
 The Insights user administration allows you to create new user accounts.
 Users need to have sufficient permissions for access to the Insights applications.   
 
-- **[Usage Statistics]({{config.site_url}}ai/tools/user-menu/usage-statistics)** 
+- **[Usage Statistics]({{config.site_url}}ai/tools/user-menu/usage-statistics/)** 
 This section shows the total number of user conversations and displays a timeline-related number of conversations as a line chart.  You can select the time period in a drop-down menu. 
 
 - **[Documentation]({{config.site_url}})** 

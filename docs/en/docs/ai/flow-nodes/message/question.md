@@ -29,7 +29,7 @@ Question Nodes have a Type which defined what kind of answer is required from th
 | ---- | ----------- |
 | Text | Any text input |
 | Yes / No	 | A positive or negative response |
-| Intent | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ML-intents/) must be identified from the user's response |
+| Intent | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) must be identified from the user's response |
 | Slot | A [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) or [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) must be detected within the user's response. The slot is defined by name. |
 | Date | Any date (system-defined) |
 | Number | Any number (system-defined) |
@@ -62,8 +62,7 @@ Question node output types carry the same functionality as the [**Say Node**]({{
     In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Please refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
 ## Reprompt Options
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 <div class="divider"></div>
 
@@ -99,8 +98,7 @@ If **Store Result in Context** is enabled, the Question Result will also be stor
 If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) object.
 ## Escalation to Handover
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.4.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.4.0-blue.svg)]({{config.site_url}})
 
 <div class="divider"></div>
 
@@ -161,22 +159,19 @@ When enabled, this setting will skip the Question if the answer is already provi
 
 ### Additional Validation
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 A [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition which must return `true` in order for the answer to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
 
 ### Result Location
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 The location of an answer is determined by default by the question type (e.g. `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (e.g., `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
 
 ### Forget Question Threshold
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 This setting determines how long a user can have been "away" from the Node after the question was initially asked. With the default setting `1` this means that the question has to be answered on the next user input. If a user input comes back to the question at a later stage, it will be treated as if the question was hit for the first time and the quesiton will be asked.
 

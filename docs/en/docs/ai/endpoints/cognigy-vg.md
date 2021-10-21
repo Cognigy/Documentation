@@ -53,7 +53,7 @@ Cognigy Voice Gateway identifies information about the caller and adds it to the
 
 
 ???+ info "NumberMetaData in Tokens"
-    All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens) inside Cognigy Text fields as well.
+    All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
 ## Generic Endpoint Settings
 
@@ -63,8 +63,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors)
+- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
 
 ???+ info "Contact Center & Phone number linking"

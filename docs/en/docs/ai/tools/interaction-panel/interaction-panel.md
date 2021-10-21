@@ -16,7 +16,7 @@ The Interaction Panel will preview channel-specific output in case this has been
 </figure>
 
 ???+ success "Tip: Showing only selected output"
-    It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel#chat-output)**.
+    It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel#chat-output/)**.
 
 ### Info
 <div class="divider"></div>
@@ -30,7 +30,7 @@ The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
 The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
 
 ???+ info "Input object"
-    Head over to [**Input**]({{config.site_url}}ai/tools/interaction-panel/input) for more information.
+    Head over to [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) for more information.
 
 #### State
 State can be used to narrow the set of **Intents **that can be triggered, by actively excluding certain Intents from a certain state. 
@@ -57,14 +57,14 @@ The **(Contact) Profile** acts as persistent - long term - memory and is used to
 The **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
 
 #### Data Input
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. This field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel#settings). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script) under ```{ {input.data} }```
+It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. This field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel#settings/). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
  
 ### Settings
 <div class="divider"></div>
 The Interaction Panel can be configured with a number of settings across different sections.
 
 #### Chat Input
-This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/NLUconnectors) page. 
+This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/7f829ba-interaction-settings-nlu.jpg" width="100%" />

@@ -1,7 +1,6 @@
 # Set Translation
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 ## Description
 <div class="divider"></div>
@@ -41,4 +40,4 @@ The configuration options and their functions are listed below:
 | **No-Translation Marker** |  Do not translate texts encapsulated in this marker (e.g. 'I love the ** Cognigy.AI ** platform' will not translate 'Cognigy.AI').<br/>(** default) |
 | **Set user input language on execution count**  |  If the input language is set to 'Auto-Detect', it will be fixed to its current value on this execution count. |
 | **Always remove  No-translation Markers**  |  Wether we remove No-Translation Markers, even if a translation is not enabled.<br/>Can be enabled using the slide bar. |
-| **Settings**  |  - **Label**: Enter a name for your choice to the Node. [Adding a Label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) replaces the bottom text line of a Node.<br/>- **Comment**: [Additional information]({{config.site_url}}ai/flow-nodes/node-usage/#add-comment) about the Node.<br/>- **Analytics step**: Enter a meaningful step name used as **[Annotation]({{config.site_url}}insights/step-explorer#annotations)** for the [Step Explorer]({{config.site_url}}insights/step-explorer) in [Insights]({{config.site_url}}insights/) analytics. |
+| **Settings**  |  - **Label**: Enter a name for your choice to the Node. [Adding a Label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) replaces the bottom text line of a Node.<br/>- **Comment**: [Additional information]({{config.site_url}}ai/flow-nodes/node-usage/#add-comment) about the Node.<br/>- **Analytics step**: Enter a meaningful step name used as **[Annotation]({{config.site_url}}insights/step-explorer/#annotations)** for the [Step Explorer]({{config.site_url}}insights/step-explorer/) in [Insights]({{config.site_url}}insights/cognigy-insights/) analytics. |

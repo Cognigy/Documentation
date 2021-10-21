@@ -10,19 +10,19 @@ The User Menu provides access to a set of views that are related to the user tha
 The My Profile view exposes a number of settings that apply to the user that is logged-in. 
 
 ???+ info "My Profile"
-    Head over to [**My Profile**]({{config.site_url}}ai/tools/user-menu/my-profile)  for more information.
+    Head over to [**My Profile**]({{config.site_url}}ai/tools/user-menu/my-profile/)  for more information.
 
 ### Access Control
 The Access Control interface offers a user management interface. It acts as an Access Control List (ACL) and makes it possible to give users a specific role. 
 
 ???+ info "Access Control"
-    Please refer to [**Access Control**]({{config.site_url}}ai/tools/user-menu/access-control) for more information.
+    Please refer to [**Access Control**]({{config.site_url}}ai/tools/user-menu/access-control/) for more information.
 
 ### Usage Statistics
 The Usage Statistics interface offers a platform analytics overview for agent usage. 
 
 ???+ info "Usage Statistics"
-    Please refer to [**Usage Statistics**]({{config.site_url}}ai/tools/user-menu/usage-statistics) for more information.
+    Please refer to [**Usage Statistics**]({{config.site_url}}ai/tools/user-menu/usage-statistics/) for more information.
 
 
 ### Documentation

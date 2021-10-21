@@ -450,7 +450,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 </figure>
 
 ???+ info "Teams Cards"
-    Structured content in Microsoft Teams is sent as so called Cards. Please refer to our [Deploy a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot) page for information on how to send messages.
+    Structured content in Microsoft Teams is sent as so called Cards. Please refer to our [Deploy a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
 <!-- need to change the link above  -->
 
 <div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
@@ -465,8 +465,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option „Text with Buttons“, „Gallery“ or „List“.
 

@@ -1,7 +1,6 @@
 # Packages
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 ## Introduction
 
@@ -18,7 +17,7 @@ Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connec
 
     * [Flows]({{config.site_url}}ai/resources/build/flows/) 
     * [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)
-    * [NLU Connectors]({{config.site_url}}ai/resources/build/NLUconnectors/) 
+    * [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) 
     * [Functions]({{config.site_url}}ai/resources/build/functions/) 
     * [Endpoints]({{config.site_url}}ai/endpoints/overview/)
     * [Playbooks]({{config.site_url}}ai/resources/test/playbooks/)
@@ -56,8 +55,7 @@ Besides exporting or importing single resources in packages, you can also export
 
 Here you can start Exporting or Importing a Package.
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 ### Export
 As of Release v4.5.0, you can select one / many / all resources by activating the corresponding checkboxes for each resource via click. Then set the name, create the package, and start the download. You can also use our search capability to quickly identify and search for the resource you want to export.
@@ -67,8 +65,7 @@ As of Release v4.5.0, you can select one / many / all resources by activating th
 Similar to the export, the import of packages is straightforward. Simply drag&drop a package on the area at the top of the packaging tool or use the file selection functionality. Your package will be uploaded and processed by Cognigy.AI. Once analyzed, the packaging tool will display the contents of the package and you can go forward and import them.
 
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 ## Import Configuration
 

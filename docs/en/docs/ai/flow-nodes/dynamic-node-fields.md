@@ -1,12 +1,11 @@
 # Dynamic Node Fields
 
-<br>
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)](https://shields.io/)
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 ## Dynamic Fields in Flow Nodes
 <div class="divider"></div>
 
-Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through e.g. an external API call.
+Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their  [Extensions]({{config.site_url}}ai/resources/manage/extensions/). The feature can be used to dynamically fetch the content of a select field through e.g. an external API call.
 
 ## Options Resolver
 
