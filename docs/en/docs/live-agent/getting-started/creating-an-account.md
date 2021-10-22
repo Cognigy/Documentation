@@ -23,4 +23,4 @@ After signing up, the administrator is logged into the dashboard automatically. 
     <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
-Now you can continue to the section [Inviting Your Agents](/live-agent/getting-started/inviting-your-agents).
+Now you can continue to the section [Inviting Your Agents]({{config.site_url}}live-agent/getting-started/inviting-your-agents).
