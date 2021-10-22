@@ -57,7 +57,7 @@ The Datepicker can be used to render a date selection widget in certain channels
 
 Logic Nodes can be used to execute a certain logic in the flow. They include classical conditions, as well as specific Flow behavior like waiting for a user input.
 ### If
-The If Node is one of the most common Logic Nodes. It can be used to evaluate a statement and depending on the outcome, the Then or Else cases are triggered.  Conditions can be created using **CognigyScript **or using the built-in  [**Token System**]({{config.site_url}}ai/resources/manage/tokens/).
+The If Node is one of the most common Logic Nodes. It can be used to evaluate a statement and depending on the outcome, the Then or Else cases are triggered.  Conditions can be created using **CognigyScript** or using the built-in  [**Token System**]({{config.site_url}}ai/resources/manage/tokens/).
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7eebbcc-nodes-logic-if.jpg" width="100%" />
 </figure>
@@ -248,7 +248,7 @@ Runs a transaction.
 Triggers a StoredProcedure.
 ## NLU Nodes
 <div class="divider"></div>
-NLU Nodes are a collection of Nodes that are related to the platform's [**NLU**]({{config.site_url}}ai/nlu/overview/). It features a range of different Nodes.
+NLU Nodes are a collection of Nodes that are related to the platform's [**NLU**]({{config.site_url}}ai/nlu/nlu-overview/overview/). It features a range of different Nodes.
 
 ### Question
 <figure>

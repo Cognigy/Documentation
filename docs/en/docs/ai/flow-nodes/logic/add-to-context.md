@@ -17,3 +17,6 @@ An **Add to Context Node** is used to store information in the Cognigy [Context]
 
 ???+ info "Storing an Object"
     If you want to store an object in the context, use `.preserveType()` at the end in order to keep it an object. Example: `input.slots.city[0].preserveType()` would store the full slot object for the first found city entity in the context.
+
+???+ info "Adding a value to an Array only contains unique values"
+    When adding a value to an array by using the addToContext Node, the value will not be added if the value already exists in the Array. If you need to add a value to an Array, no matter if the value already exists in the Array, then you can use the `.push()` function in a Code Node.

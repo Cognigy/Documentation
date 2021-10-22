@@ -7,4 +7,4 @@
 ## Description
 <div class="divider"></div>
 
-The Enable Slot Fillers Node lets you enable a particular Slot Filler. Use the drop-down menu to select the Slot Filler that you want to enable. For more information on Slot Fillers, refer to [**NLU (Natural Language Understanding**)]({{config.site_url}}ai/nlu/overview/).
+The Enable Slot Fillers Node lets you enable a particular Slot Filler. Use the drop-down menu to select the Slot Filler that you want to enable. For more information on Slot Fillers, refer to [**NLU (Natural Language Understanding**)]({{config.site_url}}ai/nlu/nlu-overview/overview/).

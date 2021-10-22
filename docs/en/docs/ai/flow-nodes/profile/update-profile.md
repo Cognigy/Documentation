@@ -14,7 +14,8 @@ The Update Profile Node is used to update the users' Contact Profile.
 
 The available `Key` options are all defined fields in the Profile Schema of this Project.
 
-If the key used is an invalid value, it will not perform any function. For a list of default profile property keys, see the [Contact Profiles Page]{{config.site_url}}ai/resources/manage/contact-profiles/).
+ 
+If the key used is an invalid value, it will not perform any function. For a list of default profile property keys, see the [Contact Profiles Page]({{config.site_url}}ai/resources/manage/contact-profiles/)
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |

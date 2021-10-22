@@ -6,7 +6,7 @@
 
 ## Description
 <div class="divider"></div>
-Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons]({config.site_url}}ai/resources/build/lexicons/)  from within your Flow using [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
+Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)  from within your Flow using [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
