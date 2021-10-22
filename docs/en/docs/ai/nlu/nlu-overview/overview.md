@@ -9,11 +9,7 @@ Intent Mapping is at the core of the NLU engine and the process uses machine lea
 ???+ info "Want to learn how to use Intents?"
     Head over to **[Train your Virtual Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents)** in the Help Center.
 
-!!! info ""
-    <h3 >
-         <span>▶️ </span><a href="https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU" target="_blank" >Techinar video "Cognigy NLU"</a>
-    </h3>
-    Watch this Episode of Cognigy Sessions for a technical deep dive
+
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
