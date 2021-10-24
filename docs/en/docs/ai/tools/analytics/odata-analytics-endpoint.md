@@ -116,6 +116,7 @@ Furthermore, you can control analytics logging behavior inside a Flow using [Bli
 <div class="divider"></div>
 
 This section details the data types the exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
+
   * Inputs
   * ChatHistory
   * Steps

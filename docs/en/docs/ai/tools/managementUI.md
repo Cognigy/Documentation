@@ -9,6 +9,7 @@ The Cognigy Management UI is an additional product originally developed as a Cog
 Many users don't know that COGNIGY.AI is able to handle a multi-tenant scenario! These individual tenants are called **organisations** within COGNIGY.AI.
 
 An organisation has completely separated:
+
 - projects
 - users
 - api- access and -keys

@@ -22,6 +22,7 @@ The **Users overview** lists all members of a particular **Organization**. Indiv
 
 ## Create new Users
 Administrators can use the *Create new User* button to add a User to the Organization. The following fields have to be filled out: 
+
   * Display Name
   * Email Address
   * Password
@@ -31,7 +32,7 @@ Administrators can use the *Create new User* button to add a User to the Organiz
   <img class="image-center" src="{{config.site_url}}ai/tools/images/0f3231e-usermenu-accesscontrol-newuser.jpg" width="100%" />
 </figure>
 
-???+ success "asswords can be changed anytime and are stored securely"
+???+ success "Passwords can be changed anytime and are stored securely"
     The user can later change the password from the admin panel.
 
 ## Global User Access Control
@@ -48,7 +49,6 @@ Assign agents to a user by clicking the *+* button under *Assigned Projects* and
 The following **Global Roles** are available:
 
 |Role|	Description|
-
 |--|--|
 |Admin|	Admins have unlimited access to anything inside their organisation. In a new installation, the system will create one user with this role. A platform owner should create a new user with this role and delete the automatically created one on first login.|
 |Base Role|	The Basic role can view most entities in the system. Once a new user is created within the system, this role will get assigned automatically.|
@@ -65,5 +65,5 @@ More specific **Access Rights** can be defined for individual features within Ag
 
 ## More information
 
-- [Members]({{config.site_url}}ai/tools/user-menu/usage-statistics/)
-- [Usage Statistics]({{config.site_url}}ai/resources/manage/members/)
+- [Members]({{config.site_url}}ai/resources/manage/members/)
+- [Usage Statistics]({{config.site_url}}ai/tools/user-menu/usage-statistics/)

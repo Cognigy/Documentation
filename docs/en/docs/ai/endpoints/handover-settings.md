@@ -10,12 +10,14 @@ Supported Endpoints have a configuration tab called `Handover Settings`. In ther
 
 - Cognigy.AI Livechat
 - [RingCentral Engage](https://www.ringcentral.com/digital-customer-engagement.html)
-- [Chatwoot integration]({{config.site_url}}ai/endpoints/chatwoot-integration/), new in Cognigy.AI v4.3.0
+- [Chatwoot integration]({{config.site_url}}ai/tools/chatwoot-integration/), new in Cognigy.AI v4.3.0
 
 The Endpoints that support handover are listed below:
 
 | Method      |
 | ----------- | 
+| [Facebook Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/) | 
+| [LINE Messenger]({{config.site_url}}ai/endpoints/line-messenger/) | 
 | [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/) | 
 | [RingCentral Engage]({{config.site_url}}ai/endpoints/ringcentral-engage/) | 
 | [Slack]({{config.site_url}}ai/endpoints/slack/) |

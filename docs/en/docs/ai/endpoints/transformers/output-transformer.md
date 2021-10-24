@@ -10,6 +10,7 @@ The `Output Transformer` is configured by implementing the `handleOutput` functi
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0d259a5-output_transformer.png" width="100%" />
+  <figcaption>Output Transformer Example</figcaption>
 </figure>
 
 ## Differences between Transformer Types

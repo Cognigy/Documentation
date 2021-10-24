@@ -33,7 +33,7 @@ The Input object is updated with every user input and holds a lot of relevant in
     Head over to [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) for more information.
 
 #### State
-State can be used to narrow the set of **Intents **that can be triggered, by actively excluding certain Intents from a certain state. 
+State can be used to narrow the set of **Intents** that can be triggered, by actively excluding certain Intents from a certain state. 
 
 ???+ info "State"
     Head over to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) to learn more. 
@@ -49,7 +49,7 @@ The **Context** can be seen as the short-term memory of the **Virtual Agent** an
 The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as usecase specific information like e.g. the user's favorite color.
 
 ???+ info "Profile object"
-    Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information.
+    Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
 
 ### Input Field
 <div class="divider"></div>

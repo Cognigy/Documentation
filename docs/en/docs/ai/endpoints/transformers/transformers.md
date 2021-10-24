@@ -32,6 +32,7 @@
 Endpoint Transformers enable the modification of the Endpoint behavior. 
 
 You can use them to:
+
 - change the request payload from an Endpoint before being sent to the Flow
 - change outputs from a Flow before they are sent to the user 
 - create additional integrations with a custom built endpoint

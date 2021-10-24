@@ -1,6 +1,6 @@
 # CognigyScript
 
-CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) and [Context]({{config.site_url}}ai/tools/interaction-panel/inputcontext/) objects within text and JSON.
+CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) and [Context]({{config.site_url}}ai/tools/interaction-panel/context/) objects within text and JSON.
 
 Using CognigyScript, you can execute powerful scripts to create the replies you want to return to the client.
 
@@ -8,10 +8,11 @@ Within text, you write CognigyScript within `{ { } }` tags. Example: `{ {input.t
 
 CognigyScript is essentially JavaScript, but gives you access to the Cognigy objects via exposed variables:
 
-|Variable	|Description	|Example|
-|input|	The Input Object|	{ {input.text} }|
-|context|	The Context Object|	{ {context.selectedHotel} }|
-|profile|	The Contact Profile Object|	{ {profile.firstname} }|
+|Variable|Description|Example|
+|---|---|---|
+|input|	The Input Object|{ {input.text} }|
+|context|The Context Object|{ {context.selectedHotel} }|
+|profile|The Contact Profile Object|{ {profile.firstname} }|
 
 ## Node Arguments
 

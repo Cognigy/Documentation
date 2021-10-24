@@ -1,6 +1,6 @@
 # Usage Statistics
 
-The **Usage Statistics** page is an analytics overview feature that provides a report to platform administrators with insight into the **volume of conversations **that have occurred across all agents in an organization.
+The **Usage Statistics** page is an analytics overview feature that provides a report to platform administrators with insight into the **volume of conversations** that have occurred across all agents in an organization.
 
 ## #Access Usage Statistics
 To access the **Usage Statistics** report, select the **User Menu** icon from the top right of any page and click on the **Usage Statistics** option.
@@ -11,4 +11,4 @@ To access the **Usage Statistics** report, select the **User Menu** icon from th
 </figure>
 
 ### Report Filtering
-The report can be filtered by **year **and **month **using the date filter drop down lists in the top right of the page.
+The report can be filtered by **year** and **month** using the date filter drop down lists in the top right of the page.
