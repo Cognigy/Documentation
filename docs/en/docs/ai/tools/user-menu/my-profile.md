@@ -5,7 +5,7 @@
 </figure>
 
 #### Preferences
-In this section the** user interface language **can be selected. Cognigy.AI currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese **and **Spanish**.
+In this section the **user interface language** can be selected. Cognigy.AI currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
 
 #### Global Roles
 The **Global Roles** section allows for the assignment of global roles that **apply across different Agents**. More granular Local Roles can be configured per Agent. 
@@ -41,6 +41,7 @@ This section lets users manage their **Connected Accounts**, 3rd-party accounts 
 
 #### Extended Menu
 The Profile page includes an extended menu accessed by clicking the three dots in the top right hand corner of the page. This provides access to the following functions:
+
   * Edit Profile
   * Copy Organization ID (Used for [Single Sign-on]({{config.site_url}}ai/installation/single-signin-SAML2/))
   * Delete Account

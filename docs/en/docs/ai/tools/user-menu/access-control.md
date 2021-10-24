@@ -11,7 +11,7 @@ Find the **Access Control** panel by:
 
 <div class="divider"></div>
 
-The **Users overview** lists all members of a particular **Organization**. Individual **Users**can subsequently be assigned to **specific Agents**, using the [**Members**]({{config.site_url}}ai/resources/manage/members/) interface.
+The **Users overview** lists all members of a particular **Organization**. Individual **Users** can subsequently be assigned to **specific Agents**, using the [**Members**]({{config.site_url}}ai/resources/manage/members/) interface.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.jpg" width="100%" />
