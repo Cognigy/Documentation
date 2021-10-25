@@ -55,8 +55,8 @@ The URL for accessing the V2.0 OData endpoint is as follows:
 ## Version 1.0
 This is the legacy version of the OData endpoint that excludes step monitoring analytics. This OData endpoint contains the following collections:
 
-- [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#inputs/) (`/Records`) - Renamed to Inputs in V2.0 Endpoint
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#chathistory/) (`/Conversations`) - Renamed to ChatHistory in V2.0 Endpoint
+- [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs) (`/Records`) - Renamed to Inputs in V2.0 Endpoint
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory) (`/Conversations`) - Renamed to ChatHistory in V2.0 Endpoint
 
 The URL for accessing the V1 OData endpoint is as follows:
 `https://<hostname>/<collection>?apikey=YOURAPIKEY`
@@ -109,7 +109,7 @@ You control and manage the data available in the OData Endpoint via the agent se
 
 - If you enable *Mask Sensitive Analytics* the *inputText* and *inputData* fields will be masked.
 
-Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) nodes that will disable or mask analytics data available in OData according to your node settings.
+Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#blind-mode) nodes that will disable or mask analytics data available in OData according to your node settings.
 
 ## Cognigy.AI OData Collections
 
