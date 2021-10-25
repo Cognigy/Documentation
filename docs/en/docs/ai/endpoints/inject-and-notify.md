@@ -17,7 +17,7 @@ Our inject API can be used to send an arbitrary pair of **text** and **data** in
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/1cfe64c-inject.png" width="100%" />
-  <figcaption>Figure 1: Schema which shows the data-flow during a inject call.</figcaption>
+  <figcaption>Schema which shows the data-flow during a inject call.</figcaption>
 </figure>
 
 ## Notify
@@ -28,7 +28,7 @@ Notify, in contrast to inject, can only be used to send a simple **text** and/or
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/45c4df1-notify.png" width="100%" />
-  <figcaption>Figure 2: Schema which shows the data-flow during a notify call.</figcaption>
+  <figcaption>Schema which shows the data-flow during a notify call.</figcaption>
 </figure>
 
 ## Triggering the External long-running process
@@ -42,7 +42,7 @@ You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/ht
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/bc2f034-httprequest.jpg" width="100%" />
-  <figcaption>Figure 3: Using a HTTP-Request node to trigger a long-running process in an external system</figcaption>
+  <figcaption>Using a HTTP-Request node to trigger a long-running process in an external system</figcaption>
 </figure>
 
 |Field in Inject & Notify	|Cognigy Script|

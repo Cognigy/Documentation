@@ -11,7 +11,7 @@
 **Steps to start:**
   1. Clone repository from Documentation [repo on Azure DevOps](https://docs.docker.com/engine/install/ubuntu/) with SSH authentication
   2. Run command ```docker run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
-  3. The documentation will be accessible via http://localhost:8008
+  3. The documentation will be accessible via http://0.0.0.0:8008
 
 #### Logging in to Azure
 Run command: 
@@ -29,7 +29,7 @@ Run command:
   4. Commit files to GIT ```git commit -m "Meaningful commit message"```
   5. Push changes to your branch in GIT ```git push origin feature/0-name-of-feature```
   6. Go to [repository on Azure DevOps](https://cognigy.visualstudio.com/Documentation/_git/documentation) and click on "make a Pull Request"
-  7. Fill in the "Pull Request form" with a good Subject name and as much detail as possible about the changes you made and assign at least one Reviewer and a AzureDevOps Work item if applicable.
+  7. Fill in the "Pull Request form" with a good Subject name and as much detail as possible about the changes you made and assign at least one Reviewer and a AzureDevOps Work item.
 
 <div class="divider"></div>
 
@@ -80,9 +80,8 @@ docs/                         # main containing files available for changes
 ```
 
 ### Naming the files
-Naming files in short, yet discriptive names is very important, since the link slugs depend on these file names.
+Naming files in short, yet discriptive names is very important, since the link slugs depend on these file names. Do not use any capital letters. We use "-" for separating the words in the file name.
 
-We use "-" for separating the words in the file name.
 Example of a good name for .md file - e.g. "add-to-context"
 Example of a bad name for .md file - e.g. "addToContext-1"
 
@@ -97,7 +96,7 @@ Meta data is an important part of the Search Engine Optimization (SEO), thus it 
   <assets/img class="image-center" src="{{config.site_url}}assets/img/metadata-add.png" width="100%" />
 </figure>
 
-Meta data template to add in the very bedinning of your new .md page:
+Meta data template to add in the very beginning of your new .md page:
 `````
 ---
 title: "Page title"
@@ -118,10 +117,10 @@ metadata:
  **Example of Developer Guides Section image storage:**
 
  <figure>
-  <assets/img class="image-center" src="{{config.site_url}}assets/img/Dev_guide_images.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}assets/img/Dev_guide_images.png" width="100%" />
 </figure>
 
-## Image standard
+## Image standard - TO BE UPDATED!
 All images should be:
 
   1. in .png format that has an alpha channel
@@ -130,7 +129,7 @@ All images should be:
 ### Adding an image to the .md file
 
 <figure>
-  <assets/img class="image-center" src="{{config.site_url}}/assets/img/logo_prod.jpeg" width="30%" />
+  <img class="image-center" src="{{config.site_url}}/assets/img/logo_prod.jpeg" width="30%" />
   <figcaption>Image caption</figcaption>
 </figure>
 
@@ -178,7 +177,7 @@ The "en/docs" directory contains a "css/extra.css" file that can be used to add 
 **Example of using the class in the Markdown file**
 `````
 <figure>
-  <assets/img class="image-center" src="assets/img/logo_prod.jpeg" width="50%" />
+  <img class="image-center" src="assets/img/logo_prod.jpeg" width="50%" />
   <figcaption>Image caption</figcaption>
 </figure>
 `````
@@ -191,18 +190,18 @@ You can combine multiple classes by separating them with spaces ```class="image-
   - Add the language to the Language changer drop down by adding the language to the "alternate" section of YML file
 
 <figure>
-  <assets/img class="image-center" src="{{config.site_url}}assets/img/alternate language.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}assets/img/alternate language.png" width="100%" />
 </figure>
 
   - Change the language of the template language abbreviations and [languages available for MKDocs material template](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language)
 
 <figure>
-  <assets/img class="image-center" src="{{config.site_url}}assets/img/localizing_nav_sections.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}assets/img/localizing_nav_sections.png" width="100%" />
 </figure>
 
   - Localize the Section names in the "nav" section of the YML file
 <figure>
-  <assets/img class="image-center" src="{{config.site_url}}assets/img/template language.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}assets/img/template language.png" width="100%" />
 </figure>
 
 ???+ warning "Make sure to:"
@@ -262,6 +261,6 @@ See more under this link: [https://squidfunk.github.io/mkdocs-material/reference
 
   1. Landing page for the product
   2. Release notes
-  3. Overview
-  4. Installation - Getting started
-  5. ...
+  3. Getting started
+  4. Installation
+  5. Other sections

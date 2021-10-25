@@ -61,7 +61,7 @@ ci.text === "I want information about diabetes"
 
 This will only work for this exact sentence, even a "  " (double space) instead of a " " (single space) or an exclamation mark at the end will prevent the intent from being triggered.
 
-## Thresholds
+## What is a bad use case for Rule Intents?
 <div class="divider"></div>
 Let's say we have multiple intents that are closely related and can be uttered with a wide variety of vocabulary. A fitting example would be reporting symptoms to a medical chatbot. 
 It makes a huge difference whether you say "my chest hurts" or "it hurts when I am breathing" or "I have difficulties breathing". 
