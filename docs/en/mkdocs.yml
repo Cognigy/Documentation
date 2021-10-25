@@ -287,7 +287,7 @@ nav:
       - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
-    - Helm Values:
+      - Helm Values:
         - live-agent/installation/helm-values/index.md
         - live-agent/installation/helm-values/database.md
         - live-agent/installation/helm-values/redis.md
