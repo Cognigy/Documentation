@@ -224,10 +224,6 @@ nav:
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
       - ai/endpoints/webchat/webchat.md
-      # - ai/endpoints/webchat/deploy-webchat-endpoint.md
-      # - ai/endpoints/webchat/webchat-features.md
-      # - ai/endpoints/webchat/triggering-webchat-plugins.md
-      # - ai/endpoints/webchat/integrated-demo-page.md
     - ai/endpoints/cognigy-vg.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
@@ -280,62 +276,38 @@ nav:
   - Getting started:
     - Creating an Account:
       - live-agent/getting-started/creating-an-account.md
-    - Inviting your Agents:
       - live-agent/getting-started/inviting-your-agents.md
-    - Configuring a Cognigy.AI Endpoint for Handover:
       - live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover.md
-    - Add an Inbox for Handling the Handover:
       - live-agent/getting-started/add-an-inbox-for-handling-the-handover.md
-    - Creating a Cognigy.AI Handover Flow:
       - live-agent/getting-started/creating-a-cognigy-handover-flow.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
     - Deployment:
-      - Architecture:
-        - live-agent/installation/deployment/architecture.md
-      - Prerequisites:
-        - live-agent/installation/deployment/prerequisites.md
-      - Installation using Helm:
-        - live-agent/installation/deployment/installation-using-helm.md
-      - Helm Values:
-          - live-agent/installation/helm-values/index.md
-          - Database:
-            - live-agent/installation/helm-values/database.md
-          - Redis:
-            - live-agent/installation/helm-values/redis.md
-          - Storage:
-            - live-agent/installation/helm-values/storage.md
-          - SMTP:
-            - live-agent/installation/helm-values/smtp.md
-          - Email Templates:
-            - live-agent/installation/helm-values/email-templates.md
-      - Installation Updates:
-        - live-agent/installation/deployment/installation-updates.md
-  - Agents:
-    - live-agent/agents.md
-  - Teams:
-    - live-agent/teams.md
-  - Labels:
-    - live-agent/labels.md
-  - Inboxes:
-    - live-agent/inboxes.md
-  - Account Settings:
-    - live-agent/account-settings.md
-  - Contacts:
-    - live-agent/contacts.md
-  - Reports:
-    - live-agent/reports.md
-  - Conversation Workflow:
-    - live-agent/conversation-workflow.md
-  - Conversation Routing:
-    - live-agent/conversation-routing.md
-  - Profile Settings:
-    - live-agent/profile-settings.md
-  # - Super Admin:
-  #   - live-agent/super-admin.md Disabled for now
-  # - Help & Support:
-  #   - live-agent/help.md Disabled for now
+      - live-agent/installation/deployment/architecture.md
+      - live-agent/installation/deployment/prerequisites.md
+      - live-agent/installation/deployment/installation-using-helm.md
+    - Helm Values:
+        - live-agent/installation/helm-values/index.md
+        - live-agent/installation/helm-values/database.md
+        - live-agent/installation/helm-values/redis.md
+        - live-agent/installation/helm-values/storage.md
+        - live-agent/installation/helm-values/smtp.md
+        - live-agent/installation/helm-values/email-templates.md
+    - Installation Updates:
+      - live-agent/installation/deployment/installation-updates.md
+  - live-agent/agents.md
+  - live-agent/teams.md
+  - live-agent/labels.md
+  - live-agent/inboxes.md
+  - live-agent/account-settings.md
+  - live-agent/contacts.md
+  - live-agent/reports.md
+  - live-agent/conversation-workflow.md
+  - live-agent/conversation-routing.md
+  - live-agent/profile-settings.md
+  # - live-agent/super-admin.md 
+  # - live-agent/help.md 
 - Marketplace:
   - ai/resources/manage/extensions#marketplace
 
