@@ -2,7 +2,7 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c282bff-service-htto.jpg" width="100%" />
-  <figcaption>Figure 1: HTTP Request Node</figcaption>
+  <figcaption>HTTP Request Node</figcaption>
 </figure>
 
 ## Description
@@ -13,7 +13,7 @@ Whenever the HTTP Request Node gets triggered within a [Flow]({{config.site_url}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b29e843-http-screenshot.jpg" width="100%" />
-  <figcaption>Figure 2: HTTP Request Node Configuration Prompt</figcaption>
+  <figcaption>HTTP Request Node Configuration Prompt</figcaption>
 </figure>
 
 ## Request Methods
@@ -43,7 +43,7 @@ The URL to the targeted resource.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b29e843-http-screenshot.jpg" width="100%" />
-  <figcaption>Figure 4: URL field</figcaption>
+  <figcaption>URL field</figcaption>
 </figure>
 
 ???+ warning "URL-Encoding"
@@ -64,7 +64,7 @@ Here you can add the headers to your HTTP request. All headers are listed in one
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/97c2a2f-http-request-node-headers.png" width="75%" />
-  <figcaption>Figure 5: Headers field</figcaption>
+  <figcaption>Headers field</figcaption>
 </figure>
 
 You can also enable capturing the response headers along with the request body in the specified storage location.
@@ -83,7 +83,7 @@ Authentication makes use of [Connections]({{config.site_url}}ai/resources/build/
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/32a68b3-authentication.jpg" width="100%" />
-  <figcaption>Figure 6: Authorization Selection</figcaption>
+  <figcaption>Authorization Selection</figcaption>
 </figure>
 
 When a new authentication connection is created by clicking the "+" button next to the Parameters field, the "New Connection" window will appear to request the details specific to the authentication type.
@@ -92,7 +92,7 @@ As an example: The OAuth2 Connection is displayed below, allowing customized par
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/312b81a-Oauth2_Connection.PNG" width="100%" />
-  <figcaption>Figure 7: Example Connection: OAuth2</figcaption>
+  <figcaption>Example Connection: OAuth2</figcaption>
 </figure>
 
 In case you select an authorization type other than *No Auth*, additional fields will be provided which relate to the respective authorization type.
@@ -103,7 +103,7 @@ Here you define the context key where you want to store the response from the ex
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
-  <figcaption>Figure 8: Context Store field</figcaption>
+  <figcaption>Context Store field</figcaption>
 </figure>
 
 After the HTTP request has been successfully executed you can access the response payload by executing the following [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/):
@@ -114,7 +114,7 @@ After the HTTP request has been successfully executed you can access the respons
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/310d590-http-caching.jpg" width="100%" />
-  <figcaption>Figure 9: Execution and Caching</figcaption>
+  <figcaption>Execution and Caching</figcaption>
 </figure>
 
 ### Execution & Caching
@@ -126,7 +126,7 @@ When enabled the HTTP Node will cache the responses.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7cd129c-ssl.JPG" width="100%" />
-  <figcaption>Figure 10: Security</figcaption>
+  <figcaption>Security</figcaption>
 </figure>
 
 ### Security
@@ -135,7 +135,7 @@ By default Cognigy.AI will reject connecting against insecure SSL endpoints, suc
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c971806-errors.JPG" width="100%" />
-  <figcaption>Figure 11: Error Handling</figcaption>
+  <figcaption>Error Handling</figcaption>
 </figure>
 
 ### Error Handling
@@ -166,7 +166,7 @@ Here you can define the payload of your POST, PUT or PATCH request. You can choo
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b364540-http-post-payload.jpg" width="100%" />
-  <figcaption>Figure 12: JSON as a POST, PUT or PATCH Request Payload</figcaption>
+  <figcaption>JSON as a POST, PUT or PATCH Request Payload</figcaption>
 </figure>
 
 Payloads can be text, JSON, XML, Formdata (see below) or any other textual data.

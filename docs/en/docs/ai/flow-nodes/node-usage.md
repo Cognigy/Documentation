@@ -58,5 +58,37 @@ Any flow node can be added as an entrypoint for the flow. This means that a [Go 
 </figure>
 
 Any other node can be manually assigned as a flow entrypoint by opening the node editing menu and selecting the three dot menu from the top right hand corner. The option to "Set Entrypoint" can be selected which will add this node to the list of available entrypoints.
+
 ???+ info "Naming Entrypoints"
     It is helpful to define unique names for each entry point node using the [label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) feature. This means that users will be able to easily differentiate when selecting them from a list of options. For example, all Question nodes will be called "Question" unless the label is manually adjusted.
+
+## Warning
+<div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
+
+As of release v4.8 a warning message will be displayed in case your Flow includes more than 100 nodes:
+
+- If you create a flow including more than 100 nodes you will get a warning.
+- If you open an existing flow with more than 100 nodes you will get this warning.
+- The error should disappear if you remove some nodes and sink below 100.
+- You can disable the notification in your profile settings.
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0faf93c-warning_more_than_100_nodes_in_Flow.svg" width="100%" />
+  <figcaption>Warning information - Nodes > 100</figcaption>
+</figure>
+
+## Node ID
+<div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+
+As of release Cognigy.AI (4.10.0), Cognigy.AI provides Node IDs in every Flow. Navigating such URL opens the sidebar and scrolls the viewport to the Node.
+
+In detail:
+
+- Clicking on a Node in the Flow Chart adds its ID to the URL.
+- Closing the sidebar removes the ID from the URL.
+- Opening the page containing Node ID will open the sidebar and center the viewport on the Node.
