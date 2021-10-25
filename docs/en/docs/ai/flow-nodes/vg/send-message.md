@@ -15,4 +15,4 @@ The Send Message Node sends a text (optionally with SSML) to the Voice Gateway, 
 | Set Activity Parameters | Toggle | Option to add parameters which will be valid for this acitivity only. |
 
 ???+ info "This Node supports Activity Parameters"
-    To learn more about activity parameters, visit our Help Center at: https://support.cognigy.com/hc/en-us/articles/360017413959
+    To learn more about activity parameters, visit our Help Center at: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)

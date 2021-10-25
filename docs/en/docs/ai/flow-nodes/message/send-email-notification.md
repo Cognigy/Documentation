@@ -48,7 +48,7 @@ The result of the sent mail response will then be put at that location.
 If switched on, the flow execution will halt in case the mail-sending fails.
 
 #### Execute Request asynchronous (Advanced)
-If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned off, flow execution will** wait until the email is sent**.
+If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned off, flow execution will **wait until the email is sent**.
 
 ## Email Template
 <div class="divider"></div>

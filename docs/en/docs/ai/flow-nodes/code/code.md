@@ -18,9 +18,9 @@ Just as within other Nodes, `input`, `context` and `profile` can be accessed (an
 
 The `actions` object provides access to most internal node functions within the Code Node.
 
-For convenience, the `lodash` (https://lodash.com/) and `moment` (https://momentjs.com/) libraries are exposed for use within Code Nodes.
+For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `moment` ([https://momentjs.com/](https://momentjs.com/)) libraries are exposed for use within Code Nodes.
 
-## Description
+## Sending Facebook JSON
 <div class="divider"></div>
 
 You can send Facebook JSON directly from within Code Nodes using the output action. You can do this in two ways:

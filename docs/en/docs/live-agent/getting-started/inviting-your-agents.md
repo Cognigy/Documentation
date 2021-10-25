@@ -21,6 +21,6 @@ Now a verification email has been sent to the agent mail.
     <figcaption>Live Agent Verification Agents Screen</figcaption>
 </figure>
 ???+ info "Creating teams"
-    Head over to [**Teams**](/live-agent/teams) for knowing how to group the agents in teams.
+    Head over to [**Teams**]({{config.site_url}}live-agent/teams/) for knowing how to group the agents in teams.
 
-Repeat this process for all your agents. Once finished, you can continue to the chapter [Configuring a Cognigy.AI Endpoint for Handover](/live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover).
+Repeat this process for all your agents. Once finished, you can continue to the chapter [Configuring a Cognigy.AI Endpoint for Handover]({{config.site_url}}live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover/).

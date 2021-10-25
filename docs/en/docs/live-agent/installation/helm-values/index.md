@@ -41,11 +41,11 @@ Next, you can find a definition for each of these values to understand how to mo
 
 For specific values and logic, here you can find dedicated sections:
 
-- [Database](/live-agent/installation/helm-values/database)
-- [Redis](/live-agent/installation/helm-values/redis)
-- [Storage](/live-agent/installation/helm-values/storage)
-- [SMTP](/live-agent/installation/helm-values/smtp)
-- [Email Templates](/live-agent/installation/helm-values/email-templates)
+- [Database]({{config.site_url}}live-agent/installation/helm-values/database/)
+- [Redis]({{config.site_url}}live-agent/installation/helm-values/redis/)
+- [Storage]({{config.site_url}}live-agent/installation/helm-values/storage/)
+- [SMTP]({{config.site_url}}live-agent/installation/helm-values/smtp/)
+- [Email Templates]({{config.site_url}}live-agent/installation/helm-values/email-templates/)
 
 ## Image Values
 
@@ -96,7 +96,7 @@ In case you have a custom CA to trust or that need SSL to be disabled, these set
 | ----------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `configmap.S3_BUCKET_NAME`                | S3 bucket name                                                       | `""`                                                       |
 | `configmap.AWS_ACCESS_KEY_ID`             | Amazon access key ID                                                 | `""`                                                       |
-| `configmap.AWS_ENDPOINT_URL`              | [Storage Configuration](/live-agent/installation/configuration/storage/) | `""`                                                       |
+| `configmap.AWS_ENDPOINT_URL`              | [Storage Configuration]({{config.site_url}}live-agent/installation/configuration/storage/) | `""`                                                       |
 | `configmap.AWS_REGION`                    | Amazon region                                                        | `""`                                                       |
 | `configmap.AWS_SECRET_ACCESS_KEY`         | Amazon secret key ID                                                 | `""`                                                       |
 

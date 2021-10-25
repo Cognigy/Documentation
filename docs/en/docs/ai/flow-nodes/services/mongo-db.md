@@ -126,6 +126,7 @@ This section lets you configure where to store the result of the MongoDB request
 
 #### Advanced
 The advanced section exposes a number of extra settings.
+[https://docs.mongodb.com/manual/reference/operator/projection/](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"}
 
 ##### Use Operators
 If enabled, then you can use operators like $push in the update query. If not, then we will automatically $set everything that you write in the update query into the database.
