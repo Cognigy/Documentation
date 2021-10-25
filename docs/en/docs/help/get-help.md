@@ -13,12 +13,14 @@ Inside Cognigy.AI, you can find contextual in-product help by clicking the Help 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/87f223b-appbar.JPG" width="100%" />
+  <figcaption>Help Icon in the App Bar</figcaption>
 </figure>
 
 When clicking on this menu, the help widget will open and you can search for help directly within the product.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/be71391-helpwidget.JPG" width="100%" />
+  <figcaption>Help Widget</figcaption>
 </figure>
 
 ## Help Center

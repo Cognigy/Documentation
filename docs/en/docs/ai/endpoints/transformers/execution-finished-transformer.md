@@ -10,6 +10,7 @@ The `Execution Finished Transformer` is configured by implementing the `handleEx
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/40791e8-alexa-transformer.png" width="100%" />
+  <figcaption>Execution Finished Transformer Example</figcaption>
 </figure>
 
 ## Differences between Transformer Types

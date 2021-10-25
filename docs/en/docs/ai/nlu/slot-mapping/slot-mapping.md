@@ -114,7 +114,7 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
         </td>
     </tr>
     <tr>
-        <td>URL</td><td>https://cognigy.com</td><td>
+        <td>URL</td><td><a href=https://cognigy.com>https://cognigy.com</a></td><td>
 ```json
 "URL": [
       "https://cognigy.com"

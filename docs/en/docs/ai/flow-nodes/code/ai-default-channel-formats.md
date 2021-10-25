@@ -220,7 +220,7 @@ Outputs a list
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2fff87d-Say_list_option_order_3.svg" width="100%" />
-  <figcaption>Say Node seetings</figcaption>
+  <figcaption>Say Node settings</figcaption>
 </figure>
 
 <figure>
@@ -331,6 +331,37 @@ actions.output(null, {
     }
 });
 ``` 
+
+## Image
+<div class="divider"></div>
+Outputs image from a URL
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Image.png" width="100%" />
+  <figcaption>Image and Details in Say Node</figcaption>
+</figure>
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Image in Webchat.png" width="100%" />
+  <figcaption>Image in Webchat</figcaption>
+</figure>
+
+```javaScript
+actions.output(null, {
+    "type": "image",
+    "_cognigy": {
+        "_default": {
+            "_image": {
+                "type": "image",
+                "imageUrl": "https://testURL.test/image.jpeg"
+            }
+        }
+    }
+});
+``` 
+
+
+
 ## Video
 <div class="divider"></div>
 Outputs video from a URL 

@@ -55,7 +55,7 @@ The Input object contains the following properties (for text input).
 
 ### NLU Properties
 
-The detailed NLU results are published to the **nlu ** variable which contains the following properties:
+The detailed NLU results are published to the **nlu** variable which contains the following properties:
 
 |Key|	Description|
 |--|--|
@@ -73,6 +73,7 @@ The detailed NLU results are published to the **nlu ** variable which contains t
     **They are thus not available inside Cognigy NLU Rules and Conditions.**
 
     Properties written by the NLU into the Input:
+    
       * intent
       * intentScore
       * nlu

@@ -36,7 +36,7 @@ Continue with our choosing a product to get more detailed information on the wid
     </div>
   </a>
 
-  <a class="card-link" href="{{config.site_url}}insights/">
+  <a class="card-link" href="{{config.site_url}}insights/cognigy-insights/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/IN-blue.svg" alt="Cognigy Logo" >
       <div class="item-container">
@@ -45,7 +45,7 @@ Continue with our choosing a product to get more detailed information on the wid
     </div>
   </a>
 
-  <a class="card-link" href="{{config.site_url}}webchat/">
+  <a class="card-link" href="{{config.site_url}}ai/endpoints/webchat/webchat/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/webchat.svg" alt="Cognigy Logo">
       <div class="item-container">
