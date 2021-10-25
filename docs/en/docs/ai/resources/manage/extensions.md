@@ -90,13 +90,13 @@ With Cognigy.AI v4.1.6 we have introduced the ability to "trust" the code of an 
 
 In order to enable the feature, the following additional environment variable can be used:
 
-```
+```txt
 FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION=true
 ```
 
 Our customers usually accomplish this, by adding the following to their "config-map_patch.yaml" in the "kubernetes" repository in which the manifest files for deployment are located:
 
-```
+```YML
 - op: add
   path: /data/FEATURE_ALLOW_TRUSTED_CODE_CONFIGURATION
   value: "true"
@@ -116,13 +116,15 @@ With Cognigy.AI v4.8 we have introduced the ability for on-premise customers to 
 
 To enable the feature, the following additional environment variable can be used to update the GitHub **config.map** file: 
 
-```
+**Environment variable for organization-wide extensions**
+```txt
 FEATURE_ADDITIONAL_SYSTEM_WIDE_EXTENSIONS_PATH
 ```
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
 
 ## Caching Extensions in local Directory
+
 <div class="divider"></div>
 
 As of release v4.8 Extensions can be cached in the local directory which improves the loading performance. 
@@ -132,7 +134,7 @@ When the max dir size gets exceeded by an extension, the last X extensions (curr
 
 If required you can adjust the behavior by adding and configuring environment variables:
 
-```
+```txt
 MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB
 ```
 
@@ -140,7 +142,7 @@ The default value of MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB is 512 MB.
 
 The cache is within the [Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/) of service-execution. So it makes no difference if you are processing on-premises or trial, app, etc.
 
-```
+```txt
 EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
 ```
 ## Marketplace
@@ -160,10 +162,11 @@ The Marketplace feature enables customers to search for tag-words like "CRM syst
 - You can install, uninstall, upload, drag, and drop Extensions from the Marketplace.
 
 - When clicking on an Extension a sidebar panel will display details of the selected Extension:
-     **Icon (avatar), name, and version**
-     **Basic Information**
-     **Connections**
-     **Nodes**
+
+     - **Icon (avatar), name, and version**
+     - **Basic Information**
+     - **Connections**
+     - **Nodes**
 
 - You can copy the URL and open it in another tab, also when reloading the page.
 
