@@ -1,99 +1,29 @@
 # Agent Handover
 
-CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) and [Context]({{config.site_url}}ai/tools/interaction-panel/context/) objects within text and JSON.
+Human support **Agent Handover** is a critical tool for incorporating virtual agents into existing contact center workflows. Direct communication between virtual agents and human agents will enrich the experience of a customer beyond the capabilities of a Conversational AI.
 
-Using CognigyScript, you can execute powerful scripts to create the replies you want to return to the client.
-
-Within text, you write CognigyScript within `{ { } }` tags. Example: `{ {input.text} }`
-
-CognigyScript is essentially JavaScript, but gives you access to the Cognigy objects via exposed variables:
-
-|Variable	|Description|	Example|
-|--|--|--|
-|input|	The Input Object|	{ {input.text}}|
-|context|	The Context Object|	{ {context.selectedHotel} }|
-|profile|	The Contact Profile Object|	{ {profile.firstname} }|
-
-## Node Arguments
-
+## Handover Processes
 <div class="divider"></div>
 
-Accessing the CognigyScript functionality differs between different types of arguments.
+If a request from a user is an edge case that is just too specific to be handled by the Bot, the bot can offer the user to be forwarded to a support agent, a real human, that can intercept the conversation and help the customer manually without the need to change channels.
 
-## For Text arguments
-
-Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{ { } }` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
-
-???+ info "Invalid expressions return an empty string"
-    If the expression is invalid, an empty string is returned.
-
-    *Example*
-`{ {input.text.toUpperCase()} }` would return the text the client sent all in upper case.
-
-**Type Preservation**
-CognigyScript in Node Arguments is always returned as string, unless you force the type to be preserved. You can do this by appending `.preserveType()` to your script.
-
-*Example*
-`{ {context.anObject.preserveType()} }` will return whatever `anObject` is, so for example a JavaScript Object.
-
-## For JSON arguments
-
-Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"} }` has to be used to run CognigyScript. We have to supply a script and a return type. If the return type isn't equal to the requested type, Cognigy.AI will try to convert the return type to it.
-
-**Example with Typing**
-```JavaScript
-{
-    "customer_orders": {
-        "$cs": {
-            "script": "context.orders",
-            "type": "object"
-        }
-    }
-}
-```
-
-**Example with Inline CognigyScript**
-```JavaScript
-{
-    "customer_orders": "{ {context.orders} }"
-}
-```
-This would try to retrieve the orders object from the Context and assign it to customer_orders. If it doesn't exist, it would return undefined.
-
-## IF Conditions and SWITCH Operands
-
-Within conditions, CognigyScript is also written without `{ {` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
-
-???+ info "Example"
-    `context.orders === 3` would be true, if the orders variable stored in the Context is 3.
-
-
-## Code Nodes
-
-Within Code Nodes you don't need to use the { { } } tags. The `input`, `context`, `profile` and `actions` variables are exposed by default, as are `_` and `moment`.
-
-**Example**
-```JavaScript
-const ordercount = context.orders;
-switch(ordercount) {
-    case 0:
-        input.ordertext = "You ordered no items";
-        actions.output('Hello', {'action': 1}); // outputs the text 'hello' with data {'action': 1}
-        break;
-    case 1:
-        input.ordertext = "You ordered one item";
-        break;
-    default:
-        input.ordertext = "You ordered many items";
-}
-```
-
-## Cognigy Objects Life Span
-
-<div class="divider"></div>
-
-The picture below shows the life span of the different Cognigy objects. The Input object (input) is created anew on each new user input (each new Flow Execution), the Context object (context) is stored for the duration of the entire conversation, and the Profile object (profile) is stored forever. This means that information about the user that you want to persist (e.g. the name of the user), should be stored in the Profile object.
+**Agent Handover Processes** can be integrated in a Flow by using the **Handover Node**. If this Node is triggered, a Handover request from the customer is sent to the **Contact Center Service** that has been configured in the [Endpoint Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/). A human agent can then intercept and take over the conversation from the virtual agent.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/a570379-data.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/a26ae2b-handover.PNG" width="100%" />
 </figure>
+
+Once a Handover has been initiated, the normal execution of the Flow is paused until the customer who is waiting for a support agent cancels the request, or until an agent finishes the conversation. Before the conversation with an agent has started, the customer can cancel the request and go back to the normal flow execution by triggering a selected intent or a dedicated quick reply.
+
+## Handover Node
+<div class="divider"></div>
+
+The Handover Node has the following fields:
+
+|Parameter|	Type	|Description|
+|--|--|--|
+|Text Message|	CognigyScript|	Default text to output if the Handover was requested|
+|Cancel Intent Name|	CognigyScript|	The intent the user has to trigger to cancel the Handover request|
+|Unavailable Message|	CognigyScript|	Default text to output if the Live Chat service is unavailable|
+|Unsupported Channel Message|	CognigyScript|	Default text to output if the channel that the user is using, does not support Live Chat|
+|Quick Reply Text|	CognigyScript|	The text for a quick reply button that cancels the Handover request|

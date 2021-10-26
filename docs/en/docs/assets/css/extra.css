@@ -281,3 +281,9 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
     width: 50% !important;
   }
 }
+
+/* .md-search__inner{
+  float: none;
+  margin: auto;
+  width: 50%;
+} */
