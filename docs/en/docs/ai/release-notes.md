@@ -607,7 +607,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Added the ability to upload Extensions with dependencies (node_modules)
 - Added a Log-Message Node
 - Added a Overwrite-Analytics Node
-- Add support for using self-signed SSL/TLS sertificates with our httpRequest node
+- Add support for using self-signed SSL/TLS certificates with our httpRequest node
 - Add support to see HTTP response headers when using our httpRequest node
 
 ### Bugfixes
