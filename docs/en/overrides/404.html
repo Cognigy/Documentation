@@ -1,0 +1,139 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+
+  <h1 id="404-page-not-found" style="text-align: center">404</h1>
+  <p style="text-align: center"><strong>Page you are looking for was not found</strong></p>
+  <p style="text-align: center">Try the <a href="{{ base_url }}">homepage</a> or continue searching!</p>
+
+
+  <!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog">
+    <label class="md-search__overlay" for="__search"></label>
+    <div class="md-search__inner" role="search">
+      <form class="md-search__form" name="search">
+  
+        <!-- Search input -->
+        <input
+          type="text"
+          class="md-search__input"
+          name="query"
+          aria-label="{{ lang.t('search.placeholder') }}"
+          placeholder="{{ lang.t('search.placeholder') }}"
+          autocapitalize="off"
+          autocorrect="off"
+          autocomplete="off"
+          spellcheck="false"
+          data-md-component="search-query"
+          required
+        />
+  
+        <!-- Button to open search -->
+        <label class="md-search__icon md-icon" for="__search">
+          {% include ".icons/material/magnify.svg" %}
+          {% include ".icons/material/arrow-left.svg" %}
+        </label>
+  
+        <!-- Search options -->
+        <nav
+          class="md-search__options"
+          aria-label="{{ lang.t('search.title') }}"
+        >
+  
+          <!-- Button to share search -->
+          {% if "search.share" in features %}
+            <a
+              href="javascript:void(0)"
+              class="md-search__icon md-icon"
+              aria-label="{{ lang.t('search.share') }}"
+              data-clipboard
+              data-clipboard-text=""
+              data-md-component="search-share"
+              tabindex="-1"
+            >
+              {% include ".icons/material/share-variant.svg" %}
+            </a>
+          {% endif %}
+  
+          <!-- Button to reset search -->
+          <button
+            type="reset"
+            class="md-search__icon md-icon"
+            aria-label="{{ lang.t('search.reset') }}"
+            tabindex="-1"
+          >
+            {% include ".icons/material/close.svg" %}
+          </button>
+        </nav>
+  
+        <!-- Search suggestions -->
+        {% if "search.suggest" in features %}
+          <div
+            class="md-search__suggest"
+            data-md-component="search-suggest"
+          ></div>
+        {% endif %}
+      </form>
+      <div class="md-search__output">
+        <div class="md-search__scrollwrap" data-md-scrollfix>
+  
+          <!-- Search results -->
+          <div class="md-search-result" data-md-component="search-result">
+            <div class="md-search-result__meta">
+              {{ lang.t("search.result.initializer") }}
+            </div>
+            <ol class="md-search-result__list"></ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<h3>Looking for something else?</h3>
+
+<div class="card-container">
+  <a class="card-link-2" href="https://academy.cognigy.com/?_ga=2.167282873.660389062.1629961182-376713428.1620216510">
+    <div class="card">
+      <img class="card-2-image" src="{{config.site_url}}assets/img/something-001.svg">
+      <div class="item-2-container">
+        <h3><b>NEW: Cognigy Academy</b></h3>
+        <p>Enroll in our free video courses and become a certified Cognigy.AI expert</p>
+      </div>
+    </div>
+  </a>
+
+  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us/categories/360002716460-How-to-s-Tutorials">
+    <div class="card">
+      <img class="card-2-image" src="{{config.site_url}}assets/img/something-002.svg">
+      <div class="item-2-container">
+        <h3><b>How-to's & Tutorials</b></h3>
+        <p>Follow our step-by-step guides for easy integration</p>
+      </div>
+    </div>
+  </a>
+
+  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us/community/topics">
+    <div class="card">
+      <img class="card-2-image" src="{{config.site_url}}assets/img/something-003.svg">
+      <div class="item-2-container">
+        <h3><b>Community</b></h3>
+        <p>Ask questions and share your ideas with the community!</p>
+      </div>
+    </div>
+  </a>
+
+  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us/requests/new?">
+    <div class="card">
+      <img class="card-2-image" src="{{config.site_url}}assets/img/something-004.svg">
+      <div class="item-2-container">
+        <h3><b>Support</b></h3>
+        <p>Submit a request to the technical support team</p>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+
+{% endblock %}
