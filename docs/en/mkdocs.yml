@@ -54,7 +54,7 @@ nav:
     - Agents:
       - ai/resources/agents/agents.md
       - ai/resources/agents/journeys.md
-      # - ai/resources/agents/tasks.md
+      - ai/resources/agents/tasks.md
     - Build:
       - ai/resources/build/build.md
       - ai/resources/build/flows.md
