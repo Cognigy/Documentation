@@ -54,7 +54,7 @@ def complete_existing_lang(incomplete: str):
 
 def get_base_lang_config(lang: str):
     en_config = get_en_config()
-    cognigy_url_base = "https://ndocs.cognigy.com/" 
+    cognigy_url_base = "https://docs.cognigy.com/" 
     new_config = en_config.copy()
     new_config["site_url"] = en_config["site_url"] + f"{lang}/"
     new_config["theme"]["logo"] = cognigy_url_base + en_config["theme"]["logo"]
