@@ -65,7 +65,7 @@ hide:
 
 </div>
 
-<h4>Still using Cognigy V3 ? then <a href="https://old-docs.cognigy.com/v3.6/docs">click here</a> to get more help.</h4>
+<h4>Still using Cognigy V3 ? then <a href="https://old-docs.cognigy.com/docs">click here</a> to get more help.</h4>
 
 <h3>More developer resources & learning materials</h3>
 
