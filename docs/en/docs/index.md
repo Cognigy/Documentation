@@ -53,18 +53,19 @@ hide:
     </div>
   </a>
 
-  <a class="card-link" href="{{config.site_url}}live-agent/overview/">
+  <!-- we will uncomment this part after LA is published (also need to do it in the yml page)-->
+  <!-- <a class="card-link" href="{{config.site_url}}live-agent/overview/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
         <h3><b>Live Agent</b></h3>
       </div>
     </div>
-  </a>
+  </a> -->
 
 </div>
 
-<h4>Still using Cognigy V3 ? then <a href="https://docs.cognigy.com/v3.6/docs">click here</a> to get more help.</h4>
+<h4>Still using Cognigy V3 ? then <a href="https://old-docs.cognigy.com/v3.6/docs">click here</a> to get more help.</h4>
 
 <h3>More developer resources & learning materials</h3>
 
