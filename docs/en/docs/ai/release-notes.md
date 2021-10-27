@@ -1,5 +1,13 @@
 # Release notes
 
+## 4.13.1
+**Released**: October 28th, 2021
+
+## Improvements
+- Expose additional metrics for one of our microservices and further prepare our application to get monitored with our new monitoring solution we are currently working on
+- Improve system stability by adding a maximum TTL for a message defining how long it can reside in the system
+
+
 ## 4.13.0
 **Released:** October 28th, 2021
 
