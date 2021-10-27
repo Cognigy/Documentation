@@ -66,7 +66,7 @@ hide:
 
 <h4>Still using Cognigy V3 ? then <a href="https://docs.cognigy.com/v3.6/docs">click here</a> to get more help.</h4>
 
-<h3>Looking for something else?</h3>
+<h3>More developer resources & learning materials</h3>
 
 <div class="card-container">
 
@@ -74,7 +74,7 @@ hide:
     <div class="card">
       <img class="card-2-image" src="{{config.site_url}}assets/img/something-002.svg">
       <div class="item-2-container">
-        <h3><b>Cognigy Help Center</b></h3>
+        <h3><b>Cognigy<br/>Help Center</b></h3>
         <p>Browse our step-by-step tutorials, how-to's, and best practices</p>
       </div>
     </div>
