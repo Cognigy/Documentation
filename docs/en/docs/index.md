@@ -4,22 +4,21 @@ hide:
   - toc
 ---
 <style>
-  @media only screen and (min-width: 76.25em) {
-  .md-content {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 65rem;
+  @media only screen and (min-width: 76.125em) {
+    .md-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1920px;
+    }
   }
-}
 </style>
 #
 <figure >
-  <img class="image-center logo-home-page" src="{{config.site_url}}assets/img/Cognigy-black.svg" width="50%" />
+  <img class="image-center logo-home-page" src="{{config.site_url}}assets/img/Cognigy-blue.svg" width="50%" />
   <br>
 </figure>
 
-Welcome to the documentation of Cognigy products, a Conversational AI platform that helps you create advanced virtual agents that can be rolled out across a wide range of channels.
-Continue with our choosing a product to get more detailed information on the wide array of its features.
+<b>Welcome to the Cognigy developer documentation!</b> Cognigy enables enterprises to easily create and operate AI-powered virtual agents to automatically handle calls and chats from customers and employees. Please choose a product line and explore all features and platform capabilities.
 
 <h3>Choose a product:</h3>
 <div class="divider"></div>
@@ -31,7 +30,7 @@ Continue with our choosing a product to get more detailed information on the wid
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/AI-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
-        <h3><b> AI</b></h3>
+        <h3><b>Virtual Agents</b></h3>
       </div>
     </div>
   </a>
@@ -47,7 +46,7 @@ Continue with our choosing a product to get more detailed information on the wid
 
   <a class="card-link" href="{{config.site_url}}ai/endpoints/webchat/webchat/">
     <div class="card">
-      <img class="card-image" src="{{config.site_url}}assets/img/webchat.svg" alt="Cognigy Logo">
+      <img class="card-image" src="{{config.site_url}}assets/img/webchat-svg.svg" alt="Cognigy Logo">
       <div class="item-container">
         <h3><b>Webchat Widget</b></h3>
       </div>
@@ -70,22 +69,23 @@ Continue with our choosing a product to get more detailed information on the wid
 <h3>Looking for something else?</h3>
 
 <div class="card-container">
-  <a class="card-link-2" href="https://academy.cognigy.com/?_ga=2.167282873.660389062.1629961182-376713428.1620216510">
+
+  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us">
     <div class="card">
-      <img class="card-2-image" src="{{config.site_url}}assets/img/something-001.svg">
+      <img class="card-2-image" src="{{config.site_url}}assets/img/something-002.svg">
       <div class="item-2-container">
-        <h3><b>NEW: Cognigy Academy</b></h3>
-        <p>Enroll in our free video courses and become a certified Cognigy.AI expert</p>
+        <h3><b>Cognigy Help Center</b></h3>
+        <p>Browse our step-by-step tutorials, how-to's, and best practices</p>
       </div>
     </div>
   </a>
 
-  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us/categories/360002716460-How-to-s-Tutorials">
+  <a class="card-link-2" href="https://academy.cognigy.com/">
     <div class="card">
-      <img class="card-2-image" src="{{config.site_url}}assets/img/something-002.svg">
+      <img class="card-2-image" src="{{config.site_url}}assets/img/something-001.svg">
       <div class="item-2-container">
-        <h3><b>How-to's & Tutorials</b></h3>
-        <p>Follow our step-by-step guides for easy integration</p>
+        <h3><b>Cognigy Academy</b></h3>
+        <p>Enroll in our free video courses and become a certified expert</p>
       </div>
     </div>
   </a>
