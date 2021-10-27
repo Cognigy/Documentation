@@ -1,5 +1,86 @@
 # Release notes
 
+## 4.13.1
+**Released**: October 28th, 2021
+
+## Improvements
+- Expose additional metrics for one of our microservices and further prepare our application to get monitored with our new monitoring solution we are currently working on
+- Improve system stability by adding a maximum TTL for a message defining how long it can reside in the system
+
+
+## 4.13.0
+**Released:** October 28th, 2021
+
+## Features
+### Avaya CPaaS
+This release of Cognigy.AI contains the new Avaya CPaaS endpoint which is an essential rewrite of the currently existing one. We have added many new capabilities and e.g. made TTS/STT language configurable.
+
+### Amazon Lex NLU Connector
+This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
+
+## Improvements
+- Improved by adding additional filters to the Transcript Explorer allowing to filter transcripts by message count and rating
+- Improved by adding the ability to set the starting and ending step from the context menu of a step in the Step Explorer
+- Improved by allowing to select and copy text of messages in the Transcript Explorer
+- Improved by appropriately rendering datepicker messages in the Transcript Explorer
+- Improved by adding information about the required Cognigy version to use option resolvers and localization to the Extension tools documentation
+
+## Bug Fixes
+- Fixed a bug where the confirmation and disambiguation sentence are not translated when automatically translating an intent in the NLU tab
+- Fixed a bug where an Agent does not disappear from the list of Agents after deleting it
+- Fixed a bug related to the layout of the Member select dropdown
+- Fixed a bug where the language and Intent dropdown menus automatically scroll to the top by mistake
+- Fixed a bug where duplicate Synonyms within a Lexicon and duplicate Slots within a Keyphrase could be created by adding leading or trailing spaces
+- Fixed a bug where training fails if an empty Lexicon is attached to a Flow
+- Fixed a bug where opening a message in Message Explorer from the Transcript Explorer is broken
+- Fixed a bug where intents with multiple localizations cannot be deleted
+- Fixed a bug related to Intent reconfirmation not properly working after using an Execute Flow Node
+- Fixed a bug related to opening large Lexicons
+- Fixed a bug where the Transcript Explorer crashes on certain messages
+- Fixed a bug where search functionality in Transcript Explorer does not work when a Snapshot is selected
+- Fixed a bug where “Switchboard pass” events from the “Sunshine Conversations” Endpoint are not handled properly
+- Fixed a bug related to incorrect filtering of found keyphrases based on attached flows, when service-nlp-matcher is activated
+
+
+## 4.12.0
+**Released:** October 11th, 2021
+
+## Features
+### Localization for Extensions
+Added option to allow extension creators to provide localized display values in Node descriptor
+
+### Management-UI authentication
+Added support for multiple credential pairs for the Cognigy Management UI
+
+### Non-conversational Endpoint
+This release of Cognigy.AI adds a non-conversational Endpoint. The feature needs to be enabled using an additional environment variable. It allows customers to create an Endpoint that will not process inputs using NLU enginers. The Endpoint can e.g. be used if Cognigy.AI is being used as a process orchestration tool
+
+## Improvements
+- Improved by adding the Node type to the error logs when Node execution fails
+- Improved by merging the extension tools basic documentation with the option resolvers and localization documentation into one document
+
+## Bug Fixes
+- Fixed a bug where Webhook Endpoint Inject calls cannot be made without errors
+- Fixed a bug where the FROM variable is not used in password reset request emails
+- Fixed a bug where a Say node with an empty string breaks the Insights UI
+- Fixed a bug where Flow Node comments could be accessed without the necessary read permissions
+- Fixed a bug where the “Select Flow” and “Select Node” fields in Go To and Execute Flow Nodes are editable for users without the necessary permissions
+- Fixed accessibility issues in Marketplace
+- Fixed a bug where Lexicon Slots are not deleted once they are no longer used in Lexicons
+- Fixed a bug where the Transcript Explorer crashed upon opening a certain chat log
+- Fixed a bug where ranked bar charts erroneously display least frequent values instead of most frequent values in Insights
+- Fixed a bug related to breaking Code Nodes for old Endpoints having no translation settings set
+- Fixed a bug where the “Top Goals” tile in Insights is displayed inappropriately for Flows with more than 10 goals
+- Fixed a bug where Flows crash when Say Nodes succeed Reset Context Nodes
+- Fixed a bug where output transformers do not process all messages
+- Fixed a bug related to Intent reconfirmation in Question Nodes
+- Fixed a bug where the removal of a custom Contact Profile schema field does not lead to the deletion of the actual data for the field in allContact Profiles
+- Fixed a bug where postback buttons send title instead of payload for Sunshine Conversations
+- Fixed a bug where incorrect Flow Names would be displayed in the Endpoints Flow dropdown
+- Fixed a bug where a "Code Transpile Error" would pop up when enabling "enableUnreadMessageTitleIndicator" in the Webchat Endpoint
+- Fixed a bug where the "Jump to Flow" button would be disabled immediately after restoring a Snapshot
+- Fixed a bug where creating a Package would block one of our microservices
+
 
 ## 4.11.0
 **Released:** September 20th, 2021
