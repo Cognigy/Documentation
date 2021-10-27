@@ -162,7 +162,7 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 }
 
 .card-link {
-  width: 25%;
+  width: 33.33%;
   padding: 1em;
   display: flex;
   align-items: stretch;
@@ -347,9 +347,9 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 }
 
 @media screen and (max-width: 60em) {
-  .card-link {
+  /* .card-link {
     width: 50% !important;
-  }
+  } */
 }
 
 @media screen and (max-width: 45em) {
