@@ -248,7 +248,7 @@ Runs a transaction.
 Triggers a StoredProcedure.
 ## NLU Nodes
 <div class="divider"></div>
-NLU Nodes are a collection of Nodes that are related to the platform's [**NLU**]({{config.site_url}}ai/nlu/overview/). It features a range of different Nodes.
+NLU Nodes are a collection of Nodes that are related to the platform's [**NLU**]({{config.site_url}}ai/nlu/nlu-overview/overview/). It features a range of different Nodes.
 
 ### Question
 <figure>

@@ -18,7 +18,7 @@ Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records.
 
 <div class="divider"></div>
 
-You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile#api-keys/)  by connecting to respective OData URL on your server.
+You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/)  by connecting to respective OData URL on your server.
 
 An OData URL is combined of the service root, api version, the collection and api key parameter as follows:
 
@@ -40,11 +40,11 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 ## Version 2.0
 The current version of the OData endpoint is `v2.0`. This endpoint version is available from Cognigy.AI Version 4.2.0 onwards. In this version, the following OData collections are available:
 
-- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#inputs/) (`/Inputs`)
-- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#chathistory/) (`/ChatHistory`)
-- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#steps/) (`/Steps`)
-- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#executedsteps/) (`/ExecutedSteps`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint#conversations/) (`/Conversations`)
+- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`)
+- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`)
+- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
+- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
 
 The URL for accessing the V2.0 OData endpoint is as follows:
 `https://<hostname>/v2.0/<collection>?apikey=YOURAPIKEY`

@@ -4,7 +4,7 @@ The Context is a JSON object which stores persistent information.
 
 Every contact that connects to Cognigy.AI has their own Context which lives throughout the lifetime of the session. When a contact disconnects from Cognigy.AI, the Context is persisted in the database and retrieved upon reconnection.
 
-The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript]({{config.site_url}}ai/tools/cognigy-script#cognigy-objects-life-span/) page.
+The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/#cognigy-objects-life-span/) page.
 
 ## Accessing the Context object
 <div class="divider"></div>

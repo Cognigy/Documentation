@@ -63,7 +63,7 @@ In case you've found a bug or need technical assistance, you can file a support 
 
 For a better and faster handling of your ticket you should provide as much information as you can give us.
 
-The following sections describe recommended attachments and informations you could send us to accelerate the ticket handling process. 
+The following sections describe recommended attachments and information you could send us to accelerate the ticket handling process. 
 
 ## General Problems
 
@@ -73,7 +73,7 @@ For an issue which you can't really associate with a specific resource (flow, en
 
 The ticket for a problem with a flow should have the Flow and all it's dependencies attached.
 
-You can also attach a screenshot of the logs (see [Logs]({{config.site_url}}ai/resources/test/logs)) to the ticket. 
+You can also attach a screenshot of the logs (see [Logs]({{config.site_url}}ai/resources/test/logs/)) to the ticket. 
 
 ## Problems with the UI
 

@@ -16,7 +16,7 @@ The Interaction Panel will preview channel-specific output in case this has been
 </figure>
 
 ???+ success "Tip: Showing only selected output"
-    It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel#chat-output/)**.
+    It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output/)**.
 
 ### Info
 <div class="divider"></div>
@@ -57,7 +57,7 @@ The **(Contact) Profile** acts as persistent - long term - memory and is used to
 The **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
 
 #### Data Input
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. This field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel#settings/). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
+It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. This field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#settings). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
  
 ### Settings
 <div class="divider"></div>

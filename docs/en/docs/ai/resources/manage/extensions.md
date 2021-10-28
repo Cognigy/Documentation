@@ -1,11 +1,29 @@
 # Extensions
 
-Extensions enable anyone to build JavaScript modules and to expose them as Flow Nodes within Cognigy. There are no restrictions on node modules (NPM) or functionality.
+Extensions are a way of extending the Cognigy Flow Editor with new Nodes. Extensions contain multiple Flow Nodes which appear in the Flow Editor once they have been installed.
+
+## Extension Marketplace
+<div class="divider"></div>
+
+A variety of pre-built Extensions can be installed with a single click from the Cognigy Extension Marketplace if configured.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/2f43014-extensions.png" width="100%" />
-  <figcaption>Example Extensions Page</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/11976f3-Extension-Marketplace.PNG" width="100%" />
+  <figcaption>Extension Marketplace</figcaption>
 </figure>
+
+- Selecting an extension from the Marketplace section will reveal more information - similar to when selecting an already installed extension.
+- You can copy the URL and open it in another tab, also when reloading the page.
+- You can search for Extensions using the "Search field".
+- You can uninstall installed Extensions.
+
+## Developing a custom Extension
+<div class="divider"></div>
+
+Cognigy allows anyone to extend the capabilities of Cognigy.AI by developing their own Extensions. Extensions are JavaScript or TypeScript Modules that can be exposed as Flow Nodes within Cognigy.AI. Extensions could be used for integrating with third-party APIs, for executing complex logic, for performing long-running computations or for creating convenience Nodes using various npm modules.
+
+Watch our Cognigy Sessions Episode about Extensions for a technical deep dive.
+
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -19,32 +37,35 @@ Extensions enable anyone to build JavaScript modules and to expose them as Flow 
    </div>
 </blockquote>
 
-
-Extensions allow developers to extend the capabilities of Cognigy.AI by uploading JavaScript Modules into Cognigy.AI. These modules can expose Cognigy Flow Nodes and be used directly within Cognigy Flows.
-
-Please have a look at the [**Extensions Github Repository**](https://github.com/Cognigy/Extensions) for more information. 
-
-???+ warning "Extension Timeout"
-    Extensions have a default time-out of 20 seconds. The time-out can be changed on dedicated Cognigy.AI installations.
-
-## Extension Modules
-If you're just after finding Cognigy's currently released Extensions to install into your Cognigy.AI instance, please see the link below.
+If you're keen to get started developing Extensions right away, see our Get Started documentation.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">📘</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360016409380-Extensions-Overview" target="_blank" >Extension Overview</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360016534459-Get-Started" target="_blank" >Get Started</a>
       </div>
       <div class="callout-subtext">
-            Cognigy Helpcenter article
+            Cognigy Help Center article
       </div>
    </div>
 </blockquote>
 
-## Source Code
+All the required resources to build and upload the Extension to Cognigy.AI can be found in the Readme of our @cognigy/extension-tools package.
 
-If you want to develop your own Extensions and would like to see examples, visit our GitHub repository.
+<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon-svg"><img src="https://img.icons8.com/color/96/000000/npm.png"/></span>
+    <div class="callout-heading">
+      <div class="callout-text">
+         <a href="https://www.npmjs.com/package/@cognigy/extension-tools" target="_blank" >@cognigy/extension-tools</a>
+      </div>
+      <div class="callout-subtext">
+            Reference to Cognigy repository on GitHub
+      </div>
+   </div>
+</blockquote>
+
+If you want to see examples of Extensions, visit our GitHub repository.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span>
@@ -58,23 +79,29 @@ If you want to develop your own Extensions and would like to see examples, visit
    </div>
 </blockquote>
 
-## Get Started
 
-<blockquote class="callout callout_info" theme="📘">
-    <span class="callout-icon">📘</span>
-    <div class="callout-heading">
-      <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360016534459-Get-Started" target="_blank" >Get Started</a>
-      </div>
-      <div class="callout-subtext">
-            Cognigy Helpcenter article
-      </div>
-   </div>
-</blockquote>
+???+ warning "Extension Timeout"
+    Extensions have a default time-out of 20 seconds. The time-out can be changed on dedicated Cognigy.AI installations.
 
 
-???+ info "Where are Custom Modules?"
-    Extensions are the successor to the Cognigy Integration Framework Custom Modules and replace them completely.
+
+## Installing a custom Extension
+<div class="divider"></div>
+
+You can install a custom Extension in the Extension Marketplace by using the “Upload Extension” button or by dragging and dropping.
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/7cf0412-Installing-Custom-Extensions.PNG" width="100%" />
+  <figcaption>Installing a custom Extension</figcaption>
+</figure>
+
+
+## Publishing an Extension
+<div class="divider"></div>
+
+If you want us to approve your developed extension and publish it on the Extension Marketplace, please follow the approval procedure explained in the readme of our [GitHub repository](https://github.com/Cognigy/Extensions).
+
 
 ## Extension Performance
 <div class="divider"></div>
@@ -106,6 +133,8 @@ Enabling the feature will not change anything automatically. Once the feature wa
 
 ???+ danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
+
+
 
 ## Extension organization-wide embeddable
 <div class="divider"></div>
@@ -145,38 +174,23 @@ The cache is within the [Kubernetes pod](https://kubernetes.io/docs/concepts/wor
 ```txt
 EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
 ```
-## Marketplace
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-<div class="divider"></div>
-
-Cognigy provides Marketplace as a tool to strengthen the usage of Extensions and to improve the developer user experience for customers using the product.
-
-The Marketplace feature enables customers to search for tag-words like "CRM system" and then, when successful, be able with a single click to install the Extension (instead of uploading Extensions).
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/391d3bc-Marketplace_5.svg" width="100%" />
-  <figcaption>Extension Marketplace</figcaption>
-</figure>
-
-- You can install, uninstall, upload, drag, and drop Extensions from the Marketplace.
-
-- When clicking on an Extension a sidebar panel will display details of the selected Extension:
-
-     - **Icon (avatar), name, and version**
-     - **Basic Information**
-     - **Connections**
-     - **Nodes**
-
-- You can copy the URL and open it in another tab, also when reloading the page.
-
-- You can search for Extensions using the "Search field".
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/917a2b9-Marketplace_6.svg" width="100%" />
-  <figcaption>Marketplace sidebar panel</figcaption>
-</figure>
 
 ## Dynamic Fields
+<div class="divider"></div>
 
-Details about using dynamic fields in Flow Nodes can be found here: [Dynamic Node Fields]({{config.site_url}}ai/flow-nodes/dynamic-node-fields/).
+[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
+
+Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through e.g. an external API call.
+
+## Localization for Extensions
+<div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.12.0-blue.svg)]({{config.site_url}})
+
+Cognigy.AI v4.12.0 provides new functionality that allows Extension builders to optionally include localized variations for user-facing texts, such as default Node Labels or Node Field Descriptions.
+If configured, users will see the localized version for the UI language they chose.
+
+These localization options are optional and can be configured text-by-text on-demand.
+If no localization that matches the user-selected UI language was configured, the user will see a (mandatory) default option.
+
+Developers can follow the [Localization for Extensions Documentation](https://www.npmjs.com/package/@cognigy/extension-tools#extension-localization) to get started.
