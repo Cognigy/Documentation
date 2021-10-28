@@ -73,8 +73,10 @@ nav:
     - Tweak:
       - ai/resources/tweak/tweak.md
       - ai/resources/tweak/intent-trainer.md
-    - Analytics:
-      - ai/resources/analytics.md
+    # - Analytics:
+    #   - ai/resources/analytics.md
+    - Insights:
+      - insights/cognigy-insights.md
     - Manage:
       - ai/resources/manage/manage.md
       - ai/resources/manage/settings.md
