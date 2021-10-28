@@ -73,14 +73,16 @@ nav:
     - Tweak:
       - ai/resources/tweak/tweak.md
       - ai/resources/tweak/intent-trainer.md
-    - Analytics:
-      - ai/resources/analytics.md
+    # - Analytics:
+    #   - ai/resources/analytics.md
+    - Insights:
+      - insights/cognigy-insights.md
     - Manage:
       - ai/resources/manage/manage.md
       - ai/resources/manage/settings.md
       - ai/resources/manage/localization.md
       - ai/resources/manage/tokens.md
-      - ai/resources/manage/extensions.md
+      - Extensions: ai/resources/manage/extensions.md
       - ai/resources/manage/members.md
       - ai/resources/manage/contact-profiles.md
       - ai/resources/manage/packages.md
@@ -185,7 +187,7 @@ nav:
     - ai/nlu/language-support.md
     - ai/nlu/nlu-warnings.md
   - Tools:
-    - User menu:
+    - User Menu:
       - ai/tools/user-menu/user-menu.md
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
