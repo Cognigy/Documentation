@@ -28,7 +28,7 @@ The analytics dashboard is available for each agent created in an organization. 
 Any Cognigy.AI endpoint can be natively connected to third-party analytics vendors Dashbot or Chatbase.
 
 ???+ info "Dashbot & Chatbase via Cognigy.AI Endpoints"
-    Find out more information [here]({{config.site_url}}ai/endpoints/data-protection-and-analytics#external-analytics-services/).
+    Find out more information [here]({{config.site_url}}ai/endpoints/data-protection-and-analytics/#external-analytics-services/).
 
 ## OData Analytics Endpoint
 <div class="divider"></div>

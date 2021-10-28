@@ -1,6 +1,6 @@
 # Lexicons
 
-**Lexicons **are collections of domain-specific **Keyphrases** (also known as **Entities**) that can be attached to a Flow. A Lexicon can be seen as a dictionary, that allows the Virtual Agent to "understand" specific words, like car brands, product groups or zipcodes. As soon as a Keyphrase is detected, it is published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input) object for further use. This process is called **Slot Mapping**.
+**Lexicons **are collections of domain-specific **Keyphrases** (also known as **Entities**) that can be attached to a Flow. A Lexicon can be seen as a dictionary, that allows the Virtual Agent to "understand" specific words, like car brands, product groups or zipcodes. As soon as a Keyphrase is detected, it is published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object for further use. This process is called **Slot Mapping**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/c95b04b-lexicon-small.jpg" width="100%" />
@@ -12,7 +12,7 @@
 ## Managing Keyphrases
 <div class="divider"></div>
 
-Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **Slots** (also known as Tags) and  **Synonyms**, and can be used by the [NLU]({{config.site_url}}ai/nlu/overview.md). 
+Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **Slots** (also known as Tags) and  **Synonyms**, and can be used by the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/). 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/973f877-lexicon-keyphrase.jpg" width="100%" />
@@ -46,7 +46,7 @@ At the bottom, you can navigate to different pages and toggle the amount of Keyp
     Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specifc flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/) for more information.
 
 ???+ success "Access slots in your Flow"
-    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping) for more information.
+    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
 
 ## Importing & Exporting Lexicons
 

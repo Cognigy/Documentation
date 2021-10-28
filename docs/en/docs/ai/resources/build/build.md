@@ -22,7 +22,7 @@ The **Flow** is an important (and powerful) concept within Cognigy.AI. It provid
 </figure>
 
 ???+ info "Lexicons"
-    Head over to [**Lexicons**]({{config.site_url}}ai/resources/build/lexicons) for more information.
+    Head over to [**Lexicons**]({{config.site_url}}ai/resources/build/lexicons/) for more information.
 
 ## Connections
 Connections are encrypted credentials that can be used with [**Extensions**]({{config.site_url}}ai/resources/build/connections/) . The Connections view can be used to update and delete existing Connections. New Connections are created directly within the Extension Nodes that use them.

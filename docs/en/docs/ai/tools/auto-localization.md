@@ -62,7 +62,7 @@ The localization option you can find in the sidebar when clicking the "Manage" i
   <figcaption>Create new Locale</figcaption>
 </figure>
 
-- ["+ Create new Locale"]({{config.site_url}}ai/resources/manage/localization#adding-a-locale-to-a-node/), select a new language and a fallback language (US-eng).
+- ["+ Create new Locale"]({{config.site_url}}ai/resources/manage/localization/#adding-a-locale-to-a-node/), select a new language and a fallback language (US-eng).
 
 When going back to the Flow you can now have the option to switch the locale and to localize the Flow Nodes.
 
@@ -100,7 +100,7 @@ In order to enable machine translation, you need to configure the "**Translation
 
 - Select a Translation Provider (for example Microsoft Translator).
 
-- Enter the API key for the selected provider. The required API keys of available translation providers you can find here: [API keys Translation Provider]({{config.site_url}}ai/resources/manage/localization#translation-settings/).
+- Enter the API key for the selected provider. The required API keys of available translation providers you can find here: [API keys Translation Provider]({{config.site_url}}ai/resources/manage/localization/#translation-settings/).
    
 As soon as you have configured a translation provider you will get extra configuration options in the "Agent Settings" section:
 
@@ -111,7 +111,7 @@ As soon as you have configured a translation provider you will get extra configu
 - Define "**Sentence Cache Expiry Timeout**".
 
 ???+ info "Translation Settings"
-    **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization#translation-settings/)** 
+    **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
 
 # Localization of Nodes
 
