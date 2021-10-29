@@ -1,5 +1,7 @@
 ---
-title: "Labels"
+ title: "Labels" 
+ slug: "labels" 
+ hidden: false 
 ---
 # Labels
 

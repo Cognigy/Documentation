@@ -1,5 +1,7 @@
 ---
-title: "Agents"
+ title: "Agents"
+ slug: "agents" 
+ hidden: false 
 ---
 
 # Agents

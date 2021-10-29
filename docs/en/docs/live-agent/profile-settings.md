@@ -1,5 +1,7 @@
 ---
-title: "Profile Settings"
+ title: "Profile Settings" 
+ slug: "profile-settings" 
+ hidden: false 
 ---
 # Profile Settings
 

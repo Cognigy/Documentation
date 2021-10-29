@@ -1,3 +1,8 @@
+---
+ title: "SMTP" 
+ slug: "smtp" 
+ hidden: false 
+---
 # SMTP
 
 SMTP needs to be configured for functionalities such as agent notifications regarding new conversations, lost my password, verify agent accounts, etc.

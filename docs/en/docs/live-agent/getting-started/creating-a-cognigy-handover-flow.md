@@ -1,3 +1,8 @@
+---
+ title: "Creating a Cognigy.AI Handover Flow" 
+ slug: "creating-a-cognigy-handover-flow" 
+ hidden: false 
+---
 # Creating a Cognigy.AI Handover Flow
 
 With the endpoint and the inbox configured, the last step is to add a new Flow node of type Handover that need to be added to the desired flow like in the screenshot.

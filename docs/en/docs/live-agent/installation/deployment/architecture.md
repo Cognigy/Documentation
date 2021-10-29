@@ -1,3 +1,8 @@
+---
+ title: "Architecture" 
+ slug: "architecture" 
+ hidden: false 
+---
 # Architecture
 
 <figure>

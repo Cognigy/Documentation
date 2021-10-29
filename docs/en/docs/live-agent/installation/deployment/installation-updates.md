@@ -1,3 +1,8 @@
+---
+ title: "Installation Updates" 
+ slug: "installation-updates" 
+ hidden: false 
+---
 # Installation Updates
 
 For upgrading the Live Agent installation, once you have the new package version, run the following command:

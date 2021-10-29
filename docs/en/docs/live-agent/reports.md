@@ -1,5 +1,7 @@
 ---
-title: "Reports"
+ title: "Reports" 
+ slug: "reports" 
+ hidden: false 
 ---
 # Reports
 
