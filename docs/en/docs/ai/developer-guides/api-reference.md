@@ -1,3 +1,8 @@
+---
+ title: "API Reference" 
+ slug: "api-reference" 
+ hidden: false 
+---
 # API Reference
 
 <figure>

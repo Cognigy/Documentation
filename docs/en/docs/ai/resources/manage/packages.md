@@ -1,3 +1,8 @@
+---
+ title: "Packages" 
+ slug: "packages" 
+ hidden: false 
+---
 # Packages
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})

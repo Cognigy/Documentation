@@ -1,3 +1,8 @@
+---
+ title: "Send Message" 
+ slug: "send-message" 
+ hidden: false 
+---
 # Send Message
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Functions" 
+ slug: "functions" 
+ hidden: false 
+---
 # Functions 
 
 ## Introduction

@@ -1,3 +1,8 @@
+---
+ title: "External NLU" 
+ slug: "external-nlu" 
+ hidden: false 
+---
 # External NLU
 
 Cognigy.AI is setup to handle all intent and slot mapping for agents with the built-in Cognigy NLU using the resources defined in flow [Intents]({{config.site_url}}ai/nlu/nlu-overview/overview/#intents) and [Lexicons]({{config.site_url}}ai/resources/build/lexicons/). 

@@ -1,3 +1,8 @@
+---
+ title: "Set Rating" 
+ slug: "set-rating" 
+ hidden: false 
+---
 # Set Rating
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})

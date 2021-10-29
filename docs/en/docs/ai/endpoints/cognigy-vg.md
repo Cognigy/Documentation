@@ -1,3 +1,8 @@
+---
+ title: "Cognigy Voice Gateway" 
+ slug: "cognigy-vg" 
+ hidden: false 
+---
 # Cognigy Voice Gateway
 
 <figure>

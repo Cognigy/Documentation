@@ -1,3 +1,8 @@
+---
+ title: "Attached Flow" 
+ slug: "attached-flows" 
+ hidden: false 
+---
 # Attached Flow
 
 The Flow attachment feature removes the need to duplicate functionality across Cognigy.AI agent Flows. Flows can simply be **Attached** to each other, in order to recognize the intents built in other locations.

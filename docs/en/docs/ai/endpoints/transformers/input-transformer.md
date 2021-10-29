@@ -1,3 +1,8 @@
+---
+ title: "Input Transformer" 
+ slug: "input-transformer" 
+ hidden: false 
+---
 # Input Transformer
 
 ## Description

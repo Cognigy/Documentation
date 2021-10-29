@@ -1,3 +1,8 @@
+---
+ title: "Dynamic Node Fields" 
+ slug: "dynamic-node-fields" 
+ hidden: false 
+---
 # Dynamic Node Fields
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})

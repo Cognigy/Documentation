@@ -1,3 +1,8 @@
+---
+ title: "Think" 
+ slug: "think" 
+ hidden: false 
+---
 # Think
 
 <figure>

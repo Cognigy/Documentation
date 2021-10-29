@@ -1,3 +1,8 @@
+---
+ title: "Single Sign-on using OpenID Connect" 
+ slug: "single-signin-openid-connect" 
+ hidden: false 
+---
 # Single Sign-on using OpenID Connect
 
 ## Description 

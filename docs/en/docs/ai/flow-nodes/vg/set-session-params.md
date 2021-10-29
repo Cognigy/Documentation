@@ -1,3 +1,8 @@
+---
+ title: "Set Session Params" 
+ slug: "set-session-params" 
+ hidden: false 
+---
 # Set Session Params
 
 <figure>

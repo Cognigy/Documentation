@@ -1,3 +1,8 @@
+---
+ title: "Integrated Demo Page" 
+ slug: "integrated-demo-page" 
+ hidden: false 
+---
 # Integrated Demo Page
 
 ## Description

@@ -1,3 +1,8 @@
+---
+ title: "Slack" 
+ slug: "slack" 
+ hidden: false 
+---
 # Slack
 
 <figure>

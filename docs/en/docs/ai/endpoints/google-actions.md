@@ -1,3 +1,8 @@
+---
+ title: "Google Actions" 
+ slug: "google-actions" 
+ hidden: false 
+---
 # Google Actions
 
  <figure>

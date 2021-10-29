@@ -1,3 +1,8 @@
+---
+ title: "Language Support" 
+ slug: "language-support" 
+ hidden: false 
+---
 # Language Support
 
 ## Overview of supported Languages

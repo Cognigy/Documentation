@@ -1,3 +1,8 @@
+---
+ title: "Intent Trainer" 
+ slug: "intent-trainer" 
+ hidden: false 
+---
 # Intent Trainer
 
 The **Intent Trainer** enables you to analyze the collected user inputs (records) and add them to **[Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)** to improve your **Agent**'s user input comprehension.  You can decide which user input record improves the Agents intent and then click on  **"Add to Intent"** - Then use the **"Train"** button in the top right above the record list to overtake the new intent to the **NLU intent list** in your Flow. You do not need to execute "Build Model", because the "Train" functionality of the 'Intent Trainer' did already the scoring - you will see that by the indicated scoring data and the color icons in the Intent list.  

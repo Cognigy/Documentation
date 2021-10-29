@@ -1,3 +1,8 @@
+---
+ title: "Access Control" 
+ slug: "access-control" 
+ hidden: false 
+---
 # Access Control
 
 The Access Control interface offers a user management tool for organizational level administration. It acts as an **Access Control List (ACL)** and makes it possible to assign a specific role to users.

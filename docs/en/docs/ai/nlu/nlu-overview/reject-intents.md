@@ -1,3 +1,8 @@
+---
+ title: "Reject Intents" 
+ slug: "reject-intents" 
+ hidden: false 
+---
 # Reject Intents
 
 <figure>

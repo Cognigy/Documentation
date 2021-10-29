@@ -1,3 +1,8 @@
+---
+ title: "Release notes" 
+ slug: "release-notes" 
+ hidden: false 
+---
 # Release notes
 
 ## 4.13.1

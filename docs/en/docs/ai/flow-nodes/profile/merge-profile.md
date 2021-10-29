@@ -1,3 +1,8 @@
+---
+ title: "Merge Profile" 
+ slug: "merge-profile" 
+ hidden: false 
+---
 # Merge Profile
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "NLU Connectors" 
+ slug: "nlu-connectors" 
+ hidden: false 
+---
 # NLU Connectors
 
 Cognigy.AI features built-in support for a number of third-party NLU engines. These are: 

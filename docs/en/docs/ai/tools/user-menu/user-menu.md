@@ -1,3 +1,8 @@
+---
+ title: "User Menu" 
+ slug: "user-menu" 
+ hidden: false 
+---
 # User Menu
 
 The User Menu provides access to a set of views that are related to the user that is logged-in.

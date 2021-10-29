@@ -1,3 +1,8 @@
+---
+ title: "Data Protection & Analytics" 
+ slug: "data-protection-and-analytics" 
+ hidden: false 
+---
 # Data Protection & Analytics
 
 The **Data Protection & Analytics** (previously called Data Management) section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.

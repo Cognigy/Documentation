@@ -1,3 +1,8 @@
+---
+ title: "Snapshots" 
+ slug: "snapshots" 
+ hidden: false 
+---
 # Snapshots
 
 A Snapshot is an exported Agent and includes the following resources:

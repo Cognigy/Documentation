@@ -1,3 +1,8 @@
+---
+ title: "Real-time Translation" 
+ slug: "real-time-translation" 
+ hidden: false 
+---
 # Real-time Translation
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})

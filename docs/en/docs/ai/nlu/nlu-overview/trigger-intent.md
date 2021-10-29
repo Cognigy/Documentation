@@ -1,3 +1,8 @@
+---
+ title: "Trigger Intent" 
+ slug: "trigger-intent" 
+ hidden: false 
+---
 # Trigger Intent
 ## Description
 <div class="divider"></div>
