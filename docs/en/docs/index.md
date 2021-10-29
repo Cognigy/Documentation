@@ -1,6 +1,5 @@
 ---
  title: "Cognigy Documentation"
- slug: "index" 
  hidden: false 
  hide:
   - navigation

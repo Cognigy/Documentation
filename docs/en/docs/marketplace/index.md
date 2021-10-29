@@ -1,6 +1,6 @@
 ---
  title: "Marketplace"
  slug: "index" 
- hidden: false 
+ hidden: true 
 ---
 # Marketplace

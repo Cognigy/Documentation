@@ -1,6 +1,6 @@
 ---
  title: "Webchat"
  slug: "index" 
- hidden: false 
+ hidden: true 
 ---
 # Webchat
