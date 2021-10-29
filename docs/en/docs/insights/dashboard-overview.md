@@ -1,3 +1,8 @@
+---
+ title: "Dashboard Overview" 
+ slug: "dashboard-overview" 
+ hidden: false 
+---
 # Dashboard Overview
 
 ## Overview Dashboard

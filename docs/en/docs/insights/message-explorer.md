@@ -1,3 +1,8 @@
+---
+ title: "Message Explorer" 
+ slug: "message-explorer" 
+ hidden: false 
+---
 # Message Explorer
 ## Description
 <div class="divider"></div>
