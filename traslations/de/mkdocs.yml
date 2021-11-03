@@ -205,6 +205,7 @@ nav:
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
     - ai/endpoints/amazon-alexa.md
+    - ai/endpoints/avaya-cpaas.md
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/google-actions.md

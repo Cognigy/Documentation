@@ -56,6 +56,7 @@ The following Endpoints are provided for custom integrations:
 The following Endpoints provide integrations with third party products:
 
 - [**Amazon Alexa**]({{config.site_url}}ai/endpoints/amazon-alexa/) 
+- [**Avaya CPaaS**]({{config.site_url}}ai/endpoints/avaya-cpaas/) 
 - [**Dialogflow**]({{config.site_url}}ai/endpoints/dialogflow/) 
 - [**Facebook Messenger**]({{config.site_url}}ai/endpoints/facebook-messenger/) 
 - [**Google Actions**]({{config.site_url}}ai/endpoints/google-actions/) 
