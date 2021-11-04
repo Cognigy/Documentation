@@ -20,7 +20,7 @@ A conversation can be manually assigned to 2 categories of users.
 To assign an agent or admin to a conversation, an admin/agent can select the assignee from the dropdown named under "Assigned Agent" from the "Conversation Details" section in the right sidebar, as shown below.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-routing-1.png" width="100%" alt="Live Agent Assign Agents" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-routing-1.png" width="100%" alt="Live Agent Assign Agents" />
   <figcaption>Assign Agents</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ To enable round-robin assignment in your inbox, follow the steps below.
 - Scroll down to see the setting for Round-robin, as shown below
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-routing-2.png" width="100%" alt="Live Agent Enable Auto Assignment" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-routing-2.png" width="100%" alt="Live Agent Enable Auto Assignment" />
   <figcaption>Enable Auto Assignment</figcaption>
 </figure>
 

@@ -8,7 +8,7 @@
 The first time Live Agent is installed, the signup screen is displayed. After that, the company and administrator data must be filled in to start using it.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-installation-screen.png" width="100%" alt="Live Agent Installation Screen">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-installation-screen.png" width="100%" alt="Live Agent Installation Screen">
     <figcaption>Live Agent Installation Screen</figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ The first time Live Agent is installed, the signup screen is displayed. After th
 After signing up, the administrator is logged into the dashboard automatically. The email address needs to be verified for completing the signup.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-start-screen.png" width="100%" alt="Live Agent Dashboard">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-start-screen.png" width="100%" alt="Live Agent Dashboard">
     <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 

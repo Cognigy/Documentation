@@ -11,7 +11,7 @@ First, a **Webchat** endpoint needs to be created in Cognigy.AI. Then in the **E
     Head over to [**Endpoints**]({{config.site_url}}ai/endpoints/overview/) for any doubt regarding Cognigy.AI endpoints.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-endpoint-editor-webchat.png" width="100%" alt="Cognigy.AI Endpoint Flow Screen">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-endpoint-editor-webchat.png" width="100%" alt="Cognigy.AI Endpoint Flow Screen">
   <figcaption>Cognigy.AI Endpoint Flow Screen</figcaption>
 </figure>
 

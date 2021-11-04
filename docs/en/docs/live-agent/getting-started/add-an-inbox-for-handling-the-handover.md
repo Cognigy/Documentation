@@ -11,21 +11,21 @@ From the Live Agent Dashboard screen, do click on **Inboxes** in the sidebar.
 
 Live Agent will show you a screen to configure your API connection.
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-add-inbox-screen.png" width="100%" alt="Live Agent Add Inbox Screen">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-add-inbox-screen.png" width="100%" alt="Live Agent Add Inbox Screen">
   <figcaption>Live Agent Add Inbox Screen</figcaption>
 </figure>
 
 Now for creating the inbox, a channel name and a webhook URL needs to be set. Go to the Cognigy endpoint editor for getting it.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-cognigy-endpoint-config-screen.png" width="100%" alt="Cognigy AI Endpoint Configuration Screen">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-cognigy-endpoint-config-screen.png" width="100%" alt="Cognigy AI Endpoint Configuration Screen">
   <figcaption>Cognigy AI Endpoint Configuration Screen</figcaption>
 </figure>
 
 The webhook URL is the Cognigy.AI endpoint config URL domain plus `/handover/chatwoot`.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-add-api-channel-screen.png" width="100%" alt="Live Agent API channel Screen">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-add-api-channel-screen.png" width="100%" alt="Live Agent API channel Screen">
   <figcaption>Live Agent API Channel Screen</figcaption>
 </figure>
 
@@ -50,14 +50,14 @@ The webhook URL is the Cognigy.AI endpoint config URL domain plus `/handover/cha
 After that, agents need to be assigned to the new inbox. Start typing their names, pick them from the selector and click on **Add agents**.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-add-agents-to-inbox-screen.png" width="100%" alt="Live Agent Add Agents To Inbox Screen">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-add-agents-to-inbox-screen.png" width="100%" alt="Live Agent Add Agents To Inbox Screen">
   <figcaption>Live Agent Add Agents To Inbox Screen</figcaption>
 </figure>
 
 One more thing to do is note down the following data, the _Inbox ID_ and the _Account ID_. This can be found on the URL after creating the inbox.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-account-inbox-ids.png" width="100%" alt="Live Agent Account ID and Inbox ID">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-account-inbox-ids.png" width="100%" alt="Live Agent Account ID and Inbox ID">
   <figcaption>Live Agent Account ID and Inbox ID</figcaption>
 </figure>
 
@@ -84,7 +84,7 @@ One more thing to do is note down the following data, the _Inbox ID_ and the _Ac
 Now your inbox is ready to be used. You can now fill the _Account ID_ field in the **Endpoint Editor** plus the _API Key_ that can be found in Live Agent **Profile Settings** as per the screenshot.
 
 <figure>
-    <img src="{{config.site_url}}assets/img/LA-profile-settings-access-token.png" width="100%" alt="Live Agent Profile Settings API Key">
+    <img src="{{config.site_url}}live-agent/getting-started/images/LA-profile-settings-access-token.png" width="100%" alt="Live Agent Profile Settings API Key">
   <figcaption>Live Agent Profile Settings API Key</figcaption>
 </figure>
 

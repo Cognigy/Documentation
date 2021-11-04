@@ -39,7 +39,7 @@ s = SuperAdmin.create!(email: "admin@xyc.com", password: "yourpassword")
 Here we can see an overview of the accounts, users, inboxes, and some statistics regarding conversations
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-dashboard.png" width="100%"  alt="Live Agent Super Admin Dashboard" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-dashboard.png" width="100%"  alt="Live Agent Super Admin Dashboard" />
   <figcaption>Super Admin Dashboard</figcaption>
 </figure>
 
@@ -49,14 +49,14 @@ Here we can see an overview of the accounts, users, inboxes, and some statistics
 This is an overview of the current accounts, they can be edited or deleted.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-accounts.png" width="100%"  alt="Live Agent Super Admin Accounts" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-accounts.png" width="100%"  alt="Live Agent Super Admin Accounts" />
   <figcaption>Accounts</figcaption>
 </figure>
 
 Press the "New Account" Button at the top right corner to create a new account, add its name and locale.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-accounts-create-account.png" width="100%"  alt="Live Agent Super Admin Accounts Creation" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-accounts-create-account.png" width="100%"  alt="Live Agent Super Admin Accounts Creation" />
   <figcaption>Create an account</figcaption>
 </figure>
 
@@ -66,14 +66,14 @@ Press the "New Account" Button at the top right corner to create a new account, 
 This is an overview of the current users, they can be edited.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-users-home.png" width="100%"  alt="Live Agent Super Admin Users" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-users-home.png" width="100%"  alt="Live Agent Super Admin Users" />
   <figcaption>Users</figcaption>
 </figure>
 
 Press the "New User" Button at the top right corner to create a new user, add its name, email and password.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-users-create-new-user.png" width="100%"  alt="Live Agent Super Admin Create User" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-users-create-new-user.png" width="100%"  alt="Live Agent Super Admin Create User" />
   <figcaption>Create New User</figcaption>
 </figure>
 
@@ -83,14 +83,14 @@ Press the "New User" Button at the top right corner to create a new user, add it
 This is an overview of the current Super Admins, they can be edited or deleted.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-super-admins.png" width="100%"  alt="Live Agent Super Admins" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-super-admins.png" width="100%"  alt="Live Agent Super Admins" />
   <figcaption>Super Admins</figcaption>
 </figure>
 
 Press the "New super admin" Button at the top right corner to create a new super admin, add its email and password.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-super-admins-create.png" width="100%"  alt="Live Agent Create Super Admin" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-super-admins-create.png" width="100%"  alt="Live Agent Create Super Admin" />
   <figcaption>Create New Super Admin</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Press the "New super admin" Button at the top right corner to create a new super
 This is an overview of all Users's Access Tokens
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-access-tokens.png" width="100%"  alt="Live Agent Super Admin Access Tokens" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-access-tokens.png" width="100%"  alt="Live Agent Super Admin Access Tokens" />
   <figcaption>Users's Access Tokens</figcaption>
 </figure>
 
@@ -109,13 +109,13 @@ This is an overview of all Users's Access Tokens
 This is an overview of the current installation configurations and environmental variables. The configuration can be manipulated here and this will show in the product without any other action required. You can edit and create new configs from here.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-installation-configs.png" width="100%"  alt="Live Agent Super Admin Installation Configs" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-installation-configs.png" width="100%"  alt="Live Agent Super Admin Installation Configs" />
   <figcaption>Installation Configs</figcaption>
 </figure>
 
 Press the "New installation config" Button at the top right corner to create a new config, add its name and value.
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-super-admin-installation-configs-create.png" width="100%"  alt="Live Agent Create Config" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-installation-configs-create.png" width="100%"  alt="Live Agent Create Config" />
   <figcaption>Create New Config</figcaption>
 </figure>
