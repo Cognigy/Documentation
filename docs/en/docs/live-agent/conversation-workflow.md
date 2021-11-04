@@ -11,7 +11,7 @@ For example: Customer types in 'hi'
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-1.png" width="100%" alt="Cognigy Webchat Widget" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-1.png" width="100%" alt="Cognigy Webchat Widget" />
   <figcaption>Cognigy Webchat Widget</figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ Go to the home screen of Live Agent Agent Dashboard
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-2.png" width="100%" alt="Live Agent Conversations" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-2.png" width="100%" alt="Live Agent Conversations" />
   <figcaption>Conversations</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ Click on Conversations. Then click on All. The conversation which the customer h
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
 </figure>
 
@@ -51,7 +51,7 @@ Click on the drop-box below Assigned Agent and select the Agent name. You can ch
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-4.png" width="100%" alt="Live Agent Assign Agent" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-4.png" width="100%" alt="Live Agent Assign Agent" />
   <figcaption>Assign Agent</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ Click on the drop-box below Assigned Team and select the team to which this conv
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-5.png" width="100%" alt="Live Agent Assign Teams" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-5.png" width="100%" alt="Live Agent Assign Teams" />
   <figcaption>Assign Teams</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ Click on Add Labels below Conversation Labels and select the category to which t
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-6.png" width="100%" alt="Live Agent Assign Labels" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-6.png" width="100%" alt="Live Agent Assign Labels" />
   <figcaption>Assign Labels</figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ You can see in the below screenshot that all actions done by you are seen in the
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
   <figcaption>Conversations Actions</figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ You can reply to the customer's conversation by typing in the Reply area. Shift+
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-8.png" width="100%" alt="Live Agent Conversations Reply" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-8.png" width="100%" alt="Live Agent Conversations Reply" />
   <figcaption>Reply Conversation</figcaption>
 </figure>
 
@@ -105,16 +105,16 @@ You can reply to the customer's conversation by typing in the Reply area. Shift+
 Click on the Send button to send your message to the customer.
 
 Various options are there in the Reply area to enhance the messages.
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-9.png" width="5%" alt="" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="5%" alt="" />
 This Button is to select and include Emoji in the message.
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-10.png" width="5%" alt="" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="5%" alt="" />
 This Button is to select and include attachments in the message
-<!-- <img src="{{config.site_url}}assets/img/LA-conversation-workflow-11.png" width="5%" alt="" />
+<!-- <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="5%" alt="" />
 This Button enables to use the Rich Text Editor. Additional options appear on the Reply screen as shown below.
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Rich Text" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Rich Text" />
   <figcaption>Rich Text</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ Once the message is typed and edited, you need to tick the checkbox to send the 
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Rich Message" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Rich Message" />
   <figcaption>Rich Message</figcaption>
 </figure> -->
 
@@ -136,7 +136,7 @@ Suppose you wish to include already prepared canned responses as reply, type '/'
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-14.png" width="100%" alt="Live Agent Canned Responses" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="100%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
@@ -148,7 +148,7 @@ There is an option to discuss the customer's conversation with another fellow ag
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
   <figcaption>Private Chat with Agents</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ Type '@' in the Private Note Window and all agents who have been added to this t
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-16.png" width="100%" alt="Live Agent Private Chat 2" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-16.png" width="100%" alt="Live Agent Private Chat 2" />
   <figcaption>Private Chat with Agent -2</figcaption>
 </figure>
 
@@ -166,7 +166,7 @@ Click on Add Note to send the message. You can see a locked sign on the message 
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
   <figcaption>Private Message with Agent</figcaption>
 </figure>
 
@@ -183,7 +183,7 @@ Click on Delete. The message will be deleted.
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-18.png" width="100%" alt="Live Agent Delete Message" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-18.png" width="100%" alt="Live Agent Delete Message" />
   <figcaption>Delete Message</figcaption>
 </figure>
 
@@ -195,7 +195,7 @@ Once the End user has provided their e-mail id through the conversation, Agent c
 The email ID will be listed against the name of the Customer in the details window. The email ID will be automatically added to the Contacts also.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-19.png" width="100%" alt="Live Agent Contact Details" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-19.png" width="100%" alt="Live Agent Contact Details" />
   <figcaption>Contact Details</figcaption>
 </figure>
 
@@ -204,7 +204,7 @@ Click on the 3 dots on the top right hand side of the screen. There is an option
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-20.png" width="100%" alt="Live Agent Contact Details Menu" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-20.png" width="100%" alt="Live Agent Contact Details Menu" />
   <figcaption>Contact Details Menu</figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ A screen opens up, an email can be send to agents in the team. The chat transcri
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-21.png" width="100%" alt="Live Agent Conversation Transcript Dialog" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-21.png" width="100%" alt="Live Agent Conversation Transcript Dialog" />
   <figcaption>Conversation Transcript Dialog</figcaption>
 </figure>
 
@@ -232,7 +232,7 @@ The status can be changed to 'Resolved' once the solution is conveyed to the cus
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-22.png" width="100%" alt="Live Agent Conversations Status" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-22.png" width="100%" alt="Live Agent Conversations Status" />
   <figcaption>Conversations Status</figcaption>
 </figure>
 
@@ -253,7 +253,7 @@ The Conversations can be selected and viewed as per their status on the Conversa
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-23.png" width="100%" alt="Live Agent Conversations Selections" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-23.png" width="100%" alt="Live Agent Conversations Selections" />
   <figcaption>Select Conversation</figcaption>
 </figure>
 
@@ -264,7 +264,7 @@ Once the conversation has been marked as resolved - next time the same customer 
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-.png" width="100%" alt="" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-.png" width="100%" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -273,7 +273,7 @@ Click on the name below the Previous Conversation and the details of the past co
 
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-conversation-workflow-.png" width="100%" alt="" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-.png" width="100%" alt="" />
   <figcaption></figcaption>
 </figure>
 

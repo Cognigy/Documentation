@@ -9,4 +9,4 @@ Live Agent is a customer engagement suite provided by Cognigy. It gives a way fo
 
 An overview of some of the most important components can be found in the following diagram:
 
-<img src="{{config.site_url}}assets/img/LA-overview.svg" alt="Live Agent Overview">
+<img src="{{config.site_url}}live-agent/images/LA-diagram.svg" alt="Live Agent Overview">

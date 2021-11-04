@@ -12,7 +12,7 @@ Labels are tied to the account and can be used to create custom workflows in you
 Click on the sidebar **Settings** on the Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard Screen" />
+<img src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard Screen" />
   <figcaption>Live Agent Dashboard</figcaption>
 </figure>
 
@@ -20,7 +20,7 @@ Click on the sidebar **Settings** on the Live Agent Dashboard.
 Click on the sidebar **Labels** and then in Add Label on the Right hand side.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-labels-home.png" width="100%" alt="Live Agent Labels Home Screen" />
+<img src="{{config.site_url}}live-agent/images/LA-labels-home.png" width="100%" alt="Live Agent Labels Home Screen" />
   <figcaption>Labels</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ Click on the sidebar **Labels** and then in Add Label on the Right hand side.
 The screen opens up where you can design your labels. Make sure you give meaningful names to the labels and different colours so that you can identify in one look to which category the ticket/issue belongs.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-labels-add-label-dialog.png" width="100%" alt="Live Agent Add Label detail screen" />
+<img src="{{config.site_url}}live-agent/images/LA-labels-add-label-dialog.png" width="100%" alt="Live Agent Add Label detail screen" />
   <figcaption>Label Details</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ The screen opens up where you can design your labels. Make sure you give meaning
 Click on Create. Label added successfully message will be displayed. New Label has been created. You can create as many Labels as you need. Labels can be used across teams.
 
 <figure>
-<img src="{{config.site_url}}assets/img/LA-labels-edit-delete-label.png" width="100%" alt="Live Agent Label setting screen" />
+<img src="{{config.site_url}}live-agent/images/LA-labels-edit-delete-label.png" width="100%" alt="Live Agent Label setting screen" />
   <figcaption>Label Settings</figcaption>
 </figure>
 

@@ -6,7 +6,7 @@
 # Architecture
 
 <figure>
- <img class="image-center" src="{{config.site_url}}assets/img/LA-diagram.svg" alt="Live Agent Architecture" width="100%" />
+ <img class="image-center" src="{{config.site_url}}live-agent/images/LA-diagram.svg" alt="Live Agent Architecture" width="100%" />
   <figcaption>Live Agent Architecture Diagram</figcaption>
 </figure>
 
