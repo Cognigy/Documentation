@@ -1,3 +1,8 @@
+---
+ title: "Tweak" 
+ slug: "tweak" 
+ hidden: false 
+---
 # Tweak
 
 One of the characteristics of **Virtual Agents** is that they can improve over time. Cognigy.AI provides the ability to tweak Agents based on existing dialogs. This can be done using the **Intent Trainer**.

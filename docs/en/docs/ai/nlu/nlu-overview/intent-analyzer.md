@@ -1,3 +1,8 @@
+---
+ title: "Intent Analyzer" 
+ slug: "intent-analyzer" 
+ hidden: false 
+---
 # Intent Analyzer
 
 Writing a quality set of example sentences is key to building intelligent virtual agents. Cognigy.AI includes an in-tool evaluation feature that provides creators with immediate feedback on the quality of each example sentence and intent as it fits into the current version of their unique NLU training model.

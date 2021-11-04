@@ -1,3 +1,8 @@
+---
+ title: "Storage" 
+ slug: "storage" 
+ hidden: false 
+---
 # Storage
 
 Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server.

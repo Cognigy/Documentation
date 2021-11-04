@@ -1,3 +1,8 @@
+---
+ title: "Browser Requirements" 
+ slug: "browser-requirements" 
+ hidden: false 
+---
 ### Browser Requirements
 
 The Live Agent web frontend works with most modern web browsers. The following table shows the list of supported web browsers:

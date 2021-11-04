@@ -1,3 +1,8 @@
+---
+ title: "Attachments" 
+ slug: "attachments" 
+ hidden: false 
+---
 # Attachments
 
 Agent Flows and Lexicons can be shared across multiple flows throughout the agent. This is achieved using the **Attachments** menu where lists of the respective resources are populated and can be enabled. 

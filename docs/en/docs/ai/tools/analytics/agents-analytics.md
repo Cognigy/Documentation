@@ -1,3 +1,8 @@
+---
+ title: "Agent Analytics" 
+ slug: "agents-analytics" 
+ hidden: false 
+---
 # Agent Analytics
 
 A built-in **Analytics** dashboard is available within the Cognigy.AI platform for each Agent. The dashboard consists of a range of key agent metrics that provide an overview the usage and performance of the bot.

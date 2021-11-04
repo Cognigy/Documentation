@@ -1,3 +1,8 @@
+---
+ title: "Slot Mapping" 
+ slug: "slot-mapping" 
+ hidden: false 
+---
 # Slot Mapping
 
 ## Description

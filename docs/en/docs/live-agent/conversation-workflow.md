@@ -1,5 +1,7 @@
 ---
-title: "Conversation Workflow"
+ title: "Conversation Workflow" 
+ slug: "conversation-workflow" 
+ hidden: false 
 ---
 # Conversation Workflow
 

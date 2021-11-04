@@ -1,3 +1,8 @@
+---
+ title: "Settings" 
+ slug: "settings" 
+ hidden: false 
+---
 # Settings
 
 Cognigy.AI provides creators with customization settings that allow the agent processes to be adjusted to achieve optimal performance.

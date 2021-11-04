@@ -1,3 +1,8 @@
+---
+ title: "Inject & Notify" 
+ slug: "inject-and-notify" 
+ hidden: false 
+---
 # Inject & Notify
 
 ## Description

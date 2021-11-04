@@ -1,3 +1,8 @@
+---
+ title: "Any Slots" 
+ slug: "any-slots" 
+ hidden: false 
+---
 # Any Slots
 
 ***Any Slots*** are catch-all placeholder slots that allow you to match keyphrases of arbitrary length outside of your Lexicons. If user input matches the placeholder slot exactly it will populate a [Cognigy Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) with the matched content. The result is the same as if the matched user input had been added to an attached Lexicon as a keyphrase.

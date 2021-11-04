@@ -1,5 +1,7 @@
 ---
-title: "Inboxes"
+ title: "Inboxes" 
+ slug: "inboxes" 
+ hidden: false 
 ---
 # Inboxes
 

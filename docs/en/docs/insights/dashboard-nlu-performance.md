@@ -1,3 +1,8 @@
+---
+ title: "NLU Performance" 
+ slug: "dashboard-nlu-performance" 
+ hidden: false 
+---
 # NLU Performance
 
 ## NLU Performance Dashboard

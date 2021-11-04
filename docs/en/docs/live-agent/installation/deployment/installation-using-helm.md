@@ -1,3 +1,8 @@
+---
+ title: "Installation using Helm" 
+ slug: "installation-using-helm" 
+ hidden: false 
+---
 # Installation using Helm
 
 Helm is a tool for easily deploying resources into a Kubernetes cluster. First, install it following the [official documentation](https://helm.sh/docs/intro/install/)

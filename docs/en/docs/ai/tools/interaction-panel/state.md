@@ -1,3 +1,8 @@
+---
+ title: "State" 
+ slug: "state" 
+ hidden: false 
+---
 # State
 
 States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. 

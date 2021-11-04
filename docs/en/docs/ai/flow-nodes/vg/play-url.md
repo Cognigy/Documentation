@@ -1,3 +1,8 @@
+---
+ title: "Play URL" 
+ slug: "play-url" 
+ hidden: false 
+---
 # Play URL
 
 <figure>

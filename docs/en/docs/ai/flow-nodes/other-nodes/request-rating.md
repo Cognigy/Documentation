@@ -1,3 +1,8 @@
+---
+ title: "Request Rating" 
+ slug: "request-rating" 
+ hidden: false 
+---
 # Request Rating
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})

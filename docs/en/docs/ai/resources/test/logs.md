@@ -1,3 +1,8 @@
+---
+ title: "Logs" 
+ slug: "logs" 
+ hidden: false 
+---
 # Logs
 
 The **Logs** feature allows platform users to track each input and output message that occurs with an **Agent**. The Logs are most frequently used to debug workflows by observing if and where errors are occurring.

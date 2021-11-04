@@ -1,5 +1,7 @@
 ---
-hide:
+ title: "Cognigy Documentation"
+ hidden: false 
+ hide:
   - navigation
   - toc
 ---

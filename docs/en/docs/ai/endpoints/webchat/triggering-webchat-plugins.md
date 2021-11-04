@@ -1,3 +1,8 @@
+---
+ title: "Triggering Webchat Plugins" 
+ slug: "triggering-webchat-plugins" 
+ hidden: false 
+---
 # Triggering Webchat Plugins
 
 ## Description

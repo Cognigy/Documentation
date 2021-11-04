@@ -1,3 +1,8 @@
+---
+ title: "Session Management" 
+ slug: "session-management" 
+ hidden: false 
+---
 # Session Management
 
 The **Session Management** section exists on some Endpoints. Here you can set the session expiration. Once a session has expired, the conversation will restart with the next user input.

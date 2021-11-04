@@ -1,3 +1,8 @@
+---
+ title: "Update Profile" 
+ slug: "update-profile" 
+ hidden: false 
+---
 # Update Profile
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Handover (Voice Gateway)" 
+ slug: "handover-vg" 
+ hidden: false 
+---
 # Handover (Voice Gateway)
 
 <figure>

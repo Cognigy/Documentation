@@ -1,3 +1,8 @@
+---
+ title: "Question" 
+ slug: "question" 
+ hidden: false 
+---
 # Question
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac25291-question-node.png" width="100%" />

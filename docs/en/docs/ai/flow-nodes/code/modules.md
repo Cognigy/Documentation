@@ -1,3 +1,8 @@
+---
+ title: "Modules" 
+ slug: "modules" 
+ hidden: false 
+---
 # Modules
 
 ## Description

@@ -1,3 +1,8 @@
+---
+ title: "Send Email Notification" 
+ slug: "send-email-notification" 
+ hidden: false 
+---
 # Send Email Notification
 
 <figure>

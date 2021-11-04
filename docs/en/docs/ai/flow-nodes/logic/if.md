@@ -1,3 +1,8 @@
+---
+ title: "If" 
+ slug: "if" 
+ hidden: false 
+---
 # If
 
 <figure>

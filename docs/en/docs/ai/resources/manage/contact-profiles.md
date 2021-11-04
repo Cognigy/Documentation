@@ -1,3 +1,8 @@
+---
+ title: "Contact Profiles" 
+ slug: "contact-profiles" 
+ hidden: false 
+---
 # Contact Profiles
 
 Contact Profiles store information about the end-users of your AI and can be accessed by Flows and Endpoints. Contact Profiles can be used to store information persistently and personalize discussions with users.

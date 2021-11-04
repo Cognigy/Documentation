@@ -1,3 +1,8 @@
+---
+ title: "Hotkeys" 
+ slug: "hotkeys" 
+ hidden: false 
+---
 # Hotkeys
 
 In addition to full **Drag and Drop** flow editor functionality, Cognigy.AI supports the following hotkey commands.
