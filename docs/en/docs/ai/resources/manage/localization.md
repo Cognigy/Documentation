@@ -1,3 +1,8 @@
+---
+ title: "Localization" 
+ slug: "localization" 
+ hidden: false 
+---
 # Localization
 
 Cognigy.AI features a powerful Localization concept, that allows for customizability combined with content re-use. 

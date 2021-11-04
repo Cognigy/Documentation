@@ -1,3 +1,8 @@
+---
+ title: "Live Agent" 
+ slug: "live-agent" 
+ hidden: false 
+---
 # Live Agent
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})

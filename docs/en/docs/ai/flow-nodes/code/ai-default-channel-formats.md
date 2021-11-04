@@ -1,3 +1,8 @@
+---
+ title: "AI Default Channel Formats" 
+ slug: "ai-default-channel-formats" 
+ hidden: false 
+---
 # AI Default Channel Formats
 
 As described in [Channel Output]({{config.site_url}}ai/flow-nodes/code/channel-output/), you can send JSON-formatted output directly against your [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) for it to be output to the respective channels.

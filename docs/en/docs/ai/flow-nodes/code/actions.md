@@ -1,3 +1,8 @@
+---
+ title: "Action" 
+ slug: "actions" 
+ hidden: false 
+---
 # Action
 ## Description
 <div class="divider"></div>

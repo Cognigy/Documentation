@@ -1,3 +1,8 @@
+---
+ title: "Execute Cognigy NLU" 
+ slug: "execute-cognigy-nlu" 
+ hidden: false 
+---
 # Execute Cognigy NLU
 
 <figure>

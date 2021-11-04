@@ -1,3 +1,8 @@
+---
+ title: "Chatwoot Integration" 
+ slug: "chatwoot-integration" 
+ hidden: false 
+---
 # Chatwoot Integration
 
 ## Description

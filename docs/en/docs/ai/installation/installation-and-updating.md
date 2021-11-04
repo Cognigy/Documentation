@@ -1,3 +1,8 @@
+---
+ title: "Installation & Updating" 
+ slug: "installation-and-updating" 
+ hidden: false 
+---
 # Installation & Updating
 
 ## Overview

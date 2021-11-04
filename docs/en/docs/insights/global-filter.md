@@ -1,3 +1,8 @@
+---
+ title: "Global Filter" 
+ slug: "global-filter" 
+ hidden: false 
+---
 # Global Filter
 
 ## Global Filter options

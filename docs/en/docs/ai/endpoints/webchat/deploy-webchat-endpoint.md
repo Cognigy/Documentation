@@ -1,3 +1,8 @@
+---
+ title: "Deploy a Webchat Endpoint" 
+ slug: "deploy-webchat-endpoint" 
+ hidden: false 
+---
 # Deploy a Webchat Endpoint
 
 ## Creating a Webchat Endpoint

@@ -1,3 +1,8 @@
+---
+ title: "Send Email" 
+ slug: "send-email" 
+ hidden: false 
+---
 # Send Email
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Annotations" 
+ slug: "annotations" 
+ hidden: false 
+---
 # Annotations
 
 The Cognigy.AI intent builder features the **Annotations** tool that allows sentence words to be assigned as placeholders to recognize specific details from user utterances. Each placeholder is assigned to the **Slot** that will be recognized and filled by the NLU.

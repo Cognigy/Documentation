@@ -1,3 +1,8 @@
+---
+ title: "Interval" 
+ slug: "interval" 
+ hidden: false 
+---
 # Interval
 
 <figure>

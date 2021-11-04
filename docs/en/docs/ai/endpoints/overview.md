@@ -1,3 +1,8 @@
+---
+ title: "Overview" 
+ slug: "overview" 
+ hidden: false 
+---
 # Overview
 
 **Endpoints** are the connector between your user interface and the Cognigy **Agent**. This connection can range from text based conversation to a conversation on your contact center phonelines.

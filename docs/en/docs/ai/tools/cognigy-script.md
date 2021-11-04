@@ -1,3 +1,8 @@
+---
+ title: "CognigyScript" 
+ slug: "cognigy-script" 
+ hidden: false 
+---
 # CognigyScript
 
 CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) and [Context]({{config.site_url}}ai/tools/interaction-panel/context/) objects within text and JSON.

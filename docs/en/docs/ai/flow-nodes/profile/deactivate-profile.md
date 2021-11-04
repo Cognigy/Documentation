@@ -1,5 +1,9 @@
+---
+ title: "Deactivate Profile" 
+ slug: "deactivate-profile" 
+ hidden: false 
+---
 # Deactivate Profile
-
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/93835e7-profile-deactivate.jpg" width="100%" />

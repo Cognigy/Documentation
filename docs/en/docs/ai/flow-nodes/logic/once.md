@@ -1,3 +1,8 @@
+---
+ title: "Once" 
+ slug: "once" 
+ hidden: false 
+---
 # Once
 
 <figure>

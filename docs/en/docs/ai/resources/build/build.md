@@ -1,3 +1,8 @@
+---
+ title: "Build" 
+ slug: "build" 
+ hidden: false 
+---
 # Build
 
 The Build section allows for the creation of resources that help shape your Virtual Agent. 

@@ -1,3 +1,8 @@
+---
+ title: "Manage" 
+ slug: "manage" 
+ hidden: false 
+---
 # Manage
  
 ## Settings

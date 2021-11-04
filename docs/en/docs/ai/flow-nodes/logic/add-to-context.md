@@ -1,3 +1,8 @@
+---
+ title: "Add To Context" 
+ slug: "add-to-context" 
+ hidden: false 
+---
 # Add To Context
 
 <figure>

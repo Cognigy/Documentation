@@ -1,3 +1,8 @@
+---
+ title: "datepicker" 
+ slug: "Datepicker" 
+ hidden: false 
+---
 # Datepicker
 
 <figure>

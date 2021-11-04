@@ -1,3 +1,8 @@
+---
+ title: "Management UI" 
+ slug: "management-ui" 
+ hidden: false 
+---
 # Management UI
 
 ## Introduction

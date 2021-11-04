@@ -1,3 +1,8 @@
+---
+ title: "Auto-translation" 
+ slug: "auto-localization" 
+ hidden: false 
+---
 # Auto-translation
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})

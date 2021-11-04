@@ -1,3 +1,8 @@
+---
+ title: "OData Analytics Endpoint" 
+ slug: "odata-analytics-endpoint" 
+ hidden: false 
+---
 # OData Analytics Endpoint
 
 Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records. OData, *the Best Way to REST* is a powerful API framework, see more at [OData.org](https://www.odata.org/). The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI. It has all your enterprise analytics needs covered to make fine grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.

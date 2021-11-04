@@ -1,3 +1,8 @@
+---
+ title: "Profile" 
+ slug: "profile" 
+ hidden: false 
+---
 # Profile
 
 The Profile is a JSON object which stores persistent information about the end-user.

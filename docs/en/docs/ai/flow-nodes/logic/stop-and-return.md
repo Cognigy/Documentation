@@ -1,3 +1,8 @@
+---
+ title: "Stop and Return" 
+ slug: "stop-and-return" 
+ hidden: false 
+---
 # Stop and Return
 
 <figure>

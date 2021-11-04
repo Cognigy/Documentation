@@ -1,3 +1,8 @@
+---
+ title: "Wait for Input" 
+ slug: "wait-for-input" 
+ hidden: false 
+---
 # Wait for Input
 
 <figure>
