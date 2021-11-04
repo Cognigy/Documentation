@@ -1,3 +1,8 @@
+---
+ title: "My Profile" 
+ slug: "my-profile" 
+ hidden: false 
+---
 # My Profile
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Members" 
+ slug: "members" 
+ hidden: false 
+---
 # Members
 
 The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the **[Access Control]({{config.site_url}}ai/tools/user-menu/access-control/)** panel.

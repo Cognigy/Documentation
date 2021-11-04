@@ -1,3 +1,8 @@
+---
+ title: "Prerequisites" 
+ slug: "prerequisites" 
+ hidden: false 
+---
 # Prerequisites
 
 ## Kubernetes cluster and Helm

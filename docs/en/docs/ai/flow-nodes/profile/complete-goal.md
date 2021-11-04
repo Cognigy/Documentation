@@ -1,3 +1,8 @@
+---
+ title: "Complete Goal" 
+ slug: "complete-goal" 
+ hidden: false 
+---
 # Complete Goal
 
 <figure>

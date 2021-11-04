@@ -1,3 +1,8 @@
+---
+ title: "Regex Slotfiller" 
+ slug: "regex-slotfiller" 
+ hidden: false 
+---
 # Regex Slotfiller
 
 <figure>

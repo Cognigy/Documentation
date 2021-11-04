@@ -1,3 +1,8 @@
+---
+ title: "SMTP" 
+ slug: "smtp" 
+ hidden: false 
+---
 # SMTP
 
 <figure>

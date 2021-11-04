@@ -1,3 +1,8 @@
+---
+ title: "http-request" 
+ slug: "HTTP Request" 
+ hidden: false 
+---
 # HTTP Request
 
 <figure>

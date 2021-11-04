@@ -1,3 +1,8 @@
+---
+ title: "Transcript Explorer" 
+ slug: "transcript-explorer" 
+ hidden: false 
+---
 # Transcript Explorer
 
 ## Description

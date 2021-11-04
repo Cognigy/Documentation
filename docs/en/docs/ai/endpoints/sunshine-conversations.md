@@ -1,3 +1,8 @@
+---
+ title: "Sunshine Conversations" 
+ slug: "sunshine-conversations" 
+ hidden: false 
+---
 # Sunshine Conversations
 
 <figure>

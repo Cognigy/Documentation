@@ -1,5 +1,7 @@
 ---
-title: "Super admin Console"
+ title: "Super admin Console" 
+ slug: "super-admin.backup" 
+ hidden: false 
 ---
 
 To access super admin console and Sidekiq console, you have to create a super admin.

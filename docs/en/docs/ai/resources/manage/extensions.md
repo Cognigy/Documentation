@@ -1,3 +1,8 @@
+---
+ title: "Extensions" 
+ slug: "extensions" 
+ hidden: false 
+---
 # Extensions
 
 Extensions are a way of extending the Cognigy Flow Editor with new Nodes. Extensions contain multiple Flow Nodes which appear in the Flow Editor once they have been installed.

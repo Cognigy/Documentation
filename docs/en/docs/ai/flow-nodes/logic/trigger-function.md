@@ -1,3 +1,8 @@
+---
+ title: "Trigger Function" 
+ slug: "trigger-function" 
+ hidden: false 
+---
 # Trigger Function
 
 <figure>

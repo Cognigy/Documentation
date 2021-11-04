@@ -1,3 +1,8 @@
+---
+ title: "NLU Connectors" 
+ slug: "nlu-connectors" 
+ hidden: false 
+---
 # NLU Connectors
 
 Cognigy.AI features built-in support for a number of third-party NLU engines. These are: 
@@ -5,6 +10,7 @@ Cognigy.AI features built-in support for a number of third-party NLU engines. Th
   * **Google Dialogflow**
   * **IBM Watson Assistant**
   * **Amazon Alexa**
+  * **Amazon Lex**
   * **Microsoft LUIS**
   * **Code (custom)** 
 
@@ -17,6 +23,7 @@ Cognigy.AI features built-in support for a number of third-party NLU engines. Th
     Find out how to connect to each supported external NLU service via the Help Center articles listed below:
     
     * Alexa NLU (Article coming soon)
+    * [Amazon Lex: External NLU](https://support.cognigy.com/hc/en-us/articles/4408910240530)
     * [Watson Assistant: External NLU](https://support.cognigy.com/hc/en-us/articles/360017484979-Watson-Assistant-External-NLU)
     * [Microsoft LUIS: External NLU](https://support.cognigy.com/hc/en-us/articles/360017517319)
     * [Dialogflow: External NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)

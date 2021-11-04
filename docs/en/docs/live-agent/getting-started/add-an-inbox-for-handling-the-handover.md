@@ -1,3 +1,8 @@
+---
+ title: "Add an Inbox for Handling the Handover" 
+ slug: "add-an-inbox-for-handling-the-handover" 
+ hidden: false 
+---
 # Add an Inbox for Handling the Handover
 
 From the Live Agent Dashboard screen, do click on **Inboxes** in the sidebar.

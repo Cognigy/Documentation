@@ -1,3 +1,8 @@
+---
+ title: "Machine learning Intents" 
+ slug: "ml-intents" 
+ hidden: false 
+---
 # Machine learning Intents
 
 Intents are collections of identified user intents (e.g. what does the user want).

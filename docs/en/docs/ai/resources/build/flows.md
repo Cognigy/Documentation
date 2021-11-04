@@ -1,3 +1,8 @@
+---
+ title: "Flows" 
+ slug: "flows" 
+ hidden: false 
+---
 # Flows 
 
 ## Chart

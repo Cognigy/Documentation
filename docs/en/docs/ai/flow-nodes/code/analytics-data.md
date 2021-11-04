@@ -1,3 +1,8 @@
+---
+ title: "Analytics data" 
+ slug: "analytics-data" 
+ hidden: false 
+---
 # Analytics data
 ## Description
 <div class="divider"></div>

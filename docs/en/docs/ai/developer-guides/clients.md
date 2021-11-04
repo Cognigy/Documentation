@@ -1,3 +1,8 @@
+---
+ title: "Clients" 
+ slug: "clients" 
+ hidden: false 
+---
 # Clients
 
 Cognigy offers a variety of clients in various languages to connect with Cognigy.AI. All of these are hosted on [Cognigy's GitHub account](https://github.com/Cognigy). 

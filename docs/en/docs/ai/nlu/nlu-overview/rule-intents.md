@@ -1,3 +1,8 @@
+---
+ title: "Rule Intents" 
+ slug: "rule-intents" 
+ hidden: false 
+---
 # Rule Intents
 
 Rule intents gives you the capability to use advanced rules to understand what a user wants. You can often get by with only using our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) that use various Machine Learning techniques to understand what your users are saying, but sometimes you need more power than this. 

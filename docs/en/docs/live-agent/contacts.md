@@ -1,5 +1,7 @@
 ---
-title: "Contacts"
+ title: "Contacts" 
+ slug: "contacts" 
+ hidden: false 
 ---
 # Contacts
 

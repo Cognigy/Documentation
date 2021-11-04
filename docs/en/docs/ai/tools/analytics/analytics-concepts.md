@@ -1,3 +1,8 @@
+---
+ title: "Analytics Concepts" 
+ slug: "analytics-concepts" 
+ hidden: false 
+---
 # Analytics Concepts
 
 ## Data Collections

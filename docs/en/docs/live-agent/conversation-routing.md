@@ -1,5 +1,7 @@
 ---
-title: "Routing conversations"
+ title: "Routing conversations" 
+ slug: "conversation-routing" 
+ hidden: false 
 ---
 
 # Conversation Routing

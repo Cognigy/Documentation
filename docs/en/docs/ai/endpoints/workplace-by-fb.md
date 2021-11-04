@@ -1,3 +1,8 @@
+---
+ title: "Workplace by Facebook" 
+ slug: "workplace-by-fb" 
+ hidden: false 
+---
 # Workplace by Facebook
 
 <figure>

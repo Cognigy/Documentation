@@ -1,3 +1,8 @@
+---
+ title: "Code" 
+ slug: "code" 
+ hidden: false 
+---
 # Code
 
 <figure>

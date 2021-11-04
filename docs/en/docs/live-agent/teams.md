@@ -1,5 +1,7 @@
 ---
-title: "Teams"
+ title: "Teams" 
+ slug: "teams" 
+ hidden: false 
 ---
 
 # Teams

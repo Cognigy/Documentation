@@ -1,3 +1,8 @@
+---
+ title: "Set State" 
+ slug: "set-state" 
+ hidden: false 
+---
 # Set State
 
 <figure>

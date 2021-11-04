@@ -1,3 +1,8 @@
+---
+ title: "Redis" 
+ slug: "redis" 
+ hidden: false 
+---
 # Redis
 
 Redis is an in-memory data structure store used for caching and having a better performance across the application. It can either run inside of the Kubernetes cluster as an additional workload or outside of the cluster. You can also use a fully managed solution for PostgreSQL.

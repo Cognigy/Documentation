@@ -1,3 +1,8 @@
+---
+ title: "Helm values" 
+ slug: "index" 
+ hidden: false 
+---
 # Helm values
 
 ## Quick introduction

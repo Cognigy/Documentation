@@ -1,3 +1,8 @@
+---
+ title: "Step Explorer" 
+ slug: "step-explorer" 
+ hidden: false 
+---
 # Step Explorer
 
 ## Description

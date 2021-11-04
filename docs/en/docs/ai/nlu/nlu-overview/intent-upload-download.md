@@ -1,4 +1,9 @@
-# Intent Up- and Download
+---
+ title: "Intent Up and Download" 
+ slug: "Intent Up- and Download" 
+ hidden: false 
+---
+# Intent Up and Download
 
 You can upload and download intents from Cognigy. Quickly import intents, edit them with your favourite spreadsheet tool or developer scripts or quickly move intents between flows.
 

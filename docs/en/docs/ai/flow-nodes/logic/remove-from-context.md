@@ -1,3 +1,8 @@
+---
+ title: "Remove From Context" 
+ slug: "remove-from-context" 
+ hidden: false 
+---
 # Remove From Context
 
 <figure>

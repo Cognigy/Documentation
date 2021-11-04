@@ -1,3 +1,8 @@
+---
+ title: "Release notes" 
+ slug: "releases" 
+ hidden: false 
+---
 # Release notes
 
 <div class="divider"></div>

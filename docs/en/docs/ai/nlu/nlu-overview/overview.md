@@ -1,3 +1,8 @@
+---
+ title: "NLU Overview" 
+ slug: "overview" 
+ hidden: false 
+---
 # NLU Overview
 
 **Natural Language Understanding** is at the core of advanced Virtual Agents. Cognigy.AI features an industry leading NLU engine called Cognigy NLU. 

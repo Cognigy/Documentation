@@ -1,3 +1,8 @@
+---
+ title: "Flow Nodes Overview" 
+ slug: "flow-nodes-overview" 
+ hidden: false 
+---
 # Flow Nodes Overview
 
 Flow Nodes can be used to add interactivity to a Flow. When combined in a certain way, they can help create dynamic interactive conversations. There are many types of Nodes, ranging from Basic to Advanced. 

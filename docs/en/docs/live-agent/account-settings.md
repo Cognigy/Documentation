@@ -1,5 +1,7 @@
 ---
-title: "Account Settings"
+ title: "Account Settings"
+ slug: "account-settings" 
+ hidden: false 
 ---
 # Account Settings
 
