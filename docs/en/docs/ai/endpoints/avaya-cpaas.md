@@ -18,7 +18,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 <div class="divider"></div>
 
-To connect the Avaya CPaaS Endpoint in Cognigy.AI to a phone number in Avaya CPaaS, copy the Endpoint URL from within the Endpoint in Cognigy.AI and insert this into the Request URL inside the Avaya CPaaS phone number configuration.
+To connect the Avaya CPaaS Endpoint in Cognigy.AI to a phone number in Avaya CPaaS, copy the Endpoint URL from within the Endpoint in Cognigy.AI and insert it into the Request URL inside the Avaya CPaaS phone number configuration.
 
 ## Configuring the Avaya CPaaS Endpoint
 <div class="divider"></div>
