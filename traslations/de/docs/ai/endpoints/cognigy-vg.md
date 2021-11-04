@@ -1,1 +1,0 @@
-# Cognigy Voice Gateway
