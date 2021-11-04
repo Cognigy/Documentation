@@ -4,29 +4,30 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/avaya-cpaas-logo.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy.AI resources to your **Avaya CPaaS** phone number by using the CPaaS Endpoint.
+Within our **COGNIGY.AI** platform you're able to connect your Cognigy.AI resources to your **Avaya CPaaS** phone number by using the Avaya CPaaS Endpoint.
 
 ## Generic Endpoint Settings
+Find out about the generic endpoint settings available with this endpoint on the following pages:
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
 - [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 
-## Setting up CPaaS
+## Setting up Avaya CPaaS
 
 <div class="divider"></div>
 
-To connect the CPaaS Endpoint in Cognigy.AI to a phone number in CPaaS, copy the Endpoint URL from within the Endpoint in Cognigy.AI and insert this into the Request URL inside the CPaaS phone number configuration.
+To connect the Avaya CPaaS Endpoint in Cognigy.AI to a phone number in Avaya CPaaS, copy the Endpoint URL from within the Endpoint in Cognigy.AI and insert this into the Request URL inside the Avaya CPaaS phone number configuration.
 
-## Configuring the CPaaS Endpoint
+## Configuring the Avaya CPaaS Endpoint
 <div class="divider"></div>
 
-In the CPaaS Endpoint you can customize how the conversation with CPaaS should behave.
+In the Avaya CPaaS Endpoint you can customize how the conversation with Avaya CPaaS should behave.
 
 ### Avaya Settings
 
-In the **Avaya Settings** section, you can configure the following settings for the CPaaS Endpoint:
+In the **Avaya Settings** section, you can configure the following settings for the Avaya CPaaS Endpoint:
 
 <table>
     <tr>
@@ -36,25 +37,25 @@ In the **Avaya Settings** section, you can configure the following settings for 
   <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">STT + TTS Language</td>
     <td style="padding: 20px;">
-      The language that CPaaS should use to read out the outputs from the bot.
+      The language that Avaya CPaaS should use to read out the outputs from the bot.
     </td>
   </tr>
     <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Voice</td>
     <td style="padding: 20px;">
-      The voice to use with CPaaS.
+      The voice to use with Avaya CPaaS.
       </td>
   </tr>
     <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">CPaaS Token</td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Avaya CPaaS Token</td>
     <td style="padding: 20px;">
-      An optional security token you can insert that comes from CPaaS to validate that the request does not come from a third party.
+      An optional security token you can insert that comes from Avaya CPaaS to validate that the request does not come from a third party.
       </td>
   </tr>
 </table>
 
 ### Gather Settings
-In the **Gather Settings** section, you can configure several different attributes that will be attached to the Gather statement that is sent to CpaaS:
+In the **Gather Settings** section, you can configure several different attributes that will be attached to the Gather statement that is sent to Avaya CPaaS:
 
 <table>
     <tr>
@@ -64,25 +65,31 @@ In the **Gather Settings** section, you can configure several different attribut
   <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Action URL</td>
     <td style="padding: 20px;">
-      The URL which CPaaS will use to send the user inputs to. Keep it empty to have the requests go to the CPaaS Endpoint.
+      The URL which Avaya CPaaS will use to send the user inputs to. Keep it empty to have the requests go to the Avaya CPaaS Endpoint.
     </td>
   </tr>
     <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Input Type</td>
     <td style="padding: 20px;">
-      The different kind of input types that CPaaS should accept. Default is digits + voice.
+      The different kind of input types that Avaya CPaaS should accept. Default is digits + voice.
     </td>
   </tr>
-    <tr>
+  <tr>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Hints</td>
+    <td style="padding: 20px;">
+      A set of words or phrases that Avaya CPaaS should listen for. Commas should separate words.
+    </td>
+  </tr>
+  <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Method</td>
     <td style="padding: 20px;">
-      The HTTP request method that CPaaS should use to contact the Action URL. Default is POST.
+      The HTTP request method that Avaya CPaaS should use to contact the Action URL. Default is POST.
       </td>
   </tr>
       <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Timeout</td>
     <td style="padding: 20px;">
-      The amount of time the user has to answer the bot before the call disconnects. <b>Note:</b> The timeout starts counting as soon as the bot starts speaking, meaning if you are reading out a long text to the user, it might timeout before they even start to answer.
+      The amount of time the user has to answer the bot before the call disconnects. The timeout is specified in seconds with a default value of 30 seconds. <b>Note:</b> The timeout starts counting as soon as the bot starts speaking, meaning if you are reading out a long text to the user, it might timeout before they even start to answer.
       </td>
   </tr>
       <tr>
@@ -94,7 +101,7 @@ In the **Gather Settings** section, you can configure several different attribut
       <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Num digits</td>
     <td style="padding: 20px;">
-      The amount of digits the user should enter.
+      The maximum amount of digits the user can enter.
       </td>
   </tr>
 </table>
