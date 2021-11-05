@@ -5,6 +5,39 @@
 ---
 # Release notes
 
+## 4.14.0
+**Released** November 5th, 2021
+
+## Features
+### Timezones for Cognigy Insights
+This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
+
+### SSO integration for Microsoft teams
+This release of Cognigy.AI adds SSO (=Single Sign On) integration for Microsoft teams through our Azure Bot Framework Endpoint. We have also added new Flow Nodes which allow users to initiate the SSO process and ask users for their consent. An obtained token can then be used to query e.g. the Microsoft Graph APIs in order to retrieve and use more information about users and use it during the conversation. **This feature is currently only available when specifically activated using a feature flag!**.
+
+## Improvements
+- Added support for Websocket based async output handling for Cognigy Voice Gateway
+- Improved by adding a tooltip to the starting step in the Step Explorer
+- Improved by adding a new setting to the Webchat Endpoint configuration to disable autocomplete in the input field
+
+## Bug Fixes
+- Fixed a bug where empty Intents without example sentences could not be downloaded
+- Fixed a bug where Intents with default replies could not be uploaded properly
+- Fixed a bug where data of existing Keyphrases are not overwritten when a Lexicon csv file is uploaded and the “overwrite” strategy is used
+- Fixed a bug related to error text not being descriptive when white-labelling is enabled but a theme for Insights UI is not provided
+- Fixed a bug related to pagination not working when chart/nodes API is called
+- Fixed a bug where the incorrect text is stored in the detailed context for different Question Output Types
+- Fixed a bug related to wrongly encoded translation responses from third-party translation providers
+- Fixed a bug related to date ranges not stored in the Context when date questions are used
+- Fixed a bug related to the Lexicon editor not resetting the page position when the filter field is used
+- Fixed a bug related to Intents not being sorted in alphabetic order
+- Fixed a bug related to messages getting stuck when Extensions use the Think API
+- Fixed a bug where German time interval inputs are parsed in unexpected ways
+- Fixed a bug regarding slotfillers and our DATE slot
+- Fixed a style regression bug in the Intent training feedback tooltips
+- Fixed a style regression bug in the Intent trained indidcator section
+
+
 ## 4.13.1
 **Released**: October 28th, 2021
 
