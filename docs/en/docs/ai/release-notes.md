@@ -11,10 +11,6 @@
 ## Features
 ### Timezones for Cognigy Insights
 This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
-
-### SSO integration for Microsoft teams
-This release of Cognigy.AI adds SSO (=Single Sign On) integration for Microsoft teams through our Azure Bot Framework Endpoint. We have also added new Flow Nodes which allow users to initiate the SSO process and ask users for their consent. An obtained token can then be used to query e.g. the Microsoft Graph APIs in order to retrieve and use more information about users and use it during the conversation. **This feature is currently only available when specifically activated using a feature flag!**.
-
 ## Improvements
 - Added support for Websocket based async output handling for Cognigy Voice Gateway
 - Improved by adding a tooltip to the starting step in the Step Explorer
