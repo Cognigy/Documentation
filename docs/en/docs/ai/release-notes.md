@@ -11,8 +11,11 @@
 ## Features
 ### Timezones for Cognigy Insights
 This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
+
+### Async output handling for Voice Gatway
+This release of Cognigy.AI introduces asynchronous output handling for Cognigy Voice Gateway. Previously, outputs from Cognigy Flows would get buffered and send to Cognigy Voice Gatway once your Flows have been processed entirely. It was not possible to use concepts like "Sleep Nodes" or our inject- and notify-APIs. Customers can now activate asynchronous output handling in the Cognigy Voice Gateway Endpoint configuration form.
+
 ## Improvements
-- Added support for Websocket based async output handling for Cognigy Voice Gateway
 - Improved by adding a tooltip to the starting step in the Step Explorer
 - Improved by adding a new setting to the Webchat Endpoint configuration to disable autocomplete in the input field
 
