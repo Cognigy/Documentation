@@ -5,6 +5,13 @@
 ---
 # Release notes
 
+## 4.14.1
+**Released** November 9th, 2021
+
+### Bug Fixes
+- Fixed a bug where the "inject" and "notify" RESTful API endpoint would not work (pr: #6264, #6290, ticket: #19512)
+
+
 ## 4.14.0
 **Released** November 5th, 2021
 
