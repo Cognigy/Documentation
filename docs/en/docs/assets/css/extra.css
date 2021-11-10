@@ -375,3 +375,23 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
   margin: auto;
   width: 50%;
 } */
+
+
+/* Github repo styles */
+
+.md-header__source::before{
+  content: "Suggest Edits";
+  font-size: 12px;
+  padding-left: 14px;
+}
+
+.md-header__source{
+  margin-left: 0 !important;
+  display: block !important;
+  width: 10.3rem;
+}
+
+body > div.md-container > nav > div{
+  display: flex;
+  justify-content: space-between;
+}
