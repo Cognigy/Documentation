@@ -380,7 +380,7 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 /* Github repo styles */
 
 .md-header__source::before{
-  content: "Suggest Edits";
+  content: "Suggest Edits on Github";
   font-size: 12px;
   padding-left: 14px;
 }
