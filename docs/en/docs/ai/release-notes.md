@@ -8,7 +8,7 @@
 ## 4.13.1
 **Released**: October 28th, 2021
 
-## Improvements
+### Improvements
 - Expose additional metrics for one of our microservices and further prepare our application to get monitored with our new monitoring solution we are currently working on
 - Improve system stability by adding a maximum TTL for a message defining how long it can reside in the system
 
@@ -16,21 +16,21 @@
 ## 4.13.0
 **Released:** October 28th, 2021
 
-## Features
-### Avaya CPaaS
+### Features
+#### Avaya CPaaS
 This release of Cognigy.AI contains the new Avaya CPaaS endpoint which is an essential rewrite of the currently existing one. We have added many new capabilities and e.g. made TTS/STT language configurable.
 
-### Amazon Lex NLU Connector
+#### Amazon Lex NLU Connector
 This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
 
-## Improvements
+### Improvements
 - Improved by adding additional filters to the Transcript Explorer allowing to filter transcripts by message count and rating
 - Improved by adding the ability to set the starting and ending step from the context menu of a step in the Step Explorer
 - Improved by allowing to select and copy text of messages in the Transcript Explorer
 - Improved by appropriately rendering datepicker messages in the Transcript Explorer
 - Improved by adding information about the required Cognigy version to use option resolvers and localization to the Extension tools documentation
 
-## Bug Fixes
+### Bug Fixes
 - Fixed a bug where the confirmation and disambiguation sentence are not translated when automatically translating an intent in the NLU tab
 - Fixed a bug where an Agent does not disappear from the list of Agents after deleting it
 - Fixed a bug related to the layout of the Member select dropdown
@@ -50,21 +50,21 @@ This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
 ## 4.12.0
 **Released:** October 11th, 2021
 
-## Features
-### Localization for Extensions
+### Features
+#### Localization for Extensions
 Added option to allow extension creators to provide localized display values in Node descriptor
 
-### Management-UI authentication
+#### Management-UI authentication
 Added support for multiple credential pairs for the Cognigy Management UI
 
-### Non-conversational Endpoint
+#### Non-conversational Endpoint
 This release of Cognigy.AI adds a non-conversational Endpoint. The feature needs to be enabled using an additional environment variable. It allows customers to create an Endpoint that will not process inputs using NLU enginers. The Endpoint can e.g. be used if Cognigy.AI is being used as a process orchestration tool
 
-## Improvements
+### Improvements
 - Improved by adding the Node type to the error logs when Node execution fails
 - Improved by merging the extension tools basic documentation with the option resolvers and localization documentation into one document
 
-## Bug Fixes
+### Bug Fixes
 - Fixed a bug where Webhook Endpoint Inject calls cannot be made without errors
 - Fixed a bug where the FROM variable is not used in password reset request emails
 - Fixed a bug where a Say node with an empty string breaks the Insights UI
