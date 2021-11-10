@@ -5,6 +5,45 @@
 ---
 # Release notes
 
+## 4.14.1
+**Released** November 9th, 2021
+
+### Bug Fixes
+- Fixed a bug where the "inject" and "notify" RESTful API endpoint would not work (pr: #6264, #6290, ticket: #19512)
+
+
+## 4.14.0
+**Released** November 5th, 2021
+
+## Features
+### Timezones for Cognigy Insights
+This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
+
+### Async output handling for Voice Gatway
+This release of Cognigy.AI introduces asynchronous output handling for Cognigy Voice Gateway. Previously, outputs from Cognigy Flows would get buffered and send to Cognigy Voice Gatway once your Flows have been processed entirely. It was not possible to use concepts like "Sleep Nodes" or our inject- and notify-APIs. Customers can now activate asynchronous output handling in the Cognigy Voice Gateway Endpoint configuration form.
+
+## Improvements
+- Improved by adding a tooltip to the starting step in the Step Explorer
+- Improved by adding a new setting to the Webchat Endpoint configuration to disable autocomplete in the input field
+
+## Bug Fixes
+- Fixed a bug where empty Intents without example sentences could not be downloaded
+- Fixed a bug where Intents with default replies could not be uploaded properly
+- Fixed a bug where data of existing Keyphrases are not overwritten when a Lexicon csv file is uploaded and the “overwrite” strategy is used
+- Fixed a bug related to error text not being descriptive when white-labelling is enabled but a theme for Insights UI is not provided
+- Fixed a bug related to pagination not working when chart/nodes API is called
+- Fixed a bug where the incorrect text is stored in the detailed context for different Question Output Types
+- Fixed a bug related to wrongly encoded translation responses from third-party translation providers
+- Fixed a bug related to date ranges not stored in the Context when date questions are used
+- Fixed a bug related to the Lexicon editor not resetting the page position when the filter field is used
+- Fixed a bug related to Intents not being sorted in alphabetic order
+- Fixed a bug related to messages getting stuck when Extensions use the Think API
+- Fixed a bug where German time interval inputs are parsed in unexpected ways
+- Fixed a bug regarding slotfillers and our DATE slot
+- Fixed a style regression bug in the Intent training feedback tooltips
+- Fixed a style regression bug in the Intent trained indidcator section
+
+
 ## 4.13.1
 **Released**: October 28th, 2021
 
