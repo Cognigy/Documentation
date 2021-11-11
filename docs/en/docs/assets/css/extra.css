@@ -295,7 +295,8 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 
 /*Media Queries*/
 @media only screen and (min-width: 76.25em) {
-  .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+  .md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link,
+  body > div.md-container > main > div > div.md-sidebar.md-sidebar--primary > div > div > nav > div.md-header__source {
     display: none;
   }
   /* .md-main__inner {
@@ -379,6 +380,10 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 
 /* Github repo styles */
 
+body > header > nav > div.md-header__source {
+  display: none !important;
+}
+
 .md-header__source::before{
   content: "Suggest Edits on Github";
   font-size: 12px;
@@ -387,7 +392,7 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 
 .md-header__source{
   margin-left: 0 !important;
-  display: block !important;
+  display: block;
   width: 10.3rem;
 }
 
