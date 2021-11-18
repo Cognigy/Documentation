@@ -5,9 +5,14 @@
 ---
 # Release notes
 
-## 4.15.0
+## 4.15.1
 **Released** November 18th, 2021
 
+### Bugfixes
+- Fixed a bug where the Intent Editor would experience a slowdown (pr: #6438, #6432, ticket: 19918)
+
+## 4.15.0
+**Released** November 18th, 2021
 ### Features
 #### Cognigy Insights: Show data for all Snapshots
 This release adds a branch new filter option for Snapshots - customers will now be able to select "All" Snapshots in the global filters.
