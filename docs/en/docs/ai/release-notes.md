@@ -5,22 +5,22 @@
 ---
 # Release notes
 
-# 4.15.0
+## 4.15.0
 **Released** November 18th, 2021
 
-## Features
-### Cognigy Insights: Show data for all Snapshots
+### Features
+#### Cognigy Insights: Show data for all Snapshots
 This release adds a branch new filter option for Snapshots - customers will now be able to select "All" Snapshots in the global filters.
 
-### Cognigy Insights: Expert mode for Transcript Explorer
+#### Cognigy Insights: Expert mode for Transcript Explorer
 This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy Insights. Similar to the Expert Mode in Cognigy.AIs Interaction Panel, this mode shows additional information such as detected Slots and the classified Intent in addition to the actual transcript of conversations.
 
-## Improvements
+### Improvements
 - Improved by adding a Tourist Guide Template for NLU language Japanese
 - Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Please note that the changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag. This is only possible on on-premise environments.
 - Update internal WebchatWidget to version v2.38.1
 
-## Bugfixes
+### Bugfixes
 - Fixed a bug related to authentication problems for OData v2.1 endpoint in Excel/PowerBI
 - Fixed a bug where data specified as part of the Default Reply are not emitted
 - Fixed a bug where the calendar in Insights, used to filter for custom timeframes, shows incorrect dates
@@ -61,18 +61,18 @@ This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy 
 ## 4.14.0
 **Released** November 5th, 2021
 
-## Features
-### Timezones for Cognigy Insights
+### Features
+#### Timezones for Cognigy Insights
 This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
 
-### Async output handling for Voice Gatway
+#### Async output handling for Voice Gatway
 This release of Cognigy.AI introduces asynchronous output handling for Cognigy Voice Gateway. Previously, outputs from Cognigy Flows would get buffered and send to Cognigy Voice Gatway once your Flows have been processed entirely. It was not possible to use concepts like "Sleep Nodes" or our inject- and notify-APIs. Customers can now activate asynchronous output handling in the Cognigy Voice Gateway Endpoint configuration form.
 
-## Improvements
+### Improvements
 - Improved by adding a tooltip to the starting step in the Step Explorer
 - Improved by adding a new setting to the Webchat Endpoint configuration to disable autocomplete in the input field
 
-## Bug Fixes
+### Bug Fixes
 - Fixed a bug where empty Intents without example sentences could not be downloaded
 - Fixed a bug where Intents with default replies could not be uploaded properly
 - Fixed a bug where data of existing Keyphrases are not overwritten when a Lexicon csv file is uploaded and the “overwrite” strategy is used
