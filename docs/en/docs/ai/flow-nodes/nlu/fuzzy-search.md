@@ -25,12 +25,12 @@ In case of an error, this is stored in either the Cognigy context (`context.STOR
 | Search Pattern | String | The pattern to search for |
 | Source Data | JSON | An array of strings or an object to search through |
 | Is Case Sensitive | Boolean | Indicates whether comparisons should be case sensitive |
-| Include Score | Boolean | Whether the score should be included in the result set. A score of 0 indicates a perfect match, while a score of 1 indicates a complete mismatch |
+| Include Score | Boolean | Whether the score should be included in the result set. A score of 1.0 indicates a perfect match, while a score of 0.0 indicates a complete mismatch |
 | Include Matches | Boolean | Whether the matches should be included in the result set. When active, each record in the result set will include the indices of the matched characters |
 | Minimum Characters | Number | Only the matches whose length exceeds this value will be returned |
 | Should Sort | Boolean | Whether to sort the result list, by score |
 | Find All Matches | Boolean | When activated, the matching function will continue to the end of a search pattern even if a perfect match has already been located in the string |
 | Location | Number | Determines approximately where in the text is the pattern expected to be found |
-| Threshold | Number | At what point does the match algorithm give up. A threshold of 0.0 requires a perfect match (of both letters and location), a threshold of 1.0 would match anything |
+| Threshold | Number | At what point does the match algorithm give up. A threshold of 1.0 requires a perfect match (of both letters and location), a threshold of 0.0 would match anything |
 | Distance | Number | Determines how close the match must be to the fuzzy location (specified by Location) |
 | Ignore Location | Boolean | When activated, search will ignore Location and Distance, so it won't matter where in the string the pattern appears |
