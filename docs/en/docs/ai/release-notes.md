@@ -5,57 +5,6 @@
 ---
 # Release notes
 
-## 4.15.1
-**Released** November 18th, 2021
-
-### Bugfixes
-- Fixed a bug where the Intent Editor would experience a slowdown (pr: #6438, #6432, ticket: 19918)
-
-## 4.15.0
-**Released** November 18th, 2021
-### Features
-#### Cognigy Insights: Show data for all Snapshots
-This release adds a branch new filter option for Snapshots - customers will now be able to select "All" Snapshots in the global filters.
-
-#### Cognigy Insights: Expert mode for Transcript Explorer
-This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy Insights. Similar to the Expert Mode in Cognigy.AIs Interaction Panel, this mode shows additional information such as detected Slots and the classified Intent in addition to the actual transcript of conversations.
-
-### Improvements
-- Improved by adding a Tourist Guide Template for NLU language Japanese
-- Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Please note that the changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag. This is only possible on on-premise environments.
-- Update internal WebchatWidget to version v2.38.1
-
-### Bugfixes
-- Fixed a bug related to authentication problems for OData v2.1 endpoint in Excel/PowerBI
-- Fixed a bug where data specified as part of the Default Reply are not emitted
-- Fixed a bug where the calendar in Insights, used to filter for custom timeframes, shows incorrect dates
-- Fixed a bug related to timeout response errors occurring in Insights Transcript Explorer, Message Explorer and Step Explorer
-- Fixed a bug related to incorrect time zone suffix and locale formatting
-- Fixed a bug related to Live Agent (lite) mistakenly showing a large number of error messages
-- Fixed a bug where long text outputs of Say or Question Nodes are displayed truncated in Microsoft Teams
-- Fixed a bug where an infinite loop is triggered when a Flow with Parse Intents enabled and a “cIntent” input is used
-- Fixed a bug where you are unable to edit any Nodes in the Flow Editor
-- Fixed a bug related to a an unusually high number of MongoDB connections
-- Fixed a bug where Intents cannot be uploaded and models cannot be built while a large file with Intents is uploaded
-- Fixed a bug where errors are mistakenly logged when cancelling an already cancelled task
-- Fixed a bug where, after adding a new user under Access Control, a user cannot be added to an Agent as a member without reload
-- Fixed a bug where, after uploading a package with a Flow, it is not possible to select the Flow in the Interaction Panel without reloading
-- Fixed a bug related to regex patterns, defined in the Regex Slot Filler Node, not being recognized
-- Fixed a bug related to dates not being recognized correctly when the Voice Gateway is used
-- Fixed a bug where endpoint scrollbar blinks at certain zoom levels/screen resolutions
-- Fixed a bug where the import of packages containing some old Flows fails
-- Fixed a bug related to RPC call timeouts when CLI is used
-- Fixed a bug related to incorrectly displayed transcripts in Transcript Explorer when Azure Bot Services is used as Endpoint
-- Fixed a bug related to empty message bubbles rendered by the Webchat, when “sync data with facebook” option from the Webchat tab is used
-- Fixed a bug where lines containing long words are not wrapped in the Logs view
-- Fixed a bug where a “Unable to fetch flows” error message is mistakenly shown while large snapshots are restored
-- Fixed a bug where you do not get consistent results, when a list of items is paginated using nextCursor
-- Fixed a bug related to API requests and paginated data in the Cognigy Insights Message Explorer
-- Fixed a bug in Cognigy Insights where the Step Explorer would show wrong uncollapsed steps
-- Fixed a bug where Flow Node localizations would not be copied when using copy-paste
-- Fixed a bug regarding timezone offsets in Cognigy Insights filters
-
-
 ## 4.14.1
 **Released** November 9th, 2021
 
