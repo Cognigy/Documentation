@@ -60,7 +60,7 @@ If you're not using [States]({{config.site_url}}ai/tools/interaction-panel/state
 
 his is where creators are given the power to add unique levels of customized understanding to virtual agents which enable them to react intelligently to any message received by an end user.
 
-Each Intent can have any number of example sentences. These sentences should be a broad range of possible user inputs that are expected to activate the Intent. Building a comprehensive example sentence list is a critical step in the process of building a smart AI service.
+Even though each Intent can have up to 2000 example sentences, we recommend a minumum of 5 and a maximum of 100. These sentences should be a broad range of possible user inputs that are expected to activate the Intent. Building a comprehensive example sentence list is a critical step in the process of building a smart AI service.
 
 When entering the example sentences you can use the **ENTER** key to go to the next NLU example sentence field.
 
