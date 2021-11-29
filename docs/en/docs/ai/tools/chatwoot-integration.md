@@ -18,17 +18,6 @@ To start using Chatwoot as a handover provider with Cognigy.AI, you first have t
 ???+ info "Running Chatwoot On-Premise"
     You can also setup Chatwoot to run on an On-Premise environment. You can read more about that <a href="https://www.chatwoot.com/docs/self-hosted" target="_blank">here</a>
 
-In Chatwoot we first need to add a webhook that will be called when an agent replies to a message.
-
-
-**You can add the webhook in two ways:**
-
-- while creating the inbox
-
-- add the webhook using "Settings" - "Integrations", which sets the webhook for all the inboxes
-
-???+ warning "Running Chatwoot On-Premise"
-    **Choose only one of the following described procedures to add a webhook!**
 
 ## Add webhook while creating the inbox
 
@@ -75,25 +64,6 @@ The new channel will be added to the Chatwoot Inbox.
 </figure>
 
 **Chatwoot Inbox ID** (red marked in the Chatwoot address line)
-
-## Add a new webhook using "Settings" - "Integrations"
-
-- In the Chatwoot menu bar go to "Settings" - "Integrations" and select **"Add a new Webhook"**
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/6f79f20-Add_new_webhook.PNG" width="100%" />
-  <figcaption>Add new webhook</figcaption>
-</figure>
-
-- Find the Endpoint Base URL (the Endpoint URL without the Token) in the Endpoint Editor in Cognigy.AI
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/888125a-Screenshot_from_2021-05-17_19-12-15.png" width="100%" />
-</figure>
-
-- Enter the Endpoint Base URL in the "Webhook URL" line and append **/handover/chatwoot/** to the end of the URL (for example https://endpoint-trial.cognigy.com/handover/chatwoot)
-
-- Click on **"Create Webhook"**
 
 ## Connect Chatwoot to Cognigy.AI
 
