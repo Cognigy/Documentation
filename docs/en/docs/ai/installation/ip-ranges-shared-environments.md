@@ -55,22 +55,6 @@ The following static ip addresses will replace the above list effective from **T
 
 Set these IP addresses on a whitelist when using trial.cognigy.ai:
 
-- 52.57.160.238
-- 3.125.43.28
-- 3.121.180.225
-- 54.93.220.180
-- 18.194.157.247
-- 52.59.225.246
-- 3.125.116.43    
-- 3.120.132.190
-- 18.192.66.116
-- 18.157.81.182
-- 18.184.62.123
-- 18.184.146.27
-- 3.127.64.166
-
-The following static ip addresses will replace the above list effective from **Thursday 23rd September 2021**:
-
 - 3.69.16.128
 - 18.158.151.80
 - 3.64.180.26
