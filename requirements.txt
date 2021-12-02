@@ -1,6 +1,6 @@
-typer
-mkdocs
-mkdocs-material
-mdx-include
-mkdocs-macros-plugin
-mkdocs-section-index
+typer==0.3.2
+mkdocs==1.2.3 
+mkdocs-material==8.0.0
+mdx-include==1.16.0
+mkdocs-macros-plugin==0.6.3
+mkdocs-section-index==0.3.2
