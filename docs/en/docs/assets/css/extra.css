@@ -400,3 +400,7 @@ body > div.md-container > nav > div{
   display: flex;
   justify-content: space-between;
 }
+
+.md-content__button svg {
+  display: none;
+}
