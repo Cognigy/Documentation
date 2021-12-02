@@ -283,8 +283,6 @@ body > header > nav > div.md-header__title > div > div:nth-child(1) > span {
 .callout-icon-svg {
   font-size: 60px;
   margin-top: 10px;
-  padding-top: 15px;
-  padding-bottom: 10px;
 }
 
 .md-typeset blockquote {
