@@ -62,6 +62,32 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
         </td>
     </tr>
     <tr>
+        <td></td><td>next week</td><td>
+```json
+"DATE": [
+        {
+        "start": {
+          "year": 2021,
+          "month": 12,
+          "day": 13,
+          "hour": 0,
+          "minute": 0,
+          "second": 0,
+          "milliseconds": 0,
+          "weekday": 1,
+          "dayOfWeek": "Monday",
+          "ISODate": "2021-12-13T00:00:00+01:00",
+          "plain": "December 13, 2021",
+          "grain": "week"
+        },
+        "end": null,
+        "text": "next week"
+        }
+    ]
+```
+        </td>
+    </tr>
+    <tr>
         <td>NUMBER</td><td>one hundred, 143</td><td>
 ```json
 "NUMBER": [
