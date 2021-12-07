@@ -353,7 +353,6 @@ extra:
 extra_css:
 - assets/css/extra.css
 extra_javascript:
-- assets/js/termynal.js
 - assets/js/custom.js
 plugins:
 - section-index
