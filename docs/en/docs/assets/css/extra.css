@@ -407,7 +407,9 @@ body > div.md-container > nav > div{
 .md-typeset h1:target:before, 
 .md-typeset h2:target:before, 
 .md-typeset h3:target:before,
-.md-typeset h4:target:before {
+.md-typeset h4:target:before,
+.md-typeset h5:target:before,
+.md-typeset h6:target:before {
   content: "";
   display: block;
   margin-top: -7rem;
