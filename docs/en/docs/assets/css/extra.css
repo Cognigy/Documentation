@@ -402,3 +402,14 @@ body > div.md-container > nav > div{
 .md-content__button svg {
   display: none;
 }
+
+/* set page offset for the anchor clicking  */
+.md-typeset h1:target:before, 
+.md-typeset h2:target:before, 
+.md-typeset h3:target:before,
+.md-typeset h4:target:before {
+  content: "";
+  display: block;
+  margin-top: -7rem;
+  padding-top: 7rem;
+}
