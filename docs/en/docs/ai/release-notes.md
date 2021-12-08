@@ -5,6 +5,13 @@
 ---
 # Release notes
 
+## 4.15.3
+**Released** December 8th, 2021
+
+### Bugfixes
+- Fixed a bug where the "Set Session Params" Flow Node would not properly work when using our VG Endpoint and the async-mode
+- Fixed a bug where our delete Profile API could time-out
+
 ## 4.15.2
 **Released** November 26th, 2021
 
