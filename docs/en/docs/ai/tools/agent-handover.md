@@ -32,3 +32,7 @@ The Handover Node has the following fields:
 |Unavailable Message|	CognigyScript|	Default text to output if the Live Chat service is unavailable|
 |Unsupported Channel Message|	CognigyScript|	Default text to output if the channel that the user is using, does not support Live Chat|
 |Quick Reply Text|	CognigyScript|	The text for a quick reply button that cancels the Handover request|
+
+## Handover Providers
+
+For a list of supported Handover services, please refer to the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
