@@ -1,6 +1,6 @@
 ---
- title: "Chatwoot Integration" 
- slug: "chatwoot-integration" 
+ title: "Chatwoot Handover" 
+ slug: "chatwoot-handover" 
  hidden: false 
 ---
 # Chatwoot Integration
