@@ -4,4 +4,5 @@
  hidden: false 
 ---
 # LiveChat
-TODO you just need to run LiveChat and then select "Live Chat" as Handover Tool in your Endpoint
+
+If Cognigy LiveChat is configured for your Cognigy.AI environment, everything is pre-configured and the only thing you need to do is selecting **Cognigy LiveChat** as your Handover Provider in the **Handover Settings** of your Endpoint.
