@@ -67,9 +67,18 @@ Here you can add the headers to your HTTP request. All headers are listed in one
 }
 ```
 
+To make it easier to add headers, we created a list of key-value fields that can be filled with strings. As soon as you enter a new value a new pair will appear.
+
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/97c2a2f-http-request-node-headers.png" width="75%" />
-  <figcaption>Headers field</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/http-request-node-headers1.png" width="75%" />
+  <figcaption>Key-Value pairs</figcaption>
+</figure>
+
+Alternatively you can press the `Use JSON Editor` button to toggle between this list and the JSON editor. The resulting JSON will always be the same.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/http-request-node-headers2.png" width="75%" />
+  <figcaption>JSON Editor</figcaption>
 </figure>
 
 You can also enable capturing the response headers along with the request body in the specified storage location.
