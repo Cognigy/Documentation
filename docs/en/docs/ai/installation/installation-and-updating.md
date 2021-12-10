@@ -19,7 +19,4 @@ Cognigy.AI is a modern software product and based on a microservice architecture
 
 You can get more information about Kubernetes by reading through their official documentation: [https://kubernetes.io/](https://kubernetes.io/)
 
-Installing our product requires our installation-guide which you can request by sending an email to our product support team:
-**Please send an email to support@cognigy.com to get the password.**
-
-Once you have received the password for our documentation material, you can download the documentation using this link: [https://downloads.cognigy.com/cognigy-4.zip](https://downloads.cognigy.com/cognigy-4.zip)
+Installing our product requires our installation-guide, which you can download using this link: [https://downloads.cognigy.com/cognigy-4.zip](https://downloads.cognigy.com/cognigy-4.zip)
