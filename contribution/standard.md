@@ -42,7 +42,7 @@ docs/                         # main containing files available for changes
   ┣ docs/                     # Main directory for English translation - Products level
 ┃ ┣ index.md                  # Main Documentation landing page
 ┃ ┃ ┣ ai/                     # Product directory
-┃ ┃ ┃ platform-oerview.md     # Landing page for AI Section                            
+┃ ┃ ┃ platform-overview.md     # Landing page for AI Section                            
 ┃ ┃ ┃ ┣ developer-guides/     # Section directory
 ┃ ┃ ┃ ┃ ┣ images/             # Images of the section
 ┃ ┃ ┃ ┃ ┣ api-reference.md    # .md files for the section
@@ -80,7 +80,7 @@ docs/                         # main containing files available for changes
 ```
 
 ### Naming the files
-Naming files in short, yet discriptive names is very important, since the link slugs depend on these file names. Do not use any capital letters. We use "-" for separating the words in the file name.
+Naming files in short, yet descriptive names is very important, since the link slugs depend on these file names. Do not use any capital letters. We use "-" for separating the words in the file name.
 
 Example of a good name for .md file - e.g. "add-to-context"
 Example of a bad name for .md file - e.g. "addToContext-1"
@@ -90,10 +90,10 @@ Example of a bad name for an image - e.g. "Screenshot-2021-06-04-1254566"
 
 ### Adding meta data yo Markdown files
 
-Meta data is an important part of the Search Engine Optimization (SEO), thus it is really important to set it at the beggining of every Markdown file, especially for the pages we want to be easily/best listed in the results fot he search engines.
+Meta data is an important part of the Search Engine Optimization (SEO), thus it is really important to set it at the beginning of every Markdown file, especially for the pages we want to be easily/best listed in the results fot he search engines.
 
 <figure>
-  <assets/img class="image-center" src="{{config.site_url}}assets/img/metadata-add.png" width="100%" />
+  <assets/img class="image-center" src="./docs/en/docs/assets/img/metadata-add.png" width="100%" />
 </figure>
 
 Meta data template to add in the very beginning of your new .md page:
@@ -117,19 +117,25 @@ metadata:
  **Example of Developer Guides Section image storage:**
 
  <figure>
-  <img class="image-center" src="{{config.site_url}}assets/img/Dev_guide_images.png" width="100%" />
+  <img class="image-center" src="./docs/en/docs/assets/img/Dev_guide_images.png" width="100%" />
 </figure>
 
-## Image standard - TO BE UPDATED!
+## Image standard
 All images should be:
 
-  1. in .png format that has an alpha channel
-  2. should be taken with a minimum resolution of 1920 x 1080 
+  1. in .png format
+  2. should be taken with the best resolution possible
+  3. should be stores in a directory of the "images" of the relevant section
+  4. should be named in small-cap letters, "-" used as a separator and the names should be meaningful to make the search of the image easy
+
+  Examples:
+  Good image name: "snapshot-upload-button"
+  Bad image names: "snap1", "snapshot_button123"
 
 ### Adding an image to the .md file
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}/assets/img/logo_prod.jpeg" width="30%" />
+  <img class="image-center" src="./docs/en/docs/assets/img/logo_prod.jpeg" width="30%" />
   <figcaption>Image caption</figcaption>
 </figure>
 
@@ -164,7 +170,7 @@ All links have to have a variable config.site_url for easy localization. When ad
 `````
 ## Additional styling 
 
-The "en/docs" directory contains a "css/extra.css" file that can be used to add aditional classes to be used in the HTML snippets in the Markdown files.
+The "en/docs" directory contains a "css/extra.css" file that can be used to add additional classes to be used in the HTML snippets in the Markdown files.
 
 **Example of adding a class into the extra.css file:**
 `````
@@ -190,28 +196,28 @@ You can combine multiple classes by separating them with spaces ```class="image-
   - Add the language to the Language changer drop down by adding the language to the "alternate" section of YML file
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}assets/img/alternate language.png" width="100%" />
+  <img class="image-center" src="./docs/en/docs/assets/img/alternate language.png" width="100%" />
 </figure>
 
   - Change the language of the template language abbreviations and [languages available for MKDocs material template](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/#site-language)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}assets/img/localizing_nav_sections.png" width="100%" />
+  <img class="image-center" src="./docs/en/docs/assets/img/localizing_nav_sections.png" width="100%" />
 </figure>
 
   - Localize the Section names in the "nav" section of the YML file
 <figure>
-  <img class="image-center" src="{{config.site_url}}assets/img/template language.png" width="100%" />
+  <img class="image-center" src="./docs/en/docs/assets/img/template language.png" width="100%" />
 </figure>
 
 ???+ warning "Make sure to:"
     - Have H1 (#) heading in every document
     - Not rename markdown files
-    - Adjust meta data in the befinning of the Markdown file
+    - Adjust meta data in the beginning of the Markdown file
 
-## Makrdown cheetsheet
+## Markdown cheat sheet
 Markdown syntax usage documentation.
-Be aware, that Markdown files accept HTML code, thus this oepns posibility to lots of customization. 
+Be aware, that Markdown files accept HTML code, thus this opens possibilities to lots of customization. 
 More information here: [MKDocs Material theme documentation](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/)
 ### Basics
 See more under this link: [ https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/)
@@ -234,7 +240,7 @@ See more under this link: [https://squidfunk.github.io/mkdocs-material/reference
 | PUT      | Update resource |
 | DELETE   | Delete resource |
 ```
-### Alingmnet example
+### Alignment example
 ```
 | :---------- | :----------------------------------- |   - LEFT ALIGNMENT
 | :---------: | :----------------------------------: |   - CENTER ALIGNMENT
@@ -245,7 +251,7 @@ See more under this link: [https://squidfunk.github.io/mkdocs-material/reference
 ### Abbreviations 
 See more under this link: [https://squidfunk.github.io/mkdocs-material/reference/abbreviations/#snippets ](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/#snippets )
 
-### Formating
+### Formatting
 See more under this link: [https://squidfunk.github.io/mkdocs-material/reference/formatting/#smartsymbols](https://squidfunk.github.io/mkdocs-material/reference/formatting/#smartsymbols)
 
 ### Content tabs
