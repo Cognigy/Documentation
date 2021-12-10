@@ -209,8 +209,7 @@ nav:
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
     - ai/tools/agent-handover.md
-    - ai/tools/live-agent.md
-    - ai/tools/chatwoot-integration.md
+    - ai/tools/livechat-lite.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
   - Endpoints:
@@ -247,6 +246,11 @@ nav:
     - ai/endpoints/twilio.md
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
+  - Handover Providers:
+    - ai/handover-providers/overview.md
+    - ai/handover-providers/livechat-handover.md
+    - ai/handover-providers/chatwoot-handover.md
+    - ai/handover-providers/salesforce-handover.md
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md
     - ai/installation/browser-requirements.md
