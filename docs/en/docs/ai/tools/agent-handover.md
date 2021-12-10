@@ -73,3 +73,7 @@ The `Handover to Agent` Node has the following fields:
 |Handover Accepted Message|	CognigyScript|	The message to output if the Handover was requested|
 |Cancel Intent |	CognigyScript|	The intent the user has to trigger to cancel the Handover request|
 |Cancel Button Text |	CognigyScript|	The text for a quick reply button that cancels the Handover request when clicked|
+
+## Handover Providers
+
+For a list of supported Handover services, please refer to the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
