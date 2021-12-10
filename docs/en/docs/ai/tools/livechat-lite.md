@@ -1,6 +1,6 @@
 ---
- title: "Live Agent" 
- slug: "live-agent" 
+ title: "Cognigy LiveChat" 
+ slug: "livechat-lite" 
  hidden: false 
 ---
 # Live Agent
