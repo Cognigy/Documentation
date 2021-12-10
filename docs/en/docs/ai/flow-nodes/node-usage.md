@@ -10,8 +10,10 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
 
 Nodes can be created by clicking on the + icon in a [**Flow**]({{config.site_url}}ai/resources/build/flows/), after which the Node selection menu appears.
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e9c3cb0-nodes-add.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
+
+Switch to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) tab to install Nodes from Extensions or click the Extension button in the corner to install new Extensions from the [**Extension Marketplace**]({{config.site_url}}ai/resources/manage/extensions/#extension-marketplace).
 
 A Node can be copied by right-clicking it and pasted by right-clicking on a **+** section in the [**Flow**]({{config.site_url}}ai/resources/build/flows/). 
 <figure>
