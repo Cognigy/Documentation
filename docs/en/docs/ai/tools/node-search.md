@@ -5,7 +5,7 @@
 ---
 # Flow Node Search
 
-With the Search Node field, one can carry out a search through their flow nodes.
+With the Search Node field, one can carry out a case-insensitive search through the flow nodes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/todo-add-image.jpg" width="100%" />
