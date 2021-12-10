@@ -20,15 +20,56 @@ If a request from a user is an edge case that is just too specific to be handled
 
 Once a Handover has been initiated, the normal execution of the Flow is paused until the customer who is waiting for a support agent cancels the request, or until an agent finishes the conversation. Before the conversation with an agent has started, the customer can cancel the request and go back to the normal flow execution by triggering a selected intent or a dedicated quick reply.
 
-## Handover Node
+???+ info "New Handover Node"
+    The old Handover Node has been replaced with a `Handover To Agent` Node. The content below is only applicable to the new `Handover to Agent` Node
+
+
+When the Handover is finished, the Flow execution will continue below the Handover to Agent Node. A handover property will be added to the input object, which exposes information about why the handover was finished. The object that is exposed has the following structure:
+
+```JavaScript
+{
+    "handover": {
+        "status": "completed"
+    }
+}
+```
+
+The status can have the following values:
+
+| Handover Status  | Description |
+| -- | -- |
+| completed | The Handover was finished by the Agent |
+| cancelled | The user has cancelled the Handover request |
+| error | An error occurred when requesting the Handover |
+
+In case of an error, the handover object is extended to contain additional information:
+
+```JavaScript
+{
+    "handover": {
+        "status": "completed",
+        "error": {
+          "reason": "unsupported",
+          "message": ""
+        }
+    }
+}
+```
+
+The error reason can either be `unsupported` in case the user channel does not supper doing a Handover, or `error` if something went wrong when contacting the Handover Provider.
+
+There is also a `Handover Status` [Token]({{config.site_url}}ai/resources/manage/tokens/) which can be used to access the handover status in the Flow.
+
+### Handling the Handover Status
+To handle the Handover status after a Handover was finished, you can use a `Lookup` Node to handle the different possible outcomes of a Handover. In the `Lookup` Node you can select to lookup on the `Handover Status`. (Insert screenshot)
+
+## Handover to Agent Node
 <div class="divider"></div>
 
-The Handover Node has the following fields:
+The `Handover to Agent` Node has the following fields:
 
 |Parameter|	Type	|Description|
 |--|--|--|
-|Text Message|	CognigyScript|	Default text to output if the Handover was requested|
-|Cancel Intent Name|	CognigyScript|	The intent the user has to trigger to cancel the Handover request|
-|Unavailable Message|	CognigyScript|	Default text to output if the Live Chat service is unavailable|
-|Unsupported Channel Message|	CognigyScript|	Default text to output if the channel that the user is using, does not support Live Chat|
-|Quick Reply Text|	CognigyScript|	The text for a quick reply button that cancels the Handover request|
+|Handover Accepted Message|	CognigyScript|	The message to output if the Handover was requested|
+|Cancel Intent |	CognigyScript|	The intent the user has to trigger to cancel the Handover request|
+|Cancel Button Text |	CognigyScript|	The text for a quick reply button that cancels the Handover request when clicked|
