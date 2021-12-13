@@ -1,3 +1,8 @@
+---
+ title: "Intercom" 
+ slug: "intercom" 
+ hidden: false 
+---
 # Intercom
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/f517541-Intercom.PNG" width="100%" />

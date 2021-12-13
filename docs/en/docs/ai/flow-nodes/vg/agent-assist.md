@@ -1,3 +1,8 @@
+---
+ title: "Agent Assist" 
+ slug: "agent-assist" 
+ hidden: false 
+---
 # Agent Assist
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Using the API" 
+ slug: "using-api" 
+ hidden: false 
+---
 # Using the API
 
 <!-- table styling -->

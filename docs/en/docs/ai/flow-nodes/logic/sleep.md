@@ -1,3 +1,8 @@
+---
+ title: "Sleep" 
+ slug: "sleep" 
+ hidden: false 
+---
 # Sleep
 
 <figure>

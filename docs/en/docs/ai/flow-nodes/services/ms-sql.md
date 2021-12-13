@@ -1,3 +1,8 @@
+---
+ title: "MS SQL" 
+ slug: "ms-sql" 
+ hidden: false 
+---
 # MS SQL
 
 <figure>

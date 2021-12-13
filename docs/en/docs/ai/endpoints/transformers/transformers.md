@@ -1,3 +1,8 @@
+---
+ title: "Transformers" 
+ slug: "transformers" 
+ hidden: false 
+---
 # Transformers
 
 <blockquote class="callout callout_info" theme="📘">

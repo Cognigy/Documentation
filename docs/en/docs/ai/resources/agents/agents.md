@@ -1,4 +1,8 @@
-
+---
+ title: "Agents" 
+ slug: "agents" 
+ hidden: false 
+---
 # Agents
 
 All your conversational AI resources in one place.

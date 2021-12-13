@@ -1,3 +1,8 @@
+---
+ title: "Cognigy Insights" 
+ slug: "cognigy-insights" 
+ hidden: false 
+---
 # Cognigy Insights 
 ## Description
 

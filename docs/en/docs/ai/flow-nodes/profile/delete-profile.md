@@ -1,3 +1,8 @@
+---
+ title: "Delete Profile" 
+ slug: "delete-profile" 
+ hidden: false 
+---
 # Delete Profile
 
 <figure>

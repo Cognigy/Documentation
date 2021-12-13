@@ -1,9 +1,117 @@
+---
+ title: "Release notes" 
+ slug: "release-notes" 
+ hidden: false 
+---
 # Release notes
+
+## 4.15.3
+**Released** December 8th, 2021
+
+### Bugfixes
+- Fixed a bug where the "Set Session Params" Flow Node would not properly work when using our VG Endpoint and the async-mode
+- Fixed a bug where our delete Profile API could time-out
+
+## 4.15.2
+**Released** November 26th, 2021
+
+### Bugfixes
+- Fixed an issue where an internal component used in paginated API calls would be less performant
+
+## 4.15.1
+**Released** November 18th, 2021
+
+### Bugfixes
+- Fixed a bug where the Intent Editor would experience a slowdown
+
+## 4.15.0
+**Released** November 18th, 2021
+
+### Features
+#### Cognigy Insights: Show data for all Snapshots
+This release adds a branch new filter option for Snapshots - customers will now be able to select "All" Snapshots in the global filters.
+
+#### Cognigy Insights: Expert mode for Transcript Explorer
+This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy Insights. Similar to the Expert Mode in Cognigy.AIs Interaction Panel, this mode shows additional information such as detected Slots and the classified Intent in addition to the actual transcript of conversations.
+
+### Improvements
+- Improved by adding a Tourist Guide Template for NLU language Japanese
+- Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Please note: The changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag.
+- Update internal WebchatWidget to version v2.38.1
+
+### Bugfixes
+- Fixed a bug related to authentication problems for OData v2.1 endpoint in Excel/PowerBI
+- Fixed a bug where data specified as part of the Default Reply are not emitted
+- Fixed a bug where the calendar in Insights, used to filter for custom timeframes, shows incorrect dates
+- Fixed a bug related to timeout response errors occurring in Insights Transcript Explorer, Message Explorer and Step Explorer
+- Fixed a bug related to incorrect time zone suffix and locale formatting
+- Fixed a bug related to Live Agent (lite) mistakenly showing a large number of error messages
+- Fixed a bug where long text outputs of Say or Question Nodes are displayed truncated in Microsoft Teams
+- Fixed a bug where an infinite loop is triggered when a Flow with Parse Intents enabled and a “cIntent” input is used
+- Fixed a bug where you are unable to edit any Nodes in the Flow Editor
+- Fixed a bug related to a an unusually high number of MongoDB connections
+- Fixed a bug where Intents cannot be uploaded and models cannot be built while a large file with Intents is uploaded
+- Fixed a bug where errors are mistakenly logged when cancelling an already cancelled task
+- Fixed a bug where, after adding a new user under Access Control, a user cannot be added to an Agent as a member without reload
+- Fixed a bug where, after uploading a package with a Flow, it is not possible to select the Flow in the Interaction Panel without reloading
+- Fixed a bug related to regex patterns, defined in the Regex Slot Filler Node, not being recognized
+- Fixed a bug related to dates not being recognized correctly when the Voice Gateway is used
+- Fixed a bug where endpoint scrollbar blinks at certain zoom levels/screen resolutions
+- Fixed a bug where the import of packages containing some old Flows fails
+- Fixed a bug related to RPC call timeouts when CLI is used
+- Fixed a bug related to incorrectly displayed transcripts in Transcript Explorer when Azure Bot Services is used as Endpoint
+- Fixed a bug related to empty message bubbles rendered by the Webchat, when “sync data with facebook” option from the Webchat tab is used
+- Fixed a bug where lines containing long words are not wrapped in the Logs view
+- Fixed a bug where a “Unable to fetch flows” error message is mistakenly shown while large snapshots are restored
+- Fixed a bug where you do not get consistent results, when a list of items is paginated using nextCursor
+- Fixed a bug related to API requests and paginated data in the Cognigy Insights Message Explorer
+- Fixed a bug in Cognigy Insights where the Step Explorer would show wrong uncollapsed steps
+- Fixed a bug where Flow Node localizations would not be copied when using copy-paste
+- Fixed a bug regarding timezone offsets in Cognigy Insights filters
+
+## 4.14.1
+**Released** November 9th, 2021
+
+### Bug Fixes
+- Fixed a bug where the "inject" and "notify" RESTful API endpoint would not work
+
+
+## 4.14.0
+**Released** November 5th, 2021
+
+### Features
+#### Timezones for Cognigy Insights
+This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
+
+#### Async output handling for Voice Gatway
+This release of Cognigy.AI introduces asynchronous output handling for Cognigy Voice Gateway. Previously, outputs from Cognigy Flows would get buffered and send to Cognigy Voice Gatway once your Flows have been processed entirely. It was not possible to use concepts like "Sleep Nodes" or our inject- and notify-APIs. Customers can now activate asynchronous output handling in the Cognigy Voice Gateway Endpoint configuration form.
+
+### Improvements
+- Improved by adding a tooltip to the starting step in the Step Explorer
+- Improved by adding a new setting to the Webchat Endpoint configuration to disable autocomplete in the input field
+
+### Bug Fixes
+- Fixed a bug where empty Intents without example sentences could not be downloaded
+- Fixed a bug where Intents with default replies could not be uploaded properly
+- Fixed a bug where data of existing Keyphrases are not overwritten when a Lexicon csv file is uploaded and the “overwrite” strategy is used
+- Fixed a bug related to error text not being descriptive when white-labelling is enabled but a theme for Insights UI is not provided
+- Fixed a bug related to pagination not working when chart/nodes API is called
+- Fixed a bug where the incorrect text is stored in the detailed context for different Question Output Types
+- Fixed a bug related to wrongly encoded translation responses from third-party translation providers
+- Fixed a bug related to date ranges not stored in the Context when date questions are used
+- Fixed a bug related to the Lexicon editor not resetting the page position when the filter field is used
+- Fixed a bug related to Intents not being sorted in alphabetic order
+- Fixed a bug related to messages getting stuck when Extensions use the Think API
+- Fixed a bug where German time interval inputs are parsed in unexpected ways
+- Fixed a bug regarding slotfillers and our DATE slot
+- Fixed a style regression bug in the Intent training feedback tooltips
+- Fixed a style regression bug in the Intent trained indidcator section
+
 
 ## 4.13.1
 **Released**: October 28th, 2021
 
-## Improvements
+### Improvements
 - Expose additional metrics for one of our microservices and further prepare our application to get monitored with our new monitoring solution we are currently working on
 - Improve system stability by adding a maximum TTL for a message defining how long it can reside in the system
 
@@ -11,21 +119,21 @@
 ## 4.13.0
 **Released:** October 28th, 2021
 
-## Features
-### Avaya CPaaS
+### Features
+#### Avaya CPaaS
 This release of Cognigy.AI contains the new Avaya CPaaS endpoint which is an essential rewrite of the currently existing one. We have added many new capabilities and e.g. made TTS/STT language configurable.
 
-### Amazon Lex NLU Connector
+#### Amazon Lex NLU Connector
 This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
 
-## Improvements
+### Improvements
 - Improved by adding additional filters to the Transcript Explorer allowing to filter transcripts by message count and rating
 - Improved by adding the ability to set the starting and ending step from the context menu of a step in the Step Explorer
 - Improved by allowing to select and copy text of messages in the Transcript Explorer
 - Improved by appropriately rendering datepicker messages in the Transcript Explorer
 - Improved by adding information about the required Cognigy version to use option resolvers and localization to the Extension tools documentation
 
-## Bug Fixes
+### Bug Fixes
 - Fixed a bug where the confirmation and disambiguation sentence are not translated when automatically translating an intent in the NLU tab
 - Fixed a bug where an Agent does not disappear from the list of Agents after deleting it
 - Fixed a bug related to the layout of the Member select dropdown
@@ -45,21 +153,21 @@ This release of Cognigy.AI adds a new NLU Connector for Amazon Lex.
 ## 4.12.0
 **Released:** October 11th, 2021
 
-## Features
-### Localization for Extensions
+### Features
+#### Localization for Extensions
 Added option to allow extension creators to provide localized display values in Node descriptor
 
-### Management-UI authentication
+#### Management-UI authentication
 Added support for multiple credential pairs for the Cognigy Management UI
 
-### Non-conversational Endpoint
+#### Non-conversational Endpoint
 This release of Cognigy.AI adds a non-conversational Endpoint. The feature needs to be enabled using an additional environment variable. It allows customers to create an Endpoint that will not process inputs using NLU enginers. The Endpoint can e.g. be used if Cognigy.AI is being used as a process orchestration tool
 
-## Improvements
+### Improvements
 - Improved by adding the Node type to the error logs when Node execution fails
 - Improved by merging the extension tools basic documentation with the option resolvers and localization documentation into one document
 
-## Bug Fixes
+### Bug Fixes
 - Fixed a bug where Webhook Endpoint Inject calls cannot be made without errors
 - Fixed a bug where the FROM variable is not used in password reset request emails
 - Fixed a bug where a Say node with an empty string breaks the Insights UI

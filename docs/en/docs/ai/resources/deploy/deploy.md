@@ -1,3 +1,8 @@
+---
+ title: "Deploy" 
+ slug: "deploy" 
+ hidden: false 
+---
 # Deploy
 
 ## Endpoints

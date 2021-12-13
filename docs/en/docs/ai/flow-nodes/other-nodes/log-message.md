@@ -1,3 +1,8 @@
+---
+ title: "Log Message" 
+ slug: "log-message" 
+ hidden: false 
+---
 # Log Message
 
 <figure>

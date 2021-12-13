@@ -1,3 +1,8 @@
+---
+ title: "Notify Transformer" 
+ slug: "notify-transformer" 
+ hidden: false 
+---
 # Notify Transformer
 ## Description
 

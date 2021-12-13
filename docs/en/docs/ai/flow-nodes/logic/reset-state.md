@@ -1,3 +1,8 @@
+---
+ title: "Reset State" 
+ slug: "reset-state" 
+ hidden: false 
+---
 # Reset State
 
 <figure>

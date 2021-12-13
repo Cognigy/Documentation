@@ -1,3 +1,8 @@
+---
+ title: "Tasks" 
+ slug: "tasks" 
+ hidden: false 
+---
 # Tasks
 
 Certain activities, like training **Intents**, importing **Snapshots** or the creation of a new **Agent**, generate so-called **Tasks**. A **Task** is an asynchronous process that can run in the background and is tied to the notification system. 

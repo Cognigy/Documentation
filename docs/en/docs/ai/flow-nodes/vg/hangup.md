@@ -1,3 +1,8 @@
+---
+ title: "Hangup" 
+ slug: "hangup" 
+ hidden: false 
+---
 # Hangup
 
 <figure>

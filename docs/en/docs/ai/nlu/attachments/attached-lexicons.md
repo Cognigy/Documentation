@@ -1,3 +1,8 @@
+---
+ title: "Attached Lexicon" 
+ slug: "attached-lexicons" 
+ hidden: false 
+---
 # Attached Lexicon
 
 The Lexicon attachment feature allows single Lexicon libraries to be re-used across any Cognigy.AI agents. Lexicons can simply be **Attached** to single or multiple flows, in order to recognize custom keyphrases.

@@ -1,3 +1,8 @@
+---
+ title: "Webchat Features" 
+ slug: "webchat-features" 
+ hidden: false 
+---
 # Webchat Features
 
 ## Webchat Templates

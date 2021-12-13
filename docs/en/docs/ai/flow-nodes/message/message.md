@@ -1,3 +1,8 @@
+---
+ title: "message" 
+ slug: "Message" 
+ hidden: false 
+---
 # Message
 
 Message Nodes are used to generate output that is sent back to the user.

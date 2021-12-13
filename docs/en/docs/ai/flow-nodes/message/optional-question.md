@@ -1,3 +1,8 @@
+---
+ title: "optional-question" 
+ slug: "Optional Question" 
+ hidden: false 
+---
 # Optional Question
 
 <figure>

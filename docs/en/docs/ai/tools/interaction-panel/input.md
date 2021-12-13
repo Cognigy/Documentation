@@ -1,3 +1,8 @@
+---
+ title: "Input" 
+ slug: "input" 
+ hidden: false 
+---
 # Input
 
 The Input is a short term JSON data object that is generated each time a message is sent to Cognigy.AI. 

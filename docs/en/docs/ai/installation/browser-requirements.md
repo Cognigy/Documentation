@@ -1,3 +1,8 @@
+---
+ title: "Browser Requirements" 
+ slug: "browser-requirements" 
+ hidden: false 
+---
 # Browser Requirements
 
 ## Cognigy.AI User Interface

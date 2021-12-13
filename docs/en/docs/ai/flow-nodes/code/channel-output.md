@@ -1,3 +1,8 @@
+---
+ title: "Channel Output" 
+ slug: "channel-output" 
+ hidden: false 
+---
 # Channel Output
 
 ## Description

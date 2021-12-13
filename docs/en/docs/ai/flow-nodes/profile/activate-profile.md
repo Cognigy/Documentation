@@ -1,3 +1,8 @@
+---
+ title: "Activate Profile" 
+ slug: "activate-profile" 
+ hidden: false 
+---
 # Activate Profile
 
 <figure>

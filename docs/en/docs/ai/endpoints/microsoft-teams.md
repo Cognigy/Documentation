@@ -1,3 +1,8 @@
+---
+ title: "Microsoft Teams" 
+ slug: "microsoft-teams" 
+ hidden: false 
+---
 # Microsoft Teams
 
 <figure>

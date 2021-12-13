@@ -1,3 +1,8 @@
+---
+ title: "Dialogflow" 
+ slug: "dialogflow" 
+ hidden: false 
+---
 # Dialogflow
 
 <figure>

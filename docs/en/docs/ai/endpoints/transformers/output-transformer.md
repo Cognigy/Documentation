@@ -1,3 +1,8 @@
+---
+ title: "Output Transformer" 
+ slug: "output-transformer" 
+ hidden: false 
+---
 # Output Transformer
 
 ## Description

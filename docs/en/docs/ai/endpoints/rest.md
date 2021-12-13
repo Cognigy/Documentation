@@ -1,3 +1,8 @@
+---
+ title: "REST" 
+ slug: "rest" 
+ hidden: false 
+---
 # REST
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Send Meta Data" 
+ slug: "send-meta-data" 
+ hidden: false 
+---
 # Send Meta Data
 
 <figure>

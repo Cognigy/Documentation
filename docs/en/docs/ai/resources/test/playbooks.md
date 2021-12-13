@@ -1,3 +1,8 @@
+---
+ title: "Playbooks" 
+ slug: "playbooks" 
+ hidden: false 
+---
 # Playbooks
 
 **Playbooks** help you test your **Flows** and make sure that they work as intended. They are automated conversations, which include **Assertions** that can check various elements of your **Flow**.
