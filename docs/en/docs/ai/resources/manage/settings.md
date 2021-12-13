@@ -44,6 +44,10 @@ Enable this setting to continue the flow logic after an intent confirmation sent
 
 If the setting is on, the virtual agent doesn't answer with the default reply but writes it in the input object. Afterward, this information can be used in order to do something with it in the flow logic. 
 
+### Include Default Reply in NLU Training
+
+If the setting in on, NLU training will also include default replies configured for each Intent as example sentence to match the intent. This setting can be also configured individually on intent level.
+
 ## Timezone
 <div class="divider"></div>
 
