@@ -12,6 +12,7 @@ Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
 - [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
 ???+ success "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.

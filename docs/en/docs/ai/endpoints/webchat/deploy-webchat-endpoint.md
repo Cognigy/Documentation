@@ -18,7 +18,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
 - [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/) 
+- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
 ???+ success "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
@@ -29,72 +30,12 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 You can configure almost everything about the Webchat to personalize it just for your needs. This includes modifying the colors, adding functionality like file uploads and much more, so that you can present the Conversational AI that you have created in a very nice way. As soon as you have changed a setting, loading or reloading a Website with a Webchat pointing to this Endpoint will show the changes will already have taken effect.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0d95ca3-EP_webchat_configuration.png" width="100%" />
-  <figcaption>Webchat Configuration settings</figcaption>
-</figure>
-
-### Webchat Configuration
-In the Webchat Configuration Panel, you can configure the colors of the Webchat, the Get Started Button, logos, images and much more. The table below shows a description of each setting that you can configure.
-
-|Name	|Description|
-|----|---|
-|Center Webchat[^1]|	If this setting is toggled on, then the Webchat will appear in the center of the page. Otherwise it will appear in the bottom right corner.|
-|Color Scheme	|This setting controls the main colors of the Webchat. Clicking on the pallete icon will open up a color picker that you can use to easily select which color your Webchat should have.|
-|Webchat Title	|This setting controls the displayed Webchat title.|
-|Input Placeholder Text	|This setting controls the text that will be rendered as a placeholder in the input field when the user is not writing anything.|
-|Start Behavior	|This setting can be used to customize the way conversations will be initialized in this Webchat.<br><br>"Start with a Text Field" will display a regular text field to the user (default)<br><br>"Start with a Button" will instead render a Button instead of a text field. <br><br>Clicking the button will initialize the conversation, sending a preconfigured message. The label of the button, payload and shown text of the message can be customized.<br><br>"Auto Send a Message to the Bot" will automatically send a predefined message to the bot when the Webchat is initialized. The payload and shown text of the message can be customized.|
-|Button Title	|The label to display on the Get Started Button. Only used if a Get Started Button is displayed.|
-|Get Started Text	|The text that is displayed in the Webchat for the "Get Started" message (see start behavior).|
-|Payload|	The text that is sent to your Flow with the "Get Started" message (see start behavior).|
-|Bot Avatar Logo|	The logo to display as an avatar for the messages of the bot. |You normally put a URL linking to your company logo here.|
-|Header Logo|	The logo to display in the header of the Webchat. You normally put a URL linking to your company logo here.|
-|Background Image[^1]|	The image to display in the the backround.|
-(only for Cognigy-hosted Webchats)
-|Enable Speech-to-Text[^1]|	If true, then the Webchat has a microphone button that enables the user to use voice to send messages instead of only sending text messages.|
-|Enable Text-to-Speech[^1]|	If true, then the Webchat will read messages from the Bot aloud.|
-Enable Typing Indicatros	This settings controls whether animated dots are displayed while the bot is preparing an answer
-|Message Delay|	This settings controls the interval between each bot output, simulating human typing delays|
-|Webchat Plugins|	Here you define the links to your webchat plugings this Endpoint should use|
-
-[^1]: This Setting is exclusive to or works differently on [Integrated Demo Pages]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/).
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
-
-**Webchat Rating options**
-
-As of Cognigy.AI 4.9.0, Cognigy introduces [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) as a new analytics application. The introduction of Insights caused following additional rating options in the Webchat endpoint configuration settings:
+### Minimized Webchat Settings
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/13c441a-Rating_settings_in_webchat_endpoint_settings_4.svg" width="100%" />
-  <figcaption>Webchat Configuration "Rating Settings"</figcaption>
-</figure>
-
-|Name	|Description|
-|---|---|
-|**Enable Rating Functionality**|	Options are:<br>- Always <br>- Only when requested<br>- Once|
-|**Rating Title Text**|"Example: Please rate your conversation"|
-|**Rating Comment Text**|	Example: "Enter a comment"|
-|**Message History Rating Text**|	Example: "Your rating"|
-|**Message History Comment Text**	|Example:"Your comment"
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-### Further Webchat Settings
-
-With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new sections called "**Minimized Webchat Settings**", "**Webchat Layout**", and "**Additional Settings**".
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/90a8590-Webchat_settings.svg" width="100%" />
-  <figcaption>Webchat Settings</figcaption>
-</figure>
-
-#### Minimized Webchat Settings
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/173148a-Webchat_minimized_settings_2.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_minimized_settings.png" width="100%" />
   <figcaption>Minimized Webchat Settings</figcaption>
 </figure>
-
 
 |Parameter (main)||	Parameter (sub)	Description|
 |--|--|--|
@@ -104,15 +45,14 @@ With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new 
 |Engagement Message Text||		The text of the message to display next to the webchat icon to get the user to engage.|
 |Unread Messages	|Enable Unread Message Badge|	The webchat shows a badge with the number of unread messages at the toggle button.|
 ||Enable Unread Message Preview|	The webchat shows a message bubble with the latest retrieved bot message.|
-||Enable Unread Message Sound Confirmation	Play a notification sound for each incoming unread message.
+||Enable Unread Message Sound Confirmation | Play a notification sound for each incoming unread message.
 
-#### Webchat Layout
+### Webchat Layout
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c8a7357-Webchat_Layout.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_layout.png" width="100%" />
   <figcaption>Webchat Layout</figcaption>
 </figure>
-
 
 |Parameter (main)||	Parameter (sub)	Description|
 |--|--|--|
@@ -123,10 +63,10 @@ With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new 
 |Logos and Images|	Bot Avatar Logo|	A URL linking to the logo that should be the bot's avatar.|
 ||Header Logo| https://image.url A URL linking to the logo that should be displayed in the Webchat header.|
 
-#### Additional Settings
+### Additional Settings
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/60ab998-Webchat_additional_settings.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_additional_settings.png" width="100%" />
   <figcaption>Additional Settings</figcaption>
 </figure>
 
@@ -149,11 +89,39 @@ With Cognigy.AI 4.10.0 the webchat endpoints settings have been extended by new 
 ||Message Delay|	The amount of time to wait between sending bot replies. Measured in milliseconds.|
 ||Focus Input after Postback|	The message input field will receive focus after a Postback button or quick reply button is clicked.|
 ||Input Placeholder Text|	The text to display as a placeholder in the input field.|
-||Webchat plugins|	https://url.to/plugin.js|
+||Enable Input Autogrow| If this is enabled, the text input for Webchat users will grow automatically when the user types long texts. It also enables line breaks for user text inputs.|
+||Maximum Number of Input Rows| Defines the number of text lines the text input can grow to. After the maximum line size is exceeded, a vertical scrollbar will appear in the text input.|
+|Compatibility Settings| Disable Input Autocomplete | Use this setting to disable the autocomplete functionality for everyone.|
+|Webchat plugins||	https://url.to/plugin.js|
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.11.0-blue.svg)]({{config.site_url}})
+#### Persistent Menu
+The persistent menu is a great way to show your users all of the capabilites that your bot has. You can use it to switch to different conversation stages, to guide the user and much more. The user can open the menu at any time during the conversation through a small icon in the left corner:
 
-#### Custom JSON
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/91c86d0-Screenshot_from_2019-04-16_11-06-25.png" width="100%" />
+  <figcaption>Persistent Menu</figcaption>
+</figure>
+
+To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The first thing you have to do is enabling the Persistent Menu. As soon as you do this, the menu icon will appear in the lower left corner of the Webchat. You can give the menu any title you want in the ``Title`` field in the Persistent Menu Panel.In order to actually add the Persistent Menu Items themselves, you click on the ``ADD`` button on the right. Clicking this will add a new ``Persistent Menu Item``, which consists of a ``Title`` and a ``Payload``. The text in the title field controls what the user can see in the Persistent Menu, while the text in the payload field is what is actually sent to your flow. This way, you can show a simple word to your user, but actually send a more complex query to your flow in order to process the request.The image below shows the configuration behind the webchat pictured above.
+
+### Additional Configuration for Demo Webchat
+
+This section enables features exclusively for the Demo Webchat. These settings don't affect websites embedding the Webchat Widget.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_additional_demo_webchat_settings.png" width="100%" />
+  <figcaption>Additional Configuration for Demo Webchat</figcaption>
+</figure>
+
+|Name|Description|
+|---|---|
+|Enable Demo Webchat|Enables or disables the integrated Demo Webchat for this Endpoint.|
+|Enable Speech-to-Text|	If true, then the Webchat has a microphone button that enables the user to use voice to send messages instead of only sending text messages.|
+|Enable Text-to-Speech|	If true, then the Webchat will read messages from the Bot aloud.|
+|Background Image|	The image to display in the the backround.|
+|Center Webchat|	If this setting is toggled on, then the Webchat will appear in the center of the page. Otherwise it will appear in the bottom right corner.|
+
+### Custom JSON
 
 Cognigy has been added with Cognigy.AI v4.11.0  another field "**Custom JSON**" to the Webchat Endpoint Editor configuration. This field can be used to configure additional settings not available in the GUI.
 
@@ -169,21 +137,6 @@ Cognigy has been added with Cognigy.AI v4.11.0  another field "**Custom JSON**" 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5ee5e65-custom_JSON_field_4_250.svg" width="100%" />
   <figcaption>Changed color to #eb9419 using custom JSON field option</figcaption>
-</figure>
-
-### Persistent Menu
-The persistent menu is a great way to show your users all of the capabilites that your bot has. You can use it to switch to different conversation stages, to guide the user and much more. The user can open the menu at any time during the conversation through a small icon in the left corner:
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/91c86d0-Screenshot_from_2019-04-16_11-06-25.png" width="100%" />
-  <figcaption>Persistent Menu</figcaption>
-</figure>
-
-To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The first thing you have to do is enabling the Persistent Menu. As soon as you do this, the menu icon will appear in the lower left corner of the Webchat. You can give the menu any title you want in the ``Title`` field in the Persistent Menu Panel.In order to actually add the Persistent Menu Items themselves, you click on the ``ADD`` button on the right. Clicking this will add a new ``Persistent Menu Item``, which consists of a ``Title`` and a ``Payload``. The text in the title field controls what the user can see in the Persistent Menu, while the text in the payload field is what is actually sent to your flow. This way, you can show a simple word to your user, but actually send a more complex query to your flow in order to process the request.The image below shows the configuration behind the webchat pictured above.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0c3448e-EP_webchat_persistent_menu.png" width="100%" />
-  <figcaption>Persistent Menu Configuration</figcaption>
 </figure>
 
 ## More information
