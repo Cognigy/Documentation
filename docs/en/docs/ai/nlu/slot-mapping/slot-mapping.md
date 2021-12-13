@@ -199,7 +199,7 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 
 | Languages  | Slash date format ordering (01/01/2019) |
 | ---------- | ----------- |
-| Default (English UK, German, Generic etc.) | dd/mm/YYYY |
+| Default (English UK, German, Universal etc.) | dd/mm/YYYY |
 | English US, Japanese, Chinese | mm/dd/YYYY<br/><br/>Note if mm/dd/YYYY yields an illegal date the parser falls back to dd/mm/YYYY. |
 
 ???+ warning "Future Dates Only"
