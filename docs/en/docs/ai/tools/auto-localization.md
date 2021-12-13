@@ -95,7 +95,7 @@ As of Cognigy.AI 4.10.0 our product provides machine translation of Nodes and In
 In order to enable machine translation, you need to configure the "**Translation Settings**" of your Virtual Agent.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/bc88b5f-Agent_Settings_4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/Agent_Settings_Translation.png" width="100%" />
   <figcaption>Agent Settings</figcaption>
 </figure>
 
@@ -114,6 +114,8 @@ As soon as you have configured a translation provider you will get extra configu
 - Define "**Request Timeout**".
 
 - Define "**Sentence Cache Expiry Timeout**".
+
+- Optionally define "**Custom API Base URL**".
 
 ???+ info "Translation Settings"
     **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
