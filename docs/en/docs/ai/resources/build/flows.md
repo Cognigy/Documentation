@@ -26,7 +26,7 @@ Flows are executed from top to bottom and use a logic-based system to determine 
 **Flow Nodes** can be used to add interactivity to a flow. They can be added by clicking on the **+** icon in between two existing Nodes. There are many different types of Nodes, ranging from **Question Nodes** to **Marketing Nodes**. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/8c837d1-nodes-add.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
 ???+ info "Flow Nodes"
