@@ -8,7 +8,7 @@
 With the Search Node field, one can carry out a case-insensitive search through the flow nodes.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/node-search-field.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/node-search-field.png" width="100%" />
 </figure>
 
 In order to search the flow nodes:
@@ -29,5 +29,5 @@ Once the search text is entered, all the nodes that contain the search text will
 Futher, when a highlighted node is opened, the field that has the match will have its label highlighted.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/node-editor-with-highlighting.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/node-editor-with-highlighting.png" width="100%" />
 </figure>
