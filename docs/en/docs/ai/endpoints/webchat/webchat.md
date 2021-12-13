@@ -1,3 +1,8 @@
+---
+ title: "Cognigy Webchat" 
+ slug: "webchat" 
+ hidden: false 
+---
 # Cognigy Webchat
 
 <figure>

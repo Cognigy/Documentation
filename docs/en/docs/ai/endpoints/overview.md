@@ -1,3 +1,8 @@
+---
+ title: "Overview" 
+ slug: "overview" 
+ hidden: false 
+---
 # Overview
 
 **Endpoints** are the connector between your user interface and the Cognigy **Agent**. This connection can range from text based conversation to a conversation on your contact center phonelines.
@@ -56,6 +61,7 @@ The following Endpoints are provided for custom integrations:
 The following Endpoints provide integrations with third party products:
 
 - [**Amazon Alexa**]({{config.site_url}}ai/endpoints/amazon-alexa/) 
+- [**Avaya CPaaS**]({{config.site_url}}ai/endpoints/avaya-cpaas/) 
 - [**Dialogflow**]({{config.site_url}}ai/endpoints/dialogflow/) 
 - [**Facebook Messenger**]({{config.site_url}}ai/endpoints/facebook-messenger/) 
 - [**Google Actions**]({{config.site_url}}ai/endpoints/google-actions/) 

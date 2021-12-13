@@ -1,3 +1,8 @@
+---
+ title: "Enable Slot Fillers" 
+ slug: "enable-slot-fillers" 
+ hidden: false 
+---
 # Enable Slot Fillers
 
 <figure>

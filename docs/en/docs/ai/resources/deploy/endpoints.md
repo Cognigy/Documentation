@@ -1,3 +1,8 @@
+---
+ title: "Endpoints" 
+ slug: "endpoints" 
+ hidden: false 
+---
 # Endpoints
 
 **Endpoints** help connect **Channels** s(like Messenger or Alexa), to specific Cognigy [**Flows**]({{config.site_url}}ai/resources/build/flows/). They make sure that the **channel-specific input and output** (Images, Galleries, Voice) gets converted to the standardized [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many different channels by configuring Endpoints.

@@ -1,5 +1,7 @@
 ---
-hide:
+ title: "Cognigy Documentation"
+ hidden: false 
+ hide:
   - navigation
   - toc
 ---
@@ -52,16 +54,6 @@ hide:
       </div>
     </div>
   </a>
-
-  <!-- we will uncomment this part after LA is published (also need to do it in the yml page)-->
-  <!-- <a class="card-link" href="{{config.site_url}}live-agent/overview/">
-    <div class="card">
-      <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">
-      <div class="item-container">
-        <h3><b>Live Agent</b></h3>
-      </div>
-    </div>
-  </a> -->
 
 </div>
 

@@ -1,3 +1,8 @@
+---
+ title: "Test" 
+ slug: "test" 
+ hidden: false 
+---
 # Test
 
 Testing is incredibly important when working with machine-learning models, across a broad range of channels.

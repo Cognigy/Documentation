@@ -1,3 +1,8 @@
+---
+ title: "Set Translation" 
+ slug: "set-translation" 
+ hidden: false 
+---
 # Set Translation
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})

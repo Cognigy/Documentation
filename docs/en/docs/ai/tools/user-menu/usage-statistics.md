@@ -1,3 +1,8 @@
+---
+ title: "Usage Statistics" 
+ slug: "usage-statistics" 
+ hidden: false 
+---
 # Usage Statistics
 
 The **Usage Statistics** page is an analytics overview feature that provides a report to platform administrators with insight into the **volume of conversations** that have occurred across all agents in an organization.

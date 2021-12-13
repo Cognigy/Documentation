@@ -1,3 +1,8 @@
+---
+ title: "No NLU" 
+ slug: "no-nlu" 
+ hidden: false 
+---
 # No NLU
 
 <figure>

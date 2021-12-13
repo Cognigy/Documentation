@@ -1,3 +1,8 @@
+---
+ title: "mongo-db" 
+ slug: "Mongo DB" 
+ hidden: false 
+---
 # Mongo DB
 
 <figure>

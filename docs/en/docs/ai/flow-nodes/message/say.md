@@ -1,3 +1,8 @@
+---
+ title: "Say" 
+ slug: "say" 
+ hidden: false 
+---
 # Say
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6746960-node-say.jpg" width="100%" />

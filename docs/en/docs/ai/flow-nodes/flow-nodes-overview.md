@@ -1,9 +1,17 @@
+---
+ title: "Flow Nodes Overview" 
+ slug: "flow-nodes-overview" 
+ hidden: false 
+---
 # Flow Nodes Overview
 
 Flow Nodes can be used to add interactivity to a Flow. When combined in a certain way, they can help create dynamic interactive conversations. There are many types of Nodes, ranging from Basic to Advanced. 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e9c3cb0-nodes-add.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
+
+???+ info "Extensions"
+    Head over to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) section for information on adding more types of **Nodes**.
 
 | Node Categories                                                                       |
 | -----------                                                                           |

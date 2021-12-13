@@ -1,3 +1,8 @@
+---
+ title: "Copy Slots to Context" 
+ slug: "copy-slots-to-context" 
+ hidden: false 
+---
 # Copy Slots to Context
 
 <figure>

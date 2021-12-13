@@ -1,3 +1,8 @@
+---
+ title: "NLU" 
+ slug: "nlu" 
+ hidden: false 
+---
 # NLU
 NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources.
 

@@ -1,3 +1,8 @@
+---
+ title: "Azure Bot Services" 
+ slug: "azure-bot-services" 
+ hidden: false 
+---
 # Azure Bot Services
 
 <figure>

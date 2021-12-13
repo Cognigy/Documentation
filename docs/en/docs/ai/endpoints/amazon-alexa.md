@@ -1,3 +1,8 @@
+---
+ title: "Amazon Alexa" 
+ slug: "amazon-alexa" 
+ hidden: false 
+---
 # Amazon Alexa
 
 <figure>

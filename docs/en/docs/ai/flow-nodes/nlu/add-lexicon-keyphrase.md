@@ -1,3 +1,8 @@
+---
+ title: "Add Lexicon Keyphrase" 
+ slug: "add-lexicon-keyphrase" 
+ hidden: false 
+---
 # Add Lexicon Keyphrase
 
 <figure>

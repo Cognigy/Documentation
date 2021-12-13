@@ -1,4 +1,9 @@
-# socket.io
+---
+ title: "Socket.io" 
+ slug: "socketio" 
+ hidden: false 
+---
+# Socket.io
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/603e5e6-socket-io-logo.svg" width="100%" />

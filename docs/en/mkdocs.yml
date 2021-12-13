@@ -2,7 +2,9 @@ site_name: Cognigy Documentation
 site_description: Documentation of Cognigy products
 site_url: https://docs.cognigy.com/
 site_author: Cognigy
-copyright: Cognigy
+copyright: Copyright &copy; 2021 <a href="https://www.cognigy.com/">Cognigy</a>
+repo_url: https://github.com/Cognigy/Documentation/
+repo_name: cognigy/documentation
 theme:
   name: material
   custom_dir: overrides
@@ -73,14 +75,16 @@ nav:
     - Tweak:
       - ai/resources/tweak/tweak.md
       - ai/resources/tweak/intent-trainer.md
-    - Analytics:
-      - ai/resources/analytics.md
+    # - Analytics:
+    #   - ai/resources/analytics.md
+    - Insights:
+      - insights/cognigy-insights.md
     - Manage:
       - ai/resources/manage/manage.md
       - ai/resources/manage/settings.md
       - ai/resources/manage/localization.md
       - ai/resources/manage/tokens.md
-      - ai/resources/manage/extensions.md
+      - Extensions: ai/resources/manage/extensions.md
       - ai/resources/manage/members.md
       - ai/resources/manage/contact-profiles.md
       - ai/resources/manage/packages.md
@@ -185,7 +189,7 @@ nav:
     - ai/nlu/language-support.md
     - ai/nlu/nlu-warnings.md
   - Tools:
-    - User menu:
+    - User Menu:
       - ai/tools/user-menu/user-menu.md
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
@@ -205,8 +209,7 @@ nav:
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
     - ai/tools/agent-handover.md
-    - ai/tools/live-agent.md
-    - ai/tools/chatwoot-integration.md
+    - ai/tools/livechat-lite.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
   - Endpoints:
@@ -230,6 +233,7 @@ nav:
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
     - ai/endpoints/amazon-alexa.md
+    - ai/endpoints/avaya-cpaas.md
     - ai/endpoints/azure-bot-services.md
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
@@ -243,6 +247,11 @@ nav:
     - ai/endpoints/twilio.md
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
+  - Handover Providers:
+    - ai/handover-providers/overview.md
+    - ai/handover-providers/livechat-handover.md
+    - ai/handover-providers/chatwoot-handover.md
+    - ai/handover-providers/salesforce-handover.md
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md
     - ai/installation/browser-requirements.md
@@ -270,44 +279,6 @@ nav:
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
-# we will uncomment this part after LA is published (also need to do it in the Home page)
-# - Live Agent:
-#   - live-agent/overview.md
-#   - Release Notes:
-#     - live-agent/release-notes/releases.md
-#   - Getting started:
-#     - Creating an Account:
-#       - live-agent/getting-started/creating-an-account.md
-#       - live-agent/getting-started/inviting-your-agents.md
-#       - live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover.md
-#       - live-agent/getting-started/add-an-inbox-for-handling-the-handover.md
-#       - live-agent/getting-started/creating-a-cognigy-handover-flow.md
-#   - Installation & Configuration:
-#     - Browser Requirements:
-#       - live-agent/installation/browser-requirements.md
-#     - Deployment:
-#       - live-agent/installation/deployment/architecture.md
-#       - live-agent/installation/deployment/prerequisites.md
-#       - live-agent/installation/deployment/installation-using-helm.md
-#       - Helm Values:
-#         - live-agent/installation/helm-values/index.md
-#         - live-agent/installation/helm-values/database.md
-#         - live-agent/installation/helm-values/redis.md
-#         - live-agent/installation/helm-values/storage.md
-#         - live-agent/installation/helm-values/smtp.md
-#         - live-agent/installation/helm-values/email-templates.md
-#     - Installation Updates:
-#       - live-agent/installation/deployment/installation-updates.md
-#   - live-agent/agents.md
-#   - live-agent/teams.md
-#   - live-agent/labels.md
-#   - live-agent/inboxes.md
-#   - live-agent/account-settings.md
-#   - live-agent/contacts.md
-#   - live-agent/reports.md
-#   - live-agent/conversation-workflow.md
-#   - live-agent/conversation-routing.md
-#   - live-agent/profile-settings.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
@@ -387,7 +358,6 @@ extra:
 extra_css:
 - assets/css/extra.css
 extra_javascript:
-- assets/js/termynal.js
 - assets/js/custom.js
 plugins:
 - section-index

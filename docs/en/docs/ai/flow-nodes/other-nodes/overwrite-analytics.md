@@ -1,3 +1,8 @@
+---
+ title: "Overwrite Analytics" 
+ slug: "overwrite-analytics" 
+ hidden: false 
+---
 # Overwrite Analytics
 
 <figure>

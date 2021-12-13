@@ -1,3 +1,8 @@
+---
+ title: "Inject Transformer" 
+ slug: "inject-transformer" 
+ hidden: false 
+---
 # Inject Transformer
 
 ## Description

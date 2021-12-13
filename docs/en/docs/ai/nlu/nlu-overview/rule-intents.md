@@ -1,8 +1,13 @@
+---
+ title: "Rule Intents" 
+ slug: "rule-intents" 
+ hidden: false 
+---
 # Rule Intents
 
 Rule intents gives you the capability to use advanced rules to understand what a user wants. You can often get by with only using our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) that use various Machine Learning techniques to understand what your users are saying, but sometimes you need more power than this. 
 
-For example, if you use the Generic Language and want to match an intent on a specific data input or if you want to make sure that you have a specific entry in the context before triggering the intent.
+For example, if you use the Universal Language and want to match an intent on a specific data input or if you want to make sure that you have a specific entry in the context before triggering the intent.
 
 ## Concept
 <div class="divider"></div>

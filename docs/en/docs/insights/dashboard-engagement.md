@@ -1,3 +1,8 @@
+---
+ title: "Engagement" 
+ slug: "dashboard-engagement" 
+ hidden: false 
+---
 # Engagement
 
 ## Engagement Dashboard

@@ -1,3 +1,8 @@
+---
+ title: "Interaction Panel" 
+ slug: "interaction-panel" 
+ hidden: false 
+---
 # Interaction Panel
 
 The Interaction Panel can be used to interact with your virtual agent. It can be accessed by clicking on the chat button at the top right of the interface when inside any Agent. 

@@ -1,3 +1,8 @@
+---
+ title: "Intent Hierarchy" 
+ slug: "intent-hierarchy" 
+ hidden: false 
+---
 # Intent Hierarchy
 
 The intent training module includes a **Hierarchy** feature that enable intent grouping and layering. This means that parent intents are created which can inherit the example sentences from child intents to provide more flexibility to the agent's understanding and increase the chances of the correct intent being identified.

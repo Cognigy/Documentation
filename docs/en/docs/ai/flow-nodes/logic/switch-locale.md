@@ -1,3 +1,8 @@
+---
+ title: "Switch Locale" 
+ slug: "switch-locale" 
+ hidden: false 
+---
 # Switch Locale
 
 ## Description

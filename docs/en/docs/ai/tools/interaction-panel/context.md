@@ -1,3 +1,8 @@
+---
+ title: "Context" 
+ slug: "context" 
+ hidden: false 
+---
 # Context
 
 The Context is a JSON object which stores persistent information.

@@ -1,3 +1,8 @@
+---
+ title: "Single Sign-on using SAML 2.0" 
+ slug: "single-signin-saml2" 
+ hidden: false 
+---
 # Single Sign-on using SAML 2.0
 
 ## Introduction
