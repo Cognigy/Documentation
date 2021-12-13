@@ -5,6 +5,8 @@
 ---
 # Flow Node Search
 
+<div class="divider"></div>
+
 With the Search Node field, one can carry out a case-insensitive search through the flow nodes.
 
 <figure>
