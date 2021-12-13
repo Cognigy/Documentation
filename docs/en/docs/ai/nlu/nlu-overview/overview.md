@@ -75,9 +75,9 @@ You can override the setting to use the **Default Replies** as examples per each
 
 If this featue is enabled, the NLU will also use the configured default replies to train, imroving the match rate for the configured intent.
 
-<div style="display:inline-block">
-  <img style="margin: 0px; padding: 0px" src="{{config.site_url}}ai/nlu/images/intent_default_replies_training_off.png" width="49%" />
-  <img style="margin: 0px; padding: 0px" src="{{config.site_url}}ai/nlu/images/intent_default_replies_training_on.png" width="49%" />
+<div style="display: grid; grid-template-columns: auto auto">
+  <img style="margin: 0px; padding: 0px" src="{{config.site_url}}ai/nlu/images/intent_default_replies_training_off.png"/>
+  <img style="margin: 0px; padding: 0px" src="{{config.site_url}}ai/nlu/images/intent_default_replies_training_on.png"/>
 </div>
 
 ### Advanced 
