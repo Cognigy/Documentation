@@ -9,4 +9,4 @@ Cognigy.AI was developed in order to overcome most of the challenges in building
 
 An overview of some of the most important components can be found in the following diagram:
 
-<img src="{{config.site_url}}ai/resources/images/d69b3d1-AI_Architecture.JPG" width="100%" style="margin-bottom: 5px">
+<img src="{{config.site_url}}ai/resources/images/platform-overview-cognigy.png" width="100%" style="margin-bottom: 5px">
