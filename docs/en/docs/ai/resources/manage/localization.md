@@ -60,7 +60,7 @@ This can be done by click on a specific Node and then selecting **Add Localizati
 With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section "**Translation Settings**".
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/eacbff5-Agent_Settings_4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Agent_Settings_Translation.jpg" width="100%" />
   <figcaption>Agent "Translation Settings"</figcaption>
 </figure>
 
@@ -75,3 +75,4 @@ The configuration options and their functions are listed below:
 | **Request Retries**    | How often to retry calling the translation provider if an error occurs. |
 | **Request Timeout**   | How long to wait for the provider to answer a request (in milliseconds).|
 | **Sentence Cache Expiry Timeout**    | How long to keep translated sentences in the cache (in seconds). |
+| **Custom API Base URL**   | Define a custom endpoint instead of default (for example one for your region). Added with Cognigy.AI 4.16.0. |
