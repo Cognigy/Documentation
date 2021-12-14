@@ -141,6 +141,8 @@ nav:
       - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
       - ai/flow-nodes/nlu/execute-cognigy-nlu.md
       - ai/flow-nodes/nlu/regex-slotfiller.md
+      - ai/flow-nodes/nlu/match-pattern.md
+      - ai/flow-nodes/nlu/fuzzy-search.md
     - Code:
       - ai/flow-nodes/code/code.md
       - ai/flow-nodes/code/actions.md
