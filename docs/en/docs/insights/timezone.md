@@ -21,6 +21,8 @@ you compare it with Insights.
 
 ## Changing preferred Timezone
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
+
 By default, **we use timezone preferences of your device**. You can override this  in "My Profile". 
 
 This comes handy if you travel a lot and your device timezone gets updated by your location or you may have a multi-national Agent with the users all over the globe.
