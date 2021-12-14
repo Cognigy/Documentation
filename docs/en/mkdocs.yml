@@ -206,6 +206,7 @@ nav:
       - ai/tools/analytics/agents-analytics.md
       - ai/tools/analytics/odata-analytics-endpoint.md
       - ai/tools/analytics/analytics-concepts.md
+    - ai/tools/node-search.md
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
     - ai/tools/agent-handover.md

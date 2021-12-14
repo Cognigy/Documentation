@@ -47,6 +47,12 @@ The following hotkeys are valid for the Flow Editor.
 			Save the node currently being  edited.
     </td>
   </tr>
+  <tr>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Ctrl + Alt + F </br>Command + Option + F</td>
+    <td style="padding: 20px;">
+			Toggle the node search input filed.
+    </td>
+  </tr>
 </table>
 
 ???+ info "Clipboard Expiration Time"
