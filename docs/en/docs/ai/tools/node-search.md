@@ -43,31 +43,35 @@ Futher, when a highlighted node is opened, the field that has the match will hav
 
 You can search for the following within the flow nodes:
 
-* Node Label
-* Node Comment
-* Node type 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/search-by-type.png" width="100%" />
-  <figcaption>Searching for all nodes of type 'Say' in the flow</figcaption>
-</figure>
-* Node ID 
-* Node reference ID
-* Key or Value in the JSON Editor
-* Piece of code in the Code Editor
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/search-in-code-node.png" width="100%" />
-  <figcaption>Code Node Editor after searching for the term 'Welcome'</figcaption>
-</figure>
-* Input fields for any Output type / Channel type in Say Node
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/search-in-alexa-channel.png" width="100%" />
-  <figcaption>Alexa Channel after searching for the term 'Welcome'</figcaption>
-</figure>
-* Input fields for any Output type / Channel type in Question Node
-* Custom button labels in Say Node and Question Node
-* Fallback Text in Say Node and Question Node
-* Other relevant input fields in other node types
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/search-in-goTo-node.png" width="100%" />
-  <figcaption>Go To Node Editor after searching for the term 'Welcome'</figcaption>
-</figure>
+| Searchable Node Value      | Description     |
+| ----------- | ------------------------------------ |
+| Node Label | The actual label displayed on a Node (configurable in its settings) |
+| Node Comment | The optional comment attached to the Node |
+| Node Type  | The type of the Node |
+| Node ID | The unique database ID of the Node (usually not used by users) |
+| Node Reference ID | The ID that is used when referring to a node e.g. as entrypoint for a Go-To Node (this ID can be copied from the secondary menu in the Node editor) |
+| Keys or Values in the JSON Editor | Matches a key or a value within a JSON object, e.g. POST Data object in a HTTP Request Node |
+| Code in the Code Editor | Matches the text within a Code Node |
+| Input fields for any Output type / Channel type in Say Node and Question Node | Any type of Output throughout all Channel types is matched. |
+| Custom button labels in Say Node and Question Node | Button labels and values are matched and highlighted |
+| Other relevant input fields in all Node types | Matches relevant field types in all Cognigy and Extension Nodes |
+
+
+### Examples
+<div class="divider"></div>
+
+**Example 1:**
+Searching for all nodes of type 'Say' in the flow
+<img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-by-type.png" width="100%" />
+
+**Example 2:**
+Code Node Editor after searching for the term 'Welcome'
+<img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-code-node.png" width="100%" />
+
+**Example 3:**
+Alexa Channel after searching for the term 'Welcome'
+<img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-alexa-channel.png" width="100%" />
+
+**Example 4:**
+Go To Node Editor after searching for the term 'Welcome'
+<img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-goTo-node.png" width="100%" />
