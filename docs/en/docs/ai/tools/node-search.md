@@ -40,7 +40,7 @@ Futher, when a highlighted Node is opened, the field that has the match will hav
 </figure>
 
 
-### Searchable Contents
+### Searchable Content
 <div class="divider"></div>
 
 You can search for the following within the flow nodes:
