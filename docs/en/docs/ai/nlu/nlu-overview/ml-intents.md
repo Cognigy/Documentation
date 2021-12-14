@@ -84,6 +84,14 @@ Intent example sentences should be as distinct and unique as possible. If there 
 ???+ info "Evaluation of Example Sentences"
     Find out more about how Cognigy.AI evaluates example sentences on the [Intent Analyzer Page]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
+
+When you hover over an example sentence, a *Clear Icon* ("**X**") appears. Clicking on this will clear the corresponding example sentence field for you.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/exapmle-sentence-delete-icon.gif" width="100%" />
+</figure>
+
 ## Slots and Lexicons
 <div class="divider"></div>
 
