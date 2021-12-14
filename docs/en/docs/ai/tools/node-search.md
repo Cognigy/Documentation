@@ -5,7 +5,9 @@
 ---
 # Flow Node Search
 
-With the Node Search field, one can carry out a case-insensitive search through the flow nodes. Please take a look [here]({{config.site_url}}ai/tools/node-search/#test) for a list of what can be searched within a flow.
+[![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
+
+With the Node Search field, one can carry out a case-insensitive search through the flow nodes. Please take a look [here]({{config.site_url}}ai/tools/node-search/#searchable-contents) for a list of what can be searched within a flow.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/node-search-field.png" width="100%" />
@@ -28,7 +30,7 @@ Once the search text is entered, all the Nodes that contain the search text will
 </figure>
 
 ???+ info "Tip: Toggle Search Icon"
-    In order to close the Node Search input field without resetting the search text, click on the *Search Icon* in the chart editor toolbar again. Doing this toggles the node highlighting.
+    In order to close the Node Search input field without resetting the search text, click on the *Search Icon* in the chart editor toolbar again. Doing this toggles the Node highlighting.
 
 Futher, when a highlighted Node is opened, the field that has the match will have its label highlighted.
 
