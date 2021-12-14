@@ -75,4 +75,4 @@ The configuration options and their functions are listed below:
 | **Request Retries**    | How often to retry calling the translation provider if an error occurs. |
 | **Request Timeout**   | How long to wait for the provider to answer a request (in milliseconds).|
 | **Sentence Cache Expiry Timeout**    | How long to keep translated sentences in the cache (in seconds). |
-| **Custom API Base URL**    | Define a custom endpoint instead of default (for example one for your region). |
+| **Custom API Base URL**   | Define a custom endpoint instead of default (for example one for your region). Added with Cognigy.AI 4.16.0. |
