@@ -254,6 +254,7 @@ nav:
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md
     - ai/installation/browser-requirements.md
+    - ai/installation/AI-login.md
     - ai/installation/single-signin-saml2.md
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
