@@ -300,7 +300,7 @@ nav:
       - live-agent/installation/deployment/installation-updates.md
   - Tools:
     - Analytics:
-      - live-agent/tools/la-odata-endpoint.md
+      - live-agent/tools/odata-endpoint.md
   - live-agent/agents.md
   - live-agent/teams.md
   - live-agent/labels.md

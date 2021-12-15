@@ -1,6 +1,6 @@
 ---
  title: "LA OData Endpoint" 
- slug: "la-odata-endpoint" 
+ slug: "odata-endpoint" 
  hidden: false 
 ---
 # LA OData Analytics Endpoint
@@ -50,13 +50,13 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 ## Version 1.0
 The current version of the OData endpoint is `v1.0`. This endpoint version is available from LiveAgent Version 1.0.0 onwards. In this version, the following OData collections are available:
 
-- [Message]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Message/) (`/Message`)
-- [Conversation]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Conversation/) (`/Conversation`)
-- [User]({{config.site_url}}live-agent/tools/la-odata-endpoint/#User/) (`/User`)
-- [Tag]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Tag/) (`/Tag`)
-- [Tagging]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Tagging/) (`/Tagging`)
-- [Label]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Label/) (`/Label`)
-- [Inbox]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Inbox/) (`/Inbox`)
+- [Message]({{config.site_url}}live-agent/tools/odata-endpoint/#Message/) (`/Message`)
+- [Conversation]({{config.site_url}}live-agent/tools/odata-endpoint/#Conversation/) (`/Conversation`)
+- [User]({{config.site_url}}live-agent/tools/odata-endpoint/#User/) (`/User`)
+- [Tag]({{config.site_url}}live-agent/tools/odata-endpoint/#Tag/) (`/Tag`)
+- [Tagging]({{config.site_url}}live-agent/tools/odata-endpoint/#Tagging/) (`/Tagging`)
+- [Label]({{config.site_url}}live-agent/tools/odata-endpoint/#Label/) (`/Label`)
+- [Inbox]({{config.site_url}}live-agent/tools/odata-endpoint/#Inbox/) (`/Inbox`)
 
 To see all the available OData model you can ping the following endPoint:
 `https://<hostname>/v1.0/odata/`
@@ -136,7 +136,7 @@ When retrieving this data model, the endpoint will return the following fields:
 | private               | Message visibility                                                               | Boolean  | false  |
 | status                | Message status { sent: 0, delivered: 1, read: 2, failed: 3 }                     | Number   | 3   |
 | source_id             | Message source                                                                   | String   | default |
-| content_type          | text: 0, input_text: 1, input_textarea: 2, input_email: 3, input_select: 4, cards: 5, form: 6, article: 7, incoming_email: 8, input_csat: 9, typescognigy: 2016, request_file_upload: 2017                                                                                  | NUmber   | 0  |
+| content_type          | text: 0, input_text: 1, input_textarea: 2, input_email: 3, input_select: 4, cards: 5, form: 6, article: 7, incoming_email: 8, input_csat: 9, typescognigy: 2016, request_file_upload: 2017                                                                                  | Number   | 0  |
 | content_attributes    | Json attibute/values definitions                                                 | Json     | "{\"items\":[{\"title\":\"Acme Hardware\"]}" |
 | sender_type           | Provides information of who originated the message                               | String   | cognigy    |
 | sender_id             | Sender unique ID                                                                 | Number   | 1   |
