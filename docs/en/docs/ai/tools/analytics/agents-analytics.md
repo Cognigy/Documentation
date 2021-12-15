@@ -15,28 +15,13 @@ A built-in **Analytics** dashboard is available within the Cognigy.AI platform f
 ## Metrics
 <div class="divider"></div>
 
-The analytics dashboard consists of 20 graphs displaying the following agent metrics:
+The analytics dashboard consists of 2 graphs displaying the following agent metrics:
 
-- Message count 24 hours
-- Message count last week
-- Message count monthly
-- Session count 24 horus
-- Session count last week
-- Session count monthly
-- Unique users 24 hours
-- Unique users last week
-- Unique users monthly
-- Misunderstood messages 24 hours
-- Misunderstood messages last week
-- Misunderstood messages monthly
-- Execution time 24 hours
-- Execution time last week
-- Execution time monthly
-- Message count by channel
-- Flow  usage last 30 days
-- Flow usage total
-- Top Intents last 30 days
-- Top Slots last 30 days
+- Conversations this month
+- Conversations this year
+
+???+ info "New Insights Application for Analytics"
+    Head over to [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) to get familiar with a brand-new analytics exprerience.
 
 
 ## Customization
