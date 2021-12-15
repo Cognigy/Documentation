@@ -5,6 +5,85 @@
 ---
 # Release notes
 
+## 4.16.0
+**This is a pre-release**
+
+### Features
+#### Flow Node Search
+This release adds the ability to search through Flows in the Flow Editor. Customers can already
+search through a couple of properties within their Flow-Nodes - more properties will be
+added in the future
+
+#### Users in multiple Organizations
+This release of Cognigy.AI allows users to be part of multiple Organizations. Users
+can specify an organisation-ID as part of their sign-in process which allows them
+to pick the Organization for which they want to perform a sign-in
+
+#### Salesforce Service Cloud - Handover Provider
+This release of Cognigy.AI adds Salesforce Service Cloud as a new Handover provider
+
+#### Train on Default Replies
+This release of Cognigy.AI adds the ability to include the data of Default Replies in 
+Intents into the training of Intent models. This change can improve the accuracy 
+of your Intent models
+
+#### Match Pattern- & Fuzze-Search Flow Nodes
+This release of Cognigy.AI adds two new Flow Nodes into Cognigy Flows. One lets you 
+match specific patterns within the input utterances of users, the other one allows 
+you to conduct a search against an array of strins and return the one with the highest 
+likelihood
+
+### Improvements
+- Improved by adding “Open Node” to the context menu of the Insights Step Explorer, allowing users to navigate directly to the Node defining the particular step in the Flow Editor
+- Improved by adding support for custom light themes
+- Improved by explicitly displaying the timeframe for which data is shown in Insights
+- Improved by adding a “Reset Filters” button to the Transcript Explorer
+- Improved by adding fields for the key value pairs to the Headers section of HTTP Request Nodes
+- Improved by adding an explicit link to Cognigy Insights to the analytics widget of the Cognigy.AI dashboard
+- Improved by adding links to the Extensions Marketplace from the Node Selection Menu of the Flow Editor
+- Improved by adding a filter to Step Explorer, so that only results including a specified step are shown
+- Improved by enabling the “Set Rating” Node by default
+- Improved by renaming tiles in Insights to better describe what is being displayed
+- Improved by renaming the “Generic” NLU language option to “Universal”
+- Improved by making button labels in Agent Creation Wizard clearer
+- Improved Insights dashboard performance
+- Improved by adding a redirect to the login page from Insights for unauthorized users
+- Improved by adding an optional custom base url field to the Translation Provider settings. This allows users to set the region for Microsoft and Google translation services and also to use the DeepL free API instead of the pro API
+- Improved by adding a setting to enable and disable the “Demo Webchat” functionality on a per-endpoint basis
+- Improved by adding the “Autogrow Text Input” setting to the Webchat Endpoint. If it is activated the text area expands for longer inputs. It is configurable by how many lines text inputs are maximally expanded
+- Improved by adding the ability to have a Question Node reconfirm an answer with the user before proceeding
+- Improved by adding the ability to specify the time of day when defining a custom period for which Insights data are to be displayed
+- Improved by displaying error notifications when users try to navigate to a Node that does not exist in a Flow
+- Improved by adding a Service Desk Template for NLU language Japanese
+
+### Bugfixes
+- Fixed a bug where messages could be sent twice to customers when using Chatwoot as a Handover Provider
+- Fixed a bug where the "Set Session Params" Flow Node would not properly work when using our VG Endpoint and the async-mode
+- Fixed a bug where question escalation is incorrectly not reset
+- Fixed a bug related to timeout issues when headers are of type array in HTTP request Nodes
+- Fixed a bug related to accessibility issues on the Profile page
+- Fixed a bug where Slots could not be changed during Flow execution, e.g. in a Code node
+- Fixed a bug where a “Wait for Input” Node is incorrectly skipped
+- Fixed a bug where executing a Flow from a substructure of itself does not work
+- Fixed a bug where a Question Node of type text is implicitly answered when triggered twice
+- Fixed a bug related to labels of Insights bar charts not being fully displayed
+- Fixed a bug where escalation with an Intent is not working in Intent Questions
+- Fixed a bug where text content from Voice Gateway sendMessage Nodes is incorrectly available in the Webchat
+- Fixed a bug related to the Duration Slot “time in seconds” being incorrectly calculated
+- Fixed a bug related to uploading Intents with Default Replies
+- Fixed a bug where users do not get error notifications when translation for a Node or Intent fails
+- Fixed a bug where the renaming of Intents does not trigger build notifications
+- Fixed a bug where interactive postback messenger elements do not work in the “agent helper chat” of Live Agent Lite
+- Fixed a bug where Voice Gateway messages are not correctly shown in the Interaction Panel
+- Fixed a bug related to freezing Insights dashboards
+- Fixed a bug where the Step Explorer does not load if no Steps are found
+- Fixed a bug related timeout errors on the Logs page
+- Fixed a bug where users are not able to enter data within the Token creation dialog
+- Fixed a bug where the original Input object is restored after a question, where it should not
+- Fixed a bug related to REST Endpoints not supporting Error
+- Fixed a bug where Insights dashboard number widgets rely on data that are not scoped to the selected timeframe
+- Fixed an issue related to a missing postback value in the Japanese NLU Restaurant Template
+
 ## 4.15.3
 **Released** December 8th, 2021
 
