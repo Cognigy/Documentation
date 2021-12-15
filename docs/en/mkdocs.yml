@@ -220,6 +220,7 @@ nav:
     - ai/endpoints/data-protection-and-analytics.md
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
+    - ai/endpoints/real-time-translation-settings.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
@@ -236,12 +237,12 @@ nav:
     - ai/endpoints/webhook.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
+    - ai/endpoints/azure-bot-services.md
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
-    - ai/endpoints/azure-bot-services.md
     - ai/endpoints/microsoft-teams.md
     - ai/endpoints/sunshine-conversations.md
     - ai/endpoints/slack.md

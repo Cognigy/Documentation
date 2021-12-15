@@ -71,6 +71,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
 - [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
 ???+ info "Contact Center & Phone number linking"
     To link a **Voice Gateway** **Endpoint** to a phone number, please contact your **Cognigy** representative in order to provision and configure a VG instance.
