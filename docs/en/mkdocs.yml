@@ -269,6 +269,7 @@ nav:
 - Insights:
   - insights/cognigy-insights.md
   - insights/global-filter.md
+  - insights/timezone.md
   - insights/dashboard-overview.md
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md
