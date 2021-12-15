@@ -54,6 +54,9 @@ Here you can add new users to the system. A user needs to get assigned to an **o
   <figcaption>Creating a new user is simple</figcaption>
 </figure>
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}}) 
+You can add an user(identified by an e-mail address) to multiple organisations and how the user can login for their organisation can be found on [Login for Users in multiple organisation]({{config.site_url}}ai/installation/AI-login/#login-for-users-in-multiple-organisation) page 
+
 If you click on one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
 
 - see general information
