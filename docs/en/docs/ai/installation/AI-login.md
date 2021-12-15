@@ -29,7 +29,7 @@ Cognigy allows users to be part of multiple organisation. A user, identified by 
 https://<frontend-url>/login?organisationId=<organisation-id>
 ```
 
-The 'organisation-id' is a unique identifier of 24 characters which identies an organisation in the system.
+The 'organisation-id' is a unique identifier of 24 characters which identifies an organisation in the system.
 
 <br>
 <figure>
