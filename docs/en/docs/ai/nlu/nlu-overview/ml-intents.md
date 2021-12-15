@@ -86,7 +86,7 @@ Intent example sentences should be as distinct and unique as possible. If there 
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
 
-When you hover over an example sentence, a *Clear Icon* ("**X**") appears. Clicking on this will clear the corresponding example sentence field for you.
+When you hover over an example sentence, a *Delete Icon* will appear. Clicking on this will delete the corresponding example sentence field for you.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/exapmle-sentence-delete-icon.gif" width="100%" />
