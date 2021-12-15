@@ -33,6 +33,18 @@ Several filter menus provide a "**Negate**" slide bar. When active all but the s
 
 
 ## Timeframe
+
+<div class="divider"></div>
+
+???+ info "Note"
+    In v4.16 timeframe filter was updated to show currently selected date range. The widget is now placed on the top of the page.
+
+    <figure>
+    <img class="image-center" src="{{config.site_url}}insights/images/timeframe-top.png" width="100%" />
+    <figcaption>Timeframe filter showing selected range of Dates.</figcaption>
+    </figure>
+    
+
 You can select the time period or set it individually with a date picker in a calendar.
 
 Available preset time periods are: 
@@ -49,7 +61,21 @@ Available preset time periods are:
   <figcaption>Timeframe filter options</figcaption>
 </figure>
 
+### Narrowing results to minutes
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+
+It is possible to select hours for the chosen timeframe. This might be helpfull if needed to narrow the result to a more precise range. For this, enable "Select time"
+option when setting a Custom Timeframe
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/select-time.png" width="50%" />
+  <figcaption>Custom timeframe with minute precision</figcaption>
+</figure>
+
 ## Endpoints
+
+<div class="divider"></div>
 
 Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many different channels by configuring Endpoints.
 Endpoints examples are Webchat / Voice Gateway, Microsoft Teams, Google Actions,…
@@ -76,20 +102,35 @@ So if you have tested the Virtual Agent using the Interaction Panel, you now wil
   <figcaption>Insights Dashboard for "Interaction Panel" filter</figcaption>
 </figure>
 
-## Snapshot
+## Snapshots
+
+<div class="divider"></div>
+
+???+ info "Note"
+    Before the version 4.15, it was only possible to inspect the data of a single snapshot at a time.
+
 A Snapshot is an exported Agent and includes required resources.
 The selection list displays the available snapshots which can be analyzed.
 You can find more information here: [Snapshots](https://docs.cognigy.com/docs/snapshots-1)
 
+By default, we show the **data for all snapshot including the data which was gathered 
+without any snapshot (live deployment, here "None" option)**.
 
-You can select one or more snapshots to be analyzed. 
+[![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
+
+You can granually inspect the analytics data by chosing only the preferred snapshots, also by using the "negate" option - in this case you will be excluding certain options. 
+
+For example, selecting "None" and "Negate" will show all the data excluding the one gathered from endpoints without selected snapshots.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/cef67ff-Global_filter_Snapshot_1.svg" width="100%" />
-  <figcaption>Snapshot filter options</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/snapshots.png" width="50%" />
+  <figcaption>The new "Snapshots" global filter</figcaption>
 </figure>
 
 ## Locales
+
+<div class="divider"></div>
+
 This filter considers the locales of the available conversations. 
 
 You can select one or more Locales to be analyzed. 
@@ -105,6 +146,21 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
 
 ???+ info "Note"
     To clear all filter settings at once click on the "**Reset filters**" button.  We will show it if the value of any global filter is not equal to the default value.
+
+## Rating
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.17-blue.svg)]({{config.site_url}})
+
+This filter allows you to select the analytics data based on the users feedback. By default all data is shown diregard given or absenct feedback from the user.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/rating.png" width="50%" />
+  <figcaption>Rating filter</figcaption>
+</figure>
+
+???+ info "Note"
+    See documentation for [Request rating Node]({{config.site_url}}ai/flow-nodes/other-nodes/request-rating/)
+
 
 ## Updating Analytics records using Rest API
 
