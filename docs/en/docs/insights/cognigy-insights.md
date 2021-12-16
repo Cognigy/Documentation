@@ -109,7 +109,7 @@ You can find more information here: [My Profile]({{config.site_url}}ai/tools/use
 The Insights user administration allows you to create new user accounts.
 Users need to have sufficient permissions for access to the Insights applications.   
 
-- **[Usage Statistics]({{config.site_url}}ai/tools/user-menu/usage-statistics/)** 
+- **[Organisation Details]({{config.site_url}}ai/tools/user-menu/organisation-details/)** 
 This section shows the total number of user conversations and displays a timeline-related number of conversations as a line chart.  You can select the time period in a drop-down menu. 
 
 - **[Documentation]({{config.site_url}})** 
