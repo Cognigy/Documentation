@@ -23,11 +23,11 @@ The Access Control interface offers a user management interface. It acts as an A
 ???+ info "Access Control"
     Please refer to [**Access Control**]({{config.site_url}}ai/tools/user-menu/access-control/) for more information.
 
-### Usage Statistics
-The Usage Statistics interface offers a platform analytics overview for agent usage. 
+### Organisation Details
+The Organisation Details interface offers a platform analytics overview for agent usage. 
 
-???+ info "Usage Statistics"
-    Please refer to [**Usage Statistics**]({{config.site_url}}ai/tools/user-menu/usage-statistics/) for more information.
+???+ info "Organisation Details"
+    Please refer to [**Organisation Details**]({{config.site_url}}ai/tools/user-menu/organisation-details/) for more information.
 
 
 ### Documentation

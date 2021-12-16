@@ -60,7 +60,7 @@ The following **Global Roles** are available:
 |Project Manager|	Can create new projects (Agents), but not administer users.​|
 |User Manager|	Can create new user accounts that can be assigned to projects.​|
 |API Keys|	Can create organization-wide API keys for any user to access the Cognigy.AI RESTful API. The same permissions apply if an ApiKey is used.|
-|OData|	Can use the Usage Statistics section and access to the ODATA interface to query analytics information|
+|OData|	Can use the Organisation Details section and access to the ODATA interface to query analytics information|
 |Livechat|	Can access the built-in Cognigy live chat feature|
 
 ???+ info "Control of Global Access Rights"
@@ -71,4 +71,4 @@ More specific **Access Rights** can be defined for individual features within Ag
 ## More information
 
 - [Members]({{config.site_url}}ai/resources/manage/members/)
-- [Usage Statistics]({{config.site_url}}ai/tools/user-menu/usage-statistics/)
+- [Organisation Details]({{config.site_url}}ai/tools/user-menu/organisation-details/)
