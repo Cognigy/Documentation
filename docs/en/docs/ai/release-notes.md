@@ -5,8 +5,14 @@
 ---
 # Release notes
 
+## 4.16.1
+**This version is currently in pre-release and will be released, soon**
+
+### Bugfixes
+- Fixed a bug in the Input Transformer for our Webhook endpoint where the message would not get processed when the Transformer would return null and already sent a response to the origional HTTP call
+
 ## 4.16.0
-**This is a pre-release**
+**This version is currently in pre-release and will be released, soon**
 
 ### Features
 #### Flow Node Search
