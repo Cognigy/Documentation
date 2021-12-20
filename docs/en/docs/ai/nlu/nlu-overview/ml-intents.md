@@ -84,7 +84,7 @@ Intent example sentences should be as distinct and unique as possible. If there 
 ???+ info "Evaluation of Example Sentences"
     Find out more about how Cognigy.AI evaluates example sentences on the [Intent Analyzer Page]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
 
 When you hover over an example sentence, a *Delete Icon* will appear. Clicking on this will delete the corresponding example sentence field for you.
 
