@@ -62,7 +62,7 @@ If you go to the *Settings* page of an Agent, you will now find a new section fo
 If an Organisation has a Live Agent Account (See [here]({{config.site_url}}ai/live-agent-settings/live-agent-settings/#organisation-details) on how to setup Live Agent account for your Organisation), clicking on the **Create Project inbox** button will create a new Inbox for the specific Agent within your Live Agent account. Once the inbox is created, you will see the *Default Inbox ID* above the disabled button.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/live-agent-settings/images/project-wide-live-agent-setting-create-project-btn.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/live-agent-settings/images/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
   <figcaption>Inbox already created for the Agent</figcaption>
 </figure>
 
