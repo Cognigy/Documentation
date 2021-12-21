@@ -34,7 +34,10 @@ The Organisation Details interface offers a platform analytics overview for agen
 This option refers to the **documentation that you are currently browsing**.
 
 ### Insights
-Insights is our new analyticts reporting tool to improve your customer service. Please take a look [here]({{config.site_url}}insights/cognigy-insights/) to learn more about Ingights .
+Insights is our new analyticts reporting tool to improve your customer service.
+
+???+ info "Insights"
+    Please refer to [**Insights**]({{config.site_url}}insights/cognigy-insights/) for more information.
 
 ### Logout
-This options lets the user logout of the user interface.
+This options lets the user logout of the user interface. Below it, you can also see the version of the product you are currently using.
