@@ -5,6 +5,8 @@
 ---
 # Transcript Explorer
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
+
 ## Description
 <div class="divider"></div>
 With Transcript Explorer you get an inspection application that enables you to evaluate messages 
@@ -27,25 +29,59 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
 
-Using the **"Negate "** slider bar**" all but the selected" filter option(s) will be analyzed.
-For example when selecting the 'Agent messages' and toggling "Negate" then all data will be analyzed but not Agent-message data.
+???+ info "Note"
+
+    Using the **"Negate "** slider bar**" all but the selected" filter option(s) will be analyzed.
+    For example when selecting the 'Agent messages' and toggling "Negate" then all data will be analyzed but not Agent-message data.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/fd64fcb-Transcript_Explorer_n2.svg" width="100%" />
   <figcaption>Local filter "Source"</figcaption>
 </figure>
 
+- You can limit the results to a conversations containing a specific number of messages using "Message count" filters.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/message-count-filter-inputs.png" width="50%" />
+  <figcaption>Local filters "Message count"</figcaption>
+</figure>
+
+- To limit the results to a conversations containing certain Step, see ["Contains Step" filter section]({{config.site_url}}insights/transcript-explorer/#contains-step-filter)
+
+- When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/942c078-Transcript_Explorer_n3.svg" width="100%" />
   <figcaption>Transcript Explorer: Search example for the key phrase "appointment"</figcaption>
 </figure>
 
-- When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
-
 - Transcript Explorer provides a sorting function for "Message count" and "Last message". 
 -- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
 -- Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
 
+### "Contains Step" filter
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+
+You can additionally narrow the result to conversations which contain a certain Step. Click on the "Filter" icon in Search input and choose a Step. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="50%" />
+  <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
+</figure>
+
+### Reset local filters
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+
+You can reset local filters by clicking the "Reset" button. It will appear as soon as you have some filter with a non-default value.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer-reset.png" width="50%" />
+  <figcaption>Reset button appeared after selecting Virtual Agent as an only source.</figcaption>
+</figure>
+
+## Inspect conversation 
 
 - To inspect a specific transcript click on a transcript conversation item in the list and the transcript details will be displayed on the right-hand side in a conversation panel.
 
@@ -88,6 +124,21 @@ When you click on the "profile" icon on the left top side of the conversation pa
   <figcaption>Selected transcript with displayed customer profile data</figcaption>
 </figure>
 
+### Expert mode
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
+
+You can enable an "Expert Mode" by clicking a toggle on top of the transcript's panel. This will
+provide an additional information to a conversation messages (if any), such as:
+
+- What Intent was triggered and its score
+- What Slots were filled
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/expert-mode.png" width="50%" />
+  <figcaption>Transcript with "Expert mode" enabled </figcaption>
+</figure>
+
 ### Open Flow 
 To check your [Flow]({{config.site_url}}ai/resources/build/flows/) or to improve the configuration the Transcript Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific message displayed in the conversation panel.
 Clicking the button leads you to the related Flow in Cognigy.AI.
@@ -122,24 +173,5 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
 ???+ info "Message Explorer"
-    **More information to our Message Explorer see here: [Message Explorer]({{config.site_url}}insights/message-explorer/)**
+    **More information to [Message Explorer]({{config.site_url}}insights/message-explorer/)**
 
-
-## More information
-<div class="divider"></div>
-
-- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
-
-- [Global Filter]({{config.site_url}}insights/global-filter/)
-
-- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
-
-- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
-
-- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
-
-- [Step Explorer]({{config.site_url}}insights/step-explorer/)
-
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
-
-- [Download Report]({{config.site_url}}insights/download-report/)

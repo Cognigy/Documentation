@@ -1,11 +1,11 @@
 ---
- title: "Donwload Report" 
+ title: "Download Report" 
  slug: "download-report" 
  hidden: false 
 ---
-# Donwload Report
+# Download Report
 
-## Download Report as  .csv-file
+## Download Report as .csv-file
 
 <div class="divider"></div>
 

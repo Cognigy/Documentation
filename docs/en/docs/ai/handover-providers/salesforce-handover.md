@@ -21,13 +21,13 @@ To start using Salesforce as a handover provider with Cognigy.AI, you first have
 In the "Handover Settings" section of your Endpoint, you need to select "Salesforce" as your "Handover Platform".
 This will require you to fill out the following related fields. To get started, visit your Salesforce web UI and navigate to the "Setup" area (using the cogwheel icon at the top right).
 
-### Base URL:
+### Live Agent Base URL:
 - Navigate to **Chat Settings**
 - You will see a box titled **API Information** with a field called **Chat API Endpoint**
-- Copy the "Base URL" from the field (`https://x.xxx-xx-xxx.salesforceliveagent.com` without `/chat/rest`) into the "Base URL" field in Cognigy.AI
+- Copy the "Base URL" from the field (`https://x.xxx-xx-xxx.salesforceliveagent.com` without `/chat/rest`) into the "Live Agent Base URL" field in Cognigy.AI
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/salesforce-baseurl.png" width="100%" />
-  <figcaption>Retreiving the Base URL</figcaption>
+  <figcaption>Retreiving the Live Agent Base URL</figcaption>
 </figure>
 
 ### API Version:

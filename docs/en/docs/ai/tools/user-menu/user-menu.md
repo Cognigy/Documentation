@@ -8,7 +8,7 @@
 The User Menu provides access to a set of views that are related to the user that is logged-in.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/14a9c7c-usermenu.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/14a9c7c-usermenu.png" width="100%" />
 </figure>
 
 ### My Profile
@@ -33,13 +33,11 @@ The Organisation Details interface offers a platform analytics overview for agen
 ### Documentation
 This option refers to the **documentation that you are currently browsing**.
 
-### Get Tech Support
-This functionality allows for the creation of **Support Tickets**, directly from within the user interface. It allows you to describe the issue at hand and **optionally add attachments**.
+### Insights
+Insights is our new analyticts reporting tool to improve your customer service.
 
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/b41be3c-usermenu-techsupport.jpg" width="100%" />
-</figure>
+???+ info "Insights"
+    Please refer to [**Insights**]({{config.site_url}}insights/cognigy-insights/) for more information.
 
 ### Logout
-This options lets the user logout of the user interface.
+This options lets the user logout of the user interface. Below it, you can also see the version of the product you are currently using.
