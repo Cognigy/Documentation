@@ -255,6 +255,8 @@ nav:
     - ai/handover-providers/livechat-handover.md
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/salesforce-handover.md
+  - Cognigy Live Agent Setup:
+    - ai/cognigy-live-agent/cognigy-live-agent-setup.md
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md
     - ai/installation/browser-requirements.md
