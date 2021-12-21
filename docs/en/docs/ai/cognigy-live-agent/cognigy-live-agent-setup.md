@@ -26,11 +26,13 @@ If you navigate to the *Organisation Details* page via the User Menu, you can se
   <figcaption>Live Agent Settings in Organisation Details page</figcaption>
 </figure>
 
-If the button is disabled, it could be for the following reasons:
+???+ warning "**Set up Live Agent** disabled"
 
-* You do not have the Cognigy Live Agent feature enabled
-* You do not have permissions to create a Live Agent account
-* There is already a Live Agent account created for your organisation
+	If the button is disabled, it could be for the following reasons:
+
+	* You do not have the Cognigy Live Agent feature enabled
+	* You do not have permissions to create a Live Agent account
+	* There is already a Live Agent account created for your organisation
 
 The text above the button can help you find why the button is disabled for you. 
 
@@ -66,11 +68,13 @@ If an Organisation has a Live Agent Account (See [here]({{config.site_url}}ai/co
   <figcaption>Inbox already created for the Agent</figcaption>
 </figure>
 
-The button could also be disable for the following reasons:
+???+ warning "**Create Project Inbox** disabled"
 
-* You do not have the Cognigy Live Agent feature enabled
-* The organisation do not have a Live Agent account set up
-* You do not have permissions to create an Inbox for the Agent
+	The button could also be disable for the following reasons:
+
+	* You do not have the Cognigy Live Agent feature enabled
+	* The organisation do not have a Live Agent account set up
+	* You do not have permissions to create an Inbox for the Agent
 
 **Example 1:**
 Cognigy Live Agent feature not enabled or Live Agent Account not set on an Organisational level
@@ -89,4 +93,4 @@ No permission to Create an Inbox for Live Agent
 
 
 ???+ warning "Live Agent Settings not visible"
-    The new *Live Agent settings* section in Organisation Details and Agent Settings page will be not be displayed at all, if you have both Theming enabled and Cognigy Live Agent feature disabled.
+    The *Live Agent Settings* section in Organisation Details and Agent Settings page will be not be displayed at all, if you have both Theming enabled and Cognigy Live Agent feature disabled.
