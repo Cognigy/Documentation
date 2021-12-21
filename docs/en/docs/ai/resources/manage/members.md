@@ -27,6 +27,7 @@ The **Project Roles** available to chose from are listed below:
 
 | Project Role Name      | Permissions                          |
 | ----------- | ------------------------------------ |
+| Agent | This role is assigned for users to access Cognigy Live Agent to act as agent. In addition has the following permissions in Cognigy AI: <br> - read permission for all AI agent assets except: User Details, contact profiles, Node Comments, Node Descriptions, Logs and Member Details|
 | Analytics | Adds the following permissions: <br> - full permissions on analytics |
 | Basic | Adds the following permissions: <br> - read permission for all agent assets except: User Details, contact profiles, Node Comments, Node Descriptions, Logs and Member Details|
 | Connection Admin   | Adds the following permissions: <br> - full permissions for Connections|
