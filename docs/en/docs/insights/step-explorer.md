@@ -45,6 +45,9 @@ Conversational [steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/
   <figcaption>Local filter "Starting Step"</figcaption>
 </figure>
 
+???+ info "Note"
+    Additionally, you can right-click on a Step and choose "Select as starting step" from the context menu.
+
 **Direction**
 
 You can choose between **Forward** and **Backward**. 
@@ -195,6 +198,18 @@ To check your Flow or to improve the configuration the Step Explorer provides th
   <figcaption>The "Open Flow" option led to the Flow in Cognigy.AI</figcaption>
 </figure>
 
+### Open Node
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+
+Calling context menu on a Step defined in a Node will present "Open Node" menu
+option. Clicking it opens the Flow Editor with editing mode for the respective Node.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/open-node.png" width="100%" />
+  <figcaption>Context menu of a Step defined in a Node</figcaption>
+</figure>
+
 ### Go to Transcript Explorer
 
 In case you want to evaluate the early drop-offs during conversations to improve your Virtual Agent a right-click on a 'Drop off' step provides a context menu "Go to Transcript Explorer" which allows you to check the conversations by searching keywords representing the steps when the customer drops off.
@@ -203,6 +218,26 @@ In case you want to evaluate the early drop-offs during conversations to improve
   <img class="image-center" src="{{config.site_url}}insights/images/a7e0fdb-Step_Explorer_early_drop_off_situation_4.svg" width="100%" />
   <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
 </figure>
+
+## Inspecting conversations by taken Steps
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+
+In the context menu of a Step there are two options for inspecting the conversations.
+Activating one of them will open Transcript Explorer showing following conversations:
+
+- "Open conversations that took this path"
+    This option shows conversation that took exactly the path of the chosen Step.
+    On the illustration below we have called a context menu on "Completed Booking" Step.
+    Open conversations that took this path will show only conversations which contained the following Step Path: "Welcome New Caller" - "Make an Appointment" - "Explain" - "Completed Booking" Steps. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/conversation-path-step-explorer.png" width="100%" />
+  <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
+</figure>
+
+- "Open conversations which contain this step"
+    This option shows all the conversations which have *at least* chosen Step, the exact path in this case is not important.
 
 
 ## More information

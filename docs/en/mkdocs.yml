@@ -141,6 +141,8 @@ nav:
       - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
       - ai/flow-nodes/nlu/execute-cognigy-nlu.md
       - ai/flow-nodes/nlu/regex-slotfiller.md
+      - ai/flow-nodes/nlu/match-pattern.md
+      - ai/flow-nodes/nlu/fuzzy-search.md
     - Code:
       - ai/flow-nodes/code/code.md
       - ai/flow-nodes/code/actions.md
@@ -218,6 +220,7 @@ nav:
     - ai/endpoints/data-protection-and-analytics.md
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
+    - ai/endpoints/real-time-translation-settings.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
@@ -234,12 +237,12 @@ nav:
     - ai/endpoints/webhook.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
+    - ai/endpoints/azure-bot-services.md
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
-    - ai/endpoints/azure-bot-services.md
     - ai/endpoints/microsoft-teams.md
     - ai/endpoints/sunshine-conversations.md
     - ai/endpoints/slack.md
@@ -257,6 +260,7 @@ nav:
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md
     - ai/installation/browser-requirements.md
+    - ai/installation/AI-login.md
     - ai/installation/single-signin-saml2.md
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
@@ -267,6 +271,7 @@ nav:
 - Insights:
   - insights/cognigy-insights.md
   - insights/global-filter.md
+  - insights/timezone.md
   - insights/dashboard-overview.md
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md

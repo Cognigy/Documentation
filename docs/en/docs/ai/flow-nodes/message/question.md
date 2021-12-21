@@ -149,6 +149,16 @@ Allows the conversation to break out of the Question Node after a number of inco
 It is possible to prevent reprompts when the escalation is happening. 
 
 The option "only escalate once" determines if the escalation only happens once on the threshold or on every input form the threshold on.
+
+## Reconfirmation Settings
+<div class="divider"></div>
+
+Allows for answers to be reconfirmed before continuing. this is especially useful when using voicebots and reconfirming what the bot understood (e.g. in Number questions when the user said "_my number is three double five triple nine five six eight_"). The answer given to the reconfirmation question has to be a yes/no style answer and follows the same rules as a Yes/No Question.
+
+Reconfirmation Questions can contain a specific token [ANSWER] which will be replaced with a short form version of the given answer (e.g. "3 EUR" in a Money question). The short form answer is taken from `input.activeQuestion.tentativeShortFormAnswer`;
+
+Reconfirmation Questions can have a specific reprompt set, which will be be output before the question if the answer to the question is not of yes/no style.
+
 ## Advanced
 <div class="divider"></div>
 

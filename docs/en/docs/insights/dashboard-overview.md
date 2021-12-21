@@ -54,7 +54,7 @@ When hovering the line chart, details as for example the rated month, the year a
 
 |Graph title|	Descrption|
 |--|--|
-|Users by Channel|	Total number of users displayed in a ring chart.|
+|Sessions by Channel|	Total number of conversations (sessions) displayed in a ring chart based on channel. ("Users" changed to "Sessions" in v4.16) |
 |Top Intents|	Top-rated number of used intents displayed in a bar chart.|
 |Users by Locale|	Stacked bar chart display of time-related recognized conversations depending on different locales given in percentages.|
 |Top Goals|	The top-rated number of goals will be displayed in a bar chart.|

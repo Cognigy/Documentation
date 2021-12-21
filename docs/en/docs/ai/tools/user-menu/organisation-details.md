@@ -16,4 +16,4 @@ To access the **Billable Conversations** report, select the **User Menu** icon f
 </figure>
 
 ### Report Filtering
-The report can be filtered by **year** and **month** using the date filter drop down lists in the top right of the page.
+The report can be filtered by **year** and **month** using the date filter dropdown lists in the top right of the page.
