@@ -19,7 +19,7 @@ When you have the Cognigy Live Agent feature enabled, you can navigate to the UI
 ## Organisation Details
 <div class="divider"></div>
 
-If you navigate to the *Organisation Details* page via the User Menu, you can see that we have a new section for Live Agent Settings. In that you will find a button **Set up Live Agent**, clicking on which would set up the Live Agent Account for your entire organisation. 
+If you navigate to the *Organisation Details* page via the User Menu, you can see that we have a new section for Live Agent Settings. In there you will find a button **Set up Live Agent**, clicking on which would set up the Live Agent Account for your entire organisation. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/organisation-wide-live-agent-setup-button.png" width="100%" />
@@ -59,7 +59,7 @@ If you go to the *Settings* page of an Agent, you will now find a new section fo
   <figcaption>Live Agent Settings in Agent Settings page</figcaption>
 </figure>
 
-If an Organisation has a Live Agent Account (See [here]({{config.site_url}}ai/cognigy-live-agent/cognigy-live-agent-setup/#organisation-details) on how to setup Live Agent account for your Organisation), clicking on the **Create Project inbox** button will create a new Inbox for the specific Agent within your Live Agent account. Once the inbox is created, you will see the *Default Inbox ID* above the disabled button.
+If an Organisation has a Live Agent Account (See [here]({{config.site_url}}ai/cognigy-live-agent/cognigy-live-agent-setup/#organisation-details) on how to setup Live Agent account for your Organisation), clicking on the **Create Project Inbox** button will create a new Inbox for the specific Agent within your Live Agent account. Once the inbox is created, you will see the *Default Inbox ID* above the disabled button.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
@@ -88,5 +88,5 @@ No permission to Create an Inbox for Live Agent
 </figure>
 
 
-???+ warning "Live Agent Settings"
-    The new *Live Agent settings* section in Organisation Details and Agent Settings page will be hidden, if you have both Theming enabled and Cognigy Live Agent feature disabled.
+???+ warning "Live Agent Settings not visible"
+    The new *Live Agent settings* section in Organisation Details and Agent Settings page will be not be displayed at all, if you have both Theming enabled and Cognigy Live Agent feature disabled.
