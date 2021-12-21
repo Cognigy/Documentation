@@ -62,6 +62,7 @@ The following **Global Roles** are available:
 |API Keys|	Can create organization-wide API keys for any user to access the Cognigy.AI RESTful API. The same permissions apply if an ApiKey is used.|
 |OData|	Can use the Organisation Details section and access to the ODATA interface to query analytics information|
 |Livechat|	Can access the built-in Cognigy live chat feature|
+|Live Agent Admin | This role is assigned for users to access Cognigy Live Agent as admin. This role has read access to most entities in Cognigy AI.
 
 ???+ info "Control of Global Access Rights"
     The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.
