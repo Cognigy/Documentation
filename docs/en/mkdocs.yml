@@ -195,7 +195,7 @@ nav:
       - ai/tools/user-menu/user-menu.md
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
-      - ai/tools/user-menu/usage-statistics.md
+      - ai/tools/user-menu/organisation-details.md
     - Interaction Panel:
       - ai/tools/interaction-panel/interaction-panel.md
       - ai/tools/interaction-panel/input.md
