@@ -24,7 +24,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 - [Endpoints Overview]({{config.site_url}}/ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}/ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/)
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
 
 ## Channel Specific Settings
 <div class="divider"></div>

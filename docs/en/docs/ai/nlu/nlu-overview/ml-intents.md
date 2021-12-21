@@ -58,9 +58,9 @@ If you're not using [States]({{config.site_url}}ai/tools/interaction-panel/state
 ## Example Sentences
 <div class="divider"></div>
 
-his is where creators are given the power to add unique levels of customized understanding to virtual agents which enable them to react intelligently to any message received by an end user.
+This is where creators are given the power to add unique levels of customized understanding to virtual agents which enable them to react intelligently to any message received by an end user.
 
-Each Intent can have any number of example sentences. These sentences should be a broad range of possible user inputs that are expected to activate the Intent. Building a comprehensive example sentence list is a critical step in the process of building a smart AI service.
+Even though each Intent can have up to 2000 example sentences, we recommend a minumum of 5 and a maximum of 100. These sentences should be a broad range of possible user inputs that are expected to activate the Intent. Building a comprehensive example sentence list is a critical step in the process of building a smart AI service.
 
 When entering the example sentences you can use the **ENTER** key to go to the next NLU example sentence field.
 
@@ -83,6 +83,14 @@ Intent example sentences should be as distinct and unique as possible. If there 
 
 ???+ info "Evaluation of Example Sentences"
     Find out more about how Cognigy.AI evaluates example sentences on the [Intent Analyzer Page]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
+
+When you hover over an example sentence, a *Delete Icon* will appear. Clicking on this will delete the corresponding example sentence field for you.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/exapmle-sentence-delete-icon.gif" width="100%" />
+</figure>
 
 ## Slots and Lexicons
 <div class="divider"></div>

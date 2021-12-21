@@ -68,8 +68,17 @@ Intent Entrypoints can be used to alter the Entrypoint in the Flow after the NLU
 Intents can be configured with direct output (answers) in the form of so-called **Default Replies**. Default Replies are integrated [**Say**]({{config.site_url}}ai/flow-nodes/message/say/) and can be configured with channel-specific output.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nlu/images/1d895b1-intents-default-reply.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/intent_settings_default_replies_training.png" width="100%" />
 </figure>
+
+You can override the setting to use the **Default Replies** as example sentences per each individual Intent. Per default, the setting is set to **Use Flow Settings**, meaning we will use the Flow [Settings]({{config.site_url}}ai/resources/manage/settings/). 
+
+If this feature is enabled, the NLU will also use the configured default replies to train, improving the match rate for the configured intent.
+
+<div style="display: grid; grid-template-columns: auto auto">
+  <img style="margin: 0px; padding: 0px" src="{{config.site_url}}ai/nlu/images/intent_default_replies_training_off.png"/>
+  <img style="margin: 0px; padding: 0px" src="{{config.site_url}}ai/nlu/images/intent_default_replies_training_on.png"/>
+</div>
 
 ### Advanced 
 Intents can be configured with a number of advanced options.

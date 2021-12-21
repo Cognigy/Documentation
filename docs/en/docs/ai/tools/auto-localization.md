@@ -23,7 +23,7 @@ As of Cognigy.AI 4.10.0 Cognigy provides a translation solution to avoid that bo
 
 Multilingualism is a first-level concept in Cognigy.AI along with service automation in global setups.
 
-Cognigy works with an NLU system that supports over 100 [**languages**]({{config.site_url}}ai/nlu/language-support/) and uses a [**generic model**]({{config.site_url}}ai/nlu/language-support/#generic-language) to support the other languages.
+Cognigy works with an NLU system that supports over 100 [**languages**]({{config.site_url}}ai/nlu/language-support/) and uses a [**universal model**]({{config.site_url}}ai/nlu/language-support/#universal-language) to support the other languages.
 
 Cognigy supports [localization]({{config.site_url}}ai/resources/manage/localization/) of Flows, Intent models with fallbacks, partial translation, and locale variations.
 
@@ -95,7 +95,7 @@ As of Cognigy.AI 4.10.0 our product provides machine translation of Nodes and In
 In order to enable machine translation, you need to configure the "**Translation Settings**" of your Virtual Agent.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/bc88b5f-Agent_Settings_4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/Agent_Settings_Translation.png" width="100%" />
   <figcaption>Agent Settings</figcaption>
 </figure>
 
@@ -114,6 +114,8 @@ As soon as you have configured a translation provider you will get extra configu
 - Define "**Request Timeout**".
 
 - Define "**Sentence Cache Expiry Timeout**".
+
+- Optionally define "**Custom API Base URL**".
 
 ???+ info "Translation Settings"
     **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
