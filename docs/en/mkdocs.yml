@@ -286,6 +286,46 @@ nav:
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
+- Live Agent:
+  - live-agent/overview.md
+  - Release Notes:
+    - live-agent/release-notes/releases.md
+  - Getting started:
+    - Creating an Account:
+      - live-agent/getting-started/creating-an-account.md
+      - live-agent/getting-started/inviting-your-agents.md
+      - live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover.md
+      - live-agent/getting-started/add-an-inbox-for-handling-the-handover.md
+      - live-agent/getting-started/creating-a-cognigy-handover-flow.md
+  - Installation & Configuration:
+    - Browser Requirements:
+      - live-agent/installation/browser-requirements.md
+    - Deployment:
+      - live-agent/installation/deployment/architecture.md
+      - live-agent/installation/deployment/prerequisites.md
+      - live-agent/installation/deployment/installation-using-helm.md
+      - Helm Values:
+        - live-agent/installation/helm-values/index.md
+        - live-agent/installation/helm-values/database.md
+        - live-agent/installation/helm-values/redis.md
+        - live-agent/installation/helm-values/storage.md
+        - live-agent/installation/helm-values/smtp.md
+        - live-agent/installation/helm-values/email-templates.md
+    - Installation Updates:
+      - live-agent/installation/deployment/installation-updates.md
+  - Tools:
+    - Analytics:
+      - live-agent/tools/odata-endpoint.md
+  - live-agent/agents.md
+  - live-agent/teams.md
+  - live-agent/labels.md
+  - live-agent/inboxes.md
+  - live-agent/account-settings.md
+  - live-agent/contacts.md
+  - live-agent/reports.md
+  - live-agent/conversation-workflow.md
+  - live-agent/conversation-routing.md
+  - live-agent/profile-settings.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
