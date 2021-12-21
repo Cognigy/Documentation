@@ -36,10 +36,5 @@ This option refers to the **documentation that you are currently browsing**.
 ### Insights
 Insights is our new analyticts reporting tool to improve your customer service. Please take a look [here]({{config.site_url}}insights/cognigy-insights/) to learn more about Ingights .
 
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/b41be3c-usermenu-techsupport.jpg" width="100%" />
-</figure>
-
 ### Logout
 This options lets the user logout of the user interface.
