@@ -34,7 +34,7 @@ If you navigate to the *Organisation Details* page via the User Menu, you can se
 	* You do not have permissions to create a Live Agent account
 	* There is already a Live Agent account created for your organisation
 
-The text above the button can help you find why the button is disabled for you. 
+	The text above the button can help you find why the button is disabled for you. 
 
 **Example 1:**
 Cognigy Live Agent feature not enabled 
