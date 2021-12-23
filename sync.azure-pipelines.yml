@@ -1,4 +1,4 @@
-name: sync-documentation
+name: sync
 
 # Do not automatically trigger this pipeline if a normal commit + push
 # occurs. We will trigger this pipeline based on a schedule.
