@@ -39,9 +39,11 @@ stages:
               git config --global user.name "Azure Pipelines Bot"
 
               git remote add github git@github.com:Cognigy/Documentation.git
+
+              git checkout --track origin/main
               git fetch github
-              git checkout main
               git merge github/main --no-edit
+              git branch
             displayName: Pull main from GitHub and merge
 
           - script: |
