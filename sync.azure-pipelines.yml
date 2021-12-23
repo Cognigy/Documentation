@@ -37,3 +37,8 @@ stages:
           - script: |
               git remote add github git@github.com:Cognigy/Documentation.git
               git pull github main
+            displayName: Pull main from GitHub and merge
+
+          - script: |
+              git push origin main
+            displayName: Push changes to Azure DevOps
