@@ -35,6 +35,9 @@ stages:
               sshKeySecureFile: github-deploy
 
           - script: |
+              git config --global user.email "azure-pipeline@cognigy.com"
+              git config --global user.name "Azure Pipelines Bot"
+
               git remote add github git@github.com:Cognigy/Documentation.git
               git fetch github
               git merge github/main --no-edit
