@@ -36,8 +36,8 @@ stages:
 
           - script: |
               git remote add github git@github.com:Cognigy/Documentation.git
-              git config pull.ff only
-              git pull github main --no-edit
+              git fetch github
+              git merge github/main --no-edit
             displayName: Pull main from GitHub and merge
 
           - script: |
