@@ -28,5 +28,12 @@ stages:
             persistCredentials: "true"
             clean: "true"
 
+          - task: InstallSSHKey@0
+            inputs:
+              knownHostsEntry: "|1|aJyu31lZ1fF+UdsrDL5irwuITs8=|wgYoiV4aNZvqqQPO3lx8wlprNp8= ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBEmKSENjQEezOmxkZMy7opKgwFB9nkt5YRrYMjNuG5N87uRgg6CLrbo5wAdT/y6v0mKV0U2w0WZ2YB/++Tpockg="
+              sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDo/VKBdXyf3fgCSy8DBPeZSyc3s+yoHKzniaoeJtbmaGfiF0/eqk0HSbYXCJcOEWsU33Lw/fpxI1cZukJcYtohhT/cnb0SBPAtTnVGoHVT1+jKmKRUHl+POW7Wpld3Lp7X0eU5087xb6cBwOOVmASYPbydzz+UKXHbNYHSXMtmAgPbKTRrlrQEYNVhYm5HGmv4kyXf7A7mu8+vDCw8cW/ggTJxC/wIzmvRcRY1L+fRIj/ptpA+3UU9cc+vvzkMgrVbANmFreBwg13qE2OacFrnueTysr/DDHE6kaJ88UT2gIqC6a3Hf8PojgmZmq5tjQUGL+yVDcNzSi35KRWNvr7dDhfayy/HT9R0OY9KxNjkUaGWhWLxmCS0GLSf8/ncL0Y455MDQn8fA4lX7UWUcGwZiAmjBIZsv7h/wkNzVrjLgvOBeU4VNPWzfu6TiG6mnfiqGHXL2QEpqDSPXE77E/jYEL1jc04qOS415ny7eylYi5yoP+ZL4R+ECmmdvn5+hrs= benni@benni-ThinkPad-X1-Extreme-2nd
+              sshKeySecureFile: github-deploy
+
           - script: |
-              ls
+              git remote add github git@github.com:Cognigy/Documentation.git
+              git pull github main
