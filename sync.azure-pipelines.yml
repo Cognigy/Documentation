@@ -44,5 +44,6 @@ stages:
             displayName: Pull main from GitHub and merge
 
           - script: |
+              git remote -v
               git push origin main
             displayName: Push changes to Azure DevOps
