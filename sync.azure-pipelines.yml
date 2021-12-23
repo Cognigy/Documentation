@@ -45,5 +45,6 @@ stages:
 
           - script: |
               git remote -v
+              git branch
               git push origin main
             displayName: Push changes to Azure DevOps
