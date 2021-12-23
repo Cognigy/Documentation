@@ -1,0 +1,32 @@
+name: sync-documentation
+
+# Do not automatically trigger this pipeline if a normal commit + push
+# occurs. We will trigger this pipeline based on a schedule.
+trigger: none
+
+schedules:
+  - cron: "0 0 * * *"
+    displayName: Daily midnight sync
+    branches:
+      include:
+        - main
+
+resources:
+  - repo: self
+
+pool:
+  vmImage: ubuntu-20.04
+
+stages:
+  - stage: Sync
+    displayName: Sync Azure DevOps with GitHub
+    jobs:
+      - job:
+        displayName: Sync Azure DevOps with GitHub
+        steps:
+          - checkout: self
+            persistCredentials: "true"
+            clean: "true"
+
+          - script: |
+              echo "hello"
