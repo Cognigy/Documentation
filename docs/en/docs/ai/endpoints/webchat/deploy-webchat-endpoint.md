@@ -35,71 +35,46 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 You can configure almost everything about the Webchat to personalize it just for your needs. This includes modifying the colors, adding functionality like file uploads and much more, so that you can present the Conversational AI that you have created in a very nice way. As soon as you have changed a setting, loading or reloading a Website with a Webchat pointing to this Endpoint will show the changes will already have taken effect.
 
-### Minimized Webchat Settings
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_minimized_settings.png" width="100%" />
-  <figcaption>Minimized Webchat Settings</figcaption>
-</figure>
-
-|Parameter (main)||	Parameter (sub)	Description|
-|--|--|--|
-|Enable Connection Status Indicator	||	Whether to show a warning if the connection is lost during a conversation. The warning will disappear when the connection is re-established.|
-|Enable Unread Message Title Indicator	||	Indicate the amount of unread messages in the page title every 1000ms.|
-|Show Engagement Messages in Chat		||Engagement messages will also be shown in the chat window.|
-|Engagement Message Text||		The text of the message to display next to the webchat icon to get the user to engage.|
-|Unread Messages	|Enable Unread Message Badge|	The webchat shows a badge with the number of unread messages at the toggle button.|
-||Enable Unread Message Preview|	The webchat shows a message bubble with the latest retrieved bot message.|
-||Enable Unread Message Sound Confirmation | Play a notification sound for each incoming unread message.
-
 ### Webchat Layout
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_layout.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout.png" width="100%" />
   <figcaption>Webchat Layout</figcaption>
 </figure>
 
-|Parameter (main)||	Parameter (sub)	Description|
-|--|--|--|
-|Enable Typing Indicators	||	Enables a typing indicator while the Bot is replying.|
-|Enable generic HTML Styling||		If this is active, additional generic styling will be applied to HTML content inside regular text messages.|
-|Dynamic Image Aspect Ratio	||	Images from the 'gallery', 'attachment' or 'top list item' template will not have a forced aspect ratio and will be fully displayed full-width without cropping.|
-|Color Scheme	||	The main colors for the Webchat, e.g. #008080.|
-|Logos and Images|	Bot Avatar Logo|	A URL linking to the logo that should be the bot's avatar.|
-||Header Logo| https://image.url A URL linking to the logo that should be displayed in the Webchat header.|
+| Parameter |	Description |
+| -- | -- |
+| Webchat Title | The text to display within the webchat header |
+| Color Scheme | The main colors for the Webchat, e.g. #008080 |
+| Bot Avatar Logo URL | A URL linking to the logo that should be the bot's avatar |
+| Header Logo URL | A URL linking to the logo that should be displayed in the Webchat header |
+| Enable Typing Indicators | Enables a typing indicator while the Bot is replying |
+| Input Placeholder Text | The text to display as a placeholder in the input field |
 
-### Additional Settings
+#### Advanced Layout Settings
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_additional_settings.png" width="100%" />
-  <figcaption>Additional Settings</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout-advanced.png" width="100%" />
+  <figcaption>Advanced Layout Settings</figcaption>
 </figure>
 
-|Parameter (main)	||Parameter (sub)	Description|
-|--|--|--|
-|Content Settings	|Enable generic HTML Styling|	If this is active, additional generic styling will be applied to HTML content inside regular text messages.
-||Allow JavaScript in HTML Message Content|	By default, potentially malicious HTML content like 'onclick' or 'onload' attributes are removed before rendering. If this setting is enabled, they will not be removed.|
-||Allow JavaScript in Button/Action URLs|	By default, 'JavaScript URLs' starting with javascript: will get removed. If this setting is enabled, they will not be removed and the JavaScript code will get executed when the user clicks the button/element.
-|Rating Settings|	Enable Rating Functionality <br>- Only when requested <br>- Once <br>- Always	Select when a webchat user can give a rating.|
-||Rating Title Text	|The title displayed in the rating dialog prompt. <br>Rating Comment Text	The text displayed above the comment field in the rating dialog prompt.|
-||Message History Rating Text|	The text displayed in the message history after giving a rating (text is followed by the icon representing the rating).|
-||Message History Comment Text|	The text displayed in the message history after giving a rating, if there was a comment sent (text is followed by the actual comment).|
-|Start Behavior	|Start Behavior <br>- Start with a Text Field<br>- Start with a Button<br>- Auto Send a Message to the Bot|	Start behavior when opening the Webchat.|
-||Payload<br>-GET_STARTED|	The text that is sent into your Flow.|
-||Display Text <br>- Get Started|	Text to display as a simulated user input bubble when the bot starts.|
-||Button Title<br>- Get Started|	The text to display on the Start Button.
-|Persistent Menu|	Enable Persistent Menu|	The title of the Persistent Menu.
-||Title|	The title of the Persistent Menu.|
-|General Functionality|	Webchat Title|	The text to display within the webchat header.|
-||Message Delay|	The amount of time to wait between sending bot replies. Measured in milliseconds.|
-||Focus Input after Postback|	The message input field will receive focus after a Postback button or quick reply button is clicked.|
-||Input Placeholder Text|	The text to display as a placeholder in the input field.|
-||Enable Input Autogrow| If this is enabled, the text input for Webchat users will grow automatically when the user types long texts. It also enables line breaks for user text inputs.|
-||Maximum Number of Input Rows| Defines the number of text lines the text input can grow to. After the maximum line size is exceeded, a vertical scrollbar will appear in the text input.|
-|Compatibility Settings| Disable Input Autocomplete | Use this setting to disable the autocomplete functionality for everyone.|
-|Webchat plugins||	https://url.to/plugin.js|
+| Parameter | Description |
+| -- | -- |
+| Enable Input Autogrow | If this is enabled, the text input for Webchat users will grow automatically when the user types long texts. It also enables line breaks for user text inputs. |
+| Maximum Number of Input Rows | Defines the number of text lines the text input can grow to. After the maximum line size is exceeded, a vertical scrollbar will appear in the text input. |
+| Dynamic Image Aspect Ratio | Images from the 'gallery', 'attachment' or 'top list item' template will not have a forced aspect ratio and will be fully displayed full-width without cropping |
+| Disable Input Autocomplete | Use this setting to disable the autocomplete functionality for everyone |
+| Enable generic HTML Styling | If this is active, additional generic styling will be applied to HTML content inside regular text messages. |
+| Allow JavaScript in HTML Message Content | By default, potentially malicious HTML content like 'onclick' or 'onload' attributes are removed before rendering. If this setting is enabled, they will not be removed. |
+| Allow JavaScript in Button/Action URLs | By default, 'JavaScript URLs' starting with javascript: will get removed. If this setting is enabled, they will not be removed and the JavaScript code will get executed when the user clicks the button/element. |
 
 #### Persistent Menu
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout-persistent.png" width="100%" />
+  <figcaption>Persistent Menu Configuration</figcaption>
+</figure>
+
 The persistent menu is a great way to show your users all of the capabilites that your bot has. You can use it to switch to different conversation stages, to guide the user and much more. The user can open the menu at any time during the conversation through a small icon in the left corner:
 
 <figure>
@@ -109,40 +84,98 @@ The persistent menu is a great way to show your users all of the capabilites tha
 
 To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The first thing you have to do is enabling the Persistent Menu. As soon as you do this, the menu icon will appear in the lower left corner of the Webchat. You can give the menu any title you want in the ``Title`` field in the Persistent Menu Panel.In order to actually add the Persistent Menu Items themselves, you click on the ``ADD`` button on the right. Clicking this will add a new ``Persistent Menu Item``, which consists of a ``Title`` and a ``Payload``. The text in the title field controls what the user can see in the Persistent Menu, while the text in the payload field is what is actually sent to your flow. This way, you can show a simple word to your user, but actually send a more complex query to your flow in order to process the request.The image below shows the configuration behind the webchat pictured above.
 
-### Additional Configuration for Demo Webchat
-
-This section enables features exclusively for the Demo Webchat. These settings don't affect websites embedding the Webchat Widget.
+#### Webchat Plugins
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_additional_demo_webchat_settings.png" width="100%" />
-  <figcaption>Additional Configuration for Demo Webchat</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout-plugins.png" width="100%" />
+  <figcaption>Webchat Plugins</figcaption>
 </figure>
 
-|Name|Description|
-|---|---|
-|Enable Demo Webchat|Enables or disables the integrated Demo Webchat for this Endpoint.|
-|Enable Speech-to-Text|	If true, then the Webchat has a microphone button that enables the user to use voice to send messages instead of only sending text messages.|
-|Enable Text-to-Speech|	If true, then the Webchat will read messages from the Bot aloud.|
-|Background Image|	The image to display in the the backround.|
-|Center Webchat|	If this setting is toggled on, then the Webchat will appear in the center of the page. Otherwise it will appear in the bottom right corner.|
+All plugins linked in this list field will be loaded by the Webchat Widget when started. To trigger the plugin, e.g. display an upload button for the file-upload plugin a plugin specific data payload is required.
 
-### Custom JSON
+Get sure all plugins are reachable for your whole audience!
 
-Cognigy has been added with Cognigy.AI v4.11.0  another field "**Custom JSON**" to the Webchat Endpoint Editor configuration. This field can be used to configure additional settings not available in the GUI.
+### Webchat Behavior
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/1195ad5-custom_JSON_field_2.svg" width="100%" />
-  <figcaption>Custom JSON field with a configuration example of changing the color scheme</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-behavior.png" width="100%" />
+  <figcaption>Webchat Behavior</figcaption>
 </figure>
 
-- You can use the "Custom JSON" field to override parameters of the configuration.
+| Parameter (main) |	Parameter (sub)	| Description |
+| -- | -- | -- |
+| Start Behavior	| Start Behavior <br>- Start with a Text Field<br>- Start with a Button<br>- Auto Send a Message to the Bot |	Start behavior when opening the Webchat. |
+|| Payload | The text that is sent into your Flow |
+|| Display Text | Text to display as a simulated user input bubble when the bot starts. |
+|| Button Title | The text to display on the Start Button. |
+| Additional Behavior | Message Delay | The amount of time to wait between sending bot replies. Measured in milliseconds. |
+|| Focus Input after Postback | The message input field will receive focus after a Postback button or quick reply button is clicked. |
+|| Enable Connection Status Indicator | Whether to show a warning if the connection is lost during a conversation. The warning will disappear when the connection is re-established. |
 
-- You can add parameters that were not included in the configuration before.
+### Teaser Message Settings
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5ee5e65-custom_JSON_field_4_250.svg" width="100%" />
-  <figcaption>Changed color to #eb9419 using custom JSON field option</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-teaser-message.png" width="100%" />
+  <figcaption>Teaser Message Settings</figcaption>
 </figure>
+
+| Parameter | Description |
+| -- | -- |
+| Teaser Message Text | The text of the message to display next to the webchat icon to get the user to engage. |
+| Show Engagement Messages in Chat | Show Engagement Messages in Chat |
+
+### Unread Message Settings
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-unread-message.png" width="100%" />
+  <figcaption>Unread Message Settings</figcaption>
+</figure>
+
+| Parameter | Description |
+| -- | -- |
+| Enable Unread Message Title Indicator | Indicate the amount of unread messages in the page title every 1000ms. |
+| Enable Unread Message Badge | The webchat shows a badge with the number of unread messages at the toggle button. |
+| Enable Unread Message Preview | The webchat shows a message bubble with the latest retrieved bot message. |
+| Enable Unread Message Sound Confirmation | Play a notification sound for each incoming unread message. |
+
+### Conversation Rating Settings
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-conversation-rating.png" width="100%" />
+  <figcaption>Conversation Rating Settings</figcaption>
+</figure>
+
+| Parameter | Description |
+| -- | -- |
+| Enable Rating Functionality | Select when a webchat user can give a rating. |
+| Rating Title Text | The title displayed in the rating dialog prompt. |
+| Rating Comment Text | The text displayed above the comment field in the rating dialog prompt |
+| Message History Rating Text | The text displayed in the message history after giving a rating (text is followed by the icon representing the rating). |
+| Message History Comment Text | The text displayed in the message history after giving a rating, if there was a comment sent (text is followed by the actual comment). |
+
+### Demo Webchat Settings
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-demo.png" width="100%" />
+  <figcaption>Demo Webchat Settings</figcaption>
+</figure>
+
+| Parameter | Description |
+| -- | -- |
+| Enable Demo Webchat | Enables or disables the integrated Demo Webchat for this Endpoint. |
+| Enable Speech-to-Text | Toggle whether the Webchat should feature a microphone button. |
+| Enable Text-to-Speech | Toggle whether the Webchat should read all bot messages aloud. |
+| Background Image | The image that will be displayed behind the Webchat. |
+| Center Webchat | Toggle whether the Webchat should be centered (`Yes`) or in the bottom right corner (`No`) |
+
+### Webchat Custom Settings
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-custom.png" width="100%" />
+  <figcaption>Webchat Custom Settings</figcaption>
+</figure>
+
+This field can be used to configure additional settings not available in the GUI. These settings override GUI settings. Entering malformed JSON might result in crashing the webchat, so use with caution and at own risk!
 
 ## More information
 
