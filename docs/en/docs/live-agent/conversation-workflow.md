@@ -112,23 +112,6 @@ This Button is to select and include attachments in the message
 <!-- <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="5%" alt="" />
 This Button enables to use the Rich Text Editor. Additional options appear on the Reply screen as shown below.
 
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Rich Text" />
-  <figcaption>Rich Text</figcaption>
-</figure>
-
-
-Once the message is typed and edited, you need to tick the checkbox to send the message to the customer. Below is an example of how the message will look like when a Rich text editor is used. If you want to go back to normal text, click on the rich text editor button again.
-
-
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Rich Message" />
-  <figcaption>Rich Message</figcaption>
-</figure> -->
-
-
 ###  How to Send Canned Responses
 <div class="divider"></div>
 
