@@ -42,7 +42,7 @@ The webhook URL is the Cognigy.AI endpoint config URL domain plus `/handover/cha
 </tr>
 <tr>
 <td>Webhook URL</td>
-<td>https://endpoint-trial.cognigy.com/handover/chatwoot</td>
+<td>https://endpoint-trial.cognigy.com/handover/liveagent</td>
 <td>https://endpoint-trial.cognigy.com is the Cognigy.AI endpoint config URL domain</td>
 </tr>
 </table>
