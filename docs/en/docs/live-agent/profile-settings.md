@@ -7,7 +7,7 @@
 
 Change basic settings for the user profile.
 
-Click on the three dots menu next to the account profile and click on **Profile Settings**.
+Click on the profile thumbnail next to the bottom right and click on **Profile Settings**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-menu.png" width="100%" alt="Live Agent Profile  Menu" />
@@ -37,7 +37,9 @@ Notifications.
   <figcaption>Notifications</figcaption>
 </figure>
 
-Here you can also find the user access token.
+>Note: The push notifications setting must be enabled in the system. Otherwise, they are not available.
+
+Here you can also find the user access token. It is used for the Live Agent API.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />
