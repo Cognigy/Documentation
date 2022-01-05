@@ -52,3 +52,19 @@ To enable round-robin assignment in your inbox, follow the steps below.
 </figure>
 
 - Change it to "Enabled" and click on "Update"
+
+## Re auto assignment
+<div class="divider"></div>
+
+
+Live Agent provides a round-robin re auto-assignment system for conversations. It works in the same way as auto-assignment with the difference that it happens on real-time events. These are the following:
+
+- Agent set its availability to "Offline" (availability can be changed by clicking on the profile thumbnail)
+- Agent logs out
+
+When this happens, the agent assigned conversations are re-assigned to other agents following the previously mentioned round-robin logic. If there are no agents online, the conversations are unassigned.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-routing-3.png" width="100%" alt="Live Agent Enable Auto Assignment" />
+  <figcaption>Enable Auto Assignment</figcaption>
+</figure>

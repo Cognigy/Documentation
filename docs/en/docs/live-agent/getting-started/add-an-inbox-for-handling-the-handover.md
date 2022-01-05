@@ -42,7 +42,7 @@ The webhook URL is the Cognigy.AI endpoint config URL domain plus `/handover/cha
 </tr>
 <tr>
 <td>Webhook URL</td>
-<td>https://endpoint-trial.cognigy.com/handover/chatwoot</td>
+<td>https://endpoint-trial.cognigy.com/handover/liveagent</td>
 <td>https://endpoint-trial.cognigy.com is the Cognigy.AI endpoint config URL domain</td>
 </tr>
 </table>
@@ -72,12 +72,12 @@ One more thing to do is note down the following data, the _Inbox ID_ and the _Ac
 </tr>
 <tr>
 <td>Account ID</td>
-<td>1234</td>
+<td>10</td>
 </tr>
 </tr>
 <tr>
 <td>Inbox ID</td>
-<td>4405</td>
+<td>25</td>
 </tr>
 </table>
 
