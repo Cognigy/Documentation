@@ -1,6 +1,6 @@
 ---
  title: "LA OData Endpoint" 
- slug: "odata-endpoint" 
+ slug: "la-odata-endpoint" 
  hidden: false 
 ---
 # LA OData Analytics Endpoint
@@ -33,15 +33,22 @@ An OData URL is combined of the service root, api version, service path, the dat
     Authorization: Bearer <access token>
 ```
 
+The authentification can also be done using a query param such as follows:
+
+``` 
+/<api-version>/odata/<OData data model>?<odata query>&apikey=<access token>
+```
+
 
 ???+ info "OData Domain Name"
-    Please note that the OData endpoint is available on a different domain to your Cognigy User Interface domain. e.g. If you login to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai) then your odata domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai)).
+    Please note that the OData endpoint is available on a different domain to your Cognigy User Interface domain. e.g. [https://odata-liveagent-trial.cognigy.ai/v1.0/odata](https://odata-dev-live-agent.cognigy.ai/v1.0/odata).
 
 
-For example, on our trial server, the OData endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v1.0/odata/Message?`. For On-Prem installations please replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+For example, on our trial server, the OData endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Prem installations please replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
 ???+ info "Excel/Power BI"
     When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication`.
+    and pass the access token as a query parameter `&apikey=<access-token>`
 
 ## Endpoint Version
 
@@ -50,13 +57,13 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 ## Version 1.0
 The current version of the OData endpoint is `v1.0`. This endpoint version is available from LiveAgent Version 1.0.0 onwards. In this version, the following OData collections are available:
 
-- [Message]({{config.site_url}}live-agent/tools/odata-endpoint/#Message/) (`/Message`)
-- [Conversation]({{config.site_url}}live-agent/tools/odata-endpoint/#Conversation/) (`/Conversation`)
-- [User]({{config.site_url}}live-agent/tools/odata-endpoint/#User/) (`/User`)
-- [Tag]({{config.site_url}}live-agent/tools/odata-endpoint/#Tag/) (`/Tag`)
-- [Tagging]({{config.site_url}}live-agent/tools/odata-endpoint/#Tagging/) (`/Tagging`)
-- [Label]({{config.site_url}}live-agent/tools/odata-endpoint/#Label/) (`/Label`)
-- [Inbox]({{config.site_url}}live-agent/tools/odata-endpoint/#Inbox/) (`/Inbox`)
+- [Message]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Message/) (`/Message`)
+- [Conversation]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Conversation/) (`/Conversation`)
+- [User]({{config.site_url}}live-agent/tools/la-odata-endpoint/#User/) (`/User`)
+- [Tag]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Tag/) (`/Tag`)
+- [Tagging]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Tagging/) (`/Tagging`)
+- [Label]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Label/) (`/Label`)
+- [Inbox]({{config.site_url}}live-agent/tools/la-odata-endpoint/#Inbox/) (`/Inbox`)
 
 To see all the available OData model you can ping the following endPoint:
 `https://<hostname>/v1.0/odata/`
@@ -79,13 +86,13 @@ The endpoint supports following the OData Query Language operators:
 
 ## Example Queries
 
-`https://odata-trial.cognigy.ai/v1.0/odata/Conversation(1)?$select=inbox_id,account_id`
+`https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation(1)?$select=inbox_id,account_id&apikey=<access-token>`
 Return the columns inbox_id and account_id for the conversation with id=1
 
-`https://odata-trial.cognigy.ai/v1.0/odata/Conversation?$select=id,account_id`
+`https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation?$select=id,account_id&apikey=<access-token>`
 Return the columns id and account_id for all Conversations.
 
-`https://odata-trial.cognigy.ai/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2021-11-23T00:00:00'`
+`https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2021-11-23T00:00:00'&apikey=<access-token>`
 Return the columns id and account_id for all the Conversations filtered by the created_at column being lower or equal to '2021-11-23T00:00:00'
 
 
@@ -118,7 +125,7 @@ This section details the data types that exist within the OData Collections that
 A message is a single peace of communication between and agent and a client, every time an agent/user hits enter it will persist that text as a new message row. In the Messages table you can find all the messages from all the inboxes and all the conversations.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/Message?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:
@@ -148,7 +155,7 @@ When retrieving this data model, the endpoint will return the following fields:
 A conversation is the communication channel opened between an agent and a client.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/Conversation?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:
@@ -182,7 +189,7 @@ When retrieving this data model, the endpoint will return the following fields:
 The inbox is where all the conversations from a specific set of agents will be placed.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/Inbox?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Inbox?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:
@@ -215,7 +222,7 @@ When retrieving this data model, the endpoint will return the following fields:
 Labels are being used to mark, identify or group different converstations.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/Label?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Label?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:
@@ -236,7 +243,7 @@ When retrieving this data model, the endpoint will return the following fields:
 The tagging model contains the relation when a label is being used.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/Tagging?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tagging?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:
@@ -257,7 +264,7 @@ When retrieving this data model, the endpoint will return the following fields:
 Tags metadata such number of times a tag has been used.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/Tag?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tag?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:
@@ -274,7 +281,7 @@ When retrieving this data model, the endpoint will return the following fields:
 This data model holds information regarding the liveAgen users such an angent.
 
 #### Example Query:
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/v1.0/odata/User?`.
+ * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/User?`.
 
 #### Data Types:
 When retrieving this data model, the endpoint will return the following fields:

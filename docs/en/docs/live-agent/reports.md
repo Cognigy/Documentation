@@ -47,7 +47,7 @@ Click on the Conversations tab in Reports. The graph will show the conversation 
 Click on the Incoming Messages tab in Reports. The graph will show the number of incoming messages that happened on the selected days. On pointing the mouse to a particular chart of the day, the number of incoming messages that happened on that day can be found out.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-reports-conversations.png" width="100%" alt="Incoming Messages Report Screen" />
+<img src="{{config.site_url}}live-agent/images/LA-reports-incoming-messages.png" width="100%" alt="Incoming Messages Report Screen" />
   <figcaption>Incoming Messages Report</figcaption>
 </figure>
 
