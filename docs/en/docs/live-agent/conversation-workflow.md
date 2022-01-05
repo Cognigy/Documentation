@@ -34,7 +34,6 @@ Go to the home screen of Live Agent Agent Dashboard
 
 Click on Conversations. Then click on All. The conversation which the customer has initiated can be seen here.
 
-
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
@@ -42,6 +41,15 @@ Click on Conversations. Then click on All. The conversation which the customer h
 
 
 The details of the conversation open up in the right-hand side panel.
+
+#### Show all inbox setting
+
+By default, users with the agent role cannot see the "All" tab for all conversations. However, there is a setting enabling it per inbox. If it is enabled, the user can see all discussions, including those from other agents. Otherwise, it will be restricted.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Conversations Details" />
+  <figcaption>Show All Inbox setting</figcaption>
+</figure>
 
 ### Assign Agent
 <div class="divider"></div>
@@ -104,30 +112,15 @@ You can reply to the customer's conversation by typing in the Reply area. Shift+
 
 Click on the Send button to send your message to the customer.
 
-Various options are there in the Reply area to enhance the messages.
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="5%" alt="" />
-This Button is to select and include Emoji in the message.
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="5%" alt="" />
-This Button is to select and include attachments in the message
-<!-- <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="5%" alt="" />
-This Button enables to use the Rich Text Editor. Additional options appear on the Reply screen as shown below.
+###  Conversation Actions
 
+Find below a list describing the conversation actions the agent can take by clicking the following icons.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Rich Text" />
-  <figcaption>Rich Text</figcaption>
-</figure>
-
-
-Once the message is typed and edited, you need to tick the checkbox to send the message to the customer. Below is an example of how the message will look like when a Rich text editor is used. If you want to go back to normal text, click on the rich text editor button again.
-
-
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Rich Message" />
-  <figcaption>Rich Message</figcaption>
-</figure> -->
-
+| Icon                 | Description                                                                                        |
+|-------------------------|------------------------------------------------------------------------------------------------|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />         | This button allows the agent to select and include Emoji in the message                                                             |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the agent to select and include attachments in the message                                                               |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the agent to request a file from the customer                                                             |
 
 ###  How to Send Canned Responses
 <div class="divider"></div>
@@ -175,11 +168,11 @@ The second agent to whom the private chat is addressed, will receive a notificat
 
 Replies sent by second agent will be visible in your private chat window.
 
-### Delete Message
+#### Delete Private Message
 <div class="divider"></div>
-There is an option to delete the message which you have already sent. Click on the 3 dots(...) beside the sent message.
-Option is available to copy or delete the message.
-Click on Delete. The message will be deleted.
+There is an option to delete the private message which you have already sent. Click on the 3 dots(...) beside the sent message.
+Option is available to copy or delete the private message.
+Click on Delete. The private message will be deleted.
 
 
 <figure>
@@ -190,14 +183,6 @@ Click on Delete. The message will be deleted.
 
 ### Sending E-mails
 <div class="divider"></div>
-
-Once the End user has provided their e-mail id through the conversation, Agent can send the chat conversation in email to the customer.
-The email ID will be listed against the name of the Customer in the details window. The email ID will be automatically added to the Contacts also.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-19.png" width="100%" alt="Live Agent Contact Details" />
-  <figcaption>Contact Details</figcaption>
-</figure>
 
 
 Click on the 3 dots on the top right hand side of the screen. There is an option to send transcript. Click on it.
@@ -218,7 +203,7 @@ A screen opens up, an email can be send to agents in the team. The chat transcri
 </figure>
 
 
-Click on Submit. A message will be displayed "The chat transcript was sent successfully". The End user will receive the chat transcript in his email inbox.
+Click on Submit. A message will be displayed "The chat transcript was sent successfully". The end-user will receive the chat transcript in its email inbox.
 
 ### Transferring Agents
 <div class="divider"></div>
@@ -243,6 +228,7 @@ The options are given below
 |-------------------------|------------------------------------------------------------------------------------------------|
 | Mark as Pending         | Change the issue to Pending status                                                             |
 | Resolve                 | Change the issue to Close status                                                               |
+| Abort and resolve       | Change the issue to Close status and add the queryable abort attribute                         |
 | Reopen                  | Change the issue to Open status                                                                |
 | Open                    | Change the pending issue to Open status                                                        |
 | Snooze Until Next Reply | The issue will be set aside for now and status will change to open on next reply from customer |
@@ -262,20 +248,4 @@ The Conversations can be selected and viewed as per their status on the Conversa
 
 Once the conversation has been marked as resolved - next time the same customer starts a new conversation, the Previous conversation associated with the customer will be shown on the screen. This will help the agent to understand the history of the customer's issue.
 
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-.png" width="100%" alt="" />
-  <figcaption></figcaption>
-</figure>
-
-
-Click on the name below the Previous Conversation and the details of the past conversation opens up as below. This can be used as reference for the agent.
-
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-.png" width="100%" alt="" />
-  <figcaption></figcaption>
-</figure>
-
-
-If there has been more than one conversation from the same customer, all will be listed under Previous Conversations. Agent can select which ones to view.
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Previous Conversations" />
