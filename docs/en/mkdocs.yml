@@ -41,7 +41,7 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
   logo: assets/img/Cognigy-white.svg
-  favicon: assets/img/favicon.png
+  favicon: assets/img/favicon.webp
   language: en
 nav:
 - Cognigy Products: index.md
