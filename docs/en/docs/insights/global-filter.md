@@ -151,7 +151,7 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.17-blue.svg)]({{config.site_url}})
 
-This filter allows you to select the analytics data based on the users feedback. By default all data is shown diregard given or absenct feedback from the user.
+This filter allows you to select the analytics data based on the last user rating given in a session. By default, all data is shown, regardless of whether user feedback is given or missing.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/rating.png" width="50%" />
