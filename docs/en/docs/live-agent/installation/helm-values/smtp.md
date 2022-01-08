@@ -9,8 +9,6 @@ SMTP needs to be configured for functionalities such as agent notifications rega
 
 ## Values
 
-A secret is created by default while installing the Helm chart. First, edit the password inside the SMTP secret. The secret name is composed of the `release name` + `smtp`.
-
 | Name                                | Type                                                                | Default Value                                              |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `configmap.SMTP_ADDRESS`                  | Set your smtp address.                                                          |`""`                                      |
@@ -22,7 +20,14 @@ A secret is created by default while installing the Helm chart. First, edit the 
 | `configmap.SMTP_USERNAME`                 | SMTP username                                                                   | `""`                                     |
 | `configmap.MAILER_SENDER_EMAIL`           | The email from which all outgoing emails are sent.                              | `""`                                     |
 
->Note: Comment out SMTP_AUTHENTICATION, SMTP_USERNAME and SMTP_PASSWORD if authentication is not necessary
+### Creating a secret for the SMTP passsword
+
+Before installing Live Agent with Helm, create a secret on the Kubernetes cluster namespace where Live Agent is installed. Then note the name and the key down and set the following values:
+
+| Name                                | Type                                                                | Default Value                                              |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `smtp.secret`                  | SMTP secret name                                                          |`""`                                      |
+| `smtp.secretPasswordKey`           | SMTP secret key                                      | `""`                                |
 
 ## Configuring different SMTP servers
 
@@ -40,7 +45,7 @@ and based on your SMTP server the following variables
 | --------------- | ----- | ---- | 
 | configmap.SMTP_ADDRESS | string | `""` |
 | configmap.SMTP_USERNAME | string | `""` |
-| Secret Password | string | `""` |
+| Password secret | string | `""` |
 
 ## No authentication
 

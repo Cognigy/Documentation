@@ -57,8 +57,11 @@ For specific values and logic, here you can find dedicated sections:
 | Name                | Description                                          | Value                 |
 | ------------------- | ---------------------------------------------------- | --------------------- |
 | `image.repository`  | Live Agent image repository                           | `cognigy.azurecr.io/live-agent`    |
-| `image.tag`         | Live Agent image tag                                  | `e.g. 7166`              |
+| `image.tag`         | Live Agent image tag                                  | `e.g. 2.0.0`              |
 | `image.pullPolicy`  | Live Agent image pull policy                          | `IfNotPresent`         |
+| `odata.image.repository`  | Live Agent image repository                           | `cognigy.azurecr.io/live-agent-odata`    |
+| `odata.image.tag`         | Live Agent image tag                                  | `e.g. 1.0.0`              |
+| `odata.image.pullPolicy`  | Live Agent image pull policy                          | `IfNotPresent`         |
 
 
 ## ConfigMap Values
@@ -74,6 +77,41 @@ For specific values and logic, here you can find dedicated sections:
 | `configmap.RAILS_MAX_THREADS`             | Number of threads each worker will use.                                         | `"5"`                                                      |
 | `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
 | `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot customizations                                                              | `"true"`                                                   |
+
+### Cognigy
+
+#### App Platform Token
+
+Cognigy.AI uses the app platform token to perform operations using the Live Agent API. These include synchronising data and creating it (e.g. inboxes and accounts). The value is automatically created when installing Live Agent with a random string. It can be set using an existing secret to have constant values (recommended).
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `cognigyPlatformAppToken.existingSecret`     | Cognigy app platform token secret name                 | `""`                                                                     |
+| `cognigyPlatformAppToken.existingSecretKey`     | Cognigy app platform token secret key                 | `""`                                                                     |
+
+#### URL
+
+| Name                                | Description                                                                | Default Value                                              |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI from Live Agent.                                  | `""`                                                   |
+
+#### OAuth Values
+
+These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log into Live Agent with the same credentials.
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.COGNIGY_OAUTH_CLIENT_ID`     | OAuth Client ID                 | `"cognigy-live-agent"`                                                                     |
+| `configmap.COGNIGY_OAUTH_SITE`          | Cognigy API site                | `"https://api-installation.cognigy.ai"`                                                    |
+| `configmap.COGNIGY_OAUTH_AUTHORIZE_URL` | Cognigy OAuth API authorise URL | `"https://installation.cognigy.ai/login?cognigy-live-agent=true"`                          |
+| `configmap.COGNIGY_OAUTH_TOKEN_URL`     | OAuth token URL                 | `"https://api-installation.cognigy.ai/auth/oauth2/token"`                                  |
+
+For the OAuth client secret, the following values must be set:
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `cognigyOAuth.existingSecret`     | Secret name for the OAuth Client secret                 | `""`                                                                     |
+| `cognigyOAuth.existingSecretKey`          | Secret key for the OAuth Client secret                | `""`                                                    |
 
 ### Rest Client SSL
 
@@ -95,15 +133,21 @@ In case you have a custom CA to trust or that need SSL to be disabled, these set
 | `configmap.LOG_LEVEL`                     | string                                                              | `"info"`                                                   |
 | `configmap.LOG_SIZE`                      | string                                                              | `"500"`                                                    |                                                      |
 
-### Third party credentials
+### Push notification
 
-| Name                                | Type                                                                 | Default Value                                              |
-| ----------------------------------- | -------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.S3_BUCKET_NAME`                | S3 bucket name                                                       | `""`                                                       |
-| `configmap.AWS_ACCESS_KEY_ID`             | Amazon access key ID                                                 | `""`                                                       |
-| `configmap.AWS_ENDPOINT_URL`              | [Storage Configuration]({{config.site_url}}live-agent/installation/configuration/storage/) | `""`                                                       |
-| `configmap.AWS_REGION`                    | Amazon region                                                        | `""`                                                       |
-| `configmap.AWS_SECRET_ACCESS_KEY`         | Amazon secret key ID                                                 | `""`                                                       |
+For enabling push notifications, you need to provide the following values as Live Agent use [VAPID](https://datatracker.ietf.org/doc/html/draft-ietf-webpush-vapid-01) to be more secure. They can be generated by using this tool https://d3v.one/vapid-key-generator/.
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.VAPID_PUBLIC_KEY`     | VAPID public key                 | `"`                                                                     |
+| `configmap.VAPID_PRIVATE_KEY`          | VAPID private key                | `""`                                                    |
+
+## OData
+
+| Name                                | Description               | Type | Default Value                                       |
+| ----------------------------------- | --------------------------| ---------------------------------------------------------- |
+| `odata.enabled`     | Enable OData service and endpoint          |  Boolean   | `true`                                                                     |
+| `odata.configmap.ODATA_PROTOCOL`          | http or https        |  String     | `"https"`                                                    |
 
 ## Other Values
 
