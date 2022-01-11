@@ -31,4 +31,6 @@ It is a good practice to change the `redis.auth.password` at the `values.yaml` f
 
 2. Type the username credentials and uncomment the properties `host`, `port`, giving them the right value.
 
-3. A secret is created by default. Edit the password inside the Redis secret. The secret name is composed by the `release name` + `redis`
+3. Define a password to access the external Redis instance:  
+    - A. A secret is created by default. Edit the password inside the Redis secret. The secret name is composed of the `release name` + `redis`.
+    - B. (Recommended) Define an existing secret. Create the secret and set the values inside the `values.yaml` file. The keys are `redis.existingSecret` and `redis.existingSecretPasswordKey`.

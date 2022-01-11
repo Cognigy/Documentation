@@ -5,12 +5,40 @@
 ---
 # Storage
 
-Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server.
-But you can change it to use any cloud providers like AWS S3, Microsoft Azure and Google Cloud, etc. See below for additional values required.
+Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server or with a NFS server (preferred way) and CDNs from any cloud provider like AWS S3, Microsoft Azure and Google Cloud, etc. See below for additional values required.
+
+## Using a NFS server
+
+### AWS
+
+When using AWS, [an existing EFS must be setup](https://aws.amazon.com/efs/). Then fill in the following values:
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
+| `storage.cloudProvider` | string |  `"aws"` |
+| `storage.fileSystemId`| string | `""` |
+| `storage.provisionerName` | string | `""` |
+| `storage.region` | string | `""` |
 | `configmap.ACTIVE_STORAGE_SERVICE` | string | `"local"` |
+
+### Azure
+
+When using Azure, an NFS server must be set up. Then fill in the following values:
+
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.size` | string | `"10Gi"` |
+| `storage.cloudProvider` | string |  `"azure"` |
+| `storage.nfsServer` | string | `""` |
+| `configmap.ACTIVE_STORAGE_SERVICE` | string | `"local"` |
+
+## Using a CDN
+
+Set the following value to `"cdn"` to use a CDN and fill the rest based on the provider that you want to use.
+
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.cloudProvider` | string | `"cdn"` |
 
 [//]: <> (Commented for now as this is for thought for assets in the live chat widget attachments from Chatwoot)
 [//]: <> (## Using CDN for asset delivery)
@@ -20,7 +48,7 @@ But you can change it to use any cloud providers like AWS S3, Microsoft Azure an
 [//]: <> (| --------------- | ----- | ---- | )
 [//]: <> (| `configmap.ASSET_CDN_HOST` | string | `"<distribution>.cloudfront.net"` |)
 
-## Using Amazon S3
+### Using Amazon S3
 
 You can get started with [Creating an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) to configure the following details.
 
@@ -34,7 +62,7 @@ You can get started with [Creating an S3 bucket](https://docs.aws.amazon.com/Ama
 
 
 
-## Using Google GCS
+### Using Google GCS
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -61,7 +89,7 @@ the value of the `GCS_CREDENTIALS` should be a json formatted string containing 
 }
 ```
 
-## Using Microsoft Azure
+### Using Microsoft Azure
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -72,7 +100,7 @@ the value of the `GCS_CREDENTIALS` should be a json formatted string containing 
 
 
 
-## Using Amazon S3 Compatible Service
+### Using Amazon S3 Compatible Service
 
 To use an s3 compatible service such as [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/#configure-a-client), Minio etc..
 
@@ -90,3 +118,12 @@ Set force_path_style to true if using minio
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
 | `configmap.STORAGE_FORCE_PATH_STYLE` | bool | `true` |
+
+## Using a single PVC (not recommended)
+
+There is an option to use a local Persistent Volume Claim (PVC) for storage. This is not recommended as the deployments pods won't be able to scale as there is one PVC per deployment.
+
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.cloudProvider` | string | `"local"` |
+| `storage.size` | string | `"10Gi"` |

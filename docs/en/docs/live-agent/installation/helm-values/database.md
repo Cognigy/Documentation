@@ -17,7 +17,6 @@ Compatible and tested PostgreSQL versions **>= 10** and **<= 14**
 | `postgresql.nameOverride`         | string | `"postgresql"` | Pod name override |
 | `postgresql.postgresqlDatabase`   | string | `"live_agent_production"` |
 | `postgresql.postgresqlUsername`   | string | `"postgres"` | Database user |
-| `postgresql.postgresqlPassword`   | string | `"postgres"` | Database user password |
 | `postgresql.postgresqlHost`   | string | `"postgres"` | Commented unless using an external database |
 | `postgresql.postgresqlPort`   | string | `"postgres"` | Commented unless using an external database |
 | `configmap.POSTGRES_SSL_MODE`     | string | `"prefer"` | Database SSL mode  (prefer, disable, require)  |
@@ -33,4 +32,6 @@ It is a good practice to change the `postgres.postgresqlPassword` at the `values
 
 2. Type the username credentials and uncomment the properties `postgresqlHost`, `postgresqlPort`, giving them the right value.
 
-3. A secret is created by default. Edit the password inside the Redis secret. The secret name is composed by the `release name` + `postgres`
+3. Define a password to access the external Postgres instance:  
+    - A. A secret is created by default. Edit the password inside the Postgres secret. The secret name is composed of the `release name` + `postgres`.
+    - B. (Recommended) Define an existing secret. Create the secret and set the values inside the `values.yaml` file. The keys are `postgresql.existingSecret` and `postgresql.existingSecretPasswordKey`.
