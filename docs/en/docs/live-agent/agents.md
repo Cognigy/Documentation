@@ -33,7 +33,7 @@ Click on Add Agent button on the Top Right Hand Side. A popup window will open i
 | Field Name           | Value                                    | Remarks                                                                                                                                             |
 |----------------------|------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | Agent Name           | Enter Name of the Agent                  | e.g. Jane Doe                                                                                                                                        |
-| Role                 | Enter the Role - Agent or  Administrator | Agents can only access inbox, reports, and  conversations. Administrators have all privilages of agents  and have access to all features of Live Agent |
+| Role                 | Enter the Role - Agent or  Administrator | Agents can only access inbox and  conversations. Administrators have all privilages of agents and have access to all features of Live Agent |
 | Your e-mail  address | The agent email    |                                                                                                                                                     |
 
 Click on **Add Agent** Button. "Agent Added Successfully" message will be displayed, and the New Agent will be listed on the page.
