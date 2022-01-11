@@ -21,6 +21,8 @@ For security reasons we don't support older versions of the listed web browsers.
 ???+ info "Browser compatibility"
     If you encounter issues with our product, please first check which browser version you are using. Ensure that you are using the latest version of one of the mentioned browsers before you open any support case with us.
 
+In order to use the application correctly, please make sure that your viewport is larger than 1280x800 Pixels.
+
 ## Cognigy.AI Webchat
 
 <div class="divider"></div>
