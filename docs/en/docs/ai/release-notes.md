@@ -5,6 +5,42 @@
 ---
 # Release notes
 
+## 4.17.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+#### New Handover to Agent Node
+The new “Handover to Agent” Node allows users to configure different virtual agent behaviors depending on whether a Handover has been finished, a Handover has been canceled, or an error has occurred. The new Node replaces the existing "Handover" node, although the latter will continue to work.
+
+#### Intent handling in Lookup Nodes
+This release allows users to set the Intent hierarchy level in Lookup Nodes of type Intent. Only Intents of the selected hierarchy level are looked up. The current behavior that Intents are matched on the most detailed level remains the default behavior.
+
+### Improvements
+- Improved by allowing to filter Transcripts based on selected steps in the Step Explorer
+- Improved by adding a new global “Rating” filter to Insights 
+- Improved by structuring the Webchat Endpoint settings more clearly
+- Improved by adding a “Go to Extensions Marketplace” tooltip to the Node Selection Menu
+- Improved the Flow Node Search by highlighting the fields with matching search results within the "Edit Node” sidebar, by including JSON keys of custom json fields in the search results and by enhancing the performance of the search
+- Improved by supporting 10 custom fields exposed in the Analytics records instead of three
+- Improved by allowing vertical scrolling on the rows of the Step Explorer
+- Improved by allowing to delete Intent Example Sentences with a single click
+- Improved the loading behavior after saving Intent Example Sentences
+
+### Bugfixes
+- Fixed a bug related to Endpoint Transformers not working when Inject/Notify APIs are used
+- Fixed a bug related to the Insights “Live Agent Escalations” graph showing inaccurate data
+- Fixed a bug related to headers in the HTTP Request Node are incorrectly set when oAuth2 is enabled
+- Fixed a bug where “lakh” is incorrectly not recognized as a number
+- Fixed a bug where timestamps of bot and user messages are incorrectly displayed in chatwoot
+- Fixed a bug where users can select a custom date range with end date before start time
+- Fixed a bug related to a misleading label in the configuration of the “Salesforce Handover Provider”
+- Fixed a bug where Keyphrase matching does not properly work when Slots are added or removed as long as the model is not retrained.
+- Fixed a bug where the search result would not be properly highlighed in certain situations
+- Fixed a bug where handover on first message was not possible
+- Fixed a bug where rating details were not shown on the Step Explorer page
+- Fixed a bug where the Transcript Explorer steps would not get cleared on Agent change and could crash the UI
+- Fixed a bug where "open conversations that took this path" would not show the correct conversations list when the direction is set to "backward"
+
 ## 4.16.1
 **Released** January 6th, 2022
 
