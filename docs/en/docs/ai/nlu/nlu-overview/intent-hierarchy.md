@@ -35,6 +35,3 @@ Enable the *"Inherit Example Sentences from Child Intents"* slider for each inte
 </figure>
 
 When an inherited example sentence is found, both the parent and the child intent will score a high intent mapping result but the child intent will be placed in the `input.intent` property. Find the parent as an additional high scoring intent in the `input.nlu.intentMapperResults.scores` array.
-
-???+ info "Inheritance is not mandatory"
-    Inheritance of child intents is not required to use intent hierarchy. Layering can simply be used to group larger intent databases for ease of maintenance.
