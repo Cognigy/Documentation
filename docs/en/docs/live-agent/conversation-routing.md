@@ -66,5 +66,5 @@ When this happens, the agent assigned conversations are re-assigned to other age
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-routing-3.png" width="100%" alt="Live Agent Enable Auto Assignment" />
-  <figcaption>Enable Auto Assignment</figcaption>
+  <figcaption>Enable Re Auto Assignment</figcaption>
 </figure>
