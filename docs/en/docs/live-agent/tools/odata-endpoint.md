@@ -1,9 +1,9 @@
 ---
- title: "LA OData Endpoint" 
- slug: "la-odata-endpoint" 
+ title: "Live Agent OData Endpoint" 
+ slug: "live-agent-odata-endpoint" 
  hidden: false 
 ---
-# LA OData Analytics Endpoint
+# OData Analytics Endpoint
 
 Live Agent exposes an OData v4 analytics endpoint to retrieve analytics records. OData, *the Best Way to REST* is a powerful API framework, see more at [OData.org](https://www.odata.org/). The OData Endpoints allows you to retrieve some of the most relevant data models from the Live Agent. It has all your enterprise analytics needs covered to make fine grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
 
