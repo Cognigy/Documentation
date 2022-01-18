@@ -57,7 +57,7 @@ For instructions on how to work with Webchat Plugins from within Cognigy, please
    </div>
 </blockquote>
 
-When you have set up a Webchat Endpoint in Cognigy, you can follow the [embedding instructions on GitHub](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding/) to see how you can implement the Webchat within your Website.
+When you have set up a Webchat Endpoint in Cognigy, you can follow the [embedding instructions on GitHub](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md) to see how you can implement the Webchat within your Website.
 
 It also features an expressive [technical documentation](https://github.com/Cognigy/WebchatWidget/tree/master/docs) with examples for integrators, which can help you build a seamless and powerful integration into your Website.
 
