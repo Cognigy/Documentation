@@ -42,7 +42,7 @@ The necessary hard drive space largely depends on your usage, the size and numbe
 
 Consider using a storage option provided by AWS, Azure, Google cloud etc., if you want to stay flexible and accommodate the growing storage requirements.
 
-### PostgreSQL Requirements
+### PostgreSQL
 
 The server running PostgreSQL should have at least 5-10 GB of storage available, though the exact requirements depend on your Live Agent Instance usage.
 
