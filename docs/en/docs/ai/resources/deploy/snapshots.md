@@ -83,6 +83,18 @@ If you have a Snapshot as an offline file, please upload the Snapshot file first
 ???+ danger "Restoring a Snapshot Overwrites all existing agent resources"
     Care should be exercised when restoring a snapshot to ensure all current agent resources are either backed up within another snapshot, or no longer required. A snapshot restore process will overwrite all current resources (listed at the top of this page) within the agent.
 
+???+ info "Restoring a snapshot from another agent may require manual changes to the endpoints"
+    [![Version badge](https://img.shields.io/badge/Added in-v4.18.0-blue.svg)]({{config.site_url}})
+    Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the below images
+    
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-after-snapshot-restore.png" width="100%" />
+</figure>
+
+  <figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoint-after-snapshot-restore.png" width="100%" />
+</figure>
+
 ### Delete a Snapshot
   * Select "Delete" by clicking the submenu (indicated by three vertical dots) for the individual snapshot that is to be removed.
   * Select "Confirm" on the warning message that appears, to confirm the deletion.
