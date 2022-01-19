@@ -85,7 +85,7 @@ If you have a Snapshot as an offline file, please upload the Snapshot file first
 
 ???+ info "Restoring a snapshot from another agent may require manual changes to the endpoints"
     [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
-    Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the below images
+    Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the images below.
     
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-after-snapshot-restore.png" width="100%" />
