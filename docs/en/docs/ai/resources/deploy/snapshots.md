@@ -84,7 +84,7 @@ If you have a Snapshot as an offline file, please upload the Snapshot file first
     Care should be exercised when restoring a snapshot to ensure all current agent resources are either backed up within another snapshot, or no longer required. A snapshot restore process will overwrite all current resources (listed at the top of this page) within the agent.
 
 ???+ info "Restoring a snapshot from another agent may require manual changes to the endpoints"
-    [![Version badge](https://img.shields.io/badge/Added in-v4.18.0-blue.svg)]({{config.site_url}})
+    [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
     Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the below images
     
 <figure>
