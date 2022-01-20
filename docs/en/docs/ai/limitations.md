@@ -6,7 +6,7 @@
 
 # Quotas and Limitations
 
-This page contains default limitations and quotas that apply to new Cognigy AI installations. Any deviations from the default values for our trial and App are also stated within the table below. 
+This page contains default quotas and limitations that apply to new Cognigy AI installations. Any deviations from the default values for our Trial and App environments are also stated within the table below.ow. 
 
 |Description|Default value|Trial|App|
 |--|--|--|--|
@@ -36,19 +36,19 @@ This page contains default limitations and quotas that apply to new Cognigy AI i
 |**Packages** |||
 |Maximum size of a Cognigy Package |256 Megabytes |||
 |**Locales** |||
-|Maximum number of locales per agent |10 |||
+|Maximum number of Locales per Agent |10 |||
 |**Extensions** |||
 |Extension actions |10 |||
 |Maximum execution time for Flow Nodes from Extensions |20 seconds |||
-|Maximum size of an individual Extension package | 128 Megabytes ||||Maximum size for the File-System based cache for executing extensions | 512 Megabytes |||
+|Maximum size of an individual Extension package | 128 Megabytes ||||Maximum size for the File-System based cache for executing Extensions | 512 Megabytes |||
 |Maximum number of HTTP requests an Options Resolver can send |5|||
 |Maximum HTTP response size in an Options Resolver |1048576 bytes |||
 |Maximum time an Options Resolver can run |5 seconds (max HTTP calls * 1 second) |||
 |**Execution and Operations** |||
-|Maximum number of times a Flow can execute the same Path for a single user message before “Infinite Loop protection” kicks in |4|||
+|Maximum number of times a Flow can execute the same Path for a single user message before “Infinite Loop protection” is triggered |4|||
 |Maximum number of undo/redo operations to be stored per user in the Flow Editor |5|||
 |**Transformers** |||
-|Maximum number of HTTP requests that can be send from a Cognigy Transformer  |1|2 ||
+|Maximum number of HTTP requests that can be sent from a Cognigy Transformer  |1|2 ||
 |Maximum amount of time a Cognigy Transformer can run before it will be stopped |5000 milliseconds |||
 |**SMTP Node** |||
 |Maximum number of times the system retries to send an outbound Email |3 |||
@@ -59,19 +59,19 @@ This page contains default limitations and quotas that apply to new Cognigy AI i
 |Description|Default value|Trial|App|
 |--|--|--|--|
 |**Logs** |||
-|Maximum time until a Log-Line on the products Log page will be removed |1440 minutes (1 days) |||
+|Maximum time until a Log-Line on the product's Log page will be removed |1440 minutes (1 days) |||
 |**Sessions** |||
-|Maximum time until Flow-execution relevant session information will be removed |43200 minutes (30 days) |||
+|Maximum time until relevant Flow-execution session information will be removed |43200 minutes (30 days) |||
 |**Data** |||
 |Maximum time until a Contact Profile which has not been read or modified will be removed |43200 minutes (30 days) |||
 |Maximum time until Conversation transcripts will be removed |43200 minutes (30 days) |||
 |**Intent Trainer Records** |||
-|Maximum time until a Intent Trainer records are stored in database|43200 minutes (30 days) |||
+|Maximum time Intent Trainer records are stored in the database|43200 minutes (30 days) |||
 |**Audit Events** |||
 |Maximum time until audit events will be removed |43200 minutes (30 days) |||
 
 ???+ info "Changing values for managed Cognigy AI environments"
-    In case you want to request a change for your managed Cognigy  AI environment please submit a Support request using this template: 
+    In case you want to request a change for your managed Cognigy  AI environment, please submit a Support request using this template: 
     ````
     Hello Cognigy Support, 
 
