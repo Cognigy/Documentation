@@ -5,7 +5,7 @@
 ---
 # Configuring a Cognigy.AI Endpoint for Handover
 
-First, a **Webchat** endpoint needs to be created in Cognigy.AI. Then in the **Endpoint Editor**, go to the **Handover Settings**. The **Handover platform** must be _"Chatwoot"_, and for the base URL, use the Live Agent installation URL plus `/api/v1`. Leave _Account ID_ and _API Key_ fields empty as they will be filled in the next chapter.
+First, a **Webchat Endpoint** needs to be created in Cognigy.AI. Then in the **Endpoint Editor**, go to the **Handover Settings**. The **Handover Platform** must be _"Chatwoot"_, and for the base URL, use the Live Agent installation URL plus `/api/v1`. Leave _Account ID_ and _API Key_ fields empty, as they will be entered in the next chapter.
 
 ???+ info "Cognigy.AI Endpoints"
     Head over to [**Endpoints**]({{config.site_url}}ai/endpoints/overview/) for any doubt regarding Cognigy.AI endpoints.
@@ -28,4 +28,4 @@ First, a **Webchat** endpoint needs to be created in Cognigy.AI. Then in the **E
 </tr>
 </table>
 
-After creating the endpoint, [Add an Inbox for Handling The Handover]({{config.site_url}}live-agent/getting-started/add-an-inbox-for-handling-the-handover/)
+After creating the Endpoint, continue to [Add an Inbox for Handling The Handover]({{config.site_url}}live-agent/getting-started/add-an-inbox-for-handling-the-handover/).
