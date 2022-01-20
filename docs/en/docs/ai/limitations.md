@@ -1,10 +1,10 @@
 ---
- title: "Quotas and Define Goals: Limitations " 
+ title: "Default quotas and limitations" 
  slug: "limitations" 
  hidden: false 
 ---
 
-# Quotas and Define Goals: Limitations 
+# Default Quotas and Limitations
 
 This page contains limitations and quotas that apply default Cognigy AI installations. Any deviations from the default values for our trial and App are also stated within the table below. 
 
