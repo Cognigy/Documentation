@@ -12,11 +12,7 @@ With the Endpoint and the Inbox configured, the last step is to add a new Flow w
   <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
 </figure>
 
-Here you need to set the **Chatwoot Inbox ID** field with the _Inbox ID_ previously noted. 
-
-Now it is time to test that everything is working. 
-
-Save the Node configuration, go back to the Endpoint Editor, click on **Open Webchat**, enter some text, and send to start the conversation. 
+Here you need to set the **Chatwoot Inbox ID** field with the _Inbox ID_ previously noted. Now it is time to test that everything is working. Save the Node configuration, go back to the Endpoint Editor, click on **Open Webchat**, enter some text, and send to start the conversation. 
 
 Next let's check the Live Agent conversations. 
 
