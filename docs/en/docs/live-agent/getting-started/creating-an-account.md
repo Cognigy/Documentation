@@ -15,8 +15,8 @@ The first time Live Agent is installed, the signup screen is displayed. After th
 <table>
 <tr><th>Field Name</th><th>Description</th></tr>
 <tr><td>Full Name</td><td>	Enter Your Full name eg: John Doe</td></tr>
-<tr><td>Work email</td><td>	Enter a valid work e-mail address eg: john.doe@companyname.com</td></tr>
-<tr><td>Account name</td><td>	Enter the name of your company eg: Doe Enterprises</td></tr>
+<tr><td>Work Email</td><td>	Enter a valid work e-mail address e.g.: john.doe@companyname.com</td></tr>
+<tr><td>Account Name</td><td>	Enter the name of your company e.g.: Doe Enterprises</td></tr>
 <tr><td>Password</td><td>	Password must contain at least one uppercase character (A-Z), at least one number character (0..9), at least one special character (!@#$%^&*()_+-=[]{};?~)</td></tr>
 <tr><td>Confirm Password</td><td>	Confirm password should match with the password given above</td></tr>
 </table>
