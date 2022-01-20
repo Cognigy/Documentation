@@ -262,6 +262,7 @@ nav:
     - ai/installation/single-signin-saml2.md
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
+  - ai/limitations.md
   - Developer Guides:
     - ai/developer-guides/api-reference.md
     - ai/developer-guides/using-api.md
