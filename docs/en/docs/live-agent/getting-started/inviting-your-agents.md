@@ -1,11 +1,11 @@
 ---
- title: "Inviting your Agents" 
+ title: "Inviting Your Agents" 
  slug: "inviting-your-agents" 
  hidden: false 
 ---
-# Inviting your Agents
+# Inviting Your Agents
 
-For attending incoming chats, it is good to have several agents for distributing and handling them. From the main screen, clicking **Settings**, the **Agents** section will be displayed. From here, new agents can be added by clicking on the green right top button **Add Agent**.
+To handle incoming chats well, it is best to have several agents to distribute and handle them. From the main screen, clicking **Settings**, the **Agents** section will be displayed. From here, new agents can be added by clicking on the green right top button **Add Agent**.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-agents-screen.png" width="100%" alt="Live Agent Agents Screen">
@@ -19,7 +19,7 @@ Once the form appears, fill in the data and click **Add Agent**.
     <figcaption>Live Agent Add Agent Screen</figcaption>
 </figure>
 
-Now a verification email has been sent to the agent mail.
+Now a verification email will be sent to the agent’s email inbox.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-2-agents-screen.png" width="100%" alt="Live Agent Verification Agents Screen">
