@@ -5,3 +5,4 @@
 ---
 # Release Notes
 
+<div class="divider"></div>
