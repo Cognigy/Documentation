@@ -18,7 +18,7 @@ Released: January 10th, 2022
 
 - Show all settings per inbox
 
-- Ability to access Cognigy.AI from 
+- Ability to access Cognigy.AI from Live Agent
 
 - OData endpoint for querying Live Agent data
 
