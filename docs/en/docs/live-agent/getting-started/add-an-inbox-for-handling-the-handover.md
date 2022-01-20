@@ -5,9 +5,9 @@
 ---
 # Add an Inbox for Handling the Handover
 
-From the Live Agent Dashboard screen, do click on **Inboxes** in the sidebar.
+From the Live Agent Dashboard screen, click on **Inboxes** in the sidebar.
 
->You can also add new inboxes from the welcome message or clicking on the plus button next to Inboxes in the sidebar
+>You can also add new Inboxes from the welcome message, or by clicking on the plus button next to Inboxes in the sidebar
 
 Live Agent will show you a screen to configure your API connection.
 <figure>
@@ -15,14 +15,14 @@ Live Agent will show you a screen to configure your API connection.
   <figcaption>Live Agent Add Inbox Screen</figcaption>
 </figure>
 
-Now for creating the inbox, a channel name and a webhook URL needs to be set. Go to the Cognigy endpoint editor for getting it.
+Now to create an Inbox, channel name and a webhook URL needs to be set. Go to the Cognigy Endpoint Editor to retrieve it.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-cognigy-endpoint-config-screen.png" width="100%" alt="Cognigy AI Endpoint Configuration Screen">
   <figcaption>Cognigy AI Endpoint Configuration Screen</figcaption>
 </figure>
 
-The webhook URL is the Cognigy.AI endpoint config URL domain plus `/handover/chatwoot`.
+The webhook URL is the Cognigy.AI Endpoint Config URL domain plus `/handover/chatwoot`.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-add-api-channel-screen.png" width="100%" alt="Live Agent API channel Screen">
@@ -47,14 +47,14 @@ The webhook URL is the Cognigy.AI endpoint config URL domain plus `/handover/cha
 </tr>
 </table>
 
-After that, agents need to be assigned to the new inbox. Start typing their names, pick them from the selector and click on **Add agents**.
+After adding the URL, Agents need to be assigned to the new Inbox. Start typing their names, select them from the selector, and click on **Add Agents**.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-add-agents-to-inbox-screen.png" width="100%" alt="Live Agent Add Agents To Inbox Screen">
   <figcaption>Live Agent Add Agents To Inbox Screen</figcaption>
 </figure>
 
-One more thing to do is note down the following data, the _Inbox ID_ and the _Account ID_. This can be found on the URL after creating the inbox.
+Now note down the following values: _Account ID_ and _Inbox ID_. These values can be found on the Live Agent URL after creating the Inbox.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-account-inbox-ids.png" width="100%" alt="Live Agent Account ID and Inbox ID">
@@ -81,12 +81,12 @@ One more thing to do is note down the following data, the _Inbox ID_ and the _Ac
 </tr>
 </table>
 
-Now your inbox is ready to be used. You can now fill the _Account ID_ field in the **Endpoint Editor** plus the _API Key_ that can be found in Live Agent **Profile Settings** as per the screenshot.
+Now your Inbox is ready to be used. You can now enter the values of the _Account ID_ field in the **Endpoint Editor**, plus the _API Key_ that can be found in Live Agent **Profile Settings**, as seen in the following screenshot.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-profile-settings-access-token.png" width="100%" alt="Live Agent Profile Settings API Key">
   <figcaption>Live Agent Profile Settings API Key</figcaption>
 </figure>
 
-Now a handover flow needs to be connected to the inbox, head over to 
+Now a Handover Flow needs to be connected to the Inbox, head over to 
 [Creating a Cognigy.AI Handover Flow]({{config.site_url}}live-agent/getting-started/creating-a-cognigy-handover-flow/).
