@@ -114,10 +114,10 @@ Simply **highlight** the word that should be mapped as a slot or lexicon and cli
 Intents can fall into one of three thresholds:
 
 * **Confirmed**
-    The Intent has a score higher than the confirmation threshold and is considered "confirmed"
+    The Intent has a score higher than the confidence threshold and is considered "confirmed"
 
 * **Reconfirmation Needed**
-    The Intent has a score higher than the reconfirmation threshold, but lower than the confirmation threshold and must be reconfirmed by the system
+    The Intent has a score higher than the reconfirmation threshold, but lower than the confidence threshold and must be reconfirmed by the system
 
 * **Not found**
     The Intent has a score lower than the reconfirmation threshold and isn't considered a valid result for this input
