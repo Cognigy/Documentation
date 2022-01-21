@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.17.1
+**Released** January 20th, 2022
+
+### Bugfixes
+- Fixed an issue regarding the Cognigy VoiceGateway endpoint when using the "async" mode together with output Transformers (pr: #6848, #7292, ticket: #20641)
+
 ## 4.17.0
 **Released** January 17th, 2022
 
