@@ -93,12 +93,12 @@
     </div>
   </a>
 
-  <a class="card-link-2" href="https://support.cognigy.com/hc/en-us/requests/new?">
+  <a class="card-link-2" href="https://www.cognigy.com/blog">
     <div class="card">
-      <img class="card-2-image" src="{{config.site_url}}assets/img/something-004.svg">
+      <img class="card-2-image" style="padding: 10px" src="{{config.site_url}}/assets/img/product-blog.svg">
       <div class="item-2-container">
-        <h3><b>Support</b></h3>
-        <p>Submit a request to the technical support team</p>
+        <h3><b>Product Blog</b></h3>
+        <p>Browse our latest articles and learn about Cognigy.AI</p>
       </div>
     </div>
   </a>
