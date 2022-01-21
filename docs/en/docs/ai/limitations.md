@@ -6,7 +6,19 @@
 
 # Quotas and Limitations
 
-This page contains default quotas and limitations that apply to new Cognigy AI installations. Any deviations from the default values for our Trial and App environments are also stated within the table below.ow. 
+This page contains default quotas and limitations that apply to new Cognigy AI installations. Any deviations from the default values for our Trial and App environments are also stated within the table below.
+
+???+ info "Changing values for managed Cognigy AI environments"
+    In case you want to request a change for your managed Cognigy  AI environment, please submit a Support request using this template: 
+    ````
+    Hello Cognigy Support, 
+
+    I would like to raise the quota/limit “<Description>” to <x> value.  
+    We need this because <short explanation of your use case>. 
+ 
+    Best regards, 
+    Your Name 
+    ````
 
 |Description|Default value|Trial|App|
 |--|--|--|--|
@@ -69,17 +81,5 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
 |Maximum time Intent Trainer records are stored in the database|43200 minutes (30 days) |||
 |**Audit Events** |||
 |Maximum time until audit events will be removed |43200 minutes (30 days) |||
-
-???+ info "Changing values for managed Cognigy AI environments"
-    In case you want to request a change for your managed Cognigy  AI environment, please submit a Support request using this template: 
-    ````
-    Hello Cognigy Support, 
-
-    I would like to raise the quota/limit “<Description>” to <x> value.  
-    We need this because <short explanation of your use case>. 
- 
-    Best regards, 
-    Your Name 
-    ````
 
  
