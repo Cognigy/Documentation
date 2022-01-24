@@ -23,7 +23,7 @@ Click on **Teams** and then on the Create New Team button on the right-hand side
   <figcaption>Teams</figcaption>
 </figure>
 
-The screen bellow will open, where you can add any Teams you need. Create Teams, and assign tickets/Conversations accordingly, in such a way that assigned Agents only need to work within their respective Team.
+The screen below will open, where you can add any Teams you need. Create Teams, and assign tickets/Conversations accordingly, in such a way that assigned Agents only need to work within their respective Team.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-teams-create-new-team.png" width="100%"alt="Live Agent Add Teams Details" />
