@@ -21,4 +21,4 @@ Live Agent has the following set of services running:
     - PostgreSQL Database as persistent storage
     - Redis Database for caching and performance
     - Email Service (SMTP servers)
-    - Storage solution: NFS server with (AWS, Azure) or optional integration with a External Object Storage ( S3, Azure Storage, GCS, etc)
+    - Storage Solution: NFS server with (AWS, Azure) or optional integration with a External Object Storage ( S3, Azure Storage, GCS, etc)
