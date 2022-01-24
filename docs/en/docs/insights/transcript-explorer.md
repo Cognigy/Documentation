@@ -29,6 +29,8 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
 
+- You can select one or more flows to show only messages that were generated during the selected flow passing.
+
 ???+ info "Note"
 
     Using the **"Negate "** slider bar**" all but the selected" filter option(s) will be analyzed.
