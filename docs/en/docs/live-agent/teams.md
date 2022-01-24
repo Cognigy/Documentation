@@ -44,7 +44,7 @@ The screen below will open, where you can add any Teams you need. Create Teams, 
   <figcaption>Add Agents to Teams</figcaption>
 </figure>
 
-Click on **Add Agents** after checking each checkbox for all Agents needed for this team. Only these Agents will be able to see these Teams on their screens.
+Click on **Add Agents** after checking each checkbox for all Agents needed for this Team. Only these Agents will be able to see these Teams on their screens.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-teams-team-ready.png" width="100%" alt="Teams Create Finish Screen" />
