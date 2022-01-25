@@ -290,7 +290,7 @@ nav:
   - live-agent/overview.md
   - Release Notes:
     - live-agent/release-notes/releases.md
-  - Getting started:
+  - Getting Started:
     - Creating an Account:
       - live-agent/getting-started/creating-an-account.md
       - live-agent/getting-started/inviting-your-agents.md
@@ -305,7 +305,7 @@ nav:
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
       - Helm Values:
-        - live-agent/installation/helm-values/index.md
+        - live-agent/installation/helm-values/helm-values.md
         - live-agent/installation/helm-values/database.md
         - live-agent/installation/helm-values/redis.md
         - live-agent/installation/helm-values/storage.md
