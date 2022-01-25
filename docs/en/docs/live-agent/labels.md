@@ -5,9 +5,9 @@
 ---
 # Labels
 
-Labels help you to categorize conversations and prioritize them. You can assign a label to a conversation from the side panel.
+Labels help you to categorize and prioritize Conversations. You can assign a Label to a Conversation from the side panel.
 
-Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colours to a label. It makes it easier to identify the label. You will be able to display the label on the sidebar to filter the conversations quickly.
+Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colors to a Label. This makes it easier to identify the Label. You will be able to display the Label on the sidebar to filter Conversations quickly.
 
 Click on the sidebar **Settings** on the Live Agent Dashboard.
 
@@ -17,7 +17,7 @@ Click on the sidebar **Settings** on the Live Agent Dashboard.
 </figure>
 
 
-Click on the sidebar **Labels** and then in Add Label on the Right hand side.
+Click on the sidebar **Labels** and then click Add Label on the right-hand side.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-labels-home.png" width="100%" alt="Live Agent Labels Home Screen" />
@@ -25,7 +25,7 @@ Click on the sidebar **Labels** and then in Add Label on the Right hand side.
 </figure>
 
 
-The screen opens up where you can design your labels. Make sure you give meaningful names to the labels and different colours so that you can identify in one look to which category the ticket/issue belongs.
+A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels, and different colors so that you can easilyidentify in one look to which category the ticket/issue belongs.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-labels-add-label-dialog.png" width="100%" alt="Live Agent Add Label detail screen" />
@@ -35,12 +35,12 @@ The screen opens up where you can design your labels. Make sure you give meaning
 
 | Field Name             | Value                                                                    | Remarks                                                                                  |
 |------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Label Name             | Assign a Name for the label to identify the category                     | eg: Premium_Customer          Only Alphabets, Numbers, Hyphen and Underscore are allowed |
-| Description            | Give a short description of what the label represents                    | eg: This Customer issue is to be resolved on priority                                    |
-| Colour                 | Select a colour for the label for easy  identification                   | After Selection click on the small square again                                          |
-| Show Label on  Sidebar | Select this option if you want the label to  be displayed on the sidebar | This will help in easy identification of the conversations                               |
+| Label Name             | Assign a name for the Label to identify its category                     | eg: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
+| Description            | Give a short description of what the Label represents                    | eg: This customer issue is to be resolved with priority                                    |
+| Color                 | Select a color for the Label for easy  identification                     | After selection, click on the small square again                                          |
+| Show Label on Sidebar  | Select this option if you want the Label to  be displayed on the sidebar | This will help in easy identification of the Conversations                               |
 
-Click on Create. Label added successfully message will be displayed. New Label has been created. You can create as many Labels as you need. Labels can be used across teams.
+Click on Create. A "Label added successfully" message will be displayed. The new Label has been created. You can create as many Labels as you need. Labels can be used across multiple Teams.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-labels-edit-delete-label.png" width="100%" alt="Live Agent Label setting screen" />
@@ -48,4 +48,4 @@ Click on Create. Label added successfully message will be displayed. New Label h
 </figure>
 
 
-You can edit or delete the Label as per your need.
+You can edit or delete Labels as necessary.
