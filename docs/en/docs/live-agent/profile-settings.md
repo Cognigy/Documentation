@@ -5,32 +5,32 @@
 ---
 # Profile Settings
 
-Change basic settings for the user profile.
+Basic settings for the user profile can be changed or updated.
 
-Click on the profile thumbnail next to the bottom right and click on **Profile Settings**.
+Click on the profile thumbnail in the bottom left-hand side of the screen, next click on **Profile Settings**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-menu.png" width="100%" alt="Live Agent Profile  Menu" />
   <figcaption>Profile Menu</figcaption>
 </figure>
 
-On this section, the user profile data can be changed.
+In this section, the user profile data can be changed.
 
-Name, e-mail address and profile picture.
+Here the profile picture, full name, display name, and e-mail address can be updated.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-profile.png" width="100%" alt="Live Agent Profile Profile " />
   <figcaption>Profile</figcaption>
 </figure>
 
-Password.
+You can also update the password.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-password.png" width="100%" alt="Live Agent Profile Password " />
   <figcaption>Password</figcaption>
 </figure>
 
-Notifications.
+You can customize the behavior of notifications.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-notifications.png" width="100%" alt="Live Agent Profile Notifications " />
@@ -39,7 +39,7 @@ Notifications.
 
 >Note: The push notifications setting must be enabled in the system. Otherwise, they are not available.
 
-Here you can also find the user access token. It is used for the Live Agent API.
+Here you can also find the user access token. This is used for the Live Agent API.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />
