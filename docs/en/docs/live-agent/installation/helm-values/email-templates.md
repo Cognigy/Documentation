@@ -11,7 +11,7 @@ Live Agent allows customization of email notifications.
 
 To customize the email notifications, follow the instructions below. To update the content, you have to add a new template in the Database, here is how you can do it.
 
-### 1. Login into the rails console.
+### 1. Login Into The Rails Console.
 
 Attach a shell to the main Live Agent pod and run the following command:
 
@@ -19,7 +19,7 @@ Attach a shell to the main Live Agent pod and run the following command:
 RAILS_ENV=production bundle exec rails console
 ```
 
-### 2. Create a new template for the emails. Execute the following commands.
+### 2. Create A New Template For The Emails. Execute The Following Commands.
 
 ```rb
 email_template = EmailTemplate.new
@@ -30,7 +30,7 @@ email_template.save!
 
 #### Variables
 
-Template would receive 3 variables:
+The template can receive 3 variables:
 
 1. `user` - Use `{{ user.name }}` to get the username.
 2. `conversation` - Use `{{ conversation.display_id }}` to get the conversation ID
@@ -38,7 +38,7 @@ Template would receive 3 variables:
 
 ### Default content
 
-The default content of the above template is as shown below.
+The default content of the above template is shown below.
 
 #### 1. Conversation Assignment
 
@@ -59,4 +59,4 @@ Click <a href="{{ action_url }}">here</a> to get cracking.
 </p>
 ```
 
-[Liquid templating engine](https://shopify.github.io/liquid/) is used internally, which means that all valid operators can be used
+[Liquid templating engine](https://shopify.github.io/liquid/) is used internally, which means that all valid operators can also be used.
