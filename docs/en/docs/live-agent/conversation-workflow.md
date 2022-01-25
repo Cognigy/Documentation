@@ -5,9 +5,9 @@
 ---
 # Conversation Workflow
 
-The customer initiates a conversation from the website front end - through the widget.
+The customer initiates a Conversation from the website front end - through the Webchat widget.
 
-For example: Customer types in 'hi'
+For example: A customer types 'Hi'
 
 
 <figure>
@@ -16,7 +16,7 @@ For example: Customer types in 'hi'
 </figure>
 
 
-Automated response set in the Cognigy.AI flow will immediately be displayed on the screen as a reply.
+An automated response set in the Cognigy.AI Flow will immediately be displayed on the screen as a reply.
 
 Now let us look at how this message is captured in the Agent Dashboard.
 
@@ -32,19 +32,18 @@ Go to the home screen of Live Agent Agent Dashboard
 </figure>
 
 
-Click on Conversations. Then click on All. The conversation which the customer has initiated can be seen here.
+Click on a the Conversation bubble icon in the sidebar. Then click on All Conversations. Conversations which customers have initiated can be seen here.
+
+Now click on a specific Conversation. The Conversation will open, with further details and actions available in the right-hand side panel.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
 </figure>
 
+#### Show All Inbox Setting
 
-The details of the conversation open up in the right-hand side panel.
-
-#### Show all inbox setting
-
-By default, users with the agent role cannot see the "All" tab for all conversations. However, there is a setting enabling it per inbox. If it is enabled, the user can see all discussions, including those from other agents. Otherwise, it will be restricted.
+By default, users with the Agent role cannot see the "All" tab for all Conversations. However, there is a setting enabling it per Inbox. When enabled, the user can see all Conversations, including those from other Agents. Otherwise, access will be restricted.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Conversations Details" />
@@ -54,8 +53,9 @@ By default, users with the agent role cannot see the "All" tab for all conversat
 ### Assign Agent
 <div class="divider"></div>
 
-If the inbox has been created with 'auto assign' not clicked, the conversation will not be automatically assigned to any agent.
-Click on the drop-box below Assigned Agent and select the Agent name. You can change the agents assigned here at any time.
+If the Inbox has been created without 'auto assign' selected, Conversations will not be automatically assigned to Agents.
+
+Click on the drop-box within the Assigned Agent menu and select the Agent name. You can change the Agents assigned here at any time.
 
 
 <figure>
@@ -67,7 +67,7 @@ Click on the drop-box below Assigned Agent and select the Agent name. You can ch
 ### Assign Team
 <div class="divider"></div>
 
-Click on the drop-box below Assigned Team and select the team to which this conversation belongs.
+Click on the drop-box within the Assigned Team menu and select the Team to which this Conversation belongs.
 
 
 <figure>
@@ -79,7 +79,7 @@ Click on the drop-box below Assigned Team and select the team to which this conv
 ### Assign Labels
 <div class="divider"></div>
 
-Click on Add Labels below Conversation Labels and select the category to which this conversation belongs.
+Click on Add Labels within the Conversation Labels menu and select the category to which this Conversation belongs.
 
 
 <figure>
@@ -89,7 +89,7 @@ Click on Add Labels below Conversation Labels and select the category to which t
 
 
 
-You can see in the below screenshot that all actions done by you are seen in the chat window in Agent Dashboard.
+You can see in the screenshot below, that all actions perfomed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
 
 
 <figure>
@@ -98,10 +98,12 @@ You can see in the below screenshot that all actions done by you are seen in the
 </figure>
 
 
-### Reply for the Conversation
+### Reply To A Conversation
 <div class="divider"></div>
 
-You can reply to the customer's conversation by typing in the Reply area. Shift+enter will enable you to start typing in a new line.
+You can reply to a customer's Conversation by typing in the Reply section. 
+
+Pressing Shift+Enter will allow you to enter an additional new line into your response, while pressing Enter will send the message.
 
 
 <figure>
@@ -110,22 +112,22 @@ You can reply to the customer's conversation by typing in the Reply area. Shift+
 </figure>
 
 
-Click on the Send button to send your message to the customer.
+Click on the Send button or press Enter to send your message to the customer.
 
 ###  Conversation Actions
 
-Find below a list describing the conversation actions the agent can take by clicking the following icons.
+Below is a list describing Conversation actions an Agent can take by clicking the following icons.
 
 | Icon                 | Description                                                                                        |
 |-------------------------|------------------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />         | This button allows the agent to select and include Emoji in the message                                                             |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the agent to select and include attachments in the message                                                               |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the agent to request a file from the customer                                                             |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />         | This button allows the Agent to select and include an Emoji in the message                                                             |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the Agent to select and include attachments in the message                                                               |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the Agent to request a file from the customer                                                             |
 
 ###  How to Send Canned Responses
 <div class="divider"></div>
 
-Suppose you wish to include already prepared canned responses as reply, type '/' and give the short name of the message. An example is given below. Once you type '/', available canned responses will be listed and you can select from these.
+Should you wish to include an already prepared or "canned" response as a reply, type '/' and enter the short name of the message. An example is given below. Once you type '/', available canned responses will be listed and which you can select from.
 
 
 <figure>
@@ -137,7 +139,7 @@ Suppose you wish to include already prepared canned responses as reply, type '/'
 ### Private Chat with Agents
 <div class="divider"></div>
 
-There is an option to discuss the customer's conversation with another fellow agent if you need some more clarification. This option is available just beside the Reply tab, named Private Note.
+There is an option to discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the Reply tab, labeled Private Note.
 
 
 <figure>
@@ -146,7 +148,7 @@ There is an option to discuss the customer's conversation with another fellow ag
 </figure>
 
 
-Type '@' in the Private Note Window and all agents who have been added to this team will be listed. Select the agent and type in the message that you want to consult with this agent.
+Type '@' in the Private Note window, and all Agents who have been added to this Team will be listed. Select an Agent, and type in a message to consult with the selected Agent.
 
 
 <figure>
@@ -155,7 +157,7 @@ Type '@' in the Private Note Window and all agents who have been added to this t
 </figure>
 
 
-Click on Add Note to send the message. You can see a locked sign on the message that you sent. This message will not be visible to the customer.
+Click on Add Note to send the message. You can see a locked sign on the message that has been sent. This message will not be visible to the customer.
 
 
 <figure>
@@ -164,15 +166,15 @@ Click on Add Note to send the message. You can see a locked sign on the message 
 </figure>
 
 
-The second agent to whom the private chat is addressed, will receive a notification in his account.
+The second Agent addressed in the private note will receive a notification in their account.
 
-Replies sent by second agent will be visible in your private chat window.
+Replies sent by second Agent will be visible in the Private Note window.
 
-#### Delete Private Message
+#### Delete Private Note
 <div class="divider"></div>
-There is an option to delete the private message which you have already sent. Click on the 3 dots(...) beside the sent message.
-Option is available to copy or delete the private message.
-Click on Delete. The private message will be deleted.
+There is an option to delete the private note which you have already sent. Click on the 3 dots(...) beside the sent message.
+An option is available to copy, or to delete the private note.
+Click on Delete. The private note will be deleted.
 
 
 <figure>
@@ -185,7 +187,7 @@ Click on Delete. The private message will be deleted.
 <div class="divider"></div>
 
 
-Click on the 3 dots on the top right hand side of the screen. There is an option to send transcript. Click on it.
+Click on the 3 dots on the top right-hand side of the screen. There is an button labeled Send Transcript. Click on this button.
 
 
 <figure>
@@ -194,7 +196,7 @@ Click on the 3 dots on the top right hand side of the screen. There is an option
 </figure>
 
 
-A screen opens up, an email can be send to agents in the team. The chat transcript can also be sent to the customer or another selected e-mail.
+A screen opens up which allows an email can be sent to Agents in the Team. The chat transcript can also be sent to the customer or another selected e-mail address.
 
 
 <figure>
@@ -203,17 +205,17 @@ A screen opens up, an email can be send to agents in the team. The chat transcri
 </figure>
 
 
-Click on Submit. A message will be displayed "The chat transcript was sent successfully". The end-user will receive the chat transcript in its email inbox.
+Select your desired option and click on Submit. A message will be displayed "The chat transcript was sent successfully". The chosen recipient will receive the chat transcript in their email inbox.
 
 ### Transferring Agents
 <div class="divider"></div>
 
-You can transfer the ticket/issue to another agent by selecting a different agent from Assign Agent option. The whole conversation will be visible to the newly selected agent.
+You can transfer a issue/Conversation to another Agent by selecting a different Agent from Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
 
 ### Setting Reminders and Status
 <div class="divider"></div>
 
-The status can be changed to 'Resolved' once the solution is conveyed to the customer.
+The status can be changed to 'Resolved' once a resolution is provided to the customer.
 
 
 <figure>
@@ -222,20 +224,20 @@ The status can be changed to 'Resolved' once the solution is conveyed to the cus
 </figure>
 
 
-The options are given below
+The Conversation statuses available are listed below.
 
 | Options                 | Actions                                                                                        |
 |-------------------------|------------------------------------------------------------------------------------------------|
 | Mark as Pending         | Change the issue to Pending status                                                             |
-| Resolve                 | Change the issue to Close status                                                               |
-| Abort and resolve       | Change the issue to Close status and add the queryable abort attribute                         |
+| Resolve                 | Change the issue to Resolved status                                                               |
+| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                         |
 | Reopen                  | Change the issue to Open status                                                                |
 | Open                    | Change the pending issue to Open status                                                        |
-| Snooze Until Next Reply | The issue will be set aside for now and status will change to open on next reply from customer |
-| Snooze Until Tomorrow   | The issue will be set aside for now and status will change to open on next day                 |
-| Snooze Until Next Week  | The issue will be set aside for now and status will change to open on next week                |
+| Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer |
+| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                 |
+| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                |
 
-The Conversations can be selected and viewed as per their status on the Conversation section as below.
+Conversations can be selected and filtered by their statuses within the Conversation panel, as seen below.
 
 
 <figure>
@@ -246,6 +248,6 @@ The Conversations can be selected and viewed as per their status on the Conversa
 ### Previous Conversations
 <div class="divider"></div>
 
-Once the conversation has been marked as resolved - next time the same customer starts a new conversation, the Previous conversation associated with the customer will be shown on the screen. This will help the agent to understand the history of the customer's issue.
+Once a Conversation has been marked as resolved - the next time the same customer starts a new Conversation, the previous Conversation associated with this customer will be shown in the Previous Conversations menu. This will help the Agent to understand the history of the customer's issue.
 
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Previous Conversations" />
