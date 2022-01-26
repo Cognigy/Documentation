@@ -15,6 +15,8 @@ A Snapshot is an exported Agent and includes the following resources:
   * **Settings**
   * **Localization**
   * **Tokens**
+  * **Extensions**
+  * **Functions**
 
   <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/09182b7-upload_snapshot_button_detail.PNG" width="100%" />
@@ -29,6 +31,8 @@ A Snapshot is an exported Agent and includes the following resources:
     * **Analytics data**
     * **Contact Profiles**
     * **Other Snapshots**
+    * **Logs**
+    * **Members**
 
 ### Managing Snapshots
 
