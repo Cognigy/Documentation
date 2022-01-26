@@ -39,4 +39,4 @@ You can watch the status by running
 
 For learning about customizing your installation, head over to Helm Docs [Customizing the chart before installing](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing).
 
-Once you have a good understanding of how customizing works, you can look at the section [Helm Values]({{config.site_url}}live-agent/installation/helm-values/), which contains a brief explanation about each value and its purpose.
+Once you have a good understanding of how customizing works, you can look at the section [Helm Values]({{config.site_url}}live-agent/installation/helm-values/helm-values/), which contains a brief explanation about each value and its purpose.
