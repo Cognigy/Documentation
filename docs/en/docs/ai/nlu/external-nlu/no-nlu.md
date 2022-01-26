@@ -11,7 +11,7 @@
 
 ## Description
 <div class="divider"></div>
-The ``No NLU Connector`` is not an NLU Connector that can be created, but one that can always be selected in an Endpoint. Setting the No NLU Connector in an Endpoint completely disables the NLU pipeline of Cognigy.AI for that Endpoint, meaning that no Intents or Slots are found.
+The ``No NLU Connector`` is not an NLU Connector that can be created, but one that can always be selected in an Endpoint. Setting the No NLU Connector in an Endpoint completely disables the NLU pipeline of Cognigy.AI for that Endpoint, meaning that no Intents or Slots are found. 1
 
 ## Flow based NLU execution
 <div class="divider"></div>
