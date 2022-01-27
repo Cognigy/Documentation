@@ -17,7 +17,7 @@ Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code
 The execution of the Code Node will be synchronous, the Flow will continue after the Code Node has finished executing.
 
 ???+ warning "Maximum Execution Time"
-    Code Nodes are by default to run for a maximum of 1000ms before throwing an error. This value is currently not configurable. To execute code that takes longer, we recommend using custom Extensions.
+    Code Nodes are set by default to run for a maximum of 1000 ms before throwing an error. This value is currently not configurable. To execute code that takes longer, we recommend using custom Extensions.
 
 Just as within other Nodes, `input`, `context` and `profile` can be accessed (and modified) within Code Nodes. If the script crashes or takes longer than one second to execute, it will be stopped and throw an error. In case of an uncaught error, the Flow Execution will be stopped.
 
