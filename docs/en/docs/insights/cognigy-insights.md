@@ -131,9 +131,10 @@ You can always go back to Cognigy.AI and your virtual Agent. Open the user pop-u
 
 Using the sidebar menu of Insights you can select all the available data analytical applications to analyze the Agents' performance to improve the Agent for better understanding and improved user experience.
 The currently selected application is highlighted in a primary color and will be displayed next to the agent at the top as well.
+You can always go back to Cognigy.AI and your virtual Agent also by clicking the Cognigy.AI entry in the sidebar. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/cc1edb3-Insights_sidebar_menu_.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/insights_sidebar_menu.png" width="100%" />
   <figcaption>Insights sidebar main menu</figcaption>
 </figure>
 
