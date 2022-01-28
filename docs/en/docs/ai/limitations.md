@@ -38,13 +38,13 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
 |Maximum number of outbound HTTP requests in a single Cognigy Function instance |5||| 
 |Maximum HTTP response size in Cognigy Functions |1 MB|||
 |Maximum time a Cognigy Function can run |15 m |||
-|Maximum time for how long data about Cognigy Function instances is stored |30 D |||
+|Maximum time for how long data about Cognigy Function instances is stored |30 Days |||
 |Maximum number of active/running Cognigy Functions per Organization |10 |||
 |Maximum size of parameters object with which the function instance can be started |130 kB |||
 |**Snapshots** |||
 |Maximum size of a packaged Snapshot |256 MB |||
 |Maximum number of Snapshots per Agent |10|||
-|Lifetime of a downloadable Snapshot until you have to re-create the download| 1 D |||
+|Lifetime of a downloadable Snapshot until you have to re-create the download| 1 Day |||
 |**Packages** |||
 |Maximum size of a Cognigy Package |256 MB |||
 |**Locales** |||
@@ -73,15 +73,15 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
 |Description|Default value|Trial|App|
 |--|--|--|--|
 |**Logs** |||
-|Maximum time until a Log-Line on the product's Log page will be removed |1 D |||
+|Maximum time until a Log-Line on the product's Log page will be removed |1 Day |||
 |**Sessions** |||
-|Maximum time until relevant Flow-execution session information will be removed |30 D |||
+|Maximum time until relevant Flow-execution session information will be removed |30 Days |||
 |**Data** |||
-|Maximum time until a Contact Profile which has not been read or modified will be removed |30 D |||
-|Maximum time until Conversation transcripts will be removed |30 D |||
+|Maximum time until a Contact Profile which has not been read or modified will be removed |30 Days |||
+|Maximum time until Conversation transcripts will be removed |30 Days |||
 |**Intent Trainer Records** |||
-|Maximum time Intent Trainer records are stored in the database|30 D |||
+|Maximum time Intent Trainer records are stored in the database|30 Days |||
 |**Audit Events** |||
-|Maximum time until audit events will be removed |30 D |||
+|Maximum time until audit events will be removed |30 Days |||
 
  
