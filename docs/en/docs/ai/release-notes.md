@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.17.2
+**Released** January 31st, 2022
+
+### Bugfixes
+- Fixed an bug where the history in Cognigy Live Agent would be incomplete in certain situations
+
 ## 4.17.1
 **Released** January 20th, 2022
 
