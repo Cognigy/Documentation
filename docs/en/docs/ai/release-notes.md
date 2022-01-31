@@ -5,6 +5,43 @@
 ---
 # Release notes
 
+## 4.18.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+- Improved by adding more sophisticated highlighting of search results within the Edit Node sidebar
+- Improved by allowing to close the Journey wizard by pressing the Escape key
+- Improved by adding more meaningful descriptions to fields of the Send SMTP Email Node
+- Upgrade internal WebchatWidget to v2.39.0
+
+### Bugfixes
+- Fixed a bug related to conversation statements not showing up in the right order in the Transcript Viewer
+- Fixed a bug where conversations with a contactId containing a slash character could not be opened
+- Fixed a bug where the Insights toolbar is improperly displayed when the filter sidebar is opened
+- Fixed a bug causing Insights to not display the data of the most recent conversations in some cases.
+- Fixed a bug where a Go To Node with injected text is used and a matched Intent is incorrectly not available in the Input object
+- Fixed a bug where copying transcript messages from the Transcript Explorer does not work sufficiently
+- Fixed a bug related to the default label of a Node not displaying correctly in the Edit Node sidebar
+- Fixed a bug related to Step filter of Transcript Explorer not resetting properly
+- Fixed a bug where Lexicons with more than 500 Keyphrases having synonyms could not be uploaded
+- Fixed a bug related to an incorrectly logged error message when the Agent Settings page is refreshed
+- Fixed a bug where an error is incorrectly thrown if there is a DATE slot match but no start date in the slot match
+- Fixed accessibility issues related to too small sizes of some icons and texts
+- Fixed accessibility issues in Agent dashboard
+- Fixed accessibility issues related to keyboard focus visibility
+- Fixed accessibility issues related to the language attribute value not changing when the language of the application is switched by the user
+- Fixed accessibility issues related to color contrasts in AI as well as in Insights
+- Fixed accessibility issues related to the Node comment dialog
+- Fixed a bug where, after Wait for Input Input Node with reconfirmation, it is still waited for input even if is already answered Yes or No
+- Fixed a bug related to CognigyScript conditions not being correctly evaluated when Output Type List is used
+- Fixed a bug where the screen reader text in the Flow Chart Editor is not properly composed
+- Fixed a bug where Task Manager related errors are mistakenly generated
+- Fixed a bug where errors are not properly handled when non-existing processes are killed
+- Fixed a bug where an invalid json is generated when a period for which no data exists is specified via the OData interface using $filter
+- Fixed a bug regarding our Think Node when using GoTo to jump into a sub-Flow
+- Fixed a bug where the entrypoint was wrong when using our Think Node together with the Execute-Flow Node and a Question Node
+- Fixed a bug where Execute-Cognigy-NLU Node would use the wrong Flow
+
 ## 4.17.2
 **Released** January 31st, 2022
 
