@@ -22,6 +22,11 @@ There are situations where your Bots might not be able to understand your users 
 
 In order to sign in into Cognigy Live Agent, you have to visit the login page and go through the authentication process using Cognigy.AI. Please note that you will need to have access to Cognigy.AI and that you need the "livechat"-role set globally. The login screen does not directly ask for your credentials, but will forward you to Cognigy.AI for authentication purpose.
 
+##Login for users in multiple organisation
+
+<div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.18.0-blue.svg)]({{config.site_url}})
 
 Cognigy.AI allows users to be part of multiple organisation. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to login to Cognigy Live Agent should be like this, specifying which organisation the user wants to login to:
 
@@ -46,7 +51,7 @@ Once you click the "Sign In" button, the known Cognigy.AI login screen will appe
     If a user is part of multiple organisations, and if no organisationId is passed in the login URL, then the user will be denied a login. 
     
     For a user assigned to single organisation, including the organisationId in the login URL is completely optional and has no impact.
-    
+
 ## Selecting a chat
 
 <div class="divider"></div>
