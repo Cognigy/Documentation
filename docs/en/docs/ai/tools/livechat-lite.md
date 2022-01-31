@@ -42,6 +42,11 @@ Once you click the "Sign In" button, the known Cognigy.AI login screen will appe
 ???+ info "Permissions"
     Agents need to exist in Cognigy.AI - otherwise, they will not be able to login into Cognigy Live Agent. They will also need to have access to the projects in Cognigy.AI for which they should handle conversations with your end-users. If they don't have access to certain projects in Cognigy.AI, they will not be able to see conversations from users who interact with these projects!
 
+???+ warning
+    If a user is part of multiple organisations, and if no organisationId is passed in the login URL, then the user will be denied a login. 
+    
+    For a user assigned to single organisation, including the organisationId in the login URL is completely optional and has no impact.
+    
 ## Selecting a chat
 
 <div class="divider"></div>
