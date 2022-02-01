@@ -26,7 +26,7 @@ In order to sign in into Cognigy Live Agent, you have to visit the login page an
 
 <div class="divider"></div>
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.18.0-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
 
 Cognigy.AI allows users to be part of multiple organisation. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to login to Cognigy Live Agent should be like this, specifying which organisation the user wants to login to:
 
