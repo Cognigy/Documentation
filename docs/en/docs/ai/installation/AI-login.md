@@ -23,7 +23,7 @@ The frontend-url could for instance be trial.cognigy.ai
 [![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
 
 
-Cognigy allows users to be part of multiple organisation. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to login to Cognigy.AI should be like this, specifying which organisation the user wants to login to:
+Cognigy.AI allows users to be part of multiple organisations. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to login to Cognigy.AI should be like this, specifying which organisation the user wants to login to:
 
 ```
 https://<frontend-url>/login?organisationId=<organisation-id>
