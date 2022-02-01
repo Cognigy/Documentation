@@ -18,8 +18,12 @@ Find the **Access Control** panel by:
 
 The **Users overview** lists all members of a particular **Organization**. Individual **Users** can subsequently be assigned to **specific Agents**, using the [**Members**]({{config.site_url}}ai/resources/manage/members/) interface.
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
+
+With this release, the user list is improved with user "Last Active" information. The record with "-" indicates that either the user did not log in after the release of v4.19.0, or that the user has not yet logged in at all.
+
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.png" width="100%" />
 </figure>
 
 ???+ info "Tip: Global Users and Local Users (Members)"
