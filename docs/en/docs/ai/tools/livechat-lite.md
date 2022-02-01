@@ -22,7 +22,21 @@ There are situations where your Bots might not be able to understand your users 
 
 In order to sign in into Cognigy Live Agent, you have to visit the login page and go through the authentication process using Cognigy.AI. Please note that you will need to have access to Cognigy.AI and that you need the "livechat"-role set globally. The login screen does not directly ask for your credentials, but will forward you to Cognigy.AI for authentication purpose.
 
+##Login for users in multiple organisation
 
+<div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
+
+Cognigy.AI allows users to be part of multiple organisations. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to login to Cognigy Live Agent should be like this, specifying which organisation the user wants to login to:
+
+```
+https://<live-agent-url>/login?organisationId=<organisation-id>
+```
+
+The 'organisation-id' is a unique identifier of 24 characters which identifies an organisation in the system.
+
+<br>
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/ef18d96-live-agent-staging-v4.cognigy.ai_loginCognigy_smallest.png" width="100%" />
   <figcaption>Cognigy Live Agent login screen.</figcaption>
@@ -32,6 +46,11 @@ Once you click the "Sign In" button, the known Cognigy.AI login screen will appe
 
 ???+ info "Permissions"
     Agents need to exist in Cognigy.AI - otherwise, they will not be able to login into Cognigy Live Agent. They will also need to have access to the projects in Cognigy.AI for which they should handle conversations with your end-users. If they don't have access to certain projects in Cognigy.AI, they will not be able to see conversations from users who interact with these projects!
+
+???+ warning
+    If a user is part of multiple organisations, and if no organisationId is passed in the login URL, then the user will be denied a login. 
+    
+    For a user assigned to single organisation, including the organisationId in the login URL is completely optional and has no impact.
 
 ## Selecting a chat
 
