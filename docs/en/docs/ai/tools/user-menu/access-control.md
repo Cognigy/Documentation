@@ -20,7 +20,7 @@ The **Users overview** lists all members of a particular **Organization**. Indiv
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
 
-With this release, the user list is improved with user "Last Active" information. The record with "-" indicates, either the user is not logged in after this release or the user is just created and not yet logged in.
+With this release, the user list is improved with user "Last Active" information. The record with "-" indicates that either the user did not log in after the release of v4.19.0, or that the user has not yet logged in at all.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.png" width="100%" />
