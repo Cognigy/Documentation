@@ -5,14 +5,14 @@
 ---
 # Creating a Cognigy.AI Handover Flow
 
-With the Endpoint and the Inbox configured, the last step is to add a new Flow with a Handover Node, as seen in the following screenshot.
+With the Endpoint and the Inbox configured, the last step is to add a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-performing-handover.png" width="100%" alt="Cognigy.AI Handover Flow Screen">
   <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
 </figure>
 
-Here you need to set the **Chatwoot Inbox ID** field with the _Inbox ID_ previously noted. Now it is time to test that everything is working. Save the Node configuration, go back to the Endpoint Editor, click on **Open Webchat**, enter some text, and send to start the conversation. 
+Here you need to set the **Live Agent Inbox ID** field under **Live Agent Settings** with the _Inbox ID_ previously noted. Now it is time to test that everything is working. Save the Node configuration, go back to the Endpoint Editor, click on **Open Demo Webchat**, enter some text, and send to start the conversation. 
 
 Next let's check the Live Agent conversations. 
 
