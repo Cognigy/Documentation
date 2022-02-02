@@ -415,3 +415,8 @@ body > div.md-container > nav > div{
   margin-top: -7rem;
   padding-top: 7rem;
 }
+
+/* Tmp deactivate 'live agent link' in navigation */
+nav.md-tabs > div.md-tabs__inner > ul > li:nth-child(6) {
+  display: none;
+}
