@@ -5,9 +5,9 @@
 ---
 # Account Settings
 
-Here you can change general settings for the account, like name and language.
+Here you can change general settings for an account, such as name and language.
 
-Click on the sidebar **Settings** button on the Live Agent Dashboard.
+Click on the **Settings** button in the Live Agent Dashboard sidebar.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard Screen" />
