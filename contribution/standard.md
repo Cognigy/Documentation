@@ -33,6 +33,7 @@ Run command:
 
 <div class="divider"></div>
 
+
 ## Structure of the repository
 See below the sample of the file tree for the Documentation explaining the structure logic.
 
