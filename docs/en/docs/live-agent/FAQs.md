@@ -6,7 +6,9 @@
 # FAQs
 
 - [FAQs](#faqs)
-  - [LiveAgent service](#liveagent-service)
+  - [Live Agent](#live-agent)
+    - [What happened if you remove a user from the LiveAgent?](#what-happened-if-you-remove-a-user-from-the-liveagent)
+    - [How do I remove a user?](#how-do-i-remove-a-user)
     - [How to fix custom SSL certificate verification error?](#how-to-fix-custom-ssl-certificate-verification-error)
     - [How to fix SMTP for no authentication provider.](#how-to-fix-smtp-for-no-authentication-provider)
     - [How to create labels and how to map them to a particular conversation?](#how-to-create-labels-and-how-to-map-them-to-a-particular-conversation)
@@ -19,8 +21,6 @@
     - [How to navigate to the Cognigy.ai platform from Live Agent?](#how-to-navigate-to-the-cognigyai-platform-from-live-agent)
     - [How to send a reset password link for Live Agent agent by an Admin?](#how-to-send-a-reset-password-link-for-live-agent-agent-by-an-admin)
     - [What happened if you remove an inbox from the LiveAgent?](#what-happened-if-you-remove-an-inbox-from-the-liveagent)
-    - [What happened if you remove a user from the LiveAgent?](#what-happened-if-you-remove-a-user-from-the-liveagent)
-    - [How do I remove a user?](#how-do-i-remove-a-user)
   - [LiveAgent OData service](#liveagent-odata-service)
     - [Why is the Odata service not returning all the information from the db?](#why-is-the-odata-service-not-returning-all-the-information-from-the-db)
     - [Why is the Odata service not working?](#why-is-the-odata-service-not-working)
@@ -28,25 +28,43 @@
     - [How to filter OData with particular fields?](#how-to-filter-odata-with-particular-fields)
 
 
-## LiveAgent service
+## Live Agent
+
+### What happened if you remove a user from the LiveAgent?
+Removing a user from the LiveAgent is a bit superfluous, the user would be removed but the next time she/he tries to log back in, his/her user would be recreated. All the users management must be done from the Cognigy.ai platform site. 
+
+Please visit the Cognigy.ai Access Control section [***here***](./../ai/tools/user-menu/access-control.md) for more information.
+
+### How do I remove a user?
+Removing a user can be achived from the cognigy.ai platform. You can take out its agent role, so that user will not be able to log into the LiveAgent system anymore or if you like you could completely remove that user from the cognigy.ai platform.
+If you log into the Cognigy.ai as an admin, on the top righ, under the "User Menu", you will see an "Access Control" section. From there you can manage the user.
+
+Please visit the Cognigy.ai Access Control section [***here***](./../ai/tools/user-menu/access-control.md) for more information.
 
 ### How to fix custom SSL certificate verification error?
 That may happen because your custom installation is running using a custom ssl certificate. (Error can not validate certificate)
 Solution: You will need to mount into your pod the system secret.
-Please have a look [here](https://paraspatidar.medium.com/add-self-signed-or-ca-root-certificate-in-kubernetes-pod-ca-root-certificate-store-cb7863cb3f87)
+
+Please have a look [***here***](https://paraspatidar.medium.com/add-self-signed-or-ca-root-certificate-in-kubernetes-pod-ca-root-certificate-store-cb7863cb3f87)
 
 ### How to fix SMTP for no authentication provider.
-You will need to comment out the SMPT variable/values from your .env file, otherwise LiveAgent attempts to use them being empty and does not work. 
+If yours is a self hosted installation, then you will have to update the values.yml under the smtp and configmap section.
+
+Please see the Helm SMTP values section [***here***](./installation/helm-values/smtp.md) for more information.
 
 ### How to create labels and how to map them to a particular conversation? 
 First of all you will need to create a label; for doing so, you will have to navigate into the settings->Labels and click on "Add Label".
 Once your label has been created, navigate to your Conversations section, select an inbox, and then select a conversation from that inbox. On your right site you should see a menu panel, and in there there is a "Conversations Label" section where you will be able to add the labes you created above.
+
+Please visit the Lables section [***here***](./labels.md) for more information.
 
 ### How to request a file from Live Agent conversation? 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-request-file.png" width="100%" alt="Live Agent request file" />
   <figcaption>Live Agent agent request file from the user</figcaption>
 </figure>
+
+Please visit the Conversations Workflow/Conversation Actions [***here***](./conversation-workflow.md)  for more information.
 
 ### How to add an agent to a new inbox?
 You will need to log into the Live Agent with and admin role, then navigate to settings->Inboxes, and look for the inbox you want.
@@ -63,7 +81,9 @@ The access token associated to your user is available for you under your  => Pro
 
 ### How to view the account id and the inbox id? 
 You could take this information form the url of the page your are in. 
-e.g if you navigate into any inbox. in your url you should see some like this: http://your-host-domain/app/accounts/1/inbox/4
+
+e.g if you navigate into any inbox. in your url you should see some like this: ``http://your-host-domain/app/accounts/1/inbox/4``
+
 from this url we can see that accounts/account_id/inbox/inbox_id, hence from the above example url you would have account_id = 1 and inbox_id = 4
 
 ### How to navigate to the Cognigy.ai platform from Live Agent?
@@ -76,14 +96,6 @@ All the users administration must be done from the cognigy.ai platform, is in th
 If you remove an inbox created manually by yourself nothing happends. But you should not change/update/delete the default inbox
 created by the cognigy.ai platform, as you would break the communication protocol between LiveAgent and Cognigy.ai and there is no way
 to easly undo this step.
-
-### What happened if you remove a user from the LiveAgent?
-Removing a user from the LiveAgent is a bit superfluous, the user would be removed but the next time she/he tries to log back in, his/her user would be recreated. All the users management must be done from the Cognigy.ai platform site. 
-
-### How do I remove a user?
-Removing a user can be achived from the cognigy.ai platform. You can take out its agent role, so that user will not be able to log into the LiveAgent system anymore or if you like you could completely remove that user from the cognigy.ai platform.
-If you log into the Cognigy.ai as an admin, on the top righ, under the "User Menu", you will see an "Access Control" section. From there you can manage the user.
-
 
 ## LiveAgent OData service
 
@@ -101,13 +113,13 @@ e.g.
 
 This will return all the fields for the Converation model created before the 23/11/2126. 
 
-Please refer to the [odata section](./tools/odata-endpoint.md) for more information.  
+Please refer to the odata section [***here***](./tools/odata-endpoint.md) for more information.  
 
 ### How to filter OData with particular fields? 
 e.g. ```http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'```
 
 in this example it is requesting the fields id and account_id from the Converstaion model where the created_at field is lower than '2026-11-23T00:00:00'
 
-Please refer to the [odata section](./tools/odata-endpoint.md) for more information.  
+Please refer to the odata section [***here***](./tools/odata-endpoint.md) for more information.  
 
  
