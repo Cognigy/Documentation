@@ -5,32 +5,32 @@
 ---
 # Database
 
-The database used is PostgreSQL. It can either run inside of the Kubernetes cluster as an additional workload or outside of the cluster. You can also use a fully managed solution for PostgreSQL.
+The database used by Live Agent is PostgreSQL. It can either run inside of the Kubernetes cluster as an additional workload, or outside of the cluster. You can also use a fully managed solution for PostgreSQL.
 
 Compatible and tested PostgreSQL versions **>= 10** and **<= 14**
 
-## Postgres variables
+## Postgres Variables
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| `postgresql.enabled`              | bool | `true` | Set to `false` if using external postgres and modify the below variables. |
-| `postgresql.nameOverride`         | string | `"postgresql"` | Pod name override |
+| `postgresql.enabled`              | bool | `true` | Set to `false` if using an external postgres, and modify the below variables. |
+| `postgresql.nameOverride`         | string | `"postgresql"` | Pod Name Override |
 | `postgresql.postgresqlDatabase`   | string | `"live_agent_production"` |
-| `postgresql.postgresqlUsername`   | string | `"postgres"` | Database user |
-| `postgresql.postgresqlHost`   | string | `"postgres"` | Commented unless using an external database |
-| `postgresql.postgresqlPort`   | string | `"postgres"` | Commented unless using an external database |
-| `configmap.POSTGRES_SSL_MODE`     | string | `"prefer"` | Database SSL mode  (prefer, disable, require)  |
+| `postgresql.postgresqlUsername`   | string | `"postgres"` | Database User |
+| `postgresql.postgresqlHost`   | string | `"postgres"` | Commented, unless using an external database. |
+| `postgresql.postgresqlPort`   | string | `"postgres"` | Commented, unless using an external database. |
+| `configmap.POSTGRES_SSL_MODE`     | string | `"prefer"` | Database SSL Mode  (prefer, disable, require)  |
 
 
-## Internal setup
+## Internal Setup
 
-It is a good practice to change the `postgres.postgresqlPassword` at the `values.yaml` file. For that you can change the value or comment on the line `postgresqlPassword: postgres` before installing the Helm chart, which will autogenerate a password.
+It is good practice to change the `postgres.postgresqlPassword` in the `values.yaml` file. To do this, you can change the value, or comment on the line `postgresqlPassword: postgres` before installing the Helm chart, which will autogenerate a password.
 
-## External setup
+## External Setup
 
 1. Go to the `values.yaml` file and scroll down to `postgresql` field. Change the `enabled` value to `false`.
 
-2. Type the username credentials and uncomment the properties `postgresqlHost`, `postgresqlPort`, giving them the right value.
+2. Type the user credentials and uncomment the properties `postgresqlHost`, `postgresqlPort`, giving them the correct values.
 
 3. Define a password to access the external Postgres instance:  
     - A. A secret is created by default. Edit the password inside the Postgres secret. The secret name is composed of the `release name` + `postgres`.
