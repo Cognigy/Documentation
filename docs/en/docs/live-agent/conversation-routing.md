@@ -1,50 +1,50 @@
 ---
- title: "Routing conversations" 
+ title: "Routing Conversations" 
  slug: "conversation-routing" 
  hidden: false 
 ---
 
 # Conversation Routing
 
-Every conversation in Live Agent can have an assignee. An assignee can be manually added to the conversation via the web console or the API, or the organizations can opt for round-robin assignment system. This doc explains how you can assign an agent to the conversation.
+Every Conversation in Live Agent can have an assignee. An assignee can be manually added to the Conversation via the web console, the API, or automatically via an available round-robin assignment system. This doc explains how you can assign an Agent to a Conversation.
 
-## Manual assignment
+## Manual Assignment
 <div class="divider"></div>
 
 
-A conversation can be manually assigned to 2 categories of users.
+A Conversation can be manually assigned to two categories of users.
 
-1. Agents who have access to the inbox in which the conversation is created.
-2. Administrators who can access every conversation in the system.
+1. Agents who have access to the Inbox in which the Conversation is created.
+2. Administrators who can access every Conversation in the system.
 
-To assign an agent or admin to a conversation, an admin/agent can select the assignee from the dropdown named under "Assigned Agent" from the "Conversation Details" section in the right sidebar, as shown below.
+To assign an Cgent or admin to a Conversation, an admin/Agent can select the assignee from the dropdown menu titled "Assigned Agent" from the "Conversation Details" section in the right-hand sidebar, as shown below.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-routing-1.png" width="100%" alt="Live Agent Assign Agents" />
   <figcaption>Assign Agents</figcaption>
 </figure>
 
-## Auto assignment
+## Auto Assignment
 <div class="divider"></div>
 
 
-Live Agent provides a round-robin auto-assignment system for conversations. The assignment follows the logic mentioned below.
+Live Agent provides a round-robin auto-assignment system for Conversations. The assignment follows the logic mentioned below.
 
-_Note_: Round robin assignment is enabled by default.
+>**Note:** Round robin assignment is enabled by default.
 
-- If there are agents online who have access to the inbox in which a conversation is created, the system would distribute the conversations equally among the online agents.
-- If all the agents are offline, the system would distribute the conversations equally to all agents.
+- If there are Agents online who have access to the Inbox in which a Conversation is created, the system would distribute the Conversations equally among the online Agents.
+- If all the Agents are offline, the system would distribute the Conversations equally to all Agents.
 
 
-### Enable round-robin assignment
+### Enable Round-Robin or Auto Assignment
 <div class="divider"></div>
 
 
-To enable round-robin assignment in your inbox, follow the steps below.
+To enable round-robin or auto assignment in your Inbox, follow the steps below.
 
 - Go to Settings -> Inboxes
-- Click on the inbox settings link of the inbox you want to enable round-robin assignment
-- Scroll down to see the setting for Round-robin, as shown below
+- Click on the Inbox settings link of the Inbox you want to enable auto assignment
+- Find the setting to enable auto assignment, as shown below
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-routing-2.png" width="100%" alt="Live Agent Enable Auto Assignment" />
@@ -53,16 +53,16 @@ To enable round-robin assignment in your inbox, follow the steps below.
 
 - Change it to "Enabled" and click on "Update"
 
-## Re auto assignment
+## Automatic Conversation Reassignment
 <div class="divider"></div>
 
 
-Live Agent provides a round-robin re auto-assignment system for conversations. It works in the same way as auto-assignment with the difference that it happens on real-time events. These are the following:
+Live Agent provides a round-robin auto-reassignment system for Conversations. It works in the same way as auto-assignment, except that it happens on real-time Agent related events. These are the following:
 
-- Agent set its availability to "Offline" (availability can be changed by clicking on the profile thumbnail)
+- Agent sets their availability to "Offline" (availability can be changed by clicking on the profile thumbnail)
 - Agent logs out
 
-When this happens, the agent assigned conversations are re-assigned to other agents following the previously mentioned round-robin logic. If there are no agents online, the conversations are unassigned.
+When this happens, the Agent assigned Conversations are re-assigned to other Agents, following the previously mentioned round-robin logic. If there are no Agents online, the Conversations are set to unassigned.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-routing-3.png" width="100%" alt="Live Agent Enable Auto Assignment" />
