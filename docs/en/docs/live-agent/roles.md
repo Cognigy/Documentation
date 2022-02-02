@@ -10,34 +10,34 @@ Live Agent has two different roles for the users. Agents and Administrators.
 
 ## Administrator
 
-The administrator has access to all the features of Live Agent. 
+The Administrator has access to all features of Live Agent. 
 
-- Add, edit and delete inboxes.
+- Add, edit and delete Inboxes.
 
-- Add, edit and delete the agents/teams. The administrator can modify the account users role.
+- Add, edit and delete Agents/Teams. The Administrator can modify the account user's role.
 
-- Add, edit and delete the labels. The administrator can modify the account users role.
+- Add, edit and delete Labels. The Administrator can modify the account user's role.
 
-- Modify the settings of its account and the account inboxes.
+- Modify the settings of its account and the account Inboxes.
 
-- Access the OData endpoint with its access token.
+- Access the OData Endpoint with its access token.
 
-- Create custom attributes to conversations.
+- Create custom attributes to Conversations.
 
 ## Agent
 
-The agent has restricted access.
+The Agent has restricted access.
 
-- Access to the Inboxes/Teams assigned to.
+- Access to the Inboxes/Teams assigned to them.
 
-- Access and ability to add existing labels to the conversations.
+- Access and ability to add existing Labels to the Conversations.
 
-- Access and ability to add existing custom attributes to the conversations.
+- Access and ability to add existing custom attributes to the Conversations.
 
-- Cannot manipulate settings related to the account except for the Canned Responses
+- Cannot manipulate settings related to the account, except for Canned Responses
 
-- Can reassign the conversations of their inboxes to other agents or unassign them.
+- Can reassign the Conversations of their Inboxes to other Agents, or unassign them.
 
-- Do not have access to Reports
+- Does not have access to Reports
 
-- By default, agents can see all conversations of an Inbox they are assigned to. This can be disabled in the settings of an Inbox so that agents can only see conversations they are assigned to.
+- By default, Agents can see all Conversations of an Inbox they are assigned to. This can be disabled in the settings of an Inbox so that Agents can only see Conversations they are assigned to.
