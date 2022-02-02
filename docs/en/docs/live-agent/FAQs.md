@@ -95,13 +95,17 @@ Does your user have an admin role? Odata just  works for admin roles.
 
 ### How to retrieve all content from a particular collection?(Ex: Conversation, Message)
 To achive this you could use some trick like filtering by some value very big like:
-e.g. http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'
+
+e.g.
+```http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'```
+
 This will return all the fields for the Converation model created before the 23/11/2126. 
 
 Please refer to the [odata section](./tools/odata-endpoint.md) for more information.  
 
 ### How to filter OData with particular fields? 
-e.g. http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'
+e.g. ```http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'```
+
 in this example it is requesting the fields id and account_id from the Converstaion model where the created_at field is lower than '2026-11-23T00:00:00'
 
 Please refer to the [odata section](./tools/odata-endpoint.md) for more information.  
