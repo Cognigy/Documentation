@@ -21,6 +21,8 @@ Using the global filter options you can define the search criteria to find the i
   
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** options in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
 
+- You can select one or more flows to show only messages that were generated during the selected flow passing.
+
 
 Using the **"Negate "** slider bar "all but the selected" filter option(s) will be analyzed.
 
