@@ -5,13 +5,13 @@
 ---
 # Storage
 
-Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server or with a NFS server (preferred way) and CDNs from any cloud provider like AWS S3, Microsoft Azure and Google Cloud, etc. See below for additional values required.
+Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server, or with an NFS server (preferred way) and CDNs from any cloud provider such as AWS S3, Microsoft Azure and Google Cloud, etc. See below for the additional values required.
 
-## Using a NFS server
+## Using a NFS Server
 
 ### AWS
 
-When using AWS, [an existing EFS must be setup](https://aws.amazon.com/efs/). Then fill in the following values:
+When using AWS, [an existing Elastic File System or EFS must be setup](https://aws.amazon.com/efs/). Based on your EFS, fill in the following values:
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -23,7 +23,7 @@ When using AWS, [an existing EFS must be setup](https://aws.amazon.com/efs/). Th
 
 ### Azure
 
-When using Azure, an NFS server must be set up. Then fill in the following values:
+When using Azure, a Network File System or NFS server must be set up. Based on your NFS server, fill in the following values:
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -34,7 +34,7 @@ When using Azure, an NFS server must be set up. Then fill in the following value
 
 ## Using a CDN
 
-Set the following value to `"cdn"` to use a CDN and fill the rest based on the provider that you want to use.
+Set the following value to `"cdn"` to use a Content Delivery network or CDN, and fill in the remaining values based on the provider that you want to use.
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -50,7 +50,7 @@ Set the following value to `"cdn"` to use a CDN and fill the rest based on the p
 
 ### Using Amazon S3
 
-You can get started with [Creating an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and [Create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html) to configure the following details.
+You can get started with [creating an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and can [create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html), to configure the following details.
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -72,7 +72,7 @@ You can get started with [Creating an S3 bucket](https://docs.aws.amazon.com/Ama
 | `configmap.GCS_BUCKET` | string | `""` |
 
 
-the value of the `GCS_CREDENTIALS` should be a json formatted string containing the following keys
+The value of the `GCS_CREDENTIALS` should be a json formatted string, containing the following keys.
 
 ```bash
 {
@@ -102,7 +102,7 @@ the value of the `GCS_CREDENTIALS` should be a json formatted string containing 
 
 ### Using Amazon S3 Compatible Service
 
-To use an s3 compatible service such as [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/#configure-a-client), Minio etc..
+To use an S3 compatible service such as [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/#configure-a-client), Minio etc..
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -113,7 +113,7 @@ To use an s3 compatible service such as [DigitalOcean Spaces](https://www.digita
 | `configmap.STORAGE_REGION` | string | `"nyc3"` |
 | `configmap.STORAGE_ENDPOINT` | string | `"https://nyc3.digitaloceanspaces.com"` |
 
-Set force_path_style to true if using minio
+Set force_path_style to true if using minio.
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
@@ -121,7 +121,7 @@ Set force_path_style to true if using minio
 
 ## Using a single PVC (not recommended)
 
-There is an option to use a local Persistent Volume Claim (PVC) for storage. This is not recommended as the deployments pods won't be able to scale as there is one PVC per deployment.
+There is an option to use a local Persistent Volume Claim (PVC) for storage. This is not recommended, as the deployments pods won't be able to scale as there is one PVC per deployment.
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
