@@ -5,9 +5,9 @@
 ---
 # Reports
 
-Reports of the conversations which has happened over time can be viewed in the Reports Section.
+Reports of Conversations which have occurred over time can be viewed in the Reports section.
 
-Click on **Reports** on Live Agent Dashboard.
+Click on **Reports** in the Live Agent Dashboard sidebar.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-dashboard-reports.png" width="100%" alt="Live Agent Dashboard Screen" />
@@ -15,14 +15,14 @@ Click on **Reports** on Live Agent Dashboard.
 </figure>
 
 
-The below window opens up with an Overview of the Reports.
+The window below will open, with an overview of all Reports.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-home.png" width="100%" alt="Live Agent Reports Home Screen" />
   <figcaption>Reports</figcaption>
 </figure>
 
-The report can be generated for various durations. This can be done by selecting the time period in the drop-down list, as shown below. By default, it is for the last seven days.
+A Report can be generated for various time durations. This can be done by selecting a time period in the drop-down list, as shown below. By default, this is set for the last seven days.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-time-period.png" width="100%" alt="Report Duration selection drop down" />
@@ -33,7 +33,7 @@ The report can be generated for various durations. This can be done by selecting
 ### Conversations
 <div class="divider"></div>
 
-Click on the Conversations tab in Reports. The graph will show the conversation that happened on the selected days. On pointing the mouse to a particular chart of the day, the details of the conversations that happened on that day can be found out.
+Click on the Conversations tab in Reports. A graph will show the Conversations that have occurred during the selected days. When hovering the the mouse cursor over a particular chart, the details of Conversations that occurred on that day can be seen.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-conversations.png" width="100%" alt="Conversations Report Screen" />
@@ -44,7 +44,7 @@ Click on the Conversations tab in Reports. The graph will show the conversation 
 
 ### Incoming Messages
 <div class="divider"></div>
-Click on the Incoming Messages tab in Reports. The graph will show the number of incoming messages that happened on the selected days. On pointing the mouse to a particular chart of the day, the number of incoming messages that happened on that day can be found out.
+Click on the Incoming Messages tab in Reports. A graph will show the number of incoming messages that occurred on the selected days. When hovering the the mouse cursor over a particular chart, the number of incoming messages that occurred on that day can be seen.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-incoming-messages.png" width="100%" alt="Incoming Messages Report Screen" />
@@ -54,7 +54,7 @@ Click on the Incoming Messages tab in Reports. The graph will show the number of
 
 ### Outgoing Messages
 <div class="divider"></div>
-Click on the Outgoing Messages tab in Reports. The graph will show the number of outgoing messages that happened on the selected days. On pointing the mouse to a particular chart of the day, the number of outgoing messages that happened on that day can be found out.
+Click on the Outgoing Messages tab in Reports. A graph will show the number of outgoing messages that occurred on the selected days. When hovering the the mouse cursor over a particular chart, the number of outgoing messages that occurred on that day can be seen.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-outgoing-messages.png" width="100%" alt="Outgoing Messages Report Screen" />
@@ -64,7 +64,7 @@ Click on the Outgoing Messages tab in Reports. The graph will show the number of
 
 ### First Response Time
 <div class="divider"></div>
-Click on the First Response Time tab in Reports. The graph will show the average number of hours taken to give the first response to a conversation with a customer. On pointing the mouse to a particular chart of the day, the average number of hours taken for the first response for that specific day can be found out.
+Click on the First Response Time tab in Reports. A graph will show the average number of hours taken to give the first response to a Conversation with a customer. When hovering the the mouse cursor over a particular chart, the average number of hours taken for the first response, for that specific day, can be seen.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-first-response-time.png" width="100%" alt="First Response Time Report Screen" />
@@ -74,7 +74,7 @@ Click on the First Response Time tab in Reports. The graph will show the average
 
 ### Resolution Time
 <div class="divider"></div>
-Click on the Resolution Time tab in Reports. The graph will show the average number of hours taken to resolve a particular conversation with a customer. On pointing the mouse to a specific chart of the day, the average number of hours taken for determining conversations for that particular day can be found out.
+Click on the Resolution Time tab in Reports. A graph will show the average number of hours taken to resolve a particular Conversation with a customer. When hovering the the mouse cursor over a particular chart, the average number of hours taken for determining conversations, for that particular day, can be seen.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-reports-resolution-time.png" width="100%" alt="Resolution Time Report Screen" />
@@ -84,7 +84,7 @@ Click on the Resolution Time tab in Reports. The graph will show the average num
 
 ### Resolution Count
 <div class="divider"></div>
-Click on the Resolution count tab in Reports. The graph will show the number of conversations resolved on the selected days. On pointing the mouse to a particular chart of the day, the number of conversations determined on that day can be found out.
+Click on the Resolution Count tab in Reports. A graph will show the number of Conversations resolved on the selected days. When hovering the the mouse cursor over a particular chart, the number of Conversations resolved on that day can be seen.
 
 
 <figure>
@@ -94,10 +94,10 @@ Click on the Resolution count tab in Reports. The graph will show the number of 
 
 
 
-### Download agent Reports
+### Download Agent Reports
 <div class="divider"></div>
-Details of Agents' performance can be done by clicking the Download agent Reports button on the top right-hand side of the page.
-The report will be downloaded in CSV format. The example is given below.
+Details of Agents' performance can be done by clicking the Download Agent Reports button on the top right-hand side of the page.
+The report will be downloaded in CSV format. An example is given below.
 
 
 <figure>
