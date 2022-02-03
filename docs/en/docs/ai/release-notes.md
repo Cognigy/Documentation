@@ -5,6 +5,13 @@
 ---
 # Release notes
 
+## 4.18.1
+**This version is currently in pre-release and will be released soon**
+
+### Bugfixes
+- Fixed a bug where the default "/" route for the WebchatWidget demo-page would return "HTTP 404" instead of "HTTP 200 Ok"
+
+
 ## 4.18.0
 **This version is currently in pre-release and will be released soon**
 
