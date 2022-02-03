@@ -56,7 +56,7 @@ Please see the Helm SMTP values section [***here***](./installation/helm-values/
 First of all you will need to create a label; for doing so, you will have to navigate into the settings->Labels and click on "Add Label".
 Once your label has been created, navigate to your Conversations section, select an inbox, and then select a conversation from that inbox. On your right site you should see a menu panel, and in there there is a "Conversations Label" section where you will be able to add the labes you created above.
 
-Please visit the Lables section [***here***](./labels.md) for more information.
+Please visit the Labels section [***here***](./labels.md) for more information.
 
 ### How to request a file from Live Agent conversation? 
 <figure>
