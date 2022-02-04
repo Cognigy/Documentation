@@ -6,7 +6,7 @@
 # FAQs
 
   - [Live Agent](#live-agent)
-    - [What happens if you remove a user from the  Live Agent?](#what-happens-if-you-remove-a-user-from-the- Live Agent)
+    - [What happens if you remove a user from the  Live Agent?](#what-happens-if-you-remove-a-user-from-the-live-agent)
     - [How do I remove a user?](#how-do-i-remove-a-user)
     - [How to fix custom SSL certificate verification error?](#how-to-fix-custom-ssl-certificate-verification-error)
     - [How to fix SMTP for no authentication provider.](#how-to-fix-smtp-for-no-authentication-provider)
@@ -20,7 +20,7 @@
     - [How to navigate to the Cognigy.AI platform from Live Agent?](#how-to-navigate-to-the-cognigyai-platform-from-live-agent)
     - [How to send a reset password link for Live Agent user Agent by a user Admin?](#how-to-send-a-reset-password-link-for-live-agent-user-agent-by-a-user-admin)
     - [What happens if you remove an Inbox from the  Live Agent?](#what-happens-if-you-remove-an-inbox-from-the-live-agent)
-  - [ Live Agent OData service](# Live Agent-odata-service)
+  - [ Live Agent OData service](#live-agent-odata-service)
     - [Why is the OData service not returning all the information from the db?](#why-is-the-odata-service-not-returning-all-the-information-from-the-db)
     - [Are you getting an unauthorised error while querying the OData endpoint?](#are-you-getting-an-unauthorised-error-while-querying-the-odata-endpoint)
     - [How to retrieve all content from a particular collection?(Ex: Conversation, Message)](#how-to-retrieve-all-content-from-a-particular-collectionex-conversation-message)
@@ -107,7 +107,7 @@ You can safely modify/remove Inboxes created manually. But you must not change/u
 created by the Cognigy.AI platform, as it will break the communication protocol between Live Agent and Cognigy.AI. There is no way
 to undo this step easily. In case you need to do so, please reach support.
 
-##  Live Agent OData service
+## Live Agent OData service
 
 ### Why is the OData service not returning all the information from the db?
 The OData service can just return data belonging to your account.
