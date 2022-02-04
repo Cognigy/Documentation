@@ -22,8 +22,8 @@
     - [How to send a reset password link for Live Agent user Agent by a user Admin?](#how-to-send-a-reset-password-link-for-live-agent-user-agent-by-a-user-admin)
     - [What happens if you remove an Inbox from the LiveAgent?](#what-happens-if-you-remove-an-inbox-from-the-liveagent)
   - [LiveAgent OData service](#liveagent-odata-service)
-    - [Why is the Odata service not returning all the information from the db?](#why-is-the-odata-service-not-returning-all-the-information-from-the-db)
-    - [Why is the Odata service not working?](#why-is-the-odata-service-not-working)
+    - [Why is the OData service not returning all the information from the db?](#why-is-the-odata-service-not-returning-all-the-information-from-the-db)
+    - [Are you getting an unauthorised error while querying the OData endpoint?](#are-you-getting-an-unauthorised-error-while-querying-the-odata-endpoint)
     - [How to retrieve all content from a particular collection?(Ex: Conversation, Message)](#how-to-retrieve-all-content-from-a-particular-collectionex-conversation-message)
     - [How to filter OData with particular fields?](#how-to-filter-odata-with-particular-fields)
 
@@ -37,13 +37,13 @@ Please visit the Cognigy.AI Access Control section [***here***](./../ai/tools/us
 
 ### How do I remove a user?
 Removing a user can be achieved from the Cognigy.AI platform. You can take out its Agent role, so that user will not be able to log into the LiveAgent system anymore or if you like you could completely remove that user from the Cognigy.AI platform.
-If you log into the Cognigy.AI as an admin, on the top righ, under the "User Menu", you will see an "Access Control" section. From there you can manage the user.
+If you log into the Cognigy.AI as an admin, on the top right, under the "User Menu", you will see an "Access Control" section. From there you can manage the user.
 
 Please visit the Cognigy.AI Access Control section [***here***](./../ai/tools/user-menu/access-control.md) for more information.
 
 ### How to fix custom SSL certificate verification error?
 That may happen because your custom installation is running using a custom SSL certificate. (Error can not validate certificate)
-Solution: You will need to mount into your pod the system secret.
+The deployment file used for the pods will need to be extended to mount a secret containing the CA on the pod filesystem. Our technical team can give support by opening a ticket. Also as a temporary workaround, the SSL verification can be disabled.
 
 Please have a look [***here***](https://paraspatidar.medium.com/add-self-signed-or-ca-root-certificate-in-kubernetes-pod-ca-root-certificate-store-cb7863cb3f87)
 
@@ -77,7 +77,7 @@ You will need to navigate into settings/Teams and click on "Create new team" but
 You will need to navigate into settings/Inboxes search for the Inbox, and click on "Settings", in there you will see a "Collaborators" tab, where you will see all the collaborators agents for that Inbox.
 
 ### How to get the Access Token(API Key)?
-The access token associated to your user is available for you under your  => Profile Settings/Access Token.
+The access token associated to your user is available for you at the bottom of your [***profile settings***](./profile-settings.md).
 
 ### How to view the account id and the Inbox id? 
 You could take this information form the url of the page your are in. 
@@ -87,7 +87,13 @@ e.g if you navigate into any Inbox. in your url you should see some like this: `
 from this url we can see that accounts/account_id/inbox/inbox_id, hence from the above example url you would have account_id = 1 and inbox_id = 4
 
 ### How to navigate to the Cognigy.AI platform from Live Agent?
-Right now you can not. You will need to enter the url of your Cognigy.AI host in your browser.
+In your profile setting you have a link "Cognigy.AI" from which you will be moved back to the Cognigy.AI platform.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-link-cognigi.ai-platform.png" width="100%" alt="Link to Cognigy.AI platform" />
+  <figcaption>Link to Cognigy.AI platform</figcaption>
+</figure>
+
 
 ### How to send a reset password link for Live Agent user Agent by a user Admin?
 All the users administration must be done from the Cognigy.AI platform, is in there where you can reset your password.
@@ -99,11 +105,11 @@ to easly undo this step.
 
 ## LiveAgent OData service
 
-### Why is the Odata service not returning all the information from the db?
+### Why is the OData service not returning all the information from the db?
 The OData service can just return data belonging to your account.
 
-### Why is the Odata service not working? 
-Does your user have an admin role? Odata just  works for admin roles. 
+### Are you getting an unauthorised error while querying the OData endpoint? 
+In case you are getting an unauthorised error, check that the API access token used belongs to a user that has the administrator role for the account used in the query.
 
 ### How to retrieve all content from a particular collection?(Ex: Conversation, Message)
 To achive this you could use some trick like filtering by some value very big like:
