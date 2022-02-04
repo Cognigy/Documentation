@@ -47,6 +47,8 @@ The deployment file used for the pods will need to be extended to mount a secret
 
 Please have a look [***here***](https://paraspatidar.medium.com/add-self-signed-or-ca-root-certificate-in-kubernetes-pod-ca-root-certificate-store-cb7863cb3f87)
 
+Please see this section [***here***](./installation/helm-values/helm-values.md#rest-client-ssl) for more information regarding the Helm SSL variables.
+
 ### How to fix SMTP for no authentication provider.
 If yours is a self hosted installation, then you will have to update the values.yml under the smtp and configmap section.
 
