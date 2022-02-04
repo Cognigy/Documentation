@@ -19,7 +19,7 @@
     - [How to view the Account ID and the Inbox ID?](#how-to-view-the-account-id-and-the-inbox-id)
     - [How to navigate to the Cognigy.AI platform from Live Agent?](#how-to-navigate-to-the-cognigyai-platform-from-live-agent)
     - [How to send a reset password link for Live Agent user Agent by a user Admin?](#how-to-send-a-reset-password-link-for-live-agent-user-agent-by-a-user-admin)
-    - [What happens if you remove an Inbox from the  Live Agent?](#what-happens-if-you-remove-an-inbox-from-the- Live Agent)
+    - [What happens if you remove an Inbox from the  Live Agent?](#what-happens-if-you-remove-an-inbox-from-the-live-agent)
   - [ Live Agent OData service](# Live Agent-odata-service)
     - [Why is the OData service not returning all the information from the db?](#why-is-the-odata-service-not-returning-all-the-information-from-the-db)
     - [Are you getting an unauthorised error while querying the OData endpoint?](#are-you-getting-an-unauthorised-error-while-querying-the-odata-endpoint)
