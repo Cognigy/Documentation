@@ -98,7 +98,8 @@ In your profile setting you have a link "Cognigy.AI" from which you will be move
 
 
 ### How to send a reset password link for Live Agent user Agent by a user Admin?
-All the users administration must be done from the Cognigy.AI platform, is in there where you can reset your password.
+All the users administration must be done from the Cognigy.AI platform. 
+Please see the  [***Cognigy Login page***](./../ai/installation/AI-login.md) for more information.
 
 ### What happens if you remove an Inbox from the LiveAgent?
 You can safely modify/remove Inboxes created manually. But you must not change/update/delete the default Inbox
