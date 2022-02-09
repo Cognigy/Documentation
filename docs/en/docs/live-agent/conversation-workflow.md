@@ -187,12 +187,12 @@ Click on Delete. The private note will be deleted.
 <div class="divider"></div>
 
 
-Click on the 3 dots on the top right-hand side of the screen. There is an button labeled Send Transcript. Click on this button.
+To send a copy of the current conversation, click on the button labeled Send Transcript, placed on the top right corner.
 
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-20.png" width="100%" alt="Live Agent Contact Details Menu" />
-  <figcaption>Contact Details Menu</figcaption>
+  <figcaption>Send transcript button</figcaption>
 </figure>
 
 
@@ -250,4 +250,4 @@ Conversations can be selected and filtered by their statuses within the Conversa
 
 Once a Conversation has been marked as resolved - the next time the same customer starts a new Conversation, the previous Conversation associated with this customer will be shown in the Previous Conversations menu. This will help the Agent to understand the history of the customer's issue.
 
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="100%" alt="Live Agent Previous Conversations" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="50%" alt="Live Agent Previous Conversations" />
