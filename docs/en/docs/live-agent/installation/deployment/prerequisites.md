@@ -12,6 +12,8 @@ For installing and running Live Agent, a Kubernetes cluster is required, on whic
 - [Kubernetes]((https://kubernetes.io/)) 1.16+
 - [Helm](https://helm.sh/) 3.1.0+
 
+>**Note:** It is recommended to install Live Agent in a separate namespace as it has its own resources, separated from Cognigy.AI ones.
+
 ## Pod resources
 
 ### CPU
