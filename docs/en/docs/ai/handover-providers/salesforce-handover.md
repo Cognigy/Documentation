@@ -3,7 +3,7 @@
  slug: "salesforce-handover" 
  hidden: false 
 ---
-# Chatwoot Integration
+# Salesforce Integration
 
 ## Description
 
