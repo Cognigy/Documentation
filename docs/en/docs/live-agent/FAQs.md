@@ -71,6 +71,8 @@ Please visit the Conversations Workflow/Conversation Actions [***here***](./conv
 You will need to log into the Live Agent with an admin role, then navigate to "Settings->Inboxes", and look for the Inbox you want.
 From that Inbox, select settings/Collaborators and pick your Agent name. Once you are done, click on the "Update" button.
 
+Please visit the Inboxes section [***here***](./inboxes.md#inbox-collaborators) for more information.
+
 ### How to create a Team and add Team members to the respective Team? 
 You will need to navigate into "Settings->Teams" and click on the "Create new team" button. In the second step, you will be able to add agents to the Team. You can also edit the Team later and add more agents then.
 
@@ -78,6 +80,8 @@ Please visit the Teams section [***here***](./teams.md) for more information.
 
 ### How to see all the agents added in a particular Inbox?
 You will need to navigate into "Settings->Inboxes", search for the Inbox, and click on "Settings" there, you will see a "Collaborators" tab, where you will see all the collaborators agents for that Inbox.
+
+Please visit the Inboxes section [***here***](./inboxes.md#inbox-collaborators) for more information.
 
 ### How to get the Access Token(API Key)?
 The access token associated with your user is available for you at the bottom of your [***profile settings***](./profile-settings.md).
