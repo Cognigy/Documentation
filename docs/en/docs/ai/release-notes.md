@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.18.2
+**Released** February 10th, 2022
+
+### Bugfixes
+- Fixed a bug where the "Wait for Input" Flow Node would keep waiting after an Intent with Default Reply was recognized
+
 ## 4.18.1
 **Released** February 10th, 2022
 
