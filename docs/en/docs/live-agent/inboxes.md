@@ -33,7 +33,7 @@ Here you can change the settings and adjust them based on your needs.
 
 ## Inbox Collaborators
 
-In this section you can see the agents assigned to the Inbox as collaborators.
+In this section, you can see the agents assigned to the Inbox as collaborators.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-Inbox-list-agents.png" width="100%"  alt="Live Agent Inbox Settings" />
