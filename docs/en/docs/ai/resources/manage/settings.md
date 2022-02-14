@@ -71,7 +71,7 @@ When enabled, case sensitivity and punctuation will be taken into account by the
 ### Implicit Slot Parsing
 Determines whether slots in NLU example sentences should be parsed implicitly or only slot annotations should be used for training. Configurable from 4.1.4 onwards. Prior to 4.1.4 the behavior was as in "Full" mode, existing agents will retain this default.
 
-- Disabled: Only use slot annotations: This will only consider user-annotated User, Lexicon or Any Slots in example sentences.
+- Disabled: Only use slot annotations: This will only consider user-annotated slots, Lexicon or Any Slots in example sentences.
 - Full: Parse both System and Lexicon slots implicitly
 - System Slots - No Lexicon Slots: Parse only System slots like numbers, dates, email implicitly. Only consider annotations for Lexicon Slots.
 - Lexicon Slots - No System Slots: Parse only Lexicon slots like from attached Lexicons implicitly. Only consider annotations for System Slots.
