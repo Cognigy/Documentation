@@ -5,6 +5,52 @@
 ---
 # Release notes
 
+## 4.19.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+#### Last activity tracking
+This release of Cognigy.AI adds the functionality to track the last activity of users in the Cognigy.AI user interface. The data will be displayed to administrators of the platform in the access control tool
+
+### Improvements
+- Improved by adding the option to collate and concatenate multiple user inputs into one message to Webchat Endpoint settings
+- Improved by adding icons to the handover provider menu
+- Improved by adding a sidebar to Insights to navigate to Cognigy.AI
+- Improved by reordering the User Menu items by introducing separate sections for navigation to further Cognigy products
+- Improved by adding dynamic page titles to Cognigy Insights
+- Improved by updating Cognigy Journeys with up-to-date content
+- Improved by preselecting the current Flow in the Go To Node
+- Improved by adding the option to configure a get started message data payload for the Webchat Endpoint which is sent to the Flow
+
+### Bugfixes
+- Fixed a bug where a wrong Locale is assigned to the Endpoint after a Snapshot is restored
+- Fixed a bug where the Transcript Explorer incorrectly indicated that more transcripts are being loaded
+- Fixed a bug where errors are incorrectly logged once inactive “Cognigy Livechat” handover sessions are closed
+- Fixed a bug where the transcripts in the Transcript Explorer are not correctly filtered in all cases if the global Endpoint filter is used
+- Fixed a bug where the translation of outputs of Webchat channel does not work correctly
+- Fixed a bug where wrong Intents and Slots are part of analytics data, if executeFlow is used either with parseIntents or parseSlots enabled
+- Fixed a bug where the number of Intent matches is not consistent between different widgets of Insights in some cases
+- Fixed a bug where Inject/Notify does not work for Ringcentral Engage Endpoints
+- Fixed a bug where service-nlp-ner crashes when there is a timeout in getting results from duckling
+- Fixed a bug where no analytics data are stored in case of an error in a Flow
+- Fixed accessibility issues related to Intent Level select of Lookup Nodes
+- Fixed an accessibility issue by adding shadow to switch buttons
+- Fixed a bug where the Extension details sidebar mistakenly stays open after an Extension is deleted
+- Fixed a bug where the Insights Understood Messages widget shows incorrect numbers
+- Fixed a bug related to duplicate training records in the Intent Trainer in case Flows are switched
+- Fixed a bug where the wrong Flow name and Flow Id is stored in analytics if an Intent is triggered in an attached Flow
+- Fixed a bug related to incorrect chart labels within the “Understood Messages” and the “Average Execution Time” widgets of Cognigy Insights
+- Fixed a bug related to pagination not properly working in Message Explorer of Cognigy Insights
+- Fixed a bug where changing the setting "Use Thresholds of the attached Flows" results in different Intent Scores
+- Fixed a bug where Message Explorer does not show user rating data as well as virtual agent rating request data
+- Fixed a bug where structured content is not translated when adding Node Localization by using translation
+- Fixed a bug where the loading of the Transcript Explorer does not work properly after filters are changed or reset
+- Fixed a bug where the Time to live (TTL) as well as the expiry message for a LiveChat Lite handover request is not configurable
+- Fixed a bug where “user quit/joined” notifications are not shown in Cognigy LiveChat Lite
+- Fixed a bug where users being part of multiple organizations could not login to LiveChat Lite
+- Fixed a bug regarding authorization and file downloads
+- Fixed a bug where our UI would break when navigating from Endpoints to Localization
+
 ## 4.18.2
 **Released** February 10th, 2022
 
