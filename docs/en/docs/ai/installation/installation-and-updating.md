@@ -19,4 +19,4 @@ Cognigy.AI is a modern software product and based on a microservice architecture
 
 You can get more information about Kubernetes by reading through their official documentation: [https://kubernetes.io/](https://kubernetes.io/)
 
-Installing our product requires our installation-guide, which you can download using this link: [https://github.com/Cognigy/Documentation/raw/main/cognigy-4-x-rev8.zip](https://github.com/Cognigy/Documentation/raw/main/cognigy-4-x-rev8.zip)
+Installing our product requires our installation-guide, which you can download using this link: [https://downloads.cognigy.com/cognigy-4.zip](https://downloads.cognigy.com/cognigy-4.zip)
