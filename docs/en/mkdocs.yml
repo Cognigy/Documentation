@@ -2,7 +2,7 @@ site_name: Cognigy Documentation
 site_description: Documentation of Cognigy products
 site_url: https://docs.cognigy.com/
 site_author: Cognigy
-copyright: Copyright &copy; 2021 <a href="https://www.cognigy.com/">Cognigy</a>
+copyright: Copyright &copy; 2022 <a href="https://www.cognigy.com/">Cognigy</a>
 repo_url: https://github.com/Cognigy/Documentation/
 repo_name: cognigy/documentation
 theme:
