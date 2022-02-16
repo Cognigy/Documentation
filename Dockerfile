@@ -22,4 +22,4 @@ COPY --from=build /app/site/ /usr/share/nginx/html/
 
 COPY ./default.conf /etc/nginx/conf.d/default.conf
 
-COPY ./cognigy-4-x-rev8.zip /usr/share/nginx/html/
+COPY downloads /usr/share/nginx/html/downloads
