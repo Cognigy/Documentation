@@ -177,6 +177,10 @@ Get sure all plugins are reachable for your whole audience!
 
 This field can be used to configure additional settings not available in the GUI. These settings override GUI settings. Entering malformed JSON might result in crashing the webchat, so use with caution and at own risk!
 
+???+ info "Text Input Sanitization"
+    An example of a custom setting that may be used, is **disableTextInputSanitization**. Text Input Sanitization is enabled by default for security reasons, before sending text from the Webchat to the NLU. This changes characters which are reserved by HTML (**",',&,<,>**) to an entity name. For example **&** will have **amp;** appended to the input.
+    This can cause issues in your Agent, if a condition or Intent is only triggered by the reserved character in its original form. If you need to disable this, enter **"disableTextInputSanitization": true** into your JSON field.
+
 ## More information
 
 - [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
