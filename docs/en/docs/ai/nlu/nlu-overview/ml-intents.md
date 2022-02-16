@@ -92,6 +92,9 @@ When you hover over an example sentence, a *Delete Icon* will appear. Clicking o
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/exapmle-sentence-delete-icon.gif" width="100%" />
 </figure>
 
+???+ warning "Delete Example Sentences using Keyboard"
+    *Delete Icon* of an example sentence cannot be accessed just with a keyboard. A keyboard-only user can still delete an example sentence by clearing the field using *Delete* or *Backspace* keys.
+
 ## Slots and Lexicons
 <div class="divider"></div>
 
