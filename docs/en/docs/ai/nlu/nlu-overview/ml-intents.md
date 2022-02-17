@@ -93,7 +93,7 @@ When you hover over an example sentence, a *Delete Icon* will appear. Clicking o
 </figure>
 
 ???+ warning "Delete Example Sentences using Keyboard"
-    *Delete Icon* of an example sentence cannot be accessed just with a keyboard. A keyboard-only user can still delete an example sentence by clearing the field using *Delete* or *Backspace* keys.
+    The *Delete Icon* of an example sentence cannot be accessed when only using a keyboard. However, a keyboard-only user can still delete an example sentence simply by clearing the field using *Delete* or *Backspace* keys.
 
 ## Slots and Lexicons
 <div class="divider"></div>
