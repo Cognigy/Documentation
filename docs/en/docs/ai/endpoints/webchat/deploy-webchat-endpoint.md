@@ -68,6 +68,10 @@ You can configure almost everything about the Webchat to personalize it just for
 | Allow JavaScript in HTML Message Content | By default, potentially malicious HTML content like 'onclick' or 'onload' attributes are removed before rendering. If this setting is enabled, they will not be removed. |
 | Allow JavaScript in Button/Action URLs | By default, 'JavaScript URLs' starting with javascript: will get removed. If this setting is enabled, they will not be removed and the JavaScript code will get executed when the user clicks the button/element. |
 
+???+ info "Text Input Sanitization"
+    Text Input Sanitization is enabled by default for security reasons, before sending text from the Webchat to the NLU. This changes characters which are reserved by HTML (**",',&,<,>**) to an entity name. For example **&** will have **amp;** appended to the input.
+    This can cause issues in your Agent, if a condition or Intent is only triggered by the reserved character in its original form. If you need to circumvent this issue, toggle **Allow JavaScript in HTML Message Content** to enabled.
+
 #### Persistent Menu
 
 <figure>
