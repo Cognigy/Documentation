@@ -5,16 +5,41 @@
 ---
 # Installation Updates
 
-For upgrading the Live Agent installation, once you have the new package version, run the following command:
-
-```sh
- helm upgrade --namespace your-namespace cognigy-live-agent ./cognigy-live-agent
-```
+For upgrading the Live Agent installation, once there is a new release, there are two ways:
 
 >**Note:** Learn more about making upgrades and rollbacks at the [official Helm Docs](https://helm.sh/docs/intro/using_helm/#helm-upgrade-and-helm-rollback-upgrading-a-release-and-recovering-on-failure)
 
-This command should automatically run a database migration job and apply every new change. 
+## Pulling and upgrading at the same time
 
+The following command can be used to pull and upgrade the Live Agent Helm chart at the same time:
+
+```sh
+ helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f my-values.yaml
+```
+
+Note that the `my-values.yaml` file can contain just the values that need to be overridden, such as ingresses configurations, replicas and resources. In this way, the new release won't break the existing setup. You can refer to the documentation and see the [release notes]({{config.site_url}}live-agent/release-notes/releases/) related to Helm if it does.
+
+## Pulling and modifying the `values.yaml` file
+
+Run the following command:
+
+```sh
+helm pull oci://cognigy.azurecr.io/helm/live-agent --version X.X.X
+```
+
+This will download the Helm chart compressed.
+
+`live-agent-X.X.X.tgz`
+
+Now it can be uncompressed, the `values.yaml` file inside the folder needs to be modified according to your needs, and then, the chart can be upgraded by using the following command:
+
+```sh
+ helm upgrade cognigy-live-agent ./live-agent-X.X.X --namespace live-agent
+```
+
+## Troubleshooting
+
+Both upgrade commands should automatically run a database migration job and apply every new change.
 
 In case it fails, you can manually run the following command inside one of the main Live Agent pods:
 

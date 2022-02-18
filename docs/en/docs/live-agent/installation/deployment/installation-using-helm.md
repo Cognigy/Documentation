@@ -7,11 +7,49 @@
 
 Helm is a tool for easily deploying resources into a Kubernetes cluster. First, install it following the [official documentation](https://helm.sh/docs/intro/install/).
 
-For the Helm chart installation, a Helm package will be provided. Once you have it downloaded, install it in your Kubernetes cluster with the following command:
+For the Helm chart installation, the Helm package needs to be pulled from the Cognigy OCI registry. There are two ways for pulling the Helm Chart. First, you need to have access to the OCI registry `cognigy.azurecr.io` in both of them (Are the same credentials as for the Docker registry). Then do the following:
+
+1. Set the following environment variable for running all the commands below:
 
 ```sh
-helm install --namespace your-namespace cognigy-live-agent ./cognigy-live-agent-x.x.x.tgz
+HELM_EXPERIMENTAL_OCI=1
 ```
+
+2. Login into the OCI prod registry with the following command:
+
+```sh
+helm registry login cognigy.azurecr.io
+```
+
+## Pulling and installing at the same time (preferred)
+
+The following command can be used to install and pull the Live Agent Helm chart at the same time:
+
+```sh
+helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f my-values.yaml
+```
+
+Note that the `my-values.yaml` file can contain just the values that need to be overridden, such as ingresses configurations, replicas and resources. In this way, the new release won't break the existing setup. You can refer to the documentation and see the [release notes]({{config.site_url}}live-agent/release-notes/releases/) related to Helm if it does.
+
+## Pulling and modifying the `values.yaml` file
+
+Run the following command:
+
+```sh
+helm pull oci://cognigy.azurecr.io/helm/live-agent --version X.X.X
+```
+
+This will download the Helm chart compressed.
+
+`live-agent-X.X.X.tgz`
+
+Now it can be uncompressed, the `values.yaml` file inside the folder needs to be modified according to your needs and then, the chart can be installed by using the following command:
+
+```sh
+helm install cognigy-live-agent ./live-agent-X.X.X --namespace live-agent
+```
+
+## After running the `helm install` command
 
 >**Note:** Our Helm chart has been tested and is compatible with API version v2. Older versions are not compatible.
 
