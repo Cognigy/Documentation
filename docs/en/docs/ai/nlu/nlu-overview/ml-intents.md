@@ -62,7 +62,7 @@ This is where creators are given the power to add unique levels of customized un
 
 Even though each Intent can have up to 2000 example sentences, we recommend a minumum of 5 and a maximum of 100. These sentences should be a broad range of possible user inputs that are expected to activate the Intent. Building a comprehensive example sentence list is a critical step in the process of building a smart AI service.
 
-When entering the example sentences you can use the **ENTER** key to go to the next NLU example sentence field.
+When entering the example sentences you can use the **TAB** or **ENTER** key to go to the next NLU example sentence field.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/f97faca-exampleSentences.PNG" width="100%" />
@@ -72,11 +72,18 @@ When entering the example sentences you can use the **ENTER** key to go to the n
 ???+ warning "Avoid Repetition"
     Rather than writing similar sentences for different entity names i.e. `I want to order Pizza, I want to order Pasta...` build and attach a Lexicon to the flow that can be [Annotated]({{config.site_url}}ai/nlu/nlu-overview/annotations/) into your sentence.
 
-A minimum of 5 example sentences are required for each Machine Learning Intent to ensure the NLU model can be sufficiently trained. If the minimum of 5 example sentences is not reached, a yellow warning icon will be displayed to prompt the user for further sentences. Any attempt at training the intents when less than 5 example sentences have been added will result in an error message being displayed.
+As stated previously, a minimum of 5 and a maximum of 100 example sentences per Intent is recommended to ensure that the NLU model is sufficiently trained. If the minimum threshold is not reached or if the maximum threshold is surpassed, a warning icon will be displayed to prompt the user to add or remove example sentences.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/87fee07-minSentenceWarning.PNG" width="100%" />
   <figcaption>Machine Learning Intents: Minimum Example Sentence warning</figcaption>
+</figure>
+
+Any attempt at training the Intents with less than 5 example sentences will result in a negative feedback once the build completes.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/87fee07-minSentenceNegativeFeedback.PNG" width="100%" />
+  <figcaption>Negative Feedback after training Intents with less than 5 Example Sentences</figcaption>
 </figure>
 
 Intent example sentences should be as distinct and unique as possible. If there is too much similarity and overlap with other intents, then the intent mapping will become less predictable and, if configured, intent confirmation sentences will be triggered more frequently.
