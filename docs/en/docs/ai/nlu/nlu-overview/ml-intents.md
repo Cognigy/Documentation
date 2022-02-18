@@ -79,11 +79,11 @@ As stated previously, a minimum of 5 and a maximum of 100 example sentences per 
   <figcaption>Machine Learning Intents: Minimum Example Sentence warning</figcaption>
 </figure>
 
-Any attempt at training the Intents with less than 5 example sentences will result in a negative feedback once the build completes.
+Any attempt at training the Intents with less than 5 example sentences will result in a negative feedback indicator once the build completes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/87fee07-minSentenceNegativeFeedback.PNG" width="100%" />
-  <figcaption>Negative Feedback after training Intents with less than 5 Example Sentences</figcaption>
+  <figcaption>Negative Feedback Indicator after training Intents with less than 5 Example Sentences</figcaption>
 </figure>
 
 Intent example sentences should be as distinct and unique as possible. If there is too much similarity and overlap with other intents, then the intent mapping will become less predictable and, if configured, intent confirmation sentences will be triggered more frequently.
