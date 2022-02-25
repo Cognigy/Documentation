@@ -5,8 +5,16 @@
 ---
 # Release notes
 
+
+## 4.19.1
+**Released** February 25th, 2022
+
+### Bugfixes
+- Fixed a bug where the Socketendpoint eventbuffer mechanism would not work properly when used in combination with handover functionality
+- Fixed a bug where additional connections to the Redis data-store would not be closed when using the Socketendpoint eventbuffering mechanism
+
 ## 4.19.0
-**This version is currently in pre-release and will be released soon**
+**Released** February 25th, 2022
 
 ### Features
 #### Last activity tracking
