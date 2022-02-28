@@ -66,7 +66,7 @@ Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/reso
   <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection.png" width="100%" />
 </figure>
 
-Agents with snapshots will have the toggle "Override Snapshot Connections" in the endpoint editor. Turning this toggle ON will allow this endpoint to override the connections in a snapshot with those of the connections in the project. If a connection is available only in the snapshot, then the same will be used from the snapshot irrespective of this toggle setting and if needed this connection needs to be manually updated.
+Agents with snapshots have the toggle "Override Snapshot Connections" in the endpoint editor. Turning this toggle ON will allow this endpoint to override the connections in a snapshot with the [**connections**]({{config.site_url}}ai/resources/build/connections/) in the project. If a connection is available only in the snapshot, then it will be used from the snapshot irrespective of this toggle setting. If needed, this connection needs to be manually updated.
 
 ???+ info "Default setting"
     By default, any endpoint will keep using the connections from the snapshot unless the toggle is turned ON.
