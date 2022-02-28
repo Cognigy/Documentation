@@ -5,6 +5,44 @@
 ---
 # Release notes
 
+## 4.20.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+#### Merging Cognigy Packages
+This release of Cognigy.AI adds the ability to merge Flow from Packages with the Flows already existing in your Agent. The functionality can also be used through our RESTful API.
+
+#### Additional Filter for Cognigy Insights Transcript Explorer
+This release of Cognigy.AI adds an additional "Flow Filter" to the Transcript Explorer in Cognigy Insights.
+
+#### Additional Filter for Cognigy Insights Message Explorer
+This release of Cognigy.AI adds an additional "Flow Filter" to the Message Explorer in Cognigy Insights.
+
+### Improvements
+- Improved by adding descriptions to settings section in Flow Node Editor
+- Improved by adding auto-focus to Say-Node text field in Flow Node Editor
+- Improved by adding optional (opt-in) cache for Flow execution
+- Improved by activating a new Lexicon Slot matcher by default - improving Intent training and making training of larger Intent models possible
+- Improved by updating internal http-request library which is exposed in Endpoint Transformers
+- Improving oauth-based login experience for Cognigy Live Agent when users are part of multiple Cognigy Organizations
+- Improved by reducing Snapshot size and NLU Training time by re-using fallback locale
+- Improved by preventing unnecessary re-render of our UI in the Endpoint Editor when Flow changes
+
+
+### Bugfixes
+- Fixed a bug where copying a Flow as part of a Cognigy Package prevent Intent Training
+- Fixed a bug where importing a Flow from a Cognigy Package could trigger Intents from the original Flow during Flow execution
+- Fixed a bug where an old Intent model could be used during Flow execution when the Locale is not explicitely selected in the Endpoint
+- Fixed a bug with Slotfillers when triggering the DATE Slot at the same time
+- Fixed a bug where Steps in the Cognigy Insights Step Explorer would not appear in the Step-dropdown when Steps come from a Snapshot
+- Fixed a bug where localized content in Flows would get lost during Package import when set to "do not import"
+- Fixed errors in our UI which would appear in the browsers console when navigating to the Flow Editor
+- Fixed a bug where Date recognition in our Cognigy NLU engine would stop working when api.setTimezoneOffset has been used in a Code Flow Node
+- Fixed a bug where updating Lexicon entries would not work in certain situations
+- Fixed a bug where uploading Lexicon CSV with an empty 4th column would not work
+- Fixed a bug regarding our Lookup Flow Node and its label
+- Fixed a bug in our Intent Editor where the view was out of sync and would display wrong data of another Intent
+- Fixed a bug where huge lexicons could not be downloaded
 
 ## 4.19.1
 **Released** February 25th, 2022
