@@ -58,6 +58,19 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 
 Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
 
+#### Override Snapshot Connections
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.21.0-blue.svg)]({{config.site_url}})
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection.png" width="100%" />
+</figure>
+
+Agents with snapshots will have the toggle "Override Snapshot Connections" in the endpoint editor. Turning this toggle ON will allow this endpoint to override the connections in a snapshot with those of the connections in the project. If a connection is available only in the snapshot, then the same will be used from the snapshot irrespective of this toggle setting and if needed this connection needs to be manually updated.
+
+???+ info "Default setting"
+    By default, any endpoint will keep using the connections from the snapshot unless the toggle is turned ON.
+
 #### Flow
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
