@@ -30,6 +30,19 @@ Each Translation Provider requires the following parameters:
 | Request Timeout | How long to wait for the provider to answer a request (in milliseconds) |
 | Sentence Cache Expiry Timeout | How long to keep translated sentences in the cache. The options are: 0 (no caching), 3600 (one hour) or 84600 (one day) | 
 
+### Microsoft Translator optional parameters
+The Microsoft Translator has two extra optional parameters as follows:
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/translator_ms_optional_settings.png" width="100%" />
+  <figcaption>MS Translator optional Settings</figcaption>
+</figure>
+
+| Parameter | Description |
+| --- | --- |
+| Custom API base URL | Use this field if you would like to use an URL different to the default one (``https://api.cognitive.microsofttranslator.com/``) |
+| Custom Subcription Region | This is the location (or region) of your Azure MS Translator resource. You may need to use this field when making calls to this API, if you set an specific region in your Azure account. |
+
 ## Configure Real Time Translation Settings
 
 <figure>
