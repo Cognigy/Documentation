@@ -22,7 +22,7 @@ Now to create an Inbox, channel name and a webhook URL needs to be set. Go to th
   <figcaption>Cognigy AI Endpoint Configuration Screen</figcaption>
 </figure>
 
-The webhook URL is the Cognigy.AI Endpoint Config URL domain plus `/handover/chatwoot`.
+The webhook URL is the Cognigy.AI Endpoint Config URL domain plus `/handover/liveagent`.
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA-add-api-channel-screen.png" width="100%" alt="Live Agent API channel Screen">
@@ -68,7 +68,7 @@ Now note down the following values: _Account ID_ and _Inbox ID_. These values ca
 </tr>
 <tr>
 <td>Live Agent URL</td>
-<td>cognigy-live-agent.com/app/accounts/1234/inbox/4405</td>
+<td>cognigy-live-agent.com/app/accounts/10/inbox/25</td>
 </tr>
 <tr>
 <td>Account ID</td>
