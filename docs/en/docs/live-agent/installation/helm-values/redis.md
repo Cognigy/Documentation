@@ -18,8 +18,8 @@ Compatible and tested Redis versions are **>= 5** and **<= 6**
 | `redis.auth.password` | string | `"redis"` | Redis Password |
 | `redis.master.persistence.enabled` | bool | `true` | Persistence can be disabled completely, if you want your data to only exist while the server is running. |
 | `redis.nameOverride` | string | `"live-agent-redis"` | Override the deployment name, if internal Redis is enabled. |
-| `configmap.REDIS_SENTINELS` | string | `""` | Redis Sentinel can be used by passing a list of sentinel hosts and ports. For example: `sentinel_host1:port1`, `sentinel_host2:port2` |
-| `configmap.REDIS_SENTINEL_MASTER_NAME` | string | `""` | A Redis sentinel master name is required when using sentinel. |
+| `redis.sentinelMasterName` | string | `""` | A Redis sentinel master name is required when using sentinel. |
+| `redis.sentinels` | string | `""` | Redis Sentinel can be used by passing a list of sentinel hosts and ports. For example: `sentinel_host1:port1`, `sentinel_host2:port2` |
 
 ## Internal Setup
 

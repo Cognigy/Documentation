@@ -40,6 +40,12 @@ helm install my-release \
 
 The above command sets the Live Agent certificate file path to `/etc/ca.pem`. More information can be found at the Helm documentation [Template and Values](https://helm.sh/docs/chart_best_practices/values).
 
+It is recommended to create a `custom-values.yaml` and add the key-values that need to be overridden instead of modifying the `values.yaml` file directly. Then at the moment of performing install/upgrade commands, it would be as easy as using the argument at the end like this:
+
+```sh
+helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
+```
+
 Next, you can find a definition for each of these values, to understand how to modify them accordingly. 
 
 ## Specific Configurations
@@ -59,9 +65,11 @@ For specific values and logic, here you can utilize these dedicated sections:
 | `image.repository`  | Live Agent Image Repository                           | `cognigy.azurecr.io/live-agent`    |
 | `image.tag`         | Live Agent Image Tag                                  | `e.g. 2.0.0`              |
 | `image.pullPolicy`  | Live Agent Image Pull Policy                          | `IfNotPresent`         |
-| `odata.image.repository`  | Live Agent Image Repository                           | `cognigy.azurecr.io/live-agent-odata`    |
-| `odata.image.tag`         | Live Agent Image Tag                                  | `e.g. 1.0.0`              |
-| `odata.image.pullPolicy`  | Live Agent Image Pull Policy                          | `IfNotPresent`         |
+| `image.pullSecretName`  | Live Agent Image Pull secret name                          | `cognigy-registry-token`         |
+| `odata.image.repository`  | Live Agent OData Image Repository                           | `cognigy.azurecr.io/live-agent-odata`    |
+| `odata.image.tag`         | Live Agent OData Image Tag                                  | `e.g. 1.0.0`              |
+| `odata.image.pullPolicy`  | Live Agent OData Image Pull Policy                          | `IfNotPresent`         |
+| `odata.image.pullSecretName`  | Live Agent OData Image Pull secret name                          | `cognigy-registry-token`         |
 
 
 ## ConfigMap Values
@@ -70,13 +78,10 @@ For specific values and logic, here you can utilize these dedicated sections:
 
 | Name                                | Description                                                                | Default Value                                              |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.CHATWOOT_INSTALLATION_ENV`     | Sets Live Agent installation method.                                  | `"helm"`                                                   |
-| `configmap.ENABLE_ACCOUNT_SIGNUP`         |  `true` : default option, allows sign ups, `false` : disables all the end points related to sign ups, `api_only`: disables the UI for signup, but you can create sign ups via the account APIs.  | `"false"`                                                  |
 | `configmap.FORCE_SSL`                     | Force all access to the app over SSL, default is set to false.                  | `"false"`                                                  |
-| `configmap.RAILS_ENV`                     | Sets rails environment.                                                         | `"production"`                                             |
-| `configmap.RAILS_MAX_THREADS`             | Number of threads each worker will use.                                         | `"5"`                                                      |
 | `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
 | `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot Customizations                                                              | `"true"`                                                   |
+| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)                                  | `""` |
 
 ### Cognigy
 
@@ -125,14 +130,6 @@ In case you have a custom Certificate Authority (CA) to trust, or if you need SS
 | `configmap.SSL_CLIENT_KEY`                | RSA key content, if there is not passphrase.                                    | `""`                                                       |
 | `configmap.SSL_CLIENT_KEY_PASSPHRASE` | RSA key passphrase, if there is not passphrase.                           | `""`                                                       |
 
-### Logging Values
-
-| Name                                | Type                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.RAILS_LOG_TO_STDOUT`           | string                                                              | `"true"`                                                   |
-| `configmap.LOG_LEVEL`                     | string                                                              | `"info"`                                                   |
-| `configmap.LOG_SIZE`                      | string                                                              | `"500"`                                                    |                                                      |
-
 ### Push Notifications
 
 For enabling push notifications, you need to provide the following values, as Live Agent uses [VAPID](https://datatracker.ietf.org/doc/html/draft-ietf-webpush-vapid-01) to be more secure. They can be generated by using [this tool](https://d3v.one/vapid-key-generator).
@@ -154,10 +151,6 @@ For enabling push notifications, you need to provide the following values, as Li
 | Key | Type | Default Value |
 |-----|------|---------|
 | `affinity` | object | `{}` |
-| `autoscaling.enabled` | bool | `false` |
-| `autoscaling.maxReplicas` | int | `100` |
-| `autoscaling.minReplicas` | int | `1` |
-| `autoscaling.targetCPUUtilizationPercentage` | int | `80` |
 | `frontendUrlOverride`                  | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary.                      | `"https://live-agent-domain.com/"`                                   |
 | `fullnameOverride` | string | `""` |
 | `hooks.affinity` | object | `{}` |
@@ -165,7 +158,6 @@ For enabling push notifications, you need to provide the following values, as Li
 | `hooks.migrate.hookAnnotation | string | `"post`-install,post-upgrade"` |
 | `hooks.migrate.resources.limits.memory` | string | `"1000Mi"` |
 | `hooks.migrate.resources.requests.memory` | string | `"1000Mi"` |
-| `imagePullSecrets` | list | `[]` |
 | `ingress.annotations` | object | `{}` |
 | `ingress.enabled` | bool | `false` |
 | `ingress.hosts[0].host` | string | `""` |
@@ -191,5 +183,5 @@ For enabling push notifications, you need to provide the following values, as Li
 | `services.targetPort` | int | `3000` |
 | `services.type` | string | `"LoadBalancer"` |
 | `tolerations` | list | `[]` |
-| `web.replica` | int | `1` |
+| `app.replica` | int | `1` |
 | `worker.replica` | int | `1` |
