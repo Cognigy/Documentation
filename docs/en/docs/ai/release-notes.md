@@ -5,8 +5,14 @@
 ---
 # Release notes
 
+## 4.20.1
+**Released** March 9th, 2022
+
+### Bugfixes
+- Fixed a bug where the Flow Editor could crash
+
 ## 4.20.0
-**This version is currently in pre-release and will be released soon**
+**Released** March 9th, 2022
 
 ### Features
 #### Merging Cognigy Packages
