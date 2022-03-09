@@ -5,6 +5,27 @@
 ---
 # Release notes
 
+## 4.21.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+- Improved by removing flickering from agent switcher in Cognigy Insights
+- Improved by making sure that pressing tab in the Intent Editor will move focus to the next example sentence
+- Improved by implementing new session-state management which increases platform throughput of up to 25%
+
+### Bugfixes
+- Fixed a bug where the Intent Editor would show unsaved changes when switching the Intent after clicking the save button
+- Fixed a bug where conversation-consumption reporting would not working in a reliable way
+- Fixed a bug where the UI would display an error when quickly switching between attached Lexicons
+- Fixed a bug where the UI would display an error when quickly switching between attached Flows
+- Fixed a bug where Intent training could fail due to empty example sentences
+- Fixed a bug in Cognigy LiveChat / Live Agent lite where users with access to multiple Organizations could not log-in
+- Fixed a bug where using a "wait for input" and "execute flow" Node after each other would lead to the wrong Cognigy Input object getting used
+- Fixed a bug where our NLU engine would detect a distance instead of a money-slot for a certain input
+- Fixed a bug in the Cognigy Insights Transcript Explorer where using the expert mode would time-out due to a missing database index
+- Fixed a bug on Cognigy Insights dashboards where the time-resolution was incorrect (displayed data in hours instead of minutes)
+- Fixed a bug where the Intent Editor would not display the "build model required" indicator after changing Agent settings
+
 ## 4.20.1
 **Released** March 9th, 2022
 
