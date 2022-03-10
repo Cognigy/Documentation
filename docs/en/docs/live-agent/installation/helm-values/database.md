@@ -19,7 +19,7 @@ Compatible and tested PostgreSQL versions **>= 10** and **<= 14**
 | `postgresql.postgresqlUsername`   | string | `"postgres"` | Database User |
 | `postgresql.postgresqlHost`   | string | `"postgres"` | Commented, unless using an external database. |
 | `postgresql.postgresqlPort`   | string | `"postgres"` | Commented, unless using an external database. |
-| `configmap.POSTGRES_SSL_MODE`     | string | `"prefer"` | Database SSL Mode  (prefer, disable, require)  |
+| `postgresql.postgresSSLMode`     | string | `"prefer"` | Database SSL Mode  (prefer, require, disable)  |
 
 
 ## Internal Setup
