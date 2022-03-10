@@ -6,22 +6,22 @@
 # FAQs
 
   - [Live Agent](#live-agent)
-    - [What happens if you remove a user from the  Live Agent?](#what-happens-if-you-remove-a-user-from-the-live-agent)
+    - [What happens if you remove a user from Live Agent?](#what-happens-if-you-remove-a-user-from-live-agent)
     - [How do I remove a user?](#how-do-i-remove-a-user)
     - [How to fix custom SSL certificate verification error?](#how-to-fix-custom-ssl-certificate-verification-error)
     - [How to fix SMTP for no authentication provider.](#how-to-fix-smtp-for-no-authentication-provider)
     - [How to create Labels and how to map them to a particular Conversation?](#how-to-create-labels-and-how-to-map-them-to-a-particular-conversation)
     - [How to request a file from Live Agent Conversation?](#how-to-request-a-file-from-live-agent-conversation)
     - [How to add an Agent to a new Inbox?](#how-to-add-an-agent-to-a-new-inbox)
-    - [How to create a Team and add Team members in the respective Team?](#how-to-create-a-team-and-add-team-members-in-the-respective-team)
+    - [How to create a Team and add team members to the respective Team?](#how-to-create-a-team-and-add-team-members-to-the-respective-team)
     - [How to see all the agents added in a particular Inbox?](#how-to-see-all-the-agents-added-in-a-particular-inbox)
     - [How to get the Access Token(API Key)?](#how-to-get-the-access-tokenapi-key)
     - [How to view the Account ID and the Inbox ID?](#how-to-view-the-account-id-and-the-inbox-id)
     - [How to navigate to the Cognigy.AI platform from Live Agent?](#how-to-navigate-to-the-cognigyai-platform-from-live-agent)
     - [How to send a reset password link for Live Agent user Agent by an administrator?](#how-to-send-a-reset-password-link-for-live-agent-user-agent-by-an-administrator)
-    - [What happens if you remove an Inbox from the  Live Agent?](#what-happens-if-you-remove-an-inbox-from-the-live-agent)
-  - [ Live Agent OData service](#live-agent-odata-service)
-    - [Why is the OData service not returning all the information from the db?](#why-is-the-odata-service-not-returning-all-the-information-from-the-db)
+    - [What happens if you remove an Inbox from Live Agent?](#what-happens-if-you-remove-an-inbox-from-live-agent)
+  - [Live Agent OData service](#live-agent-odata-service)
+    - [Why is the OData service not returning all the information from the database?](#why-is-the-odata-service-not-returning-all-the-information-from-the-database)
     - [Are you getting an unauthorised error while querying the OData endpoint?](#are-you-getting-an-unauthorised-error-while-querying-the-odata-endpoint)
     - [How to retrieve all content from a particular collection?(Ex: Conversation, Message)](#how-to-retrieve-all-content-from-a-particular-collectionex-conversation-message)
     - [How to filter OData with particular fields?](#how-to-filter-odata-with-particular-fields)
@@ -29,8 +29,8 @@
 
 ## Live Agent
 
-### What happens if you remove a user from the  Live Agent?
-Removing a user from the  Live Agent is superfluous. The user would be removed, but the next time they log back in, their user account would be recreated. All the user's management must be done from the Cognigy.AI platform site. 
+### What happens if you remove a user from Live Agent?
+Removing a user from Live Agent is superfluous. The user would be removed, but the next time they log back in, their user account would be recreated. All the user's management must be done from the Cognigy.AI platform site. 
 
 Please visit the Cognigy.AI Access Control section [***here***](./../ai/tools/user-menu/access-control.md) for more information.
 
@@ -68,12 +68,12 @@ Please visit the Labels section [***here***](./labels.md) for more information.
 Please visit the Conversations Workflow/Conversation Actions [***here***](./conversation-workflow.md) for more information.
 
 ### How to add an Agent to a new Inbox?
-You will need to log into the Live Agent with an admin role, then navigate to "Settings->Inboxes", and look for the Inbox you want.
+You will need to log into Live Agent with an admin role, then navigate to "Settings->Inboxes", and look for the Inbox you want.
 From that Inbox, select settings/Collaborators and pick your Agent name. Once you are done, click on the "Update" button.
 
 Please visit the Inboxes section [***here***](./inboxes.md#inbox-collaborators) for more information.
 
-### How to create a Team and add Team members to the respective Team? 
+### How to create a Team and add Team members to the respective Team?
 You will need to navigate into "Settings->Teams" and click on the "Create new team" button. In the second step, you will be able to add agents to the Team. You can also edit the Team later and add more agents then.
 
 Please visit the Teams section [***here***](./teams.md) for more information.
@@ -106,7 +106,7 @@ In your profile setting, you have a link "Cognigy.AI", from which you will be mo
 All the user's administration must be done from the Cognigy.AI platform. 
 Please see the  [***Cognigy Login page***](./../ai/installation/AI-login.md) for more information.
 
-### What happens if you remove an Inbox from the  Live Agent?
+### What happens if you remove an Inbox from Live Agent?
 You can safely modify/remove Inboxes created manually. But you must not change/update/delete the default Inbox
 created by the Cognigy.AI platform, as it will break the communication protocol between Live Agent and Cognigy.AI. There is no way
 to undo this step quickly. In case you need to do so, please reach support.
