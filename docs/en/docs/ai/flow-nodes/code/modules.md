@@ -60,11 +60,11 @@ In this example we're extracting the last element of the `favouriteFoods` array 
 <div class="divider"></div>
 [Messenger Documentation](https://github.com/snlangsuan/facebook-bot-messenger)
 
-For building Facebook Messenger messages (quick replies, buttons, lists, generic templates etc.) you can use the **facebook-bot-messenger** module within a code node.
+For building Facebook Messenger messages (quick replies, buttons, lists, generic templates etc.) you can use the **facebook-bot-messenger** module within a Code Node.
 
 ### Usage
 ---
-In a code node you can create a message type of your choice by using the **MessengerPlatform** namespace. For a list of possible message types please visit the [facebook-bot-messenger documentation](https://github.com/snlangsuan/facebook-bot-messenger).
+In a Code Node you can create a message type of your choice by using the **MessengerPlatform** namespace. For a list of possible message types, please visit the [facebook-bot-messenger documentation](https://github.com/snlangsuan/facebook-bot-messenger).
 
 ### Example
 ---
@@ -81,13 +81,23 @@ actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMes
 
 ## Messenger Platform
 <div class="divider"></div>
-[Xml2js Documentation](https://www.npmjs.com/package/xml2js)
+[XML-js Documentation](https://www.npmjs.com/package/xml-js)
 
-In case you want to parse xml data you can use this module.
+In case you want to parse XML data, you can use this module.
 
 ### Usage
 ---
-Within a code node you can call the following method: 
+Within a Code Node you can call the following method: 
 ```javaScript
-xmljs.xml2js(<XML_DATA>);
+const xml =
+    '<?xml version="1.0" encoding="utf-8"?>' +
+    '<note importance="high" logged="true">' +
+    '    <title>Happy</title>' +
+    '    <todo>Work</todo>' +
+    '    <todo>Play</todo>' +
+    '</note>';
+
+const result = xmljs.xml2json(xml, { compact: true, spaces: 4 });
+
+// result will now contain a JSON representation of the xml above
 ``` 
