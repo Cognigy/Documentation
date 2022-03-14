@@ -60,9 +60,19 @@ At the bottom, you can navigate to different pages and toggle the amount of Keyp
 Lexicons libraries can be uploaded and downloaded in CSV format by clicking on the up and down arrows in the top right corner of the Lexicon Editor.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/adc9dd8-lexicon-upload-download.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/adc9dd8-lexicon-upload-download.png" width="100%" />
 </figure>
 
+### Prepare CSV File Download
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.22.0-blue.svg)]({{config.site_url}})
+
+To prepare the lexicon for download, click the down arrow. This will run a background task to prepare the CSV file. 
+Once the task is completed, a notification will appear and a blue download button will be displayed in the lexicon editor top right corner, click the button to start the download.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/lexicon_download.png" width="200%" />
+</figure>
 
 ### Lexicon .csv Format
 
