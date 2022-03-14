@@ -89,5 +89,15 @@ In case you want to parse XML data, you can use this module.
 ---
 Within a Code Node you can call the following method: 
 ```javaScript
-xmljs.xml-js(<XML_DATA>);
+const xml =
+    '<?xml version="1.0" encoding="utf-8"?>' +
+    '<note importance="high" logged="true">' +
+    '    <title>Happy</title>' +
+    '    <todo>Work</todo>' +
+    '    <todo>Play</todo>' +
+    '</note>';
+
+const result = xmljs.xml2json(xml, { compact: true, spaces: 4 });
+
+// result will now contain a JSON representation of the xml above
 ``` 
