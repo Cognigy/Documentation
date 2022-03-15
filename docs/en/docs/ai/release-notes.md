@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.21.1
+**This version is currently in pre-release and will be released soon**
+
+### Bugfixes
+- Fixed a bug where the new session state management introduced in 4.21.0 would not properly work in certain conditions
+
 ## 4.21.0
 **This version is currently in pre-release and will be released soon**
 
