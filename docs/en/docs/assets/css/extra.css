@@ -383,7 +383,8 @@ body > header > nav > div.md-header__source {
 }
 
 .md-header__source::before{
-  content: "Suggest Edits on Github";
+  /* temporarily disabled Suggest Edits; */
+  /*content: "Suggest Edits on Github"; */
   font-size: 12px;
   padding-left: 14px;
 }
