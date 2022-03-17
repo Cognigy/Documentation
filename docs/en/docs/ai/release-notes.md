@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.21.2
+**This version is currently in pre-release and will be released soon**
+
+### Bugfixes
+- Fixed a bug where the injectContext API would not work as the Context would not get properly deserialized after loading from the database
+
 ## 4.21.1
 **This version is currently in pre-release and will be released soon**
 
