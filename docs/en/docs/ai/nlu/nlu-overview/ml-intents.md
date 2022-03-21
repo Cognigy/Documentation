@@ -72,7 +72,7 @@ When entering the example sentences you can use the **TAB** or **ENTER** key to 
 ???+ warning "Avoid Repetition"
     Rather than writing similar sentences for different entity names i.e. `I want to order Pizza, I want to order Pasta...` build and attach a Lexicon to the flow that can be [Annotated]({{config.site_url}}ai/nlu/nlu-overview/annotations/) into your sentence.
 
-As stated previously, a minimum of 5 and a maximum of 100 example sentences per Intent is recommended to ensure that the NLU model is sufficiently trained. If the minimum threshold is not reached or if the maximum threshold is surpassed, a warning icon will be displayed to prompt the user to add or remove example sentences.
+As stated previously, a minimum of 5 and a maximum of 100 example sentences per Intent are recommended to ensure that the NLU model is sufficiently trained. If the minimum threshold is not reached or if the maximum threshold is surpassed, a warning icon will be displayed to prompt the user to add or remove example sentences.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/87fee07-minSentenceWarning.PNG" width="100%" />
