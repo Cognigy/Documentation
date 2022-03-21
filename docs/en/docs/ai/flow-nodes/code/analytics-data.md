@@ -22,7 +22,7 @@ The following fields can be overwritten in a Code Node:
 | Field          | Description                                                                                                                                              | Type            |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
 | intent         | The intent that will be written to analytics. You can for instance modify this field to store the intent that was found in an executed Flow in analytics | String          |
-| intentFlow     | The Flow parent ID of the Flow where the intent was found                                                                                                | String          |
+| intentFlow     | The ID of the Flow where the intent was found (main flow or attached flow)                                                                               | String          |
 | intentScore    | The score of the intent that was found                                                                                                                   | Number          |
 | inputText      | The input text.                                                                                                                                          | String          |
 | inputData      | The input data object.                                                                                                                                   | {"key":"value"} |
