@@ -72,8 +72,8 @@ The following snippet can be used to generate a quick reply message. Please keep
 ```javaScript
 // use facebook-bot-messenger to compile reply
 const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');
-builder.addImageOption('Red', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'http://petersfantastichats.com/img/red.png')
-       .addImageOption('Green', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'http://petersfantastichats.com/img/green.png');
+builder.addImageOption('Red', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'https://cognigy.com/img/red.png')
+       .addImageOption('Green', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'https://cognigy.com/img/green.png');
 
 // output the reply
 actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
