@@ -51,7 +51,7 @@ At the bottom, you can navigate to different pages and toggle the amount of Keyp
     Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specifc flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/) for more information.
 
 ???+ success "Access slots in your Flow"
-    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
+    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
 
 ## Importing & Exporting Lexicons
 
@@ -60,9 +60,19 @@ At the bottom, you can navigate to different pages and toggle the amount of Keyp
 Lexicons libraries can be uploaded and downloaded in CSV format by clicking on the up and down arrows in the top right corner of the Lexicon Editor.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/adc9dd8-lexicon-upload-download.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/adc9dd8-lexicon-upload-download.png" width="100%" />
 </figure>
 
+### Prepare CSV File Download
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.22.0-blue.svg)]({{config.site_url}})
+
+To prepare the Lexicon for download, click the down arrow. This will run a background task to prepare the CSV file. 
+Once the task is completed, a notification will appear and a blue download button will be displayed in the Lexicon Editor top right corner, click the button to start the download.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/lexicon_download.png" width="200%" />
+</figure>
 
 ### Lexicon .csv Format
 
@@ -87,7 +97,7 @@ Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""
 
 <div class="divider"></div>
 
-Cognigy.AI features built-in slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built in slot types are listed below:
+Cognigy.AI features built-in Slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built in Slot types are listed below:
 
 |Slot type|
 |---|
