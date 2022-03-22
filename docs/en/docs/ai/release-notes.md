@@ -6,19 +6,19 @@
 # Release notes
 
 ## 4.21.2
-**This version is currently in pre-release and will be released soon**
+**Released** March 22nd, 2022
 
 ### Bugfixes
 - Fixed a bug where the injectContext API would not work as the Context would not get properly deserialized after loading from the database
 
 ## 4.21.1
-**This version is currently in pre-release and will be released soon**
+**Released** March 22nd, 2022
 
 ### Bugfixes
 - Fixed a bug where the new session state management introduced in 4.21.0 would not properly work in certain conditions
 
 ## 4.21.0
-**This version is currently in pre-release and will be released soon**
+**Released** March 22nd, 2022
 
 ### Improvements
 - Improved by removing flickering from agent switcher in Cognigy Insights
