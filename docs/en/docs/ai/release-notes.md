@@ -5,6 +5,34 @@
 ---
 # Release notes
 
+## 4.22.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+This release of Cognigy.AI gives customers the ability to override the Connections of a Snapshot with those of the Agent via an Endpoint setting
+
+### Improvements
+- Improved the performance of the Flow Chart Editor
+- Improved by adding support for embedding the Webchat via an iFrame by configuring an environment variable
+- Improved by adding a new region field to the Microsoft translation settings. When the region is set, all the subsequent requests to the Azure Cloud Translator will include the set region
+- Improved by showing a warning indicator when more than 100 example sentences are provided for an Intent
+- Improved by no longer stopping the Flow execution when an Extension times out. Instead, the error will be available to the Flow in the input object. This change does not impact existing Snapshots#23106)
+- Improved performance by loading contact profiles in parallel with scoring the NLU model
+
+### Bugfixes
+- Fixed a bug where the userId when using our Azure Bot Services Endpoint would reset after one hour
+- Fixed a bug where the "Alternate Input" of a Match Pattern is mistakenly not used
+- Fixed a bug where incomplete transcripts are shown in Salesforce Service Cloud Live Chat after a handover is performed
+- Fixed a bug where the NLU does not separate text into tokens at the correct places when Chinese is used as NLU language
+- Fixed a bug where whitespaces and ampersands are not encoded correctly in URLs when HTTP requests are made using the HTTP Request Node
+- Fixed a bug where a too high number of "user quit/joined" events are displayed in Live Chat and Live Agent
+- Fixed a bug in Live Chat where the last message would not always be displayed in the sidebar
+- Fixed a bug where the input.intentLevel object is not available after an Intent reprompt, a Question Node with reconfirmation or a Question Node with reprompt and reconfirmation
+- Fixed a bug where user-generated logs from Adaptive Cards metadata with keys starting with a dollar $ symbol are incorrectly not persisted
+- Fixed a bug where Merge Profile does not work via API
+- Fixed a bug where the user ID is cut off and cannot be copied in Live Chat
+- Fixed a bug where large Lexicons could not be downloaded properly
+
 ## 4.21.2
 **Released** March 22nd, 2022
 
