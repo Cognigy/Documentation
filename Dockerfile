@@ -1,11 +1,13 @@
 #
 # Stage 1: build 'site' folder
 #
-FROM python:3.9.7-buster as build
+FROM python:3.9.12-buster as build
 
 WORKDIR /app
 
 COPY requirements.txt /app
+
+RUN python -m pip install --upgrade pip
 
 RUN pip install -r requirements.txt
 
