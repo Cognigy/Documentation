@@ -6,7 +6,7 @@
 # Release notes
 
 ## 4.22.0
-**This version is currently in pre-release and will be released soon**
+**Released** March 28th, 2022
 
 ### Improvements
 - Improved by indicating Flow switches in the expert mode of Transcript Explorer
