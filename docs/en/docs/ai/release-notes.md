@@ -6,7 +6,7 @@
 # Release notes
 
 ## 4.22.0
-**This version is currently in pre-release and will be released soon**
+**Released** March 28th, 2022
 
 ### Features
 This release of Cognigy.AI gives customers the ability to override the Connections of a Snapshot with those of the Agent via an Endpoint setting

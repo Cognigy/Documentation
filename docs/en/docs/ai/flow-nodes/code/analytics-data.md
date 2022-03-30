@@ -19,20 +19,27 @@ analyticsdata.intent = "test";
 <div class="divider"></div>
 The following fields can be overwritten in a Code Node:
 
-| Field | Description | Type |
-| ----------- | ----------- | ----------- |
-| intent | The intent that will be written to analytics. You can for instance modify this field to store the intent that was found in an executed Flow in analytics | String |
-| intentFlow | The Flow parent ID of the Flow where the intent was found | String |
-| intentScore | The score of the intent that was found | Number |
-| inputText | The input text. | String |
-| inputData | The input data object. | {"key":"value"} |
-| state | The [State]({{config.site_url}}ai/tools/interaction-panel/state/) the Flow is currently in | String |
-| slots | The slots that were found in the user's input | Object |
-| completedGoals | A list of goals the user has completed | List of Strings |
-| understood | Whether the input was understood | Boolean |
-| custom1 | A custom field that can be set to any string value during Flow execution. Defaults to null | String |
-| custom2 | A custom field that can be set to any string value during Flow execution. Defaults to null | String |
-| custom3 | A custom field that can be set to any string value during Flow execution. Defaults to null | String |
+| Field          | Description                                                                                                                                              | Type            |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| intent         | The intent that will be written to analytics. You can for instance modify this field to store the intent that was found in an executed Flow in analytics | String          |
+| intentFlow     | The ID of the Flow where the intent was found (main flow or attached flow)                                                                               | String          |
+| intentScore    | The score of the intent that was found                                                                                                                   | Number          |
+| inputText      | The input text.                                                                                                                                          | String          |
+| inputData      | The input data object.                                                                                                                                   | {"key":"value"} |
+| state          | The [State]({{config.site_url}}ai/tools/interaction-panel/state/) the Flow is currently in                                                               | String          |
+| slots          | The slots that were found in the user's input                                                                                                            | Object          |
+| completedGoals | A list of goals the user has completed                                                                                                                   | List of Strings |
+| understood     | Whether the input was understood                                                                                                                         | Boolean         |
+| custom1        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom2        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom3        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom4        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom5        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom6        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom7        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom8        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom9        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
+| custom10       | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
 
 ## Working with the custom fields
 <div class="divider"></div>
