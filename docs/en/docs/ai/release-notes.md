@@ -5,6 +5,18 @@
 ---
 # Release notes
 
+## 4.22.2
+**Released** March 31st, 2022
+
+### Bugfixes
+- Fixed a bug where data from Microsoft Azure Bot Services endpoint would not get properly forwarded to the Flow
+
+## 4.22.1
+**Released** March 30th, 2022
+
+### Bugfixes
+- Fixed a bug where inject and notify didn't work for Microsoft Azure Bot Services endpoints
+
 ## 4.22.0
 **Released** March 28th, 2022
 
