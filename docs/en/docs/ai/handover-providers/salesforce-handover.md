@@ -1,9 +1,9 @@
 ---
- title: "Salesforce Handover" 
+ title: "Salesforce Service Cloud" 
  slug: "salesforce-handover" 
  hidden: false 
 ---
-# Salesforce Integration
+# Salesforce Service Cloud Integration
 
 ## Description
 

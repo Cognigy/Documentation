@@ -253,11 +253,22 @@ nav:
     - ai/endpoints/workplace-by-fb.md
   - Handover Providers:
     - ai/handover-providers/overview.md
-    - ai/handover-providers/livechat-handover.md
+    # - Live Agent:
+    #   - ai/handover-providers/live-agent-handover.md
+    #   - Live Agent Setup:
+    #     - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
+    #     - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
+    #     - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
+    #     - Handover Setup:
+    #       - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
+    #       - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
+    #       - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
+    #     - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
+    #     - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/salesforce-handover.md
-  # - Cognigy Live Agent Setup:
-  #   - ai/cognigy-live-agent/cognigy-live-agent-setup.md
+    - ai/handover-providers/livechat-handover.md
+  
   - Installation & Configuration:
     - ai/installation/installation-and-updating.md
     - ai/installation/browser-requirements.md
@@ -295,12 +306,7 @@ nav:
   - Release Notes:
     - live-agent/release-notes/releases.md
   - Getting Started:
-    - Creating an Account:
-      - live-agent/getting-started/creating-an-account.md
-      - live-agent/getting-started/inviting-your-agents.md
-      - live-agent/getting-started/configuring-a-cognigy-endpoint-for-handover.md
-      - live-agent/getting-started/add-an-inbox-for-handling-the-handover.md
-      - live-agent/getting-started/creating-a-cognigy-handover-flow.md
+    - live-agent/getting-started/live-agent-getting-started.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md

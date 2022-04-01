@@ -1,5 +1,5 @@
 ---
- title: "Chatwoot Handover" 
+ title: "Chatwoot" 
  slug: "chatwoot-handover" 
  hidden: false 
 ---
