@@ -27,7 +27,7 @@ See the example below from our *Trial* environment.
 </table>
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-endpoint-editor-webchat-selection.png" width="75%" alt="Cognigy.AI Endpoint Settings">
+    <img src="{{config.site_url}}live-agent/images/LA-endpoint-editor-webchat-selection.png" width="100%" alt="Cognigy.AI Endpoint Settings">
   <figcaption>Cognigy.AI Webchat Endpoint Settings</figcaption>
 </figure>
 
@@ -54,14 +54,14 @@ Once logged into Live Agent, note down the following values: _Account ID_ and _I
 At the bottom left corner of your screen, click the profile icon displaying your initials. Then click on *Profile Settings*.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-profile-settings.png" width="75%" alt="Live Agent Profile Settings">
+    <img src="{{config.site_url}}live-agent/images/LA-profile-settings.png" width="100%" alt="Live Agent Profile Settings">
   <figcaption>Profile Settings</figcaption>
 </figure>
 
 Scroll down and find the section labeled *Access Token*. Copy the value shown here. This is your *API Key*.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-access-token.png" width="75%" alt="Live Agent Access Token">
+    <img src="{{config.site_url}}live-agent/images/LA-access-token.png" width="100%" alt="Live Agent Access Token">
   <figcaption>Live Agent Access Token</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Return to the Endpoint Editor in Cognigy.AI, go back to Handover Settings in the
 Enter the *Account ID* and *API Key* (Access Token) found in the previous steps and save your changes.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-endpoint-id-apikey.png" width="75%" alt="Account ID and API Key">
+    <img src="{{config.site_url}}live-agent/images/LA-endpoint-id-apikey.PNG" width="100%" alt="Account ID and API Key">
   <figcaption>Account ID and API Key</figcaption>
 </figure>
 

@@ -13,7 +13,7 @@ Once you have [**Setup your Endpoint for Handover to Live Agent**]({{config.site
 Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-handover-node.png" width="100%" alt="Cognigy.AI Handover Flow Screen">
+    <img src="{{config.site_url}}live-agent/images/LA-handover-node.PNG" width="100%" alt="Cognigy.AI Handover Flow Screen">
   <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ Go back to the Endpoint Editor, click on **Open Demo Webchat**.
 Say "Hi", and click the send button to start the Conversation. 
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-webchat-hi.png" width="100%" alt="Webchat Screen">
+    <img src="{{config.site_url}}live-agent/images/LA-webchat-hi.PNG" width="100%" alt="Webchat Screen">
     <figcaption>Webchat Screen</figcaption>
 </figure>
 
@@ -47,21 +47,21 @@ Open a tab with Live Agent via the User Menu.
 Find the Conversation by clicking the Conversation bubble on the left. Next, click on the *All* tab.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-inbox-example.png" width="100%" alt="Live Agent Conversation Screen">
+    <img src="{{config.site_url}}live-agent/images/LA-inbox-example.PNG" width="100%" alt="Live Agent Conversation Screen">
     <figcaption>Live Agent Conversation Screen</figcaption>
 </figure>
 
 Open the Conversation, and send a message from Live Agent.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-conversation-example.png" width="100%" alt="Live Agent Conversation">
+    <img src="{{config.site_url}}live-agent/images/LA-conversation-example.PNG" width="100%" alt="Live Agent Conversation">
     <figcaption>Live Agent Conversation</figcaption>
 </figure>
 
 This messages should also appear on the Cognigy.AI Webchat window.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}live-agent/images/LA-webchat.png" width="100%" alt="Cognigy.AI Webchat">
+    <img class="image-center" src="{{config.site_url}}live-agent/images/LA-webchat.PNG" width="100%" alt="Cognigy.AI Webchat">
     <figcaption>Cognigy.AI Webchat</figcaption>
 </figure>
 

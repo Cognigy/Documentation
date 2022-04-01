@@ -23,7 +23,7 @@ Otherwise go to the top right corner of your screen, and open the *User Menu*. C
 Next, click the button labeled *Create new User*. Here you will create the credentials for your Agent.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/create-agent.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/create-agent.PNG" width="100%" />
   <figcaption>Create New User Menu</figcaption>
 </figure>
 
@@ -40,14 +40,14 @@ Click the *Add new  Member* button, and select your new agent from the drop down
 Fom Cognigy.AI, click *Manage* and then *Members*. Select an Agent in the list, and use the *+* button to edit its [Project Roles]({{config.site_url}}ai/resources/manage/members/#project-roles). 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}live-agent/images/la-diagram-roles.png" width="85%" />
+  <img class="image-center" src="{{config.site_url}}live-agent/images/la-diagram-roles.PNG" width="85%" />
   <figcaption>Live Agent Project and Inbox Mapping</figcaption>
 </figure>
 
 To make them an Agent within Live Agent, simply give them the *Agent* role as shown below.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-roles.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-roles.PNG" width="100%" />
   <figcaption>Adding Roles</figcaption>
 </figure>
 
@@ -62,7 +62,7 @@ Open Live Agent, and click the gear icon for *Settings*. Next click *Inboxes* an
 Once in the Inbox settings, click *Collaborators*. Here you can add your Agent to the Inbox.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/add-agent-inbox.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/add-agent-inbox.PNG" width="100%" />
   <figcaption>Adding Agents to an Inbox</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ You can also give your Agent the *Admin Role* within Live Agent.
 Click the gear icon for *Settings*. Next click *Agents* and the pencil icon (*Edit*) button next to your Agent. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/agent-role.png" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/agent-role.PNG" width="75%" />
   <figcaption>Agent Roles in Live Agent</figcaption>
 </figure>
 

@@ -98,7 +98,7 @@ Now your additional Inbox is almost ready.
 To begin using your new Inbox, setup a Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
 <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-handover-node.png" width="100%" alt="Cognigy.AI Handover Flow Screen">
+    <img src="{{config.site_url}}live-agent/images/LA-handover-node.PNG" width="100%" alt="Cognigy.AI Handover Flow Screen">
   <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
 </figure>
 

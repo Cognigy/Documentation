@@ -14,7 +14,7 @@ Now that you have [**Setup Live Agent for your Organisation**]({{config.site_url
 Open an existing [Agent]({{config.site_url}}ai/resources/agents/agents/). Go to the bottom left corner of your screen, and click on [Manage]({{config.site_url}}ai/resources/manage/manage/). Next click [Settings]({{config.site_url}}ai/resources/manage/settings/) selection. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/manage-settings.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/manage-settings.PNG" width="100%" />
   <figcaption>Agent Settings</figcaption>
 </figure>
 
