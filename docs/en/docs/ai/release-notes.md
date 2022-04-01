@@ -5,8 +5,20 @@
 ---
 # Release notes
 
+## 4.22.2
+**Released** March 31st, 2022
+
+### Bugfixes
+- Fixed a bug where data from Microsoft Azure Bot Services endpoint would not get properly forwarded to the Flow
+
+## 4.22.1
+**Released** March 30th, 2022
+
+### Bugfixes
+- Fixed a bug where inject and notify didn't work for Microsoft Azure Bot Services endpoints
+
 ## 4.22.0
-**This version is currently in pre-release and will be released soon**
+**Released** March 28th, 2022
 
 ### Features
 This release of Cognigy.AI gives customers the ability to override the Connections of a Snapshot with those of the Agent via an Endpoint setting
