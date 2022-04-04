@@ -6,7 +6,7 @@
 
 # Quotas and Limitations
 
-This page contains default quotas and limitations that apply to new Cognigy AI installations. Any deviations from the default values for our Trial and App environments are also stated within the table below.
+This page contains default quotas and limitations that apply to new Cognigy AI installations. 
 
 ???+ info "Changing values for managed Cognigy AI environments"
     In case you want to request a change for your managed Cognigy  AI environment, please submit a Support request using this template: 
@@ -20,14 +20,16 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
     Your Name 
     ````
 
+Any **deviations** from the default values for our Trial and App environments are also stated in **bold** within the table below.
+
 |Description|Default value|Trial|App|
 |--|--|--|--|
 |**Database and HTTP Node Calls** |||
 |Maximum Database query result from DB Flow Nodes |500 kB |||
-|Maximum Context size|65 kB||1.5 MB|
+|Maximum [Context]({{config.site_url}}ai/tools/interaction-panel/context/) size|65 kB||**1.5 MB**|
 |Maximum HTTP payload size for HTTP-Request Flow Node | 65 kB| |
-|Maximum HTTP response size for HTTP-Request Flow Node |524 kB |2.6 MB |1.5 MB |
-|HTTP-Request Flow Node timeout |8 s ||15 s |
+|Maximum HTTP response size for HTTP-Request Flow Node |524 kB |**2.6 MB** |**1.5 MB** |
+|HTTP-Request Flow Node timeout |8 s ||**15 s** |
 |Maximum JSON encoded payload size for requests to our RESTful API|60 kB |||
 |Minimum HTTP text body (used in CSV) |100 kB |||
 |Maximum text encoded (raw) payload size for request to our RESTful API (e.g. used to upload CSV files) |2 MB |||
@@ -60,7 +62,7 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
 |Maximum number of times a Flow can execute the same Path for a single user message before “Infinite Loop protection” is triggered |4|||
 |Maximum number of undo/redo operations to be stored per user in the Flow Editor |5|||
 |**Transformers** |||
-|Maximum number of HTTP requests that can be sent from a Cognigy Transformer  |1|2 ||
+|Maximum number of HTTP requests that can be sent from a Cognigy Transformer  |1|**2** ||
 |Maximum amount of time a Cognigy Transformer can run before it will be stopped |5 s |||
 |**SMTP Node** |||
 |Maximum number of times the system retries to send an outbound Email |3 |||
@@ -69,6 +71,8 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
 |Maximum code execution time |1 s |||
 
 ## Retention of Records
+
+???+ warning "Features such as **[OData]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/)** and **[Insights]({{config.site_url}}insights/cognigy-insights/)** rely on records you will find in the **Data** section below."
 
 |Description|Default value|Trial|App|
 |--|--|--|--|
