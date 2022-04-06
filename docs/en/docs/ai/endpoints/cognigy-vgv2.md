@@ -4,23 +4,23 @@
  hidden: true 
 ---
 # Cognigy Voice Gateway
-
+## Overview
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **Voice Gateway**, allowing customers to speak to your **Agent** instead of just writing with it.
+Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **Voice Gateway**, allowing customers to speak with your **Agent** instead of just writing to it.
 
 ## Voice Gateway specific Nodes
 
-Cognigy.AI comes with inbuilt Nodes to control the Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/) for more information.
+Cognigy.AI comes with built in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/) for more information.
 
 
 ## Generic Endpoint Settings
 
 <div class="divider"></div>
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
