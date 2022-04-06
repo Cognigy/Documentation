@@ -24,3 +24,12 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 
 ???+ info "This Node supports Activity Parameters"
     To learn more about activity parameters, visit our Help Center at: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)
+
+## Voice Gateway Index
+- [Cognigy Voice Gateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
+- [Voice Gateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
+- [DTMF Node]({{config.site_url}}ai/flow-nodes/vgv2/dtmf/)
+- [Hang Up Node]({{config.site_url}}ai/flow-nodes/vgv2/hangup/)
+- [Play Node]({{config.site_url}}ai/flow-nodes/vgv2/play/)
+- [Refer Node]({{config.site_url}}ai/flow-nodes/vgv2/refer/)
+- [Set Session Config Node]({{config.site_url}}ai/flow-nodes/vgv2/set-session-config/)

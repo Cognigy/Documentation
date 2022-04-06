@@ -251,7 +251,7 @@ def live(
         lang = "en"
     lang_path: Path = docs_path / lang
     os.chdir(lang_path)
-    mkdocs.commands.serve.serve(dev_addr="0.0.0.0:8008")
+    mkdocs.commands.serve.serve(dev_addr="localhost:8008")
     typer.secho(f"http://0.0.0.0:8008/")
 
 
