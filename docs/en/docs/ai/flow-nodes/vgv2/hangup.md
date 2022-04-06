@@ -16,7 +16,7 @@ The Hang Up Node will instruct Voice Gateway to end the call.
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
-| Reason for hang up | Text | The reason for hanging up. Will be shown in logs. |
+| Reason for hang up | Text | The reason for hanging up, will be shown in logs |
 
 ## Voice Gateway Index
 - [Cognigy Voice Gateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
