@@ -16,7 +16,7 @@ The Refer Node let's you pass an active call to a tel or sip target.
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
-| Refer Destination | Text | E.164 syntax or a SIP URI are supported. |
+| Refer Destination | Text | E.164 syntax or a SIP URI are supported |
 
 ## Voice Gateway Index
 - [Cognigy Voice Gateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
