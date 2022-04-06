@@ -18,7 +18,7 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 | ----------- | ----------- | ----------- |
 | Media URL | Text | You can use MP3 or WAV encoded files |
 | Loop count | Number | Number of times the media will be looped |
-| Cache Audio | Toggle | Whether to cache the audio file or not. Caching will make future playbacks quicker. Default: false. |
+| Cache Audio | Toggle | Whether to cache the audio file or not. Caching will make future playbacks quicker. Default: false |
 | Set Activity Parameters | Toggle | Option to add parameters which will be valid for this activity only |
 
 
