@@ -5,6 +5,11 @@
 ---
 # Release notes
 
+## 4.23.0
+**This version is currently in pre-release and will be released soon**
+
+This release does not contain any fixes ore improvements.
+
 ## 4.22.0
 **Released** March 28th, 2022
 

@@ -5,6 +5,25 @@
 ---
 # Release notes
 
+## 4.23.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+#### New Agent templates
+This release of Cognigy.AI contains new templates for our Agent creation wizard. We have introduced a variety of new templates in order to support our customers with getting starter quicker
+
+### Improvements
+- Improved by allowing to set the handoverEscalations in the analytics data from a Code Node or from the Overwrite Analytics Node
+- Improved by allowing customers to be notified through log when the license has 3 months left or less
+
+### Bugfixes
+- Fixed a bug where localizing a node was not translating the VoiceGateway channel text.
+- Fixed a bug where the timezone was not always correct after using the setTimezoneOffset action.
+- Fixed a bug where the session state could not be saved when the Flow would output JSON with a $ in the key
+- Fixed a bug where some executed nodes were not getting green border
+- Fixed a bug where basic user with member manager roles didn't have correct permissions
+- Fixed a bug where a Flow Editor UI refresh was needed after new extension have been installed in order to be able to add Flow Nodes of these extensions in Flows
+
 ## 4.22.2
 **Released** March 31st, 2022
 
