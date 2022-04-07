@@ -51,6 +51,7 @@ nav:
   - de: /de/
 - AI:
   - ai/platform-overview.md
+  - ai/architecture.md
   - Release Notes:
     - ai/release-notes.md
   - Resources:
