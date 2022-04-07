@@ -48,7 +48,7 @@ To add Roles to your Agents, go back to the top right corner of your screen, and
 Click the Agent you would like to assign Roles to. Now you will see *Global Roles*, simply click the plus arrow and choose the Role needed.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/live-agent-roles.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/live-agent-roles.png" width="100%" />
   <figcaption>Global Roles Menu</figcaption>
 </figure>
 
