@@ -85,10 +85,11 @@ If you want to see examples of Extensions, visit our GitHub repository.
 </blockquote>
 
 
+### Handling Timeouts in an Extension
+Extensions have a default timeout of 20 seconds, meaning if the time it takes for the Extension to complete is more than 20 seconds, the Extension will stop and an error will be returned to the Flow. The Flow execution will continue, and the error can be accessed under ```input.extensionError.message```.
+
 ???+ warning "Extension Timeout"
     Extensions have a default time-out of 20 seconds. The time-out can be changed on dedicated Cognigy.AI installations.
-
-
 
 ## Installing a custom Extension
 <div class="divider"></div>
