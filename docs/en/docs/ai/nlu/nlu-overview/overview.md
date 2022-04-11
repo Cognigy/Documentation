@@ -214,3 +214,7 @@ A [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition which m
 
 #### Result Location
 The location of a filled slot result is determined by default by the slot type (e.g., `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (e.g., `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
+
+### Reject Fallback Intent
+
+The intent will be ``null`` if the NLU predicts the utterance is out of scope of the intent model and no intent should be triggered. You can add examples to the [Reject Intent]({{config.site_url}}ai/nlu/nlu-overview/reject-intents/) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
