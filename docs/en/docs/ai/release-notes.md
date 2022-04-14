@@ -5,6 +5,18 @@
 ---
 # Release notes
 
+## 4.23.2
+**Released** April 14th, 2022
+
+### Bugfixes
+- Fixed a bug where the timeouts of HTTP Requests were no longer configurable on an infrastructure level
+
+## 4.23.1
+**Released** April 13th, 2022
+
+### Bugfixes
+- Fixed a bug where the URL would be double encoded for HTTP Requests
+
 ## 4.23.0
 **Released** April 12th, 2022
 
