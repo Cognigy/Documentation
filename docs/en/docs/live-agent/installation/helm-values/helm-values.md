@@ -58,7 +58,7 @@ For specific values and logic, here you can utilize these dedicated sections:
 - [SMTP]({{config.site_url}}live-agent/installation/helm-values/smtp/)
 - [Email Templates]({{config.site_url}}live-agent/installation/helm-values/email-templates/)
 
-## Image Values
+## Images
 
 | Name                | Description                                          | Value                 |
 | ------------------- | ---------------------------------------------------- | --------------------- |
@@ -71,10 +71,7 @@ For specific values and logic, here you can utilize these dedicated sections:
 | `odata.image.pullPolicy`  | Live Agent OData Image Pull Policy                          | `IfNotPresent`         |
 | `odata.image.pullSecretName`  | Live Agent OData Image Pull secret name                          | `cognigy-registry-token`         |
 
-
-## ConfigMap Values
-
-### App Values
+## App
 
 | Name                                | Description                                                                | Default Value                                              |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
@@ -83,9 +80,9 @@ For specific values and logic, here you can utilize these dedicated sections:
 | `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot Customizations                                                              | `"true"`                                                   |
 | `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)                                  | `""` |
 
-### Cognigy
+## Cognigy
 
-#### App Platform Token
+### App Platform Token
 
 Cognigy.AI uses the app platform token to perform operations using the Live Agent API. These include synchronising data and creating it (e.g. Inboxes and accounts). The value is automatically created when installing Live Agent with a random string. It can be set using an existing secret to have constant values (recommended).
 
@@ -94,14 +91,14 @@ Cognigy.AI uses the app platform token to perform operations using the Live Agen
 | `cognigyPlatformAppToken.existingSecret`     | Cognigy App Platform Token Secret Name                 | `""`                                                                     |
 | `cognigyPlatformAppToken.existingSecretKey`     | Cognigy App Platform Token Secret Key                 | `""`                                                                     |
 
-#### URLs
+### URLs
 
 | Name                                | Description                                                                | Default Value                                              |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI UI from Live Agent.                                  | `""`                                                   |
 | `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`     | URL for performing requests to Cognigy.AI API                              | `""`   
 
-#### OAuth Values
+### OAuth
 
 These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log into Live Agent with their same credentials.
 
@@ -119,7 +116,18 @@ For the OAuth client secret, the following values must be set:
 | `cognigyOAuth.existingSecret`     | Secret Name for The OAuth Client Secret                 | `""`                                                                     |
 | `cognigyOAuth.existingSecretKey`          | Secret key For The OAuth Client Secret                | `""`                                                    |
 
-### Rest Client SSL
+## File Upload Antivirus Scan
+
+In order to enable the antivirus file upload scan, the following values must be enabled:
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `antivirusScan.enabled`     | Boolean to enable file upload antivirus scan                 | `false`                                                                     |
+| `antivirusScan.resources`     | Recommended values are already set for the pod resources              |                                                                     |
+
+It will scan the file uploading for viruses and block the upload if a virus is found. It scans any file uploaded contained in a message as an attachment, including the ones from Live Agent UI and Cognigy.AI Webchat.
+
+## Rest Client SSL
 
 In case you have a custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
 
@@ -147,12 +155,12 @@ For enabling push notifications, you need to provide the following values, as Li
 | `odata.enabled`     | Enable OData service and endpoint          |  Boolean   | `true`                                                                     |
 | `odata.configmap.ODATA_PROTOCOL`          | http or https        |  String     | `"https"`                                                    |
 
-## Other Values
+## Other
 
 | Key | Type | Default Value |
 |-----|------|---------|
 | `affinity` | object | `{}` |
-| `frontendUrlOverride`                  | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary.                      | `"https://live-agent-domain.com/"`                                   |
+| `frontendUrlOverride`                  | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary.                      | `"https://<live-agent-domain>.com/"`                                   |
 | `fullnameOverride` | string | `""` |
 | `hooks.affinity` | object | `{}` |
 | `hooks.migrate.env` | list | `[]` |
