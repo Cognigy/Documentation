@@ -16,18 +16,11 @@ Click on the profile thumbnail in the bottom left-hand side of the screen, next 
 
 In this section, the user profile data can be changed.
 
-Here the profile picture, full name, display name, and e-mail address can be updated.
+Here the profile picture and display name can be updated.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-profile.png" width="100%" alt="Live Agent Profile Profile " />
   <figcaption>Profile</figcaption>
-</figure>
-
-You can also update the password.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-profile-settings-password.png" width="100%" alt="Live Agent Profile Password " />
-  <figcaption>Password</figcaption>
 </figure>
 
 You can customize the behavior of notifications.
