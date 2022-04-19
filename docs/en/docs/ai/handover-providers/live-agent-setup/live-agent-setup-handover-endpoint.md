@@ -86,6 +86,8 @@ FEATURE_USE_COGNIGY_LIVE_AGENT: true
 COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL: <https://sub-domain.domain.com>
 COGNIGY_LIVE_AGENT_PLATFORM_TOKEN: <app-platform-token>
 ```
+Find the definitions of the values of the environment variables above [here]({{config.site_url}}live-agent/installation/helm-values/helm-values/?h=hel#app-values).
+
 Make sure to setup Live Agent for your Organisation as explained [here]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/).
 
 Then you will be able to use a toggle for "Handover to pre-configured Live Agent account" as shown in screenshot below to autoconfigure your Cognigy Live Agent Handover.
