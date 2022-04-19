@@ -74,6 +74,27 @@ Enter the *Account ID* and *API Key* (Access Token) found in the previous steps 
   <figcaption>Account ID and API Key</figcaption>
 </figure>
 
+## Autoconfigure
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
+
+This feature allows you to autoconfigure an Organisation wide connection to a your Live Agent installation to simplify Configuration effort for multiple Agents and Endpoints. 
+
+To use this feature these environment variables must be set in your Cognigy.AI installation:
+```
+FEATURE_USE_COGNIGY_LIVE_AGENT: true
+COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL: <https://sub-domain.domain.com>
+COGNIGY_LIVE_AGENT_PLATFORM_TOKEN: <app-platform-token>
+```
+Make sure to setup Live Agent for your Organisation as explained [here]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/).
+
+Then you will be able to use a toggle for "Handover to pre-configured Live Agent account" as shown in screenshot below to autoconfigure your Cognigy Live Agent Handover.
+
+<figure>
+    <img src="{{config.site_url}}ai/handover-providers/images/autoconfigure-live-agent.png" width="100%" alt="Autoconfigure Live Agent Handover settings in Endpoint Settings">
+  <figcaption>Autoconfigure Live Agent Handover Settings</figcaption>
+</figure>
+
 ## Next Steps - Setup your Flow for Handover
 <div class="divider"></div>
 
