@@ -74,7 +74,7 @@ Enter the *Account ID* and *API Key* (Access Token) found in the previous steps 
   <figcaption>Account ID and API Key</figcaption>
 </figure>
 
-## Autoconfigure
+## Autoconfigure Live Agent Handover Settings
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
 
