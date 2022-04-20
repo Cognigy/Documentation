@@ -21,11 +21,14 @@ If you choose CognigyScript as the operand, you must use direct CognigyScript si
 ### Intent 
 This is the default setting for the **Lookup Node**, and it allows you to easily lookup the Intent that has been triggered. 
 
-When using the Intent operand, all intents that have been trained to the NLU will be automatically populated in the case settings menu to be selected as the specific value for each case via a dropdown menu.
+By default, the Intent at the most detailed **[Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/)** level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
+
+However, you can also select a level via the "Intent Level" dropdown, if Intents should only be matched on a certain hierarchy level.
+In this case only the Intents of the chosen level are selectable in the Intent dropdown menu of the Case Nodes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6b2661d-intent.PNG" width="100%" />
-  <figcaption>An intent type Lookup Node with 3 cases..</figcaption>
+  <figcaption>An intent type Lookup Node with 3 cases.</figcaption>
 </figure>
 
 ???+ info "Want to know more about using Intents?"

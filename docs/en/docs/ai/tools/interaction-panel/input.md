@@ -33,7 +33,7 @@ The Input object contains the following properties (for text input).
 |intentScore|	The detected Intent's score.|
 |intentFlow|	The flow containing the detected intent.|
 |slots|	Contains the detected slots ranging from automatic to custom lexicon libraries.|
-|nlu|	Contains the detailed NLU processing results. See [NLU Properties]() for detailed information.|
+|nlu|	Contains the detailed NLU processing results. See [NLU Properties]({{config.site_url}}ai/tools/interaction-panel/input/#nlu-properties) for detailed information.|
 |mode	|The type of input received by Cognigy.AI. Can be either "TextOnly" or "TextData".|
 |type|	The type of input sentence as determined by the NLU (Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer, nAnswer) question	States if a question was received as the input text and what type of question was asked.|
 |intentOutOfState|	If a state is active, this property contains the detected intent that has been excluded by the state.|
@@ -54,6 +54,7 @@ The Input object contains the following properties (for text input).
 |understood|	A boolean flag which determines whether the NLU understood the users message. The flag is set to true when an intent/slot was found or if the type of sentence was pAnswer, nAnswer or Greeting - otherwise the flag will be false.|
 |language|	The locale language that was used to process the input message.|
 |traceId|	A unique identifier for the specific user input.|
+|intentLevel|	The matched Intent, per [Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/) level.|
 |localeId|	The unique ID for the current locale used to process the input message.
 |conditionalEntrypointWasExecuted|	A boolean variable that displays "true" if the flow was executed on a conditional node.|
 |activeQuestion|	Optional: Information on question execution when a question is active.<br>The following properties are available:<br>nodeId: The question node's ID.<br>type: The type of question<br>lastExecutedAt: Index of last execution.<br>forgetQuestionThreshold: Configured threshold to forget the question.<br>repromptCount: Count of reprompts.<br>escalationCount: Count of escalations.|
@@ -83,6 +84,7 @@ The detailed NLU results are published to the **nlu** variable which contains th
       * intentScore
       * nlu
       * type
+      * intentLevel
       * localeId
       * understood
       * conditionalEntrypointWasExecuted
