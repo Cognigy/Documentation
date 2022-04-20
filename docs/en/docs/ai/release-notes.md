@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.23.3
+**Released** April 20th, 2022
+
+### Bugfixes
+- Fixed a bug where the headers from the http request node are overwritten with the default content-type application/json
+
 ## 4.23.2
 **Released** April 14th, 2022
 
