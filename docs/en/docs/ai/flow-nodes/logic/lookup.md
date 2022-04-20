@@ -28,7 +28,7 @@ In this case only the Intents of the chosen level are selectable in the Intent d
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6b2661d-intent.PNG" width="100%" />
-  <figcaption>An intent type Lookup Node with 3 cases..</figcaption>
+  <figcaption>An intent type Lookup Node with 3 cases.</figcaption>
 </figure>
 
 ???+ info "Want to know more about using Intents?"
