@@ -23,6 +23,11 @@ Within our **COGNIGY.AI** platform you are able to connect your **Agent** to you
    </div>
 </blockquote>
 
+## Voice Gateway Settings
+### Async Mode
+When async mode is enabled for the Voice Gateway, then outputs will be sent directly as they are processed in a Flow. This can be beneficial when the Flow for example has to send an HTTP request. When the async mode is off, then the outputs will be sent when the entire Flow has finished processing for the given input.
+
+The [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality only works when async mode is enabled.
 
 ## Voice Gateway specific Nodes
 
