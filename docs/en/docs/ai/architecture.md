@@ -62,7 +62,7 @@ The following table shows the most relevant microservices forming the IDE:
 | service-resources | Manages all resources within Cognigy.AI - meaning Flows, Endpoints, Playbooks etc. |
 | service-custom-modules | Processes uploaded Cognigy Extensions and prepares them for usage. |
 | service-security | Manages users, organizations and roles including permissions. |
-| service-handover | Implements an interface for 3rd party [handover providers]({{config.site_url}}ai/handover-providers/overview/) like Ring Central Engange. |
+| service-handover | Implements an interface for 3rd party [handover providers]({{config.site_url}}ai/handover-providers/overview/) like Ring Central Engage. |
 
 
 ### Runtime - running your Virtual Agents
