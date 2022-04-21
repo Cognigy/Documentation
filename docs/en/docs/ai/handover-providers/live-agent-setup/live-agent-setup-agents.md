@@ -33,11 +33,11 @@ Next, click the button labeled *Create new User*. Here you will create the crede
 ???+ warning "**Live Agent is Still In Development** "
     *Live Agent* is still in development.
 
-    Currently, only the *liveAgentAdmin* Role is available via Global Roles.
+    Currently, only the *liveAgentAdmin* and *liveAgentAgent* Roles are available via Global Roles.
 
-    To give your Agent the *liveAgentAgent* Role, you will [add the *Agent* Role in Project Roles]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/#adding-the-agent-role-via-project-roles-in-cognigyai)
+    To give your Agent the *liveAgentAgent* Role, you will add the *Agent* Role from the Global Roles in Cognigy.AI
 
-Live Agent has two Roles, Administrator (**liveAgentAdmin**) and Agent (**liveAgentAgent**). 
+Live Agent has two Roles, Administrator (**liveAgentAdmin**) and Agent (**liveAgentAgent**).
 
 You can hear more about these roles here.
 
@@ -50,25 +50,6 @@ Click the Agent you would like to assign Roles to. Now you will see *Global Role
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/live-agent-roles.png" width="100%" />
   <figcaption>Global Roles Menu</figcaption>
-</figure>
-
-## Adding the Agent Role via Project Roles in Cognigy.AI
-<div class="divider"></div>
-
-In the future, you will be able to add the *liveAgentAgent* Role in Global Roles. For now, you will add the *Agent* role as shown in the diagram below.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}live-agent/images/la-diagram-roles.PNG" width="85%" />
-  <figcaption>Live Agent Project and Inbox Mapping</figcaption>
-</figure>
-
-From Cognigy.AI, click *Manage* and then *Members*. Select an Agent in the list, and use the *+* button to edit its [Project Roles]({{config.site_url}}ai/resources/manage/members/#project-roles). 
-
-To make them an Agent within Live Agent, simply give them the *Agent* role as shown below.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-roles.PNG" width="100%" />
-  <figcaption>Adding Roles</figcaption>
 </figure>
 
 ## Have Your Agent Login
