@@ -17,14 +17,14 @@ Intents are added as children by dragging and dropping on the parent intent via 
 
 Intents can be structured into three layers:
 
-- Parent Intents
-- Child Intents
-- Grandchild Intents
+- Level 1 Intents
+- Level 2 Intents
+- Level 3 Intents
 
 ???+ success "Tip: Use Intent Naming Conventions"
     It is recommended to follow a pattern when naming your intents. Either create a topic category name or use a numbering system to group intent families.
 
-Parent Intents can inherit Example Sentences from their child Intents, which can inherit Example Sentences from the grandchild Intents. 
+Level 1 Intents can inherit Example Sentences from their level 2 child Intents, which can inherit Example Sentences from their level 3 grandchild Intents. 
 
 ## Inheritance
 <div class="divider"></div>
