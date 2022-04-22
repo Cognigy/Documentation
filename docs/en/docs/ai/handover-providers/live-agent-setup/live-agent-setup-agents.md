@@ -33,9 +33,9 @@ Next, click the button labeled *Create new User*. Here you will create the crede
 ???+ warning "**Live Agent is Still In Development** "
     *Live Agent* is still in development.
 
-    Currently, only the *liveAgentAdmin* and *liveAgentAgent* Roles are available via Global Roles.
+    The *liveAgentAdmin* and *liveAgentAgent* Roles are available via Global Roles.
 
-    To give your Agent the *liveAgentAgent* Role, you will add the *Agent* Role from the Global Roles in Cognigy.AI
+    To give your Agent the *liveAgentAgent* Role, you will add the *liveAgentAgent* Role from the Global Roles in Cognigy.AI
 
 Live Agent has two Roles, Administrator (**liveAgentAdmin**) and Agent (**liveAgentAgent**).
 
