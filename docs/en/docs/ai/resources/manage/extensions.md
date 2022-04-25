@@ -103,6 +103,7 @@ You can install a custom Extension from the Extension Marketplace by using the â
 
 ## Updating a custom Extension
 <div class="divider"></div>
+[![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
 
 You can update a custom Extension by selecting the Extension either in the "Marketplace" section or in the "Installed" section and clicking update. If you select an extension in the "Marketplace" section, then the latest version from the Extension Marketplace will replace your installed Extension. If you select the extension in the "Installed" section, you will be asked to upload the updated Extension.
 
