@@ -94,7 +94,7 @@ Extensions have a default timeout of 20 seconds, meaning if the time it takes fo
 ## Installing a custom Extension
 <div class="divider"></div>
 
-You can install a custom Extension in the Extension Marketplace by using the “Upload Extension” button or by dragging and dropping.
+You can install a custom Extension from the Extension Marketplace by using the “Upload Extension” button or by dragging and dropping.
 
 
 <figure>
@@ -102,6 +102,17 @@ You can install a custom Extension in the Extension Marketplace by using the “
   <figcaption>Installing a custom Extension</figcaption>
 </figure>
 
+## Updating a custom Extension
+<div class="divider"></div>
+[![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
+
+You can update a custom Extension by selecting the Extension either in the "Marketplace" section or in the "Installed" section and clicking update. If you select an extension in the "Marketplace" section, then the latest version from the Extension Marketplace will replace your installed Extension. If you select the extension in the "Installed" section, you will be asked to upload the updated Extension.
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/update-extension-package.png" width="100%" />
+  <figcaption>Updating a custom Extension</figcaption>
+</figure>
 
 ## Publishing an Extension
 <div class="divider"></div>
