@@ -306,7 +306,7 @@ nav:
 - Live Agent:
   - live-agent/overview.md
   - Release Notes:
-    - live-agent/release-notes/releases.md
+    - live-agent/release-notes.md
   - Getting Started:
     - live-agent/getting-started/live-agent-getting-started.md
   - Installation & Configuration:
