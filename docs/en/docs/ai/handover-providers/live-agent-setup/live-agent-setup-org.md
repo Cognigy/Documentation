@@ -35,7 +35,7 @@ Find the **Set up Live Agent** button, and click it to setup the Live Agent Acco
 
 ## Next Steps - Setup Your Inbox
 <div class="divider"></div>
-Now that Live Agent is setup for your Organisation, you will need to create your Projects Inbox:
+Now that Live Agent is setup for your Organisation, you will need to create your Project Inbox:
 
 - [**Setup your Project Inbox for Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-inbox/)
 

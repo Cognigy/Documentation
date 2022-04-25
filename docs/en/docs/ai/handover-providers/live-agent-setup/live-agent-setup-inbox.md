@@ -27,7 +27,7 @@ Scroll down and find *Live Agent Settings*.
 
 Click on the **Create Project Inbox** button to create a new Inbox for the selected Agent. 
 
-Once the Inbox is created, you will find the *Default Inbox ID* above a now disabled button.
+Once the Inbox is created, you will find the *Default Inbox ID* above the now disabled button.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
