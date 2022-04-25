@@ -49,8 +49,6 @@ The frontend-url could for instance be trial.cognigy.ai
     Service Provider initiated Single Logout is only supported with Microsoft Azure Active Directory.
 
 ???+ warning "IDP initiated SLO"
-    [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
-
     Identity Provider initiated Single Logout is only supported with OneLogin
 
 ???+ warning "Cognigy Help Center"
