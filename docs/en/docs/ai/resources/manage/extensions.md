@@ -93,7 +93,7 @@ If you want to see examples of Extensions, visit our GitHub repository.
 ## Installing a custom Extension
 <div class="divider"></div>
 
-You can install a custom Extension in the Extension Marketplace by using the “Upload Extension” button or by dragging and dropping.
+You can install a custom Extension from the Extension Marketplace or by using the “Upload Extension” button or by dragging and dropping.
 
 
 <figure>
@@ -101,6 +101,16 @@ You can install a custom Extension in the Extension Marketplace by using the “
   <figcaption>Installing a custom Extension</figcaption>
 </figure>
 
+## Updating a custom Extension
+<div class="divider"></div>
+
+You can update a custom Extension by selecting the Extension either from Marketplace or the already installed Extension and click update. If you select an extension from Marketplace, then the latest version from Marketplace will replace your installed Extension.
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/update-extension-package.png" width="100%" />
+  <figcaption>Updating a custom Extension</figcaption>
+</figure>
 
 ## Publishing an Extension
 <div class="divider"></div>
