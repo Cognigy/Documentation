@@ -33,7 +33,7 @@ You will need this SSO URL when configuring your IDP in one of IDP setup guides.
 <div class="divider"></div>
 
 ???+ warning "Only avaiable for certain IDPs"
-    Single Logout is currently only supported with OneLogin
+    Single Logout is currently only supported with OneLogin and Microsoft Azure Active Directory.
 
 In order to configure Single Logout for your Identity Provider, you need the URL used to process the logout request from the IDP. During SLO, the IDP will redirect to the frontend of COGNIGY.AI, and you therefore need to use the frontend domain you configured for your installation. The SLO URL looks like this
 
@@ -41,10 +41,17 @@ In order to configure Single Logout for your Identity Provider, you need the URL
 https://<frontend-url>/slo/<organisation-id>
 ``` 
 
-The api-url could for instance be trial.cognigy.ai
+The frontend-url could for instance be trial.cognigy.ai
 
 ???+ warning "SP initiated SLO"
-    COGNIGY.AI doesn't implement Service Provider initiated Single Logout. Only IDP initiated SLO is supported.
+    [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
+
+    Service Provider initiated Single Logout is only supported with Microsoft Azure Active Directory.
+
+???+ warning "IDP initiated SLO"
+    [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
+
+    Identity Provider initiated Single Logout is only supported with OneLogin
 
 ???+ warning "Cognigy Help Center"
     Find out more about connecting to your proffered SSO provider in our [Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on)
