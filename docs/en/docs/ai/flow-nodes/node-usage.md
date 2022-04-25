@@ -100,10 +100,10 @@ In detail:
 - Closing the sidebar removes the ID from the URL.
 - Opening the page containing Node ID will open the sidebar and center the viewport on the Node.
 
-## Create Flow from Children
+## Create Flow from Branch
 Any other children node has the option to create a child-flow from its execution branch. Just need to
-right-click on the node, and if it is entitled, you will see the "Create Flow from Children" option.
+right-click on the node, and if it is entitled, you will see the "Create Flow from Branch" option.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children.png" width="100%" />
-  <figcaption>Create flow from children option.</figcaption>
+  <figcaption>Create flow from branch option.</figcaption>
 </figure>
