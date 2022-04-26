@@ -109,6 +109,8 @@ In detail:
 
 <div class="divider"></div>
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+
 Any other children node has the option to create a child-flow from its execution branch. Just need to
 right-click on the node, and if it is entitled, you will see the "Create Flow from Branch" option.
 
