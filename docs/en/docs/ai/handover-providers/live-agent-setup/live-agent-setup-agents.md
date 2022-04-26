@@ -16,7 +16,7 @@ Login to Cognigy.AI. If the Agent or Admin you want to add already exists as a u
 Go to the top right corner of your screen, and open the *User Menu*. Click *Access Control*.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/user-menu-access-control-selected.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/user-menu-access-control-selected.PNG" width="100%" />
   <figcaption>User Menu</figcaption>
 </figure>
 
