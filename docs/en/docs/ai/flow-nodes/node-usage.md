@@ -128,7 +128,7 @@ Providing a valid Flow name and clicking the *Create* button in the dialog will 
 
   * Create a new executee Flow containing all the Nodes from the selected branch.
 
-  * Replace all Nodes from the selected branch, with an "Execute Flow Node" from which the created Flow will be executed.
+  * Replace all Nodes from the selected branch, with an **Execute Flow Node** from which the created Flow will be executed.
 
   * The Intents/Slots will not be parsed, context will not be absorbed when executing the new Executee Flow.
 
