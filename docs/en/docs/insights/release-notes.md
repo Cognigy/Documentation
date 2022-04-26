@@ -5,6 +5,20 @@
 ---
 # Release notes
 
+## 4.24.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+- Improved by adding an endpoint for deleting analytics records for an organisation
+- Improved by fixing accessibility issues in step explorer
+- Improved by reducing the dashboard UI response time by replacing SVG based charts with canvas based charts
+- Improved by adding pagination in the Step Explorer to support complex step graphs
+
+### Bugfixes
+- Fixed a bug where number reports with "Amount" types show non-integer values
+- Fixed a bug when transcript list had a loading issue after filters/agent change
+
+
 ## 4.23.0
 **Released** April 12th, 2022
 

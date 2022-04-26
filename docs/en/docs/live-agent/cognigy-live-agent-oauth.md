@@ -21,6 +21,18 @@ Once you have entered your credentials, you will be redirected to the Live Agent
 
 >Note: Remember that the user needs to have the proper roles in order to login into Live Agent. Otherwise, an unauthorized error will be thrown.
 
+## Migrating existing users that login with email and password to use Cognigy.AI OAuth
+
+The old users created from the Live Agent agents management UI can still login using the `/old-login` endpoint. However, it is recommended to migrate the users to use the Cognigy.AI OAuth login. For this follow this process:
+
+1. Create a Cognigy.AI user account with the same email as the old user.
+
+2. Assign a valid role to login into Live Agent, follow the guide [Adding Agents and Admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/).
+
+3. Log into Live Agent using Cognigy.AI OAuth (`/login` endpoint).
+
+>Note: Once this process is completed, the user cannot log in using `/old-login` anymore, and any credentials change needs to happen on the Cognigy.AI side.
+
 ## OAuth Errors Meaning
 
 The following list contains the common errors that can be shown while using the Cognigy.AI OAuth.
@@ -30,17 +42,10 @@ This is related to the configuration for the communication between the Cognigy.A
 
 ### The user organisation `{Organisation ID}` was not found in the system
 
-This appears when there is no account in Live Agent mapped to a Cognigy.AI organisation. For solving this, the setup for the organisation must be done, please head over to [Cognigy Live Agent Setup]({{config.site_url}}ai/cognigy-live-agent/cognigy-live-agent-setup/).
+This appears when there is no account in Live Agent mapped to a Cognigy.AI organisation. For solving this, the setup for the organisation must be done, please head over to [Cognigy Live Agent Setup]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/).
 
 ### The Cognigy user is not authorised to access the system
 
-It can happen in the following scenarios:
-
-
-1. The user has no valid global roles such as `admin` or `liveAgentAdmin`. Add one of them if you want the user to be able to log in as a Live Agent administrator.
-
-2. The user has not a valid project-wide role in a project mapped to a Live Agent inbox, or the project is setup. 
-    -  For setting up the project to an inbox head over to [Cognigy Live Agent Setup]({{config.site_url}}ai/cognigy-live-agent/cognigy-live-agent-setup/#agent-settings). 
-    - Once the project is set up, add a member and assign the `agent` role. Now the user should be able to log in as a Live Agent agent.
+In the case that the user does not have valid roles, please follow the instructions found to resolve the issue: [Adding agents and admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/).
 
 In case the guides above didn't solve the issue, [you can reach us through support](https://support.cognigy.com/hc/en-us/requests/new?).

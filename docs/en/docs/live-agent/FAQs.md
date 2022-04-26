@@ -6,7 +6,6 @@
 # FAQs
 
   - [Live Agent](#live-agent)
-    - [What happens if you remove a user from Live Agent?](#what-happens-if-you-remove-a-user-from-live-agent)
     - [How do I remove a user?](#how-do-i-remove-a-user)
     - [How to fix custom SSL certificate verification error?](#how-to-fix-custom-ssl-certificate-verification-error)
     - [How to fix SMTP for no authentication provider.](#how-to-fix-smtp-for-no-authentication-provider)
@@ -28,11 +27,6 @@
 
 
 ## Live Agent
-
-### What happens if you remove a user from Live Agent?
-Removing a user from Live Agent is superfluous. The user would be removed, but the next time they log back in, their user account would be recreated. All the user's management must be done from the Cognigy.AI platform site. 
-
-Please visit the Cognigy.AI Access Control section [***here***](./../ai/tools/user-menu/access-control.md) for more information.
 
 ### How do I remove a user?
 Removing a user needs to be done from the Cognigy.AI platform. For example, you can take out its Agent role so that the user will not be able to log into the  Live Agent system anymore or if you like, you could completely remove that user from the Cognigy.AI platform.

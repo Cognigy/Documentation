@@ -5,6 +5,49 @@
 ---
 # Release notes
 
+## 4.24.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+#### Server side Playbook execution
+This release of Cognigy.AI adds the ability to execute Playbooks server side. We have added new RESTful API endpoints allowing our customers to start Playbook runs and inspect their results
+
+#### Jump to Flow Node capabilities
+This release of Cognigy.AI adds the ability to inspect individual outputs within the Interaction Panel and understand which Flow Node has created a specific output. Our customers can jump to the respective Flow and Flow Node in order to further understand where an output is coming from
+
+### Improvements
+- Improved by tracking handover information by session and not by user - this allows our customers to have multiple handovers for the same user when different session identifiers will be provided
+- Improved by adding a small talk German language skill template to the agent creation wizard
+- Improved the API to get conversation counters by retrieving it by channel
+- Improved by updating the webchat and it's widgets in service-webchat to the newest version (2.40.7)
+- Improved by making the handover escalation in Question Nodes up to date with the new HandoverToAgent Node
+- Improved by adding an option to question nodes to ignore non-escalation intents in an active question
+- Improved by adding basic & advanced tags to the templates in the Agent Creation Wizard
+- Improved by renaming Templates to Solution Accelerators in the Agent Creation Wizard
+- Improved by reading the filtered logs from backend
+- Improved by modifying the Agent wizard step titles
+
+### Bugfixes
+- Fixed a bug where messages in the Live Chat were missing when a conversation is "Taken over" by one agent and then later the other
+- Fixed a bug where a user assigned to multiple organizations could not log in to one of the assigned organizations
+- Fixed a bug where slots were not always found in executed Flows (with executeFlow node or goto node), when parseSlots option was disabled
+- Fixed a bug where adding image tag in SMTP Email Node Content field did not work as expected
+- Fixed a bug where list output type in messenger channel crashed node editor
+- Fixed a bug where one of our info logs was missing the name of a flow
+- Fixed a bug where sometimes attached flow intents are not scored when "Attach Flow Intent Mapping Priority" is set to "Map Main Flow first" in a flow's settings
+- Fixed a bug where the main or attached flow thresholds would be overridden with the threshold that is defined agent-wide, when the agent-wide threshold is lower than the other thresholds
+- Fixed a bug where the message history after a Handover would sometimes be incomplete
+- Fixed a bug where the agent settings page crashed due to incomplete data in the cache
+- Fixed a bug where sometimes page titles were not correctly displayed after page load
+- Fixed a bug where wrong answer escalation was not working correctly for intent questions when an intent reconfirmation was negated
+- Fixed a bug where handover triggers only on the second user input
+
+## 4.23.3
+**Released** April 20th, 2022
+
+### Bugfixes
+- Fixed a bug where the headers from the http request node are overwritten with the default content-type application/json
+
 ## 4.23.2
 **Released** April 14th, 2022
 
