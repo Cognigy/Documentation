@@ -111,8 +111,7 @@ In detail:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-Any other children node has the option to create a child-flow from its execution branch. Just need to
-right-click on the node, and if it is entitled, you will see the "Create Flow from Branch" option.
+There is a possibility to create a new Flow from a node's execution branch.  Any node from which the creation of *Child Flow* is possible, will have the option **Create Flow from Branch** in its context menu. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children.png" width="100%" />
