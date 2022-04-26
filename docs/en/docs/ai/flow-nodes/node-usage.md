@@ -119,18 +119,18 @@ right-click on the node, and if it is entitled, you will see the "Create Flow fr
   <figcaption>Create flow from branch option.</figcaption>
 </figure>
 
-That will show a pop-up asking for the new child flow name.
+Clicking on **Create Flow from Branch** option will open a dialog box that prompts you to enter the name for your new Flow.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children-2.png" width="100%" />
   <figcaption>Child Flow from Branch name</figcaption>
 </figure>
 
-Accepting the previous pop-up will:
+Providing a valid Flow name and clicking the *Create* button in the dialog will do the following::
 
   * Create a new executee Flow containing all the Nodes from the selected branch.
 
-  * Replace all Nodes from the selected branch, with an "Execute Flow Node" from which the created Flow will be executed.
+  * Replace all Nodes from the selected branch, with an **Execute Flow Node** from which the created Flow will be executed.
 
   * The Intents/Slots will not be parsed, context will not be absorbed when executing the new Executee Flow.
 
