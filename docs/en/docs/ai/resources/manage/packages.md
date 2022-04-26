@@ -72,6 +72,23 @@ Similar to the export, the import of packages is straightforward. Simply drag&dr
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
+### Import packages created prior v4.0.0
+[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+
+The packages created before v4.0.0 may contain special characters not allowed in the current version. 
+In order to allow their importation, those characters will be removed, and in case this causes a name duplication
+an index iterator will be added.
+
+For example:
+
+  * old package (prior v4.0.0)
+    * intentName>2
+    * intentName<2
+  * current version
+    * intentName 2
+    * intentName 2 (2)  
+
+
 ## Import Configuration
 
 As of v4.5.0, importing a package will show you conflict resolution options in case e.g. name conflicts occur. You can either select a conflict resolution strategy for the complete import or per resource.
