@@ -117,7 +117,7 @@ right-click on the node, and if it is entitled, you will see the "Create Flow fr
   <figcaption>Create flow from branch option.</figcaption>
 </figure>
 
-That will show a pop-up asking for the new child flow name.
+Clicking on **Create Flow from Branch** option will open a dialog box that prompts you to enter the name for your new Flow.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children-2.png" width="100%" />
