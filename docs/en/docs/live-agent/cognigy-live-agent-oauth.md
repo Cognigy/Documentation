@@ -42,10 +42,10 @@ This is related to the configuration for the communication between the Cognigy.A
 
 ### The user organisation `{Organisation ID}` was not found in the system
 
-This appears when there is no account in Live Agent mapped to a Cognigy.AI organisation. For solving this, the setup for the organisation must be done, please head over to [Cognigy Live Agent Setup]({{config.site_url}}ai/cognigy-live-agent/cognigy-live-agent-setup/).
+This appears when there is no account in Live Agent mapped to a Cognigy.AI organisation. For solving this, the setup for the organisation must be done, please head over to [Cognigy Live Agent Setup]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/).
 
 ### The Cognigy user is not authorised to access the system
 
-It can happen if the user has no valid roles. Please follow the guide [Adding Agents and Admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/) to solve the problem.
+In the case that the user does not have valid roles, please follow the instructions found to resolve the issue: [Adding agents and admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/).
 
 In case the guides above didn't solve the issue, [you can reach us through support](https://support.cognigy.com/hc/en-us/requests/new?).
