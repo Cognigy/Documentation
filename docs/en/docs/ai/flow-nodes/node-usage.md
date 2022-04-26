@@ -125,7 +125,7 @@ Clicking on **Create Flow from Branch** option will open a dialog box that promp
   <figcaption>Child Flow from Branch name</figcaption>
 </figure>
 
-Providing a valid Flow name and clicking the *Create* button in the dialog will do the following::
+Providing a valid Flow name and clicking the *Create* button in the dialog will do the following:
 
   * Create a new executee Flow containing all the Nodes from the selected branch.
 
