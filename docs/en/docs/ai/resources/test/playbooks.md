@@ -40,3 +40,31 @@ A **Step** represents a single input including both text and data, in combinatio
 * Intent
 
 All Assertion results can be inverted.
+
+## Playbook Runs
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+
+In addition to executing a playbook in the Interaction Panel, you can also schedule a playbook run from the playbook editor. When you open a playbook from the list, you will now see a new tab named **Run** that will list all the previously scheduled playbook runs.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-runs.png" width="100%" />
+</figure>
+
+In order to schedule a new run, click on the *Run* button. In the dialog box that opens, select the Snapshot, Flow and Locale against which you want to run your current playbook. Configuring a playbook run in this dialog box is similar to configuring a playbook execution in the Interaction Panel. When done, click on the **Run** button in the dialog box.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-runs-dialog.png" width="100%" />
+</figure>
+
+The playbook run will be created in the background and a success notification will be displayed once the creation is complete. When the playbook run creation is successful, you can see the newly created run in the Runs list. Each item in this list shows the status, creator and the creation time of the run. The list can be sorted by these three parameters. Further, the list can also be filtered by its *Status* and *Creator*.
+
+If the status of a run is **Failed**, it means that there is one or more failing assertions in the playbook run. If the status is **Successful**, then all the playbook assertions have passed. Clicking on a plabook run can give you further information on which assertions failed or passed, helping you to see what went wrong or right with the executed Flow.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-run-details.png" width="100%" />
+</figure>
+
+???+ info "Tip: Schedule a Run or Navigate to Runs page from Playbooks List"
+    You can also schedule a run directly from the Playbooks list. To do this, click on the secondary button of the playbook that you wand to run. In the menu, click on **Run Playbook** option. You can then configure and create a playbook run in the same way as you do in the *Runs* page.
+	Quick navigation to the Runs page is possible by clicking on **Show Runs** option in the menu.
