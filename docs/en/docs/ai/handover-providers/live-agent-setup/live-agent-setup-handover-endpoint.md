@@ -5,7 +5,7 @@
 ---
 # Setup a Cognigy.AI Endpoint for Handover
 <div class="divider"></div>
-First, a [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/) needs to be created in Cognigy.AI. 
+First, an Endpoint, for example a [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/), needs to be created in Cognigy.AI. 
 
 Once you have a Webchat Endpoint, go to the **Endpoint Editor** and scroll down to **Handover Settings**. 
 
