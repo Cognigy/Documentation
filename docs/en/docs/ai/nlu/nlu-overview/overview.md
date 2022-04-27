@@ -37,7 +37,7 @@ Intent Mapping is at the core of the NLU engine and the process uses machine lea
 Machine learning models work best with comparable amount of information on all intent classes. That is, ideally all intents have a similar amount of example sentence and are clearly separable in terms of content. While it is able to deal with imperfect input, it always helps if you make the job for the machine easier.
 
 Make sure you do not have intents that are only a single word or sentence without useful information. Such intents may reduce the overall efficacy of the model.
-
+If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to ``null`` in the [Input]({{config.site_url}}/ai/tools/interaction-panel/input/) object. You can add examples to the [Reject Intent]({{config.site_url}}ai/nlu/nlu-overview/reject-intents/) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
 ### NLU model feedback
 
 As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being sub-optimal and red being bad. Additional information is given on mouse-hover.
