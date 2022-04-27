@@ -38,7 +38,7 @@ To use this feature you need to:
     ```
 ## Manually Configure Live Agent Handover
 
-Enter the base URL. The base URL is your Live Agent installation URL.
+Enter the base URL. The base URL is your Live Agent installation URL, plus /api/v1.
 
 See the example below from our *Trial* environment.
 
