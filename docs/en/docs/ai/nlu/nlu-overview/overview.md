@@ -136,9 +136,6 @@ Disables the selected intent so that it cannot be recognized or activated by a u
  * **Delete Intents**
 Removes the intent and all associated training data from the model.
 
- * **Reject Fallback Intent** 
- The intent will be ``null`` if the NLU predicts the utterance is out of scope of the intent model and no intent should be triggered. You can add examples to the [Reject Intent]({{config.site_url}}ai/nlu/nlu-overview/reject-intents/) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
-
 ## Attachments
 <div class="divider"></div>
 
