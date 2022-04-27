@@ -60,7 +60,6 @@ See the example below from our *Trial* environment.
   <figcaption>Cognigy.AI Webchat Endpoint Settings</figcaption>
 </figure>
 
-<div class="divider"></div>
 Now you need the values to enter in the _Account ID_ and _API Key_ fields. You will need to login to Live Agent as the admin of the current Agent.
 
 Navigate to the UI of Cognigy Live Agent, via the [User Menu]({{config.site_url}}ai/tools/user-menu/user-menu/). Click on *Live Agent* in the User Menu and Live Agent will open up in a new tab.
