@@ -5,7 +5,7 @@
 ---
 # Snapshots
 
-## Introduction
+## Introdution
 A Snapshot is an immutable form of your Virtual Agent including the following resources:
 
   * **Flows** (*Including any trained NLU models*)
@@ -43,7 +43,7 @@ In order to see all Snapshots of your Virtual Agent, head over to **Deploy** -->
 In order to create a new Snapshot of the current state of your Virtual Agent, click on **New Snapshot** followed by providing a name and description. We suggest to include some sort of a version number in the name field and describe what has changed in this version of the Snapshot in the description field.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/creating-a-snapshot.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/creating-a-snapshot.png" width="100%" />
 </figure>
 
 ???+ info "Note"
@@ -121,8 +121,28 @@ In order to restore an Virtual Agent from a Snapshot, do the following:
 We are constantly improving the Snapshot feature including the file format for Snapshots. We guarantee backward compatibility for Snapshot, meaning that you can import Snapshots that have been produced in older versions of Cognigy.AI (e.g. v4.4) into newer releases. Snapshots taken with a newer version of Cognigy.AI are not compatible with older versions though.
 
 ## Production deployment using Snapshots
+The following three scenarios show how Virtual Agents should be deployed into production. The concepts make use of the fact that an Agent in Cognigy.AI is like a project in other software products.
+
 ### Using a single Virtual Agent
 
+
 ### Using multiple Virtual Agents
+For more control on what is actually running in production, the "multiple Virtual Agents" approach should be choosen. The idea is simple and can be described as followed:
+
+A customer wants to build an Virtual Agent for FAQs on their website. Two Agents should be created in Cognigy.AI:
+- FAQ Bot development
+- FAQ Bot production
+
+**Developers only have access** to the "FAQ Bot development" Agent. All Flows, Lexicons, Intents and all development in general happens here. Eventually a certain state has been reached and a Snapshot is created. A downloadable package for a Snapshot has to be created and the Snapshot has to be downloaded.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/snapshot-v1-0-0.png" width="100%" />
+</figure>
+
+**In order to release** the Snapshot, somebody with access to the "FAQ Bot production" uploads the packaged Snapshot and then points the productive Webchat endpoint to the new version of the Snapshot.
+
+???+ info "Snapshots should not get restored"
+    Please remember that Snapshots do not have to be restored in order for Endpoints to actually use their content! The "FAQ Bot production" Virtual Agent should not contain direct resources like Flows. It should only contain Snapshots and its Endpoints should point to Snapshots directly.
+
 
 ### Using multiple Virtual Agents with multiple Cognigy.AI systems
