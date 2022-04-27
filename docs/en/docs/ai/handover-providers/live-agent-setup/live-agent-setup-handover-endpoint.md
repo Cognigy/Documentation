@@ -13,6 +13,33 @@ Set the **Handover Platform** to _"Cognigy Live Agent"_.
 
 You now have two options. By default, the pre-configured Live Agent Account, mapped to the Cognigy.AI Organization will be used for the handover. However, by deactivating the "Handover to pre-configured Live Agent account" toggle, you can also manually configure the Live Agent handover. 
 
+## Handover to Pre-configured Live Agent
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
+
+If the toggle "Handover to pre-configured Live Agent account" is activated, conversations will be transferred to the Live Agent Account mapped to the current Cognigy.AI Organization.
+
+To use this feature you need to:
+
+- [setup Live Agent for your Organisation]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/)
+- [create an Inbox for the account created in the previous step]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-introduction/?h=live+agent+intr#setup-steps-index).
+
+<figure>
+    <img src="{{config.site_url}}ai/handover-providers/images/autoconfigure-live-agent.png" width="100%" alt="Autoconfigure Live Agent Handover settings in Endpoint Settings">
+  <figcaption>Autoconfigure Live Agent Handover Settings</figcaption>
+</figure>
+
+???+ info "Use Autoconfigure feature in your own Cognigy Installation"
+    To use this feature these environment variables must be set in your Cognigy.AI installation:
+    ```
+    FEATURE_USE_COGNIGY_LIVE_AGENT: true
+    COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL: <https://sub-domain.domain.com>
+    COGNIGY_LIVE_AGENT_PLATFORM_TOKEN: <app-platform-token>
+    ```
+## Manually Configure Live Agent Handover
+
+Enter the base URL. The base URL is your Live Agent installation URL.
+
 See the example below from our *Trial* environment.
 
 <table>
@@ -33,7 +60,6 @@ See the example below from our *Trial* environment.
   <figcaption>Cognigy.AI Webchat Endpoint Settings</figcaption>
 </figure>
 
-## Account ID and API Key in Live Agent
 <div class="divider"></div>
 Now you need the values to enter in the _Account ID_ and _API Key_ fields. You will need to login to Live Agent as the admin of the current Agent.
 
@@ -75,32 +101,6 @@ Enter the *Account ID* and *API Key* (Access Token) found in the previous steps 
     <img src="{{config.site_url}}live-agent/images/LA-endpoint-id-apikey.PNG" width="100%" alt="Account ID and API Key">
   <figcaption>Account ID and API Key</figcaption>
 </figure>
-
-## Autoconfigure Live Agent Handover Settings
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
-
-If the toggle "Handover to pre-configured Live Agent account" is activated, conversations will be transferred to the Live Agent Account mapped to the current Cognigy.AI Organization.
-
-To use this feature you need to:
-
-- [setup Live Agent for your Organisation]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/)
-- [create an Inbox for the account created in the previous step]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-introduction/?h=live+agent+intr#setup-steps-index).
-
-Then you will be able to use a toggle located in Endpoint settings > Handover Settings section called "Handover to pre-configured Live Agent account" as shown in screenshot below to autoconfigure your Cognigy Live Agent Handover.
-
-<figure>
-    <img src="{{config.site_url}}ai/handover-providers/images/autoconfigure-live-agent.png" width="100%" alt="Autoconfigure Live Agent Handover settings in Endpoint Settings">
-  <figcaption>Autoconfigure Live Agent Handover Settings</figcaption>
-</figure>
-
-???+ info "Use Autoconfigure feature in your own Cognigy Installation"
-    To use this feature these environment variables must be set in your Cognigy.AI installation:
-    ```
-    FEATURE_USE_COGNIGY_LIVE_AGENT: true
-    COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL: <https://sub-domain.domain.com>
-    COGNIGY_LIVE_AGENT_PLATFORM_TOKEN: <app-platform-token>
-    ```
 
 ## Next Steps - Setup your Flow for Handover
 <div class="divider"></div>
