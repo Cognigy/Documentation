@@ -7,7 +7,7 @@
 <div class="divider"></div>
 First, an Endpoint, for example a [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/), needs to be created in Cognigy.AI. 
 
-Once you have a Webchat Endpoint, go to the **Endpoint Editor** and scroll down to **Handover Settings**. 
+Once you have an Endpoint, go to the **Endpoint Editor** and scroll down to **Handover Settings**. 
 
 Set the **Handover Platform** to _"Cognigy Live Agent"_. For the base URL, use your Live Agent installation URL, plus `/api/v1`.
 
