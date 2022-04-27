@@ -78,7 +78,7 @@ Enter the *Account ID* and *API Key* (Access Token) found in the previous steps 
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
 
-This feature allows you to autoconfigure an Organisation wide connection to a your Live Agent installation and simplify the Configuration effort when setting up multiple Agents and Endpoints. 
+If the toggle "Handover to pre-configured Live Agent account" is activated, conversations will be transferred to the Live Agent Account mapped to the current Cognigy.AI Organization.
 
 To use this feature you need to:
 
