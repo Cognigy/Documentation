@@ -14,14 +14,23 @@ Click on the profile thumbnail in the bottom left-hand side of the screen, next 
   <figcaption>Profile Menu</figcaption>
 </figure>
 
-In this section, the user profile data can be changed.
+## User Profile data
 
-Here the profile picture and display name can be updated.
+In this section, the user profile data can be changed. Currently user can customise the profile image and the display name.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-profile.png" width="100%" alt="Live Agent Profile Profile " />
   <figcaption>Profile</figcaption>
 </figure>
+
+| Field | Description |
+| --- | --- |
+| Profile image | It is displayed in the agent conversation, agent lists and profile menu |
+| Display name  | Currently, it is used for the conversation transcript that the agent can send by email. Transcript messages sent by the agent will use the display name as the sender name |
+
+The rest of the user data, such as email, full name and password, need to be updated in the Cognigy.AI account. The change will automatically apply to Live Agent.
+
+## Notifications
 
 You can customize the behavior of notifications.
 
@@ -32,7 +41,9 @@ You can customize the behavior of notifications.
 
 >Note: The push notifications setting must be enabled in the system. Otherwise, they are not available.
 
-Here you can also find the user access token. This is used for the Live Agent API.
+## API Access Token
+
+Here you can also find the user access token. This is used for the Live Agent API and its actions are limited by the user role.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />
