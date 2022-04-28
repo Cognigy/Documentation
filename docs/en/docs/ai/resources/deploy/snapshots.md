@@ -6,6 +6,7 @@
 # Snapshots
 
 ## Introdution
+<div class="divider"></div>
 A Snapshot is an immutable form of your Virtual Agent including the following resources:
 
   * **Flows** (*Including any trained NLU models*)
@@ -121,15 +122,21 @@ In order to restore an Virtual Agent from a Snapshot, do the following:
 We are constantly improving the Snapshot feature including the file format for Snapshots. We guarantee backward compatibility for Snapshot, meaning that you can import Snapshots that have been produced in older versions of Cognigy.AI (e.g. v4.4) into newer releases. Snapshots taken with a newer version of Cognigy.AI are not compatible with older versions though.
 
 ## Production deployment using Snapshots
+<div class="divider"></div>
 The following three scenarios show how Virtual Agents should be deployed into production. The concepts make use of the fact that an Agent in Cognigy.AI is like a project in other software products.
 
 ### Using a single Virtual Agent
+The Snapshot concept allows your to make your Virtual Agents available through Endpoints while you are already working on the next version of your Virtual Agent. This scenario is the simplest of all, but also quite elegant. Let's assume that you have a Virtual Agent called "Order Bot" for your restaurant.
 
+**People developing** the bot would simply create Flows, Lexicons, Intents and all other Resources as usual. Eventually you have reached a state that you want to publish to your customers. A new Snapshots needs to be created. You don't have to prepare a downloadable package for the Snapshot as we won't download and upload it to a different place - all will remain in the current Virtual Agents project.
+
+**In order to release** the new Snapshot, you visit your Endpoint(s) (e.g. your Webchat endpoint that you are using on your website) and simply select the new Snapshot and the Flow(s) within the Snapshot. Since you are now using resources within the Snapshot in production, developers can - without any fear - modify the Flows in the Virtual Agent directly without breaking conversation logic for your customers.
 
 ### Using multiple Virtual Agents
-For more control on what is actually running in production, the "multiple Virtual Agents" approach should be choosen. The idea is simple and can be described as followed:
+For more control on what is actually running in production, the "multiple Virtual Agents" approach should be choosen.
 
 A customer wants to build an Virtual Agent for FAQs on their website. Two Agents should be created in Cognigy.AI:
+
 - FAQ Bot development
 - FAQ Bot production
 
@@ -144,5 +151,20 @@ A customer wants to build an Virtual Agent for FAQs on their website. Two Agents
 ???+ info "Snapshots should not get restored"
     Please remember that Snapshots do not have to be restored in order for Endpoints to actually use their content! The "FAQ Bot production" Virtual Agent should not contain direct resources like Flows. It should only contain Snapshots and its Endpoints should point to Snapshots directly.
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/deployment-two-agents.drawio.png" width="100%" />
+  <figcaption>Deployment concept using Snapshots and two Virtual Agent "projects"</figcaption>
+</figure>
 
 ### Using multiple Virtual Agents with multiple Cognigy.AI systems
+If you are having multiple, physically separated, Cognigy.AI installations, you can even go one step further compared to the second concept explained previously. Customers in this situation usually have:
+
+- a Cognigy.AI installation with low hardware specs for "development" purpose
+- a Cognigy.AI installation with higher hardware specs for "staging" purpose where acceptance tests for new versions are being executed
+- a Cognigy.AI installation with high hardware specs for "production"
+
+**Developers only have access** to Virtual Agent projects in the "development" installation. They build bots, craft entire new experiences or improve already existing solutions. Once they have reached a desired state in their projects, they create new Snapshots. Downloadable packages for Snapshots will be created and provided to the team(s) workin on the "staging" installation.
+
+**Personnel on staging** will receive the Snapshots from developers and upload these into their Virtual Agent projects in the "staging" system. They point their Endpoints to the new Snapshots and run acceptance tests. If they find defects, they will tell their development team(s) which will then fix the problems and provide new Snapshots. If testing goes well, the Snapshots will be moved to the "production" system.
+
+**Personnel with access to the production** system - usually only a very small group of people - point the productive Endpoints to the new Snapshots provided by the team(s) who have proofen the quality on the "staging" system. The "production" system is also the place in which [**Cognigy Insights**]({{config.site_url}}insights/cognigy-insights/) will be used to understand how the actual users use the Virtual Agents as productive interaction only happens on this system.
