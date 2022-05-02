@@ -95,5 +95,5 @@ Once you have selected a conflict resolution strategy, click on **"Import"** in 
 </figure>
 
 ???+ warning "Using Packages As Templates: Node IDs and Importing Packages"
-    Node IDs will not change on import, to ensure that     Node IDs will not change on import, to ensure that hardcoded links between Flows and Nodes do not break. links between Flows and Nodes do not break. 
+    Node IDs will not change on import, to ensure that hardcoded links between Flows and Nodes do not break.
     If you need to import a Flow multiple times to the same Project, you can delete and recreate a Node to prevent ID conflicts.
