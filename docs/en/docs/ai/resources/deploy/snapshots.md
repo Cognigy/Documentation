@@ -24,16 +24,16 @@ Once a resource has been included into a Snapshot, this resource within the Snap
 
 The **main use case** for Snapshots is to create an immutable just-in-time copy of all relevant resources of a Virtual Agent so this specific version can get deployed through Endpoints while your developers already work on the next version of your Virtual Agent. A **second use case** for Snapshots is to create a backup of your Virtual Agent in order to be able to go back in time and restore an older state of a Virtual Agent.
 
-We highly encourage our customers to create Snapshots as soo as they have reached a state in their development process of their Virtual Agents and **point productive Endpoints** only to Flows that are contained within Snapshots.
+We highly encourage our customers to create Snapshots and **point productive Endpoints** only to Flows that are contained within Snapshots.
 
 ???+ warning "A Snapshot does NOT include the following resources"
     * **Endpoints**
     * **Intent Trainer records** 
     * **Analytics data**
     * **Contact Profiles**
-    * **Other Snapshots**
     * **Logs**
     * **Members**
+    * **Other Snapshots**
 
 ## Managing Snapshots
 <div class="divider"></div>
@@ -50,7 +50,7 @@ In order to create a new Snapshot of the current state of your Virtual Agent, cl
 ???+ info "Note"
     Since Snapshots contain a copy of your Virtual Agent, they can have a huge file-size. Hence we have introduced a limit of 10 Snapshots per Virtual Agent. If you have reached the limit, you have to first delete older Snapshots before you can create new ones. Customers with a dedicated installation can increase the maximum number of Snapshots via an environment variable in the cognigy-env config-map:
     MAX_AMOUNT_SNAPSHOTS_IN_AGENT.
-    Please note that there is also a file size limit of Snapshots which can also be changed when a dedicated product installation is used. This aspect can be changed via the following environment variable in the cognigy-env config-map:
+    Please note that there is also a file size limit of Snapshots which can be changed when a dedicated product installation is used. This aspect can be changed via the following environment variable in the cognigy-env config-map:
     SNAPSHOT_MAX_FILE_SIZE.
 
 ### Download a Snapshot
@@ -71,7 +71,7 @@ In order to download a Snapshot, you have to go through our two step process:
   * The web browser will start to download your Snapshot in our proprietary ".CSNAP File Type"
 
 ???+ info ".CSNAP File Type"
-    The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. We don't provide any tooling to open a Snapshot outside of Cognigy.AI. The data in your Snapshots will be encrypted as it also Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
+    The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. We don't provide any tooling to open a Snapshot outside of Cognigy.AI. The data in your Snapshots will be encrypted as Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
 
 ### Deleting a Snapshot
 Once you reach the maximum number of Snapshots in your Virtual Agent, you have to start deleting older Snapshots. It is essential to make sure that no Endpoint is currently pointing to the Snapshot you are about to delete!
@@ -126,7 +126,7 @@ We are constantly improving the Snapshot feature including the file format for S
 The following three scenarios show how Virtual Agents should be deployed into production. The concepts make use of the fact that an Agent in Cognigy.AI is like a project in other software products.
 
 ### Using a single Virtual Agent
-The Snapshot concept allows your to make your Virtual Agents available through Endpoints while you are already working on the next version of your Virtual Agent. This scenario is the simplest of all, but also quite elegant. Let's assume that you have a Virtual Agent called "Order Bot" for your restaurant.
+The Snapshot concept allows you to make your Virtual Agents available through Endpoints while you are already working on the next version of your Virtual Agent. This scenario is the simplest of all, but also quite elegant. Let's assume that you have a Virtual Agent called "Order Bot" for your restaurant.
 
 **People developing** the bot would simply create Flows, Lexicons, Intents and all other Resources as usual. Eventually you have reached a state that you want to publish to your customers. A new Snapshots needs to be created. You don't have to prepare a downloadable package for the Snapshot as we won't download and upload it to a different place - all will remain in the current Virtual Agents project.
 
@@ -163,8 +163,8 @@ If you are having multiple, physically separated, Cognigy.AI installations, you 
 - a Cognigy.AI installation with higher hardware specs for "staging" purpose where acceptance tests for new versions are being executed
 - a Cognigy.AI installation with high hardware specs for "production"
 
-**Developers only have access** to Virtual Agent projects in the "development" installation. They build bots, craft entire new experiences or improve already existing solutions. Once they have reached a desired state in their projects, they create new Snapshots. Downloadable packages for Snapshots will be created and provided to the team(s) workin on the "staging" installation.
+**Developers only have access** to Virtual Agent projects in the "development" installation. They build bots, craft entire new experiences or improve already existing solutions. Once they have reached a desired state in their projects, they create new Snapshots. Downloadable packages for Snapshots will be created and provided to the team(s) working on the "staging" installation.
 
 **Personnel on staging** will receive the Snapshots from developers and upload these into their Virtual Agent projects in the "staging" system. They point their Endpoints to the new Snapshots and run acceptance tests. If they find defects, they will tell their development team(s) which will then fix the problems and provide new Snapshots. If testing goes well, the Snapshots will be moved to the "production" system.
 
-**Personnel with access to the production** system - usually only a very small group of people - point the productive Endpoints to the new Snapshots provided by the team(s) who have proofen the quality on the "staging" system. The "production" system is also the place in which [**Cognigy Insights**]({{config.site_url}}insights/cognigy-insights/) will be used to understand how the actual users use the Virtual Agents as productive interaction only happens on this system.
+**Personnel with access to the production** system - usually only a very small group of people - point the productive Endpoints to the new Snapshots provided by the team(s) who have verified the quality on the "staging" system. The "production" system is also the place in which [**Cognigy Insights**]({{config.site_url}}insights/cognigy-insights/) will be used to understand how the actual users use the Virtual Agents as productive interaction only happens on this system.
