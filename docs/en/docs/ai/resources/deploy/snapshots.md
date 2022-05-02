@@ -73,18 +73,6 @@ In order to download a Snapshot, you have to go through our two step process:
 ???+ info ".CSNAP File Type"
     The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. We don't provide any tooling to open a Snapshot outside of Cognigy.AI. The data in your Snapshots will be encrypted as it also Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
 
-### Deleting a Snapshot
-Once you reach the maximum number of Snapshots in your Virtual Agent, you have to start deleting older Snapshots. It is essential to make sure that no Endpoint is currently pointing to the Snapshot you are about to delete!
-
-In order to actually delete the Snapshot, do the following:
-
-  * Select "Delete" by clicking the three-dot menu for a Snapshot you want to remove
-  * Click on "Confirm" in the dialog that will open
-  * A new task will be created and your Snapshot will be removed
-
-???+ danger "Check usage of your Snapshot!"
-    Endpoints in production should point to Snapshots. It is important that you first check whether no Endpoints are any longer pointing to the Snapshot you want to remove. Removing a Snapshot which is still being referenced by one of your Endpoints will break the conversations for your customers!
-
 ### Upload a Snapshot
 The use case for uploading a Snapshot is usually to deploy its Flows into production. Since Snapshots life within Virtual Agents as other resources, you have to either first create a new Virtual Agent or upload the Snapshot in one of your existing ones.
 
@@ -115,6 +103,18 @@ In order to restore an Virtual Agent from a Snapshot, do the following:
 ???+ info "Restoring a snapshot from another agent may require manual changes to the endpoints"
     [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
     Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the images below.
+
+### Deleting a Snapshot
+Once you reach the maximum number of Snapshots in your Virtual Agent, you have to start deleting older Snapshots. It is essential to make sure that no Endpoint is currently pointing to the Snapshot you are about to delete!
+
+In order to actually delete the Snapshot, do the following:
+
+  * Select "Delete" by clicking the three-dot menu for a Snapshot you want to remove
+  * Click on "Confirm" in the dialog that will open
+  * A new task will be created and your Snapshot will be removed
+
+???+ danger "Check usage of your Snapshot!"
+    Endpoints in production should point to Snapshots. It is important that you first check whether no Endpoints are any longer pointing to the Snapshot you want to remove. Removing a Snapshot which is still being referenced by one of your Endpoints will break the conversations for your customers!
 
 ## System Compatibility
 <div class="divider"></div>
