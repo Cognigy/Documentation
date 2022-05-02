@@ -6,7 +6,7 @@
 # Release notes
 
 ## 4.24.0
-**This version is currently in pre-release and will be released soon**
+**Released** May 2nd, 2022
 
 ### Features
 #### Server side Playbook execution
