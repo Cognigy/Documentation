@@ -12,13 +12,13 @@ To add an Any Slot, simply annotate a single word in your example sentence and s
 An example sentence with ***Any Slot*** "movie_title" such as...
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/d68399d-Screenshot_2021-01-14_at_17.51.31.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/d68399d-Screenshot_2021-01-14_at_17.51.31.png" width="60%" />
 </figure>
 
 ...will dynamically add user input that matches the pattern exactly to the slot *movie_title*:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_gonewiththewind.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_gonewiththewind.png" width="60%" />
 </figure>
 
 Any input content that matches the pattern of an *Any Slot* in your example sentences exactly will be populated as a new Cognigy Slot. The result will be the same as if you had populated a Lexicon with the tag of your placeholder *Any Slot* and a keyphrase identical to the matched user input.
@@ -37,19 +37,19 @@ Any input content that matches the pattern of an *Any Slot* in your example sent
 Consider the following example:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_thisisanorange.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_thisisanorange.png" width="60%" />
 </figure>
 
 This will dynamically add user input that matches the pattern exactly to the slot *fruit*:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_thisisanapple.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanapple.png" width="60%" />
 </figure>
 
 Note that because the *Any Slot* annotation is located at the very end of the training sentence, any number of words after *"This is an"* will be matched to the slot *fruit*:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_thisisanappletree.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanappletree.png" width="60%" />
 </figure>
 
 This is by design and does not seem to make sense for this specific example. However, consider the example above with the sentence *"Who is the director of Titanic"*, where the *Any Slot* would be matched with any movie title, also titles including spaces.
@@ -59,19 +59,19 @@ This is by design and does not seem to make sense for this specific example. How
 Lets "fix" the issue we discovered above by adjusting the example sentence a little bit:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_thisisanorangetree.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_thisisanorangetree.png" width="60%" />
 </figure>
 
 We placed the *Any Slot* annotation in the middle of a sentence. Now, the word of an input sentence that has exactly the structure of the training sentence will be mapped to the slot *fruit*:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_thisisanappletree2.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanappletree2.png" width="60%" />
 </figure>
 
 Grammatical issues aside, using multiple words does also work:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_thisisankiwifruittree.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisankiwifruittree.png" width="60%" />
 </figure>
 
 ### Any Slot in combination with Lexicon Slot
@@ -81,25 +81,25 @@ When using *Any Slots*, we rely on the user to use the exact word structure of t
 Lets annotate the example sentence from the previous example with a *Lexicon Slot*:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_lexiconannotated.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_lexiconannotated.png" width="60%" />
 </figure>
 
 Keep in mind that we also need to create and attach a lexicon to the flow to be able to annotate *Lexicon Slots*:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_lexicon.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_lexicon.png" width="60%" />
 </figure>
 
 As seen in the following examples, the user has more flexibility in wording the sentence:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_thisisanorangejuice.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanorangejuice.png" width="60%" />
 </figure>
 
 Grammatical issues aside, using completely different words than from the training sentence does also work:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_thisisanpinapplehouse.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanpinapplehouse.png" width="60%" />
 </figure>
 
 ### Punctuation
@@ -109,7 +109,7 @@ Grammatical issues aside, using completely different words than from the trainin
 See the following input with the same training sentence as the previous examples:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_punctuation.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_punctuation.png" width="60%" />
 </figure>
 
 ### Any Slots from past inputs
@@ -119,13 +119,13 @@ See the following input with the same training sentence as the previous examples
 Lets consider the following training sentences.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_past_slots.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_past_slots.png" width="60%" />
 </figure>
 
 In the following, in the first two inputs the two corresponding *Any Slots* are detected by the agent. The third input does not contain any word to be mapped to a slot. At this point, you can imagine the conversation to be of any length, until the topic of apples and tastiness arises again.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nluimages/result_follow_up.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_follow_up.png" width="60%" />
 </figure>
 
 ## Known Issues
@@ -133,18 +133,18 @@ There are some edge cases to *Any Slot* matching where seemingly odd behaviors o
 
 - An input sentence without spaces will be mapped.
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/nluimages/result_anyslotwithoutspaces.png" width="60%" />
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/result_anyslotwithoutspaces.png" width="60%" />
 </figure>
 
 - Excessive punctuation may cause problems with word mapping.
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/nluimages/result_excessivepunctuation.png" width="60%" />
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/result_excessivepunctuation.png" width="60%" />
 </figure>
 
 - Conflicting training sentences may yield undesired results.
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_conflicts.png" width="60%" />
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_conflicts.png" width="60%" />
 </figure>
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/nluimages/anyslot_result_conflicts.png" width="60%" />
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_result_conflicts.png" width="60%" />
 </figure>
