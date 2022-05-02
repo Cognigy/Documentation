@@ -158,5 +158,3 @@ If an Intent has been marked as `Reconfirmation Needed` and it is the highest fo
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/9ab14af-reconfirmation.PNG" width="100%" />
   <figcaption>Machine Learning Intents: Confirmation Sentence</figcaption>
 </figure>
-
-If a certain number of users confirm the sentence, the sentence will be added to the list of example sentences trained to this Intent.
