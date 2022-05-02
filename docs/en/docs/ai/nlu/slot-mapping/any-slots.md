@@ -10,7 +10,7 @@
 To add an Any Slot, simply annotate a single word in your example sentence and select the "Any-Slot" type. Then enter the desired slot name.
 
 An example sentence with ***Any Slot*** "movie_title" such as...
-{{config.site_url}}
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nluimages/d68399d-Screenshot_2021-01-14_at_17.51.31.png" width="60%" />
 </figure>
