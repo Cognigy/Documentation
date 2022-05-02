@@ -13,17 +13,16 @@
 
 Packages allow you to export and import individual resources like Flows or Lexicons in order to share those assets with other teams. Packages automatically contain their direct dependencies and can be shared as a portable zip archive once downloaded. 
 
-You either can create a package for a single resource, or multiple resources.
+You either can create a Package for a single resource, or multiple resources.
 
 Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connections, NLU Connectors,…
 
 ???+ info "What resources can be Exported in a Package?"
-    The following agent resources can be included in a package:
+    The following agent resources can be included in a Package:
 
     * [Flows]({{config.site_url}}ai/resources/build/flows/) 
     * [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)
     * [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) 
-    * [Functions]({{config.site_url}}ai/resources/build/functions/) 
     * [Endpoints]({{config.site_url}}ai/endpoints/overview/)
     * [Playbooks]({{config.site_url}}ai/resources/test/playbooks/)
 
@@ -42,7 +41,7 @@ To create a Package from a single resource, navigate to a resource list, e.g. "F
 </figure>
 
 
-This will start a "create package" task and you will be notified the package has been created. Once the task finished, you can download the package by clicking the link in the task menu. Clicking the link will open a file-save dialog in your browser - select a location in order to start the download.
+This will start a "create package" task and you will be notified the Package has been created. Once the task finished, you can download the Package by clicking the link in the task menu. Clicking the link will open a file-save dialog in your browser - select a location in order to start the download.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/f333cc6-Download_Package.png" width="100%" />
@@ -52,7 +51,7 @@ This will start a "create package" task and you will be notified the package has
 
 <div class="divider"></div>
 
-Besides exporting or importing single resources in packages, you can also export multiple resources at the same time. Navigate to "Packaging" in the "Management" section of the agent sidebar. This will open our packaging tool.
+Besides exporting or importing single resources in Packages, you can also export multiple resources at the same time. Navigate to "Packaging" in the "Management" section of the agent sidebar. This will open our packaging tool.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/526012a-Import-Export_page.png" width="100%" />
@@ -67,14 +66,14 @@ As of Release v4.5.0, you can select one / many / all resources by activating th
 
 
 ### Import
-Similar to the export, the import of packages is straightforward. Simply drag&drop a package on the area at the top of the packaging tool or use the file selection functionality. Your package will be uploaded and processed by Cognigy.AI. Once analyzed, the packaging tool will display the contents of the package and you can go forward and import them.
+Similar to the export, the import of Packages is straightforward. Simply drag&drop a Package on the area at the top of the packaging tool or use the file selection functionality. Your package will be uploaded and processed by Cognigy.AI. Once analyzed, the packaging tool will display the contents of the package and you can go forward and import them.
 
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
 ## Import Configuration
 
-As of v4.5.0, importing a package will show you conflict resolution options in case e.g. name conflicts occur. You can either select a conflict resolution strategy for the complete import or per resource.
+As of v4.5.0, importing a Package will show you conflict resolution options in case e.g. name conflicts occur. You can either select a conflict resolution strategy for the complete import or per resource.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/0af1303-Import_Configuration.png" width="100%" />
@@ -89,8 +88,12 @@ If the Package contains a Flow for import, you will need to provide a Locale Map
 
 In case your Agent already contains the Resources from the Package, you will need to decide how Cognigy.AI should handle the duplicates. You can either select a conflict resolution method for all resources or for each resource independently. Currently, we support importing a resource "as a copy" or by "replacing" the existing version.
 
-Once you have selected a conflict resolution strategy, click on **"Import"** in order to start the package import.
+Once you have selected a conflict resolution strategy, click on **"Import"** in order to start the Package import.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/7478741-Conflict_Import_handling.png" width="100%" />
 </figure>
+
+???+ warning "Using Packages As Templates: Node IDs and Importing Packages"
+    Node IDs will not change on import, to ensure that hardcoded links between Flows and Nodes do not break.
+    If you need to import a Flow multiple times to the same Project, you can delete and recreate a Node to prevent ID conflicts.
