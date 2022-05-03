@@ -94,11 +94,12 @@ Cognigy.AI uses the app platform token to perform operations using the Live Agen
 | `cognigyPlatformAppToken.existingSecret`     | Cognigy App Platform Token Secret Name                 | `""`                                                                     |
 | `cognigyPlatformAppToken.existingSecretKey`     | Cognigy App Platform Token Secret Key                 | `""`                                                                     |
 
-#### URL
+#### URLs
 
 | Name                                | Description                                                                | Default Value                                              |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI from Live Agent.                                  | `""`                                                   |
+| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI UI from Live Agent.                                  | `""`                                                   |
+| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`     | URL for performing requests to Cognigy.AI API                              | `""`   
 
 #### OAuth Values
 
