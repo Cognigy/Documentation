@@ -111,7 +111,7 @@ In detail:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-There is a possibility to create a new Flow from a node's execution branch.  Any node from which the creation of *Child Flow* is possible, will have the option **Create Flow from Branch** in its context menu. 
+It is possible to create a new Flow from a Node's execution branch.  Any Node that can create a *Child Flow* will have the option **Create Flow from Branch** within its context menu. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children.png" width="100%" />
@@ -127,10 +127,10 @@ Clicking on **Create Flow from Branch** option will open a dialog box that promp
 
 Providing a valid Flow name and clicking the *Create* button in the dialog will do the following:
 
-  * Create a new executee Flow containing all the Nodes from the selected branch.
+  * Create a new Executee Flow containing all the Nodes from the selected branch.
 
   * Replace all Nodes from the selected branch, with an **Execute Flow Node** from which the created Flow will be executed.
 
-  * The Intents/Slots will not be parsed, context will not be absorbed when executing the new Executee Flow.
+  * The Intents/Slots will not be parsed, and the Context will not be absorbed when executing the new Executee Flow.
 
-  * Also, NLU configuration/settings/default context etc. will not be copied to Executee Flow. Therefore, please check and adjust the NLU section of the created Flow, as necessary.
+  * Also, NLU configuration/settings/default Context etc. will not be copied to Executee Flow. Therefore, please check and adjust the NLU section of the created Flow, as necessary.
