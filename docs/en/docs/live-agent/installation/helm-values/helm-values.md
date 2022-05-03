@@ -71,32 +71,40 @@ For specific values and logic, here you can utilize these dedicated sections:
 | `odata.image.pullPolicy`  | Live Agent OData Image Pull Policy                          | `IfNotPresent`         |
 | `odata.image.pullSecretName`  | Live Agent OData Image Pull secret name                          | `cognigy-registry-token`         |
 
-## App
-
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.FORCE_SSL`                     | Force all access to the app over SSL, default is set to false.                  | `"false"`                                                  |
-| `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
-| `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot Customizations                                                              | `"true"`                                                   |
-| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)                                  | `""` |
-
 ## Cognigy
 
 ### App Platform Token
 
-Cognigy.AI uses the app platform token to perform operations using the Live Agent API. These include synchronising data and creating it (e.g. Inboxes and accounts). The value is automatically created when installing Live Agent with a random string. It can be set using an existing secret to have constant values (recommended).
+Cognigy.AI uses an App Platform Token to perform operations, such synchronising and creating data (e.g. Inboxes and accounts), using the Live Agent API. For this, Live Agent and Cognigy.AI need to have secrets set to a matching value.
+
+#### Live Agent Secret
+
+The recommendation is to create a new secret under the Live Agent namespace and reference it in the Helm values. Otherwise, it will automatically create a secret called `live-agent-cognigy-live-agent-cognigy-platform-app-token` with a random value (this secret will be persisted and not changed in future Helm upgrades).
 
 | Name                                | Description                                                                | Default Value                                       |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `cognigyPlatformAppToken.existingSecret`     | Cognigy App Platform Token Secret Name                 | `""`                                                                     |
 | `cognigyPlatformAppToken.existingSecretKey`     | Cognigy App Platform Token Secret Key                 | `""`                                                                     |
 
-### URLs
+>Note: The secret key value must be a random alphanumeric string of 24 characters, similar to `V65Xyf6pphEeac64g2d92pvw`
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI UI from Live Agent.                                  | `""`                                                   |
-| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`     | URL for performing requests to Cognigy.AI API                              | `""`   
+#### Cognigy.AI Secret
+
+The [Cognigy.AI secret `cognigy-live-agent-credentials`](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/secrets.dist/cognigy-live-agent-credentials.yaml) key, `cognigy-live-agent-platform-token`, must be the same value as the Live Agent secret key previously created in order for the integration to work.
+
+Remember to apply using `kubectl` the new manifest file.
+
+#### Troubleshooting
+
+If the secrets are the same value, but the integration is not working (e.g. handover or preconfiguring Live Agent not working), perform the following:
+  
+  1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
+  2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
+      - service-handover
+      - service-security
+      - service-api
+      - service-resources
+      - service-ui
 
 ### OAuth
 
@@ -109,12 +117,70 @@ These are the values used for enabling the Cognigy authentication in Live Agent.
 | `configmap.COGNIGY_OAUTH_AUTHORIZE_URL` | Cognigy OAuth API Authorize URL | `"https://installation.cognigy.ai/login?cognigy-live-agent=true"`                          |
 | `configmap.COGNIGY_OAUTH_TOKEN_URL`     | OAuth Token URL                 | `"https://api-installation.cognigy.ai/auth/oauth2/token"`                                  |
 
-For the OAuth client secret, the following values must be set:
+For the OAuth client secret, create a secret in the Live Agent namespace and then set the following values:
 
 | Name                                | Description                                                                | Default Value                                       |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `cognigyOAuth.existingSecret`     | Secret Name for The OAuth Client Secret                 | `""`                                                                     |
 | `cognigyOAuth.existingSecretKey`          | Secret key For The OAuth Client Secret                | `""`                                                    |
+
+>Note: The secret key value must be a random alphanumeric string of 64 characters, similar to `DUSOBAPM2L5V3CNLBw48surpgzrpk6bji9fav65xyf6ppheeac64g2d92pvwouhm`
+
+#### Cognigy.AI configmap_patch Overlay
+
+New values need to be added to the [Cognigy.AI `configmap_patch.yaml` overlay](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/overlays/config-maps/config-map_patch.yaml) as well to make the integration work.
+
+These are the following:
+
+```yaml
+# Live Agent API URL (e.g. https://cognigy-live-agent.your-company.com)
+- op: add
+  path: /data/COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL
+  value: "<live-agent-url>"
+
+- op: add
+  path: /data/CLIENT_ID_COGNIGY_LIVE_AGENT
+  value: "cognigy-live-agent"
+
+# OAuth client secret, it needs to have the same value as the Live Agent secret key (cognigyOAuth.existingSecretKey)
+- op: add
+  path: /data/CLIENT_SECRET_COGNIGY_LIVE_AGENT
+  value: "<secret-value>"
+
+# Live Agent API REDIRECT URI (e.g. https://cognigy-live-agent.your-company.com/omniauth/cognigy/callback)
+- op: add
+  path: /data/REDIRECT_URI_COGNIGY_LIVE_AGENT
+  value: "<live-agent-url>/omniauth/cognigy/callback"
+
+# Live Agent UI URL (e.g. https://cognigy-live-agent.your-company.com)
+- op: add
+  path: /data/COGNIGY_LIVE_AGENT_UI_BASE_URL_WITH_PROTOCOL
+  value: "<live-agent-url>"
+
+- op: add
+  path: /data/FEATURE_USE_COGNIGY_LIVE_AGENT
+  value: "true"
+```
+
+Remember to apply using `kubectl` the new manifest file.
+
+#### Troubleshooting
+
+If the secrets and configmaps are the same value, but the integration is not working (e.g. OAuth configuration error "Something is wrong with the OAuth configuration"), perform the following:
+  
+  1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
+  2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
+      - service-security
+      - service-api
+      - service-resources
+      - service-ui
+
+### URLs
+
+| Name                                | Description                                                                | Default Value                                              |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI UI from Live Agent.                                  | `""https://installation.cognigy.ai""`                                                   |
+| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`     | URL for performing requests to Cognigy.AI API                              | `""https://api-installation.cognigy.ai""`   
 
 ## File Upload Antivirus Scan
 
@@ -127,7 +193,16 @@ In order to enable the antivirus file upload scan, the following values must be 
 
 It will scan the file uploading for viruses and block the upload if a virus is found. It scans any file uploaded contained in a message as an attachment, including the ones from Live Agent UI and Cognigy.AI Webchat.
 
-## Rest Client SSL
+## App
+
+| Name                                | Description                                                                | Default Value                                              |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.FORCE_SSL`                     | Force all access to the app over SSL, default is set to false.                  | `"false"`                                                  |
+| `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
+| `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot Customizations                                                              | `"true"`                                                   |
+| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)                                  | `""` |
+
+### Rest Client SSL
 
 In case you have a custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
 
@@ -148,7 +223,7 @@ For enabling push notifications, you need to provide the following values, as Li
 | `configmap.VAPID_PUBLIC_KEY`     | VAPID public key                 | `"`                                                                     |
 | `configmap.VAPID_PRIVATE_KEY`          | VAPID private key                | `""`                                                    |
 
-## OData
+## OData values
 
 | Key |Description | Type | Default Value |
 |-----|------|---------|---------|
