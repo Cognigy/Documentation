@@ -98,23 +98,18 @@ The endpoint supports following the OData Query Language operators:
 Return total count of User Input Records
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
-`https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
 Return all Records for the given APIKey
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY`
-`https://odata-trial.cognigy.ai/v2.2/Inputs0?$top=10&apikey=YOURAPIKEY`
 Return the first 10 records
 
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executi0nTime lt 50&$top=5&`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&
-$orderby=executionTime&apikey=YOURAPIKEY`
+`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`
 Return the top 5 records where the executionTime is lower than 50ms, ordered by executionTime
 
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projec0Id eq 'PROJECTID'&`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&
-apikey=YOURAPIKEY`
+`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`
 Return all records for a specific Cognigy.AI agent. (The Project ID is available in the URL while the agent is open in the Cognigy.AI user interface e.g. ...trial.cognigy.ai/agent/PROJECTID/...)
 
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=times0amp gt 2021-01-01T00:00:00.`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.
-000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY`
+`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY`
 Return all records between two dates e.g. 1st Jan 2021 and 1st July 2021.
 
 ## Reference documentation
@@ -196,6 +191,13 @@ When retrieving this collection, the endpoint will return the following fields:
 | custom8            | Custom value created by flow                                                               | String   |                                  |
 | custom9            | Custom value created by flow                                                               | String   |                                  |
 | custom10           | Custom value created by flow                                                               | String   |                                  |
+| localeReferenceId  | Custom value created by flow                                                               | String   |                                  |
+| localeName         | Custom value created by flow                                                               | String   |                                  |
+| endpointUrlToken   | Custom value created by flow                                                               | String   |                                  |
+| endpointName       | Custom value created by flow                                                               | String   |                                  |
+| rating             | Custom value created by flow                                                               | String   |                                  |
+| ratingComment      | Custom value created by flow                                                               | String   |                                  |
+| snapshotName       | Custom value created by flow                                                               | String   |                                  |
 
 ???+ info "Field Explanation"
     Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
