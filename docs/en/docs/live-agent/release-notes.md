@@ -6,7 +6,8 @@
 ### Improvements
 - Improved by polishing contact info section styling for displaying Cognigy.AI contact profile fields
 - Improved by changing the color of the agent messages to a slightly lighter blue to differentiate them from the Cognigy.AI bot messages
-- Improved by rendering Cognigy.AI contact profile data in the conversation view under the contact info section
+- Improved by rendering Cognigy.AI contact profile data in the conversation view under the contact info section. 
+    - A new value called `COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL` must be added to the Helm values.yaml file to make it work. [More information here]({{config.site_url}}live-agent/installation/helm-values/helm-values/#urls).
 - Improved by removing functionality related to adding agents as now Cognigy.AI is where the user management happens
 - Improved by removing the ability to reopen resolved conversations at UI and API level
 - Improved by adding Cognigy Logo for bot messages
