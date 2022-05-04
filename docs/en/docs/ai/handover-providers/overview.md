@@ -15,18 +15,9 @@ To learn more about Handover, please refer to our [Agent Handover documentation]
 
 The following Endpoints are specific to the Cognigy.AI platform:
 
+- [**Cognigy Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-handover/)
+
 - [**Cognigy LiveChat (legacy)**]({{config.site_url}}ai/handover-providers/livechat-handover/)
-
-- **Cognigy Live Agent**: *Coming Soon*
-
-???+ warning "**Live Agent is Not Officially Released** "
-    *Live Agent* is not yet live, but you can take a look.
-
-    You can access our early documentation to setup *Live Agent* here.
-
-    - [Setup Live Agent]({{config.site_url}}ai/handover-providers/live-agent-handover/).
-
-    This documentation is currently a work in progress.
 
 ## Third Party Handover Providers
 
@@ -34,5 +25,6 @@ The following Endpoints are specific to the Cognigy.AI platform:
 
 The following Handover Providers allow integrations with third party products:
 
-- [**Chatwoot**]({{config.site_url}}ai/handover-providers/chatwoot-handover/) 
+- [**Chatwoot**]({{config.site_url}}ai/handover-providers/chatwoot-handover/)
+- [**RingCentral Engage**]({{config.site_url}}ai/endpoints/ringcentral-engage/)
 - [**Salesforce**]({{config.site_url}}ai/handover-providers/salesforce-handover/) 
