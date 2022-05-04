@@ -9,15 +9,15 @@
 
 <div class="divider"></div>
 
-**Agent Assist** is our tool which integrates with **Live Agent** to assist real Agents by utilizing the power of Cognigy.AI. 
+Agent Assist allows human agents using **Cognigy Live Agent** to be assisted by AI-powered Virtual Agents when conversing with the customer. Using this functionality, during an active handover, fully configurable Virtual Agent messages can be displayed to the human agent based on customer messages to best assist the customer.
 
-Agent Assist has the ability to:
+With Agent Assist, among other things, the following can be achieved:
 
-- Suggest replies (including media) which can be forwarded to the customer
-    
 - Provide contextual information for the Agent (CRM records, ERP data, small talk clues, etc.)
 
-- Allow quick access to resources (knowledge DB articles, backend tools, etc.)
+- Allow quick access to resources such as knowledge base articles
+
+- Suggest replies (including media) which can be forwarded to the customer
 
 Using Cognigy.AI, you can customize Agent Assist to be as powerful as you need it to be.
 
