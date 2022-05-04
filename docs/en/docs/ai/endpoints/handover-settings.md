@@ -5,7 +5,7 @@
 ---
 # Handover Settings
 
-Cognigy.AI supports integrating with various `Live Agent Tools`, so that a user can be transferred to an agent at any point during the conversation by using a [Handover Node]({{config.site_url}}ai/tools/agent-handover/) in the Flow.
+Cognigy.AI supports integrating with various `Live Agent Tools`, so that a user can be transferred to an agent at any point during the conversation by using a [Handover To Agent Node]({{config.site_url}}ai/tools/agent-handover/) in the Flow.
 
 ## Channel Support
 
@@ -36,6 +36,3 @@ The Endpoints that support handover are listed below:
 | [Sunshine Conversations]({{config.site_url}}ai/endpoints/sunshine-conversations/) |
 | [Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/) |
 | [Webhook]({{config.site_url}}ai/endpoints/webhook/)|
-
-???+ info "Helpcenter Content"
-    You can find detailed information about the Cognigy - RingCentral Engage Handover setup [here](https://support.cognigy.com/hc/en-us/articles/360016275260).
