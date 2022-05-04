@@ -124,6 +124,27 @@ Below is a list describing Conversation actions an Agent can take by clicking th
 | <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the Agent to select and include attachments in the message                                                               |
 | <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the Agent to request a file from the customer                                                             |
 
+### Agent Assist (Beta)
+<div class="divider"></div>
+
+When Agent Assist is enabled, Agents will receive information from an Agent Assist Flow, which can help to better answer a customer.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat.png" width="75%" />
+    </figure>
+
+When the Agent has received a message, they will receive a dropdown menu labeled *Assist*. In this menu, they will find the results from the Flow sent via Agent Assist.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
+    </figure>
+
+If forwarding was enabled for Nodes providing the information, the Agent can click the blue arrow to forward content to the end user or customer.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
+    </figure>
+
 ###  How to Send Canned Responses
 <div class="divider"></div>
 

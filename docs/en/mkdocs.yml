@@ -253,19 +253,23 @@ nav:
     - ai/endpoints/workplace-by-fb.md
   - Handover Providers:
     - ai/handover-providers/overview.md
-    # - Live Agent:
-    #   - ai/handover-providers/live-agent-handover.md
-    #   - Live Agent Setup:
-    #     - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
-    #     - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
-    #     - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
-    #     - Handover Setup:
-    #       - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
-    #       - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
-    #       - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
-    #     - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
-    #     - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
+    - Live Agent:
+      - ai/handover-providers/live-agent-handover.md
+      - Live Agent Setup:
+        - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
+        - Handover Setup:
+          - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
+          - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
+          - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
+      - LA Agent Assist (Beta):
+        - ai/handover-providers/la-agent-assist-overview.md
+        - ai/handover-providers/la-agent-assist-setup.md
     - ai/handover-providers/chatwoot-handover.md
+    - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/livechat-handover.md
 
