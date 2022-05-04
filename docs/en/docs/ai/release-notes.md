@@ -5,6 +5,17 @@
 ---
 # Release notes
 
+## 4.25.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+- Improved by adding possibility to update an extension in the agent
+- Improved by adding support for SSO logout for Azure AD initiated from service provider
+
+### Bugfixes
+- Fixed a bug where data messages were showing up as UNSUPPORTED_DATA_MESSAGE in Live Agent
+- Fixed a bug where SSO login was not working for multi-org users, who are not explicitly part of Cognigy user list
+
 ## 4.24.0
 **Released** May 2nd, 2022
 

@@ -5,6 +5,12 @@
 ---
 # Release notes
 
+## 4.25.0
+**This version is currently in pre-release and will be released soon**
+
+### Bugfixes
+- Fixed a bug where Message Explorer had 2 scrollbars which caused to invalid infinite loader behaviour
+
 ## 4.24.0
 **Released** May 2nd, 2022
 
