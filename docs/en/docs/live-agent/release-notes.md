@@ -1,7 +1,15 @@
 # Cognigy Live Agent
 
-## 4.24.0
+## 4.25.0
 **This version is currently in pre-release and will be released soon**
+
+### Improvements
+- Improved by fixing security vulnerability CVE-2022-28391 affecting the OData service
+- Improved by adding optional antivirus scan with ClamAV on file uploads
+- Improved by adding the section "Previous Conversations" to the conversations view right panel to allow agents see the rest of the conversations with the same contact
+
+## 4.24.0
+**Released** May 2nd, 2022
 
 ### Improvements
 - Improved by polishing contact info section styling for displaying Cognigy.AI contact profile fields
