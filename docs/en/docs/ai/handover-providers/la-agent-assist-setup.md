@@ -17,11 +17,9 @@ To setup Agent Assist for Live Agent, first you will need to create a new Flow w
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flows.png" width="75%" />
     </figure>
 
-All inputs received by Cognigy.AI will be forwarded to this Flow. 
+During an active Live Agent handover, all customer inputs will be shot against this Flow and the outputs of the Flow are displayed to the human agent as part of the conversation.
 
-This Flow will be used to provide your Agents with useful information.
-
-You could create Intents, for example, and use Lookup Nodes in combination with Say Nodes to provide helpful information to your Agents based on the input.
+You could create Intents, for example, and use Lookup Nodes in combination with Say Nodes to provide helpful information to your Agents based on customer inputs.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flow-example.png" width="75%" />
@@ -30,7 +28,7 @@ You could create Intents, for example, and use Lookup Nodes in combination with 
 ## Making Content Forwardable
 <div class="divider"></div>
 
-If you would like to make the Nodes from your Flow forwardable to the user, for example to speed up a conversation with pre-formed responses, you will need to follow these steps.
+If you would like to make the outputs from your Flow forwardable to the user, for example to speed up a conversation with pre-formed responses, you will need to follow these steps.
 
 Create a Say Node. With Output Type set to **Text**, click on Options and go to the **Data** field. Paste the following text here.
 
@@ -40,7 +38,7 @@ Create a Say Node. With Output Type set to **Text**, click on Options and go to 
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-forwardable.png" width="75%" />
     </figure>
 
-Once this is complete, you may change the Output Type to whichever type you wish (Galleries, Audio, etc.)
+Once this is completed, you may change the Output Type to whichever type you wish (Galleries, Audio, etc.)
 
 Now when your Agents receive this information via Agent Assist, they will also receive a blue arrow icon next to it. With this icon, they can send the information back to the customer or end user with whom they are chatting.
 

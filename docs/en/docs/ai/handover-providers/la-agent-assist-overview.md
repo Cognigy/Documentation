@@ -21,6 +21,9 @@ With Agent Assist, among other things, the following can be achieved:
 
 Using Cognigy.AI, you can customize Agent Assist to be as powerful as you need it to be.
 
+???+ warning "Beta Feature"
+    Please note that this feature is currently beta tagged. Changes in the near future are expected.
+
 ## Ready to Setup Agent Assist?
 <div class="divider"></div>
 To setup your Project for Agent Assist, please visit our documentation here: 
