@@ -16,6 +16,12 @@
 - Fixed a bug where data messages were showing up as UNSUPPORTED_DATA_MESSAGE in Live Agent
 - Fixed a bug where SSO login was not working for multi-org users, who are not explicitly part of Cognigy user list
 
+## 4.24.1
+**Released** May 5th, 2022
+
+### Bugfixes
+- Fixed a bug where rankedBarChart were freezing dashboards screen
+
 ## 4.24.0
 **Released** May 2nd, 2022
 
