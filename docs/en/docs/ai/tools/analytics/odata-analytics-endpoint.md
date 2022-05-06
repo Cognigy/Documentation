@@ -92,6 +92,9 @@ The endpoint supports following the OData Query Language operators:
 - $count
 - $select
 
+???+ warning "$count and Excel"
+    Microsoft Excel does not include support for the $count query. Please use Postman or other options.
+
 ## Example Queries
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`
@@ -191,13 +194,13 @@ When retrieving this collection, the endpoint will return the following fields:
 | custom8            | Custom value created by flow                                                               | String   |                                  |
 | custom9            | Custom value created by flow                                                               | String   |                                  |
 | custom10           | Custom value created by flow                                                               | String   |                                  |
-| localeReferenceId  | Custom value created by flow                                                               | String   |                                  |
-| localeName         | Custom value created by flow                                                               | String   |                                  |
-| endpointUrlToken   | Custom value created by flow                                                               | String   |                                  |
-| endpointName       | Custom value created by flow                                                               | String   |                                  |
-| rating             | Custom value created by flow                                                               | String   |                                  |
-| ratingComment      | Custom value created by flow                                                               | String   |                                  |
-| snapshotName       | Custom value created by flow                                                               | String   |                                  |
+| localeReferenceId  | Reference Id for locale                                                                    | String   |                                  |
+| localeName         | Name of locale                                                                             | String   |                                  |
+| endpointUrlToken   | The URL Token for the Endpoint                                                             | String   |                                  |
+| endpointName       | The name of the Endpoint                                                                   | String   |                                  |
+| rating             | The rating for the conversation. -1 for a negative rating or 1 for a positive rating       | Number   |                                  |
+| ratingComment      | Comment left when given a rating                                                           | String   |                                  |
+| snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                  |
 
 ???+ info "Field Explanation"
     Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
