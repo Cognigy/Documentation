@@ -72,9 +72,51 @@ The Interaction Panel can be configured with a number of settings across differe
 This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/7f829ba-interaction-settings-nlu.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-chat-input.png" width="100%" />
 </figure>
 
 #### Chat Output
-This section lets you enable **Text to Speech** in the Interaction Panel output. If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
+This section lets you configure the chat outputs in the Interaction Panel.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-chat-output.png" width="100%" />
+</figure>
+
+##### Text to Speech
+If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
+
+##### Expert Mode
+If enabled, the Interaction Panel will display additional information about the flow execution, like intents that were triggered, intent score, name of the flow that was triggered etc. When using the *Playbook* as the input mode, one can see the information about the assertions that failed or passed, if this setting is turned on.
+
+##### Channel Select
+We can also filter the messages in the Interaction panel by a specific channel. By default, outputs from all channels will be displayed.
+
+#### Playbooks
+This section lets you configure the playbook executions in the Interaction Panel.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-playbook.png" width="100%" />
+</figure>
+
+##### Repeat
+Turning this feature on will repeat executing the selected playbook over and over again.
+
+##### Delay
+Time (in milliseconds) to wait between each playbook step execution.
+
+#### General
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-general.png" width="100%" />
+</figure>
+
+##### Auto-move Flow Editor
+If turned on, based on the Interaction Panel outputs, the Flow Editor will automatically move and center the Flow node that was last executed. If the last triggered node belongs to a different Flow, other than the one that is currently open in the editor, then the Flow of the last triggered node will be opened automatically and the node will be centered.
+
+???+ info "Note"
+    Turning this setting on will automatically turn off and disable *Auto-switch Target Flow Selection* setting.
+
+##### Auto-switch Target Flow Selection
+When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow openened in the Flow Editor. 
+
 
