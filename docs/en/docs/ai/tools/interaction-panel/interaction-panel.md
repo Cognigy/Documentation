@@ -14,6 +14,9 @@ The Interaction Panel can be used to interact with your virtual agent. It can be
 ### Test
 <div class="divider"></div>
 
+???+ info "Note"
+    **Chat** tab was renamed to **Test** from version 4.25.0.
+
 #### Channel-Specific output
 
 The Interaction Panel will preview channel-specific output in case this has been configured in output nodes like the Say-Node.
