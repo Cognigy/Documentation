@@ -1,7 +1,7 @@
 # Cognigy Live Agent
 
 ## 4.25.0
-**This version is currently in pre-release and will be released soon**
+**Released** May 10th, 2022
 
 ### Improvements
 - Improved by fixing security vulnerability CVE-2022-28391 affecting the OData service
