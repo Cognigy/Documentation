@@ -6,7 +6,7 @@
 # Release notes
 
 ## 4.25.0
-**This version is currently in pre-release and will be released soon**
+**Released** May 10th, 2022
 
 ### Improvements
 - Improved by adding possibility to update an extension in the agent
