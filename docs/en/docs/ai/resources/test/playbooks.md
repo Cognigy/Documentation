@@ -43,7 +43,7 @@ All Assertion results can be inverted.
 
 ## Playbook Runs
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)]({{config.site_url}})
 
 In addition to executing a Playbook in the Interaction Panel, you can also schedule a Playbook Run from the Playbook Editor. When you open a Playbook from the list, you will now see a new tab named **Run** that will list all the previously scheduled Playbook runs.
 
@@ -57,7 +57,7 @@ In order to schedule a new Run, click on the *Run* button. In the dialog box tha
   <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-runs-dialog.png" width="100%" />
 </figure>
 
-The Playbook Run will be created in the background and a success notification will be displayed once the Run has been executed. After that, you can see the new Run in the Runs list. Each item in this list shows the status, creator and the creation time of the run. The list can be sorted by these three parameters. Further, the list can also be filtered by its *Status* and *Creator*.
+The Playbook Run will be created in the background and a success notification will be displayed once the creation is complete. When the Playbook Run creation is successful, you can see the newly created run in the Runs list. Each item in this list shows the status, creator and the creation time of the Run. The list can be sorted by these three parameters. Furthermore, the list can also be filtered by its *Status* and *Creator*.
 
 If the status of a Run is **Failed**, it means that there is one or more failing assertions in the Playbook Run. If the status is **Successful**, then all the Playbook assertions have passed. Clicking on a Playbook Run can give you further information on which assertions failed or passed, helping you to see what went wrong or right with the executed Flow.
 
