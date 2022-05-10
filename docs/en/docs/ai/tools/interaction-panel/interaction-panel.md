@@ -113,6 +113,10 @@ Time (in milliseconds) to wait between each playbook step execution.
 ##### Auto-move Flow Editor
 If turned on, based on the Interaction Panel outputs, the Flow Editor will automatically move and center the Flow node that was last executed. If the last triggered node belongs to a different Flow, other than the one that is currently open in the editor, then the Flow of the last triggered node will be opened automatically and the node will be centered.
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-flow-node.gif" width="100%" />
+</figure>
+
 ???+ info "Note"
     Turning this setting on will automatically turn off and disable *Auto-switch Target Flow Selection* setting.
 
