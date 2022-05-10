@@ -110,7 +110,7 @@ This section lets you configure the chat outputs in the Interaction Panel.
 If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
 
 ##### Expert Mode
-If enabled, the Interaction Panel will display additional information about the flow execution, like intents that were triggered, intent score, name of the flow that was triggered etc. 
+If enabled, the Interaction Panel will display additional information about the Flow execution, like intents that were triggered, intent score, name of the Flow that was triggered etc. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="100%" />
@@ -120,7 +120,7 @@ If enabled, the Interaction Panel will display additional information about the 
 We can also filter the messages in the Interaction panel by a specific channel. By default, outputs from all channels will be displayed.
 
 #### Playbooks
-This section lets you configure the playbook executions in the Interaction Panel.
+This section lets you configure the Playbook executions in the Interaction Panel.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-playbook.png" width="100%" />
