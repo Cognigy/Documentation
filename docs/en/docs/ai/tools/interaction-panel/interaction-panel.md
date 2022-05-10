@@ -32,10 +32,13 @@ Clicking on the secondary button located at the buttom-left corner of the Intera
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />
 </figure>
 
+???+ info "Note"
+    Prior to version 4.25.0, *Input Mode* select was a part of Interaction Panel settings tab.
+
 ##### Chat
 When **Chat** is selected as the input mode, the *Virtual Agent* can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
 
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#settings). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
+It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#input). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
 
 ##### Playbook
 When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
@@ -157,4 +160,10 @@ If turned on, based on the Interaction Panel outputs, the Flow Editor will autom
 ##### Auto-switch Target Flow Selection
 When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow openened in the Flow Editor. 
 
+#### Input
 
+Under this section, you can turn on **Show data input** toggle to enable the *Data Input* field for Chat input mode in Interaction Panel.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-input.png" width="100%" />
+</figure>
