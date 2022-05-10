@@ -141,7 +141,7 @@ There are some edge cases to *Any Slot* matching where seemingly odd behaviors o
 <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_excessivepunctuation.png" width="60%" />
 </figure>
 
-- Conflicting training sentences may yield undesired results.
+- Conflicting training sentences may yield undesired results. Bear in mind that this might also happen when Any Slots are used in combination with Lexicon Slots, System Slots, or other Any Slots. If you are planning to make excessive use of slot matching in your agent, particular care must be taken to ensure that multiple annotated training sentences of the same or multiple intents will not conflict each other.
 <figure>
 <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_conflicts.png" width="60%" />
 </figure>
