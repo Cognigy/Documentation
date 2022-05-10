@@ -49,6 +49,9 @@ When **Playbook** input mode is selected, a select field appears with the list o
 	You can further configure the Playbook execution under the [**Interaction Panel Playbook settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
 
 ##### Live Follow
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
+
 By selecting **Live Follow** as the input mode, you will be able to follow the conversations of the user with the help of a User ID. In the input field, simply enter the ID of the user that you wish to follow and hit the enter key (or simple press *Start Live Following* button). From now on, you will be able to see and follow the live conversation of the user from your Interaction Panel. Click on *Stop Live Following* button if you don't want to follow the user anymore.
 
 <figure>
@@ -139,6 +142,9 @@ Time (in milliseconds) to wait between each playbook step execution.
 </figure>
 
 ##### Auto-move Flow Editor
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+
 If turned on, based on the Interaction Panel outputs, the Flow Editor will automatically move and center the Flow node that was last executed. If the last triggered node belongs to a different Flow, other than the one that is currently open in the editor, then the Flow of the last triggered node will be opened automatically and the node will be centered.
 
 <figure>
