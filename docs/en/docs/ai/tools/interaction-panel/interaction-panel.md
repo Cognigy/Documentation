@@ -11,17 +11,49 @@ The Interaction Panel can be used to interact with your virtual agent. It can be
   <img class="image-center" src="{{config.site_url}}ai/tools/images/8f8cdab-interaction.jpg" width="100%" />
 </figure>
 
-### Channel-specific output
+### Test
 <div class="divider"></div>
+
+#### Channel-Specific output
 
 The Interaction Panel will preview channel-specific output in case this has been configured in output nodes like the Say-Node.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/ab54a96-interactionpanel-screenshot.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-channel-selection.png" width="100%" />
 </figure>
 
 ???+ success "Tip: Showing only selected output"
-    It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output/)**.
+    It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output)**.
+
+#### Input Modes
+Clicking on the secondary button located at the buttom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />
+</figure>
+
+##### Chat
+When **Chat** is selected as the input mode, the *Virtual Agent* can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
+
+It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#settings). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
+
+##### Playbook
+When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-playbook.png" width="100%" />
+</figure>
+
+
+???+ success "Tip: Configuring Playbook Execution"
+	You can further configure the Playbook execution under the [**Interaction Panel Playbook settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
+
+##### Live Follow
+By selecting **Live Follow** as the input mode, you will be able to follow the conversations of the user with the help of a User ID. In the input field, simply enter the ID of the user that you wish to follow and hit the enter key (or simple press *Start Live Following* button). From now on, you will be able to see and follow the live conversation of the user from your Interaction Panel. Click on *Stop Live Following* button if you don't want to follow the user anymore.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="100%" />
+</figure>
 
 ### Info
 <div class="divider"></div>
@@ -55,14 +87,6 @@ The **(Contact) Profile** acts as persistent - long term - memory and is used to
 
 ???+ info "Profile object"
     Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
-
-### Input Field
-<div class="divider"></div>
-
-The **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
-
-#### Data Input
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. This field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#settings). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{ {input.data} }```
  
 ### Settings
 <div class="divider"></div>
@@ -86,7 +110,11 @@ This section lets you configure the chat outputs in the Interaction Panel.
 If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
 
 ##### Expert Mode
-If enabled, the Interaction Panel will display additional information about the flow execution, like intents that were triggered, intent score, name of the flow that was triggered etc. When using the *Playbook* as the input mode, one can see the information about the assertions that failed or passed, if this setting is turned on.
+If enabled, the Interaction Panel will display additional information about the flow execution, like intents that were triggered, intent score, name of the flow that was triggered etc. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="100%" />
+</figure>
 
 ##### Channel Select
 We can also filter the messages in the Interaction panel by a specific channel. By default, outputs from all channels will be displayed.
