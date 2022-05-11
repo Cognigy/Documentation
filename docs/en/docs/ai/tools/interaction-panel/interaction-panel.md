@@ -136,10 +136,10 @@ This section lets you configure the Playbook executions in the Interaction Panel
 </figure>
 
 ##### Repeat
-Turning this feature on will repeat executing the selected playbook over and over again.
+Turning this feature on will repeat executing the selected Playbook over and over again.
 
 ##### Delay
-Time (in milliseconds) to wait between each playbook step execution.
+Time (in milliseconds) to wait between each Playbook Step execution.
 
 #### General
 
