@@ -46,8 +46,8 @@ The 'organisation-id' is a unique identifier of 24 characters which identifies a
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-When a user with a valid email address belongs to several organisation but none is set correctly in the URL, the user will be denied a login; but 
-will receive and email with direct links to the organisations he/she belongs to.
+When a user with a valid email address belongs to several organisations but none is set correctly in the URL, the user will be denied a login; but 
+will receive an email with direct links to the organisations he/she belongs to.
 Clicking on those links will promp the Cognigy.AI [login page](#login-for-users-in-multiple-organisation) with the correct organisationId param in the URL.
 
 <figure>
