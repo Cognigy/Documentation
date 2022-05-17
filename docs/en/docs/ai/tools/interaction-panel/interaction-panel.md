@@ -64,6 +64,8 @@ By selecting **Live Follow** as the input mode, you will be able to follow the c
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="100%" />
 </figure>
 
+You can test this input mode with our demo webchat in Endpoint Editor. For further information, please refer to *Manually defining the user ID* info box [here]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/#description).
+
 ## Info
 <div class="divider"></div>
 The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
