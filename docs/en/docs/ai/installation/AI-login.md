@@ -42,6 +42,20 @@ The 'organisation-id' is a unique identifier of 24 characters which identifies a
     
     For a user assigned to single organisation, including the organisationId in the login URL is completely optional and has no impact.
 
+### Multiple organisation email notification
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+
+When a user with a valid email address belongs to several organisation but none is set correctly in the URL, the user will be denied a login; but 
+will receive and email with direct links to the organisations he/she belongs to.
+Clicking on those links will promp the Cognigy.AI [login page](#login-for-users-in-multiple-organisation) with the correct organisationId param in the URL.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/installation/images/multi-org-email.png" width="100%" />
+  <figcaption>Multiple organisation user email on failed login.</figcaption>
+</figure>
+
+
 ???+ info "Password Reset"
     If a user wants to reset the password for one of the organisations to which the user is assigned, then again it is mandatory to have the organisationId in the login url when filling out the "Forgot Password" form.
 
