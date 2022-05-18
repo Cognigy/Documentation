@@ -177,10 +177,10 @@ If the secrets and configmaps are the same value, but the integration is not wor
 
 ### URLs
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI UI from Live Agent.                                  | `""https://installation.cognigy.ai""`                                                   |
-| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`     | URL for performing requests to Cognigy.AI API                              | `""https://api-installation.cognigy.ai""`   
+| Name                                               | Description                                                         | Default Value                                              |
+| -------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`   | URL used for accesing Cognigy.AI UI from Live Agent.                | `""https://installation.cognigy.ai""`                      |
+| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`  | URL for performing requests to Cognigy.AI API                       | `""https://api-installation.cognigy.ai""`                  |
 
 ## File Upload Antivirus Scan
 
@@ -188,47 +188,69 @@ In order to enable the antivirus file upload scan, the following values must be 
 
 | Name                                | Description                                                                | Default Value                                       |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `antivirusScan.enabled`     | Boolean to enable file upload antivirus scan                 | `false`                                                                     |
+| `antivirusScan.enabled`     | Boolean to enable file upload antivirus scan                 | `false`                                                                   |
 | `antivirusScan.resources`     | Recommended values are already set for the pod resources              |                                                                     |
 
 It will scan the file uploading for viruses and block the upload if a virus is found. It scans any file uploaded contained in a message as an attachment, including the ones from Live Agent UI and Cognigy.AI Webchat.
 
 ## App
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.FORCE_SSL`                     | Force all access to the app over SSL, default is set to false.                  | `"false"`                                                  |
-| `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
-| `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot Customizations                                                              | `"true"`                                                   |
-| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)                                  | `""` |
+| Name                                  | Description                                                                                         | Default Value                                              |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.FORCE_SSL`                 | Force all access to the app over SSL, default is set to false.                                      | `"false"`                                                  |
+| `configmap.SECRET_KEY_BASE`           | Used to verify the integrity of signed cookies. Ensure a secure value is set.                       | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
+| `configmap.USE_INBOX_AVATAR_FOR_BOT`  | Bot Customizations                                                                                  | `"true"`                                                   |
+| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)   | `""`                                                       |
 
 ### Rest Client SSL
 
-In case you have a custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
+Live Agent performs requests to Cognigy.AI APIs. If you are running Cognigy.AI services with a Self Signed Certificate with Custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.REST_CLIENT_SSL_VERIFICATION`  | Rest client config for webhooks API channel.                                     | `"true"`                                                   |
-| `configmap.SSL_CA_FILE`                   | CA File Name                                                                    | `"ca.pem"`                                                 |
-| `configmap.SSL_CLIENT_CERT`               | Client Cert, X509 Format                                                        | `""`                                                       |
-| `configmap.SSL_CLIENT_KEY`                | RSA key content, if there is not passphrase.                                    | `""`                                                       |
-| `configmap.SSL_CLIENT_KEY_PASSPHRASE` | RSA key passphrase, if there is not passphrase.                           | `""`                                                       |
+#### Certificates Verification
+
+| Name                                | Description                                                         | Default Value                 |
+| ----------------------------------- | ------------------------------------------------------------------- | ----------------------------- |
+| `restClient.ssl.verification`       | Enable SSL certificate verification                                 | `"true"`                      |
+
+#### Self Signed Certificate with Custom Certificate Authority
+
+Create a secret with a key named the certificate file name (e.g. `cert.pem`). It will be mounted in the pod file system to be trusted by the Live Agent app. The value must contain the certificate file content without extra tabs/spaces. Then fill in the following values:
+
+| Name                                | Description      |
+| ----------------------------------- | ---------------- |
+| `restClient.ssl.CASecret`           | CA secret name       |
+| `restClient.ssl.CASecretKey`        | CA secret key    |
+
+Ensure pods are restarted after updating the values.
+
+#### Client Certificate
+
+For using a client certificate, create a secret containing the client certificate, the client certificate key and the key passphrase (if the key has a passphrase). Then fill in the following values:
+
+| Name                                              | Description                                                                       |
+| ------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `restClient.ssl.clientCertSecret`                 | Client cert secret name                                                           |
+| `restClient.ssl.clientCertSecretKey`              | Client cert secret key. Its value must be in X509 format                          |
+| `restClient.ssl.clientKeySecretKey`               | Client key secret key. Its value must be as an RSA Key content                    |
+| `restClient.ssl.clientKeySecretPassphraseKey`     | Client key passphrase secret key. Leave it commented if the key has no passphrase |
+
+Ensure pods are restarted after updating the values.
 
 ### Push Notifications
 
 For enabling push notifications, you need to provide the following values, as Live Agent uses [VAPID](https://datatracker.ietf.org/doc/html/draft-ietf-webpush-vapid-01) to be more secure. They can be generated by using [this tool](https://d3v.one/vapid-key-generator).
 
-| Name                                | Description                                                                | Default Value                                       |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.VAPID_PUBLIC_KEY`     | VAPID public key                 | `"`                                                                     |
-| `configmap.VAPID_PRIVATE_KEY`          | VAPID private key                | `""`                                                    |
+| Name                                | Description            |
+| ----------------------------------- | ---------------------- |
+| `configmap.VAPID_PUBLIC_KEY`        | VAPID public key       |
+| `configmap.VAPID_PRIVATE_KEY`       | VAPID private key      |
 
-## OData values
+## OData
 
-| Key |Description | Type | Default Value |
-|-----|------|---------|---------|
-| `odata.enabled`     | Enable OData service and endpoint          |  Boolean   | `true`                                                                     |
-| `odata.configmap.ODATA_PROTOCOL`          | http or https        |  String     | `"https"`                                                    |
+| Key                                 | Description                         | Type      | Default Value   |
+| ----------------------------------- | ----------------------------------- | --------- | --------------- |
+| `odata.enabled`                     | Enable OData service and endpoint   |  Boolean  | `true`          |
+| `odata.configmap.ODATA_PROTOCOL`    | http or https                       |  String   | `"https"`       |
 
 ## Other
 
