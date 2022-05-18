@@ -1,5 +1,28 @@
 # Cognigy Live Agent
 
+## 4.26.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved by adding the capability to upload doc/docx files by agents and contacts
+
+- Improved by including the Cognigy Session ID field in Live Agent as part of the conversation information and also as a filterable field for conversations
+
+- Improved by adding support for trusting self-signed CA certificates and client certificates in the requests to Cognigy.AI. Have a look at the Helm Values SSL section
+
+- Improved by removing UI parts related to custom attributes as they were not used
+
+### Bugfixes
+
+- Fixed a bug where the agent will not show its online status in the contact actions dropdown
+
+- Fixed a bug where the website favicon didn't change, and the notification sound was not played while receiving new messages
+
+- Fixed a bug where Cognigy.AI multitenant users were not able to login into the proper Cognigy.AI organisation using OAuth login
+
+- Fixed a bug where agents were not notified about conversation assignment the first time the conversation was created and auto-assigned to them
+
 ## 4.25.0
 **Released** May 10th, 2022
 
