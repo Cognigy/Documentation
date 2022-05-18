@@ -288,9 +288,9 @@ nav:
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
 - Insights:
+  - insights/cognigy-insights.md
   - Release Notes:
     - insights/release-notes.md
-  - insights/cognigy-insights.md
   - insights/global-filter.md
   - insights/timezone.md
   - insights/dashboard-overview.md
