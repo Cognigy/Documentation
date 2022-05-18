@@ -5,6 +5,19 @@
 ---
 # Release notes
 
+## 4.26.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved by adding necessary and missing indices on analytics and sessions collections so that the initial load of Quantitative Queries are covered. Reduces the count totalDocsExamined to 0 by only scanning the indexed Keys
+- Improved by adding distinct color to the agent messages
+
+### Bugfixes
+
+- Fixed a bug where conversation records(input) would miss the analytics database, because of invalid field names that starts with $
+- Fixed a visualization problem of "switched Flow" messages in the Transcript Explorer
+
 ## 4.25.0
 **Released** May 10th, 2022
 

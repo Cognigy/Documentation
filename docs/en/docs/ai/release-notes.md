@@ -5,6 +5,37 @@
 ---
 # Release notes
 
+## 4.26.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+
+#### Create Flows from child-branches in Flows
+
+This release of Cognigy.AI adds the ability to create entirely new Flows from child-branches of already existing Flows. This new functionality helps to reduce the overal size of big Flows into more managable smaller fragments
+
+### Improvements
+
+- Improved by making the UI better for Follow User feature
+- Improved by upgrading the webchat widget in service-webchat and service-ui to version 2.41.0
+- Improved by allowing 3rd party client cognigy-live-agent to query user data
+- Improved by forwarding the sessionId to Live Agent
+- Improved by displaying appropriate extension label in Uninstall/Update dialog box
+- Improved by automatically filling question node fields with Cognigy Live Agent inbox ID
+- Improved by removing special characters from intents names, hence allowing to import packages created in previous versions of Cognigy.AI v4
+- Improved by introducing a frustration property to the input object, which increases when the user repeatedly takes the same path through the Flow
+- Improved by limiting access to sensitive data for user without followUser permissions
+- Improved by adding support for pre-chat entities and details to the Salesforce Handover Provider
+
+### Bugfixes
+
+- Fixed a bug where "hangup" event would be marked same as the client-side "disconnect" in Audiocodes
+- Fixed a bug where the field text shows the characters from the IME window doubled on a windows machine
+- Add missing database indices to various collections in service-resources db to improve performance of various APIs
+- Fixed a bug where some keyphrases where not found when followed by a dot
+- Fixed a bug where misusing the limit parameter with a value 0, returned all the items in the collection
+- Fixed a bug where slots were not properly re-parsed when coming from Alexa skill
+
 ## 4.25.0
 **Released** May 10th, 2022
 
