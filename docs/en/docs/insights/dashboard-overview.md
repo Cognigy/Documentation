@@ -42,7 +42,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |Graph title|	Description|
 |--|--|
 |Active Contacts|	The number of currently active users (the report is arranged in a tile).|
-|Conversation count|	The number of conversations (the report is arranged in a tile).|
+|Conversation count|	Indicates the total number of conversations, including ongoing and newly started conversations (the report is arranged in a tile).|
 |Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile).|
 |Positive Ratings	|Indication of the NLU quality (the report is arranged in a tile).|
 |Conversations|	A line chart displays the number of conversations on a timescale.|
