@@ -46,15 +46,6 @@ Assign the **liveAgentAgent** Role to users who are to have Agent rights in Live
   <figcaption>Global Roles Menu</figcaption>
 </figure>
 
-## Have Your Agent Login
-<div class="divider"></div>
-
-Now, have your new Agent login to Live Agent with their Cognigy.AI credentials. 
-
-They can do this in Cognigy.AI, via the [User Menu]({{config.site_url}}ai/tools/user-menu/user-menu/). Or via a direct link. (example: **https://liveagent-trial.cognigy.ai/**)
-
-After their first login, you will see them as an Agent within Live Agent! You can now assign them to Inboxes as needed.
-
 ## Adding Agents to an Inbox
 <div class="divider"></div>
 
