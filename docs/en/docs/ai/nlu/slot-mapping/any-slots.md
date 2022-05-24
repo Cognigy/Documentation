@@ -131,20 +131,93 @@ In the following, in the first two inputs the two corresponding *Any Slots* are 
 ## Known Issues
 There are some edge cases to *Any Slot* matching where seemingly odd behaviors occur that are related to the implementation. These edge cases are listed here for completeness, but should in practice not be of concern. 
 
-- An input sentence without spaces will be mapped.
+### 1. No spaces in input
+
+An input sentence without spaces will be mapped.
+
 <figure>
 <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_anyslotwithoutspaces.png" width="60%" />
 </figure>
 
-- Excessive punctuation may cause problems with word mapping.
+### 2. Excessive punctuation
+
+Excessive punctuation may cause problems with word mapping.
+
 <figure>
 <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_excessivepunctuation.png" width="60%" />
 </figure>
 
-- Conflicting training sentences may yield undesired results. Bear in mind that this might also happen when Any Slots are used in combination with Lexicon Slots, System Slots, or other Any Slots. If you are planning to make excessive use of slot matching in your agent, particular care must be taken to ensure that multiple annotated training sentences of the same or multiple intents will not conflict each other.
+### 3. Conflicting training sentences 
+
+Conflicting training sentences may yield undesired results. Notice the same beginning of both training sentences below. The Any Slot annotation in the second sentence will override that of the first sentence.
+
 <figure>
 <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_conflicts.png" width="60%" />
 </figure>
 <figure>
 <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_result_conflicts.png" width="60%" />
+</figure>
+
+Bear in mind that this might also happen when Any Slots are used in combination with Lexicon Slots, System Slots, or other Any Slots. If you are planning to make excessive use of slot matching in your agent, particular care must be taken to ensure that multiple annotated training sentences of the same or multiple intents will not conflict each other.
+
+This behavior may be adjusted by configuring Any Slot matching on system level for customers using Cognigy On-Premises. Two additional options to the default option are available:
+
+| <nobr>Any Slot Return Mode</nobr> | Description |
+|-|-|
+| Default | The above behavior occurs |
+| All | All possible Any Slot matches are returned. In the above example that is both `fruit` and `car_brand`. |
+| Exact | Any Slot matches which sentence structures exactly match the input sentence's structure are returned. In the above example that is only `fruit`. |
+
+
+### 4. Leading and trailing spaces
+
+You should take particular care to avoid leading and trailing spaces within Any Slot annotations. They can quickly creep in with a slip of the mouse and cause undesirable slot mapping results. 
+
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/4_in.png" width="60%" />
+</figure>
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/4_out.png" width="60%" />
+</figure>
+
+### 5. Consecutive Any Slot annotations
+
+Using multiple Any Slot annotations right after each other may cause problems. Make sure to put at least one word or character between two consecutive Any Slot annotations.
+
+The following will not work as expected:
+
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/5_wrong_in.png" width="60%" />
+</figure>
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/5_wrong_out.png" width="60%" />
+</figure>
+
+The following will work:
+
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/5_right_in.png" width="60%" />
+</figure>
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/5_right_out.png" width="60%" />
+</figure>
+
+### 6. Multiple words as Any Slot annotations
+
+Using multiple words in Any Slot annotations may yield undesired results. Any Slot matching works best when using annotations that contain only a single word. Bear in mind that this does not limit you in detecting multi-word Any Slots. It is rather the other way around: Annotations of Any Slots with multiple words limit you from detecting single-word Any Slots.
+
+Wrong:
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/6_wrong_in.png" width="60%" />
+</figure>
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/6_wrong_out.png" width="60%" />
+</figure>
+
+Right:
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/5_right_in.png" width="60%" />
+</figure>
+<figure>
+<img class="image-center" src="{{config.site_url}}ai/nlu/images/5_right_out.png" width="60%" />
 </figure>
