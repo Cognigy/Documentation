@@ -11,24 +11,22 @@ For example, if you use the Universal Language and want to match an intent on a 
 
 ## Concept
 <div class="divider"></div>
-Rule intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. However, example sentences are not required for Rule Intents. The rule intents field can be found in the intent editor below the machine learning intents.
+Rule intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. After you have created an intent, you can specify rules for this intent in the **Rules** section right below the section for **Example Sentences**.  When using rules in an intent, example sentences are not required and can be omitted. However, you can also use example sentences in combination with rules, but more on that later.
 
 Rule Intents require the following:
 
 | Item | Description |
 |-------|-------------|
 | Intent Name | Unique name of the Intent |
-| Rule(s) | A set of rules for this Intent (Min 1 rule) |
+| Rule(s) | A set of rules for this Intent (Minimum of one rule) |
 
 ## Writing Rules
 <div class="divider"></div>
-Each Intent can have any number of rules attached to it. The rules are written as Direct CognigyScript, meaning that you don't need the CognigyScript tags. You can therefore write your rules using the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) or [Context Object]({{config.site_url}}ai/tools/interaction-panel/context/) (e.g. input.text === "restart") and use free form JavaScript.
+Each Intent can have any number of rules attached to it. The rules are written as Direct CognigyScript, meaning that you don't need the CognigyScript tags. You can therefore write your rules using the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) or [Context Object]({{config.site_url}}ai/tools/interaction-panel/context/) (e.g. input.text === "restart") and use free form JavaScript. You can create as many rules as you want, and if any one of them is matched, the intent will be returned with a score of 1.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b23c4c5-rules.PNG" width="100%" />
 </figure>
-
-You can create as many rules as you want, and if any one of them is matched, the intent will be returned with a score of 1. Rule Intents take precedence over ML Intents, meaning that if the user says a sentence that would trigger a Rule Intent AND an ML Intent, then the Rule Intent will win.
 
 ???+ info "Rule Intent Example"
     The intent is `orderFood`. Rules could include.
@@ -37,6 +35,48 @@ You can create as many rules as you want, and if any one of them is matched, the
     * input.slots.food[0].keyphrase === "pizza" && inut.slots.food.length === 1
     * input.text === \`${input.slots.male_firstname[0].keyphrase} wants cake\`
     * input.text.split(" ")[0] === "Add" && input.text.match("to favorites")
+
+## Which rules take priority
+
+Rule Intents take precedence over ML Intents. That means if the user said a sentence that would trigger both a Rule Intent **and** an ML Intent, then the Rule Intent wins.
+
+In case rules of multiple intents simultaneously apply, the order of Rule Intents within the flow and its attached flows plays a role in which intent is triggered with priority. There are three principles to remember when working with rules:
+
+1. Rule Intents lower in the list come first
+2. Children come second
+3. Attached flows come third, in the order they were created or arranged
+
+To have an example, consider an agent with a flow having multiple intents on different hierarchy levels. The flow also has two flows attached to it, each having its own intents:
+
+```
+Main Flow
+├── Intent A
+│   └── Intent A.1
+│       └── Intent A.2
+└── Intent B
+
+Attached Flow 1
+└── Intent C
+    └── Intent C.1
+        └── Intent C.2
+
+Attached Flow 2
+└── Intent D
+```
+
+### 1. Rule Intents lower in the list come first
+
+Imagine that both `Intent A.2` and `Intent B` have a rule `input.text.includes("foo bar")`. If we send the message *This text includes foo bar* to the agent, then the intent last in the list of intents will take precedence and be triggered, which is `Intent B`.
+### 2. Children come second
+
+Imagine that both `Intent A.1` and `Intent A.2` have a rule `input.text.includes("foo bar")`. If we send the message *This text includes foo bar* to the agent, then the child deepest in the hierarchy will take precedence and be triggered, which is `Intent A.2`.
+### 3. Attached flows come third
+
+Imagine that `Intent A`, `Intent B`, `Intent C`, and `Intent D` each have a rule `input.text.includes("foo bar")`. Remember the second principle. If we send the message *This text includes foo bar* to the agent, then the child last in the list will take precedence and be triggered, which is `Intent B` in this case.
+
+Now imagine that we delete the rules in `Intent A` and `Intent B`. If we now send the above message to the agent, then `Intent C` will be triggered. This is because we consider intents of attached flows last, but in their corresponding order. If we switched the places of `Intent C` and `Intent D` in the user interface, such that `Intent D` comes before `Intent C`, then `Intent D` would be triggered.
+
+As a last example, imagine that both `Intent C.2` and `Intent D` have a rule `input.text.includes("foo bar")`. If we send the message *This text includes foo bar* to the agent, then `Intent C.2` will be triggered, because the entire `Attached Flow 1` takes precedence over any intent in `Attached Flow 2`.
 
 ## Thresholds
 <div class="divider"></div>
