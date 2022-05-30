@@ -19,6 +19,8 @@
     - [How to navigate to the Cognigy.AI platform from Live Agent?](#how-to-navigate-to-the-cognigyai-platform-from-live-agent)
     - [How to send a reset password link for Live Agent user Agent by an administrator?](#how-to-send-a-reset-password-link-for-live-agent-user-agent-by-an-administrator)
     - [What happens if you remove an Inbox from Live Agent?](#what-happens-if-you-remove-an-inbox-from-live-agent)
+    - [Is antivirus file upload scanning enabled for App and Trial environments?](#is-antivirus-file-upload-scanning-enabled-for-app-and-trial-environments)
+
   - [Live Agent OData service](#live-agent-odata-service)
     - [Why is the OData service not returning all the information from the database?](#why-is-the-odata-service-not-returning-all-the-information-from-the-database)
     - [Are you getting an unauthorised error while querying the OData endpoint?](#are-you-getting-an-unauthorised-error-while-querying-the-odata-endpoint)
@@ -104,6 +106,9 @@ Please see the  [***Cognigy Login page***](./../ai/installation/AI-login.md) for
 You can safely modify/remove Inboxes created manually. But you must not change/update/delete the default Inbox
 created by the Cognigy.AI platform, as it will break the communication protocol between Live Agent and Cognigy.AI. There is no way
 to undo this step quickly. In case you need to do so, please reach support.
+
+### Is antivirus file upload scanning enabled for App and Trial environments?
+NO, antivirus file upload scanning is not enabled for App and Trial environments.
 
 ## Live Agent OData service
 
