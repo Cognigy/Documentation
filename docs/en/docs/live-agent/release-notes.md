@@ -1,5 +1,14 @@
 # Cognigy Live Agent
 
+## 4.27.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved the UI for agent assist by reducing the structured content messages and simple messages to 70% of their original size, changed the forward arrow icon and added functionality to forward the agent assist message by clicking the whole agent assist message container. Also augmented the size of non-forwardable informational elements like Lists and Text with buttons
+
+- Improved by adding the possibility to render adaptive card messages in Live Agent as structured content and as agent assist messages, non-forwardable adaptive cards are shown in the original size so they can serve as informational elements
+
 ## 4.26.0
 **Released** May 24th, 2022
 
