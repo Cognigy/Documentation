@@ -5,6 +5,14 @@
 ---
 # Release notes
 
+## 4.26.1
+**Released** May 31st, 2022
+
+### Bugfixes
+
+- Fixed a bug where messages from ABS Endpoints could be incorrectly answered
+- Fixed a bug where webhook endpoint notify is not working by creating missing generic endpoint instance using channel type "webhook"
+
 ## 4.26.0
 **Released** May 24th, 2022
 
