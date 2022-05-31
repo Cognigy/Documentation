@@ -238,22 +238,19 @@ The status can be changed to 'Resolved' once a resolution is provided to the cus
   <figcaption>Conversations Status</figcaption>
 </figure>
 
+The Conversation statuses available are listed below. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.
 
-The Conversation statuses available are listed below.
-
-| Options                 | Actions                                                                                        |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| Mark as Pending         | Change the issue to Pending status                                                             |
-| Resolve                 | Change the issue to Resolved status                                                               |
-| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                         |
-| Reopen                  | Change the issue to Open status                                                                |
-| Open                    | Change the pending issue to Open status                                                        |
+| Options                 | Actions                                                                                             |
+|-------------------------|---------------------------------------------------------------------------------------------------- |
+| Mark as Pending         | Change the issue to Pending status                                                                  |
+| Resolve                 | Change the issue to Resolved status                                                                 |
+| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                          |
+| Open                    | Change the pending issue to Open status                                                             |
 | Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer |
-| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                 |
-| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                |
+| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                    |
+| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                       |
 
 Conversations can be selected and filtered by their statuses within the Conversation panel, as seen below.
-
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-23.png" width="100%" alt="Live Agent Conversations Selections" />

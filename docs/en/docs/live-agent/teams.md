@@ -12,8 +12,8 @@ A user can be part of multiple Teams. You can assign conversations to a Team whe
 Click on the sidebar **Settings** button on the Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Screen" />
-  <figcaption>Live Agent Dashboard</figcaption>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
+  <figcaption>Live Agent Dashboard Settings</figcaption>
 </figure>
 
 Click on **Teams** and then on the Create New Team button on the right-hand side.

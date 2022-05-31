@@ -332,16 +332,16 @@ nav:
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
-  - live-agent/agents.md
-  - live-agent/teams.md
-  - live-agent/labels.md
   - live-agent/inboxes.md
-  - live-agent/account-settings.md
-  - live-agent/reports.md
   - live-agent/conversation-workflow.md
   - live-agent/conversation-routing.md
-  - live-agent/profile-settings.md
+  - live-agent/agents.md
   - live-agent/roles.md
+  - live-agent/teams.md
+  - live-agent/labels.md
+  - live-agent/reports.md
+  - live-agent/account-settings.md
+  - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - live-agent/FAQs.md
 - Marketplace:
