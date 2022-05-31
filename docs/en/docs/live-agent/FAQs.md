@@ -108,7 +108,7 @@ created by the Cognigy.AI platform, as it will break the communication protocol 
 to undo this step quickly. In case you need to do so, please reach support.
 
 ### Is antivirus file upload scanning enabled for App and Trial environments?
-NO, antivirus file upload scanning is not enabled for App and Trial environments.
+The antivirus file upload scanning needs to be configured at the infrastructure level, and it is not enabled for the Trial and App instances at the moment. 
 
 ## Live Agent OData service
 
