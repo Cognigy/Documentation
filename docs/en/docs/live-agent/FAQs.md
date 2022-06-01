@@ -42,7 +42,7 @@ Head over to [Conversations Workflow]({{config.site_url}}live-agent/conversation
 ### How to add agents to an inbox?
 Administrator users can only do this action. Navigate to ***"Settings"*** > ***"Inboxes"***, look for the Inbox to be edited and click on the settings icon. Then click on the tab ***"Collaborators"*** and pick the Agent name. For updating the current inbox, click on the ***"Update"*** button.
 
-Head over to [Inboxes]({{config.site_url}}live-agent/inboxes#inbox-collaborators) for more information.
+Head over to [Inboxes]({{config.site_url}}live-agent/inboxes/#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
 Navigate to ***"Settings"*** > ***"Teams"*** and click on the ***"Create new team"*** button. In the second step, add the desired agents. The added agents can be updated later.
