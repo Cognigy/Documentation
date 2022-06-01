@@ -10,8 +10,8 @@ An Inbox shows the connection of Cognigy.AI to Live Agent. You can have unlimite
 Click on the sidebar **Settings** button on the Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png" width="100%"  alt="Live Agent Dashboard Screen" />
-  <figcaption>Live Agent Dashboard</figcaption>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
+  <figcaption>Live Agent Dashboard Settings</figcaption>
 </figure>
 
 Click on the **Settings** button of a listed Inbox.
