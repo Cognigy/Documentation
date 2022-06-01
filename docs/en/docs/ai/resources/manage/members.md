@@ -34,13 +34,14 @@ The **Project Roles** available to chose from are listed below:
 | Contact Profile Editor   | Adds the following permissions: <br> - read/update permissions for Contact Profiles|
 | Contact Profile Viewer  | Adds the following permissions: <br> - read permissions for Contact Profiles|
 | Conversation History |Adds the following permissions: <br> - full permissions for Conversation History|
-| Developer  | Adds the following permissions: <br> - full permissions for Extensions <br> - full permissions for Flow Node Comments <br> - full permissions for Flow Node Description <br> - full permissions for Locales <br> - full permissions for Logs|
+| Developer  | Adds the following permissions: <br> - full permissions for Extensions <br> - full permissions for Flow Node Comments <br> - full permissions for Flow Node Description <br> - full permissions for Locales <br> - full permissions for Logs <br> - full permissions for Live Follow feature|
 | Endpoint Admin  | Adds the following permissions: <br> - full permissions for Endpoints|
 | Extension Admin  | Adds the following permissions: <br> - full permissions for Extensions|
 | Extension Editor| Adds the following permissions: <br> - read/update permissions for Extensions|
 | Flow Editor| Adds the following permissions: <br> - read/update permissions for Intents <br> - full permissions for Flow node comments <br> - full permissions for Flow node descriptions <br> - full permissions for Flow nodes <br> - full permissions for Copy/Paste etc <br> - full permissions for changing the order of Flow nodes|
 | Flow Node Comments  |Adds the following permissions: <br> - full permissions for Flow node comments|
 | Flow Node Descriptions| Adds the following permissions: <br> - full permissions for Flow node descriptions|
+| Follow User| Adds the following permissions: <br> - full permissions for Live Follow feature|
 | Intents  | Adds the following permissions: <br> - full permissions for intents|
 | Lexicon Admin  | Adds the following permissions: <br> - full permissions for Lexicons|
 | Lexicon Editor | Adds the following permissions: <br> - read/update permissions for Lexicons|
