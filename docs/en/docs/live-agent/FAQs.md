@@ -59,6 +59,10 @@ A quick way is to select an inbox on the dashboard screen. The URL will look lik
 
 The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**
 
+### Is antivirus file upload scanning enabled for App and Trial environments?
+The antivirus file upload scanning needs to be configured at the infrastructure level, and it is not enabled for the Trial and App instances at the moment.
+Head over to [File Upload Antivirus Scan Helm Values]({{config.site_url}}live-agent/installation/helm-values/helm-values/#file-upload-antivirus-scan) for learning how to configure it.
+
 ### How to navigate to Cognigy.AI from Live Agent?
 Under the profile menu, there is a link called "Cognigy.AI" that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values]({{config.site_url}}live-agent/installation/helm-values/helm-values/#urls) for configuring it.
 
