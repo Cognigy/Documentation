@@ -5,6 +5,40 @@
 ---
 # Release notes
 
+## 4.27.0
+**This version is currently in pre-release and will be released soon**
+
+### Features
+
+This release of Cognigy.AI adds a new user interface for inspecting Playbook Runs. This allows our customers to see the status of Playbooks they ran server side. Please have a look at our product documentation for more information.
+
+### Improvements
+
+- Improved by adding 'Automatically move Flow Editor' setting to interaction Panel
+- Improved by enabling Live Agents to send a message to the Virtual Agent on behalf of the user
+- Improved by adding a setting for handover assist to the say node default tab
+- Improved by sending a helper email to those user who fail to log in due missing the organisationId in URL
+- Improved by adding a "test mode" to REST Endpoints
+- Improved by providing an additional Flow Select Field for Intent Selection in Case Nodes
+- Improved by adding the possibility to configure a Whisper Assist Init Message
+- Improved storage of session states by adding the possibility to add a debounce by time or counter
+- Improved by adding an environmental variable NLP_ANYSLOT_RETURN_MODE=all/exact/default specifying which Any Slot matches shall be returned to the agent, see documentation
+- Improved by adding an overwrite webchat bundle URL setting to endpoint
+- Improved by allowing user to override the default InboxId for the LiveAgent
+
+### Bugfixes
+
+- Fixed a bug where extension was not removed from UI after deleting it
+- Fixed a bug where fields in Interaction Panel received keyboard focused even when IP is closed
+- Fixed a bug where no IP address was added to inject messages
+- Fixed a bug where drag&dropping an intent would not immediately show the new build status
+- Fixed a bug where adaptive cards were not forwarded to Live Agent
+- Fixed a bug where the page scroll bar pops up once the interactive tooltip of the last displayed message in chat history reaches the bottom of the page
+- Fixed a bug where Any Slot matching failed when Lexicon Slots were annotated without the Lexicon attached
+- Fixed a bug where the same Any Slot was detected multiple times
+- Fixed a bug where seemingly an incorrect Any Slot was detected
+- Fixed a bug where microsoft teams endpoint (webhook api) cannot handle "empty message response"
+
 ## 4.26.1
 **Released** May 31st, 2022
 
