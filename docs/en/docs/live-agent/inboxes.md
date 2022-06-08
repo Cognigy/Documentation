@@ -35,6 +35,8 @@ Here you can change the settings and adjust them based on your needs.
 
 In this section, you can see the agents assigned to the Inbox as collaborators.
 
+>Additional settings such as updating conversation assignment are also available. Be sure to explore and adjust settings to best suit your needs.
+
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-Inbox-list-agents.png" width="100%"  alt="Live Agent Inbox Settings" />
   <figcaption>Inbox Collaborators</figcaption>

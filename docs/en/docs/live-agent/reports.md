@@ -22,10 +22,27 @@ The window below will open, with an overview of all Reports.
   <figcaption>Reports</figcaption>
 </figure>
 
+### Overview
+<div class="divider"></div>
+
+Click on the Overview tab in Reports . A graph will show all the open Conversations and agent statuses .
+
+It also shows the number of open conversation which assigned to different agents.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-reports-overview.png" width="100%" alt="Overview Report Screen" />
+  <figcaption>Overview Report Screen</figcaption>
+</figure>
+
+### Agents
+<div class="divider"></div>
+
+Click on the Agents tab in Reports and select an agent. A graph will show the Conversations of the selected agent that have occurred during the selected days. 
+
 A Report can be generated for various time durations. This can be done by selecting a time period in the drop-down list, as shown below. By default, this is set for the last seven days.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-reports-time-period.png" width="100%" alt="Report Duration selection drop down" />
+<img src="{{config.site_url}}live-agent/images/LA-reports-agents.png" width="100%" alt="Report Duration selection drop down" />
   <figcaption>Report Duration Selection</figcaption>
 </figure>
 
