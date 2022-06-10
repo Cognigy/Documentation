@@ -5,8 +5,98 @@
 ---
 # Release notes
 
-## 4.24.0
+## 4.27.0
 **This version is currently in pre-release and will be released soon**
+
+### Features
+
+This release of Cognigy.AI adds a new user interface for inspecting Playbook Runs. This allows our customers to see the status of Playbooks they ran server side. Please have a look at our product documentation for more information.
+
+### Improvements
+
+- Improved by adding 'Automatically move Flow Editor' setting to interaction Panel
+- Improved by enabling Live Agents to send a message to the Virtual Agent on behalf of the user
+- Improved by adding a setting for handover assist to the say node default tab
+- Improved by sending a helper email to those user who fail to log in due missing the organisationId in URL
+- Improved by adding a "test mode" to REST Endpoints
+- Improved by providing an additional Flow Select Field for Intent Selection in Case Nodes
+- Improved by adding the possibility to configure a Whisper Assist Init Message
+- Improved storage of session states by adding the possibility to add a debounce by time or counter
+- Improved by adding an environmental variable NLP_ANYSLOT_RETURN_MODE=all/exact/default specifying which Any Slot matches shall be returned to the agent, see documentation
+- Improved by adding an overwrite webchat bundle URL setting to endpoint
+- Improved by allowing user to override the default InboxId for the LiveAgent
+
+### Bugfixes
+
+- Fixed a bug where extension was not removed from UI after deleting it
+- Fixed a bug where fields in Interaction Panel received keyboard focused even when IP is closed
+- Fixed a bug where no IP address was added to inject messages
+- Fixed a bug where drag&dropping an intent would not immediately show the new build status
+- Fixed a bug where adaptive cards were not forwarded to Live Agent
+- Fixed a bug where the page scroll bar pops up once the interactive tooltip of the last displayed message in chat history reaches the bottom of the page
+- Fixed a bug where Any Slot matching failed when Lexicon Slots were annotated without the Lexicon attached
+- Fixed a bug where the same Any Slot was detected multiple times
+- Fixed a bug where seemingly an incorrect Any Slot was detected
+- Fixed a bug where microsoft teams endpoint (webhook api) cannot handle "empty message response"
+
+## 4.26.1
+**Released** May 31st, 2022
+
+### Bugfixes
+
+- Fixed a bug where messages from ABS Endpoints could be incorrectly answered
+- Fixed a bug where webhook endpoint notify is not working by creating missing generic endpoint instance using channel type "webhook"
+
+## 4.26.0
+**Released** May 24th, 2022
+
+### Features
+
+#### Create Flows from child-branches in Flows
+
+This release of Cognigy.AI adds the ability to create entirely new Flows from child-branches of already existing Flows. This new functionality helps to reduce the overal size of big Flows into more managable smaller fragments
+
+### Improvements
+
+- Improved by making the UI better for Follow User feature
+- Improved by upgrading the webchat widget in service-webchat and service-ui to version 2.41.0
+- Improved by allowing 3rd party client cognigy-live-agent to query user data
+- Improved by forwarding the sessionId to Live Agent
+- Improved by displaying appropriate extension label in Uninstall/Update dialog box
+- Improved by automatically filling question node fields with Cognigy Live Agent inbox ID
+- Improved by removing special characters from intents names, hence allowing to import packages created in previous versions of Cognigy.AI v4
+- Improved by introducing a frustration property to the input object, which increases when the user repeatedly takes the same path through the Flow
+- Improved by limiting access to sensitive data for user without followUser permissions
+- Improved by adding support for pre-chat entities and details to the Salesforce Handover Provider
+
+### Bugfixes
+
+- Fixed a bug where "hangup" event would be marked same as the client-side "disconnect" in Audiocodes
+- Fixed a bug where the field text shows the characters from the IME window doubled on a windows machine
+- Add missing database indices to various collections in service-resources db to improve performance of various APIs
+- Fixed a bug where some keyphrases where not found when followed by a dot
+- Fixed a bug where misusing the limit parameter with a value 0, returned all the items in the collection
+- Fixed a bug where slots were not properly re-parsed when coming from Alexa skill
+
+## 4.25.0
+**Released** May 10th, 2022
+
+### Improvements
+- Improved by adding possibility to update an extension in the agent
+- Improved by adding support for SSO logout for Azure AD initiated from service provider
+
+### Bugfixes
+- Fixed a bug where data messages were showing up as UNSUPPORTED_DATA_MESSAGE in Live Agent
+- Fixed a bug where SSO login was not working for multi-org users, who are not explicitly part of Cognigy user list
+
+## 4.24.1
+**Released** May 5th, 2022
+
+### Bugfixes
+- Fixed a bug where rankedBarChart were freezing dashboards screen
+
+## 4.24.0
+**Released** May 2nd, 2022
 
 ### Features
 #### Server side Playbook execution

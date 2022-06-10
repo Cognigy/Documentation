@@ -58,7 +58,7 @@ For specific values and logic, here you can utilize these dedicated sections:
 - [SMTP]({{config.site_url}}live-agent/installation/helm-values/smtp/)
 - [Email Templates]({{config.site_url}}live-agent/installation/helm-values/email-templates/)
 
-## Image Values
+## Images
 
 | Name                | Description                                          | Value                 |
 | ------------------- | ---------------------------------------------------- | --------------------- |
@@ -71,36 +71,42 @@ For specific values and logic, here you can utilize these dedicated sections:
 | `odata.image.pullPolicy`  | Live Agent OData Image Pull Policy                          | `IfNotPresent`         |
 | `odata.image.pullSecretName`  | Live Agent OData Image Pull secret name                          | `cognigy-registry-token`         |
 
+## Cognigy
 
-## ConfigMap Values
+### App Platform Token
 
-### App Values
+Cognigy.AI uses an App Platform Token to perform operations, such synchronising and creating data (e.g. Inboxes and accounts), using the Live Agent API. For this, Live Agent and Cognigy.AI need to have secrets set to a matching value.
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.FORCE_SSL`                     | Force all access to the app over SSL, default is set to false.                  | `"false"`                                                  |
-| `configmap.SECRET_KEY_BASE`               | Used to verify the integrity of signed cookies. Ensure a secure value is set.   | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
-| `configmap.USE_INBOX_AVATAR_FOR_BOT`      | Bot Customizations                                                              | `"true"`                                                   |
-| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)                                  | `""` |
+#### Live Agent Secret
 
-### Cognigy
-
-#### App Platform Token
-
-Cognigy.AI uses the app platform token to perform operations using the Live Agent API. These include synchronising data and creating it (e.g. Inboxes and accounts). The value is automatically created when installing Live Agent with a random string. It can be set using an existing secret to have constant values (recommended).
+The recommendation is to create a new secret under the Live Agent namespace and reference it in the Helm values. Otherwise, it will automatically create a secret called `live-agent-cognigy-live-agent-cognigy-platform-app-token` with a random value (this secret will be persisted and not changed in future Helm upgrades).
 
 | Name                                | Description                                                                | Default Value                                       |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `cognigyPlatformAppToken.existingSecret`     | Cognigy App Platform Token Secret Name                 | `""`                                                                     |
 | `cognigyPlatformAppToken.existingSecretKey`     | Cognigy App Platform Token Secret Key                 | `""`                                                                     |
 
-#### URL
+>Note: The secret key value must be a random alphanumeric string of 24 characters, similar to `V65Xyf6pphEeac64g2d92pvw`
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`     | URL used for accesing Cognigy.AI from Live Agent.                                  | `""`                                                   |
+#### Cognigy.AI Secret
 
-#### OAuth Values
+The [Cognigy.AI secret `cognigy-live-agent-credentials`](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/secrets.dist/cognigy-live-agent-credentials.yaml) key, `cognigy-live-agent-platform-token`, must be the same value as the Live Agent secret key previously created in order for the integration to work.
+
+Remember to apply using `kubectl` the new manifest file.
+
+#### Troubleshooting
+
+If the secrets are the same value, but the integration is not working (e.g. handover or preconfiguring Live Agent not working), perform the following:
+  
+  1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
+  2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
+      - service-handover
+      - service-security
+      - service-api
+      - service-resources
+      - service-ui
+
+### OAuth
 
 These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log into Live Agent with their same credentials.
 
@@ -111,47 +117,147 @@ These are the values used for enabling the Cognigy authentication in Live Agent.
 | `configmap.COGNIGY_OAUTH_AUTHORIZE_URL` | Cognigy OAuth API Authorize URL | `"https://installation.cognigy.ai/login?cognigy-live-agent=true"`                          |
 | `configmap.COGNIGY_OAUTH_TOKEN_URL`     | OAuth Token URL                 | `"https://api-installation.cognigy.ai/auth/oauth2/token"`                                  |
 
-For the OAuth client secret, the following values must be set:
+For the OAuth client secret, create a secret in the Live Agent namespace and then set the following values:
 
 | Name                                | Description                                                                | Default Value                                       |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `cognigyOAuth.existingSecret`     | Secret Name for The OAuth Client Secret                 | `""`                                                                     |
 | `cognigyOAuth.existingSecretKey`          | Secret key For The OAuth Client Secret                | `""`                                                    |
 
+>Note: The secret key value must be a random alphanumeric string of 64 characters, similar to `DUSOBAPM2L5V3CNLBw48surpgzrpk6bji9fav65xyf6ppheeac64g2d92pvwouhm`
+
+#### Cognigy.AI configmap_patch Overlay
+
+New values need to be added to the [Cognigy.AI `configmap_patch.yaml` overlay](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/overlays/config-maps/config-map_patch.yaml) as well to make the integration work.
+
+These are the following:
+
+```yaml
+# Live Agent API URL (e.g. https://cognigy-live-agent.your-company.com)
+- op: add
+  path: /data/COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL
+  value: "<live-agent-url>"
+
+- op: add
+  path: /data/CLIENT_ID_COGNIGY_LIVE_AGENT
+  value: "cognigy-live-agent"
+
+# OAuth client secret, it needs to have the same value as the Live Agent secret key (cognigyOAuth.existingSecretKey)
+- op: add
+  path: /data/CLIENT_SECRET_COGNIGY_LIVE_AGENT
+  value: "<secret-value>"
+
+# Live Agent API REDIRECT URI (e.g. https://cognigy-live-agent.your-company.com/omniauth/cognigy/callback)
+- op: add
+  path: /data/REDIRECT_URI_COGNIGY_LIVE_AGENT
+  value: "<live-agent-url>/omniauth/cognigy/callback"
+
+# Live Agent UI URL (e.g. https://cognigy-live-agent.your-company.com)
+- op: add
+  path: /data/COGNIGY_LIVE_AGENT_UI_BASE_URL_WITH_PROTOCOL
+  value: "<live-agent-url>"
+
+- op: add
+  path: /data/FEATURE_USE_COGNIGY_LIVE_AGENT
+  value: "true"
+```
+
+Remember to apply using `kubectl` the new manifest file.
+
+#### Troubleshooting
+
+If the secrets and configmaps are the same value, but the integration is not working (e.g. OAuth configuration error "Something is wrong with the OAuth configuration"), perform the following:
+  
+  1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
+  2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
+      - service-security
+      - service-api
+      - service-resources
+      - service-ui
+
+### URLs
+
+| Name                                               | Description                                                         | Default Value                                              |
+| -------------------------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`   | URL used for accesing Cognigy.AI UI from Live Agent.                | `""https://installation.cognigy.ai""`                      |
+| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL`  | URL for performing requests to Cognigy.AI API                       | `""https://api-installation.cognigy.ai""`                  |
+
+## File Upload Antivirus Scan
+
+In order to enable the antivirus file upload scan, the following values must be enabled:
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `antivirusScan.enabled`     | Boolean to enable file upload antivirus scan                 | `false`                                                                   |
+| `antivirusScan.resources`     | Recommended values are already set for the pod resources              |                                                                     |
+
+It will scan the file uploading for viruses and block the upload if a virus is found. It scans any file uploaded contained in a message as an attachment, including the ones from Live Agent UI and Cognigy.AI Webchat.
+
+## App
+
+| Name                                  | Description                                                                                         | Default Value                                              |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `configmap.FORCE_SSL`                 | Force all access to the app over SSL, default is set to false.                                      | `"false"`                                                  |
+| `configmap.SECRET_KEY_BASE`           | Used to verify the integrity of signed cookies. Ensure a secure value is set.                       | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
+| `configmap.USE_INBOX_AVATAR_FOR_BOT`  | Bot Customizations                                                                                  | `"true"`                                                   |
+| `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)   | `""`                                                       |
+
 ### Rest Client SSL
 
-In case you have a custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
+Live Agent performs requests to Cognigy.AI APIs. If you are running Cognigy.AI services with a Self Signed Certificate with Custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
 
-| Name                                | Description                                                                | Default Value                                              |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.REST_CLIENT_SSL_VERIFICATION`  | Rest client config for webhooks API channel.                                     | `"true"`                                                   |
-| `configmap.SSL_CA_FILE`                   | CA File Name                                                                    | `"ca.pem"`                                                 |
-| `configmap.SSL_CLIENT_CERT`               | Client Cert, X509 Format                                                        | `""`                                                       |
-| `configmap.SSL_CLIENT_KEY`                | RSA key content, if there is not passphrase.                                    | `""`                                                       |
-| `configmap.SSL_CLIENT_KEY_PASSPHRASE` | RSA key passphrase, if there is not passphrase.                           | `""`                                                       |
+#### Certificates Verification
+
+| Name                                | Description                                                         | Default Value                 |
+| ----------------------------------- | ------------------------------------------------------------------- | ----------------------------- |
+| `restClient.ssl.verification`       | Enable SSL certificate verification                                 | `"true"`                      |
+
+#### Self Signed Certificate with Custom Certificate Authority
+
+Create a secret with a key named the certificate file name (e.g. `cert.pem`). It will be mounted in the pod file system to be trusted by the Live Agent app. The value must contain the certificate file content without extra tabs/spaces. Then fill in the following values:
+
+| Name                                | Description      |
+| ----------------------------------- | ---------------- |
+| `restClient.ssl.CASecret`           | CA secret name       |
+| `restClient.ssl.CASecretKey`        | CA secret key    |
+
+Ensure pods are restarted after updating the values.
+
+#### Client Certificate
+
+For using a client certificate, create a secret containing the client certificate, the client certificate key and the key passphrase (if the key has a passphrase). Then fill in the following values:
+
+| Name                                              | Description                                                                       |
+| ------------------------------------------------- | --------------------------------------------------------------------------------- |
+| `restClient.ssl.clientCertSecret`                 | Client cert secret name                                                           |
+| `restClient.ssl.clientCertSecretKey`              | Client cert secret key. Its value must be in X509 format                          |
+| `restClient.ssl.clientKeySecretKey`               | Client key secret key. Its value must be as an RSA Key content                    |
+| `restClient.ssl.clientKeySecretPassphraseKey`     | Client key passphrase secret key. Leave it commented if the key has no passphrase |
+
+Ensure pods are restarted after updating the values.
 
 ### Push Notifications
 
 For enabling push notifications, you need to provide the following values, as Live Agent uses [VAPID](https://datatracker.ietf.org/doc/html/draft-ietf-webpush-vapid-01) to be more secure. They can be generated by using [this tool](https://d3v.one/vapid-key-generator).
 
-| Name                                | Description                                                                | Default Value                                       |
-| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
-| `configmap.VAPID_PUBLIC_KEY`     | VAPID public key                 | `"`                                                                     |
-| `configmap.VAPID_PRIVATE_KEY`          | VAPID private key                | `""`                                                    |
+| Name                                | Description            |
+| ----------------------------------- | ---------------------- |
+| `configmap.VAPID_PUBLIC_KEY`        | VAPID public key       |
+| `configmap.VAPID_PRIVATE_KEY`       | VAPID private key      |
 
 ## OData
 
-| Key |Description | Type | Default Value |
-|-----|------|---------|---------|
-| `odata.enabled`     | Enable OData service and endpoint          |  Boolean   | `true`                                                                     |
-| `odata.configmap.ODATA_PROTOCOL`          | http or https        |  String     | `"https"`                                                    |
+| Key                                 | Description                         | Type      | Default Value   |
+| ----------------------------------- | ----------------------------------- | --------- | --------------- |
+| `odata.enabled`                     | Enable OData service and endpoint   |  Boolean  | `true`          |
+| `odata.configmap.ODATA_PROTOCOL`    | http or https                       |  String   | `"https"`       |
 
-## Other Values
+## Other
 
 | Key | Type | Default Value |
 |-----|------|---------|
 | `affinity` | object | `{}` |
-| `frontendUrlOverride`                  | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary.                      | `"https://live-agent-domain.com/"`                                   |
+| `frontendUrlOverride`                  | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary.                      | `"https://<live-agent-domain>.com/"`                                   |
 | `fullnameOverride` | string | `""` |
 | `hooks.affinity` | object | `{}` |
 | `hooks.migrate.env` | list | `[]` |

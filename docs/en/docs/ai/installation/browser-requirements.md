@@ -23,6 +23,9 @@ For security reasons we don't support older versions of the listed web browsers.
 
 In order to use the application correctly, please make sure that your viewport is larger than 1280x800 Pixels.
 
+???+ warning "Microsoft Japanese IME"
+    For using MS-IME, please make sure to use Edge or Chrome Browsers on Windows 10 or higher, as there might be issues with other browsers and operating systems.
+
 ## Cognigy.AI Webchat
 
 <div class="divider"></div>

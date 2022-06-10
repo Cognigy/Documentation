@@ -38,7 +38,7 @@ The old users created from the Live Agent agents management UI can still login u
 The following list contains the common errors that can be shown while using the Cognigy.AI OAuth.
 ### Something is wrong with the OAuth configuration
 
-This is related to the configuration for the communication between the Cognigy.AI and Live Agent APIs. Please review the configuration for Live Agent in the [Helm Values]({{config.site_url}}live-agent/installation/helm-values/helm-values/helm-values/#oauth-values) section and also the Cognigy.AI configmap with the Live Agent API endpoints and client data.
+This is related to the configuration for the communication between the Cognigy.AI and Live Agent APIs. Please review the configuration for Live Agent in the [Helm Values]({{config.site_url}}live-agent/installation/helm-values/helm-values/#oauth) section and also the Cognigy.AI configmap with the Live Agent API endpoints and client data.
 
 ### The user organisation `{Organisation ID}` was not found in the system
 

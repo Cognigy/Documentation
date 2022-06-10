@@ -12,8 +12,8 @@ Labels are tied to the account and can be used to create custom workflows in you
 Click on the sidebar **Settings** on the Live Agent Dashboard.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png" width="100%" alt="Live Agent Dashboard Screen" />
-  <figcaption>Live Agent Dashboard</figcaption>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
+  <figcaption>Live Agent Dashboard Settings</figcaption>
 </figure>
 
 

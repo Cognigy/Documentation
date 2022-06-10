@@ -124,6 +124,21 @@ Below is a list describing Conversation actions an Agent can take by clicking th
 | <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the Agent to select and include attachments in the message                                                               |
 | <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the Agent to request a file from the customer                                                             |
 
+### Agent Assist (Beta)
+<div class="divider"></div>
+
+When Agent Assist is enabled, Agents will - based on customer input - receive AI-powered Agent Assist output as part of the conversation, which can help to better answer a customer.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
+    </figure>
+
+If forwarding was enabled for Assist messages, the Agent can click the blue arrow to forward content to the end user or customer.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
+    </figure>
+
 ###  How to Send Canned Responses
 <div class="divider"></div>
 
@@ -223,22 +238,19 @@ The status can be changed to 'Resolved' once a resolution is provided to the cus
   <figcaption>Conversations Status</figcaption>
 </figure>
 
+The Conversation statuses available are listed below. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.
 
-The Conversation statuses available are listed below.
-
-| Options                 | Actions                                                                                        |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| Mark as Pending         | Change the issue to Pending status                                                             |
-| Resolve                 | Change the issue to Resolved status                                                               |
-| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                         |
-| Reopen                  | Change the issue to Open status                                                                |
-| Open                    | Change the pending issue to Open status                                                        |
+| Options                 | Actions                                                                                             |
+|-------------------------|---------------------------------------------------------------------------------------------------- |
+| Mark as Pending         | Change the issue to Pending status                                                                  |
+| Resolve                 | Change the issue to Resolved status                                                                 |
+| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                          |
+| Open                    | Change the pending issue to Open status                                                             |
 | Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer |
-| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                 |
-| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                |
+| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                    |
+| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                       |
 
 Conversations can be selected and filtered by their statuses within the Conversation panel, as seen below.
-
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-23.png" width="100%" alt="Live Agent Conversations Selections" />
