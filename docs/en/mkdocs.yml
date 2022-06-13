@@ -241,7 +241,7 @@ nav:
     - ai/endpoints/azure-bot-services.md
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
-    - ai/endpoints/whatsapp.md
+    #- ai/endpoints/whatsapp.md
     - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
