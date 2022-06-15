@@ -6,10 +6,10 @@
 # Automations
 
 Automation can replace and automate existing processes that require manual effort. 
-You can do many things with automation, including adding labels and assigning conversation to the best agent. 
-So the team focuses on what they do best and spends more little time on manual tasks.
+You can do many things with automation, including adding labels and assigning conversations to the best agent. 
+So the team focuses on what they do best and spends less time on manual tasks.
 
-Click on the **Automation** inside the setting section .
+Click on the **Automation** inside the setting section.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-automation-rules.png" width="100%" alt="Automation Rules Section " />
@@ -25,16 +25,13 @@ Automation Events are triggers on when you want your automation executed. Live a
 
 ### Automation Conditions
 
-Conditions are a criteria that will be checked before the action is executed. 
+Conditions are criteria that will be checked before the action is executed. 
 The conditions are evaluated in the order they are defined.
 
 | Conversation Created   | Conversation Updated   | Message Updated     |
 |------------------------|------------------------|---------------------|
 | Conversation Status	   | Conversation Status    | Message Type        |
-| Browser Language       | Browser Language       | Message Contains    |
-| Country                | Country                |                     |
-| Referrer Link          | Referrer Link          |                     |
-|                        | Assignee               |                     |
+|                        | Assignee               | Message Contains    |
 |                        | Team                   |                     |
 
 ### Automation Actions
@@ -43,32 +40,32 @@ Actions are tasks/processes that are executed whenever respective conditions are
 
 Live agent currently supports the following actions:
 
-- Assign conversation to a team.
-- Assign label to a conversation.
-- Send email to a team.
+- Assign a Conversation to a team.
+- Assign a label to a conversation.
+- Send an email to a team.
 
 ### Creating Automations
 
-Click on the **+ Add Automation Rule** button open the Automation creation modal.
+Click on the **+ Add Automation Rule** button to open the Automation creation modal.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-add-automation.png" width="100%" alt="Live Agent Add Automation" />
   <figcaption>Live Agent Add Automation</figcaption>
 </figure>
 
-- Give your automation a name.
-- Add a description (optional).
-- Select an event.
-- Add conditions.
-- Add actions.
-- You can chain multiple conditions with the AND or OR operator, like the below example.
+1. Give your automation a name.
+2. Add a description (optional).
+3. Select an event.
+4. Add conditions.
+5. Add actions.
+6. You can chain multiple conditions with the AND or OR operator, like in the example below.
 
-Example - Assigning a conversation to a team when the agent assist is active and Status is Open, when a new conversation is created.
+Example - Assigning a conversation to a team when the agent assist is active, and Status is Open when a new conversation is created.
 
 - Add a name and a description
 - Select event as Conversation Created
 - Add two conditions and join them with the AND operator, Condition 1 - Conversation Status as Open and Condition 2 - Inbox as Agent Assist bot-default from the dropdown.
-- Add an action - Assign a team and select the team sales from the dropdown. (You need to create your team first)
+- Add an action - Assign a team and select the team sales from the dropdown. (A team needs be created before)
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-add-automation-rules.png" width="100%" alt="Live Agent Add Automation Rules" />
@@ -77,7 +74,7 @@ Example - Assigning a conversation to a team when the agent assist is active and
 
 ### Editing Automations
 
-To edit an automation, click on the **Edit** icon from the automations list you want to edit.
+To edit an Automation, click on the **Edit** icon from the Automations list you want to edit.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-edit-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />
@@ -86,14 +83,8 @@ To edit an automation, click on the **Edit** icon from the automations list you 
 
 ### Clone Automation
 
-To make a copy of an existing automation, just click on the clone icon from the automations list you want to copy. 
-This will create an exact replica of the automation with the same conditions and actions.
+To make a copy of existing automation, click on the clone icon from the Automation list you want to copy. 
+This will create a replica of the automation with the same conditions and actions.
 
 ### Deleting Automations
-To delete an automation, click on the delete button from the list, note that this is permanent and cannot be undone.
-
-
-
-
-
-
+To delete an automation, click on the delete button from the list. Note that this is permanent and cannot be undone.
