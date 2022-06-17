@@ -5,6 +5,41 @@
 ---
 # Release notes
 
+## 4.28.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved by making UX better for extension installation and upload
+- Improved by refreshing Contact Profiles on each new input by default
+- Improved by adding the organisationId to the url after logout so that multi-org users also can login again right away
+- Improved by forwarding the say node settings including the forwardable flag to the Live Agent provider
+- Improved by adding a query parameter to retrieve the proper threads without pagination in Ring Central Engange
+- Improved by allowing attachments to be forwarded in "as-is" format for the webhook channel to be handled in output transformer
+- Improved by making changes to meet accessibility standards
+- Improved by providing a better UX for our Playbook Player in the Interaction Panel
+- Improved by adding realtime translation for adaptive cards
+
+### Bugfixes
+
+- Fixed a bug where the incorrect text and data would be set after using executeCognigyNLU with mode Overwite Input
+- Fixed a bug where the Question node of type RegExp would fail on a data-only input
+- Fixed a bug where the Execute Cognigy NLU node would not recognize rule intents which were testing properties that were added to the input object during the Flow execution!9498, ticket: #26191)
+- Fixed a bug where delete button is displayed when hovering over disabled example sentences
+- Fixed a bug where the Form Data payload would not work in HTTP Request nodes
+- Fixed a bug where Allow Insecure SSL would not work in HTTP Request nodes
+- Fixed a bug where exact matching results differed between training runs
+- Fixed a bug where exact matching did not apply when "Flow Mapping Order" was set to "Main First" or "Attached First"
+- Fixed a bug where every-time a user deletes an intent trainer record, two records get removed instead of one from the UI
+- Fixed a bug where last activity date in Access Control displays values in an inconsistent way
+- Fixed a bug where confirmation words were registered case sensitive. They are now case insensitive, such that a positive confirmation word "CORRECT" would be recognized with the input text "correct"
+- Fixed a bug where all virtual agents deployed on the Slack channel would return the same responses
+- Fixed a bug where validation for threads was missing for Ring central Engange
+- Fixed a bug where OpenAPI request for management POST users and PATCH organisation did not work
+- Fixed a bug where a new agent bot was created for each session when using Live Agent
+- Fixed a bug where default 'translate to' in Norwegian localization shows "Afrikaans" instead of "Norwegian"
+- Fixed a bug in flow editor UI where you could not create multiple tokens without refreshing the page
+
 ## 4.27.0
 **Released** June 7th, 2022
 
