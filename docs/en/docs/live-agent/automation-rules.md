@@ -1,12 +1,12 @@
 ---
- title: "Automation Rules" 
- slug: "Automation Rules" 
- hidden: false 
+title: "Automation Rules"
+slug: "Automation Rules"
+hidden: false
 ---
 # Automations
 
-Automation can replace and automate existing processes that require manual effort. 
-You can do many things with automation, including adding labels and assigning conversations to the best agent. 
+Automation can replace and automate existing processes that require manual effort.
+You can do many things with automation, including adding labels and assigning conversations to the best agent.
 So the team focuses on what they do best and spends less time on manual tasks.
 
 Click on the **Automation** inside the setting section.
@@ -25,12 +25,12 @@ Automation Events are triggers on when you want your automation executed. Live a
 
 ### Automation Conditions
 
-Conditions are criteria that will be checked before the action is executed. 
+Conditions are criteria that will be checked before the action is executed.
 The conditions are evaluated in the order they are defined.
 
 | Conversation Created   | Conversation Updated   | Message Updated     |
 |------------------------|------------------------|---------------------|
-| Conversation Status	   | Conversation Status    | Message Type        |
+| Conversation Status     | Conversation Status    | Message Type        |
 |                        | Assignee               | Message Contains    |
 |                        | Team                   |                     |
 
@@ -65,7 +65,7 @@ Example - Assigning a conversation to a team when the agent assist is active, an
 - Add a name and a description
 - Select event as Conversation Created
 - Add two conditions and join them with the AND operator, Condition 1 - Conversation Status as Open and Condition 2 - Inbox as Agent Assist bot-default from the dropdown.
-- Add an action - Assign a team and select the team sales from the dropdown. (A team needs be created before)
+- Add an action - Assign a team and select the team sales from the dropdown. (A team needs to be created before)
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-add-automation-rules.png" width="100%" alt="Live Agent Add Automation Rules" />
@@ -83,8 +83,18 @@ To edit an Automation, click on the **Edit** icon from the Automations list you 
 
 ### Clone Automation
 
-To make a copy of existing automation, click on the clone icon from the Automation list you want to copy. 
+To make a copy of existing automation, click on the clone icon from the Automation list you want to copy.
 This will create a replica of the automation with the same conditions and actions.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-clone-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />
+  <figcaption>Live Agent Edit Automation Rules</figcaption>
+</figure>
 
 ### Deleting Automations
 To delete an automation, click on the delete button from the list. Note that this is permanent and cannot be undone.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-delete-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />
+  <figcaption>Live Agent Edit Automation Rules</figcaption>
+</figure>

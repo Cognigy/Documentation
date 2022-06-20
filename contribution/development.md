@@ -4,7 +4,10 @@ In order to keep the productivity high when working on our product documentation
 For this workflow to work properly, you need to install `Docker` which is available for Linux, MacOSX and Windows. Read more about how you can install Docker on your machine: https://docs.docker.com/get-docker/
 
 ## Development server
-Once you have Docker installed, you can run the following command in order to start the development server which will reload once you have changed content:
+Once you have Docker installed, you can run the following commands in order to build and start the development server which will reload once you have changed content:
+```
+docker build -f Dockerfile.development -t cognigydevelopment.azurecr.io/documentation-live:1 . 
+```
 ```
 docker run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live
 ```
