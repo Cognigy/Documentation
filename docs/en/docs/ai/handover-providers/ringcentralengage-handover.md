@@ -33,7 +33,7 @@ To complete your setup, please see the following Help Center article:
 During a Handover event the User profile is sent to RingCentral Engage to provide helpful information to the agent.
 
 ???+ warning "Profile fields of Cognigy Profile and RingCentral Profile do not match exactly"
-    Cognigy profile will be sent to RingCentral Engage and matched up with the fields existing on RCE side. The information that was not matched will be added to the "context_data". 
+    Cognigy User Profile will be sent to RingCentral Engage and matched up with the object keys existing on RingCentral Engage. The information that was not matched will be added to the "context_data" object. 
 
     - [RingCentral Engage User Profile Object](https://developers.ringcentral.com/engage/digital/guide/sdks/source-sdk/objects#users) sent during the handover.
     - [Cognigy Profile schema]({{config.site_url}}ai/resources/manage/contact-profiles/?h=profile#manage-contact-profiles). Cognigy Profile Schema can be edited and additional fields with specific object keys added.
