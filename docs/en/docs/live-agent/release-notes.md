@@ -1,19 +1,7 @@
 # Cognigy Live Agent
 
-## 4.28.0
-**This version is currently in pre-release and will be released soon**
-### Features
-
-- Add the new supervisor dashboard under the "Reports" section, including information about agents' availability and conversations statuses.
-
-- Add the new notification centre that makes it quick to access the latest notifications.
-
-### Improvements
-
-- Improved by adding the possibility to reply to conversations on behalf of the user when it has the agent inject option enabled
-
 ## 4.27.0
-**Released** June 7th, 2022
+**This version is currently in pre-release and will be released soon**
 
 ### Improvements
 
