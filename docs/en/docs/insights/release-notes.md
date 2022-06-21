@@ -5,8 +5,15 @@
 ---
 # Release notes
 
-## 4.27.0
+## 4.28.0
 **This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved by adding Endpoint column to Transcript Explorer
+
+## 4.27.0
+**Released** June 7th, 2022
 
 ### Improvements
 
