@@ -161,7 +161,8 @@ When retrieving this collection, the endpoint will return the following fields:
 | _id                | Unique analytics record ID                                                                 | String   | 5a91d194fde28b0011ce2423         |
 | organisation       | Name of your organisation                                                                  | String   | cognigy                          |
 | projectId          | Project ID                                                                                 | String   | 5a91d194fde28b0011ce2422         |
-| flowParentId       | ParentId of the Flow                                                                       | String   | 5e33b160e6236da3aa54221461a53f04 |
+| flowReferenceId    | ID of the Flow                                                                             | String   | 66ceb9cc-ac5b-4cdd-9f4b-8a48dfbb35d9 |
+| entrypoint         | The ID of the Project / Agent, or of a Snapshot when in use by the Endpoint                | String   | 621d3deb87016d3855ec0c92         |
 | ip                 | The IP address the request originated from                                                 | String   | 78.143.45.111                    |
 | contactId          | ID of the connecting user                                                                  | String   | myContactID                      |
 | sessionId          | Session ID                                                                                 | String   | 5a91d194fde28b0011ce2425         |
@@ -172,7 +173,6 @@ When retrieving this collection, the endpoint will return the following fields:
 | mode               | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties/) of the input        | String   | TextOnly                         |
 | userType           | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                         |
 | channel            | Channel the input came through                                                             | String   | facebook                         |
-| flowVersion        | Version of the Flow                                                                        | Number   | 1                                |
 | flowLanguage       | Language of the Flow                                                                       | String   | en-EN                            |
 | intent             | Found intent (can be blank)                                                                | String   | orderFood                        |
 | intentFlow         | The Parent ID of the Flow in which the intent was found (can be blank)                     | String   | 5e33b160e6236da3aa54221461a53f04 |
@@ -260,7 +260,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | label             | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String | Question (2)                     |
 | type              | Type of entity                                                             | String | `node` or `intent`               |
 | entityReferenceId | Unique ID for the entity (node ID or flow ID)                              | String | 5a91d194fde28b0011ce2423         |
-| flowReferenceId   | If of the flow                                                             | String | 5a91d194fde28b0011ce2423         |
+| flowReferenceId   | ID of the flow                                                             | String | 5a91d194fde28b0011ce2423         |
 | flowName          | Name of the Flow where the step exists                                     | String | Main Flow                        |
 | projectName       | Name of the Cognigy.AI project                                             | String | Project 1                        |
 | snapshotId        | ID of the snapshot                                                         | String | 5e33b160e6236da3aa54221461a53f04 |
