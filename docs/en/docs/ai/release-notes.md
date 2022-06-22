@@ -6,7 +6,7 @@
 # Release notes
 
 ## 4.28.0
-**This version is currently in pre-release and will be released soon**
+**Released** June 23rd, 2022
 
 ### Improvements
 

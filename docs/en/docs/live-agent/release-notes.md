@@ -1,7 +1,8 @@
 # Cognigy Live Agent
 
 ## 4.28.0
-**This version is currently in pre-release and will be released soon**
+**Released** June 23rd, 2022
+
 ### Features
 
 - Add the new supervisor dashboard under the "Reports" section, including information about agents' availability and conversations statuses.
