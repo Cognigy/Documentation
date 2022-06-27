@@ -25,16 +25,17 @@ The report can be filtered by **year** and **month** using the date filter dropd
 [![Version badge](https://img.shields.io/badge/Added in-v4.30.0-blue.svg)]({{config.site_url}})
 
 The delete organisation feature will completely remove all the data from your organisation.
+
 ???+ warning "Be aware that there is NO way back from this. Once you start the process all your data will be gone."
 
-In order to have this feature fully operational you will need to have some confiuration set up.
+In order to have this feature fully operational you will need to have some configuration set up.
 
-- A valid system adminitrator in the environment variable `SYS_ADMINISTRATOR_EMAIL`.
-- The Cognigy UI-Management proper insalled, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL`.
+- A valid system administrator email in the environment variable `SYS_ADMINISTRATOR_EMAIL`.
+- The Cognigy UI-Management proper installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL`.
 
-This process consist in two steps:
+This process consists of two steps:
 
-- Step one, a user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email placed in 'SYS_ADMINISTRATOR_EMAIL') with the next steps.
+- In step one, a user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email placed in 'SYS_ADMINISTRATOR_EMAIL') with the next steps.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_organisation_details.png" width="100%" />
@@ -50,8 +51,8 @@ This process consist in two steps:
   <figcaption>Delete organisation request email</figcaption>
 </figure>
 
-- Step two, once the system administrator receives the email, they will be able to click on the provided link to the UI-management with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy UI-Management system.
-Once in the UI-Management, the user will be able to see a button to trigger the actual deletion process. Finally, once the deletion process has been completed the system administrator will receive and email notifying that the organisation is completely removed.
+- In step two, once the system administrator receives the email, they will be able to click on the provided link to the UI-management with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy UI-Management system.
+Once in the UI-Management, the user will be able to see a button to trigger the actual deletion process. Finally, once the deletion process has been completed the system administrator will receive an email notifying that the organisation is completely removed.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_management_ui.png" width="100%" />
