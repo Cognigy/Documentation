@@ -35,7 +35,7 @@ In order to have this feature fully operational you will need to have some confi
 
 This process consists of two steps:
 
-- In step one, a user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
+1. A user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_organisation_details.png" width="100%" />
