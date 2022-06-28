@@ -30,12 +30,12 @@ The delete organisation feature will completely remove all the data from your or
 
 In order to have this feature fully operational you will need to have some configuration set up.
 
-- A valid system administrator email in the environment variable `SYS_ADMINISTRATOR_EMAIL`.
-- The Cognigy UI-Management proper installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL`.
+- A valid system administrator email in the environment variable `SYS_ADMINISTRATOR_EMAIL=`
+- The CognigyAI [Management UI]({{config.site_url}}ai/tools/user-menu/organisation-details/) properly installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL=`
 
 This process consists of two steps:
 
-- In step one, a user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email placed in 'SYS_ADMINISTRATOR_EMAIL') with the next steps.
+- In step one, a user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_organisation_details.png" width="100%" />
@@ -51,8 +51,12 @@ This process consists of two steps:
   <figcaption>Delete organisation request email</figcaption>
 </figure>
 
-- In step two, once the system administrator receives the email, they will be able to click on the provided link to the UI-management with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy UI-Management system.
-Once in the UI-Management, the user will be able to see a button to trigger the actual deletion process. Finally, once the deletion process has been completed the system administrator will receive an email notifying that the organisation is completely removed.
+2. Once the system administrator receives the email, they will be able to click on the provided link to the _Management UI_ with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.<br />
+After logging in to the Management UI, the user sees a button to trigger the actual deletion process.<br />
+
+???+ warning "**Clicking on this button marks the point of no return in deleting the whole organisation!**"
+
+ Finally, once the deletion process has been completed, the system administrator will receive an email notifying them that the organisation has been completely removed.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_management_ui.png" width="100%" />
