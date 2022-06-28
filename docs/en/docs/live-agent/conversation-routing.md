@@ -17,7 +17,7 @@ A Conversation can be manually assigned to two categories of users.
 1. Agents who have access to the Inbox in which the Conversation is created.
 2. Administrators who can access every Conversation in the system.
 
-To assign an Cgent or admin to a Conversation, an admin/Agent can select the assignee from the dropdown menu titled "Assigned Agent" from the "Conversation Details" section in the right-hand sidebar, as shown below.
+To assign an Agent or admin to a Conversation, an admin/Agent can select the assignee from the dropdown menu titled "Assigned Agent" from the "Conversation Details" section in the right-hand sidebar, as shown below.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-routing-1.png" width="100%" alt="Live Agent Assign Agents" />
@@ -44,6 +44,7 @@ To enable round-robin or auto assignment in your Inbox, follow the steps below.
 
 - Go to Settings -> Inboxes
 - Click on the Inbox settings link of the Inbox you want to enable auto assignment
+- Click on the Collaborators tab
 - Find the setting to enable auto assignment, as shown below
 
 <figure>
