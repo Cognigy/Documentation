@@ -5,6 +5,13 @@
 ---
 # Release notes
 
+## 4.28.1
+**Released** June 29th, 2022
+
+### Bugfixes
+
+- Fixed a bug where the handover status conversation "resolved" is not working when handing over to Cognigy Live Agent
+
 ## 4.28.0
 **Released** June 23rd, 2022
 
