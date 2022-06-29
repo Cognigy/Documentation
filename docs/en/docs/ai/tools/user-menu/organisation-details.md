@@ -52,6 +52,7 @@ This process consists of two steps:
 </figure>
 
 2. Once the system administrator receives the email, they will be able to click on the provided link to the _Management UI_ with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.<br />
+
 After logging in to the Management UI, the user sees a button to trigger the actual deletion process.<br />
 
 ???+ warning "**Clicking on this button marks the point of no return in deleting the whole organisation!**"
