@@ -56,9 +56,9 @@ The Live Agent section in the "Create Agent" wizard will only be visible if the 
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_nonadmin-liveagent_setup.png" width="100%" style="margin-bottom: 5px">
 
-- If the Live Agent Account is already configured for your Organisation, then you will be able to setup Project [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and the [Whisper Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview).
+- If the Live Agent Account is already configured for your Organisation, then you will be able to create a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and the [Whisper Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview).
 
-- Selecting "Don't use Whisper Agent Assist" will not allow you to use Whisper Assist.
+- Selecting "Don't use Whisper Agent Assist" will not allow setup any additional resources.
 
 - Selecting "Setup Whisper Assist", a flow called "Whisper Assist" with a simple say node will be created and assigned as your Whisper Assist Flow.
 
