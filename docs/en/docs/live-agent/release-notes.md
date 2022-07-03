@@ -1,5 +1,18 @@
 # Cognigy Live Agent
 
+## 4.29.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved by adding support to remember the first accessed URL path and redirecting to it after login successfully
+
+- Improved by removing resolve functionality from the mute operation. Previously, whenever an agent would mute a conversation, the conversation would be automatically resolved
+
+### Bugfixes
+
+- Fixed a bug where conversations preview message for adaptive cards was not displayed properly
+
 ## 4.28.0
 **Released** June 23rd, 2022
 
