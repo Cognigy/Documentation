@@ -26,7 +26,7 @@ This release of Cognigy.AI adds a new API which allows deleting the entire data 
 ### Bugfixes
 
 - Fixed a bug where e.g. "zweimal" would not be recognized as a number in German
-- Fixed a bug where e.g. "den 4.5.'" would not be recognized as a number in German
+- Fixed a bug where e.g. "den 4.5.'" would not be recognized as a date in German
 - Fixed a bug where e.g. "before the 28.03.2000" would not be recognized as a date in English
 - Fixed a bug where you might see an unexpected value for timezoneOffset in the Input object
 - Fixed a bug where Chatwoot did not get the "Handover Resolved" status and conversation would not go back to the flow
