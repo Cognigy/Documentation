@@ -46,6 +46,8 @@ You can create Virtual Agents by clicking this button. A Virtual Agent is typica
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_go_to_agent.png" width="100%" style="margin-bottom: 5px">
 
 ###3. Setup Project Live Agent Inbox
+[![Version badge](https://img.shields.io/badge/Added in-v4.30.0-blue.svg)]({{config.site_url}})
+
 The Live Agent section in the "Create Agent" wizard will only be visible if the Live Agent is configured at an infrastructure level (which means the FEATURE_USE_COGNIGY_LIVE_AGENT environment variable should be enabled for your environment).
 
 - If you are an admin user and if no Live Agent Account is configured for your Organisation, then you will see an option in the "Create Agent" wizard to setup a Live Agent Account for your Organisation. Once the Live Agent Account is created, then you will be able to setup a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) for the Project by turning the toggle ON.
