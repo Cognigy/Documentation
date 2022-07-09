@@ -10,7 +10,7 @@
 ## Description
 <div class="divider"></div>
 
-This Node adds the ability to override the realtime translation settings for the currently running session. Translation Settings are defined on the [Agent Settings](http://127.0.0.1:8008/ai/resources/manage/settings/) page in our user interface.
+This Node adds the ability to override the realtime translation settings for the currently running session. Translation Settings are defined on the [Agent Settings]({{config.site_url}}ai/resources/manage/settings/) page in our user interface.
 
 Currently, we support AI Default output translation as well as Adaptive Cards translation.
 
