@@ -3,13 +3,18 @@
  slug: "whatsapp" 
  hidden: false 
 ---
-# WhastApp
+# WhatsApp
+
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/whatsApp-endpoint.png" width="100%" />
 </figure>
 
+[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
+
 Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **WhatsApp** Cloud API access via Facebook Developer Dashboard by using our WhatsApp Endpoint integration. 
+
+???+ warning "User sent rich content is not yet supported and is received as data. Coming soon."
 
 ## Generic Endpoint Settings
 
@@ -18,6 +23,8 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 
 ???+ success "Supports Inject & Notify"
@@ -27,7 +34,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 <div class="divider"></div>
 
-## WhatsApp Settings
+## WhatsApp Setup
 
 This dropdown menu is where your Cognigy.AI is provided with the credentials to access your WhatsApp App created on the Meta/Facebook Developer Dashboard.
 
@@ -39,27 +46,36 @@ This dropdown menu is where your Cognigy.AI is provided with the credentials to 
 
 This value is a unique App ID used by Meta/Facebook Developer Dashboard to identify your WhatsApp app that communicated with the Cloud API. This is a required field.
 
-### App Secret
+### Access Token
 
-App secret is an optional field. This field will be used if you decide to add an extra security layer where every request will not only be checked against your Bearer token, but also the App Secret.
+Access token provided by WhatsApp App on Meta/Facebook Developer Dashboard that enables the communication between Cognigy.AI and WhatsApp Cloud API. This is a required field.
 
-### Bearer Token
-
-Bearer token provided by WhatsApp App on Meta/Facebook Developer Dashboard that enables the communication between Cognigy.AI and WhatsApp Cloud API. This is a required field.
 
 ### Phone Number ID
 
 Phone number ID is an ID for a phone number registered on your WhatsApp app or provided by Facebook Developer Dashboard while setting us for testing. This will be used as an ID in the requests made to the WhatsApp cloud API. This is a required field.
 
+### Verify Token
+
+Verify token is used when verifying your endpoint URL on Meta/Facebook Developer Dashboard. They need to match to make the initial connection.
+
+### App Secret
+
+App secret is an optional field. This field will be used if you decide to add an extra security layer where every request will not only be checked against your Bearer token, but also the App Secret.
+
+## WhatsApp Settings
+
+### Message Delay¶
+
+The amount of time to wait between sending bot replies. Measured in milliseconds.
+
 
 ???+ info "Help Center"
-    For more information on how to configure the **Bearer Token**, **Phone Number**, **App ID** and **App Secret** head over to our Help Center article [**here**]().
+    For more information on how to configure the **Access Token**, **Phone Number**, **App ID** and **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/5326220817948).
 
 
 ## More information
 
-* [Helpcenter: WhatsApp Endpoint: Deployment]()
-* [Helpcenter: WhatsApp Endpoint: Get a Permanent Token]()
-* [Helpcenter: WhatsApp Endpoint: Messages Types and Templates]()
-
-!!! My WordDoc that needs to be added to Help center. + Links above added: [https://cognigy-my.sharepoint.com/:w:/p/e_helms/EQlep0VWJNFGtrsw8p5NnzwBKi6WY_t-Z1zyezclQQyJXQ?e=fT35By](https://cognigy-my.sharepoint.com/:w:/p/e_helms/EQlep0VWJNFGtrsw8p5NnzwBKi6WY_t-Z1zyezclQQyJXQ?e=fT35By)
+* [Helpcenter: WhatsApp Endpoint: Deploy Native Endpoint](https://support.cognigy.com/hc/en-us/articles/5326220817948)
+* [Helpcenter: WhatsApp Endpoint: Get a Permanent Access Token](https://support.cognigy.com/hc/en-us/articles/5326310754332)
+* [Helpcenter: WhatsApp Endpoint: Messages Types and Payload Examples](https://support.cognigy.com/hc/en-us/articles/5326454286108)
