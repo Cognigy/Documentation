@@ -170,7 +170,7 @@ This filter allows you to select the analytics data based on the last user ratin
 If you intend to update certain analytics fields on Insights dashboards for an ongoing session you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
 More information you can find here: [Using the API]({{config.site_url}}ai/developer-guides/using-api/).
 
-Using the "analytics" API you need to specify **userId**, **sessionId** and **inputId** in the request.
+To use the "analytics" API, you need to specify **userId**, **projectId**, **sessionId** and **inputId** in the request.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/0f15d77-OpenAPI_Analytics_v20_2.svg" width="100%" />

@@ -5,6 +5,81 @@
 ---
 # Release notes
 
+## 4.29.0
+**Released** July 7th, 2022
+
+### Features
+
+#### API to delete entire organization
+This release of Cognigy.AI adds a new API which allows deleting the entire data for an organization. The API requires specific authorization and implements a two step process to make accidental deletion impossible.
+
+### Improvements
+
+- Improved by making the tooltips and toggles accessible
+- Improved by adding the option to disable collection of Intent Trainer Records in the Blind Mode Node
+- Improved by forwarding profile information to Ring Central Engage platform
+- Improved by routing to the run step details panel from task menu
+- Improved by adding a collapsible panel to show resource details of a playbook run
+- Improved by adding an option to the Match Pattern Node, to use the full text of a system slot in match patterns
+- Improved by not allowing the last admin of an organisation to get deleted from the system
+
+### Bugfixes
+
+- Fixed a bug where e.g. "zweimal" would not be recognized as a number in German
+- Fixed a bug where e.g. "den 4.5.'" would not be recognized as a date in German
+- Fixed a bug where e.g. "before the 28.03.2000" would not be recognized as a date in English
+- Fixed a bug where you might see an unexpected value for timezoneOffset in the Input object
+- Fixed a bug where Chatwoot did not get the "Handover Resolved" status and conversation would not go back to the flow
+- Fixed a bug where exporting multiple times same lexicon throwed a conflictError
+- Fixed a bug where the Question node escalations would not respect the forget question threshold
+- Fixed a bug where money slots could not be used in match patterns
+- Fixed a bug where a task did not fail properly during a playbook run when the resources are unavailable (locale, flow, project/snapshot)
+- Fixed a bug where console.error and console.info logs are not getting forwarded to service-logs
+- Fixed a bug where the endpoint client was called several times in a short time frame and got a hickup which could lead to the wrong order of messages when the inject API gets utilized
+- Fixed a bug where endpoints with Live Agent handover provider that were built before agent assist and autoconfigure showed a dirty state when opened in the endpoint editor
+
+## 4.28.1
+**Released** June 29th, 2022
+
+### Bugfixes
+
+- Fixed a bug where the handover status conversation "resolved" is not working when handing over to Cognigy Live Agent
+
+## 4.28.0
+**Released** June 23rd, 2022
+
+### Improvements
+
+- Improved by making UX better for extension installation and upload
+- Improved by refreshing Contact Profiles on each new input by default
+- Improved by adding the organisationId to the url after logout so that multi-org users also can login again right away
+- Improved by forwarding the say node settings including the forwardable flag to the Live Agent provider
+- Improved by adding a query parameter to retrieve the proper threads without pagination in Ring Central Engange
+- Improved by allowing attachments to be forwarded in "as-is" format for the webhook channel to be handled in output transformer
+- Improved by making changes to meet accessibility standards
+- Improved by providing a better UX for our Playbook Player in the Interaction Panel
+- Improved by adding realtime translation for adaptive cards
+
+### Bugfixes
+
+- Fixed a bug where the incorrect text and data would be set after using executeCognigyNLU with mode Overwite Input
+- Fixed a bug where the Question node of type RegExp would fail on a data-only input
+- Fixed a bug where the Execute Cognigy NLU node would not recognize rule intents which were testing properties that were added to the input object during the Flow execution!9498, ticket: #26191)
+- Fixed a bug where delete button is displayed when hovering over disabled example sentences
+- Fixed a bug where the Form Data payload would not work in HTTP Request nodes
+- Fixed a bug where Allow Insecure SSL would not work in HTTP Request nodes
+- Fixed a bug where exact matching results differed between training runs
+- Fixed a bug where exact matching did not apply when "Flow Mapping Order" was set to "Main First" or "Attached First"
+- Fixed a bug where every-time a user deletes an intent trainer record, two records get removed instead of one from the UI
+- Fixed a bug where last activity date in Access Control displays values in an inconsistent way
+- Fixed a bug where confirmation words were registered case sensitive. They are now case insensitive, such that a positive confirmation word "CORRECT" would be recognized with the input text "correct"
+- Fixed a bug where all virtual agents deployed on the Slack channel would return the same responses
+- Fixed a bug where validation for threads was missing for Ring central Engange
+- Fixed a bug where OpenAPI request for management POST users and PATCH organisation did not work
+- Fixed a bug where a new agent bot was created for each session when using Live Agent
+- Fixed a bug where default 'translate to' in Norwegian localization shows "Afrikaans" instead of "Norwegian"
+- Fixed a bug in flow editor UI where you could not create multiple tokens without refreshing the page
+
 ## 4.27.0
 **Released** June 7th, 2022
 

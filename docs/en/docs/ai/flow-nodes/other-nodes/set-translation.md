@@ -9,14 +9,10 @@
 
 ## Description
 <div class="divider"></div>
-Cognigy introduces as of release Cognigy.AI (4.10.0)  a new Flow Node "**Set Translation**".
 
-This Node adds the ability to define translation provider settings on a per-project level and real-time translation settings on a per-endpoint level. The translation providers can be Microsoft, Google, and DeepL.
-Required settings need to be done in the [Agent Settings](http://127.0.0.1:8008/ai/resources/manage/settings/).
+This Node adds the ability to override the realtime translation settings for the currently running session. Translation Settings are defined on the [Agent Settings]({{config.site_url}}ai/resources/manage/settings/) page in our user interface.
 
-If activated in the endpoint, Cognigy.AI will auto-translate the user's input into the set flow language and translate all outputs back as well. 
-
-Currently, we only support AI Default output translation.
+Currently, we support AI Default output translation as well as Adaptive Cards translation.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3e47a2f-Set_Translation.svg" width="100%" />

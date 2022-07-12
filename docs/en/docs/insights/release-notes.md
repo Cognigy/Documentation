@@ -5,6 +5,22 @@
 ---
 # Release notes
 
+## 4.29.0
+**Released** July 7th, 2022
+
+## Bugfixes
+
+- Fixed a bug where Odata would double stringify already stringified content and produces wrong JSON
+- Fixed a bug where the top part of the filters sidebar was blocked after Notification disappear
+
+
+## 4.28.0
+**Released** June 23rd, 2022
+
+### Improvements
+
+- Improved by adding Endpoint column to Transcript Explorer
+
 ## 4.27.0
 **Released** June 7th, 2022
 
