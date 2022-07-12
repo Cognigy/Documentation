@@ -42,14 +42,26 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 
 <div class="divider"></div>
 
+## Version 2.3
+The current version of the OData endpoint is `v2.3`. This endpoint version is available from Cognigy.AI Version 4.31.0 onwards. In this version, the following OData collections are available:
+
+- [Analytics]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Analytics`)
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
+- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
+- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
+- [Sessions]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#sessions/) (`/Sessions`)
+
+The URL for accessing the V2.3 OData endpoint is as follows:
+`https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
+
 ## Version 2.2
 The current version of the OData endpoint is `v2.2`. This endpoint version is available from Cognigy.AI Version 4.17.0 onwards. In this version, the following OData collections are available:
 
-- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`)
-- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`)
+- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
 - [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
 - [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
 The URL for accessing the V2.2 OData endpoint is as follows:
 `https://<hostname>/v2.2/<collection>?apikey=YOURAPIKEY`

@@ -41,8 +41,8 @@ When hovering the line chart, details as for example the rated month, the year a
 
 |Graph title|	Description|
 |--|--|
-|Active Contacts|	The number of currently active users (the report is arranged in a tile).|
-|Conversation count|	Indicates the total number of conversations, including ongoing and newly started conversations (the report is arranged in a tile).|
+|Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
+|Conversation count|	 A conversation is defined as a user session with the system that contains a maximum of 50 Inputs and occurs on the same day. This mean for example, that the sessions which were 51 Inputs+ would only count as one Conversation in "Sessions by Channel" tile, but two (or more) in Insights Conversation count. Conversation count indicates the total number of conversations, including ongoing and newly started conversations. This means if the conversation is started on 2nd June before 12am, and continues on in 3nd June, it will be counted in the Insights conversation count dashboard (the report is arranged in a tile).|
 |Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile).|
 |Positive Ratings	|Indication of the NLU quality (the report is arranged in a tile).|
 |Conversations|	A line chart displays the number of conversations on a timescale.|
@@ -54,11 +54,13 @@ When hovering the line chart, details as for example the rated month, the year a
 
 |Graph title|	Descrption|
 |--|--|
-|Sessions by Channel|	Total number of conversations (sessions) displayed in a ring chart based on channel. ("Users" changed to "Sessions" in v4.16) |
+|Sessions by Channel|	Total number of conversations (sessions) displayed in a ring chart based on channel. ("Users" changed to "Sessions" in v4.16). A Session by Channel is defined or counted by the number of unique sessions for a given channel. This tile represents all the sessions started between the given time. |
 |Top Intents|	Top-rated number of used intents displayed in a bar chart.|
 |Users by Locale|	Stacked bar chart display of time-related recognized conversations depending on different locales given in percentages.|
 |Top Goals|	The top-rated number of goals will be displayed in a bar chart.|
 
+???+ info "Note"
+    **Insights Conversation count**: A conversation is defined as a user session with the system that contains a maximum of 50 Inputs and occurs on the same day. <br> **Insights Session by channel**: A Session by channel is defined or counted by the number of unique sessions. <br> This mean for example, that the sessions which were 51 Inputs+ would only count as one Conversation in **Session by channel**, but two (or more) in Insights **Conversation count** tile. 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/2da6af6-Dashboard_Overview_6.svg" width="100%" />
   <figcaption>Overview dashboard - 3</figcaption>
