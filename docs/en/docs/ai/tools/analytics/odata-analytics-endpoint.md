@@ -161,6 +161,7 @@ This section details the data types the exist within the OData Collections that 
 Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Input record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
 
 #### Example Query:
+ * v2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`.
  * v2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`.
  * v2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`.
  * V1.0 Endpoint: `https://odata-trial.cognigy.ai/Records?apikey=YOURAPIKEY`.
@@ -226,6 +227,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The ChatHistory collection offers a log of all conversation messages, including the end user, bot or human agent responses. Each time one of these sources sends a message to a Cognigy.AI Flow, Cognigy.AI creates a record to log the interaction. Each interaction is exposed in the analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`.
  * V1.0 Endpoint: `https://odata-trial.cognigy.ai/Conversations?apikey=YOURAPIKEY`.
@@ -260,6 +262,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The Steps collection offers a list of all entities (an entity is a flow node or an intent) that have been assigned as an analytics step and that exist in any flow that the API key has access to. Analytics Steps are created in Cognigy.AI by adding a value to the "Analytics Step" field in the settings for an entity. For a Step to exist in this OData collection, it must also have been triggered by at least one conversation with the flow. Each step that can exist in ExecutedSteps, is exposed in this analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`.
 
@@ -287,6 +290,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The ExecutedSteps collection contains a list of all step events that have occurred in conversations. It also includes a reference to the step that occurred prior (parent step). Each time an entity (flow node or intent with an assigned step) is executed, a record is created in this collection. Each executed step is exposed in this analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`.
 
@@ -320,6 +324,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The Conversations collection contains a list of all conversations (sessions) that have occurred. The primary objective of this collection is to provide a list of the analytics steps that took place in any given conversation and the order in which they took place. This information is included as a comma separated list within a single column called `stepPath`. Each conversation is exposed in this analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`.
 
