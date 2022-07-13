@@ -82,7 +82,7 @@ The URL for accessing the V2.0 OData endpoint is as follows:
 ???+ success "OData V2.0 Endpoint Migration"
     It is recommend that all new OData connections use the V2.0 endpoints and existing connections are also updated to the V2.0 endpoints. As the renames records are identical, there are no breaking changes and the URL's can simply be exchanged.
 
-## Version 1.0
+## Version 1.0 (will be deprecated in Cognigy.AI Version 4.31.0 onwards)
 This is the legacy version of the OData endpoint that excludes step monitoring analytics. This OData endpoint contains the following collections:
 
 - [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs) (`/Records`) - Renamed to Inputs in V2.0 Endpoint
