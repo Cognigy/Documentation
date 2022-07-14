@@ -30,7 +30,7 @@ To complete your setup, please see the following Help Center article:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.29.0-blue.svg)]({{config.site_url}})
 
-During a Handover event the User profile is sent to RingCentral Engage to provide helpful information to the agent.
+During a Handover event the User Profile is sent to RingCentral Engage to provide helpful information to the agent.
 
 ???+ warning "Profile fields of Cognigy Profile and RingCentral Profile do not match exactly"
     Cognigy User Profile will be sent to RingCentral Engage and matched up with the object keys existing on RingCentral Engage. The information that was not matched will be added to the "context_data" object. 
