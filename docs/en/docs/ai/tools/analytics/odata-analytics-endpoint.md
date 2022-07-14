@@ -42,14 +42,26 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 
 <div class="divider"></div>
 
+## Version 2.3
+The current version of the OData endpoint is `v2.3`. This endpoint version is available from Cognigy.AI Version 4.31.0 onwards. In this version, the following OData collections are available:
+
+- [Analytics]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Analytics`)
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
+- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
+- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
+- [Sessions]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#sessions/) (`/Sessions`)
+
+The URL for accessing the V2.3 OData endpoint is as follows:
+`https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
+
 ## Version 2.2
 The current version of the OData endpoint is `v2.2`. This endpoint version is available from Cognigy.AI Version 4.17.0 onwards. In this version, the following OData collections are available:
 
-- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`)
-- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`)
+- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
 - [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
 - [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
+- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
 The URL for accessing the V2.2 OData endpoint is as follows:
 `https://<hostname>/v2.2/<collection>?apikey=YOURAPIKEY`
@@ -70,7 +82,7 @@ The URL for accessing the V2.0 OData endpoint is as follows:
 ???+ success "OData V2.0 Endpoint Migration"
     It is recommend that all new OData connections use the V2.0 endpoints and existing connections are also updated to the V2.0 endpoints. As the renames records are identical, there are no breaking changes and the URL's can simply be exchanged.
 
-## Version 1.0
+## Version 1.0 (will be deprecated in Cognigy.AI Version 4.31.0 onwards)
 This is the legacy version of the OData endpoint that excludes step monitoring analytics. This OData endpoint contains the following collections:
 
 - [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs) (`/Records`) - Renamed to Inputs in V2.0 Endpoint
@@ -149,6 +161,7 @@ This section details the data types the exist within the OData Collections that 
 Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Input record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
 
 #### Example Query:
+ * v2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`.
  * v2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`.
  * v2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`.
  * V1.0 Endpoint: `https://odata-trial.cognigy.ai/Records?apikey=YOURAPIKEY`.
@@ -161,7 +174,8 @@ When retrieving this collection, the endpoint will return the following fields:
 | _id                | Unique analytics record ID                                                                 | String   | 5a91d194fde28b0011ce2423         |
 | organisation       | Name of your organisation                                                                  | String   | cognigy                          |
 | projectId          | Project ID                                                                                 | String   | 5a91d194fde28b0011ce2422         |
-| flowParentId       | ParentId of the Flow                                                                       | String   | 5e33b160e6236da3aa54221461a53f04 |
+| flowReferenceId    | ID of the Flow                                                                             | String   | 66ceb9cc-ac5b-4cdd-9f4b-8a48dfbb35d9 |
+| entrypoint         | The ID of the Project / Agent, or of a Snapshot when in use by the Endpoint                | String   | 621d3deb87016d3855ec0c92         |
 | ip                 | The IP address the request originated from                                                 | String   | 78.143.45.111                    |
 | contactId          | ID of the connecting user                                                                  | String   | myContactID                      |
 | sessionId          | Session ID                                                                                 | String   | 5a91d194fde28b0011ce2425         |
@@ -172,7 +186,6 @@ When retrieving this collection, the endpoint will return the following fields:
 | mode               | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties/) of the input        | String   | TextOnly                         |
 | userType           | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                         |
 | channel            | Channel the input came through                                                             | String   | facebook                         |
-| flowVersion        | Version of the Flow                                                                        | Number   | 1                                |
 | flowLanguage       | Language of the Flow                                                                       | String   | en-EN                            |
 | intent             | Found intent (can be blank)                                                                | String   | orderFood                        |
 | intentFlow         | The Parent ID of the Flow in which the intent was found (can be blank)                     | String   | 5e33b160e6236da3aa54221461a53f04 |
@@ -214,6 +227,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The ChatHistory collection offers a log of all conversation messages, including the end user, bot or human agent responses. Each time one of these sources sends a message to a Cognigy.AI Flow, Cognigy.AI creates a record to log the interaction. Each interaction is exposed in the analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`.
  * V1.0 Endpoint: `https://odata-trial.cognigy.ai/Conversations?apikey=YOURAPIKEY`.
@@ -248,6 +262,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The Steps collection offers a list of all entities (an entity is a flow node or an intent) that have been assigned as an analytics step and that exist in any flow that the API key has access to. Analytics Steps are created in Cognigy.AI by adding a value to the "Analytics Step" field in the settings for an entity. For a Step to exist in this OData collection, it must also have been triggered by at least one conversation with the flow. Each step that can exist in ExecutedSteps, is exposed in this analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`.
 
@@ -260,7 +275,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | label             | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String | Question (2)                     |
 | type              | Type of entity                                                             | String | `node` or `intent`               |
 | entityReferenceId | Unique ID for the entity (node ID or flow ID)                              | String | 5a91d194fde28b0011ce2423         |
-| flowReferenceId   | If of the flow                                                             | String | 5a91d194fde28b0011ce2423         |
+| flowReferenceId   | ID of the flow                                                             | String | 5a91d194fde28b0011ce2423         |
 | flowName          | Name of the Flow where the step exists                                     | String | Main Flow                        |
 | projectName       | Name of the Cognigy.AI project                                             | String | Project 1                        |
 | snapshotId        | ID of the snapshot                                                         | String | 5e33b160e6236da3aa54221461a53f04 |
@@ -275,6 +290,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The ExecutedSteps collection contains a list of all step events that have occurred in conversations. It also includes a reference to the step that occurred prior (parent step). Each time an entity (flow node or intent with an assigned step) is executed, a record is created in this collection. Each executed step is exposed in this analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`.
 
@@ -308,6 +324,7 @@ When retrieving this collection, the endpoint will return the following fields:
 The Conversations collection contains a list of all conversations (sessions) that have occurred. The primary objective of this collection is to provide a list of the analytics steps that took place in any given conversation and the order in which they took place. This information is included as a comma separated list within a single column called `stepPath`. Each conversation is exposed in this analytics endpoint as single line item.
 
 #### Example Query:
+ * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`.
 

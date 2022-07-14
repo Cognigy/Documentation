@@ -5,8 +5,48 @@
 ---
 # Release notes
 
+## 4.29.0
+**Released** July 7th, 2022
+
+### Features
+
+#### API to delete entire organization
+This release of Cognigy.AI adds a new API which allows deleting the entire data for an organization. The API requires specific authorization and implements a two step process to make accidental deletion impossible.
+
+### Improvements
+
+- Improved by making the tooltips and toggles accessible
+- Improved by adding the option to disable collection of Intent Trainer Records in the Blind Mode Node
+- Improved by forwarding profile information to Ring Central Engage platform
+- Improved by routing to the run step details panel from task menu
+- Improved by adding a collapsible panel to show resource details of a playbook run
+- Improved by adding an option to the Match Pattern Node, to use the full text of a system slot in match patterns
+- Improved by not allowing the last admin of an organisation to get deleted from the system
+
+### Bugfixes
+
+- Fixed a bug where e.g. "zweimal" would not be recognized as a number in German
+- Fixed a bug where e.g. "den 4.5.'" would not be recognized as a date in German
+- Fixed a bug where e.g. "before the 28.03.2000" would not be recognized as a date in English
+- Fixed a bug where you might see an unexpected value for timezoneOffset in the Input object
+- Fixed a bug where Chatwoot did not get the "Handover Resolved" status and conversation would not go back to the flow
+- Fixed a bug where exporting multiple times same lexicon throwed a conflictError
+- Fixed a bug where the Question node escalations would not respect the forget question threshold
+- Fixed a bug where money slots could not be used in match patterns
+- Fixed a bug where a task did not fail properly during a playbook run when the resources are unavailable (locale, flow, project/snapshot)
+- Fixed a bug where console.error and console.info logs are not getting forwarded to service-logs
+- Fixed a bug where the endpoint client was called several times in a short time frame and got a hickup which could lead to the wrong order of messages when the inject API gets utilized
+- Fixed a bug where endpoints with Live Agent handover provider that were built before agent assist and autoconfigure showed a dirty state when opened in the endpoint editor
+
+## 4.28.1
+**Released** June 29th, 2022
+
+### Bugfixes
+
+- Fixed a bug where the handover status conversation "resolved" is not working when handing over to Cognigy Live Agent
+
 ## 4.28.0
-**This version is currently in pre-release and will be released soon**
+**Released** June 23rd, 2022
 
 ### Improvements
 

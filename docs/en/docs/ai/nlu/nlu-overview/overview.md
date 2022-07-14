@@ -124,6 +124,23 @@ Reject Intents can be used to explicitly filter out certain utterances. A Reject
   * **Delete All Intents**
 This option can be used to batch-delete all intents in a given Flow.
 
+### Upload Intents
+When you upload intents, you get 3 options:
+
+* **Skip**: If an intent with this name already exists, importing this intent is skipped.
+
+* **Overwrite**: If an intent with this name already exists, the existing intent is deleted and the new values are imported.
+
+* **Merge**: If an intent with this name already exists, the properties that can have multiple values will be merged:
+    * Example Sentences
+    * Rules
+    * Tags
+    * Confirmation sentences
+
+    Other properties (e.g. Default Reply, Condition) will not be changed.
+
+Uploading does not delete existing intents that are not in the upload file. If you want to delete intents, you can use the menu option "Delete All Intents" or delete individual intents, before uploading.
+
 ### Individual Intent Options Menu
 Each intent additionally has its own options menu that can be selected by clicking on the three dots next to the Intent name. The menu provides a number of options:
 
