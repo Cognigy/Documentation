@@ -57,9 +57,9 @@ embedded_svc.init(
   <figcaption>Retreiving Organisation ID, Deployment ID and Button ID</figcaption>
 </figure>
 
-## Prechat Entities and Prechat Details
+## Pre-Chat Entities and Pre-Chat Details
 
-### Default behavior
+### Default Behavior
 
 Cognigy.AI sends a stringified version of the Conversation History. The Conversation history will be displayed when the Agent received the first message from the user, as well as in the "Transcripts" tab of Salesforce Service Console under the Transcript > Details > Trascript > Body section.
 
