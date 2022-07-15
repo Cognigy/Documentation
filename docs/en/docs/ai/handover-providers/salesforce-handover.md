@@ -61,7 +61,7 @@ embedded_svc.init(
 
 ### Default Behavior
 
-Cognigy.AI sends a stringified version of the Conversation History. The Conversation history will be displayed when the Agent received the first message from the user, as well as in the "Transcripts" tab of Salesforce Service Console under the Transcript > Details > Trascript > Body section.
+Cognigy.AI sends a stringified version of the Conversation History. The Conversation History will be displayed when the Agent received the first message from the User, as well as in the "Transcripts" tab of Salesforce Service Console under the Transcript > Details > Trascript > Body section.
 
 
 ### Sending Pre-Chat Details and Pre-Chat Entities to Salesforce
@@ -73,11 +73,11 @@ Cognigy.AI sends a stringified version of the Conversation History. The Conversa
   <figcaption>Salesforce section in "Handover to Agent" node</figcaption>
 </figure>
 
-Cognigy.AI allows user to send Pre-Chat Details and Pre-Chat Entities arrays as a custom JSON structure.
+Cognigy.AI allows users to send Pre-Chat Details and Pre-Chat Entities arrays as a custom JSON structure.
 
 #### Pre-Chat Details
 
-Cognigy.AI provides an opportunity to send conversation information to the Salesforce live agent about the to help the human agent via Pre-Chat Details. Via `entitiyMaps` field the information can be linked Pre-Chat Entity specific fields. Cognigy Script is available to get values from Cognigy input, profile, context objects before sending.
+Cognigy.AI provides an opportunity to send conversation information to the Salesforce Live Agent via Pre-Chat Details. Via `entitiyMaps` field the information can be linked to Pre-Chat Entity specific fields. Cognigy Script is available to get values from Cognigy input, profile and context objects before sending.
 
 
 ```
@@ -168,4 +168,4 @@ To create fields and link the User details received via Pre-Chat Details to a Sa
    ]
 ```
 
-???+ info "Please check [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail) for more information Pre-Chat Entities and Pre-chat Details fields and their usage." 
+???+ info "Please check [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail) for more information Pre-Chat Entities and Pre-Chat Details fields and their usage." 
