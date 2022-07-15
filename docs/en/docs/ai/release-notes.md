@@ -8,11 +8,6 @@
 ## 4.29.0
 **Released** July 7th, 2022
 
-### Features
-
-#### API to delete entire organization
-This release of Cognigy.AI adds a new API which allows deleting the entire data for an organization. The API requires specific authorization and implements a two step process to make accidental deletion impossible.
-
 ### Improvements
 
 - Improved by making the tooltips and toggles accessible
