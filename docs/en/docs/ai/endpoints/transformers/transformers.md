@@ -216,6 +216,7 @@ The Webhook based Transformers are:
 |LINE|
 |RingCentral Engage|
 |Intercom|
+|WhatsApp|
 |Webhook|
 
 ## Socket Transformer
