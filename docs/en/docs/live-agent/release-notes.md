@@ -1,5 +1,17 @@
 # Cognigy Live Agent
 
+## 4.30.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Add Cognigy.AI channel to the conversation information section and also add the possibility to filter conversations based on this field
+
+### Bugfixes
+
+- Fixed a bug where the Cognigy user profile in the conversation was emptied while receiving new incoming messages into the conversation
+
+
 ## 4.29.0
 **Released** July 7th, 2022
 
