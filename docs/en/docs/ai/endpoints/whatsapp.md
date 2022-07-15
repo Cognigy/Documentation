@@ -65,7 +65,7 @@ App secret is an optional field. This field will be used if you decide to add an
 
 ## WhatsApp Settings
 
-### Message Delay¶
+### Message Delay
 
 The amount of time to wait between sending bot replies. Measured in milliseconds.
 

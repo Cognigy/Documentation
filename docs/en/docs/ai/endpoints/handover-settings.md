@@ -34,5 +34,6 @@ The Endpoints that support handover are listed below:
 | [Slack]({{config.site_url}}ai/endpoints/slack/) |
 | [Socket]({{config.site_url}}ai/endpoints/socketio/)|
 | [Sunshine Conversations]({{config.site_url}}ai/endpoints/sunshine-conversations/) |
+| [WhatsApp]({{config.site_url}}ai/endpoints/whatsapp/) |
 | [Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/) |
 | [Webhook]({{config.site_url}}ai/endpoints/webhook/)|

@@ -75,3 +75,4 @@ The following Endpoints provide integrations with third party products:
 - [**Twilio**]({{config.site_url}}ai/endpoints/twilio/) 
 - [**Userlike**]({{config.site_url}}ai/endpoints/userlike/) 
 - [**Workplace by Facebook**]({{config.site_url}}ai/endpoints/workplace-by-fb/)
+- [**WhatsApp**]({{config.site_url}}ai/endpoints/whatsapp/)
