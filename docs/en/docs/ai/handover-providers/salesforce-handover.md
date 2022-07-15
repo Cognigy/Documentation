@@ -77,7 +77,7 @@ Cognigy.AI allows users to send Pre-Chat Details and Pre-Chat Entities arrays as
 
 #### Pre-Chat Details
 
-Cognigy.AI provides an opportunity to send conversation information to the Salesforce Live Agent via Pre-Chat Details. Via `entitiyMaps` field the information can be linked to Pre-Chat Entity specific fields. Cognigy Script is available to get values from Cognigy input, profile and context objects before sending.
+Cognigy.AI provides an opportunity to send conversation information to the Salesforce Live Agent via Pre-Chat Details. Via the `entitiyMaps` field the information can be linked to Pre-Chat Entity specific fields. Cognigy Script is available to get values from Cognigy input, profile and context objects before sending.
 
 
 ```
@@ -130,7 +130,7 @@ Cognigy.AI provides an opportunity to send conversation information to the Sales
 
 #### Pre-Chat Entities
 
-To create fields and link the User details received via Pre-Chat Details to a Salesforce Entity (e.g. Contact, Case), send Pre-Chat Entities array to the live chat session on Salesforce.
+To create fields and link the User details received via Pre-Chat Details to a Salesforce Entity (e.g. Contact, Case), send the Pre-Chat Entities array to the live chat session on Salesforce.
 
 **Sample JSON to attach the conversation to a Case and use Pre-Chat Details :**
 ```
@@ -168,4 +168,4 @@ To create fields and link the User details received via Pre-Chat Details to a Sa
    ]
 ```
 
-???+ info "Please check [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail) for more information Pre-Chat Entities and Pre-Chat Details fields and their usage." 
+???+ info "Please se the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail) for more information Pre-Chat Entities and Pre-Chat Details fields and their usage." 
