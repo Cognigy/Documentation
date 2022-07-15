@@ -44,7 +44,7 @@ The WhatsApp Setup dropdown menu is where Cognigy.AI is provided with the creden
 
 ### App ID
 
-This value is a unique App ID used by Meta/Facebook Developer Dashboard to identify the WhatsApp App that communicated with the Cloud API. This is a required field.
+This value is a unique App ID used by Meta/Facebook Developer Dashboard to identify the WhatsApp App that communicates with the Cloud API. This is a required field.
 
 ### Access Token
 
