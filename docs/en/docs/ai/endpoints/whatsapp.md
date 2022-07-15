@@ -61,7 +61,7 @@ Verify token is used when verifying the endpoint URL on Meta/Facebook Developer 
 
 ### App Secret
 
-App Secret is an optional field. This field will be used if you decide to add an extra security layer where every request will not only be checked against the Access Token, but also the App Secret.
+App Secret is an optional field. This field will be used to add an extra security layer where every request will not only be checked against the Access Token, but also the App Secret.
 
 ## WhatsApp Settings
 
