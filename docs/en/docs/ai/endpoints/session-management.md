@@ -18,6 +18,7 @@ The following Endpoints support session expiration:
   - Slack
   - TwilioSMS
   - Azure Bot Services
+  - WhatsApp
 
 ???+ info "Default Session Expiration"
     The default session expiration is set to 30 minutes.
