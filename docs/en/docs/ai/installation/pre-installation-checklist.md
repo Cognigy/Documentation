@@ -17,7 +17,7 @@ Before proceeding with your on-prem installation with or without installation su
 7. Kubernetes nodes are distributed across 3 Availability Zones (AZ) for high availability setup if possible
 8. Cognigy.AI licence key is available
 9. Cognigy Container image registry credentials are known
-10. Domains / DNS names are created and available to use
+10. Domains / DNS names for Cognigy.AI URLs are created and available
 11. Wildcard TLS certificate(s) are ready
 12. IP whitelisting for image repositories is complete: `cognigy.azurecr.io:443`, `downloads.cognigy.com:443`
 13. Network access is allowed for HTTP/HTTPS requests
