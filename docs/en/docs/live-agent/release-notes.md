@@ -1,7 +1,7 @@
 # Cognigy Live Agent
 
 ## 4.30.0
-**This version is currently in pre-release and will be released soon**
+**Released** July 18th, 2022
 
 ### Improvements
 
