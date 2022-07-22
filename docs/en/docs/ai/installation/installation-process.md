@@ -5,6 +5,8 @@ hidden: false
 ---
 # Install Cognigy.AI
 
+## Install Helm Charts 
+
 To install Cognigy.AI please perform following steps: 
 
 1. Install MongoDB database with [MongoDB Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-mongodb-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-mongodb-helm-chart#readme)
@@ -14,7 +16,7 @@ To install Cognigy.AI please perform following steps:
 Once both Helm releases are successfully installed, you can open a web-browser and visit the URL which you have set in `serviceUi.host` parameter Cognigy.AI Helm release. You should be able to see the login screen of Cognigy.AI frontend application:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-login-screen.png" width="50%" />
+  <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-login-screen.png" width="90%" />
   <figcaption>Login screen of Cognigy.AI v4</figcaption>
 </figure>
 
@@ -41,12 +43,12 @@ If `service-security` was restarted several times, to reset init user credential
 Once you obtained the initial user credentials, visit the web interface of Cognigy.AI, but replace the URL ending `/login` with `/license`. This will open our license activation screen which looks quite similar to the login-form but with an additional license-key field:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-login-screen.png" width="50%" />
+  <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-license-key.png" width="90%" />
   <figcaption>Activating Cognigy.AI Product License</figcaption>
 </figure>
 
 
 Paste initial credentials (email and password) and your license-key (including both `====BEGIN LICENSE====` and `=====END LICENSE=====` delimiters) and click on `Activate license`. If everything worked, the application will redirect to the login screen on which you can log in to finally get start to use Cognigy.AI.
 
-???+ attention
+???+ attention "Limited Windows support"
     If you open and save the file with the license key on a Windows machine it may become corrupted with hidden windows characters. Use a Linux machine to copy the license or a Windows text editor which can handle linux files properly, e.g. [Notepad++](https://notepad-plus-plus.org/)
