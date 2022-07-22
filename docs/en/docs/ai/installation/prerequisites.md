@@ -7,37 +7,39 @@ hidden: false
 
 ### Kubernetes Cluster
 Cognigy.AI installation requires a fully functional Kubernetes cluster. We suggest that you use a managed Kubernetes cluster provided by common public cloud operators (Amazon EKS, Microsoft AKS, Google GKE). Cognigy.AI is fully compatible with following managed Kubernetes services:
-* AWS EKS
-* Azure AKS
 
-Running Cognigy.AI on-prem Kubernetes clusters will require additional configuration effort from your side, we recommend to use public clouds instead. Please, be aware that Cognigy will not to provide support for configuring and provisioning of Kubernetes clusters.
+- AWS EKS
+- Azure AKS
+
+Running Cognigy.AI on top of on-premise Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend to use public clouds instead. Please, be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
 
 ???+ attention
     Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart)
 
 ### Hardware Requirements
-For a Cognigy.AI installation with English as the default NLU language, we recommend a kubernetes cluster with the following specification for AWS  EKS (or equivalents on other cloud providers):
-* at least 6 x `c5.2xlarge` worker nodes (8 CPU cores and 16 GB RAM per each node)
-* Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup
-* 250 GB of block SSD storage for application databases
-* 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets
-* 128 GB of block SSD storage per Kubernetes node (for Docker images and runtime caches)
+For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specification for AWS EKS (or equivalents on other cloud providers):
+
+- at least 6 x `c5.2xlarge` worker nodes (8 CPU cores and 16 GB RAM per each node)
+- Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup
+- 250 GB of block SSD storage for application databases
+- 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets
+- 128 GB of block SSD storage per Kubernetes node (for Docker images and runtime caches)
 
 ???+ attention
-    Choosing general-purpose machines instead of compute-optimized machines can have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
+    Choosing general-purpose machines instead of compute-optimized machines will have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
 
 
-### kubectl Utility 
-To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kubernetes.io/docs/reference/kubectl/) uitlity installed on a Linux machine which can access the Kubernetes cluster for Cognigy.AI installation. Refer to official Kubernetes documenatation for details, kubectl version must match the version of the cluster.
+### Kubectl binary 
+To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kubernetes.io/docs/reference/kubectl/) uitlity installed on a Linux machine which can access the Kubernetes cluster for Cognigy.AI installation. Refer to the official Kubernetes documenatation for details. Please note that the kubectl version must match the version of your Kubernetes cluster.
 
 ### Helm Package Manager
-Our products are packaged with [Helm](https://helm.sh/) package manager for Kubernetes. Please get familiar with basic Helm operations before proceeding with installation.
+Our products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Please get familiar with basic Helm operations before proceeding with installation.
 
 ???+ attention
-   [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are deprecated. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x-rev10.zip)
+   [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are **deprecated**. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x-rev10.zip). We will stop updating our **kustomize files end this year (31st December 2022)**.
 
 ???+ attention
-    For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart)
+    For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](h**ttps://github.com/Cognigy/cognigy-ai-helm-chart)
 
 
 ### Cognigy License
@@ -59,7 +61,7 @@ If you plan to set up a Kubernetes environment in a private data center, or ther
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Our product heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
 
 ???+ attention 
-    Please note, that we will not be able to provide any support on setting up any aforementioned network-related prerequisites. Please contact a net- work/system administrator or a related team of your organization for further support.
+    Please note, that we will not be able to provide any support on setting up any aforementioned network-related prerequisites. Please contact a net-work/system administrator or a related team of your organization for further support.
 
 ???+ attention
     While an installation on Windows servers might be possible, we neither support Windows as an OS nor test our product on Windows servers. We will not be able to provide any support for our product if you pick Windows as an OS.

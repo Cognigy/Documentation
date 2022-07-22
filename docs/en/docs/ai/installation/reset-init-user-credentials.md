@@ -14,6 +14,7 @@ In case, you cannot obtain credentials from logs of `service-security` in the wa
     mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
     rs.status()
    ```
+
 2. Connect to the primary node (e.g. if `mongodb-0` is the primary node) and drop the collections in `service-security` database:
 
     ```
@@ -25,5 +26,7 @@ In case, you cannot obtain credentials from logs of `service-security` in the wa
     exit
     exit
     ```
-2. Restart the `service-security` deployment: `kubectl rollout restart deployment service-security`
-3. Obtain the newly generated initial credentials from the logs of `service-security` deployment as usual.
+
+3. Restart the `service-security` deployment: `kubectl rollout restart deployment service-security`
+
+4. Obtain the newly generated initial credentials from the logs of `service-security` deployment as usual.
