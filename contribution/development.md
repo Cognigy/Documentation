@@ -13,7 +13,11 @@ Running the development server with nerdctl (Rancher Desktop):
 ```
 nerdctl run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live
 ```
+Running the development server with nerdctl (Rancher Desktop) on MacOS (ARM M1-chip):
 
+```
+nerdctl run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:arm.1 python ./scripts/docs.py live
+```
 **You need to make sure that you execute this command in this repository as it will bind-mount the current folder into the running container!**
 
 
