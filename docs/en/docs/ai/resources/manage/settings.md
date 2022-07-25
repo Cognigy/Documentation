@@ -48,23 +48,6 @@ If the setting is on, the virtual agent doesn't answer with the default reply bu
 
 If the setting in on, NLU training will also include default replies configured for each Intent as example sentence to match the intent. This setting can be also configured individually on intent level.
 
-### Locale Settings
-
-Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) model from [fallback]({{config.site_url}}ai/resources/manage/localization/) locale. 
-
-- The setting tab is disabled for the fallback locale. 
-
-  <img src="{{config.site_url}}ai/resources/manage/images/primary-locale-settings.png" width="100%" />
-
-- For alternative locales, the setting tab is enabled and the setting toggle is deactivated by default.
-
-  <img src="{{config.site_url}}ai/resources/manage/images/alternative-locale-settings.png" width="100%" />
-
-- If toggle is active, [training indicator]({{config.site_url}}ai/resources/manage/localization/) on the Intents page is hidden and [build model]({{config.site_url}}ai/resources/manage/localization/) button is disabled. 
-
-  <img src="{{config.site_url}}ai/resources/manage/images/hidden-training-indicator-and-disabled-build-model.png" width="100%" />
-
-
 ## Timezone
 <div class="divider"></div>
 
