@@ -38,5 +38,5 @@ Cognigy.AI's webchat supports the following browsers:
 - Internet Explorer 11 and up
 - Safari 9 and up*
 
-???+ info "*Safari and Websockets"
+???+ info "Safari and Websockets"
     We currently only allow Websockets on Safari, meaning that we don't allow to fall back to long-polling.
