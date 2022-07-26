@@ -62,13 +62,13 @@ In addition to the visual **Chart**, Flows also contain a tab named **NLU**. Thi
 
 Certain settings can be configured per Flow. 
 
-### Flow Configuration
+#### Flow Configuration
 Information about the Flow Configuration Settings can be found here: [Flow Settings]({{config.site_url}}ai/resources/manage/settings/#general-flow-logic).
 
-### Default Context
+#### Default Context
 Can be used as a starting point for the Flow's Context object. Head over to [Context]({{config.site_url}}ai/tools/interaction-panel/context/) for more information.
 
-### Locale Settings
+#### Locale Settings
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.32.0-blue.svg)]({{config.site_url}})
 
