@@ -60,7 +60,7 @@ In addition to the visual **Chart**, Flows also contain a tab named **NLU**. Thi
 ## Settings
 <div class="divider"></div>
 
-**Certain** settings can be configured per Flow. 
+Certain settings can be configured per Flow. 
 
 ### Flow Configuration
 Information about the Flow Configuration Settings can be found here: [Flow Settings]({{config.site_url}}ai/resources/manage/settings/#general-flow-logic).
