@@ -60,6 +60,9 @@ Set the timezone that your virtual agent will operate in.
 
 When enabled, case sensitivity and punctuation will be taken into account by the intent mapper. Disable this setting to ignore casing and punctuation in ML intent mapping.
 
+???+ danger "English Support"
+    Despite configurable in the agent's settings, this feature is not implemented for the regular English locales, i.e. US, Indian, UK, Canadian, and Australian English. However, you may use this feature using the "Universal" locale which also supports general English.
+
 ### Attached Flow Intent Mapping Priority
 - Jointly Map Main and Attached Flow: treats Main and Attached Flow Intents as if they were a single intent collection and finds the best matching intent and executes the corresponding Flow.
 - Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow the Attached Flow is mapped.
