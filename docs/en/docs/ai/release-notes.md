@@ -5,12 +5,41 @@
 ---
 # Release notes
 
+## 4.31.0
+**This version is currently in pre-release and will be released soon**
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+
+### Features
+#### WhatsApp Cloud rich media support
+This release of Cognigy.AI adds support for rich media elements for the WhatsApp Cloud channel. You will now have the chance to output Locations, Contacts and Rich Links as part of our Say-Node in the Flow-Editor when specifying outputs for the WhatsApp Cloud channel.
+
+### Improvements
+- Improved by exposing errors related to CognigyScript parsing on the logs page
+- Improved by ensuring that the cognigy_ai_brain_in_memory_count metric shows the correct state
+- Improved by making the demo webchat scalable
+- Support for adaptive cards in the Webchat tab of the Say Node
+- Updated the Webchat Widget to version 2.41.2
+- Improved by adjusting the agent assist flow node
+
+### Bugfixes
+
+- Fixed a bug that leads to a crash as soon as there was a executeFlow node with parseSlots enabled
+- Fixed a bug where there is wrong usage of icon for AudioCodes and VoiceGateway / also wrong output for VoiceGateway text in chat history
+- Fixed a bug where you could not delete multiple agents one after another
+- Fixed a bug where we were not able to save multiple changes in say node
+- Fixed a bug where the older question nodes in an agent are not displaying the field data on selecting it the first time after the handover properties are released for the node, thereby "last updated user" is displayed as zeros
+- Fixed a bug when unsupported WhatsApp input data was not not passed to the flow
+
 ## 4.30.0
 **Released** July 18th, 2022
 
 **Important announcement**:
 
-With this release are are officially marking our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+With this release we are officially marking our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
 
 ### Features
 

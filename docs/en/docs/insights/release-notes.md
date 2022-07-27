@@ -4,13 +4,28 @@
  hidden: false 
 ---
 # Release notes
+**This version is currently in pre-release and will be released soon**
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+## 4.31.0
+
+### Improvements
+
+- Improved by adding Highlighting the transcripts by changing the background color of the transcript list table to white
+
+### Bugfixes
+
+- Fixed a bug: insights not loading
 
 ## 4.30.0
 **Released** July 18th, 2022
 
 **Important announcement**:
 
-With this release are are officially marking our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+With this release we are officially marking our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
 
 ### Improvements
 

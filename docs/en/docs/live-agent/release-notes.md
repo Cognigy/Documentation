@@ -1,5 +1,27 @@
 # Cognigy Live Agent
 
+## 4.31.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+
+- Improved by redesigning the Whisper agent assist and adding new info cards to it
+- Improved by making the conversation Cognigy Channel type field human readable
+- Add the possibility to edit contact profiles by agents directly in the conversation information section, the change will be reflected in Cognigy.AI as well
+- Improved by adding user ability to set their status to "away"
+- Improved by adding an "Unassign" command in place of the "None" agent in the conversation action section, so that users can more easily unassign conversations
+- Improved by adding inbox avatar to conversation list and having both upload and delete operations propagate immediately without needing a page refresh
+- Improved by allowing rendering of info cards using the new JSON payload proportioned by Cognigy
+- Improved by adding human-readable channel mapping to conversation filters and conversation information section
+- Improved by fixing a memory leak while querying conversations
+- Improved by making info card images' size more dynamic. It adds preview text for agent assist messages and the possibility to use line breaks in info card bodies. It fixes floating arrows when hovering and  galleries not working correctly when hovered
+
+### Bugfixes
+
+- Fixed a bug where availability status colors were not propagating correctly
+- Fixed a bug where user who clicks on the assigned agent unassigns the conversation
+- Fixed a bug where agent availability was set back to online after reloading the page
+
 ## 4.30.0
 **Released** July 18th, 2022
 
