@@ -9,7 +9,7 @@ In case, you cannot obtain credentials from logs of `service-security` in the wa
 
 1. Drop the collections in `service-security` database by connecting to the _primary_ node of MongoDB. To get which node is primary, execute `rs.status()`:
 
-    ```yaml
+    ```bash
     kubectl exec -it -n mongodb mongodb-0 bash
     mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
     rs.status()
@@ -17,7 +17,7 @@ In case, you cannot obtain credentials from logs of `service-security` in the wa
 
 2. Connect to the primary node (e.g. if `mongodb-0` is the primary node) and drop the collections in `service-security` database:
 
-    ```
+    ```bash
     kubectl exec -it -n mongodb mongodb-0 bash
     mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
     use service-security
@@ -27,6 +27,12 @@ In case, you cannot obtain credentials from logs of `service-security` in the wa
     exit
     ```
 
-3. Restart the `service-security` deployment: `kubectl rollout restart deployment service-security`
+3. Restart the `service-security` deployment: 
+    ```bash
+   kubectl rollout restart -n=cognigy-ai deployment service-security
+   ```
 
-4. Obtain the newly generated initial credentials from the logs of `service-security` deployment as usual.
+4. Obtain the newly generated initial credentials from the logs of `service-security` deployment as usual:
+    ```bash
+   kubectl logs -f -n=cognigy-ai --tail 100 deployment/service-security
+   ```
