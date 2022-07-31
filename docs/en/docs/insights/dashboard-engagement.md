@@ -13,7 +13,7 @@
 The Engagement Dashboard is focused on customer reactions in conversations. Data analytics of your Agent is visualized in graphs (line charts, bar charts, pie charts, tiled reports - all with labels and tooltips).
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/d9c5387-Dashboard_Engagement_5.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/d9c5387-Dashboard_Engagement_5.png" width="100%" />
   <figcaption>Engagement dashboard</figcaption>
 </figure>
 

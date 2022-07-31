@@ -21,7 +21,7 @@ The Transcript Explorer enables you to search for key phrases like "booking", "c
 The customer conversations will be displayed in a list with their contact IDs, message counts, used channel as well as date and time of the message. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/442b547-Transcript_Explorer_n1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/442b547-Transcript_Explorer_n1.png" width="100%" />
   <figcaption>Transcript Explorer displaying a list of transcripts (conversations) - local filter menu is open</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ The customer conversations will be displayed in a list with their contact IDs, m
 - When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/942c078-Transcript_Explorer_n3.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/942c078-Transcript_Explorer_n3.png" width="100%" />
   <figcaption>Transcript Explorer: Search example for the key phrase "appointment"</figcaption>
 </figure>
 

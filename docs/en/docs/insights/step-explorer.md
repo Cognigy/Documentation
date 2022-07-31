@@ -12,7 +12,7 @@ Based on these findings you are able to evaluate may improve your Virtual Agent 
 The Step Explorer allows to explore conversational steps and can show how these steps are interconnected with each other.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/7bf4ed7-Step_Explorer_n1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer.png" width="100%" />
   <figcaption>Step Explorer UI</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ The Step Explorer provides the following advantages:
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/7bf4ed7-Step_Explorer_n1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/7bf4ed7-Step_Explorer_n1.png" width="100%" />
   <figcaption>Step Explorer: Analytic steps displayed in <b>forward direction</b></figcaption>
 </figure>
 
@@ -132,7 +132,7 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
 - You can change the conversation's "**Forward**" direction to a "**Backward**" direction. The Step Explorer will then display the analysis starting on the left side with the end of a conversation.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/7d637e4-Step_Explorer_direction_backward_n3.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/7d637e4-Step_Explorer_direction_backward_n3.png" width="100%" />
   <figcaption>Step Explorer: Analytic steps displayed in <b>backward direction</b></figcaption>
 </figure>
 
@@ -141,7 +141,7 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
 Fields with an 'arrow' icon are placeholders for hidden steps. These hidden steps will be displayed only when you click on an 'arrow field'. Using arrow fields make sure that the displayed steps are clearly arranged.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/d54affb-Step_Explorer_make_appointment_n4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/d54affb-Step_Explorer_make_appointment_n4.png" width="100%" />
   <figcaption>Example: Separate display of a selected step "Make an appointment"</figcaption>
 </figure>
 

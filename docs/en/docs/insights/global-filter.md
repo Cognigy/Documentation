@@ -19,7 +19,7 @@ Cognigy Insights comes with so-called global filters. These filters can be set i
 Global filter always will be available no matter where you navigate. Once you have changed the filters, all of the data visualized in any location will respect your filter configuration.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/06794a7-Global_filter_1_250.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/06794a7-Global_filter_1_250.png" width="100%" />
   <figcaption>Global filter menu</figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ Available preset time periods are:
 - Custom period (freely selectable with the entry of start date and end date)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/f1a1b85-Global_filter_Timeframe_2.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/f1a1b85-Global_filter_Timeframe_2.png" width="50%" />
   <figcaption>Timeframe filter options</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ So if you have tested the Virtual Agent using the Interaction Panel, you now wil
 - Select "Interaction Panel" and confirm with "Apply" to get the analytics data displayed.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/c4625a8-5268_Global_filter_Interaction_Panel_2.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/c4625a8-5268_Global_filter_Interaction_Panel_2.png" width="100%" />
   <figcaption>Insights Dashboard for "Interaction Panel" filter</figcaption>
 </figure>
 

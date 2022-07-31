@@ -17,7 +17,7 @@ The data presented on this dashboard is related to the **Natural Language Unders
 More information regarding "NLU" and "Intents" you will find here: [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/).
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/bc68486-Dashboard_NLU_Performance_2.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/bc68486-Dashboard_NLU_Performance_2.png" width="100%" />
   <figcaption>NLU Performance dashboard</figcaption>
 </figure>
 
@@ -53,13 +53,12 @@ More information regarding "NLU" and "Intents" you will find here: [NLU Overview
 |Top Intent Scores|	Top-rated numbers of Intents are displayed in a bar chart.<br>More information about Intent analysis you will find here: [Intent Analyzer]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/)|
 
 ???+ info "Note"
-    **When hovering over any chart or metrics field, rating details will be displayed in a tooltip. Consider that rating data depend on the settings in your [global filter options]({{config.site_url}}insights/cognigy-insights/).** 
+    **When hovering over any chart or metrics field, rating details will be displayed in a tooltip. Consider that rating data depend on the settings in your [global filter options]({{config.site_url}}insights/cognigy-insights/).**
 
 ##Download Report
 
-Every widget on the Insights dashboard provides a '**Download report as .csv file**' item in a dropdown menu. 
-To create a report file follow instructions here: [Download Report]({{config.site_url}}insights/download-report/) 
-
+Every widget on the Insights dashboard provides a '**Download report as .csv file**' item in a dropdown menu.
+To create a report file follow instructions here: [Download Report]({{config.site_url}}insights/download-report/)
 
 ## More information
 <div class="divider"></div>
