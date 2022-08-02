@@ -4,7 +4,7 @@
  hidden: false 
 ---
 # Release notes
-**This version is currently in pre-release and will be released soon**
+**Released** August 2nd, 2022
 
 **Important announcement**:
 
