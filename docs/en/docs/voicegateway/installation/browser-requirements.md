@@ -6,7 +6,7 @@
 
 ### Browser Requirements
 
-The Voice Gateway web frontend works with most modern web browsers. The following table shows the list of supported web browsers:
+The VoiceGateway Web Portal works with most modern web browsers. The following table shows the list of supported web browsers:
 
 | Browser         | Minimum version |
 | --------------- | --------------- |
