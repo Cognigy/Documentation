@@ -350,6 +350,12 @@ nav:
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - live-agent/FAQs.md
+- VoiceGateway:
+  - voicegateway/overview.md
+  - Installation & Configuration:
+    - voicegateway/installation/overview.md
+    - Browser Requirements:
+      - voicegateway/installation/browser-requirements.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
