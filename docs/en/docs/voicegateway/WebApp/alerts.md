@@ -5,13 +5,11 @@
 ---
 # Voice Gateway Web App - Alerts
 
-The **Cognigy Web App** is where all the standard configuration and routing for **Voice Gateway** can be set. 
+In case any errors happen during the Call an **Alert** event will be added to the **Alerts** page of the WebApp.
 
-## Overview
-
-<div class="divider"></div>
+These **Alerts** can be filtered by _today_ or the last _7 days_.
 
  <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0c6834f-6d72d72-endpoints-screen.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}voicegateway/WebApp/images/VG_WebApp_Alerts.png" width="100%" />
 </figure>
 
