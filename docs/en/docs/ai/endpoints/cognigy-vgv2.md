@@ -4,7 +4,9 @@
  hidden: true 
 ---
 # Cognigy VoiceGateway
+
 ## Overview
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
 </figure>
@@ -54,7 +56,7 @@ Cognigy VoiceGateway identifies important information about the call from the SI
 
 
 ???+ info "Contact Center & Phone number linking"
-    In order to route your Contact Center or Phone Number to your VoiceGateway Endpoint you need to go to the **VoiceGateway WebApp**. Head over to our [**VoiceGateway WebApp Documentation**]({{config.site_url}}voicegateway/WebApp/overview/) to find all the detailed information about the necessary steps in the WebApp.
+    In order to route your Contact Center or Phone Number to your VoiceGateway Endpoint you need to go to the **VoiceGateway Web App**. Head over to our [**VoiceGateway Web App Documentation**]({{config.site_url}}voicegateway/WebApp/overview/) to find all the detailed information about the necessary steps in the Web App.
 
 ???+ warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
