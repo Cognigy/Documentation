@@ -156,7 +156,7 @@ nav:
       - ai/flow-nodes/vg/send-message.md
       - ai/flow-nodes/vg/set-session-params.md
       - ai/flow-nodes/vg/play-url.md
-      - ai/flow-nodes/vg/handover-vg.md
+      - ai/flow-nodes/vg/transfer-vg.md
       - ai/flow-nodes/vg/hangup.md
       - ai/flow-nodes/vg/send-meta-data.md
       - ai/flow-nodes/vg/call-recording.md

@@ -5,13 +5,9 @@
 ---
 # Voice Gateway Web App - Phone Numbers
 
-The **Cognigy Web App** is where all the standard configuration and routing for **Voice Gateway** can be set. 
+On the **Phone Numbers** page you can add your phone numbers that shall be routed to your Endpoints. While adding the phone number your _SIP Trunk_ and the _Application_ the number will be routed to must be chosen as well.
 
-## Overview
-
-<div class="divider"></div>
-
- <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0c6834f-6d72d72-endpoints-screen.jpg" width="100%" />
+<figure>
+  <img class="image-center" src="{{config.site_url}}voicegateway/WebApp/images/vg-webapp-phone-numbers.png" width="100%" />
 </figure>
 

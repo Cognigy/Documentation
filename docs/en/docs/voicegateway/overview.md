@@ -6,8 +6,8 @@
 
 # Overview
 
-Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **VoiceGateway**, allowing customers to speak with your **Agent** instead of just writing to it.
+**Cognigy VoiceGateway** is an AI-based solution to deploy **Virtual Voice Agents** for automated phone conversations. It is seamlessly integrated with the Cognigy.AI platform and allows you to connect your Virtual Agent to your **Contact Center**.
 
-An overview of some of the most important components can be found in the following diagram:
-
-<img src="{{config.site_url}}voicegateway/images/VG-overview.png" alt="VoiceGateway Overview">
+<figure>
+  <img class="image-center" src="{{config.site_url}}voicegateway/images/VoiceGateway_AI_Overview.png" width="100%" />
+</figure>

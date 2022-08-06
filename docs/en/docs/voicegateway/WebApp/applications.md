@@ -5,7 +5,7 @@
 ---
 # Voice Gateway Web App - Applications
 
-The **Applications** overview will give a quick look on all created applications for a specific **Account**. 
+The **Applications** overview will give a quick look on all created Applications for your **Account**. 
 
  <figure>
   <img class="image-center" src="{{config.site_url}}voicegateway/WebApp/images/VG_WebApp_Applications_Overview.png" width="100%" />
@@ -15,7 +15,7 @@ The **Applications** overview will give a quick look on all created applications
 
 <div class="divider"></div>
 
-An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the VoiceGateway WebApp the Endpoint is being routed to VoiceGateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI.
+An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the VoiceGateway Web App the Endpoint is being routed to VoiceGateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}voicegateway/WebApp/images/VG_WebApp_Applications_NewApp.png" width="100%" />
@@ -24,7 +24,6 @@ An **Application** represents an Endpoint in Cognigy.AI. By creating an Applicat
 | Settings | Description |
 | -------- | ----------- |
 | Name | Application Name |
-| Account | Choose which Account this Application should be added to |
 | Calling Webhook | Cognigy.AI Endpoint URL for the Web Application that will handle calls |
 | Call Status Webhook | Cognigy.AI Endpoint URL for the Web Application that will receive the call status |
 | Messaging Webhook | Cognigy.AI Endpoint URL for the Web Application that will receive SMS, if configured |

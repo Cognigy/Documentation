@@ -1,18 +1,18 @@
 ---
- title: "Handover (Voice Gateway)" 
- slug: "handover-vg" 
+ title: "Transfer (Voice Gateway)" 
+ slug: "transfer-vg" 
  hidden: false 
 ---
-# Handover (Voice Gateway)
+# Transfer (Voice Gateway)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2349bf4-vg_handover.JPG" width="100%" />
-  <figcaption>Voice Gateway Handover</figcaption>
+  <figcaption>Voice Gateway Transfer</figcaption>
 </figure>
 
 ## Description
 <div class="divider"></div>
-The Handover Node let's you pass an active call to a tel or sip target.
+The Transfer Node let's you pass an active call to a tel or sip target.
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |

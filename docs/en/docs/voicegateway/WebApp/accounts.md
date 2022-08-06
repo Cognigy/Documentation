@@ -3,10 +3,9 @@
  slug: "vg-webapp-accounts" 
  hidden: false 
 ---
-# Voice Gateway Web App - Accounts
+# VoiceGateway Web App - Accounts
 
-The **Accounts** added on this page represent the different Organisations existing in Cognigy AI.
-Every **Account** can have multiple **Applications** linked.
+The _Home_ page of the Web App shows your **VoiceGateway Account**. This represents your Organisation from Cognigy.AI. An **Account** can have multiple **Applications** linked.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}voicegateway/WebApp/images/VG_WebApp_Accounts.png" width="100%" />
@@ -23,7 +22,7 @@ Every **Account** can have multiple **Applications** linked.
 | SIP Realm | Domain Name that SIP devices will register with |
 | Webhook Secret | - |
 | Application for SIP Device Calls | - |
-| Registration Webhook | URL for your Web Applcation that handles registrations |
+| Registration Webhook | URL for your Web Application that handles registrations |
 | Queue Event Webhook | URL to notify when a member joins or leaves a queue |
 | Account API Keys | - |
 

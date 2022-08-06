@@ -17,10 +17,10 @@ The **Cognigy VoiceGateway WebApp** is where all the standard configuration and 
 
 The Web App is divided into following sub-pages:
 
-- [**Accounts**]({{config.site_url}}------/) 
-- [**Applications**]({{config.site_url}}------/) 
-- [**Recent Calls**]({{config.site_url}}------/)
-- [**Alerts**]({{config.site_url}}------/)
-- [**Carriers**]({{config.site_url}}------/)
-- [**Speech Settings**]({{config.site_url}}------/)
-- [**Phone Numbers**]({{config.site_url}}------/)
+- [**Accounts**]({{config.site_url}}voicegateway/WebApp/accounts/)
+- [**Applications**]({{config.site_url}}voicegateway/WebApp/applications/) 
+- [**Recent Calls**]({{config.site_url}}voicegateway/WebApp/recent-calls/)
+- [**Alerts**]({{config.site_url}}voicegateway/WebApp/alerts/)
+- [**Carriers**]({{config.site_url}}voicegateway/WebApp/carriers/)
+- [**Speech Settings**]({{config.site_url}}voicegateway/WebApp/speech-services/)
+- [**Phone Numbers**]({{config.site_url}}voicegateway/WebApp/phone-numbers/)
