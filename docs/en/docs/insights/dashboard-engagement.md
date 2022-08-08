@@ -26,7 +26,7 @@ The currently displayed dashboard can be seen next to the agent in the top left 
   <img class="image-center" src="{{config.site_url}}insights/images/1f9548d-Dashboard_Engagement_6.svg" width="100%" />
   <figcaption>Engagement dashboard details</figcaption>
 </figure>
-
+<div id="engagement-1"></div>
 |Graph title|	Description|
 |--|--|
 |Goals reached|	Indication of reached goals (the report is arranged in a tile).|

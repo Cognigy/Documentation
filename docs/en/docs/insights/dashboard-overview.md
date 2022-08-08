@@ -38,7 +38,7 @@ When hovering the line chart, details as for example the rated month, the year a
 
 ???+ info "Note"
     **The on top of the dashboard placed blue tiles show currently valid data in a "live" mode. That means that data will be refreshed every 30 seconds to be updated.**
-
+<div id="overview"></div>
 |Graph title|	Description|
 |--|--|
 |Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
@@ -51,7 +51,7 @@ When hovering the line chart, details as for example the rated month, the year a
   <img class="image-center" src="{{config.site_url}}insights/images/81da91e-Dashboard_Overview_5.svg" width="100%" />
   <figcaption>Overview dashboard - 2</figcaption>
 </figure>
-
+<div id="overview-charts"></div>
 |Graph title|	Descrption|
 |--|--|
 |Sessions by Channel|	Total number of conversations (sessions) displayed in a ring chart based on channel. ("Users" changed to "Sessions" in v4.16). A Session by Channel is defined or counted by the number of unique sessions for a given channel. This tile represents all the sessions started between the given time. |
@@ -65,7 +65,7 @@ When hovering the line chart, details as for example the rated month, the year a
   <img class="image-center" src="{{config.site_url}}insights/images/2da6af6-Dashboard_Overview_6.svg" width="100%" />
   <figcaption>Overview dashboard - 3</figcaption>
 </figure>
-
+<div id="overview-charts2"></div>
 |Graph title|	Description|
 |--|--|
 |Top Slots|	Top-rated number of slots displayed in a bar chart.|
