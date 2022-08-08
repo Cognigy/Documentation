@@ -18,7 +18,7 @@
 
 Setting up VoiceGateway is easy and can be done in 3 steps:
 
-1. Create your [Voice Flow]({{config.site_url}}voicegateway/webapp/overview/) in Cognigy.AI.
+1. Create your [Voice Flow]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/) in Cognigy.AI.
 2. Create a [VoiceGateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vgv2/) in your Cognigy.AI agent.
 3. Route your Endpoint and Contact Center to VoiceGateway in the [VoiceGateway Web App]({{config.site_url}}voicegateway/webapp/overview/).
 
