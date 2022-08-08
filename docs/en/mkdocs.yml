@@ -358,14 +358,14 @@ nav:
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
   - Web App:
-    - voicegateway/WebApp/overview.md
-    - voicegateway/WebApp/accounts.md
-    - voicegateway/WebApp/applications.md
-    - voicegateway/WebApp/recent-calls.md
-    - voicegateway/WebApp/alerts.md
-    - voicegateway/WebApp/carriers.md
-    - voicegateway/WebApp/speech-services.md
-    - voicegateway/WebApp/phone-numbers.md
+    - voicegateway/webapp/overview.md
+    - voicegateway/webapp/accounts.md
+    - voicegateway/webapp/applications.md
+    - voicegateway/webapp/recent-calls.md
+    - voicegateway/webapp/alerts.md
+    - voicegateway/webapp/carriers.md
+    - voicegateway/webapp/speech-services.md
+    - voicegateway/webapp/phone-numbers.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
