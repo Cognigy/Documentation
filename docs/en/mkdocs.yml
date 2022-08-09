@@ -357,6 +357,8 @@ nav:
     - voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
+    - Deployment:
+      - voicegateway/installation/installation-process.md
   - Web App:
     - voicegateway/webapp/overview.md
     - voicegateway/webapp/accounts.md
