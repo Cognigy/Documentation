@@ -1,5 +1,16 @@
 # Cognigy Live Agent
 
+## 4.32.0
+**This version is currently in pre-release and will be released soon**
+
+### Improvements
+- Improved by adding the new status "Aborted" to conversations that didn't get a customer response. It is configurable under the Account Settings section
+- Improved by adding a link to inbox settings in the assist bot sidebar and persisting selected flow in conversation when the sidebar is closed
+
+### Bugfixes
+- Fixed a bug where the text of user messages in assist bot was not correctly aligned
+- Fixed a bug where the input box was not staying at the bottom on big screens, and assist bot chat messages were misaligned
+
 ## 4.31.0
 **Released** August 2nd, 2022
 

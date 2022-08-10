@@ -4,13 +4,37 @@
  hidden: false 
 ---
 # Release notes
-**Released** August 2nd, 2022
+
+## 4.32.0
+**This version is currently in pre-release and will be released soon**
 
 **Important announcement**:
 
 With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
 
+### Improvements
+
+- Improved by adding the info Tooltips  in insight dashboard reports. (pr: !10666, ticket: #27435)
+- Improved by including 'today' under 'Last X days' (pr: !10597, ticket: #27819)
+- Improved by Making Contact ID copyable in the Transcript explorer (pr: !10206, ticket: #27985)
+- Changed duration formatting for the number charts (pr: !10232, ticket: #27805)
+- Changed background color in transcript explorer (pr: !10452, ticket: #27976)
+- Fixed sidebar animation (pr: !10372, ticket: #28490)
+- Added Search field for Flows + order of flows for the Transcript Explorer (pr: !10411, ticket: #27975)
+
+### Bugfixes
+
+- Fixed a bug: Message explorer search filter doesn't work (pr: !10536, ticket: #28416)
+- Fixed a bug:  User has to refresh his insights dashboard to see the Actual Active contacts (pr: !10675, !10501, ticket: #28759)
+- Fixed a bug:  Close dropdown icon in the Insights dashboards left sidebar doesn't work (pr: !10677, , ticket: #27808)
+- Fixed a bug:  Close dropdown icon in the Insights dashboards left sidebar doesn't work (pr: !10677, , ticket: #27808)
+
 ## 4.31.0
+**Released** August 2nd, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
 
 ### Improvements
 

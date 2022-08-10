@@ -5,6 +5,31 @@
 ---
 # Release notes
 
+## 4.32.0
+**This version is currently in pre-release and will be released soon**
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Improvements
+- Remove "powered by Cognigy" link from webchat when whitelabeling flag is enabled
+- Add default, webchat, plugin Adaptive cards rendering to Interactive Panel
+- Improved by adjusting the agent assist flow node
+- Improved by making the conversation counter timezone aware
+- Improved the error message when executing a Flow Node failed
+- Improved by adding visual indicator on chart nodes that have an analytics step
+
+### Bugfixes
+- Fixed a bug where the Salesforce Handover Integration doesn't provide the full conversation history
+- Adjusted log levels from 'error' to 'debug' for anonymous callers
+- Fixed a bug where two identical user IDs would create different Contact Profiles when containing a "+" sign
+- Fixed a bug where the agent assist output appeared in channels other than live-agent
+- Fixed a bug where Initializing a second handover request in live agent using a different inbox would fail
+- Fixed a bug where packages with intents created with a name starting/ending with white space were not accepted
+- Fixed a bug where the password reset functionality would not work for users which are part of multiple organisations
+- Fixed a bug where AI channel preview for Adaptive Card output type was not working
+
 ## 4.31.0
 **Released** August 2nd, 2022
 
