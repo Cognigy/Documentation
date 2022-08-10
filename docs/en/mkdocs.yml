@@ -210,7 +210,7 @@ nav:
       - ai/tools/analytics/odata-analytics-endpoint.md
       - ai/tools/analytics/analytics-concepts.md
     - ai/tools/node-search.md
-    - ai/tools/audio-preview.md
+    - ai/tools/voice-preview.md
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
     - ai/tools/agent-handover.md
