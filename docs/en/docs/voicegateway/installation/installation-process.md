@@ -10,7 +10,12 @@ hidden: false
 
 To install VoiceGateway please perform following steps:
 
-1. Install VoiceGateway with [VoiceGateway Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-mongodb-helm-chart#readme)
+<!---
+TODO: Update the VoiceGateway Helm Chart links (main page and readme) with the public GitHub Helm Chart repository once we have it.
+TODO: VoiceGateway Helm Chart contains the installation guide and it is still on progress, remove this when the final version is commited.
+-->
+
+1. Install VoiceGateway with [VoiceGateway Helm Chart](https://cognigy.visualstudio.com/VoiceGateway/_git/voicegateway-app). For up-to-date installation instructions refer to [README.md](https://cognigy.visualstudio.com/VoiceGateway/_git/voicegateway-app?path=/README.md)
 
 Once Helm releases is successfully installed, you can open a web-browser and visit the URL which you have set in `webapp.host` parameter VoiceGateway Helm release. You should be able to see the login screen of VoiceGateway WebApp:
 
