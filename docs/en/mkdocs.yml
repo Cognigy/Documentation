@@ -352,7 +352,8 @@ nav:
   - live-agent/FAQs.md
 - VoiceGateway:
   - voicegateway/overview.md
-  - voicegateway/getting-started.md
+  - Getting Started:
+    - voicegateway/getting-started.md
   - Installation & Configuration:
     - voicegateway/installation/overview.md
     - Browser Requirements:
@@ -361,13 +362,20 @@ nav:
       - voicegateway/installation/installation-process.md
   - Web App:
     - voicegateway/webapp/overview.md
-    - voicegateway/webapp/accounts.md
-    - voicegateway/webapp/applications.md
-    - voicegateway/webapp/recent-calls.md
-    - voicegateway/webapp/alerts.md
-    - voicegateway/webapp/carriers.md
-    - voicegateway/webapp/speech-services.md
-    - voicegateway/webapp/phone-numbers.md
+    - Accounts:
+      - voicegateway/webapp/accounts.md
+    - Applications:
+     - voicegateway/webapp/applications.md
+    - Recent Calls:
+      - voicegateway/webapp/recent-calls.md
+    - Alerts:
+      - voicegateway/webapp/alerts.md
+    - Carriers:
+      - voicegateway/webapp/carriers.md
+    - Speech Services:
+      - voicegateway/webapp/speech-services.md
+    - Phone Numbers:
+      - voicegateway/webapp/phone-numbers.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
