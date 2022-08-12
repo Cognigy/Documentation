@@ -1,7 +1,7 @@
 ---
  title: "Voice Preview" 
  slug: "voice-preview" 
- hidden: false 
+ hidden: true 
 ---
 
 # Voice Preview
@@ -10,20 +10,20 @@
 
 This Voice Preview feature allows users to quickly test how voice output sounds without having to go all the way till the flow node.
 
-It suppors the cloud Voice providers for SST/TTS from Google, Microsoft and Amazon AWS.
+It supports the cloud SST/TTS from the providers Google, Microsoft and Amazon AWS.
 
-Once in the Voice Preview panel, you will be able to introduce raw text or SSML syntach; and also choose the language and the voice to play your Voice. Bear in mind that the SSML syntach that you introduce will have to be supported by the Voice Preview provider you chose.
+Once in the Voice Preview panel, you will be able to introduce raw text or SSML syntax. You can also choose the language and the voice to use. Bear in mind that the SSML syntax that you introduce will have to be supported by the Voice Preview provider you chose.
 
-### Set up an Voice Preview provider
+### Set up a Voice Preview provider
 
 <div class="divider"></div>
 
-You need to navigate to the agent settings -> Voice Preview Settings. From there choose your STT/TTS provider and
-enter your creedentials.
+You need to navigate to the Agent Settings -> Voice Settings. From there, choose your STT/TTS provider and
+enter your credentials.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-settings.png" width="100%" />
-  <figcaption>Voice Preview settings</figcaption>
+  <figcaption>Voice Settings</figcaption>
 </figure>
 
 ### Use Voice Preview
@@ -50,8 +50,8 @@ You can use the Voice Preview from 3 different places:
   <figcaption>Voice Preview Flow editor</figcaption>
 </figure>
 
-3 - On the chat panel you can play the bot response.
+3 - Click on the Voice Preview button in the interactive tooltip of a message output in the Interaction Panel. The output text will be copied to the Voice Preview input field (only for regular text & fallback text)..
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-chat-panel.png" width="100%" />
-  <figcaption>Voice Preview Flow editor</figcaption>
+  <figcaption>Voice Preview Interactive Tooltip</figcaption>
 </figure>

@@ -58,7 +58,7 @@ The following hotkeys are valid for the Flow Editor.
   <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Ctrl + Alt + P </br>Command + Option + P</td>
     <td style="padding: 20px;">
-    		Open audio preview panel.
+    		Open Voice Preview panel.
     </td>
   </tr>
 </table>
