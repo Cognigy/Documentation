@@ -8,7 +8,7 @@
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.33.0-blue.svg)]({{config.site_url}})
 
-This Voice Preview feature allows users to quickly test how voice output sounds without having to go all the way till the flow node.
+The Voice Preview feature allows users to quickly test how voice output sounds without having to execute the whole flow with a mock call.
 
 It supports the cloud SST/TTS from the providers Google, Microsoft and Amazon AWS.
 
@@ -32,7 +32,7 @@ enter your credentials.
 
 You can use the Voice Preview from 3 different places:
 
-1 - With the hotKey (control + alt + p).
+1 - With the hotKey **Ctrl + Alt + p** or **Command + Option + p**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-panel.png" width="100%" />
