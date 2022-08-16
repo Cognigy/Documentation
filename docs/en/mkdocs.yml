@@ -156,7 +156,7 @@ nav:
       - ai/flow-nodes/vg/send-message.md
       - ai/flow-nodes/vg/set-session-params.md
       - ai/flow-nodes/vg/play-url.md
-      - ai/flow-nodes/vg/handover-vg.md
+      - ai/flow-nodes/vg/transfer-vg.md
       - ai/flow-nodes/vg/hangup.md
       - ai/flow-nodes/vg/send-meta-data.md
       - ai/flow-nodes/vg/call-recording.md
@@ -350,6 +350,33 @@ nav:
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - live-agent/FAQs.md
+- VoiceGateway:
+  - voicegateway/overview.md
+  - Getting Started:
+    - voicegateway/getting-started.md
+  # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
+  # - Installation & Configuration:
+  #   - voicegateway/installation/overview.md
+  #   - Browser Requirements:
+  #     - voicegateway/installation/browser-requirements.md
+  #   - Deployment:
+  #     - voicegateway/installation/installation-process.md
+  - Web App:
+    - voicegateway/webapp/overview.md
+    - Accounts:
+      - voicegateway/webapp/accounts.md
+    - Applications:
+     - voicegateway/webapp/applications.md
+    - Recent Calls:
+      - voicegateway/webapp/recent-calls.md
+    - Alerts:
+      - voicegateway/webapp/alerts.md
+    - Carriers:
+      - voicegateway/webapp/carriers.md
+    - Speech Services:
+      - voicegateway/webapp/speech-services.md
+    - Phone Numbers:
+      - voicegateway/webapp/phone-numbers.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
