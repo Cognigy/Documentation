@@ -1,5 +1,5 @@
 ---
- title: "VG Web App - Carriers" 
+ title: "Carriers" 
  slug: "vg-webapp-carriers" 
  hidden: true 
 ---
@@ -10,9 +10,7 @@ The **Carriers** page allows you to connect your SIP Trunk with VoiceGateway. Th
 
 <div class="divider"></div>
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-carriers.png" width="100%" />
-</figure>
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-carriers.png" alt="VoiceGateway WebApp Carriers" />
 
 ## Carrier Settings
 
