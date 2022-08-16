@@ -1,5 +1,5 @@
 ---
- title: "VG Web App - Accounts" 
+ title: "Accounts" 
  slug: "vg-webapp-accounts" 
  hidden: false 
 ---
@@ -8,9 +8,7 @@
 
 The _Home_ page of the Web App shows your **VoiceGateway Account**. This represents your Organisation from Cognigy.AI. An **Account** can have multiple **Applications** linked.
 
- <figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png" width="100%" />
-</figure>
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png" alt="VoiceGateway WebApp Accounts" />
 
 ## Account Settings
 

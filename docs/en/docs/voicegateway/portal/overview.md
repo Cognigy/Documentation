@@ -1,6 +1,6 @@
 ---
- title: "VoiceGateway WebApp" 
- slug: "vg-webapp" 
+ title: "Overview" 
+ slug: "vg-webapp-overview" 
  hidden: false 
 ---
 
@@ -12,9 +12,7 @@ The **Cognigy VoiceGateway WebApp** is where all the standard configuration and 
 
 <div class="divider"></div>
 
- <figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" width="100%" />
-</figure>
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" alt="VoiceGateway WebApp Overview" />
 
 The Web App is divided into following sub-pages:
 
