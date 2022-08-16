@@ -366,7 +366,7 @@ nav:
     - Accounts:
       - voicegateway/webapp/accounts.md
     - Applications:
-     - voicegateway/webapp/applications.md
+      - voicegateway/webapp/applications.md
     - Recent Calls:
       - voicegateway/webapp/recent-calls.md
     - Alerts:
