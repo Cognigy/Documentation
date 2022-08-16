@@ -354,12 +354,13 @@ nav:
   - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
-  - Installation & Configuration:
-    - voicegateway/installation/overview.md
-    - Browser Requirements:
-      - voicegateway/installation/browser-requirements.md
-    - Deployment:
-      - voicegateway/installation/installation-process.md
+  # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
+  # - Installation & Configuration:
+  #   - voicegateway/installation/overview.md
+  #   - Browser Requirements:
+  #     - voicegateway/installation/browser-requirements.md
+  #   - Deployment:
+  #     - voicegateway/installation/installation-process.md
   - Web App:
     - voicegateway/webapp/overview.md
     - Accounts:

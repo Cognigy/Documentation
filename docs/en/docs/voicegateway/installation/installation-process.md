@@ -12,7 +12,7 @@ To install VoiceGateway please perform following steps:
 
 <!---
 TODO: Update the VoiceGateway Helm Chart links (main page and readme) with the public GitHub Helm Chart repository once we have it.
-TODO: VoiceGateway Helm Chart contains the installation guide and it is still on progress, remove this when the final version is commited.
+TODO: VoiceGateway Helm Chart is being refactored and only when is done the above comment will be fulfilled.
 -->
 
 1. Install VoiceGateway with [VoiceGateway Helm Chart](https://cognigy.visualstudio.com/VoiceGateway/_git/voicegateway-app). For up-to-date installation instructions refer to [README.md](https://cognigy.visualstudio.com/VoiceGateway/_git/voicegateway-app?path=/README.md)
