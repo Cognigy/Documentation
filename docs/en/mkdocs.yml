@@ -352,6 +352,8 @@ nav:
   - live-agent/FAQs.md
 - VoiceGateway:
   - voicegateway/overview.md
+  - Overview:
+    - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
