@@ -82,4 +82,4 @@ Find out about the generic endpoint settings available with this endpoint on the
     To link a **Voice Gateway** **Endpoint** to a phone number, please contact your **Cognigy** representative in order to provision and configure a VG instance.
 
 ???+ warning "AudioCodes VoiceAI Connect"
-    Cognigy VG is 100% compatible with [AudioCodes VoiceAI Connext](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
+    Cognigy VG is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
