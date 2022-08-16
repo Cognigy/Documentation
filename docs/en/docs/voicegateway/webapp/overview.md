@@ -12,7 +12,7 @@ The **Cognigy VoiceGateway WebApp** is where all the standard configuration and 
 
 <div class="divider"></div>
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" alt="VoiceGateway WebApp Overview" />
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" alt="VoiceGateway WebApp Overview" width="35%"/>
 
 The Web App is divided into following sub-pages:
 
