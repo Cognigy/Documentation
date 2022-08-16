@@ -55,11 +55,11 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 Barge In enables the interruption of the bot.
 
-| Parameter              | Type   | Description                                                                                 |
-| ---------------------- | ------ | ------------------------------------------------------------------------------------------- |
-| Barge In On Speech     | Toggle | Select the desired STT Vendor                                                               |
-| Barge In On DTMF       | Toggle | Defines the language that should be recognized. DTMF collection must be activated for this. |
-| Barge In Minimum Words | Slider | Array of words or phrases to assist speech detection                                        |
+| Parameter              | Type   | Description                                                                                                |
+| ---------------------- | ------ | ---------------------------------------------------------------------------------------------------------- |
+| Barge In On Speech     | Toggle | Select the desired STT Vendor                                                                              |
+| Barge In On DTMF       | Toggle | Defines the language that should be recognized. DTMF collection must be activated for this                 |
+| Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge in |
 
 **User Input Timeout**
 
