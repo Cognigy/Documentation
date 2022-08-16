@@ -1,16 +1,12 @@
 ---
- title: "Getting Started with VoiceGateway" 
+ title: "Getting Started" 
  slug: "vg-getting-started" 
  hidden: false 
 ---
 
 # Getting Started with VoiceGateway
 
- <figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-logo.png" width="100%" />
-</figure>
-
-# Getting Started with VoiceGateway
+<img src="{{config.site_url}}voicegateway/images/VG-logo.png" width="VoiceGateway Logo" />
 
 ## How to Set Up VoiceGateway?
 
@@ -34,30 +30,24 @@ If there is a VoiceGateway channel-specific configuration, this configuration wi
 
 For voice specific actions you can use the [VoiceGateway Flow Nodes]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/).
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png" width="100%" />
-</figure>
+<img src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png" width="VoiceGateway Nodes Overview" />
 
 ## Which Endpoint to create in Cognigy.AI?
 
 In order to do enable voice-based experiences with your Virtual Agent create your [VoiceGateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vgv2/) in Cognigy.AI. To do this, navigate to your Agent, open the _Deploy_ submenu in the resources panel on the left side of the screen and select “Endpoints”. To add the VoiceGateway Endpoint, simply click the _+ New Endpoint_ button from the top of the screen. After you have created your Endpoint you can point it to your voice flow.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
-</figure>
+<img src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="VoiceGateway New Endpoint" />
 
 ## How to route your Endpoint and Contact Center or Phone Number to VoiceGateway?
 
 In order to route your Contact Center or Phone Number to your VoiceGateway Endpoint you need to go to the **VoiceGateway Web App**. For this step your VoiceGateway Endpoint URL is needed. This URL can be found in your Endpoint settings.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-endpoint-url.png" width="100%" />
-</figure>
+<img src="{{config.site_url}}voicegateway/images/VG-endpoint-url.png" width="VoiceGateway Endpoint URL" />
 
 Head over to our VoiceGateway Web App documentation to find all the detailed information about the necessary steps.
 
 - [**VoiceGateway Web App Documentation**]({{config.site_url}}voicegateway/webapp/overview/)
 
 ???+ warning "Rebranding of Voice Gateway with AudioCodes"
-With the native Cognigy VoiceGateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
-This applies to the Flow Nodes and the Endpoint.
+    With the native Cognigy VoiceGateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
+    This applies to the Flow Nodes and the Endpoint.
