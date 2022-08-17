@@ -112,7 +112,7 @@ The Datepicker can be configured to exclude (or include) specific dates. This is
 #### Enable specific dates
 This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. In addition you can define a function that is used to enable dates - for example only weekdays.
 
-Disable dates by function - example:
+Enable dates by function - example:
 ```ts
 (date: Date): boolean => {
     /* The function takes in a Date object, and should return a boolean value.
