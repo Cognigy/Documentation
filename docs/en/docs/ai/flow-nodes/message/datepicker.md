@@ -110,10 +110,35 @@ The Datepicker can be configured to exclude (or include) specific dates. This is
 </figure>
 
 #### Enable specific dates
-This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. 
+This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. In addition you can define a function that is used to enable dates - for example only weekdays.
+
+Disable dates by function - example:
+```ts
+(date: Date): boolean => {
+    /* The function takes in a Date object, and should return a boolean value.
+    * If the function returns true, the date will be enabled.
+    * Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6	 
+    */ 	
+    // This will enable Monday to Friday
+    return (date.getDay() > 0 && date.getDay() < 6);
+};
+```
 
 #### Disable specific dates
-This setting allows you to enter a range of dates that should be disabled. If configured, all other dates will automatically be enabled. 
+This setting allows you to enter a range of dates that should be disabled. If configured, all other dates will automatically be enabled. In addition you can define a function that is used to disable dates - for example every saturday and sunday.
+
+Disable dates by function - example:
+```ts
+(date: Date): boolean => {
+    /* The function takes in a Date object, and should return a boolean value.
+    * If the function returns true, the date will be disabled.
+    * Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6	 
+    */ 	
+    // This will disable every Sunday and Saturday
+    return (date.getDay() === 0 || date.getDay() === 6);
+};
+```
+
 
 ### Advanced Options
 The Datepicker comes with four advanced options:
