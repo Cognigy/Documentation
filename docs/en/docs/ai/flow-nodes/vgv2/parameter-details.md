@@ -46,7 +46,7 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 | ------------------------------- | -------- | ---------------------------------------------------------------------------------- |
 | STT Vendor                      | Dropdown | Select the desired STT Vendor                                                      |
 | STT Language                    | Dropdown | Defines the language that should be recognized                                     |
-| STT Hints                       | Text     | Array of words or phrases to assist speech detection                               |
+| STT Hints                       | Text     | Array of words or phrases to assist speech detection. Note: This requires support from the STT engine |
 | Enable Voice Activity Detection | Toggle   | Delay connection to cloud recognizer until speech is detected                      |
 | VAD Sensitivity                 | Slider   | Detection sensitivity, the lowest value has the highest sensitivity                |
 | Minimal Voice Duration          | Slider   | Milliseconds of speech activity required before connecting to the cloud recognizer |
