@@ -6,10 +6,10 @@
 
 # Voice Gateway Web App - Speech Services
 
-The **Speech Services** pages allows to add multiple Speech Vendors to the VoiceGateway. These Vendors can be added by clicking the '+' on the top right cornern. to the is where all the standard configuration and routing for **VoiceGateway** can be set.
+The **Speech Services** pages allows to add multiple Speech Vendors to the Voice Gateway. These Vendors can be added by clicking the '+' on the top right cornern. to the is where all the standard configuration and routing for **Voice Gateway** can be set.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-add-speech-service.png" alt="VoiceGateway WebApp Add Speech Services" />
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-add-speech-service.png" alt="Voice Gateway WebApp Add Speech Services" />
 
 On the general overview you can see all the added speech services, if they are used for STT and/or TTS services, when the service has been last used and the status.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png" alt="VoiceGateway WebApp Speech Services" />
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png" alt="Voice Gateway WebApp Speech Services" />

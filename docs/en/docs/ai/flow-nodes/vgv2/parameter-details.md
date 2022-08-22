@@ -4,11 +4,11 @@
  hidden: true 
 ---
 
-# VoiceGateway Parameter Details
+# Voice Gateway Parameter Details
 
 <div class="divider"></div>
 
-Cognigy VoiceGateway comes with a large number of configuration settings which can be controlled directly from within your Cognigy Flow. These settings can be applied individually to two scopes:
+Cognigy Voice Gateway comes with a large number of configuration settings which can be controlled directly from within your Cognigy Flow. These settings can be applied individually to two scopes:
 
 **Setting Session Parameters**
 
@@ -20,7 +20,7 @@ Activity parameters can be set per activity/node. If for example barge in is set
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-session-activity-parameters.png" width="80%" />
-  <figcaption>VoiceGateway Session and Activity Parameters</figcaption>
+  <figcaption>Voice Gateway Session and Activity Parameters</figcaption>
 </figure>
 
 ## Overview
@@ -93,10 +93,10 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 | Continuous ASR Digit   | Text   | Defines a special DTMF key, which sends the accumulated recognitions to the flow                       |
 | Continuous ASR Timeout | Number | Defines the number of milliseconds of silence before the accumulated recognitions are send to the flow |
 
-## VoiceGateway Index
+## Voice Gateway Index
 
-- [Cognigy VoiceGateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
-- [VoiceGateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
+- [Cognigy Voice Gateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
+- [Voice Gateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
 - [DTMF Node]({{config.site_url}}ai/flow-nodes/vgv2/dtmf/)
 - [Hang Up Node]({{config.site_url}}ai/flow-nodes/vgv2/hangup/)
 - [Parameter Details]({{config.site_url}}ai/flow-nodes/vgv2/parameter-details/)

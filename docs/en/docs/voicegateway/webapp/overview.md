@@ -4,15 +4,15 @@
  hidden: false 
 ---
 
-# VoiceGateway WebApp
+# Voice Gateway WebApp
 
-The **Cognigy VoiceGateway WebApp** is where all the standard configuration and routing for **VoiceGateway** can be set.
+The **Cognigy Voice Gateway WebApp** is where all the standard configuration and routing for **Voice Gateway** can be set.
 
 ## Overview
 
 <div class="divider"></div>
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" alt="VoiceGateway WebApp Overview" width="35%"/>
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" alt="Voice Gateway WebApp Overview" width="35%"/>
 
 The Web App is divided into following sub-pages:
 
