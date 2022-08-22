@@ -7,7 +7,7 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-play-node.png" width="100%" />
-  <figcaption>VoiceGateway Play Node</figcaption>
+  <figcaption>Voice Gateway Play Node</figcaption>
 </figure>
 
 ## Description
@@ -24,10 +24,10 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 ???+ info "This Node supports Activity Parameters"
     You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vgv2/parameter-details) page.
 
-## VoiceGateway Index
+## Voice Gateway Index
 
-- [Cognigy VoiceGateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
-- [VoiceGateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
+- [Cognigy Voice Gateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
+- [Voice Gateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
 - [DTMF Node]({{config.site_url}}ai/flow-nodes/vgv2/dtmf/)
 - [Hang Up Node]({{config.site_url}}ai/flow-nodes/vgv2/hangup/)
 - [Parameter Details]({{config.site_url}}ai/flow-nodes/vgv2/parameter-details/)

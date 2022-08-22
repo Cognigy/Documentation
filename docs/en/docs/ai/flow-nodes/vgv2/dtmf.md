@@ -7,7 +7,7 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-dtmf-node.png" width="100%" />
-  <figcaption>VoiceGateway DTMF Node</figcaption>
+  <figcaption>Voice Gateway DTMF Node</figcaption>
 </figure>
 
 ## Description
@@ -19,10 +19,10 @@ The DTMF Node will play the DTMF digits to the caller.
 | Digits sequence | Text | Digits sequence to play to the caller |
 | Pause time | Slider | Pause time in ms between the digits |  
 
-## VoiceGateway Index
+## Voice Gateway Index
 
-- [Cognigy VoiceGateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
-- [VoiceGateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
+- [Cognigy Voice Gateway Endpoint Overview ]({{config.site_url}}ai/endpoints/cognigy-vgv2/)
+- [Voice Gateway Nodes Overview]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/)
 - [DTMF Node]({{config.site_url}}ai/flow-nodes/vgv2/dtmf/)
 - [Hang Up Node]({{config.site_url}}ai/flow-nodes/vgv2/hangup/)
 - [Parameter Details]({{config.site_url}}ai/flow-nodes/vgv2/parameter-details/)

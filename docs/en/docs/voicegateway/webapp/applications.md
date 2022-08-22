@@ -8,15 +8,15 @@
 
 The **Applications** overview will give a quick look on all created Applications for your **Account**.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-applications-overview.png" alt="VoiceGateway WebApp Applications" />
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-applications-overview.png" alt="Voice Gateway WebApp Applications" />
 
 ## Overview
 
 <div class="divider"></div>
 
-An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the VoiceGateway Web App the Endpoint is being routed to VoiceGateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI.
+An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the Voice Gateway Web App the Endpoint is being routed to Voice Gateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI.
 
-<img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-applications-new-app.png" width="VoiceGateway WebApp Applications New Application" />
+<img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-applications-new-app.png" width="Voice Gateway WebApp Applications New Application" />
 
 | Settings                 | Description                                                                          |
 | ------------------------ | ------------------------------------------------------------------------------------ |

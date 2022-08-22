@@ -1,10 +1,10 @@
 ---
- title: "Cognigy VoiceGateway" 
- slug: "cognigy-voicegateway" 
+ title: "Cognigy Voice Gateway" 
+ slug: "cognigy-voice-gateway" 
  hidden: true 
 ---
 
-# Cognigy VoiceGateway
+# Cognigy Voice Gateway
 
 ## Overview
 
@@ -14,9 +14,9 @@
 
 Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **VoiceGateway**, allowing customers to speak with your **Agent** instead of just writing to it.
 
-## VoiceGateway Specific Nodes
+## Voice Gateway Specific Nodes
 
-Cognigy.AI comes with built in Nodes to control VoiceGateway. See [VoiceGateway Nodes]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/) for more information.
+Cognigy.AI comes with built in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/) for more information.
 
 ## Generic Endpoint Settings
 
@@ -33,7 +33,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 
 ## Call Metadata
 
-Cognigy VoiceGateway identifies important information about the call from the SIP INVITE and makes it available to the bot during the session.
+Cognigy Voice Gateway identifies important information about the call from the SIP INVITE and makes it available to the bot during the session.
 
 | Parameter | Type   | Description                                                     | Example           |
 | --------- | ------ | --------------------------------------------------------------- | ----------------- |
@@ -55,7 +55,7 @@ Cognigy VoiceGateway identifies important information about the call from the SI
 ```
 
 ???+ info "Contact Center & Phone number linking"
-In order to route your Contact Center or Phone Number to your VoiceGateway Endpoint you need to go to the **VoiceGateway Web App**. Head over to our [**VoiceGateway Web App Documentation**]({{config.site_url}}voicegateway/webapp/overview/) to find all the detailed information about the necessary steps in the Web App.
+In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint you need to go to the **Voice Gateway Web App**. Head over to our [**Voice Gateway Web App Documentation**]({{config.site_url}}voicegateway/webapp/overview/) to find all the detailed information about the necessary steps in the Web App.
 
 ???+ warning "Rebranding of Voice Gateway with AudioCodes"
 With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.

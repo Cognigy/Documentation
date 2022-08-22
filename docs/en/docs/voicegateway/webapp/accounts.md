@@ -4,11 +4,11 @@
  hidden: false 
 ---
 
-# VoiceGateway Web App - Accounts
+# Voice Gateway Web App - Accounts
 
-The _Home_ page of the Web App shows your **VoiceGateway Account**. This represents your Organisation from Cognigy.AI. An **Account** can have multiple **Applications** linked.
+The _Home_ page of the Web App shows your **Voice Gateway Account**. This represents your Organisation from Cognigy.AI. An **Account** can have multiple **Applications** linked.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png" alt="VoiceGateway WebApp Accounts" />
+<img src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png" alt="Voice Gateway WebApp Accounts" />
 
 ## Account Settings
 
