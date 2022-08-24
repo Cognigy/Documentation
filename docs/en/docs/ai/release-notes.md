@@ -5,8 +5,37 @@
 ---
 # Release notes
 
-## 4.32.0
+## 4.33.0
 **This version is currently in pre-release and will be released soon**
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Features
+- Added the feature to be able to use the intent model of a fallback locale
+
+### Improvements
+- Improved the Suggested Reply card of the Agent Assist Card flow node
+- Verify the integrity of translation strings
+- Improved by keeping the Agent NLU Settings section as collapsed by default
+- Improved by refining the order of settings in Interaction Panel
+- Improved by adding missing events to the Interfaces and Endpoints
+- Display Adaptive cards in Transcripts in Contact profiles and Insights
+
+### Bugfixes
+- Fixed a bug where the input object contained the wrong nlu properties. This happened when an intent-confirmation-answer triggered a new intent instead.ticket: #28918)
+- Add traceId to readConversationRpc
+- Remove logging on product logs page for "user-connected" and "user-disconnected" events in the endpoint
+
+## 4.32.1
+**Released** August 24th, 2022
+
+### Bugfixes
+- Fixed a bug where merging a package was deleting NLU models
+
+## 4.32.0
+**Released** August 17th, 2022
 
 **Important announcement**:
 
@@ -18,7 +47,6 @@ With release v4.30.0 we have officially marked our [kubernetes](https://github.c
 - Improved by adjusting the agent assist flow node
 - Improved by making the conversation counter timezone aware
 - Improved the error message when executing a Flow Node failed
-- Improved by adding visual indicator on chart nodes that have an analytics step
 
 ### Bugfixes
 - Fixed a bug where the Salesforce Handover Integration doesn't provide the full conversation history
