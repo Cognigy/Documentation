@@ -24,7 +24,7 @@ With release v4.30.0 we have officially marked our [kubernetes](https://github.c
 - Display Adaptive cards in Transcripts in Contact profiles and Insights
 
 ### Bugfixes
-- Fixed a bug where the input object contained the wrong nlu properties. This happened when an intent-confirmation-answer triggered a new intent instead.ticket: #28918)
+- Fixed a bug where the input object contained the wrong nlu properties. This happened when an intent-confirmation-answer triggered a new intent instead
 - Add traceId to readConversationRpc
 - Remove logging on product logs page for "user-connected" and "user-disconnected" events in the endpoint
 
