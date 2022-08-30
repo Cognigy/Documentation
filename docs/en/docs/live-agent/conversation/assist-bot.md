@@ -13,7 +13,7 @@
 The Assist Bot is the tool for assisting the agents while talking to the customers. It consists of a dedicated flow to provide information to the agent. Therefore, it needs to be configured as a separate flow in Cognigy.AI.
 
 
-## Creating an assist bot
+## Creating an Assist Bot
 
 ### 1. Create a new WebChat endpoint
 
