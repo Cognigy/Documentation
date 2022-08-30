@@ -15,7 +15,7 @@ The Assist Bot is the tool for assisting the agents while talking to the custome
 
 ## Creating an Assist Bot
 
-### 1. Create a new WebChat endpoint
+### 1. Create a new WebChat Endpoint
 
 A new WebChat endpoint needs to be created for learning about how to create endpoints head over to [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). Once the endpoint is created, it is time to copy the endpoint URL from its settings.
 
