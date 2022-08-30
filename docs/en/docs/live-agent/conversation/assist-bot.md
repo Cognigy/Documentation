@@ -26,7 +26,7 @@ To learn more about how to create endpoints head over to [Endpoints]({{config.si
   <figcaption>Cognigy.AI Endpoint Config URL</figcaption>
 </figure>
 
-### 2. Create an Assist Bot for an inbox
+### 2. Create an Assist Bot for an Inbox
 
 Once the endpoint with the Assist flow is set up, and the URL is copied, it is time to create the Assist Bot in Live Agent. Go to the inbox settings and add a new Assist Bot.
 
