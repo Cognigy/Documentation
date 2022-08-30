@@ -17,7 +17,9 @@ The Assist Bot is the tool for assisting the agents while talking to the custome
 
 ### 1. Create a new WebChat Endpoint
 
-A new WebChat endpoint needs to be created for learning about how to create endpoints head over to [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). Once the endpoint is created, it is time to copy the endpoint URL from its settings.
+A new WebChat endpoint needs to be created.  Once the endpoint is created, it is time to copy the endpoint URL from its settings.
+
+To learn more about how to create endpoints head over to [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). A new WebChat endpoint needs to be created for learning about how to create endpoints head over to [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). Once the endpoint is created, it is time to copy the endpoint URL from its settings.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/ai-endpoint-config-url.png" width="100%" alt="Cognigy.AI Endpoint Config URL" />
