@@ -42,7 +42,7 @@ Click on the "Add Bots" button and fill in the following fields:
 | Name | Assist Bot Name |
 | Endpoint URL | The URL copied from the endpoint settings |
 
-After adding it, it will be available in the "Assist Bot" section of the conversations belonging to the inbox where the Assist Bot was added. It is possible to have multiple Assist Bots in the same inbox and edit them. The changes will be applied instantly.
+The newly added Assist Bot will be available in the "Assist Bot" section of the conversations belonging to the according inbox. It is possible to have multiple Assist Bots in the same inbox and edit them. The changes will be applied instantly.
 
 ### 3. Use the Assist Bot in a conversation
 
