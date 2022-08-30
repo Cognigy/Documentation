@@ -30,7 +30,7 @@ To assign an Agent or admin to a Conversation, an admin/Agent can select the ass
 
 Live Agent provides a round-robin auto-assignment system for Conversations. The assignment follows the logic mentioned below.
 
->**Note:** Round robin assignment is enabled by default.
+>**Note:** Round-robin assignment is enabled by default.
 
 - If there are Agents online who have access to the Inbox in which a Conversation is created, the system would distribute the Conversations equally among the online Agents.
 - If all the Agents are offline, the system would distribute the Conversations equally to all Agents.

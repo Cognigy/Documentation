@@ -1,6 +1,6 @@
 ---
- title: "Conversation Assist Bot"
- slug: "conversation-assist-bot" 
+ title: "Agent Assist Bot"
+ slug: "agent-assist-bot" 
  hidden: false 
 ---
 # Assist Bot
@@ -44,7 +44,7 @@ Click on the "Add Bots" button and fill in the following fields:
 
 The newly added Assist Bot will be available in the "Assist Bot" section of the conversations belonging to the according inbox. It is possible to have multiple Assist Bots in the same inbox and edit them. The changes will be applied instantly.
 
-### 3. Use the Assist Bot in a conversation
+### 3. Use the Assist Bot in a Conversation
 
 When the conversation inbox configures Assist Bot, they can be selected under the Conversation Information section in the right-hand sidebar. There is a tab called "Assist", and then the Assist Bots can be set via the dropdown to chat with them.
 
