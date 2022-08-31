@@ -25,7 +25,7 @@ More information regarding "NLU" and "Intents" you will find here: [NLU Overview
   <img class="image-center" src="{{config.site_url}}insights/images/84b1a53-NLU_Performance_dashboard_03.svg" width="100%" />
   <figcaption>NLU Performance dashboard details</figcaption>
 </figure>
-
+<div id="nlu-1"></div>
 |Graph title|	Description|
 |--|--|
 |Understood messages|	This percentage value, displayed as a report arranged in a tile, relates to the evaluated messages and is helpful to improve your agent in natural language understanding.<br>Clicking on the three dots menu item you can select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to the Intent Trainer in Cognigy.AI to improve your Agent.|
@@ -44,7 +44,7 @@ More information regarding "NLU" and "Intents" you will find here: [NLU Overview
   <img class="image-center" src="{{config.site_url}}insights/images/67dfbbf-Dashboard_NLU_Performance_3.svg" width="100%" />
   <figcaption>NLU Performance dashboard details - 2</figcaption>
 </figure>
-
+<div id="nlu-2"></div>
 |Graph title|	Description|
 |--|--|
 |Top Intents|	The highest-rated numbers of found intents are displayed in a bar chart (the x-axis is scaled in thousands).<br>More information about Intents you will find here: [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)|
