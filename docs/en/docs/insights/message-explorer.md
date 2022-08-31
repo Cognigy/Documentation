@@ -35,12 +35,12 @@ Using the **"Negate "** slider bar "all but the selected" filter option(s) will 
     **Every change in filter settings needs to be confirmed with “Apply” to be active.**
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/e347fe0-Message_Explorer_n6.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/e347fe0-Message_Explorer_n6.png" width="100%" />
   <figcaption>Message Explorer filtered with local filter option and "Negated" user messages</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/992882f-Message_Explorer_n7.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/992882f-Message_Explorer_n7.png" width="100%" />
   <figcaption>Message Explorer displays messages based on the selected local filter options</figcaption>
 </figure>
 

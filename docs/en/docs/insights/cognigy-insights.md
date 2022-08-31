@@ -45,7 +45,7 @@ With Cognigy.AI 4.10.0 we improved our capabilities to create metrics to have cu
 When switching from Cognigy.AI to Cognigy Insights you will be redirected to the Insights **Dashboard** section, starting on the "Overview" dashboard.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/91b658b-Dashboard_Overview_2.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/39bce30-Dashboard_Overview_1.png" width="100%" />
   <figcaption>Insights Overview dashboard</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ Cognigy Insights comes with so-called global filters. These filters will be visi
 - To open the global filter menu click on the filter icon next to the user menu icon on the top right-hand side of the UI.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/24424ad-Dashboard_Overview_1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/39bce30-Dashboard_Overview_1.png" width="100%" />
   <figcaption>The global filter menu is open</figcaption>
 </figure>
 

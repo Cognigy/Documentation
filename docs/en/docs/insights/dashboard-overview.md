@@ -10,7 +10,7 @@
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/39bce30-Dashboard_Overview_1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/39bce30-Dashboard_Overview_1.png" width="100%" />
   <figcaption>Overview dashboard</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |Conversations|	A line chart displays the number of conversations on a timescale.|
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/81da91e-Dashboard_Overview_5.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/81da91e-Dashboard_Overview_5.png" width="100%" />
   <figcaption>Overview dashboard - 2</figcaption>
 </figure>
 <div id="overview-charts"></div>
