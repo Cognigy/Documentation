@@ -6,7 +6,7 @@
 # Release notes
 
 ## 4.33.0
-**This version is currently in pre-release and will be released soon**
+**Released** September 2nd, 2022
 
 **Important announcement**:
 

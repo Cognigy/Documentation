@@ -1,7 +1,26 @@
 # Cognigy Live Agent
 
+## 4.33.0
+**Released** September 2nd, 2022
+
+## Features
+
+- Improved by adding the possibility to Auto Set Away agents from the account settings
+- Improved by adding an option to set max conversation limit in account settings. This limit gates any new assignment of conversations (via bulk assign, manual single assign or auto-assign/auto-reassign) if an agent has already reached the conversation limit. As part of this, the conversation action section was reworked to include an "unassign" action for teams
+- Improved by adding the ability to clear the conversation chat history with a new delete button
+- Improved by adding the ability to remove the account conversations automatically after resolving them. Enabling this option under the account settings will remove the already resolved
+
+### Improvements
+
+- Improved by adding a coherent information message when data for reports is insufficient
+- Improved by changing the availability colors for online, busy, away, and offline statuses to better recognised
+
+## Bugfixes
+
+- Fixed a bug where conversations were not filtering correctly when the cognigy channel type was a camel-case string (e.g. filters for microsoftTeams were returning no results, while filters for "alexa" were working)
+
 ## 4.32.0
-**This version is currently in pre-release and will be released soon**
+**Released** August 17th, 2022
 
 ### Improvements
 - Improved by adding the new status "Aborted" to conversations that didn't get a customer response. It is configurable under the Account Settings section
