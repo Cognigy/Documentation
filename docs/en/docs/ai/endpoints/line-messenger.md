@@ -15,7 +15,7 @@ Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources
 
 <div class="divider"></div>
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
@@ -49,6 +49,11 @@ This value is the Line **Channel Secret** which is associated to a channel acces
 ???+ info "Help Center"
     More detailed information on how to set up a **Line Messenger** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
 
+
+???+ warning "Configuration of Line messages"
+    Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Please review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
+
 ## More information 
 
-- [Help Center: Line Deployment](https://support.cognigy.com/hc/en-us/articles/360016222819)
+- [Line Messenger: Deployment](https://support.cognigy.com/hc/en-us/articles/360016222819)
+- [Line Messenger: Message types and payload examples](https://support.cognigy.com/hc/en-us/articles/5721825020444)
