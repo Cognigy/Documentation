@@ -15,7 +15,7 @@ Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources
 
 <div class="divider"></div>
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
 - [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
