@@ -5,6 +5,20 @@
 ---
 # Release notes
 
+## 4.33.1
+**Released** September 7th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Improvements
+- Improved by storing response data from Salesforce into the Input object after starting a Handover
+
+### Bugfixes
+- Fixed a bug where the ChatRequestFailed event from Salesforce would cause the Handover status to be set to "completed" instead of "error"
+- Fixed a bug where context updates during agentInject where lost when the Handover was finished
+
 ## 4.33.0
 **Released** September 2nd, 2022
 
