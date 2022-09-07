@@ -22,6 +22,8 @@ A variety of pre-built Extensions can be installed with a single click from the 
 - You can search for Extensions using the "Search field".
 - You can uninstall installed Extensions.
 
+You may also browse available Marketplace Extensions online at the [Cognigy.AI Marketplace](https://www.cognigy.com/marketplace#/).
+
 ## Developing a custom Extension
 <div class="divider"></div>
 
