@@ -34,7 +34,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 |Minimum HTTP text body (used in CSV) |100 kB |||
 |Maximum text encoded (raw) payload size for request to our RESTful API (e.g. used to upload CSV files) |2 MB |||
 |**NLU** |||
-|Maximum number of Example Sentences per Intent in Flows |2000 |||
+|Maximum number of Example Sentences per Intent in Flows |200 |||
 |Maximum total number of Example Sentences in Flows including Attached Flow Example Sentences |10,000 |**15,000**||
 |Maximum total number of Intents in Flows including Attached Flow Intents |2,500 |**10,000**||
 |Maximum time an Intent-Training task is allowed to run |10 m |||
