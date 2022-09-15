@@ -1,5 +1,18 @@
 # Cognigy Live Agent
 
+## 4.34.0
+**Released** September 13th, 2022
+
+### Improvements
+
+- Improved by switching the Live Agent wording for the conversation status from "Aborted" to "Abandoned"
+- Improved by adding status colours for notifications shown while actions are performed, such as updating settings or assigning conversations
+
+## Bugfixes
+
+- Fixed a bug where the reports number are inconsistent depending on the Live Agent client timezone and date range applied
+- Fixed a bug where the agent's name was cut off in the Reports Overview
+
 ## 4.33.0
 **Released** September 2nd, 2022
 

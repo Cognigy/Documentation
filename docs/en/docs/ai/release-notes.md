@@ -5,6 +5,27 @@
 ---
 # Release notes
 
+## 4.34.0
+**Released** September 13th, 2022
+
+### Features
+#### French user interface
+This release of Cognigy.AI adds French as a new language in our Cognigy.AI user interface
+
+### Improvements
+- Improved by adding white background to all lists
+- Improved the datepicker in a question node by adding the possibility to provide a function to enable or disable dates
+- Improved by replacing pickle storage format of Intent models with mixed plain text / byte file hierarchy
+- Forward whisper and live agent assist messages to Live Agent using a dedicated channel
+- Add support for forwardable whisper and live agent assist messages in third-party endpoints
+- Create a new Webchat release 2.42.0
+
+### Bugfixes
+- Fixed a bug where the "index logs" API which is also used by our logs page would not properly work when using filters
+- Fixed a bug where "an dem 18.6." was not recognized as a date in German
+- Fixed a bug where some invalid fields in audio preview settings did not allow updating the agent settings
+- Fixed a bug where merging a package was deleting NLU models
+
 ## 4.33.1
 **Released** September 7th, 2022
 

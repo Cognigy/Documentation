@@ -5,6 +5,13 @@
 ---
 # Release notes
 
+## 4.34.0
+**Released** September 13th, 2022
+
+### Bugfixes
+- Fixed an issue where data in our ODATA analytics feed was double JSON stringified
+- Fix date range filtering option
+
 ## 4.33.0
 **Released** September 2nd, 2022
 
