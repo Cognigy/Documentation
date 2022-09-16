@@ -29,6 +29,11 @@ The Organisation Details interface offers a platform analytics overview for agen
 ???+ info "Organisation Details"
     Please refer to [**Organisation Details**]({{config.site_url}}ai/tools/user-menu/organisation-details/) for more information.
 
+### Audit Events
+The Audit Events interface offers a user interface that allows Flow creators with Admin role to see what actions other Flow creators from the team are doing. 
+
+???+ info "Audit Events"
+    Please refer to [**Audit Events**]({{config.site_url}}ai/tools/user-menu/audit-events/) for more information.
 
 ### Documentation
 This option refers to the **documentation that you are currently browsing**.
