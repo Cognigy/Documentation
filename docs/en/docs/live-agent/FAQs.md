@@ -59,6 +59,9 @@ A quick way is to select an inbox on the dashboard screen. The URL will look lik
 
 The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**
 
+### Can a TTL be set for attachments contained in messages?
+Yes, a TTL for attachments contained in messages per account can be defined under the [Account Settings]({{config.site_url}}live-agent/account-settings/#attachment-ttl).
+
 ### Is antivirus file upload scanning enabled for App and Trial environments?
 The antivirus file upload scanning needs to be configured at the infrastructure level, and it is not enabled for the Trial and App instances at the moment.
 Head over to [File Upload Antivirus Scan Helm Values]({{config.site_url}}live-agent/installation/helm-values/helm-values/#file-upload-antivirus-scan) for learning how to configure it.
