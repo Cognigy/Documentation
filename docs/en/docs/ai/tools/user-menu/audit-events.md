@@ -75,3 +75,7 @@ Hover over an event item to view the event's chain (series of actions from diffe
 </figure>
 
 Click on an event item to see more details about the event in a technical format (JSON).
+
+#### Copy event details
+
+Click on the 'three' dots button next to the close (X) button to copy the event details.
