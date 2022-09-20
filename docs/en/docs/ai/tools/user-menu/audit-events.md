@@ -38,7 +38,7 @@ Audit events list can be filtered by user email to find all operations that a sp
   <img class="image-center" src="{{config.site_url}}ai/tools/images/filter-by-user-email.png" width="100%" />
 </figure>
 
-Or filtered by type to find a specific event for (e.g. Action):
+Or filtered by type to find a specific event (e.g. Action):
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/filter-by-type.png" width="100%" />
