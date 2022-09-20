@@ -5,40 +5,36 @@
 ---
 # Audit Events
 
-The Audit Events interface permits users (Flow Creators) that have an Admin role to track events on an organizational level. 
+Audit Events interface permits users with admin [role]({{config.site_url}}live-agent/roles) to track events on an organizational level. 
 
 ## Access Audit Events Dashboard
-
-As an **admin user**, you are able to see the **Audit Events** button on the user menu and by clicking on it you access the dashboard. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/audit-events-button.png" width="100%" />
 </figure>
 
-## Audit Events Dashboard
+As an admin user, you are able to see the **Audit Events** button on the user menu and by clicking on it you access the dashboard:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/audit-events-dashboard.png" width="100%" />
 </figure>
 
-The Audit Events Dashboard presents a list of events that happened during the last 30 days.   
-
 ### Audit Events List
 
-The Audit Events list includes six informative columns to describe the event:
+Audit Events list includes all the events that happened during the last 30 days represented by six informative columns to describe each event:
 
-- **Type**: Pre-defined event types: "Action", "Create", "Replace", "Patch", "Delete", "Unathorized".
-- **Action**: Specific column to describe the "Action" type. It has items like "cancelTask", "addRoleToUser", "addProjectMember".
-- **Resource Type**: Type of [resource]({{config.site_url}}ai/resources/agents/agents) which the user performed an operation on. 
+- **Type**: Pre-defined event types (Action, Create, Replace, Patch, Delete, Unathorized).
+- **Action**: Specific column to describe the **Action** type. It has items like "cancelTask", "addRoleToUser", "addProjectMember".
+- **Resource Type**: Type of used [resource]({{config.site_url}}ai/resources/agents/agents) in the event (e.g. Project, Node, Flow, ...etc). 
 - **Timestamp**: Exact time of when the event occurred. 
-- **Project**:  Project id. 
+- **Project**:  Project identification number. 
 - **User E-mail**: Email of user who performed the operation. 
 
 ## Functionality
 
 #### Filter audit events
 
-Audit events list can be filtered by user email to find all operations that a specific user performed:
+Audit events list can be filtered by user email to find all operations that a specific user executed:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/filter-by-user-email.png" width="100%" />
@@ -52,7 +48,7 @@ or by type to find a specific event for (e.g. Action):
 
 #### Sort audit events
 
-By default, the audit events list is sorted by most recent event, 
+By default, the audit events list is sorted by most recent event:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/default-sorting.png" width="100%" />
@@ -62,7 +58,7 @@ and it can be sorted by Type, Timestamp or user E-mail.
 
 #### View user details
 
-Click on the users email to see their profiles for more details.
+Click on users email to see their profiles for more details.
 
 #### Visualize event chain
 
@@ -70,8 +66,12 @@ Click on the users email to see their profiles for more details.
   <img class="image-center" src="{{config.site_url}}ai/tools/images/event-chain.png" width="100%" />
 </figure>
 
-Hover over an event item to view the event's chain (series of actions from different users)
+Hover over an event item to view the event's chain (series of actions from different users).
 
 #### View event details
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/raw-event-details.png" width="100%" />
+</figure>
 
 Click on an event item to see more details about the event in a technical format (JSON).
