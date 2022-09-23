@@ -5,8 +5,25 @@
 ---
 # Release notes
 
+## 4.35.0
+**Released** September 23rd, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Bugfixes
+- Fixed a bug where Step explorer was crashing
+- App crash if Step Explorer API call returns invalid data
+- App crash if the custom theme could not be loaded
+- Transcript Explorer - Channel Filtering
+
 ## 4.34.0
 **Released** September 13th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
 
 ### Bugfixes
 - Fixed an issue where data in our ODATA analytics feed was double JSON stringified

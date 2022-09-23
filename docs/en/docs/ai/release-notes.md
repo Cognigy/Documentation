@@ -5,8 +5,53 @@
 ---
 # Release notes
 
+## 4.35.0
+**Released** September 23rd, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Features
+#### Audit Events dashboard
+This release of Cognigy.AI adds a new Audit Events dashboard. This new dashboard is only usable for users with the "admin" role assigned. The dashboard shows all operations which have manipulated objects in Cognigy.AI such as "create"/"update" & "delete" operations.
+
+#### Attachment Handling for Whatsapp Cloud Endpoint
+This release of Cognigy.AI add support for handling attachments such as video, audio and file-uploads through the Whatsapp Cloud Endpoint.
+
+### Improvements
+- Create a new Webchat release 2.42.1
+- Improved by adding a metric that shows if a service is connected to dependencies such as MongoDB
+- Improved by adjusting the Liveness Probe to align more with industry best practices
+- Improved by adding a startup check for whether NFS is working
+- Improved reconnect handling for RabbitMQ connections
+- Improved reconnect handling for Redis connections
+- Improved by the error message for failures in an Extension
+- Improved by storing response data from Salesforce into the Input object after starting a Handover
+
+### Bugfixes
+- Fixed a bug where RCE handover was not working when the "Forward Only Handover Conversations" toggle is OFF for first time in the chat session (works again on next message) in the handover settings section of the endpoint
+- Fix Line structured content converter issue
+- Fixed a bug where manually triggered intents (cIntents) got no porperty intentLevel in the input object
+- Fixed a bug where uploading intents intents in secondary locales that are localized, would not work
+- Fixed a bug where the Agent Assist Cards would not be sent to LA properly if no Handover Accepted Message was defined in the Handover to Agent Node
+- Fixed a bug where activating a deactivated Profile did not work
+- Fixed a bug where the ChatRequestFailed event from Salesforce would cause the Handover status to be set to "completed" instead of "error"
+- Fixed a bug where context updates during agentInject where lost when the Handover was finished
+- Fixed a bug where intent trainer records would not be stored if the triggered Intent had a Default Reply
+- Fixed security vulnerabilities in the Runtime services for Mongoose
+- Fixed a bug where there could be a possible attack vector on "indexUsers" RESTful API. The API is now restricted to users with admin/userManager/userDetailsViewer global roles or with roles projectAdmin/memberManager in any assigned project
+- Fixed a bug where <speak> tag was mandatory to work with Voice Preview SSML
+- Fixed a bug where traning out of date error badge will not hide immediately after training
+- Fixed a bug where html is not rendered in a standard message in the Interaction panel
+- Fixed a bug where index trainer records timed out
+
 ## 4.34.0
 **Released** September 13th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
 
 ### Features
 #### French user interface

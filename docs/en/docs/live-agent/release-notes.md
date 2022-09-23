@@ -1,5 +1,17 @@
 # Cognigy Live Agent
 
+## 4.35.0
+**Released** September 23rd, 2022
+
+### Improvements
+
+- Removed OAuth popup window on login. The entire login experience should now take place in the same window
+
+### Bugfixes
+
+- Fixed a bug where the conversations tab counters (me, unassigned, total) are sometimes incorrect
+- Fixed a bug where mentions were not being removed when clearing chat history
+
 ## 4.34.0
 **Released** September 13th, 2022
 
