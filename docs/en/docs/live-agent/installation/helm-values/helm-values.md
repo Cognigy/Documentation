@@ -113,7 +113,7 @@ These are the values used for enabling the Cognigy authentication in Live Agent.
 | Name                                | Description                                                                | Default Value                                       |
 | ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `configmap.COGNIGY_OAUTH_CLIENT_ID`     | OAuth Client ID                 | `"cognigy-live-agent"`                                                                     |
-| `configmap.COGNIGY_OAUTH_SITE`          | Cognigy API Site                | `"https://api-installation.cognigy.ai"`                                                    |
+| `configmap.COGNIGY_OAUTH_SITE`          | Cognigy API Site                | `"https://api-installation.cognigy.ai"/v2.0`                                                    |
 | `configmap.COGNIGY_OAUTH_AUTHORIZE_URL` | Cognigy OAuth API Authorize URL | `"https://installation.cognigy.ai/login?cognigy-live-agent=true"`                          |
 | `configmap.COGNIGY_OAUTH_TOKEN_URL`     | OAuth Token URL                 | `"https://api-installation.cognigy.ai/auth/oauth2/token"`                                  |
 
