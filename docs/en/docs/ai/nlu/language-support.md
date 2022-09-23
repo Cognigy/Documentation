@@ -10,7 +10,7 @@
 
 Cognigy.AI's on-board NLU is pre-trained with curated data from over 100 languages to support intent recognition and keyphrase detection. Any other natural (or artificial) language is supported based on language-agnostic NLU algorithms.
  
-For 23 of the most common languages, Cognigy.AI provides prebuilt entities that allow automatic processing of inputs like dates, currencies and others specific to a language that is defined in the Flow.
+For 28 of the most common languages, Cognigy.AI provides prebuilt entities that allow automatic processing of inputs like dates, currencies and others specific to a language that is defined in the Flow.
 
 * Universal (see below)
 * Arabic
