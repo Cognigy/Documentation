@@ -30,7 +30,7 @@ enter your credentials.
 
 You can use the Voice Preview from 3 different places:
 
-1 - With the hotKey **Ctrl + Alt + p** or **Command + Option + p**.
+1 - With the hotkey **Ctrl + Alt + p** or **Command + Option + p**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-panel.png" width="100%" />
