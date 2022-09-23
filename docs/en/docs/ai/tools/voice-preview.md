@@ -6,8 +6,6 @@
 
 # Voice Preview
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.33.0-blue.svg)]({{config.site_url}})
-
 The Voice Preview feature allows users to quickly test how voice output sounds without having to execute the whole flow with a mock call.
 
 It supports the cloud SST/TTS from the providers Google, Microsoft and Amazon AWS.
