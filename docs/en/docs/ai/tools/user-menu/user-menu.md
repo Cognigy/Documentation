@@ -8,7 +8,7 @@
 The User Menu provides access to a set of views that are related to the user that is logged-in.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/14a9c7c-usermenu.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/new-user-menu.png" width="100%" />
 </figure>
 
 ### My Profile
@@ -29,6 +29,14 @@ The Organisation Details interface offers a platform analytics overview for agen
 ???+ info "Organisation Details"
     Please refer to [**Organisation Details**]({{config.site_url}}ai/tools/user-menu/organisation-details/) for more information.
 
+### Audit Events
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.35.0-blue.svg)]({{config.site_url}})
+
+The Audit Events dashboard offers a user interface that allows admin users to see what actions other users from the team are doing. 
+
+???+ info "Audit Events"
+    Please refer to [**Audit Events**]({{config.site_url}}ai/tools/user-menu/audit-events/) for more information.
 
 ### Documentation
 This option refers to the **documentation that you are currently browsing**.
