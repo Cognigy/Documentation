@@ -25,7 +25,6 @@
 <h3>Choose a product:</h3>
 <div class="divider"></div>
 
-
 <div class="card-container">
 
   <a class="card-link" href="{{config.site_url}}ai/platform-overview/">
@@ -55,11 +54,24 @@
     </div>
   </a>
 
+</div>
+
+<div class="card-container">
+
   <a class="card-link" href="{{config.site_url}}live-agent/overview/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
         <h3><b>Live Agent</b></h3>
+      </div>
+    </div>
+  </a>
+
+  <a class="card-link" href="{{config.site_url}}voicegateway/overview/">
+    <div class="card">
+      <img class="card-image" src="{{config.site_url}}assets/img/VG-blue.svg" alt="Cognigy Logo">
+      <div class="item-container">
+        <h3><b>Voice Gateway</b></h3>
       </div>
     </div>
   </a>
