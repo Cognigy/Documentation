@@ -5,6 +5,8 @@
 ---
 # Audit Events
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.35.0-blue.svg)]({{config.site_url}})
+
 Audit Events interface permits users with admin [role]({{config.site_url}}live-agent/roles) to track events on an organizational level. 
 
 ### Access Audit Events Dashboard
