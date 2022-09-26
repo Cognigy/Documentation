@@ -5,6 +5,16 @@
 ---
 # Release notes
 
+## 4.35.1
+**Released** September 26th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Bugfixes
+- Fixed a bug where ongoing handover requests would fail for the "Salesforce Handover Provider" due to an imcompatible data-format
+
 ## 4.35.0
 **Released** September 23rd, 2022
 
