@@ -287,6 +287,8 @@ nav:
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
     - ai/installation/reset-init-user-credentials.md
+    - ai/installation/backups.md
+    - ai/installation/kustomize-to-helm-migration.md
   - ai/limitations.md
   - Developer Guides:
     - ai/developer-guides/api-reference.md
