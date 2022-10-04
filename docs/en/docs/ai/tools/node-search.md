@@ -85,3 +85,11 @@ Go To Node Editor after searching for the term 'Welcome'
 **Example 5:**
 Say Node Editor Channel tabs with matching fields in 'Default' and 'Google Actions' form, with 'Alexa' as the selected tab 
 <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-say-node-channel-tabs.png" width="100%" />
+
+
+### Search nods have the analytics step
+<div class="divider"></div>
+ For finding nods, have the analyticsStep you can search the specific keyword "has:analyticsStep" with the Node Search field. 
+
+ It highlights all the nodes whose analytics step field is not empty or null.
+ <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-analytics-step.png" width="100%" />
