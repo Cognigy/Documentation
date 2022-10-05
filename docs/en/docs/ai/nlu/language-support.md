@@ -95,7 +95,8 @@ The Universal Language option extends the Cognigy NLU’s compatibility with ove
 * Punjabi
 * Romanian
 * Russian
-* Serbian Sicilian
+* Serbian
+* Sicilian
 * Slovak
 * Slovenian
 * Spanish
