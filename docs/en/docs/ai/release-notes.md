@@ -5,6 +5,36 @@
 ---
 # Release notes
 
+## 4.36.0
+**Released** October 5th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Features
+#### Google Cloud Storage Provider
+This feature of Cognigy.AI adds support for "Google Cloud" as a storage provider for the "File Upload" functionality located in the WhatsApp Cloud Endpoint
+
+### Improvements
+- Improved by making Analytics Step field searchable during Node search & searching Nodes that have an analytics step set searchable 
+- Improved by redesigning the input mode selection in Interaction panel 
+- Improved by adding resource names to the delete confirmation prompts 
+- Improved by changing name of Agent Assist endpoint 
+- Improved by adding indices to collections of service-resources and service-trainer. This improves performance while retrieving intents, feedbackreports, and trainer-records 
+- Improved by redirecting to "Insights Transcript Viewer" when clicking on a conversation item in Cognigy.AI 
+- Displaying of ratings in the conversation history improved, they are now in the correct order
+
+### Bugfixes
+- Fixed bug where timestamps in Live Agent were incorrect. 
+- Fixed bug where implementation of "send transcript as first message" for Salesforce was broken. 
+- Fixed a bug where "1111€." was not recognized as a number, because of the following dot after the euro sign
+- Fixed a bug where lexicon api OpenAPI specifications would show an invalid field 
+- Fixed a bug where we got an error when uploading a package with duplicate lexicon slots 
+- Fixed a bug where logs screen gives a timeout for the basic filtering using type 
+- Fixed a bug where the tooltip description for the Subscription Region under Voice Settings was misleading 
+- Fixed a bug where password reset and change password gives an error, but the actual operation worked.
+
 ## 4.35.1
 **Released** September 26th, 2022
 
