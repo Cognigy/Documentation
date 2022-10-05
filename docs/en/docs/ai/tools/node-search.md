@@ -53,6 +53,7 @@ You can search for the following within the flow nodes:
 | ----------- | ------------------------------------ |
 | Node Label | The actual label displayed on a Node (configurable in its settings) |
 | Node Comment | The optional comment attached to the Node |
+| Node Analytics Step [![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}}) | The Analytics Step displayed on a Node |
 | Node Type  | The type of the Node |
 | Node ID | The unique database ID of the Node (usually not used by users) |
 | Node Reference ID | The ID that is used when referring to a node e.g. as entrypoint for a Go-To Node (this ID can be copied from the secondary menu in the Node editor) |
@@ -60,7 +61,6 @@ You can search for the following within the flow nodes:
 | Code in the Code Editor | Matches the text within a Code Node |
 | Input fields for any Output type / Channel type in Say Node and Question Node | Any type of Output throughout all Channel types is matched. |
 | Custom button labels in Say Node and Question Node | Button labels and values are matched and highlighted |
-| Node Analytics Step [![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}}) | The Analytics Step displayed on a Node |
 | Other relevant input fields in all Node types | Matches relevant field types in all Cognigy and Extension Nodes |
 
 
