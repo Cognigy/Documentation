@@ -14,10 +14,10 @@ With release v4.30.0 we have officially marked our [kubernetes](https://github.c
 
 ### Features
 #### Google Cloud Storage Provider
-This feature of Cognigy.AI adds support for "Google Cloud" as a storage provider for the "File Upload" functionality located in the Whatsapp Cloud Endpoint
+This feature of Cognigy.AI adds support for "Google Cloud" as a storage provider for the "File Upload" functionality located in the WhatsApp Cloud Endpoint
 
 ### Improvements
-- Improved by making Analytics Step field searchable during Node search & Searching nodes that have an analytics step set searchable 
+- Improved by making Analytics Step field searchable during Node search & searching Nodes that have an analytics step set searchable 
 - Improved by redesigning the input mode selection in Interaction panel 
 - Improved by adding resource names to the delete confirmation prompts 
 - Improved by changing name of Agent Assist endpoint 

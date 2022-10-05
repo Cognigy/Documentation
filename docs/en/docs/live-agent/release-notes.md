@@ -1,6 +1,7 @@
 # Cognigy Live Agent
 
 ## 4.36.0
+**Released** October 5th, 2022
 
 ## Features
 
