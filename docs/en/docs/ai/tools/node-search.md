@@ -60,6 +60,7 @@ You can search for the following within the flow nodes:
 | Code in the Code Editor | Matches the text within a Code Node |
 | Input fields for any Output type / Channel type in Say Node and Question Node | Any type of Output throughout all Channel types is matched. |
 | Custom button labels in Say Node and Question Node | Button labels and values are matched and highlighted |
+| Node Analytics Step [![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}}) | The Analytics Step displayed on a Node |
 | Other relevant input fields in all Node types | Matches relevant field types in all Cognigy and Extension Nodes |
 
 
@@ -87,9 +88,12 @@ Say Node Editor Channel tabs with matching fields in 'Default' and 'Google Actio
 <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-say-node-channel-tabs.png" width="100%" />
 
 
-### Search nodes have the analytics step
+### Search nodes with Analytics Step
 <div class="divider"></div>
- For finding nodes that have the analyticsStep, you can search for the specific keyword "has:analyticsStep" with the Node Search field. 
 
- It highlights all the nodes whose analytics step field is not empty or null.
+[![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}})
+
+ For finding nodes that have Analytics Step, you can search for the specific keyword "has:analyticsStep" with the Node Search field. 
+
+ It highlights all the nodes where Analytics Step field is not empty or null.
  <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-analytics-step.png" width="100%" />
