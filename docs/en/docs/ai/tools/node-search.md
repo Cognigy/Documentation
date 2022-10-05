@@ -87,9 +87,9 @@ Say Node Editor Channel tabs with matching fields in 'Default' and 'Google Actio
 <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-say-node-channel-tabs.png" width="100%" />
 
 
-### Search nods have the analytics step
+### Search nodes have the analytics step
 <div class="divider"></div>
- For finding nods, have the analyticsStep you can search the specific keyword "has:analyticsStep" with the Node Search field. 
+ For finding nodes that have the analyticsStep, you can search for the specific keyword "has:analyticsStep" with the Node Search field. 
 
  It highlights all the nodes whose analytics step field is not empty or null.
  <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-analytics-step.png" width="100%" />
