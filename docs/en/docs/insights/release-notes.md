@@ -5,6 +5,28 @@
 ---
 # Release notes
 
+## 4.36.0
+**Released** October 5th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Features
+#### Heatmap as new Report type
+This release of Cognigy Insights adds a "heatmap" as a new report type on the Engangement dashboard visualizing the number of handovers per time-interval
+
+#### Detailed Views for Reports
+This release of Cognigy Insights adds the ability to view more details for each report type. The detailed view either just increases the visual space on which a report will be visualized or even adds additional filtering capabilities and displays a larger value-range 
+
+### Improvements
+- Implementing Dashboard print styles in Google Chrome 
+- Implementing ACL for Insights 
+- Adding the logic for handling rating as input and output 
+
+### Bugfixes
+- Fixed expanded path calculation in Step Explorer 
+
 ## 4.35.0
 **Released** September 23rd, 2022
 

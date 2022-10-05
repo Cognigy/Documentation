@@ -1,5 +1,25 @@
 # Cognigy Live Agent
 
+## 4.36.0
+
+## Features
+
+- Assist bot is the new way to get assistance while chatting with your customers. It is now available on the right-hand side of the conversation. Assist bot endpoints to need to be configured in the Cognigy Live Agent Inbox settings
+
+- Improved by adding a new section under settings called "Attachments", where attachments contained in conversation messages can be reviewed and deleted
+
+- Improved by adding the possibility to automatically delete attachments by specifying a TTL per account. The setting is available under the account settings
+
+- Improved by adding a new feature, called 'Agent Masking'. Enable this feature in account settings in order to have all agent names, email addresses, and images randomized (some agent lists will still be unmasked for administrative purposes - e.g. to see which agents are in the account, add agents to the correct inbox, etc.).
+
+### Improvements
+
+- Improved by renaming the unattended property to queued for the reports page
+
+## Bugfixes
+
+- Improved by removing a bottleneck while retrieving the list of conversations
+
 ## 4.35.0
 **Released** September 23rd, 2022
 
