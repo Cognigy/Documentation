@@ -150,6 +150,18 @@ Should you wish to include an already prepared or "canned" response as a reply, 
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
+###  How to request file upload
+<div class="divider"></div>
+
+There is an option to enable bots to request files from users. From live agent reply box at the bottom you can click on request file upload icon then confirm that you want to send it to the customer. Now the customer should see a button to open a file upload dialog.
+
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
+  <figcaption>Request file upload</figcaption>
+</figure>
+
+More details on the customer side can be found under [File Upload Plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload)
 
 ### Private Chat with Agents
 <div class="divider"></div>
