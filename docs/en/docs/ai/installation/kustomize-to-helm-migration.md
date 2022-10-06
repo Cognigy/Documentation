@@ -14,18 +14,29 @@ ignore_macros: true
 - Helm version 3.8.x
 - Kubernetes cluster meets general Cognigy.AI [prerequisites](https://docs.cognigy.com/ai/installation/prerequisites/#whitelisting-of-domains) **including hardware resources**
 - Backup of Cognigy secrets for kustomize installation (MongoDB and Redis connection strings) exists in a form of kubernetes manifests
-- **Cognigy.AI kustomize installation must be at the same version as Helm**
+- **Cognigy.AI kustomize installation must be at the same version as Cognigy.AI Helm Chart during migration**
+- Cognigy.AI kustomize installation must be >= v4.32
 - Snapshots/Backups of all PVCs/PVs (MongoDB, Redis-Persistent, flow-modules, flow-functions) are made before the migration starts
 
+## Preparation for Migration 
 
-The following guide includes two sections: 
+The following guide includes two sections:
 
-- Single replica MongoDB to Multi replica MongoDB Migration
-- Cognigy.AI Kustomize to Helm migration
+- [Single Replica MongoDB to Multi Replica MongoDB Migration](#single-replica-mongodb-to-multi-replica-mongodb-migration)
+- [Cognigy.AI Kustomize to Helm Migration](#cognigyai-kustomize-to-helm-migration)
 
 Cognigy.AI Helm Chart is not compatible with the legacy single-replica MongoDB installation and is compatible with Cognigy's [MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) only. You can skip the first section if you already have multi-replica MongoDB installed with our MongoDB Helm Chart.
 
+Before starting migration, prepare following steps: 
+
+- make sure backups (snapshots) for all PVCs are created in your Cloud Provider including: MongoDB, redis-persistent, flow-modules, functions
+- make sure a backup of Cognigy secrets for kustomize installation is present
+- (Single replica MongoDB to Multi replica MongoDB Migration only): prepare `values_prod.yaml` values file for MongoDB Helm Chart as described [here](https://github.com/Cognigy/cognigy-mongodb-helm-chart)
+- prepare `values_prod.yaml` values file for Cognigy.AI Helm Chart as described [here](https://github.com/Cognigy/cognigy-ai-helm-chart). **Make sure all adjustments (patches) of the current kustomize installation done form your side are properly migrated to `values_prod.yaml` file!** i.e. ENV variables, resource request/limits, replica counts etc.
+- prepare the script from [Kustomize to Helm Migration](#kustomize-to-helm-migration) section, fill in required password values in advance.
+
 ## Single replica MongoDB to Multi replica MongoDB Migration
+
 The migration process from a single replica to a  multi-replica setup involves several steps. These are described in the following section. In this guide 
 we assume that the "old" MongoDB installation is deployed in `default` namespace and we will install the "new" MongoDB ReplicaSet into the `mongodb` namespace .
 
@@ -136,9 +147,6 @@ kubectl create ns cognigy-ai
 kubectl apply -f migration-secrets
 ```
 
-### Prepare values_prod.yaml file
-Prepare values_prod.yaml values file for the respective cluster as described [here](https://github.com/Cognigy/cognigy-ai-helm-chart). **Make sure all customizations done in the current kustomize installation are properly migrated to `values_prod.yaml` file!**
-
 ### Kustomize to Helm Migration
 
 1. Scale down the current installation:
@@ -148,48 +156,51 @@ do
     kubectl --namespace default scale replicas=0 deployment $i
 done
 ```
-2. Rename the databases. In Cognigy.AI Helm Chart we have renamed `service-analytics-collector-provider` database to `service-analytics-collector` and `service-analytics-conversation-collector-provider` to `service-analytics-conversation`. To rename the databases, execute:
+2. Rename the databases and create new users. In Cognigy.AI Helm Chart we have renamed `service-analytics-collector-provider` database to `service-analytics-collector` and `service-analytics-conversation-collector-provider` to `service-analytics-conversation`. To rename the databases, execute following script, fill in the password values in advance (see the comments inside the script):
 ```bash
 kubectl exec -it -n mongodb mongodb-0 bash
 
-# rename the service-analytics-collector-provider
+# rename the service-analytics-collector-provider, set admin root password in <password>
 mongodump -u admin -p <password> --authenticationDatabase admin --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017" --archive --db=service-analytics-collector-provider | mongorestore -u admin -p <password> --authenticationDatabase admin --archive --nsFrom='service-analytics-collector-provider.*' --nsTo='service-analytics-collector.*'
 
-# rename the service-analytics-conversation-collector-provider
+# rename the service-analytics-conversation-collector-provider, set admin root password in <password>
 mongodump -u admin -p <password> --authenticationDatabase admin --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017" --archive --db=service-analytics-conversation-collector-provider | mongorestore -u admin -p <password> --authenticationDatabase admin --archive --nsFrom='service-analytics-conversation-collector-provider.*' --nsTo='service-analytics-conversation.*'
 
 # Create service-analytics-collector user in service-analytics-collector db
-
+# Get the existing password from `cognigy-service-analytics-collector-provider` secret and put it into <password-service-analytics-collector>:
 mongo -u admin -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
 use service-analytics-collector
 db.createUser({
 	user: "service-analytics-collector",
-	pwd: "<password>",
+	pwd: "<password-service-analytics-collector>",
 	roles: [
 		{ role: "readWrite", db: "service-analytics-collector" }
 	]
 });
-# Make sure that you are using the same password from the `cognigy-service-analytics-collector` secret
 
 # Create service-analytics-conversation user in service-analytics-conversation db
-
+# Get the existing password from `cognigy-service-analytics-conversation-collector-provider` secret and put it into <password-service-analytics-conversation>:
 use service-analytics-conversation
 db.createUser({
 	user: "service-analytics-conversation",
-	pwd: "<password>",
+	pwd: "<password-service-analytics-conversation>",
 	roles: [
 		{ role: "readWrite", db: "service-analytics-conversation" }
 	]
 });
-# Make sure that you are using the same password from the `cognigy-service-analytics-conversation` secret
 
 exit
 exit
 ```
 **Important note: This scripts is compatible with the [cognigy-mongodb-helm-chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) only! 
 If you are using any other MongoDB service (for example, Mongodb Atlas), then you need to find out compatible commands for your setup to rename the databases.**
+3. Migrate the storage. You need to migrate following PVCs from `default` to `cognigy-ai` namespace:
 
-3. Migrate the storage. You need to migrate all the existing PVCs to `cognigy-ai` namespace, but make sure that the PVCs are linked to the existing PVs so that you don't lose any data. **We strongly recommend to do a backup (snapshots) of the existing PVs before**. We are not providing any instruction here as storage provisioning is cloud-specific and the customer needs to ensure proper data migration in accordance with their cloud infrastructure.
+ - `flow-modules`
+ - `functions`
+ - `redis-persistent`
+
+Make sure that the PVCs are linked to the existing PVs so that you don't lose any data. **We strongly recommend to do a backup (snapshots) of the existing PVs before**. We are not providing any instruction here as storage provisioning is cloud-specific and the customer needs to come up with data migration process in accordance with their cloud infrastructure.
 4. Deploy the Helm Chart:
    Refer to original [docs](https://github.com/Cognigy/cognigy-ai-helm-chart) for details
     1. Login into Cognigy Helm Registry (provide your Cognigy Container Registry credentials):
@@ -204,8 +215,53 @@ If you are using any other MongoDB service (for example, Mongodb Atlas), then yo
    ```
 5. OPTIONALLY: In case of any changes, update the DNS records to point to the new LoadBalancer Service. If you're using Traefik Ingress with AWS Classic Load Balancer, change the CNAME of the DNS entries to the new Load Balancer IP/CNAME.
 
-## Clean-up after migration
+## Clean-up
 
-1. Drop service-analytics-collector-provider
-2. Drop service-analytics-conversation-collector-provider
-3. Clean up `default` namespace from the previous deployment with kustomize
+1. Drop old databases in MongoDB (set `MONGODB_ROOT_USER` to `root` or `admin` in accordance with `values_prod.yaml` in MongoDB Helm Chart):
+```bash
+kubectl exec -it -n mongodb mongodb-0 -- bash
+mongo -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
+
+# Drop service-analytics-collector-provider
+use service-analytics-collector-provider
+db.dropDatabase()
+
+# Drop service-analytics-conversation-collector-provider
+use service-analytics-conversation-collector-provider
+db.dropDatabase()
+```
+2. Delete the kustomize deployments running in `default` namespace:
+
+```bash
+for i in $(kubectl get deployment --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')             
+do
+    kubectl --namespace default delete deployment $i
+done
+```
+3. Delete the services in `default` namespace:
+
+```bash
+for i in $(kubectl get service --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep service-)
+do
+    kubectl --namespace default delete service $i
+done
+# delete rabbitmq, redis, redis-persistent and traefik
+kubectl --namespace default delete svc rabbitmq redis redis-persistent traefik
+```
+**Be very careful while deleting service, do not delete the `kubernetes` service**
+
+4. Delete the ingresses in `default` namespace:
+
+```bash
+for i in $(kubectl get ingress --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+do
+    kubectl delete ingress $i --namespace default
+done
+```
+
+
+
+
+
+
+
