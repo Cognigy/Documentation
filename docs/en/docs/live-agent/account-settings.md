@@ -51,6 +51,15 @@ The Auto Set Away option is used to automatically set the agent as away when the
 
 >Note: This does not work if the Live Agent is closed. In this case, the user is set to offline automatically when the browser window is closed.
 
+## Attachment TTL
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-account-settings-attachment-ttl.png" width="100%" alt="Live Agent Account Settings" />
+  <figcaption>Account Settings Attachment TTL</figcaption>
+</figure>
+
+The Attachment TT option automatically deletes the attachments in messages of all the account conversations after a specific time. The time is set in days. It is disabled by default.
+
 ## Auto Resolve
 
 <figure>
