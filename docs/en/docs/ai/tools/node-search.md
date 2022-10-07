@@ -53,6 +53,7 @@ You can search for the following within the flow nodes:
 | ----------- | ------------------------------------ |
 | Node Label | The actual label displayed on a Node (configurable in its settings) |
 | Node Comment | The optional comment attached to the Node |
+| Node Analytics Step [![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}}) | The Analytics Step displayed on a Node |
 | Node Type  | The type of the Node |
 | Node ID | The unique database ID of the Node (usually not used by users) |
 | Node Reference ID | The ID that is used when referring to a node e.g. as entrypoint for a Go-To Node (this ID can be copied from the secondary menu in the Node editor) |
@@ -85,3 +86,14 @@ Go To Node Editor after searching for the term 'Welcome'
 **Example 5:**
 Say Node Editor Channel tabs with matching fields in 'Default' and 'Google Actions' form, with 'Alexa' as the selected tab 
 <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-say-node-channel-tabs.png" width="100%" />
+
+
+### Search nodes with Analytics Step
+<div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}})
+
+ For finding nodes that have Analytics Step, you can search for the specific keyword "has:analyticsStep" with the Node Search field. 
+
+ It highlights all the nodes where Analytics Step field is not empty or null.
+ <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-analytics-step.png" width="100%" />
