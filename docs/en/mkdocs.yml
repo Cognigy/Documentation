@@ -273,6 +273,7 @@ nav:
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
+    # - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/livechat-handover.md
 
   - ai/architecture.md

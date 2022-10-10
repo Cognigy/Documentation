@@ -28,3 +28,4 @@ The following Handover Providers allow integrations with third party products:
 - [**Chatwoot**]({{config.site_url}}ai/handover-providers/chatwoot-handover/)
 - [**RingCentral Engage**]({{config.site_url}}ai/endpoints/ringcentral-engage/)
 - [**Salesforce**]({{config.site_url}}ai/handover-providers/salesforce-handover/) 
+- [**Genesys Cloud**]({{config.site_url}}ai/handover-providers/genesys-cloud/) 
