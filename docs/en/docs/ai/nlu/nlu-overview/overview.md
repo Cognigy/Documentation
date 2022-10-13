@@ -87,17 +87,8 @@ Intents can be configured with a number of advanced options.
 Tags can be used to categorize Intents, which makes it easier to manage them.
 
 #### Condition
-This field can contain a [CognigyScript ]({{config.site_url}}ai/tools/cognigy-script/) condition. The intent will only be found if the condition is true. Please wrap the entire condition in an "exists" operator:
 
-```js
-!!(ci.slots.city[0].keyphrase === "Düsseldorf")
-```
-
-or
-
-```js
-!!( !ci.text.includes("Cognigy"))
-```
+See [Intent Conditions]({{config.site_url}}ai/nlu/nlu-overview/conditions/) for more information on how to enable and disable Intents dynamically with CognigyScript Conditions.
 
 #### Confirmation Sentence
 Cognigy NLU comes with an intent confirmation mechanism that works by configuring Confirmation Sentences in each intent. Whenever an Intent score falls within a (configurable) range - let's say 0,4 - 0,6, the Confirmation Sentence is triggered and shown to the user. If the user confirms the Intent, the Intent will be triggered.
@@ -170,7 +161,7 @@ Lexicons need to be attached to a Flow in order for a Flow to be able to detect 
 ## States
 <div class="divider"></div>
 
-States can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collection
+States can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collections.
 
 ???+ info "States"
     Refer to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) for more information.

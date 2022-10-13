@@ -1,0 +1,45 @@
+---
+ title: "Intent Conditions" 
+ slug: "conditions" 
+ hidden: false 
+---
+# Intent Conditions
+
+Intent Conditions allow you to disable and enable Intents dynamically. The Intent Conditions thus represent a dynamic State defined by the state of [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) Intent Conditions. 
+
+
+## Setting the Intent Condition on an Intent
+Each Intent has a line of CognigyScript code which evaluates to `true` or `false`. The intent will only be found if the condition evaluates to `true`. If no Intent Condition is set the Intent is enabled.
+
+The field is set on each Intent as [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) code.  As a best practice wrap the entire condition in an "exists" operator:
+
+```js
+!!(input.slots.city[0].keyphrase === "Düsseldorf")
+```
+
+or
+
+```js
+!!( !context.topics.includes("Cognigy"))
+```
+
+
+The CognigyScript Condition is evaluated at runtime before the Intent model is scored. 
+
+## Dynamic state
+It can take into account the given `input`, `profile` or `context` values to enable and disable information on information contained in the input text or contact profile.
+
+This distinguishes Conditions from [States]({{config.site_url}}ai/tools/interaction-panel/state/) that use a predefined list of Intents.
+
+## Example
+
+To give an example, a Bank's virtual agents caters to Intents related to credit cards. If the customer does not have a credit card product, however, we would not like say the `CancelCreditCard` Intent to be found and available.
+
+We can enable and disable the Intent based on the customer's `profile`. Let's assume it has a variable `has_credit_card` which stores information on whether the customer has the product or not:
+
+
+```js
+!!(profile.has_credit_card)
+```
+
+As a result, the `CancelCreditCard` intent will only be taken into account by the machine learning model and triggered for customers who actually have a credit card which could possibly need cancelling.
