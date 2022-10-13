@@ -26,10 +26,10 @@ or
 
 The CognigyScript Condition is evaluated at runtime before the Intent model is scored. 
 
-## Dynamic state
 It can take into account the given `input`, `profile` or `context` values to enable and disable information on information contained in the input text or contact profile.
 
-This distinguishes Conditions from [States]({{config.site_url}}ai/tools/interaction-panel/state/) that use a predefined list of Intents.
+## States vs Conditions
+Note [States]({{config.site_url}}ai/tools/interaction-panel/state/) use predefined list of Intents that are enabled/disabled based on the `input.state` variable which can of course also be set dynamically. This offer ease of use when you want to disable a large number of Intents at once.
 
 ## Example
 
