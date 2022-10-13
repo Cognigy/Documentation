@@ -33,9 +33,9 @@ Note [States]({{config.site_url}}ai/tools/interaction-panel/state/) use predefin
 
 ## Example
 
-To give an example, a Bank's virtual agents caters to Intents related to credit cards. If the customer does not have a credit card product, however, we would not like say the `CancelCreditCard` Intent to be found and available.
+To give an example, a Bank's virtual agent caters to Intents related to credit cards. If the customer does not have a credit card product, however, we would not like a `CancelCreditCard` Intent to be found.
 
-We can enable and disable the Intent based on the customer's `profile`. Let's assume it has a variable `has_credit_card` which stores information on whether the customer has the product or not:
+We enable and disable the Intent based on the customer's `profile`. Let's assume it has a variable `has_credit_card` which stores information on whether the customer has the product or not, the Intent Condition would be:
 
 
 ```js
