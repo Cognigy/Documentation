@@ -32,7 +32,7 @@ Go to the home screen of Live Agent Agent Dashboard
 </figure>
 
 
-Click on a the Conversation bubble icon in the sidebar. Then click on All Conversations. Conversations which customers have initiated can be seen here.
+Click on the Conversation bubble icon in the sidebar. Then click on All Conversations. Conversations which customers have initiated can be seen here.
 
 Now click on a specific Conversation. The Conversation will open, with further details and actions available in the right-hand side panel.
 
@@ -153,7 +153,7 @@ Should you wish to include an already prepared or "canned" response as a reply, 
 ###  How to request file upload
 <div class="divider"></div>
 
-There is an option to enable bots to request files from users. From live agent reply box at the bottom you can click on request file upload icon.
+There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box you can click on the "Request file" icon.
 
 
 <figure>
@@ -161,14 +161,14 @@ There is an option to enable bots to request files from users. From live agent r
   <figcaption>Request file upload</figcaption>
 </figure>
 
-Then confirm that you want to send it to the customer.
+Then you need to confirm that you want to send it to the customer to enable the file upload.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
   <figcaption>Request file upload confirm</figcaption>
 </figure>
 
-A message should appear in the chat indicating that the file has been requested
+A message should appear in the chat indicating that the file has been requested.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="100%" alt="Live Agent request file upload message" />
@@ -182,7 +182,7 @@ Now the customer should see a button to open a file upload dialog.
   <figcaption>Request file upload Webchat</figcaption>
 </figure>
 
-After uploading the file, it should be reflected in the Webchat and the Live Agent and the file should be ready for download on the Live Agent side
+After uploading the file, it should be reflected in the Webchat and the Live Agent and the file should be ready for download on the Live Agent side.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="100%" alt="Live Agent request file upload webchat completed" />
