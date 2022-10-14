@@ -237,6 +237,7 @@ nav:
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
+    # - ai/endpoints/amazon-lex.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
     - ai/endpoints/azure-bot-services.md
@@ -267,7 +268,7 @@ nav:
           - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
         - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
         - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
-      - LA Agent Assist (Beta):
+      - LA Agent Assist:
         - ai/handover-providers/la-agent-assist-overview.md
         - ai/handover-providers/la-agent-assist-setup.md
     - ai/handover-providers/chatwoot-handover.md
