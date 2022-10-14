@@ -237,6 +237,7 @@ nav:
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
+    # - ai/endpoints/amazon-lex.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
     - ai/endpoints/azure-bot-services.md
@@ -267,7 +268,7 @@ nav:
           - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
         - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
         - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
-      - LA Agent Assist (Beta):
+      - LA Agent Assist:
         - ai/handover-providers/la-agent-assist-overview.md
         - ai/handover-providers/la-agent-assist-setup.md
     - ai/handover-providers/chatwoot-handover.md
@@ -340,15 +341,21 @@ nav:
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
+  - Conversation:
+    - Workflow:
+        - live-agent/conversation/conversation-workflow.md
+    - Routing:
+        - live-agent/conversation/conversation-routing.md
+    - Assist Bot:
+        - live-agent/conversation/assist-bot.md
   - live-agent/inboxes.md
-  - live-agent/conversation-workflow.md
-  - live-agent/conversation-routing.md
   - live-agent/agents.md
   - live-agent/roles.md
   - live-agent/teams.md
   - live-agent/labels.md
   - live-agent/reports.md
   - live-agent/account-settings.md
+  - live-agent/attachments.md
   - live-agent/notifications.md
   - live-agent/automation-rules.md
   - live-agent/profile-settings.md

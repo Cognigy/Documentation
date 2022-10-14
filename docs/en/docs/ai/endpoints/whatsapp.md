@@ -10,8 +10,6 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/whatsApp-endpoint.png" width="100%" />
 </figure>
 
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
-
 Within our **COGNIGY.AI** platform you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook Developer Dashboard by using our WhatsApp Endpoint integration. 
 
 ???+ warning "User-sent rich content is not yet supported and is received as data. Coming soon."

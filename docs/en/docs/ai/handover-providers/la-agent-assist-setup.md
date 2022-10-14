@@ -3,7 +3,7 @@
  slug: "la-agent-assist-setup" 
  hidden: false 
 ---
-# Agent Assist Setup (Beta)
+# Agent Assist Setup
 
 ## Setting up a Flow
 
