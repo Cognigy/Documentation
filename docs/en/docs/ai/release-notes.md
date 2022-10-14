@@ -5,6 +5,26 @@
 ---
 # Release notes
 
+## 4.36.2
+**Released** October 14th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Bugfixes
+- Fixed a bug where SSO sign-in was not possible for Cognigy Live Agent
+
+## 4.36.1
+**Released** October 7th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Improvements
+- Improved by increasing the timeout for fetching the conversation counter
+
 ## 4.36.0
 **Released** October 5th, 2022
 
