@@ -1,5 +1,12 @@
 # Cognigy Live Agent
 
+## 4.36.1
+
+## Bugfixes
+
+- Fixed all email transcript requests broken
+- Fixed broken sso login
+
 ## 4.36.0
 **Released** October 5th, 2022
 
