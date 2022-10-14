@@ -27,7 +27,7 @@ Find more about the generic Endpoint settings available for this Endpoint here:
 - [Endpoints Overview]({{config.site_url}}/ai/endpoints/overview/) 
 - [Data Protection & Analytics]({{config.site_url}}/ai/endpoints/data-protection-and-analytics/)
 - [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings/)  
 
 ## Channel Specific Settings
 <div class="divider"></div>
@@ -42,12 +42,6 @@ Enable this toggle to allow the Slots found by Amazon Lex and transcript to be p
 ???+ warning "Attention!"
     The option to reparse slots is only available
     if the **Amazon Lex (Built-in)** NLU is selected.
-
-???+ warning "Attention!" 
-
-    The option to reparse slots is only available if the **Amazon Lex (Built-in)** NLU is selected. 
-
- 
 
 ## Setup 
 
