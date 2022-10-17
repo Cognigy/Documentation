@@ -7,7 +7,7 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/baee3fa-vg_playurl.JPG" width="100%" />
-  <figcaption>Voice Gateway Play URL</figcaption>
+  <figcaption>AudioCodes Play URL</figcaption>
 </figure>
 
 ## Description

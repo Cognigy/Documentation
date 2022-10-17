@@ -7,7 +7,7 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1f8d8a9-vg_agentassist.JPG" width="100%" />
-  <figcaption>Voice Gateway Agent Assist</figcaption>
+  <figcaption>AudioCodes Agent Assist</figcaption>
 </figure>
 
 ## Description

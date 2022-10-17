@@ -5,37 +5,43 @@
 ---
 # Cognigy Voice Gateway
 
+## Overview
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **Voice Gateway**, allowing customers to speak to your **Agent** instead of just writing with it.
+Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **VoiceGateway**, allowing customers to speak with your **Agent** instead of just writing to it.
 
-<blockquote class="callout callout_info" theme="📘">
-    <span class="callout-icon">▶️</span>
-    <div class="callout-heading">
-      <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway" target="_blank" >Techinar video "Building a Phone Bot with Voice Gateway"</a>
-      </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
-   </div>
-</blockquote>
+## Voice Gateway Specific Nodes
 
-## Voice Gateway Settings
-### Async Mode
-When async mode is enabled for the Voice Gateway, then outputs will be sent directly as they are processed in a Flow. This can be beneficial when the Flow for example has to send an HTTP request. When the async mode is off, then the outputs will be sent when the entire Flow has finished processing for the given input.
+Cognigy.AI comes with built in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vgv2/voice-gateway/) for more information.
 
-The [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality only works when async mode is enabled.
+## Call Meta Data
 
-## Voice Gateway specific Nodes
+Cognigy Voice Gateway identifies important information about the call from the SIP INVITE and makes it available to the bot during the session.
 
-Cognigy.AI comes with a large number of inbuilt Nodes to control the Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) for more information.
+| Parameter | Type   | Description                                                     | Example           |
+| --------- | ------ | --------------------------------------------------------------- | ----------------- |
+| from      | string | The phone number of the caller, including country code.         | +4921154591991    |
+| headers   | JSON   | The SIP Headers of the call on INVITE, including Custom Headers | See example below |
 
+```json
+{
+  "to": "<sip-destination>",
+  "call-id": "<id-value>",
+  "allow": "NOTIFY, OPTIONS, BYE, INVITE, ACK, CANCEL, REFER",
+  "X-Custom-Headers": "<custom-headers-value>",
+  "X-Originating-Carrier": "<carrier-name>",
+  "X-Voip-Carrier-Sid": "<id-value>",
+  "X-Twilio-AccountSid": "<id-value>",
+  "X-Twilio-CallSid": "<id-value>",
+  "other-properties": "..."
+}
+```
 ## Number Meta Data
 
-Cognigy Voice Gateway identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
+AudioCodes identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
 
 | Parameter   | Type |Description|Example|
 | ----------- | ------------------------------------ |||
@@ -69,17 +75,17 @@ Cognigy Voice Gateway identifies information about the caller and adds it to the
 
 <div class="divider"></div>
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
+- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/)
 - [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/)
 - [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
+- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
 ???+ info "Contact Center & Phone number linking"
-    To link a **Voice Gateway** **Endpoint** to a phone number, please contact your **Cognigy** representative in order to provision and configure a VG instance.
+   In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, please get in touch with us via an email to support@cognigy.com.
 
-???+ warning "AudioCodes VoiceAI Connect"
-    Cognigy VG is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
+???+ warning "Rebranding of Voice Gateway with AudioCodes"
+    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint. You can find the AudioCodes documentation here.

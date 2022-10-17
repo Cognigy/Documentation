@@ -7,7 +7,7 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/4500a2b-vg_hangup.JPG" width="100%" />
-  <figcaption>Voice Gateway Meta Data</figcaption>
+  <figcaption>AudioCodes Meta Data</figcaption>
 </figure>
 
 ## Description
