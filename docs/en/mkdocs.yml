@@ -52,7 +52,7 @@ nav:
 - AI:
   - ai/platform-overview.md
   - Release Notes:
-    - ai/release-notes.md
+    - ai/release-notes/index.md
   - Resources:
     - Agents:
       - ai/resources/agents/agents.md
