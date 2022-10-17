@@ -4,6 +4,7 @@
  hidden: false 
 ---
 # Release notes
+Please select a specific release below to get more information.
 
 - [v4.36 - current](./4.36.md)
 - [v4.35](./4.35.md)
