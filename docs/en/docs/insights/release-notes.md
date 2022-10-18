@@ -5,6 +5,23 @@
 ---
 # Release notes
 
+## 4.37.0
+**Released** October 18th, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Improvements
+- Disabling scrollbar on print view on other devices than Mac
+- Adding grid to the detailed view of line chart, legend bottom and left
+
+### Bugfixes
+- Fixed a bug where xAxis on lineCharts was jumping with query grain param change after timeframe filter change
+- Fixed a bug where detailed view charts height wasn't resizing properly
+- Fixed a bug with redirect from insights to cognigy when there is a query string in the URL (redirect from transcript explorer to playbook editor)
+- Fixed a bug where only the first 25 steps were loaded for the dropdown list filter
+
 ## 4.36.0
 **Released** October 5th, 2022
 
