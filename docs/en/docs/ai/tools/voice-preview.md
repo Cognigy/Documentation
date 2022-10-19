@@ -5,6 +5,7 @@
 ---
 
 # Voice Preview
+[![Version badge](https://img.shields.io/badge/Added in-v4.37.0-blue.svg)]({{config.site_url}})
 
 The Voice Preview feature allows users to quickly test how voice output sounds without having to execute the whole flow with a mock call.
 
@@ -16,12 +17,12 @@ Once in the Voice Preview panel, you will be able to introduce raw text or SSML 
 
 <div class="divider"></div>
 
-You need to navigate to the Agent Settings -> Voice Settings. From there, choose your STT/TTS provider and
+You need to navigate to the Agent Settings -> Voice Preview Settings. From there, choose your STT/TTS provider and
 enter your credentials.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-settings.png" width="100%" />
-  <figcaption>Voice Settings</figcaption>
+  <figcaption>Voice Preview Settings</figcaption>
 </figure>
 
 ### Use Voice Preview
@@ -48,7 +49,11 @@ You can use the Voice Preview from 3 different places:
   <figcaption>Voice Preview Flow editor</figcaption>
 </figure>
 
-3 - Click on the Voice Preview button in the interactive tooltip of a message output in the Interaction Panel. The output text will be copied to the Voice Preview input field (only for regular text & fallback text)..
+3 - Click on the Voice Preview button in the interactive tooltip of a message output in the Interaction Panel. The output text will be copied to the Voice Preview input field.
+
+???+ info "Supported Output"
+    Please note that the Voice Preview button will only be shown for specific output. This includes regular text output, fallback text, as well as text/ssml output from channels with Voice support.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-chat-panel.png" width="100%" />
   <figcaption>Voice Preview Interactive Tooltip</figcaption>
