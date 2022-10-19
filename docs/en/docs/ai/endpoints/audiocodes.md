@@ -31,7 +31,7 @@ The [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functi
 
 ## AudioCodes specific Nodes
 
-Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) for more information.
+Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [AudioCodes Nodes]({{config.site_url}}ai/flow-nodes/audiocodes/audiocodes/) for more information.
 
 ## Number Meta Data
 
