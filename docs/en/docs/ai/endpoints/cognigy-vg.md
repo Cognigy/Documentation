@@ -19,32 +19,12 @@ Cognigy.AI comes with built in Nodes to control Voice Gateway. See [Voice Gatewa
 
 ## Call Meta Data
 
-Cognigy Voice Gateway identifies important information about the call from the SIP INVITE and makes it available to the bot during the session.
-
-| Parameter | Type   | Description                                                     | Example           |
-| --------- | ------ | --------------------------------------------------------------- | ----------------- |
-| from      | string | The phone number of the caller, including country code.         | +4921154591991    |
-| headers   | JSON   | The SIP Headers of the call on INVITE, including Custom Headers | See example below |
-
-```json
-{
-  "to": "<sip-destination>",
-  "call-id": "<id-value>",
-  "allow": "NOTIFY, OPTIONS, BYE, INVITE, ACK, CANCEL, REFER",
-  "X-Custom-Headers": "<custom-headers-value>",
-  "X-Originating-Carrier": "<carrier-name>",
-  "X-Voip-Carrier-Sid": "<id-value>",
-  "X-Twilio-AccountSid": "<id-value>",
-  "X-Twilio-CallSid": "<id-value>",
-  "other-properties": "..."
-}
-```
-## Number Meta Data
-
-AudioCodes identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
+Voice Gateway identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
 
 | Parameter   | Type |Description|Example|
 | ----------- | ------------------------------------ |||
+| from      | string | The phone number of the caller, including country code.         | +4921154591991    |
+| headers   | JSON   | The SIP Headers of the call on INVITE, including Custom Headers | See example below |
 | number      | string |The phone number of the caller, including country code|+4921154591991|
 | country     | string |The 2-character country code|DE|
 | countryCallingCode | string |The calling code of the country|49|
@@ -67,6 +47,19 @@ AudioCodes identifies information about the caller and adds it to the Cognigy [I
 - FIXED_LINE
 - MOBILE
 
+```json
+{
+  "to": "<sip-destination>",
+  "call-id": "<id-value>",
+  "allow": "NOTIFY, OPTIONS, BYE, INVITE, ACK, CANCEL, REFER",
+  "X-Custom-Headers": "<custom-headers-value>",
+  "X-Originating-Carrier": "<carrier-name>",
+  "X-Voip-Carrier-Sid": "<id-value>",
+  "X-Twilio-AccountSid": "<id-value>",
+  "X-Twilio-CallSid": "<id-value>",
+  "other-properties": "..."
+}
+```
 
 ???+ info "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
