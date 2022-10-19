@@ -1,6 +1,20 @@
 # Cognigy Live Agent
 
+## 4.37.0
+**Released** October 18th, 2022
+
+### Improvements
+
+- Improved by adding timestamps to messages in the conversation transcript
+
+## Bugfixes
+
+- Fixed a bug where forwarding whisper assist or assist bot messages as private notes should be private, and the end user should not receive it
+- Fixed a bug where teams assignments were not refreshing correctly on live changes
+
+
 ## 4.36.1
+**Released** October 14th, 2022
 
 ## Bugfixes
 
