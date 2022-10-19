@@ -1,6 +1,6 @@
 ---
  title: "Cognigy Voice Gateway" 
- slug: "cognigy-voice-gateway" 
+ slug: "cognigy-vg" 
  hidden: true 
 ---
 

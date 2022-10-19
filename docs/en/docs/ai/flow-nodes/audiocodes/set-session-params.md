@@ -6,7 +6,7 @@
 # Set Session Params
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3141acb-vg_setsessionparams.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-set-session-params-node.png" width="100%" />
   <figcaption>AudioCodes Set Session params</figcaption>
 </figure>
 

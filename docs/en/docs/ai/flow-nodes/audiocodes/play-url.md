@@ -6,7 +6,7 @@
 # Play URL
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/baee3fa-vg_playurl.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-play-url-node.png" width="100%" />
   <figcaption>AudioCodes Play URL</figcaption>
 </figure>
 
@@ -16,7 +16,7 @@ The Play URL Node lets you retrieve a WAV file from a URL location and play it b
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
-| Media URL | CognigyScript | The URL to the WAV file. Must be accessible to your Voice Gateway instance. |
+| Media URL | CognigyScript | The URL to the WAV file. Must be accessible to your AudioCodes instance. |
 | Media Format | Select | Options:<br/>- wav/lpcm15<br/>- raw/lpcm16 |
 | Cache Audio | Toggle | Whether to cache the audio file or not. Caching will make future playbacks quicker. Default: false. |
 | Set Activity Parameters | Toggle | Option to add parameters which will be valid for this acitivity only |

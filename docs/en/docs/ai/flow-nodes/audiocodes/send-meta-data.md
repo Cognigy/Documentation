@@ -6,7 +6,7 @@
 # Send Meta Data
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/4500a2b-vg_hangup.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-send-meta-data-node.png" width="100%" />
   <figcaption>AudioCodes Meta Data</figcaption>
 </figure>
 

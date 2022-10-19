@@ -6,7 +6,7 @@
 # Transfer (AudioCodes)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2349bf4-vg_handover.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-transfer-node.png" width="100%" />
   <figcaption>AudioCodes Transfer</figcaption>
 </figure>
 

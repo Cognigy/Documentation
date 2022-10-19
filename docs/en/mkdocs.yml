@@ -152,15 +152,23 @@ nav:
       - ai/flow-nodes/code/ai-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
     - Voice Gateway:
-      - ai/flow-nodes/vg/voice-gateway.md
-      - ai/flow-nodes/vg/send-message.md
-      - ai/flow-nodes/vg/set-session-params.md
-      - ai/flow-nodes/vg/play-url.md
-      - ai/flow-nodes/vg/transfer-vg.md
-      - ai/flow-nodes/vg/hangup.md
-      - ai/flow-nodes/vg/send-meta-data.md
-      - ai/flow-nodes/vg/call-recording.md
-      - ai/flow-nodes/vg/agent-assist.md
+      - ai/flow-nodes/vg/voice-gateway.md:
+        - ai/flow-nodes/vg/dtmf.md
+        - ai/flow-nodes/vg/hangup.md
+        - ai/flow-nodes/vg/parameter-details.md
+        - ai/flow-nodes/vg/play.md
+        - ai/flow-nodes/vg/send-metadata.md
+        - ai/flow-nodes/vg/set-session-config.md
+        - ai/flow-nodes/vg/transfer.md
+      - ai/flow-nodes/audiocodes/audiocodes.md:
+        - ai/flow-nodes/audiocodes/send-message.md
+        - ai/flow-nodes/audiocodes/set-session-params.md
+        - ai/flow-nodes/audiocodes/play-url.md
+        - ai/flow-nodes/audiocodes/transfer-vg.md
+        - ai/flow-nodes/audiocodes/hangup.md
+        - ai/flow-nodes/audiocodes/send-meta-data.md
+        - ai/flow-nodes/audiocodes/call-recording.md
+        - ai/flow-nodes/audiocodes/agent-assist.md
     - Other Nodes:
       - Log Message: ai/flow-nodes/other-nodes/log-message.md
       - ai/flow-nodes/other-nodes/overwrite-analytics.md
@@ -233,7 +241,9 @@ nav:
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
       - ai/endpoints/webchat/webchat.md
-    - ai/endpoints/cognigy-vg.md
+    - Voice Gateway:
+      - ai/endpoints/cognigy-vg.md
+      - ai/endpoints/audiocodes.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
