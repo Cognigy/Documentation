@@ -23,7 +23,6 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 
 | Parameter   | Type |Description|Example|
 | ----------- | ------------------------------------ |||
-| from      | string | The phone number of the caller, including country code.         | +4921154591991    |
 | headers   | JSON   | The SIP Headers of the call on INVITE, including Custom Headers | See example below |
 | number      | string |The phone number of the caller, including country code|+4921154591991|
 | country     | string |The 2-character country code|DE|
@@ -49,6 +48,7 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 
 ```json
 {
+  "from": "<caller-phone-number>",
   "to": "<sip-destination>",
   "call-id": "<id-value>",
   "allow": "NOTIFY, OPTIONS, BYE, INVITE, ACK, CANCEL, REFER",
@@ -78,7 +78,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
 ???+ info "Contact Center & Phone number linking"
-   In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, please get in touch with us via an email to support@cognigy.com.
+    In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, please get in touch with us via an email to support@cognigy.com.
 
 ???+ warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint. You can find the AudioCodes documentation here.
