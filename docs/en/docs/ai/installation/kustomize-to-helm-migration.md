@@ -264,7 +264,16 @@ kubectl label clusterrolebindings traefik app.kubernetes.io/managed-by=Helm
 kubectl annotate ingressclass traefik meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label ingressclass traefik app.kubernetes.io/managed-by=Helm
 ```
-6. Deploy Cognigy.AI Helm Chart with the prepared `values_prod.yaml`, refer to the original [docs](https://github.com/Cognigy/cognigy-ai-helm-chart) for details:
+
+6. Add annotations and labels to `flow-modules` and `functions` storage classes:
+```
+kubectl annotate storageclass flow-modules meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
+kubectl label storageclass flow-modules app.kubernetes.io/managed-by=Helm
+kubectl annotate storageclass functions meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
+kubectl label storageclass functions app.kubernetes.io/managed-by=Helm
+```
+
+7. Deploy Cognigy.AI Helm Chart with the prepared `values_prod.yaml`, refer to the original [docs](https://github.com/Cognigy/cognigy-ai-helm-chart) for details:
     1. Login into Cognigy Helm Registry (provide your Cognigy Container Registry credentials):
    ```bash
    helm registry login cognigy.azurecr.io \
