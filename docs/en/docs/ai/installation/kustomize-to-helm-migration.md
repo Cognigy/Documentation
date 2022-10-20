@@ -284,7 +284,7 @@ kubectl label storageclass functions app.kubernetes.io/managed-by=Helm
    ```bash
    helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version HELM_CHART_VERSION --values values_prod.yaml
    ```
-7. Save backups of PVC manifests for kustomize and Helm installations:
+8. Save backups of PVC manifests for kustomize and Helm installations:
 ```bash
 kubectl get pvc -n=cognigy-ai redis-persistent -o yaml > redis-persistent-pvc.yaml
 kubectl get pvc -n=cognigy-ai flow-modules -o yaml > flow-modules-pvc.yaml
@@ -294,7 +294,7 @@ kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc-kustomize.yam
 kubectl get pvc -n=default functions -o yaml > functions-pvc-kustomize.yaml
 ```
 
-8. (**non-AWS cloud providers only**): Attach PVCs of `flow-modules`, `functions` and `redis-persistent` of Cognigy.AI Helm release to the existing PVs of kustomize installation:
+9. (**non-AWS cloud providers only**): Attach PVCs of `flow-modules`, `functions` and `redis-persistent` of Cognigy.AI Helm release to the existing PVs of kustomize installation:
 ```bash
 ## scale down the Cognigy.AI Helm Chart deployments 
 for i in $(kubectl get deployment --namespace cognigy-ai --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
@@ -329,7 +329,7 @@ kubectl get pv
 kubectl get pvc -n=cognigy-ai
 ```
 
-9. (**AWS only**): Attach `redis-persistent` PVC of Cognigy.AI Helm release to the existing PVs of kustomize installation:
+10. (**AWS only**): Attach `redis-persistent` PVC of Cognigy.AI Helm release to the existing PVs of kustomize installation:
 ```bash
 ## scale down the Cognigy.AI Helm Chart deployments 
 for i in $(kubectl get deployment --namespace cognigy-ai --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
@@ -356,15 +356,15 @@ kubectl apply -f redis-persistent-pvc.yaml
 kubectl get pv
 kubectl get pvc -n=cognigy-ai
 ```
-8. Bring back the deployments of Cognigy.AI Helm Release:
+11. Bring back the deployments of Cognigy.AI Helm Release:
 ```bash
 helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version HELM_CHART_VERSION --values values_prod.yaml
 ```
-9. Verify that all deployments are in ready state: 
+12. Verify that all deployments are in ready state: 
 ```bash
 kubectl get deployments -n=cognigy-ai
 ```
-10. (**Traefik as reverse-proxy only**): In case `EXTERNAL-IP` for `traefik` service of type `LoadBalancer` changes, update the DNS records to point to the new `EXTERNAL-IP` of `traefik` Service. If you're using Traefik Ingress with AWS Classic Load Balancer, change the CNAME of the DNS entries to the new `EXTERNAL-IP`. Check the new external IP/CNAME record with:
+13. (**Traefik as reverse-proxy only**): In case `EXTERNAL-IP` for `traefik` service of type `LoadBalancer` changes, update the DNS records to point to the new `EXTERNAL-IP` of `traefik` Service. If you're using Traefik Ingress with AWS Classic Load Balancer, change the CNAME of the DNS entries to the new `EXTERNAL-IP`. Check the new external IP/CNAME record with:
 ```bash
 kubectl get service -n=cognigy-ai traefik
 ```
@@ -418,16 +418,16 @@ db.dropDatabase()
 use service-analytics-conversation-collector-provider
 db.dropDatabase()
 ```
-2. Delete the kustomize deployments running in `default` namespace:
 
+2. Delete the kustomize deployments running in `default` namespace:
 ```bash
 for i in $(kubectl get deployment --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')             
 do
     kubectl --namespace default delete deployment $i
 done
 ```
-3. Delete the services in `default` namespace:
 
+3. Delete the services in `default` namespace:
 ```bash
 for i in $(kubectl get service --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep service-)
 do
@@ -439,19 +439,20 @@ kubectl --namespace default delete svc rabbitmq redis redis-persistent traefik
 **Be very careful while deleting service, do not delete the `kubernetes` service**
 
 4. Delete the ingresses in `default` namespace:
-
 ```bash
 for i in $(kubectl get ingress --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
 do
     kubectl delete ingress $i --namespace default
 done
 ```
+
 5. Delete PVCs from `default` namespace (if still present): 
 ```bash
 kubectl delete pvc -n=default flow-modules
 kubectl delete pvc -n=default functions
 kubectl delete pvc -n=default redis-persistent
 ```
+
 6. (Optionally): Delete PVC for single replica MongoDB setup in case of single-replica to multi-replica MongoDB migration:
 ```bash
 kubectl delete pvc mongodb -n default
