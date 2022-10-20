@@ -398,7 +398,7 @@ After Cognigy.AI Helm release is up and running properly you can clean up the ku
 
 1. Drop old databases in MongoDB (set `MONGODB_ROOT_USER` to `root` or `admin` in accordance with `values_prod.yaml` in MongoDB Helm Chart):
 ```bash
-kubectl exec -it -n mongodb mongodb-0 -- ba sh
+kubectl exec -it -n mongodb mongodb-0 -- bash
 mongo -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
 
 # Drop service-analytics-collector-provider
