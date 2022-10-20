@@ -454,7 +454,7 @@ kubectl delete pvc -n=default redis-persistent
 ```
 6. (Optionally): Delete PVC for single replica MongoDB setup in case of single-replica to multi-replica MongoDB migration:
 ```bash
-kubectl delete pvc mongo-server -n default
+kubectl delete pvc mongodb -n default
 ```
 
 
