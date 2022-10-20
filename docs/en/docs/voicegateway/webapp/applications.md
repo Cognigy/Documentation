@@ -14,7 +14,7 @@ The **Applications** overview will give a quick look on all created Applications
 
 <div class="divider"></div>
 
-An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the Voice Gateway Web App the Endpoint is being routed to Voice Gateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI.
+An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the Voice Gateway Web App the Endpoint is being routed to Voice Gateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI. All the default values are being set in the Application such as default speech vendor, language and voice for the Text-To-Speech output and Speech-To-Text recognition.
 
 <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-applications-new-app.png" width="Voice Gateway WebApp Applications New Application" />
 

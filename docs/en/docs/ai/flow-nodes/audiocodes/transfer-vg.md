@@ -1,13 +1,13 @@
 ---
- title: "Transfer (Voice Gateway)" 
- slug: "transfer-vg" 
+ title: "Transfer (AudioCodes)" 
+ slug: "transfer-ac" 
  hidden: false 
 ---
-# Transfer (Voice Gateway)
+# Transfer (AudioCodes)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2349bf4-vg_handover.JPG" width="100%" />
-  <figcaption>Voice Gateway Transfer</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-transfer-node.png" width="100%" />
+  <figcaption>AudioCodes Transfer</figcaption>
 </figure>
 
 ## Description

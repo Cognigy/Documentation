@@ -6,8 +6,8 @@
 # Call Recording
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/fddae29-vg_callrecording.JPG" width="100%" />
-  <figcaption>Voice Gateway Call Recording</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-call-recording-node.png" width="100%" />
+  <figcaption>AudioCodes Call Recording</figcaption>
 </figure>
 
 ## Description
