@@ -265,12 +265,19 @@ kubectl annotate ingressclass traefik meta.helm.sh/release-name=cognigy-ai meta.
 kubectl label ingressclass traefik app.kubernetes.io/managed-by=Helm
 ```
 
-6. Add annotations and labels to `flow-modules` and `functions` storage classes:
+6. For "Migration inside the existing cluster" scenario, add annotations and labels to existing `flow-modules` and `functions` storage classes and related rolebindings  (AWS only):
 ```
+## annotate `flow-modules` and `functions` StorageClasses
 kubectl annotate storageclass flow-modules meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label storageclass flow-modules app.kubernetes.io/managed-by=Helm
 kubectl annotate storageclass functions meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label storageclass functions app.kubernetes.io/managed-by=Helm
+
+## AWS only: annotate related ClusterRoleBindings
+kubectl annotate clusterrolebindings efs-provisioner-flow-modules meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
+kubectl label clusterrolebindings efs-provisioner-flow-modules app.kubernetes.io/managed-by=Helm
+kubectl annotate clusterrolebindings efs-provisioner-functions meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
+kubectl label clusterrolebindings efs-provisioner-functions app.kubernetes.io/managed-by=Helm
 ```
 
 7. Deploy Cognigy.AI Helm Chart with the prepared `values_prod.yaml`, refer to the original [docs](https://github.com/Cognigy/cognigy-ai-helm-chart) for details:
