@@ -34,6 +34,9 @@ The **Project Roles** available to chose from are listed below:
 | Contact Profile Editor   | Adds the following permissions: <br> - read/update permissions for Contact Profiles|
 | Contact Profile Viewer  | Adds the following permissions: <br> - read permissions for Contact Profiles|
 | Conversation History |Adds the following permissions: <br> - full permissions for Conversation History|
+| Data Privacy Admin | ![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg) Adds the following permissions: <br> - full permissions for data privacy settings (Collect Analytics, Store Contact Profiles, Collect Conversations, Mask Analytics, Mask Logging) |   
+| Data Privacy Editor | ![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg) Adds the following permissions: <br> - read/update permissions for data privacy settings  |   
+| Data Privacy Viewer | ![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg) Adds the following permissions: <br> - read permissions for data privacy settings  |
 | Developer  | Adds the following permissions: <br> - full permissions for Extensions <br> - full permissions for Flow Node Comments <br> - full permissions for Flow Node Description <br> - full permissions for Locales <br> - full permissions for Logs <br> - full permissions for Live Follow feature|
 | Endpoint Admin  | Adds the following permissions: <br> - full permissions for Endpoints|
 | Extension Admin  | Adds the following permissions: <br> - full permissions for Extensions|
