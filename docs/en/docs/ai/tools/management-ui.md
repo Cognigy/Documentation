@@ -179,7 +179,7 @@ Clicking the ``Save & Enforce`` button results in all users of the organisation 
 ## Data Privacy Settings
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg)]({{config.site_url}}) 
-It is possible to set the data privacy settings of an organisation in the Management UI. To configure the data privacy settings, first select and orgabisation and then click on the triple-dot button on the right-top corner.
+It is possible to set the data privacy settings of an organisation in the Management UI. To configure the data privacy settings, first select and organisation and then click on the triple-dot button on the right-top corner.
 
 In the menu, select **Change Data Privacy Settings**
 
@@ -189,29 +189,32 @@ In the menu, select **Change Data Privacy Settings**
 </figure>
 
 - Enable data privacy settings
+
 Apply data privacy settings to all projects of this organisation
 
 - Contact Profiles
+  
 Create individual contact profiles to store persisted user data across sessions
 
 - Collect Analytics
+  
 Collecting analytics data for all endpoints
 
-
 - Mask Sensitive Analytics
+
 Mask all sensitive analytics data for all endpoints
 
-
 - Mask Sensitive Logging
+
 Mask all sensitive logging for all endpoints
 
 - Collect Conversations
+
 Collecting conversations history for all endpoints
 
 - Ignore List
+
 The projects will ignore the organisation data privacy settings and use the ones defined in the endpoint
-
-
 
 
 ## Expiration Values (TTL) for Sensitive Data
