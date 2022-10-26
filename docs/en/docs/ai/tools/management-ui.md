@@ -228,7 +228,7 @@ It is possible to configure when certain sensitive data expires and is deleted f
 In the menu, select **Change Expiration Values**.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/ecb5a8f-Screenshot_from_2020-03-25_16-45-43.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/exp-values.png" width="100%" />
   <figcaption> Configuring the expiration values for sensitive data in an Organisation</figcaption>
 </figure>
 
@@ -238,15 +238,28 @@ All of the expiration values define how many **minutes** it takes from when the 
 
 This expiration value determines the amount of minutes from when a contact profile was last active in a conversation until it is deleted.
 
-- Conversation Expiration
-
-This expiration value determines the amount of minutes from when a conversation is created until it is deleted.
-
 - Session Expiration
 
 This expiration value determines the amount of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session.
 
 The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used.
+
+- Conversation Expiration
+
+This expiration value determines the amount of minutes from when a [conversation]({{config.site_url}}ai/tools/analytics/analytics-concepts/#conversations) is created until it is deleted from the database.
+
+- Analytics Expiration 
+
+This expiration value determines the amount of minutes from when the data of the [Analytics]({{config.site_url}}ai/tools/analytics/analytics-concepts) is created until it is deleted from the database.
+
+- Insight's Session Data Expiration
+
+This expiration value determines the amount of minutes from when the data of Insight's Session is created until it is deleted from the database.
+
+- Steps Data Expiration
+
+This expiration value determines the amount of minutes from when the data of [Steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) is created until it is deleted from the database.
+
 
 It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
 
