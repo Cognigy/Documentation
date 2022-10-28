@@ -86,7 +86,7 @@ Intents can be configured with a number of advanced options.
 #### Tags
 Tags can be used to categorize Intents, which makes it easier to manage them.
 
-#### Condition
+#### Conditions
 
 See [Intent Conditions]({{config.site_url}}ai/nlu/nlu-overview/conditions/) for more information on how to enable and disable Intents dynamically with CognigyScript Conditions.
 
