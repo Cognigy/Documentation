@@ -50,27 +50,25 @@ const response = await api.httpRequest({
 
 ## Interacting with Flows
 You can use Functions to interact with Flows using the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) APIs.
-The following examples assume that you pass the userId, sessionId and URLToken through the Function's Parameters.
+The following examples assume that you pass the userId and sessionId through the Function's Parameters.
 
 ````JavaScript
-const { userId, sessionId, URLToken } = parameters;
+const { userId, sessionId } = parameters;
 
 api.inject({
     userId,
     sessionId,
-    URLToken,
     text: "This text was injected though a Function"
 });
 ````
 
-**Performing a "Norify" call**
+**Performing a "Notify" call**
 ````JavaScript
-const { userId, sessionId, URLToken } = parameters;
+const { userId, sessionId } = parameters;
 
 api.notify({
     userId,
     sessionId,
-    URLToken,
     text: "This text was injected though a Function"
 });
 ````

@@ -3,7 +3,7 @@
  slug: "la-agent-assist-setup" 
  hidden: false 
 ---
-# Agent Assist Setup (Beta)
+# Agent Assist Setup
 
 ## Setting up a Flow
 
@@ -28,26 +28,6 @@ You could create Intents, for example, and use Lookup Nodes in combination with 
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flow-example.png" width="75%" />
     </figure>
 
-## Making Content Forwardable
-<div class="divider"></div>
-
-If you would like to make the outputs from your Flow forwardable to the user, for example to speed up a conversation with pre-formed responses, you will need to follow these steps.
-
-Create a Say Node. With Output Type set to **Text**, click on Options and go to the **Data** field. Paste the following JSON text here.
-
-*{"cognigy":{"forwardable": true}}*
-
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-forwardable.png" width="75%" />
-    </figure>
-
-Once this is completed, you may change the Output Type to whichever type you wish (Galleries, Audio, etc.).
-
-Now when your Agents receive this information via Agent Assist, they will also receive a blue arrow icon next to it. With this icon, they can send the information back to the customer.
-
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-forwardable-arrow.png" width="75%" />
-    </figure>
 
 ## Setting up your Endpoint
 <div class="divider"></div>
@@ -83,7 +63,7 @@ Once the Agent has received this message, they will receive a dropdown menu labe
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
     </figure>
 
-If forwarding was enabled for Nodes in the previous steps, the Agent can click the blue arrow to forward content to the customer.
+The Agent can click the blue arrow to forward content to the customer.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />

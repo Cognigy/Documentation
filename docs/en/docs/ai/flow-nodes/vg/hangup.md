@@ -1,19 +1,19 @@
 ---
- title: "Hangup" 
- slug: "hangup" 
+ title: "Hang Up" 
+ slug: "hang-up" 
  hidden: false 
 ---
-# Hangup
+# Hang Up
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/4500a2b-vg_hangup.JPG" width="100%" />
-  <figcaption>Voice Gateway Hang Up</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-hang-up-node.png" width="100%" />
+  <figcaption>Voice Gateway Hang Up Node</figcaption>
 </figure>
 
 ## Description
 <div class="divider"></div>
-The Hangup Node will instruct Voice Gateway to end the call.
+The Hang Up Node will instruct Voice Gateway to end the call.
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
-| Reasons | CognigyScript | The reason for hanging up. Will show in VG logs. |
+| Reason for hang up | Text | The reason for hanging up, will be shown in logs |

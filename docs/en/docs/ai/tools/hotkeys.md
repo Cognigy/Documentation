@@ -3,6 +3,7 @@
  slug: "hotkeys" 
  hidden: false 
 ---
+
 # Hotkeys
 
 In addition to full **Drag and Drop** flow editor functionality, Cognigy.AI supports the following hotkey commands.
@@ -53,10 +54,17 @@ The following hotkeys are valid for the Flow Editor.
 			Toggle the node search input filed.
     </td>
   </tr>
+
+  <tr>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Ctrl + Alt + P </br>Command + Option + P</td>
+    <td style="padding: 20px;">
+    		Open Voice Preview panel.
+    </td>
+  </tr>
 </table>
 
 ???+ info "Clipboard Expiration Time"
-    The content stored in your clipboard will expire after 10 minutes and no longer be available.
+The content stored in your clipboard will expire after 10 minutes and no longer be available.
 
 ## Interaction Panel
 
