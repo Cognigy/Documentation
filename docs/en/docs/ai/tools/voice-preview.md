@@ -5,7 +5,6 @@
 ---
 
 # Voice Preview
-[![Version badge](https://img.shields.io/badge/Added in-v4.37.0-blue.svg)]({{config.site_url}})
 
 The Voice Preview feature allows users to quickly test how voice output sounds without having to execute the whole flow with a mock call.
 

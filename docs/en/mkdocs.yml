@@ -388,22 +388,23 @@ nav:
       - voicegateway/installation/browser-requirements.md
     # - Deployment:
     #   - voicegateway/installation/installation-process.md
-  - Web App:
-    - voicegateway/webapp/overview.md
-    - Accounts:
-      - voicegateway/webapp/accounts.md
-    - Applications:
-      - voicegateway/webapp/applications.md
-    - Recent Calls:
-      - voicegateway/webapp/recent-calls.md
-    - Alerts:
-      - voicegateway/webapp/alerts.md
-    - Carriers:
-      - voicegateway/webapp/carriers.md
-    - Speech Services:
-      - voicegateway/webapp/speech-services.md
-    - Phone Numbers:
-      - voicegateway/webapp/phone-numbers.md
+  # Temporary disabled until the Web App is done
+  # - Web App:
+    # - voicegateway/webapp/overview.md
+    # - Accounts:
+      #- voicegateway/webapp/accounts.md
+    # - Applications:
+      # - voicegateway/webapp/applications.md
+    # - Recent Calls:
+      # - voicegateway/webapp/recent-calls.md
+    # - Alerts:
+      # - voicegateway/webapp/alerts.md
+    # - Carriers:
+      # - voicegateway/webapp/carriers.md
+    # - Speech Services:
+      # - voicegateway/webapp/speech-services.md
+    # - Phone Numbers:
+      # - voicegateway/webapp/phone-numbers.md
 - Marketplace:
   - ai/resources/manage/extensions.md
 - Help & Contact:
