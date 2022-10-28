@@ -140,17 +140,20 @@ This section describes the procedure to migrate Cognigy.AI from Kustomize to Hel
 ### Secrets Migration
 During migration Cognigy.AI product will be moved from `default` to a different namespace. In this document we consider `cognigy-ai` as target namespace, you can replace it with namespace of your choice, but we strongly recommend to use `cognigy-ai` namespace. Hence, it is required to migrate the existing secrets to the new namespace, and also to inform Helm release about the migrated secrets. To do so, execute the following steps:
 
-1. Download [migration scripts](https://docs.cognigy.com/downloads/kustomize-to-helm-migration-scripts.zip)
-2. Unzip the `kustomize-to-helm-migration-scripts.zip` folder.
-3. Place backup of existing secrets in `secrets` folder.
-4. Make sure that all the existing secrets are stored in `secrets` folder before running the script
-5. Copy `secret-migration.py` to the same folder where `secrets` folder is located
-6. Execute the script, the script will generate new secrets for Helm installation in `migration-secrets` folder:
+1. The migration scripts can be found in [this](https://github.com/Cognigy/cognigy-ai-helm-chart) repository.
 ```bash
-pip3 install -r kustomize-to-helm-migration-scripts/secret-migration/requirements.txt 
+git clone https://github.com/Cognigy/cognigy-ai-helm-chart.git
+cd scripts/kustomize-to-helm-migration-scripts
+```
+2. Place backup of existing secrets in `secrets` folder.
+3. Copy the `secrets` folder into the `kustomize-to-helm-migration-scripts` folder 
+4. Make sure that all the existing secrets are stored in `secrets` folder before running the script
+5. Execute the script, it will generate new secrets for Helm installation in `migration-secrets` folder:
+```bash
+pip3 install -r requirements.txt
 python3 secret-migration.py -ns cognigy-ai
 ```
-7. Apply the secrets into the new `cognigy-ai` namespace:
+6. Apply the secrets into the new `cognigy-ai` namespace:
 ```bash
 kubectl create ns cognigy-ai
 kubectl apply -f migration-secrets
