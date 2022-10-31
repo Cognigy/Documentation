@@ -60,7 +60,13 @@ You can get started with [creating an S3 bucket](https://docs.aws.amazon.com/Ama
 | `configmap.AWS_SECRET_ACCESS_KEY` | string | `""` |
 | `configmap.AWS_REGION` | string | `""` |
 
+A secret must be set up for setting the `AWS_SECRET_ACCESS_KEY` environment variable.
 
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.secretAccessKey.environmentVariable` | string | `"AWS_SECRET_ACCESS_KEY"` |
+| `storage.secretAccessKey.existingSecret` | string |  `"<secret-name>"` |
+| `storage.secretAccessKey.existingSecretKey`| string | `"<secret-key>"` |
 
 ### Using Google GCS
 
@@ -68,9 +74,15 @@ You can get started with [creating an S3 bucket](https://docs.aws.amazon.com/Ama
 | --------------- | ----- | ---- | 
 | `configmap.ACTIVE_STORAGE_SERVICE` | string | `"google"` |
 | `configmap.GCS_PROJECT` | string | `""` |
-| `configmap.GCS_CREDENTIALS` | string | `""` |
 | `configmap.GCS_BUCKET` | string | `""` |
 
+A secret must be set up for setting the `GCS_CREDENTIALS` environment variable. 
+
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.secretAccessKey.environmentVariable` | string | `"GCS_CREDENTIALS"` |
+| `storage.secretAccessKey.existingSecret` | string |  `"<secret-name>"` |
+| `storage.secretAccessKey.existingSecretKey`| string | `"<secret-key>"` |
 
 The value of the `GCS_CREDENTIALS` should be a json formatted string, containing the following keys.
 
@@ -95,10 +107,15 @@ The value of the `GCS_CREDENTIALS` should be a json formatted string, containing
 | --------------- | ----- | ---- | 
 | `configmap.ACTIVE_STORAGE_SERVICE` | string | `"microsoft"` |
 | `configmap.AZURE_STORAGE_ACCOUNT_NAME` | string | `""` |
-| `configmap.AZURE_STORAGE_ACCESS_KEY` | string | `""` |
 | `configmap.AZURE_STORAGE_CONTAINER` | string | `""` |
 
+A secret must be set up for setting the `AZURE_STORAGE_ACCESS_KEY` environment variable. 
 
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.secretAccessKey.environmentVariable` | string | `"AZURE_STORAGE_ACCESS_KEY"` |
+| `storage.secretAccessKey.existingSecret` | string |  `"<secret-name>"` |
+| `storage.secretAccessKey.existingSecretKey`| string | `"<secret-key>"` |
 
 ### Using Amazon S3 Compatible Service
 
@@ -109,9 +126,16 @@ To use an S3 compatible service such as [DigitalOcean Spaces](https://www.digita
 | `configmap.ACTIVE_STORAGE_SERVICE` | string | `"s3_compatible"` |
 | `configmap.STORAGE_BUCKET_NAME` | string | `""` |
 | `configmap.STORAGE_ACCESS_KEY_ID` | string | `""` |
-| `configmap.STORAGE_SECRET_ACCESS_KEY` | string | `""` |
 | `configmap.STORAGE_REGION` | string | `"nyc3"` |
 | `configmap.STORAGE_ENDPOINT` | string | `"https://nyc3.digitaloceanspaces.com"` |
+
+A secret must be set up for setting the `STORAGE_SECRET_ACCESS_KEY` environment variable. 
+
+| Name            | Type | Value | 
+| --------------- | ----- | ---- | 
+| `storage.secretAccessKey.environmentVariable` | string | `"STORAGE_SECRET_ACCESS_KEY"` |
+| `storage.secretAccessKey.existingSecret` | string |  `"<secret-name>"` |
+| `storage.secretAccessKey.existingSecretKey`| string | `"<secret-key>"` |
 
 Set force_path_style to true if using minio.
 
@@ -119,11 +143,11 @@ Set force_path_style to true if using minio.
 | --------------- | ----- | ---- | 
 | `configmap.STORAGE_FORCE_PATH_STYLE` | bool | `true` |
 
-## Using a single PVC (not recommended)
+## Using a single PVC (Not recommended)
 
 There is an option to use a local Persistent Volume Claim (PVC) for storage. This is not recommended, as the deployments pods won't be able to scale as there is one PVC per deployment.
 
 | Name            | Type | Value | 
 | --------------- | ----- | ---- | 
-| `storage.cloudProvider` | string | `"local"` |
+| `storage.cloudProvider` | string | `"none"` |
 | `storage.size` | string | `"10Gi"` |
