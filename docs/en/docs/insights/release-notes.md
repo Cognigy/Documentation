@@ -6,6 +6,32 @@
 
 # Release notes
 
+## 4.38.0 - Happy Halloween 🎃
+
+**Released** October 31st, 2022
+
+**Important announcement**:
+
+With release v4.30.0 we have officially marked our [kubernetes](https://github.com/cognigy/kubernetes) repository as `deprecated`. If you are an `on-premise` customer and you are running Cognigy.AI/Cognigy Insights yourself, please have a look at our [Helm Chart](https://github.com/cognigy/cognigy-ai-helm-chart) which we have crafted for Cognigy.AI/Cognigy Insights! Our Kubernetes repository will still receive updates `until 31st December 2022`.
+
+### Features
+
+#### Configurable TTL for entire Insights data
+
+This release of Cognigy Insights adds the ability to configure a TTL for all data we collect as part of Cognigy Insights. The TTL can either be configured on a system level or via the Cognigy Management UI
+
+### Improvements
+
+- Detailed view for Pie Chart graph showing all fractions (and reducing the default to only show the largest 10 fractions)
+- Improved by adding a TTL to all analytics services, for document expiration after a predefined time
+
+### Bugfixes
+
+- Remove tooltip clipping
+- Fixed a bug where sorting does not work on orderOfIntentsByAverageNluScore query
+- Fixed a bug where Transcript explore filtering is not working
+- Fixed a bug where users with liveAgentSupervisor role were not able to access insights
+
 ## 4.37.0
 
 **Released** October 18th, 2022
