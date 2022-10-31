@@ -143,7 +143,7 @@ During migration Cognigy.AI product will be moved from `default` to a different 
 1. The migration scripts can be found in [this](https://github.com/Cognigy/cognigy-ai-helm-chart) repository. Clone the repository and checkout to your current Cognigy.AI version:
 ```bash
 git clone https://github.com/Cognigy/cognigy-ai-helm-chart.git
-git checkout tags/<release_version>
+git checkout tags/<release>
 cd scripts/kustomize-to-helm-migration-scripts
 ```
 2. Place backup of existing secrets in `secrets` folder.
