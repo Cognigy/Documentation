@@ -15,7 +15,7 @@ ignore_macros: true
 - Kubernetes cluster meets general Cognigy.AI [prerequisites](https://docs.cognigy.com/ai/installation/prerequisites/#whitelisting-of-domains) **including hardware resources**
 - Backup of Cognigy secrets for kustomize installation (MongoDB and Redis connection strings) exists in a form of kubernetes manifests
 - **Cognigy.AI kustomize installation must be at the same version as Cognigy.AI Helm Chart during migration**
-- **Cognigy.AI kustomize installation must be v4.35**
+- Cognigy.AI kustomize installation must be >= v4.38
 - Snapshots/Backups of all PVCs/PVs (MongoDB, Redis-Persistent, flow-modules, flow-functions) are made before the migration starts
 
 ## Preparation for Migration 
