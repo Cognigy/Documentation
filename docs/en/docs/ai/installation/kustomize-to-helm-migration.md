@@ -140,9 +140,10 @@ This section describes the procedure to migrate Cognigy.AI from Kustomize to Hel
 ### Secrets Migration
 During migration Cognigy.AI product will be moved from `default` to a different namespace. In this document we consider `cognigy-ai` as target namespace, you can replace it with namespace of your choice, but we strongly recommend to use `cognigy-ai` namespace. Hence, it is required to migrate the existing secrets to the new namespace, and also to inform Helm release about the migrated secrets. To do so, execute the following steps:
 
-1. The migration scripts can be found in [this](https://github.com/Cognigy/cognigy-ai-helm-chart) repository.
+1. The migration scripts can be found in [this](https://github.com/Cognigy/cognigy-ai-helm-chart) repository. Clone the repository and checkout to your current Cognigy.AI version:
 ```bash
 git clone https://github.com/Cognigy/cognigy-ai-helm-chart.git
+git checkout tags/<release_version>
 cd scripts/kustomize-to-helm-migration-scripts
 ```
 2. Place backup of existing secrets in `secrets` folder.
