@@ -4,8 +4,9 @@ site_url: https://docs.cognigy.com/
 site_author: Cognigy
 copyright: Copyright &copy; 2022 <a href="https://www.cognigy.com/">Cognigy</a>
 #Temporarily disabled Suggest Edit section
-#repo_url: https://github.com/Cognigy/Documentation/
-#repo_name: cognigy/documentation
+repo_url: https://github.com/Cognigy/Documentation/
+repo_name: cognigy/documentation
+
 theme:
   name: material
   custom_dir: overrides
@@ -44,11 +45,27 @@ theme:
   logo: assets/img/Cognigy-white.svg
   favicon: assets/img/favicon.webp
   language: en
+
 nav:
 - Cognigy Products: index.md
+
 - Languages:
   - en: /
   - de: /de/
+
+- Release Notes:
+  - release-notes/release-notes.md
+  - 4.38:
+    - release-notes/4.38.md
+  - release-notes/4.37.md
+  - release-notes/4.36.md
+  - release-notes/4.35.md
+  - release-notes/4.34.md
+  - release-notes/4.33.md
+  - release-notes/4.32.md
+  - release-notes/4.31.md
+  - release-notes/4.30.md
+
 - AI:
   - ai/platform-overview.md
   - Release Notes:
@@ -310,10 +327,11 @@ nav:
     - ai/developer-guides/api-reference.md
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
+
 - Insights:
   - insights/cognigy-insights.md
   - Release Notes:
-    - insights/release-notes.md
+    - insights/release-notes/release-notes.md
   - insights/global-filter.md
   - insights/timezone.md
   - insights/dashboard-overview.md
@@ -323,6 +341,7 @@ nav:
   - insights/transcript-explorer.md
   - insights/message-explorer.md
   - insights/download-report.md
+
 - Webchat Widget:
   - ai/endpoints/webchat/webchat.md
   - ai/endpoints/webchat/webchat.md
@@ -330,10 +349,11 @@ nav:
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
+
 - Live Agent:
   - live-agent/overview.md
   - Release Notes:
-    - live-agent/release-notes.md
+    - live-agent/release-notes/release-notes.md
   - Getting Started:
     - live-agent/getting-started/live-agent-getting-started.md
   - Installation & Configuration:
@@ -375,6 +395,7 @@ nav:
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - live-agent/FAQs.md
+
 - Voice Gateway:
   - voicegateway/overview.md
   - Overview:
@@ -406,11 +427,14 @@ nav:
       # - voicegateway/webapp/speech-services.md
     # - Phone Numbers:
       # - voicegateway/webapp/phone-numbers.md
+
 - Marketplace:
   - ai/resources/manage/extensions.md
+
 - Help & Contact:
   - help/get-help.md
   - help/community.md
+
 markdown_extensions:
 - toc:
     permalink: true
@@ -461,6 +485,7 @@ markdown_extensions:
 - pymdownx.tilde
 - pymdownx.critic:
     mode: view
+
 extra:
   generator: false
   social:
@@ -482,10 +507,13 @@ extra:
   alternate:
   - link: /
     name: en
+
 extra_css:
 - assets/css/extra.css
+
 extra_javascript:
 - assets/js/custom.js
+
 plugins:
 - section-index
 - macros
