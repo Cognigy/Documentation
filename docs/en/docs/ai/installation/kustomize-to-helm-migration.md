@@ -94,15 +94,16 @@ The script will store all relevant old secrets in a folder called `original_secr
     mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
     rs.status()
     ```
+
 3. If you are setting up the Multi-replica MongoDB setup **on a different Kubernetes cluster**, then skip to step 5. If you are setting up the Multi-replica MongoDB setup **on the same Kubernetes cluster where single-replica MongoDB is running** then, connect to the primary MongoDB pod. For example if  `mongodb-0` is the primary node:
     ```bash
     kubectl exec -it mongodb-0 -n mongodb -- bash
     ```
 4. After attaching to the primary pod of the multi-replica MongoDB setup, execute the following command to take a dump of an existing database and restore it in the multi-replica MongoDB:
-
     ```bash
     mongodump --archive --authenticationDatabase admin -u admin -p <password> --host "mongo-server.default.svc:27017" | mongorestore --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017" --authenticationDatabase admin -u root -p <password> --archive --drop
     ```
+
 5. If you are setting up the Multi-replica MongoDB setup **on a different Kubernetes cluster**, you have to dump the existing database to your local client filesystem and import it into the multi-replica setup afterwards. The time of this operation heavily depends on the size of your database and your internet connection speed. To speed up the process, you can execute the commands from a server running in the same datacenter where your kubernetes clusters run. In case you follow this scenario, we strongly recommend to test dump process in advance to evaluate the downtime duration:
 
     1.  To make a dump to the local file system, log in into the old single replica MongoDB pod:

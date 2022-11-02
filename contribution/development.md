@@ -20,6 +20,7 @@ nerdctl run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/
 ```
 **You need to make sure that you execute this command in this repository as it will bind-mount the current folder into the running container!**
 
+Access the rendered mkdocs website under: http://localhost:8008/
 
 ## Writing Cognigy Docs
 Check the other files in this directory for guidance on how to write the Cognigy docs, HTML templates for blockquotes and badges, MKDocs markdown syntax references.
