@@ -90,9 +90,22 @@ The recommendation is to create a new secret under the Live Agent namespace and 
 
 #### Cognigy.AI Secret
 
+##### Kustomize
+
 The [Cognigy.AI secret `cognigy-live-agent-credentials`](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/secrets.dist/cognigy-live-agent-credentials.yaml) key, `cognigy-live-agent-platform-token`, must be the same value as the Live Agent secret key previously created in order for the integration to work.
 
 Remember to apply using `kubectl` the new manifest file.
+
+##### Helm
+
+In the case of using helm, the following values need to be set up:
+
+```yaml
+cognigyLiveAgent:
+  ## Existing secret with live-agent credentials. The secret must have the following key:
+  ##   "cognigy-live-agent-platform-token": The token for cognigy live agent
+  existingSecret: ""
+```
 
 #### Troubleshooting
 
@@ -126,7 +139,9 @@ For the OAuth client secret, create a secret in the Live Agent namespace and the
 
 >Note: The secret key value must be a random alphanumeric string of 64 characters, similar to `DUSOBAPM2L5V3CNLBw48surpgzrpk6bji9fav65xyf6ppheeac64g2d92pvwouhm`
 
-#### Cognigy.AI configmap_patch Overlay
+#### Cognigy.AI
+
+##### Kustomize
 
 New values need to be added to the [Cognigy.AI `configmap_patch.yaml` overlay](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/overlays/config-maps/config-map_patch.yaml) as well to make the integration work.
 
@@ -163,6 +178,21 @@ These are the following:
 ```
 
 Remember to apply using `kubectl` the new manifest file.
+
+##### Helm
+
+In the case of using helm, the following values need to be set up:
+  
+```yaml
+cognigyEnv:
+  ...
+  COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL: <live-agent-url>"
+  CLIENT_ID_COGNIGY_LIVE_AGENT: "cognigy-live-agent"
+  CLIENT_SECRET_COGNIGY_LIVE_AGENT: "<secret-value>"
+  REDIRECT_URI_COGNIGY_LIVE_AGENT: "<live-agent-url>/omniauth/cognigy/callback"
+  COGNIGY_LIVE_AGENT_UI_BASE_URL_WITH_PROTOCOL: "<live-agent-url>"
+  FEATURE_USE_COGNIGY_LIVE_AGENT: "true"
+```
 
 #### Troubleshooting
 
@@ -201,6 +231,19 @@ It will scan the file uploading for viruses and block the upload if a virus is f
 | `configmap.SECRET_KEY_BASE`           | Used to verify the integrity of signed cookies. Ensure a secure value is set.                       | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
 | `configmap.USE_INBOX_AVATAR_FOR_BOT`  | Bot Customizations                                                                                  | `"true"`                                                   |
 | `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)   | `""`                                                       |
+
+### Cookies Integrity
+
+Live Agent uses a secure stored for signing cookies. The `SECRET_KEY_BASE` value must be set to a secure value. The default value is set to a random string, but it is recommended to change it to a secure value.
+
+>Note: Previously the `SECRET_KEY_BASE` was set directly under the `configmap` section. This is now deprecated and should be set under the `cookiesIntegrity` section. For previous installations, it is recommended to create an existing secret, otherwise the value will change and all the Live Agent user sessions will expire.
+
+```yaml
+cookiesIntegrity:
+  # Uncomment these lines in case there is an existing secret and don't want to create it on install
+  # existingSecret: "<secret-name>"
+  # existingSecretKey: "<secret-key>"
+```
 
 ### Rest Client SSL
 
@@ -281,4 +324,8 @@ Ensure pods are restarted after updating the values.
 | `services.type` | string | `"LoadBalancer"` |
 | `tolerations` | list | `[]` |
 | `app.replica` | int | `1` |
+| `app.extraVolumes` | object | `{}` |
+| `app.extraVolumeMounts` | object | `{}` |
 | `worker.replica` | int | `1` |
+| `worker.extraVolumes` | object | `{}` |
+| `worker.extraVolumeMounts` | object | `{}` |

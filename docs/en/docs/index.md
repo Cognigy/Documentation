@@ -5,6 +5,7 @@
   - navigation
   - toc
 ---
+
 <style>
   @media only screen and (min-width: 76.125em) {
     .md-content {
@@ -14,7 +15,9 @@
     }
   }
 </style>
+
 #
+
 <figure >
   <img class="image-center logo-home-page" src="{{config.site_url}}assets/img/Cognigy-blue.svg" width="50%" />
   <br>
@@ -123,6 +126,4 @@
       </div>
     </div>
   </a>
-
 </div>
-
