@@ -4,7 +4,6 @@
  hidden: false 
 ---
 # Genesys Cloud Integration
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
 
 ## Description
 
