@@ -10,7 +10,6 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/28475-amazon-lex-icon.jpg" width="100%" />
 </figure>
 
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
 
 The **Amazon Lex Endpoint** allows you to connect your Amazon Lex bots with Cognigy.AI.
 

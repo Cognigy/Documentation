@@ -268,7 +268,7 @@ nav:
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
-    # - ai/endpoints/amazon-lex.md
+    - ai/endpoints/amazon-lex.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
     - ai/endpoints/azure-bot-services.md
@@ -305,7 +305,7 @@ nav:
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
-    # - ai/handover-providers/genesys-cloud.md
+    - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/livechat-handover.md
 
   - ai/architecture.md
