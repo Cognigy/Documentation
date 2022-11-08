@@ -19,3 +19,6 @@ This Node is used to deactivate a specific contact profile in case a contact req
 
 ???+ success "Common usage"
     It is common to place this node behind an ``If Node`` that is only activated if the contact specifically requests that you shouldn't collect data their data.
+
+???+ danger "Important"
+    The user's data won't be available anymore after executing this node: It deletes the whole profile including **all analytics data** and **all transcripts** this user had so far.
