@@ -43,7 +43,7 @@ CognigyScript in Node Arguments is always returned as string, unless you force t
 
 ## For JSON arguments
 
-Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"} }` has to be used to run CognigyScript. We have to supply a script and a return type. If the return type isn't equal to the requested type, Cognigy.AI will try to convert the return type to it.
+Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"} }` can to be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, e.g String "6" to a number, or an Object to a String.
 
 **Example with Typing**
 ```JavaScript
@@ -60,10 +60,10 @@ Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"
 **Example with Inline CognigyScript**
 ```JavaScript
 {
-    "customer_orders": "{ {context.orders} }"
+    "customer_orders": "{{context.orders}}"
 }
 ```
-This would try to retrieve the orders object from the Context and assign it to customer_orders. If it doesn't exist, it would return undefined.
+This would try to retrieve the orders Object from the Context and assign it to customer_orders. If context.orders doesn't exist, the "customer_orders" key is simply skipped.
 
 ## IF Conditions and SWITCH Operands
 
