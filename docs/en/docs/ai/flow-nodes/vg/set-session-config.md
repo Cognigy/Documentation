@@ -15,4 +15,4 @@
 The Set Session Config Node configures the Voice Gateway session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
 
 ???+ info "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vgv2/parameter-details) page.
+    You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.
