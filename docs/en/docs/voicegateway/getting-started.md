@@ -40,13 +40,8 @@ In order to do enable voice-based experiences with your Virtual Agent create you
 
 ## How to route your Endpoint and Contact Center or Phone Number to Voice Gateway?
 
-In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint you need to go to the **Voice Gateway Web App**. For this step your Voice Gateway Endpoint URL is needed. This URL can be found in your Endpoint settings.
+In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint your SIP Trunk needs to be set up. Please get in touch with us to configure your SIP Trunk and route your number to the right endpoint.
 
-<img src="{{config.site_url}}voicegateway/images/VG-endpoint-url.png" width="Voice Gateway Endpoint URL" />
-
-Head over to our Voice Gateway Web App documentation to find all the detailed information about the necessary steps.
-
-- [**Voice Gateway Web App Documentation**]({{config.site_url}}voicegateway/webapp/overview/)
 
 ???+ warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Cognigy Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
