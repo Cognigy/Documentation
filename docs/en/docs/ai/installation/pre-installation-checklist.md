@@ -20,7 +20,7 @@ Before proceeding with your on-prem installation with or without installation su
 
 6. `kubectl` and `helm` utilities are installed with **required versions**
 
-7. Kubernetes cluster has enough resources: at least 6 x `c5.2xlarge` worker nodes on AWS EKS or equivalents on other cloud providers and 100 GB root SSD storage per worker node
+7. Kubernetes cluster has enough resources: at least 6 x worker nodes (8 CPU, 16 GB RAM, `x86_64` architecture, 100 GB root SSD storage)
 
 8. Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup if possible
 
