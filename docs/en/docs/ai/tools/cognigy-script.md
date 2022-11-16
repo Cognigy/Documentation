@@ -60,7 +60,7 @@ Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"
 **Example with Inline CognigyScript**
 ```JavaScript
 {
-    "customer_orders": "{{context.orders}}"
+    "customer_orders": "{{ "{{context.orders}}" }}"
 }
 ```
 This would try to retrieve the orders Object from the Context and assign it to customer_orders. If context.orders doesn't exist, the "customer_orders" key is simply skipped.
