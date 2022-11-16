@@ -3,13 +3,22 @@ site_description: Documentation of Cognigy products
 site_url: https://docs.cognigy.com/
 site_author: Cognigy
 copyright: Copyright &copy; 2022 <a href="https://www.cognigy.com/">Cognigy</a>
+#Temporarily disabled Suggest Edit section
 repo_url: https://github.com/Cognigy/Documentation/
 repo_name: cognigy/documentation
+
 theme:
   name: material
   custom_dir: overrides
   palette:
   - scheme: default
+  #   toggle:
+  #     icon: material/lightbulb-outline
+  #     name: Switch to dark mode
+  # - scheme: slate
+  #   toggle:
+  #     icon: material/lightbulb
+  #     name: Switch to light mode
   font:
     text: Mulish
   features:
@@ -36,11 +45,14 @@ theme:
   logo: assets/img/Cognigy-white.svg
   favicon: assets/img/favicon.webp
   language: en
+
 nav:
 - Cognigy Products: index.md
+
 - Languages:
   - en: /
   - de: /de/
+
 - Release Notes:
   - release-notes/release-notes.md
   - release-notes/4.39.md
@@ -54,6 +66,7 @@ nav:
   - release-notes/4.32.md
   - release-notes/4.31.md
   - release-notes/4.30.md
+
 - AI:
   - ai/platform-overview.md
   - Release Notes:
@@ -81,6 +94,8 @@ nav:
     - Tweak:
       - ai/resources/tweak/tweak.md
       - ai/resources/tweak/intent-trainer.md
+    # - Analytics:
+    #   - ai/resources/analytics.md
     - Insights:
       - insights/cognigy-insights.md
     - Manage:
@@ -96,6 +111,7 @@ nav:
     - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
+    # - ai/flow-nodes/dynamic-node-fields.md
     - Message:
       - ai/flow-nodes/message/message.md
       - ai/flow-nodes/message/say.md
@@ -292,7 +308,9 @@ nav:
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/livechat-handover.md
+
   - ai/architecture.md
+  
   - Installation & Configuration:
     - ai/installation/overview.md
     - ai/installation/browser-requirements.md
@@ -310,6 +328,7 @@ nav:
     - ai/developer-guides/api-reference.md
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
+
 - Insights:
   - insights/cognigy-insights.md
   - Release Notes:
@@ -323,6 +342,7 @@ nav:
   - insights/transcript-explorer.md
   - insights/message-explorer.md
   - insights/download-report.md
+
 - Webchat Widget:
   - ai/endpoints/webchat/webchat.md
   - ai/endpoints/webchat/webchat.md
@@ -330,6 +350,7 @@ nav:
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
+
 - Live Agent:
   - live-agent/overview.md
   - Release Notes:
@@ -357,11 +378,11 @@ nav:
       - live-agent/tools/odata-endpoint.md
   - Conversation:
     - Workflow:
-      - live-agent/conversation/conversation-workflow.md
+        - live-agent/conversation/conversation-workflow.md
     - Routing:
-      - live-agent/conversation/conversation-routing.md
+        - live-agent/conversation/conversation-routing.md
     - Assist Bot:
-      - live-agent/conversation/assist-bot.md
+        - live-agent/conversation/assist-bot.md
   - live-agent/inboxes.md
   - live-agent/agents.md
   - live-agent/roles.md
@@ -375,21 +396,46 @@ nav:
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - live-agent/FAQs.md
+
 - Voice Gateway:
   - voicegateway/overview.md
   - Overview:
     - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
+  # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
     - voicegateway/installation/installation-process.md
+    #- voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
+    # - Deployment:
+    #   - voicegateway/installation/installation-process.md
+  # Temporary disabled until the Web App is done
+  # - Web App:
+    # - voicegateway/webapp/overview.md
+    # - Accounts:
+      #- voicegateway/webapp/accounts.md
+    # - Applications:
+      # - voicegateway/webapp/applications.md
+    # - Recent Calls:
+      # - voicegateway/webapp/recent-calls.md
+    # - Alerts:
+      # - voicegateway/webapp/alerts.md
+    # - Carriers:
+      # - voicegateway/webapp/carriers.md
+    # - Speech Services:
+      # - voicegateway/webapp/speech-services.md
+    # - Phone Numbers:
+      # - voicegateway/webapp/phone-numbers.md
+
 - Marketplace:
   - ai/resources/manage/extensions.md
+
 - Help & Contact:
   - help/get-help.md
   - help/community.md
+
 markdown_extensions:
 - toc:
     permalink: true
@@ -440,6 +486,7 @@ markdown_extensions:
 - pymdownx.tilde
 - pymdownx.critic:
     mode: view
+
 extra:
   generator: false
   social:
@@ -461,10 +508,13 @@ extra:
   alternate:
   - link: /
     name: en
+
 extra_css:
 - assets/css/extra.css
+
 extra_javascript:
 - assets/js/custom.js
+
 plugins:
 - section-index
 - macros
