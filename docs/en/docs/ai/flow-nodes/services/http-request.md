@@ -123,7 +123,7 @@ Here you define the context key where you want to store the response from the ex
 After the HTTP request has been successfully executed you can access the response payload by executing the following [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/):
 
 ```
-{ { context.<yourContextStore> } }
+{{ " {{ context.<yourContextStore> }}" }}
 ```
 
 <figure>

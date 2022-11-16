@@ -23,11 +23,11 @@ There are two types of slots:
 
 System and User-Created slots can be accessed quite simply through CognigyScript.
 
-`{ {input.slots} }` contains all found slots, tags and keyphrases.
+`{{ " {{input.slots}}" }}` contains all found slots, tags and keyphrases.
 
 | CognigyScript  | Description |
 | -------------- | ----------- |
-| `{ {input.slots.tagName} }` | Returns the keyphrase array for the tag `tagName` |
+| `{{ " {{input.slots.tagName}}" }}` | Returns the keyphrase array for the tag `tagName` |
 
 ## System-defined Slots
 <div class="divider"></div>

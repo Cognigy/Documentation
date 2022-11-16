@@ -18,7 +18,7 @@ The Execute Cognigy NLU Node is used to execute the COGNIGY.AI NLU Pipeline with
 
 | Parameter | Type | Description |
 | --------- | ---- | ----------- |
-| Text | CognigyScript | The text that will be performed NLU on. Can be { { input.text } } to run the NLU Pipeline with the user's message. |
+| Text | CognigyScript | The text that will be performed NLU on. Can be {{ " {{ input.text }}" }} to run the NLU Pipeline with the user's message. |
 | Data | JSON | Data to send to the NLU Pipeline. Can be used to modify input.data |
 | Mode | Select | There are three modes available which control how the output of the NLU Pipeline will be stored. The available selections are<br/>**Overwrite:** This selection will overwrite the Input Object with the result of the NLU Pipeline.<br />**Input:** This selection will store the result of the NLU Pipeline into the Input Object under a different key as specified in the store field. This is useful if you are e.g. running the NLU Pipeline a second time with a completely different text than the user input.<br />**Context:** This selection will store the result of the NLU Pipeline into the Context under the key specified in the store field |
 | Store | CognigyScript | Where to store the result of the NLU Pipeline in either the Context or the Input Object, depending on the selected mode.<br />**NOTE** If the mode is set to ``overwrite`` then the store field doesn't do anything|
