@@ -15,7 +15,7 @@ The Flow can read from and write to the Context by saving user messages, slots, 
 <div class="divider"></div>
 
 
-Flow nodes can dynamically access Context properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens/) or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) e.g. `{ {context.property} }`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
+Flow nodes can dynamically access Context properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens/) or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
 
 **Example**
 
@@ -27,8 +27,8 @@ Flow nodes can dynamically access Context properties via [Tokens]({{config.site_
 }
 ```
 
-* `{ {context.user.name} }` would return `Luke Skywalker`
-* `{ {context.user.age} }` would return ` ` (empty string) or - if used in a condition - `false`
+* `{{ " {{context.user.name}}" }}` would return `Luke Skywalker`
+* `{{ " {{context.user.age}}" }}` would return ` ` (empty string) or - if used in a condition - `false`
 
 
 ???+ success "Edit, Save or Reset your current Context"

@@ -9,15 +9,15 @@ CognigyScript is a superset of JavaScript which gives you access to the [Input](
 
 Using CognigyScript, you can execute powerful scripts to create the replies you want to return to the client.
 
-Within text, you write CognigyScript within `{ { } }` tags. Example: `{ {input.text} }`
+Within text, you write CognigyScript within `{{"{{ }}"}}` tags. Example: `{{"{{input.text}}"}}`
 
 CognigyScript is essentially JavaScript, but gives you access to the Cognigy objects via exposed variables:
 
 |Variable|Description|Example|
 |---|---|---|
-|input|	The Input Object|{ {input.text} }|
-|context|The Context Object|{ {context.selectedHotel} }|
-|profile|The Contact Profile Object|{ {profile.firstname} }|
+|input|	The Input Object|{{ " {{input.text}}" }}|
+|context|The Context Object|{{ " {{context.selectedHotel}}" }}|
+|profile|The Contact Profile Object|{{ " {{profile.firstname}}" }}|
 
 ## Node Arguments
 
@@ -27,23 +27,23 @@ Accessing the CognigyScript functionality differs between different types of arg
 
 ## For Text arguments
 
-Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{ { } }` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
+Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{{"{{ }}"}}` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
 
 ???+ info "Invalid expressions return an empty string"
     If the expression is invalid, an empty string is returned.
 
 *Example*
-`{ {input.text.toUpperCase()} }` would return the text the client sent all in upper case.
+`{{"{{input.text.toUpperCase()}}"}}` would return the text the client sent all in upper case.
 
 **Type Preservation**
 CognigyScript in Node Arguments is always returned as string, unless you force the type to be preserved. You can do this by appending `.preserveType()` to your script.
 
 *Example*
-`{ {context.anObject.preserveType()} }` will return whatever `anObject` is, so for example a JavaScript Object.
+`{{"{{context.anObject.preserveType()}}"}}` will return whatever `anObject` is, so for example a JavaScript Object.
 
 ## For JSON arguments
 
-Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"} }` can to be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, e.g String "6" to a number, or an Object to a String.
+Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"}}" }}` can to be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, e.g String "6" to a number, or an Object to a String.
 
 **Example with Typing**
 ```JavaScript
@@ -67,7 +67,7 @@ This would try to retrieve the orders Object from the Context and assign it to c
 
 ## IF Conditions and SWITCH Operands
 
-Within conditions, CognigyScript is also written without `{ {` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
+Within conditions, CognigyScript is also written without `{{"{{ }}"}}` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
 
 ???+ info "Example"
    `context.orders === 3` would be true, if the orders variable stored in the Context is 3.
@@ -75,7 +75,7 @@ Within conditions, CognigyScript is also written without `{ {` tags. It is evalu
 ## Code Nodes
 
 
-Within Code Nodes you don't need to use the { { } } tags. The `input`, `context`, `profile` and `actions` variables are exposed by default, as are `_` and `moment`.
+Within Code Nodes you don't need to use the {{ " {{ }}" }} tags. The `input`, `context`, `profile` and `actions` variables are exposed by default, as are `_` and `moment`.
 
 **Example**
 ```JavaScript

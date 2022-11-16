@@ -93,9 +93,9 @@ The detailed NLU results are published to the **nlu** variable which contains th
 <div class="divider"></div>
 
 
-Flow nodes can dynamically access Input properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens/) tokens or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) i.e. `{ {input.property} }`. The Cognigy Script used to access the input object follows the dot-notation `property.child.child`.
+Flow nodes can dynamically access Input properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens/) tokens or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) i.e. `{{ " {{input.property}}" }}`. The Cognigy Script used to access the input object follows the dot-notation `property.child.child`.
 
-Example: `{ {input.text} }` would return the text message that was sent to the Flow.
+Example: `{{ " {{input.text}}" }}` would return the text message that was sent to the Flow.
 
 
 ## More information
