@@ -11,7 +11,8 @@ theme:
   name: material
   custom_dir: overrides
   palette:
-  - scheme: default
+    scheme: default
+  # - scheme: default
   #   toggle:
   #     icon: material/lightbulb-outline
   #     name: Switch to dark mode
