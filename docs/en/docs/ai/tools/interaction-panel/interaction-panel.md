@@ -43,16 +43,31 @@ When **Chat** is selected as the input mode, the *Virtual Agent* can be triggere
 
 It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [**Interaction Panel settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#input). Any data sent to Cogngiy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{{ " {{input.data}}" }}```
 
-#### Playbook
-When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+#### Voice Call
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}})
+
+When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
+
+Before starting a voice call, you need to configure an **Audio Provider** in Agent Settings page. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-playbook.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/agent-settings-audio-provider-settings.png" width="100%" />
 </figure>
 
+Based on the selected *Audio Provider*, the list of supported STT/TTS language and voice will change. You can choose your preffered language and voice for your test call from the [**Voice Call**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#voice-call_1) section of Settings tab in Interaction Panel. 
 
-???+ success "Tip: Configuring Playbook Execution"
-	You can further configure the Playbook execution under the [**Interaction Panel Playbook settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
+After configuring the Audio Provider, language and voice, you can start the call by simply clicking the **Start Call** button.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-start-voice-call.png" width="60%" />
+</figure>
+
+When the call is ongoing, you will be able to see how long the call is currently active with the help of the call timer below the **End Call** button. In addition, DTMF tones can also be inserted during the call using the **Dialpad**. You will also be able to see the conversation and follow the test voice call.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-end-voice-call.png" width="100%" />
+</figure>
 
 #### Live Follow
 
@@ -65,6 +80,17 @@ By selecting **Live Follow** as the input mode, you will be able to follow the c
 </figure>
 
 You can test this input mode with our demo webchat in Endpoint Editor. For further information, please refer to *Manually defining the user ID* info box [here]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/#description).
+
+#### Playbook
+When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-playbook.png" width="100%" />
+</figure>
+
+
+???+ success "Tip: Configuring Playbook Execution"
+	You can further configure the Playbook execution under the [**Interaction Panel Playbook settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
 
 ## Info
 <div class="divider"></div>
@@ -129,6 +155,16 @@ If enabled, the Interaction Panel will display additional information about the 
 
 #### Channel Select
 We can also filter the messages in the Interaction panel by a specific channel. By default, outputs from all channels will be displayed.
+
+### Voice Call
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}})
+
+This section allows you to choose the language and voice for testing the voice calls from Interaction Panel.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-voice-settings.png" width="100%" />
+</figure>
 
 ### Playbooks
 This section lets you configure the Playbook executions in the Interaction Panel.
