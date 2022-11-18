@@ -49,13 +49,13 @@ It is common for messages to be sent to Cognigy.AI with attached data. It is pos
 
 When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
 
-Before starting a voice call, you need to configure an **Audio Provider** in Agent Settings page. 
+Before starting a voice call, you need to configure an **Audio Provider** in the Agent Settings page. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/agent-settings-audio-provider-settings.png" width="100%" />
 </figure>
 
-Based on the selected *Audio Provider*, the list of supported STT/TTS language and voice will change. You can choose your preffered language and voice for your test call from the [**Voice Call**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#voice-call_1) section of Settings tab in Interaction Panel. 
+Based on the selected *Audio Provider*, the list of supported STT/TTS languages and voices will change. You can choose your preferred language and voice for your test call from the [**Voice Call**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#voice-call_1) section of the Settings tab in the Interaction Panel. 
 
 After configuring the Audio Provider, language and voice, you can start the call by simply clicking the **Start Call** button.
 
