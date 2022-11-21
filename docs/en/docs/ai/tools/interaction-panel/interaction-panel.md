@@ -47,6 +47,9 @@ It is common for messages to be sent to Cognigy.AI with attached data. It is pos
 
 [![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
 
+???+ info "Feature availability"
+    This feature is currently hidden behind the flag *FEATURE_ENABLE_YES_NO_INTENTS*. React out to the support team if you want to enable this feature.
+
 When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
 
 Before starting a voice call, you need to configure an **Audio Provider** in the Agent Settings page. 
@@ -68,9 +71,6 @@ When the call is ongoing, you will be able to see how long the call is currently
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-end-voice-call.png" width="100%" />
 </figure>
-
-???+ info "Feature availability"
-    This feature is currently hidden behind the flag *FEATURE_ENABLE_YES_NO_INTENTS*. React out to the support team if you want to enable this feature.
 
 #### Live Follow
 
