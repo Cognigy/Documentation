@@ -37,7 +37,9 @@ It may happen that `service-security` deployment gets restarted several times du
 ```
 kubectl logs -n=cognigy-ai --previous deployment/service-security
 ```
-If `service-security` was restarted several times, to reset init user credentials you will need to drop `service-security` database in MongoDB database and restart `service-security` deployment. Here is a separate document on how to [Reset Initial Credentials](reset-init-user-credentials.md)
+If `service-security` was restarted several times, to reset init user credentials you will need to drop `service-security` database in MongoDB database and restart `service-security` deployment. 
+
+**IMPORTANT: All Organizations and Users will be lost during this process. Perform it only during initial Cognigy.AI setup**.  Here is a separate document on how to [Reset Initial Credentials](reset-init-user-credentials.md)
 
 ## License Key Activation
 Once you obtained the initial user credentials, visit the web interface of Cognigy.AI, but replace the URL ending `/login` with `/license`. This will open our license activation screen which looks quite similar to the login-form but with an additional license-key field:
