@@ -22,16 +22,18 @@ The screen will show an overview of all the reports.
   <figcaption>Reports</figcaption>
 </figure>
 
-### Overview
+### Overview - Supervisor Dashboard
 <div class="divider"></div>
 
-Click on the Overview tab in Reports. A graph will show all the open Conversations and agent statuses.
+Click on the Overview tab in Reports. 
 
-It also shows the number of open conversations assigned to different agents.
+This will give you a current overview of all conversations and an indicator how many conversations came in within the last 24 hours. 
+Furthermore you will see an overview of the Agent Status as well as some metrics regarding the conversation handling. At the end of the page you will find the conversation overview and handling separated by Agent. 
 
+This dashboard is only visible with the [Supervisor Role]({{config.site_url}}/live-agent/roles/)
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-reports-overview.png" width="100%" alt="Overview Report Screen" />
-  <figcaption>Overview Report Screen</figcaption>
+<img src="{{config.site_url}}live-agent/images/Supervisor-Dashboard-v1.png" width="100%" alt="Overview Report Screen" />
+  <figcaption>Supervisor Dashboard</figcaption>
 </figure>
 
 ### Agents
