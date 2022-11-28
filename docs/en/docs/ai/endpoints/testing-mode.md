@@ -48,4 +48,4 @@ POST https://<ENDPOINT_BASE_URL>/test/<URL_TOKEN>
 Messages that were sent using the "Testing Mode" will not increase the "Billable Message Count" in a Conversation. 
 If a Conversation exclusively consists of Inputs that were received using the "Testing Mode", it will have `0` counted Inputs and will not be billed.
 
-However, in addition to the "Billable Conversation Count", Cognigy.AI also tracks "Total Conversation Count, including Testing Mode", and both metrics are contained in the "Billing Reports".
+However, in addition to the "Billable Conversation Count", Cognigy.AI also tracks "Total Conversation Count, including Testing Mode", and both metrics are contained in the "Billing Reports" to Cognigy in order to prevent abusive usage.
