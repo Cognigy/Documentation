@@ -254,6 +254,7 @@ nav:
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
     - ai/endpoints/real-time-translation-settings.md
+    - ai/endpoints/testing-mode.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
