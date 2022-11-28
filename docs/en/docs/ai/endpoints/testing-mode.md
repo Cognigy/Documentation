@@ -16,7 +16,6 @@ You can use them to:
 
 - Periodically check the availability of your Virtual Agent.
 - Run End-To-End tests given the conditions of particular End-User environments.
-- ...
 
 ## Availability
 
