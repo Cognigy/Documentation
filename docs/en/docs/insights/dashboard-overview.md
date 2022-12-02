@@ -10,7 +10,7 @@
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/39bce30-Dashboard_Overview_1.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/overview_dashboard_overall.png" width="100%" />
   <figcaption>Overview dashboard</figcaption>
 </figure>
 
@@ -25,11 +25,11 @@ The dashboard overview page contains various metrics displayed as numerical perc
     **When hovering any chart or metrics field, rating details will be displayed in a tooltip.**
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/5abad80-Dashboard_Overview_4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/overview_dashboard_tiles.png" width="100%" />
   <figcaption>Overview dashboard - 1</figcaption>
 </figure>
 
-When hovering the line chart, details as for example the rated month, the year and the exact number of conversations will be displayed.
+When hovering the line chart, details as for example the rated month, the year and the exact number of sessions will be displayed.
 
 **Each chart can display data in two ways:**
 
@@ -42,10 +42,10 @@ When hovering the line chart, details as for example the rated month, the year a
 |Graph title|	Description|
 |--|--|
 |Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
-|Conversation count|	 A conversation is defined as a user session with the system that contains a maximum of 50 Inputs and occurs on the same day. This mean for example, that the sessions which were 51 Inputs+ would only count as one Conversation in "Sessions by Channel" tile, but two (or more) in Insights Conversation count. Conversation count indicates the total number of conversations, including ongoing and newly started conversations. This means if the conversation is started on 2nd June before 12am, and continues on in 3nd June, it will be counted in the Insights conversation count dashboard (the report is arranged in a tile).|
+|Session count|	 A session is defined as a user session with the system. Session count indicates the total number of sessions, including ongoing and newly started sessions. This means if the session is started on 2nd June before 12am, and continues on in 3nd June, it will be counted in the Insights session count dashboard (the report is arranged in a tile).|
 |Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile).|
 |Positive Ratings	|Indication of the NLU quality (the report is arranged in a tile).|
-|Conversations|	A line chart displays the number of conversations on a timescale.|
+|Sessions|	A line chart displays the number of sessions on a timescale.|
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/81da91e-Dashboard_Overview_5.png" width="100%" />
@@ -59,8 +59,6 @@ When hovering the line chart, details as for example the rated month, the year a
 |Users by Locale|	Stacked bar chart display of time-related recognized conversations depending on different locales given in percentages.|
 |Top Goals|	The top-rated number of goals will be displayed in a bar chart.|
 
-???+ info "Note"
-    **Insights Conversation count**: A conversation is defined as a user session with the system that contains a maximum of 50 Inputs and occurs on the same day. <br> **Insights Session by channel**: A Session by channel is defined or counted by the number of unique sessions. <br> This mean for example, that the sessions which were 51 Inputs+ would only count as one Conversation in **Session by channel**, but two (or more) in Insights **Conversation count** tile. 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/2da6af6-Dashboard_Overview_6.svg" width="100%" />
   <figcaption>Overview dashboard - 3</figcaption>
