@@ -14,7 +14,7 @@
 ## Description
 
 <div class="divider"></div>
-Continuous ASR enables the Voice Gateway to concatenate multiple STT recognitions of the user and then send them as a single textual message to the bot.
+Continuous ASR enables the system to concatenate multiple STT recognitions of the user and then send them as a single textual message to the bot.
 <br/><br/>
 
 When executed, the settings will apply for the remainder of the session.
