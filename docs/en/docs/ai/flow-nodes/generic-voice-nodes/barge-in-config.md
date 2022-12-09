@@ -14,7 +14,7 @@
 ## Description
 
 <div class="divider"></div>
-The Barge In - Config node is a session config that enables the interruption of the bot.
+The Barge In - Config Node is a session config that enables the interruption of the bot.
 <br/><br/>
 When executed, the settings will apply for the remainder of the session.
 <br/><br/>
@@ -25,6 +25,5 @@ When executed, the settings will apply for the remainder of the session.
 | Barge In Minimum Words | Slider | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge in |
 | Barge In On DTMF       | Toggle | Enables to interrupt the bot with DTMF digits. Capturing of DTMF signals is enabled by default             |
 | DTMF Inter Digit Timeout | Number | Defines the timeout in between collected DTMF digits                                                     |
-| DTMF Max Digits          | Number | Defines the maximum number of digits which can be entered by the user, the digits are being submitted automatically once this limit is reached |
-| DTMF Min Digits          | Number | Defines the mininum number of digits before they are forwarded to the bot. This can be overridden by a submit digit                            |
+| DTMF Max Digits          | Number | Defines the maximum number of digits which can be entered by the user, the digits are being submitted automatically once this limit is reached |                      |
 | DTMF Submit Digit        | CognigyScript   | Defines the DTMF submit digit which will be used for submitting the previously entered digits. This overrides the minimum digits validation    |

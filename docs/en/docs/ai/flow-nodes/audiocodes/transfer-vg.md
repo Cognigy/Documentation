@@ -1,9 +1,9 @@
 ---
- title: "Transfer (AudioCodes)" 
+ title: "Transfer" 
  slug: "transfer-ac" 
  hidden: false 
 ---
-# Transfer (AudioCodes)
+# Transfer
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-transfer-node.png" width="100%" />

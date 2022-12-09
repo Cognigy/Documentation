@@ -23,8 +23,7 @@ When executed, the settings will apply for the remainder of the session.
 | ------------------------ | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Capture DTMF signals     | Toggle | Enables capturing of DTMF signals by the bot                                                                                                   |
 | DTMF Inter Digit Timeout | Number | Defines the timeout in between collected DTMF digits                                                                                                        |
-| DTMF Max Digits          | Number | Defines the maximum number of digits which can be entered by the user, the digits are being submitted automatically once this limit is reached |
-| DTMF Min Digits          | Number | Defines the mininum number of digits before they are forwarded to the bot. This can be overridden by a submit digit                            |
+| DTMF Max Digits          | Number | Defines the maximum number of digits which can be entered by the user, the digits are being submitted automatically once this limit is reached |                         |
 | DTMF Submit Digit        | CognigyScript   | Defines the DTMF submit digit which will be used for submitting the previously entered digits. This overrides the minimum digits validation    |
 
 

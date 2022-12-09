@@ -14,7 +14,7 @@
 ## Description
 
 <div class="divider"></div>
-The Session Speech Parameters Config node enables the change of speech parameters during the flow.
+The Session Speech Parameters - Config Node enables the change of speech parameters during the flow.
 <br/><br/>
 When executed, the settings will apply for the remainder of the session.
 <br/><br/>

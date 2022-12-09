@@ -13,7 +13,7 @@
 
 ## Description
 <div class="divider"></div>
-The Play Node lets you stream a sound file into the call with the ability to loop it. MP3 and WAV encoded files are supported.
+The Play URL Node lets you stream a sound file into the call with the ability to loop it. MP3 and WAV encoded files are supported.
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
