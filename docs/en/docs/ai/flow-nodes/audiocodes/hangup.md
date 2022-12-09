@@ -16,4 +16,4 @@ The Hangup Node will instruct AudioCodes to end the call.
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
-| Reasons | CognigyScript | The reason for hanging up. Will show in VG logs. |
+| Reasons | CognigyScript | The reason for hanging up. Will show in AudioCodes logs. |

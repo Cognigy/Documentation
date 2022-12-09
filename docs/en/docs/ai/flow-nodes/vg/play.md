@@ -16,7 +16,7 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 
 | Parameter | Type | Description |
 | ----------- | ----------- | ----------- |
-| Media URL | Text | You can use MP3 or WAV encoded files |
+| Media URL | CognigyScript | You can use MP3 or WAV encoded files |
 | Loop count | Number | Number of times the media will be looped |
 | Set Activity Parameters | Toggle | Option to add parameters which will be valid for this activity only |
 
