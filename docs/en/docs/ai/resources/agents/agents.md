@@ -27,7 +27,7 @@ You can create Virtual Agents by clicking this button. A Virtual Agent is typica
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_basic_settings.png" width="100%" style="margin-bottom: 5px">
 
-- If [Cognigy Live Agent]({{config.site_url}}live-agent/overview) is setup for your infrastructure, then you will be able to setup a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and [Whisper Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview) for your Agent. You can see more details in the below section [3. Setup Project Live Agent Inbox]({{config.site_url}}ai/resources/agents/agents/#3-setup-project-live-agent-inbox)
+- If [Cognigy Live Agent]({{config.site_url}}live-agent/overview) is setup for your infrastructure, then you will be able to setup a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview) for your Agent. You can see more details in the below section [3. Setup Project Live Agent Inbox]({{config.site_url}}ai/resources/agents/agents/#3-setup-project-live-agent-inbox)
 
 - Select a Blank or any pre-build solution accelerators that can help you build the basic bot for you. 
 
@@ -58,11 +58,11 @@ The Live Agent section in the "Create Agent" wizard will only be visible if the 
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_nonadmin-liveagent_setup.png" width="100%" style="margin-bottom: 5px">
 
-- If the Live Agent Account is already configured for your Organisation, then you will be able to create a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and the [Whisper Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview).
+- If the Live Agent Account is already configured for your Organisation, then you will be able to create a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and the [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview).
 
-- Selecting "Don't use Whisper Agent Assist" will not setup any additional resources.
+- Selecting "Don't use Agent Assist" will not setup any additional resources.
 
-- Selecting "Setup Whisper Assist", a flow called "Whisper Assist" with a simple say node will be created and assigned as your Whisper Assist Flow.
+- Selecting "Setup Agent Assist", a flow called "Agent Assist" with a simple say node will be created and assigned as your Agent Assist Flow.
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_inbox.png" width="100%" style="margin-bottom: 5px">
 
