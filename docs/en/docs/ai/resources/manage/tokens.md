@@ -51,7 +51,7 @@ Creating a **Token** requires the following information:
     Tokens will automatically apply curly brackets to your script, therefore they must be omitted from the script field when creating tokens and from text fields when using tokens.
 
 ???+ info "Create Tokens from JSON"
-    You can create a Token directly from any JSON editor within Cognigy.AI. To do this, right the value you want to reference and select "Create Token from JSON Path" from the context menu. The "Script" field will already be pre-filled. You can also mark the value before right clicking it, to have the Name field pre-filled with the marked text.
+    You can create a Token directly from any JSON editor within Cognigy.AI. To do this, right click the value you want to reference and select "Create Token from JSON Path" from the context menu. The "Script" field will already be pre-filled. You can also mark the value before right clicking it, to have the Name field pre-filled with the marked text.
 
 ## Token Management Menu
 
