@@ -26,6 +26,7 @@ The "Testing Mode" is supported by the following Endpoint Types:
 | Endpoint | Supported Since Cognigy.AI Version |
 | -- | -- |
 | [REST](/ai/endpoints/rest) | `>= v4.27.0` |
+| [Socket.io](/ai/endpoints/socketio) | `>= v4.40.4` |
 
 ## Usage Instructions
 <div class="divider"></div>
@@ -40,6 +41,21 @@ To submit a "Test Mode" message, prepend `/test/` before the `<URL TOKEN>` in th
 POST https://<ENDPOINT_BASE_URL>/test/<URL_TOKEN>
 ```
 
+### Socket.io Endpoint
+
+To submit a "Test Mode" message, establish a socket connection with a Cognigy Socket Endpoint and pass a `testMode` query parameter option to `true` in the socket client like the below example (it may differ based on which socket client library we are using):
+
+```
+socketClient = new SocketClient({<provide your config parameters>})
+...
+
+if (config.testMode) {
+	socketClient.io.opts.query["testMode"] = "true";
+}
+
+socketClient.connect();
+...
+```
 ## Impact on Billing
 
 <div class="divider"></div>
