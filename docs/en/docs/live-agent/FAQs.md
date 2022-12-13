@@ -75,7 +75,6 @@ Under the profile menu, there is a link called "Cognigy.AI" that heads over to t
 </figure>
 
 ### How to see a location sent from WhatsApp with Google Maps
-// https://docs.cognigy.com/live-agent/installation/helm-values/helm-values/#app
 A Google Maps Token is needed and must be added, head over to [App]({{config.site_url}}live-agent/installation/helm-values/helm-values/#app) for learning how to configure it.
 
 ## Live Agent OData service
