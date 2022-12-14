@@ -1,4 +1,4 @@
-:root {
+:root > * {
   --md-primary-fg-color: #0b3694;
   --md-primary-fg-color--light: #ecb7b7;
   --md-primary-fg-color--dark: #0d1117;
@@ -146,6 +146,7 @@ li.md-nav__item.md-nav__item--active.md-nav__item--nested > .md-nav__link {
 
 .md-footer__inner,
 .md_grid,
+.md-footer__inner:not([hidden]),
 .md-footer-copyright__highlight::backdrop,
 body > div.md-container > nav > div > ul > li:nth-child(2),
 body > header > nav > div.md-header__title > div > div:nth-child(1) > span {

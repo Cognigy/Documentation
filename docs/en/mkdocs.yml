@@ -12,7 +12,6 @@ theme:
   custom_dir: overrides
   palette:
     scheme: default
-  # - scheme: default
   #   toggle:
   #     icon: material/lightbulb-outline
   #     name: Switch to dark mode
@@ -46,6 +45,10 @@ theme:
   logo: assets/img/Cognigy-white.svg
   favicon: assets/img/favicon.webp
   language: en
+extra_css:
+- assets/css/extra.css
+extra_javascript:
+- assets/js/custom.js
 
 nav:
 - Cognigy Products: index.md
@@ -509,14 +512,7 @@ extra:
   alternate:
   - link: /
     name: en
-
-extra_css:
-- assets/css/extra.css
-
-extra_javascript:
-- assets/js/custom.js
-
 plugins:
-- section-index
+#- section-index
 - macros
 - search
