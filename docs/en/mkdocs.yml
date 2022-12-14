@@ -525,6 +525,6 @@ extra:
   - link: /
     name: en
 plugins:
-#- section-index
+- section-index
 - macros
 - search
