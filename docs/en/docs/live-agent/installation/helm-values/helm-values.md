@@ -228,7 +228,7 @@ It will scan the file uploading for viruses and block the upload if a virus is f
 | Name                                  | Description                                                                                         | Default Value                                              |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | `configmap.FORCE_SSL`                 | Force all access to the app over SSL, default is set to false.                                      | `"false"`                                                  |
-| `configmap.SECRET_KEY_BASE`           | Used to verify the integrity of signed cookies. Ensure a secure value is set.                       | `"wsedrfghjhygtfrdecfvbhnygtfvbtyftctdrxresxcygvujhb"`     |
+| `configmap.GOOGLE_MAPS_API_TOKEN`     | This value is used to load a Google Maps map with the location shared by the user.                  | `""`                                                       |
 | `configmap.USE_INBOX_AVATAR_FOR_BOT`  | Bot Customizations                                                                                  | `"true"`                                                   |
 | `configmap.FRONTEND_EXTERNAL_URL`     | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload)   | `""`                                                       |
 
