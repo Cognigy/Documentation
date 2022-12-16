@@ -48,8 +48,6 @@ To submit the "Test Mode" message, establish a socket connection with a Cognigy 
 ```javascript
 const { SocketClient } = require("@cognigy/socket-client");
 
-You can pass a third argument to `SocketClient` to set test mode option as follows:
-
 const client = new SocketClient("https://socket.url", "socket-token", {
   testMode: true,
 });
