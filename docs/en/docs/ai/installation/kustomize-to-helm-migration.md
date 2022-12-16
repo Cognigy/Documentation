@@ -12,6 +12,7 @@ ignore_macros: true
 - Kubernetes v1.21 - 1.23
 - Kubectl utility installed locally on Linux or MacOS client host. **Windows client hosts are not supported by the following guide**.
 - [Helm](https://helm.sh/) v3.8+ installed on the client host.
+- [yq](https://github.com/mikefarah/yq/) installed on the client host.
 - Kubernetes cluster meets general Cognigy.AI [prerequisites](https://docs.cognigy.com/ai/installation/prerequisites/#whitelisting-of-domains) **including hardware resources**
 - Backup of Cognigy secrets for kustomize installation (MongoDB and Redis connection strings) exists in a form of kubernetes manifests
 - Using multi replica mongoDB Helm chart, check [the migration guide](https://docs.cognigy.com/ai/installation/single-replica-mongoDB-to-multi-replica-mongoDB-migration/) if required
@@ -61,7 +62,7 @@ python3 secret-migration.py -ns cognigy-ai
 kubectl create ns cognigy-ai
 kubectl apply -f migration-secrets
 ```
-### Prepare storage migration
+### Prepare persistent Volumes migration
 
 ???+ attention "Persistent Volumes Migration Scenario"
     In this subsection we consider "Migration inside the existing cluster" scenario. For "Migration to a new cluster" scenario you will need to restore the data from snapshots of persistent volumes made in the old cluster. We do not provide any commands for the second case, as this process heavily depends on your cloud provider.  Please, refer to your infrastructure data backup and restore processes and to the documentation of your cloud provider. 
@@ -130,7 +131,17 @@ Create another copy of PVC manifests which will be modified in next step
     kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc.yaml
     kubectl get pvc -n=default functions -o yaml > functions-pvc.yaml
     ```
-8. Edit PVC manifests saved in step 7 for all 3 PVCs and change `metadata.namespace` to `cognigy-ai`. Also add `meta.helm.sh/release-name: cognigy-ai` and `meta.helm.sh/release-namespace: cognigy-ai` under `metadata.annotations`. Also add `app.kubernetes.io/managed-by: Helm` under `metadata.labels`. **Beside that make sure `spec.volumeName` to the name of the respective PVs from step 2**.
+8. Remove unnecessary fields from PVC
+```bash
+for i in redis-persistent-pvc flow-modules-pvc functions-pvc
+do
+    yq -i 'del(.metadata.annotations, .metadata.finalizers, .metadata.labels,  .metadata.creationTimestamp, .metadata.resourceVersion, .metadata.uid, .status)' $i.yaml
+done
+```
+9. Edit PVC manifests saved in step 7 for all 3 PVCs and change `metadata.namespace` to `cognigy-ai`. Also add `meta.helm.sh/release-name: cognigy-ai` and `meta.helm.sh/release-namespace: cognigy-ai` under `metadata.annotations`. Also add `app.kubernetes.io/managed-by: Helm` under `metadata.labels`. **Beside that make sure `spec.volumeName` to the name of the respective PVs from step 2**.
+
+???+ attention "Prepare persistent Volumes migration"
+    In the above subsection Persistent volume migration guide has been prepared for AWS(EBS and EFS with efs-provisoner) and AZURE(Azure disk and Azure files). If you are using any other storage provider you need to modify the migration procedures accordingly
 
 ### Prepare Traefik
 
