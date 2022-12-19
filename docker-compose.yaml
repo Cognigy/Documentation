@@ -1,0 +1,74 @@
+version: "3.9"
+services:
+  database:
+    image: mongo
+    container_name: mongo
+    ports:
+      - '27017:27017'
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: documentation
+      MONGO_INITDB_ROOT_PASSWORD: documentation.DB.2022!
+    restart:
+      unless-stopped
+    networks:
+      - doc_net
+  web:
+    depends_on:
+      - database
+    build: .
+    container_name: documentation
+    ports:
+      - "8000:8000"
+    environment:
+      # mongodb env:
+      MONGODB_HOST: mongo
+      MONGODB_PORT: 27017
+      MONGODB_USER: documentation
+      MONGODB_PASS: documentation.DB.2022!
+      MONGODB_DATABASE: documentation_index
+
+      # schedule env
+      # given settings read: execute the schedule once a day
+      INDEX_INTERVAL: 1
+      INDEX_PERIOD: days # possible choices: minutes, hours, days, weeks
+    restart:
+      unless-stopped
+    networks:
+      - doc_net
+  search:
+    depends_on:
+      - database
+      - web
+    build: ./services/searchtool
+    container_name: doc_search
+    ports:
+      - "3000:3000"
+    environment:
+      # mongodb:
+      MONGODB_HOST: mongo
+      MONGODB_PORT: 27017
+      MONGODB_USER: documentation
+      MONGODB_PASS: documentation.DB.2022!
+      MONGODB_DATABASE_NAME: documentation_index
+
+      # microsoft translation
+      KEY: d9ec59e151884e97a34d68db03b525ee
+      ENDPOINT_URL: https://api.cognitive.microsofttranslator.com
+      LOCATION: global
+    restart:
+      unless-stopped
+    networks:
+      - doc_net
+networks:
+  doc_net:
+    name: doc_net
+    driver: bridge
+    enable_ipv6: false
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1
+
+
+
