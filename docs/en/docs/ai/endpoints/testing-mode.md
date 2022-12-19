@@ -43,7 +43,7 @@ POST https://<ENDPOINT_BASE_URL>/test/<URL_TOKEN>
 
 ### Socket.io Endpoint
 
-To submit the "Test Mode" message, establish a socket connection with a Cognigy Socket Endpoint and pass the `testMode` query parameter with the `true` option in the socket client. You can see the example below. This example may differ depending on which socket client library is used:
+To submit the "Test Mode" message, establish a socket connection with a Cognigy Socket Endpoint and pass the `testMode` parameter with `true` to SocketClient. You can see the example below. This example may differ depending on which Socket.IO client library is used:
 
 ```javascript
 const { SocketClient } = require("@cognigy/socket-client");
