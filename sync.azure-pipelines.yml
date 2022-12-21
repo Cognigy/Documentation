@@ -28,17 +28,19 @@ stages:
             persistCredentials: "true"
             clean: "true"
 
-          - task: InstallSSHKey@0
-            inputs:
-              knownHostsEntry: "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl"
-              sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDo/VKBdXyf3fgCSy8DBPeZSyc3s+yoHKzniaoeJtbmaGfiF0/eqk0HSbYXCJcOEWsU33Lw/fpxI1cZukJcYtohhT/cnb0SBPAtTnVGoHVT1+jKmKRUHl+POW7Wpld3Lp7X0eU5087xb6cBwOOVmASYPbydzz+UKXHbNYHSXMtmAgPbKTRrlrQEYNVhYm5HGmv4kyXf7A7mu8+vDCw8cW/ggTJxC/wIzmvRcRY1L+fRIj/ptpA+3UU9cc+vvzkMgrVbANmFreBwg13qE2OacFrnueTysr/DDHE6kaJ88UT2gIqC6a3Hf8PojgmZmq5tjQUGL+yVDcNzSi35KRWNvr7dDhfayy/HT9R0OY9KxNjkUaGWhWLxmCS0GLSf8/ncL0Y455MDQn8fA4lX7UWUcGwZiAmjBIZsv7h/wkNzVrjLgvOBeU4VNPWzfu6TiG6mnfiqGHXL2QEpqDSPXE77E/jYEL1jc04qOS415ny7eylYi5yoP+ZL4R+ECmmdvn5+hrs= benni@benni-ThinkPad-X1-Extreme-2nd
-              sshKeySecureFile: github-deploy
+          # - task: InstallSSHKey@0
+          #   inputs:
+          #     knownHostsEntry: "github.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOMqqnkVzrm0SdG6UOoqKLsabgH5C9okWi0dh2l9GKJl"
+          #     sshPublicKey: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDo/VKBdXyf3fgCSy8DBPeZSyc3s+yoHKzniaoeJtbmaGfiF0/eqk0HSbYXCJcOEWsU33Lw/fpxI1cZukJcYtohhT/cnb0SBPAtTnVGoHVT1+jKmKRUHl+POW7Wpld3Lp7X0eU5087xb6cBwOOVmASYPbydzz+UKXHbNYHSXMtmAgPbKTRrlrQEYNVhYm5HGmv4kyXf7A7mu8+vDCw8cW/ggTJxC/wIzmvRcRY1L+fRIj/ptpA+3UU9cc+vvzkMgrVbANmFreBwg13qE2OacFrnueTysr/DDHE6kaJ88UT2gIqC6a3Hf8PojgmZmq5tjQUGL+yVDcNzSi35KRWNvr7dDhfayy/HT9R0OY9KxNjkUaGWhWLxmCS0GLSf8/ncL0Y455MDQn8fA4lX7UWUcGwZiAmjBIZsv7h/wkNzVrjLgvOBeU4VNPWzfu6TiG6mnfiqGHXL2QEpqDSPXE77E/jYEL1jc04qOS415ny7eylYi5yoP+ZL4R+ECmmdvn5+hrs= benni@benni-ThinkPad-X1-Extreme-2nd
+          #     sshKeySecureFile: github-deploy
+
+          # git remote add github git@github.com:Cognigy/Documentation.git
 
           - script: |
               git config --global user.email "azure-pipeline@cognigy.com"
               git config --global user.name "Azure Pipelines Bot"
 
-              git remote add github git@github.com:Cognigy/Documentation.git
+              git remote add github https://github.com/Cognigy/Documentation.git
 
               git checkout --track origin/main
               git fetch github
