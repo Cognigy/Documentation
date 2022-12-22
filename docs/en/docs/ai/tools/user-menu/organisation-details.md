@@ -8,7 +8,10 @@
 
 The **Organisation Details** contains an analytics overview feature in a section called _Billable Conversations_, that provides a report to platform administrators with insight into the **volume of conversations** that have occurred across all agents in an organization.
 
-### Access Billable Conversations
+When the [user session](../analytics/analytics-concepts.md#sessions) has more than 50 inputs, it devides into a few conversations. One conversation contains only 50 [inputs](../analytics/analytics-concepts.md#inputs). If the session has 51 inputs, the system counts them as two conversations. Each conversation is charged separately.
+
+## Access Billable Conversations
+
 To access the **Billable Conversations** report, select the **User Menu** icon from the top right of any page and click on the **Organisation Details** option.
 
 <figure>
@@ -16,11 +19,11 @@ To access the **Billable Conversations** report, select the **User Menu** icon f
   <figcaption>The Billable Conversations report</figcaption>
 </figure>
 
-### Report Filtering
+## Report Filtering
 
 The report can be filtered by **year** and **month** using the date filter dropdown lists in the top right of the page.
 
-### Delete Organisation
+## Delete Organisation
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.30.0-blue.svg)]({{config.site_url}})
 
