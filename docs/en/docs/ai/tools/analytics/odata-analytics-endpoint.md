@@ -135,7 +135,7 @@ Return all records between two dates e.g. 1st Jan 2021 and 1st July 2021.
 
 For a full reference please refer to the [extensive collection of resources at OData.org](https://www.odata.org/) and the [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
 
-## Data Protection & Anylytics
+## Data Protection & Analytics
 
 <div class="divider"></div>
 
@@ -218,7 +218,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | localeName         | Name of locale                                                                             | String   |                                  |
 | endpointUrlToken   | The URL Token for the Endpoint                                                             | String   |                                  |
 | endpointName       | The name of the Endpoint                                                                   | String   |                                  |
-| rating             | The rating for the conversation. -1 for a negative rating or 1 for a positive rating       | Number   |                                  |
+| rating             | The rating for the session. -1 for a negative rating or 1 for a positive rating       | Number   |                                  |
 | ratingComment      | Comment left when given a rating                                                           | String   |                                  |
 | snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                  |
 
