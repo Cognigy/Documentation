@@ -90,7 +90,7 @@ Analytics data is generated through the whole lifecycle of an input message bein
 
 <div class="divider"></div>
 
-Analytics Steps are created in Cognigy.AI to track the conversation paths that users are taking when talking to the virtual agent.
+Analytics Steps are created in Cognigy.AI to track the session paths that users are taking when talking to the virtual agent.
 
 ### Creating a Step
 
