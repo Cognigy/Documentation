@@ -334,7 +334,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ## Sessions
 
-???+ info "Available from Cognigy.AI Version 4.2.0"
+???+ info "Available from Cognigy.AI Version 4.41.0"
 
 **Description**
 
