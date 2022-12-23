@@ -14,7 +14,7 @@ The **Members** panel allows **Project Admins** to manage the **Roles** that use
 ## Project Roles
 <div class="divider"></div>
 
-In addition to global roles, Cogngiy.AI offers Agent-specific roles which can be assigned to compliment the global access rights that have been granted for a given user.
+In addition to global roles, Cognigy.AI offers Agent-specific roles which can be assigned to compliment the global access rights that have been granted for a given user.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/508a047-members2.png" width="100%" />

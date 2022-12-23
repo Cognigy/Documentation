@@ -5,7 +5,7 @@
 ---
 # Analytics
 
-Monitoring virtual agent performance and usage is a critical component of conversational AI project implementation. To achieve this, Cognigy.AI provides a built-in **Agent Dashboard** alongside offering the full agent analytics data via the **Cogngiy OData Endpoint**.
+Monitoring virtual agent performance and usage is a critical component of conversational AI project implementation. To achieve this, Cognigy.AI provides a built-in **Agent Dashboard** alongside offering the full agent analytics data via the **Cognigy OData Endpoint**.
 
 ## Analytics Dashboard
 <div class="divider"></div>
