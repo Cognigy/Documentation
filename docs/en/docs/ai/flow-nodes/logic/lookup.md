@@ -72,7 +72,7 @@ By changing the lookup type to **CognigyScript**, the flow will select a case th
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/fb8d3ae-cognigyScript.PNG" width="100%" />
-  <figcaption>Setting the Lookup type to CogngiyScript</figcaption>
+  <figcaption>Setting the Lookup type to CognigyScript</figcaption>
 </figure>
 
 <figure>
