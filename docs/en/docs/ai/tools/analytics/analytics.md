@@ -10,7 +10,7 @@ Monitoring virtual agent performance and usage is a critical component of conver
 ## Analytics Dashboard
 <div class="divider"></div>
 
-The analytics dashboard is available for each agent created in an organization. The dashboard can be accessed from the agent home screen by clicking on the preview widget.
+The [analytics dashboard](agents-analytics.md) is available for each agent created in an organization. The dashboard can be accessed from the agent home screen by clicking on the preview widget.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">📘</span>
@@ -24,21 +24,15 @@ The analytics dashboard is available for each agent created in an organization. 
    </div>
 </blockquote>
 
-???+ info "Agent Analytics"
-    Head over to [Analytics Dashboard]({{config.site_url}}ai/tools/analytics/agents-analytics/) for more information.
 
 ## Connect with Dashbot and Chatbase
 <div class="divider"></div>
 
-Any Cognigy.AI endpoint can be natively connected to third-party analytics vendors Dashbot or Chatbase.
+Any Cognigy.AI endpoint can be natively connected to third-party analytics vendors [Dashbot or Chatbase](../../endpoints/data-protection-and-analytics.md#available-external-analytics-services).
 
-???+ info "Dashbot & Chatbase via Cognigy.AI Endpoints"
-    Find out more information [here]({{config.site_url}}ai/endpoints/data-protection-and-analytics/#external-analytics-services/).
 
 ## OData Analytics Endpoint
+
 <div class="divider"></div>
 
-Cognigy.AI exposes all agent analytics data to an OData feed that allows administrators to import agent performance data into external data visualization tools for building custom dashboards.
-
-???+ info "OData Analytics Endpoint"
-    Head over to [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/) for more information.
+Cognigy.AI exposes all agent analytics data to an OData feed that allows administrators to import agent performance data into external data visualization tools for building custom dashboards. For more information, see [OData Analytics Endpoint](odata-analytics-endpoint.md).

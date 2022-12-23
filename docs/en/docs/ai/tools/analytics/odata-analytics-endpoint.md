@@ -5,7 +5,7 @@
 ---
 # OData Analytics Endpoint
 
-Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records. OData, *the Best Way to REST* is a powerful API framework, see more at [OData.org](https://www.odata.org/). The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI. It has all your enterprise analytics needs covered to make fine grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -23,14 +23,14 @@ Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records.
 
 <div class="divider"></div>
 
-You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/)  by connecting to respective OData URL on your server.
+You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/) in the OData URL on your server.
 
 An OData URL is combined of the service root, api version, the collection and api key parameter as follows:
 
 `https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
 
 ???+ info "OData Domain Name"
-    The OData endpoint is available on a different domain to your Cognigy User Interface domain. If you login to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai)).
+    The OData endpoint is available on a different domain to your Cognigy User Interface domain. If you login to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
 
 
 For example, on our trial server, the OData endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations please replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
@@ -43,6 +43,7 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 <div class="divider"></div>
 
 ### Version 2.3
+
 The current version of the OData endpoint is `v2.3`. This endpoint version is available from Cognigy.AI Version 4.31.0 onwards. In this version, the following OData collections are available:
 
 - [Analytics]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Analytics`)
@@ -55,6 +56,7 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
 ### Version 2.2
+
 The current version of the OData endpoint is `v2.2`. This endpoint version is available from Cognigy.AI Version 4.17.0 onwards. In this version, the following OData collections are available:
 
 - [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
@@ -132,7 +134,6 @@ Return all records between two dates e.g. 1st Jan 2021 and 1st July 2021.
 
 ## Reference documentation
 
-
 For a full reference please refer to the [extensive collection of resources at OData.org](https://www.odata.org/) and the [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
 
 ## Data Protection & Analytics
@@ -153,13 +154,13 @@ Furthermore, you can control analytics logging behavior inside a Flow using [Bli
 
 This section details the data types the exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
 
-  * Inputs
-  * ChatHistory
-  * Steps
-  * ExecutedSteps
-  * Sessions
+  * [Inputs](#inputs)
+  * [ChatHistory](#chathistory)
+  * [Steps](#steps)
+  * [ExecutedSteps](#executedsteps)
+  * [Sessions](#sessions)
 
-## Inputs
+### Inputs
 
 **Description**
 
@@ -228,7 +229,7 @@ When retrieving this collection, the endpoint will return the following fields:
 ???+ warning "Max length of custom fields"
     You can store maximum 500 characters as the value of each of the custom fields
 
-## ChatHistory
+### ChatHistory
 
 **Description**
 
@@ -264,7 +265,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | inHandoverConversation | Flag whether the session is in a Handover session | Boolean  | true                                       |
 | outputId               | Output ID                                                   | String   | f514b7b2-7dc0-4e75-be62-a53fed5b2bb7       |
 
-## Steps
+### Steps
 
 ???+ info "Available from Cognigy.AI Version 4.2.0"
 
@@ -294,7 +295,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotId        | ID of the snapshot                                                         | String | 5e33b160e6236da3aa54221461a53f04 |
 | snapshotName      | Name of the snapshot                                                       | String | Bot Release 2.2                  |
 
-## ExecutedSteps
+### ExecutedSteps
 
 ???+ info "Available from Cognigy.AI Version 4.2.0"
     
@@ -332,7 +333,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotId        | ID of the snapshot                                                         | String   | 5e33b160e6236da3aa54221461a53f04 |
 | snapshotName      | Name of the snapshot                                                       | String   | Bot Release 2.2                  |
 
-## Sessions
+### Sessions
 
 ???+ info "Available from Cognigy.AI Version 4.41.0"
 
