@@ -15,18 +15,19 @@ ignore_macros: true
 - [yq](https://github.com/mikefarah/yq/) installed on the client host.
 - Kubernetes cluster meets general Cognigy.AI [prerequisites](https://docs.cognigy.com/ai/installation/prerequisites/#whitelisting-of-domains) **including hardware resources**
 - Backup of Cognigy secrets for kustomize installation (MongoDB and Redis connection strings) exists in a form of kubernetes manifests
-- Using multi replica mongoDB Helm chart, check [the migration guide](https://docs.cognigy.com/ai/installation/single-replica-mongoDB-to-multi-replica-mongoDB-migration/) if required
+- Using multi replica mongoDB Helm chart, check [the migration guide](single-replica-mongoDB-to-multi-replica-mongoDB-migration) if required
 - **Cognigy.AI kustomize installation must be at the same version as Cognigy.AI Helm Chart during migration**
 - Cognigy.AI kustomize installation must be >= v4.38
 - Snapshots/Backups of all PVCs/PVs (MongoDB, Redis-Persistent, flow-modules, flow-functions) are made before the migration starts
 
-## Preparation for Migration 
+## Migration Checklist 
 
-Cognigy.AI Helm Chart is not compatible with the legacy single-replica MongoDB (mongo-server) installation and is compatible with Cognigy [MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) only. You can follow [the migration guide](https://docs.cognigy.com/ai/installation/single-replica-mongoDB-to-multi-replica-mongoDB-migration/) if you have not migrated to multi-replica mongodb yet. 
+???+ warning "Deprecation of Single-Replica MongoDB Setups"
+    Cognigy.AI Helm Chart is not compatible with the legacy single-replica MongoDB (mongo-server) installation and is compatible with [Cognigy MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) only. You can follow [MongoDB migration guide](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md) if you have not migrated to multi-replica mongodb yet. 
 
 There are 2 migration scenarios considered here:
    
-- Migration inside the existing cluster: Cognigy.AI Helm chart in `cognigy-ai` namespace and MongoDB Helm Chart in `mongodb` namespace are installed alongside the existing kustomize installation. **We recommend following this process as it significantly simplifies migration of existing storage**.
+- Migration inside the existing cluster: Cognigy.AI Helm chart in `cognigy-ai` namespace and MongoDB Helm Chart in `mongodb` namespace are installed alongside the existing kustomize installation. **We recommend to follow this process as it significantly simplifies migration of the existing storage**.
 - Migration to a new cluster: Cognigy.AI and MongoDB Helm Charts are installed in a new cluster. This scenario is more complex than the first one. You will either need to ensure that underlying storage for existing PVCs can be reattached to the new cluster or restore the data from snapshots in the new cluster.
 
 Before starting migration, prepare following steps: 
@@ -36,11 +37,11 @@ Before starting migration, prepare following steps:
 - prepare `values_prod.yaml` values file for Cognigy.AI Helm Chart as described [here](https://github.com/Cognigy/cognigy-ai-helm-chart). **Make sure all adjustments (patches) of the current kustomize installation done form your side are properly migrated to `values_prod.yaml` file!** i.e. ENV variables, resource request/limits, replica counts etc.
 - prepare the script from [Rename MongoDB Databases](#rename-mongodb-databases) section, fill in required password values in advance.
 
-## Cognigy.AI Kustomize to Helm migration
+## Preparation for Migration
 
-This section describes the procedure to migrate Cognigy.AI from Kustomize to Helm. There are several steps which can be done beforehand, which mean before bring down the cognigy-ai. The steps are following
+This section describes the procedure to prepare the migration of Cognigy.AI from Kustomize to Helm. These steps can be performed in advance and without bringing your Cognigy.AI installation down.
 
-### Secrets Migration
+### Prepare Secrets
 During migration Cognigy.AI product will be moved from `default` to a different namespace. In this document we consider `cognigy-ai` as target namespace, you can replace it with namespace of your choice, but we strongly recommend to use `cognigy-ai` namespace. Hence, it is required to migrate the existing secrets to the new namespace, and also to inform Helm release about the migrated secrets. To do so, execute the following steps:
 
 1. The migration scripts can be found in [this](https://github.com/Cognigy/cognigy-ai-helm-chart) repository. Clone the repository and checkout to your current Cognigy.AI version:
@@ -62,10 +63,13 @@ python3 secret-migration.py -ns cognigy-ai
 kubectl create ns cognigy-ai
 kubectl apply -f migration-secrets
 ```
-### Prepare persistent Volumes migration
+### Prepare Persistent Volumes
+
+???+ attention "Cloud Providers Compatibility"
+    In this subsection we describe migration of presistent volumes for AWS (EBS and EFS with efs-provisoner) and AZURE (Azure disk and Azure files). If your Cognigy.AI  is deployed on a different cloud provider you need to adapt the migration steps accordingly.
 
 ???+ attention "Persistent Volumes Migration Scenario"
-    In this subsection we consider "Migration inside the existing cluster" scenario. For "Migration to a new cluster" scenario you will need to restore the data from snapshots of persistent volumes made in the old cluster. We do not provide any commands for the second case, as this process heavily depends on your cloud provider.  Please, refer to your infrastructure data backup and restore processes and to the documentation of your cloud provider. 
+    In this subsection we consider "Migration inside the existing cluster" scenario. For "Migration to a new cluster" scenario you will need to restore the data from snapshots of persistent volumes made in the old cluster. We do not provide any commands for the second case, as this process heavily depends on your cloud provider setup. Please, refer to your infrastructure data backup and restore processes and to the documentation of your cloud provider.
 
 1. Create snapshots of existing Cognigy.AI PVCs: `flow-modules`, `functions`, `redis-persistent`
 2. To avoid loss of PVs during the migration, set `Reclaim Policy` to `retain` for underlying PVs of 3 aforementioned PVCs and note down the corresponding PV names:
@@ -77,7 +81,7 @@ kubectl patch pv <pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"
 # check that reclaim policy has changed to Retain: 
 kubectl get pv
 ```
-3. Get the PVs IDs and note it down
+3. Get the PVs IDs and note them down:
 ```bash
 kubectl get pv | grep -E 'redis-persistent|flow-modules|functions'
 for i in $(kubectl get pv | grep -E 'redis-persistent|flow-modules|functions' | awk '{print $1}')
@@ -85,7 +89,7 @@ do
 echo $i
 done
 ```
-4. (**AWS only**): Get the IDs of underlying Volumes (EFS files shares) for all 2 aforementioned PVs and note them down. You will need to use these IDs in the following steps. 
+4. (**AWS only**): Get the IDs of underlying Volumes (EFS files shares) for all 2 aforementioned PVs and note them down. You will need to use these IDs in the following steps: 
 ```bash
 ## Get details of the PVs, set <pv-name> to the NAME of PV attached flow-modules, functions and redis-persistent PVCs:
 kubectl describe pv <pv-name> 
@@ -104,7 +108,7 @@ efs:
   functions:
     id: "fs-000000000001b"
 ```
-6. (**AWS only**): For "Migration inside the existing cluster" scenario, add annotations and labels to existing `flow-modules` and `functions` storage classes and related rolebindings 
+6. (**AWS only**): For "Migration inside the existing cluster" scenario, add annotations and labels to existing `flow-modules` and `functions` storage classes and related rolebindings:
 ```bash
 ## annotate `flow-modules` and `functions` StorageClasses
 kubectl annotate storageclass flow-modules meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
@@ -124,24 +128,26 @@ kubectl get pvc -n=default redis-persistent -o yaml > redis-persistent-pvc-kusto
 kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc-kustomize.yaml
 kubectl get pvc -n=default functions -o yaml > functions-pvc-kustomize.yaml
 ```
-Create another copy of PVC manifests which will be modified in next step
+8. Create another copy of PVC manifests which will be modified in next step:
 
-    ```bash
-    kubectl get pvc -n=default redis-persistent -o yaml > redis-persistent-pvc.yaml
-    kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc.yaml
-    kubectl get pvc -n=default functions -o yaml > functions-pvc.yaml
-    ```
-8. Remove unnecessary fields from PVC
+```bash
+kubectl get pvc -n=default redis-persistent -o yaml > redis-persistent-pvc.yaml
+kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc.yaml
+kubectl get pvc -n=default functions -o yaml > functions-pvc.yaml
+```
+9. Remove unnecessary fields from PVC:
 ```bash
 for i in redis-persistent-pvc flow-modules-pvc functions-pvc
 do
     yq -i 'del(.metadata.annotations, .metadata.finalizers, .metadata.labels,  .metadata.creationTimestamp, .metadata.resourceVersion, .metadata.uid, .status)' $i.yaml
 done
 ```
-9. Edit PVC manifests saved in step 7 for all 3 PVCs and change `metadata.namespace` to `cognigy-ai`. Also add `meta.helm.sh/release-name: cognigy-ai` and `meta.helm.sh/release-namespace: cognigy-ai` under `metadata.annotations`. Also add `app.kubernetes.io/managed-by: Helm` under `metadata.labels`. **Beside that make sure `spec.volumeName` to the name of the respective PVs from step 2**.
+10. Edit PVC manifests saved in Step 8 for all 3 PVCs in the following way:
 
-???+ attention "Prepare persistent Volumes migration"
-    In the above subsection Persistent volume migration guide has been prepared for AWS(EBS and EFS with efs-provisoner) and AZURE(Azure disk and Azure files). If you are using any other storage provider you need to modify the migration procedures accordingly
+  1. Change `metadata.namespace` to `cognigy-ai`. 
+  2. Add `meta.helm.sh/release-name: cognigy-ai` and `meta.helm.sh/release-namespace: cognigy-ai` under `metadata.annotations`. 
+  3. Add `app.kubernetes.io/managed-by: Helm` under `metadata.labels`.
+  4. Change `spec.volumeName` to the name of the respective PVs from Step 2.
 
 ### Prepare Traefik
 
@@ -154,7 +160,10 @@ kubectl label clusterrolebindings traefik app.kubernetes.io/managed-by=Helm
 kubectl annotate ingressclass traefik meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label ingressclass traefik app.kubernetes.io/managed-by=Helm
 ```
-From here on all the steps need to be executed during downtime. 
+
+## Migration 
+
+This section describes the actual migration of Cognigy.AI from Kustomize to Helm. The migration will require downtime of your Cognigy.AI installation. Please, plan a maintenance window for at least 2 hours accordingly. 
 
 ### Rename MongoDB Databases
 1. Scale down the current installation:
@@ -205,7 +214,7 @@ exit
 
 ### Migrate Persistent Volumes for Cognigy.AI
 
-Attach PVCs of `flow-modules`, `functions` and `redis-persistent` of Cognigy.AI Helm release to the existing PVs of kustomize installation:
+1. Attach PVCs of `flow-modules`, `functions` and `redis-persistent` of Cognigy.AI Helm release to the existing PVs of kustomize installation:
 ```bash
 ## delete dynamically provisioned PVCs for flow-modules, functions and redis-persistent during kustomization deployment
 kubectl delete pvc -n=default flow-modules 
@@ -221,7 +230,7 @@ kubectl patch pv <pv-name> -p '{"spec":{"claimRef": null}}'
 kubectl get pv
 ```
 
-After that deploy the PVCs file which has been modified in [Prepare storage migration](#prepare-storage-migration) section
+2. Deploy the PVCs manifests which has been modified in [Prepare Persistent Volumes](#prepare-persistent-volumes) section.
 
 ```bash
 # apply modified PVCs to the cluster
@@ -232,13 +241,13 @@ kubectl apply -f functions-pvc.yaml
 kubectl get pv
 kubectl get pvc -n=cognigy-ai
 ```
-### Migrate Cognigy-ai
-to migrate the cognigy-ai follow the below steps
+### Migrate Cognigy.AI from Kustomize to Helm
+
+Perform the following steps for Cognigy.AI migration:
 
 1. Bring back the deployments of Cognigy.AI Helm Release:
 
 ```bash
-
 helm registry login cognigy.azurecr.io \
 --username <your-username> \
 --password <your-password>
@@ -247,12 +256,10 @@ helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.i
 ```
 2. Verify that all deployments are in ready state: 
 ```bash
-
 kubectl get deployments -n=cognigy-ai
 ```
 3. (**Traefik as reverse-proxy only**): In case `EXTERNAL-IP` for `traefik` service of type `LoadBalancer` changes, update the DNS records to point to the new `EXTERNAL-IP` of `traefik` Service. If you're using Traefik Ingress with AWS Classic Load Balancer, change the CNAME of the DNS entries to the new `EXTERNAL-IP`. Check the new external IP/CNAME record with:
 ```bash
-
 kubectl get service -n=cognigy-ai traefik
 ```
 
