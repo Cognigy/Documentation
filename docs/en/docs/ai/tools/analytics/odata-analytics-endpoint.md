@@ -44,7 +44,9 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 
 ### Version 2.3
 
-The current version of the OData endpoint is `v2.3`. This endpoint version is available from Cognigy.AI Version 4.31.0 onwards. In this version, the following OData collections are available:
+[![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
+
+The current version of the OData endpoint is `v2.3`. In this version, the following OData collections are available:
 
 - [Analytics]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Analytics`)
 - [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
@@ -56,8 +58,11 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
 ### Version 2.2
+???+ warning "Deprecation of ODATA v2.2"
+    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.2. This OData endpoint version will be
+    removed in Cognigy.AI `v4.43.0`.
 
-The current version of the OData endpoint is `v2.2`. This endpoint version is available from Cognigy.AI Version 4.17.0 onwards. In this version, the following OData collections are available:
+[![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
 
 - [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
 - [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
@@ -70,7 +75,11 @@ The URL for accessing the V2.2 OData endpoint is as follows:
 
 
 ### Version 2.0
-This endpoint version is available from Cognigy.AI Version 4.2.0 onwards. In this version, the following OData collections are available:
+???+ warning "Deprecation of ODATA v2.0"
+    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.0. This OData endpoint version will be
+    removed in Cognigy.AI `v4.43.0`.
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
 - [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`)
 - [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`)
@@ -80,21 +89,6 @@ This endpoint version is available from Cognigy.AI Version 4.2.0 onwards. In thi
 
 The URL for accessing the V2.0 OData endpoint is as follows:
 `https://<hostname>/v2.0/<collection>?apikey=YOURAPIKEY`
-
-???+ success "OData V2.0 Endpoint Migration"
-    It is recommend that all new OData connections use the V2.0 endpoints and existing connections are also updated to the V2.0 endpoints. As the renames records are identical, there are no breaking changes and the URL's can simply be exchanged.
-
-### Version 1.0 
-
-This version will be deprecated in Cognigy.AI version 4.31.0 onwards.
-
-
-This is the legacy version of the OData endpoint that excludes step monitoring analytics. This OData endpoint contains the following collections:
-
-- [Records]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs) (`/Records`) - Renamed to Inputs in V2.0 Endpoint.
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory) (`/Conversations`) - Renamed to ChatHistory in V2.0 Endpoint.
-
-The URL for accessing the V1 OData endpoint is as follows: `https://<hostname>/<collection>?apikey=YOURAPIKEY`
 
 ## Querying
 
@@ -171,7 +165,6 @@ Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an 
  * v2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`.
  * v2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`.
  * v2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`.
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/Records?apikey=YOURAPIKEY`.
 
 **Data Types**
 
@@ -240,7 +233,6 @@ The ChatHistory collection offers a log of all session messages, including the e
  * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`.
  * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`.
  * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`.
- * V1.0 Endpoint: `https://odata-trial.cognigy.ai/Conversations?apikey=YOURAPIKEY`.
 
 **Data Types**
 
