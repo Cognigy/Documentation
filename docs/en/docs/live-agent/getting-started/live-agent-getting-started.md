@@ -26,5 +26,5 @@ Here are some recommendations:
 <ul>
     <li>Grouping your Agents in <a href="/live-agent/teams">Teams</a></li>
     <li>Organizing work by adding <a href="/live-agent/labels">Labels</a></li>
-    <li>Customizing Live Agent by changing the <a href="/live-agent/settings">Settings</a></li>
+    <li>Customizing Live Agent by changing the <a href="/live-agent/account-settings">Settings</a></li>
 </ul>
