@@ -59,8 +59,8 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 
 ### Version 2.2
 ???+ warning "Deprecation of ODATA v2.2"
-    With release `v4.42.0` of our products, we will deprecate v2.2 of our ODATA interface. This ODATA version will be removed
-    from our product with release `v4.43.0`.
+    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.2. This OData endpoint version will be
+    removed in Cognigy.AI `v4.43.0`.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
 
@@ -76,8 +76,8 @@ The URL for accessing the V2.2 OData endpoint is as follows:
 
 ### Version 2.0
 ???+ warning "Deprecation of ODATA v2.0"
-    With release `v4.42.0` of our products, we will deprecate v2.0 of our ODATA interface. This ODATA version will be removed
-    from our product with release `v4.43.0`.
+    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.0. This OData endpoint version will be
+    removed in Cognigy.AI `v4.43.0`.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
