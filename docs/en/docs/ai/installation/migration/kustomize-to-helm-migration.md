@@ -1,11 +1,11 @@
 ---
-title: "Cognigy.AI Kustomize-to-Helm Migration Guide"
+title: "Kustomize to Helm"
 slug: "kustomize-to-helm-migration"
 hidden: false
 ignore_macros: true
 ---
 
-# Cognigy.AI Kustomize-to-Helm Migration Guide
+# Kustomize to Helm 
 
 ## Prerequisites
 

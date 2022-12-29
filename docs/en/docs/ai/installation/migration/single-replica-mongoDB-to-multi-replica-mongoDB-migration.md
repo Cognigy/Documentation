@@ -1,13 +1,13 @@
 ---
-title: "Single Replica MongoDB to Multi Replica MongoDB Migration Guide"
+title: "MongoDB: Single to Multi Replica  "
 slug: "single-replica-mongoDB-to-multi-replica-mongoDB-migration"
 hidden: false
 ignore_macros: true
 ---
 
-# Single Replica MongoDB to Multi Replica MongoDB Migration Guide
+# MongoDB: Single to Multi Replica  
 
-The migration process from a single replica to a multi-replica setup with MongoDB Helm Chart involves several steps. These steps are described in the following section. In this guide, we assume that the "old" MongoDB installation is deployed in the `default` namespace, and we will install the "new" MongoDB ReplicaSet into the `mongodb` namespace. We strongly recommend performing migration inside the existing cluster as it simplifies data migration process. 
+The migration process from a single replica to a multi-replica setup with MongoDB Helm Chart involves several steps. These steps are described in the following section. In this guide, we assume that the old MongoDB installation is deployed in the `default` namespace, and we will install the new MongoDB ReplicaSet into the `mongodb` namespace. We strongly recommend performing migration inside the existing cluster as it simplifies data migration process. 
 
 ## Setting up Multi-Replica MongoDB Helm Chart
 

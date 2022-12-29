@@ -323,9 +323,11 @@ nav:
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
     - ai/installation/reset-init-user-credentials.md
-    - ai/installation/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
     - ai/installation/backups.md
-    - ai/installation/kustomize-to-helm-migration.md
+    - Migration Guides:
+      - ai/installation/migration/index.md
+      - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
+      - ai/installation/migration/kustomize-to-helm-migration.md
   - ai/limitations.md
   - Developer Guides:
     - ai/developer-guides/api-reference.md
