@@ -517,8 +517,6 @@ extra_css:
 
 extra_javascript:
 - assets/js/custom.js
-
-plugins:
 - section-index
 - macros
 - search
