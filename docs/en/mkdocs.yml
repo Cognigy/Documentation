@@ -325,7 +325,7 @@ nav:
     - ai/installation/reset-init-user-credentials.md
     - ai/installation/backups.md
     - Migration Guides:
-      - ai/installation/migration/index.md
+      - ai/installation/migration/contents.md
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
   - ai/limitations.md

@@ -1,5 +1,5 @@
 ---
-title: "MongoDB: Single to Multi Replica  "
+title: "MongoDB: Single to Multi Replica"
 slug: "single-replica-mongoDB-to-multi-replica-mongoDB-migration"
 hidden: false
 ignore_macros: true

@@ -171,8 +171,8 @@ done
 ```
 1. Rename the databases and create new users. In Cognigy.AI Helm Chart, we have renamed `service-analytics-collector-provider` database to `service-analytics-collector` and `service-analytics-conversation-collector-provider` to `service-analytics-conversation`. To rename the databases, execute the following script, fill in the password values in advance (see the comments inside the script). Check the root username for MongoDB Helm installation (`root` or `admin`) and use that as <root_username> while migrating the databases.
 
-   ???+ attention "MongoDB Migration Script Compatibility"
-       The script below is only compatible with the [cognigy-mongodb-helm-chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart). If you are using any other MongoDB service (for example, MongoDB Atlas), you need to find compatible commands for your database service to rename the databases.
+???+ attention "MongoDB Migration Script Compatibility"
+    The script below is compatible with the [cognigy-mongodb-helm-chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) only. If you are using any other MongoDB service (for example, MongoDB Atlas), you need to find compatible commands for your database service to rename the databases.
 
    ```bash
    kubectl exec -it -n mongodb mongodb-0 bash
