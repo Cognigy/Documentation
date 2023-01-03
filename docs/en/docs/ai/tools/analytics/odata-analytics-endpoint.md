@@ -48,11 +48,11 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 
 The current version of the OData endpoint is `v2.3`. In this version, the following OData collections are available:
 
-- [Analytics]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Analytics`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
-- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
-- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
-- [Sessions]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#sessions/) (`/Sessions`)
+- [Analytics](#inputs) (`/Analytics`)
+- [Conversations](#chathistory) (`/Conversations`)
+- [Steps](#steps) (`/Steps`)
+- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+- [Sessions](#sessions) (`/Sessions`)
 
 The URL for accessing the V2.3 OData endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
@@ -64,11 +64,11 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
 
-- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
-- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
-- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
-- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
+- [Inputs](#inputs) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+- [ChatHistory](#chathistory) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
+- [Steps](#steps) (`/Steps`)
+- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+- [Conversations](#conversations) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
 The URL for accessing the V2.2 OData endpoint is as follows:
 `https://<hostname>/v2.2/<collection>?apikey=YOURAPIKEY`
@@ -81,11 +81,11 @@ The URL for accessing the V2.2 OData endpoint is as follows:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
 
-- [Inputs]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#inputs/) (`/Inputs`)
-- [ChatHistory]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#chathistory/) (`/ChatHistory`)
-- [Steps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#steps/) (`/Steps`)
-- [ExecutedSteps]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#executedsteps/) (`/ExecutedSteps`)
-- [Conversations]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/#conversations/) (`/Conversations`)
+- [Inputs](#inputs) (`/Inputs`)
+- [ChatHistory](#chathistory) (`/ChatHistory`)
+- [Steps](#steps) (`/Steps`)
+- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+- [Conversations](#conversations) (`/Conversations`)
 
 The URL for accessing the V2.0 OData endpoint is as follows:
 `https://<hostname>/v2.0/<collection>?apikey=YOURAPIKEY`
@@ -104,27 +104,34 @@ The endpoint supports following the OData Query Language operators:
 - $select
 
 ???+ warning "$count and Excel"
-    Microsoft Excel does not include support for the $count query. Please use Postman or other options.
+    Microsoft Excel does not support for the $count query. Please use Postman or other options.
 
-## Example Queries
+## Example Requests
+
+Returns total count of User Input Records.
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`
-Return total count of User Input Records
+
+Returns all Records for the given APIKey.
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
-Return all Records for the given APIKey
+
+Returns the first 10 records.
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY`
-Return the first 10 records
+
+Returns the top 5 records where the executionTime is lower than 50ms, ordered by executionTime.
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`
-Return the top 5 records where the executionTime is lower than 50ms, ordered by executionTime
+
+Returns all records for a specific Cognigy.AI agent. The Project ID is available in the URL while the agent is open in the Cognigy.AI user interface, for example,`trial.cognigy.ai/agent/PROJECTID/`.
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`
-Return all records for a specific Cognigy.AI agent. (The Project ID is available in the URL while the agent is open in the Cognigy.AI user interface e.g. ...trial.cognigy.ai/agent/PROJECTID/...)
+
+Returns all records between two dates, for example, 1st Jan 2021 and 1st July 2021.
 
 `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY`
-Return all records between two dates e.g. 1st Jan 2021 and 1st July 2021.
+
 
 ## Reference documentation
 
