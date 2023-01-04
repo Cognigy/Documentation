@@ -1,5 +1,9 @@
 # Overview
-This repository is home for our brand new product documentation which is located on https://docs.cognigy.com. The repository stores documentation for all Cognigy products like Cognigy.AI, Cognigy Insights and the Cognigy WebchatWidget. Documentation is written as Markdown files and compiled to static HTML using the [MKDocs framework](https://www.mkdocs.org/).
+This repository is home for our brand new product documentation which is located on https://docs.cognigy.com.
+
+![Screenshot of docs.cognigy.com](./contribution/screenshot.png)
+
+The repository stores documentation for all Cognigy products like Cognigy.AI, Cognigy Insights and the Cognigy WebchatWidget. Documentation is written as Markdown files and compiled to static HTML using the [MKDocs framework](https://www.mkdocs.org/).
 
 We use a modified theme based on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) which we have extended in order to match our own corporate identity.
 
