@@ -384,6 +384,7 @@ nav:
       - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
+      - live-agent/installation/deployment/migration-guide-helm-dependencies-4.43.md
       - Helm Values:
         - live-agent/installation/helm-values/helm-values.md
         - live-agent/installation/helm-values/database.md
