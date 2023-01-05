@@ -212,7 +212,6 @@ nav:
     # - ai/flow-nodes/xApp/get-xApp-session-PIN.md 
     # - ai/flow-nodes/xApp/set-html-xApp-state.md
     # - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md 
-    # - ai/flow-nodes/xApp/set-xApp-state.md
     - Other Nodes:
       - Log Message: ai/flow-nodes/other-nodes/log-message.md
       - ai/flow-nodes/other-nodes/overwrite-analytics.md

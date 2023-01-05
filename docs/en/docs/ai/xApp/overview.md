@@ -4,7 +4,7 @@
  hidden: true 
 ---
 
-# xApps β
+# xApp β (Beta Release)
 
 Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities. 
 
@@ -12,8 +12,7 @@ The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes
 
 ## Restrictions
 
-- xApps should not be tested via the Interaction Panel in the Private Beta Release phase. The back-submitting of data into the Flow does not work correctly when the Interaction Panel is used.
-- xApps only fully work with Endpoints compatible with the [Inject & Notify API](https://docs.cognigy.com/ai/endpoints/inject-and-notify/#notify-and-inject-in-transformers).
+- xApps should not be tested via the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) in the Private Beta Release phase. The back-submitting of data into the Flow does not work correctly when the Interaction Panel is used.
 
 ## Concepts 
 
