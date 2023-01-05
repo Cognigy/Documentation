@@ -6,7 +6,7 @@
 
 # xApp Tokens
 
-There are several Tokens that you need to provide end users.
+There are several Tokens that you need to provide for end users.
 
 ## xApp PIN Page URL	
 
