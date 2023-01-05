@@ -4,7 +4,7 @@
  hidden: true 
 ---
 
-# xApp Flow Nodes β
+# xApp Flow Nodes β (Beta Release)
 
 The xApp Flow Nodes allow to create xApps, flexible micro-web applications for customer self-service. You can build the actual xApp Pages by yourself in various ways, for example, by providing HTML code or by specifying an Adaptive Card in JSON format.
 
@@ -14,7 +14,6 @@ Cognigy.AI supports the following Nodes:
  - [Get xApp Sesion PIN](get-xApp-session-PIN.md)
  - [Set HTML xApp State](set-html-xApp-state.md)
  - [Set AdaotiveCard xApp State](set-AdaptiveCard-xApp-state.md)
- - [Set xApp State](set-xApp-state.md)
    
 ## More information
 
