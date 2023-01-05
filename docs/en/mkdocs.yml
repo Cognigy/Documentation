@@ -261,7 +261,6 @@ nav:
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
     - ai/tools/agent-handover.md
-    - ai/tools/livechat-lite.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
   - Endpoints:
@@ -324,7 +323,6 @@ nav:
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
-    - ai/handover-providers/livechat-handover.md
 
   - ai/architecture.md
   
