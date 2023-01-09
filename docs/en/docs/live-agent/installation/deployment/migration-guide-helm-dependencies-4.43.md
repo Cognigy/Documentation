@@ -84,7 +84,28 @@ service:
 
 ### Create backup-pod.yaml
 
-A backup pod is required to access the PostgreSQL database. This pod will create a backup and restore it to the new database. The size of the backup pod must be big enough to store the database data.
+A backup pod is required to access the PostgreSQL database. This pod will create a backup and restore it to the new database. The size of the backup pod must be at least three times bigger to store the dump.
+
+#### Calculate the size of the database
+
+For knowing the size of the database, you can run the following command:
+
+```sh
+kubectl exec -it <postgresql-pod-name> -- psql -U <postgresql-username> -d live_agent_production -c "SELECT pg_database_size('live_agent_production')/1024/1024/1024 AS size_in_gb;"
+```
+
+The output will be something like this:
+
+```sh
+ size_in_gb
+------------
+  1.0000000
+(1 row)
+```
+
+The size of the backup pod should be at least 3 GB.
+
+#### backup-pod.yaml
 
 ```yaml
 # Create a new file backup-pod.yaml
