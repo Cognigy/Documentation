@@ -294,6 +294,9 @@ app:
 worker:
   replica: 0
 
+odata:
+  enabled: false
+
 migrations:
   enabled: false
 ```
@@ -357,6 +360,10 @@ app:
 
 worker:
   replica: 3
+
+# In case the OData service was enabled, enable it again
+odata:
+  enabled: true
 
 migrations:
   enabled: true
