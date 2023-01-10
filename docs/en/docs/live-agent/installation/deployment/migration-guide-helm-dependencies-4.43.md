@@ -271,7 +271,7 @@ kubectl delete secret -n live-agent cognigy-live-agent-redis
 
 #### b. Modify the existing secrets
 
-The new PostgreSQL secret is the only one changing while using internal PostgreSQL. It needs to contain the following keys:
+As an alternative to deleting the secrets, you can modify the existing ones. The only change when using internal PostgreSQL is the new PostgreSQL secret. It needs to contain the following keys:
 
 ```sh
 # The PostgreSQL admin password (.Values.postgresql.auth.secretKeys.adminPasswordKey)
