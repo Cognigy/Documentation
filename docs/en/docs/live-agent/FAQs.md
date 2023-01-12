@@ -25,7 +25,7 @@ This asks the customer to create the Inbox, filling in the fields with the AI Pr
 
 After this, Live Agent and Cognigy.AI should work as previously configured.
 
-### Where can I check what the default inbox is? Does it have a special account id?
+### Where can I check what the default Inbox is? Does it have a special account id?
 
 The default Inbox is named as *default* . All Inboxes corresponding to a Cognigy.AI Project are named as default.
 
@@ -55,13 +55,13 @@ Head over to [Labels]({{config.site_url}}live-agent/labels) for more information
 
 Head over to [Conversations Workflow]({{config.site_url}}live-agent/conversation-workflow) for more information.
 
-### How to add agents to an inbox?
+### How to add Agents to an Inbox?
 Administrator users can only do this action. Navigate to ***"Settings"*** > ***"Inboxes"***, look for the Inbox to be edited and click on the settings icon. Then click on the tab ***"Collaborators"*** and pick the Agent name. For updating the current inbox, click on the ***"Update"*** button.
 
 Head over to [Inboxes]({{config.site_url}}live-agent/inboxes/#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
-Navigate to ***"Settings"*** > ***"Teams"*** and click on the ***"Create new team"*** button. In the second step, add the desired agents. The added agents can be updated later.
+Navigate to ***"Settings"*** > ***"Teams"*** and click on the ***"Create new team"*** button. In the second step, add the desired Agents. The added Agents can be updated later.
 
 Head over to [Teams]({{config.site_url}}live-agent/teams) for more information.
 
@@ -71,7 +71,7 @@ The user access token is displayed at the bottom of the [Profile Settings]({{con
 ### How to view the account ID and the inbox ID? 
 This information can be obtained from the Live Agent URL. 
 
-A quick way is to select an inbox on the dashboard screen. The URL will look like: ``https://<live-agent-domain>/app/accounts/1/inbox/4``.
+A quick way is to select an Inbox on the dashboard screen. The URL will look like: ``https://<live-agent-domain>/app/accounts/1/inbox/4``.
 
 The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**
 
