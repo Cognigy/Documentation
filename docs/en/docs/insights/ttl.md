@@ -24,8 +24,14 @@ In the table below, you can view the data included in TTL.
 | Sessions | This indicates the duration between the creation of Insights session analytics and its removal from the database.| [Overview](dashboard-overview.md): <br> - Active Contacts<br> - Positive Ratings<br> - Sessions<br> - Session by Channel<br> - Sessions Count<br> - Top Goals<br>- Top Slots<br> - Unique Contacts<br> - Users by Locale<br> [Engagement](dashboard-engagement.md): <br>- Contacts <br>- Goals Reached <br>- Handovers by time of the day <br>- Live Agent Escalations <br>- Positive Ratings <br>- Positive Ratings over Time <br>- Top Goals <br>[NLU Perfomance](dashboard-nlu-performance.md):<br>- Top Slots| 
 | Step Events | This indicates the duration between the creation of Step data and its removal from the database.| [Step Explorer](step-explorer.md)| All
 
+## Activating Data Expiration
+
+If you have already set limits in the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service via technical support or on your own, the Data Expiration indicator will appear by default.
+
+To activate the Data Expiration feature, set limits via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center) and specify the desired limits in your request.
+
 ## Changing Data Expiration
 
- You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center). 
- 
- When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
+You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center). 
+
+When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
