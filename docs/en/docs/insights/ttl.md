@@ -7,17 +7,25 @@
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.42-blue.svg)]({{config.site_url}})
 
-The TTL (time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. To know when the data will be expired, click ![clock](images/icons/clock.svg) in the upper-right corner of the current page.
+The *TTL* (time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
 
-To view the value in minutes, hover the cursor over the current value.
-
-| Data     | Description     | Dashboards  |
-| -------- | ----------------|---------| 
-| Analytics| This indicates the duration between the creation of all Analytics data and its removal from the database.| [Overview](dashboard-overview.md), [Engagement](dashboard-engagement.md), [NLU Perfomance](dashboard-nlu-performance.md)|
-| Conversations| This indicates the duration between the creation of conversation analytics and its removal from the database.| [Transcript Explorer](transcript-explorer.md), [Message Explorer](message-explorer.md)| 
-| Sessions | This indicates the duration between the creation of Insights session analytics and its removal from the database.| [Overview](dashboard-overview.md), [Engagement](dashboard-engagement.md), [NLU Perfomance](dashboard-nlu-performance.md)|
-| Step Events | This indicates the duration between the creation of Step data and its removal from the database.| [Step Explorer](step-explorer.md)|
+To know when the data will be expired, click ![clock](images/icons/clock.svg) in the upper-right corner of the current page. To view the value in minutes, hover the cursor over the current value.
 
 When Cognigy products are used daily, the data expiration values will remain unchanged, as the countdown starts from the last data update.
 
-If you have an on-premise Cognigy.AI installation, you can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service. Otherwise, contact [technical support](../help/get-help.md/#help-center). When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
+## Data Expiration Table
+
+In the table below, you can view the data included in TTL.
+
+| Data     | Description     | Dashboards| 
+| -------- | ----------------|-----------| 
+| Analytics| This indicates the duration between the creation of all Analytics data and its removal from the database.| [Overview](dashboard-overview.md): <br>- Number of Inputs <br>- Top Intents  <br>- Understood Messages  <br>- Understood / Misunderstood Messages<br> [Engagement](dashboard-engagement.md): <br>- Avg. Session Length<br> - Max. Session Length <br> [NLU Perfomance](dashboard-nlu-performance.md): <br> - Avg Intent Score <br> - Average Execution Time <br> - Intents by Score Range <br> - Max Intent Score <br> - Understood Messages <br> - Understood / Misunderstood Messages <br> - Top Intents <br> - Top Intent Scores <br> | 
+| Conversations| This indicates the duration between the creation of chat history analytics and its removal from the database.| [Transcript Explorer](transcript-explorer.md), [Message Explorer](message-explorer.md)
+| Sessions | This indicates the duration between the creation of Insights session analytics and its removal from the database.| [Overview](dashboard-overview.md): <br> - Active Contacts<br> - Positive Ratings<br> - Sessions<br> - Session by Channel<br> - Sessions Count<br> - Top Goals<br>- Top Slots<br> - Unique Contacts<br> - Users by Locale<br> [Engagement](dashboard-engagement.md): <br>- Contacts <br>- Goals Reached <br>- Handovers by time of the day <br>- Live Agent Escalations <br>- Positive Ratings <br>- Positive Ratings over Time <br>- Top Goals <br>[NLU Perfomance](dashboard-nlu-performance.md):<br>- Top Slots| 
+| Step Events | This indicates the duration between the creation of Step data and its removal from the database.| [Step Explorer](step-explorer.md)| All
+
+## Changing Data Expiration
+
+ You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center). 
+ 
+ When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
