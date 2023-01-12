@@ -20,7 +20,4 @@ To view the value in minutes, hover the cursor over the current value.
 
 When Cognigy products are used daily, the data expiration values will remain unchanged, as the countdown starts from the last data update.
 
-If you have an on-premise Cognigy.AI installation, you can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service. Otherwise, contact [technical support](../help/get-help.md/#help-center). When you change the data expiration value, it will only affect new data that Cognigy get after the change The expiration value for previously obtained data will remain unchanged.
-
-
-
+If you have an on-premise Cognigy.AI installation, you can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service. Otherwise, contact [technical support](../help/get-help.md/#help-center). When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
