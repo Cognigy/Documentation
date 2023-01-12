@@ -12,8 +12,24 @@ Removing a user from Live Agent can be done from the Cognigy.AI Access Control. 
 
 Head over to [Cognigy.AI Access Control]({{config.site_url}}ai/tools/user-menu/access-control) for more information.
 
-### What happens if an inbox is removed?
-Inboxes created manually can be safely edited/removed. However, the inboxes with the `-default` suffix created from Cognigy.AI must not be deleted. This will break the integration between Live Agent and Cognigy.AI. Unfortunately, there is no way to undo this step. In case this inbox is accidentally removed, please [reach us through support](https://support.cognigy.com/hc/en-us/requests/new?).
+### What happens if an Inbox is removed?
+Inboxes created manually can be safely edited/removed. **However, the inboxes with the `-default` suffix created from Cognigy.AI must not be deleted.** This will break the integration between Live Agent and Cognigy.AI. Unfortunately, there is no way to undo this step. In case this inbox is accidentally removed, please see the next question.
+
+### Could you please clarify what to do if the inbox is deleted, so that the corrective measure can be understood?
+
+We cannot re-create the Project Inbox from Cognigy.AI side (the button is frozen after clicking it the first time.)
+
+Follow the classic way to setup a Live Agent Inbox, as described in our Docs: [Adding an Additional Inbox for your Project]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/)
+
+This asks the customer to create the Inbox, filling in the fields with the AI Project's data.
+
+After this, Live Agent and Cognigy.AI should work as previously configured.
+
+### Where can I check what the default inbox is? Does it have a special account id?
+
+The default Inbox is named as *default* . All Inboxes corresponding to a Cognigy.AI Project are named as default.
+
+On the next Cognigy.AI release the name will be the 'project name', to make it easier to understand what Inbox is connected to a Project.
 
 ### How to fix custom SSL certificate verification error?
 That may happen because Cognigy.AI is running under a custom SSL certificate (Error can not validate certificate). And Live Agent is failing to perform the requests to it as SSL requests can not be verified.
