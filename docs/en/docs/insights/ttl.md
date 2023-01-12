@@ -1,13 +1,13 @@
 ---
- title: "TTL" 
- slug: "TTL" 
+ title: "Data Expiration" 
+ slug: "Data Expiration" 
  hidden: false 
 ---
-# TTL
+# Data Expiration
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.42-blue.svg)]({{config.site_url}})
 
-The *TTL* (time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
+*Data Expiration* (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
 
 To know when the data will be expired, click ![clock](images/icons/clock.svg) in the upper-right corner of the current page. To view the value in minutes, hover the cursor over the current value.
 
