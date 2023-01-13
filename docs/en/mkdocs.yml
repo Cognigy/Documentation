@@ -49,6 +49,7 @@ extra_css:
 - assets/css/extra.css
 extra_javascript:
 - assets/js/custom.js
+- assets/js/hotjar.js
 
 nav:
 - Cognigy Products: index.md
@@ -529,9 +530,6 @@ extra:
   alternate:
   - link: /
     name: en
-  analytics:
-     provider: custom
-     property: hotjar
 plugins:
 - section-index
 - macros
