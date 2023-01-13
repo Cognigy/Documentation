@@ -91,7 +91,7 @@ A backup pod is required to access the PostgreSQL database. This pod will create
 For knowing the size of the database, you can run the following command:
 
 ```sh
-kubectl exec -it <postgresql-pod-name> -- psql -U <postgresql-username> -d live_agent_production -c "SELECT pg_database_size('live_agent_production')/1024/1024/1024 AS size_in_gb;"
+kubectl exec -n live-agent -it <postgresql-pod-name> -- psql -U <postgresql-username> -d live_agent_production -c "SELECT pg_database_size('live_agent_production')/1024/1024/1024 AS size_in_gb;"
 ```
 
 The output will be something like this:
@@ -204,6 +204,7 @@ For app and worker replica sets, specify `0` in the replica count. It ensures th
 ```sh
 kubectl scale --replicas=0 -n live-agent deployment/cognigy-live-agent
 kubectl scale --replicas=0 -n live-agent deployment/cognigy-live-agent-worker
+kubectl scale --replicas=0 -n live-agent deployment/cognigy-live-agent-odata
 ```
 
 !!! note
@@ -253,6 +254,7 @@ kubectl get pvc -n live-agent
 # These commands will delete the database volumes. Make sure a backup was done before proceeding
 kubectl delete pvc -n live-agent <data-postgres>
 kubectl delete pvc -n live-agent <redis>
+kubectl delete pvc -n live-agent <redis-replica>
 ```
 
 ### Step 4. Delete or modify existing database secrets
@@ -307,7 +309,7 @@ Install the new version of the chart:
 helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version 4.43.0 --namespace live-agent -f custom-values.yaml
 ```
 
-Then the only pods running will be the PostgreSQL and Redis ones.
+Then the only pods running will be the EFS, PostgreSQL and Redis ones.
 
 ### Step 6. Restore backup to the new PostgreSQL pod
 
@@ -318,7 +320,7 @@ Attach a shell to the PostgreSQL backup pod and restore the 'live_agent_producti
 kubectl exec -n live-agent -it postgres-backup-0 -- bash
 
 # Get the password of the new PostgreSQL from the `cognigy-live-agent-postgresql` secret key `postgres-password` and export it to `PGPASSWORD` environment variable
-export PGPASSWORD=postgres
+export PGPASSWORD=<password>
 
 # Connect to the newly deployed PostgreSQL DB with the `psql` command
 psql --host cognigy-live-agent-postgresql -U postgres -d postgres -p 5432
@@ -381,7 +383,7 @@ Attach the shell to the app pod and remove the onboarding variable in Redis. It 
 
 ```sh
 # Attach a shell to the app pod
-kubectl exec -it cognigy-live-agent-app-xxxxxxxxxx -- /bin/sh
+kubectl exec -n live-agent -it cognigy-live-agent-app-xxxxxxxxxx -- /bin/sh
 
 # Execute a Rails console
 RAILS_ENV=production bundle exec rails c
@@ -398,8 +400,8 @@ Check existing conversations and settings to ensure everything is working as exp
 # Delete the backup pod deployemnt, service, Storage Class and pvc
 kubectl delete statefulset -n live-agent postgres-backup
 kubectl delete service -n live-agent postgres-backup
-kubectl delete sc -n live-agent postgres-backup
-kubectl delete pvc -n live-agent postgres-backup
+kubectl delete sc postgres-backup
+kubectl delete pvc -n live-agent <postgres-backup-pvc>
 ```
 
-If you have any issues, [contact technical support](https://support.cognigy.com/hc/en-us/requests/new?).
+Remember to review that the released persistent volumes are deleted. If you have any issues, [contact technical support](https://support.cognigy.com/hc/en-us/requests/new?).
