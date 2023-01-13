@@ -26,7 +26,7 @@ The Shell Page has a set of configurable built-in screens. These default screens
 
 #### PIN Screen
 
-The optional PIN Screen prompts the end user to enter the xApp Session PIN. The user needs to provide the correct PIN to access the xApp Pages.
+The PIN Screen prompts the end user to enter the xApp Session PIN. The user needs to provide the correct PIN to access the xApp Pages. Requesting a PIN to enter the session is optional.
 
 #### xApp Screen
 
