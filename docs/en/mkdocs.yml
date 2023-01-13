@@ -529,6 +529,9 @@ extra:
   alternate:
   - link: /
     name: en
+  analytics:
+     provider: custom
+     property: hotjar
 plugins:
 - section-index
 - macros
