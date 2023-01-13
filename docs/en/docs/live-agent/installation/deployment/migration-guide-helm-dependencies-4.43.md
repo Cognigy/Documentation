@@ -297,7 +297,7 @@ worker:
 odata:
   enabled: false
 
-migrations:
+migration:
   enabled: false
 ```
 
@@ -365,7 +365,7 @@ worker:
 odata:
   enabled: true
 
-migrations:
+migration:
   enabled: true
 ```
 
