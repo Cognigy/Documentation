@@ -16,7 +16,7 @@ Within the HTML Code, you will be able to access the App Page SDK through a glob
 To submit a result back to the Flow, you can call `SDK.submit({ name: "John" });`.
 The submitted payloads need to be JSON serializable objects.
 
-You can use the `submit` function without React. Create a button that submits on click:
+You can use the `submit` function without React. An example of a button that submits on click would be the following:
 `<button type="button" onclick="SDK.submit({ variant: 'button1' })">button 1</button>`.
 
 
