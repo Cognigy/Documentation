@@ -4,7 +4,10 @@
  hidden: true 
 ---
 
-# xApp Flow Nodes β (Beta Release)
+# xApp Flow Nodes (Beta)
+
+!!! note
+    This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback so we can improve it before it is officially released.
 
 The xApp Flow Nodes allow to create xApps, flexible micro-web applications for customer self-service. You can build the actual xApp Pages by yourself in various ways, for example, by providing HTML code or by specifying an Adaptive Card in JSON format.
 
@@ -21,5 +24,3 @@ Cognigy.AI supports the following Nodes:
 - [xApp Tokens](../../xApp/tokens.md)
 - [xApp Page SDK](../../xApp/sdk.md)
 - [xApp Flow API](../../xApp/api.md)
-
-
