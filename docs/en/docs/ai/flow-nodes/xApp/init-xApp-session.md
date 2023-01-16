@@ -20,7 +20,7 @@ Specify texts displayed on the PIN screen.
 
 ## xApp Screens
 
-Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, and is halted.
+Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, or is halted.
 
 ## Intermediate Screen
 
