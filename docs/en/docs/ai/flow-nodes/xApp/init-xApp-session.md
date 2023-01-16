@@ -24,7 +24,7 @@ Specify messages displayed to the user when the xApp Page is loading, fails for 
 
 ## Intermediate Screen
 
-Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with the xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
 
 ## Connection Screen
 
