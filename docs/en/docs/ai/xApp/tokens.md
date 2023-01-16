@@ -20,7 +20,7 @@ Create the xApp Session PIN by using the [Get xApp Session PIN](../flow-nodes/xA
 
 ## xApp Session URL
 
-The URL to access the Session.
+The URL to access the xApp Session.
 
 
 ## More information
