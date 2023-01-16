@@ -4,10 +4,7 @@
  hidden: true 
 ---
 
-# xApp (Beta)
-
-!!! note
-    This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback so we can improve it before it is officially released.
+# xApp β (Beta Release)
 
 Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
 
@@ -54,8 +51,7 @@ The Connection Screens are shown while the real-time connection to the backend i
 5. To build the xApp Page or update an initialized session with a new xApp Page, use one of the following Nodes:
     - [Set HTML xApp State](../../ai/flow-nodes/set-html-xApp-state.md) to provide HTML code.
     - [Set AdaptiveCard xApp State](../../ai/flow-nodes/set-AdaptiveCard-xApp-state.md) to specify an Adaptive Card in the JSON format. 
-6. Submit results of the xApp need to be JSON serializable. They are available in the Input object under `data._cognigy._app.payload`. You can check the submission by `input.data._cognigy._app.payload === "submit"`. 
-7. To wait for the xApp user Input in a Flow, use the [Question](../../flow-nodes/message/question.md) or the [Optional Question](../../flow-nodes/message/optional-question.md) Node. The **xApp** type of the Question Node is only considered to be answered if submitted results are available as part of the Input. 
+6. To wait for the xApp user Input in a Flow, use the [Question](../../flow-nodes/message/question.md) or the [Optional Question](../../flow-nodes/message/optional-question.md) Node of type "xApp". A question of type **xApp** is only considered to be answered if JSON serializable xApps submit results are available. To be more specific, they are made available in the Input object under `data._cognigy._app.payload`. 
 
 
 Aditionally, you can use the [xApp Page SDK](sdk.md) and [xApp Flow API](api.md) for customization your xApp. 
