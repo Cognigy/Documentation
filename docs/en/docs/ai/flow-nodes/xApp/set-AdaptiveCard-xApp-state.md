@@ -6,7 +6,7 @@
 
 # Set AdaptiveCard xApp State
 
-The xApp Page can be built by providing an Adaptive Card in JSON format.
+An xApp Page can be built by providing an Adaptive Card in JSON format.
 
 To submit data back to the Flow, you need to include a Submit button within the Adaptive Card as the `adaptivecard` library is configured to take any `submit` payload from the card and forward them through the [xApp SDK](../../xApp/sdk.md). 
 
