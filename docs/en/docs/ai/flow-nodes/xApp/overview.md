@@ -22,5 +22,4 @@ Cognigy.AI supports the following Nodes:
 
 - [xApp](../../xApp/overview.md)
 - [xApp Tokens](../../xApp/tokens.md)
-- [xApp Page SDK](../../xApp/sdk.md)
 - [xApp Flow API](../../xApp/api.md)

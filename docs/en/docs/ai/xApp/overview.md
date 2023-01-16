@@ -62,5 +62,4 @@ The Connection Screens are shown while the real-time connection to the backend i
 
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp tokens](tokens.md)
-- [xApp xApp Page SDK](sdk.md)
 - [xApp Flow API](api.md)

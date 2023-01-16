@@ -274,7 +274,6 @@ nav:
   # - ai/xApp/overview.md 
   # - ai/xApp/tokens.md 
   # - ai/xApp/api.md 
-  # - ai/xApp/sdk.md 
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
