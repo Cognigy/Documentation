@@ -12,7 +12,7 @@ To submit data back to the Flow, you need to include an action of type submit wi
 
 ## AdaptiveCard Definition
 
-To create an Adaptive Card, use the [constructor](https://adaptivecards.io/designer). Copy JSON from the constructor and paste it into the form.
+The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
 
 ## Style Overrides
 
