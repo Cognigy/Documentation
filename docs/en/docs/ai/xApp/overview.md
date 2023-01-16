@@ -50,7 +50,7 @@ The Connection Screens are shown while the real-time connection to the backend i
     - **xApp Session PIN** to share the PIN with the user.
 5. To build the xApp Page or update an initialized session with a new xApp Page, use one of the following Nodes:
     - [Set HTML xApp State](../../ai/flow-nodes/set-html-xApp-state.md) to provide HTML code.
-    - [Set AdaptiveCard xApp State](../../ai/flow-nodes/set-AdaptiveCard-xApp-state.md) to specify an Adaptive Card in the JSON format. 
+    - [Set AdaptiveCard xApp State](../../ai/flow-nodes/set-AdaptiveCard-xApp-state.md): Build an xApp Page by providing an Adaptive Card in JSON format. 
 6. To wait for the xApp user Input in a Flow, use the [Question](../../flow-nodes/message/question.md) or the [Optional Question](../../flow-nodes/message/optional-question.md) Node of type "xApp". A question of type **xApp** is only considered to be answered if JSON serializable xApps submit results are available. To be more specific, they are made available in the Input object under `data._cognigy._app.payload`. 
 
 
