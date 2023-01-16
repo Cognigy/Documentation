@@ -6,7 +6,7 @@
 
 # xApp Tokens
 
-There are several Tokens that you need to provide for end users.
+URLs as well as the PIN code to access an xApp session are exposed via Cognigy Tokens.
 
 ## xApp PIN Page URL	
 
