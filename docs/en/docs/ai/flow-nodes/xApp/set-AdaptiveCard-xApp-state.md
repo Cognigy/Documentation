@@ -16,7 +16,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 ## Style Overrides
 
-To override colors, use CSS color codes.
+To override the background and interaction element colors, use CSS color codes.
 
 
 ## More information
