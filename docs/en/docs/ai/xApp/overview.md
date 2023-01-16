@@ -48,9 +48,9 @@ The Connection Screens are shown while the real-time connection to the backend i
 
 1. Initialize a new xApp Session via the [Init xApp Session](../../flow-nodes/init-xApp-session.md) Node. 
 2. *(Optional)* To generate a PIN code for the xApp session, add the [Get xApp Session PIN](../../flow-nodes/get-xApp-session-PIN.md) Node. The PIN code is exposed via the [xApp Session PIN Token](tokens.md#xapp-session-pin).
-3. Allow users to access the xApp Session one of the following methods:
+3. Allow users to access the xApp Session using one of the following methods:
    - Without entering a PIN code. Share the xApp Session URL with them. The xApp Session URL is exposed via the [xApp Session URL token](tokens.md#xapp-session-pin).
-   - *(Optional)* With entering the a PIN code. Share the xApp PIN page URL with them. The xApp PIN Page URL is exposed via [xApp Session PIN Token](tokens.md#xapp-session-pin).
+   - By entering a PIN code. Share the xApp PIN page URL with them. The xApp PIN Page URL is exposed via the [xApp Session PIN Token](tokens.md#xapp-session-pin).
 4. To build the xApp Page or update an initialized session with a new xApp Page, use one of the following Nodes:
     - [Set HTML xApp State](../../ai/flow-nodes/set-html-xApp-state.md) to provide HTML code.
     - [Set AdaptiveCard xApp State](../../ai/flow-nodes/set-AdaptiveCard-xApp-state.md) to specify an Adaptive Card in the JSON format. 
