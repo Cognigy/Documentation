@@ -20,15 +20,15 @@ Specify texts displayed on the PIN screen.
 
 ## xApp Screens
 
-Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, and is halted.
+Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, or is halted.
 
 ## Intermediate Screen
 
-Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with the xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
 
 ## Connection Screen
 
-Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with the xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
 
 ## More information
 
