@@ -44,7 +44,7 @@ The Connection Screens are shown while the real-time connection to the backend i
 
 1. Initialize a new xApp Session via the [Init xApp Session](../../flow-nodes/init-xApp-session.md) Node. 
 2. *(Optional)* To generate a pin code for the xApp session, add the [Get xApp Session Pin](../../flow-nodes/get-xApp-session-PIN.md) Node. The PIN code is exposed via the xApp Session Pin Token.
-3. The xApp is accessed via the xApp Session URL, which is exposed via the [xApp Session URL token](tokens.md).
+3. The xApp can be accessed via the xApp Session URL, without the user having to enter a pin code. The xApp Session URL is exposed via the [xApp Session URL token](tokens.md). If the user is to enter the session using a pin code, he should be sent the xApp PIN page URL, which is also exposed via a token.
 4. Use the following tokens:
     - **xApp PIN page URL** to send the user a link to the PIN Screen.
     - **xApp Session PIN** to share the PIN with the user.
