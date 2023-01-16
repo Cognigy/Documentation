@@ -16,7 +16,7 @@ The URL to access the PIN Page.
 
 The PIN to access the xApp Session.
 
-Create the xApp Session PIN by using the [Get xApp Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node. If the PIN Screen is configured, the user must provide the PIN to access the xApp Session. 
+The xApp Session PIN is created by using the [Get xApp Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node.
 
 ## xApp Session URL
 
