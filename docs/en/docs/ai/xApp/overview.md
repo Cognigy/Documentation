@@ -49,11 +49,11 @@ The Connection Screens are shown while the real-time connection to the backend i
 1. Initialize a new xApp Session via the [Init xApp Session](../../flow-nodes/init-xApp-session.md) Node. 
 2. *(Optional)* To generate a PIN code for the xApp session, add the [Get xApp Session PIN](../../flow-nodes/get-xApp-session-PIN.md) Node. The PIN code is exposed via the [xApp Session PIN Token](tokens.md#xapp-session-pin).
 3. Allow users to access the xApp Session using one of the following methods:
-   - Without entering a PIN code. Share the xApp Session URL with them. The xApp Session URL is exposed via the [xApp Session URL token](tokens.md#xapp-session-pin).
-   - By entering a PIN code. Share the xApp PIN page URL with them. The xApp PIN Page URL is exposed via the [xApp Session PIN Token](tokens.md#xapp-session-pin).
-4. To build the xApp Page or update an initialized session with a new xApp Page, use one of the following Nodes:
+   - **Without entering a PIN Code.** Share the xApp Session URL with the users.
+   - **By entering a PIN Code.** Generate a PIN by adding the [Get xApp Session PIN](../../flow-nodes/get-xApp-session-PIN.md) Node, send this PIN to the users and share the xApp PIN Page URL with them.
+4. To update an initialized session with a new custom-built xApp Page, use one of the following Nodes:
     - [Set HTML xApp State](../../ai/flow-nodes/set-html-xApp-state.md) to provide HTML code.
-    - [Set AdaptiveCard xApp State](../../ai/flow-nodes/set-AdaptiveCard-xApp-state.md) to specify an Adaptive Card in the JSON format. 
+    - [Set AdaptiveCard xApp State](../../ai/flow-nodes/set-AdaptiveCard-xApp-state.md) to build an xApp Page by providing an Adaptive Card in the JSON format. 
 5. Submit results of the xApp need to be JSON serializable. They are available in the Input object under `data._cognigy._app.payload`. You can check the submission by `input.data._cognigy._app.payload === "submit"`. 
 6. To wait for the xApp user Input in a Flow, use the [Question](../../flow-nodes/message/question.md) or the [Optional Question](../../flow-nodes/message/optional-question.md) Node. The **xApp** type of the Question Node is only considered to be answered if submitted results are available as part of the Input. 
     
