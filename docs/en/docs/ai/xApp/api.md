@@ -19,11 +19,6 @@ The `setAppState` function is used in the following Nodes:
 - [Set HTML xApp State](../flow-nodes/xApp/set-html-xApp-state.md)
 
 
-Alternatives:
-
-- Set HTML xApp State: `setAppState("generic-html", { html: "your html code" });`. Make sure that you include a copy of the xApp Page SDK within the HTML code, otherwise, you will get the `The Application failed to load` error.
-- Set AdaptiveCards xApp State: `setAppState("https://cognigy.ai/apps/adaptivecards/", { card: { /*here goes the adaptivecard definition */ } })`.
-
 
 ## More information
 
