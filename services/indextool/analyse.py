@@ -35,15 +35,14 @@ def extract_title(file_name: str) -> str:
 
 def extract_subtitle(file_name: str) -> list:
     """ Extract the subtitles from the given file."""
-    list_of_sub_titles = []
     cur_file = open(file_name, 'r')
     content = cur_file.read()
-    
-    for line in content.splitlines():
-        if line.startswith('## '):
-            list_of_sub_titles.append(line.split('## ')[1])
-    
-    return list_of_sub_titles
+
+    return [
+        line.split('## ')[1]
+        for line in content.splitlines()
+        if line.startswith('## ')
+    ]
 
 
 def lowercase_words(words: list) -> list:
@@ -78,12 +77,12 @@ def analyser(text: str) -> list:
     # preprocess the text before analysing:
     text = remove_html_tags(text)
     text = remove_markdown_links(text)
-    # words = remove_newlines(words)
     
-    # analyse the text:
-    words = [porter_stemmer.stem(word) for word in word_tokenize(text) if
-             word not in en_stopwords and word not in punctuation]
-    return words
+    return [
+        porter_stemmer.stem(word)
+        for word in word_tokenize(text)
+        if word not in en_stopwords and word not in punctuation
+    ]
 
 
 def generate_url(base_url: str, file: str, cwd: str) -> str:
