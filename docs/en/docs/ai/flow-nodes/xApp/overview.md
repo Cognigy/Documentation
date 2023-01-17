@@ -16,7 +16,7 @@ Cognigy.AI supports the following Nodes:
  - [Init xApp Session](init-xApp-session.md)
  - [Get xApp Sesion PIN](get-xApp-session-PIN.md)
  - [Set HTML xApp State](set-html-xApp-state.md)
- - [Set AdaotiveCard xApp State](set-AdaptiveCard-xApp-state.md)
+ - [Set AdaptiveCard xApp State](set-AdaptiveCard-xApp-state.md)
    
 ## More information
 

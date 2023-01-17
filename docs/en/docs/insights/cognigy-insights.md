@@ -10,7 +10,7 @@
 
 Cognigy is committed to providing you with the tools you need to improve the customer experience of your customers.
 
-Cognigy.AI has integrated analytics reporting functionalities, as well as an ODATA, interface our customers can rely on to retrieve their raw analytics data. Our integrated analytics dashboard provides a range of key metrics to understand the usage and the performance of your bots. We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots - hence we have created a new product called **Cognigy Insights** which entirely replaces the static analytics dashboard with a whole set of new tools.
+Cognigy.AI has integrated analytics reporting functionalities, as well as an OData, interface our customers can rely on to retrieve their raw analytics data. Our integrated analytics dashboard provides a range of key metrics to understand the usage and the performance of your bots. We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots - hence we have created a new product called **Cognigy Insights** which entirely replaces the static analytics dashboard with a whole set of new tools.
 
 As of release v4.10 Cognigy provides a completely new designed Analytics solution **"Insights"**.
 
