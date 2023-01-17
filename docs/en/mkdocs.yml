@@ -209,6 +209,12 @@ nav:
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
         - ai/flow-nodes/audiocodes/agent-assist.md
+  # - xApp:
+    # - ai/flow-nodes/xApp/overview.md
+    # - ai/flow-nodes/xApp/init-xApp-session.md
+    # - ai/flow-nodes/xApp/get-xApp-session-PIN.md 
+    # - ai/flow-nodes/xApp/set-html-xApp-state.md
+    # - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md 
     - Other Nodes:
       - Log Message: ai/flow-nodes/other-nodes/log-message.md
       - ai/flow-nodes/other-nodes/overwrite-analytics.md
@@ -266,6 +272,10 @@ nav:
     - ai/tools/agent-handover.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
+# - xApp:
+  # - ai/xApp/overview.md 
+  # - ai/xApp/tokens.md 
+  # - ai/xApp/api.md 
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
