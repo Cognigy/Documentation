@@ -1,10 +1,10 @@
 ---
- title: "xApp" 
- slug: "xApp" 
+ title: "xApps" 
+ slug: "xApps" 
  hidden: true 
 ---
 
-# xApp (Beta)
+# xApps (Beta)
 
 !!! note
     This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback so we can improve it before it is officially released.

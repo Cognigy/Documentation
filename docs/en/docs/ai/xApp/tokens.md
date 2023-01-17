@@ -26,5 +26,5 @@ The URL to access the xApp Session.
 ## More information
 
 - [Get xApp Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) 
-- [xApp](overview.md)
+- [xApps](overview.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)

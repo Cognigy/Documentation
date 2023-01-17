@@ -17,7 +17,7 @@ Function |	Usage
 ## More information
 
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
-- [xApp](overview.md)
+- [xApps](overview.md)
 
 
 

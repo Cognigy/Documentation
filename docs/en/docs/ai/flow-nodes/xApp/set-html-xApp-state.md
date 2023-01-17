@@ -6,9 +6,16 @@
 
 # Set HTML xApp State
 
-The xApp Page can be built by providing custom HTML code. 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-html-xApp-state.png" width="100%" />
+</figure>
 
-## Content 
+## Description
+<div class="divider"></div>
+
+The xApp Page can be built by providing custom HTML code.
+
+### Content 
 
 You can either provide an HTML document or an HTML body only. Once this Node is executed, this xApp Page is displayed in the xApp Session.
 
@@ -19,7 +26,7 @@ The submitted payloads need to be JSON serializable objects.
 You can use the `submit` function. An example of a button that submits on click would be the following:
 `<button type="button" onclick="SDK.submit({ variant: 'button1' })">button 1</button>`.
 
-## xApp Page SDK
+### xApp Page SDK
 
 When hosted within Cognigy, the xApp Page (or any generic HTML xApp) can load the App Page SDK using a fixed URL:
  `<script src=”/sdk/app-page-sdk.js”></script>`.
@@ -36,5 +43,8 @@ Function |  Usage
 
 ## More information
 
-- [xApp](../../xApp/overview.md)
+- [xApps](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
+- [Init xApp Session](init-xApp-session.md)
+- [Get xApp Sesion PIN](get-xApp-session-PIN.md)
+- [Set AdaptiveCard xApp State](set-AdaptiveCard-xApp-state.md)
