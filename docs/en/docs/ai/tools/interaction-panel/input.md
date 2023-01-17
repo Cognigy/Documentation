@@ -39,7 +39,7 @@ The Input object contains the following properties (for text input).
 |intentOutOfState|	If a state is active, this property contains the detected intent that has been excluded by the state.|
 |currentTime|	The timestamp of when the message was received by Cognigy.AI.
 |state|	The current state within the session. By default, it will contain the value "default". Other states can be defined. See State for more information.|
-|channel|	The channel from which the message was received, e.g. a facebook endpoint has the value "facebook".<br>For our more generic endpoint types like "socket", "webhook" and "rest", this value can be defined. This property will also be available in the ODATA records to enable channel based analytics filtering.|
+|channel|	The channel from which the message was received, e.g. a facebook endpoint has the value "facebook".<br>For our more generic endpoint types like "socket", "webhook" and "rest", this value can be defined. This property will also be available in the OData records to enable channel based analytics filtering.|
 |endpointType|	The type of endpoint through which the message was recieved, e.g. alexa, facebook, dialogflow, etc. This value cannot be changed.|
 |entrypoint|	The flow node id that will receive and process the input object.
 |userId	|The current user's ID. This is what Cognigy.AI uses to identify each user as a reference to their individual contact profile.<br>See Contact Profiles for more information.|
