@@ -49,6 +49,7 @@ extra_css:
 - assets/css/extra.css
 extra_javascript:
 - assets/js/custom.js
+- assets/js/hotjar.js
 
 nav:
 - Cognigy Products: index.md
@@ -59,7 +60,10 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
-  - release-notes/4.41.md
+  - 4.42:
+    - release-notes/4.42.md
+  - 4.41:
+    - release-notes/4.41.md
   - release-notes/4.40.md
   - release-notes/4.39.md
   - 4.38:
@@ -205,6 +209,12 @@ nav:
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
         - ai/flow-nodes/audiocodes/agent-assist.md
+  # - xApp:
+    # - ai/flow-nodes/xApp/overview.md
+    # - ai/flow-nodes/xApp/init-xApp-session.md
+    # - ai/flow-nodes/xApp/get-xApp-session-PIN.md 
+    # - ai/flow-nodes/xApp/set-html-xApp-state.md
+    # - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md 
     - Other Nodes:
       - Log Message: ai/flow-nodes/other-nodes/log-message.md
       - ai/flow-nodes/other-nodes/overwrite-analytics.md
@@ -253,16 +263,19 @@ nav:
     - Analytics:
       - ai/tools/analytics/analytics.md
       - ai/tools/analytics/agents-analytics.md
-      - ai/tools/analytics/odata-analytics-endpoint.md
       - ai/tools/analytics/analytics-concepts.md
+      - ai/tools/analytics/odata-analytics-endpoint.md
     - ai/tools/node-search.md
     - ai/tools/voice-preview.md
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
     - ai/tools/agent-handover.md
-    - ai/tools/livechat-lite.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
+# - xApp:
+  # - ai/xApp/overview.md 
+  # - ai/xApp/tokens.md 
+  # - ai/xApp/api.md 
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -323,7 +336,6 @@ nav:
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
-    - ai/handover-providers/livechat-handover.md
 
   - ai/architecture.md
   
@@ -338,7 +350,10 @@ nav:
     - ai/installation/ip-ranges-shared-environments.md
     - ai/installation/reset-init-user-credentials.md
     - ai/installation/backups.md
-    - ai/installation/kustomize-to-helm-migration.md
+    - Migration Guides:
+      - ai/installation/migration/contents.md
+      - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
+      - ai/installation/migration/kustomize-to-helm-migration.md
   - ai/limitations.md
   - Developer Guides:
     - ai/developer-guides/api-reference.md
@@ -351,6 +366,7 @@ nav:
     - insights/release-notes/release-notes.md
   - insights/global-filter.md
   - insights/timezone.md
+  - insights/ttl.md
   - insights/dashboard-overview.md
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md

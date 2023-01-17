@@ -21,8 +21,6 @@ Supported Endpoints have a configuration tab called `Handover Settings`. In ther
 
 - [**Salesforce**]({{config.site_url}}ai/handover-providers/salesforce-handover/)
 
-- [**Cognigy LiveChat (legacy)**]({{config.site_url}}ai/handover-providers/livechat-handover/)
-
 The Endpoints that support handover are listed below:
 
 | Method      |

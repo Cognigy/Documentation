@@ -40,7 +40,7 @@ The values of the following fields are used to communicate with your Sunshine Co
 
 ### API Version
 
-Cogngiy.AI supports the V1.1 and V2 APIs offered by Sunshine Conversations. The selection in this field must match the API version used to create the webhook integration in the Sunshine conversations app.
+Cognigy.AI supports the V1.1 and V2 APIs offered by Sunshine Conversations. The selection in this field must match the API version used to create the webhook integration in the Sunshine conversations app.
 
 ### Key ID
 
