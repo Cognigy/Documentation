@@ -10,7 +10,7 @@ import mkdocs.commands.serve
 import mkdocs.config
 import mkdocs.utils
 import typer
-import yaml 
+import yaml
 from jinja2 import Template
 
 app = typer.Typer()
@@ -49,7 +49,7 @@ def complete_existing_lang(incomplete: str):
 
 def get_base_lang_config(lang: str):
     en_config = get_en_config()
-    cognigy_url_base = "https://docs.cognigy.com/" 
+    cognigy_url_base = "https://docs.cognigy.com/"
     new_config = en_config.copy()
     new_config["site_url"] = en_config["site_url"] + f"{lang}/"
     new_config["theme"]["logo"] = cognigy_url_base + en_config["theme"]["logo"]
@@ -66,7 +66,7 @@ def get_base_lang_config(lang: str):
             extra_css.append(cognigy_url_base + css)
     
     new_config["extra_css"] = extra_css
-
+    
     extra_js = []
     js: str
     for js in en_config["extra_javascript"]:
@@ -82,9 +82,9 @@ def get_base_lang_config(lang: str):
 
 @app.command()
 def build_lang(
-    lang: str = typer.Argument(..., callback=lang_callback, autocompletion=complete_existing_lang)):
+        lang: str = typer.Argument(..., callback=lang_callback, autocompletion=complete_existing_lang)):
     lang_path: Path = Path("docs") / lang
-
+    
     if not lang_path.is_dir():
         typer.echo(f"The language directory doesn't seem to exist yet: {lang}")
         raise typer.Abort()
@@ -95,12 +95,12 @@ def build_lang(
     build_lang_path = build_dir_path / lang
     en_lang_path = Path("docs/en")
     site_path = Path("site").absolute()
-
+    
     if lang == "en":
         dist_path = site_path
     else:
         dist_path: Path = site_path / lang
-
+    
     shutil.rmtree(build_lang_path, ignore_errors=True)
     shutil.copytree(lang_path, build_lang_path)
     overrides_src = en_docs_path / "overrides"
@@ -111,14 +111,14 @@ def build_lang(
         
         if not dest_path.exists():
             shutil.copy(path, dest_path)
-
+    
     en_config_path: Path = en_lang_path / mkdocs_name
     en_config: dict = mkdocs.utils.yaml_load(en_config_path.read_text(encoding="utf-8"))
     nav = en_config["nav"]
     lang_config_path: Path = lang_path / mkdocs_name
-
+    
     lang_config: dict = mkdocs.utils.yaml_load(lang_config_path.read_text(encoding="utf-8"))
-
+    
     lang_nav = lang_config["nav"]
     use_nav = nav[2:]
     lang_use_nav = lang_nav[2:]
@@ -126,7 +126,7 @@ def build_lang(
     sections = get_sections(use_nav)
     lang_file_to_nav = get_file_to_nav_map(lang_use_nav)
     use_lang_file_to_nav = get_file_to_nav_map(lang_use_nav)
-
+    
     for file in file_to_nav:
         file_path = Path(file)
         lang_file_path: Path = build_lang_path / "docs" / file_path
@@ -147,7 +147,7 @@ def build_lang(
                             new_key = lang_file_to_nav[key_first_file]
                         else:
                             new_key += (key_part,)
-                    except TypeError: 
+                    except TypeError:
                         new_key += (key_part,)
                 use_lang_file_to_nav[file] = new_key
     
@@ -188,16 +188,15 @@ def build_all():
     typer.echo("Building docs for: en")
     mkdocs.commands.build.build(mkdocs.config.load_config(site_dir=str(site_path)))
     os.chdir(current_dir)
-    langs = []
-    
-    for lang in get_lang_paths():
-        if lang == en_docs_path or not lang.is_dir():
-            continue
-        langs.append(lang.name)
-    
+    langs = [
+        lang.name
+        for lang in get_lang_paths()
+        if lang != en_docs_path and lang.is_dir()
+    ]
     cpu_count = os.cpu_count() or 1
     with Pool(cpu_count * 2) as p:
         p.map(build_lang, langs)
+
 
 def update_single_lang(lang: str):
     lang_path = docs_path / lang
@@ -207,9 +206,9 @@ def update_single_lang(lang: str):
 
 @app.command()
 def update_languages(
-    lang: str = typer.Argument(
-        None, callback=lang_callback, autocompletion=complete_existing_lang
-    )
+        lang: str = typer.Argument(
+            None, callback=lang_callback, autocompletion=complete_existing_lang
+        )
 ):
     """
     Update the mkdocs.yml file Languages section including all the available languages. Takes a lang argument (e.g. de), default is all.
@@ -234,15 +233,15 @@ def serve():
     os.chdir("site")
     server_address = ("", 8008)
     server = HTTPServer(server_address, SimpleHTTPRequestHandler)
-    typer.echo(f"Serving at: http://localhost:8008/")
+    typer.echo("Serving at: http://localhost:8008/")
     server.serve_forever()
 
 
 @app.command()
 def live(
-    lang: str = typer.Argument(
-        None, callback=lang_callback, autocompletion=complete_existing_lang
-    )
+        lang: str = typer.Argument(
+            None, callback=lang_callback, autocompletion=complete_existing_lang
+        )
 ):
     """
     Serve with livereload a docs site for a specific language. Takes an optional LANG argument (e.g. de, es, etc.) default is en.
@@ -252,7 +251,7 @@ def live(
     lang_path: Path = docs_path / lang
     os.chdir(lang_path)
     mkdocs.commands.serve.serve(dev_addr="0.0.0.0:8008")
-    typer.secho(f"http://0.0.0.0:8008/")
+    typer.secho("http://0.0.0.0:8008/")
 
 
 def update_config(lang: str):
@@ -292,9 +291,9 @@ def update_config(lang: str):
         encoding="utf-8",
     )
 
-def get_key_section(
-    *, key_to_section: Dict[Tuple[str, ...], list], key: Tuple[str, ...]) -> list:
 
+def get_key_section(
+        *, key_to_section: Dict[Tuple[str, ...], list], key: Tuple[str, ...]) -> list:
     if key in key_to_section:
         return key_to_section[key]
     super_key = key[:-1]
@@ -304,6 +303,7 @@ def get_key_section(
     super_section.append({title: new_section})
     key_to_section[key] = new_section
     return new_section
+
 
 def get_file_to_nav_map(nav: list) -> Dict[str, Tuple[str, ...]]:
     file_to_nav = {}
