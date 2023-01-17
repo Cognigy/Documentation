@@ -18,7 +18,6 @@ Function |	Usage
 
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp](overview.md)
-- [xApp xApp Page SDK](sdk.md)
 
 
 
