@@ -6,7 +6,7 @@
 
 # Roles
 
-Live Agent has two different roles for the users. Administrators, Agents, and Supervisors.
+Live Agent has three different roles for the users. Administrators, Agents, and Supervisors.
 
 ## Administrator
 
