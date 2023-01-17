@@ -14,7 +14,7 @@ The URL to access the PIN Page.
 
 ## xApp Session PIN	
 
-The PIN code to access the xApp Session.
+The PIN code to access the xApp Session. The PIN code is only valid for 5 minutes.
 
 The xApp Session PIN is created by using the [Get xApp Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node.
 

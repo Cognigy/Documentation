@@ -6,7 +6,7 @@
 
 # Get xApp Session PIN
 
-Gets a new xApp Session PIN which can be accessed using the Get xApp Session PIN token.
+Gets a new xApp Session PIN which can be accessed using the Get xApp Session PIN token. The PIN code is only valid for 5 minutes.
 
 ## More information
 
