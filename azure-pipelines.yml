@@ -12,7 +12,7 @@ resources:
 variables:
   DOCKER_BUILDKIT: 1
   containerRegistryReference: "Azure Container Registry"
-  imageNames: ["documentation", "search"]
+  imageNames: ["documentation", "documentation-search"]
 
 pool:
   vmImage: ubuntu-20.04
@@ -41,18 +41,6 @@ stages:
               repository: $(imageNames[0])
               containerRegistry: $(containerRegistryReference)
               tags: $(Build.BuildId)
-      - job:
-        displayName: Build product search
-        steps:
-          - checkout: self
-            persistCredentials: "true"
-            clean: "true"
-
-          - task: Docker@2
-            displayName: Login into Docker-Registry
-            inputs:
-              command: "login"
-              containerRegistry: $(containerRegistryReference)
 
           - task: Docker@2
             displayName: Build and push container image
