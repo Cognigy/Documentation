@@ -1,12 +1,12 @@
 ---
- title: "Migration guide for Helm dependencies in Live Agent 4.43" 
- slug: "migration-guide-helm-dependencies-4.43" 
+ title: "Migration guide for Helm dependencies in Live Agent 4.44" 
+ slug: "migration-guide-helm-dependencies-4.44" 
  hidden: false 
 ---
 
-# Migration guide for Helm dependencies in Live Agent 4.43
+# Migration guide for Helm dependencies in Live Agent 4.44
 
-This is a migration guide for the Live Agent 4.43 version upgrade. This release upgrades the PostgreSQL and Redis dependency versions. This breaking change requires manual data migration if you are not using them externally.
+This is a migration guide for the Live Agent 4.44 version upgrade. This release upgrades the PostgreSQL and Redis dependency versions. This breaking change requires manual data migration if you are not using them externally.
 
 In the case of Redis, it works out of the box, but for PostgreSQL, you need to migrate the data from the old database to the new one.
 
@@ -284,7 +284,7 @@ password
 
 The values `postgresql.auth.existingSecret` and `postgresql.auth.secretKeys.adminPasswordKey` are set to `postgres-password` and `password` by default and need to be uncommented for using the created secret.
 
-### Step 5. Install the chart version 4.43.0
+### Step 5. Install the chart version 4.44.0
 
 To restore the previous backup, install the new release without the migrations job running or the deployments accessing the DB as it is empty. Set the migrations job to false in the custom-values.yaml file and decrease the replica count to 0 for both the app and worker:
 
@@ -306,7 +306,7 @@ migration:
 Install the new version of the chart:
 
 ```sh
-helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version 4.43.0 --namespace live-agent -f custom-values.yaml
+helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version 4.44.0 --namespace live-agent -f custom-values.yaml
 ```
 
 Then the only pods running will be the EFS, PostgreSQL and Redis ones.
@@ -374,7 +374,7 @@ migration:
 Upgrade the chart.
 
 ```sh
-helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version 4.43.0 --namespace live-agent -f custom-values.yaml
+helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version 4.44.0 --namespace live-agent -f custom-values.yaml
 ```
 
 ### Step 8. Attach a shell and remove the onboarding variable
