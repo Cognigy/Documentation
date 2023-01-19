@@ -28,10 +28,20 @@ If the Execution Mode is set to "Go to Node and continue", you can overwrite the
 If the Execution Mode is set to "Go to Node and continue", you can overwrite the data with which to continue here. If no data is specified, input.data will be used.
 
 ### Parse Intents
+
+This toggle decides whether we should **parse intents** within the sub Flow.
+
 If the `Parse Intents` feature is enabled, Cognigy NLU will reparse the Intents in the target Flow with the provided input (either input.text or the Optionally Injected Text).
 
+This will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
+
 ### Parse Slots
+
+This toggle decides whether we should **parse slots** within the sub Flow.
+
 If the `Parse Slots` feature is enabled, Cognigy NLU will reparse the Slots in the target Flow with the provided input (either input.text or the Optionally Injected Text).
+
+This will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
 
 ### Absorb Context
 If the `Absorb Context` feature is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
