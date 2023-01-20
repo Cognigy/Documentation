@@ -265,6 +265,7 @@ This expiration value determines the amount of minutes from when the data of Ins
 
 This expiration value determines the amount of minutes from when the data of [Steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) is created until it is deleted from the database.
 
+For more information about data expiration in Insights, read [Data Expiration](../../insights/ttl.md) in the Insights documentation.
 
 It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
 
