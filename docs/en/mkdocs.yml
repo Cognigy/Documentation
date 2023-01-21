@@ -230,6 +230,7 @@ nav:
       - ai/nlu/nlu-overview/intent-analyzer.md
       - ai/nlu/nlu-overview/rule-intents.md
       - ai/nlu/nlu-overview/intent-hierarchy.md
+      - ai/nlu/nlu-overview/intent-mapping-priority.md
       - ai/nlu/nlu-overview/trigger-intent.md
       - ai/nlu/nlu-overview/intent-upload-download.md
       - ai/nlu/nlu-overview/reject-intents.md
