@@ -101,10 +101,3 @@ JSON: Two objects in the `nlu.intentMapperResults.scores` array
         }
       ]
 ```
-
-
-
-
-
-
-
