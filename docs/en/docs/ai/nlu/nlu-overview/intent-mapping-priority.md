@@ -73,7 +73,7 @@ Set up **Prioritise Child Intents** for the parent Intent.
 
 User input: `Order pizza with ham` 
 
-Result: intent: `Meat, intent score: 0.53`
+Result: `intent: Meat, intent score: 0.53`
 
 JSON: Two objects in the `nlu.intentMapperResults.scores` array 
 
