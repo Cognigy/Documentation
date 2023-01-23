@@ -71,8 +71,6 @@ JSON: One object in the `nlu.intentMapperResults.scores` array
 
 Set up **Prioritise Child Intents** for the parent Intent.
 
-#### Example 1
-
 User input: `Order pizza with ham` 
 
 Result: intent: `Meat, intent score: 0.53`
@@ -100,39 +98,6 @@ JSON: Two objects in the `nlu.intentMapperResults.scores` array
             "confirmationSentences": null,
             "disambiguationSentence": null,
             "flow": "a38ca509-9013-4e50-ba74-0ecb2080c642"
-        }
-      ]
-```
-
-#### Example 2
-
-User input: `Order pizza with cheese and ham` 
-
-Result: `intent: Meat, intent score: 0.48`
-
-JSON: Two objects in the `nlu.intentMapperResults.scores` array
-
-```json
-"scores": [
-        {
-          "id": "b3995ba8-bb63-4182-bd3a-d03d20726818",
-          "name": "Meat",
-          "score": 0.48530120130542537,
-          "negated": false,
-          "confirmationSentence": null,
-          "confirmationSentences": null,
-          "disambiguationSentence": null,
-          "flow": "a38ca509-9013-4e50-ba74-0ecb2080c642"
-        },
-        {
-          "id": "5349765e-2945-4d8b-9d09-10dfb4166cb6",
-          "name": "Vegetarian",
-          "score": 0.36025692555191785,
-          "negated": false,
-          "confirmationSentence": null,
-          "confirmationSentences": null,
-          "disambiguationSentence": null,
-          "flow": "a38ca509-9013-4e50-ba74-0ecb2080c642"
         }
       ]
 ```
