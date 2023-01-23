@@ -8,7 +8,7 @@
 
 This feature helps avoid ambiguity between parent and child Intents. The ambiguity can happen when the user input contains a combination of parent and child Intent sentences.
 
-With **Intent Mapping Priority**, you choose whether you want to prioritize the current Intent or its child Intents. By giving priority to certain Intents, you can ensure that a Cognigy bot will respond to user requests in the most efficient and accurate way possible. 
+With **Intent Mapping Priority**, you choose whether you want to prioritize the current Intent or its child Intents. By giving priority to certain Intents, you can influence whether the parent or child Intents are more likely to be mapped. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/intent-mapping-priority.png" width="80%" />
