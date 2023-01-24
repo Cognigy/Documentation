@@ -5,7 +5,7 @@
 ---
 # Data Expiration
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.42-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Added in-v4.42-blue.svg)](../release-notes/4.42.md)
 
 *Data Expiration* (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
 

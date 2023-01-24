@@ -6,6 +6,8 @@
 
 # Intent Mapping Priority
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.43-blue.svg)](../release-notes/4.43.md)
+
 This feature helps avoid ambiguity between parent and child Intents. The ambiguity can happen when the user input contains a combination of parent and child Intent sentences.
 
 With **Intent Mapping Priority**, you choose whether you want to prioritize the current Intent or its child Intents. By giving priority to certain Intents, you can influence whether the parent or child Intents are more likely to be mapped. 
