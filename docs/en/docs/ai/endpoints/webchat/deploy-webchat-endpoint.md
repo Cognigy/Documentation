@@ -61,7 +61,7 @@ You can configure almost everything about the Webchat to personalize it just for
 | Parameter | Description |
 | -- | -- |
 | Enable Input Autogrow | If this is enabled, the text input for Webchat users will grow automatically when the user types long texts. It also enables line breaks for user text inputs. |
-| Maximum Number of Input Rows | Defines the number of text lines the text input can grow to. After the maximum line size is exceeded, a vertical scrollbar will appear in the text input. |
+| Maximum Number of Input Rows | Defines the number of text lines the text input can grow to. After the maximum line size is exceeded, a vertical scroll bar will appear in the text input. |
 | Dynamic Image Aspect Ratio | Images from the 'gallery', 'attachment' or 'top list item' template will not have a forced aspect ratio and will be fully displayed full-width without cropping |
 | Disable Input Autocomplete | Use this setting to disable the autocomplete functionality for everyone |
 | Enable generic HTML Styling | If this is active, additional generic styling will be applied to HTML content inside regular text messages. |

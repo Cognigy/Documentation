@@ -10,7 +10,7 @@ NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU" target="_blank" >Techinar video  "Cognigy NLU"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU" target="_blank" >Technical video  "Cognigy NLU"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive

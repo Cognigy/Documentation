@@ -15,7 +15,7 @@ Within our **COGNIGY.AI** platform you are able to connect your **Agent** to you
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway" target="_blank" >Techinar video "Building a Phone Bot with Voice Gateway"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway" target="_blank" >Technical video "Building a Phone Bot with Voice Gateway"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive
