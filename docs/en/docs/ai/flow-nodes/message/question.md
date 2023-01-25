@@ -17,7 +17,7 @@ A Question Node is used to ask a question that requests specific information fro
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Technical video "Question Nodes"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive

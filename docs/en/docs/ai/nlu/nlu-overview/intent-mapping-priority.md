@@ -6,7 +6,7 @@
 
 # Intent Mapping Priority
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.43-blue.svg)](../release-notes/4.43.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.43-blue.svg)](../../../release-notes/4.43.md)
 
 This feature helps avoid ambiguity between parent and child Intents. The ambiguity can happen when the user input contains a combination of parent and child Intent sentences.
 

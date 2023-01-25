@@ -11,7 +11,7 @@ Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records.
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Techinar video "Analytics &amp; OData"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Technical video "Analytics &amp; OData"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive
@@ -58,7 +58,7 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
 ### Version 2.2
-???+ warning "Deprecation of ODATA v2.2"
+???+ warning "Deprecation of OData v2.2"
     Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.2. This OData endpoint version will be
     removed in Cognigy.AI `v4.43.0`.
 
@@ -75,7 +75,7 @@ The URL for accessing the V2.2 OData endpoint is as follows:
 
 
 ### Version 2.0
-???+ warning "Deprecation of ODATA v2.0"
+???+ warning "Deprecation of OData v2.0"
     Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.0. This OData endpoint version will be
     removed in Cognigy.AI `v4.43.0`.
 

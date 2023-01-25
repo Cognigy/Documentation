@@ -52,7 +52,7 @@ The Transformers have full TypeScript support, meaning that the variables and NP
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019893159-Cognigy-Sessions-Endpoint-Transformers" target="_blank" >Techinar video "Endpoint Transformers"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019893159-Cognigy-Sessions-Endpoint-Transformers" target="_blank" >Technical video "Endpoint Transformers"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive

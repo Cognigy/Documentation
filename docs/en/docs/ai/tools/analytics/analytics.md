@@ -16,7 +16,7 @@ The [analytics dashboard](agents-analytics.md) is available for each agent creat
     <span class="callout-icon">📘</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Techinar video "Analytics & OData</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Technical video "Analytics & OData</a>
       </div>
       <div class="callout-subtext">
             Cognigy Helpcenter article
