@@ -273,4 +273,4 @@ It is also possible to set a server-wide maximum expiration time for all the sen
 
 <div class="divider"></div>
 
-Further information about installing the Cognigy Management UI can be found on the [Installation & Updating]({{config.site_url}}ai/installation/installation-and-updating/) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
+Further information about installing the Cognigy Management UI can be found on the [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
