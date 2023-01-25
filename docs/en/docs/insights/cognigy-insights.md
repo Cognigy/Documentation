@@ -6,7 +6,7 @@
 # Cognigy Insights 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/service-overview1.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/service-overview.png" width="100%" />
 </figure>
 
 ## Description
