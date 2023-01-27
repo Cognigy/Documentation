@@ -18,10 +18,7 @@ To create an Agent with multiple roles, do the following steps:
 After that, you can view the created user on the Agents Overview page on Live Agent. 
 - In addition, add the respective role the Agent should have.
   
-In order to see the roles applied to the Agent, the specific agent has to log in once to get the additional role(s) applied.
-
-
-### What happens if an inbox is removed?
+To see the roles applied to the Agent, the specific Agent must log in once to have the additional roles applied.### What happens if an inbox is removed?
 Inboxes created manually can be safely edited/removed. However, the inboxes with the `-default` suffix created from Cognigy.AI must not be deleted. This will break the integration between Live Agent and Cognigy.AI. Unfortunately, there is no way to undo this step. In case this inbox is accidentally removed, please [reach us through support](https://support.cognigy.com/hc/en-us/requests/new?).
 
 ### How to fix custom SSL certificate verification error?
