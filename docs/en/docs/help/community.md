@@ -1,3 +1,8 @@
+---
+ title: "Community" 
+ slug: "community" 
+ hidden: false 
+---
 # Community
 
 ## Description

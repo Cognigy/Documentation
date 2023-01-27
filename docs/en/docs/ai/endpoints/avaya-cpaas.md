@@ -1,3 +1,9 @@
+---
+ title: "Avaya CPaaS" 
+ slug: "avaya-cpaas" 
+ hidden: false 
+---
+
 # Avaya CPaaS
 
 <figure>

@@ -1,3 +1,8 @@
+---
+ title: "Cognigy Live Agent" 
+ slug: "pre-4.30" 
+ hidden: false 
+---
 # Cognigy Live Agent
 
 ## 4.29.0

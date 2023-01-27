@@ -1,3 +1,8 @@
+---
+ title: "Cognigy Insights" 
+ slug: "pre-4.30" 
+ hidden: false 
+---
 # Cognigy Insights
 
 ## 4.29.0
