@@ -78,11 +78,16 @@ nav:
   - release-notes/4.32.md
   - release-notes/4.31.md
   - release-notes/4.30.md
+  - Earlier versions:
+    - release-notes/earlier-versions.md
+    - ai/release-notes/pre-4.30.md 
+    - insights/release-notes/pre-4.30.md
+    - live-agent/release-notes/pre-4.30.md
+    
 
 - AI:
-  - ai/platform-overview.md
-  - Release Notes:
-    - ai/release-notes/release-notes.md
+  - Overview:
+    - ai/platform-overview.md 
   - Resources:
     - Agents:
       - ai/resources/agents/agents.md
@@ -106,8 +111,6 @@ nav:
     - Tweak:
       - ai/resources/tweak/tweak.md
       - ai/resources/tweak/intent-trainer.md
-    # - Analytics:
-    #   - ai/resources/analytics.md
     - Insights:
       - insights/cognigy-insights.md
     - Manage:
@@ -339,7 +342,7 @@ nav:
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
-
+ 
   - ai/architecture.md
   
   - Installation & Configuration:
@@ -362,11 +365,12 @@ nav:
     - ai/developer-guides/api-reference.md
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
+  - Release Notes:
+    - ai/release-notes/release-notes.md   
 
 - Insights:
-  - insights/cognigy-insights.md
-  - Release Notes:
-    - insights/release-notes/release-notes.md
+  - Overview:
+    - insights/cognigy-insights.md
   - insights/global-filter.md
   - insights/timezone.md
   - insights/ttl.md
@@ -377,19 +381,22 @@ nav:
   - insights/transcript-explorer.md
   - insights/message-explorer.md
   - insights/download-report.md
+  - Release Notes:  
+    - insights/release-notes/release-notes.md  
 
 - Webchat Widget:
-  - ai/endpoints/webchat/webchat.md
-  - ai/endpoints/webchat/webchat.md
+  - Overview:
+    - ai/endpoints/webchat/webchat.md  
   - ai/endpoints/webchat/deploy-webchat-endpoint.md
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
+  - Release Notes: 
+    - ai/endpoints/webchat/release-notes.md
 
 - Live Agent:
-  - live-agent/overview.md
-  - Release Notes:
-    - live-agent/release-notes/release-notes.md
+  - Overview:
+    - live-agent/overview.md
   - Getting Started:
     - live-agent/getting-started/live-agent-getting-started.md
   - Installation & Configuration:
@@ -430,12 +437,13 @@ nav:
   - live-agent/automation-rules.md
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
-  - live-agent/FAQs.md
+  - Release Notes:
+    - live-agent/release-notes/release-notes.md 
+  - live-agent/FAQs.md   
 
 - Voice Gateway:
-  - voicegateway/overview.md
   - Overview:
-    - voicegateway/overview.md
+    - voicegateway/overview.md 
   - Getting Started:
     - voicegateway/getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
@@ -463,6 +471,8 @@ nav:
       # - voicegateway/webapp/speech-services.md
     # - Phone Numbers:
       # - voicegateway/webapp/phone-numbers.md
+  - Release Notes:
+    - voicegateway/release-notes.md      
 
 - Marketplace:
   - ai/resources/manage/extensions.md
