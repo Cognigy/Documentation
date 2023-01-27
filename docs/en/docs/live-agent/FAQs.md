@@ -13,10 +13,10 @@ Removing a user from Live Agent can be done from the Cognigy.AI Access Control. 
 Head over to [Cognigy.AI Access Control]({{config.site_url}}ai/tools/user-menu/access-control) for more information.
 
 ### How to create an Agent with multiple roles?
-To create an Agent with multiple roles, you have to do the following setup steps:
-- Create an Agent from the Cognigy.AI Access Control and assign him on of the three possible roles: `liveAgentAdmin`, `liveAgentSupervisor`, and `liveAgentAgent`. 
-The user is then created and visible in the Agents Overview page on Live Agent. 
-- Add the respective role the Agent should have in addition.
+To create an Agent with multiple roles, do the following steps:
+1. Create an Agent from the Cognigy.AI Access Control and assign it one of these roles: `liveAgentAdmin`, `liveAgentSupervisor`, and `liveAgentAgent`. 
+After that, you can view the created user on the Agents Overview page on Live Agent. 
+- In addition, add the respective role the Agent should have.
   
 In order to see the roles applied to the Agent, the specific agent has to log in once to get the additional role(s) applied.
 
