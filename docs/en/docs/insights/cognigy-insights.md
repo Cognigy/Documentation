@@ -4,6 +4,11 @@
  hidden: false 
 ---
 # Cognigy Insights 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/overview.png" width="100%" />
+</figure>
+
 ## Description
 
 <div class="divider"></div>
