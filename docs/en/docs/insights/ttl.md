@@ -28,12 +28,12 @@ In the table below, you can view the data included in TTL.
 
 Cognigy keeps data indefinitely by default. To change this behavior, an expiration date must be set up.
 
-To activate the Data Expiration feature, set limits via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center) and specify the desired limits in your request.
+To activate the Data Expiration feature, set limits via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center) and specify the desired limits in your request.
 
 If you have already set limits in the management-ui service, the Data Expiration indicator will automatically appear in the Insights interface.
 
 ## Changing Data Expiration
 
-You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center). 
+You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
 
 When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
