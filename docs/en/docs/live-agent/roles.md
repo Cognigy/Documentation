@@ -6,7 +6,7 @@
 
 # Roles
 
-Live Agent has two different roles for the users. Agents and Administrators.
+Live Agent has three different roles for the users. Administrators, Agents, and Supervisors.
 
 ## Administrator
 
@@ -59,7 +59,3 @@ The Supervisor has restricted access.
 - Can reassign the Conversations to other Agents, or unassign them.
 
 - Has access to Reports.
-
-
-???+ info "Support of multiple roles"
-    Please be aware that currently Live Agent does not support multiple Live Agent roles for one user.
