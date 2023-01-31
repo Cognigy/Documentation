@@ -13,13 +13,9 @@ Removing a user from Live Agent can be done from the Cognigy.AI Access Control. 
 Head over to [Cognigy.AI Access Control]({{config.site_url}}ai/tools/user-menu/access-control) for more information.
 
 ### How to create an Agent with multiple roles?
-To create an Agent with multiple roles, do the following steps:
-1. Create an Agent from the Cognigy.AI Access Control and assign it one of these roles: `liveAgentAdmin`, `liveAgentSupervisor`, and `liveAgentAgent`. 
-After that, you can view the created user on the Agents Overview page on Live Agent. 
-2. In addition, add the respective role the Agent should have.
-  
-To see the roles applied to the Agent, the specific Agent must log in once to have the additional roles applied.
 
+To create an Agent with multiple roles, read the [Roles](roles.md#multiple-roles) article.
+  
 ### What happens if an inbox is removed?
 Inboxes created manually can be safely edited/removed. However, the inboxes with the `-default` suffix created from Cognigy.AI must not be deleted. This will break the integration between Live Agent and Cognigy.AI. Unfortunately, there is no way to undo this step. In case this inbox is accidentally removed, please [reach us through support](https://support.cognigy.com/hc/en-us/requests/new?).
 
