@@ -194,6 +194,80 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
     
     For detailed instructions, read the Chapter on [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
 
+### Adaptive Card
+
+The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
+
+To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
+</figure>
+
+??? info "Adaptive Card JSON example"
+
+      ```json    
+      {
+        "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+        "type": "AdaptiveCard",
+        "version": "1.0",
+        "body": [
+          {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "Publish Adaptive Card Schema"
+          },
+          {
+            "type": "ColumnSet",
+            "columns": [
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "Image",
+                    "style": "Person",
+                    "url": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
+                    "size": "Small"
+                  }
+                ],
+                "width": "auto"
+              },
+              {
+                "type": "Column",
+                "items": [
+                  {
+                    "type": "TextBlock",
+                    "weight": "Bolder",
+                    "text": "Matt Hidinger",
+                    "wrap": true
+                  },
+                  {
+                    "type": "TextBlock",
+                    "spacing": "None",
+                    "text": "Created Tue, Feb 14, 2017",
+                    "isSubtle": true,
+                    "wrap": true
+                  }
+                ],
+                "width": "stretch"
+              }
+            ]
+          },
+          {
+            "type": "TextBlock",
+            "text": "Publish Adaptive Card Schema easily.",
+            "wrap": true
+          },
+          {
+            "type": "Action.OpenUrl",
+            "title": "View",
+            "url": "https://adaptivecards.io"
+          }
+        ]
+      }
+      ```
+
 ## Alexa
 <div class="divider"></div>
 
