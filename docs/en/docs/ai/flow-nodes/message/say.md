@@ -201,10 +201,10 @@ The Adaptive Card Type allows you to configure an adaptive card output. Adaptive
 To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
 
 <figure>
-  <img class="image-center" src="../images/say/adaptive-card-output-type.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
 </figure>
 
-???+ example "Adaptive Card JSON example"
+??? info "Adaptive Card JSON example"
 
       ```json    
       {
@@ -245,7 +245,7 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
                   {
                     "type": "TextBlock",
                     "spacing": "None",
-                    "text": "Created {{DATE(2017-02-14T06:08:39Z,SHORT)}}",
+                    "text": "Created Tue, Feb 14, 2017",
                     "isSubtle": true,
                     "wrap": true
                   }
