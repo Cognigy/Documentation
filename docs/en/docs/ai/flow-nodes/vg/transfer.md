@@ -20,7 +20,7 @@ The Transfer Node allows you to transfer an ongoing call to a Tel or SIP target.
 | Parameter| Type   | Description  | Transfer Type |
 | ------ - | -----  | ------------ |-------------- |
 | Transfer Type | Dropdown | - `Refer` - forwarding an existing call. <br> - `Dial` - creating a new outgoing call.  | -  | 
-| Reason | Text | The reason for the handover. It is shown in Voice Gateway logs.  | All  | 
+| Reason | CognigyScript | The reason for the handover. It is shown in Voice Gateway logs.  | All  | 
 | Target | CognigyScript | E.164 syntax or a SIP URI are supported.    | All  | 
 | Caller ID | Number | The caller ID. Some carriers, like Twilio, require a registered number for outgoing calls.  | Dial  | 
 | Dial Music | URL | Custom audio or ringback which plays to the caller while the outbound call is ringing.  Only the `.wav` or `.mp3` formats are supported. | Dial  | 
