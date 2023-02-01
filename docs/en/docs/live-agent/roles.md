@@ -64,7 +64,7 @@ The Supervisor has restricted access.
 
 ## Multiple roles
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](./release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../release-notes/4.44.md)
 
 You can assign more than one role to an Agent.
 
