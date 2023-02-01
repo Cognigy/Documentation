@@ -6,7 +6,7 @@
 
 # Transfer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.44-blue.svg)](./../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.44-blue.svg)](./../../../release-notes/4.44.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-transfer-node.png" width="100%" />
