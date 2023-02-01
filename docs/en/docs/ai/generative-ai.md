@@ -11,7 +11,7 @@
 !!! note
     - Our Generative AI features are in Beta. We encourage you to try these features out and provide us with feedback.
 
-    - You are subject to the terms of the third-party providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
+    - You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
 
 
 *Generative AI* refers to a type of artificial intelligence that creates new, original content using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
