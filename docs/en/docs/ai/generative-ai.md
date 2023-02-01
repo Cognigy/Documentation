@@ -96,7 +96,7 @@ In the existing FLow, you can edit Nodes created based on your scenario. Generat
   <img class="image-center" src="{{config.site_url}}ai/images/generating-intent-sentences.png" width="90%" />
 </figure>
 
-To use Generative AI technology for creating Intentn sentences, do the following:
+To use Generative AI technology for creating Intent example sentences, do the following:
 
 1. Open the existing Flow.
 2. In the upper-right corner of the **Flow Editor** page, select **NLU**.
