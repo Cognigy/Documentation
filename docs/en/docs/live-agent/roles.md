@@ -64,14 +64,13 @@ The Supervisor has restricted access.
 
 ## Multiple roles
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](./release-notes/release-notes.md)
 
 You can assign more than one role to an Agent.
 
 To create an Agent with multiple roles, do the following steps:
 
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign it one or more roles: `liveAgentAdmin`, `liveAgentSupervisor`, `liveAgentAgent`. 
-
+1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign it one or more roles: `liveAgentAdmin`, `liveAgentSupervisor`, `liveAgentAgent`.
 2. Add any additional role the Agent should have.
 3. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
 
