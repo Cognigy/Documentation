@@ -417,6 +417,8 @@ nav:
         - live-agent/installation/helm-values/email-templates.md
     - Installation Updates:
       - live-agent/installation/deployment/installation-updates.md
+    - Migration Guides:
+      - live-agent/installation/migration/helm-dependencies.md
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
