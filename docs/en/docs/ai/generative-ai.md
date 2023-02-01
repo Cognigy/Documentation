@@ -20,6 +20,7 @@ Cognigy.AI integrates with the [Generative AI providers](#prerequisites) that al
 
 In the Cognigy.AI interface, Generative AI generates human-like and personalized content for a chatbot. It can be used for the following purposes:
 
+<<<<<<< HEAD
 - [Generative AI (Beta)](#generative-ai-beta)
   - [Prerequisites](#prerequisites)
   - [Set up Generative AI](#set-up-generative-ai)
@@ -29,6 +30,12 @@ In the Cognigy.AI interface, Generative AI generates human-like and personalized
   - [Generate responses for chatbot](#generate-responses-for-chatbot)
   - [FAQ](#faq)
   - [More information](#more-information)
+=======
+- [Generating Lexicons](#generate-lexicons)
+- [Creating new Flows with pre-configured Nodes](#generate-flows)
+- [Generating new Intent sentences](#generate-intent-sentences)
+- [Producing chatbot responses](#generate-responses-for-chatbot)
+>>>>>>> c5ff2535a3f2fde534c927561cebf56dee38097e
 
 To know more about about the benefits of integrating Conversational Cognigy AI with Generative AI platforms, watch this webinar:
 
