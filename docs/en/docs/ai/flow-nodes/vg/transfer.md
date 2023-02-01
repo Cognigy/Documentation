@@ -6,6 +6,8 @@
 
 # Transfer
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.44-blue.svg)](./../../../release-notes/4.44.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-transfer-node.png" width="100%" />
   <figcaption>Voice Gateway Transfer Node</figcaption>
@@ -19,7 +21,7 @@ The Transfer Node allows you to transfer an ongoing call to a Tel or SIP target.
 
 | Parameter| Type   | Description  | Transfer Type |
 | ------ - | -----  | ------------ |-------------- |
-| Transfer Type | Dropdown | - `Refer` - forwarding an existing call. <br> - `Dial` - creating a new outgoing call.  | -  | 
+| Transfer Type | Dropdown | - `Refer` - forwarding an existing call. <br> - `Dial` - creating a new outgoing call. If you want to use this type and still have the old Node version, add a new Voice Gateway Transfer Node in the Flow Editor and manually transfer the required settings from the old Node. | -  | 
 | Reason | CognigyScript | The reason for the handover. It is shown in Voice Gateway logs.  | All  | 
 | Target | CognigyScript | E.164 syntax or a SIP URI are supported.    | All  | 
 | Caller ID | Number | The caller ID. Some carriers, like Twilio, require a registered number for outgoing calls.  | Dial  | 

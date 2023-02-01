@@ -60,6 +60,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.44:
+    - release-notes/4.44.md
   - 4.43:
     - release-notes/4.43.md
   - 4.42:
@@ -417,6 +419,8 @@ nav:
         - live-agent/installation/helm-values/email-templates.md
     - Installation Updates:
       - live-agent/installation/deployment/installation-updates.md
+    - Migration Guides:
+      - live-agent/installation/migration/helm-dependencies.md
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
