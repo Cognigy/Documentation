@@ -10,7 +10,6 @@ hidden: false
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/complete-text.png" width="100%" />
-  <figcaption>Log Messages</figcaption>
 </figure>
 
 ## Description
