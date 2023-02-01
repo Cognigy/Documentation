@@ -342,7 +342,8 @@ nav:
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
- 
+    
+  - ai/generative-ai.md
   - ai/architecture.md
   
   - Installation & Configuration:
