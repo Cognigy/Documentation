@@ -6,7 +6,7 @@
 
 # Migration guide for Helm dependencies in Live Agent 4.44
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../../../../release-notes/4.44.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../../../release-notes/4.44.md)
 
 This is a migration guide for the Live Agent 4.44 version upgrade. This release upgrades the PostgreSQL and Redis dependency versions. This breaking change requires manual data migration if you are not using them externally.
 
