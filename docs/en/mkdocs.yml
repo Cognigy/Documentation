@@ -226,6 +226,7 @@ nav:
       - ai/flow-nodes/other-nodes/set-rating.md
       - ai/flow-nodes/other-nodes/set-translation.md
       - ai/flow-nodes/other-nodes/request-rating.md
+      - ai/flow-nodes/other-nodes/complete-text.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md

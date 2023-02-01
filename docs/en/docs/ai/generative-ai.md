@@ -9,8 +9,8 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.44(Beta)-purple.svg)](./release-notes/release-notes.md)
 
 !!! note
-- Cognigy Generative AI features are in Beta. We encourage you to try these features out and provide us with feedback.
-- You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
+   - Cognigy Generative AI features are in Beta. We encourage you to try these features out and provide us with feedback.
+   - You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
 
 *Generative AI* refers to a type of artificial intelligence that creates new, original content using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
@@ -22,6 +22,7 @@ In the Cognigy.AI interface, Generative AI generates human-like and personalized
 - [Creating new Flows with pre-configured Nodes](#generate-flows)
 - [Generating new Intent sentences](#generate-intent-sentences)
 - [Rephrasing bot outputs](#rephrase-bot-outputs)
+- [Completing texts](#rephrasing-bot-outputs)
 
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
@@ -52,7 +53,7 @@ You can check if the connection works by creating a new generative AI Flow.
 
 ## Generate Lexicons
 
-Note that the generation of lexicons for primary NLU languages besides German and English is not fully supported.
+Note that the generation of Lexicons for primary NLU languages besides German and English is not fully supported.
 
 To use Generative AI technology for creating a new Lexicon, do the following:
 
@@ -136,12 +137,15 @@ Check in the interactive panel if your Flow works as expected.
   <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
 </figure>
 
+## Complete texts
+
+The [Complete Text Node](./flow-nodes/other-nodes/complete-text.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+
 ## FAQ
 
 **Q:** Can I use my OpenAI free account for the Generative AI feature in Cognigy.AI?
 
-**A:** You cannot use a free account because you need API Key, which is available only for Generative AI providers' paid accounts.
-
+**A:** A paid account is required to get an API Key, which is necessary for using Generative AI. A free account does not provide this key.
 
 ## More information
 
