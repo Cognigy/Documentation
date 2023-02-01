@@ -20,6 +20,15 @@ Cognigy.AI integrates with the [Generative AI providers](#prerequisites) that al
 
 In the Cognigy.AI interface, Generative AI generates human-like and personalized content for a chatbot. It can be used for the following purposes:
 
+- [Generative AI (Beta)](#generative-ai-beta)
+  - [Prerequisites](#prerequisites)
+  - [Set up Generative AI](#set-up-generative-ai)
+  - [Generate Lexicons](#generate-lexicons)
+  - [Generate Flows](#generate-flows)
+  - [Generate Intent sentences](#generate-intent-sentences)
+  - [Generate responses for chatbot](#generate-responses-for-chatbot)
+  - [FAQ](#faq)
+  - [More information](#more-information)
 
 To know more about about the benefits of integrating Conversational Cognigy AI with Generative AI platforms, watch this webinar:
 
@@ -50,10 +59,6 @@ You can check if the connection works by creating a new generative AI Flow.
 
 ## Generate Lexicons
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/generating-lexicons.png" width="90%" />
-</figure>
-
 To use Generative AI technology for creating a new Lexicon, do the following:
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Lexicons**.
@@ -67,11 +72,11 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 
 When Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
 
-## Generate Flows 
-
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/generating-flows.png" width="90%" />
+  <img class="image-center" src="{{config.site_url}}ai/images/generating-lexicons.png" width="90%" />
 </figure>
+
+## Generate Flows 
 
 To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, do the following:
 
@@ -85,12 +90,11 @@ To use Generative AI technology for creating a new Flow with pre-configured Node
 
 In the existing FLow, you can edit Nodes created based on your scenario. Generate new Intent sentences or responses for a chatbot.
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/images/generating-flows.png" width="90%" />
+</figure>
 
 ## Generate Intent sentences
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/generating-intent-sentences.png" width="90%" />
-</figure>
 
 To use Generative AI technology for creating Intentn sentences, do the following:
 
@@ -107,11 +111,11 @@ If you want to add more examples automatically, use the **Generate Sentences** b
 
 You can also use Generative AI in the Node configuration.
 
-## Generate responses for chatbot
-
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
+  <img class="image-center" src="{{config.site_url}}ai/images/generating-intent-sentences.png" width="90%" />
 </figure>
+
+## Generate responses for chatbot
 
 Only the [Say](../ai/flow-nodes/message/say.md), [Question](../ai/flow-nodes/message/question.md), and [Optional Question](../ai/flow-nodes/message/optional-question.md) Nodes support Generative AI technology.
 
@@ -128,6 +132,10 @@ To use Generative AI technology for the bot responses, do the following:
 6. Click **Save Node**.  
 
 Check in the interactive panel if your Flow works as expected.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
+</figure>
 
 ## FAQ
 
