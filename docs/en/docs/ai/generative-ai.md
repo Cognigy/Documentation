@@ -9,7 +9,7 @@
 [![Version badge](https://img.shields.io/badge/Added in-v4.44(Beta)-purple.svg)](./release-notes/release-notes.md)
 
 !!! note
-    - This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback so we can improve it before it is officially released.
+    - Our Generative AI features are in Beta. We encourage you to try these features out and provide us with feedback.
 
     - You are subject to the terms of the third-party providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
 
