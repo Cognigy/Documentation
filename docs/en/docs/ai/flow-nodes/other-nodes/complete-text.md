@@ -4,7 +4,7 @@ slug: "complete-text"
 hidden: false
 ---
 
-## Complete Text (Beta)
+# Complete Text (Beta)
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.44(Beta)-purple.svg)](../../../release-notes/release-notes.md)
 
@@ -15,7 +15,9 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-The Complete Text Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text.
+The Complete Text Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text. 
+
+Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
 | Parameter | Type | Description                                                                                                                                                                                                                                                                                                                                                                                               |
 | --------- | ---- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
