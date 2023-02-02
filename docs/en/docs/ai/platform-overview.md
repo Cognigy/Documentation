@@ -8,28 +8,28 @@
 Cognigy.AI was developed in order to overcome most of the challenges in building conversational AIs. One of the unique aspects of the platform, is the bundling of - conversational AI related resources - in a user-friendly interface.
 
 
-<div class="card-container">
+<div class="card-container-overview">
 
-  <a class="card-link" href="{{config.site_url}}ai/platform-overview/">
-    <div class="card">
-      <div class="item-container">
-      <p>Concepts</p>
+  <a class="card-link-overview" href="{{config.site_url}}insights/cognigy-insights/">
+    <div class="card-overview">
+      <div class="item-container-overview">
+      <h4>Concepts</h4>
       </div>
     </div>
   </a>
 
-  <a class="card-link" href="{{config.site_url}}insights/cognigy-insights/">
-    <div class="card">
-      <div class="item-container">
-      <p>Tutorials</p>
+  <a class="card-link-overview" href="{{config.site_url}}insights/cognigy-insights/">
+    <div class="card-overview">
+      <div class="item-container-overview">
+      <h4>Tutorials</h4>
       </div>
     </div>
   </a>
 
-   <a class="card-link" href="{{config.site_url}}insights/cognigy-insights/">
-    <div class="card">
-      <div class="item-container">
-       <p>Instructions</p>
+   <a class="card-link-overview" href="{{config.site_url}}insights/cognigy-insights/">
+    <div class="card-overview">
+      <div class="item-container-overview">
+       <h4>Instructions</h4>
       </div>
     </div>
   </a>
