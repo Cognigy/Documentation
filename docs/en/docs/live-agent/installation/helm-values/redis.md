@@ -12,15 +12,15 @@ Compatible and tested Redis versions are **>= 5** and **<= 7**
 
 ## Redis Variables
 
-| Key                                | Type   | Default                          | Description                                                                                                                           |
+| Key                                | Type   | Default                          | Description                                                                                                                           |                                     |
 | ---------------------------------- | ------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| `redis.enabled`                    | Bool   | true                             | Set to `false` if using external redis and modify the below variables.                                                                |
+| `redis.enabled`                    | Bool   | true                             | Set to `false` if using external redis and modify the below variables.                                                                |                                     |
 | `redis.host`                       | string | `Internal Redis Deployment Name` | Redis Host Name                                                                                                                       | `"cognigy-live-agent-redis-master"` |
-| `redis.auth.password`              | string | `"redis"`                        | Redis Password                                                                                                                        |
-| `redis.master.persistence.enabled` | bool   | `true`                           | Persistence can be disabled completely, if you want your data to only exist while the server is running.                              |
-| `redis.nameOverride`               | string | `"live-agent-redis"`             | Override the deployment name, if internal Redis is enabled.                                                                           |
-| `redis.sentinelMasterName`         | string | `""`                             | A Redis sentinel master name is required when using sentinel.                                                                         |
-| `redis.sentinels`                  | string | `""`                             | Redis Sentinel can be used by passing a list of sentinel hosts and ports. For example: `sentinel_host1:port1`, `sentinel_host2:port2` |
+| `redis.auth.password`              | string | `"redis"`                        | Redis Password                                                                                                                        |                                     |
+| `redis.master.persistence.enabled` | bool   | `true`                           | Persistence can be disabled completely, if you want your data to only exist while the server is running.                              |                                     |
+| `redis.nameOverride`               | string | `"live-agent-redis"`             | Override the deployment name, if internal Redis is enabled.                                                                           |                                     |
+| `redis.sentinelMasterName`         | string | `""`                             | A Redis sentinel master name is required when using sentinel.                                                                         |                                     |
+| `redis.sentinels`                  | string | `""`                             | Redis Sentinel can be used by passing a list of sentinel hosts and ports. For example: `sentinel_host1:port1`, `sentinel_host2:port2` |                                     |
 
 ## Internal Setup
 
