@@ -22,7 +22,7 @@ In the Cognigy.AI interface, Generative AI generates human-like and personalized
 - [Creating new Flows with pre-configured Nodes](#generate-flows)
 - [Generating new Intent sentences](#generate-intent-sentences)
 - [Rephrasing bot outputs](#rephrase-bot-outputs)
-- [Completing texts](#rephrasing-bot-outputs)
+- [Completing texts](#complete-texts)
 
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
@@ -35,7 +35,7 @@ To know more about the benefits of integrating Conversational AI with Generative
 Before using this feature, you need to create an account in one of the Generative AI Providers:
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name. Cognigy.AI only supports the `text-davinci-003` model for . Ensure that the resource you connect is associated with this model.
+- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name. Cognigy.AI only supports the `text-davinci-003` model for Azure OpenAI. Ensure that the resource you connect is associated with this model.
 
 
 ## Set up Generative AI
