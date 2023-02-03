@@ -11,7 +11,9 @@
 
 The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
 
-Many users don't know that COGNIGY.AI is able to handle a multi-tenant scenario! These individual tenants are called **organisations** within COGNIGY.AI.
+You can set up Management UI yourself if you have an on-premise Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../help/get-help.md/#help-center).
+
+Many users don't know that Cognigy.AI is able to handle a multi-tenant scenario. These individual tenants are called **organisations** within Cognigy.AI.
 
 An organisation has completely separated:
 
@@ -29,6 +31,7 @@ The following figure shows a screenshot of what this product looks like.
   <img class="image-center" src="{{config.site_url}}ai/tools/images/745f45a-mui-1.png" width="100%" />
   <figcaption> The Cognigy.AI Management UI</figcaption>
 </figure>
+
 
 ## Usage
 
@@ -232,6 +235,8 @@ In the menu, select **Change Expiration Values**.
   <figcaption> Configuring the expiration values for sensitive data in an Organisation</figcaption>
 </figure>
 
+
+
 All of the expiration values define how many **minutes** it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. It is possible to configure the expiration of the following data:
 
 - Contact Profiles Expiration
@@ -260,6 +265,7 @@ This expiration value determines the amount of minutes from when the data of Ins
 
 This expiration value determines the amount of minutes from when the data of [Steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) is created until it is deleted from the database.
 
+For more information about data expiration in Insights, read [Data Expiration](../../insights/ttl.md) in the Insights documentation.
 
 It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
 
@@ -267,4 +273,4 @@ It is also possible to set a server-wide maximum expiration time for all the sen
 
 <div class="divider"></div>
 
-Further information about installing the Cognigy Management UI can be found on the [Installation & Updating]({{config.site_url}}ai/installation/installation-and-updating/) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
+Further information about installing the Cognigy Management UI can be found on the [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.

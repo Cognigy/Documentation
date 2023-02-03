@@ -1,3 +1,9 @@
+---
+ title: "Real Time Translation Settings" 
+ slug: "real-time-translation-settings" 
+ hidden: false 
+---
+
 # Real Time Translation Settings
 
 Cognigy.AI supports integration with various `Real Time Translation Services`, so you can automatically translate incoming text to the language of your flow and the flow output back to the language of the user.

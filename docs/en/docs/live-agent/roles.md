@@ -6,9 +6,11 @@
 
 # Roles
 
-Live Agent has two different roles for the users. Agents and Administrators.
+Live Agent has three different roles for the users. Administrators, Agents, and Supervisors.
 
-## Administrator
+## Single roles
+
+### Administrator
 
 The Administrator has access to most features of Live Agent. 
 
@@ -26,7 +28,7 @@ The Administrator has access to most features of Live Agent.
 
 - Does not have access to Reports.
 
-## Agent
+### Agent
 
 The Agent has restricted access.
 
@@ -44,7 +46,7 @@ The Agent has restricted access.
 
 - By default, Agents can see all Conversations of an Inbox they are assigned to. This can be disabled in the settings of an Inbox so that Agents can only see Conversations they are assigned to.
 
-## Supervisor
+### Supervisor
 
 The Supervisor has restricted access.
 
@@ -60,6 +62,16 @@ The Supervisor has restricted access.
 
 - Has access to Reports.
 
+## Multiple roles
 
-???+ info "Support of multiple roles"
-    Please be aware that currently Live Agent does not support multiple Live Agent roles for one user.
+[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../release-notes/4.44.md)
+
+You can assign more than one role to an Agent.
+
+To create an Agent with multiple roles, do the following steps:
+
+1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign it one or more roles: `liveAgentAdmin`, `liveAgentSupervisor`, `liveAgentAgent`.
+2. Add any additional role the Agent should have.
+3. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
+
+To see the roles applied to the Agent, the specific Agent must log in once to have the additional roles applied.

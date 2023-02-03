@@ -67,7 +67,7 @@ Note that Slot Tags and Synonyms for intents must be attached in the same flow. 
 | Age |
 | Temperature |
 | Duration |
-| Percentace |
+| Percentage |
 | E-Mail |
 | URL |
 | Money |
