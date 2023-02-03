@@ -8,12 +8,12 @@
 ## Live Agent
 
 ### How to remove a user?
-Removing a user from Live Agent can be done from the Cognigy.AI Access Control. The `liveAgentAdmin`/`liveAgentAgent` roles need to be removed, and it will prevent the user from login into Live Agent. This can also be achieved by removing the user from Cognigy.AI.
+Removing a user (human Agent) from Live Agent can be done from the Cognigy.AI [Members page](../ai/resources/manage/members.md). The `liveAgentAdmin`/`liveAgentAgent` roles need to be removed, and this will prevent the human Agent from logging into Live Agent. This can also be achieved by deleting the user from Cognigy.AI.
 
 Head over to [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) for more information.
 
 ### What happens if an Inbox is deleted?
-Inboxes created manually can be safely deleted,**except those with the `-default` suffix.** Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally removed, please see the solution in the question below.
+Inboxes created manually can be safely deleted,**except those with the `-default` suffix.** Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, please see the solution in the question below.
 
 ### What should I do if the Inbox is deleted?
 
