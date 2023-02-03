@@ -45,7 +45,7 @@ Head over to [Labels](../live-agent/labels.md) for more information.
 ### How to request a file from a conversation? 
 
 <figure>
-  <img src="../live-agent/images/LA-request-file.png" width="100%" alt="Live Agent request file" />
+  <img src="{{config.site_url}}live-agent/images/LA-request-file.png" width="100%" alt="Live Agent request file" />
   <figcaption>Request File Upload Button</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Head over to [File Upload Antivirus Scan Helm Values](../live-agent/installation
 Under the profile menu, there is a link called "Cognigy.AI" that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values](../live-agent/installation/helm-values/helm-values.md#urls) for configuring it.
 
 <figure>
-<img src="../live-agent/images/LA-link-cognigi.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
+<img src="{{config.site_url}}live-agent/images/LA-link-cognigi.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
   <figcaption>Link to Cognigy.AI</figcaption>
 </figure>
 
