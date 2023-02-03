@@ -13,7 +13,7 @@ Removing a user (human Agent) from Live Agent can be done from the Cognigy.AI [M
 Head over to [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) for more information.
 
 ### What happens if an Inbox is deleted?
-Inboxes created manually can be safely deleted,**except those with the `-default` suffix.** Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, please see the solution in the question below.
+Inboxes created manually can be safely deleted, except those with the `-default` suffix. Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, please see the solution in the question below.
 
 ### What should I do if the Inbox is deleted?
 
@@ -21,9 +21,7 @@ You need to create a new Inbox. To do that, use the [Adding an Additional Inbox 
 
 ### Where can I check what the default Inbox is? Does it have a special account id?
 
-The default Inbox is named as *default* . All Inboxes corresponding to a Cognigy.AI Project are named as default.
-
-On the next Cognigy.AI release the name will be the 'project name', to make it easier to understand what Inbox is connected to a Project.
+The default Inbox has a pattern name `XXXX-default`, for example, `7119-default`. You can rename it in [Inbox Settings](../live-agent/inboxes.md#inbox-settings)
 
 ### How to fix custom SSL certificate verification error?
 That may happen because Cognigy.AI is running under a custom SSL certificate (Error can not validate certificate). And Live Agent is failing to perform the requests to it as SSL requests can not be verified.
