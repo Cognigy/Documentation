@@ -417,37 +417,3 @@ body > div.md-container > nav > div{
   margin-top: -7rem;
   padding-top: 7rem;
 }
-
-.card-container-overview {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 100%;
-  padding: 0 1em;
-}
-
-.card-link-overview {
-  width: 30%;
-  padding: 1em;
-  display: flex;
-  align-items: center;
-}
-
-.card-overview {
-  background-color: var(--card-bg-color);
-  color: var(--md-default-fg-color);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 100%;
-  border-radius: 10px;
-  display: flex;
-}
-
-.item-container-overview {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 1em;
-}
