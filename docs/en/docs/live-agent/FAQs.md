@@ -12,6 +12,10 @@ Removing a user (human Agent) from Live Agent can be done from the Cognigy.AI [M
 
 Head over to [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) for more information.
 
+### How to create an Agent with multiple roles?
+
+To create an Agent with multiple roles, read the [Roles](roles.md#multiple-roles) article.
+
 ### What happens if an Inbox is deleted?
 Inboxes created manually can be safely deleted, except those with the `-default` suffix. Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, please see the solution in the question below.
 
