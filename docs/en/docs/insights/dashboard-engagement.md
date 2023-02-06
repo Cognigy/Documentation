@@ -3,52 +3,247 @@
  slug: "dashboard-engagement" 
  hidden: false 
 ---
-# Engagement
+# Engagement Dashboard
 
-## Engagement Dashboard
+The Engagement Dashboard is focused on customer actions in conversations. Data analytics of your Agent is visualized in the following charts:
 
-<div class="divider"></div>
+- [Indicators](#indicators) 
+- [Heat maps](#heat-maps)
+- [Bar charts](#bar-charts)
+- [Line charts](#line-charts)
 
-
-The Engagement Dashboard is focused on customer reactions in conversations. Data analytics of your Agent is visualized in graphs (line charts, bar charts, pie charts, tiled reports - all with labels and tooltips).
+Each chart presents real-time data that refreshes every 30 seconds.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/d9c5387-Dashboard_Engagement_5.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/engagement-dashboard.png" width="100%" />
   <figcaption>Engagement dashboard</figcaption>
 </figure>
 
-The currently displayed dashboard can be seen next to the agent in the top left of the screen.
+The currently displayed dashboard can be seen next to the Agent in the top left of the screen.
 
-???+ info "Note"
-    **All data displayed in the charts relate to the global filter settings. You can configure global filter settings as described here: [Global filter]({{config.site_url}}insights/global-filter/).**
+All data displayed in the charts relate to the [global filter]({{config.site_url}}insights/global-filter/) settings.
+
+## Indicators
+
+### Goals reached 
+
+Indicates the total number of [completed goals](../ai/flow-nodes/profile/complete-goal.md). 
+
+Source table:
+
+```txt
+ | StartedAt  |  Sessions   |  Goals                   | Goals reached |
+ | ---------- | ----------- | ------------------------ | ------------- |
+ | 2022/01/01 | session-123 | "Goal A, Goal B, Goal D" |       3       |
+ | 2022/01/01 | session-456 | "Goal B, Goal C, Goal E" |       3       |
+ | 2022/01/03 | session-789 | "Goal B, Goal E"         |       2       |
+ | 2022/01/03 | session-abc | "Goal B"                 |       1       |
+ | 2022/01/05 | session-def | "Goal A, Goal B"         |       2       |
+```
+
+Result: `11`
+
+### Avg. Session length
+
+Indicates how long the average session lasted.
+
+Session length is the time difference between the timestamp of the first user input and the last user input.
+
+Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
+
+Source table:
+
+```txt
+ | StartedAt           |  EndedAt            | Sessions    |          
+ | ------------------- | ------------------- | ----------- |
+ | 2022/01/01 12:15 00 | 2022/01/01 12:18 00 | session-123 |
+ | 2022/01/01 14:00 00 | 2022/01/01 15:00 00 | session-456 |
+ | 2022/01/03 09:05 30 | 2022/01/03 09:15 30 | session-789 |
+ | 2022/01/03 11:30 00 | 2022/01/03 11:44 00 | session-abc |
+ | 2022/01/05 06:10 00 | 2022/01/05 06:20 00 | session-def |
+```
+
+Calculation:
+
+1. Length for a particaular session `Max(timestamp) - Min(timestamp)` .
+2. `Length of all sessions / total number of sessions`.
+   
+Result: `00:19:24`
+
+### Positive Ratings
+
+Indicates the total number of Positive Ratings given as feedback by the end user.
+
+Source data example:
+
+```txt
+| Sessions    | Positive Rating | Negative Rating | Rated Sessions |             
+| ----------- | --------------- | --------------- | -------------- |
+| session-123 |        1        |        0        |       1        |
+| session-456 |        0        |        1        |       1        |
+| session-789 |        0        |        0        |       0        |
+| session-abc |        1        |        0        |       1        |
+| session-def |        1        |        0        |       1        |  
+| ---------------------------------------------------------------- |
+| TOTAL       |        3        |        1        |       4        | 
+```
+
+Result: `3`
+
+### Containment Rate
+
+Indicates the ratio of sessions without any handover to all sessions.
+
+Source data example:
+
+```txt
+| Session ID  | Handover Sessions | Sessions | 
+| ----------- | ----------------- | -------- | 
+| session-123 |        1          |    1     |
+| session-456 |        0          |    1     |
+| session-789 |        0          |    1     | 
+| session-abc |        1          |    1     |
+| session-def |        1          |    1     |
+| ------------------------------------------ |
+| TOTAL       |        3          |    5     |
+```  
+
+Formula:
+
+1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
+   
+2. Percentage `Containment Rate * 100`. 
+
+Result: `3` 
+
+## Heat maps
+
+### Handovers by time of the day
+
+Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
+
+Source table:
+
+```txt 
+| DateTime        | Hadover    |
+| --------------- | ---------- |
+|  1/8/2023 16:00 |	   0       |
+|  1/8/2023 17:00 |	   0       |
+|  1/9/2023 00:00 |    0       |
+| 1/11/2023 15:00	|    0       |
+| 1/15/2023 18:00	|    0       |
+| 1/16/2023 21:00	|    0       |
+| 1/17/2023 11:00	|    0       |
+| 1/18/2023 6:00	|    1       |
+| 1/18/2023 21:00	|    1       |
+| 1/19/2023 0:00	|    2       |
+| 1/19/2023 10:00	|    1       |
+| 1/23/2023 13:00	|    0       |
+| 1/24/2023 23:00	|    0       |
+```
+
+Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/1f9548d-Dashboard_Engagement_6.svg" width="100%" />
-  <figcaption>Engagement dashboard details</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/heatmap.png" width="100%" />
 </figure>
-<div id="engagement-1"></div>
-|Graph title|	Description|
-|--|--|
-|Goals reached|	Indication of reached goals (the report is arranged in a tile).|
-|Avg. Session length|	Average call duration (the report is arranged in a tile).|
-|Positive Ratings|	Number based on positiv feedback ratings is displayed in a tiled report. <br> Clicking on the three dots menu item you can: <br> - select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to Cognigy:AI <br> - select the Go to [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/) option that leads you to the Insights application.|
-|Max. Session length|	The maximum duration of sessions. (the report is arranged in a tile).|
-|Live Agents escalations|	Indicates how often a Live Agent was called displayed on a timeline scale depending on the "Timeframe" filter setting. <br>Clicking on the three dots menu item you can select the "Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)" that leads you to the application in Cognigy.AI to improve your Agent.|
-|Top Goals|	Top-rated numbers of goals in a bar chart display.<br> Clicking on the three dots menu item you can select the "Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)" that leads you to the application in Cognigy.AI to improve your Agent.|
-|Positive Ratings| over time	Same as described in "Positive Ratings" but data is displayed as a line chart over a timescale.<br>The three dots menu item you can:<br>- select the "Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)" option that leads you to the Insights application.<br>- select the Go to [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/) option that leads you to the Insights application.|
-|Contacts	|The number of contacts on a timeline scale displayed as line chart.|
 
-???+ info "Note"
-    **The on top of the dashboard placed blue tiles show currently valid data in a "live" mode. That means that data will be refreshed every 30 seconds to be updated.**
+## Bar charts
+
+### Top Goals
+
+A horizontal bar chart displaying the top-rated number of goals reached. 
+
+Clicking on the three dots menu item, you can select the **Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)** that leads you to the application in Cognigy.AI to improve your Agent.
+
+## Line charts
+
+### Live Agent Escalations
+
+Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
+
+Indicates how often a Live Agent was called displayed on a timeline scale depending on the "Timeframe" filter setting.
+
+Source table:
+
+```txt 
+| DateTime  |	Hadovers per day |
+| --------- | ---------------- |
+| 1/8/2023	|        0         |
+| 1/9/2023	|        0         |
+| 1/11/2023	|        0         |
+| 1/15/2023	|        0         | 
+| 1/16/2023	|        0         |
+| 1/17/2023	|        0         |
+| 1/18/2023	|        2         |
+| 1/19/2023	|        3         |
+| 1/23/2023	|        0         |
+| 1/24/2023	|        0         |
+```
+
+Result:
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/live-agent-escalations.png" width="100%" />
+</figure>
+
+Clicking on the three dots menu item you can select **Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)** that leads you to the application in Cognigy.AI to improve your Agent.
+
+### Positive Ratings over Time
+
+Indicates the total number of Positive Ratings given as feedback by the end user.
+
+Source table:
+
+```txt
+| Date (weeks) | Positive | Negative | Number of Ratings  |
+| ------------ | -------- | -------- | ------------------ |	
+| 2023-W01	   |     1	  |    0     |         1	        |
+| 2023-W04	   |     1	  |    0     |         1          |
+| 2023-W05	   |     2	  |    0     |         2          |
+```
+
+Result:
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/positive-raitings.png" width="100%" />
+</figure>
+
+### Contacts
+
+A line chart displaying the number of unique contacts (`userid`) on a time scale.
+
+Source table:
+
+```txt
+| Date    	| Contacts |
+| --------- | -------- |
+| 1/8/2023  |	   5     |
+| 1/9/2023  |	   3     |
+| 1/11/2023	|    1     |
+| 1/15/2023	|    1     |
+| 1/16/2023	|    1     |
+| 1/17/2023	|    2     |
+| 1/18/2023	|    9     |
+| 1/19/2023	|    3     |
+| 1/23/2023	|    3     |
+| 1/24/2023	|    2     | 
+```
+
+Result:
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/contacts.png" width="100%" />
+</figure>
+
 
 ## Download Report
 
-Every widget on the Insights dashboard provides a '**Download report as .csv file**' item in a dropdown menu. 
-To create a report file follow instructions here: [Download Report]({{config.site_url}}insights/download-report/) 
+To download a report as .csv file for the chart, use its three-dot menu. 
+To create a report file, see the [Download Report]({{config.site_url}}insights/download-report/) article. 
 
 
 ## More information
-<div class="divider"></div>
 
 - [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 
