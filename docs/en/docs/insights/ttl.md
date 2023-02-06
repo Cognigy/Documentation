@@ -32,6 +32,16 @@ To activate the Data Expiration feature, set limits via the [management-ui](../a
 
 If you have already set limits in the management-ui service, the Data Expiration indicator will automatically appear in the Insights interface.
 
+The Data Expiration feature applies only to new data obtained by Cognigy after activating Data Expiration in management-ui. Data obtained before setting the expiration value remains.
+
+For example:
+
+> In management-ui, you set the 1-minute expiration value at 13:00 for Sessions.
+> 
+> Sessions created after 13:00 will automatically terminate after 1 minute due to the 1-minute expiration date set in management-ui.
+> 
+> Sessions created before 13:00 will remain unchanged.
+
 ## Changing Data Expiration
 
 You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
