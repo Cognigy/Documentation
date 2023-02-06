@@ -5,7 +5,7 @@
 ---
 # Engagement Dashboard
 
-The Engagement Dashboard is focused on customer actions in conversations. Data analytics of your Agent is visualized in the following charts:
+The Engagement Dashboard is focused on customer interactions in conversations. Engagement performance of your Agent is visualized in the following charts:
 
 - [Indicators](#indicators) 
 - [Heat maps](#heat-maps)
@@ -65,7 +65,7 @@ Source table:
 
 Calculation:
 
-1. Length for a particaular session `Max(timestamp) - Min(timestamp)` .
+1. Length for a particular session `Max(timestamp) - Min(timestamp)` .
 2. `Length of all sessions / total number of sessions`.
    
 Result: `00:19:24`
@@ -74,7 +74,7 @@ Result: `00:19:24`
 
 Indicates the total number of Positive Ratings given as feedback by the end user.
 
-Source data example:
+Source table:
 
 ```txt
 | Sessions    | Positive Rating | Negative Rating | Rated Sessions |             
@@ -94,38 +94,38 @@ Result: `3`
 
 Indicates the ratio of sessions without any handover to all sessions.
 
-Source data example:
+Source table:
 
 ```txt
-| Session ID  | Handover Sessions | Sessions | 
-| ----------- | ----------------- | -------- | 
-| session-123 |        1          |    1     |
-| session-456 |        0          |    1     |
-| session-789 |        0          |    1     | 
-| session-abc |        1          |    1     |
-| session-def |        1          |    1     |
-| ------------------------------------------ |
-| TOTAL       |        3          |    5     |
+| Session ID  | Handovers | Handover Sessions | Sessions | 
+| ----------- | ----------| ----------------- | -------- | 
+| session-123 |     3     |        1          |    1     |
+| session-456 |     0     |        0          |    1     |
+| session-789 |     0     |        0          |    1     | 
+| session-abc |     2     |        1          |    1     |
+| session-def |     1     |        1          |    1     |
+| ------------------------------------------------------ |
+| TOTAL       |     6     |        3          |    5     |
 ```  
 
 Formula:
 
 1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
    
-2. Percentage `Containment Rate * 100`. 
+2. Percentage `Containment Rate * 100%`. 
 
-Result: `3` 
+Result: `40%` 
 
 ## Heat maps
 
 ### Handovers by time of the day
 
-Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
+Indicates the number of times a human agent was contacted. Multiple handovers may occur during a session.
 
 Source table:
 
 ```txt 
-| DateTime        | Hadover    |
+| DateTime        | Handover    |
 | --------------- | ---------- |
 |  1/8/2023 16:00 |	   0       |
 |  1/8/2023 17:00 |	   0       |
