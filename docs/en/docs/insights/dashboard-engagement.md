@@ -206,7 +206,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/positive-raitings.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/positive-ratings.png" width="100%" />
 </figure>
 
 ### Contacts
