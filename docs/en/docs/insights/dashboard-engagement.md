@@ -21,7 +21,7 @@ Each chart presents real-time data that refreshes every 30 seconds.
 
 The currently displayed dashboard can be seen next to the Agent in the top left of the screen.
 
-All data displayed in the charts relate to the [global filter]({{config.site_url}}insights/global-filter/) settings.
+All data displayed in the charts relate to the [global filter](global-filter.md) settings.
 
 ## Indicators
 
@@ -65,7 +65,7 @@ Source table:
 
 Calculation:
 
-1. Length for a particular session `Max(timestamp) - Min(timestamp)` .
+1. Length for a particular session `Max(timestamp) - Min(timestamp)`.
 2. `Length of all sessions / total number of sessions`.
    
 Result: `00:19:24`
@@ -83,9 +83,9 @@ Source table:
 | session-456 |        0        |        1        |       1        |
 | session-789 |        0        |        0        |       0        |
 | session-abc |        1        |        0        |       1        |
-| session-def |        1        |        0        |       1        |  
+| session-def |        1        |        0        |       1        |
 | ---------------------------------------------------------------- |
-| TOTAL       |        3        |        1        |       4        | 
+| TOTAL       |        3        |        1        |       4        |
 ```
 
 Result: `3`
@@ -97,11 +97,11 @@ Indicates the ratio of sessions without any handover to all sessions.
 Source table:
 
 ```txt
-| Session ID  | Handovers | Handover Sessions | Sessions | 
-| ----------- | ----------| ----------------- | -------- | 
+| Session ID  | Handovers | Handover Sessions | Sessions |
+| ----------- | ----------| ----------------- | -------- |
 | session-123 |     3     |        1          |    1     |
 | session-456 |     0     |        0          |    1     |
-| session-789 |     0     |        0          |    1     | 
+| session-789 |     0     |        0          |    1     |
 | session-abc |     2     |        1          |    1     |
 | session-def |     1     |        1          |    1     |
 | ------------------------------------------------------ |
@@ -125,21 +125,21 @@ Indicates the number of times a human agent was contacted. Multiple handovers ma
 Source table:
 
 ```txt 
-| DateTime        | Handover    |
+| DateTime        | Handover   |
 | --------------- | ---------- |
-|  1/8/2023 16:00 |	   0       |
-|  1/8/2023 17:00 |	   0       |
-|  1/9/2023 00:00 |    0       |
-| 1/11/2023 15:00	|    0       |
-| 1/15/2023 18:00	|    0       |
-| 1/16/2023 21:00	|    0       |
-| 1/17/2023 11:00	|    0       |
-| 1/18/2023 6:00	|    1       |
-| 1/18/2023 21:00	|    1       |
-| 1/19/2023 0:00	|    2       |
-| 1/19/2023 10:00	|    1       |
-| 1/23/2023 13:00	|    0       |
-| 1/24/2023 23:00	|    0       |
+| 01/8/2023 16:00 |	   0       |
+| 01/8/2023 17:00 |	   0       |
+| 01/9/2023 00:00 |    0       |
+| 1/11/2023 15:00 |    0       |
+| 1/15/2023 18:00 |    0       |
+| 1/16/2023 21:00 |    0       |
+| 1/17/2023 11:00 |    0       |
+| 1/18/2023 06:00 |    1       |
+| 1/18/2023 21:00 |    1       |
+| 1/19/2023 00:00 |    2       |
+| 1/19/2023 10:00 |    1       |
+| 1/23/2023 13:00 |    0       |
+| 1/24/2023 23:00 |    0       |
 ```
 
 Result:
@@ -154,7 +154,12 @@ Result:
 
 A horizontal bar chart displaying the top-rated number of goals reached. 
 
-Clicking on the three dots menu item, you can select the **Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)** that leads you to the application in Cognigy.AI to improve your Agent.
+Clicking on the three dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
+
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/top-goals.png" width="80%" />
+</figure>
 
 ## Line charts
 
@@ -162,23 +167,24 @@ Clicking on the three dots menu item, you can select the **Go to [Step Explorer]
 
 Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
 
-Indicates how often a Live Agent was called displayed on a timeline scale depending on the "Timeframe" filter setting.
+Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
+
 
 Source table:
 
 ```txt 
-| DateTime  |	Hadovers per day |
-| --------- | ---------------- |
-| 1/8/2023	|        0         |
-| 1/9/2023	|        0         |
-| 1/11/2023	|        0         |
-| 1/15/2023	|        0         | 
-| 1/16/2023	|        0         |
-| 1/17/2023	|        0         |
-| 1/18/2023	|        2         |
-| 1/19/2023	|        3         |
-| 1/23/2023	|        0         |
-| 1/24/2023	|        0         |
+| DateTime  | Handovers per day  |
+| --------- | ------------------ |
+| 1/08/2023	|        0           |
+| 1/09/2023	|        0           |
+| 1/11/2023	|        0           |
+| 1/15/2023	|        0           | 
+| 1/16/2023	|        0           |
+| 1/17/2023	|        0           |
+| 1/18/2023	|        2           |
+| 1/19/2023	|        3           |
+| 1/23/2023	|        0           |
+| 1/24/2023	|        0           |
 ```
 
 Result:
@@ -187,7 +193,7 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/live-agent-escalations.png" width="100%" />
 </figure>
 
-Clicking on the three dots menu item you can select **Go to [Step Explorer]({{config.site_url}}insights/step-explorer/)** that leads you to the application in Cognigy.AI to improve your Agent.
+Clicking on the three dots menu item you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
 
 ### Positive Ratings over Time
 
@@ -196,11 +202,11 @@ Indicates the total number of Positive Ratings given as feedback by the end user
 Source table:
 
 ```txt
-| Date (weeks) | Positive | Negative | Number of Ratings  |
-| ------------ | -------- | -------- | ------------------ |	
-| 2023-W01	   |     1	  |    0     |         1	        |
-| 2023-W04	   |     1	  |    0     |         1          |
-| 2023-W05	   |     2	  |    0     |         2          |
+| Date (weeks) | Positive | Negative | Number of Ratings |
+| ------------ | -------- | -------- | ----------------- |	
+| 2023-W01	   |     1	  |    0     |         1         |
+| 2023-W04	   |     1	  |    0     |         1         |
+| 2023-W05	   |     2	  |    0     |         2         |
 ```
 
 Result:
@@ -218,8 +224,8 @@ Source table:
 ```txt
 | Date    	| Contacts |
 | --------- | -------- |
-| 1/8/2023  |	   5     |
-| 1/9/2023  |	   3     |
+| 01/8/2023 |    5     |
+| 01/9/2023 |    3     |
 | 1/11/2023	|    1     |
 | 1/15/2023	|    1     |
 | 1/16/2023	|    1     |
@@ -240,23 +246,23 @@ Result:
 ## Download Report
 
 To download a report as .csv file for the chart, use its three-dot menu. 
-To create a report file, see the [Download Report]({{config.site_url}}insights/download-report/) article. 
+To create a report file, see the [Download Report](download-report.md) article. 
 
 
 ## More information
 
-- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
+- [Cognigy Insights](cognigy-insights.md)
 
-- [Global Filter]({{config.site_url}}insights/global-filter/)
+- [Global Filter](global-filter.md)
 
-- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
+- [Dashboard Overview](dashboard-overview.md)
 
-- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
+- [Dashboard NLU Performance](dashboard-nlu-performance.md)
 
-- [Step Explorer]({{config.site_url}}insights/step-explorer/)
+- [Step Explorer](step-explorer.md)
 
-- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
+- [Transcript Explorer](transcript-explorer.md)
 
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
+- [Message Explorer](message-explorer.md)
 
-- [Download Report]({{config.site_url}}insights/download-report/)
+- [Download Report](download-report.md)
