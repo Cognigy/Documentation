@@ -14,14 +14,12 @@ The Engagement Dashboard is focused on customer interactions in conversations. E
 
 Each chart presents real-time data that refreshes every 30 seconds.
 
+All data displayed in the charts relate to the [global filter](global-filter.md) settings.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/engagement-dashboard.png" width="100%" />
   <figcaption>Engagement dashboard</figcaption>
 </figure>
-
-The currently displayed dashboard can be seen next to the Agent in the top left of the screen.
-
-All data displayed in the charts relate to the [global filter](global-filter.md) settings.
 
 ## Indicators
 
@@ -77,7 +75,7 @@ Indicates the total number of Positive Ratings given as feedback by the end user
 Source table:
 
 ```txt
-| Sessions    | Positive Rating | Negative Rating | Rated Sessions |             
+| Sessions    | Positive Rating | Negative Rating | Rated Sessions |
 | ----------- | --------------- | --------------- | -------------- |
 | session-123 |        1        |        0        |       1        |
 | session-456 |        0        |        1        |       1        |
@@ -156,6 +154,20 @@ A horizontal bar chart displaying the top-rated number of goals reached.
 
 Clicking on the three dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
 
+Source table:
+
+```txt 
+| Sessions    | Goals                  |
+| ----------- | ---------------------- |
+| session-123 | Goal A, Goal B, Goal D |
+| session-456 | Goal B, Goal C, Goal E |
+| session-789 | Goal A, Goal B, Goal E |
+| session-abc | Goal A                 |
+| session-def | Goal, Goal A           |
+| session-ghi | Goal, Goal A           |
+```
+
+Result:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/top-goals.png" width="80%" />
@@ -212,7 +224,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/positive-ratings.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/positive-ratings.png" width="80%" />
 </figure>
 
 ### Contacts
@@ -250,8 +262,6 @@ To create a report file, see the [Download Report](download-report.md) article.
 
 
 ## More information
-
-- [Cognigy Insights](cognigy-insights.md)
 
 - [Global Filter](global-filter.md)
 
