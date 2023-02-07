@@ -29,22 +29,22 @@ If the Execution Mode is set to "Go to Node and continue", you can overwrite the
 
 ### Parse Intents
 
-This toggle decides whether we should **parse intents** within the sub Flow.
+This toggle decides whether we should **parse intents** within the sub Flow. This is disabled by default.
 
-If the `Parse Intents` feature is enabled, Cognigy NLU will reparse the Intents in the target Flow with the provided input (either input.text or the Optionally Injected Text).
+If the `Parse Intents` feature is enabled, Cognigy NLU will reparse the Intents in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
 
-This will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
+This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
 
 ### Parse Slots
 
-This toggle decides whether we should **parse slots** within the sub Flow.
+The user decides whether we should **parse slots** within the sub Flow. This is disabled by default.
 
-If the `Parse Slots` feature is enabled, Cognigy NLU will reparse the Slots in the target Flow with the provided input (either input.text or the Optionally Injected Text).
+If `Parse Slots` is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
 
-This will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
+This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
 
 ### Absorb Context
-If the `Absorb Context` feature is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
+If `Absorb Context` is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
 
 ???+ warning "Loops"
     Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premise installations.
