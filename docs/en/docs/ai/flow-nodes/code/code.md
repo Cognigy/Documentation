@@ -86,15 +86,15 @@ conditionalEntryPointWasExecuted
 ## Adding Log Statements to Code Nodes
 <div class="divider"></div>
 
-You can place api.log() statements into Code Nodes, to see log statements on the Logs Page, which you can find under **Test**, and then **Logs** within Cognigy.AI.
+To see log statements on the [Logs page](../../resources/test/logs.md), place `api.log()` statements into the Code Node.
 
-- An example for a Code Node including a Debug Log:
+- Input code in a Code Node:
     ```javaScript
     const testKeyAPILOG = "Test for api.log"
     actions.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
     api.log("debug", testKeyAPILOG);
     ``` 
-- This will produce a result in the UI Logs such as this example:
+- Result on the Logs page:
 
->2023-01-12 10:27:08 <mark>debug</mark> ***Test for api.log*** { "flowId": "94311a23-b905-4e38-b121-9bffeb658783", "entrypoint": "63bff4588642adbc590be047", "userId": "user1234"
+`2023-01-12 10:27:08 <mark>debug</mark> ***Test for api.log*** { "flowId": "94311a23-b905-4e38-b121-9bffeb658783", "entrypoint": "63bff4588642adbc590be047", "userId": "user1234"`
    
