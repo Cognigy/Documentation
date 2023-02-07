@@ -41,11 +41,19 @@ Here you can select the target Node which is executed whenever the Flow executio
 
 #### Parse Intents
 
-This toggle decides whether we should **parse intents** within the sub Flow.
+The user decides whether we should **parse intents** within the sub Flow. This is enabled by default.
 
-#### Parse Keyphrases
+If `Parse Intents` is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text).
 
-This toggle decides whether we should **find keyphrases** within the sub Flow.
+This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
+
+#### Parse Slots
+
+This toggle decides whether we should **parse slots** within the sub Flow. This is enabled by default.
+
+If `Parse Slots` is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+
+This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
 
 #### Absorb Context
 
