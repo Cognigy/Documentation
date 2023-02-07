@@ -118,7 +118,7 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-Indicates the number of times a human agent was contacted. Multiple handovers may occur during a session.
+Indicates the number of times a human Agent was contacted. Multiple handovers may occur during a session.
 
 Source table:
 
@@ -177,7 +177,7 @@ Result:
 
 ### Live Agent Escalations
 
-Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
+Indicates the number of times a human Agent was contacted. Multiple escalations may occur during a session.
 
 Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
 
