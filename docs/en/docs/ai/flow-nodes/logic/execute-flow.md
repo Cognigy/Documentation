@@ -41,7 +41,7 @@ Here you can select the target Node which is executed whenever the Flow executio
 
 #### Parse Intents
 
-The user decides whether we should **parse intents** within the sub Flow.This is enabled by default.
+The user decides whether we should **parse intents** within the sub Flow. This is enabled by default.
 
 If `Parse Intents` is enabled, Cognigy NLU will reparse the Intents in the target Flow in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text).
 
