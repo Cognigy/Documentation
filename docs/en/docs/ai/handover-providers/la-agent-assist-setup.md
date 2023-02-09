@@ -19,10 +19,15 @@ To setup Agent Assist for Live Agent, first you will need to create a new Flow w
 
 During an active Live Agent handover, all customer inputs will be shot against this Flow and the outputs of the Flow are displayed to the human agent as part of the conversation.
 
-???+ info "Definition of an Active Handover"
-    Please note that Agent Assist messages are only shown based on customer inputs that are received during an active handover, that is after the human agent has initially responded.
+Agent Assist messages are only shown based on customer inputs that are received during an active handover, that is after the human agent has initially responded.
+
+!!! warning 
+    You don't need to include the Handover Node in the Agent Assist Flow. Using the Handover Node in the main Live agent flow is enough for the configuration process.
+     
 
 You could create Intents, for example, and use Lookup Nodes in combination with Say Nodes to provide helpful information to your Agents based on customer inputs.
+
+
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flow-example.png" width="75%" />
