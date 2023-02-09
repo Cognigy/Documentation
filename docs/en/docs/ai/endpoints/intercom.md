@@ -8,7 +8,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/f517541-Intercom.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy Agent to your **Intercom** platform by using our Intercom Endpoint. This allows you to create a bot with COGNIGY.AI that can answer support requests from Intercom when your agents are not online or even replace them.Generic Endpoint Settings
+Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Intercom** platform by using our Intercom Endpoint. This allows you to create a bot with Cognigy.AI that can answer support requests from Intercom when your agents are not online or even replace them.Generic Endpoint Settings
 
 Find out about the generic endpoint settings available with this endpoint on the following pages:
 

@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/067ee19-googleActions.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **Google Actions** app by using our Google Actions Endpoint integration.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Google Actions** app by using our Google Actions Endpoint integration.
 
 ## Generic Endpoint Settings
 

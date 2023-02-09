@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/audiocodes-endpoint-logo.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using the AudioCodes Endpoint, allowing customers to speak to your **Agent** instead of just writing with it.
+Within our **Cognigy.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using the AudioCodes Endpoint, allowing customers to speak to your **Agent** instead of just writing with it.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>

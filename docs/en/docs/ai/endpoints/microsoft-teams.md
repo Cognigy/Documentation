@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4a085fb-MSTeams.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your COGNIGY.AI Flows to **Microsoft Teams** by using our Microsoft Teams Endpoint.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy.AI Flows to **Microsoft Teams** by using our Microsoft Teams Endpoint.
 
 # Generic Endpoint Settings
 

@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c514dae-EP_webhook.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **Webhook** by using our Webhook Endpoint integration.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Webhook** by using our Webhook Endpoint integration.
 
 A **Webhook** (sometimes called web callback or HTTP push API) provides information as soon as it is available, to the specified callback URL.
 
