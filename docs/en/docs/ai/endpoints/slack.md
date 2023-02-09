@@ -10,7 +10,7 @@
 </figure>
 
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy Agent to your **Slack Bot** by using our Slack Endpoint. 
+Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Slack Bot** by using our Slack Endpoint. 
 
 
 ## Generic Endpoint Settings

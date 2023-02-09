@@ -1595,7 +1595,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 ## 4.0.0
 **Released:** October 2nd, 2020
 
-This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make COGNIGY.AI the most advanced conversational AI platform on the market. Please feel free to explore our new documentation and sign up for your free product trial:
+This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make Cognigy.AI the most advanced conversational AI platform on the market. Please feel free to explore our new documentation and sign up for your free product trial:
 https://signup.cognigy.ai/
 
 ### Features

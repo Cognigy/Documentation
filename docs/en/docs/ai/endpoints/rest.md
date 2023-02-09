@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/d4a23f8-EP_REST.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **Rest** client by using our Rest Endpoint integration.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Rest** client by using our Rest Endpoint integration.
 
 ## Generic Endpoint Settings
 

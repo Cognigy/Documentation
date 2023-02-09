@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/211ecb3-RingCentralEngage.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to **RingCentral Engage** by using our RingCentral Engage Endpoint integration.  
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to **RingCentral Engage** by using our RingCentral Engage Endpoint integration.  
 
 ## Generic Endpoint Settings
 

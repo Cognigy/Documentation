@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/16e06a7-Line.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **LINE** channel by using our Line Endpoint integration. 
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **LINE** channel by using our Line Endpoint integration. 
 
 ## Generic Endpoint Settings
 

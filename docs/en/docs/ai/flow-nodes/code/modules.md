@@ -36,7 +36,7 @@ actions.output(utc);
 <div class="divider"></div>
 [Lodash Documentation](https://lodash.com/docs/4.17.10)
 
-COGNIGY.AI also supports the utility library Lodash within code nodes.
+Cognigy.AI also supports the utility library Lodash within code nodes.
 
 ### Usage
 ---

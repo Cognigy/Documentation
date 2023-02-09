@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/9f52df7-Userlike.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy Agent to your **Userlike Bot Operator** by using our Userlike Endpoint.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Userlike Bot Operator** by using our Userlike Endpoint.
 
 ## Generic Endpoint Settings
 
