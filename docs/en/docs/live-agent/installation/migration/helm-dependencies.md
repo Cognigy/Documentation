@@ -242,13 +242,24 @@ exit
 
 Once done, `jobs` command should give no output.
 
-### Step 3. Delete the current release plus the PVCs
+### Step 3. Delete the current release plus the PVCs and check the Live Agent PVC reclaim policy
 
 When the PostgreSQL and Redis versions have changed, the PVCs become incompatible with the new versions.
 
 ```sh
+# Check that PVs are set as Retain:
+kubectl get pv
+# Patch the reclaim policy for the EFS storage PV, set <pv-name> to the NAME from the previous command
+# Repeat for any PV related to LA that is not retain
+kubectl patch pv <pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
+# Check that reclaim policy is Retain:
+kubectl get pv
+
 # Delete the current release
 helm delete -n live-agent cognigy-live-agent
+
+# Change the EFS storage PV status from "Released" to "Available"
+kubectl patch pv <pv-name> -p '{"spec":{"claimRef": null}}'
 
 # Check the PVCs
 kubectl get pvc -n live-agent
