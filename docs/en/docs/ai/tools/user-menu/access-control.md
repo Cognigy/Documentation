@@ -67,7 +67,6 @@ The following **Global Roles** are available:
 |OData|	Can use the Organisation Details section and access to the OData interface to query analytics information.|
 |Live Agent Admin | This role is assigned for users to access Cognigy Live Agent as an admin. This role has the same permissions as the Base Role in Cognigy AI.
 |Live Agent Agent | This role is assigned for users to access Cognigy Live Agent as an agent. This role has the same permissions as the Base Role in Cognigy AI.
-|liveChat| The role is no longer necessary as [Live Agent Lite / Livechat has been deprecated](../../../release-notes/4.42.md) and will be removed from the list shortly.
 |userDetailsViewer| This role is a predefined role that grants users access to view user details, such as email addresses and user names. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.
 
 ???+ info "Control of Global Access Rights"
