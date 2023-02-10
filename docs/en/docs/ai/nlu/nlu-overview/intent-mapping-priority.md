@@ -12,11 +12,10 @@ This feature helps avoid ambiguity between parent and child Intents. The ambigui
 
 With **Intent Mapping Priority**, you choose whether you want to prioritize the current Intent or its child Intents. By giving priority to certain Intents, you can influence whether the parent or child Intents are more likely to be mapped. 
 
-!!! tip
-    We recommend using full sentences when you generate examples for Intents. This approach leads to more accurate result during mapping process. 
+We recommend using full sentences when you generate examples for Intents. This approach leads to more accurate result during the mapping process. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/nlu/images/intent-mapping-priority.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nlu/images/intents/intent-mapping-priority.png" width="80%" />
 </figure>
 
 ## How to Set up
@@ -37,8 +36,8 @@ To set a priority, do the following steps:
 
 Let's assume that we have the following Intent data:
 
-| Intent  | Intent name  | Sentences   |
-| ------- | ------------ | ----------- |
+| Intent  | Intent name  | Sentences                                                   |
+| ------- | ------------ | ----------------------------------------------------------- |
 | Parent  | Order Pizza | I'd like to order a pizza. <br> Can I have a pizza delivered? <br> Can I get a pizza please? <br> I need to purchase a pizza. <br> I want to buy a pizza. |
 | Child 1 | Meat        | I want to get a ham pizza. <br> Can I have a ham pizza please? <br> I need a ham pizza. <br> I would like to order a ham pizza. <br> I am in the mood of for a ham pizza. <br> Can I order a ham pizza? <br> I'd like to have a ham pizza.|
 | Child 2 | Vegetarian  | I want to get a cheese pizza. <br> Can I have a cheese pizza please? <br> I need a cheese pizza. <br> I would like to order a cheese pizza. <br> I am in the mood of for a cheese pizza. <br> Can I order a cheese pizza? <br> I'd like to have a cheese pizza. |
