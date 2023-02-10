@@ -64,9 +64,11 @@ The following **Global Roles** are available:
 |Project Manager|	Can create new projects (Agents), but not administer users.​|
 |User Manager|	Can create new user accounts that can be assigned to projects.​|
 |API Keys|	Can create organization-wide API keys for any user to access the Cognigy.AI RESTful API. The same permissions apply if an ApiKey is used.|
-|OData|	Can use the Organisation Details section and access to the OData interface to query analytics information|
+|OData|	Can use the Organisation Details section and access to the OData interface to query analytics information.|
 |Live Agent Admin | This role is assigned for users to access Cognigy Live Agent as an admin. This role has the same permissions as the Base Role in Cognigy AI.
 |Live Agent Agent | This role is assigned for users to access Cognigy Live Agent as an agent. This role has the same permissions as the Base Role in Cognigy AI.
+|liveChat| The role is no longer necessary as [Live Agent Lite / Livechat has been deprecated](../../../release-notes/4.42.md) and will be removed from the list shortly.
+|userDetailsViewer| This role is a predefined role that grants users access to view user details, such as email addresses and user names. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.
 
 ???+ info "Control of Global Access Rights"
     The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.
