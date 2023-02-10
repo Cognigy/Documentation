@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7db29f9-Twilio.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy Agent to your **Twilio** channel by using our Twilio Endpoint. This allows you to build Bots your users can talk to or chat with via SMS.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Twilio** channel by using our Twilio Endpoint. This allows you to build Bots your users can talk to or chat with via SMS.
 
 ## Twilio Voice, Twilio SMS / WhatsApp, Twilio Autopilot
 

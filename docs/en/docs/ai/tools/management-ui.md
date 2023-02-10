@@ -23,7 +23,7 @@ An organisation has completely separated:
 - contact profile schemas
 - quotas & limits
 
-With the use of organisations, you can use your own COGNIGY.AI installation e.g. for multiple customers and separate their data in a safe manner. Although a new organisation can be created by using a special sort of **internal API**, we created an additional tool called the **Cognigy Management UI**. This is an additional product you can deploy in your cluster. It then lets you connect to your installation to inspect e.g. all organisations within your system.
+With the use of organisations, you can use your own Cognigy.AI installation e.g. for multiple customers and separate their data in a safe manner. Although a new organisation can be created by using a special sort of **internal API**, we created an additional tool called the **Cognigy Management UI**. This is an additional product you can deploy in your cluster. It then lets you connect to your installation to inspect e.g. all organisations within your system.
 
 The following figure shows a screenshot of what this product looks like.
 
@@ -89,7 +89,7 @@ You can also create a new organisation or disable an already existing one.
 
 ## System Message
 
-If you have your own COGNIGY.AI installation, you might want to schedule maintenance at a certain point. This is what you can use our **System Message** feature for. Select system message in the navigation on the left and click on the pink button to create a new system message.
+If you have your own Cognigy.AI installation, you might want to schedule maintenance at a certain point. This is what you can use our **System Message** feature for. Select system message in the navigation on the left and click on the pink button to create a new system message.
 
 Only one system message can exist at a time. Such a message has an actual message text and a **valid until** date. The message will be displayed on all UI clients as long as the message is valid. It will automatically varnish when it is expired.
 
@@ -273,4 +273,4 @@ It is also possible to set a server-wide maximum expiration time for all the sen
 
 <div class="divider"></div>
 
-Further information about installing the Cognigy Management UI can be found on the [Installation & Updating]({{config.site_url}}ai/installation/installation-and-updating/) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
+Further information about installing the Cognigy Management UI can be found on the [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.

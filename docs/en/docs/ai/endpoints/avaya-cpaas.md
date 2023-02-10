@@ -1,10 +1,16 @@
+---
+ title: "Avaya CPaaS" 
+ slug: "avaya-cpaas" 
+ hidden: false 
+---
+
 # Avaya CPaaS
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/avaya-cpaas-logo.png" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy.AI resources to your **Avaya CPaaS** phone number by using the Avaya CPaaS Endpoint.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy.AI resources to your **Avaya CPaaS** phone number by using the Avaya CPaaS Endpoint.
 
 ## Generic Endpoint Settings
 Find out about the generic endpoint settings available with this endpoint on the following pages:

@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/2ae70b9-SunshineConversations.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy Agent to your **Sunshine Conversations application** by using our Sunshine Conversations Endpoint.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Sunshine Conversations application** by using our Sunshine Conversations Endpoint.
 
 ???+ info "Where is the Smooch Endpoint?"
     This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.

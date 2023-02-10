@@ -33,8 +33,8 @@ table th {
 <div class="divider"></div>
 
 
-For communication with the COGNIGY.AI installation, the frontend uses a HTTP-based API.
-This API can also be used by developers to build custom integrations with COGNIGY.AI. We also offer a library in the form of an NPM package called the "rest-api-client" which helps to lower the burden of consuming our APIs. This library is available on NPM and is written in modern JavaScript including Typescript definitions.
+For communication with the Cognigy.AI installation, the frontend uses a HTTP-based API.
+This API can also be used by developers to build custom integrations with Cognigy.AI. We also offer a library in the form of an NPM package called the "rest-api-client" which helps to lower the burden of consuming our APIs. This library is available on NPM and is written in modern JavaScript including Typescript definitions.
 
 ## What are the API's capabilities?
 
@@ -77,7 +77,7 @@ This is the url which the API is available at.
 
 ## Valid API key
 
-An API key is used to authenticate to the COGNIGY.AI API as a user in the system without exposing the user's credentials.
+An API key is used to authenticate to the Cognigy.AI API as a user in the system without exposing the user's credentials.
 
 You can get an API key by logging into the frontend, going to your own user profile by clicking your avatar in the top right, then click "My Profile" in the menu.
 
@@ -94,7 +94,7 @@ To do a call to the API, do a HTTP request and add either
 - a query parameter `api_key` with your API key as value
 - a header `X-API-Key`with your API key set as value
 
-Let's assume I have a COGNIGY.AI installation running at `https://api-dummy.cognigy.ai` and i created myself an API key which reads `myDummyApiKey123`. 
+Let's assume I have a Cognigy.AI installation running at `https://api-dummy.cognigy.ai` and i created myself an API key which reads `myDummyApiKey123`. 
 
 I can now open a new browser tab and go to `https://api-dummy.cognigy.ai/projects?api_key=myDummyApiKey123` to get a list of all the projects that are assigned to me, including meta-information about the resources within that project.
 This call, for example, is used by the frontend when you load the "Projects" page.

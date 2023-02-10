@@ -20,7 +20,7 @@ Intent Mapping is at the core of the NLU engine and the process uses machine lea
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU" target="_blank" >Techinar video "Cognigy NLU"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU" target="_blank" >Technical video "Cognigy NLU"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive
@@ -173,7 +173,7 @@ States can be used to deliberately block certain Intents. This can help with edg
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Techinar video "Question Nodes"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Technical video "Question Nodes"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive

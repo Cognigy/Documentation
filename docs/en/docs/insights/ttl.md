@@ -5,7 +5,7 @@
 ---
 # Data Expiration
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.42-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Added in-v4.42-blue.svg)](../release-notes/4.42.md)
 
 *Data Expiration* (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
 
@@ -28,12 +28,22 @@ In the table below, you can view the data included in TTL.
 
 Cognigy keeps data indefinitely by default. To change this behavior, an expiration date must be set up.
 
-To activate the Data Expiration feature, set limits via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center) and specify the desired limits in your request.
+To activate the Data Expiration feature, set limits via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center) and specify the desired limits in your request.
 
 If you have already set limits in the management-ui service, the Data Expiration indicator will automatically appear in the Insights interface.
 
+The Data Expiration feature applies only to new data obtained by Cognigy after activating Data Expiration in management-ui. Data obtained before setting the expiration value remains.
+
+For example:
+
+> In management-ui, you set the 1-minute expiration value at 13:00 for Sessions.
+> 
+> Sessions created after 13:00 will automatically terminate after 1 minute due to the 1-minute expiration date set in management-ui.
+> 
+> Sessions created before 13:00 will remain unchanged.
+
 ## Changing Data Expiration
 
-You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md/#help-center). 
+You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
 
 When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.

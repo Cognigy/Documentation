@@ -11,7 +11,7 @@ Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records.
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Techinar video "Analytics &amp; OData"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Technical video "Analytics &amp; OData"</a>
       </div>
       <div class="callout-subtext">
       Watch this Episode of Cognigy Sessions for a technical deep dive

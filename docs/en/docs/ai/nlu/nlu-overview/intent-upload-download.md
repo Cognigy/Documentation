@@ -14,7 +14,7 @@ We currently support two formats
 Your CSV should be formatted as follows
 
 * No header
-* We auto detect various csv formats, if you have any issues use UTF-8 encoding, comma (`,`) as the delimiter  and double quotes ( `"`) as your quote character and newline (`\n`) as your line terminator
+* We auto detect various CSV formats, if you have any issues use UTF-8 encoding, comma (`,`) as the delimiter  and double quotes ( `"`) as your quote character and newline (`\n`) as your line terminator
 * You will need to populate the following three columns:
 
 | Name	| Property type	| Value |

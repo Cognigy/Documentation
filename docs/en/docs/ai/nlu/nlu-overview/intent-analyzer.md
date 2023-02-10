@@ -26,7 +26,7 @@ The feedback is given on three levels:
 
 This saves time from a testing perspective as a simple glance at the intent training menu is all that is required to assess the quality of the model, rather than manually talking to the virtual agent to judge the quality of understanding. We recommend to digest the feedback top-down. Is your overall model green? A quick scan of intents might alert you to issues. A check on individual sentences gives you concrete insight to edit, add or move example sentences and improve your NLU.
 
-???+ wrning "Train the NLU for Feedback"
+???+ warning "Train the NLU for Feedback"
     Ensure the NLU is trained each time changes have been made to example sentences to provide the latest scoring analysis.
 
 ### Overall Intent Model
@@ -54,8 +54,8 @@ Each intent trained to the NLU is assigned a score that provides virtual agent d
 
 To improve the score and reduce overlap, adjustments must be made to the example sentences contained within the intent.
 
-???+ wrning "Trends in individual intents may not reflect overall model quality"
-    When a model performs well it does not mean that it cannot be further improved still on the intent level. Red or yellow intents indicate opportunities for improvement. Such opportunities are not necessarily a reflection of a poor overall model which is separately and accurately assesed in the overall model score - the whole is greater than the sum of its parts!
+???+ warning "Trends in individual intents may not reflect overall model quality"
+    When a model performs well it does not mean that it cannot be further improved still on the intent level. Red or yellow intents indicate opportunities for improvement. Such opportunities are not necessarily a reflection of a poor overall model which is separately and accurately assessed in the overall model score - the whole is greater than the sum of its parts!
 
 ### Individual Example Sentence
 
@@ -76,8 +76,8 @@ In conjunction with the traffic light color, these two pieces of information all
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/5d864f8-goodScore.PNG" width="100%" />
 </figure>
 
-???+ wrning "Trends in individual sentences may not reflect overall intent quality"
-    When an intent performs well it does not mean that it cannot be further improved still on the sentence level. Red or yellow example sentences indicate opportunities for improvement. Such opportunities are not necessarily a reflection of a poor intent quality which is separately and accurately assesed in the intent score - the whole is greater than the sum of its parts!
+???+ warning "Trends in individual sentences may not reflect overall intent quality"
+    When an intent performs well it does not mean that it cannot be further improved still on the sentence level. Red or yellow example sentences indicate opportunities for improvement. Such opportunities are not necessarily a reflection of a poor intent quality which is separately and accurately assessed in the intent score - the whole is greater than the sum of its parts!
 
 ## Scoring System
 <div class="divider"></div>

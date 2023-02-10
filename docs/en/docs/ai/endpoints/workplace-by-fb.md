@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4056489-Workplace.PNG" width="100%" />
 </figure>
 
-Within our **COGNIGY.AI** platform you're able to connect your Cognigy resources to your **Workplace** channel by using our Workplace Endpoint integration.
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Workplace** channel by using our Workplace Endpoint integration.
 
 ???+ info "Available on app.cognigy.ai and dedicated environments"
     This Endpoint is currently not available in the Cognigy.AI Free Trial.

@@ -1,3 +1,8 @@
+---
+ title: "Cognigy Insights" 
+ slug: "pre-4.30" 
+ hidden: false 
+---
 # Cognigy Insights
 
 ## 4.29.0
@@ -50,7 +55,7 @@
 
 ### Bugfixes
 
-- Fixed a bug where Message Explorer had 2 scrollbars which caused to invalid infinite loader behaviour
+- Fixed a bug where Message Explorer had 2 scroll bars which caused to invalid infinite loader behaviour
 
 ## 4.24.0
 

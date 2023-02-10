@@ -1,3 +1,9 @@
+---
+ title: "Get Help & Report Problems" 
+ slug: "get-help" 
+ hidden: false 
+---
+
 # Get Help & Report Problems
 
 ## Description
