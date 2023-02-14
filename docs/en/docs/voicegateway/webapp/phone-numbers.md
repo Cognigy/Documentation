@@ -4,8 +4,12 @@
  hidden: true 
 ---
 
-# Voice Gateway Web App - Phone Numbers
+# Phone Numbers
 
-On the **Phone Numbers** page you can add your phone numbers that shall be routed to your Endpoints. While adding the phone number your _SIP Trunk_ and the _Application_ the number will be routed to must be chosen as well.
+_Phone Numbers_ are routed to your Endpoints. Phone number helps route incoming voice calls to the Cognigy conversation flow. Add carrier, account, and application, then save changes.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-phone-numbers.png" alt="Voice Gateway WebApp Phone Numbers" />
+To create a phone number, select **Phone numbers**in the left-side menu, then click **Add phone number** or **+**.
+
+You can create more than one phone number.
+
+After creating a phone number, you can edit or delete it.

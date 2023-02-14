@@ -455,28 +455,27 @@ nav:
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
     - voicegateway/installation/installation-process.md
-    #- voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
-    # - Deployment:
-    #   - voicegateway/installation/installation-process.md
-  # Temporary disabled until the Web App is done
-  # - Web App:
-    # - voicegateway/webapp/overview.md
-    # - Accounts:
-      #- voicegateway/webapp/accounts.md
-    # - Applications:
-      # - voicegateway/webapp/applications.md
-    # - Recent Calls:
-      # - voicegateway/webapp/recent-calls.md
-    # - Alerts:
-      # - voicegateway/webapp/alerts.md
-    # - Carriers:
-      # - voicegateway/webapp/carriers.md
-    # - Speech Services:
-      # - voicegateway/webapp/speech-services.md
-    # - Phone Numbers:
-      # - voicegateway/webapp/phone-numbers.md
+      - Deployment:
+        - voicegateway/installation/installation-process.md
+  - Web App:
+    - Overview:
+      - voicegateway/webapp/overview.md
+    - Accounts:
+      - voicegateway/webapp/accounts.md
+    - Applications:
+      - voicegateway/webapp/applications.md
+    - Recent Calls:
+      - voicegateway/webapp/recent-calls.md
+    - Alerts:
+      - voicegateway/webapp/alerts.md
+    - Carriers:
+      - voicegateway/webapp/carriers.md
+    - Speech Services:
+      - voicegateway/webapp/speech-services.md
+    - Phone Numbers:
+      - voicegateway/webapp/phone-numbers.md
   - Release Notes:
     - voicegateway/release-notes.md      
 

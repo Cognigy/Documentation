@@ -4,12 +4,17 @@
  hidden: true 
 ---
 
-# Voice Gateway Web App - Recent Calls
+# Recent Calls
 
-The **Recent Calls** page displays an overview of all calls of your Account. Voice Gateway provides general data about the calls such as the Date, Direction, From, To, SIP Trunk and Call Duration. These calls can be filtered by Date, Direction and Status. Please note that you can only filter by maximum the last _30 days_.
+*Recent Calls* page displays an overview of all calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
+
+Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
+
+To view detailed information about the call, click on the call tab.
+
+Additionally, Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
 
 <img src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png" alt="Voice Gateway WebApp Recent Calls" />
 
-Next to the general call information you have a set of detailed information that can be accessed by clicking the '+' sign next to the date. Additionally Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls-details.png" alt="Voice Gateway WebApp Recent Calls Details" />
+

@@ -17,8 +17,8 @@ When Cognigy products are used daily, the data expiration values will remain unc
 
 In the table below, you can view the data included in TTL.
 
-| Data     | Description     | Dashboards| 
-| -------- | ----------------|-----------| 
+| Data     | Description     | Dashboards                                                 | 
+| -------- | --------------- | ---------------------------------------------------------- | 
 | Analytics| This indicates the duration between the creation of all Analytics data and its removal from the database.| [Overview](dashboard-overview.md): <br>- Number of Inputs <br>- Top Intents  <br>- Understood Messages  <br>- Understood / Misunderstood Messages<br> [Engagement](dashboard-engagement.md): <br>- Avg. Session Length<br> - Max. Session Length <br> [NLU Perfomance](dashboard-nlu-performance.md): <br> - Avg Intent Score <br> - Average Execution Time <br> - Intents by Score Range <br> - Max Intent Score <br> - Understood Messages <br> - Understood / Misunderstood Messages <br> - Top Intents <br> - Top Intent Scores <br> | 
 | Conversations| This indicates the duration between the creation of chat history analytics and its removal from the database.| [Transcript Explorer](transcript-explorer.md), [Message Explorer](message-explorer.md)
 | Sessions | This indicates the duration between the creation of Insights session analytics and its removal from the database.| [Overview](dashboard-overview.md): <br> - Active Contacts<br> - Positive Ratings<br> - Sessions<br> - Session by Channel<br> - Sessions Count<br> - Top Goals<br>- Top Slots<br> - Unique Contacts<br> - Users by Locale<br> [Engagement](dashboard-engagement.md): <br>- Contacts <br>- Goals Reached <br>- Handovers by time of the day <br>- Live Agent Escalations <br>- Positive Ratings <br>- Positive Ratings over Time <br>- Top Goals <br>[NLU Perfomance](dashboard-nlu-performance.md):<br>- Top Slots| 
