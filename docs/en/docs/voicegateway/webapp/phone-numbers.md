@@ -8,10 +8,10 @@
 
 _Phone Numbers_ are routed to your Endpoints. Phone number helps route incoming voice calls to the Cognigy conversation flow. 
 
-To create a phone number, select **Phone numbers**in the left-side menu, then click **Add phone number** or **+**. After that, add a carrier, account, and application, then save changes.
+To create a phone number, select **Phone numbers** in the left-side menu, then click **Add phone number** or **+**. After that, add a carrier, account, and application, then save changes.
 
 You can create more than one phone number.
 
 After creating a phone number, you can edit or delete it.
 
-<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-phone-number.png"  width="100%" />
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-phone-numbers.png"  width="100%" />
