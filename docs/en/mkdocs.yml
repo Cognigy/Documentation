@@ -457,8 +457,8 @@ nav:
     - voicegateway/installation/installation-process.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
-      - Deployment:
-        - voicegateway/installation/installation-process.md
+    - Deployment:
+      - voicegateway/installation/installation-process.md
   - Voice Gateway Self-Service Portal:
     - Overview:
       - voicegateway/webapp/overview.md
