@@ -6,9 +6,9 @@
 
 #  Applications
 
-*Applications* represent Endpoints in Cognigy.AI. Creating an Application in the Voice Gateway Web App allows the Endpoint to be routed to Voice Gateway. All the default values are being set in the application, such as default speech vendor, language, and voice for the Text-To-Speech output and Speech-To-Text recognition.
+*Applications* represent [Endpoints](../../ai/endpoints/overview.md) in Cognigy.AI. Creating an application in the Voice Gateway allows the Endpoint to be routed to Voice Gateway. All the default values are being set in the application, such as default speech vendor, language, and voice for the Text-To-Speech output and Speech-To-Text recognition.
 
-To create an application, in the left-side menu, select Applications, then click **Add application** or **+**.
+To create an application, select **Applications** in the left-side menu, then click **Add application** or **+**.
 
 You can create more than one application, dependent on the number of Endpoints created in Cognigy.AI.
 

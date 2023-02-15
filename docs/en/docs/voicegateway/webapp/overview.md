@@ -4,9 +4,9 @@
  hidden: false 
 ---
 
-# Voice Gateway WebApp
+# Voice Gateway Self-Service Portal
 
-The Cognigy Voice Gateway WebApp sets standard configuration and routing for Voice Gateway.
+The Cognigy Voice Gateway Self-Service Portal is a web-based interface that allows users to manage their accounts, settings, and preferences for the Cognigy Voice Gateway.
 
 The Web App has the following entities:
 

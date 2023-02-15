@@ -6,7 +6,7 @@
 
 # Recent Calls
 
-*Recent Calls* page displays an overview of all calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
+*Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
 
 Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
 

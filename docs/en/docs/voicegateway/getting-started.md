@@ -6,16 +6,18 @@
 
 # Getting Started with Voice Gateway
 
-<img class="image-center" src="{{config.site_url}}voicegateway/images/VG-logo.png" width="Voice Gateway Logo" />
+<figure>
+<img class="image-center" src="{{config.site_url}}voicegateway/images/VG-logo.png" width="80%" />
+   <figcaption>Voice Gateway Logo</figcaption>
+</figure>
 
 ## How to Set Up Voice Gateway?
 
-Setting up Voice Gateway is easy and can be done in 3 steps:
-- [Getting Started with Voice Gateway](#getting-started-with-voice-gateway)
-  - [How to Set Up Voice Gateway?](#how-to-set-up-voice-gateway)
-  - [Create a Voice Gateway flow](#create-a-voice-gateway-flow)
-  - [Create a Voice Gateway Endpoint](#create-a-voice-gateway-endpoint)
-  - [Route your Contact Center or Phone Number to Voice Gateway](#route-your-contact-center-or-phone-number-to-voice-gateway)
+To set up Voice Gateway, do the following steps:
+
+1. [Create a Voice Gateway flow](#create-a-voice-gateway-flow)
+2. [Create a Voice Gateway Endpoint](#create-a-voice-gateway-endpoint)
+3. [Route your Contact Center or Phone Number to Voice Gateway](#route-your-contact-center-or-phone-number-to-voice-gateway)
 
 ## Create a Voice Gateway flow
 
@@ -27,7 +29,10 @@ If there is a Voice Gateway channel-specific configuration, this configuration w
 
 For voice-specific actions, you can use the [Voice Gateway Flow Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/).
 
-<img src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png" width="Voice Gateway Nodes Overview" />
+!!! note
+    With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
+
+<img src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png"  width="80%" />
 
 ## Create a Voice Gateway Endpoint
 
@@ -41,12 +46,16 @@ To do voice-based experiences with your Virtual Agent, create your [Voice Gatewa
    3.3 Select a relevant FLow from the list.
 4. Click **Save**.
    
-<img src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="Voice Gateway New Endpoint" />
+<img src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
 
 ## Route your Contact Center or Phone Number to Voice Gateway
 
-To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with Cognigy technical support to configure your SIP Trunk and route your number to the right Endpoint.
+To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with [Cognigy technical support](../help/get-help.md) to configure your SIP Trunk and route your number to the right Endpoint.
 
+## What's next?
 
-???+ warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
+- [Create an account](webapp/accounts.md)
+- [Create an application](webapp/applications.md)
+- [Add a new carrier](webapp/carriers.md)
+- [Add a phone number](webapp/phone-numbers.md)
+- [Add speech provider credentials](webapp/speech-services.md)

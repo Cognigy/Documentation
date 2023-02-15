@@ -6,9 +6,9 @@
 
 # Phone Numbers
 
-_Phone Numbers_ are routed to your Endpoints. Phone number helps route incoming voice calls to the Cognigy conversation flow. Add carrier, account, and application, then save changes.
+_Phone Numbers_ are routed to your Endpoints. Phone number helps route incoming voice calls to the Cognigy conversation flow. 
 
-To create a phone number, select **Phone numbers**in the left-side menu, then click **Add phone number** or **+**.
+To create a phone number, select **Phone numbers**in the left-side menu, then click **Add phone number** or **+**. After that, add a carrier, account, and application, then save changes.
 
 You can create more than one phone number.
 

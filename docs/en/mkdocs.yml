@@ -459,7 +459,7 @@ nav:
       - voicegateway/installation/browser-requirements.md
       - Deployment:
         - voicegateway/installation/installation-process.md
-  - Web App:
+  - Voice Gateway Self-Service Portal:
     - Overview:
       - voicegateway/webapp/overview.md
     - Accounts:

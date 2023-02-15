@@ -6,6 +6,6 @@
 
 # Alerts
 
-*Alerts* are created when errors happen during the call.
+*Alerts* are created when errors happen in your account configuration. For example, your credentials from the speech provider need to be updated.
 
 Note that you can only filter by a maximum of the last 7 days.
