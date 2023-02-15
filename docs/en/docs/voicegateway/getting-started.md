@@ -32,7 +32,9 @@ For voice-specific actions, you can use the [Voice Gateway Flow Nodes]({{config.
 !!! note
     With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
 
-<img src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png"  width="80%" />
+<figure>
+   <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png"  width="80%" />
+</figure>
 
 ## Create a Voice Gateway Endpoint
 
@@ -45,8 +47,11 @@ To do voice-based experiences with your Virtual Agent, create your [Voice Gatewa
    3.2 Add a unique name.
    3.3 Select a relevant FLow from the list.
 4. Click **Save**.
-   
-<img src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
+
+<figure>
+   <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
+</figure>
+
 
 ## Route your Contact Center or Phone Number to Voice Gateway
 

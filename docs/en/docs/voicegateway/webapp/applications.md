@@ -14,7 +14,9 @@ You can create more than one application, dependent on the number of Endpoints c
 
 After creating an application, you can edit or delete it.
 
-## Application settings 
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-applications-overview.png"  width="100%" />
+
+## Settings 
 
 | Settings | Description |
 | -------  | ----------- |

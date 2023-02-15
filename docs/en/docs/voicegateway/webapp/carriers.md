@@ -13,7 +13,9 @@ There are two options on how the SIP Trunk can be added:
 - by going through the form and filling out all the fields.
 - by clicking **Select a predefined carrier** and selecting one of the pre-configured carriers. That will pre-fill all the fields with standard values.
 
-## Carrier Settings
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-carriers.png"  width="100%" />
+
+## Settings
 
 <div class="divider"></div>
 

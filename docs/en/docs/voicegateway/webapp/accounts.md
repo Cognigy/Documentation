@@ -14,9 +14,9 @@ You can create more than one account.
 
 After creating an account, you can edit or delete it.
 
-## Account Settings
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png"  width="100%" />
 
-<div class="divider"></div>
+## Settings
 
 | Settings | Description |
 | -------- | ----------- |

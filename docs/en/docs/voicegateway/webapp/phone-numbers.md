@@ -13,3 +13,5 @@ To create a phone number, select **Phone numbers**in the left-side menu, then cl
 You can create more than one phone number.
 
 After creating a phone number, you can edit or delete it.
+
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-phone-number.png"  width="100%" />

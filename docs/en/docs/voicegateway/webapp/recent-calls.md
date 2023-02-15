@@ -14,7 +14,7 @@ To view detailed information about the call, click on the call tab.
 
 Additionally, Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png" alt="Voice Gateway WebApp Recent Calls" />
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png"  width="100%" />
 
 
 
