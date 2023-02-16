@@ -17,11 +17,11 @@ The Voice Gateway Call Recording Node controls the voice recording capabilities 
 
 The Voice Gateway Call Recording Node initiates or terminates the recording of a conversation.
 
-The Node uses a Session Border Controller (SBC) as a Session Recording Client (SRC) to record the audio using the SIPREC protocol. The recorded audio is sent to a Session Recording Server (SRS) for storage.
+The Node uses a Voce Gateway API to act as a [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866) client to record the audio using the SIPREC protocol. The recorded audio is sent to a Session Recording Server (SRS) for storage. You can use any SRS for storing audio records.
 
 | Parameter | Type | Description | Activity type |
 | ----------- | ----------- | ----------- |  ----------- |
-| Activity | Select | Whether to start or stop a call recording. | -
+| Activity | Select | Whether to start, stop, pause, or resume a call recording. | -
 | Call Recording Server | CognigyScript | Defines the SRS URL as an IP Group name (as configured on the SBC) to record the call.|  Start Call Recording
 | Call Recording ID | CognigyScript | Defines the recording session identifier, which is forwarded by the SBC to the SRS. | Start Call Recording
 
