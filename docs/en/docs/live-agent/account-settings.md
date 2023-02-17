@@ -84,6 +84,20 @@ The Auto Resolve Action option is used to resolve or abandon a conversation auto
 
 When the checkbox for automatically deleting resolved conversations is marked, the conversations marked as resolved will be automatically deleted. This includes the existing ones as per the warning message.
 
+## Notifications
+
+As an administrator, you can configure push and email notifications for the following events:
+
+- When a new conversation is created.
+- When a conversation is assigned to you.
+- When you are mentioned in conversation.
+- When a new message is created in an assigned conversation.
+
+This configuration applies to all human agents of your organization account and overrides the agent [Profile settings](profile-settings.md).
+
+!!! note 
+    The push notifications setting must be enabled in the system. Otherwise, they are not available.
+
 ## Account ID and Version
 
 <figure>
