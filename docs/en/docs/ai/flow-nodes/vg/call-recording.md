@@ -22,8 +22,8 @@ The Node uses a Voce Gateway API to act as a [SIPREC](https://datatracker.ietf.o
 | Parameter | Type | Description | Activity type |
 | ----------- | ----------- | ----------- |  ----------- |
 | Activity | Select | Whether to start, stop, pause, or resume a call recording. | -
-| Call Recording Server | CognigyScript | Defines the SRS URL as an IP Group name (as configured on the SBC) to record the call.|  Start Call Recording
-| Call Recording ID | CognigyScript | Defines the recording session identifier, which is forwarded by the SBC to the SRS. | Start Call Recording
+| Call Recording Server | CognigyScript | Defines the SRS URL as an IP Group name (as configured on the Voce Gateway) to record the call.|  Start Call Recording
+| Call Recording ID | CognigyScript | Defines the recording session identifier, which is forwarded by the Voce Gateway to the SRS. | Start Call Recording
 
 
 
