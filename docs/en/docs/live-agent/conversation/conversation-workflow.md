@@ -118,11 +118,14 @@ Click on the Send button or press Enter to send your message to the customer.
 
 Below is a list describing Conversation actions an Agent can take by clicking the following icons.
 
-| Icon                 | Description                                                                                        |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />         | This button allows the Agent to select and include an Emoji in the message                                                             |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the Agent to select and include attachments in the message                                                               |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the Agent to request a file from the customer                                                             |
+| Icon  | Description          |
+|-------|----------------------|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" /> | This button allows a human agent to select and include an Emoji in the message.|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | This button allows  a human agent to select and include attachments in the message.|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | This button allows a human agent to request a file from the customer. |
+| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" /> | This button allows a human agent to send voice messages to the customer. |
+| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" /> | This button allows a human agent to send hyperlinked text to the customer. |
+
 
 ### Agent Assist (Beta)
 <div class="divider"></div>
