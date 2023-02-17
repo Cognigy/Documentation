@@ -190,6 +190,7 @@ nav:
       - Generic Voice Nodes:
         - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
         - ai/flow-nodes/generic-voice-nodes/play-url.md
+        - ai/flow-nodes/generic-voice-nodes/send-metadata.md
         - ai/flow-nodes/generic-voice-nodes/transfer.md
         - ai/flow-nodes/generic-voice-nodes/hang-up.md
         - ai/flow-nodes/generic-voice-nodes/barge-in-config.md
