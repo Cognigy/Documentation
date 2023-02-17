@@ -25,6 +25,3 @@ The Send Meta Data Node will send meta data via SIP INFO messages to the connect
   "myParamName": "myParamValue"
 }
 ```
-
-???+ info "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.
