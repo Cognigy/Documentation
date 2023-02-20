@@ -6,7 +6,7 @@ hidden: false
 
 # Generative AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44(Beta)-purple.svg)](./release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.45(Beta)-purple.svg)](./release-notes/release-notes.md)
 
 !!! note
     - Cognigy Generative AI features are in Beta. We encourage you to try these features out and provide us with feedback.
