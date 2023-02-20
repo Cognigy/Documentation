@@ -102,6 +102,11 @@ When you hover over an example sentence, a *Delete Icon* will appear. Clicking o
 ???+ warning "Delete Example Sentences using Keyboard"
     The *Delete Icon* of an example sentence cannot be accessed when only using a keyboard. However, a keyboard-only user can still delete an example sentence simply by clearing the field using *Delete* or *Backspace* keys.
 
+### Create examples with Generative AI 
+
+To use Generative AI technology for creating Intent example sentences, read the [Generative AI](../../generative-ai.md#generate-intent-sentences) article.
+
+
 ## Slots and Lexicons
 <div class="divider"></div>
 
