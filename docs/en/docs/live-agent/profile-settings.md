@@ -34,7 +34,7 @@ The rest of the user data, such as email, full name and password, need to be upd
 
 You can customize the behavior of notifications.
 
-Starting from Cognigy 4.45, you can configure only Audio Notifications. Push and email notifications are moved to [Account settings](account-settings.md) and can only be controlled by administrators.
+Starting from Cognigy 4.45, you can configure only Audio Notifications. Push and email notifications are moved to [Account settings](account-settings.md) and can only be controlled by administrators. If the administrator has not yet changed the push and email notification settings, a human agent still have the opportunity to change them in the Profile Settings.
 
 !!! note 
     The push notifications setting must be enabled in the system. Otherwise, they are not available.
