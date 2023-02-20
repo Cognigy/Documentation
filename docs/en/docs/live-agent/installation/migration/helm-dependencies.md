@@ -244,7 +244,7 @@ Once done, `jobs` command should give no output.
 
 ### Step 3. Delete the current release plus the PVCs and check the Live Agent PVC reclaim policy
 
-When the PostgreSQL and Redis versions have changed, the PVCs become incompatible with the new versions.
+When the PostgreSQL and Redis versions have changed, the PVCs become incompatible with the new versions. To recover compatibility, delete the current release and the PVCs, then check the Live Agent PVC reclaim policy.
 
 ```sh
 # Check that PVs are set as Retain:
