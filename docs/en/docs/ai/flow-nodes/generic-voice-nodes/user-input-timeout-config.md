@@ -6,6 +6,8 @@
 
 # Transfer
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/user-input-timeout-config.png" width="80%" />
   <figcaption>Generic User Input Timeout - Config Node</figcaption>

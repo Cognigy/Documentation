@@ -86,6 +86,8 @@ When the checkbox for automatically deleting resolved conversations is marked, t
 
 ## Notifications
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 As an administrator, you can configure push and email notifications for the following events:
 
 - When a new conversation is created.

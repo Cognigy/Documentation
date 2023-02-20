@@ -5,6 +5,8 @@
 ---
 # Dashboard Overview
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 ## Overview Dashboard
 
 <div class="divider"></div>
@@ -39,6 +41,7 @@ When hovering the line chart, details as for example the rated month, the year a
 ???+ info "Note"
     **The on top of the dashboard placed blue tiles show currently valid data in a "live" mode. That means that data will be refreshed every 30 seconds to be updated.**
 <div id="overview"></div>
+
 |Graph title|	Description|
 |--|--|
 |Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
@@ -64,6 +67,7 @@ When hovering the line chart, details as for example the rated month, the year a
   <figcaption>Overview dashboard - 3</figcaption>
 </figure>
 <div id="overview-charts2"></div>
+
 |Graph title|	Description|
 |--|--|
 |Top Slots|	Top-rated number of slots displayed in a bar chart.|
