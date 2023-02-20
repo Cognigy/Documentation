@@ -43,7 +43,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |--|--|
 |Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
 |Session count|	 A session is defined as a user session with the system. Session count indicates the total number of sessions, including ongoing and newly started sessions. This means if the session is started on 2nd June before 12am, and continues on in 3nd June, it will be counted in the Insights session count dashboard (the report is arranged in a tile).|
-|Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile). The "null" value is available for messages with active handover. Messages marked as "null" are not counted in this chart.|
+|Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile).  A message is counted as understood if it has triggered an intent, a slot has been matched or a message has been marked as understood via the Code Node or Overwrite Analytics Node.  Not counted messages (see Overwrite Analytics Node) or messages sent during an active handover without an Agent Assist Flow being configured are not counted in this chart.|
 |Positive Ratings	|Indication of the NLU quality (the report is arranged in a tile).|
 |Sessions|	A line chart displays the number of sessions on a timescale.|
 
