@@ -9,7 +9,7 @@
 
 Within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
 
-You can access the analytics data in a code node by using the key ```analyticsdata```. For example:
+You can access the analytics data in a code node by using the key `analyticsdata`. For example:
 
 ```javascript
 analyticsdata.intent = "test";
@@ -19,8 +19,8 @@ analyticsdata.intent = "test";
 <div class="divider"></div>
 The following fields can be overwritten in a Code Node:
 
-| Field          | Description                                                                                                                                              | Type            |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| Field          |Description                     | Type            |
+| -------------- | ------------------------------ | --------------- |
 | intent         | The intent that will be written to analytics. You can for instance modify this field to store the intent that was found in an executed Flow in analytics | String          |
 | intentFlow     | The ID of the Flow where the intent was found (main flow or attached flow)                                                                               | String          |
 | intentScore    | The score of the intent that was found                                                                                                                   | Number          |
@@ -29,7 +29,7 @@ The following fields can be overwritten in a Code Node:
 | state          | The [State]({{config.site_url}}ai/tools/interaction-panel/state/) the Flow is currently in                                                               | String          |
 | slots          | The slots that were found in the user's input                                                                                                            | Object          |
 | completedGoals | A list of goals the user has completed                                                                                                                   | List of Strings |
-| understood     | Whether the input was understood                                                                                                                         | Boolean         |
+| understood     |  Whether the input was understood. An input is counted as understood if an Intent or a Slot is found, the input is marked as understood via the Code Node or Overwrite Analytics Node, or the type of sentence is pAnswer, nAnswer, or Greeting (if Confirmation Word logic is activated). In all other cases, it is marked as not understood, except if there is an active handover (without activation of an agent Assist Flow) or a message has been marked as `Don't count` or `Null`.| Boolean        |
 | custom1        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
 | custom2        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
 | custom3        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                               | String          |
