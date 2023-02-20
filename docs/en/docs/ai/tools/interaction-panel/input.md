@@ -24,6 +24,8 @@ The input object is passed to the agent's [Flow]({{config.site_url}}ai/resources
 ## Properties
 <div class="divider"></div>
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+
 The Input object contains the following properties (for text input).
 
 | Key |	Description |

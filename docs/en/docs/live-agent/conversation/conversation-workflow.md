@@ -116,6 +116,8 @@ Click on the Send button or press Enter to send your message to the customer.
 
 ###  Conversation Actions
 
+[![Version badge](https://img.shields.io/badge/updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
+
 Below is a list describing Conversation actions an Agent can take by clicking the following icons.
 
 | Button  | Description          |

@@ -5,6 +5,8 @@
 ---
 # NLU Performance
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 ## NLU Performance Dashboard
 
 <div class="divider"></div>
@@ -26,6 +28,9 @@ More information regarding "NLU" and "Intents" you will find here: [NLU Overview
   <figcaption>NLU Performance dashboard details</figcaption>
 </figure>
 <div id="nlu-1"></div>
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 |Graph title|	Description|
 |--|--|
 |Understood messages|	This percentage value, displayed as a report arranged in a tile, relates to the evaluated messages and is helpful to improve your agent in natural language understanding. <br> A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow. <br> Clicking on the three dots menu item you can select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to the Intent Trainer in Cognigy.AI to improve your Agent.|

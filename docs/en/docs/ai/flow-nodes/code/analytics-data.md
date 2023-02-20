@@ -17,6 +17,9 @@ analyticsdata.intent = "test";
 
 ## Analytics fields
 <div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+
 The following fields can be overwritten in a Code Node:
 
 | Field          |Description                     | Type            |

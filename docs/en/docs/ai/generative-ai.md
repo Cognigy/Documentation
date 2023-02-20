@@ -6,7 +6,7 @@ hidden: false
 
 # Generative AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45(Beta)-purple.svg)](./release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.45(Beta)-purple.svg)](../release-notes/4.45.md)
 
 !!! note
     You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.

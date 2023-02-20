@@ -6,6 +6,8 @@
 
 # Send Metadata
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-send-metadata-node.png" width="100%" />
   <figcaption>Voice Gateway Send Metadata Node</figcaption>
