@@ -214,3 +214,7 @@ When a Question is "active", meaning an answer is being waited for, information 
 ``` 
 
 This information can be used to trigger specific actions on escalation or to jump back to the Question Node after an escalation.
+
+## AI-enhanced output
+
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.

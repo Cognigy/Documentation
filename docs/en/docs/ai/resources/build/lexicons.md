@@ -113,4 +113,6 @@ Cognigy.AI features built-in Slot detection for a broad range common data types.
     Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
 
 
+## Generative AI
 
+To use Generative AI technology for creating a new Lexicon, read the [Generative AI](../../generative-ai.md#generate-lexicons) article.

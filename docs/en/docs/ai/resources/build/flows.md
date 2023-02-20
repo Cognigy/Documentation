@@ -86,3 +86,7 @@ With Cognigy.AI 4.10.0 switching between Flows with different settings and diffe
 
 - When you are in the **NLU tab** of Flow A and you switch to Flow B you will still be in the NLU tab.
 - When you are in the **Settings tab** of Flow A and you switch to Flow B you will still be in the Settings tab.
+
+## Generative AI
+
+To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, read the [Generative AI](../../generative-ai.md#generate-flows) article.
