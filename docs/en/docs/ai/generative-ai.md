@@ -1,12 +1,12 @@
 ---
-title: "Generative AI"
-slug: "Generative AI"
+title: "Generative AI (Beta)"
+slug: "Generative AI (Beta)"
 hidden: false
 ---
 
-# Generative AI 
+# Generative AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44(Beta)-purple.svg)](./release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.45(Beta)-purple.svg)](./release-notes/release-notes.md)
 
 !!! note
     You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
