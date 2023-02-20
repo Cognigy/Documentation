@@ -1,6 +1,6 @@
 ---
-title: "Generative AI (Beta)"
-slug: "Generative AI (Beta)"
+title: "Generative AI"
+slug: "Generative AI"
 hidden: false
 ---
 
