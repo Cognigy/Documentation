@@ -43,7 +43,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |--|--|
 |Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
 |Session count|	 A session is defined as a user session with the system. Session count indicates the total number of sessions, including ongoing and newly started sessions. This means if the session is started on 2nd June before 12am, and continues on in 3nd June, it will be counted in the Insights session count dashboard (the report is arranged in a tile).|
-|Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile).  A message is counted as understood if it has triggered an intent, a slot has been matched or a message has been marked as understood via the Code Node or Overwrite Analytics Node.  Not counted messages (see Overwrite Analytics Node) or messages sent during an active handover without an Agent Assist Flow being configured are not counted in this chart.|
+|Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile). <br> A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow.|
 |Positive Ratings	|Indication of the NLU quality (the report is arranged in a tile).|
 |Sessions|	A line chart displays the number of sessions on a timescale.|
 
@@ -67,7 +67,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |Graph title|	Description|
 |--|--|
 |Top Slots|	Top-rated number of slots displayed in a bar chart.|
-|Understood/Misunderstood Messages|	Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart.|
+|Understood/Misunderstood Messages|	Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart. <br> A message is counted as understood/misunderstood if it has triggered an intent, a slot is matched, or it is marked as understood or misunderstood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood/misunderstood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow.|
 |Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts/)
 |Unique Contacts|	Time-related number of unique contacts displayed in a line chart.|
 
