@@ -170,7 +170,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/top-goals.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/goals.png" width="80%" />
 </figure>
 
 ## Line charts
