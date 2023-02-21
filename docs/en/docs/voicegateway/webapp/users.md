@@ -6,7 +6,6 @@
 
 # Users
 
-*Users* allow you to manage members in your account. You can add a member with the following roles: service provider or account. Each of these roles have different permissions in the Voice Gateway service.
-
+_Users_ allow you to manage members in your account: create new members, edit, or delete existing ones. You can create a member with only the **account** scope, allowing users to perform general operations in the Voice Gateway Self-Service Portal.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-users.png"  width="100%" />

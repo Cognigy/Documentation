@@ -469,8 +469,6 @@ nav:
       - voicegateway/webapp/overview.md
     - Users:
       - voicegateway/webapp/users.md
-    - Settings:
-       - voicegateway/webapp/settings.md 
     - Accounts:
       - voicegateway/webapp/accounts.md
     - Applications:

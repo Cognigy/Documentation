@@ -11,7 +11,6 @@ The Cognigy Voice Gateway Self-Service Portal is a web-based interface that allo
 The Web App has the following entities:
 
 - [Users](users.md)
-- [Settings](settings.md)
 - [Accounts](accounts.md)
 - [Applications](applications.md)
 - [Recent Calls](recent-calls.md)

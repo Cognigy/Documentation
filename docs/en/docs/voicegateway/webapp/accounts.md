@@ -18,13 +18,18 @@ After creating an account, you can edit or delete it.
 
 ## Settings
 
-| Settings | Description |
-| -------- | ----------- |
-| Account name | A unique account name. |
-| Unit | You can choose sessions or minutes. |
-| Max. sessions | A maximum number of sessions. |
-| Licensed sessions | A number of purchased sessions. |
-| SIP Realm | A domain name that SIP devices will register with. |
-| Webhook Secret | A layer of security "signing" the webhook calls. |
-| Registration Webhook| A URL for your Web Application that handles registrations.|
-| Queue Event Webhook | A URL to notify when a member joins or leaves a queue. |
+| Settings                         | Description                                                                                                                  |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Account SID                      | The value generates automatically when the admin creates anaccount                                                           |
+| Account name                     | A unique account name.                                                                                                       |
+| Unit                             | You can choose sessions or minutes.                                                                                          |
+| Max. sessions                    | A maximum number of sessions.                                                                                                |
+| Licensed sessions                | A number of purchased sessions.                                                                                              |
+| SIP Realm                        | A domain name that SIP devices will register with.                                                                           |
+| Webhook Secret                   | A layer of security "signing" the webhook calls.                                                                             |
+| Application for SIP device calls | Select the application which is used to handle incoming calls from SIP users who have registered to the Account's SIP Realm. |
+| Application for SIPREC calls     | Select the application for [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866) calls.                                    |
+| Registration Webhook             | A URL for your Web Application that handles registrations.                                                                   |
+| Queue Event Webhook              | A URL to notify when a member joins or leaves a queue.                                                                       |
+| Account API keys                 | You can generate API key by clicking **Add key**.                                                                            |
+
