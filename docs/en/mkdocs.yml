@@ -60,6 +60,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.45:
+    - release-notes/4.45.md
   - 4.44:
     - release-notes/4.44.md
   - 4.43:
@@ -190,6 +192,7 @@ nav:
       - Generic Voice Nodes:
         - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
         - ai/flow-nodes/generic-voice-nodes/play-url.md
+        - ai/flow-nodes/generic-voice-nodes/send-metadata.md
         - ai/flow-nodes/generic-voice-nodes/transfer.md
         - ai/flow-nodes/generic-voice-nodes/hang-up.md
         - ai/flow-nodes/generic-voice-nodes/barge-in-config.md
@@ -206,6 +209,8 @@ nav:
         - ai/flow-nodes/vg/send-metadata.md
         - ai/flow-nodes/vg/set-session-config.md
         - ai/flow-nodes/vg/transfer.md
+        - ai/flow-nodes/vg/call-recording.md
+
       - Audio Codes:
         - ai/flow-nodes/audiocodes/audiocodes.md
         - ai/flow-nodes/audiocodes/send-message.md

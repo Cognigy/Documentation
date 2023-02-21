@@ -55,6 +55,7 @@ Multiple text messages can be added for conversational variation. When multiple 
 
 ???+ warning "Using Multiple Text Outputs"
     By configuring multiple messages in a text say node, only one message will be delivered per activation of the node. An additional say node must be configured in order to send two text messages at once.
+
 #### Text Options
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37689d0-SayOptions.jpg" width="100%" />
@@ -201,6 +202,10 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
 
 To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
+
+!!! warning
+
+    Cognigy.AI only supports Adaptive Card schema versions 1.2 and earlier, so using the latest versions may cause issues. We recommend using a supported version for better compatibility.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
@@ -600,3 +605,7 @@ Webchat with button "Show URL in new tab".
 </figure>
 
 URL has been opened in a new tab.
+
+## AI-enhanced output
+
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.

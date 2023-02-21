@@ -24,6 +24,8 @@ The input object is passed to the agent's [Flow]({{config.site_url}}ai/resources
 ## Properties
 <div class="divider"></div>
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+
 The Input object contains the following properties (for text input).
 
 | Key |	Description |
@@ -50,7 +52,7 @@ The Input object contains the following properties (for text input).
 |completedGoals|	An object containing the names of the goals completed on execution of the flow logic.|
 |execution|	The number of messages recieved so far in the current session.|
 |data|	The data object that was sent as a payload to the user input. This object can contain a "request" property that stores the original request from the external channel, e.g. If a Facebook endpoint is used, input.data.request will contain the original HTTP request content from Facebook.|
-|understood|	A boolean flag which determines whether the NLU understood the users message. The flag is set to true when an intent/slot was found or if the type of sentence was pAnswer, nAnswer or Greeting - otherwise the flag will be false.|
+|understood|	A boolean flag which determines whether the NLU understood the users message. An input is counted as understood if an Intent or a Slot is found. <br> The input is marked as understood via the Code Node or Overwrite Analytics Node, or the type of sentence is pAnswer, nAnswer, or Greeting (if Confirmation Word logic is activated). In all other cases, it is marked as not understood, except if there is an active handover (without activation of an agent Assist Flow) or a message has been explicitly marked as `Don't count` or `Null`.|
 |language|	The locale language that was used to process the input message.|
 |traceId|	A unique identifier for the specific user input.|
 |intentLevel|	The matched Intent, per [Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/) level.|

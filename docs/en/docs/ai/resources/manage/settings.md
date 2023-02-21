@@ -108,3 +108,8 @@ If disabled, analytics data will not be collected and stored for the agent.
 ### Allow data only
 
 If disabled, analytics data will not be collected for messages with only a JSON data payload and no text input.
+
+## Generative.AI
+
+To set up the connection between Cognigy.AI and the Generative AI Provider, read the [Generative AI](../../generative-ai.md#prerequisites) article.
+

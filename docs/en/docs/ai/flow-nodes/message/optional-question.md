@@ -102,3 +102,7 @@ When an Optional Question is "active", meaning an answer is being waited for, in
     "forgetQuestionThreshold": 3
 }
 ``` 
+
+## AI-enhanced output
+
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
