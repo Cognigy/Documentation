@@ -8,9 +8,9 @@
 
 The **Organisation Details** contains an analytics overview feature in a section called _Billable Conversations_, that provides a report to platform administrators with insight into the **volume of conversations** that have occurred across all agents in an organization.
 
-When the [user session](../analytics/analytics-concepts.md#sessions) has more than 50 inputs, it devides into a few conversations. One conversation contains only 50 [inputs](../analytics/analytics-concepts.md#inputs). If the session has 51 inputs, the system counts them as two conversations. Each conversation is charged separately.
-
 ## Access Billable Conversations
+
+The chart visualizes the number of [billable conversations](../../billing.md).
 
 To access the **Billable Conversations** report, select the **User Menu** icon from the top right of any page and click on the **Organisation Details** option.
 
