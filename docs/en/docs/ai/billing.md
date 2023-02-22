@@ -63,7 +63,7 @@ Contact your administrator if you want to change this time zone setting.
 
 ## Additional billing 
 
-You can be charged if you have enabled the [Transformer](../ai/endpoints/transformers/transformers.md) setting and Cognigy.AI returns a `falsy` value (for example, `null`, `undefined`, or `false`) from an Input, Inject, or Notify Transformer. In that case, Cognigy.AI will stop the execution at this point and count it as one input of a conversation.
+You are charged if you have enabled a [Transformer](../ai/endpoints/transformers/transformers.md) in an Endpoint, and Cognigy.AI returns a `falsy` value (for example, `null`, `undefined`, or `false`) from an Input, Inject, or Notify Transformer. In that case, Cognigy.AI will stop the execution at this point and count it as one input of a conversation.
 
 Example: 50 user inputs + 1 Transformer `falsy` operation -> 51 inputs.
 
