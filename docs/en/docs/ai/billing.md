@@ -61,8 +61,12 @@ The time zone settings determine the start of a new day and, as a result, the be
 
 ## Additional billing 
 
-You can be charged if you have enabled the [Transformer](../ai/endpoints/transformers/transformers.md) setting and Cognigy.AI returns a `falsy` value (for example, `null`, `undefined`, or `false`) from an Input, Inject, or Notify Transformer. In that case, Cognigy.AI will stop the execution at this point and count it as one input of a conversation.
+If you are using the following Endpoint [Transformers](../ai/endpoints/transformers/transformers.md):
 
-Example: 50 user inputs + 1 Transformer `falsy` operation -> 51 inputs.
+- Input Transformer
+- Inject Transformer
+- Notify Transformer
+  
+and you return a `falsy` value from them (for example `null`, `undefined` or `false`), the message processing will be terminated in Cognigy system, and no Flow will be executed. In this case, Cognigy will charge 1 conversation per 50 Transformer executions.
 
-Billing: it will be charged as 2 conversations.
+Example: You built an Endpoint which only uses the Input Transformer to implement a custom Handover Provider and you are always returning a `falsy` value of `null` from it. 50 Input Transformers will be executed for user inputs -> 1 conversation will be charged.
