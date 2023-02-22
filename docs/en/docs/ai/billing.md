@@ -10,7 +10,7 @@ Cognigy has only one billable unit - a *conversation*. A billed conversation is 
 
 The billed conversation begins when a user sends their initial *input*, which can be either a chat or voice message.
 
-The conversation ends for one of the following reasons:
+The conversation will be ended for any of the following reasons:
 
 - The user left a chat.
 - The human agent resolved a conversation.
