@@ -17,7 +17,7 @@ The conversation will be ended for any of the following reasons:
 - The conversation has more than 50 user inputs.
   The 51st input will begin a new conversation.
 - The conversation begins on one day and ends on another.
-  The user input on another day starts a new conversation.  
+  The user input sent on a different day will begin a new conversation.  
 
 ## Common scenarios
 
