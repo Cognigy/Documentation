@@ -1,10 +1,10 @@
 ---
- title: "Billing" 
+ title: "Cognigy Billing Policy" 
  slug: "billing" 
  hidden: false 
 ---
 
-# Billing
+# Cognigy Billing Policy
 
 Cognigy has only one billable unit - a *conversation*. A billed conversation is an interaction between a user and a virtual or human agent, and represents one unit of consumption.
 
