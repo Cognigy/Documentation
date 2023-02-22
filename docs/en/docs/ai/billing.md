@@ -47,7 +47,9 @@ Example: 49 user inputs.
 
 Billing: It will be charged as 2 conversations.
 
-The time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
+The server time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
+
+Contact your administrator if you want to change this time zone setting.
 
 ### Scenario 4
 
