@@ -15,7 +15,7 @@ The conversation will be ended for any of the following reasons:
 - The user left a chat.
 - The human agent resolved a conversation.
 - The conversation has more than 50 user inputs.
-  The 51 input starts a new conversation.
+  The 51st input will begin a new conversation.
 - The conversation begins on one day and ends on another.
   The user input on another day starts a new conversation.  
 
