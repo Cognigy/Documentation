@@ -10,14 +10,14 @@ Cognigy has only one billable unit - a *conversation*. A billed conversation is 
 
 The billed conversation begins when a user sends their initial *input*, which can be either a chat or voice message.
 
-The conversation ends for one of the following reasons:
+The conversation will be ended for any of the following reasons:
 
 - The user left a chat.
 - The human agent resolved a conversation.
 - The conversation has more than 50 user inputs.
-  The 51 input starts a new conversation.
+  The 51st input will begin a new conversation.
 - The conversation begins on one day and ends on another.
-  The user input on another day starts a new conversation.  
+  The user input sent on a different day will begin a new conversation.  
 
 ## Common scenarios
 
@@ -47,7 +47,9 @@ Example: 49 user inputs.
 
 Billing: It will be charged as 2 conversations.
 
-The time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
+The server time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
+
+Contact your administrator if you want to change this time zone setting.
 
 ### Scenario 4
 
@@ -57,7 +59,9 @@ Example: 78 user inputs.
 
 Billing: It will be charged as 2 conversations.
 
-The time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
+The server time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
+
+Contact your administrator if you want to change this time zone setting.
 
 ## Additional billing 
 
