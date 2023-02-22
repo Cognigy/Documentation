@@ -369,6 +369,7 @@ nav:
       - ai/installation/migration/contents.md
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
+  - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
     - ai/developer-guides/api-reference.md
@@ -390,6 +391,7 @@ nav:
   - insights/transcript-explorer.md
   - insights/message-explorer.md
   - insights/download-report.md
+  - insights/glossary.md
   - Release Notes:  
     - insights/release-notes/release-notes.md  
 
