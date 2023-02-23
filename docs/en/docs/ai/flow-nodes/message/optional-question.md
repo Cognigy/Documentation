@@ -1,6 +1,6 @@
 ---
- title: "optional-question" 
- slug: "Optional Question" 
+ title: "Optional Question" 
+ slug: "optional-question" 
  hidden: false 
 ---
 # Optional Question

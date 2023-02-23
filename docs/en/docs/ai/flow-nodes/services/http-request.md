@@ -1,6 +1,6 @@
 ---
- title: "http-request" 
- slug: "HTTP Request" 
+ title: "HTTP Request" 
+ slug: "http-request" 
  hidden: false 
 ---
 # HTTP Request
@@ -44,7 +44,7 @@ Each request method has certain fields which it shares with the other methods. T
     - Cache Expiry
 ### URL
 ---
-The URL to the targeted resource.
+The URL to the targeted resource: `https://api-endpoint.com/resource`.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b29e843-http-screenshot.jpg" width="100%" />

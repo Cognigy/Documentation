@@ -1,6 +1,6 @@
 ---
- title: "datepicker" 
- slug: "Datepicker" 
+ title: "Datepicker" 
+ slug: "datepicker" 
  hidden: false 
 ---
 # Datepicker
