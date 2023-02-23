@@ -236,7 +236,7 @@ Code Node enables a Flow creator to execute custom JavaScript or TypeScript code
 
 Cognigy Voice Gateway Nodes expose functionality provided by Cognigy Voice Gateway directly in the Flow Editor.
 
-### [Other Nodes](./other-nodes/overview.md)
+### [Other Nodes](./other-nodes/other-nodes.md)
 
 Nodes that did not fit into any category above.
  
