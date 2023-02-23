@@ -195,7 +195,7 @@ This sections lets you configure the HTTP request to be asynchronous and optiona
 Cognigy.AI has a built-in MongoDB connector that can be used directly within the Flow. The Node exposes a number of requests:
 
 
-## [Microsoft SQL Nodes](./services/ms-sql.md)
+### [Microsoft SQL Nodes](./services/ms-sql.md)
 
 Cognigy.AI has a built-in Microsoft SQL connector that can be used directly within the Flow. The Node exposes a number of requests:
 
@@ -229,14 +229,17 @@ Can be used to explicitly execute **Cognigy's NLU** at a certain point in the fl
 This Node can be used to create a Slot based on a **Regex Pattern**. When the pattern is detected, a slot will be published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object.
 
 ## [Code Node](./code/code.md)
+<div class="divider"></div>
 
 Code Node enables a Flow creator to execute custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the node is saved. If the transpilation fails the code will be saved and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code.
 
-### [Voice Gateway Nodes](./vg/voice-gateway.md)
+## [Voice Gateway Nodes](./vg/voice-gateway.md)
+<div class="divider"></div>
 
 Cognigy Voice Gateway Nodes expose functionality provided by Cognigy Voice Gateway directly in the Flow Editor.
 
-### [Other Nodes](./other-nodes/other-nodes.md)
+## [Other Nodes](./other-nodes/other-nodes.md)
+<div class="divider"></div>
 
 Nodes that did not fit into any category above.
  
