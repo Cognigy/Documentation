@@ -10,7 +10,7 @@
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech service providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
-You can create more than a speech service.
+You can create more than one speech service.
 
 After creating a speech service, you can edit or delete it.
 
