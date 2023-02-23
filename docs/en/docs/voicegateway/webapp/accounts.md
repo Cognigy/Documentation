@@ -20,7 +20,7 @@ After creating an account, you can edit or delete it.
 
 | Settings                         | Description                                                                                                                  |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Account SID                      | The value generates automatically when the admin creates anaccount                                                           |
+| Account SID                      | The value generates automatically when the admin creates an account                                                           |
 | Account name                     | A unique account name.                                                                                                       |
 | Unit                             | You can choose sessions or minutes.                                                                                          |
 | Max. sessions                    | A maximum number of sessions.                                                                                                |
