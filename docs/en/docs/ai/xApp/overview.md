@@ -27,21 +27,39 @@ An xApp Session can be accessed via the URL and be initialized via the [Init xAp
 
 The Shell Page has a set of configurable built-in screens. These default screens can be used to interact with end users, for example, when the xApp content is not displayed. These default screens are part of the Shell Page, which holds the connection to the Cognigy.AI backend.
 
+#### Connection Screen
+
+The Connection Screens are shown while the real-time connection to the backend is re-established. The default Connection Screen can be replaced with a custom-built xApp Page.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/images/connection-screen" width="80%" />
+</figure>
+
 #### PIN Screen
 
 The PIN Screen prompts the end user to enter the xApp Session PIN. The user needs to provide the correct PIN to access the xApp Pages. Requesting a PIN to enter the session is optional.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/pin-screen" width="80%" />
+</figure>
 
 #### xApp Screen
 
 The xApp Screens are shown when the xApp Page is launched, fails to launch, encounters an Error, and is halted.
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/images/error-screen" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/images/success-screen" width="80%" />
+</figure>
+
 #### Intermediate Screen
 
 The Intermediate Screens are displayed to the end user while no xApp Page is configured to be displayed. The default Intermediate Screen can be replaced with a custom-built xApp Page.
 
-#### Connection Screen
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/images/intermediate-screen" width="80%" />
+</figure>
 
-The Connection Screens are shown while the real-time connection to the backend is re-established. The default Connection Screen can be replaced with a custom-built xApp Page.
 
 ## How it Works
 
