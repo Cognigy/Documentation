@@ -29,7 +29,7 @@ Additionally, Voice Gateway provides PCAP files which can be downloaded in the d
 | direction            | Determines whether a call was inbound or unbound.                                                                                       |
 | duration             | The duration of the call in seconds.                                                                                                    |
 | from                 | A phone number of the party who made the call.                                                                                          |
-| host                 | ?                                                                                                                                       |
+| host                 | An SBC SIP server that handled the incoming calls.                                                                                      |
 | remote_host          | Displays the IP address of carrier/SIP trunk.                                                                                           |
 | service_provider_sid | A unique identifier for the service provider.                                                                                           |
 | sip_callid           | A unique session identifier that you can use for several purposes, including call logging and billing correlation.                      |
