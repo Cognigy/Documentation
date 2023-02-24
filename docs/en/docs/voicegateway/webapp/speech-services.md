@@ -14,4 +14,7 @@ You can create more than one speech service.
 
 After creating a speech service, you can edit or delete it.
 
+!!! warning
+    You can't edit or delete shared speech services added by an admin or service provider.
+
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png"  width="100%" />
