@@ -63,7 +63,7 @@ Shows the top-rated number of intents used, with a maximum of 6 intents shown in
 Source table:
 
 ```txt
-|  Intent           | Total number  | 
+|  Intent           | Total number  |
 | ----------------- | ------------- |
 | Pizza             |     25        |
 | Order Pizza       |     10        |
@@ -111,7 +111,7 @@ A multi-line chart consisting of three lines:
 - Outbound - the number of outbound calls on the timescale
 - All - the number of all calls, summing up inbound and outbound, on a timescale.
 
-A red horizontal line represents the customer's call limit. This line is shown if the information is present.
+A red horizontal line represents the customer's call limit. This line is shown if the limit is set.
 
 Source table:
 
@@ -146,7 +146,7 @@ Shows the percentage of people who left the call longer than 5s of being in the 
 Source table:
 
 ```txt
-|   Date    | Left after 5s |   Total      |
+|   Date    | Left after 5s |   Total     |
 | --------- | ------------ | ------------ |
 | 2/20/2023 |      7       |      7       |
 | 2/21/2023 |      3       |      6       |
@@ -162,8 +162,8 @@ Result:
 
 ```txt
 |   Date    |       %      |
-| --------- | ------------ | 
-| 2/20/2023 |  100         |  
+| --------- | ------------ |
+| 2/20/2023 |  100         |
 | 2/21/2023 |  50          |
 | 2/22/2023 |  0           |
 | 2/23/2023 |  42.85714286 |
@@ -180,13 +180,13 @@ Shows the time (in milliseconds) it takes for a voice agent to respond to a text
 Source table:
 
 ```txt
-|   Date    | Duration  | 
-| --------- | --------- | 
-| 2/23/2023 |   13      | 
-| 2/22/2023 |   18      | 
-| 2/21/2023 |   15      | 
-| 2/20/2023 |   13      |  
-| 2/19/2023 |   14      | 
+|   Date    | Duration  |
+| --------- | --------- |
+| 2/23/2023 |   13      |
+| 2/22/2023 |   18      |
+| 2/21/2023 |   15      |
+| 2/20/2023 |   13      |
+| 2/19/2023 |   14      |
 ```
 Result:
 
@@ -202,13 +202,13 @@ The calculation excludes calls abandoned earlier.
 Source table:
 
 ```txt
-|   Date    | Transferred calls | Total calls | 
-| --------- | ----------------- | ----------- | 
-| 2/23/2023 |        3          |    6        | 
-| 2/22/2023 |        3          |    7        | 
-| 2/21/2023 |        2          |    4        | 
-| 2/20/2023 |        0          |    2        | 
-| 2/19/2023 |        3          |    7        | 
+|   Date    | Transferred calls | Total calls |
+| --------- | ----------------- | ----------- |
+| 2/23/2023 |        3          |    6        |
+| 2/22/2023 |        3          |    7        |
+| 2/21/2023 |        2          |    4        |
+| 2/20/2023 |        0          |    2        |
+| 2/19/2023 |        3          |    7        |
 ```
 Calculation: `(Number of transferred calls / Total number of calls) * 100`
 
@@ -217,13 +217,13 @@ Example: `(3 / 6) * 100 = 50%`
 Result:
 
 ```txt
-| Date      | Transferred calls | 
+| Date      | Transferred calls |
 | --------- | ----------------- |
-| 2/19/2023 | 50                | 
-| 2/20/2023 | 42.85714286       |  
-| 2/21/2023 | 50                | 
-| 2/22/2023 | 0                 | 
-| 2/23/2023 | 42.85714286       | 
+| 2/19/2023 | 50                |
+| 2/20/2023 | 42.85714286       |
+| 2/21/2023 | 50                |
+| 2/22/2023 | 0                 |
+| 2/23/2023 | 42.85714286       |
 ```
 
 <figure>
