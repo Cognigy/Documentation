@@ -12,22 +12,23 @@ The Calls dashboard displays data from the Voice Gateway service. This dashboard
 
 ### Active calls
 
-The data for the number of currently active calls is pulled for the previous 15 minutes and updated every 30 seconds.
+Indicates the data for the number of currently active calls is pulled for the previous 15 minutes and updated every 30 seconds.
 
 ### Total number of calls
 
-The total number of calls that occurred in the selected timeframe.
+Indicates the total number of calls that occurred in the selected timeframe.
 
 ### Transferred calls rate
 
-The percentage of calls that were successfully transferred to a virtual agent.
+Indicates the percentage of calls that were successfully transferred to a virtual agent.
 
 Calculation: `(successful transfers / total calls) x 100%`
+
 Example: `(600 / 1000) x 100% = 60%`
 
 ### Total call duration
 
-The total duration of calls in the selected timeframe.
+Indicates the total duration of calls in the selected timeframe.
 
 Calculation: `duration of call 1 + duration of call 2 + duration of call 3 + ... + duration of call n`
 
@@ -35,7 +36,7 @@ Calculation: `duration of call 1 + duration of call 2 + duration of call 3 + ...
 
 ### Call ended by
 
-The percentage of calls that were ended by the bot or by the user.
+Shows the percentage of calls that were ended by the virtual agent or by the user.
 
 Source table:
 
@@ -43,9 +44,9 @@ Source table:
 |   Date    |   Actor    | Number of calls |
 | --------  | ---------- | --------------- |
 | 2/19/2023 |    user    |      5          |
-| 2/20/2023 |    bot     |      5          |
+| 2/20/2023 |    agent   |      5          |
 | 2/21/2023 |    user    |      5          |
-| 2/22/2023 |    bot     |      2          |
+| 2/22/2023 |    agent   |      2          |
 | 2/23/2023 |    user    |      4          |
 ```
 
@@ -57,7 +58,7 @@ Result:
 
 ### Top Intents
 
-Displays the top-rated number of intents used, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
+Shows the top-rated number of intents used, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
 
 Source table:
 
@@ -80,7 +81,7 @@ Result:
 
 ### Total call duration
 
-The total duration of calls in the selected timeframe.
+Shows the total duration of calls in the selected timeframe.
 
 Source table:
 
@@ -103,7 +104,7 @@ Result:
 
 ### Total number of calls
 
-Indicates the number of inbound and outbound calls and summarizes them in a multi-line chart.
+Shows the number of inbound and outbound calls and summarizes them in a multi-line chart.
 
 A multi-line chart consisting of three lines:
 - Inbound -  the number of inbound calls on the timescale
@@ -210,7 +211,8 @@ Source table:
 | 2/19/2023 |        3          |    7        | 
 ```
 Calculation: `(Number of transferred calls / Total number of calls) * 100`
-Example: (3 / 6) * 100 = 50%
+
+Example: `(3 / 6) * 100 = 50%`
 
 Result:
 
