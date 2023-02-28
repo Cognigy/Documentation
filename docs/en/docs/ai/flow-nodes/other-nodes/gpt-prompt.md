@@ -1,6 +1,6 @@
 ---
 title: "GPT Prompt"
-slug: "complete-text"
+slug: "gpt-prompt"
 hidden: false
 ---
 
@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.46(Beta)-purple.svg)](../../../release-notes/release-notes.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/complete-text.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-prompt.png" width="100%" />
 </figure>
 
 ## Description
