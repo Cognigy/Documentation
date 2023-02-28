@@ -1,12 +1,12 @@
 ---
-title: "Complete Text"
+title: "GPT Prompt"
 slug: "complete-text"
 hidden: false
 ---
 
-# Complete Text (Beta)
+# GPT Prompt (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44(Beta)-purple.svg)](../../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.46(Beta)-purple.svg)](../../../release-notes/release-notes.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/complete-text.png" width="100%" />
@@ -15,7 +15,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-The Complete Text Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text. 
+The GPT Prompt Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text. 
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
