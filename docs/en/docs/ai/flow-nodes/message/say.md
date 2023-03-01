@@ -36,7 +36,7 @@ If there is a Channel-specific configuration for the current Channel, this confi
 ## Output Types
 <div class="divider"></div>
 
-The AI Channel allows for the configuration of different **Output Types**:
+The AI Channel allows for the configuration of different **Output Types**. Not all [endpoints](../../endpoints/overview.md) can correctly convert your content to the desired output type. Before configuration, [check the compatibility](../../endpoints/content-conversion.md) of the output type with the endpoint.
 
 ### Text
 <figure>
