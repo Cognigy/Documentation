@@ -31,27 +31,43 @@ The Shell Page has a set of configurable built-in screens. These default screens
 
 The PIN Screen prompts the end user to enter the xApp Session PIN. The user needs to provide the correct PIN to access the xApp Pages. Requesting a PIN to enter the session is optional.
 
-<img class="image-center" src="{{config.site_url}}ai/images/pin-screen.png" width="80%" />
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/pin-screen.png" width="80%" />
+    <figcaption>xApp Pin Screen</figcaption>
+</figure>
 
 #### xApp Screen
 
 The xApp Screens are shown when the xApp Page is launched, fails to launch, encounters an Error, and is halted.
 
-<img class="image-center" src="{{config.site_url}}ai/images/success-screen.png" width="80%"> 
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/success-screen.png" width="80%">
+    <figcaption>xApp Success Screen</figcaption>
+</figure>
 
-<img class="image-center" src="{{config.site_url}}ai/images/error-screen.png" width="80%">
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/error-screen.png" width="80%">
+    <figcaption>xApp Error Screen</figcaption>
+</figure>
+
 
 #### Intermediate Screen
 
 The Intermediate Screens are displayed to the end user while no xApp Page is configured to be displayed. The default Intermediate Screen can be replaced with a custom-built xApp Page.
 
-<img class="image-center" src="{{config.site_url}}ai/images/intermediate-screen.png" width="80%" />
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/intermediate-screen.png" width="80%" />
+    <figcaption>Intermediate Screen</figcaption>
+</figure>
 
 #### Connection Screen
 
 The Connection Screens are shown while the real-time connection to the backend is re-established. The default Connection Screen can be replaced with a custom-built xApp Page.
 
-<img class="image-center" src="{{config.site_url}}ai/images/connection-screen.png" width="80%" />
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/connection-screen.png" width="80%" />
+    <figcaption>Connection Screen</figcaption>
+</figure>
 
 ## How it Works
 
