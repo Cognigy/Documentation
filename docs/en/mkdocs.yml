@@ -293,6 +293,7 @@ nav:
   # - ai/xApp/api.md 
   - Endpoints:
     - ai/endpoints/overview.md
+    - ai/endpoints/content-conversion.md
     - ai/endpoints/data-protection-and-analytics.md
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
