@@ -13,4 +13,4 @@ Nodes that did not fit into any category above:
 - [Set Rating](set-rating.md)
 - [Set Translation](set-rating.md)
 - [Request Rating](request-rating.md)
-- [GPT Prompt]()gpt-prompt.md
+- [GPT Prompt](gpt-prompt.md)
