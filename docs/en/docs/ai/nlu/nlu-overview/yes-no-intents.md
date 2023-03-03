@@ -32,9 +32,13 @@ Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/q
 
 To set up this feature, do the following:
 
-1. [Select a proper locale or use a default one](#select-a-locale)
-2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
-3. [Test your Flow by using Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+- [Yes/No Intents](#yesno-intents)
+    - [Select a Locale](#select-a-locale)
+  - [Use Yes/No Intents for Specific or All Flows](#use-yesno-intents-for-specific-or-all-flows)
+    - [Project-level settings](#project-level-settings)
+    - [Flow-level settings](#flow-level-settings)
+  - [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+  - [FAQ](#faq)
 
 ### Select a Locale
 
@@ -91,6 +95,9 @@ To use Yes/No Intents for a specific Flow, do the following:
 6. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
 
 ## Test your Flow by using the Interaction Panel
+
+!!! note
+    Yes/No Intents are not supported in the [Expert mode](../../tools/interaction-panel/interaction-panel.md#expert-mode) setting.
 
 Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../tools/interaction-panel/context.md):
 
@@ -184,10 +191,8 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
       ```
      
 === "Fallback Reject Intent"
-  
-    Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the `yesNoIntentResults` has the default values as shown below.
 
-    ```json
+      ```json
       "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": null,
@@ -214,10 +219,10 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
       "mode": "TextOnly",
       "type": "Statement"
       ```  
-Yes/No Intents are evaluated independently of regular Intents and do not overwrite the existing fields for Intents in the input object. Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`. 
 
-!!! note
-    Yes/No Intents are not supported in the [Expert mode](../../tools/interaction-panel/interaction-panel.md#expert-mode) setting.
+Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the `yesNoIntentResults` has the default values as shown on the **Fallback Reject Intent** tab above.
+
+Yes/No Intents are evaluated independently of regular Intents and do not overwrite the existing fields for Intents in the input object. Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`. 
 
 ## FAQ
 
