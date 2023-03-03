@@ -6,9 +6,9 @@
 
 # Yes/No Intents
 
-The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
+The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
 
-In the previous **Confirmation words** feature, you have a low range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps a virtual agent recognize different variations of `yes` and `no` intents.
+In the previous the [Confirmation words](../../resources/manage/settings.md#general-flow-logic--flow-settings) feature, you have a low range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps a virtual agent recognize different variations of `yes` and `no` Intents.
 
 Before using Yes/No Intents:
 
@@ -32,72 +32,77 @@ Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/q
 
 To set up this feature, do the following:
 
-1. Select a proper locale or use a default one.
-2. Choose whether you want to use local for specific or all Flows.
-3. Test your Flow by using Interaction Panel.
+- [Yes/No Intents](#yesno-intents)
+    - [Select a Locale](#select-a-locale)
+  - [Use Yes/No Intents for Specific or All Flows](#use-yesno-intents-for-specific-or-all-flows)
+    - [Project-level settings](#project-level-settings)
+    - [Flow-level settings](#flow-level-settings)
+  - [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+  - [FAQ](#faq)
 
 
-### Select locale
+### Select a Locale
 
 A separate Yes/No Intents model is trained for each locale configured for the project. Therefore, the Yes/No Intents training is configured separately for each locale. The Universal locale has preinstalled English example sentences.
 
 To configure a locale, do the following:
 
 1. To see the project's configured locales, click **Manage > Localization**.
-2. Select a locale and click ![clock](images/icons/vertical-ellipsis.svg) > **Edit Yes/No Intents**.
-3. In the pane, you can configure intents for the current locale:
-      - Yes Intent - by default, the setting is toggled on. When the setting is toggled on, the Intent does not include in the building model process.
-      - No Intent - by default, the setting is toggled on. When the setting is toggled on, the Intent does not include in the building model process.
-      - Reject Intent - by default, the setting is toggled on. You need to add examples manually. When the setting is toggled on, the Intent does not include in the building model process.
-4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md) for a specific Intent. That improves the accuracy of the virtual agents's responses, ensuring that users receive the correct information or assistance they need.
+2. Select a locale and click ![ellipsis](../images/icons/vertical-ellipsis.svg), then **Edit Yes/No Intents**.
+3. In the **Edit Yes/No Intents** pane, you can configure Intents for the current locale:
+      - **Yes Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent does not include in the building model process.
+      - **No Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent does not include in the building model process.
+      - **Reject Intent** — by default, the setting is toggled on. You need to add examples manually. When the setting is toggled off, the Intent does not include in the building model process.
+4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). These rules improve the accuracy of the virtual agents's responses, ensuring that users receive the correct information or assistance they need.
 5. Click **Save & Build** to build a model. The Yes/No models always build when you edit and save settings. 
 
-## Use Yes/No Intents Features for Specific or All Flows
+## Use Yes/No Intents for Specific or All Flows
 
-You can use this feature in the following cases:
+You can use the Yes/No Intents feature for:
 
-- [for specific Flow](#flow-level-settings) 
-- [for all flows in the virtual agent project](#project-level-settings)
+- [a specific Flow](#flow-level-settings) 
+- [all Flows in the virtual agent project](#project-level-settings)
 
 ### Project-level settings
 
-To use Yes/No intents for all flows, do the following:
+To use Yes/No Intents for all Flows, do the following:
 
 1. In the left-side menu, click **Manage > Settings**.
-2. On the Settings page, click **NLU Settings**. 
-3. In the **General Flow Logic** section, select one of the following options from the 
-**Yes/No Logic** list:
-     - Confirmation Words - disables the Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No intents feature. The option is turned on by default.
-     - Yes/No Intents – with extended rules - enables the standard Confirmation Words logic first. If the standard logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
-     - Yes/No Intents - The Yes/No Intents model is evaluated for every input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject intents from the Yes/No Intents model are triggered.
-1. If you selected Yes/No Intents – with extended rules or Yes/No Intents, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No intents to trigger. A Yes, No, or Reject Intent will only be triggered if the intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales.
-You can change this value for a specific flow.
-1. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
+2. On the **Settings** page, click **NLU Settings**. 
+3. In the **General Flow Logic** section, select one of the following options from the **Yes/No Logic** list:
+     - **Confirmation Words** — disables the Yes/No Intents feature. Confirmation wordsare used the same way as before the Yes/No Intents feature. The option is turned on by default.
+     - **Yes/No Intents** — with extended rules - enables the standard Confirmation words logic first. If the standard logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
+     - **Yes/No Intents** — enables the Yes/No Intents model which is evaluated for every input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
+4. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales.
+You can change this value for a specific Flow.
+5. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
 
-If you have set settings at the project level but want to change them for certain flows, you should go to the Flow-level settings.
+If you have set settings at the project level but want to change them for certain Flows, you should go to the Flow-level settings.
 
 ### Flow-level settings
 
-By default, all flows inherit the **Yes/No Logic** and the **Yes/No threshold** settings from the project-level configuration. You can override these settings for a specific flow.
+By default, all Flows inherit the **Yes/No Logic** and the **Yes/No threshold** settings from the project-level configuration. You can override these settings for a specific Flow.
 
-To use Yes/No intents for a specific flow, do the following:
+To use Yes/No Intents for a specific Flow, do the following:
 
 1. Open the existing Flow.
 2. In the upper-right corner of the **Flow Editor** page, select **Settings**.
 3. On the **Configuration** tab, in **General Flow Logic** activate checkbox near the **Yes/No Logic** setting.
 4. From the **Yes/No Logic** list, select one of the following options:
-     - Confirmation Words - disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No intents feature. The option is turned on by default.
-     - Yes/No Intents – with extended rules - enables the standard Confirmation Words logic first. If the standard logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
-     - Yes/No Intents - The Yes/No Intents model is evaluated for every input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject intents from the Yes/No Intents model are triggered.
-5. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
+     - **Confirmation Words** — disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is turned on by default.
+     - **Yes/No Intents** — with extended rules - enables the standard Confirmation Words logic first. If the standard logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
+     - **Yes/No Intents** — enables the Yes/No Intents model which is evaluated for every input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
+5. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales in the current Flow.
+6. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
 
-## Test your Flow by using Interaction Panel
+## Test your Flow by using the Interaction Panel
 
 Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../tools/interaction-panel/context.md):
 
-1. In the exciting Flow, open the Interaction Panel.
+1. In the exciting Flow, open the Interaction Panel by clicking ![interaction-pannel](../images/icons/interaction-pannel.svg) **Chat with your Agent** in the upper-right corner of the page.
 2. Run a Flow.
-3. On the INFO tab, select Input to view JSON. In the `yesNoIntentResults` object, you will see the result of triggering:
+3. On the **INFO** tab, select **Input** to view JSON. In the `yesNoIntentResults` object, you will see the result of triggering:
+
 
 === "Yes Intent"
 
@@ -124,7 +129,7 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
       "type": "pAnswer"
       ```
 
-=== "No intent"
+=== "No Intent"
 
       ```json
       "nlu": {
@@ -151,13 +156,12 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
         }
       },
       "mode": "TextOnly",
-      "type": "nAnswer",
+      "type": "nAnswer"
       ```
-
-=== "Reject intent"
-    
-     ```json
-     "nlu": {
+=== "Reject Intent"
+      
+      ```json
+      "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": "rejectIntent",
             "finalIntentScore": 0.7307951831435443,
@@ -177,18 +181,18 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
                   "name": "noIntent",
                   "score": 0.007946727310282035
                   }
-            ]
-        }
+               ]
+            }
       },
       "mode": "TextOnly",
-      "type": "Statement",
+      "type": "Statement"
       ```
      
-=== Null
-    
-    Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the “yesNoIntentResults” has the default values as shown below.
+=== "Fallback Reject Intent"
+  
+    Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the `yesNoIntentResults` has the default values as shown below.
 
-      ```json
+    ```json
       "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": null,
@@ -213,48 +217,46 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
          }
       },
       "mode": "TextOnly",
-      "type": "Statement",
+      "type": "Statement"
       ```  
+Yes/No Intents are evaluated independently of regular Intents and do not overwrite the existing fields for Intents in the input object. Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`. 
 
-
-Yes/No Intents are evaluated independently of regular intents and do not overwrite the existing fields for intents in the input object. Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`. 
-
+!!! note
+    Yes/No Intents are not supported in the [Expert mode](../../tools/interaction-panel/interaction-panel.md#expert-mode) setting.
 
 ## FAQ
 
-**Q1**: What happens if the **Yes/No Logic** is set to **Yes/No Intents**, but both the Yes and No intents have been individually disabled in the locale settings?
+**Q1**: What happens if the **Yes/No Logic** is set to **Yes/No Intents**, but both the Yes and No Intents have been individually disabled in the locale settings?
 
 **A1**: The standard **Confirmation Words** logic is used.
 
-**Q2**: What happens when I enable the Expert mode in the Interaction Panel? 
+**Q2**: I don’t see Yes/No Intents in the Intent Trainer. Why? 
 
-**A2**: Nothing yet. Yes/No Intents are not supported in the Expert mode yet. 
+**A2**: Yes/No Intents support has not been implemented in the Intent Trainer. 
 
-**Q3**: I don’t see Yes/No Intents in the Intent Trainer. Why? 
+**Q3**: I don’t see the traffic lights and training feedback when I train Yes/No Intents. Why?
 
-**A3**: Yes/No Intents support has not been implemented in the Intent Trainer. 
+**A3**: The traffic light system has not yet been implemented for Yes/No Intents. 
 
-**Q4**: I don’t see the traffic lights and training feedback when I train Yes/No Intents. Why?
+**Q4**: How are **Yes/No Intents** evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
 
-**A4**: The traffic light system has not yet been implemented for Yes/No Intents. 
+**A4**: Yes/No Intent scoring behavior differs only if the Yes/No Intent settings are different in the two Flows. 
 
-**Q5**: How are **Yes/No Intents** evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
+For example:
 
-**A5**: Yes/No Intent scoring behavior differs only if the Yes/No Intent settings are different in the two flows. For example:
+Prerequisites:
 
-      Prerequisites:
-      
-      - Flow A has `Yes/No Intents` and only one node, which is an Execute Flow node that executes Flow B.
-      - Flow B has `Yes/No Intents - with extended rules` and one Say node.
+- Flow A has `Yes/No Intents` and only one node, which is an Execute Flow node that executes Flow B.
+- Flow B has `Yes/No Intents - with extended rules` and one Say node.
 
-      Scenario 1: 
-      
-      1. The Parse Intents setting is disabled in the Execute Flow node of Flow A.
-      1. When the user sends `yes` in Flow A, Yes Intent is triggered in Flow B. 
-      2. Flow B inherits the Yes/No Logic from Flow A.
+Scenario 1: 
 
-      Scenario 2: 
-      
-      1. The Parse Intents setting is enabled in the Execute Flow node of Flow A.
-      3. When the user sends `yes` in Flow A, Yes Intent is not triggered in Flow B. 
-      4. Flow B uses its own Yes/No Logic.
+1. The Parse Intents setting is disabled in the Execute Flow node of Flow A.
+2. When the user sends `yes` in Flow A, Yes Intent is triggered in Flow B. 
+3. Flow B inherits the Yes/No Logic from Flow A.
+
+Scenario 2: 
+
+1. The Parse Intents setting is enabled in the Execute Flow node of Flow A.
+2. When the user sends `yes` in Flow A, Yes Intent is not triggered in Flow B. 
+3. Flow B uses its own Yes/No Logic.
