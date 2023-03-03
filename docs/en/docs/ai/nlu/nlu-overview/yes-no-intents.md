@@ -32,14 +32,9 @@ Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/q
 
 To set up this feature, do the following:
 
-- [Yes/No Intents](#yesno-intents)
-    - [Select a Locale](#select-a-locale)
-  - [Use Yes/No Intents for Specific or All Flows](#use-yesno-intents-for-specific-or-all-flows)
-    - [Project-level settings](#project-level-settings)
-    - [Flow-level settings](#flow-level-settings)
-  - [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
-  - [FAQ](#faq)
-
+1. [Select a proper locale or use a default one](#select-a-locale)
+2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
+3. [Test your Flow by using Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
 
 ### Select a Locale
 
