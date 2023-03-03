@@ -28,11 +28,13 @@ User: Certainly
 Virtual agent: Let's start!
 ```
 
-## How to set up
+Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/question.md), [Optional Question](../../flow-nodes/message/optional-question.md) and [Code](../../flow-nodes/code/code.md) Nodes.
+
+To set up this feature, do the following:
 
 1. Select a proper locale or use a default one.
 2. Choose whether you want to use local for specific or all Flows.
-3. Test your Flow by using Interaction Panel
+3. Test your Flow by using Interaction Panel.
 
 
 ### Select locale
@@ -91,7 +93,7 @@ To use Yes/No intents for a specific flow, do the following:
 
 ## Test your Flow by using Interaction Panel
 
-Check if the Yes/No Intent feature works as expected via the Interaction Panel. 
+Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../tools/interaction-panel/context.md):
 
 1. In the exciting Flow, open the Interaction Panel.
 2. Run a Flow.
