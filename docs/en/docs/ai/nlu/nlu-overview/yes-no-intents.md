@@ -94,7 +94,7 @@ To use Yes/No Intents for a specific Flow, do the following:
 
 Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../tools/interaction-panel/context.md):
 
-1. In the exciting Flow, open the Interaction Panel by clicking ![interaction-pannel](../images/icons/interaction-pannel.svg) **Chat with your Agent** in the upper-right corner of the page.
+1. In the exciting Flow, open the Interaction Panel by clicking ![interaction-panel](../images/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page.
 2. Run a Flow.
 3. On the **INFO** tab, select **Input** to view JSON. In the `yesNoIntentResults` object, you will see the result of triggering:
 
