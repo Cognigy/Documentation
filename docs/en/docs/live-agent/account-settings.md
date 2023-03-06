@@ -69,7 +69,7 @@ The Attachment TT option automatically deletes the attachments in messages of al
 
 ### Auto Resolve Duration
 
-The Auto Resolve Duration option automatically resolves the conversation after a certain number of days.
+The Auto Resolve Duration option automatically resolves the conversation after a certain number of hours.
 
 ### Auto Resolve Action
 
