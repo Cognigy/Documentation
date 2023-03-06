@@ -8,7 +8,7 @@
 
 The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
 
-In the previous the [Confirmation words](../../resources/manage/settings.md#general-flow-logic--flow-settings) feature, you have a low range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps a virtual agent recognize different variations of `yes` and `no` Intents.
+In the previous [Confirmation words](../../resources/manage/settings.md#general-flow-logic--flow-settings) feature, you have a limited range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps a virtual agent recognize different variations of `yes` and `no` Intents.
 
 Before using Yes/No Intents:
 
@@ -32,13 +32,9 @@ Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/q
 
 To set up this feature, do the following:
 
-- [Yes/No Intents](#yesno-intents)
-    - [Select a Locale](#select-a-locale)
-  - [Use Yes/No Intents for Specific or All Flows](#use-yesno-intents-for-specific-or-all-flows)
-    - [Project-level settings](#project-level-settings)
-    - [Flow-level settings](#flow-level-settings)
-  - [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
-  - [FAQ](#faq)
+1. [Select a proper locale or use a default one](#select-a-locale)
+2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
+3. [Test your Flow by using Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
 
 ### Select a Locale
 
@@ -49,11 +45,11 @@ To configure a locale, do the following:
 1. To see the project's configured locales, click **Manage > Localization**.
 2. Select a locale and click ![ellipsis](../images/icons/vertical-ellipsis.svg), then **Edit Yes/No Intents**.
 3. In the **Edit Yes/No Intents** pane, you can configure Intents for the current locale:
-      - **Yes Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent does not include in the building model process.
-      - **No Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent does not include in the building model process.
-      - **Reject Intent** — by default, the setting is toggled on. You need to add examples manually. When the setting is toggled off, the Intent does not include in the building model process.
+      - **Yes Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
+      - **No Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
+      - **Reject Intent** — by default, the setting is toggled on. You need to add examples manually. When the setting is toggled off, the Intent is excluded from the build.
 4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). These rules improve the accuracy of the virtual agents's responses, ensuring that users receive the correct information or assistance they need.
-5. Click **Save & Build** to build a model. The Yes/No models always build when you edit and save settings. 
+5. Click **Save & Build** to build a model. The Yes/No model is always built when you edit and save settings. 
 
 ## Use Yes/No Intents for Specific or All Flows
 
@@ -69,12 +65,12 @@ To use Yes/No Intents for all Flows, do the following:
 1. In the left-side menu, click **Manage > Settings**.
 2. On the **Settings** page, click **NLU Settings**. 
 3. In the **General Flow Logic** section, select one of the following options from the **Yes/No Logic** list:
-     - **Confirmation Words** — disables the Yes/No Intents feature. Confirmation wordsare used the same way as before the Yes/No Intents feature. The option is turned on by default.
-     - **Yes/No Intents** — with extended rules - enables the standard Confirmation words logic first. If the standard logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
+     - **Confirmation Words** — disables the Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
+     - **Yes/No Intents** — with extended rules - evaluates the standard Confirmation words logic first. If the the standard Confirmation Words logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
      - **Yes/No Intents** — enables the Yes/No Intents model which is evaluated for every input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
 4. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales.
 You can change this value for a specific Flow.
-5. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
+5. Click **Save** to apply settings and build a model. The Yes/No model is always built when you edit and save settings. 
 
 If you have set settings at the project level but want to change them for certain Flows, you should go to the Flow-level settings.
 
@@ -88,11 +84,11 @@ To use Yes/No Intents for a specific Flow, do the following:
 2. In the upper-right corner of the **Flow Editor** page, select **Settings**.
 3. On the **Configuration** tab, in **General Flow Logic** activate checkbox near the **Yes/No Logic** setting.
 4. From the **Yes/No Logic** list, select one of the following options:
-     - **Confirmation Words** — disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is turned on by default.
-     - **Yes/No Intents** — with extended rules - enables the standard Confirmation Words logic first. If the standard logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
+     - **Confirmation Words** — disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
+     - **Yes/No Intents** — with extended rules - evaluates the standard Confirmation Words logic first. If the the standard Confirmation Words logic fails to determine the input type, for example, the user input type is determined as a statement, the Yes/No Intents model is evaluated.
      - **Yes/No Intents** — enables the Yes/No Intents model which is evaluated for every input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
 5. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales in the current Flow.
-6. Click **Save** to apply settings and build a model. The Yes/No models always build when you edit and save settings. 
+6. Click **Save** to apply settings and build a model. The Yes/No model is always built when you edit and save settings. 
 
 ## Test your Flow by using the Interaction Panel
 
