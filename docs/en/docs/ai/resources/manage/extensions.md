@@ -118,14 +118,14 @@ You can update a custom Extension by selecting the Extension either in the "Mark
 ## Making an Extension Trusted
 <div class="divider"></div>
 
-All trusted extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
+All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
 
-You can make your uploaded extensions trusted. It could be preinstalled extension or your custom extension. To allow users to make extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
+You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
 
-To mark an extension as trusted, follow these steps:
+To mark an Extensions as trusted, follow these steps:
 
 1. On the Extensions page, upload the existing Extension from Marketplace or add a custom one.
-2. Open the Extensions pane by clicking the Extension card.
+2. Open the Extension pane by clicking the Extension card.
 3. On the right-side pane, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Trust Extension**.
 The Extension will be marked as trusted.
 
