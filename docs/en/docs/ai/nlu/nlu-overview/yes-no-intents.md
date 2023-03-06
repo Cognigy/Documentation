@@ -215,8 +215,15 @@ Check if the Yes/No Intent feature works as expected via the [Interaction Panel]
       "type": "Statement"
       ```  
 
-Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the `yesNoIntentResults` has the default values as shown on the **Fallback Reject Intent** tab above.
+Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the `yesNoIntentResults` has the default values:
 
+```json
+"yesNoIntentResults": {
+  "finalIntentName": null,
+  "finalIntentScore": null,
+  "scores": []
+}
+```
 Yes/No Intents are evaluated independently of regular Intents and do not overwrite the existing fields for Intents in the input object. Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`. 
 
 ## FAQ
