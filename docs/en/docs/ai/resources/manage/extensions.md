@@ -124,7 +124,7 @@ You can make your uploaded Extensions trusted. It could be pre-installed Extensi
 
 To mark an Extensions as trusted, follow these steps:
 
-1. On the Extensions page, upload the existing Extension from Marketplace or add a custom one.
+1. On the Extensions page, install the existing Extension from Marketplace or add a custom one.
 2. Open the Extension pane by clicking the Extension card.
 3. On the right-side pane, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Trust Extension**.
 The Extension will be marked as trusted.
