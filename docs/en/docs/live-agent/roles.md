@@ -60,7 +60,7 @@ The Supervisor has restricted access.
 
 - Can reassign the Conversations to other Agents, or unassign them.
 
-- Has access to Reports.
+- Has access to [Reports](reports.md).
 
 ## Multiple roles
 
