@@ -115,27 +115,6 @@ You can update a custom Extension by selecting the Extension either in the "Mark
   <figcaption>Updating a custom Extension</figcaption>
 </figure>
 
-## Making an Extension Trusted
-<div class="divider"></div>
-
-All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
-
-You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
-
-To mark an Extensions as trusted, follow these steps:
-
-1. On the Extensions page, install the existing Extension from Marketplace or add a custom one.
-2. Open the Extension pane by clicking the Extension card.
-3. On the right-side pane, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Trust Extension**.
-The Extension will be marked as trusted.
-
-To mark an Extension as untrusted, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Untrust Extension**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/trust-extension.png" width="100%" />
-  <figcaption> Making an Extension Trusted</figcaption>
-</figure>
-
 ## Publishing an Extension
 <div class="divider"></div>
 
@@ -173,7 +152,25 @@ Enabling the feature will not change anything automatically. Once the feature wa
 ???+ danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
 
+### Making an Extension Trusted
 
+All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
+
+You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
+
+To mark an Extensions as trusted, follow these steps:
+
+1. On the Extensions page, install the existing Extension from Marketplace or add a custom one.
+2. Open the Extension pane by clicking the Extension card.
+3. On the right-side pane, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Trust Extension**.
+The Extension will be marked as trusted.
+
+To mark an Extension as untrusted, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Untrust Extension**.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/trust-extension.png" width="100%" />
+  <figcaption> Making an Extension Trusted</figcaption>
+</figure>
 
 ## Extension organization-wide embeddable
 <div class="divider"></div>
