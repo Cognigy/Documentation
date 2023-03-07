@@ -39,7 +39,7 @@ To set up this feature, do the following:
 
 1. [Select a proper locale or use a default one](#select-a-locale)
 2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
-3. [Test your Flow by using Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+3. [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
 
 ### Select a Locale
 
