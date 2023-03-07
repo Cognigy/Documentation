@@ -6,7 +6,7 @@
 
 # Yes/No Intents (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../release-notes/4.46.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../../release-notes/4.46.md)
 
 !!! note
     The Yes/No Intents feature is in Beta. We encourage you to try this feature out and provide us with feedback.
