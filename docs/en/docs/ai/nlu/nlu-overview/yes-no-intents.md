@@ -1,10 +1,15 @@
 ---
- title: "Yes/No Intents" 
+ title: "Yes/No Intents (Beta)" 
  slug: "yes-no-intents" 
  hidden: false 
 ---
 
-# Yes/No Intents
+# Yes/No Intents (Beta)
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../release-notes/4.46.md)
+
+!!! note
+    The Yes/No Intents feature is in Beta. We encourage you to try this feature out and provide us with feedback.
 
 The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
 
@@ -32,9 +37,13 @@ Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/q
 
 To set up this feature, do the following:
 
-1. [Select a proper locale or use a default one](#select-a-locale)
-2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
-3. [Test your Flow by using Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+- [Yes/No Intents (Beta)](#yesno-intents-beta)
+    - [Select a Locale](#select-a-locale)
+  - [Use Yes/No Intents for Specific or All Flows](#use-yesno-intents-for-specific-or-all-flows)
+    - [Project-level settings](#project-level-settings)
+    - [Flow-level settings](#flow-level-settings)
+  - [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+  - [FAQ](#faq)
 
 ### Select a Locale
 
