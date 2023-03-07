@@ -240,6 +240,7 @@ nav:
       - ai/nlu/nlu-overview/overview.md
       - ai/nlu/nlu-overview/conditions.md
       - ai/nlu/nlu-overview/ml-intents.md
+      - ai/nlu/nlu-overview/yes-no-intents.md
       - ai/nlu/nlu-overview/annotations.md
       - ai/nlu/nlu-overview/intent-analyzer.md
       - ai/nlu/nlu-overview/rule-intents.md
