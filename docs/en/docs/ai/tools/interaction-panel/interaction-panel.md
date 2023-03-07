@@ -45,10 +45,11 @@ It is common for messages to be sent to Cognigy.AI with attached data. It is pos
 
 #### Voice Call
 
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
 
-???+ info "Feature availability"
-    This feature is currently hidden behind the flag *FEATURE_ENABLE_YES_NO_INTENTS*. Reach out to the support team if you want to enable this feature.
+!!! info "Feature availability"
+    - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
+    - If you use an On-Premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_VOICECALL_WHITELIST`  in `values.yaml`. For example, `FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>`.
 
 When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
 
@@ -161,7 +162,7 @@ We can also filter the messages in the Interaction panel by a specific channel. 
 
 ### Voice Call
 
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
 
 This section allows you to choose the language and voice for testing the voice calls from Interaction Panel.
 
