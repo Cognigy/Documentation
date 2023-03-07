@@ -60,6 +60,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.46:
+    - release-notes/4.46.md 
   - 4.45:
     - release-notes/4.45.md
   - 4.44:

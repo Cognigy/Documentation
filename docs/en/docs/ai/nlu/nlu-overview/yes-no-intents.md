@@ -6,7 +6,7 @@
 
 # Yes/No Intents (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../release-notes/4.46.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../../release-notes/4.46.md)
 
 !!! note
     The Yes/No Intents feature is in Beta. We encourage you to try this feature out and provide us with feedback.
@@ -39,7 +39,7 @@ To set up this feature, do the following:
 
 1. [Select a proper locale or use a default one](#select-a-locale)
 2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
-3. [Test your Flow by using Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+3. [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
 
 ### Select a Locale
 

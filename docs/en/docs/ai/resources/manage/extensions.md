@@ -154,6 +154,8 @@ Enabling the feature will not change anything automatically. Once the feature wa
 
 ### Making an Extension Trusted
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../../release-notes/4.46.md)
+
 All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
 
 You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
