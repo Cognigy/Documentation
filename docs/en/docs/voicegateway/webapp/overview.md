@@ -6,7 +6,7 @@
 
 # Voice Gateway Self-Service Portal
 
-The Cognigy Voice Gateway Self-Service Portal is a web-based interface that allows users to manage their accounts, settings, and preferences for the Cognigy Voice Gateway.
+The Cognigy Voice Gateway Self-Service Portal is a web-based interface that allows users to manage their accounts, settings, and preferences for Cognigy Voice Gateway.
 
 The Web App has the following entities:
 
@@ -18,3 +18,5 @@ The Web App has the following entities:
 - [Carriers](carriers.md)
 - [Speech](speech-services.md)
 - [Phone Numbers](phone-numbers.md)
+
+The operations that you can perform in Voice Gateway are based on your user scope, such as Admin, Service Provider, or Account.
