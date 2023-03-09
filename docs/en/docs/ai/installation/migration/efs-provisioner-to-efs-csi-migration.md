@@ -10,7 +10,7 @@ From the version 4.45 Cognigy.AI starts supporting [Amazon EFS CSI driver](https
 
 ## Prerequisites
 
-- Kubernetes v1.21 - 1.23.
+- Kubernetes v1.21 - 1.24.
 - Kubectl utility installed locally.
 - [Helm](https://helm.sh/) v3.8+ installed on the client host.
 - [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) is installed in the kubernetes cluster.
