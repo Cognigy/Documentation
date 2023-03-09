@@ -1,21 +1,21 @@
 ---
-title: "efs provisioner to efs csi"
+title: "Amazon EFC Provisioner to EFC CSI"
 slug: "efs-provisioner-to-efs-csi-migration"
 hidden: false
 ignore_macros: true
 ---
-# efs provisioner to efs csi
+# Amazon EFC Provisioner to EFC CSI
 
-From the version 4.45 Cognigy.AI starts supporting [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) as the currently used [efs external provisioner](https://github.com/kubernetes-retired/external-storage) is deprecated.
+Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) as the currently used [efs external provisioner](https://github.com/kubernetes-retired/external-storage) is deprecated.
 
 ## Prerequisites
 
 - Kubernetes v1.21 - 1.24.
-- Kubectl utility installed locally.
-- [Helm](https://helm.sh/) v3.8+ installed on the client host.
+- Kubectl utility is installed locally.
+- [Helm](https://helm.sh/) v3.8+ is installed on the client host.
 - [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) is installed in the kubernetes cluster.
 - Cognigy.AI installation must be >= v4.45.
-- Snapshots/Backups of all efs Persistent Volume Claims/Persistent Volumes (flow-modules, functions) are must be made before the migration starts.
+- Snapshots/Backups of all EFS Persistent Volume Claims/Persistent Volumes (flow modules, functions) are must be ready before the migration starts.
 
 ## Migration process
 
