@@ -20,24 +20,22 @@ Depending on Cognigy Voice Gateway installation, members can have the following 
 
 ### Account
 
-Includes basic operations with Voice Gateway entities: creating, editing, and deleting entities. Allows editing user profiles, carriers, and speech services that belong to users with the Account scope.
+This scope includes basic operations with Voice Gateway entities, such as creating, editing, and deleting entities. 
+
+It also allows for editing user profiles, carriers, and speech services that belong to users with the Account scope.
 
 ### Service Account
 
-Only for On-premises Cognigy Voice Gateway installation. 
+This scope is only available for On-premises Cognigy Voice Gateway installations. 
 
-Includes the Account scope. Additionally, allows editing user profiles, carriers, and speech services that belong to users with Account or Service Account scopes. 
+It includes all of the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Account scope. 
 
-Can create, edit and delete users with Account and Service provider scopes.
-
-Also, Service Account can generate API keys.
+Additionally, users with the Service Account scope can create, edit, and delete users with the Account and Service Provider scopes, and they can generate API keys.
 
 ### Admin
 
-Only for On-premises Cognigy Voice Gateway installation.
+This scope is only available for On-premises Cognigy Voice Gateway installations. 
 
-Includes the Account and Servise provider scopes. Allows performing all operations in Voice Gateway.
+It includes all operations in the Account and Service Provider scopes, allowing for performing all operations in the Voice Gateway. 
 
-Can create, edit and delete users with the Account, Service provider, and Admin scopes.
-
-Also, Admin can generate API keys and change password requirements.
+Additionally, Admins can create, edit, and delete users with the Account, Service Provider, and Admin scopes. They can also generate API keys and change password requirements.

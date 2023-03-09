@@ -6,13 +6,13 @@
 
 # Accounts
 
-*Accounts* represent your [Organisation](../../ai/tools/user-menu/organisation-details.md) from Cognigy.AI. 
+*Accounts* are containers for resources such as [applications](applications.md), [carriers](carriers.md), and [speech services](speech-services.md) that are used to create and manage voice applications.
 
-To create an account, in the left-side menu, select Accounts, then click **Add account** or **+**.
+In Voice Gateway, an account may represents a specific customer organization and can have multiple users associated with it. 
 
-You can create more than one account.
+The account owner controls what the other users can see and do within the platform, ensuring that sensitive data and functions are kept secure. The account owner can be a user with Service Provider and Admin scopes. They can create more then one account and manage them. To create an account, in the left-side menu, select Accounts, then click **Add account** or **+**.
 
-After creating an account, you can edit or delete it.
+A user with the Account scope can view and edit only the account to which they belong.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png"  width="100%" />
 
