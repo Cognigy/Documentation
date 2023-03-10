@@ -376,6 +376,7 @@ nav:
       - ai/installation/migration/contents.md
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
+      - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
