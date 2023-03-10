@@ -581,14 +581,14 @@ extra:
   analytics:
    provider: google
    property: UA-101284175-2  
-   feedback:
-        - icon: material/thumb-up-outline
+   feedback:      
+      title: Was this page helpful?
+      ratings:
+       - icon: material/thumb-up-outline
           name: This page was helpful
           data: 1
           note: >-
-            Thanks for your feedback!      
-      title: Was this page helpful?
-      ratings:
+            Thanks for your feedback!
         - icon: material/thumb-down-outline
           name: This page could be improved
           data: 0
