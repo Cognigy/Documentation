@@ -14,7 +14,7 @@ There are two options on how the SIP Trunk can be added:
 - by clicking **Select a predefined carrier** and selecting one of the pre-configured carriers. That will pre-fill all the fields with standard values.
 
 !!! warning
-    The user with an Account scope can only edit carriers created by themselves, but they can still use and view carriers shared by Service providers or Admins.
+    Users with an Account scope can only edit carriers they have created, as well as carriers created by other users with the same scope. They can still use and view carriers shared by Service providers or Admins.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-carriers.png"  width="100%" />
 

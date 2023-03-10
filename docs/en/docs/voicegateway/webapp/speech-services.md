@@ -15,6 +15,6 @@ You can create more than one speech service.
 After creating a speech service, you can edit or delete it.
 
 !!! warning
-    The user with an Account scope can only edit speech services created by themselves, but they can still use and view speech services shared by Service providers or Admins.
+    Users with an Account scope can only edit speech services they have created, as well as speech services created by other users with the same scope. They can still use and view speech services shared by Service providers or Admins.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png"  width="100%" />
