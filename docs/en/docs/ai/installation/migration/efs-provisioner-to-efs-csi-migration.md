@@ -19,14 +19,14 @@ Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://
 
 ## Migration process
 
-1. Retain the `flow-modules` and `functions` Persistent volumes
+1. Retain the `flow-modules` and `functions` Persistent volumes.
 
     ```bash
     kubectl patch pv <flow-modules-pv-id> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
     kubectl patch pv <functions-pv-id> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
     ```
 
-2. Enable the EFS CSI provisioner in the values file
+2. Enable the EFS CSI provisioner in the values file.
 
     ```bash
     flowModules:
@@ -61,7 +61,7 @@ Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://
       functions:
         id: "<function efs id>"
     ```
-4. Delete the `flow-modules` and `function` storageclass
+4. Delete the `flow-modules` and `function` [StorageClass](https://kubernetes.io/docs/concepts/storage/storage-classes/)
 
     ```bash
     kubectl delete sc aws-efs-flow-modules aws-efs-functions
