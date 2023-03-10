@@ -5,6 +5,7 @@ site_author: Cognigy
 copyright: Copyright &copy; 2023 <a href="https://www.cognigy.com/">Cognigy</a>
 #Temporarily disabled Suggest Edit section
 repo_url: https://github.com/Cognigy/Documentation/
+edit_uri: edit/main/docs/
 repo_name: cognigy/documentation
 
 theme:
@@ -28,6 +29,9 @@ theme:
   - navigation.tracking
   - navigation.indexes
   - navigation.top
+  - content.action.edit
+  - content.action.view
+  - navigation.footer
   icon:
     admonition:
       note: octicons/tag-16
@@ -42,6 +46,8 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+      edit: material/pencil 
+      view: material/eye
   logo: assets/img/Cognigy-white.svg
   favicon: assets/img/favicon.webp
   language: en
@@ -572,6 +578,23 @@ extra:
   alternate:
   - link: /
     name: en
+  analytics:
+   provider: google
+   property: UA-101284175-2  
+   feedback:
+        - icon: material/thumb-up-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!      
+      title: Was this page helpful?
+      ratings:
+        - icon: material/thumb-down-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via a GitHub issue</a>
+ 
 plugins:
 - section-index
 - macros
