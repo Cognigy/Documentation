@@ -52,7 +52,7 @@ Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://
     ```
     For more details check [here](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml)
 
-3. Disable the currently running efs provisioner in the values file by deleting the following code block
+3. Disable the currently running efs provisioner in the values file by deleting the following code block.
 
     ```bash
     efs:
@@ -61,12 +61,12 @@ Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://
       functions:
         id: "<function efs id>"
     ```
-4. Delete the `flow-modules` and `function` [StorageClass](https://kubernetes.io/docs/concepts/storage/storage-classes/)
+4. Delete the `flow-modules` and `function` [StorageClass](https://kubernetes.io/docs/concepts/storage/storage-classes/).
 
     ```bash
     kubectl delete sc aws-efs-flow-modules aws-efs-functions
     ```
-5. Reapply the helm chart
+5. Reapply the helm chart.
 
     ```bash
     helm upgrade --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version HELM_CHART_VERSION --values YOUR_VALUES_FILE.yaml --create-namespace
