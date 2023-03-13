@@ -34,7 +34,7 @@ The template can receive 3 variables:
 
 1. `user` - Use `{{ user.name }}` to get the username.
 2. `conversation` - Use `{{ conversation.display_id }}` to get the conversation ID
-3. `action_url` - This is the URL of the conversation.
+3. `action_url` - This is the URL for the conversation.
 
 ### Default content
 

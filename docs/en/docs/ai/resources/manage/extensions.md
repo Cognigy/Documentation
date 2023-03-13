@@ -126,7 +126,7 @@ If you want us to approve your developed extension and publish it on the Extensi
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.6-blue.svg)]({{config.site_url}})
 
-Cognigy.AI considers the code within an extension to be "un-trusted", meaning that the code will be executed in a secure and additional hardened environment by default. There is a certain overhead in bootstrapping this secure environment per execution - hence Flow Nodes from Extensions generally execute slower than our built-in ones (e.g. our "Say"-Node).
+Cognigy.AI considers the code within an extension to be "un-trusted", meaning that the code will be executed in a secure and additional hardened environment by default. There is a certain overhead in bootstrapping this secure environment per execution - hence Flow Nodes from Extensions generally execute slower than our built-in ones (for example, our "Say"-Node).
 
 With Cognigy.AI v4.1.6 we have introduced the ability to "trust" the code of an Extension by letting customers decide whether they want to execute the code in a secure environment or in the normal execution environment in which our own Flow Nodes run.
 
@@ -218,7 +218,7 @@ EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
-Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through e.g. an external API call.
+Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through for example, an external API call.
 
 ## Localization for Extensions
 <div class="divider"></div>

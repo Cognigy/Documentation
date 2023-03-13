@@ -128,7 +128,7 @@ The **Context** can be seen as the short-term memory of the **Virtual Agent** an
     Head over to [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information. 
 
 ### Profile object
-The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as usecase specific information like e.g. the user's favorite color.
+The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
 
 ???+ info "Profile object"
     Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
@@ -138,7 +138,7 @@ The **(Contact) Profile** acts as persistent - long term - memory and is used to
 The Interaction Panel can be configured with a number of settings across different sections.
 
 ### Chat Input
-This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
+This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connector 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-chat-input.png" width="100%" />
@@ -207,7 +207,7 @@ If turned on, based on the Interaction Panel outputs, the Flow Editor will autom
     Turning this setting on will automatically turn off and disable *Auto-switch Target Flow Selection* setting.
 
 #### Auto-switch Target Flow Selection
-When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow openened in the Flow Editor. 
+When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow Editor. 
 
 ### Input
 

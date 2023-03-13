@@ -32,7 +32,7 @@ Once the search text is entered, all the Nodes that contain the search text will
 ???+ info "Tip: Toggle Search Icon"
     In order to close the Node Search input field without resetting the search text, click on the *Search Icon* in the chart editor toolbar again. Doing this toggles the Node highlighting.
 
-Futher, when a highlighted Node is opened, the field that has the match will have its label highlighted.
+Further, when a highlighted Node is opened, the field that has the match will have its label highlighted.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/node-editor-with-highlighting.png" width="100%" />

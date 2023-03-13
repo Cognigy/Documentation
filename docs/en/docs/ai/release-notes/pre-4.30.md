@@ -1599,30 +1599,30 @@ This is our ``latest`` major release. We changed a lot, fixed a lot of issues, a
 https://signup.cognigy.ai/
 
 ### Features
-- Improved ``NLU System`` that was introduced in ``3.0.3`` for german language
-- Improved ``Cognigy.UIs`` error handling so users do not reload the page if a component crashes
-- Improved ``actions.output`` so the second parameter is ``optional``
-- Improved the way how the ``endpoint`` is handling connections - ``websockets`` and ``fallback http polling`` is possible now
-- Changed the default value of the ``keep alexa session open`` to true
-- Changed the default values for ``stop after childFlow`` in ``question nodes``
-- Changed ``save buttons`` to have more consistent placing in ``Cognigy.UI``
+- Improved `NLU System` that was introduced in `3.0.3` for german language
+- Improved `Cognigy.UIs` error handling so users do not reload the page if a component crashes
+- Improved `actions.output` so the second parameter is `optional`
+- Improved the way how the `endpoint` is handling connections - `websockets` and `fallback http polling` is possible now
+- Changed the default value of the `keep alexa session open` to true
+- Changed the default values for `stop after childFlow` in `question nodes`
+- Changed `save buttons` to have more consistent placing in Cognigy.UI
 
 ### Bugfixes
-- Fixed a bug where the ``system would not answer`` sometimes
-- Fixed a bug where we had no ``confirmation screen`` in the ``intent editor``
-- Fixed a bug in the ``facebook preview`` where ``vertical images`` would not get displayed the correct way
-- Fixed a bug in the ``webchat`` where the ``persistent menu`` was broken
-- Fixed a race-condition within the ``endpoint`` that sometimes would result in an ``incorect order of messages``
-- Fixed a bug in ``realtime analytics``
-- Fixed a bug where the ``flow service`` would throw timeouts
-- Fixed a bug within the ``connection editor`` - the type of the previously selected ``connection`` would be used for new connections
-- Fixed a bug where the ``state`` would not be shown in the ``Interaction Panel`` when displayed on the ``projects page``
-- Fixed a bug that resulted in a ``blank page`` on an ``empty gallery element`` for Facebook
-- Fixed a bug where the ``UI element to create projects`` was shown even if users with a certain role could not create projects
-- Fixed a bug where the ``vertical image`` within an ``alexa card`` had a broken preview within the ``Cognigy.UI``
-- Fixed a race-condition in the ``Flow Editor`` that resulted in a ``stack of errors`` if the page was reloaded in some circumstanceshttps://dash.readme.com/project/cognigy/v4.11/docs/release-notes
-- Fixed a bug where the ``bot`` would always have the name ``CognigyBot`` for the ``Slack channel``
+- Fixed a bug where the `system would not answer` sometimes
+- Fixed a bug where we had no `confirmation screen` in the `intent editor`
+- Fixed a bug in the `facebook preview` where `vertical images` would not get displayed the correct way
+- Fixed a bug in the `webchat` where the `persistent menu` was broken
+- Fixed a race-condition within the `endpoint` that sometimes would result in an `incorect order of messages`
+- Fixed a bug in `realtime analytics`
+- Fixed a bug where the `flow service` would throw timeouts
+- Fixed a bug within the `connection editor` - the type of the previously selected ``connection`` would be used for new connections
+- Fixed a bug where the `state` would not be shown in the `Interaction Panel` when displayed on the ``projects page``
+- Fixed a bug that resulted in a `blank page` on an `empty gallery element` for Facebook
+- Fixed a bug where the `UI element to create projects` was shown even if users with a certain role could not create projects
+- Fixed a bug where the `vertical image` within an `alexa card` had a broken preview within the `Cognigy.UI`
+- Fixed a race-condition in the `Flow Editor` that resulted in a `stack of errors` if the page was reloaded in some circumstanceshttps://dash.readme.com/project/cognigy/v4.11/docs/release-notes
+- Fixed a bug where the `bot` would always have the name `CognigyBot` for the `Slack channel`
 
 ### Documentation
-- Improved documentation on ``how to reach the api service`` in an on-prem installation
-- Improved documentation for ``facebook profile`` and ``update profile`` settings for endpoints
+- Improved documentation on `how to reach the api service` in an on-prem installation
+- Improved documentation for `facebook profile` and `update profile` settings for endpoints

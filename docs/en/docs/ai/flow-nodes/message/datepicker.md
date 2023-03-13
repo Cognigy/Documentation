@@ -85,7 +85,7 @@ The Datepicker allows you to configure whether or not times can be selected. If 
 Determines whether the Datepicker should additionally show selectable time.
 
 #### Use 24 Hour Format
-If selected, the Datepicker will display times in 24 hour format (e.g. 20:00h instead of 8:00PM).
+If selected, the Datepicker will display times in 24 hour format (for example, 20:00h instead of 8:00PM).
 
 #### Default Hour to show
 Configurable default hour.

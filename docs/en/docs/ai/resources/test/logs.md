@@ -23,14 +23,14 @@ Each log entry consists of a `timestamp`, the `log type`, the log `message` and 
 ### Display Settings
 Configuration of the log display is possible by enabling or disabling the following features:
 
-| Setting Name      | Function                          |
-| ----------- | ------------------------------------ |
-| Live Logging       | Activates/Deactivates immediate update of the log as soon events occur |
-| Show Timestamp       | Activates/Deactivates the timestamp of each event |
-| Show Additional Metadata    | Activates/Deactivates data attached to incoming and outgoing messages |
-| Info  | Activates/Deactivates info type events |
-| Error    | Activates/Deactivates error type events|
-| Debug   | Activates/Deactivates debugging type events |
+| Setting Name             | Function                                                               |
+|--------------------------|------------------------------------------------------------------------|
+| Live Logging             | Activates/Deactivates immediate update of the log as soon events occur |
+| Show Timestamp           | Activates/Deactivates the timestamp of each event                      |
+| Show Additional Metadata | Activates/Deactivates data attached to incoming and outgoing messages  |
+| Info                     | Activates/Deactivates info type events                                 |
+| Error                    | Activates/Deactivates error type events                                |
+| Debug                    | Activates/Deactivates debugging type events                            |
 
 ### Searching
 
