@@ -473,7 +473,7 @@ nav:
       - voicegateway/installation/browser-requirements.md
     - Deployment:
       - voicegateway/installation/installation-process.md
-  - Voice Gateway Self-Service Portal:
+  - Self-Service Portal:
     - Overview:
       - voicegateway/webapp/overview.md
     - Users:
