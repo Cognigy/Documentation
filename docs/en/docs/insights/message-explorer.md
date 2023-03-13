@@ -24,7 +24,7 @@ Using the global filter options you can define the search criteria to find the i
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
 
-Using the **"Negate "** slider bar "all but the selected" filter option(s) will be analyzed.
+Using the **"Negate "** slider bar "all but the selected" filter options will be analyzed.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/9010b0c-Message_Explorer_n5.svg" width="100%" />

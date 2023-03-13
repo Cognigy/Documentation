@@ -45,7 +45,7 @@ You can configure almost everything about the Webchat to personalize it just for
 | Parameter |	Description |
 | -- | -- |
 | Webchat Title | The text to display within the webchat header |
-| Color Scheme | The main colors for the Webchat, e.g. #008080 |
+| Color Scheme | The main colors for the Webchat, for example, #008080 |
 | Bot Avatar Logo URL | A URL linking to the logo that should be the bot's avatar |
 | Header Logo URL | A URL linking to the logo that should be displayed in the Webchat header |
 | Enable Typing Indicators | Enables a typing indicator while the Bot is replying |
@@ -95,7 +95,7 @@ To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The 
   <figcaption>Webchat Plugins</figcaption>
 </figure>
 
-All plugins linked in this list field will be loaded by the Webchat Widget when started. To trigger the plugin, e.g. display an upload button for the file-upload plugin a plugin specific data payload is required.
+All plugins linked in this list field will be loaded by the Webchat Widget when started. To trigger the plugin, for example, display an upload button for the file-upload plugin a plugin specific data payload is required.
 
 Get sure all plugins are reachable for your whole audience!
 

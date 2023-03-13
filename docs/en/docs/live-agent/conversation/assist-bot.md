@@ -62,7 +62,7 @@ The Assist Bot messages can be easily forwarded to the customer by clicking dire
   <figcaption>Live Agent Assist Bot Forward Messages</figcaption>
 </figure>
 
-## Reseting Assist Bot session
+## Resetting Assist Bot session
 
 The Assist Bot chat can be reset by clicking on the "Reset Session" button in the dropdown three dots menu. This will clear the history and reset the session with the Assist Bot.
 

@@ -22,7 +22,7 @@ Rule Intents require the following:
 
 ## Writing Rules
 <div class="divider"></div>
-Each Intent can have any number of rules attached to it. The rules are written as Direct CognigyScript, meaning that you don't need the CognigyScript tags. You can therefore write your rules using the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) or [Context Object]({{config.site_url}}ai/tools/interaction-panel/context/) (e.g. input.text === "restart") and use free form JavaScript. You can create as many rules as you want, and if any one of them is matched, the intent will be returned with a score of 1.
+Each Intent can have any number of rules attached to it. The rules are written as Direct CognigyScript, meaning that you don't need the CognigyScript tags. You can therefore write your rules using the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) or [Context Object]({{config.site_url}}ai/tools/interaction-panel/context/) (for example, input.text === "restart") and use free form JavaScript. You can create as many rules as you want, and if any one of them is matched, the intent will be returned with a score of 1.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b23c4c5-rules.PNG" width="100%" />
@@ -84,7 +84,7 @@ Rule intents will always have a score of 1 if they match. Therefore, thresholds 
 
 ## What is a good use case for Rule Intents?
 <div class="divider"></div>
-Let's say we want to inform the user on a general level about a very specific topic. A good example would be information about a certain disease, e.g. "diabetes". The disease name is very unlikely to show up in example sentences for other intents and should show up in the vast majority of user input for that intent. 
+Let's say we want to inform the user on a general level about a very specific topic. A good example would be information about a certain disease, for example,example, "diabetes". The disease name is very unlikely to show up in example sentences for other intents and should show up in the vast majority of user input for that intent. 
 
 Additionally, it is very unlikely that "diabetes" will be mentioned when the user wants information about other diseases.
 

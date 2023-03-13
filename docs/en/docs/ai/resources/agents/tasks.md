@@ -23,7 +23,7 @@ The Task Panel shows both running as well as completed Tasks that are marked wit
 
 ## Notifications
 
-Whenever a Task has been succesfully completed, a Success Notification is shown at the top-right of the user interface.
+Whenever a Task has been successfully completed, a Success Notification is shown at the top-right of the user interface.
 
 ### Success Notification
 

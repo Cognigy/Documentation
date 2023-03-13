@@ -351,25 +351,25 @@ The Sessions collection contains a list of all sessions that have occurred. The 
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name          | Description                                           | Type     | Example                                                                        |
-| ------------------- | ----------------------------------------------------- | -------- | ------------------------------------------------------------------------------ |
-| _id                 | Unique analytics record ID                            | String   | 5a91d194fde28b0011ce2423                                                       |
-| goals               | All goals that were acheived in the session           | String   | Goal1, Goal2                                                                   |
-| stepPath            | Comma separated list of steps executed                | String   | 9ac4f679-beae-4461-b9e3-43aece8b3430,f1e72fe3-f04b-48f5-b862-1e35ad253f18, ... |
-| stepsCount          | Count of the number of steps                          | Number   | 10                                                                             |
+| Field Name          | Description                                      | Type     | Example                                                                        |
+|---------------------|--------------------------------------------------|----------|--------------------------------------------------------------------------------|
+| _id                 | Unique analytics record ID                       | String   | 5a91d194fde28b0011ce2423                                                       |
+| goals               | All goals that were achieved in the session      | String   | Goal1, Goal2                                                                   |
+| stepPath            | Comma separated list of steps executed           | String   | 9ac4f679-beae-4461-b9e3-43aece8b3430,f1e72fe3-f04b-48f5-b862-1e35ad253f18, ... |
+| stepsCount          | Count of the number of steps                     | Number   | 10                                                                             |
 | handoverEscalations | Number of times the session triggered a handover | Number   | 3                                                                              |
-| startedAt           | Timestamp when first message was recieved             | DateTime | 2018-2-25T12:32:32.000Z                                                        |
-| userId              | ID of the connecting user                             | String   | myContactID                                                                    |
-| sessionId           | Session ID                                            | String   | 5a91d194fde28b0011ce2425                                                       |
-| localeReferenceId   | Id of the locale                                      | String   | en-EN                                                                          |
-| localeName          | Name of the locale                                    | String   | English                                                                        |
-| endpointReferenceId | ID of the endpoint                                    | String   | 5e33b160e6236da3aa54221461a53f04                                               |
-| endpointName        | Endpoint name                                         | String   | Webchat                                                                        |
-| projectName         | Name of the Cognigy.AI project                        | String   | Project 1                                                                      |
-| projectId           | ID of the project                                     | String   | 6067352c18887e471da4e392                                                       |
-| organisationId      | Cognigy.AI Organisation ID                            | String   | 5f8833dae72b850ad2ed4d53                                                       |
-| snapshotId          | ID of the snapshot                                    | String   | 5e33b160e6236da3aa54221461a53f04                                               |
-| snapshotName        | Name of the snapshot                                  | String   | Bot Release 2.2                                                                |
+| startedAt           | Timestamp when first message was received        | DateTime | 2018-2-25T12:32:32.000Z                                                        |
+| userId              | ID of the connecting user                        | String   | myContactID                                                                    |
+| sessionId           | Session ID                                       | String   | 5a91d194fde28b0011ce2425                                                       |
+| localeReferenceId   | Id of the locale                                 | String   | en-EN                                                                          |
+| localeName          | Name of the locale                               | String   | English                                                                        |
+| endpointReferenceId | ID of the endpoint                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
+| endpointName        | Endpoint name                                    | String   | Webchat                                                                        |
+| projectName         | Name of the Cognigy.AI project                   | String   | Project 1                                                                      |
+| projectId           | ID of the project                                | String   | 6067352c18887e471da4e392                                                       |
+| organisationId      | Cognigy.AI Organisation ID                       | String   | 5f8833dae72b850ad2ed4d53                                                       |
+| snapshotId          | ID of the snapshot                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
+| snapshotName        | Name of the snapshot                             | String   | Bot Release 2.2                                                                |
 
 ???+ info "Building Visualizations with Steps Records"
     The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)

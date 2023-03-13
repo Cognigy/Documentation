@@ -109,7 +109,7 @@ cognigyLiveAgent:
 
 #### Troubleshooting
 
-If the secrets are the same value, but the integration is not working (e.g. handover or preconfiguring Live Agent not working), perform the following:
+If the secrets are the same value, but the integration is not working (e.g. handover or preconfigured Live Agent not working), perform the following:
   
   1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
   2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:

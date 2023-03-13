@@ -35,7 +35,7 @@ Cognigy's AI Default Channel has a specific channel format which you can find mo
 
 ## Alexa
 <div class="divider"></div>
-[:link: Alexa Response Json Reference](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html)
+[:link: Alexa Response JSON Reference](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html)
 
 ### Example
 ---

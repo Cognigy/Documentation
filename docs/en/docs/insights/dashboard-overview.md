@@ -35,7 +35,7 @@ When hovering the line chart, details as for example the rated month, the year a
 
 **Each chart can display data in two ways:**
 
-- as a metrics caption: the numerical information is abbreviated (e.g. ms for milliseconds, 1K for a thousand, 1M for a million, etc.).
+- as a metrics caption: the numerical information is abbreviated (for example, ms for milliseconds, 1K for a thousand, 1M for a million, etc.).
 - as a tooltip that appears when you move the mouse pointer over it: It displays the data as unabbreviated numeric values.
 
 ???+ info "Note"

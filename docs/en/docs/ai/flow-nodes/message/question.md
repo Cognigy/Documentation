@@ -43,7 +43,7 @@ Question Nodes have a Type which defined what kind of answer is required from th
 | Duration | Any time duration (system-defined) |
 | Email | Any email address (system-defined) |
 | Money | Any monetary value (system-defined) |
-| URL | Any reference/address to a resource on the Internet e.g. http://example.com |
+| URL | Any reference/address to a resource on the Internet for example, http://example.com |
 | Percentage | Any percentage (system-defined) |
 | Regex | Any custom data format defined by a regex expression must be detected in the user's response |
 | Data | Any data (input.data) input |
@@ -72,7 +72,7 @@ Question node output types carry the same functionality as the [**Say Node**]({{
 <div class="divider"></div>
 
 ### Reprompt Message
-Remprompt Messages are automatically triggered in case the question was not answered correctly (e.g. with the expected type of input or a validaiton didn't return true). 
+Remprompt Messages are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validaiton didn't return true). 
 
 The Remprompt can be configured to automatically re-ask the question. 
 
@@ -153,9 +153,9 @@ The option "only escalate once" determines if the escalation only happens once o
 ## Reconfirmation Settings
 <div class="divider"></div>
 
-Allows for answers to be reconfirmed before continuing. this is especially useful when using voicebots and reconfirming what the bot understood (e.g. in Number questions when the user said "_my number is three double five triple nine five six eight_"). The answer given to the reconfirmation question has to be a yes/no style answer and follows the same rules as a Yes/No Question.
+Allows for answers to be reconfirmed before continuing. this is especially useful when using voicebots and reconfirming what the bot understood (for example, in Number questions when the user said "_my number is three double five triple nine five six eight_"). The answer given to the reconfirmation question has to be a yes/no style answer and follows the same rules as a Yes/No Question.
 
-Reconfirmation Questions can contain a specific token [ANSWER] which will be replaced with a short form version of the given answer (e.g. "3 EUR" in a Money question). The short form answer is taken from `input.activeQuestion.tentativeShortFormAnswer`;
+Reconfirmation Questions can contain a specific token [ANSWER] which will be replaced with a short form version of the given answer (for example, "3 EUR" in a Money question). The short form answer is taken from `input.activeQuestion.tentativeShortFormAnswer`;
 
 Reconfirmation Questions can have a specific reprompt set, which will be be output before the question if the answer to the question is not of yes/no style.
 
@@ -182,7 +182,7 @@ A [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition which m
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
-The location of an answer is determined by default by the question type (e.g. `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (e.g., `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
+The location of an answer is determined by default by the question type (for example, `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (for example,, `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
 
 ### Forget Question Threshold
 

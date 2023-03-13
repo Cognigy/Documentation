@@ -37,7 +37,7 @@ To change timezone preferences:
   <figcaption>User menu with "My profile" option</figcaption>
 </figure>
 
-- Choose prefered timezone in the "Select Timezone" input.
+- Choose preferred timezone in the "Select Timezone" input.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/my-profile-timezone-selection.png" width="100%" alt="Excerpt of the settings on 'My Profile page'" />

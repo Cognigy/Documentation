@@ -64,7 +64,7 @@ The If Node is one of the most common Logic Nodes. It can be used to evaluate a 
 
 ### [Lookup](./logic/lookup.md)
 
-The Lookup Node acts as a switch between different options. A certain type of input (e.g. Intents) is evaluated and based on the value, a certain branch is executed.
+The Lookup Node acts as a switch between different options. A certain type of input (for example, Intents) is evaluated and based on the value, a certain branch is executed.
 
 ???+ info "Coming from Cognigy version 3.x?"
     The **Lookup Node** was previously known as the **Switch Node**.
