@@ -26,7 +26,7 @@ If you use the Cognigy Voice Gateway Self-Service Portal for the first time, ens
 1. Identify the [user scope](users.md) you have or add a new user. The operations that you can perform in Voice Gateway are based on your user scope, such as Admin, Service Provider, or Account.
 2. Create an [account](accounts.md) or use an existing one.
 3. Create an [application](applications.md) or use an existing one.
-4. Add a [new carrier](webapp/carriers.md) or use an existing one.
+4. Add a [new carrier](carriers.md) or use an existing one.
 5. Add a [phone number](phone-numbers.md) or use an existing one.
 6. Add [speech provider credentials](speech-services.md) or use existing ones.
 
