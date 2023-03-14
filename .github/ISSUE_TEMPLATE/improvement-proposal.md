@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-**URL of the page that needs improving:** {{ URL preferably with an anchor to relevant section }}
+**URL for the page that needs improving:** {{ URL preferably with an anchor to relevant section }}
 
 **Lines of text that need to be replaced:**
 {{ copied snippet of the text to be improved }}

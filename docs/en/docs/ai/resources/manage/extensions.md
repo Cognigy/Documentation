@@ -110,7 +110,6 @@ You can install a custom Extension from the Extension Marketplace by using the â
 
 You can update a custom Extension by selecting the Extension either in the "Marketplace" section or in the "Installed" section and clicking update. If you select an extension in the "Marketplace" section, then the latest version from the Extension Marketplace will replace your installed Extension. If you select the extension in the "Installed" section, you will be asked to upload the updated Extension.
 
-
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/update-extension-package.png" width="100%" />
   <figcaption>Updating a custom Extension</figcaption>
@@ -127,7 +126,7 @@ If you want us to approve your developed extension and publish it on the Extensi
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.6-blue.svg)]({{config.site_url}})
 
-Cognigy.AI considers the code within an extension to be "un-trusted", meaning that the code will be executed in a secure and additional hardened environment by default. There is a certain overhead in bootstrapping this secure environment per execution - hence Flow Nodes from Extensions generally execute slower than our built-in ones (e.g. our "Say"-Node).
+Cognigy.AI considers the code within an extension to be "un-trusted", meaning that the code will be executed in a secure and additional hardened environment by default. There is a certain overhead in bootstrapping this secure environment per execution - hence Flow Nodes from Extensions generally execute slower than our built-in ones (for example, our "Say"-Node).
 
 With Cognigy.AI v4.1.6 we have introduced the ability to "trust" the code of an Extension by letting customers decide whether they want to execute the code in a secure environment or in the normal execution environment in which our own Flow Nodes run.
 
@@ -153,7 +152,27 @@ Enabling the feature will not change anything automatically. Once the feature wa
 ???+ danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
 
+### Making an Extension Trusted
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../../release-notes/4.46.md)
+
+All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
+
+You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
+
+To mark an Extensions as trusted, follow these steps:
+
+1. On the Extensions page, install the existing Extension from Marketplace or add a custom one.
+2. Open the Extension pane by clicking the Extension card.
+3. On the right-side pane, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Trust Extension**.
+The Extension will be marked as trusted.
+
+To mark an Extension as untrusted, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg), then **Untrust Extension**.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/trust-extension.png" width="100%" />
+  <figcaption> Making an Extension Trusted</figcaption>
+</figure>
 
 ## Extension organization-wide embeddable
 <div class="divider"></div>
@@ -199,7 +218,7 @@ EXCEED_DIR_SIZE_AMOUNT_TO_DROP_FROM_MAP
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
-Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through e.g. an external API call.
+Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a new dynamic select field as a new field type in their Extensions. The feature can be used to dynamically fetch the content of a select field through for example, an external API call.
 
 ## Localization for Extensions
 <div class="divider"></div>

@@ -42,6 +42,8 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
+      edit: material/pencil 
+      view: material/eye
   logo: assets/img/Cognigy-white.svg
   favicon: assets/img/favicon.webp
   language: en
@@ -49,7 +51,6 @@ extra_css:
 - assets/css/extra.css
 extra_javascript:
 - assets/js/custom.js
-- assets/js/hotjar.js
 
 nav:
 - Cognigy Products: index.md
@@ -60,6 +61,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.46:
+    - release-notes/4.46.md 
   - 4.45:
     - release-notes/4.45.md
   - 4.44:
@@ -234,12 +237,13 @@ nav:
       - ai/flow-nodes/other-nodes/set-rating.md
       - ai/flow-nodes/other-nodes/set-translation.md
       - ai/flow-nodes/other-nodes/request-rating.md
-      - ai/flow-nodes/other-nodes/complete-text.md
+      - ai/flow-nodes/other-nodes/gpt-prompt.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
       - ai/nlu/nlu-overview/conditions.md
       - ai/nlu/nlu-overview/ml-intents.md
+      - ai/nlu/nlu-overview/yes-no-intents.md
       - ai/nlu/nlu-overview/annotations.md
       - ai/nlu/nlu-overview/intent-analyzer.md
       - ai/nlu/nlu-overview/rule-intents.md
@@ -297,6 +301,7 @@ nav:
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
     - ai/endpoints/real-time-translation-settings.md
+    - ai/endpoints/content-conversion.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
@@ -370,6 +375,7 @@ nav:
       - ai/installation/migration/contents.md
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
+      - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
@@ -464,28 +470,29 @@ nav:
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
     - voicegateway/installation/installation-process.md
-    #- voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
-    # - Deployment:
-    #   - voicegateway/installation/installation-process.md
-  # Temporary disabled until the Web App is done
-  # - Web App:
-    # - voicegateway/webapp/overview.md
-    # - Accounts:
-      #- voicegateway/webapp/accounts.md
-    # - Applications:
-      # - voicegateway/webapp/applications.md
-    # - Recent Calls:
-      # - voicegateway/webapp/recent-calls.md
-    # - Alerts:
-      # - voicegateway/webapp/alerts.md
-    # - Carriers:
-      # - voicegateway/webapp/carriers.md
-    # - Speech Services:
-      # - voicegateway/webapp/speech-services.md
-    # - Phone Numbers:
-      # - voicegateway/webapp/phone-numbers.md
+    - Deployment:
+      - voicegateway/installation/installation-process.md
+  - Self-Service Portal:
+    - Overview:
+      - voicegateway/webapp/overview.md
+    - Users:
+      - voicegateway/webapp/users.md
+    - Accounts:
+      - voicegateway/webapp/accounts.md
+    - Applications:
+      - voicegateway/webapp/applications.md
+    - Recent Calls:
+      - voicegateway/webapp/recent-calls.md
+    - Alerts:
+      - voicegateway/webapp/alerts.md
+    - Carriers:
+      - voicegateway/webapp/carriers.md
+    - Speech Services:
+      - voicegateway/webapp/speech-services.md
+    - Phone Numbers:
+      - voicegateway/webapp/phone-numbers.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
@@ -540,7 +547,8 @@ markdown_extensions:
     - name: mermaid
       class: mermaid
       format: !!python/name:pymdownx.superfences.fence_code_format ''
-- pymdownx.tabbed
+- pymdownx.tabbed:
+    alternate_style: true 
 - pymdownx.tasklist:
     custom_checkbox: true
 - pymdownx.tilde
@@ -568,6 +576,23 @@ extra:
   alternate:
   - link: /
     name: en
+  analytics:
+   provider: google
+   property: UA-101284175-2  
+   feedback:      
+      title: Was this page helpful?
+      ratings:
+       - icon: material/thumb-up-outline
+         name: This page was helpful
+         data: 1
+         note: >-
+            Thanks for your feedback!
+       - icon: material/thumb-down-outline
+         name: This page could be improved
+         data: 0
+         note: >- 
+            Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via a GitHub issue</a>
+ 
 plugins:
 - section-index
 - macros

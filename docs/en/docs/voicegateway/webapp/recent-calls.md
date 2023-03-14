@@ -4,12 +4,40 @@
  hidden: true 
 ---
 
-# Voice Gateway Web App - Recent Calls
+# Recent Calls
 
-The **Recent Calls** page displays an overview of all calls of your Account. Voice Gateway provides general data about the calls such as the Date, Direction, From, To, SIP Trunk and Call Duration. These calls can be filtered by Date, Direction and Status. Please note that you can only filter by maximum the last _30 days_.
+*Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png" alt="Voice Gateway WebApp Recent Calls" />
+Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
 
-Next to the general call information you have a set of detailed information that can be accessed by clicking the '+' sign next to the date. Additionally Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
+To view detailed information about the call, click on the call tab.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls-details.png" alt="Voice Gateway WebApp Recent Calls Details" />
+Additionally, Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
+
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png"  width="100%" />
+
+## PCAP fields
+
+| Settings             | Description                                                                                                                             |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| attempted_at         | The time of the attempt.                                                                                                                |
+| account_sid          | Identifies the account this phone belongs to.                                                                                           |
+| answered             | Determines whether a call was answered or not.                                                                                          |
+| answered_at          | The time when an answer was given.                                                                                                      |
+| application_sid      | A unique identifier for the application.                                                                                                |
+| call_sid             | A unique identifier for the call. Specific for the call SIP sessions.                                                                   |
+| direction            | Determines whether a call was inbound or unbound.                                                                                       |
+| duration             | The duration of the call in seconds.                                                                                                    |
+| from                 | A phone number of the party who made the call.                                                                                          |
+| host                 | An SBC SIP server that handled the incoming calls.                                                                                      |
+| remote_host          | Displays the IP address of carrier/SIP trunk.                                                                                           |
+| service_provider_sid | A unique identifier for the service provider.                                                                                           |
+| sip_callid           | A unique session identifier that you can use for several purposes, including call logging and billing correlation.                      |
+| sip_status           | A [SIP code response](https://en.wikipedia.org/wiki/List_of_SIP_response_codes).                                                        |                                                       |
+| terminated_at        | The time of the call was ended.                                                                                                         |
+| termination_reason   | The reason why the call was ended.                                                                                                      |
+| to                   | A phone number of the party to whom the call was made.                                                                                  |
+| trace_id             | A unique identifier for the call. Can be used to track any type of call or session as it passes through different parts of the network. |
+| trunk                | A [carrier](carriers.md) name.                                                                                                          |
+
+

@@ -6,43 +6,61 @@
 
 # Getting Started with Voice Gateway
 
-<img src="{{config.site_url}}voicegateway/images/VG-logo.png" width="Voice Gateway Logo" />
+<figure>
+<img class="image-center" src="{{config.site_url}}voicegateway/images/VG-logo.png" width="80%" />
+   <figcaption>Voice Gateway Logo</figcaption>
+</figure>
 
 ## How to Set Up Voice Gateway?
 
-<div class="divider"></div>
+To set up Voice Gateway, do the following steps:
 
-Setting up Voice Gateway is easy and can be done in 3 steps:
+1. [Create a Voice Gateway flow](#create-a-voice-gateway-flow)
+2. [Create a Voice Gateway Endpoint](#create-a-voice-gateway-endpoint)
+3. [Route your Contact Center or Phone Number to Voice Gateway](#route-your-contact-center-or-phone-number-to-voice-gateway)
 
-1. Create your [Voice Flow]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) in Cognigy.AI.
-2. Create a [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vg/) in your Cognigy.AI agent.
-3. Route your Endpoint and Contact Center to Voice Gateway in the [Voice Gateway Web App]({{config.site_url}}voicegateway/webapp/overview/).
+## Create a Voice Gateway flow
 
-## How to create a Voice Flow in Cognigy.AI?
+Start your **Voice Gateway** project by creating a voice-enabled flow. With a voice conversation, the virtual agent must respond with a text-based message for every user input. Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs that are triggered by the flow will be bundled into one message and delivered across the phone line.
 
-<div class="divider"></div>
+Every Cognigy.AI node that offers text-based messages can be used in a voice flow. If you have rich media in your flow, the fallback text field will be used as voice output.
 
-Start your **Voice Gateway** project by creating a voice enabled flow. With a voice conversation, the bot must respond with a text based message for every user input. Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs that are triggered by the flow will be bundled into one message and delivered across the phone line.
+If there is a Voice Gateway channel-specific configuration, this configuration will be used instead of the one in the default section. In the Voice Gateway channel, you can find pre-defined SSML tags and [activity parameters]({{config.site_url}}ai/flow-nodes/vg/parameter-details/).
 
-Every Cognigy.AI node that offers text based messages can be used in a voice flow. If you have rich media in your flow the fallback text field will be used as voice output.
+For voice-specific actions, you can use the [Voice Gateway Flow Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/).
 
-If there is a Voice Gateway channel-specific configuration, this configuration will be used instead of the one on the default section. In the Voice Gateway channel you can find pre-defined SSML tags and [activity parameters]({{config.site_url}}ai/flow-nodes/vg/parameter-details/).
+!!! note
+    With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
 
-For voice specific actions you can use the [Voice Gateway Flow Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/).
+<figure>
+   <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png"  width="80%" />
+</figure>
 
-<img src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png" width="Voice Gateway Nodes Overview" />
+## Create a Voice Gateway Endpoint
 
-## Which Endpoint to create in Cognigy.AI?
+To do voice-based experiences with your Virtual Agent, create your [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vg/) in Cognigy.AI. To do that:
 
-In order to do enable voice-based experiences with your Virtual Agent create your [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vg/) in Cognigy.AI. To do this, navigate to your Agent, open the _Deploy_ submenu in the resources panel on the left side of the screen and select “Endpoints”. To add the Voice Gateway Endpoint, simply click the _+ New Endpoint_ button from the top of the screen. After you have created your Endpoint you can point it to your voice flow.
+1. In the left-side menu of you Agent, click **Deploy > Endpoints**. 
+2. On the **Endpoints** page, click **+ New Endpoint**. 
+3. In the **New Endpoint** section, do the following:
+   3.1 Select the **VoiceGateway** Endpoint type.
+   3.2 Add a unique name.
+   3.3 Select a relevant FLow from the list.
+4. Click **Save**.
 
-<img src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="Voice Gateway New Endpoint" />
-
-## How to route your Endpoint and Contact Center or Phone Number to Voice Gateway?
-
-In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint your SIP Trunk needs to be set up. Please get in touch with us to configure your SIP Trunk and route your number to the right endpoint.
+<figure>
+   <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
+</figure>
 
 
-???+ warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Cognigy Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
-    This applies to the Flow Nodes and the Endpoint.
+## Route your Contact Center or Phone Number to Voice Gateway
+
+To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with [Cognigy technical support](../help/get-help.md) to configure your SIP Trunk and route your number to the right Endpoint.
+
+## What's next?
+
+- [Create an account](webapp/accounts.md)
+- [Create an application](webapp/applications.md)
+- [Add a new carrier](webapp/carriers.md)
+- [Add a phone number](webapp/phone-numbers.md)
+- [Add speech provider credentials](webapp/speech-services.md)

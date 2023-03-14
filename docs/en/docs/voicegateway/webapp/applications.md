@@ -4,25 +4,26 @@
  hidden: true 
 ---
 
-# Voice Gateway Web App - Applications
+# Applications
 
-The **Applications** overview will give a quick look on all created Applications for your **Account**.
+*Applications* are connectors that allow the [Endpoint](../getting-started.md#create-a-voice-gateway-endpoint) to be routed to Voice Gateway. All the default values, such as default speech vendor, language, and voice for the Text-To-Speech output and Speech-To-Text recognition, are set in the application.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-applications-overview.png" alt="Voice Gateway WebApp Applications" />
+To create an application, select **Applications** in the left-side menu, then click **Add application** or **+**.
 
-## Overview
+You can create more than one application, dependent on the number of Endpoints created in Cognigy.AI.
 
-<div class="divider"></div>
+After creating an application, you can edit or delete it.
 
-An **Application** represents an Endpoint in Cognigy.AI. By creating an Application in the Voice Gateway Web App the Endpoint is being routed to Voice Gateway. It is possible to add multiple Applications, dependend on the amount of the Endpoints created in Cognigy.AI. All the default values are being set in the Application such as default speech vendor, language and voice for the Text-To-Speech output and Speech-To-Text recognition.
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-applications-overview.png"  width="100%" />
 
-<img class="image-center" src="{{config.site_url}}voicegateway/images/VG-webapp-applications-new-app.png" width="Voice Gateway WebApp Applications New Application" />
+## Settings 
 
-| Settings                 | Description                                                                          |
-| ------------------------ | ------------------------------------------------------------------------------------ |
-| Name                     | Application Name                                                                     |
-| Calling Webhook          | Cognigy.AI Endpoint URL for the Web Application that will handle calls               |
-| Call Status Webhook      | Cognigy.AI Endpoint URL for the Web Application that will receive the call status    |
-| Messaging Webhook        | Cognigy.AI Endpoint URL for the Web Application that will receive SMS, if configured |
-| Speech Synthesis Vendor  | Default Vendor, Language and Voice Settings for Text-To-Speech output                |
-| Speech Recognizer Vendor | Default Vendor and Language Settings for Speech-To-Text recognition                  |
+| Settings                  | Description                                                                          | Scope                           |
+| ------------------------- | ------------------------------------------------------------------------------------ | ------------------------------- |
+| Application Name          | A unique application name.                                                           | Account, Service Provider, Admin|
+| Account                   | Select an account from the list.                                                     | Account, Service Provider, Admin| 
+| Calling Webhook           | A Cognigy.AI Endpoint URL for the Web Application that will handle calls.            | Account, Service Provider, Admin|
+| Call Status Webhook       | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status. | Account, Service Provider, Admin| 
+| Speech synthesis vendor   | Select a default Vendor and set up Language Settings for Text-To-Speech output.      | Account, Service Provider, Admin| 
+| Speech recognizer vendor  | Select a default Vendor and set up Language Settings for Speech-To-Text recognition. | Account, Service Provider, Admin|
+

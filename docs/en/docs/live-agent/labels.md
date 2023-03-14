@@ -35,8 +35,8 @@ A screen will open where you can design your Labels. Make sure to give meaningfu
 
 | Field Name             | Value                                                                    | Remarks                                                                                  |
 |------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Label Name             | Assign a name for the Label to identify its category                     | eg: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
-| Description            | Give a short description of what the Label represents                    | eg: This customer issue is to be resolved with priority                                    |
+| Label Name             | Assign a name for the Label to identify its category                     | For example,: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
+| Description            | Give a short description of what the Label represents                    | For example,: This customer issue is to be resolved with priority                                    |
 | Color                 | Select a color for the Label for easy  identification                     | After selection, click on the small square again                                          |
 | Show Label on Sidebar  | Select this option if you want the Label to  be displayed on the sidebar | This will help in easy identification of the Conversations                               |
 

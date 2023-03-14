@@ -4,12 +4,17 @@
  hidden: true 
 ---
 
-# Voice Gateway Web App - Speech Services
+# Speech Services
 
-The **Speech Services** page allows to add multiple Speech Vendors to the Voice Gateway. These Vendors can be added by clicking the '+' on the top right corner. 
+*Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. 
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-add-speech-service.png" alt="Voice Gateway WebApp Add Speech Services" />
+To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
-On the general overview you can see all the added speech services, if they are used for STT and/or TTS services, when the service has been last used and the status.
+You can create more than one speech service.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png" alt="Voice Gateway WebApp Speech Services" />
+After creating a speech service, you can edit or delete it.
+
+!!! warning
+    Users with an Account scope can only edit speech services they have created, as well as speech services created by other users with the same scope. They can still use and view speech services shared by Service providers or Admins.
+
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png"  width="100%" />

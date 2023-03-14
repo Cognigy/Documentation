@@ -21,7 +21,7 @@ In the Cognigy.AI interface, Generative AI generates human-like and personalized
 - [Creating new Flows with pre-configured Nodes](#generate-flows)
 - [Generating new Intent sentences](#generate-intent-sentences)
 - [Rephrasing bot outputs](#rephrase-bot-outputs)
-- [Completing texts](#complete-texts)
+- [Completing texts](#gpt-prompt)
 
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
@@ -136,9 +136,9 @@ Check in the interactive panel if your Flow works as expected.
   <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
 </figure>
 
-## Complete texts
+## GPT Prompt
 
-The [Complete Text Node](./flow-nodes/other-nodes/complete-text.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+The [GPT Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
 
 ## FAQ
 

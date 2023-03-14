@@ -45,10 +45,11 @@ It is common for messages to be sent to Cognigy.AI with attached data. It is pos
 
 #### Voice Call
 
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
 
-???+ info "Feature availability"
-    This feature is currently hidden behind the flag *FEATURE_ENABLE_YES_NO_INTENTS*. Reach out to the support team if you want to enable this feature.
+!!! info "Feature availability"
+    - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
+    - If you use an On-Premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_VOICECALL_WHITELIST`  in `values.yaml`. For example, `FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>`.
 
 When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
 
@@ -76,13 +77,17 @@ When the call is ongoing, you will be able to see how long the call is currently
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-By selecting **Live Follow** as the input mode, you will be able to follow the conversations of the user with the help of a User ID. In the input field, simply enter the ID of the user that you wish to follow and hit the enter key (or simply press *Start Live Following* button). From now on, you will be able to see and follow the live conversation of the user from your Interaction Panel. Click on *Stop Live Following* button if you don't want to follow the user anymore.
+By selecting **Live Follow** as the input mode, you will be able to follow the conversations of the user with the help of a User ID. In the input field, simply enter the ID of the user that you wish to follow and hit the enter key (or simply click **Start Live Following**). You will be able to see and follow the live conversation of the user from your Interaction Panel. Click on **Stop Live Following** button if you don't want to follow the user anymore.
+
+!!! note
+    Human agent messages are not shown in the Live Follow mode.
+  
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="100%" />
 </figure>
 
-You can test this input mode with our demo webchat in Endpoint Editor. For further information, please refer to *Manually defining the user ID* info box [here]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/#description).
+You can test this input mode with our demo webchat in Endpoint Editor. For further information, refer to **Manually defining the user ID** info box [here]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/#description).
 
 #### Playbook
 When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
@@ -123,7 +128,7 @@ The **Context** can be seen as the short-term memory of the **Virtual Agent** an
     Head over to [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information. 
 
 ### Profile object
-The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as usecase specific information like e.g. the user's favorite color.
+The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
 
 ???+ info "Profile object"
     Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
@@ -133,7 +138,7 @@ The **(Contact) Profile** acts as persistent - long term - memory and is used to
 The Interaction Panel can be configured with a number of settings across different sections.
 
 ### Chat Input
-This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connecter 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
+This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connector 3rd-party NLU engines by navigating to the [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-chat-input.png" width="100%" />
@@ -161,7 +166,7 @@ We can also filter the messages in the Interaction panel by a specific channel. 
 
 ### Voice Call
 
-[![Version badge](https://img.shields.io/badge/BETA-green.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
 
 This section allows you to choose the language and voice for testing the voice calls from Interaction Panel.
 
@@ -202,7 +207,7 @@ If turned on, based on the Interaction Panel outputs, the Flow Editor will autom
     Turning this setting on will automatically turn off and disable *Auto-switch Target Flow Selection* setting.
 
 #### Auto-switch Target Flow Selection
-When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow openened in the Flow Editor. 
+When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow Editor. 
 
 ### Input
 

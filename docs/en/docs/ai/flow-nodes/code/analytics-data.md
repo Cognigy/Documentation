@@ -62,4 +62,4 @@ analyticsdata.custom2 = JSON.stringify(customData);
 
 ## Analytics data life span
 <div class="divider"></div>
-The analyticsdata object is generated for each Flow Execution. This means that any data you store in the analyticsdata object (e.g. a custom field) will only be stored in analytics for this Flow Execution. On the next Flow Execution, there will be a new analyticsdata object with a new intent etc.
+The analyticsdata object is generated for each Flow Execution. This means that any data you store in the analyticsdata object (for example, a custom field) will only be stored in analytics for this Flow Execution. On the next Flow Execution, there will be a new analyticsdata object with a new intent etc.

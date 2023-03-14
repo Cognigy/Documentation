@@ -158,6 +158,11 @@ Should you wish to include an already prepared or "canned" response as a reply, 
 ###  How to request file upload
 <div class="divider"></div>
 
+!!! note
+    Supported File Types: jpeg, jpg, png, docx, wav, ogg, pdf
+    
+    Maximum File Size: 40MB
+
 There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box you can click on the "Request file" icon.
 
 

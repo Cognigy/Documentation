@@ -15,14 +15,14 @@ Warnings will only be generated and forwarded to our user interface when the Int
 
 ### Example: How does the Feature NLU Warnings work
 
-* Open the Cognigy.AI dashboard and [create a new Flow](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)  e.g. named as NLU Warnings
+* Open the Cognigy.AI dashboard and [create a new Flow](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)  for example, named as NLU Warnings
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/e245ae6-Screen_Shot_045s.png" width="100%" />
 </figure>
 
-* Open the new Flow  via mouseclick and select tab **NLU**
-* Create a new **intent** e.g. "int1" and enter more than three example sentences (e.g. "Test1"... "Test5")
+* Open the new Flow and select tab **NLU**
+* Create a new **intent** for example, "int1" and enter more than three example sentences (for example, "Test1"... "Test5")
 
 
 **For a proper intent scoring it is important to define "Rules" and "Conditions"!** -  so we do it
@@ -48,7 +48,7 @@ Activated Expert mode will show more detailed data on the Interaction panel!
 
 Now every input (Text Message) on the Interaction Panel will be evaluated with the defined Rules and Conditions of the created intent. As result a notification will be displayed (see image above) which indicates the intent name and the percentage rating number (1 means 100%).
 
-In case that "Rules" or "Conditions" are not defined correctly (e.g. missing relevant code details), a NLU Warning will be displayed on the Interaction Panel which is displayed for 30 seconds (see following image)
+In case that "Rules" or "Conditions" are not defined correctly (for example, missing relevant code details), a NLU Warning will be displayed on the Interaction Panel which is displayed for 30 seconds (see following image)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/77246aa-Screen_Shot_054.PNG" width="100%" />

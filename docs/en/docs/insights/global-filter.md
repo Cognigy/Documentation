@@ -65,7 +65,7 @@ Available preset time periods are:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
 
-It is possible to select hours for the chosen timeframe. This might be helpfull if needed to narrow the result to a more precise range. For this, enable "Select time"
+It is possible to select hours for the chosen timeframe. This might be helpful if needed to narrow the result to a more precise range. For this, enable "Select time"
 option when setting a Custom Timeframe
 
 <figure>
@@ -118,7 +118,7 @@ without any snapshot (live deployment, here "None" option)**.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
 
-You can granually inspect the analytics data by chosing only the preferred snapshots, also by using the "negate" option - in this case you will be excluding certain options. 
+You can granually inspect the analytics data by choosing only the preferred snapshots, also by using the "negate" option - in this case you will be excluding certain options. 
 
 For example, selecting "None" and "Negate" will show all the data excluding the one gathered from endpoints without selected snapshots.
 

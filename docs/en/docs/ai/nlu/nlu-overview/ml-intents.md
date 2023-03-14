@@ -5,7 +5,7 @@
 ---
 # Machine learning Intents
 
-Intents are collections of identified user intents (e.g. what does the user want).
+Intents are collections of identified user intents (for example, what does the user want).
 
 The user input is scored against all example sentences and Cognigy.AI will identify the intent with the highest score as the intent for this input if it is above the configured [thresholds]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/#thresholds).
 
@@ -112,7 +112,7 @@ To use Generative AI technology for creating Intent example sentences, read the 
 
 When writing example sentences, it is possible to add System Slots and attached Lexicons to the sentence structure by using the Annotations feature. 
 
-If you have configured **Lexicons** with similar items (e.g. pizza = FOOD and cake = FOOD), you don't need to enter similar sentences for both. Build a general sentence that will be configured with Annotations to recognize your custom Lexicon keyphrases e.g. `I want to order some FOOD`.
+If you have configured **Lexicons** with similar items (for example, pizza = FOOD and cake = FOOD), you don't need to enter similar sentences for both. Build a general sentence that will be configured with Annotations to recognize your custom Lexicon keyphrases for example, `I want to order some FOOD`.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/e85013c-lexiconSentences.PNG" width="100%" />

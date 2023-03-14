@@ -6,7 +6,7 @@
 
 ### Browser Requirements
 
-The Voice Gateway Web Portal works with most modern web browsers. The following table shows the list of supported web browsers:
+The Voice Gateway Self Service Portal works with most modern web browsers. The following table shows the list of supported web browsers:
 
 | Browser         | Minimum version |
 | --------------- | --------------- |
