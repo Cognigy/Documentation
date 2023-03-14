@@ -10,7 +10,7 @@ The Live Agent dashboard displays Live Agent metrics for a specific Virtual Agen
 
 Using this dashboard, you can:
 
-- Track the speed of the customer's first reply from a human agent.
+- Track the speed of the customer's first reply and resolution from a human agent.
 - Monitor the total number of handovers for the virtual agent.
 - Summarize conversation statuses.
 - Evaluate conversation types based on assigned label.
@@ -20,6 +20,8 @@ These metrics are visualized in the following charts:
 - [Indicators](#indicators) 
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
+
+Each chart presents real-time data that refreshes every 30 seconds.
 
 All data displayed in the charts relate to the [global filter](global-filter.md) settings.
 
@@ -32,21 +34,21 @@ All data displayed in the charts relate to the [global filter](global-filter.md)
 
 ### Live Agent Escalations
 
-Indicates the number of sessions in which a customer contacts a human agent. Multiple handovers may occur during a session, but they are counted as one escalation.
+Indicates the number of sessions in which a customer contacts a human agent. Multiple handovers may occur during a session.
 
 Source table:
 
 ```txt 
-| Sessions    | DateTime  | Handovers per session  |
-| ----------- | --------- | ---------------------- |
-| session-123 | 1/08/2023 |          1             |
-| session-456 | 1/09/2023 |          0             |
-| session-789 | 1/11/2023 |          0             |
-| session-abc | 1/15/2023 |          2             | 
-| session-def | 1/16/2023 |          4             |
+| Sessions    | DateTime  | Handovers per session  | Escalation |
+| ----------- | --------- | ---------------------- | ---------- |
+| session-123 | 1/08/2023 |          1             |     1      |
+| session-456 | 1/09/2023 |          0             |     0      |
+| session-789 | 1/11/2023 |          0             |     0      |
+| session-abc | 1/15/2023 |          2             |     1      |
+| session-def | 1/16/2023 |          4             |     1      |
 ```
 
-Result: `3`
+Result: `5`
 
 
 ### Handover Rate
@@ -56,16 +58,16 @@ Indicates the percentage of all sessions escalated to Cognigy Live Agent, calcul
 Source table:
 
 ```txt 
-| Sessions    | DateTime  | Handovers per session  |
-| ----------- | --------- | ---------------------- |
-| session-123 | 1/08/2023 |          1             |
-| session-456 | 1/09/2023 |          0             |
-| session-789 | 1/11/2023 |          0             |
-| session-abc | 1/15/2023 |          2             | 
-| session-def | 1/16/2023 |          4             |
+| Sessions    | DateTime  | Handovers per session  |  Escalation   |
+| ----------- | --------- | ---------------------- | ------------- |
+| session-123 | 1/08/2023 |          1             |       1       |
+| session-456 | 1/09/2023 |          0             |       0       |
+| session-789 | 1/11/2023 |          0             |       0       | 
+| session-abc | 1/15/2023 |          2             |       1       | 
+| session-def | 1/16/2023 |          4             |       1       | 
 ```
 
-Calculation: `(Live Agent Escalations) / (Total Sessions) * 100%`
+Calculation: `(Number of Live Agent Escalations) / (Total Sessions) * 100%`
 
 Result: `60%` 
 
@@ -94,7 +96,7 @@ Result: `1 min 10 sec`
 
 ### Avg. Resolution Time
 
-Indicates the average difference between the Live Agent opening a conversation and resolving it.
+Indicates the average difference between when a user request is escalated to a human agent and when the human agent resolves the conversation.
 
 Source table:
 
@@ -121,12 +123,12 @@ Result: `9 min`
 
 Shows the timescale of different conversation statuses:
 
-- Opened  a conversation is opened by a user or reopened by a human agent
-- Pending - a conversation is paused until a customer or human agent responds
-- Assigned - a conversation is assigned to a human agent
-- Snoozed - a conversation is temporarily suspended until a time trigger or customer response trigger is activated
-- Abandoned - a conversation is closed because the user terminates the session
-- Resolved  a conversation is closed because the user's problem was resolved
+- Opened — a conversation is opened by a user or reopened by a human agent.
+- Pending — a conversation is paused until a customer or human agent responds.
+- Assigned — a conversation is assigned to a human agent.
+- Snoozed — a conversation is temporarily suspended until a time trigger or customer response trigger is activated.
+- Abandoned — a conversation is closed because the user left a conversation.
+- Resolved — a conversation is closed because the user's problem was resolved.
 
 The chart indicates how the Live Agents' performance varied over time. 
 
@@ -177,7 +179,7 @@ Result:
 
 ### Live Agent Performance Times
 
-Shows the timeline of the average first response and the average handling time. This metric is calculated based on daily number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and handling time.
+Shows the timeline of the average first response and the average resolution time. This metric is calculated based on daily number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
 
 The First Response Time metric refers to the average time a human agent takes to send a first response to a customer's request. 
 The Handling Time metric refers to the average time a human agent spends working on a customer's request, including the time spent writing a response and any additional time spent researching or resolving the issue.
@@ -185,7 +187,7 @@ The Handling Time metric refers to the average time a human agent spends working
 Source tables:
 
 - [Avg. First Response Time](#avg-first-response-time)
-- [Avg. Handling Time](#avg-handling-time)
+- [Avg. Resolution Time](#avg-resolution-time)
 
 Result:
 
