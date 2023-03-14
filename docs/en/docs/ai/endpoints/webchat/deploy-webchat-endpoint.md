@@ -45,7 +45,7 @@ You can configure almost everything about the Webchat to personalize it just for
 | Parameter |	Description |
 | -- | -- |
 | Webchat Title | The text to display within the webchat header |
-| Color Scheme | The main colors for the Webchat, e.g. #008080 |
+| Color Scheme | The main colors for the Webchat, for example, #008080 |
 | Bot Avatar Logo URL | A URL linking to the logo that should be the bot's avatar |
 | Header Logo URL | A URL linking to the logo that should be displayed in the Webchat header |
 | Enable Typing Indicators | Enables a typing indicator while the Bot is replying |
@@ -95,7 +95,7 @@ To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The 
   <figcaption>Webchat Plugins</figcaption>
 </figure>
 
-All plugins linked in this list field will be loaded by the Webchat Widget when started. To trigger the plugin, e.g. display an upload button for the file-upload plugin a plugin specific data payload is required.
+All plugins linked in this list field will be loaded by the Webchat Widget when started. To trigger the plugin, for example, display an upload button for the file-upload plugin a plugin specific data payload is required.
 
 Get sure all plugins are reachable for your whole audience!
 
@@ -180,6 +180,17 @@ Get sure all plugins are reachable for your whole audience!
 </figure>
 
 This field can be used to configure additional settings not available in the GUI. These settings override GUI settings. Entering malformed JSON might result in crashing the webchat, so use with caution and at own risk!
+
+## File Storage
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+
+By default, users cannot attach files to a chat message. If you want to allow users to upload files via drag and drop or by clicking the attachment symbol, connect to one of the following file storage providers:
+
+- Azure - specify a unique connection name and [Azure Blob Storage Container](https://learn.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction) credentials: containerName, account, and accountKey.
+- AWS - specify a unique connection name and [Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/create-bucket-overview.html) credentials: secretAccessKey, region, bucketName.
+- Google Cloud - specify a unique connection name and [Google Cloud Storage Bucket](https://cloud.google.com/storage/docs/buckets) credentials: buketName, clientName, privateKey.
+
 
 ## More information
 

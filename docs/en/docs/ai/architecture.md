@@ -28,7 +28,7 @@ which is called a container orchestrator. [Kubernetes](https://kubernetes.io/) i
 
 - assigning containers to one of the available servers in the Kubernets cluster respecting their individual hardware requirements and matching these against the available hardware on a server
 - observing whether containers need to be restarted in case they crash
-- updating containers to a newer version when a software update (e.g. new version of Cognigy.AI) has been shipped
+- updating containers to a newer version when a software update (for example, new version of Cognigy.AI) has been shipped
 - testing whether containerized processes still respond by implementing readiness- and liveness-probes
 
 ## Runtime & IDE
@@ -50,7 +50,7 @@ Cognigy Insights plays a smaller role regarding Cognigy.AIs product architecture
 A place that allows you to create Virtual Agents and use all of the functionality like Flows, Playbooks, Lexicons & Intents. We call this part
 of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration
 of your Virtual Agent, a so-called [Snapshot]() must be created in order to deploy your Virtual Agent into production. A Snapshot is an immutable
-copy of your Virtual Agent containing all resources which make it up - e.g. your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface
+copy of your Virtual Agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface
 to the second group of functionality: The Cognigy.AI Runtime.
 
 The following table shows the most relevant microservices forming the IDE:

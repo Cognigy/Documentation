@@ -15,3 +15,4 @@ Periodic backups of Cognigy.AI installation are crucial for production operation
 - MongoDB data (`datadir-mongodb-0` - `datadir-mongodb-2` PVs)
 - `flow-modules` and `functions` shared PVs
 
+The exact backup and disaster recovery plan depends on your choice's cloud provider and the Kubernetes cluster's provisioning method. Thus, we do not adhere to any guidelines but recommend following your cloud provider's backup and disaster recovery best practices. There are also open-source tools like [Velero](https://velero.io/) that can help you automate backups and disaster recovery for Kubernetes clusters in a vendor-neutral way. 

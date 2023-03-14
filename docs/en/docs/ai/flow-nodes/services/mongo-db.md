@@ -1,6 +1,6 @@
 ---
- title: "mongo-db" 
- slug: "Mongo DB" 
+ title: "Mongo DB" 
+ slug: "mongo-db" 
  hidden: false 
 ---
 # Mongo DB

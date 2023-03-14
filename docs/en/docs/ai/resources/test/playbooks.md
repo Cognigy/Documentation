@@ -21,7 +21,7 @@
 ## Functionality
 
 #### Set timeout per step
-To set the timeout threshold for each step in the playbook, type a duration in miliseconds into this text field. If a step takes longer than this threshold, an error will be thrown in the playbook player.
+To set the timeout threshold for each step in the playbook, type a duration in milliseconds into this text field. If a step takes longer than this threshold, an error will be thrown in the playbook player.
 
 #### Toggle 'abort on error'
 This setting determines whether to continue after a failed step or abort the playbook on the first step with errors.

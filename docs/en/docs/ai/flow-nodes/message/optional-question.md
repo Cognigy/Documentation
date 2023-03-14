@@ -1,6 +1,6 @@
 ---
- title: "optional-question" 
- slug: "Optional Question" 
+ title: "Optional Question" 
+ slug: "optional-question" 
  hidden: false 
 ---
 # Optional Question
@@ -45,7 +45,7 @@ An Optional Question Node is used to ask a question that requests specific infor
 | Duration | Any time duration (system-defined) |
 | Email | Any email address (system-defined) |
 | Money | Any monetary value (system-defined) |
-| URL | Any reference/address to a resource on the Internet e.g. http://example.com |
+| URL | Any reference/address to a resource on the Internet for example, http://example.com |
 | Percentage | Any percentage (system-defined) |
 | Regex | Any custom data format defined by a regex expression must be detected in the user's response |
 | Data | Any data (input.data) input |
@@ -102,3 +102,7 @@ When an Optional Question is "active", meaning an answer is being waited for, in
     "forgetQuestionThreshold": 3
 }
 ``` 
+
+## AI-enhanced output
+
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.

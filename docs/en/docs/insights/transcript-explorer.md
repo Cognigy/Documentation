@@ -33,7 +33,7 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 ???+ info "Note"
 
-    Using the **"Negate "** slider bar**" all but the selected" filter option(s) will be analyzed.
+    Using the **"Negate "** slider bar**" all but the selected" filter options will be analyzed.
     For example when selecting the 'Agent messages' and toggling "Negate" then all data will be analyzed but not Agent-message data.
 
 <figure>

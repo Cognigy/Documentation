@@ -18,6 +18,6 @@ On reaching an Interval Node, only if it has not been executed within the define
 
 At the beginning of a session, all Interval Nodes will be active.
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Interval | CognigyScript | Time (in miliseconds) |
+| Parameter | Type          | Description            |
+|-----------|---------------|------------------------|
+| Interval  | CognigyScript | Time (in milliseconds) |

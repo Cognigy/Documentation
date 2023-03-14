@@ -63,5 +63,5 @@ The **Token Management Menu** can be found under the *Manage* section of the *Ag
 
 A token can be deleted by resting the cursor on a token, clicking the menu icon that appears on the right end of the interface and selecting *"Delete ".*
 
-???+ info "Script Persistance"
-    Deleting Tokens will not remove the **Cognigyscript** from the Nodes that used the Token.
+???+ info "Script Persistence"
+    Deleting Tokens will not remove the **CognigyScript** from the Nodes that used the Token.

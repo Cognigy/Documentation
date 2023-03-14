@@ -32,7 +32,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 |HTTP-Request Flow Node timeout |8 s ||**15 s** |
 |Maximum JSON encoded payload size for requests to our RESTful API|60 kB |||
 |Minimum HTTP text body (used in CSV) |100 kB |||
-|Maximum text encoded (raw) payload size for request to our RESTful API (e.g. used to upload CSV files) |2 MB |||
+|Maximum text encoded (raw) payload size for request to our RESTful API (for example, used to upload CSV files) |2 MB |||
 |**NLU** |||
 |Maximum number of Example Sentences per Intent in Flows |200 |||
 |Maximum total number of Example Sentences in Flows including Attached Flow Example Sentences |10,000 |**15,000**||

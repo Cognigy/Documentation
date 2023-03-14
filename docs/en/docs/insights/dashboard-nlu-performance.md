@@ -5,6 +5,8 @@
 ---
 # NLU Performance
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 ## NLU Performance Dashboard
 
 <div class="divider"></div>
@@ -26,13 +28,16 @@ More information regarding "NLU" and "Intents" you will find here: [NLU Overview
   <figcaption>NLU Performance dashboard details</figcaption>
 </figure>
 <div id="nlu-1"></div>
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 |Graph title|	Description|
 |--|--|
-|Understood messages|	This percentage value, displayed as a report arranged in a tile, relates to the evaluated messages and is helpful to improve your agent in natural language understanding.<br>Clicking on the three dots menu item you can select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to the Intent Trainer in Cognigy.AI to improve your Agent.|
+|Understood messages|	This percentage value, displayed as a report arranged in a tile, relates to the evaluated messages and is helpful to improve your agent in natural language understanding. <br> A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow. <br> Clicking on the three dots menu item you can select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to the Intent Trainer in Cognigy.AI to improve your Agent.|
 |Average Execution Time|	The average time it took to execute the Flow in ms.<br>The execution time is displayed as a report arranged in a tile and as a graph on a timeline scale as well<br>A tooltip will display additional info in the line chart depending on the cursor position. Time scaling depends on the global filter "Timeframe" setting.|
 |Avg Intent Score	|This tiled report shows the average figure between 0 and 1 and indicates the quality of your Agent how "good" Intents were found in conversations, depending on the global filter "Timeframe" setting. <br>More information about Intents you will find here: [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)|
 |Max Intent Score|	This tiled report shows the figure of how many Intents the Agent matched with 100%.|
-|Understood/Misunderstood Messages|	This stacked bar chart shows bars on a timeline (per month) which figures out in percentage the understood /misunderstood messages in conversations. Tooltip info displays the exact number, percentage value, and month.<br>The "Understood" values form the lower parts of the stacked bar chart. <br>Clicking on the three dots menu item you can select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to the Intent Trainer in Cognigy.AI to improve your Agent.|
+|Understood/Misunderstood Messages|	This stacked bar chart shows bars on a timeline (per month) which figures out in percentage the understood /misunderstood messages in conversations. Tooltip info displays the exact number, percentage value, and month.<br>The "Understood" values form the lower parts of the stacked bar chart. <br> A message is counted as understood/misunderstood if it has triggered an intent, a slot is matched, or it is marked as understood or misunderstood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood/misunderstood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow.<br>Clicking on the three dots menu item you can select the "Go to [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/)" option that leads you to the Intent Trainer in Cognigy.AI to improve your Agent.|
 
 ???+ info "Note"
     **The on top of the dashboard placed blue tiles show currently valid data in a "live" mode. That means that data will be refreshed every 30 seconds to be updated.**

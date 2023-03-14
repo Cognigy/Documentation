@@ -36,7 +36,7 @@ If there is a Channel-specific configuration for the current Channel, this confi
 ## Output Types
 <div class="divider"></div>
 
-The AI Channel allows for the configuration of different **Output Types**:
+The AI Channel allows for the configuration of different **Output Types**. Not all [endpoints](../../endpoints/overview.md) can correctly convert your content to the desired output type. Before configuration, [check the compatibility](../../endpoints/content-conversion.md) of the output type with the endpoint.
 
 ### Text
 <figure>
@@ -55,6 +55,7 @@ Multiple text messages can be added for conversational variation. When multiple 
 
 ???+ warning "Using Multiple Text Outputs"
     By configuring multiple messages in a text say node, only one message will be delivered per activation of the node. An additional say node must be configured in order to send two text messages at once.
+
 #### Text Options
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37689d0-SayOptions.jpg" width="100%" />
@@ -71,9 +72,9 @@ When sending simple text output, Cognigy.AI dialog nodes provide options for con
 ???+ info "Linear and Loop"
     There are three different combinations of applying the Linear and Loop toggles, each providing a different behavior style for the order in which messages are delivered on future activation of the same node. The three combinations are:
 
-    * Random (e.g. 4, 2, 5, 4, 4, 2, 5, 1, ...)
-    * Linear + non-looping (e.g. 1, 2, 3, 4, 5, 5, 5, 5...)
-    * Linear + looping (e.g. 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...)
+    * Random (for example, 4, 2, 5, 4, 4, 2, 5, 1, ...)
+    * Linear + non-looping (for example, 1, 2, 3, 4, 5, 5, 5, 5...)
+    * Linear + looping (for example, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...)
 ### Text with Quick Replies
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/5f55583-say-node-qr.jpg" width="100%" />
@@ -187,7 +188,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 ???+ warning "Channel Support"
     The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
     
-    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (e.g. Youtube links might not work).
+    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, Youtube links might not work).
 
 ???+ info "CognigyScript"
     Any text field in the say node supports the use of **CognigyScript**. 
@@ -201,6 +202,10 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
 
 To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
+
+!!! warning
+
+    Cognigy.AI only supports Adaptive Card schema versions 1.2 and earlier, so using the latest versions may cause issues. We recommend using a supported version for better compatibility.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
@@ -407,7 +412,7 @@ For further details see the [Google Actions Documentation](https://developers.go
       </br>
       <h4>Limitations</h4>
       <ul>
-        <li>Requires Additional Text Output (e.g. Output Speech) </li>
+        <li>Requires Additional Text Output (for example, Output Speech) </li>
         <li>Description: 10 lines with an image, 15 lines without an image</li>
       </ul>   
     </td>
@@ -419,7 +424,7 @@ For further details see the [Google Actions Documentation](https://developers.go
       </br>
       <h4>Limitations:</h4>
       <ul>
-        <li>Requires Additional Text Output (e.g. Output Speech) </li>
+        <li>Requires Additional Text Output (for example, Output Speech) </li>
         <li>Must include Suggestion Chips if the session is kept open</li>
         <li>Only supports .mp3 format</li>
         <li>Media file URL has to support HTTPS</li>
@@ -433,7 +438,7 @@ For further details see the [Google Actions Documentation](https://developers.go
       </br>
       <h4>Limitations:</h4>
       <ul>
-        <li>Requires Additional Text Output (e.g. Output Speech) </li>
+        <li>Requires Additional Text Output (for example, Output Speech) </li>
         <li>Min. 2 tiles</li>
         <li>Max. 10 tiles</li>
         <li>Tiles must link to a web content</li>
@@ -600,3 +605,7 @@ Webchat with button "Show URL in new tab".
 </figure>
 
 URL has been opened in a new tab.
+
+## AI-enhanced output
+
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.

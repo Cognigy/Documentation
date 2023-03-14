@@ -64,7 +64,7 @@ You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/ht
 
 If you do not have control of the payload that the external service sends to the Inject or Notify API, then it can be controlled by using the [Notify Transformer]({{config.site_url}}ai/endpoints/transformers/notify-transformer/) or [Inject Transformer]({{config.site_url}}ai/endpoints/transformers/inject-transformer/). This allows you to transform the request and extract the necessary fields from the request body as described above before the actual Notify / Inject API is called.
 
-The API URL of the Notify and Inject APIs are different if the Transformer should be executed. For these APIs, the request should not be sent to the API service, but instead to the Endpoint service, meaning that you need to use the base Endpoint URL for your system (e.g. https://endpoint-demo.cognigy.ai). The API URLs are the following:
+The API URL for the Notify and Inject APIs are different if the Transformer should be executed. For these APIs, the request should not be sent to the API service, but instead to the Endpoint service, meaning that you need to use the base Endpoint URL for your system (e.g. https://endpoint-demo.cognigy.ai). The API URLs are the following:
 
 Notify: {endpoint-url}/notify/{URLToken}
 
@@ -73,7 +73,7 @@ inject: {endpoint-url}/inject/{URLToken}
 Where the URLToken is the URLToken of the Endpoint that should be executed. The Transformer functions should also be implemented in this Endpoint.
 
 ???+ warning "API Differences"
-    The URL of the Notify and Inject API is different if a Transformer should be used. The API URL is then:
+    The URL for the Notify and Inject API is different if a Transformer should be used. The API URL is then:
 
     Notify: {endpoint-url}/notify/{URLToken}
 

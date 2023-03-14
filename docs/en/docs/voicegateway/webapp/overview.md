@@ -4,22 +4,36 @@
  hidden: false 
 ---
 
-# Voice Gateway WebApp
+# Voice Gateway Self-Service Portal
 
-The **Cognigy Voice Gateway WebApp** is where all the standard configuration and routing for **Voice Gateway** can be set.
+The Cognigy Voice Gateway Self-Service Portal is a web-based interface that allows users to manage their accounts, settings, and preferences for Cognigy Voice Gateway.
 
-## Overview
+The Web App has the following entities:
 
-<div class="divider"></div>
+- [Users](users.md)
+- [Accounts](accounts.md)
+- [Applications](applications.md)
+- [Recent Calls](recent-calls.md)
+- [Alerts](alerts.md)
+- [Carriers](carriers.md)
+- [Speech](speech-services.md)
+- [Phone Numbers](phone-numbers.md)
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-overview.png" alt="Voice Gateway WebApp Overview" width="35%"/>
+## How to start
 
-The Web App is divided into following sub-pages:
+If you use the Cognigy Voice Gateway Self-Service Portal for the first time, ensure that you have completed the steps in the [Getting Started guide](../getting-started.md). Once you have completed the guide, proceed with the following steps:
 
-- [**Accounts**]({{config.site_url}}voicegateway/webapp/accounts/)
-- [**Applications**]({{config.site_url}}voicegateway/webapp/applications/)
-- [**Recent Calls**]({{config.site_url}}voicegateway/webapp/recent-calls/)
-- [**Alerts**]({{config.site_url}}voicegateway/webapp/alerts/)
-- [**Carriers**]({{config.site_url}}voicegateway/webapp/carriers/)
-- [**Speech Settings**]({{config.site_url}}voicegateway/webapp/speech-services/)
-- [**Phone Numbers**]({{config.site_url}}voicegateway/webapp/phone-numbers/)
+1. Identify the [user scope](users.md) you have or add a new user. The operations that you can perform in Voice Gateway are based on your user scope, such as Admin, Service Provider, or Account.
+2. Create an [account](accounts.md) or use an existing one.
+3. Create an [application](applications.md) or use an existing one.
+4. Add a [new carrier](carriers.md) or use an existing one.
+5. Add a [phone number](phone-numbers.md) or use an existing one.
+6. Add [speech provider credentials](speech-services.md) or use existing ones.
+
+Additionally, you can:
+
+- Check [recent calls](recent-calls.md) and view all information about the call.
+- Check [alerts](alerts.md) if something went wrong with call configuration.
+
+
+

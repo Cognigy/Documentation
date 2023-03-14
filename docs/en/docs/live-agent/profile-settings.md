@@ -32,14 +32,14 @@ The rest of the user data, such as email, full name and password, need to be upd
 
 ## Notifications
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+
 You can customize the behavior of notifications.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-profile-settings-notifications.png" width="100%" alt="Live Agent Profile Notifications " />
-  <figcaption>Notifications</figcaption>
-</figure>
+Starting from Cognigy 4.45, you can configure only Audio Notifications. Push and email notifications are moved to [Account settings](account-settings.md) and can only be controlled by administrators. If the administrator has not yet changed the push and email notification settings, a human agent still have the opportunity to change them in the Profile Settings.
 
->Note: The push notifications setting must be enabled in the system. Otherwise, they are not available.
+!!! note 
+    The push notifications setting must be enabled in the system. Otherwise, they are not available.
 
 ## API Access Token
 

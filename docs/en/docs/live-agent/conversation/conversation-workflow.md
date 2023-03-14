@@ -116,13 +116,18 @@ Click on the Send button or press Enter to send your message to the customer.
 
 ###  Conversation Actions
 
+[![Version badge](https://img.shields.io/badge/updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
+
 Below is a list describing Conversation actions an Agent can take by clicking the following icons.
 
-| Icon                 | Description                                                                                        |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />         | This button allows the Agent to select and include an Emoji in the message                                                             |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" />                 | This button allows the Agent to select and include attachments in the message                                                               |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" />                  | This button allows the Agent to request a file from the customer                                                             |
+| Button  | Description          |
+|-------|----------------------|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" /> | This button allows a human agent to select and include an Emoji in the message.|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | This button allows  a human agent to select and include attachments in the message.|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | This button allows a human agent to request a file from the customer. |
+| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" /> | This button allows a human agent to send voice messages to the customer. |
+| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" /> | This button allows a human agent to send hyperlinked text to the customer. |
+
 
 ### Agent Assist (Beta)
 <div class="divider"></div>
@@ -152,6 +157,11 @@ Should you wish to include an already prepared or "canned" response as a reply, 
 
 ###  How to request file upload
 <div class="divider"></div>
+
+!!! note
+    Supported File Types: jpeg, jpg, png, docx, wav, ogg, pdf
+    
+    Maximum File Size: 40MB
 
 There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box you can click on the "Request file" icon.
 

@@ -21,7 +21,7 @@ Enable the collection of Analytics data for this endpoint.
 
 ## Mask Sensitive Analytics
 
-Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/) can't be used as we will not e.g. store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/) endpoint.
+Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/) can't be used as we will not for example, store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/) endpoint.
 
 ### Ignore specific fields
 
@@ -42,7 +42,7 @@ Masks potential sensitive information in system logs produced by the underlying 
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5c5ee41-log.png" width="100%" />
 </figure>
 
-The text could e.g. contain the name of the user, his location or e.g. a credit card number. Once the masking was enabled, all fields which could contain information from the user will be hidden and replaced as you can see in the following figure:
+The text could contain the name of the user, his location or a credit card number. Once the masking was enabled, all fields which could contain information from the user will be hidden and replaced as you can see in the following figure:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/53c0057-hidden-log.png" width="100%" />

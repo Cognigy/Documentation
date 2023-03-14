@@ -4,10 +4,10 @@
  hidden: true 
 ---
 
-# Voice Gateway Web App - Alerts
+# Alerts
 
-In case any errors happens during the Call an **Alert** event will be added to the **Alerts** page of the Web App.
+*Alerts* are created when errors happen in your account configuration. For example, your credentials from the speech provider need to be updated.
 
-These **Alerts** can be filtered by _today_ or the last _7 days_.
+Note that you can only filter by a maximum of the last 7 days.
 
-<img src="{{config.site_url}}voicegateway/images/VG-webapp-alerts.png" alt="Voice Gateway WebApp Alerts" />
+<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-alerts.png"  width="100%" />
