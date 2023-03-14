@@ -48,7 +48,7 @@ Source table:
 | session-def | 1/16/2023 |          4             |     1      |
 ```
 
-Result: `5`
+Result: `3`
 
 
 ### Handover Rate
