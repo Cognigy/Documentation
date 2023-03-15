@@ -160,9 +160,9 @@ If enabled, the Virtual Agent will speak to you through the browser's Text to Sp
 
 If enabled, the Interaction Panel will display additional information about the Flow execution:
 
-- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and its score.
-- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and its score.
-- Name of the Flow that was triggered. 
+- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and their score.
+- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and their score.
+- The name of the Flow that was triggered. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="80%" />
