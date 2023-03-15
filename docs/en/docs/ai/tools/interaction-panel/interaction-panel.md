@@ -155,10 +155,17 @@ This section lets you configure the chat outputs in the Interaction Panel.
 If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
 
 #### Expert Mode
-If enabled, the Interaction Panel will display additional information about the Flow execution, like intents that were triggered, intent score, name of the Flow that was triggered etc. 
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+
+If enabled, the Interaction Panel will display additional information about the Flow execution:
+
+- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and its score.
+- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and its score.
+- Name of the Flow that was triggered. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="80%" />
 </figure>
 
 #### Channel Select

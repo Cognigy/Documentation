@@ -53,7 +53,7 @@ To configure a locale, do the following:
       - **Yes Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
       - **No Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
       - **Reject Intent** — by default, the setting is toggled on. You need to add examples manually. When the setting is toggled off, the Intent is excluded from the build.
-4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). These rules improve the accuracy of the virtual agent's responses, ensuring that users receive the correct information or assistance they need.
+4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). 
 5. Click **Save & Build** to build a model. The Yes/No model is always built when you edit and save settings. 
 
 ## Use Yes/No Intents for Specific or All Flows
