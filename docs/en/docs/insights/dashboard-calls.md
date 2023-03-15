@@ -155,12 +155,12 @@ Result:
 
 ### Abandon rate
 
-Shows the percentage of users who ended a call within five seconds of it being initiated.
+Shows the percentage of users who ended a call within 5 seconds of it being initiated.
 
 Source table:
 
 ```txt
-|   Date    | Left within 5s  |   Total      |
+|   Date    | Left before 5s  |   Total      |
 | --------- | --------------- | ------------ |
 | 2/20/2023 |      7          |      7       |
 | 2/21/2023 |      3          |      6       |
@@ -168,7 +168,7 @@ Source table:
 | 2/23/2023 |      3          |      7       |
 ```
 
-Calculation: `(Number of people who left the call within 5 seconds / Total number of people who entered the call) x 100%`
+Calculation: `(Number of people who left the call before 5 seconds / Total number of people who entered the call) x 100%`
 
 Example: `(4 / 7) x 100% = 12.5%`
 
