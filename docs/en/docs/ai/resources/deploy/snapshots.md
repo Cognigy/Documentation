@@ -77,16 +77,17 @@ In order to download a Snapshot, you have to go through our two step process:
 
 The use case for uploading a Snapshot is usually to deploy its Flows into production. Since Snapshots life within Virtual Agents as other resources, you have to either first create a new Virtual Agent or upload the Snapshot in one of your existing ones.
 
-To upload a Snapshot, do the following steps:
+To upload a Snapshot, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, click **Deploy > Snapshots**.
 3. On the **Snapshots** page, click **Upload Snapshot**.
-4. Select the `.csnap` file for your Snapshot.
-5. A new task will be created and your Snapshot will be uploaded and processed.
+4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with the uploading status. 
+5. Once the file has been uploaded, a new [task](../agents/tasks.md), entitled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner. 
+After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
-???+ info "Info"
-    Uploading a Snapshot will not have any impact on the resources (e.g. the Flows) that are part of your Virtual Agent. Since you can only have 10 Snapshots in a Virtual Agent by default, make sure that your Agent has less than 10 Snapshots before starting to upload a new one.
+!!! note
+    Uploading a Snapshot will not have any impact on the resources, for example, Flows, that are part of your Virtual Agent. Since you can only have 10 Snapshots in a Virtual Agent by default, make sure that your Agent has less than 10 Snapshots before starting to upload a new one.
 
 ### Restore Virtual Agent from Snapshot
 If you are using Snapshots as a way of archiving your Virtual Agent, you might want to restore your Virtual Agent to the point where the Snapshot was taken initially. We offer this functionality through our "Restore Snapshot" option.
