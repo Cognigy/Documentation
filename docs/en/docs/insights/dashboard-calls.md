@@ -211,7 +211,6 @@ Result:
 ### Percentage (%) of transferred calls
 
 Shows a multi-line presenting the percentage of calls successfully transferred to an agent.
-The calculation excludes calls abandoned earlier.
 
 Source table:
 
