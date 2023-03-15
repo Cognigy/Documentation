@@ -6,7 +6,7 @@
 
 # Yes/No Intents (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../../release-notes/4.46.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.46.md)
 
 !!! note
     The Yes/No Intents feature is in Beta. We encourage you to try this feature out and provide us with feedback.
@@ -53,7 +53,7 @@ To configure a locale, do the following:
       - **Yes Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
       - **No Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
       - **Reject Intent** — by default, the setting is toggled on. You need to add examples manually. When the setting is toggled off, the Intent is excluded from the build.
-4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). These rules improve the accuracy of the virtual agents's responses, ensuring that users receive the correct information or assistance they need.
+4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). These rules improve the accuracy of the virtual agent's responses, ensuring that users receive the correct information or assistance they need.
 5. Click **Save & Build** to build a model. The Yes/No model is always built when you edit and save settings. 
 
 ## Use Yes/No Intents for Specific or All Flows
@@ -97,8 +97,8 @@ To use Yes/No Intents for a specific Flow, do the following:
 
 ## Test your Flow by using the Interaction Panel
 
-!!! note
-    Yes/No Intents are not supported in the [Expert mode](../../tools/interaction-panel/interaction-panel.md#expert-mode) setting.
+!!! tip
+    Started from Cognigy 4.47, Yes/No Intents are supported in [Expert mode](../../tools/interaction-panel/interaction-panel.md#expert-mode).
 
 Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../tools/interaction-panel/context.md):
 
