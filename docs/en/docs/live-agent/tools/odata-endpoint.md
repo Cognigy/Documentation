@@ -23,20 +23,25 @@ Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records.
 
 <div class="divider"></div>
 
-You can connect to the OData Endpoint using your Access Token by connecting to the respective OData URL for your server.
+To connect to the OData Endpoint, get a Live Agent Access Token:
 
-An OData URL is composed of the service root, API version, service path, the data collection, and the access token parameter as follows:
+1. Open the Live Agent interface.
+2. In the left-side menu, go to **Profile Settings**.
+3. In the **Access Token** section, copy the existing token.
+4. Paste this token to your OData request.
+
+An OData URL is composed of the service root, API version, service path, data collection, and Live Agent access token parameter as follows:
 
 ```
     GET /<api-version>/odata/<OData data model>?<odata query> HTTP/1.1
     Host: <odata domain>
-    Authorization: Bearer <access token>
+    Authorization: Bearer <Live Agent access token>
 ```
 
 The authentication can also be done using a query param such as follows:
 
 ``` 
-/<api-version>/odata/<OData data model>?<odata query>&apikey=<access token>
+/<api-version>/odata/<OData data model>?<odata query>&apikey=<Live Agent access token>
 ```
 
 
@@ -44,17 +49,16 @@ The authentication can also be done using a query param such as follows:
     The OData endpoint is available on a different domain to your Cognigy User Interface domain. For example, [https://odata-liveagent-trial.cognigy.ai/v1.0/odata](https://odata-dev-live-agent.cognigy.ai/v1.0/odata).
 
 
-For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Prem installations please replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`. For On-Premise installations, replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
 !!! note "Excel/Power BI"
-    When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication`.
-    and pass the access token as a query parameter `&apikey=<access-token>`
+    When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication` and pass the Live Agent access token as a query parameter `&apikey=<Live Agent access-token>`
 
 ## Endpoint Version
 
 <div class="divider"></div>
 
-## Version 1.0
+### Version 1.0
 The current version of the OData Endpoint is `v1.0`. This Endpoint version is available from LiveAgent Version 1.0.0 onwards. In this version, the following OData collections are available:
 
 - [Message](#message) (`/Message`)
@@ -84,7 +88,7 @@ The Endpoint supports following the OData Query Language operators:
 - $orderby
 - $expand
 
-## Example Queries
+### Example Queries
 
 `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation(1)?$select=inbox_id,account_id&apikey=<access-token>`
 Return the columns inbox_id and account_id for the Conversation with id=1
@@ -98,7 +102,7 @@ Return the columns id and account_id for all the Conversations filtered by the c
 
 ## Reference Documentation
 
-For complete reference documentation, please refer to the [extensive collection of resources at OData.org](https://www.odata.org/) and the [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
+For complete reference documentation, refer to the [extensive collection of resources at OData.org](https://www.odata.org/) and the [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
 
 ## Data Protection & Analytics
 
@@ -120,14 +124,18 @@ This section details the data types that exist within the OData Collections that
 - [Label](#label)
 - [Inbox](#inbox)
 
-## Message
-#### Description:
+### Message
+
+**Description:**
+
 A message is a single piece of communication between an Agent and a client, every time an Agent/user presses enter it will write that text as a new message row. In the Messages table you can find all messages from all Inboxes and Conversations.
 
-#### Example Query:
+**Example Query:**
+
  * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Message?`.
 
-#### Data Types:
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name          | Description                                                                                                                                                                                | Type    | Example                                      |
@@ -150,14 +158,18 @@ When retrieving this data model, the Endpoint will return the following fields:
 | external_source_ids | External Source IDs                                                                                                                                                                        | JSON    | "{\"items\":[{\"title\":\"Acme Hardware\"]}" |
 
 
-## Conversation
-#### Description:
+### Conversation
+
+**Description:**
+
 A Conversation is the communication channel opened between an Agent and a client.
 
-#### Example Query:
+**Example Query:**
+
  * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Conversation?`.
 
-#### Data Types:
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name            | Description                                                           | Type   | Example                                |
@@ -184,14 +196,18 @@ When retrieving this data model, the Endpoint will return the following fields:
 | custom_attributes     | Extra Add-on Attributes                                               | JSON   | "{}"                                   |
 | assignee_last_seen_at | Date Of Last Time The Assignee Has Been Seen                          | Date   | 2021-12-11 12:41:26.745                |
 
-## Inbox
-#### Description:
+### Inbox
+
+**Description:**
+
 The Inbox is where all Conversations from a specific set of Agents will be placed.
 
-#### Example Query:
- * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Inbox?`.
+**Example Query:**
 
-#### Data Types:
+* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Inbox?`.
+
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name               | Description                                                                 | Type    | Example                                          |
@@ -217,14 +233,18 @@ When retrieving this data model, the Endpoint will return the following fields:
 | enable_auto_reassignment | Allows To Reassign Conversation                                             | Boolean | true                                             |
 | conversation_show_all    | Allows To See All Conversations In Inbox, Even If They Do Not Belong To You | Boolean | true                                             |
 
-## Label
-#### Description:
+### Label
+
+**Description:**
+
 Labels are being used to mark, identify or group different Conversations.
 
-#### Example Query:
- * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Label?`.
+**Example Query:**
 
-#### Data Types:
+* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Label?`.
+
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name      | Description                                 | Type    | Example                     |
@@ -238,14 +258,18 @@ When retrieving this data model, the Endpoint will return the following fields:
 | created_at      | Label Creation Date                         | Date    | 2021-12-11 12:41:26.745     |
 | updated_at      | Label Updated Date                          | Date    | 2021-12-11 12:41:26.745     |
 
-## Tagging
-#### Description:
+### Tagging
+
+**Description:**
+
 The Tagging model contains relations, for when a Label is being used.
 
-#### Example Query:
- * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tagging?`.
+**Example Query:**
 
-#### Data Types:
+* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tagging?`.
+
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name    | Description                                     | Type   | Example                 |
@@ -259,14 +283,18 @@ When retrieving this data model, the Endpoint will return the following fields:
 | context       | What Has Been Used For The Tagging, i.e. Labels | String | "labels"                |
 | created_at    | Tagging Creation Date                           | Date   | 2021-12-11 12:41:26.745 |
 
-## Tag
-#### Description:
+### Tag
+
+**Description:**
+
 Tags metadata, such as the number of times a Tag has been used.
 
-#### Example Query:
- * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tag?`.
+**Example Query:**
 
-#### Data Types:
+* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tag?`.
+
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name     | Description          | Type   | Example       |
@@ -276,14 +304,18 @@ When retrieving this data model, the Endpoint will return the following fields:
 | tagging_counts | Number of Times Used | Number | 1             |
 
 
-## User
-#### Description:
+### User
+
+**Description:**
+
 This data model holds information regarding the Live Agent users, such an Agent.
 
-#### Example Query:
- * V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/User?`.
+**Example Query:**
 
-#### Data Types:
+* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/User?`.
+
+**Data Types:**
+
 When retrieving this data model, the Endpoint will return the following fields:
 
 | Field Name             | Description                              | Type   | Example                                                                                                                   |
@@ -321,17 +353,17 @@ When retrieving this data model, the Endpoint will return the following fields:
 
 <div class="divider"></div>
 
-## Excel
+### Excel
 
 When connecting from Microsoft Excel 2016, you must use the PowerQuery feature, which can be found under `Data > Get & Transform > New Query > From Other Sources > From OData Feed`. This will connect to our OData v4 feed.
 
-## Power BI
+### Power BI
 
-Please follow the [instructions in the Power BI documentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).
+Follow the [instructions in the Power BI documentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).
 
-## Tableau
+### Tableau
 
-???+ danger "Incompatible OData Version"
+!!! danger "Incompatible OData Version"
     At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
 
 Find instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
