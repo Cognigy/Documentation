@@ -82,7 +82,7 @@ To upload a Snapshot, follow these steps:
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, click **Deploy > Snapshots**.
 3. On the **Snapshots** page, click **Upload Snapshot**.
-4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with the uploading status. 
+4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar. 
 5. Once the file has been uploaded, a new [task](../agents/tasks.md), entitled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner. 
 After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
