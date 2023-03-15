@@ -155,7 +155,7 @@ Result:
 
 ### Abandon rate
 
-Shows the percentage of people who left the call within 5 seconds of being on the call.
+Shows the percentage of users who ended a call within five seconds of it being initiated.
 
 Source table:
 
