@@ -182,7 +182,7 @@ Result:
 Shows the timeline of the average first response and the average resolution time. This metric is calculated based on daily number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
 
 The First Response Time metric refers to the average time a human agent takes to send a first response to a customer's request. 
-The Handling Time metric refers to the average time a human agent spends working on a customer's request, including the time spent writing a response and any additional time spent researching or resolving the issue.
+The Resolution Time metric refers to the average time a human agent spends working on a customer's request, including the time spent writing a response and any additional time spent researching or resolving the issue.
 
 Source tables:
 
