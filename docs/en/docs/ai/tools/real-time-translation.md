@@ -97,7 +97,7 @@ When auto-detection for user inputs is activated, then we have an extra setting:
 
 - Use the slider to set the option "**Set user input language on execution count**" as you want. The slide bar can be set between "0" and "5".
 
-**Example**:  Sidebar is set to "1" which means: Whatever language the user is using on their first input is the language that the Virtual Agent will use from then on. These settings work with every language we support.
+**Example**:  slider is set to "1" which means: Whatever language the user is using on their first input is the language that the Virtual Agent will use from then on. These settings work with every language we support.
 
 
 <figure>
