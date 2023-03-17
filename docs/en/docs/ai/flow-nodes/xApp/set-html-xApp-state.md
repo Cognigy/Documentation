@@ -1,10 +1,10 @@
 ---
- title: "Set HTML xApp State" 
+ title: "xApp: Show HTML" 
  slug: "Set-HTML-xApp-State" 
  hidden: true 
 ---
 
-# Set HTML xApp State
+# xApp: Show HTML
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-html-xApp-state.png" width="100%" />
@@ -44,6 +44,6 @@ You can access its methods by calling `SDK.someExampleMethod()` in your code aft
 
 - [xApps](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
-- [Init xApp Session](init-xApp-session.md)
-- [Get xApp Session PIN](get-xApp-session-PIN.md)
-- [Set AdaptiveCard xApp State](set-AdaptiveCard-xApp-state.md)
+- [xApp: Init Session](init-xApp-session.md)
+- [xApp: Get Session PIN](get-xApp-session-PIN.md)
+- [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)

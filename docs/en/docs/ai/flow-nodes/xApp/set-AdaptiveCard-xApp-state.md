@@ -1,10 +1,10 @@
 ---
- title: "Set AdaptiveCard xApp State" 
+ title: "xApp: Show Adaptive Card" 
  slug: "Set-AdaptiveCard-xApp-State" 
  hidden: true 
 ---
 
-# Set AdaptiveCard xApp State
+# xApp: Show Adaptive Card
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-html-xApp-state.png" width="100%" />
@@ -30,6 +30,6 @@ To override the background and interaction element colors, use CSS color codes.
 
 - [xApps](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
-- [Init xApp Session](init-xApp-session.md)
-- [Get xApp Session PIN](get-xApp-session-PIN.md)
-- [Set HTML xApp State](set-html-xApp-state.md)
+- [xApp: Init Session](init-xApp-session.md)
+- [xApp: Get Session PIN](get-xApp-session-PIN.md)
+- [xApp: Show HTML](set-html-xApp-state.md)
