@@ -22,8 +22,8 @@ The User Input Timeout - Config Node defines what should happen if a user does n
 
 When executed, the settings will apply for the remainder of the session.
 
-| Parameter | Type | Description |
-| --------- | -------- | ---------------------------------------------------------- |
-| User No Input Mode | Dropdown | Define the action if a user does not provide input to the Virtual Agent in time.|
-| User No Input Timeout | Number | Define the timeout for user input in ms.|
-| User No Input Retries | Number | Define the number of retries for the Virtual Agent to request input from the user before ending the call. The maximum value is 999 retries.  |
+| Parameter             | Type     | Description                                                                                                                                 |
+|-----------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| User No Input Mode    | Dropdown | Define the action if a user does not provide input to the Virtual Agent in time.                                                            |
+| User No Input Timeout | Number   | Define the timeout for user input in ms.                                                                                                    |
+| User No Input Retries | Number   | Define the number of retries for the Virtual Agent to request input from the user before ending the call. The maximum value is 999 retries. |

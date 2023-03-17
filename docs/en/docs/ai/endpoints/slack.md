@@ -34,7 +34,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 ### OAuth access token
 
-This value is the **OAuth access token** for your slack app's workspace which is obtained in the *OAuth & Permissions* page of your Slack App.
+This value is the **OAuth access token** for your Slack app's workspace which is obtained in the *OAuth & Permissions* page of your Slack App.
 
 ### Verify Token
 

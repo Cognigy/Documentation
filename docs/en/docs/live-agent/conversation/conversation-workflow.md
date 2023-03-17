@@ -89,7 +89,7 @@ Click on Add Labels within the Conversation Labels menu and select the category 
 
 
 
-You can see in the screenshot below, that all actions perfomed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
+You can see in the screenshot below, that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
 
 
 <figure>
@@ -257,7 +257,7 @@ Click on Delete. The private note will be deleted.
 <div class="divider"></div>
 
 
-To send a copy of the current conversation, click on the button labeled Send Transcript, placed on the top right corner.
+To send a copy of the current conversation, click on the button labeled Send Transcript, placed in the top right corner.
 
 
 <figure>
@@ -280,7 +280,7 @@ Select your desired option and click on Submit. A message will be displayed "The
 ### Transferring Agents
 <div class="divider"></div>
 
-You can transfer a issue/Conversation to another Agent by selecting a different Agent from Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
+You can transfer an issue/Conversation to another Agent by selecting a different Agent from Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
 
 ### Setting Reminders and Status
 <div class="divider"></div>

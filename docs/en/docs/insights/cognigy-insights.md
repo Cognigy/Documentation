@@ -74,7 +74,7 @@ Cognigy provides three categories of dashboards available via the Insight sidebo
 
 <div class="divider"></div>
 
-Cognigy Insights comes with so-called global filters. These filters will be visible no matter where you navigate. Once you have changed the filters, all of the data visualized in any location will respect your filter configuration.
+Cognigy Insights comes with so-called global filters. These filters will be visible no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
 
 - Timeframe
 - Endpoints

@@ -46,7 +46,7 @@ Verification token applies an added layer of security to ensure the authenticity
 
 ### Secret
 
-This value matches the secret key setup in the RingCentral Engage webhook configuation and is used for the handshake process.
+This value matches the secret key setup in the RingCentral Engage webhook configuration and is used for the handshake process.
 
 ### Bot category ID
 

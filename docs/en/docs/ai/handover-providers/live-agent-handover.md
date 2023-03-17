@@ -9,7 +9,7 @@
 
 <div class="divider"></div>
 
-Live Agent is Cognigy's own handover provider, allowing human agents to take over escalated conversations from virtual agents.
+Live Agent is Cognigy handover provider, allowing human agents to take over escalated conversations from virtual agents.
 
 Tight integration with Cognigy.AI that goes far beyond the integration we have with other handover services:
 
@@ -28,9 +28,9 @@ Projects and Inboxes within Live Agent are easily setup, and Agents can be added
   <figcaption>Live Agent Project and Inbox Mapping</figcaption>
 </figure>
 
-## Ready to Setup Live Agent?
+## Ready to Set up Live Agent?
 <div class="divider"></div>
-Are you ready to setup Live Agent? Start here:
+Are you ready to set up Live Agent? Start here:
 
 - [**Live Agent Setup**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-introduction/)
 

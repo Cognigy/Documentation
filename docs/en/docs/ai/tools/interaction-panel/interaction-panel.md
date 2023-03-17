@@ -29,7 +29,7 @@ The Interaction Panel will preview channel-specific output in case this has been
     It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output)**.
 
 ### Input Modes
-Clicking on the secondary button located at the buttom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
+Clicking on the secondary button located in the bottom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />

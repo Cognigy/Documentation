@@ -25,7 +25,7 @@ Click on the sidebar **Labels** and then click Add Label on the right-hand side.
 </figure>
 
 
-A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels, and different colors so that you can easilyidentify in one look to which category the ticket/issue belongs.
+A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels, and different colors so that you can easily identify in one look to which category the ticket/issue belongs.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-labels-add-label-dialog.png" width="100%" alt="Live Agent Add Label detail screen" />
@@ -33,12 +33,12 @@ A screen will open where you can design your Labels. Make sure to give meaningfu
 </figure>
 
 
-| Field Name             | Value                                                                    | Remarks                                                                                  |
-|------------------------|--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Label Name             | Assign a name for the Label to identify its category                     | For example,: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
-| Description            | Give a short description of what the Label represents                    | For example,: This customer issue is to be resolved with priority                                    |
-| Color                 | Select a color for the Label for easy  identification                     | After selection, click on the small square again                                          |
-| Show Label on Sidebar  | Select this option if you want the Label to  be displayed on the sidebar | This will help in easy identification of the Conversations                               |
+| Field Name            | Value                                                                    | Remarks                                                                                            |
+|-----------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Label Name            | Assign a name for the Label to identify its category                     | For example,: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
+| Description           | Give a short description of what the Label represents                    | For example,: This customer issue is to be resolved with priority                                  |
+| Color                 | Select a color for the Label for easy  identification                    | After selection, click on the small square again                                                   |
+| Show Label on Sidebar | Select this option if you want the Label to  be displayed on the sidebar | This will help in easy identification of the Conversations                                         |
 
 Click on Create. A "Label added successfully" message will be displayed. The new Label has been created. You can create as many Labels as you need. Labels can be used across multiple Teams.
 

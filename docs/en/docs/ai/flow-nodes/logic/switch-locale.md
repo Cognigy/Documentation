@@ -43,4 +43,4 @@ Then open the Switch Locale Node configuration editor and enter the reference ID
 </figure>
 
 ???+ info "More information on Localization"
-    Find out about building mutli-lingual and regional specific bots on the [Localization Page]({{config.site_url}}ai/resources/manage/localization/).
+    Find out about building multilingual and regional specific bots on the [Localization Page]({{config.site_url}}ai/resources/manage/localization/).

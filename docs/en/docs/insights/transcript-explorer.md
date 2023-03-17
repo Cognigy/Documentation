@@ -27,7 +27,7 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 - Use the **[global filter]({{config.site_url}}insights/global-filter/)** options to configure your research.
 
-- You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
+- You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option Virtual Agent Messages and leave the other options not selected.
 
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
@@ -131,7 +131,7 @@ When you click on the "profile" icon on the left top side of the conversation pa
 [![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
 
 You can enable an "Expert Mode" by clicking a toggle on top of the transcript's panel. This will
-provide an additional information to a conversation messages (if any), such as:
+provide additional information to a conversation messages (if any), such as:
 
 - What Intent was triggered and its score
 - What Slots were filled

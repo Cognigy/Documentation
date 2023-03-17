@@ -29,7 +29,7 @@ For more conversations it is recommended to increase the number of pods and ther
 
 ### Memory
 
-Memory requirements are dependent on usage and expected addtional workload. Your workload is influenced by factors such as - but not limited to - how active your users are, how many conversations you receive, and the conversation channels you are using.
+Memory requirements are dependent on usage and expected additional workload. Your workload is influenced by factors such as - but not limited to - how active your users are, how many conversations you receive, and the conversation channels you are using.
 
 The following are the recommended minimum Memory hardware configurations for a small sample of example Live Agent conversation sizes.
 
@@ -54,5 +54,5 @@ Redis stores the background task queue and various cached Live Agent configurati
 
 ### Sidekiq
 
-Sidekiq processes background jobs via a multi-threaded process. This process starts with the entire Rails stack. On a very active server, the Sidekiq process can use 1GB+ of memory.
+Sidekiq processes background jobs via a multithreaded process. This process starts with the entire Rails stack. On a very active server, the Sidekiq process can use 1GB+ of memory.
 

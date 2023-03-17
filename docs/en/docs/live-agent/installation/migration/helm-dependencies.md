@@ -19,7 +19,7 @@ In the case of Redis, it works out of the box, but for PostgreSQL, you need to m
 Values under `.Values.postgresql` are also affected. Make the necessary changes to your custom `values.yaml` file.
 
 | Old Value                                     | New Value                                            |
-| --------------------------------------------- | ---------------------------------------------------- |
+|-----------------------------------------------|------------------------------------------------------|
 | `Values.postgresql.postgresqlDatabase`        | `Values.postgresql.auth.database`                    |
 | `Values.postgresql.postgresqlUsername`        | `Values.postgresql.auth.username`                    |
 | `Values.postgresql.postgresqlPassword`        | `Values.postgresql.auth.postgresPassword`            |
@@ -410,7 +410,7 @@ RAILS_ENV=production bundle exec rails c
 Check existing conversations and settings to ensure everything is working as expected. Once everything has been checked, you can delete the backup.
 
 ```sh
-# Delete the backup pod deployemnt, service, Storage Class and pvc
+# Delete the backup pod deployment, service, Storage Class and pvc
 kubectl delete statefulset -n live-agent postgres-backup
 kubectl delete service -n live-agent postgres-backup
 kubectl delete sc postgres-backup

@@ -23,7 +23,7 @@ Flows are executed from top to bottom and use a logic-based system to determine 
 ## Flow Nodes
 <div class="divider"></div>
 
-**Flow Nodes** can be used to add interactivity to a flow. They can be added by clicking on the **+** icon in between two existing Nodes. There are many different types of Nodes, ranging from **Question Nodes** to **Marketing Nodes**. 
+**Flow Nodes** can be used to add interactivity to a flow. They can be added by clicking on the **+** icon in between two existing Nodes. There are many types of Nodes, ranging from **Question Nodes** to **Marketing Nodes**. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="100%" />
@@ -82,7 +82,7 @@ Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-over
 
 <div class="divider"></div>
 
-With Cognigy.AI 4.10.0 switching between Flows with different settings and different Intents has ben improved as follows:
+With Cognigy.AI 4.10.0 switching between Flows with different settings and different Intents has been improved as follows:
 
 - When you are in the **NLU tab** of Flow A and you switch to Flow B you will still be in the NLU tab.
 - When you are in the **Settings tab** of Flow A and you switch to Flow B you will still be in the Settings tab.

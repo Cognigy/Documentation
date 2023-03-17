@@ -40,6 +40,6 @@ Customize the text displayed on the Connection Screen. Alternatively, you can re
 
 - [xApp Tokens](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
-- [Get xApp Sesion PIN](get-xApp-session-PIN.md)
+- [Get xApp Session PIN](get-xApp-session-PIN.md)
 - [Set HTML xApp State](set-html-xApp-state.md)
 - [Set AdaptiveCard xApp State](set-AdaptiveCard-xApp-state.md)

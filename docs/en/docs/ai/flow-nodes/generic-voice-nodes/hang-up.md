@@ -15,6 +15,6 @@
 The Hang Up Node will instruct the system to end the call.
 <br/><br/>
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
+| Parameter          | Type | Description                                            |
+|--------------------|------|--------------------------------------------------------|
 | Reason for hang up | Text | The reason for hanging up, will be shown in VG/AC logs |

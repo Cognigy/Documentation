@@ -15,7 +15,7 @@ With the Node Search field, one can carry out a case-insensitive search through 
 
 In order to search the flow nodes:
 
-1. Click the **Search Icon** located among the other tools at the bottom left corner of the Chart Editor.
+1. Click the **Search Icon** located among the other tools in the bottom left corner of the Chart Editor.
 2. An input filed with a placeholder *Search Nodes* opens up, where you can enter the search text.
 3. Alternatively, you can also open the search nodes input field by using **Ctrl + Alt + F** or **Command + Option + F** hotkeys.
 
@@ -49,19 +49,19 @@ Further, when a highlighted Node is opened, the field that has the match will ha
 
 You can search for the following within the flow nodes:
 
-| Searchable Node Value      | Description     |
-| ----------- | ------------------------------------ |
-| Node Label | The actual label displayed on a Node (configurable in its settings) |
-| Node Comment | The optional comment attached to the Node |
-| Node Analytics Step [![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}}) | The Analytics Step displayed on a Node |
-| Node Type  | The type of the Node |
-| Node ID | The unique database ID of the Node (usually not used by users) |
-| Node Reference ID | The ID that is used when referring to a node e.g. as entrypoint for a Go-To Node (this ID can be copied from the secondary menu in the Node editor) |
-| Keys or Values in the JSON Editor | Matches a key or a value within a JSON object, e.g. POST Data object in a HTTP Request Node |
-| Code in the Code Editor | Matches the text within a Code Node |
-| Input fields for any Output type / Channel type in Say Node and Question Node | Any type of Output throughout all Channel types is matched. |
-| Custom button labels in Say Node and Question Node | Button labels and values are matched and highlighted |
-| Other relevant input fields in all Node types | Matches relevant field types in all Cognigy and Extension Nodes |
+| Searchable Node Value                                                                                               | Description                                                                                                                                         |
+|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Node Label                                                                                                          | The actual label displayed on a Node (configurable in its settings)                                                                                 |
+| Node Comment                                                                                                        | The optional comment attached to the Node                                                                                                           |
+| Node Analytics Step [![Version badge](https://img.shields.io/badge/Added in-v4.36.0-blue.svg)]({{config.site_url}}) | The Analytics Step displayed on a Node                                                                                                              |
+| Node Type                                                                                                           | The type of the Node                                                                                                                                |
+| Node ID                                                                                                             | The unique database ID of the Node (usually not used by users)                                                                                      |
+| Node Reference ID                                                                                                   | The ID that is used when referring to a node e.g. as entrypoint for a Go-To Node (this ID can be copied from the secondary menu in the Node editor) |
+| Keys or Values in the JSON Editor                                                                                   | Matches a key or a value within a JSON object, e.g. POST Data object in a HTTP Request Node                                                         |
+| Code in the Code Editor                                                                                             | Matches the text within a Code Node                                                                                                                 |
+| Input fields for any Output type / Channel type in Say Node and Question Node                                       | Any type of Output throughout all Channel types is matched.                                                                                         |
+| Custom button labels in Say Node and Question Node                                                                  | Button labels and values are matched and highlighted                                                                                                |
+| Other relevant input fields in all Node types                                                                       | Matches relevant field types in all Cognigy and Extension Nodes                                                                                     |
 
 
 ### Examples

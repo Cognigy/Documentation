@@ -31,7 +31,7 @@ A new menu line will be created for each annotation added to the sentence. The a
 Multiple annotations of different types can be added to a single example sentence where each annotation will be underlined in a different color. 
 
 ???+ info "Copy and Paste Annotated Sentences"
-    It is possible to copy a sentence including annotations to another example sentence line which will carry all of the assigned annotations with it. Although similar sentences should be avoided, this can help save time by reducing the need to re-annotate words.
+    It is possible to copy a sentence including annotations to another example sentence line which will carry all the assigned annotations with it. Although similar sentences should be avoided, this can help save time by reducing the need to re-annotate words.
 
 ### Lexicon Slot
 Insert **Lexicon Slot** placeholders within example sentences to teach the NLU to recognize words with similar meanings. For example, annotate the product name `shirts` with a custom `product` lexicon tag to allow the NLU to recognize `pants`, `hats`, and `jackets` that have been given the same slot tag in the [Lexicon Editor]({{config.site_url}}ai/resources/build/lexicons/).
@@ -46,7 +46,7 @@ Note that Slot Tags and Synonyms for intents must be attached in the same flow. 
 
 
 ???+ info "Pro Tip: use synonyms to translate rare words"
-    Provide understandable, common synonyms for rare words. Cognigy's Natural Language Understanding will be able to better make sense of rare words if you translate them to common utterances. E.g., a specific brand name such as "PremiumPayID" could be provided with the synonym "credit card" and Cognigy will understand its connection to payments where it would otherwise be an unknown word.
+    Provide understandable, common synonyms for rare words. Cognigy Natural Language Understanding will be able to better make sense of rare words if you translate them to common utterances. E.g., a specific brand name such as "PremiumPayID" could be provided with the synonym "credit card" and Cognigy will understand its connection to payments where it would otherwise be an unknown word.
 
 ???+ warning "Do not overuse tags"
     For small word groups which mean the same thing it more effective to use only synonyms. Tags are appropriate for a large number of words collected in one concept, such as first names or country codes.
