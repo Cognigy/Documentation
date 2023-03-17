@@ -47,7 +47,7 @@ In that case, we have to activate the "**Real Time Translation Settings**".
 
 - Go to the Endpoint editor and activate "**Real Time Translation**" in the "**Real Time Translation Settings**".
 
-- "**Enable Translation**" using the sidebar.
+- "**Enable Translation**" using the slider.
 - Select the "**User Input Language**" using the drop-down menu.
 - Select "**Flow Language**" using the drop-down menu.
 - "**Save**" the settings.
