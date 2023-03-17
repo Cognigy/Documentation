@@ -26,6 +26,8 @@ The submitted payloads need to be JSON serializable objects.
 You can use the `submit` function. An example of a button that submits on click would be the following:
 `<button type="button" onclick="SDK.submit({ variant: 'button1' })">button 1</button>`.
 
+To view submitted data, use the Interaction panel. You can access submitted data in the `data` object by clicking **INFO > Input**, or in the chat by adding a Say Node and specifying `Submit payload: {{JSON.stringify(input.data) }}` in its text field.
+
 ### xApp Page SDK
 
 When hosted within Cognigy, the xApp Page (or any generic HTML xApp) can load the App Page SDK using a fixed URL:
