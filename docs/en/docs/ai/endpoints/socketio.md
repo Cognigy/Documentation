@@ -81,4 +81,4 @@ Messages can be received by listening to the **output** event. The responses hav
 ```
 
 ### Cognigy Socket Client
-Cognigy provides a socket client for connecting with a Cognigy Socket Endpoint. The documentation and open source code for this client is available on the [Cognigy Github Page](https://github.com/Cognigy/SocketClient)
+Cognigy provides a socket client for connecting with a Cognigy Socket Endpoint. The documentation and open source code for this client is available on the [Cognigy GitHub Page](https://github.com/Cognigy/SocketClient)

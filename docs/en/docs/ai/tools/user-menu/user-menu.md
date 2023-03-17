@@ -42,7 +42,7 @@ The Audit Events dashboard offers a user interface that allows admin users to se
 This option refers to the **documentation that you are currently browsing**.
 
 ### Insights
-Insights is our new analytics reporting tool to improve your customer service.
+Insights is a Cognigy analytics reporting tool to improve your customer service.
 
 ???+ info "Insights"
     Please refer to [**Insights**]({{config.site_url}}insights/cognigy-insights/) for more information.

@@ -5,7 +5,7 @@
 ---
 # External NLU
 
-Cognigy.AI is setup to handle all intent and slot mapping for agents with the built-in Cognigy NLU using the resources defined in flow [Intents]({{config.site_url}}ai/nlu/nlu-overview/overview/#intents) and [Lexicons]({{config.site_url}}ai/resources/build/lexicons/). 
+Cognigy.AI is set up to handle all intent and slot mapping for agents with the built-in Cognigy NLU using the resources defined in flow [Intents]({{config.site_url}}ai/nlu/nlu-overview/overview/#intents) and [Lexicons]({{config.site_url}}ai/resources/build/lexicons/). 
 
 However, it is also possible to integrate an external NLU Provider to handle intent mapping within Cognigy.AI using the [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) feature. These external NLU Connectors will generate the same input object as Cognigy, which enables agents to easily switch NLU providers without having to change flows. 
 
@@ -41,7 +41,7 @@ Cognigy.AI provides platform users with the opportunity to substitute the NLU se
 
 ### Testing with an External NLU
 ---
-An external NLU service that has been connected via the NLU connectors feature can be used for testing via the **Interaction Panel**. Open the interaction panel from within an agent and select the ***settings*** tab to access the ***NLU Connector*** dropdown menu. This menu is populated with all of the NLU connectors that have been added to the agent.
+An external NLU service that has been connected via the NLU connectors feature can be used for testing via the **Interaction Panel**. Open the interaction panel from within an agent and select the ***settings*** tab to access the ***NLU Connector*** dropdown menu. This menu is populated with all the NLU connectors that have been added to the agent.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/017da2e-NLUConnectors_MenuIP.PNG" width="100%" />
@@ -51,7 +51,7 @@ An external NLU service that has been connected via the NLU connectors feature c
 ---
 An external NLU service that has been linked via an [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) feature can be used to deploy to any [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/) that communicates with a deployment channel. This allows different conversational channels to use different NLU's when connected to the same agent in Cognigy.AI.
 
-To change the NLU for a given endpoint, open the ***Endpoints*** menu found under the ***Deploy*** sub-menu in the resources panel. Select the endpoint that you wish to adjust by clicking on it to open the endpoint settings menu. Navigate to the **Natural Language Understanding** section of the endpoint settings and access the ***NLU Connector*** dropdown menu. This menu is populated with all of the NLU connectors that have been added to the agent.
+To change the NLU for a given endpoint, open the ***Endpoints*** menu found under the ***Deploy*** sub-menu in the resources panel. Select the endpoint that you wish to adjust by clicking on it to open the endpoint settings menu. Navigate to the **Natural Language Understanding** section of the endpoint settings and access the ***NLU Connector*** dropdown menu. This menu is populated with all the NLU connectors that have been added to the agent.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/8fb7e35-NLUEndpointSelectionDocs.PNG" width="100%" />

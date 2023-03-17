@@ -38,7 +38,7 @@ Enable this setting to continue executing the flow logic after a default reply h
 
 ### Continue Flow after negative confirmation
 
-Enable this setting to continue the flow logic after an intent confirmation sentence has been responded to negatively.
+Enable this setting to continue the flow logic after an intent confirmation sentence has been responded too negatively.
 
 ### Pass Default Reply into Flow
 

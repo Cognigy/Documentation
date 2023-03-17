@@ -44,11 +44,11 @@ Cognigy.AI supports the V1.1 and V2 APIs offered by Sunshine Conversations. The 
 
 ### Key ID
 
-The API Key ID from your Sunshine Conversations app. This value is typically in the format "app_XXXXXXXXXXXXXXXXXXXXXXXX" and must be the API Key ID associated with the secret entered in the following field.
+The API Key ID from your Sunshine Conversations app. This value is typically in the format "app_XXXXXXXXXXXXXXXXXXXXXXXX" and must be the API Key ID associated with the secret entered the following field.
 
 ### Secret
 
-Your Sunshine Conversations app's Key ID SECRET that is a randomly generated API key secret from Sunshine Conversations. The value of this field must be the SECRET associated with the API Key ID entered in the previous field.
+Your Sunshine Conversations app's Key ID SECRET that is a randomly generated API key secret from Sunshine Conversations. The value of this field must be the SECRET associated with the API Key ID entered the previous field.
 
 ### URI
 
@@ -62,5 +62,5 @@ The URI where we send messages to your Sunshine Conversations app. E.g. https://
 
 ## More information
 
-- [Help Center: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
-- [Help Center: Sunshine Conversations Zendesk Handovers](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)
+- [HelpCenter: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
+- [HelpCenter: Sunshine Conversations Zendesk Handovers](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)

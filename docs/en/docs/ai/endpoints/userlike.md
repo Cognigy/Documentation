@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 
 ???+ info "Help Center"
-    More detailed information on how to set up a **Userlike** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).
+    More detailed information on how to set up an **Userlike** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).
 
 ## Message types in Userlike unified messaging channels
 

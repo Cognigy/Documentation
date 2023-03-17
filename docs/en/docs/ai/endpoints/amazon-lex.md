@@ -54,30 +54,30 @@ The procedure differs if you want to reuse your existing Amazon Lex bots for NLU
 
 To reuse the Amazon Lex NLU, please refer to these articles: 
 
-- [Helpcenter: Amazon Lex Intro](https://support.cognigy.com/hc/en-us/articles/6229744711964) 
+- [HelpCenter: Amazon Lex Intro](https://support.cognigy.com/hc/en-us/articles/6229744711964) 
 
-- [Helpcenter: Amazon Lex: Setup Amazon Lex (Amazon Lex NLU)](https://support.cognigy.com/hc/en-us/articles/6229640404636) 
+- [HelpCenter: Amazon Lex: Setup Amazon Lex (Amazon Lex NLU)](https://support.cognigy.com/hc/en-us/articles/6229640404636) 
 
-- [Helpcenter: Amazon Lex: Setup AWS Lambda (Amazon Lex NLU)](https://support.cognigy.com/hc/en-us/articles/6229644597020) 
+- [HelpCenter: Amazon Lex: Setup AWS Lambda (Amazon Lex NLU)](https://support.cognigy.com/hc/en-us/articles/6229644597020) 
 
  
 
  If you want to use the Cognigy.AI NLU, please refer to these articles: 
 
-- [Helpcenter: Amazon Lex Intro](https://support.cognigy.com/hc/en-us/articles/6229744711964) 
+- [HelpCenter: Amazon Lex Intro](https://support.cognigy.com/hc/en-us/articles/6229744711964) 
 
-- [Helpcenter: Amazon Lex: Setup Amazon Lex (Cognigy.AI NLU)](https://support.cognigy.com/hc/en-us/articles/6229658502812) 
+- [HelpCenter: Amazon Lex: Setup Amazon Lex (Cognigy.AI NLU)](https://support.cognigy.com/hc/en-us/articles/6229658502812) 
 
-- [Helpcenter: Amazon Lex: Setup AWS Lambda (Cognigy.AI NLU)](https://support.cognigy.com/hc/en-us/articles/6229661373084) 
+- [HelpCenter: Amazon Lex: Setup AWS Lambda (Cognigy.AI NLU)](https://support.cognigy.com/hc/en-us/articles/6229661373084) 
 
  
 
  If you want to integrate your Amazon Lex bot into Amazon Connect, please refer to these articles: 
 
-- [Helpcenter: Amazon Connect: Intro](https://support.cognigy.com/hc/en-us/articles/6229662732444) 
+- [HelpCenter: Amazon Connect: Intro](https://support.cognigy.com/hc/en-us/articles/6229662732444) 
 
-- [Helpcenter: Amazon Connect: Setup Amazon Connect](https://support.cognigy.com/hc/en-us/articles/6229664156060) 
+- [HelpCenter: Amazon Connect: Setup Amazon Connect](https://support.cognigy.com/hc/en-us/articles/6229664156060) 
 
-- [Helpcenter: Amazon Connect: Control Amazon Connect from Cognigy.AI](https://support.cognigy.com/hc/en-us/articles/6229683335196) 
+- [HelpCenter: Amazon Connect: Control Amazon Connect from Cognigy.AI](https://support.cognigy.com/hc/en-us/articles/6229683335196) 
 
-- [Helpcenter: Amazon Connect: Enable SSML replies from Cognigy.AI](https://support.cognigy.com/hc/en-us/articles/6229684421916) 
+- [HelpCenter: Amazon Connect: Enable SSML replies from Cognigy.AI](https://support.cognigy.com/hc/en-us/articles/6229684421916) 

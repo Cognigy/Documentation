@@ -44,7 +44,7 @@ You can copy a Node with the corresponding menu option. This also copies all chi
 
 <div class="divider"></div>
 
-You can add additional information about Nodes in the Node Comment. To add a comment, open a Node by clicking on on it and scroll down to the **Styling** section. Here you can add a comment.
+You can add additional information about Nodes in the Node Comment. To add a comment, open a Node by clicking on it and scroll down to the **Styling** section. Here you can add a comment.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e710f5e-styling.jpg" width="100%" />
 </figure>
@@ -127,10 +127,10 @@ Clicking on **Create Flow from Branch** option will open a dialog box that promp
 
 Providing a valid Flow name and clicking the *Create* button in the dialog will do the following:
 
-  * Create a new Executee Flow containing all the Nodes from the selected branch.
+  * Create a new Executed Flow containing all the Nodes from the selected branch.
 
   * Replace all Nodes from the selected branch, with an **Execute Flow Node** from which the created Flow will be executed.
 
-  * The Intents/Slots will not be parsed, and the Context will not be absorbed when executing the new Executee Flow.
+  * The Intents/Slots will not be parsed, and the Context will not be absorbed when executing the new Executed Flow.
 
-  * Also, NLU configuration/settings/default Context etc. will not be copied to Executee Flow. Therefore, please check and adjust the NLU section of the created Flow, as necessary.
+  * Also, NLU configuration/settings/default Context etc. will not be copied to Executed Flow. Therefore, please check and adjust the NLU section of the created Flow, as necessary.

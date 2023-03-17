@@ -38,7 +38,7 @@ The `handleExecutionFinished` function gets a configuration object as an argumen
 |Argument|	Description	|Webhook Transformers|	REST Transformers|	Socket Transformers|
 |--|--|--|--|--|
 |endpoint|	The configuration object for the Endpoint. Contains the URLToken etc.|	X|	X	|X|
-|outputs|	A list of all of the outputs from the Flow. This outputs in the list could be influenced in the Output Transformer for REST Endpoints|	|	X	||
+|outputs|	A list of all the outputs from the Flow. This outputs in the list could be influenced in the Output Transformer for REST Endpoints|	|	X	||
 |processedOutput|	The output that was processed into the format that the specific channel expects. This is what would normally be sent to the channel if the Execution Finished Transformer would be disabled.|	|	X	||
 |userId|	The unique ID of the user.|	X	|X|	X|
 |sessionId	|The unique ID of the conversation.|	X|	X|	X|
@@ -52,7 +52,7 @@ The return value of the `Execution Finished Transformer` depends on the base typ
 ## REST Transformers
 The `Execution Finished Transformer` has to return an output which can be sent directly to the specific channel without making any further modifications. This means that if the Transformer is active in a `Alexa` Endpoint, then the format has to be according to the message format described in the documentation for Alexa.
 
-Here is an example of the correct return format for a Alexa Endpoint:
+Here is an example of the correct return format for an Alexa Endpoint:
 
 **Webhook / Socket Return Format**
 ```JavaScript

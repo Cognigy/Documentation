@@ -11,7 +11,7 @@
 
 ### Improvements
 
-- Improved by adding support to remember the first accessed URL path and redirecting to it after login successfully
+- Improved by adding support to remember the first accessed URL path and redirecting to it after log in successfully
 
 - Improved by removing resolve functionality from the mute operation. Previously, whenever an agent would mute a conversation, the conversation would be automatically resolved
 
@@ -41,7 +41,7 @@
 
 - Improved the UI for agent assist by reducing the structured content messages and simple messages to 70% of their original size, changed the forward arrow icon and added functionality to forward the agent assist message by clicking the whole agent assist message container. Also augmented the size of non-forwardable informational elements like Lists and Text with buttons
 
-- Improved by adding the possibility to render adaptive card messages in Live Agent as structured content and as agent assist messages, non-forwardable adaptive cards are shown in the original size so they can serve as informational elements
+- Improved by adding the possibility to render adaptive card messages in Live Agent as structured content and as agent assist messages, non-forwardable adaptive cards are shown in the original size, so they can serve as informational elements
 
 ## 4.26.0
 
@@ -63,7 +63,7 @@
 
 - Fixed a bug where the website favicon didn't change, and the notification sound was not played while receiving new messages
 
-- Fixed a bug where Cognigy.AI multitenant users were not able to login into the proper Cognigy.AI organisation using OAuth login
+- Fixed a bug where Cognigy.AI multi-tenant users were not able to log in into the proper Cognigy.AI organisation using OAuth login
 
 - Fixed a bug where agents were not notified about conversation assignment the first time the conversation was created and auto-assigned to them
 
@@ -97,6 +97,6 @@
 ### Improvements
 
 - Improved by having proper OAuth error pages design with links to receive support in the Live Agent documentation
-- Improved by extending Cognigy.AI OAuth handler logic to update user fields while doing log in when they are changed in Cognigy.AI, such as the user name
+- Improved by extending Cognigy.AI OAuth handler logic to update user fields while doing log in when they are changed in Cognigy.AI, such as the username
 - Improved by hiding inbox setting allow messages after a conversation is resolved as it was not working as expected
 - Improved by hiding conversation section "previous conversations" as it was not working as expected

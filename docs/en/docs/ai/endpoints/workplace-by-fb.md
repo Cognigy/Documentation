@@ -42,9 +42,9 @@ The **Workplace Settings** dropdown menu is where Cognigy.AI needs to be provide
 </figure>
 
 
-### Workplace Recipient Id
+### Workplace Recipient ID
 
-This value is the **Recipient Id** which is obtained from the page URL when a conversation with the workplace bot is taking place. This must be added after it has been installed to your workplace instance.
+This value is the **Recipient ID** which is obtained from the page URL when a conversation with the workplace bot is taking place. This must be added after it has been installed to your workplace instance.
 
 ### Install
 
@@ -55,4 +55,4 @@ Use this button to trigger the installation process of the Cognigy.AI Bot to you
 
 ## More information
 
-- [Help Center: Workplace by Facebook Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310379)
+- [HelpCenter: Workplace by Facebook Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310379)

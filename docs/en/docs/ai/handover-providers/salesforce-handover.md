@@ -27,7 +27,7 @@ This will require you to fill out the following related fields. To get started, 
 - Copy the "Base URL" from the field (`https://x.xxx-xx-xxx.salesforceliveagent.com` without `/chat/rest`) into the "Live Agent Base URL" field in Cognigy.AI
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/salesforce-baseurl.png" width="100%" />
-  <figcaption>Retreiving the Live Agent Base URL</figcaption>
+  <figcaption>Retrieving the Live Agent Base URL</figcaption>
 </figure>
 
 ### API Version
@@ -54,14 +54,14 @@ embedded_svc.init(
 ```
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/salesforce-ids.png" width="100%" />
-  <figcaption>Retreiving Organisation ID, Deployment ID and Button ID</figcaption>
+  <figcaption>Retrieving Organisation ID, Deployment ID and Button ID</figcaption>
 </figure>
 
 ## Pre-Chat Entities and Pre-Chat Details
 
 ### Default Behavior
 
-Cognigy.AI sends a stringified version of the Conversation History. The Conversation History will be displayed when the Agent received the first message from the User, as well as in the "Transcripts" tab of Salesforce Service Console under the Transcript > Details > Trascript > Body section.
+Cognigy.AI sends a stringified version of the Conversation History. The Conversation History will be displayed when the Agent received the first message from the User, as well as in the "Transcripts" tab of Salesforce Service Console under the Transcript > Details > Transcript > Body section.
 
 
 ### Sending Pre-Chat Details and Pre-Chat Entities to Salesforce

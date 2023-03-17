@@ -63,11 +63,11 @@ Multiple text messages can be added for conversational variation. When multiple 
 
 When sending simple text output, Cognigy.AI dialog nodes provide options for configuring the behavior of output and attaching data to the message. The configuration options and their functions are listed below:
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Linear | toggle | Iterates through the text options linearly instead of randomly. |
-| Loop | toggle | If `linear` is set, the order restarts at the first text response after reaching the end. Otherwise the last text option will be repeatedly used, once reached. |
-| Data | JSON | The data you want to send to the client |
+| Parameter | Type   | Description                                                                                                                                                     |
+|-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Linear    | toggle | Iterates through the text options linearly instead of randomly.                                                                                                 |
+| Loop      | toggle | If `linear` is set, the order restarts at the first text response after reaching the end. Otherwise the last text option will be repeatedly used, once reached. |
+| Data      | JSON   | The data you want to send to the client                                                                                                                         |
 
 ???+ info "Linear and Loop"
     There are three different combinations of applying the Linear and Loop toggles, each providing a different behavior style for the order in which messages are delivered on future activation of the same node. The three combinations are:
@@ -383,7 +383,7 @@ This toggle defines whether the session should be kept open or whether it should
     If more than one Say Node is hit during Flow Execution, then the Keep Session Open value of the last output is used
 ### SSML editor
 
-With our **Google Actions SSML Editor** you're able to build your Google Asisstant output speech by either entering SSML markup or by using our SSML markup templates (see figure below).
+With our **Google Actions SSML Editor** you're able to build your Google Assistant output speech by either entering SSML markup or by using our SSML markup templates (see figure below).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f0aa08b-ssml.jpg" width="100%" />
@@ -408,7 +408,7 @@ For further details see the [Google Actions Documentation](https://developers.go
   <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Basic Card</td>
     <td style="padding: 20px;">
-      Displays information that can include a title, sub-title, a description, an image and a button
+      Displays information that can include a title, subtitle, a description, an image and a button
       </br>
       <h4>Limitations</h4>
       <ul>
@@ -489,9 +489,9 @@ The **LINE** tab provides two methods for creating and editing a message which i
 - **Text** for sending text message responses
 - **Custom JSON** for defining more complex messages and templates
 
-| Type | Description |
-| ---- | ----------- |
-| Text | A simple text message. |
+| Type        | Description                                                                                                                                                      |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text        | A simple text message.                                                                                                                                           |
 | Custom JSON | Can contain a valid LINE message object. See the [Line Documentation](https://developers.line.me/en/reference/messaging-api/) for further details and templates. |
 ## Twilio
 <div class="divider"></div>
@@ -501,18 +501,18 @@ The **LINE** tab provides two methods for creating and editing a message which i
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio Documentation</a></div>
 </figure>
 
-| Type | Description |
-| ---- | ----------- |
-| Text | A simple text message. |
-| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates.|
+| Type  | Description                                                                                                                                                                                                    |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text  | A simple text message.                                                                                                                                                                                         |
+| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
 
 ???+ warning "Validate your TwiML"
-    Please make sure that the TwiML you enter in the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+    Please make sure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
 ### Amazon Polly Voice
 ---
-In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice. *Polly* has some features which are listed in Twilio's documentation, see:
+In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice. *Polly* has some features which are listed in Twilio documentation, see:
 
 [:link: Twilio Amazon Polly](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
 ## Twilio SMS
@@ -523,13 +523,13 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS Documentation</a></div>
 </figure>
 
-| Type | Description |
-| ---- | ----------- |
-| Text | A simple text message. |
-| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates.|
+| Type  | Description                                                                                                                               |
+|-------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Text  | A simple text message.                                                                                                                    |
+| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
 
 ???+ warning "Validate your TwiML"
-    Please make sure that the TwiML you enter in the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+    Please make sure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
 ## Microsoft Teams
@@ -540,15 +540,15 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 </figure>
 
 ???+ info "Teams Cards"
-    Structured content in Microsoft Teams is sent as so called Cards. Please refer to our [Deploy a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
+    Structured content in Microsoft Teams is sent as so-called Cards. Please refer to our [Deployment a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
 <!-- need to change the link above  -->
 
 <div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
 
-| Type | Description |
-| ---- | ----------- |
-| Text | A simple text message. |
-| JSON | Can contain valid JSON in the Bot Framework / Microsoft Teams format. See the [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates.|
+| Type | Description                                                                                                                                                                                                                                                                    |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text | A simple text message.                                                                                                                                                                                                                                                         |
+| JSON | Can contain valid JSON in the Bot Framework / Microsoft Teams format. See the [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
 
 ???+ warning "Multiple Flow Outputs"
     If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
@@ -557,14 +557,14 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
-As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option „Text with Buttons“, „Gallery“ or „List“.
+As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
 
 **Say Node example using "Text with Buttons"**
 
 1. Create a Flow with Say Node. 
-2. Start the Say Node Editor, select the „Text with Buttons“ option and click on „Add a new Button“. 
-3. Then select „URL“ as 'Button Type' and enter the Internet address you want. 
-4. Complete the configuration by selecting **„Open URL in a new tab“** or **„Open URL in the same tab“**. 
+2. Start the Say Node Editor, select the **Text with Buttons** option and click **Add a new Button**. 
+3. Then select **URL** as **Button Type** and enter the Internet address you want. 
+4. Complete the configuration by selecting **Open URL in a new tab** or **Open URL in the same tab**. 
 5. Deploy an Endpoint with the Webchat option and start a bot conversation.
     The configured Say Node Buttons will be displayed in the Webchat Widget.
 6. Click on the Button.

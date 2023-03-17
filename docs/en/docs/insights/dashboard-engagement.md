@@ -229,7 +229,7 @@ Result:
 
 ### Contacts
 
-A line chart displaying the number of unique contacts (`userid`) on a time scale.
+A line chart displaying the number of unique contacts (`userid`) on a timescale.
 
 Source table:
 

@@ -21,11 +21,11 @@ The Voice Gateway Call Recording Node initiates or terminates the recording of a
 
 The Node uses a Voice Gateway API to act as a [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866) client to record the audio using the SIPREC protocol. The recorded audio is sent to a Session Recording Server (SRS) for storage. You can use any SRS for storing audio records.
 
-| Parameter | Type | Description | Activity type |
-| ----------- | ----------- | ----------- |  ----------- |
-| Activity | Select | Whether to start, stop, pause, or resume a call recording. | -
-| Call Recording Server | CognigyScript | Specify an IP group (a collection of IP addresses), for example, `sip:3.208.57.175` or `sip:siprec.cognigy.ai`. <br> The Voice Gateway sends call recordings to an IP group linked to the SRS, ensuring that calls are properly recorded and saved for future use. Based on the setup, the IP group may be linked to multiple SRS servers.|  Start Call Recording
-| Call Recording ID | CognigyScript | Defines the recording session identifier, which is forwarded by the Voice Gateway to the SRS. | Start Call Recording
+| Parameter             | Type          | Description                                                                                                                                                                                                                                                                                                                                | Activity type        |
+|-----------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|
+| Activity              | Select        | Whether to start, stop, pause, or resume a call recording.                                                                                                                                                                                                                                                                                 | -                    |
+| Call Recording Server | CognigyScript | Specify an IP group (a collection of IP addresses), for example, `sip:3.208.57.175` or `sip:siprec.cognigy.ai`. <br> The Voice Gateway sends call recordings to an IP group linked to the SRS, ensuring that calls are properly recorded and saved for future use. Based on the setup, the IP group may be linked to multiple SRS servers. | Start Call Recording |
+| Call Recording ID     | CognigyScript | Defines the recording session identifier, which is forwarded by the Voice Gateway to the SRS.                                                                                                                                                                                                                                              | Start Call Recording |
 
 
 

@@ -58,7 +58,7 @@ Here you can add new users to the system. A user needs to get assigned to an **o
 </figure>
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}}) 
-You can add an user(identified by an e-mail address) to multiple organisations and how the user can login for their organisation can be found on [Login for Users in multiple organisation]({{config.site_url}}ai/installation/AI-login/#login-for-users-in-multiple-organisation) page 
+You can add a user (identified by an email address) to multiple organisations and how the user can log in for their organisation can be found on [Login for Users in multiple organisation]({{config.site_url}}ai/installation/AI-login/#login-for-users-in-multiple-organisation) page 
 
 If you click on one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
 
@@ -174,7 +174,7 @@ The maximum amount characters which can be identical in the password.
 
 - Amount of failed logins resulting in account disabling
 
-Specifies how many times a user can attempt to login before their account is disabled. 
+Specifies how many times a user can attempt to log in before their account is disabled. 
 Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI.
 
 Clicking the ``Save & Enforce`` button results in all users of the organisation to get logged out. Upon re-logging they will be required to change their password.
@@ -237,7 +237,7 @@ In the menu, select **Change Expiration Values**.
 
 
 
-All of the expiration values define how many **minutes** it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. It is possible to configure the expiration of the following data:
+All the expiration values define how many **minutes** it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. It is possible to configure the expiration of the following data:
 
 - Contact Profiles Expiration
 

@@ -33,10 +33,10 @@ table th {
 <div class="divider"></div>
 
 
-For communication with the Cognigy.AI installation, the frontend uses a HTTP-based API.
+For communication with the Cognigy.AI installation, the frontend uses an HTTP-based API.
 This API can also be used by developers to build custom integrations with Cognigy.AI. We also offer a library in the form of an NPM package called the "rest-api-client" which helps to lower the burden of consuming our APIs. This library is available on NPM and is written in modern JavaScript including Typescript definitions.
 
-## What are the API's capabilities?
+## What are the API capabilities?
 
 <div class="divider"></div>
 
@@ -88,13 +88,13 @@ By clicking an API key, you can copy the API key to your clipboard.
 
 ## How do I use the API?
 <div class="divider"></div>
-Cognigy's API includes an OpenAPI documentation which outlines all the different API operations in detail. For example for Cognigy's trial environment it can be found at https://api-trial.cognigy.ai/openapi.
+Cognigy API includes an OpenAPI documentation which outlines all the different API operations in detail. For example for Cognigy trial environment it can be found at https://api-trial.cognigy.ai/openapi.
 
-To do a call to the API, do a HTTP request and add either
+To do a call to the API, do an HTTP request and add either
 - a query parameter `api_key` with your API key as value
 - a header `X-API-Key`with your API key set as value
 
-Let's assume I have a Cognigy.AI installation running at `https://api-dummy.cognigy.ai` and i created myself an API key which reads `myDummyApiKey123`. 
+Let's assume I have a Cognigy.AI installation running at `https://api-dummy.cognigy.ai` and I created myself an API key which reads `myDummyApiKey123`. 
 
 I can now open a new browser tab and go to `https://api-dummy.cognigy.ai/projects?api_key=myDummyApiKey123` to get a list of all the projects that are assigned to me, including meta-information about the resources within that project.
 This call, for example, is used by the frontend when you load the "Projects" page.

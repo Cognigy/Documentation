@@ -28,7 +28,7 @@ It also allows for editing user profiles, carriers, and speech services that bel
 
 This scope is only available for On-premises Cognigy Voice Gateway installations. 
 
-It includes all of the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Account scope. 
+It includes all the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Account scope. 
 
 Additionally, users with the Service Account scope can create, edit, and delete users with the Account and Service Provider scopes, and they can generate API keys.
 

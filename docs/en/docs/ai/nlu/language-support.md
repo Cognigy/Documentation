@@ -46,7 +46,7 @@ For 28 of the most common languages, Cognigy.AI provides prebuilt entities that 
 ## Universal Language
 <div class="divider"></div>
 
-The Universal Language option extends the Cognigy NLU’s compatibility with over 100 languages by employing advanced multi-lingual machine learning models. The languages supported include:
+The Universal Language option extends the Cognigy NLU’s compatibility with over 100 languages by employing advanced multilingual machine learning models. The languages supported include:
 
 * Afrikaans
 * Albanian
@@ -116,7 +116,7 @@ The Universal Language option extends the Cognigy NLU’s compatibility with ove
 The Universal Language allows you to use Intent mapping in any language which, along with Keyphrase detection and our powerful Rule Intent Engine, enables you to build Flows in any language.
 
 ### Description
-The Universal Language uses multi-lingual NLU algorithms and models. This must be qualified to include only space-tokenized languages such as English for full support. E.g., keyphrase detection uses spaces " " as a delimiter. Intent mapping works across tokenization schemes but also benefits from space-tokenized languages.
+The Universal Language uses multilingual NLU algorithms and models. This must be qualified to include only space-tokenized languages such as English for full support. E.g., keyphrase detection uses spaces " " as a delimiter. Intent mapping works across tokenization schemes but also benefits from space-tokenized languages.
 
 ### Rule Intents with the Universal Language
 A powerful and useful way to use the Universal Language is by using Rule Intents. These Intents let you define custom rules using CognigyScript that will decide whether the Intent is triggered. You can thereby have a rule like this:

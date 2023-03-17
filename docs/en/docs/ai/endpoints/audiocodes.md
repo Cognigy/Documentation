@@ -82,7 +82,7 @@ Find out about the generic endpoint settings available with this endpoint on the
     To link a **AudioCodes** **Endpoint** to a phone number, please contact your **Cognigy** representative in order to provision and configure a VG instance.
 
 ???+ warning "AudioCodes VoiceAI Connect"
-    Cognigys AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
+    Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
 
 ???+ warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.

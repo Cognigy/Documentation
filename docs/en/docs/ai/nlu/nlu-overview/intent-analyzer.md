@@ -83,10 +83,10 @@ In conjunction with the traffic light color, these two pieces of information all
 <div class="divider"></div>
 The **Intent Analyzer** uses a traffic light color system to provide users with three stage scoring feedback. The color coding is explained in the table below:
 
-| Color | Score Range |
-|-------|-------------|
-| Green | Score > 0.8 |
+| Color  | Score Range       |
+|--------|-------------------|
+| Green  | Score > 0.8       |
 | Yellow | 0.8 > Score ≥ 0.6 |
-| Red | 0.6 > Score |
+| Red    | 0.6 > Score       |
 
 

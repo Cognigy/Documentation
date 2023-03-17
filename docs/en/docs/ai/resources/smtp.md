@@ -22,7 +22,7 @@ An SMTP Connection can be used to easily connect to an SMTP server. You'll need 
 
 It is important that the TLS option matches what the server expects - otherwise you won't be able to connect. For **Port 587** one need to choose **STARTTLS** as TLS option; for **Port 465** use **TLS** as TLS option.
 
-Use the **Send Email** button to send an email to the entered account.
+Use the **Send Email** button to email the entered account.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/10491ff-smtpConnection.PNG" width="100%" />

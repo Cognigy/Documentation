@@ -22,14 +22,14 @@ Our inject API can be used to send an arbitrary pair of **text** and **data** in
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/1cfe64c-inject.png" width="100%" />
-  <figcaption>Schema which shows the data-flow during a inject call.</figcaption>
+  <figcaption>Schema which shows the data-flow during an inject call.</figcaption>
 </figure>
 
 ## Notify
 
 <div class="divider"></div>
 
-Notify, in contrast to inject, can only be used to send a simple **text** and/or **data** message directly to the user. The message will not get forwarded into a flow and hence you don't have further control about what the user actually gets.
+Notify, in contrast to inject, can only be used to send a simple **text** and/or **data** message directly to the user. The message will not get forwarded into a flow and hence you don't have further controlled about what the user actually gets.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/45c4df1-notify.png" width="100%" />
@@ -47,16 +47,16 @@ You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/ht
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/bc2f034-httprequest.jpg" width="100%" />
-  <figcaption>Using a HTTP-Request node to trigger a long-running process in an external system</figcaption>
+  <figcaption>Using an HTTP-Request node to trigger a long-running process in an external system</figcaption>
 </figure>
 
-|Field in Inject & Notify	|Cognigy Script|
-|-------------------------|--------------|
-|text	                    |ci.text       |
-|data                     |ci.data       |
-|sessionId                |ci.sessionId  |
-|userId                   |ci.userId     |
-|URLToken	                |ci.URLToken   |
+| Field in Inject & Notify	 | Cognigy Script  |
+|---------------------------|-----------------|
+| text	                     | ci.text         |
+| data                      | ci.data         |
+| sessionId                 | ci.sessionId    |
+| userId                    | ci.userId       |
+| URLToken	                 | ci.URLToken     |
 
 ## Notify and Inject in Transformers
 

@@ -6,9 +6,9 @@
 # Setup a Cognigy.AI Flow for Handover
 <div class="divider"></div>
 
-## Setup a Flow for Handover
+## Set up a Flow for Handover
 
-Once you have [**Setup your Endpoint for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/), you can setup your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent.
+Once you have [**Set up your Endpoint for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/), you can set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent.
 
 Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
@@ -44,7 +44,7 @@ Open a tab with Live Agent via the User Menu.
   <figcaption>User Menu</figcaption>
 </figure>
 
-Find the Conversation by clicking the Conversation bubble on the left. Next, click on the *All* tab.
+Find the Conversation by clicking the Conversation bubble on the left. Next, click *All*.
 
 <figure>
     <img src="{{config.site_url}}live-agent/images/LA-inbox-example.PNG" width="100%" alt="Live Agent Conversation Screen">

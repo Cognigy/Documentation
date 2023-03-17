@@ -62,7 +62,7 @@ Lets you configure whether to stop flow execution when an error occurs or not.
 
 #### Caching
 ##### Cache Response from MongoDB Operation. 
-Whether or not to cache the MongoDB responses to optimize performance.
+Whether to cache the MongoDB responses to optimize performance.
 
 ### Find One
 #### Collection
@@ -106,7 +106,7 @@ Lets you configure whether to stop flow execution when an error occurs or not.
 
 #### Caching
 ##### Cache Response from MongoDB Operation. 
-Whether or not to cache the MongoDB responses to optimize performance.
+Whether to cache the MongoDB responses to optimize performance.
 
 
 ### Update One
