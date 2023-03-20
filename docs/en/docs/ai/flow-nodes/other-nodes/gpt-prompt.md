@@ -21,7 +21,7 @@ Before using this Node, set the Generative AI provider in the [Settings](../../g
 
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Prompt                    | CognigyScript | The prompt to generate completions for, encoded as a string, array of strings, array of tokens, or array of token arrays. You can find examples of using this field in [Examples](#examples).                                                                                                                                                                                                  |
+| Prompt                    | CognigyScript | The prompt to generate completions for, encoded as a string, array of strings, array of tokens, or array of token arrays. You can add special tags in the prompt, read more in [Additional tags](#additional-tags).                                                                                                                                                                            |
 | Sampling Method           | Select        | Methods:<br/>- Temperature - determines the level of randomness in the generated text. A higher temperature allows for more diverse and creative outputs, while a lower temperature leads to more predictable and consistent outputs with the training data.<br> - Top Percentage - specifies the percentage of the most probable outputs for generation, resulting in more consistent output. |
 | Maximal Tokens            | Indicator     | The maximum number of tokens to generate in the completion.                                                                                                                                                                                                                                                                                                                                    |
 | Presence Penalty          | Indicator     | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.                                                                                                                                                                                                               |
@@ -32,15 +32,32 @@ Before using this Node, set the Generative AI provider in the [Settings](../../g
 | Where to store the result | Select        | You can store the result in the Input or Context.                                                                                                                                                                                                                                                                                                                                              |
 | Input Key to store Result | CognigyScript | Filled in by default.                                                                                                                                                                                                                                                                                                                                                                          |
 
-## Examples
+## Additional tags
 
-To generate a response based on the user's previous answers, use the `"@cognigyRecentConversation"` function.
-Ensure to insert one raw space between `"@cognigyRecentConversation"` and the assigned task for Generative.AI.
+You can inject the recent conversation in the Prompt field by using the `@cognigyRecentConversation` or `@cognigyRecentUserInputs` tags.
 
-```txt
-A user said: "@cognigyRecentConversation"
+The `@cognigyRecentConversation` tag is replaced with a string containing the recent virtual agent and user outputs, for example:
 
-Describe the user sentiment in one very short line.
+```text
+- Agent: agentOutput1
+- User: userOutput1
+- Agent: agentOutput2
+- User: userOutput2
+```
+
+The @cognigyRecentUserInputs tag is replaced with a string containing the recent user outputs, for example:
+
+```text
+- User: userOutput1
+- User: userOutput2
+```
+
+Ensure to insert one raw space between a tag and the assigned task for Generative.AI, for example:
+
+```text
+A user had a conversation with a chatbot. The conversation history so far is:@cognigyRecentConversationDescribe 
+
+the user sentiment in one very short line.
 ```
 
 ## More Information
