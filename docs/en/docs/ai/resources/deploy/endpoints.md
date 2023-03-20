@@ -67,12 +67,14 @@ Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/reso
 
 Agents with Snapshots have the toggle "Override Snapshot Connections" in the Endpoint editor. Turning this toggle ON will allow this Endpoint to override the Connections in a Snapshot with the [**Connections**]({{config.site_url}}ai/resources/build/connections/) in the Project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
 
-!!! note "Default setting"
+!!! info "Default setting"
     By default, any Endpoint will keep using the Connections from the Snapshot unless the toggle is turned ON.
 
 !!! note "Which Connections are overridden?"
     The Agent in which the Connection is to be overridden should initially be either restored from a Snapshot, or should have the Connections imported from another (source) Agent using a Package. The Snapshot selected in the Endpoint editor should be a Snapshot created from the same (source) Agent, to make sure that the Connections "match". In this case, if the toggle is ON, any change in the Connections of the restored Agent will be considered over the Connections in the selected Snapshot.
 
+!!! info "Troubleshooting Connection Override Issues"
+    You can verify or troubleshoot Connections by their referenceId, which needs to match both in the Project and the Snapshot for the override feature to work. This can be done via our [API](../../developer-guides/using-api.md) with the "Get all Connections" call.
 #### Flow
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
