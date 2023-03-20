@@ -52,10 +52,11 @@ The @cognigyRecentUserInputs tag is replaced with a string containing the recent
 - User: userOutput2
 ```
 
-Ensure to insert one raw space between a tag and the assigned task for Generative.AI, for example:
+Ensure that you leave a line break before and after a tag, for example:
 
 ```text
-A user had a conversation with a chatbot. The conversation history so far is:@cognigyRecentConversationDescribe 
+A user had a conversation with a chatbot. The conversation history so far is:
+@cognigyRecentConversationDescribe 
 
 the user sentiment in one very short line.
 ```
