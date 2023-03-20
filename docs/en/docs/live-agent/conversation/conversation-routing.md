@@ -38,7 +38,7 @@ Unassigned conversations are automatically assigned to agents when the limit thr
 
 **Offline Agents**:
 
-If Agents are offline, the system will distribute the conversations among all human agents equally.
+When a conversation is created in the Inbox, and there aren't agents online with access to it, the system will distribute the conversations among all human agents equally.
 
 To configure auto assignment in your Inbox, follow these steps:
 
@@ -46,8 +46,8 @@ To configure auto assignment in your Inbox, follow these steps:
 2. Select an Inbox from the list and click ![clock](../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
 4. From the **Allow auto assignment** list, select one of the following options:
-   - Enable - allows the automatic assignment of agents to conversations.
-   - Disable - allows the manual assignment of agents to conversations.
+     * Enable - allows the automatic assignment of agents to conversations. 
+     * Disable - allows the manual assignment of agents to conversations.
 
 The changes will be applied.
 
