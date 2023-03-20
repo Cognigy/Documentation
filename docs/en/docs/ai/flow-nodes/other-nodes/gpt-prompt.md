@@ -56,9 +56,9 @@ Ensure that you leave a line break before and after a tag, for example:
 
 ```text
 A user had a conversation with a chatbot. The conversation history so far is:
-@cognigyRecentConversationDescribe 
+@cognigyRecentConversation
 
-the user sentiment in one very short line.
+Describe the user sentiment in one very short line.
 ```
 
 ## More Information
