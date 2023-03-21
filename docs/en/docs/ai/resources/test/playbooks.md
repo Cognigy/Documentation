@@ -29,8 +29,8 @@ This setting determines whether to continue after a failed step or abort the pla
 #### Playbook Step
 A **Step** represents a single input including both text and data, in combination with various **Assertions** on the Flow output and status.
 
-???+ warning "Step Limit"
-    Playbooks can contain a maximum of 50 steps
+!!! warning
+    Playbooks contain a maximum of 50 steps.
 
 #### Assertion
 **Assertions** are checks on various Flow related elements, you can check on:
