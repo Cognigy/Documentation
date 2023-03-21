@@ -34,7 +34,7 @@ All data displayed in the charts relate to the [global filter](global-filter.md)
 
 ### Live Agent Escalations
 
-Indicates the number of sessions in which a customer contacts a human agent. Multiple handovers may occur during a session.
+Indicates the number of handovers. The handover occurs when a virtual agent transfers the conversation to a human agent. Multiple handovers may occur during a session.
 
 Source table:
 
@@ -48,12 +48,14 @@ Source table:
 | session-def | 1/16/2023 |          4             |     1      |
 ```
 
-Result: `3`
+Result: `7`
 
 
 ### Handover Rate
 
 Indicates the percentage of all sessions escalated to Cognigy Live Agent, calculated as the ratio of Live Agent Escalations divided by total sessions. A lower value is better.
+
+If multiple handovers occur during a session, Cognigy counts them as one escalation.
 
 Source table:
 
