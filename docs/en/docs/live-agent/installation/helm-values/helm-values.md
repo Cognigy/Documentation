@@ -168,7 +168,7 @@ In order to send analytics about conversations from Live Agent to Insights, ther
 | `cognigyInsights.secret`    | Secret name containing the key and value for the API key                                     | `""`                                                           |
 | `cognigyInsights.secretKey` | Secret key that points to the value for the API key                                          | `""`                                                           |
 
-> Note: The value for the secret key is obtained from the secret contained in "cognigy-insights-collector-api-key" whose key is called "secret" in the namespace where Cognigy.AI is installed.
+The value for the secret key is obtained from the secret contained in the Cognigy.AI namespace with the name "cognigy-insights-collector-api-key" and a key called "secret". The URL needs to point to the Insights service-collector local address.
 
 #### Troubleshooting
 
