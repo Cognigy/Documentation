@@ -205,6 +205,25 @@ If the secrets and configmaps are the same value, but the integration is not wor
       - service-resources
       - service-ui
 
+### Insights
+
+In order to keep metrics about conversations from Live Agent to Insights to be displayed in the LA dashboard the following values must be enabled
+
+| Name                                | Description                                                                | Default Value                                       |
+| ----------------------------------- | ------------------------------------------------------------------- | ---------------------------------------------------------- |
+| `cognigyInsights.apiUrl`            | This is the url of the service collector and will consist of the service name and namespace.                 | `"http://service-collector.cognigy-ai.svc.cluster.local:8000"`                                                                     |
+| `cognigyInsights.apiKey`            | Secret key For Insights connection               | `""`                                                    |
+
+>Note: apiKey is obtained from the secret contained in "cognigy-insights-collector-api-key" whose key is called "secret".
+
+#### Troubleshooting
+
+If these values are not set, conversation metrics data will not be sent to Insights and a warning log will be displayed when Live Agent is started.
+
+```
+Data will not be sent to Cognigy Insights, as neither of the following environment variables were set: COGNIGY_INSIGHTS_API_KEY and COGNIGY_INSIGHTS_API_BASE_URL_WITH_PROTOCOL
+```
+
 ### URLs
 
 | Name                                               | Description                                                         | Default Value                                              |
