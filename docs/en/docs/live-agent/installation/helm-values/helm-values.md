@@ -90,12 +90,6 @@ The recommendation is to create a new secret under the Live Agent namespace and 
 
 #### Cognigy.AI Secret
 
-##### Kustomize
-
-The [Cognigy.AI secret `cognigy-live-agent-credentials`](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/secrets.dist/cognigy-live-agent-credentials.yaml) key, `cognigy-live-agent-platform-token`, must be the same value as the Live Agent secret key previously created in order for the integration to work.
-
-Remember to apply using `kubectl` the new manifest file.
-
 ##### Helm
 
 In the case of using helm, the following values need to be set up:
@@ -140,44 +134,6 @@ For the OAuth client secret, create a secret in the Live Agent namespace and the
 >Note: The secret key value must be a random alphanumeric string of 64 characters, similar to `DUSOBAPM2L5V3CNLBw48surpgzrpk6bji9fav65xyf6ppheeac64g2d92pvwouhm`
 
 #### Cognigy.AI
-
-##### Kustomize
-
-New values need to be added to the [Cognigy.AI `configmap_patch.yaml` overlay](https://github.com/Cognigy/kubernetes/blob/main/core/template.dist/product/overlays/config-maps/config-map_patch.yaml) as well to make the integration work.
-
-These are the following:
-
-```yaml
-# Live Agent API URL (e.g. https://cognigy-live-agent.your-company.com)
-- op: add
-  path: /data/COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL
-  value: "<live-agent-url>"
-
-- op: add
-  path: /data/CLIENT_ID_COGNIGY_LIVE_AGENT
-  value: "cognigy-live-agent"
-
-# OAuth client secret, it needs to have the same value as the Live Agent secret key (cognigyOAuth.existingSecretKey)
-- op: add
-  path: /data/CLIENT_SECRET_COGNIGY_LIVE_AGENT
-  value: "<secret-value>"
-
-# Live Agent API REDIRECT URI (e.g. https://cognigy-live-agent.your-company.com/omniauth/cognigy/callback)
-- op: add
-  path: /data/REDIRECT_URI_COGNIGY_LIVE_AGENT
-  value: "<live-agent-url>/omniauth/cognigy/callback"
-
-# Live Agent UI URL (e.g. https://cognigy-live-agent.your-company.com)
-- op: add
-  path: /data/COGNIGY_LIVE_AGENT_UI_BASE_URL_WITH_PROTOCOL
-  value: "<live-agent-url>"
-
-- op: add
-  path: /data/FEATURE_USE_COGNIGY_LIVE_AGENT
-  value: "true"
-```
-
-Remember to apply using `kubectl` the new manifest file.
 
 ##### Helm
 
