@@ -10,7 +10,7 @@ The Live Agent dashboard displays Live Agent metrics for a specific Virtual Agen
 
 Using this dashboard, you can:
 
-- Track the speed of the customer's first reply and resolution from a human agent.
+- Keep track of how quickly human agents respond and resolve customer inquiries.
 - Monitor the total number of handovers for the virtual agent.
 - Summarize conversation statuses.
 - Evaluate conversation types based on assigned label.
@@ -53,7 +53,7 @@ Result: `7`
 
 ### Handover Rate
 
-Indicates the percentage of all sessions escalated to Cognigy Live Agent, calculated as the ratio of Live Agent Escalations divided by total sessions. A lower value is better.
+Indicates the percentage of all sessions escalated to Cognigy Live Agent at least once, calculated as the ratio of Live Agent Escalations divided by total sessions. A lower value is better.
 
 If multiple handovers occur during a session, Cognigy counts them as one escalation.
 
@@ -181,10 +181,10 @@ Result:
 
 ### Live Agent Performance Times
 
-Shows the timeline of the average first response and the average resolution time. This metric is calculated based on daily number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
+Shows the timeline of the average first response and the average resolution time. This metric is calculated based on number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
 
 The First Response Time metric refers to the average time a human agent takes to send a first response to a customer's request. 
-The Resolution Time metric refers to the average time a human agent spends working on a customer's request, including the time spent writing a response and any additional time spent researching or resolving the issue.
+The Resolution Time metric refers to the average time of a customer's interaction with a human agent, with a human agent, from the start of the handover sequence until the end of the session.
 
 Source tables:
 
