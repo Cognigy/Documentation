@@ -227,31 +227,26 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/positive-ratings.png" width="80%" />
 </figure>
 
-### Contacts
+### Unique Contacts
 
-A line chart displaying the number of unique contacts (`userid`) on a timescale.
+A line chart displaying the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 
 ```txt
 | Date    	| Contacts |
 | --------- | -------- |
-| 01/8/2023 |    5     |
-| 01/9/2023 |    3     |
-| 1/11/2023	|    1     |
-| 1/15/2023	|    1     |
 | 1/16/2023	|    1     |
-| 1/17/2023	|    2     |
-| 1/18/2023	|    9     |
-| 1/19/2023	|    3     |
-| 1/23/2023	|    3     |
-| 1/24/2023	|    2     | 
+| 1/17/2023	|    8     |
+| 1/18/2023	|    15    |
+| 1/19/2023	|    6     |
+| 1/20/2023	|    18    |
 ```
 
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/contacts.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/unique-contacts.png" width="100%" />
 </figure>
 
 
