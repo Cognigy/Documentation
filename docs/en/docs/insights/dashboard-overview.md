@@ -74,7 +74,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |Top Slots|	Top-rated number of slots displayed in a bar chart.|
 |Understood/Misunderstood Messages|	Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart. <br> A message is counted as understood/misunderstood if it has triggered an intent, a slot is matched, or it is marked as understood or misunderstood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood/misunderstood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow.|
 |Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts/)
-|Unique Contacts|	Time-related number of unique contacts displayed in a line chart.|
+|Unique Contacts| Time-related number of unique contacts displayed in a line chart. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.|
 
 ##Download Report
 

@@ -1,10 +1,10 @@
 ---
- title: "Init xApp Session" 
+ title: "xApp: Init Session" 
  slug: "Init-xApp-Session" 
  hidden: true 
 ---
 
-# Init xApp Session
+# xApp: Init Session
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/init-xApp-session.png" width="100%" />
@@ -40,6 +40,6 @@ Customize the text displayed on the Connection Screen. Alternatively, you can re
 
 - [xApp Tokens](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
-- [Get xApp Session PIN](get-xApp-session-PIN.md)
-- [Set HTML xApp State](set-html-xApp-state.md)
-- [Set AdaptiveCard xApp State](set-AdaptiveCard-xApp-state.md)
+- [xApp: Get Session PIN](get-xApp-session-PIN.md)
+- [xApp: Show HTML](set-html-xApp-state.md)
+- [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
