@@ -5,7 +5,7 @@
 ---
 # Getting Started with Live Agent
 
-## Need to Setup Live Agent?
+## Need to Set up Live Agent?
 <div class="divider"></div>
 
 Setting up Live Agent is easy. 

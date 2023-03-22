@@ -10,7 +10,7 @@ The Access Control interface offers a user management tool for organizational le
 Find the **Access Control** panel by:
 
 1. Clicking the *Profile Icon* in the top right corner of the interface
-2. Selecting *Access Control* from the drop down menu
+2. Selecting *Access Control* from the drop-down menu
 
 ## Users
 
@@ -67,7 +67,7 @@ The following **Global Roles** are available:
 |OData|	Can use the Organisation Details section and access to the OData interface to query analytics information.|
 |Live Agent Admin | This role is assigned for users to access Cognigy Live Agent as an admin. This role has the same permissions as the Base Role in Cognigy AI.
 |Live Agent Agent | This role is assigned for users to access Cognigy Live Agent as an agent. This role has the same permissions as the Base Role in Cognigy AI.
-|userDetailsViewer| This role is limited to read-only access that grants users permissions to view user details, such as email addresses and user names. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.
+|userDetailsViewer| This role is limited to read-only access that grants users permissions to view user details, such as email addresses and usernames. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.
 
 ???+ info "Control of Global Access Rights"
     The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.

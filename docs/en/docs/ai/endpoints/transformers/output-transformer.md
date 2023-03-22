@@ -42,7 +42,7 @@ The `handleOutput` function gets a configuration object as an argument. An overv
 |output	|The raw output from the Flow.|	X|	X	|X|
 |processedOutput|	The output that was processed into the format that the specific channel expects. This is what is sent to the user if the Output Transformer is not executed.|	X	||	X|
 |userId|	The unique ID of the user.|	X|	X	|X|
-|essionId|	The unique ID of the conversation.|	X|	X|	X|
+|sessionId|	The unique ID of the conversation.|	X|	X|	X|
 
 ## Return Values of the Transformer
 

@@ -13,9 +13,9 @@
 <div class="divider"></div>
 The Complete Goal Node will set a specific goal as completed when the contact hits the Node.
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Goal | CognigyScript | The name of the goal that should be completed when the contact hits the Node. |
+| Parameter | Type          | Description                                                                   |
+|-----------|---------------|-------------------------------------------------------------------------------|
+| Goal      | CognigyScript | The name of the goal that should be completed when the contact hits the Node. |
 
 ???+ success "Usage"
     The completed goal will be stored in the contact's profile and in analytics.

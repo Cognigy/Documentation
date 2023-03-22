@@ -42,11 +42,11 @@ These providers can be selected in the "Agent Settings" and provide the followin
 - Translation is Voice-ready-all modalities are supported 
 
 ???+ success "Advanced Translation"
-    **In contrast to cost-intensive manual translation, Cognigy's multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.**
+    **In contrast to cost-intensive manual translation, Cognigy multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.**
 
 ### Use Case for Translation
 
-- Localize existing content (works for contents but it also works for machine learning models)
+- Localize existing content (works for contents, but it also works for machine learning models)
  
   - Manual Translation
   - Machine Translation
@@ -55,8 +55,7 @@ These providers can be selected in the "Agent Settings" and provide the followin
 
 <div class="divider"></div>
 
-
-Cognigy's Virtual Agent is the default in English. When required, you can localize your Flow language.
+Cognigy Virtual Agent is the default in English. When required, you can localize your Flow language.
 
 To have another locale Cognigy.AI provides [localization]({{config.site_url}}ai/resources/manage/localization/) to create a localized Virtual Agent. 
 

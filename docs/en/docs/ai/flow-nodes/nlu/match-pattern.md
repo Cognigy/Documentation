@@ -30,14 +30,14 @@ A text like `I want to go from Düsseldorf to Tokyo` would find a matched patter
 
 ## Parameters
 
-| Parameter | Type | Description |
-| --------- | ---- | ----------- |
-| Patterns | TextArray | The patterns to apply to the text |
-| Pattern Group Name | CognigyText | The name of the pattern match group |
-| Create New Slots | Boolean | Whether to create new slots from tags or not |
-| Tag Existing Slots | Boolean | Whether to tag existing slots or not |
-| Detailed Compound Slots | Boolean | Whether to store detailed results for the matched patterns or not |
-| Alternate Input | CognigyText | The input text to use instead of the current input text |
+| Parameter               | Type        | Description                                                       |
+|-------------------------|-------------|-------------------------------------------------------------------|
+| Patterns                | TextArray   | The patterns to apply to the text                                 |
+| Pattern Group Name      | CognigyText | The name of the pattern match group                               |
+| Create New Slots        | Boolean     | Whether to create new slots from tags or not                      |
+| Tag Existing Slots      | Boolean     | Whether to tag existing slots or not                              |
+| Detailed Compound Slots | Boolean     | Whether to store detailed results for the matched patterns or not |
+| Alternate Input         | CognigyText | The input text to use instead of the current input text           |
 
 ## Example
 

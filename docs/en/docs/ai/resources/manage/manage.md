@@ -15,14 +15,14 @@ The **Agent Settings** menu provides customization options for creators to activ
 
 ## Localization
 
-The **Localization** feature provides tools for enabling multi-lingual agents. Here you can add a **Locale** that will be applied across an agent and allow for language specific output messages to be configured within flows.
+The **Localization** feature provides tools for enabling multilingual agents. Here you can add a **Locale** that will be applied across an agent and allow for language specific output messages to be configured within flows.
 
 ???+ info "Localization"
     Head over to [Localization]({{config.site_url}}ai/resources/manage/localization/)  for more information.
 
 ## Tokens
 
-**Tokens** provide a user friendly option for retrieving dynamic data, without the need for writing code. Accessing the input, context and profile is possible by using default or custom **Tokens** that are available from the AI menu on the right side of each dynamic text field within flow nodes.
+**Tokens** provide a user-friendly option for retrieving dynamic data, without the need for writing code. Accessing the input, context and profile is possible by using default or custom **Tokens** that are available from the AI menu on the right side of each dynamic text field within flow nodes.
 
 ???+ info "Tokens"
     Head over to [Tokens]({{config.site_url}}ai/resources/manage/tokens/)  for more information.

@@ -7,7 +7,7 @@
 
 The Profile is a JSON object which stores persistent information about the end-user.
 
-Every contact that connects to Cognigy.AI has their own **Contact Profile** which is stored within the platform. When a contact disconnects from Cognigy.AI, the **Profile Data** is retained in the database and retrieved upon reconnection with the same user Id. This enables multi-channel conversations to take place by accessing the stored user profile when the user connects from an alternate channel.
+Every contact that connects to Cognigy.AI has their own **Contact Profile** which is stored within the platform. When a contact disconnects from Cognigy.AI, the **Profile Data** is retained in the database and retrieved upon reconnection with the same user ID. This enables multichannel conversations to take place by accessing the stored user profile when the user connects from an alternate channel.
 
 The [Flow]({{config.site_url}}ai/resources/build/flows/) can read from and write to the **Profile** by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the profile, see the [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/#cognigy-objects-life-span/) page.
 

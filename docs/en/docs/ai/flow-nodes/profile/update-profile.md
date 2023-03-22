@@ -22,7 +22,7 @@ The available `Key` options are all defined fields in the Profile Schema of this
  
 If the key used is an invalid value, it will not perform any function. For a list of default profile property keys, see the [Contact Profiles Page]({{config.site_url}}ai/resources/manage/contact-profiles/)
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Key | select | Which field in the user's Contact Profile to update. |
-| Value | CognigyScript | The value you want to set. |
+| Parameter | Type          | Description                                          |
+|-----------|---------------|------------------------------------------------------|
+| Key       | select        | Which field in the user's Contact Profile to update. |
+| Value     | CognigyScript | The value you want to set.                           |

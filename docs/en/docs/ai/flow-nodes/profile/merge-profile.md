@@ -11,10 +11,10 @@
 
 ## Description
 <div class="divider"></div>
-The Merge Profile Node is used to merge the profile of the contact who hits the node with another contact profile. This is useful in an omni-channel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
+The Merge Profile Node is used to merge the profile of the contact who hits the node with another contact profile. This is useful in an omnichannel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
+| Parameter | Type          | Description                                                                        |
+|-----------|---------------|------------------------------------------------------------------------------------|
 | ContactId | CognigyScript | The id of the contact you want to merge with the current contact who hit the Node. |
 
 ???+ info "Example"

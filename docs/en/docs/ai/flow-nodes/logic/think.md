@@ -21,10 +21,10 @@ You may specify an input text and input data which will then be treated as a sim
 ???+ info "Think NLU"
     When a Flow gets executed again via "think", the new message will also be sent through the NLU pipeline again, finding Slots and matching Intents
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Text | CognigyScript | A simulated message text from the user. |
-| Data | CognigyScript JSON | Simulated message data from the user. |
+| Parameter | Type               | Description                             |
+|-----------|--------------------|-----------------------------------------|
+| Text      | CognigyScript      | A simulated message text from the user. |
+| Data      | CognigyScript JSON | Simulated message data from the user.   |
 
 You can select two **"Advanced"** options to integrate a Think Node functionality in your Flow:
 

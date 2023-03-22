@@ -69,7 +69,7 @@ If you apply the backward direction, the step report starts at the last step (fr
 <div class="divider"></div>
 Before working with Step Explorer you need to annotate certain components in Cognigy.AI. Annotations can be defined in the Node settings of your configured Flow. 
 Start the Node Editor, go to “Settings” and enter a meaningful annotation in the “Analytics step” section. The annotation should have an informative reference to the configured node. 
-When you want to annotate for example a Say Node which starts a customer conversation with a welcome you can enter “Greetings” or “Welcome New Caller”. For Order Intents, you can enter in the  “Analytics step“ field for example “Order Intent triggered” as an annotation.
+When you want to annotate for example a Say Node which starts a customer conversation with a welcome you can enter “Greetings” or “Welcome New Caller”. For Order Intents, you can enter the “Analytics step“ field for example “Order Intent triggered” as an annotation.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/c2f0e52-Say_Node_Analytics_step_setting_300.svg" width="60%" />

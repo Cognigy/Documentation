@@ -19,9 +19,9 @@
 
 The Send Meta Data Node sends metadata via SIP INFO messages to the connected SIP trunk.
 
-| Parameter | Type | Description                                                  |
-| --------- | ---- | ------------------------------------------------------------ |
-| Meta Data | JSON | The metadata to send via SIP INFO.                           |
+| Parameter | Type | Description                        |
+|-----------|------|------------------------------------|
+| Meta Data | JSON | The metadata to send via SIP INFO. |
 
 Example:
 

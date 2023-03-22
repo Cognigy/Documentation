@@ -37,9 +37,9 @@ Once the endpoint with the Assist flow is set up, and the URL is copied, it is t
 
 Click on the "Add Bots" button and fill in the following fields:
 
-| Field | Value |
-| ------ | ------ |
-| Name | Assist Bot Name |
+| Field        | Value                                     |
+|--------------|-------------------------------------------|
+| Name         | Assist Bot Name                           |
 | Endpoint URL | The URL copied from the endpoint settings |
 
 The newly added Assist Bot will be available in the "Assist Bot" section of the conversations belonging to the according inbox. It is possible to have multiple Assist Bots in the same inbox and edit them. The changes will be applied instantly.

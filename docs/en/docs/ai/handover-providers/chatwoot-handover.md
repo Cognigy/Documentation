@@ -16,7 +16,7 @@ Cognigy has integrated **"Chatwoot"** as an additional handover provider that ca
 To start using Chatwoot as a handover provider with Cognigy.AI, you first have to sign in to Chatwoot here: https://www.chatwoot.com.
 
 ???+ info "Running Chatwoot On-Premise"
-    You can also setup Chatwoot to run on an On-Premise environment. You can read more about that <a href="https://www.chatwoot.com/docs/self-hosted" target="_blank">here</a>
+    You can also set up Chatwoot to run on an On-Premise environment. You can read more about that <a href="https://www.chatwoot.com/docs/self-hosted" target="_blank">here</a>
 
 
 ## Add webhook while creating the inbox
@@ -166,7 +166,7 @@ With Cognigy.AI 4.10.0 the Chatwoot API has been updated due to the implementati
 	
 - Support of custom agent bot name (config-map: AGENT_BOT_NAME).
 	
-- Suppport of custom agent bot description (config-map: AGENT_BOT_DESCRIPTION).
+- Support of custom agent bot description (config-map: AGENT_BOT_DESCRIPTION).
 	
 - Message history of a conversation is available.
 	

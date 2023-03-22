@@ -14,7 +14,7 @@
 <div class="divider"></div>
 The DTMF Node will play the DTMF digits to the caller.
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Digits sequence | Text | Digits sequence to play to the caller |
-| Pause time | Slider | Pause time in ms between the digits |  
+| Parameter       | Type   | Description                           |
+|-----------------|--------|---------------------------------------|
+| Digits sequence | Text   | Digits sequence to play to the caller |
+| Pause time      | Slider | Pause time in ms between the digits   |  

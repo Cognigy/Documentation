@@ -16,7 +16,7 @@ Real-time translation is a type of translation where not everything has to be pr
 Virtual Agents are deployed in Cognigy.AI with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/). Webchat, for example, is such an Endpoint and is linked to the currently selected Flow of the Virtual Agent.
 Real-time translation works on chats and for all our Endpoint types (for example the "Voice Gateway" Endpoint). The Voice Gateway (VG) can be configured in the settings for real-time translation in the same way as for a Webchat.
 
-- You do not need to have agents that speak all the required languages of your business. You can concentrate on two or three core languages but using Cognigy's real-time translation capabilities you can serve customers in hundred languages.
+- You do not need to have agents that speak all the required languages of your business. You can concentrate on two or three core languages but using Cognigy real-time translation capabilities you can serve customers in a hundred languages.
  
 - Real-time translation by Cognigy.AI works with any Live Agent system like Genesys, LivePerson, Ring Central,... 
 
@@ -47,7 +47,7 @@ In that case, we have to activate the "**Real Time Translation Settings**".
 
 - Go to the Endpoint editor and activate "**Real Time Translation**" in the "**Real Time Translation Settings**".
 
-- "**Enable Translation**" using the slidebar.
+- "**Enable Translation**" using the slider.
 - Select the "**User Input Language**" using the drop-down menu.
 - Select "**Flow Language**" using the drop-down menu.
 - "**Save**" the settings.
@@ -56,9 +56,9 @@ In that case, we have to activate the "**Real Time Translation Settings**".
 
 **Example**: 
 
-Webchat conversation with the **preseletced** user language.
+Webchat conversation with the **preselected** user language.
 
-In Webchat we assuming that the language that is being typed in is Russian. The Virtual Agent content is being translated into Russian in real-time.
+In Webchat, we're assuming that the language that is being typed in is Russian. The Virtual Agent content is being translated into Russian in real-time.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/b145f04-preselected_user_language_1.svg" width="100%" />
@@ -72,20 +72,20 @@ The whole conversation of everything is translated including e.g. calendar of th
 
 The configuration options and their functions are listed below:
 
-|Parameter|	Description|
-|--|--|
-|Configured Translation Provider|	The currently selected translation provider.|
-|Enable Translation|	Whether or not Translation is enabled for the Endpoint.|
-|User Input Language|	The language of the user inputs.|
-|Flow Language|	The language of the Flow outputs.|
-|Set user input language on execution count|	If the input language is set to 'Auto-Detect', it will be fixed to its current value on this execution count.|
-|No-Translation Marker|	Do not translate texts encapsulated in this marker (e.g. 'I love the Cognigy.AI platform' will not translate 'Cognigy.AI').|
-|Always remove No-Translation Markers|	Whether we remove No-Translation Markers, even if the translation is not enabled.|
-|Prevent payloads from being translated	|If active, prevents all user inputs based on [payloads]() to be translated.|
+| Parameter                                  | 	Description                                                                                                                 |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Configured Translation Provider            | 	The currently selected translation provider.                                                                                |
+| Enable Translation                         | Whether Translation is enabled for the Endpoint.                                                                             |
+| User Input Language                        | 	The language of the user inputs.                                                                                            |
+| Flow Language                              | 	The language of the Flow outputs.                                                                                           |
+| Set user input language on execution count | 	If the input language is set to 'Auto-Detect', it will be fixed to its current value on this execution count.               |
+| No-Translation Marker                      | 	Do not translate texts encapsulated in this marker (e.g. 'I love the Cognigy.AI platform' will not translate 'Cognigy.AI'). |
+| Always remove No-Translation Markers       | 	Whether we remove No-Translation Markers, even if the translation is not enabled.                                           |
+| Prevent payloads from being translated     | If active, prevents all user inputs based on [payloads]() to be translated.                                                  |
 
 ## Auto-Detect User Inputs
 
-We can not just have a preselected language in the settings but we can also say "**Auto-Detect(auto)**" as "**User Input Language**".
+We can not just have a preselected language in the settings, but we can also say "**Auto-Detect(auto)**" as "**User Input Language**".
 
 
 <figure>
@@ -95,9 +95,9 @@ We can not just have a preselected language in the settings but we can also say 
 
 When auto-detection for user inputs is activated, then we have an extra setting: "**Set user input language on execution count**".
 
-- Use the slidebar to set the option "**Set user input language on execution count**" as you want. The slide bar can be set between "0" and "5".
+- Use the slider to set the option "**Set user input language on execution count**" as you want. The slide bar can be set between "0" and "5".
 
-**Example**:  Slidebar is set to "1" which means: Whatever language the user is using on their first input is the language that the Virtual Agent will use from then on. These settings work with every language we support.
+**Example**:  slider is set to "1" which means: Whatever language the user is using on their first input is the language that the Virtual Agent will use from then on. These settings work with every language we support.
 
 
 <figure>
@@ -122,7 +122,7 @@ When auto-detection for user inputs is activated, then we have an extra setting:
 - User language is assumed in the German language. 
 - Handover Flow and Agent use the English language.
 
-The  Webchat conversation of a user with the Virtual Agent starts. At any point of the conversation the user would like to talk to a human agent like " I would like to talk to a human Agent" and Cognigy's Virtual Agent reacts to the Intent, stops the Flow execution, and leads the conversation over to a Live Agent who can overtake and continue with the conversation.
+The  Webchat conversation of a user with the Virtual Agent starts. At any point of the conversation the user would like to talk to a human agent like "I would like to talk to a human Agent" and Cognigy Virtual Agent reacts to the Intent, stops the Flow execution, and leads the conversation over to a Live Agent who can overtake and continue with the conversation.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/c4c00c8-Webchat_1.svg" width="100%" />

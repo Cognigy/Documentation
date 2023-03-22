@@ -5,7 +5,7 @@
 ---
 # Any Slots
 
-***Any Slots*** are catch-all placeholder slots that allow you to match keyphrases of arbitrary length outside of your Lexicons. If user input matches the placeholder slot exactly it will populate a [Cognigy Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) with the matched content. The result is the same as if the matched user input had been added to an attached Lexicon as a keyphrase.
+***Any Slots*** are catch-all placeholder slots that allow you to match keyphrases of arbitrary length outside your Lexicons. If user input matches the placeholder slot exactly it will populate a [Cognigy Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) with the matched content. The result is the same as if the matched user input had been added to an attached Lexicon as a keyphrase.
 
 To add an Any Slot, simply annotate a single word in your example sentence and select the "Any-Slot" type. Then enter the desired slot name.
 
@@ -46,7 +46,7 @@ This will dynamically add user input that matches the pattern exactly to the slo
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanapple.png" width="60%" />
 </figure>
 
-Note that because the *Any Slot* annotation is located at the very end of the training sentence, any number of words after *"This is an"* will be matched to the slot *fruit*:
+Note that because the *Any Slot* annotation is located at the very end of the training sentence, any number of words after *"This is a"* will be matched to the slot *fruit*:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/result_thisisanappletree.png" width="60%" />
@@ -56,7 +56,7 @@ This is by design and does not seem to make sense for this specific example. How
 
 ### Any Slot in the middle of a sentence
 
-Lets "fix" the issue we discovered above by adjusting the example sentence a little bit:
+Lets "fix" the issue we discovered above by adjusting the example sentence a little:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_thisisanorangetree.png" width="60%" />
@@ -78,7 +78,7 @@ Grammatical issues aside, using multiple words does also work:
 
 When using *Any Slots*, we rely on the user to use the exact word structure of that sentence. To remain rather flexible with what the user may say for the *Any Slot* to still be detected, we can make use of a *Lexicon Slot*.
 
-Lets annotate the example sentence from the previous example with a *Lexicon Slot*:
+Let's annotate the example sentence from the previous example with a *Lexicon Slot*:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_lexiconannotated.png" width="60%" />
@@ -116,7 +116,7 @@ See the following input with the same training sentence as the previous examples
 
 *Any Slots* that were found in earlier sentences are applied to the input object of the current sentence, if that sentence contains those slots. For that, the sentence needs not match an intent or a training sentence. This allows for an easier flow of conversation, should a topic from an earlier part arise again in a later part of the conversation.
 
-Lets consider the following training sentences.
+Let's consider the following training sentences.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/anyslot_past_slots.png" width="60%" />
