@@ -74,16 +74,20 @@ In order to download a Snapshot, you have to go through our two-step process:
     The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. We don't provide any tooling to open a Snapshot outside Cognigy.AI. The data in your Snapshots will be encrypted as Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
 
 ### Upload a Snapshot
+
 The use case for uploading a Snapshot is usually to deploy its Flows into production. Since Snapshots life within Virtual Agents as other resources, you have to either first create a new Virtual Agent or upload the Snapshot in one of your existing ones.
 
-In order to upload a Snapshot, do the following:
+To upload a Snapshot, follow these steps:
 
-  * Click on the "Upload Snapshot" button
-  * Select the ".csnap" file for your Snapshot
-  * A new task will be created and your Snapshot will be uploaded and processed
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, click **Deploy > Snapshots**.
+3. On the **Snapshots** page, click **Upload Snapshot**.
+4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar. 
+5. Once the file has been uploaded, a new [task](../agents/tasks.md), entitled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner. 
+After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
-???+ info "Info"
-    Uploading a Snapshot will not have any impact on the resources (e.g. the Flows) that are part of your Virtual Agent. Since you can only have 10 Snapshots in a Virtual Agent by default, make sure that your Agent has less than 10 Snapshots before starting to upload a new one.
+!!! note
+    Uploading a Snapshot will not have any impact on the resources, for example, Flows, that are part of your Virtual Agent. Since you can only have 10 Snapshots in a Virtual Agent by default, make sure that your Agent has less than 10 Snapshots before starting to upload a new one.
 
 ### Restore Virtual Agent from Snapshot
 If you are using Snapshots as a way of archiving your Virtual Agent, you might want to restore your Virtual Agent to the point where the Snapshot was taken initially. We offer this functionality through our "Restore Snapshot" option.
