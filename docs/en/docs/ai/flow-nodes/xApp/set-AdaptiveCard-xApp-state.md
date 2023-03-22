@@ -17,11 +17,10 @@ An xApp Page can be built by providing an Adaptive Card in JSON format.
 
 To submit data back to the Flow, you need to include an action of type submit within the Adaptive Card.
 
-To view submitted data, use the Interaction panel. You can access submitted data in the `data` object by clicking **INFO > Input**, or in the chat by adding a Say Node and specifying `Submit payload: {{JSON.stringify(input.data) }}` or `Submit payload: {{JSON.stringify(ci.data) }}` in its text field.
-
 ### AdaptiveCard Definition
 
 The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
+
 
 ### Style Overrides
 
