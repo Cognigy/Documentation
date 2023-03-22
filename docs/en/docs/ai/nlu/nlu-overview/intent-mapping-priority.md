@@ -36,11 +36,11 @@ To set a priority, do the following steps:
 
 Let's assume that we have the following Intent data:
 
-| Intent  | Intent name  | Sentences                                                   |
-| ------- | ------------ | ----------------------------------------------------------- |
-| Parent  | Order Pizza | I'd like to order a pizza. <br> Can I have a pizza delivered? <br> Can I get a pizza please? <br> I need to purchase a pizza. <br> I want to buy a pizza. |
-| Child 1 | Meat        | I want to get a ham pizza. <br> Can I have a ham pizza please? <br> I need a ham pizza. <br> I would like to order a ham pizza. <br> I am in the mood of for a ham pizza. <br> Can I order a ham pizza? <br> I'd like to have a ham pizza.|
-| Child 2 | Vegetarian  | I want to get a cheese pizza. <br> Can I have a cheese pizza please? <br> I need a cheese pizza. <br> I would like to order a cheese pizza. <br> I am in the mood of for a cheese pizza. <br> Can I order a cheese pizza? <br> I'd like to have a cheese pizza. |
+| Intent  | Intent name        | Sentences                                                                                                                                                                                                                                                       |
+|---------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Parent  | Order Pizza        | I'd like to order a pizza. <br> Can I have a pizza delivered? <br> Can I get a pizza please? <br> I need to purchase a pizza. <br> I want to buy a pizza.                                                                                                       |
+| Child 1 | Order Ham Pizza    | I want to get a ham pizza. <br> Can I have a ham pizza please? <br> I need a ham pizza. <br> I would like to order a ham pizza. <br> I am in the mood of for a ham pizza. <br> Can I order a ham pizza? <br> I'd like to have a ham pizza.                      |
+| Child 2 | Order Cheese Pizza | I want to get a cheese pizza. <br> Can I have a cheese pizza please? <br> I need a cheese pizza. <br> I would like to order a cheese pizza. <br> I am in the mood of for a cheese pizza. <br> Can I order a cheese pizza? <br> I'd like to have a cheese pizza. |
 
 Consider various examples of how each option of the Intent Mapping Priority setting works.
 

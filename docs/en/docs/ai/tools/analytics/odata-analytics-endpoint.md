@@ -30,7 +30,7 @@ An OData URL is combined of the service root, api version, the collection and ap
 `https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
 
 ???+ info "OData Domain Name"
-    The OData endpoint is available on a different domain to your Cognigy User Interface domain. If you login to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
+    The OData endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
 
 
 For example, on our trial server, the OData endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations please replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
@@ -153,7 +153,7 @@ Furthermore, you can control analytics logging behavior inside a Flow using [Bli
 
 <div class="divider"></div>
 
-This section details the data types the exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
+This section details the data types exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
 
   * [Inputs](#inputs)
   * [ChatHistory](#chathistory)
@@ -177,51 +177,51 @@ Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an 
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name         | Description                                                                                | Type     | Example                          |
-| ------------------ | ------------------------------------------------------------------------------------------ | -------- | -------------------------------- |
-| _id                | Unique analytics record ID                                                                 | String   | 5a91d194fde28b0011ce2423         |
-| organisation       | Name of your organisation                                                                  | String   | cognigy                          |
-| projectId          | Project ID                                                                                 | String   | 5a91d194fde28b0011ce2422         |
+| Field Name         | Description                                                                                | Type     | Example                              |
+|--------------------|--------------------------------------------------------------------------------------------|----------|--------------------------------------|
+| _id                | Unique analytics record ID                                                                 | String   | 5a91d194fde28b0011ce2423             |
+| organisation       | Name of your organisation                                                                  | String   | cognigy                              |
+| projectId          | Project ID                                                                                 | String   | 5a91d194fde28b0011ce2422             |
 | flowReferenceId    | ID of the Flow                                                                             | String   | 66ceb9cc-ac5b-4cdd-9f4b-8a48dfbb35d9 |
-| entrypoint         | The ID of the Project / Agent, or of a Snapshot when in use by the Endpoint                | String   | 621d3deb87016d3855ec0c92         |
-| ip                 | The IP address the request originated from                                                 | String   | 78.143.45.111                    |
-| contactId          | ID of the connecting user                                                                  | String   | myContactID                      |
-| sessionId          | Session ID                                                                                 | String   | 5a91d194fde28b0011ce2425         |
-| inputId            | Unique input ID                                                                            | String   | 5a91d194fde28b0011ce2424         |
-| inputText          | The input text                                                                             | String   | Hello World!                     |
-| inputData          | The input data object as a string                                                          | String   | {"key":"value"}                  |
-| state              | State of the Flow at input                                                                 | String   | default                          |
-| mode               | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties/) of the input        | String   | TextOnly                         |
-| userType           | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                         |
-| channel            | Channel the input came through                                                             | String   | facebook                         |
-| flowLanguage       | Language of the Flow                                                                       | String   | en-EN                            |
-| intent             | Found intent (can be blank)                                                                | String   | orderFood                        |
-| intentFlow         | The Parent ID of the Flow in which the intent was found (can be blank)                     | String   | 5e33b160e6236da3aa54221461a53f04 |
-| intentScore        | The numerical score of the input against a recognized intent (can be blank)                | Number   | 0.836322430892043                |
-| completedGoalsList | List of completed goals in this session                                                    | String   | orderedFood                      |
-| foundSlots         | Found slot tags                                                                            | String   | DATE                             |
-| foundSlotDetails   | Found slot tags with details                                                               | String   | DATE[2018-2-25T12:32:32.000]     |
-| understood         | Whether any slots, intents or the message type was found                                   | Boolean  | true                             |
-| timestamp          | DateTime of the input                                                                      | DateTime | 2018-2-25T12:32:32.000Z          |
-| executionTime      | Time it took to execute the Flow in ms                                                     | Number   | 32                               |
-| execution          | The execution count                                                                        | Number   | 3                                |
-| custom1            | Custom value created by flow                                                               | String   |                                  |
-| custom2            | Custom value created by flow                                                               | String   |                                  |
-| custom3            | Custom value created by flow                                                               | String   |                                  |
-| custom4            | Custom value created by flow                                                               | String   |                                  |
-| custom5            | Custom value created by flow                                                               | String   |                                  |
-| custom6            | Custom value created by flow                                                               | String   |                                  |
-| custom7            | Custom value created by flow                                                               | String   |                                  |
-| custom8            | Custom value created by flow                                                               | String   |                                  |
-| custom9            | Custom value created by flow                                                               | String   |                                  |
-| custom10           | Custom value created by flow                                                               | String   |                                  |
-| localeReferenceId  | Reference Id for locale                                                                    | String   |                                  |
-| localeName         | Name of locale                                                                             | String   |                                  |
-| endpointUrlToken   | The URL Token for the Endpoint                                                             | String   |                                  |
-| endpointName       | The name of the Endpoint                                                                   | String   |                                  |
-| rating             | The rating for the session. -1 for a negative rating or 1 for a positive rating       | Number   |                                  |
-| ratingComment      | Comment left when given a rating                                                           | String   |                                  |
-| snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                  |
+| entrypoint         | The ID of the Project / Agent, or of a Snapshot when in use by the Endpoint                | String   | 621d3deb87016d3855ec0c92             |
+| ip                 | The IP address the request originated from                                                 | String   | 78.143.45.111                        |
+| contactId          | ID of the connecting user                                                                  | String   | myContactID                          |
+| sessionId          | Session ID                                                                                 | String   | 5a91d194fde28b0011ce2425             |
+| inputId            | Unique input ID                                                                            | String   | 5a91d194fde28b0011ce2424             |
+| inputText          | The input text                                                                             | String   | Hello World!                         |
+| inputData          | The input data object as a string                                                          | String   | {"key":"value"}                      |
+| state              | State of the Flow at input                                                                 | String   | default                              |
+| mode               | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties/) of the input        | String   | TextOnly                             |
+| userType           | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                             |
+| channel            | Channel the input came through                                                             | String   | facebook                             |
+| flowLanguage       | Language of the Flow                                                                       | String   | en-EN                                |
+| intent             | Found intent (can be blank)                                                                | String   | orderFood                            |
+| intentFlow         | The Parent ID of the Flow in which the intent was found (can be blank)                     | String   | 5e33b160e6236da3aa54221461a53f04     |
+| intentScore        | The numerical score of the input against a recognized intent (can be blank)                | Number   | 0.836322430892043                    |
+| completedGoalsList | List of completed goals in this session                                                    | String   | orderedFood                          |
+| foundSlots         | Found slot tags                                                                            | String   | DATE                                 |
+| foundSlotDetails   | Found slot tags with details                                                               | String   | DATE[2018-2-25T12:32:32.000]         |
+| understood         | Whether any slots, intents or the message type was found                                   | Boolean  | true                                 |
+| timestamp          | DateTime of the input                                                                      | DateTime | 2018-2-25T12:32:32.000Z              |
+| executionTime      | Time it took to execute the Flow in ms                                                     | Number   | 32                                   |
+| execution          | The execution count                                                                        | Number   | 3                                    |
+| custom1            | Custom value created by flow                                                               | String   |                                      |
+| custom2            | Custom value created by flow                                                               | String   |                                      |
+| custom3            | Custom value created by flow                                                               | String   |                                      |
+| custom4            | Custom value created by flow                                                               | String   |                                      |
+| custom5            | Custom value created by flow                                                               | String   |                                      |
+| custom6            | Custom value created by flow                                                               | String   |                                      |
+| custom7            | Custom value created by flow                                                               | String   |                                      |
+| custom8            | Custom value created by flow                                                               | String   |                                      |
+| custom9            | Custom value created by flow                                                               | String   |                                      |
+| custom10           | Custom value created by flow                                                               | String   |                                      |
+| localeReferenceId  | Reference Id for locale                                                                    | String   |                                      |
+| localeName         | Name of locale                                                                             | String   |                                      |
+| endpointUrlToken   | The URL Token for the Endpoint                                                             | String   |                                      |
+| endpointName       | The name of the Endpoint                                                                   | String   |                                      |
+| rating             | The rating for the session. -1 for a negative rating or 1 for a positive rating            | Number   |                                      |
+| ratingComment      | Comment left when given a rating                                                           | String   |                                      |
+| snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                      |
 
 ???+ info "Field Explanation"
     Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
@@ -245,24 +245,24 @@ The ChatHistory collection offers a log of all session messages, including the e
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name             | Description                                                 | Type     | Example                                    |
-| ---------------------- | ----------------------------------------------------------- | -------- | ------------------------------------------ |
-| _id                    | Unique analytics record ID                                  | String   | 5a91d194fde28b0011ce2423                   |
-| inputId                | Unique input ID                                             | String   | 5a91d194fde28b0011ce2424                   |
-| sessionId              | Session ID                                                  | String   | 5a91d194fde28b0011ce2425                   |
-| contactId              | ID of the connecting user                                   | String   | myContactID                                |
-| organisation           | Name of your organisation                                   | String   | cognigy                                    |
-| inputText              | The input text                                              | String   | Hello World!                               |
-| inputData              | The input data object as a string                           | String   | {"key":"value"}                            |
-| type                   | Whether the message is an input or output of the Flow       | String   | "input" or "output"                        |
-| source                 | The source of the message                                   | String   | "user" or "bot" or "agent" or "suggestion" |
-| timestamp              | DateTime of the input                                       | DateTime | 2018-2-25T12:32:32.000Z                    |
-| flowName               | Name of the Flow                                            | String   | MainFlow                                   |
-| flowParentId           | ParentId of the Flow                                        | String   | 5e33b160e6236da3aa54221461a53f04           |
-| channel                | Channel the input came through                              | String   | facebook                                   |
-| inHandoverRequest      | Flag whether the session is in a Handover request      | Boolean  | false                                      |
-| inHandoverConversation | Flag whether the session is in a Handover session | Boolean  | true                                       |
-| outputId               | Output ID                                                   | String   | f514b7b2-7dc0-4e75-be62-a53fed5b2bb7       |
+| Field Name             | Description                                           | Type     | Example                                    |
+|------------------------|-------------------------------------------------------|----------|--------------------------------------------|
+| _id                    | Unique analytics record ID                            | String   | 5a91d194fde28b0011ce2423                   |
+| inputId                | Unique input ID                                       | String   | 5a91d194fde28b0011ce2424                   |
+| sessionId              | Session ID                                            | String   | 5a91d194fde28b0011ce2425                   |
+| contactId              | ID of the connecting user                             | String   | myContactID                                |
+| organisation           | Name of your organisation                             | String   | cognigy                                    |
+| inputText              | The input text                                        | String   | Hello World!                               |
+| inputData              | The input data object as a string                     | String   | {"key":"value"}                            |
+| type                   | Whether the message is an input or output of the Flow | String   | "input" or "output"                        |
+| source                 | The source of the message                             | String   | "user" or "bot" or "agent" or "suggestion" |
+| timestamp              | DateTime of the input                                 | DateTime | 2018-2-25T12:32:32.000Z                    |
+| flowName               | Name of the Flow                                      | String   | MainFlow                                   |
+| flowParentId           | ParentId of the Flow                                  | String   | 5e33b160e6236da3aa54221461a53f04           |
+| channel                | Channel the input came through                        | String   | facebook                                   |
+| inHandoverRequest      | Flag whether the session is in a Handover request     | Boolean  | false                                      |
+| inHandoverConversation | Flag whether the session is in a Handover session     | Boolean  | true                                       |
+| outputId               | Output ID                                             | String   | f514b7b2-7dc0-4e75-be62-a53fed5b2bb7       |
 
 ### Steps
 
@@ -283,7 +283,7 @@ The Steps collection offers a list of all entities (an entity is a flow node or 
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name        | Description                                                                | Type   | Example                          |
-| ----------------- | -------------------------------------------------------------------------- | ------ | -------------------------------- |
+|-------------------|----------------------------------------------------------------------------|--------|----------------------------------|
 | _id               | Unique analytics record ID                                                 | String | 5a91d194fde28b0011ce2423         |
 | label             | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String | Question (2)                     |
 | type              | Type of entity                                                             | String | `node` or `intent`               |
@@ -314,13 +314,13 @@ The ExecutedSteps collection contains a list of all step events that have occurr
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name        | Description                                                                | Type     | Example                          |
-| ----------------- | -------------------------------------------------------------------------- | -------- | -------------------------------- |
+|-------------------|----------------------------------------------------------------------------|----------|----------------------------------|
 | _id               | Unique analytics record ID                                                 | String   | 5a91d194fde28b0011ce2423         |
 | userId            | ID of the connecting user                                                  | String   | myContactID                      |
 | sessionId         | Session ID                                                                 | String   | 5a91d194fde28b0011ce2425         |
 | inputId           | ID of the message                                                          | String   | 5a91d194fde28b0011ce2425         |
 | stepLabel         | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String   | Question (2)                     |
-| parentStep        | ID of the step that occured prior to this step                             | String   | 5a91d194fde28b0011ce2425         |
+| parentStep        | ID of the step that occurred prior to this step                            | String   | 5a91d194fde28b0011ce2425         |
 | type              | Type of entity                                                             | String   | `node` or `intent`               |
 | entityReferenceId | Unique ID for the entity (node ID or intent ID)                            | String   | 5a91d194fde28b0011ce2423         |
 | flowReferenceId   | ID of the flow                                                             | String   | 5a91d194fde28b0011ce2423         |

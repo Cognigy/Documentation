@@ -5,7 +5,7 @@
 ---
 # Snapshots
 
-## Introdution
+## Introduction
 <div class="divider"></div>
 A Snapshot is an immutable form of your Virtual Agent including the following resources:
 
@@ -41,22 +41,22 @@ We highly encourage our customers to create Snapshots and **point productive End
 In order to see all Snapshots of your Virtual Agent, head over to **Deploy** --> **Snapshots**. Initially you will see an empty list as no Snapshots exist by default.
 
 ### Creating a new Snapshot
-In order to create a new Snapshot of the current state of your Virtual Agent, click on **New Snapshot** followed by providing a name and description. We suggest to include some sort of a version number in the name field and describe what has changed in this version of the Snapshot in the description field.
+In order to create a new Snapshot of the current state of your Virtual Agent, click on **New Snapshot** followed by providing a name and description. We suggest to include some sort of version number in the name field and describe what has changed in this version of the Snapshot in the description field.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/creating-a-snapshot.png" width="100%" />
 </figure>
 
 ???+ info "Note"
-    Since Snapshots contain a copy of your Virtual Agent, they can have a huge file-size. Hence we have introduced a limit of 10 Snapshots per Virtual Agent. If you have reached the limit, you have to first delete older Snapshots before you can create new ones. Customers with a dedicated installation can increase the maximum number of Snapshots via an environment variable in the cognigy-env config-map:
+    Since Snapshots contain a copy of your Virtual Agent, they can have a huge file-size. Hence, we have introduced a limit of 10 Snapshots per Virtual Agent. If you have reached the limit, you have to first delete older Snapshots before you can create new ones. Customers with a dedicated installation can increase the maximum number of Snapshots via an environment variable in the cognigy-env config-map:
     MAX_AMOUNT_SNAPSHOTS_IN_AGENT.
     Please note that there is also a file size limit of Snapshots which can be changed when a dedicated product installation is used. This aspect can be changed via the following environment variable in the cognigy-env config-map:
     SNAPSHOT_MAX_FILE_SIZE.
 
 ### Download a Snapshot
-You can download Snapshots you have created previously. This is useful if you want to archive your Snapshots offline or if you have multiple Cognigy.AI systems and you want to transfer a Snapshot to your other Cognigy.AI system.
+You can download Snapshots you have created previously. This is useful if you want to archive your Snapshots offline or if you have multiple Cognigy.AI systems, and you want to transfer a Snapshot to your other Cognigy.AI system.
 
-In order to download a Snapshot, you have to go through our two step process:
+In order to download a Snapshot, you have to go through our two-step process:
 
 **Prepare a downloadable package**
 
@@ -71,7 +71,7 @@ In order to download a Snapshot, you have to go through our two step process:
   * The web browser will start to download your Snapshot in our proprietary ".CSNAP File Type"
 
 ???+ info ".CSNAP File Type"
-    The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. We don't provide any tooling to open a Snapshot outside of Cognigy.AI. The data in your Snapshots will be encrypted as Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
+    The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. We don't provide any tooling to open a Snapshot outside Cognigy.AI. The data in your Snapshots will be encrypted as Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
 
 ### Upload a Snapshot
 
@@ -90,9 +90,9 @@ Uploading a Snapshot will not have any impact on the resources (e.g. the Flows) 
 If you are using Snapshots as a way of archiving your Virtual Agent, you might want to restore your Virtual Agent to the point where the Snapshot was taken initially. We offer this functionality through our "Restore Snapshot" option.
 
 ???+ danger "Restoring a Snapshot Overwrites all existing agent resources"
-    Make sure that you are fully aware of the implications when restoring an Virtual Agent from a Snapshot. All resources within the Virtual Agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your Virtual Agent, conversations will break as those Flows will be removed.
+    Make sure that you are fully aware of the implications when restoring a Virtual Agent from a Snapshot. All resources within the Virtual Agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your Virtual Agent, conversations will break as those Flows will be removed.
 
-In order to restore an Virtual Agent from a Snapshot, do the following:
+In order to restore a Virtual Agent from a Snapshot, do the following:
 
   * Upload the Snapshot in case the Snapshot from which you want to restore is not present in your Virtual Agent
   * Click on the "Restore" option in the three-dot menu
@@ -134,9 +134,9 @@ The Snapshot concept allows you to make your Virtual Agents available through En
 **In order to release** the new Snapshot, you visit your Endpoint(s) (e.g. your Webchat endpoint that you are using on your website) and simply select the new Snapshot and the Flow(s) within the Snapshot. Since you are now using resources within the Snapshot in production, developers can - without any fear - modify the Flows in the Virtual Agent directly without breaking conversation logic for your customers.
 
 ### Using multiple Virtual Agents
-For more control on what is actually running in production, the "multiple Virtual Agents" approach should be choosen.
+For more control on what is actually running in production, the "multiple Virtual Agents" approach should be chosen.
 
-A customer wants to build an Virtual Agent for FAQs on their website. Two Agents should be created in Cognigy.AI:
+A customer wants to build a Virtual Agent for FAQs on their website. Two Agents should be created in Cognigy.AI:
 
 - FAQ Bot development
 - FAQ Bot production

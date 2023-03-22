@@ -14,12 +14,12 @@
 A **Go To Node** is used to switch the conversation over to another **Node** or **Flow** which will be executed immediately when this node is activated.
 
 ???+ info "Using Go to and Execute together"
-    A Go to node will overwrite any existing execute node flow. This means that if a flow containing a Go To node is Executed, the Go To node will stop the original execution and "stick" to it's destination node's flow.
+    A Go to node will overwrite any existing execute node flow. This means that if a flow containing a Go To node is Executed, the Go To node will stop the original execution and "stick" to its destination node's flow.
 
 ## Advanced
 
 ### Execution Mode
-The Execution Mode determines the behavior of the Go To Node. It can go to the target Node and continue or it can wait for input.
+The Execution Mode determines the behavior of the Go To Node. It can go to the target Node and continue, or it can wait for input.
 
 ### Optionally Injected Text
 If the Execution Mode is set to "Go to Node and continue", you can overwrite the text with which to continue here. If no text is specified, input.text will be used.

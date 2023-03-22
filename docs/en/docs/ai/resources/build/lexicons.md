@@ -23,7 +23,7 @@ Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **
   <img class="image-center" src="{{config.site_url}}ai/resources/images/973f877-lexicon-keyphrase.jpg" width="100%" />
 </figure>
 
-In the example above, the **Keyphrase** is *Apple iPhone*. The **Slots** that are filled when this Keyphrase is detected, are *device* and *mobile*. Its synomym is *Cool phone*. 
+In the example above, the **Keyphrase** is *Apple iPhone*. The **Slots** that are filled when this Keyphrase is detected, are *device* and *mobile*. Its synonym is *Cool phone*. 
 
 ### Adding Keyphrases
 To add a new Keyphrase, go to the ``Enter new keyphrase`` input field, type the name of the Keyphrase and hit enter.
@@ -48,7 +48,7 @@ You can search through your Keyphrases via the search bar in the top right corne
 At the bottom, you can navigate to different pages and toggle the amount of Keyphrases you wish to show per page. This is quite handy when your Lexicons start to grow and have dozens of entries - just switch to a smaller page-size on smaller screens or increase the limit of entries on a page for large monitor usage.
 
 ???+ warning "Attach your Lexicons"
-    Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specifc flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/) for more information.
+    Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specific flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/) for more information.
 
 ???+ success "Access slots in your Flow"
     Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
@@ -97,17 +97,17 @@ Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""
 
 <div class="divider"></div>
 
-Cognigy.AI features built-in Slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built in Slot types are listed below:
+Cognigy.AI features built-in Slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built-in Slot types are listed below:
 
-|Slot type|
-|---|
-|Date|
-|Number|
-|Duration|
-|Temperature|
-|Age|
-|Email|
-|Percentage|
+| Slot type   |
+|-------------|
+| Date        |
+| Number      |
+| Duration    |
+| Temperature |
+| Age         |
+| Email       |
+| Percentage  |
 
 ???+ info "Built in Slot Details"
     Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).

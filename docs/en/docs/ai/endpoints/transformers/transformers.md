@@ -24,7 +24,7 @@
          <a href="https://support.cognigy.com/hc/en-us/articles/360019704899-Transformers-Overview" target="_blank" >Transformers Overview</a>
       </div>
       <div class="callout-subtext">
-            Cognigy Helpcenter article
+            Cognigy HelpCenter article
       </div>
    </div>
 </blockquote>
@@ -40,7 +40,7 @@ You can use them to:
 
 - change the request payload from an Endpoint before being sent to the Flow
 - change outputs from a Flow before they are sent to the user 
-- create additional integrations with a custom built endpoint
+- create additional integrations with a custom-built endpoint
 - transform the output of channel to work on another channel, e.g. convert Webchat output to WhatsApp compatible output
 - handle Webhook events from custom services
 - translate the messages from a user into the language of the Flow
@@ -119,16 +119,16 @@ Every Transformer function expects a certain return value, which it will then us
 ### NPM Modules
 The following NPM modules are available in the Transformer:
 
-|NPM Modules|
-|---|
-|uuid|
-|crypto|
-|_ (Lodash)|
-|moment|
-|xmljs|
+| NPM Modules |
+|-------------|
+| uuid        |
+| crypto      |
+| _ (Lodash)  |
+| moment      |
+| xmljs       |
 
 ## Logging
-It is possible to use the exposed modules console.log, console.info and console.error in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
+It is possible to use the exposed modules `console.log`, `console.info` and `console.error` in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
 
 ## Sending HTTP Requests
 It is possible to send HTTP requests to external services from within a Transformer. All Transformer functions can access the `httpRequest` module for this purpose. The module is invoked as a function which takes a single configuration object as arguments. This object has the same format as the options object for the NPM module [Request](https://www.npmjs.com/package/request#requestoptions-callback). Example:
@@ -182,55 +182,55 @@ const handleOutput: async ({ userId, sessionId }) => {
 
 There are three different types of Transformers, and each Endpoint will implement one of them. Each Transformer type will have a slightly different way of handling the specific Transformer Functions.
 
-The sections below give a quick overview of the different Transformer types. How every Transformer function works differently for every Transformer type is explained in the sub chapters for the individual Transformer functions.
+The sections below give a quick overview of the different Transformer types. How every Transformer function works differently for every Transformer type is explained in the subchapters for the individual Transformer functions.
 
 ## REST Transformer
 The REST Transformer is implemented for all Endpoints that are REST based, which means that they receive one message from the user and send one reply back. For these Endpoints, it is possible to have more Say Nodes in the Flow, but all outputs will be concatenated into one output which will then be sent to the user.
 
 The REST based endpoints are:
 
-|REST Endpoints|
-|---|
-|Alexa|
-|Google Actions|
-|Dialogflow|
-|Twilio|
-|Twilio SMS|
-|Twilio Autopilot|
-|Microsoft Teams|
-|Userlike|
-|AudioCodes|
-|REST|
+| REST Endpoints   |
+|------------------|
+| Alexa            |
+| Google Actions   |
+| Dialogflow       |
+| Twilio           |
+| Twilio SMS       |
+| Twilio Autopilot |
+| Microsoft Teams  |
+| Userlike         |
+| AudioCodes       |
+| REST             |
 
 ## Webhook Transformer
-The Webhook Transformer is implemted for all Endpoints that are webhook based, which means that they receive one message from the user, but can reply to the user multiple times via a webhook URL.
+The Webhook Transformer is implemented for all Endpoints that are webhook based, which means that they receive one message from the user, but can reply to the user multiple times via a webhook URL.
 
 The Webhook based Transformers are: 
 
-|Webhook Endpoints|
-|----|
-|Facebook Messenger|
-|Slack|
-|Microsoft Bot Framework|
-|Sunshine Conversations|
-|LINE|
-|RingCentral Engage|
-|Intercom|
-|WhatsApp|
-|Webhook|
+| Webhook Endpoints       |
+|-------------------------|
+| Facebook Messenger      |
+| Slack                   |
+| Microsoft Bot Framework |
+| Sunshine Conversations  |
+| LINE                    |
+| RingCentral Engage      |
+| Intercom                |
+| WhatsApp                |
+| Webhook                 |
 
 ## Socket Transformer
 The Socket Transformer is implemented for all Endpoints that use sockets to communicate. These Endpoints are:
 
-|Socket Endpoints|
-|---|
-|Webchat|
-|Socket|
+| Socket Endpoints |
+|------------------|
+| Webchat          |
+| Socket           |
 
 ## Creating a Custom Endpoint
 To create an integration with a custom channel, the first step is to figure out which type of Endpoint this custom channel is. When it is known whether the custom integration uses a REST based API, a Webhook API or is socket based, then the corresponding Endpoint can be created in Cognigy.AI. 
 
-There is an example of a custom built integration in the Example repository (see below).
+There is an example of a custom-built integration in the Example repository (see below).
 
 ## Example Repository
 

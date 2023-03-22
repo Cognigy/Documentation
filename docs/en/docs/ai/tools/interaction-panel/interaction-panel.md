@@ -29,7 +29,7 @@ The Interaction Panel will preview channel-specific output in case this has been
     It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output)**.
 
 ### Input Modes
-Clicking on the secondary button located at the buttom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
+Clicking on the secondary button located in the bottom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />
@@ -155,10 +155,17 @@ This section lets you configure the chat outputs in the Interaction Panel.
 If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
 
 #### Expert Mode
-If enabled, the Interaction Panel will display additional information about the Flow execution, like intents that were triggered, intent score, name of the Flow that was triggered etc. 
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+
+If enabled, the Interaction Panel will display additional information about the Flow execution:
+
+- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and their score.
+- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and their score.
+- The name of the Flow that was triggered. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="80%" />
 </figure>
 
 #### Channel Select

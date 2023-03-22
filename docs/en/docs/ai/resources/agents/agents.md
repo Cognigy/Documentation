@@ -9,14 +9,14 @@ All your conversational AI resources in one place.
 ## Description
 <div class="divider"></div>
 
-Agents contain collections of conversational AI resources, including [Flows]({{config.site_url}}ai/resources/build/flows/), [Lexicons]({{config.site_url}}ai/resources/build/lexicons/), [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) and more. It is possible to work on a given Agent with multiple team members and Agents can deployed on a wide range of channels. 
+Agents contain collections of conversational AI resources, including [Flows]({{config.site_url}}ai/resources/build/flows/), [Lexicons]({{config.site_url}}ai/resources/build/lexicons/), [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) and more. It is possible to work on a given Agent with multiple team members and Agents can deploy on a wide range of channels. 
 
 ## Create a new Agent
 Below are the steps to create a Virtual Agent (VA) with Cognigy.AI. A VA is a bot that is designed to automatically handle interactions. It's simple to create one:
 
-### 1. The Create Agent wizard
-When you login to Cognigy.AI as an Admin or Project Manager, you will be able to see **Create Agent** button on the top-left.
-You can create Virtual Agents by clicking this button. A Virtual Agent is typically designed to tackle one use case and it can handle multiple user intents.
+### 1. The Creation Agent wizard
+When you log in to Cognigy.AI as an Admin or Project Manager, you will be able to see **Create Agent** button on the top-left.
+You can create Virtual Agents by clicking this button. A Virtual Agent is typically designed to tackle one use case, and it can handle multiple user intents.
 
 <img src="{{config.site_url}}ai/resources/images/create_agent.png" width="100%" style="margin-bottom: 5px">
 
@@ -27,7 +27,7 @@ You can create Virtual Agents by clicking this button. A Virtual Agent is typica
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_basic_settings.png" width="100%" style="margin-bottom: 5px">
 
-- If [Cognigy Live Agent]({{config.site_url}}live-agent/overview) is setup for your infrastructure, then you will be able to setup a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview) for your Agent. You can see more details in the below section [3. Setup Project Live Agent Inbox]({{config.site_url}}ai/resources/agents/agents/#3-setup-project-live-agent-inbox)
+- If [Cognigy Live Agent]({{config.site_url}}live-agent/overview) is set up for your infrastructure, then you will be able to set up a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview) for your Agent. You can see more details in the below section [3. Setup Project Live Agent Inbox]({{config.site_url}}ai/resources/agents/agents/#3-setup-project-live-agent-inbox)
 
 - Select a Blank or any pre-build solution accelerators that can help you build the basic bot for you. 
 
@@ -50,17 +50,17 @@ You can create Virtual Agents by clicking this button. A Virtual Agent is typica
 
 The Live Agent section in the **Create Agent** wizard will only be visible if the Live Agent is configured at an infrastructure level (which means the FEATURE_USE_COGNIGY_LIVE_AGENT environment variable should be enabled for your environment).
 
-- If you are an admin user and if no Live Agent Account is configured for your Organisation, then you will see an option in the **Create Agent** wizard to setup a Live Agent Account for your Organisation. Once the Live Agent Account is created, then you will be able to setup a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) for the Project by turning the toggle ON.
+- If you are an admin user and if no Live Agent Account is configured for your Organisation, then you will see an option in the **Create Agent** wizard to set up a Live Agent Account for your Organisation. Once the Live Agent Account is created, then you will be able to set up a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) for the Project by turning the toggle ON.
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_account.png" width="100%" style="margin-bottom: 5px">
 
-- If you are a Project Manager, then you will not have an option to setup a Live Agent Account. Instead you need to contact your admin to first setup a Live Agent Account for your Organisation.
+- If you are a Project Manager, then you will not have an option to set up a Live Agent Account. Instead, you need to contact your admin to first set up a Live Agent Account for your Organisation.
 
 <img src="{{config.site_url}}ai/resources/images/agent_wizard_nonadmin-liveagent_setup.png" width="100%" style="margin-bottom: 5px">
 
 - If the Live Agent Account is already configured for your Organisation, then you will be able to create a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and the [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview).
 
-- Selecting **Don't use Agent Assist** will not setup any additional resources.
+- Selecting **Don't use Agent Assist** will not set up any additional resources.
 
 - Selecting **Setup Agent Assist**, a flow called **Agent Assist** with a simple say node will be created and assigned as your Agent Assist Flow.
 

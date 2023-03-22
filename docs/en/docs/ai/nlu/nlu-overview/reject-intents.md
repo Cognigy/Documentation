@@ -13,14 +13,14 @@ Reject intents give you the capability to intentionally prevent the NLU from rec
 
 ## Concept
 <div class="divider"></div>
-Reject intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. Select **Create 'Reject Intent'** from the extended menu available next to the create intent butting. Then simply add example sentences to match the user input that should be ignored from the NLU.
+Reject intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. Select **Create 'Reject Intent'** from the extended menu available next to the creation intent butting. Then simply add example sentences to match the user input that should be ignored from the NLU.
 
 Reject Intents require the following:
 
-| Name	| Property type	|
-| -----	| ------------	|
-| Intent Name	| Unique name of the Intent	|
-| Example Sentences	| A set of sentences that predict the user input |
+| Name	              | Property type	                                 |
+|--------------------|------------------------------------------------|
+| Intent Name	       | Unique name of the Intent	                     |
+| Example Sentences	 | A set of sentences that predict the user input |
 
 ## What is a good use case for Reject Intents?
 <div class="divider"></div>
@@ -29,11 +29,11 @@ Let's imagine we have users looking for green space to take a breath of fresh ai
 
 "Where can I find a park nearby"
 
-Say your app only deals with drivers and you simply want to ignore such requests. In this case, you want to add the offending sentences to the Reject Intent.
+Say your app only deals with drivers, and you simply want to ignore such requests. In this case, you want to add the offending sentences to the Reject Intent.
 
 As a best practice, simply treat the Reject Intent to capture utterances your bot should ignore with the same importance as any other intent essential to the functioning of your bot.
 
-Alternatively, you may want to reconsider the design of your bot. If you encounter a class of out-of-scope utterances frequently in your logs then you likely want to add an additional intent. You can address the expressed user intent even if it only clarify the scope of your bot.
+Alternatively, you may want to reconsider the design of your bot. If you encounter a class of out-of-scope utterances frequently in your logs then you likely want to add an additional intent. You can address the expressed user intent even if it only clarifies the scope of your bot.
 
 If you require more advanced out-of-scope recognition you can also use a Rule or ML intent to capture out-of-scope sentences. This can be done if you ignore the intent otherwise in your Flow.
 

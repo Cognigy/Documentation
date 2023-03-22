@@ -5,7 +5,7 @@
 ---
 # Endpoints
 
-**Endpoints** are used to connect external channels, such as Facebook Messenger, Slack, Alexa and many others, to specific Cognigy [**Flows**]({{config.site_url}}ai/resources/build/flows/). They convert channel-specific input and output (images, galleries, voice) to the standardized [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many different channels by configuring Endpoints.
+**Endpoints** are used to connect external channels, such as Facebook Messenger, Slack, Alexa and many others, to specific Cognigy [**Flows**]({{config.site_url}}ai/resources/build/flows/). They convert channel-specific input and output (images, galleries, voice) to the standardized [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/6d72d72-endpoints-screen.jpg" width="100%" />
@@ -18,28 +18,28 @@ Find more details about each type of endpoint and links to our [Help Center](htt
 
 The platform includes many pre-built Endpoints that can be configured in a couple of steps. 
 
-| Endpoint      | Description                          |
-| ----------- | ------------------------------------ |
-| [Webchat](../../endpoints/webchat/webchat.md) | The Webchat is an open-source web-based chat widget that can be embedded on any website. |
-| [Alexa](../../endpoints/amazon-alexa.md)       | Alexa is Amazon's Virtual Assistant voice AI device. The devices come in different versions, like the Echo, Echo Dot and Echo Show. |
-| [DialogFlow](../../endpoints/dialogflow.md)    | DialogFlow is Google's Natural Language Understanding framework. By configuring a DialogFlow Endpoint, you can connect your Flow to all channels that are support by DialogFlow. |
-| [Facebook Messenger](../../endpoints/facebook-messenger.md)   | Messenger is Facebook's messaging app and platform. |
-| [Google Actions](../../endpoints/google-actions.md)   | Google Actions are part of Google Assistant and let you connect your Flows to any Google Assistant device. |
-| [Voice Gateway](../../endpoints/cognigy-vg.md)   | Voice Gateway lets you connect to SIP interfaces, which means that your Virtual Agent can be connected to the phone network. |
-| [Intercom](../../endpoints/intercom.md)    | Intercome is a live chat suite. |
-| [Line](../../endpoints/line-messenger.md)    | Line is a popular messaging and voice call app.|
-| [Azure Bot Services](../../endpoints/azure-bot-services.md)    | The [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/) Endpoint allows you to connect your Virtual Agent to all Azure Bot Service channels. |
-| [Microsoft Teams](../../endpoints/microsoft-teams.md)    | Microsoft Teams is a popular communication and collaboration platform.|
-| [REST](../../endpoints/rest.md)   | The REST Endpoint lets you connect to a Cognigy Flow directly through a REST interface.|
-| [RingCentral Engage](../../endpoints/ringcentral-engage.md)    | RingCentral Engage is a customer engagement platform that features built-in support for many channels and live-chat capabilities.|
-| [Slack](../../endpoints/slack.md)    | Slack is a popular communication and collaboration platform. |
-| [Sunshine Conversations](../../endpoints/sunshine-conversations.md)    | Sunshine Conversations is part of Zendesk and helps connect to another set of channels. |
-| [Socket](../../endpoints/socketio.md)   | The Socket Endpoint lets you connect to a Flow through a socket interface.|
-| [Twilio](../../endpoints/twilio.md)    | Twilio is a popular cloud communications platform. The Twilio Endpoint lets you connect Flows to Twilio Programmable Voice. |
-| [Twilio Autopilot](../../endpoints/twilio.md#twilio-autopilot-endpoint-settings)   | Twilio is a popular cloud communications platform. The Twilio Autopilot Endpoint makes use of Twilio NLU framework. |
-| [Twilio SMS](../../endpoints/twilio.md#twilio-voice-twilio-sms--whatsapp-twilio-autopilot)   | Twilio is a popular cloud communications platform. The Twilio SMS Endpoint lets you connect Flows to Twilio Programmable SMS.|
-| [Userlike](../../endpoints/userlike.md)  | Userlike is a popular live-chat platform |
-| [Webhook](../../endpoints/webhook.md)   | The Webhook Endpoint lets you expose Cognigy Flows via Webhook.|
+| Endpoint                                                                                   | Description                                                                                                                                                                      |
+|--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Webchat](../../endpoints/webchat/webchat.md)                                              | The Webchat is an open-source web-based chat widget that can be embedded on any website.                                                                                         |
+| [Alexa](../../endpoints/amazon-alexa.md)                                                   | Alexa is Amazon's Virtual Assistant voice AI device. The devices come in different versions, like the Echo, Echo Dot and Echo Show.                                              |
+| [DialogFlow](../../endpoints/dialogflow.md)                                                | DialogFlow is Google's Natural Language Understanding framework. By configuring a DialogFlow Endpoint, you can connect your Flow to all channels that are support by DialogFlow. |
+| [Facebook Messenger](../../endpoints/facebook-messenger.md)                                | Messenger is Facebook's messaging app and platform.                                                                                                                              |
+| [Google Actions](../../endpoints/google-actions.md)                                        | Google Actions are part of Google Assistant and let you connect your Flows to any Google Assistant device.                                                                       |
+| [Voice Gateway](../../endpoints/cognigy-vg.md)                                             | Voice Gateway lets you connect to SIP interfaces, which means that your Virtual Agent can be connected to the phone network.                                                     |
+| [Intercom](../../endpoints/intercom.md)                                                    | Intercome is a live chat suite.                                                                                                                                                  |
+| [Line](../../endpoints/line-messenger.md)                                                  | Line is a popular messaging and voice call app.                                                                                                                                  |
+| [Azure Bot Services](../../endpoints/azure-bot-services.md)                                | The [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/) Endpoint allows you to connect your Virtual Agent to all Azure Bot Service channels.               |
+| [Microsoft Teams](../../endpoints/microsoft-teams.md)                                      | Microsoft Teams is a popular communication and collaboration platform.                                                                                                           |
+| [REST](../../endpoints/rest.md)                                                            | The REST Endpoint lets you connect to a Cognigy Flow directly through a REST interface.                                                                                          |
+| [RingCentral Engage](../../endpoints/ringcentral-engage.md)                                | RingCentral Engage is a customer engagement platform that features built-in support for many channels and live-chat capabilities.                                                |
+| [Slack](../../endpoints/slack.md)                                                          | Slack is a popular communication and collaboration platform.                                                                                                                     |
+| [Sunshine Conversations](../../endpoints/sunshine-conversations.md)                        | Sunshine Conversations is part of Zendesk and helps connect to another set of channels.                                                                                          |
+| [Socket](../../endpoints/socketio.md)                                                      | The Socket Endpoint lets you connect to a Flow through a socket interface.                                                                                                       |
+| [Twilio](../../endpoints/twilio.md)                                                        | Twilio is a popular cloud communications platform. The Twilio Endpoint lets you connect Flows to Twilio Programmable Voice.                                                      |
+| [Twilio Autopilot](../../endpoints/twilio.md#twilio-autopilot-endpoint-settings)           | Twilio is a popular cloud communications platform. The Twilio Autopilot Endpoint makes use of Twilio NLU framework.                                                              |
+| [Twilio SMS](../../endpoints/twilio.md#twilio-voice-twilio-sms--whatsapp-twilio-autopilot) | Twilio is a popular cloud communications platform. The Twilio SMS Endpoint lets you connect Flows to Twilio Programmable SMS.                                                    |
+| [Userlike](../../endpoints/userlike.md)                                                    | Userlike is a popular live-chat platform                                                                                                                                         |
+| [Webhook](../../endpoints/webhook.md)                                                      | The Webhook Endpoint lets you expose Cognigy Flows via Webhook.                                                                                                                  |
 
 !!! note
     Endpoints that act as **channel aggregators** allow you to connect to multiple channels via a single connection point. Examples: [Sunshine Conversations](https://smooch.io/channels/), [DialogFlow](https://cloud.google.com/dialogflow/es/docs/integrations), [Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0) and [RingCentral Engage](https://www.ringcentral.com/digital-customer-engagement.html#ring-cc-off).
@@ -113,7 +113,7 @@ This drop-down allows you to select a different **NLU engine** for this particul
 The Data Protection & Analytics section lets you configure which analytics (if any) are collected. 
 
 **Chatbase**
-Cognigy.AI can be connect directly to Google's Chatbase analytics platform. When enabled, an API key needs to be entered. All relevant data that enters the Endpoint, is forwarded to Chatbase.
+Cognigy.AI can be connected directly to Google's Chatbase analytics platform. When enabled, an API key needs to be entered. All relevant data that enters the Endpoint, is forwarded to Chatbase.
 
 **Dashbot**
 The Endpoint can also be setup to forward all relevant analytics to Dashbot.

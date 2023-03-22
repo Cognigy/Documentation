@@ -31,5 +31,5 @@ To override the background and interaction element colors, use CSS color codes.
 - [xApps](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
 - [Init xApp Session](init-xApp-session.md)
-- [Get xApp Sesion PIN](get-xApp-session-PIN.md)
+- [Get xApp Session PIN](get-xApp-session-PIN.md)
 - [Set HTML xApp State](set-html-xApp-state.md)

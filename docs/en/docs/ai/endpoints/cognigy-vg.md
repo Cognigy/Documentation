@@ -15,7 +15,7 @@ Within our **Cognigy.AI** platform you are able to connect your **Agent** to you
 
 ## Voice Gateway Specific Nodes
 
-Cognigy.AI comes with built in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) for more information.
+Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) for more information.
 
 ## Call Meta Data
 

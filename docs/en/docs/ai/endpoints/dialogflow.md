@@ -43,5 +43,5 @@ By enabling the **Reparse Slots** toggle you can combine your Dialogflow and Cog
 ## More information
 
 
-- [Helpcenter: Dialogflow Intro ](https://support.cognigy.com/hc/en-us/articles/360016153980)
-- [Helpcenter: Dialogflow Deployment](https://support.cognigy.com/hc/en-us/articles/360016154040)
+- [HelpCenter: Dialogflow Intro ](https://support.cognigy.com/hc/en-us/articles/360016153980)
+- [HelpCenter: Dialogflow Deployment](https://support.cognigy.com/hc/en-us/articles/360016154040)

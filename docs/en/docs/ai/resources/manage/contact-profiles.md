@@ -27,14 +27,13 @@ Here you can search for contact profiles in the top right search box and sort th
 
 The Profile Schema contains the following default schema values:
 
-
-| Property Name      |
+| Property Name|
 | ----------- | 
-| Contact IDs       | 
-| First Name     |
+| Contact IDs      | 
+| First Name    |
 | Last name    | 
-| Accepted GDPR    | 
-| Goals completed   | 
+| Accepted GDPR   | 
+| Goals completed  | 
 | Email    | 
 | Gender    | 
 | Age    | 

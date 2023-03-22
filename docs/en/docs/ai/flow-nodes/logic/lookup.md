@@ -19,7 +19,7 @@ If you choose CognigyScript as the operand, you must use direct CognigyScript si
 <div class="divider"></div>
 
 ### Intent 
-This is the default setting for the **Lookup Node**, and it allows you to easily lookup the Intent that has been triggered. 
+This is the default setting for the **Lookup Node**, and it allows you to easily look up the Intent that has been triggered. 
 
 By default, the Intent at the most detailed **[Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/)** level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
 
@@ -65,7 +65,7 @@ By changing the lookup type to **Mode**, the flow will select a case that matche
 </figure>
 
 ???+ info "What is Mode?"
-    The **Mode** provides information on the what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+    The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
 ### CognigyScript
 By changing the lookup type to **CognigyScript**, the flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.

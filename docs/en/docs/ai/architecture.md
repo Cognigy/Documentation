@@ -8,7 +8,7 @@
 ## Overview
 <div class="divider"></div>
 Cognigy.AI is a modern, cloud-native software solution based on a scalable microservice architecture. This modern architecture allows
-us to leverage the compute power of multiple servers for a single software product. Instead of running a single executable on a single server,
+us to leverage the computed power of multiple servers for a single software product. Instead of running a single executable on a single server,
 we have de-composed Cognigy.AI into more than 30 separate executables. These smaller executables (hence the name microservice) despite being separated,
 act as a single product - Cognigy.AI - by interacting with each other through network calls.
 
@@ -26,7 +26,7 @@ specific tools is [Docker](https://www.docker.com/).
 Managing a high numer of moving parts - the microservices mentioned above - is quite a challenge and requires an additional software product
 which is called a container orchestrator. [Kubernetes](https://kubernetes.io/) is such a container orchestrator dealing with tasks like:
 
-- assigning containers to one of the available servers in the Kubernets cluster respecting their individual hardware requirements and matching these against the available hardware on a server
+- assigning containers to one of the available servers in the Kubernetes cluster respecting their individual hardware requirements and matching these against the available hardware on a server
 - observing whether containers need to be restarted in case they crash
 - updating containers to a newer version when a software update (for example, new version of Cognigy.AI) has been shipped
 - testing whether containerized processes still respond by implementing readiness- and liveness-probes
@@ -43,11 +43,11 @@ Cognigy.AI itself is a product offering different groups of functionality:
   <figcaption>Components for Cognigy.AI IDE (orange), Cognigy.AI Runtime (green) & Cognigy Insights (blue)</figcaption>
 </figure>
 
-Cognigy Insights plays a smaller role regarding Cognigy.AIs product architecture, hence we skip it on this page. You can learn more about 
+Cognigy Insights plays a smaller role regarding Cognigy.AI product architecture, hence we skip it on this page. You can learn more about 
 [Insights (Analytics)]({{config.site_url}}insights/cognigy-insights/) in our product documentation dedicated for it.
 
 ### IDE - building your Virtual Agents
-A place that allows you to create Virtual Agents and use all of the functionality like Flows, Playbooks, Lexicons & Intents. We call this part
+A place that allows you to create Virtual Agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part
 of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration
 of your Virtual Agent, a so-called [Snapshot]() must be created in order to deploy your Virtual Agent into production. A Snapshot is an immutable
 copy of your Virtual Agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface
@@ -55,14 +55,14 @@ to the second group of functionality: The Cognigy.AI Runtime.
 
 The following table shows the most relevant microservices forming the IDE:
 
-| Microservice name | Responsibilities |
-| ----------------- | ---------------- |
-| service-ui | Serves the WebGUI for Cognigy.AI |
-| service-api | RESTful API to fully control Cognigy.AI through HTTP calls. Full documentation in the form of an [OpenAPI spec]({{config.site_url}}ai/developer-guides/using-api/) is available. Also implements authentication & authorization. |
-| service-resources | Manages all resources within Cognigy.AI - meaning Flows, Endpoints, Playbooks etc. |
-| service-custom-modules | Processes uploaded Cognigy Extensions and prepares them for usage. |
-| service-security | Manages users, organizations and roles including permissions. |
-| service-handover | Implements an interface for 3rd party [handover providers]({{config.site_url}}ai/handover-providers/overview/) like Ring Central Engage. |
+| Microservice name      | Responsibilities                                                                                                                                                                                                                 |
+|------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| service-ui             | Serves the WebGUI for Cognigy.AI                                                                                                                                                                                                 |
+| service-api            | RESTful API to fully control Cognigy.AI through HTTP calls. Full documentation in the form of an [OpenAPI spec]({{config.site_url}}ai/developer-guides/using-api/) is available. Also implements authentication & authorization. |
+| service-resources      | Manages all resources within Cognigy.AI - meaning Flows, Endpoints, Playbooks etc.                                                                                                                                               |
+| service-custom-modules | Processes uploaded Cognigy Extensions and prepares them for usage.                                                                                                                                                               |
+| service-security       | Manages users, organizations and roles including permissions.                                                                                                                                                                    |
+| service-handover       | Implements an interface for 3rd party [handover providers]({{config.site_url}}ai/handover-providers/overview/) like Ring Central Engage.                                                                                         |
 
 
 ### Runtime - running your Virtual Agents

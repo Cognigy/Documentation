@@ -12,7 +12,7 @@
 
 ## Description
 <div class="divider"></div>
-By using the **HTTP Request Node** you are able to perform a HTTP request to a specific resource from within a [Flow]({{config.site_url}}ai/resources/build/flows/).
+By using the **HTTP Request Node** you are able to perform an HTTP request to a specific resource from within a [Flow]({{config.site_url}}ai/resources/build/flows/).
 
 Whenever the HTTP Request Node gets triggered within a [Flow]({{config.site_url}}ai/resources/build/flows/) execution it will perform the defined request to the specified URL.
 
@@ -145,7 +145,7 @@ When enabled the HTTP Node will cache the responses.
 
 ### Security
 #### Allow Insecure SSL
-By default Cognigy.AI will reject connecting against insecure SSL endpoints, such as URLs with no or self-signed certificates. Activating this option will allow the Node to connect against these URLs as well.
+By default, Cognigy.AI will reject connecting against insecure SSL endpoints, such as URLs with no or self-signed certificates. Activating this option will allow the Node to connect against these URLs as well.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c971806-errors.JPG" width="100%" />
@@ -158,7 +158,7 @@ If HTTP Requests return a status code > 299, the response is considered an error
 
 - not log the error
 - log the error with the response from the server and the URL
-- log the error, the reponse, the URL and the request payload (**WARNING**: This could expose sensitive data in the logs)
+- log the error, the response, the URL and the request payload (**WARNING**: This could expose sensitive data in the logs)
 
 #### Abort Flow Execution on Error
 If active, the Flow will stop here if the response returned with a status code > 299

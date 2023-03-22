@@ -45,7 +45,7 @@ When hovering the line chart, details as for example the rated month, the year a
 |Graph title|	Description|
 |--|--|
 |Active Contacts|	The number of currently active users in previous 15 minutes. The data is pulled for the previous 15 minutes and updated every 30 seconds. (the report is arranged in a tile)|
-|Session count|	 A session is defined as a user session with the system. Session count indicates the total number of sessions, including ongoing and newly started sessions. This means if the session is started on 2nd June before 12am, and continues on in 3nd June, it will be counted in the Insights session count dashboard (the report is arranged in a tile).|
+|Session count|	 A session is defined as a user session with the system. Session count indicates the total number of sessions, including ongoing and newly started sessions. This means if the session is started on 2nd June before 12am, and continues on in 3rd June, it will be counted in the Insights session count dashboard (the report is arranged in a tile).|
 |Understood Messages|	Indicates how many understood messages occurred during conversations (the report is arranged in a tile). <br> A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow.|
 |Positive Ratings	|Indication of the NLU quality (the report is arranged in a tile).|
 |Sessions|	A line chart displays the number of sessions on a timescale.|
@@ -55,12 +55,13 @@ When hovering the line chart, details as for example the rated month, the year a
   <figcaption>Overview dashboard - 2</figcaption>
 </figure>
 <div id="overview-charts"></div>
-|Graph title|	Descrption|
-|--|--|
-|Sessions by Channel|	Total number of conversations (sessions) displayed in a ring chart based on channel. ("Users" changed to "Sessions" in v4.16). A Session by Channel is defined or counted by the number of unique sessions for a given channel. This tile represents all the sessions started between the given time. |
-|Top Intents|	Top-rated number of used intents displayed in a bar chart.|
-|Users by Locale|	Stacked bar chart display of time-related recognized conversations depending on different locales given in percentages.|
-|Top Goals|	The top-rated number of goals will be displayed in a bar chart.|
+
+| Graph title         | 	Description                                                                                                                                                                                                                                                                                          |
+|---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sessions by Channel | Total number of conversations (sessions) displayed in a ring chart based on channel. ("Users" changed to "Sessions" in v4.16). A Session by Channel is defined or counted by the number of unique sessions for a given channel. This tile represents all the sessions started between the given time. |
+| Top Intents         | 	Top-rated number of used intents displayed in a bar chart.                                                                                                                                                                                                                                           |
+| Users by Locale     | 	Stacked bar chart display of time-related recognized conversations depending on different locales given in percentages.                                                                                                                                                                              |
+| Top Goals           | 	The top-rated number of goals will be displayed in a bar chart.                                                                                                                                                                                                                                      |
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/2da6af6-Dashboard_Overview_6.svg" width="100%" />

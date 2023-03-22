@@ -7,7 +7,7 @@
 
 ## Description
 <div class="divider"></div>
-NLU Transformers are used to customize the pipeline in NLU Connectors. This makes it possible to change the incoming message from the endpoint before it is send to the NLU engine, and to change the response from the NLU engine before it is sent to the Flow execution.
+NLU Transformers are used to customize the pipeline in NLU Connectors. This makes it possible to change the incoming message from the endpoint before it is sent to the NLU engine, and to change the response from the NLU engine before it is sent to the Flow execution.
 
 [NLU Transformers]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#nlu-transformers_1) are available for Cognigy NLU, as well as for Alexa, DialogFlow, Microsoft LUIS and Watson Assistant connectors.
 
@@ -106,7 +106,7 @@ The following NPM modules are available in the Transformer:
 - moment
 
 ### Logging
-It is possible to use the exposed modules console.log, console.info and console.error in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
+It is possible to use the exposed modules `console.log`, `console.info` and `console.error` in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
 
 ## Transformer Settings
 <div class="divider"></div>

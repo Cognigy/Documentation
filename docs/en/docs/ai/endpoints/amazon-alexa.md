@@ -45,7 +45,7 @@ Enable this toggle to allow the slots found by Alexa to be passed to Cognigy.AI 
 
 ### Skill
 
-Here you can login directly to your Amazon account that has access to your Alexa skills. You can also login to Amazon from the [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/) page. Once logged in, you will be able to select the **Alexa Skill** that you wish to connect with your Cognigy.AI endpoint.
+Here you can log in directly to your Amazon account that has access to your Alexa skills. You can also log in to Amazon from the [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/) page. Once logged in, you will be able to select the **Alexa Skill** that you wish to connect with your Cognigy.AI endpoint.
 
 ### Deploy
 
@@ -56,6 +56,6 @@ Once a skill has been selected, click the **DEPLOY** button to configure your sk
 
 ## More information
 
-- [Helpcenter: Amazon Alexa Intro ](https://support.cognigy.com/hc/en-us/articles/360016192979)
-- [Helpcenter: Amazon Alexa Deployment ](https://support.cognigy.com/hc/en-us/articles/360016193099-Amazon-Alexa-Deploy-an-Endpoint)
-- [Helpcenter: Amazon Alexa Account Linking ](https://support.cognigy.com/hc/en-us/articles/360016153600-Amazon-Alexa-Account-Linking)
+- [HelpCenter: Amazon Alexa Intro ](https://support.cognigy.com/hc/en-us/articles/360016192979)
+- [HelpCenter: Amazon Alexa Deployment ](https://support.cognigy.com/hc/en-us/articles/360016193099-Amazon-Alexa-Deploy-an-Endpoint)
+- [HelpCenter: Amazon Alexa Account Linking ](https://support.cognigy.com/hc/en-us/articles/360016153600-Amazon-Alexa-Account-Linking)

@@ -21,7 +21,7 @@ Enable the collection of Analytics data for this endpoint.
 
 ## Mask Sensitive Analytics
 
-Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/) can't be used as we will not for example, store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/) endpoint.
+Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/) can't be used as we will not for example, store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
 
 ### Ignore specific fields
 
@@ -67,4 +67,4 @@ We have an integration with Chatbase. To get more information about Chatbase, fo
 
 ##### Dashbot
 Cognigy.AI provides an extensive, channel-specific integration with [Dashbot](https://www.dashbot.io).
-Go to our [Helpcenter Dashbot Page](https://support.cognigy.com/hc/en-us/articles/360016311379) for a detailed description of how to setup your Dashbot integration.
+Go to our [HelpCenter Dashbot Page](https://support.cognigy.com/hc/en-us/articles/360016311379) for a detailed description of how to set up your Dashbot integration.

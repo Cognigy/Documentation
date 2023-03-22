@@ -18,7 +18,7 @@ The ``No NLU Connector`` is not an NLU Connector that can be created, but one th
 Although the [Code NLU Connector](http://127.0.0.1:8008/ai/nlu/external-nlu/external-nlu/) is the recommended tool for connecting to a non-native NLU service, the No NLU Connector is useful in a scenario where the NLU process is conducted by flow logic (calling an external NLU from a flow node).  For example, it is possible to use an [HTTP Request](http://127.0.0.1:8008/ai/flow-nodes/services/http-request/) node at the beginning of a Flow to find an Intent for the user's sentence. It is also possible to utilize [Extensions](http://127.0.0.1:8008/ai/resources/manage/extensions/) to create a reusable Node that connects to an NLU system from within a flow.
 
 ???+ success "Creating Extensions for NLU execution"
-    Building [Extensions](http://127.0.0.1:8008/ai/resources/manage/extensions/) that connect to an external NLU system allows an easy connection to external NLU processing from many different Flows without having to worry about duplicate information stored in HTTP Request Nodes across Flows.
+    Building [Extensions](http://127.0.0.1:8008/ai/resources/manage/extensions/) that connect to an external NLU system allows an easy connection to external NLU processing from many Flows without having to worry about duplicate information stored in HTTP Request Nodes across Flows.
 
 ## Flow based NLU execution
 <div class="divider"></div>
