@@ -70,7 +70,6 @@ Agents with Snapshots have the toggle "Override Snapshot Connections" in the End
 !!! info "Default setting"
     By default, any Endpoint will keep using the Connections from the Snapshot unless the toggle is turned ON.
 
-!!! note "Which Connections are overridden?"
     The Agent in which the Connection is to be overridden should initially be either restored from a Snapshot, or should have the Connections imported from another (source) Agent using a Package. The Snapshot selected in the Endpoint editor should be a Snapshot created from the same (source) Agent, to make sure that the Connections "match". In this case, if the toggle is ON, any change in the Connections of the restored Agent will be considered over the Connections in the selected Snapshot.
 
 !!! note
