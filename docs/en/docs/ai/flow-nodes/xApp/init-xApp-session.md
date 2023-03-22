@@ -7,7 +7,7 @@
 # xApp: Init Session
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/init-xApp-session.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/init-xApp-session.png" width="80%" />
 </figure>
 
 ## Description

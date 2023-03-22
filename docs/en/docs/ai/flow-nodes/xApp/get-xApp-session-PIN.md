@@ -7,7 +7,7 @@
 # xApp: Get Session PIN
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/get-xApp-session-PIN.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/get-xApp-session-PIN.png" width="80%" />
 </figure>
 
 ## Description
