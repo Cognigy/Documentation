@@ -19,8 +19,7 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
     Best regards, 
     Your Name 
     ````
-    Change requests can only be reviewed for our **dedicated** environments, as changes made to our App, shared SaaS, environment would affect all customers in functionality and performance.
-
+    Change requests can only be reviewed for Cognigy dedicated SaaS and Cognigy On-premises. If changes are made to Cognigy shared SaaS, the environment would affect all customers in functionality and performance.
 Any **deviations** from the default values for our Trial and App environments are also stated in **bold** within the table below.
 
 |Description|Default value|Trial|App|
