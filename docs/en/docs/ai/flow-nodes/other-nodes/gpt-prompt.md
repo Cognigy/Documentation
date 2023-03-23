@@ -6,7 +6,7 @@ hidden: false
 
 # GPT Prompt (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.46(Beta)-purple.svg)](../../../release-notes/4.46.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47(Beta)-purple.svg)](../../../release-notes/4.47.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-prompt.png" width="100%" />
