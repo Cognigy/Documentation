@@ -229,6 +229,8 @@ Result:
 
 ### Unique Contacts
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../release-notes/4.47.md)
+
 A line chart displaying the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:

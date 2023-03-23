@@ -27,6 +27,8 @@ To assign an Agent or admin to a Conversation, an admin/Agent can select the ass
 ## Auto Assignment
 <div class="divider"></div>
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
+
 Live Agent provides a round-robin auto-assignment system for Conversations. The **Auto Assignment** setting is enabled by default.
 
 There are different scenarios for distributing conversations to human agents based on their online status and workload:
