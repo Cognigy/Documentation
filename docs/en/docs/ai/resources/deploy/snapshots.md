@@ -75,6 +75,8 @@ In order to download a Snapshot, you have to go through our two-step process:
 
 ### Upload a Snapshot
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+
 The use case for uploading a Snapshot is usually to deploy its Flows into production. Since Snapshots life within Virtual Agents as other resources, you have to either first create a new Virtual Agent or upload the Snapshot in one of your existing ones.
 
 To upload a Snapshot, follow these steps:
