@@ -86,7 +86,7 @@ To use and test this mode, follow these steps:
 2. On the **Logs** page, find `userID` in the `info Received message from user` log. If you do not see this type of log, navigate to the channel chat that you created via the Endpoint (such as Webchat, Teams, Slack). Send a message to this chat, then go the logs. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
 3. Copy `userID`.
 4. Go to the Flow editor, open the Interaction panel.
-5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg)
+5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
 6. Paste `userID` into the **User ID** field.
 7. To start live following, click ![start-live-following](../../../assets/icons/start-live-following.svg).
 
