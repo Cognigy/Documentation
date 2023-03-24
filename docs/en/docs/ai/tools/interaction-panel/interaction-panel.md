@@ -77,17 +77,27 @@ When the call is ongoing, you will be able to see how long the call is currently
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-By selecting **Live Follow** as the input mode, you will be able to follow the conversations of the user with the help of a User ID. In the input field, simply enter the ID of the user that you wish to follow and hit the enter key (or simply click **Start Live Following**). You will be able to see and follow the live conversation of the user from your Interaction Panel. Click on **Stop Live Following** button if you don't want to follow the user anymore.
+The **Live Follow** input mode helps observe a conversation between a virtual agent and a user in real time.
+You can debug a Flow when you have already set up an Endpoint for this Flow.
+
+To use and test this mode, follow these steps:
+
+1. Go to **Test > Logs**.
+2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
+3. Copy `userId`.
+4. Go to the Flow editor, and open the Interaction panel.
+5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
+6. Paste `userId` into the **User ID** field.
+7. To start live following, click ![start-live-following](../../../assets/icons/start-live-following.svg).
+
+Now you can view and track the user's real-time conversation from your Interaction Panel. To terminate live following, click **Stop Live Following**.
 
 !!! note
     Human agent messages are not shown in the Live Follow mode.
-  
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="80%" />
 </figure>
-
-You can test this input mode with our demo webchat in Endpoint Editor. For further information, refer to **Manually defining the user ID** info box [here]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/#description).
 
 #### Playbook
 When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
