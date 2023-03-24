@@ -50,13 +50,13 @@ You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/ht
   <figcaption>Using an HTTP-Request node to trigger a long-running process in an external system</figcaption>
 </figure>
 
-| Field in Inject & Notify	 | Cognigy Script  |
-|---------------------------|-----------------|
-| text	                     | ci.text         |
-| data                      | ci.data         |
-| sessionId                 | ci.sessionId    |
-| userId                    | ci.userId       |
-| URLToken	                 | ci.URLToken     |
+| Field in Inject & Notify	 | Cognigy Script   |
+|---------------------------|------------------|
+| text                      | ci.text          |
+| data                      | ci.data          |
+| sessionId                 | ci.sessionId     |
+| userId                    | ci.userId        |
+| URLToken                  | ci.URLToken      |
 
 ## Notify and Inject in Transformers
 
@@ -72,7 +72,7 @@ inject: {endpoint-url}/inject/{URLToken}
 
 Where the URLToken is the URLToken of the Endpoint that should be executed. The Transformer functions should also be implemented in this Endpoint.
 
-???+ warning "API Differences"
+!!! warning "API Differences"
     The URL for the Notify and Inject API is different if a Transformer should be used. The API URL is then:
 
     Notify: {endpoint-url}/notify/{URLToken}

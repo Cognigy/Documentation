@@ -14,7 +14,7 @@ The Interaction Panel can be used to interact with your virtual agent. It can be
 ## Test
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     **Chat** tab was renamed to **Test** from version 4.25.0.
 
 ### Channel-Specific output
@@ -25,7 +25,7 @@ The Interaction Panel will preview channel-specific output in case this has been
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-channel-selection.png" width="100%" />
 </figure>
 
-???+ success "Tip: Showing only selected output"
+!!! tip "Tip: Showing only selected output"
     It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output)**.
 
 ### Input Modes
@@ -35,7 +35,7 @@ Clicking on the secondary button located in the bottom-left corner of the Intera
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />
 </figure>
 
-???+ info "Note"
+!!! note
     Prior to version 4.25.0, *Input Mode* select was a part of Interaction Panel settings tab.
 
 #### Chat
@@ -107,7 +107,7 @@ When **Playbook** input mode is selected, a select field appears with the list o
 </figure>
 
 
-???+ success "Tip: Configuring Playbook Execution"
+!!! tip "Tip: Configuring Playbook Execution"
 	You can further configure the Playbook execution under the [**Interaction Panel Playbook settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
 
 ## Info
@@ -121,26 +121,26 @@ The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
 ### Input object
 The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
 
-???+ info "Input object"
+!!! note "Input object"
     Head over to [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) for more information.
 
 ### State
 State can be used to narrow the set of **Intents** that can be triggered, by actively excluding certain Intents from a certain state. 
 
-???+ info "State"
+!!! note "State"
     Head over to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) to learn more. 
 
 ### Context object
 
 The **Context** can be seen as the short-term memory of the **Virtual Agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
 
-???+ info "Context object"
+!!! note "Context object"
     Head over to [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information. 
 
 ### Profile object
 The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
 
-???+ info "Profile object"
+!!! note "Profile object"
     Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
  
 ## Settings
@@ -220,7 +220,7 @@ If turned on, based on the Interaction Panel outputs, the Flow Editor will autom
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-flow-node.gif" width="100%" />
 </figure>
 
-???+ info "Note"
+!!! note
     Turning this setting on will automatically turn off and disable *Auto-switch Target Flow Selection* setting.
 
 #### Auto-switch Target Flow Selection

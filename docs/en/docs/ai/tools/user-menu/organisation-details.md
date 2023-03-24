@@ -29,7 +29,7 @@ The report can be filtered by **year** and **month** using the date filter dropd
 
 The delete organisation feature will completely remove all the data from your organisation.
 
-???+ warning "Be aware that there is NO way back from this. Once you start the process all your data will be gone."
+!!! warning "Be aware that there is NO way back from this. Once you start the process all your data will be gone."
 
 In order to have this feature fully operational you will need to have some configuration set up.
 
@@ -58,7 +58,7 @@ This process consists of two steps:
 
 After logging in to the Management UI, the user sees a button to trigger the actual deletion process.<br />
 
-???+ warning "**Clicking on this button marks the point of no return in deleting the whole organisation!**"
+!!! warning "**Clicking on this button marks the point of no return in deleting the whole organisation!**"
 
  Finally, once the deletion process has been completed, the system administrator will receive an email notifying them that the organisation has been completely removed.
 

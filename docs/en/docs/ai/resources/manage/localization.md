@@ -23,7 +23,7 @@ The Localization view allows for the configuration of any number of localization
 
 With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents has been added to the Cognigy.AI platform. Cognigy solution is a native integration of leading machine translation providers into the Conversational AI platform.
 
-???+ info "Automatic Localization"
+!!! note "Automatic Localization"
     More details about automatic localization you will find here: [Automatic Localization]({{config.site_url}}ai/tools/auto-localization/).
 
 ### Using localization in Flows
@@ -42,7 +42,7 @@ When switching Localization, the Flow will change its appearance. **"Greyed out"
   <img class="image-center" src="{{config.site_url}}ai/resources/images/8c88b22-localization-inflows-compare.jpg" width="100%" />
 </figure>
 
-???+ success "Switch Locale during a conversation"
+!!! tip "Switch Locale during a conversation"
     It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/) node.
 
 ### Adding a Locale to a Node

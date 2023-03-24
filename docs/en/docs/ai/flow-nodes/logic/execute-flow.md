@@ -16,7 +16,7 @@ An Execute Flow Node is used to immediately execute another Flow.
 
 After the target Flow finished executing, the current Flow will continue executing.
 
-???+ info "Shared Context"
+!!! note "Shared Context"
     The executed flow will receive the current Context of the executing Flow and can write to it. The changes will be available to the executing Flow after the executed Flow has finished.
 
 ## Node Fields
@@ -32,7 +32,7 @@ Here you can select the target Flow which is executed whenever the Flow executio
 ### Select Node
 Here you can select the target Node which is executed whenever the Flow execution hits the **Execute Flow** node.
 
-???+ info "Open Target Flow"
+!!! note "Open Target Flow"
     By clicking on the icon to the right of the Flow drop-down you can open the target Flow. Make sure to save your Node first!
 
 <figure>
@@ -59,5 +59,5 @@ This setting will parse the input into the sub Flow, and the NLU will then score
 
 This toggle decides whether the **default Flow Context** of the **sub Flow** should be applied to the current Context. If the sub Flow has a value within its **default Context**, the value will be copied into the current Context as soon as you enter the child Flow.
 
-???+ warning "Loops" 
+!!! warning "Loops" 
     Cognigy.AI checks how often an Execute Flow Node was hit without a user input inbetween. The default setting for maximum loops is 4, but it is configurable for on-premise installations.

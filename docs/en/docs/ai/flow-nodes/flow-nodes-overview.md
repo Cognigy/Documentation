@@ -11,8 +11,7 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-???+ info "Extensions"
-    Head over to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) section for information on adding more types of **Nodes**.
+Head over to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) section for information on adding more types of **Nodes**.
 
 | Node Categories                                                                      |
 |--------------------------------------------------------------------------------------|
@@ -66,7 +65,7 @@ The If Node is one of the most common Logic Nodes. It can be used to evaluate a 
 
 The Lookup Node acts as a switch between different options. A certain type of input (for example, Intents) is evaluated and based on the value, a certain branch is executed.
 
-???+ info "Coming from Cognigy version 3.x?"
+!!! note "Coming from Cognigy version 3.x?"
     The **Lookup Node** was previously known as the **Switch Node**.
 
 ### [Go To](./logic/go-to.md)

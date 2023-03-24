@@ -43,7 +43,7 @@ Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/
 ## Having Trouble?
 <div class="divider"></div>
 
-???+ warning "**Create Project Inbox** disabled"
+!!! warning "**Create Project Inbox** disabled"
 
 	The button could also be disable for the following reasons:
 
@@ -67,5 +67,5 @@ Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/
     </figure>
 
 
-???+ warning "Live Agent Settings not visible"
+!!! warning "Live Agent Settings not visible"
     The *Live Agent Settings* section in Organisation Details and Agent Settings page will be not be displayed at all, if you have both *Theming* enabled and the *Cognigy Live Agent* feature disabled.

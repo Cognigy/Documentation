@@ -24,5 +24,5 @@ First, let's setup your [Endpoint]({{config.site_url}}ai/endpoints/overview/) fo
 1. [**Set up your Endpoint for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/)
 2. [**Set up your Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow/)
 
-???+ info "Cognigy.AI Endpoints"
+!!! note "Cognigy.AI Endpoints"
     Head over to [**Endpoints**]({{config.site_url}}ai/endpoints/overview/) for any doubt regarding Cognigy.AI endpoints.

@@ -47,10 +47,10 @@ Creating a **Token** requires the following information:
   * Type - The data location (used for sorting the token in the search window)
 
 
-???+ warning "Curly Brackets not required here!"
+!!! warning "Curly Brackets not required here!"
     Tokens will automatically apply curly brackets to your script, therefore they must be omitted from the script field when creating tokens and from text fields when using tokens.
 
-???+ info "Create Tokens from JSON"
+!!! note "Create Tokens from JSON"
     You can create a Token directly from any JSON editor within Cognigy.AI. To do this, right-click the value you want to reference and select **Create Token from JSON Path** from the context menu. The **Script** field will already be pre-filled. You can also mark the value before right-clicking it, to have the Name field pre-filled with the marked text.
 
 ## Token Management Menu
@@ -63,5 +63,5 @@ The **Token Management Menu** can be found under the *Manage* section of the *Ag
 
 A token can be deleted by resting the cursor on a token, clicking the menu icon that appears on the right end of the interface and selecting *"Delete ".*
 
-???+ info "Script Persistence"
+!!! note "Script Persistence"
     Deleting Tokens will not remove the **CognigyScript** from the Nodes that used the Token.

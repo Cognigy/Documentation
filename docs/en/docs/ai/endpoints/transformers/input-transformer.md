@@ -71,7 +71,7 @@ return null;
 Conversations in Cognigy.AI are only counted if the Input Transformer returns a non-falsy result.
 
 
-???+ warning "Return Value Validation"
+!!! warning "Return Value Validation"
     The return value of the `Input Transformer`, if provided, will be validated against a set of rules and rejected if the rules are not met. 
     Every value can return undefined. If something else is returned, these rules apply:
 

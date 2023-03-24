@@ -66,7 +66,7 @@ handleInput: async () => {
 }
 ``` 
 
-???+ warning "Limitations for the httpRequest module"
+!!! warning "Limitations for the httpRequest module"
     It is per default only possible to send one HTTP request per Transformer execution, and it is per default not possible to send HTTP requests to other Endpoints.
 
 ### Cognigy NLU
@@ -80,7 +80,7 @@ const cognigyNluResult = await getCognigyNlu(text + "Lorem ipsum dolor sit amet,
 ### Session Storage
 The Session Storage is a storage object available to all Transformer functions and which will be available throughout the session. This can be used to store variables that have to be used later, in other Transformer functions, or to store conversation state. There is a function called `getSessionStorage` exposed to the Transformer functions. It will return a Promise, which resolves with the `sessionStorage` object, which can be manipulated as a normal object. Example:
 
-???+ warning "Mutating Objects in SessionStorage"
+!!! warning "Mutating Objects in SessionStorage"
     When wanting to change objects inside SessionStorage, it is best practice to not change them directly, but change them locally and later assign.
 
 ```ts

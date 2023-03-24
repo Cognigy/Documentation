@@ -90,7 +90,7 @@ If you want to see examples of Extensions, visit our GitHub repository.
 ### Handling Timeouts in an Extension
 Extensions have a default timeout of 20 seconds, meaning if the time it takes for the Extension to complete is more than 20 seconds, the Extension will stop and an error will be returned to the Flow. The Flow execution will continue, and the error can be accessed under ```input.extensionError.message```.
 
-???+ warning "Extension Timeout"
+!!! warning "Extension Timeout"
     Extensions have a default time-out of 20 seconds. The time-out can be changed on dedicated Cognigy.AI installations.
 
 ## Installing a custom Extension
@@ -130,7 +130,7 @@ Cognigy.AI considers the code within an extension to be "un-trusted", meaning th
 
 With Cognigy.AI v4.1.6 we have introduced the ability to "trust" the code of an Extension by letting customers decide whether they want to execute the code in a secure environment or in the normal execution environment in which our own Flow Nodes run.
 
-???+ warning "Feature availability"
+!!! warning "Feature availability"
     This feature is only available for our on-premise customers or dedicated SaaS customers with their own Cognigy.AI installation.
 
 In order to enable the feature, the following additional environment variable can be used:
@@ -149,7 +149,7 @@ Our customers usually accomplish this, by adding the following to their "config-
 
 Enabling the feature will not change anything automatically. Once the feature was activated, an additional API endpoint (see our RESTful API documentation) can be used in order to update the "trustedCode" property of an Extension.
 
-???+ danger "Security considerations"
+!!! danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
 
 ### Making an Extension Trusted

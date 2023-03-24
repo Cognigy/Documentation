@@ -10,7 +10,7 @@
 
 Cognigy Functions are Code Blocks that can be run inside your Cognigy.AI installation and help you with long-running asynchronous processes, e.g. interaction with third-party systems HTTP APIs.
 
-???+ info "Maximum runtime"
+!!! note "Maximum runtime"
     By default, the maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. On-premise customers with their own Cognigy.AI installation can adjust this limit.
 
 They are independent of Flows but can be triggered from a Flow and can also use the "inject" and "notify" APIs to send their results back into a Flow.

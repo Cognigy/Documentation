@@ -28,5 +28,5 @@ Lexicons are attached by clicking the lexicon in the list which enables the atta
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/3285852-attachLexicons.PNG" width="100%" />
 </figure>
 
-???+ warning "Train Intents when Attaching"
+!!! warning "Train Intents when Attaching"
     The NLU must be re-trained anytime a new flow or lexicon is attached.

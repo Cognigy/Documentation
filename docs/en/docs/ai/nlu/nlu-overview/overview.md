@@ -11,7 +11,7 @@
 <div class="divider"></div>
 Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 
-???+ info "Want to learn how to use Intents?"
+!!! note "Want to learn how to use Intents?"
     Head over to **[Train your Virtual Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents)** in the Help Center.
 
 
@@ -42,7 +42,7 @@ If the NLU predicts the utterance is out of scope of the intent model, no intent
 
 As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being suboptimal and red being bad. Additional information is given on mouse-hover.
 
-???+ warning "Number of example sentences"
+!!! warning "Number of example sentences"
     Intents must have at least five example sentences in order to train the NLU.
 
 ### Rules
@@ -93,7 +93,7 @@ See [Intent Conditions]({{config.site_url}}ai/nlu/nlu-overview/conditions/) for 
 #### Confirmation Sentence
 Cognigy NLU comes with an intent confirmation mechanism that works by configuring Confirmation Sentences in each intent. Whenever an Intent score falls within a (configurable) range - let's say 0,4 - 0,6, the Confirmation Sentence is triggered and shown to the user. If the user confirms the Intent, the Intent will be triggered.
 
-???+ info "Adding Reconfirmation Sentences"
+!!! note "Adding Reconfirmation Sentences"
     Read more about how reconfirmation works on our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) page.
 
 ### Intent Options Menu
@@ -152,7 +152,7 @@ Cognigy NLU can take into account additional Flows and Lexicons whenever they ar
 ### Attached Flows
 Whenever a Flow with Intents is attached to another Flow, the Intents in that Attached Flow are taken into account when training the NLU model. This is a practical way of combining different Intent collections into a bigger model. 
 
-???+ warning "Be careful with attaching Flows"
+!!! warning "Be careful with attaching Flows"
     Whenever a Flow is attached to another Flow, the Intents of both Flows are combined into a single model. This may lead to unexpected results.
 
 ### Attached Lexicons
@@ -163,7 +163,7 @@ Lexicons need to be attached to a Flow in order for a Flow to be able to detect 
 
 States can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collections.
 
-???+ info "States"
+!!! note "States"
     Refer to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) for more information.
 
 ## Slot Fillers

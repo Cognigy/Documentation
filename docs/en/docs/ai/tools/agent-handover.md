@@ -20,7 +20,7 @@ If a request from a user is an edge case that is just too specific to be handled
 
 Once a Handover has been initiated, the normal execution of the Flow is paused until the customer who is waiting for a support agent cancels the request, or until an agent finishes the conversation. Before the conversation with an agent has started, the customer can cancel the request and go back to the normal flow execution by triggering a selected intent or a dedicated quick reply.
 
-???+ info "New Handover Node"
+!!! note "New Handover Node"
     The old Handover Node has been replaced with a `Handover To Agent` Node. The content below is only applicable to the new `Handover to Agent` Node
 
 

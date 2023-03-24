@@ -31,7 +31,7 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
-???+ info "Note"
+!!! note
 
     Using the **"Negate "** slider bar**" all but the selected" filter options will be analyzed.
     For example when selecting the 'Agent messages' and toggling "Negate" then all data will be analyzed but not Agent-message data.
@@ -145,7 +145,7 @@ provide additional information to a conversation messages (if any), such as:
 To check your [Flow]({{config.site_url}}ai/resources/build/flows/) or to improve the configuration the Transcript Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific message displayed in the conversation panel.
 Clicking the button leads you to the related Flow in Cognigy.AI.
 
-???+ info "Note"
+!!! note
     The context menu "Open Flow" is not available on "drop off" steps or collapsed steps (steps with arrows). 
     The "Open Flow" option is not available if there is no corresponding flow in Cognigy. AI or if the data comes from a snapshot.
 
@@ -174,6 +174,6 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
-???+ info "Message Explorer"
+!!! note "Message Explorer"
     **More information to [Message Explorer]({{config.site_url}}insights/message-explorer/)**
 

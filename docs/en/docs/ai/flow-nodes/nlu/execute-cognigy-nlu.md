@@ -13,7 +13,7 @@
 <div class="divider"></div>
 The Execute Cognigy NLU Node is used to execute the Cognigy.AI NLU Pipeline with specified text input and update the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/). After updating the Input Object the Flow continues further processing. For example, a Code Node can be used to adjust a user's input and then run the NLU Pipeline with the modified sentence to get new NLU results.
 
-???+ warning "Note"
+!!! warning
     Flow execution continues by flowing to the next Node after processing the Execute Cognigy NLU Node. This Node does not trigger standard responses in intents, nor does it execute the Flow, based on a triggered intent. This Node only updates the input or context objects as described below.
 
 | Parameter | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |

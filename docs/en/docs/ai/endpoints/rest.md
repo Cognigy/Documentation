@@ -42,10 +42,10 @@ After creating a REST Endpoint you are able to send **POST** requests to the **E
 *text* - message text that should get processed by the assigned flow in form of a string
 *data* - message data that should get processed by the assigned flow in form of an object
 
-???+ info "Sending text and data"
+!!! note "Sending text and data"
     By default, you can use the REST Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the REST Endpoint throws an error.
 
-???+ success "Session ID"
+!!! tip "Session ID"
     The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
 
 
@@ -74,5 +74,5 @@ The response contains the output text, output data and the outputStack, which is
 }
 ```
 
-???+ info "AI Default Channel Formats"
+!!! note "AI Default Channel Formats"
     You can find out more about the format for the default channels [**here**]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/)

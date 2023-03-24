@@ -79,7 +79,7 @@ The list below gives an overview of all the Transformer functions that are avail
 
 To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab in the Endpoint. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
 
-???+ warning "Enabling Transformer Functions"
+!!! warning "Enabling Transformer Functions"
     Every Transformer function is disabled per default and has to be enabled separately in the [Transformer Settings](#transformer-settings) section.
 
 The Transformer code editor has a default value for new Endpoints, which explains in brief how each Transformer function should be used. As soon as a specific Transformer has been enabled, the code in the corresponding Transformer function will be executed.
@@ -102,7 +102,7 @@ The default error handling for Transformers is to log the error on the logs page
 
 If the Transformer is a vital part of the pipeline, for instance when building a custom Endpoint integration, then it might not make sense to execute the underlying Endpoint in case of an error. There is a setting called `Abort On Error`, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
 
-???+ warning "Line Number in Error Logs"
+!!! warning "Line Number in Error Logs"
       When an error is thrown in a Transformer during execution, the line number where the error occurred will be listed in the log. The line number can be a bit incorrect, since it does not take lines occupied by interfaces and comments into account.
 
       Also note that if the error is caused by a return value validation error, no line number will be shown.
@@ -149,14 +149,14 @@ handleInput: async () => {
 }
 ```
 
-???+ warning "Limitations for the httpRequest module"
+!!! warning "Limitations for the httpRequest module"
       It is per default only possible to send one HTTP request per Transformer execution, and it is per default not possible to send HTTP requests to other Endpoints.
 
 ## Session Storage
 
 The Session Storage is a storage object available to all Transformer functions and which will be available throughout the session. This can be used to store variables that have to be used later, in other Transformer functions, or to store conversation state. There is a function called `getSessionStorage` exposed to the Transformer functions, which takes the `userId` and `sessionId` as arguments. It will return a Promise, which resolves with the `sessionStorage` object, which can be manipulated as a normal object. Example:
 
-???+ warning "Mutating Objects inside SessionStorage"
+!!! warning "Mutating Objects inside SessionStorage"
       Complex objects (e.g. Arrays) should not be mutated (e.g. pushed to) directly, but instead locally and the re-assigned to the sessionStorage. See below.
 
 **Session Storage**

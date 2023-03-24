@@ -13,5 +13,5 @@ The Generic Voice Nodes allow Users to use a set of nodes for their voice flows 
   <figcaption>Generic Voice Nodes</figcaption>
 </figure>
 
-???+ info "Usage recommendation"
+!!! note "Usage recommendation"
     A general recommendation to use the Generic Voice Nodes for your voice flows to be more flexible while creating voice bots.

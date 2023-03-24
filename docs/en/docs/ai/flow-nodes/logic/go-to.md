@@ -13,7 +13,7 @@
 
 A **Go To Node** is used to switch the conversation over to another **Node** or **Flow** which will be executed immediately when this node is activated.
 
-???+ info "Using Go to and Execute together"
+!!! note "Using Go to and Execute together"
     A Go to node will overwrite any existing execute node flow. This means that if a flow containing a Go To node is Executed, the Go To node will stop the original execution and "stick" to its destination node's flow.
 
 ## Advanced
@@ -46,9 +46,9 @@ This setting will parse the input into the sub Flow, and the NLU will then score
 ### Absorb Context
 If `Absorb Context` is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
 
-???+ warning "Loops"
+!!! warning "Loops"
     Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premise installations.
 
 
-???+ info "Open Target Flow"
+!!! note "Open Target Flow"
     By clicking on the Flow Name in the Node Preview, you can directly jump to the target Flow.

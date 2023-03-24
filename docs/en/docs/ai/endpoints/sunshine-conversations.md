@@ -11,7 +11,7 @@
 
 Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Sunshine Conversations application** by using our Sunshine Conversations Endpoint.
 
-???+ info "Where is the Smooch Endpoint?"
+!!! note "Where is the Smooch Endpoint?"
     This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.
 
 ## Generic Endpoint Settings
@@ -28,7 +28,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 
@@ -56,7 +56,7 @@ The URI where we send messages to your Sunshine Conversations app. E.g. https://
 
 
 
-???+ info "Help Center"
+!!! note "Help Center"
     More detailed information on how to set up a **Sunshine Conversations** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
 
 

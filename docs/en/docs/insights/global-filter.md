@@ -23,10 +23,10 @@ Global filter always will be available no matter where you navigate. Once you ha
   <figcaption>Global filter menu</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     **The global filter options are available in all applications running in Cognigy Insights.**
 
-???+ warning "Note"
+!!! warning
     **Every change in filter settings needs to be confirmed with “Apply” to be active.**
 
 Several filter menus provide a "**Negate**" slide bar. When active all but the selected endpoints will be analyzed. 
@@ -36,7 +36,7 @@ Several filter menus provide a "**Negate**" slide bar. When active all but the s
 
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     In v4.16 timeframe filter was updated to show currently selected date range. The widget is now placed on the top of the page.
 
     <figure>
@@ -106,7 +106,7 @@ So if you have tested the Virtual Agent using the Interaction Panel, you now wil
 
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     Before the version 4.15, it was only possible to inspect the data of a single snapshot at a time.
 
 A Snapshot is an exported Agent and includes required resources.
@@ -144,7 +144,7 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
   <figcaption>Local filter options</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     To clear all filter settings at once click on the "**Reset filters**" button.  We will show it if the value of any global filter is not equal to the default value.
 
 ## Rating
@@ -158,7 +158,7 @@ This filter allows you to select the analytics data based on the last user ratin
   <figcaption>Rating filter</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     See documentation for [Request rating Node]({{config.site_url}}ai/flow-nodes/other-nodes/request-rating/)
 
 

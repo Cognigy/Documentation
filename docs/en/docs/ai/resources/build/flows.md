@@ -10,8 +10,8 @@
 **Flows** provide a **visual representation of a potential dialog** in a user-friendly interface. 
 Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [**Endpoint**]({{config.site_url}}ai/resources/deploy/endpoints/).
 
-???+ info "How to create a new Flow"
-    Want to learn how to build your first Flow? Have a look at **[Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)** in our Help Center.
+!!! tip "How to create a new Flow"
+    To build your first Flow, go to **[Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)** in the Cognigy Help Center.
 
 <br>
 <img src="{{config.site_url}}ai/resources/images/e1151fe-flow_example_detail.PNG" width="100%" style="margin-bottom: 5px">
@@ -29,8 +29,7 @@ Flows are executed from top to bottom and use a logic-based system to determine 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-???+ info "Flow Nodes"
-    Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) for more information on the different types of **Nodes**.
+Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) for more information on the different types of **Nodes**.
 
 ## Entry Points
 <div class="divider"></div>
@@ -54,8 +53,7 @@ In some cases there are **multiple Entry Points.** This can be the case if an Op
 
 In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
 
-???+ info "NLU (Natural Language Understanding)"
-    Please refer to [**NLU Overview**]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
+Refer to [**NLU Overview**]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
 
 ## Settings
 <div class="divider"></div>

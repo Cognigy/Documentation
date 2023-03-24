@@ -69,7 +69,7 @@ When entering the example sentences you can use the **TAB** or **ENTER** key to 
   <figcaption>Machine Learning Intents: Example Sentences</figcaption>
 </figure>
 
-???+ warning "Avoid Repetition"
+!!! warning "Avoid Repetition"
     Rather than writing similar sentences for different entity names i.e. `I want to order Pizza, I want to order Pasta...` build and attach a Lexicon to the flow that can be [Annotated]({{config.site_url}}ai/nlu/nlu-overview/annotations/) into your sentence.
 
 As stated previously, a minimum of 5 and a maximum of 100 example sentences per Intent are recommended to ensure that the NLU model is sufficiently trained. If the minimum threshold is not reached or if the maximum threshold is surpassed, a warning icon will be displayed to prompt the user to add or remove example sentences.
@@ -88,7 +88,7 @@ Any attempt at training the Intents with less than 5 example sentences will resu
 
 Intent example sentences should be as distinct and unique as possible. If there is too much similarity and overlap with other intents, then the intent mapping will become less predictable and, if configured, intent confirmation sentences will be triggered more frequently.
 
-???+ info "Evaluation of Example Sentences"
+!!! note "Evaluation of Example Sentences"
     Find out more about how Cognigy.AI evaluates example sentences on the [Intent Analyzer Page]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
@@ -99,7 +99,7 @@ When you hover over an example sentence, a *Delete Icon* will appear. Clicking o
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/example-sentence-delete-icon.gif" width="100%" />
 </figure>
 
-???+ warning "Delete Example Sentences using Keyboard"
+!!! warning "Delete Example Sentences using Keyboard"
     The *Delete Icon* of an example sentence cannot be accessed when only using a keyboard. However, a keyboard-only user can still delete an example sentence simply by clearing the field using *Delete* or *Backspace* keys.
 
 ### Create examples with Generative AI 
@@ -121,7 +121,7 @@ If you have configured **Lexicons** with similar items (for example, pizza = FOO
 
 Simply **highlight** the word that should be mapped as a slot or lexicon and click the "**+**" at the right end of the text field to open the **Annotations** menu. The annotations menu provides options to select the type of slot that should be mapped to the highlighted word. 
 
-???+ info "Example Sentence Annotation"
+!!! note "Example Sentence Annotation"
     Find out more about recognizing **Slots** and **Lexicons** in example sentences on the [Annotations Page]({{config.site_url}}ai/nlu/nlu-overview/annotations/).
 
 ## Thresholds
@@ -139,7 +139,7 @@ Intents can fall into one of three thresholds:
 
 You can change these thresholds in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/).
 
-???+ danger "Confirmation Sentence"
+!!! danger "Confirmation Sentence"
     In case you haven't defined a confirmation sentence for your Machine Learning intent the reconfirmation threshold is used to confirm an intent.
 
     So the reconfirmation threshold is used in two different ways depending on the existence of a confirmation sentence:
@@ -152,7 +152,7 @@ You can change these thresholds in [Agent Settings]({{config.site_url}}ai/resour
 <div class="divider"></div>
 If an Intent has been marked as `Reconfirmation Needed` and it is the highest found Intent, Cognigy AI will ask the user the question set in the **`Confirmation Sentence`** property for the Intent. If the user confirms the question with a positive answer, Cognigy AI will remember the answer for this user and not ask the user again. 
 
-???+ info "How Reconfirmation Works"
+!!! note "How Reconfirmation Works"
     * User: *"I want to order a snack"*
     * Cognigy AI scores the Intent `orderPizza` with 0.7
     * Cognigy AI: *"Do you mean you want to order a pizza?"*

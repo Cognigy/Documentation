@@ -15,10 +15,10 @@ The full syntax is as follows. Note the pipe ***|*** separated text is optional,
 
 > **cIntent:intent name**|text to parse for slots
 
-???+ info "Full NLU is not run"
+!!! note "Full NLU is not run"
     Note that full NLU logic is not run when using Trigger Intent. If the Intent named has Default Replies, or other advanced options, these are not enacted. Instead, a Flow input is always generated with the specified Intent and (optionally) the given text and derived slots.
 
-???+ info "Trigger Intent Score"
+!!! note "Trigger Intent Score"
     The Trigger Intent feature always leads to an Intent score of 1.
 
 ## Usage

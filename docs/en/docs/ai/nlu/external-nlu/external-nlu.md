@@ -24,7 +24,7 @@ Inside this menu simply click on the "+ New NLU Connector" button, add a name fo
 
 A new NLU Connection will be added to the list of NLU Connectors and by default, the settings for the newly added connector will be opened. In the instance of third party NLU's this is where the authentication credentials are entered to allow Cognigy.AI to connection with the external NLU service. 
 
-???+ info "Want to learn how to connect an External NLU Service?"
+!!! note "Want to learn how to connect an External NLU Service?"
     Find out how to connect to each supported external NLU service via the Help Center articles listed below:
 
     * Alexa NLU (Article coming soon)
@@ -32,7 +32,7 @@ A new NLU Connection will be added to the list of NLU Connectors and by default,
     * [Microsoft LUIS: External NLU] (https://support.cognigy.com/hc/en-us/articles/360017517319)
     * [Dialogflow: External NLU] (https://support.cognigy.com/hc/en-us/articles/360017466620)
 
-???+ warning "Usage of external services"
+!!! warning "Usage of external services"
     Note when using external NLU Connectors API quota limits, additional terms, conditions and/or charges may apply.
 
 ### Testing and Deploying with an External NLU

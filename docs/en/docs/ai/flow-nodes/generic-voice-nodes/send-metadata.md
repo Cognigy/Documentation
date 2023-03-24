@@ -31,5 +31,5 @@ Example:
 }
 ```
 
-???+ info "This Node supports Activity Parameters"
+!!! note "This Node supports Activity Parameters"
     You can find more information about activity parameters on the [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.

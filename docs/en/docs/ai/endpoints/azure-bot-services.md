@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Channel Specific Settings
@@ -45,7 +45,7 @@ This value is the **Microsoft App ID** which is obtained in the settings page of
 
 This value is the **Microsoft App Password** of your Bot, also referred to as the **Client Secret**. This is obtained by creating a new Client Secret in the App Registrations page for your bot in the Azure Bot Services Dashboard.
 
-???+ info "Help Center"
+!!! note "Help Center"
     More detailed information on how to set up an **Azure Bot Services** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016183720).
 
 ### Microsoft Teams

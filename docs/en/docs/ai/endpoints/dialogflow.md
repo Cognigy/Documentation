@@ -37,7 +37,7 @@ The Dialog Flow Settings dropdown menu is where Cognigy.AI can be configured to 
 
 By enabling the **Reparse Slots** toggle you can combine your Dialogflow and Cognigy NLU. This feature allows the slots found by Dialog flow to be passed to Cognigy.AI and processed by the Cognigy NLU.
 
-???+ info "Help Center"
+!!! note "Help Center"
     For more detailed information on how to set up a **Dialogflow** Endpoint, please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016153980).
 
 ## More information

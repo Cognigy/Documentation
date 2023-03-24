@@ -29,13 +29,13 @@ An OData URL is combined of the service root, api version, the collection and ap
 
 `https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
 
-???+ info "OData Domain Name"
+!!! note "OData Domain Name"
     The OData endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
 
 
 For example, on our trial server, the OData endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations please replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
-???+ info "Excel/Power BI"
+!!! note "Excel/Power BI"
     When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication`.
 
 ## Endpoint Version
@@ -58,7 +58,7 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
 ### Version 2.2
-???+ warning "Deprecation of OData v2.2"
+!!! warning "Deprecation of OData v2.2"
     Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.2. This OData endpoint version will be
     removed in Cognigy.AI `v4.43.0`.
 
@@ -75,7 +75,7 @@ The URL for accessing the V2.2 OData endpoint is as follows:
 
 
 ### Version 2.0
-???+ warning "Deprecation of OData v2.0"
+!!! warning "Deprecation of OData v2.0"
     Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.0. This OData endpoint version will be
     removed in Cognigy.AI `v4.43.0`.
 
@@ -103,7 +103,7 @@ The endpoint supports following the OData Query Language operators:
 - $count
 - $select
 
-???+ warning "$count and Excel"
+!!! warning "$count and Excel"
     Microsoft Excel does not support for the $count query. Please use Postman or other options.
 
 ## Example Requests
@@ -223,10 +223,10 @@ When retrieving this collection, the endpoint will return the following fields:
 | ratingComment      | Comment left when given a rating                                                           | String   |                                      |
 | snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                      |
 
-???+ info "Field Explanation"
+!!! note "Field Explanation"
     Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
 
-???+ warning "Max length of custom fields"
+!!! warning "Max length of custom fields"
     You can store maximum 500 characters as the value of each of the custom fields
 
 ### ChatHistory
@@ -266,7 +266,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Steps
 
-???+ info "Available from Cognigy.AI Version 4.2.0"
+!!! note "Available from Cognigy.AI Version 4.2.0"
 
 **Description**
 
@@ -296,7 +296,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### ExecutedSteps
 
-???+ info "Available from Cognigy.AI Version 4.2.0"
+!!! note "Available from Cognigy.AI Version 4.2.0"
     
 
 **Description**
@@ -334,7 +334,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Sessions
 
-???+ info "Available from Cognigy.AI Version 4.41.0"
+!!! note "Available from Cognigy.AI Version 4.41.0"
 
 **Description**
 
@@ -371,10 +371,10 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotId          | ID of the snapshot                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
 | snapshotName        | Name of the snapshot                             | String   | Bot Release 2.2                                                                |
 
-???+ info "Building Visualizations with Steps Records"
+!!! note "Building Visualizations with Steps Records"
     The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
 
-???+ info "Why is the Analytics Step label not used?"
+!!! note "Why is the Analytics Step label not used?"
     The analytics step label can be updated from the Cognigy user interface at any time. Therefore, in order to make all previous data records compatible with future records, the entityReferenceId is used. The entityReferenceID is either the Node ID or Intent ID which has been assigned as an analytics step. The current analytics label of the step can be retrieved by mapping the entityReferenceID to the `/Steps` record.
 
 ## Integrations
@@ -391,7 +391,7 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
 
 ### Tableau
 
-???+ danger "Incompatible OData Version"
+!!! danger "Incompatible OData Version"
     At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
 
 The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).

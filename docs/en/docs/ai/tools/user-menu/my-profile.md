@@ -34,7 +34,7 @@ API Keys can also be revoked by clicking the menu icon to the right of the key a
 
 A user may wish to have only one key for all external applications, however a more typical and secure approach is to create a new key for each application. This way, if the integration needs to be disabled, this can be achieved by revoking the associated API key.
 
-???+ success "Tip: Click to Copy API Key"
+!!! tip "Tip: Click to Copy API Key"
     The API Key is automatically selected and copied when clicked. This means that you don't have to select the whole key.
 
 #### Connected Accounts

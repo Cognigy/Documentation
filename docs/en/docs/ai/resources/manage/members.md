@@ -20,7 +20,7 @@ In addition to global roles, Cognigy.AI offers Agent-specific roles which can be
   <img class="image-center" src="{{config.site_url}}ai/resources/images/508a047-members2.png" width="100%" />
 </figure>
 
-???+ info "Project Member Administration"
+!!! note "Project Member Administration"
     A user profile requires the "Project Admin" role to be able to make changes to any user access for that specific agent. This will automatically be assigned to any user who creates a new agent.
 
 The **Project Roles** available to chose from are listed below:
@@ -61,7 +61,7 @@ The **Project Roles** available to chose from are listed below:
 | Token Admin            | Adds the following permissions: <br> - full permissions for Tokens                                                                                                                                                                                                                                                          |
 | Token Editor           | Adds the following permissions: <br> - Read/Update permissions for Tokens                                                                                                                                                                                                                                                   |
 
-???+ info "API Access"
+!!! note "API Access"
     The same rights that control access to elements of the user interface also control access to the respective aspects of the API.
 
 ## Locale Restrictions

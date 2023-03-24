@@ -27,10 +27,10 @@ If there is a Channel-specific configuration for the current Channel, this confi
 </figure>
 
 
-???+ success "Automatic Conversion to Channel Specific Output"
+!!! tip "Automatic Conversion to Channel Specific Output"
     In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Please check the specific Output Type above to verify channel support.
 
-???+ warning "Fallback Text"
+!!! warning "Fallback Text"
     In case the automatic conversion to channel specific output cannot take place, the Fallback Text will be triggered.
 
 ## Output Types
@@ -45,7 +45,7 @@ The AI Channel allows for the configuration of different **Output Types**. Not a
 
 The **Text** Output Type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript]({{config.site_url}}/ai/tools/cognigy-script/) and [Tokens]({{config.site_url}}/ai/resources/manage/tokens/) that can be added by clicking the **AI** button at the end of each field.
 
-???+ success "Channel Support"
+!!! tip "Channel Support"
     The **Text** Output Type is currently converted to compatible output on all channels. Please keep in mind that **emojis** may not render properly on all channels.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9f49b00-OutputTypeText.jpg" width="100%" />
@@ -53,7 +53,7 @@ The **Text** Output Type renders text and emojis (if supported by the channel). 
 
 Multiple text messages can be added for conversational variation. When multiple text messages are configured, the delivery order is controlled by the *linear* and *loop* settings available in the ***options*** dropdown menu.
 
-???+ warning "Using Multiple Text Outputs"
+!!! warning "Using Multiple Text Outputs"
     By configuring multiple messages in a text say node, only one message will be delivered per activation of the node. An additional say node must be configured in order to send two text messages at once.
 
 #### Text Options
@@ -69,7 +69,7 @@ When sending simple text output, Cognigy.AI dialog nodes provide options for con
 | Loop      | toggle | If `linear` is set, the order restarts at the first text response after reaching the end. Otherwise the last text option will be repeatedly used, once reached. |
 | Data      | JSON   | The data you want to send to the client                                                                                                                         |
 
-???+ info "Linear and Loop"
+!!! note "Linear and Loop"
     There are three different combinations of applying the Linear and Loop toggles, each providing a different behavior style for the order in which messages are delivered on future activation of the same node. The three combinations are:
 
     * Random (for example, 4, 2, 5, 4, 4, 2, 5, 1, ...)
@@ -102,7 +102,7 @@ When this option is configured, clicking the Quick Reply will try to open the ph
 The Trigger Intent feature allows you to manually trigger an Intent by writing cIntent:, followed by the desired intent name in your text input, the regular Intent mapping will be ignored.
 More information see [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/)
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **Text with Quick Replies** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Google Actions**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### Gallery
 
@@ -118,7 +118,7 @@ A gallery can be configured with a number of cards. A card contains an image, a 
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/cd2a3a1-SAY_gallery_cards_1.PNG" width="75%" />
 </figure>
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **Gallery** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### Text with Buttons
 <figure>
@@ -131,7 +131,7 @@ A gallery can be configured with a number of cards. A card contains an image, a 
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6554383-textbuttons.PNG" width="75%" />
 </figure>
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **Text with Buttons** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Google Actions**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### List
 <figure>
@@ -146,7 +146,7 @@ A gallery can be configured with a number of cards. A card contains an image, a 
 
 The first list item can optionally be converted to a header item that houses the list title, subtitle and button. Each additional list item can have a title, subtitle, image and button added. The list can also have a button added at the bottom.
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **List** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Azure Bot Services**, **RingCentral Engage**, **UserLike** and **Line**.
 ### Audio
 <figure>
@@ -159,7 +159,7 @@ The **Audio Output Type** can render audio output in case this is supported by t
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/86d62bf-audio.jpg" width="100%" />
 </figure>
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **Audio** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
 ### Image
 <figure>
@@ -172,7 +172,7 @@ Image Output Types display an image in a similar fashion to the gallery. The ima
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c8fd6f9-Output_Type_image.svg" width="100%" />
 </figure>
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **Image** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
 ### Video
 <figure>
@@ -185,12 +185,12 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f71165b-Output_Type_video.svg" width="100%" />
 </figure>
 
-???+ warning "Channel Support"
+!!! warning "Channel Support"
     The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
     
     **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, Youtube links might not work).
 
-???+ info "CognigyScript"
+!!! note "CognigyScript"
     Any text field in the say node supports the use of **CognigyScript**. 
     
     For detailed instructions, read the Chapter on [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
@@ -288,14 +288,14 @@ Defines what an Amazon Echo enabled system will say as an answer.
 
 In addition to regular text output, Alexa supports SSML which enables the admin to define the way the output is pronounced.
 
-???+ warning "Multiple voice outputs"
+!!! warning "Multiple voice outputs"
     If more than one Say Node is hit in one Flow execution using the Alexa Channel, each Say Nodes' SSML (or text) outputs will be concatenated and sent as one large SSML statement.
 
-???+ info "CognigyScript in SSML"
+!!! note "CognigyScript in SSML"
     You can also use CognigyScript expressions within SSML parameters.
 ### Home Cards
 
-???+ warning "Multiple Cards"
+!!! warning "Multiple Cards"
     If more than one Card is being output during one Flow execution, only the last one will be sent.
 
 Defines an optional additional Card that is available to the user through a connected Alexa app. They can be used to provide additional information that is not perceptible without a screen.
@@ -307,8 +307,7 @@ The following Card Templates are available:
 - Link Account
 ### Display Templates for Echo Show
 
-???+ warning "Multiple Displays"
-    If more than one Display configuration is being output during one Flow execution, only the last one will be sent.
+If more than one Display configuration is being output during one Flow execution, only the last one will be sent.
 
 Defines content that will be shown on Amazon Echo Show devices.
 
@@ -343,10 +342,10 @@ The following Facebook Messenger Templates are available:
 - Attachment
 - List
 
-???+ success "Output any Facebook JSON"
+!!! tip "Output any Facebook JSON"
     Instead of using the UI functions provided by Cognigy, you can also output arbitrary JSON by selecting **Custom JSON** as the Type. This lets you see the JSON you compiled through Cognigy and modify it or add to it.
 
-???+ success "Using Code Nodes to output Facebook Markup"
+!!! tip "Using Code Nodes to output Facebook Markup"
     You can use the output action in Code Nodes to send JSON directly to Facebook. To do that, set the following code as the data property:
 
     ```JSON
@@ -363,7 +362,7 @@ The following Facebook Messenger Templates are available:
 
     See more under [Code Nodes]({{config.site_url}}ai/flow-nodes/code/code/)
 
-???+ danger "Location Button Deprecation"
+!!! danger "Location Button Deprecation"
     The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Please remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
 ## Google
 <div class="divider"></div>
@@ -379,7 +378,7 @@ If you want to output a card, list, ssml or any other advanced options on the Go
 
 This toggle defines whether the session should be kept open or whether it should end after this output. This should be turned off when you wish to end the conversations and turned on otherwise
 
-???+ warning "Multiple Keep Session Open Values"
+!!! warning "Multiple Keep Session Open Values"
     If more than one Say Node is hit during Flow Execution, then the Keep Session Open value of the last output is used
 ### SSML editor
 
@@ -390,10 +389,10 @@ With our **Google Actions SSML Editor** you're able to build your Google Assista
   <figcaption>SSML Markup Templates</figcaption>
 </figure>
 
-???+ warning "Multiple Voice Outputs"
+!!! warning "Multiple Voice Outputs"
     If more than one Say Node is hit in one Flow execution using the Google Channel, each Say Nodes' SSML (or text) outputs will be concatenated and sent as one large SSML statement.
 
-???+ info "Simple Response Text"
+!!! note "Simple Response Text"
     Instead of writing SSML in the SSML editor, you can also enter your text in the default tab. As long as there is no content in the Google Actions SSML editor, the text from the default tab text field will be used.
 
 For further details see the [Google Actions Documentation](https://developers.google.com/actions/reference/ssml)
@@ -448,7 +447,7 @@ For further details see the [Google Actions Documentation](https://developers.go
   </tr>
 </table>
 
-???+ warning "Multiple Rich Responses"
+!!! warning "Multiple Rich Responses"
     If more than one Rich Response is being output during one Flow execution, only the last one will be sent.
 
 For details and requirements see the [Google Actions Documentation](https://developers.google.com/assistant/conversational/df-asdk/rich-responses)
@@ -456,7 +455,7 @@ For details and requirements see the [Google Actions Documentation](https://deve
 
 A suggestion/chip is used to point the conversation to a defined direction.
 
-???+ warning "Multiple Suggestions"
+!!! warning "Multiple Suggestions"
     If more than one output contains Suggestions during one Flow execution, only the last one will be sent.
 #### Limitations
 - you can add a **maximum of 8 chips** to a response
@@ -506,7 +505,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 | Text  | A simple text message.                                                                                                                                                                                         |
 | TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
 
-???+ warning "Validate your TwiML"
+!!! warning "Validate your TwiML"
     Please make sure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
@@ -528,7 +527,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 | Text  | A simple text message.                                                                                                                    |
 | TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
 
-???+ warning "Validate your TwiML"
+!!! warning "Validate your TwiML"
     Please make sure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
@@ -539,7 +538,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/892e801-teams.jpg" width="100%" />
 </figure>
 
-???+ info "Teams Cards"
+!!! note "Teams Cards"
     Structured content in Microsoft Teams is sent as so-called Cards. Please refer to our [Deployment a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
 <!-- need to change the link above  -->
 
@@ -550,7 +549,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 | Text | A simple text message.                                                                                                                                                                                                                                                         |
 | JSON | Can contain valid JSON in the Bot Framework / Microsoft Teams format. See the [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
 
-???+ warning "Multiple Flow Outputs"
+!!! warning "Multiple Flow Outputs"
     If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>

@@ -23,7 +23,7 @@ An example sentence with ***Any Slot*** "movie_title" such as...
 
 Any input content that matches the pattern of an *Any Slot* in your example sentences exactly will be populated as a new Cognigy Slot. The result will be the same as if you had populated a Lexicon with the tag of your placeholder *Any Slot* and a keyphrase identical to the matched user input.
 
-???+ info "Limitations"
+!!! note "Limitations"
     - Works best when only a single word is annotated
     - Up to 4 different *Any Slots* per sentence
     - Up to 500 example sentences with *Any Slots* per Flow
