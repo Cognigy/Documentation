@@ -77,17 +77,17 @@ When the call is ongoing, you will be able to see how long the call is currently
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-The **Live Follow** input mode helps observe a conversation between a virtual agent and a user in real-time.
-You can debug a Flow when you have already set up an Endpoint for the Flow.
+The **Live Follow** input mode helps observe a conversation between a virtual agent and a user in real time.
+You can debug a Flow when you have already set up an Endpoint for this Flow.
 
 To use and test this mode, follow these steps:
 
 1. Go to **Test > Logs**.
-2. On the **Logs** page, find `userID` in the `info Received message from user` log. If you do not see this type of log, navigate to the channel chat that you created via the Endpoint (such as Webchat, Teams, Slack). Send a message to this chat, then go the logs. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
-3. Copy `userID`.
-4. Go to the Flow editor, open the Interaction panel.
+2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
+3. Copy `userId`.
+4. Go to the Flow editor, and open the Interaction panel.
 5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
-6. Paste `userID` into the **User ID** field.
+6. Paste `userId` into the **User ID** field.
 7. To start live following, click ![start-live-following](../../../assets/icons/start-live-following.svg).
 
 Now you can view and track the user's real-time conversation from your Interaction Panel. To terminate live following, click **Stop Live Following**.
