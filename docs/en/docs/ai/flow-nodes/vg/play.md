@@ -21,5 +21,5 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 | Set Activity Parameters | Toggle        | Option to add parameters which will be valid for this activity only |
 
 
-???+ info "This Node supports Activity Parameters"
+!!! note "This Node supports Activity Parameters"
     You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.

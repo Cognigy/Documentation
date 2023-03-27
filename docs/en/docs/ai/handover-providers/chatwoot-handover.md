@@ -15,7 +15,7 @@ Cognigy has integrated **"Chatwoot"** as an additional handover provider that ca
 <div class="divider"></div>
 To start using Chatwoot as a handover provider with Cognigy.AI, you first have to sign in to Chatwoot here: https://www.chatwoot.com.
 
-???+ info "Running Chatwoot On-Premise"
+!!! note "Running Chatwoot On-Premise"
     You can also set up Chatwoot to run on an On-Premise environment. You can read more about that <a href="https://www.chatwoot.com/docs/self-hosted" target="_blank">here</a>
 
 
@@ -43,7 +43,7 @@ You need to configure the webhook **Inbox** for incoming messages.
 
 The new channel will be added to the Chatwoot Inbox.
 
-???+ info "Note"
+!!! note "Note"
     You need two numbers that are listed in the Chatwoot address line:
 
     - **Account ID** (is unique for you as the user)
@@ -73,7 +73,7 @@ In the Handover Node in Cognigy.AI, you can specify to which Inbox you want the 
 
 You need to configure this by opening the Handover Node, opening the **Chatwoot Settings** menu, and filling in the Inbox ID.
 
-???+ info "Dynamically setting the Inbox ID"
+!!! note "Dynamically setting the Inbox ID"
     You can use CognigyScript to dynamically decide which Inbox should be used for the handover request
 
 <figure>
@@ -117,7 +117,7 @@ When you start a conversation with the Endpoint and trigger the Handover Node, t
 
 On the left-hand side the user messages are displayed - on the right-hand side the connected real agent replies are displayed in Chatwoot.
 
-???+ info "Note"
+!!! note "Note"
     When a User request is answered and solved by the agent, the agent can **"Resolve"** the connection and if a further request will come in from the user side the agent can **"Reopen"** the connection in Chatwoot to be able to reply to the request.
 
 ## Supported message content

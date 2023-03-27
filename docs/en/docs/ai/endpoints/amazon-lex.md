@@ -38,7 +38,7 @@ Find more about the generic Endpoint settings available for this Endpoint here:
 ### Reparse Alexa Slots
 Enable this toggle to allow the Slots found by Amazon Lex and transcript to be passed to Cognigy.AI and processed by the Cognigy NLU.
 
-???+ warning "Attention!"
+!!! warning
     The option to reparse slots is only available
     if the **Amazon Lex (Built-in)** NLU is selected.
 

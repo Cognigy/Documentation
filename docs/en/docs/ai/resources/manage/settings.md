@@ -60,7 +60,7 @@ Set the timezone that your virtual agent will operate in.
 
 When enabled, case sensitivity and punctuation will be taken into account by the intent mapper. Disable this setting to ignore casing and punctuation in ML intent mapping.
 
-???+ danger "English Support"
+!!! danger "English Support"
     Despite configurable in the agent's settings, this feature is not implemented for the regular English locales, i.e. US, Indian, UK, Canadian, and Australian English. However, you may use this feature using the "Universal" locale which also supports general English.
 
 ### Attached Flow Intent Mapping Priority
@@ -94,7 +94,7 @@ Score from which on an Intent is considered confirmed if a confirmation sentence
 
 Score from which on an Intent is considered confirmed or marked for reconfirmation if a reconfirmation sentence is set. Value between 0 and 1.
 
-???+ danger "Adjust the Reconfirmation Threshold"
+!!! danger "Adjust the Reconfirmation Threshold"
     The confidence threshold has **no effect unless the intent uses confirmation sentences**.
     The Reconfirmation Threshold is your lower confidence bound - you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
 

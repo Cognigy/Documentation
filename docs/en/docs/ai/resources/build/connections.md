@@ -11,5 +11,4 @@ Connections are encrypted credentials that can be used with [**Extensions**]({{c
   <img class="image-center" src="{{config.site_url}}ai/resources/images/5d8f15a-connections.jpg" width="100%" />
 </figure>
 
-???+ info "Want to learn how to use Connections?"
-    Head over to the Help Center tutorial: [**Add new features to your Virtual Agent by uploading and  activating Extensions**](https://support.cognigy.com/hc/en-us/articles/360016409380)
+To learn more about Connections, head over to the Help Center tutorial: [**Add new features to your Virtual Agent by uploading and  activating Extensions**](https://support.cognigy.com/hc/en-us/articles/360016409380)

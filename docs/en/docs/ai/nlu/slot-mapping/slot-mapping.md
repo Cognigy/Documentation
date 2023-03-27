@@ -14,7 +14,7 @@ There are two types of slots:
 - System-defined Slots
 - User-defined Slots (Lexicons / keyphrases) - see [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)
 
-???+ success "Tokenize Your Slots"
+!!! tip "Tokenize Your Slots"
     Create [Tokens]({{config.site_url}}ai/resources/manage/tokens/) for your slots so your can speed up the process of adding them to conversation logic and output fields.
 
 ## Accessing Slots via CognigyScript
@@ -182,7 +182,7 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
 ## Date formats
 ---
 
-???+ success "Time Zone & Date Slots"
+!!! tip "Time Zone & Date Slots"
     Detection of dates depends on the time zone set for the Agent (see [Settings]({{config.site_url}}ai/resources/manage/settings/)) or User (see [here]({{config.site_url}}ai/flow-nodes/code/actions/))
 
 The following tables provide an overview of supported input patterns and formats. 
@@ -202,10 +202,10 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 | Default (English UK, German, Universal etc.) | dd/mm/YYYY                                                                                         |
 | English US, Japanese, Chinese                | mm/dd/YYYY<br/><br/>Note if mm/dd/YYYY yields an illegal date the parser falls back to dd/mm/YYYY. |
 
-???+ warning "Future Dates Only"
+!!! warning "Future Dates Only"
     You can force the DATE slot to only detect dates in the future for relative expressions (e.g. "Monday", "Friday"). For more information, see the Code Node Action [setForwardDatesOnly]({{config.site_url}}ai/flow-nodes/code/actions/)
 
-???+ warning "Invalid DATES"
+!!! warning "Invalid DATES"
     Cognigy.AI checks the validity of provided dates, including leap years, etc. Invalid dates will not appear in the detected slots.
 
 ## User-defined Slots (Lexicons)
@@ -240,7 +240,7 @@ Keyphrases and Synonyms are detected in order of their word count, with the long
 
 If a Synonym is found, the returned Keyphrase is the Keyphrase the Synonym is mapped to, whilst the Synonym itself is recorded in a special `synonym` property of the result.
 
-???+ info "Example of how Slots are filled"
+!!! note "Example of how Slots are filled"
     If the user says *I love pizza pie*, the `slots` Input property will look like this:
 
 ```json
@@ -255,5 +255,5 @@ If a Synonym is found, the returned Keyphrase is the Keyphrase the Synonym is ma
 }
 ```
 
-???+ warning "Attach Lexicons to your flows"
+!!! warning "Attach Lexicons to your flows"
     Lexicons must be attached to NLU training data for the NLU model to recognize the keyphrases and synonyms that have been created. Find out more on the  [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/).

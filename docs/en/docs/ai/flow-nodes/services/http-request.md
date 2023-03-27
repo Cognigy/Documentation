@@ -51,7 +51,7 @@ The URL to the targeted resource: `https://api-endpoint.com/resource`.
   <figcaption>URL field</figcaption>
 </figure>
 
-???+ warning "URL-Encoding"
+!!! warning "URL-Encoding"
     Cognigy.AI expects an un-encoded URL to the targeted resource. Please decode any encoded URL to ensure that the HTTP Request can be executed successfully. 
 
     For more information see [URL encoding (on en:WP)](https://en.wikipedia.org/wiki/URL%20encoding).
@@ -172,7 +172,7 @@ The results of the GET request are stored in the context of the flow. You can re
 ## POST, PUT and PATCH Requests
 <div class="divider"></div>
 
-???+ info "Content-Type Headers"
+!!! note "Content-Type Headers"
     The standard Content-Type header is *application/x-www-form-urlencoded*. If you want to send another Content-Type, you have to set the header value specifically or use JSON as described below.
 
 ### Payload
@@ -185,7 +185,7 @@ Here you can define the payload of your POST, PUT or PATCH request. You can choo
 
 Payloads can be text, JSON, XML, Formdata (see below) or any other textual data.
 
-???+ success "application/x-www-form-urlencoded"
+!!! tip "application/x-www-form-urlencoded"
     You can send URL Encoded data by setting no specific header and then sending a URLEncoded non-JSON payload such as *"To=%2B49555262626&Url=https%3A%2F%2Fhandler.twilio.com%2Ftwiml%2FEHf9b7af093c31b5baa1414be891"*
 
 With Cognigy.AI 4.10.0 **Form-Data** as "Payload Type" has been added to the HTTP Node descriptor.
@@ -201,7 +201,7 @@ How to use it:
   <img class="image-center" src="{{config.site_url}}ai/images/HTTP request Node.png" width="80%" />
   <figcaption>HTTP Request Node editor</figcaption>
 </figure>
-???+ info "Note"
+!!! note "Note"
     The key-value pairs must be of type text. Data is not supported.
 
 When using the Interaction Panel you can inspect the response in the "Interaction Panel" INFO tab.

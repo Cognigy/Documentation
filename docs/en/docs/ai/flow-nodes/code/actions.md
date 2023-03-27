@@ -8,7 +8,7 @@
 <div class="divider"></div>
 Within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) you are able to use the functions of the **actions** / **api** class. 
 
-???+ info "Available in Extensions"
+!!! note "Available in Extensions"
     The following functions are available in Extensions as well. There, one can use the `api` object and, for example, execute an `api.say()`.
 
 ## Misc

@@ -29,7 +29,7 @@ Accessing the CognigyScript functionality differs between different types of arg
 
 Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{{"{{ }}"}}` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
 
-???+ info "Invalid expressions return an empty string"
+!!! note "Invalid expressions return an empty string"
     If the expression is invalid, an empty string is returned.
 
 *Example*
@@ -69,7 +69,7 @@ This would try to retrieve the orders Object from the Context and assign it to c
 
 Within conditions, CognigyScript is also written without `{{"{{ }}"}}` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
 
-???+ info "Example"
+!!! note "Example"
    `context.orders === 3` would be true, if the orders variable stored in the Context is 3.
 
 ## Code Nodes

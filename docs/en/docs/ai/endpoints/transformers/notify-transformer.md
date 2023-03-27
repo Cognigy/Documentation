@@ -18,7 +18,7 @@ The `Notify Transformer` is configured by implementing the ``handleNotify`` func
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/9352cbf-notify_transformer.png" width="100%" />
 </figure>
 
-???+ info "REST Transformer Support"
+!!! note "REST Transformer Support"
     The Notify Transformer is not supported for REST Based Endpoints.
 
 ## Transformer Function Arguments
@@ -41,7 +41,7 @@ The `Notify Transformer` has to return a valid user ID, session ID and text and/
 
 If the `Notify Transformer` returns a falsy value, then the message is never forwarded to the user.
 
-???+ warning "Return Value Validation"
+!!! warning "Return Value Validation"
     The return value of the `Notify Transformer` will be validated against a set of rules and rejected if the rules are not met. The rules are:
 
     - The user ID is required in the return value. It has a max length of 256 characters.

@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 Google actions only requires the **endpoint URL** from the Cognigy.AI endpoint, therefore there are no channel specific configuration settings required.
 
-???+ info "Help Center"
+!!! note "Help Center"
     More detailed information on how to set up a **Google Actions** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016203479).
 
 ## More information

@@ -49,21 +49,21 @@ Question Nodes have a Type which defined what kind of answer is required from th
 | Data        | Any data (input.data) input                                                                                                                                                                                                             |
 | Custom      | Any input                                                                                                                                                                                                                               |
 
-???+ warning "Regex"
+!!! warning "Regex"
     Please make sure that your regular expression starts with a **/** and ends with **/g**.
 
     Example:
 
     * /^1\d{​​​​7}​​​​$/g
 
-???+ info "Supported Data formats for System Defined slots"
+!!! note "Supported Data formats for System Defined slots"
     All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) page.
 ## Channels and Output types
 <div class="divider"></div>
 
 Question node output types carry the same functionality as the [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
 
-???+ success "Date Questions"
+!!! tip "Date Questions"
     In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Please refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
 ## Re-prompt Options
 
@@ -192,10 +192,10 @@ This setting determines how long a user can have been "away" from the Node after
 
 <div class="divider"></div>
 
-???+ warning "Question Nodes and Intent Execution"
+!!! warning "Question Nodes and Intent Execution"
     Question Nodes - by default - will be triggered again and again until a valid answer has been provided. In order to avoid this, you can opt for an [**Optional Question**]({{config.site_url}}ai/flow-nodes/message/optional-question/) or you can change the **Intent Execution** setting.
 
-???+ success "Slot Fillers"
+!!! tip "Slot Fillers"
     Questions can be combined with **Slot Fillers** to create a so-called "Missing Pattern". This mechanism keeps asking the user for the missing information in a very natural way, until all questions have been answered.
 ## Question Information in Input
 <div class="divider"></div>

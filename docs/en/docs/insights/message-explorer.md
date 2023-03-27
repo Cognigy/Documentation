@@ -31,7 +31,7 @@ Using the **"Negate "** slider bar "all but the selected" filter options will be
   <figcaption>Local filter for selecting message sources</figcaption>
 </figure>
 
-???+ warning "Note"
+!!! warning
     **Every change in filter settings needs to be confirmed with “Apply” to be active.**
 
 <figure>

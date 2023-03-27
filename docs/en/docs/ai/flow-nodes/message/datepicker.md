@@ -18,7 +18,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
 </figure>
 
-???+ success "Automatically Triggered by Question Nodes"
+!!! tip "Automatically Triggered by Question Nodes"
     The Datepicker is automatically triggered whenever a Question Node with **type "Date"** is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
 
 ## Properties

@@ -29,7 +29,7 @@ Once the search text is entered, all the Nodes that contain the search text will
   <figcaption>Chart Editor after searching for the term 'Welcome'</figcaption>
 </figure>
 
-???+ info "Tip: Toggle Search Icon"
+!!! note "Tip: Toggle Search Icon"
     In order to close the Node Search input field without resetting the search text, click on the *Search Icon* in the chart editor toolbar again. Doing this toggles the Node highlighting.
 
 Further, when a highlighted Node is opened, the field that has the match will have its label highlighted.
@@ -39,7 +39,7 @@ Further, when a highlighted Node is opened, the field that has the match will ha
   <figcaption>Say Node Editor after searching for the term 'Welcome'</figcaption>
 </figure>
 
-???+ info "*Section Label* and *Channel Tab* Highlighting"
+!!! note "*Section Label* and *Channel Tab* Highlighting"
 	[![Version badge](https://img.shields.io/badge/Added in-v4.18.0-blue.svg)]({{config.site_url}})
 
     When the field that has the match is inside a collapsable section, the label of the section will also be highlighted. Similarly, when the field that has a match is inside a Channel tab form of a node, the Channel tab icon will have its border highlighted (See Example 5 in [Examples]({{config.site_url}}ai/tools/node-search/#examples) section).

@@ -14,7 +14,7 @@
 
 An Optional Question Node is used to ask a question that requests specific information from the user. The Node can be configured to expect different types of input. As soon as the selected type of data is detected in the user input, the Optional Question Node is answered.
 
-???+ warning "Difference with Question Node"
+!!! warning "Difference with Question Node"
     The **Optional Question** Node is **non-blocking**. This means that the user will be able to continue their conversation with the Flow if they have not provided an answer to the Optional Question. Before regular Flow execution, the System will check if the User Input answers the Optional Question to find a result. If not, the flow execution will follow a different path.
 
 <blockquote class="callout callout_info" theme="📘">

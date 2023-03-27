@@ -57,7 +57,7 @@ analyticsdata.custom1 = "userFocusGroup: focusGroup1";
 analyticsdata.custom2 = JSON.stringify(customData);
 ``` 
 
-???+ warning "Max length of custom fields"
+!!! warning "Max length of custom fields"
     You can store a maximum of 512 characters as the value for each of the custom fields
 
 ## Analytics data life span

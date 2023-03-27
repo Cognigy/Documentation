@@ -20,5 +20,5 @@ The Copy Slots to Context Node is used to store a found Slot in a specific place
 | Mode      | Select        | Can be either ``simple`` or ``array``. If ``simple`` then only the last found Slot will be stored, and if the mode is ``array`` then all found Slots with the correct tag will be stored as an array.                                           |
 | UseNeg    | Toggle        | If `true`, then only positive Slots will be added to the Context. This means that in the sentence "I don't like pizza", "pizza" will not be stored in the Context because it is negated. If the toggle is `false`, then "pizza" will be stored. |
 
-???+ info "Handling Multiple Slots with Arrays"
+!!! note "Handling Multiple Slots with Arrays"
     Let's say you create a Copy Slots To Context Node with a ``key`` of "foods", a ``tag`` of "food", a ``mode`` of "array", and ``UseNeg`` as `false`. You then attach a Lexicon that has the Keyphrases "salad" and "pizza" with a Tag of "food". If a user then says "I want to order a pizza and a salad", then the Keyphrases "pizza" and "salad" will be stored in an array in the Context under the key "foods".

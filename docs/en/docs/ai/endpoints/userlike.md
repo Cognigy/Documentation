@@ -24,7 +24,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
 
-???+ info "Help Center"
+!!! note "Help Center"
     More detailed information on how to set up an **Userlike** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).
 
 ## Message types in Userlike unified messaging channels
@@ -43,7 +43,7 @@ The below message types will be properly displayed in the Userlike unified messa
 - Quick replies 
 - Image/Audio/Video 
 
-???+ note 
+!!! note 
     The Fallback Text is displayed for the Output Type "Gallery" and "List" as well as for invalid media formats for image/audio/video.
 
 

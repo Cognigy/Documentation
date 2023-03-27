@@ -63,7 +63,7 @@ The following hotkeys are valid for the Flow Editor.
   </tr>
 </table>
 
-???+ info "Clipboard Expiration Time"
+!!! note "Clipboard Expiration Time"
 The content stored in your clipboard will expire after 10 minutes and no longer be available.
 
 ## Interaction Panel

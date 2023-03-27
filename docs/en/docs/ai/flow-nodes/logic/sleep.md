@@ -14,5 +14,5 @@
 
 A Sleep Node is used to pause the execution of a Flow for a certain time.
 
-???+ info "Pause between Messages"
+!!! note "Pause between Messages"
     If your Flow returns multiple messages at once with much content (e.g. a query Flow), you can use a Sleep Node to set a pause between messages to simulate a more natural human-like response behavior.

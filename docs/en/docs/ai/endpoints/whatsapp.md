@@ -23,7 +23,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Channel Specific Settings
@@ -66,7 +66,7 @@ App Secret is an optional field. This field will be used to add an extra securit
 The amount of time to wait between sending bot replies. Measured in milliseconds.
 
 
-???+ info "Help Center"
+!!! note "Help Center"
     For more information on how to configure the **Access Token**, **Phone Number**, **App ID** and **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/5326220817948).
 
 

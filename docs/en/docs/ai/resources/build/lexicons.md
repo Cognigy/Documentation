@@ -11,7 +11,7 @@
   <img class="image-center" src="{{config.site_url}}ai/resources/images/c95b04b-lexicon-small.jpg" width="100%" />
 </figure>
 
-???+ info "Want to learn how to use a Lexicon?"
+!!! note "Want to learn how to use a Lexicon?"
     Have a look at the [**Match user expressions with a Lexicon**](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) guide in the Help Center. 
 
 ## Managing Keyphrases
@@ -47,10 +47,10 @@ You can search through your Keyphrases via the search bar in the top right corne
 ### Pages
 At the bottom, you can navigate to different pages and toggle the amount of Keyphrases you wish to show per page. This is quite handy when your Lexicons start to grow and have dozens of entries - just switch to a smaller page-size on smaller screens or increase the limit of entries on a page for large monitor usage.
 
-???+ warning "Attach your Lexicons"
+!!! warning "Attach your Lexicons"
     Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specific flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/) for more information.
 
-???+ success "Access slots in your Flow"
+!!! tip "Access slots in your Flow"
     Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
 
 ## Importing & Exporting Lexicons
@@ -89,7 +89,7 @@ Keyphrase2,"tag,tag2","synonym2,synonym2_2","{""key2"":""value""}"
 Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""}"
 ```
 
-???+ warning "UTF-8 Encoding"
+!!! warning "UTF-8 Encoding"
     In order to avoid any issues with special characters, make sure your CSV files are UTF-8 encoded.
 
 
@@ -109,7 +109,7 @@ Cognigy.AI features built-in Slot detection for a broad range common data types.
 | Email       |
 | Percentage  |
 
-???+ info "Built in Slot Details"
+!!! note "Built in Slot Details"
     Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
 
 

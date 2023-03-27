@@ -11,7 +11,7 @@ Flow functionality is shared between Flows by making their [Intents]({{config.si
 
 In order to attach a flow, the Flow with the shared functionality must first be written to populate the **Attached Flows** list.
 
-???+ success "Build and refactor Flows in a modular fashion"
+!!! tip "Build and refactor Flows in a modular fashion"
     As a best practice we recommend to keep your Flow size small. Refactor often and use a modular approach for clear, maintainable and effective Flows.
 
     Note you can copy, cut & paste nodes and sub-trees also between Flows. Making it easy to, for example, cut sub-trees from a large Flow and distribute the logic to smaller attached Flows.
@@ -20,7 +20,7 @@ In order to attach a flow, the Flow with the shared functionality must first be 
 <div class="divider"></div>
 As described above, the Intents of the Attached Flow are added to the list of Intents on the Main Flow. Then, during Intent mapping, the attached *Intents* are scored together with the Main Intents.
 
-???+ warning "Beware of Overlapping Intents"
+!!! warning "Beware of Overlapping Intents"
     Cognigy small-talk Flows, and any other Attached Flow, may contain Overlapping Intents. You must ensure Intents across all attached Flows are distinct.
 
 The order in which the Intents are scored is determined by the `Map global Intents first` setting in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/) .
@@ -50,7 +50,7 @@ Flows are attached by clicking the flow in the list which enables the attachment
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/50c1363-attachflows.PNG" width="100%" />
 </figure>
 
-???+ warning "Train Intents when Attaching"
+!!! warning "Train Intents when Attaching"
     The NLU must be re-trained anytime a new flow or lexicon is attached.
 
 ### Sorting Flow Intent Mapping

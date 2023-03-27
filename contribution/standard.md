@@ -147,7 +147,7 @@ All images should be:
 </figure>
 `````
 
-???+ info "Image without any caption"
+!!! note "Image without any caption"
     Remove ````<figcaption>Image caption</figcaption>```` from the image reference in HTML to have an image without any caption.
 
 ### Image positioning
@@ -211,7 +211,7 @@ You can combine multiple classes by separating them with spaces ```class="image-
   <img class="image-center" src="./docs/en/docs/assets/img/template language.png" width="100%" />
 </figure>
 
-???+ warning "Make sure to:"
+!!! warning "Make sure to:"
     - Have H1 (#) heading in every document
     - Not rename markdown files
     - Adjust meta data in the beginning of the Markdown file

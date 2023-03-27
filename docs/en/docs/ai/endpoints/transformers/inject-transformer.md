@@ -17,7 +17,7 @@ The `Inject Transformer` is configured by implementing the ``handleInject`` func
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/86f34e4-inject_transformer.png" width="100%" />
 </figure>
 
-???+ warning "REST Transformer Support"
+!!! warning "REST Transformer Support"
     The Inject Transformer is not supported for REST Based Endpoints.
 
 ## Transformer Function Arguments
@@ -40,7 +40,7 @@ The `Inject Transformer` has to return a valid user ID, session ID and text and/
 
 If the `Inject Transformer` returns a falsy value, then the message is never forwarded to the user.
 
-???+ warning "Return Value Validation"
+!!! warning "Return Value Validation"
     The return value of the `Inject Transformer` will be validated against a set of rules and rejected if the rules are not met. The rules are:
 
     - The user ID is required in the return value. It has a max length of 256 characters.

@@ -28,7 +28,7 @@ To remove a Node you can either delete or cut it. If you choose to cut the Node,
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9fdb2b4-node-cut.jpg" width="100%" />
 </figure>
 
-???+ info "Flow Editor Hotkeys"
+!!! note "Flow Editor Hotkeys"
     For a full list of flow editor keyboard shortcuts, see the [Hotkeys Page]({{config.site_url}}ai/tools/hotkeys/).
 ## Copy a Node
 <div class="divider"></div>
@@ -38,7 +38,7 @@ You can copy a Node with the corresponding menu option. This also copies all chi
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c032451-node-copy-paste.jpg" width="100%" />
 </figure>
 
-???+ info "Drag & Drop"
+!!! note "Drag & Drop"
     The flow editor supports drag and drop within the flow editor. To copy a node, simply hold the **alt** key while dropping the node to the required location.
 ## Add Comment
 
@@ -69,7 +69,7 @@ Any flow node can be added as an entrypoint for the flow. This means that a [Go 
 
 Any other node can be manually assigned as a flow entrypoint by opening the node editing menu and selecting the three dot menu from the top right hand corner. The option to "Set Entrypoint" can be selected which will add this node to the list of available entrypoints.
 
-???+ info "Naming Entrypoints"
+!!! note "Naming Entrypoints"
     It is helpful to define unique names for each entry point node using the [label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) feature. This means that users will be able to easily differentiate when selecting them from a list of options. For example, all Question nodes will be called "Question" unless the label is manually adjusted.
 
 ## Warning

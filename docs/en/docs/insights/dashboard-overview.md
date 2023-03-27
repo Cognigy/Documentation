@@ -20,10 +20,10 @@ The currently selected dashboard is displayed next to the agent in the top left 
 
 The dashboard overview page contains various metrics displayed as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts.
 
-???+ info "Note"
+!!! note
     **All data displayed in the charts relate to the global filter settings. You can configure global filter settings as described here: [Global filter options]({{config.site_url}}insights/cognigy-insights/)**
 
-???+ info "Note"
+!!! note
     **When hovering any chart or metrics field, rating details will be displayed in a tooltip.**
 
 <figure>
@@ -38,7 +38,7 @@ When hovering the line chart, details as for example the rated month, the year a
 - as a metrics caption: the numerical information is abbreviated (for example, ms for milliseconds, 1K for a thousand, 1M for a million, etc.).
 - as a tooltip that appears when you move the mouse pointer over it: It displays the data as unabbreviated numeric values.
 
-???+ info "Note"
+!!! note
     **The on top of the dashboard placed blue tiles show currently valid data in a "live" mode. That means that data will be refreshed every 30 seconds to be updated.**
 <div id="overview"></div>
 

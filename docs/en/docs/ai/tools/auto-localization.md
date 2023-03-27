@@ -41,7 +41,7 @@ These providers can be selected in the "Agent Settings" and provide the followin
 - Translation can be supervised or on autopilot
 - Translation is Voice-ready-all modalities are supported 
 
-???+ success "Advanced Translation"
+!!! tip "Advanced Translation"
     **In contrast to cost-intensive manual translation, Cognigy multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.**
 
 ### Use Case for Translation
@@ -81,7 +81,7 @@ The Localization view allows for the configuration of any number of localization
 
 **You need to localize the Node settings manually using the Node editor.**
 
-???+ info "Node Localization"
+!!! note "Node Localization"
     To localize Nodes in your Flow see details here: [Localization]({{config.site_url}}ai/resources/manage/localization/)
 
 ## Machine Translation of Nodes and Intents
@@ -116,7 +116,7 @@ As soon as you have configured a translation provider you will get extra configu
 
 - Optionally define "**Custom API Base URL**".
 
-???+ info "Translation Settings"
+!!! note "Translation Settings"
     **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
 
 # Localization of Nodes
@@ -157,7 +157,7 @@ As soon as you have configured a translation provider you will get extra configu
   <figcaption>Flow Nodes automatically translated</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     **You can configure the machine translation settings for all types of "Say Nodes" and "Question Nodes" in the same way.**
     **You can localize Intents as well using machine translation and all the example sentences will be translated automatically.**
 

@@ -17,7 +17,7 @@ You either can create a Package for a single resource, or multiple resources.
 
 Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connections, NLU Connectors,…
 
-???+ info "What resources can be Exported in a Package?"
+!!! note "What resources can be Exported in a Package?"
     The following agent resources can be included in a Package:
 
     * [Flows]({{config.site_url}}ai/resources/build/flows/) 
@@ -110,6 +110,6 @@ Once you have selected a conflict resolution strategy, click on **"Import"** in 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/7478741-Conflict_Import_handling.png" width="100%" />
 </figure>
 
-???+ warning "Using Packages As Templates: Node IDs and Importing Packages"
+!!! warning "Using Packages As Templates: Node IDs and Importing Packages"
     Node IDs will not change on import, to ensure that hardcoded links between Flows and Nodes do not break.
     If you need to import a Flow multiple times to the same Project, you can delete and recreate a Node to prevent ID conflicts.

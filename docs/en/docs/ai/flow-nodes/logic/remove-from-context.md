@@ -20,5 +20,5 @@ A **Remove from Context Node** is used to remove information from the Cognigy [C
 | Value     | Cognigy Text | The value to remove from the array if Mode = Array is chosen                                          |
 | Mode      | Select       | - Simple removes the key completely<br>- Array removes the value from the array stored at context.key |
 
-???+ info "Storing an Object"
+!!! note "Storing an Object"
     If you want to store an object in the context, use `.preserveType()` at the end in order to keep it an object. Example: `input.slots.city[0].preserveType()` would store the full slot object for the first found city entity in the context.

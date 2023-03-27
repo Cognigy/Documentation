@@ -18,7 +18,7 @@ For every Webchat Endpoint you create, there will be an integrated Demo Page for
 The Webchat Demo Page will show a Website containing a Webchat pointing to the Webchat Endpoint you came from. The Webchat will look and behave as configured in the Webchat settings within the Endpoint.
 
 
-???+ info "Manually defining the user ID"
+!!! note "Manually defining the user ID"
     When you load the Webchat, we will per default create a random user ID and store this in local storage, so that you have the same user next time you use the Webchat. However, sometimes it can be beneficial to manually specify a user ID. You can do this by adding ?user=<some id> to the Webchat URL.
 
 ## Demo Page Settings
@@ -44,7 +44,7 @@ For Cognigy-hosted Webchats (the ones directly accessible from the Endpoint conf
 You can find the "Webchat Plugins" section at the bottom of your Webchat configuration. By clicking `+`, you can add a new Plugin URL.
 When the hosted Webchat page is being loaded, it will load the additional Plugin before starting the Webchat.
 
-???+ warning "Inserting wrong Plugin urls"
+!!! warning "Inserting wrong Plugin urls"
     When you add a Plugin URL that loads an incorrect or corrupted Plugin file, the Webchat may not start up correctly.
 
 <figure>

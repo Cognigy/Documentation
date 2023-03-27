@@ -20,20 +20,20 @@ The Step Explorer allows to explore conversational steps and can show how these 
 
 When the Step Explorer is selected, the agent name is displayed in the top left corner. Insights processes the current Agent's data and the Step Explorer report displays the data-related analytic graphs. If multiple agents are available in Cognigy.AI, you can select them here in a drop-down menu to analyze each of them.
 
-???+ info "Note"
+!!! note
     **When switching between your Virtual Agent in Cognigy.AI to Cognigy Insights all filters are set in the way that you see the data concerning the active Agent. You can see how this Agent performs over a time period.** 
     **To switch between Cognigy.AI and the Cognigy Insights application click on the correspondent  "Insights" menu point in your user menu.**
 
 ## Filter options
 <div class="divider"></div>
 
-???+ warning "Note"
+!!! warning
     **Every change in filter settings needs to be confirmed with “Apply” to be active.**
 
 **Local filter options**
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     The local filter options at the top are specific to the Step Explorer.
 
 **Starting Step**
@@ -45,7 +45,7 @@ Conversational [steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/
   <figcaption>Local filter "Starting Step"</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     Additionally, you can right-click on a Step and choose "Select as starting step" from the context menu.
 
 **Direction**
@@ -61,7 +61,7 @@ If you apply the backward direction, the step report starts at the last step (fr
 
 **Global filter options**
 <div class="divider"></div>
-???+ info "Note"
+!!! note
     The global filter options at the bottom apply to all applications running in Cognigy Insights.
     More information about global filters you can find here: [Global Filter]({{config.site_url}}insights/global-filter/).
 
@@ -78,7 +78,7 @@ When you want to annotate for example a Say Node which starts a customer convers
 
 The more Flow Nodes you name with annotations in the “Analytics step” sections, the more fine graduation you will get with the Step Explorer data display.
 
-???+ danger "Note"
+!!! danger
     The Step Explorer absolutely requires defined annotations for the evaluation and display of analytics data.
 
 The Step Explorer provides the following advantages:
@@ -116,7 +116,7 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
 
 89% of users who needed an explanation completed the booking.
 
-???+ info "Note"
+!!! note
     **The red marked areas of a step represent the number of users who dropped off at that point. 
     You may take an early "drop off" in a conversation to improve your Agent and to inspect with our [Message Explorer]({{config.site_url}}insights/message-explorer/) what did the Virtual Agent say before the user dropped off.**
 
@@ -158,7 +158,7 @@ ____________________________________________________________
 
 100% of the users who completed a booking dropped off.
 
-???+ info "Note"
+!!! note
     The rated value of a conversation step relates directly to the previous step value before.
 
 <figure>
@@ -184,7 +184,7 @@ The Step Explorer found 2,368 as a total number of completed bookings.
 ### Open Flow 
 To check your Flow or to improve the configuration the Step Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific step, for example "Make an Appointment". Clicking the button leads you to the Flow in Cognigy.AI.
 
-???+ info "Note"
+!!! note
     The context menu "Open Flow" is not available on "drop off" steps or collapsed steps (steps with arrows). 
     The "Open Flow" option is not available when there is no related Flow available in Cognigy. AI or when the Step Explorer visualizes steps of a Snapshot.
 

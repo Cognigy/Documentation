@@ -105,7 +105,7 @@ This call, for example, is used by the frontend when you load the "Projects" pag
 
 Most of the APIs in Cognigy.AI are agent-bound, meaning that a developer using our API can only request information from agents he actually has access to. There are certain use-cases where e.g. all Flows within a certain Organization should be listed. For such use-cases, we have introduced a feature called the "Super API-Key" with our 4.1.4 release.
 
-???+ warning "Feature availability"
+!!! warning "Feature availability"
     This feature is only available for on-premise customers with separate Cognigy.AI installations!
 
 This feature is, by default, disabled in all Cognigy.AI installations. Our on-premise customers can activate this feature by setting the following environment variable to "true":
@@ -120,5 +120,5 @@ https://api-trial.cognigy.ai/openapi#post-/management/v2.0/organisations/{organi
 
 This API-key is not bound to a specific user and lives within the scope of an Organization. It can be used to manipulate all assets and objects within the system.
 
-???+ info "Super API-Key and TTL"
+!!! note "Super API-Key and TTL"
     Please note that this API-key has a default TTL (=Time to life) of 15 minutes for security reasons. Once the key has been created, it will only be valid for 15 minutes.

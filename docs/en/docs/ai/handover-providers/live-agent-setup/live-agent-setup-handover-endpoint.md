@@ -29,7 +29,7 @@ To use this feature you need to:
   <figcaption>Autoconfigure Live Agent Handover Settings</figcaption>
 </figure>
 
-???+ info "Use Autoconfigure feature in your own Cognigy Installation"
+!!! note "Use Autoconfigure feature in your own Cognigy Installation"
     To use this feature these environment variables must be set in your Cognigy.AI installation:
     ```
     FEATURE_USE_COGNIGY_LIVE_AGENT: true
