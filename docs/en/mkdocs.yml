@@ -497,6 +497,8 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+  - Reference:
+    - voicegateway/references/events.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
