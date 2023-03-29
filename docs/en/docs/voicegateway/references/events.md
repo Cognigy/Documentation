@@ -16,6 +16,6 @@ During the call, the following voice events are recorded in the payload:
 | RECOGNIZED_DTMF    | The DTMF code was recognized by the virtual agent.                      |
 | CALL_CREATED       | The user created a call.                                                |
 | CALL_RECONNECTED   | The call was reconnected due to network problems.                       |
-| CALL_COMPLETED     | The user completed or terminated a call.                                |
+| CALL_COMPLETED     | The call was terminated by the virtual agent or by the user.            |
 | CALL_FAILED        | The call was terminated.                                                |
 | USER_INPUT_TIMEOUT | The virtual agent terminated the call because the user did not respond. |
