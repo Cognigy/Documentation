@@ -565,6 +565,7 @@ To activate a Voice Gateway channel:
 
 Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../vg/parameter-details.md).
 These configurations are also available in the following Nodes:
+
 - [Question](question.md)
 - [Optional Question](optional-question.md)
 - [Set Session Config](../vg/set-session-config.md)
