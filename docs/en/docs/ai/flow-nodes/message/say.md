@@ -551,6 +551,26 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 
 !!! warning "Multiple Flow Outputs"
     If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
+
+
+## Voice Gateway
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/release-notes.md)
+
+To activate a Voice Gateway channel:
+
+1. Go to the **Edit Node** page and click **+**.
+2. From the list, select **Voice Gateway**.
+3. In the **Text** field, add SSML markup to adjust the virtual agent's output speech.
+
+Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../vg/parameter-details.md).
+These configurations are also available in the following Nodes:
+- [Question](question.md)
+- [Optional Question](optional-question.md)
+- [Set Session Config](../vg/set-session-config.md)
+- [Play](../vg/play.md)
+- [Session Speech Parameters Config](../generic-voice-nodes/session-speech-parameters-config.md)
+
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>
 
