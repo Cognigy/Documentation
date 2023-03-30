@@ -93,15 +93,20 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 JSON example:
 
 ```json
-{ 
- "synthesizer": {
-  "voice": "Jenny"
- },
- "recognizer": {
-  "vendor": "google",
-  "language": "de-DE",
-  "hints": ["help", "skip", "confirm"],
-  "hintBoost": 20
- }
+{
+  "synthesizer": {
+    "vendor": "microsoft",
+    "language": "de-DE""voice": "en-US-JennyNeural"
+  },
+  "recognizer": {
+    "vendor": "google",
+    "language": "de-DE",
+    "hints": [
+      "help",
+      "skip",
+      "confirm"
+    ],
+    "hintBoost": 20
+  }
 }
 ```
