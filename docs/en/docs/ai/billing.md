@@ -55,9 +55,13 @@ Contact your administrator if you want to change this time zone setting.
 
 A user sent more than 50 messages during the conversation over two calendar days.
 
-Example: 78 user inputs.
+Example 1: 78 user inputs -> 49 before midnight and 29 after midnight. 
 
-Billing: It will be charged as 2 conversations.
+Billing 1: It will be charged as 2 conversations.
+
+Example 2: 78 user inputs -> 5 before midnight, 73 after midnight.
+
+Billing 2: It will be charged as 3 conversations.
 
 The server time zone settings determine the start of a new day and, as a result, the beginning of conversation billing for this new day.
 
