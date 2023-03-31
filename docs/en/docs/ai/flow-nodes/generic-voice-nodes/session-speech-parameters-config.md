@@ -45,4 +45,5 @@ The STT settings can be chosen from a pre-filled dropdown  for Microsoft Azure, 
 | Dynamic Hints                   | CognigyScript | Uses context or input for adding array hints. For example, <code>&lcub;&lcub;context.hints&rcub;&rcub;</code> or <code>&lcub;&lcub;input.hints&rcub;&rcub;</code>.   |
 | Enable Voice Activity Detection | Toggle        | Delays connection to cloud recognizer until the speech is detected.                                                                                                  |
 | Disable STT Punctuation         | Toggle        | Prevents the STT response from the virtual agent to include punctuation marks.                                                                                       |
-                                
+| Enable Advanced TTS Config      | Toggle        | Enables the addition of an ID for an Azure's Custom Speech model deployment.                                                                                         |
+| Enable Audio Logging            | Toggle        | Enables recording and logging of audio from the user on Azure.                                                                                                       |
