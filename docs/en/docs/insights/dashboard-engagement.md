@@ -12,8 +12,6 @@ The Engagement Dashboard is focused on customer interactions in conversations. E
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Each chart presents real-time data that refreshes every 30 seconds.
-
 All data displayed in the charts relate to the [global filter](global-filter.md) settings.
 
 <figure>
@@ -22,6 +20,8 @@ All data displayed in the charts relate to the [global filter](global-filter.md)
 </figure>
 
 ## Indicators
+
+The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
