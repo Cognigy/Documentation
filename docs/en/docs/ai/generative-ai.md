@@ -6,7 +6,7 @@ hidden: false
 
 # Generative AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45(Beta)-purple.svg)](../release-notes/4.45.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48(Beta)-purple.svg)](../release-notes/4.45.md)
 
 !!! note
     You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
@@ -21,7 +21,7 @@ In the Cognigy.AI interface, Generative AI generates human-like and personalized
 - [Creating new Flows with pre-configured Nodes](#generate-flows)
 - [Generating new Intent sentences](#generate-intent-sentences)
 - [Rephrasing bot outputs](#rephrase-bot-outputs)
-- [Completing texts](#gpt-prompt)
+- [Completing texts](#complete-texts)
 
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
@@ -136,9 +136,19 @@ Check in the interactive panel if your Flow works as expected.
   <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
 </figure>
 
-## GPT Prompt
+## Complete texts
+
+### GPT Prompt
 
 The [GPT Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+
+### GPT Conversation 
+
+!!! warning
+    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+
+The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) feature enables the creation of relevant content using Generative AI based on your scenario. By default, this node has already pre-filled fields with a scenario.
+
 
 ## FAQ
 

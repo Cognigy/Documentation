@@ -65,5 +65,5 @@ Describe the user sentiment in one very short line.
 ## More Information
 
 - [Generative AI](../../generative-ai.md)
-
+- [GPT Conversation Node](gpt-conversation.md)
 
