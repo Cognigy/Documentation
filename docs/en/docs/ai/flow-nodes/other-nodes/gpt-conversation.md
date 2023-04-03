@@ -19,7 +19,7 @@ hidden: false
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
 
-The GPT Conversation Node allows using Generative AI for creating relevant responses based on your scenarios. By default, this Node has already pre-filled fields with the Cognigy Clinic scenario. However, you can use your own scenario instead.
+The GPT Conversation Node processes and comprehends natural language input from users and utilizes this input to generate relevant and contextually appropriate responses. The Node configuration includes defining a persona, knowledge, and task for the bot, allowing it to generate AI-based responses to user inputs and trigger actions. The GPT Conversation Node can support the entire conversation using Large Language Models (LLMs).
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
