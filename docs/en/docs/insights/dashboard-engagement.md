@@ -173,6 +173,41 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/goals.png" width="80%" />
 </figure>
 
+### Containment Rate
+
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../release-notes/release-notes.md)
+
+Indicates the percentage of sessions without any handover during the timeline.
+
+Source table:
+ 
+```txt
+| Date      | Containment Rate | Total Sessions | Handover included Sessions |
+| --------- | ---------------  | -------------- | -------------------------- |
+| 3/1/2023  | 	87.5           |       40       | 	       35                |
+| 3/2/2023  | 	82.60869565    |       46       | 	       38                |
+| 3/3/2023  | 	96.77419355    |       62       | 	       60                |
+| 3/6/2023  | 	92.5           |       40       | 	       37                |
+| 3/7/2023  | 	100            |       58       | 	       58                |
+| 3/8/2023  | 	100            |       92       | 	       92                |
+| 3/10/2023 | 	100            |       10       | 	       10                |
+```
+
+Formula:
+
+1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
+
+2. Percentage `Containment Rate * 100%`.
+
+Example for the 3/1/2023: `(35/40)* 100% = 87.5%`
+
+Result: 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/containment-rate.png" width="100%" />
+</figure>
+
 ## Line charts
 
 ### Live Agent Escalations
