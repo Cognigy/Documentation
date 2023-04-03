@@ -1,13 +1,13 @@
 ---
- title: "Set AdaptiveCard xApp State" 
+ title: "xApp: Show Adaptive Card" 
  slug: "Set-AdaptiveCard-xApp-State" 
  hidden: true 
 ---
 
-# Set AdaptiveCard xApp State
+# xApp: Show Adaptive Card
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-html-xApp-state.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-html-xApp-state.png" width="80%" />
 </figure>
 
 ## Description
@@ -16,6 +16,8 @@
 An xApp Page can be built by providing an Adaptive Card in JSON format.
 
 To submit data back to the Flow, you need to include an action of type submit within the Adaptive Card.
+
+To view submitted data, use the Interaction panel. You can access submitted data in the `data` object by clicking **INFO > Input**, or in the chat by adding a Say Node and specifying <code>Submit payload: &lcub;&lcub;JSON.stringify(input.data)&rcub;&rcub;</code> or <code>Submit payload: &lcub;&lcub;JSON.stringify(ci.data)&rcub;&rcub;</code>.
 
 ### AdaptiveCard Definition
 
@@ -30,6 +32,6 @@ To override the background and interaction element colors, use CSS color codes.
 
 - [xApps](../../xApp/overview.md)
 - [xApp Nodes](overview.md)
-- [Init xApp Session](init-xApp-session.md)
-- [Get xApp Sesion PIN](get-xApp-session-PIN.md)
-- [Set HTML xApp State](set-html-xApp-state.md)
+- [xApp: Init Session](init-xApp-session.md)
+- [xApp: Get Session PIN](get-xApp-session-PIN.md)
+- [xApp: Show HTML](set-html-xApp-state.md)

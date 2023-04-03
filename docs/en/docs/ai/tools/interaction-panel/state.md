@@ -9,7 +9,7 @@ States allow limitations to be placed on a conversation that restrict the valid 
 
 Only Intents added to the **Whitelist** of the current State of the conversation can be detected. Conversely, Intents added to the **Blacklist** of the current State will not be recognized.
 
-???+ info "Example of How States Work"
+!!! note "Example of How States Work"
     The admin has defined three States:
 
     * start

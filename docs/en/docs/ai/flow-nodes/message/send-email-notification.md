@@ -12,7 +12,7 @@
 ## Description
 <div class="divider"></div>
 
-Using the Email Notification Node you can send quick and easy emails in presentation sessions or for inhouse communications without any e.g. provider settings. 
+Using the Email Notification Node you can send quick and easy emails in presentation sessions or for in-house communications without any e.g. provider settings. 
 Further on you can use the Email Notification Node to send an email from your Cognigy installation to users. This can be helpful if you want to e.g. trigger a report for your Flow architects. 
 
 ## Properties

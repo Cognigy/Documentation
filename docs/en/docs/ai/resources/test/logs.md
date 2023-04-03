@@ -36,5 +36,5 @@ Configuration of the log display is possible by enabling or disabling the follow
 
 It is possible to search for specific user IDs and **Flow** names by entering these values in the respective search fields found at the top right of the logs page. The log will instantly be filtered by any value added to these fields.
 
-???+ warning "Copying Log Entries"
-   For browser performance reasons the log list is virtualized, which means that only the log entries that you see currently exist in your browser. This prevents scrolling and copying more lines than there are currently in your view.
+!!! warning "Copying Log Entries"
+    For browser performance reasons the log list is virtualized, which means that only the log entries that you see currently exist in your browser. This prevents scrolling and copying more lines than there are currently in your view.

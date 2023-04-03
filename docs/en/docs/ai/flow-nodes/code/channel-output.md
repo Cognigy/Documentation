@@ -31,7 +31,7 @@ See the next sections for the required format.
 ## AI Default Channel
 <div class="divider"></div>
 
-Cognigy's AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/).
+Cognigy AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/).
 
 ## Alexa
 <div class="divider"></div>
@@ -66,7 +66,7 @@ We'll output a simple card to our contact by using the following snippet:
 <div class="divider"></div>
 [:link: Messenger Messaging Reference](https://developers.facebook.com/docs/messenger-platform/send-messages)
 
-For the messenger you can send send multiple templates by building a json object or by using the **facebook-bot-messenger module**. For further information got to their [GitHub Page](https://github.com/snlangsuan/facebook-bot-messenger#readme).
+For the messenger you can send multiple templates by building a json object or by using the **facebook-bot-messenger module**. For further information got to their [GitHub Page](https://github.com/snlangsuan/facebook-bot-messenger#readme).
 
 ### Example
 ---
@@ -92,7 +92,7 @@ The following snippet will send a simple text message and a quick reply to the c
 }
 ``` 
 
-Or you can use the **facebook-bot-messenger** module for building custom json. Here we'll send quck replies to the contact:
+Or you can use the **facebook-bot-messenger** module for building custom json. Here we'll send quick replies to the contact:
 ```javaScript
 // use facebook-bot-messenger to compile reply
 const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');

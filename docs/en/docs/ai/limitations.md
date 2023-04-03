@@ -8,7 +8,7 @@
 
 This page contains default quotas and limitations that apply to new Cognigy AI installations. 
 
-???+ info "Changing values for managed Cognigy AI environments"
+!!! note "Changing values for managed Cognigy AI environments"
     In case you want to request a change for your managed Cognigy  AI environment, please submit a Support request using this template: 
     ````
     Hello Cognigy Support, 
@@ -19,7 +19,7 @@ This page contains default quotas and limitations that apply to new Cognigy AI i
     Best regards, 
     Your Name 
     ````
-
+    Change requests can only be reviewed for Cognigy dedicated SaaS. If changes are made to Cognigy shared SaaS, the environment would affect all customers in functionality and performance.
 Any **deviations** from the default values for our Trial and App environments are also stated in **bold** within the table below.
 
 |Description|Default value|Trial|App|
@@ -74,9 +74,9 @@ Any **deviations** from the default values for our Trial and App environments ar
 
 ## Retention of Records
 
-???+ warning "Features such as **[OData]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/)** and **[Insights]({{config.site_url}}insights/cognigy-insights/)** rely on records you will find in the **Data** section below."
+!!! warning "Features such as **[OData]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/)** and **[Insights]({{config.site_url}}insights/cognigy-insights/)** rely on records you will find in the **Data** section below."
 
-???+ info "Changing TTL values for On-Prem Cognigy AI environments"
+!!! note "Changing TTL values for On-Prem Cognigy AI environments"
     When you host your own Cognigy AI environment, you can set TTL values **System Wide via the Config Map** and / or **[Organisation Wide via Management UI]({{config.site_url}}ai/tools/management-ui/)**
 
 |Description|Default value|Trial|App|

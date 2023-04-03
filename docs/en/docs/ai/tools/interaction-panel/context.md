@@ -17,8 +17,8 @@ The Flow can read from and write to the Context by saving user messages, slots, 
 
 Flow nodes can dynamically access Context properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens/) or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
 
-???+ info "Copy JSON path from the Context Object"
-    You can copy the exact JSON path you need to reference a certain value in the Context object by right clicking it and selecting "Copy JSON Path" from the context menu. 
+!!! note "Copy JSON path from the Context Object"
+    You can copy the exact JSON path you need to reference a certain value in the Context object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
 
 **Example**
 
@@ -34,7 +34,7 @@ Flow nodes can dynamically access Context properties via [Tokens]({{config.site_
 * `{{ " {{context.user.age}}" }}` would return ` ` (empty string) or - if used in a condition - `false`
 
 
-???+ success "Edit, Save or Reset your current Context"
+!!! tip "Edit, Save or Reset your current Context"
     You can Save, Cancel or Reset the Context Object by clicking the Save, Cancel or Reset buttons in the bottom option pane of the Interaction Panel. Context manipulations will only manipulate the value(s) in your current session.
 
 <div class="divider"></div>

@@ -31,11 +31,11 @@ The screen below will open, where you can add any Teams you need. Create Teams, 
 </figure>
 
 
-| Field Name       | Value                                                                         | Remarks                                                             |
-|------------------|-------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Team Name        | Assign a name for the Team                                                    | For example, Support                                                |
-| Team Description | Give a short description about the Team                                       | For example,: Team to resolve issues related to the product                   |
-| Checkbox        | Check this box if you would like to auto assign the Conversations in this Team | If this is not checked, the Conversation will remain as unassigned. |
+| Field Name       | Value                                                                          | Remarks                                                             |
+|------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------|
+| Team Name        | Assign a name for the Team                                                     | For example, Support                                                |
+| Team Description | Give a short description about the Team                                        | For example,: Team to resolve issues related to the product         |
+| Checkbox         | Check this box if you would like to auto assign the Conversations in this Team | If this is not checked, the Conversation will remain as unassigned. |
 
 - Click on Create Team. The screen below will open up, where you can add Agents to a Team. All added Agents will be notified when a Conversation is assigned to their Team.
 

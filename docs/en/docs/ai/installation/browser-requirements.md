@@ -18,12 +18,12 @@ Cognigy.AI's UI supports the following recent browsers:
 
 For security reasons we don't support older versions of the listed web browsers.
 
-???+ info "Browser compatibility"
+!!! note "Browser compatibility"
     If you encounter issues with our product, please first check which browser version you are using. Ensure that you are using the latest version of one of the mentioned browsers before you open any support case with us.
 
 In order to use the application correctly, please make sure that your viewport is larger than 1280x800 Pixels.
 
-???+ warning "Microsoft Japanese IME"
+!!! warning "Microsoft Japanese IME"
     For using MS-IME, please make sure to use Edge or Chrome Browsers on Windows 10 or higher, as there might be issues with other browsers and operating systems.
 
 ## Cognigy.AI Webchat
@@ -38,5 +38,5 @@ Cognigy.AI's webchat supports the following browsers:
 - Internet Explorer 11 and up
 - Safari 9 and up*
 
-???+ info "Safari and Websockets"
+!!! note "Safari and Websockets"
     We currently only allow Websockets on Safari, meaning that we don't allow to fall back to long-polling.

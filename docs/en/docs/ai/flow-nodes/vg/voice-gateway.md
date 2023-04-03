@@ -15,6 +15,6 @@ The Nodes are installed by default from Cognigy.AI 4.23.0 on.
   <figcaption>Voice Gateway Nodes</figcaption>
 </figure>
 
-???+ warning "Rebranding of Voice Gateway with AudioCodes"
+!!! warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Cognigy Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
     This applies to the Flow Nodes and the Endpoint.

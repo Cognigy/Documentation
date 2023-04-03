@@ -30,61 +30,61 @@ A Question Node is used to ask a question that requests specific information fro
 
 Question Nodes have a Type which defined what kind of answer is required from the user before the conversation continues. After a question was asked and the user provided an answer, the answer is validated according to its Type. If it passes, the answer is considered valid, is stored and the conversation continues.
 
-| Type | Expected user input to answer question |
-| ---- | ----------- |
-| Text | Any text input |
-| Yes / No	 | A positive or negative response |
-| Intent | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) must be identified from the user's response |
-| Slot | A [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) or [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) must be detected within the user's response. The slot is defined by name. |
-| Date | Any date (system-defined) |
-| Number | Any number (system-defined) |
-| Temperature | Any temperature (system-defined) |
-| Age | Any age (system-defined) |
-| Duration | Any time duration (system-defined) |
-| Email | Any email address (system-defined) |
-| Money | Any monetary value (system-defined) |
-| URL | Any reference/address to a resource on the Internet for example, http://example.com |
-| Percentage | Any percentage (system-defined) |
-| Regex | Any custom data format defined by a regex expression must be detected in the user's response |
-| Data | Any data (input.data) input |
-| Custom | Any input |
+| Type        | Expected user input to answer question                                                                                                                                                                                                  |
+|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text        | Any text input                                                                                                                                                                                                                          |
+| Yes / No	   | A positive or negative response                                                                                                                                                                                                         |
+| Intent      | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) must be identified from the user's response                                                                                                            |
+| Slot        | A [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) or [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) must be detected within the user's response. The slot is defined by name. |
+| Date        | Any date (system-defined)                                                                                                                                                                                                               |
+| Number      | Any number (system-defined)                                                                                                                                                                                                             |
+| Temperature | Any temperature (system-defined)                                                                                                                                                                                                        |
+| Age         | Any age (system-defined)                                                                                                                                                                                                                |
+| Duration    | Any time duration (system-defined)                                                                                                                                                                                                      |
+| Email       | Any email address (system-defined)                                                                                                                                                                                                      |
+| Money       | Any monetary value (system-defined)                                                                                                                                                                                                     |
+| URL         | Any reference/address to a resource on the Internet for example, http://example.com                                                                                                                                                     |
+| Percentage  | Any percentage (system-defined)                                                                                                                                                                                                         |
+| Regex       | Any custom data format defined by a regex expression must be detected in the user's response                                                                                                                                            |
+| Data        | Any data (input.data) input                                                                                                                                                                                                             |
+| Custom      | Any input                                                                                                                                                                                                                               |
 
-???+ warning "Regex"
+!!! warning "Regex"
     Please make sure that your regular expression starts with a **/** and ends with **/g**.
 
     Example:
 
     * /^1\d{​​​​7}​​​​$/g
 
-???+ info "Supported Data formats for System Defined slots"
+!!! note "Supported Data formats for System Defined slots"
     All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) page.
 ## Channels and Output types
 <div class="divider"></div>
 
 Question node output types carry the same functionality as the [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
 
-???+ success "Date Questions"
+!!! tip "Date Questions"
     In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Please refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
-## Reprompt Options
+## Re-prompt Options
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
 <div class="divider"></div>
 
-### Reprompt Message
-Remprompt Messages are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validaiton didn't return true). 
+### Re-prompt Message
+Re-prompt Messages are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validation didn't return true). 
 
-The Remprompt can be configured to automatically re-ask the question. 
+The Re-prompt can be configured to automatically re-ask the question. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/4f557f2-reprompt.png" width="100%" />
 </figure>
 
-### Reprompt Condition
-Optionally a [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition can be added which will determine whether the Reprompt Message is shown or not.
+### Re-prompt Condition
+Optionally a [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition can be added which will determine whether the Re-prompt Message is shown or not.
 
 ### Skip on Intent
-Skips the reprompt if an intent was found in the input
+Skips the re-prompt if an intent was found in the input
 ## Result Storage
 <div class="divider"></div>
 
@@ -123,12 +123,12 @@ When this escalation is hit, the conversation is handed to an agent, who can the
 
 Allows the conversation to break out of the Question Node if a specified Intent was found. 
 
-| Action | Description |
-| ---- | ----------- |
-| Output Message | Outputs a message (equal to a Say Node) |
-| Skip Question	 | Skips the Question and enters a specific value into the `input.result` object. |
-| Go to Node | Goes to a specific Flow Node and continues from there (equal to GoTo Node) |
-| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node) |
+| Action                  | Description                                                                                         |
+|-------------------------|-----------------------------------------------------------------------------------------------------|
+| Output Message          | Outputs a message (equal to a Say Node)                                                             |
+| Skip Question	          | Skips the Question and enters a specific value into the `input.result` object.                      |
+| Go to Node              | Goes to a specific Flow Node and continues from there (equal to GoTo Node)                          |
+| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
 | Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
 
 Add intents that can trigger the "escalate on intent" function by typing the intent name into the "Valid Intents" field and pressing ENTER on your keyboard. Adjust the dedicated intent score threshold slider to the preferred setting so that the escalation will only occur if one of the listed intents reaches that score.
@@ -138,12 +138,12 @@ Add intents that can trigger the "escalate on intent" function by typing the int
 
 Allows the conversation to break out of the Question Node after a number of incorrect answers were provided.
 
-| Action | Description |
-| ---- | ----------- |
-| Output Message | Outputs a message (equal to a Say Node) |
-| Skip Question	 | Skips the Question and enters a specific value into the `input.result` object. |
-| Go to Node | Goes to a specific Flow Node and continues from there (equal to GoTo Node) |
-| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node) |
+| Action                  | Description                                                                                         |
+|-------------------------|-----------------------------------------------------------------------------------------------------|
+| Output Message          | Outputs a message (equal to a Say Node)                                                             |
+| Skip Question	          | Skips the Question and enters a specific value into the `input.result` object.                      |
+| Go to Node              | Goes to a specific Flow Node and continues from there (equal to GoTo Node)                          |
+| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
 | Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
 
 It is possible to prevent reprompts when the escalation is happening. 
@@ -153,11 +153,11 @@ The option "only escalate once" determines if the escalation only happens once o
 ## Reconfirmation Settings
 <div class="divider"></div>
 
-Allows for answers to be reconfirmed before continuing. this is especially useful when using voicebots and reconfirming what the bot understood (for example, in Number questions when the user said "_my number is three double five triple nine five six eight_"). The answer given to the reconfirmation question has to be a yes/no style answer and follows the same rules as a Yes/No Question.
+Allows for answers to be reconfirmed before continuing. this is especially useful when using voice bots and reconfirming what the bot understood (for example, in Number questions when the user said "_my number is three double five triple nine five six eight_"). The answer given to the reconfirmation question has to be a yes/no style answer and follows the same rules as a Yes/No Question.
 
 Reconfirmation Questions can contain a specific token [ANSWER] which will be replaced with a short form version of the given answer (for example, "3 EUR" in a Money question). The short form answer is taken from `input.activeQuestion.tentativeShortFormAnswer`;
 
-Reconfirmation Questions can have a specific reprompt set, which will be be output before the question if the answer to the question is not of yes/no style.
+Reconfirmation Questions can have a specific re-prompt set, which will be output before the question if the answer to the question is not of yes/no style.
 
 ## Advanced
 <div class="divider"></div>
@@ -182,20 +182,20 @@ A [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition which m
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
-The location of an answer is determined by default by the question type (for example, `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (for example,, `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
+The location of an answer is determined by default by the question type (for example, `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (for example, `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
 
 ### Forget Question Threshold
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
 
-This setting determines how long a user can have been "away" from the Node after the question was initially asked. With the default setting `1` this means that the question has to be answered on the next user input. If a user input comes back to the question at a later stage, it will be treated as if the question was hit for the first time and the quesiton will be asked.
+This setting determines how long a user can have been "away" from the Node after the question was initially asked. With the default setting `1` this means that the question has to be answered on the next user input. If a user input comes back to the question at a later stage, it will be treated as if the question was hit for the first time and the question will be asked.
 
 <div class="divider"></div>
 
-???+ warning "Question Nodes and Intent Execution"
+!!! warning "Question Nodes and Intent Execution"
     Question Nodes - by default - will be triggered again and again until a valid answer has been provided. In order to avoid this, you can opt for an [**Optional Question**]({{config.site_url}}ai/flow-nodes/message/optional-question/) or you can change the **Intent Execution** setting.
 
-???+ success "Slot Fillers"
+!!! tip "Slot Fillers"
     Questions can be combined with **Slot Fillers** to create a so-called "Missing Pattern". This mechanism keeps asking the user for the missing information in a very natural way, until all questions have been answered.
 ## Question Information in Input
 <div class="divider"></div>

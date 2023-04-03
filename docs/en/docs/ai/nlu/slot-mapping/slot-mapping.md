@@ -14,7 +14,7 @@ There are two types of slots:
 - System-defined Slots
 - User-defined Slots (Lexicons / keyphrases) - see [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)
 
-???+ success "Tokenize Your Slots"
+!!! tip "Tokenize Your Slots"
     Create [Tokens]({{config.site_url}}ai/resources/manage/tokens/) for your slots so your can speed up the process of adding them to conversation logic and output fields.
 
 ## Accessing Slots via CognigyScript
@@ -25,8 +25,8 @@ System and User-Created slots can be accessed quite simply through CognigyScript
 
 `{{ " {{input.slots}}" }}` contains all found slots, tags and keyphrases.
 
-| CognigyScript  | Description |
-| -------------- | ----------- |
+| CognigyScript                      | Description                                       |
+|------------------------------------|---------------------------------------------------|
 | `{{ " {{input.slots.tagName}}" }}` | Returns the keyphrase array for the tag `tagName` |
 
 ## System-defined Slots
@@ -182,30 +182,30 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
 ## Date formats
 ---
 
-???+ success "Time Zone & Date Slots"
+!!! tip "Time Zone & Date Slots"
     Detection of dates depends on the time zone set for the Agent (see [Settings]({{config.site_url}}ai/resources/manage/settings/)) or User (see [here]({{config.site_url}}ai/flow-nodes/code/actions/))
 
 The following tables provide an overview of supported input patterns and formats. 
 
-| Languages  | Supported input pattern examples |
-| ---------- | ----------- |
-| English | Now, Today, Tomorrow, Yesterday, Last Friday, Last night<br/>17 August 2013 - 19 August 2013<br/>This Friday from 13:00 - 16.00<br/>5 days ago<br/>2 weeks from now<br/>Sat Aug 17 2013 18:40:39 GMT+0900 (JST)<br/>2014-11-30T08:15:30-05:30<br/>Day after tomorrow<br/>Days before yesterday<br/>Next Tuesday |
-| German | Jetzt, Heute, Morgen, Gestern, Vorgestern<br/>Letzte Nacht, Heute Nacht, Diese Nacht, Morgen Vormittags, Gestern Abend<br/>Nach einem Tag, In einer Woche<br/>15/01/2021, 15.01.2021, 15. Jan 2021, Freitag den 15. Januar 2021<br/>17.08.2013 - 19.08.2013, 17.08.2013 bis 19.08.2013<br/>Kommenden Montag |
-| Dutch | Nu, Deze Nacht, Deze Vannacht, Gisteren, Morgen, Gisteravond, Eergisteren, Overmorgen<br/>Morgen Middag, Deze Ochtend, Gisteren Voormiddag, Deze Namiddag, Morgen Avond, Overmorgen Nacht<br/>Binnen Een Dag, Na een halve Maand<br/>15/01/2021, 15.01.2021, 15. Jan 2021, Vrijdag de 15de Januari 2021<br/>17.08.2013 - 19.08.2013, 17.08.2013 tot 19.08.2013<br/>Laatste/vorige/volgende/komende Woensdag |
-| Japanese | 今日, 当日, 昨日, 明日, 今夜, 今夕, 今晩, 今朝<br/>２０１６年２月１７日です<br/>Sat Aug 17 2013<br/>01/30/2018 |
-| Other languages | By example of French, the following patterns are supported. Some advanced patterns involving more advanced casual expressions such as "day before yesterday" or "next friday" would not be supported:<br/><br/>15.04.2023 12:00<br/>15 aout 2015<br/>15 aout 2015 a 12 octobre 2016<br/>aujourd'hui, demain, hier<br/>hier soir, demain après-midi |
+| Languages       | Supported input pattern examples                                                                                                                                                                                                                                                                                                                                                                            |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| English         | Now, Today, Tomorrow, Yesterday, Last Friday, Last night<br/>17 August 2013 - 19 August 2013<br/>This Friday from 13:00 - 16.00<br/>5 days ago<br/>2 weeks from now<br/>Sat Aug 17 2013 18:40:39 GMT+0900 (JST)<br/>2014-11-30T08:15:30-05:30<br/>Day after tomorrow<br/>Days before yesterday<br/>Next Tuesday                                                                                             |
+| German          | Jetzt, Heute, Morgen, Gestern, Vorgestern<br/>Letzte Nacht, Heute Nacht, Diese Nacht, Morgen Vormittags, Gestern Abend<br/>Nach einem Tag, In einer Woche<br/>15/01/2021, 15.01.2021, 15. Jan 2021, Freitag den 15. Januar 2021<br/>17.08.2013 - 19.08.2013, 17.08.2013 bis 19.08.2013<br/>Kommenden Montag                                                                                                 |
+| Dutch           | Nu, Deze Nacht, Deze Vannacht, Gisteren, Morgen, Gisteravond, Eergisteren, Overmorgen<br/>Morgen Middag, Deze Ochtend, Gisteren Voormiddag, Deze Namiddag, Morgen Avond, Overmorgen Nacht<br/>Binnen Een Dag, Na een halve Maand<br/>15/01/2021, 15.01.2021, 15. Jan 2021, Vrijdag de 15de Januari 2021<br/>17.08.2013 - 19.08.2013, 17.08.2013 tot 19.08.2013<br/>Laatste/vorige/volgende/komende Woensdag |
+| Japanese        | 今日, 当日, 昨日, 明日, 今夜, 今夕, 今晩, 今朝<br/>２０１６年２月１７日です<br/>Sat Aug 17 2013<br/>01/30/2018                                                                                                                                                                                                                                                                                                                          |
+| Other languages | By example of French, the following patterns are supported. Some advanced patterns involving more advanced casual expressions such as "day before yesterday" or "next friday" would not be supported:<br/><br/>15.04.2023 12:00<br/>15 aout 2015<br/>15 aout 2015 a 12 octobre 2016<br/>aujourd'hui, demain, hier<br/>hier soir, demain après-midi                                                          |
 
 DATE Slot parsing depends on the language set in the Flow. See here for an overview of [date formats by country](https://en.wikipedia.org/wiki/Date_format_by_country) we aim to support. The following table outlines the language-specific behaviors on slash-formatted dates:
 
-| Languages  | Slash date format ordering (01/01/2019) |
-| ---------- | ----------- |
-| Default (English UK, German, Universal etc.) | dd/mm/YYYY |
-| English US, Japanese, Chinese | mm/dd/YYYY<br/><br/>Note if mm/dd/YYYY yields an illegal date the parser falls back to dd/mm/YYYY. |
+| Languages                                    | Slash date format ordering (01/01/2019)                                                            |
+|----------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Default (English UK, German, Universal etc.) | dd/mm/YYYY                                                                                         |
+| English US, Japanese, Chinese                | mm/dd/YYYY<br/><br/>Note if mm/dd/YYYY yields an illegal date the parser falls back to dd/mm/YYYY. |
 
-???+ warning "Future Dates Only"
+!!! warning "Future Dates Only"
     You can force the DATE slot to only detect dates in the future for relative expressions (e.g. "Monday", "Friday"). For more information, see the Code Node Action [setForwardDatesOnly]({{config.site_url}}ai/flow-nodes/code/actions/)
 
-???+ warning "Invalid DATES"
+!!! warning "Invalid DATES"
     Cognigy.AI checks the validity of provided dates, including leap years, etc. Invalid dates will not appear in the detected slots.
 
 ## User-defined Slots (Lexicons)
@@ -240,7 +240,7 @@ Keyphrases and Synonyms are detected in order of their word count, with the long
 
 If a Synonym is found, the returned Keyphrase is the Keyphrase the Synonym is mapped to, whilst the Synonym itself is recorded in a special `synonym` property of the result.
 
-???+ info "Example of how Slots are filled"
+!!! note "Example of how Slots are filled"
     If the user says *I love pizza pie*, the `slots` Input property will look like this:
 
 ```json
@@ -255,5 +255,5 @@ If a Synonym is found, the returned Keyphrase is the Keyphrase the Synonym is ma
 }
 ```
 
-???+ warning "Attach Lexicons to your flows"
+!!! warning "Attach Lexicons to your flows"
     Lexicons must be attached to NLU training data for the NLU model to recognize the keyphrases and synonyms that have been created. Find out more on the  [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/).

@@ -5,7 +5,7 @@
 ---
 # Overview
 
-**Endpoints** are the connector between your user interface and the Cognigy **Agent**. This connection can range from text based conversation to a conversation on your contact center phonelines.
+**Endpoints** are the connector between your user interface and the Cognigy **Agent**. This connection can range from text based conversation to a conversation on your contact center phone-lines.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0c6834f-6d72d72-endpoints-screen.jpg" width="100%" />

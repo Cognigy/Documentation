@@ -19,7 +19,7 @@ Within our **Cognigy.AI** platform you're able to connect your Cognigy resources
 - [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Channel Specific Settings
@@ -46,7 +46,7 @@ Verification token applies an added layer of security to ensure the authenticity
 
 ### Secret
 
-This value matches the secret key setup in the RingCentral Engage webhook configuation and is used for the handshake process.
+This value matches the secret key setup in the RingCentral Engage webhook configuration and is used for the handshake process.
 
 ### Bot category ID
 
@@ -56,7 +56,7 @@ The category ID which will be used to identify the bot. This value is obtained f
 
 The category ID which will be used to identify the agent. This value is obtained from the RingCentral Engage platform.
 
-???+ info "Help Center"
+!!! note "Help Center"
     More detailed information on how to set up a **RingCentral Engage** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
 ## More information
 

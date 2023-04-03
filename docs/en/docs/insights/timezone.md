@@ -25,11 +25,11 @@ you compare it with Insights.
 
 By default, **we use timezone preferences of your device**. You can override this  in "My Profile". 
 
-This comes handy if you travel a lot and your device timezone gets updated by your location or you may have a multi-national Agent with the users all over the globe.
+This comes handy if you travel a lot and your device timezone gets updated by your location, or you may have a multinational Agent with the users all over the globe.
 
 To change timezone preferences:
 
-- Click on the user icon on the top-right corner.
+- Click on the user icon in the top-right corner.
 - Select "My Profile".
 
 <figure>

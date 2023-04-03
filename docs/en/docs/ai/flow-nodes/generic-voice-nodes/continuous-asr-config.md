@@ -19,8 +19,8 @@ Continuous ASR enables the system to concatenate multiple STT recognitions of th
 
 When executed, the settings will apply for the remainder of the session.
 
-| Parameter              | Type   | Description                                                                                            |
-| ---------------------- | ------ | ------------------------------------------------------------------------------------------------------ |
-| Enable Continuous ASR  | Toggle | Enable or disable Continuous ASR                                                                       |
-| Continuous ASR Submit Digit   | CognigyScript   | Defines a special DTMF key, which sends the accumulated recognitions to the flow                       |
-| Continuous ASR Timeout | Number | Defines the number of milliseconds of silence before the accumulated recognitions are send to the flow |
+| Parameter                   | Type          | Description                                                                                            |
+|-----------------------------|---------------|--------------------------------------------------------------------------------------------------------|
+| Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR                                                                       |
+| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow                       |
+| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are send to the flow |

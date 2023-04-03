@@ -27,14 +27,13 @@ Here you can search for contact profiles in the top right search box and sort th
 
 The Profile Schema contains the following default schema values:
 
-
-| Property Name      |
+| Property Name|
 | ----------- | 
-| Contact IDs       | 
-| First Name     |
+| Contact IDs      | 
+| First Name    |
 | Last name    | 
-| Accepted GDPR    | 
-| Goals completed   | 
+| Accepted GDPR   | 
+| Goals completed  | 
 | Email    | 
 | Gender    | 
 | Age    | 
@@ -49,10 +48,10 @@ It is also possible to add customized schema properties to handle organization s
   * Click on an existing field to edit a schema field
 
 
-???+ info "Schema Fields"
+!!! note "Schema Fields"
     A schema field has a field name used in the user interface, a unique internal identifier *Internal Name* and a field type.
 
-???+ warning "Field type limitations"
+!!! warning "Field type limitations"
     A schema field set to type *Number* should not be filled  with a value higher than 2<sup>53</sup> - 1 or 9,007,199,254,740,991 (~9 quadrillion). Higher integers can't be correctly represented in JavaScript.
 
 ### Inspect Contact Profiles
@@ -78,7 +77,7 @@ To activate, deactivate, delete or merge contact profiles within your flow you c
   * Delete Profile
   * Merge Profile
 
-???+ success "Use Contact Profile Data for a personalized user experience"
+!!! tip "Use Contact Profile Data for a personalized user experience"
     Add stored contact profile information such as name and location to add a personal touch to user messages. Find out more about accessing profile data on the [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) page.
 
 ## GDPR

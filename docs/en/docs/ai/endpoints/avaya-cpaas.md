@@ -61,7 +61,7 @@ In the **Avaya Settings** section, you can configure the following settings for 
 </table>
 
 ### Gather Settings
-In the **Gather Settings** section, you can configure several different attributes that will be attached to the Gather statement that is sent to Avaya CPaaS:
+In the **Gather Settings** section, you can configure several attributes that will be attached to the Gather statement that is sent to Avaya CPaaS:
 
 <table>
     <tr>
@@ -95,7 +95,7 @@ In the **Gather Settings** section, you can configure several different attribut
       <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Timeout</td>
     <td style="padding: 20px;">
-      The amount of time the user has to answer the bot before the call disconnects. The timeout is specified in seconds with a default value of 30 seconds. <b>Note:</b> The timeout starts counting as soon as the bot starts speaking, meaning if you are reading out a long text to the user, it might timeout before they even start to answer.
+      The amount of time the user has to answer the bot before the call disconnects. The timeout is specified in seconds with a default value of 30 seconds. <b>Note:</b> The timeout starts counting as soon as the bot starts speaking, meaning if you are reading out a long text to the user, it might time out before they even start to answer.
       </td>
   </tr>
       <tr>

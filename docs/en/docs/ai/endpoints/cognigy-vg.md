@@ -15,7 +15,7 @@ Within our **Cognigy.AI** platform you are able to connect your **Agent** to you
 
 ## Voice Gateway Specific Nodes
 
-Cognigy.AI comes with built in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) for more information.
+Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) for more information.
 
 ## Call Meta Data
 
@@ -61,7 +61,7 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 }
 ```
 
-???+ info "NumberMetaData in Tokens"
+!!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
 ## Generic Endpoint Settings
@@ -77,8 +77,8 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-???+ info "Contact Center & Phone number linking"
+!!! note "Contact Center & Phone number linking"
     In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, please get in touch with us via an email to support@cognigy.com.
 
-???+ warning "Rebranding of Voice Gateway with AudioCodes"
+!!! warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint. You can find the AudioCodes documentation here.

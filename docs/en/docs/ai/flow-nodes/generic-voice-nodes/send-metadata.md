@@ -19,9 +19,9 @@
 
 The Send Meta Data Node sends metadata via SIP INFO messages to the connected SIP trunk.
 
-| Parameter | Type | Description                                                  |
-| --------- | ---- | ------------------------------------------------------------ |
-| Meta Data | JSON | The metadata to send via SIP INFO.                           |
+| Parameter | Type | Description                        |
+|-----------|------|------------------------------------|
+| Meta Data | JSON | The metadata to send via SIP INFO. |
 
 Example:
 
@@ -31,5 +31,5 @@ Example:
 }
 ```
 
-???+ info "This Node supports Activity Parameters"
+!!! note "This Node supports Activity Parameters"
     You can find more information about activity parameters on the [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.

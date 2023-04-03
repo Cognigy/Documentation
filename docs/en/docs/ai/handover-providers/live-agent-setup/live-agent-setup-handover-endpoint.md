@@ -29,7 +29,7 @@ To use this feature you need to:
   <figcaption>Autoconfigure Live Agent Handover Settings</figcaption>
 </figure>
 
-???+ info "Use Autoconfigure feature in your own Cognigy Installation"
+!!! note "Use Autoconfigure feature in your own Cognigy Installation"
     To use this feature these environment variables must be set in your Cognigy.AI installation:
     ```
     FEATURE_USE_COGNIGY_LIVE_AGENT: true
@@ -60,7 +60,7 @@ See the example below from our *Trial* environment.
   <figcaption>Cognigy.AI Webchat Endpoint Settings</figcaption>
 </figure>
 
-Now you need the values to enter in the _Account ID_ and _API Key_ fields. You will need to login to Live Agent as the admin of the current Agent.
+Now you need the values to enter the _Account ID_ and _API Key_ fields. You will need to log in to Live Agent as the admin of the current Agent.
 
 Navigate to the UI of Cognigy Live Agent, via the [User Menu]({{config.site_url}}ai/tools/user-menu/user-menu/). Click on *Live Agent* in the User Menu and Live Agent will open up in a new tab.
 
@@ -78,7 +78,7 @@ Once logged into Live Agent, note down the following values: _Account ID_ and _I
   <figcaption>Live Agent Account ID and Inbox ID</figcaption>
 </figure>
 
-At the bottom left corner of your screen, click the profile icon displaying your initials. Then click on *Profile Settings*.
+In the bottom left corner of your screen, click the profile icon displaying your initials. Then click on *Profile Settings*.
 
 <figure>
     <img src="{{config.site_url}}live-agent/images/LA-profile-settings.png" width="100%" alt="Live Agent Profile Settings">
@@ -101,9 +101,9 @@ Enter the *Account ID* and *API Key* (Access Token) found in the previous steps 
   <figcaption>Account ID and API Key</figcaption>
 </figure>
 
-## Next Steps - Setup your Flow for Handover
+## Next Steps - Set up your Flow for Handover
 <div class="divider"></div>
 
-Now your Webchat Endpoint is setup! Next, you will need to setup your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent:
+Now your Webchat Endpoint is set up! Next, you will need to set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent:
 
-- [**Setup your Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow/)
+- [**Set up your Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow/)

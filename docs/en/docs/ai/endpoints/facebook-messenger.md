@@ -24,7 +24,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
 
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Channel Specific Settings
@@ -49,15 +49,15 @@ This value is a unique App ID used by Facebook to identify you app.
 
 ### App Secret
 
-Your Facebook app's Secret that is a randomly generated value from Facebook. The value of this field must be the SECRET associated with the Page access token and App ID entered in the previous fields.
+Your Facebook app's Secret that is a randomly generated value from Facebook. The value of this field must be the SECRET associated with the Page access token and App ID entered the previous fields.
 
-???+ info "Help Center"
+!!! note "Help Center"
     For more information on how to configure the **Page Access Token**, **App ID** an   **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
 
 ## Facebook Profiles
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/a9627b5-FavebookProfilesSettings.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/FacebookProfilesSettings.PNG" width="100%" />
 </figure>
 
 
@@ -116,7 +116,7 @@ The user's first name.
   </tr>
 </table>
 
-???+ warning "Data exposed in ci.data.profile"
+!!! warning "Data exposed in ci.data.profile"
     Not every user on Facebook will have the same data exposed in the profile object. This depends solely on what data they have on their Facebook profile, and what their privacy settings are.
 
 ### Update Contact Profiles
@@ -127,8 +127,8 @@ If this setting is enabled, then the information a Facebook user has on their pr
 
 Each user on Facebook has a unique ID, a PSID, for each Facebook page they talk to. This means that if you own two or more Facebook Pages, you will not be able to immediately identify users across these pages, since they will have a different ID for each page. However, if you enable this setting, we will fetch all of a user's PSIDs for your pages and merge these profiles into one profile. This means that you can easily identify a single user across all of your pages, and thus personalize the chat even more.
 
-???+ warning "Requires a Business"
-    In order to perform the API calls necessary to get all of the PSIDs for the user, the same Business needs to own all of the Facebook Pages. More information at: [https://www.facebook.com/business](https://www.facebook.com/business)
+!!! warning "Requires a Business"
+    In order to perform the API calls necessary to get all the PSIDs for the user, the same Business needs to own all the Facebook Pages. More information at: [https://www.facebook.com/business](https://www.facebook.com/business)
 
 ## Messenger Settings
 
@@ -138,12 +138,12 @@ Here you can configure whether typing indicators should be used and how many mil
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/940f0ef-facebookMessageSettings.PNG" width="100%" />
 </figure>
 
-???+ info "Help Center"
+!!! note "Help Center"
   For more detailed information on how to set up a **Facebook Messenger** Endpoint, please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro).
 
 ## More information
 
-* [Helpcenter: Facebook Messenger Intro](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
-* [Helpcenter: Facebook Messenger Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)
-* [Helpcenter: Facebook Messenger Use Facebook Handover ](https://support.cognigy.com/hc/en-us/articles/360016021919-Facebook-Messenger-Use-Facebook-Handover)
-* [Helpcenter: Facebook Messenger Facebook Tools](https://support.cognigy.com/hc/en-us/articles/360015980780-Facebook-Messenger-Facebook-Tools)
+* [HelpCenter: Facebook Messenger Intro](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
+* [HelpCenter: Facebook Messenger Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)
+* [HelpCenter: Facebook Messenger Use Facebook Handover ](https://support.cognigy.com/hc/en-us/articles/360016021919-Facebook-Messenger-Use-Facebook-Handover)
+* [HelpCenter: Facebook Messenger Facebook Tools](https://support.cognigy.com/hc/en-us/articles/360015980780-Facebook-Messenger-Facebook-Tools)

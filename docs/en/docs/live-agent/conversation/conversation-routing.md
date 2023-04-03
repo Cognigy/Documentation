@@ -27,32 +27,31 @@ To assign an Agent or admin to a Conversation, an admin/Agent can select the ass
 ## Auto Assignment
 <div class="divider"></div>
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
 
-Live Agent provides a round-robin auto-assignment system for Conversations. The assignment follows the logic mentioned below.
+Live Agent provides a round-robin auto-assignment system for Conversations. The **Auto Assignment** setting is enabled by default.
 
->**Note:** Round-robin assignment is enabled by default.
+There are different scenarios for distributing conversations to human agents based on their online status and workload:
 
-- If there are Agents online who have access to the Inbox in which a Conversation is created, the system would distribute the Conversations equally among the online Agents.
-- If all the Agents are offline, the system would distribute the Conversations equally to all Agents.
+**Online Agents**:
 
+When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
+Unassigned conversations are automatically assigned to agents when the limit threshold is lower than the maximum value, and they take precedence over newly incoming conversations.
 
-### Enable Round-Robin or Auto Assignment
-<div class="divider"></div>
+**Offline Agents**:
 
+When a conversation is created in the Inbox, and there aren't agents online with access to it, the system will distribute the conversations among all human agents equally.
 
-To enable round-robin or auto assignment in your Inbox, follow the steps below.
+To configure auto assignment in your Inbox, follow these steps:
 
-- Go to Settings -> Inboxes
-- Click on the Inbox settings link of the Inbox you want to enable auto assignment
-- Click on the Collaborators tab
-- Find the setting to enable auto assignment, as shown below
+1. Go to **Settings > Inboxes**.
+2. Select an Inbox from the list and click ![clock](../../assets/icons/gear.svg).
+3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
+4. From the **Allow auto assignment** list, select one of the following options:
+     * Enable — allows the automatic assignment of agents to conversations. 
+     * Disable — allows the manual assignment of agents to conversations.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-routing-2.png" width="100%" alt="Live Agent Enable Auto Assignment" />
-  <figcaption>Enable Auto Assignment</figcaption>
-</figure>
-
-- Change it to "Enabled" and click on "Update"
+The changes will be applied.
 
 ## Automatic Conversation Reassignment
 <div class="divider"></div>

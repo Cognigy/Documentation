@@ -16,5 +16,5 @@ Cognigy.AI v4.9.0 provides new functionality that allows our customers to use a 
 
 Using Options Resolver is a way to enhance the seamless integration of a Cognigy Extension with third-party systems by providing dynamically resolved select options for Node Fields.
 
-???+ info "Tools for building Cognigy.AI extensions for Cognigy.AI 4"
+!!! note "Tools for building Cognigy.AI extensions for Cognigy.AI 4"
     [npm extension tools](https://www.npmjs.com/package/@cognigy/extension-tools)

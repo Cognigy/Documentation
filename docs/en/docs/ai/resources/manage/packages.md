@@ -17,7 +17,7 @@ You either can create a Package for a single resource, or multiple resources.
 
 Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connections, NLU Connectors,…
 
-???+ info "What resources can be Exported in a Package?"
+!!! note "What resources can be Exported in a Package?"
     The following agent resources can be included in a Package:
 
     * [Flows]({{config.site_url}}ai/resources/build/flows/) 
@@ -30,7 +30,7 @@ Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connec
 
 <div class="divider"></div>
 
-To create a Package from a single resource, navigate to a resource list, e.g. "Flows", click the "secondary menu button" at the right side of the item, then click "Export as package" in the menu.
+To create a Package from a single resource, navigate to a resource list, e.g. "Flows", click the "secondary menu button" on the right side of the item, then click "Export as package" in the menu.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/ffebcd4-Create_Package.png" width="100%" />
@@ -41,7 +41,7 @@ To create a Package from a single resource, navigate to a resource list, e.g. "F
 </figure>
 
 
-This will start a "create package" task and you will be notified the Package has been created. Once the task finished, you can download the Package by clicking the link in the task menu. Clicking the link will open a file-save dialog in your browser - select a location in order to start the download.
+This will start a "create package" task, and you will be notified the Package has been created. Once the task finished, you can download the Package by clicking the link in the task menu. Clicking the link will open a file-save dialog in your browser - select a location in order to start the download.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/f333cc6-Download_Package.png" width="100%" />
@@ -66,7 +66,7 @@ As of Release v4.5.0, you can select one / many / all resources by activating th
 
 
 ### Import
-Similar to the export, the import of Packages is straightforward. Simply drag&drop a Package on the area at the top of the packaging tool or use the file selection functionality. Your package will be uploaded and processed by Cognigy.AI. Once analyzed, the packaging tool will display the contents of the package and you can go forward and import them.
+Similar to the export, the import of Packages is straightforward. Simply drag&drop a Package on the area at the top of the packaging tool or use the file selection functionality. Your package will be uploaded and processed by Cognigy.AI. Once analyzed, the packaging tool will display the contents of the package, and you can go forward and import them.
 
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
@@ -110,6 +110,6 @@ Once you have selected a conflict resolution strategy, click on **"Import"** in 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/7478741-Conflict_Import_handling.png" width="100%" />
 </figure>
 
-???+ warning "Using Packages As Templates: Node IDs and Importing Packages"
+!!! warning "Using Packages As Templates: Node IDs and Importing Packages"
     Node IDs will not change on import, to ensure that hardcoded links between Flows and Nodes do not break.
     If you need to import a Flow multiple times to the same Project, you can delete and recreate a Node to prevent ID conflicts.

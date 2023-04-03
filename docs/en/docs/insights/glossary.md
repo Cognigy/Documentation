@@ -4,6 +4,8 @@ slug: "glossary"
 hidden: false
 ---
 
+# Insights Glossary
+
 All the terms are given in the glossary for informational purposes.
 
 _**Session**_

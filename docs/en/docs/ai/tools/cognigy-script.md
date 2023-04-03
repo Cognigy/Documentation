@@ -13,11 +13,11 @@ Within text, you write CognigyScript within `{{"{{ }}"}}` tags. Example: `{{"{{i
 
 CognigyScript is essentially JavaScript, but gives you access to the Cognigy objects via exposed variables:
 
-|Variable|Description|Example|
-|---|---|---|
-|input|	The Input Object|{{ " {{input.text}}" }}|
-|context|The Context Object|{{ " {{context.selectedHotel}}" }}|
-|profile|The Contact Profile Object|{{ " {{profile.firstname}}" }}|
+| Variable | Description                | Example                            |
+|----------|----------------------------|------------------------------------|
+| input    | 	The Input Object          | {{ " {{input.text}}" }}            |
+| context  | The Context Object         | {{ " {{context.selectedHotel}}" }} |
+| profile  | The Contact Profile Object | {{ " {{profile.firstname}}" }}     |
 
 ## Node Arguments
 
@@ -29,7 +29,7 @@ Accessing the CognigyScript functionality differs between different types of arg
 
 Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{{"{{ }}"}}` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
 
-???+ info "Invalid expressions return an empty string"
+!!! note "Invalid expressions return an empty string"
     If the expression is invalid, an empty string is returned.
 
 *Example*
@@ -43,7 +43,7 @@ CognigyScript in Node Arguments is always returned as string, unless you force t
 
 ## For JSON arguments
 
-Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"}}" }}` can to be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, e.g String "6" to a number, or an Object to a String.
+Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"}}" }}` can to be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, for example, String "6" to a number, or an Object to a String.
 
 **Example with Typing**
 ```JavaScript
@@ -63,13 +63,13 @@ Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"
     "customer_orders": "{{ "{{context.orders}}" }}"
 }
 ```
-This would try to retrieve the orders Object from the Context and assign it to customer_orders. If context.orders doesn't exist, the "customer_orders" key is simply skipped.
+This would try to retrieve the orders Object from the Context and assign it to customer_orders. If `context.orders` doesn't exist, the "customer_orders" key is simply skipped.
 
 ## IF Conditions and SWITCH Operands
 
 Within conditions, CognigyScript is also written without `{{"{{ }}"}}` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
 
-???+ info "Example"
+!!! note "Example"
    `context.orders === 3` would be true, if the orders variable stored in the Context is 3.
 
 ## Code Nodes

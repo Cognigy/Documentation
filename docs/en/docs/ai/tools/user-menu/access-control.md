@@ -10,7 +10,7 @@ The Access Control interface offers a user management tool for organizational le
 Find the **Access Control** panel by:
 
 1. Clicking the *Profile Icon* in the top right corner of the interface
-2. Selecting *Access Control* from the drop down menu
+2. Selecting *Access Control* from the drop-down menu
 
 ## Users
 
@@ -26,7 +26,7 @@ With this release, the user list is improved with user "Last Active" information
   <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.png" width="100%" />
 </figure>
 
-???+ info "Tip: Global Users and Local Users (Members)"
+!!! note "Tip: Global Users and Local Users (Members)"
     Administrators can create **Global Users** on an organizational-level, that can then be assigned to specific Agents. These **Local Users** can have more granular roles within specific Agent projects that are configured using the [Members]({{config.site_url}}ai/resources/manage/members/) panel within each Agent.
 
 ## Create new Users
@@ -41,7 +41,7 @@ Administrators can use the *Create new User* button to add a User to the Organiz
   <img class="image-center" src="{{config.site_url}}ai/tools/images/0f3231e-usermenu-accesscontrol-newuser.jpg" width="100%" />
 </figure>
 
-???+ success "Passwords can be changed anytime and are stored securely"
+!!! tip "Passwords can be changed anytime and are stored securely"
     The user can later change the password from the admin panel.
 
 ## Global User Access Control
@@ -67,9 +67,9 @@ The following **Global Roles** are available:
 |OData|	Can use the Organisation Details section and access to the OData interface to query analytics information.|
 |Live Agent Admin | This role is assigned for users to access Cognigy Live Agent as an admin. This role has the same permissions as the Base Role in Cognigy AI.
 |Live Agent Agent | This role is assigned for users to access Cognigy Live Agent as an agent. This role has the same permissions as the Base Role in Cognigy AI.
-|userDetailsViewer| This role is limited to read-only access that grants users permissions to view user details, such as email addresses and user names. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.
+|userDetailsViewer| This role is limited to read-only access that grants users permissions to view user details, such as email addresses and usernames. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.
 
-???+ info "Control of Global Access Rights"
+!!! note "Control of Global Access Rights"
     The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.
 
 More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message/) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members/) panel of each agent.

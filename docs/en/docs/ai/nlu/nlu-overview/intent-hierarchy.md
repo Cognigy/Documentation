@@ -21,7 +21,7 @@ Intents can be structured into three layers:
 - Level 2 Intents
 - Level 3 Intents
 
-???+ success "Tip: Use Intent Naming Conventions"
+!!! tip "Tip: Use Intent Naming Conventions"
     It is recommended to follow a pattern when naming your intents. Either create a topic category name or use a numbering system to group intent families.
 
 Level 1 Intents can inherit Example Sentences from their level 2 child Intents, which can inherit Example Sentences from their level 3 grandchild Intents. 

@@ -11,7 +11,7 @@ The input object contains general information about the message such as the **Ti
 
 The input object is passed to the agent's [Flow]({{config.site_url}}ai/resources/build/flows/) to decide on the next action to take. For more information about the lifespan of the input, see the [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) page.
 
-???+ info "Intent Default Replys override flow logic"
+!!! note "Intent Default Replies override flow logic"
     If an intent is configured with a default reply, this will override the agent's flow logic and automatically be delivered as the response.
 
 <figure>
@@ -72,7 +72,7 @@ The detailed NLU results are published to the **nlu** variable which contains th
 |detailedSlots|	Contains the detected slots ranging from automatic to custom lexicon libraries.|
 |tokens|	Provides an array containing each word of the input sentence as a string element.|
 
-???+ info "NLU Properties are available after NLU only"
+!!! note "NLU Properties are available after NLU only"
     The below properties below are computed by the NLU Connector.
 
     Consequently they are published **after** the NLU.
@@ -98,8 +98,8 @@ Flow nodes can dynamically access Input properties via [Tokens]({{config.site_ur
 
 **Example**: `{{ " {{input.text}}" }}` would return the text message that was sent to the Flow.
 
-???+ info "Copy JSON Path from the Input Object"
-    You can copy the exact JSON path you need to reference a certain value in the Input object by right clicking it and selecting "Copy JSON Path" from the context menu. 
+!!! note "Copy JSON Path from the Input Object"
+    You can copy the exact JSON path you need to reference a certain value in the Input object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
 
 
 ## More information

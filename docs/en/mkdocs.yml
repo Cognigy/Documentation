@@ -51,6 +51,9 @@ extra_css:
 - assets/css/extra.css
 extra_javascript:
 - assets/js/custom.js
+- assets/js/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
 - Cognigy Products: index.md
@@ -61,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.47:
+    - release-notes/4.47.md
   - 4.46:
     - release-notes/4.46.md 
   - 4.45:
@@ -238,6 +243,7 @@ nav:
       - ai/flow-nodes/other-nodes/set-translation.md
       - ai/flow-nodes/other-nodes/request-rating.md
       - ai/flow-nodes/other-nodes/gpt-prompt.md
+      - ai/flow-nodes/other-nodes/gpt-conversation.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
@@ -493,6 +499,8 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+  - Reference:
+    - voicegateway/references/events.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
@@ -592,7 +600,14 @@ extra:
          data: 0
          note: >- 
             Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via a GitHub issue</a>
- 
+  consent:
+   title: Cookie consent
+   description: >-
+            We use cookies to recognize your repeated visits and preferences, as well
+            as to measure the effectiveness of our documentation and whether users
+            find what they're searching for. With your consent, you're helping us to
+            make our documentation better. To find out more about the cookies we use, see our <a href="https://www.cognigy.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+
 plugins:
 - section-index
 - macros

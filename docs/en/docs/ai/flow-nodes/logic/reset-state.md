@@ -14,5 +14,5 @@
 
 The Reset State node resets the State when the Node is hit. See [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) to learn more about States.
 
-???+ warning "Use with caution!"
+!!! warning "Use with caution!"
     Resetting the State loses information and is generally not a recommended pattern.

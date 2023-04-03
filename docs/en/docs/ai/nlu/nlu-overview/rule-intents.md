@@ -15,10 +15,10 @@ Rule intents are created in the same way as [Machine Learning Intents]({{config.
 
 Rule Intents require the following:
 
-| Item | Description |
-|-------|-------------|
-| Intent Name | Unique name of the Intent |
-| Rule(s) | A set of rules for this Intent (Minimum of one rule) |
+| Item        | Description                                          |
+|-------------|------------------------------------------------------|
+| Intent Name | Unique name of the Intent                            |
+| Rule(s)     | A set of rules for this Intent (Minimum of one rule) |
 
 ## Writing Rules
 <div class="divider"></div>
@@ -28,7 +28,7 @@ Each Intent can have any number of rules attached to it. The rules are written a
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b23c4c5-rules.PNG" width="100%" />
 </figure>
 
-???+ info "Rule Intent Example"
+!!! note "Rule Intent Example"
     The intent is `orderFood`. Rules could include.
 
     * input.text === "I want to order pizza"
@@ -88,7 +88,7 @@ Let's say we want to inform the user on a general level about a very specific to
 
 Additionally, it is very unlikely that "diabetes" will be mentioned when the user wants information about other diseases.
 
-???+ info "Good Rule Example"
+!!! note "Good Rule Example"
     For this use case the following rule should sufficiently cover a great variety of user input.
 
 ```js
@@ -97,8 +97,8 @@ ci.text.includes("diabetes")
 
 With this rule, any user input that includes the character sequence "diabetes" will trigger the intent - even within word combinations that are not separated by " " !
 
-???+ danger "Bad Rule Example"
-    The following rule will be worse than a ML intent with only one example sentence!
+!!! danger "Bad Rule Example"
+    The following rule will be worse than an ML intent with only one example sentence!
 
 ```js
 ci.text === "I want information about diabetes"

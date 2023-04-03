@@ -5,13 +5,13 @@
 ---
 # NLU Overview
 
-**Natural Language Understanding** is at the core of advanced Virtual Agents. Cognigy.AI features an industry leading NLU engine called Cognigy NLU. 
+**Natural Language Understanding** is at the core of advanced Virtual Agents. Cognigy.AI features an industry-leading NLU engine called Cognigy NLU. 
 
 ## Intents
 <div class="divider"></div>
 Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 
-???+ info "Want to learn how to use Intents?"
+!!! note "Want to learn how to use Intents?"
     Head over to **[Train your Virtual Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents)** in the Help Center.
 
 
@@ -40,9 +40,9 @@ Make sure you do not have intents that are only a single word or sentence withou
 If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to ``null`` in the [Input]({{config.site_url}}/ai/tools/interaction-panel/input/) object. You can add examples to the [Reject Intent]({{config.site_url}}ai/nlu/nlu-overview/reject-intents/) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
 ### NLU model feedback
 
-As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being sub-optimal and red being bad. Additional information is given on mouse-hover.
+As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being suboptimal and red being bad. Additional information is given on mouse-hover.
 
-???+ warning "Number of example sentences"
+!!! warning "Number of example sentences"
     Intents must have at least five example sentences in order to train the NLU.
 
 ### Rules
@@ -93,7 +93,7 @@ See [Intent Conditions]({{config.site_url}}ai/nlu/nlu-overview/conditions/) for 
 #### Confirmation Sentence
 Cognigy NLU comes with an intent confirmation mechanism that works by configuring Confirmation Sentences in each intent. Whenever an Intent score falls within a (configurable) range - let's say 0,4 - 0,6, the Confirmation Sentence is triggered and shown to the user. If the user confirms the Intent, the Intent will be triggered.
 
-???+ info "Adding Reconfirmation Sentences"
+!!! note "Adding Reconfirmation Sentences"
     Read more about how reconfirmation works on our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) page.
 
 ### Intent Options Menu
@@ -109,7 +109,7 @@ This option lets you upload Intent collection in either CSV or JSON format.
   * **Download Intents**
 Intents can be downloaded in CSV and JSON formats as well.
 
-  * **Create 'Reject Intent"**
+  * **Create Reject Intent**
 Reject Intents can be used to explicitly filter out certain utterances. A Reject Intent can be used in case certain user utterances should not be registered as an Intent.
 
   * **Delete All Intents**
@@ -135,11 +135,11 @@ Uploading does not delete existing intents that are not in the upload file. If y
 ### Individual Intent Options Menu
 Each intent additionally has its own options menu that can be selected by clicking on the three dots next to the Intent name. The menu provides a number of options:
 
-  * **Create 'Child Intent"**
+  * **Create Child Intent**
 Adds an intent as a child intent to the selection. See [Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/). This property is included on data import/export.
 
   * **Disable Intent**
-Disables the selected intent so that it cannot be recognized or activated by a user input. This function temporarily removes the intent and it's associated training data from the model but allows for it to be re-added in a single click. This property is included on data import/export.
+Disables the selected intent so that it cannot be recognized or activated by a user input. This function temporarily removes the intent, and it's associated training data from the model but allows for it to be re-added in a single click. This property is included on data import/export.
 
  * **Delete Intents**
 Removes the intent and all associated training data from the model.
@@ -152,7 +152,7 @@ Cognigy NLU can take into account additional Flows and Lexicons whenever they ar
 ### Attached Flows
 Whenever a Flow with Intents is attached to another Flow, the Intents in that Attached Flow are taken into account when training the NLU model. This is a practical way of combining different Intent collections into a bigger model. 
 
-???+ warning "Be careful with attaching Flows"
+!!! warning "Be careful with attaching Flows"
     Whenever a Flow is attached to another Flow, the Intents of both Flows are combined into a single model. This may lead to unexpected results.
 
 ### Attached Lexicons
@@ -163,7 +163,7 @@ Lexicons need to be attached to a Flow in order for a Flow to be able to detect 
 
 States can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collections.
 
-???+ info "States"
+!!! note "States"
     Refer to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) for more information.
 
 ## Slot Fillers

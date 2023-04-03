@@ -52,5 +52,5 @@ Once you obtained the initial user credentials, visit the web interface of Cogni
 
 Paste initial credentials (email and password) and your license-key (including both `====BEGIN LICENSE====` and `=====END LICENSE=====` delimiters) and click on `Activate license`. If everything worked, the application will redirect to the login screen on which you can log in to finally get start to use Cognigy.AI.
 
-???+ attention "Limited Windows support"
+!!! warning "Limited Windows support"
     If you open and save the file with the license key on a Windows machine it may become corrupted with hidden windows characters. Use a Linux machine to copy the license or a Windows text editor which can handle linux files properly, e.g. [Notepad++](https://notepad-plus-plus.org/)

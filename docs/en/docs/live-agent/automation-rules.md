@@ -58,7 +58,7 @@ Click on the **+ Add Automation Rule** button to open the Automation creation mo
 3. Select an event.
 4. Add conditions.
 5. Add actions.
-6. You can chain multiple conditions with the AND or OR operator, like in the example below.
+6. You can chain multiple conditions with the `AND` or `OR` operator, like in the example below.
 
 Example - Assigning a conversation to a team when the agent assist is active, and Status is Open when a new conversation is created.
 

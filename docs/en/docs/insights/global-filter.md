@@ -16,17 +16,17 @@ Cognigy Insights comes with so-called global filters. These filters can be set i
   <figcaption>Filter icon with tooltip</figcaption>
 </figure>
 
-Global filter always will be available no matter where you navigate. Once you have changed the filters, all of the data visualized in any location will respect your filter configuration.
+Global filter always will be available no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/06794a7-Global_filter_1_250.png" width="100%" />
   <figcaption>Global filter menu</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     **The global filter options are available in all applications running in Cognigy Insights.**
 
-???+ warning "Note"
+!!! warning
     **Every change in filter settings needs to be confirmed with “Apply” to be active.**
 
 Several filter menus provide a "**Negate**" slide bar. When active all but the selected endpoints will be analyzed. 
@@ -36,7 +36,7 @@ Several filter menus provide a "**Negate**" slide bar. When active all but the s
 
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     In v4.16 timeframe filter was updated to show currently selected date range. The widget is now placed on the top of the page.
 
     <figure>
@@ -77,7 +77,7 @@ option when setting a Custom Timeframe
 
 <div class="divider"></div>
 
-Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many different channels by configuring Endpoints.
+Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
 Endpoints examples are Webchat / Voice Gateway, Microsoft Teams, Google Actions,…
 You can find more information here: [Endpoints]({{config.site_url}}ai/endpoints/overview/)
 
@@ -106,7 +106,7 @@ So if you have tested the Virtual Agent using the Interaction Panel, you now wil
 
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     Before the version 4.15, it was only possible to inspect the data of a single snapshot at a time.
 
 A Snapshot is an exported Agent and includes required resources.
@@ -144,7 +144,7 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
   <figcaption>Local filter options</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     To clear all filter settings at once click on the "**Reset filters**" button.  We will show it if the value of any global filter is not equal to the default value.
 
 ## Rating
@@ -158,7 +158,7 @@ This filter allows you to select the analytics data based on the last user ratin
   <figcaption>Rating filter</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note
     See documentation for [Request rating Node]({{config.site_url}}ai/flow-nodes/other-nodes/request-rating/)
 
 
@@ -190,7 +190,7 @@ If you navigate to a specific destination within Insights and apply global filte
 
 Your advantages:
 
-- You can reload on any Insights Page and it will restore the global filters you selected before.
+- You can reload on any Insights Page, and it will restore the global filters you selected before.
 - You can reload on an open Transcript in the Transcript Explorer and you will land on the same page with the transcript open.
 - You can reload on the Message Explorer while having a "search" applied and get to the same as you were in before reloading.
 - You can reload on the Message Explorer while having a message selected and get to the same as you were in before reloading.
