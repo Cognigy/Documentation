@@ -148,7 +148,7 @@ The Datepicker comes with four advanced options:
 </figure>
 
 #### Date Format
-This field can be used to output a specific date format, like: "y-m-d".
+This field can be used to output a specific date format, like: "Y-m-d".
 
 #### Hide Calendar
 When enabled, the Datepicker will not display a calendar.
