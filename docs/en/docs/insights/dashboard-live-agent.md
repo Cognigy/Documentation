@@ -21,8 +21,6 @@ These metrics are visualized in the following charts:
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Each chart presents real-time data that refreshes every 30 seconds.
-
 All data displayed in the charts relate to the [global filter](global-filter.md) settings.
 
 <figure>
@@ -31,6 +29,8 @@ All data displayed in the charts relate to the [global filter](global-filter.md)
 </figure>
 
 ## Indicators 
+
+The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Live Agent Escalations
 
