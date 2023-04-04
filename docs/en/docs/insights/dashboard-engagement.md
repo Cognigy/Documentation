@@ -176,7 +176,7 @@ Result:
 ### Containment Rate
 
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../release-notes/4.48.md)
 
 Indicates the percentage of sessions without any handover during the timeline.
 

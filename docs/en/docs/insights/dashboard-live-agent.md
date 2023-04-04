@@ -6,6 +6,8 @@
 
 # Live Agent
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
+
 The Live Agent dashboard displays Live Agent metrics for a specific Virtual Agent.
 
 Using this dashboard, you can:

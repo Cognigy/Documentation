@@ -5,7 +5,7 @@
 ---
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
 
 ## Description
 <div class="divider"></div>
