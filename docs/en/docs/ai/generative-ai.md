@@ -63,7 +63,7 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 5. Select **Lexicon language** from the list.
 6. Set the number of entries (lexicon units).
 7. *(Optional)* Add the default [Slot](../ai/nlu/slot-mapping/slot-mapping.md).
-8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agent understand and recognize different variations of the same concept. Four to five synonyms will be generated for each keyphrase.
+8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agent understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
 9. Click **Create**.
 
 When Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
