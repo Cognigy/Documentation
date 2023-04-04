@@ -19,7 +19,7 @@ Click **Transcript Explorer** in the Insights sidebar menu.
 ## Message research
 <div class="divider"></div>
 
-The customer conversations will be displayed in a list with the following data: 
+The customer sessions will be displayed in a list with the following data: 
 
 - Session ID
 - Contact ID
