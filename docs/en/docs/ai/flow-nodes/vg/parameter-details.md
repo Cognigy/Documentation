@@ -29,6 +29,8 @@ The TTS settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 ### Recognizer - Speech-To-Text
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
+
 The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, AWS, Google, Nuance, Soniox, or a custom vendor.
 
 | Parameter                       | Type          | Description                                                                                                                                                                                                                                |
@@ -87,6 +89,8 @@ Continuous ASR enables the Voice Gateway to concatenate multiple STT recognition
 | Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are sent to the flow. |
 
 ### Advanced
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../../../release-notes/4.48.md)
 
 | Parameter                     | Type | Description                                                                                                                                                                                                                                                     |
 |-------------------------------|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

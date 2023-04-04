@@ -6,7 +6,7 @@ hidden: false
 
 # GPT Conversation (Research preview)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../release-notes/4.48.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation.png" width="80%" />

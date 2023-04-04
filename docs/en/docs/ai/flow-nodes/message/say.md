@@ -555,7 +555,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 
 ## Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
 
 To activate a Voice Gateway channel:
 
