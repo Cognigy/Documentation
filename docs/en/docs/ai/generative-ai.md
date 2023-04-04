@@ -58,12 +58,12 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Lexicons**.
 2. Click **+ New Lexicon**.
-3. On the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result.
+3. In the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result.
 4. Go to the **Lexicon Entry Generation** setting, and activate **Generate Lexicon Entries**.
 5. Select **Lexicon language** from the list.
 6. Set the number of entries (lexicon units).
 7. *(Optional)* Add the default [Slot](../ai/nlu/slot-mapping/slot-mapping.md).
-8. *(Optional)* Activate the creation of synonyms. They help virtual agent understand and recognize different variations of the same concept. Four to five synonyms will be generated for each keyphrase.
+8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agent understand and recognize different variations of the same concept. Four to five synonyms will be generated for each keyphrase.
 9. Click **Create**.
 
 When Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
@@ -80,7 +80,7 @@ To use Generative AI technology for creating a new Flow with pre-configured Node
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
 2. Click **+ New Flow**.
-3. On the **New Flow** window, go to the **Flow Generation** section and select one of the options:
+3. In the **New Flow** window, go to the **Flow Generation** section and select one of the options:
     - None - the Generative AI will not be applied to this Flow. This setting is activated by default.
     - Name and Description - the Generative AI will use the Name and Description fields for generating Flow.
     - Name and Transcript - the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
