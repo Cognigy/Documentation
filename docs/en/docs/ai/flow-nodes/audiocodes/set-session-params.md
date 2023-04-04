@@ -5,8 +5,6 @@
 ---
 # Set Session Params
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
-
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-set-session-params-node.png" width="100%" />
   <figcaption>AudioCodes Set Session params</figcaption>
