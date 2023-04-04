@@ -5,7 +5,7 @@
 ---
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)]({{config.site_url}})
 
 ## Description
 <div class="divider"></div>
@@ -14,27 +14,32 @@ in detail to improve your Agent, your customer service, and the user experience 
 
 The Transcript Explorer enables you to search for key phrases like "booking", "cancel", "message" in a list of transcripts.
 
+Click **Transcript Explorer** in the Insights sidebar menu.
+
 ## Message research
 <div class="divider"></div>
-- Click on "Transcript Explorer" in the Insights sidebar menu.
 
-The customer conversations will be displayed in a list with their contact IDs, message counts, used channel as well as date and time of the message. 
+The customer conversations will be displayed in a list with the following data: 
+
+- Session ID
+- Contact ID
+- Message Count
+- Channel
+- Endpoint
+- Date and time of the last message
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/442b547-Transcript_Explorer_n1.png" width="100%" />
-  <figcaption>Transcript Explorer displaying a list of transcripts (conversations) - local filter menu is open</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
+  <figcaption>Transcript Explorer displaying a list of transcripts (conversations)</figcaption>
 </figure>
 
+- Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
 - Use the **[global filter]({{config.site_url}}insights/global-filter/)** options to configure your research.
-
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option Virtual Agent Messages and leave the other options not selected.
-
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
 !!! note
-
-    Using the **"Negate "** slider bar**" all but the selected" filter options will be analyzed.
-    For example when selecting the 'Agent messages' and toggling "Negate" then all data will be analyzed but not Agent-message data.
+    Using the Negate slider bar, all filter options except the selected one will be analyzed. For example, when selecting Agent messages and toggling **Negate**, all data will be analyzed except for the Agent-message data.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/fd64fcb-Transcript_Explorer_n2.svg" width="100%" />
@@ -52,14 +57,9 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 - When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/942c078-Transcript_Explorer_n3.png" width="100%" />
-  <figcaption>Transcript Explorer: Search example for the key phrase "appointment"</figcaption>
-</figure>
-
 - Transcript Explorer provides a sorting function for "Message count" and "Last message". 
--- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
--- Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
+- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
+- Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
 
 ### "Contains Step" filter
 
