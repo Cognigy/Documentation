@@ -71,7 +71,15 @@ Similar to the export, the import of Packages is straightforward. Simply drag&dr
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
-### Importing Packages Created Prior v4.0.0
+## System Compatibility
+<div class="divider"></div>
+
+We guarantee backward compatibility for Packages, meaning that you can import Packages that have been produced in older versions of Cognigy.AI (e.g. v4.4) into newer releases. Packages taken with a newer version of Cognigy.AI are not compatible with older versions though.
+
+!!! warning "Importing a Package from a newer version of Cognigy.AI"
+  Packages from newer versions of Cognigy.AI should not be imported to older versions of Cognigy.AI. It may be possible to import a Package from a newer version of Cognigy.AI to an older version, but this is not supported and may result in unexpected behavior and errors for your Virtual Agents.
+
+## Importing Packages Created Prior v4.0.0
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
 Packages created before v4.0.0 may contain special characters not allowed in the current version. 
