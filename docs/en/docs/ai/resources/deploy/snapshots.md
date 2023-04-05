@@ -106,7 +106,7 @@ In order to restore a Virtual Agent from a Snapshot, do the following:
   * A new task will be created as deleting all current resources from the Virtual Agent and restoring the resources from the Snapshot can take some time
   * A success notification will be displayed once your Virtual Agent has been successfully restored from the Snapshot
 
-!!! note "Restoring a snapshot from another agent may require manual changes to the endpoints"
+!!! note "Restoring a Snapshot from another agent may require manual changes to the endpoints"
     [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
     Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the images below.
 
@@ -126,6 +126,9 @@ In order to actually delete the Snapshot, do the following:
 <div class="divider"></div>
 
 We are constantly improving the Snapshot feature including the file format for Snapshots. We guarantee backward compatibility for Snapshot, meaning that you can import Snapshots that have been produced in older versions of Cognigy.AI (e.g. v4.4) into newer releases. Snapshots taken with a newer version of Cognigy.AI are not compatible with older versions though.
+
+!!! warning "Restoring a Snapshot from a newer version of Cognigy.AI"
+  Snapshots from newer versions of Cognigy.AI should not be restored to older versions of Cognigy.AI. It is possible to import a Snapshot from a newer version of Cognigy.AI to an older version, but this is not supported and may result in unexpected behavior and errors for your Virtual Agents.
 
 ## Production deployment using Snapshots
 <div class="divider"></div>
