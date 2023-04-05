@@ -25,7 +25,7 @@ To configure Agent Assist only via API, do the following:
 1. [Get an API Key](#get-api-key)
 2. [Create a request](#create-a-request).
 
-### Get API Key
+### Get an API Key
 
 To get the API key, follow these steps:
 
@@ -96,7 +96,7 @@ To create an Endpoint, follow these steps:
 9. In **Agent Assist Config**, select the config which you recently created via API. 
 10. Click **Save**.
 
-## Configure Agent Assist Flow
+## Configure an Agent Assist Flow
 
 1. To configure the first tile, go into to the Agent Assist Flow.
 2. Add the **HTTP request** Node. 
@@ -115,7 +115,7 @@ To create an Endpoint, follow these steps:
 11. We have also added the outlines of the individual tiles before they have loaded. 
 12. As the human agent chats with the end user, the workspace will load the available tiles.
 
-## Agent Assist workspace overview
+## Explore an Agent Assist workspace
 
 Now, we can observe the Agent Assist workspace.
 

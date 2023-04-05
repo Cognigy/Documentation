@@ -11,7 +11,7 @@ hidden: true
 
 _Cognigy Agent Assist_ is an advanced AI-powered tool designed to provide real-time assistance to human agents during customer interactions. Cognigy Agent Assist provides a seamless experience for agents and customers by actively listening to conversations and suggesting relevant responses or information in real time. This feature empowers agents to deliver prompt and accurate support.
 
-By configuring your flexible and customizable Agent Assist Workspaces with widgets that display any information, you can improve the overall efficiency of your contact center.
+By configuring your flexible and customizable Agent Assist workspaces with widgets that display any information, you can improve the overall efficiency of your contact center.
 
 ## Key features
 
