@@ -298,9 +298,14 @@ nav:
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
 # - xApp:
-  # - ai/xApp/overview.md 
+  # - ai/xApp/overview.md
   # - ai/xApp/tokens.md 
-  # - ai/xApp/api.md 
+  # - ai/xApp/api.md
+# - Agent Assist:
+  # - ai/agent-assist/overview.md
+  # - ai/agent-assist/set-html-file.md
+  # - ai/agent-assist/set-adaptive-card-tile.md
+  # - ai/agent-assist/set-iframe-tile.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -390,7 +395,11 @@ nav:
     - ai/developer-guides/clients.md
   - Release Notes:
     - ai/release-notes/release-notes.md   
-
+# - Agent Assist:
+  # - agent-assist/overview.md
+  # - agent-assist/getting-started.md
+  # - agent-assist/flow-nodes/configuration.md
+  # - agent-assist/flow-nodes/xApp/embeddings.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md

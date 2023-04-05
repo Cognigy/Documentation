@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 slug: "getting-started"
-hidden: false
+hidden: true
 ---
 
 # Getting started with Agent Assist
@@ -13,23 +13,26 @@ To get started with the service:
 3. Copy the Agent ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Agent ID is `642c6a2cb45919dfae7b4428`.
 4. Save the copied Agent ID for the later use.
 5. Go to the left-side menu and click **Deploy > Flows**.
-6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one.
+6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one. 
+7. Create the additional Flow for Agent Assist.
+
+Check that you have two Flows: the Main flow and the Agent Assist flow.
 
 ## Configure Agent Assist
 
 To configure Agent Assist only via API, do the following:
 
-1. Get an API Key.
-2. Create a request.
+1. [Get an API Key](#get-api-key)
+2. [Create a request](#create-a-request).
 
 ### Get API Key
 
 To get the API key, follow these steps:
 
-1. In the upper-right corner of Cognigy.AI interface, click ![user-menu](../assets/icons/user-menu.svg).
+1. In the upper-right corner of Cognigy.AI interface, click **User Menu ![user-menu](../assets/icons/user-menu.svg) > My Profile**.
 2. In the **API Keys** section, click **+**.
 3. Add an API key name anc click **Confirm**. The API key will appear in the list.
-4. Copy this API Key and go to the **AUTHENTICATION** section on the [https://api-trial.cognigy.ai/openapi](Cognigy OpenApi)site.
+4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
 5. Paste the API Key to the following fields:
     - API Key (X-API-Key)
     - API Key (api_key)
@@ -41,7 +44,7 @@ To get the API key, follow these steps:
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
 3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid:
     - The grid should consist of 6 columns and 9 rows, with a gap of 16 for a better layout. 
-    - Your configuration should include 2 tiles. 
+    - The configuration should include 2 tiles. 
     - Use the project ID value to specify the Agent ID you previously copied and saved.
 
     ```json
@@ -71,7 +74,7 @@ To get the API key, follow these steps:
           }
         }
       },
-      "projectId": "^[a-z0-9]{24}$"
+      "projectId": "your Agent ID"
     }
     ```
 4. Create the request by clicking **Try**.
@@ -99,10 +102,10 @@ To create an Endpoint, follow these steps:
 2. Add the **HTTP request** Node. 
 3. Choose patch and add the URL to send the HTTP request to. Then we add our JSON payload. 
 4. To identify the right session, following IDs are necessary:
-    - Session ID. 
-    - User ID. 
-    - Project ID. 
-    - Organisation ID.
+    - Session ID 
+    - User ID 
+    - Project ID 
+    - Organisation ID
 5. Add the content for the first tile, which will display Cognigy documentation as an iframe.
 6. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration. 
 7. Add a header for authorization, and include the bearer token. 
@@ -114,13 +117,23 @@ To create an Endpoint, follow these steps:
 
 ## Agent Assist workspace overview
 
-Now, we can look at a simple Agent Assist workspace for Cognigy AI.
-Firstly, we can observe the basic information that the agent can access. A suggested reply is displayed on the left side, followed by the transcript, documentation, and a supporting image at the top.
+Now, we can observe the Agent Assist workspace.
+
+A suggested reply is displayed on the left side, followed by the transcript, documentation, and a supporting image at the top.
+
 Upon triggering a few intents, we can see that the Voice Gateway intent has been activated, modifying the suggested reply and the relevant documentation page.
+
 Additionally, the supporting image can be helpful when discussing the setup of the Voice Gateway.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}agent-assist/images/agent-assist-vg.png" width="80%" />
 </figure>
+
+## More information
+
+- [Agent Assist configuration](configuration.md)
+- [Agent Assist embedding](embedding.md)
+- [Agent Assist](overview.md)
+- [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 
 
