@@ -7,7 +7,7 @@ hidden: true
 # Set Adaptive Card Tile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/set-adaptive-card-title.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/set-adaptive-card-tile.png" width="80%" />
 </figure>
 
 ## Description
@@ -23,3 +23,10 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 | Adaptive Card JSON | HTML          | The Adaptive Card JSON to render inside the tile.                                                                                          |
 | JSON Data          | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                     |
 
+
+## More information
+
+- [Set HTML file](set-html-file.md)
+- [Set IFrame tile](set-iframe-tile.md)
+- [Agent Assist Nodes](overview.md)
+- [Agent Assist](../../../agent-assist/overview.md)

@@ -7,7 +7,7 @@ hidden: true
 # Set HTML Tile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/set-html-title.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/set-html-tile.png" width="80%" />
 </figure>
 
 ## Description
@@ -21,3 +21,9 @@ This Node allows you to display customized HTML content in the Agent Assist work
 | HTML Content | HTML          | The HTML content to render inside the IFrame.                                                                                              |
 | JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                     |
 
+## More information
+
+- [Set Adaptive card tile](set-adaptive-card-tile.md)
+- [Set IFrame tile](set-iframe-tile.md)
+- [Agent Assist Nodes](overview.md)
+- [Agent Assist](../../../agent-assist/overview.md)
