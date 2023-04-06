@@ -6,6 +6,8 @@ hidden: true
 
 # Getting started with Agent Assist
 
+In this getting started guide, you will learn how to configure Agent Assist by creating a Post request and explore the Agent Assist workspace.
+
 To get started with the service:
 
 1. Go to the Cognigy.AI interface.
@@ -107,13 +109,12 @@ To create an Endpoint, follow these steps:
     - Project ID 
     - Organisation ID
 5. Add the content for the first tile, which will display Cognigy documentation as an iframe.
-6. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration. 
-7. Add a header for authorization, and include the bearer token. 
-8. To view the Agent Assist workspace, start a chat and trigger a handover to a human agent. 
-9. A link with the Agent Assist workspace will be sent to the human agent. The human agent can access their Agent Assist workspace using this link. 
-10. Clicking on the link will reveal the transcript. 
-11. We have also added the outlines of the individual tiles before they have loaded. 
-12. As the human agent chats with the end user, the workspace will load the available tiles.
+6. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration.
+7. To view the Agent Assist workspace, start a chat and trigger a handover to a human agent. 
+8. A link with the Agent Assist workspace will be sent to the human agent. The human agent can access their Agent Assist workspace using this link. 
+9. Clicking on the link will reveal the transcript. 
+10. We have also added the outlines of the individual tiles before they have loaded. 
+11. As the human agent chats with the end user, the workspace will load the available tiles.
 
 ## Explore an Agent Assist workspace
 
