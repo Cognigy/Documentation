@@ -19,12 +19,12 @@ A variety of pre-built Extensions can be installed with a single click from the 
 
 - Selecting an extension from the Marketplace section will reveal more information - similar to when selecting an already installed extension.
 - You can copy the URL and open it in another tab, also when reloading the page.
-- You can search for Extensions using the "Search field".
+- You can search for Extensions using the **Search** field.
 - You can uninstall installed Extensions.
 
 You may also browse available Marketplace Extensions online at the [Cognigy.AI Marketplace](https://www.cognigy.com/marketplace#/).
 
-## Developing a custom Extension
+## Develop a custom Extension
 <div class="divider"></div>
 
 Cognigy allows anyone to extend the capabilities of Cognigy.AI by developing their own Extensions. Extensions are JavaScript or TypeScript Modules that can be exposed as Flow Nodes within Cognigy.AI. Extensions could be used for integrating with third-party APIs, for executing complex logic, for performing long-running computations or for creating convenience Nodes using various npm modules.
@@ -87,38 +87,39 @@ If you want to see examples of Extensions, visit our GitHub repository.
 </blockquote>
 
 
-### Handling Timeouts in an Extension
-Extensions have a default timeout of 20 seconds, meaning if the time it takes for the Extension to complete is more than 20 seconds, the Extension will stop and an error will be returned to the Flow. The Flow execution will continue, and the error can be accessed under ```input.extensionError.message```.
+### Handle Timeouts in an Extension
+Extensions have a default timeout of 20 seconds, meaning if the time it takes for the Extension to complete is more than 20 seconds, the Extension will stop and an error will be returned to the Flow. The Flow execution will continue, and the error can be accessed under `input.extensionError.message`.
 
 !!! warning "Extension Timeout"
     Extensions have a default time-out of 20 seconds. The time-out can be changed on dedicated Cognigy.AI installations.
 
-## Installing a custom Extension
+## Install a custom Extension
 <div class="divider"></div>
 
-You can install a custom Extension from the Extension Marketplace by using the “Upload Extension” button or by dragging and dropping.
-
+You can install a custom Extension from the Extension Marketplace by using the **Upload Extension** button or by dragging and dropping.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/7cf0412-Installing-Custom-Extensions.PNG" width="100%" />
   <figcaption>Installing a custom Extension</figcaption>
 </figure>
 
-## Updating a custom Extension
+## Update a custom Extension
 <div class="divider"></div>
 [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
 
-You can update a custom Extension by selecting the Extension either in the "Marketplace" section or in the "Installed" section and clicking update. If you select an extension in the "Marketplace" section, then the latest version from the Extension Marketplace will replace your installed Extension. If you select the extension in the "Installed" section, you will be asked to upload the updated Extension.
+You can update a custom Extension by selecting the Extension either in the **Marketplace** section or in the **Installed** section and clicking **Update**. If you select an extension in the **Marketplace** section, then the latest version from the **Extension Marketplace** will replace your installed Extension. If you select the extension in the **Installed** section, you will be asked to upload the updated Extension.
+
+[Trusted Extensions](#make-an-extension-trusted) can only be updated by admins or members with the `extension_trust_admin` project role.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/update-extension-package.png" width="100%" />
   <figcaption>Updating a custom Extension</figcaption>
 </figure>
 
-## Publishing an Extension
+## Publish an Extension
 <div class="divider"></div>
 
-If you want us to approve your developed extension and publish it on the Extension Marketplace, please follow the approval procedure explained in the readme of our [GitHub repository](https://github.com/Cognigy/Extensions).
+If you want us to approve your developed extension and publish it on the Extension Marketplace, follow the approval procedure explained in the readme of our [GitHub repository](https://github.com/Cognigy/Extensions).
 
 
 ## Extension Performance
@@ -152,13 +153,13 @@ Enabling the feature will not change anything automatically. Once the feature wa
 !!! danger "Security considerations"
     There is a reason why Extensions and their code will be executed in the secure environment, by default! Never trust the code of an Extension without properly reviewing the code within it! Extensions can use external packages from NPM which might contain harmful code and routines - once an Extension runs in the "native context", it might be able to steal sensitive information. Please make sure that you are aware of these implications before changing the execution context.
 
-### Making an Extension Trusted
+### Make an Extension Trusted
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.46-blue.svg)](../../../release-notes/4.46.md)
 
 All trusted Extensions are marked with the special icon ![trust-extensions](../images/icons/trusted-extension.svg).
 
-You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
+You can make your uploaded Extensions trusted. It could be pre-installed Extension or a custom one. To allow users to make Extensions trusted and update them, an admin must add the `extension_trust_admin` role in the [virtual agent project](members.md). The project admin has this role by default.
 
 To mark an Extensions as trusted, follow these steps:
 
@@ -190,7 +191,7 @@ FEATURE_ADDITIONAL_SYSTEM_WIDE_EXTENSIONS_PATH
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
 
-## Caching Extensions in local Directory
+## Cache Extensions in local Directory
 
 <div class="divider"></div>
 
@@ -205,7 +206,7 @@ If required you can adjust the behavior by adding and configuring environment va
 MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB
 ```
 
-The default value of MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB is 512 MB.
+The default value of `MAX_EXTENSIONS_CACHE_DIR_SIZE_IN_MB` is 512 MB.
 
 The cache is within the [Kubernetes pod](https://kubernetes.io/docs/concepts/workloads/pods/) of service-execution. So it makes no difference if you are processing on-premises or trial, app, etc.
 
