@@ -10,7 +10,7 @@ In case, you cannot obtain credentials from logs of `service-security` in the wa
 !!! warning "Attention: Loss of Data"
     All Organizations and Users will be lost as a result of this operation. Perform this process only during initial Cognigy.AI setup. 
 
-To generate new initial user credentials, please run the following commands:
+To generate new initial user credentials, run the following commands:
 
 1. Drop the collections in `service-security` database by connecting to the _primary_ node of MongoDB. To get which node is primary, execute `rs.status()`:
 

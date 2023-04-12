@@ -52,7 +52,7 @@ The procedure differs if you want to reuse your existing Amazon Lex bots for NLU
 
  
 
-To reuse the Amazon Lex NLU, please refer to these articles: 
+To reuse the Amazon Lex NLU, refer to these articles: 
 
 - [HelpCenter: Amazon Lex Intro](https://support.cognigy.com/hc/en-us/articles/6229744711964) 
 
@@ -62,7 +62,7 @@ To reuse the Amazon Lex NLU, please refer to these articles:
 
  
 
- If you want to use the Cognigy.AI NLU, please refer to these articles: 
+ If you want to use the Cognigy.AI NLU, refer to these articles: 
 
 - [HelpCenter: Amazon Lex Intro](https://support.cognigy.com/hc/en-us/articles/6229744711964) 
 
@@ -72,7 +72,7 @@ To reuse the Amazon Lex NLU, please refer to these articles:
 
  
 
- If you want to integrate your Amazon Lex bot into Amazon Connect, please refer to these articles: 
+ If you want to integrate your Amazon Lex bot into Amazon Connect, refer to these articles: 
 
 - [HelpCenter: Amazon Connect: Intro](https://support.cognigy.com/hc/en-us/articles/6229662732444) 
 

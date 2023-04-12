@@ -78,7 +78,7 @@ The Agent in which the Connection is to be overridden should initially be either
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
-Endpoints also need an entry [**Flow**]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Please note that it is possible to switch Flows during a conversation. 
+Endpoints also need an entry [**Flow**]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Note that it is possible to switch Flows during a conversation. 
 As of Cognigy.AI 4.9.0, you can use the "**jump to Flow**" button next to the Flow selection field on the right-hand side.
 
 <figure>

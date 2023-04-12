@@ -50,7 +50,7 @@ In order to create a new Snapshot of the current state of your Virtual Agent, cl
 !!! note
     Since Snapshots contain a copy of your Virtual Agent, they can have a huge file-size. Hence, we have introduced a limit of 10 Snapshots per Virtual Agent. If you have reached the limit, you have to first delete older Snapshots before you can create new ones. Customers with a dedicated installation can increase the maximum number of Snapshots via an environment variable in the cognigy-env config-map:
     MAX_AMOUNT_SNAPSHOTS_IN_AGENT.
-    Please note that there is also a file size limit of Snapshots which can be changed when a dedicated product installation is used. This aspect can be changed via the following environment variable in the cognigy-env config-map:
+    Note that there is also a file size limit of Snapshots which can be changed when a dedicated product installation is used. This aspect can be changed via the following environment variable in the cognigy-env config-map:
     SNAPSHOT_MAX_FILE_SIZE.
 
 ### Download a Snapshot
@@ -155,7 +155,7 @@ A customer wants to build a Virtual Agent for FAQs on their website. Two Agents 
 **In order to release** the Snapshot, somebody with access to the "FAQ Bot production" uploads the packaged Snapshot and then points the productive Webchat endpoint to the new version of the Snapshot.
 
 !!! note "Snapshots should not get restored"
-    Please remember that Snapshots do not have to be restored in order for Endpoints to actually use their content! The "FAQ Bot production" Virtual Agent should not contain direct resources like Flows. It should only contain Snapshots and its Endpoints should point to Snapshots directly.
+    Remember that Snapshots do not have to be restored in order for Endpoints to actually use their content! The "FAQ Bot production" Virtual Agent should not contain direct resources like Flows. It should only contain Snapshots and its Endpoints should point to Snapshots directly.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/deployment-two-agents.drawio.png" width="100%" />

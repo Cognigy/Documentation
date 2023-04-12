@@ -133,4 +133,4 @@ Providing a valid Flow name and clicking the *Create* button in the dialog will 
 
   * The Intents/Slots will not be parsed, and the Context will not be absorbed when executing the new Executed Flow.
 
-  * Also, NLU configuration/settings/default Context etc. will not be copied to Executed Flow. Therefore, please check and adjust the NLU section of the created Flow, as necessary.
+  * Also, NLU configuration/settings/default Context etc. will not be copied to Executed Flow. Therefore, check and adjust the NLU section of the created Flow, as necessary.

@@ -19,12 +19,12 @@ Cognigy.AI's UI supports the following recent browsers:
 For security reasons we don't support older versions of the listed web browsers.
 
 !!! note "Browser compatibility"
-    If you encounter issues with our product, please first check which browser version you are using. Ensure that you are using the latest version of one of the mentioned browsers before you open any support case with us.
+    If you encounter issues with our product, first check which browser version you are using. Ensure that you are using the latest version of one of the mentioned browsers before you open any support case with us.
 
-In order to use the application correctly, please make sure that your viewport is larger than 1280x800 Pixels.
+In order to use the application correctly, make sure that your viewport is larger than 1280x800 Pixels.
 
 !!! warning "Microsoft Japanese IME"
-    For using MS-IME, please make sure to use Edge or Chrome Browsers on Windows 10 or higher, as there might be issues with other browsers and operating systems.
+    For using MS-IME, make sure to use Edge or Chrome Browsers on Windows 10 or higher, as there might be issues with other browsers and operating systems.
 
 ## Cognigy.AI Webchat
 

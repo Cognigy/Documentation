@@ -35,4 +35,4 @@ To illustrate:
 
 ## JSON
 <div class="divider"></div>
-The Cognigy Intent JSON format specifies your intents completely. For more details please refer to our API documentation [here](https://api-trial.cognigy.ai/openapi#post-/v2.0).
+The Cognigy Intent JSON format specifies your intents completely. For more details refer to our API documentation [here](https://api-trial.cognigy.ai/openapi#post-/v2.0).

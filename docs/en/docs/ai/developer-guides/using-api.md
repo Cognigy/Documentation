@@ -121,4 +121,4 @@ https://api-trial.cognigy.ai/openapi#post-/management/v2.0/organisations/{organi
 This API-key is not bound to a specific user and lives within the scope of an Organization. It can be used to manipulate all assets and objects within the system.
 
 !!! note "Super API-Key and TTL"
-    Please note that this API-key has a default TTL (=Time to life) of 15 minutes for security reasons. Once the key has been created, it will only be valid for 15 minutes.
+    Note that this API-key has a default TTL (=Time to life) of 15 minutes for security reasons. Once the key has been created, it will only be valid for 15 minutes.

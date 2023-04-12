@@ -17,7 +17,7 @@ Head over to [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md
 To create an Agent with multiple roles, read the [Roles](roles.md#multiple-roles) article.
 
 ### What happens if an Inbox is deleted?
-Inboxes created manually can be safely deleted, except those with the `-default` suffix. Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, please see the solution in the question below.
+Inboxes created manually can be safely deleted, except those with the `-default` suffix. Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, see the solution in the question below.
 
 ### What should I do if the Inbox is deleted?
 
@@ -98,7 +98,7 @@ The OData service returns data belonging to your account.
 Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
 
 ### Why is the OData endpoint throwing an unauthorised error while querying?
-While getting an unauthorised error, please check that the API access token belongs to a user with the administrator role for the account used in the query.
+While getting an unauthorised error, check that the API access token belongs to a user with the administrator role for the account used in the query.
 
 ### How to retrieve all content from a particular collection? (e.g. Conversation, Message)
 The following filtering query can be performed:

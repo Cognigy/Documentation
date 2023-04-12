@@ -32,6 +32,6 @@ This will require you to fill out the following related fields to connect to "Ge
 </figure>
 
 ### Complete Setup Steps
-To complete your setup, please follow the steps in our Help Center article:
+To complete your setup, follow the steps in our Help Center article:
 
 - [Help Center: Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292)

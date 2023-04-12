@@ -58,7 +58,7 @@ An Optional Question Node is used to ask a question that requests specific infor
 Question node output types carry the same functionality as the [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
 
 !!! success "Date Questions"
-    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Please refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
+    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
 ## Advanced
 <div class="divider"></div>
 

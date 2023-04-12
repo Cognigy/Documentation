@@ -40,7 +40,7 @@ Notify, in contrast to inject, can only be used to send a simple **text** and/or
 
 <div class="divider"></div>
 
-Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) and can therefore easily be accessed with [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) and the JSON syntax. Please have a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject/)  to get more information about /inject and /notify.
+Our /inject and /notify APIs need a certain payload you will need to send, in order to use their functionality. The necessary data you will need is exposed within the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) and can therefore easily be accessed with [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) and the JSON syntax. Take a look at our [API Reference](https://api-trial.cognigy.ai/openapi#post-/v2.0/endpoint/inject/)  to get more information about /inject and /notify.
 
 You can use the [HTTP Request-Node]({{config.site_url}}ai/flow-nodes/services/http-request/) to trigger the external long-running process, where you can send the necessary information for notify and inject next to the external specific payload.
 

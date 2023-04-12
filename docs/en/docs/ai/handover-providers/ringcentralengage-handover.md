@@ -21,7 +21,7 @@ Open the Endpoint where you would like to enable Handover to RingCentral Engage.
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/ringcentralengage-endpoint.png" width="75%" />
     </figure>
 
-To complete your setup, please see the following Help Center article: 
+To complete your setup, see the following Help Center article: 
 
 - [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration)
 

@@ -75,7 +75,7 @@
 
 ### Features
 
-This release of Cognigy.AI adds a new user interface for inspecting Playbook Runs. This allows our customers to see the status of Playbooks they ran server side. Please have a look at our product documentation for more information.
+This release of Cognigy.AI adds a new user interface for inspecting Playbook Runs. This allows our customers to see the status of Playbooks they ran server side. Take a look at our product documentation for more information.
 
 ### Improvements
 
@@ -619,7 +619,7 @@ This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy 
 
 ### Improvements
 - Improved by adding a Tourist Guide Template for NLU language Japanese
-- Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Please note: The changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag.
+- Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Note: The changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag.
 - Update internal WebchatWidget to version v2.38.1
 
 ### Bugfixes
@@ -814,7 +814,7 @@ This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did no
 
 ### Features
 #### Cognigy Insights
-This release of Cognigy.AI makes Cognigy Insights the default tool for inbuilt analytics. Insights is a totally new way to explore usage information about our virtual agents. Please have a look at our product website for Insights:
+This release of Cognigy.AI makes Cognigy Insights the default tool for inbuilt analytics. Insights is a totally new way to explore usage information about our virtual agents. Take a look at our product website for Insights:
 https://www.cognigy.com/products/cognigy-insights
 
 #### Machine translation for enhanced agent building
@@ -1119,7 +1119,7 @@ Packages allow our customers to export individual resources like Flows or Lexico
 Cognigy has integrated "Chatwoot" as an additional handover provider that can be used by our customers to connect their users with real agents. Chatwoot is an open-source solution and free to use.
 
 #### Cognigy Functions
-Cognigy Functions are a big leap forward when it comes to running asynchronous code in the background. Functions allow you to schedule long-running code (e.g. 10 minutes!) in the background. Functions can be triggered and started via our RESTful API or from within your Flows. Your code in Functions will be executed in a save containment and can inject results back into your user's conversational sessions. Please check our documentation for more info on Functions.
+Cognigy Functions are a big leap forward when it comes to running asynchronous code in the background. Functions allow you to schedule long-running code (e.g. 10 minutes!) in the background. Functions can be triggered and started via our RESTful API or from within your Flows. Your code in Functions will be executed in a save containment and can inject results back into your user's conversational sessions. Check the Cognigy documentation for more info on Functions.
 
 #### OpenID Connect
 Cognigy.AI already supports SSO (Single Sign-On) through the usage of our SAML 2.0 integration. With this release, we have now added support for OpenID Connect. Customers can now select which type of strategy they want to use in order to implement their corporate SSO strategy.
@@ -1289,7 +1289,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - improved various sections in our RESTful API documentation (OpenAPI spec)
 - added the new validation concepts which we have recently introduced into Question Nodes for Slot Fillers as well
 - improved tooltips and wording of such in various locations within our user interface
-- update our integrated WebchatWidget to version 2.25.2 which brings in multiple improvements; please check the changelog in the WebchatWidget GitHub repository for more details
+- update our integrated WebchatWidget to version 2.25.2 which brings in multiple improvements; check the changelog in the WebchatWidget GitHub repository for more details
 - improved the look and feel of various selects and autocomplete-fields and make them more consistent
 - improved our documentation for applying a custom theme to the Cognigy.AI user interface
 
@@ -1343,7 +1343,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Added the Avaya CPAAS endpoint
 - Improved the capability of our snapshotting feature and improved support for large assets (e.g. lexicons with > 70.000 entries)
 - Improved user experience in the Flow Editor by adding a suffix when creating e.g. two Say-Nodes
-- Update our integrated WebchatWidget to version 2.25.1 which brings in multiple improvements. Please consult the changelog in the WebchatWidget GitHub repository
+- Update our integrated WebchatWidget to version 2.25.1 which brings in multiple improvements. Consult the changelog in the WebchatWidget GitHub repository
 - Added snapshot description as a tooltip when hovering the snapshots in the list view
 - Improved our pre-defined tokens and adopted them to use the newer syntax for input, context & profile
 - Added support to reparse Google Dialogflow slots
@@ -1432,7 +1432,7 @@ We are always happy to extend the capabilities of our product and would love to 
 #### WebchatWidget WCAG 2.0 Level A Compliance
 We added full support for WCAG 2.0 Level A Compliance to our WebchatWidget. Release 2.24.0 of our WebchatWidget offers accessibility features we did not support, yet. We have also added the ability to specify the necessary alternative text for all sorts of rich-media elements our users can compose in the 'default' and 'webchat' Channels within our Say-Node editor.
 
-Please have a look at our release-page on GitHub:
+Take a look at our release-page on GitHub:
 https://github.com/Cognigy/WebchatWidget/releases/tag/v2.24.0
 
 #### Additional Question Node Features
@@ -1595,7 +1595,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 ## 4.0.0
 **Released:** October 2nd, 2020
 
-This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make Cognigy.AI the most advanced conversational AI platform on the market. Please feel free to explore our new documentation and sign up for your free product trial:
+This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make Cognigy.AI the most advanced conversational AI platform on the market. Feel free to explore our new documentation and sign up for your free product trial:
 https://signup.cognigy.ai/
 
 ### Features
