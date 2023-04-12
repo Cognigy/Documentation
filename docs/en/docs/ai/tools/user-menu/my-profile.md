@@ -27,7 +27,11 @@ This section shows a list of previous login-sessions and their location (if avai
 
 ## API Keys
 
-Application Programming Interface (API) Keys are security tokens registered to a user account that can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. This provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
+Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
+
+API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. 
+
+API keys provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
 
 ### Create API Keys
 
@@ -38,7 +42,7 @@ To create an API key, follow these steps:
 1. On the **My profile** page, go to the **API Keys** section.
 2. Click **+**. 
 3. Enter a unique name of the API key and click **Confirm**.
-4. Copy the key by clicking on the key value, and save it to your local storage. For security reasons, the key is shown only once in this window, so if you do not save the key, you cannot see or copy the key value again.
+4. Copy the key by clicking on the key value, then save it to your local storage. For security reasons, the key is shown only once in this window, so if you do not save the key, you cannot see or copy the key value again.
 
 Once the API key is created, its name and creation date will be displayed in the list of API keys.
 
