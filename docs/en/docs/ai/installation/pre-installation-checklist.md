@@ -8,7 +8,7 @@ hidden: false
 
 Before proceeding with your on-prem installation with or without installation support from Cognigy side, make sure the criteria from the following checklist are met:
 
-1. Please read through the installation instructions in `README.md` files in both helm charts ([MongoDB](https://github.com/Cognigy/cognigy-mongodb-helm-chart) and [Cognigy.AI](https://github.com/Cognigy/cognigy-ai-helm-chart)) in advance and complete necessary preparations.
+1. Read through the installation instructions in `README.md` files in both helm charts ([MongoDB](https://github.com/Cognigy/cognigy-mongodb-helm-chart) and [Cognigy.AI](https://github.com/Cognigy/cognigy-ai-helm-chart)) in advance and complete necessary preparations.
 
 2. Prerequisites for MongoDB Helm Chart installation are met (see `README.md` file in [MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) for details).
 

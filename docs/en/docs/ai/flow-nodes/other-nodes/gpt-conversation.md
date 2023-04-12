@@ -95,7 +95,7 @@ At 0:12 second, the user receives the expected answer from the virtual agent in 
 
 ```text
 Sorry to hear about the emergency, <user name>. 
-Can you please provide me with your ticket number 
+Can you provide me with your ticket number 
 so that I can help you get to London as quickly as possible? 
 Thank you.
 ```

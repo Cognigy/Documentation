@@ -6,7 +6,7 @@ hidden: false
 
 # Install Voice Gateway
 
-In order to install Voice Gateway, please get in touch with us via an email to <a href="mailto:support@cognigy.com?subject=Request to install Cognigy Voice Gateway">support@cognigy.com</a>.
+In order to install Voice Gateway, get in touch with us via an email to <a href="mailto:support@cognigy.com?subject=Request to install Cognigy Voice Gateway">support@cognigy.com</a>.
 
 <!---
 TODO: Update the Voice Gateway Helm Chart links (main page and readme) with the public GitHub Helm Chart repository once we have it.
@@ -25,5 +25,5 @@ Once Helm releases is successfully installed, you can open a web-browser and vis
 
 ## Initial Login Credentials
 
-Once you are able to see the Voice Gateway login screen you can be use to log in, the default `admin` user with initial password `admin` as well. You will be asked to change the password after the first login, please do that and choose a strong new password.
+Once you are able to see the Voice Gateway login screen you can be use to log in, the default `admin` user with initial password `admin` as well. You will be asked to change the password after the first login, do that and choose a strong new password.
 --->

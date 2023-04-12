@@ -52,7 +52,7 @@ Here you can log in directly to your Amazon account that has access to your Alex
 Once a skill has been selected, click the **DEPLOY** button to configure your skill to use this endpoint when invoked. The process can also be carried out manually, visit our [help center](https://support.cognigy.com/hc/en-us/articles/360016192979) for more info.
 
 !!! note "Help Center"
-    More detailed information on how to set up an **Alexa** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
+    More detailed information on how to set up an **Alexa** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
 
 ## More information
 

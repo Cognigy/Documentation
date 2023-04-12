@@ -224,7 +224,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 | greeting_message         | Automatic Greeting Message                                                  | String  | "Hi there!"                                      |
 | email_address            | Email Address                                                               | String  | default                                          |
 | working_hours_enabled    | Feature That Enables A Working Hours Timetable                              | Boolean | true                                             |
-| out_of_office_enabled    | Default Message That Will Be Displayed During Out Of Office Hours           | String  | "Out of office hours, please try again tomorrow" |
+| out_of_office_enabled    | Default Message That Will Be Displayed During Out Of Office Hours           | String  | "Out of office hours, try again tomorrow" |
 | timezone                 | Inbox Timezone                                                              | String  | "UTC"                                            |
 | enable_email_collect     | Allows To Email Collection                                                  | Boolean | true                                             |
 | csat_survey_enabled      | Allows CSAT Survey                                                          | Boolean | true                                             |

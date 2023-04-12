@@ -85,4 +85,4 @@ The `Handover to Agent` Node has the following fields:
 
 ## Handover Providers
 
-For a list of supported Handover services, please refer to the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
+For a list of supported Handover services, refer to the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).

@@ -26,7 +26,7 @@ As an example; The api-url for the trial environment is "api-trial.cognigy.ai". 
 You will need this SSO URL when configuring your IDP in one of IDP setup guides.
 
 !!! note "Configuring the SSO Provider with Cognigy.AI"
-    Please refer to one of the more specific guides for the **supported Identity Providers** at the bottom of the article under **Next Steps** for an example of the required API request. 
+    Refer to one of the more specific guides for the **supported Identity Providers** at the bottom of the article under **Next Steps** for an example of the required API request. 
     In case your Identity Provider is not listed, we advise you to take [**OneLogin guide**](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin#introduction-0-0) as an example. The API request for configuring SSO with Cognigy.AI is identical, yet the configuration values differ per provider.
 
 ## Getting the SLO URL

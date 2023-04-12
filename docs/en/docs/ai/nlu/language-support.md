@@ -123,7 +123,7 @@ A powerful and useful way to use the Universal Language is by using Rule Intents
 
 * input.slots.food[0].keyphrase === "pizza"
 
-Which means that as soon as the user mentions the word pizza, this Intent will be triggered. For more information on how to use these Intents, please go [here]({{config.site_url}}ai/nlu/nlu-overview/overview/#rules).
+Which means that as soon as the user mentions the word pizza, this Intent will be triggered. For more information on how to use these Intents, go [here]({{config.site_url}}ai/nlu/nlu-overview/overview/#rules).
 
 ### Adding Positive and Negative Confirmation Words
 For our askYNQuestion Nodes to work, we need to know which words are positive confirmations, and which words are negative confirmations. For instance, if you use English as a language, then we know that if the user answers "yes", then we will trigger the onYes part of the askYNQuestion Node. However, since you are essentially using any language by using the Universal language, we don't have this information. You, therefore, need to open the FlowProperties panel in your Flow and navigate to settings. Here are two settings called "Additional confirmation words" and "Additional negative confirmation words". The first one is a list of words that should trigger the onYes part of an askYNQuestion Node, whereas the second one is a list of words that should trigger the onNo part of an askYNQuestion Node. You simply write each variation into a new row. You can also use these to extend the confirmation words for other languages.

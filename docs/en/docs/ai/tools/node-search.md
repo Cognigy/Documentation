@@ -7,7 +7,7 @@
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
 
-With the Node Search field, one can carry out a case-insensitive search through the flow nodes. Please take a look [here]({{config.site_url}}ai/tools/node-search/#searchable-contents) for a list of what can be searched within a flow.
+With the Node Search field, one can carry out a case-insensitive search through the flow nodes. Take a look [here]({{config.site_url}}ai/tools/node-search/#searchable-contents) for a list of what can be searched within a flow.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/node-search-field.png" width="100%" />

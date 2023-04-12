@@ -80,6 +80,6 @@ The Agent can click the blue arrow to forward content to the customer.
 
 This completes the setup for Agent Assist!
 
-For more, please visit our Live Agent documentation here: 
+For more, visit our Live Agent documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)

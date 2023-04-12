@@ -55,7 +55,7 @@ void
 ---
 Sets the NLU Parser to only detect dates in the future for DATE slots.
 
-**Please Note: This setting will take effect on the next input only**
+**Note: This setting will take effect on the next input only**
 
 #### Parameters
 | Parameter | Type      | Description                                        |

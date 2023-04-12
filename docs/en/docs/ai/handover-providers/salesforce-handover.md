@@ -168,4 +168,5 @@ To create fields and link the User details received via Pre-Chat Details to a Sa
    ]
 ```
 
-!!! note "Please se the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail) for more information Pre-Chat Entities and Pre-Chat Details fields and their usage." 
+!!! note 
+    Read the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail) for more information Pre-Chat Entities and Pre-Chat Details fields and their usage. 

@@ -236,7 +236,7 @@ There is an example of a custom-built integration in the Example repository (see
 
 <div class="divider"></div>
 
-Please find example implementations for various transformers in our new GitHub repository:
+You can find example implementations for various transformers in our new GitHub repository:
 
 https://github.com/Cognigy/TransformersSamples
 

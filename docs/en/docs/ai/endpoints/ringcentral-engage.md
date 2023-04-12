@@ -57,7 +57,7 @@ The category ID which will be used to identify the bot. This value is obtained f
 The category ID which will be used to identify the agent. This value is obtained from the RingCentral Engage platform.
 
 !!! note "Help Center"
-    More detailed information on how to set up a **RingCentral Engage** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
+    More detailed information on how to set up a **RingCentral Engage** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
 ## More information
 
 - [Help Center: RingCentral Engage Deployment](https://support.cognigy.com/hc/en-us/articles/360016306779-RingCentral-Engage-Deploy-an-Endpoint)

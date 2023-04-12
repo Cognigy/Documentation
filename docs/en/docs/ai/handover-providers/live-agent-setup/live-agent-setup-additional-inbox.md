@@ -109,6 +109,6 @@ You have now completed the setup for an additional Inbox.
 ## See Further Live Agent Documentation
 <div class="divider"></div>
 
-For more, please visit our Live Agent documentation here: 
+For more, visit our Live Agent documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)

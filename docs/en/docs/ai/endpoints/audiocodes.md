@@ -79,7 +79,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
 !!! note "Contact Center & Phone number linking"
-    To link a **AudioCodes** **Endpoint** to a phone number, please contact your **Cognigy** representative in order to provision and configure a VG instance.
+    To link a **AudioCodes** **Endpoint** to a phone number, contact your **Cognigy** representative in order to provision and configure a VG instance.
 
 !!! warning "AudioCodes VoiceAI Connect"
     Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.

@@ -5,7 +5,7 @@
 ---
 # Agent Analytics
 
-With **Cognigy.AI v4.10.0** we made [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) the default analytics platform. Please head over to the Cognigy Insights specific documentation for more info.
+With **Cognigy.AI v4.10.0** we made [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) the default analytics platform. Head over to the Cognigy Insights specific documentation for more info.
 
 ## Customization
 <div class="divider"></div>

@@ -50,7 +50,7 @@ Question Nodes have a Type which defined what kind of answer is required from th
 | Custom      | Any input                                                                                                                                                                                                                               |
 
 !!! warning "Regex"
-    Please make sure that your regular expression starts with a **/** and ends with **/g**.
+    Ensure that your regular expression starts with a **/** and ends with **/g**.
 
     Example:
 
@@ -64,7 +64,7 @@ Question Nodes have a Type which defined what kind of answer is required from th
 Question node output types carry the same functionality as the [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
 
 !!! tip "Date Questions"
-    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Please refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
+    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
 ## Re-prompt Options
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})

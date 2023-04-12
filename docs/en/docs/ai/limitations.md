@@ -9,7 +9,7 @@
 This page contains default quotas and limitations that apply to new Cognigy AI installations. 
 
 !!! note "Changing values for managed Cognigy AI environments"
-    In case you want to request a change for your managed Cognigy  AI environment, please submit a Support request using this template: 
+    In case you want to request a change for your managed Cognigy  AI environment, submit a Support request using this template: 
     ````
     Hello Cognigy Support, 
 
