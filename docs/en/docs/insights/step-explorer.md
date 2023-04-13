@@ -28,7 +28,7 @@ When the Step Explorer is selected, the agent name is displayed in the top left 
 <div class="divider"></div>
 
 !!! warning
-    **Every change in filter settings needs to be confirmed with “Apply” to be active.**
+    Every change in filter settings needs to be confirmed with **Apply** to be active.
 
 **Local filter options**
 <div class="divider"></div>
@@ -117,8 +117,8 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
 89% of users who needed an explanation completed the booking.
 
 !!! note
-    **The red marked areas of a step represent the number of users who dropped off at that point. 
-    You may take an early "drop off" in a conversation to improve your Agent and to inspect with our [Message Explorer]({{config.site_url}}insights/message-explorer/) what did the Virtual Agent say before the user dropped off.**
+    The red marked areas of a step represent the number of users who dropped off at that point. 
+    You may take an early "drop off" in a conversation to improve your Agent and to inspect with our [Message Explorer]({{config.site_url}}insights/message-explorer/) what did the Virtual Agent say before the user dropped off.
 
 - You can get more details displayed when you hover the mouse over any step.   
 

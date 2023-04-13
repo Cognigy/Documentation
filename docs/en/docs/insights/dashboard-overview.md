@@ -20,7 +20,7 @@ The currently selected dashboard is displayed next to the agent in the top left 
 
 The dashboard overview page contains various metrics displayed as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts.
 
-All data displayed in the charts relate to the global filter settings. You can configure global filter settings as described here: [Global filter options](global-filter.md).
+{! _includes/insights/global-filters.md !}
 
 !!! note
     When hovering any chart or metrics field, rating details will be displayed in a tooltip.
@@ -39,6 +39,7 @@ When hovering the line chart, details as for example the rated month, the year a
 
 !!! note
     The on top of the dashboard placed blue tiles show currently valid data in a "live" mode. That means that data will be refreshed every 30 seconds to be updated.
+
 <div id="overview"></div>
 
 | Graph title         | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -53,6 +54,7 @@ When hovering the line chart, details as for example the rated month, the year a
   <img class="image-center" src="{{config.site_url}}insights/images/81da91e-Dashboard_Overview_5.png" width="100%" />
   <figcaption>Overview dashboard - 2</figcaption>
 </figure>
+
 <div id="overview-charts"></div>
 
 | Graph title         | Description                                                                                                                                                                                                                                                                                           |
@@ -68,34 +70,17 @@ When hovering the line chart, details as for example the rated month, the year a
 </figure>
 <div id="overview-charts2"></div>
 
-|Graph title|	Description|
-|--|--|
-|Top Slots|	Top-rated number of slots displayed in a bar chart.|
-|Understood/Misunderstood Messages|	Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart. <br> A message is counted as understood/misunderstood if it has triggered an intent, a slot is matched, or it is marked as understood or misunderstood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood/misunderstood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow.|
-|Number of inputs|	Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts/)
-|Unique Contacts| Time-related number of unique contacts displayed in a line chart. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.|
+| Graph title                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Top Slots                         | Top-rated number of slots displayed in a bar chart.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Understood/Misunderstood Messages | Time-related number of "understood messages" and "misunderstood messages" in percentages displayed in a bar chart. <br> A message is counted as understood/misunderstood if it has triggered an intent, a slot is matched, or it is marked as understood or misunderstood via the [Code Node](../ai/flow-nodes/code/analytics-data.md) or [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md). <br> A message is not counted as understood/misunderstood if it is marked as `Don't count` in the [Overwrite Analytics Node](../ai/flow-nodes/other-nodes/overwrite-analytics.md) or sent during an active handover without configuring [Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) Flow. |
+| Number of inputs                  | Time-related number of inputs displayed in a bar chart.More information about inputs you can find here:[Input]({{config.site_url}}ai/tools/analytics/analytics-concepts/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Unique Contacts                   | Time-related number of unique contacts displayed in a line chart. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-##Download Report
-
-Every widget on the Insights dashboard provides a '**Download report as .csv file**' item in a dropdown menu. 
-To create a report file follow instructions here: [Download Report]({{config.site_url}}insights/download-report/) 
-
+{! _includes/insights/download-report.md !}
 
 ## More information
-<div class="divider"></div>
 
-- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
-
-- [Global Filter]({{config.site_url}}insights/global-filter/)
-
-- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
-
-- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
-
-- [Step Explorer]({{config.site_url}}insights/step-explorer/)
-
-- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
-
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
-
-- [Download Report]({{config.site_url}}insights/download-report/)
+- [Dashboard Engagement](dashboard-engagement.md)
+- [Dashboard NLU Performance](dashboard-nlu-performance.md)
+- [Dashboard Live Agent](dashboard-live-agent.md)
