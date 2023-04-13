@@ -909,7 +909,7 @@ This release of Cognigy.AI adds a set of filters to our Intent Trainer to simpli
 More customers than ever are using our API-key feature in the product to automate certain aspects of their day-to-day developer life. In order to make it easier to distinguish different API keys, we have added the ability to name your API-keys
 
 #### Hotkey for expert mode
-Developers can use the so-called expert mode in the Interaction Panel to get more verbose output about certain events (e.g. when an Intent has been found) when talking to their Agents. This release adds the ability to use CTRL+SHIFT+F to toggle the expert mode without visiting the settings panel
+Developers can use the so-called expert mode in the Interaction Panel to get more verbose output about certain events (e.g. when an Intent has been found) when talking to their Agents. This release adds the ability to use ++ctrl+shift+f++ to toggle the expert mode without visiting the settings panel
 
 #### Embeddable extensions
 This release of Cognigy.AI adds the ability for on-premise customers to embed certain extensions into the baseline of Cognigy.AI

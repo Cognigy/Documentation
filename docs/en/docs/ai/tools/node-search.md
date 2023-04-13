@@ -17,7 +17,7 @@ In order to search the flow nodes:
 
 1. Click the **Search Icon** located among the other tools in the bottom left corner of the Chart Editor.
 2. An input filed with a placeholder *Search Nodes* opens up, where you can enter the search text.
-3. Alternatively, you can also open the search nodes input field by using **Ctrl + Alt + F** or **Command + Option + F** hotkeys.
+3. Alternatively, you can also open the search nodes input field by using ++ctrl+alt+f++ or ++cmd+opt+f++ hotkeys.
 
 ### Node and Node Editor highlighting
 <div class="divider"></div>

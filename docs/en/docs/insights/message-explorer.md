@@ -32,7 +32,7 @@ Using the **"Negate "** slider bar "all but the selected" filter options will be
 </figure>
 
 !!! warning
-    **Every change in filter settings needs to be confirmed with “Apply” to be active.**
+    Every change in filter settings needs to be confirmed with **Apply** to be active.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/e347fe0-Message_Explorer_n6.png" width="100%" />

@@ -1,5 +1,6 @@
 # Overview
-This repository is home for our brand new product documentation which is located on https://docs.cognigy.com.
+
+This repository is home for Cognigy's brand-new product documentation which is hosted on [docs.cognigy.com](https://docs.cognigy.com).
 
 ![Screenshot of docs.cognigy.com](./contribution/screenshot.png)
 
@@ -8,4 +9,4 @@ The repository stores documentation for all Cognigy products like Cognigy.AI, Co
 We use a modified theme based on [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) which we have extended in order to match our own corporate identity.
 
 # Contribution
-You want to contribute to the contents shown on https://docs.cognigy.com and want to help us improving our product documentation? Great - check the [contribution](/contribution) folder for more info!
+You want to contribute to the contents shown on https://docs.cognigy.com and want to help us improve our product documentation? Great - check the [contribution](/contribution) folder for more info!
