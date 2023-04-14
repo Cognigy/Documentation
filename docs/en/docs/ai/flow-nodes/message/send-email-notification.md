@@ -50,38 +50,40 @@ EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "starttls"
 
 ## Settings
 
-### Recipients & Sender Configuration
-#### Recipient Email Address
-The recipient of your email. Separate multiple recipients with a comma or semicolon.
+### Recipient TO Email Addresses
 
-#### CC Email Addresses (Advanced)
-The CC recipients of your email.
+Comma-separated list of email addresses to send the email to.
 
-#### BCC (Advanced)
-The BCC recipients of your email.
+### Email Subject
 
-### Content
-#### Email Subject
 The subject of the email.
 
-#### Email Content
+### Email Content
+
 The content of the email.
 The field supports basic rich text editing.
 
-#### Priority (Advanced)
-You can use this to set your priority to "high", "normal" (default) or "low"
+### Store location of SMTP Request result
 
-### Behavior
-#### Result Storage
-Can be set to "Don't store result" (default), "Input" or "Context".
-If set to "Input" or "Context", you can define a location for the result within "Input" or "Context.
+Can be set to **Don't store result** (default), **Input**, or **Context**.
+If set to **Input** or **Context**, you can define a location for the result within **Input** or **Context**.
 The result of the sent mail response will then be put at that location.
 
 #### Stop on Error
+
 If switched on, the flow execution will halt in case the mail-sending fails.
 
-#### Execute Request asynchronous (Advanced)
-If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned off, flow execution will **wait until the email is sent**.
+#### CC Email Addresses
+
+The CC recipients of your email.
+
+#### BCC Email Addresses
+
+The BCC recipients of your email.
+
+#### Execute Request asynchronous
+
+If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned-off, flow execution will **wait until the email is sent**.
 
 ## Email Template
 <div class="divider"></div>

@@ -112,15 +112,15 @@ If switched on, the flow execution will halt in case the mail-sending fails.
 
 This email address will be displayed in the "from" field (sender's address).
 
-#### CC Email Addresses (Advanced)
+#### CC Email Addresses
 
 The CC recipients of your email.
 
-#### BCC (Advanced)
+#### BCC Email Addresses
 
 The BCC recipients of your email.
 
-#### Reply To Address (Advanced)
+#### Reply To Address
 
 This email address is the target receiving mails when the recipients reply to your email.
 
