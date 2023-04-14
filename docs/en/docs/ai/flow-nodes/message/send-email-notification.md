@@ -50,10 +50,6 @@ EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "starttls"
 
 ## Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/463d0cb-Screenshot_from_2021-05-17_15-58-55.png" width="75%" />
-</figure>
-
 ### Recipients & Sender Configuration
 #### Recipient Email Address
 The recipient of your email. Separate multiple recipients with a comma or semicolon.
