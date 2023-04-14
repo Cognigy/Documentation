@@ -24,5 +24,5 @@ Once the settings are executed, they will remain in effect for the duration of t
 | Parameter             | Type     | Description                                                                                                                                 |
 |-----------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | User No Input Mode    | Dropdown | Define the action if a user does not provide input to the Virtual Agent in time.                                                            |
-| User No Input Timeout | Number   | Define the timeout for user input in in milliseconds.                                                                                       |
+| User No Input Timeout | Number   | Define the timeout for user input in  milliseconds.                                                                                       |
 | User No Input Retries | Number   | Define the number of retries for the Virtual Agent to request input from the user before ending the call. The maximum value is 999 retries. |
