@@ -1,22 +1,54 @@
 ---
- title: "Send Email Notification" 
- slug: "send-email-notification" 
- hidden: false 
+title: "Email Notification"
+slug: "email-notification"
+hidden: false
 ---
 # Send Email Notification
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/36b6341-Screenshot_from_2021-05-17_15-55-12.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/36b6341-Screenshot_from_2021-05-17_15-55-12.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-Using the Email Notification Node you can send quick and easy emails in presentation sessions or for in-house communications without any e.g. provider settings. 
-Further on you can use the Email Notification Node to send an email from your Cognigy installation to users. This can be helpful if you want to e.g. trigger a report for your Flow architects. 
+The Email Notification Node allows you to send quick and easy emails during presentation sessions or for in-house communications, without requiring any provider settings. Additionally, you can use the Email Notification Node to send emails from your Cognigy installation to users. This feature can be helpful if you want to trigger a report for your Flow architects, for example.
 
-## Properties
-<div class="divider"></div>
+## Restrictions
+
+*  Your SMTP Server settings need to be adjusted to use the internal Cognigy Email notification.
+*  Email attachments are restricted (e.g. files, images). If required, use [Send SMTP Email Node](send-smtp-email.md).
+
+## Authentication
+
+This Node supports OAuth2 authentication method.
+
+If you have on-premises installation, you need to add the following parameters to the `values.yaml` file:
+
+object:
+
+```yaml
+smtpEmailNotificationCredentials:
+ authType: "oauth2"
+ oauth2:
+  user: "<smtp-server>@domain.com"
+  clientId: "your client id"
+  clientSecret: "your client secret"
+  refreshToken: "your refresh token"
+  accessToken: "your access token"
+```
+variables:
+
+```yaml
+EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
+EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "oauth2"
+EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<for example, Outlook365>"
+EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "https://login.microsoftonline.com/common/oauth2/v2.0/token"
+EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "1681382246000"
+EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "starttls"
+```
+
+## Settings
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/463d0cb-Screenshot_from_2021-05-17_15-58-55.png" width="75%" />
@@ -66,8 +98,3 @@ The email will be sent with templating around it, looking roughly like this:
 
 The recipient will get the email notification
 
-
-### Please consider:
-
-   *  **Your SMTP Server settings need to be adjusted to use the internal Cognigy Email notification!**
-   *  **Email attachments are restricted (e.g. files, images). If required use  Send Email Node.**
