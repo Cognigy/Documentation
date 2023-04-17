@@ -45,7 +45,7 @@ If you have on-premises installation, you need to add the following parameters t
     EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "oauth2"
     EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<email service, for example, Outlook365>"
     EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "<provider token access url, for example, for Microsoft https://login.microsoftonline.com/common/oauth2/v2.0/token, for Google https://accounts.google.com/o/oauth2/token>"
-    EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix" timestamp for the current accessToken, for example, 1681382246000>"
+    EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix timestamp for the current accessToken, for example, 1681382246000>"
     EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method>"
     ```
 
