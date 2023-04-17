@@ -60,7 +60,7 @@ You can use one of the following authentication methods:
         - clientSecret — add a registered client secret of the application.
         - accessToken — add an access token. Required only if refreshToken is not available.
         - refreshToken — add a refresh token. If it is provided, the Node tries to generate a new access token if existing one expires or fails.
-        - expiryDate — add expiration time for the current `accessToken` in milliseconds.
+        - expiryDate — add an expiration Unix timestamp in milliseconds for the current `accessToken`.
         - accessUrl — add an HTTP endpoint for requesting new access tokens. This value defaults to Gmail `https://accounts.google.com/o/oauth2/token`. 
         - tlsOption — specify one of the options if you want to connect with TLS:
             - tls — is used by default. TLS is a separate protocol that operates on a different port (usually port 443 for HTTPS).

@@ -12,41 +12,63 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-The Email Notification Node allows you to send quick and easy emails during presentation sessions or for in-house communications, without requiring any provider settings. Additionally, you can use the Email Notification Node to send emails from your Cognigy installation to users. This feature can be helpful if you want to trigger a report for your Flow architects, for example.
+The Email Notification Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time. 
 
 ## Restrictions
 
 *  Your SMTP Server settings need to be adjusted to use the internal Cognigy Email notification.
-*  Email attachments are restricted (e.g. files, images). If required, use [Send SMTP Email Node](send-smtp-email.md).
+*  Email attachments are restricted (for example, files, images). If required, use [Send SMTP Email Node](send-smtp-email.md).
 
 ## Authentication
 
-This Node supports OAuth2 authentication method.
+This Node supports both Basic Auth and OAuth2 authentication methods.
 
 If you have on-premises installation, you need to add the following parameters to the `values.yaml` file:
 
-object:
+=== "OAuth2 (recommended)"
+    object:
+    
+    ```yaml
+    smtpEmailNotificationCredentials:
+     authType: "oauth2"
+     oauth2:
+       user: "<smtp-server>@domain.com"
+       clientId: "your client id"
+       clientSecret: "your client secret"
+       refreshToken: "your refresh token"
+       accessToken: "your access token"
+    ```
+    variables:
+    
+    ```yaml
+    EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
+    EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "oauth2"
+    EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<email service, for example, Outlook365>"
+    EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "<provider token access url, for example, for Microsoft https://login.microsoftonline.com/common/oauth2/v2.0/token, for Google https://accounts.google.com/o/oauth2/token>"
+    EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix" timestamp for the current accessToken, for example, 1681382246000>"
+    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method>"
+    ```
 
-```yaml
-smtpEmailNotificationCredentials:
- authType: "oauth2"
- oauth2:
-  user: "<smtp-server>@domain.com"
-  clientId: "your client id"
-  clientSecret: "your client secret"
-  refreshToken: "your refresh token"
-  accessToken: "your access token"
-```
-variables:
+=== "Basic Auth"
+    object:
 
-```yaml
-EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
-EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "oauth2"
-EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<for example, Outlook365>"
-EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "https://login.microsoftonline.com/common/oauth2/v2.0/token"
-EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "1681382246000"
-EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "starttls"
-```
+    ```yaml
+    smtpEmailNotificationCredentials:
+      authType: "basic"
+      basic:
+        username: "<your email client's username>"
+        password: "<your email clientl's password>"
+    ```
+    variables:
+
+    ```yaml
+    EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "basic"
+    EMAIL_NOTIFICATION_SMTP_HOST: "<SMTP_HOST>"
+    EMAIL_NOTIFICATION_SMTP_PORT: "<SMTP_PORT>"
+    EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
+    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method>"
+    ```
+
 
 ## Settings
 
