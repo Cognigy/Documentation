@@ -68,6 +68,8 @@ You can use one of the following authentication methods:
             - none — don't connect with TLS.
      3. Click **Create**.
 
+     Cognigy caches connections by default, and for OAuth2 connections, Cognigy also caches the refresh and access tokens. To update the refresh token or access token, create a [snapshot](../../resources/deploy/snapshots.md).
+
 === "Basic Auth"
     Basic Auth is a simple authentication scheme where the client sends the user's credentials (username and password) to the server in the HTTP header. It's used for web applications requiring authentication and adds an Authorization header to the HTTP request. However, it has security limitations as the credentials are sent in clear text, and the server doesn't provide a way to log out.
 

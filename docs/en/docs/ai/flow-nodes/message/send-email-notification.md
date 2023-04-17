@@ -48,6 +48,7 @@ If you have on-premises installation, you need to add the following parameters t
     EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix timestamp for the current accessToken, for example, 1681382246000>"
     EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method>"
     ```
+    Cognigy caches connections by default, and for OAuth2 connections, Cognigy also caches the refresh and access tokens. To update the refresh token or access token, create a [snapshot](../../resources/deploy/snapshots.md).
 
 === "Basic Auth"
     object:
