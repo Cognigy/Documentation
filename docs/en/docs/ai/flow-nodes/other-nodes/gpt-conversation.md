@@ -52,7 +52,7 @@ Available only in Transactional mode.
 | Steps                 | CognigyScript | Description of task steps.                                                                   |
 | Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                 |
 | Slots to collect      | Text          | The keys of the slots to collect                                                             |
-| Available Slots       | Text          | Actions the virtual agent can trigger.                                                       |
+| Available Actions     | Text          | Actions the virtual agent can trigger.                                                       |
 | Further Information   | CognigyScript | Actions the virtual agent can trigger.                                                       |
 
 
