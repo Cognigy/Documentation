@@ -46,7 +46,7 @@ If you have on-premises installation, you need to add the following parameters t
     EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<email service, for example, Outlook365>"
     EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "<provider token access url, for example, for Microsoft https://login.microsoftonline.com/common/oauth2/v2.0/token, for Google https://accounts.google.com/o/oauth2/token>"
     EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix timestamp for the current accessToken, for example, 1681382246000>"
-    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method>"
+    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method, for example, 'tls' for default TLS on port 443, 'starttls' to upgrade an insecure connection on the same port, or 'none' to connect without TLS>"
     ```
     Cognigy caches connections by default, and for OAuth2 connections, Cognigy also caches the refresh and access tokens. To update the refresh token or access token, create a [snapshot](../../resources/deploy/snapshots.md).
 
@@ -67,7 +67,7 @@ If you have on-premises installation, you need to add the following parameters t
     EMAIL_NOTIFICATION_SMTP_HOST: "<SMTP_HOST>"
     EMAIL_NOTIFICATION_SMTP_PORT: "<SMTP_PORT>"
     EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
-    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method>"
+    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method, for example, 'tls' for default TLS on port 443, 'starttls' to upgrade an insecure connection on the same port, or 'none' to connect without TLS>"
     ```
 
 
