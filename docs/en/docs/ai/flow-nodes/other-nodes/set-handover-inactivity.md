@@ -5,9 +5,33 @@ hidden: false
 ---
 # Set Handover Inactivity
 
-This Node detects and handles inactivity, freeing capacity for the human agent team. To configure this feature, specify the input.handover.inactivityCount >= <time in minutes> condition in the If Node's Condition field. You can also adjust the count value as needed.
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-handover-inactivity.png" width="80%" />
+  <figcaption>Set Handover Inactivity</figcaption>
+</figure>
 
-To improve the user experience, consider adding a [Say](../message/say.md) Node message that prompts the user with a message such as "Are you still there? The conversation will be automatically closed soon."
+## Description
+<div class="divider"></div>
+
+This node detects and handles user inactivity, freeing up capacity for the human agent team. To configure this node, specify the time in minutes during which the user can be inactive.
+
+To use tho Node, first configure the [Lookup](../logic/lookup.md) Node to enable different inactivity behaviors.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-handover-inactivity-lookup.png" width="120%" />
+</figure>
+
+To manage the user inactivity time, use the `input.handover.inactivityCount >= <time in minutes>` condition in the **Condition** field of the [If](../logic/if.md) Node. For example, `input.handover.inactivityCount >= 2`. You can also adjust the count value as needed.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-handover-inactivity-if.png" width="120%" />
+</figure>
+
+To improve the user experience, after the Set Handover Inactivity Node, add a [Say](../message/say.md) Node message that prompts the user with a message such as "Are you still there? The conversation will be automatically closed soon."
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-handover-inactivity-say.png" width="120%" />
+</figure>
 
 Using the [Say](../message/say.md#handover-settings) Node, you can determine whether the agent, user, or both receive messages from the virtual agent after the time has expired.
 

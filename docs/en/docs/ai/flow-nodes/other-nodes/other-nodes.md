@@ -14,3 +14,5 @@ Nodes that did not fit into any category above:
 - [Set Translation](set-rating.md)
 - [Request Rating](request-rating.md)
 - [GPT Prompt](gpt-prompt.md)
+- [Close Handover](close-handover.md)
+- [Set Handover Inactivity](set-handover-inactivity.md)
