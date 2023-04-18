@@ -122,13 +122,14 @@ In order to actually delete the Snapshot, do the following:
 !!! danger "Check usage of your Snapshot!"
     Endpoints in production should point to Snapshots. It is important that you first check whether no Endpoints are any longer pointing to the Snapshot you want to remove. Removing a Snapshot which is still being referenced by one of your Endpoints will break the conversations for your customers!
 
-## System Compatibility
+## Snapshot Compatibility
 <div class="divider"></div>
 
-We are constantly improving the Snapshot feature including the file format for Snapshots. We guarantee backward compatibility for Snapshot, meaning that you can import Snapshots that have been produced in older versions of Cognigy.AI (e.g. v4.4) into newer releases. Snapshots taken with a newer version of Cognigy.AI are not compatible with older versions though.
+Snapshots created in older versions of Cognigy.AI can be imported into newer versions of itself, and is fully supported.
 
-!!! warning "Restoring a Snapshot from a newer version of Cognigy.AI"
-  Snapshots from newer versions of Cognigy.AI should not be restored to older versions of Cognigy.AI. It is possible to import a Snapshot from a newer version of Cognigy.AI to an older version, but this is not supported and may result in unexpected behavior and errors for your Virtual Agents.
+However Snapshots created in newer versions of Cognigy.AI may not work with older versions, and is not supported.
+
+Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
 
 ## Production deployment using Snapshots
 <div class="divider"></div>
