@@ -64,11 +64,11 @@ For building Facebook Messenger messages (quick replies, buttons, lists, generic
 
 ### Usage
 ---
-In a Code Node you can create a message type of your choice by using the **MessengerPlatform** namespace. For a list of possible message types, please visit the [facebook-bot-messenger documentation](https://github.com/snlangsuan/facebook-bot-messenger).
+In a Code Node you can create a message type of your choice by using the **MessengerPlatform** namespace. For a list of possible message types, visit the [facebook-bot-messenger documentation](https://github.com/snlangsuan/facebook-bot-messenger).
 
 ### Example
 ---
-The following snippet can be used to generate a quick reply message. Please keep in mind that the built message (`builder.buildMessage()`) must be the value of the **message** property of the **_facebook** object. 
+The following snippet can be used to generate a quick reply message. Keep in mind that the built message (`builder.buildMessage()`) must be the value of the **message** property of the **_facebook** object. 
 ```javaScript
 // use facebook-bot-messenger to compile reply
 const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');

@@ -34,7 +34,7 @@ The customer sessions will be displayed in a list with the following data:
 </figure>
 
 - Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
-- Use the **[global filter]({{config.site_url}}insights/global-filter/)** options to configure your research.
+- Use the [global filter]({{config.site_url}}insights/global-filter/) options to configure your research.
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option Virtual Agent Messages and leave the other options not selected.
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
@@ -174,6 +174,7 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
-!!! note "Message Explorer"
-    **More information to [Message Explorer]({{config.site_url}}insights/message-explorer/)**
+## More information 
+
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)
 

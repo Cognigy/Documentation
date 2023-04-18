@@ -57,7 +57,7 @@ The URI where we send messages to your Sunshine Conversations app. E.g. https://
 
 
 !!! note "Help Center"
-    More detailed information on how to set up a **Sunshine Conversations** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
+    More detailed information on how to set up a **Sunshine Conversations** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
 
 
 ## More information

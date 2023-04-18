@@ -23,6 +23,6 @@ Using Cognigy.AI, you can customize Agent Assist to be as powerful as you need i
 
 ## Ready to Set up Agent Assist?
 <div class="divider"></div>
-To setup your Project for Agent Assist, please visit our documentation here: 
+To setup your Project for Agent Assist, visit our documentation here: 
 
 - [**Agent Assist Setup**]({{config.site_url}}ai/handover-providers/la-agent-assist-setup/)

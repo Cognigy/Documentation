@@ -74,7 +74,7 @@ If you click on one of the already existing users, a details page opens and disp
 </figure>
 
 !!! note "Impersonating a user"
-    By impersonating a user, you can log in into the system as the users you have selected, without knowing the actual account password! Please ensure that you log out after you have finished your work.
+    By impersonating a user, you can log in into the system as the users you have selected, without knowing the actual account password. Ensure that you log out after you have finished your work.
 
 ## Organisations
 

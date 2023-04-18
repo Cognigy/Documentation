@@ -78,7 +78,7 @@ Find out about the generic Endpoint settings available with this Endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
 !!! note "Contact Center & Phone number linking"
-    In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, please get in touch with us via an email to support@cognigy.com.
+    In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.
 
 !!! warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint. You can find the AudioCodes documentation here.

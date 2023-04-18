@@ -36,6 +36,6 @@ Are you ready to set up Live Agent? Start here:
 
 ## Already Setup Live Agent?
 <div class="divider"></div>
-For more on Live Agent, please visit our documentation here: 
+For more on Live Agent, visit our documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)

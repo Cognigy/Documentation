@@ -47,11 +47,11 @@ This value is the Line **Channel Access Token** which is obtained from the Line 
 This value is the Line **Channel Secret** which is associated to a channel access token. This value is obtained from the Line Developer account for each channel that is deployed.
 
 !!! note "Help Center"
-    More detailed information on how to set up a **Line Messenger** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
+    More detailed information on how to set up a **Line Messenger** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
 
 
 !!! warning "Configuration of Line messages"
-    Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Please review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
+    Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
 
 ## More information 
 

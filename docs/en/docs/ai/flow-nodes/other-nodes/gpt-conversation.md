@@ -52,7 +52,7 @@ Available only in Transactional mode.
 | Steps                 | CognigyScript | Description of task steps.                                                                   |
 | Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                 |
 | Slots to collect      | Text          | The keys of the slots to collect                                                             |
-| Available Slots       | Text          | Actions the virtual agent can trigger.                                                       |
+| Available Actions     | Text          | Actions the virtual agent can trigger.                                                       |
 | Further Information   | CognigyScript | Actions the virtual agent can trigger.                                                       |
 
 
@@ -95,7 +95,7 @@ At 0:12 second, the user receives the expected answer from the virtual agent in 
 
 ```text
 Sorry to hear about the emergency, <user name>. 
-Can you please provide me with your ticket number 
+Can you provide me with your ticket number 
 so that I can help you get to London as quickly as possible? 
 Thank you.
 ```

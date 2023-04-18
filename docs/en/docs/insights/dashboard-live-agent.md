@@ -23,7 +23,7 @@ These metrics are visualized in the following charts:
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-All data displayed in the charts relate to the [global filter](global-filter.md) settings.
+{! _includes/insights/global-filters.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/live-agent-dashboard.png" width="100%" />
@@ -198,3 +198,11 @@ Result:
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/live-agent-performance-times.png" width="100%" />
 </figure>
+
+{! _includes/insights/download-report.md !}
+
+## More information
+
+- [Dashboard Overview](dashboard-overview.md)
+- [Dashboard Engagement](dashboard-engagement.md)
+- [Dashboard NLU Performance](dashboard-nlu-performance.md)

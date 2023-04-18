@@ -12,7 +12,7 @@ The Engagement Dashboard is focused on customer interactions in conversations. E
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-All data displayed in the charts relate to the [global filter](global-filter.md) settings.
+{! _includes/insights/global-filters.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/engagement-dashboard.png" width="100%" />
@@ -286,25 +286,10 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/unique-contacts.png" width="100%" />
 </figure>
 
-
-## Download Report
-
-To download a report as .csv file for the chart, use its three-dot menu. 
-To create a report file, see the [Download Report](download-report.md) article. 
-
+{! _includes/insights/download-report.md !}
 
 ## More information
 
-- [Global Filter](global-filter.md)
-
 - [Dashboard Overview](dashboard-overview.md)
-
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
-
-- [Step Explorer](step-explorer.md)
-
-- [Transcript Explorer](transcript-explorer.md)
-
-- [Message Explorer](message-explorer.md)
-
-- [Download Report](download-report.md)
+- [Dashboard Live Agent](dashboard-live-agent.md)
