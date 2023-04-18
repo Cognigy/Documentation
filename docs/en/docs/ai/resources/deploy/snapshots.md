@@ -106,7 +106,7 @@ In order to restore a Virtual Agent from a Snapshot, do the following:
   * A new task will be created as deleting all current resources from the Virtual Agent and restoring the resources from the Snapshot can take some time
   * A success notification will be displayed once your Virtual Agent has been successfully restored from the Snapshot
 
-!!! note "Restoring a snapshot from another agent may require manual changes to the endpoints"
+!!! note "Restoring a Snapshot from another agent may require manual changes to the endpoints"
     [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
     Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the images below.
 
@@ -122,10 +122,14 @@ In order to actually delete the Snapshot, do the following:
 !!! danger "Check usage of your Snapshot!"
     Endpoints in production should point to Snapshots. It is important that you first check whether no Endpoints are any longer pointing to the Snapshot you want to remove. Removing a Snapshot which is still being referenced by one of your Endpoints will break the conversations for your customers!
 
-## System Compatibility
+## Snapshot Compatibility
 <div class="divider"></div>
 
-We are constantly improving the Snapshot feature including the file format for Snapshots. We guarantee backward compatibility for Snapshot, meaning that you can import Snapshots that have been produced in older versions of Cognigy.AI (e.g. v4.4) into newer releases. Snapshots taken with a newer version of Cognigy.AI are not compatible with older versions though.
+Snapshots that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
+
+However, Snapshots created in newer versions may not be compatible with older versions, and are not supported.
+
+Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI are not recommended, as they can cause unexpected errors.
 
 ## Production deployment using Snapshots
 <div class="divider"></div>

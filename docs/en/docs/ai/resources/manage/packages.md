@@ -71,7 +71,16 @@ Similar to the export, the import of Packages is straightforward. Simply drag&dr
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
 
-### Importing Packages Created Prior v4.0.0
+## Package Compatibility
+<div class="divider"></div>
+
+Packages that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
+
+However, Packages created in newer versions may not be compatible with older versions, and are not supported.
+
+Importing a Package from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
+
+## Importing Packages Created Prior v4.0.0
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
 Packages created before v4.0.0 may contain special characters not allowed in the current version. 

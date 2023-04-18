@@ -146,7 +146,7 @@ nav:
       - ai/flow-nodes/message/say.md
       - ai/flow-nodes/message/question.md
       - ai/flow-nodes/message/optional-question.md
-      - ai/flow-nodes/message/send-email.md
+      - ai/flow-nodes/message/send-smtp-email.md
       - ai/flow-nodes/message/send-email-notification.md
       - ai/flow-nodes/message/send-text.md
       - ai/flow-nodes/message/datepicker.md
