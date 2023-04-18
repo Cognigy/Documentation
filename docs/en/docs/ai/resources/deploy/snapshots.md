@@ -125,9 +125,9 @@ In order to actually delete the Snapshot, do the following:
 ## Snapshot Compatibility
 <div class="divider"></div>
 
-Snapshots created in older versions of Cognigy.AI can be imported into newer versions of itself, and is fully supported.
+Snapshots that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
 
-However Snapshots created in newer versions of Cognigy.AI may not work with older versions, and is not supported.
+However, Snapshots created in newer versions may not be compatible with older versions, and are not supported.
 
 Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
 
