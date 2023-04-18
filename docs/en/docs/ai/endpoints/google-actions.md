@@ -5,6 +5,9 @@
 ---
 # Google Actions
 
+!!! warning "Deprecation of Google Actions Endpoint"
+    Google is sunsetting Conversational Actions on June 13, 2023. This Endpoint will no longer function after this date, and will also be deprecated.
+
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/067ee19-googleActions.PNG" width="100%" />
 </figure>
