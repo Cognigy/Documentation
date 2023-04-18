@@ -46,14 +46,14 @@ Select one of these modes:
 
 Available only in Transactional mode.
 
-| Parameter             | Type          | Description                                                                                                                                                                                                                                                   |
-|-----------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bot Task              | CognigyScript | Task for the virtual agent. Examples: book an appointment, rebook a flight, order a product.                                                                                                                                                                  |
-| Steps                 | CognigyScript | Description of task steps.                                                                                                                                                                                                                                    |
-| Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                                                                                                                                                                                  |
-| Slots to collect      | Text          | The keys of the slots to collect                                                                                                                                                                                                                              |
-| Available Actions     | Text          | Actions the virtual agent can trigger. You can reuse this action in the [If](../logic/if.md) or [Look up](../logic/lookup.md) Nodes to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request. |
-| Further Information   | CognigyScript | Additional information for the virtual agent, such as topics that should be avoided during the conversation.                                                                                                                                                  |
+| Parameter             | Type          | Description                                                                                                                                                                                                                                                     |
+|-----------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bot Task              | CognigyScript | Task for the virtual agent. Examples: book an appointment, rebook a flight, order a product.                                                                                                                                                                    |
+| Steps                 | CognigyScript | Description of task steps.                                                                                                                                                                                                                                      |
+| Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                                                                                                                                                                                    |
+| Slots to collect      | Text          | The keys of the slots to collect                                                                                                                                                                                                                                |
+| Available Actions     | Text          | Actions the virtual agent can trigger. You can reuse these actions in the [If](../logic/if.md) or [Look up](../logic/lookup.md) Nodes to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request. |
+| Further Information   | CognigyScript | Additional information for the virtual agent, such as topics that should be avoided during the conversation.                                                                                                                                                    |
 
 
 
@@ -106,7 +106,25 @@ Thank you.
 
 In the Transaction mode, you can use the **Look up** or **If** Nodes to continue a flow logic. For both Nodes, you need to specify the action in the **Available Actions** field of the GPT Conversation Node.
 
+
+=== Look up
+
+   1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
+   2. After the GPT Conversation Node, add the Look up Node. 
+   3. Go to the **Lookup** Node:<br>
+      3.1 Select **CognigyScript** from the **Type** list.<br>
+      3.2 Enter `context.action` in the **Operator** field.<br>
+      3.3 Click **Save Node**.
+   4. Go to the Case of the Lookup Node:<br>
+      4.1 Paste`checkAppointment` in the **Value** field.<br>
+      4.2 Click **Save Node**.
+   5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
+   6. Test this Flow via the Interaction Panel.
+
+
+
+
 ## More Information
 
 - [Generative AI](../../generative-ai.md)
-- [GPT Conversation Node](gpt-conversation.md)
+- [GPT Prompt Node](gpt-prompt.md)
