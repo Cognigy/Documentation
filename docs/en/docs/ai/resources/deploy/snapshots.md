@@ -129,7 +129,7 @@ Snapshots that were created in older versions of Cognigy.AI can be imported into
 
 However, Snapshots created in newer versions may not be compatible with older versions, and are not supported.
 
-Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
+Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI are not recommended, as they can cause unexpected errors.
 
 ## Production deployment using Snapshots
 <div class="divider"></div>
