@@ -74,9 +74,9 @@ Similar to the export, the import of Packages is straightforward. Simply drag&dr
 ## Package Compatibility
 <div class="divider"></div>
 
-Packages created in older versions of Cognigy.AI can be imported into newer versions of itself, and is fully supported.
+Packages that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
 
-However Packages created in newer versions of Cognigy.AI may not work with older versions, and is not supported.
+However, Packages created in newer versions may not be compatible with older versions, and are not supported.
 
 Importing a Package from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
 
