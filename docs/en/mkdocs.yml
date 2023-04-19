@@ -180,6 +180,7 @@ nav:
       - ai/flow-nodes/profile/activate-profile.md
       - ai/flow-nodes/profile/merge-profile.md
       - ai/flow-nodes/profile/complete-goal.md
+      - ai/flow-nodes/profile/blind-mode.md
     - Services:
       - ai/flow-nodes/services/services.md
       - ai/flow-nodes/services/ms-sql.md
