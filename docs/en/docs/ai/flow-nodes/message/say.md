@@ -634,6 +634,6 @@ To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generat
 
 When using a handover, such as to a live agent, you can choose who receives the message from the virtual agent:
 
-- User and Agent — both the end user and the human agent will receive the message.
+- User and Agent — by default, both the end user and the human agent will receive the message.
 - User only — the end user will receive the message.
 - Agent only — the responsible human agent will receive the message.
