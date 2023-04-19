@@ -249,6 +249,8 @@ nav:
       - ai/flow-nodes/other-nodes/request-rating.md
       - ai/flow-nodes/other-nodes/gpt-prompt.md
       - ai/flow-nodes/other-nodes/gpt-conversation.md
+    # - ai/flow-nodes/other-nodes/close-handover.md
+    # - ai/flow-nodes/other-nodes/set-handover-inactivity.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
