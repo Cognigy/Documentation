@@ -15,13 +15,13 @@ hidden: false
 
 This node detects and handles user inactivity, freeing up capacity for the human agent team. To configure this node, specify the time in minutes during which the user can be inactive.
 
-To use tho Node, first configure the [Lookup](../logic/lookup.md) Node to enable different inactivity behaviors.
+To use the Node, first configure the [Lookup](../logic/lookup.md) Node to enable different inactivity behaviors.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-handover-inactivity-lookup.png" width="120%" />
 </figure>
 
-To manage the user inactivity time, use the `input.handover.inactivityCount >= <time in minutes>` condition in the **Condition** field of the [If](../logic/if.md) Node. For example, `input.handover.inactivityCount >= 2`. You can also adjust the count value as needed.
+To manage the user inactivity time, use the `input.handover.inactivityCount >= <times inactivity was reached>` condition in the **Condition** field of the [If](../logic/if.md) Node. For example, `input.handover.inactivityCount >= 2`. You can also adjust the count value as needed.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-handover-inactivity-if.png" width="120%" />
