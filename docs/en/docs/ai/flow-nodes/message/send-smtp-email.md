@@ -18,7 +18,7 @@ Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url
 
 ### Email Service
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
 
 Select the Email Provider of the address you want to send from.
 If yours is not listed, you can select "Other SMTP Service" to do a manual configuration.

@@ -27,6 +27,8 @@ This section shows a list of previous login-sessions and their location (if avai
 
 ## API Keys
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
+
 Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
 
 API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. 
