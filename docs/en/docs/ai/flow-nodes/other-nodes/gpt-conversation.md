@@ -106,8 +106,7 @@ Thank you.
 
 In the Transaction mode, you can use the **Look up** or **If** Nodes to continue a flow logic. For both Nodes, you need to specify the action in the **Available Actions** field of the GPT Conversation Node.
 
-
-=== Look up
+=== Lookup
 
    1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
    2. After the GPT Conversation Node, add the Look up Node. 
@@ -118,11 +117,26 @@ In the Transaction mode, you can use the **Look up** or **If** Nodes to continue
    4. Go to the Case of the Lookup Node:<br>
       4.1 Paste`checkAppointment` in the **Value** field.<br>
       4.2 Click **Save Node**.
+      <figure>
+        <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup.png" width="80%" />
+      </figure>
    5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
    6. Test this Flow via the Interaction Panel.
 
+=== IF
 
-
+   1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it.
+   2. After the GPT Conversation Node, add the IF Node.
+   3. Go to the **IF** Node:<br>
+      3.1 Select **CognigyScript** from the **Type** list.<br>
+      3.2 Enter `context.action === "checkAppointment"` in the **Condition** field.<br>
+      3.3 Select **exists** from the list.
+      3.4 Click **Save Node**.
+      <figure>
+        <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-if.png" width="80%" />
+      </figure>
+   4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
+   5. Test this Flow via the Interaction Panel.
 
 ## More Information
 
