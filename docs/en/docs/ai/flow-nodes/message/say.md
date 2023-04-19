@@ -629,3 +629,11 @@ URL has been opened in a new tab.
 ## AI-enhanced output
 
 To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+
+## Handover Settings
+
+When using a handover, such as to a live agent, you can choose who receives the message from the virtual agent:
+
+- User and Agent — by default, both the end user and the human agent will receive the message.
+- User only — the end user will receive the message.
+- Agent only — the responsible human agent will receive the message.
