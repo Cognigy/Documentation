@@ -61,14 +61,14 @@ The customer sessions will be displayed in a list with the following data:
 - Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
 - Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
 
-### "Contains Step" filter
+### Contains Step filter
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
 
-You can additionally narrow the result to conversations which contain a certain Step. Click on the "Filter" icon in Search input and choose a Step. 
+To further refine your search results to include only conversations that contain a specific step, click ![live-follow](../assets/icons/filter.svg) in the search panel and select a step from the list. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="50%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="100%" />
   <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
 </figure>
 

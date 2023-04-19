@@ -17,7 +17,7 @@ hidden: false
 <div class="divider"></div>
 
 !!! warning
-    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
 
 The GPT Conversation Node processes and comprehends natural language input from users and utilizes this input to generate relevant and contextually appropriate responses. The Node configuration includes defining a persona, knowledge, and task for the bot, allowing it to generate AI-based responses to user inputs and trigger actions. The GPT Conversation Node can support the entire conversation using Large Language Models (LLMs).
 
