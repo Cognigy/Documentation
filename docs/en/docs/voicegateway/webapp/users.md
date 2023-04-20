@@ -14,7 +14,7 @@ _Users_ allow you to manage members in your account: create new members, edit, o
 
 Depending on Cognigy Voice Gateway installation, members can have the following roles (scopes):
 
-- [Account](#accout)
+- [Account](#account)
 - [Service Provider](#service-provider)
 - [Admin](#admin)
 
