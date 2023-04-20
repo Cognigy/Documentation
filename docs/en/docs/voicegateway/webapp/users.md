@@ -15,7 +15,7 @@ _Users_ allow you to manage members in your account: create new members, edit, o
 Depending on Cognigy Voice Gateway installation, members can have the following roles (scopes):
 
 - [Account](#accout)
-- [Service Account](#service-account)
+- [Service Provider](#service-account)
 - [Admin](#admin)
 
 ### Account
@@ -24,18 +24,18 @@ This scope includes basic operations with Voice Gateway entities, such as creati
 
 It also allows for editing user profiles, carriers, and speech services that belong to users with the Account scope.
 
-### Service Account
+### Service Provider
 
 This scope is only available for On-premises Cognigy Voice Gateway installations. 
 
-It includes all the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Account scope. 
+It includes all the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Provider scope. 
 
-Additionally, users with the Service Account scope can create, edit, and delete users with the Account and Service Account scopes, and they can generate API keys.
+Additionally, users with the Service Provider scope can create, edit, and delete users with the Account and Service Provider scopes, and they can generate API keys.
 
 ### Admin
 
 This scope is only available for On-premises Cognigy Voice Gateway installations. 
 
-It includes all operations in the Account and Service Account scopes, allowing for performing all operations in the Voice Gateway. 
+It includes all operations in the Account and Service Provider scopes, allowing for performing all operations in the Voice Gateway. 
 
-Additionally, Admins can create, edit, and delete users with the Account, Service Account, and Admin scopes. They can also generate API keys and change password requirements.
+Additionally, Admins can create, edit, and delete users with the Account, Service Provider, and Admin scopes. They can also generate API keys and change password requirements.
