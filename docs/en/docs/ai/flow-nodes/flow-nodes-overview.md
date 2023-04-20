@@ -132,7 +132,7 @@ This Node is commonly used, as it helps update [**Contact Profile**]({{config.si
 
 This Node can be used to merge the current session to an existing  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) . The Node can be configured with an identifier that can be used as a user id.
 
-### Blind Mode
+### [Blind Mode](./profile/blind-mode.md)
 
 The Blind Mode disables all (or selected) logging. The Node can be used whenever the Virtual Agent handles sensitive data, that should be excluded from the logs.
 
