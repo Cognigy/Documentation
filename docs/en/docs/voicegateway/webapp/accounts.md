@@ -18,12 +18,12 @@ A user with the Account scope can view and edit only the account to which they b
 
 ## Settings
 
-| Settings                         | Description                                                                                                                  | Scope                           |
-|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Settings                         | Description                                                                                                                  | Scope                            |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | Account SID                      | The value generates automatically when the admin creates an account                                                          | Account, Service Provider, Admin |
 | Account name                     | A unique account name.                                                                                                       | Account, Service Provider, Admin |
-| Unit                             | You can choose sessions or minutes and specify a maximum number of them.                                                     | Admin                           |
-| Licensed sessions                | A number of purchased sessions.                                                                                              | Admin                           |
+| Unit                             | You can choose sessions or minutes and specify a maximum number of them.                                                     | Admin                            |
+| Licensed sessions                | A number of purchased sessions.                                                                                              | Admin                            |
 | SIP Realm                        | A domain name that SIP devices will register with.                                                                           | Account, Service Provider, Admin |
 | Webhook Secret                   | A layer of security "signing" the webhook calls.                                                                             | Account, Service Provider, Admin |
 | Application for SIP device calls | Select the application which is used to handle incoming calls from SIP users who have registered to the Account's SIP Realm. | Account, Service Provider, Admin |

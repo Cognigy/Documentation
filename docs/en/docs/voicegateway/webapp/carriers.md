@@ -22,8 +22,8 @@ There are two options on how the SIP Trunk can be added:
 
 <div class="divider"></div>
 
-| Settings                    | Description                                                                                        | Scope                           |
-|-----------------------------|----------------------------------------------------------------------------------------------------|---------------------------------|
+| Settings                    | Description                                                                                        | Scope                            |
+|-----------------------------|----------------------------------------------------------------------------------------------------|----------------------------------|
 | Name                        | SIP Trunk Name.                                                                                    | Account, Service Provider, Admin |
 | Select a predefined carrier | Pre-configured list of SIP Trunks.                                                                 | Account, Service Provider, Admin |
 | Active                      | Enable or disable the carrier.                                                                     | Account, Service Provider, Admin |

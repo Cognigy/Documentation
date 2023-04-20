@@ -18,8 +18,8 @@ After creating an application, you can edit or delete it.
 
 ## Settings 
 
-| Settings                 | Description                                                                          | Scope                           |
-|--------------------------|--------------------------------------------------------------------------------------|---------------------------------|
+| Settings                 | Description                                                                          | Scope                            |
+|--------------------------|--------------------------------------------------------------------------------------|----------------------------------|
 | Application Name         | A unique application name.                                                           | Account, Service Provider, Admin |
 | Account                  | Select an account from the list.                                                     | Account, Service Provider, Admin | 
 | Calling Webhook          | A Cognigy.AI Endpoint URL for the Web Application that will handle calls.            | Account, Service Provider, Admin |
