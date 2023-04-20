@@ -36,11 +36,11 @@ When the Handover is finished, the Flow execution will continue below the Handov
 
 The status can have the following values:
 
-| Handover Status  | Description |
-| -- | -- |
-| completed | The Handover was finished by the agent |
-| cancelled | The user has cancelled the Handover request |
-| error | An error occurred when requesting the Handover |
+| Handover Status | Description                                    |
+|-----------------|------------------------------------------------|
+| completed       | The Handover was finished by the agent         |
+| cancelled       | The user has cancelled the Handover request    |
+| error           | An error occurred when requesting the Handover |
 
 In case of an error, the handover object is extended to contain additional information:
 
@@ -71,10 +71,8 @@ To configure different behavior of the Virtual Agent based on the Handover statu
 <div class="divider"></div>
 
 The **Handover to Agent** Node has both general and specific settings for each handover provider.
+
 The General settings are described below and the specific settings you can find in the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
-
-
-The general settings are described below, and the specific settings desfor each provider are in [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
 
 ### Handover Accepted Message
 
@@ -90,9 +88,20 @@ The general settings are described below, and the specific settings desfor each 
 | Cancel Intent      | CognigyScript | The intent the user has to trigger to cancel the Handover request                 |
 | Cancel Button Text | CognigyScript | The text for a quick reply button that cancels the Handover request when clicked. |
 
-## On Resolve Options
+### On Resolve Options
 
-| On Resolve Options               | CognigyScript |                                                                                                                                                                                               | |
+| Parameter                           | Type     | Description                                                |
+|-------------------------------------|----------|------------------------------------------------------------|
+| Flow Continuation                   | Selector | - Below this Node <br> - At current AgentInject Entrypoint | 
+| Send resolve event to Virtual Agent | Toggle   |                                                            |
+
+### Event Settings
+
+| Parameter         | Type   | Description                                               |
+|-------------------|--------|-----------------------------------------------------------|
+| Send Queue Event  | Toggle | Sending an event to the Flow once the Handover is queued. |
+| Send Active Event | Toggle | Sending an event to the Flow once the Handover is active. |
+
 
 ## Handover Providers
 
