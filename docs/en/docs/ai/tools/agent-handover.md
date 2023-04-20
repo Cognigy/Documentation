@@ -70,18 +70,29 @@ To configure different behavior of the Virtual Agent based on the Handover statu
 ## Handover to Agent Node
 <div class="divider"></div>
 
-The `Handover to Agent` Node has the following fields:
+The **Handover to Agent** Node has both general and specific settings for each handover provider.
+The General settings are described below and the specific settings you can find in the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
 
-|Parameter|	Type	|Description|
-|--|--|--|
-|Handover Accepted Message|	CognigyScript|	The message to output if the Handover was requested|
-|Repeat Handover Accepted Message | Toggle | Whether to re-output the Handover Accepted Message when the user sends a message while waiting in the queue for an agent |
-|Cancel Intent |	CognigyScript|	The intent the user has to trigger to cancel the Handover request|
-|Cancel Button Text |	CognigyScript|	The text for a quick reply button that cancels the Handover request when clicked|
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/handover-node-settings.png" width="100%" />
-</figure>
+The general settings are described below, and the specific settings desfor each provider are in [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
+
+### Handover Accepted Message
+
+| Parameter                        | Type          | Description                                                                                                                                                                                   |
+|----------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Handover Accepted Message        | CognigyScript | The message to output if the Handover was requested                                                                                                                                           |
+| Repeat Handover Accepted Message | Toggle        | Whether to re-output the Handover Accepted Message when the user sends a message while waiting in the queue for an agent.                                                                     |
+
+### Cancel Handover Options
+
+| Parameter          | Type          | Description                                                                       |
+|--------------------|---------------|-----------------------------------------------------------------------------------|
+| Cancel Intent      | CognigyScript | The intent the user has to trigger to cancel the Handover request                 |
+| Cancel Button Text | CognigyScript | The text for a quick reply button that cancels the Handover request when clicked. |
+
+## On Resolve Options
+
+| On Resolve Options               | CognigyScript |                                                                                                                                                                                               | |
 
 ## Handover Providers
 
