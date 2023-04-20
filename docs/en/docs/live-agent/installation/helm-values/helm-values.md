@@ -23,7 +23,7 @@ ingress:
           pathType: Prefix
           backend:
             service:
-              name: cognigy-live-agent
+              name: cognigy-live-agent-app
 
 configmap:
   # Comment about a commented variable, it is ignored
@@ -151,7 +151,7 @@ cognigyEnv:
 
 If the secrets and configmaps are the same value, but the integration is not working (e.g. OAuth configuration error "Something is wrong with the OAuth configuration"), perform the following:
 
-1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
+1. Restart the `cognigy-live-agent-app-XXX` app pod in the Live Agent namespace.
 2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
    - service-security
    - service-api
@@ -274,7 +274,7 @@ Ensure pods are restarted after updating the values.
 | `ingress.annotations`                                   | object                                                                                                   | `{}`                                 |
 | `ingress.enabled`                                       | bool                                                                                                     | `false`                              |
 | `ingress.hosts[0].host`                                 | string                                                                                                   | `""`                                 |
-| `ingress.hosts[0].paths[0].backend.service.name`        | string                                                                                                   | `"cognigy-live-agent"`               |
+| `ingress.hosts[0].paths[0].backend.service.name`        | string                                                                                                   | `"cognigy-live-agent-app"`           |
 | `ingress.hosts[0].paths[0].backend.service.port.number` | int                                                                                                      | `3000`                               |
 | `ingress.hosts[0].paths[0].path`                        | string                                                                                                   | `"/"`                                |
 | `ingress.hosts[0].paths[0].pathType`                    | string                                                                                                   | `"Prefix"`                           |
@@ -292,7 +292,7 @@ Ensure pods are restarted after updating the values.
 | `serviceAccount.name`                                   | string                                                                                                   | `""`                                 |
 | `services.annotations`                                  | object                                                                                                   | `{}`                                 |
 | `services.internlPort`                                  | int                                                                                                      | `3000`                               |
-| `services.name`                                         | string                                                                                                   | `"cognigy-live-agent"`               |
+| `services.name`                                         | string                                                                                                   | `"cognigy-live-agent-app"`           |
 | `services.targetPort`                                   | int                                                                                                      | `3000`                               |
 | `services.type`                                         | string                                                                                                   | `"LoadBalancer"`                     |
 | `tolerations`                                           | list                                                                                                     | `[]`                                 |
