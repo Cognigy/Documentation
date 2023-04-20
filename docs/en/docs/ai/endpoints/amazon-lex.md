@@ -7,7 +7,7 @@
 # Amazon Lex
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/28475-amazon-lex-icon.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/28475-amazon-lex-icon.jpg" width="50%" />
 </figure>
 
 
