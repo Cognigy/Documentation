@@ -30,12 +30,12 @@ This scope is only available for On-premises Cognigy Voice Gateway installations
 
 It includes all the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Account scope. 
 
-Additionally, users with the Service Account scope can create, edit, and delete users with the Account and Service Provider scopes, and they can generate API keys.
+Additionally, users with the Service Account scope can create, edit, and delete users with the Account and Service Account scopes, and they can generate API keys.
 
 ### Admin
 
 This scope is only available for On-premises Cognigy Voice Gateway installations. 
 
-It includes all operations in the Account and Service Provider scopes, allowing for performing all operations in the Voice Gateway. 
+It includes all operations in the Account and Service Account scopes, allowing for performing all operations in the Voice Gateway. 
 
-Additionally, Admins can create, edit, and delete users with the Account, Service Provider, and Admin scopes. They can also generate API keys and change password requirements.
+Additionally, Admins can create, edit, and delete users with the Account, Service Account, and Admin scopes. They can also generate API keys and change password requirements.

@@ -23,7 +23,7 @@ The Web App has the following entities:
 
 If you use the Cognigy Voice Gateway Self-Service Portal for the first time, ensure that you have completed the steps in the [Getting Started guide](../getting-started.md). Once you have completed the guide, proceed with the following steps:
 
-1. Identify the [user scope](users.md) you have or add a new user. The operations that you can perform in Voice Gateway are based on your user scope, such as Admin, Service Provider, or Account.
+1. Identify the [user scope](users.md) you have or add a new user. The operations that you can perform in Voice Gateway are based on your user scope, such as Admin, Service Account, or Account.
 2. Create an [account](accounts.md) or use an existing one.
 3. Create an [application](applications.md) or use an existing one.
 4. Add a [new carrier](carriers.md) or use an existing one.
