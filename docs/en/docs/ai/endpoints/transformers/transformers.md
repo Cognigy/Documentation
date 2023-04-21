@@ -44,7 +44,6 @@ You can use them to:
 - transform the output of channel to work on another channel, e.g. convert Webchat output to WhatsApp compatible output
 - handle Webhook events from custom services
 - translate the messages from a user into the language of the Flow
-- ...
 
 The Transformers have full TypeScript support, meaning that the variables and NPM modules are typed, and it is possible to write custom interfaces in the Transformer. However, TypeScript knowledge is not required and plain JavaScript can be used as well.
 
