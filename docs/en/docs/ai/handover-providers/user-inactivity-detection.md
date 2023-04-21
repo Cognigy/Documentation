@@ -11,12 +11,22 @@ Configuring several nodes is required to use the inactivity detection and handli
 
 ## Setting up Handover to Agent Node
 
-To detect and handle inactivity during queue time or active handovers, you need to toggle on the event settings. Two events are sent to the flow when the user enters the queue and when the handover becomes active.
+To ensure proper detection and handling of inactivity during queue time or active handovers, you will need to follow these steps:
 
-To set up these events, go to the Event Settings section and specify that an event should be sent when the end user enters the queue. Similarly, you can also specify that an event should be sent to the flow when the handover becomes active.
+1. In the Flow editor, add the **Handover to Agent** Node.
+2. Open a Node editor by clicking the Node.
+3. In the Node editor, go to the Event Settings section.
+4. Toggle on the **Send Queue Event** and **Send Active Event** settings. By toggling on these event settings, you will be able to receive two important events in your flow: the first event is sent when the end user enters the queue, and the second event is sent when the handover becomes active. This will enable you to more effectively manage and respond to potential inactivity issues during these critical times.
+5. Click **Save Node**.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/handover-event-settings.png" width="100%" />
+</figure>
 
 ## Setting up Lookup Node
 
+1. In the Flow editor, after the **Handover to Agent** Node, add the **Lookup** Node.
+2. 
 To detect and handle inactivity during queue time, create a new child node called "Q" by specifying the handover status as custom with a value of "Q". Likewise, to detect and handle inactivity during active handovers, create a child node called "active".
 
 After creating these nodes, set up the lookup node of type handover status. If you want to detect and handle inactivity during queue time, specify the handover status as custom with a value of "Q" for the child node called Q. For active handovers, specify a custom value of "active" for the corresponding child node.
