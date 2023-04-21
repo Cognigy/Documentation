@@ -33,7 +33,7 @@ To ensure proper detection and handling of inactivity during queue time or activ
 
 Set up the Lookup Node with handover statuses:
 
-1. In the Flow editor, after the **Handover to Agent** Node, add the **Lookup** Node.
+1. In the Flow editor, below the **Handover to Agent** Node, add the **Lookup** Node.
 2. Open a Node editor by clicking the Node.
 3. In the Node editor, go to the **Type** setting and select **Handover Status** from the list. 
 4. Click **Save Node**.
