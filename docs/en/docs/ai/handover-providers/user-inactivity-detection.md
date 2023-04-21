@@ -95,20 +95,20 @@ Set the **Go to** Node to return to the Handover To Agent Node. This moves the e
 An example of how detected inactivity could be handled is explained here:
 
 1. Add the IF Node at the end of the Flow.
-2. In the Node editor, specify `input.handover.inactivityCount >= 2`. This allows to handle the second detected inactivity differently from the first one.
-3. Below the **If** Node and its **Then** child Node, do the following:<br>
-   3.1 Add the Close Handover Node.<br>
-   3.2 Add the **Say** Node.<br>
-   3.3. In the Say Node editor, in the text field, specify `You are back with the bot now!`.<br>
-   3.4 In **Handover Settings > Handover Output Destination**, select **User and Agent**.<br>
+2. In the Node editor, specify `input.handover.inactivityCount >= 2`. This allows to handle the second detected inactivity differently from the first one. Please note that the `input.handover.inactivityCount` is reset to 0 once the End User sends a message.
+3. After the **If** Node and its **Else** child Node, do the following to ask the end user, based on detected inactivity, if he is still there.<br>
+   3.1 Add the **Say** Node.<br>
+   3.2 In the **Say** Node editor, in the text field, specify `Are you still there? The conversation will be automatically closed soon`.  <br>
+   3.3 In **Handover Settings > Handover Output Destination**, select **User** to only show the message to the user and not the human agent.<br>
    3.4 Click **Save Node**.<br>
+   3.5 Add the **Set Handover Inactivity** Node to start a subsequent inactivity timer.<br>
    If the inactivity count is greater than two, it triggers the close handover process, which can close the handover on both the user and human agent sides.
-4. Below the **If** Node and its **Else** child Node, do the following:<br>
-   4.1 Add the **Say** Node.<br>
-   4.2 In the Say Node editor, in the text field, specify `Are you still there? The conversation will be automatically closed soon`.<br>
-   4.3 In **Handover Settings > Handover Output Destination**, select **User**.<br>
-   4.4 Click **Save Node**.<br>
-   4.5 Add the **Set Handover Inactivity** Node.<br>
+4. After the **If** Node and its **Then** child Node, do the following to auto-close the handover after the inactivity timer expired the second time in direct succession.:<br>
+   4.1 Add the **Close Handover** Node to auto-close the handover.<br>
+   4.2 Add the **Say** Node.<br>
+   4.3. In the **Say** Node editor, in the text field, specify `You are back with the bot now!`.<br>
+   4.4 In **Handover Settings > Handover Output Destination**, select **User and Agent**.<br>
+   4.5 Click **Save Node**.<br>
 If the inactivity count is less than two, it triggers prompt the user to respond to prevent the conversation from being automatically closed. The Set Handover Inactivity Node will set the time period for inactivity after which the conversation will be closed or restart a Flow from the beginning.
 
 <figure>
