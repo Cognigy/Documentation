@@ -44,7 +44,7 @@ Set up the Lookup Node with handover statuses:
 
 5. Go to the child Nodes:<br>
    5.1 Click the **Case** Node.<br>
-   5.3 In the **Value** field, specify the `active` handover status.<br>
+   5.3 In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
    5.4 Click **Save Node**.<br>
 
    <figure>
