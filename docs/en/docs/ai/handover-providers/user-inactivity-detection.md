@@ -5,7 +5,7 @@ hidden: false
 ---
 # User Inactivity Detection and Handling
 
-The _Inactivity detection and handling_ feature allows you to set up automated responses or actions when a user is inactive for a specified period of time during a conversation with a virtual agent. This feature helps ensure that human agent's resources are being used efficiently and that users receive timely assistance.
+The _Inactivity detection and handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
 
 Configuring several nodes is required to use The Inactivity detection and handling feature:
 
