@@ -41,26 +41,24 @@ Set up the Lookup Node with handover statuses:
 2. Open a Node editor by clicking the Node.
 3. In the Node editor, go to the **Type** setting and select **Handover Status** from the list. 
 4. Click **Save Node**.
-
     <figure>
         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/2-handover-lookup.png" width="100%" />
     </figure>
-
 5. Go to the child Nodes:<br>
    5.1 Click the **Case** Node.<br>
    5.3 In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
    5.4 Click **Save Node**.<br>
-   <figure>
-        <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/3-handover-child-lookup.png" width="100%" />
-   </figure>
-   <br>
+      <figure>
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/3-handover-child-lookup.png" width="100%" />
+      </figure>
    5.5 Click the second **Case** Node.<br>
    5.6 In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
    5.7 Click **Save Node**.<br>
-   <figure>
-        <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/4-handover-second-child-lookup.png" width="100%" />
-   </figure>
+      <figure>
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/4-handover-second-child-lookup.png" width="100%" />
+      </figure>
 6. Add **completed** and **error** child Nodes by analogy.
+   
   
    
 
@@ -72,8 +70,9 @@ To do this, add the Once Node to start the inactivity timer when you receive the
 
 1. Below the **queue** child Node, add **Once** Node.
 2. Below the **On First Time** child Node, add the **Set Handover Inactivity** Node.
-3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input the timer is automatically reset and starts from the beginning. Once the timer expired, an inactivity event is sent to the Flow.4. Click **Save Node**.
-4. Repeat the same steps for the **active** child Node in case you want to detect and handle inactivity during active handovers.
+3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input the timer is automatically reset and starts from the beginning. Once the timer expired, an inactivity event is sent to the Flow.
+4. Click **Save Node**.
+5. Repeat the same steps for the **active** child Node in case you want to detect and handle inactivity during active handovers.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/5-set-handover-inactivity.png" width="100%" />
