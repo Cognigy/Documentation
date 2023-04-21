@@ -5,15 +5,17 @@ hidden: false
 ---
 # User Inactivity Detection and Handling
 
-The _Inactivity detection and handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
+The _Inactivity Detection and Handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
 
-Configuring several nodes is required to use The Inactivity detection and handling feature:
+Configuring several nodes is required to use The Inactivity Detection and Handling feature:
 
 - [Handover to Agent](#set-up-handover-to-agent-node)
 - [Lookup](#set-up-lookup-node)
 - [Set Handover Inactivity](#set-up-set-handover-inactivity-node)
 - [Go to](#set-up-go-to-node)
 - [If](#set-up-if-node)
+
+Below, we provide an example of how to set up Inactivity Detection and Handling, which can be customized to meet your specific needs.
 
 ## Set up Handover to Agent Node
 
