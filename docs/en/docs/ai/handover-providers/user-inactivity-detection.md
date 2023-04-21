@@ -21,8 +21,10 @@ To ensure proper detection and handling of inactivity during queue time or activ
 
 1. In the Flow editor, add the **Handover to Agent** Node.
 2. Open a Node editor by clicking the **Handover to Agent** Node.
-3. In the Node editor, go to the **Event Settings** section.
-4. Toggle on the **Send Queue Event** and **Send Active Event** settings. By toggling on these event settings, you will be able to receive two important events in your Flow: the first event is sent when the end user enters the queue, and the second event is sent when the handover becomes active.
+3. In the Node editor, go to the **Event Settings** section:
+4. Toggle on the **Send Queue Event** and **Send Active Event** settings:
+     - **Send Queue Event** - if enabled, an event is sent to the Flow once the end user enters the queue. This is a pre-requisite to detect inactivity while the end user is in the queue. 
+     - **If Send Active Event** - if enabled, an event is sent to the Flow as soon as the handover becomes active, that is when the human agent sends the first message. This is a pre-requisite to detect inactivity while a handover is active.
 5. Click **Save Node**.
 
 <figure>
@@ -46,20 +48,19 @@ Set up the Lookup Node with handover statuses:
    5.1 Click the **Case** Node.<br>
    5.3 In the **Value** field, specify the `active` handover status.<br>
    5.4 Click **Save Node**.<br>
-
    <figure>
         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/3-handover-child-lookup.png" width="100%" />
-    </figure>
-  
+   </figure>
+   <br>
    5.5 Click the second **Case** Node.<br>
    5.6 In the **Value** field, specify the `queue` handover status.<br>
    5.7 Click **Save Node**.<br>
-
    <figure>
         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/4-handover-second-child-lookup.png" width="100%" />
    </figure>
-
 6. Add **completed** and **error** child Nodes by analogy.
+  
+   
 
 ## Set up Set Handover Inactivity Node
 
@@ -87,7 +88,7 @@ Set the **Go to** Node to return to the Flow to react to any event.
 
 Remember to differentiate between inactivity behavior for queue time and active time.
 
-You can configure different inactivity behavior for queue and active states and use inactivity detection and handling only in the queue or active times. This differentiation allows the agent to see the conversation, do a wrap-up, summarize the conversation, etc., even after closing the conversation due to inactivity.
+You can configure different inactivity behavior for queue and active states and use inactivity detection and handling only in the queue or active times. This differentiation allows the agent to see the conversation, do a wrap-up, summarize the conversation, even after closing the conversation due to inactivity.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/6-handover-go-to.png" width="100%" />
@@ -121,6 +122,13 @@ If the inactivity count is less than two, it triggers prompt the user to respond
 In the end, add the **Go to** Node. 
 
 Check your Flow via the demo Webchat and any connected providers, such as Cognigy Live Agent.
+
+## More information
+
+- [Set Handover Inactivity](../flow-nodes/other-nodes/set-handover-inactivity.md)
+- [Close Handover](../flow-nodes/other-nodes/close-handover.md)
+- [Handover Providers](overview.md)
+- [Agent Handover](../tools/agent-handover.md)
 
 
 
