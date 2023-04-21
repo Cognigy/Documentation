@@ -1,5 +1,5 @@
 ---
-title: "Evens"
+title: "Voice Gateway Events"
 slug: "vg-events"
 hidden: false
 ---
