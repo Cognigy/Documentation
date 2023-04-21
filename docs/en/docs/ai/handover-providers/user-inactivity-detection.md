@@ -120,7 +120,7 @@ If the inactivity count is less than two, it triggers prompt the user to respond
 
 In the end, add the **Go to** Node. 
 
-Check your Flow via the demo Webchat and any connected providers, such as Cognigy Live Agent.
+Test your Flow via the demo Webchat and any connected providers, such as Cognigy Live Agent.
 
 ## More information
 
