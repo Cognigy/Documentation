@@ -79,7 +79,7 @@ To do this, add the Once Node to start the inactivity timer when you receive the
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/5-set-handover-inactivity.png" width="100%" />
 </figure>
 
-The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after one minute. If an end user input is received, the timer will reset to zero and only expire when the specified timer expires.
+The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after the specified time. If an end user input is received before the timeout, the timer will automatically reset and start from the beginning.
 
 Below the **Set Handover Inactivity** Node, you can add the **Overwrite Analytics** Node to record changes to the Analytics database.
 
