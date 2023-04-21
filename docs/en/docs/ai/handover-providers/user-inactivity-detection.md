@@ -66,7 +66,7 @@ Set up the Lookup Node with handover statuses:
 
 ## Set up Set Handover Inactivity Node
 
-The first inactivity timer should start once the user enters the queue. 
+If you want to detect inactivity during the queue time, the first timer should be started once the end user enters the queue.
 
 To do this, add the Once Node to start the inactivity timer when you receive the queue event:
 
