@@ -5,7 +5,7 @@ hidden: false
 ---
 # User Inactivity Detection and Handling
 
-The _Inactivity detection and handling_ feature allows you to set up automated responses or actions when a user is inactive for a specified period of time during a conversation with a virtual agent. This feature helps ensure that human agent's resources are being used efficiently and that users receive timely assistance.
+The _Inactivity detection and handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
 
 Configuring several nodes is required to use The Inactivity detection and handling feature:
 
@@ -35,7 +35,7 @@ To ensure proper detection and handling of inactivity during queue time or activ
 
 Set up the Lookup Node with handover statuses:
 
-1. In the Flow editor, after the **Handover to Agent** Node, add the **Lookup** Node.
+1. In the Flow editor, below the **Handover to Agent** Node, add the **Lookup** Node.
 2. Open a Node editor by clicking the Node.
 3. In the Node editor, go to the **Type** setting and select **Handover Status** from the list. 
 4. Click **Save Node**.
@@ -46,14 +46,14 @@ Set up the Lookup Node with handover statuses:
 
 5. Go to the child Nodes:<br>
    5.1 Click the **Case** Node.<br>
-   5.3 In the **Value** field, specify the `active` handover status.<br>
+   5.3 In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
    5.4 Click **Save Node**.<br>
    <figure>
         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/3-handover-child-lookup.png" width="100%" />
    </figure>
    <br>
    5.5 Click the second **Case** Node.<br>
-   5.6 In the **Value** field, specify the `queue` handover status.<br>
+   5.6 In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
    5.7 Click **Save Node**.<br>
    <figure>
         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/4-handover-second-child-lookup.png" width="100%" />
