@@ -92,7 +92,7 @@ Set the **Go to** Node to return to the Handover To Agent Node. This moves the e
 
 ## Set up If Node
 
-To check if there has been inactivity in the conversation for a certain amount of time:
+An example how detected inactivity could be handled is explained here:
 
 1. Add the IF Node at the end of the Flow.
 2. In the Node editor, specify `input.handover.inactivityCount >= 2`. 
