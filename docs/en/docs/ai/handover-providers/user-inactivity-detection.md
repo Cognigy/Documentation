@@ -95,7 +95,7 @@ Set the **Go to** Node to return to the Handover To Agent Node. This moves the e
 An example how detected inactivity could be handled is explained here:
 
 1. Add the IF Node at the end of the Flow.
-2. In the Node editor, specify `input.handover.inactivityCount >= 2`. 
+2. In the Node editor, specify `input.handover.inactivityCount >= 2`. This allows to handle the second detected inactivity differently from the first one.
 3. Below the **If** Node and its **Then** child Node, do the following:<br>
    3.1 Add the Close Handover Node.<br>
    3.2 Add the **Say** Node.<br>
