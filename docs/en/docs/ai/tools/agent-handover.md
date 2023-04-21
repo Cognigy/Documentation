@@ -90,10 +90,10 @@ The General settings are described below and the specific settings you can find 
 
 ### On Resolve Options
 
-| Parameter                           | Type     | Description                                                |
-|-------------------------------------|----------|------------------------------------------------------------|
-| Flow Continuation                   | Selector | - Below this Node <br> - At current AgentInject Entrypoint | 
-| Send resolve event to Virtual Agent | Toggle   |                                                            |
+| Parameter                           | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|-------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Flow Continuation                   | Selector | - Below this Node - the user will be taken to the node below the Handover node once the agent resolves the conversation. In this case, the user would continue in a different flow, but the starting point would be the node below the Handover node. <br> - At current AgentInject Entrypoint - the user will continue the chat where the agent inject was. This option allows the agent to guide the user to a specific part of the chat and then give control back to the user. | 
+| Send resolve event to Virtual Agent | Toggle   | Sending an event when the virtual agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
 ### Event Settings
 
