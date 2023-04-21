@@ -83,7 +83,7 @@ The timer is set in minutes and may vary by up to one minute. If there is no end
 
 ## Set up Go to Node
 
-Set the **Go to** Node to return to the Flow to react to any event.
+Set the **Go to** Node to return to the Handover To Agent Node. This moves the entrypoint directly above the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
 
 Remember to differentiate between inactivity behavior for queue time and active time.
 
