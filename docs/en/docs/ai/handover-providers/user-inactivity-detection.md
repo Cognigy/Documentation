@@ -52,7 +52,7 @@ Set up the Lookup Node with handover statuses:
     </figure>
   
    5.5 Click the second **Case** Node.<br>
-   5.6 In the **Value** field, specify the `queue` handover status.<br>
+   5.6 In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
    5.7 Click **Save Node**.<br>
 
    <figure>
