@@ -70,7 +70,7 @@ If you want to detect inactivity during the queue time, the first timer should b
 
 To do this, add the Once Node to start the inactivity timer when you receive the queue event:
 
-1. After the **queue** child Node, add **Once** Node.
+1. Below the **queue** child Node, add **Once** Node.
 2. After the **On First Time** child Node, add the **Set Handover Inactivity** Node.
 3. In the **Set Handover Inactivity** Node, specify the time in minutes, for example, `1`, that will determine when a timer will stop counting down and trigger an event.
 4. Click **Save Node**.
