@@ -82,7 +82,7 @@ To do this, add the Once Node to start the inactivity timer when you receive the
 
 The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after one minute. If an end user input is received, the timer will reset to zero and only expire when the specified timer expires.
 
-After the **Set Handover Inactivity** Node, you can add the **Overwrite Analytics** Node to record changes to the Analytics database.
+Below the **Set Handover Inactivity** Node, you can add the **Overwrite Analytics** Node to record changes to the Analytics database.
 
 ## Set up Go to Node
 
@@ -102,14 +102,14 @@ To check if there has been inactivity in the conversation for a certain amount o
 
 1. Add the IF Node at the end of the Flow.
 2. In the Node editor, specify `input.handover.inactivityCount >= 2`. 
-3. After the **If** Node and its **Then** child Node, do the following:<br>
+3. Below the **If** Node and its **Then** child Node, do the following:<br>
    3.1 Add the Close Handover Node.<br>
    3.2 Add the **Say** Node.<br>
    3.3. In the Say Node editor, in the text field, specify `You are back with the bot now!`.<br>
    3.4 In **Handover Settings > Handover Output Destination**, select **User and Agent**.<br>
    3.4 Click **Save Node**.<br>
    If the inactivity count is greater than two, it triggers the close handover process, which can close the handover on both the user and human agent sides.
-4. After the **If** Node and its **Else** child Node, do the following:<br>
+4. Below the **If** Node and its **Else** child Node, do the following:<br>
    4.1 Add the **Say** Node.<br>
    4.2 In the Say Node editor, in the text field, specify `Are you still there? The conversation will be automatically closed soon`.<br>
    4.3 In **Handover Settings > Handover Output Destination**, select **User**.<br>
