@@ -85,9 +85,6 @@ The timer is set in minutes and may vary by up to one minute. If there is no end
 
 Set the **Go to** Node to return to the Handover To Agent Node. This moves the entrypoint directly above the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
 
-Remember to differentiate between inactivity behavior for queue time and active time.
-
-You can configure different inactivity behavior for queue and active states and use inactivity detection and handling only in the queue or active times. This differentiation allows the agent to see the conversation, do a wrap-up, summarize the conversation, even after closing the conversation due to inactivity.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/6-handover-go-to.png" width="100%" />
