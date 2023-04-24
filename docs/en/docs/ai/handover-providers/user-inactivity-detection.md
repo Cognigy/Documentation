@@ -68,7 +68,7 @@ To do this, add the Once Node to start the inactivity timer when you receive the
 
 1. Below the **queue** child Node, add **Once** Node.
 2. Below the **On First Time** child Node, add the **Set Handover Inactivity** Node.
-3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input the timer is automatically reset and starts from the beginning. Once the timer expired, an inactivity event is sent to the Flow.
+3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input, the timer is automatically reset and starts from the beginning. Once the timer expires, an inactivity event is sent to the Flow.
 4. Click **Save Node**.
 5. Repeat the same steps for the **active** child Node in case you want to detect and handle inactivity during active handovers.
 
