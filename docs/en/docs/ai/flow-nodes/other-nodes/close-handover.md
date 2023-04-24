@@ -6,7 +6,7 @@ hidden: false
 # Close Handover
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/close-handover" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/close-handover.png" width="80%" />
   <figcaption>Close Handover</figcaption>
 </figure>
 
@@ -19,4 +19,9 @@ If the Close Handover Node is not active and the human agent resolves a conversa
 
 You can use this Node after the [Set Handover Inactivity](set-handover-inactivity.md) Node.
 
+## More information
 
+- [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)
+- [Set Handover Inactivity](set-handover-inactivity.md)
+- [Handover Providers](../../handover-providers/overview.md)
+- [Agent Handover](../../tools/agent-handover.md)

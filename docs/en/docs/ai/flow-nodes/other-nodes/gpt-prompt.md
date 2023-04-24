@@ -62,7 +62,7 @@ A user had a conversation with a chatbot. The conversation history so far is:
 Describe the user sentiment in one very short line.
 ```
 
-## More Information
+## More information
 
 - [Generative AI](../../generative-ai.md)
 - [GPT Conversation Node](gpt-conversation.md)
