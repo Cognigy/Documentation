@@ -143,7 +143,7 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
       4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       5. Test this Flow via the Interaction Panel.
 
-## More Information
+## More information
 
 - [Generative AI](../../generative-ai.md)
 - [GPT Prompt Node](gpt-prompt.md)
