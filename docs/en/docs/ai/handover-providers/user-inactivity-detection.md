@@ -26,7 +26,7 @@ To ensure proper detection and handling of inactivity during queue time or activ
 3. In the Node editor, go to the **Event Settings** section:
 4. Toggle on the **Send Queue Event** and **Send Active Event** settings:
      - **Send Queue Event** - if enabled, an event is sent to the Flow once the end user enters the queue. This is a pre-requisite to detect inactivity while the end user is in the queue. 
-     - **If Send Active Event** - if enabled, an event is sent to the Flow as soon as the handover becomes active, that is when the human agent sends the first message. This is a pre-requisite to detect inactivity while a handover is active.
+     - **Send Active Event** - if enabled, an event is sent to the Flow as soon as the handover becomes active, that is when the human agent sends the first message. This is a pre-requisite to detect inactivity while a handover is active.
 5. Click **Save Node**.
 
 <figure>
@@ -59,8 +59,6 @@ Set up the Lookup Node with handover statuses:
       </figure>
 6. Add **completed** and **error** child Nodes by analogy.
    
-  
-   
 
 ## Set up Set Handover Inactivity Node
 
@@ -70,7 +68,7 @@ To do this, add the Once Node to start the inactivity timer when you receive the
 
 1. Below the **queue** child Node, add **Once** Node.
 2. Below the **On First Time** child Node, add the **Set Handover Inactivity** Node.
-3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input the timer is automatically reset and starts from the beginning. Once the timer expired, an inactivity event is sent to the Flow.
+3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input, the timer is automatically reset and starts from the beginning. Once the timer expires, an inactivity event is sent to the Flow.
 4. Click **Save Node**.
 5. Repeat the same steps for the **active** child Node in case you want to detect and handle inactivity during active handovers.
 
