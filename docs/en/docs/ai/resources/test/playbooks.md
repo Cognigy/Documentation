@@ -61,7 +61,7 @@ In order to schedule a new Run, click on the *Run* button. In the dialog box tha
 </figure>
 
 !!! tip "Schedule playbook runs in bulk using the Cognigy CLI"
-    Instead of scheduling Playbook Runs individually via the UI, Playbook Runs can also be scheduled in bulk via the run command in the <a href="https://www.npmjs.com/package/@cognigy/cognigy-cli">Cognigy CLI</a>
+    You can schedule multiple Playbook Runs simultaneously using the `run` command in the [Cognigy CLI](https://www.npmjs.com/package/@cognigy/cognigy-cli) than scheduling them one by one via the UI.
 
 The Playbook Run will be created in the background and a success notification will be displayed once the creation is complete. When the Playbook Run creation is successful, you can see the newly created run in the Runs list. Each item in this list shows the status, creator and the creation time of the Run. The list can be sorted by these three parameters. Furthermore, the list can also be filtered by its *Status* and *Creator*.
 
