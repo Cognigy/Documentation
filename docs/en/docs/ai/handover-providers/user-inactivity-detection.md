@@ -26,7 +26,7 @@ To ensure proper detection and handling of inactivity during queue time or activ
 3. In the Node editor, go to the **Event Settings** section:
 4. Toggle on the **Send Queue Event** and **Send Active Event** settings:
      - **Send Queue Event** - if enabled, an event is sent to the Flow once the end user enters the queue. This is a pre-requisite to detect inactivity while the end user is in the queue. 
-     - **If Send Active Event** - if enabled, an event is sent to the Flow as soon as the handover becomes active, that is when the human agent sends the first message. This is a pre-requisite to detect inactivity while a handover is active.
+     - **Send Active Event** - if enabled, an event is sent to the Flow as soon as the handover becomes active, that is when the human agent sends the first message. This is a pre-requisite to detect inactivity while a handover is active.
 5. Click **Save Node**.
 
 <figure>
@@ -58,8 +58,6 @@ Set up the Lookup Node with handover statuses:
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/4-handover-second-child-lookup.png" width="100%" />
       </figure>
 6. Add **completed** and **error** child Nodes by analogy.
-   
-  
    
 
 ## Set up Set Handover Inactivity Node
