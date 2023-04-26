@@ -8,6 +8,7 @@ hidden: false
 
 The call was terminated by the virtual agent or by the user.
 
+Payload:
 
 ```json
 {

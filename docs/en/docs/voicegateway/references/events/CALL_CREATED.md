@@ -8,7 +8,7 @@ hidden: false
 
 The user created a call.
 
-Payload
+Payload:
 
 ```json
 {

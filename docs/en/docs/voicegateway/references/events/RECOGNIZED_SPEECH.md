@@ -8,6 +8,8 @@ hidden: false
 
 The user's answer was recognized by the virtual agent.
 
+Payload:
+
 ```json
 {
   "payload": {

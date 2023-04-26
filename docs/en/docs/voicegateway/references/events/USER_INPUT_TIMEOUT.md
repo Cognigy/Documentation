@@ -8,6 +8,8 @@ hidden: false
 
 The virtual agent terminated the call because the user did not respond.
 
+Payload:
+
 ```json
 {
     "payload": {
