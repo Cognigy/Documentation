@@ -71,26 +71,27 @@ Any **deviations** from the default values for our Trial and App environments ar
 |Maximum size of an Email attachment |10 MB |||
 |**Code Node** |||
 |Maximum code execution time |1 s |||
+|Maximum number of characters in the code editor | 200K |||
 
 ## Retention of Records
 
 !!! warning "Features such as **[OData]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/)** and **[Insights]({{config.site_url}}insights/cognigy-insights/)** rely on records you will find in the **Data** section below."
 
-!!! note "Changing TTL values for On-Prem Cognigy AI environments"
+!!! note "Changing TTL values for On-Prem Cognigy.AI environments"
     When you host your own Cognigy AI environment, you can set TTL values **System Wide via the Config Map** and / or **[Organisation Wide via Management UI]({{config.site_url}}ai/tools/management-ui/)**
 
-|Description|Default value|Trial|App|
-|--|--|--|--|
-|**Logs** |||
-|Maximum time until a Log-Line on the product's Log page will be removed |1 day |||
-|**Sessions** |||
-|Maximum time until relevant Flow-execution session information will be removed |30 days |||
-|**Data** |||
-|Maximum time until a Contact Profile which has not been read or modified will be removed |30 days |||
-|Maximum time until Conversation transcripts will be removed |30 days |||
-|**Intent Trainer Records** |||
-|Maximum time Intent Trainer records are stored in the database|30 days |||
-|**Audit Events** |||
-|Maximum time until audit events will be removed |30 days |||
+| Description                                                                              | Default value | Trial | App |
+|------------------------------------------------------------------------------------------|---------------|-------|-----|
+| **Logs**                                                                                 |               |       |     |
+| Maximum time until a Log-Line on the product's Log page will be removed                  | 1 day         |       |     |
+| **Sessions**                                                                             |               |       |     |
+| Maximum time until relevant Flow-execution session information will be removed           | 30 days       |       |     |
+| **Data**                                                                                 |               |       |     |
+| Maximum time until a Contact Profile which has not been read or modified will be removed | 30 days       |       |     |
+| Maximum time until Conversation transcripts will be removed                              | 30 days       |       |     |
+| **Intent Trainer Records**                                                               |               |       |     |
+| Maximum time Intent Trainer records are stored in the database                           | 30 days       |       |     |
+| **Audit Events**                                                                         |               |       |     |
+| Maximum time until audit events will be removed                                          | 30 days       |       |     |
 
  
