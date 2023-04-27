@@ -8,23 +8,27 @@ hidden: false
 
 The user's answer was recognized by the virtual agent.
 
+To test a payload with the `RECOGNIZED_SPEECH` event, you can use an empty Flow.
+
+Input: Start a call via the Interaction Panel by clicking ![phone](../../../assets/icons/phone.svg) **> Start Call**. When the call starts, say "Hello". 
+
 Payload:
 
 ```json
 {
   "payload": {
-    "call_sid": "9cac257f-483a-42e2-a62a-83a9d905f12d",
+    "call_sid": "ee654c0b-e1e3-45d9-ba7e-8f444080c955",
     "direction": "inbound",
-    "from": "user-qztPKheGTXWPXwDxxsz7DF",
+    "from": "user-a6dRWVsNTxEYPU1QkkZG4X",
     "to": "123456789",
-    "call_id": "3bc026f7-5e19-123c-e8a5-020052186fa0",
+    "call_id": "23b61302-5f72-123c-e8a5-020052186fa0",
     "sip_status": 200,
     "sip_reason": "OK",
     "call_status": "in-progress",
-    "account_sid": "c798036a-2e6f-401f-848d-024e9401097a",
-    "trace_id": "89d664629ff9f6b64759d8a2a2e0caf4",
-    "application_sid": "04f90460-fb1d-49c7-b4bd-ffff1fd4cfe5",
-    "fs_sip_address": "10.1.200.233:5060",
+    "account_sid": "a6a34b37-6391-4f36-aad8-afdcb3399a7d",
+    "trace_id": "012e7f38ccf2150c80f4169a8dd6b783",
+    "application_sid": "16f9efd3-bb18-475f-8b13-8750aacda925",
+    "fs_sip_address": "10.1.193.108:5060",
     "originating_sip_ip": "88.77.34.146",
     "api_base_url": "voicegateway-app-dev-vg.cognigy.ai/v1",
     "speech": {
@@ -33,104 +37,110 @@ Payload:
       "is_final": true,
       "alternatives": [
         {
-          "confidence": 0.820771,
-          "transcript": "Pizza."
+          "confidence": 0.9612209,
+          "transcript": "Hello."
         }
       ],
       "vendor": {
         "name": "microsoft",
         "evt": {
-          "id": "3d33887348534f58a371eb21ee4f5a56",
+          "id": "bbc41b27d34a40afbdb6b0bb25daee5c",
           "recognition_status": "Success",
-          "offset": 11400000,
-          "duration": 5700000,
+          "offset": 17300000,
+          "duration": 7400000,
           "channel": 0,
-          "display_text": "Pizza.",
+          "display_text": "Hello.",
           "n_best": [
             {
-              "confidence": 0.820771,
-              "lexical": "pizza",
-              "itn": "pizza",
-              "masked_i_t_n": "pizza",
-              "display": "Pizza.",
+              "confidence": 0.9612209,
+              "lexical": "hello",
+              "itn": "hello",
+              "masked_i_t_n": "hello",
+              "display": "Hello.",
               "words": [
                 {
-                  "word": "pizza",
-                  "offset": 11400000,
-                  "duration": 5700000,
-                  "confidence": 0.820771
+                  "word": "hello",
+                  "offset": 17300000,
+                  "duration": 7400000,
+                  "confidence": 0.9612209
                 }
               ]
             },
             {
-              "confidence": 0.7713108,
-              "lexical": "pizza hut",
-              "itn": "pizza hut",
-              "masked_i_t_n": "pizza hut",
-              "display": "pizza hut",
+              "confidence": 0.82822037,
+              "lexical": "hello hello",
+              "itn": "hello hello",
+              "masked_i_t_n": "hello hello",
+              "display": "hello hello",
               "words": [
                 {
-                  "word": "pizza",
-                  "offset": 11400000,
-                  "duration": 4600000,
-                  "confidence": 0.7693497
+                  "word": "hello",
+                  "offset": 17300000,
+                  "duration": 3600000,
+                  "confidence": 0.83673537
                 },
                 {
-                  "word": "hut",
-                  "offset": 16100000,
-                  "duration": 1000000,
-                  "confidence": 0.77968997
+                  "word": "hello",
+                  "offset": 21000000,
+                  "duration": 3700000,
+                  "confidence": 0.81992954
                 }
               ]
             },
             {
-              "confidence": 0.41549414,
-              "lexical": "piazza",
-              "itn": "piazza",
-              "masked_i_t_n": "piazza",
-              "display": "piazza",
+              "confidence": 0.6618517,
+              "lexical": "hello no",
+              "itn": "hello no",
+              "masked_i_t_n": "hello no",
+              "display": "hello no",
               "words": [
                 {
-                  "word": "piazza",
-                  "offset": 11400000,
-                  "duration": 5700000,
-                  "confidence": 0.41549414
+                  "word": "hello",
+                  "offset": 17300000,
+                  "duration": 4100000,
+                  "confidence": 0.61299324
+                },
+                {
+                  "word": "no",
+                  "offset": 21500000,
+                  "duration": 3200000,
+                  "confidence": 0.7240353
                 }
               ]
             },
             {
-              "confidence": 0.7938725,
-              "lexical": "a pizza",
-              "itn": "a pizza",
-              "masked_i_t_n": "a pizza",
-              "display": "a pizza",
+              "confidence": 0.3121025,
+              "lexical": "helo",
+              "itn": "helo",
+              "masked_i_t_n": "helo",
+              "display": "helo",
               "words": [
                 {
-                  "word": "a",
-                  "offset": 11000000,
+                  "word": "helo",
+                  "offset": 17300000,
+                  "duration": 7400000,
+                  "confidence": 0.3121025
+                }
+              ]
+            },
+            {
+              "confidence": 0.94312507,
+              "lexical": "hello l",
+              "itn": "hello l",
+              "masked_i_t_n": "hello l",
+              "display": "hello L",
+              "words": [
+                {
+                  "word": "hello",
+                  "offset": 17300000,
+                  "duration": 6800000,
+                  "confidence": 0.9587209
+                },
+                {
+                  "word": "L",
+                  "offset": 24500000,
                   "duration": 200000,
-                  "confidence": 0.32845265
-                },
-                {
-                  "word": "pizza",
-                  "offset": 11300000,
-                  "duration": 5800000,
-                  "confidence": 0.8175379
-                }
-              ]
-            },
-            {
-              "confidence": 0.39418924,
-              "lexical": "pizzas",
-              "itn": "pizzas",
-              "masked_i_t_n": "pizzas",
-              "display": "pizzas",
-              "words": [
-                {
-                  "word": "pizzas",
-                  "offset": 11400000,
-                  "duration": 5700000,
-                  "confidence": 0.39418924
+                  "confidence": 0.5844207
                 }
               ]
             }

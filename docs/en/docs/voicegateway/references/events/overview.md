@@ -22,4 +22,6 @@ During the call, the following voice events are recorded in the payload:
 
 
 
-You can access Voice Gateway events either in the input object or in the output transformer. Advanced users can use these events for special purposes like analytics. The output transformer is executed after processing the flow. For example, if you receive the `CALL_COMPLETED` event, write some metrics in the transformer via HTTP request.
+You can access Voice Gateway events either in the input object `input.data.event` or in the [Output Transformer](../../../ai/endpoints/transformers/output-transformer.md). Advanced users can use these events for special purposes like [analytics](../../../ai/tools/analytics/analytics-concepts.md). 
+
+The Output Transformer is executed after processing the flow. For example, if you receive the `CALL_COMPLETED` event, write some metrics in the transformer via HTTP request.

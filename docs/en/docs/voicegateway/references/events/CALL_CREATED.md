@@ -8,6 +8,10 @@ hidden: false
 
 The user created a call.
 
+To test a payload with the `CALL_CREATED` event, you can use an empty Flow.
+
+Input: Start a call via the Interaction Panel by clicking ![phone](../../../assets/icons/phone.svg) **> Start Call**.
+
 Payload:
 
 ```json
