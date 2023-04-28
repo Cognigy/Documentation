@@ -72,7 +72,12 @@ The following **Global Roles** are available:
 !!! note "Control of Global Access Rights"
     The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.
 
-More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message/) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members/) panel of each agent.
+More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine-grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message/) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members/) panel of each agent.
+
+## Notifications
+
+When you create a new user or assign a project to an existing user, that user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
+
 
 ## More information
 
