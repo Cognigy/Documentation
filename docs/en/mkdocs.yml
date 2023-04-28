@@ -628,3 +628,6 @@ plugins:
 - section-index
 - macros
 - search
+- exclude:
+    glob:
+      - _includes/*
