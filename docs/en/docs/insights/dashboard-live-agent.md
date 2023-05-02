@@ -1,12 +1,15 @@
 ---
- title: "Live Agent" 
- slug: "Live Agent" 
+ title: "Live Agent (Beta)" 
+ slug: "Live Agent (Beta)" 
  hidden: true 
 ---
 
-# Live Agent
+# Live Agent (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49(Beta)-purple.svg)](../release-notes/4.49.md)
+
+!!! note
+    The Live Agent dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
 
 The Live Agent dashboard displays Live Agent metrics for a specific Virtual Agent.
 
