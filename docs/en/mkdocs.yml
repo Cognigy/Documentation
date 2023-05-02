@@ -284,7 +284,7 @@ nav:
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
       - ai/tools/user-menu/organisation-details.md
-      - ai/tools/user-menu/audit-events.md
+      - ai/tools/user-menu/audit-overview.md
     - Interaction Panel:
       - ai/tools/interaction-panel/interaction-panel.md
       - ai/tools/interaction-panel/input.md
@@ -507,8 +507,16 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
-  - Reference:
-    - voicegateway/references/events.md
+  - References:
+    - Voice Gateway Events:
+        - voicegateway/references/events/overview.md
+        - voicegateway/references/events/RECOGNIZED_SPEECH.md
+        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/CALL_CREATED.md
+        - voicegateway/references/events/CALL_RECONNECTED.md
+        - voicegateway/references/events/CALL_COMPLETED.md
+        - voicegateway/references/events/CALL_FAILED.md
+        - voicegateway/references/events/USER_INPUT_TIMEOUT.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
