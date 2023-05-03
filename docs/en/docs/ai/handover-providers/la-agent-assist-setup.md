@@ -5,7 +5,7 @@
 ---
 # Agent Assist Setup
 
-## Setting up a Flow
+## Set up a Flow
 
 <div class="divider"></div>
 
@@ -31,24 +31,31 @@ You could create Intents, for example, and use Lookup Nodes in combination with 
     </figure>
 
 
-## Setting up your Endpoint
+## Set up an Endpoint
 <div class="divider"></div>
 
-Now that you have set up your Flow, you will need to configure your Endpoint.
+To configure your Endpoint:
 
-Click Deploy and then Endpoints. Go to your Webchat Endpoint.
+=== "Agent Assist"
+    1. Go to **Deploy > Endpoints**. 
+    2. Go to your **Webchat** Endpoint.
+    3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
+    4. Go to the **Agent Assist (beta)** section.
+    5. In the **Agent Assist Flow** field, select the name of the Agent Assist Flow you've created in the previous step.
+    6. Click **Save**.
 
-Scroll down and click on Handover Settings. At the bottom you will find a field for **Agent Assist Flow**. 
+=== "Agent Assist Workspace"
+    1. Go to **Deploy > Endpoints**. 
+    2. Go to your **Webchat** Endpoint.
+    3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
+    4. Go to the **Agent Assist (beta)** section.
+    5. In the **Agent Assist Config** field, select a config that you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
+    6. Click **Save**.
+    7. In Live Agent, go to **Profile settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**.
 
-Here, click the dropdown menu and select the name of the Agent Assist Flow you've created in the previous step.
+The Endpoint setup is completed.
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-endpoint.png" width="75%" />
-    </figure>
-
-Clive Save and you are finished with your Endpoint setup.
-
-## Testing Agent Assist
+## Test Agent Assist
 <div class="divider"></div>
 
 To test Agent Assist, start a Webchat and complete handover to Live Agent. 
@@ -59,27 +66,32 @@ After the handover is complete, send a message as an Agent. Then, send a message
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat.png" width="75%" />
     </figure>
 
-Once the Agent has received this message, they will receive a dropdown menu labeled *Assist*. In this menu, they will find the results from the Flow sent via Agent Assist.
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
-    </figure>
+Once the human agent has received this message, the behavior of testing will differ depending on how you configured the Endpoint before:
 
-The Agent can click the blue arrow to forward content to the customer.
+=== "Agent Assist"
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
-    </figure>
+    1. The human agent will receive a dropdown menu labeled *Assist*. 
+    2. In this menu, the human agent will find the results from the Flow sent via Agent Assist.
+           <figure>
+               <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
+           </figure>
+    3. The human agent can click the blue arrow to forward content to the user.
+          <figure>
+               <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
+          </figure>
+    
+           <figure>
+               <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete.png" width="75%" />
+           </figure>
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete.png" width="75%" />
-    </figure>
+=== "Agent Assist Workspace"
+    
+     The human agent will receive a link to the Workspace in the conversation chat. 
+     This Workspace is also accessible from the right side of the chat.
+      
+       <figure>
+         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/agent-assist-la.png" width="75%" />
+       </figure>
 
-## Setup Complete
-<div class="divider"></div>
-
-This completes the setup for Agent Assist!
-
-For more, visit our Live Agent documentation here: 
-
-- [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)
+If the testing is successful, the Agent Assist setup is complete.

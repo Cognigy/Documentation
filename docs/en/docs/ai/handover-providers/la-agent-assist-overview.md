@@ -14,15 +14,9 @@
 With Agent Assist, among other things, the following can be achieved:
 
 - Provide contextual information for the Agent (CRM records, ERP data, small talk clues, etc.)
-
 - Allow quick access to resources such as knowledge base articles
-
 - Suggest replies (including media) which can be forwarded to the customer
 
 Using Cognigy.AI, you can customize Agent Assist to be as powerful as you need it to be.
 
-## Ready to Set up Agent Assist?
-<div class="divider"></div>
-To setup your Project for Agent Assist, visit our documentation here: 
-
-- [**Agent Assist Setup**]({{config.site_url}}ai/handover-providers/la-agent-assist-setup/)
+To set up your Project for Agent Assist, read [Agent Assist Setup](la-agent-assist-setup.md).
