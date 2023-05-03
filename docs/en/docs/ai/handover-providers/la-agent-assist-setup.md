@@ -22,7 +22,7 @@ During an active Live Agent handover, this Flow will process all customer inputs
 Agent Assist messages are only shown based on customer inputs received during an active handover after the human agent has initially responded.
 
 !!! warning
-You don't need to include the Handover Node in the Agent Assist Flow. Using the Handover Node in the main Live Agent Flow is enough for the configuration process.
+    You don't need to include the Handover Node in the Agent Assist Flow. Using the Handover Node in the main Live Agent Flow is enough for the configuration process.
 
 Create Intents, for example, and use Lookup Nodes with Say Nodes to provide helpful information to your Agents based on customer inputs.
 
