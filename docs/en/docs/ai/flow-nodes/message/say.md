@@ -319,6 +319,7 @@ The following Display Templates are available:
 * Image & Text overlay
 * Vertical List
 * Horizontal List
+
 ### Custom JSON Directives
 
 Instead of going with the WYSIWYG approach, you may also define a directive manually using a CognigyScript-enabled JSON field.
@@ -492,6 +493,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text        | A simple text message.                                                                                                                                           |
 | Custom JSON | Can contain a valid LINE message object. See the [Line Documentation](https://developers.line.me/en/reference/messaging-api/) for further details and templates. |
+
 ## Twilio
 <div class="divider"></div>
 
@@ -514,6 +516,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice. *Polly* has some features which are listed in Twilio documentation, see:
 
 [:link: Twilio Amazon Polly](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
+
 ## Twilio SMS
 <div class="divider"></div>
 
@@ -552,7 +555,6 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 !!! warning "Multiple Flow Outputs"
     If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
 
-
 ## Voice Gateway
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
@@ -571,6 +573,38 @@ These configurations are also available in the following Nodes:
 - [Set Session Config](../vg/set-session-config.md)
 - [Play](../vg/play.md)
 - [Session Speech Parameters Config](../generic-voice-nodes/session-speech-parameters-config.md)
+
+## 8x8
+
+The **8x8** tab provides two methods for creating and editing a message which is only for the **8x8** channel:
+
+- **Text** for sending text message responses.
+- **Custom JSON** for defining more complex messages and templates.
+
+| Type        | Description                             |
+|-------------|-----------------------------------------|
+| Text        | A simple text message.                  |
+| Custom JSON | Can contain a valid 8x8 message object. |
+
+??? info "Custom JSON example"
+    
+    ```json
+    {
+        "authorType": "customer",
+        "text": "Hello!",
+        "attachments": [
+            {
+                "id": "string"
+            }    
+        ],
+        "cards": [
+            {
+                "contentType": "application/vnd.microsoft.card.adaptive",
+                "content": {}
+            }
+        ]
+    }
+    ```
 
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>

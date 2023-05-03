@@ -25,6 +25,7 @@ The following Handover Providers allow integrations with third-party products:
 - [RingCentral Engage](ringcentralengage-handover.md)
 - [Salesforce](salesforce-handover.md) 
 - [Genesys Cloud (Beta)](genesys-cloud.md) 
+- [8x8](8x8.md)
 
 ## More information
 

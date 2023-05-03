@@ -314,6 +314,7 @@ nav:
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
     - ai/endpoints/real-time-translation-settings.md
+    - ai/endpoints/file-storage.md
     - ai/endpoints/content-conversion.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
@@ -348,6 +349,7 @@ nav:
     - ai/endpoints/twilio.md
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
+    - ai/endpoints/8x8.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
@@ -369,6 +371,7 @@ nav:
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
+    - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
     
   - ai/generative-ai.md
