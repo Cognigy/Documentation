@@ -1,7 +1,7 @@
 ---
- title: "Agent Assist Setup" 
- slug: "la-agent-assist-setup" 
- hidden: false 
+title: "Agent Assist Setup"
+slug: "la-agent-assist-setup"
+hidden: false
 ---
 # Agent Assist Setup
 
@@ -9,22 +9,22 @@
 
 <div class="divider"></div>
 
-Agent Assist uses a **Flow** to provide additional information to your Agents in realtime. 
+Agent Assist uses a **Flow** to provide additional real-time information to your agents.
 
-To set up Agent Assist for Live Agent, first you will need to create a new Flow within your Project.
+To set up Agent Assist for Live Agent, first, you must create a new Flow within your project.
 
   <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flows.png" width="75%" />
     </figure>
 
-During an active Live Agent handover, all customer inputs will be shot against this Flow and the outputs of the Flow are displayed to the human agent as part of the conversation.
+During an active Live Agent handover, this Flow will process all customer inputs, and the outputs of the Flow will be displayed to the human agent as part of the conversation.
 
-Agent Assist messages are only shown based on customer inputs that are received during an active handover, that is after the human agent has initially responded.
+Agent Assist messages are only shown based on customer inputs received during an active handover after the human agent has initially responded.
 
-!!! warning 
-    You don't need to include the Handover Node in the Agent Assist Flow. Using the Handover Node in the main Live Agent Flow is enough for the configuration process.
-     
-You could create Intents, for example, and use Lookup Nodes in combination with Say Nodes to provide helpful information to your Agents based on customer inputs.
+!!! warning
+You don't need to include the Handover Node in the Agent Assist Flow. Using the Handover Node in the main Live Agent Flow is enough for the configuration process.
+
+Create Intents, for example, and use Lookup Nodes with Say Nodes to provide helpful information to your Agents based on customer inputs.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flow-example.png" width="75%" />
@@ -37,7 +37,7 @@ You could create Intents, for example, and use Lookup Nodes in combination with 
 To configure your Endpoint:
 
 === "Agent Assist"
-    1. Go to **Deploy > Endpoints**. 
+    1. Go to **Deploy > Endpoints**.
     2. Go to your **Webchat** Endpoint.
     3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
     4. Go to the **Agent Assist (beta)** section.
@@ -45,11 +45,11 @@ To configure your Endpoint:
     6. Click **Save**.
 
 === "Agent Assist Workspace"
-    1. Go to **Deploy > Endpoints**. 
+    1. Go to **Deploy > Endpoints**.
     2. Go to your **Webchat** Endpoint.
     3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
     4. Go to the **Agent Assist (beta)** section.
-    5. In the **Agent Assist Config** field, select a config that you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
+    5. In the **Agent Assist Config** field, select a config you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
     6. Click **Save**.
     7. In Live Agent, go to **Profile settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**.
 
@@ -58,20 +58,20 @@ The Endpoint setup is completed.
 ## Test Agent Assist
 <div class="divider"></div>
 
-To test Agent Assist, start a Webchat and complete handover to Live Agent. 
+To test Agent Assist, start a Webchat and complete handover to Live Agent.
 
 After the handover is complete, send a message as an Agent. Then, send a message as the user in Webchat.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat.png" width="75%" />
-    </figure>
+</figure>
 
 
 Once the human agent has received this message, the behavior of testing will differ depending on how you configured the Endpoint before:
 
 === "Agent Assist"
 
-    1. The human agent will receive a dropdown menu labeled *Assist*. 
+    1. The human agent will receive a dropdown menu **Assist**. 
     2. In this menu, the human agent will find the results from the Flow sent via Agent Assist.
            <figure>
                <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
@@ -86,7 +86,7 @@ Once the human agent has received this message, the behavior of testing will dif
            </figure>
 
 === "Agent Assist Workspace"
-    
+
      The human agent will receive a link to the Workspace in the conversation chat. 
      This Workspace is also accessible from the right side of the chat.
       
