@@ -105,4 +105,4 @@ The General settings are described below and the specific settings you can find 
 
 ## Handover Providers
 
-For a list of supported Handover services, refer to the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
+For a list of supported Handover services, refer to the [Handover Providers Overview](../handover-providers/overview.md).
