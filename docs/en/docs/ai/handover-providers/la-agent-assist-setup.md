@@ -51,7 +51,7 @@ To configure your Endpoint:
     4. Go to the **Agent Assist (beta)** section.
     5. In the **Agent Assist Config** field, select a config you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
     6. Click **Save**.
-    7. In Live Agent, go to **Profile settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**.
+    7. In Live Agent, go to **Profile settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**, then click **Update Settings**.
 
 The Endpoint setup is completed.
 
