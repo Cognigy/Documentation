@@ -64,6 +64,10 @@ The **Project Roles** available to chose from are listed below:
 !!! note "API Access"
     The same rights that control access to elements of the user interface also control access to the respective aspects of the API.
 
+## Notifications
+
+When you create a new member in your project, that user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
+
 ## Locale Restrictions
 <div class="divider"></div>
 
