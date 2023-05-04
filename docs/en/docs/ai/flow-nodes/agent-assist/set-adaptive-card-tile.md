@@ -13,14 +13,14 @@ hidden: true
 ## Description
 <div class="divider"></div>
 
-This Node allows you to create and display adaptive cards in your conversation flow. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
+This Node allows you to create and display adaptive cards in your Agent Assist Workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
 
 The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
 
 | Parameter          | Type          | Description                                                                                                                                |
 |--------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID            | CognigyScript | The ID that you recently created in the Agent Assist Configuration. Set the ID as a reference to the transcript in the same configuration. |
-| Adaptive Card JSON | HTML          | The Adaptive Card JSON to render inside the tile.                                                                                          |
+| Tile ID            | CognigyScript | The ID that you  created in the Agent Assist Configuration. Set the ID as a reference to the transcript in the same configuration. |
+| Adaptive Card JSON | HTML          | The Adaptive Card JSON payload to render inside the tile.                                                                                          |
 | JSON Data          | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                     |
 
 

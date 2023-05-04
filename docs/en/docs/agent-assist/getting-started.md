@@ -96,6 +96,7 @@ To create an Endpoint, follow these steps:
 7. Go to **Handover Settings**. 
 8. In **Agent Assist Flow**, select the Agent Assist Flow, that you created in the first steps. 
 9. In **Agent Assist Config**, select the config which you recently created via API. 
+10. In case wanted, a transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings
 10. Click **Save**.
 
 ## Configure an Agent Assist Flow
@@ -109,15 +110,19 @@ To create an Endpoint, follow these steps:
 
 Now, we can observe the Agent Assist workspace.
 
-A suggested reply is displayed on the left side, followed by the transcript, documentation, and a supporting image at the top.
+To get to the Agent Assist Workspace, start a conversation with your Virtual Agent. At one point you will be handed over to a human agent. 
 
-Upon triggering a few intents, we can see that the Voice Gateway intent has been activated, modifying the suggested reply and the relevant documentation page.
+If you use the standalone version of Agent Assist, this is when you will receive the link to your Agent  Assist Workspace.​
 
-Additionally, the supporting image can be helpful when discussing the setup of the Voice Gateway.
+When a customer is being  handed over not only the  conversation history with the  bot and the current intent are  being forwarded to the human  agent, but also a specific link  to access the Agent Assist  Workspace.​
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}agent-assist/images/agent-assist-vg.png" width="80%" />
-</figure>
+In case you are using the embedded version, the Agent Assist Workspace will be shown within an iFrame in your Agent Workspace.
+
+Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
+
+The widgets will populate their content once the customer starts the conversation.
+
+
 
 ## More information
 
