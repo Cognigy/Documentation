@@ -73,6 +73,10 @@ input.UUIValue = createUUIValue(uui);
 The transcription is forwarded to a webhook endpoint that directs to the Agent Assist Workspace, triggering the tile updates. This approach lets us use Voice Gateway without middleware to capture the audio stream.
 
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}agent-assist/images/voice.png" width="80%" />
+</figure>
+
 ## Chat Use Case
 
 1. The conversation starts via Webchat Widget.
@@ -81,6 +85,9 @@ The transcription is forwarded to a webhook endpoint that directs to the Agent A
 
 This approach lets you connect to the right session and send tile updates. There is no need for manual effort, as the configuration and flow are set within the Endpoint.
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}agent-assist/images/chat.png" width="80%" />
+</figure>
 
 ## More information
 
