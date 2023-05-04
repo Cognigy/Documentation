@@ -76,6 +76,8 @@ More specific **Access Rights** can be defined for individual features within Ag
 
 ## Notifications
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.50-blue.svg)](../../../release-notes/4.50.md)
+
 When you create a new user or assign a project to an existing user, that user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
 
 
