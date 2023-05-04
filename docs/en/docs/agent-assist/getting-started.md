@@ -40,7 +40,7 @@ To get your API key, follow these steps:
     - API Key (api_key)
 6. Click **Set** near both fields. 
 
-### Create a request
+### Create your Agent Assist Config
 
 1. Create an agent assist configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
@@ -94,7 +94,7 @@ To create an Endpoint, follow these steps:
 7. Go to **Handover Settings**. 
 8. In **Agent Assist Flow**, select the Agent Assist Flow, that you created in the first steps. 
 9. In **Agent Assist Config**, select the config which you recently created via API. 
-10. In case wanted, a transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings
+10. In case wanted, a transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings.
 11. Click **Save**.
 
 ## Configure an Agent Assist Flow
