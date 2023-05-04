@@ -19,7 +19,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 | Parameter          | Type          | Description                                                                                                                                |
 |--------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID            | CognigyScript | The ID that you  created in the Agent Assist Configuration. Set the ID as a reference to the transcript in the same configuration. |
+| Tile ID            | CognigyScript | The ID that you  created in the Agent Assist Configuration.  |
 | Adaptive Card JSON | HTML          | The Adaptive Card JSON payload to render inside the tile.                                                                                          |
 | JSON Data          | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                     |
 

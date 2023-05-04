@@ -17,7 +17,7 @@ This Node allows you to display customized HTML content in the Agent Assist Work
 
 | Parameter    | Type          | Description                                                                                                                                |
 |--------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID      | CognigyScript | The ID that you  created in the Agent Assist Configuration. Set the ID as a reference to the transcript in the same configuration. |
+| Tile ID      | CognigyScript | The ID that you  created in the Agent Assist Configuration.  |
 | HTML Content | HTML          | The HTML content to render inside the Widget.                                                                                              |
 | JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                     |
 

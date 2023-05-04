@@ -6,7 +6,6 @@ hidden: true
 
 # Agent Assist configuration
 
-
 The Agent Assist configuration refers to the Agent Assist Config which you can define via API to configure the  position and size of the widgets in your grid. This gives full  flexibility to use the Agent  Assist Workspace as efficient as possible.​ 
 
 The workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. While configuring your grid you can choose the best placement for specific types of widgets.

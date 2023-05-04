@@ -1,10 +1,12 @@
 ---
-title: "Agent Assist"
+title: "Agent Assist (Beta)"
 slug: "overview"
 hidden: true
 ---
 
 # Agent Assist Nodes (Beta)
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../../../release-notes/4.51.md)
 
 !!! note
     This feature is currently in Beta and may contain some issues. We encourage you to test the feature and provide feedback, so we can improve it before it is officially released.
