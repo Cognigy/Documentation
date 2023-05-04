@@ -4,9 +4,9 @@ slug: "configuration"
 hidden: true
 ---
 
-# Agent Assist configuration
+# Agent Assist Workspace Configuration
 
-The Agent Assist configuration refers to the Agent Assist Config which you can define via API to configure the  position and size of the widgets in your grid. This gives full  flexibility to use the Agent  Assist Workspace as efficient as possible.​ 
+The Agent Assist configuration refers to the Agent Assist Config which you can define via API to configure the position and size of the widgets in your grid. This gives full  flexibility to use the Agent  Assist Workspace as efficient as possible.​ 
 
 The workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. While configuring your grid you can choose the best placement for specific types of widgets.
 
@@ -24,7 +24,7 @@ Each tile must have a name, for example, `map`, `profile`, or `history`, that wo
 
 ## Example
 
-Let's assume that we need to create Agent Assit configue based on this mockup:
+Let's assume that we need to create Agent Assist configuration based on this mockup:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}agent-assist/images/grid-mockup.png" width="80%" />
@@ -172,9 +172,9 @@ The JSON response contains the details of the newly created Agent Assist configu
 
 ## More information
 
-- [Agent Assist embedding](embedding.md)
+- [Agent Assist Workspace Embedding](embedding.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
-- [Agent Assist](overview.md)
+- [Agent Assist Workspace](overview.md)
 - [Getting started with Agent Assist](getting-started.md)
 
 

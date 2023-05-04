@@ -22,12 +22,10 @@ Check that you have two Flows: the Main flow and the Agent Assist flow.
 
 ## Configure the Agent Assist Config
 
-**Configure your grid as it fits best.​**
+With the Agent Assist Config  API you can configure the position and size of the tiles in your grid. This gives full flexibility to use the Agent Assist Workspace as efficient as possible.​
 
-With the Agent Assist Config  API you can configure the  position and size of the tiles in  your grid. This gives full  flexibility to use the Agent  Assist Workspace as efficient  as possible.​
-
-1. [Get your API Key from your Profile](#get-api-key)
-2. [Create your Agent Assist Config](#create-a-request).
+1. [Get your API Key from your Profile](#get-an-api-key)
+2. [Create your Agent Assist Config](#create-a-request)
 
 ### Get an API Key
 
@@ -79,7 +77,7 @@ To get your API key, follow these steps:
       "projectId": "your Project ID"
     }
     ```
-4. Create the request by clicking **Try**.
+5. Create the request by clicking **Try**.
 
 When the request is created, you will see the response code `200`.
 
@@ -97,14 +95,14 @@ To create an Endpoint, follow these steps:
 8. In **Agent Assist Flow**, select the Agent Assist Flow, that you created in the first steps. 
 9. In **Agent Assist Config**, select the config which you recently created via API. 
 10. In case wanted, a transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings
-10. Click **Save**.
+11. Click **Save**.
 
 ## Configure an Agent Assist Flow
 
 1. To configure the first Widget, go into to the Agent Assist Flow.
-1. Add your desired Agent Assist Flow Node. 
-2. Add the content, which will be displayed as a Widget in the Agent Assist Workspace.
-3. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration, this defines the size and placement of the Widget within the Workspace.
+2. Add your desired Agent Assist Flow Node. 
+3. Add the content, which will be displayed as a Widget in the Agent Assist Workspace.
+4. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration, this defines the size and placement of the Widget within the Workspace.
 
 ## Explore an Agent Assist workspace
 
@@ -123,12 +121,11 @@ Once the human agent engages with the conversation, the grid will show an empty 
 The widgets will populate their content once the customer starts the conversation.
 
 
-
 ## More information
 
-- [Agent Assist configuration](configuration.md)
-- [Agent Assist embedding](embedding.md)
-- [Agent Assist](overview.md)
+- [Agent Assist Workspace Configuration](configuration.md)
+- [Agent Assist Workspace Embedding](embedding.md)
+- [Agent Assist Workspace](overview.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 
 

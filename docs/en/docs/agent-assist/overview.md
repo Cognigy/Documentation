@@ -4,25 +4,22 @@ slug: "overview"
 hidden: true
 ---
 
-# Agent Assist (Beta)
+# Agent Assist Workspace (Beta)
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../release-notes/4.51.md)
 
 !!! note
     This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback, so we can improve it before it is officially released.
 
-_Cognigy Agent Assist_ is an advanced AI-powered tool designed to provide real-time assistance to human agents during customer interactions. Virtual Agents are listening to the conversation and can pro-actively assist human agents by proposing answers and looking up information using advanced AI. . This feature empowers agents to deliver prompt and accurate support.
-
-By configuring your flexible and customizable Agent Assist workspaces with widgets that display any information, you can improve the overall efficiency of your contact center.
+_Cognigy Agent Assist Workspace_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat or voice use case. When embedded into your contact center's agent workspace, it enhances the overall efficiency of your contact center.
 
 ## Key features
 
-- Displays completely interactive micro applications​ in a customziable grid
-- Adds rich-media capabilities to any contact center stack​
-- Stand-alone or integrated into existing Contact Center Agent Desktops​
-- Shows any type of information like PDFs or even interactive 3D animations​
-- Access to 100% of Cognigy.AI features, including Extensions, extensive logic​
-
+- Displays completely interactive micro applications in a customizable grid.
+- Adds rich-media capabilities to any contact center stack.
+- Stand-alone or integrated into existing Contact Center Agent Desktops.
+- Shows any type of information like PDFs or even interactive 3D animations.
+- Access to 100% of Cognigy.AI features,  including Extensions and extensive logic.
 
 
 ## More information
