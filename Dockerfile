@@ -18,7 +18,7 @@ RUN python ./scripts/docs.py build-all
 #
 # Stage 2: build container serving 'site'
 #
-FROM nginx:1.23.3-alpine
+FROM nginx:1.24.0-alpine
 
 COPY --from=build /app/site/ /usr/share/nginx/html/
 

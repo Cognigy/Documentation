@@ -24,12 +24,12 @@ Global filter always will be available no matter where you navigate. Once you ha
 </figure>
 
 !!! note
-    **The global filter options are available in all applications running in Cognigy Insights.**
+    The global filter options are available in all applications running in Cognigy Insights.
 
 !!! warning
-    **Every change in filter settings needs to be confirmed with “Apply” to be active.**
+    Every change in filter settings needs to be confirmed with **Apply** to be active.
 
-Several filter menus provide a "**Negate**" slide bar. When active all but the selected endpoints will be analyzed. 
+Several filter menus provide a **Negate** slide bar. When active all but the selected endpoints will be analyzed. 
 
 
 ## Timeframe
@@ -94,8 +94,8 @@ As of Cognigy.AI 4.10.0  you can filter the Insights reports for the admin conso
 
 So if you have tested the Virtual Agent using the Interaction Panel, you now will be able to fetch the Insights reports for this also.
 
-- Open the global filter "Endpoints". 
-- Select "Interaction Panel" and confirm with "Apply" to get the analytics data displayed.
+- Open the global filter **Endpoints**. 
+- Select "Interaction Panel" and confirm with **Apply** to get the analytics data displayed.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/c4625a8-5268_Global_filter_Interaction_Panel_2.png" width="100%" />
@@ -135,7 +135,7 @@ This filter considers the locales of the available conversations.
 
 You can select one or more Locales to be analyzed. 
 
-Using the **"Negate"** slider bar "all but the selected" locales will be analyzed.
+Using the **Negate** slider bar "all but the selected" locales will be analyzed.
 
 You can find more information here: [Localization]({{config.site_url}}ai/resources/manage/localization/).
 

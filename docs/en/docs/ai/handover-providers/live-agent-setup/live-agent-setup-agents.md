@@ -66,7 +66,7 @@ This completes the setup of Live Agent!
 ## See Further Live Agent Documentation
 <div class="divider"></div>
 
-For more on Live Agent, please visit our documentation here: 
+For more on Live Agent, visit our documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)
 

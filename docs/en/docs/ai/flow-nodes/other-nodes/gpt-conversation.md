@@ -6,7 +6,7 @@ hidden: false
 
 # GPT Conversation (Research preview)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../release-notes/4.48.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation.png" width="80%" />
@@ -30,7 +30,7 @@ Before using this Node, set the Generative AI provider in the [Settings](../../g
 Select one of these modes:
 
 - **QnA** — is focused on answering user questions based on pre-existing knowledge of the conversation topic.
-- **Transactional** — is focused on answering user questions based on pre-existing knowledge of the conversation topic and strict sequence of virtual agent's steps. In this mode, you can call an action, which should be handled in Flow logic after the GPT Conversation Node. You can use the [If Node](../logic/if.md) to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request.
+- **Transactional** — is focused on answering user questions based on pre-existing knowledge of the conversation topic and strict sequence of virtual agent's steps. In this mode, you can call an action, which should be handled in Flow logic after the GPT Conversation Node. You can use the [Lookup](../logic/lookup.md) and [If](../logic/if.md) Nodes to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request.
 
 ### Persona
 
@@ -46,14 +46,14 @@ Select one of these modes:
 
 Available only in Transactional mode.
 
-| Parameter             | Type          | Description                                                                                  |
-|-----------------------|---------------|----------------------------------------------------------------------------------------------|
-| Bot Task              | CognigyScript | Task for the virtual agent. Examples: book an appointment, rebook a flight, order a product. |
-| Steps                 | CognigyScript | Description of task steps.                                                                   |
-| Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                 |
-| Slots to collect      | Text          | The keys of the slots to collect                                                             |
-| Available Slots       | Text          | Actions the virtual agent can trigger.                                                       |
-| Further Information   | CognigyScript | Actions the virtual agent can trigger.                                                       |
+| Parameter             | Type          | Description                                                                                                                                                                                                                                                                                                                      |
+|-----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Bot Task              | CognigyScript | Task for the virtual agent. Examples: book an appointment, rebook a flight, order a product.                                                                                                                                                                                                                                     |
+| Steps                 | CognigyScript | Description of task steps.                                                                                                                                                                                                                                                                                                       |
+| Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                                                                                                                                                                                                                                                     |
+| Slots to collect      | Text          | The keys of the slots to collect                                                                                                                                                                                                                                                                                                 |
+| Available Actions     | Text          | Actions the virtual agent can trigger. You can reuse these actions in the [Lookup](../logic/lookup.md) or [If](../logic/if.md) Nodes to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request. For more information, read [Specific Example](#specific-example). |
+| Further Information   | CognigyScript | Additional information for the virtual agent, such as topics that should be avoided during the conversation.                                                                                                                                                                                                                     |
 
 
 
@@ -85,6 +85,8 @@ Available only in Transactional mode.
 
 ## Examples
 
+### General example
+
 This video shows a live example of how the GPT Conversation Node can generate text based on the user input.
 
 <div style="text-align:center;">
@@ -95,12 +97,53 @@ At 0:12 second, the user receives the expected answer from the virtual agent in 
 
 ```text
 Sorry to hear about the emergency, <user name>. 
-Can you please provide me with your ticket number 
+Can you provide me with your ticket number 
 so that I can help you get to London as quickly as possible? 
 Thank you.
 ```
 
-## More Information
+### Specific example
+
+In the Transaction mode, you can use the [Lookup](../logic/lookup.md) or [If](../logic/if.md) to continue a flow logic. 
+
+For both Nodes, you need to specify the action in the **Available Actions** field of the GPT Conversation Node. To do this, select the Node:
+
+=== "Lookup"
+
+      1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
+      2. After the GPT Conversation Node, add the **Lookup** Node. 
+      3. Go to the **Lookup** Node:<br>
+         3.1 Select **CognigyScript** from the **Type** list.<br>
+         3.2 Enter `context.action` in the **Operator** field.<br>
+         3.3 Click **Save Node**.
+           <figure>
+           <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup.png" width="80%" />
+         </figure>
+      4. Go to the Case of the Lookup Node:<br>
+         4.1 Paste`checkAppointment` in the **Value** field.<br>
+         4.2 Click **Save Node**.
+       <figure>
+           <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup-case.png" width="80%" />
+         </figure>
+      5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
+      6. Test this Flow via the Interaction Panel.
+
+=== "IF"
+
+      1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it.
+      2. After the GPT Conversation Node, add the IF Node.
+      3. Go to the **IF** Node:<br>
+         3.1 Select **CognigyScript** from the **Type** list.<br>
+         3.2 Enter `context.action === "checkAppointment"` in the **Condition** field.<br>
+         3.3 Select **exists** from the list.
+         3.4 Click **Save Node**.
+         <figure>
+           <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-if.png" width="80%" />
+         </figure>
+      4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
+      5. Test this Flow via the Interaction Panel.
+
+## More information
 
 - [Generative AI](../../generative-ai.md)
-- [GPT Conversation Node](gpt-conversation.md)
+- [GPT Prompt Node](gpt-prompt.md)

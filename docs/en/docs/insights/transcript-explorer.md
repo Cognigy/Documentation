@@ -5,7 +5,7 @@
 ---
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
 
 ## Description
 <div class="divider"></div>
@@ -34,7 +34,7 @@ The customer sessions will be displayed in a list with the following data:
 </figure>
 
 - Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
-- Use the **[global filter]({{config.site_url}}insights/global-filter/)** options to configure your research.
+- Use the [global filter]({{config.site_url}}insights/global-filter/) options to configure your research.
 - You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option Virtual Agent Messages and leave the other options not selected.
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
@@ -61,14 +61,14 @@ The customer sessions will be displayed in a list with the following data:
 - Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
 - Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
 
-### "Contains Step" filter
+### Contains Step filter
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
 
-You can additionally narrow the result to conversations which contain a certain Step. Click on the "Filter" icon in Search input and choose a Step. 
+To further refine your search results to include only conversations that contain a specific step, click ![live-follow](../assets/icons/filter.svg) in the search panel and select a step from the list. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="50%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="100%" />
   <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
 </figure>
 
@@ -174,6 +174,7 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
-!!! note "Message Explorer"
-    **More information to [Message Explorer]({{config.site_url}}insights/message-explorer/)**
+## More information 
+
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)
 

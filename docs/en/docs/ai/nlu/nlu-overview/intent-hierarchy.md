@@ -35,3 +35,4 @@ Enable the *"Inherit Example Sentences from Child Intents"* slider for each inte
 </figure>
 
 When an inherited example sentence is found, both the parent and the child intent will score a high intent mapping result but the child intent will be placed in the `input.intent` property. Find the parent as an additional high scoring intent in the `input.nlu.intentMapperResults.scores` array.
+You can find the whole found Intent hierarchy in the `input.intentLevel` object and in the `input.nlu.intentMapperResults.intentPath` array.

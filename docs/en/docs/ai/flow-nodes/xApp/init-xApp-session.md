@@ -6,6 +6,8 @@
 
 # xApp: Init Session
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../release-notes/4.50.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/init-xApp-session.png" width="80%" />
 </figure>
@@ -18,7 +20,13 @@ This Node initializes a new xApp session. After the execution of this Node, the 
 
 ### Style Customization
 
-Customize the default screens' background and text color and specify a logo.
+Customize the following parameters for the default screen:
+
+- Background Color — a color that is displayed in the background of all Shell Page Screens. You can use CSS background-color values such as `hex`, `hsl+a`, and `rgb+a`.
+- Text Color — a color that is used for textual content on all Shell Page Screens. You can use CSS color values such as `hex`, `hsl+a`, and `rgb+a`. Make sure that the text color has high contrast with the background color.
+- Logo — you can choose to show the default logo, not any logo, or a custom logo. If you select the custom logo option, specify the Custom Logo URL.
+- Custom Favicon URL — an image URL for the custom favicon.
+- Page Title — a text shown as a tab or window title. The title is displayed on all Shell Page Screens.
 
 ### PIN Screen
 

@@ -9,42 +9,64 @@
   <img class="image-center" src="{{config.site_url}}ai/tools/images/945574c-usermenu-profile.jpg" width="100%" />
 </figure>
 
-#### Preferences
+## Preferences
+
 In this section the **user interface language** can be selected. Cognigy.AI currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
 
-#### Global Roles
+## Global Roles
+
 The **Global Roles** section allows for the assignment of global roles that **apply across different Agents**. More granular Local Roles can be configured per Agent. 
 
-#### Login History
+## Login History
+
 This section shows a list of previous login-sessions and their location (if available). This can be used for auditing purposes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/8a69f25-usermenu-login-history.jpg" width="100%" />
 </figure>
 
-#### API Keys
-Application Programming Interface (API) Keys are a security token registered to a user account that can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. API keys adopt the same permissions (e.g. Admin, Project Manager, Odata) as the user profile with which they are associated. This provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
+## API Keys
 
-A user that holds the required global permissions to create their own API keys can do so from this menu. Click the "+" button to generate a new **API Key**.  When creating a new API key, the user will be prompted to enter a name. The name will be displayed together with the API key in the list.
-API Keys can also be revoked by clicking the menu icon to the right of the key and selecting *Revoke API Key*. 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/7347291-usermenu-apikeys.jpg" width="100%" />
-</figure>
+Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
 
-A user may wish to have only one key for all external applications, however a more typical and secure approach is to create a new key for each application. This way, if the integration needs to be disabled, this can be achieved by revoking the associated API key.
+API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. 
 
-!!! tip "Tip: Click to Copy API Key"
-    The API Key is automatically selected and copied when clicked. This means that you don't have to select the whole key.
+API keys provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
 
-#### Connected Accounts
+### Create API Keys
+
+A user that holds the global permissions can create their API keys on the **My profile** page:
+
+To create an API key, follow these steps:
+
+1. On the **My profile** page, go to the **API Keys** section.
+2. Click **+**. 
+3. Enter a unique name of the API key and click **Confirm**.
+4. Copy the key by clicking on the key value, then save it to your local storage. For security reasons, the key is shown only once in this window, so if you do not save the key, you cannot see or copy the key value again.
+
+Once the API key is created, its name and creation date will be displayed in the list of API keys.
+
+### Revoke API Keys
+
+To revoke an API key, follow these steps:
+
+1. On the **My profile** page, go to the **API Keys** section.
+2. Near the selected API key, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Revoke API Key**.
+
+The API key will be revoked and can no longer be used for the requests.
+
+## Connected Accounts
+
 This section lets users manage their **Connected Accounts**, 3rd-party accounts that Cognigy.AI can connect to in order to make it easier to deploy to certain platforms. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/ca44eac-usermenu-accounts.jpg" width="100%" />
 </figure>
 
-#### Extended Menu
+## Extended Menu
+
 The Profile page includes an extended menu accessed by clicking the three dots in the top right hand corner of the page. This provides access to the following functions:
 
   * Edit Profile

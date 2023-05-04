@@ -24,7 +24,7 @@ Tight integration with Cognigy.AI that goes far beyond the integration we have w
 Projects and Inboxes within Live Agent are easily setup, and Agents can be added and managed with ease.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}live-agent/images/la-diagram-mapping.PNG" width="65%" />
+  <img class="image-center" src="{{config.site_url}}live-agent/images/la-diagram-mapping.PNG" width="100%" />
   <figcaption>Live Agent Project and Inbox Mapping</figcaption>
 </figure>
 
@@ -36,6 +36,6 @@ Are you ready to set up Live Agent? Start here:
 
 ## Already Setup Live Agent?
 <div class="divider"></div>
-For more on Live Agent, please visit our documentation here: 
+For more on Live Agent, visit our documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)

@@ -7,7 +7,7 @@
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
 
-With the Node Search field, one can carry out a case-insensitive search through the flow nodes. Please take a look [here]({{config.site_url}}ai/tools/node-search/#searchable-contents) for a list of what can be searched within a flow.
+With the Node Search field, one can carry out a case-insensitive search through the flow nodes. Take a look [here]({{config.site_url}}ai/tools/node-search/#searchable-contents) for a list of what can be searched within a flow.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/node-search-field.png" width="100%" />
@@ -17,7 +17,7 @@ In order to search the flow nodes:
 
 1. Click the **Search Icon** located among the other tools in the bottom left corner of the Chart Editor.
 2. An input filed with a placeholder *Search Nodes* opens up, where you can enter the search text.
-3. Alternatively, you can also open the search nodes input field by using **Ctrl + Alt + F** or **Command + Option + F** hotkeys.
+3. Alternatively, you can also open the search nodes input field by using ++ctrl+alt+f++ or ++cmd+opt+f++ hotkeys.
 
 ### Node and Node Editor highlighting
 <div class="divider"></div>

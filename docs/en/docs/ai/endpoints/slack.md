@@ -41,7 +41,7 @@ This value is the **OAuth access token** for your Slack app's workspace which is
 This value is the **Verification Token** of your Slack app. This is obtained from the *Basic Information* page of your Slack App in the *App Credentials* section.
 
 !!! note "Help Center"
-    More detailed information on how to set up a **Slack** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
+    More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
 
 ## More information
 

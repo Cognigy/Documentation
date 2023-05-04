@@ -43,7 +43,7 @@ The **Question Node** can be used to ask the user a question. When triggered, th
 
 The **Optional Question Node** works similar to the **Question Node**, except for the fact that the Entry Point is optional by default. 
 
-### [Send Email](./message/send-email.md)
+### [Send SMTP Email](./message/send-smtp-email.md)
 
 The Send Email Node can be used to send an email message directly from within the Flow. IT requires a [Connection]({{config.site_url}}ai/resources/build/connections/) in order to work.
 
@@ -132,7 +132,7 @@ This Node is commonly used, as it helps update [**Contact Profile**]({{config.si
 
 This Node can be used to merge the current session to an existing  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) . The Node can be configured with an identifier that can be used as a user id.
 
-### Blind Mode
+### [Blind Mode](./profile/blind-mode.md)
 
 The Blind Mode disables all (or selected) logging. The Node can be used whenever the Virtual Agent handles sensitive data, that should be excluded from the logs.
 

@@ -52,7 +52,7 @@ The URL to the targeted resource: `https://api-endpoint.com/resource`.
 </figure>
 
 !!! warning "URL-Encoding"
-    Cognigy.AI expects an un-encoded URL to the targeted resource. Please decode any encoded URL to ensure that the HTTP Request can be executed successfully. 
+    Cognigy.AI expects an un-encoded URL to the targeted resource. Decode any encoded URL to ensure that the HTTP Request can be executed successfully. 
 
     For more information see [URL encoding (on en:WP)](https://en.wikipedia.org/wiki/URL%20encoding).
 

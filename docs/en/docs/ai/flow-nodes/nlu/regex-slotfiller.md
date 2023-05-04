@@ -20,7 +20,7 @@ Use this Node to fill Slots using regular expressions. To learn more about Slots
 | Tag | CognigyScript | The Tag/Slot you want to fill |
 
 !!! warning "Regex"
-    Please make sure that your regular expression starts with a **/** and ends with** /g**.
+    Make sure that your regular expression starts with a **/** and ends with** /g**.
 
     Example:
     * /^1\d{​​​​7}​​​​$/g 

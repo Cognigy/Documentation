@@ -9,9 +9,9 @@
 
 <div class="divider"></div>
 
-Due to various reasons, some customers decide to whitelist public IPs of Cognigy's shared environments. Please inform Cognigy Support or Customer Success Management in case of similar requirements and before establishing a whitelisting. The list can change from time to time and we will immediately notify listed customers about changes.
+Due to various reasons, some customers decide to whitelist public IPs of Cognigy's shared environments. Inform Cognigy Support or Customer Success Management in case of similar requirements and before establishing a whitelisting. The list can change from time to time, and we will immediately notify listed customers about changes.
 
-Please find the current list of IP addresses for shared environments below. 
+Find the current list of IP addresses for shared environments below. 
 
 ## IP addresses for app.cognigy.ai
 

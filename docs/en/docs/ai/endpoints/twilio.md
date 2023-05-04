@@ -74,7 +74,7 @@ This dropdown menu allows the delivery voice of a Twilio voice bot to be customi
 Enable this toggle to allow the slots found by Twilio Autopilot to be passed to Cognigy.AI and processed by the Cognigy NLU.
 
 !!! note "Help Center"
-    More detailed information on how to set up a **Twilio** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016308619).
+    More detailed information on how to set up a **Twilio** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016308619).
 
 
 ## More information

@@ -28,7 +28,7 @@ If there is a Channel-specific configuration for the current Channel, this confi
 
 
 !!! tip "Automatic Conversion to Channel Specific Output"
-    In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Please check the specific Output Type above to verify channel support.
+    In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Check the specific Output Type above to verify channel support.
 
 !!! warning "Fallback Text"
     In case the automatic conversion to channel specific output cannot take place, the Fallback Text will be triggered.
@@ -46,7 +46,7 @@ The AI Channel allows for the configuration of different **Output Types**. Not a
 The **Text** Output Type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript]({{config.site_url}}/ai/tools/cognigy-script/) and [Tokens]({{config.site_url}}/ai/resources/manage/tokens/) that can be added by clicking the **AI** button at the end of each field.
 
 !!! tip "Channel Support"
-    The **Text** Output Type is currently converted to compatible output on all channels. Please keep in mind that **emojis** may not render properly on all channels.
+    The **Text** Output Type is currently converted to compatible output on all channels. Keep in mind that **emojis** may not render properly on all channels.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9f49b00-OutputTypeText.jpg" width="100%" />
 </figure>
@@ -319,6 +319,7 @@ The following Display Templates are available:
 * Image & Text overlay
 * Vertical List
 * Horizontal List
+
 ### Custom JSON Directives
 
 Instead of going with the WYSIWYG approach, you may also define a directive manually using a CognigyScript-enabled JSON field.
@@ -363,7 +364,7 @@ The following Facebook Messenger Templates are available:
     See more under [Code Nodes]({{config.site_url}}ai/flow-nodes/code/code/)
 
 !!! danger "Location Button Deprecation"
-    The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Please remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
+    The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
 ## Google
 <div class="divider"></div>
 
@@ -462,7 +463,7 @@ A suggestion/chip is used to point the conversation to a defined direction.
 - a suggestion/chip can contain text with a **maximum length of 20 characters**
 ### Custom Google Action Response JSON
 
-Within the **custom JSON** field you are able to define complex responses. Please visit the [Google Actions Documentation](https://developers.google.com/actions/reference/rest/Shared.Types/AppResponse) for further details.
+Within the **custom JSON** field you are able to define complex responses. Read the [Google Actions](https://developers.google.com/actions/reference/rest/Shared.Types/AppResponse) documentation for further details.
 ## Webchat
 <div class="divider"></div>
 
@@ -492,6 +493,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text        | A simple text message.                                                                                                                                           |
 | Custom JSON | Can contain a valid LINE message object. See the [Line Documentation](https://developers.line.me/en/reference/messaging-api/) for further details and templates. |
+
 ## Twilio
 <div class="divider"></div>
 
@@ -506,7 +508,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 | TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
 
 !!! warning "Validate your TwiML"
-    Please make sure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
 ### Amazon Polly Voice
@@ -514,6 +516,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice. *Polly* has some features which are listed in Twilio documentation, see:
 
 [:link: Twilio Amazon Polly](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
+
 ## Twilio SMS
 <div class="divider"></div>
 
@@ -528,7 +531,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 | TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
 
 !!! warning "Validate your TwiML"
-    Please make sure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
 
     You will also have to make sure that the content of your TwiML is escaped XML.
 ## Microsoft Teams
@@ -539,7 +542,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 </figure>
 
 !!! note "Teams Cards"
-    Structured content in Microsoft Teams is sent as so-called Cards. Please refer to our [Deployment a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
+    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
 <!-- need to change the link above  -->
 
 <div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
@@ -552,10 +555,9 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 !!! warning "Multiple Flow Outputs"
     If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
 
-
 ## Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/release-notes.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
 
 To activate a Voice Gateway channel:
 
@@ -571,6 +573,38 @@ These configurations are also available in the following Nodes:
 - [Set Session Config](../vg/set-session-config.md)
 - [Play](../vg/play.md)
 - [Session Speech Parameters Config](../generic-voice-nodes/session-speech-parameters-config.md)
+
+## 8x8
+
+The **8x8** tab provides two methods for creating and editing a message which is only for the **8x8** channel:
+
+- **Text** for sending text message responses.
+- **Custom JSON** for defining more complex messages and templates.
+
+| Type        | Description                             |
+|-------------|-----------------------------------------|
+| Text        | A simple text message.                  |
+| Custom JSON | Can contain a valid 8x8 message object. |
+
+??? info "Custom JSON example"
+    
+    ```json
+    {
+        "authorType": "customer",
+        "text": "Hello!",
+        "attachments": [
+            {
+                "id": "string"
+            }    
+        ],
+        "cards": [
+            {
+                "contentType": "application/vnd.microsoft.card.adaptive",
+                "content": {}
+            }
+        ]
+    }
+    ```
 
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>
@@ -629,3 +663,11 @@ URL has been opened in a new tab.
 ## AI-enhanced output
 
 To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+
+## Handover Settings
+
+When using a handover, such as to a live agent, you can choose who receives the message from the virtual agent:
+
+- User and Agent — by default, both the end user and the human agent will receive the message.
+- User only — the end user will receive the message.
+- Agent only — the responsible human agent will receive the message.

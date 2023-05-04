@@ -6,7 +6,7 @@
 
 # Release notes
 
-Please select a specific release for which you want to get more information in the navigation on the left side.
+Select a specific release for which you want to get more information in the navigation on the left side.
 
 Prior to release v4.30 we have collected release notes separately for each product:
 

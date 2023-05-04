@@ -36,11 +36,11 @@ When the Handover is finished, the Flow execution will continue below the Handov
 
 The status can have the following values:
 
-| Handover Status  | Description |
-| -- | -- |
-| completed | The Handover was finished by the agent |
-| cancelled | The user has cancelled the Handover request |
-| error | An error occurred when requesting the Handover |
+| Handover Status | Description                                    |
+|-----------------|------------------------------------------------|
+| completed       | The Handover was finished by the agent         |
+| cancelled       | The user has cancelled the Handover request    |
+| error           | An error occurred when requesting the Handover |
 
 In case of an error, the handover object is extended to contain additional information:
 
@@ -70,19 +70,39 @@ To configure different behavior of the Virtual Agent based on the Handover statu
 ## Handover to Agent Node
 <div class="divider"></div>
 
-The `Handover to Agent` Node has the following fields:
+The **Handover to Agent** Node has both general and specific settings for each handover provider.
 
-|Parameter|	Type	|Description|
-|--|--|--|
-|Handover Accepted Message|	CognigyScript|	The message to output if the Handover was requested|
-|Repeat Handover Accepted Message | Toggle | Whether to re-output the Handover Accepted Message when the user sends a message while waiting in the queue for an agent |
-|Cancel Intent |	CognigyScript|	The intent the user has to trigger to cancel the Handover request|
-|Cancel Button Text |	CognigyScript|	The text for a quick reply button that cancels the Handover request when clicked|
+The General settings are described below and the specific settings you can find in the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/handover-node-settings.png" width="100%" />
-</figure>
+### Handover Accepted Message
+
+| Parameter                        | Type          | Description                                                                                                                                                                                   |
+|----------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Handover Accepted Message        | CognigyScript | The message to output if the Handover was requested                                                                                                                                           |
+| Repeat Handover Accepted Message | Toggle        | Whether to re-output the Handover Accepted Message when the user sends a message while waiting in the queue for an agent.                                                                     |
+
+### Cancel Handover Options
+
+| Parameter          | Type          | Description                                                                       |
+|--------------------|---------------|-----------------------------------------------------------------------------------|
+| Cancel Intent      | CognigyScript | The intent the user has to trigger to cancel the Handover request                 |
+| Cancel Button Text | CognigyScript | The text for a quick reply button that cancels the Handover request when clicked. |
+
+### On Resolve Options
+
+| Parameter                           | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Flow Continuation                   | Selector | - Below this Node - the user will be taken to the node below the Handover node once the agent resolves the conversation. In this case, the user would continue in a different flow, but the starting point would be the node below the Handover node. <br> - At current AgentInject Entrypoint - the user will continue the chat at the current agent inject entrypoint. This option allows the agent to guide the user to a specific part of the chat and then give control back to the user. | 
+| Send resolve event to Virtual Agent | Toggle   | Sending an event when the virtual agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+
+### Event Settings
+
+| Parameter         | Type   | Description                                               |
+|-------------------|--------|-----------------------------------------------------------|
+| Send Queue Event  | Toggle | Sending an event to the Flow once the Handover is queued. |
+| Send Active Event | Toggle | Sending an event to the Flow once the Handover is active. |
+
 
 ## Handover Providers
 
-For a list of supported Handover services, please refer to the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
+For a list of supported Handover services, refer to the [Handover Providers Overview](../handover-providers/overview.md).

@@ -1,10 +1,15 @@
 ---
- title: "Live Agent" 
- slug: "Live Agent" 
+ title: "Live Agent (Beta)" 
+ slug: "Live Agent (Beta)" 
  hidden: true 
 ---
 
-# Live Agent
+# Live Agent (Beta)
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49(Beta)-purple.svg)](../release-notes/4.49.md)
+
+!!! note
+    The Live Agent dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
 
 The Live Agent dashboard displays Live Agent metrics for a specific Virtual Agent.
 
@@ -21,7 +26,7 @@ These metrics are visualized in the following charts:
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-All data displayed in the charts relate to the [global filter](global-filter.md) settings.
+{! _includes/insights/global-filters.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/live-agent-dashboard.png" width="100%" />
@@ -119,16 +124,28 @@ Calculation:
 
 Result: `9 min`
 
+### Opened
+
+Indicates the number of conversations that were opened by a user or reopened by a human agent.
+
+### Assigned
+
+Indicates the number of conversations that were assigned to a human agent
+
+### Pending
+
+Indicates the number of conversations that were paused until a customer or human agent responded.
+
+### Snoozed
+
+Indicates the number of conversations that were temporarily suspended until a time trigger or customer response trigger was activated.
+
 ## Bar charts 
 
-### Conversations Summary
+### Handover End Reason
 
-Shows the timescale of different conversation statuses:
+Shows the timescale of the following conversation statuses:
 
-- Opened — a conversation is opened by a user or reopened by a human agent.
-- Pending — a conversation is paused until a customer or human agent responds.
-- Assigned — a conversation is assigned to a human agent.
-- Snoozed — a conversation is temporarily suspended until a time trigger or customer response trigger is activated.
 - Abandoned — a conversation is closed because the user left a conversation.
 - Resolved — a conversation is closed because the user's problem was resolved.
 
@@ -137,27 +154,32 @@ The chart indicates how the Live Agents' performance varied over time.
 Source table:
 
 ```txt
-| Date	    |  Status   | Conversations |
-| --------- | --------- | ------------- |
-| 2023/1/21 | resolved  |       3       |
-| 2023/1/21 | opened    |       1       |
-| 2023/2/23	| resolved  |      16       |
-| 2023/2/24	| resolved  |      16       |
-| 2023/2/25	| resolved  |       6       |
-| 2023/2/27	| resolved  |       1       |
-| 2023/2/27	| resolved  |       1       |
-| 2023/2/27	| snoozed   |       1       |
-| 2023/2/28	| resolved  |       1       |
-| 2023/3/1	| resolved  |       8       |
-| 2023/3/2	| resolved  |       2       |
-| 2023/3/3	| abandoned |       1       |
-| 2023/3/7	| assigned  |       9       |
+| Date      | Status    |  Conversations  |
+| --------- | --------- | --------------- |
+| 3/20/2023 | abandoned |        3        |
+| 3/21/2023 | abandoned |        2        |
+| 3/21/2023 | resolved  |        1        |
+| 3/29/2023 | abandoned |        2        |
+| 3/29/2023 | resolved  |       24        |
+| 3/30/2023 | resolved  |        5        |
+| 4/4/2023  | resolved  |        1        |
+| 4/13/2023 | resolved  |       15        |
+| 4/13/2023 | abandoned |       13        |
+| 4/13/2023 | pending   |        1        |
+| 4/13/2023 | snoozed   |        1        |
+| 4/14/2023 | assigned  |       22        |
+| 4/14/2023 | abandoned |        3        |
+| 4/14/2023 | resolved  |        5        |
+| 4/17/2023 | assigned  |        7        |
+| 4/17/2023 | resolved  |       15        |
+| 4/18/2023 | assigned  |        6        |
+| 4/18/2023 | abandoned |        6        |
 ```
 
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/conversation-summary.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/handover-end-reason.png" width="100%" />
 </figure>
 
 ### Label Summary
@@ -196,3 +218,11 @@ Result:
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/live-agent-performance-times.png" width="100%" />
 </figure>
+
+{! _includes/insights/download-report.md !}
+
+## More information
+
+- [Dashboard Overview](dashboard-overview.md)
+- [Dashboard Engagement](dashboard-engagement.md)
+- [Dashboard NLU Performance](dashboard-nlu-performance.md)

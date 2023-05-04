@@ -44,7 +44,7 @@ Cognigy.AI supports the V1.1 and V2 APIs offered by Sunshine Conversations. The 
 
 ### Key ID
 
-The API Key ID from your Sunshine Conversations app. This value is typically in the format "app_XXXXXXXXXXXXXXXXXXXXXXXX" and must be the API Key ID associated with the secret entered the following field.
+The API Key ID from your Sunshine Conversations app. This value is typically in the format `app_XXXXXXXXXXXXXXXXXXXXXXXX` and must be the API Key ID associated with the secret entered the following field.
 
 ### Secret
 
@@ -52,12 +52,12 @@ Your Sunshine Conversations app's Key ID SECRET that is a randomly generated API
 
 ### URI
 
-The URI where we send messages to your Sunshine Conversations app. E.g. https://app.smooch.io (ensure the "/" is omitted from the end of the URI)
+The URI where we send messages to your Sunshine Conversations app. For example, `https://app.smooch.io` (ensure the "/" is omitted from the end of the URI)
 
 
 
 !!! note "Help Center"
-    More detailed information on how to set up a **Sunshine Conversations** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
+    More detailed information on how to set up a **Sunshine Conversations** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
 
 
 ## More information
