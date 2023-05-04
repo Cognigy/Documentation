@@ -88,6 +88,8 @@ When the checkbox for automatically deleting resolved conversations is marked, t
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../release-notes/4.45.md)
 
+{! _includes/live-agent/push-notifications.md !}
+
 As an administrator, you can configure push and email notifications for the following events:
 
 - When a new conversation is created.
@@ -95,10 +97,7 @@ As an administrator, you can configure push and email notifications for the foll
 - When you are mentioned in conversation.
 - When a new message is created in an assigned conversation.
 
-This configuration applies to all human agents of your organization account and overrides the agent [Profile settings](profile-settings.md).
-
-!!! note 
-    The push notifications setting must be enabled in the system. Otherwise, they are not available.
+This configuration applies to all human agents of your organization account and overrides the agent [Profile settings](profile-settings.md#notifications).
 
 ## Account ID and Version
 
