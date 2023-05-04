@@ -4,34 +4,36 @@ slug: "getting-started"
 hidden: true
 ---
 
-# Getting started with Agent Assist
+# Getting started with the Agent Assist Workspace
 
-In this getting started guide, you will learn how to configure Agent Assist by creating a Post request and explore the Agent Assist workspace.
+In this getting started guide, you will learn how to configure your Agent Assist Workspace.
 
 To get started with the service:
 
 1. Go to the Cognigy.AI interface.
-2. Create an [Agent](../ai/resources/agents/agents.md) or use an existing one.
-3. Copy the Agent ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Agent ID is `642c6a2cb45919dfae7b4428`.
+2. Create a [Virtual Agent](../ai/resources/agents/agents.md) or use an existing one.
+3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Agent ID is `642c6a2cb45919dfae7b4428`.
 4. Save the copied Agent ID for the later use.
-5. Go to the left-side menu and click **Deploy > Flows**.
-6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one. 
-7. Create the additional Flow for Agent Assist.
+5. Go to the left-side menu and click **Build > Flows**.
+6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent 
+7. Create the additional flow for Agent Assist.
 
 Check that you have two Flows: the Main flow and the Agent Assist flow.
 
-## Configure Agent Assist
+## Configure the Agent Assist Config
 
-To configure Agent Assist only via API, do the following:
+**Configure your grid as it fits best.​**
 
-1. [Get an API Key](#get-api-key)
-2. [Create a request](#create-a-request).
+With the Agent Assist Config  API you can configure the  position and size of the tiles in  your grid. This gives full  flexibility to use the Agent  Assist Workspace as efficient  as possible.​
+
+1. [Get your API Key from your Profile](#get-api-key)
+2. [Create your Agent Assist Config](#create-a-request).
 
 ### Get an API Key
 
-To get the API key, follow these steps:
+To get your API key, follow these steps:
 
-1. In the upper-right corner of Cognigy.AI interface, click **User Menu ![user-menu](../assets/icons/user-menu.svg) > My Profile**.
+1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../assets/icons/user-menu.svg) > My Profile**.
 2. In the **API Keys** section, click **+**.
 3. Add an API key name anc click **Confirm**. The API key will appear in the list.
 4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
@@ -44,10 +46,8 @@ To get the API key, follow these steps:
 
 1. Create an agent assist configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
-3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid:
-    - The grid should consist of 6 columns and 9 rows, with a gap of 16 for a better layout. 
-    - The configuration should include 2 tiles. 
-    - Use the project ID value to specify the Agent ID you previously copied and saved.
+3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
+4. Add the Project ID, you copied earlier, to ensure the Config is mapped to the right Agent
 
     ```json
     {
@@ -76,7 +76,7 @@ To get the API key, follow these steps:
           }
         }
       },
-      "projectId": "your Agent ID"
+      "projectId": "your Project ID"
     }
     ```
 4. Create the request by clicking **Try**.
@@ -90,31 +90,20 @@ To create an Endpoint, follow these steps:
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
 3. Click **+New Endpoint**. 
-4. In the **New Endpoint** window, add an Endpoint name and select the Flow that you recently created. 
-5. In the **Endpoint type** list, select **Webchat**. 
+4. In the **New Endpoint** window, add an Endpoint name and select your Virtual Agent Flow that hands you over to a human agent. 
+5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
 7. Go to **Handover Settings**. 
-8. In **Agent Assist Flow**, select the Flow. 
+8. In **Agent Assist Flow**, select the Agent Assist Flow, that you created in the first steps. 
 9. In **Agent Assist Config**, select the config which you recently created via API. 
 10. Click **Save**.
 
 ## Configure an Agent Assist Flow
 
-1. To configure the first tile, go into to the Agent Assist Flow.
-2. Add the **HTTP request** Node. 
-3. Choose patch and add the URL to send the HTTP request to. Then we add our JSON payload. 
-4. To identify the right session, following IDs are necessary:
-    - Session ID 
-    - User ID 
-    - Project ID 
-    - Organisation ID
-5. Add the content for the first tile, which will display Cognigy documentation as an iframe.
-6. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration.
-7. To view the Agent Assist workspace, start a chat and trigger a handover to a human agent. 
-8. A link with the Agent Assist workspace will be sent to the human agent. The human agent can access their Agent Assist workspace using this link. 
-9. Clicking on the link will reveal the transcript. 
-10. We have also added the outlines of the individual tiles before they have loaded. 
-11. As the human agent chats with the end user, the workspace will load the available tiles.
+1. To configure the first Widget, go into to the Agent Assist Flow.
+1. Add your desired Agent Assist Flow Node. 
+2. Add the content, which will be displayed as a Widget in the Agent Assist Workspace.
+3. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration, this defines the size and placement of the Widget within the Workspace.
 
 ## Explore an Agent Assist workspace
 
