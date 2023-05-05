@@ -87,8 +87,7 @@ Once the human agent has received this message, the behavior of testing will dif
 
 === "Agent Assist Workspace"
 
-     The human agent will receive a link to the Workspace in the conversation chat. 
-     This Workspace is also accessible from the right side of the chat.
+     This Workspace is also accessible from the right side of the conversation chat.
       
        <figure>
          <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/agent-assist-la.png" width="75%" />
