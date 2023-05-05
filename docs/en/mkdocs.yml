@@ -306,7 +306,8 @@ nav:
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
 # - xApp:
-  # - ai/xApp/overview.md 
+  # - ai/xApp/overview.md
+  # - ai/xApp/architecture.md
   # - ai/xApp/tokens.md 
   # - ai/xApp/api.md 
   - Endpoints:
@@ -401,7 +402,7 @@ nav:
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
   - Release Notes:
-    - ai/release-notes/release-notes.md   
+    - ai/release-notes/release-notes.md
 
 - Insights:
   - Overview:
