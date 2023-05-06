@@ -1,5 +1,7 @@
 # xApp Architecture
 
+The diagram illustrates the sequence of interactions between a user, Cognigy Flow, xApp Backend, and xApp Page in the context of an xApp architecture integration.
+
 ```mermaid
 sequenceDiagram
 title Cognigy xApp - typical sequence of interactions
@@ -9,49 +11,52 @@ participant f as Cognigy Flow
 participant xb as xApp Backend
 participant xf as xApp Page
 
-u->>f: Start conversation
+u->>f: 1. Start conversation
 activate f
-%% f->>f: xApp Init session
-f->> xb: xApp Init session
+%% f->>f:  xApp Init session
+f->> xb: 2. xApp Init session
 activate xb
-xb->>f: xApp session token
-f->>f: Compose xApp URL using token
-f->>u: "Enter your data in xApp using this URL"
-f->>xb: xApp Show HTML
-xb->>xb: Remember HTML
-u->>xf: Open xApp page
+xb->>f: 3. xApp session token
+f->>f: 4. Compose xApp URL using token
+f->>u: 5. "Enter your data in xApp using this URL"
+f->>xb: 6. xApp Show HTML
+xb->>xb: 7. Remember HTML
+u->>xf: 8. Open xApp page
 activate xf
-xf->>xf: Render Loading screen
-xf->>xb: Get page
-xb->>xf: Page HTML
-xf->>xf: Render HTML page
-xf->>u: HTML Page
-u->>xf: Fill in and submit data
-xf->>xf: SDK.submit(data)
-xf->>xb: data
-xf->>xf: Render Nothing to do here
+xf->>xf: 9. Render Loading screen
+xf->>xb: 10. Get page
+xb->>xf: 11. Page HTML
+xf->>xf: 12. Render HTML page
+xf->>u: 13. HTML Page
+u->>xf: 14. Fill in and submit data
+xf->>xf: 15. SDK.submit(data)
+xf->>xb: 16. data
+xf->>xf: 17. Render Nothing to do here
 deactivate xf
-xb->>f: input.data._cognigy._app.payload
+xb->>f: 18. input.data._cognigy._app.payload
 deactivate xb
-f->>f: Process input.data
-f->>u: "Received your data from xApp"
+f->>f: 19. Process input.data
+f->>u: 20. "Received your data from xApp"
 deactivate f
 ```
 
-1. The user starts a conversation with Cognigy Flow.
-2. Cognigy Flow initializes a session with the xApp backend.
+1. The user starts a conversation with a Cognigy Flow.
+2. The Cognigy Flow initializes a session with the xApp backend.
 3. The xApp backend responds with a session token.
-4. Cognigy Flow composes a URL using the session token and sends it to the user.
-5. Cognigy Flow sends a request to the xApp backend to show the HTML page.
-6. The xApp backend remembers the HTML page.
-7. The user opens the xApp page.
-8. The xApp page renders a loading screen.
-9. The xApp page requests the HTML page from the xApp backend.
-10. The xApp backend responds with the HTML page.
-11. The xApp page renders the HTML page.
-12. The user fills in and submits data.
-13. The xApp page submits the data to the SDK.
-14. The SDK sends the data to the xApp backend.
-15. The xApp backend processes the data and sends it to Cognigy Flow as input.
-16. Cognigy Flow processes the input data.
-17. Cognigy Flow sends a message to the user confirming the data has been received.
+4. The Cognigy Flow composes a URL using the session token
+5. The Cognigy Flow sends a message "Enter your data in xApp using this URL" to the user.
+6. The Cognigy Flow sends a request to the xApp backend to show the HTML page.
+7. The xApp backend remembers the HTML page.
+8. The user opens the xApp page.
+9. The xApp page renders a loading screen.
+10. The xApp page requests the HTML page from the xApp backend.
+11. The xApp backend responds with the HTML page.
+12. The xApp page renders the HTML page.
+13. The HTML page is shown to the user.
+14. The user fills in and submits data.
+15. The xApp page submits the data to the SDK.
+16. The SDK sends the data to the xApp backend.
+17. The Nothing to do here page is rendered.
+18. The xApp backend processes `input.data._cognigy._app.payload` and sends it to Cognigy Flow as input.
+19. The Cognigy Flow processes `input.data`. 
+20. The Cognigy Flow sends a message "Received your data from xApp" to the user confirming the data has been received.
