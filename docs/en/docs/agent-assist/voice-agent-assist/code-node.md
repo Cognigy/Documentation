@@ -8,9 +8,7 @@ hidden: true
 
 To connect to the correct session and Agent Assist Workspace in your contact center, submit all relevant information, including `aawBaseUrl`, `projectId`, `organizationId`, `configId`, `URLToken`, `sessionId`, and `userId`. To do this, you will need to add a Code Node before your Transfer Node.
 
-The following link contains the Code Node that will generate a **UUIValue**, which will be forwarded as a SIP header when transferring the call.
-
-HELPCENTER ARTICLE LINK
+The [Help Center article](https://support.cognigy.com/hc/en-us/articles/8728634409628) contains the Code Node that will generate a **UUIValue**, which will be forwarded as a SIP header when transferring the call.
 
 {! _includes/agent-assist/genesys-note.md !}
 
