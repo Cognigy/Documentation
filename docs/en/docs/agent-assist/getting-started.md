@@ -12,7 +12,7 @@ To get started with the service:
 
 1. Go to the Cognigy.AI interface.
 2. Create a [Virtual Agent](../ai/resources/agents/agents.md) or use an existing one.
-3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Agent ID is `642c6a2cb45919dfae7b4428`.
+3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
 4. Save the copied Agent ID for the later use.
 5. Go to the left-side menu and click **Build > Flows**.
 6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent 
