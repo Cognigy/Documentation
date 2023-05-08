@@ -28,3 +28,4 @@ The Voice configuration consists of 3 parts:
 - [Agent Assist Nodes](../../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Embedding](../embedding.md)
 - [Agent Assist for Chat](../chat-agent-assist.md)
+- [Integration with Contact Centers](../contact-center-integration.md)

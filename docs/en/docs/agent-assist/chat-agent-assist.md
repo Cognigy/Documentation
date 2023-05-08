@@ -28,3 +28,4 @@ This approach lets you connect to the right session and send widget updates.
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Embedding](embedding.md)
 - [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [Integration with Contact Centers](contact-center-integration.md)

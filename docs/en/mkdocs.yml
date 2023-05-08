@@ -410,6 +410,7 @@ nav:
 # - Agent Assist:
   # - agent-assist/overview.md
   # - agent-assist/getting-started.md
+  # - agent-assist/contact-center-integration.md
   # - agent-assist/flow-nodes/configuration.md
   # - agent-assist/flow-nodes/xApp/embeddings.md
   # - agent-assist/voice-agent-assist/code-node.md

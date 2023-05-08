@@ -131,5 +131,6 @@ The widgets will populate their content once the customer starts the conversatio
 - [Agent Assist Embedding](embedding.md)
 - [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
 - [Agent Assist for Chat](chat-agent-assist.md)
+- [Integration with Contact Centers](contact-center-integration.md)
 
 

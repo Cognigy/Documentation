@@ -48,3 +48,4 @@ To submit the **UUIValue** created in the Code Node before, add following to the
 - [Agent Assist Nodes](../../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Embedding](../embedding.md)
 - [Agent Assist for Chat](../chat-agent-assist.md)
+- [Integration with Contact Centers](../contact-center-integration.md)

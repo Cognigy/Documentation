@@ -16,9 +16,9 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 
 - Displays completely interactive micro applications in a customizable grid.
 - Adds rich-media capabilities to any contact center stack.
-- Stand-alone or integrated into existing Contact Center Agent Desktops.
+- Stand-alone or integrated into existing contact center agent desktops.
 - Shows any type of information like PDFs or even interactive 3D animations.
-- Access to 100% of Cognigy.AI features,  including Extensions and extensive logic.
+- Access to 100% of Cognigy.AI features, including Extensions and extensive logic.
 
 
 ## More information
@@ -29,4 +29,5 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 - [Agent Assist Embedding](embedding.md)
 - [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
 - [Agent Assist for Chat](chat-agent-assist.md)
+- [Integration with Contact Centers](contact-center-integration.md)
 

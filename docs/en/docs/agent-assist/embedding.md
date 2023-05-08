@@ -25,3 +25,4 @@ To display the Agent Assist Workspace, you need to add a value in the respective
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
 - [Agent Assist for Chat](chat-agent-assist.md)
+- [Integration with Contact Centers](contact-center-integration.md)
