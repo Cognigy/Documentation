@@ -10,7 +10,7 @@ hidden: true
 
 In Cognigy In Front use cases there is no additional manual effort needed.
 
-Ensure to configure the `Handover Settings` and `Agent Assist` Settings in the Endpoint and use the `Handover to Agent` Node in the flow.
+Ensure to configure the **Handover Settings** and **Agent Assist** Settings in the Endpoint and use the Handover to Agent Node in the Flow.
 
 All necessary information like `sessionId`, `orgId`, `projectId`, `userId`, and `configId` will be forwarded while doing the transfer to the human agent. 
 
