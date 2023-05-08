@@ -110,22 +110,24 @@ Now, we can observe the Agent Assist workspace.
 
 To get to the Agent Assist Workspace, start a conversation with your Virtual Agent. At one point you will be handed over to a human agent. 
 
-If you use the standalone version of Agent Assist, this is when you will receive the link to your Agent  Assist Workspace.​
+If you use the `standalone` version of Agent Assist, this is when you will receive the link to your Agent Assist Workspace.​
 
-When a customer is being  handed over not only the  conversation history with the  bot and the current intent are  being forwarded to the human  agent, but also a specific link  to access the Agent Assist  Workspace.​
+When a customer is being  handed over not only the  conversation history with the  bot and the current intent are  being forwarded to the human agent, but also a specific link to access the Agent Assist  Workspace.​
 
-In case you are using the embedded version, the Agent Assist Workspace will be shown within an iFrame in your Agent Workspace.
+In case you are using the `embedded` version, the Agent Assist Workspace will be shown within an iFrame in your Agents Desktop.
 
-Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
+Once the human Agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
 
 The widgets will populate their content once the customer starts the conversation.
 
 
 ## More information
 
-- [Agent Assist Workspace Configuration](configuration.md)
-- [Agent Assist Workspace Embedding](embedding.md)
 - [Agent Assist Workspace](overview.md)
+- [Agent Assist Configuration](configuration.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
+- [Agent Assist Embedding](embedding.md)
+- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [Agent Assist for Chat](chat-agent-assist.md)
 
 

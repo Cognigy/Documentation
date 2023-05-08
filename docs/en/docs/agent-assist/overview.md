@@ -11,7 +11,7 @@ hidden: true
 !!! note
     This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback, so we can improve it before it is officially released.
 
-_Cognigy Agent Assist Workspace_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat or voice use case. When embedded into your contact center's agent workspace, it enhances the overall efficiency of your contact center.
+_Cognigy Agent Assist Workspace_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's agent desktop, it enhances the overall efficiency of your contact center.
 
 ## Key features
 
@@ -25,7 +25,9 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 ## More information
 
 - [Getting started with Agent Assist](getting-started.md)
-- [Agent Assist configuration](configuration.md)
-- [Agent Assist embedding](embedding.md)
+- [Agent Assist Configuration](configuration.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
+- [Agent Assist Embedding](embedding.md)
+- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [Agent Assist for Chat](chat-agent-assist.md)
 

@@ -172,9 +172,11 @@ The JSON response contains the details of the newly created Agent Assist configu
 
 ## More information
 
-- [Agent Assist Workspace Embedding](embedding.md)
-- [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Workspace](overview.md)
 - [Getting started with Agent Assist](getting-started.md)
+- [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
+- [Agent Assist Embedding](embedding.md)
+- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [Agent Assist for Chat](chat-agent-assist.md)
 
 
