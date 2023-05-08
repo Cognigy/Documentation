@@ -40,7 +40,9 @@ To get your API key, follow these steps:
     - API Key (api_key)
 6. Click **Set** near both fields. 
 
-### Create your Agent Assist Config
+### Create an Agent Assist Config
+
+To create your Agent Assist Config, follow these steps:
 
 1. Create an agent assist configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
@@ -81,9 +83,9 @@ To get your API key, follow these steps:
 
 When the request is created, you will see the response code `200`.
 
-## Create Endpoint
+## Create an Endpoint
 
-To create an Endpoint, follow these steps:
+To create your Endpoint, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
@@ -93,8 +95,8 @@ To create an Endpoint, follow these steps:
 6. Click **Save**. 
 7. Go to **Handover Settings**. 
 8. In **Agent Assist Flow**, select the Agent Assist Flow, that you created in the first steps. 
-9. In **Agent Assist Config**, select the config which you recently created via API. 
-10. In case wanted, a transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings.
+9. In **Agent Assist Config**, select the config which you recently created via API.
+10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings.
 11. Click **Save**.
 
 ## Configure an Agent Assist Flow
@@ -116,7 +118,7 @@ When a customer is being  handed over not only the  conversation history with th
 
 In case you are using the `embedded` version, the Agent Assist Workspace will be shown within an iFrame in your Agents Desktop.
 
-Once the human Agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
+Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
 
 The widgets will populate their content once the customer starts the conversation.
 

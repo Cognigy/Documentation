@@ -4,17 +4,15 @@ slug: "voice-agent-assist-code-node"
 hidden: true
 ---
 
-# Agent Assist for Voice
+# Agent Assist for Voice: Code Node 
 
-## Code Node
+To connect to the correct session and Agent Assist Workspace in your contact center, submit all relevant information, including `aawBaseUrl`, `projectId`, `organizationId`, `configId`, `URLToken`, `sessionId`, and `userId`. To do this, you will need to add a Code Node before your Transfer Node.
 
-To submit all relevant information (`aawBaseUrl`, `projectId`, `organisationId`, `configId`, `URLToken`, `sessionId` and `userId`) to your Contact Center to connect to the right session and the right Agent Assist Workspace you will need a `Code node` before your `Transfer`.
+The following Code Node will generate a **UUIValue**, which will be forwarded as a SIP header when transferring the call:
 
-The Code Node below will generate a `UUIValue` that will be forwarded as a sip header while transfering the call:
+{! _includes/agent-assist/genesys-note.md !}
 
-!!! note
-    This is currently scoped for the embedding into Genesys Cloud CX. Please note that further information might be needed for the embedding into other Contact Centers.
-
+```js
 /**
  * This script will generate a "User-To-User" header payload for SIP transactions
  * according to the convention which Genesys Cloud is following.
@@ -59,20 +57,20 @@ const uui = `${aawBaseUrl}/?userId=${assistUserId}&sessionId=${assistSessionId}&
 input.assistUserId = assistUserId;
 input.assistSessionId = assistSessionId;
 input.UUIValue = createUUIValue(uui);
-
+```
 
 
 ## More information for Voice Use Cases
 
 - [Transfer Node](transfer-node.md)
 - [Webhook Endpoint](webhook-endpoint.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [Agent Assist for Voice](voice-overview.md)
 
 ## More general information
 
-- [Agent Assist Workspace](overview.md)
-- [Getting started with Agent Assist](getting-started.md)
-- [Agent Assist Configuration](configuration.md)
-- [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
-- [Agent Assist Embedding](embedding.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [Agent Assist Workspace](../overview.md)
+- [Getting started with Agent Assist](../getting-started.md)
+- [Agent Assist Configuration](../configuration.md)
+- [Agent Assist Nodes](../../ai/flow-nodes/agent-assist/overview.md)
+- [Agent Assist Embedding](../embedding.md)
+- [Agent Assist for Chat](../chat-agent-assist.md)

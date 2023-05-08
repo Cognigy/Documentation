@@ -4,49 +4,47 @@ slug: "voice-agent-assist-transfer-node"
 hidden: true
 ---
 
-# Agent Assist for Voice
+#  Agent Assist for Voice: Transfer Node
 
-## Transfer Node
+When using the Cognigy Voice Gateway, you need to add a Transfer Node to hand over the call to a human agent. 
 
-While using `Cognigy Voice Gateway` you need a `Transfer Node` that will handover the call to the human agent.
-
-To transfer the call you need to choose the `Dial`option to stay in the session to transcribe the audio streams.
+To transfer the call, select the **Dial** option to remain in the session and transcribe the audio streams.
 
 ### Transcription
 
 In this Transfer Node you need to enable the transcription of audio streams. You can choose between three options:
 
-- Caller (the customers audio stream)
-- Called (the human Agents audio stream)
-- Caller/Called (the customer and the human Agents audio stream)
+- **Caller** - the customer audio stream.
+- **Called** - the human agent audio stream.
+- **Caller/Called** - the customer and the human agent audio stream.
 
 ### Transcription Webhook
 
-The `Transcription Webhook` should be the Endpoint URL of the Webhook Endpoint which shows to the Agent Assist Workspace flow, to send the transcription.
+The **Transcription Webhook** should be set to the Endpoint URL of the Webhook Endpoint that the Agent Assist Workspace flow uses to send the transcription.
 
 ### Custom SIP Headers
 
-To submit the `UUIValue` created in the Code Node before, add following to the Custom SIP Headers section within the `Transfer Node`:
+To submit the **UUIValue** created in the Code Node before, add following to the **Custom SIP Headers** section within the Transfer Node:
 
+<code>
 {
-    "User-to-User": "{{input.UUIValue}}"
+    "User-to-User": "&lcub;&lcub;input.UUIValue&rcub;&rcub;"
 }
+</code>
 
-!!! note
-    This is currently scoped for the embedding into Genesys Cloud CX. Please note that further information might be needed for the embedding into other Contact Centers.
-
+{! _includes/agent-assist/genesys-note.md !}
 
 ## More information for Voice Use Cases
 
 - [Code Node](code-node.md)
 - [Webhook Endpoint](webhook-endpoint.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [Agent Assist for Voice](../../agent-assist/voice-agent-assist/voice-overview.md)
 
 ## More general information
 
-- [Agent Assist Workspace](overview.md)
-- [Getting started with Agent Assist](getting-started.md)
-- [Agent Assist Configuration](configuration.md)
-- [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
-- [Agent Assist Embedding](embedding.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [Agent Assist Workspace](../overview.md)
+- [Getting started with Agent Assist](../getting-started.md)
+- [Agent Assist Configuration](../configuration.md)
+- [Agent Assist Nodes](../../ai/flow-nodes/agent-assist/overview.md)
+- [Agent Assist Embedding](../embedding.md)
+- [Agent Assist for Chat](../chat-agent-assist.md)

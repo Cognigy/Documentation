@@ -25,5 +25,5 @@ Cognigy.AI supports the following Nodes:
 - [Getting started with Agent Assist](../../../agent-assist/getting-started.md)
 - [Agent Assist configuration](../../../agent-assist/configuration.md)
 - [Agent Assist embedding](../../../agent-assist/embedding.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [Agent Assist for Voice](../../../agent-assist/voice-agent-assist/voice-overview.md)
+- [Agent Assist for Chat](../../../agent-assist/chat-agent-assist.md)
