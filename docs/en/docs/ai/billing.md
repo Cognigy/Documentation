@@ -67,6 +67,20 @@ The server time zone settings determine the start of a new day and, as a result,
 
 Contact your administrator if you want to change this time zone setting.
 
+## xApps
+
+Any user action in the xApp UI is considered as one user input because an xApp session is part of a Cognigy session.
+
+Cognigy reserves the right to change the billing of xApps in the future.
+
+### Scenario
+
+The xApp submit data payload messages received by a Flow are counted as billing-relevant messages of the existing conversation.
+
+Example: A user clicks the submit button twice on the order and confirmation pages -> 2 user inputs.
+
+Billing: 1 conversation.
+
 ## Additional billing 
 
 If you are using the following Endpoint [Transformers](../ai/endpoints/transformers/transformers.md):

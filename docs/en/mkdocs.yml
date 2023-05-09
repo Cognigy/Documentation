@@ -307,6 +307,7 @@ nav:
     - ai/tools/real-time-translation.md
 # - xApp:
   # - ai/xApp/overview.md
+  # - ai/xApp/supported-browsers.md
   # - ai/xApp/architecture.md
   # - ai/xApp/tokens.md 
   # - ai/xApp/api.md 

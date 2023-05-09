@@ -28,10 +28,6 @@ Customize the following parameters for the default screen:
 - Custom Favicon URL — an image URL for the custom favicon.
 - Page Title — a text shown as a tab or window title. The title is displayed on all Shell Page Screens.
 
-### PIN Screen
-
-Specify texts displayed on the PIN screen.
-
 ### xApp Screens
 
 Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, or is halted.
