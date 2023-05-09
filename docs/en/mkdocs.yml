@@ -308,7 +308,7 @@ nav:
 # - xApp:
   # - ai/xApp/overview.md
   # - ai/xApp/supported-browsers.md
-  # - ai/xApp/architecture.md
+  # - ai/xApp/xApp-sequence-diagram.md
   # - ai/xApp/tokens.md 
   # - ai/xApp/api.md 
   - Endpoints:
@@ -378,7 +378,7 @@ nav:
     - ai/handover-providers/user-inactivity-detection.md
     
   - ai/generative-ai.md
-  - ai/architecture.md
+  - ai/xApp-sequence-diagram.md
   
   - Installation & Configuration:
     - ai/installation/overview.md
@@ -442,7 +442,7 @@ nav:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
     - Deployment:
-      - live-agent/installation/deployment/architecture.md
+      - live-agent/installation/deployment/xApp-sequence-diagram.md
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
       - Helm Values:

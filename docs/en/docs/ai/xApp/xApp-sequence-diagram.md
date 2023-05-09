@@ -1,4 +1,10 @@
-# xApp Architecture
+---
+title: "xApp Sequence Diagram"
+slug: "xApp-sequence-diagram"
+hidden: true
+---
+
+# xApp Sequence Diagram
 
 The diagram illustrates the sequence of interactions between a user, Cognigy Flow, xApp Backend, and xApp Page in the context of an xApp architecture integration.
 
