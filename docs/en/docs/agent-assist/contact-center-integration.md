@@ -10,7 +10,7 @@ The Agent Assist workspace is designed to work with any contact center. However,
 
 We're continuously expanding the list of integration examples in Cognigy Help Center. You can find more information on integrating Agent Assist with contact centers on these pages:
 
-- [Help Center: Agent Assist for Voice](https://support.cognigy.com/hc/en-us/articles/8726770604572)
+- [Integration with Genesys](https://support.cognigy.com/hc/en-us/articles/8726770604572)
 
 ## More information
 
