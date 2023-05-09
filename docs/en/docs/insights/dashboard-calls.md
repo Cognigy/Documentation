@@ -260,8 +260,8 @@ Calculation: `Total Session Time During a Time Period / Time Period`
 
 Example: 
 
-1. Total call duration = 7.04 minutes x 60 seconds = 422.4 seconds
-2. Average Concurrent Sessions = 422.4 / 3600 = 0.117
+1. Total call duration: 7.04 minutes x 60 seconds = 422.4 seconds
+2. Average Concurrent Sessions: 422.4 / 3600 = 0.117
 
 Result: `0.117`
 
