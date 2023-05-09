@@ -127,25 +127,23 @@ A multi-line chart consisting of three lines:
 
 - Inbound — the number of inbound calls on the timescale
 - Outbound — the number of outbound calls on the timescale
-- All — the number of all calls, summing up inbound and outbound, on a timescale.
+- Bidirectional — the number of calls that involve both inbound and outbound calls during a session.
+- Total — the number of all inbound, outbound, and bidirectional calls on a timescale.
 
 Source table:
 
 ```txt
-|   Date    |   Type     | Number of calls |
-| --------- | ---------- | --------------- |
-| 2/15/2023	|  total     |        9        |
-| 2/15/2023	|  inbound   |        0        |
-| 2/15/2023 |  outbound  |        9        |
-| 2/16/2023	|  total     |        7        |
-| 2/16/2023	|  inbound   |        7        |
-| 2/16/2023	|  outbound  |        0        |
-| 2/17/2023 |  total     |        9        |
-| 2/17/2023 |  inbound   |        0        |
-| 2/17/2023 |  outbound  |        9        |
-| 2/23/2023 |  total     |        5        |
-| 2/23/2023 |  inbound   |        5        |
-| 2/23/2023 |  outbound  |        0        |
+|   Date    |   Type       | Number of calls |
+| --------- | ------------ | --------------- |
+| 4/26/2023	| total	       |       12        |
+| 4/26/2023	| inbound      |	   10        |
+| 4/26/2023	| outbound     |	   0         |
+| 4/26/2023	| bidirectional|	   2         |
+| 4/27/2023	| total        |	   19        |
+| 4/27/2023	| inbound      |	   18        |
+| 4/27/2023	| outbound     |	    0        |
+| 4/27/2023	| bidirectional|	    1        |
+
 ```
 
 Result:
@@ -242,5 +240,31 @@ Result:
 ```
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/calls/transfered-calls.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/calls/transferred-calls.png" width="100%" />
+</figure>
+
+### Average concurrent session
+
+The average number of active sessions happening at the same time within a specific time frame. Additionally, Insights displays the Concurrent Session Limit on the chart with a red horizontal line that indicates whether the call license limit is exceeded.
+
+Source table:
+
+
+```txt
+| Date      | Total call duration | Time period           |
+|-----------|---------------------|-----------------------|
+| 4/27/2023 | 7.04 minutes        | 1 hour (3600 seconds) |
+```
+
+Calculation: `Total Session Time During a Time Period / Time Period`
+
+Example: 
+
+1. Total call duration = 7.04 minutes x 60 seconds = 422.4 seconds
+2. Average Concurrent Sessions = 422.4 / 3600 = 0.117
+
+Result: `0.117`
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/calls/average-concurrent-session.png" width="100%" />
 </figure>
