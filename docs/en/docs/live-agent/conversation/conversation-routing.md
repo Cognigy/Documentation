@@ -45,7 +45,7 @@ When a conversation is created in the Inbox, and there aren't agents online with
 To configure auto assignment in your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![clock](../../assets/icons/gear.svg).
+2. Select an Inbox from the list and click ![gear](../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
 4. From the **Allow auto assignment** list, select one of the following options:
      * Enable — allows the automatic assignment of agents to conversations. 
