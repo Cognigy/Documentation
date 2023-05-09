@@ -1,6 +1,6 @@
 ---
 title: "Integration with Contact Centers"
-slug: "getting-started"
+slug: "contact-center-integration"
 hidden: true
 ---
 
