@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Channel Specific Settings
@@ -37,7 +37,7 @@ The **Bot Framework Settings** dropdown menu is where Cognigy.AI needs to be pro
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/71157ce-azureSettings.PNG" width="100%" />
 </figure>
 
-### Microsoft App Id
+### Microsoft App ID
 
 This value is the **Microsoft App ID** which is obtained in the settings page of your bot in the Azure Bot Services Dashboard.
 
@@ -45,8 +45,8 @@ This value is the **Microsoft App ID** which is obtained in the settings page of
 
 This value is the **Microsoft App Password** of your Bot, also referred to as the **Client Secret**. This is obtained by creating a new Client Secret in the App Registrations page for your bot in the Azure Bot Services Dashboard.
 
-???+ info "Help Center"
-    More detailed information on how to set up a **Azure Bot Services** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016183720).
+!!! note "Help Center"
+    More detailed information on how to set up an **Azure Bot Services** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016183720).
 
 ### Microsoft Teams
 
@@ -58,7 +58,7 @@ When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-
 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0d08fc8-Azur_Bot_Service_with_Microsoft_Teams_chat_1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Azure_Bot_Service_with_Microsoft_Teams_chat_1.svg" width="100%" />
 </figure>
 
 <figure>

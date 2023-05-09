@@ -10,7 +10,7 @@
 
 Cognigy Functions are Code Blocks that can be run inside your Cognigy.AI installation and help you with long-running asynchronous processes, e.g. interaction with third-party systems HTTP APIs.
 
-???+ info "Maximum runtime"
+!!! note "Maximum runtime"
     By default, the maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. On-premise customers with their own Cognigy.AI installation can adjust this limit.
 
 They are independent of Flows but can be triggered from a Flow and can also use the "inject" and "notify" APIs to send their results back into a Flow.
@@ -103,13 +103,13 @@ It is also possible to trigger a Function from a Flow by using the [Trigger Func
 
 <!--
 
-Cognigy Functions are a big leap forward when it comes to running asyncronous code in the background. 
+Cognigy Functions are a big leap forward when it comes to running asynchronous code in the background. 
 Functions allow you to schedule long-running code (e.g. 10 minutes!) in the background. 
 Functions can be triggered and started via our [RESTful API](https://api-trial.cognigy.ai/openapi) or from within your Flows. Your code in Functions will be executed in a save containment and can inject results back into your users conversational sessions. 
 
 **Cognigy Functions** improves the AI solution and enables you to create asynchronous solutions in addition to the Cognigy Flows feature, which creates synchronous solutions. 
 
-As soon as you e.g. have to start a polling job on a third-party system (e.g. an RPA tool), you need an application that can poll the external system and then use Cognigys **inject/notify API** to resolve with some data.
+As soon as you e.g. have to start a polling job on a third-party system (e.g. an RPA tool), you need an application that can poll the external system and then use Cognigy **inject/notify API** to resolve with some data.
 
 Cognigy Functions provides a tool for you that can be used to implement operations like this and e.g. kick-off a polling job.
 

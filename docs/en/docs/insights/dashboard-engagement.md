@@ -12,9 +12,7 @@ The Engagement Dashboard is focused on customer interactions in conversations. E
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Each chart presents real-time data that refreshes every 30 seconds.
-
-All data displayed in the charts relate to the [global filter](global-filter.md) settings.
+{! _includes/insights/global-filters.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/engagement-dashboard.png" width="100%" />
@@ -22,6 +20,8 @@ All data displayed in the charts relate to the [global filter](global-filter.md)
 </figure>
 
 ## Indicators
+
+The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
@@ -173,6 +173,41 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/goals.png" width="80%" />
 </figure>
 
+### Containment Rate
+
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../release-notes/4.48.md)
+
+Indicates the percentage of sessions without any handover during the timeline.
+
+Source table:
+ 
+```txt
+| Date      | Containment Rate | Total Sessions | Handover included Sessions |
+| --------- | ---------------  | -------------- | -------------------------- |
+| 3/1/2023  | 	87.5           |       40       | 	       35                |
+| 3/2/2023  | 	82.60869565    |       46       | 	       38                |
+| 3/3/2023  | 	96.77419355    |       62       | 	       60                |
+| 3/6/2023  | 	92.5           |       40       | 	       37                |
+| 3/7/2023  | 	100            |       58       | 	       58                |
+| 3/8/2023  | 	100            |       92       | 	       92                |
+| 3/10/2023 | 	100            |       10       | 	       10                |
+```
+
+Formula:
+
+1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
+
+2. Percentage `Containment Rate * 100%`.
+
+Example for the 3/1/2023: `(35/40)* 100% = 87.5%`
+
+Result: 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/containment-rate.png" width="100%" />
+</figure>
+
 ## Line charts
 
 ### Live Agent Escalations
@@ -227,52 +262,34 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/positive-ratings.png" width="80%" />
 </figure>
 
-### Contacts
+### Unique Contacts
 
-A line chart displaying the number of unique contacts (`userid`) on a time scale.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../release-notes/4.47.md)
+
+A line chart displaying the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 
 ```txt
 | Date    	| Contacts |
 | --------- | -------- |
-| 01/8/2023 |    5     |
-| 01/9/2023 |    3     |
-| 1/11/2023	|    1     |
-| 1/15/2023	|    1     |
 | 1/16/2023	|    1     |
-| 1/17/2023	|    2     |
-| 1/18/2023	|    9     |
-| 1/19/2023	|    3     |
-| 1/23/2023	|    3     |
-| 1/24/2023	|    2     | 
+| 1/17/2023	|    8     |
+| 1/18/2023	|    15    |
+| 1/19/2023	|    6     |
+| 1/20/2023	|    18    |
 ```
 
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/contacts.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/unique-contacts.png" width="100%" />
 </figure>
 
-
-## Download Report
-
-To download a report as .csv file for the chart, use its three-dot menu. 
-To create a report file, see the [Download Report](download-report.md) article. 
-
+{! _includes/insights/download-report.md !}
 
 ## More information
 
-- [Global Filter](global-filter.md)
-
 - [Dashboard Overview](dashboard-overview.md)
-
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
-
-- [Step Explorer](step-explorer.md)
-
-- [Transcript Explorer](transcript-explorer.md)
-
-- [Message Explorer](message-explorer.md)
-
-- [Download Report](download-report.md)
+- [Dashboard Live Agent](dashboard-live-agent.md)

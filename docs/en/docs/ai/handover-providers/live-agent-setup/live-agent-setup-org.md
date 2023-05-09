@@ -7,12 +7,12 @@
 
 <div class="divider"></div>
 
-Before you can begin using Live Agent, you will need to setup Live Agent for your Organisation.
+Before you can begin using Live Agent, you will need to set up Live Agent for your Organisation.
 
 ## User Menu
 <div class="divider"></div>
 
-Login to Cognigy.AI, and navigate to the [User Menu]({{config.site_url}}ai/tools/user-menu/user-menu/), found on the top right corner of your screen.
+Login to Cognigy.AI, and navigate to the [User Menu]({{config.site_url}}ai/tools/user-menu/user-menu/), found in the top right corner of your screen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}/ai/tools/images/14a9c7c-usermenu.png" width="100%" />
@@ -26,23 +26,23 @@ Now click on the menu item *Organisation Details*.
 
 Once you have navigated to the *Organisation Details* page via the User Menu, you can see that the section for Live Agent Settings. 
 
-Find the **Set up Live Agent** button, and click it to setup the Live Agent Account for your Organisation. 
+Find the **Set-up Live Agent** button, and click it to set up the Live Agent Account for your Organisation. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/organisation-wide-live-agent-setup-button.png" width="100%" />
   <figcaption>Live Agent Settings in Organisation Details page</figcaption>
 </figure>
 
-## Next Steps - Setup Your Inbox
+## Next Steps - Set up Your Inbox
 <div class="divider"></div>
-Now that Live Agent is setup for your Organisation, you will need to create your Project Inbox:
+Now that Live Agent is set up for your Organisation, you will need to create your Project Inbox:
 
-- [**Setup your Project Inbox for Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-inbox/)
+- [**Set up your Project Inbox for Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-inbox/)
 
 ## Having Trouble?
 <div class="divider"></div>
 
-???+ warning "**Set up Live Agent** disabled"
+!!! warning "**Set up Live Agent** disabled"
 
 	If the button is disabled, it could be for the following reasons:
 

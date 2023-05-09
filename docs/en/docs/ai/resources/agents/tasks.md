@@ -9,13 +9,13 @@ Certain activities, like training **Intents**, importing **Snapshots** or the cr
 
 ## Task Panel
 
-The Task Panel can be used to get an overview of current (and previous) Tasks and serves as a high-level change log for relevant activities. It can be access by clicking on the Task icon at the top-right of the screen.
+The Task Panel can be used to get an overview of current (and previous) Tasks and serves as a high-level change log for relevant activities. It can be accessed by clicking on the Task icon at the top-right of the screen.
 
 <div class="right-image">
 <img src="{{config.site_url}}ai/resources/images/7325127-tasks.jpg" width="70%" style="margin-bottom: 5px">
 </div>
 
-The Task Panel shows both running as well as completed Tasks that are marked with "done".
+The Task Panel shows both running and completed Tasks that are marked with "done".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/ae8acbb-tasks.JPG" width="100%" />

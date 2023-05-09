@@ -110,7 +110,7 @@ A flow node is created as an analytics step by entering a text label in the "Ana
 
 An intent is created as an analytics step by entering a text label in the "Analytics Step" field within the "Advanced" dropdown menu of the intent settings.
 
-???+ warning "Step Creation in the Odata Records"
+!!! warning "Step Creation in the Odata Records"
     A step will only exist in the OData records after a conversation has triggered it at least once.
 
 

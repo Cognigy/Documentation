@@ -12,7 +12,7 @@
 
 ## Description
 <div class="divider"></div>
-The Agent Assist Node controls the acitivites used for agent assist calls.
+The Agent Assist Node controls the activities used for agent assist calls.
 
 The STT engine only starts when a startRecognition activity is received from the Flow and stops when a stopRecognition activity is received from the Flow.
 

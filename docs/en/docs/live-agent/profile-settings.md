@@ -16,16 +16,16 @@ Click on the profile thumbnail in the bottom left-hand side of the screen, next 
 
 ## User Profile data
 
-In this section, the user profile data can be changed. Currently user can customise the profile image and the display name.
+In this section, the user profile data can be changed. Currently, user can customise the profile image and the display name.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-profile.png" width="100%" alt="Live Agent Profile Profile " />
   <figcaption>Profile</figcaption>
 </figure>
 
-| Field | Description |
-| --- | --- |
-| Profile image | It is displayed in the agent conversation, agent lists and profile menu |
+| Field         | Description                                                                                                                                                                |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Profile image | It is displayed in the agent conversation, agent lists and profile menu                                                                                                    |
 | Display name  | Currently, it is used for the conversation transcript that the agent can send by email. Transcript messages sent by the agent will use the display name as the sender name |
 
 The rest of the user data, such as email, full name and password, need to be updated in the Cognigy.AI account. The change will automatically apply to Live Agent.
@@ -34,12 +34,11 @@ The rest of the user data, such as email, full name and password, need to be upd
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
+{! _includes/live-agent/push-notifications.md !}
+
 You can customize the behavior of notifications.
 
-Starting from Cognigy 4.45, you can configure only Audio Notifications. Push and email notifications are moved to [Account settings](account-settings.md) and can only be controlled by administrators. If the administrator has not yet changed the push and email notification settings, a human agent still have the opportunity to change them in the Profile Settings.
-
-!!! note 
-    The push notifications setting must be enabled in the system. Otherwise, they are not available.
+Starting from Cognigy 4.45, you can configure only Audio Notifications. Push and email notifications are moved to [Account settings](account-settings.md#notifications) and can only be controlled by administrators. If the administrator has not yet changed the push and email notification settings, a human agent still have the opportunity to change them in the Profile Settings.
 
 ## API Access Token
 

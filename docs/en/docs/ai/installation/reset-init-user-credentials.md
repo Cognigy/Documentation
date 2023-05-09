@@ -7,10 +7,10 @@ hidden: false
 
 In case, you cannot obtain credentials from logs of `service-security` in the way it is described in [Cognigy.AI installation process](installation-process.md), e.g. because `service-security` service was restarted several times, or you have deleted and recreated Cognigy.AI installation, you need to drop `service-security` database to generate new initial credentials. 
 
-???+ warning "Attention: Loss of Data"
+!!! warning "Attention: Loss of Data"
     All Organizations and Users will be lost as a result of this operation. Perform this process only during initial Cognigy.AI setup. 
 
-To generate new initial user credentials, please run the following commands:
+To generate new initial user credentials, run the following commands:
 
 1. Drop the collections in `service-security` database by connecting to the _primary_ node of MongoDB. To get which node is primary, execute `rs.status()`:
 

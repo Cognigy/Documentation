@@ -24,7 +24,7 @@
          <a href="https://support.cognigy.com/hc/en-us/articles/360019704899-Transformers-Overview" target="_blank" >Transformers Overview</a>
       </div>
       <div class="callout-subtext">
-            Cognigy Helpcenter article
+            Cognigy HelpCenter article
       </div>
    </div>
 </blockquote>
@@ -40,11 +40,10 @@ You can use them to:
 
 - change the request payload from an Endpoint before being sent to the Flow
 - change outputs from a Flow before they are sent to the user 
-- create additional integrations with a custom built endpoint
+- create additional integrations with a custom-built endpoint
 - transform the output of channel to work on another channel, e.g. convert Webchat output to WhatsApp compatible output
 - handle Webhook events from custom services
 - translate the messages from a user into the language of the Flow
-- ...
 
 The Transformers have full TypeScript support, meaning that the variables and NPM modules are typed, and it is possible to write custom interfaces in the Transformer. However, TypeScript knowledge is not required and plain JavaScript can be used as well.
 
@@ -79,7 +78,7 @@ The list below gives an overview of all the Transformer functions that are avail
 
 To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab in the Endpoint. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
 
-???+ warning "Enabling Transformer Functions"
+!!! warning "Enabling Transformer Functions"
     Every Transformer function is disabled per default and has to be enabled separately in the [Transformer Settings](#transformer-settings) section.
 
 The Transformer code editor has a default value for new Endpoints, which explains in brief how each Transformer function should be used. As soon as a specific Transformer has been enabled, the code in the corresponding Transformer function will be executed.
@@ -102,7 +101,7 @@ The default error handling for Transformers is to log the error on the logs page
 
 If the Transformer is a vital part of the pipeline, for instance when building a custom Endpoint integration, then it might not make sense to execute the underlying Endpoint in case of an error. There is a setting called `Abort On Error`, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
 
-???+ warning "Line Number in Error Logs"
+!!! warning "Line Number in Error Logs"
       When an error is thrown in a Transformer during execution, the line number where the error occurred will be listed in the log. The line number can be a bit incorrect, since it does not take lines occupied by interfaces and comments into account.
 
       Also note that if the error is caused by a return value validation error, no line number will be shown.
@@ -119,16 +118,16 @@ Every Transformer function expects a certain return value, which it will then us
 ### NPM Modules
 The following NPM modules are available in the Transformer:
 
-|NPM Modules|
-|---|
-|uuid|
-|crypto|
-|_ (Lodash)|
-|moment|
-|xmljs|
+| NPM Modules |
+|-------------|
+| uuid        |
+| crypto      |
+| _ (Lodash)  |
+| moment      |
+| xmljs       |
 
 ## Logging
-It is possible to use the exposed modules console.log, console.info and console.error in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
+It is possible to use the exposed modules `console.log`, `console.info` and `console.error` in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
 
 ## Sending HTTP Requests
 It is possible to send HTTP requests to external services from within a Transformer. All Transformer functions can access the `httpRequest` module for this purpose. The module is invoked as a function which takes a single configuration object as arguments. This object has the same format as the options object for the NPM module [Request](https://www.npmjs.com/package/request#requestoptions-callback). Example:
@@ -149,14 +148,14 @@ handleInput: async () => {
 }
 ```
 
-???+ warning "Limitations for the httpRequest module"
+!!! warning "Limitations for the httpRequest module"
       It is per default only possible to send one HTTP request per Transformer execution, and it is per default not possible to send HTTP requests to other Endpoints.
 
 ## Session Storage
 
 The Session Storage is a storage object available to all Transformer functions and which will be available throughout the session. This can be used to store variables that have to be used later, in other Transformer functions, or to store conversation state. There is a function called `getSessionStorage` exposed to the Transformer functions, which takes the `userId` and `sessionId` as arguments. It will return a Promise, which resolves with the `sessionStorage` object, which can be manipulated as a normal object. Example:
 
-???+ warning "Mutating Objects inside SessionStorage"
+!!! warning "Mutating Objects inside SessionStorage"
       Complex objects (e.g. Arrays) should not be mutated (e.g. pushed to) directly, but instead locally and the re-assigned to the sessionStorage. See below.
 
 **Session Storage**
@@ -182,61 +181,61 @@ const handleOutput: async ({ userId, sessionId }) => {
 
 There are three different types of Transformers, and each Endpoint will implement one of them. Each Transformer type will have a slightly different way of handling the specific Transformer Functions.
 
-The sections below give a quick overview of the different Transformer types. How every Transformer function works differently for every Transformer type is explained in the sub chapters for the individual Transformer functions.
+The sections below give a quick overview of the different Transformer types. How every Transformer function works differently for every Transformer type is explained in the subchapters for the individual Transformer functions.
 
 ## REST Transformer
 The REST Transformer is implemented for all Endpoints that are REST based, which means that they receive one message from the user and send one reply back. For these Endpoints, it is possible to have more Say Nodes in the Flow, but all outputs will be concatenated into one output which will then be sent to the user.
 
 The REST based endpoints are:
 
-|REST Endpoints|
-|---|
-|Alexa|
-|Google Actions|
-|Dialogflow|
-|Twilio|
-|Twilio SMS|
-|Twilio Autopilot|
-|Microsoft Teams|
-|Userlike|
-|AudioCodes|
-|REST|
+| REST Endpoints   |
+|------------------|
+| Alexa            |
+| Google Actions   |
+| Dialogflow       |
+| Twilio           |
+| Twilio SMS       |
+| Twilio Autopilot |
+| Microsoft Teams  |
+| Userlike         |
+| AudioCodes       |
+| REST             |
 
 ## Webhook Transformer
-The Webhook Transformer is implemted for all Endpoints that are webhook based, which means that they receive one message from the user, but can reply to the user multiple times via a webhook URL.
+The Webhook Transformer is implemented for all Endpoints that are webhook based, which means that they receive one message from the user, but can reply to the user multiple times via a webhook URL.
 
 The Webhook based Transformers are: 
 
-|Webhook Endpoints|
-|----|
-|Facebook Messenger|
-|Slack|
-|Microsoft Bot Framework|
-|Sunshine Conversations|
-|LINE|
-|RingCentral Engage|
-|Intercom|
-|WhatsApp|
-|Webhook|
+| Webhook Endpoints       |
+|-------------------------|
+| Facebook Messenger      |
+| Slack                   |
+| Microsoft Bot Framework |
+| Sunshine Conversations  |
+| LINE                    |
+| RingCentral Engage      |
+| Intercom                |
+| WhatsApp                |
+| Webhook                 |
 
 ## Socket Transformer
 The Socket Transformer is implemented for all Endpoints that use sockets to communicate. These Endpoints are:
 
-|Socket Endpoints|
-|---|
-|Webchat|
-|Socket|
+| Socket Endpoints |
+|------------------|
+| Webchat          |
+| Socket           |
 
 ## Creating a Custom Endpoint
 To create an integration with a custom channel, the first step is to figure out which type of Endpoint this custom channel is. When it is known whether the custom integration uses a REST based API, a Webhook API or is socket based, then the corresponding Endpoint can be created in Cognigy.AI. 
 
-There is an example of a custom built integration in the Example repository (see below).
+There is an example of a custom-built integration in the Example repository (see below).
 
 ## Example Repository
 
 <div class="divider"></div>
 
-Please find example implementations for various transformers in our new GitHub repository:
+You can find example implementations for various transformers in our new GitHub repository:
 
 https://github.com/Cognigy/TransformersSamples
 

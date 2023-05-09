@@ -13,13 +13,13 @@ The `operand` can be set manually to `Intent`, `State`, `Type` and `Mode`, or cu
 
 If you choose CognigyScript as the operand, you must use direct CognigyScript similar to the [**If Node**]({{config.site_url}}ai/flow-nodes/logic/if/). You can also select to parse the CognigyScript as a string or not.
 
-???+ info "An alternative to nested IF nodes"
+!!! note "An alternative to nested IF nodes"
     **Lookup Nodes** are used if the number of possible options becomes too large to use If Nodes. Instead of saying if `input.intent === "orderFood"` then x, else -> `input.intent === "orderDrink"`, else -> `input.intent === "askHelp"`, else ..., you can simply use a **Lookup on Intent** with multiple cases (`orderFood`, `orderDrink`, `askHelp`) and a default.
 ## Lookup Type
 <div class="divider"></div>
 
 ### Intent 
-This is the default setting for the **Lookup Node**, and it allows you to easily lookup the Intent that has been triggered. 
+This is the default setting for the **Lookup Node**, and it allows you to easily look up the Intent that has been triggered. 
 
 By default, the Intent at the most detailed **[Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/)** level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
 
@@ -31,7 +31,7 @@ In this case only the Intents of the chosen level are selectable in the Intent d
   <figcaption>An intent type Lookup Node with 3 cases.</figcaption>
 </figure>
 
-???+ info "Want to know more about using Intents?"
+!!! note "Want to know more about using Intents?"
     Find more information about building flows with intents on the **[NLU Overview Page]({{config.site_url}}ai/nlu/nlu-overview/overview/)**.
 
 ### State
@@ -42,7 +42,7 @@ By changing the lookup type to **[State]({{config.site_url}}ai/tools/interaction
   <figcaption>A State type Lookup Node with 3 cases.</figcaption>
 </figure>
 
-???+ info "What is State??"
+!!! note "What is State??"
     States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. Find out more on the **[States Page]({{config.site_url}}ai/tools/interaction-panel/state/)**.
 
 ### Type
@@ -53,7 +53,7 @@ By changing the lookup type to **Type**, the flow will select a case that matche
   <figcaption>A Type Lookup Node with 3 cases.</figcaption>
 </figure>
 
-???+ info "What is Type?"
+!!! note "What is Type?"
     The **Type** is defined as a classification of the last user message as determined by the NLU. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer.* 
 
 ### Mode
@@ -64,8 +64,8 @@ By changing the lookup type to **Mode**, the flow will select a case that matche
   <figcaption>A Mode type Lookup Node with 2 cases.</figcaption>
 </figure>
 
-???+ info "What is Mode?"
-    The **Mode** provides information on the what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+!!! note "What is Mode?"
+    The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
 ### CognigyScript
 By changing the lookup type to **CognigyScript**, the flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
@@ -80,6 +80,6 @@ By changing the lookup type to **CognigyScript**, the flow will select a case th
   <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable.</figcaption>
 </figure>
 
-???+ info "What is CognigyScript?"
+!!! note "What is CognigyScript?"
     CognigyScript is a superset of JavaScript which gives you access to the Input, Context and Profile objects within text and JSON. Find out more on the **[CognigyScript Page]({{config.site_url}}ai/tools/cognigy-script/)**.
 

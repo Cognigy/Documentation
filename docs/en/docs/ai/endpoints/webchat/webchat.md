@@ -37,7 +37,7 @@ You can find a [collection of Webchat Plugins](https://github.com/Cognigy/Webcha
 
 To learn how to embed Webchat Plugins on your Website, take a look at the ["Using Webchat Plugins" section in our embedding guide](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding/#using-webchat-plugins).
 
-For instructions on how to work with Webchat Plugins from within Cognigy, please refer to our Guide on [Triggering Webchat Plugins]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/).
+For instructions on how to work with Webchat Plugins from within Cognigy, refer to our Guide on [Triggering Webchat Plugins]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/).
 
 ## Embedding
 
@@ -77,7 +77,7 @@ That makes your Webchat configuration for your own purposes much easier now.
   <figcaption>HTML code embed field</figcaption>
 </figure>
 
-???+ info "Note"
+!!! note "Note"
     **The embedding code just loads the webchat with the correct endpoint configured, using the latest release.** 
 
 ## More information

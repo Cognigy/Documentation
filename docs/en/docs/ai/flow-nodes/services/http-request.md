@@ -12,7 +12,7 @@
 
 ## Description
 <div class="divider"></div>
-By using the **HTTP Request Node** you are able to perform a HTTP request to a specific resource from within a [Flow]({{config.site_url}}ai/resources/build/flows/).
+By using the **HTTP Request Node** you are able to perform an HTTP request to a specific resource from within a [Flow]({{config.site_url}}ai/resources/build/flows/).
 
 Whenever the HTTP Request Node gets triggered within a [Flow]({{config.site_url}}ai/resources/build/flows/) execution it will perform the defined request to the specified URL.
 
@@ -51,8 +51,8 @@ The URL to the targeted resource: `https://api-endpoint.com/resource`.
   <figcaption>URL field</figcaption>
 </figure>
 
-???+ warning "URL-Encoding"
-    Cognigy.AI expects an un-encoded URL to the targeted resource. Please decode any encoded URL to ensure that the HTTP Request can be executed successfully. 
+!!! warning "URL-Encoding"
+    Cognigy.AI expects an un-encoded URL to the targeted resource. Decode any encoded URL to ensure that the HTTP Request can be executed successfully. 
 
     For more information see [URL encoding (on en:WP)](https://en.wikipedia.org/wiki/URL%20encoding).
 
@@ -145,7 +145,7 @@ When enabled the HTTP Node will cache the responses.
 
 ### Security
 #### Allow Insecure SSL
-By default Cognigy.AI will reject connecting against insecure SSL endpoints, such as URLs with no or self-signed certificates. Activating this option will allow the Node to connect against these URLs as well.
+By default, Cognigy.AI will reject connecting against insecure SSL endpoints, such as URLs with no or self-signed certificates. Activating this option will allow the Node to connect against these URLs as well.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c971806-errors.JPG" width="100%" />
@@ -158,7 +158,7 @@ If HTTP Requests return a status code > 299, the response is considered an error
 
 - not log the error
 - log the error with the response from the server and the URL
-- log the error, the reponse, the URL and the request payload (**WARNING**: This could expose sensitive data in the logs)
+- log the error, the response, the URL and the request payload (**WARNING**: This could expose sensitive data in the logs)
 
 #### Abort Flow Execution on Error
 If active, the Flow will stop here if the response returned with a status code > 299
@@ -172,7 +172,7 @@ The results of the GET request are stored in the context of the flow. You can re
 ## POST, PUT and PATCH Requests
 <div class="divider"></div>
 
-???+ info "Content-Type Headers"
+!!! note "Content-Type Headers"
     The standard Content-Type header is *application/x-www-form-urlencoded*. If you want to send another Content-Type, you have to set the header value specifically or use JSON as described below.
 
 ### Payload
@@ -185,7 +185,7 @@ Here you can define the payload of your POST, PUT or PATCH request. You can choo
 
 Payloads can be text, JSON, XML, Formdata (see below) or any other textual data.
 
-???+ success "application/x-www-form-urlencoded"
+!!! tip "application/x-www-form-urlencoded"
     You can send URL Encoded data by setting no specific header and then sending a URLEncoded non-JSON payload such as *"To=%2B49555262626&Url=https%3A%2F%2Fhandler.twilio.com%2Ftwiml%2FEHf9b7af093c31b5baa1414be891"*
 
 With Cognigy.AI 4.10.0 **Form-Data** as "Payload Type" has been added to the HTTP Node descriptor.
@@ -201,7 +201,7 @@ How to use it:
   <img class="image-center" src="{{config.site_url}}ai/images/HTTP request Node.png" width="80%" />
   <figcaption>HTTP Request Node editor</figcaption>
 </figure>
-???+ info "Note"
+!!! note "Note"
     The key-value pairs must be of type text. Data is not supported.
 
 When using the Interaction Panel you can inspect the response in the "Interaction Panel" INFO tab.

@@ -21,7 +21,7 @@ Intents can be structured into three layers:
 - Level 2 Intents
 - Level 3 Intents
 
-???+ success "Tip: Use Intent Naming Conventions"
+!!! tip "Tip: Use Intent Naming Conventions"
     It is recommended to follow a pattern when naming your intents. Either create a topic category name or use a numbering system to group intent families.
 
 Level 1 Intents can inherit Example Sentences from their level 2 child Intents, which can inherit Example Sentences from their level 3 grandchild Intents. 
@@ -35,3 +35,4 @@ Enable the *"Inherit Example Sentences from Child Intents"* slider for each inte
 </figure>
 
 When an inherited example sentence is found, both the parent and the child intent will score a high intent mapping result but the child intent will be placed in the `input.intent` property. Find the parent as an additional high scoring intent in the `input.nlu.intentMapperResults.scores` array.
+You can find the whole found Intent hierarchy in the `input.intentLevel` object and in the `input.nlu.intentMapperResults.intentPath` array.

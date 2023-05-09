@@ -3,10 +3,10 @@
  slug: "live-agent-setup-inbox" 
  hidden: false 
 ---
-# Setup the Inbox for Live Agent
+# Set up the Inbox for Live Agent
 <div class="divider"></div>
 
-Now that you have [**Setup Live Agent for your Organisation**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/), you can setup your default Inbox for Live Agent.
+Now that you have [**Set up Live Agent for your Organisation**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/), you can set up your default Inbox for Live Agent.
 
 ## Agent Settings
 <div class="divider"></div>
@@ -38,12 +38,12 @@ Once the Inbox is created, you will find the *Default Inbox ID* above the now di
 <div class="divider"></div>
 Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/) to Live Agent:
 
-- [**Setup your Endpoint and Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
+- [**Set up your Endpoint and Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
 
 ## Having Trouble?
 <div class="divider"></div>
 
-???+ warning "**Create Project Inbox** disabled"
+!!! warning "**Create Project Inbox** disabled"
 
 	The button could also be disable for the following reasons:
 
@@ -67,5 +67,5 @@ Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/
     </figure>
 
 
-???+ warning "Live Agent Settings not visible"
+!!! warning "Live Agent Settings not visible"
     The *Live Agent Settings* section in Organisation Details and Agent Settings page will be not be displayed at all, if you have both *Theming* enabled and the *Cognigy Live Agent* feature disabled.

@@ -7,7 +7,7 @@
 ## Description
 <div class="divider"></div>
 The Message Explorer allows you to search for specific customer messages or Virtual Agent messages in your current Virtual Agent conversation. 
-The task characteristic of the Insights Message Explorer is that you can see what message came before the selected message and what came after this message. As result you can better understand customers' reactions, for example how often did customers react in the same way or in a specific way and what are the reasons for that.
+The task characteristic of the Insights Message Explorer is that you can see what message came before the selected message and what came after this message. As a result, you can better understand customers' reactions, for example how often did customers react in the same way or in a specific way and what are the reasons for that.
 
 **Global filter options**
 <div class="divider"></div>
@@ -17,9 +17,9 @@ Using the global filter options you can define the search criteria to find the i
 **Local filter options**
 <div class="divider"></div>
 
-- You can search for specific customer messages by entering a key phrase in the „Search“ field (for example "appointment").
+- You can search for specific customer messages by entering a key phrase in the **Search** field (for example "appointment").
   
-- You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** options in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
+- You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** options in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option Virtual Agent Messages and leave the other options not selected.
 
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
@@ -31,8 +31,8 @@ Using the **"Negate "** slider bar "all but the selected" filter options will be
   <figcaption>Local filter for selecting message sources</figcaption>
 </figure>
 
-???+ warning "Note"
-    **Every change in filter settings needs to be confirmed with “Apply” to be active.**
+!!! warning
+    Every change in filter settings needs to be confirmed with **Apply** to be active.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/e347fe0-Message_Explorer_n6.png" width="100%" />

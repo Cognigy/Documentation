@@ -11,7 +11,7 @@ Flow functionality is shared between Flows by making their [Intents]({{config.si
 
 In order to attach a flow, the Flow with the shared functionality must first be written to populate the **Attached Flows** list.
 
-???+ success "Build and refactor Flows in a modular fashion"
+!!! tip "Build and refactor Flows in a modular fashion"
     As a best practice we recommend to keep your Flow size small. Refactor often and use a modular approach for clear, maintainable and effective Flows.
 
     Note you can copy, cut & paste nodes and sub-trees also between Flows. Making it easy to, for example, cut sub-trees from a large Flow and distribute the logic to smaller attached Flows.
@@ -20,17 +20,17 @@ In order to attach a flow, the Flow with the shared functionality must first be 
 <div class="divider"></div>
 As described above, the Intents of the Attached Flow are added to the list of Intents on the Main Flow. Then, during Intent mapping, the attached *Intents* are scored together with the Main Intents.
 
-???+ warning "Beware of Overlapping Intents"
+!!! warning "Beware of Overlapping Intents"
     Cognigy small-talk Flows, and any other Attached Flow, may contain Overlapping Intents. You must ensure Intents across all attached Flows are distinct.
 
 The order in which the Intents are scored is determined by the `Map global Intents first` setting in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/) .
 
-If the intents scored first get a score of 1.0 (highest match), then the other intents are not evaluated.
+If the intents scored first get a score of 1.0 (the highest match), then the other intents are not evaluated.
 
-| Map global Intents first | Effect | Result |
-| ------------------------ | ------ | ------ |
-| false | Intents in the Main Flow are scored first | If Intents in the Main Flow score the same or higher than Intents in Attached Flows, Intents in the Main Flow win. |
-| true | Intents in Attached Flows are scored first | If Intents in Attached Flows score the same or higher than Intents in the Main Flow, Intents in Attached Flows win. |
+| Map global Intents first | Effect                                     | Result                                                                                                              |
+|--------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
+| false                    | Intents in the Main Flow are scored first  | If Intents in the Main Flow score the same or higher than Intents in Attached Flows, Intents in the Main Flow win.  |
+| true                     | Intents in Attached Flows are scored first | If Intents in Attached Flows score the same or higher than Intents in the Main Flow, Intents in Attached Flows win. |
 
 ## Managing Attached Flows
 <div class="divider"></div>
@@ -50,14 +50,14 @@ Flows are attached by clicking the flow in the list which enables the attachment
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/50c1363-attachflows.PNG" width="100%" />
 </figure>
 
-???+ warning "Train Intents when Attaching"
+!!! warning "Train Intents when Attaching"
     The NLU must be re-trained anytime a new flow or lexicon is attached.
 
 ### Sorting Flow Intent Mapping
 
 You can sort the Intent mapping of available Flows as follows:
 
-1. Click at the *Sort* button next to the *Attach* button at the top of the flow list. The view will switch to Sort mode.
+1. Click the *Sort* button next to the *Attach* button at the top of the flow list. The view will switch to Sort mode.
 2. Sort attached Flows by dragging and dropping Flows into the desired order
 
 <figure>

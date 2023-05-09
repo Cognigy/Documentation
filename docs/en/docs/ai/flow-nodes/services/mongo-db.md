@@ -43,17 +43,20 @@ The advanced section exposes a number of extra settings.
 </figure>
 
 ##### Projection
-Please refer to the MongoDB documentation for more information on Projection.
+
+Read the MongoDB documentation for more information on Projection.
  
  [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"}
 
 ##### Options
-Please refer to the MongoDB documentation for configurable options.
+
+Read the MongoDB documentation for configurable options.
  
  [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}
 
 ##### Index 
-Please refer to the MongoDB documentation on Indexes.
+
+Refer to the MongoDB documentation on Indexes.
  
  [MongoDB Documentation: Indexes](https://docs.mongodb.com/manual/indexes/){:target="_blank"}
 
@@ -62,7 +65,7 @@ Lets you configure whether to stop flow execution when an error occurs or not.
 
 #### Caching
 ##### Cache Response from MongoDB Operation. 
-Whether or not to cache the MongoDB responses to optimize performance.
+Whether to cache the MongoDB responses to optimize performance.
 
 ### Find One
 #### Collection
@@ -87,17 +90,20 @@ The advanced section exposes a number of extra settings.
 </figure>
 
 ##### Projection
-Please refer to the MongoDB documentation for more information on Projection.
+
+Read the MongoDB documentation for more information on Projection.
  
  [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"}
 
 ##### Options
-Please refer to the MongoDB documentation for configurable options.
+
+Read the MongoDB documentation for configurable options.
  
  [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}
 
 ##### Index 
-Please refer to the MongoDB documentation on Indexes.
+
+Read the MongoDB documentation on Indexes.
  
  [MongoDB Documentation: Indexes](https://docs.mongodb.com/manual/indexes/){:target="_blank"}
 
@@ -106,7 +112,7 @@ Lets you configure whether to stop flow execution when an error occurs or not.
 
 #### Caching
 ##### Cache Response from MongoDB Operation. 
-Whether or not to cache the MongoDB responses to optimize performance.
+Whether to cache the MongoDB responses to optimize performance.
 
 
 ### Update One
@@ -137,7 +143,8 @@ The advanced section exposes a number of extra settings.
 If enabled, then you can use operators like $push in the update query. If not, then we will automatically $set everything that you write in the update query into the database.
 
 ##### Options
-Please refer to the MongoDB documentation for configurable options.
+
+Read the MongoDB documentation for configurable options.
  
  [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}
 

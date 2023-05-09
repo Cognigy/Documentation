@@ -5,6 +5,8 @@
 ---
 # Code
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../release-notes/4.50.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8d586ff-code-node.jpg" width="100%" />
 </figure>
@@ -16,14 +18,16 @@ Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code
 
 The execution of the Code Node will be synchronous, the Flow will continue after the Code Node has finished executing.
 
-???+ warning "Maximum Execution Time"
-    Code Nodes are set by default to run for a maximum of 1000 ms before returning an error. This value is currently not configurable. To execute code that takes longer to execute, we recommend using custom [Extensions]({{config.site_url}}ai/resources/manage/extensions/?h=extension#extension-marketplace). The error can be accessed under ```input.codeNodeError.message```
-
 Just as within other Nodes, `input`, `context` and `profile` can be accessed (and modified) within Code Nodes. If the script crashes or takes longer than one second to execute, it will be stopped and throw an error. In case of an uncaught error, the Flow Execution will be stopped.
 
 The `actions` object provides access to most internal node functions within the Code Node.
 
 For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `moment` ([https://momentjs.com/](https://momentjs.com/)) libraries are exposed for use within Code Nodes.
+
+## Restrictions
+
+- Maximum number of characters in the code editor is 200K.
+- Maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed under input.codeNodeError.message. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../resources/manage/extensions.md#extension-marketplace).
 
 ## Sending Facebook JSON
 <div class="divider"></div>

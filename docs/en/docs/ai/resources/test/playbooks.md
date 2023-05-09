@@ -11,7 +11,7 @@
   <img class="image-center" src="{{config.site_url}}ai/resources/images/68fdbe2-playbook.png" width="100%" />
 </figure>
 
-???+ info "Create Playbooks from the Interaction Panel"
+!!! note "Create Playbooks from the Interaction Panel"
     You can turn any conversation in your Interaction Panel directly into a playbook:<br><br>
     1. Go to the Interaction Panel and chat with your bot<br>
     2. Click the three dots right next to the Flow selection<br>
@@ -28,6 +28,9 @@ This setting determines whether to continue after a failed step or abort the pla
 
 #### Playbook Step
 A **Step** represents a single input including both text and data, in combination with various **Assertions** on the Flow output and status.
+
+!!! warning
+    Playbooks contain a maximum of 50 steps.
 
 #### Assertion
 **Assertions** are checks on various Flow related elements, you can check on:
@@ -57,6 +60,9 @@ In order to schedule a new Run, click on the *Run* button. In the dialog box tha
   <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-runs-dialog.png" width="100%" />
 </figure>
 
+!!! tip "Schedule playbook runs in bulk using the Cognigy CLI"
+    You can schedule multiple Playbook Runs simultaneously using the `run` command in the [Cognigy CLI](https://www.npmjs.com/package/@cognigy/cognigy-cli) than scheduling them one by one via the UI.
+
 The Playbook Run will be created in the background and a success notification will be displayed once the creation is complete. When the Playbook Run creation is successful, you can see the newly created run in the Runs list. Each item in this list shows the status, creator and the creation time of the Run. The list can be sorted by these three parameters. Furthermore, the list can also be filtered by its *Status* and *Creator*.
 
 If the status of a Run is **Failed**, it means that there is one or more failing assertions in the Playbook Run. If the status is **Successful**, then all the Playbook assertions have passed. Clicking on a Playbook Run can give you further information on which assertions failed or passed, helping you to see what went wrong or right with the executed Flow.
@@ -65,6 +71,6 @@ If the status of a Run is **Failed**, it means that there is one or more failing
   <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-run-details.png" width="100%" />
 </figure>
 
-???+ info "Tip: Schedule a Run or Navigate to Runs page from Playbooks List"
+!!! note "Tip: Schedule a Run or Navigate to Runs page from Playbooks List"
     You can also schedule a Run directly from the Playbooks list. To do this, click on the secondary button of the Playbook that you wand to run. In the menu, click on **Run Playbook** option. You can then configure and create a Playbook Run in the same way as you do in the *Runs* page.
 	Quick navigation to the Runs page is possible by clicking on **Show Runs** option in the menu.

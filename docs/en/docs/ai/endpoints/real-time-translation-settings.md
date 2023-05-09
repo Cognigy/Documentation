@@ -47,7 +47,7 @@ The Microsoft Translator has two extra optional parameters as follows:
 | Parameter | Description |
 | --- | --- |
 | Custom API base URL | Use this field if you would like to use an URL different from the default one (``https://api.cognitive.microsofttranslator.com/``) |
-| Custom Subcription Region | This is the location (or region) of your Azure MS Translator resource. You may need to use this field when making calls to this API, if you set a specific region in your Azure account. |
+| Custom Subscription Region | This is the location (or region) of your Azure MS Translator resource. You may need to use this field when making calls to this API, if you set a specific region in your Azure account. |
 
 ## Configure Real Time Translation Settings
 

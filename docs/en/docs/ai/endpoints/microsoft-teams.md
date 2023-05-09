@@ -34,8 +34,8 @@ The **Microsoft Teams Settings** dropdown menu is where Cognigy.AI needs to be p
 
 The Security Token obtained in the process of setting up the Microsoft Teams outgoing webhook.
 
-???+ info "Help Center"
-    More detailed information on how to set up a **Microsoft Teams** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016224039).
+!!! note "Help Center"
+    More detailed information on how to set up a **Microsoft Teams** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016224039).
 
 ## More information
 

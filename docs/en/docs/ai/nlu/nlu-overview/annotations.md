@@ -30,8 +30,8 @@ A new menu line will be created for each annotation added to the sentence. The a
 
 Multiple annotations of different types can be added to a single example sentence where each annotation will be underlined in a different color. 
 
-???+ info "Copy and Paste Annotated Sentences"
-    It is possible to copy a sentence including annotations to another example sentence line which will carry all of the assigned annotations with it. Although similar sentences should be avoided, this can help save time by reducing the need to re-annotate words.
+!!! note "Copy and Paste Annotated Sentences"
+    It is possible to copy a sentence including annotations to another example sentence line which will carry all the assigned annotations with it. Although similar sentences should be avoided, this can help save time by reducing the need to re-annotate words.
 
 ### Lexicon Slot
 Insert **Lexicon Slot** placeholders within example sentences to teach the NLU to recognize words with similar meanings. For example, annotate the product name `shirts` with a custom `product` lexicon tag to allow the NLU to recognize `pants`, `hats`, and `jackets` that have been given the same slot tag in the [Lexicon Editor]({{config.site_url}}ai/resources/build/lexicons/).
@@ -45,13 +45,13 @@ Insert **Lexicon Slot** placeholders within example sentences to teach the NLU t
 Note that Slot Tags and Synonyms for intents must be attached in the same flow. This means when training with attached flows: intents in attached flows use the lexicons of their attached flows, not the lexicons of the parent Flow.
 
 
-???+ info "Pro Tip: use synonyms to translate rare words"
-    Provide understandable, common synonyms for rare words. Cognigy's Natural Language Understanding will be able to better make sense of rare words if you translate them to common utterances. E.g., a specific brand name such as "PremiumPayID" could be provided with the synonym "credit card" and Cognigy will understand its connection to payments where it would otherwise be an unknown word.
+!!! note "Pro Tip: use synonyms to translate rare words"
+    Provide understandable, common synonyms for rare words. Cognigy Natural Language Understanding will be able to better make sense of rare words if you translate them to common utterances. E.g., a specific brand name such as "PremiumPayID" could be provided with the synonym "credit card" and Cognigy will understand its connection to payments where it would otherwise be an unknown word.
 
-???+ warning "Do not overuse tags"
+!!! warning "Do not overuse tags"
     For small word groups which mean the same thing it more effective to use only synonyms. Tags are appropriate for a large number of words collected in one concept, such as first names or country codes.
 
-???+ info "Exact tag replaced matching algorithm"
+!!! note "Exact tag replaced matching algorithm"
     Example and input utterances that match exactly save for Keyphrase(s) which share the same Tag automatically receive a score of 0.95
 
     To illustrate:
@@ -73,7 +73,7 @@ Note that Slot Tags and Synonyms for intents must be attached in the same flow. 
 | Money |
 | Distance |
 
-???+ info "Detailed Slot Information"
+!!! note "Detailed Slot Information"
     For more information about System Slots, including data formats and examples, visit the [Slot Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
 
 ### Any Slot

@@ -51,6 +51,9 @@ extra_css:
 - assets/css/extra.css
 extra_javascript:
 - assets/js/custom.js
+- assets/js/mathjax.js
+- https://polyfill.io/v3/polyfill.min.js?features=es6
+- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 nav:
 - Cognigy Products: index.md
@@ -61,6 +64,13 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - release-notes/4.50.md
+  - 4.49:
+    - release-notes/4.49.md
+  - 4.48:
+    - release-notes/4.48.md
+  - 4.47:
+    - release-notes/4.47.md
   - 4.46:
     - release-notes/4.46.md 
   - 4.45:
@@ -139,7 +149,7 @@ nav:
       - ai/flow-nodes/message/say.md
       - ai/flow-nodes/message/question.md
       - ai/flow-nodes/message/optional-question.md
-      - ai/flow-nodes/message/send-email.md
+      - ai/flow-nodes/message/send-smtp-email.md
       - ai/flow-nodes/message/send-email-notification.md
       - ai/flow-nodes/message/send-text.md
       - ai/flow-nodes/message/datepicker.md
@@ -171,6 +181,7 @@ nav:
       - ai/flow-nodes/profile/activate-profile.md
       - ai/flow-nodes/profile/merge-profile.md
       - ai/flow-nodes/profile/complete-goal.md
+      - ai/flow-nodes/profile/blind-mode.md
     - Services:
       - ai/flow-nodes/services/services.md
       - ai/flow-nodes/services/ms-sql.md
@@ -238,6 +249,9 @@ nav:
       - ai/flow-nodes/other-nodes/set-translation.md
       - ai/flow-nodes/other-nodes/request-rating.md
       - ai/flow-nodes/other-nodes/gpt-prompt.md
+      - ai/flow-nodes/other-nodes/gpt-conversation.md
+      - ai/flow-nodes/other-nodes/close-handover.md
+      - ai/flow-nodes/other-nodes/set-handover-inactivity.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
@@ -271,7 +285,7 @@ nav:
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
       - ai/tools/user-menu/organisation-details.md
-      - ai/tools/user-menu/audit-events.md
+      - ai/tools/user-menu/audit-overview.md
     - Interaction Panel:
       - ai/tools/interaction-panel/interaction-panel.md
       - ai/tools/interaction-panel/input.md
@@ -292,15 +306,21 @@ nav:
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
 # - xApp:
-  # - ai/xApp/overview.md 
+  # - ai/xApp/overview.md
   # - ai/xApp/tokens.md 
-  # - ai/xApp/api.md 
+  # - ai/xApp/api.md
+# - Agent Assist:
+  # - ai/agent-assist/overview.md
+  # - ai/agent-assist/set-html-file.md
+  # - ai/agent-assist/set-adaptive-card-tile.md
+  # - ai/agent-assist/set-iframe-tile.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
     - ai/endpoints/session-management.md
     - ai/endpoints/handover-settings.md
     - ai/endpoints/real-time-translation-settings.md
+    - ai/endpoints/file-storage.md
     - ai/endpoints/content-conversion.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
@@ -335,6 +355,7 @@ nav:
     - ai/endpoints/twilio.md
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
+    - ai/endpoints/8x8.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
@@ -356,7 +377,9 @@ nav:
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
-    
+    - ai/handover-providers/8x8.md
+    - ai/handover-providers/user-inactivity-detection.md
+
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -384,7 +407,16 @@ nav:
     - ai/developer-guides/clients.md
   - Release Notes:
     - ai/release-notes/release-notes.md   
-
+# - Agent Assist:
+  # - agent-assist/overview.md
+  # - agent-assist/getting-started.md
+  # - agent-assist/contact-center-integration.md
+  # - agent-assist/flow-nodes/configuration.md
+  # - agent-assist/flow-nodes/xApp/embeddings.md
+  # - agent-assist/voice-agent-assist/code-node.md
+  # - agent-assist/voice-agent-assist/transfer-node.md
+  # - agent-assist/voice-agent-assist/voice-overview.md
+  # - agent-assist/voice-agent-assist/webhook-endpoint.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md
@@ -394,6 +426,7 @@ nav:
   - insights/dashboard-overview.md
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md
+  - insights/dashboard-live-agent.md
   - insights/dashboard-calls.md
   - insights/step-explorer.md
   - insights/transcript-explorer.md
@@ -493,6 +526,16 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+  - References:
+    - Voice Gateway Events:
+        - voicegateway/references/events/overview.md
+        - voicegateway/references/events/RECOGNIZED_SPEECH.md
+        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/CALL_CREATED.md
+        - voicegateway/references/events/CALL_RECONNECTED.md
+        - voicegateway/references/events/CALL_COMPLETED.md
+        - voicegateway/references/events/CALL_FAILED.md
+        - voicegateway/references/events/USER_INPUT_TIMEOUT.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
@@ -592,8 +635,18 @@ extra:
          data: 0
          note: >- 
             Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via a GitHub issue</a>
- 
+  consent:
+   title: Cookie consent
+   description: >-
+            We use cookies to recognize your repeated visits and preferences, as well
+            as to measure the effectiveness of our documentation and whether users
+            find what they're searching for. With your consent, you're helping us to
+            make our documentation better. To find out more about the cookies we use, see our <a href="https://www.cognigy.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+
 plugins:
 - section-index
 - macros
 - search
+- exclude:
+    glob:
+      - _includes/*

@@ -16,7 +16,7 @@ An **If Node** is used to execute either one or another part of a [**Flow**]({{c
 ## Creating a Condition
 <div class="divider"></div>
 
-???+ info "Direct CognigyScript"
+!!! note "Direct CognigyScript"
     In the condition field, direct [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) should be used. This means that you don't have to use `{{ " {{ }}" }}`. Therefore, `input.slots.city` is all that is required. This will evaluate to `true`, if an Input Keyphrase with the tag `city` was found.
 ## Rule Editor
 

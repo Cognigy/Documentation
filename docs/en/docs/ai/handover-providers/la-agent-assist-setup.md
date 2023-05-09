@@ -11,7 +11,7 @@
 
 Agent Assist uses a **Flow** to provide additional information to your Agents in realtime. 
 
-To setup Agent Assist for Live Agent, first you will need to create a new Flow within your Project.
+To set up Agent Assist for Live Agent, first you will need to create a new Flow within your Project.
 
   <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flows.png" width="75%" />
@@ -34,7 +34,7 @@ You could create Intents, for example, and use Lookup Nodes in combination with 
 ## Setting up your Endpoint
 <div class="divider"></div>
 
-Now that you have setup your Flow, you will need to configure your Endpoint.
+Now that you have set up your Flow, you will need to configure your Endpoint.
 
 Click Deploy and then Endpoints. Go to your Webchat Endpoint.
 
@@ -80,6 +80,6 @@ The Agent can click the blue arrow to forward content to the customer.
 
 This completes the setup for Agent Assist!
 
-For more, please visit our Live Agent documentation here: 
+For more, visit our Live Agent documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)

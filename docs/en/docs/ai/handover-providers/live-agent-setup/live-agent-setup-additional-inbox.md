@@ -1,9 +1,9 @@
 ---
- title: "Adding an Additional Inbox for your Project" 
+ title: "Adding another Inbox for your Project" 
  slug: "live-agent-setup-additional-inbox" 
  hidden: false 
 ---
-# Adding an Additional Inbox for your Project
+# Adding another Inbox for your Project
 
 <div class="divider"></div>
 
@@ -11,7 +11,7 @@ Although normally you will not need to manually create an Inbox for your Project
 
 This may be necessary if you require a second Inbox for a single Project or Bot.
 
-## Add an additional Inbox in Live Agent
+## Add another Inbox in Live Agent
 <div class="divider"></div>
 
 From the Live Agent Dashboard screen, click on **Inboxes** in the sidebar.
@@ -95,7 +95,7 @@ Now your additional Inbox is almost ready.
 ## Configure a Flow for Handover to the Additional Inbox
 <div class="divider"></div>
 
-To begin using your new Inbox, setup a Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
+To begin using your new Inbox, set up a Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
 <figure>
     <img src="{{config.site_url}}live-agent/images/LA-handover-node.PNG" width="100%" alt="Cognigy.AI Handover Flow Screen">
@@ -109,6 +109,6 @@ You have now completed the setup for an additional Inbox.
 ## See Further Live Agent Documentation
 <div class="divider"></div>
 
-For more, please visit our Live Agent documentation here: 
+For more, visit our Live Agent documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)

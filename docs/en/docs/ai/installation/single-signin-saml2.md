@@ -25,14 +25,14 @@ As an example; The api-url for the trial environment is "api-trial.cognigy.ai". 
 
 You will need this SSO URL when configuring your IDP in one of IDP setup guides.
 
-???+ info "Configuring the SSO Provider with Cognigy.AI"
-    Please refer to one of the more specific guides for the **supported Identity Providers** at the bottom of the article under **Next Steps** for an example of the required API request. 
+!!! note "Configuring the SSO Provider with Cognigy.AI"
+    Refer to one of the more specific guides for the **supported Identity Providers** at the bottom of the article under **Next Steps** for an example of the required API request. 
     In case your Identity Provider is not listed, we advise you to take [**OneLogin guide**](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin#introduction-0-0) as an example. The API request for configuring SSO with Cognigy.AI is identical, yet the configuration values differ per provider.
 
 ## Getting the SLO URL
 <div class="divider"></div>
 
-???+ warning "Only avaiable for certain IDPs"
+!!! warning "Only avaiable for certain IDPs"
     Single Logout is currently only supported with OneLogin and Microsoft Azure Active Directory.
 
 In order to configure Single Logout for your Identity Provider, you need the URL used to process the logout request from the IDP. During SLO, the IDP will redirect to the frontend of Cognigy.AI, and you therefore need to use the frontend domain you configured for your installation. The SLO URL looks like this
@@ -43,15 +43,15 @@ https://<frontend-url>/slo/<organisation-id>
 
 The frontend-url could for instance be trial.cognigy.ai
 
-???+ warning "SP initiated SLO"
+!!! warning "SP initiated SLO"
     [![Version badge](https://img.shields.io/badge/Added in-v4.25.0-blue.svg)]({{config.site_url}})
 
     Service Provider initiated Single Logout is only supported with Microsoft Azure Active Directory.
 
-???+ warning "IDP initiated SLO"
+!!! warning "IDP initiated SLO"
     Identity Provider initiated Single Logout is only supported with OneLogin
 
-???+ warning "Cognigy Help Center"
+!!! warning "Cognigy Help Center"
     Find out more about connecting to your proffered SSO provider in our [Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on)
 
 ## Changing a Single Sign-on Configuration in Cognigy.AI
@@ -64,7 +64,7 @@ You can only have one SSO configuration for your organisation. If you want to ch
 https://<api-url>/v2.0/identityprovider/reset
 ``` 
 
-???+ info "API Reference"
+!!! note "API Reference"
     Read more about using the Cognigy.AI API on the [API Reference Page](https://api-trial.cognigy.ai/openapi#post-/v2.0/identityprovider/reset)
 
 ## Logging in via SSO
@@ -74,7 +74,7 @@ https://<api-url>/v2.0/identityprovider/reset
 
 When a user logs into Cognigy.AI via SSO for the first time, they have to do it from the Identity Provider. Doing this will give them the correct access rights in Cognigy.AI, and allow them to login via the Cognigy.AI login page on subsequent logins.
 
-???+ warning "Logging in for the first time"
+!!! warning "Logging in for the first time"
     Users have to login from the IDP on the first login.
 
 

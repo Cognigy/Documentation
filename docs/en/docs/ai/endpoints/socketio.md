@@ -25,7 +25,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 ## Connect your Application
@@ -81,4 +81,4 @@ Messages can be received by listening to the **output** event. The responses hav
 ```
 
 ### Cognigy Socket Client
-Cognigy provides a socket client for connecting with a Cognigy Socket Endpoint. The documentation and open source code for this client is available on the [Cognigy Github Page](https://github.com/Cognigy/SocketClient)
+Cognigy provides a socket client for connecting with a Cognigy Socket Endpoint. The documentation and open source code for this client is available on the [Cognigy GitHub Page](https://github.com/Cognigy/SocketClient)

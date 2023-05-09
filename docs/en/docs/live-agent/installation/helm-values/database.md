@@ -6,14 +6,14 @@
 
 # Database
 
-The database used by Live Agent is PostgreSQL. It can either run inside of the Kubernetes cluster as an additional workload, or outside of the cluster. You can also use a fully managed solution for PostgreSQL.
+The database used by Live Agent is PostgreSQL. It can either run inside the Kubernetes cluster as an additional workload, or outside the cluster. You can also use a fully managed solution for PostgreSQL.
 
 Compatible and tested PostgreSQL versions **>= 10** and **<= 15**
 
 ## Postgres Variables
 
 | Key                        | Type   | Default                   | Description                                                                   |
-| -------------------------- | ------ | ------------------------- | ----------------------------------------------------------------------------- |
+|----------------------------|--------|---------------------------|-------------------------------------------------------------------------------|
 | `postgresql.enabled`       | bool   | `true`                    | Set to `false` if using an external postgres, and modify the below variables. |
 | `postgresql.nameOverride`  | string | `"postgresql"`            | Pod Name Override                                                             |
 | `postgresql.auth.database` | string | `"live_agent_production"` |

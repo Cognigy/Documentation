@@ -6,7 +6,7 @@
 # Adding Agents and Admins to Live Agent
 <div class="divider"></div>
 
-After you have [Setup your Endpoint and Flow for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/) and tested a Conversation, you can add new Agents and Admins, and assign them to Inboxes in Live Agent.
+After you have [Set up your Endpoint and Flow for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/) and tested a Conversation, you can add new Agents and Admins, and assign them to Inboxes in Live Agent.
 
 ## Creating a User
 <div class="divider"></div>
@@ -66,7 +66,7 @@ This completes the setup of Live Agent!
 ## See Further Live Agent Documentation
 <div class="divider"></div>
 
-For more on Live Agent, please visit our documentation here: 
+For more on Live Agent, visit our documentation here: 
 
 - [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)
 
@@ -75,4 +75,4 @@ For more on Live Agent, please visit our documentation here:
 
 Do you need additional Inboxes for a single Project? Look here: 
 
-- [**Adding an Additional Inbox for your Project**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/)
+- [**Adding another Inbox for your Project**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/)

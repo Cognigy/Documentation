@@ -6,7 +6,7 @@ hidden: false
 
 # Generative AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45(Beta)-purple.svg)](../release-notes/4.45.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48(Beta)-purple.svg)](../release-notes/4.48.md)
 
 !!! note
     You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
@@ -21,7 +21,7 @@ In the Cognigy.AI interface, Generative AI generates human-like and personalized
 - [Creating new Flows with pre-configured Nodes](#generate-flows)
 - [Generating new Intent sentences](#generate-intent-sentences)
 - [Rephrasing bot outputs](#rephrase-bot-outputs)
-- [Completing texts](#gpt-prompt)
+- [Completing texts](#complete-texts)
 
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
@@ -58,12 +58,13 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Lexicons**.
 2. Click **+ New Lexicon**.
-3. On the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result.
+3. In the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result.
 4. Go to the **Lexicon Entry Generation** setting, and activate **Generate Lexicon Entries**.
 5. Select **Lexicon language** from the list.
 6. Set the number of entries (lexicon units).
 7. *(Optional)* Add the default [Slot](../ai/nlu/slot-mapping/slot-mapping.md).
-8. Click **Create**.
+8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agent understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
+9. Click **Create**.
 
 When Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
 
@@ -79,7 +80,7 @@ To use Generative AI technology for creating a new Flow with pre-configured Node
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
 2. Click **+ New Flow**.
-3. On the **New Flow** window, go to the **Flow Generation** section and select one of the options:
+3. In the **New Flow** window, go to the **Flow Generation** section and select one of the options:
     - None - the Generative AI will not be applied to this Flow. This setting is activated by default.
     - Name and Description - the Generative AI will use the Name and Description fields for generating Flow.
     - Name and Transcript - the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
@@ -136,9 +137,19 @@ Check in the interactive panel if your Flow works as expected.
   <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
 </figure>
 
-## GPT Prompt
+## Complete texts
+
+### GPT Prompt
 
 The [GPT Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+
+### GPT Conversation 
+
+!!! warning
+    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+
+The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) feature enables the creation of relevant content using Generative AI based on your scenario. By default, this node has already pre-filled fields with a scenario.
+
 
 ## FAQ
 

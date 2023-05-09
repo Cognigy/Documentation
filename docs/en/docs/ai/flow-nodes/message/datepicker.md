@@ -18,7 +18,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
 </figure>
 
-???+ success "Automatically Triggered by Question Nodes"
+!!! tip "Automatically Triggered by Question Nodes"
     The Datepicker is automatically triggered whenever a Question Node with **type "Date"** is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
 
 ## Properties
@@ -75,7 +75,7 @@ This is the minimum date. If not filled out, it will not have a minimum date.
 This is the maximum selectable date. If not filled out, it will not have a maximum date.
 
 ### Time settings
-The Datepicker allows you to configure whether or not times can be selected. If so, it also allows you to configure the default times in detail. 
+The Datepicker allows you to configure whether times can be selected. If so, it also allows you to configure the default times in detail. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8204cac-datepicker-timesettings.jpg" width="100%" />
@@ -84,8 +84,8 @@ The Datepicker allows you to configure whether or not times can be selected. If 
 #### Allow Date & Time
 Determines whether the Datepicker should additionally show selectable time.
 
-#### Use 24 Hour Format
-If selected, the Datepicker will display times in 24 hour format (for example, 20:00h instead of 8:00PM).
+#### Use 24-Hour Format
+If selected, the Datepicker will display times in 24-hour format (for example, 20:00h instead of 8:00PM).
 
 #### Default Hour to show
 Configurable default hour.
@@ -110,7 +110,7 @@ The Datepicker can be configured to exclude (or include) specific dates. This is
 </figure>
 
 #### Enable specific dates
-This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. In addition you can define a function that is used to enable dates - for example only weekdays.
+This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. In addition, you can define a function that is used to enable dates - for example only weekdays.
 
 Enable dates by function - example:
 ```ts
@@ -125,7 +125,7 @@ Enable dates by function - example:
 ```
 
 #### Disable specific dates
-This setting allows you to enter a range of dates that should be disabled. If configured, all other dates will automatically be enabled. In addition you can define a function that is used to disable dates - for example every saturday and sunday.
+This setting allows you to enter a range of dates that should be disabled. If configured, all other dates will automatically be enabled. In addition, you can define a function that is used to disable dates - for example every saturday and sunday.
 
 Disable dates by function - example:
 ```ts
@@ -148,7 +148,7 @@ The Datepicker comes with four advanced options:
 </figure>
 
 #### Date Format
-This field can be used to output a specific date format, like: "y-m-d".
+This field can be used to output a specific date format, like: "Y-m-d".
 
 #### Hide Calendar
 When enabled, the Datepicker will not display a calendar.

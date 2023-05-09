@@ -58,6 +58,6 @@ In case that "Rules" or "Conditions" are not defined correctly (for example, mis
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/11e9f1a-Screen_Shot_059.png" width="100%" />
 </figure>
 
-Cognigy NLU Warning displayed on Intercation Panel caused by incorrect Rule definition
+Cognigy NLU Warning displayed on Interaction Panel caused by incorrect Rule definition
 
 **NLU Warning indication is helpful to find  incorrect defined Rules and Conditions**

@@ -5,7 +5,7 @@
 ---
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
 
 ## Description
 <div class="divider"></div>
@@ -14,27 +14,32 @@ in detail to improve your Agent, your customer service, and the user experience 
 
 The Transcript Explorer enables you to search for key phrases like "booking", "cancel", "message" in a list of transcripts.
 
+Click **Transcript Explorer** in the Insights sidebar menu.
+
 ## Message research
 <div class="divider"></div>
-- Click on "Transcript Explorer" in the Insights sidebar menu.
 
-The customer conversations will be displayed in a list with their contact IDs, message counts, used channel as well as date and time of the message. 
+The customer sessions will be displayed in a list with the following data: 
+
+- Session ID
+- Contact ID
+- Message Count
+- Channel
+- Endpoint
+- Date and time of the last message
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/442b547-Transcript_Explorer_n1.png" width="100%" />
-  <figcaption>Transcript Explorer displaying a list of transcripts (conversations) - local filter menu is open</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
+  <figcaption>Transcript Explorer displaying a list of transcripts (conversations)</figcaption>
 </figure>
 
-- Use the **[global filter]({{config.site_url}}insights/global-filter/)** options to configure your research.
-
-- You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option „Virtual Agent Messages“ and leave the other options not selected.
-
+- Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
+- Use the [global filter]({{config.site_url}}insights/global-filter/) options to configure your research.
+- You can select one or more message sources like **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages click on the filter option Virtual Agent Messages and leave the other options not selected.
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
-???+ info "Note"
-
-    Using the **"Negate "** slider bar**" all but the selected" filter options will be analyzed.
-    For example when selecting the 'Agent messages' and toggling "Negate" then all data will be analyzed but not Agent-message data.
+!!! note
+    Using the Negate slider bar, all filter options except the selected one will be analyzed. For example, when selecting Agent messages and toggling **Negate**, all data will be analyzed except for the Agent-message data.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/fd64fcb-Transcript_Explorer_n2.svg" width="100%" />
@@ -52,23 +57,18 @@ The customer conversations will be displayed in a list with their contact IDs, m
 
 - When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/942c078-Transcript_Explorer_n3.png" width="100%" />
-  <figcaption>Transcript Explorer: Search example for the key phrase "appointment"</figcaption>
-</figure>
-
 - Transcript Explorer provides a sorting function for "Message count" and "Last message". 
--- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
--- Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
+- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
+- Clicking on "Last message" sorts the listed transcripts alternately according to the newest/oldest entries.
 
-### "Contains Step" filter
+### Contains Step filter
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
 
-You can additionally narrow the result to conversations which contain a certain Step. Click on the "Filter" icon in Search input and choose a Step. 
+To further refine your search results to include only conversations that contain a specific step, click ![live-follow](../assets/icons/filter.svg) in the search panel and select a step from the list. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="50%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="100%" />
   <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
 </figure>
 
@@ -131,7 +131,7 @@ When you click on the "profile" icon on the left top side of the conversation pa
 [![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
 
 You can enable an "Expert Mode" by clicking a toggle on top of the transcript's panel. This will
-provide an additional information to a conversation messages (if any), such as:
+provide additional information to a conversation messages (if any), such as:
 
 - What Intent was triggered and its score
 - What Slots were filled
@@ -145,7 +145,7 @@ provide an additional information to a conversation messages (if any), such as:
 To check your [Flow]({{config.site_url}}ai/resources/build/flows/) or to improve the configuration the Transcript Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific message displayed in the conversation panel.
 Clicking the button leads you to the related Flow in Cognigy.AI.
 
-???+ info "Note"
+!!! note
     The context menu "Open Flow" is not available on "drop off" steps or collapsed steps (steps with arrows). 
     The "Open Flow" option is not available if there is no corresponding flow in Cognigy. AI or if the data comes from a snapshot.
 
@@ -174,6 +174,7 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
-???+ info "Message Explorer"
-    **More information to [Message Explorer]({{config.site_url}}insights/message-explorer/)**
+## More information 
+
+- [Message Explorer]({{config.site_url}}insights/message-explorer/)
 

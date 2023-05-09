@@ -11,9 +11,9 @@ Cognigy.AI installation requires a fully functional Kubernetes cluster. We sugge
 - AWS EKS
 - Azure AKS
 
-Running Cognigy.AI on top of on-premise Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend to use public clouds instead. Please, be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
+Running Cognigy.AI on top of on-premise Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend to use public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
 
-???+ attention "Kubernetes versions"
+!!! warning "Kubernetes versions"
     Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart)
 
 ### Hardware Requirements
@@ -25,20 +25,20 @@ For a Cognigy.AI installation with English as the default NLU language, we recom
 - 250 GB of block SSD storage for application databases (250 GB x 3 for 3-replica MongoDB setup)
 - 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets
 
-???+ attention "General-purpose machines"
+!!! warning "General-purpose machines"
     Choosing general-purpose machines instead of compute-optimized machines will have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
 
 
 ### Kubectl binary 
-To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kubernetes.io/docs/reference/kubectl/) binary installed on a Linux machine which can access the Kubernetes cluster for Cognigy.AI installation. Refer to the official Kubernetes documentation for details. Please note that the kubectl version must match the version of your Kubernetes cluster.
+To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kubernetes.io/docs/reference/kubectl/) binary installed on a Linux machine which can access the Kubernetes cluster for Cognigy.AI installation. Refer to the official Kubernetes documentation for details. Note that the kubectl version must match the version of your Kubernetes cluster.
 
 ### Helm Package Manager
-Our products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Please get familiar with basic Helm operations before proceeding with installation.
+Our products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Get familiar with basic Helm operations before proceeding with installation.
 
-???+ attention "Kustomize deprecation"
+!!! warning "Kustomize deprecation"
     [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are **deprecated**. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x.zip). We will stop updating our **kustomize files end this year (31st December 2022)**.
 
-???+ attention "Helm versions"
+!!! warning "Helm versions"
     For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart)
 
 
@@ -49,7 +49,7 @@ Cognigy.AI product requires a license key which you will receive once a license 
 Cognigy.AI is fully containerized and its binaries are shipped in a form of Docker images which are stored in Cognigy's container registry. You will receive credentials which are necessary to authenticate and pull these images.
 
 ### Domains / DNS names
-Cognigy.AI exposes several web services for which you will need to assign DNS records in a public domain operated by your organization. Please ensure that you have access to DNS provider of your domain (e.g. Go- Daddy, United-Domains etc.) to configure DNS records. If our product needs to be accessible only from your private network, ensure that you can create DNS records in your private domain.
+Cognigy.AI exposes several web services for which you will need to assign DNS records in a public domain operated by your organization. Ensure that you have access to DNS provider of your domain (e.g. Go- Daddy, United-Domains etc.) to configure DNS records. If our product needs to be accessible only from your private network, ensure that you can create DNS records in your private domain.
 
 ### TLS certificate(s)
 To authenticate a web server and to encrypt web traffic between clients and the web server you need an SSL certificate for the domain in which DNS records for Cognigy.AI will be created. We highly suggest a wildcard certificate as it simplifies installation process. If you cannot use a wildcard certificate for some reason, make sure that your standalone certificate(s) cover(s) all DNS records for our product. The reverse-proxy we ship with our product cannot support multiple certificates out of the box and Cognigy will not provide support for such configurations.
@@ -60,11 +60,11 @@ If you plan to set up a Kubernetes environment in a private data center, or ther
 ### Network Firewalls / Websocket Support
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Our product heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
 
-???+ attention  "Network configuration support"
-    Please note, that we will not be able to provide any support on setting up any aforementioned network-related prerequisites. Please contact a network/system administrator or a related team of your organization for further support.
+!!! warning  "Network configuration support"
+    Note, that we will not be able to provide any support on setting up any aforementioned network-related prerequisites. Contact a network/system administrator or a related team of your organization for further support.
 
-???+ attention "Limited Windows support"
+!!! warning "Limited Windows support"
     While an installation on Windows servers might be possible, we neither support Windows as an OS nor test our product on Windows servers. We will not be able to provide any support for our product if you pick Windows as an OS.
 
-???+ attention "Pre-installation Checklist"
-    Please make sure, that all aforementioned prerequisites are met before you move installation process. Please use [Pre-installation Checklist](pre-installation-checklist.md) for a cross-check. Note, that any installation process assisted by our engineers also implies that these prerequisites are fulfilled from your side before installation begins.
+!!! warning "Pre-installation Checklist"
+    Make sure, that all aforementioned prerequisites are met before you move installation process. Use [Pre-installation Checklist](pre-installation-checklist.md) for a cross-check. Note, that any installation process assisted by our engineers also implies that these prerequisites are fulfilled from your side before installation begins.

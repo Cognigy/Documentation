@@ -11,9 +11,9 @@ Cognigy.AI features a powerful Localization concept, that allows for customizabi
   <img class="image-center" src="{{config.site_url}}ai/resources/images/19f8d6a-localization.jpg" width="100%" />
 </figure>
 
-The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fallback to another Locale that has.
+The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fall back to another Locale that has.
 
-!!! warning "Primary locale not changable"
+!!! warning "Primary locale not changeable"
     While creating an agent you have to choose the so-called primary Locale.
     You will usually start to create content for your virtual agent using this
     Locale. While you can add additional Locales later on in order to localize
@@ -21,10 +21,10 @@ The Localization view allows for the configuration of any number of localization
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
-With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents has been added to the Cognigy.AI platform. Cognigy's solution is a native integration of leading machine translation providers into the Conversational AI platform.
+With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents has been added to the Cognigy.AI platform. Cognigy solution is a native integration of leading machine translation providers into the Conversational AI platform.
 
-???+ info "Automatic Localization"
-    More details about automatic localization you will find here: [Automatc Localization]({{config.site_url}}ai/tools/auto-localization/).
+!!! note "Automatic Localization"
+    More details about automatic localization you will find here: [Automatic Localization]({{config.site_url}}ai/tools/auto-localization/).
 
 ### Using localization in Flows
 
@@ -42,14 +42,14 @@ When switching Localization, the Flow will change its appearance. **"Greyed out"
   <img class="image-center" src="{{config.site_url}}ai/resources/images/8c88b22-localization-inflows-compare.jpg" width="100%" />
 </figure>
 
-???+ success "Switch Locale during a conversation"
+!!! tip "Switch Locale during a conversation"
     It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/) node.
 
 ### Adding a Locale to a Node
 
 <div class="divider"></div>
 
-When a different Locale is activated in the Flow (by using the drop-down at the top), individual [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) can be be overwritten with a specific Locale.
+When a different Locale is activated in the Flow (by using the drop-down at the top), individual [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) can be overwritten with a specific Locale.
 
 This can be done by click on a specific Node and then selecting **Add Localization** at the top of a Node. As soon as a localization has been added, the Node will be colored again in the Flow Chat, indicating that a localization has taken place.
 
@@ -74,11 +74,11 @@ With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section 
 
 The configuration options and their functions are listed below:
 
-| Parameter      | Description                          |
-| ----------- | ------------------------------------ |
-| **Translation Provider**       | currently available provider with Cognigy.AI 4.10.0: <br> - Microsoft Translator <br> - Google Cloud Translation <br> - DeepL Translate Pro |
-| **Translation Provider API Key**        | The API Key to use for the Translation Provider. |
-| **Request Retries**    | How often to retry calling the translation provider if an error occurs. |
-| **Request Timeout**   | How long to wait for the provider to answer a request (in milliseconds).|
-| **Sentence Cache Expiry Timeout**    | How long to keep translated sentences in the cache (in seconds). |
-| **Custom API Base URL**   | Define a custom endpoint instead of default (for example one for your region). Added with Cognigy.AI 4.16.0. |
+| Parameter                         | Description                                                                                                                                 |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
+| **Translation Provider**          | currently available provider with Cognigy.AI 4.10.0: <br> - Microsoft Translator <br> - Google Cloud Translation <br> - DeepL Translate Pro |
+| **Translation Provider API Key**  | The API Key to use for the Translation Provider.                                                                                            |
+| **Request Retries**               | How often to retry calling the translation provider if an error occurs.                                                                     |
+| **Request Timeout**               | How long to wait for the provider to answer a request (in milliseconds).                                                                    |
+| **Sentence Cache Expiry Timeout** | How long to keep translated sentences in the cache (in seconds).                                                                            |
+| **Custom API Base URL**           | Define a custom endpoint instead of default (for example one for your region). Added with Cognigy.AI 4.16.0.                                |

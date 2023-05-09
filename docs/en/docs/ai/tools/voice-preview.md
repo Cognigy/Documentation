@@ -30,7 +30,7 @@ enter your credentials.
 
 You can use the Voice Preview from 3 different places:
 
-1 - With the hotkey **Ctrl + Alt + p** or **Command + Option + p**.
+1 - With the hotkey ++ctrl+alt+p++ or ++cmd+opt+p++.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-panel.png" width="100%" />
@@ -50,8 +50,8 @@ You can use the Voice Preview from 3 different places:
 
 3 - Click on the Voice Preview button in the interactive tooltip of a message output in the Interaction Panel. The output text will be copied to the Voice Preview input field.
 
-???+ info "Supported Output"
-    Please note that the Voice Preview button will only be shown for specific output. This includes regular text output, fallback text, as well as text/ssml output from channels with Voice support.
+!!! note "Supported Output"
+    Note that the Voice Preview button will only be shown for specific output. This includes regular text output, fallback text, as well as text/ssml output from channels with Voice support.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-chat-panel.png" width="100%" />

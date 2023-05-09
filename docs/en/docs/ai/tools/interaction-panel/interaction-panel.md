@@ -14,7 +14,7 @@ The Interaction Panel can be used to interact with your virtual agent. It can be
 ## Test
 <div class="divider"></div>
 
-???+ info "Note"
+!!! note
     **Chat** tab was renamed to **Test** from version 4.25.0.
 
 ### Channel-Specific output
@@ -25,17 +25,17 @@ The Interaction Panel will preview channel-specific output in case this has been
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-channel-selection.png" width="100%" />
 </figure>
 
-???+ success "Tip: Showing only selected output"
+!!! tip "Tip: Showing only selected output"
     It is possible to only show specific output for a selected set of channels. This can be configured under the **[Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output)**.
 
 ### Input Modes
-Clicking on the secondary button located at the buttom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
+Clicking on the secondary button located in the bottom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />
 </figure>
 
-???+ info "Note"
+!!! note
     Prior to version 4.25.0, *Input Mode* select was a part of Interaction Panel settings tab.
 
 #### Chat
@@ -77,17 +77,27 @@ When the call is ongoing, you will be able to see how long the call is currently
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
 
-By selecting **Live Follow** as the input mode, you will be able to follow the conversations of the user with the help of a User ID. In the input field, simply enter the ID of the user that you wish to follow and hit the enter key (or simply click **Start Live Following**). You will be able to see and follow the live conversation of the user from your Interaction Panel. Click on **Stop Live Following** button if you don't want to follow the user anymore.
+The **Live Follow** input mode helps observe a conversation between a virtual agent and a user in real time.
+You can debug a Flow when you have already set up an Endpoint for this Flow.
+
+To use and test this mode, follow these steps:
+
+1. Go to **Test > Logs**.
+2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
+3. Copy `userId`.
+4. Go to the Flow editor, and open the Interaction panel.
+5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
+6. Paste `userId` into the **User ID** field.
+7. To start live following, click ![start-live-following](../../../assets/icons/start-live-following.svg).
+
+Now you can view and track the user's real-time conversation from your Interaction Panel. To terminate live following, click **Stop Live Following**.
 
 !!! note
     Human agent messages are not shown in the Live Follow mode.
-  
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="80%" />
 </figure>
-
-You can test this input mode with our demo webchat in Endpoint Editor. For further information, refer to **Manually defining the user ID** info box [here]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/#description).
 
 #### Playbook
 When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the *Play* button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
@@ -97,7 +107,7 @@ When **Playbook** input mode is selected, a select field appears with the list o
 </figure>
 
 
-???+ success "Tip: Configuring Playbook Execution"
+!!! tip "Tip: Configuring Playbook Execution"
 	You can further configure the Playbook execution under the [**Interaction Panel Playbook settings**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
 
 ## Info
@@ -111,26 +121,26 @@ The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
 ### Input object
 The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
 
-???+ info "Input object"
+!!! note "Input object"
     Head over to [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) for more information.
 
 ### State
 State can be used to narrow the set of **Intents** that can be triggered, by actively excluding certain Intents from a certain state. 
 
-???+ info "State"
+!!! note "State"
     Head over to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) to learn more. 
 
 ### Context object
 
 The **Context** can be seen as the short-term memory of the **Virtual Agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
 
-???+ info "Context object"
+!!! note "Context object"
     Head over to [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) for more information. 
 
 ### Profile object
 The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
 
-???+ info "Profile object"
+!!! note "Profile object"
     Head over to [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
  
 ## Settings
@@ -155,10 +165,17 @@ This section lets you configure the chat outputs in the Interaction Panel.
 If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
 
 #### Expert Mode
-If enabled, the Interaction Panel will display additional information about the Flow execution, like intents that were triggered, intent score, name of the Flow that was triggered etc. 
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+
+If enabled, the Interaction Panel will display additional information about the Flow execution:
+
+- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and their score.
+- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and their score.
+- The name of the Flow that was triggered. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="80%" />
 </figure>
 
 #### Channel Select
@@ -203,7 +220,7 @@ If turned on, based on the Interaction Panel outputs, the Flow Editor will autom
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-flow-node.gif" width="100%" />
 </figure>
 
-???+ info "Note"
+!!! note
     Turning this setting on will automatically turn off and disable *Auto-switch Target Flow Selection* setting.
 
 #### Auto-switch Target Flow Selection

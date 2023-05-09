@@ -13,17 +13,17 @@ Cognigy.AI already supports [SSO (Single Sign-on)]({{config.site_url}}ai/install
 With release v4.3.0  Cognigy has added Single Sign-on support for OpenID Connect. Customers can now select which type of strategy they want to use in order to implement their corporate SSO strategy. 
 
 
-How to use Open ID Connect with Auth0 as a provider please read following article: [Single Sign-on](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)
+How to use Open ID Connect with Auth0 as a provider read following article: [Single Sign-on](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)
 
-???+ warning "How to use OpenID Connect"
+!!! warning "How to use OpenID Connect"
     Want to learn how to use OpenID Connect? Have a look at **[Auth0 - OpenID Connect](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)** in our Help Center.
 
-???+ info "Note"
+!!! note "Note"
     "This guide covers how to setup SSO in Cognigy.AI with Auth0 as the **Identity Provider** using the OpenID Connect protocol. After completing this guide, your users can login to Cognigy.AI through Auth0 and will automatically have a user account created for them in Cognigy.AI that is assigned a Cognigy.AI access role as defined by the administrator in Auth0."
     
     "When setting up SSO with Auth0, you can choose between two different SSO protocols. This article covers the OpenID Connect protocol. 
     
-    For SAML 2.0, please refer to the following article: [Auth0 - saml2.0](https://support.cognigy.com/hc/en-us/articles/360018693139)
+    For SAML 2.0, refer to the following article: [Auth0 - saml2.0](https://support.cognigy.com/hc/en-us/articles/360018693139)
 
 
 

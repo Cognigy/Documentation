@@ -62,7 +62,7 @@ AudioCodes identifies information about the caller and adds it to the Cognigy [I
 - MOBILE
 
 
-???+ info "NumberMetaData in Tokens"
+!!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
 ## Generic Endpoint Settings
@@ -78,11 +78,11 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Session Management]({{config.site_url}}ai/endpoints/session-management/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-???+ info "Contact Center & Phone number linking"
-    To link a **AudioCodes** **Endpoint** to a phone number, please contact your **Cognigy** representative in order to provision and configure a VG instance.
+!!! note "Contact Center & Phone number linking"
+    To link a **AudioCodes** **Endpoint** to a phone number, contact your **Cognigy** representative in order to provision and configure a VG instance.
 
-???+ warning "AudioCodes VoiceAI Connect"
-    Cognigys AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
+!!! warning "AudioCodes VoiceAI Connect"
+    Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
 
-???+ warning "Rebranding of Voice Gateway with AudioCodes"
+!!! warning "Rebranding of Voice Gateway with AudioCodes"
     With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.

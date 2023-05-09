@@ -9,11 +9,11 @@
 
 <div class="divider"></div>
 
-Due to various reasons, some customers decide to whitelist public IPs of Cognigy's shared environments. Please inform Cognigy Support or Customer Success Management in case of similar requirements and before establishing a whitelisting. The list can change from time to time and we will immediately notify listed customers about changes.
+Due to various reasons, some customers decide to whitelist public IPs of Cognigy's shared environments. Inform Cognigy Support or Customer Success Management in case of similar requirements and before establishing a whitelisting. The list can change from time to time, and we will immediately notify listed customers about changes.
 
-Please find the current list of IP addresses for shared environments below. 
+Find the current list of IP addresses for shared environments below. 
 
-## Public IP addresses for app.cognigy.ai
+## IP addresses for app.cognigy.ai
 
 <div class="divider"></div>
 
@@ -43,3 +43,23 @@ Set these IP addresses on a whitelist when using au-02.cognigy.ai:
 - 13.238.252.9
 - 13.55.38.237
 - 3.105.214.205
+
+## IP addresses for app-us.cognigy.ai
+
+<div class="divider"></div>
+
+Set these IP addresses on a whitelist when using app-us.cognigy.ai:
+
+- 3.229.129.99
+- 34.236.251.178
+- 54.236.86.4
+
+## IP addresses for app-uk.cognigy.ai
+
+<div class="divider"></div>
+
+Set these IP addresses on a whitelist when using app-uk.cognigy.ai:
+
+- 13.42.121.72
+- 3.10.92.32
+- 35.177.65.3

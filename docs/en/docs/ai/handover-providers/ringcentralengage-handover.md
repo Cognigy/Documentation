@@ -21,7 +21,7 @@ Open the Endpoint where you would like to enable Handover to RingCentral Engage.
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/ringcentralengage-endpoint.png" width="75%" />
     </figure>
 
-To complete your setup, please see the following Help Center article: 
+To complete your setup, see the following Help Center article: 
 
 - [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration)
 
@@ -32,7 +32,7 @@ To complete your setup, please see the following Help Center article:
 
 During a Handover event the User Profile is sent to RingCentral Engage to provide helpful information to the agent.
 
-???+ warning "Profile fields of Cognigy Profile and RingCentral Profile do not match exactly"
+!!! warning "Profile fields of Cognigy Profile and RingCentral Profile do not match exactly"
     Cognigy User Profile will be sent to RingCentral Engage and matched up with the object keys existing on RingCentral Engage. The information that was not matched will be added to the "context_data" object. 
 
     - [RingCentral Engage accepted User Profile Object structure](https://developers.ringcentral.com/engage/digital/guide/sdks/source-sdk/objects#users) sent during the handover.

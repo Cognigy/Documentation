@@ -16,16 +16,16 @@
 ### Bugfixes
 
 - Fixed a bug where e.g. "zweimal" would not be recognized as a number in German
-- Fixed a bug where e.g. "den 4.5.'" would not be recognized as a date in German
+- Fixed a bug where e.g. "den 4.5." would not be recognized as a date in German
 - Fixed a bug where e.g. "before the 28.03.2000" would not be recognized as a date in English
 - Fixed a bug where you might see an unexpected value for timezoneOffset in the Input object
 - Fixed a bug where Chatwoot did not get the "Handover Resolved" status and conversation would not go back to the flow
-- Fixed a bug where exporting multiple times same lexicon throwed a conflictError
+- Fixed a bug where exporting multiple times same lexicon threw a conflictError
 - Fixed a bug where the Question node escalations would not respect the forget question threshold
 - Fixed a bug where money slots could not be used in match patterns
 - Fixed a bug where a task did not fail properly during a playbook run when the resources are unavailable (locale, flow, project/snapshot)
 - Fixed a bug where console.error and console.info logs are not getting forwarded to service-logs
-- Fixed a bug where the endpoint client was called several times in a short time frame and got a hickup which could lead to the wrong order of messages when the inject API gets utilized
+- Fixed a bug where the endpoint client was called several times in a short time frame and got a hiccup which could lead to the wrong order of messages when the inject API gets utilized
 - Fixed a bug where endpoints with Live Agent handover provider that were built before agent assist and autoconfigure showed a dirty state when opened in the endpoint editor
 
 ## 4.28.1
@@ -42,9 +42,9 @@
 
 - Improved by making UX better for extension installation and upload
 - Improved by refreshing Contact Profiles on each new input by default
-- Improved by adding the organisationId to the url after logout so that multi-org users also can login again right away
+- Improved by adding the organisationId to the url after logout so that multi-org users also can log in again right away
 - Improved by forwarding the say node settings including the forwardable flag to the Live Agent provider
-- Improved by adding a query parameter to retrieve the proper threads without pagination in Ring Central Engange
+- Improved by adding a query parameter to retrieve the proper threads without pagination in Ring Central Engage
 - Improved by allowing attachments to be forwarded in "as-is" format for the webhook channel to be handled in output transformer
 - Improved by making changes to meet accessibility standards
 - Improved by providing a better UX for our Playbook Player in the Interaction Panel
@@ -52,7 +52,7 @@
 
 ### Bugfixes
 
-- Fixed a bug where the incorrect text and data would be set after using executeCognigyNLU with mode Overwite Input
+- Fixed a bug where the incorrect text and data would be set after using executeCognigyNLU with mode Overwrite Input
 - Fixed a bug where the Question node of type RegExp would fail on a data-only input
 - Fixed a bug where the Execute Cognigy NLU node would not recognize rule intents which were testing properties that were added to the input object during the Flow execution!9498, ticket: #26191)
 - Fixed a bug where delete button is displayed when hovering over disabled example sentences
@@ -62,9 +62,9 @@
 - Fixed a bug where exact matching did not apply when "Flow Mapping Order" was set to "Main First" or "Attached First"
 - Fixed a bug where every-time a user deletes an intent trainer record, two records get removed instead of one from the UI
 - Fixed a bug where last activity date in Access Control displays values in an inconsistent way
-- Fixed a bug where confirmation words were registered case sensitive. They are now case insensitive, such that a positive confirmation word "CORRECT" would be recognized with the input text "correct"
+- Fixed a bug where confirmation words were registered case-sensitive. They are now case-insensitive, such that a positive confirmation word "CORRECT" would be recognized with the input text "correct"
 - Fixed a bug where all virtual agents deployed on the Slack channel would return the same responses
-- Fixed a bug where validation for threads was missing for Ring central Engange
+- Fixed a bug where validation for threads was missing for Ring central Engage
 - Fixed a bug where OpenAPI request for management POST users and PATCH organisation did not work
 - Fixed a bug where a new agent bot was created for each session when using Live Agent
 - Fixed a bug where default 'translate to' in Norwegian localization shows "Afrikaans" instead of "Norwegian"
@@ -75,7 +75,7 @@
 
 ### Features
 
-This release of Cognigy.AI adds a new user interface for inspecting Playbook Runs. This allows our customers to see the status of Playbooks they ran server side. Please have a look at our product documentation for more information.
+This release of Cognigy.AI adds a new user interface for inspecting Playbook Runs. This allows our customers to see the status of Playbooks they ran server side. Take a look at our product documentation for more information.
 
 ### Improvements
 
@@ -102,7 +102,7 @@ This release of Cognigy.AI adds a new user interface for inspecting Playbook Run
 - Fixed a bug where Any Slot matching failed when Lexicon Slots were annotated without the Lexicon attached
 - Fixed a bug where the same Any Slot was detected multiple times
 - Fixed a bug where seemingly an incorrect Any Slot was detected
-- Fixed a bug where microsoft teams endpoint (webhook api) cannot handle "empty message response"
+- Fixed a bug where Microsoft Teams endpoint (webhook api) cannot handle "empty message response"
 
 ## 4.26.1
 **Released** May 31st, 2022
@@ -119,7 +119,7 @@ This release of Cognigy.AI adds a new user interface for inspecting Playbook Run
 
 #### Create Flows from child-branches in Flows
 
-This release of Cognigy.AI adds the ability to create entirely new Flows from child-branches of already existing Flows. This new functionality helps to reduce the overal size of big Flows into more managable smaller fragments
+This release of Cognigy.AI adds the ability to create entirely new Flows from child-branches of already existing Flows. This new functionality helps to reduce the overall size of big Flows into more managable smaller fragments
 
 ### Improvements
 
@@ -137,11 +137,11 @@ This release of Cognigy.AI adds the ability to create entirely new Flows from ch
 ### Bugfixes
 
 - Fixed a bug where "hangup" event would be marked same as the client-side "disconnect" in Audiocodes
-- Fixed a bug where the field text shows the characters from the IME window doubled on a windows machine
+- Fixed a bug where the field text shows the characters from the IME window doubled on a Windows machine
 - Add missing database indices to various collections in service-resources db to improve performance of various APIs
 - Fixed a bug where some keyphrases where not found when followed by a dot
 - Fixed a bug where misusing the limit parameter with a value 0, returned all the items in the collection
-- Fixed a bug where slots were not properly re-parsed when coming from Alexa skill
+- Fixed a bug where slots were not properly reparsed when coming from Alexa skill
 
 ## 4.25.0
 **Released** May 10th, 2022
@@ -296,14 +296,14 @@ This release of Cognigy.AI gives customers the ability to override the Connectio
 
 ### Bugfixes
 - Fixed a bug where the Intent Editor would show unsaved changes when switching the Intent after clicking the save button
-- Fixed a bug where conversation-consumption reporting would not working in a reliable way
+- Fixed a bug where conversation-consumption reporting would not be working in a reliable way
 - Fixed a bug where the UI would display an error when quickly switching between attached Lexicons
 - Fixed a bug where the UI would display an error when quickly switching between attached Flows
 - Fixed a bug where Intent training could fail due to empty example sentences
-- Fixed a bug in Cognigy LiveChat / Live Agent lite where users with access to multiple Organizations could not log-in
+- Fixed a bug in Cognigy LiveChat / Live Agent lite where users with access to multiple Organizations could not log in
 - Fixed a bug where using a "wait for input" and "execute flow" Node after each other would lead to the wrong Cognigy Input object getting used
 - Fixed a bug where our NLU engine would detect a distance instead of a money-slot for a certain input
-- Fixed a bug in the Cognigy Insights Transcript Explorer where using the expert mode would time-out due to a missing database index
+- Fixed a bug in the Cognigy Insights Transcript Explorer where using the expert mode would time out due to a missing database index
 - Fixed a bug on Cognigy Insights dashboards where the time-resolution was incorrect (displayed data in hours instead of minutes)
 - Fixed a bug where the Intent Editor would not display the "build model required" indicator after changing Agent settings
 
@@ -328,7 +328,7 @@ This release of Cognigy.AI adds an additional "Flow Filter" to the Message Explo
 
 ### Improvements
 - Improved by adding descriptions to settings section in Flow Node Editor
-- Improved by adding auto-focus to Say-Node text field in Flow Node Editor
+- Improved by adding autofocus to Say-Node text field in Flow Node Editor
 - Improved by adding optional (opt-in) cache for Flow execution
 - Improved by activating a new Lexicon Slot matcher by default - improving Intent training and making training of larger Intent models possible
 - Improved by updating internal http-request library which is exposed in Endpoint Transformers
@@ -356,8 +356,8 @@ This release of Cognigy.AI adds an additional "Flow Filter" to the Message Explo
 **Released** February 25th, 2022
 
 ### Bugfixes
-- Fixed a bug where the Socketendpoint eventbuffer mechanism would not work properly when used in combination with handover functionality
-- Fixed a bug where additional connections to the Redis data-store would not be closed when using the Socketendpoint eventbuffering mechanism
+- Fixed a bug where the Socket endpoint event-buffer mechanism would not work properly when used in combination with handover functionality
+- Fixed a bug where additional connections to the Redis data-store would not be closed when using the Socket endpoint event-buffering mechanism
 
 ## 4.19.0
 **Released** February 25th, 2022
@@ -392,7 +392,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed a bug where the Extension details sidebar mistakenly stays open after an Extension is deleted
 - Fixed a bug where the Insights Understood Messages widget shows incorrect numbers
 - Fixed a bug related to duplicate training records in the Intent Trainer in case Flows are switched
-- Fixed a bug where the wrong Flow name and Flow Id is stored in analytics if an Intent is triggered in an attached Flow
+- Fixed a bug where the wrong Flow name and Flow ID is stored in analytics if an Intent is triggered in an attached Flow
 - Fixed a bug related to incorrect chart labels within the “Understood Messages” and the “Average Execution Time” widgets of Cognigy Insights
 - Fixed a bug related to pagination not properly working in Message Explorer of Cognigy Insights
 - Fixed a bug where changing the setting "Use Thresholds of the attached Flows" results in different Intent Scores
@@ -401,7 +401,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed a bug where the loading of the Transcript Explorer does not work properly after filters are changed or reset
 - Fixed a bug where the Time to live (TTL) as well as the expiry message for a LiveChat Lite handover request is not configurable
 - Fixed a bug where “user quit/joined” notifications are not shown in Cognigy LiveChat Lite
-- Fixed a bug where users being part of multiple organizations could not login to LiveChat Lite
+- Fixed a bug where users being part of multiple organizations could not log in to LiveChat Lite
 - Fixed a bug regarding authorization and file downloads
 - Fixed a bug where our UI would break when navigating from Endpoints to Localization
 
@@ -445,7 +445,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed accessibility issues related to the language attribute value not changing when the language of the application is switched by the user
 - Fixed accessibility issues related to color contrasts in AI as well as in Insights
 - Fixed accessibility issues related to the Node comment dialog
-- Fixed a bug where, after Wait for Input Input Node with reconfirmation, it is still waited for input even if is already answered Yes or No
+- Fixed a bug where, after Wait for Input Node with reconfirmation, it is still waited for input even if is already answered Yes or No
 - Fixed a bug related to CognigyScript conditions not being correctly evaluated when Output Type List is used
 - Fixed a bug where the screen reader text in the Flow Chart Editor is not properly composed
 - Fixed a bug where Task Manager related errors are mistakenly generated
@@ -459,7 +459,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 **Released** January 31st, 2022
 
 ### Bugfixes
-- Fixed an bug where the history in Cognigy Live Agent would be incomplete in certain situations
+- Fixed a bug where the history in Cognigy Live Agent would be incomplete in certain situations
 
 ## 4.17.1
 **Released** January 20th, 2022
@@ -482,7 +482,7 @@ This release allows users to set the Intent hierarchy level in Lookup Nodes of t
 - Improved by adding a new global “Rating” filter to Insights 
 - Improved by structuring the Webchat Endpoint settings more clearly
 - Improved by adding a “Go to Extensions Marketplace” tooltip to the Node Selection Menu
-- Improved the Flow Node Search by highlighting the fields with matching search results within the "Edit Node” sidebar, by including JSON keys of custom json fields in the search results and by enhancing the performance of the search
+- Improved the Flow Node Search by highlighting the fields with matching search results within the Edit Node sidebar, by including JSON keys of custom json fields in the search results and by enhancing the performance of the search
 - Improved by supporting 10 custom fields exposed in the Analytics records instead of three
 - Improved by allowing vertical scrolling on the rows of the Step Explorer
 - Improved by allowing to delete Intent Example Sentences with a single click
@@ -497,7 +497,7 @@ This release allows users to set the Intent hierarchy level in Lookup Nodes of t
 - Fixed a bug where users can select a custom date range with end date before start time
 - Fixed a bug related to a misleading label in the configuration of the “Salesforce Handover Provider”
 - Fixed a bug where Keyphrase matching does not properly work when Slots are added or removed as long as the model is not retrained.
-- Fixed a bug where the search result would not be properly highlighed in certain situations
+- Fixed a bug where the search result would not be properly highlighted in certain situations
 - Fixed a bug where handover on first message was not possible
 - Fixed a bug where rating details were not shown on the Step Explorer page
 - Fixed a bug where the Transcript Explorer steps would not get cleared on Agent change and could crash the UI
@@ -507,7 +507,7 @@ This release allows users to set the Intent hierarchy level in Lookup Nodes of t
 **Released** January 6th, 2022
 
 ### Bugfixes
-- Fixed a bug in the Input Transformer for our Webhook endpoint where the message would not get processed when the Transformer would return null and already sent a response to the origional HTTP call
+- Fixed a bug in the Input Transformer for our Webhook endpoint where the message would not get processed when the Transformer would return null and already sent a response to the original HTTP call
 
 ## 4.16.0
 **Released** January 6th, 2022
@@ -534,7 +534,7 @@ of your Intent models
 #### Match Pattern- & Fuzze-Search Flow Nodes
 This release of Cognigy.AI adds two new Flow Nodes into Cognigy Flows. One lets you 
 match specific patterns within the input utterances of users, the other one allows 
-you to conduct a search against an array of strins and return the one with the highest 
+you to conduct a search against an array of strings and return the one with the highest 
 likelihood
 
 ### Improvements
@@ -593,7 +593,7 @@ likelihood
 
 ### Bugfixes
 - Fixed a bug where the "Set Session Params" Flow Node would not properly work when using our VG Endpoint and the async-mode
-- Fixed a bug where our delete Profile API could time-out
+- Fixed a bug where our delete Profile API could time out
 
 ## 4.15.2
 **Released** November 26th, 2021
@@ -615,11 +615,11 @@ likelihood
 This release adds a branch new filter option for Snapshots - customers will now be able to select "All" Snapshots in the global filters.
 
 #### Cognigy Insights: Expert mode for Transcript Explorer
-This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy Insights. Similar to the Expert Mode in Cognigy.AIs Interaction Panel, this mode shows additional information such as detected Slots and the classified Intent in addition to the actual transcript of conversations.
+This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy Insights. Similar to the Expert Mode in Cognigy.AI Interaction Panel, this mode shows additional information such as detected Slots and the classified Intent in addition to the actual transcript of conversations.
 
 ### Improvements
 - Improved by adding a Tourist Guide Template for NLU language Japanese
-- Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Please note: The changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag.
+- Improved by properly delivering Endpoint messages to socket clients if they are temporarily disconnected to improve stability in suboptimal networks. Note: The changes are only effective when configuring the “FEATURE_USE_SOCKETENDPOINT_EVENTBUFFER” flag.
 - Update internal WebchatWidget to version v2.38.1
 
 ### Bugfixes
@@ -632,7 +632,7 @@ This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy 
 - Fixed a bug where long text outputs of Say or Question Nodes are displayed truncated in Microsoft Teams
 - Fixed a bug where an infinite loop is triggered when a Flow with Parse Intents enabled and a “cIntent” input is used
 - Fixed a bug where you are unable to edit any Nodes in the Flow Editor
-- Fixed a bug related to a an unusually high number of MongoDB connections
+- Fixed a bug related to a unusually high number of MongoDB connections
 - Fixed a bug where Intents cannot be uploaded and models cannot be built while a large file with Intents is uploaded
 - Fixed a bug where errors are mistakenly logged when cancelling an already cancelled task
 - Fixed a bug where, after adding a new user under Access Control, a user cannot be added to an Agent as a member without reload
@@ -666,8 +666,8 @@ This release adds a so-called Expert Mode to the Transcript Explorer in Cognigy 
 #### Timezones for Cognigy Insights
 This release of Cognigy.AI introduces timezones for Cognigy Insights. Customers will be able to select their timezone in their user profile which will be used when generating reports and data.
 
-#### Async output handling for Voice Gatway
-This release of Cognigy.AI introduces asynchronous output handling for Cognigy Voice Gateway. Previously, outputs from Cognigy Flows would get buffered and send to Cognigy Voice Gatway once your Flows have been processed entirely. It was not possible to use concepts like "Sleep Nodes" or our inject- and notify-APIs. Customers can now activate asynchronous output handling in the Cognigy Voice Gateway Endpoint configuration form.
+#### Async output handling for Voice Gateway
+This release of Cognigy.AI introduces asynchronous output handling for Cognigy Voice Gateway. Previously, outputs from Cognigy Flows would get buffered and send to Cognigy Voice Gateway once your Flows have been processed entirely. It was not possible to use concepts like "Sleep Nodes" or our inject- and notify-APIs. Customers can now activate asynchronous output handling in the Cognigy Voice Gateway Endpoint configuration form.
 
 ### Improvements
 - Improved by adding a tooltip to the starting step in the Step Explorer
@@ -688,7 +688,7 @@ This release of Cognigy.AI introduces asynchronous output handling for Cognigy V
 - Fixed a bug where German time interval inputs are parsed in unexpected ways
 - Fixed a bug regarding slotfillers and our DATE slot
 - Fixed a style regression bug in the Intent training feedback tooltips
-- Fixed a style regression bug in the Intent trained indidcator section
+- Fixed a style regression bug in the Intent trained indicator section
 
 
 ## 4.13.1
@@ -759,7 +759,7 @@ This release of Cognigy.AI adds a non-conversational Endpoint. The feature needs
 - Fixed accessibility issues in Marketplace
 - Fixed a bug where Lexicon Slots are not deleted once they are no longer used in Lexicons
 - Fixed a bug where the Transcript Explorer crashed upon opening a certain chat log
-- Fixed a bug where ranked bar charts erroneously display least frequent values instead of most frequent values in Insights
+- Fixed a bug where ranked bar charts erroneously display the least frequent values instead of most frequent values in Insights
 - Fixed a bug related to breaking Code Nodes for old Endpoints having no translation settings set
 - Fixed a bug where the “Top Goals” tile in Insights is displayed inappropriately for Flows with more than 10 goals
 - Fixed a bug where Flows crash when Say Nodes succeed Reset Context Nodes
@@ -814,7 +814,7 @@ This release activates "Cognigy Insights" by default - Cognigy.AI v4.10.0 did no
 
 ### Features
 #### Cognigy Insights
-This release of Cognigy.AI makes Cognigy Insights the default tool for inbuilt analytics. Insights is a totally new way to explore usage information about our virtual agents. Please have a look at our product website for Insights:
+This release of Cognigy.AI makes Cognigy Insights the default tool for inbuilt analytics. Insights is a totally new way to explore usage information about our virtual agents. Take a look at our product website for Insights:
 https://www.cognigy.com/products/cognigy-insights
 
 #### Machine translation for enhanced agent building
@@ -831,16 +831,16 @@ This release of Cognigy.AI contains the ability to configure a marketplace from 
 - Updated Chatwoot API to version 1.19.0
 - Improved behavior where user can switch Flows by staying in same tab in NLU
 - Improved Endpoint settings menu by adding new sections
-- Improved exact matching by usiing exact match comparision string
+- Improved exact matching by using exact match comparison string
 
 ### Bug Fixes
 - Fixed an issue where Adaptive Cards preview editor is missing from say node
 - Fixed a bug where the Lists are not saving in the default replies from intents
-- Fixed a bug where Cognigy AI seems do not recognize some lexicon slots when the letter case doesn't match
+- Fixed a bug where Cognigy AI seems to do not recognize some lexicon slots when the letter case doesn't match
 - Fixed an issue where Project members panel in the dashboard takes time to update on project creation or change
 - Fixed accessibility issue in the newly added filters in Intent Trainer
 - Fixed an issue where “Attached Lexicon” change includes “Attached Flows” in request
-- Fixed a bug where DataOnly input causes score timeout with case sensitive intent mapping disabled
+- Fixed a bug where DataOnly input causes score timeout with case-sensitive intent mapping disabled
 - Fixed a layout issue in the Contact Profile viewer
 - Fixed a bug where localized Intents do not trigger "NLU is out of date" alert
 - Fixed file system permission issues for some of our NLU services when running Cognigy.AI on top of restricted OpenShift platforms
@@ -883,7 +883,7 @@ This release of Cognigy.AI adds new functionality that allows our customers to u
 - Fixed a bug in Intent Editor when a user adds a new synonym, the drop-down shows “no-options” while it takes several minutes to load the information
 - Fixed a bug where webchat plugins without options do not render in Interaction Panel
 - Fixed a bug where analytics records cannot be deleted
-- Fixed a bug where uploading an encrypted zip archive to packages crashes service resources
+- Fixed a bug where uploading an encrypted zip archive to package crashes service resources
 - Fixed a bug where the clear button for selecting a Cognigy Connection would not clear the field
 - Fixed a bug where certain keyphrases would not be detected properly
 - Fixed a bug where the steps for Start- and disabled Flow Nodes would not be tracked
@@ -909,7 +909,7 @@ This release of Cognigy.AI adds a set of filters to our Intent Trainer to simpli
 More customers than ever are using our API-key feature in the product to automate certain aspects of their day-to-day developer life. In order to make it easier to distinguish different API keys, we have added the ability to name your API-keys
 
 #### Hotkey for expert mode
-Developers can use the so-called expert mode in the Interaction Panel to get more verbose output about certain events (e.g. when an Intent has been found) when talking to their Agents. This release adds the ability to use CTRL+SHIFT+F to toggle the expert mode without visiting the settings panel
+Developers can use the so-called expert mode in the Interaction Panel to get more verbose output about certain events (e.g. when an Intent has been found) when talking to their Agents. This release adds the ability to use ++ctrl+shift+f++ to toggle the expert mode without visiting the settings panel
 
 #### Embeddable extensions
 This release of Cognigy.AI adds the ability for on-premise customers to embed certain extensions into the baseline of Cognigy.AI
@@ -927,7 +927,7 @@ This release of Cognigy.AI adds the ability for on-premise customers to embed ce
 - Fixed a bug where the gallery for the WebchatWidget fails to display anything if the gallery title is blank
 - Fixed a bug where the Intent Trainer layout would not properly be displayed in Edge 18
 - Fixed a bug by removing the role Snapshots from the product, as it is not assigning correct rights
-- Fixed an issue where case sensitive Intent mapping would not work properly
+- Fixed an issue where case-sensitive Intent mapping would not work properly
 - Fixed a bug where the user is unable to restore snapshot with many Extensions
 - Fixed a bug where OData could not filter for null values
 - Fixed a bug where German dates ending with a dot “20.10.2020.” would be ignored
@@ -952,7 +952,7 @@ This release adds the possibility to hide integrated Endpoints (channel types) b
 This release adds the ability to create playbooks from the transcript stored in Contact Profiles.
 
 #### Dependencies in Packages
-This release adds automatic dependency recognition when you select the resources you want to include in a Package. For all of the resources you selected to Export, we will show all of the dependencies and allow you to choose which dependencies you still want in the Package
+This release adds automatic dependency recognition when you select the resources you want to include in a Package. For all the resources you selected to Export, we will show all the dependencies and allow you to choose which dependencies you still want in the Package
 
 ### Improvements
 - Improved the order of the fields in the quick reply overlay form
@@ -986,7 +986,7 @@ Changed caching of core object used while processing user inputs - this leads to
 
 ### Improvements
 - Improved message styles in Webchat
-- Updated integrated WebchatWidget and some WebchatWidget plugins to the lates version v2.30.1
+- Updated integrated WebchatWidget and some WebchatWidget plugins to the latest version v2.30.1
 - Added “Voice Gateway” message previews to Interaction Panel
 - Removed auto-increment functionality for switch- (lookup) and if-node in the Flow Editor
 - Added an option to train Intents from the Flow list and Flow editor
@@ -998,7 +998,7 @@ Changed caching of core object used while processing user inputs - this leads to
 - Fixed a bug where profile fields of type “yes/no” could not be edited in the contact profiles
 - Fixed a bug where time intervals would be parsed in a wrong way for en-GB Flows
 - Fixed a bug where the members list would scroll up when adding a new member
-- Fixed a problem in our Microsoft teams integration where the “default”-channel in our Say-Node would not get properly converted to the payload Microsoft teams expects – this would result in an error being shown
+- Fixed a problem in our Microsoft Teams integration where the “default”-channel in our Say-Node would not get properly converted to the payload Microsoft Teams expects – this would result in an error being shown
 - Fixed a bug where “SO” would be recognized as “Sunday” for German Flows
 
 
@@ -1038,7 +1038,7 @@ With Cognigy packages, we have introduced the ability to export/import individua
 - Fixed a bug where time input is not captured in Japanese System Slot
 - Fixed a bug where our Intent exact-matcher would always return a null-Intent when a disabled Intent won
 - Fixed a bug where default replies for Intents could not be triggered by using the cIntent capability
-- Fixed a bu where certain Slots would still be detected even if they have been disabled
+- Fixed a bug where certain Slots would still be detected even if they have been disabled
 - Fixed a bug where training empty Intent collection would fail
 - Fixed a bug where the wrong Flow name would be stored for Analytics Steps
 - Fixed a bug where uploading a Package with Slot annotations in the Example Sentences of Intents would not work
@@ -1054,7 +1054,7 @@ We have invested quite some time in refreshing the Cognigy.AI Intent Trainer in 
 - the UI won't let you change filters/sorting when un-submitted changes still exist
 - customers can now dismiss unsubmitted changes altogether
 - improved styling for the currently selected row
-- improved translations for customers using our UI in a language different than English
+- improved translations for customers using our UI in a language different from English
 
 #### New Twilio Voices
 We have added new Twilio Voice options to our Twilio Endpoint(s).
@@ -1096,7 +1096,7 @@ We have now added the ability to escalate questions by creating handovers to rea
 - Fixed a bug where changing an Intents name would mark the Intents as "retrain required"
 - Fixed a bug where the updateProfile-Node would not work properly when used on a custom profile-schema field of type "complex"
 - Fixed a bug where our httpRequest-Node would not use the insecureSSL setting when OAuth authentication is used
-- Fixed a bug where our intentmapper results would have an inconsistent structure (part of Input Object)
+- Fixed a bug where our intent mapper results would have an inconsistent structure (part of Input Object)
 - Fixed a bug where adaptive cards would not save
 - Fixed a bug where our NLU system would detect a DATE slot when using "eines", "einem" or "einen" in German
 - Fixed a bug where the Cognigy "Blind mode" would not mask bot outputs
@@ -1119,7 +1119,7 @@ Packages allow our customers to export individual resources like Flows or Lexico
 Cognigy has integrated "Chatwoot" as an additional handover provider that can be used by our customers to connect their users with real agents. Chatwoot is an open-source solution and free to use.
 
 #### Cognigy Functions
-Cognigy Functions are a big leap forward when it comes to running asynchronous code in the background. Functions allow you to schedule long-running code (e.g. 10 minutes!) in the background. Functions can be triggered and started via our RESTful API or from within your Flows. Your code in Functions will be executed in a save containment and can inject results back into your user's conversational sessions. Please check our documentation for more info on Functions.
+Cognigy Functions are a big leap forward when it comes to running asynchronous code in the background. Functions allow you to schedule long-running code (e.g. 10 minutes!) in the background. Functions can be triggered and started via our RESTful API or from within your Flows. Your code in Functions will be executed in a save containment and can inject results back into your user's conversational sessions. Check the Cognigy documentation for more info on Functions.
 
 #### OpenID Connect
 Cognigy.AI already supports SSO (Single Sign-On) through the usage of our SAML 2.0 integration. With this release, we have now added support for OpenID Connect. Customers can now select which type of strategy they want to use in order to implement their corporate SSO strategy.
@@ -1245,7 +1245,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - added tooltips to our handover- and httpRequest-Flow Nodes in order to better explain the individual properties
 - added the ability for our on-premise customers to "trust" the code within an Extensions in order to execute them in a less secure, but highly performant way
 - product alignment with VoiceGateway v2.4 features
-- improve NLU training stability by adjusting the TTL for Training Jobs and adjust the concept of how Training Jobs will time-out
+- improve NLU training stability by adjusting the TTL for Training Jobs and adjust the concept of how Training Jobs will time out
 - improve UX by removing the "Delete all Intents" functionality from the Intent Editor when a non-primary Locale is selected
 - increase the size of drop zones when dragging Flow Nodes in the Flow Editor
 - improve error message when a Lexicon with duplicate data was uploaded
@@ -1277,7 +1277,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - fixed a bug where enabling/disabling Intents would not trigger the "training required" indicator in our user interface
 - fixed a bug where Webhook-Endpoints would not properly work
 - fixed a bug where Flow-Nodes could be appended to the End-Node using our copy&paste functionality
-- fixed a bug where Intent-Training would not succeed for larger training-sets as an internal mechanism would time-out
+- fixed a bug where Intent-Training would not succeed for larger training-sets as an internal mechanism would time out
 
 ## 4.1.4
 **Released:** March 8th, 2021
@@ -1289,7 +1289,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - improved various sections in our RESTful API documentation (OpenAPI spec)
 - added the new validation concepts which we have recently introduced into Question Nodes for Slot Fillers as well
 - improved tooltips and wording of such in various locations within our user interface
-- update our integrated WebchatWidget to version 2.25.2 which brings in multiple improvements; please check the changelog in the WebchatWidget GitHub repository for more details
+- update our integrated WebchatWidget to version 2.25.2 which brings in multiple improvements; check the changelog in the WebchatWidget GitHub repository for more details
 - improved the look and feel of various selects and autocomplete-fields and make them more consistent
 - improved our documentation for applying a custom theme to the Cognigy.AI user interface
 
@@ -1329,7 +1329,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 
 ### Bugfixes
 - Fixed a bug in our VoiceGateway endpoint where the userId was incorrect for outbound calls
-- Fixed a bug where a goTo-node would not executed all nodes that follow the node that you jump to in certain conditions
+- Fixed a bug where a goTo-node would not execute all nodes that follow the node that you jump to in certain conditions
 - Fixed a bug where tasks would not be cancelable for non-admin users
 - Fixed a bug related to old projects and attached Flows
 - Fixed an issue and bring back real-time analytics tiles
@@ -1343,7 +1343,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Added the Avaya CPAAS endpoint
 - Improved the capability of our snapshotting feature and improved support for large assets (e.g. lexicons with > 70.000 entries)
 - Improved user experience in the Flow Editor by adding a suffix when creating e.g. two Say-Nodes
-- Update our integrated WebchatWidget to version 2.25.1 which brings in multiple improvements. Please consult the changelog in the WebchatWidget GitHub repository
+- Update our integrated WebchatWidget to version 2.25.1 which brings in multiple improvements. Consult the changelog in the WebchatWidget GitHub repository
 - Added snapshot description as a tooltip when hovering the snapshots in the list view
 - Improved our pre-defined tokens and adopted them to use the newer syntax for input, context & profile
 - Added support to reparse Google Dialogflow slots
@@ -1378,7 +1378,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Added a warning to Endpoints that have no Flow selected
 - Added the ability to upload Extensions with dependencies (node_modules)
 - Added a Log-Message Node
-- Added a Overwrite-Analytics Node
+- Added an Overwrite-Analytics Node
 - Add support for using self-signed SSL/TLS certificates with our httpRequest node
 - Add support to see HTTP response headers when using our httpRequest node
 
@@ -1388,7 +1388,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 - Fixed a bug where duplicate Handover nodes would appear in the Create Node Menu
 - Fixed a bug where the STT/TTS language of the interaction panel was always English
 - Fixed a bug where you could not use _cognigy directly in outputs from Code Nodes
-- Fixed a bug where the enforce password policy in the management-ui was not working
+- Fixed a bug where the enforced password policy in the management-ui was not working
 - Fixed a bug where several text fields in nodes did not support multiline input
 - Fixed a bug where dragging nested intents would generate wrong previews
 - Fixed a security vulnerability in our Lexicon editor regarding keyphrases
@@ -1432,7 +1432,7 @@ We are always happy to extend the capabilities of our product and would love to 
 #### WebchatWidget WCAG 2.0 Level A Compliance
 We added full support for WCAG 2.0 Level A Compliance to our WebchatWidget. Release 2.24.0 of our WebchatWidget offers accessibility features we did not support, yet. We have also added the ability to specify the necessary alternative text for all sorts of rich-media elements our users can compose in the 'default' and 'webchat' Channels within our Say-Node editor.
 
-Please have a look at our release-page on GitHub:
+Take a look at our release-page on GitHub:
 https://github.com/Cognigy/WebchatWidget/releases/tag/v2.24.0
 
 #### Additional Question Node Features
@@ -1454,7 +1454,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Improve the way how we display/render long Flow-Node names
 - Improve the OpenAPI documentation for security-related REST API endpoints
 - Removed unnecessary API calls when leaving resource list views
-- Add product version number into the user menu so users don't need to logout to see the version number
+- Add product version number into the user menu so users don't need to log out to see the version number
 - Adjust example regular expression displayed in Question-Nodes of type 'regex'
 - Improve the position of our 'Help' button to make it more visible
 
@@ -1535,7 +1535,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Improve our management-ui and add the ability to be able to change passwords for users
 - Improve intra-service caching which leads to a big performance improvement of the overall platform
 - Improve positioning of "send message" button in our Interaction Panel in the Edge 18 browser
-- Publish revision 2 of our "Installation- and Dev-Ops documentation"
+- Publish revision 2 of our "Installation- and DevOps documentation"
 - Improve Endpoint- and NLU-Connector select field
 - Add missing translations keys and improve the translation of our User Interface
 - Add conditions to Webchat- & Messenger button templates
@@ -1567,7 +1567,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 - Fix a bug in our NLU system where exact matching would not take precedence over slot-replaced matches
 - Fix a bug where "slots" would not appear in analytics data produced by the system
 - Fix a bug where the OAuth2 token-refresh of the platform could fail after system hibernate/suspend
-- Fix a bug where attached Flows could not longer get sorted properly in our User Interface
+- Fix a bug where attached Flows could no longer get sorted properly in our User Interface
 - Fix a bug where large Snapshots got invalid when getting compressed
 - Fix a bug where the multiple functionalities would not properly work in our Interaction Panel (context reset, reset state)
 
@@ -1595,7 +1595,7 @@ We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0
 ## 4.0.0
 **Released:** October 2nd, 2020
 
-This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make Cognigy.AI the most advanced conversational AI platform on the market. Please feel free to explore our new documentation and sign up for your free product trial:
+This is our ``latest`` major release. We changed a lot, fixed a lot of issues, and added many new features that make Cognigy.AI the most advanced conversational AI platform on the market. Feel free to explore our new documentation and sign up for your free product trial:
 https://signup.cognigy.ai/
 
 ### Features

@@ -11,26 +11,25 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-???+ info "Extensions"
-    Head over to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) section for information on adding more types of **Nodes**.
+Head over to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) section for information on adding more types of **Nodes**.
 
-| Node Categories                                                                       |
-| -----------                                                                           |
-| [Basic Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#basic-nodes)      |
-| [Message Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#message-nodes)  |
-| [Logic Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#logic-nodes)      |
-| [Profile Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#profile-nodes)  |
-| [Service Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#service-nodes)  |
-| [NLU Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#nlu-nodes)          |
+| Node Categories                                                                      |
+|--------------------------------------------------------------------------------------|
+| [Basic Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#basic-nodes)     |
+| [Message Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#message-nodes) |
+| [Logic Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#logic-nodes)     |
+| [Profile Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#profile-nodes) |
+| [Service Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#service-nodes) |
+| [NLU Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#nlu-nodes)         |
 
 ## Basic Nodes
 <div class="divider"></div>
 
-Basic Nodes are commonly used in basic conversational Flows. Included are typical Nodes like the [Say Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#say), the [Question Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#question) as well as well as certain Flow actions like [Stop and Return]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#stop-and-return). 
+Basic Nodes are commonly used in basic conversational Flows. Included are typical Nodes like the [Say Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#say), the [Question Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#question) as well as certain Flow actions like [Stop and Return]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#stop-and-return). 
 
 ## [Message Nodes](./message/message.md)
 <div class="divider"></div>
-Message Nodes generate certain output that is returned to the user. They are generally multi-channel capable, which means that they work across a broad-range of Endpoints.
+Message Nodes generate certain output that is returned to the user. They are generally multichannel capable, which means that they work across a broad-range of Endpoints.
 
 ### [Say](./message/say.md)
 
@@ -44,7 +43,7 @@ The **Question Node** can be used to ask the user a question. When triggered, th
 
 The **Optional Question Node** works similar to the **Question Node**, except for the fact that the Entry Point is optional by default. 
 
-### [Send Email](./message/send-email.md)
+### [Send SMTP Email](./message/send-smtp-email.md)
 
 The Send Email Node can be used to send an email message directly from within the Flow. IT requires a [Connection]({{config.site_url}}ai/resources/build/connections/) in order to work.
 
@@ -66,7 +65,7 @@ The If Node is one of the most common Logic Nodes. It can be used to evaluate a 
 
 The Lookup Node acts as a switch between different options. A certain type of input (for example, Intents) is evaluated and based on the value, a certain branch is executed.
 
-???+ info "Coming from Cognigy version 3.x?"
+!!! note "Coming from Cognigy version 3.x?"
     The **Lookup Node** was previously known as the **Switch Node**.
 
 ### [Go To](./logic/go-to.md)
@@ -88,7 +87,7 @@ Everything below a Once Node will be executed only once per session. This is use
 
 ### [Interval](./logic/interval.md)
 
-The Interval Node can be used to only allow certain Nodes to be execute if a given time (interval) has passed. It is configurable with a number of milliseconds.
+The Interval Node can be used to only allow certain Nodes to be executed if a given time (interval) has passed. It is configurable with a number of milliseconds.
 
 ### [Stop and Return](./logic/stop-and-return.md)
 
@@ -100,7 +99,7 @@ The Wait for Input Node waits for user input and continues Flow execution.
 
 ### [Sleep](./logic/sleep.md)
 
-The Sleep Node pauses execution for an number of milliseconds. This Node used to be known as the Pause Node. 
+The Sleep Node pauses execution for a number of milliseconds. This Node used to be known as the Pause Node. 
 
 ### [Set State](./logic/set-state.md)
 
@@ -119,7 +118,7 @@ Profile Nodes are used to update  [**Contact Profile**]({{config.site_url}}ai/re
 
 ### [Activate Profile](./profile/activate-profile.md)
 
-This Node can be used to active a  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/)  in case it has been deactivated. The Node is not configurable. 
+This Node can be used to activate a  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/)  in case it has been deactivated. The Node is not configurable. 
 
 ### [Deactivate Profile](./profile/deactivate-profile.md)
 
@@ -133,13 +132,13 @@ This Node is commonly used, as it helps update [**Contact Profile**]({{config.si
 
 This Node can be used to merge the current session to an existing  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) . The Node can be configured with an identifier that can be used as a user id.
 
-### Blind Mode
+### [Blind Mode](./profile/blind-mode.md)
 
 The Blind Mode disables all (or selected) logging. The Node can be used whenever the Virtual Agent handles sensitive data, that should be excluded from the logs.
 
-  * **Mask Loggin:** Outputs XXXX in the output logs of the Agent.
+  * **Mask Login:** Outputs XXXX in the output logs of the Agent.
   * **Mask Analytics:** Outputs XXXX in the analytics (including Contact Profile conversations).
-  * **Disable Conversations:** Disabled output analytics alltogether.
+  * **Disable Conversations:** Disabled output analytics altogether.
 
 ### [Delete Profile](./profile/delete-profile.md)
 
@@ -184,7 +183,7 @@ Here you can add the headers you need to successfully perform the HTTP request.
   * API Key - "Authorization: ApiKey"
   * API Key - "X-API-Key"
 
-In case you select a authorization type other than No Auth you'll get additional fields which depend on the selected authorization type.
+In case you select an authorization type other than No Auth you'll get additional fields which depend on the selected authorization type.
 
 #### Execution and Caching
 
@@ -222,7 +221,7 @@ This Node can be used to dynamically create a [Lexicons]({{config.site_url}}ai/r
 
 ### [Execute Cognigy NLU](./nlu/execute-cognigy-nlu.md)
 
-Can be used to explicitly execute **Cognigy's NLU** at a certain point in the flow. NLU execution happens automatically at the start of the Flow and with each new user input.
+Can be used to explicitly execute **Cognigy NLU** at a certain point in the flow. NLU execution happens automatically at the start of the Flow and with each new user input.
 
 ### [Regex Slot Filler](./nlu/regex-slotfiller.md)
 

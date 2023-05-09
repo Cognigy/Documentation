@@ -44,8 +44,8 @@ With Cognigy.AI 4.10.0 we improved our capabilities to create metrics to have cu
 
 - In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click on "**Insights**". We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics/) application.
 
-???+ info "Note"
-    **When you are in an agent-specific route in Cognigy.AI (Agent is selected) you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights/#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.**
+!!! note
+    When you are in an agent-specific route in Cognigy.AI (Agent is selected) you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights/#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.
 
 When switching from Cognigy.AI to Cognigy Insights you will be redirected to the Insights **Dashboard** section, starting on the "Overview" dashboard.
 
@@ -67,14 +67,14 @@ Cognigy provides three categories of dashboards available via the Insight sidebo
 
 <div class="divider"></div>
 
-???+ info "Note"
-    **The local filter options are specific to an application and will be described in the corresponding section.**
+!!! note
+    The local filter options are specific to an application and will be described in the corresponding section.
 
 ## Global filter
 
 <div class="divider"></div>
 
-Cognigy Insights comes with so-called global filters. These filters will be visible no matter where you navigate. Once you have changed the filters, all of the data visualized in any location will respect your filter configuration.
+Cognigy Insights comes with so-called global filters. These filters will be visible no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
 
 - Timeframe
 - Endpoints
@@ -88,9 +88,9 @@ Cognigy Insights comes with so-called global filters. These filters will be visi
   <figcaption>The global filter menu is open</figcaption>
 </figure>
 
-???+ info "Note"
-    **The global filter options are available in all applications running in Cognigy Insights.**
-    **More information about global filter you can find here: [Global Filter]({{config.site_url}}insights/global-filter/).**
+!!! note
+    The global filter options are available in all applications running in Cognigy Insights.
+    More information about global filter you can find here: [Global Filter]({{config.site_url}}insights/global-filter/).
 
 ## User menu
 
@@ -105,7 +105,7 @@ You can find the [user menu]({{config.site_url}}ai/tools/user-menu/user-menu/) i
 </figure>
 
 - **[MyProfile]({{config.site_url}}ai/tools/user-menu/my-profile/)**
-In the "**Preferences**" section the **user interface language** can be selected.
+In the **Preferences** section the **user interface language** can be selected.
 Language settings in Insights or Cognigy.AI have automatically effect on both applications.
 Insights currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
 You can find more information here: [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/)
@@ -146,14 +146,13 @@ You can always go back to Cognigy.AI and your virtual Agent also by clicking the
 <div class="divider"></div>
 
 
-???+ success "Insights product introduction"
-    **To advance your understanding you can see our live presentation of Cognigy Insights here:**
+!!! tip "Insights product introduction"
+    To advance your understanding you can see our live presentation of Cognigy Insights here:
 
     - [Insights product introduction / German](https://youtu.be/kCkUrHM9dQo)
     - [Insights product introduction / English](https://youtu.be/hYB2iQ_dT5g)
 
 ## More information
-<div class="divider"></div>
 
 - [Global Filter]({{config.site_url}}insights/global-filter/)
 

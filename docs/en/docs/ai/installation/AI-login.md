@@ -37,7 +37,7 @@ The 'organisation-id' is a unique identifier of 24 characters which identifies a
   <figcaption> Cognigy.AI User Login page</figcaption>
 </figure>
 
-???+ warning
+!!! warning
     If a user is part of multiple organisations, and if no organisationId is passed in the login URL, then the user will be denied a login. 
     
     For a user assigned to single organisation, including the organisationId in the login URL is completely optional and has no impact.
@@ -55,10 +55,10 @@ Clicking on those links will open the Cognigy.AI login page with the respective 
 </figure>
 
 
-???+ info "Password Reset"
+!!! note "Password Reset"
     If a user wants to reset the password for one of the organisations to which the user is assigned, then again it is mandatory to have the organisationId in the login url when filling out the "Forgot Password" form.
 
-???+ info "Single Sign-on Login"
+!!! note "Single Sign-on Login"
     A user who is part of multiple organisations can login with SSO, using the above same login URL including the organisationId and then clicking "LOGIN WITH SSO". 
 
     More Information on configuring Cognigy.AI with SSO can be found on [Single Sign-on using SAML 2.0]({{config.site_url}}ai/installation/single-signin-saml2) page

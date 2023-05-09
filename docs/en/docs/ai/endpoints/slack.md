@@ -27,21 +27,21 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-???+ success "Supports Inject & Notify"
+!!! tip "Supports Inject & Notify"
     You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
 
 <div class="divider"></div>
 
 ### OAuth access token
 
-This value is the **OAuth access token** for your slack app's workspace which is obtained in the *OAuth & Permissions* page of your Slack App.
+This value is the **OAuth access token** for your Slack app's workspace which is obtained in the *OAuth & Permissions* page of your Slack App.
 
 ### Verify Token
 
 This value is the **Verification Token** of your Slack app. This is obtained from the *Basic Information* page of your Slack App in the *App Credentials* section.
 
-???+ info "Help Center"
-    More detailed information on how to set up a **Slack** Endpoint please refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
+!!! note "Help Center"
+    More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
 
 ## More information
 

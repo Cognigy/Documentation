@@ -22,7 +22,7 @@ Inside Cognigy.AI, you can find contextual in-product help by clicking the Help 
   <figcaption>Help Icon in the App Bar</figcaption>
 </figure>
 
-When clicking on this menu, the help widget will open and you can search for help directly within the product.
+When clicking on this menu, the help widget will open, and you can search for help directly within the product.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/be71391-helpwidget.JPG" width="100%" />
@@ -46,7 +46,7 @@ Alternatively, you can always reach the Help Center by following the link below.
          <a href="https://support.cognigy.com/hc/en-us" target="_blank" >Cognigy.AI Help Center</a>
       </div>
       <div class="callout-subtext">
-            Cognigy Helpcenter
+            Cognigy HelpCenter
       </div>
    </div>
 </blockquote>
@@ -73,7 +73,7 @@ The following sections describe recommended attachments and information you coul
 
 ## General Problems
 
-For an issue which you can't really associate with a specific resource (flow, endpoint etc.) please add at least a screenshot of the console (**F12**) as an attachment to the ticket.
+For an issue which you can't really associate with a specific resource (flow, endpoint etc.) add at least a screenshot of the console (**F12**) as an attachment to the ticket.
 
 ## Problems with a Flow
 
@@ -83,4 +83,4 @@ You can also attach a screenshot of the logs (see [Logs]({{config.site_url}}ai/r
 
 ## Problems with the UI
 
-Please add - in addition to your description - a screenshot of the bug to your ticket.
+Add - in addition to your description - a screenshot of the bug to your ticket.

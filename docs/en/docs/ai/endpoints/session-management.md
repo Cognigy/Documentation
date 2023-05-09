@@ -20,9 +20,9 @@ The following Endpoints support session expiration:
   - Azure Bot Services
   - WhatsApp
 
-???+ info "Default Session Expiration"
+!!! note "Default Session Expiration"
     The default session expiration is set to 30 minutes.
 
 
-???+ warning "Disable Session Expiration"
+!!! warning "Disable Session Expiration"
     You can disable session expiration by setting it to 0. This will prevent a user from having multiple sessions in the **Contact Profile**, which reduces the **Analytics** effectiveness.

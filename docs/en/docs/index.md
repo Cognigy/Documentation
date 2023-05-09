@@ -24,7 +24,7 @@
   <br>
 </figure>
 
-<b>Welcome to the Cognigy developer documentation!</b> Cognigy enables enterprises to easily create and operate AI-powered virtual agents to automatically handle calls and chats from customers and employees. Please choose a product line and explore all features and platform capabilities.
+<b>Welcome to the Cognigy developer documentation!</b> Cognigy enables enterprises to easily create and operate AI-powered virtual agents to automatically handle calls and chats from customers and employees. Choose a product line and explore all features and platform capabilities.
 
 <h3>Choose a product:</h3>
 <div class="divider"></div>
