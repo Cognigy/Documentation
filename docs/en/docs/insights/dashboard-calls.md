@@ -245,7 +245,7 @@ Result:
 
 ### Average concurrent session
 
-The average number of active sessions happening at the same time within a specific time frame. Additionally, Insights displays the Concurrent Session Limit on the chart with a red horizontal line that indicates whether the call license limit is exceeded.
+The average number of active sessions happening at the same time within a specific time frame. Additionally, Insights displays the Concurrent Session Limit on the chart with a line that indicates whether the call license limit is exceeded.
 
 Source table:
 
@@ -253,7 +253,7 @@ Source table:
 ```txt
 | Date      | Total call duration | Time period           |
 |-----------|---------------------|-----------------------|
-| 4/27/2023 | 7.04 minutes        | 1 hour (3600 seconds) |
+| 4/25/2023 | 7.04 minutes        | 1 hour (3600 seconds) |
 ```
 
 Calculation: `Total Session Time During a Time Period / Time Period`
