@@ -218,7 +218,6 @@ Indicates the number of times a human Agent was contacted. Multiple escalations 
 
 Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
 
-
 Source table:
 
 ```txt
@@ -237,7 +236,7 @@ Source table:
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/live-agent-escalations.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/handovers-on-time.png" width="100%" />
 </figure>
 
 Clicking on the three dots menu item you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
