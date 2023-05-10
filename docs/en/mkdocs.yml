@@ -417,6 +417,11 @@ nav:
   # - agent-assist/voice-agent-assist/transfer-node.md
   # - agent-assist/voice-agent-assist/voice-overview.md
   # - agent-assist/voice-agent-assist/webhook-endpoint.md
+  # - agent-assist/architecture.md
+  # - Installation & Configuration:
+  #   - ai/installation/overview.md
+  #   - ai/installation/browser-requirements.md
+  #   - ai/installation/prerequisites.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md
