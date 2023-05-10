@@ -309,8 +309,13 @@ nav:
   # - ai/xApp/overview.md
   # - ai/xApp/supported-browsers.md
   # - ai/xApp/xApp-sequence-diagram.md
-  # - ai/xApp/tokens.md 
-  # - ai/xApp/api.md 
+  # - ai/xApp/tokens.md
+  # - ai/xApp/api.md
+# - Agent Assist:
+  # - ai/agent-assist/overview.md
+  # - ai/agent-assist/set-html-file.md
+  # - ai/agent-assist/set-adaptive-card-tile.md
+  # - ai/agent-assist/set-iframe-tile.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -378,7 +383,7 @@ nav:
     - ai/handover-providers/user-inactivity-detection.md
     
   - ai/generative-ai.md
-  - ai/xApp-sequence-diagram.md
+  - ai/architecture.md
   
   - Installation & Configuration:
     - ai/installation/overview.md
@@ -403,8 +408,17 @@ nav:
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
   - Release Notes:
-    - ai/release-notes/release-notes.md
-
+    - ai/release-notes/release-notes.md   
+# - Agent Assist:
+  # - agent-assist/overview.md
+  # - agent-assist/getting-started.md
+  # - agent-assist/contact-center-integration.md
+  # - agent-assist/flow-nodes/configuration.md
+  # - agent-assist/flow-nodes/xApp/embeddings.md
+  # - agent-assist/voice-agent-assist/code-node.md
+  # - agent-assist/voice-agent-assist/transfer-node.md
+  # - agent-assist/voice-agent-assist/voice-overview.md
+  # - agent-assist/voice-agent-assist/webhook-endpoint.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md
@@ -442,7 +456,7 @@ nav:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
     - Deployment:
-      - live-agent/installation/deployment/xApp-sequence-diagram.md
+      - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
       - Helm Values:
