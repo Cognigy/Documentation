@@ -15,7 +15,7 @@ The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes
 
 ## Compatibility
 
-- Cognigy xApps support a limited [list of browsers](supported-browsers.md).
+- Cognigy xApps is compatible with the browsers listed [here](supported-browsers.md).
 
 ## Concepts 
 
