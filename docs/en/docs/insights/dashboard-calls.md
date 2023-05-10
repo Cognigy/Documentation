@@ -1,10 +1,15 @@
 ---
-title: "Calls"
+title: "Calls (Beta)"
 slug: "dashboard-calls"
 hidden: false
 ---
 
-# Calls
+# Calls (Beta)
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.51(Beta)-purple.svg)](../release-notes/4.51.md)
+
+!!! note
+    The Calls dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
 
 The Calls dashboard displays data from the Voice Gateway service. This dashboard helps you identify areas where your virtual agent may need improvement and make adjustments to improve the overall quality of voice interactions.
 
