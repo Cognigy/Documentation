@@ -245,7 +245,7 @@ Result:
 
 ### Average concurrent session
 
-The average number of active sessions happening at the same time within a specific time frame. Additionally, Insights displays the Concurrent Session Limit on the chart with a line that indicates whether the call license limit is exceeded.
+The average number of active sessions happening within a specific time frame. Additionally, Insights displays the Concurrent Session Limit on the chart with a line that indicates whether the call license limit is exceeded.
 
 Source table:
 
