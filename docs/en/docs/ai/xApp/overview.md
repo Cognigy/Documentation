@@ -13,7 +13,7 @@ Cognigy xApps are infinitely flexible micro-web applications for customer self-s
 
 The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes/xApp/overview.md). You can build the actual xApp Pages by in two ways, by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md) or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
 
-## Restrictions
+## Compatibility
 
 - Cognigy xApps support a limited [list of browsers](supported-browsers.md).
 
