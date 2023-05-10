@@ -125,10 +125,10 @@ Shows the number of inbound and outbound calls and summarizes them in a multi-li
 
 A multi-line chart consisting of three lines:
 
-- Inbound — the number of inbound calls on the timescale
-- Outbound — the number of outbound calls on the timescale
-- Bidirectional — the number of calls that involve both inbound and outbound calls during a session.
-- Total — the number of all inbound, outbound, and bidirectional calls on a timescale.
+- Inbound — the number of inbound calls on the timescale.
+- Outbound — the number of outbound calls on the timescale.
+- Bidirectional — the number of calls that involve both inbound and outbound directions during a session on the timescale.
+- Total — the number of all inbound, outbound, and bidirectional calls on the timescale.
 
 Source table:
 
