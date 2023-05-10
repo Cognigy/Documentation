@@ -75,7 +75,11 @@ Cognigy reserves the right to change the billing of xApps in the future.
 
 ### Scenario
 
-The xApp submit data payload messages received by a Flow are counted as billing-relevant messages of the existing conversation.
+The billable unit, the conversation, will be influenced if xApps are used. This is because an xApp session is a part of a Cognigy session.
+
+The xApp submits data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
+
+Cognigy reserves the right to change the billing of xApps in the future.
 
 Example: A user clicks the submit button twice on the order and confirmation pages -> 2 user inputs.
 
