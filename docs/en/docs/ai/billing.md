@@ -69,7 +69,7 @@ Contact your administrator if you want to change this time zone setting.
 
 ## xApps
 
-The billable unit, the conversation, will be influenced if xApps are used. This is because as an xApp session is a part of a Cognigy session.
+The billable unit, the conversation, will be influenced if xApps are used. This is because an xApp session is a part of a Cognigy session.
 
 The xApp submit data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
 
