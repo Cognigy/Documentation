@@ -69,21 +69,31 @@ Contact your administrator if you want to change this time zone setting.
 
 ## xApps
 
-Any user action in the xApp UI is considered as one user input because an xApp session is part of a Cognigy session.
+The conversation will influence the billable unit if xApps are used as the xApp session is a part of the Cognigy session.
+
+The xApp submit data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
 
 Cognigy reserves the right to change the billing of xApps in the future.
 
-### Scenario
+### Scenario 1
 
-The billable unit, the conversation, will be influenced if xApps are used. This is because an xApp session is a part of a Cognigy session.
+During an xApp session, only the xApp submit data payload messages sent by the user are billed. 
 
-The xApp submits data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
+Example: A user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). This scenario involves 3 user inputs.
 
-Cognigy reserves the right to change the billing of xApps in the future.
+Billing: It will be charged as 1 conversation. 
 
-Example: A user clicks the submit button twice on the order and confirmation pages -> 2 user inputs.
+### Scenario 2
 
-Billing: 1 conversation.
+Apart from the xApp nodes, a Flow may contain nodes that start and complete the main session. In this case, the xApp submit data payload messages and other user inputs from the main session are counted as part of the same session and conversation.
+
+Example: A user initiates a chat with a bot and sends 2 messages. This action triggers an xApp session. During the xApp session, the user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). After the xApp session is completed, the bot offers another option, and the user sends 2 more messages. This scenario involves 7 user inputs.
+
+Billing: It will be charged as 1 conversation.
+
+### Scenario 3
+
+When the xApp Nodes have their own Flow and Endpoint and the main Flow has its own Flow and Endpoint, they will be treated as two separate sessions and, therefore, different conversations. Each session will have its own set of billed messages based on the user inputs within that particular session.
 
 ## Additional billing 
 
