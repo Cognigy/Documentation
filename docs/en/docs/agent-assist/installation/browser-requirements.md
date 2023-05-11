@@ -6,12 +6,12 @@
 
 ### Browser Requirements
 
-The Live Agent web frontend works with most modern web browsers. The following table shows the list of supported web browsers:
+The Agent Assist web frontend works with most modern web browsers. The following table shows the list of supported web browsers:
 
-| Browser         | Minimum version |
-| --------------- | --------------- |
-| Mozilla Firefox | 112             |
-| Google Chrome   | 112             |
-| Chromium        | 88              |
-| Apple Safari    | 16              |
-| Microsoft Edge  | 112             |
+| Browser         | Minimum version  |
+| --------------- | ---------------- |
+| Mozilla Firefox | Greater than 110 |
+| Google Chrome   | Greater than 110 |
+| Chromium        | Greater than 86  |
+| Apple Safari    | Greater than 14  |
+| Microsoft Edge  | Greater than 110 |
