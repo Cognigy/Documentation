@@ -93,7 +93,7 @@ Billing: It will be charged as 1 conversation.
 
 ### Scenario 3
 
-When the xApp Nodes have their own Flow and Endpoint and the main Flow has its own Flow and Endpoint, they will be treated as two separate sessions and, therefore, different conversations. Each session will have its own set of billed messages based on the user inputs within that particular session.
+When the xApp Nodes have their own Flow and Endpoint and the main Flow has its own Flow and Endpoint, they will be treated as two separate sessions and, therefore, different conversations.
 
 ## Additional billing 
 
