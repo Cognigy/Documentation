@@ -91,10 +91,6 @@ Example: A user initiates a chat with a bot and sends 2 messages. This action tr
 
 Billing: It will be charged as 1 conversation.
 
-### Scenario 3
-
-When the xApp Nodes have their own Flow and Endpoint and the main Flow has its own Flow and Endpoint, they will be treated as two separate sessions and, therefore, different conversations.
-
 ## Additional billing 
 
 If you are using the following Endpoint [Transformers](../ai/endpoints/transformers/transformers.md):
