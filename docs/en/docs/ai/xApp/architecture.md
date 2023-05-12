@@ -1,10 +1,20 @@
 ---
-title: "xApp Sequence Diagram"
-slug: "xApp-sequence-diagram"
+title: "xApp Architecture"
+slug: "xApp-architecture"
 hidden: true
 ---
 
-# xApp Sequence Diagram
+# xApp Architecture
+
+## xApp Deployment
+
+The xApp architecture based on Kubernetes ensures that each xApp is deployed as a containerized application, providing flexibility and scalability to handle changes in traffic and workload demands. With Kubernetes, xApps can be easily scaled up or down based on user demand, ensuring a consistent level of performance and availability.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/xApp/architecture.png" width="100%" />
+</figure>
+
+## xApp Sequence Diagram
 
 The diagram illustrates the sequence of interactions between a user, Cognigy Flow, xApp Backend, and xApp Page in the context of an xApp architecture integration.
 
