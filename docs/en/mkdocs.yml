@@ -305,12 +305,6 @@ nav:
     - ai/tools/agent-handover.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
-# - xApp:
-  # - ai/xApp/overview.md
-  # - ai/xApp/supported-browsers.md
-  # - ai/xApp/architecture.md
-  # - ai/xApp/tokens.md
-  # - ai/xApp/api.md
 # - Agent Assist:
   # - ai/agent-assist/overview.md
   # - ai/agent-assist/set-html-file.md
@@ -381,7 +375,14 @@ nav:
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
-    
+
+  - xApp:
+    - ai/xApp/xApp.md
+    - ai/xApp/overview.md
+    - ai/xApp/supported-browsers.md
+    - ai/xApp/architecture.md
+    - ai/xApp/tokens.md
+    - ai/xApp/api.md
   - ai/generative-ai.md
   - ai/architecture.md
   

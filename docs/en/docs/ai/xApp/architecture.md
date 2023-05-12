@@ -8,7 +8,9 @@ hidden: true
 
 ## xApp Deployment
 
-The xApp architecture based on Kubernetes ensures that each xApp is deployed as a containerized application, providing flexibility and scalability to handle changes in traffic and workload demands. With Kubernetes, xApps can be easily scaled up or down based on user demand, ensuring a consistent level of performance and availability.
+The xApp architecture based on Kubernetes ensures that each xApp is deployed as a containerized application, providing flexibility and scalability to handle changes in traffic and workload demands.
+
+The diagram below illustrates the process when the xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files via HTTP/HTTPs 1.1 requests to `service-static-files` and establishes a WebSocket or Socket.io connection to `serviceapp-session-manager` to retrieve information about app sessions. This information includes an async event to initialize an app session, which creates a unique URL, and specifies which app will be displayed in a specific app session. The Elastic Load Balancer helps distribute incoming traffic, while Traefik dynamically routes traffic to backend servers based on specific requirements. The `serviceapp-session-manager` updates the app session state in the App Session DB, and the WebSocket transfers data to the Shell page, which loads xApps and provides data to the SDK.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/architecture.png" width="100%" />
