@@ -6,7 +6,7 @@ hidden: true
 
 # xApp (Beta)
 
-{! _includes/beta/new-feature-note-xApps.md !}
+{! _includes/beta/new-feature-note-xApp.md !}
 
 - [Overview](overview.md)
 - [Supported browsers](supported-browsers.md)
