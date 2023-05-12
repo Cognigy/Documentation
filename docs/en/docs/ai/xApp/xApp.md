@@ -1,10 +1,12 @@
 ---
-title: "xApp"
+title: "xApp (Beta)"
 slug: "xApp"
 hidden: true
 ---
 
-# xApp 
+# xApp (Beta)
+
+{! _includes/beta/new-feature-note-xApps.md !}
 
 - [Overview](overview.md)
 - [Supported browsers](supported-browsers.md)

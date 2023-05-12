@@ -1,13 +1,12 @@
 ---
- title: "xApps" 
- slug: "xApps" 
+ title: "Overview" 
+ slug: "overview" 
  hidden: true 
 ---
 
-# xApps (Beta)
+# xApps Overview (Beta)
 
-!!! note
-    This feature is currently in Beta and may contain issues. We encourage you to test the feature and provide feedback, so we can improve it before it is officially released.
+{! _includes/beta/new-feature-note-xApps.md !}
 
 Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
 
