@@ -8,10 +8,10 @@ hidden: true
 
 The following browsers are supported by xApps:
 
-| Browser  | Versions                                              |
-|----------|-------------------------------------------------------|
-| Firefox  | The the newest version and the two previous versions. |
-| Chrome   | The the newest version and the two previous versions. |
-| Chromium | The the newest version and the two previous versions. |
-| Safari   | The the newest version and the two previous versions. |
-| Edge     | The the newest version and the two previous versions. |
+| Browser  | Versions                                          |
+|----------|---------------------------------------------------|
+| Firefox  | The the newest version and two previous versions. |
+| Chrome   | The the newest version and two previous versions. |
+| Chromium | The the newest version and two previous versions. |
+| Safari   | The the newest version and two previous versions. |
+| Edge     | The the newest version and two previous versions. |
