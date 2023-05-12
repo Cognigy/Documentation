@@ -235,12 +235,12 @@ nav:
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
         - ai/flow-nodes/audiocodes/agent-assist.md
-  # - xApp:
-    # - ai/flow-nodes/xApp/overview.md
-    # - ai/flow-nodes/xApp/init-xApp-session.md
-    # - ai/flow-nodes/xApp/get-xApp-session-PIN.md 
-    # - ai/flow-nodes/xApp/set-html-xApp-state.md
-    # - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md 
+    - xApp:
+      - ai/flow-nodes/xApp/overview.md
+      - ai/flow-nodes/xApp/init-xApp-session.md
+      - ai/flow-nodes/xApp/get-xApp-session-PIN.md
+      - ai/flow-nodes/xApp/set-html-xApp-state.md
+      - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md
     - Other Nodes:
       - ai/flow-nodes/other-nodes/other-nodes.md
       - ai/flow-nodes/other-nodes/log-message.md
