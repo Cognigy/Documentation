@@ -280,3 +280,36 @@ None
 Promise<any>
 
 
+## Text Cleaner
+<div class="divider"></div>
+
+### actions.getTextCleaner
+---
+Is used to retrieve an instance of the [Text Cleaner]({{config.site_url}}ai/tools/text-cleaner/) class which exposes functions for cleaning text.
+
+
+#### Parameters
+| Parameter | Type     | Description                                          |
+|-----------|----------|------------------------------------------------------|
+| **locale**   | *string* | The locale for which to instantiate the class (e.g. 'de' or 'en'). |
+| **options** | *object* | See below for the config options |
+
+Config Options
+```json
+{
+    // additional characters which won't be cleaned by cleanDisallowedSymbols
+    additionalAllowedCharacters: string[], 
+
+    // additional symbols which are replace (e.g. "minus": "-")
+    additionalMappedSymbols: { [key: string]: string }, 
+
+    // additional phrases which are replaced
+    additionalSpecialPhrases: { [key: string]: string }, 
+
+    // additions to the phonetic alphabet (e.g. "cognigy": "c")
+    additionalPhoneticAlphabet: { [key: string]: string } 
+}
+```
+
+#### Returns
+Instance of the Text Cleaner class
