@@ -219,8 +219,8 @@ This information can be used to trigger specific actions on escalation or to jum
 
 To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
 
-## Answer Pre Processing
+## Answer Preprocessing
 
-It is possible to use various functions of the [Text Cleaner]({{config.site_url}}ai/tools/text-cleaner/) class to pre-process the answer to a question before it is evaluated. This can be helpful when asking for example for a name using a `text` type question or when asking for a part number using a `slot` question.
+It is possible to use various functions of the [Text Cleaner](../../../ai/tools/text-cleaner.md) class to preprocess the answer to a question before it is evaluated. This can be helpful, for example, when requesting a name using a `text` type question or when asking for a part number using a `slot` question.
 
-In addition to the Text Cleaner functions, the user can opt to re-run NLU after the cleaning (e.g. to detect slots again or properly fill an any slot).
+In addition to the Text Cleaner functions, users have the option to rerun NLU after the cleaning process. This approach allows for tasks such as re-detecting slots or properly filling any remaining slots.
