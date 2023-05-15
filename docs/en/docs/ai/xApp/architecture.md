@@ -1,5 +1,5 @@
 ---
-title: "xApp Architecture"
+title: "Architecture"
 slug: "xApp-architecture"
 hidden: true
 ---
