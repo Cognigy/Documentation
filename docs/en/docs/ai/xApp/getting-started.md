@@ -12,8 +12,7 @@ In this tutorial, you will learn how to build a simple xApp that allows users to
 
 1. Open the code in the Code Sandbox by clicking the following link:
    [![Edit Basic Implementation](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/signature-pad-xapp-z2zsuj)
-2. The code contains a submit button that, when clicked, displays an alert with the JSON data containing the base64-encoded image in PNG format. The data is represented in a JSON format with a single field called `signaturePng`. 
-
+2. The code contains a submit button that, when clicked, displays an alert with the JSON data containing the base64-encoded image in PNG format. The data is represented in a JSON format with a single field called `signaturePng`.
    ```js
    submitButton.addEventListener("click", (event) => {
       if (signaturePad.isEmpty()) {
@@ -23,7 +22,7 @@ In this tutorial, you will learn how to build a simple xApp that allows users to
         SDK.submit(data)
       }
     })
-    ```
+   ```
 3. To include the required SDK in your xApp, use the SDK app page URL and the SDK's submit function to send the JSON data. 
 4. In the `app-page-sdk.js` file, you will find an xApp page SDK mock file that creates the window.SDK object. The provided mock file defines the submit function to display an alert with the submitted data. In the actual shell page of the xApp, the data will be sent to the Cognigy flow for further processing. <br>
     ```js
@@ -31,7 +30,7 @@ In this tutorial, you will learn how to build a simple xApp that allows users to
     submit: (data) => alert(JSON.stringify(data))
     }
     ```
-
+   
 ## Build the xApp
 
 1. Open a new Flow.
