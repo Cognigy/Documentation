@@ -301,13 +301,13 @@ Config Options
     // additional characters which won't be cleaned by cleanDisallowedSymbols
     additionalAllowedCharacters: string[], 
 
-    // additional symbols which are replace (e.g. "minus": "-")
+    // additional symbols which are replace (for example, "minus": "-")
     additionalMappedSymbols: { [key: string]: string }, 
 
     // additional phrases which are replaced
     additionalSpecialPhrases: { [key: string]: string }, 
 
-    // additions to the phonetic alphabet (e.g. "cognigy": "c")
+    // additions to the phonetic alphabet (for example, "cognigy": "c")
     additionalPhoneticAlphabet: { [key: string]: string } 
 }
 ```

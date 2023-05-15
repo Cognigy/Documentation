@@ -6,30 +6,27 @@
 
 # Text Cleaner
 
-Cognigy.AI offers various functions to assist in pre-processing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
+Cognigy.AI offers various functions to assist in preprocessing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
 
-An example would be when a user spells out a part number as "alpha tango hotel double seven three nine minus L for London and C for Canada", resulting in "ath 7739 - lc".
+An example would be when a user spells out a part number as `alpha tango hotel double seven three nine minus L for London and C for Canada`, resulting in `ath 7739 - lc`.
 
-These functions are only available for the following locales:
+These functions support the English (`en`) and German (`de`) locales.
 
-- en
-- de
+The functions are available in the following entities:
 
-The functions are available:
+- [Clean Text Node](../flow-nodes/nlu/clean-text.md)
+- [Question Nodes](../flow-nodes/message/question.md#answer-pre-processing)
+- [Code Node](../flow-nodes/code/actions.md#text-cleaner)
+- [Transformers](../endpoints/transformers/transformers.md#text-cleaner-class)
 
-- in the [Clean Text Node]({{config.site_url}}/ai/flow-nodes/nlu/clean-text/)
-- in [Question Nodes]({{config.site_url}}/ai/flow-nodes/message/question/#answer-pre-processing)
-- in [Code Nodes]({{config.site_url}}/ai/flow-nodes/code/actions/#text-cleaner)
-- in [Transformers]({{config.site_url}}/ai/endpoints/transformers/transformers/#text-cleaner-class)
-
-## Available Functions
+## Functions
 
 
 | Function Name             | Description                                                                                                                                                                                                               |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| cleanDisallowedSymbols    | Remove all symbols which are not explicitly allowed. All letters and numbers are allowed by default and additional allowed symbols can be set.                                                                            |
-| resolveSpelledOutNumbers  | Replaces all number words with their numerical representation. For example, "two hundred and one five seven" -> "201 5 7".                                                                                                |
-| resolvePhoneticAlphabet   | Detects and replaces all words which are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                                                        |
+| cleanDisallowedSymbols    | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                                                           |
+| resolveSpelledOutNumbers  | Replaces all number words with their numerical representation. For example, "two hundred and one five seven" > "201 5 7".                                                                                                 |
+| resolvePhoneticAlphabet   | Detects and replaces all words that are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                                                         |
 | replaceSpecialWords       | Replaces specifically set words with their replacements. For example, "lufthansa" > "lh".                                                                                                                                 |
 | resolveSpelledOutAlphabet | Resolves phrases like "a for anton b as in bertram" to "a b".                                                                                                                                                             |
 | resolvePhoneticCounters   | Resolves strings like "three times 2" to "222" or "double 4" to "44". Only takes the last number of the counter and the first of the repeater. For example, "352 times 355" becomes "35 and 2 times 3 55" > "35 333 55"). |

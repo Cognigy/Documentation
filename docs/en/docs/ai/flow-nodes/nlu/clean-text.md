@@ -10,8 +10,9 @@
 </figure>
 
 ## Description
-The Clean Text Node enables a user to clean a provided text using the [Text Cleaner]({{config.site_url}}ai/tools/text-cleaner/) class which exposes various functions for cleaning text.
+
+The Clean Text Node enables a user to clean a provided text using the Text Cleaner class, which exposes various functions for cleaning text.
 
 The result is either written to the Input or Context objects.
 
-See the Text Cleaner page for more information on the individual functions.
+See the [Text Cleaner](../../../ai/tools/text-cleaner.md) page for more information on the individual functions.
