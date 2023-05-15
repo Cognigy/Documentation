@@ -379,8 +379,9 @@ nav:
   - xApp:
     - ai/xApp/xApp.md
     - ai/xApp/overview.md
-    - ai/xApp/supported-browsers.md
+    - ai/xApp/getting-started.md
     - ai/xApp/architecture.md
+    - ai/xApp/supported-browsers.md
     - ai/xApp/tokens.md
     - ai/xApp/api.md
   - ai/generative-ai.md

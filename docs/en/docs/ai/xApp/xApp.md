@@ -9,7 +9,8 @@ hidden: true
 {! _includes/beta/new-feature-note-xApp.md !}
 
 - [Overview](overview.md)
-- [Supported browsers](supported-browsers.md)
+- [Getting Started](getting-started.md)
 - [Architecture](architecture.md)
+- [Supported Browsers](supported-browsers.md)
 - [Tokens](tokens.md)
 - [API](api.md)
