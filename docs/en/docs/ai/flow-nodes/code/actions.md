@@ -285,14 +285,15 @@ Promise<any>
 
 ### actions.getTextCleaner
 ---
-Is used to retrieve an instance of the [Text Cleaner]({{config.site_url}}ai/tools/text-cleaner/) class which exposes functions for cleaning text.
+Is used to retrieve an instance of the [Text Cleaner](../../tools/text-cleaner.md) class, which exposes functions for cleaning text.
 
 
 #### Parameters
-| Parameter | Type     | Description                                          |
-|-----------|----------|------------------------------------------------------|
-| **locale**   | *string* | The locale for which to instantiate the class (e.g. 'de' or 'en'). |
-| **options** | *object* | See below for the config options |
+| Parameter   | Type     | Description                                                                |
+|-------------|----------|----------------------------------------------------------------------------|
+| **locale**  | *string* | The locale for which to instantiate the class. For example, 'de' or 'en'). |
+| **options** | *object* | See below for the config options.                                          |
+
 
 Config Options
 ```json
@@ -312,4 +313,4 @@ Config Options
 ```
 
 #### Returns
-Instance of the Text Cleaner class
+Instance of the Text Cleaner class.
