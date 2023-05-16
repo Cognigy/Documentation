@@ -377,7 +377,7 @@ nav:
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
 
-  - xApp:
+  - xApp (Beta):
     - ai/xApp/xApp.md
     - ai/xApp/overview.md
     - ai/xApp/use-cases.md

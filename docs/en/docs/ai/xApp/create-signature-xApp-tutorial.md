@@ -62,7 +62,10 @@ Once the node is added, you should always start with the Init Session node. Afte
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-signature.png" width="100%">
 </figure>
 
+Now you can deploy your virtual agent via any of supported channels, such as Webchat Widget.
+
 ## More Information
 
 - [Getting Started](getting-started.md)
+- [](create-standalone-xApp-tutorial.md)
 - [Overview](overview.md)

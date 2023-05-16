@@ -8,10 +8,10 @@ hidden: true
 
 The xApps can be used in two different ways:
 
-- [As a 2nd screen solution](#2nd-screen)
+- [As a multichannel solution](#2nd-screen)
 - [As a standalone solution](#standalone)
 
-## 2nd screen
+## Multichannel
 
 You can use an xApp in addition to the main communication channels such as voice, webchat widget, Teams, WhatsApp, and others. The full list is provided in [Supported Channels](supported-browsers-and-channels.md#supported-channels).
 
