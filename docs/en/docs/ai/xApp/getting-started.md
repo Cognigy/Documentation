@@ -6,7 +6,7 @@ hidden: true
 
 # Getting started with xApps
 
-In this tutorial, you will learn how to create a basic app using Cognigy. The app will collect email addresses from users via a voice channel and display an adaptive card for data entry. We will also implement SMS functionality to send a link to the app via SMS. 
+In this tutorial, you will learn how to create a basic XApp using Cognigy. The xApp will collect email addresses from users via a voice channel and display an Adaptive Card for data entry. We will also implement SMS functionality to send a link to the xApp via text message. 
 
 This tutorial contains two parts:
 
