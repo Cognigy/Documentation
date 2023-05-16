@@ -23,7 +23,7 @@ In this tutorial, you will learn how to build a simple xApp that allows users to
       }
     })
    ```
-3. To include the required SDK in your xApp, use the SDK app page URL and the SDK's submit function to send the JSON data. 
+3. To include the required SDK in your xApp, use the SDK xApp page URL and the SDK's submit function to send the JSON data. 
 4. In the `app-page-sdk.js` file, you will find an xApp page SDK mock file that creates the window.SDK object. The provided mock file defines the submit function to display an alert with the submitted data. In the actual shell page of the xApp, the data will be sent to the Cognigy flow for further processing. <br>
     ```js
     window.SDK = {

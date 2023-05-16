@@ -6,11 +6,11 @@ hidden: true
 
 # Getting started with xApps
 
-In this tutorial, you will learn how to create a basic app using Cognigy. The app will collect email addresses from users via a voice channel and display an adaptive card for data entry. We will also implement SMS functionality to send a link to the app via SMS. 
+In this tutorial, you will learn how to create a basic xApp using Cognigy. The xApp will collect email addresses from users via a voice channel and display an adaptive card for data entry. We will also implement SMS functionality to send a link to the xApp via SMS. 
 
 This tutorial contains two parts:
 
-- [Basic](#form-data-collection--basic). You will create a basic app using xApp Nodes. No credentials are required.
+- [Basic](#form-data-collection--basic). You will create a basic xApp using xApp Nodes. No credentials are required.
 - [Advanced](#form-data-collection--advanced). You will extend the existing Flow through voice channel settings and add an SMS Node. Voice provider credentials are required.
 
 ## Form data collection: Basic
@@ -20,7 +20,7 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
 ### Configure a Basic xApp Flow
 
 1. Create a new Flow in Cognigy and name it **Basic App Tutorial**.
-2. In the Flow editor, add an **xApp: Init Session** Node to initialize the app session.
+2. In the Flow editor, add an **xApp: Init Session** Node to initialize the xApp session.
 3. Below the **xApp: Init Session** Node, add an **xApp: Show Adaptive Card** Node.
 4. In the **AdaptiveCard Definition** field, paste the following JSON:
 
@@ -60,8 +60,8 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
    
 5. Click **Save Node**. 
 6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node.
-7. Set the **Question** type to **xApp** to ensure only data from the app will be accepted as a valid answer. 
-8. Select the **Text with Buttons** output type to display a button with the app URL. 
+7. Set the **Question** type to **xApp** to ensure only data from the xApp will be accepted as a valid answer. 
+8. Select the **Text with Buttons** output type to display a button with the xApp URL. 
 9. Configure the prompt message to instruct users to enter their email using the xApp. In the **Text** field, paste the following text:
 
     ```txt
@@ -94,16 +94,16 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-basic.png" width="100%">
 </figure>
 
-Now you can test your app via the Interaction Panel.
+Now you can test your xApp via the Interaction Panel.
 
 ### Test the App via the Interaction Panel
 
 1. Open the Interaction panel and enter a message like "Hi" to trigger the Flow.
-2. In the Interaction panel, check the **Info** tab to locate the app's URL in the `input.apps.url` input object or use the virtual agent input from the Interaction Panel.
+2. In the Interaction panel, check the **Info** tab to locate the xApp's URL in the `input.apps.url` input object or use the virtual agent input from the Interaction Panel.
    <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/demo-xApp-form.png" width="80%">
    </figure>
-3. Open the URL in a new tab to view the app with the adaptive card.
+3. Open the URL in a new tab to view the xApp with the adaptive card.
 4. Submit data in the email entry field and observe the behavior, for example, `dan@cognigy.com`. Note that the email validation is basic at this stage.
 5. Check the input result via the Interaction panel.
 
@@ -113,7 +113,7 @@ Now you can test your app via the Interaction Panel.
 
 ##  Form data collection: Advanced
 
-In this part of the tutorial, you will learn how to collect email addresses from users via a voice channel and implement SMS functionality to send a link to the app via SMS.
+In this part of the tutorial, you will learn how to collect email addresses from users via a voice channel and implement SMS functionality to send a link to the xApp via SMS.
 
 ### Prerequisites
 
@@ -142,7 +142,7 @@ In this part of the tutorial, you will learn how to collect email addresses from
 
 Note that the voice fallback text will be used instead of buttons.
 
-The conversation should progress only when the user enters data through the app.
+The conversation should progress only when the user enters data through the xApp.
 
 ### Implement SMS Functionality
 
@@ -157,7 +157,7 @@ The conversation should progress only when the user enters data through the app.
     - **Message Body** — customize the SMS message to include the xApp session URL. 
 6. Click **Save Node**.
 
-You have successfully created a basic app and implemented a Flow to collect email data through the app.
+You have successfully created a basic xApp and implemented a Flow to collect email data through the xApp.
 
 Test your Flow via the Interaction Panel.
 
