@@ -6,12 +6,12 @@
 
 ### Browser Requirements
 
-The Agent Assist web frontend works with most modern web browsers. The following table shows the list of supported web browsers:
+The Agent Assist web frontend  is compatible with most modern web browsers. The table below provides a list of supported web browsers.
 
-| Browser         | Minimum version  |
-| --------------- | ---------------- |
-| Mozilla Firefox | Greater than 110 |
-| Google Chrome   | Greater than 110 |
-| Chromium        | Greater than 86  |
-| Apple Safari    | Greater than 14  |
-| Microsoft Edge  | Greater than 110 |
+| Browser         | Version       |
+|-----------------|---------------|
+| Mozilla Firefox | 110 or higher |
+| Google Chrome   | 110 or higher |
+| Chromium        | 86 or higher  |
+| Apple Safari    | 14 or higher  |
+| Microsoft Edge  | 110 or higher |
