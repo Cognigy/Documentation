@@ -380,9 +380,10 @@ nav:
   - xApp:
     - ai/xApp/xApp.md
     - ai/xApp/overview.md
+    - ai/xApp/use-cases.md
     - ai/xApp/getting-started.md
     - ai/xApp/architecture.md
-    - ai/xApp/supported-browsers.md
+    - ai/xApp/supported-browsers-and-channels.md
     - ai/xApp/tokens.md
     - ai/xApp/api.md
     - ai/xApp/create-signature-xApp-tutorial.md
