@@ -83,6 +83,8 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 
 ## More information
 
+- [Architecture](architecture.md)
+- [Getting Started](getting-started.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)
 - [xApp Flow API](api.md)

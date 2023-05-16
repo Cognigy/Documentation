@@ -384,7 +384,7 @@ nav:
     - ai/xApp/supported-browsers.md
     - ai/xApp/tokens.md
     - ai/xApp/api.md
-    - ai/xApp/xApp-tutorial.md
+    - ai/xApp/create-signature-xApp-tutorial.md
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -414,7 +414,7 @@ nav:
     - ai/release-notes/release-notes.md   
 # - Agent Assist:
   # - agent-assist/overview.md
-  # - agent-assist/getting-started.md
+  # - agent-assist/create-signature-getting-started.md
   # - agent-assist/contact-center-integration.md
   # - agent-assist/flow-nodes/configuration.md
   # - agent-assist/flow-nodes/xApp/embeddings.md
@@ -454,7 +454,7 @@ nav:
   - Overview:
     - live-agent/overview.md
   - Getting Started:
-    - live-agent/getting-started/live-agent-getting-started.md
+    - live-agent/getting-started/live-agent-create-signature-getting-started.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
@@ -503,7 +503,7 @@ nav:
   - Overview:
     - voicegateway/overview.md 
   - Getting Started:
-    - voicegateway/getting-started.md
+    - voicegateway/create-signature-getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
     - voicegateway/installation/installation-process.md

@@ -14,3 +14,4 @@ hidden: true
 - [Supported Browsers](supported-browsers.md)
 - [Tokens](tokens.md)
 - [API](api.md)
+- [Tutorial: Creating a Signature](create-signature-xApp-tutorial.md)

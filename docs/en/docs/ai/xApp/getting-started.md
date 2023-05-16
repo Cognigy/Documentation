@@ -1,63 +1,171 @@
 ---
 title: "Getting Started"
-slug: "create-signature"
+slug: "getting-started"
 hidden: true
 ---
 
-# Getting Started
+# Getting started with xApps
 
-In this tutorial, you will learn how to build a simple xApp that allows users to collect their signatures. The xApp enables users to draw their signature in an HTML-based interface and submit it to a Flow for further processing. We will cover the necessary code snippets and steps to create this functionality.
+In this tutorial, you will learn how to create a basic app using Cognigy. The app will collect email addresses from users via a voice channel and display an adaptive card for data entry. We will also implement SMS functionality to send a link to the app via SMS. 
 
-## Explore Code
+This tutorial contains two parts:
 
-1. Open the code in the Code Sandbox by clicking the following link:
-   [![Edit Basic Implementation](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/signature-pad-xapp-z2zsuj)
-2. The code contains a submit button that, when clicked, displays an alert with the JSON data containing the base64-encoded image in PNG format. The data is represented in a JSON format with a single field called `signaturePng`.
-   ```js
-   submitButton.addEventListener("click", (event) => {
-      if (signaturePad.isEmpty()) {
-        alert("Please provide a signature first")
-      } else {
-        const data = { signaturePng: signaturePad.toDataURL() }
-        SDK.submit(data)
-      }
-    })
-   ```
-3. To include the required SDK in your xApp, use the SDK app page URL and the SDK's submit function to send the JSON data. 
-4. In the `app-page-sdk.js` file, you will find an xApp page SDK mock file that creates the window.SDK object. The provided mock file defines the submit function to display an alert with the submitted data. In the actual shell page of the xApp, the data will be sent to the Cognigy flow for further processing. <br>
-    ```js
-    window.SDK = {
-    submit: (data) => alert(JSON.stringify(data))
-    }
+- [Basic](#form-data-collection--basic). You will create a basic app using xApp Nodes. No credentials are required.
+- [Advanced](#form-data-collection--advanced). You will extend the existing Flow through voice channel settings and add an SMS Node. Voice provider credentials are required.
+
+## Form data collection: Basic
+
+In this part of the tutorial, you will learn how to build and test an xApp from scratch and display an Adaptive Card for email entry. However, displaying the Adaptive Card directly in Webchat would be simpler. We suggest moving on to the [Advanced part](#form-data-collection--advanced) of the tutorial. The main benefit of the Advanced part is in the voice scenario, where collecting form data, such as email addresses, via voice can be challenging.
+
+### Configure a Basic xApp Flow
+
+1. Create a new Flow in Cognigy and name it **Basic App Tutorial**.
+2. In the Flow editor, add an **xApp: Init Session** Node to initialize the app session.
+3. Below the **xApp: Init Session** Node, add an **xApp: Show Adaptive Card** Node.
+4. In the **AdaptiveCard Definition** field, paste the following JSON:
+
+      ```json
+       {
+           "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+           "type": "AdaptiveCard",
+           "version": "1.5",
+           "body": [
+               {
+                   "type": "TextBlock",
+                   "text": "Demo xApp form",
+                   "weight": "Bolder",
+                   "size": "Medium",
+                   "wrap": true,
+                   "style": "heading"
+               },
+               {
+                   "type": "Input.Text",
+                   "id": "myEmail",
+                   "label": "Your email",
+                   "regex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.][A-Za-z0-9-]{2,4}$",
+                   "isRequired": true,
+                   "errorMessage": "Please enter a valid email address",
+                   "style": "Email"
+               }
+           ],
+           "actions": [
+               {
+                   "type": "Action.Submit",
+                   "title": "Submit",
+                   "style": "positive"
+               }
+           ]
+       }
+      ```
+   
+5. Click **Save Node**. 
+6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node.
+7. Set the **Question** type to **xApp** to ensure only data from the app will be accepted as a valid answer. 
+8. Select the **Text with Buttons** output type to display a button with the app URL. 
+9. Configure the prompt message to instruct users to enter their email using the xApp. In the **Text** field, paste the following text:
+
+    ```txt
+    Welcome to the xApp tutorial. Please enter your email in the xApp using the link which I texted you via SMS
     ```
    
-## Build the xApp
+10. Click **Add button**. Fill in the following fields:
+    - **Button Tile** — enter **Open xApp**.
+    - **Selection Button Type** — select **URL** from the list.
+    - **URL** — select **xApp Session URL**.
+    - **URL Target** — select **Open URL in a new tab**.
+11. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the **Reprompt Options** section and paste the following reprompt message:
+    
+    ```txt
+    I can't continue before you enter the email in the xApp
+    ```
+    
+12. Click **Save**.
+13. Click **Save Node**.
+14. Below the **Question** Node, add a **Say** Node.
+15. In the Text field, paste the following text:
+    ```txt
+    I received the following email: {{ "{{ input.data._cognigy._app.payload.myEmail }}" }}
 
-1. Open a new Flow.
-2. In the Flow editor, add an **xApp: Init Session** Node. The agent session needs to be initialized to communicate with the Cognitive backend.
-   The **xApp: Init Session** Node is used to start the session, which provides the token and the xApp URL in the `agent.session` object.
-3. Below **xApp: Init Session** Node, add an **xApp: Show HTML** Node. Copy the code from Code Sandbox and paste it to the **HTML Document** field with selected **Full HTML Document** content.
-4. Click **Save Node**.
-5. Below the **xApp: Show HTML** Node, add a **Question** Node. 
-6. In the Node, select the **xApp** question type.
-7. Select **Text with Buttons** output type.
-8. In the text field, enter the text: `Please draw your signature in the xApp`.
-9. Click **Add Button**. Fill in the following fields:
-    - **Button xApp** — enter the text: `Open xApp`.
-    - **Select Button Type** — select **URL**.
-    - **URL** — add **xApp Session URL**.
-    - **URL Target** — select open URL in a new tab.
-10. Click **Save**.
-11. Click **Save Node**.
-12. Below the **Question** Node, add a **Say** Node.
-13. In the **Say** Node, select the **Gallery** Output Type.
-14. Click **Card**. In the Title field, specify **Received signature**.
-15. Click **Save Node**.
-
-Test your Flow via the [Interaction Panel](../tools/interaction-panel/interaction-panel.md).
-
-Once the node is added, you should always start with the Init Session node. After that, when you try again, your input object will contain the token and the URL for the xApp Framework. Take this URL and create a signature.
+    Goodbye!
+    ```
+16. Click **Save Node**.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-signature.png" width="100%">
+    <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-basic.png" width="100%">
 </figure>
+
+Now you can test your app via the Interaction Panel.
+
+### Test the App via the Interaction Panel
+
+1. Open the Interaction panel and enter a message like "Hi" to trigger the Flow.
+2. In the Interaction panel, check the **Info** tab to locate the app's URL in the `input.apps.url` input object or use the virtual agent input from the Interaction Panel.
+   <figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/xApp/demo-xApp-form.png" width="80%">
+   </figure>
+3. Open the URL in a new tab to view the app with the adaptive card.
+4. Submit data in the email entry field and observe the behavior, for example, `dan@cognigy.com`. Note that the email validation is basic at this stage.
+5. Check the input result via the Interaction panel.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-basic-interaction-panel-test.png" width="100%">
+</figure>
+
+##  Form data collection: Advanced
+
+In this part of the tutorial, you will learn how to collect email addresses from users via a voice channel and implement SMS functionality to send a link to the app via SMS.
+
+### Prerequisites
+
+- Access to a [voice provider](../../ai/tools/voice-preview.md), for example, Microsoft Azure Speech Services.
+- [Twilio API Key](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys).
+- Twilio Extension preinstalled from [Cognigy Marketplace](../../ai/resources/manage/extensions.md).
+
+### Configure Voice Channel Support
+
+1. Go to the **Question** Node.
+2. Copy and paste the text from the **Text with Buttons** setting to the **Fallback Text**, as voice channel does not support the **Text with Buttons** setting:
+   ```txt
+   Welcome to the xApp tutorial. Please enter your email in the xApp using the link which I texted you via SMS
+   ```
+3. Click **Save Node**. 
+4. Below the **Say** Node, add a **Hang Up** Node at the end of the Flow to terminate the conversation after email confirmation.
+5. In the **Reason for hang up** field, specify `Bot ended the call`.
+6. Click **Save Node**.
+
+## Test the Flow with Voice Channel
+
+1. Use the Interaction panel's voice call feature to test the Flow.
+2. Ensure the voice preview settings in the agent's settings are properly configured.
+3. Call the specified voice gateway number from your phone.
+4. Follow the conversation prompts and observe the Flow's behavior.
+
+Note that the voice fallback text will be used instead of buttons.
+
+The conversation should progress only when the user enters data through the app.
+
+### Implement SMS Functionality
+
+1. Below the **xApp: Show Adaptive Card** Node, add an **IF** Node to check if the caller number is available in the input metadata. This step is optional but helps distinguish between different channels in testing scenarios.
+2. In the If Node, add the **VG: Caller Number** condition.
+3. Click **Save Node**.
+4. If the caller number is available, add a **Send SMS** Node using a service like Twilio.
+5. In the **Send SMS** Node, fill in the following fields:
+    - **Twilio Connection** — specify an API key that you previously got from your Twilio account.
+    - **Sender Number** — set the sender number.
+    - **Receiver Number** — specify the **VG: Caller Number** condition.
+    - **Message Body** — customize the SMS message to include the xApp session URL. 
+6. Click **Save Node**.
+
+You have successfully created a basic app and implemented a Flow to collect email data through the app.
+
+Test your Flow via the Interaction Panel.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-advanced-tutorial.png" width="100%">
+</figure>
+
+## More Information
+
+- [Twilio SMS API](https://www.twilio.com/docs/sms/api#sms-api-authentication)
+- [Creating a Signature with an xApp](create-signature-xApp-tutorial.md)
