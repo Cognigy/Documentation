@@ -83,3 +83,22 @@ By changing the lookup type to **CognigyScript**, the flow will select a case th
 !!! note "What is CognigyScript?"
     CognigyScript is a superset of JavaScript which gives you access to the Input, Context and Profile objects within text and JSON. Find out more on the **[CognigyScript Page]({{config.site_url}}ai/tools/cognigy-script/)**.
 
+### Call Event Status
+
+By changing the lookup type to **Call Event Status**, the flow will select a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
+
+In the child LookUp node, you can operate the following Voice Gateway events:
+
+- Recognized Speech
+- Recognized DTMF
+- Call Created
+- Call Reconnected
+- Call Failed
+- User Input Timeout
+- Answering Machine Detection
+
+More information about these events you can find in the [Voice Gateway Events](../../../voicegateway/references/events/overview.md) reference.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/call-recording.png" width="100%" />
+</figure>

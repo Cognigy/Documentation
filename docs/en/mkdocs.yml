@@ -195,6 +195,7 @@ nav:
       - ai/flow-nodes/nlu/regex-slotfiller.md
       - ai/flow-nodes/nlu/match-pattern.md
       - ai/flow-nodes/nlu/fuzzy-search.md
+      - ai/flow-nodes/nlu/clean-text.md
     - Code:
       - ai/flow-nodes/code/code.md
       - ai/flow-nodes/code/actions.md
@@ -414,7 +415,7 @@ nav:
     - ai/release-notes/release-notes.md   
 # - Agent Assist:
   # - agent-assist/overview.md
-  # - agent-assist/create-signature-getting-started.md
+  # - agent-assist/getting-started.md
   # - agent-assist/contact-center-integration.md
   # - agent-assist/flow-nodes/configuration.md
   # - agent-assist/flow-nodes/xApp/embeddings.md
@@ -422,6 +423,11 @@ nav:
   # - agent-assist/voice-agent-assist/transfer-node.md
   # - agent-assist/voice-agent-assist/voice-overview.md
   # - agent-assist/voice-agent-assist/webhook-endpoint.md
+  # - agent-assist/architecture.md
+  # - Installation & Configuration:
+  #   - ai/installation/overview.md
+  #   - ai/installation/browser-requirements.md
+  #   - ai/installation/prerequisites.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md
@@ -432,6 +438,7 @@ nav:
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md
   - insights/dashboard-live-agent.md
+  - insights/dashboard-calls.md
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
@@ -454,7 +461,7 @@ nav:
   - Overview:
     - live-agent/overview.md
   - Getting Started:
-    - live-agent/getting-started/live-agent-create-signature-getting-started.md
+    - live-agent/getting-started/live-agent-getting-started.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
@@ -503,7 +510,7 @@ nav:
   - Overview:
     - voicegateway/overview.md 
   - Getting Started:
-    - voicegateway/create-signature-getting-started.md
+    - voicegateway/getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
     - voicegateway/installation/installation-process.md
