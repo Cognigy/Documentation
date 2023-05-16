@@ -57,12 +57,9 @@ The current version of the OData endpoint is `v2.3`. In this version, the follow
 The URL for accessing the V2.3 OData endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
-### Version 2.2
-!!! warning "Deprecation of OData v2.2"
-    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.2. This OData endpoint version will be
-    removed in Cognigy.AI `v4.43.0`.
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
+### Version 2.2 and Earlier
+!!! warning "Deprecation of OData v2.0-2.2"
+    OData Endpoint versions 2.0-2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
 
 - [Inputs](#inputs) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
 - [ChatHistory](#chathistory) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
@@ -70,25 +67,8 @@ The URL for accessing the V2.3 OData endpoint is as follows:
 - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
 - [Conversations](#conversations) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
-The URL for accessing the V2.2 OData endpoint is as follows:
-`https://<hostname>/v2.2/<collection>?apikey=YOURAPIKEY`
-
-
-### Version 2.0
-!!! warning "Deprecation of OData v2.0"
-    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.0. This OData endpoint version will be
-    removed in Cognigy.AI `v4.43.0`.
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
-
-- [Inputs](#inputs) (`/Inputs`)
-- [ChatHistory](#chathistory) (`/ChatHistory`)
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Conversations](#conversations) (`/Conversations`)
-
-The URL for accessing the V2.0 OData endpoint is as follows:
-`https://<hostname>/v2.0/<collection>?apikey=YOURAPIKEY`
+The URL for accessing the V2.X OData endpoint is as follows:
+`https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
 
 ## Querying
 
