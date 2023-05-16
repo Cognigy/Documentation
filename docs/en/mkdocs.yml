@@ -381,7 +381,7 @@ nav:
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
-    
+
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -429,6 +429,7 @@ nav:
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md
   - insights/dashboard-live-agent.md
+  - insights/dashboard-calls.md
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
