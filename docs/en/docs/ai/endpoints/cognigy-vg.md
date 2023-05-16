@@ -21,16 +21,16 @@ Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gatewa
 
 Voice Gateway identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
 
-| Parameter   | Type |Description|Example|
-| ----------- | ------------------------------------ |||
-| headers   | JSON   | The SIP Headers of the call on INVITE, including Custom Headers | See example below |
-| number      | string |The phone number of the caller, including country code|+4921154591991|
-| country     | string |The 2-character country code|DE|
-| countryCallingCode | string |The calling code of the country|49|
-| nationalNumber      | string |The national number without the country code and without a leading zero.|21154591991|
-| valid      | boolean |Whether the number is valid|true|
-| valid      | string |The type of number. See below.|FIXED_LINE|
-| uri      | string |The URI for the number|tel:+4921154591991|
+| Parameter          | Type    | Description                                                              | Example            |
+|--------------------|---------|--------------------------------------------------------------------------|--------------------|
+| headers            | JSON    | The SIP Headers of the call on INVITE, including Custom Headers          | See example below  |
+| number             | string  | The phone number of the caller, including country code                   | +4921154591991     |
+| country            | string  | The 2-character country code                                             | DE                 |
+| countryCallingCode | string  | The calling code of the country                                          | 49                 |
+| nationalNumber     | string  | The national number without the country code and without a leading zero. | 21154591991        |
+| valid              | boolean | Whether the number is valid                                              | true               |
+| valid              | string  | The type of number. See below.                                           | FIXED_LINE         |
+| uri                | string  | The URI for the number                                                   | tel:+4921154591991 |
 
 `numberMetaData.type` can be any of:
 
@@ -63,6 +63,19 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
+
+## Call Events
+
+Allows to activate call events for a Flow.
+
+| Parameter          | Type     | Description                                                              | 
+|--------------------|----------|--------------------------------------------------------------------------|
+| Enable Call Events | Toggle   | Enables the Call Events setting.                                         |
+| Event              | Selector | The event that will trigger the action.                                  |
+| Action             | Selector | The action that will be performed as soon as the call event is detected. |
+| Text Payload       | string   | The text that is sent to your Flow.                                      |
+| Data Payload       | JSON     | Execute the selected Flow. Flow execution will stop afterward.           | 
+
 
 ## Generic Endpoint Settings
 
