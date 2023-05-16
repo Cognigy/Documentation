@@ -195,6 +195,7 @@ nav:
       - ai/flow-nodes/nlu/regex-slotfiller.md
       - ai/flow-nodes/nlu/match-pattern.md
       - ai/flow-nodes/nlu/fuzzy-search.md
+      - ai/flow-nodes/nlu/clean-text.md
     - Code:
       - ai/flow-nodes/code/code.md
       - ai/flow-nodes/code/actions.md
@@ -305,6 +306,7 @@ nav:
     - ai/tools/agent-handover.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
+    - ai/tools/text-cleaner.md
 # - xApp:
   # - ai/xApp/overview.md
   # - ai/xApp/tokens.md 
