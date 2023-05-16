@@ -30,7 +30,7 @@ To test Agent Assist, follow these steps:
 4. After that, send a message as the user in Webchat.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat.png" width="75%" />
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat.png" width="50%" />
 </figure>
 
 Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand:
@@ -38,11 +38,11 @@ Once the human agent receives this message, the testing behavior will vary depen
 1. The human agent will receive a dropdown menu **Assist**. 
 2. In this menu, the human agent will find the results from the Flow sent via Agent Assist.
        <figure>
-           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="50%" />
        </figure>
 3. The human agent can click the blue arrow to forward content to the user.
       <figure>
-           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="50%" />
       </figure>
 
        <figure>
