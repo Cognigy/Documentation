@@ -10,7 +10,7 @@ In this tutorial, you will learn how to create a basic app using Cognigy. The ap
 
 This tutorial contains two parts:
 
-- [Basic](#form-data-collection--basic). You will create a basic app using xApp Nodes. No credentials are required.
+- [Basic](#form-data-collection--basic). You will create a basic xApp using xApp Nodes. No credentials are required.
 - [Advanced](#form-data-collection--advanced). You will extend the existing Flow through voice channel settings and add an SMS Node. Voice provider credentials are required.
 
 ## Form data collection: Basic
