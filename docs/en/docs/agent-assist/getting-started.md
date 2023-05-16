@@ -25,7 +25,7 @@ Check that you have two Flows: the Main flow and the Agent Assist flow.
 With the Agent Assist Config  API you can configure the position and size of the tiles in your grid. This gives full flexibility to use the Agent Assist Workspace as efficient as possible.​
 
 1. [Get your API Key from your Profile](#get-an-api-key)
-2. [Create your Agent Assist Config](#create-a-request)
+2. [Create your Agent Assist Config](#create-an-agent-assist-config)
 
 ### Get an API Key
 
