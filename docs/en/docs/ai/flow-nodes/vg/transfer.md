@@ -6,7 +6,7 @@
 
 # Transfer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](./../../../release-notes/4.50.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](./../../../release-notes/4.51.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-transfer-node.png" width="100%" />
@@ -40,3 +40,9 @@ The Transfer Node allows you to transfer an ongoing call to a Tel or SIP target.
 | STT Language           | Selector | Select the desired STT Language. For custom languages, use the following format: de-DE, fr-FR, en-US.                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Dial          |
 | Transcription Webhook  | URL      | The Webhook is triggered with an HTTP POST whenever an interim or final transcription is received. Uses the default recognizer.                                                                                                                                                                                                                                                                                                                                                                                                                                   | Dial          |
 | Audio Stream Selection | Selector | Select the source of the audio stream: <br> - **Caller/Called** - both the incoming and outgoing audio streams of the caller and the called party. <br> - **Caller** - the incoming and outgoing audio stream of the caller. <br>- **Called** - the incoming and outgoing audio stream of the called party. <br> <br> Ensure that the selected audio stream matches the language specified for transcription. If no audio stream is provided, the system will use the one set in the beginning, which should also match the language specified for transcription. | Dial          |
+
+## Answering Machine Detection
+
+Answering Machine Detection (AMD) determines whether an outgoing call has been answered by a human or a machine (such as a voicemail or answering machine). When AMD is enabled, events are generated in the flow to indicate the detection result, allowing you to take specific actions based on the outcome.
+
+For example, if a call is transferred to a user and AMD detects a machine, you will receive an event indicating the machine detection.
