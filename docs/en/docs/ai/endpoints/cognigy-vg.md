@@ -21,16 +21,16 @@ Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gatewa
 
 Voice Gateway identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
 
-| Parameter   | Type |Description|Example|
-| ----------- | ------------------------------------ |||
-| headers   | JSON   | The SIP Headers of the call on INVITE, including Custom Headers | See example below |
-| number      | string |The phone number of the caller, including country code|+4921154591991|
-| country     | string |The 2-character country code|DE|
-| countryCallingCode | string |The calling code of the country|49|
-| nationalNumber      | string |The national number without the country code and without a leading zero.|21154591991|
-| valid      | boolean |Whether the number is valid|true|
-| valid      | string |The type of number. See below.|FIXED_LINE|
-| uri      | string |The URI for the number|tel:+4921154591991|
+| Parameter          | Type    | Description                                                              | Example            |
+|--------------------|---------|--------------------------------------------------------------------------|--------------------|
+| headers            | JSON    | The SIP Headers of the call on INVITE, including Custom Headers          | See example below  |
+| number             | string  | The phone number of the caller, including country code                   | +4921154591991     |
+| country            | string  | The 2-character country code                                             | DE                 |
+| countryCallingCode | string  | The calling code of the country                                          | 49                 |
+| nationalNumber     | string  | The national number without the country code and without a leading zero. | 21154591991        |
+| valid              | boolean | Whether the number is valid                                              | true               |
+| valid              | string  | The type of number. See below.                                           | FIXED_LINE         |
+| uri                | string  | The URI for the number                                                   | tel:+4921154591991 |
 
 `numberMetaData.type` can be any of:
 
@@ -63,6 +63,19 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
+
+## Call Events
+
+Allows to activate call events for a Flow.
+
+| Parameter          | Type     | Description                                                                                                                                                                                                                                                                                                                            | 
+|--------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Call Events | Toggle   | Enable or disable the Call Events setting.                                                                                                                                                                                                                                                                                             |
+| Event              | Selector | Select the event that will trigger the action.                                                                                                                                                                                                                                                                                         |
+| Action             | Selector | Choose the action to be performed when the call event is detected: <br> - **Inject into current Flow** - inject the defined text and data payload into the current flow. <br> - **Execute Flow** - trigger a selected flow when the call event is detected. <br> - **None** - no action will be taken when the call event is detected. |
+| Text Payload       | string   | Enter the text that will be sent to your Flow. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                                             |
+| Data Payload       | JSON     | Provide the data that will be sent into your Flow in JSON format. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                          | 
+| Execute Flow       | Selector | Execute the selected Flow. Flow execution will stop afterward. Available only for the **Execute Flow** action.                                                                                                                                                                                                                         |
 
 ## Generic Endpoint Settings
 
