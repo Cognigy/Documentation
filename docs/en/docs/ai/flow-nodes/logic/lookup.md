@@ -99,8 +99,6 @@ In the child LookUp node, you can operate the following Voice Gateway events:
 
 More information about these events you can find in the [Voice Gateway Events](../../../voicegateway/references/events/overview.md) reference.
 
-To activate Voice Gateway events, you need to set up the [Call Events](../../endpoints/cognigy-vg.md#call-meta-data) settings in the Voice Gateway Endpoint.
-
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/call-recording.png" width="100%" />
 </figure>

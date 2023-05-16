@@ -45,4 +45,4 @@ The Transfer Node allows you to transfer an ongoing call to a Tel or SIP target.
 
 Answering Machine Detection (AMD) determines whether an outgoing call has been answered by a human or a machine (such as a voicemail or answering machine). When AMD is enabled, events are generated in the flow to indicate the detection result, allowing you to take specific actions based on the outcome.
 
-For example, if a call is transferred to a user, but AMD detects a machine, you can redirect the call back to the flow and continue the conversation accordingly. With AMD, the transfer would proceed regardless of whether it was successful, and the conversation would continue.
+For example, if a call is transferred to a user and AMD detects a machine, you will receive an event indicating the machine detection.
