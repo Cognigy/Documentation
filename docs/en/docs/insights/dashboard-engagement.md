@@ -5,6 +5,8 @@
 ---
 # Engagement Dashboard
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../release-notes/4.51.md)
+
 The Engagement Dashboard is focused on customer interactions in conversations. Engagement performance of your Agent is visualized in the following charts:
 
 - [Indicators](#indicators) 
@@ -210,34 +212,31 @@ Result:
 
 ## Line charts
 
-### Live Agent Escalations
+### Handovers in Time
 
 Indicates the number of times a human Agent was contacted. Multiple escalations may occur during a session.
 
 Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
 
-
 Source table:
 
-```txt 
-| DateTime  | Handovers per day  |
-| --------- | ------------------ |
-| 1/08/2023	|        0           |
-| 1/09/2023	|        0           |
-| 1/11/2023	|        0           |
-| 1/15/2023	|        0           | 
-| 1/16/2023	|        0           |
-| 1/17/2023	|        0           |
-| 1/18/2023	|        2           |
-| 1/19/2023	|        3           |
-| 1/23/2023	|        0           |
-| 1/24/2023	|        0           |
+```txt
+| DateTime   | Handovers per day |
+|------------|-------------------|
+| 4/11/2023  |         3         |           
+| 4/12/2023  |         0         |            
+| 4/13/2023	 |        24         |           
+| 4/14/2023	 |         8         |             
+| 4/17/2023	 |        17         |        
+| 4/18/2023	 |        12         |       
+| 4/20/2023	 |         5         |         
+| 4/21/2023	 |         5         |        
 ```
 
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/live-agent-escalations.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/handovers-on-time.png" width="100%" />
 </figure>
 
 Clicking on the three dots menu item you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
@@ -263,8 +262,6 @@ Result:
 </figure>
 
 ### Unique Contacts
-
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../release-notes/4.47.md)
 
 A line chart displaying the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 

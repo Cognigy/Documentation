@@ -126,6 +126,10 @@ The following NPM modules are available in the Transformer:
 | moment      |
 | xmljs       |
 
+### Text Cleaner Class
+
+Transformers, like Code Nodes, can use the `getTextCleaner` function to retrieve an instance of the [Text Cleaner](../../tools/text-cleaner.md) class, which exposes functions for cleaning text.
+
 ## Logging
 It is possible to use the exposed modules `console.log`, `console.info` and `console.error` in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
 
