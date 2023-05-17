@@ -169,3 +169,4 @@ Test your Flow via the Interaction Panel.
 
 - [Twilio SMS API](https://www.twilio.com/docs/sms/api#sms-api-authentication)
 - [Tutorial: Creating a Signature with an xApp](create-signature-xApp-tutorial.md)
+- [xApp Nodes](../flow-nodes/xApp/overview.md)

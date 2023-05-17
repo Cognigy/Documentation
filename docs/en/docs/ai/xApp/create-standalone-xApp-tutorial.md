@@ -172,7 +172,7 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
     </html>
     ```
 4. Click **Save Node**. 
-5. Copy the previous Question Node and paste it below the **xApp: Show HTML** Node.   
+5. Copy the previous **Question** Node and paste it below the **xApp: Show HTML** Node.   
 
 Now you can test the result via the Interaction Panel.
 
@@ -248,4 +248,5 @@ To check if the xApp was deployed as expected, copy and paste the Endpoint URL i
 - [Tutorial: Creating a Signature with an xApp](create-signature-xApp-tutorial.md)
 - [Getting Started](getting-started.md)
 - [Overview](overview.md)
+- [xApp Nodes](../flow-nodes/xApp/overview.md)
 
