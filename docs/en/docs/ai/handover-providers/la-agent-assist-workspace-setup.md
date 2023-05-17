@@ -46,4 +46,5 @@ If the testing is successful, the Agent Assist setup is complete.
 
 ## More information 
 
-- [Agent Assist Workspace]()
+- [Agent Assist Workspace Overview](../../agent-assist/overview.md)
+- [Getting started with Agent Assist Workspace](../../agent-assist/getting-started.md)
