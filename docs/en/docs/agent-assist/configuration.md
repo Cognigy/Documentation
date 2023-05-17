@@ -1,7 +1,7 @@
 ---
 title: "Configuration"
 slug: "configuration"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist Workspace Configuration

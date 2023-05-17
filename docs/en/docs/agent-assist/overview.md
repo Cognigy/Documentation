@@ -1,7 +1,7 @@
 ---
 title: "Agent Assist (Beta)"
 slug: "overview"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist Workspace (Beta)

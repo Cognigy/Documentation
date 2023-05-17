@@ -23,17 +23,17 @@ Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records.
 
 <div class="divider"></div>
 
-You can connect to the OData endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/) in the OData URL on your server.
+You can connect to the OData Endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/) in the OData URL on your server.
 
 An OData URL is combined of the service root, api version, the collection and api key parameter as follows:
 
 `https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
 
 !!! note "OData Domain Name"
-    The OData endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
+    The OData Endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
 
 
-For example, on our trial server, the OData endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
 
 !!! note "Excel/Power BI"
     When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication`.
@@ -46,55 +46,35 @@ For example, on our trial server, the OData endpoint URL for the Analytics Input
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
 
-The current version of the OData endpoint is `v2.3`. In this version, the following OData collections are available:
+The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
 
-- [Analytics](#inputs) (`/Analytics`)
-- [Conversations](#chathistory) (`/Conversations`)
+- [Analytics](#analytics) (`/Analytics`)
+- [Conversations](#conversations) (`/Conversations`)
 - [Steps](#steps) (`/Steps`)
 - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
 - [Sessions](#sessions) (`/Sessions`)
 
-The URL for accessing the V2.3 OData endpoint is as follows:
+The URL for accessing the V2.3 OData Endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
-### Version 2.2
-!!! warning "Deprecation of OData v2.2"
-    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.2. This OData endpoint version will be
-    removed in Cognigy.AI `v4.43.0`.
+### Version 2.2 and Earlier
+!!! warning "Deprecation of OData v2.0 - 2.2"
+    OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
-
-- [Inputs](#inputs) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
-- [ChatHistory](#chathistory) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
+- [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+- [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
 - [Steps](#steps) (`/Steps`)
 - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Conversations](#conversations) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
+- [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
-The URL for accessing the V2.2 OData endpoint is as follows:
-`https://<hostname>/v2.2/<collection>?apikey=YOURAPIKEY`
-
-
-### Version 2.0
-!!! warning "Deprecation of OData v2.0"
-    Starting with Cognigy.AI `v4.42.0`, we deprecate the OData endpoint v2.0. This OData endpoint version will be
-    removed in Cognigy.AI `v4.43.0`.
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
-
-- [Inputs](#inputs) (`/Inputs`)
-- [ChatHistory](#chathistory) (`/ChatHistory`)
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Conversations](#conversations) (`/Conversations`)
-
-The URL for accessing the V2.0 OData endpoint is as follows:
-`https://<hostname>/v2.0/<collection>?apikey=YOURAPIKEY`
+The URL for accessing the V2.X OData Endpoint is as follows:
+`https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
 
 ## Querying
 
 <div class="divider"></div>
 
-The endpoint supports following the OData Query Language operators:
+The Endpoint supports following the OData Query Language operators:
 
 - $filter
 - $skip
@@ -103,35 +83,32 @@ The endpoint supports following the OData Query Language operators:
 - $count
 - $select
 
-!!! warning "$count and Excel"
-    Microsoft Excel does not support for the $count query. Use Postman or other options.
+!!! warning "$count and Excel or PowerBI"
+    Microsoft Excel and PowerBI do not support for the $count query. Use Postman or other options.
 
 ## Example Requests
 
-Returns total count of User Input Records.
+=== "OData 2.3"
 
-`https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`
+    | Request Description                                                                                 | OData 2.3 Request                                                                                                                                          |
+    | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Returns total count of Anayltics records (Not Supported in Excel or PowerBI)                        | `https://odata-trial.cognigy.ai/v2.3/Analytics/$count?apikey=YOURAPIKEY`                                                                                   |
+    | Returns all Analytics records for the given APIKey                                                  | `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`                                                                                          |
+    | Returns the first 10 Analytics records                                                              | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$top=10&apikey=YOURAPIKEY`                                                                                 |
+    | Returns the top 5 Analytics records where executionTime is less than 50ms, ordered by executionTime | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`                               |
+    | Returns all Analytics records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
+    | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021        | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY` |
 
-Returns all Records for the given APIKey.
+=== "OData 2.2 and earlier"
 
-`https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
-
-Returns the first 10 records.
-
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY`
-
-Returns the top 5 records where the executionTime is lower than 50ms, ordered by executionTime.
-
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`
-
-Returns all records for a specific Cognigy.AI agent. The Project ID is available in the URL while the agent is open in the Cognigy.AI user interface, for example,`trial.cognigy.ai/agent/PROJECTID/`.
-
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`
-
-Returns all records between two dates, for example, 1st Jan 2021 and 1st July 2021.
-
-`https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY`
-
+    | Request Description                                                                              | OData 2.2 Request                                                                                                                                       |
+    | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Returns total count of Inputs records (Not Supported in Excel or PowerBI)                        | `https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`                                                                                   |
+    | Returns all Inputs records for the given APIKey                                                  | `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`                                                                                          |
+    | Returns the first 10 Inputs records                                                              | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY`                                                                                 |
+    | Returns the top 5 Inputs records where executionTime is less than 50ms, ordered by executionTime | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`                               |
+    | Returns all Inputs records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
+    | Returns all Inputs records between two dates, for example, 1st Jan 2021 and 1st July 2021        | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY` |
 
 ## Reference documentation
 
@@ -155,17 +132,17 @@ Furthermore, you can control analytics logging behavior inside a Flow using [Bli
 
 This section details the data types exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
 
-  * [Inputs](#inputs)
-  * [ChatHistory](#chathistory)
+  * [Analytics](#analytics)
+  * [Conversations](#conversations)
   * [Steps](#steps)
   * [ExecutedSteps](#executedsteps)
   * [Sessions](#sessions)
 
-### Inputs
+### Analytics
 
 **Description**
 
-Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Input record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
+Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Analytics record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
 
 **Example Query**
 
@@ -178,7 +155,7 @@ Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an 
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name         | Description                                                                                | Type     | Example                              |
-|--------------------|--------------------------------------------------------------------------------------------|----------|--------------------------------------|
+| ------------------ | ------------------------------------------------------------------------------------------ | -------- | ------------------------------------ |
 | _id                | Unique analytics record ID                                                                 | String   | 5a91d194fde28b0011ce2423             |
 | organisation       | Name of your organisation                                                                  | String   | cognigy                              |
 | projectId          | Project ID                                                                                 | String   | 5a91d194fde28b0011ce2422             |
@@ -229,11 +206,11 @@ When retrieving this collection, the endpoint will return the following fields:
 !!! warning "Max length of custom fields"
     You can store maximum 500 characters as the value of each of the custom fields
 
-### ChatHistory
+### Conversations
 
 **Description**
 
-The ChatHistory collection offers a log of all session messages, including the end user, bot or human agent responses. Each time one of these sources sends a message to a Cognigy.AI Flow, Cognigy.AI creates a record to log the interaction. Each interaction is exposed in the analytics endpoint as single line item.
+The Conversations collection offers a log of all session messages, including the end user, bot or human agent responses. Each time one of these sources sends a message to a Cognigy.AI Flow, Cognigy.AI creates a record to log the interaction. Each interaction is exposed in the analytics endpoint as single line item.
 
 **Example Query**
 
@@ -246,7 +223,7 @@ The ChatHistory collection offers a log of all session messages, including the e
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name             | Description                                           | Type     | Example                                    |
-|------------------------|-------------------------------------------------------|----------|--------------------------------------------|
+| ---------------------- | ----------------------------------------------------- | -------- | ------------------------------------------ |
 | _id                    | Unique analytics record ID                            | String   | 5a91d194fde28b0011ce2423                   |
 | inputId                | Unique input ID                                       | String   | 5a91d194fde28b0011ce2424                   |
 | sessionId              | Session ID                                            | String   | 5a91d194fde28b0011ce2425                   |
@@ -283,7 +260,7 @@ The Steps collection offers a list of all entities (an entity is a flow node or 
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name        | Description                                                                | Type   | Example                          |
-|-------------------|----------------------------------------------------------------------------|--------|----------------------------------|
+| ----------------- | -------------------------------------------------------------------------- | ------ | -------------------------------- |
 | _id               | Unique analytics record ID                                                 | String | 5a91d194fde28b0011ce2423         |
 | label             | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String | Question (2)                     |
 | type              | Type of entity                                                             | String | `node` or `intent`               |
@@ -295,10 +272,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotName      | Name of the snapshot                                                       | String | Bot Release 2.2                  |
 
 ### ExecutedSteps
-
-!!! note "Available from Cognigy.AI Version 4.2.0"
-    
-
+ 
 **Description**
 
 The ExecutedSteps collection contains a list of all step events that have occurred in sessions. It also includes a reference to the step that occurred prior (parent step). Each time an entity (flow node or intent with an assigned step) is executed, a record is created in this collection. Each executed step is exposed in this analytics endpoint as single line item.
@@ -314,7 +288,7 @@ The ExecutedSteps collection contains a list of all step events that have occurr
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name        | Description                                                                | Type     | Example                          |
-|-------------------|----------------------------------------------------------------------------|----------|----------------------------------|
+| ----------------- | -------------------------------------------------------------------------- | -------- | -------------------------------- |
 | _id               | Unique analytics record ID                                                 | String   | 5a91d194fde28b0011ce2423         |
 | userId            | ID of the connecting user                                                  | String   | myContactID                      |
 | sessionId         | Session ID                                                                 | String   | 5a91d194fde28b0011ce2425         |
@@ -352,7 +326,7 @@ The Sessions collection contains a list of all sessions that have occurred. The 
 When retrieving this collection, the endpoint will return the following fields:
 
 | Field Name          | Description                                      | Type     | Example                                                                        |
-|---------------------|--------------------------------------------------|----------|--------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------ | -------- | ------------------------------------------------------------------------------ |
 | _id                 | Unique analytics record ID                       | String   | 5a91d194fde28b0011ce2423                                                       |
 | goals               | All goals that were achieved in the session      | String   | Goal1, Goal2                                                                   |
 | stepPath            | Comma separated list of steps executed           | String   | 9ac4f679-beae-4461-b9e3-43aece8b3430,f1e72fe3-f04b-48f5-b862-1e35ad253f18, ... |

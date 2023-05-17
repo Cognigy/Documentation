@@ -377,12 +377,29 @@ nav:
       - LA Agent Assist:
         - ai/handover-providers/la-agent-assist-overview.md
         - ai/handover-providers/la-agent-assist-setup.md
+        - ai/handover-providers/la-agent-assist-workspace-setup.md
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
+    - Agent Assist Workspace (Beta):
+        - agent-assist/overview.md
+        - agent-assist/getting-started.md
+        - agent-assist/architecture.md
+        - Installation:
+            - ai/installation/overview.md
+            - ai/installation/browser-requirements.md
+            - ai/installation/prerequisites.md
+        - agent-assist/contact-center-integration.md
+        - agent-assist/configuration.md
+        - agent-assist/embedding.md
+        - Voice Agent Assist:
+           - agent-assist/voice-agent-assist/voice-overview.md
+           - agent-assist/voice-agent-assist/code-node.md
+           - agent-assist/voice-agent-assist/transfer-node.md
+           - agent-assist/voice-agent-assist/webhook-endpoint.md
 
   - ai/generative-ai.md
   - ai/architecture.md
@@ -410,17 +427,7 @@ nav:
     - ai/developer-guides/using-api.md
     - ai/developer-guides/clients.md
   - Release Notes:
-    - ai/release-notes/release-notes.md   
-# - Agent Assist:
-  # - agent-assist/overview.md
-  # - agent-assist/getting-started.md
-  # - agent-assist/contact-center-integration.md
-  # - agent-assist/flow-nodes/configuration.md
-  # - agent-assist/flow-nodes/xApp/embeddings.md
-  # - agent-assist/voice-agent-assist/code-node.md
-  # - agent-assist/voice-agent-assist/transfer-node.md
-  # - agent-assist/voice-agent-assist/voice-overview.md
-  # - agent-assist/voice-agent-assist/webhook-endpoint.md
+    - ai/release-notes/release-notes.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md
