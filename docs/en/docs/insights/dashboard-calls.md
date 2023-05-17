@@ -6,7 +6,7 @@ hidden: false
 
 # Calls (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.51(Beta)-purple.svg)](../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../release-notes/4.51.md)
 
 !!! note
     The Calls dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
