@@ -1,7 +1,7 @@
 ---
 title: "Integration with Contact Centers"
 slug: "contact-center-integration"
-hidden: true
+hidden: false
 ---
 
 # Integration with Contact Centers

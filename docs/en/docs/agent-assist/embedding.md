@@ -1,7 +1,7 @@
 ---
 title: "Embedding"
 slug: "embedding"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist Workspace Embedding

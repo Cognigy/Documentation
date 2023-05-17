@@ -1,7 +1,7 @@
 ---
 title: "Agent Assist for Chat"
 slug: "chat-agent-assist"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist for Chat 

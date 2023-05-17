@@ -4,6 +4,9 @@
  hidden: false 
 ---
 # Lookup
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../../release-notes/4.51.md)
+
 ## Description
 <div class="divider"></div>
 
