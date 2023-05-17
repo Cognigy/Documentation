@@ -195,6 +195,7 @@ nav:
       - ai/flow-nodes/nlu/regex-slotfiller.md
       - ai/flow-nodes/nlu/match-pattern.md
       - ai/flow-nodes/nlu/fuzzy-search.md
+      - ai/flow-nodes/nlu/clean-text.md
     - Code:
       - ai/flow-nodes/code/code.md
       - ai/flow-nodes/code/actions.md
@@ -305,10 +306,16 @@ nav:
     - ai/tools/agent-handover.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
+    - ai/tools/text-cleaner.md
 # - xApp:
-  # - ai/xApp/overview.md 
+  # - ai/xApp/overview.md
   # - ai/xApp/tokens.md 
-  # - ai/xApp/api.md 
+  # - ai/xApp/api.md
+# - Agent Assist:
+  # - ai/agent-assist/overview.md
+  # - ai/agent-assist/set-html-file.md
+  # - ai/agent-assist/set-adaptive-card-tile.md
+  # - ai/agent-assist/set-iframe-tile.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -375,7 +382,7 @@ nav:
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
-    
+
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -403,7 +410,21 @@ nav:
     - ai/developer-guides/clients.md
   - Release Notes:
     - ai/release-notes/release-notes.md   
-
+# - Agent Assist:
+  # - agent-assist/overview.md
+  # - agent-assist/getting-started.md
+  # - agent-assist/contact-center-integration.md
+  # - agent-assist/flow-nodes/configuration.md
+  # - agent-assist/flow-nodes/xApp/embeddings.md
+  # - agent-assist/voice-agent-assist/code-node.md
+  # - agent-assist/voice-agent-assist/transfer-node.md
+  # - agent-assist/voice-agent-assist/voice-overview.md
+  # - agent-assist/voice-agent-assist/webhook-endpoint.md
+  # - agent-assist/architecture.md
+  # - Installation & Configuration:
+  #   - ai/installation/overview.md
+  #   - ai/installation/browser-requirements.md
+  #   - ai/installation/prerequisites.md
 - Insights:
   - Overview:
     - insights/cognigy-insights.md
@@ -414,6 +435,7 @@ nav:
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md
   - insights/dashboard-live-agent.md
+  - insights/dashboard-calls.md
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
