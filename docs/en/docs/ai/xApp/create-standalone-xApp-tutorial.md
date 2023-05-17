@@ -180,7 +180,6 @@ Now you can test the result via the Interaction Panel.
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-standalone-flow.png" width="100%">
 </figure>
 
-
 ## Test the Flow
 
 1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
@@ -188,13 +187,13 @@ Now you can test the result via the Interaction Panel.
    <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-standalone-flow-ip.png" width="100%">
   </figure>
-3. Open the xApp's URL. 
+3. Open the xApp's URL.
 4. Once the page is opened, click **Ok**. The Adaptive Card form will be loaded.
 5. In the **Phone Number** field, specify a mobile number and click **Submit**.
    
-  <figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-standalone-flow-ip-ac.png" width="100%">
-  </figure>
+<figure>
+ <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-standalone-flow-ip-ac.png" width="100%">
+</figure>
 
 If the operation is successful, you will receive the following message: `Thank you for the info. You can now close this tab`.
 
