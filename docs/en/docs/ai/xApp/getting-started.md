@@ -98,14 +98,14 @@ Now you can test your xApp via the Interaction Panel.
 
 ### Test the App via the Interaction Panel
 
-1. Open the Interaction panel and enter a message like "Hi" to trigger the Flow.
-2. In the Interaction panel, check the **Info** tab to locate the xApp's URL in the `input.apps.url` input object or use the virtual agent input from the Interaction Panel.
+1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
+2. In the Interaction Panel, check the **Info** tab to locate the xApp's URL in the `input.apps.url` input object or use the virtual agent input from the Interaction Panel.
    <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/demo-xApp-form.png" width="80%">
    </figure>
 3. Open the URL in a new tab to view the xApp with the adaptive card.
 4. Submit data in the email entry field and observe the behavior, for example, `dan@cognigy.com`. Note that the email validation is basic at this stage.
-5. Check the input result via the Interaction panel.
+5. Check the input result via the Interaction Panel.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-basic-interaction-panel-test.png" width="100%">
@@ -135,7 +135,7 @@ In this part of the tutorial, you will learn how to collect email addresses from
 
 ## Test the Flow with Voice Channel
 
-1. Use the Interaction panel's voice call feature to test the Flow.
+1. Use the Interaction Panel's voice call feature to test the Flow.
 2. Ensure the voice preview settings in the agent's settings are properly configured.
 3. Call the specified voice gateway number from your phone.
 4. Follow the conversation prompts and observe the Flow's behavior.

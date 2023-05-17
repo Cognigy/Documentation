@@ -10,37 +10,37 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 
 ## Prerequisites
 
-- Create an empty Flow.
+- Create an empty [Flow](../resources/build/flows.md).
 
 ## Configure the Flow
 
-#### xApp: Init Session Node
+### xApp: Init Session Node
 
 1. Go to your Flow.
-2. In the Flow Editor, add an **Init xApp Session** Node.
+2. In the Flow Editor, add an **xApp: Init Session** Node.
 3. Open the Node editor and fill in the following fields:
     - In the **Style Customization** section:
         - Background Color - specify `darkslategray`.
         - Logo - select **Show Default Logo**.
     - In the **xApp Screens** section:
-        - Loading Text - specify `Loading...`.
+        - Loading Text - specify `Loading...`
     - In the **Intermediate Screen** section:
         - Customization type - select **Customized Texts** from the list.
-        - Text Override - enter `Thank you for the info. You can now close this tab`
+        - Text Override - enter `Thank you for the info. You can now close this tab`.
     - In the **Connection Screen** section:
         - Customization type - select **No customization**.
 4. Click **Save Node**.
 
 ### Say Node
 
-1. Below the **Init xApp Session** Node, add a **Say** Node.
-2. In the **Options** section, in the Data field, specify:
+1. Below the **xApp: Init Session** Node, add a **Say** Node.
+2. In the **Options** section, in the **Data** field, specify the code:
    ```json
    {
    "xAppUrl": "{{ "{{ input.apps.url }}" }}"
    }
    ```
-    This data-only message is received in the `handleExecutionFinished`  transformer method. The URL is then used to redirect the browser to the xApp shell page
+    This data-only message is received in the `handleExecutionFinished`  transformer method. The URL is then used to redirect the browser to the xApp Shell page.
 3. Click **Save Node**.
 
 ### xApp: Show HTML Node
@@ -76,7 +76,7 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 
 ### xApp: Show Adaptive Card Node
 
-1. Below the Question Node, add xApp: Show Adaptive Card Node
+1. Below the **Question** Node, add the **xApp: Show Adaptive Card** Node.
 2. In the **AdaptiveCard Definition** field, specify the following code:
 
     ```json
@@ -141,7 +141,7 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
         ]
     }
     ```
-3. Click **Save Node**.
+3. Click **Save Node**. 
 4. Copy previous **Question** Node and paste it below the **xApp: Show Adaptive Card** Node.
 
 ### xApp: Show HTML Node
@@ -170,20 +170,21 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
         </body>
     
     </html>
-    ``` 
-4. Click **Save Node**.
-5. Copy the previous Question Node and paste it below **xApp: Show HTML** Node.   
+    ```
+4. Click **Save Node**. 
+5. Copy the previous Question Node and paste it below the **xApp: Show HTML** Node.   
+
+Now you can test the result via the Interaction Panel.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-standalone-flow.png" width="100%">
 </figure>
 
-Now you can test the result via the Interaction Panel.
 
 ## Test the Flow
 
-1. Open the Interaction panel and enter a message like "Hi" to trigger the Flow.
-2. In the Interaction panel, check the **Info** tab to locate the xApp's URL in the `input.apps.url` input object.
+1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
+2. In the Interaction Panel, check the **Info** tab to locate the xApp's URL in the `input.apps.url` input object.
    <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-standalone-flow-ip.png" width="100%">
   </figure>
@@ -199,7 +200,7 @@ If the operation is successful, you will receive the following message: `Thank y
 
 After that, you can deploy your xApp.
 
-### Deploy the xApp
+## Deploy the xApp
 
 1. Go to **Deploy > Endpoints**.
 2. Click **+ New Endpoint**.
@@ -242,4 +243,9 @@ After that, you can deploy your xApp.
 
 To check if the xApp was deployed as expected, copy and paste the Endpoint URL into your browser's address bar and test your Flow again.
 
+## More information
+
+- [Tutorial: Creating a Signature with an xApp](create-signature-xApp-tutorial.md)
+- [Getting Started](getting-started.md)
+- [Overview](overview.md)
 

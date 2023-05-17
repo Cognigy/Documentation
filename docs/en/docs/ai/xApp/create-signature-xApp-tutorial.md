@@ -67,5 +67,5 @@ Now you can deploy your virtual agent via any of supported channels, such as Web
 ## More Information
 
 - [Getting Started](getting-started.md)
-- [](create-standalone-xApp-tutorial.md)
+- [Tutorial: Create a Standalone xApp](create-standalone-xApp-tutorial.md)
 - [Overview](overview.md)
