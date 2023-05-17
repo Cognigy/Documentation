@@ -14,15 +14,12 @@
 With Agent Assist, among other things, the following can be achieved:
 
 - Provide contextual information for the Agent (CRM records, ERP data, small talk clues, etc.)
-
 - Allow quick access to resources such as knowledge base articles
-
 - Suggest replies (including media) which can be forwarded to the customer
 
 Using Cognigy.AI, you can customize Agent Assist to be as powerful as you need it to be.
 
-## Ready to Set up Agent Assist?
-<div class="divider"></div>
-To setup your Project for Agent Assist, visit our documentation here: 
+To set up your Project for Agent Assist, please choose the installation that best suits your requirements:
 
-- [**Agent Assist Setup**]({{config.site_url}}ai/handover-providers/la-agent-assist-setup/)
+- [Agent Assist](la-agent-assist-setup.md). Refers to the feature or functionality that provides assistance to live agents during their interactions with customers. It typically includes real-time guidance, suggestions, and recommendations to help agents effectively handle customer inquiries or issues. Agent Assist Live Agent focuses on providing support directly from the conversation window.
+- [Agent Assist Workspace](la-agent-assist-workspace-setup.md). Refers to the dedicated workspace or environment where human agents access various tools, resources, and features to assist them in their customer interactions. It encompasses the entire workspace setup, which may include customer information, knowledge bases, collaboration tools, and other relevant components. Agent Assist Workspace aims to provide a comprehensive and efficient working environment for human agents to manage their interactions with customers.

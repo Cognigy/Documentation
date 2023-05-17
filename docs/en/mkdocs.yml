@@ -375,6 +375,7 @@ nav:
       - LA Agent Assist:
         - ai/handover-providers/la-agent-assist-overview.md
         - ai/handover-providers/la-agent-assist-setup.md
+        - ai/handover-providers/la-agent-assist-workspace-setup.md
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
