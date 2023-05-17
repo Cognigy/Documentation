@@ -99,7 +99,7 @@ The Endpoint supports following the OData Query Language operators:
     | Returns all Analytics records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
     | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021        | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY` |
 
-=== "Odata 2.2 and earlier"
+=== "OData 2.2 and earlier"
 
     | Request Description                                                                              | OData 2.2 Request                                                                                                                                       |
     | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
