@@ -386,6 +386,7 @@ nav:
     - ai/xApp/supported-browsers-and-channels.md
     - ai/xApp/tokens.md
     - ai/xApp/api.md
+    - ai/xApp/create-standalone-xApp-tutorial.md
     - ai/xApp/create-signature-xApp-tutorial.md
   - ai/generative-ai.md
   - ai/architecture.md
