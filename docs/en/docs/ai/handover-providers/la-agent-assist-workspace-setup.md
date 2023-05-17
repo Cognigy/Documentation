@@ -39,7 +39,7 @@ Once the human agent receives this message, the testing behavior will vary depen
 This Workspace is accessible from the right side of the conversation chat.
       
 <figure>
- <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/agent-assist-la.png" width="100%" />
+ <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/agent-assist-la.png" width="90%" />
 </figure>
 
 If the testing is successful, the Agent Assist setup is complete.
