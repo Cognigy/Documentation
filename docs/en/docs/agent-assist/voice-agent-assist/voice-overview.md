@@ -1,7 +1,7 @@
 ---
 title: "Agent Assist for Voice"
 slug: "voice-agent-assist"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist for Voice

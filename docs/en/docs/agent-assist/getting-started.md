@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 slug: "getting-started"
-hidden: true
+hidden: false
 ---
 
 # Getting started with the Agent Assist Workspace
