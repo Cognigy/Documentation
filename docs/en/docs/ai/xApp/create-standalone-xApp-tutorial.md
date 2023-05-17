@@ -20,15 +20,15 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 2. In the Flow Editor, add an **xApp: Init Session** Node.
 3. Open the Node editor and fill in the following fields:
     - In the **Style Customization** section:
-        - Background Color - specify `darkslategray`.
-        - Logo - select **Show Default Logo**.
+        - Background Color — specify `darkslategray`.
+        - Logo — select **Show Default Logo**.
     - In the **xApp Screens** section:
-        - Loading Text - specify `Loading...`
+        - Loading Text — specify `Loading...`
     - In the **Intermediate Screen** section:
-        - Customization type - select **Customized Texts** from the list.
-        - Text Override - enter `Thank you for the info. You can now close this tab`.
+        - Customization type — select **Customized Texts** from the list.
+        - Text Override — enter `Thank you for the info. You can now close this tab`.
     - In the **Connection Screen** section:
-        - Customization type - select **No customization**.
+        - Customization type — select **No customization**.
 4. Click **Save Node**.
 
 ### Say Node
