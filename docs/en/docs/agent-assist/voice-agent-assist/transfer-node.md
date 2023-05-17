@@ -1,7 +1,7 @@
 ---
-title: "Agent Assist for Voice"
+title: "Agent Assist for Voice: Transfer Node"
 slug: "voice-agent-assist-transfer-node"
-hidden: true
+hidden: false
 ---
 
 #  Agent Assist for Voice: Transfer Node

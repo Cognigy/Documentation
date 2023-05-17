@@ -1,7 +1,7 @@
 ---
-title: "Agent Assist for Voice"
+title: "Agent Assist for Voice: Code Node"
 slug: "voice-agent-assist-code-node"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist for Voice: Code Node 

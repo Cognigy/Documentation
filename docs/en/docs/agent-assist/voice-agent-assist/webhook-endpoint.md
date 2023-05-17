@@ -1,7 +1,7 @@
 ---
-title: "Agent Assist for Voice"
+title: "Agent Assist for Voice: Webhook Endpoint"
 slug: "voice-agent-assist-webhook-endpoint"
-hidden: true
+hidden: false
 ---
 
 # Agent Assist for Voice: Webhook Endpoint 
