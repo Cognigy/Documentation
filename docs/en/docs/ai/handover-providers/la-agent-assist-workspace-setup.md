@@ -21,7 +21,7 @@ To configure your Endpoint:
 
 The Endpoint setup is completed.
 
-## Test Agent Assist
+## Test Agent Assist Workspace
 
 To test Agent Assist, follow these steps:
 
@@ -44,3 +44,6 @@ This Workspace is accessible from the right side of the conversation chat.
 
 If the testing is successful, the Agent Assist setup is complete.
 
+## More information 
+
+- [Agent Assist Workspace]()
