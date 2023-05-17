@@ -306,6 +306,7 @@ nav:
     - ai/tools/agent-handover.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
+    - ai/tools/text-cleaner.md
 # - Agent Assist:
   # - ai/agent-assist/overview.md
   # - ai/agent-assist/set-html-file.md
@@ -378,7 +379,6 @@ nav:
     - ai/handover-providers/user-inactivity-detection.md
 
   - xApp (Beta):
-    - ai/xApp/xApp.md
     - ai/xApp/overview.md
     - ai/xApp/use-cases.md
     - ai/xApp/getting-started.md
