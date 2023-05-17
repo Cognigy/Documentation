@@ -5,6 +5,8 @@
 ---
 # Cognigy Voice Gateway
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../release-notes/4.51.md)
+
 ## Overview
 
 <figure>
