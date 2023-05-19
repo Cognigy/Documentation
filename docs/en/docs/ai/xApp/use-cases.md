@@ -8,7 +8,7 @@ hidden: true
 
 The xApps can be used in two different ways:
 
-- [As a multichannel solution](#2nd-screen)
+- [As a multichannel solution](#multichannel)
 - [As a standalone solution](#standalone)
 
 ## Multichannel
@@ -46,15 +46,15 @@ Users can securely verify their identity and gain access to specific services or
     <figcaption>Authentication via Credentials</figcaption>
 </figure>
 
-### Pick a seat online for a film session
+### Select a flight seat
 
-With xApps, you can provide an interface for users to select their preferred seat for a film session.
+With xApps, you can offer users an interface to choose their preferred seat for their flight.
 
-Users can view the available seats and choose the desired one, enhancing their movie-going experience.
+Users can view the available seats and select the seat of their choice, enhancing their travel experience.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/select-seat.png" width="50%">
-    <figcaption>Pick a seat online</figcaption>
+    <figcaption>Select a flight seat</figcaption>
 </figure>
 
 ### Share location 
