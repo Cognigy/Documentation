@@ -71,7 +71,7 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
 10. Click **Add button**. Fill in the following fields:
     - **Button Title** — enter **Open xApp**.
     - **Selection Button Type** — select **URL** from the list.
-    - **URL** — click the AI icon and select the **xApp Session URL** Token.
+    - **URL** — click ![token](../../assets/icons/token.svg) and select the **xApp Session URL** Token.
     - **URL Target** — select **Open URL in a new tab**.
 11. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the **Reprompt Options** section and paste the following reprompt message:
     
@@ -111,7 +111,7 @@ Now you can test your xApp via the Interaction Panel.
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-basic-interaction-panel-test.png" width="100%">
 </figure>
 
-##  Form data collection: Advanced
+## Form data collection: Advanced
 
 In this part of the tutorial, you will learn how to collect email addresses from users via a voice channel and implement SMS functionality to send a link to the xApp via SMS.
 
@@ -120,6 +120,7 @@ In this part of the tutorial, you will learn how to collect email addresses from
 - Access to a [voice provider](../../ai/tools/voice-preview.md), for example, Microsoft Azure Speech Services.
 - [Twilio API Key](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys).
 - Twilio Extension preinstalled from [Cognigy Marketplace](../../ai/resources/manage/extensions.md).
+- [Voice Gateway Endpoint](../endpoints/cognigy-vg.md) configured in Cognigy.
 
 ### Configure Voice Channel Support
 
@@ -132,17 +133,6 @@ In this part of the tutorial, you will learn how to collect email addresses from
 4. Below the **Say** Node, add a **Hang Up** Node at the end of the Flow to terminate the conversation after email confirmation.
 5. In the **Reason for hang up** field, specify `Bot ended the call`.
 6. Click **Save Node**.
-
-## Test the Flow with Voice Channel
-
-1. Use the Interaction Panel's voice call feature to test the Flow.
-2. Ensure the voice preview settings in the agent's settings are properly configured.
-3. Call the specified voice gateway number from your phone.
-4. Follow the conversation prompts and observe the Flow's behavior.
-
-Note that the voice fallback text will be used instead of buttons.
-
-The conversation should progress only when the user enters data through the xApp.
 
 ### Implement SMS Functionality
 
@@ -164,6 +154,16 @@ Test your Flow via the Interaction Panel.
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-advanced-tutorial.png" width="100%">
 </figure>
+
+## Test the Flow with Voice Channel
+
+1. Use the Interaction Panel's voice call feature to test the Flow. Ensure the voice preview settings in the agent's settings are properly configured.
+2. Call the specified voice gateway number from your phone.
+3. Follow the conversation prompts and observe the Flow's behavior.
+
+Note that the voice fallback text will be used instead of buttons.
+
+The conversation should progress only when the user enters data through the xApp.
 
 ## More Information
 
