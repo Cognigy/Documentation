@@ -101,7 +101,3 @@ In the child LookUp node, you can operate the following Voice Gateway events:
 - Answering Machine Detection
 
 More information about these events you can find in the [Voice Gateway Events](../../../voicegateway/references/events/overview.md) reference.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/call-recording.png" width="100%" />
-</figure>

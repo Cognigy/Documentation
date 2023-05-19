@@ -8,7 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../release-notes/4.51.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/a315c2a-matchPattern.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/clean-text" width="80%" />
 </figure>
 
 ## Description
