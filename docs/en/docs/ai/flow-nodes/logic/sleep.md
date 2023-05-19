@@ -6,7 +6,7 @@
 # Sleep
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/389c0c5-logic-sleep.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/sleep.png" width="100%" />
 </figure>
 
 ## Description

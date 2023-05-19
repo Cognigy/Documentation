@@ -6,7 +6,7 @@
 # Remove From Context
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/828a434-removeFromContext.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/remove-from-context.png" width="100%" />
 </figure>
 
 ## Description

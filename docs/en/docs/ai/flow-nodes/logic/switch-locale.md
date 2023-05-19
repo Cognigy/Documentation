@@ -5,6 +5,10 @@
 ---
 # Switch Locale
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/switch-locale.png" width="100%" />
+</figure>
+
 ## Description
 <div class="divider"></div>
 

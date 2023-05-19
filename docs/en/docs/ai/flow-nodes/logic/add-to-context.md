@@ -6,7 +6,7 @@
 # Add To Context
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8ad9cd9-addToContext.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/add-to-context.png" width="100%" />
 </figure>
 
 ## Description

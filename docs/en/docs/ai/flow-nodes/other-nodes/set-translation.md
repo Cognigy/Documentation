@@ -5,6 +5,10 @@
 ---
 # Set Translation
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-translation.png" width="100%" />
+</figure>
+
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 ## Description
@@ -14,22 +18,8 @@ This Node adds the ability to override the realtime translation settings for the
 
 Currently, we support AI Default output translation as well as Adaptive Cards translation.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3e47a2f-Set_Translation.svg" width="100%" />
-  <figcaption>Node selection menu</figcaption>
-</figure>
+## Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3f04af8-Set_Translation_Node_1.svg" width="100%" />
-  <figcaption>Set Translation"-Node in a Flow</figcaption>
-</figure>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9401abe-Set_Translation_Node_2.svg" width="100%" />
-  <figcaption>"Set Translation"-Node configuration</figcaption>
-</figure>
-
-## Options
 The configuration options and their functions are listed below:
 
 | Parameter                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |

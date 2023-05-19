@@ -7,6 +7,10 @@
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../../release-notes/4.51.md)
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup.png" width="100%" />
+</figure>
+
 ## Description
 <div class="divider"></div>
 

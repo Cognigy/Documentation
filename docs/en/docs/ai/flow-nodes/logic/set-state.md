@@ -6,7 +6,7 @@
 # Set State
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/df2d703-resetState.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic-set-state.png" width="100%" />
 </figure>
 
 ## Description

@@ -6,7 +6,7 @@
 # Interval
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/99371f7-IntervalNode.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/99371f7-IntervalNode.PNG" width="80%" />
 </figure>
 
 ## Description
