@@ -1,7 +1,7 @@
 ---
  title: "xApp: Init Session" 
  slug: "Init-xApp-Session" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApp: Init Session

@@ -1,7 +1,7 @@
 ---
  title: "xApps" 
  slug: "overview" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApp Flow Nodes (Beta)

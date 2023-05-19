@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 slug: "getting-started"
-hidden: true
+hidden: false
 ---
 
 # Getting started with xApps
@@ -168,5 +168,5 @@ The conversation should progress only when the user enters data through the xApp
 ## More Information
 
 - [Twilio SMS API](https://www.twilio.com/docs/sms/api#sms-api-authentication)
-- [Tutorial: Creating a Signature with an xApp](create-signature-xApp-tutorial.md)
+- [xApp Tutorials](tutorials.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)

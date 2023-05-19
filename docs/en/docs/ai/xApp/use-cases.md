@@ -1,10 +1,10 @@
 ---
 title: "Use Cases"
-slug: "Use Cases"
-hidden: true
+slug: "use-cases"
+hidden: false
 ---
 
-# Use Cases
+# xApp Use Cases
 
 The xApps can be used in two different ways:
 
@@ -29,7 +29,7 @@ Enable Agent Assist to suggest xApps to human agents. These xApps can be shared 
 
 You can use an xApp as a standalone application. The xApp can be built to address specific tasks or processes that don't require a conversation. These xApps can be accessed via a URL, allowing users to interact with them directly without the need for another communication channel.
 
-To learn how it works, follow [Tutorial: Create a Standalone xApp](create-standalone-xApp-tutorial.md).
+To learn how it works, follow [Tutorial: Create a Standalone xApp](https://support.cognigy.com/hc/en-us/articles/8867141515676).
 
 ## Examples
 
@@ -105,7 +105,7 @@ Users can sign documents or forms electronically, eliminating the need for physi
 
 - [Overview](overview.md)
 - [Getting Started](getting-started.md)
-- [Tutorial: Creating a Signature with an xApp](create-signature-xApp-tutorial.md)
+- [Tutorial: Creating a Signature with an xApp](https://support.cognigy.com/hc/en-us/articles/8868026263708)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)

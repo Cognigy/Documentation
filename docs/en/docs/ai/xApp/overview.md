@@ -1,7 +1,7 @@
 ---
  title: "Overview" 
  slug: "overview" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApps Overview (Beta)
@@ -91,3 +91,4 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)
 - [xApp Flow API](api.md)
+- [xApp Tutorials](tutorials.md)

@@ -1,7 +1,7 @@
 ---
 title: "Supported Browsers and Channels"
 slug: "supported-browsers-and-channels"
-hidden: true
+hidden: false
 ---
 
 # Supported Browsers and Channels
@@ -40,3 +40,8 @@ The following channels are supported by xApps:
 
 
 [^*]: For this channel, Async Mode needs to be activated in the Endpoint settings.
+
+## More information
+
+- [Overview](overview.md)
+- [xApp Architecture](architecture.md)

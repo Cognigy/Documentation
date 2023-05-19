@@ -77,3 +77,10 @@ deactivate f
 18. The xApp backend processes `input.data._cognigy._app.payload` and sends it to Cognigy Flow as input.
 19. The Cognigy Flow processes `input.data`. 
 20. The Cognigy Flow sends a message "Received your data from xApp" to the user confirming the data has been received.
+
+
+## More information
+
+- [Overview](overview.md)
+- [xApp Nodes](../flow-nodes/xApp/overview.md)
+- [xApp Tutorials](tutorials.md)

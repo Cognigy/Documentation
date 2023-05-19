@@ -1,7 +1,7 @@
 ---
  title: "xApp Tokens" 
  slug: "xApp-Tokens" 
- hidden: true
+ hidden: false
 ---
 
 # xApp Tokens

@@ -1,7 +1,7 @@
 ---
  title: "xApp: Show Adaptive Card" 
  slug: "Set-AdaptiveCard-xApp-State" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApp: Show Adaptive Card
