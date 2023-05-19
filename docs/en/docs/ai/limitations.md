@@ -93,5 +93,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | Maximum time Intent Trainer records are stored in the database                           | 30 days       |       |     |
 | **Audit Events**                                                                         |               |       |     |
 | Maximum time until audit events will be removed                                          | 30 days       |       |     |
+| **xApp Session**                                                                         |               |       |     |
+| Maximum time until an xApp Session will be expired                                       | 30 days       |       |     |
 
  

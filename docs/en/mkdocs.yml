@@ -238,17 +238,17 @@ nav:
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
         - ai/flow-nodes/audiocodes/agent-assist.md
-  # - xApp:
-    # - ai/flow-nodes/xApp/overview.md
-    # - ai/flow-nodes/xApp/init-xApp-session.md
-    # - ai/flow-nodes/xApp/get-xApp-session-PIN.md 
-    # - ai/flow-nodes/xApp/set-html-xApp-state.md
-    # - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
+    - xApp:
+      - ai/flow-nodes/xApp/overview.md
+      - ai/flow-nodes/xApp/init-xApp-session.md
+      - ai/flow-nodes/xApp/get-xApp-session-PIN.md
+      - ai/flow-nodes/xApp/set-html-xApp-state.md
+      - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md
     - Other Nodes:
       - ai/flow-nodes/other-nodes/other-nodes.md
       - ai/flow-nodes/other-nodes/log-message.md
@@ -314,10 +314,6 @@ nav:
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
     - ai/tools/text-cleaner.md
-# - xApp:
-  # - ai/xApp/overview.md
-  # - ai/xApp/tokens.md 
-  # - ai/xApp/api.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -401,6 +397,16 @@ nav:
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
+
+  - xApp (Beta):
+      - ai/xApp/overview.md
+      - ai/xApp/use-cases.md
+      - ai/xApp/getting-started.md
+      - ai/xApp/architecture.md
+      - ai/xApp/supported-browsers-and-channels.md
+      - ai/xApp/tokens.md
+      - ai/xApp/api.md
+      - ai/xApp/tutorials.md
   - ai/generative-ai.md
   - ai/architecture.md
   

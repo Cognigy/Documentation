@@ -66,6 +66,30 @@ The server time zone settings determine the start of a new day and, as a result,
 
 Contact your administrator if you want to change this time zone setting.
 
+## xApps
+
+The billable unit, the conversation, will be influenced if xApps are used. This is because an xApp session is a part of a Cognigy session.
+
+The xApp submit data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
+
+Cognigy reserves the right to change the billing of xApps in the future.
+
+### Scenario 1
+
+During an xApp session, only the xApp submit data payload messages sent by the user are billed. 
+
+Example: A user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). This scenario involves 3 user inputs.
+
+Billing: It will be charged as 1 conversation. 
+
+### Scenario 2
+
+Apart from the xApp nodes, a Flow may contain nodes that start and complete the main session. In this case, the xApp submit data payload messages and other user inputs from the main session are counted as part of the same session and conversation.
+
+Example: A user initiates a chat with a bot and sends 2 messages. This action triggers an xApp session. During the xApp session, the user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). After the xApp session is completed, the bot offers another option, and the user sends 2 more messages. This scenario involves 7 user inputs.
+
+Billing: It will be charged as 1 conversation.
+
 ## Additional billing 
 
 If you are using the following Endpoint [Transformers](../ai/endpoints/transformers/transformers.md):
