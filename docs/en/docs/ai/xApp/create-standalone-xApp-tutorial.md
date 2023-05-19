@@ -67,12 +67,7 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
     ```
 4. Click **Save Node**.
 
-### Question Node
 
-1. Below the **xApp: Show HTML** Node, add a **Question** Node. 
-2. In the **Question** type, select **xApp** to get only the xApp inputs.
-3. In the **Reprompt Options** setting, enter `Please use the xApp to continue`.
-4. Click **Save Node**.
 
 ### xApp: Show Adaptive Card Node
 
@@ -141,12 +136,12 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
         ]
     }
     ```
-3. Click **Save Node**. 
-4. Copy previous **Question** Node and paste it below the **xApp: Show Adaptive Card** Node.
+3. Under **Waiting Behavior**, select **Wait for xApp User Input**.
+4. Click **Save Node**.
 
 ### xApp: Show HTML Node
 
-1. Below the second **Question** Node, add an **xApp: Show HTML** Node.
+1. Below, add an **xApp: Show HTML** Node.
 2. In the **Content** field, select **Full HTML Document**.
 3. In the **HTML Document** field, specify the following code:
 
@@ -171,8 +166,8 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
     
     </html>
     ```
-4. Click **Save Node**. 
-5. Copy the previous **Question** Node and paste it below the **xApp: Show HTML** Node.   
+4. Under **Waiting Behavior**, select **Wait for xApp User Input**.
+5. Click **Save Node**. 
 
 Now you can test the result via the Interaction Panel.
 

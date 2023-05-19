@@ -6,7 +6,7 @@ hidden: true
 
 # Getting started with xApps
 
-In this tutorial, you will learn how to create a basic XApp using Cognigy. The xApp will collect email addresses from users via a voice channel and display an Adaptive Card for data entry. We will also implement SMS functionality to send a link to the xApp via text message. 
+In this tutorial, you will learn how to create a basic xApp using Cognigy. The xApp will collect email addresses from users via a voice channel and display an Adaptive Card for data entry. We will also implement SMS functionality to send a link to the xApp via text message. 
 
 This tutorial contains two parts:
 
@@ -15,13 +15,13 @@ This tutorial contains two parts:
 
 ## Form data collection: Basic
 
-In this part of the tutorial, you will learn how to build and test an xApp from scratch and display an Adaptive Card for email entry. However, displaying the Adaptive Card directly in Webchat would be simpler. We suggest moving on to the [Advanced part](#form-data-collection--advanced) of the tutorial. The main benefit of the Advanced part is in the voice scenario, where collecting form data, such as email addresses, via voice can be challenging.
+In this part of the tutorial, you will learn how to build and test an xApp from scratch and display an Adaptive Card for email entry.
 
 ### Configure a Basic xApp Flow
 
 1. Create a new Flow in Cognigy and name it **Basic App Tutorial**.
 2. In the Flow editor, add an **xApp: Init Session** Node to initialize the xApp session.
-3. Below the **xApp: Init Session** Node, add an **xApp: Show Adaptive Card** Node.
+3. Below the **xApp: Init Session** Node, add an **xApp: Show Adaptive Card** Node to update the initialized xApp session with a new Adaptive Card-based xApp page.
 4. In the **AdaptiveCard Definition** field, paste the following JSON:
 
       ```json
@@ -59,7 +59,7 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
       ```
    
 5. Click **Save Node**. 
-6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node.
+6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node to ask the user via the primary channel to provide data via the xApp and then wait for the submit input of the xApp before continuing further Flow execution.
 7. Set the **Question** type to **xApp** to ensure only data from the xApp will be accepted as a valid answer. 
 8. Select the **Text with Buttons** output type to display a button with the xApp URL. 
 9. Configure the prompt message to instruct users to enter their email using the xApp. In the **Text** field, paste the following text:
@@ -69,9 +69,9 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
     ```
    
 10. Click **Add button**. Fill in the following fields:
-    - **Button Tile** — enter **Open xApp**.
+    - **Button Title** — enter **Open xApp**.
     - **Selection Button Type** — select **URL** from the list.
-    - **URL** — select **xApp Session URL**.
+    - **URL** — click the AI icon and select the **xApp Session URL** Token.
     - **URL Target** — select **Open URL in a new tab**.
 11. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the **Reprompt Options** section and paste the following reprompt message:
     
@@ -99,11 +99,11 @@ Now you can test your xApp via the Interaction Panel.
 ### Test the App via the Interaction Panel
 
 1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
-2. In the Interaction Panel, check the **Info** tab to locate the xApp's URL in the `input.apps.url` input object or use the virtual agent input from the Interaction Panel.
+2. In the Interaction Panel, click "Open xApp" to access the xApp session. By the way, you can also check the **Info** tab to see the xApp's URL in the `input.apps.url` input object.
    <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/demo-xApp-form.png" width="80%">
    </figure>
-3. Open the URL in a new tab to view the xApp with the adaptive card.
+3. Open the URL in a new tab to view the xApp with the Adaptive Card.
 4. Submit data in the email entry field and observe the behavior, for example, `dan@cognigy.com`. Note that the email validation is basic at this stage.
 5. Check the input result via the Interaction Panel.
 

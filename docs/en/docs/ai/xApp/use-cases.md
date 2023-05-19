@@ -33,7 +33,7 @@ To learn how it works, follow [Tutorial: Create a Standalone xApp](create-standa
 
 ## Examples
 
-The examples illustrate specific use cases where an xApp can provide convenient and efficient solutions, enhancing user experiences and improving process workflows.
+xApps are infinitely flexible. Below examples illustrate some specific use cases where an xApp can provide convenient and efficient solutions, enhancing user experiences and improving process workflows. 
 
 ### Authentication via Credentials
 

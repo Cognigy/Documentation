@@ -34,7 +34,7 @@ In this tutorial, you will learn how to build a simple xApp that allows users to
 ## Build the xApp
 
 1. Open a new Flow.
-2. In the Flow editor, add an **xApp: Init Session** Node. The agent session needs to be initialized to communicate with the Cognitive backend.
+2. In the Flow editor, add an **xApp: Init Session** Node. The agent session needs to be initialized to communicate with the Cognigy backend.
    The **xApp: Init Session** Node is used to start the session, which provides the token and the xApp URL in the `agent.session` object.
 3. Below **xApp: Init Session** Node, add an **xApp: Show HTML** Node. Copy the code from Code Sandbox and paste it to the **HTML Document** field with selected **Full HTML Document** content.
 4. Click **Save Node**.
@@ -62,7 +62,7 @@ Once the node is added, you should always start with the Init Session node. Afte
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/tutorial-signature.png" width="100%">
 </figure>
 
-Now you can deploy your virtual agent via any of supported channels, such as Webchat Widget.
+Now you can deploy your virtual agent via any of the supported channels, such as Webchat Widget.
 
 ## More Information
 
