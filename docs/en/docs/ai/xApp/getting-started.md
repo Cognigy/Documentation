@@ -155,7 +155,7 @@ Test your Flow via the Interaction Panel.
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/getting-started-advanced-tutorial.png" width="100%">
 </figure>
 
-## Test the Flow with Voice Channel
+## Test the Flow with a Voice Channel
 
 1. Use the Interaction Panel's voice call feature to test the Flow. Ensure the voice preview settings in the agent's settings are properly configured.
 2. Call the specified voice gateway number from your phone.
