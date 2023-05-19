@@ -238,6 +238,11 @@ nav:
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
         - ai/flow-nodes/audiocodes/agent-assist.md
+    - Agent Assist:
+        - ai/flow-nodes/agent-assist/overview.md
+        - ai/flow-nodes/agent-assist/set-html-file.md
+        - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
+        - ai/flow-nodes/agent-assist/set-iframe-tile.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -309,11 +314,6 @@ nav:
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
     - ai/tools/text-cleaner.md
-# - Agent Assist:
-  # - ai/agent-assist/overview.md
-  # - ai/agent-assist/set-html-file.md
-  # - ai/agent-assist/set-adaptive-card-tile.md
-  # - ai/agent-assist/set-iframe-tile.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -380,33 +380,34 @@ nav:
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
-    - Agent Assist Workspace (Beta):
-        - agent-assist/overview.md
-        - agent-assist/getting-started.md
-        - agent-assist/architecture.md
-        - Installation:
-            - ai/installation/overview.md
-            - ai/installation/browser-requirements.md
-            - ai/installation/prerequisites.md
-        - agent-assist/contact-center-integration.md
-        - agent-assist/configuration.md
-        - agent-assist/embedding.md
-        - Voice Agent Assist:
-           - agent-assist/voice-agent-assist/voice-overview.md
-           - agent-assist/voice-agent-assist/code-node.md
-           - agent-assist/voice-agent-assist/transfer-node.md
-           - agent-assist/voice-agent-assist/webhook-endpoint.md
+
+  - Agent Assist (Beta):
+      - agent-assist/overview.md
+      - agent-assist/getting-started.md
+      - agent-assist/architecture.md
+      - Installation:
+          - ai/installation/overview.md
+          - ai/installation/browser-requirements.md
+          - ai/installation/prerequisites.md
+      - agent-assist/contact-center-integration.md
+      - agent-assist/configuration.md
+      - agent-assist/embedding.md
+      - Voice Agent Assist:
+          - agent-assist/voice-agent-assist/voice-overview.md
+          - agent-assist/voice-agent-assist/code-node.md
+          - agent-assist/voice-agent-assist/transfer-node.md
+          - agent-assist/voice-agent-assist/webhook-endpoint.md
 
   - xApp (Beta):
-    - ai/xApp/overview.md
-    - ai/xApp/use-cases.md
-    - ai/xApp/getting-started.md
-    - ai/xApp/architecture.md
-    - ai/xApp/supported-browsers-and-channels.md
-    - ai/xApp/tokens.md
-    - ai/xApp/api.md
-    - ai/xApp/create-standalone-xApp-tutorial.md
-    - ai/xApp/create-signature-xApp-tutorial.md
+      - ai/xApp/overview.md
+      - ai/xApp/use-cases.md
+      - ai/xApp/getting-started.md
+      - ai/xApp/architecture.md
+      - ai/xApp/supported-browsers-and-channels.md
+      - ai/xApp/tokens.md
+      - ai/xApp/api.md
+      - ai/xApp/create-standalone-xApp-tutorial.md
+      - ai/xApp/create-signature-xApp-tutorial.md
   - ai/generative-ai.md
   - ai/architecture.md
   
