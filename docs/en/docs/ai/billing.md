@@ -13,7 +13,6 @@ The billed conversation begins when a user sends their initial *input*, which ca
 The conversation will be ended for any of the following reasons:
 
 - The user left a chat.
-- The human agent resolved a conversation.
 - The conversation has more than 50 user inputs.
   The 51st input will begin a new conversation.
 - The conversation begins on one day and ends on another.
