@@ -10,21 +10,24 @@
 </figure>
 
 ## Description
-The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/).
 
-You can define patters which will be searched for in the input text or the alternate text which was provided. If a pattern is found, a matchedPatterns group will be created in the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/).
+The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object](../../tools/interaction-panel/input.md).
+
+You can define patterns that will be searched for in the input text or the alternate text that was provided. If a pattern is found, a matchedPatterns group will be created in the [Input Object](../../tools/interaction-panel/input.md).
 
 ## Patterns
+
 Patterns can be any text and can contain references to slots by using the `@` symbol. 
 
 Example: `@color @product`
 
-A text like `I need a green shirt` would find the compound slot group and assign color = green and product = shirt
+A text like `I need a green shirt` would find the compound slot group and assign `color = green` and `product = shirt`.
 
 ### Tags
+
 Slots can be tagged in a pattern to be easier identifiable later.
 
-Example: `from @city>origin to @city>destination`
+Example: `from @city>origin to @city>destination`.
 
 A text like `I want to go from Düsseldorf to Tokyo` would find a matched pattern group with origin and destination set.
 
@@ -46,6 +49,7 @@ Text: `I want to fly from bErlin to NEW York with 3 or 4 people on October 1st 2
 Pattern: `from @city>origin to @city>destination with @NUMBER>ppl1 or @NUMBER>ppl2 people @DATE>date if its @TEMPERATURE>celsius degrees and I am @AGE>userage years old @PERCENTAGE>perc`
 
 Result:
+
 ```JSON
 "matchedPatterns": {
         "group": [
