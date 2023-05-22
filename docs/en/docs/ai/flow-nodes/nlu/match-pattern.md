@@ -33,14 +33,14 @@ A text like `I want to go from Düsseldorf to Tokyo` would find a matched patter
 
 ## Parameters
 
-| Parameter               | Type        | Description                                                       |
-|-------------------------|-------------|-------------------------------------------------------------------|
-| Patterns                | TextArray   | The patterns to apply to the text                                 |
-| Pattern Group Name      | CognigyText | The name of the pattern match group                               |
-| Create New Slots        | Boolean     | Whether to create new slots from tags or not                      |
-| Tag Existing Slots      | Boolean     | Whether to tag existing slots or not                              |
-| Detailed Compound Slots | Boolean     | Whether to store detailed results for the matched patterns or not |
-| Alternate Input         | CognigyText | The input text to use instead of the current input text           |
+| Parameter               | Type        | Description                                                                          |
+|-------------------------|-------------|--------------------------------------------------------------------------------------|
+| Patterns                | TextArray   | The patterns to be applied to the text.                                              |
+| Pattern Group Name      | CognigyText | The name of the pattern matching group.                                              |
+| Create New Slots        | Boolean     | Indicates whether new slots should be created from tags or not.                      |
+| Tag Existing Slots      | Boolean     | Indicates whether existing slots should be tagged or not.                            |
+| Detailed Compound Slots | Boolean     | Indicates whether detailed results for the matched patterns should be stored or not. |
+| Alternate Input         | CognigyText | The input text to be used instead of the current input text.                         |
 
 ## Example
 
