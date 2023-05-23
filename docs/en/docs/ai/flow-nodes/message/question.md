@@ -5,7 +5,7 @@
 ---
 # Question
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac25291-question-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question.png" width="80%" />
 </figure>
 
 ## Description

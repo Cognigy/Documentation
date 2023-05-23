@@ -5,7 +5,11 @@
 ---
 # Message
 
-Message Nodes are used to generate output that is sent back to the user.
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/a7b0641-messageNodes.jpg" width="100%" />
-</figure>
+Message Nodes are used to generate output that is sent back to the user:
+
+- [Say](say.md)
+- [Question](question.md)
+- [Optional Question](optional-question.md)
+- [Send SMTP Email](send-smtp-email.md)
+- [Email Notification](send-email-notification.md)
+- [Send Text](send-text.md)

@@ -6,7 +6,7 @@
 # Send Text
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/5dee907-send-text.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/5dee907-send-text.jpg" width="80%" />
 </figure>
 
 ## Description
