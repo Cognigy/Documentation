@@ -23,7 +23,6 @@ The functions are available in the following entities:
 
 ## Functions
 
-
 | Function Name             | Description                                                                                                                                                                                                               |
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | cleanDisallowedSymbols    | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                                                           |

@@ -386,9 +386,10 @@ nav:
       - agent-assist/getting-started.md
       - agent-assist/architecture.md
       - Installation:
-          - ai/installation/overview.md
-          - ai/installation/browser-requirements.md
-          - ai/installation/prerequisites.md
+          - agent-assist/installation/overview.md
+          - agent-assist/installation/browser-requirements.md
+          - agent-assist/installation/prerequisites.md
+          - agent-assist/installation/installation-process.md
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md
@@ -455,7 +456,8 @@ nav:
 
 - Webchat Widget:
   - Overview:
-    - ai/endpoints/webchat/webchat.md  
+    - ai/endpoints/webchat/webchat.md
+  - ai/endpoints/webchat/supported-browsers.md
   - ai/endpoints/webchat/deploy-webchat-endpoint.md
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
