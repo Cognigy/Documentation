@@ -11,16 +11,16 @@ Flow Nodes can be used to add interactivity to a Flow. When combined in a certai
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-Head over to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) section for information on adding more types of **Nodes**.
+Head over to the [Extensions](../resources/manage/extensions.md) section for information on adding more types of **Nodes**.
 
-| Node Categories                                                                      |
-|--------------------------------------------------------------------------------------|
-| [Basic Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#basic-nodes)     |
-| [Message Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#message-nodes) |
-| [Logic Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#logic-nodes)     |
-| [Profile Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#profile-nodes) |
-| [Service Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#service-nodes) |
-| [NLU Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#nlu-nodes)         |
+| Node Categories                 |
+|---------------------------------|
+| [Basic Nodes](#basic-nodes)     |
+| [Message Nodes](#message-nodes) |
+| [Logic Nodes](#logic-nodes)     |
+| [Profile Nodes](#profile-nodes) |
+| [Service Nodes](#service-nodes) |
+| [NLU Nodes](#nlu-nodes)         |
 
 ## Basic Nodes
 <div class="divider"></div>
@@ -37,11 +37,11 @@ This is the most basic output Node that can be used to send a message to the use
 
 ### [Question](./message/question.md)
 
-The **Question Node** can be used to ask the user a question. When triggered, the Entry Point will shift to this Node so that the conversation can continue when the user answers - and a new [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object is generated. By default, the [**Entry Point**]({{config.site_url}}ai/resources/build/flows/#entry-points) will stick to this Node until a valid answer has found.
+The Question Node can be used to ask the user a question. When triggered, the Entry Point will shift to this Node so that the conversation can continue when the user answers - and a new [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object is generated. By default, the [**Entry Point**]({{config.site_url}}ai/resources/build/flows/#entry-points) will stick to this Node until a valid answer has found.
 
 ### [Optional Question](./message/optional-question.md)
 
-The **Optional Question Node** works similar to the **Question Node**, except for the fact that the Entry Point is optional by default. 
+The Optional Question Node works similar to the Question Node, except for the fact that the Entry Point is optional by default. 
 
 ### [Send SMTP Email](./message/send-smtp-email.md)
 
@@ -66,20 +66,19 @@ The If Node is one of the most common Logic Nodes. It can be used to evaluate a 
 The Lookup Node acts as a switch between different options. A certain type of input (for example, Intents) is evaluated and based on the value, a certain branch is executed.
 
 !!! note "Coming from Cognigy version 3.x?"
-    The **Lookup Node** was previously known as the **Switch Node**.
+    The Lookup Node was previously known as the **Switch Node**.
 
 ### [Go To](./logic/go-to.md)
 
-The **Go To Node** can be used to jump between **Flows** or between **Nodes**. If the Go To Node is used to switch to another Flow, the **Entry Point** will switch to that Flow altogether (until switched back).
-
+The Go To Node can be used to jump between Flows or between Nodes. If the Go To Node is used to switch to another Flow, the **Entry Point** will switch to that Flow altogether (until switched back).
 
 ### [Execute Flow](./logic/execute-flow.md)
 
-The **Execute Flow** Node can be used to execute another Flow, meaning that it will run that Flow and return to the initial Flow afterwards. This means that the *Entry Point* will not switch to the new Flow. This operation can be compared to a function call. 
+The Execute Flow Node can be used to execute another Flow, meaning that it will run that Flow and return to the initial Flow afterwards. This means that the *Entry Point* will not switch to the new Flow. This operation can be compared to a function call. 
 
 ### [Think](./logic/think.md)
 
-The **Think Node** can be used to deliberately inject a text into the **Start Node** of the Flow. This is useful in case it is necessary to start the Flow again, with a specific payload. The payload could, for example, correspond to a certain Intent.
+The Think Node can be used to deliberately inject a text into the **Start Node** of the Flow. This is useful in case it is necessary to start the Flow again, with a specific payload. The payload could, for example, correspond to a certain Intent.
 
 ### [Once](./logic/once.md)
 
@@ -103,50 +102,48 @@ The Sleep Node pauses execution for a number of milliseconds. This Node used to 
 
 ### [Set State](./logic/set-state.md)
 
-With the Set State Node, the Flow's [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) can be changed.
-
+With the Set State Node, the Flow's [State](../tools/interaction-panel/state.md) can be changed.
 
 ### [Reset State](./logic/reset-state.md)
 
-With the Reset State Node, the Flow's [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) can be reset.
-
+With the Reset State Node, the Flow's [State](../tools/interaction-panel/state.md) can be reset.
 
 ## [Profile Nodes](./profile/profile.md)
 <div class="divider"></div>
 
-Profile Nodes are used to update  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) information. Common operations are:
+Profile Nodes are used to update [Contact Profile](../resources/manage/contact-profiles.md) information. Common operations are:
 
 ### [Activate Profile](./profile/activate-profile.md)
 
-This Node can be used to activate a  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/)  in case it has been deactivated. The Node is not configurable. 
+This Node can be used to activate a [Contact Profile](../resources/manage/contact-profiles.md) in case it has been deactivated. The Node is not configurable. 
 
 ### [Deactivate Profile](./profile/deactivate-profile.md)
 
-Can be used to deactivate the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/).
+Can be used to deactivate the [Contact Profile](../resources/manage/contact-profiles.md).
 
 ### [Update Profile](./profile/update-profile.md)
 
-This Node is commonly used, as it helps update [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) information. It is configurable with a drop-down of all the [**Contact Profile Schema**]({{config.site_url}}ai/resources/manage/contact-profiles/) attributes.  
+This Node is commonly used, as it helps update [Contact Profile](../resources/manage/contact-profiles.md) information. It is configurable with a drop-down of all the [**Contact Profile Schema**]({{config.site_url}}ai/resources/manage/contact-profiles/) attributes.  
 
 ### [Merge Profile](./profile/merge-profile.md)
 
-This Node can be used to merge the current session to an existing  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) . The Node can be configured with an identifier that can be used as a user id.
+This Node can be used to merge the current session to an existing [Contact Profile](../resources/manage/contact-profiles.md). The Node can be configured with an identifier that can be used as a user id.
 
 ### [Blind Mode](./profile/blind-mode.md)
 
 The Blind Mode disables all (or selected) logging. The Node can be used whenever the Virtual Agent handles sensitive data, that should be excluded from the logs.
 
-  * **Mask Login:** Outputs XXXX in the output logs of the Agent.
-  * **Mask Analytics:** Outputs XXXX in the analytics (including Contact Profile conversations).
-  * **Disable Conversations:** Disabled output analytics altogether.
+* Mask Login: Outputs XXXX in the output logs of the Agent.
+* Mask Analytics: Outputs XXXX in the analytics (including Contact Profile conversations).
+* Disable Conversations: Disabled output analytics altogether.
 
 ### [Delete Profile](./profile/delete-profile.md)
 
-Deletes the currently active  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/).
+Deletes the currently active [Contact Profile](../resources/manage/contact-profiles.md).
 
 ### [Complete Goal](./profile/complete-goal.md)
 
-Can be used to add a custom Goal to the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/). Custom Goals are KPIs that can be dynamically configured and that show up in the output analytics as well as the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) overview.
+Can be used to add a custom Goal to the [Contact Profile](../resources/manage/contact-profiles.md). Custom Goals are KPIs that can be dynamically configured and that show up in the output analytics as well as the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) overview.
 
 ## [Service Nodes](./services/services.md)
 <div class="divider"></div>
@@ -155,7 +152,7 @@ Service Nodes can be used to trigger external services, like databases and email
 
 ### [HTTP Request](./services/http-request.md)
 
-The **HTTP Request Node** is a very convenient Node that can execute HTTP requests to other interfaces (APIs). It can be configured with typical REST operations (GET, POST, PATCH, PUT, DELETE) and has configurable JSON or Text payloads.
+The HTTP Request Node is a very convenient Node that can execute HTTP requests to other interfaces (APIs). It can be configured with typical REST operations (GET, POST, PATCH, PUT, DELETE) and has configurable JSON or Text payloads.
 
 Each request method has some field which it shares with the other methods. These are the fields:
 
