@@ -6,7 +6,7 @@ hidden: false
 # Send SMTP Email
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8e3d3aa-Send_SMTP_Email.PNG" width="50%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/messages/send-smtp-email.png" width="80%" />
 </figure>
 
 ## Description

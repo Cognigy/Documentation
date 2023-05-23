@@ -6,7 +6,7 @@
 # Optional Question
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/optional-question" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/optional-question.png" width="80%" />
 </figure>
 
 ## Description
