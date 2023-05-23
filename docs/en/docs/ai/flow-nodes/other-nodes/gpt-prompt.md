@@ -23,7 +23,7 @@ To get the result of the GPT Prompt Node input, follow these steps:
 
 1. In the Flow editor, add a Say Node below the GPT Prompt Node.
 2. In the **Output Type** field, select **Text**.
-3. In the **Text** field, specify `"{"{ input.generativeAi }"}"`.
+3. In the **Text** field, specify `{{ " {{ input.generativeAi }}" }}`.
 4. Click **Save Node**.
 
 ## Settings
