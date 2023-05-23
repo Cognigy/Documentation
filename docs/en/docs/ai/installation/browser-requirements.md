@@ -14,7 +14,7 @@ The Cognigy.AI User Interface is compatible with the browsers listed below:
 - Microsoft Edge (83 + 18)
 - Safari (12.1)
 
-For security reasons, we don't support older versions of the listed web browsers.
+For security reasons, older versions of the listed web browsers are not supported by Cognigy.
 
 ## Troubleshooting
 
