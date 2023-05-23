@@ -4,9 +4,9 @@
  hidden: false 
 ---
 
-### Browser Requirements
+# Browser Requirements
 
-The Agent Assist web frontend  is compatible with most modern web browsers. The table below provides a list of supported web browsers.
+The Agent Assist web frontend is compatible with most modern web browsers. The table below provides a list of supported web browsers.
 
 | Browser         | Version       |
 |-----------------|---------------|
