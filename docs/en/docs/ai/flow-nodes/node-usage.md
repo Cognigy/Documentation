@@ -4,47 +4,56 @@
  hidden: false 
 ---
 # General Node Usage
-## Creating a Node
-<div class="divider"></div>
-Flow Nodes can be used to add interactivity to a Flow. When combined in a certain way, they can help create dynamic interactive conversations. There are many types of Nodes, ranging from Basic to Advanced. 
 
-Nodes can be created by clicking on the + icon in a [**Flow**]({{config.site_url}}ai/resources/build/flows/), after which the Node selection menu appears.
+Flow Nodes can be used to add interactivity to a Flow. When combined in a certain way, they can help create dynamic interactive conversations. There are many types of Nodes, ranging from Basic to Advanced.
+
+## Create a Node
+<div class="divider"></div>
+
+Nodes can be created by clicking on the + icon in a [Flow](../resources/build/flows.md), after which the Node selection menu appears.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-Switch to the [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/) tab to install Nodes from Extensions or click the Extension button in the corner to install new Extensions from the [**Extension Marketplace**]({{config.site_url}}ai/resources/manage/extensions/#extension-marketplace).
+Switch to the [Extensions](../resources/manage/extensions.md) tab to install Nodes from Extensions or click the Extension button in the corner to install new Extensions from the [Extension Marketplace](../resources/manage/extensions.md#extension-marketplace).
 
-A Node can be copied by right-clicking it and pasted by right-clicking on a **+** section in the [**Flow**]({{config.site_url}}ai/resources/build/flows/). 
+A Node can be copied by right-clicking it and pasted by right-clicking on a **+** section in the [Flow](../resources/build/flows.md). 
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c032451-node-copy-paste.jpg" width="100%" />
 </figure>
 
-## Removing a Node
+## Remove a Node
 <div class="divider"></div>
 
-To remove a Node you can either delete or cut it. If you choose to cut the Node, you can paste it at the location of your choice (see "Paste a Node" below). If you delete it, it is gone but can be restored by reverting the change. Removing a Node also removes all of its child Nodes.
+To remove a Node, you can either delete or cut it. If you choose to cut the Node, you can paste it at the location of your choice. If you delete it, it is gone but can be restored by reverting the change. Removing a Node also removes all of its child Nodes.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9fdb2b4-node-cut.jpg" width="100%" />
 </figure>
 
 !!! note "Flow Editor Hotkeys"
     For a full list of flow editor keyboard shortcuts, see the [Hotkeys Page]({{config.site_url}}ai/tools/hotkeys/).
+
 ## Copy a Node
 <div class="divider"></div>
 
 You can copy a Node with the corresponding menu option. This also copies all child Nodes (e.g. all the Case and Default Nodes and their children, if you copy a Lookup Node).
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c032451-node-copy-paste.jpg" width="100%" />
 </figure>
 
 !!! note "Drag & Drop"
     The flow editor supports drag and drop within the flow editor. To copy a node, simply hold the **alt** key while dropping the node to the required location.
+
 ## Add Comment
 
 <div class="divider"></div>
 
 You can add additional information about Nodes in the Node Comment. To add a comment, open a Node by clicking on it and scroll down to the **Styling** section. Here you can add a comment.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e710f5e-styling.jpg" width="100%" />
 </figure>
@@ -54,6 +63,7 @@ You can add additional information about Nodes in the Node Comment. To add a com
 <div class="divider"></div>
 
 Adding a Label replaces the bottom text line of a Node. This allows you to have a Node functionality summary that is directly visible in the Flow editor. You can change the Label by opening a Node and scrolling down to the **Styling** section.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e710f5e-styling.jpg" width="100%" />
 </figure>
