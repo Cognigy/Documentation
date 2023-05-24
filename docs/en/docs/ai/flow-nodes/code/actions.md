@@ -51,20 +51,6 @@ Sets the timezone offset from UTC.
 #### Returns
 void
 
-### actions.setForwardDatesOnly || api.setForwardDatesOnly
----
-Sets the NLU Parser to only detect dates in the future for DATE slots.
-
-**Note: This setting will take effect on the next input only**
-
-#### Parameters
-| Parameter | Type      | Description                                        |
-|-----------|-----------|----------------------------------------------------|
-| **value** | *boolean* | Whether to only detect future dates for DATE slots |
-
-#### Returns
-void
-
 ### actions.log || api.log
 ---
 Writes a message to the project logs.

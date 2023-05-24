@@ -19,7 +19,7 @@ The GPT Prompt Node allows using Generative AI for creating relevant content. To
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
-To get the result of the GPT Prompt Node input, follow these steps:
+To display the output of the GPT Prompt Node to the user, follow these steps:
 
 1. In the Flow editor, add a Say Node below the GPT Prompt Node.
 2. In the **Output Type** field, select **Text**.
