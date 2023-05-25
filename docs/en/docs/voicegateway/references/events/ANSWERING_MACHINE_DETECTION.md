@@ -11,15 +11,20 @@ The call was initiated and the Answering Machine Detection (AMD) process started
 To test a payload with this Node:
 
 1. Create a Flow.
-2. Add a Transfer Node. 
-3. In the Dial type of the Transfer Node, activate the **Answering Machine Detection** setting.
+2. Add a **Transfer** Node. 
+3. In the **Dial** type of the **Transfer** Node, activate the **Answering Machine Detection** setting.
 4. Click **Save Node**.
-5. Below the Transfer Node, add a Lookup Node.
-6. In the Lookup Node, select the **Call Event Status** type.
-7. In the child Lookup Node, select **Answering Machine Detection** call event status.
+5. Below the **Transfer** Node, add a **Lookup** Node.
+6. In the **Lookup** Node, select the **Call Event Status** type.
+7. In the **Lookup** child Node, select **Answering Machine Detection** call event status.
 8. Click **Save Node**.
 
-When the user receives the `amd_machine_detection` event, the flow will continue seamlessly even after the transfer and the audio will be audible.
+When the user receives the `ANSWERING_MACHINE_DETECTION` event, the Flow will seamlessly continue:
+
+- If a machine is detected, the call can be routed to a pre-recorded message with self-service options. 
+- If a human agent is detected, the call will proceed as usual, ensuring personalized assistance.
+
+Payload:
 
 ```json
 {
@@ -56,3 +61,8 @@ When the user receives the `amd_machine_detection` event, the flow will continue
   }
 }
 ```
+
+
+
+
+
