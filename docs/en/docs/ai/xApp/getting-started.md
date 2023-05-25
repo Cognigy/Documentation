@@ -59,7 +59,7 @@ In this part of the tutorial, you will learn how to build and test an xApp from 
       ```
    
 5. Click **Save Node**. 
-6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node to ask the user via the primary channel to provide data via the xApp and then wait for the submit input of the xApp before continuing further Flow execution.
+6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node. This Node will be used to prompt the user, via the primary channel, to provide data through the xApp. It will then wait for the xApp's submit input before proceeding with further Flow execution.
 7. Set the **Question** type to **xApp** to ensure only data from the xApp will be accepted as a valid answer. 
 8. Select the **Text with Buttons** output type to display a button with the xApp URL. 
 9. Configure the prompt message to instruct users to enter their email using the xApp. In the **Text** field, paste the following text:
