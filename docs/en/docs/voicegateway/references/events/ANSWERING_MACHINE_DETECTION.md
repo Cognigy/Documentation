@@ -16,7 +16,7 @@ To test a payload with this Node:
 4. Click **Save Node**.
 5. Below the **Transfer** Node, add a **Lookup** Node.
 6. In the **Lookup** Node, select the **Call Event Status** type.
-7. In the **Lookup** child Node, select **Answering Machine Detection** call event status.
+7. In the **Lookup** child Node, select the **Answering Machine Detection** call event status.
 8. Click **Save Node**.
 
 When the user receives the `ANSWERING_MACHINE_DETECTION` event, the Flow will seamlessly continue:
