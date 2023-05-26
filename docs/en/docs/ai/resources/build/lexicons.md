@@ -11,8 +11,7 @@
   <img class="image-center" src="{{config.site_url}}ai/resources/images/c95b04b-lexicon-small.jpg" width="100%" />
 </figure>
 
-!!! note "Want to learn how to use a Lexicon?"
-    Have a look at the [**Match user expressions with a Lexicon**](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) guide in the Help Center. 
+To learn more about use cases for Lexicons, read [Match user expressions with a Lexicon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) Help Center article. 
 
 ## Manage Keyphrases
 <div class="divider"></div>
