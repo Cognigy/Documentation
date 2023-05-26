@@ -16,20 +16,20 @@ If the endpoint does not support the selected output type, the system returns a 
 |------------------------|------|-------------------------|---------|-------------------|------|-------|-------|-------|---------------|
 | Webchat                | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
 | VoiceGateway           | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
-| WhatsApp               | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
-| 8x8                    | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
+| WhatsApp               | +    | +                       | +       | +                 | +    | +     | +     | +     | -             |
+| 8x8                    | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3           |
 | Alexa                  | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
 | Avaya CPaaS            | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
-| Facebook Messenger     | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
-| Azure Bot Services     | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
-| Google Actions         | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
+| Facebook Messenger     | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0           |
+| Azure Bot Services     | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0           |
+| Google Actions         | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0           |
 | Line                   | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
-| Microsoft Teams        | +    | -                       | +       | +                 | +    | +     | +     | +     | +             |
+| Microsoft Teams        | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.0           |
 | RingCentral Engage     | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
-| Slack                  | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
-| Sunshine Conversations | +    | +                       | +       | +                 | +    | +     | +     | +     | +             |
+| Slack                  | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0           |
+| Sunshine Conversations | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0           |
 | Twilio                 | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
 | Twilio Autopilot       | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
 | Twilio SMS             | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
-| Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | -             |
+| Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0           |
 | AudioCodes             | +    | -                       | -       | -                 | -    | -     | -     | -     | -             |
