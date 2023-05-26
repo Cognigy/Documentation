@@ -13,6 +13,12 @@
 
 To learn more about use cases for Lexicons, read [Match user expressions with a Lexicon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) Help Center article. 
 
+## Restrictions
+
+- Maximum of 1 Keyphrase and 199 synonyms per entry (row).
+- Maximum of 250 Slots per Lexicon.
+- Maximum of 100K entries per Lexicon.
+
 ## Manage Keyphrases
 <div class="divider"></div>
 
@@ -59,11 +65,9 @@ Lexicons libraries can be uploaded and downloaded in CSV format.
 
 ### CSV File Requirements
 
-#### Restrictions
+#### Encoding
 
-- To upload the file, make sure your CSV file is UTF-8 encoded.
-- The maximum number of Slots per file is 250.
-- The maximum number of Keyphrases per file is 200.
+To upload the file, make sure your CSV file is UTF-8 encoded.
 
 #### Format
 
@@ -89,9 +93,9 @@ To upload Lexicons, follow these steps:
 2. Open the existing Lexicon.
 3. In the upper-right corner of the Lexicon Editor page, click ![upload](../../../assets/icons/upload.svg).
 4. In the **Import Lexicon CSV file** window, select one of the following options:
-    - **Skip importing duplicate Keyphrases** — the option skips importing any synonyms from the CSV file that already exist in the current lexicon. If there are duplicate synonyms in the CSV file, they will be ignored during the import process. Only new and unique synonyms will be imported.
-    - **Overwrite the current Keyphrases** — the option replaces all the current keyphrases in the lexicon with the keyphrases from the CSV file. If there are any existing keyphrases in the lexicon, they will be completely overwritten, and only the keyphrases from the CSV file will be retained.
-    - **Merge Tags & Synonyms from the current and imported Keyphrases** — the option allows merging the synonyms of keyphrases from both the current lexicon and the CSV file. Only unique synonyms will be merged. If a synonym exists in both the current lexicon and the CSV file, this synonym will not be merged.
+    - **Skip importing duplicate Keyphrases** — the option skips importing any Synonyms from the CSV file that already exist in the current Lexicon. If there are duplicate Synonyms in the CSV file, they will be ignored during the import process. Only new and unique Synonyms will be imported.
+    - **Overwrite the current Keyphrases** — the option replaces all the current Keyphrases in the lexicon with the Keyphrases from the CSV file. If there are any existing keyphrases in the Lexicon, they will be completely overwritten, and only the Keyphrases from the CSV file will be retained.
+    - **Merge Tags & Synonyms from the current and imported Keyphrases** — the option allows merging the Synonyms of Keyphrases from both the current Lexicon and the CSV file. Only unique Synonyms will be merged. If a Synonym exists in both the current Lexicon and the CSV file, this Synonym will not be merged.
 5. Click **Choose CSV file**.
 
 To track uploading process, you can view the **Import Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
