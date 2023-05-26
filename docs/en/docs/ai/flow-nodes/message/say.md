@@ -204,7 +204,7 @@ The Adaptive Card Type allows you to configure an adaptive card output. Adaptive
 To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
 
 !!! warning
-    Cognigy.AI only supports Adaptive Card schema versions 1.2 and earlier, so using the latest versions may cause issues. We recommend using a supported version for better compatibility.
+    Cognigy supports the limited number of versions for Adaptive Card, so using the latest versions may cause issues. We recommend using [supported versions](../../endpoints/content-conversion.md) for better compatibility.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
