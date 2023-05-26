@@ -31,7 +31,7 @@ To add a new Keyphrase, go to the ``Enter new keyphrase`` input field, type the 
 ### Edit Keyphrases
 To edit a Keyphrase, just click on the name of the Keyphrase, and an input field will appear. To add Tags/Synonyms, just click in the respective text field, type the Tag/Synonym name and hit enter. 
 
-###Keyphrase Data Payloads
+### Add Keyphrase Data 
 You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click on the ``expand`` arrow on the right of the Keyphrase entry, and then type in the desired data in JSON format.
 
 <figure>
@@ -90,9 +90,9 @@ To upload Lexicons, follow these steps:
 2. Open the existing Lexicon.
 3. In the upper-right corner of the Lexicon Editor page, click ![upload](../../../assets/icons/upload.svg).
 4. In the **Import Lexicon CSV file** window, select one of the following options:
-    - **Skip importing duplicate Keyphrases** - the option skips importing any synonyms from the CSV file that already exist in the current lexicon. If there are duplicate synonyms in the CSV file, they will be ignored during the import process. Only new and unique synonyms will be imported.
-    - **Overwrite the current Keyphrases** - the option replaces all the current keyphrases in the lexicon with the keyphrases from the CSV file. If there are any existing keyphrases in the lexicon, they will be completely overwritten, and only the keyphrases from the CSV file will be retained.
-    - **Merge Tags & Synonyms from the current and imported Keyphrases** - the option allows merging the synonyms of keyphrases from both the current lexicon and the CSV file. Only unique synonyms will be merged. If a synonym exists in both the current lexicon and the CSV file, this synonym will not be merged.
+    - **Skip importing duplicate Keyphrases** — the option skips importing any synonyms from the CSV file that already exist in the current lexicon. If there are duplicate synonyms in the CSV file, they will be ignored during the import process. Only new and unique synonyms will be imported.
+    - **Overwrite the current Keyphrases** — the option replaces all the current keyphrases in the lexicon with the keyphrases from the CSV file. If there are any existing keyphrases in the lexicon, they will be completely overwritten, and only the keyphrases from the CSV file will be retained.
+    - **Merge Tags & Synonyms from the current and imported Keyphrases** — the option allows merging the synonyms of keyphrases from both the current lexicon and the CSV file. Only unique synonyms will be merged. If a synonym exists in both the current lexicon and the CSV file, this synonym will not be merged.
 5. Click **Choose CSV file**.
 
 To track uploading process, you can view the **Import Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
@@ -104,7 +104,7 @@ To download Lexicons, follow these steps:
 1. Go to **Build > Lexicons**.
 2. Open the existing Lexicon.
 3. In the upper-right corner of the Lexicon Editor page, click ![download](../../../assets/icons/download.svg). Waiting for when the CSV file will be generated for downloading. To track this process, you can view the **Export Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
-4. When the task is completed, click ![cloud](../../../assets/icons/cloud.svg) In the upper-right corner of the Lexicon Editor page.
+4. When the task is completed, click ![cloud](../../../assets/icons/cloud.svg) in the upper-right corner of the Lexicon Editor page.
 
 The file will be downloaded.
 
