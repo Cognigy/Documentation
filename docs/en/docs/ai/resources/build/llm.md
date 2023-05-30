@@ -14,6 +14,50 @@ LLMs make conversations more engaging by generating relevant and contextually ap
 
 ## Supported Models
 
+In the table below, there are LLMs supported by Cognigy.
+
+| Models/Capabilities        | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node | Generate Node Output | Knowledge Search |
+|----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|----------------------|------------------|
+| **Microsoft Azure OpenAI** |                            |                     |                    |                 |                       |                 |                      |                  |
+| gpt-3.5-turbo (ChatGPT)    | +                          | +                   | +                  | +               | -                     | +               | -                    | -                |
+| text-davinci-003           | +                          | +                   | +                  | 🗸              | 🗸                    | 🗸              | 🗸                   | -                |
+| text-embedding-ada-002     | -                          | -                   | -                  | -               | -                     | -               | -                    | 🗸               |
+| **Open AI**                |                            |                     |                    |                 |                       |                 |                      |                  |
+| gpt-3.5-turbo (ChatGPT)    | 🗸                         | 🗸                  | 🗸                 | 🗸              || 🗸                    | -               |
+| text-davinci-003           | 🗸                         | 🗸                  | 🗸                 | 🗸              | 🗸                    | 🗸              | 🗸                   | -                |
+| text-embedding-ada-002     | -                          | -                   | -                  | -               | -                     | -               | -                    | 🗸               |
+| **Anthropic**              |                            |                     |                    |                 |                       |                 |                      |                  |
+| claude-v1-100k             | -                          | -                   | -                  | -               | -                     | 🗸              | -                    | -                |
+| claude-instant-v1          | -                          | -                   | -                  | -               | -                     | 🗸              | -                    | -                |
+
+[x]
+
+
+## Add a model
+
+1. Go to Build > LLM.
+2. Click +New Model
+3. In the **LLM Editor** window, go to the **Generative AI Connection** field.
+4. On the right side of the field, click **+**.
+5. In the New Connection window, fill in the following fields:
+    
+    - Connection name -
+    - apiKey -
+    - resourceName -
+    - deploymentName - 
+    - apiVersion - 
+6. Click **Create**.
+7. To apply changes, click **Save**.
+
+When the model is added, you will see it in the list of models.
+
+
+
+
+
+
+
+
 
 ## Add a Large Language Model
 
