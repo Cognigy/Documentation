@@ -35,14 +35,22 @@ Before using this feature, you need to create an account in one of the Generativ
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
-- [Anthropic Claude](https://console.anthropic.com/docs).
-
+- [Anthropic Claude](https://console.anthropic.com/docs). You need be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
 
 ## Set up Generative AI
 
 To set up the connection between Cognigy.AI and the Generative AI Provider, do the following:
 
+- [Add a model](#add-a-model)
+- [Apply the model](#apply-the-model)
 
+### Add a Model
+
+{! _includes/ai/generative-ai/credentials.md !}
+
+### Apply the Model
+
+{! _includes/ai/generative-ai/apply-model.md !}
 
 You can check if the connection works by creating a new generative AI Flow.
 
@@ -77,9 +85,9 @@ To use Generative AI technology for creating a new Flow with pre-configured Node
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
 2. Click **+ New Flow**.
 3. In the **New Flow** window, go to the **Flow Generation** section and select one of the options:
-    - None - the Generative AI will not be applied to this Flow. This setting is activated by default.
-    - Name and Description - the Generative AI will use the Name and Description fields for generating Flow.
-    - Name and Transcript - the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
+    - **None** — the Generative AI will not be applied to this Flow. This setting is activated by default.
+    - **Name and Description** — the Generative AI will use the Name and Description fields for generating Flow.
+    - **Name and Transcript** — the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
 4. Generate the Flow by clicking **Create**.
 
 In the existing Flow, you can edit Nodes created based on your scenario. Generate new Intent sentences or responses for a chatbot.
@@ -121,9 +129,9 @@ To use AI-enhanced bot output rephrasing, do the following:
 2. Add one of the Nodes: Say, Question, or Optional Question.
 3. Go to the AI-enhanced output section.
 4. In the Rephrase Output setting, select one of the options:
-    - None - the Generative AI will not be applied to this Node. This setting is activated by default.
-    - Based on Custom Input - specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
-    - Based on previous user inputs - set the last `x` user Inputs considered.
+    - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
+    - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
+    - **Based on previous user inputs** — set the last `x` user Inputs considered.
 5. Set the score in the Temperature setting. The temperature range determines the extent of variation in Generative AI's response.
 6. Click **Save Node**.
 
@@ -159,4 +167,5 @@ The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) featur
 - [Flow Nodes](../ai/flow-nodes/flow-nodes-overview.md)
 - [Intents](../ai/nlu/nlu-overview/overview.md#intents)
 - [Lexicons](../ai/resources/build/lexicons.md)
+- [LLM](../ai/resources/build/llm.md)
 - [Cognigy.AI Settings](../ai/resources/manage/settings.md)

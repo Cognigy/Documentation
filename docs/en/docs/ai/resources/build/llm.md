@@ -28,49 +28,65 @@ In the table below, there are LLMs supported by Cognigy.
 | claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               | -                    | -                |
 | claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               | -                    | -                |
 
-
 ## Add a model
 
 To add a model to Cognigy.AI, follow these steps:
 
-1. Open the Cognigy.AI interface.
-2. Go to **Build > LLM**. 
-3. Click **+New Model**. 
-4. Select a model from the list. 
-5. Add a unique name and description for your model. 
-6. In the **LLM Editor** window, go to the **Generative AI Connection** field. 
-7. On the right side of the field, click **+**. 
-8. Depends on your model provider, fill in the following fields:
-
-    === "Microsoft Azure OpenAI"
-        - Connection name -  create a unique name for your connection.
-        - apiKey - add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.
-        - resourceName - add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). It must be the mane that you specified in the **Instance details > Name** section in Azure. Also, this value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.
-        - deploymentName - add a [model name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model). 
-        - apiVersion - add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format.
-
-    === "OpenAI"
-        - Connection name - create a unique name for your connection.
-        - apiKey - add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account. 
-
-    === "Anthropic"
-        - Connection name - create a unique name for your connection.
-        - apiKey - add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic.
-
-9. Click **Create**.
-10. To apply changes, click **Save**.
-
-When the model is added, you will see it in the list of models.
-
-To apply Cognigy features for this model, go to the settings by clicking **Manage LLM Features**.
+{! _includes/ai/generative-ai/credentials.md !}
 
 ## Apply a model
 
-To apply a model, follow these steps:
+{! _includes/ai/generative-ai/apply-model.md !}
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, click **Manage > Settings**.
-3. In the **Generative AI Settings** section, activate **Enable Generative AI Features**. This setting is toggled on by default if you have previously set up the Generative AI credentials. 
-4. Navigate to the desired feature and choose a model from the list. If there are no models available for the selected feature, the system will automatically select **None**. 
-5. Click **Save**.
+## Clone a Model
+
+To create a copy of the existing model, follow these steps:
+
+1. Go to **Build > LLM**.
+2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Select **Clone** from the list.
+
+The model will contain the same settings as the initial one. 
+
+## Set a Model as Default
+
+Setting a default model ensures a smooth transition when a specific model is removed. It guarantees that there is always a model available to handle compatible use cases, even if the assigned model is removed.
+
+To set a model as the default, follow these steps:
+
+1. Go to **Build > LLM**.
+2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Select **Make Default** from the list.
+
+The setting will be applied for the selected model.
+
+## Export a Model as Package
+
+To reuse a model in other agents, you can package the model.
+
+To package a model, follow these steps:
+
+1. Go to **Build > LLM**.
+2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Select **Create a package**. 
+4. Once the package has created, a new [task](../agents/tasks.md), entitled **Create package**, will be run. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+
+When the task is completed, the package will be downloaded.
+
+## Delete a Model
+
+To delete a model, follow these steps:
+
+1. Go to **Build > LLM**.
+2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Select **Delete**.
+4. Confirm the deletion. Features relying on this model will stop working if no default model is configured to support those features.
+
+The model will be deleted from the list.
+
+## More information
+
+- [Generative AI](../../generative-ai.md)
+
+
 
