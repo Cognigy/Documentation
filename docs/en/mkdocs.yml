@@ -116,6 +116,7 @@ nav:
       - ai/resources/build/build.md
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
+      - ai/resources/build/llm.md
       - ai/resources/build/connections.md
       - ai/resources/build/nlu-connectors.md
       - ai/resources/build/functions.md
