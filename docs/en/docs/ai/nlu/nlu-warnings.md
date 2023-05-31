@@ -25,7 +25,7 @@ Warnings will only be generated and forwarded to our user interface when the Int
 * Create a new **intent** for example, "int1" and enter more than three example sentences (for example, "Test1"... "Test5")
 
 
-**For a proper intent scoring it is important to define "Rules" and "Conditions"!** -  so we do it
+**For a proper intent scoring it is important to define "Rules" and "Conditions"!** —  so we do it
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b58dcf4-Screen_Shot_049.PNG" width="100%" />

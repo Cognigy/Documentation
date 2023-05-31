@@ -118,6 +118,7 @@ nav:
       - ai/resources/build/build.md
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
+      - ai/resources/build/llm.md
       - ai/resources/build/connections.md
       - ai/resources/build/nlu-connectors.md
       - ai/resources/build/functions.md
@@ -507,6 +508,7 @@ nav:
   - live-agent/labels.md
   - live-agent/reports.md
   - live-agent/account-settings.md
+  - live-agent/canned-responses.md
   - live-agent/attachments.md
   - live-agent/notifications.md
   - live-agent/automation-rules.md

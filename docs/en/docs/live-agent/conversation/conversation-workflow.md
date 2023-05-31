@@ -120,13 +120,13 @@ Click on the Send button or press Enter to send your message to the customer.
 
 Below is a list describing Conversation actions an Agent can take by clicking the following icons.
 
-| Button  | Description          |
-|-------|----------------------|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" /> | This button allows a human agent to select and include an Emoji in the message.|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | This button allows  a human agent to select and include attachments in the message.|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | This button allows a human agent to request a file from the customer. |
-| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" /> | This button allows a human agent to send voice messages to the customer. |
-| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" /> | This button allows a human agent to send hyperlinked text to the customer. |
+| Button                                                                                                | Description                                                                         |
+|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />  | This button allows a human agent to select and include an Emoji in the message.     |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | This button allows  a human agent to select and include attachments in the message. |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | This button allows a human agent to request a file from the customer.               |
+| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" />                  | This button allows a human agent to send voice messages to the customer.            |
+| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | This button allows a human agent to send hyperlinked text to the customer.          |
 
 
 ### Agent Assist (Beta)
@@ -144,18 +144,23 @@ If forwarding was enabled for Assist messages, the Agent can click the blue arro
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
     </figure>
 
-###  How to Send Canned Responses
+### Send a Canned Response
 <div class="divider"></div>
 
-Should you wish to include an already prepared or "canned" response as a reply, type '/' and enter the short name of the message. An example is given below. Once you type '/', available canned responses will be listed and which you can select from.
+To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
 
+1. Type `/` followed by the short name of the message. For example, `/greeting`.
+2. Once you type `/`, a list of available canned responses will be displayed.
+3. Select the desired canned response from the list.
+
+The selected canned response will be inserted into your reply, allowing you to easily include prewritten messages in your conversation.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="100%" alt="Live Agent Canned Responses" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
-###  How to request file upload
+### How to request file upload
 <div class="divider"></div>
 
 !!! note
@@ -296,7 +301,7 @@ The status can be changed to 'Resolved' once a resolution is provided to the cus
 The Conversation statuses available are listed below. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.
 
 | Options                 | Actions                                                                                             |
-|-------------------------|---------------------------------------------------------------------------------------------------- |
+|-------------------------|-----------------------------------------------------------------------------------------------------|
 | Mark as Pending         | Change the issue to Pending status                                                                  |
 | Resolve                 | Change the issue to Resolved status                                                                 |
 | Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                          |

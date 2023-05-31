@@ -14,9 +14,9 @@ To transfer the call, select the **Dial** option to remain in the session and tr
 
 In this Transfer Node you need to enable the transcription of audio streams. You can choose between three options:
 
-- **Caller** - the customer audio stream.
-- **Called** - the human agent audio stream.
-- **Caller/Called** - the customer and the human agent audio stream.
+- **Caller** — the customer audio stream.
+- **Called** — the human agent audio stream.
+- **Caller/Called** — the customer and the human agent audio stream.
 
 ### Transcription Webhook
 
