@@ -17,7 +17,7 @@ To start using this Node, add it below the Node that completes the action.
 
 The completed goal will be stored in the contact's profile and Analytics.
 
-Goals are useful when analyzing milestones in the user profiles using OData or for handover to Cognigy Live Agent. You can track [top goals](../../../insights/dashboard-engagement.md#goals-reached) in the Insights Engagement dashboard. If you don't intend to analyze user profiles and prefer a more focused analysis using the [Insights Step Explorer](../.. //insights/step-explorer.md), then Analytics Steps would be more suitable.
+Goals are useful when analyzing milestones in the user profiles using OData or for handover to Cognigy Live Agent. You can track [top goals](../../../insights/dashboard-engagement.md#goals-reached) in the Insights Engagement dashboard. If you don't intend to analyze user profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../insights/step-explorer.md), then Analytics Steps would be more suitable.
 
 The difference between a Complete Goal and an Analytics Step lies in their purpose and usage within a system. Complete Goals determine whether a user has completed a specific objective or task. In contrast, Analytics Steps collect data about individual events or actions for analytical purposes. Complete Goals are associated with a user's profile, whereas Analytics Steps focus on tracking and storing data information.
 
