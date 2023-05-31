@@ -28,6 +28,8 @@ Alternatively, you can add a canned response or a list of canned responses by im
 
 ## Import Canned Responses
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.52-blue.svg)](../release-notes/4.52.md)
+
 To import canned responses, follow these steps:
 
 1. Prepare a CSV file with `short_code` and `content` as headers. For example:
