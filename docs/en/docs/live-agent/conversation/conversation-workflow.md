@@ -147,7 +147,7 @@ If forwarding was enabled for Assist messages, the Agent can click the blue arro
 ### Send a Canned Response
 <div class="divider"></div>
 
-To include a canned response as a reply to the user, follow these steps:
+To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
 
 1. Type `/` followed by the short name of the message. For example, `/greeting`.
 2. Once you type `/`, a list of available canned responses will be displayed.
@@ -156,7 +156,7 @@ To include a canned response as a reply to the user, follow these steps:
 The selected canned response will be inserted into your reply, allowing you to easily include prewritten messages in your conversation.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="100%" alt="Live Agent Canned Responses" />
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
 

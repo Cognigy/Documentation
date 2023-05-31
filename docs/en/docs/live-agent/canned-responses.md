@@ -6,25 +6,29 @@ hidden: false
 
 # Canned Responses
 
-Canned Responses are presaved reply templates allowing human agents to respond to a conversation quickly.
+Canned responses are presaved reply templates allowing human agents to respond to a conversation quickly.
+
+Canned Response templates provide support for HTML formatting.
 
 ## Create a Canned Response
 
-To create a new Canned Response, follow these steps:
+To create a new canned response, follow these steps:
 
 1. Open the Live Agent interface.
 2. Go to **Settings > Canned Responses**.
 3. In the upper-right corner, click **Add Canned Response**.
 4. In the **Add Canned Response** window, fill in the following fields:
-    - Short Code - add a word that associates with the response.
-    - Content - add a message that will be sent to the user.
+    - **Short Code** — add a word that associates with the response.
+    - **Content** — add a message that will be sent to the user.
 5. Click **Submit**.
+
+The canned response will appear in the list on the Canned Responses page.
 
 Alternatively, you can add a canned response or a list of canned responses by importing a CSV file.
 
 ## Import Canned Responses
 
-To import canned responses, follow these steps.
+To import canned responses, follow these steps:
 
 1. Prepare a CSV file with `short_code` and `content` as headers. For example:
    ```txt
@@ -41,4 +45,6 @@ To import canned responses, follow these steps.
 
 The canned responses will appear in the list on the Canned Responses page. 
 
-## Use a Canned Responses
+## Use a Canned Response
+
+To start using canned responses in the conversations, go to the [Send a Canned Response](conversation/conversation-workflow.md#send-a-canned-response).
