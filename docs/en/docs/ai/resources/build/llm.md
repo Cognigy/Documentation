@@ -7,14 +7,13 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.52-blue.svg)](../../../release-notes/4.52.md)
 
-[Large Language Models](https://en.wikipedia.org/wiki/Large_language_model) (LLMs) are a specific type of Generative AI model that s that are specifically designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. LLMs are capable of understanding and generating coherent and contextually relevant responses in natural language.
+[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are specifically designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 
-LLMs help Cognigy virtual agents understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for user.
-
+With LLMs, Cognigy virtual agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
 
 ## Supported Models
 
-In the table below, there are LLMs supported by Cognigy.
+The table below lists the LLMs supported by Cognigy.
 
 | Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node | Generate Node Output | Knowledge Search |
 |-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|----------------------|------------------|

@@ -165,7 +165,7 @@ Note that the voice fallback text will be used instead of buttons.
 
 The conversation should progress only when the user enters data through the xApp.
 
-## More Information
+## More information
 
 - [Twilio SMS API](https://www.twilio.com/docs/sms/api#sms-api-authentication)
 - [xApp Tutorials](tutorials.md)
