@@ -6,6 +6,8 @@
 
 # Billing
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
+
 Cognigy has only one billable unit - a *conversation*. A billed conversation is an interaction between a user and a virtual or human agent, and represents one unit of consumption.
 
 The billed conversation begins when a user sends their initial *input*, which can be either a chat or voice message.
