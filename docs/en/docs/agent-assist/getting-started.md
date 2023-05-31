@@ -81,7 +81,7 @@ To create your Agent Assist Config, follow these steps:
     ```
 5. Create the request by clicking **Try**.
 
-When the request is created, you will see the response code `200`.
+When the request is created, you will see the response code `201`.
 
 ## Create an Endpoint
 
