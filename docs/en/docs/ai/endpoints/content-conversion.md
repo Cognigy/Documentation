@@ -15,7 +15,7 @@ If the endpoint does not support the selected output type, the system returns a 
 | Endpoint / Output Type | Text | Text with Quick Replies | Gallery | Text with Buttons | List | Audio | Image | Video | Adaptive Card (including supported versions) |
 |------------------------|------|-------------------------|---------|-------------------|------|-------|-------|-------|----------------------------------------------|
 | Interaction Panel      | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.2                                          |
-| Webchat                | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
+| Webchat                | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.5                                          |
 | Webchat plugin         | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
 | VoiceGateway           | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | WhatsApp               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
