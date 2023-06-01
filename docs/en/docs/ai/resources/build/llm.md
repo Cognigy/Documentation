@@ -70,7 +70,7 @@ To package a model, follow these steps:
 1. Go to **Build > LLM**.
 2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
 3. Select **Create a package**. 
-4. Once the package has created, a new [task](../agents/tasks.md), entitled **Create package**, will be run. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+4. Once the package has created, a new [task](../agents/tasks.md), titled **Create package**, will be run. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
 
 When the task is completed, the package will be downloaded.
 
