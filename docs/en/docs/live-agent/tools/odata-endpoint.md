@@ -64,8 +64,6 @@ The current version of the OData Endpoint is `v1.0`. This Endpoint version is av
 - [Message](#message) (`/Message`)
 - [Conversation](#conversation) (`/Conversation`)
 - [User](#user) (`/User`)
-- [Tag](#tag) (`/Tag`)
-- [Tagging](#tagging) (`/Tagging`)
 - [Label](#label) (`/Label`)
 - [Inbox](#inbox) (`/Inbox`)
 
@@ -119,8 +117,6 @@ This section details the data types that exist within the OData Collections that
 - [Message](#message)
 - [Conversation](#conversation)
 - [User](#user)
-- [Tag](#tag)
-- [Tagging](#tagging)
 - [Label](#label)
 - [Inbox](#inbox)
 
@@ -210,28 +206,28 @@ The Inbox is where all Conversations from a specific set of Agents will be place
 
 When retrieving this data model, the Endpoint will return the following fields:
 
-| Field Name               | Description                                                                 | Type    | Example                                          |
-|--------------------------|-----------------------------------------------------------------------------|---------|--------------------------------------------------|
-| id                       | Unique Record ID                                                            | Number  | 1                                                |
-| channel_id               | Channel ID                                                                  | Number  | 1                                                |
-| name                     | Inbox Name                                                                  | String  | Welcome to Live Agent                            |
-| account_id               | Account ID                                                                  | Number  | 1                                                |
-| created_at               | Inbox Creation Date                                                         | Date    | 2021-12-11 12:41:26.745                          |
-| updated_at               | Inbox Updated Date                                                          | Date    | 2021-12-11 12:41:26.745                          |
-| channel_type             | Communication Channel, i.e. API, webWidget, Facebook                        | String  | "Channel:WebWidget"                              |
-| enable_auto_assignment   | Feature That Allows The Agent To Auto Assign Conversations                  | Boolean | true                                             |
-| greeting_enabled         | Feature That Allows An Automatic Greeting To Be Sent                        | Boolean | false                                            |
-| greeting_message         | Automatic Greeting Message                                                  | String  | "Hi there!"                                      |
-| email_address            | Email Address                                                               | String  | default                                          |
-| working_hours_enabled    | Feature That Enables A Working Hours Timetable                              | Boolean | true                                             |
+| Field Name               | Description                                                                 | Type    | Example                                   |
+|--------------------------|-----------------------------------------------------------------------------|---------|-------------------------------------------|
+| id                       | Unique Record ID                                                            | Number  | 1                                         |
+| channel_id               | Channel ID                                                                  | Number  | 1                                         |
+| name                     | Inbox Name                                                                  | String  | Welcome to Live Agent                     |
+| account_id               | Account ID                                                                  | Number  | 1                                         |
+| created_at               | Inbox Creation Date                                                         | Date    | 2021-12-11 12:41:26.745                   |
+| updated_at               | Inbox Updated Date                                                          | Date    | 2021-12-11 12:41:26.745                   |
+| channel_type             | Communication Channel, i.e. API, webWidget, Facebook                        | String  | "Channel:WebWidget"                       |
+| enable_auto_assignment   | Feature That Allows The Agent To Auto Assign Conversations                  | Boolean | true                                      |
+| greeting_enabled         | Feature That Allows An Automatic Greeting To Be Sent                        | Boolean | false                                     |
+| greeting_message         | Automatic Greeting Message                                                  | String  | "Hi there!"                               |
+| email_address            | Email Address                                                               | String  | default                                   |
+| working_hours_enabled    | Feature That Enables A Working Hours Timetable                              | Boolean | true                                      |
 | out_of_office_enabled    | Default Message That Will Be Displayed During Out Of Office Hours           | String  | "Out of office hours, try again tomorrow" |
-| timezone                 | Inbox Timezone                                                              | String  | "UTC"                                            |
-| enable_email_collect     | Allows To Email Collection                                                  | Boolean | true                                             |
-| csat_survey_enabled      | Allows CSAT Survey                                                          | Boolean | true                                             |
-| cognigy_organization_id  | Cognigy Account ID                                                          | Number  | 1                                                |
-| cognigy_project_id       | Cognigy Project ID                                                          | Number  | 1                                                |
-| enable_auto_reassignment | Allows To Reassign Conversation                                             | Boolean | true                                             |
-| conversation_show_all    | Allows To See All Conversations In Inbox, Even If They Do Not Belong To You | Boolean | true                                             |
+| timezone                 | Inbox Timezone                                                              | String  | "UTC"                                     |
+| enable_email_collect     | Allows To Email Collection                                                  | Boolean | true                                      |
+| csat_survey_enabled      | Allows CSAT Survey                                                          | Boolean | true                                      |
+| cognigy_organization_id  | Cognigy Account ID                                                          | Number  | 1                                         |
+| cognigy_project_id       | Cognigy Project ID                                                          | Number  | 1                                         |
+| enable_auto_reassignment | Allows To Reassign Conversation                                             | Boolean | true                                      |
+| conversation_show_all    | Allows To See All Conversations In Inbox, Even If They Do Not Belong To You | Boolean | true                                      |
 
 ### Label
 
@@ -257,51 +253,6 @@ When retrieving this data model, the Endpoint will return the following fields:
 | account_id      | Account To Which The Label Will Belong      | Number  | 3                           |
 | created_at      | Label Creation Date                         | Date    | 2021-12-11 12:41:26.745     |
 | updated_at      | Label Updated Date                          | Date    | 2021-12-11 12:41:26.745     |
-
-### Tagging
-
-**Description:**
-
-The Tagging model contains relations, for when a Label is being used.
-
-**Example Query:**
-
-* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tagging?`.
-
-**Data Types:**
-
-When retrieving this data model, the Endpoint will return the following fields:
-
-| Field Name    | Description                                     | Type   | Example                 |
-|---------------|-------------------------------------------------|--------|-------------------------|
-| id            | Unique Record ID                                | Number | 1                       |
-| tag_id        | Relation With The Tag Table Metadata            | Number | 1                       |
-| taggable_type | What Has Been Tagged, that is Conversation      | String | "Conversation"          |
-| taggable_id   | e.g. Conversation ID                            | Number | 1                       |
-| tagger_type   | Who Performed The Action                        | String | "User"                  |
-| tagger_id     | e.g. User ID                                    | Number | 1                       |
-| context       | What Has Been Used For The Tagging, i.e. Labels | String | "labels"                |
-| created_at    | Tagging Creation Date                           | Date   | 2021-12-11 12:41:26.745 |
-
-### Tag
-
-**Description:**
-
-Tags metadata, such as the number of times a Tag has been used.
-
-**Example Query:**
-
-* V1.0 Endpoint: `https://odata-liveagent-trial.cognigy.ai/v1.0/odata/Tag?`.
-
-**Data Types:**
-
-When retrieving this data model, the Endpoint will return the following fields:
-
-| Field Name     | Description          | Type   | Example       |
-|----------------|----------------------|--------|---------------|
-| id             | Unique Tag ID        | Number | 1             |
-| name           | Label Title          | String | testing-label |
-| tagging_counts | Number of Times Used | Number | 1             |
 
 
 ### User
@@ -364,9 +315,9 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
 ### Tableau
 
 !!! danger "Incompatible OData Version"
-    At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
+    Cognigy.AI supports OData version 4.0, which implies that certain versions of Tableau are not compatible.
 
-Find instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
+Find instructions on how to connect an OData Feed in the [Tableau documentation](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
 
 ## OData Consumer Ecosystem
 

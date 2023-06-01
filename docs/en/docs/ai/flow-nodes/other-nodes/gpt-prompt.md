@@ -19,6 +19,15 @@ The GPT Prompt Node allows using Generative AI for creating relevant content. To
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
+To display the output of the GPT Prompt Node to the user, follow these steps:
+
+1. In the Flow editor, add a Say Node below the GPT Prompt Node.
+2. In the **Output Type** field, select **Text**.
+3. In the **Text** field, specify `{{ " {{ input.generativeAi }}" }}`.
+4. Click **Save Node**.
+
+## Settings
+
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                    |
 |---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Prompt                    | CognigyScript | The prompt to generate completions for. You can add special tags in the prompt, read more in [Additional tags](#additional-tags).                                                                                                                                                                                                                                                              |

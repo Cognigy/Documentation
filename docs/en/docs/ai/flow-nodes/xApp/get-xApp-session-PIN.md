@@ -1,7 +1,7 @@
 ---
  title: "xApp: Get Session PIN" 
  slug: "Get-xApp-Session-PIN" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApp: Get Session PIN

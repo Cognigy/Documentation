@@ -1,7 +1,7 @@
 ---
  title: "xApp: Init Session" 
  slug: "Init-xApp-Session" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApp: Init Session
@@ -27,10 +27,6 @@ Customize the following parameters for the default screen:
 - Logo — you can choose to show the default logo, not any logo, or a custom logo. If you select the custom logo option, specify the Custom Logo URL.
 - Custom Favicon URL — an image URL for the custom favicon.
 - Page Title — a text shown as a tab or window title. The title is displayed on all Shell Page Screens.
-
-### PIN Screen
-
-Specify texts displayed on the PIN screen.
 
 ### xApp Screens
 

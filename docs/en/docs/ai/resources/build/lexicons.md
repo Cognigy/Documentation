@@ -5,16 +5,23 @@
 ---
 # Lexicons
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../../release-notes/4.52.md)
+
 **Lexicons** are collections of domain-specific **Keyphrases** (also known as **Entities**) that can be attached to a Flow. A Lexicon can be seen as a dictionary, that allows the Virtual Agent to "understand" specific words, like car brands, product groups or zipcodes. As soon as a Keyphrase is detected, it is published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object for further use. This process is called **Slot Mapping**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/c95b04b-lexicon-small.jpg" width="100%" />
 </figure>
 
-!!! note "Want to learn how to use a Lexicon?"
-    Have a look at the [**Match user expressions with a Lexicon**](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) guide in the Help Center. 
+To learn more about use cases for Lexicons, read [Match user expressions with a Lexicon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) Help Center article. 
 
-## Managing Keyphrases
+## Restrictions
+
+- Maximum of 1 Keyphrase and 199 synonyms per entry (row).
+- Maximum of 250 Slots per Lexicon.
+- Maximum of 100K entries per Lexicon.
+
+## Manage Keyphrases
 <div class="divider"></div>
 
 Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **Slots** (also known as Tags) and  **Synonyms**, and can be used by the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/). 
@@ -25,26 +32,27 @@ Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **
 
 In the example above, the **Keyphrase** is *Apple iPhone*. The **Slots** that are filled when this Keyphrase is detected, are *device* and *mobile*. Its synonym is *Cool phone*. 
 
-### Adding Keyphrases
+### Add Keyphrases
 To add a new Keyphrase, go to the ``Enter new keyphrase`` input field, type the name of the Keyphrase and hit enter.
 
-### Editing Keyphrases
+### Edit Keyphrases
 To edit a Keyphrase, just click on the name of the Keyphrase, and an input field will appear. To add Tags/Synonyms, just click in the respective text field, type the Tag/Synonym name and hit enter. 
 
-###Keyphrase Data Payloads
+### Add Keyphrase Data 
 You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click on the ``expand`` arrow on the right of the Keyphrase entry, and then type in the desired data in JSON format.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/1776c15-lexiconData.PNG" width="100%" />
 </figure>
 
-### Deleting Keyphrases
+### Delete Keyphrases
 There are two ways to delete a Keyphrase: One is to expand the Keyphrase by clicking on the "expand" arrow on the right side of the menu, then clicking on the "DELETE" button in the bottom right corner. Another way is to mark the desired Keyphrase(s) by clicking the checkbox on the left of a Keyphrase, and then scrolling down to the bottom to delete it. You can delete several Keyphrases this way.
 
-### Search
+### Search Keyphrases
 You can search through your Keyphrases via the search bar in the top right corner. This will return Keyphrase names, Tags and Synonyms in the search results.
 
-### Pages
+### Navigate Keyphrases
+
 At the bottom, you can navigate to different pages and toggle the amount of Keyphrases you wish to show per page. This is quite handy when your Lexicons start to grow and have dozens of entries - just switch to a smaller page-size on smaller screens or increase the limit of entries on a page for large monitor usage.
 
 !!! warning "Attach your Lexicons"
@@ -53,47 +61,59 @@ At the bottom, you can navigate to different pages and toggle the amount of Keyp
 !!! tip "Access slots in your Flow"
     Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
 
-## Importing & Exporting Lexicons
+## Upload and Download Lexicons
 
-<div class="divider"></div>
+Lexicons libraries can be uploaded and downloaded in CSV format.
 
-Lexicons libraries can be uploaded and downloaded in CSV format by clicking on the up and down arrows in the top right corner of the Lexicon Editor.
+### CSV File Requirements
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/adc9dd8-lexicon-upload-download.png" width="100%" />
-</figure>
+#### Encoding
 
-### Prepare CSV File Download
+To upload the file, make sure your CSV file is UTF-8 encoded.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.22.0-blue.svg)]({{config.site_url}})
+#### Format
 
-To prepare the Lexicon for download, click the down arrow. This will run a background task to prepare the CSV file. 
-Once the task is completed, a notification will appear and a blue download button will be displayed in the Lexicon Editor top right corner, click the button to start the download.
+The CSV file should have the following format:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/lexicon_download.png" width="200%" />
-</figure>
+```txt
+KEYPHRASE,"TAGS","SYNONYMS","{DATA}"
+```
 
-### Lexicon .csv Format
+Example:
 
-To upload a Lexicon click on the "Choose CSV File" button. The .csv file should have the following format:
-<div style="text-align: center">KEYPHRASE,"TAGS","SYNONYMS","{DATA}"</div>
-
-#### Example
-
-**CSV Format  Example**
-
-```CSV
+```txt
 Keyphrase1,"tag","synonym1","{""key1"":""value""}"
 Keyphrase2,"tag,tag2","synonym2,synonym2_2","{""key2"":""value""}"
 Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""}"
 ```
 
-!!! warning "UTF-8 Encoding"
-    In order to avoid any issues with special characters, make sure your CSV files are UTF-8 encoded.
+### Upload Lexicons
 
+To upload Lexicons, follow these steps:
 
-### Built-in Slots
+1. Go to **Build > Lexicons**.
+2. Open the existing Lexicon.
+3. In the upper-right corner of the Lexicon Editor page, click ![upload](../../../assets/icons/upload.svg).
+4. In the **Import Lexicon CSV file** window, select one of the following options:
+    - **Skip importing duplicate Keyphrases** — the option skips importing any Synonyms from the CSV file that already exist in the current Lexicon. If there are duplicate Synonyms in the CSV file, they will be ignored during the import process. Only new and unique Synonyms will be imported.
+    - **Overwrite the current Keyphrases** — the option replaces all the current Keyphrases in the lexicon with the Keyphrases from the CSV file. If there are any existing keyphrases in the Lexicon, they will be completely overwritten, and only the Keyphrases from the CSV file will be retained.
+    - **Merge Tags & Synonyms from the current and imported Keyphrases** — the option allows merging the Synonyms of Keyphrases from both the current Lexicon and the CSV file. Only unique Synonyms will be merged. If a Synonym exists in both the current Lexicon and the CSV file, this Synonym will not be merged.
+5. Click **Choose CSV file**.
+
+To track uploading process, you can view the **Import Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+
+### Download Lexicons
+
+To download Lexicons, follow these steps:
+
+1. Go to **Build > Lexicons**.
+2. Open the existing Lexicon.
+3. In the upper-right corner of the Lexicon Editor page, click ![download](../../../assets/icons/download.svg). Waiting for when the CSV file will be generated for downloading. To track this process, you can view the **Export Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+4. When the task is completed, click ![cloud](../../../assets/icons/cloud.svg) in the upper-right corner of the Lexicon Editor page.
+
+The file will be downloaded.
+
+## Built-in Slots
 
 <div class="divider"></div>
 

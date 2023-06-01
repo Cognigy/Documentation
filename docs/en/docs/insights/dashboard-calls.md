@@ -40,7 +40,7 @@ Indicates the total number of calls that occurred in the selected timeframe.
 
 ### Transferred calls rate
 
-Indicates the percentage of calls that were successfully transferred to a virtual agent.
+Indicates the percentage of calls that were successfully transferred to an agent.
 
 Calculation: `(successful transfers / total calls) x 100%`
 

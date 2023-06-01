@@ -64,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.52:
+    - release-notes/4.52.md
   - 4.51:
     - release-notes/4.51.md
   - release-notes/4.50.md
@@ -116,6 +118,7 @@ nav:
       - ai/resources/build/build.md
       - ai/resources/build/flows.md
       - ai/resources/build/lexicons.md
+      - ai/resources/build/llm.md
       - ai/resources/build/connections.md
       - ai/resources/build/nlu-connectors.md
       - ai/resources/build/functions.md
@@ -238,12 +241,17 @@ nav:
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
         - ai/flow-nodes/audiocodes/agent-assist.md
-  # - xApp:
-    # - ai/flow-nodes/xApp/overview.md
-    # - ai/flow-nodes/xApp/init-xApp-session.md
-    # - ai/flow-nodes/xApp/get-xApp-session-PIN.md 
-    # - ai/flow-nodes/xApp/set-html-xApp-state.md
-    # - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md 
+    - Agent Assist:
+        - ai/flow-nodes/agent-assist/overview.md
+        - ai/flow-nodes/agent-assist/set-html-file.md
+        - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
+        - ai/flow-nodes/agent-assist/set-iframe-tile.md
+    - xApp:
+      - ai/flow-nodes/xApp/overview.md
+      - ai/flow-nodes/xApp/init-xApp-session.md
+      - ai/flow-nodes/xApp/get-xApp-session-PIN.md
+      - ai/flow-nodes/xApp/set-html-xApp-state.md
+      - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md
     - Other Nodes:
       - ai/flow-nodes/other-nodes/other-nodes.md
       - ai/flow-nodes/other-nodes/log-message.md
@@ -288,7 +296,7 @@ nav:
       - ai/tools/user-menu/my-profile.md
       - ai/tools/user-menu/access-control.md
       - ai/tools/user-menu/organisation-details.md
-      - ai/tools/user-menu/audit-overview.md
+      - ai/tools/user-menu/audit-events.md
     - Interaction Panel:
       - ai/tools/interaction-panel/interaction-panel.md
       - ai/tools/interaction-panel/input.md
@@ -309,15 +317,6 @@ nav:
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
     - ai/tools/text-cleaner.md
-# - xApp:
-  # - ai/xApp/overview.md
-  # - ai/xApp/tokens.md 
-  # - ai/xApp/api.md
-# - Agent Assist:
-  # - ai/agent-assist/overview.md
-  # - ai/agent-assist/set-html-file.md
-  # - ai/agent-assist/set-adaptive-card-tile.md
-  # - ai/agent-assist/set-iframe-tile.md
   - Endpoints:
     - ai/endpoints/overview.md
     - ai/endpoints/data-protection-and-analytics.md
@@ -384,23 +383,34 @@ nav:
     - ai/handover-providers/genesys-cloud.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
-    - Agent Assist Workspace (Beta):
-        - agent-assist/overview.md
-        - agent-assist/getting-started.md
-        - agent-assist/architecture.md
-        - Installation:
-            - ai/installation/overview.md
-            - ai/installation/browser-requirements.md
-            - ai/installation/prerequisites.md
-        - agent-assist/contact-center-integration.md
-        - agent-assist/configuration.md
-        - agent-assist/embedding.md
-        - Voice Agent Assist:
-           - agent-assist/voice-agent-assist/voice-overview.md
-           - agent-assist/voice-agent-assist/code-node.md
-           - agent-assist/voice-agent-assist/transfer-node.md
-           - agent-assist/voice-agent-assist/webhook-endpoint.md
 
+  - Agent Assist (Beta):
+      - agent-assist/overview.md
+      - agent-assist/getting-started.md
+      - agent-assist/architecture.md
+      - Installation:
+          - agent-assist/installation/overview.md
+          - agent-assist/installation/browser-requirements.md
+          - agent-assist/installation/prerequisites.md
+          - agent-assist/installation/installation-process.md
+      - agent-assist/contact-center-integration.md
+      - agent-assist/configuration.md
+      - agent-assist/embedding.md
+      - Voice Agent Assist:
+          - agent-assist/voice-agent-assist/voice-overview.md
+          - agent-assist/voice-agent-assist/code-node.md
+          - agent-assist/voice-agent-assist/transfer-node.md
+          - agent-assist/voice-agent-assist/webhook-endpoint.md
+
+  - xApp (Beta):
+      - ai/xApp/overview.md
+      - ai/xApp/use-cases.md
+      - ai/xApp/getting-started.md
+      - ai/xApp/architecture.md
+      - ai/xApp/supported-browsers-and-channels.md
+      - ai/xApp/tokens.md
+      - ai/xApp/api.md
+      - ai/xApp/tutorials.md
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -449,7 +459,8 @@ nav:
 
 - Webchat Widget:
   - Overview:
-    - ai/endpoints/webchat/webchat.md  
+    - ai/endpoints/webchat/webchat.md
+  - ai/endpoints/webchat/supported-browsers.md
   - ai/endpoints/webchat/deploy-webchat-endpoint.md
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
@@ -497,6 +508,7 @@ nav:
   - live-agent/labels.md
   - live-agent/reports.md
   - live-agent/account-settings.md
+  - live-agent/canned-responses.md
   - live-agent/attachments.md
   - live-agent/notifications.md
   - live-agent/automation-rules.md
@@ -547,6 +559,7 @@ nav:
         - voicegateway/references/events/CALL_COMPLETED.md
         - voicegateway/references/events/CALL_FAILED.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
+        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
   - Release Notes:
     - voicegateway/release-notes.md      
 

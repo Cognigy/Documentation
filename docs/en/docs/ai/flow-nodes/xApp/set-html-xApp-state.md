@@ -1,7 +1,7 @@
 ---
  title: "xApp: Show HTML" 
  slug: "Set-HTML-xApp-State" 
- hidden: true 
+ hidden: false 
 ---
 
 # xApp: Show HTML

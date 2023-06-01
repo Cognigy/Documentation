@@ -47,6 +47,7 @@ Question Nodes have a Type which defined what kind of answer is required from th
 | Percentage  | Any percentage (system-defined)                                                                                                                                                                                                         |
 | Regex       | Any custom data format defined by a regex expression must be detected in the user's response                                                                                                                                            |
 | Data        | Any data (input.data) input                                                                                                                                                                                                             |
+| xApp        | Any xApp input                                                                                                                                                                                                                          |
 | Custom      | Any input                                                                                                                                                                                                                               |
 
 !!! warning "Regex"
