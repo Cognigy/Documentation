@@ -61,4 +61,4 @@ Clicking on those links will open the Cognigy.AI login page with the respective 
 !!! note "Single Sign-on Login"
     A user who is part of multiple organisations can login with SSO, using the above same login URL including the organisationId and then clicking "LOGIN WITH SSO". 
 
-    More Information on configuring Cognigy.AI with SSO can be found on [Single Sign-on using SAML 2.0]({{config.site_url}}ai/installation/single-signin-saml2) page
+    More information on configuring Cognigy.AI with SSO can be found on [Single Sign-on using SAML 2.0]({{config.site_url}}ai/installation/single-signin-saml2) page
