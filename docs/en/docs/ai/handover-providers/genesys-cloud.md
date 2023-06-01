@@ -5,33 +5,47 @@
 ---
 # Genesys Cloud Integration
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../release-notes/4.52.md)
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="80%" />
+</figure>
+
 ## Description
 
 <div class="divider"></div>
 
-Cognigy includes **"Genesys Cloud"** as an additional handover provider, which can be used to connect users with real Agents (from third-party sources). 
+Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 
-You can read more about Agent Handover [here]({{config.site_url}}ai/tools/agent-handover/). 
+To learn more about handovers, refer to [Agent Handover](overview.md).
 
 ## Setup
 <div class="divider"></div>
-To start using Genesys Cloud as a handover provider with Cognigy.AI, you first have to sign in to a Genesys Cloud account:
 
-e.g. here: *https://login.genesys.pure.cloud/*
+### Prerequisites
 
+- You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
 
-### Endpoint Configuration
-<div class="divider"></div>
-In the "Handover Settings" section of your Endpoint, you will need to select "Genesys Cloud" as your "Handover Platform".
+### Configure Handover Settings
 
-This will require you to fill out the following related fields to connect to "Genesys Cloud" handover service:
+In [Handover to Agent](../tools/agent-handover.md) Node, configure the following settings:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys-settings.png" width="100%" />
-  <figcaption>Genesys Cloud Handover Settings</figcaption>
-</figure>
+- **Language** — specify a language for the conversation. For example, `english`, `spanish`, `german`.
+- **Skills** — define skills for the conversation. For example, `escalation`.
+- **Priority** — set the priority for the conversation. For example, `1`. If a priority is set, it triggers a flow in Genesys to prioritize or de-prioritize the conversation within the queue. Note that this functionality requires the appropriate Cognigy Flow to be set up in Genesys.
+- **Custom Attributes** — add custom attributes in the `Key: Value` format, which allows you to include additional information. 
+  For example:
+  ```json
+  {
+      "section": "section A",
+      "region": "Europe"
+  }
+  ```
+### Create an Endpoint
 
-### Complete Setup Steps
-To complete your setup, follow the steps in our Help Center article:
+To start using Genesys Cloud as a handover provider with Cognigy.AI:
 
-- [Help Center: Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292)
+1. Go to **Deploy > Endpoints**.
+2. Open the Endpoint where you want to enable Handover to Genesys Cloud.
+3. Scroll down to **Handover Settings** and select **Genesys Cloud** from the list.
+4. To fill in the required fields and complete your setup, read the [Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292) article in Cognigy Help Center. 
