@@ -32,7 +32,7 @@ In [Handover to Agent](../tools/agent-handover.md) Node, configure the following
 
 - **Language** — specify a language for the conversation. For example, `english`, `spanish`, `german`.
 - **Skills** — define skills for the conversation. For example, `escalation`.
-- **Priority** — set the priority for the conversation. For example, `1`. If a priority is set, it triggers a flow in Genesys to prioritize or de-prioritize the conversation within the queue. Note that this functionality requires the appropriate Cognigy Flow to be set up in Genesys.
+- **Priority** — set the priority for the conversation. For example, `1`. If a priority is set, it triggers a flow in Genesys to prioritize or de-prioritize the conversation within the queue. Note that this functionality requires the appropriate flow to be set up in Genesys.
 - **Custom Attributes** — add custom attributes in the `Key: Value` format, which allows you to include additional information. 
   For example:
   ```json
