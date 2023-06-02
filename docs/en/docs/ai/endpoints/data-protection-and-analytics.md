@@ -21,7 +21,7 @@ Enable the collection of Analytics data for this endpoint.
 
 ## Mask Sensitive Analytics
 
-Masks potential sensitive information in analytics information. Replaces potentially sensitive information with asterisks. If this feature is used within an endpoint, the [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/) can't be used as we will not for example, store the original text of the user. The individual records will also not be available through our [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
+Masks sensitive information in analytics. Specifically, it replaces `inputText`, `inputData`, `userLanguageText`, and the `IP` of user inputs with asterisks in the analytics data. If this feature is used within an Endpoint, the [Intent Trainer](../resources/tweak/intent-trainer.md) can't be used, as Cognigy will not store the original text of the user. The individual records will also not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md).
 
 ### Ignore specific fields
 
