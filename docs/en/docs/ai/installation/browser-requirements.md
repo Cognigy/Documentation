@@ -9,10 +9,12 @@
 
 The Cognigy.AI User Interface is compatible with the browsers listed below:
 
-- Google Chrome (83)
-- Firefox (78 + 68 ESR)
-- Microsoft Edge (83 + 18)
-- Safari (12.1)
+| Browser           | Version    |
+|-------------------|------------|
+| Google Chrome     | 112, 113   |
+| Firefox           | 112, 113   |
+| Microsoft Edge    | 112, 113   |
+| Safari            | 15.6, 16.3 |
 
 For security reasons, older versions of the listed web browsers are not supported by Cognigy.
 
