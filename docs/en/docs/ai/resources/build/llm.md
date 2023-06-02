@@ -15,27 +15,25 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 The table below lists the LLMs supported by Cognigy.
 
-| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node | Generate Node Output | Knowledge Search |
-|-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|----------------------|------------------|
-| **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |                      |                  |
-| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               | -                    | -                |
-| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               | +                    | -                |
-| text-embedding-ada-002      | -                          | -                   | -                  | -               | -                     | -               | -                    | +                |
-| **Open AI**                 |                            |                     |                    |                 |                       |                 |                      |                  |
-| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               | -                    | -                |
-| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               | +                    | -                |
-| text-embedding-ada-002      | -                          | -                   | -                  | -               | -                     | -               | -                    | +                |
-| **Anthropic**               |                            |                     |                    |                 |                       |                 |                      |                  |
-| claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               | -                    | -                |
-| claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               | -                    | -                |
+| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node |
+|-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|
+| **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |
+| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
+| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               |
+| **Open AI**                 |                            |                     |                    |                 |                       |                 |
+| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
+| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               |
+| **Anthropic**               |                            |                     |                    |                 |                       |                 |
+| claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               |
+| claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               |
 
-## Add a model
+## Add a Model
 
 To add a model to Cognigy.AI, follow these steps:
 
 {! _includes/ai/generative-ai/credentials.md !}
 
-## Apply a model
+## Apply a Model
 
 {! _includes/ai/generative-ai/apply-model.md !}
 
