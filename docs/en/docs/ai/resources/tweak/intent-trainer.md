@@ -14,8 +14,6 @@ The **Intent Trainer** enables you to analyze the collected user inputs (records
 
 ## Export and Import Intent Records
 
-You can export and import Intent Trainer records by selecting the option after clicking on the 'three dots button' beneath the "Train" button. To export Intent Trainer records select the date range then confirm. 
-
 ### Import Intent Records
 
 To import intent records, follow these steps:
@@ -38,8 +36,6 @@ To export intent records, follow these steps:
 6. In the new window, click **Download Trainer Records**.
 
 The file will be downloaded in the `CTRAIN` format.
-
-### Import Intent Records
 
 ## Filter Records
 

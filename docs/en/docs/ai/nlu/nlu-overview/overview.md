@@ -123,8 +123,7 @@ To upload intents, follow these steps:
         * Rules
         * Tags
         * Confirmation sentences
-
-   Other properties, such as Default Reply and Condition, will not be modified.
+    Other properties, such as Default Reply and Condition, will not be modified.
 6. Click **Confirm**.
 
 Uploading intents does not delete existing intents that are not included in the upload file. If you want to delete intents, you can use the **Delete All Intents** option or delete individual intents beforehand.
@@ -145,14 +144,11 @@ The file will be downloaded in the selected format.
 ### Individual Intent Options Menu
 Each intent additionally has its own options menu that can be selected by clicking on the three dots next to the Intent name. The menu provides a number of options:
 
-  * **Create Child Intent**
-Adds an intent as a child intent to the selection. See [Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/). This property is included on data import/export.
+  * **Create Child Intent**. Adds an intent as a child intent to the selection. See [Intent Hierarchy]({{config.site_url}}ai/nlu/nlu-overview/intent-hierarchy/). This property is included on data import/export.
 
-  * **Disable Intent**
-Disables the selected intent so that it cannot be recognized or activated by a user input. This function temporarily removes the intent, and it's associated training data from the model but allows for it to be re-added in a single click. This property is included on data import/export.
+  * **Disable Intent**. Disables the selected intent so that it cannot be recognized or activated by a user input. This function temporarily removes the intent, and it's associated training data from the model but allows for it to be re-added in a single click. This property is included on data import/export.
 
- * **Delete Intents**
-Removes the intent and all associated training data from the model.
+ * **Delete Intents**. Removes the intent and all associated training data from the model.
 
 ## Attachments
 <div class="divider"></div>
