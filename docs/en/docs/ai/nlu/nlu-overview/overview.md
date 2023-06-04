@@ -5,16 +5,13 @@
 ---
 # NLU Overview
 
-**Natural Language Understanding** is at the core of advanced Virtual Agents. Cognigy.AI features an industry-leading NLU engine called Cognigy NLU. 
+**Natural Language Understanding** is at the core of advanced virtual agents. Cognigy.AI features an industry-leading NLU engine called Cognigy NLU. 
 
 ## Intents
 <div class="divider"></div>
 Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 
-!!! note "Want to learn how to use Intents?"
-    Head over to **[Train your Virtual Agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents)** in the Help Center.
-
-
+To learn how to use Intents, read [Train your virtual agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents)** in Cognigy Help Center.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -88,13 +85,12 @@ Tags can be used to categorize Intents, which makes it easier to manage them.
 
 #### Conditions
 
-See [Intent Conditions]({{config.site_url}}ai/nlu/nlu-overview/conditions/) for more information on how to enable and disable Intents dynamically with CognigyScript Conditions.
+See [Intent Conditions](conditions.md) for more information on how to enable and disable Intents dynamically with CognigyScript Conditions.
 
 #### Confirmation Sentence
 Cognigy NLU comes with an intent confirmation mechanism that works by configuring Confirmation Sentences in each intent. Whenever an Intent score falls within a (configurable) range - let's say 0,4 - 0,6, the Confirmation Sentence is triggered and shown to the user. If the user confirms the Intent, the Intent will be triggered.
 
-!!! note "Adding Reconfirmation Sentences"
-    Read more about how reconfirmation works on our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) page.
+To learn how to add reconfirmation sentences, read [Machine Learning Intents](../../nlu/nlu-overview/ml-intents.md).
 
 ### Intent Options Menu
 The Intent Options Menu can be selected by clicking on the three dots next to the Create Intent button. The menu provides a number of options:
@@ -169,8 +165,7 @@ Lexicons need to be attached to a Flow in order for a Flow to be able to detect 
 
 States can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collections.
 
-!!! note "States"
-    Refer to [**State**]({{config.site_url}}ai/tools/interaction-panel/state/) for more information.
+For more information, read [State](../../tools/interaction-panel/state.md).
 
 ## Slot Fillers
 <div class="divider"></div>
