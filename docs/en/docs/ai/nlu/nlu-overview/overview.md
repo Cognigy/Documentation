@@ -107,7 +107,7 @@ The Intent Options Menu can be selected by clicking on the three dots next to th
 
 * **Delete All Intents**. This option can be used to batch-delete all intents in a given Flow.
 
-### Upload Intents
+#### Upload Intents
 
 To upload intents, follow these steps:
 
@@ -128,7 +128,7 @@ To upload intents, follow these steps:
 
 Uploading intents does not delete existing intents that are not included in the upload file. If you want to delete intents, you can use the **Delete All Intents** option or delete individual intents beforehand.
 
-### Download Intents
+#### Download Intents
 
 To download intents, follow these steps:
 
@@ -150,7 +150,7 @@ Each intent additionally has its own options menu that can be selected by clicki
 
  * **Delete Intents**. Removes the intent and all associated training data from the model.
 
-## Attachments
+### Attachments
 <div class="divider"></div>
 
 Cognigy NLU can take into account additional Flows and Lexicons whenever they are attached.
