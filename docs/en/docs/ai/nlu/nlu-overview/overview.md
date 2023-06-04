@@ -99,38 +99,48 @@ Cognigy NLU comes with an intent confirmation mechanism that works by configurin
 ### Intent Options Menu
 The Intent Options Menu can be selected by clicking on the three dots next to the Create Intent button. The menu provides a number of options:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/nlu/images/c83fb06-intents-menu.jpg" width="100%" />
-</figure>
+* **Upload Intents CSV or JSON File**. This option lets you upload Intent collection in either CSV or JSON format. 
 
-  * **Upload Intents CSV or JSON File**
-This option lets you upload Intent collection in either CSV or JSON format. 
+* **Download Intents**. Intents can be downloaded in CSV and JSON formats as well.
 
-  * **Download Intents**
-Intents can be downloaded in CSV and JSON formats as well.
+* **Create Reject Intent**. Reject Intents can be used to explicitly filter out certain utterances. A Reject Intent can be used in case certain user utterances should not be registered as an Intent.
 
-  * **Create Reject Intent**
-Reject Intents can be used to explicitly filter out certain utterances. A Reject Intent can be used in case certain user utterances should not be registered as an Intent.
-
-  * **Delete All Intents**
-This option can be used to batch-delete all intents in a given Flow.
+* **Delete All Intents**. This option can be used to batch-delete all intents in a given Flow.
 
 ### Upload Intents
-When you upload intents, you get 3 options:
 
-* **Skip**: If an intent with this name already exists, importing this intent is skipped.
+To upload intents, follow these steps:
 
-* **Overwrite**: If an intent with this name already exists, the existing intent is deleted and the new values are imported.
+1. Open your Flow.
+2. In the Flow editor, navigate to **NLU > Intents**.
+3. On the right side of the **+ Create Intent** button, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg).
+4. Select **Upload Intents CSV or JSON File**.
+5. Select one of the following modes:
+    * **Skip** — if an intent with this name already exists, the import process will skip this intent.
+    * **Overwrite** — if  an intent with the same name already exists, the existing intent will be deleted and replaced with the new values.
+    * **Merge** — if an intent with the same name already exists, the properties that allow multiple values will be merged. These properties include:
+        * Example Sentences
+        * Rules
+        * Tags
+        * Confirmation sentences
 
-* **Merge**: If an intent with this name already exists, the properties that can have multiple values will be merged:
-    * Example Sentences
-    * Rules
-    * Tags
-    * Confirmation sentences
+   Other properties, such as Default Reply and Condition, will not be modified.
+6. Click **Confirm**.
 
-    Other properties (e.g. Default Reply, Condition) will not be changed.
+Uploading intents does not delete existing intents that are not included in the upload file. If you want to delete intents, you can use the **Delete All Intents** option or delete individual intents beforehand.
 
-Uploading does not delete existing intents that are not in the upload file. If you want to delete intents, you can use the menu option "Delete All Intents" or delete individual intents, before uploading.
+### Download Intents
+
+To download intents, follow these steps:
+
+1. Open your Flow.
+2. In the Flow editor, navigate to **NLU > Intents**.
+3. On the right side of the **+ Create Intent** button, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg).
+4. Select **Download Intents**.
+5. Select the downloaded format: CSV or JSON.
+6. Click **Confirm**.
+
+The file will be downloaded in the selected format.
 
 ### Individual Intent Options Menu
 Each intent additionally has its own options menu that can be selected by clicking on the three dots next to the Intent name. The menu provides a number of options:

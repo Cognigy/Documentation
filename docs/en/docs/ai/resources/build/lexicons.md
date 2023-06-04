@@ -39,7 +39,7 @@ To add a new Keyphrase, go to the ``Enter new keyphrase`` input field, type the 
 To edit a Keyphrase, just click on the name of the Keyphrase, and an input field will appear. To add Tags/Synonyms, just click in the respective text field, type the Tag/Synonym name and hit enter. 
 
 ### Add Keyphrase Data 
-You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click on the ``expand`` arrow on the right of the Keyphrase entry, and then type in the desired data in JSON format.
+You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click on the `expand` arrow on the right of the Keyphrase entry, and then type in the desired data in JSON format.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/1776c15-lexiconData.PNG" width="100%" />
@@ -86,6 +86,9 @@ Keyphrase1,"tag","synonym1","{""key1"":""value""}"
 Keyphrase2,"tag,tag2","synonym2,synonym2_2","{""key2"":""value""}"
 Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""}"
 ```
+#### Forbidden characters
+
+Fields beginning with the characters `@`, `+`, `-`, or `=` are not allowed.
 
 ### Upload Lexicons
 
