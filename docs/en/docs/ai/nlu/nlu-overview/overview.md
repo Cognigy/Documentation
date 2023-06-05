@@ -126,6 +126,9 @@ Uploading intents does not delete existing intents that are not included in the 
 
 #### Download Intents
 
+!!! warning
+    {! _includes/ai/forbidden-characters.md !}
+
 To download intents, follow these steps:
 
 1. Open your Flow.

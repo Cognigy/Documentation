@@ -88,7 +88,7 @@ Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""
 ```
 #### Forbidden characters
 
-Fields beginning with the characters `@`, `+`, `-`, or `=` are not allowed.
+{! _includes/ai/forbidden-characters.md !}
 
 ### Upload Lexicons
 
