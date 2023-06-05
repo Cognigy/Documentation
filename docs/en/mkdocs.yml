@@ -560,6 +560,10 @@ nav:
         - voicegateway/references/events/CALL_FAILED.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
         - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
+    - TTS and STT Vendors:
+        - voicegateway/references/tts-and-stt-vendors.md
+    - SIP Trunk Providers:
+        - voicegateway/references/sip-trunk-providers.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
