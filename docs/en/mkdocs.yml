@@ -325,6 +325,7 @@ nav:
     - ai/endpoints/real-time-translation-settings.md
     - ai/endpoints/file-storage.md
     - ai/endpoints/content-conversion.md
+    - ai/endpoints/testing-mode.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
@@ -396,6 +397,8 @@ nav:
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md
+      - Chat Agent Assist:
+          - agent-assist/chat-agent-assist.md
       - Voice Agent Assist:
           - agent-assist/voice-agent-assist/voice-overview.md
           - agent-assist/voice-agent-assist/code-node.md

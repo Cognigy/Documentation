@@ -273,3 +273,13 @@ Result: `0.117`
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/average-concurrent-session.png" width="100%" />
 </figure>
+
+
+{! _includes/insights/download-report.md !}
+
+## More information
+
+- [Dashboard Overview](dashboard-overview.md)
+- [Dashboard NLU Performance](dashboard-nlu-performance.md)
+- [Dashboard Engagement](dashboard-engagement.md)
+- [Dashboard Live Agent](dashboard-live-agent.md)

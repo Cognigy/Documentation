@@ -13,7 +13,7 @@ hidden: false
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
-Cognigy.AI integrates with the [Generative AI providers](#prerequisites) that allow the generation of text content based on user input. That involves utilizing [Large Language Models (LLMs)](resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
+Cognigy.AI integrates with the [Generative AI providers](#prerequisites) that allow text generation based on user input. That involves utilizing [Large Language Models (LLMs)](resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
 
 In the Cognigy.AI interface, LLMs generate human-like and personalized content for a bot. It can be used for the following purposes:
 
