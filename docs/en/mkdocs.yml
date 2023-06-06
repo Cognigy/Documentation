@@ -527,7 +527,7 @@ nav:
     - voicegateway/getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
-    - voicegateway/installation/installation-process.md
+    - voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
     - Deployment:
