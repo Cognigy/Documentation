@@ -20,7 +20,7 @@ The table below lists the LLMs supported by Cognigy.
 | **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |
 | gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
 | text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               |
-| **Open AI**                 |                            |                     |                    |                 |                       |                 |
+| **OpenAI**                  |                            |                     |                    |                 |                       |                 |
 | gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
 | text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               |
 | **Anthropic**               |                            |                     |                    |                 |                       |                 |

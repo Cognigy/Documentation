@@ -148,7 +148,6 @@ nav:
     - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
-    # - ai/flow-nodes/dynamic-node-fields.md
     - Message:
       - ai/flow-nodes/message/message.md
       - ai/flow-nodes/message/say.md
