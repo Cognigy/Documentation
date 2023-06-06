@@ -148,7 +148,6 @@ nav:
     - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
-    # - ai/flow-nodes/dynamic-node-fields.md
     - Message:
       - ai/flow-nodes/message/message.md
       - ai/flow-nodes/message/say.md
@@ -325,6 +324,7 @@ nav:
     - ai/endpoints/real-time-translation-settings.md
     - ai/endpoints/file-storage.md
     - ai/endpoints/content-conversion.md
+    - ai/endpoints/testing-mode.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
@@ -396,6 +396,8 @@ nav:
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md
+      - Chat Agent Assist:
+          - agent-assist/chat-agent-assist.md
       - Voice Agent Assist:
           - agent-assist/voice-agent-assist/voice-overview.md
           - agent-assist/voice-agent-assist/code-node.md
@@ -525,7 +527,7 @@ nav:
     - voicegateway/getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
-    - voicegateway/installation/installation-process.md
+    - voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
     - Deployment:
