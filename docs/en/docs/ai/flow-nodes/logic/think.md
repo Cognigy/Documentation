@@ -18,6 +18,9 @@ Upon reaching this Node, the Flow will stop and then restart executing at the St
 
 You may specify an input text and input data which will then be treated as a simulated message from the user.
 
+!!! tip "Triggering the NLU without restarting the Flow"
+    In a scenario where you need to process user input or other text mid Flow to retrieve an NLU result, and do not wish to restart the Flow at the Start Node, use the [Execute Cognigy NLU Node](../nlu/execute-cognigy-nlu.md).
+
 !!! note "Think NLU"
     When a Flow gets executed again via "think", the new message will also be sent through the NLU pipeline again, finding Slots and matching Intents
 
