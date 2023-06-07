@@ -23,30 +23,31 @@ The functions are available in the following entities:
 
 ## Functions
 
-| Function Name             | Description                                                                                                                                                                                                               |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| cleanDisallowedSymbols    | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                                                           |
-| resolveSpelledOutNumbers  | Replaces all number words with their numerical representation. For example, "five and three hundred nineteen" > "5 319".                                                                                                  |
-| resolvePhoneticAlphabet   | Detects and replaces all words that are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                                                         |
-| replaceSpecialWords       | Replaces specifically set words with their replacements. For example, "lufthansa" > "lh".                                                                                                                                 |
-| resolveSpelledOutAlphabet | Resolves phrases like "a for anton b as in bertram" to "a b".                                                                                                                                                             |
-| resolvePhoneticCounters   | Resolves strings like "3 times 2" to "222" or "double 4" to "44". See special rules below. |
-| contractSingleCharacters  | Joins all single characters standing alone into a full string. For example, "my name is c o g n i g y" > "my name is cognigy".                                                                                            |
-| contractNumberGroups      | Joins all numbers standing next to each other. For example, "his number is 333 43 22 44" > "his number is 333432244".                                                                                                     |
-| trimResult                | Trims the start and end of the string and replaces all double (or more) spaces with single spaces.                                                                                                                        |                                                                                                                                 
+| Function Name             | Description                                                                                                                                                                          |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| cleanDisallowedSymbols    | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                      |
+| resolveSpelledOutNumbers  | Replaces all number words with their numerical representation. For example, "five and three hundred nineteen" > "5 319".                                                             |
+| resolvePhoneticAlphabet   | Detects and replaces all words that are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                    |
+| replaceSpecialWords       | Replaces specifically set words with their replacements. For example, "lufthansa" > "lh".                                                                                            |
+| resolveSpelledOutAlphabet | Resolves phrases like "a for anton b as in bertram" to "a b".                                                                                                                        |
+| resolvePhoneticCounters   | Resolves strings like "3 times 2" to "222" or "double 4" to "44". Learn more about special rules in [Rules for resolvePhoneticCounters](#rules-for-resolvephoneticcounters) section. |
+| contractSingleCharacters  | Joins all single characters standing alone into a full string. For example, "my name is c o g n i g y" > "my name is cognigy".                                                       |
+| contractNumberGroups      | Joins all numbers standing next to each other. For example, "his number is 333 43 22 44" > "his number is 333432244".                                                                |
+| trimResult                | Trims the start and end of the string and replaces all double (or more) spaces with single spaces.                                                                                   |
 
 ### Rules for resolvePhoneticCounters
 
-resolvePhoneticCounters resolves strings like "3 times 2" to "222" or "double 4" to "44". It resolves sentences containing a multiplier (e.g. "3 times" or "double") and a multiplicant (e.g. "2" or "4" in the examples above). 
+This function is designed to convert phrases like "3 times 2" into their numeric representation, such as "3 times 2" to "222" or "double 4" to "44." The function handles sentences that include both a multiplier (for example, "3 times" or "double") and a multiplicand (for example, "2" or "4"). The multiplicand can be either a number or a character.
 
-*Multiplicants can be numbers and characters.*
+Some examples can be ambiguous. For instance, consider the phrase "double ap 3 4", which could be interpreted as either "aap34" or "apap34."
 
-Some strings can be ambiguous - For example "double ap 3 4" could be "aap34" or "apap34" - so we set the following rules:
+To avoid this ambiguity, Cognigy defined the following rules for multiplicand types:
 
-**If the multiplicant is a number** (e.g. "2 times 3")
-- If the multiplicant is a number below 13, the multiplicant is repeated itself (e.g., "2 times 3" will return "33" and "2 times 11" will return "1111")
-- If the multiplicant is a number higher or equal to 13, only the first digit is considered the multiplicant (e.g., "2 times 16" is "116"). This is because it is common to say "3 times 4" or "3 times 12", but not "3 times 25".
-
-**If the multiplicant is a character**
-- If the multiplicant is a phonetic character, it is resolved and the character is repeated (e.g. "2 times alpha" is "aa")
-- If the multiplicant has more than one character and is not a phonetic character, only the first character is repeated (e.g., "2 times ox" is "oox"), because we assume it was transcribed incorrectly by STT and the user actually say "2 times o, x"
+| Multiplicand type                                                        | Rule                                                                                                                                                                                  | Example                                                                                      |
+|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+ | **Number**                                                               |                                                                                                                                                                                       | 2 times **3**, 2 times **16**                                                                |
+| Multiplicand is a number below 13                                        | The multiplicand is repeated itself.                                                                                                                                                  | "2 times 3" will return "33" <br> "2 times 11" will return "1111"                            |
+| Multiplicand is a number higher or equal to 13                           | Only the first digit is repeated. <br><br> The first digit is given priority due to the more common usage of phrases like "3 times 4" or "3 times 12," compared to "3 times 25".      | "2 times 16" will return "116"                                                               |
+| **Character**                                                            |                                                                                                                                                                                       | 2 times **alpha**, 2 times **ox**                                                            |
+| Multiplicand is a phonetic character                                     | It is resolved, and the character is repeated.                                                                                                                                        | "2 times alpha" will return "aa"                                                             |
+| Multiplicand has more than one character and is not a phonetic character | Only the first character is repeated. <br><br> Cognigy assumes that the speech-to-text (STT) system transcribed the user input incorrectly and that the user intended to say another. | "2 times ox" will return "oox" <br> (we assume that the user intended to say "2 times o, x") |
