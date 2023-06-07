@@ -26,7 +26,7 @@ Select the target Node which is switched to whenever the Flow execution triggers
 A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use [Set Entrypoint](../node-usage.md#set-entrypoint).
 
 !!! note "Using Go to and Execute together"
-    A Go To Node will overwrite any existing Execute Flow Node. This means that if a Flow containing a Go To Node is executed, the Go To nNode will stop the original execution and "stick" to its destination node's Flow.
+    A Go To Node will overwrite any existing Execute Flow Node. This means that if a Flow containing a Go To Node is executed, the Go To Node will stop the original execution and "stick" to its destination node's Flow.
 
 ## Advanced
 
