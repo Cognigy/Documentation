@@ -17,7 +17,7 @@ Enable the collection of Analytics data for this endpoint.
 
 ## Mask IP Address
 
-Masks IP addresses in the analytics and input object when you use `{{ "{{ input.ip }}" }}` or `{{ "{{ ci.ip }}" }}` in the Say Node or  `ci.ip` or `input.ip` in the Code Node. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in both analytics data and the input object.
+Masks IP addresses in the analytics and input object when you use `{{ "{{ input.ip }}" }}` or `{{ "{{ ci.ip }}" }}` in the Say Node or  `ci.ip` or `input.ip` in the Code Node. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in both the analytics data and the input object.
 The IP addresses will not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md) and [Insights](../../insights/cognigy-insights.md).
 
 ## Mask Sensitive Analytics
