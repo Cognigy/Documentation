@@ -7,10 +7,6 @@
 
 The **Data Protection & Analytics** (previously called Data Management) section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5b29da1-Data_Protection__Analytics.PNG" width="100%" />
-</figure>
-
 ## Contact Profiles
 
 This setting enables the collection of individual contact profiles to store persisted user data across sessions.
@@ -18,6 +14,11 @@ This setting enables the collection of individual contact profiles to store pers
 ## Collect Analytics
 
 Enable the collection of Analytics data for this endpoint.
+
+## Mask IP Address
+
+Masks IP addresses in the input object and analytics. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest of the text unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in the analytics data.
+The IP addresses will not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md) and [Insights](../../insights/cognigy-insights.md).
 
 ## Mask Sensitive Analytics
 
@@ -27,7 +28,7 @@ Masks sensitive information in analytics. Specifically, it replaces `inputText`,
 
 In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) using the `analyticsdata` variable:
 
-``` JavaScript
+```js
 analyticsdata.text = "overwritten text";
 delete analyticsdata.data.token;
 ```
