@@ -1,14 +1,14 @@
 ---
- title: "Cognigy.AI User Login" 
+ title: "Cognigy.AI Sign-in and Sign-out" 
  slug: "AI-login" 
  hidden: false 
 ---
 
-## Cognigy.AI User Login
+# Cognigy.AI Sign-in and Sign-out
 
 <div class="divider"></div>
 
-Users can login to Cognigy.AI with this url:
+Users can sign in to Cognigy.AI with this url:
 
 ```
 https://<frontend-url>/login
@@ -23,13 +23,13 @@ The frontend-url could for instance be trial.cognigy.ai
 [![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
 
 
-Cognigy.AI allows users to be part of multiple organisations. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to login to Cognigy.AI should be like this, specifying which organisation the user wants to login to:
+Cognigy.AI allows users to be part of multiple organisations. A user, identified by an e-mail address and a password, can be part of different organisations. The URL to log in to Cognigy.AI should be like this, specifying which organisation the user wants to log in to:
 
 ```
 https://<frontend-url>/login?organisationId=<organisation-id>
 ```
 
-The 'organisation-id' is a unique identifier of 24 characters which identifies an organisation in the system.
+The `organisation-id` is a unique identifier of 24 characters which identifies an organisation in the system.
 
 <br>
 <figure>
@@ -59,6 +59,14 @@ Clicking on those links will open the Cognigy.AI login page with the respective 
     If a user wants to reset the password for one of the organisations to which the user is assigned, then again it is mandatory to have the organisationId in the login url when filling out the "Forgot Password" form.
 
 !!! note "Single Sign-on Login"
-    A user who is part of multiple organisations can login with SSO, using the above same login URL including the organisationId and then clicking "LOGIN WITH SSO". 
+    A user who is part of multiple organisations can log in with SSO, using the above same login URL including the organisationId and then clicking "LOGIN WITH SSO". 
 
     More information on configuring Cognigy.AI with SSO can be found on [Single Sign-on using SAML 2.0]({{config.site_url}}ai/installation/single-signin-saml2) page
+
+## Automatic Sign-out
+
+This feature allows you to set an inactivity period for members of your organization. If the user is inactive during this period, the user will be automatically signed out.
+
+This **Automatic sign-out** feature is available only for on-premises and dedicated SaaS customers. To activate the feature, specify `FEATURE_ENABLE_AUTO_LOGOUT_ON_INACTIVITY= true` in the values.yaml file.
+
+By default, the inactivity period value is 15 minutes. You can change this value by specifying `AUTO_LOGOUT_IDLE_TIME_IN_MIN=<your time in minutes>` in the values.yaml file. 
