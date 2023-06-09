@@ -8,6 +8,8 @@ hidden: false
 
 Skills are specific abilities that human agents possess, such as language proficiency and expertise in particular domains.
 
+Only users with the Administrator and Supervisor roles can configure and assign skills.
+
 ## Create a Skill
 
 To create a skill, follow these steps:
