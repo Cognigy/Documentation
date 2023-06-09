@@ -66,19 +66,6 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
-## Call Events
-
-Allows to activate call events for a Flow.
-
-| Parameter          | Type     | Description                                                                                                                                                                                                                                                                                                                            | 
-|--------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Call Events | Toggle   | Enable or disable the Call Events setting.                                                                                                                                                                                                                                                                                             |
-| Event              | Selector | Select the event that will trigger the action.                                                                                                                                                                                                                                                                                         |
-| Action             | Selector | Choose the action to be performed when the call event is detected: <br> - **Inject into current Flow** - inject the defined text and data payload into the current flow. <br> - **Execute Flow** - trigger a selected flow when the call event is detected. <br> - **None** - no action will be taken when the call event is detected. |
-| Text Payload       | string   | Enter the text that will be sent to your Flow. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                                             |
-| Data Payload       | JSON     | Provide the data that will be sent into your Flow in JSON format. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                          | 
-| Execute Flow       | Selector | Execute the selected Flow. Flow execution will stop afterward. Available only for the **Execute Flow** action.                                                                                                                                                                                                                         |
-
 ## Generic Endpoint Settings
 
 <div class="divider"></div>
