@@ -20,6 +20,10 @@ The Administrator has access to most features of Live Agent.
 
 - Add, edit and delete Labels. The Administrator can modify the account user's role.
 
+- Add, edit and delete Canned Responses.
+
+- Add, edit and delete Skills.
+
 - Modify the settings of its account and the account Inboxes.
 
 - Access the OData Endpoint with its access token.
@@ -38,6 +42,8 @@ The Agent has restricted access.
 
 - Access and ability to add existing custom attributes to the Conversations.
 
+- Can add, edit and delete Canned Responses.
+
 - Cannot manipulate settings related to the account, except for Canned Responses.
 
 - Can reassign the Conversations of their Inboxes to other Agents, or unassign them.
@@ -55,6 +61,10 @@ The Supervisor has restricted access.
 - Access and ability to add existing Labels to the Conversations.
 
 - Access and ability to add existing custom attributes to the Conversations.
+
+- Can add, edit and delete Canned Responses.
+
+- Can add, edit and delete Skills.
 
 - Cannot manipulate settings related to the account, except for Canned Responses.
 
