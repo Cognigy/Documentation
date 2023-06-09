@@ -3,7 +3,7 @@ title: "Automation Rules"
 slug: "Automation Rules"
 hidden: false
 ---
-# Automations
+# Automation (Beta)
 
 Automation can replace and automate existing processes that require manual effort.
 You can do many things with automation, including adding labels and assigning conversations to the best agent.
@@ -28,11 +28,11 @@ Automation Events are triggers on when you want your automation executed. Live a
 Conditions are criteria that will be checked before the action is executed.
 The conditions are evaluated in the order they are defined.
 
-| Conversation Created   | Conversation Updated   | Message Updated     |
-|------------------------|------------------------|---------------------|
-| Conversation Status     | Conversation Status    | Message Type        |
-|                        | Assignee               | Message Contains    |
-|                        | Team                   |                     |
+| Conversation Created | Conversation Updated | Message Updated  |
+|----------------------|----------------------|------------------|
+| Conversation Status  | Conversation Status  | Message Type     |
+|                      | Assignee             | Message Contains |
+|                      | Team                 |                  |
 
 ### Automation Actions
 

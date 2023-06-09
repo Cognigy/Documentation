@@ -1,0 +1,45 @@
+---
+title: "Skills"
+slug: "skills"
+hidden: false
+---
+
+# Skills
+
+Skills are specific abilities that human agents possess, such as language proficiency and expertise in particular domains.
+
+## Create a Skill
+
+To create a skill, follow these steps:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > Skills**.
+3. In the upper-right corner, click **Add Skill**.
+4. In the **Add Skill** window, fill in the following fields:
+    - **Type** — select one of the following types:
+        - **Language** — a skill that refers to language expertise.
+        - **Skill** — a skill that refers to specific knowledge.
+    - **Name** — specify a unique name that reflects the skill. For example, `English`, `Spanish`, `German` for the **Language** type, or specific skills like `IT`, `HR`, `Customer Service` for the **Skills** type.
+5. Click **Submit**.
+
+The skill will appear in the list on the **Skills** page.
+Afterward, you can edit or delete the added skill.
+
+## Assign a Skill 
+
+To assign a skill to a human agent, follow these steps:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > Agents**.
+3. In the row with the agent, click **Skills**.
+4. In the **Skills** window, click **Add skill**.
+5. Select a skill type and its value. You can add multiple skills.
+6. Click **Add Skills**.
+
+The skills will appear in the **Skills** column of the row with the agent.
+
+If you want to remove a skill from the raw with the agent, open the **Skills** window and click ![cross](images/icons/cross.svg)  on the right side of the selected skill.
+
+
+
+
