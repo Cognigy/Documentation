@@ -14,7 +14,7 @@ To view detailed information about the call, click the **Details** tab.
 
 Additionally, Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
 
-For outbound calls, you can analyze the captured media stream to diagnose and troubleshoot voice quality issues by clicking **Tracing** tab and viewing the [report](#tracing-fields).
+For inbound calls, you can analyze the captured media stream to diagnose and troubleshoot voice quality issues by clicking **Tracing** tab and viewing the [report](#tracing-fields).
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png"  width="100%" />
 
