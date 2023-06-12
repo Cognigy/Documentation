@@ -20,83 +20,15 @@ helm upgrade --install live-agent cognigy/live-agent --version 4.53.0
 
 ## Change values.yaml
 
-Values under `.Values.redis` need to be changed to contain the `.Values.redis.sentinel` option enabled like this:
+The new values for version 4.53 already contain the new Redis Sentinel configuration. If you are using a custom values.yaml file, you need to ensure it is not overriding the new Redis Sentinel configuration.
 
 ```yaml
 # ...
 
 redis:
   enabled: true
-  fullnameOverride: redis-ha
-  image:
-    registry: docker.io
-    repository: bitnami/redis
-    tag: 7.0.7-debian-11-r7
-    pullSecrets: []
-  commonConfiguration: |-
-    appendonly no
-    protected-mode no
-    repl-diskless-sync no
-    save 60 1
-    stop-writes-on-bgsave-error no
-  replica:
-    replicaCount: 3
-    resources:
-      limits:
-        cpu: 500m
-        memory: 512Mi
-      requests:
-        cpu: 200m
-        memory: 100Mi
-    podLabels:
-      uniquezone: "la-redis-ha"
-    affinity:
-      podAntiAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution:
-          - labelSelector:
-              matchExpressions:
-                - key: "uniquezone"
-                  operator: In
-                  values:
-                    - "la-redis-ha"
-            topologyKey: "topology.kubernetes.io/zone"
-    persistence:
-      enabled: true
-      size: 16Gi
-  # Enabling sentinel
   sentinel:
     enabled: true
-    image:
-      registry: docker.io
-      repository: bitnami/redis-sentinel
-      tag: 7.0.7-debian-11-r6
-      pullSecrets: []
-    automateClusterRecovery: true
-    downAfterMilliseconds: 2000
-    failoverTimeout: 10000
-    resources:
-      limits:
-        cpu: 500m
-        memory: 512Mi
-      requests:
-        cpu: 200m
-        memory: 100Mi
-  metrics:
-    enabled: true
-    image:
-      registry: docker.io
-      repository: bitnami/redis-exporter
-      tag: 1.45.0-debian-11-r22
-      pullSecrets: []
-    resources:
-      limits:
-        cpu: 200m
-        memory: 200Mi
-      requests:
-        cpu: 50m
-        memory: 50Mi
-    serviceMonitor:
-      enabled: true
 # ...
 ```
 
@@ -128,6 +60,38 @@ Check that the pods are running and the application is working. This means the s
 
 ```bash
 kubectl get pods
+```
+
+### Remove the old PVCs and PVs
+
+Remove the old PVCs that were used by the Redis pods before the upgrade. They are usually named as:
+
+- redis-data-cognigy-live-agent-redis-master-0
+- redis-data-cognigy-live-agent-redis-replicas-0
+
+Check their status is now `Released`:
+
+```bash
+kubectl get pvc -n live-agent
+```
+
+Delete them:
+
+```bash
+kubectl delete pvc redis-data-cognigy-live-agent-redis-master-0 -n live-agent
+kubectl delete pvc redis-data-cognigy-live-agent-redis-replicas-0 -n live-agent
+```
+
+Check the PVs are now `Available`:
+
+```bash
+kubectl get pv
+```
+
+Delete them:
+
+```bash
+kubectl delete pv <pv_name> # replace <pv_name> with the name of the PV for the PVCs that were deleted
 ```
 
 ## Remove the migration job hooks after the upgrade
