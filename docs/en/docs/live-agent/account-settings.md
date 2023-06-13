@@ -86,6 +86,8 @@ When the checkbox for automatically deleting resolved conversations is marked, t
 
 ### Auto Assign Conversations to a Busy Agent
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../release-notes/4.53.md)
+
 By default, you can manually assign conversations to human agents if they are busy.
 
 To automate this process, you can activate the **Assign conversation to a busy agent** setting.
