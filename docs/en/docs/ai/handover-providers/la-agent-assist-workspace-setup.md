@@ -9,7 +9,7 @@ hidden: false
 
 {! _includes/beta/new-feature-note.md !}
 
-{! _includes/ai/providers/live-agent/agent-assist-setup.md. !}
+{! _includes/ai/providers/live-agent/agent-assist-setup.md !}
 
 ## Set up an Endpoint
 

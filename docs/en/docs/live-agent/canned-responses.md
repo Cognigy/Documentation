@@ -12,6 +12,8 @@ Canned Response templates provide support for HTML formatting.
 
 ## Create a Canned Response
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../release-notes/4.53.md)
+
 To create a new canned response, follow these steps:
 
 1. Open the Live Agent interface.
@@ -20,6 +22,10 @@ To create a new canned response, follow these steps:
 4. In the **Add Canned Response** window, fill in the following fields:
     - **Short Code** — add a word that associates with the response.
     - **Content** — add a message that will be sent to the user.
+    - **Level** — select one of the following options from the list:
+        - **Global** — all human agents can use a canned response.
+        - **Personal** — only you can use a canned response.
+        - **Team** — only human agens from the selected [team](teams.md) can use a canned response. You can select only one team.
 5. Click **Submit**.
 
 The canned response will appear in the list on the Canned Responses page.

@@ -424,6 +424,7 @@ nav:
     - ai/installation/prerequisites.md
     - ai/installation/pre-installation-checklist.md
     - ai/installation/installation-process.md
+    - ai/installation/AI-login.md
     - ai/installation/single-signin-saml2.md
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
