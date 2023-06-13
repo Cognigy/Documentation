@@ -10,9 +10,11 @@
 
 Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
 
-To view detailed information about the call, click on the call tab.
+To view detailed information about the call, click the **Details** tab.
 
 Additionally, Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
+
+For inbound calls, you can analyze the captured media stream to diagnose and troubleshoot voice quality issues by clicking the **Tracing** tab and viewing the report. This feature provides valuable insights into the duration of different actions during the call, such as speech recognition and connections. By reviewing the report, you can identify any delays or issues that occurred during these actions, helping you pinpoint potential areas of improvement in terms of performance and efficiency.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png"  width="100%" />
 
@@ -39,5 +41,3 @@ Additionally, Voice Gateway provides PCAP files which can be downloaded in the d
 | to                   | A phone number of the party to whom the call was made.                                                                                  |
 | trace_id             | A unique identifier for the call. Can be used to track any type of call or session as it passes through different parts of the network. |
 | trunk                | A [carrier](carriers.md) name.                                                                                                          |
-
-
