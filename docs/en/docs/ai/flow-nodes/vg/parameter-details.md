@@ -45,7 +45,7 @@ The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 | Disable STT Punctuation         | Toggle        | Prevents the STT response from the virtual agent to include punctuation marks.                                                                                                                                                                                       |
 | Enable Advanced TTS Config      | Toggle        | Enables the addition of an ID for an Azure's Custom Speech model deployment.                                                                                                                                                                                         |
 | Enable Audio Logging            | Toggle        | Enables recording and logging of audio from the user on Azure.                                                                                                                                                                                                       |
-| Recognize Language              | Toggle        | Enables the addition of alternative languages for recognition. You can select at least 3 languages. To reuse these languages in other Nodes, such as the child Nodes of the [Lookup](../logic/lookup.md) Node,  use the following format: `de-DE`, `fr-FR`, `en-US`. |
+| Recognize Language              | Toggle        | Enables the addition of alternative languages for recognition. You can select a maximum of 3 languages. To reuse these languages in other Nodes, such as the child Nodes of the [Lookup](../logic/lookup.md) Node,  use the following format: `de-DE`, `fr-FR`, `en-US`. |
 
 ### Barge In
 
