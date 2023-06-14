@@ -10,9 +10,9 @@
 
 This migration guide is for the Live Agent 4.53 version upgrade. This release upgrades the Redis chart to use Redis Sentinel for high availability.
 
-## Perform a Normal Upgrade
+## Perform a Standard Upgrade
 
-The first step is to perform a normal upgrade of the Live Agent chart to the desired new version to ensure the migration job is run before enabling Redis Sentinel.
+The first step is to perform a standard upgrade of the Live Agent chart to the desired new version to ensure the migration job is run before enabling Redis Sentinel.
 
 ```bash
 helm upgrade --install live-agent cognigy/live-agent --version 4.53.0
@@ -66,33 +66,28 @@ kubectl get pods
 
 Remove the previous PVCs used by the Redis pods before the upgrade. They are typically named as follows:
 
-- redis-data-cognigy-live-agent-redis-master-0
-- redis-data-cognigy-live-agent-redis-replicas-0
+- `redis-data-cognigy-live-agent-redis-master-0`
+- `redis-data-cognigy-live-agent-redis-replicas-0`
 
-Check that their status is now `Released`:
+To remove the previous PVCs and PVS, follow these steps:
 
-```bash
-kubectl get pvc -n live-agent
-```
-
-Delete them:
-
-```bash
-kubectl delete pvc redis-data-cognigy-live-agent-redis-master-0 -n live-agent
-kubectl delete pvc redis-data-cognigy-live-agent-redis-replicas-0 -n live-agent
-```
-
-Check that the PVs are now `Available`:
-
-```bash
-kubectl get pv
-```
-
-Delete them:
-
-```bash
-kubectl delete pv <pv_name> # replace <pv_name> with the name of the PV associated with the deleted PVCs
-```
+1. Check that PVCs' status is now `Released`:
+   ```bash
+   kubectl get pvc -n live-agent
+   ```
+2. Delete PVCs.
+   ```bash
+   kubectl delete pvc redis-data-cognigy-live-agent-redis-master-0 -n live-agent
+   kubectl delete pvc redis-data-cognigy-live-agent-redis-replicas-0 -n live-agent
+   ```
+3. Check that the PVs are now `Available`.
+   ```bash
+   kubectl get pv
+   ```
+4. Delete PVs.
+   ```bash
+   kubectl delete pv <pv_name> # replace <pv_name> with the name of the PV associated with the deleted PVCs
+   ```
 
 ## Remove the Migration Job Hooks after the Upgrade
 
