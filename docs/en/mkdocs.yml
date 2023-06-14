@@ -495,7 +495,9 @@ nav:
     - Installation Updates:
       - live-agent/installation/deployment/installation-updates.md
     - Migration Guides:
+      - live-agent/installation/migration/contents.md
       - live-agent/installation/migration/helm-dependencies.md
+      - live-agent/installation/migration/redis-sentinel.md
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md

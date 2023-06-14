@@ -204,6 +204,7 @@ It will scan the file uploading for viruses and block the upload if a virus is f
 | `configmap.GOOGLE_MAPS_API_TOKEN`    | This value is used to load a Google Maps map with the location shared by the user.                | `""`          |
 | `configmap.USE_INBOX_AVATAR_FOR_BOT` | Bot Customizations                                                                                | `"true"`      |
 | `configmap.FRONTEND_EXTERNAL_URL`    | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload) | `""`          |
+| `configmap.SENTRY_DSN`               | Sentry DSN for error tracking                                                                     | `""`          |
 
 ### Cookies Integrity
 
