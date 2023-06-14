@@ -6,6 +6,8 @@
 
 # Recent Calls
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../../release-notes/4.53.md)
+
 *Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
 
 Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
