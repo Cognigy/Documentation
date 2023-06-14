@@ -1,18 +1,18 @@
 ---
- title: "Migration guide for setting up Redis Sentinel in existing Live Agent installation" 
+ title: "Migration guide for Redis Sentinel in Live Agent 4.53" 
  slug: "migration-guide-for-setting-up-redis-sentinel-in-existing-live-agent-installation"
  hidden: false 
 ---
 
-# Migration guide for setting up Redis Sentinel in Live Agent
+# Migration guide for Redis Sentinel in Live Agent 4.53
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../../release-notes/4.53.md)
 
-This is a migration guide for the Live Agent 4.53 version upgrade. This release upgrades the Redis chart to use Redis Sentinel for high availability.
+This migration guide is for the Live Agent 4.53 version upgrade. This release upgrades the Redis chart to use Redis Sentinel for high availability.
 
-## Perform a normal upgrade
+## Perform a Standard Upgrade
 
-The first step is to perform a normal upgrade of the Live Agent chart to the new desired version for ensuring the migrations job is run before the Redis Sentinel is enabled.
+The first step is to perform a standard upgrade of the Live Agent chart to the desired new version to ensure the migration job is run before enabling Redis Sentinel.
 
 ```bash
 helm upgrade --install live-agent cognigy/live-agent --version 4.53.0
@@ -20,7 +20,7 @@ helm upgrade --install live-agent cognigy/live-agent --version 4.53.0
 
 ## Change values.yaml
 
-The new values for version 4.53 already contain the new Redis Sentinel configuration. If you are using a custom values.yaml file, you need to ensure it is not overriding the new Redis Sentinel configuration.
+The new values for version 4.53 already include the new Redis Sentinel configuration. If you use a custom `values.yaml` file, ensure it does not override the new Redis Sentinel configuration.
 
 ```yaml
 # ...
@@ -32,9 +32,9 @@ redis:
 # ...
 ```
 
-## Change temporarily the migration job hooks
+## Change the Migration Job Hooks
 
-The migration job hooks need to be changed temporarily to `post-install,post-upgrade` in order to run the migration job after the upgrade. Otherwise, the migration job will run before new Redis pods are created, and the migration will fail.
+The migration job hooks must be temporarily changed to `post-install,post-upgrade` to run the migration job after the upgrade. Otherwise, the migration job will run before new Redis pods are created, resulting in a failed migration.
 
 ```yaml
 # migration job (uncomment if needed)
@@ -54,49 +54,44 @@ Upgrade the chart to the latest version.
  helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
 ```
 
-### Check everything is working
+### Verify Functionality and Pod Status
 
-Check that the pods are running and the application is working. This means the startup health check is passing.
+Ensure that the pods are running and the application is functioning correctly, including passing the startup health check.
 
 ```bash
 kubectl get pods
 ```
 
-### Remove the old PVCs and PVs
+### Remove the Old PVCs and PVs
 
-Remove the old PVCs that were used by the Redis pods before the upgrade. They are usually named as:
+Remove the previous PVCs used by the Redis pods before the upgrade. They are typically named as follows:
 
-- redis-data-cognigy-live-agent-redis-master-0
-- redis-data-cognigy-live-agent-redis-replicas-0
+- `redis-data-cognigy-live-agent-redis-master-0`
+- `redis-data-cognigy-live-agent-redis-replicas-0`
 
-Check their status is now `Released`:
+To remove the previous PVCs and PVS, follow these steps:
 
-```bash
-kubectl get pvc -n live-agent
-```
+1. Check that PVCs' status is now `Released`:
+   ```bash
+   kubectl get pvc -n live-agent
+   ```
+2. Delete PVCs.
+   ```bash
+   kubectl delete pvc redis-data-cognigy-live-agent-redis-master-0 -n live-agent
+   kubectl delete pvc redis-data-cognigy-live-agent-redis-replicas-0 -n live-agent
+   ```
+3. Check that the PVs are now `Available`.
+   ```bash
+   kubectl get pv
+   ```
+4. Delete PVs.
+   ```bash
+   kubectl delete pv <pv_name> # replace <pv_name> with the name of the PV associated with the deleted PVCs
+   ```
 
-Delete them:
+## Remove the Migration Job Hooks after the Upgrade
 
-```bash
-kubectl delete pvc redis-data-cognigy-live-agent-redis-master-0 -n live-agent
-kubectl delete pvc redis-data-cognigy-live-agent-redis-replicas-0 -n live-agent
-```
-
-Check the PVs are now `Available`:
-
-```bash
-kubectl get pv
-```
-
-Delete them:
-
-```bash
-kubectl delete pv <pv_name> # replace <pv_name> with the name of the PV for the PVCs that were deleted
-```
-
-## Remove the migration job hooks after the upgrade
-
-Remove the migration job hooks from the values.yaml file that was added in the previous step and leave the default value after the upgrade.
+Remove the migration job hooks from the `values.yaml` file that was added in the previous step and revert to the default value after the upgrade.
 
 ```yaml
 # migration job (uncomment if needed)
