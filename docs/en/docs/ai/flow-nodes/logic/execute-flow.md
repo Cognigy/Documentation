@@ -24,13 +24,13 @@ When a Flow is executed, it will inherit the current Context from the parent Flo
 
 ### Select Flow
 
-Select the target Flow which is executed whenever the Flow execution triggers the **Execute Flow** Node.
+Select the target Flow that is executed whenever the Flow execution triggers the **Execute Flow** Node.
 
 ### Select Node
 
-Select the target Node which is executed whenever the Flow execution triggers the **Execute Flow** Node.
+A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../node-usage.md#set-entrypoint) setting.
 
-A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use [Set Entrypoint](../node-usage.md#set-entrypoint).
+Select the target Node which is executed whenever the Flow execution triggers the **Execute Flow** Node.
 
 !!! note "Open Target Flow"
     By clicking on the icon to the right of the Flow drop-down you can open the target Flow. Make sure to save your Node first.
