@@ -31,19 +31,22 @@ A Node must be set as an Entrypoint before it can be selected. To set any Node a
 ## Advanced
 
 ### Execution Mode
+
 The Execution Mode determines the behavior of the Go To Node. It can go to the target Node and continue, or it can wait for input.
 
 ### Optionally Injected Text
-If the Execution Mode is set to "Go to Node and continue", you can overwrite the text with which to continue here. If no text is specified, input.text will be used.
+
+If the Execution Mode is set to **Go to Node and continue**, you can overwrite the text with which to continue here. If no text is specified, input.text will be used.
 
 ### Optionally Injected Data
-If the Execution Mode is set to "Go to Node and continue", you can overwrite the data with which to continue here. If no data is specified, input.data will be used.
+
+If the Execution Mode is set to **Go to Node and continue**, you can overwrite the data with which to continue here. If no data is specified, input.data will be used.
 
 ### Parse Intents
 
-This toggle decides whether we should **parse intents** within the sub Flow. This is disabled by default.
+The user decides whether we should  **parse intents** within the sub Flow. This is disabled by default.
 
-If the `Parse Intents` feature is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+If the **Parse Intents** setting is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
 
 This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
 
@@ -51,12 +54,12 @@ This setting will parse the input into the sub Flow, and the NLU will then score
 
 The user decides whether we should **parse slots** within the sub Flow. This is disabled by default.
 
-If `Parse Slots` is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+If the **Parse Slots** setting is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
 
 This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
 
 ### Absorb Context
-If `Absorb Context` is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
+If the **Absorb Context** setting is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
 
 !!! warning "Loops"
     Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premise installations.
