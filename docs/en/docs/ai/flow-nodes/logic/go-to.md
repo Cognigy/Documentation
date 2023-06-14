@@ -17,13 +17,13 @@ A **Go To Node** is used to switch the conversation over to another **Node** or 
 
 ### Select Flow
 
-Select the target Flow which is switched to whenever the Flow execution triggers the **Go To** Node.
+Select the target Flow that is switched to whenever the Flow execution triggers the **Go To** Node.
 
 ### Select Node
 
-Select the target Node which is switched to whenever the Flow execution triggers the **Go To** Node.
+Select the target Node that is switched to whenever the Flow execution triggers the **Go To** Node.
 
-A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use [Set Entrypoint](../node-usage.md#set-entrypoint).
+A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../node-usage.md#set-entrypoint) setting.
 
 !!! note "Using Go To and Execute together"
     A Go To Node will overwrite the execution of an Execute Flow Node. If a Flow containing a Go To Node is executed, after an Execute Flow Node, the Go To Node will stop the original execution and the session will stay In the Go To Node's destination Flow. This will prevent the Execute Flow Node's normal behavior, of returning to the Flow it is located in.
