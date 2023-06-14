@@ -16,7 +16,6 @@ The Execute Cognigy NLU Node is used to execute the Cognigy.AI NLU Pipeline with
 !!! tip "Triggering the NLU and restarting the Flow"
     In a scenario where you need to process user input or other text mid Flow to retrieve an NLU result, and wish to restart the Flow at the Start Node, use the [Think Node](../logic/think.md).
 
-
 !!! warning
     Flow execution continues by flowing to the next Node after processing the Execute Cognigy NLU Node. This Node does not trigger standard responses in intents, nor does it execute the Flow, based on a triggered intent. This Node only updates the input or context objects as described below.
 
