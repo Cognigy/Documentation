@@ -12,7 +12,7 @@
 
 Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
 
-The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes/xApp/overview.md). You can build the actual xApp Pages in two ways, by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md) or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
+The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes/xApp/overview.md). You can build the actual xApp Pages in two ways, by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md) or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md). As an alternative for more customization, you can create your own Node by implementing and uploading an Extension.
 
 ## Compatibility
 
