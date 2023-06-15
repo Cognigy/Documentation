@@ -57,7 +57,9 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 
 Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
 
-#### Override Snapshot Connections
+
+
+##### Override Snapshot Connections
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.21.0-blue.svg)]({{config.site_url}})
 
@@ -74,6 +76,19 @@ The Agent in which the Connection is to be overridden should initially be either
 
 !!! note
     You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use [Cognigy.AI API](../../developer-guides/using-api.md) with the Get all Connections request.
+
+##### When a Snapshot is Changed in an Endpoint
+
+When a Snapshot is replaced or removed in an Endpoint, there may still be active sessions running on the Endpoint using the old Snapshot.
+
+This is especially important to know when using [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md) without modifications, as sessions will not automatically expire.
+
+The way that an active session will be continue after the change of a Snapshot is as follows:
+
+- If the Snapshot still exists (i.e. it was not deleted, only replaced), the session will continue with the original Snapshot.
+  * This is important as we don't know if the new Snapshot contains the same Flows/Nodes where the user might be active in their session
+- If the Snapshot no longer exists (i.e. the original Snapshot was deleted), the session will be reset and the new Snapshot will be used.
+
 #### Flow
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
