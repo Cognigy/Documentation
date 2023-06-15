@@ -59,7 +59,7 @@ Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/reso
 
 While an Endpoint is active, you can replace or remove a Snapshot. In this case, you need to take into account that there may still be active sessions running on the Endpoint using the old Snapshot.
 
-This is especially important to know when you have a configuration in which sessions never expire, for example, when using a Webchat Endpoint and [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md). Without modifications, sessions started with Persistent History enabled will not automatically expire.
+Keep in mind, if you have a configuration in which sessions never expire, for example, a Webchat Endpoint with [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md). Without modifications, sessions started with Persistent History enabled will not automatically expire.
 
 When an old Snapshot is replaced with a new one or is deleted, the following rules will be applied to the active session:
 
