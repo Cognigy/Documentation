@@ -83,7 +83,7 @@ When a Snapshot is replaced or removed in an Endpoint, there may still be active
 
 This is especially important to know when using [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md) without modifications, as sessions will not automatically expire.
 
-The way that an active session will be continue after the change of a Snapshot is as follows:
+The way that an active session will continue after the change of a Snapshot is as follows:
 
 - If the Snapshot still exists (i.e. the original Snapshot was not deleted, only replaced), the session will continue with the original Snapshot.
   - This is important as we don't know if the new Snapshot contains the same Flows and Nodes where the user might be active in their session.
