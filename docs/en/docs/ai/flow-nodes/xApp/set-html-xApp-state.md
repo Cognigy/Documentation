@@ -15,6 +15,8 @@
 
 The xApp Page can be built by providing custom HTML code.
 
+{! _includes/ai/xApp/custom-node.md !}
+
 ### Content 
 
 You can either provide an HTML document or an HTML body only. Once this Node is executed, this xApp Page is displayed in the xApp Session.

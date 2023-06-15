@@ -167,6 +167,7 @@ The conversation should progress only when the user enters data through the xApp
 
 ## More information
 
+- [Build an xApp](build-an-xApp.md)
 - [Twilio SMS API](https://www.twilio.com/docs/sms/api#sms-api-authentication)
 - [xApp Tutorials](tutorials.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)

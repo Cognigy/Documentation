@@ -105,6 +105,7 @@ Users can sign documents or forms electronically, eliminating the need for physi
 
 - [Overview](overview.md)
 - [Getting Started](getting-started.md)
+- [Build an xApp](build-an-xApp.md)
 - [Tutorial: Creating a Signature with an xApp](https://support.cognigy.com/hc/en-us/articles/8868026263708)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
