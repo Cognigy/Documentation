@@ -6,16 +6,17 @@
 
 # Conversation Routing
 
-Every Conversation in Live Agent can have an assignee. An assignee can be manually added to the Conversation via the web console, the API, or automatically via an available round-robin assignment system. This doc explains how you can assign an Agent to a Conversation.
+In Cognigy Live Agent, conversation routing refers to the mechanism by which incoming conversations are assigned and distributed to the appropriate agents for handling. It involves intelligent routing algorithms that analyze agent availability and workload to determine the best recipient for each conversation.
+Cognigy Live Agent's conversation routing ensures that conversations are efficiently directed to the right agents or teams, facilitating prompt and effective customer support. This feature optimizes resource utilization and enhances human agent productivity.
+
 
 ## Manual Assignment
-<div class="divider"></div>
 
+A Conversation can be manually assigned to the following categories of users:
 
-A Conversation can be manually assigned to two categories of users.
-
-1. Agents who have access to the Inbox in which the Conversation is created.
-2. Administrators who can access every Conversation in the system.
+- any agents
+- supervisors
+- administrators
 
 To assign an Agent or admin to a Conversation, an admin/Agent can select the assignee from the dropdown menu titled "Assigned Agent" from the "Conversation Details" section in the right-hand sidebar, as shown below.
 
@@ -29,7 +30,7 @@ To assign an Agent or admin to a Conversation, an admin/Agent can select the ass
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
 
-Live Agent provides a round-robin auto-assignment system for Conversations. The **Auto Assignment** setting is enabled by default.
+Live Agent provides auto-assignment system for Conversations. The **Auto Assignment** setting is activated by default.
 
 There are different scenarios for distributing conversations to human agents based on their online status and workload:
 
@@ -52,6 +53,84 @@ To configure auto assignment in your Inbox, follow these steps:
      * Disable — allows the manual assignment of agents to conversations.
 
 The changes will be applied.
+
+### Examples 
+
+Example 1
+
+| Agent name | Limit | Status  |
+|------------|-------|---------|
+| Agent 1    | 2     | Online  |
+| Agent 2    | 2     | Busy    |
+| Agent 3    | 2     | Away    |
+| Agent 4    | 2     | Offline |
+
+Scenario 1
+
+Condition: 
+
+- allows conversation assignment for busy agents is deactivated
+- 4 conversations are created
+
+Result: the first two will be assigned to an Agent 1 and the 2 will remain unassigned.
+
+Scenario 2
+
+Condition: 
+
+- allows conversation assignment for busy agents is activated
+- 4 conversations are created
+
+Result: the first two will be assigned to an Agent 1 and the rest 2 will be assigned to Agent 2.
+
+Example 2
+
+| Agent name | Limit | Status |
+|------------|-------|--------|
+| Agent 1    | 2     | Online |
+| Agent 2    | 2     | Online |
+| Agent 3    | 2     | Online |
+| Agent 4    | 2     | Online |
+
+Scenario 1
+
+Condition:
+
+- 4 conversations are created
+
+Result: The first two conversations  will be assigned to an Agent 1 and the rest 2 will be assigned to Agent 2. The Agent 3 and Agent 4 will remain unassigned.
+
+Scenario 2
+
+Condition:
+
+- 5 conversations are created
+
+Result: The first two conversations  will be assigned to an Agent 1 and the 2 will be assigned to Agent 2, the Agent 3 will have 1 conversation and Agent 4 will remain unassigned.
+
+Example 3
+
+In the table all agents are not available
+
+| Agent name | Limit | Status  |
+|------------|-------|---------|
+| Agent 1    | 2     | Offline |
+| Agent 2    | 2     | Away    |
+| Agent 3    | 2     | Offline |
+| Agent 4    | 2     | Busy    |
+
+Scenario 1
+
+Condition:
+
+- allows conversation assignment for busy agents is deactivated
+- 4 conversations are created
+
+Result: all conversations will be unassigned.
+
+### Account settings
+
+### Inbox level
 
 ## Automatic Conversation Reassignment
 <div class="divider"></div>
