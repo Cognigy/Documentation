@@ -1,7 +1,8 @@
 ---
- title: "Migration guide for Redis Sentinel in Live Agent 4.53" 
- slug: "migration-guide-for-setting-up-redis-sentinel-in-existing-live-agent-installation"
- hidden: false 
+title: "Migration guide for Redis Sentinel in Live Agent 4.53" 
+slug: "migration-guide-for-redis-sentinel-in-live-agent"
+description: "This migration guide assists in upgrading the Redis chart to utilize Redis Sentinel for high availability in Live Agent version 4.53 and later versions."
+hidden: false 
 ---
 
 # Migration guide for Redis Sentinel in Live Agent 4.53

@@ -1,6 +1,7 @@
 ---
 title: "LLM"
 slug: "llm"
+description: "Large Language Models (LLMs) in Cognigy are advanced Generative AI models that generate human-like text based on input and context. Trained on vast text data, they understand user input, provide contextually appropriate responses, manage dialogues, and offer multilingual support for an enhanced conversational experience."
 hidden: false
 ---
 # Large Language Model (LLM)

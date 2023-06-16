@@ -1,6 +1,7 @@
 ---
 title: "User Inactivity Detection and Handling"
 slug: "user-inactivity-detection-and-handling"
+description: "Cognigy Inactivity Detection and Handling feature allows you to detect inactivity of end users during handovers and to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions."
 hidden: false
 ---
 # User Inactivity Detection and Handling
