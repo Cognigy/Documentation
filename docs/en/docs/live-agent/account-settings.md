@@ -1,7 +1,8 @@
 ---
- title: "Account Settings"
- slug: "account-settings" 
- hidden: false 
+title: "Account Settings"
+slug: "account-settings" 
+description: "Account Settings in Cognigy Live Agent refer to the configuration options that allow administrators to customize and manage global settings for the Live Agent instance."
+hidden: false 
 ---
 # Account Settings
 
