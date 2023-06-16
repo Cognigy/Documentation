@@ -8,7 +8,7 @@ hidden: false
 
 The call was terminated by the virtual agent or by the user.
 
-To test a payload with the `CALL_CREATED` event, you can use an empty Flow.
+To test a payload with the `CALL_COMPLETED` event, you can use an empty Flow.
 
 Input: Start a call via the Interaction Panel by clicking ![phone](../../../assets/icons/phone.svg) **> Start Call**. The call will either automatically end when the virtual agent terminates the conversation due to inactivity, or you can end the call by clicking **End Call**.
 
