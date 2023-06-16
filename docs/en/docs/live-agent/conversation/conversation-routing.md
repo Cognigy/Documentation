@@ -108,7 +108,7 @@ Condition:
 
 Result: The first two conversations  will be assigned to an Agent 1 and the 2 will be assigned to Agent 2, the Agent 3 will have 1 conversation and Agent 4 will remain unassigned.
 
-Example 3
+Scenario 3
 
 In the table all agents are not available
 
@@ -119,7 +119,7 @@ In the table all agents are not available
 | Agent 3    | 2     | Offline |
 | Agent 4    | 2     | Busy    |
 
-Scenario 1
+Example 1
 
 Condition:
 
@@ -128,22 +128,37 @@ Condition:
 
 Result: all conversations will be unassigned.
 
+Example 2
+
+Condition:
+
+- Automatic Conversation Reassignment is activated 
+- Agent 1 has changed a status to Online
+- 4 conversations are created
+
+Result: When the Agent 1 go back to online, 2 conversations will be assigned to an agent and 2 conversations will remain 
+
+Example 2
+
+Condition:
+
+- Automatic Conversation Reassignment is activated
+- Allows conversation assignment for busy agents is activated
+- 4 conversations are created
+
+Result: The first two conversations will be assigned to an Agent 4 and the 2 will remain unassigned.
+
+
+
 ### Account settings
 
 ### Inbox level
 
 ## Automatic Conversation Reassignment
-<div class="divider"></div>
 
+Live Agent implements a round-robin auto-reassignment system for Conversations. It functions similarly to auto-assignment but operates in real-time based on Agent-related events. These events include:
 
-Live Agent provides a round-robin auto-reassignment system for Conversations. It works in the same way as auto-assignment, except that it happens on real-time Agent related events. These are the following:
+- When an Agent sets their availability to "Offline" or "Away."
+- When an Agent logs out.
 
-- Agent sets their availability to "Offline" (availability can be changed by clicking on the profile thumbnail)
-- Agent logs out
-
-When this happens, the Agent assigned Conversations are re-assigned to other Agents, following the previously mentioned round-robin logic. If there are no Agents online, the Conversations are set to unassigned.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-routing-3.png" width="100%" alt="Live Agent Enable Auto Assignment" />
-  <figcaption>Enable Re Auto Assignment</figcaption>
-</figure>
+In such cases, the Conversations assigned to the Agent are automatically reassigned to other Agents, following the round-robin logic mentioned earlier. If no Agents are online, the Conversations are marked as unassigned.
