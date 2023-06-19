@@ -7,16 +7,18 @@
 
 # Conversation Routing
 
-_Conversation routing_ is the mechanism used to assign and distribute incoming conversations to the appropriate agents for handling. It involves intelligent routing algorithms that consider factors like agent availability and workload to determine the best recipient for each conversation. In Cognigy Live Agent, conversation routing ensures that conversations are efficiently directed to the right agents or teams, enabling timely and effective customer support. This feature optimizes resource utilization and enhances the productivity of human agents.
+_Conversation routing_ is the mechanism used to assign and distribute incoming conversations to the appropriate human agents for handling. It involves intelligent routing algorithms that consider factors like agent availability and workload to determine a recipient for each conversation. In Cognigy Live Agent, conversation routing ensures that conversations are efficiently directed to the right agents or teams, enabling timely and effective customer support. This feature optimizes resource utilization and enhances the productivity of human agents.
 
 In Live Agent, there are two routing modes:
 
 - [Manual](#manual-mode)
 - [Automatic](#automatic-mode)
 
+Conversation routing considers a [limit per agent](../account-settings.md#conversation-limit-per-agent) applied to both Manual and Automatic modes and can only be set up for all Inboxes.
+
 ## Manual Mode
 
-Manual assignment mode can be helpful in scenarios requiring specialized expertise, urgent or high-priority cases, complex or sensitive issues, and VIP or key accounts. It enables organizations to provide personalized support, optimize customer experience, and efficiently handle conversations.
+Manual assignment mode can be helpful in scenarios requiring specialized expertise, urgent or high-priority cases, complex or sensitive issues, and or key customers. It enables organizations to provide personalized support, optimize customer experience, and efficiently handle conversations.
 
 A Conversation can be manually assigned or reassigned to any users with the Live Agent [roles](../roles.md): `Agent`, `Supervisor`, or `Administrator`.
 
@@ -62,13 +64,13 @@ Automatic mode in Live Agent includes two key features: Automatic Assignment and
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
 
-Live Agent provides auto-assignment system for conversations. The **Auto Assignment** setting is activated by default.
+Live Agent provides an auto-assignment system for conversations. The **Auto Assignment** setting is activated by default for all Inboxes. You can change this behavior for a specific Inbox.
 
 There are different scenarios for distributing conversations to human agents based on their online status and workload:
 
 - **Online Agents**. When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
-Unassigned conversations are automatically assigned to agents when the limit threshold is lower than the maximum value, and they take precedence over newly incoming conversations.
-- **Offline Agents**. When a conversation is created in the Inbox, and there aren't agents online with access to it, the system will remain all conversation unassigned.
+Unassigned conversations are automatically assigned to agents when the [limit threshold](../account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
+- **Offline Agents**. When a conversation is created in the Inbox, and there aren't agents online with access to it, the system will remain all conversations unassigned.
 
 To configure auto assignment in your Inbox, follow these steps:
 
@@ -83,14 +85,14 @@ The changes will be applied.
 
 ### Automatic Reassignment
 
-Live Agent provides auto-reassignment system for conversations. The **Allow conversations to be reassigned** setting is activated by default.
+Live Agent provides an auto-reassignment system for conversations. The **Allow conversations to be reassigned** setting is activated by default for all Inboxes. You can change this behavior for a specific Inbox.
 
 The auto-reassignment system operates in real-time, triggered by specific agent-related events. These events include:
 
 - When a human agent changes their availability to `Offline`, `Away`, or `Busy`.
 - When a human agent logs out.
 
-In such instances, the conversations assigned to the human agent are automatically reassigned to other available human agents. If there are no human agents currently online, the conversations are marked as unassigned.
+In such instances, the conversations assigned to the human agent are automatically reassigned to other available human agents. If no human agents are currently online, the conversations are marked as unassigned.
 
 To configure auto reassignment in your Inbox, follow these steps:
 
@@ -103,7 +105,15 @@ To configure auto reassignment in your Inbox, follow these steps:
 
 The changes will be applied.
 
+### Automatic Assignment and Reassignment for Busy Agents
+
+By default, the human agents with a `Busy` status cannot be assigned or reassigned automatically. However, you can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
+
+When the setting is activated, busy agents will be treated as having an `Online` status and following the same assignment and reassignment rules as other available agents.
+
 ## Automatic Mode: Common Scenarios
+
+The routing process depends on incoming data and the combination of settings you have configured at the Account Settings level and Inbox level.
 
 There are various common scenarios or situations relevant to the automatic mode.
 
@@ -124,11 +134,11 @@ Source table:
 
 Conditions:
 
-- No conversation limit per agent.
+- No [conversation limit](../account-settings.md#conversation-limit-per-agent) per agent.
 - 4 conversations are created.
 - Automatic Conversation Reassignment is activated.
 - Automatic Conversation Assignment is activated.
-- Allows conversation assignments for busy agents to be deactivated.
+- Auto Assign Conversations to a Busy Agent is deactivated.
 
 Result: 4 conversations will be assigned to Agent 1.
 
@@ -145,23 +155,51 @@ Source table:
 | Agent 4    | 2     | Offline |
 ```
 
-**Example 1**
+Common conditions: 
 
-Conditions:
-
-- Allows conversation assignments for busy agents to be deactivated.
+- The limit is 2 conversations per agent.
 - 4 conversations are created.
 
-Result: The first two will be assigned to Agent 1, and the two will remain unassigned.
+**Example 1**
+
+Additional conditions:
+
+- Auto Assign Conversations to a Busy Agent is deactivated.
+- Automatic Conversation Assignment is activated.
+- Automatic Conversation Reassignment is activated.
+
+Result: The first two will be assigned to Agent 1, and the next two remain unassigned.
 
 **Example 2**
 
-Condition:
+Additional conditions:
 
-- Allows conversation assignments for busy agents to be activated.
-- 4 conversations are created.
+- Automatic Conversation Assignment is activated.
+- Automatic Conversation Reassignment is activated.
+- Auto Assign Conversations to a Busy Agent is activated.
 
-Result: the first two will be assigned to Agent 1, and the rest two will be assigned to Agent 2.
+Result: The first two conversations will be assigned to Agent 1, and the next two will be assigned to Agent 2.
+
+**Example 3**
+
+Additional conditions:
+
+- Automatic Conversation Assignment is activated.
+- Automatic Conversation Assignment is deactivated.
+- Auto Assign Conversations to a Busy Agent is activated.
+- Agent 1 goes offline.
+
+Result: The first two conversations will remain assigned to Agent 1, and the next two remain unassigned.
+
+**Example 4**
+
+Additional conditions:
+
+- Automatic Conversation Assignment is deactivated.
+- Automatic Conversation Assignment is activated.
+- Auto Assign Conversations to a Busy Agent is activated.
+
+Result: All conversations remain unassigned.
 
 ### Scenario 2
 
@@ -175,31 +213,38 @@ Source table:
 | Agent 3    | 2     | Online |
 | Agent 4    | 2     | Online |
 ```
+
+Common conditions:
+
+- The limit is 2 conversations per agent.
+- Automatic Conversation Reassignment is activated.
+- Automatic Conversation Assignment is activated.
+- Auto Assign Conversations to a Busy Agent is activated or deactivated.
+
 **Example 1**
 
-Condition:
+Additional conditions:
 
 - 4 conversations are created.
 
-Result: The first two conversations will be assigned to Agent 1, and the rest two will be assigned to Agent 2. Agent 3 and Agent 4 will remain unassigned.
+Result: Agent 1 will handle the first two conversations, Agent 2 will handle the next two conversations, while Agent 3 and Agent 4 will remain unassigned.
 
 **Example 2**
 
-Condition:
+Additional conditions:
 
 - 5 conversations are created.
 
-Result: The first two conversations will be assigned to Agent 1, and the two will be assigned to Agent 2. Agent 3 will have one conversation, and Agent 4 will remain unassigned.
+Result: The first two conversations will be assigned to Agent 1, and the next two will be assigned to Agent 2. Agent 3 will have one conversation, and Agent 4 will remain unassigned.
 
-**Example 2**
+**Example 3**
 
-Condition:
+Additional conditions:
 
 - 5 conversations are created.
-- Allows conversation assignments for busy agents to be activated.
-- Agent 1 has changed status to Busy after the conversation assignment.
+- Agent 1 has changed the status to Busy after the conversation assignment.
 
-Result: When Agent 1 has changed status from online to busy, two conversations will be assigned to an agent, and two conversations will remain unassigned.
+Result: The first two conversations will be assigned to Agent 1, and the next two will be assigned to Agent 2. Agent 3 will have one conversation, and Agent 4 will remain unassigned. When Agent 1 has changed the status from `Online` to `Busy`, two conversations will remain assigned to this agent.
 
 ### Scenario 3
 
@@ -214,34 +259,37 @@ Source table:
 | Agent 4    | 2     | Busy    |
 ```
 
+Common conditions:
+
+- The limit is 2 conversations per agent.
+- 4 conversations are created.
+- Automatic Conversation Reassignment is activated.
+- Automatic Conversation Assignment is activated.
+
 **Example 1**
 
-Condition:
+Additional conditions:
 
-- Allows conversation assignments for busy agents to be deactivated.
-- 4 conversations are created.
+- Auto Assign Conversations to a Busy Agent is deactivated.
 
 Result: all conversations will be unassigned.
 
 **Example 2**
 
-Condition:
+Additional conditions:
 
-- Automatic Conversation Reassignment is activated.
-- Agent 1 has changed the status to Online.
-- 4 conversations are created.
+- Auto Assign Conversations to a Busy Agent is deactivated.
+- Agent 1 has changed the status to `Online`.
 
-Result: When Agent 1 goes back online, two conversations will be assigned to an agent, and two conversations will remain unassigned.
+Result: When Agent 1 returns online, two conversations will be assigned to an agent, and two conversations will remain unassigned.
 
 **Example 3**
 
-Condition:
+Additional conditions:
 
-- Automatic Conversation Reassignment is activated.
-- Allows conversation assignments for busy agents to be activated.
-- 4 conversations are created.
+- Auto Assign Conversations to a Busy Agent is activated.
 
-Result: The first two conversations will be assigned to Agent 4, and the two will remain unassigned.
+Result: The first two conversations will be assigned to Agent 4, and the next two remain unassigned.
 
 ### Scenario 4
 
@@ -256,37 +304,40 @@ Source table:
 | Agent 4    | 2     | Offline |
 ```
 
-**Example 1**
+Common conditions:
 
-Conditions:
-
+- The limit is 2 conversations per agent.
 - Automatic Conversation Reassignment is activated.
 - Automatic Conversation Assignment is activated.
-- 4 conversations are created.
+
+**Example 1**
+
+Additional conditions:
+
+- 5 conversations are created.
+- Auto Assign Conversations to a Busy Agent is activated or deactivated.
 
 Result: All conversations are unassigned.
 
 **Example 2**
 
-Conditions:
+Additional conditions:
 
-- Automatic Conversation Reassignment is activated.
-- Automatic Conversation Assignment is activated.
-- Allows conversation assignments for busy agents to be deactivated.
-- Agent 1 has changed status to busy.
-- 4 conversations are created.
+- Auto Assign Conversations to a Busy Agent is deactivated.
+- Agent 1 has changed the status to `Busy`.
 
 Result: All conversations are unassigned.
 
 **Example 3**
 
-Conditions:
+Additional conditions:
 
-- Automatic Conversation Reassignment is activated.
-- Automatic Conversation Assignment is activated.
-- allows conversation assignments for busy agents to be activated.
-- Agent 1 has changed status to busy.
-- 4 conversations are created.
+- Auto Assign Conversations to a Busy Agent is activated.
+- Agent 1 has changed the status to `Busy`.
 
-Result: When Agent 1 has changed status from offline to busy, two conversations are assigned to this human agent.
+Result: When Agent 1 has changed the status from `Offline` to `Busy`, two conversations are assigned to this human agent.
 
+## More Information
+
+- [Inboxes](../inboxes.md)
+- [Account Settings](../account-settings.md)

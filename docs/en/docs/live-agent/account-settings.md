@@ -6,21 +6,9 @@ hidden: false
 ---
 # Account Settings
 
-Here the general settings for an account can be changed, such as name and language.
+_Account Settings_ allow you to modify various general settings for Live Agent installation, including the account name, language preferences, conversation logic, email and push notifications.
 
-Click on the **Settings** button in the Live Agent Dashboard sidebar.
-
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
-  <figcaption>Live Agent Dashboard Settings</figcaption>
-</figure>
-
-Click on Account Settings. Now you are on the Account Settings screen.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-account-settings.png" width="100%" alt="Live Agent Account Settings" />
-  <figcaption>Account Settings</figcaption>
-</figure>
+To access the Account Settings, navigate to the left-side menu of Live Agent and click **Settings**, then select **Account Settings**.
 
 ## Name
 
@@ -32,14 +20,21 @@ The language is the language of your account. All available languages will be di
 
 ## Conversation Limit per Agent
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-account-settings-conversations-limit-agent.png" width="100%" alt="Live Agent Account Settings" />
-  <figcaption>Account Settings Conversation Limit per Agent</figcaption>
-</figure>
+The conversation limit per agent is the maximum number of conversations that a human agent can handle simultaneously. If all the agents reach the limit in an Inbox, new conversations will be unassigned, waiting for new agents to pick them up when their capacity decreases. The conversation limit applies to the total number of conversations across all inboxes.
 
-The conversation limit per agent is the maximum number of conversations an agent can handle simultaneously. If all the agents reach the limit in an inbox, the new conversations will be unassigned, waiting for new agents to pick them up when their capacity decreased. It counts the number of conversations across inboxes.
+For example, the human agent is assigned to inboxes A and B, and the conversation limit is set to 2. In this case, the agent can handle two conversations simultaneously, regardless of the inbox they belong to.
 
-For example, suppose the agent is assigned to inbox A and B, and the conversation limit is set to 2. In that case, the agent can handle two conversations simultaneously independently of the inbox they belong to.
+To set up a conversation limit per agent, follow these steps:
+
+1. Go to **Settings > Account Settings**.
+2. On the **Account Settings** page, go to the **General Settings** section.
+3. Activate the **Set conversation limit for agents** option.
+4. In the **Max number of conversations per agent** field, specify the desired limit for agents.
+5. In the upper-right corner, click **Update Settings**.
+
+The limit will be applied to all Inboxes.
+
+If you want to remove the limit, activate the **No conversation limit for agents** and click **Update Settings**.
 
 ## Auto Set Away
 
@@ -91,7 +86,7 @@ When the checkbox for automatically deleting resolved conversations is marked, t
 
 By default, you can manually assign conversations to human agents if they are busy.
 
-To automate this process, you can activate the **Assign conversation to a busy agent** setting.
+To automate this process, you can activate the **Assign conversation to a busy agent** setting. 
 
 ## Notifications
 

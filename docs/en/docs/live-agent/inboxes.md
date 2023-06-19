@@ -7,14 +7,7 @@
 
 An Inbox shows the connection of Cognigy.AI to Live Agent. You can have unlimited Inboxes in your Live Agent account. Also, there are some settings you can change in already existing Inboxes.
 
-Click on the sidebar **Settings** button on the Live Agent Dashboard.
-
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
-  <figcaption>Live Agent Dashboard Settings</figcaption>
-</figure>
-
-Click on the **Settings** button of a listed Inbox.
+To access the Inboxes, navigate to the left-side menu of Live Agent and click **Settings**, then select **Inboxes**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-inboxes-home.png" width="100%"  alt="Live Agent Inboxes Home Screen" />

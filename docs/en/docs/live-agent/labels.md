@@ -9,15 +9,7 @@ Labels help you to categorize and prioritize Conversations. You can assign a Lab
 
 Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colors to a Label. This makes it easier to identify the Label. You will be able to display the Label on the sidebar to filter Conversations quickly.
 
-Click on the sidebar **Settings** on the Live Agent Dashboard.
-
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
-  <figcaption>Live Agent Dashboard Settings</figcaption>
-</figure>
-
-
-Click on the sidebar **Labels** and then click Add Label on the right-hand side.
+To access the Labels, navigate to the left-side menu of Live Agent and click **Settings**, then select **Labels**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-labels-home.png" width="100%" alt="Live Agent Labels Home Screen" />
