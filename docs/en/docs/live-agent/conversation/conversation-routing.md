@@ -185,7 +185,7 @@ Result: The first two conversations will be assigned to Agent 1, and the next tw
 Additional conditions:
 
 - Automatic Conversation Assignment is activated.
-- Automatic Conversation Assignment is deactivated.
+- Automatic Conversation Reassignment is deactivated.
 - Auto Assign Conversations to a Busy Agent is activated.
 - Agent 1 goes offline.
 
@@ -196,7 +196,7 @@ Result: The first two conversations will remain assigned to Agent 1, and the nex
 Additional conditions:
 
 - Automatic Conversation Assignment is deactivated.
-- Automatic Conversation Assignment is activated.
+- Automatic Conversation Reassignment is activated.
 - Auto Assign Conversations to a Busy Agent is activated.
 
 Result: All conversations remain unassigned.
