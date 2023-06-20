@@ -62,7 +62,7 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Lexicons**.
 2. Click **+ New Lexicon**.
-3. In the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result.
+3. In the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result. It helps generate a more accurate result. To ensure that the generated content meets the desired expectations, fill in both fields. Relying solely on the title without using the description field will not produce the intended results.
 4. Go to the **Lexicon Entry Generation** setting, and activate **Generate Lexicon Entries**.
 5. Select **Lexicon language** from the list.
 6. Set the number of entries (lexicon units).
@@ -105,7 +105,7 @@ To use Generative AI technology for creating Intent example sentences, do the fo
 1. Open the existing Flow.
 2. In the upper-right corner of the **Flow Editor** page, select **NLU**.
 3. On the **Intent** tab, click **Create Intent**.
-4. Specify a unique name for the Intent and add a relevant description. It helps generate proper sentences.
+4. Specify a unique name for the Intent and add a relevant description. It helps generate proper sentences. It helps generate a more accurate result. To ensure that the generated content meets the desired expectations, fill in both fields. Relying solely on the title without using the description field will not produce the intended results.
 5. Activate the **Generate Example Sentences** setting.
 6. Set the number of generative sentences.
 7. Generate new sentences by clicking **Create**.
