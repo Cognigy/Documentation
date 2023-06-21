@@ -32,11 +32,11 @@ Click on the **View All The Notifications** to see all the notifications.
 
 ### Notification Types
 
-You can customize the behaviour of notifications received. Here is a list of them:
+You can customize the behavior of notifications received. Here is a list of them:
 
 - A new conversation is created
 - A conversation assigned to you
 - Your user is mentioned in a conversation
 - A new message is created in an assigned conversation
 
-More details can be found under [Profile Settings]({{config.site_url}}live-agent/profile-settings/#notifications)
+More details can be found under [Profile Settings](profile-settings.md#notifications)

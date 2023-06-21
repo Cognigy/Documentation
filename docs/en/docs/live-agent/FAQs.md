@@ -52,7 +52,10 @@ Head over to [Labels](../live-agent/labels.md) for more information.
 Head over to [Conversations Workflow](../live-agent/conversation/conversation-workflow.md) for more information.
 
 ### How to add Agents to an Inbox?
-Administrator users can only do this action. Navigate to ***"Settings"*** > ***"Inboxes"***, look for the Inbox to be edited and click on the settings icon. Then click on the tab ***"Collaborators"*** and pick the Agent name. For updating the current inbox, click on the ***"Update"*** button.
+Administrator users can only do this action.
+Navigate to ***"Settings"*** > ***"Inboxes,"*** look for the Inbox to be edited and click on the settings icon.
+Then click on the tab ***"Collaborators"*** and pick the Agent name.
+For updating the current inbox, click on the ***"Update"*** button.
 
 Head over to [Inboxes](../live-agent/inboxes.md#inbox-collaborators) for more information.
 
@@ -82,7 +85,7 @@ Head over to [File Upload Antivirus Scan Helm Values](../live-agent/installation
 Under the profile menu, there is a link called "Cognigy.AI" that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values](../live-agent/installation/helm-values/helm-values.md#urls) for configuring it.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-link-cognigi.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
+<img src="{{config.site_url}}live-agent/images/LA-link-cognigy.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
   <figcaption>Link to Cognigy.AI</figcaption>
 </figure>
 
@@ -97,8 +100,9 @@ The OData service returns data belonging to your account.
 
 Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
 
-### Why is the OData endpoint throwing an unauthorised error while querying?
-While getting an unauthorised error, check that the API access token belongs to a user with the administrator role for the account used in the query.
+### Why is the OData endpoint throwing an unauthorized error while querying?
+While getting an unauthorized error,
+check that the API access token belongs to a user with the administrator role for the account used in the query.
 
 ### How to retrieve all content from a particular collection? (e.g. Conversation, Message)
 The following filtering query can be performed:

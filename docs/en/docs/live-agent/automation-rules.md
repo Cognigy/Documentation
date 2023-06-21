@@ -19,24 +19,24 @@ Click on the **Automation** inside the setting section.
 ### Automation Events
 Automation Events are triggers on when you want your automation executed. Live agent currently supports three kinds of events.
 
-- Conversation created - this will trigger when a new conversation is created in your system. This will include conversations created by all channels.
-- Conversation updated - this will trigger when a conversation is updated.
-- Message created - this will be triggered when any new message inside a conversation is created.
+- Conversation created — this will trigger when a new conversation is created in your system. This will include conversations created by all channels.
+- Conversation updated — this will trigger when a conversation is updated.
+- Message created — this will be triggered when any new message inside a conversation is created.
 
 ### Automation Conditions
 
 Conditions are criteria that will be checked before the action is executed.
 The conditions are evaluated in the order they are defined.
 
-| Conversation Created   | Conversation Updated   | Message Updated     |
-|------------------------|------------------------|---------------------|
-| Conversation Status     | Conversation Status    | Message Type        |
-|                        | Assignee               | Message Contains    |
-|                        | Team                   |                     |
+| Conversation Created | Conversation Updated | Message Updated  |
+|----------------------|----------------------|------------------|
+| Conversation Status  | Conversation Status  | Message Type     |
+|                      | Assignee             | Message Contains |
+|                      | Team                 |                  |
 
 ### Automation Actions
 
-Actions are tasks/processes that are executed whenever respective conditions are met.
+Actions are tasks/processes that are executed whenever the respective conditions are met.
 
 Live agent currently supports the following actions:
 
@@ -60,12 +60,13 @@ Click on the **+ Add Automation Rule** button to open the Automation creation mo
 5. Add actions.
 6. You can chain multiple conditions with the `AND` or `OR` operator, like in the example below.
 
-Example - Assigning a conversation to a team when the agent assist is active, and Status is Open when a new conversation is created.
+Example — Assigning a conversation to a team when an Agent Assist installation is active,
+ and the Status is Open when a new conversation is created.
 
 - Add a name and a description
 - Select event as Conversation Created
 - Add two conditions and join them with the AND operator, Condition 1 - Conversation Status as Open and Condition 2 - Inbox as Agent Assist bot-default from the dropdown.
-- Add an action - Assign a team and select the team sales from the dropdown. (A team needs to be created before)
+- Add an action — Assign a team and select the team sales from the dropdown. (A team needs to be created before)
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-add-automation-rules.png" width="100%" alt="Live Agent Add Automation Rules" />
@@ -74,7 +75,7 @@ Example - Assigning a conversation to a team when the agent assist is active, an
 
 ### Editing Automations
 
-To edit an Automation, click on the **Edit** icon from the Automations list you want to edit.
+To edit an Automation, click on the **Edit** icon from the Automation list you want to edit.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-edit-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />
@@ -92,7 +93,9 @@ This will create a replica of the automation with the same conditions and action
 </figure>
 
 ### Deleting Automations
-To delete an automation, click on the delete button from the list. Note that this is permanent and cannot be undone.
+
+To delete an automation rule, click on the **Delete** button from the list.
+Note that this is permanent and cannot be undone.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-delete-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />

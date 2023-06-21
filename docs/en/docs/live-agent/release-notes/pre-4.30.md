@@ -17,7 +17,7 @@
 
 ### Bugfixes
 
-- Fixed a bug where conversations preview message for adaptive cards was not displayed properly
+- Fixed a bug where conversation preview messages for adaptive cards were not displayed properly
 
 ## 4.28.0
 
@@ -25,9 +25,9 @@
 
 ### Features
 
-- Add the new supervisor dashboard under the "Reports" section, including information about agents' availability and conversations statuses.
+- Add the new supervisor dashboard under the "Reports" section, including information about agents' availability and conversation statuses.
 
-- Add the new notification centre that makes it quick to access the latest notifications.
+- Add the new notification center that makes it quick to access the latest notifications.
 
 ### Improvements
 
@@ -63,7 +63,7 @@
 
 - Fixed a bug where the website favicon didn't change, and the notification sound was not played while receiving new messages
 
-- Fixed a bug where Cognigy.AI multi-tenant users were not able to log in into the proper Cognigy.AI organisation using OAuth login
+- Fixed a bug where Cognigy.AI multi-tenant users were not able to log in into the proper Cognigy.AI organization using OAuth login
 
 - Fixed a bug where agents were not notified about conversation assignment the first time the conversation was created and auto-assigned to them
 
@@ -75,7 +75,7 @@
 
 - Improved by fixing security vulnerability CVE-2022-28391 affecting the OData service
 - Improved by adding optional antivirus scan with ClamAV on file uploads
-- Improved by adding the section "Previous Conversations" to the conversations view right panel to allow agents see the rest of the conversations with the same contact
+- Improved by adding the section "Previous Conversations" to the conversations view a right panel to allow agents to see the rest of the conversations with the same contact
 
 ## 4.24.0
 

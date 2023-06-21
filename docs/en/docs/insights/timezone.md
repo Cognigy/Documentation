@@ -23,14 +23,14 @@ you compare it with Insights.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
 
-By default, **we use timezone preferences of your device**. You can override this  in "My Profile". 
+By default, Insights uses timezone preferences of your device. You can override this in **My Profile**. 
 
 This comes handy if you travel a lot and your device timezone gets updated by your location, or you may have a multinational Agent with the users all over the globe.
 
 To change timezone preferences:
 
 - Click on the user icon in the top-right corner.
-- Select "My Profile".
+- Select **My Profile**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/user-menu-my-profile.png" width="50%" alt="User menu with 'My profile' option" />

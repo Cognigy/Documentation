@@ -16,7 +16,8 @@ Click on the profile thumbnail in the bottom left-hand side of the screen, next 
 
 ## User Profile data
 
-In this section, the user profile data can be changed. Currently, user can customise the profile image and the display name.
+In this section, the user profile data can be changed.
+Currently, user can customize the profile image and the display name.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-profile.png" width="100%" alt="Live Agent Profile Profile " />
@@ -38,11 +39,16 @@ The rest of the user data, such as email, full name and password, need to be upd
 
 You can customize the behavior of notifications.
 
-Starting from Cognigy 4.45, you can configure only Audio Notifications. Push and email notifications are moved to [Account settings](account-settings.md#notifications) and can only be controlled by administrators. If the administrator has not yet changed the push and email notification settings, a human agent still have the opportunity to change them in the Profile Settings.
+Starting from Cognigy 4.45, you can configure only Audio Notifications.
+Push and email notifications are moved to [Account settings](account-settings.md#notifications)
+and can only be controlled by administrators.
+If the administrator has not yet changed the push and email notification settings,
+a human agent still has the opportunity to change them in the Profile Settings.
 
 ## API Access Token
 
-Here you can also find the user access token. This is used for the Live Agent API and its actions are limited by the user role.
+Here you can also find the user access token.
+This is used for the Live Agent API, and its actions are limited by the user role.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />

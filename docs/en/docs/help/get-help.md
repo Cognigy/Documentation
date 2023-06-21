@@ -10,7 +10,7 @@
 
 <div class="divider"></div>
 
-Whenever you feel stuck or encounter a problem on our platform do not hesitate to ask for help. There's many ways of getting help, some of which we're describing below.
+Whenever you feel stuck or encounter a problem on our platform, do not hesitate to ask for help. There's many ways of getting help, some of which we're describing below.
 
 ## In-Product Contextual Help
 <div class="divider"></div>
@@ -67,7 +67,7 @@ In case you've found a bug or need technical assistance, you can file a support 
 
 <div class="divider"></div>
 
-For a better and faster handling of your ticket you should provide as much information as you can give us.
+For a better and faster handling of your ticket, you should provide as much information as you can give us.
 
 The following sections describe recommended attachments and information you could send us to accelerate the ticket handling process. 
 
@@ -77,10 +77,10 @@ For an issue which you can't really associate with a specific resource (flow, en
 
 ## Problems with a Flow
 
-The ticket for a problem with a flow should have the Flow and all it's dependencies attached.
+The ticket for a problem with a flow should have the Flow and all its dependencies attached.
 
 You can also attach a screenshot of the logs (see [Logs]({{config.site_url}}ai/resources/test/logs/)) to the ticket. 
 
 ## Problems with the UI
 
-Add - in addition to your description - a screenshot of the bug to your ticket.
+In addition to your description, add a screenshot of the bug to your ticket.

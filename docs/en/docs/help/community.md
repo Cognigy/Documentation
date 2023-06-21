@@ -25,4 +25,4 @@ Sign in to our Help Center if you like to actively contribute and post articles 
 
 <div class="divider"></div>
 
-Feel free to post questions, answers and ideas in our community platform.
+Feel free to post questions, answers and ideas on our community platform.
