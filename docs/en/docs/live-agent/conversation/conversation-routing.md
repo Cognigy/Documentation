@@ -81,7 +81,7 @@ There are different scenarios for distributing conversations to human agents bas
 
 - **Online Agents**. When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
 Unassigned conversations are automatically assigned to agents when the [limit threshold](../account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
-- **Offline Agents**. When a conversation is created in the Inbox, and there aren't agents online with access to it, the system will remain all conversations unassigned.
+- **Offline Agents**. When a conversation is created in the Inbox, and there are no agents online with access to it, the system will remain all conversations unassigned.
 
 To configure auto assignment in your Inbox, follow these steps:
 
