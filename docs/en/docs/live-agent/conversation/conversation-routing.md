@@ -157,7 +157,7 @@ Conditions:
 - Automatic Conversation Assignment is activated.
 - Auto Assign Conversations to a Busy Agent is deactivated.
 
-Result: Agent 1 receives the first conversation, Agent 2 receives the second, Agent 1 gets the third, and Agent 2 gets the fourth.
+Result: Agent 1 receives the first and forth conversations, Agent 2 receives the second, Agent 3 gets the third.
 
 ### Scenario 1
 
