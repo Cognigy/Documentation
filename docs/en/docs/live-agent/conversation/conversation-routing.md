@@ -71,7 +71,8 @@ Live Agent provides an auto-assignment system for conversations based on _round-
 When set up, the action lists users and assigns conversations one by one. For example, if your Customer Support team consists of three users, the first conversation goes to Alex, the second to David, and the third to Sara. When the fourth conversation arrives, the cycle starts again, and it will be assigned to Alex.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}live-agent/images/round-robin.png" width="70%" />
+    <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/round-robin.png" width="70%" />
+    <figcaption>Round-robin approach</figcaption>
 </figure>
 
 You can configure the auto-assignment system by using the **Auto Assignment** setting. This setting is activated by default for all Inboxes. You can change this behavior for a specific Inbox.
@@ -95,7 +96,7 @@ The changes will be applied.
 
 ### Automatic Reassignment
 
-Live Agent provides an auto-reassignment system for conversations. 
+Live Agent provides an auto-reassignment system for conversations. This system follows a round-robin approach, similar to [automatic assignment](#automatic-assignment). 
 
 The auto-reassignment system operates in real-time, triggered by specific agent-related events. These events include:
 
