@@ -122,7 +122,7 @@ The changes will be applied.
 
 By default, human agents with `Busy` status cannot be assigned or reassigned automatically.
 
-If an agent is already assigned conversations before they become busy, those assigned conversations will remain in the Agent Queue. However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
+If an agent is already assigned conversations before they become busy, those assigned conversations will remain in the [Agent Queue](agent-queue.md). However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
 
 You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
 
