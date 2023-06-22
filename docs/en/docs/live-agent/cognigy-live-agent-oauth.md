@@ -37,10 +37,7 @@ The following list contains the common errors that can be shown while using the 
 
 ### Something is wrong with the OAuth configuration
 
-This is related to the configuration for the communication between the Cognigy.AI and Live Agent APIs.
-Review the configuration for Live Agent in the [Helm Values](../live-agent/installation/helm-values/helm-values.md#oauth) section
-and also the Cognigy.AI configmap with the Live Agent API endpoints and client data.
-
+The problem relates to how the Cognigy.AI and Live Agent APIs are set up to communicate. To resolve this, you must review and double-check the configuration for Live Agent in the [Helm Values](../live-agent/installation/helm-values/helm-values.md#oauth) section. Additionally, verify the Cognigy.AI configmap containing the Live Agent API endpoints and client data.
 ### The user organisation `{Organisation ID}` was not found in the system
 
 This error message indicates that there is no Live Agent account associated with the specified Cognigy.AI organization. To resolve this, you need to set up the organization in Live Agent. Please refer to the [Cognigy Live Agent Setup](../ai/handover-providers/live-agent-setup/live-agent-setup-org.md) guide for instructions on how to do this.
