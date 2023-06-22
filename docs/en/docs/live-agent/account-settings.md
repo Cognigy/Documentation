@@ -48,7 +48,8 @@ For example, suppose the agent is assigned to inbox A and B, and the conversatio
   <figcaption>Account Settings Auto Set Away</figcaption>
 </figure>
 
-The Auto Set Away option is used to automatically set the agent as away when the agent is not active. This means the agent is not performing any action into the browser window while it is opened. When the user perform an action, it will be set back to online state automatically.
+The Auto Set Away option is used to automatically set the agent as away when the agent is not active. This means the agent is not performing any action into the browser window while it is opened. 
+When the user performs an action, it will be set back to online state automatically.
 
 >Note: This does not work if the Live Agent is closed. In this case, the user is set to offline automatically when the browser window is closed.
 
@@ -59,7 +60,7 @@ The Auto Set Away option is used to automatically set the agent as away when the
   <figcaption>Account Settings Attachment TTL</figcaption>
 </figure>
 
-The Attachment TT option automatically deletes the attachments in messages of all the account conversations after a specific time. The time is set in days. It is disabled by default.
+The Attachment TT option automatically deletes the attachments in messages of all the account conversations after a specific time. The time is set in the past days. It is disabled by default.
 
 ## Auto Resolve
 
@@ -74,7 +75,8 @@ The Auto Resolve Duration option automatically resolves the conversation after a
 
 ### Auto Resolve Action
 
-The Auto Resolve Action option is used to resolve or abandon a conversation automatically. If the Auto Resolve Action option is set to **Resolve**, the conversation will be resolved. If the Auto Resolve Action option is set to **Abandon**, the conversation will be abandoned. Filters can be applied based on these statuses.
+The Auto Resolve Action option is used to resolve or abandon a conversation automatically. If the Auto Resolve Action option is set to **Resolve**, the conversation will be resolved. 
+If the **Auto Resolve Action** option is set to **Abandon**, the conversation will be abandoned. Filters can be applied based on these statuses.
 
 ### Automatically Delete Resolved Conversations
 
@@ -121,4 +123,4 @@ The Account ID is the unique identifier of your account. It is used in the Live 
 
 ### Version
 
-The version is the version of the Cognigy Live Agent running. To check the features and fixes for each version, head over to [Release Notes]({{config.site_url}}live-agent/release-notes/)
+The version is the version of the Cognigy Live Agent running. To check the features and fixes for each version, head over to [Release Notes](../release-notes/release-notes.md)

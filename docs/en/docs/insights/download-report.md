@@ -12,7 +12,7 @@
 
 Every widget on the Insights dashboards provides a '**Download report as .csv file**' item in a dropdown menu.
 
-To download a report proceed as follows:
+To download a report, proceed as follows:
 
 - Click on the **secondary actions menu** in the top right corner of a dashboard widget. 
 - Select "**Download report as .csv file**" with another click. The report will now be stored in a csv file.

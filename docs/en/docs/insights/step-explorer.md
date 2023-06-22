@@ -8,7 +8,9 @@
 ## Description
 <div class="divider"></div>
 The main purpose of Step Explorer is to help you understand how the customer progresses through a conversation. The Step Explorer can visualize all significant situations/step paths of a conversation through the Flow (customers reactions to Virtual Agents answers and questions, when did the customer drop off, etc…) in a defined time period.
-Based on these findings you are able to evaluate may improve your Virtual Agent for better understanding in order to increase e.g. the number of orders or bookings or to reduce the number of support requests.
+Based on these findings you are able to evaluate
+may improve your Virtual Agent for better understanding in order to increase,
+for example, the number of orders or bookings or to reduce the number of support requests.
 The Step Explorer allows to explore conversational steps and can show how these steps are interconnected with each other.
 
 <figure>
@@ -38,7 +40,12 @@ When the Step Explorer is selected, the agent name is displayed in the top left 
 
 **Starting Step**
 
-Conversational [steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations]({{config.site_url}}insights/step-explorer/#annotations) in the “Analytics steps” section e.g. with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point.
+Conversational [steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) are only available
+and displayed here
+when you first have configured the Node settings in your Flow with [annotations]({{config.site_url}}insights/step-explorer/#annotations) in the “Analytics steps”
+section.
+For example, with 'Welcome New Caller'.
+Then you can select the starting step here for Step Explorer processing starting at this point.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/c54d50d-Step_Explorer_Starting_Step_250.svg" width="60%" />
@@ -69,14 +76,17 @@ If you apply the backward direction, the step report starts at the last step (fr
 <div class="divider"></div>
 Before working with Step Explorer you need to annotate certain components in Cognigy.AI. Annotations can be defined in the Node settings of your configured Flow. 
 Start the Node Editor, go to “Settings” and enter a meaningful annotation in the “Analytics step” section. The annotation should have an informative reference to the configured node. 
-When you want to annotate for example a Say Node which starts a customer conversation with a welcome you can enter “Greetings” or “Welcome New Caller”. For Order Intents, you can enter the “Analytics step“ field for example “Order Intent triggered” as an annotation.
+When you want to annotate, for example,
+a Say Node which starts a customer conversation with a welcome you can enter “Greetings” or “Welcome New Caller”.
+For Order Intents, you can enter the **Analytics step** field.
+For example, “Order Intent triggered” as an annotation.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/c2f0e52-Say_Node_Analytics_step_setting_300.svg" width="60%" />
   <figcaption>Say Node editor with annotation in the "Analytics step" section</figcaption>
 </figure>
 
-The more Flow Nodes you name with annotations in the “Analytics step” sections, the more fine graduation you will get with the Step Explorer data display.
+The more Flow Nodes you name with annotations in the “Analytics step” sections, the finer graduation you will get with the Step Explorer data display.
 
 !!! danger
     The Step Explorer absolutely requires defined annotations for the evaluation and display of analytics data.
@@ -84,11 +94,11 @@ The more Flow Nodes you name with annotations in the “Analytics step” sectio
 The Step Explorer provides the following advantages:
 
 - Order intent understanding (how many customers have ordered something).
-- Understanding of customer reactions at certain steps (how many, how often,….).
+- Understanding of customer reactions at certain steps (how many, how often).
 - You can define different time frames for evaluation.
 - You can display the step report both in "Forward" and "Backward" directions.
-- You can get the step report beginning at a „Starting Step“.
-- You can click on a  step to see details.
+- You can get the step report beginning at a Starting Step.
+- You can click on a step to see details.
 - You can select available snapshots from different Virtual Agent versions to compare them for improvement purposes.
 
 ## Analysis
@@ -99,11 +109,11 @@ The Step Explorer provides the following advantages:
   <figcaption>Step Explorer: Analytic steps displayed in <b>forward direction</b></figcaption>
 </figure>
 
-When local filter "Forward Direction"  is set, the Step Explorer displays the conversations analysis results with the conversation's start on the left side to the conversation's end on the right side. 
+When local filter "Forward Direction" is set, the Step Explorer displays the conversation analysis results with the conversation's start on the left side to the conversation's end on the right side. 
 
-Using the previously in Cognigy.AI defined annotations in your Flow Nodes the Step Explorer can analyze the conversation steps and every annotation is assigned to a specific step. The corresponding conversation data in relation to the defined steps lead to a percentage distribution which the Step Explorer visualizes on the screen.
+Using the previously in Cognigy.AI defined annotations in your Flow Nodes, the Step Explorer can analyze the conversation steps and every annotation is assigned to a specific step. The corresponding conversation data in relation to the defined steps lead to a percentage distribution which the Step Explorer visualizes on the screen.
 
-**Analysis example:**  
+**Analysis example:** 
 100% of the users went through the starting step at the beginning of a conversation.
 
 99% of the users who started a conversation went through a welcome as a new caller.
@@ -118,7 +128,10 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
 
 !!! note
     The red marked areas of a step represent the number of users who dropped off at that point. 
-    You may take an early "drop off" in a conversation to improve your Agent and to inspect with our [Message Explorer]({{config.site_url}}insights/message-explorer/) what did the Virtual Agent say before the user dropped off.
+    You may take an early "drop off"
+in a conversation to improve your Agent
+and to inspect with our [Message Explorer](message-explorer.md)
+what the virtual agent said before the user dropped off.
 
 - You can get more details displayed when you hover the mouse over any step.   
 
@@ -136,9 +149,9 @@ Using the previously in Cognigy.AI defined annotations in your Flow Nodes the St
   <figcaption>Step Explorer: Analytic steps displayed in <b>backward direction</b></figcaption>
 </figure>
 
-- You can click on a step, for example on "Make an appointment", and the Step Explorer will change the displayed analysis by a separated display of the selected step and the related analytics data in detail.  
+- You can click on a step, for example, on "Make an appointment", and the Step Explorer will change the displayed analysis by a separated display of the selected step and the related analytics data in detail.  
 
-Fields with an 'arrow' icon are placeholders for hidden steps. These hidden steps will be displayed only when you click on an 'arrow field'. Using arrow fields make sure that the displayed steps are clearly arranged.
+Fields with an 'arrow' icon are placeholders for hidden steps. These hidden steps will be displayed only when you click on an 'arrow field'. Using arrow fields, make sure that the displayed steps are clearly arranged.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/d54affb-Step_Explorer_make_appointment_n4.png" width="100%" />
@@ -151,7 +164,7 @@ Fields with an 'arrow' icon are placeholders for hidden steps. These hidden step
 **Additional information via hover field**: 66 % of the users who started a conversation made an appointment (the number found by Step Explorer: 5,477).
 
 48% of the users who started to make an appointment needed explanations of what the Agent just did.
-89% of them who needed explanations completed the booking and all of them dropped off afterward (100%).
+89% of them who needed explanations completed the booking, and all of them dropped off afterward (100%).
 ____________________________________________________________
 
 48% of the users who started to make an appointment completed the booking.
@@ -168,7 +181,7 @@ ____________________________________________________________
 
 **Example step "Completed Booking" and evaluation of additional displayed analytics data**:
 
-89% of the users who needed explanations completed the booking and all of them dropped off afterward (100%; end of conversation).
+89% of the users who needed explanations completed the booking, and all of them dropped off afterward (100%; end of conversation).
 
 **additional information (via hover function)**: 
 
@@ -182,7 +195,10 @@ The Step Explorer found 2,368 as a total number of completed bookings.
 </figure>
 
 ### Open Flow 
-To check your Flow or to improve the configuration the Step Explorer provides the context menu  **"Open Flow"** option when right-clicking on a specific step, for example "Make an Appointment". Clicking the button leads you to the Flow in Cognigy.AI.
+To check your Flow or to improve the configuration,
+the Step Explorer provides the context menu **Open Flow** option when right-clicking on a specific step.
+For example, "Make an Appointment".
+Clicking the button leads you to the Flow in Cognigy.AI.
 
 !!! note
     The context menu "Open Flow" is not available on "drop off" steps or collapsed steps (steps with arrows). 
@@ -202,7 +218,7 @@ To check your Flow or to improve the configuration the Step Explorer provides th
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
 
-Calling context menu on a Step defined in a Node will present "Open Node" menu
+Calling the context menu on a Step defined in a Node will present the "Open Node" menu
 option. Clicking it opens the Flow Editor with editing mode for the respective Node.
 
 <figure>
@@ -212,24 +228,24 @@ option. Clicking it opens the Flow Editor with editing mode for the respective N
 
 ### Go to Transcript Explorer
 
-In case you want to evaluate the early drop-offs during conversations to improve your Virtual Agent a right-click on a 'Drop off' step provides a context menu "Go to Transcript Explorer" which allows you to check the conversations by searching keywords representing the steps when the customer drops off.
+In case you want to evaluate the early drop-offs during conversations to improve your Virtual Agent, a right-click on a 'Drop off' step provides a context menu "Go to Transcript Explorer", which allows you to check the conversations by searching keywords representing the steps when the customer drops off.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/a7e0fdb-Step_Explorer_early_drop_off_situation_4.svg" width="100%" />
   <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
 </figure>
 
-## Inspecting conversations by taken Steps
+## Inspecting conversations by Steps taken
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
 
-In the context menu of a Step there are two options for inspecting the conversations.
-Activating one of them will open Transcript Explorer showing following conversations:
+In the context menu of a Step, there are two options for inspecting the conversations.
+Activating one of them will open Transcript Explorer showing the following conversations:
 
 - "Open conversations that took this path"
     This option shows conversation that took exactly the path of the chosen Step.
-    On the illustration below we have called a context menu on "Completed Booking" Step.
-    Open conversations that took this path will show only conversations which contained the following Step Path: "Welcome New Caller" - "Make an Appointment" - "Explain" - "Completed Booking" Steps. 
+    In the illustration below, we have called a context menu on "Completed Booking" Step.
+    Open conversations that took this path will show only conversations, which contained the following Step Path: "Welcome New Caller" - "Make an Appointment" - "Explain" - "Completed Booking" Steps. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/conversation-path-step-explorer.png" width="100%" />
@@ -237,7 +253,7 @@ Activating one of them will open Transcript Explorer showing following conversat
 </figure>
 
 - "Open conversations which contain this step"
-    This option shows all the conversations which have *at least* chosen Step, the exact path in this case is not important.
+    This option shows all the conversations which include the chosen Step. The exact path in this case is not important.
 
 
 ## More information

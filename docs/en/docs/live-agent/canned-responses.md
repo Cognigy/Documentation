@@ -7,7 +7,7 @@ hidden: false
 
 # Canned Responses
 
-Canned responses are presaved reply templates allowing human agents to respond to a conversation quickly.
+Canned responses are pre-saved reply templates allowing human agents to respond to a conversation quickly.
 
 Canned Response templates provide support for HTML formatting.
 

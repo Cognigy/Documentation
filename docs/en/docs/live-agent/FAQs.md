@@ -52,8 +52,14 @@ Head over to [Labels](../live-agent/labels.md) for more information.
 Head over to [Conversations Workflow](../live-agent/conversation/conversation-workflow.md) for more information.
 
 ### How to add Agents to an Inbox?
-Administrator users can only do this action. Navigate to ***"Settings"*** > ***"Inboxes"***, look for the Inbox to be edited and click on the settings icon. Then click on the tab ***"Collaborators"*** and pick the Agent name. For updating the current inbox, click on the ***"Update"*** button.
+Only users with `Administrator` roles can perform this action. 
 
+To add an Agent to an Inbox, follow these steps:
+
+1. In the left-side menu, navigate to **Settings**, then select **Inboxes**.
+2. Locate the Inbox that you want to edit and click the **Settings** icon.
+3. On the **Collaborators** tab, select the Agent name from the **Agents** list.
+4. Apply changes by clicking **Update**.
 Head over to [Inboxes](../live-agent/inboxes.md#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
@@ -97,21 +103,23 @@ The OData service returns data belonging to your account.
 
 Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
 
-### Why is the OData endpoint throwing an unauthorised error while querying?
-While getting an unauthorised error, check that the API access token belongs to a user with the administrator role for the account used in the query.
-
+### Why is the OData endpoint throwing an unauthorized error while querying?
+If you encounter an unauthorized error, ensure that the API access token belongs to a user with the `Administrator` role for the account being used in the query.
 ### How to retrieve all content from a particular collection? (e.g. Conversation, Message)
 The following filtering query can be performed:
 
-e.g. ```http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'```
+For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'`.
 
 It will return all the fields for the Conversation model created before 23/11/2126. 
 
 Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
 
-### How to filter OData with particular fields?
-e.g. ```http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'```
+### How to filter OData with specific fields?
 
-In this example, it is requesting the fields "id" and "account_id" from The Conversation model where the "created_at" field is lower than '2026-11-23T00:00:00'.
+To filter OData results by specific fields, you can use the `$select` and `$filter` query parameters. 
 
-Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
+For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'`.
+
+In this example, the request is retrieving the `id` and `account_id` fields from the Conversation model, filtered by the `created_at` field being less than or equal to `2026-11-23T00:00:00`.
+
+For more detailed information, refer to the [OData Endpoint](../live-agent/tools/odata-endpoint.md) article.
