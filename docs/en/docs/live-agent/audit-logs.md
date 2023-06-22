@@ -7,13 +7,11 @@ hidden: false
 
 # Audit Logs
 
-_Audit Logs_ is a tool for maintaining transparency and accountability within your Live Agent resources. These logs record important user activities, system events, and configuration changes, providing details for security, auditing, and compliance purposes. With audit logs, you can answer questions like "Who did what, where, and when?" within your Live Agent environment. 
+_Audit Logs_ is a tool for maintaining transparency and accountability within your Live Agent resources. These logs record important user activities, system events, and configuration changes, providing details for security, auditing, and compliance purposes. With audit logs, you can answer questions like "Who did what, where, and when?" within your Live Agent environment. The logs include events like `create`, `update`, and `delete` for [Inboxes](inboxes.md) and [Automation Rules](automation-rules.md).
 
-The logs include events like `create`, `update`, and `delete` for [Inboxes](inboxes.md) and [Automation Rules](automation-rules.md).
+Only users with the `Administrator` role can access these logs. 
 
-Only users with the `Administrator` role can access these logs.
-
-To access the audit logs, go to **Settings > Audit Logs**.
+To read the audit logs, go to **Settings > Audit Logs**.
 
 ## Audit Log Entry
 
