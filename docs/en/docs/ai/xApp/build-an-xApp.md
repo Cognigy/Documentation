@@ -7,7 +7,7 @@ hidden: false
 
 # Build an xApp
 
-To develop an xApp, utilize a collection of [xApp Flow Nodes](../flow-nodes/xApp/overview.md). You can build the actual [xApp Pages](overview.md#concepts) in two ways, by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md) or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md). As an alternative for more customization, you can [create your own Node](#build-a-custom-xapp-node) by implementing and uploading an Extension.
+To develop an xApp, utilize a collection of [xApp Flow Nodes](../flow-nodes/xApp/overview.md). You can build the actual [xApp Pages](overview.md#concepts) in two ways, by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md) or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md). As an alternative to more customization, you can [create your own Node](#build-a-custom-xapp-node) by implementing and uploading an Extension.
 
 ## Build your fist xApp
 
