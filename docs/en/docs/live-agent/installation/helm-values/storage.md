@@ -50,8 +50,8 @@ Set the following value to `"cdn"` to use a Content Delivery network or CDN, and
 
 ### Using Amazon S3
 
-You can get started with [creating an S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
-and can [create an IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+You can start by creating an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
+and [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 to configure the following details.
 
 | Name                               | Type   | Value      | 
@@ -147,8 +147,7 @@ Set force_path_style to true if using minio.
 
 ## Using a single PVC (Not recommended)
 
-There is an option to use a local Persistent Volume Claim (PVC) for storage. This is not recommended, as the deployment pods won't be able to scale as there is one PVC per deployment.
-
+A local Persistent Volume Claim (PVC) is available for storage. However, it is not recommended for scaling up deployments as there is only one PVC per deployment. 
 | Name                    | Type           | Value      | 
 |-------------------------|----------------|------------| 
 | `storage.cloudProvider` | string         | `"none"`   |

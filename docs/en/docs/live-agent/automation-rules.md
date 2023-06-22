@@ -60,14 +60,12 @@ Click on the **+ Add Automation Rule** button to open the Automation creation mo
 5. Add actions.
 6. You can chain multiple conditions with the `AND` or `OR` operator, like in the example below.
 
-Example — Assigning a conversation to a team when an Agent Assist installation is active,
- and the Status is Open when a new conversation is created.
+Example: When Agent Assist is active and a new conversation is created with the `Open` status, the conversation is assigned to a team.
 
 - Add a name and a description
 - Select event as Conversation Created
 - Add two conditions and join them with the AND operator, Condition 1 - Conversation Status as Open and Condition 2 - Inbox as Agent Assist bot-default from the dropdown.
-- Add an action — Assign a team and select the team sales from the dropdown. (A team needs to be created before)
-
+Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure to create the Sales team before performing this action.
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-add-automation-rules.png" width="100%" alt="Live Agent Add Automation Rules" />
   <figcaption>Live Agent Add Automation Rules</figcaption>
@@ -75,7 +73,7 @@ Example — Assigning a conversation to a team when an Agent Assist installation
 
 ### Editing Automations
 
-To edit an Automation, click on the **Edit** icon from the Automation list you want to edit.
+To edit an automation rule, click the **Edit** icon next to the desired automation rule in the list.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-edit-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />
@@ -94,8 +92,7 @@ This will create a replica of the automation with the same conditions and action
 
 ### Deleting Automations
 
-To delete an automation rule, click on the **Delete** button from the list.
-Note that this is permanent and cannot be undone.
+To delete an automation rule, click **Delete** next to the desired Automation in the list. Note that this action is permanent and cannot be undone.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-delete-automation-rules.png" width="100%" alt="Live Agent Edit Automation Rules" />

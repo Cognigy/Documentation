@@ -33,7 +33,7 @@ Before installing Live Agent with Helm, create a secret on the Kubernetes cluste
 
 Here is a sample of configurations for getting email functionality working for the Live Agent application.  Remember that the SMTP password is stored in the secret, as mentioned above.
 
-For the following sender value, you could use it either `email@yourdomain.com` or `BrandName <email@yourdomain.com>`
+For the following sender value, you could use either `email@yourdomain.com` or `BrandName <email@yourdomain.com>`
 
 | Name                          | Type   | Value | 
 |-------------------------------|--------|-------| 
