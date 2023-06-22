@@ -25,7 +25,7 @@ To build an xApp, follow these steps:
 3. To update an initialized session with a new custom-built xApp Page, use one of the following Nodes:
     - [xApp: Show HTML](../flow-nodes/xApp/set-html-xApp-state.md) to provide HTML code.
     - [xApp: Show Adaptive Card](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md) to build an xApp Page by providing an Adaptive Card in the JSON format.
-4. Submit results of the xApp need to be JSON serializable. They are available in the Input object under `data._cognigy._app.payload`. You can check the submission by `input.data._cognigy._app.payload === "submit"`.
+4. Submit results of the xApp need to be JSON serializable. The result will be exposed at `input.data._cognigy._app.payload`. You can check the submission by `input.data._cognigy._app.payload === "submit"`.
 5. To wait for the xApp user Input in a Flow, use the [Question](../flow-nodes/message/question.md) or the [Optional Question](../flow-nodes/message/optional-question.md) Node. The **xApp** type of the Question Node is only considered to be answered if submitted results are available as part of the Input. 
 
 ## Build a custom xApp Node
@@ -47,15 +47,16 @@ export const xappDialogNode = createNodeDescriptor({
     },
   ],
   function: (params) => {
-    const { cognigy } = params;
-    const content = params.config.content;
+    const { cognigy, config } = params;
+    const { content } = config as any;
 
+
+    // About the HTML code:
+    // - Load the "app page SDK" from /sdk/app-page-sdk.js, which is always available for "generic HTML" apps. There's no need to include the SDK code within the HTML content.
+    // - After the "app page SDK" line, you can use the SDK globally as it is now initialized.
+    // - Use plain "onclick" handlers for the buttons to submit a result from the app by calling "SDK.submit({ action: '<action-description>' })".
+    // - Clicking one of the buttons closes the app and triggers an "inject" message. The value of "input.data._cognigy._xapp.result" is equal to the parameters you provided in "SDK.submit" ({ action: '<action-description>' }).
     const getDialogHtml = (content) => `
-// About the HTML code:
-// - Load the "app page SDK" from /sdk/app-page-sdk.js, which is always available for "generic HTML" apps. There's no need to include the SDK code within the HTML content.
-// - After the "app page SDK" line, you can use the SDK globally as it is now initialized.
-// - Use plain "onclick" handlers for the buttons to submit a result from the app by calling "SDK.submit({ action: '<action-description>' })".
-// - Clicking one of the buttons closes the app and triggers an "inject" message. The value of "input.data._cognigy._xapp.result" is equal to the parameters you provided in "SDK.submit" ({ action: '<action-description>' }).
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,12 +64,12 @@ export const xappDialogNode = createNodeDescriptor({
     </head>
     <body>
         <p>${content}</p>
-        <button type="button" onclick="SDK.submit({ result: 'continue' })">continue</button>
+        <button type="button" onclick="SDK.submit({ action: 'continue' })">continue</button>
         <button type="button" onclick="SDK.submit({ action: 'cancel' })">cancel</button>
     </body>
 </html>
 `;
-
+    // @ts-ignore
     cognigy.api.setAppState("generic-html", {
       html: getDialogHtml(content),
     });
