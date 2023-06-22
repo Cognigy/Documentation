@@ -65,7 +65,7 @@ You can configure almost everything about Webchat to personalize it just for you
 | Dynamic Image Aspect Ratio | Images from the 'gallery', 'attachment' or 'top list item' template will not have a forced aspect ratio and will be fully displayed full-width without cropping |
 | Disable Input Autocomplete | Use this setting to disable the autocomplete functionality for everyone |
 | Enable generic HTML Styling | If this is active, additional generic styling will be applied to HTML content inside regular text messages. |
-| Allow JavaScript in HTML Message Content | By default, potentially malicious HTML content like 'onclick' or 'unload' attributes are removed before rendering. If this setting is enabled, they will not be removed. |
+| Allow JavaScript in HTML Message Content | By default, potentially malicious HTML content like 'onclick' or 'onload' attributes are removed before rendering. If this setting is enabled, they will not be removed. |
 | Allow JavaScript in Button/Action URLs | By default, 'JavaScript URLs' starting with javascript: will get removed. If this setting is enabled, they will not be removed and the JavaScript code will get executed when the user clicks the button/element. |
 
 !!! note "Text Input Sanitization"

@@ -218,7 +218,7 @@ Clicking the button leads you to the Flow in Cognigy.AI.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
 
-Calling a context menu on a Step defined in a Node will present the "Open Node" menu
+Calling the context menu on a Step defined in a Node will present the "Open Node" menu
 option. Clicking it opens the Flow Editor with editing mode for the respective Node.
 
 <figure>
@@ -235,7 +235,7 @@ In case you want to evaluate the early drop-offs during conversations to improve
   <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
 </figure>
 
-## Inspecting conversations by taking Steps
+## Inspecting conversations by Steps taken
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
 
@@ -253,7 +253,7 @@ Activating one of them will open Transcript Explorer showing the following conve
 </figure>
 
 - "Open conversations which contain this step"
-    This option shows all the conversations which have the at least chosen Step. The exact path in this case is not important.
+    This option shows all the conversations which include the chosen Step. The exact path in this case is not important.
 
 
 ## More information

@@ -41,7 +41,7 @@ Now click on a specific Conversation. The Conversation will open with further de
   <figcaption>Conversations Details</figcaption>
 </figure>
 
-#### Show All Inbox Settings
+#### Show All Conversations: Inbox Settings
 
 By default, users with the Agent role cannot see the "All" tab for all Conversations. However, there is a setting enabling it per Inbox. When enabled, the user can see all Conversations, including those from other Agents. Otherwise, access will be restricted.
 
