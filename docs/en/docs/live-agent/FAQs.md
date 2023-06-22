@@ -122,4 +122,4 @@ For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,accoun
 
 In this example, the request is retrieving the `id` and `account_id` fields from the Conversation model, filtered by the `created_at` field being less than or equal to `2026-11-23T00:00:00`.
 
-For more detailed information, refer to the [OData Endpoint](../live-agent/tools/odata-endpoint.md) arcticle.
+For more detailed information, refer to the [OData Endpoint](../live-agent/tools/odata-endpoint.md) article.
