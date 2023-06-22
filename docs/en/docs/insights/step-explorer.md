@@ -253,7 +253,7 @@ Activating one of them will open Transcript Explorer showing the following conve
 </figure>
 
 - "Open conversations which contain this step"
-    This option shows all the conversations which have the at least chosen Step. The exact path in this case is not important.
+    This option shows all the conversations which include the chosen Step. The exact path in this case is not important.
 
 
 ## More information
