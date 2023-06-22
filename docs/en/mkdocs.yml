@@ -502,24 +502,27 @@ nav:
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
-  - Conversation:
+  - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
     - Routing:
         - live-agent/conversation/conversation-routing.md
     - Assist Bot:
         - live-agent/conversation/assist-bot.md
-  - live-agent/inboxes.md
-  - live-agent/agents.md
+  - Reports:
+      - live-agent/reports.md
+  - Settings:
+      - live-agent/agents.md
+      - live-agent/teams.md
+      - live-agent/inboxes.md
+      - live-agent/labels.md
+      - live-agent/automation-rules.md
+      - live-agent/canned-responses.md
+      - live-agent/attachments.md
+      - live-agent/audit-logs.md
+      - live-agent/account-settings.md
   - live-agent/roles.md
-  - live-agent/teams.md
-  - live-agent/labels.md
-  - live-agent/reports.md
-  - live-agent/account-settings.md
-  - live-agent/canned-responses.md
-  - live-agent/attachments.md
   - live-agent/notifications.md
-  - live-agent/automation-rules.md
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - Release Notes:
