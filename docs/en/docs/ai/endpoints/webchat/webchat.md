@@ -26,7 +26,7 @@ In addition to sending and receiving regular text messages, the Webchat can also
 
 ## Plugins
 <div class="divider"></div>
-The feature of the Cognigy Webchat can be extended by loading additional Plugins, for example, to give end users special input methods or display messages in an expressive way.
+Additional features can be added to Cognigy Webchat by loading additional Plugins, for example, to give end users special input methods or display messages in an expressive way.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/138b697-google-maps-Webchat.png" width="100%" />
