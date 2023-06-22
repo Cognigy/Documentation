@@ -170,7 +170,7 @@ With the usage of the Transcript Explorer, Cognigy offers you the possibility to
 
 To switch from the Transcript Explorer to the Message Explorer, proceed as follows:
 
-- Select a transcript message in the Transcript Explorer list. On the right side of the screen, the conversation panel appears to display the conversation flow. 
+- Select a transcript message in the Transcript Explorer list. On the right side of the screen, the conversation panel appears and displays the conversation flow. 
 
 - Click now on an individual message to analyze the specific conversation situation.
 
