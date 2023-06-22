@@ -108,7 +108,7 @@ If you encounter an unauthorized error, ensure that the API access token belongs
 ### How to retrieve all content from a particular collection? (e.g. Conversation, Message)
 The following filtering query can be performed:
 
-e.g. ```http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'```
+For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'`.
 
 It will return all the fields for the Conversation model created before 23/11/2126. 
 
