@@ -32,8 +32,8 @@ we recommended increasing the number of pods and therefore also the number of av
 ### Memory
 
 Memory requirements are dependent on usage and expected additional workload.
-Your workload is influenced by factors such as — but not limited to - how active your users are,
-how many conversations you receive, and the conversation channels you are using.
+Your workload is influenced by factors such as how active your users are,
+how many conversations you receive, the conversation channels you are using, and more.
 
 The following are the recommended minimum Memory hardware configurations for a small sample of example Live Agent conversation sizes.
 
