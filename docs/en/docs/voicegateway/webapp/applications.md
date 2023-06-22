@@ -8,7 +8,7 @@
 
 *Applications* are connectors
 that allow the [Endpoint](../getting-started.md#create-a-voice-gateway-endpoint) to be routed to Voice Gateway.
-The application sets all the default values, such as default speech vendor,
+These applications set default values, including the default speech vendor, 
 language, and voice, for the Text-To-Speech output and Speech-To-Text recognition.
 
 To create an application, select **Applications** in the left-side menu, then click **Add application** or **+**.
