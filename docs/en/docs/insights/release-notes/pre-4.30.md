@@ -12,7 +12,7 @@
 ## Bugfixes
 
 - Fixed a bug where Odata would double stringify already stringified content and produce wrong JSON
-- Fixed a bug where the top part of the filters sidebar was blocked after the Notification disappear
+- Fixed a bug where the top part of the filters sidebar was blocked after the Notification disappeared
 
 ## 4.28.0
 
