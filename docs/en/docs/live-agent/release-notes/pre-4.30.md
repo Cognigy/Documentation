@@ -17,7 +17,7 @@
 
 ### Bugfixes
 
-- Fixed a bug wherethe the preview of conversation messages for adaptive cards were not displayed properly
+- Fixed a bug where the preview of conversation messages for adaptive cards were not displayed properly
 
 ## 4.28.0
 
