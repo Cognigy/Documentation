@@ -79,7 +79,7 @@ For specific values and logic, here you can utilize these dedicated sections:
 Cognigy.AI uses an App Platform Token to perform operations,
  such as synchronizing and creating data (for example, Inboxes and accounts),
 using the Live Agent API.
-For this, Live Agent and Cognigy.AI need to have secrets a set to a matching value.
+For this, Live Agent and Cognigy.AI need to have secrets set to matching values.
 
 #### Live Agent Secret
 
