@@ -25,7 +25,7 @@ The Webchat Demo Page will show a Website containing a Webchat pointing to the W
 
 <div class="divider"></div>
 
-Some of the configuration options within the Webchat Endpoint are exclusive to the integrated Demo Page and will not have the same effect on Webchats that are embedded into your Website.
+Some configuration options within the Webchat Endpoint are exclusive to the integrated Demo Page and will not have the same effect on Webchats that are embedded into your Website.
 
 ### Center Webchat 
 The positioning of the Webchat will only be affected for Demo Pages.

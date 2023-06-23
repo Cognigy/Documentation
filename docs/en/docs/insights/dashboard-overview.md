@@ -30,7 +30,7 @@ The dashboard overview page contains various metrics displayed as numerical perc
   <figcaption>Overview dashboard - 1</figcaption>
 </figure>
 
-When hovering the line chart, details as for example the rated month, the year and the exact number of sessions will be displayed.
+When hovering the line chart, details as for example, the rated month, the year and the exact number of sessions will be displayed.
 
 **Each chart can display data in two ways:**
 
@@ -84,3 +84,4 @@ When hovering the line chart, details as for example the rated month, the year a
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
 - [Dashboard Live Agent](dashboard-live-agent.md)
+- [Dashboard Calls](dashboard-calls.md)

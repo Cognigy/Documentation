@@ -5,7 +5,7 @@ hidden: false
 ---
 # Agent Assist Setup
 
-{! _includes/ai/providers/live-agent/agent-assist-setup.md. !}
+{! _includes/ai/providers/live-agent/agent-assist-setup.md !}
 
 ## Set up an Endpoint
 

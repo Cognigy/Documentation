@@ -67,7 +67,7 @@ The current version of the OData Endpoint is `v1.0`. This Endpoint version is av
 - [Label](#label) (`/Label`)
 - [Inbox](#inbox) (`/Inbox`)
 
-To see all the available OData models you can ping the following Endpoint:
+To see all the available OData models, you can ping the following Endpoint:
 `https://<hostname>/v1.0/odata/`
 
 The URL for accessing the V1.0 OData Endpoint is as follows:
@@ -77,7 +77,7 @@ The URL for accessing the V1.0 OData Endpoint is as follows:
 
 <div class="divider"></div>
 
-The Endpoint supports following the OData Query Language operators:
+The Endpoint supports the following the OData Query Language operators:
 
 - $filter
 - $select
@@ -124,7 +124,9 @@ This section details the data types that exist within the OData Collections that
 
 **Description:**
 
-A message is a single piece of communication between an Agent and a client, every time an Agent/user presses enter it will write that text as a new message row. In the Messages table you can find all messages from all Inboxes and Conversations.
+A message is a single piece of communication between an Agent and a client,
+every time an Agent/user presses enter it will write that text as a new message row.
+In the Messages table, you can find all messages from all Inboxes and Conversations.
 
 **Example Query:**
 
@@ -259,7 +261,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 
 **Description:**
 
-This data model holds information regarding the Live Agent users, such an Agent.
+This data model holds information regarding the Live Agent users, such as an Agent.
 
 **Example Query:**
 

@@ -77,7 +77,7 @@ In order to download a Snapshot, you have to go through our two-step process:
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
 
-The use case for uploading a Snapshot is usually to deploy its Flows into production. Since Snapshots life within Virtual Agents as other resources, you have to either first create a new Virtual Agent or upload the Snapshot in one of your existing ones.
+The use case for uploading a Snapshot is usually to deploy its Flows into production. Since Snapshots live within Virtual Agents as other resources, you have to either first create a new Virtual Agent or upload the Snapshot in one of your existing ones.
 
 To upload a Snapshot, follow these steps:
 
@@ -85,7 +85,7 @@ To upload a Snapshot, follow these steps:
 2. In the left-side menu, click **Deploy > Snapshots**.
 3. On the **Snapshots** page, click **Upload Snapshot**.
 4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
-5. Once the file has been uploaded, a new [task](../agents/tasks.md), entitled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+5. Once the file has been uploaded, a new [task](../agents/tasks.md), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
    After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
 
 !!! note

@@ -1,9 +1,12 @@
 ---
 title: "User Inactivity Detection and Handling"
 slug: "user-inactivity-detection-and-handling"
+description: "Cognigy Inactivity Detection and Handling feature allows you to detect inactivity of end users during handovers and to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions."
 hidden: false
 ---
 # User Inactivity Detection and Handling
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
 
 The _Inactivity Detection and Handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
 

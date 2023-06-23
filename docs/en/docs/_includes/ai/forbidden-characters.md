@@ -1,0 +1,1 @@
+Fields beginning with the characters `@`, `+`, `-`, or `=` are not allowed.

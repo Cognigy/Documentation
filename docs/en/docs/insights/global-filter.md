@@ -9,14 +9,14 @@
 
 <div class="divider"></div>
 
-Cognigy Insights comes with so-called global filters. These filters can be set in a selection menu when clicking on the filter icon next to the user menu icon on the top right-hand side of the user interface. 
+Cognigy Insights has global filters. These filters can be set in a selection menu when clicking on the filter icon next to the user menu icon on the top right-hand side of the user interface. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/ce5e349-tooltip_Insights_Filter.svg" width="100%" />
   <figcaption>Filter icon with tooltip</figcaption>
 </figure>
 
-Global filter always will be available no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
+Global filter will always be available no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/06794a7-Global_filter_1_250.png" width="100%" />
@@ -29,7 +29,7 @@ Global filter always will be available no matter where you navigate. Once you ha
 !!! warning
     Every change in filter settings needs to be confirmed with **Apply** to be active.
 
-Several filter menus provide a **Negate** slide bar. When active all but the selected endpoints will be analyzed. 
+Several filter menus provide a **Negate** slide bar. When active, all but the selected endpoints will be analyzed. 
 
 
 ## Timeframe
@@ -65,8 +65,10 @@ Available preset time periods are:
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
 
-It is possible to select hours for the chosen timeframe. This might be helpful if needed to narrow the result to a more precise range. For this, enable "Select time"
-option when setting a Custom Timeframe
+It is possible to select hours for the chosen timeframe.
+This might be helpful if needed to narrow the result to a more precise range.
+To do this, enable the **Select time**
+option when setting a Custom Timeframe.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/select-time.png" width="50%" />
@@ -78,8 +80,8 @@ option when setting a Custom Timeframe
 <div class="divider"></div>
 
 Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
-Endpoints examples are Webchat / Voice Gateway, Microsoft Teams, Google Actions,…
-You can find more information here: [Endpoints]({{config.site_url}}ai/endpoints/overview/)
+Endpoint examples are Webchat / Voice Gateway, Microsoft Teams, Google Actions.
+You can find more information here: [Endpoints](../ai/endpoints/overview.md)
 
 You can select one or more Endpoint(s) to be analyzed. 
 
@@ -90,7 +92,7 @@ You can select one or more Endpoint(s) to be analyzed.
 
 **Admin Console (Interaction Panel) filter**
 
-As of Cognigy.AI 4.10.0  you can filter the Insights reports for the admin console (or Interaction Panel) also.
+As of Cognigy.AI 4.10.0, you can filter the Insights reports for the admin console (or Interaction Panel) also.
 
 So if you have tested the Virtual Agent using the Interaction Panel, you now will be able to fetch the Insights reports for this also.
 
@@ -113,12 +115,13 @@ A Snapshot is an exported Agent and includes required resources.
 The selection list displays the available snapshots which can be analyzed.
 You can find more information here: [Snapshots](https://docs.cognigy.com/docs/snapshots-1)
 
-By default, we show the **data for all snapshot including the data which was gathered 
+By default, we show the **data for all snapshots including the data which was gathered 
 without any snapshot (live deployment, here "None" option)**.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
 
-You can granually inspect the analytics data by choosing only the preferred snapshots, also by using the "negate" option - in this case you will be excluding certain options. 
+You can granually inspect the analytics data by choosing only the preferred snapshots,
+also by using the "negate" option — in this case, you will be excluding certain options. 
 
 For example, selecting "None" and "Negate" will show all the data excluding the one gathered from endpoints without selected snapshots.
 
@@ -145,7 +148,7 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
 </figure>
 
 !!! note
-    To clear all filter settings at once click on the "**Reset filters**" button.  We will show it if the value of any global filter is not equal to the default value.
+    To clear all filter settings at once, click on the "**Reset filters**" button.  We will show it if the value of any global filter is not equal to the default value.
 
 ## Rating
 
@@ -167,7 +170,7 @@ This filter allows you to select the analytics data based on the last user ratin
 <div class="divider"></div>
 
 
-If you intend to update certain analytics fields on Insights dashboards for an ongoing session you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
+If you intend to update certain analytics fields on Insights dashboards for an ongoing session, you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
 More information you can find here: [Using the API]({{config.site_url}}ai/developer-guides/using-api/).
 
 To use the "analytics" API, you need to specify **userId**, **projectId**, **sessionId** and **inputId** in the request.
@@ -191,7 +194,7 @@ If you navigate to a specific destination within Insights and apply global filte
 Your advantages:
 
 - You can reload on any Insights Page, and it will restore the global filters you selected before.
-- You can reload on an open Transcript in the Transcript Explorer and you will land on the same page with the transcript open.
+- You can reload on an open Transcript in the Transcript Explorer, and you will land on the same page with the transcript open.
 - You can reload on the Message Explorer while having a "search" applied and get to the same as you were in before reloading.
 - You can reload on the Message Explorer while having a message selected and get to the same as you were in before reloading.
 

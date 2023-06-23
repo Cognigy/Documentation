@@ -1,11 +1,12 @@
 ---
 title: "LLM"
 slug: "llm"
+description: "Large Language Models (LLMs) in Cognigy are advanced Generative AI models that generate human-like text based on input and context. Trained on vast text data, they understand user input, provide contextually appropriate responses, manage dialogues, and offer multilingual support for an enhanced conversational experience."
 hidden: false
 ---
 # Large Language Model (LLM)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.52-blue.svg)](../../../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../../../release-notes/4.53.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 
@@ -15,27 +16,25 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 The table below lists the LLMs supported by Cognigy.
 
-| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node | Generate Node Output | Knowledge Search |
-|-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|----------------------|------------------|
-| **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |                      |                  |
-| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               | -                    | -                |
-| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               | +                    | -                |
-| text-embedding-ada-002      | -                          | -                   | -                  | -               | -                     | -               | -                    | +                |
-| **Open AI**                 |                            |                     |                    |                 |                       |                 |                      |                  |
-| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               | -                    | -                |
-| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               | +                    | -                |
-| text-embedding-ada-002      | -                          | -                   | -                  | -               | -                     | -               | -                    | +                |
-| **Anthropic**               |                            |                     |                    |                 |                       |                 |                      |                  |
-| claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               | -                    | -                |
-| claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               | -                    | -                |
+| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node |
+|-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|
+| **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |
+| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
+| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               |
+| **OpenAI**                  |                            |                     |                    |                 |                       |                 |
+| gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
+| text-davinci-003            | +                          | +                   | +                  | +               | +                     | +               |
+| **Anthropic**               |                            |                     |                    |                 |                       |                 |
+| claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               |
+| claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               |
 
-## Add a model
+## Add a Model
 
 To add a model to Cognigy.AI, follow these steps:
 
 {! _includes/ai/generative-ai/credentials.md !}
 
-## Apply a model
+## Apply a Model
 
 {! _includes/ai/generative-ai/apply-model.md !}
 
@@ -70,7 +69,7 @@ To package a model, follow these steps:
 1. Go to **Build > LLM**.
 2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
 3. Select **Create a package**. 
-4. Once the package has created, a new [task](../agents/tasks.md), entitled **Create package**, will be run. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+4. Once the package has created, a new [task](../agents/tasks.md), titled **Create package**, will be run. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
 
 When the task is completed, the package will be downloaded.
 

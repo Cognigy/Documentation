@@ -64,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.53:
+    - release-notes/4.53.md
   - 4.52:
     - release-notes/4.52.md
   - 4.51:
@@ -148,7 +150,6 @@ nav:
     - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
-    # - ai/flow-nodes/dynamic-node-fields.md
     - Message:
       - ai/flow-nodes/message/message.md
       - ai/flow-nodes/message/say.md
@@ -325,6 +326,7 @@ nav:
     - ai/endpoints/real-time-translation-settings.md
     - ai/endpoints/file-storage.md
     - ai/endpoints/content-conversion.md
+    - ai/endpoints/testing-mode.md
     - Transformers:
       - ai/endpoints/transformers/transformers.md
       - ai/endpoints/transformers/input-transformer.md
@@ -396,6 +398,8 @@ nav:
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md
+      - Chat Agent Assist:
+          - agent-assist/chat-agent-assist.md
       - Voice Agent Assist:
           - agent-assist/voice-agent-assist/voice-overview.md
           - agent-assist/voice-agent-assist/code-node.md
@@ -408,6 +412,7 @@ nav:
       - ai/xApp/getting-started.md
       - ai/xApp/architecture.md
       - ai/xApp/supported-browsers-and-channels.md
+      - ai/xApp/build-an-xApp.md
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md
@@ -420,6 +425,7 @@ nav:
     - ai/installation/prerequisites.md
     - ai/installation/pre-installation-checklist.md
     - ai/installation/installation-process.md
+    - ai/installation/AI-login.md
     - ai/installation/single-signin-saml2.md
     - ai/installation/single-signin-openid-connect.md
     - ai/installation/ip-ranges-shared-environments.md
@@ -490,7 +496,9 @@ nav:
     - Installation Updates:
       - live-agent/installation/deployment/installation-updates.md
     - Migration Guides:
+      - live-agent/installation/migration/contents.md
       - live-agent/installation/migration/helm-dependencies.md
+      - live-agent/installation/migration/redis-sentinel.md
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
@@ -525,7 +533,7 @@ nav:
     - voicegateway/getting-started.md
   # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
-    - voicegateway/installation/installation-process.md
+    - voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
     - Deployment:
@@ -560,6 +568,10 @@ nav:
         - voicegateway/references/events/CALL_FAILED.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
         - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
+    - TTS and STT Vendors:
+        - voicegateway/references/tts-and-stt-vendors.md
+    - SIP Trunk Providers:
+        - voicegateway/references/sip-trunk-providers.md
   - Release Notes:
     - voicegateway/release-notes.md      
 
