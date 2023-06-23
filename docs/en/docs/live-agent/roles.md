@@ -26,7 +26,7 @@ The Administrator has access to most features of Live Agent.
 
 - Create custom attributes to Conversations.
 
-- Does not have access to Reports.
+- Can access to Reports, except for the [Supervisor Overview](reports.md#overview---supervisor-dashboard) dashboard.
 
 ### Agent
 
@@ -60,7 +60,7 @@ The Supervisor has restricted access.
 
 - Can reassign the Conversations to other Agents, or unassign them.
 
-- Has access to [Reports](reports.md).
+- Has access only to the [Supervisor Overview](reports.md#overview---supervisor-dashboard) dashboard in Reports.
 
 ## Multiple roles
 
