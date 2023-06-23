@@ -25,7 +25,7 @@ Conditions:
 - There is one online agent available.
 - 3 conversations are created.
 
-Result: One conversation is assigned to the agent, one conversation is assigned to the agent and in the queue where waiting for the agent to reply, and one conversation remains unassigned.
+Result: The first two conversations are assigned to the agent and are in the queue, waiting for the agent to reply. One conversation remains unassigned.
 
 **Example 2**
 
