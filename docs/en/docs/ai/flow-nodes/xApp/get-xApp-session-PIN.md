@@ -13,7 +13,7 @@
 ## Description
 <div class="divider"></div>
 
-Gets a new xApp Session PIN which can be accessed using the xApp: Get Session PIN token. The PIN code is only valid for 5 minutes.
+This Node gets a new xApp Session PIN which can be accessed using the xApp: Get Session PIN token. The PIN code is only valid for 5 minutes.
 
 ## More information
 

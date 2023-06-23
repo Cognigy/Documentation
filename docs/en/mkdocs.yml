@@ -412,6 +412,7 @@ nav:
       - ai/xApp/getting-started.md
       - ai/xApp/architecture.md
       - ai/xApp/supported-browsers-and-channels.md
+      - ai/xApp/build-an-xApp.md
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md

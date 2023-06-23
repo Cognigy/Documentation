@@ -80,5 +80,6 @@ deactivate f
 ## More information
 
 - [Overview](overview.md)
+- [Build an xApp](build-an-xApp.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tutorials](tutorials.md)

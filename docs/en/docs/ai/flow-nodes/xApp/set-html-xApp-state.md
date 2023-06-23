@@ -15,6 +15,8 @@
 
 The xApp Page can be built by providing custom HTML code.
 
+{! _includes/ai/xApp/custom-node.md !}
+
 ### Content 
 
 You can either provide an HTML document or an HTML body only. Once this Node is executed, this xApp Page is displayed in the xApp Session.
@@ -30,7 +32,7 @@ To view submitted data, use the Interaction panel. You can access submitted data
 
 ### Waiting Behavior
 
-To wait for a user input, for example when the user click Submit on the Ordering page, activate the **Waiting Behavior** option.
+To wait for a user input, for example, when the user clicks `Submit` on the Ordering page, activate the **Waiting Behavior** option.
 You can store the input result in the Context and use the data in the other Nodes.
 
 ### xApp Page SDK
@@ -38,7 +40,7 @@ You can store the input result in the Context and use the data in the other Node
 When hosted within Cognigy, the xApp Page (or any generic HTML xApp) can load the xApp Page SDK using a fixed URL:
  `<script src=”/sdk/app-page-sdk.js”></script>`.
 Loading this file will expose the xApp Page SDK as a global instance called `SDK`.
-You can access its methods by calling `SDK.someExampleMethod()` in your code after your loading the SDK file. Note that the SDK code is not loaded asynchronously.
+To access its methods, call `SDK.someExampleMethod()` in your code after loading the SDK file. Note that the SDK code is not loaded asynchronously.
 
 
 | Function                                    | Usage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |

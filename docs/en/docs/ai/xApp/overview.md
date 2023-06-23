@@ -12,7 +12,11 @@
 
 Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
 
-The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes/xApp/overview.md). You can build the actual xApp Pages in two ways, by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md) or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
+The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes/xApp/overview.md).
+You can build the actual xApp Pages in two ways,
+by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md)
+or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
+Alternatively, for more customization, you can create your own Node by implementing and uploading an Extension.
 
 ## Compatibility
 
@@ -72,20 +76,11 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 
 ## How it Works
 
-1. Initialize a new xApp Session via the [xApp: Init Session](../flow-nodes/xApp/init-xApp-session.md) Node. 
-2. Allow users to access the xApp Session using one of the following methods:
-    - **Without entering a PIN Code.** Share the xApp Session URL with the users.
-    - **By entering a PIN Code.** Generate a PIN by adding the [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node, send this PIN to the users and share the xApp PIN Page URL with them. The PIN code is only valid for 5 minutes.
-3. To update an initialized session with a new custom-built xApp Page, use one of the following Nodes:
-    - [xApp: Show HTML](../flow-nodes/xApp/set-html-xApp-state.md) to provide HTML code.
-    - [xApp: Show Adaptive Card](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md) to build an xApp Page by providing an Adaptive Card in the JSON format. 
-4. Submit results of the xApp need to be JSON serializable. They are available in the Input object under `data._cognigy._app.payload`. You can check the submission by `input.data._cognigy._app.payload === "submit"`. 
-5. To wait for the xApp user Input in a Flow, use the [Question](../flow-nodes/message/question.md) or the [Optional Question](../flow-nodes/message/optional-question.md) Node. The **xApp** type of the Question Node is only considered to be answered if submitted results are available as part of the Input. 
-    
+To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build an xApp](build-an-xApp.md) articles.
+
 
 ## More information
 
-- [Use Cases](use-cases.md)
 - [Getting Started](getting-started.md)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
