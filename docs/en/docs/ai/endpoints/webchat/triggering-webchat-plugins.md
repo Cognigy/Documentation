@@ -9,7 +9,7 @@
 
 <div class="divider"></div>
 
-Many Plugins (e.g. those who use a string as the `match` value) will only be triggered whenever a message contains specific `data`.
+Many Plugins, for example, those who use a string as the `match` value) will only be triggered whenever a message contains specific `data`.
 
 As an example, let's imagine we have a plugin that displays images in the chat, taking the url from the message's data.
 The `match` field is set to `inline-image` and it reads the image url from `message.data._plugin.url`.
@@ -24,7 +24,7 @@ In order to trigger the plugin, we would need to send a message with the `data` 
 }
 ```
 
-When the webchat receives this mesage, it will trigger the `inline-image`-plugin because of `message.data._plugin.type === 'inline-image'`. The plugin itself then reads the url from `message.data._plugin.url`.
+When the webchat receives this message, it will trigger the `inline-image`-plugin because of `message.data._plugin.type === 'inline-image'`. The plugin itself then reads the url from `message.data._plugin.url`.
 
 ## Usage within regular Flow Nodes
 

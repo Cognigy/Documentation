@@ -1,7 +1,8 @@
 ---
- title: "Migration guide for Redis Sentinel in Live Agent 4.53" 
- slug: "migration-guide-for-setting-up-redis-sentinel-in-existing-live-agent-installation"
- hidden: false 
+title: "Migration guide for Redis Sentinel in Live Agent 4.53"
+slug: "migration-guide-for-redis-sentinel-in-live-agent"
+description: "This migration guide assists in upgrading the Redis chart to utilize Redis Sentinel for high availability in Live Agent version 4.53 and later versions."
+hidden: false
 ---
 
 # Migration guide for Redis Sentinel in Live Agent 4.53
@@ -14,8 +15,22 @@ This migration guide is for the Live Agent 4.53 version upgrade. This release up
 
 The first step is to perform a standard upgrade of the Live Agent chart to the desired new version to ensure the migration job is run before enabling Redis Sentinel.
 
+If the values were not specified previously, ensure that Sentinel mode is disabled in the `values.yaml` file.
+
+```yaml
+# ...
+
+redis:
+  enabled: true
+  sentinel:
+    enabled: false
+# ...
+```
+
+Upgrade the chart to the latest version.
+
 ```bash
-helm upgrade --install live-agent cognigy/live-agent --version 4.53.0
+ helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
 ```
 
 ## Change values.yaml

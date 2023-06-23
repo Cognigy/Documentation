@@ -1,12 +1,13 @@
 ---
 title: "Canned Responses"
 slug: "canned-responses"
+description: "Canned responses are preconfigured reply templates that help human agents respond quickly during conversations. These templates support HTML formatting, allowing for customized and efficient responses."
 hidden: false
 ---
 
 # Canned Responses
 
-Canned responses are presaved reply templates allowing human agents to respond to a conversation quickly.
+Canned responses are pre-saved reply templates allowing human agents to respond to a conversation quickly.
 
 Canned Response templates provide support for HTML formatting.
 

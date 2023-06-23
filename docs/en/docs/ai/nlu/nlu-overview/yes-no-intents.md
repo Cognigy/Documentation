@@ -71,7 +71,7 @@ To use Yes/No Intents for all Flows, do the following:
 2. On the **Settings** page, click **NLU Settings**. 
 3. In the **General Flow Logic** section, select one of the following options from the **Yes/No Logic** list:
      - **Confirmation Words** — disables the Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
-     - **Yes/No Intents** — with extended rules - evaluates the standard Confirmation words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.
+     - **Yes/No Intents with extended rules** — evaluates the standard Confirmation words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.
      - **Yes/No Intents** — evaluates the Yes/No Intents logic for every user input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
 4. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales.
 You can change this value for a specific Flow.
@@ -90,7 +90,7 @@ To use Yes/No Intents for a specific Flow, do the following:
 3. On the **Configuration** tab, in **General Flow Logic** activate checkbox near the **Yes/No Logic** setting.
 4. From the **Yes/No Logic** list, select one of the following options:
      - **Confirmation Words** — disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
-     - **Yes/No Intents** — with extended rules - evaluates the standard Confirmation Words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.
+     - **Yes/No Intents with extended rules** — evaluates the standard Confirmation Words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.
      - **Yes/No Intents** — evaluates the Yes/No Intents logic for every user input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
 5. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales in the current Flow.
 6. Click **Save** to apply settings and build a model. The Yes/No model is always built when you edit and save settings. 
@@ -245,9 +245,13 @@ Yes/No Intents are evaluated independently of regular Intents and do not overwri
 
 **A3**: The traffic light system has not yet been implemented for Yes/No Intents. 
 
-**Q4**: How are **Yes/No Intents** evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
+**Q4**: Are Yes/No Intents independent of standard intent scoring?
 
-**A4**: Yes/No Intent scoring behavior differs only if the Yes/No Intent settings are different in the two Flows. 
+**A4**: Yes, the Yes/No Intents are completely independent of standard intent scoring (`input.intentScore` or `input.nlu.intentMapperResults`). They specifically find the types `nAnswer` and `yAnswer` within the Flow. These types are used for the **Yes/No** type in [Question Nodes](../../flow-nodes/message/question.md) and for [confirming intents](ml-intents.md), similar to [confirmation words](../../resources/manage/settings.md#additional-confirmation-words).
+
+**Q5**: How are Yes/No Intents evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
+
+**A5**: Yes/No Intent scoring behavior differs only if the Yes/No Intent settings are different in the two Flows. 
 
 For example:
 

@@ -1,22 +1,19 @@
 ---
- title: "Agents"
- slug: "agents"
- description: "An Agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users."
- hidden: false 
+title: "Agents"
+slug: "agents"
+description: "An Agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users."
+hidden: false 
 ---
 
 # Agents
 
 An Agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users.
 
-On the Live Agent sidebar, click **Settings**.
+On the Live Agent sidebar, click **Settings > Agents**.
 
-The section shown below will open. Your name will be listed by default as Administrator. An Administrator will have access to all Live Agent features enabled for your account, including settings, along with all of a normal Agents' privileges.
-
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-agents-home.png" width="100%" alt="Live Agent Agents Screen">
-  <figcaption>Agents Screen</figcaption>
-</figure>
+ Your name will be listed by default as Administrator.
+ An Administrator will have access to all Live Agent features enabled for your account,
+ including settings, along with all the normal Agents' privileges.
 
 ## Agent Statuses
 

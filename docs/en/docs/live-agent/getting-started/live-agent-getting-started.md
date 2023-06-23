@@ -12,7 +12,7 @@ Setting up Live Agent is easy.
 
 Head over to our Live Agent Setup documentation to find all the steps necessary to get started with Live Agent.
 
-- [**Live Agent Setup Introduction**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-introduction/)
+- [Live Agent Setup Introduction](../../ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md)
 
 ## Need More Information?
 <div class="divider"></div>

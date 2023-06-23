@@ -25,7 +25,7 @@ Click on the sidebar **Labels** and then click Add Label on the right-hand side.
 </figure>
 
 
-A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels, and different colors so that you can easily identify in one look to which category the ticket/issue belongs.
+A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels and different colors so that you can easily identify in one look to which category the ticket/issue belongs.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-labels-add-label-dialog.png" width="100%" alt="Live Agent Add Label detail screen" />
