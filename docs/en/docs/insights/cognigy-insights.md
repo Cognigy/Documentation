@@ -15,9 +15,15 @@
 
 Cognigy is committed to providing you with the tools you need to improve the customer experience of your customers.
 
-Cognigy.AI has integrated analytics reporting functionalities, as well as an OData, interface our customers can rely on to retrieve their raw analytics data. Our integrated analytics dashboard provides a range of key metrics to understand the usage and the performance of your bots. We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots - hence we have created a new product called **Cognigy Insights** which entirely replaces the static analytics dashboard with a whole set of new tools.
+Cognigy.AI has integrated analytics reporting functionalities, as well as an OData,
+interface our customers can rely on to retrieve their raw analytics data.
+Our integrated analytics dashboard provides a range of key metrics
+to understand the usage and the performance of your bots.
+We felt that it is time to provide an enhanced experience when it comes to understanding the performance of your bots —
+hence we have created a new product
+called **Cognigy Insights**, which entirely replaces the static analytics dashboard with a whole set of new tools.
 
-As of release v4.10 Cognigy provides a completely new designed Analytics solution **"Insights"**.
+As of release v4.10, Cognigy provides a completely new designed Analytics solution for Insights.
 
 ## Dashboard
 
@@ -28,7 +34,7 @@ Cognigy Insights is a new application that replaces the old and static analytics
 
 Insights is a new application that co-exists side-by-side with Cognigy.AI and is tightly integrated into the Cognigy.AI product experience.
 
-With Cognigy.AI 4.10.0 we improved our capabilities to create metrics to have custom metrics for each service.
+With Cognigy.AI 4.10.0, we improved our capabilities to create metrics to have custom metrics for each service.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/ca1ca18-Agent_dashboard.svg" width="100%" />
@@ -42,12 +48,12 @@ With Cognigy.AI 4.10.0 we improved our capabilities to create metrics to have cu
   <figcaption>Agent dashboard with sidebar menu - select "Insights" to switch to the analytics solution</figcaption>
 </figure>
 
-- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click on "**Insights**". We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics/) application.
+- In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click **Insights**. We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics/) application.
 
 !!! note
-    When you are in an agent-specific route in Cognigy.AI (Agent is selected) you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights/#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.
+    When you are in an agent-specific route in Cognigy.AI (Agent is selected), you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights/#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.
 
-When switching from Cognigy.AI to Cognigy Insights you will be redirected to the Insights **Dashboard** section, starting on the "Overview" dashboard.
+When switching from Cognigy.AI to Cognigy Insights, you will be redirected to the Insights **Dashboard** section, starting on the "Overview" dashboard.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/overview_dashboard_overall.png" width="100%" />
@@ -59,7 +65,7 @@ You will find all sorts of different report types that visualize key metrics of 
 Cognigy provides three categories of dashboards available via the Insight sideboard menu:
 
 - [Overview Dashboard]({{config.site_url}}insights/dashboard-overview/) (deals with general analytics)  
-- [Engagement  Dashboard]({{config.site_url}}insights/dashboard-engagement/) (analytics focused on customer reactions in conversations)
+- [Engagement Dashboard]({{config.site_url}}insights/dashboard-engagement/) (analytics focused on customer reactions in conversations)
 - [NLU Performance Dashboard]({{config.site_url}}insights/dashboard-nlu-performance/) (these analytics relates to Natural Language Understanding) 
 
 
@@ -81,7 +87,7 @@ Cognigy Insights comes with so-called global filters. These filters will be visi
 - Snapshot
 - Locales
 
-- To open the global filter menu click on the filter icon next to the user menu icon on the top right-hand side of the UI.
+- To open the global filter menu, click on the filter icon next to the user menu icon on the top right-hand side of the UI.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/overview_dashboard_overall.png" width="100%" />
@@ -104,8 +110,8 @@ You can find the [user menu]({{config.site_url}}ai/tools/user-menu/user-menu/) i
   <figcaption>User menu icon with tooltip</figcaption>
 </figure>
 
-- **[MyProfile]({{config.site_url}}ai/tools/user-menu/my-profile/)**
-In the **Preferences** section the **user interface language** can be selected.
+- **[MyProfile](../ai/tools/user-menu/my-profile.md)**
+In the **Preferences** section, the **user interface language** can be selected.
 Language settings in Insights or Cognigy.AI have automatically effect on both applications.
 Insights currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
 You can find more information here: [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/)
@@ -120,7 +126,6 @@ This section shows the total number of user conversations and displays a timelin
 - **[Documentation]({{config.site_url}})** 
 Clicking on this menu item leads you to the Cognigy product documentation.
 
-
 - **[Cognigy.AI]({{config.site_url}}ai/resources/agents/agents/)**
 You can always go back to Cognigy.AI and your virtual Agent. Open the user pop-up menu at the right top corner of your screen and click on the "Cognigy.AI" menu item.
 
@@ -133,8 +138,7 @@ You can always go back to Cognigy.AI and your virtual Agent. Open the user pop-u
 
 <div class="divider"></div>
 
-
-Using the sidebar menu of Insights you can select all the available data analytical applications to analyze the Agents' performance to improve the Agent for better understanding and improved user experience.
+Using the sidebar menu of Insights, you can select all the available data analytical applications to analyze the Agents' performance to improve the Agent for better understanding and improved user experience.
 The currently selected application is highlighted in a primary color and will be displayed next to the agent at the top as well.
 You can always go back to Cognigy.AI and your virtual Agent also by clicking the Cognigy.AI entry in the sidebar. 
 

@@ -6,14 +6,16 @@
 
 # Redis
 
-Redis is an in-memory data structure store used for caching and improving performance across the application. It can either run inside of the Kubernetes cluster as an additional workload, or outside of the cluster. You can also use a fully managed solution for PostgreSQL.
+Redis is an in-memory data structure store used for caching and improving performance across the application.
+It can either run inside the Kubernetes cluster as an additional workload, or outside the cluster.
+You can also use a fully managed solution for PostgreSQL.
 
 Compatible and tested Redis versions are **>= 5** and **<= 7**
 
 ## Redis Variables
 
 | Key                                | Type   | Default                          | Description                                                                                                                           |
-| ---------------------------------- | ------ | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+|------------------------------------|--------|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `redis.enabled`                    | Bool   | true                             | Set to `false` if using external redis and modify the below variables.                                                                |
 | `redis.host`                       | string | `Internal Redis Deployment Name` | Redis Host Name                                                                                                                       |
 | `redis.auth.password`              | string | `"redis"`                        | Redis Password                                                                                                                        |

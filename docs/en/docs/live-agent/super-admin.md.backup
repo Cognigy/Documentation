@@ -29,7 +29,7 @@ docker exec -it $(docker ps --filter name=srv-captain--chatwoot-web -q) /bin/sh
 Execute the following command to create a super admin in your Rails console.
 
 ```rb
-s = SuperAdmin.create!(email: "admin@xyc.com", password: "yourpassword")
+s = SuperAdmin.create!(email: "admin@xyc.com", password: "your-password")
 ```
 - Access `<live-agent-installation-url>/super_admin`.
 - Authenticate and you can find Sidekiq option on the sidebar.
@@ -97,11 +97,11 @@ Press the "New super admin" Button at the top right corner to create a new super
 
 ## Access Tokens
 
-This is an overview of all Users's Access Tokens
+This is an overview of all User's Access Tokens
 
 <figure>
  <img class="image-center" src="{{config.site_url}}live-agent/images/LA-super-admin-access-tokens.png" width="100%"  alt="Live Agent Super Admin Access Tokens" />
-  <figcaption>Users's Access Tokens</figcaption>
+  <figcaption>User's Access Tokens</figcaption>
 </figure>
 
 ## Installation Configs

@@ -53,16 +53,16 @@ Next, you can find a definition for each of these values, to understand how to m
 
 For specific values and logic, here you can utilize these dedicated sections:
 
-- [Database]({{config.site_url}}live-agent/installation/helm-values/database/)
-- [Redis]({{config.site_url}}live-agent/installation/helm-values/redis/)
-- [Storage]({{config.site_url}}live-agent/installation/helm-values/storage/)
-- [SMTP]({{config.site_url}}live-agent/installation/helm-values/smtp/)
-- [Email Templates]({{config.site_url}}live-agent/installation/helm-values/email-templates/)
+- [Database](database.md)
+- [Redis](redis.md)
+- [Storage](storage.md)
+- [SMTP](smtp.md)
+- [Email Templates](email-templates.md)
 
 ## Images
 
 | Name                         | Description                             | Value                                 |
-| ---------------------------- | --------------------------------------- | ------------------------------------- |
+|------------------------------|-----------------------------------------|---------------------------------------|
 | `image.repository`           | Live Agent Image Repository             | `cognigy.azurecr.io/live-agent`       |
 | `image.tag`                  | Live Agent Image Tag                    | `e.g. 2.0.0`                          |
 | `image.pullPolicy`           | Live Agent Image Pull Policy            | `IfNotPresent`                        |
@@ -76,14 +76,17 @@ For specific values and logic, here you can utilize these dedicated sections:
 
 ### App Platform Token
 
-Cognigy.AI uses an App Platform Token to perform operations, such synchronising and creating data (e.g. Inboxes and accounts), using the Live Agent API. For this, Live Agent and Cognigy.AI need to have secrets set to a matching value.
+Cognigy.AI uses an App Platform Token to perform operations,
+ such as synchronizing and creating data (for example, Inboxes and accounts),
+using the Live Agent API.
+For this, Live Agent and Cognigy.AI need to have secrets set to matching values.
 
 #### Live Agent Secret
 
 The recommendation is to create a new secret under the Live Agent namespace and reference it in the Helm values. Otherwise, it will automatically create a secret called `live-agent-cognigy-live-agent-cognigy-platform-app-token` with a random value (this secret will be persisted and not changed in future Helm upgrades).
 
 | Name                                        | Description                            | Default Value |
-| ------------------------------------------- | -------------------------------------- | ------------- |
+|---------------------------------------------|----------------------------------------|---------------|
 | `cognigyPlatformAppToken.existingSecret`    | Cognigy App Platform Token Secret Name | `""`          |
 | `cognigyPlatformAppToken.existingSecretKey` | Cognigy App Platform Token Secret Key  | `""`          |
 
@@ -102,7 +105,7 @@ cognigyLiveAgent:
 
 #### Troubleshooting
 
-If the secrets are the same value, but the integration is not working (e.g. handover or preconfigured Live Agent not working), perform the following:
+If the secrets are the same value, but the integration is not working (for example, handover or preconfigured Live Agent not working), perform the following:
 
 1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
 2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
@@ -117,7 +120,7 @@ If the secrets are the same value, but the integration is not working (e.g. hand
 These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log into Live Agent with their same credentials.
 
 | Name                                    | Description                     | Default Value                                                     |
-| --------------------------------------- | ------------------------------- | ----------------------------------------------------------------- |
+|-----------------------------------------|---------------------------------|-------------------------------------------------------------------|
 | `configmap.COGNIGY_OAUTH_CLIENT_ID`     | OAuth Client ID                 | `"cognigy-live-agent"`                                            |
 | `configmap.COGNIGY_OAUTH_SITE`          | Cognigy API Site                | `"https://api-installation.cognigy.ai"/v2.0`                      |
 | `configmap.COGNIGY_OAUTH_AUTHORIZE_URL` | Cognigy OAuth API Authorize URL | `"https://installation.cognigy.ai/login?cognigy-live-agent=true"` |
@@ -126,7 +129,7 @@ These are the values used for enabling the Cognigy authentication in Live Agent.
 For the OAuth client secret, create a secret in the Live Agent namespace and then set the following values:
 
 | Name                             | Description                             | Default Value |
-| -------------------------------- | --------------------------------------- | ------------- |
+|----------------------------------|-----------------------------------------|---------------|
 | `cognigyOAuth.existingSecret`    | Secret Name for The OAuth Client Secret | `""`          |
 | `cognigyOAuth.existingSecretKey` | Secret key For The OAuth Client Secret  | `""`          |
 
@@ -149,7 +152,7 @@ cognigyEnv:
 
 #### Troubleshooting
 
-If the secrets and configmaps are the same value, but the integration is not working (e.g. OAuth configuration error "Something is wrong with the OAuth configuration"), perform the following:
+If the secrets and configmaps are the same value, but the integration is not working (for example, OAuth configuration error "Something is wrong with the OAuth configuration"), perform the following:
 
 1. Restart the `cognigy-live-agent-app-XXX` app pod in the Live Agent namespace.
 2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
@@ -163,12 +166,15 @@ If the secrets and configmaps are the same value, but the integration is not wor
 In order to send analytics about conversations from Live Agent to Insights, there is a need to set the following Helm values:
 
 | Name                        | Description                                                                                  | Default Value                                                  |
-| --------------------------- | -------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+|-----------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
 | `cognigyInsights.apiUrl`    | This is the url of the service collector and will consist of the service name and namespace. | `"http://service-collector.cognigy-ai.svc.cluster.local:8000"` |
 | `cognigyInsights.secret`    | Secret name containing the key and value for the API key                                     | `""`                                                           |
 | `cognigyInsights.secretKey` | Secret key that points to the value for the API key                                          | `""`                                                           |
 
-The value for the secret key is obtained from the secret contained in the Cognigy.AI namespace with the name "cognigy-insights-collector-api-key" and a key called "secret". The URL needs to point to the Insights service-collector local address.
+The value for the secret key is obtained from the secret
+contained in the Cognigy.AI namespace with the name "cognigy-insights-collector-api-key"
+and a key called Secret.
+The URL needs to point to the Insights service-collector local address.
 
 #### Troubleshooting
 
@@ -180,10 +186,10 @@ Data will not be sent to Cognigy Insights, as neither of the following environme
 
 ### URLs
 
-| Name                                              | Description                                          | Default Value                             |
-| ------------------------------------------------- | ---------------------------------------------------- | ----------------------------------------- |
-| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`  | URL used for accesing Cognigy.AI UI from Live Agent. | `""https://installation.cognigy.ai""`     |
-| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL` | URL for performing requests to Cognigy.AI API        | `""https://api-installation.cognigy.ai""` |
+| Name                                              | Description                                           | Default Value                             |
+|---------------------------------------------------|-------------------------------------------------------|-------------------------------------------|
+| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`  | URL used for accessing Cognigy.AI UI from Live Agent. | `""https://installation.cognigy.ai""`     |
+| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL` | URL for performing requests to Cognigy.AI API         | `""https://api-installation.cognigy.ai""` |
 
 ## File Upload Antivirus Scan
 
@@ -210,7 +216,7 @@ It will scan the file uploading for viruses and block the upload if a virus is f
 
 Live Agent uses a secure stored for signing cookies. The `SECRET_KEY_BASE` value must be set to a secure value. The default value is set to a random string, but it is recommended to change it to a secure value.
 
-> Note: Previously the `SECRET_KEY_BASE` was set directly under the `configmap` section. This is now deprecated and should be set under the `cookiesIntegrity` section. For previous installations, it is recommended to create an existing secret, otherwise the value will change and all the Live Agent user sessions will expire.
+> Note: Previously the `SECRET_KEY_BASE` was set directly under the `configmap` section. This is now deprecated and should be set under the `cookiesIntegrity` section. For previous installations, it is recommended to create an existing secret, otherwise the value will change, and all the Live Agent user sessions will expire.
 
 ```yaml
 cookiesIntegrity:
@@ -221,7 +227,7 @@ cookiesIntegrity:
 
 ### Rest Client SSL
 
-Live Agent performs requests to Cognigy.AI APIs. If you are running Cognigy.AI services with a Self Signed Certificate with Custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
+Live Agent performs requests to Cognigy.AI APIs. If you are running Cognigy.AI services with a Self-Signed Certificate with Custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
 
 #### Certificates Verification
 
@@ -229,7 +235,7 @@ Live Agent performs requests to Cognigy.AI APIs. If you are running Cognigy.AI s
 | ----------------------------- | ----------------------------------- | ------------- |
 | `restClient.ssl.verification` | Enable SSL certificate verification | `"true"`      |
 
-#### Self Signed Certificate with Custom Certificate Authority
+#### Self-Signed Certificate with Custom Certificate Authority
 
 Create a secret with a key named the certificate file name (e.g. `cert.pem`). It will be mounted in the pod file system to be trusted by the Live Agent app. The value must contain the certificate file content without extra tabs/spaces. Then fill in the following values:
 
@@ -245,7 +251,7 @@ Ensure pods are restarted after updating the values.
 For using a client certificate, create a secret containing the client certificate, the client certificate key and the key passphrase (if the key has a passphrase). Then fill in the following values:
 
 | Name                                          | Description                                                                       |
-| --------------------------------------------- | --------------------------------------------------------------------------------- |
+|-----------------------------------------------|-----------------------------------------------------------------------------------|
 | `restClient.ssl.clientCertSecret`             | Client cert secret name                                                           |
 | `restClient.ssl.clientCertSecretKey`          | Client cert secret key. Its value must be in X509 format                          |
 | `restClient.ssl.clientKeySecretKey`           | Client key secret key. Its value must be as an RSA Key content                    |
@@ -256,14 +262,14 @@ Ensure pods are restarted after updating the values.
 ## OData
 
 | Key                              | Description                       | Type    | Default Value |
-| -------------------------------- | --------------------------------- | ------- | ------------- |
+|----------------------------------|-----------------------------------|---------|---------------|
 | `odata.enabled`                  | Enable OData service and endpoint | Boolean | `true`        |
 | `odata.configmap.ODATA_PROTOCOL` | http or https                     | String  | `"https"`     |
 
 ## Other
 
 | Key                                                     | Type                                                                                                     | Default Value                        |
-| ------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------ |
+|---------------------------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------|
 | `affinity`                                              | object                                                                                                   | `{}`                                 |
 | `frontendUrlOverride`                                   | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary. | `"https://<live-agent-domain>.com/"` |
 | `fullnameOverride`                                      | string                                                                                                   | `""`                                 |

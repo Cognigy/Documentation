@@ -49,7 +49,7 @@ Indicates how long the average session lasted.
 
 Session length is the time difference between the timestamp of the first user input and the last user input.
 
-Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
+The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
 
 Source table:
 
@@ -154,7 +154,7 @@ Result:
 
 A horizontal bar chart displaying the top-rated number of goals reached. 
 
-Clicking on the three dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
+Clicking on the three-dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
 
 Source table:
 
@@ -239,7 +239,7 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/handovers-on-time.png" width="100%" />
 </figure>
 
-Clicking on the three dots menu item you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
+Clicking the three-dots menu item, you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
 
 ### Positive Ratings over Time
 

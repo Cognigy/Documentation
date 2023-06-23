@@ -7,7 +7,7 @@
 
 The customer initiates a Conversation from the website front end - through the Webchat widget.
 
-For example: A customer types 'Hi'
+For example, A customer types 'Hi'
 
 
 <figure>
@@ -34,14 +34,14 @@ Go to the home screen of Live Agent Agent Dashboard
 
 Click on the Conversation bubble icon in the sidebar. Then click on All Conversations. Conversations which customers have initiated can be seen here.
 
-Now click on a specific Conversation. The Conversation will open, with further details and actions available in the right-hand side panel.
+Now click on a specific Conversation. The Conversation will open with further details and actions available in the right-hand side panel.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
 </figure>
 
-#### Show All Inbox Setting
+#### Show All Conversations: Inbox Settings
 
 By default, users with the Agent role cannot see the "All" tab for all Conversations. However, there is a setting enabling it per Inbox. When enabled, the user can see all Conversations, including those from other Agents. Otherwise, access will be restricted.
 
@@ -89,7 +89,7 @@ Click on Add Labels within the Conversation Labels menu and select the category 
 
 
 
-You can see in the screenshot below, that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
+You can see in the screenshot below that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
 
 
 <figure>
@@ -132,7 +132,8 @@ Below is a list describing Conversation actions an Agent can take by clicking th
 ### Agent Assist (Beta)
 <div class="divider"></div>
 
-When Agent Assist is enabled, Agents will - based on customer input - receive AI-powered Agent Assist output as part of the conversation, which can help to better answer a customer.
+When Agent Assist is enabled, 
+Agents will (based on customer input) receive AI-powered Agent Assist output as part of the conversation, which can help to better answer a customer.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
@@ -153,7 +154,7 @@ To include a [canned response](../canned-responses.md) as a reply to the user, f
 2. Once you type `/`, a list of available canned responses will be displayed.
 3. Select the desired canned response from the list.
 
-The selected canned response will be inserted into your reply, allowing you to easily include prewritten messages in your conversation.
+The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
@@ -168,7 +169,7 @@ The selected canned response will be inserted into your reply, allowing you to e
     
     Maximum File Size: 40MB
 
-There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box you can click on the "Request file" icon.
+There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box, you can click on the "Request file" icon.
 
 
 <figure>
@@ -223,7 +224,7 @@ There is an option to discuss the customer's Conversation with another Agent, sh
 </figure>
 
 
-Type '@' in the Private Note window, and all Agents who have been added to this Team will be listed. Select an Agent, and type in a message to consult with the selected Agent.
+Type '@' in the Private Note window, and all Agents who have been added to this Team will be listed. Select an Agent and type in a message to consult with the selected Agent.
 
 
 <figure>
@@ -243,7 +244,7 @@ Click on Add Note to send the message. You can see a locked sign on the message 
 
 The second Agent addressed in the private note will receive a notification in their account.
 
-Replies sent by second Agent will be visible in the Private Note window.
+Replies sent by the second Agent will be visible in the Private Note window.
 
 #### Delete Private Note
 <div class="divider"></div>
@@ -271,7 +272,7 @@ To send a copy of the current conversation, click on the button labeled Send Tra
 </figure>
 
 
-A screen opens up which allows an email can be sent to Agents in the Team. The chat transcript can also be sent to the customer or another selected e-mail address.
+A screen opens up which allows an email to be sent to Agents in the Team. The chat transcript can also be sent to the customer or another selected e-mail address.
 
 
 <figure>
@@ -285,7 +286,7 @@ Select your desired option and click on Submit. A message will be displayed "The
 ### Transferring Agents
 <div class="divider"></div>
 
-You can transfer an issue/Conversation to another Agent by selecting a different Agent from Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
+You can transfer an issue/Conversation to another Agent by selecting a different Agent from the Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
 
 ### Setting Reminders and Status
 <div class="divider"></div>

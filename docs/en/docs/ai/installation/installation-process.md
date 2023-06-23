@@ -10,7 +10,7 @@ hidden: false
 To install Cognigy.AI perform following steps: 
 
 1. Install MongoDB database with [MongoDB Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-mongodb-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-mongodb-helm-chart#readme)
-2. Install Cognigy.AI with [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-mongodb-helm-chart#readme)
+2. Install Cognigy.AI with [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-ai-helm-chart#readme)
 
 
 Once both Helm releases are successfully installed, you can open a web-browser and visit the URL which you have set in `serviceUi.host` parameter Cognigy.AI Helm release. You should be able to see the login screen of Cognigy.AI frontend application:

@@ -1,7 +1,8 @@
 ---
- title: "Data Protection & Analytics" 
- slug: "data-protection-and-analytics" 
- hidden: false 
+title: "Data Protection and Analytics" 
+slug: "data-protection-and-analytics" 
+description: "The Data Protection & Analytics section in Cognigy Endpoints provides control over analytics and system logging. It allows you to customize the handling of contact data creation and storage, analytics data collection, and sensitive data masking to ensure comprehensive data protection."
+hidden: false 
 ---
 # Data Protection & Analytics
 
