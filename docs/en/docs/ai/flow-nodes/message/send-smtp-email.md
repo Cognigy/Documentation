@@ -6,13 +6,13 @@ hidden: false
 # Send SMTP Email
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/messages/send-smtp-email.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/send-smtp-email.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url}}ai/resources/smtp/) to a recipient.
+Use the Send Email Node to send an email via [SMTP Connection](../../resources/build/connections.md) to a recipient.
 
 ## Settings
 
@@ -24,7 +24,7 @@ Select the Email Provider of the address you want to send from.
 If yours is not listed, you can select "Other SMTP Service" to do a manual configuration.
 
 !!! note "Email Service Configuration"
-    Some Email Providers, such as Gmail, will require you to configure your mail account to allow sending mails via SMTP before you can use it.
+    Some Email Providers, such as Gmail, will require you to configure your mail account to allow sending mail via SMTP before you can use it.
 
 ### SMTP Settings
 
@@ -124,7 +124,7 @@ The BCC recipients of your email.
 
 #### Reply To Address
 
-This email address is the target receiving mails when the recipients reply to your email.
+This email address is the target of receiving mails when the recipients reply to your email.
 
 #### Define custom text Email Content
 
