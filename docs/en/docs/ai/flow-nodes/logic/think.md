@@ -6,13 +6,13 @@
 # Think
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1e2ebc4-think.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/think.png" width="100%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-A [Think Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#think) is used to re-execute the Flow within one invocation.
+This Node is used to re-execute the Flow within one invocation.
 
 Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
 

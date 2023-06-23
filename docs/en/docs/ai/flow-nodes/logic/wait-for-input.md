@@ -6,7 +6,7 @@
 # Wait for Input
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8f73f6a-logic-waitforinput.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/wait-for-input.png" width="80%" />
 </figure>
 
 ## Description
