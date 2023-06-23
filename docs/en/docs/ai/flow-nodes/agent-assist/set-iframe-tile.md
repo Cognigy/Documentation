@@ -15,11 +15,11 @@ hidden: true
 
 This Node in Cognigy allows you to embed external websites directly into the Agent Assist Workspace. To do that, specify a URL for the external content you want to display.  You can present web pages, forms, or applications within the Agent Assist workspace without redirecting human agents to an external site.
 
-| Parameter  | Type          | Description                                                 |
-|------------|---------------|-------------------------------------------------------------|
-| Tile ID    | CognigyScript | The ID that you  created in the Agent Assist Configuration. |
-| IFrame URL | URL           | The URL to render inside the Widget.                        |
-| JSON Data  | JSON          | The Data to send to the IFrame as a postMessage event.      |
+| Parameter  | Type          | Description                                                                                                                                |
+|------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| Tile ID    | CognigyScript | The ID that you  created in the Agent Assist Configuration.  |
+| IFrame URL | URL           | The URL to render inside the Widget.                                                                                                       |
+| JSON Data  | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                     |
 
 ## More information
 
