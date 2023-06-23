@@ -6,7 +6,9 @@ hidden: false
 
 # Getting started with xApps
 
-In this tutorial, you will learn how to create a basic xApp using Cognigy. The xApp will collect email addresses from users via a voice channel and display an Adaptive Card for data entry. We will also implement SMS functionality to send a link to the xApp via text message. 
+In this tutorial, you will learn how to create a basic xApp using Cognigy.
+The xApp will collect email addresses from users via a voice channel and display an Adaptive Card for data entry.
+We will also implement SMS functionality to send a link to the xApp via a text message. 
 
 This tutorial contains two parts:
 
@@ -125,7 +127,7 @@ In this part of the tutorial, you will learn how to collect email addresses from
 ### Configure Voice Channel Support
 
 1. Go to the **Question** Node.
-2. Copy and paste the text from the **Text with Buttons** setting to the **Fallback Text**, as voice channel does not support the **Text with Buttons** setting:
+2. Copy and paste the text from the **Text with Buttons** setting to the **Fallback Text**, as a voice channel does not support the **Text with Buttons** setting:
    ```txt
    Welcome to the xApp tutorial. Please enter your email in the xApp using the link which I texted you via SMS
    ```
