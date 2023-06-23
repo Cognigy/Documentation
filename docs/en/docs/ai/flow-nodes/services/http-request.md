@@ -6,7 +6,7 @@
 # HTTP Request
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c282bff-service-htto.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Services/http-request.png" width="80%" />
   <figcaption>HTTP Request Node</figcaption>
 </figure>
 

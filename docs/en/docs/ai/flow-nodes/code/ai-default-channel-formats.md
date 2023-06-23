@@ -5,11 +5,11 @@
 ---
 # AI Default Channel Formats
 
-As described in [Channel Output]({{config.site_url}}ai/flow-nodes/code/channel-output/), you can send JSON-formatted output directly against your [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) for it to be output to the respective channels.
+As described in [Channel Output](channel-output.md), you can send JSON-formatted output directly against your [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) for it to be output to the respective channels.
 
 The AI Default Channel is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels (see our [Say]({{config.site_url}}ai/flow-nodes/message/say/) Node documentation for more information).
 
-Using a [Code]({{config.site_url}}ai/flow-nodes/code/code/) Node, you can also send AI Default Channel output in JSON format to the Endpoints and these will convert them to the appropriate content. We're describing the required payload formats below. 
+Using a [Code](code.md) Node, you can also send AI Default Channel output in JSON format to the Endpoints and these will convert them to the appropriate content. We're describing the required payload formats below. 
 
 ## Text
 <div class="divider"></div>

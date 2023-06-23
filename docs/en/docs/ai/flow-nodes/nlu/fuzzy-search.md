@@ -6,7 +6,7 @@
 # Fuzzy Search
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b315c2a-fuzzySearch.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/fuzzy-search.png" width="100%" />
 </figure>
 
 ## Description

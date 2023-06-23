@@ -19,8 +19,8 @@ The STT engine only starts when a startRecognition activity is received from the
 Caller is the user initiating the call.
 Callee is the agent who is being called.
 
-| Parameter | Type | Description |
-| ----------- | ----------- | ----------- |
-| Activity | Select | Whether to start or stop a STT recognition for a participant. |
-| Target Participant | Select | Who to start the recognition for. Caller, Callee or both. |
+| Parameter          | Type   | Description                                                   |
+|--------------------|--------|---------------------------------------------------------------|
+| Activity           | Select | Whether to start or stop a STT recognition for a participant. |
+| Target Participant | Select | Who to start the recognition for. Caller, Callee or both.     |
 

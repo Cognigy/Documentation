@@ -6,7 +6,7 @@
 # Merge Profile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/fc6e1af-profile-merge.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/merge-profile.png" width="80%" />
 </figure>
 
 ## Description
