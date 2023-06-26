@@ -15,11 +15,11 @@ hidden: true
 
 This Node allows you to display customized HTML content in the Agent Assist Workspace. You can create custom layouts and designs for presenting information to a human agent. HTML content can include text, images, videos, and links. The Set HTML Tile Node is useful for displaying complex information.
 
-| Parameter    | Type          | Description                                                 |
-|--------------|---------------|-------------------------------------------------------------|
-| Tile ID      | CognigyScript | The ID that you  created in the Agent Assist Configuration. |
-| HTML Content | HTML          | The HTML content to render inside the Widget.               |
-| JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.      |
+| Parameter    | Type          | Description                                                                                                                                                                                           |
+|--------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tile ID      | CognigyScript | The ID that you created in the Agent Assist configuration. If the Tile ID has not been created in the Agent Assist configuration, you will see a relevant tip in the Agent Assist Workspace instance. |
+| HTML Content | HTML          | The HTML content to render inside the Widget.                                                                                                                                                         |
+| JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.                                                                                                                                                |
 
 ## More information
 
