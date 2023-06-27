@@ -321,6 +321,12 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
 
 Find instructions on how to connect an OData Feed in the [Tableau documentation](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
 
+### Postman and other API Tools
+
+When connectom from Postman or similar API tools, you must use a GET request to connect to our OData feed.
+
+{! _includes/ai/odata-read-only.md !}
+
 ## OData Consumer Ecosystem
 
 For a full list of available OData Consumer options, [follow the link to Consumers on OData.org](https://www.odata.org/ecosystem/#consumers).
