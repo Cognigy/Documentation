@@ -4,7 +4,7 @@ slug: "voice-agent-assist-transfer-node"
 hidden: false
 ---
 
-#  Agent Assist for Voice: Transfer Node
+# Agent Assist for Voice: Transfer Node
 
 When using the Cognigy Voice Gateway, you need to add a Transfer Node to hand over the call to a human agent. 
 
