@@ -42,30 +42,30 @@ For example, on our trial server, the OData Endpoint URL for the Analytics Input
 
 <div class="divider"></div>
 
-### Version 2.3
+=== Version 2.3
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
 
-The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
+    The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
 
-- [Analytics](#analytics) (`/Analytics`)
-- [Conversations](#conversations) (`/Conversations`)
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Sessions](#sessions) (`/Sessions`)
+    - [Analytics](#analytics) (`/Analytics`)
+    - [Conversations](#conversations) (`/Conversations`)
+    - [Steps](#steps) (`/Steps`)
+    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+    - [Sessions](#sessions) (`/Sessions`)
 
 The URL for accessing the V2.3 OData Endpoint is as follows:
 `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
-### Version 2.2 and Earlier
-!!! warning "Deprecation of OData v2.0 - 2.2"
-    OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
+=== Version 2.2 and Earlier
+    !!! warning "Deprecation of OData v2.0 - 2.2"
+        OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
 
-- [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
-- [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
+    - [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+    - [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
+    - [Steps](#steps) (`/Steps`)
+    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+    - [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
 The URL for accessing the V2.X OData Endpoint is as follows:
 `https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
@@ -369,6 +369,12 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
     At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
 
 The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
+
+### Postman and other API Tools
+
+When connectom from Postman or similar API tools, you must use a GET request to connect to our OData feed.
+
+{! _includes/ai/odata-read-only.md !}
 
 ### OData Consumer Ecosystem
 
