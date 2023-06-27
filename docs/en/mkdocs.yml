@@ -221,6 +221,7 @@ nav:
         - ai/flow-nodes/generic-voice-nodes/dtmf-collect-config.md
         - ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md
         - ai/flow-nodes/generic-voice-nodes/user-input-timeout-config.md
+        - ai/flow-nodes/generic-voice-nodes/mute-speech-input.md
       - Voice Gateway:
         - ai/flow-nodes/vg/voice-gateway.md
         - ai/flow-nodes/vg/dtmf.md
@@ -231,6 +232,7 @@ nav:
         - ai/flow-nodes/vg/set-session-config.md
         - ai/flow-nodes/vg/transfer.md
         - ai/flow-nodes/vg/call-recording.md
+        - ai/flow-nodes/vg/mute-speech-input.md
 
       - Audio Codes:
         - ai/flow-nodes/audiocodes/audiocodes.md
