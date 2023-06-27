@@ -372,7 +372,7 @@ The instructions on how to connect an OData Feed in Tableau [here](https://help.
 
 ### Postman and other API Tools
 
-When connectom from Postman or similar API tools, you must use a GET request to connect to our OData feed.
+When connecting from Postman or similar API tools, you must use a GET request to connect to our OData feed.
 
 {! _includes/ai/odata-read-only.md !}
 
