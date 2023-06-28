@@ -5,14 +5,14 @@
 ---
 # Google Actions
 
-!!! warning "Deprecation of Google Actions Endpoint"
-    Google is sunsetting Conversational Actions on June 13, 2023. This Endpoint will no longer function after this date, and will also be deprecated.
-
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/067ee19-googleActions.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Google Actions** app by using our Google Actions Endpoint integration.
+!!! warning "Removal of Google Actions Endpoint"
+    Due to the sunset of [Google Conversational Actions](https://developers.google.com/assistant/ca-sunset) on June 13, 2023, this Endpoint will be removed in the near future. Consequently, the Endpoint will become unavailable.
+
+Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **Google Actions** app by using our Google Actions Endpoint integration.
 
 ## Generic Endpoint Settings
 
