@@ -37,6 +37,14 @@ In this case only the Intents of the chosen level are selectable in the Intent d
 !!! note "Want to know more about using Intents?"
     Find more information about building flows with intents on the **[NLU Overview Page]({{config.site_url}}ai/nlu/nlu-overview/overview/)**.
 
+### Text
+By changing the lookup type to **Text**, the flow will select a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-text.PNG" width="100%" />
+  <figcaption>A Text type Lookup Node with 2 cases.</figcaption>
+</figure>
+
 ### State
 By changing the lookup type to **[State]({{config.site_url}}ai/tools/interaction-panel/state/)**, the flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
 
@@ -69,6 +77,14 @@ By changing the lookup type to **Mode**, the flow will select a case that matche
 
 !!! note "What is Mode?"
     The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+
+### Handover Status
+By changing the lookup type to **Handover Status**, the flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for this type of lookup.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-handover-status.PNG" width="100%" />
+  <figcaption>A Handover Status type Lookup Node with 3 cases.</figcaption>
+</figure>
 
 ### CognigyScript
 By changing the lookup type to **CognigyScript**, the flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
