@@ -82,13 +82,16 @@ Channel priority rules exist for the following supported Azure Bot Services chan
 For example, consider the following scenarios while using an Azure Bot Services Endpoint:
 
 1. A Say Node has an AI, Azure Bot Services, and Microsoft Teams channel
-Result: The user will receive the output text from the **Teams channel**
+
+  **Result:** The user will receive the output text from the **Teams channel**
 
 2. A Say Node has an AI and Azure Bot Services channel
-Result: The user will receive the output text from the **Azure Bot Services channel**
+
+  **Result:** The user will receive the output text from the **Azure Bot Services channel**
 
 3. A Say Node has only an AI channel
-Result: The user will receive the output text from the **AI channel**
+
+  **Result**: The user will receive the output text from the **AI channel**
 
 ## More information
 
