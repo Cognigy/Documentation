@@ -16,8 +16,15 @@ The `operand` can be set manually to `Intent`, `State`, `Type` and `Mode`, or cu
 
 If you choose CognigyScript as the operand, you must use direct CognigyScript similar to the [**If Node**]({{config.site_url}}ai/flow-nodes/logic/if/). You can also select to parse the CognigyScript as a string or not.
 
-!!! note "An alternative to nested IF nodes"
-    **Lookup Nodes** are used if the number of possible options becomes too large to use If Nodes. Instead of saying if `input.intent === "orderFood"` then x, else -> `input.intent === "orderDrink"`, else -> `input.intent === "askHelp"`, else ..., you can simply use a **Lookup on Intent** with multiple cases (`orderFood`, `orderDrink`, `askHelp`) and a default.
+!!! warning "Case Sensitivity"
+    All Lookup Case Nodes are case sensitive. Be careful to use the correct upper or lower case spelling in the Value field of your Case Nodes.
+
+### An alternative to nested IF Nodes
+
+**Lookup Nodes** are used if the number of possible options becomes too large to use If Nodes. 
+
+Instead of saying if `input.intent === "orderFood"` then x, else -> `input.intent === "orderDrink"`, else -> `input.intent === "askHelp"`, else ..., you can simply use a **Lookup on Intent** with multiple cases (`orderFood`, `orderDrink`, `askHelp`) and a default.
+
 ## Lookup Type
 <div class="divider"></div>
 
