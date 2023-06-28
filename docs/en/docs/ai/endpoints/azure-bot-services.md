@@ -65,6 +65,31 @@ When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c891b0a-Eatery_make_order_2.svg" width="100%" />
 </figure>
 
+## Channel Priority when using Azure Bot Services
+
+Azure Bot Services offers many available channels, and Cognigy will provide the output of a higher level channel added to a Flow Node when supported by Azure Bot Services.
+
+Priority will be given to the highest level channel when available.
+
+Channel priority rules exist for the following supported Azure Bot Services channels, which will be selected before the Azure Bot Services channel or AI channels are used:
+
+- Line
+- Messenger
+- Microsoft Teams
+- Slack
+- SMS
+
+For example, consider the following scenarios while using an Azure Bot Services Endpoint:
+
+1. A Say Node has an AI, Azure Bot Services, and Microsoft Teams channel
+Result: The user will receive the output text from the **Teams channel**
+
+2. A Say Node has an AI and Azure Bot Services channel
+Result: The user will receive the output text from the **Azure Bot Services channel**
+
+3. A Say Node has only an AI channel
+Result: The user will receive the output text from the **AI channel**
+
 ## More information
 
 
