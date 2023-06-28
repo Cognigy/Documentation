@@ -83,7 +83,7 @@ By changing the lookup type to **Handover Status**, the flow will select a case 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-handover-status.PNG" width="100%" />
-  <figcaption>A Handover Status type Lookup Node with 3 cases.</figcaption>
+  <figcaption>A Handover Status type Lookup Node with 4 cases.</figcaption>
 </figure>
 
 ### CognigyScript
