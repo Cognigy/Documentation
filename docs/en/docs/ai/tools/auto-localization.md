@@ -35,6 +35,9 @@ Cognigy's solution is a native integration of leading machine translation provid
 - Google Cloud Translation
 - DeepL Translation Pro
 
+!!! note "Azure Cognitive Service Translate"
+    Azure Cognitive Service Translate is also a supported translation provider, which uses the same platform as Microsoft Translator. Select `Microsoft Translator` in Agent Settings, Translation Settings when using Azure Cognitive Service Translate.
+
 These providers can be selected in the "Agent Settings" and provide the following advantages:
 
 - Translation language is free of choice
