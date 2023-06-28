@@ -12,7 +12,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-Use the Send Email Node to send an email via an SMTP Connection to a recipient.
+Use the Send Email Node to send an email via an SMTP connection to a recipient.
 
 ## Settings
 
