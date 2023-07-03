@@ -14,7 +14,7 @@ or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-
 Alternatively, for more customization,
 you can [create your own Node](#build-a-custom-xapp-node) by implementing and uploading an Extension.
 
-## Build your fist xApp
+## Build your first xApp
 
 To build an xApp, follow these steps:
 
