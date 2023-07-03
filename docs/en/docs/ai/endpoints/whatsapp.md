@@ -10,7 +10,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/whatsApp-endpoint.png" width="100%" />
 </figure>
 
-Within our Cognigy.AI platform you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook Developer Dashboard by using our WhatsApp Endpoint integration. 
+Within our Cognigy.AI platform, you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook Developer Dashboard by using our WhatsApp Endpoint integration. 
 
 ## Generic Endpoint Settings
 
