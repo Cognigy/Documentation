@@ -356,7 +356,7 @@ The Sessions collection contains a list of all sessions that have occurred. The 
 
 === "OData 2.2"
     
-    https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`
+    `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`
 
 === "OData 2.0"
  
