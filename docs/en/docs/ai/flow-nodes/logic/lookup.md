@@ -17,7 +17,7 @@ The `operand` can be set manually to `Intent`, `State`, `Type` and `Mode`, or cu
 If you choose CognigyScript as the operand, you must use direct CognigyScript similar to the [**If Node**]({{config.site_url}}ai/flow-nodes/logic/if/). You can also select to parse the CognigyScript as a string or not.
 
 !!! warning "Case Sensitivity"
-    All Lookup Case Nodes are case sensitive. Be careful to use the correct upper or lower case spelling in the Value field of your Case Nodes.
+    All Lookup Case Nodes are case sensitive. Be careful to use the correct upper or lower case spelling in the **Value** field of your Case Nodes.
 
 ### An alternative to nested IF Nodes
 
