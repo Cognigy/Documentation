@@ -65,33 +65,45 @@ When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c891b0a-Eatery_make_order_2.svg" width="100%" />
 </figure>
 
-## Channel Priority when using Azure Bot Services
+### Channel Priority when using Azure Bot Services
 
-Azure Bot Services offers many available channels, and Cognigy will provide the output of a higher level channel added to a Flow Node when supported by Azure Bot Services.
+You can use the Azure Bot Services Endpoint to serve multiple channels, such as Line, Messenger, Microsoft Teams, and others. 
 
-Priority will be given to the highest level channel when available.
+To define where the output will be delivered, select these channels in the Say, Question, or Optional Question Nodes. 
 
-Channel priority rules exist for the following supported Azure Bot Services channels, which will be selected before the Azure Bot Services channel or AI channels are used:
+However, the sequence of using these channels in the Node is determined by their fixed priority.
+
+Priority rules exist for the following supported Azure Bot Services channels:
 
 - Line
 - Messenger
 - Microsoft Teams
 - Slack
 - SMS
+- Azure Bot Services
+- AI
 
-For example, consider the following scenarios while using an Azure Bot Services Endpoint:
+#### Examples
 
-1. A Say Node has an AI, Azure Bot Services, and Microsoft Teams channel
+Consider the following examples when using the Azure Bot Services Endpoint from the perspective of channel priority.
 
-  **Result:** The user will receive the output text from the **Teams channel**
+**Example 1**
 
-2. A Say Node has an AI and Azure Bot Services channel
+The Say Node is configured with AI, Azure Bot Services, and Microsoft Teams channels.
 
-  **Result:** The user will receive the output text from the **Azure Bot Services channel**
+Result: The user will receive the text output from the Microsoft Teams channel.
 
-3. A Say Node has only an AI channel
+**Example 2**
 
-  **Result**: The user will receive the output text from the **AI channel**
+The Question Node is configured with AI and Azure Bot Services channels.
+
+Result: The user will receive the text output from the Azure Bot Services channel.
+
+**Example 3**
+
+The Optional Qestion Node is configured with only the AI channel.
+
+Result: The user will receive the text output from the AI channel.
 
 ## More information
 
