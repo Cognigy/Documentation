@@ -5,7 +5,9 @@
 ---
 # OData Analytics Endpoint
 
-Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+Cognigy.AI exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+
+Note that the Cognigy OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -42,33 +44,33 @@ For example, on our trial server, the OData Endpoint URL for the Analytics Input
 
 <div class="divider"></div>
 
-### Version 2.3
+=== "Version 2.3"
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
+    [![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
 
-The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
+    The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
 
-- [Analytics](#analytics) (`/Analytics`)
-- [Conversations](#conversations) (`/Conversations`)
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Sessions](#sessions) (`/Sessions`)
+    - [Analytics](#analytics) (`/Analytics`)
+    - [Conversations](#conversations) (`/Conversations`)
+    - [Steps](#steps) (`/Steps`)
+    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+    - [Sessions](#sessions) (`/Sessions`)
 
-The URL for accessing the V2.3 OData Endpoint is as follows:
-`https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
+    The URL for accessing the V2.3 OData Endpoint is as follows:
+    `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
-### Version 2.2 and Earlier
-!!! warning "Deprecation of OData v2.0 - 2.2"
-    OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
+=== "Version 2.2 and Earlier"
+    !!! warning "Deprecation of OData v2.0 - 2.2"
+        OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
 
-- [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
-- [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
+    - [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+    - [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
+    - [Steps](#steps) (`/Steps`)
+    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+    - [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
-The URL for accessing the V2.X OData Endpoint is as follows:
-`https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
+    The URL for accessing the V2.X OData Endpoint is as follows:
+    `https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
 
 ## Querying
 
@@ -146,9 +148,17 @@ Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an 
 
 **Example Query**
 
- * v2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`.
- * v2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`.
- * v2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+    
+    `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
+
+=== "OData 2.0"
+    
+    `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -214,9 +224,17 @@ The Conversations collection offers a log of all session messages, including the
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+
+    `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+
+    `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`
+
+=== "OData 2.0"
+    
+    `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -251,9 +269,17 @@ The Steps collection offers a list of all entities (an entity is a flow node or 
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`.
+=== "OData 2.3" 
+    
+    `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`
+
+=== "OData 2.2" 
+
+    `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`
+
+=== "OData 2.0" 
+    
+    `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -279,9 +305,16 @@ The ExecutedSteps collection contains a list of all step events that have occurr
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+    
+    `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`
+=== "OData 2.0"
+    
+    `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -317,9 +350,17 @@ The Sessions collection contains a list of all sessions that have occurred. The 
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+    
+    `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`
+
+=== "OData 2.0"
+ 
+    `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`
 
 **Data Types**
 
