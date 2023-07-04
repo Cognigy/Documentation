@@ -29,14 +29,16 @@ Cognigy supports [localization]({{config.site_url}}ai/resources/manage/localizat
 
 With Cognigy.AI 4.10.0 we have integrated machine translation capabilities into the Cognigy.AI platform.
 
-Cognigy's solution is a native integration of leading machine translation providers into the Conversational AI platform: Currently available are three providers, but more will be added.
+Cognigy.AI supports the following machine translation providers:
 
-- Microsoft Translator
-- Google Cloud Translation
-- DeepL Translation Pro
+| Provider                                |
+| --------------------------------------- |
+| Azure Cognitive Services Translator[^*] |
+| DeepL Translation Pro                   |
+| Google Cloud Translation                |
+| Microsoft Translator                    |
 
-!!! note "Azure Cognitive Service Translate"
-    Azure Cognitive Service Translate is also a supported translation provider, which uses the same platform as Microsoft Translator. Select `Microsoft Translator` in Agent Settings, Translation Settings when using Azure Cognitive Service Translate.
+[^*]: To use **Azure Cognitive Services Translator** you must select Microsoft Translator in Settings > Translation Settings
 
 These providers can be selected in the "Agent Settings" and provide the following advantages:
 
