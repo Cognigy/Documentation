@@ -31,12 +31,10 @@ With Cognigy.AI 4.10.0 we have integrated machine translation capabilities into 
 
 Cognigy.AI supports the following machine translation providers:
 
-| Provider                                |
-| --------------------------------------- |
-| Azure Cognitive Services Translator[^*] |
-| DeepL Translation Pro                   |
-| Google Cloud Translation                |
-| Microsoft Translator                    |
+- Microsoft Translator
+    - Microsoft Azure Cognitive Services Translator[^*]
+- Google Cloud Translation
+- DeepL Translation Pro
 
 [^*]: To use **Azure Cognitive Services Translator** you must select Microsoft Translator in Settings > Translation Settings
 
