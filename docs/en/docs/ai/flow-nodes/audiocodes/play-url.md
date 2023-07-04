@@ -6,7 +6,7 @@
 # Play URL
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-play-url-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/play-url.png" width="80%" />
   <figcaption>AudioCodes Play URL</figcaption>
 </figure>
 
