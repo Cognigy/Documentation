@@ -6,7 +6,7 @@
 # Set State
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic-set-state.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/set-state.png" width="80%" />
 </figure>
 
 ## Description

@@ -6,7 +6,7 @@
 # Datepicker
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/906e522-node-datepicker.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/datepicker.png" width="80%" />
 </figure>
 
 ## Description

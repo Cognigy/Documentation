@@ -8,7 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-rating" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/set-rating.png" width="80%" />
 </figure>
 
 ## Description

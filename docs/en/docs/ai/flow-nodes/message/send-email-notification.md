@@ -3,12 +3,12 @@ title: "Email Notification"
 slug: "email-notification"
 hidden: false
 ---
-# Send Email Notification
+# Email Notification
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/36b6341-Screenshot_from_2021-05-17_15-55-12.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/email-notification.png" width="80%" />
 </figure>
 
 ## Description

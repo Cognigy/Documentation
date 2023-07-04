@@ -6,7 +6,7 @@
 # Request Rating
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/request-rating.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/request-rating.png" width="80%" />
 </figure>
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
