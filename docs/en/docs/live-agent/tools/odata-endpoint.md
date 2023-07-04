@@ -5,7 +5,9 @@
 ---
 # OData Analytics Endpoint
 
-Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. OData, *the Best Way to REST* is a powerful API framework, see more at [OData.org](https://www.odata.org/). The OData Endpoints allows you to retrieve some of the most relevant data models from Live Agent. It has all your enterprise analytics needs covered, to make fine-grained queries in your spreadsheets, or to build rich dashboards for your bots with your favorite data visualization tool.
+Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoints allows you to retrieve the most relevant data models from Live Agent by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+
+Note that the Live Agent OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -320,12 +322,6 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
     Cognigy.AI supports OData version 4.0, which implies that certain versions of Tableau are not compatible.
 
 Find instructions on how to connect an OData Feed in the [Tableau documentation](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
-
-### Postman and other API Tools
-
-When connecting from Postman or similar API tools, you must use a GET request to connect to our OData feed.
-
-{! _includes/ai/odata-read-only.md !}
 
 ## OData Consumer Ecosystem
 

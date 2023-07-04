@@ -5,7 +5,9 @@
 ---
 # OData Analytics Endpoint
 
-Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+Cognigy.AI exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+
+Note that the Cognigy OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -408,12 +410,6 @@ Follow the [instructions in the Power BI documentation](https://docs.microsoft.c
     At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
 
 The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
-
-### Postman and other API Tools
-
-When connecting from Postman or similar API tools, you must use a GET request to connect to our OData feed.
-
-{! _includes/ai/odata-read-only.md !}
 
 ### OData Consumer Ecosystem
 
