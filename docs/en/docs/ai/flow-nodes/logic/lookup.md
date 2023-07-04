@@ -37,7 +37,7 @@ However, you can also select a level via the "Intent Level" dropdown, if Intents
 In this case only the Intents of the chosen level are selectable in the Intent dropdown menu of the Case Nodes.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6b2661d-intent.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6b2661d-intent.png" width="100%" />
   <figcaption>An intent type Lookup Node with 3 cases.</figcaption>
 </figure>
 
@@ -48,7 +48,7 @@ In this case only the Intents of the chosen level are selectable in the Intent d
 By changing the lookup type to **Text**, the Flow will select a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-text.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-text.png" width="100%" />
   <figcaption>A Text type Lookup Node with 2 cases.</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ By changing the lookup type to **Text**, the Flow will select a case that matche
 By changing the lookup type to **[State]({{config.site_url}}ai/tools/interaction-panel/state/)**, the Flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3373c62-state.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3373c62-state.png" width="100%" />
   <figcaption>A State type Lookup Node with 3 cases.</figcaption>
 </figure>
 
@@ -67,7 +67,7 @@ By changing the lookup type to **[State]({{config.site_url}}ai/tools/interaction
 By changing the lookup type to **Type**, the Flow will select a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7b68885-type.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7b68885-type.png" width="100%" />
   <figcaption>A Type Lookup Node with 3 cases.</figcaption>
 </figure>
 
@@ -78,7 +78,7 @@ By changing the lookup type to **Type**, the Flow will select a case that matche
 By changing the lookup type to **Mode**, the Flow will select a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2a676e7-mode.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2a676e7-mode.png" width="100%" />
   <figcaption>A Mode type Lookup Node with 2 cases.</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ By changing the lookup type to **Mode**, the Flow will select a case that matche
 By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-handover-status.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/lookup-handover-status.png" width="100%" />
   <figcaption>A Handover Status type Lookup Node with 4 cases.</figcaption>
 </figure>
 
@@ -97,12 +97,12 @@ By changing the lookup type to **Handover Status**, the Flow will select a case 
 By changing the lookup type to **CognigyScript**, the Flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/fb8d3ae-cognigyScript.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/fb8d3ae-cognigyScript.png" width="100%" />
   <figcaption>Setting the Lookup type to CognigyScript</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f09cf4a-cognigyScript1.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f09cf4a-cognigyScript1.png" width="100%" />
   <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable.</figcaption>
 </figure>
 
