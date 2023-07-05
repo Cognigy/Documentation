@@ -6,7 +6,7 @@
 # Trigger Function
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/071ad5c-MicrosoftTeams-image_3.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/trigger-function.png" width="80%" />
   <figcaption>Conversation flow structure for an IF node.</figcaption>
 </figure>
 
