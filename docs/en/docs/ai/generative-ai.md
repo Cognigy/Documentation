@@ -143,9 +143,9 @@ Check in the interactive panel if your Flow works as expected.
 
 ## Complete texts
 
-### GPT Prompt
+### GPT LLM
 
-The [GPT Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+The [GPT LLM Node](./flow-nodes/other-nodes/gpt-llm.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
 
 ### GPT Conversation 
 

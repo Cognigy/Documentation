@@ -146,4 +146,4 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
 ## More information
 
 - [Generative AI](../../generative-ai.md)
-- [GPT Prompt Node](gpt-prompt.md)
+- [GPT LLM Node](gpt-llm.md)
