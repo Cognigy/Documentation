@@ -6,7 +6,7 @@
 # Sleep
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/sleep.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/sleep.png" width="80%" />
 </figure>
 
 ## Description
@@ -14,5 +14,4 @@
 
 A Sleep Node is used to pause the execution of a Flow for a certain time.
 
-!!! note "Pause between Messages"
-    If your Flow returns multiple messages at once with much content (e.g. a query Flow), you can use a Sleep Node to set a pause between messages to simulate a more natural human-like response behavior.
+If your Flow returns multiple messages at once with much content (e.g. a query Flow), you can use a Sleep Node to set a pause between messages to simulate a more natural human-like response behavior.

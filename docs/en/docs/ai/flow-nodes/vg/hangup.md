@@ -6,7 +6,7 @@
 # Hang Up
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-hang-up-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/hang-up.png" width="80%" />
   <figcaption>Voice Gateway Hang Up Node</figcaption>
 </figure>
 
