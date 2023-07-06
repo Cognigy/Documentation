@@ -22,7 +22,7 @@ To create a new canned response, follow these steps:
 3. In the upper-right corner, click **Add Canned Response**.
 4. In the **Add Canned Response** window, fill in the following fields:
     - **Short Code** — add a word that associates with the response.
-    - **Content** — add a message that will be sent to the user. In this message, you can utilize variables that will substitute user contact profile data or human agent profile data, such as `{{ agent.name }}`, `{{ contact.first_name }}`, `{{ contact.email }}`, and more. To include a variable, begin typing `{{` in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
+    - **Content** — add a message that will be sent to the user. In this message, you can replace user contact profile data or human agent profile data with specific variables, such as `{{ agent.name }}`, `{{ contact.first_name }}`, `{{ contact.email }}`, and more. To include a variable, begin typing `{{` in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
     - **Level** — select one of the following options from the list:
         - **Global** — all human agents can use a canned response.
         - **Personal** — only you can use a canned response.
