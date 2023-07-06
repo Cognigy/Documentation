@@ -7,7 +7,7 @@ hidden: false
 
 # Canned Responses
 
-Canned responses are pre-saved reply templates allowing human agents to respond to a conversation quickly.
+_Canned responses_ are pre-saved reply templates allowing human agents to respond to a conversation quickly.
 
 Canned Response templates provide support for HTML formatting.
 
@@ -22,7 +22,7 @@ To create a new canned response, follow these steps:
 3. In the upper-right corner, click **Add Canned Response**.
 4. In the **Add Canned Response** window, fill in the following fields:
     - **Short Code** — add a word that associates with the response.
-    - **Content** — add a message that will be sent to the user.
+    - **Content** — add a message that will be sent to the user. In this message, you can utilize variables that will substitute user contact profile data or human agent profile data, such as `{{ agent.name }}`, `{{ contact.first_name }}`, `{{ contact.email }}`, and more. To include a variable, begin typing `{{` in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
     - **Level** — select one of the following options from the list:
         - **Global** — all human agents can use a canned response.
         - **Personal** — only you can use a canned response.
