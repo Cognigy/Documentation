@@ -262,7 +262,7 @@ nav:
       - ai/flow-nodes/other-nodes/set-rating.md
       - ai/flow-nodes/other-nodes/set-translation.md
       - ai/flow-nodes/other-nodes/request-rating.md
-      - ai/flow-nodes/other-nodes/gpt-llm.md
+      - ai/flow-nodes/other-nodes/llm-prompt.md
       - ai/flow-nodes/other-nodes/gpt-conversation.md
       - ai/flow-nodes/other-nodes/close-handover.md
       - ai/flow-nodes/other-nodes/set-handover-inactivity.md

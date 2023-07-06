@@ -1,28 +1,28 @@
 ---
-title: "GPT LLM"
-slug: "gpt-llm"
-description: "The Cognigy GPT LLM Node allows using Generative AI for creating relevant content."
+title: "LLM Prompt"
+slug: "llm-prompt"
+description: "The Cognigy LLM Prompt Node allows using Generative AI for creating relevant content."
 hidden: false
 ---
 
-# GPT LLM (Beta)
+# LLM Prompt (Beta)
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.55(Beta)-purple.svg)](../../../release-notes/4.55.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-llm.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/llm-prompt.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-The GPT LLM Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text. 
+The LLM Prompt Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text. 
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
-To display the output of the GPT LLM Node to the user, follow these steps:
+To display the output of the LLM Prompt Node to the user, follow these steps:
 
-1. In the Flow editor, add a Say Node below the GPT LLM Node.
+1. In the Flow editor, add a Say Node below the LLM Prompt Node.
 2. In the **Output Type** field, select **Text**.
 3. In the **Text** field, specify `{{ " {{ input.generativeAi }}" }}`.
 4. Click **Save Node**.
