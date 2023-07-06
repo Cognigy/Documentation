@@ -24,7 +24,7 @@ To display the output of the LLM Prompt Node to the user, follow these steps:
 
 1. In the Flow editor, add a Say Node below the LLM Prompt Node.
 2. In the **Output Type** field, select **Text**.
-3. In the **Text** field, specify `{{ " {{ input.generativeAi }}" }}`.
+3. In the **Text** field, specify `{{ "{{ input.promptResult }}" }}` or click ![token](../../../assets/icons/token.svg) and select the **LLM Prompt Result** Token.
 4. Click **Save Node**.
 
 ## Settings
