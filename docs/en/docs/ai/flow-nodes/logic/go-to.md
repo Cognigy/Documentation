@@ -5,7 +5,7 @@
 ---
 # Go To
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9d3ce24-goto-show-flow.jpg" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/go-to.png" width="80%" />
 </figure>
 
 ## Description
