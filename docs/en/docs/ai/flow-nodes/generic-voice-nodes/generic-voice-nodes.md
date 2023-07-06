@@ -9,7 +9,7 @@
 The Generic Voice Nodes allow Users to use a set of nodes for their voice flows which is not related to one specific endpoint. Voice nodes are compatible with both Voice Integrations, AudioCodes and VoiceGateway.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/generic-voice-nodes.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/overview.png" width="80%" />
   <figcaption>Generic Voice Nodes</figcaption>
 </figure>
 

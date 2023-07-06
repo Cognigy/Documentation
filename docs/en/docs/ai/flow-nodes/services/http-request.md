@@ -7,7 +7,6 @@
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/http-request.png" width="80%" />
-  <figcaption>HTTP Request Node</figcaption>
 </figure>
 
 ## Description

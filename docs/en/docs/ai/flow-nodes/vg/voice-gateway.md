@@ -11,7 +11,7 @@ Cognigy Voice Gateway Nodes expose functionality provided by [Cognigy Voice Gate
 The Nodes are installed by default from Cognigy.AI 4.23.0 on.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-node-overview.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/overview.png" width="80%" />
   <figcaption>Voice Gateway Nodes</figcaption>
 </figure>
 
