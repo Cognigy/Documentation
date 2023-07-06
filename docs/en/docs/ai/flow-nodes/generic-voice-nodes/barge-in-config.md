@@ -7,7 +7,7 @@
 # Barge In - Config
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/barge-in-config.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/barge-in-config.png" width="80%" />
   <figcaption>Generic Barge In - Config Node</figcaption>
 </figure>
 

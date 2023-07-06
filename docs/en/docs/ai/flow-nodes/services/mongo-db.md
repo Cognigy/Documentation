@@ -6,7 +6,7 @@
 # Mongo DB
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/bb0d0a8-service-mongodb.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/mongo-db-find.png" width="80%" />
 </figure>
 
 ## Description

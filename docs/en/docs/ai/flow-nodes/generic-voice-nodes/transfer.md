@@ -7,8 +7,8 @@
 # Transfer
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/transfer.png" width="80%" />
-  <figcaption>Generic Transfer Node</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/transfer.png" width="80%" />
+  <figcaption>Generic Transfer</figcaption>
 </figure>
 
 ## Description

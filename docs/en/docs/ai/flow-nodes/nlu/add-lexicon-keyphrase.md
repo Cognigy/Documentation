@@ -6,7 +6,7 @@
 # Add Lexicon Keyphrase
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2e4ab6e-addLexiconKeyphrase.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/add-lexicon-keyphrase.png" width="80%" />
 </figure>
 
 ## Description

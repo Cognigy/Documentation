@@ -9,8 +9,8 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/release-notes.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/session-speech-parameter-config.png" width="50%" />
-  <figcaption>Generic Session Speech Parameters Config Node</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/session-speech-parameter-config.png" width="80%" />
+  <figcaption>Generic Session Speech Parameters Config</figcaption>
 </figure>
 
 ## Description

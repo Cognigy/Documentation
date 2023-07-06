@@ -211,7 +211,7 @@ nav:
       - ai/flow-nodes/code/channel-output.md
       - ai/flow-nodes/code/ai-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
-    - Voice Gateway:
+    - Voice:
       - Generic Voice Nodes:
         - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
         - ai/flow-nodes/generic-voice-nodes/play-url.md
