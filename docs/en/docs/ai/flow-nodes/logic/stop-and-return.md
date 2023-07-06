@@ -6,7 +6,7 @@
 # Stop and Return
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1e3581c-logic-stopandreturn.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/stop-and-return.png" width="80%" />
 </figure>
 
 ## Description

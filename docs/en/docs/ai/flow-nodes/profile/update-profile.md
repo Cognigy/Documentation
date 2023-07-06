@@ -6,7 +6,7 @@
 # Update Profile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7abec39-profile-update.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/update-profile.png" width="80%" />
 </figure>
 
 ## Description

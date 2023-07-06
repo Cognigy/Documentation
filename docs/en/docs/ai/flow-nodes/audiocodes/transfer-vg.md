@@ -6,7 +6,7 @@
 # Transfer
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-transfer-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/transfer.png" width="80%" />
   <figcaption>AudioCodes Transfer</figcaption>
 </figure>
 

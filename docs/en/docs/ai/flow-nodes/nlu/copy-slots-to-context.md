@@ -6,7 +6,7 @@
 # Copy Slots to Context
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9f952e8-copySlotsToContextNode.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/copy-slots-to-context.png" width="80%" />
 </figure>
 
 ## Description

@@ -6,7 +6,7 @@
 # Deactivate Profile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/93835e7-profile-deactivate.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/deactivate-profile.png" width="80%" />
 </figure>
 
 ## Description

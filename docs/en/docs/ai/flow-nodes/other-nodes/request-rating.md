@@ -5,32 +5,25 @@
 ---
 # Request Rating
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/request-rating.png" width="80%" />
+</figure>
+
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 ## Description
 <div class="divider"></div>
-Cognigy introduces as of release Cognigy.AI (4.10.0)  a new Flow Node "**Request Rating**". 
+Cognigy introduces as of release Cognigy.AI (4.10.0) a new Flow Node Request Rating. 
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/004d88b-Request_Rating_menu.svg" width="100%" />
-  <figcaption>Node selection menu</figcaption>
-</figure>
-
-The "**Request Rating**"-Node is used to request a rating. If the Node is triggered in your webchat conversation, you will see the rating dialog.
+The Request Rating Node is used to request a rating. If the Node is triggered in your webchat conversation, you will see the rating dialog.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9a139fc-Request_Rating_Webchat_5.svg" width="100%" />
   <figcaption>Webchat rating dialog</figcaption>
 </figure>
 
+## Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/86e7fea-Request_Rating_config_3.svg" width="100%" />
-  <figcaption>""Request Rating"-Node configuration</figcaption>
-</figure>
-
-
-## Option
 The configuration options and their functions are listed below:
 
 | Parameter               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |

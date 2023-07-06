@@ -6,7 +6,7 @@
 # If
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/fd696ec-if.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/if.png" width="80%" />
 </figure>
 
 ## Description

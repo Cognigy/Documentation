@@ -17,7 +17,3 @@ NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth
       </div>
    </div>
 </blockquote>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/59f1d47-NLUNodes.PNG" width="100%" />
-</figure>

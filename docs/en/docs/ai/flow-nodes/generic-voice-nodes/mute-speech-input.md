@@ -8,7 +8,7 @@ hidden: false
 # Mute Speech Input
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/mute-speech-input.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/mute-speech-input.png" width="80%" />
   <figcaption>Generic Mute Speech Input</figcaption>
 </figure>
 

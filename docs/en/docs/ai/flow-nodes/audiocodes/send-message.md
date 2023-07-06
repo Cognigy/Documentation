@@ -6,7 +6,7 @@
 # Send Message
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-send-message-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/send-message.png" width="80%" />
   <figcaption>AudioCodes Send Message</figcaption>
 </figure>
 

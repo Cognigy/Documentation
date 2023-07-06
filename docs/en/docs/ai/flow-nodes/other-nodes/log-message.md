@@ -6,8 +6,7 @@
 # Log Message
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/29c5c9f-logmessage.JPG" width="100%" />
-  <figcaption>Log Messages</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/log-message.png" width="80%" />
 </figure>
 
 ## Description

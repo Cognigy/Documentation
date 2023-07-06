@@ -5,7 +5,7 @@
 ---
 # Say
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6746960-node-say.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/say.png" width="80%" />
 </figure>
 
 ## Description

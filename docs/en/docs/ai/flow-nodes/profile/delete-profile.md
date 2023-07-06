@@ -6,7 +6,7 @@
 # Delete Profile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/138224d-profile-delete.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/delete-profile.png" width="80%" />
 </figure>
 
 ## Description

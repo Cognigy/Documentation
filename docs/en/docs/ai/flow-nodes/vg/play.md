@@ -8,7 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-play-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/play.png" width="80%" />
   <figcaption>Voice Gateway Play Node</figcaption>
 </figure>
 
