@@ -41,7 +41,7 @@ However, you can also select a level via the "Intent Level" dropdown if Intents 
 In this case, only the Intents of the chosen level are selectable in the Intent dropdown menu of the Case Nodes.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-intent.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-intent.png" width="100%" />
   <figcaption>An intent type Lookup Node with 3 cases</figcaption>
 </figure>
 
