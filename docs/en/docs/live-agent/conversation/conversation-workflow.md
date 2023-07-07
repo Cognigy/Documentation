@@ -87,10 +87,7 @@ Click on Add Labels within the Conversation Labels menu and select the category 
   <figcaption>Assign Labels</figcaption>
 </figure>
 
-
-
 You can see in the screenshot below that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
-
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
@@ -116,27 +113,48 @@ When you're ready to send the message, click **Send Button** or press ++enter++.
 
 For quick reply a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
-#### Send a Response with variables
+#### Send a Response with Variables
 
 Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
 
-To include a variable, begin typing `{{` in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
+To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
 
 There is a list of available variables:
 
-| Variable             | Description                                                                                                                                |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `conversation.id`    | An ID of the current conversation.                                                                                                         |
-| `contact.id`         | An ID that belongs to a user who create a conversation.                                                                                    |
-| `contact.id`         | A user ID that belongs to a user who create a conversation.                                                                                |
-| `contact.name`       | A user first name and a last name. If they are both not specified in the profile, a default value `customer` will be used.                 |
-| `contact.first_name` | A user first name. If it is not specified in the profile, a last name will be used. Otherwise, a default value `customer` will be applied. |
-| `contact.last_name`  | A user last name. If it is not specified in the profile, a first name will be used. Otherwise, a default value `customer` will be applied. |
-| `contact.email`      | A user email address.                                                                                                                      |
+| Variable                | Description                                                                                                                                        |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| `conversation.id`       | The ID of the current conversation.                                                                                                                |
+| `contact.id`            | The ID belonging to a user who creates a conversation.                                                                                             |
+| `contact.id`            | The user ID belonging to a user who creates a conversation.                                                                                        |
+| `contact.name`          | The user's first and last names. If both are not specified in the profile, the default value `customer` will be used.                              |
+| `contact.first_name`    | The user's first name. If it is not specified in the profile, the last name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.last_name`     | The user's last name. If it is not specified in the profile, the first name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.email`         | The user's email address.                                                                                                                          |
+| `contact.age`           | The user's age.                                                                                                                                    |
+| `contact.gender`        | The user's gender.                                                                                                                                 |
+| `contact.birthday`      | The user's date of birth.                                                                                                                          |
+| `contact.location`      | The user's current location.                                                                                                                       |
+| `contact.accepted_gdpr` | The user's acceptance of the General Data Protection Regulation (GDPR) policy.                                                                     |
+| `agent.name`            | The first and last names of the human agent.                                                                                                       |
+| `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
+| `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
+
+If your response contains a variable that does not exist, you can manually specify it in the user contact profile or choose not to include it.
+
+The same variables can be used multiple times within a single reply.
+
+Example:
+
+<code>
+Hi &lcub;&lcub;contact.first_name&rcub;&rcub;,
+Thank you for your recent message. We appreciate your inquiry.
+Your conversation with the ID &lcub;&lcub;conversation.id&rcub;&rcub; has been received.
+Our team will review it and provide a response as soon as possible.
+&lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
+</code>
+
 
 #### Send a Canned Response
-
-<div class="divider"></div>
 
 To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
 
@@ -146,11 +164,10 @@ To include a [canned response](../canned-responses.md) as a reply to the user, f
 
 The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
 
-If your canned response contains a variable that does not exist,
-you can specify it in the user contact profile manually or decline adding this variable.
+If your canned response contains a [variable](#send-a-response-with-variables) that does not exist, you can manually specify it in the user contact profile or choose not to include it.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
