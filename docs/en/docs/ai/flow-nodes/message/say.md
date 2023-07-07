@@ -197,7 +197,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 
 ### Adaptive Card
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../../release-notes/4.55.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
 
 The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
 
