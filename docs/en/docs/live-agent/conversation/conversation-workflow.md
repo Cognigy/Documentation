@@ -139,9 +139,9 @@ There is a list of available variables:
 | `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
 | `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
 
-If your response contains a variable that does not exist, you can manually specify it in the user contact profile or choose not to include it.
-
 The same variables can be used multiple times within a single reply.
+
+Note that you cannot create a custom variable.
 
 Example:
 
@@ -163,8 +163,6 @@ To include a [canned response](../canned-responses.md) as a reply to the user, f
 3. Select the desired canned response from the list.
 
 The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
-
-If your canned response contains a [variable](#send-a-response-with-variables) that does not exist, you can manually specify it in the user contact profile or choose not to include it.
 
 <figure>
 <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
