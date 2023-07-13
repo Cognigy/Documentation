@@ -26,8 +26,8 @@ for ensuring the smooth and successful deployment of Cognigy products within an 
 | v4.51                              | 1.19-1.25  | 4.4-5.0 | 7.0 (stand-alone)                           | 2.6     | 3.9      | 3.8+ |
 | v4.52                              | 1.19-1.25  | 4.4-5.0 | 7.0 (stand-alone)                           | 2.6     | 3.9      | 3.8+ |
 | v4.53                              | 1.19-1.25  | 4.4-5.0 | 7.0 (stand-alone)                           | 2.6     | 3.9      | 3.8+ |
-| v4.54                              | 1.19-1.25  | 4.4-5.0 | 7.0 (both stand-alone and HA with Sentinel) | 2.10    | 3.9      | 3.9+ |
-| v4.55                              | 1.19-1.26  | 4.4-5.0 | 7.0 (both stand-alone and HA with Sentinel) | 2.10    | 3.9      | 3.9+ |
+| v4.54                              | 1.19-1.25  |   5.0   | 7.0 (both stand-alone and HA with Sentinel) | 2.10    | 3.9      | 3.9+ |
+| v4.55                              | 1.19-1.26  |   5.0   | 7.0 (both stand-alone and HA with Sentinel) | 2.10    | 3.9      | 3.9+ |
 
 
 ## Cognigy Live Agent
