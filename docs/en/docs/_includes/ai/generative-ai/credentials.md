@@ -32,7 +32,7 @@
     === "Google"
         8.1 Fill in the **Connection name** field by specifying a unique name for your connection.<br>
         8.2 To upload the JSON file with a key for your model, you need to obtain this key. Go to the Google Vertex AI console.<br>
-        8.3 Click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Make sure that the Vertex AI API are enabled<br>
+        8.3 Click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Make sure that the Vertex AI API are enabled.<br>
         8.4 In the left-side menu, go to the **IAM & Admin > Service Accounts**.<br>
         8.5 Select **Actions** and click **Manage Keys**.<br>
         8.6 On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
