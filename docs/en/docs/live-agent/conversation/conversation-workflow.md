@@ -87,34 +87,89 @@ Click on Add Labels within the Conversation Labels menu and select the category 
   <figcaption>Assign Labels</figcaption>
 </figure>
 
-
-
 You can see in the screenshot below that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
-
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
   <figcaption>Conversations Actions</figcaption>
 </figure>
 
-
-### Reply To A Conversation
+### Send a Response 
 <div class="divider"></div>
 
-You can reply to a customer's Conversation by typing in the Reply section. 
+To respond to a user in the conversation chat, type your message in the **Reply** section.
 
-Pressing Shift+Enter will allow you to enter an additional new line into your response, while pressing Enter will send the message.
+For quick reply, you can use canned responses, variables, or a combination of both.
 
+If you need to add a new line in your response, press ++shift+enter++.
+When you're ready to send the message, click **Send Button** or press ++enter++.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-8.png" width="100%" alt="Live Agent Conversations Reply" />
-  <figcaption>Reply Conversation</figcaption>
+  <figcaption>Reply to a Message</figcaption>
 </figure>
 
+### Send Quick Responses
 
-Click on the Send button or press Enter to send your message to the customer.
+For quick reply a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
-###  Conversation Actions
+#### Send a Response with Variables
+
+Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
+
+To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
+
+There is a list of available variables:
+
+| Variable                | Description                                                                                                                                        |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| `conversation.id`       | The ID of the current conversation.                                                                                                                |
+| `contact.id`            | The ID belonging to a user who creates a conversation.                                                                                             |
+| `contact.id`            | The user ID belonging to a user who creates a conversation.                                                                                        |
+| `contact.name`          | The user's first and last names. If both are not specified in the profile, the default value `customer` will be used.                              |
+| `contact.first_name`    | The user's first name. If it is not specified in the profile, the last name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.last_name`     | The user's last name. If it is not specified in the profile, the first name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.email`         | The user's email address.                                                                                                                          |
+| `contact.age`           | The user's age.                                                                                                                                    |
+| `contact.gender`        | The user's gender.                                                                                                                                 |
+| `contact.birthday`      | The user's date of birth.                                                                                                                          |
+| `contact.location`      | The user's current location.                                                                                                                       |
+| `contact.accepted_gdpr` | The user's acceptance of the General Data Protection Regulation (GDPR) policy.                                                                     |
+| `agent.name`            | The first and last names of the human agent.                                                                                                       |
+| `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
+| `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
+
+The same variables can be used multiple times within a single reply.
+
+Note that you cannot create a custom variable.
+
+Example:
+
+<code>
+Hi &lcub;&lcub;contact.first_name&rcub;&rcub;,
+Thank you for your recent message. We appreciate your inquiry.
+Your conversation with the ID &lcub;&lcub;conversation.id&rcub;&rcub; has been received.
+Our team will review it and provide a response as soon as possible.
+&lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
+</code>
+
+
+#### Send a Canned Response
+
+To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
+
+1. Type `/` followed by the short name of the message. For example, `/greeting`.
+2. Once you type `/`, a list of available canned responses will be displayed.
+3. Select the desired canned response from the list.
+
+The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
+
+<figure>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
+  <figcaption>Send Canned Response</figcaption>
+</figure>
+
+### Conversation Actions
 
 [![Version badge](https://img.shields.io/badge/updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
@@ -145,21 +200,6 @@ If forwarding was enabled for Assist messages, the Agent can click the blue arro
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
     </figure>
 
-### Send a Canned Response
-<div class="divider"></div>
-
-To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
-
-1. Type `/` followed by the short name of the message. For example, `/greeting`.
-2. Once you type `/`, a list of available canned responses will be displayed.
-3. Select the desired canned response from the list.
-
-The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
-  <figcaption>Send Canned Response</figcaption>
-</figure>
 
 ### How to request file upload
 <div class="divider"></div>
