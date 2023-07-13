@@ -29,6 +29,23 @@
             - **apiKey** — add an API Key that you generated via [Account Settings](https://console.anthropic.com/docs/api#accessing-the-api) in Anthropic.<br>
         8.2 Click **Create**.<br>
 
+    === "Google"
+        8.1 Fill in the **Connection name** field by specifying a unique name for your connection.<br>
+        8.2 To upload the JSON file with a key for your model, you need to obtain this key. Go to the Google Vertex AI console.<br>
+        8.3 Click the **Enable All Recommended APIs** button to activate an API connection, if it is not activated. Make sure that the Vertex AI API are enabled.<br>
+        8.4 In the left-side menu, go to the **IAM & Admin > Service Accounts**.<br>
+        8.5 Select **Actions** and click **Manage Keys**.<br>
+        8.6 On the **Keys** page, select **Add Key** and click **Create new Key**.<br>
+        8.7 In the appeared window, select the **JSON** key type and click **Create**. The file will be downloaded.<br>
+        8.8 In Cognigy, in the **New Connection** window, click **Upload JSON file** and upload the file.<br>
+        8.9 Click **Create**.<br>
+        8.10 Fill in the remaining fields:<br>
+            - **Location** — add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model.<br>
+            - **API Endpoint** — add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model.<br>
+            - **Publisher** — add an owner's name of the model. If not specified, `Google` will be used by default.
+               This parameter is optional.<br>
+            
+
 9. To apply changes, click **Save**.
 10. To check if the connection was set up, click **Test**.
 
