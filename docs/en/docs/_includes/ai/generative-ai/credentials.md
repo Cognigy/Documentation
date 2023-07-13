@@ -42,7 +42,7 @@
         8.10 Fill in the remaining fields:<br>
             - **Location** — add a [region](https://cloud.google.com/vertex-ai/docs/general/locations) for the model.<br>
             - **API Endpoint** — add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model.<br>
-            - **Publisher** — add an owner's name of the model.
+            - **Publisher** — add an owner's name of the model. If not specified, `Google` will be used by default.
                This parameter is optional.<br>
             
 
