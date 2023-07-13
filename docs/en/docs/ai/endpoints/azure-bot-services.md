@@ -31,11 +31,19 @@ Find out about the generic endpoint settings available with this endpoint on the
 ## Channel Specific Settings
 
 <div class="divider"></div>
-The **Bot Framework Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with an Azure Bot Services deployment.
+The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with an Azure Bot Services deployment.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/71157ce-azureSettings.PNG" width="100%" />
 </figure>
+
+### Access Scope
+
+This settings determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
+
+#### Restrict to Azure AD Accounts
+
+When choosing **Multi Tenant**, you will have an additional toggle. The **Restrict to Azure AD Accounts** setting prevents public access to your Endpoint, and only allows access to Teams accounts that are managed by an organization in Azure Active Directory.
 
 ### Microsoft App ID
 
@@ -44,6 +52,10 @@ This value is the **Microsoft App ID** which is obtained in the settings page of
 ### Microsoft App Password
 
 This value is the **Microsoft App Password** of your Bot, also referred to as the **Client Secret**. This is obtained by creating a new Client Secret in the App Registrations page for your bot in the Azure Bot Services Dashboard.
+
+### SSO Connection Name
+
+This value is the **SSO Connection Name** when using this endpoint with an SSO integration.
 
 !!! note "Help Center"
     More detailed information on how to set up an **Azure Bot Services** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016183720).
