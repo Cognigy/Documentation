@@ -33,10 +33,6 @@ Find out about the generic endpoint settings available with this endpoint on the
 <div class="divider"></div>
 The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with an Azure Bot Services deployment.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/71157ce-azureSettings.PNG" width="100%" />
-</figure>
-
 ### Access Scope
 
 This settings determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
