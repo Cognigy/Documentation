@@ -16,7 +16,7 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 The table below lists the LLMs supported by Cognigy.
 
-| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node |
+| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node |
 |-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|
 | **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |
 | gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
@@ -27,6 +27,10 @@ The table below lists the LLMs supported by Cognigy.
 | **Anthropic**               |                            |                     |                    |                 |                       |                 |
 | claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               |
 | claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               |
+| **Google**                  |                            |                     |                    |                 |                       |                 |
+| text-bison-001 (Bard)       | -                          | -                   | -                  | -               | -                     | +               |
+
+
 
 ## Add a Model
 

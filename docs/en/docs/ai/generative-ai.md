@@ -35,7 +35,8 @@ Before using this feature, you need to create an account in one of the Generativ
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
-- [Anthropic Claude](https://console.anthropic.com/docs). You need be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
+- [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
+- [Google Vertex AI](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
 
 ## Set up Generative AI
 
@@ -143,9 +144,16 @@ Check in the interactive panel if your Flow works as expected.
 
 ## Complete texts
 
-### GPT Prompt
+You can use the following Nodes for completing tasks.
 
-The [GPT Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+- [LLM Prompts](#llm-prompt)
+- [GPT Conversations](#gpt-conversation)
+
+These Nodes support only text output in the [AI channel](flow-nodes/message/say.md#description).
+
+### LLM Prompt
+
+The [LLM Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
 
 ### GPT Conversation 
 
@@ -157,9 +165,13 @@ The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) featur
 
 ## FAQ
 
-**Q:** Can I use my OpenAI free account for the Generative AI feature in Cognigy.AI?
+**Q1:** Can I use my OpenAI free account for the Generative AI feature in Cognigy.AI?
 
-**A:** A paid account is required to get an API Key, which is necessary for using Generative AI. A free account does not provide this key.
+**A1:** A paid account is required to get an API Key, which is necessary for using Generative AI. A free account does not provide this key.
+
+**Q2**: Why doesn't Generative AI work with AudioCodes Nodes?
+
+**A2:** Generative AI output supports only text messages in the [AI channel](#complete-texts).
 
 ## More information
 

@@ -197,7 +197,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 
 ### Adaptive Card
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../../../release-notes/4.44.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
 
 The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
 
@@ -273,7 +273,61 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
         ]
       }
       ```
+#### Create an Adaptive Card with Generative AI
 
+You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [Generative AI providers](../../generative-ai.md#prerequisites).
+
+To activate this feature, follow these steps: 
+
+1. Select the **Adaptive Card** output type.
+2. On the right side of the **Output type** list, click ![beta](../../../assets/icons/beta.svg).
+3. In the **Generate Node Output** section, specify a task for the Generative AI model.
+4. Click **Generate**.
+
+To navigate between your inputs, use ![back arrow](../../../assets/icons/back-arrow.svg) ![beta](../../../assets/icons/next-arrow.svg).
+
+To delete the generated result, click ![recycle bin](../../../assets/icons/recycle-bin.svg).
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
+</figure>
+
+??? info "Generative AI Adaptive Card JSON example"
+
+    ```json
+    {
+      "type": "AdaptiveCard",
+      "version": "1.0",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Food Order",
+          "size": "large",
+          "weight": "bolder"
+        },
+        {
+          "type": "TextBlock",
+          "text": "Please enter your order details below:"
+        },
+        {
+          "type": "Input.Text",
+          "placeholder": "Food item",
+          "id": "food_item"
+        },
+        {
+          "type": "Input.Number",
+          "placeholder": "Quantity",
+          "id": "quantity"
+        }
+      ],
+      "actions": [
+        {
+          "type": "Action.Submit",
+          "title": "Submit"
+        }
+      ]
+    }
+    ```
 ## Alexa
 <div class="divider"></div>
 
