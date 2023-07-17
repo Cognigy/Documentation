@@ -6,7 +6,7 @@ hidden: false
 # Complete Goal
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/744a2aa-profile-complete.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/complete-goal.png" width="80%" />
 </figure>
 
 ## Description

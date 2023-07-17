@@ -27,6 +27,10 @@ The table below lists the LLMs supported by Cognigy.
 | **Anthropic**               |                            |                     |                    |                 |                       |                 |
 | claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               |
 | claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               |
+| **Google**                  |                            |                     |                    |                 |                       |                 |
+| text-bison-001 (Bard)       | -                          | -                   | -                  | -               | -                     | +               |
+
+
 
 ## Add a Model
 

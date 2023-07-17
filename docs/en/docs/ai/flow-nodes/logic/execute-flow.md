@@ -6,7 +6,7 @@
 # Execute Flow
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/879b1b0-execute.jpg" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/execute-flow.png" width="80%" />
 </figure>
 
 ## Description
