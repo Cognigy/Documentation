@@ -1,6 +1,6 @@
 ---
 title: "Version Compatibility Matrix"
-slug: "cognigy-ai-version-compatibility-matrix"
+slug: "live-agent-version-compatibility-matrix"
 description: "Version compatibility matrix for Cognigy Live Agent and Infrastructure Components provides valuable insights and ensures seamless integration and upgrades for optimal performance."
 hidden: false
 ---

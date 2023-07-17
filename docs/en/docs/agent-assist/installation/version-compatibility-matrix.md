@@ -1,7 +1,7 @@
 ---
 title: "Version Compatibility Matrix"
-slug: "cognigy-ai-version-compatibility-matrix"
-description: "Version compatibility matrix for Cognigy.AI and Infrastructure Components provides valuable insights and ensures seamless integration and upgrades for optimal performance."
+slug: "agent-assist-version-compatibility-matrix"
+description: "Version compatibility matrix for Cognigy Agent Assist Workspace and Infrastructure Components provides valuable insights and ensures seamless integration and upgrades for optimal performance."
 hidden: false
 ---
 
