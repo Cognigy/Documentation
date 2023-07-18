@@ -399,6 +399,7 @@ nav:
       - Installation:
           - agent-assist/installation/overview.md
           - agent-assist/installation/browser-requirements.md
+          - agent-assist/installation/version-compatibility-matrix.md
           - agent-assist/installation/prerequisites.md
           - agent-assist/installation/installation-process.md
       - agent-assist/contact-center-integration.md
@@ -428,6 +429,7 @@ nav:
   - Installation & Configuration:
     - ai/installation/overview.md
     - ai/installation/browser-requirements.md
+    - ai/installation/version-compatibility-matrix.md
     - ai/installation/prerequisites.md
     - ai/installation/pre-installation-checklist.md
     - ai/installation/installation-process.md
@@ -488,6 +490,7 @@ nav:
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
+    - live-agent/installation/deployment/version-compatibility-matrix.md
     - Deployment:
       - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
@@ -545,6 +548,7 @@ nav:
     - voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
+    - voicegateway/installation/version-compatibility-matrix.md
     - Deployment:
       - voicegateway/installation/installation-process.md
   - Self-Service Portal:
