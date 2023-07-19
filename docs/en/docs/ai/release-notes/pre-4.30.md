@@ -185,7 +185,7 @@ This release of Cognigy.AI adds the ability to inspect individual outputs within
 ### Bugfixes
 - Fixed a bug where messages in the Live Chat were missing when a conversation is "Taken over" by one agent and then later the other
 - Fixed a bug where a user assigned to multiple organizations could not log in to one of the assigned organizations
-- Fixed a bug where slots were not always found in executed Flows (with executeFlow node or goto node), when parseSlots option was disabled
+- Fixed a bug where slots were not always found in executed Flows (with executeFlow node or Go To node), when parseSlots option was disabled
 - Fixed a bug where adding image tag in SMTP Email Node Content field did not work as expected
 - Fixed a bug where list output type in messenger channel crashed node editor
 - Fixed a bug where one of our info logs was missing the name of a flow
@@ -451,7 +451,7 @@ This release of Cognigy.AI adds the functionality to track the last activity of 
 - Fixed a bug where Task Manager related errors are mistakenly generated
 - Fixed a bug where errors are not properly handled when non-existing processes are killed
 - Fixed a bug where an invalid json is generated when a period for which no data exists is specified via the OData interface using $filter
-- Fixed a bug regarding our Think Node when using GoTo to jump into a sub-Flow
+- Fixed a bug regarding our Think Node when using Go To to jump into a sub-Flow
 - Fixed a bug where the entrypoint was wrong when using our Think Node together with the Execute-Flow Node and a Question Node
 - Fixed a bug where Execute-Cognigy-NLU Node would use the wrong Flow
 
@@ -1253,7 +1253,7 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 ### Bugfixes
 - fixed a bug in the Date-Picker so our customers can use named-dates such as "tomorrow"
 - fixed a bug in our OpenAPI specification for the Import-Lexicon API
-- fixed a bug where the GoTo Flow Node auto-selects "Start"-Node each time the Node Edit Panel will be visited
+- fixed a bug where the Go To Flow Node auto-selects "Start"-Node each time the Node Edit Panel will be visited
 - fixed a problem in our sidebar where e.g. the build menu sits
 - fixed a bug where the main/attached-Flow priority setting was broken
 
@@ -1329,11 +1329,11 @@ We have added the ability to filter inactive Contact Profiles in the Contact Pro
 
 ### Bugfixes
 - Fixed a bug in our VoiceGateway endpoint where the userId was incorrect for outbound calls
-- Fixed a bug where a goTo-node would not execute all nodes that follow the node that you jump to in certain conditions
+- Fixed a bug where a Go To Node would not execute all nodes that follow the node that you jump to in certain conditions
 - Fixed a bug where tasks would not be cancelable for non-admin users
 - Fixed a bug related to old projects and attached Flows
 - Fixed an issue and bring back real-time analytics tiles
-- Fixed a bug where the incorrect intent would be used when using a GoTo node
+- Fixed a bug where the incorrect intent would be used when using a Go To node
 - Fixed a bug where the create-agent journey step would only get completed when using the create function, not the creation wizard
 
 ## 4.1.2
@@ -1439,7 +1439,7 @@ https://github.com/Cognigy/WebchatWidget/releases/tag/v2.24.0
 We have extended our Question-Nodes to make them more powerful. Cognigy.AI 4.1.0 adds features like `extra validation`, `optional re-prompt validation`, a `configurable forget threshold` as well as a new `type of question` for data inputs. We have also added the ability to specify an `optional result location` for the result of your questions.
 
 ### Improvements
-- Add Intent- and Slot-parsing to our GoTo-Node
+- Add Intent- and Slot-parsing to our Go To Node
 - Uploading intents in non-primary locales is now possible
 - Improved Input-Transformers by allowing partial results
 - Improve client-side validation on various fields (e.g. required, needs at least x characters, can't contain certain characters) in our user interface to improve user experience
