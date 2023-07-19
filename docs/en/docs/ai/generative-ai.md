@@ -153,7 +153,7 @@ These Nodes support only text output in the [AI channel](flow-nodes/message/say.
 
 ### LLM Prompt
 
-The [LLM Prompt Node](./flow-nodes/other-nodes/gpt-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+The [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
 
 ### GPT Conversation 
 

@@ -5,6 +5,8 @@
 ---
 # Azure Bot Services
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/501691c-AzureBotServices.PNG" width="100%" />
 </figure>
@@ -17,25 +19,26 @@ Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to 
 
 Find out about the generic endpoint settings available with this endpoint on the following pages:
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
+- [Endpoints Overview](overview.md) 
+- [Data Protection & Analytics](data-protection-and-analytics.md)
+- [Transformer Functions](transformers/transformers.md) 
+- [NLU Connectors](../resources/build/nlu-connectors.md)
+- [Session Management](session-management.md)
+- [Handover Settings](handover-settings.md)
+- [Real Time Translation Settings](real-time-translation-settings.md) 
 
 !!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+    You can use the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality with this type of Endpoint.
 
 ## Channel Specific Settings
 
 <div class="divider"></div>
+
 The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with an Azure Bot Services deployment.
 
 ### Access Scope
 
-This settings determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
+This setting determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
 
 #### Restrict to Azure AD Accounts
 
@@ -64,7 +67,6 @@ As of release v4.9 the display changes for clicked postback buttons in a Microso
 
 When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-nodes/message/say/#text-with-quick-replies), [gallery]({{config.site_url}}ai/flow-nodes/message/say/#gallery), [list]({{config.site_url}}ai/flow-nodes/message/say/#list), or [button]({{config.site_url}}ai/flow-nodes/message/say/#text-with-buttons) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
 
-
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Azure_Bot_Service_with_Microsoft_Teams_chat_1.svg" width="100%" />
 </figure>
@@ -73,7 +75,7 @@ When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c891b0a-Eatery_make_order_2.svg" width="100%" />
 </figure>
 
-### Channel Priority when using Azure Bot Services
+## Channel Priority when using Azure Bot Services
 
 You can use the Azure Bot Services Endpoint to serve multiple channels, such as Line, Messenger, Microsoft Teams, and others. 
 
@@ -91,7 +93,7 @@ Priority rules exist for the following supported Azure Bot Services channels:
 - Azure Bot Services
 - AI
 
-#### Examples
+### Examples
 
 Consider the following examples when using the Azure Bot Services Endpoint from the perspective of channel priority.
 
@@ -109,7 +111,7 @@ Result: The user will receive the text output from the Azure Bot Services channe
 
 **Example 3**
 
-The Optional Qestion Node is configured with only the AI channel.
+The Optional Question Node is configured with only the AI channel.
 
 Result: The user will receive the text output from the AI channel.
 
