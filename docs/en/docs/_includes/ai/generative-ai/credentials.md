@@ -9,7 +9,7 @@
 
     === "Microsoft Azure OpenAI"
         8.1 Fill in the following fields:<br>
-            - **Connection name** — create a unique name for your connection.
+            - **Connection name** — create a unique name for your connection.<br>
             - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
             - **resourceName** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). This value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.<br>
         8.2 Click **Create**.<br>

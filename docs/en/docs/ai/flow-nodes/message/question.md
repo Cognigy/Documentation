@@ -5,6 +5,8 @@
 ---
 # Question
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.55(Beta)-purple.svg)](../../../release-notes/4.55.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question.png" width="80%" />
 </figure>
