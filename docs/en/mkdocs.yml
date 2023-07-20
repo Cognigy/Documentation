@@ -521,15 +521,16 @@ nav:
   - Reports:
       - live-agent/reports.md
   - Settings:
-      - live-agent/agents.md
-      - live-agent/teams.md
-      - live-agent/inboxes.md
-      - live-agent/labels.md
-      - live-agent/automation-rules.md
-      - live-agent/canned-responses.md
-      - live-agent/attachments.md
-      - live-agent/audit-logs.md
-      - live-agent/account-settings.md
+      - live-agent/settings/overview.md
+      - live-agent/settings/agents.md
+      - live-agent/settings/teams.md
+      - live-agent/settings/inboxes.md
+      - live-agent/settings/labels.md
+      - live-agent/settings/automation-rules.md
+      - live-agent/settings/canned-responses.md
+      - live-agent/settings/attachments.md
+      - live-agent/settings/audit-logs.md
+      - live-agent/settings/account-settings.md
   - live-agent/roles.md
   - live-agent/notifications.md
   - live-agent/profile-settings.md

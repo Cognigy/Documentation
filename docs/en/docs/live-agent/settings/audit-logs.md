@@ -7,7 +7,7 @@ hidden: false
 
 # Audit Logs
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.54-blue.svg)](../release-notes/4.54.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.54-blue.svg)](../../release-notes/4.54.md)
 
 _Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. These logs record important user activities, system events, and configuration changes, providing details for security and auditing purposes. With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. The logs include events such as `create`, `update`, and `delete` for [Inboxes](inboxes.md) and [Automation Rules](automation-rules.md).
 

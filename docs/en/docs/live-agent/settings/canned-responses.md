@@ -13,7 +13,7 @@ Canned Response templates provide support for HTML formatting.
 
 ## Create a Canned Response
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../release-notes/4.53.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../../release-notes/4.53.md)
 
 To create a new canned response, follow these steps:
 
@@ -35,7 +35,7 @@ Alternatively, you can add a canned response or a list of canned responses by im
 
 ## Import Canned Responses
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.52-blue.svg)](../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.52-blue.svg)](../../release-notes/4.52.md)
 
 To import canned responses, follow these steps:
 
@@ -56,4 +56,4 @@ The canned responses will appear in the list on the Canned Responses page.
 
 ## Use a Canned Response
 
-To start using canned responses in the conversations, go to the [Send a Canned Response](conversation/conversation-workflow.md#send-a-canned-response).
+To start using canned responses in the conversations, go to the [Send a Canned Response](../conversation/conversation-workflow.md#send-a-canned-response).
