@@ -124,7 +124,7 @@ Allows the conversation to break out of the Question Node if a specified Intent 
 |-------------------------|-----------------------------------------------------------------------------------------------------|
 | Output Message          | Outputs a message (equal to a Say Node)                                                             |
 | Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                      |
-| Go To Node              | Goes to a specific Flow Node and continues from there (equal to GoTo Node)                          |
+| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                         |
 | Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
 | Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
 
@@ -139,7 +139,7 @@ Allows the conversation to break out of the Question Node after a number of inco
 |-------------------------|-----------------------------------------------------------------------------------------------------|
 | Output Message          | Outputs a message (equal to a Say Node)                                                             |
 | Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                      |
-| Go To Node              | Goes to a specific Flow Node and continues from there (equal to GoTo Node)                          |
+| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                         |
 | Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
 | Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
 
