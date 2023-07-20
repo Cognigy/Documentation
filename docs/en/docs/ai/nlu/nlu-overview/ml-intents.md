@@ -95,10 +95,6 @@ Intent example sentences should be as distinct and unique as possible. If there 
 
 When you hover over an example sentence, a *Delete Icon* will appear. Clicking on this will delete the corresponding example sentence field for you.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/nlu/images/example-sentence-delete-icon.gif" width="100%" />
-</figure>
-
 !!! warning "Delete Example Sentences using Keyboard"
     The *Delete Icon* of an example sentence cannot be accessed when only using a keyboard. However, a keyboard-only user can still delete an example sentence simply by clearing the field using *Delete* or *Backspace* keys.
 
