@@ -83,7 +83,7 @@ The timer is set in minutes and may vary by up to one minute. If there is no end
 
 ## Set up Go To Node
 
-Set the **Go To** Node to return to the Handover To Agent Node. This moves the entrypoint directly above the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
+Set the **Go To** Node to return to the Lookup Node. This moves the entrypoint to the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
 
 In the **Go To** Node editor,
 select **Lookup** from the **Select Node** list
