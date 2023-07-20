@@ -89,7 +89,7 @@ When the checkbox for automatically deleting resolved conversations is marked, t
 
 ### Auto Assign Conversations to a Busy Agent
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../release-notes/4.53.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
 
 By default, you can manually assign conversations to human agents if they are busy.
 
@@ -97,7 +97,7 @@ To automate this process, you can activate the **Assign conversation to a busy a
 
 ## Notifications
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../release-notes/4.45.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
 {! _includes/live-agent/push-notifications.md !}
 
@@ -108,7 +108,7 @@ As an administrator, you can configure push and email notifications for the foll
 - When you are mentioned in conversation.
 - When a new message is created in an assigned conversation.
 
-This configuration applies to all human agents of your organization account and overrides the agent [Profile settings](profile-settings.md#notifications).
+This configuration applies to all human agents of your organization account and overrides the agent [Profile settings](../profile-settings.md#notifications).
 
 ## Account ID and Version
 
@@ -123,4 +123,4 @@ The Account ID is the unique identifier of your account. It is used in the Live 
 
 ### Version
 
-The version is the version of the Cognigy Live Agent running. To check the features and fixes for each version, head over to [Release Notes](../release-notes/release-notes.md)
+The version is the version of the Cognigy Live Agent running. To check the features and fixes for each version, head over to [Release Notes](../../release-notes/release-notes.md)

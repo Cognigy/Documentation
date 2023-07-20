@@ -156,7 +156,7 @@ Our team will review it and provide a response as soon as possible.
 
 #### Send a Canned Response
 
-To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
+To include a [canned response](../settings/canned-responses.md) as a reply to the user, follow these steps:
 
 1. Type `/` followed by the short name of the message. For example, `/greeting`.
 2. Once you type `/`, a list of available canned responses will be displayed.

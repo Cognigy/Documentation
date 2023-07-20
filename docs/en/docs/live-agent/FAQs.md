@@ -25,7 +25,7 @@ You need to create a new Inbox. To do that, use the [Adding another Inbox for yo
 
 ### Where can I check what the default Inbox is? Does it have a special account id?
 
-The default Inbox has a pattern name `XXXX-default`, for example, `7119-default`. You can rename it in [Inbox Settings](../live-agent/inboxes.md#inbox-settings)
+The default Inbox has a pattern name `XXXX-default`, for example, `7119-default`. You can rename it in [Inbox Settings](settings/inboxes.md#inbox-settings)
 
 ### How to fix custom SSL certificate verification error?
 That may happen because Cognigy.AI is running under a custom SSL certificate (Error can not validate certificate). And Live Agent is failing to perform the requests to it as SSL requests can not be verified.
@@ -40,7 +40,7 @@ Head over to [Helm SMTP values](../live-agent/installation/helm-values/smtp.md) 
 ### How to create labels and assign them to conversations? 
 Once a label has been created, navigate to a conversation. There is a section called ***"Conversation Labels"*** on the right side, where labels can be added.
 
-Head over to [Labels](../live-agent/labels.md) for more information.
+Head over to [Labels](settings/labels.md) for more information.
 
 ### How to request a file from a conversation? 
 
@@ -60,12 +60,12 @@ To add an Agent to an Inbox, follow these steps:
 2. Locate the Inbox that you want to edit and click the **Settings** icon.
 3. On the **Collaborators** tab, select the Agent name from the **Agents** list.
 4. Apply changes by clicking **Update**.
-Head over to [Inboxes](../live-agent/inboxes.md#inbox-collaborators) for more information.
+Head over to [Inboxes](settings/inboxes.md#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
 Navigate to ***"Settings"*** > ***"Teams"*** and click on the ***"Create new team"*** button. In the second step, add the desired Agents. The added Agents can be updated later.
 
-Head over to [Teams](../live-agent/teams.md) for more information.
+Head over to [Teams](settings/teams.md) for more information.
 
 ### How to get the user access token (API Key)?
 The user access token is displayed at the bottom of the [Profile Settings](../live-agent/profile-settings.md).
@@ -78,7 +78,7 @@ A quick way is to select an Inbox on the dashboard screen. The URL will look lik
 The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**
 
 ### Can a TTL be set for attachments contained in messages?
-Yes, a TTL for attachments contained in messages per account can be defined under the [Account Settings](../live-agent/account-settings.md#attachment-ttl).
+Yes, a TTL for attachments contained in messages per account can be defined under the [Account Settings](settings/account-settings.md#attachment-ttl).
 
 ### Is antivirus file upload scanning enabled for App and Trial environments?
 The antivirus file upload scanning needs to be configured at the infrastructure level, and it is not enabled for the Trial and App instances at the moment.
