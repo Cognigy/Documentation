@@ -8,6 +8,10 @@ hidden: false
 
 In this getting started guide, you will learn how to configure your Agent Assist Workspace.
 
+{! _includes/agent-assist/before-you-begin.md !}
+
+## Create Flows
+
 To get started with the service:
 
 1. Go to the Cognigy.AI interface.
