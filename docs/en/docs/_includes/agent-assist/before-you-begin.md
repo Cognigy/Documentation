@@ -1,6 +1,6 @@
 ## Before you begin
 
-Agent Assist Workspace is automatically activated on Cognigy Trial and Cognigy shared SaaS environment.
+Agent Assist Workspace is automatically activated on Cognigy Trial and Cognigy shared SaaS environments.
 
 To activate this feature in other environments, do the following:
 
