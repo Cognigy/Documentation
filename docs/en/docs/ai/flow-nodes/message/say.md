@@ -281,9 +281,9 @@ To activate this feature, follow these steps:
 
 1. Select the **Adaptive Card** output type.
 2. On the right side of the **Output type** list, click ![beta](../../../assets/icons/beta.svg).
-3. In the **Generate Node Output** section, specify a task for the Generative AI model. For example, `Create a form with a customer name field and a date input field`.
-4. Click **Generate**. The adaptive card will be generated under the **Adaptive Cards designer** section.
-5. Improve the existing result by creating a new task in the **Generate Node Output** section. For example, `Add a flight number field`.
+3. In the **Generate Node Output** section, instruct the Generative AI model how to improve the current Adaptive Card. For example, `Create a form with a customer name field and a date input field`.
+4. Click **Generate**. The adaptive card will be generated.
+5. Iteratively improve the resulting Adaptive Card by giving further instructions in the **Generate Node Output** section. For example, `Add a flight number field`.
 6. Click **Generate**. The existing adaptive card will be updated.
 
 To navigate between your inputs, use ![back arrow](../../../assets/icons/back-arrow.svg) ![beta](../../../assets/icons/next-arrow.svg).
