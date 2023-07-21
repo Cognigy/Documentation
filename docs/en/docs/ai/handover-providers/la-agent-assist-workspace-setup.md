@@ -7,6 +7,15 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../../release-notes/4.51.md)
 
+## Before you begin
+
+Agent Assist Workspace is automatically activated on Cognigy Trial and Cognigy shared SaaS environment.
+
+To activate this feature in other environments, do the following:
+
+- On Cognigy dedicated SaaS environment, contact [Cognigy technical support](../../help/get-help.md).
+- On Cognigy On-premises environment, install Cognigy Agent Assist with [Cognigy Agent Assist Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-agent-assist-helm-chart).
+
 {! _includes/beta/new-feature-note.md !}
 
 {! _includes/ai/providers/live-agent/agent-assist-setup.md !}
