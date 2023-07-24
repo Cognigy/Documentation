@@ -68,8 +68,9 @@ To start using Salesforce as a handover provider with Cognigy.AI, follow these s
               }
           );
           ```
-   <br>
+
 5. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Events case of a Handover Status Lookup Node. Agent Replies and Conversation Closed events are not forwarded.
+6. Click **Save**.
 
 ### Configure Handover Settings
 
@@ -77,7 +78,7 @@ In the Salesforce settings of the [Handover to Agent](../tools/agent-handover.md
 configure the following settings:
 
 - **Send Transcript as a first message** — the setting allows Salesforce to receive conversation transcript as a first message. It is turned off by default.
-- **Button ID** — the ID of the Button you created in the Salesforce installation. This setting will override the default Button ID that you specified in the Endpoint configuration. You can use different Button IDs for individual Handover to Agent Nodes.
+- **Button ID** — the ID of the Button you created in the Salesforce installation. This setting will override the default Button ID that you specified in the [Endpoint configuration](#create-an-endpoint). You can use different Button IDs for individual Handover to Agent Nodes.
 - **Pre-chat Entities and Details** — the additional context sent in a custom JSON structure, providing the information before engaging with the human agent. See more information in the [Pre-chat Entities and Details](#pre-chat-details) section.
 
 #### Pre-chat Entities and Details
