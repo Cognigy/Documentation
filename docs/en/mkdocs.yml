@@ -371,20 +371,6 @@ nav:
     - ai/handover-providers/overview.md
     - Live Agent:
       - ai/handover-providers/live-agent-handover.md
-      - Live Agent Setup:
-        - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
-        - Handover Setup:
-          - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
-          - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
-          - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
-      - LA Agent Assist:
-        - ai/handover-providers/la-agent-assist-overview.md
-        - ai/handover-providers/la-agent-assist-setup.md
-        - ai/handover-providers/la-agent-assist-workspace-setup.md
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
@@ -487,6 +473,15 @@ nav:
     - live-agent/overview.md
   - Getting Started:
     - live-agent/getting-started/live-agent-getting-started.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
+    - Handover Setup:
+        - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
@@ -518,6 +513,10 @@ nav:
         - live-agent/conversation/conversation-routing.md
     - Assist Bot:
         - live-agent/conversation/assist-bot.md
+    - LA Agent Assist:
+        - ai/handover-providers/la-agent-assist-overview.md
+        - ai/handover-providers/la-agent-assist-setup.md
+        - ai/handover-providers/la-agent-assist-workspace-setup.md
   - Reports:
       - live-agent/reports.md
   - Settings:

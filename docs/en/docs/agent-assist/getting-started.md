@@ -4,9 +4,13 @@ slug: "getting-started"
 hidden: false
 ---
 
-# Getting started with the Agent Assist Workspace
+# Getting started with Agent Assist Workspace
 
 In this getting started guide, you will learn how to configure your Agent Assist Workspace.
+
+{! _includes/agent-assist/before-you-begin.md !}
+
+## Create Flows
 
 To get started with the service:
 

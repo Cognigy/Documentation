@@ -30,4 +30,5 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 - [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
 - [Agent Assist for Chat](chat-agent-assist.md)
 - [Integration with Contact Centers](contact-center-integration.md)
+- [LA Agent Assist Workspace](../ai/handover-providers/la-agent-assist-workspace-setup.md)
 
