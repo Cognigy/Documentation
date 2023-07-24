@@ -1,4 +1,4 @@
-## Before you begin
+## Before you Begin
 
 Agent Assist Workspace is automatically activated on Cognigy Trial and Cognigy shared SaaS environments.
 
