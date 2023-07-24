@@ -197,7 +197,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 
 ### Adaptive Card
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../../release-notes/4.56.md)
 
 The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
 
@@ -280,13 +280,15 @@ You can also use Generative AI to create a new adaptive card or improve an exist
 To activate this feature, follow these steps: 
 
 1. Select the **Adaptive Card** output type.
-2. On the right side of the **Output type** list, click ![beta](../../../assets/icons/beta.svg).
-3. In the **Generate Node Output** section, specify a task for the Generative AI model.
-4. Click **Generate**.
+2. On the right side of the **Output type** list, click ![the Gen AI Icon](../../../assets/icons/beta.svg).
+3. In the **Generate Node Output** section, instruct the Generative AI model how to improve the current Adaptive Card. For example, `Create a form with a customer name field and a date input field`.
+4. Click **Generate**. The adaptive card will be generated.
+5. Iteratively improve the resulting Adaptive Card by giving further instructions in the **Generate Node Output** section. For example, `Add a flight number field`.
+6. Click **Generate**. The existing adaptive card will be updated.
 
 To navigate between your inputs, use ![back arrow](../../../assets/icons/back-arrow.svg) ![beta](../../../assets/icons/next-arrow.svg).
 
-To delete the generated result, click ![recycle bin](../../../assets/icons/recycle-bin.svg).
+To replace the current Adaptive Card with a new one, click ![recycle bin](../../../assets/icons/recycle-bin.svg).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
@@ -296,38 +298,33 @@ To delete the generated result, click ![recycle bin](../../../assets/icons/recyc
 
     ```json
     {
+      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
       "version": "1.0",
       "body": [
         {
           "type": "TextBlock",
-          "text": "Food Order",
-          "size": "large",
-          "weight": "bolder"
-        },
-        {
-          "type": "TextBlock",
-          "text": "Please enter your order details below:"
+          "text": "Customer Form"
         },
         {
           "type": "Input.Text",
-          "placeholder": "Food item",
-          "id": "food_item"
+          "id": "customerName",
+          "placeholder": "Enter customer name"
         },
         {
-          "type": "Input.Number",
-          "placeholder": "Quantity",
-          "id": "quantity"
-        }
-      ],
-      "actions": [
+          "type": "Input.Date",
+          "id": "dateInput",
+          "placeholder": "Enter date"
+        },
         {
-          "type": "Action.Submit",
-          "title": "Submit"
+          "type": "Input.Text",
+          "id": "flightNumber",
+          "placeholder": "Enter flight number"
         }
       ]
     }
     ```
+
 ## Alexa
 <div class="divider"></div>
 
