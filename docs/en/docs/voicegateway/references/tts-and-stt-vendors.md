@@ -1,6 +1,7 @@
 ---
 title: "TTS and STT Vendors"
 slug: "tts-and-stt-vendors"
+description: "Voice Gateway provides a comprehensive list of supported TTS (Text-to-Speech) and STT (Speech-to-Text) providers, including Microsoft, AWS, Google, Nuance, Soniox, and Custom options. Explore the available integration options for an enhanced voice experience."
 hidden: false
 ---
 
@@ -19,3 +20,6 @@ The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) provider
 | Soniox    | -   | +   |
 | Custom    | +   | +   |
 
+## More Information
+
+- [Speech Services](../webapp/speech-services.md)

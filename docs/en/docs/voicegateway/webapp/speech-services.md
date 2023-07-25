@@ -7,11 +7,13 @@ hidden: true
 
 # Speech Services
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
+
 *Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. 
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
-You can create more than one speech service.
+You can create more than one speech service using speech vendors form the [list](../references/tts-and-stt-vendors.md)
 
 After creating a speech service, you can edit or delete it.
 
@@ -20,9 +22,9 @@ After creating a speech service, you can edit or delete it.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-speech-services.png"  width="100%" />
 
-## Add a custom Speech Provider
+## Add a custom Speech Vendor
 
-To add a custom speech provider, follow these steps:
+To add a custom speech vendor, follow these steps:
 
 1. Open The Cognigy Voice Gateway Self-Service Portal.
 2. In the left-side menu, select **Speech**.
@@ -38,5 +40,5 @@ To add a custom speech provider, follow these steps:
 To start using your speech provider,
 you need to specify the provider name in the **Custom** parameter of the relevant Nodes,
 such as [Set Session Config](../../ai/flow-nodes/vg/set-session-config.md),
-[Say](../../ai/flow-nodes/message/say.md#voice-gateway), Question or Optional Question,
+[Say](../../ai/flow-nodes/message/say.md#voice-gateway), [Question](../../ai/flow-nodes/message/question.md) or [Optional Question](../../ai/flow-nodes/message/optional-question.md),
 or [Session Speech Parameters Config](../../ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md).
