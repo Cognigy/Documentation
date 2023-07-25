@@ -45,7 +45,7 @@ With Cognigy.AI 4.10.0, we improved our capabilities to create metrics to have c
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/f21c0dc-Cognigy.AI_start_Insight_application_.svg" width="100%" />
-  <figcaption>Agent dashboard with sidebar menu - select "Insights" to switch to the analytics solution</figcaption>
+  <figcaption>Agent dashboard with sidebar menu - select Insights to switch to the analytics solution</figcaption>
 </figure>
 
 - In order to switch to Cognigy Insights, open the sidebar menu in Cognigy.AI and click **Insights**. We have used this option prior to guiding users to our [Analytics]({{config.site_url}}ai/tools/analytics/agents-analytics/) application.
@@ -53,7 +53,7 @@ With Cognigy.AI 4.10.0, we improved our capabilities to create metrics to have c
 !!! note
     When you are in an agent-specific route in Cognigy.AI (Agent is selected), you should see 'Insights' in the [user menu]({{config.site_url}}insights/cognigy-insights/#user-menu) pop-up. You can navigate to Insights of that Agent when you click on the menu item.
 
-When switching from Cognigy.AI to Cognigy Insights, you will be redirected to the Insights **Dashboard** section, starting on the "Overview" dashboard.
+When switching from Cognigy.AI to Cognigy Insights, you will be redirected to the Insights **Dashboard** section, starting on the Overview dashboard.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/overview_dashboard_overall.png" width="100%" />
