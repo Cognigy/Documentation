@@ -183,7 +183,7 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
 ---
 
 !!! tip "Time Zone & Date Slots"
-    Detection of dates depends on the time zone set for the Agent (see [Settings]({{config.site_url}}ai/resources/manage/settings/)) or User (see [here]({{config.site_url}}ai/flow-nodes/code/actions/))
+    Detection of dates depends on the time zone set for the Agent (see [Settings]({{config.site_url}}ai/resources/manage/settings/)) or Actions (see [Actions]({{config.site_url}}ai/flow-nodes/code/actions#actionssettimezoneoffset--apisettimezoneoffset))
 
 The following tables provide an overview of supported input patterns and formats. 
 
@@ -204,6 +204,32 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 
 !!! warning "Invalid DATES"
     Cognigy.AI checks the validity of provided dates, including leap years, etc. Invalid dates will not appear in the detected slots.
+
+### Future and Past Date Mapping
+
+Date slot detection will use the current year for inputs for dates in the current month, and will use the next upcoming year if a year is not given in the input.
+
+In order for a past date to be assigned to the DATE Slot if it not from the current month, but instead a previous month, a year will need to be provided in the input.
+
+For example, review the following scenarios:
+
+When the input is a date from the current month:
+
+- Today's date is July 26, 2023
+- The Input is `July 21`
+- DATE Slot Result: `"year": 2023, "month": 7, "day": 21`
+
+When the input is a date not from the current month, but instead a previous month, and no year is provided:
+
+- Today's date is July 26, 2023
+- The Input is `March 30`
+- DATE Slot Result: `"year": 2024, "month": 3, "day": 30`
+
+When the input is a date not from the current month, but instead a previous month, and a year is provided:
+
+- Today's date is July 26, 2023
+- The Input is `March 30, 2021`
+- DATE Slot Result: `"year": 2021, "month": 3, "day": 30`
 
 ## User-defined Slots (Lexicons)
 <div class="divider"></div>
