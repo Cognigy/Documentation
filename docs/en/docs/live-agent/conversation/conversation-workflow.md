@@ -123,7 +123,7 @@ To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. Afte
 
 When you select a variable and press **Enter**, it will be replaced with a value corresponding to the current conversation.
 
-For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> -> `David`, <code>&lcub;&lcub;conversation.id&rcub;&rcub;<code> -> `3705`.
+For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> -> `David`, <code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> -> `3705`.
 
 Note that you cannot create a custom variable.
 
