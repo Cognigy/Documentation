@@ -133,13 +133,19 @@ Furthermore, you can control analytics logging behavior inside a Flow using [Bli
 
 <div class="divider"></div>
 
-This section details the data types exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
+This section details the data types that exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
 
   * [Analytics](#analytics)
   * [Conversations](#conversations)
   * [Steps](#steps)
   * [ExecutedSteps](#executedsteps)
   * [Sessions](#sessions)
+
+### Fields
+
+Each collection will return, and can be filter by, fields.
+
+Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
 
 ### Analytics
 
@@ -211,11 +217,11 @@ When retrieving this collection, the endpoint will return the following fields:
 | ratingComment      | Comment left when given a rating                                                           | String   |                                      |
 | snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                      |
 
-!!! note "Field Explanation"
-    Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
-
 !!! warning "Max length of custom fields"
     You can store maximum 500 characters as the value of each of the custom fields
+
+!!! note "Why is the Analytics Step label not used?"
+    The analytics step label can be updated from the Cognigy user interface at any time. Therefore, in order to make all previous data records compatible with future records, the entityReferenceId is used. The entityReferenceID is either the Node ID or Intent ID which has been assigned as an analytics step. The current analytics label of the step can be retrieved by mapping the entityReferenceID to the [`Steps`](#steps) record.
 
 ### Conversations
 
@@ -297,6 +303,9 @@ When retrieving this collection, the endpoint will return the following fields:
 | projectName       | Name of the Cognigy.AI project                                             | String | Project 1                        |
 | snapshotId        | ID of the snapshot                                                         | String | 5e33b160e6236da3aa54221461a53f04 |
 | snapshotName      | Name of the snapshot                                                       | String | Bot Release 2.2                  |
+
+!!! note "Building Visualizations with Steps Records"
+    The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
 
 ### ExecutedSteps
  
@@ -404,41 +413,40 @@ The LiveAgentEscalations collection ...
 
 === "OData 2.2"
     
-    `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`
+    `https://odata-trial.cognigy.ai/v2.2/LiveAgentEscalations?apikey=YOURAPIKEY`
 
 === "OData 2.0"
  
-    `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`
+    `https://odata-trial.cognigy.ai/v2.0/LiveAgentEscalations?apikey=YOURAPIKEY`
 
 **Data Types**
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name          | Description                                      | Type     | Example                                                                        |
-| ------------------- | ------------------------------------------------ | -------- | ------------------------------------------------------------------------------ |
-| _id                 | Unique analytics record ID                       | String   | 5a91d194fde28b0011ce2423                                                       |
-| goals               | All goals that were achieved in the session      | String   | Goal1, Goal2                                                                   |
-| stepPath            | Comma separated list of steps executed           | String   | 9ac4f679-beae-4461-b9e3-43aece8b3430,f1e72fe3-f04b-48f5-b862-1e35ad253f18, ... |
-| stepsCount          | Count of the number of steps                     | Number   | 10                                                                             |
-| handoverEscalations | Number of times the session triggered a handover | Number   | 3                                                                              |
-| startedAt           | Timestamp when first message was received        | DateTime | 2018-2-25T12:32:32.000Z                                                        |
-| userId              | ID of the connecting user                        | String   | myContactID                                                                    |
-| sessionId           | Session ID                                       | String   | 5a91d194fde28b0011ce2425                                                       |
-| localeReferenceId   | Id of the locale                                 | String   | en-EN                                                                          |
-| localeName          | Name of the locale                               | String   | English                                                                        |
-| endpointReferenceId | ID of the endpoint                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
-| endpointName        | Endpoint name                                    | String   | Webchat                                                                        |
-| projectName         | Name of the Cognigy.AI project                   | String   | Project 1                                                                      |
-| projectId           | ID of the project                                | String   | 6067352c18887e471da4e392                                                       |
-| organisationId      | Cognigy.AI Organisation ID                       | String   | 5f8833dae72b850ad2ed4d53                                                       |
-| snapshotId          | ID of the snapshot                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
-| snapshotName        | Name of the snapshot                             | String   | Bot Release 2.2                                                                |
-
-!!! note "Building Visualizations with Steps Records"
-    The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
-
-!!! note "Why is the Analytics Step label not used?"
-    The analytics step label can be updated from the Cognigy user interface at any time. Therefore, in order to make all previous data records compatible with future records, the entityReferenceId is used. The entityReferenceID is either the Node ID or Intent ID which has been assigned as an analytics step. The current analytics label of the step can be retrieved by mapping the entityReferenceID to the `/Steps` record.
+| Field Name        | Description                                         | Type     | Example                                                          |
+| ----------------- | --------------------------------------------------- | -------- | ---------------------------------------------------------------- |
+| _id               | Unique identifier for the record                    | String   | 649be849b7fd71d48b9bacc8                                         |
+| organisation      | Name of the organization associated with the record | String   | cognigy                                                          |
+| projectId         | Identifier of the project related to the record     | String   | 6409b6c53c9687b5e78e6403                                         |
+| sessionId         | Identifier of the session                           | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
+| timestamp         | Date and time when the record was created           | DateTime | 2023-06-28T07:59:04.628Z                                         |
+| localeName        | Name of the locale                                  | String   | en                                                               |
+| status            | Current status of the record                        | String   | opened                                                           |
+| inboxId           | Identifier of the inbox associated with the record  | String   | 7983                                                             |
+| inboxName         | Name of the inbox                                   | String   | LA Chatbot-default                                               |
+| teamId            | Identifier of the team                              | String   | X                                                                |
+| teamName          | Name of the team                                    | String   | X                                                                |
+| labels            | List of labels associated with the record           | Array    | []                                                               |
+| agentId           | Identifier of the agent                             | String   | X                                                                |
+| agentName         | Name of the agent                                   | String   | X                                                                |
+| contactId         | Identifier of the contact                           | String   | 649ba8450d5df5cadf8b75b8                                         |
+| endpointName      | Name of the endpoint                                | String   | LA Chatbot                                                       |
+| endpointType      | Type of the endpoint                                | String   | webchat2                                                         |
+| endpointUrlToken  | Token or identifier associated with the endpoint    | String   | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
+| channel           | Channel through which the record was received       | String   | admin-webchat                                                    |
+| localeReferenceId | Identifier for the specific locale reference        | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
+| snapshotId        | Identifier of the snapshot                          | String   | X                                                                |
+| endpsnapshotName  | Name of the snapshot                                | String   | X                                                                |
 
 ## Integrations
 
