@@ -411,14 +411,6 @@ The LiveAgentEscalations collection contains records from Live Agent escalations
     
     `https://odata-trial.cognigy.ai/v2.3/LiveAgentEscalations?apikey=YOURAPIKEY`
 
-=== "OData 2.2"
-    
-    `https://odata-trial.cognigy.ai/v2.2/LiveAgentEscalations?apikey=YOURAPIKEY`
-
-=== "OData 2.0"
- 
-    `https://odata-trial.cognigy.ai/v2.0/LiveAgentEscalations?apikey=YOURAPIKEY`
-
 **Data Types**
 
 When retrieving this collection, the endpoint will return the following fields:
@@ -434,10 +426,10 @@ When retrieving this collection, the endpoint will return the following fields:
 | status            | Current status of the record                        | String   | opened                                                           |
 | inboxId           | Identifier of the inbox associated with the record  | String   | 7983                                                             |
 | inboxName         | Name of the inbox                                   | String   | LA Chatbot-default                                               |
-| teamId            | Identifier of the team                              | String   | X                                                                |
-| teamName          | Name of the team                                    | String   | X                                                                |
-| labels            | List of labels associated with the record           | Array    | []                                                               |
-| agentId           | Identifier of the agent                             | String   | X                                                                |
+| teamId            | Identifier of the team                              | String   | 8                                                                |
+| teamName          | Name of the team                                    | String   | IT Support                                                       |
+| labels            | List of labels associated with the record           | Array    | [conversations]                                                  |
+| agentId           | Identifier of the agent                             | String   | 618cf7687614774ba028dcac                                         |
 | agentName         | Name of the agent                                   | String   | X                                                                |
 | contactId         | Identifier of the contact                           | String   | 649ba8450d5df5cadf8b75b8                                         |
 | endpointName      | Name of the endpoint                                | String   | LA Chatbot                                                       |
@@ -445,8 +437,8 @@ When retrieving this collection, the endpoint will return the following fields:
 | endpointUrlToken  | Token or identifier associated with the endpoint    | String   | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
 | channel           | Channel through which the record was received       | String   | admin-webchat                                                    |
 | localeReferenceId | Identifier for the specific locale reference        | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
-| snapshotId        | Identifier of the snapshot                          | String   | X                                                                |
-| endpsnapshotName  | Name of the snapshot                                | String   | X                                                                |
+| snapshotId        | Identifier of the snapshot                          | String   | 63ff0cc47a466cab278fd19b                                         |
+| endpsnapshotName  | Name of the snapshot                                | String   | Prod-Snapshot 26.7.23                                            |
 
 ## Integrations
 
