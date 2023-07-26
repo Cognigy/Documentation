@@ -63,11 +63,11 @@ This can be done by click on a specific Node and then selecting **Add Localizati
 
 <div class="divider"></div>
 
-With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section "**Translation Settings**".
+With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section **Translation Settings**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Agent_Settings_Translation.jpg" width="100%" />
-  <figcaption>Agent "Translation Settings"</figcaption>
+  <figcaption>Agent Translation Settings</figcaption>
 </figure>
 
 #### Options
