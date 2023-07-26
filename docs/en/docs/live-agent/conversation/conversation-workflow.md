@@ -121,7 +121,7 @@ Live Agent offers a limited list of variables for user contact profile data or h
 
 To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
 
-When you select a variable and press ++enter++, it will be replaced with a value corresponding to the current conversation.
+When you select a variable and press **Enter**, it will be replaced with a value corresponding to the current conversation.
 
 For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> -> `David`, <code>&lcub;&lcub;conversation.id&rcub;&rcub;<code> -> `3705`.
 
@@ -183,7 +183,7 @@ You can [create a text including variables](../settings/canned-responses.md#crea
 
 A canned response with variables is called the same way as a [simple canned Response](#send-a-response),
 using the symbol `/`.
-When you select the canned response and press ++enter++,
+When you select the canned response and press **Enter**,
 variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
