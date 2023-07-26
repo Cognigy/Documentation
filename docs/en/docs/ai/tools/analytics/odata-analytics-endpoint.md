@@ -428,7 +428,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | inboxName         | Name of the inbox                                   | String   | LA Chatbot-default                                               |
 | teamId            | Identifier of the team                              | String   | 8                                                                |
 | teamName          | Name of the team                                    | String   | IT Support                                                       |
-| labels            | List of labels associated with the record           | Array    | [conversations]                                                  |
+| labels            | List of labels associated with the record           | Array    | [Hardware Issues]                                                  |
 | agentId           | Identifier of the agent                             | String   | 618cf7687614774ba028dcac                                         |
 | agentName         | Name of the agent                                   | String   | X                                                                |
 | contactId         | Identifier of the contact                           | String   | 649ba8450d5df5cadf8b75b8                                         |
