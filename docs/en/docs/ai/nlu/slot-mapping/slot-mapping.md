@@ -202,9 +202,6 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 | Default (English UK, German, Universal etc.) | dd/mm/YYYY                                                                                         |
 | English US, Japanese, Chinese                | mm/dd/YYYY<br/><br/>Note if mm/dd/YYYY yields an illegal date the parser falls back to dd/mm/YYYY. |
 
-!!! warning "Future Dates Only"
-    You can force the DATE slot to only detect dates in the future for relative expressions (e.g. "Monday", "Friday"). For more information, see the Code Node Action [setForwardDatesOnly]({{config.site_url}}ai/flow-nodes/code/actions/)
-
 !!! warning "Invalid DATES"
     Cognigy.AI checks the validity of provided dates, including leap years, etc. Invalid dates will not appear in the detected slots.
 
