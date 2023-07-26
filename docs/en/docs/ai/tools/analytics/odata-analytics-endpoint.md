@@ -143,9 +143,9 @@ This section details the data types that exist within the OData Collections that
 
 ### Fields
 
-Each collection will return, and can be filter by, fields.
+Each collection will return, and can be filtered by, fields. Many of the OData record fields are retrieved directly from the input object results.
 
-Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
+See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables in the input object are.
 
 ### Analytics
 
@@ -402,7 +402,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 **Description**
 
-The LiveAgentEscalations collection ...
+The LiveAgentEscalations collection contains records from Live Agent escalations, and includes the related data about handovers to Live Agent.
 
 
 **Example Query**
