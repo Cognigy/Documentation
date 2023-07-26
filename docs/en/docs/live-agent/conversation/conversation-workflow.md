@@ -111,13 +111,21 @@ When you're ready to send the message, click **Send Button** or press ++enter++.
 
 ### Send Quick Responses
 
-For quick reply a user in the conversation chat, you can use canned responses, variables, or a combination of both.
+For quick reply to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
 #### Send a Response with Variables
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
 
 Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
 
 To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
+
+When you select a variable and press ++enter++, it will be replaced with a value corresponding to the current conversation.
+
+For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> -> `David`, <code>&lcub;&lcub;conversation.id&rcub;&rcub;<code> -> `3705`.
+
+Note that you cannot create a custom variable.
 
 There is a list of available variables:
 
@@ -139,9 +147,9 @@ There is a list of available variables:
 | `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
 | `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
 
-The same variables can be used multiple times within a single reply.
+If any of the variables do not have values, you will receive a corresponding warning.
 
-Note that you cannot create a custom variable.
+The same variables can be used multiple times within a single reply.
 
 Example:
 
@@ -153,14 +161,12 @@ Our team will review it and provide a response as soon as possible.
 &lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
 </code>
 
-
 #### Send a Canned Response
 
 To include a [canned response](../settings/canned-responses.md) as a reply to the user, follow these steps:
 
-1. Type `/` followed by the short name of the message. For example, `/greeting`.
-2. Once you type `/`, a list of available canned responses will be displayed.
-3. Select the desired canned response from the list.
+1. In the **Reply to User** or **Reply to Bot** sections, type `/`. A list of available canned responses will be displayed. 
+2. Select the desired canned response from the list.
 
 The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
 
@@ -168,6 +174,18 @@ The selected canned response will be inserted into your reply, allowing you to e
 <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
+
+#### Send a Canned Response with Variables
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
+You can [create a text including variables](../settings/canned-responses.md#create-a-canned-response) for canned responses.
+
+A canned response with variables is called the same way as a [simple canned Response](#send-a-response),
+using the symbol `/`.
+When you select the canned response and press ++enter++,
+variables in the response will be replaced with values relevant to the current conversation.
+If any of the variables do not have values, you will receive a corresponding warning.
 
 ### Conversation Actions
 
