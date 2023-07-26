@@ -181,8 +181,8 @@ The selected canned response will be inserted into your reply, allowing you to e
 
 You can [create a text including variables](../settings/canned-responses.md#create-a-canned-response) for canned responses.
 
-A canned response with variables is called the same way as a [simple canned Response](#send-a-response),
-using the symbol `/`.
+A canned response with variables is called the same way as a [simple canned response](#send-a-response),
+by using the symbol `/`.
 When you select the canned response and press **Enter**,
 variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
