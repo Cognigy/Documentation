@@ -34,7 +34,7 @@ Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overvi
 ## Entry Points
 <div class="divider"></div>
 
-Flow execution typically starts at the top with the green **Start Node** . This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are subsequently published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
+Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are subsequently published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/620d8e2-nodes-start.jpg" width="100%" />

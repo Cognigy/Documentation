@@ -10,7 +10,7 @@
 ### On for all OS systems
 **Steps to start:**
   1. Clone repository from Documentation [repo on Azure DevOps](https://docs.docker.com/engine/install/ubuntu/) with SSH authentication
-  2. Run command ```docker run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live```
+  2. Run command `docker run --rm -it -p 8008:8008 -v ${PWD}:/app/ cognigydevelopment.azurecr.io/documentation-live:1 python ./scripts/docs.py live`
   3. The documentation will be accessible via http://0.0.0.0:8008
 
 #### Logging in to Azure
@@ -23,10 +23,10 @@ Run command:
 ## Working on the Documentation repository
 **Steps for starting working on new feature**
 
-  1. Create a working branch for your work, e.g. for a new feature: ```git checkout -b feature/0-name-of-feature```
+  1. Create a working branch for your work, e.g. for a new feature: `git checkout -b feature/0-name-of-feature`
   2. Make changes to the repository
-  3. Add files and folders to GIT, e.g. to add all files ```git add .```
-  4. Commit files to GIT ```git commit -m "Meaningful commit message"```
+  3. Add files and folders to GIT, e.g. to add all files `git add .`
+  4. Commit files to GIT `git commit -m "Meaningful commit message"`
   5. Push changes to your branch in GIT ```git push origin feature/0-name-of-feature```
   6. Go to [repository on Azure DevOps](https://cognigy.visualstudio.com/Documentation/_git/documentation) and click on "make a Pull Request"
   7. Fill in the "Pull Request form" with a good Subject name and as much detail as possible about the changes you made and assign at least one Reviewer and a AzureDevOps Work item.
