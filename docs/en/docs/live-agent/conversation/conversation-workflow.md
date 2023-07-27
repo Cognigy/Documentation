@@ -119,11 +119,17 @@ For quick reply to a user in the conversation chat, you can use canned responses
 
 Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
 
-To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
+To include a variable, follow these steps:
 
-When you select a variable and press **Enter**, it will be replaced with a value corresponding to the current conversation.
+1. Begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable. 
+2. Select a variable by using one of these methods:
+    - Click on the desired variable.
+    - Use the arrow keys on your keyboard to navigate to the variable, and then press **Enter**.<br>
+    Alternatively, you can type out variables instead of selecting them from the suggestions.
 
-For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> -> `David`, <code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> -> `3705`.
+The variable will be replaced with a value relevant to the current conversation.
+For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> → `David`,
+<code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> → `3705`. If any of the variables do not have values, you will receive a corresponding warning.
 
 Note that you cannot create a custom variable.
 
@@ -147,7 +153,6 @@ There is a list of available variables:
 | `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
 | `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
 
-If any of the variables do not have values, you will receive a corresponding warning.
 
 The same variables can be used multiple times within a single reply.
 
@@ -179,11 +184,11 @@ The selected canned response will be inserted into your reply, allowing you to e
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
 
-You can [create a text including variables](../settings/canned-responses.md#create-a-canned-response) for canned responses.
+You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
 
 A canned response with variables is called the same way as a [simple canned response](#send-a-response),
 by using the symbol `/`.
-When you select the canned response and press **Enter**,
+When you select the canned response,
 variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
