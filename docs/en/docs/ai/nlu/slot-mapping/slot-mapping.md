@@ -207,7 +207,9 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 
 ### Future and Past Date Mapping
 
-Date slot detection will use the current year for inputs for dates in the current month, and will use the next upcoming year if a year is not given in the input.
+Date slot detection will use the current year for inputs of dates in the current month, and for a date which has not yet occurred within the current year. 
+
+Date slot detection will use the next upcoming year if the date of the input is not in the current month, has already occurred in the current year, and a year is not given in the input.
 
 In order for a past date to be assigned to the DATE Slot if it not from the current month, but instead a previous month, a year will need to be provided in the input.
 
