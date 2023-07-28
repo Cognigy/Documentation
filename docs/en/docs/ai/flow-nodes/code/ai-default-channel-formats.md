@@ -27,7 +27,7 @@ Sends text to the Endpoint.
   <figcaption>Text in Webchat</figcaption>
 </figure>
 
-```javaScript
+```js
 actions.output("Your text", null);
 ``` 
 
@@ -369,7 +369,7 @@ actions.output(null, {
 });
 ``` 
 
-## Video
+### Video
 
 Outputs video from a URL. 
 
