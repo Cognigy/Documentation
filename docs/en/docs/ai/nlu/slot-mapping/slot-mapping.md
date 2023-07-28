@@ -183,7 +183,7 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
 ---
 
 !!! tip "Time Zone & Date Slots"
-    Detection of dates depends on the time zone set for the Agent (see [Settings]({{config.site_url}}ai/resources/manage/settings/)) or Actions (see [Actions]({{config.site_url}}ai/flow-nodes/code/actions#actionssettimezoneoffset--apisettimezoneoffset))
+    Detection of dates depends on the time zone set for the [Agent](../../resources/manage/settings.md#timezone) or [Actions](../../flow-nodes/code/actions.md#actionssettimezoneoffset--apisettimezoneoffset).
 
 The following tables provide an overview of supported input patterns and formats. 
 
@@ -207,9 +207,9 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 
 ### Future and Past Date Mapping
 
-Date slot detection will use the current year for inputs of dates in the current month, and for a date which has not yet occurred within the current year. 
+Date slot detection uses the current year for inputs of dates in the current month and for a date that has not yet occurred within the current year.
 
-Date slot detection will use the next upcoming year if the date of the input is not in the current month, has already occurred in the current year, and a year is not given in the input.
+Date slot detection uses the next upcoming year if the date of the input is not in the current month, has already occurred in the current year, and a year is not given in the input.
 
 In order for a past date to be assigned to the DATE Slot if it not from the current month, but instead a previous month, a year will need to be provided in the input.
 
