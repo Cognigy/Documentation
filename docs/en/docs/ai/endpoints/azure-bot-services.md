@@ -38,6 +38,8 @@ The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to b
 
 ### Access Scope
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
 This setting determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
 
 #### Restrict to Azure AD Accounts
