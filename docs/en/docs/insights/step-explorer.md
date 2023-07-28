@@ -140,9 +140,9 @@ what the virtual agent said before the user dropped off.
   <figcaption>Details to the "Handover request" step</figcaption>
 </figure>
 
-- You can select any step as "**Starting Step**" in the local filter settings. The Step Explorer will then visualize the analysis beginning at that step.
+- You can select any step as **Starting Step** in the local filter settings. The Step Explorer will then visualize the analysis beginning at that step.
 
-- You can change the conversation's "**Forward**" direction to a "**Backward**" direction. The Step Explorer will then display the analysis starting on the left side with the end of a conversation.
+- You can change the conversation's **Forward** direction to a **Backward** direction. The Step Explorer will then display the analysis starting on the left side with the end of a conversation.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/7d637e4-Step_Explorer_direction_backward_n3.png" width="100%" />
@@ -158,7 +158,7 @@ Fields with an 'arrow' icon are placeholders for hidden steps. These hidden step
   <figcaption>Example: Separate display of a selected step "Make an appointment"</figcaption>
 </figure>
 
-**Example step analysis of "Make an Appointment"**:
+**Example step analysis of "Make an Appointment**:
 
 **Step label**: 66% of the 'new callers' from the previous step made an appointment.
 **Additional information via hover field**: 66 % of the users who started a conversation made an appointment (the number found by Step Explorer: 5,477).

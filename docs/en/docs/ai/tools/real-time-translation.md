@@ -37,7 +37,7 @@ We can consider two use cases regarding the real-time translation:
 In Cognigy.AI Virtual Agents are deployed with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/), for example, the [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/). 
 It may be necessary for customers to make this chat available in another language.
 
-In that case, we have to activate the "**Real Time Translation Settings**".
+In that case, we have to activate the **Real Time Translation Settings**.
 
 
 <figure>
@@ -45,12 +45,12 @@ In that case, we have to activate the "**Real Time Translation Settings**".
   <figcaption>Endpoint Editor: "Real Time Translation Settings"</figcaption>
 </figure>
 
-- Go to the Endpoint editor and activate "**Real Time Translation**" in the "**Real Time Translation Settings**".
+- Go to the Endpoint editor and activate **Real Time Translation** in the **Real Time Translation Settings**.
 
-- "**Enable Translation**" using the slider.
-- Select the "**User Input Language**" using the drop-down menu.
-- Select "**Flow Language**" using the drop-down menu.
-- "**Save**" the settings.
+- **Enable Translation** using the slider.
+- Select the **User Input Language** using the drop-down menu.
+- Select **Flow Language** using the drop-down menu.
+- **Save** the settings.
 
 - With a click on "Open Webchat" you can chat with the Virtual Agent. 
 
@@ -85,7 +85,7 @@ The configuration options and their functions are listed below:
 
 ## Auto-Detect User Inputs
 
-We can not just have a preselected language in the settings, but we can also say "**Auto-Detect(auto)**" as "**User Input Language**".
+We can not just have a preselected language in the settings, but we can also say **Auto-Detect(auto)** as **User Input Language**.
 
 
 <figure>
@@ -93,9 +93,9 @@ We can not just have a preselected language in the settings, but we can also say
   <figcaption>Auto-detected user input (german language)</figcaption>
 </figure>
 
-When auto-detection for user inputs is activated, then we have an extra setting: "**Set user input language on execution count**".
+When auto-detection for user inputs is activated, then we have an extra setting: **Set user input language on execution count**.
 
-- Use the slider to set the option "**Set user input language on execution count**" as you want. The slide bar can be set between "0" and "5".
+- Use the slider to set the option **Set user input language on execution count** as you want. The slide bar can be set between "0" and "5".
 
 **Example**:  slider is set to "1" which means: Whatever language the user is using on their first input is the language that the Virtual Agent will use from then on. These settings work with every language we support.
 
@@ -141,4 +141,4 @@ Chat flow process between the user and Live Agent using real-time translation is
   <figcaption>Live Agent (English) conversation with a user (German) in real-time translation</figcaption>
 </figure>
 
-With a click on "**Resolve**," the Live Agent can close the conversation and the user is back to the Virtual Agent conversation as it was before.
+With a click on **Resolve**," the Live Agent can close the conversation and the user is back to the Virtual Agent conversation as it was before.

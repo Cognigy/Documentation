@@ -9,7 +9,7 @@
 
 <div class="divider"></div>
 
-Cognigy has integrated **"Chatwoot"** as an additional handover provider that can be used by our customers to connect their users with real agents (in third-party sources). Chatwoot is an open-source solution and free to use. You can read more about Agent Handover [here]({{config.site_url}}ai/tools/agent-handover/). 
+Cognigy has integrated **Chatwoot** as an additional handover provider that can be used by our customers to connect their users with real agents (in third-party sources). Chatwoot is an open-source solution and free to use. You can read more about Agent Handover [here]({{config.site_url}}ai/tools/agent-handover/). 
 
 ## Setup
 <div class="divider"></div>
@@ -23,9 +23,9 @@ To start using Chatwoot as a handover provider with Cognigy.AI, you first have t
 
 You need to configure the webhook **Inbox** for incoming messages.
 
-- Click on **"Inboxes"** in the main menu on the Chatwoot homepage 
+- Click on **Inboxes** in the main menu on the Chatwoot homepage 
 
-- Click on **"Add Inbox"** to start the Inbox creation and configuration procedure 
+- Click on **Add Inbox** to start the Inbox creation and configuration procedure 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/e18890e-Inbox_Create_API_Channel_edit.PNG" width="100%" />
@@ -37,7 +37,7 @@ You need to configure the webhook **Inbox** for incoming messages.
 
 - Enter the Endpoint Base URL in the "Webhook URL" line and append **/handover/chatwoot/** to the end of the URL (e.g. for example https://endpoint-trial.cognigy.com/handover/chatwoot)
 
-- Click on **"Create API Channel"**
+- Click on **Create API Channel**
 
 - Select the Agent who will be assigned to the Inbox messages, then confirm with a click on the "Add agents" button.
 
@@ -89,12 +89,12 @@ Now we need to connect the Endpoint to Chatwoot. To do this, open the Endpoint E
 </figure>
 
 - Enter following data 
- -- Select **"Chatwoot"** as  Handover Platform
+ -- Select **Chatwoot** as  Handover Platform
  -- Select **BaseUrl** as shown (e.g. `https://app.chatwoot.com/api/v1` or your on-premise Chatwoot API URL)
- -- Enter Chatwoot **"Account ID"** 
- -- Enter the **API Key** (use copy and paste -  you will find the key in Chatwoot in your **"Profile Settings"** in **"AccessToken"** - use the **"Copy"** button)
+ -- Enter Chatwoot **Account ID** 
+ -- Enter the **API Key** (use copy and paste -  you will find the key in Chatwoot in your **Profile Settings** in **AccessToken** - use the **Copy** button)
 
-- Click on **"Save"** to confirm the entries
+- Click on **Save** to confirm the entries
 
 - Click on "Open Webchat" and start a conversation
 
@@ -118,7 +118,7 @@ When you start a conversation with the Endpoint and trigger the Handover Node, t
 On the left-hand side the user messages are displayed - on the right-hand side the connected real agent replies are displayed in Chatwoot.
 
 !!! note "Note"
-    When a User request is answered and solved by the agent, the agent can **"Resolve"** the connection and if a further request will come in from the user side the agent can **"Reopen"** the connection in Chatwoot to be able to reply to the request.
+    When a User request is answered and solved by the agent, the agent can **Resolve** the connection and if a further request will come in from the user side the agent can **Reopen** the connection in Chatwoot to be able to reply to the request.
 
 ## Supported message content
 
@@ -142,7 +142,7 @@ Using the Chatwoot integration the user can receive
 
 <div class="divider"></div>
 
-In case you want to add a new Agent to Chatwoot go to the Chatwoot homepage and click on the **"Agents"** menu item.
+In case you want to add a new Agent to Chatwoot go to the Chatwoot homepage and click on the **Agents** menu item.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/8cd2b86-Chatwoot_settings_menu.svg" width="100%" />

@@ -74,7 +74,7 @@ You can send Facebook JSON directly from within Code Nodes using the output acti
 ## Auto-completion in Code-Nodes Editor
 <div class="divider"></div>
 
-When using the  **"input."** operator in the Node Editor of a "Code-Node", all available input objects  will be automatically displayed e.g. 
+When using the  **input.** operator in the Node Editor of a "Code-Node", all available input objects  will be automatically displayed e.g. 
 
 question<br/>
 entryPoint<br/>

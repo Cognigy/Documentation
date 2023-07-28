@@ -148,7 +148,7 @@ You can find more information here: [Localization]({{config.site_url}}ai/resourc
 </figure>
 
 !!! note
-    To clear all filter settings at once, click on the "**Reset filters**" button.  We will show it if the value of any global filter is not equal to the default value.
+    To clear all filter settings at once, click on the **Reset filters** button.  We will show it if the value of any global filter is not equal to the default value.
 
 ## Rating
 
