@@ -211,7 +211,7 @@ Date slot detection uses the current year for inputs of dates in the current mon
 
 Date slot detection uses the next upcoming year if the date of the input is not in the current month, has already occurred in the current year, and a year is not given in the input.
 
-In order for a past date to be assigned to the DATE Slot if it not from the current month, but instead a previous month, a year will need to be provided in the input.
+To assign a past date to the DATE Slot when it is from a previous month (not the current month), a year must be provided in the input.
 
 #### Examples 
 
