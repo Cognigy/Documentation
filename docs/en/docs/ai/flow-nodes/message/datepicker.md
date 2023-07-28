@@ -19,7 +19,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
 </figure>
 
 !!! tip "Automatically Triggered by Question Nodes"
-    The Datepicker is automatically triggered whenever a Question Node with **type "Date** is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
+    The Datepicker is automatically triggered whenever a Question Node with the **Date** type is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
 
 ## Properties
 <div class="divider"></div>

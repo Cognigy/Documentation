@@ -63,7 +63,7 @@ To add an Agent to an Inbox, follow these steps:
 Head over to [Inboxes](settings/inboxes.md#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
-Navigate to ***Settings*** > ***Teams*** and click on the ***Create new team*** button. In the second step, add the desired Agents. The added Agents can be updated later.
+Navigate to **Settings > Teams** and click on the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.
 
 Head over to [Teams](settings/teams.md) for more information.
 

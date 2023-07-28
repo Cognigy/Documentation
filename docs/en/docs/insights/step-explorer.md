@@ -158,7 +158,7 @@ Fields with an 'arrow' icon are placeholders for hidden steps. These hidden step
   <figcaption>Example: Separate display of a selected step "Make an appointment"</figcaption>
 </figure>
 
-**Example step analysis of "Make an Appointment**:
+**Example step analysis of Make an Appointment**:
 
 **Step label**: 66% of the 'new callers' from the previous step made an appointment.
 **Additional information via hover field**: 66 % of the users who started a conversation made an appointment (the number found by Step Explorer: 5,477).

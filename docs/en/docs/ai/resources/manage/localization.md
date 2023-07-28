@@ -36,7 +36,7 @@ Localizations act as groupings of specific content and can be applied in [**Flow
   <img class="image-center" src="{{config.site_url}}ai/resources/images/c744feb-localization-inflows.jpg" width="100%" />
 </figure>
 
-When switching Localization, the Flow will change its appearance. **Greyed out" Nodes** indicate that they have not been localized yet. 
+When switching Localization, the Flow will change its appearance. **Greyed out** Nodes indicate that they have not been localized yet. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/8c88b22-localization-inflows-compare.jpg" width="100%" />

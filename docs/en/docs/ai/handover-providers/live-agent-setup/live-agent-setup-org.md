@@ -42,7 +42,7 @@ Now that Live Agent is set up for your Organisation, you will need to create you
 ## Having Trouble?
 <div class="divider"></div>
 
-!!! warning **Set up Live Agent** disabled"
+!!! warning "Set up Live Agent disabled"
 
 	If the button is disabled, it could be for the following reasons:
 

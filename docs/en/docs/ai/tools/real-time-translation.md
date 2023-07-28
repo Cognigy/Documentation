@@ -141,4 +141,4 @@ Chat flow process between the user and Live Agent using real-time translation is
   <figcaption>Live Agent (English) conversation with a user (German) in real-time translation</figcaption>
 </figure>
 
-With a click on **Resolve**," the Live Agent can close the conversation and the user is back to the Virtual Agent conversation as it was before.
+With a click on **Resolve**, the Live Agent can close the conversation and the user is back to the Virtual Agent conversation as it was before.

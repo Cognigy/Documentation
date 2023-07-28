@@ -663,7 +663,7 @@ The **8x8** tab provides two methods for creating and editing a message which is
 
 As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
 
-**Say Node example using "Text with Buttons**
+**Say Node example using Text with Buttons**
 
 1. Create a Flow with Say Node. 
 2. Start the Say Node Editor, select the **Text with Buttons** option and click **Add a new Button**. 

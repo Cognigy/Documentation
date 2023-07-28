@@ -39,7 +39,7 @@ You can select two **Advanced** options to integrate a Think Node functionality 
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/558c716-Screen_Shot_057.PNG" width="100%" />
 </figure>
 
-Using the **Trigger Intent** option, you can re-execute the flow while forcing that a specific intent is found, instead of getting the intent result from our NLU engine. It is exactly the same behaviour as described in ["Trigger Intent"]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/).
+Using the **Trigger Intent** option, you can re-execute the flow while forcing that a specific intent is found, instead of getting the intent result from our NLU engine. It is exactly the same behaviour as described in [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/).
 
 You can trigger an intent with a user input like "cIntent:orderFood", then the intent "orderFood" will be triggered. 
 Using the Think Node you can have the same behaviour by choosing the "Trigger Intent" option, and "orderFood" in the "intent to trigger" field.

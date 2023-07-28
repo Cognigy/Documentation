@@ -55,7 +55,7 @@ You can navigate also through the conversation when you click step by step on an
 
 The numbers displayed below a message indicate how often this message has occurred in a selected timeframe. 
 
-To go back to the filtered messages again, click on the **X** icon in the column title labeled with "Current message".
+To go back to the filtered messages again, click on the **X** icon in the column title labeled with **Current message**.
 
 <figure>
   <img class="image-center" src="images/2ff2bfa-Message_Explorer_n8.svg" width="100%" />
