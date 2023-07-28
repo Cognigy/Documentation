@@ -115,7 +115,7 @@ If you have configured **Lexicons** with similar items (for example, pizza = FOO
   <figcaption>Machine Learning Intents: Slot & Lexicon Annotations</figcaption>
 </figure>
 
-Simply **highlight** the word that should be mapped as a slot or lexicon and click the "**+**" at the right end of the text field to open the **Annotations** menu. The annotations menu provides options to select the type of slot that should be mapped to the highlighted word. 
+Simply **highlight** the word that should be mapped as a slot or lexicon and click the **+** at the right end of the text field to open the **Annotations** menu. The annotations menu provides options to select the type of slot that should be mapped to the highlighted word. 
 
 !!! note "Example Sentence Annotation"
     Find out more about recognizing **Slots** and **Lexicons** in example sentences on the [Annotations Page]({{config.site_url}}ai/nlu/nlu-overview/annotations/).

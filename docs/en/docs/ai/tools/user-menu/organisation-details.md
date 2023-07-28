@@ -58,7 +58,8 @@ This process consists of two steps:
 
 After logging in to the Management UI, the user sees a button to trigger the actual deletion process.<br />
 
-!!! warning "**Clicking on this button marks the point of no return in deleting the whole organisation!**"
+!!! warning 
+    Clicking on this button marks the point of no return in deleting the whole organisation.
 
  Finally, once the deletion process has been completed, the system administrator will receive an email notifying them that the organisation has been completely removed.
 

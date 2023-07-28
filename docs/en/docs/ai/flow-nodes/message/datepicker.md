@@ -19,7 +19,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
 </figure>
 
 !!! tip "Automatically Triggered by Question Nodes"
-    The Datepicker is automatically triggered whenever a Question Node with **type "Date"** is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
+    The Datepicker is automatically triggered whenever a Question Node with the **Date** type is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
 
 ## Properties
 <div class="divider"></div>
@@ -50,13 +50,13 @@ Mode determines the behavior of the Datepicker.
 </figure>
 
 #### Open Datepicker Button Text
-This is the text that is shown in the button that is rendered when the Datepicker is triggered. By default, is says: **"pick date"**. 
+This is the text that is shown in the button that is rendered when the Datepicker is triggered. By default, is says: **pick date**. 
 
 #### Cancel Button Label
-This is the text that is shown on the "cancel" button that is rendered when the Datepicker has been opened. The default is **"cancel"**.
+This is the text that is shown on the "cancel" button that is rendered when the Datepicker has been opened. The default is **cancel**.
 
 #### Submit Button Label
-This is the text that is shown on the "submit" button that is rendered when the Datepicker has been opened. The default is **"submit"**.
+This is the text that is shown on the "submit" button that is rendered when the Datepicker has been opened. The default is **submit**.
 
 ### Date settings
 The Datepicker allows you to pricisely configure which dates can be selected. 

@@ -12,7 +12,7 @@
 <div class="divider"></div>
 A Say Node is used to send a message to the user.
 
-Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **"+"** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
+Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ea04ba5-channels.jpg" width="80%" />
   <figcaption>The say node menu with all channel output types enabled.</figcaption>
@@ -663,7 +663,7 @@ The **8x8** tab provides two methods for creating and editing a message which is
 
 As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
 
-**Say Node example using "Text with Buttons"**
+**Say Node example using Text with Buttons**
 
 1. Create a Flow with Say Node. 
 2. Start the Say Node Editor, select the **Text with Buttons** option and click **Add a new Button**. 

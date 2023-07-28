@@ -33,12 +33,12 @@ Warnings will only be generated and forwarded to our user interface when the Int
 
 * Go to the **Rules** edit field and enter for example **input.text=="rule"**
 * Go to the **Conditions** edit field and enter for example **input.includes==="condition"**
-* Click on **"Build Model"** to finish the intent creation 
+* Click on **Build Model** to finish the intent creation 
 
 Now user inputs can be scored of matching to the defined intent example sentences 
 
 * Open the [Interaction Panel](https://dash.readme.com/project/cognigy/v4.3/docs/interaction-panel) on the right hand side
-* For the scoring test you need to activate in Tab **"SETTINGS"** the expert mode
+* For the scoring test you need to activate in Tab **SETTINGS** the expert mode
 
 Activated Expert mode will show more detailed data on the Interaction panel!
 

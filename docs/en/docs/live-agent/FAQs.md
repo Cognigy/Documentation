@@ -38,7 +38,7 @@ For self-hosted installations, the SMTP configuration needs to be modified.
 Head over to [Helm SMTP values](../live-agent/installation/helm-values/smtp.md) for more information.
 
 ### How to create labels and assign them to conversations? 
-Once a label has been created, navigate to a conversation. There is a section called ***"Conversation Labels"*** on the right side, where labels can be added.
+Once a label has been created, navigate to a conversation. There is a section called ***Conversation Labels*** on the right side, where labels can be added.
 
 Head over to [Labels](settings/labels.md) for more information.
 
@@ -63,7 +63,7 @@ To add an Agent to an Inbox, follow these steps:
 Head over to [Inboxes](settings/inboxes.md#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
-Navigate to ***"Settings"*** > ***"Teams"*** and click on the ***"Create new team"*** button. In the second step, add the desired Agents. The added Agents can be updated later.
+Navigate to **Settings > Teams** and click on the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.
 
 Head over to [Teams](settings/teams.md) for more information.
 
