@@ -4,7 +4,7 @@ slug: "organisation-details"
 hidden: false 
 ---
 
-# Organisation Details
+# Organization Details
 
 The **Organisation Details** page includes an analytics overview section labeled **Billable Conversations**,
 offering platform administrators a comprehensive report on the volume of conversations
@@ -53,7 +53,7 @@ This process contains the following steps:
 
     <figure>
       <img class="image-center" src="{{config.site_url}}ai/tools/images/deleteOrg-request-email.png" width="100%" />
-      <figcaption>Organization Deletion email</figcaption>
+      <figcaption>Organization Deletion Email</figcaption>
     </figure>
 
 3. After logging in to the Management UI, the system administrator needs to click the **Delete Organisation** button that signifies the point of no return for deleting the entire organization.
