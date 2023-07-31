@@ -1,18 +1,21 @@
 ---
- title: "Organisation Details" 
- slug: "organisation-details" 
- hidden: false 
+title: "Organisation Details" 
+slug: "organisation-details" 
+hidden: false 
 ---
 
-# Organisation Details
+# Organization Details
 
-The **Organisation Details** contains an analytics overview feature in a section called _Billable Conversations_, that provides a report to platform administrators with insight into the **volume of conversations** that have occurred across all agents in an organization.
+The **Organisation Details** page includes an analytics overview section labeled **Billable Conversations**,
+offering platform administrators a comprehensive report on the volume of conversations
+that have taken place among all agents in the organization.
 
-## Access Billable Conversations
+To access the **Organisation Details** page, 
+click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Organisation Details**.
 
-The chart visualizes the number of [billable conversations](../../billing.md).
+## Billable Conversations
 
-To access the **Billable Conversations** report, select the **User Menu** icon from the top right of any page and click on the **Organisation Details** option.
+The chart shows a number of [billable conversations](../../billing.md).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/d242bd4-usageStats.png" width="100%" />
@@ -21,53 +24,49 @@ To access the **Billable Conversations** report, select the **User Menu** icon f
 
 ## Report Filtering
 
-The report can be filtered by **year** and **month** using the date filter dropdown lists in the top right of the page.
+The report can be filtered by year and month using the date filter dropdown lists in the top right of the page.
 
-## Delete Organisation
+## Delete an Organization
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.30.0-blue.svg)]({{config.site_url}})
 
-The delete organisation feature will completely remove all the data from your organisation.
+This feature will delete all the data from your organization.
 
-!!! warning "Be aware that there is NO way back from this. Once you start the process all your data will be gone."
+!!! danger
+    There is no way to undo the deletion action. Once you initiate the process, all your data will be permanently deleted.
 
-In order to have this feature fully operational you will need to have some configuration set up.
+Before the organization deletion, you need to set up:
 
-- A valid system administrator email in the environment variable `SYS_ADMINISTRATOR_EMAIL=`
-- The CognigyAI [Management UI]({{config.site_url}}ai/tools/user-menu/organisation-details/) properly installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL=`
+- A valid system administrator email in the environment variable `SYS_ADMINISTRATOR_EMAIL`.
+- The Cognigy.AI [Management UI](organisation-details.md) properly installed, and its path set in the environment variable `MANAGEMENTUI_BASE_URL_WITH_PROTOCOL`.
 
-This process consists of two steps:
+This process contains the following steps:
 
-1. A user with an admin role will request to delete the organisation from the organisation details page. This will initiate a request that will be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
+1. A user with an admin role (system administrator) will request to delete the organization from the **Organisation Details** page. This action will trigger a request to be sent to the system administrator (email set as `SYS_ADMINISTRATOR_EMAIL`) for the next step.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_organisation_details.png" width="100%" />
-  <figcaption>Delete organisation details</figcaption>
-</figure>
+    <figure>
+      <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-confirm_org_deletion.png" width="100%" />
+      <figcaption>Delete Organization</figcaption>
+    </figure>
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-confirm_org_deletion.png" width="100%" />
-  <figcaption>Delete organisation details confirmation pop up</figcaption>
-</figure>
-  <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/deleteOrg-request-email.png" width="100%" />
-  <figcaption>Delete organisation request email</figcaption>
-</figure>
+2. Once the system administrator receives the email, they will be able to click on the provided link to the [Management UI](../management-ui.md) with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.
 
-2. Once the system administrator receives the email, they will be able to click on the provided link to the _Management UI_ with the embedded token to proceed with the deletion. The system administrator will need to have a valid user for the Cognigy Management UI.<br />
+    <figure>
+      <img class="image-center" src="{{config.site_url}}ai/tools/images/deleteOrg-request-email.png" width="100%" />
+      <figcaption>Organization Deletion Email</figcaption>
+    </figure>
 
-After logging in to the Management UI, the user sees a button to trigger the actual deletion process.<br />
+3. After logging in to the Management UI, the system administrator needs to click the **Delete Organisation** button that signifies the point of no return for deleting the entire organization.
 
-!!! warning 
-    Clicking on this button marks the point of no return in deleting the whole organisation.
+    <figure>
+      <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_management_ui.png" width="100%" />
+      <figcaption>Delete an Organization in Management UI</figcaption>
+    </figure>
 
- Finally, once the deletion process has been completed, the system administrator will receive an email notifying them that the organisation has been completely removed.
+Finally, once the deletion process has been completed,
+the system administrator will receive an email notifying that the organization has been completely removed.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/delete-organisation-delete_org_management_ui.png" width="100%" />
-  <figcaption>UI-Management Delete organisation</figcaption>
-</figure>
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/deleteOrg-complete-email.png" width="100%" />
-  <figcaption>Delete organisation completed email</figcaption>
+  <figcaption>Delete Organization Completed Email</figcaption>
 </figure>

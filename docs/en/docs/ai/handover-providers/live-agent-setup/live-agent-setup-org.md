@@ -24,7 +24,7 @@ Now click on the menu item *Organisation Details*.
 ## Organisation Details
 <div class="divider"></div>
 
-Once you have navigated to the *Organisation Details* page via the User Menu, you can see that the section for Live Agent Settings. 
+Once you have navigated to the **Organisation Details** page via the **User Menu**, you can see that the section for Live Agent Settings. 
 
 Find the **Set-up Live Agent** button, and click it to set up the Live Agent Account for your Organisation. 
 
@@ -33,11 +33,11 @@ Find the **Set-up Live Agent** button, and click it to set up the Live Agent Acc
   <figcaption>Live Agent Settings in Organisation Details page</figcaption>
 </figure>
 
-## Next Steps - Set up Your Inbox
+## Next Steps
 <div class="divider"></div>
 Now that Live Agent is set up for your Organisation, you will need to create your Project Inbox:
 
-- [**Set up your Project Inbox for Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-inbox/)
+- [Set up your Project Inbox for Live Agent](live-agent-setup-inbox.md)
 
 ## Having Trouble?
 <div class="divider"></div>
