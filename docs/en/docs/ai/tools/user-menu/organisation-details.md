@@ -13,7 +13,7 @@ that have taken place among all agents in the organization.
 To access the **Organisation Details** page, 
 click **User Menu** in the upper-right corner of any Cognigy.AI page and then select **Organisation Details**.
 
-## Access to Billable Conversations
+## Billable Conversations
 
 The chart shows a number of [billable conversations](../../billing.md).
 
