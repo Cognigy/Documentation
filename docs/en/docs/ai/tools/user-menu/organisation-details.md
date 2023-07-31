@@ -26,7 +26,7 @@ The chart shows a number of [billable conversations](../../billing.md).
 
 The report can be filtered by year and month using the date filter dropdown lists in the top right of the page.
 
-## Delete Organisation
+## Delete an Organization
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.30.0-blue.svg)]({{config.site_url}})
 
