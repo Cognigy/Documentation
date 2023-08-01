@@ -15,14 +15,14 @@ Warnings will only be generated and forwarded to our user interface when the Int
 
 ### Example: How does the Feature NLU Warnings work
 
-* Open the Cognigy.AI dashboard and [create a new Flow](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)  for example, named as NLU Warnings
+1. Open the Cognigy.AI dashboard and [create a new Flow](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)  for example, named as NLU Warnings
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/e245ae6-Screen_Shot_045s.png" width="100%" />
 </figure>
 
-* Open the new Flow and select tab **NLU**
-* Create a new **intent** for example, "int1" and enter more than three example sentences (for example, "Test1"... "Test5")
+2. Open the new Flow and select tab **NLU**
+3. Create a new **intent** for example, "int1" and enter more than three example sentences (for example, "Test1"... "Test5")
 
 
 **For a proper intent scoring it is important to define "Rules" and "Conditions"!** —  so we do it
@@ -31,14 +31,14 @@ Warnings will only be generated and forwarded to our user interface when the Int
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b58dcf4-Screen_Shot_049.PNG" width="100%" />
 </figure>
 
-* Go to the **Rules** edit field and enter for example **input.text=="rule"**
-* Go to the **Conditions** edit field and enter for example **input.includes==="condition"**
-* Click on **Build Model** to finish the intent creation 
+4. Go to the **Rules** edit field and enter for example **input.text=="rule"**
+5. Go to the **Conditions** edit field and enter for example **input.includes==="condition"**
+6. Click on **Build Model** to finish the intent creation 
 
 Now user inputs can be scored of matching to the defined intent example sentences 
 
-* Open the [Interaction Panel](https://dash.readme.com/project/cognigy/v4.3/docs/interaction-panel) on the right hand side
-* For the scoring test you need to activate in Tab **SETTINGS** the expert mode
+7. Open the [Interaction Panel](https://dash.readme.com/project/cognigy/v4.3/docs/interaction-panel) on the right hand side
+8. For the scoring test you need to activate in Tab **SETTINGS** the expert mode
 
 Activated Expert mode will show more detailed data on the Interaction panel!
 
