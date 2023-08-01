@@ -11,7 +11,7 @@
 
 ## Description
 <div class="divider"></div>
-The ``No NLU Connector`` is not an NLU Connector that can be created, but one that can always be selected in an Endpoint. Setting the No NLU Connector in an Endpoint completely disables the NLU pipeline of Cognigy.AI for that Endpoint, meaning that no Intents or Slots are found.
+The No NLU Connector is not an NLU Connector that can be created, but one that can always be selected in an Endpoint. Setting the No NLU Connector in an Endpoint completely disables the NLU pipeline of Cognigy.AI for that Endpoint, meaning that no Intents or Slots are found.
 
 ## Flow based NLU execution
 <div class="divider"></div>
@@ -22,4 +22,4 @@ Although the [Code NLU Connector](http://127.0.0.1:8008/ai/nlu/external-nlu/exte
 
 ## Flow based NLU execution
 <div class="divider"></div>
-The No NLU Connector can also be used to control the timing of NLU Execution. By default, the Cognigy.AI NLU Pipeline is run before the Flow is executed, but it may be required to execute certain parts of a Flow before running the NLU to have greater control of when e.g. an Intent is triggered. This can be achieved by using the **No NLU Connector** in an Endpoint and then the [Execute Cognigy NLU Node](http://127.0.0.1:8008/ai/flow-nodes/nlu/execute-cognigy-nlu/) in a Flow when execution of the Cognigy.AI NLU pipeline is required.
+The No NLU Connector can also be used to control the timing of NLU Execution. By default, the Cognigy.AI NLU Pipeline is run before the Flow is executed, but it may be required to execute certain parts of a Flow before running the NLU to have greater control of when e.g. an Intent is triggered. This can be achieved by using the No NLU Connector in an Endpoint and then the [Execute Cognigy NLU Node](http://127.0.0.1:8008/ai/flow-nodes/nlu/execute-cognigy-nlu/) in a Flow when execution of the Cognigy.AI NLU pipeline is required.

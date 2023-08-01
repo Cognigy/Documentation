@@ -119,9 +119,9 @@ The Universal Language allows you to use Intent mapping in any language which, a
 The Universal Language uses multilingual NLU algorithms and models. This must be qualified to include only space-tokenized languages such as English for full support. E.g., keyphrase detection uses spaces " " as a delimiter. Intent mapping works across tokenization schemes but also benefits from space-tokenized languages.
 
 ### Rule Intents with the Universal Language
-A powerful and useful way to use the Universal Language is by using Rule Intents. These Intents let you define custom rules using CognigyScript that will decide whether the Intent is triggered. You can thereby have a rule like this:
+A powerful and useful way to use the Universal Language is by using Rule Intents. These Intents let you define custom rules using CognigyScript that will decide whether the Intent is triggered. You can create a rule like the following:
 
-* input.slots.food[0].keyphrase === "pizza"
+`input.slots.food[0].keyphrase === "pizza"`.
 
 Which means that as soon as the user mentions the word pizza, this Intent will be triggered. For more information on how to use these Intents, go [here]({{config.site_url}}ai/nlu/nlu-overview/overview/#rules).
 
