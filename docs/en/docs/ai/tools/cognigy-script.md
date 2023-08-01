@@ -70,7 +70,7 @@ This would try to retrieve the orders Object from the Context and assign it to c
 Within conditions, CognigyScript is also written without `{{"{{ }}"}}` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
 
 !!! note "Example"
-    The condition `context.orders === 3`  would evaluate to `true` if the `orders` variable stored in the `context` is equal to `3`.
+    The condition `context.orders === 3`  would evaluate to `true` if the `orders` variable stored in the `context` is equal to `3`..
 
 ## Code Nodes
 
