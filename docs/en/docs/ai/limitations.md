@@ -29,7 +29,7 @@ Any **deviations** from the default values for our Trial and App environments ar
 | **Database and HTTP Node Calls**                                                                                                  |                                 |            |            |
 | Maximum Database query result from DB Flow Nodes                                                                                  | 500 kB                          |            |            |
 | Maximum [Context](tools/interaction-panel/context.md) size                                                                        | 65 kB                           |            | **1.5 MB** |
-| Maximum HTTP payload size for HTTP-Request Flow Node                                                                              | 65 kB                           |            |
+| Maximum HTTP payload size for HTTP-Request Flow Node                                                                              | 65 kB                           |            |            |
 | Maximum HTTP response size for HTTP-Request Flow Node                                                                             | 524 kB                          | **2.6 MB** | **1.5 MB** |
 | HTTP-Request Flow Node timeout                                                                                                    | 8 s                             |            | **15 s**   |
 | Maximum JSON encoded payload size for requests to our RESTful API                                                                 | 60 kB                           |            |            |
