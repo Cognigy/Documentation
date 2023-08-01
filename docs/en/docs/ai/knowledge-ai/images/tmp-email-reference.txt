@@ -1,0 +1,34 @@
+1 Quickstart
+   (Step by step guide guiding through the process from setting 1st Knowledge Store up to conversing with Knowledge-Based bot. We should have a prerequisites section at the beginning documenting that users need to have access to the required LLMs.)
+ 
+2 Overview
+   (Explain at high level how Knowledge AI works: Extraction, Chunking, Embedding Calculation, Ingestion, etc. In this section we should, among other things, explain when in the process calls to the third-party models happen & which data are sent to these third-party models. It is important that customers understand this.)
+ 
+3 Manage Knowledge
+   3.1 Knowledge Stores
+      (Explain concept: One project can have multiple Knowledge Stores. One Knowledge Store stores Knowledge Sources etc. Mention limitations. Explain UI & how to set Store up)
+   3.2 Knowledge Sources
+      (Explain concept incl Source UI + source metadata. Mention limitations.)
+      3.2.1 Supported Source Types
+         (Explain which source types are supported via UI and which via CLI)
+         3.2.1.1 Cognigy CTXT
+            (Explain in detail how format works and how it is chunked/processed)
+         3.2.1.2 PDF
+            (Mention limitations, e.g., text only extraction, and suggest CTXT as fallback)
+         3.2.1.3 txt
+            (Mention limitations and suggest CTXT as fallback)
+      3.2.2 Adding Knowledge Sources via UI
+      3.2.3 Adding Knowledge Sources via CLI/API
+   3.3 Knowledge Chunks
+      (Explain concept incl Chunk Editor functionality, chunk metadata etc)
+ 
+4 Configure Search & Output
+   (Explain at high level what needs to happen in Flow. Explain difference between LLM-powered output and hardcoded output. Mention that Knowledge Search Node, Search Extract Output Node & GPT Conv. Node all implement search.)
+   4.1 LLM-powered output
+      (Explain how it works. Link to Docs of Search Extract Output Node & docs of GPT Conv Node. Within the Node docs explain how it works, e.g., Explain topK, what is written to Input, KSearch Cognigy Token, Answer Extraction etc)
+   4.2 Hardcoded output
+      (Explain how to leverage Knowledge Search Node - find only top 1 result -& Say Node to output hardcoded output - a default reply stored in chunk metadata. Within the Node docs explain how it works, e.g., Explain topK, what is written to Input, KSearch Cognigy Token)
+ 
+5 Architecture (Not Required for Closed Beta)
+ 
+6 FAQ

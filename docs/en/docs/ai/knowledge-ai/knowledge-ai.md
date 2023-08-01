@@ -99,11 +99,11 @@ Click on it in order to navigate to the **Knowledge Stores** page. If everything
 Let's get started and upload some knowledge!
 
 1. Click on **+New Knowledge Store** in order to create a new group of knowledge.
-2. Provide a **Name** in the sidbar and click on **Save**.
-3. In the next step you have to create a **+New Knowledge Source(s)** - let's select **Cognigy CTXT** as the type and upload [this file](./images/cognigy-sample.ctxt):
+2. Provide a **Name** - like "Sample" - in the sidbar and click on **Save**.
+3. Drag and drop [this file](./images/cognigy-sample.ctxt) onto the large background:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/pdf-upload.png" width="90%" />
+  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/upload.png" width="90%" />
 </figure>
 
 4. Cognigy.AI will now process the uploaded document and extract **Chunks** from it. You will see the status in the [Task Manager]() as well as on the actual **Knowledge Source** list item.
@@ -133,25 +133,40 @@ Congratulations 🔥 - you are done with our Quickstart! Go ahead and read throu
 
 
 ## Overview
-
-
-Our Knowled
-
 Todo
 
 ## Manage Knowledge
 
 ### Knowledge Stores
+Todo
+
+- explain why we have Knowledge Stores
+- explain the limitations (how many you can have right now)
 
 ### Knowledge Sources
+Todo
+
+- explain why we have Knowledge Sources
+- explain meta-data
+- give an overview of the different types of sources (mention CLI?)
+- explain the limitations (how many sources you can have; which file formats are supported; whats coming)
 
 ### Chunk Editor
-Todo: Explain our concept of "Knowledge Stores", "Knowledge Sources" and "Chunks"
+Todo
+
+- explain what the Chunk Editor is
+- explain why the Chunk Editor is so important (other solutions: black box - our solution: full transparency)
+- explain meta-data
 
 ## Search, Extract & Output
+Todo
 
-## Architecture
+- more details about the search extract output Flow Node
 
 ## FAQ
 
-Todo
+Todo - compile a list of FAQs
+
+- Q: When will Knowledge AI be available publicly?
+- Q: Will Knowledge AI resources be part of Snapshots? A: Yes, we are working on adding Knowledge Stores, Sources & Chunks including meta-data to Cognigy Snapshots.
+- Q: Will Knowledge AI be free of charge? A: No. We will provide pricing information until end of August.
