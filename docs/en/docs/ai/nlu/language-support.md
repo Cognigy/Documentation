@@ -121,7 +121,6 @@ The Universal Language uses multilingual NLU algorithms and models. This must be
 ### Rule Intents with the Universal Language
 A powerful and useful way to use the Universal Language is by using Rule Intents. These Intents let you define custom rules using CognigyScript that will decide whether the Intent is triggered. You can create a rule like `input.slots.food[0].keyphrase === "pizza"`.
 
-`input.slots.food[0].keyphrase === "pizza"`.
 
 Which means that as soon as the user mentions the word pizza, this Intent will be triggered. For more information on how to use these Intents, go [here]({{config.site_url}}ai/nlu/nlu-overview/overview/#rules).
 
