@@ -6,7 +6,7 @@ hidden: false
 
 # Knowledge AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
 
 !!! note
     Our Knowledge AI functionality requires the usage of external AI model provides such as Microsoft. You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
@@ -55,14 +55,14 @@ You are now done with the setup for the first LLM - the **embedding model** whic
 2. Click **+New LLM.**
 3. Select the **text-davinci-003** model and provide a name.
 4. Click on **Save**.
-5. Select the **Azure OpenAI** connection which we have created when configuring the first LLM.
+5. Select the **Azure OpenAI** Connection which we have created when configuring the first LLM.
 6. Insert the **Resource Name**, **Deployment Name** and a mandatory **API Version**. Once you are done, the configuration should look similar to the following:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/davinci-configured.png" width="90%" />
 </figure>
 
-Congratulations 🔥 - you are done with the hard part. This part of the configuration does not need to be touched again. Let's now navigate to the **Project Settings** of your project to continue.
+This part of the configuration does not need to be touched again. Let's now navigate to the **Project Settings** of your project to continue.
 
 ### Activate GenAI features
 You will now have to activate **Generative AI capabilities** for your project.
@@ -78,7 +78,7 @@ You will now have to activate **Generative AI capabilities** for your project.
 
 5. Ensure that you click the **Save** button.
 
-Prefect 🎉 - we can now finally start to upload Knowledge to your Cognigy.AI project.
+Perfect 🎉 - we can now finally start to upload Knowledge to your Cognigy.AI project.
 
 ### Knowledge
 In the sidebar of Cognigy.AI you should be able to see a new section under **Build** called **Knowledge**:
@@ -100,16 +100,37 @@ Let's get started and upload some knowledge!
 
 1. Click on **+New Knowledge Store** in order to create a new group of knowledge.
 2. Provide a **Name** in the sidbar and click on **Save**.
-3. In the next step you have to create a **+New Knowledge Source(s)** - let's select **File** as the type and upload a **PDF** file:
+3. In the next step you have to create a **+New Knowledge Source(s)** - let's select **Cognigy CTXT** as the type and upload [this file](./images/cognigy-sample.ctxt):
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/pdf-upload.png" width="90%" />
 </figure>
 
 4. Cognigy.AI will now process the uploaded document and extract **Chunks** from it. You will see the status in the [Task Manager]() as well as on the actual **Knowledge Source** list item.
+5. Click on the list item once the file was completely processed - you will now see the **Chunks** that Cognigy.AI has extracted in the **Chunk Editor**.
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk-editor.png" width="90%" />
+</figure>
 
-Todo
+Our Chunk Editor allows our customers to fine-tune their Knowledge within our platform. It is often hard or even impossible to change the content of source-documents especially if they have not been specifically crafted for ingestion into a system like Knowledge AI. More information on the Chunk Editor in the sections below.
+
+### Query Knowledge AI
+The last step in our Quickstart guide is to query the Knowledge AI solution during [Flow]() execution.
+
+1. Navigate to **Build > Flows** and create a new Flow.
+2. A a **Search Extract Output** Flow Node to your Flow.
+3. Open the Flow Node and select which **Knowledge Store** the Flow Node should use and click **Save Node**.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/configure-search-extract-output.png" width="90%" />
+</figure>
+
+4. Open the Interaction Panel and type in the question "Can Cognigy connect to a Contact Center?" and send it.
+5. You should get a response which was crafted based on the ingested Knowledge!
+
+Congratulations 🔥 - you are done with our Quickstart! Go ahead and read through the other sections on this page to learn more about our Knowledge AI solution.
+
 
 ## Overview
 
@@ -119,6 +140,12 @@ Our Knowled
 Todo
 
 ## Manage Knowledge
+
+### Knowledge Stores
+
+### Knowledge Sources
+
+### Chunk Editor
 Todo: Explain our concept of "Knowledge Stores", "Knowledge Sources" and "Chunks"
 
 ## Search, Extract & Output
