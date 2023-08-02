@@ -15,7 +15,7 @@ These logs record important user activities, system events, and configuration ch
 
 With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. 
 
-The logs include events such as `create`, `update`, and `delete` for:
+The logs include events such as `create`, `update`, and `delete` for the following entities:
 
 - [Assist Bots](./../conversation/assist-bot.md)
 - [Automation Rules](automation-rules.md)
