@@ -11,10 +11,10 @@ hidden: false
 !!! note
     Our Knowledge AI functionality requires the usage of external AI model provides such as Microsoft. You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
 
-Knowledge is a critical part when building modern virtual agents. In the current era of bots, our customer usually use [Intents]() and so-called [Default Replies]() in order to detect questions and respond with appropriate content based on the Default Replies. Crafting these Q&A pairs is time-consuming and requires a lot of maintenace effort. The future of bots will be different - and it starts right now! The Cognigy Knowledge AI solution allows our customers to upload their existing knowledge in the form of already existing documents like PDF files. Cognigy.AI will then learn how to extract meaningful information from those documents and will expose them to Flow designers via a new set of Flow Nodes. This functionality allows our customers to build knowledge based bots in minutes and get started way quicker.
+Knowledge is a critical part when building modern virtual agents. In the current era of bots, our customers usually use [Intents]() and so-called [Default Replies]() in order to detect questions and respond with appropriate content based on the Default Replies. Crafting these Q&A pairs is time-consuming and requires a lot of maintenace effort. The future of bots will be different - and it starts right now! The Cognigy Knowledge AI solution allows our customers to upload their existing knowledge in the form of already existing documents like PDF files. Cognigy.AI will then learn how to extract meaningful information from those documents and will expose them to Flow designers via a new set of Flow Nodes. This functionality allows our customers to build knowledge based bots in minutes and get started way quicker.
 
 ## Quickstart
-This Quickstart guide aims for providing a solid stey-by-step tutorial on how to get started with our Knowledge AI solution. It won't explain concepts nor will it contain detailed information on how things work - please have a look at the other sections of this document in order to learn about the details.
+This Quickstart guide aims to provide a solid step-by-step tutorial on how to get started with our Knowledge AI solution. It won't explain concepts nor will it contain detailed information on how things work - please have a look at the other sections of this document in order to learn about the details.
 
 ### Setup LLMs
 In order to leverage the power of the Cognigy Knowledge AI solution, we have to create two LLM resources in your project:
@@ -119,7 +119,7 @@ Our Chunk Editor allows our customers to fine-tune their Knowledge within our pl
 The last step in our Quickstart guide is to query the Knowledge AI solution during [Flow]() execution.
 
 1. Navigate to **Build > Flows** and create a new Flow.
-2. A a **Search Extract Output** Flow Node to your Flow.
+2. A **Search Extract Output** Flow Node to your Flow.
 3. Open the Flow Node and select which **Knowledge Store** the Flow Node should use and click **Save Node**.
 
 <figure>
@@ -167,6 +167,16 @@ Todo
 
 Todo - compile a list of FAQs
 
-- Q: When will Knowledge AI be available publicly?
-- Q: Will Knowledge AI resources be part of Snapshots? A: Yes, we are working on adding Knowledge Stores, Sources & Chunks including meta-data to Cognigy Snapshots.
-- Q: Will Knowledge AI be free of charge? A: No. We will provide pricing information until end of August.
+Q1: When will Knowledge AI be available publicly?
+A1: ???
+
+Q2: Will Knowledge AI resources be part of Snapshots?
+A2: Yes, we are working on adding Knowledge Stores, Sources & Chunks including meta-data to Cognigy Snapshots.
+
+Q3: Will Knowledge AI be free of charge? 
+A3: No. We will provide pricing information until end of August.
+
+## More information
+
+- [LLM](../resources/build/llm.md)
+- [Generative AI](../generative-ai.md)
