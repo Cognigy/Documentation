@@ -107,8 +107,11 @@ When this setting is enabled,
 Live Agent will take into account the number of conversations
 that each agent is already handling before assigning new conversations to them. 
 For example, if Alex is currently handling three conversations, 
-and Sara is handling two conversations, the system will assign new incoming conversations to Sara, 
+and Sara is handling one conversation, the system will assign new incoming conversations to Sara, 
 as she has a lower workload.
+
+If all agents have the same number of active conversations,
+the standard round-robin logic will be applied to assign each agent the next conversation in order.
 
 To consider conversation count withing your Inbox, follow these steps:
 
@@ -143,7 +146,7 @@ To configure auto reassignment in your Inbox, follow these steps:
 
 The changes will be applied.
 
-###  Automatic Assignment and Reassignment for Busy Agents
+### Automatic Assignment and Reassignment for Busy Agents
 
 By default, human agents with `Busy` status cannot be assigned or reassigned automatically.
 
@@ -178,9 +181,12 @@ Conditions:
 
 - No [conversation limit](../account-settings.md#conversation-limit-per-agent) per agent.
 - 4 conversations are created.
-- Automatic Conversation Reassignment is activated.
-- Automatic Conversation Assignment is activated.
-- Auto Assign Conversations to a Busy Agent is deactivated.
+- Activated:
+    - Automatic Conversation Assignment. 
+    - Automatic Conversation Reassignment.
+- Deactivated:
+    - Auto Assign Conversations to a Busy Agent.
+    - Consider Conversation Count.
 
 Result: Agent 1 receives the first and forth conversations, Agent 2 receives the second, Agent 3 gets the third.
 
