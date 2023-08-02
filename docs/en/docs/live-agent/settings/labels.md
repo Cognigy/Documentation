@@ -5,29 +5,63 @@
 ---
 # Labels
 
-Labels help you to categorize and prioritize Conversations. You can assign a Label to a Conversation from the side panel.
+Labels help you to categorize and prioritize Conversations.
 
-Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colors to a Label. This makes it easier to identify the Label. You will be able to display the Label on the sidebar to filter Conversations quickly.
+They can be used to create custom workflows, to make conversations easier to identify, filter, and organize. 
 
-## How to Create a Label
+## Label Fields and Settings
 
-Click on the sidebar **Settings** on the Live Agent Dashboard.
+A Label consists of the following fields and settings, which are chosen when creating a Label and can be updated later when editing a Label.
 
-Click on the sidebar **Labels** and then click Add Label on the right-hand side.
+| Field Name            | Value                                                              | Remarks                                                                                            |
+| --------------------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| Label Name            | The name for the Label to identify its category                    | For example,: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
+| Description           | A short description of what the Label represents                   | For example,: This customer issue is to be resolved with priority                                  |
+| Color                 | A color for the Label, for easy visual  identification             | After selection, click on the small square again to complete your color selection                  |
+| Show Label on Sidebar | This option determines if a Label will be displayed on the sidebar | This will help in easy identification of the Conversations                                         |
 
-A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels and different colors so that you can easily identify in one look to which category the ticket/issue belongs.
+### How to Create a Label
 
-| Field Name            | Value                                                                    | Remarks                                                                                            |
-|-----------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Label Name            | Assign a name for the Label to identify its category                     | For example,: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
-| Description           | Give a short description of what the Label represents                    | For example,: This customer issue is to be resolved with priority                                  |
-| Color                 | Select a color for the Label for easy  identification                    | After selection, click on the small square again                                                   |
-| Show Label on Sidebar | Select this option if you want the Label to  be displayed on the sidebar | This will help in easy identification of the Conversations                                         |
+To create a Label within Live Agent, do the following:
 
-Click on Create. A "Label added successfully" message will be displayed. The new Label has been created. You can create as many Labels as you need. Labels can be used across multiple Teams.
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Labels**.
+4. At the top right of the window, click **Add label**.
+5. In the opened window, provide a Label Name, Description, Level, Inbox, and Color. the file you want to upload and click **Open**.
+6. Click **Create**.
 
-You can edit or delete Labels as necessary.
+The Label will be created and appear under Labels, and will be available to add to Conversations.
 
-## How to Add A Label to a Conversation
+#### Meaningful Labels
+
+It is good practice to give meaningful names to Labels, and to use chosen colors to easily identify visually which categories, or topics, a Conversation belongs to.
+
+### How to Edit a Label
+
+To create a Label within Live Agent, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Labels**.
+4. In the center column, find a Label and click **Edit**.
+5. In the opened window, update the fields as needed.
+6. Click **Edit**.
+
+The Label fields and settings will be updated.
+
+### How to Delete a Label
+
+To create a Label within Live Agent, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Labels**.
+4. In the center column, find a Label and click **Delete**.
+5. In the opened window, click **Yes** to confirm deletion.
+
+The Label will be deleted and no longer under Labels, and will no longer be available to add to Conversations.
+
+### How to Add A Label to a Conversation
 
 To start using Labels in Conversations, go to [Assign Labels](./../conversation/conversation-workflow.md#assign-labels).
