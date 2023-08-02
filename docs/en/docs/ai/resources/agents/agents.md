@@ -82,13 +82,13 @@ The Agent Dashboard contains serves as an overview page for you Virtual Agent. I
 
 **Analytics Widget**
 
-As of release v4.10 Cognigy provides a completely new designed Analytics solution **"[Insights]({{config.site_url}}insights/cognigy-insights/)"**.
+As of release v4.10 Cognigy provides a completely new designed Analytics solution [Insights]({{config.site_url}}insights/cognigy-insights/).
 
 - When the Insights application is enabled in your product you will be led to the Insights Overview dashboard when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
 - When the Insights application is not enabled in your product you will be led to the Analytics page as before when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/7d29be7-Analytics_Insights_link.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/conversation-count-chart.png" width="100%" />
   <figcaption>Agent dashboard - Analytics widget</figcaption>
 </figure>
 

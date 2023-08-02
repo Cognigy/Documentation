@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Model (LLM)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../../../release-notes/4.53.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 
@@ -16,7 +16,7 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 The table below lists the LLMs supported by Cognigy.
 
-| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | GPT Prompt Node |
+| Models/<br>Cognigy Features | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node |
 |-----------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|-----------------|
 | **Microsoft Azure OpenAI**  |                            |                     |                    |                 |                       |                 |
 | gpt-3.5-turbo (ChatGPT)     | +                          | +                   | +                  | +               | -                     | +               |
@@ -27,6 +27,10 @@ The table below lists the LLMs supported by Cognigy.
 | **Anthropic**               |                            |                     |                    |                 |                       |                 |
 | claude-v1-100k              | -                          | -                   | -                  | -               | -                     | +               |
 | claude-instant-v1           | -                          | -                   | -                  | -               | -                     | +               |
+| **Google**                  |                            |                     |                    |                 |                       |                 |
+| text-bison-001 (Bard)       | -                          | -                   | -                  | -               | -                     | +               |
+
+
 
 ## Add a Model
 

@@ -16,7 +16,7 @@ This feature is particularly useful to reduce repetition by allowing lexicon lib
 ## Example Sentences
 <div class="divider"></div>
 
-Annotations can be added to example sentences by highlighting the required word in the text field and selecting the "**+**" icon at the right end of the field.
+Annotations can be added to example sentences by highlighting the required word in the text field and selecting the **+** icon at the right end of the field.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/da1ef79-annotateWord1.PNG" width="100%" />

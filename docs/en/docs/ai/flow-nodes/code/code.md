@@ -8,7 +8,7 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../release-notes/4.50.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8d586ff-code-node.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/code/code.png" width="80%" />
 </figure>
 
 ## Description
@@ -74,7 +74,7 @@ You can send Facebook JSON directly from within Code Nodes using the output acti
 ## Auto-completion in Code-Nodes Editor
 <div class="divider"></div>
 
-When using the  **"input."** operator in the Node Editor of a "Code-Node", all available input objects  will be automatically displayed e.g. 
+When using the  **input.** operator in the Node Editor of a Code Node, all available input objects  will be automatically displayed e.g. 
 
 question<br/>
 entryPoint<br/>

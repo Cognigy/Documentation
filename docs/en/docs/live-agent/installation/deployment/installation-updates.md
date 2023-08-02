@@ -17,7 +17,7 @@ The following command can be used to pull and upgrade the Live Agent Helm chart 
  helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
 ```
 
-Note that the `custom-values.yaml` file can contain just the values that need to be overridden, such as ingresses configurations, replicas and resources. In this way, the new release won't break the existing setup. You can refer to the documentation and see the [release notes]({{config.site_url}}live-agent/release-notes/releases/) related to Helm if it does.
+Note that the `custom-values.yaml` file can contain just the values that need to be overridden, such as ingresses configurations, replicas and resources. In this way, the new release won't break the existing setup. You can refer to the documentation and see the [release notes](../../release-notes/release-notes.md) related to Helm if it does.
 
 ## Pulling and modifying the `values.yaml` file
 

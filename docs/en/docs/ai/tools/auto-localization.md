@@ -29,11 +29,14 @@ Cognigy supports [localization]({{config.site_url}}ai/resources/manage/localizat
 
 With Cognigy.AI 4.10.0 we have integrated machine translation capabilities into the Cognigy.AI platform.
 
-Cognigy's solution is a native integration of leading machine translation providers into the Conversational AI platform: Currently available are three providers, but more will be added.
+Cognigy.AI supports the following machine translation providers:
 
 - Microsoft Translator
+    - Microsoft Azure Cognitive Services Translator[^*]
 - Google Cloud Translation
 - DeepL Translation Pro
+
+[^*]: To use **Azure Cognitive Services Translator** you must select Microsoft Translator in Settings > Translation Settings
 
 These providers can be selected in the "Agent Settings" and provide the following advantages:
 
@@ -91,7 +94,7 @@ The Localization view allows for the configuration of any number of localization
 
 As of Cognigy.AI 4.10.0 our product provides machine translation of Nodes and Intents to perform the localization of your Virtual Agent even more efficiently than with manual localization. 
 
-In order to enable machine translation, you need to configure the "**Translation Settings**" of your Virtual Agent.
+In order to enable machine translation, you need to configure the **Translation Settings** of your Virtual Agent.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/Agent_Settings_Translation.png" width="100%" />
@@ -100,7 +103,7 @@ In order to enable machine translation, you need to configure the "**Translation
 
 - Open the "Manage" - "Settings" menu using the Cognigy.AI sidebar.
 
-- Go to section "**Translation Settings**".
+- Go to section **Translation Settings**.
 
 - Select a Translation Provider (for example Microsoft Translator).
 
@@ -108,13 +111,13 @@ In order to enable machine translation, you need to configure the "**Translation
    
 As soon as you have configured a translation provider you will get extra configuration options in the "Agent Settings" section:
 
-- Define "**ReQuest Retries**".
+- Define **ReQuest Retries**.
 
-- Define "**Request Timeout**".
+- Define **Request Timeout**.
 
-- Define "**Sentence Cache Expiry Timeout**".
+- Define **Sentence Cache Expiry Timeout**.
 
-- Optionally define "**Custom API Base URL**".
+- Optionally define **Custom API Base URL**.
 
 !!! note "Translation Settings"
     **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
@@ -133,17 +136,17 @@ As soon as you have configured a translation provider you will get extra configu
 </figure>
 
 
-- Click on a Node and select "**Add Localization**".
-- Select "**Add Translated Localization**".
+- Click on a Node and select **Add Localization**.
+- Select **Add Translated Localization**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/45feaed-Add_Localization.svg" width="100%" />
   <figcaption>"Add Localization" menu for Nodes</figcaption>
 </figure>
 
-- Select  "**Locale to Translate from**" (define the Locale that you want to base your translation on).
-- Define "**Language to Translate from**".
-- Define "**Language to Translate to**".
+- Select  **Locale to Translate from** (define the Locale that you want to base your translation on).
+- Define **Language to Translate from**.
+- Define **Language to Translate to**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/b2329c8-Add_Localization_2.svg" width="100%" />
@@ -164,7 +167,7 @@ As soon as you have configured a translation provider you will get extra configu
 ## Localization of Intents
 
 
-When using machine translation for **Intents** go to the "[Intent configuration]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)" and configure the "**Translation Settings**" in the same way as for Flow Nodes. 
+When using machine translation for **Intents** go to the "[Intent configuration]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)" and configure the **Translation Settings** in the same way as for Flow Nodes. 
 
 
 <figure>
@@ -174,21 +177,21 @@ When using machine translation for **Intents** go to the "[Intent configuration]
 
 - Select in the "Localization" drop-down menu the language you intend to translate (for example from en-US to ger-DE).
 
-- Click on the "**Add Localization**" button.
+- Click on the **Add Localization** button.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/4d46e0f-Add_localization_Intents_4.svg" width="100%" />
   <figcaption>Add Localization options</figcaption>
 </figure>
 
-- Click on "**Add Translated Location**" to configure translation details.
+- Click on **Add Translated Location** to configure translation details.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/b2cb9ea-Add_Localization_2.svg" width="100%" />
   <figcaption>Translation configuration example for Intents</figcaption>
 </figure>
 
-- Select "**Language to Translate from**" and "**Language to Translate to**", then "**Confirm**" the settings.
+- Select **Language to Translate from** and **Language to Translate to**, then **Confirm** the settings.
 
 **All Intent example sentences will now be translated automatically.**
 
@@ -201,7 +204,7 @@ When using machine translation for **Intents** go to the "[Intent configuration]
 
 For Virtual Agents using multiple Intents Cognigy.AI provides the **bulk-localization** feature for Intents. This way, translation will be even more efficient.
 
-Use the secondary actions menu item (three dots) and select "**Auto-Translate from another locale**" to configure translation details, as described for a single Intent, and then confirm.
+Use the secondary actions menu item (three dots) and select **Auto-Translate from another locale** to configure translation details, as described for a single Intent, and then confirm.
 
 **All Intents will now be translated automatically.** 
 

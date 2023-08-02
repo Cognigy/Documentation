@@ -95,10 +95,6 @@ Intent example sentences should be as distinct and unique as possible. If there 
 
 When you hover over an example sentence, a *Delete Icon* will appear. Clicking on this will delete the corresponding example sentence field for you.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/nlu/images/example-sentence-delete-icon.gif" width="100%" />
-</figure>
-
 !!! warning "Delete Example Sentences using Keyboard"
     The *Delete Icon* of an example sentence cannot be accessed when only using a keyboard. However, a keyboard-only user can still delete an example sentence simply by clearing the field using *Delete* or *Backspace* keys.
 
@@ -119,7 +115,7 @@ If you have configured **Lexicons** with similar items (for example, pizza = FOO
   <figcaption>Machine Learning Intents: Slot & Lexicon Annotations</figcaption>
 </figure>
 
-Simply **highlight** the word that should be mapped as a slot or lexicon and click the "**+**" at the right end of the text field to open the **Annotations** menu. The annotations menu provides options to select the type of slot that should be mapped to the highlighted word. 
+Simply **highlight** the word that should be mapped as a slot or lexicon and click the **+** at the right end of the text field to open the **Annotations** menu. The annotations menu provides options to select the type of slot that should be mapped to the highlighted word. 
 
 !!! note "Example Sentence Annotation"
     Find out more about recognizing **Slots** and **Lexicons** in example sentences on the [Annotations Page]({{config.site_url}}ai/nlu/nlu-overview/annotations/).
@@ -129,13 +125,13 @@ Simply **highlight** the word that should be mapped as a slot or lexicon and cli
 Intents can fall into one of three thresholds:
 
 * **Confirmed**
-    The Intent has a score higher than the confidence threshold and is considered "confirmed"
+    The Intent has a score higher than the confidence threshold and is considered "confirmed".
 
 * **Reconfirmation Needed**
-    The Intent has a score higher than the reconfirmation threshold, but lower than the confidence threshold and must be reconfirmed by the system
+    The Intent has a score higher than the reconfirmation threshold, but lower than the confidence threshold and must be reconfirmed by the system.
 
 * **Not found**
-    The Intent has a score lower than the reconfirmation threshold and isn't considered a valid result for this input
+    The Intent has a score lower than the reconfirmation threshold and isn't considered a valid result for this input.
 
 You can change these thresholds in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/).
 
@@ -144,9 +140,9 @@ You can change these thresholds in [Agent Settings]({{config.site_url}}ai/resour
 
     So the reconfirmation threshold is used in two different ways depending on the existence of a confirmation sentence:
 
-    - **With** confirmation sentence: the reconfirmation threshold triggers the reconfirmation sentence
+    - **With** confirmation sentence: the reconfirmation threshold triggers the reconfirmation sentence.
 
-    - **Without** confirmation sentence: the reconfirmation threshold confirms the input
+    - **Without** confirmation sentence: the reconfirmation threshold confirms the input.
 
 ## Confirmation Sentence and Reconfirmations
 <div class="divider"></div>

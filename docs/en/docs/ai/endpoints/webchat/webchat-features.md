@@ -12,7 +12,7 @@
 
 ## Quick Replies
 
-Using Quick Replies you can help your users advancing in a conversation by providing example phrases which would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
+Using Quick Replies, you can help your users advancing in a conversation by providing example phrases which would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/495f9cb-Screenshot_from_2019-12-09_14-55-49.png" width="100%" />
@@ -83,7 +83,7 @@ At first, it will present the user a button which indicates the selection of a d
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5f4e69f-Screenshot_from_2019-12-09_15-00-12.png" width="100%" />
 </figure>
 
-When clicked, it will open a full screen overlay for the Webchat. The user can now pick a date based on constraints you defined in the bot.
+When clicked, it will open a full-screen overlay for the Webchat. The user can now pick a date based on constraints you defined in the bot.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/2658fa3-Screenshot_from_2019-12-09_15-00-21.png" width="100%" />

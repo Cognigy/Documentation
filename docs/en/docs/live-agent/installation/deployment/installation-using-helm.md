@@ -7,7 +7,7 @@
 
 Helm is a tool for easily deploying resources into a Kubernetes cluster. First, install it following the [official documentation](https://helm.sh/docs/intro/install/).
 
-For the Helm chart installation, the Helm package needs to be pulled from the Cognigy OCI registry. There are two ways for pulling the Helm Chart. First, you need to have access to the OCI registry `cognigy.azurecr.io` in both of them (Are the same credentials as for the Docker registry). Then do the following:
+For the Helm chart installation, the Helm package needs to be pulled from the Cognigy OCI registry. There are two ways of pulling the Helm Chart. First, you need to have access to the OCI registry `cognigy.azurecr.io` in both of them (Are the same credentials as for the Docker registry). Then do the following:
 
 1. Set the following environment variable for running all the commands below:
 

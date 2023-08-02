@@ -6,7 +6,7 @@
 # Call Recording
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ac-call-recording-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/call-recording.png" width="80%" />
   <figcaption>AudioCodes Call Recording</figcaption>
 </figure>
 

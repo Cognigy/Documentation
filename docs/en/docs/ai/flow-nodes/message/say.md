@@ -5,14 +5,14 @@
 ---
 # Say
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6746960-node-say.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/say.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 A Say Node is used to send a message to the user.
 
-Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **"+"** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
+Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ea04ba5-channels.jpg" width="80%" />
   <figcaption>The say node menu with all channel output types enabled.</figcaption>
@@ -197,7 +197,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 
 ### Adaptive Card
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../../../release-notes/4.44.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../../release-notes/4.56.md)
 
 The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
 
@@ -273,6 +273,57 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
         ]
       }
       ```
+#### Create an Adaptive Card with Generative AI
+
+You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [Generative AI providers](../../generative-ai.md#prerequisites).
+
+To activate this feature, follow these steps: 
+
+1. Select the **Adaptive Card** output type.
+2. On the right side of the **Output type** list, click ![the Gen AI Icon](../../../assets/icons/beta.svg).
+3. In the **Generate Node Output** section, instruct the Generative AI model how to improve the current Adaptive Card. For example, `Create a form with a customer name field and a date input field`.
+4. Click **Generate**. The adaptive card will be generated.
+5. Iteratively improve the resulting Adaptive Card by giving further instructions in the **Generate Node Output** section. For example, `Add a flight number field`.
+6. Click **Generate**. The existing adaptive card will be updated.
+
+To navigate between your inputs, use ![back arrow](../../../assets/icons/back-arrow.svg) ![beta](../../../assets/icons/next-arrow.svg).
+
+To replace the current Adaptive Card with a new one, click ![recycle bin](../../../assets/icons/recycle-bin.svg).
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
+</figure>
+
+??? info "Generative AI Adaptive Card JSON example"
+
+    ```json
+    {
+      "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+      "type": "AdaptiveCard",
+      "version": "1.0",
+      "body": [
+        {
+          "type": "TextBlock",
+          "text": "Customer Form"
+        },
+        {
+          "type": "Input.Text",
+          "id": "customerName",
+          "placeholder": "Enter customer name"
+        },
+        {
+          "type": "Input.Date",
+          "id": "dateInput",
+          "placeholder": "Enter date"
+        },
+        {
+          "type": "Input.Text",
+          "id": "flightNumber",
+          "placeholder": "Enter flight number"
+        }
+      ]
+    }
+    ```
 
 ## Alexa
 <div class="divider"></div>
@@ -612,7 +663,7 @@ The **8x8** tab provides two methods for creating and editing a message which is
 
 As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
 
-**Say Node example using "Text with Buttons"**
+**Say Node example using Text with Buttons**
 
 1. Create a Flow with Say Node. 
 2. Start the Say Node Editor, select the **Text with Buttons** option and click **Add a new Button**. 

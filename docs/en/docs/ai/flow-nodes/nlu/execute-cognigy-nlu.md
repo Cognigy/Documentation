@@ -6,7 +6,7 @@
 # Execute Cognigy NLU
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b08ba8c-ExecuteCognigyNlu.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/execute-cognigy-nlu.png" width="80%" />
 </figure>
 
 ## Description

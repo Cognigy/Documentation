@@ -6,13 +6,13 @@ hidden: false
 # Send SMTP Email
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8e3d3aa-Send_SMTP_Email.PNG" width="50%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/send-smtp-email.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-Use the Send Email Node to send an email via [SMTP Connection]({{config.site_url}}ai/resources/smtp/) to a recipient.
+Use the Send Email Node to send an email via an SMTP connection to a recipient.
 
 ## Settings
 

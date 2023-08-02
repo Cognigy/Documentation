@@ -7,7 +7,7 @@
 # Play URL
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/play-url.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/play-url.png" width="80%" />
   <figcaption>Generic Play URL Node</figcaption>
 </figure>
 

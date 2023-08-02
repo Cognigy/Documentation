@@ -6,7 +6,7 @@
 # DTMF
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-dtmf-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/dtmf.png" width="80%" />
   <figcaption>Voice Gateway DTMF Node</figcaption>
 </figure>
 

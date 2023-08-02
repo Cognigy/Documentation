@@ -6,7 +6,7 @@
 # Enable Slot Fillers
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/a29e568-enableSlotFillers.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/enable-slot-fillers.png" width="80%" />
 </figure>
 
 ## Description

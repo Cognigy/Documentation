@@ -64,6 +64,12 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.56:
+    - release-notes/4.56.md
+  - 4.55:
+    - release-notes/4.55.md
+  - 4.54:
+    - release-notes/4.54.md
   - 4.53:
     - release-notes/4.53.md
   - 4.52:
@@ -209,7 +215,7 @@ nav:
       - ai/flow-nodes/code/channel-output.md
       - ai/flow-nodes/code/ai-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
-    - Voice Gateway:
+    - Voice:
       - Generic Voice Nodes:
         - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
         - ai/flow-nodes/generic-voice-nodes/play-url.md
@@ -221,6 +227,7 @@ nav:
         - ai/flow-nodes/generic-voice-nodes/dtmf-collect-config.md
         - ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md
         - ai/flow-nodes/generic-voice-nodes/user-input-timeout-config.md
+        - ai/flow-nodes/generic-voice-nodes/mute-speech-input.md
       - Voice Gateway:
         - ai/flow-nodes/vg/voice-gateway.md
         - ai/flow-nodes/vg/dtmf.md
@@ -231,6 +238,7 @@ nav:
         - ai/flow-nodes/vg/set-session-config.md
         - ai/flow-nodes/vg/transfer.md
         - ai/flow-nodes/vg/call-recording.md
+        - ai/flow-nodes/vg/mute-speech-input.md
 
       - Audio Codes:
         - ai/flow-nodes/audiocodes/audiocodes.md
@@ -260,7 +268,7 @@ nav:
       - ai/flow-nodes/other-nodes/set-rating.md
       - ai/flow-nodes/other-nodes/set-translation.md
       - ai/flow-nodes/other-nodes/request-rating.md
-      - ai/flow-nodes/other-nodes/gpt-prompt.md
+      - ai/flow-nodes/other-nodes/llm-prompt.md
       - ai/flow-nodes/other-nodes/gpt-conversation.md
       - ai/flow-nodes/other-nodes/close-handover.md
       - ai/flow-nodes/other-nodes/set-handover-inactivity.md
@@ -365,20 +373,6 @@ nav:
     - ai/handover-providers/overview.md
     - Live Agent:
       - ai/handover-providers/live-agent-handover.md
-      - Live Agent Setup:
-        - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
-        - Handover Setup:
-          - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
-          - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
-          - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
-      - LA Agent Assist:
-        - ai/handover-providers/la-agent-assist-overview.md
-        - ai/handover-providers/la-agent-assist-setup.md
-        - ai/handover-providers/la-agent-assist-workspace-setup.md
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
@@ -393,6 +387,7 @@ nav:
       - Installation:
           - agent-assist/installation/overview.md
           - agent-assist/installation/browser-requirements.md
+          - agent-assist/installation/version-compatibility-matrix.md
           - agent-assist/installation/prerequisites.md
           - agent-assist/installation/installation-process.md
       - agent-assist/contact-center-integration.md
@@ -412,6 +407,7 @@ nav:
       - ai/xApp/getting-started.md
       - ai/xApp/architecture.md
       - ai/xApp/supported-browsers-and-channels.md
+      - ai/xApp/build-an-xApp.md
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md
@@ -421,6 +417,7 @@ nav:
   - Installation & Configuration:
     - ai/installation/overview.md
     - ai/installation/browser-requirements.md
+    - ai/installation/version-compatibility-matrix.md
     - ai/installation/prerequisites.md
     - ai/installation/pre-installation-checklist.md
     - ai/installation/installation-process.md
@@ -478,9 +475,19 @@ nav:
     - live-agent/overview.md
   - Getting Started:
     - live-agent/getting-started/live-agent-getting-started.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
+    - Handover Setup:
+        - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
+        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
+    - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
+    - live-agent/installation/deployment/version-compatibility-matrix.md
     - Deployment:
       - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
@@ -501,7 +508,7 @@ nav:
   - Tools:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
-  - Conversation:
+  - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
     - Agent Queue:
@@ -510,17 +517,25 @@ nav:
         - live-agent/conversation/conversation-routing.md
     - Assist Bot:
         - live-agent/conversation/assist-bot.md
-  - live-agent/inboxes.md
-  - live-agent/agents.md
+    - LA Agent Assist:
+        - ai/handover-providers/la-agent-assist-overview.md
+        - ai/handover-providers/la-agent-assist-setup.md
+        - ai/handover-providers/la-agent-assist-workspace-setup.md
+  - Reports:
+      - live-agent/reports.md
+  - Settings:
+      - live-agent/settings/overview.md
+      - live-agent/settings/agents.md
+      - live-agent/settings/teams.md
+      - live-agent/settings/inboxes.md
+      - live-agent/settings/labels.md
+      - live-agent/settings/automation-rules.md
+      - live-agent/settings/canned-responses.md
+      - live-agent/settings/attachments.md
+      - live-agent/settings/audit-logs.md
+      - live-agent/settings/account-settings.md
   - live-agent/roles.md
-  - live-agent/teams.md
-  - live-agent/labels.md
-  - live-agent/reports.md
-  - live-agent/account-settings.md
-  - live-agent/canned-responses.md
-  - live-agent/attachments.md
   - live-agent/notifications.md
-  - live-agent/automation-rules.md
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
   - Release Notes:
@@ -537,6 +552,7 @@ nav:
     - voicegateway/installation/overview.md
     - Browser Requirements:
       - voicegateway/installation/browser-requirements.md
+    - voicegateway/installation/version-compatibility-matrix.md
     - Deployment:
       - voicegateway/installation/installation-process.md
   - Self-Service Portal:

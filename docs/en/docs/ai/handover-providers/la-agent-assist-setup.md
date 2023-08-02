@@ -3,7 +3,7 @@ title: "Agent Assist Setup"
 slug: "la-agent-assist-setup"
 hidden: false
 ---
-# Agent Assist Setup
+# LA Agent Assist Setup
 
 {! _includes/ai/providers/live-agent/agent-assist-setup.md !}
 
@@ -51,3 +51,9 @@ Once the human agent receives this message, the testing behavior will vary depen
 
 
 If the testing is successful, the Agent Assist setup is complete.
+
+## More information
+
+- [LA Agent Assist Workspace Setup](la-agent-assist-workspace-setup.md)
+- [Agent Assist Workspace Overview](../../agent-assist/overview.md)
+- [LA Agent Assist Setup](la-agent-assist-setup.md)

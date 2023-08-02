@@ -44,4 +44,5 @@ The following channels are supported by xApps:
 ## More information
 
 - [Overview](overview.md)
+- [Build an xApp](build-an-xApp.md)
 - [xApp Architecture](architecture.md)

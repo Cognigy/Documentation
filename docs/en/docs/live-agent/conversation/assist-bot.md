@@ -19,7 +19,10 @@ The Assist Bot is the tool for assisting the agents while talking to the custome
 
 A new WebChat endpoint needs to be created.  Once the endpoint is created, it is time to copy the endpoint URL from its settings.
 
-To learn more about how to create endpoints head over to [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). A new WebChat endpoint needs to be created for learning about how to create endpoints head over to [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints). Once the endpoint is created, it is time to copy the endpoint URL from its settings.
+To learn more about how to create an Endpoint, head over to [Endpoints](../../ai/resources/deploy/endpoints.md). 
+A new WebChat endpoint needs
+to be created for learning about how to create endpoint head over to [Endpoints](../../ai/resources/deploy/endpoints.md).
+Once the endpoint is created, it is time to copy the endpoint URL from its settings.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/ai-endpoint-config-url.png" width="100%" alt="Cognigy.AI Endpoint Config URL" />
@@ -46,7 +49,7 @@ The newly added Assist Bot will be available in the "Assist Bot" section of the 
 
 ### 3. Use the Assist Bot in a Conversation
 
-When the conversation inbox configures Assist Bot, they can be selected under the Conversation Information section in the right-hand sidebar. There is a tab called "Assist", and then the Assist Bots can be set via the dropdown to chat with them.
+When the conversation inbox configures Assist Bot, they can be selected under the Conversation Information section in the right-hand sidebar. There is a tab called "Assist," and then the Assist Bots can be set via the dropdown to chat with them.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-chat.png" width="100%" alt="Live Agent Assist Bot Chat" />

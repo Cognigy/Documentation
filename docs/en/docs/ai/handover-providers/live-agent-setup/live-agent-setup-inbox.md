@@ -43,7 +43,7 @@ Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/
 ## Having Trouble?
 <div class="divider"></div>
 
-!!! warning "**Create Project Inbox** disabled"
+!!! warning "Create Project Inbox disabled"
 
 	The button could also be disable for the following reasons:
 

@@ -11,7 +11,7 @@
 <div class="divider"></div>
 Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
 
-To learn how to use Intents, read [Train your virtual agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents)** in Cognigy Help Center.
+To learn how to use Intents, read [Train your virtual agent to recognize Intents](https://support.cognigy.com/hc/en-us/articles/360014776879-Train-your-Virtual-Agent-to-recognize-Intents) in Cognigy Help Center.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
