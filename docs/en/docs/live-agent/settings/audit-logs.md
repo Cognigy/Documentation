@@ -61,7 +61,7 @@ To do this, follow these steps:
 
 A window will open displaying the details of the changes and specific modifications between the previous state and the updated state of the system or data.
 
-For an `update` action, a Before section presents the original values or configuration, while the After section displays the new values after the update.
+For an `update` action, the **Before** section presents the original values or configuration, while the **After** section displays the new values after the update.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-audit-logs-update-inbox-changes.png" width="100%" alt="Audit Logs Changes" />
