@@ -18,7 +18,7 @@ Endpoints are the connector between your user interface and the Cognigy Agent. T
 Every Endpoint has the following features: 
 - it points to a single Locale of a single Flow of a single Snapshot
 - it can be disabled
-- customization of the [Data Protection & Analytics ]({{config.site_url}}ai/endpoints/data-protection-and-analytics/) 
+- customization of the [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/) 
 - it can have its own [Transformer Function]({{config.site_url}}ai/endpoints/transformers/transformers/) 
 
  <figure>
