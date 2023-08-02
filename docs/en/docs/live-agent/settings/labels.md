@@ -57,7 +57,7 @@ To create a Label within Live Agent, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
 3. In the settings column, select **Labels**.
-4. In the center column, find a Label and click **Delete**.
+4. On the **Labels** page, to the right of the label you want to delete, click **Delete**.
 5. In the opened window, click **Yes** to confirm deletion.
 
 The Label will be deleted and no longer under Labels, and will no longer be available to add to Conversations.
