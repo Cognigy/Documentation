@@ -9,6 +9,8 @@ _Labels_ help you to categorize and prioritize conversations.
 
 They can be used to create custom workflows, to make conversations easier to identify, filter, and organize. 
 
+Only Administrators and Supervisors can create, edit, and delete Labels.
+
 ## Label Fields and Settings
 
 A Label consists of the following fields and settings, which are chosen when creating a Label and can be updated later when editing a Label.
