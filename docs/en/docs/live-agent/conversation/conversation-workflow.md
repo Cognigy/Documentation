@@ -79,15 +79,15 @@ Click on the drop-box within the Assigned Team menu and select the Team to which
 ### Assign Labels
 <div class="divider"></div>
 
-To assign a label to a Conversation within Live Agent, do the following:
+To assign a label to a conversation within Live Agent, do the following:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
-3. In the **Inboxes** column, select an Inbox.
+3. From the **Inboxes** list, select an Inbox.
 4. Select your Conversation.
-5. To the right of the conversation chat, in the **Details** section, click **Conversation Actions**.
-6. In the opened menu, click **Add Labels**.
-7. Scrolls or type to search for a Label, click a Label.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Conversation Labels** section, click **Add Labels**.
+7. Scroll or type to search for a Label, click a Label. You can add multiple labels at once. 
 
 The Label will be added to the Conversation.
 

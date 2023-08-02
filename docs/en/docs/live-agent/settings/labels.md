@@ -5,7 +5,7 @@
 ---
 # Labels
 
-Labels help you to categorize and prioritize Conversations.
+_Labels_ help you to categorize and prioritize conversations.
 
 They can be used to create custom workflows, to make conversations easier to identify, filter, and organize. 
 
@@ -33,9 +33,9 @@ To create a Label within Live Agent, do the following:
 
 The Label will be created and appear under Labels, and will be available to add to Conversations.
 
-#### Meaningful Labels
 
-It is good practice to give meaningful names to Labels, and to use chosen colors to easily identify visually which categories, or topics, a Conversation belongs to.
+!!! tip
+    It is good practice to give meaningful names to Labels, and to use chosen colors to easily identify visually which categories, or topics, a conversation belongs to.
 
 ### How to Edit a Label
 
@@ -44,8 +44,8 @@ To create a Label within Live Agent, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
 3. In the settings column, select **Labels**.
-4. In the center column, find a Label and click **Edit**.
-5. In the opened window, update the fields as needed.
+4. On the **Labels** page, to the right of the label you want to change, click **Edit**. 
+5. In the **Edit label** window, update the fields as needed.
 6. Click **Edit**.
 
 The Label fields and settings will be updated.
