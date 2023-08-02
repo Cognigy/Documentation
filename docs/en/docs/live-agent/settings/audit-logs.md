@@ -49,13 +49,21 @@ To view audit logs, follow these steps:
 
 You will see a list of log entries containing user and system events.
 
-### Activity Details
+### View Changes
 
-Clicking an event displays the advanced details of what occurred in an event:
+For actions, you can view details on any changes that were made.
 
-- The activity name
-- The agent who made the action
-- The time the action was executed
-- The type of action
-- The ID of the Inbox affected by the action
-- The changes made with the action
+To do this, follow these steps:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > **Audit Logs**.
+3. Select a log from the list by clicking on it.
+
+A window will open displaying the details of the changes and specific modifications between the previous state and the updated state of the system or data.
+
+For an `update` action, a Before section presents the original values or configuration, while the After section displays the new values after the update.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-audit-logs-update-inbox-changes.png" width="100%" alt="Audit Logs Changes" />
+  <figcaption>Audit Logs Changes</figcaption>
+</figure>
