@@ -20,7 +20,7 @@ A Label consists of the following fields and settings, which are chosen when cre
 | Color                 | A color for the Label, for easy visual  identification             | After selection, click on the small square again to complete your color selection                  |
 | Show Label on Sidebar | This option determines if a Label will be displayed on the sidebar | This will help in easy identification of the Conversations                                         |
 
-### How to Create a Label
+### Create a Label
 
 To create a Label within Live Agent, do the following:
 
