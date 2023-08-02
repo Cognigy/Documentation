@@ -1,8 +1,8 @@
 ---
- title: "Conversation Routing" 
- slug: "conversation-routing"
- description: "With Cognigy Live Agent conversation routing, you can improve customer support by efficiently assigning conversations based on agent availability and workload. This feature helps enhance productivity and optimize resource utilization."
- hidden: false 
+title: "Conversation Routing" 
+slug: "conversation-routing"
+description: "With Cognigy Live Agent conversation routing, you can improve customer support by efficiently assigning conversations based on agent availability and workload. This feature helps enhance productivity and optimize resource utilization."
+hidden: false 
 ---
 
 # Conversation Routing
@@ -91,6 +91,31 @@ To configure auto assignment in your Inbox, follow these steps:
 4. From the **Allow auto assignment** list, select one of the following options:
      * Enable — allows the automatic assignment of agents to conversations. The setting is activated by default.
      * Disable — allows the manual assignment of agents to conversations.
+
+The changes will be applied.
+
+#### Consider Conversation Count
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
+
+By default, [Automatic Assignment](#automatic-assignment) does not take into account the number of conversations being handled by each agent. 
+In this case, new conversations may be assigned to any available agent without considering their current workload.
+
+You can control this behavior by using the **Consider conversation count** setting.
+
+When this setting is enabled, 
+Live Agent will take into account the number of conversations
+that each agent is already handling before assigning new conversations to them. 
+For example, if Alex is currently handling three conversations, 
+and Sara is handling two conversations, the system will assign new incoming conversations to Sara, 
+as she has a lower workload.
+
+To consider conversation count withing your Inbox, follow these steps:
+
+1. Go to **Settings > Inboxes**.
+2. Select an Inbox from the list and click ![gear](../../assets/icons/gear.svg).
+3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
+4. Activate the **Consider conversation count** option.
 
 The changes will be applied.
 

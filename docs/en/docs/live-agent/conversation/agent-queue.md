@@ -7,7 +7,7 @@ hidden: false
 
 # Agent Queue
 
-The _Agent Queue_ is a list of conversations waiting for attention from agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the agent has not sent the first reply.
+_Agent Queue_ is a list of conversations waiting for attention from agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the agent has not sent the first reply.
 
 The queue is visible to agents on the **Mine** tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention.
 
