@@ -9,7 +9,20 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.54-blue.svg)](../../release-notes/4.54.md)
 
-_Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. These logs record important user activities, system events, and configuration changes, providing details for security and auditing purposes. With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. The logs include events such as `create`, `update`, and `delete` for [Inboxes](inboxes.md) and [Automation Rules](automation-rules.md).
+_Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. 
+
+These logs record important user activities, system events, and configuration changes, providing details for security and auditing purposes. 
+
+With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. 
+
+The logs include events such as `create`, `update`, and `delete` for:
+
+- [Assist Bots](./../conversation/assist-bot.md)
+- [Automation Rules](automation-rules.md)
+- [Inboxes](inboxes.md)
+- [Inbox Collaborators](inboxes.md#inbox-collaborators)
+- [Inbox Webhooks](inboxes.md#inbox-settings)
+- [Teams](teams.md)
 
 Only users with the `Administrator` role can access these logs. 
 
@@ -35,3 +48,14 @@ To view audit logs, follow these steps:
 2. Go to **Settings > Audit Logs**.
 
 You will see a list of log entries containing user and system events.
+
+### Activity Details
+
+Clicking an event displays the advanced details of what occurred in an event:
+
+- The activity name
+- The agent who made the action
+- The time the action was executed
+- The type of action
+- The ID of the Inbox affected by the action
+- The changes made with the action
