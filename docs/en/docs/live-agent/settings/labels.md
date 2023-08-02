@@ -50,7 +50,7 @@ To create a Label within Live Agent, do the following:
 
 The Label fields and settings will be updated.
 
-### How to Delete a Label
+### Delete a Label
 
 To create a Label within Live Agent, do the following:
 
