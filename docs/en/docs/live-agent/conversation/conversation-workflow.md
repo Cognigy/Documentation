@@ -84,7 +84,7 @@ To assign a label to a conversation within Live Agent, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
 3. From the **Inboxes** list, select an Inbox.
-4. Select your Conversation.
+4. Select your conversation.
 5. On the right of the conversation chat, go to **Details > Conversation Actions**.
 6. Under the **Conversation Labels** section, click **Add Labels**.
 7. Scroll or type to search for a Label, click a Label. You can add multiple labels at once. 

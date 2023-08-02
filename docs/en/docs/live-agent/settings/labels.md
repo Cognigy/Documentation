@@ -60,8 +60,8 @@ To create a Label within Live Agent, do the following:
 4. On the **Labels** page, to the right of the label you want to delete, click **Delete**.
 5. Confirm deletion by clicking **Yes, Delete**.
 
-The Label will be deleted and no longer under Labels, and will no longer be available to add to Conversations.
+The Label will be deleted and no longer under Labels, and will no longer be available to add to Conversations. Also, the label will be removed from the conversations where it was added earlier.
 
-### How to Add A Label to a Conversation
+### Add a Label to a Conversation
 
 To start using Labels in Conversations, go to [Assign Labels](./../conversation/conversation-workflow.md#assign-labels).
