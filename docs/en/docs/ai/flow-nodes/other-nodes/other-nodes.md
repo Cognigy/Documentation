@@ -15,5 +15,7 @@ Nodes that did not fit into any category above:
 - [Request Rating](request-rating.md)
 - [LLM Prompt](llm-prompt.md)
 - [GPT Conversation](gpt-conversation.md)
+- [Knowledge Search](knowledge-search.md)
+- [Search Extract Output](search-extract-output.md)
 - [Close Handover](close-handover.md)
 - [Set Handover Inactivity](set-handover-inactivity.md)
