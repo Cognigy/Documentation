@@ -255,6 +255,7 @@ nav:
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
+        - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
