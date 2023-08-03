@@ -108,7 +108,7 @@ Live Agent will take into account the number of conversations
 that each agent is already handling before assigning new conversations to them. 
 For example, if Alex is currently handling three conversations, 
 and Sara is handling one conversation, the system will assign new incoming conversations to Sara, 
-as she has a lower workload.
+as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5).
 
 If all agents have the same number of active conversations,
 the standard round-robin logic will be applied to assign each agent the next conversation in order.
@@ -264,8 +264,11 @@ Source table:
 
 Common conditions:
 
-- Automatic Conversation Reassignment is activated.
-- Automatic Conversation Assignment is activated.
+- Activated:
+    - Automatic Conversation Reassignment.
+    - Automatic Conversation Assignment.
+- Deactivated:
+    - Consider Conversation Count.
 - Auto Assign Conversations to a Busy Agent is activated or deactivated.
 
 **Example 1**
@@ -329,8 +332,11 @@ Common conditions:
 
 - The limit is 2 conversations per agent.
 - 4 conversations are created.
-- Automatic Conversation Reassignment is activated.
-- Automatic Conversation Assignment is activated.
+- Activated:
+    - Automatic Conversation Reassignment.
+    - Automatic Conversation Assignment.
+- Deactivated:
+    - Consider Conversation Count.
 
 **Example 1**
 
@@ -373,8 +379,11 @@ Source table:
 Common conditions:
 
 - The limit is 2 conversations per agent.
-- Automatic Conversation Reassignment is activated.
-- Automatic Conversation Assignment is activated.
+- Activated:
+    - Automatic Conversation Reassignment.
+    - Automatic Conversation Assignment.
+- Deactivated:
+   - Consider Conversation Count.
 
 **Example 1**
 
@@ -440,7 +449,7 @@ the second to Agent 1, the third to Agent 3 again.
 Additional conditions:
 
 - 4 new incoming conversations.
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- Auto Assign Conversations to a Busy Agent is deactivated.
 - Agent 3 has changed the status to `Offline`, `Away`, or `Busy`.
 
 Result: The first two conversations will be assigned to Agent 1,
@@ -451,7 +460,7 @@ the third to Agent 1, the forth to Agent 4.
 Additional conditions:
 
 - 4 new incoming conversations.
-- Activated: Auto Assign Conversations to a Busy Agent.
+- Auto Assign Conversations to a Busy Agent is deactivated.
 - Agent 3 has changed the status to `Busy`. 
 
 Result: The first two incoming conversations will be assigned to Agent 3,
