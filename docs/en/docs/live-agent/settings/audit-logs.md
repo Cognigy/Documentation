@@ -59,7 +59,7 @@ To do this, follow these steps:
 2. Go to **Settings > **Audit Logs**.
 3. Select a log from the list by clicking on it.
 
-A window will open displaying the details of the changes and specific modifications between the previous state and the updated state of the system or data.
+A window will open displaying the details of the changes.
 
 For an `update` action, the **Before** section presents the original values or configuration, while the **After** section displays the new values after the update.
 
