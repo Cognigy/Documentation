@@ -403,7 +403,61 @@ Additional conditions:
 
 Result: When Agent 1 has changed the status from `Offline` to `Busy`, two conversations are assigned to this human agent.
 
+### Scenario 5
+
+Source table:
+
+```txt
+| Agent name | Limit | Status  | Conversations |
+|------------|-------|---------|---------------|
+| Agent 1    | 5     | Online  | 2             |
+| Agent 2    | 5     | Online  | 3             |
+| Agent 3    | 5     | Online  | 1             |
+| Agent 4    | 5     | Online  | 4             |
+```
+
+Common conditions:
+
+- The limit is 5 conversations per agent.
+- Each agent has assigned conversations.
+- Activated:
+    - Automatic Conversation Assignment.
+    - Automatic Conversation Reassignment.
+    - Consider Conversation Count.
+
+**Example 1**
+
+Additional conditions:
+
+- 3 new incoming conversations.
+- Deactivated: Auto Assign Conversations to a Busy Agent.
+
+Result: The first incoming conversation will be assigned to Agent 3,
+the second to Agent 1, the third to Agent 3 again.
+
+**Example 2**
+
+Additional conditions:
+
+- 4 new incoming conversations.
+- Deactivated: Auto Assign Conversations to a Busy Agent.
+- Agent 3 has changed the status to `Offline`, `Away`, or `Busy`.
+
+Result: The first two conversations will be assigned to Agent 1,
+the third to Agent 1, the forth to Agent 4.
+
+**Example 3**
+
+Additional conditions:
+
+- 4 new incoming conversations.
+- Activated: Auto Assign Conversations to a Busy Agent.
+- Agent 3 has changed the status to `Busy`. 
+
+Result: The first two incoming conversations will be assigned to Agent 3,
+the third to Agent 1, the third to Agent 2.
+
 ## More Information
 
-- [Inboxes](../inboxes.md)
-- [Account Settings](../account-settings.md)
+- [Inboxes](../settings/inboxes.md)
+- [Account Settings](../settings/account-settings.md)
