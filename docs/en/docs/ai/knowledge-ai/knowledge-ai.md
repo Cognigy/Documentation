@@ -6,7 +6,7 @@ hidden: false
 
 # Knowledge AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../../release-notes/4.57.md)
 
 !!! note
     Our Knowledge AI functionality requires the usage of external AI model provides such as Microsoft. You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
@@ -138,7 +138,23 @@ Congratulations 🔥 - you are done with our Quickstart! Go ahead and read throu
 
 
 ## Overview
-Todo
+Working with the Knowledge AI has two phases similar to working with Intents - Knowledge needs to be ingested & prepared for usage and will then be queried once fully integrated in [Flows]() during runtime.
+
+The following steps happen during "ingestions":
+
+1. **Raw information is provided**
+
+    In this step Cognigy.AI receives access to raw information for instance by receiving your PDFs that contain your knowledge.
+
+2. **Knowledge Chunk extraction**
+
+    In this step a collection of tools is being used to extract text as well as meta-data from your raw information. Chunks have a maximum length of **2000 characters** and will be accessible for modification in our Chunk Editor.
+
+1. **Vectorisation**
+
+    In this step the text of your Knowledge Chunks will be encoded into numbers by leveraging an Embedding machine learning model. Embeddings are high-dimensional vectors which encode the meaning and similarity of words into a numeric representation. Cognigy.AI will store those vectors in a specialized database internally.
+
+Todo: Explain "query steps + add a diagram showing those steps mentioned above"
 
 ## Manage Knowledge
 
