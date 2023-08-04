@@ -23,7 +23,7 @@ Before configuring the outbound routing rules, ensure that the **Outbound** opti
 
 To set up a rule for outbound calls, follow these steps:
 
-1. Open The Cognigy Voice Gateway Self-Service Portal. 
+1. Open the Cognigy Voice Gateway Self-Service Portal. 
 2. In the left-side menu, select **Outbound Call Routing**. 
 3. On the **Outbound Call Routing** page, click **Add outbound call routes**. 
 4. On the **Add Outbound Call Routing** page, in the Name field, specify a unique name that complies with the requirements for your rule. 
