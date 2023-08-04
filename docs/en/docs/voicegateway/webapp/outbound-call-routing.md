@@ -1,13 +1,13 @@
 ---
 title: "Outbound Call Routing"
 slug: "outbound-call-routing"
-description: "Voice Gateway Outbound Call Routing lets you choose a SIP trunk provider for outbound calls and set up specific rules for call routing."
+description: "Voice Gateway Outbound Call Routing lets you choose a SIP trunk for outbound calls and set up specific rules for call routing."
 hidden: false
 ---
 
 # Outbound Call Routing
 
-_Outbound Call Routing_ allows you to select a [carrier](carriers.md) (SIP trunk provider) for outbound calls and configure specific rules for call routing.
+_Outbound Call Routing_ allows you to select a [carrier](carriers.md) (SIP trunk) for outbound calls and configure specific rules for call routing.
 
 ## How it Works
 
@@ -31,7 +31,7 @@ To set up a rule for outbound calls, follow these steps:
 6. Select a default outbound carrier through which the outbound calls will route when no rules are applied. 
 7. Select accounts to which the rule should belong from the Used by list. By default, All accounts are selected. 
 8. In the **Route based on first match** section, configure a set of rules:
-    - **Digit pattern** — specify a code number of the country, for example, 44 for Germany, 46 for Sweden, or 1 for the United States. Alternatively, you can also specify a regex, for example, <>.
+    - **Digit pattern** — specify a code number of the country, for example, 49 for Germany, 46 for Sweden, or 1 for the United States. Alternatively, you can also specify a regex, for example, <>.
     - **Carrier** — select a carrier from the list.
 9. Click **Save**.
 
