@@ -2,7 +2,7 @@
 title: "Recent Calls" 
 slug: "vg-webapp-recent-calls"
 description: "The Voice Gateway Recent Calls feature provides essential information about each call, including the date, direction, caller ID, recipient, SIP trunk, and call duration."
-hidden: true 
+hidden: false
 ---
 
 # Recent Calls

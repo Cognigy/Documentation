@@ -572,6 +572,8 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+    - Outbound Call routing:
+      - voicegateway/webapp/outbound-call-routing.md
   - References:
     - Voice Gateway Events:
         - voicegateway/references/events/overview.md
