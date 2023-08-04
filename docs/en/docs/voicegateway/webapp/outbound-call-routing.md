@@ -31,7 +31,7 @@ To set up a rule for outbound calls, follow these steps:
 6. Select a default outbound carrier through which the outbound calls will route when no rules are applied. 
 7. Select accounts to which the rule should belong from the Used by list. By default, All accounts are selected. 
 8. In the **Route based on first match** section, configure a set of rules:
-    - **Digit pattern** — specify a code number of the country, for example, 49 for Germany, 46 for Sweden, or 1 for the United States. Alternatively, you can also specify a regex, for example, <>.
+    - **Digit pattern** — specify a code number of the country, for example, 49 for Germany, 46 for Sweden, or 1 for the United States.<br>If you need to capture a specific area, you can also use a regular expression (regex). For example, `^\d{2}41\d{8}` maps only Brazilian numbers with the country code `55` and area code `41`, which covers several cities in Brazil. Alternatively, using the digit combination `5541` gives the same mapping result.
     - **Carrier** — select a carrier from the list.
 9. Click **Save**.
 
