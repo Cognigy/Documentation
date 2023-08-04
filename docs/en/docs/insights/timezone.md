@@ -1,52 +1,34 @@
 ---
- title: "Timezone" 
- slug: "timezone" 
- hidden: false 
+title: "Timezone" 
+slug: "timezone" 
+hidden: false 
 ---
 # Timezone
 
-## Timezone support
+Insights presents time-based data with an account to the user's timezone. 
 
-<div class="divider"></div>
+!!! note
+    In OData feed time is always in UTC format. You should take this into account if
+you compare timezones with Insights.
 
-Insights applications support presenting time-based data with an account to the user's timezone. 
-
----
-**Note**
-
-In OData feed time is always in UTC format. You should take this into account if
-you compare it with Insights.
-
----
 
 ## Changing preferred Timezone
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
 
-By default, Insights uses timezone preferences of your device. You can override this in **My Profile**. 
+By default, Insights uses timezone preferences of your device. 
 
-This comes handy if you travel a lot and your device timezone gets updated by your location, or you may have a multinational Agent with the users all over the globe.
+You can override this in **My Profile**. 
+
+This comes handy if you travel a lot and your device timezone gets updated by your location, 
+or you may have a multinational Agent with the users all over the globe.
 
 To change timezone preferences:
 
-- Click on the user icon in the top-right corner.
-- Select **My Profile**.
+1. Go to Cognigy.AI.
+2. In the upper-right corner, select **User Menu > My Profile**.
+3. In the **Preferences** section, select timezone from the list.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/user-menu-my-profile.png" width="50%" alt="User menu with 'My profile' option" />
-  <figcaption>User menu with "My profile" option</figcaption>
-</figure>
 
-- Choose preferred timezone in the "Select Timezone" input.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/my-profile-timezone-selection.png" width="100%" alt="Excerpt of the settings on 'My Profile page'" />
-  <figcaption>Here selected the "Europe/Berlin" timezone</figcaption>
-</figure>
-
----
-**Note**
-
-Custom Timezone preferences are stored inside the browser storage, means you need to select custom timezone preference again if you change the device and/or the browser.
-
----
+!!! note
+    Custom Timezone preferences are stored inside the browser storage, means you need to select custom timezone preference again if you change the device and/or the browser.
