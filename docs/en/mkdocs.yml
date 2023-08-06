@@ -575,14 +575,19 @@ nav:
   - References:
     - Voice Gateway Events:
         - voicegateway/references/events/overview.md
-        - voicegateway/references/events/RECOGNIZED_SPEECH.md
-        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
         - voicegateway/references/events/CALL_CREATED.md
-        - voicegateway/references/events/CALL_RECONNECTED.md
         - voicegateway/references/events/CALL_COMPLETED.md
         - voicegateway/references/events/CALL_FAILED.md
+        - voicegateway/references/events/CALL_RECONNECTED.md
+        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/RECOGNIZED_SPEECH.md
+        - voicegateway/references/events/TRANSFER_DIAL_ERROR.md
+        - voicegateway/references/events/TRANSFER_DIAL_SUCCESS.md
+        - voicegateway/references/events/TRANSFER_REFER_ERROR.md
+        - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
+        - voicegateway/references/events/USER_BUSY.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
-        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
     - TTS and STT Vendors:
         - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
