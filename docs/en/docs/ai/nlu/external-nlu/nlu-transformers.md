@@ -118,7 +118,7 @@ In order to use a specific Transformer function, it has to be enabled in the Tra
 The default error handling for Transformers is to log the error on the logs page and then continue with the normal execution. This means that if something fails in the Transformer function, the message will still be processed as if the Transformer function wouldn't exist. There is a setting **Abort On Error**, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
 
 ### Debug Transformer Stack
-If the setting **Debug Transformer Stack** is enabled, the different inputs and outputs from the Transformers are exposed input object in the interaction panel. Note that this only works when writing in the interaction panel, it is not part of the input object when using other endpoints.
+If the **Debug Transformer Stack** setting is enabled, the different inputs and outputs from the Transformers are exposed input object in the interaction panel. Note that this only works when writing in the interaction panel, it is not part of the input object when using other endpoints.
 Example:
 
 ```json
