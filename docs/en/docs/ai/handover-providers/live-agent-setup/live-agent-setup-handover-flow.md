@@ -17,7 +17,7 @@ Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent No
   <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
 </figure>
 
-Within the *Handover to Agent Node* you need to set the **Live Agent Inbox ID** field under **Live Agent Settings** with the _Inbox ID_ found in the [previous step]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/#account-id-and-api-key-in-live-agent).
+Within the **Handover to Agent** Node you need to set the **Live Agent Inbox ID** field under **Live Agent Settings** with the _Inbox ID_ found in the [previous step]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/#account-id-and-api-key-in-live-agent).
 
 ## Login to Live Agent and Test Conversations
 <div class="divider"></div>
