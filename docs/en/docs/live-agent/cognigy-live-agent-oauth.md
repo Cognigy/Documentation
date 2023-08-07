@@ -26,7 +26,7 @@ Once you have entered your credentials, you will be redirected to the Live Agent
 
 Old users created from Management UI can still log in using the /old-login endpoint.
 
- However, it is recommended to migrate these users to utilize the Cognigy.AI OAuth login. To initiate the migration process, follow these steps:
+However, it is recommended to migrate these users to utilize the Cognigy.AI OAuth login. To initiate the migration process, follow these steps:
 1. Create a Cognigy.AI user account with the same email as the old user.
 
 2. To log in to Live Agent, assign a valid role by following the guide [Adding Agents and Admins to Live Agent](../ai/handover-providers/live-agent-setup/live-agent-setup-agents.md).
