@@ -106,4 +106,4 @@ Enter the *Account ID* and *API Key* (Access Token) found in the previous steps 
 
 Now your Webchat Endpoint is set up! Next, you will need to set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent:
 
-- [**Set up your Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow/)
+- [Set up your Flow for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow/)
