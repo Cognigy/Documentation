@@ -106,6 +106,7 @@ Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more in
 ### Why is the OData endpoint throwing an unauthorized error while querying?
 If you encounter an unauthorized error, ensure that the API access token belongs to a user with the `Administrator` role for the account being used in the query.
 ### How to retrieve all content from a particular collection?
+
 You can retrieve all content from a particular collection, for example, Conversation, Message.
 
 The following filtering query can be performed:
