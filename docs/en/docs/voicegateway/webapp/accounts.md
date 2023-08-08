@@ -1,7 +1,7 @@
 ---
- title: "Accounts" 
- slug: "vg-webapp-accounts" 
- hidden: false 
+title: "Accounts" 
+slug: "vg-webapp-accounts" 
+hidden: false 
 ---
 
 # Accounts

@@ -1,7 +1,7 @@
 ---
- title: "Alerts" 
- slug: "vg-webapp-alerts" 
- hidden: true 
+title: "Alerts" 
+slug: "vg-webapp-alerts"
+hidden: false
 ---
 
 # Alerts
