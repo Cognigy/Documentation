@@ -7,14 +7,7 @@
 
 Here are all the attachments contained in the account conversations.
 
-Click on the **Settings** button in the Live Agent Dashboard sidebar.
-
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
-  <figcaption>Live Agent Dashboard Settings</figcaption>
-</figure>
-
-Click on Attachments. Now you are on the Attachments screen.
+To access the Attachments, navigate to the left-side menu of Live Agent and click **Settings**, then select **Attachments**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-attachments.png" width="100%" alt="Live Agent Attachments" />
