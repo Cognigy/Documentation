@@ -1,13 +1,13 @@
 ---
 title: "Knowledge AI (Beta)"
 slug: "Knowledge AI (Beta)"
-description: ""
+description: "Knowledge AI technology allows you to upload your existing knowledge as documents, such as PDF, text, ctext, and DOCX files. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes."
 hidden: false
 ---
 
 # Knowledge AI (Beta)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
 
 !!! note
     You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
@@ -15,7 +15,7 @@ hidden: false
 Knowledge AI is commonly used in Natural Language Processing (NLP) and Conversational AI to enhance the capabilities of virtual assistants, chatbots, and other AI-driven systems. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more.
 By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
-With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
+With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](nlu/nlu-overview/ml-intents.md) and [Default Replies](nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
 Instead, Cognigy Knowledge AI technology allows you to upload your existing knowledge as documents,
 such as PDF, text, ctext, and DOCX files.
@@ -32,7 +32,7 @@ Before using this feature, create an account in one of the Knowledge AI Provider
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-For the Knowledge Search case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
+For the Knowledge Search case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](resources/build/llm.md) list.
 
 ## Create a Knowledge Store
 
@@ -44,7 +44,7 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
 4. Specify a unique name and select a model, which you want to use for the knowledge search case.
 
     <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-ai-widget.png" width="100%" />
+      <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-ai-widget.png" width="100%" />
     </figure>
 
 5. Click **Configure Connection** and enter credentials for the model:
@@ -140,7 +140,7 @@ A Knowledge Store is a container that holds and organizes multiple Knowledge Sou
 The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-store.png" width="100%" />
+    <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-store.png" width="100%" />
 </figure>
 
 #### Knowledge Source
@@ -164,7 +164,7 @@ The `.ctxt` effectively splits the text into chunks, provides wide possibilities
 Each Knowledge Source must contain no more than 2000 characters.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-source.png" width="100%" />
+    <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-source.png" width="100%" />
 </figure>
 
 #### Chunk 
@@ -177,7 +177,7 @@ Metadata can contain no more than 20 key-value pairs per chunk and supports simp
 such as, number, string, boolean. 
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk.png" width="100%" />
+    <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk.png" width="100%" />
 </figure>
 
 #### Chunk Editor
@@ -188,7 +188,7 @@ Users can modify the text, add new information, delete sections,
 or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk-editor.png" width="100%" />
+    <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk-editor.png" width="100%" />
 </figure>
 
 ## Search, Extract and Output Knowledge
@@ -197,20 +197,20 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 2. In the **Flow** editor, add a **Search Extract Output** Node.
 3. In the **Node** editor, and select the knowledge store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
     - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
 
      <figure>
-       <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/configure-search-extract-output.png" width="100%" />
+       <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/configure-search-extract-output.png" width="100%" />
      </figure>
    
 5. Click **Save Node**. 
-6. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
+6. Proceed to the [Interaction Panel](tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
 You will receive a response generated from the absorbed Knowledge.
 
-To learn more about the Search Extract Output Node, refer to the [related article](../flow-nodes/other-nodes/search-extract-output.md).
+To learn more about the Search Extract Output Node, refer to the [related article](flow-nodes/other-nodes/search-extract-output.md).
 
 ## FAQ
 
@@ -224,6 +224,6 @@ To learn more about the Search Extract Output Node, refer to the [related articl
 
 ## More information
 
-- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
-- [LLM](../resources/build/llm.md)
-- [Generative AI](../generative-ai.md)
+- [Search Extract Output Node](flow-nodes/other-nodes/search-extract-output.md)
+- [LLM](resources/build/llm.md)
+- [Generative AI](generative-ai.md)

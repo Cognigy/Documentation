@@ -92,7 +92,7 @@ The model will be deleted from the list.
 ## More information
 
 - [Generative AI](../../generative-ai.md)
-- [Knowleage AI](../../knowledge-ai/knowledge-ai.md)
+- [Knowleage AI](../../knowledge-ai.md)
 
 
 

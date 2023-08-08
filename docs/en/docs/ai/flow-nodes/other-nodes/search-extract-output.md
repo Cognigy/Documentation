@@ -18,8 +18,8 @@ hidden: false
 
 This Node searches through data within the Knowledge AI solution, extracts a relevant answer via a generative AI model, and creates an output.
 
-Before using this Node, please ensure that you have a `text-embedding-ada-002` as well as a `text-davinci-003` or `gpt-3.5-turbo` LLM configured - see this [list of supported providers](../../resources/build/llm.md). 
-
+Before using this Node, ensure that you configured the `text-embedding-ada-002` model as well as the `text-davinci-003` or `gpt-3.5-turbo` models.
+For more information, refer to the [list of supported providers](../../resources/build/llm.md).
 
 ## Settings
 
@@ -101,7 +101,7 @@ Select a store from the list to allow the Node to retrieve the data.
 ## More information
 
 - [Knowledge Search Node](knowledge-search.md)
-- [Knowledge Search Overview](../../knowledge-ai/knowledge-ai.md)
+- [Knowledge Search Overview](../../knowledge-ai.md)
 - [LLM](../../resources/build/llm.md)
 
 
