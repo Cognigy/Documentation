@@ -1,7 +1,7 @@
 ---
- title: "Architecture" 
- slug: "architecture" 
- hidden: false 
+title: "Architecture" 
+slug: "architecture" 
+hidden: false 
 ---
 # Architecture
 
@@ -49,7 +49,7 @@ Cognigy Insights plays a smaller role regarding Cognigy.AI product architecture,
 ### IDE - building your Virtual Agents
 A place that allows you to create Virtual Agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part
 of the product the IDE (=Integrated Development Environment) - a term often used in software development. Once you are done with the first iteration
-of your Virtual Agent, a so-called [Snapshot]() must be created in order to deploy your Virtual Agent into production. A Snapshot is an immutable
+of your Virtual Agent, a so-called [Snapshot](../ai/resources/deploy/snapshots.md) must be created in order to deploy your Virtual Agent into production. A Snapshot is an immutable
 copy of your Virtual Agent containing all resources which make it up - for example, your Flows, Lexicons, Intents and Extensions. Snapshots act as the interface
 to the second group of functionality: The Cognigy.AI Runtime.
 
