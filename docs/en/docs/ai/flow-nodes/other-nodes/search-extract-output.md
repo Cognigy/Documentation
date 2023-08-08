@@ -16,21 +16,20 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-This Node searches, extracts, and outputs content from data previously uploaded to the knowledge store through a source file.
+This Node searches through data within the Knowledge AI solution, extracts a relevant answer via a generative AI model, and creates an output.
 
-Before using this Node, set the relevant models from the [list of supported providers](../../resources/build/llm.md).
+Before using this Node, please ensure that you have a `text-embedding-ada-002` as well as a `text-davinci-003` or `gpt-3.5-turbo` LLM configured - see this [list of supported providers](../../resources/build/llm.md). 
 
-You need different scope of models depending on the [selected mode](#mode).
 
 ## Settings
 
 ### Mode
 
-There are three modes that offer different levels of information processing and presentation.
+There are three modes that offer different levels of data extraction and presentation.
 
 #### Search & Extract & Output
 
-Performs a knowledge search, extracts key points, and outputs the result as text or adaptive card.
+Performs a search, extracts an answer, and outputs the result as text or adaptive card.
 
 In the Search & Extract & Output mode, the following steps are involved:
 
@@ -44,7 +43,7 @@ For this mode, select models from the [list of supported providers](../../resour
 
 #### Search & Extract
 
-Performs a knowledge search, extracts key points, but no automatic output.
+Performs a search, extracts an answer, but does not perform an automatic output. Our customers can then manually create the output they desire.
 
 In the Search & Extract mode, the following steps are involved:
 
