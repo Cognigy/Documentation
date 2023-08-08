@@ -6,6 +6,8 @@ hidden: true
 
 # Set Agent Assist Grid
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../../release-notes/4.57.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/set-agent-assist-grid.png" width="80%" />
 </figure>

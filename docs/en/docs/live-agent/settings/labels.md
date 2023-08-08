@@ -14,6 +14,8 @@ Only Administrators and Supervisors can create, edit, and delete labels.
 
 ### Create a Label
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
+
 To create a label within Live Agent, do the following:
 
 1. Go to Live Agent.
