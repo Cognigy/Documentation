@@ -17,7 +17,7 @@ It is also possible to write a custom NLU Connector, without using one of the NL
 
 ## NLU Transformers
 <div class="divider"></div>
-To create a **NLU Transformer** for a Cognigy NLU, Alexa, DialogFlow, LUIS or Watson Assistant Connector, open the ``Transformer Functions`` tab in the NLU Connector. Here are the different [Transformer Settings]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings) that can be configured, as well as the Transformer code editor.
+To create a **NLU Transformer** for a Cognigy NLU, Alexa, DialogFlow, LUIS or Watson Assistant Connector, open the **Transformer Functions** tab in the NLU Connector. Here are the different [Transformer Settings]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings) that can be configured, as well as the Transformer code editor.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/377f21a-NLU_Transformer.png" width="100%" />
@@ -38,7 +38,7 @@ The function has to return ``data`` and ``nluResult``, which can be changed in t
 ## NLU Code Transformer
 <div class="divider"></div>
 
-The NLU Code transformer makes it possible to write a custom NLU pipeline. To create a NLU Transformer, open the ``Transformer Functions`` tab in the Code Connector. Here are the different [Transformer Settings]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings) that can be configured, as well as the Transformer code editor.
+The NLU Code transformer makes it possible to write a custom NLU pipeline. To create a NLU Transformer, open the **Transformer Functions** tab in the Code Connector. Here are the different [Transformer Settings]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings) that can be configured, as well as the Transformer code editor.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/5021c51-NLU_Code_Transformer.png" width="100%" />
@@ -115,10 +115,10 @@ It is possible to use the exposed modules `console.log`, `console.info` and `con
 In order to use a specific Transformer function, it has to be enabled in the Transformer Settings section. There is a toggle to enable each individual Transformer function. Transformer functions can be temporarily disabled without having to delete the code.
 
 ### Error handling in Transformers
-The default error handling for Transformers is to log the error on the logs page and then continue with the normal execution. This means that if something fails in the Transformer function, the message will still be processed as if the Transformer function wouldn't exist. There is a setting `Abort On Error`, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
+The default error handling for Transformers is to log the error on the logs page and then continue with the normal execution. This means that if something fails in the Transformer function, the message will still be processed as if the Transformer function wouldn't exist. There is a setting **Abort On Error**, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
 
 ### Debug Transformer Stack
-If the setting ` Debug Transformer Stack` is enabled, the different inputs and outputs from the Transformers are exposed input object in the interaction panel. Note that this only works when writing in the interaction panel, it is not part of the input object when using other endpoints.
+If the **Debug Transformer Stack** setting is enabled, the different inputs and outputs from the Transformers are exposed input object in the interaction panel. Note that this only works when writing in the interaction panel, it is not part of the input object when using other endpoints.
 Example:
 
 ```json

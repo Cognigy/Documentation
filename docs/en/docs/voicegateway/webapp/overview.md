@@ -18,6 +18,8 @@ The Web App has the following entities:
 - [Carriers](carriers.md)
 - [Speech](speech-services.md)
 - [Phone Numbers](phone-numbers.md)
+- [Outbound Call Routing](outbound-call-routing.md)
+
 
 ## How to start
 
@@ -34,6 +36,7 @@ Additionally, you can:
 
 - Check [recent calls](recent-calls.md) and view all information about the call.
 - Check [alerts](alerts.md) if something went wrong with call configuration.
+- Configure [outbound call routing](outbound-call-routing.md).
 
 
 
