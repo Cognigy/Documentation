@@ -56,7 +56,7 @@ For this mode, select models from the [list of supported providers](../../resour
 
 #### Search only
 
-Performs a knowledge search and retrieve information without extraction or automatic output.
+Performs a knowledge search and retrieves information without extraction or automatic output.
 
 In the Search only mode, the following steps are involved:
 

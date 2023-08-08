@@ -9,198 +9,207 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../../release-notes/4.57.md)
 
 !!! note
-    Our Knowledge AI functionality requires the usage of external AI model provides such as Microsoft. You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
+    You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
 
-Knowledge is a critical part when building modern virtual agents. In the current era of bots, our customers usually use [Intents]() and so-called [Default Replies]() in order to detect questions and respond with appropriate content based on the Default Replies. Crafting these Q&A pairs is time-consuming and requires a lot of maintenace effort. The future of bots will be different - and it starts right now! The Cognigy Knowledge AI solution allows our customers to upload their existing knowledge in the form of already existing documents like PDF files. Cognigy.AI will then learn how to extract meaningful information from those documents and will expose them to Flow designers via a new set of Flow Nodes. This functionality allows our customers to build knowledge based bots in minutes and get started way quicker.
+Knowledge AI is commonly used in Natural Language Processing (NLP) and Conversational AI to enhance the capabilities of virtual assistants, chatbots, and other AI-driven systems. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more.
+By accessing and understanding vast knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
-## Quickstart
+With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-This Quickstart guide aims to provide a solid step-by-step tutorial on how to get started with our Knowledge AI solution. It won't explain concepts nor will it contain detailed information on how things work - please have a look at the other sections of this document in order to learn about the details.
+Instead, Cognigy Knowledge AI technology allows you to upload your existing knowledge as documents,
+such as .pdf, .txt, .ctxt, and .docs files.
+This technology extracts meaningful information from these documents
+and makes it accessible to Flow designers via the Knowledge AI Nodes.
+This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
+bypassing the limitations of traditional intent-based systems
+and simplifying the process of creating sophisticated conversational experiences.
 
-### Setup LLMs
+## Prerequisites
 
-In order to leverage the power of the Cognigy Knowledge AI solution, we have to create two LLM resources in your project:
-- an Embedding model which will be used to encode the text of our documents into a numeric representation which is used for search
-- a generative AI model which will be used to extract and generate a response based on a users questions and the information from your documents
+Before using this feature, you need to create an account in one of the Knowledge AI Providers:
 
-1. Open the Cognigy.AI user interface.
-2. Go to **Build > LLM.**
-3. Click **+New LLM.**
-4. Select the **text-embedding-ada-002** model and provide a name - you can either select the **Azure OpenAI** or **OpenAI** variants.
-5. Click on **Save**.
+- [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
+- [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/llm-ada.png" width="90%" />
-    </figure>
+For the Knowledge Search case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
 
-6. You will now have to create a [Connection]() pointing either to Azure OpenAI or OpenAI. Click on the **+** button next to the dropdown.
+## Create a Knowledge Store
 
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/azure-connection.png" width="90%" />
-    </figure>
+You can create a preconfigured knowlege store. To do this, follow these steps:
 
-7. Provide a name for your Connection, e.g. **Azure OpenAI** and provide your **API Key**. You can find the API Key in the **Azure OpenAI** section of the Azure portal.
-
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/azure-portal-api-key.png" width="90%" />
-    </figure>
-
-8. Once you have saved the Connection, you will have to insert a **Resource Name**, **Deployment Name** and a mandatory **API Version** Cognigy.AI will use when interacting with the LLM. Please note that these will be different for you based on how you have named the resource as well as the deployments in your Azure account. Once you are done, the configuration should look similar to the following:
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select **Knowledge**. The knowledge widget will be opened.
+3. Continue following the widget instructions.
+4. Specify a unique name and select a model, which you want to use for the knowledge search case.
 
     <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/llm-ada-configured.png" width="90%" />
+      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-ai-widget.png" width="100%" />
     </figure>
 
-You are now done with the setup for the first LLM - the **embedding model** which Cognigy.AI will use to encode the text of our documents. We have to create a second LLM for extracting and generating responses based on your knowledge. Since the second LLM is also Azure OpenAI based (in our example), configuration will be easier as we will be able to reuse the Azure OpenAI Connection we have already created.
+5. Click **Configure Connection** and enter credentials for the model:
 
-1. Go back to **Build > LLM.**
-2. Click **+New LLM.**
-3. Select the **text-davinci-003** model and provide a name.
-4. Click on **Save**.
-5. Select the **Azure OpenAI** Connection which we have created when configuring the first LLM.
-6. Insert the **Resource Name**, **Deployment Name** and a mandatory **API Version**. Once you are done, the configuration should look similar to the following:
+    === "Microsoft Azure OpenAI"
+        - **Connection name** — create a unique name for your connection.<br>
+        - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
+        - **resourceName** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). This value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.<br>
+        - **deploymentName** — add a [model name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).<br>
+        - **apiVersion** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format.<br>
+    === "OpenAI"
+        - **Connection name** — create a unique name for your connection.<br>
+        - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/davinci-configured.png" width="90%" />
-    </figure>
+6. Click **Next**.
+7. On the new page, upload the following file in the `.ctxt` format:
 
-This part of the configuration does not need to be touched again. Let's now navigate to the **Project Settings** of your project to continue.
+??? info "Sample"
+       
+    ```txt
+    `version: 1`
+    `sourceTitle: Cognigy`
+    `sourceLink: www.cognigy.com`
+   
+    # Frequently Asked Questions
+    ## What Is Conversational AI?
+    Conversational AI describes technologies that enable automated, human-like interactions between ourselves and machines. We interact with computers that use Natural Language Processing (NLP) and Machine Learning (ML) to interpret meaning and provide useful responses. We use our own language to express our intent instead of using hierarchical menus.
+    `sourceTitle: Cognigy.com`
+    `sourceLink: https://www.cognigy.com/faq`
+   
+    ## What is a Chatbot/ a Virtual Assistant
+    Chatbots, Digital Assistants and Virtual Assistants are terms often used interchangeably to describe a user interface, i.e. a chat box on a website or a smart speaker, as well as the intelligence that drives the automated conversation. Chatbot is a general term but is often reserved for static interactions, such as a basic Q & A. “Digital Assistant“ or “Virtual Assistant“ is used to describe more complex interactions between a user, a sophisticated reasoning engine and back-end systems.
+   
+    ### What is Conversational Automation?
+    Conversational Automation is a term that distinguishes an informational experience from an experience that accomplishes an action on behalf of a user. Conversational automation walks a user through the steps required to check order status, initiate a password reset, file a support ticket or make a reservation, for example.
+    `sourceLink: https://www.cognigy.com/faq`
+   
+    # Cognigy AI Plattform
+    `sourceLink1: https://www.cognigy.com/platform/cognigy-ai`
+    `sourceLink2: https://www.cognigy.com/`
+   
+    ## Plug-and-Play with Your Contact Center Ecosystem
+    ### Pre-build Connections
+    Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. `Cognigy.AI` seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
+    ### Tailored Connections
+    Or develop your tailored integration fast using our powerful Extension Framework
+    `image: https://www.cognigy.com/hs-fs/hubfs/Integration%20Architecture-2023.07.png?width=950&height=427&name=Integration%20Architecture-2023.07.png`
+    `date: 01/01/2023`
+   
+    ## Turnkey Contact Center Connectivity
+    Readily embed Cognigy.AI into your contact center infrastructure– phone, digital, live chat, agent desktop, and more.
+    `sourceLink: https://www.cognigy.com/platform/cognigy-ai`
+   
+    ### One-Click Backend Integrations
+    With our built-in Marketplace, you're just a few clicks away from connecting back-office systems to automate processes and speed up resolutions.
+   
+    #### 25+ Prebuilt Channel Connectors
+    Build your workflow once and populate it on any channel (web, phone, messaging) within seconds to enable consistent experiences everywhere
+    `last_edited: 01/02/2023`
+   
+    Cognigy.AI `addedLink: www.cognigy.com` - Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. Cognigy.AI seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
+    Or develop your tailored integration fast using our powerful Extension Framework.
+    ```
 
-### Activate GenAI features
+Complete installation and start investigating knowledge AI project structure.   
 
-You will now have to activate **Generative AI capabilities** for your project.
+## Investigate a Knowledge AI project 
 
-1. Navigate to the **Project Settings** page of your project.
-2. Open the **Generative AI Settings** section.
-3. Click on the **Enable Generative AI Features** button.
-4. Scroll through the list and select the **Davinci** model for **LLM Prompt Node** and the **ADA (embedding)** model for **Knowledge Search**. Your project settings should look like the following:
+Working with Knowledge AI involves two phases similar to Intents. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime once it's fully integrated into Flows.
 
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/project-settings.png" width="90%" />
-    </figure>
+**First phase:**
 
-5. Ensure that you click the **Save** button.
+1. **Raw Information Upload**. Cognigy.AI receives access to raw information via uploaded .pdf, .txt, .ctxt, or .docs files that contain knowledge.
+2. **Knowledge Chunk Extraction**. A collection of tools that extracts text and metadata from the raw information. Chunks are accessible for modification in the Chunk Editor.
+3. **Vectorization**. The text of Knowledge Chunks is encoded into numeric representations using an Embedding machine learning model. Embeddings are high-dimensional vectors that encode word meaning and similarity into numeric representations. Cognigy.AI stores these vectors in a specialized internal database for quick access during runtime.
 
-Perfect 🎉 - we can now finally start to upload Knowledge to your Cognigy.AI project.
+**Second phase:**
 
-### Knowledge
+1. **Knowledge Base Querying**. During runtime, the Knowledge AI system can query the structured knowledge base to provide accurate and contextually appropriate responses to user queries.
+2. **Knowledge-based Virtual Agents Building**. Virtual agents utilize the knowledge stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the Knowledge Sources.
 
-In the sidebar of Cognigy.AI you should be able to see a new section under **Build** called **Knowledge**:
+### Knowledge AI Management
+
+Knowledge AI management includes a Knowledge Store for organizing many Knowledge Sources, with Chunks extracted and edited using the Chunk Editor to enable accurate responses by the system.
+
+#### Knowledge Store
+
+A Knowledge Store is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
+The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge.png" width="90%" />
+    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-store.png" width="100%" />
 </figure>
 
-Click on it in order to navigate to the **Knowledge Stores** page. If everything was configured properly during setting up the LLMs as well as activating generative AI features, you should now see the following screen:
+#### Knowledge Source
+
+Knowledge Source is the result of transforming various types of files into a structured and accessible format, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
+
+By breaking down the content of these files into smaller units known as chunks,
+the Knowledge Source becomes a specific collection of organized and structured knowledge.
+
+In addition to the main content, you can include other types of information, such as images and links, in the metadata.
+
+Each Knowledge Source must contain no more than 2000 characters.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-stores.png" width="90%" />
+    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/knowledge-source.png" width="100%" />
 </figure>
 
-!!! warning "Configuration mistake"
-    If you can't click a **+New Knowledge Store** button on the Knowledge Stores page, but even see a **Enable in Settings** button, then you have not properly followed the steps above. It is important that you create the two required LLMs (ada-model for text embeddings as well as the generative-ai davincii model) as well as that you activate generative AI features in the Project Settings of your project.
+#### Chunk 
 
-Let's get started and upload some knowledge!
+Chunk is a unit of knowledge extracted from each Knowledge Source. Chunks are smaller, self-contained pieces of information that the Knowledge AI system can process and manage effectively.
 
-1. Click on **+New Knowledge Store** in order to create a new group of knowledge.
-2. Provide a **Name** - like "Sample" - in the sidbar and click on **Save**.
-3. Drag and drop [this file](./images/cognigy-sample.ctxt) onto the large background:
+For instance, a chunk can represent a single paragraph, a sentence, or even a smaller unit of text from a document. By dividing the content into chunks, the system gains better granularity, enabling it to analyze and respond to user queries more efficiently. The extraction of knowledge into chunks enhances the system's ability to match the right information to user questions, resulting in more accurate and contextually appropriate responses.
 
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/upload.png" width="90%" />
-    </figure>
-
-4. Cognigy.AI will now process the uploaded document and extract **Chunks** from it. You will see the status in the [Task Manager]() as well as on the actual **Knowledge Source** list item.
-5. Click on the list item once the file was completely processed - you will now see the **Chunks** that Cognigy.AI has extracted in the **Chunk Editor**.
+Metadata can contain no more than 20 key-value pairs per chunk and supports simple data types,
+such as, number, string, boolean. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk-editor.png" width="90%" />
+    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk.png" width="100%" />
 </figure>
 
-Our Chunk Editor allows our customers to fine-tune their Knowledge within our platform. It is often hard or even impossible to change the content of source-documents especially if they have not been specifically crafted for ingestion into a system like Knowledge AI. More information on the Chunk Editor in the sections below.
+#### Chunk Editor
 
-### Query Knowledge AI
+A Chunk Editor is a tool that helps you to interact with and manage the individual chunks. 
+The Editor provides a user-friendly interface that enables you to manipulate the content within each chunk.
+Users can modify the text, add new information, delete sections,
+or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
 
-The last step in our Quickstart guide is to query the Knowledge AI solution during [Flow]() execution.
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk-editor.png" width="100%" />
+</figure>
+
+## Query Knowledge AI
 
 1. Navigate to **Build > Flows** and create a new Flow.
-2. A **Search Extract Output** Flow Node to your Flow.
-3. Open the Flow Node and select which **Knowledge Store** the Flow Node should use and click **Save Node**.
+2. In the **Flow** editor, add a **Search Extract Output** Node.
+3. In the **Node** editor, and select the knowledge store, which you created recently.
+4. Select one of the following modes:
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
 
-    <figure>
-      <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/configure-search-extract-output.png" width="90%" />
-    </figure>
+     <figure>
+       <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/configure-search-extract-output.png" width="100%" />
+     </figure>
+   
+5. Click **Save Node**. 
+6. Proceed to the Interaction Panel and send the `Can Cognigy connect to a Contact Center?` question.
 
-4. Open the Interaction Panel and type in the question "Can Cognigy connect to a Contact Center?" and send it.
-5. You should get a response which was crafted based on the ingested Knowledge!
+You will receive a response generated from the absorbed Knowledge.
 
-Congratulations 🔥 - you are done with our Quickstart! Go ahead and read through the other sections on this page to learn more about our Knowledge AI solution.
-
-
-## Overview
-Working with the Knowledge AI has two phases similar to working with Intents - Knowledge needs to be ingested & prepared for usage and will then be queried once fully integrated in [Flows]() during runtime.
-
-The following steps happen during "ingestions":
-
-1. **Raw information is provided**
-
-    In this step Cognigy.AI receives access to raw information for instance by receiving your PDFs that contain your knowledge.
-
-2. **Knowledge Chunk extraction**
-
-    In this step a collection of tools is being used to extract text as well as meta-data from your raw information. Chunks have a maximum length of **2000 characters** and will be accessible for modification in our Chunk Editor.
-
-1. **Vectorisation**
-
-    In this step the text of your Knowledge Chunks will be encoded into numbers by leveraging an Embedding machine learning model. Embeddings are high-dimensional vectors which encode the meaning and similarity of words into a numeric representation. Cognigy.AI will store those vectors in a specialized database internally.
-
-Todo: Explain "query steps + add a diagram showing those steps mentioned above"
-
-## Manage Knowledge
-
-### Knowledge Stores
-Todo
-
-- explain why we have Knowledge Stores
-- explain the limitations (how many you can have right now)
-
-### Knowledge Sources
-Todo
-
-- explain why we have Knowledge Sources
-- explain meta-data
-- give an overview of the different types of sources (mention CLI?)
-- explain the limitations (how many sources you can have; which file formats are supported; whats coming)
-
-### Chunk Editor
-Todo
-
-- explain what the Chunk Editor is
-- explain why the Chunk Editor is so important (other solutions: black box - our solution: full transparency)
-- explain meta-data
-
-## Search, Extract & Output
-Todo
-
-- more details about the search extract output Flow Node
+To learn more about the Search Extract Output Node, refer to the [related article](../flow-nodes/other-nodes/search-extract-output.md).
 
 ## FAQ
 
-Todo - compile a list of FAQs
+**Q1**: Will Knowledge AI resources be part of Snapshots?
 
-**Q1**: When will Knowledge AI be available publicly?
+**A1**: Yes, we are working on adding Knowledge Stores, Sources & Chunks, including meta-data, to Cognigy Snapshots.
 
-**A1**: ???
+**Q2**: Will Knowledge AI be free of charge?
 
-**Q2**: Will Knowledge AI resources be part of Snapshots?
-
-**A2**: Yes, we are working on adding Knowledge Stores, Sources & Chunks including meta-data to Cognigy Snapshots.
-
-**Q3**: Will Knowledge AI be free of charge?
-
-**A3**: No. We will provide pricing information until the end of August.
+**A2**: No, we will provide pricing information by the end of August.
 
 ## More information
 
+- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
 - [LLM](../resources/build/llm.md)
 - [Generative AI](../generative-ai.md)
