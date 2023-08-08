@@ -111,4 +111,4 @@ You have now completed the setup for an additional Inbox.
 
 For more, visit our Live Agent documentation here: 
 
-- [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)
+- [Live Agent Overview]({{config.site_url}}live-agent/overview/)

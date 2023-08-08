@@ -9,7 +9,20 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.54-blue.svg)](../../release-notes/4.54.md)
 
-_Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. These logs record important user activities, system events, and configuration changes, providing details for security and auditing purposes. With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. The logs include events such as `create`, `update`, and `delete` for [Inboxes](inboxes.md) and [Automation Rules](automation-rules.md).
+_Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. 
+
+These logs record important user activities, system events, and configuration changes, providing details for security and auditing purposes. 
+
+With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. 
+
+The logs include events such as `create`, `update`, and `delete` for the following entities:
+
+- [Assist Bots](./../conversation/assist-bot.md)
+- [Automation Rules](automation-rules.md)
+- [Inboxes](inboxes.md)
+- [Inbox Collaborators](inboxes.md#inbox-collaborators)
+- [Inbox Webhooks](inboxes.md#inbox-settings)
+- [Teams](teams.md)
 
 Only users with the `Administrator` role can access these logs. 
 
@@ -35,3 +48,22 @@ To view audit logs, follow these steps:
 2. Go to **Settings > Audit Logs**.
 
 You will see a list of log entries containing user and system events.
+
+### View Changes
+
+For actions, you can view details on any changes that were made.
+
+To do this, follow these steps:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > **Audit Logs**.
+3. Select a log from the list by clicking on it.
+
+A window will open displaying the details of the changes.
+
+For an `update` action, the **Before** section presents the original values or configuration, while the **After** section displays the new values after the update.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-audit-logs-update-inbox-changes.png" width="100%" alt="Audit Logs Changes" />
+  <figcaption>Audit Logs Changes</figcaption>
+</figure>

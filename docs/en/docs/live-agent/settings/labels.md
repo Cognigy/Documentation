@@ -1,51 +1,66 @@
 ---
- title: "Labels" 
- slug: "labels" 
- hidden: false 
+title: "Labels" 
+slug: "labels"
+description: "Labels are tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation."
+hidden: false 
 ---
 # Labels
 
-Labels help you to categorize and prioritize Conversations. You can assign a Label to a Conversation from the side panel.
+_Labels_ are tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation.
 
-Labels are tied to the account and can be used to create custom workflows in your organization. You can assign custom colors to a Label. This makes it easier to identify the Label. You will be able to display the Label on the sidebar to filter Conversations quickly.
+They can be used to create custom workflows, to make conversations easier to identify, filter, and organize.
 
-Click on the sidebar **Settings** on the Live Agent Dashboard.
+Only Administrators and Supervisors can create, edit, and delete labels.
 
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-dashboard-settings.png"  alt="Live Agent Dashboard Settings" />
-  <figcaption>Live Agent Dashboard Settings</figcaption>
-</figure>
+### Create a Label
 
+To create a label within Live Agent, do the following:
 
-Click on the sidebar **Labels** and then click Add Label on the right-hand side.
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Labels**.
+4. At the top right of the window, click **Add label**.
+5. In the **Add label** window, do the following, fill in the following fields:
+    - **Label Name** — a name for the label to identify its category. Only letters, numbers, hyphens and underscores are allowed. For example, `Premium_Customer`.        
+    - **Description** — a brief explanation of the label's meaning. For example, `This issue needs to be handled with priority`.  
+    - **Level** — a level of access to objects where the label is applicable. Select one of the following levels: 
+        - **Global** — the label is available for all Teams and Inboxes. 
+        - **Team** — the label is available only for a specific Team. Select a Team from the **Team** list. Note that you cannot select multiple Teams.
+        - **Inbox** — the label is available only for a specific Inbox. Select an Inbox from the **Inbox** list. Note that you cannot select multiple Inboxes.
+    - **Color** — a color for the label to make it visually identifiable. Select your desired color, click the small square again to confirm your selection.
+    - **Show Label on Sidebar** — the option determines whether a label will be displayed on the sidebar. By using the label on the sidebar, you can filter conversations.
+6. Click **Create**.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-labels-home.png" width="100%" alt="Live Agent Labels Home Screen" />
-  <figcaption>Labels</figcaption>
-</figure>
+The label will be created, appear under the **Labels** section on the sidebar, and will be available to [add to Conversations](#add-a-label-to-a-conversation).
 
+!!! tip
+    It is good practice to give meaningful names to labels, and to use chosen colors to easily identify visually which categories, or topics, a conversation belongs to.
 
-A screen will open where you can design your Labels. Make sure to give meaningful names to the Labels and different colors so that you can easily identify in one look to which category the ticket/issue belongs.
+### Edit a Label
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-labels-add-label-dialog.png" width="100%" alt="Live Agent Add Label detail screen" />
-  <figcaption>Label Details</figcaption>
-</figure>
+To edit a label within Live Agent, do the following:
 
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Labels**.
+4. On the **Labels** page, to the right of the label you want to change, click **Edit**. 
+5. In the **Edit label** window, update the fields as needed.
+6. Click **Edit**.
 
-| Field Name            | Value                                                                    | Remarks                                                                                            |
-|-----------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Label Name            | Assign a name for the Label to identify its category                     | For example,: Premium_Customer          Only letters, numbers, hyphens and underscores are allowed |
-| Description           | Give a short description of what the Label represents                    | For example,: This customer issue is to be resolved with priority                                  |
-| Color                 | Select a color for the Label for easy  identification                    | After selection, click on the small square again                                                   |
-| Show Label on Sidebar | Select this option if you want the Label to  be displayed on the sidebar | This will help in easy identification of the Conversations                                         |
+The label fields and settings will be updated.
 
-Click on Create. A "Label added successfully" message will be displayed. The new Label has been created. You can create as many Labels as you need. Labels can be used across multiple Teams.
+### Delete a Label
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-labels-edit-delete-label.png" width="100%" alt="Live Agent Label setting screen" />
-  <figcaption>Label Settings</figcaption>
-</figure>
+To delete a label within Live Agent, do the following:
 
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Labels**.
+4. On the **Labels** page, to the right of the label you want to delete, click **Delete**.
+5. Confirm deletion by clicking **Yes, Delete**.
 
-You can edit or delete Labels as necessary.
+The label will be deleted and no longer under the **Labels** section on the sidebar, and will no longer be available to add to Conversations. Also, the label will be removed from the conversations where it was added earlier.
+
+### Add a Label to a Conversation
+
+To start using Labels in Conversations, go to [Assign Labels](./../conversation/conversation-workflow.md#assign-labels).
