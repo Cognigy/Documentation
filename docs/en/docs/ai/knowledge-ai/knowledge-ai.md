@@ -1,6 +1,7 @@
 ---
 title: "Knowledge AI (Beta)"
 slug: "Knowledge AI (Beta)"
+description: ""
 hidden: false
 ---
 
@@ -12,12 +13,12 @@ hidden: false
     You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
 
 Knowledge AI is commonly used in Natural Language Processing (NLP) and Conversational AI to enhance the capabilities of virtual assistants, chatbots, and other AI-driven systems. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more.
-By accessing and understanding vast knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
+By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
 With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
 Instead, Cognigy Knowledge AI technology allows you to upload your existing knowledge as documents,
-such as .pdf, .txt, .ctxt, and .docs files.
+such as PDF, text, ctext, and DOCX files.
 This technology extracts meaningful information from these documents
 and makes it accessible to Flow designers via the Knowledge AI Nodes.
 This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
@@ -26,7 +27,7 @@ and simplifying the process of creating sophisticated conversational experiences
 
 ## Prerequisites
 
-Before using this feature, you need to create an account in one of the Knowledge AI Providers:
+Before using this feature, create an account in one of the Knowledge AI Providers:
 
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
@@ -59,64 +60,68 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
 6. Click **Next**.
-7. On the new page, upload the following file in the `.ctxt` format:
+7. On the new page, select the **Cognigy CTXT** type and upload the following file in the `.ctxt` format:
 
-??? info "Sample"
+    ??? info "Sample"
+           
+        ```txt
+        `version: 1`
+        `sourceTitle: Cognigy`
+        `sourceLink: www.cognigy.com`
        
-    ```txt
-    `version: 1`
-    `sourceTitle: Cognigy`
-    `sourceLink: www.cognigy.com`
-   
-    # Frequently Asked Questions
-    ## What Is Conversational AI?
-    Conversational AI describes technologies that enable automated, human-like interactions between ourselves and machines. We interact with computers that use Natural Language Processing (NLP) and Machine Learning (ML) to interpret meaning and provide useful responses. We use our own language to express our intent instead of using hierarchical menus.
-    `sourceTitle: Cognigy.com`
-    `sourceLink: https://www.cognigy.com/faq`
-   
-    ## What is a Chatbot/ a Virtual Assistant
-    Chatbots, Digital Assistants and Virtual Assistants are terms often used interchangeably to describe a user interface, i.e. a chat box on a website or a smart speaker, as well as the intelligence that drives the automated conversation. Chatbot is a general term but is often reserved for static interactions, such as a basic Q & A. “Digital Assistant“ or “Virtual Assistant“ is used to describe more complex interactions between a user, a sophisticated reasoning engine and back-end systems.
-   
-    ### What is Conversational Automation?
-    Conversational Automation is a term that distinguishes an informational experience from an experience that accomplishes an action on behalf of a user. Conversational automation walks a user through the steps required to check order status, initiate a password reset, file a support ticket or make a reservation, for example.
-    `sourceLink: https://www.cognigy.com/faq`
-   
-    # Cognigy AI Plattform
-    `sourceLink1: https://www.cognigy.com/platform/cognigy-ai`
-    `sourceLink2: https://www.cognigy.com/`
-   
-    ## Plug-and-Play with Your Contact Center Ecosystem
-    ### Pre-build Connections
-    Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. `Cognigy.AI` seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-    ### Tailored Connections
-    Or develop your tailored integration fast using our powerful Extension Framework
-    `image: https://www.cognigy.com/hs-fs/hubfs/Integration%20Architecture-2023.07.png?width=950&height=427&name=Integration%20Architecture-2023.07.png`
-    `date: 01/01/2023`
-   
-    ## Turnkey Contact Center Connectivity
-    Readily embed Cognigy.AI into your contact center infrastructure– phone, digital, live chat, agent desktop, and more.
-    `sourceLink: https://www.cognigy.com/platform/cognigy-ai`
-   
-    ### One-Click Backend Integrations
-    With our built-in Marketplace, you're just a few clicks away from connecting back-office systems to automate processes and speed up resolutions.
-   
-    #### 25+ Prebuilt Channel Connectors
-    Build your workflow once and populate it on any channel (web, phone, messaging) within seconds to enable consistent experiences everywhere
-    `last_edited: 01/02/2023`
-   
-    Cognigy.AI `addedLink: www.cognigy.com` - Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. Cognigy.AI seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-    Or develop your tailored integration fast using our powerful Extension Framework.
-    ```
+        # Frequently Asked Questions
+        ## What Is Conversational AI?
+        Conversational AI describes technologies that enable automated, human-like interactions between ourselves and machines. We interact with computers that use Natural Language Processing (NLP) and Machine Learning (ML) to interpret meaning and provide useful responses. We use our own language to express our intent instead of using hierarchical menus.
+        `sourceTitle: Cognigy.com`
+        `sourceLink: https://www.cognigy.com/faq`
+       
+        ## What is a Chatbot/ a Virtual Assistant
+        Chatbots, Digital Assistants and Virtual Assistants are terms often used interchangeably to describe a user interface, i.e. a chat box on a website or a smart speaker, as well as the intelligence that drives the automated conversation. Chatbot is a general term but is often reserved for static interactions, such as a basic Q & A. “Digital Assistant“ or “Virtual Assistant“ is used to describe more complex interactions between a user, a sophisticated reasoning engine and back-end systems.
+       
+        ### What is Conversational Automation?
+        Conversational Automation is a term that distinguishes an informational experience from an experience that accomplishes an action on behalf of a user. Conversational automation walks a user through the steps required to check order status, initiate a password reset, file a support ticket or make a reservation, for example.
+        `sourceLink: https://www.cognigy.com/faq`
+       
+        # Cognigy AI Plattform
+        `sourceLink1: https://www.cognigy.com/platform/cognigy-ai`
+        `sourceLink2: https://www.cognigy.com/`
+       
+        ## Plug-and-Play with Your Contact Center Ecosystem
+        ### Pre-build Connections
+        Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. `Cognigy.AI` seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
+        ### Tailored Connections
+        Or develop your tailored integration fast using our powerful Extension Framework
+        `image: https://www.cognigy.com/hs-fs/hubfs/Integration%20Architecture-2023.07.png?width=950&height=427&name=Integration%20Architecture-2023.07.png`
+        `date: 01/01/2023`
+       
+        ## Turnkey Contact Center Connectivity
+        Readily embed Cognigy.AI into your contact center infrastructure– phone, digital, live chat, agent desktop, and more.
+        `sourceLink: https://www.cognigy.com/platform/cognigy-ai`
+       
+        ### One-Click Backend Integrations
+        With our built-in Marketplace, you're just a few clicks away from connecting back-office systems to automate processes and speed up resolutions.
+       
+        #### 25+ Prebuilt Channel Connectors
+        Build your workflow once and populate it on any channel (web, phone, messaging) within seconds to enable consistent experiences everywhere
+        `last_edited: 01/02/2023`
+       
+        Cognigy.AI `addedLink: www.cognigy.com` - Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. Cognigy.AI seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
+        Or develop your tailored integration fast using our powerful Extension Framework.
+        ```
+
+8. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
+9. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created.
+10. Click **Next**.
 
 Complete installation and start investigating knowledge AI project structure.   
 
 ## Investigate a Knowledge AI project 
 
-Working with Knowledge AI involves two phases similar to Intents. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime once it's fully integrated into Flows.
+Working with Knowledge AI involves two phases similar to Intent workflow. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime once it's fully integrated into Flows.
 
 **First phase:**
 
-1. **Raw Information Upload**. Cognigy.AI receives access to raw information via uploaded .pdf, .txt, .ctxt, or .docs files that contain knowledge.
+1. **Raw Information Upload**. Cognigy.AI receives access to raw information via uploaded files that contain knowledge.
 2. **Knowledge Chunk Extraction**. A collection of tools that extracts text and metadata from the raw information. Chunks are accessible for modification in the Chunk Editor.
 3. **Vectorization**. The text of Knowledge Chunks is encoded into numeric representations using an Embedding machine learning model. Embeddings are high-dimensional vectors that encode word meaning and similarity into numeric representations. Cognigy.AI stores these vectors in a specialized internal database for quick access during runtime.
 
@@ -147,6 +152,15 @@ the Knowledge Source becomes a specific collection of organized and structured k
 
 In addition to the main content, you can include other types of information, such as images and links, in the metadata.
 
+The following types of files are supported:
+
+- `.ctxt` (recommended) 
+- `.txt`
+- `.pdf`
+- `.docx`
+
+The `.ctxt` effectively splits the text into chunks, provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
+
 Each Knowledge Source must contain no more than 2000 characters.
 
 <figure>
@@ -168,7 +182,7 @@ such as, number, string, boolean.
 
 #### Chunk Editor
 
-A Chunk Editor is a tool that helps you to interact with and manage the individual chunks. 
+A Chunk Editor is a tool that helps you interact with and manage chunks. 
 The Editor provides a user-friendly interface that enables you to manipulate the content within each chunk.
 Users can modify the text, add new information, delete sections,
 or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
@@ -177,11 +191,11 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
     <img class="image-center" src="{{config.site_url}}ai/knowledge-ai/images/chunk-editor.png" width="100%" />
 </figure>
 
-## Query Knowledge AI
+## Search, Extract and Output Knowledge
 
 1. Navigate to **Build > Flows** and create a new Flow.
 2. In the **Flow** editor, add a **Search Extract Output** Node.
-3. In the **Node** editor, and select the knowledge store, which you created recently.
+3. In the **Node** editor, and select the knowledge store that you recently created.
 4. Select one of the following modes:
     - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
     - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
@@ -192,7 +206,7 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
      </figure>
    
 5. Click **Save Node**. 
-6. Proceed to the Interaction Panel and send the `Can Cognigy connect to a Contact Center?` question.
+6. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
 You will receive a response generated from the absorbed Knowledge.
 
