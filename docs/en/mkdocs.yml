@@ -514,6 +514,8 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
+    - Agent Queue:
+        - live-agent/conversation/agent-queue.md
     - Routing:
         - live-agent/conversation/conversation-routing.md
     - Assist Bot:
