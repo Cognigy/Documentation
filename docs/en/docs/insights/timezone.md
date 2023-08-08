@@ -15,7 +15,7 @@ By default, Insights relies on the time zone preferences of your device accordin
 
 ## Supported Time Zones
 
-With the release of Insights 4.58, a significant change was made to the data-fetching process from the database.
+With the release of Insights <version>, a significant change was made to the data-fetching process from the database.
 Before this version, the system fetched the entire dataset from the database based on the applied filters and time zone,
 which often resulted in slow queries and timeouts due to the large amount of data being processed.
 
