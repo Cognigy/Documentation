@@ -16,8 +16,8 @@ Masking data is important for protecting the privacy of users and their sensitiv
 
 The Blind Mode Node provides options for masking data within the logging, analytics, Intent Trainer records, or conversations entirely. Using this Node, you can ensure that user information remains secure and private.
 
-!!! note
-    The user input that triggers the Blind Mode Node will still be unmasked in the logs, analytics, and Intent Trainer records, as they are evaluated before the Blind Mode Node is executed.
+[//]: # ( This Note is coommented out for 51364 !!! note
+    The user input that triggers the Blind Mode Node will still be unmasked in the logs, analytics, and Intent Trainer records, as they are evaluated before the Blind Mode Node is executed.)
 
 ## Settings
 
