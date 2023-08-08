@@ -14,7 +14,7 @@ The queue is visible to agents on the **Mine** tab of the Conversation page, whe
 The provided examples show how the agent queue works:
 
 !!! note
-    The [conversation limits](../account-settings.md#conversation-limit-per-agent) and specific queue behavior may vary depending on the Live Agent configuration and settings in use.
+    The [conversation limits](../settings/account-settings.md#conversation-limit-per-agent) and specific queue behavior may vary depending on the Live Agent configuration and settings in use.
 
 **Example 1**
 

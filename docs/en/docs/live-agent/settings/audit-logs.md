@@ -7,7 +7,7 @@ hidden: false
 
 # Audit Logs
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.54-blue.svg)](../../release-notes/4.54.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
 
 _Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. 
 

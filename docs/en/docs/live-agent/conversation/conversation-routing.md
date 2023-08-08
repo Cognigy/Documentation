@@ -14,7 +14,7 @@ In Live Agent, there are two routing modes:
 - [Manual](#manual-mode)
 - [Automatic](#automatic-mode)
 
-Conversation routing can consider a [limit per agent](../account-settings.md#conversation-limit-per-agent) applied to both Manual and Automatic modes and can only be set up for all Inboxes.
+Conversation routing can consider a [limit per agent](../settings/account-settings.md#conversation-limit-per-agent) applied to both Manual and Automatic modes and can only be set up for all Inboxes.
 
 ## Manual Mode
 
@@ -96,7 +96,7 @@ The changes will be applied.
 
 #### Consider Conversation Count
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../release-notes/4.57.md)
 
 By default, [Automatic Assignment](#automatic-assignment) does not take into account the number of conversations being handled by each agent. 
 In this case, new conversations may be assigned to any available agent without considering their current workload.
