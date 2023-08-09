@@ -40,6 +40,10 @@ The file will be sent to the user and will appear in the chat. The user can down
 
 ### How to Request an Attachment
 
+When using a Webchat Endpoint with Live Agent, human agents can request an attachment from a user.
+
+Other Endpoint channels do not support the attachment request functionality. Users can still upload a file using their built in app file upload features.
+
 To request an attachment in a conversation within Live Agent, do the following:
 
 1. Go to Live Agent.
@@ -53,7 +57,7 @@ To request an attachment in a conversation within Live Agent, do the following:
 When the file has been uploaded, you can view and download this file directly from the chat.
 
 !!! note "File Upload Plugin"
-    When using a Webchat Endpoint, you also need to use the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload). 
+    For Webchat Endpoints, you will also need to use the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload). 
 
 ## How to download an Attachment
 
