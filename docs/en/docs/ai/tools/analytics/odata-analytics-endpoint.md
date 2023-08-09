@@ -398,7 +398,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### LiveAgentEscalations
 
-!!! note "Available from Cognigy.AI Version X.Y.Z"
+!!! note "Available from Cognigy.AI Version 4.49.0"
 
 **Description**
 
@@ -418,7 +418,7 @@ When retrieving this collection, the endpoint will return the following fields:
 | Field Name        | Description                                         | Type     | Example                                                          |
 | ----------------- | --------------------------------------------------- | -------- | ---------------------------------------------------------------- |
 | _id               | Unique identifier for the record                    | String   | 649be849b7fd71d48b9bacc8                                         |
-| organisation      | Name of the organization associated with the record | String   | cognigy                                                          |
+| organisationId    | Name of the organization associated with the record | String   | 5eb4a49d426cd3d05f2892a9                                         |
 | projectId         | Identifier of the project related to the record     | String   | 6409b6c53c9687b5e78e6403                                         |
 | sessionId         | Identifier of the session                           | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
 | timestamp         | Date and time when the record was created           | DateTime | 2023-06-28T07:59:04.628Z                                         |
