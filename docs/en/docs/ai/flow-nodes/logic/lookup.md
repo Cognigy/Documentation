@@ -117,14 +117,6 @@ By changing the lookup type to **CognigyScript**, the Flow will select a case th
 
 By changing the lookup type to **Call Event Status**, the Flow will select a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
 
-In the child LookUp node, you can operate the following Voice Gateway events:
-
-- Recognized Speech
-- Recognized DTMF
-- Call Created
-- Call Reconnected
-- Call Failed
-- User Input Timeout
-- Answering Machine Detection
+In the child Lookup Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
 
 More information about these events you can find in the [Voice Gateway Events](../../../voicegateway/references/events/overview.md) reference.

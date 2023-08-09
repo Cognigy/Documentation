@@ -64,7 +64,7 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
-  - 4,57:
+  - 4.57:
     - release-notes/4.57.md
   - 4.56:
     - release-notes/4.56.md
@@ -257,6 +257,7 @@ nav:
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
+        - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -516,6 +517,8 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
+    - Agent Queue:
+        - live-agent/conversation/agent-queue.md
     - Routing:
         - live-agent/conversation/conversation-routing.md
     - Assist Bot:
@@ -577,17 +580,24 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+    - Outbound Call Routing:
+      - voicegateway/webapp/outbound-call-routing.md
   - References:
     - Voice Gateway Events:
         - voicegateway/references/events/overview.md
-        - voicegateway/references/events/RECOGNIZED_SPEECH.md
-        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
         - voicegateway/references/events/CALL_CREATED.md
-        - voicegateway/references/events/CALL_RECONNECTED.md
         - voicegateway/references/events/CALL_COMPLETED.md
         - voicegateway/references/events/CALL_FAILED.md
+        - voicegateway/references/events/CALL_RECONNECTED.md
+        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/RECOGNIZED_SPEECH.md
+        - voicegateway/references/events/TRANSFER_DIAL_ERROR.md
+        - voicegateway/references/events/TRANSFER_DIAL_SUCCESS.md
+        - voicegateway/references/events/TRANSFER_REFER_ERROR.md
+        - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
+        - voicegateway/references/events/USER_BUSY.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
-        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
     - TTS and STT Vendors:
         - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:

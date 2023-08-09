@@ -8,7 +8,7 @@
 
 ## Set up a Flow for Handover
 
-Once you have [**Set up your Endpoint for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/), you can set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent.
+Once you have [Set up your Endpoint for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/), you can set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent.
 
 Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
@@ -17,7 +17,7 @@ Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent No
   <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
 </figure>
 
-Within the *Handover to Agent Node* you need to set the **Live Agent Inbox ID** field under **Live Agent Settings** with the _Inbox ID_ found in the [**previous step**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/#account-id-and-api-key-in-live-agent).
+Within the **Handover to Agent** Node you need to set the **Live Agent Inbox ID** field under **Live Agent Settings** with the _Inbox ID_ found in the [previous step]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/#account-id-and-api-key-in-live-agent).
 
 ## Login to Live Agent and Test Conversations
 <div class="divider"></div>
@@ -70,4 +70,4 @@ Congratulations! You have had your first Conversation in Live Agent!
 ## Next Steps - Adding Agents and Admins
 Next, you can add more Agents and Admins, and assign them to Inboxes in Live Agent:
 
-- [**Adding Agents and Admins to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/)
+- [Adding Agents and Admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/)

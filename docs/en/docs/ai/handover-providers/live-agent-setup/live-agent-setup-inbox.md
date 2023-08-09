@@ -6,7 +6,7 @@
 # Set up the Inbox for Live Agent
 <div class="divider"></div>
 
-Now that you have [**Set up Live Agent for your Organisation**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/), you can set up your default Inbox for Live Agent.
+Now that you have [Set up Live Agent for your Organisation]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/), you can set up your default Inbox for Live Agent.
 
 ## Agent Settings
 <div class="divider"></div>
@@ -38,7 +38,7 @@ Once the Inbox is created, you will find the *Default Inbox ID* above the now di
 <div class="divider"></div>
 Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/) to Live Agent:
 
-- [**Set up your Endpoint and Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
+- [Set up your Endpoint and Flow for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
 
 ## Having Trouble?
 <div class="divider"></div>

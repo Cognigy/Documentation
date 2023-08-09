@@ -2,7 +2,7 @@
 title: "Speech Services" 
 slug: "vg-webapp-speech-services" 
 description: "Speech Services allow adding multiple Speech Vendors to the Voice Gateway portal"
-hidden: true 
+hidden: false
 ---
 
 # Speech Services
