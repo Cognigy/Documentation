@@ -177,6 +177,8 @@ The results of the GET request are stored in the context of the flow. You can re
 ### Payload
 Here you can define the payload of your POST, PUT or PATCH request. You can choose between JSON (standard) and Text.
 
+When using a JSON payload, to access to the Cognigy objects of Input, Context, or Profile, see [CognigyScript](../../tools/cognigy-script.md#for-json-arguments) for an example payload.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b364540-http-post-payload.jpg" width="100%" />
   <figcaption>JSON as a POST, PUT or PATCH Request Payload</figcaption>
