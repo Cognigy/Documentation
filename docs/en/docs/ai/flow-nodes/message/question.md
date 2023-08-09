@@ -19,7 +19,7 @@ A Question Node is used to ask a question that requests specific information fro
 After a question was asked and the user provided an answer, the answer is validated according to its Type. If it passes, the answer is considered valid, is stored and the conversation continues.
 
 !!! note "Attached Flows"
-    When a user input is reviewed it will be scored by the NLU. If an attached Flow has an Intent which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
+    When a user input is recieved it will be scored by the NLU. If an attached Flow has an Intent which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
