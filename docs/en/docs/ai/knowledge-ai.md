@@ -1,7 +1,7 @@
 ---
 title: "Knowledge AI (Beta)"
 slug: "Knowledge AI (Beta)"
-description: "Knowledge AI technology allows you to upload your existing knowledge as documents, such as PDF, text, ctext, and DOCX files. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes."
+description: "Cognigy Knowledge AI technology empowers you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes."
 hidden: false
 ---
 
@@ -9,16 +9,14 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
 
-!!! note
-    You are subject to the terms of those once you are using the feature. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
+{! _includes/ai/terms-of-use.md !}
 
 Knowledge AI is commonly used in Natural Language Processing (NLP) and Conversational AI to enhance the capabilities of virtual assistants, chatbots, and other AI-driven systems. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more.
 By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
 With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](nlu/nlu-overview/ml-intents.md) and [Default Replies](nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI technology allows you to upload your existing knowledge as documents,
-such as PDF, text, ctext, and DOCX files.
+Instead, Cognigy Knowledge AI technology allows you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format.
 This technology extracts meaningful information from these documents
 and makes it accessible to Flow designers via the Knowledge AI Nodes.
 This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
@@ -39,12 +37,12 @@ For the Knowledge Search case, you need only the `text-embedding-ada-002` model.
 You can create a preconfigured knowlege store. To do this, follow these steps:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select **Knowledge**. The knowledge widget will be opened.
-3. Continue following the widget instructions.
-4. Specify a unique name and select a model, which you want to use for the knowledge search case.
+2. In the left-side menu, select **Knowledge**. The knowledge wizard will be opened.
+3. Continue following the wizard instructions.
+4. Specify a unique name and select an embedding model.
 
     <figure>
-      <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-ai-widget.png" width="100%" />
+      <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-ai-wizard.png" width="100%" />
     </figure>
 
 5. Click **Configure Connection** and enter credentials for the model:
@@ -60,7 +58,7 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
 6. Click **Next**.
-7. On the new page, select the **Cognigy CTXT** type and upload the following file in the `.ctxt` format:
+7. Copy and save file in the `.ctxt` format:
 
     ??? info "Sample"
            
@@ -109,15 +107,16 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         Or develop your tailored integration fast using our powerful Extension Framework.
         ```
 
-8. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
-9. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created.
-10. Click **Next**.
+8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file.
+9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
+10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created.
+11. Click **Next**.
 
-Complete installation and start investigating knowledge AI project structure.   
+Complete installation and start exploring knowledge AI project structure.   
 
-## Investigate a Knowledge AI project 
+## Explore a Knowledge AI project 
 
-Working with Knowledge AI involves two phases similar to Intent workflow. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime once it's fully integrated into Flows.
+Working with Knowledge AI involves two phases similar to Intent workflow. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime.
 
 **First phase:**
 
@@ -127,17 +126,19 @@ Working with Knowledge AI involves two phases similar to Intent workflow. The fi
 
 **Second phase:**
 
-1. **Knowledge Base Querying**. During runtime, the Knowledge AI system can query the structured knowledge base to provide accurate and contextually appropriate responses to user queries.
-2. **Knowledge-based Virtual Agents Building**. Virtual agents utilize the knowledge stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the Knowledge Sources.
+1. **Knowledge Base Querying**. During runtime, the Knowledge AI system can query the knowledge base to provide accurate and contextually appropriate responses to user queries.
+2. **Knowledge-based Virtual Agents Building**. Virtual agents utilize the knowledge stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the uploaded files.
 
 ### Knowledge AI Management
 
-Knowledge AI management includes a Knowledge Store for organizing many Knowledge Sources, with Chunks extracted and edited using the Chunk Editor to enable accurate responses by the system.
+Knowledge AI management involves a Knowledge Store used to organize numerous Knowledge Sources. Chunks, which are extracted from these sources, are then edited using the Chunk Editor, enabling the system to provide accurate responses.
 
 #### Knowledge Store
 
-A Knowledge Store is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
+A _Knowledge Store_ is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
 The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
+
+The maximum number of stores per project is 10.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-store.png" width="100%" />
@@ -145,12 +146,11 @@ The Knowledge Store helps streamline the knowledge management process by groupin
 
 #### Knowledge Source
 
-Knowledge Source is the result of transforming various types of files into a structured and accessible format, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
+A _Knowledge Source_ represents the output of transforming various types of files into a structured and accessible format. Each file corresponds uniquely to a specific Knowledge Source, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
 
-By breaking down the content of these files into smaller units known as chunks,
-the Knowledge Source becomes a specific collection of organized and structured knowledge.
+By breaking down the content of these files into smaller units known as _chunks_, the Knowledge Source becomes a specific collection of organized and structured knowledge.
 
-In addition to the main content, you can include other types of information, such as images and links, in the metadata.
+In addition to the main content, you can include other types of information, such as links and dates, in the metadata.
 
 The following types of files are supported:
 
@@ -159,9 +159,9 @@ The following types of files are supported:
 - `.pdf`
 - `.docx`
 
-The `.ctxt` effectively splits the text into chunks, provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
+The `.ctxt` (Cognigy Text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
-Each Knowledge Source must contain no more than 2000 characters.
+The maximum number of sources per store is 10.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-source.png" width="100%" />
@@ -169,12 +169,13 @@ Each Knowledge Source must contain no more than 2000 characters.
 
 #### Chunk 
 
-Chunk is a unit of knowledge extracted from each Knowledge Source. Chunks are smaller, self-contained pieces of information that the Knowledge AI system can process and manage effectively.
+A _Chunk_ is a unit of knowledge extracted from a Knowledge Source. Chunks are smaller, self-contained pieces of information that the Knowledge AI system can process and manage effectively.
 
 For instance, a chunk can represent a single paragraph, a sentence, or even a smaller unit of text from a document. By dividing the content into chunks, the system gains better granularity, enabling it to analyze and respond to user queries more efficiently. The extraction of knowledge into chunks enhances the system's ability to match the right information to user questions, resulting in more accurate and contextually appropriate responses.
 
-Metadata can contain no more than 20 key-value pairs per chunk and supports simple data types,
-such as, number, string, boolean. 
+Each chunk can have associated metadata. Metadata can contain no more than 20 key-value pairs per chunk and supports simple data types such as number, string, and boolean.
+
+The maximum number of chunks per source is 500. Each chunk must contain no more than 2000 characters.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk.png" width="100%" />
@@ -182,7 +183,7 @@ such as, number, string, boolean.
 
 #### Chunk Editor
 
-A Chunk Editor is a tool that helps you interact with and manage chunks. 
+The _Chunk Editor_ is a tool that helps you interact with and manage chunks. 
 The Editor provides a user-friendly interface that enables you to manipulate the content within each chunk.
 Users can modify the text, add new information, delete sections,
 or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
@@ -195,7 +196,7 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 
 1. Navigate to **Build > Flows** and create a new Flow.
 2. In the **Flow** editor, add a **Search Extract Output** Node.
-3. In the **Node** editor, and select the knowledge store that you recently created.
+3. In the **Node** editor, select the knowledge store that you recently created.
 4. Select one of the following modes:
     - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
     - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
