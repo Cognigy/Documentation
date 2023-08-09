@@ -6,7 +6,6 @@
 # Attachments
 
 ## Overview
-****Note:** Description of Attachments, brief summary, use cases (How can these help our users?)
 
 Attachments are files or documents that are sent or received during a conversation between a human agent and a user.
 
@@ -53,24 +52,32 @@ To request an attachment in a conversation within Live Agent, do the following:
 
 When the file has been uploaded, you can view and download this file directly from the chat.
 
-!!! Note When using a Webchat Endpoint, you need to to use the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload). 
+!!! note "File Upload Plugin"
+    When using a Webchat Endpoint, you also need to to use the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload). 
 
 ## How to download an Attachment
 
 To download an attachment within Live Agent, this can be done either in a conversation or the Attachments page.
 
-**Note: Use tabs here (like in the OData page)**
+=== "Attachment Page"
 
-(Attachments page)
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. Go to **Attachments**.
-4. Go to the file you want to download.
-5. In the **ACTIONS** column, click **Download**.  
+    1. Go to Live Agent.
+    2. On the left side of the screen, select **Settings**.
+    3. Go to **Attachments**.
+    4. Go to the file you want to download.
+    5. In the **ACTIONS** column, click **Download**.  
 
-The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
+    The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
 
-(Conversation)
+=== "Conversation Page"
+
+    1. Go to Live Agent.
+    2. On the left side of the screen, select **Conversations**.
+    3. In the **Inboxes** column, select an Inbox.
+    4. Select your conversation.
+    5. Find the attachment in the conversation, click **Download**.
+
+    The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
 
 ## How to delete an Attachment
 
