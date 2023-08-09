@@ -16,7 +16,7 @@ By accessing and understanding knowledge bases, these AI systems can provide mor
 
 With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](nlu/nlu-overview/ml-intents.md) and [Default Replies](nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI technology allows you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format.
+Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format.
 This technology extracts meaningful information from these documents
 and makes it accessible to Flow designers via the Knowledge AI Nodes.
 This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
@@ -131,7 +131,7 @@ Working with Knowledge AI involves two phases similar to Intent workflow. The fi
 
 ### Knowledge AI Management
 
-Knowledge AI management involves a Knowledge Store used to organize numerous Knowledge Sources. Chunks, which are extracted from these sources, are then edited using the Chunk Editor, enabling the system to provide accurate responses.
+Knowledge is organized in a hierarchy of stores, sources, and chunks to enable accurate responses by the system. These hierarchical structures are described below.
 
 #### Knowledge Store
 
@@ -159,7 +159,7 @@ The following types of files are supported:
 - `.pdf`
 - `.docx`
 
-The `.ctxt` (Cognigy Text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
+The `.ctxt` (Cognigy text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
 The maximum number of sources per store is 10.
 
