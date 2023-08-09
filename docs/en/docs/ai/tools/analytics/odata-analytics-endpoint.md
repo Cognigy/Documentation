@@ -415,30 +415,30 @@ The LiveAgentEscalations collection contains records from Live Agent escalations
 
 When retrieving this collection, the endpoint will return the following fields:
 
-| Field Name        | Description                                         | Type     | Example                                                          |
-| ----------------- | --------------------------------------------------- | -------- | ---------------------------------------------------------------- |
-| _id               | Unique identifier for the record                    | String   | 649be849b7fd71d48b9bacc8                                         |
-| organisationId    | Name of the organization associated with the record | String   | 5eb4a49d426cd3d05f2892a9                                         |
-| projectId         | Identifier of the project related to the record     | String   | 6409b6c53c9687b5e78e6403                                         |
-| sessionId         | Identifier of the session                           | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
-| timestamp         | Date and time when the record was created           | DateTime | 2023-06-28T07:59:04.628Z                                         |
-| localeName        | Name of the locale                                  | String   | en                                                               |
-| status            | Current status of the record                        | String   | opened                                                           |
-| inboxId           | Identifier of the inbox associated with the record  | String   | 7983                                                             |
-| inboxName         | Name of the inbox                                   | String   | LA Chatbot-default                                               |
-| teamId            | Identifier of the team                              | String   | 8                                                                |
-| teamName          | Name of the team                                    | String   | IT Support                                                       |
-| labels            | List of labels associated with the record           | Array    | [Hardware]                                                       |
-| agentId           | Identifier of the agent                             | String   | 618cf7687614774ba028dcac                                         |
-| agentName         | Name of the agent                                   | String   | John Smith                                                       |
-| contactId         | Identifier of the contact                           | String   | 649ba8450d5df5cadf8b75b8                                         |
-| endpointName      | Name of the endpoint                                | String   | LA Chatbot                                                       |
-| endpointType      | Type of the endpoint                                | String   | webchat2                                                         |
-| endpointUrlToken  | Token or identifier associated with the endpoint    | String   | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
-| channel           | Channel through which the record was received       | String   | admin-webchat                                                    |
-| localeReferenceId | Identifier for the specific locale reference        | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
-| snapshotId        | Identifier of the snapshot                          | String   | 63ff0cc47a466cab278fd19b                                         |
-| endpsnapshotName  | Name of the snapshot                                | String   | Prod-Snapshot 26.7.23                                            |
+| Field Name        | Description                                               | Type     | Example                                                          |
+| ----------------- | --------------------------------------------------------- | -------- | ---------------------------------------------------------------- |
+| _id               | Unique identifier for the record                          | String   | 649be849b7fd71d48b9bacc8                                         |
+| organisationId    | Identifier of the organization associated with the record | String   | 5eb4a49d426cd3d05f2892a9                                         |
+| projectId         | Identifier of the project related to the record           | String   | 6409b6c53c9687b5e78e6403                                         |
+| sessionId         | Identifier of the session                                 | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
+| timestamp         | Date and time when the record was created                 | DateTime | 2023-06-28T07:59:04.628Z                                         |
+| localeName        | Name of the locale                                        | String   | en                                                               |
+| status            | Current status of the record                              | String   | opened                                                           |
+| inboxId           | Identifier of the inbox associated with the record        | String   | 7983                                                             |
+| inboxName         | Name of the inbox                                         | String   | LA Chatbot-default                                               |
+| teamId            | Identifier of the team                                    | String   | 8                                                                |
+| teamName          | Name of the team                                          | String   | IT Support                                                       |
+| labels            | List of labels associated with the record                 | Array    | [Hardware]                                                       |
+| agentId           | Identifier of the agent                                   | String   | 618cf7687614774ba028dcac                                         |
+| agentName         | Name of the agent                                         | String   | John Smith                                                       |
+| contactId         | Identifier of the contact                                 | String   | 649ba8450d5df5cadf8b75b8                                         |
+| endpointName      | Name of the endpoint                                      | String   | LA Chatbot                                                       |
+| endpointType      | Type of the endpoint                                      | String   | webchat2                                                         |
+| endpointUrlToken  | Token or identifier associated with the endpoint          | String   | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
+| channel           | Channel through which the record was received             | String   | admin-webchat                                                    |
+| localeReferenceId | Identifier for the specific locale reference              | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
+| snapshotId        | Identifier of the snapshot                                | String   | 63ff0cc47a466cab278fd19b                                         |
+| endpsnapshotName  | Name of the snapshot                                      | String   | Prod-Snapshot 26.7.23                                            |
 
 ## Integrations
 
