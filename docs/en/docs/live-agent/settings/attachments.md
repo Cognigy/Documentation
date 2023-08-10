@@ -5,26 +5,17 @@
 ---
 # Attachments
 
-## Overview
 
-Attachments are files or documents that are sent or received during a conversation between a human agent and a user.
+_Attachments_ are files or documents that are sent or received during a conversation between a human agent and a user.
 
 These attachments can include various file types; `jpeg`, `jpg`, `png`, `docx`, `wav`, `ogg`, `pdf`.
 
 Attachments can provide additional information or media, for example: an invoice or a photo related to the issue a customer is facing.
 
-In Live Agent you can perform the following actions with Attachments:
 
-- Upload Attachments
-- Request Attachments
-- Download Attachments
-- Delete Attachments
-- Filter Attachments
-- Open the Conversation of Attachments
+## Upload or Request an Attachment
 
-## How to Upload or Request an Attachment
-
-### How to Upload
+###  Upload an Attachment
 
 To upload a file in a conversation within Live Agent, do the following:
 
@@ -38,7 +29,7 @@ To upload a file in a conversation within Live Agent, do the following:
 
 The file will be sent to the user and will appear in the chat. The user can download this attachment.
 
-### How to Request an Attachment
+### Request an Attachment
 
 When using a Webchat Endpoint with Live Agent, human agents can request an attachment from a user.
 
@@ -56,12 +47,12 @@ To request an attachment in a conversation within Live Agent, do the following:
 
 When the file has been uploaded, you can view and download this file directly from the chat.
 
-!!! note "File Upload Plugin"
-    For Webchat Endpoints, you will also need to use the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload). 
+!!! note
+  If you use [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/), you will also need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files. 
 
-## How to download an Attachment
+## Download an Attachment
 
-To download an attachment within Live Agent, this can be done either in a conversation or the Attachments page.
+To download an attachment within Live Agent, this can be done either in a conversation or the **Attachments** page.
 
 === "Attachment Page"
 
@@ -71,7 +62,6 @@ To download an attachment within Live Agent, this can be done either in a conver
     4. Go to the file you want to download.
     5. In the **ACTIONS** column, click **Download**.  
 
-    The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
 
 === "Conversation Page"
 
@@ -83,7 +73,7 @@ To download an attachment within Live Agent, this can be done either in a conver
 
     The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
 
-## How to delete an Attachment
+## Delete an Attachment
 
 To delete an attachment within Live Agent, this can be done in the Attachments page.
 
@@ -96,7 +86,7 @@ To delete an attachment within Live Agent, this can be done in the Attachments p
 
 The file will be deleted from the Attachments page and will no longer be available in the conversation where it was uploaded.
 
-## How to Filter Attachments
+## Filter Attachments
 
 To filter attachments within Live Agent, this can be done in the Attachments page.
 
@@ -105,20 +95,20 @@ To filter attachments within Live Agent, this can be done in the Attachments pag
 3. Go to **Attachments**.
 4. On the **Attachments** page, click **Filter Attachments**
 5. In the **Filter Attachments** window, select the options you need to filter by: 
-- **Cognigy Session ID**
-- **Cognigy User ID**
-- **Filename**
+    - **Cognigy Session ID**
+    - **Cognigy User ID**
+    - **Filename**
 6. Enter the value you need to filter by and click **Apply filters**.
 
 Optionally, you can add additional filters by clicking  **+ Add Filter**.
 
-The Attachments page will only display results that match the applied filter.
+The **Attachments** page will only display results that match the applied filter.
 
 To drop the filter, click **Clear Filters**.
 
-## How to open the source of the Attachment
+## Open the source of the Attachment
 
-The source can be Inbox, Conversation, or Cognigy Session ID
+The source can be Inbox, Conversation, or Cognigy Session ID.
 
 To investigate a conversation or Inbox where an attachment was uploaded, this can be done in the Attachments page.
 
@@ -127,6 +117,6 @@ To investigate a conversation or Inbox where an attachment was uploaded, this ca
 3. Go to **Attachments**.
 4. Go to the row of the file you want to investigate.
 5. On this row, click one of the following links:
-- **INBOX** - This will navigate to the Inbox of the conversation where the attachment was uploaded.
-- **CONVERSATIONS** - This will navigate to the conversation where the attachment was uploaded.
-- **COGNIGY SESSION ID** - This will navigate to the conversation where the attachment was uploaded.
+    - **INBOX** - the option will navigate you to the Inbox of the conversation where the attachment was uploaded.
+    - **CONVERSATIONS** - the option will navigate you to the conversation where the attachment was uploaded.
+    - **COGNIGY SESSION ID** - the option will navigate you to the conversation where the attachment was uploaded.
