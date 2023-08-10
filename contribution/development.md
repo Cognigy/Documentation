@@ -1,5 +1,5 @@
 # Development
-In order to keep the productivity high when working on our product documentation, we have prepared a convenient workflow which uses a `dockerized development server` which will instantly call mkdocs for you as soon as you change content in the markdown files of this repository.
+In order to keep the productivity high when working on the Cognigy documentation, we have prepared a convenient workflow which uses a `dockerized development server` which will instantly call mkdocs for you as soon as you change content in the markdown files of this repository.
 
 For this workflow to work properly, you need to install `Docker` or `Rancher Desktop` which is available for Linux, MacOSX and Windows. Read more about how you can install Docker on your machine: https://docs.docker.com/get-docker/ or Rancher Desktop: https://rancherdesktop.io/
 

@@ -43,8 +43,8 @@ Cognigy.AI itself is a product offering different groups of functionality:
   <figcaption>Components for Cognigy.AI IDE (orange), Cognigy.AI Runtime (green) & Cognigy Insights (blue)</figcaption>
 </figure>
 
-Cognigy Insights plays a smaller role regarding Cognigy.AI product architecture, hence we skip it on this page. You can learn more about 
-[Insights (Analytics)]({{config.site_url}}insights/cognigy-insights/) in our product documentation dedicated for it.
+Cognigy Insights plays a smaller role regarding Cognigy.AI product architecture, hence we skip it on this page. To learn more, read the  
+[Insights (Analytics)]({{config.site_url}}insights/cognigy-insights/) documentation.
 
 ### IDE - building your Virtual Agents
 A place that allows you to create Virtual Agents and use all the functionality like Flows, Playbooks, Lexicons & Intents. We call this part
