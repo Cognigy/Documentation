@@ -121,3 +121,7 @@ To investigate a conversation or Inbox where an attachment was uploaded, this ca
     - **INBOX** - the option will navigate you to the Inbox of the conversation where the attachment was uploaded.
     - **CONVERSATIONS** - the option will navigate you to the conversation where the attachment was uploaded.
     - **COGNIGY SESSION ID** - the option will navigate you to the conversation where the attachment was uploaded.
+
+## More information
+
+- [Conversation Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/)
