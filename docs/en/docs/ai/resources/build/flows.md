@@ -8,10 +8,10 @@
 ## Chart
 
 **Flows** provide a **visual representation of a potential dialog** in a user-friendly interface. 
-Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [**Endpoint**]({{config.site_url}}ai/resources/deploy/endpoints/).
+Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
 
 !!! tip "How to create a new Flow"
-    To build your first Flow, go to **[Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message)** in the Cognigy Help Center.
+    To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
 
 <br>
 <img src="{{config.site_url}}ai/resources/images/e1151fe-flow_example_detail.PNG" width="100%" style="margin-bottom: 5px">
@@ -34,7 +34,7 @@ Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overvi
 ## Entry Points
 <div class="divider"></div>
 
-Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are subsequently published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
+Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are subsequently published to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/620d8e2-nodes-start.jpg" width="100%" />
@@ -53,7 +53,7 @@ In some cases there are **multiple Entry Points.** This can be the case if an Op
 
 In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
 
-Refer to [**NLU Overview**]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
+Refer to [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
 
 ## Settings
 <div class="divider"></div>
@@ -70,7 +70,7 @@ Can be used as a starting point for the Flow's Context object. Head over to [Con
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.32.0-blue.svg)]({{config.site_url}})
 
-Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) model from [fallback]({{config.site_url}}ai/resources/manage/localization/) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the *Inherit Intent model from fallback locale* toggle is deactivated. Once activated, [training indicator]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) on the Intents page and error badge on NLU tab are hidden, also the [Build Model]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) button in Settings, Chart and NLU is disabled.
+Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) model from [fallback]({{config.site_url}}ai/resources/manage/localization/) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) on the Intents page and error badge on NLU tab are hidden, also the [Build Model]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) button in Settings, Chart and NLU is disabled.
 
 <img src="{{config.site_url}}ai/images/locale-settings.png" width="100%" />
 
