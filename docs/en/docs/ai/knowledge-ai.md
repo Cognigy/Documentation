@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
 
-{! _includes/ai/terms-of-use.md !}
+{! _includes/beta/new-feature-note-knowledge-ai.md !}
 
 Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
@@ -52,9 +52,9 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
 6. Click **Next**.
-7. Copy and save file in the `.ctxt` format:
+7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file or copy and save file in the `.ctxt` format:
 
-    ??? info "Sample"
+    ??? info "Cognigy Sample"
            
         ```txt
         `version: 1`
@@ -103,7 +103,7 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
 
 8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
-10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created.
+10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.
 
 Complete installation and start exploring knowledge AI project structure.   
@@ -132,7 +132,7 @@ Knowledge is organized in a hierarchy of stores, sources, and chunks to enable a
 A _Knowledge Store_ is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
 The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 
-The maximum number of stores per project is limited, see below.
+The maximum number of stores per project is described in the [Limitations](#limitations) section.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-store.png" width="100%" />
@@ -155,7 +155,7 @@ The following types of files are supported:
 
 The `.ctxt` (Cognigy text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
-The maximum number of sources per store is limited, see below.
+The maximum number of sources per store is described in the [Limitations](#limitations) section.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-source.png" width="100%" />
@@ -167,7 +167,10 @@ A _Chunk_ is a unit of knowledge extracted from a Knowledge Source. Chunks are s
 
 For instance, a chunk can represent a single paragraph, a sentence, or even a smaller unit of text from a document. By dividing the content into chunks, the system gains better granularity, enabling it to analyze and respond to user queries more efficiently. The extraction of knowledge into chunks enhances the system's ability to match the right information to user questions, resulting in more accurate and contextually appropriate responses.
 
-Each chunk can have associated metadata. The number of meta-data key-value pairs is limited and supports only simple data types such as number, string, and boolean. More information on limitations of the maximum number of Chunks as well as the maximum length of supported characters per Chunk, see below.
+Each chunk can have associated metadata.
+The number of meta-data key-value pairs is limited and supports only simple data types such as number,
+string, and boolean.
+The maximum number of Chunks as well as the maximum length of supported characters per Chunk are described in the [Limitations](#limitations) section.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk.png" width="100%" />
@@ -206,28 +209,25 @@ You will receive a response generated from the absorbed Knowledge.
 To learn more about the Search Extract Output Node, refer to the [related article](flow-nodes/other-nodes/search-extract-output.md).
 
 ## Limitations
-Please note that the following limitations will change over time:
 
-| Description                                          | Current Limit    |
-|------------------------------------------------------|------------------|
-| Max number of Knowledge Stores (per project)         | 10               |
-| Max number of Knowledge Sources per Store            | 10               |
-| Max number of Chunks per Knowledge Source            | 500              |
-| Max number of meta-data pairs in Chunks              | 20               |
-| Max number of characters for text in Chunks          | 2000             |
+The table presents limitations that can be changed over time.
+
+| Description                                     | Current Limit |
+|-------------------------------------------------|---------------|
+| Maximum number of Knowledge Stores per project  | 10            |
+| Maximum number of Knowledge Sources per Store   | 10            |
+| Maximum number of Chunks per Knowledge Source   | 500           |
+| Maximum number of metadata pairs in a Chunk     | 20            |
+| Maximum number of characters for text per Chunk | 2000          |
 
 !!! Snapshots
-    Please note that none of the Knowledge AI specific objects (Stores, Sources & Chunks) are part of Cognigy.AI Snapshots **at the moment**. This will change in the near future!
+    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](resources/deploy/snapshots.md). This feature will be implemented soon.    
 
 ## FAQ
 
-**Q1**: Will Knowledge AI resources be part of Snapshots?
+**Q**: Will Knowledge AI be free of charge?
 
-**A1**: Yes, we are working on adding Knowledge Stores, Sources & Chunks, including meta-data, to Cognigy Snapshots.
-
-**Q2**: Will Knowledge AI be free of charge?
-
-**A2**: No, we will provide pricing information by the end of August.
+**A**: No, we will provide pricing information by the end of August.
 
 ## More information
 
