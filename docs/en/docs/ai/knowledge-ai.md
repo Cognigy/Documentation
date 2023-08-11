@@ -210,7 +210,7 @@ To learn more about the Search Extract Output Node, refer to the [related articl
 
 ## Limitations
 
-The table presents limitations that can be changed over time.
+The table below presents limitations. These limitations are subject to future changes by Cognigy.
 
 | Description                                     | Current Limit |
 |-------------------------------------------------|---------------|
