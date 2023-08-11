@@ -39,8 +39,8 @@ To request an attachment in a conversation within Live Agent, follow these steps
 3. In the **Inboxes** column, select an Inbox.
 4. Select your conversation.
 5. At the bottom of the conversation chat, in the **Reply to User** section, click **Request file**.
-6. In the opened window, click **Send**. The file will be requested from the user and the request will appear in the chat.
-7. Wait for the attachment to be sent by the user. The file will appear in the chat. (Need to verify this after testing)
+6. In the opened window, click **Send**. The file will be requested from the user, and the request will appear in the chat.
+7. Wait for the attachment to be sent by the user. The file will appear in the chat.
 
 When the file has been uploaded, you can view and download this file directly from the chat.
 
