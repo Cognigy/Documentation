@@ -1,23 +1,20 @@
 ---
- title: "Attachments"
- slug: "attachments" 
- hidden: false 
+title: "Attachments"
+slug: "attachments" 
+description: "Live Agent Attachments are files or documents that are sent or received during a conversation between a human agent and a user."
+hidden: false 
 ---
 # Attachments
-
 
 _Attachments_ are files or documents that are sent or received during a conversation between a human agent and a user.
 
 These attachments can include various file types; `jpeg`, `jpg`, `png`, `docx`, `wav`, `ogg`, `pdf`.
 
-Attachments can provide additional information or media, for example: an invoice or a photo related to the issue a customer is facing.
+Attachments can provide additional information or media, for example, an invoice or a photo related to the issue a customer is facing.
 
+##  Upload an Attachment
 
-## Upload or Request an Attachment
-
-###  Upload an Attachment
-
-To upload a file in a conversation within Live Agent, do the following:
+To upload a file in a conversation within Live Agent, follow these steps:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
@@ -29,13 +26,13 @@ To upload a file in a conversation within Live Agent, do the following:
 
 The file will be sent to the user and will appear in the chat. The user can download this attachment.
 
-### Request an Attachment
+## Request an Attachment
 
 When using a Webchat Endpoint with Live Agent, human agents can request an attachment from a user.
 
 Other Endpoint channels do not support the attachment request functionality. Users can still upload a file using their built in app file upload features.
 
-To request an attachment in a conversation within Live Agent, do the following:
+To request an attachment in a conversation within Live Agent, follow these steps:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
@@ -48,7 +45,7 @@ To request an attachment in a conversation within Live Agent, do the following:
 When the file has been uploaded, you can view and download this file directly from the chat.
 
 !!! note
-  If you use [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/), you will also need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files. 
+    If you use [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/), you will also need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files. 
 
 ## Download an Attachment
 
@@ -76,7 +73,7 @@ The file will be opened in a new tab of your browser. Click on your file to save
 
 ## Delete an Attachment
 
-To delete an attachment within Live Agent, this can be done in the Attachments page.
+To delete an attachment within Live Agent, follow these steps:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
@@ -89,7 +86,7 @@ The file will be deleted from the Attachments page and will no longer be availab
 
 ## Filter Attachments
 
-To filter attachments within Live Agent, this can be done in the Attachments page.
+To filter attachments within Live Agent, follow these steps:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
@@ -101,7 +98,7 @@ To filter attachments within Live Agent, this can be done in the Attachments pag
     - **Filename**
 6. Enter the value you need to filter by and click **Apply filters**.
 
-Optionally, you can add additional filters by clicking  **+ Add Filter**.
+Optionally, you can add additional filters by clicking **+ Add Filter**.
 
 The **Attachments** page will only display results that match the applied filter.
 
@@ -111,16 +108,16 @@ To drop the filter, click **Clear Filters**.
 
 The source can be Inbox, Conversation, or Cognigy Session ID.
 
-To investigate a conversation or Inbox where an attachment was uploaded, this can be done in the Attachments page.
+To investigate a conversation or Inbox where an attachment was uploaded, follow these steps:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
 3. Go to **Attachments**.
 4. Go to the row of the file you want to investigate.
 5. On this row, click one of the following links:
-    - **INBOX** - the option will navigate you to the Inbox of the conversation where the attachment was uploaded.
-    - **CONVERSATIONS** - the option will navigate you to the conversation where the attachment was uploaded.
-    - **COGNIGY SESSION ID** - the option will navigate you to the conversation where the attachment was uploaded.
+    - **INBOX** — the option will navigate you to the Inbox of the conversation where the attachment was uploaded.
+    - **CONVERSATIONS** — the option will navigate you to the conversation where the attachment was uploaded.
+    - **COGNIGY SESSION ID** — the option will navigate you to the conversation where the attachment was uploaded.
 
 ## More information
 
