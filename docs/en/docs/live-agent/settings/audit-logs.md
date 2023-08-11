@@ -56,7 +56,7 @@ For actions, you can view details on any changes that were made.
 To do this, follow these steps:
 
 1. Open the Live Agent interface.
-2. Go to **Settings > **Audit Logs**.
+2. Go to **Settings > Audit Logs**.
 3. Select a log from the list by clicking on it.
 
 A window will open displaying the details of the changes.
