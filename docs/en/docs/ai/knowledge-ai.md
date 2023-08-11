@@ -52,7 +52,7 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
 6. Click **Next**.
-7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file or copy and save file in the `.ctxt` format:
+7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file or copy the following text and save it as a file in the `.ctxt` format:
 
     ??? info "Cognigy Sample"
            
