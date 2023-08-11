@@ -11,17 +11,11 @@ hidden: false
 
 {! _includes/ai/terms-of-use.md !}
 
-Knowledge AI is commonly used in Natural Language Processing (NLP) and Conversational AI to enhance the capabilities of virtual assistants, chatbots, and other AI-driven systems. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more.
-By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
+Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
 With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](nlu/nlu-overview/ml-intents.md) and [Default Replies](nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format.
-This technology extracts meaningful information from these documents
-and makes it accessible to Flow designers via the Knowledge AI Nodes.
-This approach empowers you to build knowledge-based virtual agents quickly and effortlessly,
-bypassing the limitations of traditional intent-based systems
-and simplifying the process of creating sophisticated conversational experiences.
+Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
 
@@ -138,7 +132,7 @@ Knowledge is organized in a hierarchy of stores, sources, and chunks to enable a
 A _Knowledge Store_ is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
 The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 
-The maximum number of stores per project is 10.
+The maximum number of stores per project is limited, see below.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-store.png" width="100%" />
@@ -161,7 +155,7 @@ The following types of files are supported:
 
 The `.ctxt` (Cognigy text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
-The maximum number of sources per store is 10.
+The maximum number of sources per store is limited, see below.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-source.png" width="100%" />
@@ -173,9 +167,7 @@ A _Chunk_ is a unit of knowledge extracted from a Knowledge Source. Chunks are s
 
 For instance, a chunk can represent a single paragraph, a sentence, or even a smaller unit of text from a document. By dividing the content into chunks, the system gains better granularity, enabling it to analyze and respond to user queries more efficiently. The extraction of knowledge into chunks enhances the system's ability to match the right information to user questions, resulting in more accurate and contextually appropriate responses.
 
-Each chunk can have associated metadata. Metadata can contain no more than 20 key-value pairs per chunk and supports simple data types such as number, string, and boolean.
-
-The maximum number of chunks per source is 500. Each chunk must contain no more than 2000 characters.
+Each chunk can have associated metadata. The number of meta-data key-value pairs is limited and supports only simple data types such as number, string, and boolean. More information on limitations of the maximum number of Chunks as well as the maximum length of supported characters per Chunk, see below.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk.png" width="100%" />
@@ -212,6 +204,20 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 You will receive a response generated from the absorbed Knowledge.
 
 To learn more about the Search Extract Output Node, refer to the [related article](flow-nodes/other-nodes/search-extract-output.md).
+
+## Limitations
+Please note that the following limitations will change over time:
+
+| Description                                          | Current Limit    |
+|------------------------------------------------------|------------------|
+| Max number of Knowledge Stores (per project)         | 10               |
+| Max number of Knowledge Sources per Store            | 10               |
+| Max number of Chunks per Knowledge Source            | 500              |
+| Max number of meta-data pairs in Chunks              | 20               |
+| Max number of characters for text in Chunks          | 2000             |
+
+!!! Snapshots
+    Please note that none of the Knowledge AI specific objects (Stores, Sources & Chunks) are part of Cognigy.AI Snapshots **at the moment**. This will change in the near future!
 
 ## FAQ
 
