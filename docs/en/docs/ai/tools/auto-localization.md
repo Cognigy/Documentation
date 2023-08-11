@@ -92,7 +92,7 @@ The Localization view allows for the configuration of any number of localization
 <div class="divider"></div>
 
 
-As of Cognigy.AI 4.10.0 our product provides machine translation of Nodes and Intents to perform the localization of your Virtual Agent even more efficiently than with manual localization. 
+Since Release 4.10.0 Cognigy.AI provides machine translation of Nodes and Intents to perform the localization of your Virtual Agent even more efficiently than with manual localization. 
 
 In order to enable machine translation, you need to configure the **Translation Settings** of your Virtual Agent.
 
