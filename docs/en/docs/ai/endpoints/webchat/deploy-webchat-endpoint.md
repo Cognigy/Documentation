@@ -27,7 +27,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
 !!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+    You can use the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality with this type of Endpoint.
 
 ## Channel Specific Settings
 
