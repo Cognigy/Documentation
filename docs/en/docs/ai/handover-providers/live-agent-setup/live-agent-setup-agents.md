@@ -61,7 +61,7 @@ Once in the Inbox settings, click *Collaborators*. Here you can add your Agent t
 ## Live Agent Setup Complete
 <div class="divider"></div>
 
-This completes the setup of Live Agent!
+This completes the setup of Live Agent.
 
 ## See Further Live Agent Documentation
 <div class="divider"></div>

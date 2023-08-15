@@ -65,7 +65,7 @@ This messages should also appear on the Cognigy.AI Webchat window.
     <figcaption>Cognigy.AI Webchat</figcaption>
 </figure>
 
-Congratulations! You have had your first Conversation in Live Agent!
+You have successfully completed your first Conversation in Live Agent.
 
 ## Next Steps - Adding Agents and Admins
 Next, you can add more Agents and Admins, and assign them to Inboxes in Live Agent:
