@@ -68,13 +68,13 @@ To create your Agent Assist Config, follow these steps:
             "x": 1,
             "y": 1,
             "columns": 4,
-            "rows": 2,
+            "rows": 2
           },
           "Voice Gateway": {
             "x": 1,
             "y": 1,
             "columns": 4,
-            "rows": 2,
+            "rows": 2
           }
         }
       },
