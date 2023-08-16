@@ -25,7 +25,7 @@ A program written in JavaScript might need a specific version of the NodeJS runt
 dependencies together with the actual application into one shippable unit. One of the more popular container runtimes and a set of other container
 specific tools is [Docker](https://www.docker.com/).
 
-Managing a high numer of moving parts - the microservices mentioned above - is quite a challenge and requires an additional software product
+Managing a high number of moving parts - the microservices mentioned above - is quite a challenge and requires an additional software product
 which is called a container orchestrator. [Kubernetes](https://kubernetes.io/) is such a container orchestrator dealing with tasks like:
 
 - assigning containers to one of the available servers in the Kubernetes cluster respecting their individual hardware requirements and matching these against the available hardware on a server
