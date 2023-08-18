@@ -37,4 +37,10 @@ During a Handover event the User Profile is sent to RingCentral Engage to provid
 
     - [RingCentral Engage accepted User Profile Object structure](https://developers.ringcentral.com/engage/digital/guide/sdks/source-sdk/objects#users) sent during the handover.
     - [Cognigy Profile schema]({{config.site_url}}ai/resources/manage/contact-profiles/?h=profile#manage-contact-profiles). Cognigy Profile Schema can be edited and additional fields with specific object keys added.
+
+## Get Queue Updates
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.58.0-blue.svg)]({{config.site_url}})
+
+The Get Queue Update setting enables queue updates to be injected into the flow as events. This allows you to react to queue updates in your flow.
     
