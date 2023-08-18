@@ -30,4 +30,5 @@ A user with the Account scope can view and edit only the account to which they b
 | Application for SIPREC calls     | Select the application for [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866) calls.                                    | Account, Service Provider, Admin |
 | Registration Webhook             | A URL for your Web Application that handles registrations.                                                                   | Account, Service Provider, Admin |
 | Queue Event Webhook              | A URL to notify when a member joins or leaves a queue.                                                                       | Account, Service Provider, Admin |
+| TTS prompt caching               | View the count of cached prompts, and click to clear the TTS cache                                                                       | Account, Service Provider, Admin |
 | Account API keys                 | You can generate API key by clicking **Add key**.                                                                            | Account, Service Provider, Admin |
