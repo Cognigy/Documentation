@@ -83,7 +83,7 @@ To assign a priority to a conversation within Live Agent, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
 3. From the **Inboxes** list, select an Inbox.
-4. From the **Conversations** list, select your conversation where you want to add a label.
+4. From the **Conversations** list, select your conversation where you want to assign a priority.
 5. On the right of the conversation chat, go to **Details > Conversation Actions**.
 6. Under the **Priority** section, click **Select priority**.
 7. Scroll or type to search for a priority level, then click the intended level. 
