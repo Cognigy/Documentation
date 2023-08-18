@@ -42,5 +42,7 @@ During a Handover event the User Profile is sent to RingCentral Engage to provid
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.58.0-blue.svg)]({{config.site_url}})
 
-The Get Queue Update setting enables queue updates to be injected into the flow as events. This allows you to react to queue updates in your flow.
+The Get Queue Update setting enables queue updates to be injected into the flow as events. This allows you to react to queue updates in your flow. 
+
+Queue updates from RCE are seen at `input.data.handover`.
     
