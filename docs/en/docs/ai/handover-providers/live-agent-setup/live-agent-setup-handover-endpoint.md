@@ -9,7 +9,7 @@ First, an Endpoint, for example a [Webchat Endpoint]({{config.site_url}}ai/endpo
 
 Once you have an Endpoint, go to the **Endpoint Editor** and scroll down to **Handover Settings**. 
 
-Set the **Handover Platform** to **Cognigy Live Agent**. 
+Set the **Handover Platform** to Cognigy Live Agent. 
 
 You now have two options. By default, the pre-configured Live Agent Account, mapped to the Cognigy.AI Organization will be used for the handover. However, by deactivating the "Handover to pre-configured Live Agent account" toggle, you can also manually configure the Live Agent handover. 
 
