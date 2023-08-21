@@ -1,9 +1,13 @@
 ---
- title: "RingCentral Engage" 
- slug: "ringcentralengage-handover" 
- hidden: false 
+title: "RingCentral Engage" 
+slug: "ring-central-engage-handover" 
+hidden: false 
 ---
 # RingCentral Engage Integration
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/ring-central-engage.svg" width="100%" />
+</figure>
 
 ## Description
 
@@ -17,20 +21,15 @@ To start using RingCentral Engage as a handover provider with Cognigy.AI, go to 
 
 Open the Endpoint where you would like to enable Handover to RingCentral Engage. Scroll down to **Handover Settings** and select RingCentral Engage.
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/ringcentralengage-endpoint.png" width="75%" />
-    </figure>
-
-To complete your setup, see the following Help Center article: 
-
-- [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration)
-
+To complete your setup,
+see
+the [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration) article.
 
 ## Send User Profile to RingCentral Engage
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.29.0-blue.svg)]({{config.site_url}})
 
-During a Handover event the User Profile is sent to RingCentral Engage to provide helpful information to the agent.
+During a Handover event, the User Profile is sent to RingCentral Engage to provide helpful information to human agents.
 
 !!! warning "Profile fields of Cognigy Profile and RingCentral Profile do not match exactly"
     Cognigy User Profile will be sent to RingCentral Engage and matched up with the object keys existing on RingCentral Engage. The information that was not matched will be added to the "context_data" object. 
