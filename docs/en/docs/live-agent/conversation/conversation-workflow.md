@@ -75,6 +75,20 @@ Click on the drop-box within the Assigned Team menu and select the Team to which
   <figcaption>Assign Teams</figcaption>
 </figure>
 
+### Assign Priority
+<div class="divider"></div>
+
+To assign a priority to a conversation within Live Agent, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to assign a priority.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Priority** section, click **Select priority**.
+7. Scroll or type to search for a priority level, then click the intended level. 
+
+The priority will be assigned to the conversation. The matching priority level's icon will now be visable for the conversation within the Conversations column.
 
 ### Assign Labels
 <div class="divider"></div>
