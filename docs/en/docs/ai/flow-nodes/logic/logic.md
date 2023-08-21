@@ -5,7 +5,7 @@
 ---
 # Logic
 
-Logic Nodes are used to change the way your Flow behaves. They can be used to e.g. only run parts of your Flow based on conditions or work with other Flows:
+Logic Nodes allow you to customize your Flow's behavior. You can use them to control which parts of the Flow should run based on conditions or integrate with other Flows.
 
 - [If](if.md)
 - [Lookup](lookup.md)
