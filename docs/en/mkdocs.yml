@@ -198,9 +198,9 @@ nav:
       - ai/flow-nodes/profile/blind-mode.md
     - Services:
       - ai/flow-nodes/services/services.md
-      - ai/flow-nodes/services/ms-sql.md
-      - ai/flow-nodes/services/mongo-db.md
       - ai/flow-nodes/services/http-request.md
+      - ai/flow-nodes/services/mongo-db.md
+      - ai/flow-nodes/services/ms-sql.md
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md

@@ -1,30 +1,24 @@
 ---
- title: "Services" 
- slug: "services" 
- hidden: false 
+title: "Services" 
+slug: "services" 
+hidden: false 
 ---
+
 # Services
 
-Service Nodes are used to interface with APIs and DB connections. For example, they can be used to connect to your user database to personalize your flow.
+Service Nodes are used to connect with APIs and databases.
+They help in tasks like accessing your user database to make your Flow more customized.
 
 - [HTTP Request](http-request.md) 
-- [Trigger Function](../logic/trigger-function.md)
-- [Send SMTP Email](../message/send-smtp-email.md) 
-- [Email Notification](../message/send-email-notification.md)
-- [Update Many](../services/mongo-db.md)
-- [Find One](../services/mongo-db.md)
-- [Insert](../services/mongo-db.md)
-- [Remove](../services/mongo-db.md)
-- [Find](../services/mongo-db.md)
-- [Update One](../services/mongo-db.md)
-- [MongoDB Aggregate](../services/mongo-db.md)
-- [Run Transaction](../services/ms-sql.md)
-- [Run SQL Query](../services/ms-sql.md.md)
-- [Run StoredProcedure](../services/ms-sql.md.md)
-- [GPT Conversation](../other-nodes/gpt-conversation.md)
-- [LLM Prompt](../other-nodes/llm-prompt.md)
-- [Close Handover](../other-nodes/close-handover.md)
-- [Set Handover Inactivity](../other-nodes/set-handover-inactivity.md)
-
-
-
+- [MongoDB](mongo-db.md):
+    - [Update Many](mongo-db.md#update-many)
+    - [Find One](mongo-db.md#find-one)
+    - [Insert](mongo-db.md#insert)
+    - [Remove](mongo-db.md#remove)
+    - [Find](mongo-db.md#find)
+    - [Update One](mongo-db.md#update-one)
+    - [MongoDB Aggregate](mongo-db.md#mongodb-aggregate)
+- [My SQL](ms-sql.md):
+    - [Run Transaction](ms-sql.md#run-transaction)
+    - [Run SQL Query](ms-sql.md#run-query)
+    - [Run StoredProcedure](ms-sql.md#run-stored-procedure)
