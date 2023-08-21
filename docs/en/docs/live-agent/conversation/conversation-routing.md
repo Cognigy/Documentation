@@ -80,7 +80,7 @@ You can configure the auto-assignment system by using the **Auto Assignment** se
 There are different scenarios for distributing conversations to human agents based on their online status and workload:
 
 - **Online Agents**. When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
-Unassigned conversations are automatically assigned to agents when the [limit threshold](../account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
+Unassigned conversations are automatically assigned to agents when the [limit threshold](../settings/account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
 - **Offline Agents**. When a conversation is created in the Inbox, and there are no agents online with access to it, the system will remain all conversations unassigned.
 
 To configure auto assignment in your Inbox, follow these steps:
@@ -152,7 +152,7 @@ By default, human agents with `Busy` status cannot be assigned or reassigned aut
 
 If an agent is already assigned conversations before they become busy, those assigned conversations will remain in the [Agent Queue](agent-queue.md). However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
 
-You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
+You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
 
 When the setting is activated, busy agents will be treated as having an `Online` status and following the same assignment and reassignment rules as other available agents.
 
@@ -179,7 +179,7 @@ Source table:
 
 Conditions:
 
-- No [conversation limit](../account-settings.md#conversation-limit-per-agent) per agent.
+- No [conversation limit](../settings/account-settings.md#conversation-limit-per-agent) per agent.
 - 4 conversations are created.
 - Activated:
     - Automatic Conversation Assignment. 
@@ -301,7 +301,7 @@ Result: Agent 1 handles the first and fifth conversations, Agent 2 handles the s
 
 **Example 4**
 
-- No [conversation limit](../account-settings.md#conversation-limit-per-agent) per agent.
+- No [conversation limit](../settings/account-settings.md#conversation-limit-per-agent) per agent.
 - 8 conversations are created.
 - Agent 1 has changed the status to `Away` after the conversation assignment.
 
