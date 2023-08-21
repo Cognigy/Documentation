@@ -30,7 +30,7 @@ Head over to [Flows]({{config.site_url}}ai/resources/build/flows/) for more info
 
 ## Connections
 
-Connections are encrypted credentials that can be used with [**Extensions**]({{config.site_url}}ai/resources/build/connections/). The Connections view can be used to update and delete existing Connections. New Connections are created directly within the Extension Nodes that use them.
+Connections are encrypted credentials that can be used with [Extensions]({{config.site_url}}ai/resources/build/connections/). The Connections view can be used to update and delete existing Connections. New Connections are created directly within the Extension Nodes that use them.
 
 Head over to [Connections]({{config.site_url}}ai/resources/build/connections/) for more information.
 

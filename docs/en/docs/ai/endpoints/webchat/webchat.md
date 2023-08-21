@@ -78,7 +78,7 @@ That makes your Webchat configuration for your own purposes much easier now.
 </figure>
 
 !!! note "Note"
-    **The embedding code just loads the webchat with the correct endpoint configured, using the latest release.** 
+    The embedding code just loads the webchat with the correct endpoint configured, using the latest release. 
 
 ## More information
 
