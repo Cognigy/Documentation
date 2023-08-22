@@ -43,5 +43,12 @@ During a Handover event, the User Profile is sent to RingCentral Engage to provi
 
 The **Get Queue Update** setting enables the injection of queue updates into the conversation flow as events. This capability allows you to react to queue updates within your conversation flow.
 
-The queue updates from RingCentral Engage are visible in the `input.data.handover` object.
+In addition to enabling the **Get Queue Update** option,
+you need to configure the Lookup Node so that the handover type is selected as **Queue**.
+
+For more details, refer to the [Handover Status](../flow-nodes/logic/lookup.md#handover-status) section.
+
+The queue updates from RingCentral Engage are visible in the `input.data.handover` object. 
+
+
     

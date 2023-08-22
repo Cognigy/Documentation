@@ -5,7 +5,7 @@ hidden: false
 ---
 # Lookup
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../../release-notes/4.58.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup.png" width="80%" />
@@ -98,13 +98,23 @@ By changing the lookup type to **Mode**, the Flow will select a case that matche
 
 By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for type of lookup.
 
-In the Case Node, you can select the following handover statuses:
-
-
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-handover-status.png" width="100%" />
   <figcaption>A Handover Status type Lookup Node with 4 cases</figcaption>
 </figure>
+
+The table below shows handover statuses that you can select in the Case Node.
+
+| Status    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Restrictions                                                                                                                                                                                                                                                |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Completed | Conversations are resolved successfully. Agent assistance is provided.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | -                                                                                                                                                                                                                                                           |
+| Cancelled | Conversations are ended by users, indicating termination before resolution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | -                                                                                                                                                                                                                                                           |
+| Error     | Conversations are encountering issues. This issues could be technical, communicative, or related to misinformation. Human agents work to address the issue and guide the conversation back to its intended course.                                                                                                                                                                                                                                                                                                                                           | -                                                                                                                                                                                                                                                           |
+| Events    | Conversations are triggered by specific occurrences significant to the conversation. These could be time-sensitive events, important updates, or prompts that guide the conversation's direction or provide additional context.                                                                                                                                                                                                                                                                                                                              | -                                                                                                                                                                                                                                                           |
+| Active    | Conversations are actively managed by a human agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | -                                                                                                                                                                                                                                                           |
+| Queue     | Conversations are on hold, awaiting agent assignment. The end user can receive a message if a Say Node is placed under the Case Node. The Say Node should contain the following text:<br/><br><code>Estimated time:  {{"{{input?.handover?.data?.estimatedWaitTime / 1000}}"}} seconds</code><br><code>Position: {{"{{input?.handover?.data?.position}}"}}</code><br> <br> Where `Estimated time` is the approximate duration in seconds that the user must wait for a response from a human agent, and `Position` is the conversation's order in the queue. | The status is applicable only to the [RingCentral Engage](../../handover-providers/ringcentralengage-handover.md) provider when the the [Get Queue Updates](../../handover-providers/ringcentralengage-handover.md#get-queue-updates) setting is activated. |
+
+
 
 ### CognigyScript
 By changing the lookup type to **CognigyScript**, the Flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
@@ -119,8 +129,8 @@ By changing the lookup type to **CognigyScript**, the Flow will select a case th
   <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable</figcaption>
 </figure>
 
-!!! note "What is CognigyScript?"
-    CognigyScript is a superset of JavaScript which gives you access to the Input, Context and Profile objects within text and JSON. Find out more on the **[CognigyScript Page]({{config.site_url}}ai/tools/cognigy-script/)**.
+!!! tip "What is CognigyScript?"
+    CognigyScript is a superset of JavaScript that provides access to the Input, Context, and Profile objects within text and JSON. To learn more, read the [CognigyScript](../../tools/cognigy-script.md) page.
 
 ### Call Event Status
 
