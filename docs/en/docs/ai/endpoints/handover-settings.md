@@ -13,13 +13,13 @@ Cognigy.AI supports integrating with various `Live Agent Tools`, so that a user 
 
 Supported Endpoints have a configuration tab called `Handover Settings`. In there, the `Handover Platform` that the user should be forwarded to when a Handover Node is triggered is selected and configured. Cognigy.AI currently has native support with the following Handover Platforms:
 
-- [**Cognigy Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-handover/)
+- [Cognigy Live Agent]({{config.site_url}}ai/handover-providers/live-agent-handover/)
 
-- [**Chatwoot**]({{config.site_url}}ai/handover-providers/chatwoot-handover/)
+- [Chatwoot]({{config.site_url}}ai/handover-providers/chatwoot-handover/)
 
-- [**RingCentral Engage**]({{config.site_url}}ai/handover-providers/ringcentralengage-handover/)
+- [RingCentral Engage]({{config.site_url}}ai/handover-providers/ringcentralengage-handover/)
 
-- [**Salesforce**]({{config.site_url}}ai/handover-providers/salesforce-handover/)
+- [Salesforce]({{config.site_url}}ai/handover-providers/salesforce-handover/)
 
 The Endpoints that support handover are listed below:
 

@@ -12,7 +12,7 @@ Flow functionality is shared between Flows by making their [Intents]({{config.si
 In order to attach a flow, the Flow with the shared functionality must first be written to populate the **Attached Flows** list.
 
 !!! tip "Build and refactor Flows in a modular fashion"
-    As a best practice we recommend to keep your Flow size small. Refactor often and use a modular approach for clear, maintainable and effective Flows.
+    As a best practice, we recommend keeping your Flow size small. Refactor often and use a modular approach for clear, maintainable, and effective Flows.
 
     Note you can copy, cut & paste nodes and sub-trees also between Flows. Making it easy to, for example, cut sub-trees from a large Flow and distribute the logic to smaller attached Flows.
 
@@ -23,7 +23,7 @@ As described above, the Intents of the Attached Flow are added to the list of In
 !!! warning "Beware of Overlapping Intents"
     Cognigy small-talk Flows, and any other Attached Flow, may contain Overlapping Intents. You must ensure Intents across all attached Flows are distinct.
 
-The order in which the Intents are scored is determined by the `Map global Intents first` setting in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/) .
+The order in which the Intents are scored is determined by the `Map global Intents first` setting in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/).
 
 If the intents scored first get a score of 1.0 (the highest match), then the other intents are not evaluated.
 

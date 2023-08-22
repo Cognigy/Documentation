@@ -17,6 +17,8 @@ This Node allows you to create and display adaptive cards in your Agent Assist W
 
 The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
 
+## Settings 
+
 | Parameter          | Type          | Description                                                |
 |--------------------|---------------|------------------------------------------------------------|
 | Tile ID            | CognigyScript | The ID that you created in the Agent Assist configuration. |
@@ -28,5 +30,6 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 
 - [Set HTML file](set-html-file.md)
 - [Set IFrame tile](set-iframe-tile.md)
+- [Set Agent Assist grid](set-agent-assist-grid.md)
 - [Agent Assist Nodes](overview.md)
 - [Agent Assist](../../../agent-assist/overview.md)

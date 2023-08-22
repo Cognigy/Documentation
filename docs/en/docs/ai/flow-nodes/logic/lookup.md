@@ -1,11 +1,11 @@
 ---
- title: "Lookup" 
- slug: "lookup" 
- hidden: false 
+title: "Lookup" 
+slug: "lookup" 
+hidden: false 
 ---
 # Lookup
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../../release-notes/4.58.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup.png" width="80%" />
@@ -33,6 +33,7 @@ Instead of saying if `input.intent === "orderFood"` then x, else -> `input.inten
 <div class="divider"></div>
 
 ### Intent 
+
 This is the default setting for the **Lookup Node**, and it allows you to easily look up the Intent that has been triggered. 
 
 By default, the Intent at the most detailed **[Intent Hierarchy](../../nlu/nlu-overview/intent-hierarchy.md)** level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
@@ -49,6 +50,7 @@ In this case, only the Intents of the chosen level are selectable in the Intent 
     Find more information about building Flows with intents on the **[NLU Overview Page](../../nlu/nlu-overview/overview.md)**.
 
 ### Text
+
 By changing the lookup type to **Text**, the Flow will select a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -57,6 +59,7 @@ By changing the lookup type to **Text**, the Flow will select a case that matche
 </figure>
 
 ### State
+
 By changing the lookup type to **[State](../../tools/interaction-panel/state.md)**, the Flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -68,6 +71,7 @@ By changing the lookup type to **[State](../../tools/interaction-panel/state.md)
     States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. Find out more on the **[States Page]({{config.site_url}}ai/tools/interaction-panel/state/)**.
 
 ### Type
+
 By changing the lookup type to **Type**, the Flow will select a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -79,6 +83,7 @@ By changing the lookup type to **Type**, the Flow will select a case that matche
     The **Type** is defined as a classification of the last user message as determined by the NLU. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer.* 
 
 ### Mode
+
 By changing the lookup type to **Mode**, the Flow will select a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -90,12 +95,24 @@ By changing the lookup type to **Mode**, the Flow will select a case that matche
     The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
 ### Handover Status
-By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for this type of lookup.
+
+By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for type of lookup.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-handover-status.png" width="100%" />
   <figcaption>A Handover Status type Lookup Node with 4 cases</figcaption>
 </figure>
+
+The table below shows handover statuses that you can select in the Case Node.
+
+| Status    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Restrictions                                                                                                                                                                                                                                                |
+|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Completed | Conversations are resolved successfully. Agent assistance is provided.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | -                                                                                                                                                                                                                                                           |
+| Cancelled | Conversations are ended by users, indicating termination before resolution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | -                                                                                                                                                                                                                                                           |
+| Error     | Conversations are encountering issues. This issues could be technical, communicative, or related to misinformation. Human agents work to address the issue and guide the conversation back to its intended course.                                                                                                                                                                                                                                                                                                                                           | -                                                                                                                                                                                                                                                           |
+| Events    | Conversations are triggered by specific occurrences significant to the conversation. These could be time-sensitive events, important updates, or prompts that guide the conversation's direction or provide additional context.                                                                                                                                                                                                                                                                                                                              | -                                                                                                                                                                                                                                                           |
+| Active    | Conversations are actively managed by a human agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | -                                                                                                                                                                                                                                                           |
+| Queue     | Conversations are on hold, awaiting agent assignment. The end user can receive a message if a Say Node is placed under the Case Node. The Say Node should contain the following text:<br/><br><code>Estimated time:  {{"{{input?.handover?.data?.estimatedWaitTime / 1000}}"}} seconds</code><br><code>Position: {{"{{input?.handover?.data?.position}}"}}</code><br> <br> Where `Estimated time` is the approximate duration in seconds that the user must wait for a response from a human agent, and `Position` is the conversation's order in the queue. | The status is applicable only to the [RingCentral Engage](../../handover-providers/ringcentralengage-handover.md) provider when the the [Get Queue Updates](../../handover-providers/ringcentralengage-handover.md#get-queue-updates) setting is activated. |
 
 ### CognigyScript
 By changing the lookup type to **CognigyScript**, the Flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
@@ -110,21 +127,13 @@ By changing the lookup type to **CognigyScript**, the Flow will select a case th
   <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable</figcaption>
 </figure>
 
-!!! note "What is CognigyScript?"
-    CognigyScript is a superset of JavaScript which gives you access to the Input, Context and Profile objects within text and JSON. Find out more on the **[CognigyScript Page]({{config.site_url}}ai/tools/cognigy-script/)**.
+!!! tip "What is CognigyScript?"
+    CognigyScript is a superset of JavaScript that provides access to the Input, Context, and Profile objects within text and JSON. To learn more, read the [CognigyScript](../../tools/cognigy-script.md) page.
 
 ### Call Event Status
 
 By changing the lookup type to **Call Event Status**, the Flow will select a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
 
-In the child LookUp node, you can operate the following Voice Gateway events:
-
-- Recognized Speech
-- Recognized DTMF
-- Call Created
-- Call Reconnected
-- Call Failed
-- User Input Timeout
-- Answering Machine Detection
+In the child Lookup Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
 
 More information about these events you can find in the [Voice Gateway Events](../../../voicegateway/references/events/overview.md) reference.

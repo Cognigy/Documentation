@@ -1,7 +1,7 @@
 ---
- title: "Phone Numbers" 
- slug: "vg-webapp-phone-numbers" 
- hidden: true 
+title: "Phone Numbers" 
+slug: "vg-webapp-phone-numbers" 
+hidden: false 
 ---
 
 # Phone Numbers

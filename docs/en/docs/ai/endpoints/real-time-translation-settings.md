@@ -6,7 +6,7 @@
 
 # Real Time Translation Settings
 
-Cognigy.AI supports integration with various `Real Time Translation Services`, so you can automatically translate incoming text to the language of your flow and the flow output back to the language of the user.
+Cognigy.AI supports integration with various Real Time Translation Services, so you can automatically translate incoming text to the language of your flow and the flow output back to the language of the user.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/real_time_translation_settings.png" width="100%" />
@@ -46,7 +46,7 @@ The Microsoft Translator has two extra optional parameters as follows:
 
 | Parameter | Description |
 | --- | --- |
-| Custom API base URL | Use this field if you would like to use an URL different from the default one (``https://api.cognitive.microsofttranslator.com/``) |
+| Custom API base URL | Use this field if you would like to use a URL different from the default one (`https://api.cognitive.microsofttranslator.com/`). |
 | Custom Subscription Region | This is the location (or region) of your Azure MS Translator resource. You may need to use this field when making calls to this API, if you set a specific region in your Azure account. |
 
 ## Configure Real Time Translation Settings
@@ -63,7 +63,7 @@ After selecting a Translation Provider, we can now configure these parameters in
 | Enable Translation | Whether or not Translation is enabled for the Endpoint |
 | User Input Language | The language of the user inputs |
 | Flow Language | The language of the Flow outputs |
-| Set user input language on execution count | If the input language is set to 'Auto-Detect', it will be fixed to its current value on this execution count |
-| No-Translation Marker | Do not translate texts encapsulated in this marker (e.g. 'I love the **Cognigy.AI** platform' will not translate 'Cognigy.AI')|
+| Set user input language on execution count | If the input language is set to **Auto-Detect**, it will be fixed to its current value on this execution count |
+| No-Translation Marker | Do not translate texts encapsulated in this marker (e.g. `I love the Cognigy.AI platform` will not translate `Cognigy.AI`)|
 | Always remove No-Translation Markers | Whether we remove No-Translation Markers, even if translation is not enabled |
 | Prevent payloads from being translated | If active, prevents all user inputs based on payloads to be translated |

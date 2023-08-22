@@ -113,7 +113,7 @@ If the Package contains a Flow for import, you will need to provide a Locale Map
 
 In case your Agent already contains the Resources from the Package, you will need to decide how Cognigy.AI should handle the duplicates. You can either select a conflict resolution method for all resources or for each resource independently. Currently, we support importing a resource "as a copy" or by "replacing" the existing version.
 
-Once you have selected a conflict resolution strategy, click on **"Import"** in order to start the Package import.
+Once you have selected a conflict resolution strategy, click on **Import** in order to start the Package import.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/7478741-Conflict_Import_handling.png" width="100%" />

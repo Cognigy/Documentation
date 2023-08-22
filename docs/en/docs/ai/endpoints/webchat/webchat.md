@@ -66,7 +66,7 @@ It also features an expressive [technical documentation](https://github.com/Cogn
 [![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
 
 As of release v4.9, Cognigy.AI adds a form section to the Webchat Endpoint configuration to provide embedding-ready code to users.
-Clicking the link "**Open Embedding Documentation**" below the embed field takes you to the [GitHub Webchat Widget embedding documentation](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md) for detailed specifications and examples.
+Clicking the link **Open Embedding Documentation** below the embed field takes you to the [GitHub Webchat Widget embedding documentation](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md) for detailed specifications and examples.
 
 When hovering over the code field, you will get a button displayed to copy the code to the clipboard. 
 
@@ -78,7 +78,7 @@ That makes your Webchat configuration for your own purposes much easier now.
 </figure>
 
 !!! note "Note"
-    **The embedding code just loads the webchat with the correct endpoint configured, using the latest release.** 
+    The embedding code just loads the webchat with the correct endpoint configured, using the latest release. 
 
 ## More information
 

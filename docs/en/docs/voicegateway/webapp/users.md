@@ -1,7 +1,7 @@
 ---
- title: "users" 
- slug: "users" 
- hidden: false 
+title: "users" 
+slug: "users"
+hidden: false
 ---
 
 # Users

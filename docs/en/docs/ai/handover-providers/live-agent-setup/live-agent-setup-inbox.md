@@ -6,7 +6,7 @@
 # Set up the Inbox for Live Agent
 <div class="divider"></div>
 
-Now that you have [**Set up Live Agent for your Organisation**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/), you can set up your default Inbox for Live Agent.
+Now that you have [Set up Live Agent for your Organisation]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/), you can set up your default Inbox for Live Agent.
 
 ## Agent Settings
 <div class="divider"></div>
@@ -18,7 +18,7 @@ Open an existing [Agent]({{config.site_url}}ai/resources/agents/agents/). Go to 
   <figcaption>Agent Settings</figcaption>
 </figure>
 
-Scroll down and find *Live Agent Settings*.
+Scroll down and find **Live Agent Settings**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-create-project-btn.png" width="100%" />
@@ -27,7 +27,7 @@ Scroll down and find *Live Agent Settings*.
 
 Click on the **Create Project Inbox** button to create a new Inbox for the selected Agent. 
 
-Once the Inbox is created, you will find the *Default Inbox ID* above the now disabled button.
+Once the Inbox is created, you will find the **Default Inbox ID** above the now disabled button.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
@@ -38,12 +38,12 @@ Once the Inbox is created, you will find the *Default Inbox ID* above the now di
 <div class="divider"></div>
 Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/) to Live Agent:
 
-- [**Set up your Endpoint and Flow for Handover to Live Agent**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
+- [Set up your Endpoint and Flow for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
 
 ## Having Trouble?
 <div class="divider"></div>
 
-!!! warning "**Create Project Inbox** disabled"
+!!! warning "Create Project Inbox disabled"
 
 	The button could also be disable for the following reasons:
 
@@ -68,4 +68,4 @@ Next, you will setup your [Handover]({{config.site_url}}ai/tools/agent-handover/
 
 
 !!! warning "Live Agent Settings not visible"
-    The *Live Agent Settings* section in Organisation Details and Agent Settings page will be not be displayed at all, if you have both *Theming* enabled and the *Cognigy Live Agent* feature disabled.
+    The **Live Agent Settings** section in **Organisation Details** and **Agent Settings** page will be not be displayed at all, if you have both **Theming** enabled and the Cognigy Live Agent feature disabled.

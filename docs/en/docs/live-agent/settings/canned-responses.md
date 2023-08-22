@@ -13,7 +13,7 @@ Canned Response templates provide support for HTML formatting.
 
 ## Create a Canned Response
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.53-blue.svg)](../../release-notes/4.53.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../release-notes/4.55.md)
 
 To create a new canned response, follow these steps:
 

@@ -6,7 +6,7 @@
 # Disable Slot Fillers
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/disable-slot-fillers.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/disable-slot-fillers.png" width="80%" />
 </figure>
 
 ## Description

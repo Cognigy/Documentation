@@ -75,24 +75,35 @@ Click on the drop-box within the Assigned Team menu and select the Team to which
   <figcaption>Assign Teams</figcaption>
 </figure>
 
+### Assign Priority
+<div class="divider"></div>
+
+To assign a priority to a conversation within Live Agent, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to assign a priority.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Priority** section, click **Select priority**.
+7. Scroll or type to search for a priority level, then click the intended level. 
+
+The priority will be assigned to the conversation. The matching priority level's icon will now be visable for the conversation within the Conversations column.
 
 ### Assign Labels
 <div class="divider"></div>
 
-Click on Add Labels within the Conversation Labels menu and select the category to which this Conversation belongs.
+To assign a label to a conversation within Live Agent, do the following:
 
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to add a label.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Conversation Labels** section, click **Add Labels**.
+7. Scroll or type to search for a label, then click a label. You can add multiple labels at once. 
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-6.png" width="100%" alt="Live Agent Assign Labels" />
-  <figcaption>Assign Labels</figcaption>
-</figure>
-
-You can see in the screenshot below that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
-  <figcaption>Conversations Actions</figcaption>
-</figure>
+The label will be added to the conversation.
 
 ### Send a Response 
 <div class="divider"></div>
@@ -111,13 +122,27 @@ When you're ready to send the message, click **Send Button** or press ++enter++.
 
 ### Send Quick Responses
 
-For quick reply a user in the conversation chat, you can use canned responses, variables, or a combination of both.
+For quick reply to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
 #### Send a Response with Variables
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
 Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
 
-To include a variable, begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable.
+To include a variable, follow these steps:
+
+1. Begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable. 
+2. Select a variable by using one of these methods:
+    - Click on the desired variable.
+    - Use the arrow keys on your keyboard to navigate to the variable, and then press **Enter**.<br>
+    Alternatively, you can type out variables instead of selecting them from the suggestions.
+
+The variable will be replaced with a value relevant to the current conversation.
+For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> → `David`,
+<code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> → `3705`. If any of the variables do not have values, you will receive a corresponding warning.
+
+Note that you cannot create a custom variable.
 
 There is a list of available variables:
 
@@ -139,9 +164,8 @@ There is a list of available variables:
 | `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
 | `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
 
-The same variables can be used multiple times within a single reply.
 
-Note that you cannot create a custom variable.
+The same variables can be used multiple times within a single reply.
 
 Example:
 
@@ -153,14 +177,12 @@ Our team will review it and provide a response as soon as possible.
 &lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
 </code>
 
-
 #### Send a Canned Response
 
 To include a [canned response](../settings/canned-responses.md) as a reply to the user, follow these steps:
 
-1. Type `/` followed by the short name of the message. For example, `/greeting`.
-2. Once you type `/`, a list of available canned responses will be displayed.
-3. Select the desired canned response from the list.
+1. In the **Reply to User** or **Reply to Bot** sections, type `/`. A list of available canned responses will be displayed. 
+2. Select the desired canned response from the list.
 
 The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
 
@@ -168,6 +190,18 @@ The selected canned response will be inserted into your reply, allowing you to e
 <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
+
+#### Send a Canned Response with Variables
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
+You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
+
+A canned response with variables is called the same way as a [simple canned response](#send-a-response),
+by using the symbol `/`.
+When you select the canned response,
+variables in the response will be replaced with values relevant to the current conversation.
+If any of the variables do not have values, you will receive a corresponding warning.
 
 ### Conversation Actions
 

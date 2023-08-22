@@ -25,7 +25,7 @@ You need to create a new Inbox. To do that, use the [Adding another Inbox for yo
 
 ### Where can I check what the default Inbox is? Does it have a special account id?
 
-The default Inbox has a pattern name `XXXX-default`, for example, `7119-default`. You can rename it in [Inbox Settings](settings/inboxes.md#inbox-settings)
+The default Inbox has a pattern name `XXXX-default`, for example, `7119-default`. You can rename it in [Inbox Settings](settings/inboxes.md#inbox-settings).
 
 ### How to fix custom SSL certificate verification error?
 That may happen because Cognigy.AI is running under a custom SSL certificate (Error can not validate certificate). And Live Agent is failing to perform the requests to it as SSL requests can not be verified.
@@ -38,7 +38,7 @@ For self-hosted installations, the SMTP configuration needs to be modified.
 Head over to [Helm SMTP values](../live-agent/installation/helm-values/smtp.md) for more information.
 
 ### How to create labels and assign them to conversations? 
-Once a label has been created, navigate to a conversation. There is a section called ***"Conversation Labels"*** on the right side, where labels can be added.
+Once a label has been created, navigate to a conversation. There is a section called ***Conversation Labels*** on the right side, where labels can be added.
 
 Head over to [Labels](settings/labels.md) for more information.
 
@@ -63,7 +63,7 @@ To add an Agent to an Inbox, follow these steps:
 Head over to [Inboxes](settings/inboxes.md#inbox-collaborators) for more information.
 
 ### How to create a team and add members to it?
-Navigate to ***"Settings"*** > ***"Teams"*** and click on the ***"Create new team"*** button. In the second step, add the desired Agents. The added Agents can be updated later.
+Navigate to **Settings > Teams** and click on the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.
 
 Head over to [Teams](settings/teams.md) for more information.
 
@@ -75,7 +75,7 @@ This information can be obtained from the Live Agent URL.
 
 A quick way is to select an Inbox on the dashboard screen. The URL will look like: ``https://<live-agent-domain>/app/accounts/1/inbox/4``.
 
-The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**
+The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**.
 
 ### Can a TTL be set for attachments contained in messages?
 Yes, a TTL for attachments contained in messages per account can be defined under the [Account Settings](settings/account-settings.md#attachment-ttl).
@@ -85,7 +85,7 @@ The antivirus file upload scanning needs to be configured at the infrastructure 
 Head over to [File Upload Antivirus Scan Helm Values](../live-agent/installation/helm-values/helm-values.md#file-upload-antivirus-scan) for learning how to configure it.
 
 ### How to navigate to Cognigy.AI from Live Agent?
-Under the profile menu, there is a link called "Cognigy.AI" that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values](../live-agent/installation/helm-values/helm-values.md#urls) for configuring it.
+Under the profile menu, there is a link called Cognigy.AI that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values](../live-agent/installation/helm-values/helm-values.md#urls) for configuring it.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-link-cognigi.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
@@ -105,7 +105,11 @@ Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more in
 
 ### Why is the OData endpoint throwing an unauthorized error while querying?
 If you encounter an unauthorized error, ensure that the API access token belongs to a user with the `Administrator` role for the account being used in the query.
-### How to retrieve all content from a particular collection? (e.g. Conversation, Message)
+### How to retrieve all content from a particular collection?
+
+
+You can retrieve all content from a particular collection, for example, Conversation, Message.
+
 The following filtering query can be performed:
 
 For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'`.

@@ -64,6 +64,12 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.58:
+    - release-notes/4.58.md
+  - 4.57:
+    - release-notes/4.57.md
+  - 4.56:
+    - release-notes/4.56.md
   - 4.55:
     - release-notes/4.55.md
   - 4.54:
@@ -194,9 +200,9 @@ nav:
       - ai/flow-nodes/profile/blind-mode.md
     - Services:
       - ai/flow-nodes/services/services.md
-      - ai/flow-nodes/services/ms-sql.md
-      - ai/flow-nodes/services/mongo-db.md
       - ai/flow-nodes/services/http-request.md
+      - ai/flow-nodes/services/mongo-db.md
+      - ai/flow-nodes/services/ms-sql.md
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
@@ -253,6 +259,7 @@ nav:
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
+        - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -268,6 +275,8 @@ nav:
       - ai/flow-nodes/other-nodes/request-rating.md
       - ai/flow-nodes/other-nodes/llm-prompt.md
       - ai/flow-nodes/other-nodes/gpt-conversation.md
+      - ai/flow-nodes/other-nodes/knowledge-search.md
+      - ai/flow-nodes/other-nodes/search-extract-output.md
       - ai/flow-nodes/other-nodes/close-handover.md
       - ai/flow-nodes/other-nodes/set-handover-inactivity.md
   - NLU:
@@ -409,6 +418,7 @@ nav:
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md
+  - ai/knowledge-ai.md
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -509,6 +519,8 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
+    - Agent Queue:
+        - live-agent/conversation/agent-queue.md
     - Routing:
         - live-agent/conversation/conversation-routing.md
     - Assist Bot:
@@ -570,17 +582,24 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+    - Outbound Call Routing:
+      - voicegateway/webapp/outbound-call-routing.md
   - References:
     - Voice Gateway Events:
         - voicegateway/references/events/overview.md
-        - voicegateway/references/events/RECOGNIZED_SPEECH.md
-        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
         - voicegateway/references/events/CALL_CREATED.md
-        - voicegateway/references/events/CALL_RECONNECTED.md
         - voicegateway/references/events/CALL_COMPLETED.md
         - voicegateway/references/events/CALL_FAILED.md
+        - voicegateway/references/events/CALL_RECONNECTED.md
+        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/RECOGNIZED_SPEECH.md
+        - voicegateway/references/events/TRANSFER_DIAL_ERROR.md
+        - voicegateway/references/events/TRANSFER_DIAL_SUCCESS.md
+        - voicegateway/references/events/TRANSFER_REFER_ERROR.md
+        - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
+        - voicegateway/references/events/USER_BUSY.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
-        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
     - TTS and STT Vendors:
         - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:

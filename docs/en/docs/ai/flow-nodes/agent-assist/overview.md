@@ -17,6 +17,7 @@ Cognigy.AI supports the following Nodes:
 - [Set HTML file](set-html-file.md)
 - [Set Adaptive card tile](set-adaptive-card-tile.md)
 - [Set IFrame tile](set-iframe-tile.md)
+- [Set Agent Assist grid](set-agent-assist-grid.md)
 
 ## More information
 

@@ -143,7 +143,7 @@ provide additional information to conversation messages (if any), such as:
 </figure>
 
 ### Open Flow 
-To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **"Open Flow"** option when right-clicking on a specific message displayed in the conversation panel.
+To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow** option when right-clicking on a specific message displayed in the conversation panel.
 Clicking the button leads you to the related Flow in Cognigy.AI.
 
 !!! note

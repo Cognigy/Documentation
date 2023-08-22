@@ -1,7 +1,7 @@
 ---
- title: "Applications" 
- slug: "vg-webapp-applications" 
- hidden: true 
+title: "Applications" 
+slug: "vg-webapp-applications"
+hidden: false
 ---
 
 # Applications

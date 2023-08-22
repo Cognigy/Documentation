@@ -61,18 +61,18 @@ Once in the Inbox settings, click *Collaborators*. Here you can add your Agent t
 ## Live Agent Setup Complete
 <div class="divider"></div>
 
-This completes the setup of Live Agent!
+This completes the setup of Live Agent.
 
 ## See Further Live Agent Documentation
 <div class="divider"></div>
 
 For more on Live Agent, visit our documentation here: 
 
-- [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)
+- [Live Agent Overview]({{config.site_url}}live-agent/overview/)
 
 ## Additional Inboxes for a Single Project
 <div class="divider"></div>
 
 Do you need additional Inboxes for a single Project? Look here: 
 
-- [**Adding another Inbox for your Project**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/)
+- [Adding another Inbox for your Project]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/)

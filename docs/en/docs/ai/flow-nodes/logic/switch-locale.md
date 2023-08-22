@@ -36,10 +36,10 @@ As of release v4.8 Cognigy Script can be used to switch to another locale by usi
   <figcaption>Switch locale using Cognigy Script</figcaption>
 </figure>
 
-The reference ID you can find in the "**Localization**" of the "**Manage**" application in Cognigy.AI.
+The reference ID you can find in the **Localization** of the **Manage** application in Cognigy.AI.
 
 Click on the 'three dots' button on the right side of any available locale to copy the respective reference ID. 
-Then open the Switch Locale Node configuration editor and enter the reference ID in the  "Locale ID" field when Cognigy Script is activated.
+Then open the Switch Locale Node configuration editor and enter the reference ID in the **Locale ID** field when Cognigy Script is activated.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/cda3717-copy_reference_ID_00.svg" width="100%" />

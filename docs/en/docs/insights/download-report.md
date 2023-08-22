@@ -10,12 +10,12 @@
 <div class="divider"></div>
 
 
-Every widget on the Insights dashboards provides a '**Download report as .csv file**' item in a dropdown menu.
+Every widget on the Insights dashboards provides a **Download report as .csv file** item in a dropdown menu.
 
 To download a report, proceed as follows:
 
 - Click on the **secondary actions menu** in the top right corner of a dashboard widget. 
-- Select "**Download report as .csv file**" with another click. The report will now be stored in a csv file.
+- Select **Download report as .csv file** with another click. The report will now be stored in a csv file.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/9ff6326-Intents_by_Score_Range_3.svg" width="100%" />
