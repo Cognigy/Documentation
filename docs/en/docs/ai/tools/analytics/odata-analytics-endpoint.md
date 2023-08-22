@@ -398,12 +398,11 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### LiveAgentEscalations
 
-!!! note "Available from Cognigy.AI Version 4.49.0"
+[![Version badge](https://img.shields.io/badge/Added in-v4.49-blue.svg)](../../../release-notes/4.49.md)
 
 **Description**
 
-The LiveAgentEscalations collection contains records from Live Agent escalations, and includes the related data about handovers to Live Agent.
-
+The LiveAgentEscalations collection contains records from Live Agent escalations and includes the related data about handovers to Live Agent.
 
 **Example Query**
 
