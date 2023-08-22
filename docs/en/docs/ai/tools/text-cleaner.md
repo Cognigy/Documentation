@@ -6,7 +6,7 @@
 
 # Text Cleaner
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../release-notes/4.58.md)
 
 Cognigy.AI offers various functions to assist in preprocessing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
 
@@ -23,17 +23,18 @@ The functions are available in the following entities:
 
 ## Functions
 
-| Function Name             | Description                                                                                                                                                                              |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| cleanDisallowedSymbols    | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                          |
-| resolveSpelledOutNumbers  | Replaces all number words with their numerical representation. For example, "five and three hundred nineteen" > "5 319".                                                                 |
-| resolvePhoneticAlphabet   | Detects and replaces all words that are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                        |
-| replaceSpecialWords       | Replaces specifically set words with their replacements. For example, "lufthansa" > "lh".                                                                                                |
-| resolveSpelledOutAlphabet | Resolves phrases like "a for anton b as in bertram" to "a b".                                                                                                                            |
-| resolvePhoneticCounters   | Resolves strings like "3 times 2" to "222" or "double 4" to "44". Learn more about special rules in the [Rules for resolvePhoneticCounters](#rules-for-resolvephoneticcounters) section. |
-| contractSingleCharacters  | Joins all single characters standing alone into a full string. For example, "my name is c o g n i g y" > "my name is cognigy".                                                           |
-| contractNumberGroups      | Joins all numbers standing next to each other. For example, "his number is 333 43 22 44" > "his number is 333432244".                                                                    |
-| trimResult                | Trims the start and end of the string and replaces all double (or more) spaces with single spaces.                                                                                       |
+| Function Name                      | Description                                                                                                                                                                                       |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| cleanDisallowedSymbols             | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                                   |
+| resolveSpelledOutNumbers           | Replaces all number words with their numerical representation. For example, "five and three hundred nineteen" > "5 319".                                                                          |
+| resolvePhoneticAlphabet            | Detects and replaces all words that are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                                 |
+| replaceSpecialWords _(Deprecated)_ | Replaces specifically set words with their replacements. For example, "lufthansa" > "lh". <br><br> This function has been deprecated since v4.58. Use the replaceSpecialPhrases function instead. |
+| replaceSpecialPhrases              | Replaces specifically defined phrases with their replacements. For  example, "Conversational AI" is changed to "CAI" or "New York" to "NY".                                                       |
+| resolveSpelledOutAlphabet          | Resolves phrases like "a for anton b as in bertram" to "a b".                                                                                                                                     |
+| resolvePhoneticCounters            | Resolves strings like "3 times 2" to "222" or "double 4" to "44". Learn more about special rules in the [Rules for resolvePhoneticCounters](#rules-for-resolvephoneticcounters) section.          |
+| contractSingleCharacters           | Joins all single characters standing alone into a full string. For example, "my name is c o g n i g y" > "my name is cognigy".                                                                    |
+| contractNumberGroups               | Joins all numbers standing next to each other. For example, "his number is 333 43 22 44" > "his number is 333432244".                                                                             |
+| trimResult                         | Trims the start and end of the string and replaces all double (or more) spaces with single spaces.                                                                                                |
 
 ### Rules for resolvePhoneticCounters
 
