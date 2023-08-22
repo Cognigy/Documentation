@@ -63,13 +63,13 @@ To enable recording calls at an account level, follow these steps:
 2. Go to **Accounts** and click the account to update.
 3. In the upper-right corner, click **Add Canned Response**.
 4. Scroll down to the  **Call recording configuration** section, click  the checkbox for **Enable call recording** and fill in the following fields:
-    - **Audio Format** — Choose between `.wav` and `.mp3` formats.
-    - **Bucket Vendor** — Select your vendor from the list.
-    - **Bucket Name** — Provide the name of your bucket.
-    - **Region** — Choose the region for your storage from the list.
-    - **Access key ID** — Provide the access key ID for your bucket.
-    - **Secret access key** — Provide the secret access key ID for your bucket.
-    - **S3 Tags** - Provide any S3 tags with name and value as needed.
+    - **Audio Format** — choose between `.wav` and `.mp3` formats.
+    - **Bucket Vendor** — select your vendor from the list.
+    - **Bucket Name** — provide the name of your bucket.
+    - **Region** — choose the region for your storage from the list.
+    - **Access key ID** — provide the access key ID for your bucket.
+    - **Secret access key** — provide the secret access key ID for your bucket.
+    - **S3 Tags** - provide any S3 tags with name and value as needed.
 5. Click **Test** to verify your connection.
 6. Click the **Record all calls for this account** checkbox.
 7. Click **Save**.
@@ -86,13 +86,13 @@ To enable recording calls at an application level, follow these steps:
 2. Go to **Accounts** and click the account to update.
 3. In the upper-right corner, click **Add Canned Response**.
 4. Scroll down to the  **Call recording configuration** section, click  the checkbox for **Enable call recording** and fill in the following fields:
-    - **Audio Format** — Choose between `.wav` and `.mp3` formats.
-    - **Bucket Vendor** — Select your vendor from the list.
-    - **Bucket Name** — Provide the name of your bucket.
-    - **Region** — Choose the region for your storage from the list.
-    - **Access key ID** — Provide the access key ID for your bucket.
-    - **Secret access key** — Provide the secret access key ID for your bucket.
-    - **S3 Tags** - Provide any S3 tags with name and value as needed.
+    - **Audio Format** — choose between `.wav` and `.mp3` formats.
+    - **Bucket Vendor** — select your vendor from the list.
+    - **Bucket Name** — provide the name of your bucket.
+    - **Region** — choose the region for your storage from the list.
+    - **Access key ID** — provide the access key ID for your bucket.
+    - **Secret access key** — provide the secret access key ID for your bucket.
+    - **S3 Tags** - provide any S3 tags with name and value as needed.
 5. Click **Test** to verify your connection.
 6. Go to **Applications** and select the Account from the dropdown box on the right side of the screen.
 7. Click the application to edit.
