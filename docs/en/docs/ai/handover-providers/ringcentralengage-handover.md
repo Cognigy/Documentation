@@ -47,6 +47,7 @@ In addition to enabling the **Get Queue Update** option,
 you need to configure the Lookup Node so that the handover type is selected as **Queue**. For more details, refer to the [Handover Status](../flow-nodes/logic/lookup.md#handover-status) section.
 
 The queue updates from RingCentral Engage are visible in the `input.data.handover` object. 
+The object contains the following properties:
 
-
-    
+- `estimatedWaitTime` — the approximate wait time for the user, measured in milliseconds.
+- `position` — the conversation's position in the queue.
