@@ -268,7 +268,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Steps
 
-!!! note "Available from Cognigy.AI Version 4.2.0"
+[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-flow-nodes-and-intents)
 
 **Description**
 
@@ -351,12 +351,11 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Sessions
 
-!!! note "Available from Cognigy.AI Version 4.41.0"
+[![Version badge](https://img.shields.io/badge/Added in-v4.41-blue.svg)](../../../release-notes/4.41.md)
 
 **Description**
 
 The Sessions collection contains a list of all sessions that have occurred. The primary objective of this collection is to provide a list of the analytics steps that took place in any given session and the order in which they took place. This information is included as a comma separated list within a single column called `stepPath`. Each session is exposed in this analytics endpoint as single line item.
-
 
 **Example Query**
 
