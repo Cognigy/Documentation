@@ -1,7 +1,7 @@
 ---
- title: "Lookup" 
- slug: "lookup" 
- hidden: false 
+title: "Lookup" 
+slug: "lookup" 
+hidden: false 
 ---
 # Lookup
 
@@ -33,6 +33,7 @@ Instead of saying if `input.intent === "orderFood"` then x, else -> `input.inten
 <div class="divider"></div>
 
 ### Intent 
+
 This is the default setting for the **Lookup Node**, and it allows you to easily look up the Intent that has been triggered. 
 
 By default, the Intent at the most detailed **[Intent Hierarchy](../../nlu/nlu-overview/intent-hierarchy.md)** level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
@@ -49,6 +50,7 @@ In this case, only the Intents of the chosen level are selectable in the Intent 
     Find more information about building Flows with intents on the **[NLU Overview Page](../../nlu/nlu-overview/overview.md)**.
 
 ### Text
+
 By changing the lookup type to **Text**, the Flow will select a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -57,6 +59,7 @@ By changing the lookup type to **Text**, the Flow will select a case that matche
 </figure>
 
 ### State
+
 By changing the lookup type to **[State](../../tools/interaction-panel/state.md)**, the Flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -68,6 +71,7 @@ By changing the lookup type to **[State](../../tools/interaction-panel/state.md)
     States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. Find out more on the **[States Page]({{config.site_url}}ai/tools/interaction-panel/state/)**.
 
 ### Type
+
 By changing the lookup type to **Type**, the Flow will select a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -79,6 +83,7 @@ By changing the lookup type to **Type**, the Flow will select a case that matche
     The **Type** is defined as a classification of the last user message as determined by the NLU. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer.* 
 
 ### Mode
+
 By changing the lookup type to **Mode**, the Flow will select a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
 <figure>
@@ -90,7 +95,11 @@ By changing the lookup type to **Mode**, the Flow will select a case that matche
     The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
 ### Handover Status
-By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for this type of lookup.
+
+By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for type of lookup.
+
+In the Case Node, you can select the following handover statuses:
+
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-handover-status.png" width="100%" />
