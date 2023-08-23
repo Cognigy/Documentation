@@ -180,9 +180,7 @@ nav:
       - ai/flow-nodes/logic/wait-for-input.md
       - ai/flow-nodes/logic/sleep.md
       - ai/flow-nodes/logic/reset-state.md
-      - ai/flow-nodes/logic/disable-slot-fillers.md
       - ai/flow-nodes/logic/set-state.md
-      - ai/flow-nodes/logic/enable-slot-fillers.md
       - ai/flow-nodes/logic/add-to-context.md
       - ai/flow-nodes/logic/remove-from-context.md
       - ai/flow-nodes/logic/switch-locale.md
@@ -204,6 +202,8 @@ nav:
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
+      - ai/flow-nodes/nlu/disable-slot-fillers.md
+      - ai/flow-nodes/nlu/enable-slot-fillers.md
       - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
       - ai/flow-nodes/nlu/execute-cognigy-nlu.md
       - ai/flow-nodes/nlu/regex-slotfiller.md
