@@ -24,7 +24,7 @@ To build an xApp, follow these steps:
     - **By entering a PIN Code.** Require a PIN and URL combination which users use to access the xApp Session.
       1. Generate a PIN by adding the [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node, and then send this PIN to the users. 
         - The PIN code is valid for 5 minutes, and is stored at `input.apps.session.pin`.
-      2. Share the xApp PIN Page URL with the users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](tokens.md#xapp-pin-page-url) Cognigy token.
+      2. Share the xApp PIN Page URL with users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](tokens.md#xapp-pin-page-url) Cognigy token.
 3. To update an initialized session with a new custom-built xApp Page, use one of the following Nodes:
     - [xApp: Show HTML](../flow-nodes/xApp/set-html-xApp-state.md) to provide HTML code.
     - [xApp: Show Adaptive Card](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md) to build an xApp Page by providing an Adaptive Card in the JSON format.
