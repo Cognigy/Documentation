@@ -229,9 +229,9 @@ The table below presents limitations. These limitations are subject to future ch
 
 **A1**: No, we will provide pricing information by the end of August.
 
-**Q2**: When trying to upload documents, using OpenAI as my LLM, I experience an error: `Request failed with status code 429`
+**Q2**: I encountered a Request failed with status code 429 error while attempting to upload a file. How can I solve this issue?
 
-**A2**: The `429` error occurs when your organization's rate limit is exceeded on the side of your LLM's provider. To learn more, refer to your provider's documentation. To learn more, refer to your provider's documentation. For instance, if you're using the OpenAI API, check out the article [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
+**A2**: The `429` error occurs when your organization's rate limit is exceeded on the side of your LLM's provider. To learn more, refer to your provider's documentation. For instance, if you're using the OpenAI API, check out the article [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
 
 ## More information
 
