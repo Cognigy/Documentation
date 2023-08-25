@@ -17,7 +17,7 @@ This Node gets a new xApp Session PIN which can be accessed using the xApp: Get 
 
 The result is stored at `input.apps.session.pin`.
 
-With this PIN, users can login via an xApp PIN webpage.
+With this PIN, users can log in via an xApp PIN webpage.
 
 ### xApp PIN Page URL
 
