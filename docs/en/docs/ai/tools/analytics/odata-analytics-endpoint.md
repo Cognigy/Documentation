@@ -250,6 +250,8 @@ When retrieving this collection, the endpoint will return the following fields:
 | Field Name             | Description                                           | Type     | Example                                    |
 | ---------------------- | ----------------------------------------------------- | -------- | ------------------------------------------ |
 | _id                    | Unique analytics record ID                            | String   | 5a91d194fde28b0011ce2423                   |
+| projectId              | Project ID                                            | String   | 5a91d194fde28b0011ce2422                   |
+| projectName            | Name of the Cognigy.AI project                        | String   | Project 1                                  |
 | inputId                | Unique input ID                                       | String   | 5a91d194fde28b0011ce2424                   |
 | sessionId              | Session ID                                            | String   | 5a91d194fde28b0011ce2425                   |
 | contactId              | ID of the connecting user                             | String   | myContactID                                |
