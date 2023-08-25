@@ -408,7 +408,7 @@ nav:
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
 
-  - xApp:
+  - xApps:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
       - ai/xApp/getting-started.md
