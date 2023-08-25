@@ -10,7 +10,9 @@ _Tasks_ are specific activities, such as training Intents, importing Snapshots, 
 
 ## Task Panel
 
-The Task Panel provides an overview of both current and previous tasks, serving as a high-level change log for relevant activities. It is accessible by clicking the Task icon located at the top-right of the screen.
+The Task Panel provides an overview of both current and previous tasks,
+serving as a high-level change log for relevant activities.
+It is accessible by clicking the **Task** icon ![task-menu](../../../assets/icons/task-menu.svg) located at the top-right of the Cognigy.AI interface.
 
 <div class="right-image">
   <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_taskmenu.png">
@@ -21,6 +23,8 @@ The Task Panel displays both ongoing and finished tasks.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/task-panel.png"/>
 </figure>
+
+To navigate to the source of the launched task, click the task in the list.
 
 ## Notifications
 
