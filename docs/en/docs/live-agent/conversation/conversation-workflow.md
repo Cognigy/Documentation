@@ -218,7 +218,7 @@ Below is a list describing Conversation actions an Agent can take by clicking th
 | <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | This button allows a human agent to send hyperlinked text to the customer.          |
 
 
-### Agent Assist (Beta)
+### Agent Assist
 <div class="divider"></div>
 
 When Agent Assist is enabled, 
