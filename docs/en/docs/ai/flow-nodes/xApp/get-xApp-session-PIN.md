@@ -15,6 +15,14 @@
 
 This Node gets a new xApp Session PIN which can be accessed using the xApp: Get Session PIN token. The PIN code is only valid for 5 minutes.
 
+The result is stored at `input.apps.session.pin`.
+
+With this PIN, users can login via an xApp PIN webpage.
+
+### xApp PIN Page URL
+
+You will need to share the xApp PIN Page URL with users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](tokens.md#xapp-pin-page-url) Cognigy token.
+
 ## More information
 
 - [xApp Tokens](../../xApp/tokens.md)
