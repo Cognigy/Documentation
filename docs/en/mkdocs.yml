@@ -387,7 +387,7 @@ nav:
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
 
-  - Agent Assist (Beta):
+  - Agent Assist:
       - agent-assist/overview.md
       - agent-assist/getting-started.md
       - agent-assist/architecture.md
@@ -408,7 +408,7 @@ nav:
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
 
-  - xApp (Beta):
+  - xApp:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
       - ai/xApp/getting-started.md

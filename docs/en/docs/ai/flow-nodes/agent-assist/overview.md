@@ -1,14 +1,14 @@
 ---
-title: "Agent Assist (Beta)"
+title: "Agent Assist"
 slug: "overview"
 hidden: true
 ---
 
-# Agent Assist Nodes (Beta)
+# Agent Assist Nodes
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../release-notes/4.51.md)
 
-{! _includes/beta/new-feature-note.md !}
+{! _includes/agent-assist/pricing.md !}
 
 The Agent Assist Nodes allow users to customize the Agent Assist workspace by adding HTML, Adaptive Cards, and IFrame content.
 

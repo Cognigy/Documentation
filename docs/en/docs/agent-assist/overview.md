@@ -1,14 +1,14 @@
 ---
-title: "Agent Assist (Beta)"
+title: "Agent Assist"
 slug: "overview"
 hidden: false
 ---
 
-# Agent Assist Workspace (Beta)
+# Agent Assist Workspace
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../release-notes/4.51.md)
 
-{! _includes/beta/new-feature-note.md !}
+{! _includes/agent-assist/pricing.md !}
 
 _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's agent desktop, it enhances the overall efficiency of your contact center.
 

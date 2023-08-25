@@ -5,9 +5,9 @@ description: "The Knowledge Search Node performs a content search and retrieves 
 hidden: false
 ---
 
-# Knowledge Search (Beta)
+# Knowledge Search
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../../release-notes/4.57.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/knowledge-search.png" width="80%"/>

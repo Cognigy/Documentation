@@ -1,15 +1,15 @@
 ---
-title: "Knowledge AI (Beta)"
-slug: "Knowledge AI (Beta)"
+title: "Knowledge AI"
+slug: "Knowledge AI"
 description: "Cognigy Knowledge AI technology empowers you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes."
 hidden: false
 ---
 
-# Knowledge AI (Beta)
+# Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57(Beta)-purple.svg)](../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../release-notes/4.57.md)
 
-{! _includes/beta/new-feature-note-knowledge-ai.md !}
+{! _includes/ai/terms-of-use.md !}
 
 Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 

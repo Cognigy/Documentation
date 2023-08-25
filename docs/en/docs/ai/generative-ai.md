@@ -1,12 +1,12 @@
 ---
-title: "Generative AI (Beta)"
-slug: "Generative AI (Beta)"
+title: "Generative AI"
+slug: "Generative AI"
 hidden: false
 ---
 
-# Generative AI (Beta)
+# Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52(Beta)-purple.svg)](../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
 
 {! _includes/ai/terms-of-use.md !}
 

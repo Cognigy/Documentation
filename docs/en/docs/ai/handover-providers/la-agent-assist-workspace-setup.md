@@ -5,9 +5,9 @@ hidden: false
 ---
 # Agent Assist Workspace Setup
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-{! _includes/beta/new-feature-note.md !}
+{! _includes/agent-assist/pricing.md !}
 
 {! _includes/agent-assist/before-you-begin.md !}
 
