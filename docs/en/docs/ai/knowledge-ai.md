@@ -225,9 +225,13 @@ The table below presents limitations. These limitations are subject to future ch
 
 ## FAQ
 
-**Q**: Will Knowledge AI be free of charge?
+**Q1**: Will Knowledge AI be free of charge?
 
-**A**: No, we will provide pricing information by the end of August.
+**A1**: No, we will provide pricing information by the end of August.
+
+**Q2**: When trying to upload documents, using OpenAI as my LLM, I experience an error: `Request failed with status code 429`
+
+**A2**: 429 errors are caused by reaching your organization's rate limit. You can read more about this in the Open API documentation: [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors)
 
 ## More information
 
