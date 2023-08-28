@@ -11,8 +11,9 @@ After you have [Set up your Endpoint and Flow for Handover to Live Agent]({{conf
 ## Creating a User
 <div class="divider"></div>
 
-To create a User, proceed as follows:
-1. Login to Cognigy.AI
+To create a User, follow these steps:
+
+1. Open the Cognigy.AI interface.
 
 If the Agent or Admin you want to add already exists as a User in Cognigy.AI, skip to [Adding Live Agent Roles to Users](#Adding-Live-Agent-Roles-to-Users). 
 
