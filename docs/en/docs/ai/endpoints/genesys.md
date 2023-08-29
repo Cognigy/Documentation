@@ -11,7 +11,7 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="100%" />
 </figure>
 
-The **Genesys** Endpoint allows connecting virtual agent to the [Genesys Cloud platform](https://apps.mypurecloud.de/).
+The **Genesys** Endpoint allows connecting virtual agent to the [Genesys Cloud platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
 
 ## Generic Endpoint Settings
 
