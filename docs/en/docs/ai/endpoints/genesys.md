@@ -11,7 +11,7 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="100%" />
 </figure>
 
-The **Genesys** Endpoint allows connecting virtual agent to the [Genesys Cloud platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
+The **Genesys** Endpoint allows connecting virtual agent to the [Genesys Cloud CX platform](https://apps.mypurecloud.de/) using a [Genesys Bot Connector](https://help.mypurecloud.com/articles/about-genesys-bot-connector/).
 
 ## Generic Endpoint Settings
 
@@ -52,7 +52,7 @@ To set up the Genesys Endpoint, follow these steps:
 6. In the **Genesys Bot Connector Setup** section, in the **Verify Token** field, create a verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. Save this token for later usage in Genesys.
 7. Click **Save**.
 
-### Configure Genesys
+### Configure Genesys Cloud CX
 
 #### Create a Genesys Bot Connector
 
