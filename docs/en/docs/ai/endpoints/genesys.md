@@ -30,7 +30,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 | Parameter    | Description                                                                                                                                                      |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Verify Token | A verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. |
+| Verify Token | A verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. This token needs to be generated on the Cognigy side and can consist of letters, numbers, and punctuation marks.|
 
 ## How to Set up
 
