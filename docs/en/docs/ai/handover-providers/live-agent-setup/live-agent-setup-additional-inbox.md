@@ -7,15 +7,13 @@
 
 <div class="divider"></div>
 
-Normally you will not need to manually create an Inbox for your Project. However, if necessary for your project, you can create additional Inboxes in Live Agent and set them up for handover in your Flows.
-
+You can create additional Inboxes in Live Agent and set them up for handover in your Flows.
 ## Add another Inbox in Live Agent
 <div class="divider"></div>
 
 To add another Inbox in Live Agent, follow these steps:
 
 1. In the sidebar of the Live Agent dashboard, click **Inboxes**.
-
 2. In the upper-right corner, click the **+ Add Inbox** button. Live Agent will show you a screen to set up your Inbox.
 
 
