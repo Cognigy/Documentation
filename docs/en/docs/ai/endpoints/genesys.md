@@ -136,7 +136,7 @@ To create a digital bot flow in Architect, configure the inbound message flow:
 
 When your inbound message flow was created, you will this flow in the architecture list.
 
-To learn more about designing the flow and [configure inbound message flow](https://help.mypurecloud.com/articles/inbound-message-flows/) settings.
+To learn more about designing the flow, see [Configure Inbound Message Flow](https://help.mypurecloud.com/articles/inbound-message-flows/) settings.
 
 #### Configure a Messenger
 
