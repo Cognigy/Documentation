@@ -5,9 +5,9 @@ hidden: false
 ---
 # Add another Inbox for your Project
 
-You can create extra inboxes in Live Agent and configure them for handover within your Flows.
+You can create extra Inboxes in Live Agent and configure them for handover within your Flows.
 
-## Add another Inbox in Live Agent
+## Add an Additional Inbox
 
 To add another Inbox in Live Agent, follow these steps:
 
