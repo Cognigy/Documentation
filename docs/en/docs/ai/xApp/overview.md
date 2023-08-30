@@ -20,7 +20,7 @@ Alternatively, for more customization, you can create your own Node by implement
 
 ## Compatibility
 
-- Cognigy xApps is compatible with the browsers and channels listed [here](supported-browsers-and-channels.md).
+- Cognigy xApps are compatible with the browsers and channels listed [here](supported-browsers-and-channels.md).
 
 ## Concepts 
 
