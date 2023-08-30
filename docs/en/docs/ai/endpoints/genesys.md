@@ -109,7 +109,7 @@ Your integration will be listed among integrations.
 
 To create a digital bot flow in Architect, configure the inbound message flow:
 
-1. Go to **Admin > Architecture**.
+1. Go to **Admin > Architect**.
 2. Click or hover over the **Flows** menu and select **Inbound Message**.
 3. Click **Add**. The **Create Flow** dialog box opens.
 4. In the **Name** field, specify a unique name for the inbound message flow.
