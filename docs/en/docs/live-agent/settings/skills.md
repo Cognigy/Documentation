@@ -1,12 +1,13 @@
 ---
 title: "Skills"
 slug: "skills"
+description: ""
 hidden: false
 ---
 
 # Skills
 
-Skills are specific abilities that human agents possess, such as language proficiency and expertise in particular domains.
+_Skills_ are specific abilities that human agents possess, such as language proficiency and expertise in particular domains.
 
 Only users with the Administrator and Supervisor roles can configure and assign skills.
 
@@ -40,7 +41,7 @@ To assign a skill to a human agent, follow these steps:
 
 The skills will appear in the **Skills** column of the row with the agent.
 
-If you want to remove a skill from the raw with the agent, open the **Skills** window and click ![cross](images/icons/cross.svg)  on the right side of the selected skill.
+If you want to remove a skill from the raw with the agent, open the **Skills** window and click ![cross](../images/icons/cross.svg)  on the right side of the selected skill.
 
 
 

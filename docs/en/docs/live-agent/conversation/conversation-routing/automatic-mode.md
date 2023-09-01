@@ -1,26 +1,26 @@
 ---
-title: "Conversation Routing" 
-slug: "conversation-routing"
-description: "With Cognigy Live Agent conversation routing, you can improve customer support by efficiently assigning conversations based on agent availability and workload. This feature helps enhance productivity and optimize resource utilization."
-hidden: false 
+title: "Automatic Mode"
+slug: "automatic-mode"
+description: "Automatic mode in Live Agent includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents."
+hidden: false
 ---
 
-## Automatic Mode
+# Automatic Mode
 
-Automatic mode in Live Agent includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic Assignment evenly distributes conversations among online agents, while Automatic Reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
+_Automatic mode_ includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic Assignment evenly distributes conversations among online agents, while Automatic Reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
 
 In automatic mode, conversations can be automatically assigned or reassigned to users with specific Live Agent roles within a specific inbox: `Agent`, `Supervisor`, or `Administrator`.
 
-### Automatic Assignment
+## Automatic Assignment
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../release-notes/4.47.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
 
 Live Agent provides an auto-assignment system for conversations based on _round-robin_ logic. Using this logic, the system automatically distributes incoming conversations equally among your human agents. It prevents your agents from becoming overwhelmed and ensures your customers receive prompt responses.
 
 When set up, the action lists users and assigns conversations one by one. For example, if your Customer Support team consists of three users, the first conversation goes to Alex, the second to David, and the third to Sara. When the fourth conversation arrives, the cycle starts again, and it will be assigned to Alex.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/round-robin.png" width="70%" />
+    <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/round-robin.png" width="50%" />
     <figcaption>Round-robin approach</figcaption>
 </figure>
 
@@ -29,34 +29,34 @@ You can configure the auto-assignment system by using the **Auto Assignment** se
 There are different scenarios for distributing conversations to human agents based on their online status and workload:
 
 - **Online Agents**. When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
-Unassigned conversations are automatically assigned to agents when the [limit threshold](../settings/account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
+  Unassigned conversations are automatically assigned to agents when the [limit threshold](../../settings/account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
 - **Offline Agents**. When a conversation is created in the Inbox, and there are no agents online with access to it, the system will remain all conversations unassigned.
 
 To configure auto assignment in your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![gear](../../assets/icons/gear.svg).
+2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
 4. From the **Allow auto assignment** list, select one of the following options:
-     * Enable — allows the automatic assignment of agents to conversations. The setting is activated by default.
-     * Disable — allows the manual assignment of agents to conversations.
+    * Enable — allows the automatic assignment of agents to conversations. The setting is activated by default.
+    * Disable — allows the manual assignment of agents to conversations.
 
 The changes will be applied.
 
-#### Consider Conversation Count
+### Consider Conversation Count
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../../release-notes/4.57.md)
 
-By default, [Automatic Assignment](#automatic-assignment) does not take into account the number of conversations being handled by each agent. 
+By default, [Automatic Assignment](#automatic-assignment) does not take into account the number of conversations being handled by each agent.
 In this case, new conversations may be assigned to any available agent without considering their current workload.
 
 You can control this behavior by using the **Consider conversation count** setting.
 
-When this setting is enabled, 
+When this setting is enabled,
 Live Agent will take into account the number of conversations
-that each agent is already handling before assigning new conversations to them. 
-For example, if Alex is currently handling three conversations, 
-and Sara is handling one conversation, the system will assign new incoming conversations to Sara, 
+that each agent is already handling before assigning new conversations to them.
+For example, if Alex is currently handling three conversations,
+and Sara is handling one conversation, the system will assign new incoming conversations to Sara,
 as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5).
 
 If all agents have the same number of active conversations,
@@ -65,15 +65,15 @@ the standard round-robin logic will be applied to assign each agent the next con
 To consider conversation count withing your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![gear](../../assets/icons/gear.svg).
+2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
 4. Activate the **Consider conversation count** option.
 
 The changes will be applied.
 
-### Automatic Reassignment
+## Automatic Reassignment
 
-Live Agent provides an auto-reassignment system for conversations. This system follows a round-robin approach, similar to [automatic assignment](#automatic-assignment). 
+Live Agent provides an auto-reassignment system for conversations. This system follows a round-robin approach, similar to [automatic assignment](#automatic-assignment).
 
 The auto-reassignment system operates in real-time, triggered by specific agent-related events. These events include:
 
@@ -87,7 +87,7 @@ You can configure the auto-reassignment system by using the **Allow conversation
 To configure auto reassignment in your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![gear](../../assets/icons/gear.svg).
+2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
 4. From the **Allow conversations to be reassigned** list, select one of the following options:
     * Enable — allows the automatic reassignment of agents to conversations. The setting is activated by default.
@@ -95,17 +95,17 @@ To configure auto reassignment in your Inbox, follow these steps:
 
 The changes will be applied.
 
-### Automatic Assignment and Reassignment for Busy Agents
+## Automatic Assignment and Reassignment for Busy Agents
 
 By default, human agents with `Busy` status cannot be assigned or reassigned automatically.
 
-If an agent is already assigned conversations before they become busy, those assigned conversations will remain in the [Agent Queue](agent-queue.md). However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
+If an agent is already assigned conversations before they become busy, those assigned conversations will remain in the [Agent Queue](../agent-queue.md). However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
 
-You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
+You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
 
 When the setting is activated, busy agents will be treated as having an `Online` status and following the same assignment and reassignment rules as other available agents.
 
-## Automatic Mode: Common Scenarios
+## Common Scenarios
 
 The routing process depends on incoming data and the combination of settings you have configured at the Account Settings level and Inbox level.
 
@@ -128,10 +128,10 @@ Source table:
 
 Conditions:
 
-- No [conversation limit](../settings/account-settings.md#conversation-limit-per-agent) per agent.
+- No [conversation limit](../../settings/account-settings.md#conversation-limit-per-agent) per agent.
 - 4 conversations are created.
 - Activated:
-    - Automatic Conversation Assignment. 
+    - Automatic Conversation Assignment.
     - Automatic Conversation Reassignment.
 - Deactivated:
     - Auto Assign Conversations to a Busy Agent.
@@ -152,7 +152,7 @@ Source table:
 | Agent 4    | 2     | Offline |
 ```
 
-Common conditions: 
+Common conditions:
 
 - The limit is 2 conversations per agent.
 - 4 conversations are created.
@@ -332,7 +332,7 @@ Common conditions:
     - Automatic Conversation Reassignment.
     - Automatic Conversation Assignment.
 - Deactivated:
-   - Consider Conversation Count.
+    - Consider Conversation Count.
 
 **Example 1**
 
@@ -410,12 +410,14 @@ Additional conditions:
 
 - 4 new incoming conversations.
 - Auto Assign Conversations to a Busy Agent is deactivated.
-- Agent 3 has changed the status to `Busy`. 
+- Agent 3 has changed the status to `Busy`.
 
 Result: The first two incoming conversations will be assigned to Agent 3,
 the third to Agent 1, the third to Agent 2.
 
 ## More Information
 
-- [Inboxes](../settings/inboxes.md)
-- [Account Settings](../settings/account-settings.md)
+- [Manual Conversation Mode](manual-mode.md)
+- [Conversation Routing](automatic-mode.md)
+- [Inboxes](../../settings/inboxes.md)
+- [Account Settings](../../settings/account-settings.md)

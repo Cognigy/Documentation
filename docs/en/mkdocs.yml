@@ -522,7 +522,9 @@ nav:
     - Agent Queue:
         - live-agent/conversation/agent-queue.md
     - Routing:
-        - live-agent/conversation/conversation-routing.md
+        - live-agent/conversation/conversation-routing/overview.md
+        - live-agent/conversation/conversation-routing/manual-mode.md
+        - live-agent/conversation/conversation-routing/automatic-mode.md
     - Assist Bot:
         - live-agent/conversation/assist-bot.md
     - LA Agent Assist:
@@ -537,7 +539,7 @@ nav:
       - live-agent/settings/teams.md
       - live-agent/settings/inboxes.md
       - live-agent/settings/labels.md
-      - live-agent/skills.md
+      - live-agent/settings/skills.md
       - live-agent/settings/automation-rules.md
       - live-agent/settings/canned-responses.md
       - live-agent/settings/attachments.md
