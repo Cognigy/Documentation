@@ -15,8 +15,27 @@
 ## Description
 <div class="divider"></div>
 
-This Node initializes a new xApp session. After the execution of this Node, the xApp can be accessed via the xApp Session URL, which is exposed via the [xApp Session URL token](../../xApp/tokens.md). 
+This Node initializes a new xApp session. After the execution of this Node, the xApp can be accessed via links with the [xApp Session URL token](../../xApp/tokens.md#xapp-session-url), or [xApp PIN Page URL token](../../xApp/tokens.md#xapp-pin-page-url)
 
+### Without entering a PIN Code 
+
+To only require only a URL to access an xApp session, a Session URL can be shared. This is available via the [xApp Session URL token](../../xApp/tokens.md#xapp-session-url).
+
+The **xApp Session URL token** provides a URL, which is also accessible via `input.apps.url` in the input object.
+
+With the provided link, a user can access the xApp page without requiring a PIN.
+
+### By entering a PIN Code 
+
+To require a PIN to access an xApp session, a PIN and PIN Page URL must be shared. 
+
+This functionality is available via the [xApp PIN Page URL token](../../xApp/tokens.md#xapp-pin-page-url) and the [xApp: Get Session PIN Node](get-xApp-session-PIN.md).
+
+The **Get Session PIN Node** generates a PIN, which is accessible via the [xApp Session PIN token](../../xApp/tokens.md#xapp-session-pin) or `input.apps.session.pin` in the input object.
+
+The **xApp PIN Page URL token** provides a URL, which is also accessible via `input.apps.baseUrl` in the input object.
+
+With the provided link, a user can access the PIN page and enter their provided PIN to gain access to the xApp.
 
 ### Style Customization
 

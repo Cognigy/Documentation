@@ -22,12 +22,16 @@ To build an xApp, follow these steps:
 2. Allow users to access the xApp Session using one of the following methods:
 
     === "Without entering a PIN Code"
-         2.1 Share the xApp Session URL with the users. The URL can be sent in the Flow with an [xApp Session URL](tokens.md#xapp-session-url) Cognigy token.
+         Share the xApp Session URL with your users. 
+
+         2.1. The URL can be sent in the Flow with an [xApp Session URL](tokens.md#xapp-session-url) Cognigy token. The Session URL is also available at `input.apps.url`.
 
     === "By entering a PIN Code"    
          Share a combination of the PIN and the xApp PIN Page URL, which users utilize to access the xApp Session:<br>
-         2.1 Generate a PIN by adding the [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node, and then send this PIN to the users. The PIN code is valid for 5 minutes, and is stored at `input.apps.session.pin`.<br>
-         2.2 Share the xApp PIN Page URL with users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](tokens.md#xapp-pin-page-url) Cognigy token.
+
+         2.1. Generate a PIN by adding the [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node, and then send this PIN to the users. The PIN code is valid for 5 minutes, and is available via the [xApp Session PIN token](tokens.md#xapp-session-pin) or `input.apps.session.pin`.<br>
+
+         2.2. Share the xApp PIN Page URL with users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](tokens.md#xapp-pin-page-url) Cognigy token and is also available at `input.apps.baseUrl`.
 
 3. To update an initialized session with a new custom-built xApp Page, use one of the following Nodes:
     - [xApp: Show HTML](../flow-nodes/xApp/set-html-xApp-state.md) to provide HTML code.
