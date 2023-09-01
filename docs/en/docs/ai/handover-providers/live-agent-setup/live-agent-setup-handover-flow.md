@@ -3,12 +3,25 @@
  slug: "live-agent-setup-handover-flow" 
  hidden: false 
 ---
-# Setup a Cognigy.AI Flow for Handover
-<div class="divider"></div>
+# Set up a Cognigy.AI Flow for Handover
 
 ## Set up a Flow for Handover
 
-Once you have [Set up your Endpoint for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/), you can set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent.
+Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md), you can set up your [Flow](../../../ai/resources/build/flows.md) for handover to Live Agent.
+
+To create a Live Agent Flow, follow these steps:
+
+1. Open the Cognigy.AI interface. 
+2. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**. 
+3. Click **+ New Flow**.
+4. Specify a unique name and provide a relevant description.
+5. Click **Create**.
+6. In the Flow editor, add a Say Node.
+7. Open the Node editor by clicking the Say Node.
+8. In the **Text** field, enter the following text: `Your question has been redirected to a contact center consultant`.
+9. Click **Save Node**
+10. Below the Say Node, add a **Handover to Agent** Node.
+11. 
 
 Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
 
