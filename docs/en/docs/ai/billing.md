@@ -64,9 +64,9 @@ Billing 2: It will be charged as 3 conversations.
 
 ## xApps
 
-xApps are a separately licensed Cognigy feature which must be purchased as an add-on to the Cogngiy.AI license.
+The xApps are a separately licensed Cognigy feature, which must be purchased as an add-on to the Cognigy.AI license.
 
-In addition, the general billable unit for Cognigy.AI, the conversation, will be influenced if xApps are used. This is because an xApp session is a part of a Cognigy session.
+In addition, the general billable unit for Cognigy.AI, the conversation, will be influenced if xApps are used. This is because an xApp session is part of a Cognigy session.
 
 The xApp submit data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
 
