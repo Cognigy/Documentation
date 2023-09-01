@@ -32,7 +32,7 @@ With the provided link, a user can access the xApp page without requiring a PIN.
 
 ### By entering a PIN Code 
 
-To require a PIN to access an xApp session, a PIN and PIN Page URL must be shared. 
+To allow users to access the xApp session via a PIN, share both a PIN and a PIN Page URL with the users. 
 
 This functionality is available via the [xApp PIN Page URL](../../xApp/tokens.md#xapp-pin-page-url) token and the [xApp: Get Session PIN](get-xApp-session-PIN.md) Node.
 
