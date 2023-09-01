@@ -7,7 +7,7 @@
 
 The customer initiates a Conversation from the website front end - through the Webchat widget.
 
-For example: A customer types 'Hi'
+For example, A customer types 'Hi'
 
 
 <figure>
@@ -34,14 +34,14 @@ Go to the home screen of Live Agent Agent Dashboard
 
 Click on the Conversation bubble icon in the sidebar. Then click on All Conversations. Conversations which customers have initiated can be seen here.
 
-Now click on a specific Conversation. The Conversation will open, with further details and actions available in the right-hand side panel.
+Now click on a specific Conversation. The Conversation will open with further details and actions available in the right-hand side panel.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
 </figure>
 
-#### Show All Inbox Setting
+#### Show All Conversations: Inbox Settings
 
 By default, users with the Agent role cannot see the "All" tab for all Conversations. However, there is a setting enabling it per Inbox. When enabled, the user can see all Conversations, including those from other Agents. Otherwise, access will be restricted.
 
@@ -75,46 +75,135 @@ Click on the drop-box within the Assigned Team menu and select the Team to which
   <figcaption>Assign Teams</figcaption>
 </figure>
 
+### Assign Priority
+<div class="divider"></div>
+
+To assign a priority to a conversation within Live Agent, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to assign a priority.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Priority** section, click **Select priority**.
+7. Scroll or type to search for a priority level, then click the intended level. 
+
+The priority will be assigned to the conversation. The matching priority level's icon will now be visable for the conversation within the Conversations column.
 
 ### Assign Labels
 <div class="divider"></div>
 
-Click on Add Labels within the Conversation Labels menu and select the category to which this Conversation belongs.
+To assign a label to a conversation within Live Agent, do the following:
 
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to add a label.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Conversation Labels** section, click **Add Labels**.
+7. Scroll or type to search for a label, then click a label. You can add multiple labels at once. 
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-6.png" width="100%" alt="Live Agent Assign Labels" />
-  <figcaption>Assign Labels</figcaption>
-</figure>
+The label will be added to the conversation.
 
-
-
-You can see in the screenshot below, that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
-
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
-  <figcaption>Conversations Actions</figcaption>
-</figure>
-
-
-### Reply To A Conversation
+### Send a Response 
 <div class="divider"></div>
 
-You can reply to a customer's Conversation by typing in the Reply section. 
+To respond to a user in the conversation chat, type your message in the **Reply** section.
 
-Pressing Shift+Enter will allow you to enter an additional new line into your response, while pressing Enter will send the message.
+For quick reply, you can use canned responses, variables, or a combination of both.
 
+If you need to add a new line in your response, press ++shift+enter++.
+When you're ready to send the message, click **Send Button** or press ++enter++.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-8.png" width="100%" alt="Live Agent Conversations Reply" />
-  <figcaption>Reply Conversation</figcaption>
+  <figcaption>Reply to a Message</figcaption>
 </figure>
 
+### Send Quick Responses
 
-Click on the Send button or press Enter to send your message to the customer.
+For quick reply to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
-###  Conversation Actions
+#### Send a Response with Variables
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
+Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
+
+To include a variable, follow these steps:
+
+1. Begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable. 
+2. Select a variable by using one of these methods:
+    - Click on the desired variable.
+    - Use the arrow keys on your keyboard to navigate to the variable, and then press **Enter**.<br>
+    Alternatively, you can type out variables instead of selecting them from the suggestions.
+
+The variable will be replaced with a value relevant to the current conversation.
+For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> → `David`,
+<code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> → `3705`. If any of the variables do not have values, you will receive a corresponding warning.
+
+Note that you cannot create a custom variable.
+
+There is a list of available variables:
+
+| Variable                | Description                                                                                                                                        |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| `conversation.id`       | The ID of the current conversation.                                                                                                                |
+| `contact.id`            | The ID belonging to a user who creates a conversation.                                                                                             |
+| `contact.id`            | The user ID belonging to a user who creates a conversation.                                                                                        |
+| `contact.name`          | The user's first and last names. If both are not specified in the profile, the default value `customer` will be used.                              |
+| `contact.first_name`    | The user's first name. If it is not specified in the profile, the last name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.last_name`     | The user's last name. If it is not specified in the profile, the first name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.email`         | The user's email address.                                                                                                                          |
+| `contact.age`           | The user's age.                                                                                                                                    |
+| `contact.gender`        | The user's gender.                                                                                                                                 |
+| `contact.birthday`      | The user's date of birth.                                                                                                                          |
+| `contact.location`      | The user's current location.                                                                                                                       |
+| `contact.accepted_gdpr` | The user's acceptance of the General Data Protection Regulation (GDPR) policy.                                                                     |
+| `agent.name`            | The first and last names of the human agent.                                                                                                       |
+| `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
+| `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
+
+
+The same variables can be used multiple times within a single reply.
+
+Example:
+
+<code>
+Hi &lcub;&lcub;contact.first_name&rcub;&rcub;,
+Thank you for your recent message. We appreciate your inquiry.
+Your conversation with the ID &lcub;&lcub;conversation.id&rcub;&rcub; has been received.
+Our team will review it and provide a response as soon as possible.
+&lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
+</code>
+
+#### Send a Canned Response
+
+To include a [canned response](../settings/canned-responses.md) as a reply to the user, follow these steps:
+
+1. In the **Reply to User** or **Reply to Bot** sections, type `/`. A list of available canned responses will be displayed. 
+2. Select the desired canned response from the list.
+
+The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
+
+<figure>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
+  <figcaption>Send Canned Response</figcaption>
+</figure>
+
+#### Send a Canned Response with Variables
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+
+You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
+
+A canned response with variables is called the same way as a [simple canned response](#send-a-response),
+by using the symbol `/`.
+When you select the canned response,
+variables in the response will be replaced with values relevant to the current conversation.
+If any of the variables do not have values, you will receive a corresponding warning.
+
+### Conversation Actions
 
 [![Version badge](https://img.shields.io/badge/updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
 
@@ -129,10 +218,11 @@ Below is a list describing Conversation actions an Agent can take by clicking th
 | <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | This button allows a human agent to send hyperlinked text to the customer.          |
 
 
-### Agent Assist (Beta)
+### Agent Assist
 <div class="divider"></div>
 
-When Agent Assist is enabled, Agents will - based on customer input - receive AI-powered Agent Assist output as part of the conversation, which can help to better answer a customer.
+When Agent Assist is enabled, 
+Agents will (based on customer input) receive AI-powered Agent Assist output as part of the conversation, which can help to better answer a customer.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
@@ -144,21 +234,6 @@ If forwarding was enabled for Assist messages, the Agent can click the blue arro
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
     </figure>
 
-### Send a Canned Response
-<div class="divider"></div>
-
-To include a [canned response](../canned-responses.md) as a reply to the user, follow these steps:
-
-1. Type `/` followed by the short name of the message. For example, `/greeting`.
-2. Once you type `/`, a list of available canned responses will be displayed.
-3. Select the desired canned response from the list.
-
-The selected canned response will be inserted into your reply, allowing you to easily include prewritten messages in your conversation.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
-  <figcaption>Send Canned Response</figcaption>
-</figure>
 
 ### How to request file upload
 <div class="divider"></div>
@@ -168,7 +243,7 @@ The selected canned response will be inserted into your reply, allowing you to e
     
     Maximum File Size: 40MB
 
-There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box you can click on the "Request file" icon.
+There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box, you can click on the "Request file" icon.
 
 
 <figure>
@@ -223,7 +298,7 @@ There is an option to discuss the customer's Conversation with another Agent, sh
 </figure>
 
 
-Type '@' in the Private Note window, and all Agents who have been added to this Team will be listed. Select an Agent, and type in a message to consult with the selected Agent.
+Type '@' in the Private Note window, and all Agents who have been added to this Team will be listed. Select an Agent and type in a message to consult with the selected Agent.
 
 
 <figure>
@@ -243,7 +318,7 @@ Click on Add Note to send the message. You can see a locked sign on the message 
 
 The second Agent addressed in the private note will receive a notification in their account.
 
-Replies sent by second Agent will be visible in the Private Note window.
+Replies sent by the second Agent will be visible in the Private Note window.
 
 #### Delete Private Note
 <div class="divider"></div>
@@ -271,7 +346,7 @@ To send a copy of the current conversation, click on the button labeled Send Tra
 </figure>
 
 
-A screen opens up which allows an email can be sent to Agents in the Team. The chat transcript can also be sent to the customer or another selected e-mail address.
+A screen opens up which allows an email to be sent to Agents in the Team. The chat transcript can also be sent to the customer or another selected e-mail address.
 
 
 <figure>
@@ -285,7 +360,7 @@ Select your desired option and click on Submit. A message will be displayed "The
 ### Transferring Agents
 <div class="divider"></div>
 
-You can transfer an issue/Conversation to another Agent by selecting a different Agent from Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
+You can transfer an issue/Conversation to another Agent by selecting a different Agent from the Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
 
 ### Setting Reminders and Status
 <div class="divider"></div>

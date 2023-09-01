@@ -6,7 +6,7 @@
 # Set Session Config
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-set-session-config-node.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/set-session-config.png" width="80%" />
   <figcaption>Voice Gateway Set Session Config Node</figcaption>
 </figure>
 
@@ -15,4 +15,4 @@
 The Set Session Config Node configures the Voice Gateway session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
 
 !!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.
+    You can find more information about activity parameters on our [Parameter Details](parameter-details.md) page.

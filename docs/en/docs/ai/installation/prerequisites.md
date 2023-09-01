@@ -33,7 +33,7 @@ For a Cognigy.AI installation with English as the default NLU language, we recom
 To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kubernetes.io/docs/reference/kubectl/) binary installed on a Linux machine which can access the Kubernetes cluster for Cognigy.AI installation. Refer to the official Kubernetes documentation for details. Note that the kubectl version must match the version of your Kubernetes cluster.
 
 ### Helm Package Manager
-Our products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Get familiar with basic Helm operations before proceeding with installation.
+Cognigy products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Get familiar with basic Helm operations before proceeding with installation.
 
 !!! warning "Kustomize deprecation"
     [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are **deprecated**. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x.zip). We will stop updating our **kustomize files end this year (31st December 2022)**.
@@ -49,22 +49,22 @@ Cognigy.AI product requires a license key which you will receive once a license 
 Cognigy.AI is fully containerized and its binaries are shipped in a form of Docker images which are stored in Cognigy's container registry. You will receive credentials which are necessary to authenticate and pull these images.
 
 ### Domains / DNS names
-Cognigy.AI exposes several web services for which you will need to assign DNS records in a public domain operated by your organization. Ensure that you have access to DNS provider of your domain (e.g. Go- Daddy, United-Domains etc.) to configure DNS records. If our product needs to be accessible only from your private network, ensure that you can create DNS records in your private domain.
+Cognigy.AI exposes several web services for which you will need to assign DNS records in a public domain operated by your organization. Ensure that you have access to DNS provider of your domain (e.g. Go- Daddy, United-Domains etc.) to configure DNS records. If Cognigy.AI needs to be accessible only from your private network, ensure that you can create DNS records in your private domain.
 
 ### TLS certificate(s)
-To authenticate a web server and to encrypt web traffic between clients and the web server you need an SSL certificate for the domain in which DNS records for Cognigy.AI will be created. We highly suggest a wildcard certificate as it simplifies installation process. If you cannot use a wildcard certificate for some reason, make sure that your standalone certificate(s) cover(s) all DNS records for our product. The reverse-proxy we ship with our product cannot support multiple certificates out of the box and Cognigy will not provide support for such configurations.
+To authenticate a web server and to encrypt web traffic between clients and the web server you need an SSL certificate for the domain in which DNS records for Cognigy.AI will be created. We highly suggest a wildcard certificate as it simplifies installation process. If you cannot use a wildcard certificate for some reason, make sure that your standalone certificate(s) cover(s) all DNS records for Cognigy.AI. The reverse-proxy we ship with Cognigy.AI cannot support multiple certificates out of the box and Cognigy will not provide support for such configurations.
 
 ### Whitelisting of Domains
 If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that Kubernetes nodes can reach `cognigy.azurecr.io:443` Cognigy’s container registry. Otherwise, Cognigy.AI setup will not be able to download necessary docker images and assets during installation process.
 
 ### Network Firewalls / Websocket Support
-If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Our product heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
+If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Cognigy.AI heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
 
 !!! warning  "Network configuration support"
     Note, that we will not be able to provide any support on setting up any aforementioned network-related prerequisites. Contact a network/system administrator or a related team of your organization for further support.
 
 !!! warning "Limited Windows support"
-    While an installation on Windows servers might be possible, we neither support Windows as an OS nor test our product on Windows servers. We will not be able to provide any support for our product if you pick Windows as an OS.
+    While an installation on Windows servers might be possible, we neither support Windows as an OS nor test Cognigy.AI on Windows servers. We will not be able to provide any support for Cognigy.AI if you pick Windows as an OS.
 
 !!! warning "Pre-installation Checklist"
     Make sure, that all aforementioned prerequisites are met before you move installation process. Use [Pre-installation Checklist](pre-installation-checklist.md) for a cross-check. Note, that any installation process assisted by our engineers also implies that these prerequisites are fulfilled from your side before installation begins.

@@ -20,7 +20,11 @@ The gird is fully customizable and gives you the possibility to configure the nu
 
 ## Tile ID
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.54-blue.svg)](../release-notes/4.54.md)
+
 Each tile must have a name, for example, `map`, `profile`, or `history`, that works as a unique identifier. This exact tile ID is needed for the Agent Assist Node configuration, to ensure the content is displayed in the right Widget.
+
+If Agent Assist Workspace receives updates for a Tile ID not present in the Agent Assist configuration, the tile will not be rendered. In such cases, a warning indicator will be displayed in the lower-right corner of the workspace, indicating that an "unknown tile update" has been received.
 
 ## More information
 

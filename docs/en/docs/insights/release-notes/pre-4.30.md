@@ -11,8 +11,8 @@
 
 ## Bugfixes
 
-- Fixed a bug where Odata would double stringify already stringified content and produces wrong JSON
-- Fixed a bug where the top part of the filters sidebar was blocked after Notification disappear
+- Fixed a bug where Odata would double stringify already stringified content and produce wrong JSON
+- Fixed a bug where the top part of the filters sidebar was blocked after the Notification disappeared
 
 ## 4.28.0
 
@@ -46,7 +46,7 @@
 
 ### Bugfixes
 
-- Fixed a bug where conversation records(input) would miss the analytics database, because of invalid field names that starts with $
+- Fixed a bug where conversation records(input) would miss the analytics database because of invalid field names that start with $
 - Fixed a visualization problem of "switched Flow" messages in the Transcript Explorer
 
 ## 4.25.0
@@ -55,7 +55,7 @@
 
 ### Bugfixes
 
-- Fixed a bug where Message Explorer had 2 scroll bars which caused to invalid infinite loader behaviour
+- Fixed a bug where Message Explorer had 2 scroll bars which caused to invalid infinite loader behavior
 
 ## 4.24.0
 
@@ -63,21 +63,21 @@
 
 ### Improvements
 
-- Improved by adding an endpoint for deleting analytics records for an organisation
+- Improved by adding an endpoint for deleting analytics records for an organization
 - Improved by fixing accessibility issues in step explorer
-- Improved by reducing the dashboard UI response time by replacing SVG based charts with canvas based charts
+- Improved by reducing the dashboard UI response time by replacing SVG based charts with canvas-based charts
 - Improved by adding pagination in the Step Explorer to support complex step graphs
 
 ### Bugfixes
 
 - Fixed a bug where number reports with "Amount" types show non-integer values
-- Fixed a bug when transcript list had a loading issue after filters/agent change
+- Fixed a bug when a transcript list had a loading issue after filters/agent change
 
 ## 4.23.0
 
 **Released** April 12th, 2022
 
-This release does not contain any fixes ore improvements.
+This release does not contain any fixes or improvements.
 
 ## 4.22.0
 
@@ -91,4 +91,4 @@ This release does not contain any fixes ore improvements.
 
 - Fixed a bug where data are not loaded in Step Explorer
 - Fixed a bug where Step Explorer mistakenly does not display a newly tracked steps, if there is already a cached version of today’s report
-- Fixed a bug where Contact Profiles are not displayed correctly in Transcript Explorer
+- Fixed a bug where Contact Profiles are not displayed correctly in the Transcript Explorer

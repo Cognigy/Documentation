@@ -9,7 +9,7 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](./../../../release-notes/4.52.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vgv2-transfer-node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/transfer.png" width="80%" />
   <figcaption>Voice Gateway Transfer Node</figcaption>
 </figure>
 

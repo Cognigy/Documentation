@@ -6,7 +6,7 @@
 # Hang Up
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/generic-voice-nodes/images/hang-up.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/hang-up.png" width="80%" />
   <figcaption>Generic Hang Up Node</figcaption>
 </figure>
 

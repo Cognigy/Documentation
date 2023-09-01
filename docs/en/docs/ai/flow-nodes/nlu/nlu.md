@@ -1,10 +1,22 @@
 ---
- title: "NLU" 
- slug: "nlu" 
- hidden: false 
+title: "NLU" 
+slug: "nlu" 
+hidden: false 
 ---
 # NLU
-NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources.
+
+NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources:
+
+- [Copy Slots To Context](copy-slots-to-context.md)
+- [Add Lexicon Keyphrase](add-lexicon-keyphrase.md)
+- [Disable Slot Fillers](disable-slot-fillers.md)
+- [Enable Slot Fillers](enable-slot-fillers.md)
+- [Execute Cognigy NLU](execute-cognigy-nlu.md)
+- [Clean Text](clean-text.md)
+- [Fuzzy Search](fuzzy-search.md)
+- [Match Pattern](match-pattern.md)
+- [Regex Slot Filler](regex-slotfiller.md)
+
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -17,7 +29,3 @@ NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth
       </div>
    </div>
 </blockquote>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/59f1d47-NLUNodes.PNG" width="100%" />
-</figure>

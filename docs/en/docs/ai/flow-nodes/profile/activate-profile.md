@@ -6,7 +6,7 @@
 # Activate Profile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/12ff73a-profile-activate.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/activate-profile.png" width="80%" />
 </figure>
 
 ## Description

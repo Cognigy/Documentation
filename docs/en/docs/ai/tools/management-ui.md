@@ -104,7 +104,7 @@ The system message will get displayed for all users - regardless of their organi
 
 <div class="divider"></div>
 
-With version 3.4.0 of our product, we have introduced quotas and limits on an organisation level. Larger customers with multiple organisations can use these quotas to limit what is possible within certain organisations. To configure limits, first select an organisation, open its details and click on the triple-dot button on the right-top corner.
+With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an organisation level. Larger customers with multiple organisations can use these quotas to limit what is possible within certain organisations. To configure limits, first select an organisation, open its details and click on the triple-dot button on the right-top corner.
 
 In the menu, select **Change Organisation Quotas**.
 

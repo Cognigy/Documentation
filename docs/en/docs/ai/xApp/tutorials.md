@@ -15,3 +15,4 @@ The xApp tutorials are available in the Cognigy Help Center:
 ## More information
 
 - [xApp Use Cases](use-cases.md)
+- [Build an xApp](build-an-xApp.md)

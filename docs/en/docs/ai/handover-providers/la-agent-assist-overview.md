@@ -3,7 +3,7 @@
  slug: "la-agent-assist-overview" 
  hidden: false 
 ---
-# Agent Assist
+# LA Agent Assist
 
 ## Overview
 
@@ -21,5 +21,9 @@ Using Cognigy.AI, you can customize Agent Assist to be as powerful as you need i
 
 To set up your Project for Agent Assist, please choose the installation that best suits your requirements:
 
-- [Agent Assist](la-agent-assist-setup.md). Refers to the feature or functionality that provides assistance to live agents during their interactions with customers. It typically includes real-time guidance, suggestions, and recommendations to help agents effectively handle customer inquiries or issues. Agent Assist Live Agent focuses on providing support directly from the conversation window.
-- [Agent Assist Workspace](la-agent-assist-workspace-setup.md). Refers to the dedicated workspace or environment where human agents access various tools, resources, and features to assist them in their customer interactions. It encompasses the entire workspace setup, which may include customer information, knowledge bases, collaboration tools, and other relevant components. Agent Assist Workspace aims to provide a comprehensive and efficient working environment for human agents to manage their interactions with customers.
+- [LA Agent Assist](la-agent-assist-setup.md). Refers to the feature or functionality that provides assistance to live agents during their interactions with customers. It typically includes real-time guidance, suggestions, and recommendations to help agents effectively handle customer inquiries or issues. Agent Assist Live Agent focuses on providing support directly from the conversation window.
+- [LA Agent Assist Workspace](la-agent-assist-workspace-setup.md). Refers to the dedicated workspace or environment where human agents access various tools, resources, and features to assist them in their customer interactions. It encompasses the entire workspace setup, which may include customer information, knowledge bases, collaboration tools, and other relevant components. Agent Assist Workspace aims to provide a comprehensive and efficient working environment for human agents to manage their interactions with customers.
+
+## More Information
+
+- [Agent Assist Workspace Overview](../../agent-assist/overview.md)

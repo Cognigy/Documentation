@@ -1,15 +1,12 @@
 ---
- title: "Data Protection & Analytics" 
- slug: "data-protection-and-analytics" 
- hidden: false 
+title: "Data Protection and Analytics" 
+slug: "data-protection-and-analytics" 
+description: "The Data Protection & Analytics section in Cognigy Endpoints provides control over analytics and system logging. It allows you to customize the handling of contact data creation and storage, analytics data collection, and sensitive data masking to ensure comprehensive data protection."
+hidden: false 
 ---
 # Data Protection & Analytics
 
 The **Data Protection & Analytics** (previously called Data Management) section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5b29da1-Data_Protection__Analytics.PNG" width="100%" />
-</figure>
 
 ## Contact Profiles
 
@@ -19,6 +16,13 @@ This setting enables the collection of individual contact profiles to store pers
 
 Enable the collection of Analytics data for this endpoint.
 
+## Mask IP Address
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
+
+Masks IP addresses in the analytics and input object when you use `{{ "{{ input.ip }}" }}` or `{{ "{{ ci.ip }}" }}` in the Say Node or  `ci.ip` or `input.ip` in the Code Node. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in both the analytics data and the input object.
+The IP addresses will not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md) and [Insights](../../insights/cognigy-insights.md).
+
 ## Mask Sensitive Analytics
 
 Masks sensitive information in analytics. Specifically, it replaces `inputText`, `inputData`, `userLanguageText`, and the `IP` of user inputs with asterisks in the analytics data. If this feature is used within an Endpoint, the [Intent Trainer](../resources/tweak/intent-trainer.md) can't be used, as Cognigy will not store the original text of the user. The individual records will also not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md).
@@ -27,7 +31,7 @@ Masks sensitive information in analytics. Specifically, it replaces `inputText`,
 
 In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) using the `analyticsdata` variable:
 
-``` JavaScript
+```js
 analyticsdata.text = "overwritten text";
 delete analyticsdata.data.token;
 ```

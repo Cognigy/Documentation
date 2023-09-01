@@ -6,8 +6,7 @@
 # HTTP Request
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c282bff-service-htto.jpg" width="100%" />
-  <figcaption>HTTP Request Node</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/http-request.png" width="80%" />
 </figure>
 
 ## Description
@@ -177,6 +176,8 @@ The results of the GET request are stored in the context of the flow. You can re
 
 ### Payload
 Here you can define the payload of your POST, PUT or PATCH request. You can choose between JSON (standard) and Text.
+
+When using a JSON payload to access Cognigy objects such as Input, Context, or Profile, refer to [CognigyScript](../../tools/cognigy-script.md#for-json-arguments) for an example payload.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b364540-http-post-payload.jpg" width="100%" />

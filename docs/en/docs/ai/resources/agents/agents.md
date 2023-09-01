@@ -1,171 +1,162 @@
 ---
- title: "Agents" 
- slug: "agents" 
- hidden: false 
+title: "Agents" 
+slug: "agents"
+description: "Cognigy.AI Agents are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../deploy/endpoints.md), and other resources. You can collaborate on a given Agent with multiple team members."
+hidden: false 
 ---
 # Agents
 
-All your conversational AI resources in one place.
-## Description
-<div class="divider"></div>
+_Agents_ are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../deploy/endpoints.md), and other resources. You can collaborate on a given Agent with multiple team members.
 
-Agents contain collections of conversational AI resources, including [Flows]({{config.site_url}}ai/resources/build/flows/), [Lexicons]({{config.site_url}}ai/resources/build/lexicons/), [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/) and more. It is possible to work on a given Agent with multiple team members and Agents can deploy on a wide range of channels. 
+Within an Agent as a project, you can create virtual agents. A virtual agent is a bot that is designed to automatically handle interactions. A virtual agent is typically designed to tackle one use case, and it can handle multiple user intents.
+Virtual agents can deploy on a wide range of channels. 
 
-## Create a new Agent
+## Create an Agent
 
-Below are the steps to create a Virtual Agent (VA) with Cognigy.AI. A VA is a bot that is designed to automatically handle interactions. It's simple to create one:
+1. Go to the Cognigy.AI interface.
+2. In the upper-left corner, click **Create Agent**.
 
-### 1. The Creation Agent wizard
+    <img class="image-center" src="{{config.site_url}}ai/resources/images/create_agent.png" width="80%" style="margin-bottom: 5px">
 
-When you log in to Cognigy.AI as an Admin or Project Manager, you will be able to see **Create Agent** button on the top-left.
-You can create Virtual Agents by clicking this button. A Virtual Agent is typically designed to tackle one use case, and it can handle multiple user intents.
+3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
+4. Select the primary language for your Agent.
+5. Select a color that will be associated with your Agent.
+6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create an Agent with Live Agent Flow](#create-an-agent-with-live-agent-flow) section.
+7. Click **Next: Select Solution Accelerator**.
 
-<img src="{{config.site_url}}ai/resources/images/create_agent.png" width="100%" style="margin-bottom: 5px">
+    <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_basic_settings.png" width="80%">
 
-### 2. Step-by-step instructions to create your Agent
+8. Select **Blank** or any pre-build solution accelerators that can help you build a specific virtual agent for you.
 
-- Give your Virtual Agent(VA) a name that's describing its job. You will also be able to change the name later. 
-- Select the primary language for your VA.
-- Choosing a color helps you quickly navigate between VAs once you've set up a whole workforce.
+    <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_solution_accelerator.png" width="80%">
 
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_basic_settings.png" width="100%" style="margin-bottom: 5px">
+9. Select an Endpoint you want to use first for the Agent. You can also add more Endpoints later.
 
-- If [Cognigy Live Agent]({{config.site_url}}live-agent/overview) is set up for your infrastructure, then you will be able to set up a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview) for your Agent. You can see more details in the below section [3. Setup Project Live Agent Inbox]({{config.site_url}}ai/resources/agents/agents/#3-setup-project-live-agent-inbox)
+    <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_channels.png" width="80%">
 
-- Select a Blank or any pre-build solution accelerators that can help you build the basic bot for you. 
+10. Select the pre-build skills if you want to use one for your Agent.
 
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_solution_accelerator.png" width="100%" style="margin-bottom: 5px">
+    <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_skills.png" width="80%">
 
-- Confirm the channels you want for the bot. You can also add more channels later.
+11. Click **Go to Agent** to view the created Agent.
 
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_channels.png" width="100%" style="margin-bottom: 5px">
+    <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_go_to_agent.png" width="80%">
 
-- Select the pre-build skills if you want to use one for your bot.
+Once these steps are completed, your Agent setup is finished.
 
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_skills.png" width="100%" style="margin-bottom: 5px">
+## Create an Agent with Live Agent Flow
 
-- Click **Go to Agent** to view the created Virtual Agent.
+The setup of the Live Agent depends on your project role:
 
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_go_to_agent.png" width="100%" style="margin-bottom: 5px">
+- If you are an **admin** and no Live Agent Account is configured for your organization, you will see an option in the **Create Agent** wizard to set up a Live Agent Account.
+- If you are a **project manager**, you do not have the option to set up a Live Agent Account. Instead, contact your admin to set up a Live Agent Account for your organization.
 
-### 3. Setup Project Live Agent Inbox
+For on-premises installations, the **Live Agent** section in the **Create Agent** wizard will only be visible if the Live Agent is configured at the infrastructure level, which requires the `FEATURE_USE_COGNIGY_LIVE_AGENT` environment variable to be enabled.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.30.0-blue.svg)]({{config.site_url}})
+If the Live Agent Account is already configured for your organization, you can create an Agent with a Live Agent Flow by following these steps:
 
-The Live Agent section in the **Create Agent** wizard will only be visible if the Live Agent is configured at an infrastructure level (which means the `FEATURE_USE_COGNIGY_LIVE_AGENT` environment variable should be enabled for your environment).
+1. Create a [Live Agent Inbox](../../../live-agent/settings/inboxes.md) by activating **Create Cognigy Live Agent Inbox**.
+2. Configure [Live Agent Assist](../../handover-providers/la-agent-assist-overview.md) in the **Agent Assist** section by selecting one of the following options:
+    - **Disable Agent Assist** — this option doesn't require any additional resources. Agent Assist functionalities will be turned off.
+    - **Enable Agent Assist** — this option creates an Agent Assist Flow. This Flow includes a Say Node, which allows the system to communicate messages. This Agent Assist Flow will be assigned as the one you use for Agent Assist interactions.
+   
+    <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_inbox.png" width="80%" style="margin-bottom: 5px">
 
-- If you are an admin user and if no Live Agent Account is configured for your Organisation, then you will see an option in the **Create Agent** wizard to set up a Live Agent Account for your Organisation. Once the Live Agent Account is created, then you will be able to set up a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) for the Project by turning the toggle ON.
-
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_account.png" width="100%" style="margin-bottom: 5px">
-
-- If you are a Project Manager, then you will not have an option to set up a Live Agent Account. Instead, you need to contact your admin to first set up a Live Agent Account for your Organisation.
-
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_nonadmin-liveagent_setup.png" width="100%" style="margin-bottom: 5px">
-
-- If the Live Agent Account is already configured for your Organisation, then you will be able to create a [Live Agent Inbox]({{config.site_url}}live-agent/inboxes) and the [Agent Assist Flow]({{config.site_url}}ai/handover-providers/la-agent-assist-overview).
-
-- Selecting **Don't use Agent Assist** will not set up any additional resources.
-
-- Selecting **Setup Agent Assist**, a flow called **Agent Assist** with a simple say node will be created and assigned as your Agent Assist Flow.
-
-    <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_inbox.png" width="100%" style="margin-bottom: 5px">
+Complete the agent setup with the Live Agent feature by following the steps as you would for a [simple agent](#create-an-agent).
 
 ## Agent Dashboard
 
-<div class="divider"></div>
+The Agent Dashboard serves as an overview page for your Agent. It displays relevant information about your agent, including Analytics, Project Members, Recently Changed resources, and additional information about Cognigy.AI itself.
 
-<img src="{{config.site_url}}ai/resources/images/e56ba84-agent-overview.png" width="100%" style="margin-bottom: 5px">
+<img class="image-center" src="{{config.site_url}}ai/resources/images/Agent_dashboard.png" width="80%">
 
-The Agent Dashboard contains serves as an overview page for you Virtual Agent. It displays information that is relevant to your agent, including Analytics, Project Members, Recently Changed resources and more information on Cognigy.AI itself.
+### Analytics Widget
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+As of release v4.10, Cognigy provides a completely new designed Analytics solution called [Insights](../../../insights/cognigy-insights.md).
 
-**Analytics Widget**
-
-As of release v4.10 Cognigy provides a completely new designed Analytics solution **"[Insights]({{config.site_url}}insights/cognigy-insights/)"**.
-
-- When the Insights application is enabled in your product you will be led to the Insights Overview dashboard when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
-- When the Insights application is not enabled in your product you will be led to the Analytics page as before when clicking on the arrow icon in the Analytics widget on the Agents dashboard.
+- When the Insights application is enabled in your product, clicking on the arrow icon in the Analytics widget on the Agents dashboard will lead you to the Insights Overview dashboard.
+- When the Insights application is not enabled in your product, clicking on the arrow icon in the Analytics widget on the Agents dashboard will still lead you to the Analytics page, just as before.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/7d29be7-Analytics_Insights_link.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/conversation-count-chart.png" width="100%"/>
   <figcaption>Agent dashboard - Analytics widget</figcaption>
 </figure>
 
-More information on Cognigy Analytics you can find here: [Agent Analytics]({{config.site_url}}ai/tools/analytics/analytics/).
+You can find more information about Cognigy Analytics on the [Agent Analytics](../../tools/analytics/analytics.md) page.
 
 ## Top Toolbar
-<div class="divider"></div>
 
- <div class="right-image">
- <img src="{{config.site_url}}ai/resources/images/a6094e4-agent-header.jpg" width="70%" style="margin-bottom: 5px">
- </div>
- 
-Agents contain a **Top Toolbar** that is present in every view and provides quick access to Agent-specific resources like Search, Tasks and the Interaction Panel. The **Top Toolbar**, however, also contains items - like the **User Menu** and **Interaction Panel** -  that are always present. <br> With Cognigy.AI v4.11.0 tooltips are added to the Toolbar to improve the navigation with that hover option.
+Agents have a Top Toolbar in every view, offering quick access to Agent-specific resources, such as Search, Tasks, and the Interaction Panel. The Top Toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available. 
 
-## Help Center Search
+With Cognigy.AI version 4.11.0, tooltips have been added to the Toolbar to enhance navigation through hover interactions.
 
-The **Help Center** Search feature can be used in order to find a potential answer in the list of articles provided under [https://support.cognigy.com/](https://support.cognigy.com/):
+<div class="right-image">
+<img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar.png">
+</div>
+
+### Help Center Search
+
+The Help Center Search feature allows you to search for potential answers within the list of articles available on the [Cognigy Help Center](https://support.cognigy.com/) website.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/5586f34-helpCenterArticleSearchResult.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/HelpCenter_search_result.png"/>
   <figcaption>List of available Help Center articles</figcaption>
 </figure>
 
-Head over to the [**Help Center**](https://support.cognigy.com/hc/en-us) for more information.
+### Journeys
 
-## Journeys
- <div class="right-image">
- <img src="{{config.site_url}}ai/resources/images/328d022-journeys.jpg" width="70%" style="margin-bottom: 5px">
- </div>
+Journeys are on-screen tutorials that are a part of the [Cognigy Help Center](https://support.cognigy.com/hc/en-us) and offer step-by-step instructions directly within the Cognigy.AI user interface.
 
-
-Journeys are on-screen tutorials that are part of the [Help Center](https://support.cognigy.com/hc/en-us) and provide step-by-step instructions, directly within the Cognigy.AI user interface. 
-
-Head over to [**Journeys**]({{config.site_url}}ai/resources/agents/journeys/) for more information.
-
-## Search
 <div class="right-image">
-<img src="{{config.site_url}}ai/resources/images/c519b4c-search.jpg" width="70%" style="margin-bottom: 5px">
+ <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_journeys.png">
 </div>
 
-The search interface can be used to search for resources that are part of the Agent. It provides a convenient way to quickly access resources and features an autocomplete interface. 
+Head over to [Journeys](journeys.md) for more information.
+
+### Search
+
+The Search interface can be utilized to search for resources within the Agent.
+It offers a convenient way to promptly access resources and includes an autocomplete feature. 
+
+<div class="right-image">
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_search.png">
+</div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/8b28e4e-search_screenshot.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/search.png"/>
 </figure>
 
-## Tasks
+### Tasks
+
+Tasks are specific activities, such as training Intents, importing Snapshots, or creating a new Agent. A Task is an asynchronous process that can run in the background and is associated with the notification system.
+
 <div class="right-image">
-<img src="{{config.site_url}}ai/resources/images/7325127-tasks.jpg" width="70%" style="margin-bottom: 5px">
+<img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_taskmenu.png">
 </div>
 
-Certain activities, like training **Intents**, importing **Snapshots** or the creation of a new **Agent**, generate so-called **Tasks**. A Task is an **asynchronous process** that can run in the background and is tied to the **notification system**.
+Head over to the [Tasks](../../resources/agents/tasks.md) for more information.
 
-Head over to the [**Help Center**](https://support.cognigy.com/hc/en-us) for more information.
+### User Menu
 
-## User Menu
+The User Menu provides access to a set of views.
 
  <div class="right-image">
- <img src="{{config.site_url}}ai/resources/images/bf9c1ca-usermenu.jpg" width="70%" style="margin-bottom: 5px">
+ <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_usermenu.png">
  </div>
 
-
-The User Menu provides access to a set of views. 
-
  <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/a0487aa-usermenu-screenshot.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/user_menu.png" />
   <figcaption>User menu</figcaption>
 </figure>
 
-Head over to [**User Menu**]({{config.site_url}}ai/tools/user-menu/user-menu/) for more information.
+Head over to [User Menu](../../tools/user-menu/user-menu.md) for more information.
 
-## Interaction Panel
+### Interaction Panel
+
+The Interaction Panel can be used to interact with your virtual agent at any time. It is a useful tool that provides a representation of channel-specific output and can display more detailed debugging information.
 
 <div class="right-image">
- <img src="{{config.site_url}}ai/resources/images/Interaction Panel.png" width="30%" style="margin-bottom: 5px">
+ <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_Interaction_Panel.png" style="margin-bottom: 5px">
  </div>
 
-The Interaction Panel can be used to interact with your virtual agent at any time. It is a useful tool that gives an impression of channel-specific output and can display more detailed debugging information. 
-
-Head over to [**Interaction Panel**]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/) for more information.
+Head over to [Interaction Panel](../../tools/interaction-panel/interaction-panel.md) for more information.

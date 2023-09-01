@@ -5,7 +5,9 @@
 ---
 # OData Analytics Endpoint
 
-Cognigy.AI exposes an OData v4 analytics endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+Cognigy.AI exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+
+Note that the Cognigy OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -42,33 +44,34 @@ For example, on our trial server, the OData Endpoint URL for the Analytics Input
 
 <div class="divider"></div>
 
-### Version 2.3
+=== "Version 2.3"
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
+    [![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
 
-The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
+    The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
 
-- [Analytics](#analytics) (`/Analytics`)
-- [Conversations](#conversations) (`/Conversations`)
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Sessions](#sessions) (`/Sessions`)
+    - [Analytics](#analytics) (`/Analytics`)
+    - [Conversations](#conversations) (`/Conversations`)
+    - [Steps](#steps) (`/Steps`)
+    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+    - [Sessions](#sessions) (`/Sessions`)
+    - [LiveAgentEscalations](#liveagentescalations) (`/LiveAgentEscalations`)
 
-The URL for accessing the V2.3 OData Endpoint is as follows:
-`https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
+    The URL for accessing the V2.3 OData Endpoint is as follows:
+    `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
 
-### Version 2.2 and Earlier
-!!! warning "Deprecation of OData v2.0 - 2.2"
-    OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
+=== "Version 2.2 and Earlier"
+    !!! warning "Deprecation of OData v2.0 - 2.2"
+        OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
 
-- [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
-- [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
-- [Steps](#steps) (`/Steps`)
-- [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-- [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
+    - [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
+    - [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
+    - [Steps](#steps) (`/Steps`)
+    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
+    - [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
 
-The URL for accessing the V2.X OData Endpoint is as follows:
-`https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
+    The URL for accessing the V2.X OData Endpoint is as follows:
+    `https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
 
 ## Querying
 
@@ -130,13 +133,19 @@ Furthermore, you can control analytics logging behavior inside a Flow using [Bli
 
 <div class="divider"></div>
 
-This section details the data types exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
+This section details the data types that exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
 
   * [Analytics](#analytics)
   * [Conversations](#conversations)
   * [Steps](#steps)
   * [ExecutedSteps](#executedsteps)
   * [Sessions](#sessions)
+
+### Fields
+
+Each collection will return, and can be filtered by, fields. Many of the OData record fields are retrieved directly from the input object results.
+
+See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables in the input object are.
 
 ### Analytics
 
@@ -146,9 +155,17 @@ Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an 
 
 **Example Query**
 
- * v2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`.
- * v2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`.
- * v2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+    
+    `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
+
+=== "OData 2.0"
+    
+    `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -200,11 +217,11 @@ When retrieving this collection, the endpoint will return the following fields:
 | ratingComment      | Comment left when given a rating                                                           | String   |                                      |
 | snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                      |
 
-!!! note "Field Explanation"
-    Many of the OData Records fields are retrieved directly from the input object results. See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables are.
-
 !!! warning "Max length of custom fields"
     You can store maximum 500 characters as the value of each of the custom fields
+
+!!! note "Why is the Analytics Step label not used?"
+    The analytics step label can be updated from the Cognigy user interface at any time. Therefore, in order to make all previous data records compatible with future records, the entityReferenceId is used. The entityReferenceID is either the Node ID or Intent ID which has been assigned as an analytics step. The current analytics label of the step can be retrieved by mapping the entityReferenceID to the [`Steps`](#steps) record.
 
 ### Conversations
 
@@ -214,9 +231,17 @@ The Conversations collection offers a log of all session messages, including the
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+
+    `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+
+    `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`
+
+=== "OData 2.0"
+    
+    `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -225,6 +250,8 @@ When retrieving this collection, the endpoint will return the following fields:
 | Field Name             | Description                                           | Type     | Example                                    |
 | ---------------------- | ----------------------------------------------------- | -------- | ------------------------------------------ |
 | _id                    | Unique analytics record ID                            | String   | 5a91d194fde28b0011ce2423                   |
+| projectId              | Project ID                                            | String   | 5a91d194fde28b0011ce2422                   |
+| projectName            | Name of the Cognigy.AI project                        | String   | Project 1                                  |
 | inputId                | Unique input ID                                       | String   | 5a91d194fde28b0011ce2424                   |
 | sessionId              | Session ID                                            | String   | 5a91d194fde28b0011ce2425                   |
 | contactId              | ID of the connecting user                             | String   | myContactID                                |
@@ -243,7 +270,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Steps
 
-!!! note "Available from Cognigy.AI Version 4.2.0"
+[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-flow-nodes-and-intents)
 
 **Description**
 
@@ -251,9 +278,17 @@ The Steps collection offers a list of all entities (an entity is a flow node or 
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`.
+=== "OData 2.3" 
+    
+    `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`
+
+=== "OData 2.2" 
+
+    `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`
+
+=== "OData 2.0" 
+    
+    `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -271,6 +306,9 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotId        | ID of the snapshot                                                         | String | 5e33b160e6236da3aa54221461a53f04 |
 | snapshotName      | Name of the snapshot                                                       | String | Bot Release 2.2                  |
 
+!!! note "Building Visualizations with Steps Records"
+    The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
+
 ### ExecutedSteps
  
 **Description**
@@ -279,9 +317,16 @@ The ExecutedSteps collection contains a list of all step events that have occurr
 
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+    
+    `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`
+=== "OData 2.0"
+    
+    `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -308,18 +353,25 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Sessions
 
-!!! note "Available from Cognigy.AI Version 4.41.0"
+[![Version badge](https://img.shields.io/badge/Added in-v4.41-blue.svg)](../../../release-notes/4.41.md)
 
 **Description**
 
 The Sessions collection contains a list of all sessions that have occurred. The primary objective of this collection is to provide a list of the analytics steps that took place in any given session and the order in which they took place. This information is included as a comma separated list within a single column called `stepPath`. Each session is exposed in this analytics endpoint as single line item.
 
-
 **Example Query**
 
- * V2.3 Endpoint: `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`.
- * V2.2 Endpoint: `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`.
- * V2.0 Endpoint: `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`.
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`
+
+=== "OData 2.2"
+    
+    `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`
+
+=== "OData 2.0"
+ 
+    `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`
 
 **Data Types**
 
@@ -345,11 +397,48 @@ When retrieving this collection, the endpoint will return the following fields:
 | snapshotId          | ID of the snapshot                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
 | snapshotName        | Name of the snapshot                             | String   | Bot Release 2.2                                                                |
 
-!!! note "Building Visualizations with Steps Records"
-    The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
+### LiveAgentEscalations
 
-!!! note "Why is the Analytics Step label not used?"
-    The analytics step label can be updated from the Cognigy user interface at any time. Therefore, in order to make all previous data records compatible with future records, the entityReferenceId is used. The entityReferenceID is either the Node ID or Intent ID which has been assigned as an analytics step. The current analytics label of the step can be retrieved by mapping the entityReferenceID to the `/Steps` record.
+[![Version badge](https://img.shields.io/badge/Added in-v4.49-blue.svg)](../../../release-notes/4.49.md)
+
+**Description**
+
+The LiveAgentEscalations collection contains records from Live Agent escalations and includes the related data about handovers to Live Agent.
+
+**Example Query**
+
+=== "OData 2.3"
+    
+    `https://odata-trial.cognigy.ai/v2.3/LiveAgentEscalations?apikey=YOURAPIKEY`
+
+**Data Types**
+
+When retrieving this collection, the endpoint will return the following fields:
+
+| Field Name        | Description                                               | Type     | Example                                                          |
+| ----------------- | --------------------------------------------------------- | -------- | ---------------------------------------------------------------- |
+| _id               | Unique identifier for the record                          | String   | 649be849b7fd71d48b9bacc8                                         |
+| organisationId    | Identifier of the organization associated with the record | String   | 5eb4a49d426cd3d05f2892a9                                         |
+| projectId         | Identifier of the project related to the record           | String   | 6409b6c53c9687b5e78e6403                                         |
+| sessionId         | Identifier of the session                                 | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
+| timestamp         | Date and time when the record was created                 | DateTime | 2023-06-28T07:59:04.628Z                                         |
+| localeName        | Name of the locale                                        | String   | en                                                               |
+| status            | Current status of the record                              | String   | opened                                                           |
+| inboxId           | Identifier of the inbox associated with the record        | String   | 7983                                                             |
+| inboxName         | Name of the inbox                                         | String   | LA Chatbot-default                                               |
+| teamId            | Identifier of the team                                    | String   | 8                                                                |
+| teamName          | Name of the team                                          | String   | IT Support                                                       |
+| labels            | List of labels associated with the record                 | Array    | [Hardware]                                                       |
+| agentId           | Identifier of the agent                                   | String   | 618cf7687614774ba028dcac                                         |
+| agentName         | Name of the agent                                         | String   | John Smith                                                       |
+| contactId         | Identifier of the contact                                 | String   | 649ba8450d5df5cadf8b75b8                                         |
+| endpointName      | Name of the endpoint                                      | String   | LA Chatbot                                                       |
+| endpointType      | Type of the endpoint                                      | String   | webchat2                                                         |
+| endpointUrlToken  | Token or identifier associated with the endpoint          | String   | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
+| channel           | Channel through which the record was received             | String   | admin-webchat                                                    |
+| localeReferenceId | Identifier for the specific locale reference              | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
+| snapshotId        | Identifier of the snapshot                                | String   | 63ff0cc47a466cab278fd19b                                         |
+| endpsnapshotName  | Name of the snapshot                                      | String   | Prod-Snapshot 26.7.23                                            |
 
 ## Integrations
 

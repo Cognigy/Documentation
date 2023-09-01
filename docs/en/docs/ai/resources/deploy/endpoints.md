@@ -57,7 +57,16 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 
 Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
 
-#### Override Snapshot Connections
+While an Endpoint is active, you can replace or remove a Snapshot. In this case, you need to take into account that there may still be active sessions running on the Endpoint using the old Snapshot.
+
+Keep in mind, if you have a configuration in which sessions never expire, for example, a Webchat Endpoint with [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md). Without modifications, sessions started with Persistent History enabled will not automatically expire.
+
+When an old Snapshot is replaced with a new one or is deleted, the following rules will be applied to the active session:
+
+- If the old Snapshot was replaced and not deleted, the active session will continue with the old Snapshot. The reason is that the system cannot recognize if the new Snapshot contains the same Flows and Nodes where the user might be active in their session.
+- If the old Snapshot was deleted, the session will be reset, and the new Snapshot will be used.
+
+##### Override Snapshot Connections
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.21.0-blue.svg)]({{config.site_url}})
 
@@ -74,12 +83,14 @@ The Agent in which the Connection is to be overridden should initially be either
 
 !!! note
     You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use [Cognigy.AI API](../../developer-guides/using-api.md) with the Get all Connections request.
+
+
 #### Flow
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
 
 Endpoints also need an entry [**Flow**]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Note that it is possible to switch Flows during a conversation. 
-As of Cognigy.AI 4.9.0, you can use the "**jump to Flow**" button next to the Flow selection field on the right-hand side.
+As of Cognigy.AI 4.9.0, you can use the **jump to Flow** button next to the Flow selection field on the right-hand side.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/6f3084d-Endpoint_Webchat_jump_to_Flow_button_5.svg" width="100%" />

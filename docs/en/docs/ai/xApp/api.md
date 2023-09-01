@@ -17,6 +17,7 @@ The Flow API has been extended, giving access to the following new functionaliti
 ## More information
 
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
+- [Build an xApp](build-an-xApp.md)
 - [xApps](overview.md)
 
 

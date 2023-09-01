@@ -1,9 +1,12 @@
 ---
 title: "User Inactivity Detection and Handling"
 slug: "user-inactivity-detection-and-handling"
+description: "Cognigy Inactivity Detection and Handling feature allows you to detect inactivity of end users during handovers and to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions."
 hidden: false
 ---
 # User Inactivity Detection and Handling
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
 
 The _Inactivity Detection and Handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
 
@@ -12,7 +15,7 @@ Configuring several nodes is required to use The Inactivity Detection and Handli
 - [Handover to Agent](#set-up-handover-to-agent-node)
 - [Lookup](#set-up-lookup-node)
 - [Set Handover Inactivity](#set-up-set-handover-inactivity-node)
-- [Go to](#set-up-go-to-node)
+- [Go To](#set-up-go-to-node)
 - [If](#set-up-if-node)
 
 Below, we provide an example of how to set up Inactivity Detection and Handling, which can be customized to meet your specific needs.
@@ -78,10 +81,13 @@ To do this, add the Once Node to start the inactivity timer when you receive the
 
 The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after the specified time. If an end user input is received before the timeout, the timer will automatically reset and start from the beginning.
 
-## Set up Go to Node
+## Set up Go To Node
 
-Set the **Go to** Node to return to the Handover To Agent Node. This moves the entrypoint directly above the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
+Set the **Go To** Node to return to the Lookup Node. This moves the entrypoint to the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
 
+In the **Go To** Node editor,
+select **Lookup** from the **Select Node** list
+and **Go To Node and wait for Input** from the **Execution Mode** list in the **Advanced** section.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/6-handover-go-to.png" width="100%" />
@@ -112,9 +118,11 @@ If the inactivity count is less than two, it triggers prompt the user to respond
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/7-handover-if.png" width="100%" />
 </figure>
 
-In the end, add the **Go to** Node. 
+In the end, add the **Go To** Node to return to the **Lookup** Node as you did before. In the **Go To** Node editor,
+select **Lookup** from the **Select Node** list
+and **Go To Node and wait for Input** from the **Execution Mode** list in the **Advanced** section. 
 
-Test your Flow via the demo Webchat and any connected providers, such as Cognigy Live Agent.
+Test your Flow via the demo Webchat and any connected providers, for example, Cognigy Live Agent.
 
 ## More information
 

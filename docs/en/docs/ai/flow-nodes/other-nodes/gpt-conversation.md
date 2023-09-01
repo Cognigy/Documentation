@@ -38,8 +38,8 @@ Select one of these modes:
 |---------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Company Name        | CognigyScript | The name of the company.                                                                                                                                                                                                                                                                                                                  |
 | Company Description | CognigyScript | Company's current activities: What is your company doing?                                                                                                                                                                                                                                                                                 |
-| Bot Name            | CognigyScript | The maximum number of tokens to generate in the completion.                                                                                                                                                                                                                                                                               |
-| Character           | Text          | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.                                                                                                                                                          |
+| Bot Name            | CognigyScript | The name of the virtual agent.                                                                                                                                                                                                                                                                                                            |
+| Character           | Text          | The character traits of the virtual agent. For example, is the virtual agent `professional` or `patient`? Enter phrases that describe your agent's personality.                                                                                                                                                                           |
 | Strictness          | Select        | The level of adherence expected from the virtual agent regarding the task: <br/> - Trivia and small talk — including trivia and small talk. <br> - Stick to the task — strictly sticking to the task. <br> - Some small talk — incorporating some small talk. <br> - Complete free style — engaging in completely free-form conversation. |
 
 ### Task Settings
@@ -146,4 +146,4 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
 ## More information
 
 - [Generative AI](../../generative-ai.md)
-- [GPT Prompt Node](gpt-prompt.md)
+- [LLM Prompt Node](llm-prompt.md)

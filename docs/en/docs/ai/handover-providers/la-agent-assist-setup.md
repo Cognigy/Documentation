@@ -3,9 +3,9 @@ title: "Agent Assist Setup"
 slug: "la-agent-assist-setup"
 hidden: false
 ---
-# Agent Assist Setup
+# LA Agent Assist Setup
 
-{! _includes/ai/providers/live-agent/agent-assist-setup.md. !}
+{! _includes/ai/providers/live-agent/agent-assist-setup.md !}
 
 ## Set up an Endpoint
 
@@ -14,7 +14,7 @@ To configure your Endpoint:
 1. Go to **Deploy > Endpoints**.
 2. Go to your **Webchat** Endpoint.
 3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
-4. Go to the **Agent Assist (beta)** section.
+4. Go to the **Agent Assist** section.
 5. In the **Agent Assist Flow** field, select the name of the Agent Assist Flow you've created in the previous step.
 6. Click **Save**.
 
@@ -51,3 +51,9 @@ Once the human agent receives this message, the testing behavior will vary depen
 
 
 If the testing is successful, the Agent Assist setup is complete.
+
+## More information
+
+- [LA Agent Assist Workspace Setup](la-agent-assist-workspace-setup.md)
+- [Agent Assist Workspace Overview](../../agent-assist/overview.md)
+- [LA Agent Assist Setup](la-agent-assist-setup.md)

@@ -183,7 +183,7 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
 ---
 
 !!! tip "Time Zone & Date Slots"
-    Detection of dates depends on the time zone set for the Agent (see [Settings]({{config.site_url}}ai/resources/manage/settings/)) or User (see [here]({{config.site_url}}ai/flow-nodes/code/actions/))
+    Detection of dates depends on the time zone set for the [Agent](../../resources/manage/settings.md#timezone) or [Actions](../../flow-nodes/code/actions.md#actionssettimezoneoffset--apisettimezoneoffset).
 
 The following tables provide an overview of supported input patterns and formats. 
 
@@ -202,11 +202,36 @@ DATE Slot parsing depends on the language set in the Flow. See here for an overv
 | Default (English UK, German, Universal etc.) | dd/mm/YYYY                                                                                         |
 | English US, Japanese, Chinese                | mm/dd/YYYY<br/><br/>Note if mm/dd/YYYY yields an illegal date the parser falls back to dd/mm/YYYY. |
 
-!!! warning "Future Dates Only"
-    You can force the DATE slot to only detect dates in the future for relative expressions (e.g. "Monday", "Friday"). For more information, see the Code Node Action [setForwardDatesOnly]({{config.site_url}}ai/flow-nodes/code/actions/)
-
 !!! warning "Invalid DATES"
     Cognigy.AI checks the validity of provided dates, including leap years, etc. Invalid dates will not appear in the detected slots.
+
+### Future and Past Date Mapping
+
+Date slot detection uses the current year for inputs of dates in the current month and for a date that has not yet occurred within the current year.
+
+Date slot detection uses the next upcoming year if the date of the input is not in the current month, has already occurred in the current year, and a year is not given in the input.
+
+To assign a past date to the DATE Slot when it is from a previous month (not the current month), a year must be provided in the input.
+
+#### Examples 
+
+When the input is a date from the current month:
+
+- Today's date is July 26, 2023
+- The Input is `July 21`
+- DATE Slot Result: `"year": 2023, "month": 7, "day": 21`
+
+When the input is a date not from the current month, but instead a previous month, and no year is provided:
+
+- Today's date is July 26, 2023
+- The Input is `March 30`
+- DATE Slot Result: `"year": 2024, "month": 3, "day": 30`
+
+When the input is a date not from the current month, but instead a previous month, and a year is provided:
+
+- Today's date is July 26, 2023
+- The Input is `March 30, 2021`
+- DATE Slot Result: `"year": 2021, "month": 3, "day": 30`
 
 ## User-defined Slots (Lexicons)
 <div class="divider"></div>

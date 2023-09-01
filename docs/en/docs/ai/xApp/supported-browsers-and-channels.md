@@ -6,7 +6,7 @@ hidden: false
 
 # Supported Browsers and Channels
 
-Cognigy xApps is compatible with the browsers and channels listed below.
+Cognigy xApps are compatible with the browsers and channels listed below.
 
 ## Supported Browsers
 
@@ -44,4 +44,5 @@ The following channels are supported by xApps:
 ## More information
 
 - [Overview](overview.md)
+- [Build an xApp](build-an-xApp.md)
 - [xApp Architecture](architecture.md)
