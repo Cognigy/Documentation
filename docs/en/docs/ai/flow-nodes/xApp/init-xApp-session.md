@@ -15,8 +15,34 @@
 ## Description
 <div class="divider"></div>
 
-This Node initializes a new xApp session. After the execution of this Node, the xApp can be accessed via the xApp Session URL, which is exposed via the [xApp Session URL token](../../xApp/tokens.md). 
+This Node initializes a new xApp session. 
 
+After the execution of this Node, the xApp can be accessed in two different ways:
+
+- [Without entering a PIN Code](#without-entering-a-pin-code)
+- [By entering a PIN Code](#by-entering-a-pin-code)
+
+### Without entering a PIN Code 
+
+To require only a URL to access an xApp session, a Session URL can be shared. This URL is available via the [xApp Session URL](../../xApp/tokens.md#xapp-session-url) token.
+
+The **xApp Session URL** token provides a URL, which is also accessible via `input.apps.url` in the input object.
+
+With the provided link, a user can access the xApp page without requiring a PIN.
+
+### By entering a PIN Code 
+
+To allow users to access the xApp session via a PIN, share both a PIN and a PIN Page URL with the users. 
+
+This functionality is available via the [xApp PIN Page URL](../../xApp/tokens.md#xapp-pin-page-url) token and the [xApp: Get Session PIN](get-xApp-session-PIN.md) Node.
+
+The **Get Session PIN** Node generates a PIN, which is accessible via the [xApp Session PIN token](../../xApp/tokens.md#xapp-session-pin) or `input.apps.session.pin` in the input object.
+
+The **xApp PIN Page URL** token provides a URL, which is also accessible via `input.apps.baseUrl` in the input object.
+
+With the provided link, a user can access the PIN page and enter their provided PIN to gain access to the xApp.
+
+## Settings
 
 ### Style Customization
 
@@ -42,8 +68,9 @@ Customize the text displayed on the Connection Screen. Alternatively, you can re
 
 ## More information
 
-- [xApp Tokens](../../xApp/overview.md)
+- [xApp Tokens](../../xApp/tokens.md)
 - [xApp Nodes](overview.md)
 - [xApp: Get Session PIN](get-xApp-session-PIN.md)
 - [xApp: Show HTML](set-html-xApp-state.md)
 - [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
+- [xApps](../../xApp/overview.md)
