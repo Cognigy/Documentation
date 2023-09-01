@@ -15,13 +15,18 @@
 ## Description
 <div class="divider"></div>
 
-This Node initializes a new xApp session. After the execution of this Node, the xApp can be accessed via links with the [xApp Session URL token](../../xApp/tokens.md#xapp-session-url), or [xApp PIN Page URL token](../../xApp/tokens.md#xapp-pin-page-url)
+This Node initializes a new xApp session. 
+
+After the execution of this Node, the xApp can be accessed in two different ways:
+
+- [Without entering a PIN Code](#)
+- [By entering a PIN Code](#)
 
 ### Without entering a PIN Code 
 
-To only require only a URL to access an xApp session, a Session URL can be shared. This is available via the [xApp Session URL token](../../xApp/tokens.md#xapp-session-url).
+To require only a URL to access an xApp session, a Session URL can be shared. This URL is available via the [xApp Session URL](../../xApp/tokens.md#xapp-session-url) token.
 
-The **xApp Session URL token** provides a URL, which is also accessible via `input.apps.url` in the input object.
+The **xApp Session URL** token provides a URL, which is also accessible via `input.apps.url` in the input object.
 
 With the provided link, a user can access the xApp page without requiring a PIN.
 
@@ -29,11 +34,11 @@ With the provided link, a user can access the xApp page without requiring a PIN.
 
 To require a PIN to access an xApp session, a PIN and PIN Page URL must be shared. 
 
-This functionality is available via the [xApp PIN Page URL token](../../xApp/tokens.md#xapp-pin-page-url) and the [xApp: Get Session PIN Node](get-xApp-session-PIN.md).
+This functionality is available via the [xApp PIN Page URL](../../xApp/tokens.md#xapp-pin-page-url) token and the [xApp: Get Session PIN](get-xApp-session-PIN.md) Node.
 
-The **Get Session PIN Node** generates a PIN, which is accessible via the [xApp Session PIN token](../../xApp/tokens.md#xapp-session-pin) or `input.apps.session.pin` in the input object.
+The **Get Session PIN** Node generates a PIN, which is accessible via the [xApp Session PIN token](../../xApp/tokens.md#xapp-session-pin) or `input.apps.session.pin` in the input object.
 
-The **xApp PIN Page URL token** provides a URL, which is also accessible via `input.apps.baseUrl` in the input object.
+The **xApp PIN Page URL** token provides a URL, which is also accessible via `input.apps.baseUrl` in the input object.
 
 With the provided link, a user can access the PIN page and enter their provided PIN to gain access to the xApp.
 
