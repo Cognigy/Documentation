@@ -19,8 +19,8 @@ This Node initializes a new xApp session.
 
 After the execution of this Node, the xApp can be accessed in two different ways:
 
-- [Without entering a PIN Code](#)
-- [By entering a PIN Code](#)
+- [Without entering a PIN Code](#without-entering-a-pin-code)
+- [By entering a PIN Code](#by-entering-a-pin-code)
 
 ### Without entering a PIN Code 
 
@@ -41,6 +41,8 @@ The **Get Session PIN** Node generates a PIN, which is accessible via the [xApp 
 The **xApp PIN Page URL** token provides a URL, which is also accessible via `input.apps.baseUrl` in the input object.
 
 With the provided link, a user can access the PIN page and enter their provided PIN to gain access to the xApp.
+
+## Settings
 
 ### Style Customization
 
@@ -66,8 +68,9 @@ Customize the text displayed on the Connection Screen. Alternatively, you can re
 
 ## More information
 
-- [xApp Tokens](../../xApp/overview.md)
+- [xApp Tokens](../../xApp/tokens.md)
 - [xApp Nodes](overview.md)
 - [xApp: Get Session PIN](get-xApp-session-PIN.md)
 - [xApp: Show HTML](set-html-xApp-state.md)
 - [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
+- [xApps](../../xApp/overview.md)
