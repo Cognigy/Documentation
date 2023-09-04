@@ -9,7 +9,7 @@ hidden: false
 
 _Manual mode_ can be helpful in scenarios requiring specialized expertise, urgent or high-priority cases, complex or sensitive issues, and or key customers. It enables organizations to provide personalized support, optimize customer experience, and efficiently handle conversations.
 
-In manual mode, conversation can be manually assigned or reassigned to any users with the Live Agent [roles](../roles.md): `Agent`, `Supervisor`, or `Administrator`.
+In manual mode, conversation can be manually assigned or reassigned to any users with the Live Agent [roles](../../roles.md): `Agent`, `Supervisor`, or `Administrator`.
 
 ## Manual Assignment
 
@@ -21,7 +21,7 @@ You can manually assign a conversation to an agent or team by following these st
 4. From the **Assigned Agent** list, select an agent that should be assigned to this conversation. If you want to assign the conversation to yourself, click **→ Assign to me** above the list.
 5. From the **Assigned Team** list, select a team that can be assigned to this conversation. The previously selected agent should be a part of this team.
 
-After the assignment, the agent or a team can receive a [notification](../notifications.md).
+After the assignment, the agent or a team can receive a [notification](../../notifications.md).
 
 ## Manual Reassignment
 
@@ -32,7 +32,7 @@ You can manually reassign a conversation to an agent or team by following these 
 3. From the **Assigned Agent** list, select a new agent that should be assigned to this conversation.
 4. From the **Assigned Team** list, select a new team to be assigned to this conversation. The previously selected agent should be a part of this team.
 
-If the conversation is reassigned, the agent or a team can receive a [notification](../notifications.md).
+If the conversation is reassigned, the agent or a team can receive a [notification](../../notifications.md).
 
 ## Manual Unassignment
 

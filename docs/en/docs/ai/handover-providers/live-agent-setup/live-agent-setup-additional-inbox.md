@@ -72,4 +72,4 @@ Your Flow is now configured for a Live Agent Handover.
 ## What's Next?
 
 - [Explore Conversation Workflow](../../../live-agent/conversation/conversation-workflow.md)
-- [Configure Conversation Routing](../../../live-agent/conversation/conversation-routing.md)
+- [Configure Conversation Routing](../../../live-agent/conversation/conversation-routing/overview.md)

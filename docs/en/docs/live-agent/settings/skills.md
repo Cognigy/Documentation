@@ -1,7 +1,7 @@
 ---
 title: "Skills"
 slug: "skills"
-description: ""
+description: "Live Agent Skills are specific abilities that human agents possess, such as language proficiency and expertise in particular domains."
 hidden: false
 ---
 
@@ -42,6 +42,15 @@ To assign a skill to a human agent, follow these steps:
 The skills will appear in the **Skills** column of the row with the agent.
 
 If you want to remove a skill from the raw with the agent, open the **Skills** window and click ![cross](../images/icons/cross.svg)  on the right side of the selected skill.
+
+## Apply Skills
+
+To start using skills in conversation routing, you need to specify your created skills in the Handover to Agent Node.
+
+If you want to assign conversations only to agents relevant to their skills, in addition to the Handover to Agent Node, you can add the Check Agent Availability Node.
+In this case, if a relevant agent is not found, you can notify the user. This Node checks only online agents with the relevant skills and performs routing.
+
+
 
 
 

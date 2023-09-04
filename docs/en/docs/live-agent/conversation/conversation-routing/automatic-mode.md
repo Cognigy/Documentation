@@ -43,31 +43,37 @@ To configure auto assignment in your Inbox, follow these steps:
 
 The changes will be applied.
 
-### Consider Conversation Count
+### Consider Conversation Parameters
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../../release-notes/4.57.md)
 
-By default, [Automatic Assignment](#automatic-assignment) does not take into account the number of conversations being handled by each agent.
-In this case, new conversations may be assigned to any available agent without considering their current workload.
+By default, [Automatic Assignment](#automatic-assignment) does not take into account conversation parameters,
+such as the number of conversations being handled by each agent, agent skiils, or conversation priority.
+In this case,
+new conversations may be assigned to any available agent without considering their current workload, skills, or priority.
 
-You can control this behavior by using the **Consider conversation count** setting.
+You can control this behavior by using the following settings:
 
-When this setting is enabled,
-Live Agent will take into account the number of conversations
-that each agent is already handling before assigning new conversations to them.
-For example, if Alex is currently handling three conversations,
-and Sara is handling one conversation, the system will assign new incoming conversations to Sara,
-as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5).
+| Setting                         | Description                                                                                                                                                                                                                                                                  | Example                                                                                                                                                                                                                                                              |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Consider conversation count     | When this setting is enabled, Live Agent takes into account the number of conversations that each agent is already handling before assigning new conversations to them.                                                                                                      | If Alex is currently handling three conversations, and Sara is handling one conversation, the system will assign new incoming conversations to Sara, as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5). |
+| Consider conversation skills    | When this setting is enabled, Live Agent considers an agent's proficiency in specific skills when assigning new conversations to ensure a more balanced workload distribution among agents with the relevant expertise                                                       | If a conversation requires expertise in the Billing skill, and if Alex possesses expertise in Technical Support while Sara specializes in Billing, the system will assign new conversations requiring the Billing skill to Sara                                      |                                                                                                                                                                                                                                                                      |
+| Consider conversation languages | When this setting is enabled, Live Agent takes into account the languages an agent is proficient in when assigning new conversations. This ensures that customer inquiries in different languages are directed to agents who can effectively communicate in those languages. | If a customer inquiry is in Spanish, and Alex is not fluent in Spanish while Sara is, the system will assign that conversation to Sara.                                                                                                                              |
+| Consider conversation priority  | When this setting is enabled, Live Agent prioritizes conversations based on their urgency.                                                                                                                                                                                   | If there are both High priority and Urgent priority conversations in the Agent Queue, the system will assign the Urgent conversation first to Alex. If Sara is online, the second High priority conversation will be assigned to her.                                |
 
 If all agents have the same number of active conversations,
 the standard round-robin logic will be applied to assign each agent the next conversation in order.
 
-To consider conversation count withing your Inbox, follow these steps:
+To consider conversation parameters withing your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
 2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
-4. Activate the **Consider conversation count** option.
+4. Activate the following options:
+    - Consider conversation count - consider agent workload.
+    - Consider conversation skills - consider agent skills.
+    - Consider conversation languages - consider agent languages.
+    - Consider conversation priority - consider conversation urgency.
 
 The changes will be applied.
 
