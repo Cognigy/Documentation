@@ -24,11 +24,7 @@ Once the Inbox is created, you will find the **Default Inbox ID** displayed abov
   <figcaption>Inbox already created for the Agent</figcaption>
 </figure>
 
-## What's Next?
-
-Now you need to set up a [Handover](live-agent-setup-handover.md) to Live Agent.
-
-## Having Trouble?
+## Troubleshooting
 
 ### Create Project Inbox disabled
 
@@ -58,3 +54,7 @@ Your sentence has a few grammatical issues. Here's a corrected version:
 
 !!! warning "Live Agent Settings not visible"
     The **Live Agent Settings** section on both the **Organisation Details** and **Agent Settings** pages will not be displayed at all if you have both **Theming** enabled and the Cognigy Live Agent feature disabled.
+
+## What's Next?
+
+Now you need to set up a [Handover](live-agent-setup-handover.md) to Live Agent.
