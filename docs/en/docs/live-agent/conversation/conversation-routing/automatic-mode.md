@@ -54,12 +54,12 @@ new conversations may be assigned to any available agent without considering the
 
 You can control this behavior by using the following settings:
 
-| Setting                         | Description                                                                                                                                                                                                                                                                  | Example                                                                                                                                                                                                                                                              |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Consider conversation count     | When this setting is enabled, Live Agent takes into account the number of conversations that each agent is already handling before assigning new conversations to them.                                                                                                      | If Alex is currently handling three conversations, and Sara is handling one conversation, the system will assign new incoming conversations to Sara, as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5). |
-| Consider conversation skills    | When this setting is enabled, Live Agent considers an agent's proficiency in specific skills when assigning new conversations to ensure a more balanced workload distribution among agents with the relevant expertise                                                       | If a conversation requires expertise in the Billing skill, and if Alex possesses expertise in Technical Support while Sara specializes in Billing, the system will assign new conversations requiring the Billing skill to Sara                                      |                                                                                                                                                                                                                                                                      |
-| Consider conversation languages | When this setting is enabled, Live Agent takes into account the languages an agent is proficient in when assigning new conversations. This ensures that customer inquiries in different languages are directed to agents who can effectively communicate in those languages. | If a customer inquiry is in Spanish, and Alex is not fluent in Spanish while Sara is, the system will assign that conversation to Sara.                                                                                                                              |
-| Consider conversation priority  | When this setting is enabled, Live Agent prioritizes conversations based on their urgency.                                                                                                                                                                                   | If there are both High priority and Urgent priority conversations in the Agent Queue, the system will assign the Urgent conversation first to Alex. If Sara is online, the second High priority conversation will be assigned to her.                                |
+| Setting                         | Description                                                                                                                                                                                                                                                                  | Example                                                                                                                                                                                                                                                                                                             |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Consider conversation count     | When this setting is enabled, Live Agent takes into account the number of conversations that each agent is already handling before assigning new conversations to them.                                                                                                      | If Alex is currently handling three conversations, and Sara is handling one conversation, the system will assign new incoming conversations to Sara, as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5).                                                |
+| Consider conversation skills    | When this setting is enabled, Live Agent considers an agent's proficiency in specific skills when assigning new conversations to ensure a more balanced workload distribution among agents with the relevant expertise                                                       | If a conversation requires expertise in the Billing skill, and if Alex possesses expertise in Technical Support while Sara specializes in Billing, the system will assign new conversations requiring the Billing skill to Sara. More examples of how this setting works can be found in [Scenario 6](#scenario-6). |                                                                                                                                                                                                                                                                      |
+| Consider conversation languages | When this setting is enabled, Live Agent takes into account the languages an agent is proficient in when assigning new conversations. This ensures that customer inquiries in different languages are directed to agents who can effectively communicate in those languages. | If a customer inquiry is in Spanish, and Alex is not fluent in Spanish while Sara is, the system will assign that conversation to Sara.                                                                                                                                                                             |
+| Consider conversation priority  | When this setting is enabled, Live Agent prioritizes conversations based on their urgency.                                                                                                                                                                                   | If there are both High priority and Urgent priority conversations in the Agent Queue, the system will assign the Urgent conversation first to Alex. If Sara is online, the second High priority conversation will be assigned to her.                                                                               |
 
 If all agents have the same number of active conversations,
 the standard round-robin logic will be applied to assign each agent the next conversation in order.
@@ -420,6 +420,63 @@ Additional conditions:
 
 Result: The first two incoming conversations will be assigned to Agent 3,
 the third to Agent 1, the third to Agent 2.
+
+## Scenario 6
+
+Source table:
+
+```txt
+| Agent name | Limit | Status | Conversations | Skills            | 
+|------------|-------|--------|---------------|-------------------|
+| Agent 1    | 5     | Online | 1             | Technical support |
+| Agent 2    | 5     | Online | 1             | Billing           |
+| Agent 3    | 5     | Online | 1             | Customer Support  |
+| Agent 4    | 5     | Online | 1             | Technical support |
+```
+
+Common conditions:
+
+- The limit is 1 conversation per agent.
+- Each agent has assigned per conversation.
+- Activated:
+  - Automatic Conversation Assignment.
+  - Automatic Conversation Reassignment.
+  - Consider Conversation Count.
+  - Consider Conversation Skills.
+
+**Example 1**
+
+Additional conditions:
+
+- 1 new incoming conversation with the `Technical support` skill 
+- 1 new incoming conversation with the `Technical support`, `Billing` skills
+- Deactivated: Auto Assign Conversations to a Busy Agent.
+
+Result: The first incoming conversation will be assigned to Agent 1,
+the second to Agent 2.
+
+**Example 2**
+
+Additional conditions:
+
+- 1 new incoming conversation with the `Technical support` skill
+- 1 new incoming conversation with the `Technical support`, `Billing` skills
+- The Agent 2 is going to offline
+- Deactivated: Auto Assign Conversations to a Busy Agent.
+
+Result: The first incoming conversation will be assigned to Agent 1,
+the second to Agent 4.
+
+**Example 3**
+
+Additional conditions:
+
+- 1 new incoming conversation with the `Technical support` skill
+- 1 new incoming conversation with the `Technical support`, `Billing` skills
+- The Agent 1 and Agent 2 are going to offline
+- Deactivated: Auto Assign Conversations to a Busy Agent.
+
+Result: The first and the second incoming conversations will be assigned to Agent 4.
 
 ## More Information
 
