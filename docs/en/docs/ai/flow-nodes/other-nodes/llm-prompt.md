@@ -5,7 +5,7 @@ description: "The Cognigy LLM Prompt Node allows using Generative AI for creatin
 hidden: false
 ---
 
-# LLM Prompt (Beta)
+# LLM Prompt
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.55(Beta)-purple.svg)](../../../release-notes/4.55.md)
 
