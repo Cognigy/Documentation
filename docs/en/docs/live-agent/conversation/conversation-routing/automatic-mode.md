@@ -61,8 +61,7 @@ You can control this behavior by using the following settings:
 | Consider conversation languages | When this setting is enabled, Live Agent takes into account the languages an agent is proficient in when assigning new conversations. This ensures that customer inquiries in different languages are directed to agents who can effectively communicate in those languages. | If a customer inquiry is in Spanish, and Alex is not fluent in Spanish while Sara is, the system will assign that conversation to Sara. More examples of how this setting works can be found in [Scenario 7](#scenario-7).                                                                                               |
 | Consider conversation priority  | When this setting is enabled, Live Agent prioritizes conversations based on their urgency.                                                                                                                                                                                   | If there are both High priority and Urgent priority conversations in the Agent Queue, the system will assign the Urgent conversation first to Alex. If Sara is online, the second High priority conversation will be assigned to her. More examples of how this setting works can be found in [Scenario 8](#scenario-8). |
 
-If all agents have the same number of active conversations,
-the standard round-robin logic will be applied to assign each agent the next conversation in order.
+When agents have an equal number of active conversations, they'll be assigned the next conversation in order using standard round-robin logic. If online agents lack the necessary skill, the conversation will be directed to the nearest available agent through the standard round-robin logic.
 
 To consider conversation parameters withing your Inbox, follow these steps:
 
@@ -70,10 +69,10 @@ To consider conversation parameters withing your Inbox, follow these steps:
 2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
 3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
 4. Activate the following options:
-    - Consider conversation count - consider agent workload.
-    - Consider conversation skills - consider agent skills.
-    - Consider conversation languages - consider agent languages.
-    - Consider conversation priority - consider conversation urgency.
+    - Consider conversation count — consider agent workload.
+    - Consider conversation skills — consider agent skills.
+    - Consider conversation languages — consider agent languages.
+    - Consider conversation priority — consider conversation urgency.
 
 The changes will be applied.
 
