@@ -1,9 +1,10 @@
 ---
- title: "Genesys Cloud" 
- slug: "genesys-handover" 
- hidden: false 
+title: "Genesys Cloud Guest Chat" 
+slug: "genesys-cloud-guest-chat" 
+hidden: false 
 ---
-# Genesys Cloud Integration
+
+# Genesys Cloud Guest Chat
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../release-notes/4.52.md)
 
@@ -17,7 +18,7 @@
 
 Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 
-To learn more about handovers, refer to [Agent Handover](overview.md).
+The Genesys Cloud Guest Chat handover is based on [Genesys Guest Chat APIs](https://developer.genesys.cloud/commdigital/digital/webchat/guestchat). These APIs contain functionality to create a new chat conversation, retrieve previous chat history, send messages, set the typing indicator, and leave the chat. Receiving messages, membership changes, and other real-time events are available via a WebSocket connection.
 
 ## Setup
 <div class="divider"></div>
@@ -49,3 +50,7 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI:
 2. Open the Endpoint where you want to enable Handover to Genesys Cloud.
 3. Scroll down to **Handover Settings** and select **Genesys Cloud** from the list.
 4. To fill in the required fields and complete your setup, read the [Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292) article in Cognigy Help Center. 
+
+## More information
+
+- [Genesys Cloud Open Messaging](genesys-cloud-open-messaging.md)
