@@ -13,26 +13,22 @@ Cognigy Functions are Code Blocks that can be run inside your Cognigy.AI install
 !!! note "Maximum runtime"
     By default, the maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. On-premise customers with their own Cognigy.AI installation can adjust this limit.
 
-They are independent of Flows but can be triggered from a Flow and can also use the "inject" and "notify" APIs to send their results back into a Flow.
+Functions are independent of Flows but can be triggered from a Flow and can also use the **Inject** and **Notify** APIs to send their results back into a Flow.
 
 When running a Function, you can pass additional parameters which are then available in the Function Code.
 
-You can start using Functions by navigating to "Functions" in the "Build" section of the Agent Sidebar.
+You can start using Functions by navigating to **Build > Functions** in the left-side menu.
 <br>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/7471441-Screenshot_2021-05-17_Functions_in_Robins_lokaler_Mllplanet_Cognigy_AI.png" width="100%" />
-</figure>
 
 ## Configuration and Monitoring
 <div class="divider"></div>
 
-The "Function Editor" lets you define a Code snippet in JavaScript or TypeScript language.
+The **Function Editor** lets you define a Code snippet in JavaScript or TypeScript language.
 
 You can access the `parameters` and `api` objects from the Function's arguments.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/3b09091-MicrosoftTeams-image_2.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Function_editor.png" width="100%" />
 </figure>
 
 ## Interacting with Third-Party Systems
@@ -58,7 +54,7 @@ const { userId, sessionId } = parameters;
 api.inject({
     userId,
     sessionId,
-    text: "This text was injected though a Function"
+    text: "This text was injected through a Function"
 });
 ````
 
@@ -69,37 +65,41 @@ const { userId, sessionId } = parameters;
 api.notify({
     userId,
     sessionId,
-    text: "This text was injected though a Function"
+    text: "This text was injected through a Function"
 });
 ````
 
 ### Monitoring
 
-By switching to the "Instances" Tab, you can see an execution history for the currently edited Function.
-Each execution will list its current execution status, the trigger source, the start time and the finish time.
+By switching to the **Instances** tab, you can see an execution history for the currently edited Function. Each execution will list its current execution status, the trigger source, the start time and the finish time.
 
 By hovering an item, you can also see the parameters that were provided for this individual execution.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/84dc43a-Screen_Shot_03-26-21_at_12.31_AM.JPG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Function_instances.png" width="100%" />
 </figure>
 
 ## Triggering a Function
 <div class="divider"></div>
 
-Cognigy Functions can be triggered in three different ways: By pressing the "Run" button in the UI, by executing a "Trigger Function" Node or by calling the REST API.
+Cognigy Functions can be triggered in three different ways: By pressing the **Run** button in the UI, by executing a **Trigger Function** Node or by calling the **REST API**.
 
 ## Using the UI
-While visiting the "Function Editor" page for a Function, you can click the "Run" button on the top left of the page. This will run the Function without parameters. 
-If you want to also provide parameters, you can click the "Arrow Button" next to the "Run" button.
-This will open a Dialog where you can define additional parameters as a JSON object.
+While visiting the **Function Editor** page, to run a Function, you can click the **Run** button on the top left of the page. This will run the Function without parameters. 
+To run a Function with parameters, click the **Arrow Button** next to the **Run** button. This will open a dialog where you can define additional parameters as a JSON object.
 
 ## Using the REST API
-You can trigger a Function by using the REST API, documented in our [OpenAPI documentation](
-https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger).
+You can trigger a Function by using the REST API.
+More information, read the [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger) documentation.
 
 ## Using a Node
 It is also possible to trigger a Function from a Flow by using the [Trigger Function]({{config.site_url}}ai/flow-nodes/logic/trigger-function/) Node.
+
+## More information
+
+- [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)
+- [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)
+- [Trigger Function]({{config.site_url}}ai/flow-nodes/logic/trigger-function/)
 
 <!--
 
