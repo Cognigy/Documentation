@@ -1,27 +1,25 @@
 ---
- title: "Functions" 
- slug: "functions" 
- hidden: false 
+title: "Functions" 
+slug: "functions" 
+description: "Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API."
+hidden: false 
 ---
 # Functions 
 
-## Introduction
-<div class="divider"></div>
+Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API.
 
-Cognigy Functions are Code Blocks that can be run inside your Cognigy.AI installation and help you with long-running asynchronous processes, e.g. interaction with third-party systems HTTP APIs.
+Functions are independent of Flows but can be triggered from a Flow and can also use the [Inject & Notify](../../endpoints/inject-and-notify.md) APIs to send their results back into a Flow.
 
-!!! note "Maximum runtime"
-    By default, the maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. On-premise customers with their own Cognigy.AI installation can adjust this limit.
-
-Functions are independent of Flows but can be triggered from a Flow and can also use the **Inject** and **Notify** APIs to send their results back into a Flow.
-
-When running a Function, you can pass additional parameters which are then available in the Function Code.
+When running a Function, you can pass additional parameters, which are then available in the Function Code.
 
 You can start using Functions by navigating to **Build > Functions** in the left-side menu.
 <br>
 
+## Limitations
+
+- The maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. If you have On-premise environment, you can change this limit.
+
 ## Configuration and Monitoring
-<div class="divider"></div>
 
 The **Function Editor** lets you define a Code snippet in JavaScript or TypeScript language.
 
@@ -32,6 +30,7 @@ You can access the `parameters` and `api` objects from the Function's arguments.
 </figure>
 
 ## Interacting with Third-Party Systems
+
 You can use HTTP requests to interact with third-party systems.
 
 ````JavaScript
@@ -45,8 +44,10 @@ const response = await api.httpRequest({
 ````
 
 ## Interacting with Flows
-You can use Functions to interact with Flows using the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) APIs.
-The following examples assume that you pass the userId and sessionId through the Function's Parameters.
+
+You can use Functions to interact with Flows using the [Inject & Notify](../../endpoints/inject-and-notify.md) APIs.
+
+The following examples assume that you pass `userId` and `sessionId` through the Function's Parameters.
 
 ````JavaScript
 const { userId, sessionId } = parameters;
@@ -59,6 +60,7 @@ api.inject({
 ````
 
 **Performing a "Notify" call**
+
 ````JavaScript
 const { userId, sessionId } = parameters;
 
@@ -80,20 +82,29 @@ By hovering an item, you can also see the parameters that were provided for this
 </figure>
 
 ## Triggering a Function
-<div class="divider"></div>
 
-Cognigy Functions can be triggered in three different ways: By pressing the **Run** button in the UI, by executing a **Trigger Function** Node or by calling the **REST API**.
+Cognigy Functions can be triggered in three different ways:
 
-## Using the UI
-While visiting the **Function Editor** page, to run a Function, you can click the **Run** button on the top left of the page. This will run the Function without parameters. 
-To run a Function with parameters, click the **Arrow Button** next to the **Run** button. This will open a dialog where you can define additional parameters as a JSON object.
+- [Using the UI](#using-the-ui)
+- [Using the REST API](#using-the-rest-api)
+- [Using a Node](#using-a-node)
 
-## Using the REST API
+### Using the UI
+
+On the **Function Editor** page, click the **Run** button in the upper-left corner of the page.
+This action will run the Function without parameters. 
+
+To run a Function with parameters, click the **Arrow** button next to the **Run** button.
+This action will open a dialog, where you can define additional parameters as a JSON object.
+
+### Using the REST API
+
 You can trigger a Function by using the REST API.
-More information, read the [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger) documentation.
+For more information, read the [OpenAPI](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger) documentation.
 
-## Using a Node
-It is also possible to trigger a Function from a Flow by using the [Trigger Function]({{config.site_url}}ai/flow-nodes/logic/trigger-function/) Node.
+### Using a Node
+
+To trigger a Function from a Flow, use the [Trigger Function](../../flow-nodes/logic/trigger-function.md) Node.
 
 ## More information
 
