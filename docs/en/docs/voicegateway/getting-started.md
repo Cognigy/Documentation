@@ -45,7 +45,7 @@ To do voice-based experiences with your Virtual Agent, create your [Voice Gatewa
 3. In the **New Endpoint** section, do the following:
    3.1 Select the **VoiceGateway** Endpoint type.
    3.2 Add a unique name.
-   3.3 Select a relevant FLow from the list.
+   3.3 Select a relevant Flow from the list.
 4. Click **Save**.
 
 <figure>

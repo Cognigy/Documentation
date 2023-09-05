@@ -376,6 +376,7 @@ nav:
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
     - ai/endpoints/8x8.md
+    - ai/endpoints/genesys.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
@@ -409,7 +410,7 @@ nav:
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
 
-  - xApp:
+  - xApps:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
       - ai/xApp/getting-started.md
@@ -690,7 +691,7 @@ extra:
     name: en
   analytics:
    provider: google
-   property: UA-101284175-2  
+   property: G-DQ0NQDZTS1
    feedback:      
       title: Was this page helpful?
       ratings:
