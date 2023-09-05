@@ -1,13 +1,16 @@
 ---
- title: "Profile Settings" 
- slug: "profile-settings" 
- hidden: false 
+title: "Profile Settings" 
+slug: "profile-settings" 
+hidden: false 
 ---
+
 # Profile Settings
 
-Basic settings for the user profile can be changed or updated.
+Each user in Live Agent has a profile.
+In the profile, you can edit your avatar and name, which are seen by other Live Agent users,
+as well as customize certain system settings for yourself, such as receiving notifications or managing hotkeys.
 
-Click on the profile thumbnail in the bottom left-hand side of the screen, next click on **Profile Settings**.
+To access your profile, in the bottom left corner of the Live Agent interface, click on the profile thumbnail, then select **Profile Settings**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-profile-settings-menu.png" width="100%" alt="Live Agent Profile  Menu" />
@@ -44,6 +47,16 @@ Push and email notifications are moved to [Account settings](settings/account-se
 and can only be controlled by administrators.
 If the administrator has not yet changed the push and email notification settings,
 a human agent still has the opportunity to change them in the Profile Settings.
+
+## Hotkey to send messages
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.59-blue.svg)](../release-notes/4.59.md)
+
+To send messages in the [conversation chat](conversation/conversation-workflow.md), you can select one of the following hotkey options:
+
+- **None** — send messages by clicking the **Send** button. The ++enter++ key will be used for line breaks.
+- **Enter (↵)** — send messages by pressing the ++enter++ key instead of clicking the **Send** button. The ++shift+enter++ key combination will be used for line breaks.
+- **Cmd/Ctrl + Enter (⌘ + ↵)** — send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button. This option is selected by default. The ++enter++ key will be used for line breaks.
 
 ## API Access Token
 
