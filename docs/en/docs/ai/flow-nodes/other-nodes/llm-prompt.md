@@ -44,7 +44,7 @@ To display the output of the LLM Prompt Node to the user, follow these steps:
 
 ## Additional tags
 
-You can inject the recent conversation in the **Prompt** field by using the these tags:
+You can inject the recent conversation in the **Prompt** field by using these tags:
 
 - `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
    ```text
