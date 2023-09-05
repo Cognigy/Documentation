@@ -481,13 +481,14 @@ Result: The first and the second incoming conversations will be assigned to Agen
 
 Source table:
 
+```txt
 | Agent name | Limit | Status | Conversations | Skills            | Languages        |
 |------------|-------|--------|---------------|-------------------|------------------|
 | Agent 1    | 5     | Online | 1             | Technical support | English          |
 | Agent 2    | 5     | Online | 1             | Billing           | Spanish          |
 | Agent 3    | 5     | Online | 1             | Customer Support  | English, Spanish |
 | Agent 4    | 5     | Online | 1             | Technical support | Greek            |
-
+```
 Common conditions:
 
 - The limit is 1 conversation per agent.
@@ -507,7 +508,7 @@ Additional conditions:
 - 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills
 - Deactivated: Auto Assign Conversations to a Busy Agent.
 
-Result: The first incoming conversation will be assigned to Agent 1, the second is remained anassigned.
+Result: The first incoming conversation will be assigned to Agent 1, the second one will be assigned to any available agent randomly.
 
 **Example 2**
 
@@ -522,13 +523,14 @@ Result: 3 incoming conversation will be assigned to Agent 1.
 
 Source table:
 
+```txt
 | Agent name | Limit | Status | Conversations | Skills            | Languages        | 
 |------------|-------|--------|---------------|-------------------|------------------|
 | Agent 1    | 5     | Online | 1             | Technical support | English          |
 | Agent 2    | 5     | Online | 1             | Billing           | Spanish          |
 | Agent 3    | 5     | Online | 1             | Customer Support  | English, Spanish |
 | Agent 4    | 5     | Online | 1             | Technical support | Greek            |
-
+```
 Common conditions:
 
 - The limit is 1 conversation per agent.
@@ -549,7 +551,7 @@ Additional conditions:
 - 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills, and **Urgent** priority
 - Deactivated: Auto Assign Conversations to a Busy Agent.
 
-Result: The first incoming conversation will be assigned to Agent 1, the second is remained anassigned.
+Result: The first incoming conversation will be assigned to Agent 1, the second one will be assigned to any available agent randomly.
 
 **Example 2**
 
@@ -559,8 +561,7 @@ Additional conditions:
 - 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills, and **Urgent** priority
 - Deactivated: Auto Assign Conversations to a Busy Agent.
 
-Result: The first incoming conversation will be assigned to Agent 1, the second is remained anassigned.
-
+Result: The first incoming conversation will be assigned to Agent 1, the second one will be assigned to any available agent randomly.
 
 ## More Information
 
