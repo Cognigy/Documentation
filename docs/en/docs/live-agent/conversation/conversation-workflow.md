@@ -108,15 +108,17 @@ The label will be added to the conversation.
 ### Send a Response 
 <div class="divider"></div>
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
+
 To respond to a user in the conversation chat, type your message in the **Reply** section.
 
 For quick reply, you can use canned responses, variables, or a combination of both.
 
-If you need to add a new line in your response, press ++shift+enter++.
-When you're ready to send the message, click **Send Button** or press ++enter++.
+By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button.
+The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-8.png" width="100%" alt="Live Agent Conversations Reply" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="80%" alt="Live Agent Conversations Reply" />
   <figcaption>Reply to a Message</figcaption>
 </figure>
 
