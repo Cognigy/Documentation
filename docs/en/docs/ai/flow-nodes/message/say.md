@@ -656,6 +656,31 @@ The **8x8** tab provides two methods for creating and editing a message which is
     }
     ```
 
+## Genesys
+
+The **Genesys** tab provides two methods to create and edit messages that are specific to the **Genesys** channel.
+
+- **Text** for sending text message responses.
+- **Custom JSON** for defining more complex messages and templates.
+
+| Type        | Description                                       |
+|-------------|---------------------------------------------------|
+| Text        | A simple text message.                            |
+| Custom JSON | Can contain a valid Genesys Cloud message object. |
+
+??? info "Custom JSON example"
+
+    ```json
+    {
+      "replymessages": [],
+      "parameters": {
+        "command": "handover"
+      }
+    }
+    ```
+    
+    This message suggests that the virtual agent working on the Cognigy side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
+
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>
 
