@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
 
 {! _includes/ai/terms-of-use.md !}
 
@@ -227,7 +227,7 @@ The table below presents limitations. These limitations are subject to future ch
 
 **Q1**: Will Knowledge AI be free of charge?
 
-**A1**: No, we will provide pricing information by the end of August.
+**A1**: No, we will provide pricing information in the near future.
 
 **Q2**: I encountered a `Request failed with status code 429` error while attempting to upload a file. How can I solve this issue?
 

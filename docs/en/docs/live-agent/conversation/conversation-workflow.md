@@ -108,7 +108,7 @@ The label will be added to the conversation.
 ### Send a Response 
 <div class="divider"></div>
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
 
 To respond to a user in the conversation chat, type your message in the **Reply** section.
 
