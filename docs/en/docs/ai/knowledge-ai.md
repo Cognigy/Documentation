@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
 
 {! _includes/ai/terms-of-use.md !}
 
