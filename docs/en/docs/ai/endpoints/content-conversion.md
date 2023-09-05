@@ -1,7 +1,7 @@
 ---
- title: "Content Conversion" 
- slug: "content-conversion" 
- hidden: false 
+title: "Content Conversion" 
+slug: "content-conversion"
+hidden: false 
 ---
 
 # Content Conversion
@@ -35,3 +35,4 @@ If the endpoint does not support the selected output type, the system returns a 
 | Twilio SMS             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | AudioCodes             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Genesys                | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
