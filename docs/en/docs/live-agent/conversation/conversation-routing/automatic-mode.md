@@ -435,8 +435,8 @@ Source table:
 
 Common conditions:
 
-- The limit is 1 conversation per agent.
-- Each agent has assigned per conversation.
+- The limit is 5 conversations per agent. 
+- Each agent is assigned per conversation
 - Activated:
   - Automatic Conversation Assignment.
   - Automatic Conversation Reassignment.
@@ -491,7 +491,7 @@ Source table:
 ```
 Common conditions:
 
-- The limit is 1 conversation per agent.
+- The limit is 5 conversations per agent.
 - Each agent has assigned per conversation.
 - Activated:
     - Automatic Conversation Assignment.
@@ -533,8 +533,8 @@ Source table:
 ```
 Common conditions:
 
-- The limit is 1 conversation per agent.
-- Each agent has assigned per conversation.
+- The limit is 5 conversations per agent.
+- Each agent is assigned per conversation.
 - Activated:
     - Automatic Conversation Assignment.
     - Automatic Conversation Reassignment.
