@@ -7,46 +7,48 @@
 
 ## Description
 
-<div class="divider"></div>
+For each Webchat Endpoint you create, an integrated Demo Page for that Webchat will be available. To access it, open your Webchat Endpoint and click **Open Demo Webchat** in the upper-right corner.
 
-For every Webchat Endpoint you create, there will be an integrated Demo Page for this Webchat available. To get there, open your Webchat Endpoint and click the "OPEN WEBCHAT" button to the top right.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/93cd938-webchat.PNG" width="100%" />
-</figure>
-
-The Webchat Demo Page will show a Website containing a Webchat pointing to the Webchat Endpoint you came from. The Webchat will look and behave as configured in the Webchat settings within the Endpoint.
-
+The Webchat Demo Page will show a Website containing a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
 
 !!! note "Manually defining the user ID"
-    When you load the Webchat, we will per default create a random user ID and store this in local storage, so that you have the same user next time you use the Webchat. However, sometimes it can be beneficial to manually specify a user ID. You can do this by adding ?user=<some id> to the Webchat URL.
+    By default, when you load the Webchat, you are assigned a random user ID that is stored in local memory so that the next time you use the Webchat you will have the same user. 
+    If you want to set a user ID manually, you can do this by adding `?user=` to the Webchat URL.
 
 ## Demo Page Settings
 
-<div class="divider"></div>
-
-Some configuration options within the Webchat Endpoint are exclusive to the integrated Demo Page and will not have the same effect on Webchats that are embedded into your Website.
+These configuration options within the Webchat Endpoint will only have an effect on the integrated Demo Webchat page.
 
 ### Center Webchat 
+
 The positioning of the Webchat will only be affected for Demo Pages.
 
 ### Background Image
-The Background Image of the Website will only be changed when on a Demo Page.
+
+The background image of the Website will only be changed on a Demo Page.
 
 ### "Enable Speech-to-Text" & "Enable Text-to-Speech"
-These settings will enable the individual features within the Webchat. On the Demo Page, this will also cause the Plugins to be loaded automatically. In case you want to use them on your own Website, you will have to load them manually.
+
+These settings will enable the individual features within the Webchat. When enabled, the Plugins will be loaded automatically on the Demo Page. 
+In case you want to use the Plugins on your own Website, you will have to load them manually.
 
 ## Webchat Plugins
 
-<div class="divider"></div>
+For Cognigy-hosted Webchats (the ones directly accessible from the Endpoint configuration) you can automatically load Webchat Plugins.
+You can find the **Webchat Plugins** option in the **Webchat Layout** configuration settings within the Webchat Endpoint Editor. 
+A collection of example plugins for the Cognigy Webchat you will find on the github website:
 
-For Cognigy-hosted Webchats (the ones directly accessible from the Endpoint configuration), there is an option to automatically load Webchat Plugins via a List defined in Cognigy UI.
-You can find the "Webchat Plugins" section at the bottom of your Webchat configuration. By clicking `+`, you can add a new Plugin URL.
+`https://github.com/Cognigy/WebchatPlugins`
+
 When the hosted Webchat page is being loaded, it will load the additional Plugin before starting the Webchat.
 
-!!! warning "Inserting wrong Plugin urls"
+!!! warning "Inserting wrong Plugin URLs"
     When you add a Plugin URL that loads an incorrect or corrupted Plugin file, the Webchat may not start up correctly.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/edeb8a6-plugins.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_plugins.png" width="80%" />
 </figure>
+
+## More information
+
+- [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/)
