@@ -15,10 +15,14 @@ The Check Agent Availability Node support the following handover providers:
 - [Genesys Cloud]
 - [Chatwoot]
 
-## Live Agent 
+## Settings
 
-## Genesys Cloud
+### Live Agent 
 
-## Chatwoot
+### Genesys Cloud
 
-## 
+### Chatwoot
+
+### Storage Options
+
+### Error Handling
