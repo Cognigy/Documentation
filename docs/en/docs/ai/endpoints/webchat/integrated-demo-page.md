@@ -21,9 +21,10 @@ The Webchat Demo Page will display a website that contains a Webchat you have co
 
 ### Manually Defining the User ID
 
-By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory,
-ensuring that you have the same `user id` the next time you use the Webchat.
-If you want to set `user id` manually, you can do so by adding '?user=<user id>' to the Webchat URL.
+By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory, ensuring that you have the same `user id` the next time you use the Webchat.
+The `user id` of your Agent you can find in the **Manage > Contact Profiles** menu.
+When you want to test your Webchat as an end user you need to define the `user id` manually.
+To rewrite the user id in the **Demo Webchat URL**, use `?user=<old-user-id>&sessionId=<new-user-id>`.
 
 ## Demo Webchat Settings
 
@@ -37,31 +38,32 @@ These configuration options within the Webchat Endpoint will only have an effect
 | Background Image              | URL    | The image that will be displayed behind the Webchat                                                                             |
 | Center Webchat                | Select | Toggle whether the Webchat should be centered or in the bottom right corner                                                     |
 | Use Custom Webchat Bundle URL | Toggle | This is an advanced feature. Some Endpoint configurations might not work as they might not be supported in your Webchat Bundle. |
-| Custom Webchat Bundle URL     | URL    |                                                                                                                                 |
+| Custom Webchat Bundle URL     |  URL    |  You can use this field if you modified a Webchat source code and want to use your customized Webchat. `https://url.to/webchat.<package-name>.js`,    where `url.to` is a storage for your plugin e.g. Amazon S3 and `package-name` is a name of your package, e.g. `success`.                                                                                                                      |
 
 
 ### "Enable Speech-to-Text" & "Enable Text-to-Speech"
 
 These settings will enable the individual features within the Webchat. 
+To use these plugins on your production environment, you need to install them manually as follows:
+1. Open GitHub website `https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins`.
+2. Downoad the preferred plugin source code.
+3. Modify plugin code as you need.
+4. Build your modified plugin.
+5. Upload your plugin with a meaningful package name to a cloud storage, for example, to Amazon S3.
 
-When enabled, the Plugins will be loaded automatically on the Demo Page. 
-In case you want to use the Plugins on your own Website, you will have to load them manually.
 
 ## Webchat Plugins
 
 For Cognigy-hosted Webchats (the ones directly accessible from the Endpoint configuration) you can automatically load Webchat Plugins.
 
 You can find the **Webchat Plugins** option in the **Webchat Layout** configuration settings within the Webchat Endpoint Editor. 
-A collection of example plugins for the Cognigy Webchat you will find on the [GitHub](https://github.com/Cognigy/WebchatPlugins)
+The Webchat Plugin URL should be `https://url.to/plugin.js`, where `url.to` a storage for your plugin, for example, Amazon S3, and `plugin`a name of your plugin.
+A collection of example plugins for the Cognigy Webchat you will find on the [GitHub](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins). For Demo Webchat, you can test plugins only from this list.  
 
 When the hosted Webchat page is being loaded, it will load the additional Plugin before starting the Webchat.
 
 !!! warning "Inserting wrong Plugin URLs"
     When you add a Plugin URL that loads an incorrect or corrupted Plugin file, the Webchat may not start up correctly.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/webchat_plugins.png" width="80%" />
-</figure>
 
 ## More information
 
