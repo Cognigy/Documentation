@@ -6,17 +6,27 @@ hidden: false
 
 # Demo Webchat
 
-_Cognigy Demo Webchat_ provides the opportunity to test webchat integrations with various providers, including handover-providers, and also allows you to preview the appearance of your webchat before deploying it in a live environment. This is a valuable tool for testing and customization, ensuring that your webchat functions according to your expectations and looks the way you want it to before launching it.
+_Cognigy Demo Webchat_ provides the opportunity to test webchat integrations with various providers, including handover providers, and also allows you to preview the appearance of your webchat before deploying it in a production environment. Demo Webchat is a valuable tool for testing and customization, ensuring that your Webchat functions according to your expectations and looks the way you want it to before launching it.
 
+## Using Demo Webchat
+
+To start using Demo Webchat, follow these steps:
+
+1. Open the Cognigy.AI interface.
+2. Go to **Build > Endpoints**.
+3. On the **Endpoints** page, select existing Webchat Endpoint or create a new one by clicking **+ New Endpoint**. 
+4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**.
+5. 
+6. _(Optional)_
 When you create a Webchat Endpoint, a Demo Webchat will be available via integrated Demo Page. 
 
-To access it, open your Webchat Endpoint and click **Open Demo Webchat** in the upper-right corner.
 
 The Webchat Demo Page will show a Website containing a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
 
-!!! note "Manually defining the user ID"
-    By default, when you load the Webchat, you are assigned a random user ID that is stored in local memory so that the next time you use the Webchat you will have the same user. 
-    If you want to set a user ID manually, you can do this by adding `?user=` to the Webchat URL.
+### Manually Defining the User ID
+
+By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory so that the next time you use the Webchat you will have the same user. 
+If you want to set a user ID manually, you can do this by adding `?user=<user id>` to the Webchat URL.
 
 ## Demo Webchat Settings
 
@@ -43,6 +53,7 @@ In case you want to use the Plugins on your own Website, you will have to load t
 ## Webchat Plugins
 
 For Cognigy-hosted Webchats (the ones directly accessible from the Endpoint configuration) you can automatically load Webchat Plugins.
+
 You can find the **Webchat Plugins** option in the **Webchat Layout** configuration settings within the Webchat Endpoint Editor. 
 A collection of example plugins for the Cognigy Webchat you will find on the [GitHub](https://github.com/Cognigy/WebchatPlugins)
 
