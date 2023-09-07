@@ -16,17 +16,14 @@ To start using Demo Webchat, follow these steps:
 2. Go to **Build > Endpoints**.
 3. On the **Endpoints** page, select existing Webchat Endpoint or create a new one by clicking **+ New Endpoint**. 
 4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**.
-5. 
-6. _(Optional)_
-When you create a Webchat Endpoint, a Demo Webchat will be available via integrated Demo Page. 
 
-
-The Webchat Demo Page will show a Website containing a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
+The Webchat Demo Page will display a website that contains a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
 
 ### Manually Defining the User ID
 
-By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory so that the next time you use the Webchat you will have the same user. 
-If you want to set a user ID manually, you can do this by adding `?user=<user id>` to the Webchat URL.
+By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory,
+ensuring that you have the same `user id` the next time you use the Webchat.
+If you want to set `user id` manually, you can do so by adding '?user=<user id>' to the Webchat URL.
 
 ## Demo Webchat Settings
 
