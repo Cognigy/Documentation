@@ -18,7 +18,9 @@ hidden: false
 
 This Node searches through data within the Knowledge AI solution, extracts a relevant answer via a generative AI model, and creates an output.
 
-Before using this Node, ensure that you configured the `text-embedding-ada-002` model as well as the `text-davinci-003` or `gpt-3.5-turbo` models.
+Before using this Node,
+ensure that you configured the `text-embedding-ada-002` model as well as the
+`text-davinci-003 (deprecated)`  or `gpt-3.5-turbo` models.
 For more information, refer to the [list of supported providers](../../resources/build/llm.md).
 
 ## Settings

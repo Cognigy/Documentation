@@ -64,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.59:
+    - release-notes/4.59.md
   - 4.58:
     - release-notes/4.58.md
   - 4.57:
@@ -377,6 +379,7 @@ nav:
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
     - ai/endpoints/8x8.md
+    - ai/endpoints/genesys.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
@@ -384,7 +387,8 @@ nav:
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
-    - ai/handover-providers/genesys-cloud.md
+    - ai/handover-providers/genesys-cloud-guest-chat.md
+    - ai/handover-providers/genesys-cloud-open-messaging.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
 

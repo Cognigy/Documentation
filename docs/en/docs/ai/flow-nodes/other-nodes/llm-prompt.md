@@ -16,7 +16,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-The LLM Prompt Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text. 
+The LLM Prompt Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text.
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
@@ -44,7 +44,7 @@ To display the output of the LLM Prompt Node to the user, follow these steps:
 
 ## Additional tags
 
-You can inject the recent conversation in the **Prompt** field by using the these tags:
+You can inject the recent conversation in the **Prompt** field by using these tags:
 
 - `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
    ```text
@@ -54,13 +54,13 @@ You can inject the recent conversation in the **Prompt** field by using the thes
    User: userOutput2
    ```
 - `@cognigyRecentUserInputs` — the tag is replaced with a string that can contain up to 10 recent user outputs, for example:
-       
+
     ```text
     User: userOutput1
     User: userOutput2
     ```
-  
-    If you want to access only the last user input, specify `Text` token in the **Prompt** field.
+
+  If you want to access only the last user input, specify `Text` token in the **Prompt** field.
 
 
 When adding a tag, ensure that you leave a line break before and after the tag, for example:
@@ -74,6 +74,7 @@ Describe the user sentiment in one very short line.
 
 ## More information
 
+- [LLM](../../resources/build/llm.md)
 - [Generative AI](../../generative-ai.md)
 - [GPT Conversation Node](gpt-conversation.md)
 
