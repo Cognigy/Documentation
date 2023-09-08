@@ -95,10 +95,16 @@ To create a``Persistent Menu`` like this, open the *Persistent Menu Panel*. The 
   <figcaption>Webchat Plugins</figcaption>
 </figure>
 
-The Webchat Widget will load all plugins linked in this list field when started.
-To trigger the plugin, for example, display an upload button for the file-upload plugin a plugin-specific data payload is required.
+To trigger the plugin, for example, to display an upload button for the file-upload plugin, a plugin-specific data payload is required.
 
-Get sure all plugins are reachable for your whole audience!
+To configure Webchat Plugins, navigate to the **Webchat Layout** configuration settings within the **Webchat Endpoint** Editor. 
+The **Webchat Plugin URL** should follow the format https://url.to/plugin.js, where `url.to` represents the storage location for your plugin, such as Amazon S3, and `plugin` is the name of the specific plugin you use.
+
+For a collection of example plugins compatible with Cognigy Webchat,
+you can refer to the [GitHub](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins) repository.
+Note that for the Demo Webchat, you can only test plugins from the [pre-installed list](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins).
+
+{! _includes/ai/webchat/plugin-url.md !}
 
 ### Webchat Behavior
 
