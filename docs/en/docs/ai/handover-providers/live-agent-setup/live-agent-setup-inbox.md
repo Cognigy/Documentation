@@ -17,7 +17,7 @@ To create a new Inbox for the Agent, follow these steps:
 3. Scroll down and find **Live Agent Settings**.
 4. Click **Create Project Inbox**.
 
-Once the Inbox is created, you will find the **Default Inbox ID** displayed above the disabled button."
+Once the Inbox is created, the **Default Inbox ID** button will be disabled.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
@@ -34,7 +34,7 @@ The **Create Project Inbox** button could also be disabled for the following rea
 * The organization does not have a Live Agent account set up.
 * You do not have permissions to create an Inbox for the Agent.
 
-**Example 1:**
+**Example 1**
 
 The Cognigy Live Agent feature is not enabled, or a Live Agent account is not set up at the organizational level.
 
@@ -42,18 +42,15 @@ The Cognigy Live Agent feature is not enabled, or a Live Agent account is not se
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-settings-not-configured.png" width="100%"/>
 </figure>
 
-**Example 2:**
+**Example 2**
 
 You don't have permissions to create an Inbox for Live Agent.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-no-permissions.png" width="100%"/>
-</figure>"
+</figure>
 
-Your sentence has a few grammatical issues. Here's a corrected version:
-
-!!! warning "Live Agent Settings not visible"
-    The **Live Agent Settings** section on both the **Organisation Details** and **Agent Settings** pages will not be displayed at all if you have both **Theming** enabled and the Cognigy Live Agent feature disabled.
+If you have both **Theming** enabled and the Cognigy Live Agent feature disabled, The **Live Agent Settings** section on both the **Organisation Details** and **Agent Settings** pages will not be displayed.
 
 ## What's Next?
 

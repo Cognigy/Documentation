@@ -45,11 +45,10 @@ If you want to remove a skill from the raw with the agent, open the **Skills** w
 
 ## Apply Skills
 
-To start using skills in conversation routing, you need to specify your created skills in the Handover to Agent Node.
+To start using skills in conversation routing, you need to specify your created skills in the [Handover to Agent](../../ai/tools/agent-handover.md) Node.
 
-If you want to assign conversations only to agents relevant to their skills, in addition to the Handover to Agent Node, you can add the Check Agent Availability Node.
+If you want to assign conversations only to agents relevant to their skills, in addition to the Handover to Agent Node, you can add the [Check Agent Availability](../../ai/flow-nodes/services/check-agent-availability.md) Node.
 In this case, if a relevant agent is not found, you can notify the user. This Node checks only online agents with the relevant skills and performs routing.
-
 
 
 
