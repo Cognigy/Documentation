@@ -56,9 +56,10 @@ To use these plugins in your production environment, you need to install them ma
 5. Upload your plugin with a meaningful package name to a cloud storage, for example, to Amazon S3.
 6. In the Webchat Endpoint, navigate to the **Webchat Layout** section and paste the URL into the **Webchat Plugin URL** field.
 
+{! _includes/ai/webchat/plugin-url.md !}
+
 If you want to test other plugins or your custom plugins, run Webchat in your local environment.
 
-{! _includes/ai/webchat/plugin-url.md !}
 
 ## More information
 
