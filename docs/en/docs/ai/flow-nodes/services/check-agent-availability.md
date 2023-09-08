@@ -78,7 +78,7 @@ To build a simple Flow using the Check Agent Availability Node, follow these ste
 4. Below the Check Agent Availability Node, add an IF Node.
 5. Open the IF Node Editor.
 6. In the **Condition** field, click ![token](../../../assets/icons/token.svg) and select the **Available Agents** Token.
-7. Select the **exists** option from the condition list.
+7. Specify the **> 0** condition.
 8. Click **Save Node**.
 9. Below your **Then** child Node, add a **Handover to Agent** Node. Enter the required values for your handover provider. For example, for the Live Agent handover provider, you need to specify **Live Agent Inbox Id**, **Skills**, and **Languages** that help you route the conversation to available agents.
 10. Click **Save Node**.
