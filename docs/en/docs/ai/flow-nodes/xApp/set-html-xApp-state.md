@@ -30,6 +30,8 @@ You can use the `submit` function. An example of a button that submits on click 
 
 To view submitted data, use the Interaction panel. You can access submitted data in the `data` object by clicking **INFO > Input**, or in the chat by adding a Say Node and specifying <code>Submit payload: &lcub;&lcub;JSON.stringify(input.data)&rcub;&rcub;</code> or <code>Submit payload: &lcub;&lcub;JSON.stringify(ci.data)&rcub;&rcub;</code>.
 
+To access session data from within the HTML Code, use CognigyScript `{{"{{ JSON.stringify(cc.someContextKey) }}"}}`.
+
 ### Waiting Behavior
 
 To wait for a user input, for example, when the user clicks `Submit` on the Ordering page, activate the **Waiting Behavior** option.
