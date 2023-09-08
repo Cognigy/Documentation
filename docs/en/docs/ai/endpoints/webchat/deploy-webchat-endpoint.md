@@ -101,10 +101,20 @@ To configure Webchat plugins, navigate to the **Webchat Layout** configuration s
 The **Webchat Plugin URL** should follow the format `https://url.to/plugin.js`, where `url.to` represents the storage location for your plugin, such as Amazon S3, and `plugin` is the name of the specific plugin you use.
 
 For a collection of example plugins compatible with Cognigy Webchat,
-you can refer to the [GitHub](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins) repository.
-Note that for the Demo Webchat, you can only test plugins from the [pre-installed list](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins).
+you can refer to the [GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
+
+To use plugins in your production environment, you need to install them manually as follows:
+
+1. Open the [Coginigy GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
+2. Clone the preferred plugin source code.
+3. Modify plugin code as needed.
+4. Build your plugin by running the `npm run & npm ci` command.
+5. Upload your plugin to cloud storage, for example, to Amazon S3.
+6. In the Webchat Endpoint, navigate to the **Webchat Layout** section and paste the URL into the **Webchat Plugin URL** field.
 
 {! _includes/ai/webchat/plugin-url.md !}
+
+If you want to test other plugins or your custom plugins, run Webchat in your local environment.
 
 ### Webchat Behavior
 

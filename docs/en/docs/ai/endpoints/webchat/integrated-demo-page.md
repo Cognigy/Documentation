@@ -22,12 +22,15 @@ The Webchat Demo Page will display a website that contains a Webchat you have co
 ### Manually Defining the User ID
 
 By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory, ensuring that you have the same `user id` the next time you use the Webchat.
-The `user id` of your Agent you can find in the **Manage > Contact Profiles** menu.
 
-To test your Webchat as an end user, define the `user id` manually by specifying `?user=<user-id>` in the Demo Webchat URL,
-for example, `https://webchat-trial.cognigy.ai/v2/7e466a9d76611d8decbd15f366f607345efc36805c4e7cff25789ec91ee66457?user=72a1f2fa-54e7-4acb-b690-90ca69e5e4ef`.
+To test your Webchat as an end user, define the `user id` by adding `?user=<user-id>` to the Demo Webchat URL.
+For example, in the
+`https://webchat-trial.cognigy.ai/v2/7e466a9d76611d8decbd15f366f607345efc36805c4e7cff25789ec91ee66457?user=test` URL,
+the `user id` is set to `test`.
 
-To rewrite the `user id` in the **Demo Webchat URL**, use `?user=<old-user-id>&sessionId=<new-user-id>`.
+To create a new session for the existing user, use `?user=<old-user-id>&sessionId=<new-user-id>`.
+
+To locate the `user id` of past conversations, `Navigate to 'Manage > Contact Profiles`.
 
 ## Demo Webchat Settings
 
@@ -42,23 +45,6 @@ These configuration options within the Webchat Endpoint will only have an effect
 | Center Webchat                | Select | Determines where on the page to position the Webchat: center or bottom right.                                                                                                                                                                                                                                                                                                                                                              |
 | Use Custom Webchat Bundle URL | Toggle | This is an advanced feature. Some Endpoint configurations might not work as they might not be supported in your Webchat Bundle.                                                                                                                                                                                                                                                                                                            |
 | Custom Webchat Bundle URL     | URL    | This field available only when the **Use Custom Webchat Bundle URL** is acrivated. You can specify a new URL of Webchat if you want to use customized Webchat by modifying the Webchat source code. The URL should have the following format: `https://url.to/webchat.<package-name>.js`, where `url.to` is a storage for your plugin, for example, Amazon S3, and `package-name` is a name of your package, for example `webchat.legacy`. |
-
-## Demo Webchat Plugins
-
-In Demo Webchat, you can test only a [limited number of plugins](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins).
-
-To use these plugins in your production environment, you need to install them manually as follows:
-
-1. Open the [Coginigy GitHub](https://github.com/Cognigy/WebchatWidget/tree/master/src/plugins) repository.
-2. Download the preferred plugin source code.
-3. Modify plugin code as you need.
-4. Build your modified plugin.
-5. Upload your plugin with a meaningful package name to a cloud storage, for example, to Amazon S3.
-6. In the Webchat Endpoint, navigate to the **Webchat Layout** section and paste the URL into the **Webchat Plugin URL** field.
-
-{! _includes/ai/webchat/plugin-url.md !}
-
-If you want to test other plugins or your custom plugins, run Webchat in your local environment.
 
 
 ## More information
