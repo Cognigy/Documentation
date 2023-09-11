@@ -29,7 +29,7 @@ Using the **Negate** slider bar all but the selected filter options will be anal
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/Message_Explorer_n5.svg" width="80%"/>
-  <figcaption></figcaption>
+  <figcaption>Local filter for selecting message sources</figcaption>
 </figure>
 
 !!! warning
