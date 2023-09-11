@@ -80,11 +80,13 @@ When the task is completed, the package will be downloaded.
 
 ## Delete a Model
 
+Note that a [default model](#set-a-model-as-default) cannot be deleted. Before deletion, you need to remove the default tag.
+
 To delete a model, follow these steps:
 
 1. Go to **Build > LLM**.
 2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
-3. Select **Delete**.
+3. Select **Delete**. 
 4. Confirm the deletion. Features relying on this model will stop working if no default model is configured to support those features.
 
 The model will be deleted from the list.
@@ -92,7 +94,7 @@ The model will be deleted from the list.
 ## More information
 
 - [Generative AI](../../generative-ai.md)
-- [Knowleage AI](../../knowledge-ai.md)
+- [Knowledge AI](../../knowledge-ai.md)
 
 
 
