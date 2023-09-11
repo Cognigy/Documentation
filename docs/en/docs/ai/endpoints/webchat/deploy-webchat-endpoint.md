@@ -89,10 +89,30 @@ To create a **Persistent Menu** like this, open the *Persistent Menu Panel*. The
   <figcaption>Webchat Plugins</figcaption>
 </figure>
 
-The Webchat Widget will load all plugins linked in this list field when started.
-To trigger the plugin, for example, display an upload button for the file-upload plugin a plugin-specific data payload is required.
+To trigger the plugin, for example, to display an upload button for the file-upload plugin, a plugin-specific data payload is required.
 
-Get sure all plugins are reachable for your whole audience.
+To configure Webchat plugins, navigate to the **Webchat Layout** configuration settings within the **Webchat Endpoint** Editor. 
+The **Webchat Plugin URL** should follow the format `https://url.to/plugin.js`, where `url.to` represents the storage location for your plugin, such as Amazon S3, and `plugin` is the name of the specific plugin you use.
+
+For a collection of example plugins compatible with Cognigy Webchat,
+you can refer to the [GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
+You can copy the URL of one or more of them from the **Assets** section of the plugin on the [Releases](https://github.com/Cognigy/WebchatPlugins/releases) page.
+Paste the URL directly into the **Webchat Plugin URL** field.
+
+For example, the URL for the Google Firebase Authentication Webchat Plugin is 
+`https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js`.
+
+To use custom plugins in your production environment or modify existing ones, you need to install them manually as follows:
+
+1. Open the [Coginigy GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
+2. Clone the source code.
+3. Modify plugin code as needed.
+4. Build your plugin by running the `npm ci && npm run build` command.
+5. Upload your plugin to cloud storage, for example, to Amazon S3.
+6. In the Webchat Endpoint, navigate to the **Webchat Layout** section and paste the URL into the **Webchat Plugin URL** field.
+
+!!! warning "Possible Plugin URL errors"
+    The uploaded plugin should be available to the target audience. Check the availability settings on your cloud storage side.
 
 ### Webchat Behavior
 
