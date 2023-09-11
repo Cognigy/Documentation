@@ -5,32 +5,31 @@
 ---
 # NLU Connectors
 
-Cognigy.AI features built-in support for a number of third-party NLU engines. These are: 
+Cognigy.AI features built-in support for a number of third-party NLU engines:
 
-  - Cognigy
-  - Google Dialogflow
-  - IBM Watson Assistant
-  - Amazon Alexa
-  - Amazon Lex
-  - Microsoft LUIS
-  - Code (custom) 
+- Cognigy
+- Google Dialogflow
+- IBM Watson Assistant
+- Amazon Alexa
+- Amazon Lex
+- Microsoft LUIS
+- Code (custom)
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/NLU_connectors.png" width="50%" />
-</figure>
-
-# More information
+## How to Connect
 
 To connect an External NLU Service:
 
-Find out how to create manage NLU connectors on the [External NLU]({{config.site_url}}ai/nlu/external-nlu/external-nlu/#creating-nlu-connectors/) page.
-Find out how to connect to each supported external NLU service via the Help Center articles listed below:
+To create and manage NLU connectors, read [External NLU](../../nlu/external-nlu/external-nlu.md#creating-nlu-connectors) page.
+
+To find out how to connect to each supported external NLU service via the Help Center articles listed below:
 
 * [Amazon Lex: External NLU](https://support.cognigy.com/hc/en-us/articles/4408910240530)
 * [Watson Assistant: External NLU](https://support.cognigy.com/hc/en-us/articles/360017484979-Watson-Assistant-External-NLU)
 * [Microsoft LUIS: External NLU](https://support.cognigy.com/hc/en-us/articles/360017517319)
 * [Dialogflow: External NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)
 
-To test and deploy with an External NLU:
+To test and deploy an Agent using a third-party NLU, read [External NLU](../../nlu/external-nlu/external-nlu.md#testing-and-deploying-with-an-external-nlu) page.
 
-Find out how to test and deploy an Agent using a third-party NLU on the [External NLU]({{config.site_url}}ai/nlu/external-nlu/external-nlu/#testing-and-deploying-with-an-external-nlu/) page.
+## More information
+
+- [NLU](../../nlu/nlu-overview/overview.md)

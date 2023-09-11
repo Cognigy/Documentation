@@ -6,9 +6,6 @@ hidden: false
 
 # Message Explorer
 
-## Description
-<div class="divider"></div>
-
 The Message Explorer allows you to search for specific customer messages or Virtual Agent messages in your current Virtual Agent conversation. 
 The task characteristic of the Insights Message Explorer is that you can see what message came before the selected message and what came after this message. As a result, you can better understand customers' reactions, for example, how often did customers react in the same way or in a specific way, and what are the reasons for that.
 
