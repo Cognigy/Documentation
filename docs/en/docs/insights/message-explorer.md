@@ -14,7 +14,7 @@ The task characteristic of the Insights Message Explorer is that you can see wha
 ### Global filter options
 
 Using the Global Filter options, you can define the search criteria to find the intended messages you want to evaluate. 
-Details you will find here: [Global Filter](global-filter.md). 
+For more information, read [Global Filter](global-filter.md). 
 
 ### Local filter options
 
