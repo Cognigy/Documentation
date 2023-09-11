@@ -102,8 +102,13 @@ The **Webchat Plugin URL** should follow the format `https://url.to/plugin.js`, 
 
 For a collection of example plugins compatible with Cognigy Webchat,
 you can refer to the [GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
+You can copy the URL of one of them from the [Releases](https://github.com/Cognigy/WebchatPlugins/releases) page in the **Assets** section of the plugin
+and paste the URL directly into the **Webchat Plugin URL** field.
 
-To use plugins in your production environment, you need to install them manually as follows:
+For example, the URL for the Google Firebase Authentication Webchat Plugin is 
+`https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js`.
+
+To use custom plugins in your production environment or modify existing ones, you need to install them manually as follows:
 
 1. Open the [Coginigy GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
 2. Clone the preferred plugin source code.
@@ -112,9 +117,9 @@ To use plugins in your production environment, you need to install them manually
 5. Upload your plugin to cloud storage, for example, to Amazon S3.
 6. In the Webchat Endpoint, navigate to the **Webchat Layout** section and paste the URL into the **Webchat Plugin URL** field.
 
-{! _includes/ai/webchat/plugin-url.md !}
-
-If you want to test other plugins or your custom plugins, run Webchat in your local environment.
+!!! warning "Possible Plugin URL errors"
+    - When you add a Plugin URL that loads an incorrect or corrupted Plugin file, the Webchat may not start up correctly.
+    - The uploaded plugin should be publicly available. Check the availability settings on your cloud storage side.
 
 ### Webchat Behavior
 
