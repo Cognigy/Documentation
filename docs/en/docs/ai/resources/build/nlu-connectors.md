@@ -7,16 +7,19 @@
 
 Cognigy.AI features built-in support for a number of third-party NLU engines. These are: 
 
-  * **Google Dialogflow**
-  * **IBM Watson Assistant**
-  * **Amazon Alexa**
-  * **Amazon Lex**
-  * **Microsoft LUIS**
-  * **Code (custom)** 
+  - Cognigy
+  - Google Dialogflow
+  - IBM Watson Assistant
+  - Amazon Alexa
+  - Amazon Lex
+  - Microsoft LUIS
+  - Code (custom) 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/687ebdc-NLU_connectors.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/NLU_connectors.png" width="50%" />
 </figure>
+
+# More information
 
 To connect an External NLU Service:
 
@@ -28,6 +31,6 @@ Find out how to connect to each supported external NLU service via the Help Cent
 * [Microsoft LUIS: External NLU](https://support.cognigy.com/hc/en-us/articles/360017517319)
 * [Dialogflow: External NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)
 
-To test and Deploying with an External NLU:
+To test and deploy with an External NLU:
 
-Find out how to test and deploy an agent using a third-party NLU on the [External NLU]({{config.site_url}}ai/nlu/external-nlu/external-nlu/#testing-and-deploying-with-an-external-nlu/) page.
+Find out how to test and deploy an Agent using a third-party NLU on the [External NLU]({{config.site_url}}ai/nlu/external-nlu/external-nlu/#testing-and-deploying-with-an-external-nlu/) page.
