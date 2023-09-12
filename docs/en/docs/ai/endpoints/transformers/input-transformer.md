@@ -79,3 +79,35 @@ Conversations in Cognigy.AI are only counted if the Input Transformer returns a 
     - sessionId is a string with max length of 256 characters.
     - text is a string with a max length of 10000 characters.
     - data is an object
+
+### Transformers and Event Messages
+Endpoints like the Webchat Endpoint or the Socket.IO Endpoint will produce artificial "event messages" which are used to indicate user activity (e.g. the user connected or disconnected). These event messages will not trigger Flows and will not be counted, but you may encounter them when using Input Transformers. They have the following shape:
+```json
+{
+    "userId": "<current-user-id>",
+    "sessionId": "<current-session-id>",
+    "text": "",
+    "data": {
+        "_cognigy": {
+            "event": {
+                "type": "user-connected"
+            }
+        }
+    }
+}
+```
+They are used to let Handover Providers know about user activity in order to let the Human Agent know whether the user is still in the conversation.
+When encountering them in Handover Providers, it's recommended pass them on without modification, as they can only be recognized as such if their `data` payload has that particular shape. This can be achieved by using the following code snippet in your input transformer:
+```javascript
+{
+
+    handleInput: async ({ payload, endpoint }) => {
+        if (!!payload.data?._cognigy?.event) {
+            // pass on "event messages" without modification
+			return payload;
+		}
+
+		// rest of your input transformer code
+	}
+}
+```
