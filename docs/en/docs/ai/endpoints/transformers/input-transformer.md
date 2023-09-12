@@ -101,7 +101,9 @@ The Webchat and the Socket.IO Endpoints produce event messages that indicate use
 
 The event messages inform Handover Providers about user activity, allowing human agents to determine if the user is still engaged in the conversation. 
 
-When encountering them in Handover Providers, it's recommended pass them on without modification, as they can only be recognized as such if their `data` payload has that particular shape. This can be achieved by using the following code snippet in your input transformer:
+
+When you come across these event messages in the Input Transformers, we advise you to pass them on without any changes. The event messages can only be recognized as such if their data payload follows a specific format. To achieve this result, you can use the following code snippet in your Input Transformer:
+
 ```javascript
 {
 
