@@ -81,7 +81,9 @@ Conversations in Cognigy.AI are only counted if the Input Transformer returns a 
     - data is an object
 
 ### Transformers and Event Messages
-Endpoints like the Webchat Endpoint or the Socket.IO Endpoint will produce artificial "event messages" which are used to indicate user activity (e.g. the user connected or disconnected). These event messages will not trigger Flows and will not be counted, but you may encounter them when using Input Transformers. They have the following shape:
+
+The Webchat and the Socket.IO Endpoints produce event messages that indicate user activity,  such as whether the user is connected (`user-connected`) or disconnected  (`user-disconnected`). These event messages will not trigger Flows and will not be counted, but you may encounter them by using the Input Transformers:
+
 ```json
 {
     "userId": "<current-user-id>",
