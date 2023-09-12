@@ -14,16 +14,16 @@ Cognigy.AI installation requires a fully functional Kubernetes cluster. We sugge
 Running Cognigy.AI on top of on-premise Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend to use public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
 
 !!! warning "Kubernetes versions"
-    Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart)
+    Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
 
 ### Hardware Requirements
 For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specification for AWS EKS (or equivalents on other cloud providers):
 
-- at least 6 x `c5.2xlarge` (AWS)  or 6 x `Standard_F8s_v2` (Azure) worker nodes or equivalent VMs with 8 CPU/16 GB RAM and `x86_64` CPU architecture on other cloud providers
-- 100 GB root SSD storage per worker node
-- Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup
-- 250 GB of block SSD storage for application databases (250 GB x 3 for 3-replica MongoDB setup)
-- 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets
+- at least 6 x `c5.2xlarge` (AWS)  or 6 x `Standard_F8s_v2` (Azure) worker nodes or equivalent VMs with 8 CPU/16 GB RAM and `x86_64` CPU architecture on other cloud providers.
+- 100 GB root SSD storage per worker node.
+- Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup.
+- 250 GB of block SSD storage for application databases (250 GB x 3 for 3-replica MongoDB setup).
+- 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets.
 
 !!! warning "General-purpose machines"
     Choosing general-purpose machines instead of compute-optimized machines will have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
@@ -39,7 +39,7 @@ Cognigy products are packaged with the [Helm](https://helm.sh/) package manager 
     [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are **deprecated**. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x.zip). We will stop updating our **kustomize files end this year (31st December 2022)**.
 
 !!! warning "Helm versions"
-    For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart)
+    For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
 
 
 ### Cognigy License
