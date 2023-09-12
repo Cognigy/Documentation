@@ -96,7 +96,9 @@ Endpoints like the Webchat Endpoint or the Socket.IO Endpoint will produce artif
     }
 }
 ```
-They are used to let Handover Providers know about user activity in order to let the Human Agent know whether the user is still in the conversation.
+
+The event messages inform Handover Providers about user activity, allowing human agents to determine if the user is still engaged in the conversation. 
+
 When encountering them in Handover Providers, it's recommended pass them on without modification, as they can only be recognized as such if their `data` payload has that particular shape. This can be achieved by using the following code snippet in your input transformer:
 ```javascript
 {
