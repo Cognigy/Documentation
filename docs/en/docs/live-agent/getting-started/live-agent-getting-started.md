@@ -5,26 +5,15 @@
 ---
 # Getting Started with Live Agent
 
-## Need to Set up Live Agent?
-<div class="divider"></div>
+Cognigy's Live Agent enhances your customer service by extending your Conversational.AI platform by adding a Handover service to a Human Agent. 
 
-Setting up Live Agent is easy. 
+Following the below setup steps you are able to integrate Live Agent to the Cognigy.AI platform.
 
-Head over to our Live Agent Setup documentation to find all the steps necessary to get started with Live Agent.
 
-- [Live Agent Setup Introduction](../../ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md)
+## Setup Steps Index
 
-## Need More Information?
-<div class="divider"></div>
-
-Do you need more information on Live Agent, such as requirements for hosting Live Agent yourself? 
-
-See the sections available here on the left column.
-
-Here are some recommendations:
-
-<ul>
-    <li>Grouping your Agents in <a href="/live-agent/teams">Teams</a></li>
-    <li>Organizing work by adding <a href="/live-agent/labels">Labels</a></li>
-    <li>Customizing Live Agent by changing the <a href="/live-agent/account-settings">Settings</a></li>
-</ul>
+1. [Setup Live Agent for your Organisation]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-org/)
+2. [Set up your Project Inbox for Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-inbox/)
+3. [Set up your Endpoint and Flow for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover/)
+4. [Adding Agents and Admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/)
+5. [Optional: Adding another Inbox for your Project]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/)
