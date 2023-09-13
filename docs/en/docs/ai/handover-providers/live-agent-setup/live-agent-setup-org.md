@@ -19,7 +19,7 @@ Login to Cognigy.AI, and navigate to the [User Menu]({{config.site_url}}ai/tools
   <figcaption>The User Menu</figcaption>
 </figure>
 
-Now click on the menu item *Organisation Details*.
+Now click the menu item *Organisation Details*.
 
 ## Organisation Details
 <div class="divider"></div>

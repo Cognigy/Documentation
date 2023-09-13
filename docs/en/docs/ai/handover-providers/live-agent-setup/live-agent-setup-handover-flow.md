@@ -24,7 +24,7 @@ Within the **Handover to Agent** Node you need to set the **Live Agent Inbox ID*
 
 Now it is time to test that everything is working.
 
-Go back to the Endpoint Editor, click on **Open Demo Webchat**.
+Go back to the Endpoint Editor, click **Open Demo Webchat**.
 
 Say "Hi", and click the send button to start the Conversation. 
 

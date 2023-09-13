@@ -18,7 +18,7 @@ Before setting up the Endpoint, check whether these steps are done:
 - [Live Agent is set up for your Organization](live-agent-setup-org.md)
 - [The Inbox is created for your Live Agent Account](live-agent-setup-introduction.md#setup-steps-index).
 
-## Handover configuration
+## Handover Configuration
 
 To configure the Handover Settings of your Endpoint, follow these steps:
 
@@ -36,7 +36,7 @@ Both options are described below.
 
 If the toggle switch for the **Handover to pre-configured Live Agent account** option is activated, conversations will be transferred to the Live Agent Account mapped to the current Cognigy.AI organization.
 
-To use the pre-configured Live Agent you need to set following environment variables in your Cognigy.AI installation:
+To use the pre-configured Live Agent you need to set the following environment variables in your Cognigy.AI installation:
 
 ```txt
 FEATURE_USE_COGNIGY_LIVE_AGENT: true
@@ -46,14 +46,14 @@ COGNIGY_LIVE_AGENT_PLATFORM_TOKEN: <app-platform-token>
 
 You can find these environment variables in the [value.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) configuration file.
 
-## Handover to manually configured Live Agent¶
+## Handover to manually configured Live Agent
 
 To configure your Live Agent manually, follow these steps:
 
 1. Open the Endpoint Editor and deactivate in field **Handover Settings** the **Handover to pre-configured Live Agent acount** option using the toggle switch.
 2. Enter the **Base URL** for the Live Agent instance.The Base URL is your Live Agent installation URL, extended by `plus /api/v1`. For example, in the Cognigy Trial environment `https://liveagent-trial.cognigy.ai/api/v1` is the Base URL where `https://liveagent-trial.cognigy.ai` is the Live Agent URL.
 3. Enter the **Account ID** and the **API Key**. How to find the **Account ID** and the **API Key**, see sections below.
-4. Click on **Save** to confirm your Live Agent settings. 
+4. Click **Save** to confirm your Live Agent settings. 
 
 Your Live Agent has been configured. 
 
@@ -76,9 +76,9 @@ When you have found the Account ID, you can enter it in the **Handover Settings*
 
 ## Find API Key
 
-1. Click on the **Profile Settings** icon of your Account in the bottom-left corner of the Live Agent dashboard, then select **Profile Settings** in the selection menu.
+1. Click the **Profile Settings** icon of your Account in the bottom-left corner of the Live Agent dashboard, then select **Profile Settings** in the selection menu.
 2. Find the **Access Token** section, showing your API Key. 
-3. Click on **Copy**, to copy the API Key and to enter it in the **Handover Settings** of your Endpoint in Cognigy.AI. 
+3. Click **Copy**, to copy the API Key and to enter it in the **Handover Settings** of your Endpoint in Cognigy.AI. 
 
 ## What's next?
 
