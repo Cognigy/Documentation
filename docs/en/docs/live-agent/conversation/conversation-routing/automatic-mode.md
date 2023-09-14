@@ -236,7 +236,7 @@ Additional conditions:
 
 Result: Each agent receives one conversation.
 
-**Example 5**
+**Example 2**
 
 - The limit is 2 conversations per agent.
 - 8 conversations are created.
@@ -513,7 +513,7 @@ Additional conditions:
 - 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills, and **Urgent** priority
 - Deactivated: Auto Assign Conversations to a Busy Agent.
 
-Result:
+Result: The first incoming conversation will be assigned to Agent 1, while the second one will be randomly assigned to any available agent, except Agent 1.
 
 **Example 2**
 
