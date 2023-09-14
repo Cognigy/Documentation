@@ -57,7 +57,7 @@ To do voice-based experiences with your Virtual Agent, create your [Voice Gatewa
 
 To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with [Cognigy technical support](../help/get-help.md) to configure your SIP Trunk and route your number to the right Endpoint.
 
-## What's next?
+## What's Next?
 
 - [Create an account](webapp/accounts.md)
 - [Create an application](webapp/applications.md)

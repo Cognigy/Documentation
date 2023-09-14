@@ -11,7 +11,7 @@ Now that you have [Set up Live Agent for your Organisation]({{config.site_url}}a
 ## Agent Settings
 <div class="divider"></div>
 
-Open an existing [Agent]({{config.site_url}}ai/resources/agents/agents/). Go to the bottom left corner of your screen, and click on [Manage]({{config.site_url}}ai/resources/manage/manage/). Next click [Settings]({{config.site_url}}ai/resources/manage/settings/) selection. 
+Open an existing [Agent]({{config.site_url}}ai/resources/agents/agents/). Go to the bottom left corner of your screen, and click [Manage]({{config.site_url}}ai/resources/manage/manage/). Next click [Settings]({{config.site_url}}ai/resources/manage/settings/) selection. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/manage-settings.PNG" width="100%" />
@@ -25,7 +25,7 @@ Scroll down and find **Live Agent Settings**.
   <figcaption>Live Agent Settings in Agent Settings page</figcaption>
 </figure>
 
-Click on the **Create Project Inbox** button to create a new Inbox for the selected Agent. 
+Click the **Create Project Inbox** button to create a new Inbox for the selected Agent. 
 
 Once the Inbox is created, you will find the **Default Inbox ID** above the now disabled button.
 
