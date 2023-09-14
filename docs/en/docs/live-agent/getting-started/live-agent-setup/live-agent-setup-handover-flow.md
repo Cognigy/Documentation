@@ -1,8 +1,9 @@
 ---
- title: "Flow Setup" 
- slug: "live-agent-setup-handover-flow" 
- hidden: false 
+title: "Flow Setup" 
+slug: "live-agent-setup-handover-flow" 
+hidden: false 
 ---
+
 # Set up a Cognigy.AI Flow for Handover
 
 Once you've set up your Endpoint for handover to a Live Agent, the next step is configuring your Flow for this purpose within Cognigy.AI.

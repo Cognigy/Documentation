@@ -487,16 +487,15 @@ nav:
   - Overview:
     - live-agent/overview.md
   - Getting Started:
-    - live-agent/getting-started/live-agent-getting-started.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
+    - live-agent/getting-started/overview.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-org.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-inbox.md
     - Handover Setup:
-        - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-agents.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-additional-inbox.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
