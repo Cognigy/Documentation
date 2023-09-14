@@ -22,10 +22,16 @@ Before setting up the Endpoint, check whether these steps are done:
 
 To configure the Handover Settings of your Endpoint, follow these steps:
 
-1. Open the **Handover Settings** in your Endpoint Editor in Cognigy.AI.
-2. Select **Cognigy Live Agent** from the **Handover Platform** list.
+1. Go to the Cognigy.AI interface.
+2. In the left-side menu, select **Deploy > Endpoint**.
+3. Click **+New Endpoint**.
+4. In the **New Endpoint** window, add an Endpoint name and select your Virtual Agent Flow that hands you over to a human agent.
+5. In the **Endpoint type** list, select the Webchat Endpoint.
+6. Enter a unique name and click **Save**.
+7. Go to **Handover Settings**. 
+8. Select **Cognigy Live Agent** from the **Handover Platform** list.
 
-To configure your **Live Agent** you have two options: 
+To configure your **Live Agent**, you have two options: 
 
 1. You can use the **pre-configured Live Agent** Account for a Handover, which is mapped to the Cognigy.AI organization. 
 2. You can manually configure the Live Agent handover by deactivating the **Handover to pre-configured Live Agent account** using the toggle switch.
