@@ -87,6 +87,6 @@ When you have found the Account ID, you can enter it in the **Handover Settings*
 2. Find the **Access Token** section, showing your API Key. 
 3. Copy the API Key and paste it into the **API Key** field of your Endpoint in Cognigy.AI. 
 
-## What's next?
+## What's Next?
 
 When the Endpoint is configured, [set up your Flow for Handover to Live Agent](live-agent-setup-handover-flow.md)
