@@ -7,13 +7,13 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
 
 {! _includes/ai/terms-of-use.md !}
 
 Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
-With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](nlu/nlu-overview/ml-intents.md) and [Default Replies](nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
+With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
 Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
 
@@ -24,7 +24,7 @@ Before using this feature, create an account in one of the LLM Providers:
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-For the Knowledge AI case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](resources/build/llm.md) list.
+For the Knowledge AI case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
 
 ## Create a Knowledge Store
 
@@ -54,59 +54,46 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
 6. Click **Next**.
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file or copy the following text and save it as a file in the `.ctxt` format:
 
-    ??? info "Cognigy Sample"
+??? info "Cognigy Sample"
            
-        ```txt
-        `version: 1`
-        `sourceTitle: Cognigy`
-        `sourceLink: www.cognigy.com`
-       
-        # Frequently Asked Questions
-        ## What Is Conversational AI?
-        Conversational AI describes technologies that enable automated, human-like interactions between ourselves and machines. We interact with computers that use Natural Language Processing (NLP) and Machine Learning (ML) to interpret meaning and provide useful responses. We use our own language to express our intent instead of using hierarchical menus.
-        `sourceTitle: Cognigy.com`
-        `sourceLink: https://www.cognigy.com/faq`
-       
-        ## What is a Chatbot/ a Virtual Assistant
-        Chatbots, Digital Assistants and Virtual Assistants are terms often used interchangeably to describe a user interface, i.e. a chat box on a website or a smart speaker, as well as the intelligence that drives the automated conversation. Chatbot is a general term but is often reserved for static interactions, such as a basic Q & A. “Digital Assistant“ or “Virtual Assistant“ is used to describe more complex interactions between a user, a sophisticated reasoning engine and back-end systems.
-       
-        ### What is Conversational Automation?
-        Conversational Automation is a term that distinguishes an informational experience from an experience that accomplishes an action on behalf of a user. Conversational automation walks a user through the steps required to check order status, initiate a password reset, file a support ticket or make a reservation, for example.
-        `sourceLink: https://www.cognigy.com/faq`
-       
-        # Cognigy AI Plattform
-        `sourceLink1: https://www.cognigy.com/platform/cognigy-ai`
-        `sourceLink2: https://www.cognigy.com/`
-       
-        ## Plug-and-Play with Your Contact Center Ecosystem
-        ### Pre-build Connections
-        Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. `Cognigy.AI` seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-        ### Tailored Connections
-        Or develop your tailored integration fast using our powerful Extension Framework
-        `image: https://www.cognigy.com/hs-fs/hubfs/Integration%20Architecture-2023.07.png?width=950&height=427&name=Integration%20Architecture-2023.07.png`
-        `date: 01/01/2023`
-       
-        ## Turnkey Contact Center Connectivity
-        Readily embed Cognigy.AI into your contact center infrastructure– phone, digital, live chat, agent desktop, and more.
-        `sourceLink: https://www.cognigy.com/platform/cognigy-ai`
-       
-        ### One-Click Backend Integrations
-        With our built-in Marketplace, you're just a few clicks away from connecting back-office systems to automate processes and speed up resolutions.
-       
-        #### 25+ Prebuilt Channel Connectors
-        Build your workflow once and populate it on any channel (web, phone, messaging) within seconds to enable consistent experiences everywhere
-        `last_edited: 01/02/2023`
-       
-        Cognigy.AI `addedLink: www.cognigy.com` - Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. Cognigy.AI seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-        Or develop your tailored integration fast using our powerful Extension Framework.
-        ```
+```txt
+`version: 1`
+`title: Cognigy xApps FAQs`
+`url: https://www.cognigy.com`
 
+# What is Cognigy?
+Cognigy is a leading enterprise software provider for Conversational AI automation. Our platform, Cognigy.AI, automates customer and employee communications. Available in on-premises and SaaS environments, Cognigy.AI enables enterprises to have natural language conversations with their users on any channel - webchat, SMS, voice and mobile apps - and in any language. Cognigy.AI powers intelligent voice and chatbots that communicate consistently and accurately beyond simple FAQ, resulting in reduced contact center costs and increased efficiency while improving user experiences. The worldwide client portfolio of Cognigy includes Toyota, E.ON, Lufthansa, and many more.
+`url: https://www.cognigy.com/`
+
+# What are xApps?
+Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used as a stand-alone application or complimentary to any channel to enhance virtual and human agents' capabilities. In multi-channel scenarios xApps close the experience gaps of existing voice and messaging channels to enable dynamic, fully connected customer engagements by helping to overcome limitations of communication channels like voice, Webchat Widget or Microsoft Teams compromising user experiences.
+`url: https://docs.cognigy.com/ai/xApp/overview/`
+
+# What are use cases of xApps
+The use cases are endless as xApps are infinitely flexible due to the fact that they are essentially micro-web applications. Three potential use cases are listed here:
+- Authentication via Credentials: With xApps, you can allow users to authenticate using various methods such as email addresses, user numbers, or other identification details. Users can securely verify their identity and gain access to specific services or information.
+- Select a flight seat: With xApps, you can offer users an interface to choose their preferred seat for their flight. Users can view the available seats and select the seat of their choice, enhancing their travel experience.
+- Share location: With xApps, you can allow users to share their device's location information. This use case can be useful in various scenarios, such as providing location-based services, tracking deliveries, or finding nearby resources.
+`url: https://docs.cognigy.com/ai/xApp/use-cases/`
+
+# How do xApps work?
+The behavior of xApps is controlled via a set of xApp Flow Nodes. An xApp session can be initialized via the "xApp: Init Session" Node. The xApp session can be updated with the actual xApp Pages in two ways, by providing HTML code via the "xApp: Show HTML" Node or by specifying an Adaptive Card in JSON via the "xApp: Show Adaptive Card" Node. Alternatively, for more customization, you can create your own Node to update the xApps state by implementing and uploading an Extension. To wait for the xApp user Input in a Flow, use the Question or the Optional Question Node. The xApp type of the Question Node is only considered to be answered if submitted results are available as part of the Input.
+`url: https://docs.cognigy.com/ai/xApp/build-an-xApp/`
+
+# How is the xApps architecture designed?
+The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files via HTTP/HTTPs 1.1 requests to service-static-files and establishes a WebSocket connection (via Socket.io) to serviceapp-session-manager to retrieve information about xApp sessions. This information includes an async event to initialize an xApp session, which creates a unique URL, and specifies which xApp will be displayed in a specific xApp session. The Elastic Load Balancer helps distribute incoming traffic, while Traefik dynamically routes traffic to backend servers based on specific requirements. The serviceapp-session-manager updates the xApp session state in the App Session DB, and the WebSocket transfers data to the Shell page, which loads xApps and provides data to the SDK.
+`url: https://docs.cognigy.com/ai/xApp/architecture/`
+`image: https://docs.cognigy.com/ai/images/xApp/architecture.png`       
+```
+   
 8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.
 
 Complete installation and start exploring knowledge AI project structure.   
+
+To learn more about `ctxt`, refer to [Cognigy Text Format](ctxt.md).
 
 ## Explore a Knowledge AI project 
 
@@ -193,8 +180,8 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 2. In the **Flow** editor, add a **Search Extract Output** Node.
 3. In the **Node** editor, select the knowledge store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
     - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
 
      <figure>
@@ -202,11 +189,11 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
      </figure>
    
 5. Click **Save Node**. 
-6. Proceed to the [Interaction Panel](tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
+6. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
 You will receive a response generated from the absorbed Knowledge.
 
-To learn more about the Search Extract Output Node, refer to the [related article](flow-nodes/other-nodes/search-extract-output.md).
+To learn more about the Search Extract Output Node, refer to the [related article](../flow-nodes/other-nodes/search-extract-output.md).
 
 ## Limitations
 
@@ -221,7 +208,7 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of characters for text per Chunk | 2000          |
 
 !!! Snapshots
-    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](resources/deploy/snapshots.md). This feature will be implemented soon.    
+    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon.    
 
 ## FAQ
 
@@ -235,6 +222,6 @@ The table below presents limitations. These limitations are subject to future ch
 
 ## More information
 
-- [Search Extract Output Node](flow-nodes/other-nodes/search-extract-output.md)
-- [LLM](resources/build/llm.md)
-- [Generative AI](generative-ai.md)
+- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
+- [LLM](../resources/build/llm.md)
+- [Generative AI](../generative-ai.md)

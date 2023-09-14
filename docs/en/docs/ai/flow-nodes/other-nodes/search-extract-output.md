@@ -103,7 +103,7 @@ Select a store from the list to allow the Node to retrieve the data.
 ## More information
 
 - [Knowledge Search Node](knowledge-search.md)
-- [Knowledge Search Overview](../../knowledge-ai.md)
+- [Knowledge Search Overview](../../knowledge-ai/overview.md)
 - [LLM](../../resources/build/llm.md)
 
 
