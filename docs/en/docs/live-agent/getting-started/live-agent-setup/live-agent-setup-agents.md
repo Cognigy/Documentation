@@ -31,7 +31,7 @@ Cognigy Live Agent has three different user roles:
 - `Agent`
 - `Supervisor`
 
-For more information, see [Live Agent Roles](../../../live-agent/roles.md).
+For more information, see [Live Agent Roles](../../roles.md).
 
 To add one of these roles to users, follow these steps:
 

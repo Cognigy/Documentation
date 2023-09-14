@@ -21,7 +21,7 @@ Inboxes created manually can be safely deleted, except those with the `-default`
 
 ### What should I do if the Inbox is deleted?
 
-You need to create a new Inbox. To do that, use the [Adding another Inbox for your Project](../ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md) article.
+You need to create a new Inbox. To do that, use the [Adding another Inbox for your Project](getting-started/live-agent-setup/live-agent-setup-additional-inbox.md) article.
 
 ### Where can I check what the default Inbox is? Does it have a special account id?
 

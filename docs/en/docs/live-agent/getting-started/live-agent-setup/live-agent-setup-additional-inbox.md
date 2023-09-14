@@ -71,19 +71,9 @@ Your Flow is now configured for a Live Agent Handover.
 
 ## What's Next?
 
-- [Explore Conversation Workflow](../../../live-agent/conversation/conversation-workflow.md)
-- [Configure Conversation Routing](../../../live-agent/conversation/conversation-routing.md)
+- [Explore Conversation Workflow](../../conversation/conversation-workflow.md)
+- [Configure Conversation Routing](../../conversation/conversation-routing.md)
+- [Customize your Live Agent by changing the Account Settings](../../settings/overview.md)
+    - [Group human agents in Teams](../../settings/teams.md)
+    - [Organize your work by adding Labels](../../settings/labels.md)
 
-## What's New?
-
-Do you need more information on Live Agent, such as requirements for hosting Live Agent yourself? 
-
-See the sections available in the sidebar of your Live Agent dashboard.
-
-Here are some recommendations:
-
-<ul>
-    <li>Grouping your Agents in <a href="/live-agent/teams">Teams</a></li>
-    <li>Organizing your work by adding <a href="/live-agent/labels">Labels</a></li>
-    <li>Customizing your Live Agent by changing the <a href="/live-agent/account-settings">Settings</a></li>
-</ul>
