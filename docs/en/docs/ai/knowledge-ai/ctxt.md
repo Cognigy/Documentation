@@ -67,7 +67,7 @@ You can also download this [cognigy-sample.ctxt](https://docs.cognigy.com/ai/ima
 
 ### Header
 
-The header contains global metadata information with key-pair values.
+The header contains global metadata information with key-value pairs.
 
 A metadata unit is structured as a key-value pair enclosed in backticks.
 For example:
