@@ -19,9 +19,9 @@ offering a visual representation of the formatting. Regardless of the text edito
 
 ## Content Segmentation Basic Rules
 
-Segmenting сontent into chunks include the following basic rules:
+Segmenting content into chunks includes the following basic rules:
 
-- Content is divided into chunks based on double line breaks, rather than relying on headings.
+- Content is divided into chunks based on double-line breaks, rather than relying on headings.
 - The first chunk starts immediately after the initial double-line break in the file.
 - If a chunk of content exceeds the [maximum supported length](overview.md#limitations), the process will be halted, and you will encounter a `Chunk too long` error message.
 
@@ -76,7 +76,7 @@ For example:
 `url: https://www.cognigy.com`
 ```
 
-The header should be separated from the [body](#body) by one line.
+The header should be separated from the [body](#body) by double-line breaks.
 
 #### Parameters
 
@@ -99,7 +99,7 @@ The header should be separated from the [body](#body) by one line.
 The body contains paragraphs that include headings, clear and informative text, and relevant metadata.
 Each paragraph is equal to one chunk.
 
-Each paragraph should be separated by a single line.
+Each paragraph should be separated by double-line breaks.
 
 #### Headings
 
