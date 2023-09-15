@@ -19,7 +19,7 @@ offering a visual representation of the formatting. Regardless of the text edito
 
 ## Content Segmentation Basic Rules
 
-Segmenting сontent into sections include the following basic rules:
+Segmenting сontent into chunks include the following basic rules:
 
 - Content is divided into chunks based on double line breaks, rather than relying on headings.
 - The first chunk starts immediately after the initial double-line break in the file.
