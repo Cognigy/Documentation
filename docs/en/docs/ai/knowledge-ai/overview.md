@@ -52,40 +52,7 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
 6. Click **Next**.
-7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file or copy the following text and save it as a file in the `.ctxt` format:
-
-??? info "Cognigy Sample"
-           
-```txt
-`version: 1`
-`title: Cognigy xApps FAQs`
-`url: https://www.cognigy.com`
-
-# What is Cognigy?
-Cognigy is a leading enterprise software provider for Conversational AI automation. Our platform, Cognigy.AI, automates customer and employee communications. Available in on-premises and SaaS environments, Cognigy.AI enables enterprises to have natural language conversations with their users on any channel - webchat, SMS, voice and mobile apps - and in any language. Cognigy.AI powers intelligent voice and chatbots that communicate consistently and accurately beyond simple FAQ, resulting in reduced contact center costs and increased efficiency while improving user experiences. The worldwide client portfolio of Cognigy includes Toyota, E.ON, Lufthansa, and many more.
-`url: https://www.cognigy.com/`
-
-# What are xApps?
-Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used as a stand-alone application or complimentary to any channel to enhance virtual and human agents' capabilities. In multi-channel scenarios xApps close the experience gaps of existing voice and messaging channels to enable dynamic, fully connected customer engagements by helping to overcome limitations of communication channels like voice, Webchat Widget or Microsoft Teams compromising user experiences.
-`url: https://docs.cognigy.com/ai/xApp/overview/`
-
-# What are use cases of xApps
-The use cases are endless as xApps are infinitely flexible due to the fact that they are essentially micro-web applications. Three potential use cases are listed here:
-- Authentication via Credentials: With xApps, you can allow users to authenticate using various methods such as email addresses, user numbers, or other identification details. Users can securely verify their identity and gain access to specific services or information.
-- Select a flight seat: With xApps, you can offer users an interface to choose their preferred seat for their flight. Users can view the available seats and select the seat of their choice, enhancing their travel experience.
-- Share location: With xApps, you can allow users to share their device's location information. This use case can be useful in various scenarios, such as providing location-based services, tracking deliveries, or finding nearby resources.
-`url: https://docs.cognigy.com/ai/xApp/use-cases/`
-
-# How do xApps work?
-The behavior of xApps is controlled via a set of xApp Flow Nodes. An xApp session can be initialized via the "xApp: Init Session" Node. The xApp session can be updated with the actual xApp Pages in two ways, by providing HTML code via the "xApp: Show HTML" Node or by specifying an Adaptive Card in JSON via the "xApp: Show Adaptive Card" Node. Alternatively, for more customization, you can create your own Node to update the xApps state by implementing and uploading an Extension. To wait for the xApp user Input in a Flow, use the Question or the Optional Question Node. The xApp type of the Question Node is only considered to be answered if submitted results are available as part of the Input.
-`url: https://docs.cognigy.com/ai/xApp/build-an-xApp/`
-
-# How is the xApps architecture designed?
-The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files via HTTP/HTTPs 1.1 requests to service-static-files and establishes a WebSocket connection (via Socket.io) to serviceapp-session-manager to retrieve information about xApp sessions. This information includes an async event to initialize an xApp session, which creates a unique URL, and specifies which xApp will be displayed in a specific xApp session. The Elastic Load Balancer helps distribute incoming traffic, while Traefik dynamically routes traffic to backend servers based on specific requirements. The serviceapp-session-manager updates the xApp session state in the App Session DB, and the WebSocket transfers data to the Shell page, which loads xApps and provides data to the SDK.
-`url: https://docs.cognigy.com/ai/xApp/architecture/`
-`image: https://docs.cognigy.com/ai/images/xApp/architecture.png`       
-```
-   
+7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format.
 8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
@@ -140,7 +107,7 @@ The following types of files are supported:
 - `.pdf`
 - `.docx`
 
-The `.ctxt` (Cognigy text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
+The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
 The maximum number of sources per store is described in the [Limitations](#limitations) section.
 
@@ -222,6 +189,7 @@ The table below presents limitations. These limitations are subject to future ch
 
 ## More information
 
+- [Cognigy Text Format](ctxt.md)
 - [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
 - [LLM](../resources/build/llm.md)
 - [Generative AI](../generative-ai.md)
