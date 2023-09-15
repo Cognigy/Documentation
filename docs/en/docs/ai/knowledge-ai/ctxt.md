@@ -99,7 +99,7 @@ You can create your types of keys for metadata, for example,
 
 ### Body
 
-The body contains paragraphs that include headings, clear and informative text, and relevant metadata.
+The body contains paragraphs that include clear and informative text and relevant metadata.
 Each paragraph is equal to one chunk.
 
 Each paragraph should be separated by double-line breaks.
