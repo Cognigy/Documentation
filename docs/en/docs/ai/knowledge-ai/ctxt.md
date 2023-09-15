@@ -152,7 +152,7 @@ Common metadata might include the following elements:
 You can create your types of elements for metadata, for example,
 `details: For more information, contact our support team`.
 
-To learn about metadata key-limits, go to [Limitations](overview.md#limitations) section.
+To learn about metadata limits, go to [Limitations](overview.md#limitations) section.
 
 #### Example
 
