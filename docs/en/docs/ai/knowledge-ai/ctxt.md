@@ -111,10 +111,10 @@ For instance, if the content is about xApp architecture, a header could be **How
 
 The symbol `#` determines a heading. You can use only first-level headings (`H1`).
 
-#### Text
+#### Chunk Text
 
-Text is a main part of the paragraph, which is where you provide answers or convey knowledge to the user.
-Ensure that the text is clear, concise, and directly addresses the question or topic indicated by the heading.
+The chunk text is the text which will be ingested and returned within the Flow.
+Ensure that the text is clear, concise, and directly addresses the question or topic indicated by a potential heading.
 Readers rely on the text to find the information they seek, so clarity and accuracy are crucial.
 
 For instance, if the header is **How is the xApps architecture designed?** the text should explain the principles and methods used in designing the xApps architecture.
@@ -123,8 +123,8 @@ The text may contain bulleted and numbered lists in Markdown format. Other eleme
 
 #### Chunk Metadata
 
-Metadata is additional information associated with a paragraph
-and can be found in the `input.knowledgeSearch.topK[0].chunkMetaData` Input object.
+Metadata is additional information associated with a chunk
+and can be found in the Input object under `input.knowledgeSearch.topK[0].chunkMetaData`.
 Metadata allows you to provide context-related details that enhance the user's understanding or engagement with the content.
 
 Metadata is presented in a key-value format, offering versatility in the type of content you can include.
