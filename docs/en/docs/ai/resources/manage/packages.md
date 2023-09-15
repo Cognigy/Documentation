@@ -1,39 +1,37 @@
 ---
- title: "Packages" 
- slug: "packages" 
- hidden: false 
+title: "Packages" 
+slug: "packages" 
+hidden: false 
 ---
+
 # Packages
 
-## Introduction
+_Packages_ allow the export and import of individual resources, such as Flows or Lexicons, for the purpose of sharing these assets with other teams. Packages automatically include their direct dependencies and can be shared as a portable zip archive once downloaded.
 
-Packages allow you to export and import individual resources like Flows or Lexicons in order to share those assets with other teams. Packages automatically contain their direct dependencies and can be shared as a portable zip archive once downloaded. 
+You can either create a Package for a single resource or for multiple resources.
 
-You either can create a Package for a single resource, or multiple resources.
+The following agent resources can be included in a Package:
 
-Resources are for example Flows, Endpoints, Intents, Lexicons, Playbooks, Connections, NLU Connectors,…
-
-!!! note "What resources can be Exported in a Package?"
-    The following agent resources can be included in a Package:
-
-    * [Flows]({{config.site_url}}ai/resources/build/flows/) 
-    * [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)
-    * [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) 
-    * [Endpoints]({{config.site_url}}ai/endpoints/overview/)
-    * [Playbooks]({{config.site_url}}ai/resources/test/playbooks/)
+* [Flows](../build/flows.md)
+* [Intents](../nlu/nlu-overview/overview.md#intents)
+* [Lexicons](../build/lexicons.md)
+* [NLU Connectors](../resources/build/nlu-connectors.md) 
+* [Endpoints](../endpoints/overview.md)
+* [Playbooks](../resources/test/playbooks.md)
+* [Connections](../resources/build/connections.md)
 
 ## Creating Packages with a single Resource
 
 To create a Package from a single resource, navigate to a resource list, e.g. **Flows**, click the **secondary menu button** on the right side of the item, then click **Export as package** in the menu.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Create_Package.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Create_Package.png" width="80%" />
 </figure>
 
 This will start a **create package** task, and you will be notified the Package has been created. Once the task finished, you can download the Package by clicking the link in the task menu. Clicking the link will open a file-save dialog in your browser - select a location in order to start the download.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Download_Package.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Download_Package.png" width="80%" />
 </figure>
 
 ## Creating Packages with multiple Resources
@@ -41,7 +39,7 @@ This will start a **create package** task, and you will be notified the Package 
 Besides exporting or importing single resources in Packages, you can also export multiple resources at the same time. Navigate to **Packaging** in the **Management** section of the Agent sidebar. This will open our packaging tool.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Import-Export_page.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Import-Export_page.png" width="80%" />
 </figure>
 
 Here you can start Exporting or Importing a Package.
@@ -79,7 +77,7 @@ For example:
 As of v4.5.0, importing a Package will show you conflict resolution options in case e.g. name conflicts occur. You can either select a conflict resolution strategy for the complete import or per resource.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Import_Configuration.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Import_Configuration.png" width="80%" />
 </figure>
 
 ## Locale Mapping
@@ -93,7 +91,7 @@ In case your Agent already contains the Resources from the Package, you will nee
 Once you have selected a conflict resolution strategy, click on **Import** in order to start the Package import.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Conflict_Import_handling.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Conflict_Import_handling.png" width="80%" />
 </figure>
 
 !!! warning "Using Packages As Templates: Node IDs and Importing Packages"
