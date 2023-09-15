@@ -12,15 +12,15 @@ You can either create a Package for a single resource or for multiple resources.
 
 The following agent resources can be included in a Package:
 
-* [Flows](../build/flows.md)
-* [Intents](../nlu/nlu-overview/overview.md#intents)
-* [Lexicons](../build/lexicons.md)
-* [NLU Connectors](../resources/build/nlu-connectors.md) 
-* [Endpoints](../endpoints/overview.md)
-* [Playbooks](../resources/test/playbooks.md)
-* [Connections](../resources/build/connections.md)
+- [Flows](../build/flows.md)
+- [Intents](../../nlu/nlu-overview/overview.md#intents)
+- [Lexicons](../../build/lexicons.md)
+- [NLU Connectors](../build/nlu-connectors.md)
+- [Endpoints](../../endpoints/overview.md)
+- [Playbooks](../test/playbooks.md)
+- [Connections](../build/connections.md)
 
-## Creating Packages with a single Resource
+## Create Packages with a single Resource
 
 To create a Package from a single resource, navigate to a resource list, e.g. **Flows**, click the **secondary menu button** on the right side of the item, then click **Export as package** in the menu.
 
@@ -34,7 +34,7 @@ This will start a **create package** task, and you will be notified the Package 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Download_Package.png" width="80%" />
 </figure>
 
-## Creating Packages with multiple Resources
+## Create Packages with multiple Resources
 
 Besides exporting or importing single resources in Packages, you can also export multiple resources at the same time. Navigate to **Packaging** in the **Management** section of the Agent sidebar. This will open our packaging tool.
 
@@ -58,7 +58,7 @@ However, Packages created in newer versions may not be compatible with older ver
 
 Importing a Package from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
 
-## Importing Packages Created Prior v4.0.0
+## Import Packages Created Prior v4.0.0
 
 Packages created before v4.0.0 may contain special characters not allowed in the current version. 
 In order to allow their importation, those characters will be removed, and in case this causes a name duplication an index iterator will be added.
