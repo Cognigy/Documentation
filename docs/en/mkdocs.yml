@@ -422,7 +422,9 @@ nav:
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md
-  - ai/knowledge-ai.md
+  - Knowledge AI:
+      - ai/knowledge-ai/overview.md
+      - ai/knowledge-ai/ctxt.md
   - ai/generative-ai.md
   - ai/architecture.md
   

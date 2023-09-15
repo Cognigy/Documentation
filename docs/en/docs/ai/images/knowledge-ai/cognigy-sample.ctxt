@@ -1,42 +1,27 @@
 `version: 1`
-`sourceTitle: Cognigy`
-`sourceLink: www.cognigy.com`
+`title: Cognigy xApps FAQs`
+`url: https://www.cognigy.com`
 
-# Frequently Asked Questions
-## What Is Conversational AI?
-Conversational AI describes technologies that enable automated, human-like interactions between ourselves and machines. We interact with computers that use Natural Language Processing (NLP) and Machine Learning (ML) to interpret meaning and provide useful responses. We use our own language to express our intent instead of using hierarchical menus.
-`sourceTitle: Cognigy.com`
-`sourceLink: https://www.cognigy.com/faq`
+What is Cognigy?
+Cognigy is a leading enterprise software provider for Conversational AI automation. Our platform, Cognigy.AI, automates customer and employee communications. Available in on-premises and SaaS environments, Cognigy.AI enables enterprises to have natural language conversations with their users on any channel - webchat, SMS, voice and mobile apps - and in any language. Cognigy.AI powers intelligent voice and chatbots that communicate consistently and accurately beyond simple FAQ, resulting in reduced contact center costs and increased efficiency while improving user experiences. The worldwide client portfolio of Cognigy includes Toyota, E.ON, Lufthansa, and many more.
+`url: https://www.cognigy.com/`
 
-## What is a Chatbot/ a Virtual Assistant
-Chatbots, Digital Assistants and Virtual Assistants are terms often used interchangeably to describe a user interface, i.e. a chat box on a website or a smart speaker, as well as the intelligence that drives the automated conversation. Chatbot is a general term but is often reserved for static interactions, such as a basic Q & A. “Digital Assistant“ or “Virtual Assistant“ is used to describe more complex interactions between a user, a sophisticated reasoning engine and back-end systems.
+What are xApps?
+Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used as a stand-alone application or complimentary to any channel to enhance virtual and human agents' capabilities. In multi-channel scenarios xApps close the experience gaps of existing voice and messaging channels to enable dynamic, fully connected customer engagements by helping to overcome limitations of communication channels like voice, Webchat Widget or Microsoft Teams compromising user experiences.
+`url: https://docs.cognigy.com/ai/xApp/overview/`
 
-### What is Conversational Automation?
-Conversational Automation is a term that distinguishes an informational experience from an experience that accomplishes an action on behalf of a user. Conversational automation walks a user through the steps required to check order status, initiate a password reset, file a support ticket or make a reservation, for example.
-`sourceLink: https://www.cognigy.com/faq`
+What are use cases of xApps
+The use cases are endless as xApps are infinitely flexible due to the fact that they are essentially micro-web applications. Three potential use cases are listed here:
+- Authentication via Credentials: With xApps, you can allow users to authenticate using various methods such as email addresses, user numbers, or other identification details. Users can securely verify their identity and gain access to specific services or information.
+- Select a flight seat: With xApps, you can offer users an interface to choose their preferred seat for their flight. Users can view the available seats and select the seat of their choice, enhancing their travel experience.
+- Share location: With xApps, you can allow users to share their device's location information. This use case can be useful in various scenarios, such as providing location-based services, tracking deliveries, or finding nearby resources.
+`url: https://docs.cognigy.com/ai/xApp/use-cases/`
 
-# Cognigy AI Plattform
-`sourceLink1: https://www.cognigy.com/platform/cognigy-ai`
-`sourceLink2: https://www.cognigy.com/`
+How do xApps work?
+The behavior of xApps is controlled via a set of xApp Flow Nodes. An xApp session can be initialized via the "xApp: Init Session" Node. The xApp session can be updated with the actual xApp Pages in two ways, by providing HTML code via the "xApp: Show HTML" Node or by specifying an Adaptive Card in JSON via the "xApp: Show Adaptive Card" Node. Alternatively, for more customization, you can create your own Node to update the xApps state by implementing and uploading an Extension. To wait for the xApp user Input in a Flow, use the Question or the Optional Question Node. The xApp type of the Question Node is only considered to be answered if submitted results are available as part of the Input.
+`url: https://docs.cognigy.com/ai/xApp/build-an-xApp/`
 
-## Plug-and-Play with Your Contact Center Ecosystem
-### Pre-build Connections
-Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. `Cognigy.AI` seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-### Tailored Connections
-Or develop your tailored integration fast using our powerful Extension Framework
-`image: https://www.cognigy.com/hs-fs/hubfs/Integration%20Architecture-2023.07.png?width=950&height=427&name=Integration%20Architecture-2023.07.png`
-`date: 01/01/2023`
-
-## Turnkey Contact Center Connectivity
-Readily embed Cognigy.AI into your contact center infrastructure– phone, digital, live chat, agent desktop, and more.
-`sourceLink: https://www.cognigy.com/platform/cognigy-ai`
-
-### One-Click Backend Integrations
-With our built-in Marketplace, you're just a few clicks away from connecting back-office systems to automate processes and speed up resolutions.
-
-#### 25+ Prebuilt Channel Connectors
-Build your workflow once and populate it on any channel (web, phone, messaging) within seconds to enable consistent experiences everywhere
-`last_edited: 01/02/2023`
-
-Cognigy.AI `addedLink: www.cognigy.com` - Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. Cognigy.AI seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-Or develop your tailored integration fast using our powerful Extension Framework.
+How is the xApps architecture designed?
+The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files via HTTP/HTTPs 1.1 requests to service-static-files and establishes a WebSocket connection (via Socket.io) to serviceapp-session-manager to retrieve information about xApp sessions. This information includes an async event to initialize an xApp session, which creates a unique URL, and specifies which xApp will be displayed in a specific xApp session. The Elastic Load Balancer helps distribute incoming traffic, while Traefik dynamically routes traffic to backend servers based on specific requirements. The serviceapp-session-manager updates the xApp session state in the App Session DB, and the WebSocket transfers data to the Shell page, which loads xApps and provides data to the SDK.
+`url: https://docs.cognigy.com/ai/xApp/architecture/`
+`image: https://docs.cognigy.com/ai/images/xApp/architecture.png`

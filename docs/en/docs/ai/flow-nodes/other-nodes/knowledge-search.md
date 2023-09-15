@@ -48,5 +48,5 @@ Select a store from the list to allow the Node to retrieve the data.
 ## More information
 
 - [Search Extract Output](search-extract-output.md) 
-- [Knowledge Search Overview](../../knowledge-ai.md)
+- [Knowledge Search Overview](../../knowledge-ai/overview.md)
 
