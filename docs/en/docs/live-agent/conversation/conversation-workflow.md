@@ -237,28 +237,30 @@ If forwarding was enabled for Assist messages, the Agent can click the blue arro
     </figure>
 
 
-### How to request file upload
-<div class="divider"></div>
+### Request File Upload
 
-!!! note
-    Supported File Types: jpeg, jpg, png, docx, wav, ogg, pdf
-    
-    Maximum File Size: 40MB
+By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
 
-There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box, you can click on the "Request file" icon.
+File Requirements:
 
+- Supported File Types are jpeg, jpg, png, docx, wav, ogg, pdf.
+- Maximum file size is 40MB.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
-  <figcaption>Request file upload</figcaption>
-</figure>
+To request a file, follow these steps:
 
-Then you need to confirm that you want to send it to the customer to enable the file upload.
+1. Click the **Request file** icon at the bottom of the Live Agent reply box. 
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
-  <figcaption>Request file upload confirm</figcaption>
-</figure>
+    <figure>
+    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
+      <figcaption>Request file upload</figcaption>
+    </figure>
+
+2. Confirm that you want to send it to the customer to enable the file upload.
+
+    <figure>
+    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
+      <figcaption>Request file upload confirm</figcaption>
+    </figure>
 
 A message should appear in the chat indicating that the file has been requested.
 
@@ -285,8 +287,6 @@ After uploading the file, it should be reflected in the Webchat and the Live Age
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
   <figcaption>Request file upload completed in Live Agent</figcaption>
 </figure>
-
-More details on the customer side can be found under [File Upload Plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload)
 
 ### Private Chat with Agents
 <div class="divider"></div>
