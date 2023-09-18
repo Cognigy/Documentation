@@ -11,11 +11,11 @@ _Cognigy text format_ (`ctxt`) is a specialized text format developed by Cognigy
 This format serves to import custom-chunked content into the [Cognigy Knowledge AI](overview.md) solution.
 
 To adhere to the ctxt format, your files must comply with the formatting guidelines specified by Cognigy.
-These guidelines include using the file extension .ctxt, applying the rules of the ctxt document structure, and ensuring the use of valid Markdown syntax.
+These guidelines include using the file extension `.ctxt`, applying the rules of the ctxt document structure, and ensuring the use of valid Markdown syntax.
 You can edit the `.ctxt` file in code editors
 such as [Visual Studio Code](https://code.visualstudio.com/),
-[Notepad++](https://notepad-plus-plus.org/downloads/), or [Atom](https://github.com/atom/atom),
-offering a visual representation of the formatting. Regardless of the text editor you are using, select the Markdown language mode. For example, in Visual Studio Code, you can adjust the language mode by accessing the [Change Language Mode]((https://code.visualstudio.com/docs/languages/overview#_change-the-language-for-the-selected-file)) section in the lower panel of the editor.
+[Notepad++](https://notepad-plus-plus.org/downloads/), or [Sublime Text](https://www.sublimetext.com/),
+offering a visual representation of the formatting. Regardless of the text editor you are using, select the Markdown language mode. For example, in Visual Studio Code, you can adjust the language mode by accessing the [Change Language Mode](https://code.visualstudio.com/docs/languages/overview#_change-the-language-for-the-selected-file) section in the lower panel of the editor.
 
 ## Content Segmentation Basic Rules
 
@@ -144,7 +144,7 @@ Common metadata might include the following elements:
 You can create your types of elements for metadata, for example,
 `details: For more information, contact our support team`.
 
-To learn about metadata limits, go to [Limitations](overview.md#limitations) section.
+To learn about metadata limits, go to the [Limitations](overview.md#limitations) section.
 
 #### Example
 
