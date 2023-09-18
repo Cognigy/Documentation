@@ -2,7 +2,6 @@
 title: "Cognigy NLU: V1 to V2"
 slug: "from-nlu-v1-to-v2"
 hidden: false
-ignore_macros: true
 ---
 
 # Cognigy NLU: from V1 to V2
@@ -228,9 +227,7 @@ The orchestrator and embedding services do not require additional memory for tra
 
 As more projects begin to utilize the NLP V2 stack, the need for scaling may arise. The simplest approach is to monitor the **NLP Orchestrator** dashboard in Grafana, where you can assess the overall system latency and determine whether scaling is required for components such as embeddings or the classifier.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}/ai/installation/images/grafana-metrics.png" width="80%"/>
-</figure>
+![grafana-metrics.png](../images/grafana-metrics.png)
 
 It might also be necessary to scale up the nlp-orchestrator itself, although this is quite uncommon. On the same dashboard, you can monitor the CPU load of the service. If it approaches 1 CPU, then it's advisable to scale this service accordingly.
 
@@ -491,15 +488,16 @@ spec:
             - "true"
 ```
 
-After running it, you will see how many old models could be safely removed and how many were repaired. If any models were repaired, then you need **run the migration again**:
+After running it, you will see how many old models could be safely removed and how many were repaired.
+If any models were repaired, then you need to **run the migration again**:
 
-![Screenshot from 2023-06-29 11-02-43.png](/.attachments/Screenshot%20from%202023-06-29%2011-02-43-e8e8a838-588b-4880-b133-8d187892be8c.png)
+![clean-up-old-data](../images/clean-up-old-data.png)
 
 ## Check if Migration is Complete
 
 To ensure that the migration has been completed successfully and that NLP V1 is no longer in use, check the **Service NLP** dashboard in Grafana. Here, you can monitor the traffic received by the old NLP V1 stack. We recommend observing this for a couple of days, and if it consistently shows 0 load, you can safely remove the V1 stack.
 
-![image.png](/.attachments/image-96dc693b-f35a-4848-9a24-28ab15d941ef.png)
+![check-completed-migration](../images/check-completed-migration.png)
 
 ### Remove the NLP V1 Stack
 
