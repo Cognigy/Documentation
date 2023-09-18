@@ -7,13 +7,13 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
 
-{! _includes/ai/terms-of-use.md !}
+{! _includes/ai/terms-of-use-ks.md !}
 
 Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
-With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](nlu/nlu-overview/ml-intents.md) and [Default Replies](nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
+With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
 Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
 
@@ -24,7 +24,7 @@ Before using this feature, create an account in one of the LLM Providers:
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-For the Knowledge AI case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](resources/build/llm.md) list.
+For the Knowledge AI case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
 
 ## Create a Knowledge Store
 
@@ -52,61 +52,15 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
 6. Click **Next**.
-7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file or copy the following text and save it as a file in the `.ctxt` format:
-
-    ??? info "Cognigy Sample"
-           
-        ```txt
-        `version: 1`
-        `sourceTitle: Cognigy`
-        `sourceLink: www.cognigy.com`
-       
-        # Frequently Asked Questions
-        ## What Is Conversational AI?
-        Conversational AI describes technologies that enable automated, human-like interactions between ourselves and machines. We interact with computers that use Natural Language Processing (NLP) and Machine Learning (ML) to interpret meaning and provide useful responses. We use our own language to express our intent instead of using hierarchical menus.
-        `sourceTitle: Cognigy.com`
-        `sourceLink: https://www.cognigy.com/faq`
-       
-        ## What is a Chatbot/ a Virtual Assistant
-        Chatbots, Digital Assistants and Virtual Assistants are terms often used interchangeably to describe a user interface, i.e. a chat box on a website or a smart speaker, as well as the intelligence that drives the automated conversation. Chatbot is a general term but is often reserved for static interactions, such as a basic Q & A. “Digital Assistant“ or “Virtual Assistant“ is used to describe more complex interactions between a user, a sophisticated reasoning engine and back-end systems.
-       
-        ### What is Conversational Automation?
-        Conversational Automation is a term that distinguishes an informational experience from an experience that accomplishes an action on behalf of a user. Conversational automation walks a user through the steps required to check order status, initiate a password reset, file a support ticket or make a reservation, for example.
-        `sourceLink: https://www.cognigy.com/faq`
-       
-        # Cognigy AI Plattform
-        `sourceLink1: https://www.cognigy.com/platform/cognigy-ai`
-        `sourceLink2: https://www.cognigy.com/`
-       
-        ## Plug-and-Play with Your Contact Center Ecosystem
-        ### Pre-build Connections
-        Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. `Cognigy.AI` seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-        ### Tailored Connections
-        Or develop your tailored integration fast using our powerful Extension Framework
-        `image: https://www.cognigy.com/hs-fs/hubfs/Integration%20Architecture-2023.07.png?width=950&height=427&name=Integration%20Architecture-2023.07.png`
-        `date: 01/01/2023`
-       
-        ## Turnkey Contact Center Connectivity
-        Readily embed Cognigy.AI into your contact center infrastructure– phone, digital, live chat, agent desktop, and more.
-        `sourceLink: https://www.cognigy.com/platform/cognigy-ai`
-       
-        ### One-Click Backend Integrations
-        With our built-in Marketplace, you're just a few clicks away from connecting back-office systems to automate processes and speed up resolutions.
-       
-        #### 25+ Prebuilt Channel Connectors
-        Build your workflow once and populate it on any channel (web, phone, messaging) within seconds to enable consistent experiences everywhere
-        `last_edited: 01/02/2023`
-       
-        Cognigy.AI `addedLink: www.cognigy.com` - Upgrading your tech stack with conversational AI can be as fast and effortless as your service experiences. Cognigy.AI seamlessly layers in your contact center tech stack, bringing together data across systems to drive resolutions and smoother customer journeys. Leverage an extensive, growing library of prebuilt backend and channel connectors.
-        Or develop your tailored integration fast using our powerful Extension Framework.
-        ```
-
+7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format.
 8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.
 
 Complete installation and start exploring knowledge AI project structure.   
+
+To learn more about `ctxt`, refer to [Cognigy Text Format](ctxt.md).
 
 ## Explore a Knowledge AI project 
 
@@ -153,7 +107,7 @@ The following types of files are supported:
 - `.pdf`
 - `.docx`
 
-The `.ctxt` (Cognigy text) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
+The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
 The maximum number of sources per store is described in the [Limitations](#limitations) section.
 
@@ -193,8 +147,8 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 2. In the **Flow** editor, add a **Search Extract Output** Node.
 3. In the **Node** editor, select the knowledge store that you recently created.
 4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
     - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
 
      <figure>
@@ -202,11 +156,11 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
      </figure>
    
 5. Click **Save Node**. 
-6. Proceed to the [Interaction Panel](tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
+6. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
 You will receive a response generated from the absorbed Knowledge.
 
-To learn more about the Search Extract Output Node, refer to the [related article](flow-nodes/other-nodes/search-extract-output.md).
+To learn more about the Search Extract Output Node, refer to the [related article](../flow-nodes/other-nodes/search-extract-output.md).
 
 ## Limitations
 
@@ -221,7 +175,7 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of characters for text per Chunk | 2000          |
 
 !!! Snapshots
-    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](resources/deploy/snapshots.md). This feature will be implemented soon.    
+    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon.    
 
 ## FAQ
 
@@ -235,6 +189,7 @@ The table below presents limitations. These limitations are subject to future ch
 
 ## More information
 
-- [Search Extract Output Node](flow-nodes/other-nodes/search-extract-output.md)
-- [LLM](resources/build/llm.md)
-- [Generative AI](generative-ai.md)
+- [Cognigy Text Format](ctxt.md)
+- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
+- [LLM](../resources/build/llm.md)
+- [Generative AI](../generative-ai.md)

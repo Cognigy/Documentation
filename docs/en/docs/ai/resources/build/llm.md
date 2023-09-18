@@ -94,7 +94,7 @@ The model will be deleted from the list.
 ## More information
 
 - [Generative AI](../../generative-ai.md)
-- [Knowledge AI](../../knowledge-ai.md)
+- [Knowledge AI](../../knowledge-ai/overview.md)
 
 
 
