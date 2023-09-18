@@ -605,6 +605,7 @@ nav:
         - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
         - voicegateway/references/events/USER_BUSY.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
+        - voicegateway/references/events/NO_ANSWER.md
     - TTS and STT Vendors:
         - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:

@@ -1,12 +1,12 @@
 ---
- title: "Transfer" 
- slug: "transfer-vg" 
- hidden: false 
+title: "Transfer" 
+slug: "transfer-vg" 
+hidden: false 
 ---
 
 # Transfer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](./../../../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](./../../../release-notes/4.60.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/transfer.png" width="80%" />
@@ -25,11 +25,12 @@ The Transfer Node allows you to transfer an ongoing call to a Tel or SIP target.
 
 | Parameter     | Type          | Description                                                                                                                                                                                                                                                                                                             | Transfer Type |
 |---------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|
-| Transfer Type | Dropdown      | There are two transfer types: <br> - **Refer** - forwarding an existing call. <br> - **Dial** - creating a new outgoing call. If you want to use this type and still have the old Node version, add a new Voice Gateway Transfer Node in the Flow Editor and manually transfer the required settings from the old Node. | -             | 
+| Transfer Type | Dropdown      | There are two transfer types: <br> - **Refer** — forwarding an existing call. <br> - **Dial** — creating a new outgoing call. If you want to use this type and still have the old Node version, add a new Voice Gateway Transfer Node in the Flow Editor and manually transfer the required settings from the old Node. | -             | 
 | Reason        | CognigyScript | The reason for the handover. It is shown in Voice Gateway logs.                                                                                                                                                                                                                                                         | All           | 
 | Target        | CognigyScript | E.164 syntax or a SIP URI are supported.                                                                                                                                                                                                                                                                                | All           | 
 | Caller ID     | Number        | The caller ID. Some carriers, like Twilio, require a registered number for outgoing calls.                                                                                                                                                                                                                              | Dial          | 
 | Dial Music    | URL           | Custom audio or ring-back which plays to the caller while the outbound call is ringing.  Only the `.wav` or `.mp3` formats are supported.                                                                                                                                                                               | Dial          | 
+| Timeout       | Number        | The amount of time (in seconds) that the virtual agent will ring before a no-answer timeout.                                                                                                                                                                                                                            | Dial          | 
 
 ### Transcribe
 
@@ -58,7 +59,3 @@ For example, if a call is transferred to a user and AMD detects a machine, you w
 |-----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------|---------------|
 | Custom Transfer SIP Headers | Toggle | Data that needs to be sent as SIP headers in the generated SIP message.                                                         | All           |
 | Transfer SIP Headers        | JSON   | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute. | All           |
-
-
-
-
