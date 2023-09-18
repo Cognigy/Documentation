@@ -14,7 +14,7 @@ The following agent resources can be included in a Package:
 
 - [Flows](../build/flows.md)
 - [Intents](../../nlu/nlu-overview/overview.md#intents)
-- [Lexicons](../../build/lexicons.md)
+- [Lexicons](../build/lexicons.md)
 - [NLU Connectors](../build/nlu-connectors.md)
 - [Endpoints](../../endpoints/overview.md)
 - [Playbooks](../test/playbooks.md)
