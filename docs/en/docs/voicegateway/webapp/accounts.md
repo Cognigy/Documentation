@@ -21,7 +21,7 @@ A user with the Account scope can view and edit only the account to which they b
 ## Settings
 
 | Settings                         | Description                                                                                                                  | Scope                            |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | -------------------------------- |
+|----------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | Account SID                      | The value generates automatically when the admin creates an account                                                          | Account, Service Provider, Admin |
 | Account name                     | A unique account name.                                                                                                       | Account, Service Provider, Admin |
 | Unit                             | You can choose sessions or minutes and specify a maximum number of them.                                                     | Admin                            |
@@ -50,8 +50,11 @@ You must provide a Bucket Vendor and additional details and credentials in order
 
 After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
 
-!!! note 
-    Currently Amazon S3 is the only supported storage vendor for call recordings.
+Supported storage vendor for call recordings:
+
+- Amazon S3
+- Google Cloud Storage
+- Azure Cloud Storage
 
 #### Account level recording
 
@@ -62,17 +65,18 @@ To enable recording calls at an account level, follow these steps:
 1. Open the Voice Gateway interface.
 2. Go to **Accounts** and click the account to update.
 3. In the upper-right corner, click **Add Canned Response**.
-4. Scroll down to the  **Call recording configuration** section, click  the checkbox for **Enable call recording** and fill in the following fields:
+4. Scroll down to the  **Call recording configuration** section, click the checkbox for **Enable call recording**.
+5. Fill in the following fields:
     - **Audio Format** — choose between `.wav` and `.mp3` formats.
     - **Bucket Vendor** — select your vendor from the list.
     - **Bucket Name** — provide the name of your bucket.
     - **Region** — choose the region for your storage from the list.
     - **Access key ID** — provide the access key ID for your bucket.
     - **Secret access key** — provide the secret access key ID for your bucket.
-    - **S3 Tags** - provide any S3 tags with name and value as needed.
-5. Click **Test** to verify your connection.
-6. Click the **Record all calls for this account** checkbox.
-7. Click **Save**.
+    - **S3 Tags** - provide any S3 tags with name and value as needed. 
+6. Click **Test** to verify your connection. 
+7. Click the **Record all calls for this account** checkbox. 
+8. Click **Save**.
 
 All calls from all applications on this account will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
 
