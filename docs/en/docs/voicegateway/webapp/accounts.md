@@ -57,8 +57,8 @@ When enabled at the account level, calls from all applications within an account
 To enable recording calls at an account level, follow these steps:
 
 1. Open the Voice Gateway interface.
-2. Go to **Accounts** and click the account to update.
-3. In the upper-right corner, click **Add Canned Response**.
+2. In the left-side menu, select **Accounts**.
+3. Create a new account or use an existing one.
 4. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
 5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats. 
 6. Select a bucket vendor:
