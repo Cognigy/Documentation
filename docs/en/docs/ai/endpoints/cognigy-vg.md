@@ -76,6 +76,9 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 
 ### Call Event Settings
 
+!!! note
+    As with all other Endpoint settings, you cannot test the Call Events settings in the Endpoint within the Interaction Panel.
+
 | Parameter    | Type     | Description                                                                                                                                                                                                                                                                                                                            | 
 |--------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Action       | Selector | Choose the action to be performed when the call event is detected: <br> - **Inject into current Flow** — inject the defined text and data payload into the current flow. <br> - **Execute Flow** — trigger a selected Flow when the call event is detected. <br> - **None** — no action will be taken when the call event is detected. |
