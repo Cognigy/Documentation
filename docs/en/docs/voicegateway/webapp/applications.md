@@ -6,6 +6,8 @@ hidden: false
 
 # Applications
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+
 *Applications* are connectors
 that allow the [Endpoint](../getting-started.md#create-a-voice-gateway-endpoint) to be routed to Voice Gateway.
 These applications set default values, including the default speech vendor, 
@@ -55,4 +57,50 @@ To add extra vendor, follow these steps:
 
 The changes will be applied.
 
+### Call recording configuration
 
+Call recordings can be enabled at an account or application level for debugging purposes.
+
+This is a separate recording functionality, and cannot be controlled by Cognigy.AI within a Flow.
+
+You must provide a Bucket Vendor and additional details and credentials in order to enable this feature and store your recorded calls.
+
+After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
+
+#### Application level recording
+
+When enabled at the application level, only calls from a specific application will be recorded.
+
+To enable recording calls at an application level, follow these steps:
+
+1. Open the Voice Gateway interface.
+2. In the left-side menu, select **Applications**.
+3. Create a new application or use an existing one.
+4. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
+5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats.
+6. Select a bucket vendor:
+
+    === "Amazon S3"
+        - **Bucket Name** — provide the name of your bucket.
+        - **Region** — choose the region for your storage from the list.
+        - **Access key ID** — provide the access key ID for your bucket.
+        - **Secret access key** — provide the secret access key ID for your bucket.
+        - **S3 Tags** — provide any S3 tags with name and value as needed.
+
+    === "Google Cloud Storage"
+        - **Bucket Name** — provide the name of your bucket.
+        - **Service key** — provide a JSON key for a Service Account with APIs enabled for Cloud Storage and Storage Transfer API.
+        - **Google Cloud Storage Tags** — provide any Google Cloud Storage tags with name and value as needed.
+
+    === "Azure Cloud Storage"
+        - **Container Name** — provide the name of your container.
+        - **Connection String** — provide a [connection string](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string).
+        - **Azure Cloud Storage Tags** — provide any Azure Cloud Storage tags with name and value as needed.
+
+7. Click **Test** to verify your connection. 
+8. Go to **Applications** and select the Account from the dropdown box on the right side of the screen. 
+9. Click the application to edit. 
+10. Scroll down to the **Call recording configuration** section, click  the checkbox for **Record all calls**
+11. Click **Save**.
+
+All calls from this application will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
