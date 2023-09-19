@@ -21,12 +21,38 @@ After creating an application, you can edit or delete it.
 
 ## Settings 
 
-| Settings                 | Description                                                                          | Scope                            |
-|--------------------------|--------------------------------------------------------------------------------------|----------------------------------|
-| Application Name         | A unique application name.                                                           | Account, Service Provider, Admin |
-| Account                  | Select an account from the list.                                                     | Account, Service Provider, Admin | 
-| Calling Webhook          | A Cognigy.AI Endpoint URL for the Web Application that will handle calls.            | Account, Service Provider, Admin |
-| Call Status Webhook      | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status. | Account, Service Provider, Admin | 
-| Speech synthesis vendor  | Select a default Vendor and set up Language Settings for Text-To-Speech output.      | Account, Service Provider, Admin | 
-| Speech recognizer vendor | Select a default Vendor and set up Language Settings for Speech-To-Text recognition. | Account, Service Provider, Admin |
+| Settings                                      | Description                                                                                                                                                                                                 | Scope                            |
+|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Application Name                              | A unique application name.                                                                                                                                                                                  | Account, Service Provider, Admin |
+| Account                                       | Select an account from the list.                                                                                                                                                                            | Account, Service Provider, Admin | 
+| Calling Webhook                               | A Cognigy.AI Endpoint URL for the Web Application that will handle calls.                                                                                                                                   | Account, Service Provider, Admin |
+| Call Status Webhook                           | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status.                                                                                                                        | Account, Service Provider, Admin | 
+| Speech synthesis vendor                       | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin | 
+| Speech recognizer vendor                      | Select a default vendor and set up Language Settings for Speech-To-Text recognition. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field.   | Account, Service Provider, Admin |
+| Use a fallback speech vendor if primary fails | Add an [additional Speech-To-Text or Text-To-Speech](#add-additional-tts-and-stt-vendor) vendor.                                                                                                            | Account, Service Provider, Admin |
+
+
+## Add Additional TTS and STT Vendor
+
+To add extra vendor, follow these steps:
+
+1. Open the Cognigy Voice Gateway Self-Service Portal.
+2. In the left-side menu, select **Applications**. 
+3. Create a new application or use an existing one.
+4. On the application page, activate the **Use a fallback speech vendor if primary fails** setting.
+5. Choose the vendor type you want to add (STT or TTS) or add both at once:
+    - TTS:
+        - **Speech synthesis vendor** — select a TTS vendor from the list.
+        - **Lable** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials. 
+        - **Language** — select a primary language.
+        - **Voice** — select a primary voice for the virtuial agent.
+    - STT:
+        - **Speech recognizer vendor** — select an STT vednor from the list.
+        - **Lable** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials.
+        - **Language** — select a primary language. 
+6. _(Optional)_ Click **Swap primary and fallback**. The primary and fallback credentials will change places.
+7. Click **Save**.
+
+The changes will be applied.
+
 
