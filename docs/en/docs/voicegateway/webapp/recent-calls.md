@@ -7,7 +7,7 @@ hidden: false
 
 # Recent Calls
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../release-notes/4.58.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
 
 *Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
 
