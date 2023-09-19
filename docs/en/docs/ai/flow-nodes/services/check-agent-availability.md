@@ -31,9 +31,9 @@ The Check Agent Availability Node supports the following handover providers:
 
 | Parameter           | Type          | Description                                                                   |
 |---------------------|---------------|-------------------------------------------------------------------------------|
-| Skills              | List          | A list of skills that should be used to filter the available human agents.    |
+| Skills              | CognigyScript          | A list of skills that should be used to filter the available human agents.    |
 | Live Agent Inbox Id | CognigyScript | The ID of your Inbox in Live Agent.                                           |
-| Languages           | List          | A list of languages that should be used to filter the available human agents. |
+| Languages           | CognigyScript          | A list of languages that should be used to filter the available human agents. |
 
 
 ### Genesys Cloud
