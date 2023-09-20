@@ -380,6 +380,7 @@ nav:
     - ai/endpoints/workplace-by-fb.md
     - ai/endpoints/8x8.md
     - ai/endpoints/genesys.md
+    - ai/endpoints/bandwidth.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
