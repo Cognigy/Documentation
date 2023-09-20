@@ -171,7 +171,8 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of Knowledge Stores per project  | 10            |
 | Maximum number of Knowledge Sources per Store   | 10            |
 | Maximum number of Chunks per Knowledge Source   | 1000          |
-| Maximum number of metadata pairs in a Chunk     | 20            |
+| Maximum number of Source metadata pairs         | 20            |
+| Maximum number of Chunk metadata pairs          | 20            |
 | Maximum number of characters for text per Chunk | 2000          |
 
 !!! Snapshots
