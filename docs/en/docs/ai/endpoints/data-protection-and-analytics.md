@@ -4,9 +4,10 @@ slug: "data-protection-and-analytics"
 description: "The Data Protection & Analytics section in Cognigy Endpoints provides control over analytics and system logging. It allows you to customize the handling of contact data creation and storage, analytics data collection, and sensitive data masking to ensure comprehensive data protection."
 hidden: false 
 ---
+
 # Data Protection & Analytics
 
-The **Data Protection & Analytics** (previously called Data Management) section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.
+The **Data Protection & Analytics** section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.
 
 ## Contact Profiles
 
@@ -15,6 +16,14 @@ This setting enables the collection of individual contact profiles to store pers
 ## Collect Analytics
 
 Enable the collection of Analytics data for this endpoint.
+
+## Store Extensive Data Payloads in Analytics
+
+[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
+
+This setting applies only to the [Voice Gateway](cognigy-vg.md) Endpoint.
+When the setting is enabled,
+all [Voice Gateway events](../../voicegateway/references/events/overview.md) as well as xApp events will be stored in the Analytics database and available via  OData or the Transcript Explorer in Insights.
 
 ## Mask IP Address
 
