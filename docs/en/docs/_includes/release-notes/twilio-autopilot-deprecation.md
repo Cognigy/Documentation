@@ -1,0 +1,2 @@
+!!! warning "Removal of Twilio Autopilot Endpoint"
+    Due to the sunset of [Twilio Autopilot](https://support.twilio.com/hc/en-us/articles/8279929323547-Notice-Twilio-Autopilot-End-of-Life-August-2023-) on August 25, 2023, our [Twilio Autopilot Endpoint](https://support.cognigy.com/hc/en-us/articles/360016309439) will be removed in the near future. Consequently, the Endpoint will become unavailable.
