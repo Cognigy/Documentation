@@ -48,7 +48,7 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI:
 
 1. Go to **Deploy > Endpoints**.
 2. Open the Endpoint where you want to enable Handover to Genesys Cloud.
-3. Scroll down to **Handover Settings** and select **Genesys Cloud** from the list.
+3. Scroll down to **Handover Settings** and select ** Genesys Cloud Guest Chat** from the list.
 4. To fill in the required fields and complete your setup, read the [Genesys Cloud Handover Integration](https://support.cognigy.com/hc/en-us/articles/6229147435292) article in Cognigy Help Center. 
 
 ## More information
