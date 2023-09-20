@@ -7,11 +7,11 @@ hidden: false
 # Bandwidth
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/bandwidth.png" width="50%"/>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/bandwidth.png" width="20%"/>
 </figure>
 
 Within our **Cognigy.AI** platform,
-you are able to connect your virtual agent to your Contact Center or other phone numbers using the Bandwidth Endpoint,
+you are able to connect your virtual agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),
 allowing customers to speak to your virtual agent instead of just writing with it.
 
 ## Bandwidth Settings
