@@ -628,7 +628,7 @@ These configurations are also available in the following Nodes:
 
 ## 8x8
 
-The **8x8** tab provides two methods for creating and editing a message which is only for the **8x8** channel:
+The **8x8** tab provides three methods for creating and editing messages within the 8x8 channel.
 
 | Type          | Description                                                                                                                   |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------|
