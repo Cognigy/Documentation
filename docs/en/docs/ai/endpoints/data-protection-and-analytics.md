@@ -17,11 +17,12 @@ This setting enables the collection of individual contact profiles to store pers
 
 Enable the collection of Analytics data for this endpoint.
 
-## Store Extensive Data Payloads in Analytics
+### Store Extensive Data Payloads in Analytics
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
 
-This setting applies only to the [Voice Gateway](cognigy-vg.md) Endpoint.
+This setting applies only to the [Voice Gateway](cognigy-vg.md) Endpoint
+and can be activated if the [Collect Analytics](#collect-analytics) toggle is turned on.
 
 When the setting is enabled, all information from the [Voice Gateway event](../../voicegateway/references/events/overview.md) payloads will be stored in the Analytics database and available via OData or the Transcript Explorer in Insights.
 
