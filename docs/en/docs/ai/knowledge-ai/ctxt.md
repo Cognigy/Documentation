@@ -89,6 +89,8 @@ The header should be separated from the [body](#body) by double-line breaks.
 You can create your types of keys for metadata, for example,
 `author: Cognigy`, where `author` is a key.
 
+To learn about source metadata limits, go to the [Limitations](overview.md#limitations) section.
+
 #### Example
 
 ```markdown
@@ -144,7 +146,7 @@ Common metadata might include the following elements:
 You can create your types of elements for metadata, for example,
 `details: For more information, contact our support team`.
 
-To learn about metadata limits, go to the [Limitations](overview.md#limitations) section.
+To learn about chunk metadata limits, go to the [Limitations](overview.md#limitations) section.
 
 #### Example
 
