@@ -630,10 +630,11 @@ These configurations are also available in the following Nodes:
 
 The **8x8** tab provides two methods for creating and editing a message which is only for the **8x8** channel:
 
-| Type        | Description                             |
-|-------------|-----------------------------------------|
-| Text        | A simple text message.                  |
-| Custom JSON | Can contain a valid 8x8 message object. |
+| Type          | Description                                                                                                                   |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Text          | A simple text message.                                                                                                        |
+| Custom JSON   | Can contain a valid 8x8 message object.                                                                                       |
+| Adaptive Card | Can contain an adaptive card. You can find supported versions in [Content Conversion](../../endpoints/content-conversion.md). |
 
 ??? info "Custom JSON example"
     
