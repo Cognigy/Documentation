@@ -22,8 +22,23 @@ Enable the collection of Analytics data for this endpoint.
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
 
 This setting applies only to the [Voice Gateway](cognigy-vg.md) Endpoint.
-When the setting is enabled,
-all [Voice Gateway events](../../voicegateway/references/events/overview.md) as well as xApp events will be stored in the Analytics database and available via  OData or the Transcript Explorer in Insights.
+
+When the setting is enabled, all information from the [Voice Gateway event](../../voicegateway/references/events/overview.md) payloads will be stored in the Analytics database and available via OData or the Transcript Explorer in Insights.
+
+By default, the setting is disabled, and the following fields are not stored:
+
+- `trace_id`
+- `account_sid`
+- `application_sid`
+- `call_id`
+- `sip_status`
+- `sip_reason`
+- `originating_sip_ip`
+- `local_sip_address`
+- `service_provider_sid`
+- `fs_sip_address`
+- `api_base_url`
+- `originating_sip_trunk_name`
 
 ## Mask IP Address
 
