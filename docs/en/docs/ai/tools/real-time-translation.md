@@ -5,10 +5,6 @@
 ---
 # Real-time Translation
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-
-<div class="divider"></div>
-
 As of Cognigy.AI 4.10.0 real-time translation has been added to our Conversational AI product.
 
 Real-time translation is a type of translation where not everything has to be pre-translated or pre-localized (see [Localization]({{config.site_url}}ai/resources/manage/localization/), even if it is done with machine translation, but where the translation machine translates the conversation as it happens.
@@ -32,27 +28,22 @@ We can consider two use cases regarding the real-time translation:
 
 ## Real-Time Translation between User and Virtual Agent
 
-<div class="divider"></div>
+in Cognigy.AI Virtual Agents are deployed by [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/), for example, using the [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/). 
 
-In Cognigy.AI Virtual Agents are deployed with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/), for example, the [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/). 
-It may be necessary for customers to make this chat available in another language.
-
-In that case, we have to activate the **Real Time Translation Settings**.
-
+In case you would like to have the chat available in another language, you can do this by activating the **Real Time Translation Settings** as follows:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/9029ef1-Webchat_real-time_translation_settings_4.svg" width="100%" />
-  <figcaption>Endpoint Editor: "Real Time Translation Settings"</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/Webchat_real-time_translation_settings_4.png" width="100%" />
+  <figcaption>Endpoint Editor: Real Time Translation Settings</figcaption>
 </figure>
 
-- Go to the Endpoint editor and activate **Real Time Translation** in the **Real Time Translation Settings**.
+1. Go to the Endpoint editor and activate **Real Time Translation** in the **Real Time Translation Settings**.
 
-- **Enable Translation** using the slider.
-- Select the **User Input Language** using the drop-down menu.
-- Select **Flow Language** using the drop-down menu.
-- **Save** the settings.
-
-- With a click on "Open Webchat" you can chat with the Virtual Agent. 
+2. **Enable Translation** by moving the slider.
+3. Select the **User Input Language** in a drop-down menu.
+4. Select the **Flow Language** in a drop-down menu.
+5. Confirm with **Save** the settings.
+6. To check functionality, click on **Open Webchat** to chat with the Virtual Agent. 
 
 **Example**: 
 
@@ -61,7 +52,7 @@ Webchat conversation with the **preselected** user language.
 In Webchat, we're assuming that the language that is being typed in is Russian. The Virtual Agent content is being translated into Russian in real-time.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/b145f04-preselected_user_language_1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/preselected_user_language_1.png" width="70%" />
   <figcaption>Webchat Real-time translation and preselected language for user inputs</figcaption>
 </figure>
 
@@ -89,8 +80,8 @@ We can not just have a preselected language in the settings, but we can also say
 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/3f2d53f-auto-detected_user_language.svg" width="100%" />
-  <figcaption>Auto-detected user input (german language)</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/auto-detected_user_language.png" width="70%" />
+  <figcaption>Auto-detected user input - german language)</figcaption>
 </figure>
 
 When auto-detection for user inputs is activated, then we have an extra setting: **Set user input language on execution count**.
@@ -101,19 +92,16 @@ When auto-detection for user inputs is activated, then we have an extra setting:
 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/3c54cd6-Input_language_Auto-Detect_4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/Input_language_Auto-Detect_4.png" width="100%" />
   <figcaption>Endpoint Editor: "Auto-Detect" setting</figcaption>
 </figure>
 
 ## Real-Time Translation between User and Live Agent
 
-<div class="divider"></div>
-
-
 - In the Endpoint settings set "Flow" to "Handover", which will hand the conversation over to a Live Agent (human agent). 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/2a0093d-Endpoint_Editor_Webchat_Handover.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/Endpoint_Editor_Webchat_Handover.png" width="100%" />
   <figcaption>Webchat Editor: set "Flow" to "Handover"</figcaption>
 </figure>
 
@@ -125,7 +113,7 @@ When auto-detection for user inputs is activated, then we have an extra setting:
 The  Webchat conversation of a user with the Virtual Agent starts. At any point of the conversation the user would like to talk to a human agent like "I would like to talk to a human Agent" and Cognigy Virtual Agent reacts to the Intent, stops the Flow execution, and leads the conversation over to a Live Agent who can overtake and continue with the conversation.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/c4c00c8-Webchat_1.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/Webchat_1.png" width="70%" />
   <figcaption>Webchat conversation with a users handover request</figcaption>
 </figure>
 
@@ -137,7 +125,7 @@ Chat flow process between the user and Live Agent using real-time translation is
 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/e82bfb2-real-time_translation_Webchat-Live_Agent_4.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/real-time_translation_Webchat-Live_Agent_4.png" width="100%" />
   <figcaption>Live Agent (English) conversation with a user (German) in real-time translation</figcaption>
 </figure>
 
