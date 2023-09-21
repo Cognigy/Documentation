@@ -10,7 +10,8 @@ hidden: false
 
 This guide is intended for Cognigy on-premise customers who are migrating from the older version of Cognigy NLP to the newer version.
 
-Starting from release **4.60.0**, we will only provide bug fixes for the old NLP services if they are critical. The old NLP services will be fully deprecated with release **4.64.0**, at which point all on-premise customers should have migrated. After the **4.64.0** release, the old NLP services will no longer be available.
+!!! note "Deprecation of Cognigy NLU V1"
+    Starting from release **4.60.0**, we will only provide bug fixes for the old NLP services if they are critical. The old NLP services will be fully deprecated with release **4.64.0**, at which point all on-premise customers should have migrated. After the **4.64.0** release, the old NLP services will no longer be available.
 
 ## Introduction
 
