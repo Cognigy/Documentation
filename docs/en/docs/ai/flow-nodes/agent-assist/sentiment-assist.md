@@ -6,8 +6,10 @@ hidden: true
 
 # Sentiment Assist
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist.png" width="100%"/>
 </figure>
 
 ## Description
@@ -24,9 +26,24 @@ Before using this Node, set the Generative AI provider in the [Settings](../../g
 
 ## Settings
 
-| Parameter                | Type          | Description                                                   |
-|--------------------------|---------------|---------------------------------------------------------------|
-| Tile ID                  | CognigyScript | The ID that you created in the Agent Assist configuration.    |
-| Sentiment Analysis Input | Select        | The number of user inputs that should be analyzed by a model. |
+| Parameter                | Type          | Description                                                                                                                                    |
+|--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tile ID                  | CognigyScript | The ID that you created in the Agent Assist configuration.                                                                                     |
+| Sentiment Analysis Input | Select        | The number of user inputs that should be analyzed by a model. You can choose whether you want to analyze the last input or the last 10 inputs. |
 
+## Use Case
 
+Differing from the [Transcript Assist](transcript-assist.md) Node, this node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist-example.png" width="80%"/>
+  <figcaption>Sentiment Assist Tile in Agent Assist Workspace</figcaption>
+</figure>
+
+## More information
+
+- [Transcript Assist](transcript-assist.md)
+- [Next Action Node](next-action-assist.md)
+- [Identity Assist Node](identity-assist.md)
+- [Agent Assist Nodes](overview.md)
+- [Agent Assist](../../../agent-assist/overview.md)

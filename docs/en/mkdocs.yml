@@ -417,7 +417,7 @@ nav:
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
-      - agent-assist/plug-and-play-widget.md
+      - agent-assist/plug-and-play-widgets.md
 
   - xApps:
       - ai/xApp/overview.md
