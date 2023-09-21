@@ -10,6 +10,8 @@ hidden: false
 
 This guide is intended for Cognigy on-premise customers who are migrating from the older version of Cognigy NLP to the newer version.
 
+Starting from release **4.60.0**, we will only provide bug fixes for the old NLP services if they are critical. The old NLP services will be fully deprecated with release **4.64.0**, at which point all on-premise customers should have migrated. After the **4.64.0** release, the old NLP services will no longer be available.
+
 ## Introduction
 
 We have improved our NLP services' scalability, reliability, and security to handle large workloads and reduce hardware footprint. In doing so, we have split our existing NLP architecture into multiple smaller services that scale better independently. In addition, we have adjusted how we store the trained NLU models, leading to less memory required by the services when training the models. Due to this change, it is therefore required to rebuild the models on the system. Since manually rebuilding the models would take significant effort, we have written a migration job that takes care of it. This guide describes how to use the migration job.
@@ -57,10 +59,6 @@ The new services are smaller than the old services and can better reuse componen
 The Cognigy team began deploying the new NLP services with the release **4.54.0** of Cognigy.AI. As a result, we already have significant experience running these services in production and migrating existing AI Agents to utilize the new services.
 
 Furthermore, we **successfully migrated all Cognigy-hosted customer environments without downtime or impacting the users**.
-
-## Deprecation Warning
-
-Starting from release **4.60.0**, we will only provide bug fixes for the old NLP services if they are critical. The old NLP services will be fully deprecated with release **4.64.0**, at which point all customers should have migrated. After the **4.64.0** release, the old NLP services will no longer be available.
 
 ## Migrate Dev and Production Environments
 
