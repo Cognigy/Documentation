@@ -263,6 +263,10 @@ nav:
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
         - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
+        - ai/flow-nodes/agent-assist/identity-assist.md
+        - ai/flow-nodes/agent-assist/sentiment-assist.md
+        - ai/flow-nodes/agent-assist/next-action-assist.md
+        - ai/flow-nodes/agent-assist/transcript-assist.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -413,6 +417,7 @@ nav:
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
+      - agent-assist/plug-and-play-widget.md
 
   - xApps:
       - ai/xApp/overview.md
