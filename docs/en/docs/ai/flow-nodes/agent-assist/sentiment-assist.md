@@ -7,7 +7,7 @@ hidden: true
 # Sentiment Assist
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist.png" width="100%" />
 </figure>
 
 ## Description

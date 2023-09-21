@@ -7,12 +7,14 @@ hidden: true
 # Next Action Assist
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/next-action-assist.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/next-action-assist.png" width="100%" />
 </figure>
 
 ## Description
 
-This Node is designed to determine the appropriate next step or action in a conversation or process based on the user's input or the current context. This node helps guide the flow of the conversation and ensures that the system responds effectively to user requests or queries.
+This Node is designed
+to determine the appropriate next step or action in a conversation or process based on the user's input or the current context.
+This Node helps guide a conversation flow and ensures that the system responds effectively to user requests or queries.
 
 ## Setting
 

@@ -7,12 +7,14 @@ hidden: true
 # Transcript Assist
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/transcript-assist.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/transcript-assist.png" width="100%" />
 </figure>
 
 ## Description
 
 This Node is focused on assessing the content and sentiment of the most recent customer voice input, with customizable settings to enable or disable sentiment analysis as needed.
+
+Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../resources/build/llm.md#supported-models).
 
 ## Settings
 
