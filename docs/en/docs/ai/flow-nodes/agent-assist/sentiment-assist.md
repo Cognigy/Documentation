@@ -33,7 +33,7 @@ Before using this Node, set the Generative AI provider in the [Settings](../../g
 
 ## Use Case
 
-Differing from the [Transcript Assist](transcript-assist.md) Node, this node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
+Differing from the [Transcript Assist](transcript-assist.md) Node, this Node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist-example.png" width="80%"/>

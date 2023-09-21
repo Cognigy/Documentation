@@ -32,7 +32,7 @@ and select the appropriate model in the [supported model list](../../resources/b
 
 ## Use Case
 
-This node is particularly well-suited for scenarios involving voice calls,
+This Node is well-suited for scenarios involving voice calls,
 where a human agent needs to listen to the user's speech and make quick decisions.
 In such cases, the Transcript Assist Node plays a crucial role in recording and presenting the user's spoken responses.
 This approach allows human agents to have immediate access to this information,
