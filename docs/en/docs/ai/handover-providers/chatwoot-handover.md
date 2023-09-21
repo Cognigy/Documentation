@@ -7,12 +7,20 @@
 
 ## Description
 
-<div class="divider"></div>
-
 Cognigy has integrated **Chatwoot** as an additional handover provider that can be used by our customers to connect their users with real agents (in third-party sources). Chatwoot is an open-source solution and free to use. You can read more about Agent Handover [here]({{config.site_url}}ai/tools/agent-handover/). 
 
+## Agents in Chatwoot
+
+In case you want to add a new Agent to Chatwoot go to the Chatwoot homepage and click on the **Agents** menu item. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Chatwoot_settings_menu.png" width="80%" />
+  <figcaption>Chatwoot "Settings" menu</figcaption>
+</figure>
+
+
 ## Setup
-<div class="divider"></div>
+
 To start using Chatwoot as a handover provider with Cognigy.AI, you first have to sign in to Chatwoot here: https://www.chatwoot.com.
 
 !!! note "Running Chatwoot On-Premise"
@@ -28,7 +36,7 @@ You need to configure the webhook **Inbox** for incoming messages.
 - Click on **Add Inbox** to start the Inbox creation and configuration procedure 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/e18890e-Inbox_Create_API_Channel_edit.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Inbox_Create_API_Channel_edit.PNG" width="100%" />
 </figure>
 
 **Create API Channel**
@@ -49,17 +57,17 @@ The new channel will be added to the Chatwoot Inbox.
     - **Account ID** (is unique for you as the user)
     - **Inbox ID** (is not unique and will be created newly with every new channel)
 
-    Both IDs are required to use the new Inbox channel.
+    Both IDs are required to use the new Inbox channel. How to find them, see sections below.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/3a75da9-Chatwoot_Account_ID.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Chatwoot_Account_ID.png" width="100%" />
   <figcaption>Chatwood Account ID</figcaption>
 </figure>
 
 **Chatwoot Account ID** (red marked in the Chatwoot address line)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/6696134-Chatwoot_Inbox_ID.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Chatwoot_Inbox_ID.png" width="100%" />
   <figcaption>Chatwood Inbox ID</figcaption>
 </figure>
 
@@ -67,62 +75,61 @@ The new channel will be added to the Chatwoot Inbox.
 
 ## Connect Chatwoot to Cognigy.AI
 
-<div class="divider"></div>
 
-In the Handover Node in Cognigy.AI, you can specify to which Inbox you want the handover to start in. 
+### Set your Chatwoot Inbox
 
-You need to configure this by opening the Handover Node, opening the **Chatwoot Settings** menu, and filling in the Inbox ID.
+To connect Chatwoot with your Agent, you need to specify to which Chatwoot Inbox you want the handover to go in. You can do this in the **Handover Node** of your Agent in Cognigy.AI as follows:  
+
+1. Click on the **Handover Node** in Cognigy.AI.
+2. Open the **Chatwoot Settings** menu and enter the Inbox ID. How to find the **Inbox ID**, see section below.
 
 !!! note "Dynamically setting the Inbox ID"
-    You can use CognigyScript to dynamically decide which Inbox should be used for the handover request
+    You can use CognigyScript to dynamically decide which Inbox should be used for the handover request.
+
+### Connect your Endpoint to Chatwoot
+
+To connect the Endpoint to Chatwoot, do the following:
+
+1. Open your **Endpoint Editor** in Cognigy.AI and select the **Handover Settings**.
+2. Select **Chatwoot** as **Handover Platform**.
+3. Enter the **BaseUrl** for the Chatwwot instance. The Base URL is your Chatwoot installation URL, extended by `/api/v1`. For example, `https://app.chatwoot.com/api/v1` is the Base URL where `https://app.chatwoot.com` is the Chatwoot URL. You can use alternatively your on-premise Chatwoot API URL.
+4. Enter Chatwoot **Account ID**. How to find the **Account ID**, see section below.
+5. Enter the **API Key**. How to find the **API Key**, see section below. 
+6. Click on **Save** to confirm the entries.
+7. To check the functionality, click on "Open Webchat" and start a conversation with handover request.
+
+When you start a conversation with the Endpoint and the Handover Node is triggered, Agent Handover with Chatwoot will be started and you will find a handover message in the Chatwoot Inbox.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/8306b54-Handover_to_Chatwoot.PNG" width="100%" />
-  <figcaption>Enter the Chatwoot Inbox ID</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Chatwoot_handing_over_info.PNG" width="100%" />
+  <figcaption></figcaption>
 </figure>
 
-Now we need to connect the Endpoint to Chatwoot. To do this, open the Endpoint Editor and open the Handover Settings section.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/df4f5f0-Chatwoot_endpoint_settings.PNG" width="100%" />
-  <figcaption>Handover settings</figcaption>
-</figure>
-
-- Enter following data 
- -- Select **Chatwoot** as  Handover Platform
- -- Select **BaseUrl** as shown (e.g. `https://app.chatwoot.com/api/v1` or your on-premise Chatwoot API URL)
- -- Enter Chatwoot **Account ID** 
- -- Enter the **API Key** (use copy and paste -  you will find the key in Chatwoot in your **Profile Settings** in **AccessToken** - use the **Copy** button)
-
-- Click on **Save** to confirm the entries
-
-- Click on "Open Webchat" and start a conversation
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/ae33f9b-Webchat_start_conversation.PNG" width="100%" />
-  <figcaption>Webchat conversation</figcaption>
-</figure>
-
-When you start a conversation with the Endpoint and trigger the Handover Node, then an Agent Handover will be started with Chatwoot (you will find a handover message in the Chatwoot Inbox)
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c7741b1-Chatwoot_handing_over_info.PNG" width="100%" />
-  <figcaption>Inbox handover message</figcaption>
-</figure>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c7741b1-Chatwoot_handing_over_info.PNG" width="100%" />
-  <figcaption>Chatwoot conversation example</figcaption>
-</figure>
-
+In your Chatwoot Inbox user messages are displayed on the left-hand side, on the right-hand side you can see the  connected real Agent replies.
 On the left-hand side the user messages are displayed - on the right-hand side the connected real agent replies are displayed in Chatwoot.
 
 !!! note "Note"
     When a User request is answered and solved by the agent, the agent can **Resolve** the connection and if a further request will come in from the user side the agent can **Reopen** the connection in Chatwoot to be able to reply to the request.
 
-## Supported message content
+#### Find Account ID and Inbox ID
 
-<div class="divider"></div>
+The Chatwoot Inbox, you have created in a previous step for your project, is defined by an **Account ID** and **Inbox ID**. 
+
+You can find the Account ID in the Chatwoot URL of your Chatwoot **Inbox**.
+
+To locate the ID, follow these steps:
+
+1. Open your Live Agent Account and go to **Inboxes**. 
+2. In the Inboxes list, find the Inbox of your project and click on it. 
+3. The Inbox settings will be displayed, and you will see the address line of your browser as follows: `https://<your-environment>/app/accounts/<account-id>/settings/inbox/<inbox-id>`. For example, in the URL `https:/app.chatwoot.com/app/accounts/6607/inbox/5446`, the **Account ID** is 6607 and the Inbox ID is 5446.
+
+#### Find an API Key
+
+1. Click the **Profile Settings** icon of your Account in the bottom-left corner of the Chatwoot dashboard, then select **Profile Settings** in the selection menu.
+2. Find the **Access Token** section, showing your API Key. 
+3. Copy the API Key and paste it into the **API Key** field of your Endpoint in Cognigy.AI. 
+
+## Supported message content
 
 Using the Chatwoot integration the user can receive
 
@@ -132,42 +139,19 @@ Using the Chatwoot integration the user can receive
   - images ( jpg,png,... see example below)
   - animated gifs
 
-
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7740095-Screen_Shot_139.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Screen_Shot_139.png" width="100%" />
   <figcaption>Webchat conversation with text and image</figcaption>
 </figure>
 
-## Agents in Chatwoot
-
-<div class="divider"></div>
-
-In case you want to add a new Agent to Chatwoot go to the Chatwoot homepage and click on the **Agents** menu item.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/8cd2b86-Chatwoot_settings_menu.svg" width="100%" />
-  <figcaption>Chatwoot "Settings" menu</figcaption>
-</figure>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/502340e-Chatwoot_Agents_text.svg" width="100%" />
-  <figcaption>Chatwoot  info about Agents</figcaption>
-</figure>
-
 ## Chatwoot API updated
-
-<div class="divider"></div>
 
 With Cognigy.AI 4.10.0 the Chatwoot API has been updated due to the implementation with Cognigy Live Agent (new color, chat history).
 
 **Details**:
 
 - Chatwoot API updated to version 1.19.0.
-	
 - Support of custom agent bot name (config-map: AGENT_BOT_NAME).
-	
 - Support of custom agent bot description (config-map: AGENT_BOT_DESCRIPTION).
-	
 - Message history of a conversation is available.
-	
 - Messages in the Chatwoot dashboard appear in a new theming / styling.
