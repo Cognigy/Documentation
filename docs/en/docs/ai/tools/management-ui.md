@@ -7,8 +7,6 @@
 
 ## Introduction
 
-<div class="divider"></div>
-
 The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
 
 You can set up Management UI yourself if you have an on-premise Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../help/get-help.md/#help-center).
@@ -32,10 +30,7 @@ The following figure shows a screenshot of what this product looks like.
   <figcaption> The Cognigy.AI Management UI</figcaption>
 </figure>
 
-
 ## Usage
-
-<div class="divider"></div>
 
 The usage of the Management UI is quite self-explanatory. We have global navigation on the left side, which allows you to switch between:
 - Users
@@ -45,7 +40,7 @@ The usage of the Management UI is quite self-explanatory. We have global navigat
 We will now have a look at the individual view and what can be done in there.
 
 ## Users
----
+
 Here you can add new users to the system. A user needs to get assigned to an **organisation**, so you might need to create a new organisation first. To create a new user, click on the huge pink button on the right-bottom corner of the view. You will then see a dialog where you enter the:
 
 - name
@@ -102,8 +97,6 @@ The system message will get displayed for all users - regardless of their organi
 
 ## Quotas & Limits
 
-<div class="divider"></div>
-
 With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an organisation level. Larger customers with multiple organisations can use these quotas to limit what is possible within certain organisations. To configure limits, first select an organisation, open its details and click on the triple-dot button on the right-top corner.
 
 In the menu, select **Change Organisation Quotas**.
@@ -115,27 +108,16 @@ In the menu, select **Change Organisation Quotas**.
 
 You can currently configure the following quotas & limits:
 
-- Max users
-
-This is the maximum amount of users that can be created within the organisation.
-
-- Max projects
-
-The maximum amount of projects that can be created within this organisation.
-
-- Max channels per project
-
-The maximum amount of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite amount of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted
-
-- Max messages per day
-
-This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.
-
-Setting a quota to 0 disables the quota
+| Attributes                                  | 	Description                                                                                                                 |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Max users            | 	This is the maximum amount of users that can be created within the organisation.                                                                    |
+| Max projects                         | The maximum amount of projects that can be created within this organisation.                                                       |
+| Max channels per project                   | 	The maximum amount of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite amount of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted                                   |
+| Max messages per day             | 	This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.     |
+ 
+Setting a quota to 0 disables the quota.
 
 ## Password Policy
-
-<div class="divider"></div>
 
 It is also possible to configure the password policies of an organisation in the Management UI.  To configure the password policy, first select an organisation and click on the triple-dot button on the right-top corner.
 
@@ -148,40 +130,19 @@ In the menu, select **Change Password Policy**.
 
 It is currently possible to configure the following attributes of the password policy:
 
-- Minimum Length
-
-The minimum amount of characters the password needs to consist of.
-
-- Maximum Length
-
-The maximum amount of characters the password can consist of.
-
-- Minimum Amount of Lowercase
-
-The minimum amount of characters in the password which have to be lowercase.
-
-- Minimum Amount of Uppercase
-
-The minimum amount of characters in the password which have to be uppercase.
-
-- Minimum Amount of Special Characters
-
-The minimum amount of special characters in the password.
-
-- Maximum Amount of Identical Characters
-
-The maximum amount characters which can be identical in the password.
-
-- Amount of failed logins resulting in account disabling
-
-Specifies how many times a user can attempt to log in before their account is disabled. 
-Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI.
+| Attributes                                  | 	Description                                                                                                                 |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Minimum Length            | 	The minimum amount of characters the password needs to consist of.                                                                               |
+| Maximum Length                         | The maximum amount of characters the password can consist of.                                                                             |
+| Minimum Amount of Lowercase                   | 	The minimum amount of characters in the password which have to be lowercase.                                                |
+| Minimum Amount of Uppercase             | 	The minimum amount of characters in the password which have to be uppercase.             |
+| Minimum Amount of Special Characters | The minimum amount of special characters in the password.	               |
+| Maximum Amount of Identical Characters                      | 	The maximum amount characters which can be identical in the password. |
+| Amount of failed logins resulting in account disabling       | 	Specifies how many times a user can attempt to log in before their account is disabled. Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI.                                           |
 
 Clicking the ``Save & Enforce`` button results in all users of the organisation to get logged out. Upon re-logging they will be required to change their password.
 
 ## Data Privacy Settings
-
-<div class="divider"></div>
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg)]({{config.site_url}}) 
 It is possible to set the data privacy settings of an organisation in the Management UI. To configure the data privacy settings, first select and organisation and then click on the triple-dot button on the right-top corner.
@@ -221,10 +182,7 @@ Collecting conversations history for all endpoints
 
 The projects will ignore the organisation data privacy settings and use the ones defined in the endpoint
 
-
 ## Expiration Values (TTL) for Sensitive Data
-
-<div class="divider"></div>
 
 It is possible to configure when certain sensitive data expires and is deleted from the system. In order to change this, first select an organisation and click on the triple-dot button on the right-top corner.
 
@@ -235,42 +193,21 @@ In the menu, select **Change Expiration Values**.
   <figcaption> Configuring the expiration values for sensitive data in an Organisation</figcaption>
 </figure>
 
-
-
 All the expiration values define how many **minutes** it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. It is possible to configure the expiration of the following data:
 
-- Contact Profiles Expiration
-
-This expiration value determines the amount of minutes from when a contact profile was last active in a conversation until it is deleted.
-
-- Session Expiration
-
-This expiration value determines the amount of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session.
-
-The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used.
-
-- Conversation Expiration
-
-This expiration value determines the amount of minutes from when a [conversation]({{config.site_url}}ai/tools/analytics/analytics-concepts/#conversations) is created until it is deleted from the database.
-
-- Analytics Expiration 
-
-This expiration value determines the amount of minutes from when the data of the [Analytics]({{config.site_url}}ai/tools/analytics/analytics-concepts) is created until it is deleted from the database.
-
-- Insight's Session Data Expiration
-
-This expiration value determines the amount of minutes from when the data of Insight's Session is created until it is deleted from the database.
-
-- Steps Data Expiration
-
-This expiration value determines the amount of minutes from when the data of [Steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) is created until it is deleted from the database.
+| Expiration value                    | 	Description                                                                                                                 |
+|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| Contact Profiles Expiration            | 	This expiration value determines the amount of minutes from when a contact profile was last active in a conversation until it is deleted.               |
+| Session Expiration                         | This expiration value determines the amount of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session. The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used.                   |
+| Conversation Expiration                        | 	This expiration value determines the amount of minutes from when a [conversation]({{config.site_url}}ai/tools/analytics/analytics-concepts/#conversations) is created until it is deleted from the database.               |
+| Analytics Expiration                              | 	This expiration value determines the amount of minutes from when the data of the [Analytics]({{config.site_url}}ai/tools/analytics/analytics-concepts) is created until it is deleted from the database.                                 |
+| Insight's Session Data Expiration | 	This expiration value determines the amount of minutes from when the data of Insight's Session is created until it is deleted from the database.               |
+| Steps Data Expiration                      | 	This expiration value determines the amount of minutes from when the data of [Steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) is created until it is deleted from the database. |
 
 For more information about data expiration in Insights, read [Data Expiration](../../insights/ttl.md) in the Insights documentation.
 
 It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
 
 ## Installation
-
-<div class="divider"></div>
 
 Further information about installing the Cognigy Management UI can be found on the [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
