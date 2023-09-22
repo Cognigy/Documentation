@@ -14,7 +14,7 @@ hidden: true
 
 ## Description
 
-This Node captures the most recent user response and displays it on a designated tile within the Agent Assist Workspace.
+This Node captures the most recent customer response and displays it on a designated Widget within the Agent Assist Workspace.
 
 Additionally, the Transcript Assist Node offers the option to enable Sentiment Analysis,
 which allows for assessing the user's speech tone.

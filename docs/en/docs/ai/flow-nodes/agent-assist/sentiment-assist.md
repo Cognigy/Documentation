@@ -18,7 +18,7 @@ This Node performs sentiment analysis on the most recent input and provides insi
 (positive, negative, or neutral) of the last user inputs.
 It continuously evaluates the sentiment of customer interactions,
 such as chat conversations or phone calls, in real time.
-This real-time analysis offers immediate feedback to agents regarding the emotional tone of the customer.
+This real-time analysis offers immediate feedback to agents regarding the emotional tone of the customer within the Agent Assist Workspace.
 For instance, if the sentiment becomes negative during a conversation,
 the system can promptly alert the human agent to take appropriate action.
 
