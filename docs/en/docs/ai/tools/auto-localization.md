@@ -1,35 +1,18 @@
 ---
- title: "Auto-translation" 
- slug: "auto-localization" 
- hidden: false 
+title: "Auto-translation" 
+slug: "auto-localization" 
+hidden: false 
 ---
-# Auto-translation
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+# Automatic Translation
 
-## Description
+Cognigy offers a comprehensive auto-translation solution to address the challenges associated with limited service capabilities.
 
-<div class="divider"></div>
+Cognigy utilizes a powerful Natural Language Understanding (NLU) system capable of supporting more than 100 [languages](../nlu/language-support.md). It also employs a [universal model](../nlu/language-support.md#universal-language) to extend support to additional languages.
 
+Regarding [localization](../resources/manage/localization.md), Cognigy enables users to customize Flows and Intent models with fallback options, perform partial translations, and implement locale-specific variations.
 
-Conversational AI users primarily focus on a primary and secondary locale due to the following reasons: 
-
-1. Manual effort and high setup cost
-2. Slow roll-out and reduced agility
-3. Increased complexity
-
-As of Cognigy.AI 4.10.0 Cognigy provides a translation solution to avoid that bottleneck of less service capabilities.
-
-
-Multilingualism is a first-level concept in Cognigy.AI along with service automation in global setups.
-
-Cognigy works with an NLU system that supports over 100 [**languages**]({{config.site_url}}ai/nlu/language-support/) and uses a [**universal model**]({{config.site_url}}ai/nlu/language-support/#universal-language) to support the other languages.
-
-Cognigy supports [localization]({{config.site_url}}ai/resources/manage/localization/) of Flows, Intent models with fallbacks, partial translation, and locale variations.
-
-With Cognigy.AI 4.10.0 we have integrated machine translation capabilities into the Cognigy.AI platform.
-
-Cognigy.AI supports the following machine translation providers:
+Cognigy.AI is compatible with the following machine translation providers:
 
 - Microsoft Translator
     - Microsoft Azure Cognitive Services Translator[^*]
@@ -38,14 +21,44 @@ Cognigy.AI supports the following machine translation providers:
 
 [^*]: To use **Azure Cognitive Services Translator** you must select Microsoft Translator in Settings > Translation Settings
 
-These providers can be selected in the "Agent Settings" and provide the following advantages:
+These providers offer several valuable benefits:
 
-- Translation language is free of choice
-- Translation can be supervised or on autopilot
-- Translation is Voice-ready-all modalities are supported 
+- **Freedom of Language Choice**. You have the flexibility to choose your preferred translation language.
+- **Supervised or Automatic Translation**. Translation can be performed manually under your supervision or set to work automatically, depending on your needs.
+- **Voice-Ready Translation**. Our translation capabilities are equipped to handle all modes, making them voice-ready and adaptable to various communication methods.
 
 !!! tip "Advanced Translation"
-    **In contrast to cost-intensive manual translation, Cognigy multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.**
+    In contrast to cost-intensive manual translation, Cognigy multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.
+
+## Add a Machine Translation Provider
+
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent.
+3. In the left-side **Agent** menu, select **Manage > Settings**.
+4. In the **Translation settings** section, select one of the following providers:
+
+    === "Microsoft Translator"
+        - **Translation Provider API Key** - enter your unique API key provided by Microsoft Translator. It's necessary for authentication and allows you to access translation services.
+        - **Request Retriers** - specify how often Cognigy should attempt to call the translation provider if an error occurs during the initial request. For example, if you set it to `3`, Cognigy will try three times before giving up on a translation request.
+        - **Request Timeout** - determine how long Cognigy should wait for a response from the translation provider after making a request, measured in milliseconds. If the provider doesn't respond within this time frame, it's considered a timeout.
+        - **Sentence Cache Expiry Timeout** - determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is 84,600 seconds, which is equivalent to 1 day.
+        - **Custom API Base URL** - this setting is optional. If you have specific requirements or need to connect to a custom instance of the Microsoft Translator API, you can use this field to specify a custom base URL. It allows you to define the URL, including the protocol scheme, for example [api-eur.cognitive.microsofttranslator.com)](https://api-eur.cognitive.microsofttranslator.com), to tailor the API connection to your needs.
+
+    === "Google Cloud Translation"
+        - **Translation Provider API Key** - enter your unique API key provided by Google Cloud Translation. It's necessary for authentication and allows you to access translation services.
+        - **Request Retriers** - specify how often Cognigy should attempt to call the translation provider if an error occurs during the initial request. For example, if you set it to `3`, Cognigy will try three times before giving up on a translation request.
+        - **Request Timeout** - determine how long Cognigy should wait for a response from the translation provider after making a request, measured in milliseconds. If the provider doesn't respond within this time frame, it's considered a timeout.
+        - **Sentence Cache Expiry Timeout** - determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is 84,600 seconds, which is equivalent to 1 day.
+        - **Custom API Base URL** - this setting is optional. If you have specific requirements or need to connect to a custom instance of the Microsoft Translator API, you can use this field to specify a custom base URL. It allows you to define the URL, including the protocol scheme, for example [api-eur.cognitive.microsofttranslator.com)](https://api-eur.cognitive.microsofttranslator.com), to tailor the API connection to your needs.
+
+    === "DeepL Translate Pro"
+        - **Translation Provider API Key** - enter your unique API key provided by DeepL Translate Pro. It's necessary for authentication and allows you to access translation services.
+        - **Request Retriers** - specify how often Cognigy should attempt to call the translation provider if an error occurs during the initial request. For example, if you set it to `3`, Cognigy will try three times before giving up on a translation request.
+        - **Request Timeout** - determine how long Cognigy should wait for a response from the translation provider after making a request, measured in milliseconds. If the provider doesn't respond within this time frame, it's considered a timeout.
+        - **Sentence Cache Expiry Timeout** - determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is 84,600 seconds, which is equivalent to 1 day.
+        - **Custom API Base URL** - this setting is optional. If you have specific requirements or need to connect to a custom instance of the Microsoft Translator API, you can use this field to specify a custom base URL. It allows you to define the URL, including the protocol scheme, for example [api-eur.cognitive.microsofttranslator.com)](https://api-eur.cognitive.microsofttranslator.com), to tailor the API connection to your needs.
+
+5. Click **Save**.
 
 ### Use Case for Translation
 
@@ -60,18 +73,18 @@ These providers can be selected in the "Agent Settings" and provide the followin
 
 Cognigy Virtual Agent is the default in English. When required, you can localize your Flow language.
 
-To have another locale Cognigy.AI provides [localization]({{config.site_url}}ai/resources/manage/localization/) to create a localized Virtual Agent. 
+To have another locale Cognigy.AI provides [localization](../resources/manage/localization.md) to create a localized Virtual Agent. 
 
-The localization option you can find in the sidebar when clicking the "Manage" item.
+The localization option you can find in the sidebar when clicking **Manage**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/cb4ab14-Create_new_locale_2.svg" width="100%" />
   <figcaption>Create new Locale</figcaption>
 </figure>
 
-- ["+ Create new Locale"]({{config.site_url}}ai/resources/manage/localization/#adding-a-locale-to-a-node/), select a new language and a fallback language (US-eng).
+To select a new language and a fallback language (US-eng), click [+ Create new Locale](../resources/manage/localization.md#adding-a-locale-to-a-node),
 
-When going back to the Flow you can now have the option to switch the locale and to localize the Flow Nodes.
+When returning to the Flow, you can change the language and localize the Flow Nodes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/2923252-Switch_Locale_example_2_350.svg" width="100%" />
@@ -88,9 +101,6 @@ The Localization view allows for the configuration of any number of localization
     To localize Nodes in your Flow see details here: [Localization]({{config.site_url}}ai/resources/manage/localization/)
 
 ## Machine Translation of Nodes and Intents
-
-<div class="divider"></div>
-
 
 Since Release 4.10.0 Cognigy.AI provides machine translation of Nodes and Intents to perform the localization of your Virtual Agent even more efficiently than with manual localization. 
 
@@ -124,11 +134,9 @@ As soon as you have configured a translation provider you will get extra configu
 
 # Localization of Nodes
 
-
 - Open now your Flow in which you want to localize Nodes.
 
 - Select the Locale with not translated Nodes. 
-
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/a309eba-Localization_4.svg" width="100%" />
