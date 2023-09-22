@@ -14,10 +14,14 @@ The Agent Assist Nodes allow users to customize the Agent Assist workspace by ad
 
 Cognigy.AI supports the following Nodes:
 
+- [Identity Assist](identity-assist.md)
+- [Next Action Assist](next-action-assist.md)
+- [Sentiment Assist](sentiment-assist.md)
 - [Set HTML file](set-html-file.md)
 - [Set Adaptive card tile](set-adaptive-card-tile.md)
 - [Set IFrame tile](set-iframe-tile.md)
 - [Set Agent Assist grid](set-agent-assist-grid.md)
+- [Transcript Assist](transcript-assist.md)
 
 ## More information
 
