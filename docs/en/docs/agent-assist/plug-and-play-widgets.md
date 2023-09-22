@@ -10,7 +10,7 @@ hidden: false
 
 You can use the Plug and Play Widgets to customize your Agent Assist Workspace.
 
-These widgets are seamlessly integrated with other Agent Assist Widgets, and require minimal manual configuration.
+These widgets are seamlessly integrated with other Agent Assist Widgets and require minimal manual configuration.
 
 You can build these widgets by using the following Nodes:
 
