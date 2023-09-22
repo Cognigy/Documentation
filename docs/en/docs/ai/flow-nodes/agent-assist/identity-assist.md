@@ -48,4 +48,3 @@ within the Agent Assist Workspace Flow to manage the user profile.
 - [Next Action Node](next-action-assist.md)
 - [Agent Assist Nodes](overview.md)
 - [Agent Assist](../../../agent-assist/overview.md)
-

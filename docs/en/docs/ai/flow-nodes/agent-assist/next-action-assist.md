@@ -42,5 +42,3 @@ For instance, if a user asks about the latest release version, the agent can giv
 - [Identity Assist Node](identity-assist.md)
 - [Agent Assist Nodes](overview.md)
 - [Agent Assist](../../../agent-assist/overview.md)
-
-
