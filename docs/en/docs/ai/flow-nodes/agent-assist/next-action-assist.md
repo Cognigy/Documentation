@@ -32,7 +32,7 @@ For instance, if a user asks about the latest release version, the agent can giv
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/next-action-assist-example.png" width="80%"/>
-  <figcaption>Next Action Assist Tile in Agent Assist Workspace</figcaption>
+  <figcaption>Next Action Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
 ## More information

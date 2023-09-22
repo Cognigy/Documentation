@@ -37,7 +37,7 @@ Differing from the [Transcript Assist](transcript-assist.md) Node, this Node all
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/sentiment-assist-example.png" width="80%"/>
-  <figcaption>Sentiment Assist Tile in Agent Assist Workspace</figcaption>
+  <figcaption>Sentiment Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
 ## More information

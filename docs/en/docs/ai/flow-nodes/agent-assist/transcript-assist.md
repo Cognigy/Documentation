@@ -40,7 +40,7 @@ thereby facilitating more effective and efficient communication and decision-mak
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/transcript-assist-example.png" width="80%"/>
-    <figcaption>Transcript Assist Tile in Agent Assist Workspace</figcaption>
+    <figcaption>Transcript Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
 ## More information
