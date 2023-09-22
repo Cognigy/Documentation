@@ -21,7 +21,7 @@ This Node is designed to display and process customer-specific information direc
 | Parameter     | Type          | Description                                                                                                                                       |
 |---------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tile ID       | CognigyScript | The ID that you created in the Agent Assist configuration.                                                                                        |
-| Widget Layout | Select        | The number of user inputs that should be analyzed by a model.                                                                                     |
+| Widget Layout | Select        | The layout of how the widget should be placed in the Workspace (horizontal/vertical).                                                                                     |
 | Image Shape   | Select        | The shape or format of the image (round or square).                                                                                               |
 | Image URL     | URL           | The URL where the image is hosted or located.                                                                                                     |
 | Customer Data | CognigyScript | Additional customer-specific data for analysis in a key-value format. For example, the key is `Email` and the value is `{{"{{profile.email}}"}}`. |
