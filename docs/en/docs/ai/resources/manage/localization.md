@@ -1,20 +1,17 @@
 ---
- title: "Localization" 
- slug: "localization" 
- hidden: false 
+title: "Localization" 
+slug: "localization" 
+hidden: false 
 ---
+
 # Localization
 
 Cognigy.AI features a powerful Localization concept, that allows for customizability combined with content re-use. 
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/19f8d6a-localization.jpg" width="100%" />
-</figure>
-
 The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fall back to another Locale that has.
 
 !!! warning "Primary locale not changeable"
-    While creating an agent you have to choose the so-called primary Locale.
+    While creating an Agent you have to choose the so-called primary Locale.
     You will usually start to create content for your virtual agent using this
     Locale. While you can add additional Locales later on in order to localize
     the content of your agent, you can't change the primary Locale.
@@ -28,13 +25,7 @@ With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents 
 
 ### Using localization in Flows
 
-<div class="divider"></div>
-
-Localizations act as groupings of specific content and can be applied in [**Flows**]({{config.site_url}}ai/resources/build/flows/) by using the Localization drop-down functionality.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/c744feb-localization-inflows.jpg" width="100%" />
-</figure>
+Localizations act as groupings of specific content and can be applied in [Flows](../../resources/build/flows.md) by using the Localization drop-down functionality.
 
 When switching Localization, the Flow will change its appearance. **Greyed out** Nodes indicate that they have not been localized yet. 
 
@@ -56,29 +47,3 @@ This can be done by click on a specific Node and then selecting **Add Localizati
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/a6dac29-localization-inflows-node.jpg" width="100%" />
 </figure>
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-
-### Translation Settings
-
-<div class="divider"></div>
-
-With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section **Translation Settings**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Agent_Settings_Translation.jpg" width="100%" />
-  <figcaption>Agent Translation Settings</figcaption>
-</figure>
-
-#### Options
-
-The configuration options and their functions are listed below:
-
-| Parameter                         | Description                                                                                                                                 |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **Translation Provider**          | currently available provider with Cognigy.AI 4.10.0: <br> - Microsoft Translator <br> - Google Cloud Translation <br> - DeepL Translate Pro |
-| **Translation Provider API Key**  | The API Key to use for the Translation Provider.                                                                                            |
-| **Request Retries**               | How often to retry calling the translation provider if an error occurs.                                                                     |
-| **Request Timeout**               | How long to wait for the provider to answer a request (in milliseconds).                                                                    |
-| **Sentence Cache Expiry Timeout** | How long to keep translated sentences in the cache (in seconds).                                                                            |
-| **Custom API Base URL**           | Define a custom endpoint instead of default (for example one for your region). Added with Cognigy.AI 4.16.0.                                |

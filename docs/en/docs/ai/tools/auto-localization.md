@@ -132,7 +132,7 @@ As soon as you have configured a translation provider you will get extra configu
 !!! note "Translation Settings"
     **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
 
-# Localization of Nodes
+## Localization of Nodes
 
 - Open now your Flow in which you want to localize Nodes.
 
