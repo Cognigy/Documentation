@@ -6,7 +6,7 @@ hidden: false
 
 # Automatic Translation
 
-Cognigy lets users adapt Flows and Intent models easily by adding fallbacks, auto-translation, and locale-specific variations.
+Cognigy has integrated automatic translation capabilities to streamline the process of customizing flows and intents for various locales. This feature can be beneficial for those who are looking to provide multilingual support without the need for manual translations.
 
 Cognigy.AI is compatible with the following machine translation providers:
 
@@ -22,9 +22,6 @@ These providers offer several valuable benefits:
 - **Freedom of Language Choice**. You have the flexibility to choose your preferred translation language.
 - **Supervised or Automatic Translation**. Translation can be performed manually under your supervision or set to work automatically, depending on your needs.
 - **Voice-Ready Translation**. Our translation capabilities are equipped to handle all modes, making them voice-ready and adaptable to various communication methods.
-
-!!! tip "Advanced Translation"
-    In contrast to cost-intensive manual translation, Cognigy multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.
 
 ## Add a Machine Translation Provider
 
@@ -56,7 +53,7 @@ These providers offer several valuable benefits:
 
 5. Click **Save**.
 
-## Localization
+## Add a Locale
 
 Cognigy virtual agents are the default in English. When necessary, you can customize your Flow language to suit your needs.
 
@@ -71,11 +68,11 @@ To create a locale, follow these steps:
 7. From the **Fallback Locale** list, select a locale that will be used ad default when a specific language is not available.
 8. Click **Save & Build**.
 
-## Machine Translation of Nodes and Intents
+## Machine Translation for Node and Intent Localization
 
 In a Flow, you can change languages, localize Flow Nodes and Intents.
 
-### Node Localization
+### Machine Translation for Node Localization
 
 Localized Nodes are in color, while non-localized ones are grayed out. Within the Flow, you can set up multiple localizations, with fallback layers for locales without content.
 
@@ -87,35 +84,40 @@ To localize Nodes using machine translation, follow these steps:
 2. Select the locale with not translated Nodes. 
 3. Click a Node and select **Add Localization**. 
 4. Select **Add Translated Localization**. 
-5. Select **Locale to Translate from** to define the Locale that you want to base your translation on.
-6. Define **Language to Translate from** and **Language to Translate to**. 
+5. Define the source locale for your translation by selecting a language from the **Locale to Translate from** field. 
+6. Define the target language for translation by selecting a language from the **Language to Translate to** list. 
+7. Click **Confirm**. 
+
+The Node will be translated automatically. In the Node editor, make sure to review the translated fields, paying particular attention to Cognigy.Script, which should remain untranslated.
+
+You can configure the machine translation settings for all types of text output Nodes, including Say, Question, and other Node types.
+
+
+## Machine Translation for Intent Localization
+
+To localize a set of Intents using machine translation, follow these steps:
+
+1. In the Flow editor, select NLU in the upper-right corner.
+2. On the **Intents** tab, select an Intent that you want to translate.
+3. On the Intent page, click **Add Localization > Add Translated Localization**
+4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation. 
+5. From the **Language to Translate from** list, select the language of the content you are translating.
+6. From the **Language to Translate to** list, select the language into which you want the content to be translated. 
 7. Click **Confirm**.
 
-The Node will be fully translated automatically. 
+Intent example sentences will be translated automatically.
 
-You can configure the machine translation settings for all types of text output Nodes,
-such as Say, Question, and other Nodes.
+### Multi-Intent Translation
 
+To localize all Intents within your Flow using machine translation, follow these steps:
 
-## Intent Localozation
-
-You can localize Intents as well using machine translation, and all the example sentences will be translated automatically.
-
-To localize Intents using machine translation, follow these steps:
-
-1. On the Flow, gp to the Intent configuration and configure the **Translation Settings**.
-2. Select in the **Localization** drop-down menu the language you intend to translate (for example, from en-US to ger-DE). 
-3. Click **Add Localization**. 
-4. Click **Add Translated Location** to configure translation details. 
-5. Select **Language to Translate from** and **Language to Translate to**, then **Confirm** the settings.
-
-All Intent example sentences will now be translated automatically.
-
-## Bulk-Localization of Intents
-
-Cognigy.AI offers a **bulk-localization** feature for virtual agents that utilize multiple Intents, enhancing the efficiency of translation.
-
-To set this up, access the secondary actions menu (three dots) and select **Auto-Translate from another locale** to configure translation parameters, just as you would for a single Intent. Then, proceed with confirmation.
+1. In the Flow editor, select NLU in the upper-right corner.
+2. On the **Intents** tab, on the right side of the **+ Create Intent** button, click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Add Localisations to all Intents**.
+3. In the **Add Localizations to all Intents** window, select **Auto-Translate from another locale**.
+4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation.
+5. From the **Language to Translate from** list, select the language of the content you are translating.
+6. From the **Language to Translate to** list, select the language into which you want the content to be translated.
+7. Click **Confirm**.
 
 This process ensures that all Intents are automatically translated.
 
