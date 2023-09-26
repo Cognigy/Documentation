@@ -108,7 +108,7 @@ To localize all Intents within your Flow using machine translation, follow these
 4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation.
 5. From the **Language to Translate from** list, select the language of the content you are translating.
 6. From the **Language to Translate to** list, select the language into which you want the content to be translated.
-7. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing intents within the current Flow locale.
+7. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing Intents within the current Flow locale.
 8. Click **Confirm**.
 
 This process ensures that all Intents are automatically translated.
@@ -116,3 +116,4 @@ This process ensures that all Intents are automatically translated.
 ## More information
 
 - [Localization](../resources/manage/localization.md)
+- [Switch Locale Node](../flow-nodes/logic/switch-locale.md)
