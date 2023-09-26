@@ -7,7 +7,7 @@ hidden: false
 
 # Recent Calls
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../release-notes/4.58.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
 
 *Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
 
@@ -26,7 +26,7 @@ If [call recordings](recent-calls.md#call-recordings) are enabled under [account
 ## PCAP fields
 
 | Settings             | Description                                                                                                                             |
-| -------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | attempted_at         | The time of the attempt.                                                                                                                |
 | account_sid          | Identifies the account this phone belongs to.                                                                                           |
 | answered             | Determines whether a call was answered or not.                                                                                          |
@@ -53,4 +53,6 @@ When call recording is enabled, you can use the embedded media player to listen 
 
 The included media player controls allow you to scan the audio, and additionally download the recording locally.
 
-Highlighted sections of the customer recording can be clicked, which opens a new window and displays the speech to text result.
+Highlighted sections of the customer recording can be clicked, which opens a new window and displays the speech to a text result.
+
+You can delete a call recording by clicking ![delete](../images/delete.svg). Note that this action will delete your file both from Voice Gateway and remote storage, for example, Amazon S3.

@@ -63,6 +63,8 @@ This dropdown menu allows the delivery voice of a Twilio voice bot to be customi
 
 ## Twilio Autopilot Endpoint Settings
 
+{! _includes/release-notes/twilio-autopilot-deprecation.md !}
+
  <div class="center-image">
  <img src="{{config.site_url}}ai/endpoints/images/23c2c49-TwilioAutopilot.PNG" width="30%" style="margin-bottom: 5px">
  </div>

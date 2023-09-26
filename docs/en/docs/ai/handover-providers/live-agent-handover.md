@@ -32,10 +32,10 @@ Projects and Inboxes within Live Agent are easily setup, and Agents can be added
 <div class="divider"></div>
 Are you ready to set up Live Agent? Start here:
 
-- [**Live Agent Setup**]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-introduction/)
+- [Live Agent Setup](../../live-agent/getting-started/overview.md)
 
 ## Already Setup Live Agent?
 <div class="divider"></div>
 For more on Live Agent, visit our documentation here: 
 
-- [**Live Agent Overview**]({{config.site_url}}live-agent/overview/)
+- [Live Agent Overview](../../live-agent/overview.md)

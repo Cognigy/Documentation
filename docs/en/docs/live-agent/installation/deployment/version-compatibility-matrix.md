@@ -28,6 +28,7 @@ such as Kubernetes, MongoDB, and Redis.
 | 4.57                             | 1.19-1.26  | 15.1       | 7.0[^**] | 3.9 or higher |
 | 4.58                             | 1.19-1.26  | 15.1       | 7.0[^**] | 3.9 or higher |
 | 4.59                             | 1.19-1.26  | 15.1       | 7.0[^**] | 3.9 or higher |
+| 4.60                             | 1.19-1.26  | 15.1       | 7.0[^**] | 3.9 or higher |
 
 [^*]: Stand-alone deployment.
 

@@ -64,6 +64,7 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - release-notes/4.60.md
   - 4.59:
     - release-notes/4.59.md
   - 4.58:
@@ -259,10 +260,14 @@ nav:
         - ai/flow-nodes/audiocodes/agent-assist.md
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
+        - ai/flow-nodes/agent-assist/identity-assist.md
+        - ai/flow-nodes/agent-assist/next-action-assist.md
+        - ai/flow-nodes/agent-assist/sentiment-assist.md
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
         - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
+        - ai/flow-nodes/agent-assist/transcript-assist.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -380,6 +385,7 @@ nav:
     - ai/endpoints/workplace-by-fb.md
     - ai/endpoints/8x8.md
     - ai/endpoints/genesys.md
+    - ai/endpoints/bandwidth.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
@@ -412,6 +418,7 @@ nav:
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
+      - agent-assist/plug-and-play-widgets.md
 
   - xApps:
       - ai/xApp/overview.md
@@ -423,7 +430,9 @@ nav:
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md
-  - ai/knowledge-ai.md
+  - Knowledge AI:
+      - ai/knowledge-ai/overview.md
+      - ai/knowledge-ai/ctxt.md
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -445,6 +454,7 @@ nav:
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
       - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
+      - ai/installation/migration/from-nlu-v1-to-v2-migration.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
@@ -607,6 +617,7 @@ nav:
         - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
         - voicegateway/references/events/USER_BUSY.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
+        - voicegateway/references/events/NO_ANSWER.md
     - TTS and STT Vendors:
         - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:

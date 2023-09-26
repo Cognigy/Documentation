@@ -55,7 +55,7 @@ In the Search & Extract mode, the following steps are involved:
 
 For this mode, select models from the [list of supported providers](../../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
 
-#### Search only
+#### Search Only
 
 Performs a knowledge search and retrieves information without extraction or automatic output.
 
@@ -72,11 +72,11 @@ Select a store from the list to allow the Node to retrieve the data.
 
 ### Search Settings
 
-| Parameter                 | Type          | Description                                                                                                                                                                                                                                                            |
-|---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Top K                     | Indicator     | The number of the best matching chunks to return.                                                                                                                                                                                                                      |
-| Where to store the result | Select        | The storage for the search results. Select a storage:<br> default - the content will be stored in the Input object (`input.knowledgeSearch`) <br> - Input - the content will be stored in the Input object.<br> - Context - the content will be stored in the Context. |
-| String to search for      | CognigyScript | The string to search for in the knowledge store. A default value is stored in `input.text`.                                                                                                                                                                            |
+| Parameter                 | Type          | Description                                                                                                                                                                                                                                                                           |
+|---------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Top K                     | Indicator     | The number of the best matching chunks to return.                                                                                                                                                                                                                                     |
+| Where to store the result | Select        | The storage for the search results. Select a storage:<br> - **default** — the content will be stored in the Input object (`input.knowledgeSearch`). <br> - **Input** — the content will be stored in the Input object.<br> - **Context** — the content will be stored in the Context. |
+| String to search for      | CognigyScript | The string to search for in the knowledge store. A default value is stored in `input.text`.                                                                                                                                                                                           |
 
 ### Extract Settings
 
@@ -94,16 +94,24 @@ Select a store from the list to allow the Node to retrieve the data.
 
 ### Output Settings
 
-| Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                 |
-|----------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OutputMode           | Select        | This parameter allows you to choose between two options for the output:<br> - Text - select this option if you want the system to provide a basic text-based response as the output.<br>- Adaptive Card - select this option if you want a visual representation of an Adaptive Card as the output. Adaptive Cards are interactive and display rich content with buttons, images, and more. |
-| Output Fallback Text | CognigyScript | The text to output if no answer was found.                                                                                                                                                                                                                                                                                                                                                  |
+| Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                         |
+|----------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| OutputMode           | Select        | This parameter allows you to choose between two options for the output:<br> - **Text** — select this option if you want the system to provide a basic text-based response as the output.<br>- **Adaptive Card** — select this option if you want a visual representation of an Adaptive Card as the output. Adaptive Cards are interactive and display rich content with buttons, images, and more. |
+| Output Fallback Text | CognigyScript | The text to output if no answer was found.                                                                                                                                                                                                                                                                                                                                                          |
 
+### Error Handling
+
+| Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+|--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Select Error Handling Approach | Select | You can select one of the Error Handling options:<br>- **Stop Flow Execution** — terminate the current Flow execution.<br>- **Continue Flow Execution** — allow the Flow to continue executing, bypassing the error and proceeding to the next steps.<br>- **Go to Node** — redirect the workflow to a specific Node in the Flow, which can be useful for error recovery or customized error handling. |
+| Error Message (optional)       | Text   | Active when the **Continue Flow Execution** option is selected. Optional message to output if the Search or Extract service fails.                                                                                                                                                                                                                                                                     |
+| Select Flow                    | Select | Active when the **Go to Node** option is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                           |
+| Select Node                    | Select | Active when the **Go to Node** option is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                           |
 
 ## More information
 
 - [Knowledge Search Node](knowledge-search.md)
-- [Knowledge Search Overview](../../knowledge-ai.md)
+- [Knowledge Search Overview](../../knowledge-ai/overview.md)
 - [LLM](../../resources/build/llm.md)
 
 

@@ -17,20 +17,20 @@ Payload:
 ```json
 {
   "payload": {
-    "call_sid": "ee654c0b-e1e3-45d9-ba7e-8f444080c955",
+    "call_sid": "ee654c0b-e1e3-45d9-xxxx-xxxxxxxxxxxx",
     "direction": "inbound",
-    "from": "user-a6dRWVsNTxEYPU1QkkZG4X",
+    "from": "user-a6dRWVsNTxEYPU1Qkkxxxx",
     "to": "123456789",
-    "call_id": "23b61302-5f72-123c-e8a5-020052186fa0",
+    "call_id": "23b61302-5f72-123c-xxxx-xxxxxxxxxxxx",
     "sip_status": 200,
     "sip_reason": "OK",
     "call_status": "in-progress",
-    "account_sid": "a6a34b37-6391-4f36-aad8-afdcb3399a7d",
-    "trace_id": "012e7f38ccf2150c80f4169a8dd6b783",
-    "application_sid": "16f9efd3-bb18-475f-8b13-8750aacda925",
-    "fs_sip_address": "10.1.193.108:5060",
-    "originating_sip_ip": "88.77.34.146",
-    "api_base_url": "voicegateway-app-dev-vg.cognigy.ai/v1",
+    "account_sid": "a6a34b37-6391-4f36-xxxx-xxxxxxxxxxxx",
+    "trace_id": "012e7f38ccf2150c80f4169a8dd6xxxx",
+    "application_sid": "16f9efd3-bb18-475f-xxxx-xxxxxxxxxxxx",
+    "fs_sip_address": "10.1.193.xxx:xxxx",
+    "originating_sip_ip": "88.77.xx.xxx",
+    "api_base_url": "voicegateway-app.cognigy.ai/v1",
     "speech": {
       "language_code": "en-US",
       "channel_tag": 1,
@@ -44,7 +44,7 @@ Payload:
       "vendor": {
         "name": "microsoft",
         "evt": {
-          "id": "bbc41b27d34a40afbdb6b0bb25daee5c",
+          "id": "bbc41b27d34a40afbdb6b0bb25daxxxx",
           "recognition_status": "Success",
           "offset": 17300000,
           "duration": 7400000,
