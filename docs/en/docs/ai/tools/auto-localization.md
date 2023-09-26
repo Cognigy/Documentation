@@ -6,7 +6,9 @@ hidden: false
 
 # Automatic Translation
 
-Cognigy has integrated _automatic translation_ capabilities to streamline the process of customizing Flows and Intents for various locales. This feature is great for users who need multilingual support without the need for manual translations.
+Cognigy has integrated _automatic translation_ capabilities
+to streamline the process of customizing Flows and Intents for various locales.
+This feature is helpful for users who need multilingual support without the need for manual translations.
 
 Cognigy.AI is compatible with the following machine translation providers:
 
