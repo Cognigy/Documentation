@@ -15,7 +15,7 @@ In automatic mode, conversations can be automatically assigned or reassigned to 
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
 
-Live Agent provides an auto-assignment system for conversations based on _round-robin_ logic by default. Using this logic, the system automatically distributes incoming conversations in a sequential and balanced manner among your human agents. It prevents your agents from becoming overwhelmed and ensures your customers receive prompt responses.
+Live Agent provides an auto-assignment system for conversations based on _round-robin_ logic by default. Using this logic, the system automatically distributes incoming conversations in a sequential manner among your human agents.
 
 When set up, the action lists users and assigns conversations one by one. For example, if your Customer Support team consists of three users, the first conversation goes to Alex, the second to David, and the third to Sara. When the fourth conversation arrives, the cycle starts again, and it will be assigned to Alex.
 
