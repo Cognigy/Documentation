@@ -95,7 +95,7 @@ To localize a set of Intents using machine translation, follow these steps:
 
 Intent example sentences will be translated automatically.
 
-### Multi-Intent Localization
+### Machine Translation for Multi-Intent Localization
 
 To localize all Intents within your Flow using machine translation, follow these steps:
 

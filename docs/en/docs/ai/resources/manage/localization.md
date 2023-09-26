@@ -65,12 +65,20 @@ To localize an Intent, follow these steps:
 5. Click **Build model**.
 6. Click **Save**.
 
-## Add a Locale to multiple Intents
+## Add a Locale to Multiple Intents
 
 To localize all Intents within your Flow using machine translation, follow these steps:
 
 1. In the Flow editor, select NLU in the upper-right corner.
 2. On the **Intents** tab, on the right side of the **+ Create Intent** button, click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Add Localisations to all Intents**.
-3. In the **Add Localizations to all Intents** window, select **Auto-Translate from another locale**.
+3. In the **Add Localizations to all Intents** window, select one of the following options:
+   - Create empty — create a new localization for the selected Intent without any content. It's useful when you want to start fresh and provide a new translation or content for a specific Intent.
+   - Copy from another locale — copy the content from an existing localization of the same Intent or another source. This is helpful when you want to reuse or duplicate content from a different localization.
+   - Auto-Translate from another locale - add a new localization to the Node with translated content by using [auto-translation](../../tools/auto-localization.md) option.
+4. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing intents within the current Flow locale.
+6. Click **Build model**. 
+7. Click **Save**.
 
+## More information
 
+- [Automatic Translation](../../tools/auto-localization.md)
