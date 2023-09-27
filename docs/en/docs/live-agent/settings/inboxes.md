@@ -28,7 +28,7 @@ Here you can change the settings and adjust them based on your needs.
 
 In this section, you can see the agents assigned to the Inbox as collaborators.
 
->Here we can find the Conversation Assignment settings as well. More details can be found under [Conversation Routing](../conversation/conversation-routing.md#auto-assignment)
+>Here we can find the Conversation Assignment settings as well. More details can be found under [Conversation Routing](../conversation/conversation-routing/automatic-mode.md)
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-Inbox-list-agents.png" width="100%"  alt="Live Agent Inbox Settings" />

@@ -1,13 +1,17 @@
 ---
-title: "Services" 
-slug: "services" 
+title: "Service" 
+slug: "service" 
 hidden: false 
 ---
 
-# Services
+# Service
 
-Service Nodes are used to connect with APIs and databases.
-They help in tasks like accessing your user database to make your Flow more customized.
+Service Nodes are used to:
+
+- Serve as connectors to APIs and databases. They assist in tasks such as accessing your user database to enhance the customization of your Flow.
+- Help to operate Flows that include handover logic.
+
+You can use the following Service Nodes:
 
 - [HTTP Request](http-request.md) 
 - [MongoDB](mongo-db.md):
@@ -22,3 +26,4 @@ They help in tasks like accessing your user database to make your Flow more cust
     - [Run Transaction](ms-sql.md#run-transaction)
     - [Run SQL Query](ms-sql.md#run-query)
     - [Run StoredProcedure](ms-sql.md#run-stored-procedure)
+- [Check Agent Availability](check-agent-availability.md) 

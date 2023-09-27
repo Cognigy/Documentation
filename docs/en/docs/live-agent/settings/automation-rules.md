@@ -3,7 +3,7 @@ title: "Automation Rules"
 slug: "Automation Rules"
 hidden: false
 ---
-# Automations
+# Automation (Beta)
 
 Automation can replace and automate existing processes that require manual effort.
 You can do many things with automation, including adding labels and assigning conversations to the best agent.

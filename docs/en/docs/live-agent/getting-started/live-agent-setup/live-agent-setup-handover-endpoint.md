@@ -4,7 +4,7 @@ slug: "live-agent-setup-handover-endpoint"
 hidden: false 
 ---
 
-# Setup a Cognigy.AI Endpoint for Handover
+# Set up a Cognigy.AI Endpoint for Handover
 
 When you create a new Agent in Cognigy.AI you are prompted to select an Endpoint. You can select, for example, **Cognigy Webchat** as a specific Endpoint to the Cognigy.AI platform. 
 For more information, see [Endpoints](https://docs.cognigy.com/ai/endpoints/overview/).
