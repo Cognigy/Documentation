@@ -187,19 +187,19 @@ Once you built your first xApp, you can test your xApp via the Interaction Panel
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-3.png" width="100%">
    </figure>
    
-3. Open the URL in a new tab to view the xApp with the Adaptive Card and select your customer status
+3. Open the URL in a new tab to view the xApp with the Adaptive Card and select your customer status.
    
    <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-4.png" width="100%">
    </figure>
    
-4. When selecting **New Customer** and submitting a new page will be loaded
+4. When selecting **New Customer** and submitting a new page will be loaded.
 
    <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-5.png" width="100%">
    </figure>
    
-5. You can submit data in the entry fields and observe the behavior, for example, "Dan Schneider", 01.01.1999 and dan@cognigy.com.
+5. You can submit data in the entry fields and observe the behavior, for example, `Dan Schneider`, `01.01.1999`, and `dan@cognigy.com`.
 6. Check the input result via the Interaction Panel.
 
    <figure>

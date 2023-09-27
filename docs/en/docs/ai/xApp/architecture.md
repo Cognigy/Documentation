@@ -12,7 +12,6 @@ The following diagram illustrates the process when the xApp Shell Page loads its
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/architecture.png" width="100%" />
 </figure>
 
-
 ## xApp Sequence Diagram
 
 The diagram illustrates the sequence of interactions between a user, Cognigy Flow, xApp Backend, and xApp Page in the context of an xApp architecture integration.

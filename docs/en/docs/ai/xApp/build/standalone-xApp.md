@@ -6,24 +6,26 @@ hidden: true
 
 # Build a Standalone xApp
 
-In this tutorial, you will learn how to build and deploy an xApp Flow as a standalone application
+In this tutorial, you will learn how to build and deploy an xApp Flow as a standalone application.
 
 ## Configure the Flow
+
 ### xApp: Init Session Node
+
 1. Go to your Flow.
 2. In the Flow Editor, add an xApp: Init Session Node.
 3. Open the Node editor and fill in the following fields:
-- In the Style Customization section:
-    - Background Color — specify darkslategray.
-    - Logo — select Show Default Logo.
-- In the xApp Screens section:
-    - Loading Text — specify Loading...
-- In the Intermediate Screen section:
-    - Customization type — select Customized Texts from the list.
-    - Text Override — enter Thank you for the info. You can now close this tab.
-- In the Connection Screen section:
-    - Customization type — select No customization.
-4. Click Save Node.
+    - In the **Style Customization** section:
+        - **Background Color** — specify `darkslategray`.
+        - **Logo** — select Show Default Logo.
+   - In the xApp Screens section:
+        - **Loading Text** — specify `Loading...`.
+   - In the **Intermediate Screen** section:
+        - **Customization type** — select Customized Texts from the list.
+        - **Text Override** — enter `Thank you for the info`. You can now close this tab.
+   - In the **Connection Screen** section:
+        - **Customization type** — select **No customization**.
+4. Click **Save Node**.
 
 ### Say Node
 
@@ -41,9 +43,9 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 
 ### xApp: Show HTML Node
 
-1. Below the **Say** Node, add an **xApp: Show HTML** Node.
-2. In the **Content** section, select **Full HTML Document**.
-3. In the **HTML Document** section, specify the following code:
+1. Below the **Say** Node, add an **xApp: Show HTML** Node.
+2. In the **Content** section, select **Full HTML Document**.
+3. In the **HTML Document** section, specify the following code:
 
     ```html
      <!DOCTYPE html>
@@ -62,12 +64,12 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
      </html>
     ```
 
-4. Click **Save Node**.
+4. Click **Save Node**.
 
 ### xApp: Show Adaptive Card Node
 
-1. Below the **Question** Node, add the **xApp: Show Adaptive Card** Node.
-2. In the **AdaptiveCard Definition** field, specify the following code:
+1. Below the **Question** Node, add the **xApp: Show Adaptive Card** Node.
+2. In the **AdaptiveCard Definition** field, specify the following code:
 
     ```json
     {
@@ -131,14 +133,14 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
         ]
     }
     ```
-3. Under **Waiting Behavior**, select **Wait for xApp User Input**.
-4. Click **Save Node**.
+3. Under **Waiting Behavior**, select **Wait for xApp User Input**.
+4. Click **Save Node**.
 
 ### xApp: Show HTML Node
 
-1. Below, add an **xApp: Show HTML** Node.
-2. In the **Content** field, select **Full HTML Document.**
-3. In the **HTML Document** field, specify the following code:
+1. Below, add an **xApp: Show HTML** Node.
+2. In the **Content** field, select **Full HTML Document**.
+3. In the **HTML Document** field, specify the following code:
 
     ```html
     <!DOCTYPE html>
@@ -189,13 +191,13 @@ After that, you can deploy your xApp.
 
 ## Deploy the xApp
 
-1. Go to Deploy > Endpoints.
-2. Click + New Endpoint.
-3. Select the Rest Endpoint from the list.
+1. Go to **Deploy > Endpoints**.
+2. Click **+ New Endpoint**.
+3. Select the **Rest** Endpoint from the list.
 4. Specify a unique name and select the corresponding Flow.
-5. In the Endpoint editor, go to the Transformer Functions section.
-6. Activate the Enable Input Transformer and Enable Execution Finished Transformer settings.
-7. In the Transformer field, specify the following code:
+5. In the Endpoint editor, go to the **Transformer Functions** section.
+6. Activate the **Enable Input Transformer** and **Enable Execution Finished Transformer** settings.
+7. In the **Transformer** field, specify the following code:
 
     ```js
     const generateId = () => 'xxxx-xxxx-xxxx-xxxx'.replace(/x/g, () => String.fromCharCode(97 + Math.random() * 25))
@@ -226,7 +228,7 @@ After that, you can deploy your xApp.
       }
     })
     ```
-8. Click Save.
+8. Click **Save**.
 
 To check if the xApp was deployed as expected, copy and paste the Endpoint URL into your browser's address bar and test your Flow again.
 
@@ -235,8 +237,3 @@ To check if the xApp was deployed as expected, copy and paste the Endpoint URL i
 - [xApp Nodes](../../flow-nodes/xApp/overview.md)
 - [Build an xApp](first-xApp.md)
 - [xApps](../overview.md)
-
-
-
-
-

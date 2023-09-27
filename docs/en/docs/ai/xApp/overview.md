@@ -77,10 +77,8 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 
 To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build your first xApp](build/first-xApp.md) articles.
 
-
 ## More information
 
-- [Getting Started](getting-started.md)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)

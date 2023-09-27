@@ -10,10 +10,10 @@ In this tutorial, you will learn how to create an xApp that will collect email a
 
 ## Prerequisites
 
-- Access to a [voice provider](https://docs.cognigy.com/ai/tools/voice-preview/), for example, Microsoft Azure Speech Services.
+- Access to a [voice provider](../../tools/voice-preview.md), for example, Microsoft Azure Speech Services.
 - [Twilio API Key](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys).
-- Twilio Extension preinstalled from [Cognigy Marketplace](https://docs.cognigy.com/ai/resources/manage/extensions/).
-- [Voice Gateway Endpoint](https://docs.cognigy.com/ai/endpoints/cognigy-vg/) configured in Cognigy.
+- Twilio Extension preinstalled from [Cognigy Marketplace](../../resources/manage/extensions.md).
+- [Voice Gateway Endpoint](../../endpoints/cognigy-vg.md) configured in Cognigy.
 
 ### Configure a Basic xApp Flow
 
@@ -55,7 +55,7 @@ In this tutorial, you will learn how to create an xApp that will collect email a
             ]
         }
     ```    
-5. Click Save Node.
+5. Click **Save Node**.
 6. Below xApp: Show Adaptive Card Node, add a Question Node. This Node will be used to prompt the user, via the primary channel, to provide data through the xApp. It will then wait for the xApp's submit input before proceeding with further Flow execution.
 7. Set the Question type to xApp to ensure only data from the xApp will be accepted as a valid answer.
 8. Select the Text with Buttons output type to display a button with the xApp URL.
@@ -117,11 +117,11 @@ You have successfully created the xApp. Now you can test your Flow via the Inter
 2. Call the specified voice gateway number from your phone.
 3. Follow the conversation prompts and observe the Flow's behavior.
 
-   <figure>
+<figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/xApp-with-multi-channels/image3.png" width="100%">
-   </figure>
+</figure>
 
-   Note that the voice fallback text will be used instead of buttons.
+Note that the voice fallback text will be used instead of buttons.
 
 The conversation should progress only when the user enters data through the xApp.
 
