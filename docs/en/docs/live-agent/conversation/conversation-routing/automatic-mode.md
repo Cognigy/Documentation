@@ -50,7 +50,7 @@ The changes will be applied.
 By default, [Automatic Assignment](#automatic-assignment) does not take into account conversation parameters,
 such as the number of conversations being handled by each agent, agent skiils, or conversation priority.
 In this case,
-new conversations may be assigned to any available agent without considering their current workload, skills, or priority.
+new conversations may be assigned to any available agent without considering their current workload, skills, or language.
 
 You can control this behavior by using the following settings:
 
