@@ -141,45 +141,51 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 3. In the **HTML Document** field, specify the following code:
 
     ```html
-     <!DOCTYPE html>
-     <html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
     
-     <head>
-     <script src="/sdk/app-page-sdk.js"></script>
-     </head>
+    <head>
+        <script src="/sdk/app-page-sdk.js"></script>
+    </head>
     
-     <body>
-     <p>
-     Received info:
-     <hr>
-     Name: "{{"{{ input.data._cognigy._app.payload.name }}"}}"<br>
-     Email: "{{"{{ input.data._cognigy._app.payload.email }}"}}"<br>
-     Phone: "{{"{{ input.data._cognigy._app.payload.phone }}"}}"<br>
-     </p>
-     <button type="button" onclick="SDK.submit({ option: 'ok' })">OK</button>
-     </body>
+    <body>
+      <p>
+          Received info:
+      <hr>
+        Name: "{{"{{ input.data._cognigy._app.payload.name }}"}}"<br>
+        Email: "{{"{{ input.data._cognigy._app.payload.email }}"}}"<br>
+        Phone: "{{"{{ input.data._cognigy._app.payload.phone }}"}}"<br>
+      </p>
+      <button type="button" onclick="SDK.submit({ option: 'ok' })">OK</button>
+    </body>
     
-     </html>
+    </html>
     ```
 
-4. Under **Waiting Behavior**, select **Wait for xApp User Input**.
-5. Click **Save Node**.
-   ![Alt text](image.png)
+4. Under **Waiting Behavior**, select **Wait for xApp User Input**.
+5. Click **Save Node**.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/image.png" width="100%">
+</figure>
 
 Now you can test the result via the Interaction Panel.
 
 ## Test the Flow
 
 1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
-2. In the Interaction Panel, expand the **Event/Message with payload** section to access the xApp session. Also, you can check the **Info** tab to see the xApp's URL in the`input.apps.url`input object.
+2. In the Interaction Panel, expand the **Event/Message with payload** section to access the xApp session. Also, you can check the **Info** tab to see the xApp's URL in the`input.apps.url`input object.
 3. Open the xApp's URL.
-4. Once the page is opened, click **Ok**. The Adaptive Card form will be loaded.
-5. In the **Phone Number** field, specify a mobile number and click **Submit**.
-   ![Alt text](image-1.png)
+4. Once the page is opened, click **Ok**. The Adaptive Card form will be loaded.
+5. In the **Phone Number** field, specify a mobile number and click **Submit**.
 
-   If the operation is successful, you will receive the following message: `Thank you for the info. You can now close this tab`.
+   <figure>
+    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/image-1.png" width="100%">
+   </figure>
+    
+If the operation is successful, you will receive the following message: `Thank you for the info. You can now close this tab`.
 
-   After that, you can deploy your xApp.
+After that, you can deploy your xApp.
 
 ## Deploy the xApp
 

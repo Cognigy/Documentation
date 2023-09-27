@@ -15,7 +15,7 @@ The xApps can be used in two different ways:
 
 You can use an xApp in addition to the main communication channels, such as voice, Webchat Widget, Teams, WhatsApp, and others. The full list is provided in [Supported Channels](supported-browsers-and-channels.md#supported-channels).
 
-To learn how it works, follow [Getting Started](getting-started.md) (Advanced part).
+To learn how it works, follow [Build an xApp with multiple channels](build/xApp-with-multi-channels.md).
 
 ### Power up virtual agents
 
@@ -29,7 +29,7 @@ Enable Agent Assist to suggest xApps to human agents. These xApps can be shared 
 
 You can use an xApp as a standalone application. The xApp can be built to address specific tasks or processes that don't require a conversation. These xApps can be accessed via a URL, allowing users to interact with them directly without the need for another communication channel.
 
-To learn how it works, follow [Tutorial: Create a Standalone xApp](https://support.cognigy.com/hc/en-us/articles/8867141515676).
+To learn how it works, follow [Create a Standalone xApp](build/standalone-xApp.md).
 
 ## Examples
 

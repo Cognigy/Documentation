@@ -1,10 +1,10 @@
 ---
-title: "Build an xApp in a multi-channel scenario"
+title: "Build an xApp with multiple channels"
 slug: "xApp-with-multi-channels"
 hidden: true
 ---
 
-# Build an xApp in a multi-channel scenario
+# Build an xApp with multiple channels
 
 In this tutorial, you will learn how to create an xApp that will collect email addresses from users via a voice channel and display an Adaptive Card for data entry. We will also implement SMS functionality to send a link to the xApp via a text message.
 
@@ -15,10 +15,9 @@ In this tutorial, you will learn how to create an xApp that will collect email a
 - Twilio Extension preinstalled from [Cognigy Marketplace](https://docs.cognigy.com/ai/resources/manage/extensions/).
 - [Voice Gateway Endpoint](https://docs.cognigy.com/ai/endpoints/cognigy-vg/) configured in Cognigy.
 
-
 ### Configure a Basic xApp Flow
 
-1. Create a new Flow in Cognigy and name it Multi-Channel App Tutorial.
+1. Create a new Flow in Cognigy and name it `Multichannel App Tutorial`.
 2. In the Flow editor, add an xApp: Init Session Node to initialize the xApp session.
 3. Below the xApp: Init Session Node, add an xApp: Show Adaptive Card Node to update the initialized xApp session with a new Adaptive Card-based xApp page.
 4. In the AdaptiveCard Definition field, paste the following JSON:
@@ -61,6 +60,7 @@ In this tutorial, you will learn how to create an xApp that will collect email a
 7. Set the Question type to xApp to ensure only data from the xApp will be accepted as a valid answer.
 8. Select the Text with Buttons output type to display a button with the xApp URL.
 9. Configure the prompt message to instruct users to enter their email using the xApp. In the Text field, paste the following text:
+
    ```txt
    Welcome to the xApp tutorial. Please enter your email in the xApp using the link which I texted you via SMS
    ```
@@ -71,50 +71,56 @@ In this tutorial, you will learn how to create an xApp that will collect email a
     - **URL** — click token and select the xApp Session URL Token.
     - **URL Target** — select Open URL in a new tab.
 12. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the Reprompt Options section and paste the following reprompt message:
+
     ```txt
     I can't continue before you enter the email in the xApp
     ```
-13. Click Save.
-14. Click Save Node.
+13. Click **Save**.
+14. Click **Save Node**.
 15. Below the Question Node, add a Say Node.
 16. In the Text field, paste the following text:
+
     ```txt
     I received the following email: {{"{{ input.data._cognigy._app.payload.myEmail }}"}}
     Goodbye!
     ```
-17. Click Save Node.
-    ![Alt text](image.png)
+17. Click **Save Node**.
 
+    <figure>
+        <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/xApp-with-multi-channels/image.png" width="100%">
+    </figure>
 
 ### Configure Voice Channel Support
 
 1. Below the Say Node, add a Hang Up Node at the end of the Flow to terminate the conversation after email confirmation.
-2. In the Reason for hang up field, specify Bot ended the call.
-3. Click Save Node.
+2. In the **Reason for hang up** field, specify **Bot ended the call**.
+3. Click **Save Node**.
 
 ## Implement SMS Functionality
 
 1. Below the xApp: Show Adaptive Card Node, add an IF Node to check if the caller number is available in the input metadata. This step is optional but helps distinguish between different channels in testing scenarios.
-2. In the If Node, add the VG: Caller Number condition.
-3. Click Save Node.
+2. In the If Node, add the **VG: Caller Number** condition.
+3. Click **Save Node**.
 4. If the caller number is available, add a Send SMS Node using a service like Twilio.
 5. In the Send SMS Node, fill in the following fields:
-   - Twilio Connection — specify an API key that you previously got from your Twilio account.
-   - Sender Number — set the sender number.
-   - Receiver Number — specify the VG: Caller Number condition.
-   - Message Body — customize the SMS message to include the xApp session URL.
-6. Click Save Node.
+   - **Twilio Connection** — specify an API key that you previously got from your Twilio account.
+   - **Sender Number** — set the sender number.
+   - **Receiver Number** — specify the **VG: Caller Number** condition.
+   - **Message Body** — customize the SMS message to include the xApp session URL.
+6. Click **Save Node**.
 
-You have successfully created the xApp
-
-Now Test your Flow via the Interaction Panel.
+You have successfully created the xApp. Now you can test your Flow via the Interaction Panel.
 
 ## Test the Flow with a Voice Channel
 
 1. Use the Interaction Panel's voice call feature to test the Flow. Ensure the voice preview settings in the agent's settings are properly configured.
 2. Call the specified voice gateway number from your phone.
 3. Follow the conversation prompts and observe the Flow's behavior.
-   ![Alt text](image3.png)
+
+   <figure>
+    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/xApp-with-multi-channels/image3.png" width="100%">
+   </figure>
+
    Note that the voice fallback text will be used instead of buttons.
 
 The conversation should progress only when the user enters data through the xApp.
