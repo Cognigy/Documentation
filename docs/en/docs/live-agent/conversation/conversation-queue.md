@@ -42,6 +42,7 @@ Result: All three conversations are assigned to the agent and in a queue, waitin
 
 Conditions:
 
+- Both settings in the Inbox are activated: Automatic Conversation Assignment and Consider Conversation Priority.
 - Conversations are assigned to an agent, but the agent still needs to send the first reply.
 - The Conversation limit is set to 2 conversations per agent.
 - There is one online agent available.
