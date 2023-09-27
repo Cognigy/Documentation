@@ -1,7 +1,7 @@
 ---
- title: "Overview" 
- slug: "overview" 
- hidden: false 
+title: "Overview" 
+slug: "overview" 
+hidden: false 
 ---
 
 # xApps Overview
@@ -46,7 +46,6 @@ The xApp Screens are shown when the xApp Page is launched, fails to launch, enco
     <figcaption>xApp Error Screen</figcaption>
 </figure>
 
-
 #### Intermediate Screen
 
 The Intermediate Screens are displayed to the end user while no xApp Page is configured to be displayed. The default Intermediate Screen can be replaced with a custom-built xApp Page.
@@ -76,7 +75,7 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 
 ## How it Works
 
-To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build an xApp](build-an-xApp.md) articles.
+To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build your first xApp](build/first-xApp.md) articles.
 
 
 ## More information
@@ -86,4 +85,3 @@ To learn more about how an xApp works, read the [Use cases](use-cases.md) and [B
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)
 - [xApp Flow API](api.md)
-- [xApp Tutorials](tutorials.md)
