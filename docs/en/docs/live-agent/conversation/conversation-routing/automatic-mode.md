@@ -63,7 +63,7 @@ You can control this behavior by using the following settings:
 
 When agents have an equal number of active conversations, they'll be assigned the next conversation in order using standard round-robin logic. If online agents lack the necessary skill, the conversation will be directed to the nearest available agent through the standard round-robin logic.
 
-To consider additional automatic assignment parameters withing your Inbox, follow these steps:
+To consider additional automatic assignment parameters within your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
 2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
