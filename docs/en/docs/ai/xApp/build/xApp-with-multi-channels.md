@@ -118,3 +118,9 @@ Now Test your Flow via the Interaction Panel.
    Note that the voice fallback text will be used instead of buttons.
 
 The conversation should progress only when the user enters data through the xApp.
+
+## More information
+
+- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [Build an xApp](first-xApp.md)
+- [xApps](../overview.md)

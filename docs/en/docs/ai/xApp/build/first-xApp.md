@@ -9,6 +9,7 @@ hidden: true
 In this tutorial, you will learn how to create a simple xApp from scratch using Cognigy. The xApp will ask a user if they are a new or an existing customer. Depending on the user's selection, the user will either be presented with an xApp that captures the user's login credentials (for existing customers) or an xApp that captures the registration credentials (for new customers).
 
 ## Configure a Basic xApp Flow
+
 1. Create a new Flow in Cognigy and name it Basic xApp Tutorial.
 2. In the Flow editor, add an xApp: Init Session Node to initialize the xApp session.
 3. Below the xApp: Init Session Node, add an xApp: Show Adaptive Card Node to update the initialized xApp session with a new Adaptive Card-based xApp page.
@@ -158,6 +159,7 @@ In this tutorial, you will learn how to create a simple xApp from scratch using 
 22. Click Save Node.
 23. At the end, add a Say Node.
 24. In the Text field, paste the following text:
+
     ```txt
     Thank you, we got all of the data!
     {{"{{JSON.stringify(input.data._cognigy._app.payload, undefined, 4)}}"}}
@@ -183,3 +185,9 @@ Once you built your first xApp, you can test your xApp via the Interaction Panel
 
 ---
 You can download the flow here:
+
+## More information
+
+- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [Build an xApp](first-xApp.md)
+- [xApps](../overview.md)

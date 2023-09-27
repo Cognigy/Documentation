@@ -55,7 +55,7 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
     
      <body>
      <p>Received info:</p>
-     <pre>"{{ JSON.stringify(input.data, null, 2) }}"</pre>
+     <pre>"{{"{{ JSON.stringify(input.data, null, 2) }}"}}"</pre>
      <button type="button" onclick="SDK.submit({ option: 'ok' })">OK</button>
      </body>
     
@@ -152,9 +152,9 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
      <p>
      Received info:
      <hr>
-     Name: "{{ input.data._cognigy._app.payload.name }}"<br>
-     Email: "{{ input.data._cognigy._app.payload.email }}"<br>
-     Phone: "{{ input.data._cognigy._app.payload.phone }}"<br>
+     Name: "{{"{{ input.data._cognigy._app.payload.name }}"}}"<br>
+     Email: "{{"{{ input.data._cognigy._app.payload.email }}"}}"<br>
+     Phone: "{{"{{ input.data._cognigy._app.payload.phone }}"}}"<br>
      </p>
      <button type="button" onclick="SDK.submit({ option: 'ok' })">OK</button>
      </body>
@@ -226,9 +226,9 @@ To check if the xApp was deployed as expected, copy and paste the Endpoint URL i
 
 ## More information
 
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
-- [Build an xApp](build-an-xApp.md)
-- [xApps](overview.md)
+- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [Build an xApp](first-xApp.md)
+- [xApps](../overview.md)
 
 
 
