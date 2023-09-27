@@ -38,3 +38,22 @@ Conditions:
 
 Result: All three conversations are assigned to the agent and in a queue, waiting for the agent to send the first reply. None of the conversations have been assigned yet.
 
+**Example 3**
+
+Conditions:
+
+- Conversations are assigned to an agent, but the agent still needs to send the first reply.
+- The Conversation limit is set to 2 conversations per agent.
+- There is one online agent available.
+- 3 conversations with different [priorities](conversation-routing/automatic-mode.md#consider-conversation-parameters) are created:
+    - Conversation 1 is Medium.
+    - Conversation 2 is Low.
+    - Conversation 3 is High.
+
+Result: The agent is assigned Conversation 3 (High), followed by Conversation 1 (Medium), both in the queue. Conversation 2 (Low) remains unassigned.
+
+
+## More Information
+
+- [Converation Routing: Automatic mode](conversation-routing/automatic-mode.md)
+- [Converation Routing Overview](conversation-routing/overview.md)
