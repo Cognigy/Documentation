@@ -45,7 +45,7 @@ The changes will be applied.
 
 ### Additional Automatic Assignment Parameters
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../../release-notes/4.59.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../../release-notes/4.60.md)
 
 By default, [Automatic Assignment](#automatic-assignment) does not take into account additional parameters,
 such as the number of conversations being handled by each agent, agent skills, or conversation priority.
