@@ -7,7 +7,7 @@ hidden: false
 
 # Automatic Mode
 
-_Automatic mode_ includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic Assignment evenly distributes conversations among online agents, while Automatic Reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
+_Automatic mode_ includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic Assignment distributes conversations among online agents, while Automatic Reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
 
 In automatic mode, conversations can be automatically assigned or reassigned to users with specific Live Agent roles within a specific inbox: `Agent`, `Supervisor`, or `Administrator`.
 
@@ -43,14 +43,14 @@ To configure auto assignment in your Inbox, follow these steps:
 
 The changes will be applied.
 
-### Consider Conversation Parameters
+### Additional Automatic Assignment Parameters
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../../release-notes/4.59.md)
 
-By default, [Automatic Assignment](#automatic-assignment) does not take into account conversation parameters,
-such as the number of conversations being handled by each agent, agent skiils, or conversation priority.
+By default, [Automatic Assignment](#automatic-assignment) does not take into account additional parameters,
+such as the number of conversations being handled by each agent, agent skills, or conversation priority.
 In this case,
-new conversations may be assigned to any available agent without considering their current workload, skills, or priority.
+new conversations may be assigned to any available agent without considering their current workload, skills, or language.
 
 You can control this behavior by using the following settings:
 
@@ -63,7 +63,7 @@ You can control this behavior by using the following settings:
 
 When agents have an equal number of active conversations, they'll be assigned the next conversation in order using standard round-robin logic. If online agents lack the necessary skill, the conversation will be directed to the nearest available agent through the standard round-robin logic.
 
-To consider conversation parameters withing your Inbox, follow these steps:
+To consider additional automatic assignment parameters withing your Inbox, follow these steps:
 
 1. Go to **Settings > Inboxes**.
 2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
@@ -380,7 +380,7 @@ Additional conditions:
 - Auto Assign Conversations to a Busy Agent is deactivated.
 - Agent 3 has changed the status to `Offline`, `Away`, or `Busy`.
 
-Result: The first conversation will be assigned to Agent 1. The second conversation will be assigned to either Agent 1 or Agent 2 . The third conversation will be assigned to the Agent who is left with three conversations. The fourth conversation will be randomly assigned to one of 3 agents.
+Result: The first conversation will be assigned to Agent 1. The second conversation will be assigned to either Agent 1 or Agent 2 . The third conversation will be assigned to the Agent who is left with three conversations. The fourth conversation will be randomly assigned to one of the three agents.
 
 
 ### Scenario 6
