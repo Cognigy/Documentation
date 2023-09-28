@@ -1,10 +1,10 @@
 ---
-title: "Building your first xApp"
-slug: "first-xApp"
+title: "Build your First xApp"
+slug: "build-first-xApp"
 hidden: true
 ---
 
-# Building your first xApp
+# Build your First xApp
 
 In this tutorial, you will learn how to create a simple xApp from scratch. You will create a virtual agent that asks users whether they are new or existing customers. If the user already exists, the virtual agent directs them to an xApp that collects their login data. If the user is new, the virtual agent guides them to an xApp that collects registration information.
 
@@ -14,7 +14,6 @@ In this tutorial, you will learn how to create a simple xApp from scratch. You w
 2. In the Flow editor, add an **xApp: Init Session** Node to initialize the xApp session.
 3. Below the **xApp: Init Session** Node, add an **xApp: Show Adaptive Card** Node to update the initialized xApp session with a new **Adaptive Card-based xApp** page.
 4. In the **AdaptiveCard Definition** field, paste the following JSON:
- 
     ```json
     {
       "type": "AdaptiveCard",
@@ -50,40 +49,34 @@ In this tutorial, you will learn how to create a simple xApp from scratch. You w
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
       "version": "1.6"
     }
-    ```    
-
-5. Click **Save Node**. 
-6. Below the **xApp: Show Adaptive Card** Node, add a Question Node. This Node will be used to prompt the user, via the primary channel, to provide data through the xApp. It will then wait for the xApp's submit input before proceeding with further Flow execution.
-7. Set the **Question** type to xApp to ensure only data from the xApp will be accepted as a valid answer.
+    ```
+5. Click **Save Node**.
+6. Below the **xApp: Show Adaptive Card** Node, add a **Question** Node. This Node will be used to prompt the user, via the primary channel, to provide data through the xApp. It will then wait for the xApp's submit input before proceeding with further Flow execution.
+7. Set the **xApp** question type to ensure only data from the xApp will be accepted as a valid answer.
 8. Select the **Text with Buttons** output type to display a button with the xApp URL.
 9. Configure the prompt message to instruct users to enter their email using the xApp. In the **Text** field, paste the following text:
-   
    ```text
    Welcome to the xApp tutorial. Take a look at your xApp
    ```
 10. Click **Add** button. Fill in the following fields:
     - **Button Title** — enter `Open xApp`.
     - **Selection Button Type** — select **URL** from the list.
-    - **URL** — click token and select the **xApp Session URL** Token.
-    - **URL Target** — select **Open URL** in a new tab.
+    - **URL** — click ![token](../../../assets/icons/token.svg) and select the **xApp Session URL** Token.
+    - **URL Target** — select **Open URL in a new tab**.
 11. Click **Save**.
-12. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the Reprompt Options section and paste the following reprompt message:
-   
+12. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the **Reprompt Options** section and paste the following reprompt message:
     ```text
     I can't continue before you make your selection in the xApp
     ```
 13. Click **Save Node**.
-14. Below the Question Node, add an If-Node to your flow and set the conditions to:
-   
+14. Below the **Question** Node, add an **If** Node to your Flow and set the conditions to:
     ```text
     input.data._cognigy._app.payload.status **=** new
     ```
-
     This allows you to update the xApp session with a different xApp passed based on the user's selection.
 15. Click **Save Node**.
-16. In the If-Then case, add an xApp: Show Adaptive Card Node to update the initialized xApp session with a new Adaptive Card-based xApp page.
-17. In the AdaptiveCard Definition field, paste the following JSON:
-
+16. In the **If-Then** case, add an **xApp: Show Adaptive Card** Node to update the initialized xApp session with a new Adaptive Card-based xApp page.
+17. In the **AdaptiveCard Definition** field, paste the following JSON:
     ```json
     {
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -129,10 +122,8 @@ In this tutorial, you will learn how to create a simple xApp from scratch. You w
     }
     ```
     This will ask the user to provide their name, date of birth and email address.
-
-18. Click **Save** Node.
-19. Do the same in the If-Else case and paste the following JSON:
-
+18. Click **Save Node**.
+19. Repeat the same Node for the **If-Else** case and paste the following JSON:
     ```json
     {
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -163,13 +154,11 @@ In this tutorial, you will learn how to create a simple xApp from scratch. You w
     }
     ```
     This will ask the user to login via their username and password.
-
 20. Click **Save** Node.
-21. Below If-Condition, Add a new Question Node. This Node will be used to wait for the xApp input.
+21. Below the **If-Then** and **If-Else** cases, add a new **Question** Node. This Node will be used to wait for the xApp input.
 22. Click **Save Node**.
-23. In the end, add a Say Node.
+23. In the end, add a **Say** Node.
 24. In the Text field, paste the following text:
-
     ```txt
     Thank you, we got all of the data!
     {{"{{JSON.stringify(input.data._cognigy._app.payload, undefined, 4)}}"}}
@@ -180,36 +169,36 @@ Once you built your first xApp, you can test your xApp via the Interaction Panel
 
 ##  Test the App via the Interaction Panel
 
-1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
+1. Open the Interaction Panel and enter a message like `Hi` to trigger the Flow.
 2. In the Interaction Panel, click **Open xApp** to access the xApp session. By the way, you can also check the **Info** tab to see the xApp's URL in the `input.apps.url` input object.
 
-   <figure>
-    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-3.png" width="100%">
-   </figure>
-   
-3. Open the URL in a new tab to view the xApp with the Adaptive Card and select your customer status.
-   
-   <figure>
-    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-4.png" width="100%">
-   </figure>
-   
-4. When selecting **New Customer** and submitting a new page will be loaded.
+       <figure>
+          <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/open-xApp.png" width="100%">
+       </figure>
 
-   <figure>
-    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-5.png" width="100%">
-   </figure>
-   
+3. Open the URL in a new tab to view the xApp with the Adaptive Card and select your customer status.
+
+       <figure>
+          <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/open-url.png" width="100%">
+       </figure>
+
+4. When you select **New Customer** and submit the action, a new page will be loaded.
+
+       <figure>
+          <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/select-new-customer.png" width="100%">
+       </figure>
+
 5. You can submit data in the entry fields and observe the behavior, for example, `Dan Schneider`, `01.01.1999`, and `dan@cognigy.com`.
 6. Check the input result via the Interaction Panel.
 
-   <figure>
-    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/image-6.png" width="100%">
-   </figure>
+    <figure>
+      <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/first-xApp/check-input-result.png" width="100%">
+    </figure>
 
-You can download the [xApp Flow example](https://docs.cognigy.com/ai/images/xApp/build-xApps/first-xApp/Flow-xApp-Demo.zip).  
+You can download the [xApp Flow example](https://docs.cognigy.com/ai/images/xApp/build-xApps/first-xApp/Flow-xApp-Demo.zip).
 
-## More information
+## More Information
 
 - [xApp Nodes](../../flow-nodes/xApp/overview.md)
-- [Build an xApp](first-xApp.md)
+- [Build an xApp](overview.md)
 - [xApps](../overview.md)

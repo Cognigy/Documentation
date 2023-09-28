@@ -1,7 +1,7 @@
 ---
- title: "xApp Tokens" 
- slug: "xApp-Tokens" 
- hidden: false
+title: "xApp Tokens" 
+slug: "xApp-Tokens" 
+hidden: false
 ---
 
 # xApp Tokens
@@ -28,7 +28,7 @@ You can get this token
 when the [xApp: Init Session](../flow-nodes/xApp/init-xApp-session.md#without-entering-a-pin-code) Node is executed.
 This URL is also accessible via `input.apps.url` in the input object.
 
-## More information
+## More Information
 
 - [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) 
 - [xApps](overview.md)

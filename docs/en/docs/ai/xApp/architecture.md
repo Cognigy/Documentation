@@ -75,9 +75,8 @@ deactivate f
 19. The Cognigy Flow processes `input.data`. 
 20. The Cognigy Flow sends a message "Received your data from xApp" to the user confirming the data has been received.
 
-
-## More information
+## More Information
 
 - [Overview](overview.md)
-- [Build your first xApp](build/first-xApp.md)
+- [Build an xApp](build/overview.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)

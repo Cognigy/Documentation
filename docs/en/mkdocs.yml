@@ -423,8 +423,8 @@ nav:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
       - Build an xApp:
-          - Build your first xApp:
-              - ai/xApp/build/first-xApp.md
+          - ai/xApp/build/overview.md
+          - ai/xApp/build/first-xApp.md
           - ai/xApp/build/xApp-with-multi-channels.md
           - ai/xApp/build/standalone-xApp.md
           - ai/xApp/build/custom-xApp-node.md

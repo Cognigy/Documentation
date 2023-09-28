@@ -41,8 +41,8 @@ The following channels are supported by xApps:
 
 [^*]: For this channel, Async Mode needs to be activated in the Endpoint settings.
 
-## More information
+## More Information
 
 - [Overview](overview.md)
-- [Build your first xApp](build/first-xApp.md)
+- [Build an xApp](build/overview.md)
 - [xApp Architecture](architecture.md)

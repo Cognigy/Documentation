@@ -1,10 +1,10 @@
 ---
-title: "Build a Custom xApp Node"
+title: "Advanced: Build a Custom xApp Node"
 slug: "custom-xApp-node"
 hidden: true
 ---
 
-# Build a Custom xApp Node
+# Advanced: Build a Custom xApp Node
 
 If you need more control and flexibility than what the **xApp: Show Adaptive Card** or **xApp: Show HTML**
 offer, you can create your own customized Node.
@@ -57,8 +57,8 @@ Utilize the [setAppState API](../api.md) with an `app template URL` set to `gene
 
 Once implemented, the generated HTML will appear within the app screen, similar to the **xApp: Show HTML** Node. This approach allows you to edit a specific part of the page through node fields, rather than modifying the entire page content. This streamlined process is focused on the necessary changes for the dialog.
 
-## More information
+## More Information
 
 - [xApp Nodes](../../flow-nodes/xApp/overview.md)
-- [Build an xApp](first-xApp.md)
+- [Build an xApp](overview.md)
 - [xApps](../overview.md)

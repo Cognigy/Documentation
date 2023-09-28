@@ -101,10 +101,10 @@ Users can sign documents or forms electronically, eliminating the need for physi
     <figcaption>Create a signature</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Overview](overview.md)
-- [Build your first xApp](build/first-xApp.md)
+- [Build an xApp](build/overview.md)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)

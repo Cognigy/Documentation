@@ -12,41 +12,40 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 
 ### xApp: Init Session Node
 
-1. Go to your Flow.
-2. In the Flow Editor, add an xApp: Init Session Node.
+1. Create a new Flow in Cognigy and name it `Standalone xApp Tutorial`.
+2. In the Flow Editor, add an **xApp: Init Session** Node.
 3. Open the Node editor and fill in the following fields:
     - In the **Style Customization** section:
         - **Background Color** — specify `darkslategray`.
-        - **Logo** — select Show Default Logo.
-   - In the xApp Screens section:
-        - **Loading Text** — specify `Loading...`.
-   - In the **Intermediate Screen** section:
-        - **Customization type** — select Customized Texts from the list.
+        - **Logo** — select **Show Default Logo**.
+    - In the **xApp Screens** section:
+        - **Loading Text** — specify `Loading...`
+    - In the **Intermediate Screen** section:
+        - **Customization type** — select **Customized Texts** from the list.
         - **Text Override** — enter `Thank you for the info`. You can now close this tab.
-   - In the **Connection Screen** section:
+    - In the **Connection Screen** section:
         - **Customization type** — select **No customization**.
 4. Click **Save Node**.
 
 ### Say Node
 
-1. Below the **xApp: Init Session** Node, add a **Say** Node.
-2. In the **Options** section, in the **Data** field, specify the code:
+1. Below the **xApp: Init Session** Node, add a **Say** Node.
+2. In the **Options** section, in the **Data** field, specify the code:
 
     ```json
     {
      "xAppUrl": "{{"{{ input.apps.url }}"}}"
     }
     ```
-   This data-only message is received in the `handleExecutionFinished` transformer method. The URL is then used to redirect the browser to the xApp Shell page.
+   This data-only message is received in the `handleExecutionFinished` transformer method. The URL is then used to redirect the browser to the xApp Shell page.
 
-3. Click **Save Node**.
+3. Click **Save Node**.
 
 ### xApp: Show HTML Node
 
 1. Below the **Say** Node, add an **xApp: Show HTML** Node.
 2. In the **Content** section, select **Full HTML Document**.
 3. In the **HTML Document** section, specify the following code:
-
     ```html
      <!DOCTYPE html>
      <html lang="en">
@@ -63,14 +62,12 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
     
      </html>
     ```
-
 4. Click **Save Node**.
 
 ### xApp: Show Adaptive Card Node
 
 1. Below the **Question** Node, add the **xApp: Show Adaptive Card** Node.
 2. In the **AdaptiveCard Definition** field, specify the following code:
-
     ```json
     {
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
@@ -138,10 +135,9 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
 
 ### xApp: Show HTML Node
 
-1. Below, add an **xApp: Show HTML** Node.
+1. Below the **xApp: Show Adaptive Card** Node, add an **xApp: Show HTML** Node.
 2. In the **Content** field, select **Full HTML Document**.
 3. In the **HTML Document** field, specify the following code:
-
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -163,28 +159,27 @@ In this tutorial, you will learn how to build and deploy an xApp Flow as a stand
     
     </html>
     ```
-
 4. Under **Waiting Behavior**, select **Wait for xApp User Input**.
 5. Click **Save Node**.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/image.png" width="100%">
+    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/flow-result.png" width="100%">
 </figure>
 
 Now you can test the result via the Interaction Panel.
 
 ## Test the Flow
 
-1. Open the Interaction Panel and enter a message like "Hi" to trigger the Flow.
-2. In the Interaction Panel, expand the **Event/Message with payload** section to access the xApp session. Also, you can check the **Info** tab to see the xApp's URL in the`input.apps.url`input object.
+1. Open the Interaction Panel and enter a message like `Hi` to trigger the Flow.
+2. In the Interaction Panel, expand the **Event/Message with payload** section to access the xApp session. Also, you can check the **Info** tab to see the xApp's URL in the`input.apps.url`input object.
 3. Open the xApp's URL.
 4. Once the page is opened, click **Ok**. The Adaptive Card form will be loaded.
 5. In the **Phone Number** field, specify a mobile number and click **Submit**.
 
    <figure>
-    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/image-1.png" width="100%">
+    <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/test-flow.png" width="100%">
    </figure>
-    
+
 If the operation is successful, you will receive the following message: `Thank you for the info. You can now close this tab`.
 
 After that, you can deploy your xApp.
@@ -198,7 +193,6 @@ After that, you can deploy your xApp.
 5. In the Endpoint editor, go to the **Transformer Functions** section.
 6. Activate the **Enable Input Transformer** and **Enable Execution Finished Transformer** settings.
 7. In the **Transformer** field, specify the following code:
-
     ```js
     const generateId = () => 'xxxx-xxxx-xxxx-xxxx'.replace(/x/g, () => String.fromCharCode(97 + Math.random() * 25))
     
@@ -232,8 +226,8 @@ After that, you can deploy your xApp.
 
 To check if the xApp was deployed as expected, copy and paste the Endpoint URL into your browser's address bar and test your Flow again.
 
-## More information
+## More Information
 
 - [xApp Nodes](../../flow-nodes/xApp/overview.md)
-- [Build an xApp](first-xApp.md)
+- [Build an xApp](overview.md)
 - [xApps](../overview.md)
