@@ -107,7 +107,6 @@ You can find an example of implementation in the [Cognigy GitHub](https://github
 
 ## More Information
 
-- []
 - [Overview](overview.md)
 - [Build an xApp](build/overview.md)
 - [Architecture](architecture.md)

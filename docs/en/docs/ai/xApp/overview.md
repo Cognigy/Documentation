@@ -18,6 +18,12 @@ by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md)
 or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
 Alternatively, for more customization, you can create your own Node by implementing and uploading an Extension.
 
+To get an quick overview of what xApps are, how they work, and in which scenarios you can use them, watch this webinar:
+
+<div style="text-align:center;">
+  <iframe width="701" height="438" src="https://www.youtube.com/embed/4qvZGG6qK6w" title="Design Multimodal Customer Journeys with Cognigy xApps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 ## Compatibility
 
 - Cognigy xApps are compatible with the browsers and channels listed [here](supported-browsers-and-channels.md).
