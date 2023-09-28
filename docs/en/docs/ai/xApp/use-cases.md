@@ -52,6 +52,8 @@ With xApps, you can offer users an interface to choose their preferred seat for 
 
 Users can view the available seats and select the seat of their choice, enhancing their travel experience.
 
+You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/flight-seat-picker) repository.
+
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/select-seat.png" width="50%">
     <figcaption>Select a flight seat</figcaption>
@@ -96,6 +98,8 @@ With xApps, you can provide a digital signature functionality.
 
 Users can sign documents or forms electronically, eliminating the need for physical signatures and streamlining paperwork processes.
 
+You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/signature) repository.
+
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/signature-pad.png" width="50%">
     <figcaption>Create a signature</figcaption>
@@ -103,6 +107,7 @@ Users can sign documents or forms electronically, eliminating the need for physi
 
 ## More Information
 
+- []
 - [Overview](overview.md)
 - [Build an xApp](build/overview.md)
 - [Architecture](architecture.md)

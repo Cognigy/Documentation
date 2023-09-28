@@ -199,6 +199,7 @@ You can download the [xApp Flow example](https://docs.cognigy.com/ai/images/xApp
 
 ## More Information
 
+- [Ready-made examples of xApps](https://github.com/Cognigy/xApps/tree/main)
 - [xApp Nodes](../../flow-nodes/xApp/overview.md)
 - [Build an xApp](overview.md)
 - [xApps](../overview.md)

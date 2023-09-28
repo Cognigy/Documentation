@@ -14,6 +14,8 @@ To build xApps, use these tutorials:
 
 Additionally, you can create your own [customized Node](custom-xApp-node.md).
 
+You can find ready-made examples of xApps in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main) repository.
+
 ## More Information
 
 - [xApps](overview.md)

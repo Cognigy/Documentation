@@ -76,6 +76,7 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 ## How it Works
 
 To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build your first xApp](build/first-xApp.md) articles.
+You can find ready-made examples of xApps in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main) repository.
 
 ## More Information
 
