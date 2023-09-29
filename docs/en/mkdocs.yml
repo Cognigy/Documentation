@@ -423,13 +423,16 @@ nav:
   - xApps:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
-      - ai/xApp/getting-started.md
+      - Build an xApp:
+          - ai/xApp/build/overview.md
+          - ai/xApp/build/first-xApp.md
+          - ai/xApp/build/xApp-with-multi-channels.md
+          - ai/xApp/build/standalone-xApp.md
+          - ai/xApp/build/custom-xApp-node.md
       - ai/xApp/architecture.md
-      - ai/xApp/supported-browsers-and-channels.md
-      - ai/xApp/build-an-xApp.md
       - ai/xApp/tokens.md
       - ai/xApp/api.md
-      - ai/xApp/tutorials.md
+      - ai/xApp/supported-browsers-and-channels.md
   - Knowledge AI:
       - ai/knowledge-ai/overview.md
       - ai/knowledge-ai/ctxt.md
