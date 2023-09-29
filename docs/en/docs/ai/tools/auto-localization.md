@@ -27,34 +27,7 @@ These providers offer several valuable benefits:
 
 ## Add a Machine Translation Provider
 
-To add a machine translation provider, follow these steps:
-
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent.
-3. In the left-side **Agent** menu, select **Manage > Settings**.
-4. In the **Translation settings** section, select one of the following providers:
-
-    === "Microsoft Translator"
-        - **Translation Provider API Key** — enter your unique API key provided by Microsoft Translator. It's necessary for authentication and allows you to access translation services.
-        - **Request Retriers** — specify how often Cognigy should attempt to call the translation provider if an error occurs during the initial request. For example, if you set it to `3`, Cognigy will try three times before giving up on a translation request.
-        - **Request Timeout** — determine how long Cognigy should wait for a response from the translation provider after making a request, measured in milliseconds. If the provider doesn't respond within this time frame, it's considered a timeout.
-        - **Sentence Cache Expiry Timeout** — determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is 84,600 seconds, which is equivalent to 1 day.
-        - **Custom API Base URL** — this setting is optional. If you have specific requirements or need to connect to a custom instance of the Microsoft Translator API, you can use this field to specify a custom base URL. It allows you to define the URL, including the protocol scheme, for example `https://api-eur.cognitive.microsofttranslator.com`, to tailor the API connection to your needs.
-
-    === "Google Cloud Translation"
-        - **Translation Provider API Key** — enter your unique API key provided by Google Cloud Translation. It's necessary for authentication and allows you to access translation services.
-        - **Request Retriers** — specify how often Cognigy should attempt to call the translation provider if an error occurs during the initial request. For example, if you set it to `3`, Cognigy will try three times before giving up on a translation request.
-        - **Request Timeout** — determine how long Cognigy should wait for a response from the translation provider after making a request, measured in milliseconds. If the provider doesn't respond within this time frame, it's considered a timeout.
-        - **Sentence Cache Expiry Timeout** — determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is 84,600 seconds, which is equivalent to 1 day.
-
-    === "DeepL Translate Pro"
-        - **Translation Provider API Key** — enter your unique API key provided by DeepL Translate Pro. It's necessary for authentication and allows you to access translation services.
-        - **Request Retriers** — specify how often Cognigy should attempt to call the translation provider if an error occurs during the initial request. For example, if you set it to `3`, Cognigy will try three times before giving up on a translation request.
-        - **Request Timeout** — determine how long Cognigy should wait for a response from the translation provider after making a request, measured in milliseconds. If the provider doesn't respond within this time frame, it's considered a timeout.
-        - **Sentence Cache Expiry Timeout** — determine how long translations should be kept in the cache before they are considered outdated and removed. The default value is 84,600 seconds, which is equivalent to 1 day.
-        - **Custom API Base URL** — this setting is optional. If you have specific requirements or need to connect to a custom instance of the DeepL Translate Pro API, you can use this field to specify a custom base URL. It allows you to define the URL, including the protocol scheme, to tailor the API connection to your needs.
-
-5. Click **Save**.
+{! _includes/ai/settings/add-machine-translation-provider.md !}
 
 ## Add a Locale
 
