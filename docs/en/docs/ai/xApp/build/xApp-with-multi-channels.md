@@ -6,7 +6,7 @@ hidden: true
 
 # Build an xApp with Multiple Channels
 
-In this tutorial, you will learn how to create an xApp that will collect email addresses from users via a voice channel and display an Adaptive Card for data entry. We will also implement SMS functionality to send a link to the xApp via a text message.
+In this tutorial, you will learn how to build an xApp that can compliment a primary channel, the voice channel, to cover a certain use case which cannot be ideally covered via the voice channel. The xApp will be used to collect the email address from the users.  As part of this tutorial it will also be implemented that the link to the xApp will be shared with the customers via text message. 
 
 ## Prerequisites
 
