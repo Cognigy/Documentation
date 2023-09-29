@@ -6,7 +6,7 @@ hidden: true
 
 # Build a Standalone xApp
 
-In this tutorial, you will learn how to build and deploy an xApp Flow as a standalone application.  A standalone xApp can be accessed via a URL, allowing users to interact with them directly without the need for a primary communication channel being in front.
+In this tutorial, you will learn how to build and deploy an xApp as a standalone application. A standalone xApp can be accessed via a URL, enabling direct user interaction without the need for a primary communication channel.
 
 ## Configure the Flow
 
