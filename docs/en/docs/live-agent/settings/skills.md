@@ -7,6 +7,8 @@ hidden: false
 
 # Skills
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
+
 _Skills_ are specific abilities that human agents possess, such as language proficiency and expertise in particular domains.
 
 Only users with the Administrator and Supervisor roles can configure and assign skills.
