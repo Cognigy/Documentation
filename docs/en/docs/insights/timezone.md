@@ -69,4 +69,4 @@ Before installation or an upgrade, we strongly advise aligning the list of suppo
 
 ## More Information
 
-- [Pre-aggregation](pre-aggregation.md)
+- [Data pre-aggregation](pre-aggregation.md)
