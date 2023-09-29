@@ -6,6 +6,8 @@ hidden: false
 
 # Automation
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
+
 _Automation Rules_ are a powerful tool to enhance efficiency and streamline processes by automating various tasks within your workflow. With these rules, you can easily assign conversations to specific agents or teams, add labels, adjust priorities, and more without manual intervention. By leveraging Automation Rules, you save time and resources, allowing your team to focus on their core competencies and minimize the time spent on routine tasks.
 
 ## Automation Rule Components
