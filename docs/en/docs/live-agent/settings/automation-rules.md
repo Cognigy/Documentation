@@ -6,77 +6,117 @@ hidden: false
 
 # Automation
 
-_Automation Rules_
-can replace and automate existing processes that require manual effort.
-You can do many things with automation, including adding labels and assigning conversations to the best agent.
-So the team focuses on what they do best and spends less time on manual tasks.
+_Automation Rules_ are a powerful tool to enhance efficiency and streamline processes by automating various tasks within your workflow. With these rules, you can easily assign conversations to specific agents or teams, add labels, adjust priorities, and more without manual intervention. By leveraging Automation Rules, you save time and resources, allowing your team to focus on their core competencies and minimize the time spent on routine tasks.
 
-Click on the **Automation** inside the setting section.
+## Automation Rule Components
 
-### Automation Events
+Each automation rule contains the following components:
 
-Automation Events are triggers on when you want your automation executed. Live agent currently supports three kinds of events.
+- [Events](#events)
+- [Conditions](#conditions)
+- [Actions](#actions)
+
+### Events
+
+Automation Events serve as triggers for when you want your automation to be executed.
 
 | Events               | Description                                                                                                          |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
 | Conversation created | Triggers when a new conversation is created in your system. This will include conversations created by all channels. |
 | Conversation updated | Triggers when a conversation is updated.                                                                             |
 | Message created      | Triggers when any new message inside a conversation is created.                                                      |
-| Conversation opened  | Triggers when a conversation is opened in your system.                                                               |
+| Conversation opened  | Triggers when a conversation is reopened in your system.                                                             |
 
+### Conditions
 
-### Automation Conditions
+Conditions are the criteria that are verified before executing the action. The conditions are evaluated in the order they are defined.
 
-Conditions are criteria that will be checked before the action is executed.
-The conditions are evaluated in the order they are defined.
+| Condition Types | Description                             | Applicable Events                                                                |
+|-----------------|-----------------------------------------|----------------------------------------------------------------------------------|
+| Assignee        | Based on conversation assignee.         | Conversation updated, Conversation opened                                        |
+| Status          | Based on conversation status.           | Conversation created, Conversation updated                                       |
+| Inbox           | Based on the Inbox of the conversation. | Conversation created, Conversation updated, Conversation opened, Message created |
+| Priority        | Based on the conversation's priority.   | Conversation created, Conversation updated, Conversation opened                  |
+| Team            | Based on the assigned team.             | Conversation updated, Conversation opened                                        |
+| Message Type    | Based on the type of message.           | Message created                                                                  |
+| Message Content | Based on the content of the message.    | Message created                                                                  |
 
-| Conditions      | Description | Applicable Events                                                                |
-|-----------------|-------------|----------------------------------------------------------------------------------|
-| Assignee        |             | Conversation updated, Conversation opened                                        |
-| Status          |             | Conversation created, Conversation updated                                       |
-| Inbox           |             | Conversation created, Conversation updated, Conversation opened, Message created |
-| Priority        |             | Conversation created, Conversation updated, Conversation opened                  |
-| Team            |             | Conversation updated, Conversation opened                                        |
-| Message Type    |             | Message created                                                                  |
-| Message Content |             | Message created                                                                  |
+### Actions
 
-### Automation Actions
+Actions are tasks or processes that are executed when the conditions are met.
 
-Actions are tasks/processes that are executed whenever the respective conditions are met.
+| Actions               | Description                                      |
+|-----------------------|--------------------------------------------------|
+| Assign an agent       | Assigns a specific agent to the conversation.    |
+| Assign a team         | Assigns the conversation to a specific team.     |
+| Add Label             | Adds a label to the conversation.                |
+| Send Email to Team    | Sends an email notification to the team.         |
+| Send Email Transcript | Sends an email with the conversation transcript. |
+| Mute Conversation     | Mutes notifications for the conversation.        |
+| Snooze Conversation   | Temporarily suppresses the conversation.         |
+| Resolve Conversation  | Marks the conversation as resolved.              |
+| Send Attachment       | Sends an attachment to the conversation.         |
+| Send Message          | Sends a message to the conversation.             |
+| Change Priority       | Adjusts the conversation's priority.             |
 
-Live agent currently supports the following actions:
+## Create an Automation Rule
 
-- Assign a Conversation to a team.
-- Assign a label to a conversation.
-- Send an email to a team.
+To create an automation rule, follow these steps:
 
-### Create Automations
+1. Open the Live Agent interface.
+2. Go to **Settings > Automation**.
+3. In the upper-right corner, click **+ Add Automation Rule**.
+4. In the **Rule Name** field, enter a unique name for the rule.
+5. In the **Description** field, enter a relevant description for the rule.
+6. From the **Event** list, select the desired event.
+7. In the **Conditions** section, set up a condition:
+    - **Left operand** — select a [condition type](#automation-condition-types).
+    - **Operator** — a comparison operator that checks whether the value of the left operand is `Equal to` or `Not Equal to` the value of the right operand.
+    - **Right operand** — select values corresponding to condition types. For example, if you choose `Status` as a condition type, you can add multiple statuses, such as `Open`, `Pending`, `Resolved`.
+8. _(Optional)_ Add an additional condition by clicking **+ Add Condition**. Repeat the same steps as you did for the first condition and select one of the following operators:
+    - **AND** — all conditions must be true for the overall condition to be true. For example, `Condition A AND Condition B` means that both `Condition A` and `Condition B` must be true to trigger the action.
+    - **OR** — at least one of the conditions must be true for the overall condition to be true. For example, `Condition A OR Condition B` means that if either `Condition A` or `Condition B` is true, the action will be triggered.
+9. In the **Actions** section, select an action. Note that you need to provide additional information depending on which type of action you selected. For example, if you select **Send an email to a Team**, you need to choose a team and write an email template.
+10. _(Optional)_ Add one more action.
+11. Click **Create**.
 
-Click the **+ Add Automation Rule** button to open the Automation creation modal.
+The automation rule will appear in the automation rule list and will be automatically activated.
 
-1. Give your automation a name.
-2. Add a description (optional).
-3. Select an event.
-4. Add conditions.
-5. Add actions.
-6. You can chain multiple conditions with the `AND` or `OR` operator, like in the example below.
+To deactivate the rule, move the toggle switch to the left position.
 
-Example: When Agent Assist is active and a new conversation is created with the `Open` status, the conversation is assigned to a team.
+### Example
 
-- Add a name and a description
-- Select event as Conversation Created
-- Add two conditions and join them with the AND operator, Condition 1 - Conversation Status as Open and Condition 2 - Inbox as Agent Assist bot-default from the dropdown.
-Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure to create the Sales team before performing this action.
+You can use multiple conditions with the `AND` or `OR` operator as in the example below.
 
-### Edit Automations
+When Agent Assist is active, and a new conversation is created with the Open status, the conversation is assigned to a team.
+
+- Name: Sales
+- Description: This automation assigns new **Open** status conversations to the Sales team.
+- Select the event as Conversation Created.
+- Add two conditions and combine them using the `AND` operator:
+    - Condition 1: Check if the **Conversation Status** is **Open**.
+    - Condition 2: Verify that the **Inbox** is set to **Agent Assist bot-default** selected from the dropdown menu.
+- Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure the Sales team is created before executing this action.
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}live-agent/images/add-automation-rule.png" width="80%" />
+</figure>
+
+## Edit an Automation Rule
 
 To edit an automation rule, click the **Edit** icon next to the desired automation rule in the list.
 
-### Clone Automation
+## Clone an Automation Rule
 
-To make a copy of existing automation, click on the clone icon from the Automation list you want to copy.
-This will create a replica of the automation with the same conditions and actions.
+To make a copy of an existing automation rule, click the clone icon from the Automation list you want to copy.
+A replica of the automation reule with the same conditions and actions will be created.
 
-### Delete Automations
+## Delete an Automation Rule
 
 To delete an automation rule, click **Delete** next to the desired Automation in the list. Note that this action is permanent and cannot be undone.
+
+## More Information
+
+- [Settings](overview.md)
+- [Convesation Workflow](../conversation/conversation-workflow.md)
+- [Conversation Routing](../conversation/conversation-routing/overview.md)
