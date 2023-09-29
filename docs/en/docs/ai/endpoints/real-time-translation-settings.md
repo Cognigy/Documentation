@@ -1,69 +1,40 @@
 ---
- title: "Real Time Translation Settings" 
- slug: "real-time-translation-settings" 
- hidden: false 
+title: "Real-time Translation Settings" 
+slug: "real-time-translation-settings" 
+hidden: false 
 ---
 
-# Real Time Translation Settings
+# Real-time Translation Settings
 
-Cognigy.AI supports integration with various Real Time Translation Services, so you can automatically translate incoming text to the language of your flow and the flow output back to the language of the user.
+Cognigy.AI supports integration with various real-time translation services, allowing you to automatically translate incoming text to the language of your flow and translate the flow output back to the user's language.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/real_time_translation_settings.png" width="100%" />
-  <figcaption>Real Time Translation Settings</figcaption>
-</figure>
+Before using this feature, you need to configure a machine translation provider. The choice of provider won't affect the configuration, but there may be differences in translation results and the list of supported languages.
 
 ## Configure Translation Provider
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/real_time_translation_settings_providers.png" width="100%" />
-  <figcaption>Translation Providers</figcaption>
-</figure>
+{! _includes/ai/settings/add-machine-translation-provider.md !}
 
-Before using this feature we need to configure a Translation Provider that will be used for real time translation. The choice of provider won't impact the configuration, but there might be differences in the translation results and the list of supported languages.
+## Configure Real-time Translation Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/real_time_translation_settings_config.png" width="100%" />
-  <figcaption>Translation Settings</figcaption>
-</figure>
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
 
-Each Translation Provider requires the following parameters:
+After selecting a Translation Provider, you can now configure translation parameters in the Endpoint configuration.
 
-| Parameter | Description |
-| --- | --- |
-| Translation Provider API Key | The API Key required to use the translation APIs |
-| Request Retries | How often to retry calling the translation provider if an error occurs |
-| Request Timeout | How long to wait for the provider to answer a request (in milliseconds) |
-| Sentence Cache Expiry Timeout | How long to keep translated sentences in the cache. The options are: 0 (no caching), 3600 (one hour) or 84600 (one day) | 
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent.
+3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
+4. Select an existing Endpoint or create a new one.
+5. In the Endpoint settings, go to the **Real-time Translation Settings** section. In the section, the provider you configured in the Translation Provider Settings configuration will be automatically selected.
+6. Configure the settings based on your provider:
 
-### Microsoft Translator optional parameters
-The Microsoft Translator has two extra optional parameters as follows:
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/translator_ms_optional_settings.png" width="100%" />
-  <figcaption>MS Translator optional Settings</figcaption>
-</figure>
-
-| Parameter | Description |
-| --- | --- |
-| Custom API base URL | Use this field if you would like to use a URL different from the default one (`https://api.cognitive.microsofttranslator.com/`). |
-| Custom Subscription Region | This is the location (or region) of your Azure MS Translator resource. You may need to use this field when making calls to this API, if you set a specific region in your Azure account. |
-
-## Configure Real Time Translation Settings
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/real_time_translation_settings_endpoint_config.png" width="100%" />
-  <figcaption>Real Time Translation Settings after provider selection</figcaption>
-</figure>
-
-After selecting a Translation Provider, we can now configure these parameters in the Endpoint configuration:
-
-| Parameter | Description |
-| --- | --- |
-| Enable Translation | Whether or not Translation is enabled for the Endpoint |
-| User Input Language | The language of the user inputs |
-| Flow Language | The language of the Flow outputs |
-| Set user input language on execution count | If the input language is set to **Auto-Detect**, it will be fixed to its current value on this execution count |
-| No-Translation Marker | Do not translate texts encapsulated in this marker (e.g. `I love the Cognigy.AI platform` will not translate `Cognigy.AI`)|
-| Always remove No-Translation Markers | Whether we remove No-Translation Markers, even if translation is not enabled |
-| Prevent payloads from being translated | If active, prevents all user inputs based on payloads to be translated |
+| Parameter                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                    | Providers                               |
+|--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
+| Enable Translation                         | Indicates whether translation is enabled for the Endpoint.                                                                                                                                                                                                                                                                                                                                                                     | Microsoft, Google, DeepL Translate Pro  |
+| User Input Language                        | Determines a language of the user inputs.                                                                                                                                                                                                                                                                                                                                                                                      | Microsoft, Google, DeepL Translate Pro  |
+| Flow Language                              | Determines a language of the Flow outputs.                                                                                                                                                                                                                                                                                                                                                                                     | Microsoft, Google , DeepL Translate Pro |
+| Set user input language on execution count | If the input language is set to **Auto-Detect**, it will be fixed to its current value on this execution count                                                                                                                                                                                                                                                                                                                 | Microsoft, Google , DeepL Translate Pro |
+| Glossary ID                                | Determines a glossary to use for the translation. To use this feature, you need to set the 'User Input Language' parameter, and the Glossary's language pair must match the Endpoint's language pair. This ensures more accurate and contextually relevant translations.                                                                                                                                                       | DeepL Translate Pro                     |
+| Formality                                  | Determines a level of formality in the translated text. The setting applies to specific target languages such as DE (German), FR (French), IT (Italian), ES (Spanish), NL (Dutch), PL (Polish), PT-BR, and PT-PT (Portuguese), JA (Japanese), and RU (Russian). By selecting the appropriate formality level, you can tailor the translation to suit your communication needs better, whether for formal or informal contexts. | DeepL Translate Pro                     |
+| No-Translation Marker                      | The text enclosed within this marker will not be translated. For example,  `I love the Cognigy.AI platform` will not translate `Cognigy.AI`.                                                                                                                                                                                                                                                                                   | Microsoft, Google , DeepL Translate Pro |
+| Always remove No-Translation Markers       | Determines whether to remove No-Translation Markers, even when translation is disabled                                                                                                                                                                                                                                                                                                                                         | Microsoft, Google , DeepL Translate Pro |
+| Prevent payloads from being translated     | Prevents the translation of user inputs based on payloads.                                                                                                                                                                                                                                                                                                                                                                     | Microsoft, Google , DeepL Translate Pro |

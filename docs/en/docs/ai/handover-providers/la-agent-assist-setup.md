@@ -14,7 +14,7 @@ To configure your Endpoint:
 1. Go to **Deploy > Endpoints**.
 2. Go to your **Webchat** Endpoint.
 3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
-4. Go to the **Agent Assist (beta)** section.
+4. Go to the **Agent Assist** section.
 5. In the **Agent Assist Flow** field, select the name of the Agent Assist Flow you've created in the previous step.
 6. Click **Save**.
 

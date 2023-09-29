@@ -7,10 +7,10 @@
 
 The Access Control interface offers a user management tool for organizational level administration. It acts as an **Access Control List (ACL)** and makes it possible to assign a specific role to users.
 
-Find the **Access Control** panel by:
+You will have access to the Access Control panel as follows:
 
-1. Clicking the *Profile Icon* in the top right corner of the interface
-2. Selecting *Access Control* from the drop-down menu
+1. Click the **Profile** icon in the top right corner of the interface.
+2. Select **Access Control** in the drop-down menu.
 
 ## Users
 
@@ -49,7 +49,7 @@ Administrators can use the *Create new User* button to add a User to the Organiz
 
 ### Assigned Agents
 
-Assign agents to a user by clicking the *+* button under *Assigned Projects* and selecting an agent. Once an agent has been assigned to a user, the agent will be visible on the user's home dashboard.
+Assign Agents to a user by clicking the **+** button under **Assigned Projects** and selecting an Agent. Once an Agent has been assigned to a user, the Agent will be visible on the user's home dashboard.
 
 ### Global Roles
 
@@ -72,7 +72,7 @@ The following **Global Roles** are available:
 !!! note "Control of Global Access Rights"
     The global roles assigned to a user will set the base access rights for every agent the user has access to. Project-level roles can be assigned via the [Members Panel]({{config.site_url}}ai/resources/manage/members/) to boost a user's rights to author selected elements of a specific agent.
 
-More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine-grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message/) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members/) panel of each agent.
+More specific **Access Rights** can be defined for individual features within Agents such as flows, lexicons, playbooks down to fine-grained flow properties such as [Basic]({{config.site_url}}ai/flow-nodes/message/message/) or [Advanced]({{config.site_url}}ai/flow-nodes/nlu/copy-slots-to-context/) flow nodes. These **Agent Level** access rights are complimentary to **Global Rights** and are assigned in the [Members]({{config.site_url}}ai/resources/manage/members/) panel of each Agent.
 
 ## Notifications
 

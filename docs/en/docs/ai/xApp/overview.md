@@ -4,11 +4,11 @@
  hidden: false 
 ---
 
-# xApps Overview (Beta)
+# xApps Overview
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51(Beta)-purple.svg)](../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-{! _includes/beta/new-feature-note-xApp.md !}
+{! _includes/ai/xApp/pricing.md !}
 
 Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
 
@@ -20,7 +20,7 @@ Alternatively, for more customization, you can create your own Node by implement
 
 ## Compatibility
 
-- Cognigy xApps is compatible with the browsers and channels listed [here](supported-browsers-and-channels.md).
+- Cognigy xApps are compatible with the browsers and channels listed [here](supported-browsers-and-channels.md).
 
 ## Concepts 
 

@@ -1,6 +1,6 @@
 ---
 name: Improvement proposal
-about: Let us know how we can improve our product documentation
+about: Let us know how we can improve the Cognigy documentation
 title: "[IMPORVEMENT] - Improvement title"
 labels: ''
 assignees: ''

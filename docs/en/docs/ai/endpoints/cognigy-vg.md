@@ -5,7 +5,7 @@
 ---
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
 
 ## Overview
 
@@ -66,21 +66,39 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
-## Generic Endpoint Settings
+## Call Events
 
-<div class="divider"></div>
+Allows activating call events for a Flow.
+Select a call event from the [Voice Gateway Events](../../voicegateway/references/events/overview.md) list.
+This event that will trigger the action.
+
+If you have configured the same call event in both the Endpoint and the [Lookup](../flow-nodes/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
+
+### Call Event Settings
+
+!!! note
+    As with all other Endpoint settings, you cannot test the Call Events settings in the Endpoint within the Interaction Panel.
+
+| Parameter    | Type     | Description                                                                                                                                                                                                                                                                                                                            | 
+|--------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Action       | Selector | Choose the action to be performed when the call event is detected: <br> - **Inject into current Flow** — inject the defined text and data payload into the current flow. <br> - **Execute Flow** — trigger a selected Flow when the call event is detected. <br> - **None** — no action will be taken when the call event is detected. |
+| Text Payload | String   | Enter the text that will be sent to your Flow. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                                             |
+| Data Payload | JSON     | Provide the data that will be sent into your Flow in JSON format. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                          | 
+| Execute Flow | Selector | Execute the selected Flow. Flow execution will stop afterward. Available only for the **Execute Flow** action.                                                                                                                                                                                                                         |
+
+## Generic Endpoint Settings
 
 Find out about the generic Endpoint settings available with this Endpoint on the following pages:
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/)
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/)
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+- [Endpoints Overview](overview.md)
+- [Data Protection & Analytics](data-protection-and-analytics.md)
+- [Transformer Functions](transformers/transformers.md)
+- [NLU Connectors](../resources/build/nlu-connectors.md)
+- [Session Management](session-management.md)
+- [Real Time Translation Settings](real-time-translation-settings.md)
 
 !!! note "Contact Center & Phone number linking"
     In order to route your Contact Center or Phone Number to your Voice Gateway Endpoint, get in touch with us via an email to support@cognigy.com.
 
 !!! warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint. You can find the AudioCodes documentation here.
+    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.

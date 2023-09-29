@@ -7,8 +7,6 @@
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
 
-## Description
-<div class="divider"></div>
 With Transcript Explorer you get an inspection application that enables you to evaluate messages 
 in detail to improve your Agent, your customer service, and the user experience of your customer.
 

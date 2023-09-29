@@ -1,52 +1,53 @@
 ---
- title: "Integrated Demo Page" 
- slug: "integrated-demo-page" 
- hidden: false 
+title: "Demo Webchat" 
+slug: "demo-webchat" 
+hidden: false 
 ---
-# Integrated Demo Page
 
-## Description
+# Demo Webchat
 
-<div class="divider"></div>
+_Cognigy Demo Webchat_ provides the opportunity to test webchat integrations with various providers, including handover providers, and also allows you to preview the appearance of your webchat before deploying it in a production environment. Demo Webchat is a valuable tool for testing and customization, ensuring that your Webchat functions according to your expectations and looks the way you want it to before launching it.
 
-For every Webchat Endpoint you create, there will be an integrated Demo Page for this Webchat available. To get there, open your Webchat Endpoint and click the "OPEN WEBCHAT" button to the top right.
+## Using Demo Webchat
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/93cd938-webchat.PNG" width="100%" />
-</figure>
+To start using Demo Webchat, follow these steps:
 
-The Webchat Demo Page will show a Website containing a Webchat pointing to the Webchat Endpoint you came from. The Webchat will look and behave as configured in the Webchat settings within the Endpoint.
+1. Open the Cognigy.AI interface.
+2. Go to **Build > Endpoints**.
+3. On the **Endpoints** page, select existing Webchat Endpoint or create a new one by clicking **+ New Endpoint**. 
+4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**.
+
+The Webchat Demo Page will display a website that contains a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
+
+### Manually Defining the User ID
+
+By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory, ensuring that you have the same `user id` the next time you use the Webchat.
+
+To test your Webchat as an end user, define the `user id` by adding `?user=<user-id>` to the Demo Webchat URL.
+For example, in the
+`https://webchat-trial.cognigy.ai/v2/7e466a9d76611d8decbd15f366f607345efc36805c4e7cff25789ec91ee66457?user=test` URL,
+the `user id` is set to `test`.
+
+To create a new session for the existing user, use `?user=<old-user-id>&sessionId=<new-user-id>`.
+
+To locate the `user id` of past conversations, `Navigate to 'Manage > Contact Profiles`.
+
+## Demo Webchat Settings
+
+These configuration options within the Webchat Endpoint will only have an effect on the integrated Demo Webchat page.
+
+| Parameter                     | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Demo Webchat           | Toggle | Enables or disables the integrated Demo Webchat for this Endpoint.                                                                                                                                                                                                                                                                                                                                                                         |
+| Enable Speech-to-Text         | Toggle | Toggle whether the Webchat should feature a microphone button.                                                                                                                                                                                                                                                                                                                                                                             |
+| Enable Text-to-Speech         | Toggle | Toggle whether the Webchat should read all bot messages aloud.                                                                                                                                                                                                                                                                                                                                                                             |
+| Background Image              | URL    | The image that will be displayed behind the Webchat.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Center Webchat                | Select | Determines where on the page to position the Webchat: center or bottom right.                                                                                                                                                                                                                                                                                                                                                              |
+| Use Custom Webchat Bundle URL | Toggle | This is an advanced feature. Some Endpoint configurations might not work as they might not be supported in your Webchat Bundle.                                                                                                                                                                                                                                                                                                            |
+| Custom Webchat Bundle URL     | URL    | This field available only when the **Use Custom Webchat Bundle URL** is acrivated. You can specify a new URL of Webchat if you want to use customized Webchat by modifying the Webchat source code. The URL should have the following format: `https://url.to/webchat.<package-name>.js`, where `url.to` is a storage for your plugin, for example, Amazon S3, and `package-name` is a name of your package, for example `webchat.legacy`. |
 
 
-!!! note "Manually defining the user ID"
-    When you load the Webchat, we will per default create a random user ID and store this in local storage, so that you have the same user next time you use the Webchat. However, sometimes it can be beneficial to manually specify a user ID. You can do this by adding ?user=<some id> to the Webchat URL.
+## More information
 
-## Demo Page Settings
-
-<div class="divider"></div>
-
-Some configuration options within the Webchat Endpoint are exclusive to the integrated Demo Page and will not have the same effect on Webchats that are embedded into your Website.
-
-### Center Webchat 
-The positioning of the Webchat will only be affected for Demo Pages.
-
-### Background Image
-The Background Image of the Website will only be changed when on a Demo Page.
-
-### "Enable Speech-to-Text" & "Enable Text-to-Speech"
-These settings will enable the individual features within the Webchat. On the Demo Page, this will also cause the Plugins to be loaded automatically. In case you want to use them on your own Website, you will have to load them manually.
-
-## Webchat Plugins
-
-<div class="divider"></div>
-
-For Cognigy-hosted Webchats (the ones directly accessible from the Endpoint configuration), there is an option to automatically load Webchat Plugins via a List defined in Cognigy UI.
-You can find the "Webchat Plugins" section at the bottom of your Webchat configuration. By clicking `+`, you can add a new Plugin URL.
-When the hosted Webchat page is being loaded, it will load the additional Plugin before starting the Webchat.
-
-!!! warning "Inserting wrong Plugin urls"
-    When you add a Plugin URL that loads an incorrect or corrupted Plugin file, the Webchat may not start up correctly.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/edeb8a6-plugins.PNG" width="100%" />
-</figure>
+- [Webchat Endpoint](deploy-webchat-endpoint.md)
+- [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/)

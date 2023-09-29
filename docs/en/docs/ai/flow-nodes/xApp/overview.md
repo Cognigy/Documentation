@@ -4,9 +4,9 @@
  hidden: false 
 ---
 
-# xApp Flow Nodes (Beta)
+# xApp Flow Nodes
 
-{! _includes/beta/new-feature-note-xApp.md !}
+{! _includes/ai/xApp/pricing.md !}
 
 The xApp Flow Nodes allow creating xApps, flexible micro-web applications for customer self-service. You can build the actual xApp Pages by yourself in various ways, for example, by providing HTML code or by specifying an Adaptive Card in JSON format.
 

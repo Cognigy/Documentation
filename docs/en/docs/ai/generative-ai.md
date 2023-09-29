@@ -1,15 +1,14 @@
 ---
-title: "Generative AI (Beta)"
-slug: "Generative AI (Beta)"
+title: "Generative AI"
+slug: "Generative AI"
 hidden: false
 ---
 
-# Generative AI (Beta)
+# Generative AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52(Beta)-purple.svg)](../release-notes/4.52.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
 
-!!! note
-    You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
+{! _includes/ai/terms-of-use.md !}
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 

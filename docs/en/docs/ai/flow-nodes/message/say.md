@@ -1,9 +1,11 @@
 ---
- title: "Say" 
- slug: "say" 
- hidden: false 
+title: "Say" 
+slug: "say" 
+hidden: false 
 ---
+
 # Say
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/say.png" width="80%" />
 </figure>
@@ -626,15 +628,13 @@ These configurations are also available in the following Nodes:
 
 ## 8x8
 
-The **8x8** tab provides two methods for creating and editing a message which is only for the **8x8** channel:
+The **8x8** tab provides three methods for creating and editing messages within the 8x8 channel.
 
-- **Text** for sending text message responses.
-- **Custom JSON** for defining more complex messages and templates.
-
-| Type        | Description                             |
-|-------------|-----------------------------------------|
-| Text        | A simple text message.                  |
-| Custom JSON | Can contain a valid 8x8 message object. |
+| Type          | Description                                                                                                                   |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------|
+| Text          | A simple text message.                                                                                                        |
+| Custom JSON   | Can contain a valid 8x8 message object.                                                                                       |
+| Adaptive Card | Can contain an adaptive card. You can find supported versions in [Content Conversion](../../endpoints/content-conversion.md). |
 
 ??? info "Custom JSON example"
     
@@ -653,6 +653,53 @@ The **8x8** tab provides two methods for creating and editing a message which is
                 "content": {}
             }
         ]
+    }
+    ```
+
+## Genesys
+
+The **Genesys** tab provides two methods to create and edit messages that are specific to the **Genesys** channel.
+
+| Type        | Description                                                                                    |
+|-------------|------------------------------------------------------------------------------------------------|
+| Text        | A simple text message.                                                                         |
+| Custom JSON | Can contain a valid Genesys Cloud message object. Defines more complex messages and templates. |
+
+??? info "Custom JSON example"
+
+    ```json
+    {
+      "replymessages": [],
+      "parameters": {
+        "command": "handover"
+      }
+    }
+    ```
+    
+    This message suggests that the virtual agent working on the Cognigy side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
+
+## Bandwidth
+
+The **Bandwidth** tab provides two methods to create and edit messages that are specific to the **Bandwidth** channel.
+
+| Type        | Description                                                                                 |
+|-------------|---------------------------------------------------------------------------------------------|
+| Text        | A simple text message.                                                                      |
+| Custom JSON | Can contain a valid Bandwidth message object.  Defines more complex messages and templates. |
+
+
+??? info "Custom JSON example"
+
+    ```json
+    {
+      "activities": [
+        {
+          "id": "123456789",
+          "timestamp": "1999-12-31T23:59:59.999Z",
+          "type": "message",
+          "text": "Hello. This is my message."
+        }
+      ]
     }
     ```
 

@@ -64,6 +64,13 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - release-notes/4.60.md
+  - 4.59:
+    - release-notes/4.59.md
+  - 4.58:
+    - release-notes/4.58.md
+  - 4.57:
+    - release-notes/4.57.md
   - 4.56:
     - release-notes/4.56.md
   - 4.55:
@@ -178,9 +185,7 @@ nav:
       - ai/flow-nodes/logic/wait-for-input.md
       - ai/flow-nodes/logic/sleep.md
       - ai/flow-nodes/logic/reset-state.md
-      - ai/flow-nodes/logic/disable-slot-fillers.md
       - ai/flow-nodes/logic/set-state.md
-      - ai/flow-nodes/logic/enable-slot-fillers.md
       - ai/flow-nodes/logic/add-to-context.md
       - ai/flow-nodes/logic/remove-from-context.md
       - ai/flow-nodes/logic/switch-locale.md
@@ -196,12 +201,15 @@ nav:
       - ai/flow-nodes/profile/blind-mode.md
     - Services:
       - ai/flow-nodes/services/services.md
-      - ai/flow-nodes/services/ms-sql.md
-      - ai/flow-nodes/services/mongo-db.md
       - ai/flow-nodes/services/http-request.md
+      - ai/flow-nodes/services/mongo-db.md
+      - ai/flow-nodes/services/ms-sql.md
+      - ai/flow-nodes/services/check-agent-availability.md
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
+      - ai/flow-nodes/nlu/disable-slot-fillers.md
+      - ai/flow-nodes/nlu/enable-slot-fillers.md
       - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
       - ai/flow-nodes/nlu/execute-cognigy-nlu.md
       - ai/flow-nodes/nlu/regex-slotfiller.md
@@ -252,9 +260,14 @@ nav:
         - ai/flow-nodes/audiocodes/agent-assist.md
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
+        - ai/flow-nodes/agent-assist/identity-assist.md
+        - ai/flow-nodes/agent-assist/next-action-assist.md
+        - ai/flow-nodes/agent-assist/sentiment-assist.md
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
+        - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
+        - ai/flow-nodes/agent-assist/transcript-assist.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -270,6 +283,8 @@ nav:
       - ai/flow-nodes/other-nodes/request-rating.md
       - ai/flow-nodes/other-nodes/llm-prompt.md
       - ai/flow-nodes/other-nodes/gpt-conversation.md
+      - ai/flow-nodes/other-nodes/knowledge-search.md
+      - ai/flow-nodes/other-nodes/search-extract-output.md
       - ai/flow-nodes/other-nodes/close-handover.md
       - ai/flow-nodes/other-nodes/set-handover-inactivity.md
   - NLU:
@@ -369,6 +384,8 @@ nav:
     - ai/endpoints/userlike.md
     - ai/endpoints/workplace-by-fb.md
     - ai/endpoints/8x8.md
+    - ai/endpoints/genesys.md
+    - ai/endpoints/bandwidth.md
   - Handover Providers:
     - ai/handover-providers/overview.md
     - Live Agent:
@@ -376,11 +393,12 @@ nav:
     - ai/handover-providers/chatwoot-handover.md
     - ai/handover-providers/ringcentralengage-handover.md
     - ai/handover-providers/salesforce-handover.md
-    - ai/handover-providers/genesys-cloud.md
+    - ai/handover-providers/genesys-cloud-guest-chat.md
+    - ai/handover-providers/genesys-cloud-open-messaging.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
 
-  - Agent Assist (Beta):
+  - Agent Assist:
       - agent-assist/overview.md
       - agent-assist/getting-started.md
       - agent-assist/architecture.md
@@ -400,8 +418,9 @@ nav:
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
+      - agent-assist/plug-and-play-widgets.md
 
-  - xApp (Beta):
+  - xApps:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
       - ai/xApp/getting-started.md
@@ -411,6 +430,9 @@ nav:
       - ai/xApp/tokens.md
       - ai/xApp/api.md
       - ai/xApp/tutorials.md
+  - Knowledge AI:
+      - ai/knowledge-ai/overview.md
+      - ai/knowledge-ai/ctxt.md
   - ai/generative-ai.md
   - ai/architecture.md
   
@@ -432,6 +454,7 @@ nav:
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
       - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
+      - ai/installation/migration/from-nlu-v1-to-v2-migration.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
@@ -474,16 +497,15 @@ nav:
   - Overview:
     - live-agent/overview.md
   - Getting Started:
-    - live-agent/getting-started/live-agent-getting-started.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-introduction.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-org.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-inbox.md
+    - live-agent/getting-started/overview.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-org.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-inbox.md
     - Handover Setup:
-        - ai/handover-providers/live-agent-setup/live-agent-setup-handover.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint.md
-        - ai/handover-providers/live-agent-setup/live-agent-setup-handover-flow.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-agents.md
-    - ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md
+        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-agents.md
+    - live-agent/getting-started/live-agent-setup/live-agent-setup-additional-inbox.md
   - Installation & Configuration:
     - Browser Requirements:
       - live-agent/installation/browser-requirements.md
@@ -511,8 +533,12 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
+    - Agent Queue:
+        - live-agent/conversation/conversation-queue.md
     - Routing:
-        - live-agent/conversation/conversation-routing.md
+        - live-agent/conversation/conversation-routing/overview.md
+        - live-agent/conversation/conversation-routing/manual-mode.md
+        - live-agent/conversation/conversation-routing/automatic-mode.md
     - Assist Bot:
         - live-agent/conversation/assist-bot.md
     - LA Agent Assist:
@@ -527,6 +553,7 @@ nav:
       - live-agent/settings/teams.md
       - live-agent/settings/inboxes.md
       - live-agent/settings/labels.md
+      - live-agent/settings/skills.md
       - live-agent/settings/automation-rules.md
       - live-agent/settings/canned-responses.md
       - live-agent/settings/attachments.md
@@ -572,17 +599,25 @@ nav:
       - voicegateway/webapp/speech-services.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
+    - Outbound Call Routing:
+      - voicegateway/webapp/outbound-call-routing.md
   - References:
     - Voice Gateway Events:
         - voicegateway/references/events/overview.md
-        - voicegateway/references/events/RECOGNIZED_SPEECH.md
-        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
         - voicegateway/references/events/CALL_CREATED.md
-        - voicegateway/references/events/CALL_RECONNECTED.md
         - voicegateway/references/events/CALL_COMPLETED.md
         - voicegateway/references/events/CALL_FAILED.md
+        - voicegateway/references/events/CALL_RECONNECTED.md
+        - voicegateway/references/events/RECOGNIZED_DTMF.md
+        - voicegateway/references/events/RECOGNIZED_SPEECH.md
+        - voicegateway/references/events/TRANSFER_DIAL_ERROR.md
+        - voicegateway/references/events/TRANSFER_DIAL_SUCCESS.md
+        - voicegateway/references/events/TRANSFER_REFER_ERROR.md
+        - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
+        - voicegateway/references/events/USER_BUSY.md
         - voicegateway/references/events/USER_INPUT_TIMEOUT.md
-        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
+        - voicegateway/references/events/NO_ANSWER.md
     - TTS and STT Vendors:
         - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
@@ -672,7 +707,7 @@ extra:
     name: en
   analytics:
    provider: google
-   property: UA-101284175-2  
+   property: G-DQ0NQDZTS1
    feedback:      
       title: Was this page helpful?
       ratings:

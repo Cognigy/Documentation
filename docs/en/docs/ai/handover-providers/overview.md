@@ -24,7 +24,7 @@ The following Handover Providers allow integrations with third-party products:
 - [Chatwoot](chatwoot-handover.md)
 - [RingCentral Engage](ringcentralengage-handover.md)
 - [Salesforce](salesforce-handover.md) 
-- [Genesys Cloud (Beta)](genesys-cloud.md) 
+- [Genesys Cloud (Beta)](genesys-cloud-guest-chat.md) 
 - [8x8](8x8.md)
 
 ## More information

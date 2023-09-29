@@ -75,37 +75,50 @@ Click on the drop-box within the Assigned Team menu and select the Team to which
   <figcaption>Assign Teams</figcaption>
 </figure>
 
+### Assign Priority
+<div class="divider"></div>
+
+To assign a priority to a conversation within Live Agent, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to assign a priority.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Priority** section, click **Select priority**.
+7. Scroll or type to search for a priority level, then click the intended level. 
+
+The priority will be assigned to the conversation. The matching priority level's icon will now be visable for the conversation within the Conversations column.
 
 ### Assign Labels
 <div class="divider"></div>
 
-Click on Add Labels within the Conversation Labels menu and select the category to which this Conversation belongs.
+To assign a label to a conversation within Live Agent, do the following:
 
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. From the **Conversations** list, select your conversation where you want to add a label.
+5. On the right of the conversation chat, go to **Details > Conversation Actions**.
+6. Under the **Conversation Labels** section, click **Add Labels**.
+7. Scroll or type to search for a label, then click a label. You can add multiple labels at once. 
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-6.png" width="100%" alt="Live Agent Assign Labels" />
-  <figcaption>Assign Labels</figcaption>
-</figure>
-
-You can see in the screenshot below that all actions performed by you, such as assigning a Conversation to an Agent, are seen in the chat window within the Agent Dashboard.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-7.png" width="100%" alt="Live Agent Conversations Actions" />
-  <figcaption>Conversations Actions</figcaption>
-</figure>
+The label will be added to the conversation.
 
 ### Send a Response 
 <div class="divider"></div>
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
 
 To respond to a user in the conversation chat, type your message in the **Reply** section.
 
 For quick reply, you can use canned responses, variables, or a combination of both.
 
-If you need to add a new line in your response, press ++shift+enter++.
-When you're ready to send the message, click **Send Button** or press ++enter++.
+By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button.
+The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-8.png" width="100%" alt="Live Agent Conversations Reply" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="80%" alt="Live Agent Conversations Reply" />
   <figcaption>Reply to a Message</figcaption>
 </figure>
 
@@ -207,7 +220,7 @@ Below is a list describing Conversation actions an Agent can take by clicking th
 | <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | This button allows a human agent to send hyperlinked text to the customer.          |
 
 
-### Agent Assist (Beta)
+### Agent Assist
 <div class="divider"></div>
 
 When Agent Assist is enabled, 
@@ -224,28 +237,30 @@ If forwarding was enabled for Assist messages, the Agent can click the blue arro
     </figure>
 
 
-### How to request file upload
-<div class="divider"></div>
+### Request File Upload
 
-!!! note
-    Supported File Types: jpeg, jpg, png, docx, wav, ogg, pdf
-    
-    Maximum File Size: 40MB
+By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
 
-There is an option to enable bots to request files from users. On the bottom of the Live Agent reply box, you can click on the "Request file" icon.
+File requirements:
 
+- Supported File Types are jpeg, jpg, png, docx, wav, ogg, pdf.
+- Maximum file size is 40MB.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
-  <figcaption>Request file upload</figcaption>
-</figure>
+To request a file, follow these steps:
 
-Then you need to confirm that you want to send it to the customer to enable the file upload.
+1. Click the **Request file** icon at the bottom of the Live Agent reply box. 
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
-  <figcaption>Request file upload confirm</figcaption>
-</figure>
+    <figure>
+    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
+      <figcaption>Request file upload</figcaption>
+    </figure>
+
+2. Confirm that you want to send it to the customer to enable the file upload.
+
+    <figure>
+    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
+      <figcaption>Request file upload confirm</figcaption>
+    </figure>
 
 A message should appear in the chat indicating that the file has been requested.
 
@@ -272,8 +287,6 @@ After uploading the file, it should be reflected in the Webchat and the Live Age
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
   <figcaption>Request file upload completed in Live Agent</figcaption>
 </figure>
-
-More details on the customer side can be found under [File Upload Plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload)
 
 ### Private Chat with Agents
 <div class="divider"></div>
