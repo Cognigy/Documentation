@@ -1,8 +1,9 @@
 ---
- title: "Cognigy Voice Gateway" 
- slug: "cognigy-vg" 
- hidden: false 
+title: "Cognigy Voice Gateway" 
+slug: "cognigy-vg" 
+hidden: false 
 ---
+
 # Cognigy Voice Gateway
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
@@ -89,6 +90,10 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 ### Call Failover
 
 The Call Failover section is intended to handle runtime errors that occur on the Cognigy.AI side during the execution of a Flow.
+
+!!! info "Feature availability"
+    - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
+    - If you use an On-Premise Cognigy installation, activate this feature by adding `FEATURE_ENABLE_ENDPOINT_CALL_FAILOVER` in `values.yaml`.
 
 | Parameter                   | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Transfer Type |
 |-----------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|

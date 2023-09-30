@@ -48,12 +48,6 @@ To create a Live Agent Flow, follow these steps:
 5. In the left-side menu of the Live Agent interface, select **Conversations**.
    On the **All** tab, the conversation that you started should appear in the conversation list.
 6. Open the conversation.
-    
-    <figure>
-       <img src="{{config.site_url}}live-agent/images/LA-inbox-example.png" width="100%" alt="Live Agent Conversation Screen">
-       <figcaption>Live Agent Conversation Screen</figcaption>
-    </figure>
-
 7. In the **Reply** section, send a message to the user as a human agent.
 
     <figure>
