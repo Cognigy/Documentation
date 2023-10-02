@@ -12,7 +12,7 @@ After [setting up Live Agent for your organization](live-agent-setup-org.md), co
 
 To create a new Inbox for the Agent, follow these steps:
 
-1. In the Cognigy.AI interface, open an existing [Agent](../../resources/agents/agents.md).
+1. In the Cognigy.AI interface, open an existing [Agent](../../../ai/resources/agents/agents.md).
 2. In the left-side menu of the Agent, click **Manage > Settings**.
 3. Scroll down and find **Live Agent Settings**.
 4. Click **Create Project Inbox**.
