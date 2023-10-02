@@ -87,7 +87,7 @@ If you have configured the same call event in both the Endpoint and the [Lookup]
 | Data Payload | JSON     | Provide the data that will be sent into your Flow in JSON format. Available only for the **Inject into current Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | 
 | Execute Flow | Selector | Execute the selected Flow. Flow execution will stop afterward. Available only for the **Execute Flow** action.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-### Call Failover
+## Call Failover
 
 The Call Failover section is intended to handle runtime errors that occur on the Cognigy.AI side during the execution of a Flow.
 
