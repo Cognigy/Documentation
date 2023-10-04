@@ -6,6 +6,8 @@ hidden: false
 
 # TRANSFER_REFER_ERROR
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.61-blue.svg)](../../../release-notes/4.61.md)
+
 This event indicates that a call transfer attempt using the `Refer` method resulted in an error or failure.
 
 The `Refer` method involves passing the responsibility for handling the call to another destination while maintaining the media path. 

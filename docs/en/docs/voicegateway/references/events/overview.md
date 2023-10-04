@@ -6,7 +6,7 @@ hidden: false
 
 # Voice Gateway Events
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../release-notes/4.61.md)
 
 During the call, the following voice events are recorded in the payload:
 
