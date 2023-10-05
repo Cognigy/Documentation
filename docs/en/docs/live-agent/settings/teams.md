@@ -6,47 +6,60 @@
 
 # Teams
 
-Teams let you organize your Agents into groups based on their responsibilities.
-A user can be part of multiple Teams. You can assign conversations to a Team when you are working collaboratively.
+Teams are organized groups of human Agents' based on their responsibilities. A user can be part of multiple teams. You can assign conversations to a team when you are working collaboratively.
 
-To access the Teams, navigate to the left-side menu of Live Agent and click **Settings**, then select **Teams**.
+## Create a Team
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-teams-home.png" width="100%" alt="Live Agent Teams Home Screen" />
-  <figcaption>Teams</figcaption>
-</figure>
-The screen below displays the option to create teams. Create teams and assign tickets/conversations accordingly, ensuring that assigned agents only need to work within their respective teams.
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-teams-create-new-team.png" width="100%" alt="Live Agent Add Teams Details" />
-  <figcaption>Add Teams Details</figcaption>
-</figure>
+To create a team within Live Agent, do the following:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > Teams**.
+3. In the upper-right corner, click **Create new team**.
+4. In the **Create a new team** window, fill in the following fields:
+    - **Team name** — enter a meaningful name of the team, that associates with its responsibilities, for example, 'Team Customer Support'.
+    - **Team Description** — enter a short description about this team. 
+5. If you want to allow **auto assign** for the team you create, you can leave the checkbox activated, otherwise untick the checkbox by a mouseclick. If this option is not activated, the conversations remain unassigned and you need to assign them manually. More information see [Assign a Team to a conversation](#assign-a-team-to-a-conversation).
+6. Click **Create team**.
+7. On the **Add agents to team** page add available Agents you want to your newly created team. This lets you collaborate as a team on conversations, and get notified on new events in the same conversation.
+If you want, you can also optionally select all available agents at once for the new team by checking the box next to **AGENT**.
+8. Click **Add agents** to confirm your selection.
+9. Click **Finish**. The new team will be added and displayed on the **Teams** page.
 
 
-| Field Name       | Value                                                                          | Remarks                                                             |
-|------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Team Name        | Assign a name for the Team                                                     | For example, Support                                                |
-| Team Description | Give a short description about the Team                                        | For example,: Team to resolve issues related to the product         |
-| Checkbox         | Check this box if you would like to auto assign the Conversations in this Team | If this is not checked, the Conversation will remain as unassigned. |
 
-- Click **Create Team**. This action will open the screen below, where you can add agents to the team. All added agents will be notified when a conversation is assigned to their team.
+## Edit a Team
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-teams-add-agents-to-team.png" width="100%" alt="Add Agents to Teams Screen" />
-  <figcaption>Add Agents to Teams</figcaption>
-</figure>
+To edit a team within Live Agent to a conversation, do the following:
 
-Click on **Add Agents** after checking each checkbox for all Agents needed for this Team. Only these Agents will be able to see these Teams on their screens.
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Teams**.
+4. On the **Teams** page, to the right of the team you want to change, click **Edit**. 
+5. In the **Edit your team** window, update the fields as needed.
+6. Click **Update team**.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-teams-team-ready.png" width="100%" alt="Teams Create Finish Screen" />
-  <figcaption>Finish</figcaption>
-</figure>
+The team fields and settings will be updated.
 
-Click on **Finish**.
+## Delete a Team
 
-The Team has been created. You can always edit or delete the Team as per your need.
+To delete a team within Live Agent, do the following:
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-teams-edit-delete-team.png" width="100%" alt="Teams Settings Screen" />
-  <figcaption>Teams Settings</figcaption>
-</figure>
+1. Go to Live Agent.
+2. On the left side of the screen, select **Settings**.
+3. In the settings column, select **Teams**.
+4. On the **Teams** page, to the right of the team you want to delete, click **Delete**.
+5. You are prompted to enter the team name you want to delete, e.g. 'Team Customer Support', then click **Delete Team Customer Support** to confirm.
+
+Deleting the team will remove the team assignment from the conversations assigned to this team.
+
+## Assign a Team to a conversation
+
+To assign a team to a conversation within Live Agent, you can use a **manual** and an **automatic** routing mode.
+All added Agents will be notified when a conversation is assigned to their team.
+Go to [Conversation Routing overview](./../conversation/conversation-routing/overview.md) describing routing mode options and how to set a conversation limit per Agent.
+
+
+See also 
+- [Manual assignment](./../conversation/conversation-routing/manual-mode.md#manual-assignment)
+- [Automatic assignment](./../conversation/conversation-routing/automatic-mode.md#automatic-assignment)
+- [Conversations Workflow](./../conversation/conversation-workflow.md#assign-agent)
