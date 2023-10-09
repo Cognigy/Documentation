@@ -10,3 +10,4 @@ ignore_macros: true
 - [MongoDB: Single to Multi Replica](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md)
 - [Kustomize to Helm](kustomize-to-helm-migration.md)
 - [Amazon EFC Provisioner to EFC CSI](efs-provisioner-to-efs-csi-migration.md)
+- [Cognigy NLU: from V1 to V2](from-nlu-v1-to-v2-migration.md)

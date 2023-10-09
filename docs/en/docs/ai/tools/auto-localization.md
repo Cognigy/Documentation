@@ -1,35 +1,16 @@
 ---
- title: "Auto-translation" 
- slug: "auto-localization" 
- hidden: false 
+title: "Auto-translation" 
+slug: "auto-localization" 
+hidden: false 
 ---
-# Auto-translation
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+# Automatic Translation
 
-## Description
+Cognigy has integrated _automatic translation_ capabilities
+to streamline the process of customizing Flows and Intents for various locales.
+This feature is helpful for users who need multilingual support without the need for manual translations.
 
-<div class="divider"></div>
-
-
-Conversational AI users primarily focus on a primary and secondary locale due to the following reasons: 
-
-1. Manual effort and high setup cost
-2. Slow roll-out and reduced agility
-3. Increased complexity
-
-As of Cognigy.AI 4.10.0 Cognigy provides a translation solution to avoid that bottleneck of less service capabilities.
-
-
-Multilingualism is a first-level concept in Cognigy.AI along with service automation in global setups.
-
-Cognigy works with an NLU system that supports over 100 [**languages**]({{config.site_url}}ai/nlu/language-support/) and uses a [**universal model**]({{config.site_url}}ai/nlu/language-support/#universal-language) to support the other languages.
-
-Cognigy supports [localization]({{config.site_url}}ai/resources/manage/localization/) of Flows, Intent models with fallbacks, partial translation, and locale variations.
-
-With Cognigy.AI 4.10.0 we have integrated machine translation capabilities into the Cognigy.AI platform.
-
-Cognigy.AI supports the following machine translation providers:
+Cognigy.AI is compatible with the following machine translation providers:
 
 - Microsoft Translator
     - Microsoft Azure Cognitive Services Translator[^*]
@@ -38,177 +19,78 @@ Cognigy.AI supports the following machine translation providers:
 
 [^*]: To use **Azure Cognitive Services Translator** you must select Microsoft Translator in Settings > Translation Settings
 
-These providers can be selected in the "Agent Settings" and provide the following advantages:
+These providers offer several valuable benefits:
 
-- Translation language is free of choice
-- Translation can be supervised or on autopilot
-- Translation is Voice-ready-all modalities are supported 
+- **Freedom of Language Choice**. You have the flexibility to choose your preferred translation language.
+- **Supervised or Automatic Translation**. Translation can be performed manually under your supervision or set to work automatically, depending on your needs.
+- **Voice-Ready Translation**. Our translation capabilities are equipped to handle all modes, making them voice-ready and adaptable to various communication methods.
 
-!!! tip "Advanced Translation"
-    **In contrast to cost-intensive manual translation, Cognigy multilingual language translation feature removes the bottleneck of restriction on a primary and secondary locale as we can find in many business solutions.**
+## Add a Machine Translation Provider
 
-### Use Case for Translation
+{! _includes/ai/settings/add-machine-translation-provider.md !}
 
-- Localize existing content (works for contents, but it also works for machine learning models)
- 
-  - Manual Translation
-  - Machine Translation
+## Add a Locale
 
-## Localization
+{! _includes/ai/localization/add-locales.md !}
 
-<div class="divider"></div>
+## Machine Translation for Flow Localization
 
-Cognigy Virtual Agent is the default in English. When required, you can localize your Flow language.
+In a Flow, you can change languages, localize Flow Nodes and Intents.
 
-To have another locale Cognigy.AI provides [localization]({{config.site_url}}ai/resources/manage/localization/) to create a localized Virtual Agent. 
+{! _includes/ai/localization/switch-a-locale.md !}
 
-The localization option you can find in the sidebar when clicking the "Manage" item.
+### Machine Translation for Node Localization
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/cb4ab14-Create_new_locale_2.svg" width="100%" />
-  <figcaption>Create new Locale</figcaption>
-</figure>
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
 
-- ["+ Create new Locale"]({{config.site_url}}ai/resources/manage/localization/#adding-a-locale-to-a-node/), select a new language and a fallback language (US-eng).
+Localized Nodes are in color, while non-localized ones are grayed out. Within the Flow, you can set up multiple localizations, with fallback layers for locales without content.
 
-When going back to the Flow you can now have the option to switch the locale and to localize the Flow Nodes.
+You can configure the machine translation settings for all types of text output Nodes, including Say, Question, and other Node types.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/2923252-Switch_Locale_example_2_350.svg" width="100%" />
-  <figcaption>Switch Locale</figcaption>
-</figure>
+To localize a Node using machine translation, follow these steps:
 
-You can see which Nodes have already been localized (localized Nodes: colored; non localized are black and white-colored.
+1. Open now your Flow in which you want to localize Nodes. 
+2. Select the locale with untranslated Nodes. 
+3. Click a Node and select **Add Localization**. 
+4. Select **Add Translated Localization**. 
+5. Define the source locale for your translation by selecting a language from the **Locale to Translate from** list. 
+6. Define the target language for translation by selecting a language from the **Language to Translate to** list. 
+7. Click **Confirm**. 
 
-The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a locale that has not any content configured, will fall back to another locale that has.
+The Node will be translated automatically.
+In the Node editor, make sure to review the translated fields,
+paying attention to [Tokens](../resources/manage/tokens.md) and [Cognigy.Script](../tools/cognigy-script.md), which should remain untranslated.
 
-**You need to localize the Node settings manually using the Node editor.**
+### Machine Translation for Intent Localization
 
-!!! note "Node Localization"
-    To localize Nodes in your Flow see details here: [Localization]({{config.site_url}}ai/resources/manage/localization/)
+To localize an Intent using machine translation, follow these steps:
 
-## Machine Translation of Nodes and Intents
+1. In the upper-right corner of the Flow editor, select **NLU**.
+2. On the **Intents** tab, select an Intent that you want to translate.
+3. On the **Intent** page, click **Add Localization > Add Translated Localization**.
+4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation. 
+5. From the **Language to Translate from** list, select the language of the content you are translating.
+6. From the **Language to Translate to** list, select the language into which you want the content to be translated. 
+7. Click **Confirm**.
 
-<div class="divider"></div>
+Intent example sentences will be translated automatically.
 
+### Machine Translation for Multi-Intent Localization
 
-Since Release 4.10.0 Cognigy.AI provides machine translation of Nodes and Intents to perform the localization of your Virtual Agent even more efficiently than with manual localization. 
+To localize all Intents within your Flow using machine translation, follow these steps:
 
-In order to enable machine translation, you need to configure the **Translation Settings** of your Virtual Agent.
+1. In the upper-right corner of the Flow editor, select **NLU**.
+2. On the **Intents** tab, on the right side of the **+ Create Intent** button, click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Add Localisations to all Intents**.
+3. In the **Add Localizations to all Intents** window, select **Auto-Translate from another locale**.
+4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation.
+5. From the **Language to Translate from** list, select the language of the content you are translating.
+6. From the **Language to Translate to** list, select the language into which you want the content to be translated.
+7. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing Intents within the current Flow locale.
+8. Click **Confirm**.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/Agent_Settings_Translation.png" width="100%" />
-  <figcaption>Agent Settings</figcaption>
-</figure>
+This process ensures that all Intents are automatically translated.
 
-- Open the "Manage" - "Settings" menu using the Cognigy.AI sidebar.
+## More information
 
-- Go to section **Translation Settings**.
-
-- Select a Translation Provider (for example Microsoft Translator).
-
-- Enter the API key for the selected provider. The required API keys of available translation providers you can find here: [API keys Translation Provider]({{config.site_url}}ai/resources/manage/localization/#translation-settings/).
-   
-As soon as you have configured a translation provider you will get extra configuration options in the "Agent Settings" section:
-
-- Define **ReQuest Retries**.
-
-- Define **Request Timeout**.
-
-- Define **Sentence Cache Expiry Timeout**.
-
-- Optionally define **Custom API Base URL**.
-
-!!! note "Translation Settings"
-    **Details on how to configure the translation settings can be found here: [Translation Settings]({{config.site_url}}ai/resources/manage/localization/#translation-settings)** 
-
-# Localization of Nodes
-
-
-- Open now your Flow in which you want to localize Nodes.
-
-- Select the Locale with not translated Nodes. 
-
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/a309eba-Localization_4.svg" width="100%" />
-  <figcaption>Select locale</figcaption>
-</figure>
-
-
-- Click on a Node and select **Add Localization**.
-- Select **Add Translated Localization**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/45feaed-Add_Localization.svg" width="100%" />
-  <figcaption>"Add Localization" menu for Nodes</figcaption>
-</figure>
-
-- Select  **Locale to Translate from** (define the Locale that you want to base your translation on).
-- Define **Language to Translate from**.
-- Define **Language to Translate to**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/b2329c8-Add_Localization_2.svg" width="100%" />
-  <figcaption>Translation configuration example for Nodes</figcaption>
-</figure>
-
-- When you have finished the configuration settings, confirm them at last. The Node will be fully translated automatically. 
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/7e9799b-Localization_11.svg" width="100%" />
-  <figcaption>Flow Nodes automatically translated</figcaption>
-</figure>
-
-!!! note
-    **You can configure the machine translation settings for all types of "Say Nodes" and "Question Nodes" in the same way.**
-    **You can localize Intents as well using machine translation and all the example sentences will be translated automatically.**
-
-## Localization of Intents
-
-
-When using machine translation for **Intents** go to the "[Intent configuration]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/)" and configure the **Translation Settings** in the same way as for Flow Nodes. 
-
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/ffbffdb-Add_localization_Intents_2.svg" width="100%" />
-  <figcaption>Intent example</figcaption>
-</figure>
-
-- Select in the "Localization" drop-down menu the language you intend to translate (for example from en-US to ger-DE).
-
-- Click on the **Add Localization** button.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/4d46e0f-Add_localization_Intents_4.svg" width="100%" />
-  <figcaption>Add Localization options</figcaption>
-</figure>
-
-- Click on **Add Translated Location** to configure translation details.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/b2cb9ea-Add_Localization_2.svg" width="100%" />
-  <figcaption>Translation configuration example for Intents</figcaption>
-</figure>
-
-- Select **Language to Translate from** and **Language to Translate to**, then **Confirm** the settings.
-
-**All Intent example sentences will now be translated automatically.**
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/8b754ee-Add_localization_Intents_9.svg" width="100%" />
-  <figcaption>Auto-translated Intent</figcaption>
-</figure>
-
-## Bulk-Localization of Intents
-
-For Virtual Agents using multiple Intents Cognigy.AI provides the **bulk-localization** feature for Intents. This way, translation will be even more efficient.
-
-Use the secondary actions menu item (three dots) and select **Auto-Translate from another locale** to configure translation details, as described for a single Intent, and then confirm.
-
-**All Intents will now be translated automatically.** 
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/c54cf81-Add_Localisations_to_all_Intents_2.svg" width="100%" />
-  <figcaption>Bulk-localization settings</figcaption>
-</figure>
+- [Localization](../resources/manage/localization.md)
+- [Switch Locale Node](../flow-nodes/logic/switch-locale.md)
