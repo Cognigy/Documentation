@@ -1,23 +1,19 @@
 ---
- title: "Dashboard Overview" 
- slug: "dashboard-overview" 
- hidden: false 
+title: "Dashboard Overview" 
+slug: "dashboard-overview" 
+hidden: false 
 ---
+
 # Dashboard Overview
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-## Overview Dashboard
+The Overview dasboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
 
-The dashboard overview page contains various metrics displayed as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts.
-
-!!! note
-    When hovering any chart or metrics field, rating details will be displayed in a tooltip.
-
-The general customers interaction data of your Agent is visualized in the following charts:
+The summary of key metrics is represented in the following charts:
 
 - [Indicators](#indicators) 
-- [Ring chart](#ring-chart)
+- [Ring charts](#ring-chart)
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
@@ -31,17 +27,19 @@ Charts display data based on the global filter settings.
 ## Indicators
 
 ### Active Contacts 
+
 Indicates the total number of currently active user sessions in the last 15 minutes. This widget updates in a regular interval of 30 seconds.
 
 ### Sessions Count
 
-Indicates the total number of sessions
+Indicates the total number of sessions.
 
 ### Understood Messages
 
 Indicates the percentage of understood messages occurred during conversations.
 
 ### Positive Ratings
+
 Indicates the total number of Positive Ratings given as feedback by the end user.
 
 Source table:
@@ -60,14 +58,11 @@ Source table:
 
 Result: `3`
 
-
-## Ring chart
-Indicates the total number of conversations displayed in a pie chart based on the channels used
+## Ring charts
 
 ### Sessions by Channel
 
-The chart indicates the total number of conversations displayed in a pie chart based on the channels used. The figure below displays the conversations of four channels.
-
+Indicates the total number of conversations displayed in a pie chart based on the channels used. 
 
 Source table:
 
@@ -91,8 +86,7 @@ Result:
 
 ### Top Intents
 
-Indicates the top-rated number of used intents displayed in a horizontal bar chart.
-The chart displays the top-rated number of intents used, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
+Indicates the top-rated number of used intents, displayed in a horizontal bar chart. The chart showcases the top-rated number of intents used, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
 
 Source table:
 
@@ -114,7 +108,8 @@ Result:
 </figure>
 
 ### Users by Locale
-A stacked bar chart that displays time-related recognized conversations depending on different locales given in percentages.
+
+Indicates time-related recognized conversations depending on different locales given in percentages.
 
 Source table:
 
@@ -135,11 +130,13 @@ Result:
   <img class="image-center" src="{{config.site_url}}insights/images/users_by_locale.png" width="100%" />
 </figure>
 
-### Top Goals (relates to Step Explorer)
+### Top Goals
 
-A horizontal bar chart displaying the top-rated number of goals reached.
+Indicates the top-rated number of goals reached.
 
-Clicking on the three-dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select **Go to Step Explorer**,
+which leads you to the Step Explorer in Insights.
 
 Source table:
 
@@ -160,6 +157,7 @@ Result:
 </figure>
 
 ### Top Slots
+
 Similar to Top Goals and Top Intents, this chart displays top-rated number of slots displayed in a bar chart.
 
 Source table:
@@ -170,21 +168,23 @@ Source table:
 | DATE        | 2           |
 | NUMBER      | 1           |
 ```
+
 Result:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/top_slots.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/top_slots.png" width="80%" />
 </figure>
 
-### Understood / Misunderstood Messages (relates to Intent Trainer)
+### Understood / Misunderstood Messages
 
-This is a stacked bar char that shows time-related number of **understood messages** and **misunderstood messages** in percentages displayed in a bar chart.
-The calculation is similar to the Widget displayed at the top with **Understood Messages**, but this shows both the percentage of understood and misunderstood.
+Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
 
 A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/). 
 A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) or sent during an active handover without configuring [Agent Assist](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow. 
 
-Clicking on the three-dots menu item, you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Agent.
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select the **Go to Intent Trainer**,
+which will take you to the application in Cognigy.AI for improving your Flow.
 
 Source table:
 
@@ -204,7 +204,6 @@ Result:
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/understood_messages.png" width="100%" />
 </figure>
-
 
 ### Number of Inputs
 
@@ -234,12 +233,12 @@ Result:
 
 ### Sessions
 
-The line chart displays the number of sessions on a timescale
+Indicates the number of sessions on a timescale
 
 Source table:
 
 ```txt
-| Date       | Sessions       | 
+| Date       | Sessions     | 
 | -----------| ------------ |
 | 2023-08-27 | 0            | 
 | 2023-08-28 | 1            |
@@ -249,6 +248,7 @@ Source table:
 | 2023-09-01 | 1            | 
 | 2023-09-02 | 0            | 
 ```
+
 Result: 
 
 <figure>
