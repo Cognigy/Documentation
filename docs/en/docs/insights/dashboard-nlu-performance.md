@@ -1,29 +1,24 @@
 ---
- title: "NLU Performance" 
- slug: "dashboard-nlu-performance" 
- hidden: false 
+title: "NLU Performance" 
+slug: "dashboard-nlu-performance" 
+hidden: false 
 ---
-# NLU Performance
 
+# NLU Performance
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-## NLU Performance Dashboard
+The data presented on this dashboard is related to the NLU (Natural Language Understanding).
 
-The data presented on this dashboard is related to the **NLU-Natural Language Understanding**.
+More information regarding NLU and Intents you can find in [NLU Overview](../ai/nlu/nlu-overview/overview.md).
 
-More information regarding **NLU** and **Intents** you will find here: [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/).
-
-!!! note
-    When hovering any chart or metrics field, rating details will be displayed in a tooltip.
-
-The **NLU Performance** data of your Agent is visualized in the following charts:
+The NLU Performance data of your Agent is visualized in the following charts:
 
 - [Indicators](#indicators) 
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
-Charts display data based on the [global filter]({{config.site_url}}insights/global-filter/) settings. 
+Charts display data based on the [global filter](global-filter.md) settings. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_dashboard.png" width="100%" />
@@ -43,33 +38,32 @@ Indicates the percentage of understood messages occurred during conversations. A
 A line chart displaying the average execution time on a timescale.
 
 Formula:
+ 
+Average Execution Time = Sum of Execution Times / Total number of inputs
 
-```
-                             Sum of Execution Times
-Average Execution Time = --------------------------------
-                             Total number of inputs
-```
 A calculation example with data visualization in a line chart you can find in section **Average Execution Time**. 
 
 ### Avg Intent Score
+
 The Indicator value shows the average intent score depending on the timeframe setting. The value indicates the quality of your Agent, how "good" Intents were found in conversations.
 For more information, see [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/).        
 
 ### Max Intent Score
+
 Indicates how many Intents were matched with 100% efficacy.
 
 ## Bar charts
 
 ### Understood / Misunderstood Messages
 
-This is a stacked bar char that shows time-related number of **Understood Messages** and **Misunderstood Messages** in percentages displayed in a bar chart.
-The calculation result of **Understood Messages** for the selected time frame is displayed by the **Understood messages** Indicator at the top of the NLU Performance dashboard. 
+Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
 
-A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node]({{config.site_url}}ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/). 
-A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) or sent during an active handover without configuring [Agent Assist]({{config.site_url}}ai/handover-providers/la-agent-assist-overview/) Flow. 
+A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/).
+A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) or sent during an active handover without configuring [Agent Assist](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow.
 
-Clicking on the three-dots menu item, you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Agent. 
-For more information, see [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/).
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select the **Go to Intent Trainer**,
+which will take you to the application in Cognigy.AI for improving your Flow. For more information, see [Intent Trainer](../ai/resources/tweak/intent-trainer.md).
 
 Source table:
 
@@ -90,7 +84,7 @@ Source table:
 Calculation for the selected timeframe:
 
 1. Misunderstood %  = (51 / 100) * 100 = 51%
-2. Understood %     = (49 / 100) * 100 = 49%
+2. Understood % = (49 / 100) * 100 = 49%
 
 Calculation example per day: 2023-09-15
 
@@ -210,12 +204,9 @@ Result:
 
 A line chart displaying the average execution time of a Flow process on a timescale. The chart indicates the average time it took to execute the Flow in ms. Time scaling depends on the global filter setting.
 
-```
-                             Sum of Execution Times
-Average Execution Time = --------------------------------
-                            Total number of inputs
-
-```
+Formula:
+                             
+Average Execution Time = Sum of Execution Times / Total number of inputs
 
 Source table:
 

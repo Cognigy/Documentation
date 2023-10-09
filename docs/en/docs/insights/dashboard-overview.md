@@ -13,7 +13,7 @@ The Overview dasboard gives you a quick summary of important information about h
 The summary of key metrics is represented in the following charts:
 
 - [Indicators](#indicators) 
-- [Ring charts](#ring-chart)
+- [Ring charts](#ring-charts)
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
