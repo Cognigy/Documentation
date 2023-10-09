@@ -6,7 +6,7 @@ hidden: false
 
 # Voice Gateway Events
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../release-notes/4.61.md)
 
 During the call, the following voice events are recorded in the payload:
 
@@ -25,7 +25,7 @@ During the call, the following voice events are recorded in the payload:
 | [TRANSFER_REFER_SUCCESS](TRANSFER_REFER_SUCCESS.md)           | The call transfer using the `Refer` method succeeded, with the call responsibility passed to another destination.        |
 | [USER_BUSY](USER_BUSY.md)                                     | The user (caller) was busy and unable to answer the call or engage in the desired action.                                |
 | [USER_INPUT_TIMEOUT](USER_INPUT_TIMEOUT.md)                   | The virtual agent terminated the call because the user did not respond.                                                  |
-| [No Answer](NO_ANSWER.md)                                     | The user or recipient of the call does not answer.                                                                       |
+| [NO_ANSWER](NO_ANSWER.md)                                     | The user or recipient of the call does not answer.                                                                       |
 
 You can access Voice Gateway events either in the input object `input.data.event` or in the [Output Transformer](../../../ai/endpoints/transformers/output-transformer.md). Advanced users can use these events for special purposes like [analytics](../../../ai/tools/analytics/analytics-concepts.md). 
 

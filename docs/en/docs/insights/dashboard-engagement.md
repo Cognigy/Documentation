@@ -1,7 +1,7 @@
 ---
- title: "Engagement" 
- slug: "dashboard-engagement" 
- hidden: false 
+title: "Engagement" 
+slug: "dashboard-engagement" 
+hidden: false 
 ---
 # Engagement Dashboard
 
@@ -152,9 +152,11 @@ Result:
 
 ### Top Goals
 
-A horizontal bar chart displaying the top-rated number of goals reached. 
+Indicates the top-rated number of goals reached. 
 
-Clicking on the three-dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select **Go to Step Explorer**,
+which leads you to the Step Explorer in Insights.
 
 Source table:
 
@@ -218,6 +220,10 @@ Indicates the number of times a human Agent was contacted. Multiple escalations 
 
 Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
 
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select **Go to Step Explorer**,
+which leads you to the Step Explorer in Insights.
+
 Source table:
 
 ```txt
@@ -238,8 +244,6 @@ Result:
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/handovers-on-time.png" width="100%" />
 </figure>
-
-Clicking the three-dots menu item, you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
 
 ### Positive Ratings over Time
 
@@ -263,7 +267,7 @@ Result:
 
 ### Unique Contacts
 
-A line chart displaying the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 

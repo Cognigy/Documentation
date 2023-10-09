@@ -1,7 +1,7 @@
 ---
- title: "Agent Handover" 
- slug: "agent-handover" 
- hidden: false 
+title: "Agent Handover" 
+slug: "agent-handover" 
+hidden: false 
 ---
 # Agent Handover
 
@@ -106,3 +106,8 @@ The General settings are described below and the specific settings you can find 
 ## Handover Providers
 
 For a list of supported Handover services, refer to the [Handover Providers Overview](../handover-providers/overview.md).
+
+## More information
+
+- [Check Agent Availability Node](../flow-nodes/services/check-agent-availability.md)
+- [User Inactivity Detection and Handling](../handover-providers/user-inactivity-detection.md)

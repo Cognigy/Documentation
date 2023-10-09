@@ -6,6 +6,8 @@ hidden: false
 
 # TRANSFER_DIAL_ERROR
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.61-blue.svg)](../../../release-notes/4.61.md)
+
 This event indicates that a call transfer attempt using the `Dial` method resulted in an error or failure. 
 
 The `Dial` method establishes a new, independent call to the transfer destination. However, in this case, the transfer failed due to various reasons, such as the destination being unreachable, the destination line being busy, or network issues.

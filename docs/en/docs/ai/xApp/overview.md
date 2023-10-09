@@ -1,7 +1,7 @@
 ---
- title: "Overview" 
- slug: "overview" 
- hidden: false 
+title: "Overview" 
+slug: "overview" 
+hidden: false 
 ---
 
 # xApps Overview
@@ -17,6 +17,12 @@ You can build the actual xApp Pages in two ways,
 by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md)
 or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
 Alternatively, for more customization, you can create your own Node by implementing and uploading an Extension.
+
+Watch this webinar to get a quick overview of what xApps are, how they work, and in which scenarios you can use them. The webinar also includes a tutorial on how to build a simple xApp.
+
+<div style="text-align:center;">
+  <iframe width="701" height="438" src="https://www.youtube.com/embed/4qvZGG6qK6w" title="Design Multimodal Customer Journeys with Cognigy xApps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ## Compatibility
 
@@ -45,7 +51,6 @@ The xApp Screens are shown when the xApp Page is launched, fails to launch, enco
     <img class="image-center" src="{{config.site_url}}ai/images/error-screen.png" width="80%">
     <figcaption>xApp Error Screen</figcaption>
 </figure>
-
 
 #### Intermediate Screen
 
@@ -76,14 +81,12 @@ The PIN Screen prompts the end user to enter the xApp Session PIN. The user need
 
 ## How it Works
 
-To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build an xApp](build-an-xApp.md) articles.
+To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build your first xApp](build/first-xApp.md) articles.
+You can find ready-made examples of xApps in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main) repository.
 
+## More Information
 
-## More information
-
-- [Getting Started](getting-started.md)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)
 - [xApp Flow API](api.md)
-- [xApp Tutorials](tutorials.md)

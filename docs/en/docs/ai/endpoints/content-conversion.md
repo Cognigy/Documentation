@@ -36,3 +36,4 @@ If the endpoint does not support the selected output type, the system returns a 
 | Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | AudioCodes             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Genesys                | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Bandwidth              | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
