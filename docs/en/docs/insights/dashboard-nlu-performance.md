@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-The data presented on this dashboard is related to the NLU (Natural Language Understanding).
+The NLU Performance dashboard provides valuable insights into the performance of your virtual agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
 
 More information regarding NLU and Intents you can find in [NLU Overview](../ai/nlu/nlu-overview/overview.md).
 
@@ -31,26 +31,28 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Understood Messages
 
-Indicates the percentage of understood messages occurred during conversations. A calculation example with data visualization in a bar chart you will find in section **Understood/ Misunderstood**.  
+Indicates the percentage of understood messages occurred during conversations.
+A calculation example with data visualization in a bar chart
+you will find in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
 
 ### Average Execution Time
 
-A line chart displaying the average execution time on a timescale.
+Indicates the average execution time on a timescale.
 
 Formula:
  
-Average Execution Time = Sum of Execution Times / Total number of inputs
+Average Execution Time = `Sum of Execution Times / Total number of inputs`
 
-A calculation example with data visualization in a line chart you can find in section **Average Execution Time**. 
+A calculation example with data visualization in a line chart you can find in the [Average Execution Time](#average-execution-time-1) line chart. 
 
 ### Avg Intent Score
 
-The Indicator value shows the average intent score depending on the timeframe setting. The value indicates the quality of your Agent, how "good" Intents were found in conversations.
-For more information, see [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/).        
+Indicates the average Intent score depending on the timeframe setting. The value indicates the quality of your Agent, how "good" Intents were found in conversations.
+For more information, see [Machine Learning Intents](../ai/nlu/nlu-overview/ml-intents.md).        
 
 ### Max Intent Score
 
-Indicates how many Intents were matched with 100% efficacy.
+Indicates the number of Intents that were matched with 100% efficacy.
 
 ## Bar charts
 
@@ -58,7 +60,7 @@ Indicates how many Intents were matched with 100% efficacy.
 
 Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
 
-A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/).
+A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/).
 A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) or sent during an active handover without configuring [Agent Assist](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
@@ -83,18 +85,15 @@ Source table:
 
 Calculation for the selected timeframe:
 
-1. Misunderstood %  = (51 / 100) * 100 = 51%
-2. Understood % = (49 / 100) * 100 = 49%
+1. Misunderstood %  = `(51 / 100) * 100 = 51%`
+2. Understood % = `(49 / 100) * 100 = 49%`
 
-Calculation example per day: 2023-09-15
+Calculation example for the date `2023-09-15`: 
 
-1. Misunderstood %  = (18 / 47) * 100 = 38%
-2. Understood %     = (29 / 47) * 100 = 62%
+1. Misunderstood %  = `(18 / 47) * 100 = 38%`
+2. Understood % = `(29 / 47) * 100 = 62%`
 
 Result:
-
-The **Understood Messages** Indicator will show 49% value as result for the selected timeframe.
-The image below shows the relation of **Understood Messages** per day.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_understood_messages.png" width="80%" />
@@ -102,7 +101,7 @@ The image below shows the relation of **Understood Messages** per day.
 
 ### Top Intents
 
-Indicates the top-rated number of intents used displayed in a horizontal bar chart, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
+Indicates the top-rated number of Intents used displayed in a horizontal bar chart, with a maximum of 6 Intents shown in the summary view and 25 in the detailed view. Whenever an Intent is matched, it is recorded in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
 
 Source table: 
 
@@ -145,8 +144,9 @@ Result:
 ### Intents by Score Range
 
 The scoring range of found Intents displayed in a stacked bar chart. Every score range bar shows a min-max value and has an average value marker.
-Clicking on the three-dots menu item, you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Agent.
-For more information, see [Intent Trainer]({{config.site_url}}ai/resources/tweak/intent-trainer/).
+Clicking on the three-dots menu item,
+you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Flow.
+For more information, see [Intent Trainer](../ai/resources/tweak/intent-trainer.md).
 
 Source table:
 
@@ -171,8 +171,8 @@ Result:
 
 ### Top Intent Scores
 
-Top-rated numbers of Intents displayed in a bar chart
-For more information, see [Intent Analyzer]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
+Indicates the top-rated numbers of Intents displayed in a bar chart.
+For more information, see [Intent Analyzer](../ai/nlu/nlu-overview/intent-analyzer.md).
 
 Source table:
 
@@ -191,8 +191,8 @@ Source table:
 
 Result: 
 
-1. Intent Score Max: 1
-2. Intent Score Min: 0.65
+1. Intent Score Max: `1`
+2. Intent Score Min: `0.65`
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_top_intent_scores.png" width="80%" />
@@ -202,11 +202,11 @@ Result:
 
 ### Average Execution Time
 
-A line chart displaying the average execution time of a Flow process on a timescale. The chart indicates the average time it took to execute the Flow in ms. Time scaling depends on the global filter setting.
+Indicates the average execution time of a Flow process on a timescale. The chart indicates the average time it took to execute the Flow in ms. Time scaling depends on the global filter setting.
 
 Formula:
                              
-Average Execution Time = Sum of Execution Times / Total number of inputs
+Average Execution Time = `Sum of Execution Times / Total number of inputs`
 
 Source table:
 
@@ -222,7 +222,7 @@ Source table:
 | 2023-09-19   |      0          |
 ```
 
-Result: (130ms + 123ms / 2) = 127.5ms
+Result: `(130ms + 123ms) / 2 = 127.5ms`
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_avg_execution_time.png" width="80%" />
