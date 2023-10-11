@@ -538,7 +538,7 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
-    - Agent Queue:
+    - Conversation Queue:
         - live-agent/conversation/conversation-queue.md
     - Routing:
         - live-agent/conversation/conversation-routing/overview.md
