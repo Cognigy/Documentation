@@ -1,8 +1,9 @@
 ---
- title: "Intention Parameters" 
- slug: "set-session-parameters" 
- hidden: false 
+title: "Set Session Parameters"
+slug: "set-session-parameters"
+hidden: false
 ---
+
 # Set Session Params
 
 <figure>

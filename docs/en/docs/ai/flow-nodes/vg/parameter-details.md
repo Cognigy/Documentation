@@ -1,7 +1,7 @@
 ---
-title: "Parameter Details" 
-slug: "parameter-details" 
-hidden: true 
+title: "Parameter Details"
+slug: "parameter-details"
+hidden: true
 ---
 
 # Voice Gateway Parameter Details
