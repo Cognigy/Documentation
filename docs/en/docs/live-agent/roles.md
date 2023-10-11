@@ -10,67 +10,148 @@ Live Agent has three different roles for the users. Administrators, Agents, and 
 
 ## Single roles
 
+See table below showing the single role permissions of Administrators, Agents, and Supervisors.
+
+
+| Access Object - Action                | Agent | Supervisor | Administrator  |
+|---------------------------------------|-------|------------|----------------|
+| **Teams**                             |       |            |                |
+| Create a team                         |  -    | -          | +              |
+| Edit a team                           |  -    | -          | +              |
+| Delete a team                         |  -    | -          | +              |
+| Allow Auto Assign for a team          |  -    | -          | +              |
+|                                       |       |            |                |
+| **Audit Logs**                        |       |            |                |
+| Read logs                             |  -    | -          | +              |
+|                                       |       |            |                |
+| **Agents**                            |       |            |                |
+| Create an Agent                       |  -    | -          | ?              |
+| Edit an Agent                         |  -    | -          | ?              |
+| Delete an Agent                       |  -    | -          | ?              |
+| Assign an Agent                       |  +    | -          | +              |
+|                                       |       |            |                |
+| **Inboxes**                           |       |            |                |
+| Add/Create an Inbox                   |  -    | -          | +              |
+| Edit/Configure an Inbox               |  -    | -          | +              |
+| Delete an Inbox                       |  -    | -          | +              |
+| Add/Edit Assist Bot                   |  -    | -          | +              |
+| Add Agents                            |  -    | -          | +              |
+|                                       |       |            |                |
+| **Labels**                            |       |            |                |
+| Add a Label                           |  -    | +          | +              |
+| Edit a Label                          |  -    | +          | +              |
+| Delete a Label                        |  -    | +          | +              |
+|                                       |       |            |                |
+| **Automation Rules**                  |  -    | -          | +              |
+| Add Automation Rules                  |  -    | -          | +              |
+| Edit Automation Rules                 |  -    | -          | +              |
+| Clone Automation Rules                |  -    | -          | +              |
+| Delete Automation Rules               |  -    | -          | +              |
+| Activate/Deactivate Automation Rules  |  -    | -          | +              |
+|                                       |  -    | -          | +              |
+| **Canned Responses**                  |       |            |                |
+| Add a Canned Response                 |  + (x)| +(xx)      | + (xx)         |
+| Edit a Canned Response                |  + (x)| +(xx)      | + (xx)         |
+| Delete a Canned Response              |  + (x)| +(xx)      | + (xx)         |
+| Import Canned Responses               |  + (x)| +(xx)      | + (xx)         |
+|                                       |       |            |                |
+| **Attachments**                       |  -    | -          | +              |
+| Sort Attachments                      |  -    | -          | +              |
+| Filter Attachments                    |  -    | -          | +              |
+| Add Filter                            |  -    | -          | +              |
+| Delete Attachments                    |  -    | -          | -              |
+| (Arrow down icon) Attachments         |  -    | -          | -              |
+|                                       |       |            |                |
+| **Account Settings**                  |  -    | -          | +              |
+| Edit Account Settings                 |  -    | -          | +              |
+| Enable Agent Assist Workspace         |  -    | -          | +              |
+| Enable/Select Email Notifications     |  -    | -          | +              |
+| Enable/Select Push Notifications      |  -    | -          | +              |
+| Copy Account ID                       |  -    | -          | +              |
+| Edit General Settings                 |  -    | -          | +              |
+| Assign conversation to a busy Agent   |  -    | -          | +              |
+|                                       |       |            |                |
+| **Conversations**                     |       |            |                |
+| Resolve Conversations                 |  +    | +          | +              |
+| Clear Conversation History            |  -    | +          | +              |
+| Mute Conversation                     |  +    | +          | +              |
+| Send Transcript                       |  +    | +          | +              |
+| Edit Contact                          |  -    | +          | +              |
+| Assign an Agent                       |  +    | +          | +              |
+| Assign a Team                         |  +    | +          | +              |
+| Select Priority                       |  +    | +          | +              |
+| Add Lables to group conversations     |  -    | +          | +              |
+| Filter Conversations                  |  +    | +          | +              |
+| Sort Conversations                    |  +    | +          | +              |
+| Search for messages in conversations  |  +    | +          | +              |
+|                                       |       |            |                |
+| **Reports**                           |       |            |                |
+| Overview                              |  -    | +          | -              |
+| Select Inbox                          |  -    | +          | -              |
+| Download Conversations Reports        |  -    | +          | +              |
+| Download Agent Reports                |  -    | +          | +              |
+| Download Label Reports                |  -    | +          | +              |
+| Download Inbox Reports                |  -    | +          | +              |
+| Download Team Reports                 |  -    | +          | +              |
+|                                       |       |            |                |
+| **Skills**                            |       |            |                |
+| Add Skills                            |  -    | +          | +              |
+| Edit Skills                           |  -    | +          | +              |
+| Delete Skills                         |  -    | +          | +              |
+|                                       |       |            |                |
+| **Profile Settings**                  |       |            |                |
+| Select Profile Image                  |  +    | +          | +              |
+| Edit Display Name                     |  +    | +          | +              |
+| Enable/Disable Audio Notifications    |  +    | +          | +              |
+| Enable/Disable Email Notifications    |  +    | +          | +              |
+| Enable/Disable Push Notifications     |  +    | +          | +              |
+| Enable/Disable Agent Assist Workspace |  +    | +          | +              |
+| Select a Hotkey to send messages      |  +    | +          | +              |
+| Copy Access Token                     |  +    | +          | +              |
+| Display of Unread Notifications       |  +    | +          | +              |
+|                                       |       |            |                |
+| **Set Status**                        |       |            |                |
+| Status Online                         |  +    | +          | +              |
+| Status Busy                           |  +    | +          | +              |
+| Status Away                           |  +    | +          | +              |
+| Status Offline                        |  +    | +          | +              |
+|                                       |       |            |                |
+| **Assist Bot**                        |       |            |                |
+| Edit Assist Bot Settings              |  +    | +          | +              |
+| Reset Session                         |  +    | +          | +              |
+|                                       |       |            |                |
+| **LA Agent Assist**                   |       |            |                |
+|                                       |       |            |                |
+| **Roles**                             |       |            |                |
+|                                       |       |            |                |
+
+
+(x)  - only for Level **Personal**
+
+(xx) - for Levels **Personal, Global and Team**
+
+
+
+
+
+
 ### Administrator
-
-The Administrator has access to most features of Live Agent. 
-
-- Add, edit and delete Inboxes.
-
-- Add, edit and delete Agents/Teams. The Administrator can modify the account user's role.
-
-- Add, edit and delete Labels. The Administrator can modify the account user's role.
-
-- Add, edit and delete Canned Responses.
-
-- Add, edit and delete Skills.
-
-- Modify the settings of its account and the account Inboxes.
-
-- Access the OData Endpoint with its access token.
-
-- Create custom attributes to Conversations.
 
 - Can access to Reports, except for the [Supervisor Overview](reports.md#overview---supervisor-dashboard) dashboard.
 
 ### Agent
 
-The Agent has restricted access.
-
-- Access to the Inboxes/Teams assigned to them.
-
-- Access and ability to add existing Labels to the Conversations.
-
-- Access and ability to add existing custom attributes to the Conversations.
-
-- Can add, edit and delete Canned Responses.
-
-- Cannot manipulate settings related to the account, except for Canned Responses.
-
-- Can reassign the Conversations of their Inboxes to other Agents, or unassign them.
-
-- Does not have access to Reports.
-
-- By default, Agents can see all Conversations of an Inbox they are assigned to. This can be disabled in the settings of an Inbox so that Agents can only see Conversations they are assigned to.
-
 ### Supervisor
 
-The Supervisor has restricted access.
-
-- Access to the Inboxes/Teams.
-
-- Access and ability to add existing Labels to the Conversations.
-
-- Access and ability to add existing custom attributes to the Conversations.
-
-- Can add, edit and delete Canned Responses.
-
-- Can add, edit and delete Skills.
-
-- Cannot manipulate settings related to the account, except for Canned Responses.
-
-- Can reassign the Conversations to other Agents, or unassign them.
-
 - Has access only to the [Supervisor Overview](reports.md#overview---supervisor-dashboard) dashboard in Reports.
+
+
+
+
+
+
+
+
 
 ## Multiple roles
 
