@@ -1,7 +1,7 @@
 ---
- title: "Session Speech Parameters Config" 
- slug: "session-speech-parameters-config" 
- hidden: false 
+title: "Session Speech Parameters - Config" 
+slug: "session-speech-parameters-config" 
+hidden: false 
 ---
 
 # Session Speech Parameters Config
