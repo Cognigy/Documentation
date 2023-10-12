@@ -5,15 +5,7 @@
 ---
 # Notifications
 
-**Notifications** are special notes of conversations that were auto-assigned to an Agent.
-When defined in the account settings, notifications can be send as audio chimes, as email messages to an Agents' email address or as push notifications to an Agents' mobile device, desktop or notebook. If the Agent is not active in chat, notifications appear on the devices assigned to his profile or account.
-
-A **Push Notification** is a message that pops up on a mobile device or desktop without the recipient needing to open an app or website. Live Agent initiates notifications to inform assigned Agents about new events. 
-
-Human Agents automatically get notifications when there is a  respond to a message or if they are mentioned in a conversation.
-Notifications can be customized within Live Agent, e.g. for using email templates as reminder for customer messages they haven't read or reacted to.
-
-All Notifications intent to support the human Agent to let him know when there is a new customer action in an assigned conversation, to shorten the response time of the Agent and to improve user experience and customer services at all.
+_Notifications_ are messages or alerts that are generated to inform human agents about new events, activities, or interactions within a customer support or chat system. These notifications serve as a way to keep agents updated and responsive to customer inquiries in a timely manner.
 
 ## Display Notifications
 
