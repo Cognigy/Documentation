@@ -79,9 +79,9 @@ To configure email and push notifications at the Account level, follow these ste
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
 3. In the settings column, select **Account Settings**.
-4. On the **Account Settings** page, actiivate the following notifications:
-    - **Email Notifications** — enable desired event options for your email notifications.
-    - **Push Notifications** — enable desired event options for your push notifications.
+4. On the **Account Settings** page, activate the following notifications:
+    - **Email Notifications** — activate **Enable overriding email notification preferences** and enable desired event options for your email notifications.
+    - **Push Notifications** — activate **Enable overriding push notification preferences** and enable desired event options for your push notifications.
 5. In the upper-right corner, click **Update Settings** to apply the settings.
 
 ## View Unread Notifications
