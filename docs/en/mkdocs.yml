@@ -375,7 +375,6 @@ nav:
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/whatsapp.md
-    - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
     - ai/endpoints/microsoft-teams.md
