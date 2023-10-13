@@ -90,6 +90,21 @@ To assign a priority to a conversation within Live Agent, do the following:
 
 The priority will be assigned to the conversation. The matching priority level's icon will now be visable for the conversation within the Conversations column.
 
+#### Filter Conversations by Priority
+
+To filter conversations by priority, do the following:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. On top of the **Conversations** list next to the Inbox name click ![filter](../../assets/icons/filter.svg).
+5. In the **Status** drop-down list select **Priority**.
+6. In the middle drop-down list select **Equal to** as the required option. 
+7. In the **Select** drop-down list select the priority level, assigned to the conversations you want to find. You can select **None - Low - Medium - High - Urgent** as intended priority level to find.
+8. Click **Apply filters** to activate the filter settings.
+
+The filtered conversations, matching to the activated priorty filter settings, will be displayed in the **Conversations** list.
+
 ### Assign Labels
 <div class="divider"></div>
 
