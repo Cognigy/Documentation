@@ -259,7 +259,6 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-       
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
         - ai/flow-nodes/agent-assist/identity-assist.md
