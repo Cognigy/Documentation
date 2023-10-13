@@ -88,22 +88,25 @@ To assign a priority to a conversation within Live Agent, do the following:
 6. Under the **Priority** section, click **Select priority**.
 7. Scroll or type to search for a priority level, then click the intended level. 
 
-The priority will be assigned to the conversation. The matching priority level's icon will now be visable for the conversation within the Conversations column.
+The priority will be assigned to the conversation. The matching priority level's icon will now be visible for the conversation within the Conversations column.
 
 #### Filter Conversations by Priority
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
 
 To filter conversations by priority, do the following:
 
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
 3. From the **Inboxes** list, select an Inbox.
-4. On top of the **Conversations** list next to the Inbox name click ![filter](../../assets/icons/filter.svg).
-5. In the **Status** drop-down list select **Priority**.
-6. In the middle drop-down list select **Equal to** as the required option. 
-7. In the **Select** drop-down list select the priority level, assigned to the conversations you want to find. You can select **None - Low - Medium - High - Urgent** as intended priority level to find.
-8. Click **Apply filters** to activate the filter settings.
+4. At the top of the **Conversations** list next to the Inbox name click ![filter](../../assets/icons/filter.svg).
+5. In the **Filter Conversations** window, select the following options:<br>
+    5.1 In the **Status** list, select **Priority**.<br>
+    5.2 In the **Operator** list, select **Equal to** or **Not Equal to** as the filter condition. These operators indicate whether you want to filter conversations that match or do not match the specified priority level.<br>
+    5.3 In the **Select** list, choose a priority level by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple priorities from the list.<br> 
+6. Click **Apply filters** to activate the filter settings.
 
-The filtered conversations, matching to the activated priorty filter settings, will be displayed in the **Conversations** list.
+The filtered conversations, matching to the activated priority filter settings, will be displayed in the list of conversations.
 
 ### Assign Labels
 <div class="divider"></div>
