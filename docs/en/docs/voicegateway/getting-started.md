@@ -18,6 +18,7 @@ To set up Voice Gateway, do the following steps:
 1. [Create a Voice Gateway flow](#create-a-voice-gateway-flow)
 2. [Create a Voice Gateway Endpoint](#create-a-voice-gateway-endpoint)
 3. [Route your Contact Center or Phone Number to Voice Gateway](#route-your-contact-center-or-phone-number-to-voice-gateway)
+4. [Set up Voice Gateway for your Organization](#set-up-voice-gateway-for-your-organization)
 
 ## Create a Voice Gateway flow
 
@@ -52,10 +53,21 @@ To do voice-based experiences with your Virtual Agent, create your [Voice Gatewa
    <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
 </figure>
 
-
 ## Route your Contact Center or Phone Number to Voice Gateway
 
 To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with [Cognigy technical support](../help/get-help.md) to configure your SIP Trunk and route your number to the right Endpoint.
+
+## Set up Voice Gateway for your Organization
+
+This setting allows users with the [Account](./webapp/users.md#account) role to log in to the Voice Gateway Self-Service Portal using their Cognigy.AI user credentials. To enable this option, you need to follow these steps:
+
+To set up the Voice Gateway for your organization, follow these steps:
+
+1. Open the Cognigy.AI interface.
+2. In the upper-right corner, click the **User Menu**.
+3. Select the **Organisation Details** from the menu.
+4. Click **Set up Voice Gateway**.
+5. Go to **User Menu > Access Control** and assign the `voiceGatewayUser` role to the users who need access to the Voice Gateway Portal with the Account role. Note that Admins and Service Providers cannot log in using Cognigy.AI user credentials.
 
 ## What's Next?
 
