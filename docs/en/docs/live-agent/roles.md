@@ -29,19 +29,21 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Access Object - Action                | Agent | Supervisor | Administrator  |
 |---------------------------------------|-------|------------|----------------|
 | **Attachments**                       |  -    | -          | +              |
+| View Attachments                      |  -    | -          | +              |
 | Sort Attachments                      |  -    | -          | +              |
 | Filter Attachments                    |  -    | -          | +              |
 | Add Filter                            |  -    | -          | +              |
-| Delete Attachments                    |  -    | -          | -              |
-| (Arrow down icon) Attachments         |  -    | -          | -              |
+| Delete Attachments                    |  -    | -          | +              |
+| Download Attachments                  |  -    | -          | +              |
 | **Audit Logs**                        |       |            |                |
-| Read logs                             |  -    | -          | +              |
+| Read Audit Logs                       |  -    | -          | +              |
 | **Automation Rules**                  |  -    | -          | +              |
 | Add Automation Rules                  |  -    | -          | +              |
 | Edit Automation Rules                 |  -    | -          | +              |
 | Clone Automation Rules                |  -    | -          | +              |
 | Delete Automation Rules               |  -    | -          | +              |
-| Activate/Deactivate Automation Rules  |  -    | -          | +              |
+| Activate Automation Rules             |  -    | -          | +              |
+| Deactivate Automation Rules           |  -    | -          | +              |
 | **Labels**                            |       |            |                |
 | Create a Label                        |  -    | +          | +              |
 | Edit a Label                          |  -    | +          | +              |
@@ -51,6 +53,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Add Skills                            |  -    | +          | +              |
 | Edit Skills                           |  -    | +          | +              |
 | Delete Skills                         |  -    | +          | +              |
+| Add Skills to an Agent                |  -    | -          | +              |
 
 ### Account and Profile Settings
 
@@ -74,7 +77,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | **LA Agent Assist**                   |       |            |                |
 | Activate Agent Assist Workspace       |  +    | +          | +              |
 
-[^1]: that is a feature of Cognigy.AI
+[^1]: provided by Cognigy.AI
 
 ### Canned Responses
 
@@ -102,7 +105,6 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Assign an Agent                       |  +    | +          | +              |
 | Assign a Team                         |  +    | +          | +              |
 | Select Priority                       |  +    | +          | +              |
-| Add Lables to group conversations     |  -    | +          | +              |
 | Filter Conversations                  |  +    | +          | +              |
 | Sort Conversations                    |  +    | +          | +              |
 | Search for messages in conversations  |  +    | +          | +              |
@@ -116,6 +118,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Delete an Inbox                       |  -    | -          | +              |
 | Create Assist Bot                     |  -    | -          | +              |
 | Edit Assist Bot                       |  -    | -          | +              |
+| Delete Assist Bot                     |  -    | -          | +              |
 | Add Agents to the Inbox               |  -    | -          | +              |
 | Remove Agents from the Inbox          |  -    | -          | +              |
 | Conversation Assignment Settings      |  -    | -          | +              |
@@ -125,7 +128,10 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Actions                               | Agent | Supervisor | Administrator  |
 |---------------------------------------|-------|------------|----------------|
 | Overview                              |  -    | +          | -              |
-| Select Inbox                          |  -    | +          | -              |
+| Select Inbox                          |  -    | +          | +              |
+| Select Agents                         |  -    | +          | +              |
+| Select Labels                         |  -    | +          | +              |
+| Select Team                           |  -    | +          | +              |
 | Download Conversations Reports        |  -    | +          | +              |
 | Download Agent Reports                |  -    | +          | +              |
 | Download Label Reports                |  -    | +          | +              |
