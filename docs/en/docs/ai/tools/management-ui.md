@@ -121,11 +121,11 @@ This is the maximum amount of users that can be created within the organisation.
 
 - Max projects
 
-The maximum amount of projects that can be created within this organisation.
+The maximum number of projects that can be created within this organisation.
 
 - Max channels per project
 
-The maximum amount of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite amount of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted
+The maximum number of different types of channels within a single project is determined by this setting. For example, if it's set to one, you can create an unlimited number of Alexa Endpoints but will encounter an error when attempting to add another different type of channel. This setting restricts the number of different channel types allowed.
 
 - Max messages per day
 
