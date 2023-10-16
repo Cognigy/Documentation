@@ -261,7 +261,6 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-        - ai/flow-nodes/audiocodes/agent-assist.md
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
         - ai/flow-nodes/agent-assist/identity-assist.md
@@ -377,7 +376,6 @@ nav:
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/whatsapp.md
-    - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
     - ai/endpoints/microsoft-teams.md

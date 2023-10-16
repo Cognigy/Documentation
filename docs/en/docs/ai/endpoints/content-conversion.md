@@ -24,7 +24,6 @@ If the endpoint does not support the selected output type, the system returns a 
 | Avaya CPaaS            | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Facebook Messenger     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Azure Bot Services     | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
-| Google Actions         | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Line                   | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Microsoft Teams        | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
 | RingCentral Engage     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
