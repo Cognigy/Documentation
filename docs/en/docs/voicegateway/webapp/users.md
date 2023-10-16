@@ -24,6 +24,10 @@ This scope includes basic operations with Voice Gateway entities, such as creati
 
 It also allows for editing user profiles, carriers, and speech services that belong to users with the Account scope.
 
+Users with the Account role can be authorized in the Voice Gateway Self-Service Portal via their Cognigy.AI user credentials.
+To activate this option, you need to activate the **Set up Voice Gateway**
+button in the **User menu > Organization Details** of the Cognigy.AI UI. Go to **User Menu > Access Control** and add a `voiceGatewayUser` role for selected users.
+
 ### Service Provider
 
 This scope is only available for On-premises Cognigy Voice Gateway installations. 
