@@ -6,7 +6,7 @@
 
 # Live Agent (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49(Beta)-purple.svg)](../release-notes/4.49.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.62(Beta)-purple.svg)](../release-notes/4.62.md)
 
 !!! note
     The Live Agent dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
