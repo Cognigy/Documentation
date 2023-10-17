@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -154,9 +154,10 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
      <figure>
        <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/configure-search-extract-output.png" width="100%" />
      </figure>
-   
-5. Click **Save Node**. 
-6. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
+5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing the AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side.
+6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results. 
+7. Click **Save Node**. 
+8. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
 You will receive a response generated from the absorbed Knowledge.
 
