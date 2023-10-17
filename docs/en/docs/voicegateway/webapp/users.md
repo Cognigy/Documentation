@@ -20,6 +20,8 @@ Depending on Cognigy Voice Gateway installation, members can have the following 
 
 ### Account
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
+
 This scope includes basic operations with Voice Gateway entities, such as creating, editing, and deleting entities. 
 
 It also allows for editing user profiles, carriers, and speech services that belong to users with the Account scope.
