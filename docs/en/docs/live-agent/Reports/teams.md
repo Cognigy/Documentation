@@ -12,10 +12,10 @@
   <figcaption></figcaption>
 </figure>
 
+## Report Indicators
+
+{! _includes/live-agent/reports.md !}
 
 ## Download Team Reports
 
-You can download the team metrics by clicking **Download team reports** at the top right of the page. 
-The report will be downloaded in CSV format. 
-
-
+To download a report as a CSV file for the chart, click **Download team reports** in the upper-right corner of the chart.

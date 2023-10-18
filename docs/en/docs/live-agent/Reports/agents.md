@@ -16,8 +16,10 @@ A report can be generated for various time durations. This can be done by select
   <figcaption></figcaption>
 </figure>
 
+## Report Indicators
+
+{! _includes/live-agent/reports.md !}
 
 ## Download Agents Report
 
-You can download the Agents' performance metrics by clicking **Download agent reports** at the top right of the page. 
-The report will be downloaded in CSV format. 
+To download a report as a CSV file for the chart, click **Download agent reports** in the upper-right corner of the chart. 

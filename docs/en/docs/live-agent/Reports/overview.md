@@ -6,9 +6,11 @@
 
 # Live Agent Reports
 
+## Overview
+
 The conversation reports which have occurred over time can be viewed in the **Reports** section.
 
-To see a report, follow these steps:
+To see a report, do the following:
 
 1. Go to Live Agent.
 2. In the left side of the screen, click the **Reports** icon.
@@ -34,12 +36,12 @@ Every report includes following indicator values:
 - Resolution Time
 - Resolution Count
 
-Every Indicator value will be visualized and displayed in a bar chart diagream below. You can define a time period and select an Indicator to be visualized in a bar chart diagram for that time period.  
+Every indicator value will be visualized and displayed in a bar chart below. You can define a time period and select an indicator to be visualized in a bar chart for that time period.  
 
-On the top left side of the window you can open a drop-down menu to select a default time period. Alternatively you can define an individual time period using a calender-date picker. 
+On the top left side of the report page you can open a drop-down menu to select a default time period. Alternatively you can define an individual time period using a calender-date picker. 
+The indicator values presents real-time data that refreshes regularly every 30 seconds.
 
-
-| Time period for Report   | day  | week | month   | year | custome date range |
+| Time period for Report   | day  | week | month   | year | Custom date range  |
 |--------------------------|------|------|---------|------|--------------------|
 | Last 7 days              | +    | -    | -       | -    | -                  |
 | Last 30 days             | +    | +    | -       | -    | -                  |
@@ -50,4 +52,8 @@ On the top left side of the window you can open a drop-down menu to select a def
 
 [^1]: calendar-date picker 
 
-To download any report as csv file, click **Download Report** on the top right side of the window.
+To download any report as csv file, click **Download Report** on the top right side of the report page.
+
+## More information
+
+- [Insights: Dashboard Live Agent](../../insights/dashboard-live-agent.md)

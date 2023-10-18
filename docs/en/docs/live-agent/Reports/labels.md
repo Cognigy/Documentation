@@ -12,8 +12,10 @@
   <figcaption></figcaption>
 </figure>
 
+## Report Indicators
+
+{! _includes/live-agent/reports.md !}
 
 ## Download Label Reports
 
-You can download the Label metrics by clicking **Download label reports** at the top right of the page. 
-The report will be downloaded in CSV format. 
+To download a report as a CSV file for the chart, click **Download label reports** in the upper-right corner of the chart.
