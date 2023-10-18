@@ -144,7 +144,7 @@ Indicates the number of conversations that were temporarily suspended until a ti
 
 ### Handover End Reason
 
-Shows the timescale of the following conversation statuses:
+Indicates the timescale of the following conversation statuses:
 
 - Abandoned — a conversation is closed because the user left a conversation.
 - Resolved — a conversation is closed because the user's problem was resolved.
@@ -184,7 +184,7 @@ Result:
 
 ### Label Summary
 
-Shows Live Agents labels to categorize and prioritize conversations.
+Indicates Live Agents labels to categorize and prioritize conversations.
 
 ```txt
 | Label name | Number of labels | 
@@ -203,7 +203,7 @@ Result:
 
 ### Live Agent Performance Times
 
-Shows the timeline of the average first response and the average resolution time. This metric is calculated based on number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
+Indicates the timeline of the average first response and the average resolution time. This metric is calculated based on number of sessions and help evaluate human agent operations' effectiveness by comparing customer service agents' response times and resolution time.
 
 The First Response Time metric refers to the average time a human agent takes to send a first response to a customer's request. 
 The Resolution Time metric refers to the average time of a customer's interaction with a human agent, with a human agent, from the start of the handover sequence until the end of the session.
