@@ -172,37 +172,22 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Configure Account Settings            |   -   |     -      | +              |
 | Configure Profile Settings            |   +   |     +      | +              |
 
-## Assign a Single Role
-
-You can assign a single role to an Agent.
-
-To create an Agent with single role, do the following steps:
-
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign one of the following roles:
-
-    - `liveAgentAdmin`
-    - `liveAgentSupervisor`
-    - `liveAgentAgent`
-
-2. Add any additional role the Agent should have.
-3. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
-
-To see the role applied to the Agent, the specific Agent must log in once to have the role applied.
-
-
-## Assign Multiple Roles
+## Assign Roles
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../release-notes/4.44.md)
 
-You can assign more than one role to an Agent.
+You can assign roles to human agent.
 
-To create an Agent with multiple roles, do the following steps:
+To create an Agent with a single role, do the following steps:
 
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign it one or more roles: `liveAgentAdmin`, `liveAgentSupervisor`, `liveAgentAgent`.
-2. Add any additional role the Agent should have.
+1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign one of the following roles:
+    - `liveAgentAdmin`
+    - `liveAgentSupervisor`
+    - `liveAgentAgent`<br>If you have an Admin role in Cognigy.AI, you do not need to add the Administrator role for your user because the Cognigy.AI role already includes the right to administer Live Agent.
+2. Add any additional roles the Agent should have. For example, if you already have a `liveAgentAgent` role, you can add a `liveAgentSupervisor` role to allow access to the Overview report.
 3. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
 
-To see the roles applied to the Agent, the specific Agent must log in once to have the additional roles applied.
+To see the roles applied to the Agent, the specific Agent must log in once to have the roles applied.
 
 ## More Information
 
