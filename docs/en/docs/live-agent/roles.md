@@ -18,7 +18,7 @@ These roles define the permissions and responsibilities of individuals using the
 
 ### Agent
 
-Agents with this role can only access inboxes, reports, and conversations. They can assign conversations to other agents or themselves and resolve conversations.
+Agents in this role can access inboxes and conversations, assign conversations to other agents or themselves, and resolve conversations. They can access only the inboxes they are part of, participate in conversations within those inboxes, edit their user profile settings, and add personal-level canned responses. Conversation assignment is limited to inbox members.
 
 ### Supervisor
 
@@ -39,7 +39,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Create an Agent [^1]            |  -    | -          | +             |
 | Edit an Agent [^1]              |  -    | -          | +             |
 | Delete an Agent[^1]             |  -    | -          | +             |
-| Assign an Agent                 |  +    | -          | +             |
+| Assign an Agent                 |  +    | +          | +             |
 
 [^1]: This permission is granted on the Cognigy.AI side.
 
