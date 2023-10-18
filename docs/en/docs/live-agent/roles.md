@@ -14,6 +14,8 @@ In Live Agents, human agents can have three distinct user roles:
 
 These roles define the permissions and responsibilities of individuals using the Live Agents system.
 
+## User Roles 
+
 ### Agent
 
 Agents with this role can only access inboxes, reports, and conversations. They can assign conversations to other agents or themselves and resolve conversations.
@@ -81,11 +83,10 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Sort Conversations                   | +     | +          | +             |
 | Search for messages in conversations | +     | +          | +             |
 
-### Conversation Attributes
+### Attachments
 
-| Access Object - Action                         | Agent | Supervisor | Administrator |
+| Actions                                        | Agent | Supervisor | Administrator |
 |------------------------------------------------|-------|------------|---------------|
-| **Attachments**                                | -     | -          | +             |
 | Send Attachments within a conversation         | +     | +          | +             |
 | Request Attachments within a conversation [^2] | +     | +          | +             |
 | View Attachments                               | -     | -          | +             |
@@ -93,27 +94,43 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Filter Attachments                             | -     | -          | +             |
 | Delete Attachments                             | -     | -          | +             |
 | Download Attachments                           | -     | -          | +             |
-| **Audit Logs**                                 |       |            |               |
+
+[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+
+### Audit Logs
+
+| Actions                                        | Agent | Supervisor | Administrator |
+|------------------------------------------------|-------|------------|---------------|
 | Read Audit Logs                                | -     | -          | +             |
-| **Automation Rules**                           | -     | -          | +             |
+
+### Automation Rules
+
+| Actions                                        | Agent | Supervisor | Administrator |
+|------------------------------------------------|-------|------------|---------------|
 | Add Automation Rules                           | -     | -          | +             |
 | Edit Automation Rules                          | -     | -          | +             |
 | Clone Automation Rules                         | -     | -          | +             |
 | Delete Automation Rules                        | -     | -          | +             |
 | Activate Automation Rules                      | -     | -          | +             |
 | Deactivate Automation Rules                    | -     | -          | +             |
-| **Labels**                                     |       |            |               |
+
+### Labels
+
+| Actions                                        | Agent | Supervisor | Administrator |
+|------------------------------------------------|-------|------------|---------------|
 | Create a Label                                 | -     | +          | +             |
 | Edit a Label                                   | -     | +          | +             |
 | Delete a Label                                 | -     | +          | +             |
 | Add a Label to a conversation                  | +     | +          | +             |
-| **Skills**                                     |       |            |               |
+
+### Skills
+
+| Actions                                        | Agent | Supervisor | Administrator |
+|------------------------------------------------|-------|------------|---------------|
 | Add Skills                                     | -     | +          | +             |
 | Edit Skills                                    | -     | +          | +             |
 | Delete Skills                                  | -     | +          | +             |
 | Add Skills to an Agent                         | -     | -          | +             |
-
-[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
 
 ### Canned Responses
 
@@ -154,7 +171,6 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 |---------------------------------------|-------|------------|----------------|
 | Configure Account Settings            |   -   |     -      | +              |
 | Configure Profile Settings            |   +   |     +      | +              |
-
 
 ## Assign a Single Role
 
