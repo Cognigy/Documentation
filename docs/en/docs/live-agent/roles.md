@@ -6,23 +6,25 @@ hidden: false
 
 # Roles
 
-Within Live Agents, human agents can have the following user roles:
+In Live Agents, human agents can have three distinct user roles:
 
 - [Agent](#agents)
 - [Supervisor](#supervisor)
 - [Administrator](#administrator)
 
+These roles define the permissions and responsibilities of individuals using the Live Agents system.
+
 ### Agent
 
-Human agents with this role can only access inboxes, reports and conversations. They can assign conversations to other agents or themselves and resolve conversations.
+Agents with this role can only access inboxes, reports, and conversations. They can assign conversations to other agents or themselves and resolve conversations.
 
 ### Supervisor
 
-Supervisors have unique access to the supervisor dashboard to observe conversation metrics and is also able to see and interact with all inboxes.
+Supervisors have unique access to the supervisor dashboard to observe conversation metrics and are also able to see and interact with all inboxes.
 
 ### Administrator
 
-Administrators have access to all Cognigy Live Agent features enabled for your account, including settings, along with all of a normal agents' privileges, except the supervisor dashboard. This dashboard is exclusive to the supervisor role.
+Administrators have access to all Cognigy Live Agent features enabled for your account, including settings, as well as all of a normal agent's privileges, except for the supervisor dashboard. This dashboard is exclusive to the supervisor role.
 
 ## Permissions
 
