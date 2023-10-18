@@ -1,59 +1,150 @@
 ---
- title: "Roles"
- slug: "roles" 
- hidden: false 
+title: "Roles"
+slug: "roles" 
+hidden: false 
 ---
 
 # Roles
 
-Live Agent has three different roles for the users. Administrators, Agents, and Supervisors.
+Within Live Agents, human agents can have the following user roles:
 
-An Agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users. Access to Cognigy Live Agent's features are based on following roles:
+- [Agent](#agents)
+- [Supervisor](#supervisor)
+- [Administrator](#administrator)
 
 ### Agent
 
-Agent - Agents with this role can only access inboxes, reports and conversations. They can assign conversations to other agents or themselves and resolve conversations.
-
-### Administrator
- Administrator - The administrator has access to all Cognigy Live Agent features enabled for your account, including settings, along with all of a normal agents' privileges, except the supervisor dashboard. This dashboard is exclusive to the supervisor role.
+Human agents with this role can only access inboxes, reports and conversations. They can assign conversations to other agents or themselves and resolve conversations.
 
 ### Supervisor
- Supervisor - The supervisor has unique access to the supervisor dashboard to observe conversation metrics and is also able to see and interact with all inboxes.
+
+Supervisors have unique access to the supervisor dashboard to observe conversation metrics and is also able to see and interact with all inboxes.
+
+### Administrator
+
+Administrators have access to all Cognigy Live Agent features enabled for your account, including settings, along with all of a normal agents' privileges, except the supervisor dashboard. This dashboard is exclusive to the supervisor role.
 
 ## Permissions
 
 The following tables show single role permissions of Agents, Supervisors and Administrators.
 
-### General Live Agent Settings
+### Agents
 
-| Access Object - Action                | Agent | Supervisor | Administrator  |
-|---------------------------------------|-------|------------|----------------|
-| **Attachments**                       |  -    | -          | +              |
-| View Attachments                      |  -    | -          | +              |
-| Sort Attachments                      |  -    | -          | +              |
-| Filter Attachments                    |  -    | -          | +              |
-| Add Filter                            |  -    | -          | +              |
-| Delete Attachments                    |  -    | -          | +              |
-| Download Attachments                  |  -    | -          | +              |
-| **Audit Logs**                        |       |            |                |
-| Read Audit Logs                       |  -    | -          | +              |
-| **Automation Rules**                  |  -    | -          | +              |
-| Add Automation Rules                  |  -    | -          | +              |
-| Edit Automation Rules                 |  -    | -          | +              |
-| Clone Automation Rules                |  -    | -          | +              |
-| Delete Automation Rules               |  -    | -          | +              |
-| Activate Automation Rules             |  -    | -          | +              |
-| Deactivate Automation Rules           |  -    | -          | +              |
-| **Labels**                            |       |            |                |
-| Create a Label                        |  -    | +          | +              |
-| Edit a Label                          |  -    | +          | +              |
-| Delete a Label                        |  -    | +          | +              |
-| Add a Label to a conversation         |  +    | +          | +              |
-| **Skills**                            |       |            |                |
-| Add Skills                            |  -    | +          | +              |
-| Edit Skills                           |  -    | +          | +              |
-| Delete Skills                         |  -    | +          | +              |
-| Add Skills to an Agent                |  -    | -          | +              |
+| Actions                         | Agent | Supervisor | Administrator |
+|---------------------------------|-------|------------|---------------|
+| Create an Agent [^1]            |  -    | -          | +             |
+| Edit an Agent [^1]              |  -    | -          | +             |
+| Delete an Agent[^1]             |  -    | -          | +             |
+| Assign an Agent                 |  +    | -          | +             |
+
+[^1]: This permission is granted on the Cognigy.AI side.
+
+### Teams
+
+| Actions                             | Agent | Supervisor | Administrator |
+|-------------------------------------|-------|------------|---------------|
+| Create a team                       | -     | -          | +             |
+| Assign a team within a conversation | +     | +          | +             |
+| Edit a team                         | -     | -          | +             |
+| Delete a team                       | -     | -          | +             |
+| Allow Auto Assign for a team        | -     | -          | +             |
+
+### Inboxes
+
+| Actions                                    | Agent | Supervisor | Administrator  |
+|--------------------------------------------|-------|------------|----------------|
+| Create an Inbox                            |  -    | -          | +              |
+| Edit an Inbox                              |  -    | -          | +              |
+| Delete an Inbox                            |  -    | -          | +              |
+| Create Assist Bot                          |  -    | -          | +              |
+| Edit Assist Bot                            |  -    | -          | +              |
+| Delete Assist Bot                          |  -    | -          | +              |
+| Add Agents to the Inbox                    |  -    | -          | +              |
+| Remove Agents from the Inbox               |  -    | -          | +              |
+| Configure Conversation Assignment Settings |  -    | -          | +              |
+
+### Conversations
+
+| Actions                              | Agent | Supervisor | Administrator |
+|--------------------------------------|-------|------------|---------------|
+| Resolve Conversations                | +     | +          | +             |
+| Clear Conversation History           | -     | +          | +             |
+| Mute Conversation                    | +     | +          | +             |
+| Send Transcript                      | +     | +          | +             |
+| Edit User Contact Profile            | -     | +          | +             |
+| Assign an Agent                      | +     | +          | +             |
+| Assign a Team                        | +     | +          | +             |
+| Select Priority                      | +     | +          | +             |
+| Filter Conversations                 | +     | +          | +             |
+| Sort Conversations                   | +     | +          | +             |
+| Search for messages in conversations | +     | +          | +             |
+
+### Conversation Attributes
+
+| Access Object - Action                         | Agent | Supervisor | Administrator |
+|------------------------------------------------|-------|------------|---------------|
+| **Attachments**                                | -     | -          | +             |
+| Send Attachments within a conversation         | +     | +          | +             |
+| Request Attachments within a conversation [^2] | +     | +          | +             |
+| View Attachments                               | -     | -          | +             |
+| Sort Attachments                               | -     | -          | +             |
+| Filter Attachments                             | -     | -          | +             |
+| Delete Attachments                             | -     | -          | +             |
+| Download Attachments                           | -     | -          | +             |
+| **Audit Logs**                                 |       |            |               |
+| Read Audit Logs                                | -     | -          | +             |
+| **Automation Rules**                           | -     | -          | +             |
+| Add Automation Rules                           | -     | -          | +             |
+| Edit Automation Rules                          | -     | -          | +             |
+| Clone Automation Rules                         | -     | -          | +             |
+| Delete Automation Rules                        | -     | -          | +             |
+| Activate Automation Rules                      | -     | -          | +             |
+| Deactivate Automation Rules                    | -     | -          | +             |
+| **Labels**                                     |       |            |               |
+| Create a Label                                 | -     | +          | +             |
+| Edit a Label                                   | -     | +          | +             |
+| Delete a Label                                 | -     | +          | +             |
+| Add a Label to a conversation                  | +     | +          | +             |
+| **Skills**                                     |       |            |               |
+| Add Skills                                     | -     | +          | +             |
+| Edit Skills                                    | -     | +          | +             |
+| Delete Skills                                  | -     | +          | +             |
+| Add Skills to an Agent                         | -     | -          | +             |
+
+[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+
+### Canned Responses
+
+| Actions                                     | Agent | Supervisor | Administrator |
+|---------------------------------------------|-------|------------|---------------|
+| Create a Canned Response [^3]               | +     | +          | +             |
+| Use a Canned Response within a conversation | +     | +          | +             |
+| Edit a Canned Response [^3]                 | +     | +          | +             |
+| Delete a Canned Response [^3]               | +     | +          | +             |
+| Import Canned Responses [^3]                | +     | +          | +             |
+
+[^3]: Users with the Agent role can create canned responses for their own usage, edit, and delete canned resources that they created.
+
+### Reports
+
+| Actions                  | Agent | Supervisor | Administrator |
+|--------------------------|-------|------------|---------------|
+| View the Overview Report | -     | +          | -             |
+| View the Inbox Report    | -     | +          | +             |
+| View the Agent Report    | -     | +          | +             |
+| View the Label Report    | -     | +          | +             |
+| View the Team Report     | -     | +          | +             |
+| Download Reports         | -     | +          | +             |
+
+### Assistants
+
+| Actions                         | Agent | Supervisor | Administrator |
+|---------------------------------|-------|------------|---------------|
+| **LA Agent Assist**             |       |            |               |
+| Activate Agent Assist Workspace | +     | +          | +             |
+| **Assist Bot**                  |       |            |               |
+| Edit Assist Bot Settings        | +     | +          | +             |
+| Reset Session                   | +     | +          | +             |
 
 ### Account and Profile Settings
 
@@ -62,90 +153,6 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Configure Account Settings            |   -   |     -      | +              |
 | Configure Profile Settings            |   +   |     +      | +              |
 
-### Agents
-
-| Actions                               | Agent | Supervisor | Administrator  |
-|---------------------------------------|-------|------------|----------------|
-| **Agents**                            |       |            |                |
-| Create an Agent                       |  -    | -          | + [^1]         |
-| Edit an Agent                         |  -    | -          | + [^1]         |
-| Delete an Agent                       |  -    | -          | + [^1]         |
-| Assign an Agent                       |  +    | -          | +              |
-| **Assist Bot**                        |       |            |                |
-| Edit Assist Bot Settings              |  +    | +          | +              |
-| Reset Session                         |  +    | +          | +              |
-| **LA Agent Assist**                   |       |            |                |
-| Activate Agent Assist Workspace       |  +    | +          | +              |
-
-[^1]: provided by Cognigy.AI
-
-### Canned Responses
-
-| Actions                               | Agent   | Supervisor | Administrator  |
-|---------------------------------------|-------- |------------|----------------|
-| **Canned Responses**                  |         |            |                |
-| Add a Canned Response                 |  + [^2] | + [^3]     | + [^3]         |
-| Edit a Canned Response                |  + [^2] | + [^3]     | + [^3]         |
-| Delete a Canned Response              |  + [^2] | + [^3]     | + [^3]         |
-| Import Canned Responses               |  + [^2] | + [^3]     | + [^3]         |
-
-[^2]: available Level: **Personal**
-
-[^3]: available Levels: **Personal**, **Global** and **Team**
-
-### Conversations
-
-| Actions                               | Agent | Supervisor | Administrator  |
-|---------------------------------------| ------|------------|----------------|
-| Resolve Conversations                 |  +    | +          | +              |
-| Clear Conversation History            |  -    | +          | +              |
-| Mute Conversation                     |  +    | +          | +              |
-| Send Transcript                       |  +    | +          | +              |
-| Edit Contact                          |  -    | +          | +              |
-| Assign an Agent                       |  +    | +          | +              |
-| Assign a Team                         |  +    | +          | +              |
-| Select Priority                       |  +    | +          | +              |
-| Filter Conversations                  |  +    | +          | +              |
-| Sort Conversations                    |  +    | +          | +              |
-| Search for messages in conversations  |  +    | +          | +              |
-
-### Inboxes
-
-| Actions                               | Agent | Supervisor | Administrator  |
-|---------------------------------------|-------|------------|----------------|
-| Create an Inbox                       |  -    | -          | +              |
-| Edit an Inbox                         |  -    | -          | +              |
-| Delete an Inbox                       |  -    | -          | +              |
-| Create Assist Bot                     |  -    | -          | +              |
-| Edit Assist Bot                       |  -    | -          | +              |
-| Delete Assist Bot                     |  -    | -          | +              |
-| Add Agents to the Inbox               |  -    | -          | +              |
-| Remove Agents from the Inbox          |  -    | -          | +              |
-| Conversation Assignment Settings      |  -    | -          | +              |
-
-### Reports
-
-| Actions                               | Agent | Supervisor | Administrator  |
-|---------------------------------------|-------|------------|----------------|
-| Overview                              |  -    | +          | -              |
-| Select Inbox                          |  -    | +          | +              |
-| Select Agents                         |  -    | +          | +              |
-| Select Labels                         |  -    | +          | +              |
-| Select Team                           |  -    | +          | +              |
-| Download Conversations Reports        |  -    | +          | +              |
-| Download Agent Reports                |  -    | +          | +              |
-| Download Label Reports                |  -    | +          | +              |
-| Download Inbox Reports                |  -    | +          | +              |
-| Download Team Reports                 |  -    | +          | +              |
-
-### Teams
-
-| Actions                               | Agent | Supervisor | Administrator  |
-|---------------------------------------|-------|------------|----------------|
-| Create a team                         |  -    | -          | +              |
-| Edit a team                           |  -    | -          | +              |
-| Delete a team                         |  -    | -          | +              |
-| Allow Auto Assign for a team          |  -    | -          | +              |
 
 ## Assign a Single Role
 
@@ -153,7 +160,7 @@ You can assign a single role to an Agent.
 
 To create an Agent with single role, do the following steps:
 
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign oneof the following roles:
+1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign one of the following roles:
 
     - `liveAgentAdmin`
     - `liveAgentSupervisor`
