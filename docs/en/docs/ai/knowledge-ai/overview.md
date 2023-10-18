@@ -154,7 +154,7 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
      <figure>
        <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/configure-search-extract-output.png" width="100%" />
      </figure>
-5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing the AI Agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side.
+5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing a virtual agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side.
 6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results. 
 7. Click **Save Node**. 
 8. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
