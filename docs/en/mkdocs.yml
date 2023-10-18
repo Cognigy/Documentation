@@ -64,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.62:
+    - release-notes/4.62.md
   - 4.61:
     - release-notes/4.61.md
   - release-notes/4.60.md
@@ -259,7 +261,6 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-        - ai/flow-nodes/audiocodes/agent-assist.md
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
         - ai/flow-nodes/agent-assist/identity-assist.md
@@ -375,7 +376,6 @@ nav:
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/whatsapp.md
-    - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
     - ai/endpoints/microsoft-teams.md
@@ -538,7 +538,7 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
-    - Agent Queue:
+    - Conversation Queue:
         - live-agent/conversation/conversation-queue.md
     - Routing:
         - live-agent/conversation/conversation-routing/overview.md

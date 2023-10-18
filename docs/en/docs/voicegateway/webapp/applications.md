@@ -57,7 +57,7 @@ To add extra vendor, follow these steps:
 
 The changes will be applied.
 
-### Call recording configuration
+## Call recording configuration
 
 Call recordings can be enabled at an account or application level for debugging purposes.
 
@@ -67,7 +67,7 @@ You must provide a Bucket Vendor and additional details and credentials in order
 
 After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
 
-#### Application level recording
+### Application level recording
 
 When enabled at the application level, only calls from a specific application will be recorded.
 

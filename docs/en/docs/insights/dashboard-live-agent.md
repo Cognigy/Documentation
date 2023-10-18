@@ -6,12 +6,12 @@
 
 # Live Agent (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49(Beta)-purple.svg)](../release-notes/4.49.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.62(Beta)-purple.svg)](../release-notes/4.62.md)
 
 !!! note
     The Live Agent dashboard is in Beta. We encourage you to try this feature out and provide us with feedback.
 
-The Live Agent dashboard displays Live Agent metrics for a specific Virtual Agent.
+The Live Agent dashboard displays Live Agent metrics for a specific virtual agent.
 
 Using this dashboard, you can:
 
@@ -37,7 +37,7 @@ These metrics are visualized in the following charts:
 
 The Indicator charts presents real-time data that refreshes every 30 seconds.
 
-### Live Agent Escalations
+### Live Agent Handovers
 
 Indicates the number of handovers. The handover occurs when a virtual agent transfers the conversation to a human agent. Multiple handovers may occur during a session.
 
