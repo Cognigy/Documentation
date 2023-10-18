@@ -67,10 +67,10 @@ Source table:
 ```
 Calculation:
 
-1. Sum of Intent Scores: `0.30 + 0.90 + 0.10 + 1 + 0.20 + 0.02 + 0.50 = 3.02`
-2. Number of Records: `7`
-3. `Average Intent Score = (Sum of Intent Scores) / (Number of Records)`
-4. `Average Intent Score = 3.02 / 7`
+1. Sum of Intent Scores = `0.30 + 0.90 + 0.10 + 1 + 0.20 + 0.02 + 0.50 = 3.02`
+2. Number of Records = `7`
+3. Average Intent Score = `(Sum of Intent Scores) / (Number of Records)`
+4. Average Intent Score = `3.02 / 7`
 
 Result: `0.43`
 
