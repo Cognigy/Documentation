@@ -7,9 +7,7 @@ hidden: false
 # Cognigy Live Agent OAuth
 
 You can log in to Live Agent using your Cognigy.AI account by utilizing the OAuth2 protocol.
-To configure this, follow the instructions provided in the [Helm Values](../helm-values/helm-values.md) article.
-
-Note that this is used as the default login for Live Agent.
+To configure this, follow the instructions provided in the [Helm Values](../helm-values/helm-values.md) article. Note that this approach is the default login method for Live Agent.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-cognigy-oauth.png" width="100%" alt="Live Agent OAuth screen and Cognigy Login" />
