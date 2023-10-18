@@ -54,8 +54,9 @@ To find the average intent score, Insights sums up all the intent scores and div
 
 Source table:
 
+```txt
 | Analytics Record | Intent Score |
-|------------------|--------------|
+| ---------------- | ------------ |
 | Record-1         | 0.30         |
 | Record-2         | 0.90         |
 | Record-3         | 0.10         |
@@ -63,7 +64,7 @@ Source table:
 | Record-5         | 0.20         |
 | Record-6         | 0.02         |
 | Record-7         | 0.50         |
-
+```
 Calculation:
 
 1. Sum of Intent Scores: `0.30 + 0.90 + 0.10 + 1 + 0.20 + 0.02 + 0.50 = 3.02`
@@ -79,8 +80,9 @@ Indicates the number of Intents that were matched with 100% efficacy.
 
 Source table:
 
+```txt
 | Analytics Record | Intent Score |
-|------------------|--------------|
+| ---------------- | ------------ |
 | Record-1         | 0.30         |
 | Record-2         | 0.90         |
 | Record-3         | 0.10         |
@@ -88,6 +90,7 @@ Source table:
 | Record-5         | 0.20         |
 | Record-6         | 0.02         |
 | Record-7         | 0.50         |
+```
 
 Result: In the provided source table, there is one record with an intent score of `1`, so the max intent score is `1`.
 
