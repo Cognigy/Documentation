@@ -1,10 +1,7 @@
 ---
 title: "Notifications"
 slug: "Notifications"
-description: "Notifications are messages or alerts that are generated to inform human agents about new events,
-activities, or interactions within a conversation chat system in Live Agent.
-These notifications serve as a way to keep agents updated and responsive to customer inquiries in a timely manner.
-"
+description: "Notifications are messages or alerts that are generated to inform human agents about new events, activities, or interactions within a conversation chat system in Live Agent. These notifications serve as a way to keep agents updated and responsive to customer inquiries in a timely manner."
 hidden: false
 ---
 
