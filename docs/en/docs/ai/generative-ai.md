@@ -25,7 +25,7 @@ In the Cognigy.AI interface, LLMs generate human-like and personalized content f
 To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
 
 <div style="text-align:center;">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 ## Prerequisites

@@ -1,84 +1,86 @@
 ---
- title: "Localization" 
- slug: "localization" 
- hidden: false 
+title: "Localization" 
+slug: "localization" 
+hidden: false 
 ---
+
 # Localization
 
-Cognigy.AI features a powerful Localization concept, that allows for customizability combined with content re-use. 
+Cognigy.AI offers a robust Localization feature for easy customization and content reuse.
+
+With the localization view, you can configure multiple locales.
+If one locale doesn't have content configured, the system automatically falls back to another locale that does.
+
+While you can add additional locales for content localization later on, note that once the primary locale is selected, it cannot be modified.
+
+You can localize your Flow in two ways:
+
+- [Standard Localization](#standard-localization)
+- [Localization with machine translation](../../tools/auto-localization.md) (provider credentials are required)
+
+## Standard Localization
+
+Within standard localization, you manually localize Nodes and Intents without the use of machine translation.
+
+### Add a Locale to an Agent
+
+{! _includes/ai/localization/add-locales.md !}
+
+### Localize a Flow
+
+1. Go to the existing Flow by selecting **Build > Flows**.
+2. In the upper-left corner of the Flow editor, select a locale that you recently created. 
+
+When switching localization, the Flow will change its appearance.
+Greyed-out Nodes indicate that they have not been localized yet. 
+
+{! _includes/ai/localization/switch-a-locale.md !}
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/19f8d6a-localization.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/compare-localization-in-flows.jpg" width="100%" />
 </figure>
 
-The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fall back to another Locale that has.
+Now you need to localize each Node separately.
 
-!!! warning "Primary locale not changeable"
-    While creating an agent you have to choose the so-called primary Locale.
-    You will usually start to create content for your virtual agent using this
-    Locale. While you can add additional Locales later on in order to localize
-    the content of your agent, you can't change the primary Locale.
+#### Add a Locale to a Node
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+To localize a Node manually, follow these steps:
 
-With Cognigy.AI 4.10.0 automatic translation of content such as Nodes / Intents has been added to the Cognigy.AI platform. Cognigy solution is a native integration of leading machine translation providers into the Conversational AI platform.
+1. In the Flow editor, select a Node that you want to localize.
+2. If the Node is not localized yet, click **Add Localization** in the Node editor. If the Node was localized before, delete a previous localization by clicking ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Remove Localization**.
+3. Select one of the following options:
+    - **Add Empty Localization** — create a new locale for the selected Node without any content. It's useful when you want to provide a new translation or content for a specific Node.
+    - **Copy from** — copy the content from an existing locale of the same Node or another source. It's useful when you want to reuse or duplicate content from a different locale.
+4. Fill in the corresponding fields with text that matches the selected locale.
+5. Click **Save Node**.
 
-!!! note "Automatic Localization"
-    More details about automatic localization you will find here: [Automatic Localization]({{config.site_url}}ai/tools/auto-localization/).
+#### Add a Locale to an Intent
 
-### Using localization in Flows
+To localize an Intent, follow these steps:
 
-<div class="divider"></div>
+1. In the upper-right corner of the Flow editor, select **NLU**.
+2. On the **Intents** tab, select an Intent that you want to localize.
+3. On the **Intent** page, click **Add Localization**. If the Intent was localized before, delete a previous locale by clicking ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Remove Localization**.
+4. Select one of the following options:
+    - **Add Empty Localization** — create a new locale for the selected Intent without any content. It's useful when you want to provide a new translation or content for a specific Intent.
+    - **Copy from** — copy the content from an existing locale of the same Intent or another source. It's useful when you want to reuse or duplicate content from a different locale.
+5. Click **Build model**.
+6. Click **Save**.
 
-Localizations act as groupings of specific content and can be applied in [**Flows**]({{config.site_url}}ai/resources/build/flows/) by using the Localization drop-down functionality.
+#### Add a Locale to Multiple Intents
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/c744feb-localization-inflows.jpg" width="100%" />
-</figure>
+To localize all Intents within your Flow, follow these steps:
 
-When switching Localization, the Flow will change its appearance. **Greyed out** Nodes indicate that they have not been localized yet. 
+1. In the upper-right corner of the Flow editor, select **NLU**.
+2. On the **Intents** tab, on the right side of the **+ Create Intent** button, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Add Localisations to all Intents**.
+3. In the **Add Localizations to all Intents** window, select one of the following options:
+    - **Create empty** — create a new locale for the selected Intent without any content. It's useful when you want to provide a new translation or content for Intents.
+    - **Copy from another locale** — copy the content from an existing locale of the same Intent or another source. It's useful when you want to reuse or duplicate content from a different locale.
+4. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing Intents within the current Flow locale.
+5. Click **Build model**. 
+6. Click **Save**.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/8c88b22-localization-inflows-compare.jpg" width="100%" />
-</figure>
+## More information
 
-!!! tip "Switch Locale during a conversation"
-    It is possible to change the locale of a flow during a conversation by using the [Switch Locale]({{config.site_url}}ai/flow-nodes/logic/switch-locale/) node.
-
-### Adding a Locale to a Node
-
-<div class="divider"></div>
-
-When a different Locale is activated in the Flow (by using the drop-down at the top), individual [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) can be overwritten with a specific Locale.
-
-This can be done by click on a specific Node and then selecting **Add Localization** at the top of a Node. As soon as a localization has been added, the Node will be colored again in the Flow Chat, indicating that a localization has taken place.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/a6dac29-localization-inflows-node.jpg" width="100%" />
-</figure>
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-
-### Translation Settings
-
-<div class="divider"></div>
-
-With Cognigy.AI 4.10.0 the Agent configuration has been extended with a section **Translation Settings**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Agent_Settings_Translation.jpg" width="100%" />
-  <figcaption>Agent Translation Settings</figcaption>
-</figure>
-
-#### Options
-
-The configuration options and their functions are listed below:
-
-| Parameter                         | Description                                                                                                                                 |
-|-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| **Translation Provider**          | currently available provider with Cognigy.AI 4.10.0: <br> - Microsoft Translator <br> - Google Cloud Translation <br> - DeepL Translate Pro |
-| **Translation Provider API Key**  | The API Key to use for the Translation Provider.                                                                                            |
-| **Request Retries**               | How often to retry calling the translation provider if an error occurs.                                                                     |
-| **Request Timeout**               | How long to wait for the provider to answer a request (in milliseconds).                                                                    |
-| **Sentence Cache Expiry Timeout** | How long to keep translated sentences in the cache (in seconds).                                                                            |
-| **Custom API Base URL**           | Define a custom endpoint instead of default (for example one for your region). Added with Cognigy.AI 4.16.0.                                |
+- [Automatic Translation](../../tools/auto-localization.md)
+- [Switch Locale Node](../../flow-nodes/logic/switch-locale.md)

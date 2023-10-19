@@ -1,73 +1,69 @@
 ---
- title: "Flow Setup" 
- slug: "live-agent-setup-handover-flow" 
- hidden: false 
+title: "Flow Setup" 
+slug: "live-agent-setup-handover-flow" 
+hidden: false 
 ---
-# Setup a Cognigy.AI Flow for Handover
-<div class="divider"></div>
+
+# Set up a Cognigy.AI Flow for Handover
+
+Once you've set up your Endpoint for handover to a Live Agent, the next step is configuring your Flow for this purpose within Cognigy.AI.
 
 ## Set up a Flow for Handover
 
-Once you have [Set up your Endpoint for Handover to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/), you can set up your [Flow]({{config.site_url}}ai/resources/build/flows/) for handover to Live Agent.
+Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md), you can set up your [Flow](../../../ai/resources/build/flows.md) for handover to Live Agent.
 
-Create a new Flow with a <a href="/ai/tools/agent-handover">Handover To Agent Node</a>, as seen in the following screenshot.
+To create a Live Agent Flow, follow these steps:
 
-<figure>
-    <img src="{{config.site_url}}live-agent/images/LA-handover-node.PNG" width="100%" alt="Cognigy.AI Handover Flow Screen">
-  <figcaption>Cognigy.AI Handover Flow Screen</figcaption>
-</figure>
+1. Open the Cognigy.AI interface.
+2. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
+3. Click **+ New Flow**.
+4. Specify a unique name and provide a relevant description. For example, `Customer Support Flow`.
+5. Click **Create**.
+6. In the Flow editor, add a Say Node.
+7. Open the Node editor by clicking the Say Node.
+8. In the **Text** field, enter the following text: `Hi, let's hand you over to the humans`.
+9. Click **Save Node**.
+10. Below the Say Node, add a Handover to Agent Node.
+11. Open the Node editor by clicking the Handover to Agent Node.
+12. In the **Handover Accepted Message** field, enter the following text: `Performing the Handover...`
+13. In the **Live Agent Settings** section, fill in the following fields:
+    - **Live Agent Inbox Id** — enter the Inbox ID that you obtained in the [previous step](live-agent-setup-handover-endpoint.md#account-id-and-api-key-in-live-agent).
+    - **Skills** — enter a list of skills that should be used to filter the available agents. For example, `technical support, billing`.
+    - **Languages** — enter a list of languages that should be used to filter the available agents. For example, `english, spanish`.
+    - **Priority** — select a priority for the conversation from the list. For example, `Urgent`.
+14. Click **Save Node**.
 
-Within the **Handover to Agent** Node you need to set the **Live Agent Inbox ID** field under **Live Agent Settings** with the _Inbox ID_ found in the [previous step]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-handover-endpoint/#account-id-and-api-key-in-live-agent).
+## Test your Connection
 
-## Login to Live Agent and Test Conversations
-<div class="divider"></div>
+1. Go to the Endpoint that you created.
+2. Click **Open Demo Webchat**.
+3. Start the conversation by typing `Hi` and clicking the **Send** button.
 
-Now it is time to test that everything is working.
+    <figure>
+        <img src="{{config.site_url}}live-agent/images/LA-webchat-hi.png" width="100%" alt="Webchat Screen">
+        <figcaption>Webchat Screen</figcaption>
+    </figure>
 
-Go back to the Endpoint Editor, click **Open Demo Webchat**.
+4. In the upper-right corner, click **User Menu > Live Agent**.
+5. In the left-side menu of the Live Agent interface, select **Conversations**.
+   On the **All** tab, the conversation that you started should appear in the conversation list.
+6. Open the conversation.
+7. In the **Reply** section, send a message to the user as a human agent.
 
-Say "Hi", and click the send button to start the Conversation. 
+    <figure>
+       <img src="{{config.site_url}}live-agent/images/LA-conversation-example.png" width="100%" alt="Live Agent Conversation">
+       <figcaption>Live Agent Conversation</figcaption>
+    </figure>
 
-<figure>
-    <img src="{{config.site_url}}live-agent/images/LA-webchat-hi.PNG" width="100%" alt="Webchat Screen">
-    <figcaption>Webchat Screen</figcaption>
-</figure>
+8. This message should also appear in the Cognigy.AI Webchat window.
 
-Next let's check the Live Agent conversations. 
+    <figure>
+        <img class="image-center" src="{{config.site_url}}live-agent/images/LA-webchat.png" width="100%" alt="Cognigy.AI Webchat">
+        <figcaption>Cognigy.AI Webchat</figcaption>
+    </figure>
 
-The Live Agent Inbox should contain the Cognigy.AI messages, plus what the customer has sent. 
+You have successfully completed your first conversation in Live Agent.
 
-Open a tab with Live Agent via the User Menu.
+## What's Next?
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/user-menu-with-live-agent-item.png" width="100%" />
-  <figcaption>User Menu</figcaption>
-</figure>
-
-Find the Conversation by clicking the Conversation bubble on the left. Next, click *All*.
-
-<figure>
-    <img src="{{config.site_url}}live-agent/images/LA-inbox-example.PNG" width="100%" alt="Live Agent Conversation Screen">
-    <figcaption>Live Agent Conversation Screen</figcaption>
-</figure>
-
-Open the Conversation, and send a message from Live Agent.
-
-<figure>
-    <img src="{{config.site_url}}live-agent/images/LA-conversation-example.PNG" width="100%" alt="Live Agent Conversation">
-    <figcaption>Live Agent Conversation</figcaption>
-</figure>
-
-This messages should also appear on the Cognigy.AI Webchat window.
-
-<figure>
-    <img class="image-center" src="{{config.site_url}}live-agent/images/LA-webchat.PNG" width="100%" alt="Cognigy.AI Webchat">
-    <figcaption>Cognigy.AI Webchat</figcaption>
-</figure>
-
-You have successfully completed your first Conversation in Live Agent.
-
-## Next Steps - Adding Agents and Admins
-Next, you can add more Agents and Admins, and assign them to Inboxes in Live Agent:
-
-- [Adding Agents and Admins to Live Agent]({{config.site_url}}ai/handover-providers/live-agent-setup/live-agent-setup-agents/)
+Next, you can [add more users](live-agent-setup-agents.md) with `Agent` and `Administrator` roles, and assign them to Inboxes in Live Agent:

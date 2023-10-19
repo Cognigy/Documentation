@@ -64,6 +64,10 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.62:
+    - release-notes/4.62.md
+  - 4.61:
+    - release-notes/4.61.md
   - release-notes/4.60.md
   - 4.59:
     - release-notes/4.59.md
@@ -204,6 +208,7 @@ nav:
       - ai/flow-nodes/services/http-request.md
       - ai/flow-nodes/services/mongo-db.md
       - ai/flow-nodes/services/ms-sql.md
+      - ai/flow-nodes/services/check-agent-availability.md
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
@@ -256,13 +261,16 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-        - ai/flow-nodes/audiocodes/agent-assist.md
     - Agent Assist:
         - ai/flow-nodes/agent-assist/overview.md
+        - ai/flow-nodes/agent-assist/identity-assist.md
+        - ai/flow-nodes/agent-assist/next-action-assist.md
+        - ai/flow-nodes/agent-assist/sentiment-assist.md
         - ai/flow-nodes/agent-assist/set-html-file.md
         - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
         - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
+        - ai/flow-nodes/agent-assist/transcript-assist.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -368,7 +376,6 @@ nav:
     - ai/endpoints/dialogflow.md
     - ai/endpoints/facebook-messenger.md
     - ai/endpoints/whatsapp.md
-    - ai/endpoints/google-actions.md
     - ai/endpoints/intercom.md
     - ai/endpoints/line-messenger.md
     - ai/endpoints/microsoft-teams.md
@@ -413,17 +420,21 @@ nav:
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
+      - agent-assist/plug-and-play-widgets.md
 
   - xApps:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
-      - ai/xApp/getting-started.md
+      - Build an xApp:
+          - ai/xApp/build/overview.md
+          - ai/xApp/build/first-xApp.md
+          - ai/xApp/build/xApp-with-multi-channels.md
+          - ai/xApp/build/standalone-xApp.md
+          - ai/xApp/build/custom-xApp-node.md
       - ai/xApp/architecture.md
-      - ai/xApp/supported-browsers-and-channels.md
-      - ai/xApp/build-an-xApp.md
       - ai/xApp/tokens.md
       - ai/xApp/api.md
-      - ai/xApp/tutorials.md
+      - ai/xApp/supported-browsers-and-channels.md
   - Knowledge AI:
       - ai/knowledge-ai/overview.md
       - ai/knowledge-ai/ctxt.md
@@ -508,6 +519,7 @@ nav:
       - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
+      - live-agent/installation/deployment/cognigy-live-agent-oauth.md
       - Helm Values:
         - live-agent/installation/helm-values/helm-values.md
         - live-agent/installation/helm-values/database.md
@@ -527,10 +539,12 @@ nav:
   - Conversations:
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
-    - Agent Queue:
-        - live-agent/conversation/agent-queue.md
+    - Conversation Queue:
+        - live-agent/conversation/conversation-queue.md
     - Routing:
-        - live-agent/conversation/conversation-routing.md
+        - live-agent/conversation/conversation-routing/overview.md
+        - live-agent/conversation/conversation-routing/manual-mode.md
+        - live-agent/conversation/conversation-routing/automatic-mode.md
     - Assist Bot:
         - live-agent/conversation/assist-bot.md
     - LA Agent Assist:
@@ -545,6 +559,7 @@ nav:
       - live-agent/settings/teams.md
       - live-agent/settings/inboxes.md
       - live-agent/settings/labels.md
+      - live-agent/settings/skills.md
       - live-agent/settings/automation-rules.md
       - live-agent/settings/canned-responses.md
       - live-agent/settings/attachments.md
@@ -553,7 +568,7 @@ nav:
   - live-agent/roles.md
   - live-agent/notifications.md
   - live-agent/profile-settings.md
-  - live-agent/cognigy-live-agent-oauth.md
+  - live-agent/glossary.md
   - Release Notes:
     - live-agent/release-notes/release-notes.md 
   - live-agent/FAQs.md   
