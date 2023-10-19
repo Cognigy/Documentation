@@ -6,10 +6,19 @@
 
 # Agents Report
 
-Click on the Agents tab in Reports and select an agent. A graph will show the Conversations of the chosen agent that have occurred during the selected days. 
+Agents are members of your Customer Support team. Agents will be able to view and reply to messages from your customers.
 
-A report can be generated for various time durations. This can be done by selecting a time window in the drop-down list, as shown below. By default, this is set for the last seven days.
+To generate a report, do the following:
 
+1. Go to Live Agent.
+2. In the In the upper-left corner, click **Reports**.
+3. On the upper-left side, click **Agents**.
+4. On the upper-left side of the report page, select an Agent in the drop-down list.
+5. On the upper-left side of the report page, select a time span in another drop-down list. 
+
+The chart will be updated with the corresponding data related to the selected Agent and time span.
+
+A report can be generated for various [time spans](overview.md) using the the drop-down list. By default, time span is set for the last seven days.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Agents_report.png" width="100%" alt="Live Agent Agents report" />
@@ -19,6 +28,10 @@ A report can be generated for various time durations. This can be done by select
 ## Report Indicators
 
 {! _includes/live-agent/reports.md !}
+
+## Bar Chart
+
+This chart visualizes the metrics, based on the indicator values on top. Click on an indicator value and you will get displayed the corresponding data in a bar chart.
 
 ## Download Agents Report
 
