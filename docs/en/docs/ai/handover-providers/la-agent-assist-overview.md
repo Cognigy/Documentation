@@ -13,7 +13,7 @@
 
 With Agent Assist, among other things, the following can be achieved:
 
-- Provide contextual information for the Agent (CRM records, ERP data, small talk clues, etc.)
+- Provide contextual information for the Agent (CRM records, ERP data, small talk clues, and more)
 - Allow quick access to resources such as knowledge base articles
 - Suggest replies (including media) which can be forwarded to the customer
 
