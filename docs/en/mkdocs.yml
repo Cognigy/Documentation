@@ -519,6 +519,7 @@ nav:
       - live-agent/installation/deployment/architecture.md
       - live-agent/installation/deployment/prerequisites.md
       - live-agent/installation/deployment/installation-using-helm.md
+      - live-agent/installation/deployment/cognigy-live-agent-oauth.md
       - Helm Values:
         - live-agent/installation/helm-values/helm-values.md
         - live-agent/installation/helm-values/database.md
@@ -567,7 +568,6 @@ nav:
   - live-agent/roles.md
   - live-agent/notifications.md
   - live-agent/profile-settings.md
-  - live-agent/cognigy-live-agent-oauth.md
   - live-agent/glossary.md
   - Release Notes:
     - live-agent/release-notes/release-notes.md 
