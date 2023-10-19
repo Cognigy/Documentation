@@ -12,7 +12,6 @@ The following diagram illustrates the process when the xApp Shell Page loads its
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/architecture.png" width="100%" />
 </figure>
 
-
 ## xApp Sequence Diagram
 
 The diagram illustrates the sequence of interactions between a user, Cognigy Flow, xApp Backend, and xApp Page in the context of an xApp architecture integration.
@@ -76,10 +75,8 @@ deactivate f
 19. The Cognigy Flow processes `input.data`. 
 20. The Cognigy Flow sends a message "Received your data from xApp" to the user confirming the data has been received.
 
-
-## More information
+## More Information
 
 - [Overview](overview.md)
-- [Build an xApp](build-an-xApp.md)
+- [Build an xApp](build/overview.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
-- [xApp Tutorials](tutorials.md)

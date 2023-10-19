@@ -195,7 +195,6 @@ The REST based endpoints are:
 | REST Endpoints   |
 |------------------|
 | Alexa            |
-| Google Actions   |
 | Dialogflow       |
 | Twilio           |
 | Twilio SMS       |

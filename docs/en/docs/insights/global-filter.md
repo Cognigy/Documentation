@@ -80,7 +80,7 @@ option when setting a Custom Timeframe.
 <div class="divider"></div>
 
 Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
-Endpoint examples are Webchat / Voice Gateway, Microsoft Teams, Google Actions.
+Endpoint examples are Webchat, Voice Gateway, Microsoft Teams.
 You can find more information here: [Endpoints](../ai/endpoints/overview.md)
 
 You can select one or more Endpoint(s) to be analyzed. 
