@@ -568,6 +568,7 @@ nav:
   - live-agent/notifications.md
   - live-agent/profile-settings.md
   - live-agent/cognigy-live-agent-oauth.md
+  - live-agent/glossary.md
   - Release Notes:
     - live-agent/release-notes/release-notes.md 
   - live-agent/FAQs.md   
