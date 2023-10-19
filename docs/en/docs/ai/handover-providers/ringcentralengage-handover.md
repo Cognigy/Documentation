@@ -13,7 +13,9 @@ hidden: false
 
 <div class="divider"></div>
 
-Cognigy has integrated **RingCentral Engage** as an additional handover provider that can be used by our customers to connect their users with real Agents (in third-party sources). You can read more about Agent Handover [here]({{config.site_url}}ai/tools/agent-handover/). 
+Cognigy has integrated **RingCentral Engage** as an additional handover provider
+that can be used by Cognigy customers to connect their users with human agents.
+You can read more about Agent Handover [here](../../ai/tools/agent-handover.md). 
 
 ## Setup
 <div class="divider"></div>
