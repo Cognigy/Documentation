@@ -6,14 +6,14 @@ hidden: false
 
 # Real-time Translation
 
-_Real-time translation_ instantly converts languages during live conversations, eliminating the need for pre-translation in typical [localization](../resources/manage/localization.md) scenarios.
+_Real-time translation_ instantly converts languages during live conversations, eliminating the need for pre-translation, as usually required in typical [localization](../resources/manage/localization.md) scenarios.
 
 With the Real-time translation feature, there's no need to have agents who speak all the required languages for your business. You can focus on just two or three core languages, but at the same time, by utilizing Cognigy's real-time translation capabilities, you can provide service to customers in up to a hundred languages.
 
 You can configure the Real-time translation feature within the [Real Time Translation](../endpoints/real-time-translation-settings.md) settings in the Endpoint.
 Real-time translation can be configured for any Endpoint type, including voice Endpoints, such as the Voice Gateway.
 
-Use this feature for the translating a conversation between the following actors:
+Use this feature for translating a conversation between the following actors:
 
 - [users and virtual agents](#users-and-a-virtual-agents)
 - [users and human agents](#users-and-a-virtual-agents)
