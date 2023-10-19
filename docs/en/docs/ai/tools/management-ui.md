@@ -1,8 +1,9 @@
 ---
- title: "Management UI" 
- slug: "management-ui" 
- hidden: false 
+title: "Management UI" 
+slug: "management-ui" 
+hidden: false 
 ---
+
 # Management UI
 
 ## Introduction
@@ -110,9 +111,9 @@ You can currently configure the following quotas & limits:
 
 | Attributes                                  | 	Description                                                                                                                 |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Max users            | 	This is the maximum amount of users that can be created within the organisation.                                                                    |
-| Max projects                         | The maximum amount of projects that can be created within this organisation.                                                       |
-| Max channels per project                   | 	The maximum amount of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite amount of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted                                   |
+| Max users            | 	This is the maximum number of users that can be created within the organisation.                                                                    |
+| Max projects                         | The maximum number of projects that can be created within this organisation.                                                       |
+| Max channels per project                   | 	The maximum number of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite number of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted                                   |
 | Max messages per day             | 	This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.     |
  
 Setting a quota to 0 disables the quota.
@@ -130,15 +131,15 @@ In the menu, select **Change Password Policy**.
 
 It is currently possible to configure the following attributes of the password policy:
 
-| Attributes                                  | 	Description                                                                                                                 |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Minimum Length            | 	The minimum amount of characters the password needs to consist of.                                                                               |
-| Maximum Length                         | The maximum amount of characters the password can consist of.                                                                             |
-| Minimum Amount of Lowercase                   | 	The minimum amount of characters in the password which have to be lowercase.                                                |
-| Minimum Amount of Uppercase             | 	The minimum amount of characters in the password which have to be uppercase.             |
-| Minimum Amount of Special Characters | The minimum amount of special characters in the password.	               |
-| Maximum Amount of Identical Characters                      | 	The maximum amount characters which can be identical in the password. |
-| Amount of failed logins resulting in account disabling       | 	Specifies how many times a user can attempt to log in before their account is disabled. Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI.                                           |
+| Attributes                                             | 	Description                                                                                                                                                                                                        |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Minimum Length                                         | The minimum number of characters the password needs to consist of.                                                                                                                                                  |
+| Maximum Length                                         | The maximum number of characters the password can consist of.                                                                                                                                                       |
+| Minimum Amount of Lowercase                            | The minimum number of characters in the password which have to be lowercase.                                                                                                                                        |
+| Minimum Amount of Uppercase                            | The minimum number of characters in the password which have to be uppercase.                                                                                                                                        |
+| Minimum Amount of Special Characters                   | The minimum number of special characters in the password.	                                                                                                                                                          |
+| Maximum Amount of Identical Characters                 | The maximum numner of characters which can be identical in the password.                                                                                                                                            |
+| Amount of failed logins resulting in account disabling | Specifies how many times a user can attempt to log in before their account is disabled. Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI. |
 
 Clicking the ``Save & Enforce`` button results in all users of the organisation to get logged out. Upon re-logging they will be required to change their password.
 
@@ -195,14 +196,14 @@ In the menu, select **Change Expiration Values**.
 
 All the expiration values define how many **minutes** it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. It is possible to configure the expiration of the following data:
 
-| Expiration value                    | 	Description                                                                                                                 |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Contact Profiles Expiration            | 	This expiration value determines the amount of minutes from when a contact profile was last active in a conversation until it is deleted.               |
-| Session Expiration                         | This expiration value determines the amount of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session. The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used.                   |
-| Conversation Expiration                        | 	This expiration value determines the amount of minutes from when a [conversation]({{config.site_url}}ai/tools/analytics/analytics-concepts/#conversations) is created until it is deleted from the database.               |
-| Analytics Expiration                              | 	This expiration value determines the amount of minutes from when the data of the [Analytics]({{config.site_url}}ai/tools/analytics/analytics-concepts) is created until it is deleted from the database.                                 |
-| Insight's Session Data Expiration | 	This expiration value determines the amount of minutes from when the data of Insight's Session is created until it is deleted from the database.               |
-| Steps Data Expiration                      | 	This expiration value determines the amount of minutes from when the data of [Steps]({{config.site_url}}ai/tools/analytics/analytics-concepts/#steps) is created until it is deleted from the database. |
+| Expiration value                  | 	Description                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Contact Profiles Expiration       | This expiration value determines the number of minutes from when a contact profile was last active in a conversation until it is deleted.                                                                                                                                                                                                                                                                                                                |
+| Session Expiration                | This expiration value determines the number of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session. The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used. |
+| Conversation Expiration           | This expiration value determines the number of minutes from when a [conversation](analytics/analytics-concepts.md) is created until it is deleted from the database.                                                                                                                                                                                                                                                                                     |
+| Analytics Expiration              | This expiration value determines the number of minutes from when the data of the [Analytics](analytics/analytics-concepts.md) is created until it is deleted from the database.                                                                                                                                                                                                                                                                          |
+| Insight's Session Data Expiration | This expiration value determines the number of minutes from when the data of Insight's Session is created until it is deleted from the database.                                                                                                                                                                                                                                                                                                         |
+| Steps Data Expiration             | This expiration value determines the number of minutes from when the data of [Steps](analytics/analytics-concepts.md#steps) is created until it is deleted from the database.                                                                                                                                                                                                                                                                            |
 
 For more information about data expiration in Insights, read [Data Expiration](../../insights/ttl.md) in the Insights documentation.
 
