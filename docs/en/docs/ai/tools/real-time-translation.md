@@ -15,10 +15,10 @@ Real-time translation can be configured for any Endpoint type, including voice E
 
 Use this feature for translating a conversation between the following actors:
 
-- [users and virtual agents](#users-and-a-virtual-agents)
-- [users and human agents](#users-and-a-virtual-agents)
+- [users and virtual agents](#users-and-virtual-agents)
+- [users and human agents](#users-and-human-agents)
 
-## Users and a Virtual Agents
+## Users and Virtual Agents
 
 Translation between a user and a virtual agent in real-time works for text-based and voice conversations.
 
@@ -38,13 +38,13 @@ Virtual agent's content is translated into Russian in real time. Everything in t
   <figcaption>Webchat Real-time translation and pre-selected language for user inputs</figcaption>
 </figure>
 
-### Users and Human Agents
+## Users and Human Agents
 
 Conversations with real-time translation between the user and a human agent are recorded for compliance purposes.
 
 In your Flow, a **Handover to Agent** Node must be added.
 
-### Webchat Endpoint with Chatwoot Handover Example
+### Chatwoot Handover Example
 
 Conditions:
 
