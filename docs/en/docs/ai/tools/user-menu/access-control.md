@@ -22,10 +22,6 @@ The **Users overview** lists all members of a particular **Organization**. Indiv
 
 With this release, the user list is improved with user "Last Active" information. The record with "-" indicates that either the user did not log in after the release of v4.19.0, or that the user has not yet logged in at all.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/1fe77fc-usermenu-accesscontrol.png" width="100%" />
-</figure>
-
 !!! note "Tip: Global Users and Local Users (Members)"
     Administrators can create **Global Users** on an organizational-level, that can then be assigned to specific Agents. These **Local Users** can have more granular roles within specific Agent projects that are configured using the [Members]({{config.site_url}}ai/resources/manage/members/) panel within each Agent.
 
@@ -36,10 +32,6 @@ Administrators can use the *Create new User* button to add a User to the Organiz
   * Email Address
   * Password
   * Confirm Password
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/0f3231e-usermenu-accesscontrol-newuser.jpg" width="100%" />
-</figure>
 
 !!! tip "Passwords can be changed anytime and are stored securely"
     The user can later change the password from the admin panel.

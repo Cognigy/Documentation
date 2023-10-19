@@ -24,7 +24,7 @@ _**Agents**_
 :  Members of your Customer Support team. Agents will be able to view and reply to messages from your users. On the Live Agent sidebar you can click Settings > Agents to configure it. To differentiate between virtual agents and human agents in the Live Agent documentation, we primarily use the [Human Agent](#h) term to denote members of the support team. For more information, read the [Agent](settings/agents.md) documentation.
 
 _**Agent Queue**_
-:  A list of conversations waiting for attention from Agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the Agent has not sent the first reply. The queue is visible to Agents on the Mine tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention. For more information, read the [Agent Queue](conversation/agent-queue.md) documentation.
+:  A list of conversations waiting for attention from Agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the Agent has not sent the first reply. The queue is visible to Agents on the Mine tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention. For more information, read the [Agent Queue](conversation/conversation-queue.md) documentation.
 
 _**Agent Status**_
 :  Agent statuses help manage the availability and workload of human agents, ensure consistent and efficient customer service, and provide transparency regarding the agent's availability to handle chat requests. For more information, read the [Agent Statuses](settings/agents.md) documentation.

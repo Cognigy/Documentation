@@ -33,7 +33,7 @@ For push notifications, the following requirements exist:
 
 ### Customization of Email Notifications
 
-If you have on-premise Live Agent installation, you can customize your [email template](installation/helm-values/email-templates.md).
+If you have an on-premise Live Agent installation, you can customize your [email template](installation/helm-values/email-templates.md).
 
 ## Configure Notifications
 
