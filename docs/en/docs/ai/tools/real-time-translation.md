@@ -1,22 +1,23 @@
 ---
- title: "Real-time Translation" 
- slug: "real-time-translation" 
- hidden: false 
+title: "Real-time Translation" 
+slug: "real-time-translation" 
+hidden: false 
 ---
+
 # Real-time Translation
 
-As of Cognigy.AI 4.10.0 real-time translation has been added to our Conversational AI product.
+_Real-time translation_ is a method where you don't need to pre-translate everything as you would with [Localization](../resources/manage/localization.md), settings. Even when using a machine for translation, it translates the conversation as it happens. 
 
-Real-time translation is a type of translation where not everything has to be pre-translated or pre-localized (see [Localization]({{config.site_url}}ai/resources/manage/localization/), even if it is done with machine translation, but where the translation machine translates the conversation as it happens.
+With the **Real-time translation** feature, there's no need to have agents who speak all the required languages for your business. You can focus on just two or three core languages, but at the same time, by utilizing Cognigy's real-time translation capabilities, you can provide service to customers in up to a hundred languages.
 
-Virtual Agents are deployed in Cognigy.AI with so-called [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/). Webchat, for example, is such an Endpoint and is linked to the currently selected Flow of the Virtual Agent.
-Real-time translation works on chats and for all our Endpoint types (for example the "Voice Gateway" Endpoint). The Voice Gateway (VG) can be configured in the settings for real-time translation in the same way as for a Webchat.
+You can configure the **Real-time translation** feature within the [Endpoint](../endpoints/overview.md) settings.
+Real-time translation can be configured for any Endpoint type, including voice Endpoints, such as the Voice Gateway.
 
-- You do not need to have agents that speak all the required languages of your business. You can concentrate on two or three core languages but using Cognigy real-time translation capabilities you can serve customers in a hundred languages.
- 
-- Real-time translation by Cognigy.AI works with any Live Agent system like Genesys, LivePerson, Ring Central,... 
+Use the **Real-time translation** feature for the translating a conversation between the following actors:
 
-- Cognigy.AI can act as a real-time translation service provider for your global service communications and also work with third-party contact center systems.
+- [users and virtual agents]()
+- [users and human agents]()
+
 
 We can consider two use cases regarding the real-time translation:
 
@@ -26,24 +27,11 @@ We can consider two use cases regarding the real-time translation:
 - **Translation between User and a Human Agent (Live Agent) in real-time**, whilst keeping a record of both for compliance purposes.
 
 
-## Real-Time Translation between User and Virtual Agent
+## Real-Time Translation between a User and a Virtual Agent
 
-in Cognigy.AI Virtual Agents are deployed by [Endpoints]({{config.site_url}}ai/resources/deploy/endpoints/), for example, using the [Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/webchat/). 
+In Cognigy.AI, Virtual Agents are deployed by [Endpoints](../resources/deploy/endpoints.md), for example, using the [Webchat Endpoint](../../ai/endpoints/webchat/webchat.md). 
 
 In case you would like to have the chat available in another language, you can do this by activating the **Real Time Translation Settings** as follows:
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/Webchat_real-time_translation_settings_4.png" width="100%" />
-  <figcaption>Endpoint Editor: Real Time Translation Settings</figcaption>
-</figure>
-
-1. Go to the Endpoint editor and activate **Real Time Translation** in the **Real Time Translation Settings**.
-
-2. **Enable Translation** by moving the slider.
-3. Select the **User Input Language** in a drop-down menu.
-4. Select the **Flow Language** in a drop-down menu.
-5. Confirm with **Save** the settings.
-6. To check functionality, click on **Open Webchat** to chat with the Virtual Agent. 
 
 **Example**: 
 
@@ -57,22 +45,6 @@ In Webchat, we're assuming that the language that is being typed in is Russian. 
 </figure>
 
 The whole conversation of everything is translated including e.g. calendar of the date picker (day, month, week,...).
-
-
-## Real-Time Translation Settings
-
-The configuration options and their functions are listed below:
-
-| Parameter                                  | 	Description                                                                                                                 |
-|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Configured Translation Provider            | 	The currently selected translation provider.                                                                                |
-| Enable Translation                         | Whether Translation is enabled for the Endpoint.                                                                             |
-| User Input Language                        | 	The language of the user inputs.                                                                                            |
-| Flow Language                              | 	The language of the Flow outputs.                                                                                           |
-| Set user input language on execution count | 	If the input language is set to 'Auto-Detect', it will be fixed to its current value on this execution count.               |
-| No-Translation Marker                      | 	Do not translate texts encapsulated in this marker (e.g. 'I love the Cognigy.AI platform' will not translate 'Cognigy.AI'). |
-| Always remove No-Translation Markers       | 	Whether we remove No-Translation Markers, even if the translation is not enabled.                                           |
-| Prevent payloads from being translated     | If active, prevents all user inputs based on [payloads]() to be translated.                                                  |
 
 ## Auto-Detect User Inputs
 

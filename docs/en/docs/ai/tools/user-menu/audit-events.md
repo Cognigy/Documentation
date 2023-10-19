@@ -11,10 +11,6 @@ Audit Events interface permits users with admin [role]({{config.site_url}}live-a
 
 ### Access Audit Events Dashboard
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/audit-events-button.png" width="100%" />
-</figure>
-
 As an admin user, you are able to see the **Audit Events** button on the user menu. Click on it to access the Audit Events dashboard:
 
 <figure>
