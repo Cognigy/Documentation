@@ -178,14 +178,15 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 You can assign roles to human agent.
 
-To create an Agent with a single role, do the following steps:
+To create an Agent with certain access rights, do the following steps:
 
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) and assign one of the following roles:
-    - `liveAgentAdmin`
+1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md).
+2. Assign one of the following roles to the Agent:
+    - `liveAgentAgent`
     - `liveAgentSupervisor`
-    - `liveAgentAgent`<br>If you have an Admin role in Cognigy.AI, you do not need to add the Administrator role for your user because the Cognigy.AI role already includes the right to administer Live Agent.
-2. Add any additional roles the Agent should have. For example, if you already have a `liveAgentAgent` role, you can add a `liveAgentSupervisor` role to allow access to the Overview report.
-3. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
+    - `liveAgentAdmin` <br>If you have an Admin role in Cognigy.AI, you do not need to add the Administrator role for your user because the Cognigy.AI role already includes the right to administer Live Agent.
+3. _(Optional)_ Add any additional roles the Agent should have. For example, if you already have a `liveAgentAgent` role, you can add a `liveAgentSupervisor` role to allow access to the Overview report.
+4. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
 
 To see the roles applied to the Agent, the specific Agent must log in once to have the roles applied.
 
