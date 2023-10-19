@@ -25,9 +25,8 @@ Cognigy has integrated **Chatwoot** as an additional handover provider. This int
 - You need two IDs that are listed in the Chatwoot address line:
 
     - **Account ID** is a unique number for you as the user.
-    - **Inbox ID** is not unique and will be created newly with every new channel.
-
-  Both IDs are required to use the new Inbox channel. You can find them in your Chatwoot URL. For example, `https://app.chatwoot.com/app/account/6607/inbox/5446`, where the Account ID is `6607` and the Inbox ID is `5446`.
+    - **Inbox ID** is not unique and will be created newly with every new channel.<br>
+    Both IDs are required to use the new Inbox channel. You can find them in your Chatwoot URL. For example, `https://app.chatwoot.com/app/account/6607/inbox/5446`, where the Account ID is `6607` and the Inbox ID is `5446`.
 
 ### Agents in Chatwoot
 
@@ -45,13 +44,13 @@ To configure the webhook for the **Inbox** incoming messages, follow these steps
 
 1. In the left-side menu of the **Chatwoot** main page, click **Inboxes**. 
 2. To start the Inbox creation and configuration procedure, click **Add Inbox**.
+3. Create an API channel by selecting the **API channel** and entering a channel name. 
 
     <figure>
       <img class="image-center" src="{{config.site_url}}ai/endpoints/images/inbox-create-api-channel-edit.png" width="100%" />
     </figure>
 
-3. Create an API channel by selecting the **API channel** and entering a channel name. 
-4. Enter the Endpoint Base URL in the **Webhook URL** field and append `/handover/chatwoot/` to the end of the URL, for example, `https://endpoint-trial.cognigy.com/handover/chatwoot`. 
+4. Enter the Endpoint Base URL in the **Webhook URL** field and append `/handover/chatwoot/` to the end of the URL, for example, `https://endpoint-trial.cognigy.com/handover/chatwoot`.
 5. Click **Create API Channel**. 
 6. Select the Agent that will be assigned to the Inbox messages, then confirm the action by clicking **Add agents**.
 
@@ -61,7 +60,7 @@ The new channel will be added to the Chatwoot Inbox.
 
 #### Set your Chatwoot Inbox
 
-To connect Chatwoot with your Agent, you need to specify to which Chatwoot Inbox you want the handover to go.
+To connect Chatwoot to your virtual agnent in Cognigy.AI, you need to specify to which Chatwoot Inbox you want the handover to go.
 
 To do this, follow these steps:
 
@@ -76,8 +75,8 @@ To connect the Endpoint to Chatwoot, do the following:
 1. Open your **Endpoint Editor** in Cognigy.AI and select the **Handover Settings**.
 2. Select **Chatwoot** as **Handover Platform**.
 3. Enter a Base URL for the Chatwoot instance. The Base URL is your Chatwoot installation URL extended by `/api/v1`. For example, `https://app.chatwoot.com/api/v1` serves as the Base URL, where `https://app.chatwoot.com` is the Chatwoot URL. Alternatively, you can use your on-premise Chatwoot API URL
-4. Enter Chatwoot **Account ID**. How to find the **Account ID**, see the section below.
-5. Enter the **API Key**. How to find the **API Key**, see the section below. 
+4. Enter Chatwoot **Account ID**.
+5. Enter the **API Key**.
 6. Click **Save** to confirm the entries.
 7. To check the functionality, click **Open Webchat** and start a conversation with a handover request.
 
