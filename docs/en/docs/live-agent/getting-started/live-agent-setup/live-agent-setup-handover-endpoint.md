@@ -4,7 +4,7 @@ slug: "live-agent-setup-handover-endpoint"
 hidden: false 
 ---
 
-# Setup a Cognigy.AI Endpoint for Handover
+# Set up a Cognigy.AI Endpoint for Handover
 
 When you create a new Agent in Cognigy.AI you are prompted to select an Endpoint. You can select, for example, **Cognigy Webchat** as a specific Endpoint to the Cognigy.AI platform. 
 For more information, see [Endpoints](https://docs.cognigy.com/ai/endpoints/overview/).
@@ -16,7 +16,7 @@ In case, you want to integrate a Handover process in your Flow, you need to conf
 Before setting up the Endpoint, check whether these steps are done:
 
 - [Live Agent is set up for your Organization](live-agent-setup-org.md)
-- [The Inbox is created for your Live Agent Account](live-agent-setup-introduction.md#setup-steps-index).
+- [The Inbox is created for your Live Agent Account](live-agent-setup-inbox.md).
 
 ## Handover Configuration
 

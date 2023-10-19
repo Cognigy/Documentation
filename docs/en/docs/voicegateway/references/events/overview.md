@@ -6,7 +6,7 @@ hidden: false
 
 # Voice Gateway Events
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../release-notes/4.61.md)
 
 During the call, the following voice events are recorded in the payload:
 
@@ -21,7 +21,7 @@ During the call, the following voice events are recorded in the payload:
 | [RECOGNIZED_DTMF](RECOGNIZED_DTMF.md)                         | The DTMF code was recognized by the virtual agent.                                                                       |
 | [TRANSFER_DIAL_ERROR](TRANSFER_DIAL_ERROR.md)                 | The call transfer using the `Dial` method failed due to various reasons, like unreachable destination or network issues. |
 | [TRANSFER_DIAL_SUCCESS](TRANSFER_DIAL_SUCCESS.md)             | The call transfer using the `Dial` method succeeded with the new phone line established to the destination.              |
-| [TRANSFER_REFER_ERROR](TRANSFER_REFER_ERROR)                  | The call transfer using the `Refer` method failed, possibly due to an unavailable or rejecting destination.              |
+| [TRANSFER_REFER_ERROR](TRANSFER_REFER_ERROR.md)               | The call transfer using the `Refer` method failed, possibly due to an unavailable or rejecting destination.              |
 | [TRANSFER_REFER_SUCCESS](TRANSFER_REFER_SUCCESS.md)           | The call transfer using the `Refer` method succeeded, with the call responsibility passed to another destination.        |
 | [USER_BUSY](USER_BUSY.md)                                     | The user (caller) was busy and unable to answer the call or engage in the desired action.                                |
 | [USER_INPUT_TIMEOUT](USER_INPUT_TIMEOUT.md)                   | The virtual agent terminated the call because the user did not respond.                                                  |
