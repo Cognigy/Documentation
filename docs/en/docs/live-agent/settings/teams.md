@@ -31,7 +31,7 @@ The new team will be added and displayed on the **Teams** page.
 
 ## Edit a Team
 
-To edit a team within Live Agent to a conversation, do the following:
+To edit a team within Live Agent, do the following:
 
 1. Open the Live Agent interface.
 2. Go to **Settings > Teams**. 
