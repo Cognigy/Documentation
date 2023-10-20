@@ -23,7 +23,7 @@ To create a team within Live Agent, do the following:
     - **Team name** — enter a meaningful name of the team, that associates with its responsibilities, for example, `Team Customer Support`.
     - **Team Description** — enter a short description about this team. 
 5. Click **Create team**.
-6. On the **Add agents to team** page, add available Agents you want to your newly created team. This lets you collaborate as a team on conversations and get notified on new events in the same conversation. You can also select all available agents at once for the new team by activating the setting next to **AGENT**.
+6. On the **Add agents to team** page, add available agents you want to your newly created team. This lets you collaborate as a team on conversations and get notified on new events in the same conversation. You can also select all available agents at once for the new team by activating the setting next to **AGENT**.
 7. Click **Add agents** to confirm your selection.
 8. Click **Finish**. 
 
