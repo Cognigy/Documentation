@@ -269,7 +269,7 @@ Promise<any>
 ## Text Cleaner
 <div class="divider"></div>
 
-### actions.getTextCleaner
+### getTextCleaner
 ---
 Is used to retrieve an instance of the [Text Cleaner](../../tools/text-cleaner.md) class, which exposes functions for cleaning text.
 
