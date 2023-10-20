@@ -47,7 +47,7 @@ If [call recordings](recent-calls.md#call-recordings) are enabled under [account
 | trace_id             | A unique identifier for the call. Can be used to track any type of call or session as it passes through different parts of the network. |
 | trunk                | A [carrier](carriers.md) name.                                                                                                          |
 
-### Call recordings
+## Call recordings
 
 When call recording is enabled, you can use the embedded media player to listen to recordings of calls for debugging purposes.
 

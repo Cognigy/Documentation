@@ -35,10 +35,6 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 This dropdown menu is where your Cognigy.AI is provided with the credentials to access your Facebook Messenger App.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/940f0ef-facebookMessageSettings.PNG" width="100%" />
-</figure>
-
 ### Page Access Token
 
 The page access token is provided by Facebook as an authentication variable to allow communication with your page.
@@ -56,16 +52,12 @@ Your Facebook app's Secret that is a randomly generated value from Facebook. The
 
 ## Facebook Profiles
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/FacebookProfilesSettings.PNG" width="100%" />
-</figure>
-
-
-In your Facebook Endpoint, you will notice a section called ``Facebook Profiles``. Here you can enable / disable several settings regarding how to handle contact profiles for the Facebook Endpoint.
+In your Facebook Endpoint, you will notice a section called **Facebook Profiles**.
+Here you can enable or disable several settings regarding how to handle contact profiles for the Facebook Endpoint.
 
 ### Request Profile Data
 
-The ``Request Profile Data`` exposes a contact's Facebook Profile information, such as their name and profile picture, in your Flow. If enabled, you can access this profile information in ci.data.profile in your Flow. The table below shows some common information you will find in the ci.data.profile object.
+The `Request Profile Data` exposes a contact's Facebook Profile information, such as their name and profile picture, in your Flow. If enabled, you can access this profile information in ci.data.profile in your Flow. The table below shows some common information you will find in the ci.data.profile object.
 
 <table>
     <tr>
