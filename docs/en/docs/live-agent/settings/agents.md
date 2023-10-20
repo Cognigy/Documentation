@@ -7,7 +7,7 @@ hidden: false
 
 # Agents
 
-An Agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users.
+An Agent is a member of your customer support team. Agents will be able to view and reply to messages from your users.
 
 On the Live Agent sidebar, click **Settings > Agents**.
 
