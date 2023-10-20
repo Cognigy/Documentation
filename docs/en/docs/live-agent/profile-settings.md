@@ -62,8 +62,3 @@ To send messages in the [conversation chat](conversation/conversation-workflow.m
 
 Here you can also find the user access token.
 This is used for the Live Agent API, and its actions are limited by the user role.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />
-  <figcaption>Access Token</figcaption>
-</figure>
