@@ -27,6 +27,10 @@ The chart will be updated with the corresponding data related to the selected In
   <figcaption></figcaption>
 </figure>
 
+The summary of key metrics is represented in the following charts:
+
+- [Overview Indicators](#overview-indicators) 
+- [Line Chart](#line-chart)
 
 ## Overview Indicators
 
@@ -52,10 +56,12 @@ The chart will be updated with the corresponding data related to the selected In
 |--------------------------------|---------------------------------------------------------------|
 | First Response Time (Avg) [^1] | Average time, e.g. in minutes or seconds, until an Agent first responded in a conversation with a customer.       |
 | Resolution Time (Avg)          | Average time, e.g. in hours and minutes, to resolve conversations with a customer.                        |
-| Queue Time (Avg)               | Average time, that an incoming conversation is waiting for assignment to an Agent.            |
+| Queue Time (Avg)  [^2]         | Average time, that an incoming conversation is waiting for assignment to an Agent.            |
 
 [^1]: (Avg) means, that the value is a calculated average value based on available data.
-
+[^2]: This value is countable only in two scenarios:
+1. auto assign conversations is turned off for the inbox.
+2. max agent conversation is activated and all agents in an inbox, that has auto assignment activated, are out of capacity to get additional conversations assigned.
 
 ## Line Chart
 
@@ -73,14 +79,14 @@ The list "Conversations by Agents" below the indicator values and bar chart indi
 
 | Title                    | Description                                                   |
 |--------------------------|---------------------------------------------------------------|
-| STATUS  [^2]             | Indicates status of Agent:  Away, Busy, Online, Offline.      |
+| STATUS  [^3]             | Indicates status of Agent:  Away, Busy, Online, Offline.      |
 | OPEN                     | Number of active conversations pending.                       |
 | QUEUED                   | Indicates number of assigned conversations waiting.           |
 | AVG FIRST RESPONSE TIME  | Indicates average value when an Agent responded first.        |
 | AVG RESOLUTION TIME      | Indicates average value when an Agent resolved a conversation.|
 | RESOLVED                 | Indicates how many conversations were resolved by Agents.     |
 
-[^2]: **Status** can be filtered by: None, Away, Busy, Offline and Online. 
+[^3]: **Status** can be filtered by: None, Away, Busy, Offline and Online. 
 
 
 <figure>

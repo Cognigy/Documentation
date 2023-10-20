@@ -62,3 +62,4 @@ To download any report as csv file, click **Download Report** on the top right s
 ## More information
 
 - [Insights: Dashboard Live Agent](../../insights/dashboard-live-agent.md)
+- [Live Agent Glossary](../glossary/)

@@ -26,6 +26,11 @@ A report can be generated for various [time spans](overview.md) using the the dr
   <figcaption></figcaption>
 </figure>
 
+The summary of key metrics is represented in the following charts:
+
+- [Report Indicators](#report-indicators) 
+- [Bar Chart](#bar-chart)
+
 ## Report Indicators
 
 {! _includes/live-agent/reports.md !}

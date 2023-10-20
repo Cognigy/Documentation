@@ -29,7 +29,7 @@ The chart will be updated with the corresponding data related to the selected ti
 The summary of key metrics is represented in the following charts:
 
 - [Report Indicators](#report-indicators) 
-- [Bar Chart](#bar-chart-diagram)
+- [Bar Chart](#bar-chart)
 
 ## Report Indicators
 
