@@ -19,7 +19,7 @@ When building an xApp, it's important to mitigate the risk of an XSS attack by f
 
 ## Helpful Materials
 
-- You can secure the application from XSS in many other ways by following the techniques in the [ross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
+- You can secure the application from XSS in many other ways by following the techniques in the [Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
 - It is also important to protect user data by enforcing a Content-Security-Policy. This can be achieved in various ways as described in the [Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ## More Information
