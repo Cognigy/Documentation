@@ -11,10 +11,10 @@ On building an XApp there is a possibility of a Cross-site-scripting attack and 
 ## Below guidelines can be followed to protect your XApp from XSS
 
 1. Always validate all variables and escape or sanitize them to protect against a threat.
-2. Any untrusted data should always be considered as text
-3. HTML Sanitization will remove dangerous HTML from a variable and return a safe string of HTML. OWASP recommends DOMPurify for HTML Sanitization
-4. Output Encoding is recommended when you need to safely display data exactly as a user typed it in. 
-5. Add javascript encoding on the untrusted data, but should be careful as it may change the application behavior.
+2. Any untrusted data should always be considered as text and not javascript nor HTML.
+3. Use HTML Sanitization to remove dangerous HTML from a variable and to return a safe string of HTML. OWASP recommends DOMPurify for HTML Sanitization.
+4. Use Output Encoding when you need to safely display data exactly as a user typed it in. 
+5. Add javascript encoding on the untrusted data, but should be careful as there is a chance of altering the application functionality.
 
 You can secure the application from XSS in many other ways by following the techniques in this [cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
 
