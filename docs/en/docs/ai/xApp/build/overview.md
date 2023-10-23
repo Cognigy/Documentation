@@ -11,6 +11,7 @@ To build xApps, use these tutorials:
 - [Build your First xApp](first-xApp.md)
 - [Build an xApp with Multiple Channels](xApp-with-multi-channels.md)
 - [Build a Standalone xApp](standalone-xApp.md)
+- [How to secure XApp from XSS?](protect-xApp-from-xss.md)
 
 Additionally, you can create your own [customized Node](custom-xApp-node.md).
 
