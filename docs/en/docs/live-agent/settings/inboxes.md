@@ -3,15 +3,20 @@ title: "Inboxes"
 slug: "inboxes" 
 hidden: false 
 ---
+
 # Inboxes
 
 _Inboxes_ are workspaces where human agents handle real-time chat interactions with customers and manage related tasks. Each Inbox ID represents the connection from Cognigy.AI to Live Agent. 
 
-You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. Additionally, there are several settings you can change in already existing Inboxes.
+You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. 
+
+Within an Inbox, you can customize the appearance of the Inbox, add and remove agents,
+configure message visibility for them, set up conversation routing, and add assistant bots.
+
 
 ## Create an Inbox
 
-To create an Inbox in Live Agent, follow these steps:
+To create an Inbox in Live Agent, do the following:
 
 1. Open the Live Agent interface. 
 2. Go to **Settings > Inboxes**.
@@ -25,24 +30,7 @@ To create an Inbox in Live Agent, follow these steps:
 
 A new Live Agent Inbox has been created. You can configure the Inbox settings by clicking **More settings**.
 
-### Add Agents to an Inbox
-
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
-4. On the **Collaborators** tab, go to the **Agents** section.
-5. In the agent list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
-6. Click **Update**.
-7. _(Optional)_  If you want your agents to see all messages within the Inbox, not just their own, enable the **Allow Agents to see all conversations in this inbox** setting in the **Conversation Assignment** section.
-
-### Remove Agents from an Inbox
-
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
-4. On the **Collaborators** tab, go to the **Agents** section. 
-5. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
-6. Click **Update**.
+The changes will be applied.
 
 ## Configure an Inbox Appearance
 
@@ -52,23 +40,11 @@ To configure the Inbox appearance, do the following:
 2. Go to **Settings > Inboxes**. 
 3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**. 
 4. In the **Inboxes Settings** tab window, you can update the following fields as needed:
-   - **Channel Avatar** - upload an image or icon that represents the Inbox. It is used for visual identification. 
-   - **Inbox Name** - edit the name of the Inbox here, which can be helpful for organizational purposes.
+    - **Channel Avatar** — upload an image or icon that represents the Inbox. It is used for visual identification. 
+    - **Inbox Name** — edit the name of the Inbox here, which can be helpful for organizational purposes.
 5. Click **Update**.
 
 The Inboxes fields and settings will be updated.
-
-## Delete an Inbox
-
-To delete an Inbox within Live Agent, do the following:
-
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the team you want to delete, click **Delete**. 
-4. You are prompted to enter the Inbox name you want to delete. 
-5. Click **Yes, Delete**.
-
-Deleting an Inbox is irreversible and will result in the loss of synchronization with Cognigy.AI.
 
 ## Copy an Inbox ID
 
@@ -86,6 +62,18 @@ To copy an Inbox ID, follow these steps:
 4. On the **Configuration** tab, go to the **Inbox ID** section.
 5. Click **Copy**.
 
+## Delete an Inbox
+
+To delete an Inbox within Live Agent, do the following:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > Inboxes**. 
+3. On the **Inboxes** page, to the right of the team you want to delete, click **Delete**. 
+4. You are prompted to enter the Inbox name you want to delete. 
+5. Click **Yes, Delete**.
+
+Deleting an Inbox is irreversible and will result in the loss of synchronization with Cognigy.AI.
+
 ## Control Conversation Routing within an Inbox
 
 To configure the conversation assignments within Live Agent, do the following:
@@ -93,27 +81,56 @@ To configure the conversation assignments within Live Agent, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Settings**.
 3. In the settings column, select **Inboxes**.
-4. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. When editing an Inbox in this field, you can define the following options:
+4. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. 
+5. In the **Conversation Assignment** sections, update the conversation assignment settings:
+    - [Allow auto assignment](../conversation/conversation-routing/automatic-mode.md#automatic-assignment)
+    - [Allow conversations to be reassigned](../conversation/conversation-routing/automatic-mode.md#automatic-reassignment)
 
-    4.1 **Enable** or **Disable** the automatic assignment of conversations to the Agents added to this Inbox. To set up the auto-assignment of conversations you can activate following options:
+The changes will be applied successfully.
 
-    - Consider conversation count
-    - Consider conversation skills
-    - Consider conversation languages
-    - Consider conversation priority
-   
-    You can choose to assign conversations based on the number of conversations an agent is currently handling, the skills of the agent and the skills required for the conversation, the languages of the agent and the languages required for the conversation, and the priority of the conversation. You can use a combination of these options.
+## Add Agents to an Inbox
 
-    4.2 **Enable** or **Disable** reassignment of a conversation to active Agents in this Inbox when the current Agent goes offline.
+To add agents to an Inbox, do the following:
 
-    4.3 **Enable** or **Disable** all conversations in this Inbox to be seen for all Agents, even if they are not assigned to any of them.
+1. Open the Live Agent interface.
+2. Go to **Settings > Inboxes**.
+3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
+4. On the **Collaborators** tab, go to the **Agents** section.
+5. In the agent list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
+6. Click **Update**.
 
+The changes will be applied.
 
+### Configure Agent Access to all Inbox Conversations
 
-------
+By default, your agents can see all messages within an Inbox. To change this behavior, do the following:
 
-5. In the **Inboxes Collaborators** tab window, you can update the following fields as needed:
-   - Conversation Assignment: Update conversation assignment settings. Details see below the section [Conversation Assignments](#conversation-assignments) below.
+1. Open the Live Agent interface.
+2. Go to **Settings > Inboxes**.
+3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab.
+4. In the **Conversation Assignment** sections, disable the **Allow Agents to see all conversations in this inbox** setting.
 
+The changes will be applied.
 
-   - Configure Assist Bots Settings: You can add and configure a new [Assist Bot](./../conversation/assist-bot.md). 
+## Remove Agents from an Inbox
+
+To remove the Inbox appearance, do the following:
+
+1. Open the Live Agent interface.
+2. Go to **Settings > Inboxes**.
+3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
+4. On the **Collaborators** tab, go to the **Agents** section.
+5. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
+6. Click **Update**.
+
+## Add an Assist Bot 
+
+Within an Inbox, you can add one or multiple Assist bots that will assist your human agents.
+To create such a bot, you need to have a separate Flow and Endpoint on the Cognigy.AI side.
+For more details, refer to [Assist Bot](./../conversation/assist-bot.md). 
+
+## More Information
+
+- [Agents](agents.md)
+- [Assist Bot](../conversation/assist-bot.md)
+- [Conversation Routing](../conversation/conversation-routing/overview.md)
