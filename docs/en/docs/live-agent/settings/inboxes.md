@@ -10,7 +10,7 @@ _Inboxes_ are workspaces where human agents handle real-time chat interactions w
 
 You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. 
 
-Within an Inbox, you can customize the appearance of the Inbox, add and remove agents,
+Within the Inbox setting, you can customize the appearance of the Inbox, add and remove agents,
 configure message visibility for them, set up conversation routing, and add assistant bots.
 
 
@@ -20,13 +20,13 @@ To create an Inbox in Live Agent, do the following:
 
 1. Open the Live Agent interface. 
 2. Go to **Settings > Inboxes**.
-3. In the upper-right corner, click the **+ Add Inbox** button. Live Agent will show you a screen to set up your Inbox. 
-4. On the Inbox setup page, fill in the following fields:
+3. In the upper-right corner, click **+ Add Inbox**. Live Agent will show you a screen to set up your Inbox. 
+4. On the **Inbox setup** page, fill in the following fields:
     - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`.
     - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
 5. In the **Pick agents for the inbox** list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
-6. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your Agents to the new Inbox.
-7. Select your required Agents in the selection list and click **Add Agents**.
+6. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your agents to the new Inbox.
+7. Select your required agents in the selection list and click **Add Agents**.
 
 A new Live Agent Inbox has been created. You can configure the Inbox settings by clicking **More settings**.
 
@@ -48,7 +48,7 @@ The Inboxes fields and settings will be updated.
 
 ## Copy an Inbox ID
 
-Each Inbox ID represents the connection from Cognigy.AI to Live Agent and is used in API and User Interface URL path names.
+Each Inbox ID represents the connection from Cognigy.AI to Live Agent and is used in API and UI URL path names.
 
 To connect an Inbox to Cognigy.AI,
 copy the ID of the Inbox
@@ -64,6 +64,8 @@ To copy an Inbox ID, follow these steps:
 
 ## Delete an Inbox
 
+Deleting an Inbox is irreversible and will result in the loss of synchronization with Cognigy.AI.
+
 To delete an Inbox within Live Agent, do the following:
 
 1. Open the Live Agent interface.
@@ -72,17 +74,16 @@ To delete an Inbox within Live Agent, do the following:
 4. You are prompted to enter the Inbox name you want to delete. 
 5. Click **Yes, Delete**.
 
-Deleting an Inbox is irreversible and will result in the loss of synchronization with Cognigy.AI.
+The selected Inbox will be deleted.
 
 ## Control Conversation Routing within an Inbox
 
 To configure the conversation assignments within Live Agent, do the following:
 
 1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. In the settings column, select **Inboxes**.
-4. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. 
-5. In the **Conversation Assignment** sections, update the conversation assignment settings:
+2. Go to **Settings > Inboxes**. 
+3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. 
+4. In the **Conversation Assignment** sections, update the conversation assignment settings:
     - [Allow auto assignment](../conversation/conversation-routing/automatic-mode.md#automatic-assignment)
     - [Allow conversations to be reassigned](../conversation/conversation-routing/automatic-mode.md#automatic-reassignment)
 
@@ -101,7 +102,7 @@ To add agents to an Inbox, do the following:
 
 The changes will be applied.
 
-### Configure Agent Access to all Inbox Conversations
+## Configure Agent Access to all Inbox Conversations
 
 By default, your agents can see all messages within an Inbox. To change this behavior, do the following:
 
