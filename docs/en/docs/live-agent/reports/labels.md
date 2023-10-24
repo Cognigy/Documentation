@@ -1,7 +1,7 @@
 ---
- title: "Labels" 
- slug: "labels" 
- hidden: false 
+title: "Labels" 
+slug: "labels" 
+hidden: false 
 ---
 
 # Labels Report

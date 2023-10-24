@@ -1,7 +1,7 @@
 ---
- title: "Inboxes" 
- slug: "inboxes" 
- hidden: false 
+title: "Inboxes" 
+slug: "inboxes" 
+hidden: false 
 ---
 
 # Inboxes Report
