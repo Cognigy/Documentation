@@ -13,51 +13,41 @@ hidden: false
 
 As a supervisor, this chart gives you an overview of all conversations related to a specific Inbox and indicates how many conversations came in within the last 24 hours. All displayed data are related to that 24 hours timespan. Furthermore, you will see an overview of the **Agent Status** and some metrics regarding **Conversation Handling**. At the bottom of the report page you will find a list of "Conversations by Agents" showing data of conversations the Agents are working on. 
 
-To create this chart and to see real-time conversations data in overview, do the following:
-
-1. Go to Live Agent.
-2. In the upper-left corner, click **Reports**.
-3. On the upper-left side, click **Overview**.
-3. On the upper-left side of the report page, select an **Inbox** you want to inspect in the drop-down list. 
-
-The chart will be updated with the corresponding data related to the selected Inbox.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA_Supervisor_overview_1.png" width="100%" alt="Live Agent Supervisor overview 1" />
-  <figcaption></figcaption>
-</figure>
-
 The summary of key metrics is represented in the following charts:
 
-- [Indicators](#indicators) 
-- [Line Chart](#line-chart)
+- [Indicators](#indicators)
+- [Line Charts](#line-chart)
 - [Tables](#tables)
+
+<figure>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA_Supervisor_overview_1.png" width="80%" alt="Live Agent Supervisor overview" />
+  <figcaption>Overview report</figcaption>
+</figure>
 
 ## Indicators
 
 ### Open Conversations
 
-**Open conversations** indicates the number of conversations, that currently have status  **Open, Queued and Unassigned**.
+Indicates the number of conversations that have the following statuses: Open, Queued, and Unassigned.
 
 ### Today
 
-**Today** indicates the number of conversations, that were handled on current day?
-
+Indicates the number of conversations that were handled on current day.
 
 ### Agent Status
 
-**Agent Status** indicates how many Agents currently are **Online, Busy, Away, or Offline**.
+Indicates the number of agents that currently are Online, Busy, Away, or Offline.
 
 
 ### Conversation handling
 
-**Conversation handling** indicates following real-time details:
+Conversation handling indicates the following real-time details:
 
 | Conversation handling          | Description                                                                                            |
 |--------------------------------|--------------------------------------------------------------------------------------------------------|
 | First Response Time (Avg) [^1] | Average time, in minutes or seconds, until an Agent first responded in a conversation with a customer. |
 | Resolution Time (Avg)          | Average time, in hours and minutes, to resolve conversations with a customer.                          |
-| Queue Time (Avg)  [^2]         | Average time, that an incoming conversation is waiting for assignment to an Agent.                     |
+| Queue Time (Avg)  [^2]         | Average time that an incoming conversation is waiting for assignment to an Agent.                      |
 
 [^1]: (Avg) means, that the value is a calculated average value based on available data.
 [^2]: This value is countable only in two scenarios:
@@ -66,7 +56,7 @@ The summary of key metrics is represented in the following charts:
 
 ## Line Chart
 
-### Key Conversation Metrics
+### Conversation Metrics
 
 The line chart indicates conversation details in a 24 h time grid, visualized with colored lines:
 
@@ -98,3 +88,18 @@ The list "Conversations by Agents" below the indicator values and bar chart indi
 <img src="{{config.site_url}}live-agent/images/LA_Supervisor_overview_2.png" width="100%" alt="Live Agent Supervisor overview 2" />
   <figcaption></figcaption>
 </figure>
+
+## View a Report
+
+To create this chart and to see real-time conversations data in overview, do the following:
+
+1. Go to Live Agent.
+2. In the upper-left corner, click **Reports**.
+3. On the upper-left side, click **Overview**.
+4. On the upper-left side of the report page, select an **Inbox** you want to inspect in the drop-down list.
+
+The chart will be updated with the corresponding data related to the selected Inbox.
+
+## More Information
+
+- [Reports](overview.md)
