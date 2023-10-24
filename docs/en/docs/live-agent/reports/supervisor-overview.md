@@ -29,10 +29,11 @@ The chart will be updated with the corresponding data related to the selected In
 
 The summary of key metrics is represented in the following charts:
 
-- [Overview Indicators](#overview-indicators) 
+- [Indicators](#indicators) 
 - [Line Chart](#line-chart)
+- [Tables]()
 
-## Overview Indicators
+## Indicators
 
 ### Open Conversations
 
@@ -65,6 +66,8 @@ The summary of key metrics is represented in the following charts:
 
 ## Line Chart
 
+## Key Conversation Metrics
+
 The line chart indicates conversation details in a 24 h time grid, visualized with colored lines:
 
 | Line graph                  | Description                                                      |
@@ -73,7 +76,9 @@ The line chart indicates conversation details in a 24 h time grid, visualized wi
 | Conversation Duration (min) | Minutes it took to solve a conversation from start to finish.    |
 | Queued Conversations        | Number of conversations that are not assigned to an Agent.       |
 
-## Conversations by Agents
+## Tables
+
+### Conversations by Agents
 
 The list "Conversations by Agents" below the indicator values and bar chart indicates following details of Agents:
 

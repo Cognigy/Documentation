@@ -1,28 +1,27 @@
 ---
- title: "Labels" 
- slug: "labels" 
+ title: "Teams" 
+ slug: "teams" 
  hidden: false 
 ---
 
-# Labels Report
+# Teams Report
 
-Labels are tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. You can mark conversations with lables for easy retrieval and sorting in a research.
+Teams are groups based on human agents' responsibilities. Agents can be part of multiple teams. You can assign conversations to a team when you are working collaboratively.
 
 To generate a report, do the following:
 
 1. Go to Live Agent.
 2. In the upper-left corner, click **Reports**.
-3. On the upper-left side, click **Labels**.
-4. On the upper-left side of the report page, select a label in the drop-down list.
+3. On the upper-left side, click **Team**.
+4. On the upper-left side of the report page, select a team in the drop-down list.
 5. On the upper-left side of the report page, select a time span in another drop-down list. 
 
-The chart will be updated with the corresponding data related to the selected label and time span.
+The chart will be updated with the corresponding data related to the selected team and time span.
 
 A report can be generated for various [time spans](overview.md) using the the drop-down list. By default, time span is set for the last seven days.
 
-
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA_Labels_report.png" width="100%" alt="Live Agent Labels report" />
+<img src="{{config.site_url}}live-agent/images/LA_Team_report.png" width="100%" alt="Live Agent Team report" />
   <figcaption></figcaption>
 </figure>
 
@@ -39,7 +38,6 @@ The summary of key metrics is represented in the following charts:
 
 This chart visualizes the metrics, based on the indicator values on top. Click on an indicator value and you will get displayed the corresponding data in a bar chart.
 
+## Download Team Reports
 
-## Download Label Reports
-
-To download a report as a CSV file for the chart, click **Download label reports** in the upper-right corner of the chart.
+{! _includes/live-agent/download-report.md !}

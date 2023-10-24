@@ -80,4 +80,4 @@ This chart visualizes the metrics, based on the indicator values on top. Click o
 
 ## Download Conversations Report
 
-To download a report as a CSV file for the chart, click **Download agent reports** in the upper-right corner of the chart. 
+{! _includes/live-agent/download-report.md !}
