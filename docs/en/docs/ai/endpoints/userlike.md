@@ -55,6 +55,6 @@ How to create and configure an Endpoint for a Userlike unified messaging channel
 
 You will find an overview of Third Party Endpoints [here]({{config.site_url}}ai/endpoints/overview/).
 
-## More information
+## More Information
 
 - [Help Center: Userlike Deployment](https://support.cognigy.com/hc/en-us/articles/360016310079)

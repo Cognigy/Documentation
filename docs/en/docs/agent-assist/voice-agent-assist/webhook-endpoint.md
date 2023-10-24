@@ -18,7 +18,7 @@ With this configuration, you can use the `Agent Message` token to create if-cond
 
 You can find the transformer code in the [Help Center article](https://support.cognigy.com/hc/en-us/articles/8726770604572#transformers-0-11).
 
-## More information for Voice Use Cases
+## More Information for Voice Use Cases
 
 - [Code Node](code-node.md)
 - [Transfer Node](transfer-node.md)

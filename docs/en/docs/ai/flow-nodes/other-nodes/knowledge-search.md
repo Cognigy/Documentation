@@ -45,7 +45,7 @@ Select a store from the list to allow the Node to retrieve the data.
 | Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                        |
 | Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                    |
 
-## More information
+## More Information
 
 - [Search Extract Output](search-extract-output.md) 
 - [Knowledge Search Overview](../../knowledge-ai/overview.md)

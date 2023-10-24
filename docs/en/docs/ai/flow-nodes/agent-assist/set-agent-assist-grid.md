@@ -25,7 +25,7 @@ Multiple nodes can be utilized within a single Agent Assist Flow, enabling you t
 |---------------------------------|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Agent Assist Grid Configuration | JSON | Updates the Agent Assist Workspace grid configuration. By default, there is a grid example in the code editor. You can view a grid with Tile IDs in the Node editor. |
 
-## More information
+## More Information
 
 - [Set HTML file](set-html-file.md)
 - [Set Adaptive card tile](set-adaptive-card-tile.md)

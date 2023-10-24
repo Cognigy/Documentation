@@ -45,7 +45,7 @@ You can manually unassign a conversation to an agent or team by following these 
 
 If the **Unassign** value appears in the **Assigned Agent** list, the conversation will be displayed in the list of unassigned conversations.
 
-## More information
+## More Information
 
 - [Automatic Conversation Mode](automatic-mode.md)
 - [Conversation Routing](overview.md)

@@ -71,7 +71,7 @@ In this tutorial, you will learn how to create a simple xApp from scratch. You w
 13. Click **Save Node**.
 14. Below the **Question** Node, add an **If** Node to your Flow and set the conditions to:
     ```text
-    input.data._cognigy._app.payload.status **=** new
+    input.data._cognigy._app.payload.status = new
     ```
     This allows you to update the xApp session with a different xApp passed based on the user's selection.
 15. Click **Save Node**.

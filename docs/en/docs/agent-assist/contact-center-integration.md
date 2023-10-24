@@ -12,7 +12,7 @@ We're continuously expanding the list of integration examples in Cognigy Help Ce
 
 - [Integration with Genesys](https://support.cognigy.com/hc/en-us/articles/8726770604572)
 
-## More information
+## More Information
 
 - [Agent Assist Workspace](overview.md)
 - [Getting started with Agent Assist](getting-started.md)

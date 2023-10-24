@@ -35,7 +35,7 @@ For instance, if a user asks about the latest release version, the agent can giv
   <figcaption>Next Action Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Transcript Assist](transcript-assist.md)
 - [Sentiment Assist Node](sentiment-assist.md)

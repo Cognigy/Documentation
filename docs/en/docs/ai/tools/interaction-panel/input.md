@@ -105,6 +105,6 @@ Flow nodes can dynamically access Input properties via [Tokens]({{config.site_ur
     You can copy the exact JSON path you need to reference a certain value in the Input object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
 
 
-## More information
+## More Information
 
 - [State]({{config.site_url}}ai/tools/interaction-panel/state/)

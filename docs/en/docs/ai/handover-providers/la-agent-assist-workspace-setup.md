@@ -50,7 +50,7 @@ This Workspace is accessible from the right side of the conversation chat.
 
 If the testing is successful, the Agent Assist setup is complete.
 
-## More information 
+## More Information 
 
 - [Agent Assist Workspace Overview](../../agent-assist/overview.md)
 - [Getting started with Agent Assist Workspace](../../agent-assist/getting-started.md)

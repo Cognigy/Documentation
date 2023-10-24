@@ -26,7 +26,7 @@ The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to 
 | JSON Data          | JSON          | The Data to send to the IFrame as a postMessage event.     |
 
 
-## More information
+## More Information
 
 - [Set HTML file](set-html-file.md)
 - [Set IFrame tile](set-iframe-tile.md)

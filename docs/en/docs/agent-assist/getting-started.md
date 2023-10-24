@@ -125,7 +125,7 @@ Once the human agent engages with the conversation, the grid will show an empty 
 The widgets will populate their content once the customer starts the conversation.
 
 
-## More information
+## More Information
 
 - [Agent Assist Workspace](overview.md)
 - [Agent Assist Configuration](configuration.md)

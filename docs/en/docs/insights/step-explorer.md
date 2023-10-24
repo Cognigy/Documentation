@@ -225,7 +225,7 @@ Activating one of them will open Transcript Explorer showing the following conve
   <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Transcript Explorer](transcript-explorer.md)
 - [Message Explorer](message-explorer.md)

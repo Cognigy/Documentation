@@ -64,7 +64,7 @@ When a user logs into Cognigy.AI via SSO for the first time, they need to do it 
 
 To log in to Cognigy.AI on the Login page, click **Log in with SSO** and enter your email. This will redirect you to your configured IDP if an IDP is configured for your organization.
 
-## More information
+## More Information
 
 - Help Center articles:
     - [SSO with Azure Active Directory](https://support.cognigy.com/hc/en-us/articles/360016310859-Azure-Active-Directory)

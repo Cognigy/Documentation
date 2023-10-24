@@ -43,7 +43,7 @@ This value is the **Verification Token** of your Slack app. This is obtained fro
 !!! note "Help Center"
     More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
 
-## More information
+## More Information
 
 - [Help Center: Slack Deployment](https://support.cognigy.com/hc/en-us/articles/360016307039-Slack-Deploy-an-Endpoint)
 - [Help Center: Slack Renaming a Bot](https://support.cognigy.com/hc/en-us/articles/360016271340-Slack-Rename-your-bot)

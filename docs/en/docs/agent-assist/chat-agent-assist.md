@@ -20,7 +20,7 @@ This approach lets you connect to the right session and send widget updates.
   <img class="image-center" src="{{config.site_url}}agent-assist/images/chat.png" width="80%" />
 </figure>
 
-## More information
+## More Information
 
 - [Agent Assist Workspace](overview.md)
 - [Getting started with Agent Assist](getting-started.md)

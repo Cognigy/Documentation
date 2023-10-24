@@ -52,7 +52,7 @@ Once the human agent receives this message, the testing behavior will vary depen
 
 If the testing is successful, the Agent Assist setup is complete.
 
-## More information
+## More Information
 
 - [LA Agent Assist Workspace Setup](la-agent-assist-workspace-setup.md)
 - [Agent Assist Workspace Overview](../../agent-assist/overview.md)

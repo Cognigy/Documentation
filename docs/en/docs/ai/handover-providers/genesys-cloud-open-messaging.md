@@ -153,6 +153,6 @@ Add a [Handover to Agent](../tools/agent-handover.md) Node without any additiona
 
 To test connection, click **Open Demo Web Chat**.
 
-## More information
+## More Information
 
 - [Genesys Cloud Guest Chat](genesys-cloud-guest-chat.md)
