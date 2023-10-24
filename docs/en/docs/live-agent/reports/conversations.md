@@ -9,7 +9,7 @@ hidden: false
 This report indicates the conversation metrics of all Agents handling incoming messages by the customers.
 When there is a significant increase or decrease in conversation handling based on the last entry, it will be displayed next to the indicator value with a percentage figure related to the calculated average value of the selected time period. Increasing trends will be indicated with a plus and a green colored figure, and decreasing trends will be indicated with a minus in red color.
 For conversations, an increasing number means you have got more customer messages.
-For solving problems, increasing number (e.g. +25%) means you got better at solving customer issues or got easier conversations.  
+For solving problems, increasing number, for example, `+25%`, means you got better at solving customer issues or got easier conversations.  
 The [time spans](overview.md) considered in the measurement, you can select in the upper drop-down list. If 'last 7 days' is selected, which is the default, the calculation period is from now seven days backward.
 
 To generate a report, do the following:

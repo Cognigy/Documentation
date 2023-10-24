@@ -18,7 +18,7 @@ To generate a report, do the following:
 
 The chart will be updated with the corresponding data related to the selected Inbox and time span.
 
-A report can be generated for various [time spans](overview.md) using the the drop-down list. By default, time span is set for the last seven days.
+A report can be generated for various [time spans](overview.md) using the drop-down list. By default, time span is set for the last seven days.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Inbox_report.png" width="100%" alt="Live Agent Inbox report" />

@@ -11,14 +11,14 @@ Agents are members of your Customer Support team. Agents will be able to view an
 To generate a report, do the following:
 
 1. Go to Live Agent.
-2. In the In the upper-left corner, click **Reports**.
+2. In the upper-left corner, click **Reports**.
 3. On the upper-left side, click **Agents**.
 4. On the upper-left side of the report page, select an Agent in the drop-down list.
 5. On the upper-left side of the report page, select a time span in another drop-down list. 
 
 The chart will be updated with the corresponding data related to the selected Agent and time span.
 
-A report can be generated for various [time spans](overview.md) using the the drop-down list. By default, time span is set for the last seven days.
+A report can be generated for various [time spans](overview.md) using the drop-down list. By default, time span is set for the last seven days.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Agents_report.png" width="100%" alt="Live Agent Agents report" />

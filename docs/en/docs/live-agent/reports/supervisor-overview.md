@@ -11,7 +11,7 @@ hidden: false
 !!! note
     This chart is only visible with the [Supervisor Role](../roles.md#supervisor).
 
-As a supervisor this chart gives you an overview of all conversations related to a specific Inbox and indicates how many conversations came in within the last 24 hours. All displayed data are related to that 24 hours timespan. Furthermore, you will see an overview of the **Agent Status** and some metrics regarding **Conversation Handling**. At the bottom of the report page you will find a list of "Conversations by Agents" showing data of conversations the Agents are working on. 
+As a supervisor, this chart gives you an overview of all conversations related to a specific Inbox and indicates how many conversations came in within the last 24 hours. All displayed data are related to that 24 hours timespan. Furthermore, you will see an overview of the **Agent Status** and some metrics regarding **Conversation Handling**. At the bottom of the report page you will find a list of "Conversations by Agents" showing data of conversations the Agents are working on. 
 
 To create this chart and to see real-time conversations data in overview, do the following:
 
@@ -31,7 +31,7 @@ The summary of key metrics is represented in the following charts:
 
 - [Indicators](#indicators) 
 - [Line Chart](#line-chart)
-- [Tables]()
+- [Tables](#tables)
 
 ## Indicators
 
@@ -53,11 +53,11 @@ The summary of key metrics is represented in the following charts:
 
 **Conversation handling** indicates following real-time details:
 
-| Conversation handling          | Description                                                   |
-|--------------------------------|---------------------------------------------------------------|
-| First Response Time (Avg) [^1] | Average time, e.g. in minutes or seconds, until an Agent first responded in a conversation with a customer.       |
-| Resolution Time (Avg)          | Average time, e.g. in hours and minutes, to resolve conversations with a customer.                        |
-| Queue Time (Avg)  [^2]         | Average time, that an incoming conversation is waiting for assignment to an Agent.            |
+| Conversation handling          | Description                                                                                            |
+|--------------------------------|--------------------------------------------------------------------------------------------------------|
+| First Response Time (Avg) [^1] | Average time, in minutes or seconds, until an Agent first responded in a conversation with a customer. |
+| Resolution Time (Avg)          | Average time, in hours and minutes, to resolve conversations with a customer.                          |
+| Queue Time (Avg)  [^2]         | Average time, that an incoming conversation is waiting for assignment to an Agent.                     |
 
 [^1]: (Avg) means, that the value is a calculated average value based on available data.
 [^2]: This value is countable only in two scenarios:
@@ -66,7 +66,7 @@ The summary of key metrics is represented in the following charts:
 
 ## Line Chart
 
-## Key Conversation Metrics
+### Key Conversation Metrics
 
 The line chart indicates conversation details in a 24 h time grid, visualized with colored lines:
 
@@ -80,16 +80,16 @@ The line chart indicates conversation details in a 24 h time grid, visualized wi
 
 ### Conversations by Agents
 
-The list "Conversations by Agents" below the indicator values and bar chart indicates following details of Agents:
+The list "Conversations by Agents" below the indicator values and bar chart indicates the following details of Agents:
 
-| Title                    | Description                                                   |
-|--------------------------|---------------------------------------------------------------|
-| STATUS  [^3]             | Indicates status of Agent:  Away, Busy, Online, Offline.      |
-| OPEN                     | Number of active conversations pending.                       |
-| QUEUED                   | Indicates number of assigned conversations waiting.           |
-| AVG FIRST RESPONSE TIME  | Indicates average value when an Agent responded first.        |
-| AVG RESOLUTION TIME      | Indicates average value when an Agent resolved a conversation.|
-| RESOLVED                 | Indicates how many conversations were resolved by Agents.     |
+| Title                   | Description                                                    |
+|-------------------------|----------------------------------------------------------------|
+| STATUS  [^3]            | Indicates status of Agent:  Away, Busy, Online, Offline.       |
+| OPEN                    | Number of active conversations pending.                        |
+| QUEUED                  | Indicates number of assigned conversations waiting.            |
+| AVG FIRST RESPONSE TIME | Indicates average value when an Agent responded first.         |
+| AVG RESOLUTION TIME     | Indicates average value when an Agent resolved a conversation. |
+| RESOLVED                | Indicates how many conversations were resolved by Agents.      |
 
 [^3]: **Status** can be filtered by: None, Away, Busy, Offline and Online. 
 
