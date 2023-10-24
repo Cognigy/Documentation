@@ -109,7 +109,7 @@ By default, your agents can see all messages within an Inbox. To change this beh
 1. Open the Live Agent interface.
 2. Go to **Settings > Inboxes**.
 3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab.
-4. In the **Conversation Assignment** sections, disable the **Allow Agents to see all conversations in this inbox** setting.
+4. In the **Conversation Assignment** section, disable the **Allow Agents to see all conversations in this inbox** setting.
 
 The changes will be applied.
 
