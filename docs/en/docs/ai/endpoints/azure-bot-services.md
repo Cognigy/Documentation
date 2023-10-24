@@ -117,7 +117,7 @@ The Optional Question Node is configured with only the AI channel.
 
 Result: The user will receive the text output from the AI channel.
 
-## More information
+## More Information
 
 
 - [Help Center: Microsoft Bot Framework Deployment ](https://support.cognigy.com/hc/en-us/articles/360016183720-Microsoft-Bot-Framework-Deploy-an-Endpoint)

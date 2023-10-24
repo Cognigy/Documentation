@@ -294,7 +294,7 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)

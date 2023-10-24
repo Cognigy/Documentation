@@ -19,7 +19,7 @@ If the Close Handover Node is not active and the human agent resolves a conversa
 
 You can use this Node after the [Set Handover Inactivity](set-handover-inactivity.md) Node.
 
-## More information
+## More Information
 
 - [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)
 - [Set Handover Inactivity](set-handover-inactivity.md)

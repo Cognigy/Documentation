@@ -90,7 +90,7 @@ To localize all Intents within your Flow using machine translation, follow these
 
 This process ensures that all Intents are automatically translated.
 
-## More information
+## More Information
 
 - [Localization](../resources/manage/localization.md)
 - [Switch Locale Node](../flow-nodes/logic/switch-locale.md)

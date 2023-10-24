@@ -127,7 +127,7 @@ In the following table, a dialogue between the user and the virtual agent is pre
 | **user:** What animals are allowed on a plane?<br> **virtual agent:** Passengers are allowed to bring a maximum of two animals (dogs or cats) on the plane, either in the cabin or in the cargo hold, as long as they are in approved transport containers.<br> **user:** Give me more details! <br> **virtual agent:** Unfortunately, I cannot answer your question. | **user:** What animals are allowed on a plane?<br> **virtual agent:** Passengers are allowed to bring a maximum of two animals (dogs or cats) on the plane, either in the cabin or in the cargo hold, as long as they are in an approved transport container.<br> **user:** Give me more details! <br> **virtual agent:** The approved transport container for animals on a plane must have a maximum size of 118 cm (55 x 40 x 23 cm) or 47 in (22 x 16 x 9 in) and a total weight, including the animal, not exceeding 8 kg. The container should be escape-proof, leak-proof, bite-proof, and lined with absorbent material. Only one transport container per passenger is allowed in the cabin, and the number of animals per container is limited to one, with exceptions for specific cases. |
 
 
-## More information
+## More Information
 
 - [Knowledge Search Node](knowledge-search.md)
 - [Knowledge Search Overview](../../knowledge-ai/overview.md)

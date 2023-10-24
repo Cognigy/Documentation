@@ -46,6 +46,6 @@ The default context is the initial state of the context when the session starts.
   <img class="image-center" src="{{config.site_url}}ai/tools/images/0654144-defaultContext.PNG" width="100%" />
 </figure>
 
-## More information
+## More Information
 
 - [Profile]({{config.site_url}}ai/tools/interaction-panel/profile/)

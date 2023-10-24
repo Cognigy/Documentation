@@ -40,7 +40,7 @@ Differing from the [Transcript Assist](transcript-assist.md) Node, this Node all
   <figcaption>Sentiment Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Transcript Assist](transcript-assist.md)
 - [Next Action Node](next-action-assist.md)

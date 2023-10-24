@@ -38,7 +38,7 @@ This allows human agents to have contextually relevant discussions without the n
   <figcaption>Identity Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Transcript Assist](transcript-assist.md)
 - [Sentiment Assist Node](sentiment-assist.md)

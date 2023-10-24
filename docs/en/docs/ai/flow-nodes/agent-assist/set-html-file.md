@@ -23,7 +23,7 @@ This Node allows you to display customized HTML content in the Agent Assist Work
 | HTML Content | HTML          | The HTML content to render inside the Widget.              |
 | JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.     |
 
-## More information
+## More Information
 
 - [Set Adaptive card tile](set-adaptive-card-tile.md)
 - [Set IFrame tile](set-iframe-tile.md)

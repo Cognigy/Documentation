@@ -270,7 +270,7 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard Overview](dashboard-overview.md)

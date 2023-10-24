@@ -129,6 +129,6 @@ Cognigy.AI can be connected directly to Google's Chatbase analytics platform. Wh
 **Dashbot**
 The Endpoint can also be setup to forward all relevant analytics to Dashbot.
 
-## More information
+## More Information
 
 - [Endpoints Overview](../../endpoints/overview.md)

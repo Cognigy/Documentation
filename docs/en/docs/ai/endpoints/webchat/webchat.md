@@ -80,7 +80,7 @@ That makes your Webchat configuration for your own purposes much easier now.
 !!! note "Note"
     The embedding code just loads the webchat with the correct endpoint configured, using the latest release. 
 
-## More information
+## More Information
 
 - [Deploy a Webchat Endpoint]({{config.site_url}}ai/endpoints/webchat/deploy-webchat-endpoint/)
 - [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)

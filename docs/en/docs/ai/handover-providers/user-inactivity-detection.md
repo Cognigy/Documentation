@@ -124,7 +124,7 @@ and **Go To Node and wait for Input** from the **Execution Mode** list in the **
 
 Test your Flow via the demo Webchat and any connected providers, for example, Cognigy Live Agent.
 
-## More information
+## More Information
 
 - [Set Handover Inactivity](../flow-nodes/other-nodes/set-handover-inactivity.md)
 - [Close Handover](../flow-nodes/other-nodes/close-handover.md)

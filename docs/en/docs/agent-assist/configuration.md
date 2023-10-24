@@ -26,7 +26,7 @@ Each tile must have a name, for example, `map`, `profile`, or `history`, that wo
 
 If Agent Assist Workspace receives updates for a Tile ID not present in the Agent Assist configuration, the tile will not be rendered. In such cases, a warning indicator will be displayed in the lower-right corner of the workspace, indicating that an "unknown tile update" has been received.
 
-## More information
+## More Information
 
 - [Agent Assist Workspace](overview.md)
 - [Getting started with Agent Assist](getting-started.md)

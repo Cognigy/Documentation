@@ -27,7 +27,7 @@ The following Handover Providers allow integrations with third-party products:
 - [Genesys Cloud (Beta)](genesys-cloud-guest-chat.md) 
 - [8x8](8x8.md)
 
-## More information
+## More Information
 
 - [User Inactivity Detection and Handling](user-inactivity-detection.md)
 - [Set Handover Inactivity](../flow-nodes/other-nodes/set-handover-inactivity.md)

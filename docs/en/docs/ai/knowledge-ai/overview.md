@@ -189,7 +189,7 @@ The table below presents limitations. These limitations are subject to future ch
 
 **A2**: The `429` error occurs when your organization's rate limit is exceeded on the side of your LLM's provider. To learn more, refer to your provider's documentation. For instance, if you're using the OpenAI API, check out the article [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
 
-## More information
+## More Information
 
 - [Cognigy Text Format](ctxt.md)
 - [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)

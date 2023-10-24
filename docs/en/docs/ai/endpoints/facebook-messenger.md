@@ -133,7 +133,7 @@ Here you can configure whether typing indicators should be used and how many mil
 !!! note "Help Center"
   For more detailed information on how to set up a **Facebook Messenger** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro).
 
-## More information
+## More Information
 
 * [HelpCenter: Facebook Messenger Intro](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
 * [HelpCenter: Facebook Messenger Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)

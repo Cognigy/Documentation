@@ -23,7 +23,7 @@ Cognigy.AI supports the following Nodes:
 - [Set Agent Assist grid](set-agent-assist-grid.md)
 - [Transcript Assist](transcript-assist.md)
 
-## More information
+## More Information
 
 - [Agent Assist](../../../agent-assist/overview.md)
 - [Getting started with Agent Assist](../../../agent-assist/getting-started.md)

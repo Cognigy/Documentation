@@ -174,7 +174,7 @@ To switch from the Transcript Explorer to the Message Explorer, proceed as follo
 
 The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
-## More information 
+## More Information 
 
 - [Message Explorer]({{config.site_url}}insights/message-explorer/)
 

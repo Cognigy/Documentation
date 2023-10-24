@@ -24,7 +24,7 @@ You can build these widgets by using the following Nodes:
   <figcaption>Plug and Play Widgets in Agent Assist Workspace</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Agent Assist](overview.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)

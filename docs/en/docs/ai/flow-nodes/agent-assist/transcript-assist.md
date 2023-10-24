@@ -43,7 +43,7 @@ thereby facilitating more effective and efficient communication and decision-mak
     <figcaption>Transcript Assist Widget in Agent Assist Workspace</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Next Action Node](next-action-assist.md)
 - [Sentiment Assist Node](sentiment-assist.md)

@@ -92,7 +92,7 @@ Describe the user sentiment in one very short line.
 
 [^*]: The Stream to Output feature is supported by the `gpt-3.5-turbo` and `text-davinci-003` models from Microsoft Azure OpenAI and OpenAI, as well as the Antrophic models `claude-v1-100k` and `claude-instant-v1`.
 
-## More information
+## More Information
 
 - [LLM](../../resources/build/llm.md)
 - [Generative AI](../../generative-ai.md)
