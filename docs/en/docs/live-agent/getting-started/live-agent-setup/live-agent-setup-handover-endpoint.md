@@ -16,7 +16,7 @@ In case, you want to integrate a Handover process in your Flow, you need to conf
 Before setting up the Endpoint, check whether these steps are done:
 
 - [Live Agent is set up for your Organization](live-agent-setup-org.md)
-- [The Inbox is created for your Live Agent Account](live-agent-setup-inbox.md).
+- [The Inbox is created for your Live Agent Account](live-agent-setup-inbox.md)
 
 ## Handover Configuration
 
