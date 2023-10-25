@@ -16,16 +16,17 @@ Assist Bots empower Support Live Agents in their daily work in helping  customer
   <figcaption></figcaption>
 </figure>
 
-## How to work with Assist Bots
+## Working with Assist Bots
 
-### Prerequisites
-Before setting up the required **Endpoints** in Cognigy.AI and creating an Assist Bot in Live Agent, check whether these steps are done:
+## Requirements
+
+Before creating and usng Assist Bots in Live Agent, check whether these steps are done:
 
 - [Live Agent is set up for your Organization](../getting-started/live-agent-setup/live-agent-setup-org.md)
 - [The Inbox is created for your Live Agent Account](../getting-started/live-agent-setup/live-agent-setup-inbox.md). 
 
-Live Agent conversation with a customer and Assist Bot interaction need separate channels, each with a separate Webchat Endpoint.
-To use Assist Bots in a Live Agent conversation you need to create first two Flows in Cognigy.AI:
+Live Agent conversation with a customer and Assist Bot interaction need separate channels, each using a required separate **Webchat Endpoint**.
+To use Assist Bots in a Live Agent conversation you need to create first two Flows in Cognigy.AI that comply with the following conditions:
 
 - **Main** Flow for customer conversation needs three configured entities:
     1. Handover Node to enable the handover to a Live Agent. 
@@ -35,9 +36,12 @@ To use Assist Bots in a Live Agent conversation you need to create first two Flo
 - **Assist Bot** Flow, prepared to be able for Live Agent assistance.
     1. WebChat Endpoint, to enable communication between Live Agent and Assist Bot.
 
-###  Testing Webchat conversation and Handover to Live Agent
+How to create a Virtual Agent with main Flow for Live Agent, read the [Agents](../../ai/resources/agents/agents.md) documentation. How to create a Flow with Handover to a Live Agent, see - [Live Agent Setup Handover Endpoint](../getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md)
 
-To make sure that your main Flow is configured correct and provides a Handover to a Live Agent, do the following:
+
+##  Testing Webchat conversation and Handover to Live Agent
+
+To make sure that your created **Main** Flow is configured correct and provides a Handover to a Live Agent, do the following:
 
 1. Open the Webchat Endpoint Editor for the main Flow in your Cognigy.AI interface.
 2. Click **Open Demo Webchat**.
@@ -45,7 +49,7 @@ To make sure that your main Flow is configured correct and provides a Handover t
 4. Go to Live Agent, click **Conversations** and select the corresponding **Inbox** for the Live Agent communication. You will find the conversation send to the Inbox by a handover initiated by the Virtual Agent Flow in Cognigy.AI. For testing you need to be assigned as Live Agent in the **Conversation Actions** on the right side of the conversations window. 
 5. As assigned Agent you can reply and continue the conversation. 
 
-### Create an Assist Bot for an Inbox in Live Agent
+## Create an Assist Bot for an Inbox in Live Agent
 
 !!! note
     Only users with Admin role can create, edit or delete Assist Bots in Live Agent.
@@ -82,14 +86,14 @@ This way, the Assist Bot is very helpful for the Live Agent, who is able to let 
 
 ## Complete a session with Assist Bot by Live Agent
 
-To complete a session of Live Agent and Assist Bot, proceed as follows:
+To complete a session with Assist Bot, proceed as follows:
 
 1. Click ![vertical ellipsis](../../assets/icons/vertical-ellipsis.svg).
 2. Select **Reset Session** in the drop-down list. The Assist Bot communication history will be cleared.
 
 ## Send a Transcript to assigned Agents 
 
-In case you want to send a conversation transcript to a specific email address or to another assigned Agent, do the following:
+In case you want to send a conversation transcript to a specific email address or to assigned Agents, do the following:
 
 1. Click **Send Transcript** in the top right corner in conversation details window. A selection list appears, providing following options:
      - Send transcript to the assigned agent
@@ -98,7 +102,7 @@ In case you want to send a conversation transcript to a specific email address o
 2. Select one option and click **Submit**. A transcript will be send to the selected receiver. 
 
 !!! note
-    The transcript email includes only the conversation between Live Agent and customer. When Live Agent called an Assist Bot for assistance, that interaction used another channel and is a different session and will not be a part of the send transcript.
+    The transcript email includes only the conversation history between Live Agent and customer. When Live Agent calls an Assist Bot for assistance, that interaction uses another channel and is a different session and will not be a part of the sent transcript.
 
 ## More Information
 
