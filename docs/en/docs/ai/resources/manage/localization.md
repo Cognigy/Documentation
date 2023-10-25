@@ -80,7 +80,7 @@ To localize all Intents within your Flow, follow these steps:
 5. Click **Build model**. 
 6. Click **Save**.
 
-## More information
+## More Information
 
 - [Automatic Translation](../../tools/auto-localization.md)
 - [Switch Locale Node](../../flow-nodes/logic/switch-locale.md)

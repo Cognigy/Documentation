@@ -34,7 +34,7 @@ To submit the **UUIValue** created in the Code Node before, add following to the
 
 {! _includes/agent-assist/genesys-note.md !}
 
-## More information for Voice Use Cases
+## More Information for Voice Use Cases
 
 - [Code Node](code-node.md)
 - [Webhook Endpoint](webhook-endpoint.md)

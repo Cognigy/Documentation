@@ -67,7 +67,12 @@ Calculation:
 
 1. Length for a particular session `Max(timestamp) - Min(timestamp)`.
 2. `Length of all sessions / total number of sessions`.
-   
+
+Example:
+
+1. Total Length = `3 minutes + 1 hour + 10 minutes + 14 minutes + 10 minutes  = 1 hour 37 minutes`
+2. Average Session Length = `1 hour 37 minutes / 5 = 19 minutes and 24 seconds`
+
 Result: `00:19:24`
 
 ### Positive Ratings
@@ -289,7 +294,7 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)

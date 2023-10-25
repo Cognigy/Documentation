@@ -17,7 +17,7 @@ To display the Agent Assist Workspace, you need to add a value in the respective
 - [For Chat Use Cases](chat-agent-assist.md) - add the **Agent Assist Embedding URL** value, which can be found in the Endpoint under Agent Assist.
 - [For Voice Use Cases](voice-agent-assist/voice-overview.md) - add the **UUIValue** value, which will be generated and forwarded via SIP headers during the transfer to the human agent.
 
-## More information
+## More Information
 
 - [Agent Assist Workspace](overview.md)
 - [Getting started with Agent Assist](getting-started.md)

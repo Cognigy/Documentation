@@ -37,7 +37,7 @@ Using the [Say](../message/say.md#handover-settings) Node, you can determine whe
 
 To close a handover based on the inactivity event, use the [Close Handover](close-handover.md) Node. Alternatively, you can initiate another inactivity behavior if necessary.
 
-## More information
+## More Information
 
 - [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)
 - [Agent Handover](../../tools/agent-handover.md)

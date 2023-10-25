@@ -12,7 +12,7 @@ The [Help Center article](https://support.cognigy.com/hc/en-us/articles/87267706
 
 {! _includes/agent-assist/genesys-note.md !}
 
-## More information for Voice Use Cases
+## More Information for Voice Use Cases
 
 - [Transfer Node](transfer-node.md)
 - [Webhook Endpoint](webhook-endpoint.md)

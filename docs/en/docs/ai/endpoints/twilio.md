@@ -79,7 +79,7 @@ Enable this toggle to allow the slots found by Twilio Autopilot to be passed to 
     More detailed information on how to set up a **Twilio** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016308619).
 
 
-## More information
+## More Information
 - [Help Center: Twilio Intro](https://support.cognigy.com/hc/en-us/articles/360016308619-Twilio-Intro)
 - [Help Center: Twilio Prerequisites](https://support.cognigy.com/hc/en-us/articles/360016308859-Twilio-Prerequisites)
 - [Help Center: Twilio Deploy a Voice Endpoint](https://support.cognigy.com/hc/en-us/articles/360016308979-Twilio-Deploy-a-Voice-Endpoint)

@@ -5,11 +5,8 @@ hidden: false
 ---
 # Overview
 
-Endpoints are the connector between your user interface and the Cognigy Agent. This connection can range from text based conversation to a conversation on your contact center phone-lines.
-
- <figure>
-  <img class="image-center" src="images/0c6834f-6d72d72-endpoints-screen.jpg" width="100%" />
-</figure>
+Endpoints are the connector between your user interface and the Cognigy Agent.
+This connection can range from text-based conversation to a conversation on your contact center phone-lines.
 
 ## Features
 
@@ -19,17 +16,9 @@ Every Endpoint has the following features:
 - it points to a single Locale of a single Flow of a single Snapshot
 - it can be disabled
 - customization of the [Data Protection & Analytics](data-protection-and-analytics.md) 
-- it can have its own [Transformer Function](transformers/transformers.md) 
+- it can have its own [Transformer Function](transformers/transformers.md)
 
- <figure>
-  <img class="image-center" src="images/9ca0d5a-endpointGeneral.PNG" width="100%" />
-</figure>
-
-Selected Endpoints also have the option to customize the NLU that provides the Intent and Slot mapping for the agent. 
-
- <figure>
-  <img class="image-center" src="images/675c2d2-nluConnector.PNG" width="100%" />
-</figure>
+Selected Endpoints also have the option to customize the NLU that provides the Intent and Slot mapping for the agent.
 
 The [NLU Connectors](../resources/build/nlu-connectors.md) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU]({{config.site_url}}ai/nlu/external-nlu/no-nlu/) option can be selected to completely disable the intent and slot mapping for an endpoint. 
 

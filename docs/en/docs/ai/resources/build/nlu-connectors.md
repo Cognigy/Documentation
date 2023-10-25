@@ -30,6 +30,6 @@ To find out how to connect to each supported external NLU service via the Help C
 
 To test and deploy an Agent using a third-party NLU, read [External NLU](../../nlu/external-nlu/external-nlu.md#testing-and-deploying-with-an-external-nlu) page.
 
-## More information
+## More Information
 
 - [NLU](../../nlu/nlu-overview/overview.md)

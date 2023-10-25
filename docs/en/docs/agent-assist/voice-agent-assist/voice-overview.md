@@ -20,7 +20,7 @@ The Voice configuration consists of 3 parts:
 
 {! _includes/agent-assist/genesys-note.md !}
 
-## More information
+## More Information
 
 - [Agent Assist Workspace](../overview.md)
 - [Getting started with Agent Assist](../getting-started.md)

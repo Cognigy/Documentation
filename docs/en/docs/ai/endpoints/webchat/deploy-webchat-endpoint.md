@@ -202,7 +202,7 @@ This field can be used to configure additional settings not available in the GUI
 
 {! _includes/ai/file-storage.md !}
 
-## More information
+## More Information
 
 - [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
 - [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)

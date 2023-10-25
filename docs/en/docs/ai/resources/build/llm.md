@@ -92,7 +92,7 @@ To delete a model, follow these steps:
 
 The model will be deleted from the list.
 
-## More information
+## More Information
 
 - [Generative AI](../../generative-ai.md)
 - [Knowledge AI](../../knowledge-ai/overview.md)

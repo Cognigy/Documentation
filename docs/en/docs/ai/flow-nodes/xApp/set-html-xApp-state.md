@@ -51,7 +51,7 @@ To access its methods, call `SDK.someExampleMethod()` in your code after loading
 | `SDK.submit(result: Object):Promise<void>`  | Submits the provided "result" object to the Flow. Has to be a JSON serializable object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `SDK.getCustomReadyHandler():Function`      | Returns a custom ready state handler. By default, the xApp Page will be ready as soon as the document is fully loaded. <br>  If you want to fetch additional content before showing the Page, you can override the `ready` event by getting a custom `ready handler` and calling it as soon as your xApp Page is ready manually. <br> The end user will see the xApp Loading Screen on the Shell Page. <br> Note: If loading the xApp Page takes more than 10 seconds, the xApp will be treated as `Failed to load` without the possibility of recovering. |
 
-## More information
+## More Information
 
 - [xApps](../../xApp/overview.md)
 - [xApp Nodes](overview.md)

@@ -1,9 +1,10 @@
 ---
- title: "FAQs" 
- slug: "faqs" 
- hidden: false 
+title: "Questions and Answers" 
+slug: "questions-and-answers" 
+hidden: false 
 ---
-# FAQs
+
+# Questions and Answers about Live Agent
 
 ## Live Agent
 
@@ -75,7 +76,7 @@ This information can be obtained from the Live Agent URL.
 
 A quick way is to select an Inbox on the dashboard screen. The URL will look like: ``https://<live-agent-domain>/app/accounts/1/inbox/4``.
 
-The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is **1** and inbox ID is **4**.
+The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is `1` and inbox ID is `4`.
 
 ### Can a TTL be set for attachments contained in messages?
 Yes, a TTL for attachments contained in messages per account can be defined under the [Account Settings](settings/account-settings.md#attachment-ttl).

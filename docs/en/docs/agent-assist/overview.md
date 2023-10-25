@@ -21,7 +21,7 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 - Access to 100% of Cognigy.AI features, including Extensions and extensive logic.
 
 
-## More information
+## More Information
 
 - [Getting started with Agent Assist](getting-started.md)
 - [Agent Assist Configuration](configuration.md)

@@ -59,6 +59,8 @@ To route your Contact Center or Phone Number to your Voice Gateway Endpoint, you
 
 ## Set up Voice Gateway for your Organization
 
+[![Version badge](https://img.shields.io/badge/Added in-v4.62-blue.svg)](../release-notes/4.62.md)
+
 This setting allows users with the [Account](./webapp/users.md#account) role to log in to the Voice Gateway Self-Service Portal using their Cognigy.AI user credentials. To enable this option, you need to follow these steps:
 
 To set up the Voice Gateway for your organization, follow these steps:

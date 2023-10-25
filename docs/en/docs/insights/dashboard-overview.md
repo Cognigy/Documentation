@@ -13,7 +13,7 @@ The Overview dasboard gives you a quick summary of important information about h
 The summary of key metrics is represented in the following charts:
 
 - [Indicators](#indicators) 
-- [Ring charts](#ring-chart)
+- [Ring charts](#ring-charts)
 - [Bar charts](#bar-charts)
 - [Line charts](#line-charts)
 
@@ -279,7 +279,7 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
