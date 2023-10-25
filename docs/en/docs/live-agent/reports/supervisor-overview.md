@@ -46,11 +46,11 @@ Indicates the number of agents that currently are Online, Busy, Away, or Offline
 
 Conversation handling indicates the following real-time metrics:
 
-| Metrics                   | Description                                                                                                                                                                                                                                                                                                                                                                                     |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| First Response Time (Avg) | The average time it takes for an agent to respond to a customer in a conversation.                                                                                                                                                                                                                                                                                                              |
-| Resolution Time (Avg)     | The average time required to resolve conversations with a customer.                                                                                                                                                                                                                                                                                                                             |
-| Queue Time (Avg)          | The average time that an incoming conversation waits for assignment to an agent.<br>This value is measurable in two scenarios:<br>- When auto-assigning conversations is turned off for the inbox.<br>- When the maximum agent conversation limit is activated, and all agents in an inbox with auto-assignment activated are at full capacity and unable to take on additional conversations." |
+| Metrics                   | Description                                                                                                                                                                                                                                                                                                                                                                                    |
+|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| First Response Time (Avg) | The average time it takes for an agent to respond to a customer in a conversation.                                                                                                                                                                                                                                                                                                             |
+| Resolution Time (Avg)     | The average time required to resolve conversations with a customer.                                                                                                                                                                                                                                                                                                                            |
+| Queue Time (Avg)          | The average time that an incoming conversation waits for assignment to an agent.<br>This value is measurable in two scenarios:<br>- When auto-assigning conversations is turned off for the .nbox.<br>- When the maximum agent conversation limit is activated, and all agents in an .nbox with auto-assignment activated are at full capacity and unable to take on additional conversations. |
 
 ## Line Chart
 
@@ -92,7 +92,7 @@ To view a report, do the following:
 
 1. Open the Live Agent interface.
 2. Go to **Reports > Overview**. 
-3. At the top of the report, from the **Inbox** list,select an Inbox you want to inspect.
+3. At the top of the report, from the **Inbox** list, select an Inbox you want to inspect.
 
 The report will be updated with the corresponding data related to the selected Inbox.
 
