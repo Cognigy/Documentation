@@ -6,7 +6,7 @@ hidden: false
 
 # Action
 
-Within a [Code Node](code.md) you are able to use the functions of the `actions / api` class. 
+Within a [Code Node](code.md) you are able to use the functions of the `actions` / `api` class. 
 
 !!! note "Available in Extensions"
     The following functions are available in Extensions as well. There, one can use the `api` object and, for example, execute an `api.say()`.
@@ -15,7 +15,7 @@ Within a [Code Node](code.md) you are able to use the functions of the `actions 
 
 ### actions.output / actions.say || api.output / api.say
 
-Performs a simple output to the contact - similar to the [Say Node](../message/say.md). 
+Executes a basic output to the contact, similar to the functionality of the [Say](../message/say.md) Node. 
 
 **Parameters**
 
