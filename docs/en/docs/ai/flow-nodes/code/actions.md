@@ -6,7 +6,7 @@ hidden: false
 
 # Action
 
-Within a [Code Node](code.md) you are able to use the functions of the `actions` / `api` class. 
+Within a [Code Node](code.md), you can use the functions of the `actions` and `api` classes.
 
 !!! note "Available in Extensions"
     The following functions are available in Extensions as well. There, one can use the `api` object and, for example, execute an `api.say()`.
