@@ -79,23 +79,22 @@ Provides information about the status and performance of agents:
 | AVG RESOLUTION TIME     | Indicates the average value when an Agent resolved a conversation. |
 | RESOLVED                | Indicates how many conversations were resolved by Agents.          |
 
-Additionaly, you can filter the data in the table according to the agent's status.
+Additionally, you can filter the data in the table according to the agent's status.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Supervisor_overview_2.png" width="100%" alt="Live Agent Supervisor overview 2" />
-  <figcaption></figcaption>
+  <figcaption>Conversations by Agents chart</figcaption>
 </figure>
 
 ## View a Report
 
-To create this chart and to see real-time conversations data in overview, do the following:
+To view a report, do the following:
 
-1. Go to Live Agent.
-2. In the upper-left corner, click **Reports**.
-3. On the upper-left side, click **Overview**.
-4. On the upper-left side of the report page, select an **Inbox** you want to inspect in the drop-down list.
+1. Open the Live Agent interface.
+2. Go to **Reports > Overview**. 
+3. At the top of the report, from the **Inbox** list,select an Inbox you want to inspect.
 
-The chart will be updated with the corresponding data related to the selected Inbox.
+The report will be updated with the corresponding data related to the selected Inbox.
 
 ## More Information
 
