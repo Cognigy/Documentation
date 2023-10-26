@@ -6,7 +6,7 @@ hidden: false
 
 # Supervisor Overview Report
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.46-blue.svg)](../release-notes/4.46.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.46-blue.svg)](../../release-notes/4.46.md)
 
 !!! note
     This report is only visible with the [Supervisor Role](../roles.md#supervisor).
