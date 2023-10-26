@@ -12,13 +12,13 @@ Only users with `Administrator` or `Supervisor` roles have access to the reports
 
 Related to your permission role, the following reports will be provided:
 
-- [Overview](supervisor-overview.md) (only for users with `Supervisor` role)
-- [Conversations](conversations.md)
-- [Agents](agents.md)
-- [Labels](labels.md)
-- [Inboxes](inboxes.md)
-- [Teams](teams.md)
-
+- Supervisor:
+    - [Overview](supervisor-overview.md)
+- Administrator: 
+    - [Agents](admin/agents.md)
+    - [Labels](admin/labels.md)
+    - [Inboxes](admin/inboxes.md)
+    - [Teams](admin/teams.md)
 
 ## View Reports
 

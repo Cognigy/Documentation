@@ -1,10 +1,10 @@
 ---
-title: "Supervisor Overview" 
-slug: "supervisor overview" 
+title: "Supervisor Report" 
+slug: "supervisor report" 
 hidden: false 
 ---
 
-# Supervisor Overview report
+# Supervisor Overview Report
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.46-blue.svg)](../release-notes/4.46.md)
 
@@ -79,6 +79,8 @@ Provides information about the status and performance of agents:
 | AVG RESOLUTION TIME     | Indicates the average value when an Agent resolved a conversation. |
 | RESOLVED                | Indicates how many conversations were resolved by Agents.          |
 
+You can modify an agent's status when they are online by clicking an agent icon in the **Agent** column of the table. You can choose to set their status as 'busy' or 'away.' However, if the agent is offline, any changes you attempt to make to their status will not be applied.
+
 Additionally, you can filter the data in the table according to the agent's status.
 
 <figure>
@@ -99,3 +101,4 @@ The report will be updated with the corresponding data related to the selected I
 ## More Information
 
 - [Reports](overview.md)
+- [Admin reports](admin/overview.md)
