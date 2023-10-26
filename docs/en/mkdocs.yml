@@ -554,7 +554,15 @@ nav:
         - ai/handover-providers/la-agent-assist-setup.md
         - ai/handover-providers/la-agent-assist-workspace-setup.md
   - Reports:
-      - live-agent/reports.md
+      - live-agent/reports/overview.md
+      - live-agent/reports/supervisor-overview.md
+      - Admin Reports:
+          - live-agent/reports/admin/overview.md
+          - live-agent/reports/admin/conversations.md
+          - live-agent/reports/admin/agents.md
+          - live-agent/reports/admin/labels.md
+          - live-agent/reports/admin/inboxes.md
+          - live-agent/reports/admin/teams.md
   - Settings:
       - live-agent/settings/overview.md
       - live-agent/settings/agents.md
