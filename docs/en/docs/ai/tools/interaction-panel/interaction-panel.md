@@ -1,8 +1,9 @@
 ---
- title: "Interaction Panel" 
- slug: "interaction-panel" 
- hidden: false 
+title: "Interaction Panel" 
+slug: "interaction-panel" 
+hidden: false 
 ---
+
 # Interaction Panel
 
 The Interaction Panel can be used to interact with your virtual agent. It can be accessed by clicking on the chat button at the top right of the interface when inside any Agent. 
@@ -26,7 +27,7 @@ The Interaction Panel will preview channel-specific output in case this has been
 </figure>
 
 !!! tip "Tip: Showing only selected output"
-    It is possible to only show specific output for a selected set of channels. This can be configured under the [Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#chat-output).
+    It is possible to only show specific output for a selected set of channels. This can be configured under the [Interaction Panel settings](interaction-panel/#chat-output).
 
 ### Input Modes
 Clicking on the secondary button located in the bottom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
@@ -41,7 +42,7 @@ Clicking on the secondary button located in the bottom-left corner of the Intera
 #### Chat
 When **Chat** is selected as the input mode, the **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
 
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [Interaction Panel settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#input). Any data sent to Cognigy.AI with a message is accessible via [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) under ```{{ " {{input.data}}" }}```
+It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [Interaction Panel settings](input.md). Any data sent to Cognigy.AI with a message is accessible via [CognigyScript](../cognigy-script.md) under `{{ " {{input.data}}" }}`
 
 #### Voice Call
 
@@ -59,7 +60,7 @@ Before starting a voice call, you need to configure an **Audio Provider** in the
   <img class="image-center" src="{{config.site_url}}ai/tools/images/agent-settings-audio-provider-settings.png" width="100%" />
 </figure>
 
-Based on the selected **Audio Provider**, the list of supported STT/TTS languages and voices will change. You can choose your preferred language and voice for your test call from the [Voice Call]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#voice-call_1) section of the Settings tab in the Interaction Panel. 
+Based on the selected **Audio Provider**, the list of supported STT/TTS languages and voices will change. You can choose your preferred language and voice for your test call from the [Voice Call](interaction-panel.md#voice-call) section of the Settings tab in the Interaction Panel. 
 
 After configuring the Audio Provider, language and voice, you can start the call by simply clicking the **Start Call** button.
 
@@ -108,7 +109,7 @@ When **Playbook** input mode is selected, a select field appears with the list o
 
 
 !!! tip "Tip: Configuring Playbook Execution"
-	You can further configure the Playbook execution under the [Interaction Panel Playbook settings]({{config.site_url}}ai/tools/interaction-panel/interaction-panel/#playbooks).
+	You can further configure the Playbook execution under the [Interaction Panel Playbook settings](interaction-panel.md#playbooks).
 
 ## Info
 <div class="divider"></div>
@@ -122,26 +123,26 @@ The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
 The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
 
 !!! note "Input object"
-    Head over to [Input]({{config.site_url}}ai/tools/interaction-panel/input/) for more information.
+    Head over to [Input](input.md) for more information.
 
 ### State
 State can be used to narrow the set of **Intents** that can be triggered, by actively excluding certain Intents from a certain state. 
 
 !!! note "State"
-    Head over to [State]({{config.site_url}}ai/tools/interaction-panel/state/) to learn more. 
+    Head over to [State](state.md) to learn more. 
 
 ### Context object
 
 The **Context** can be seen as the short-term memory of the **Virtual Agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
 
 !!! note "Context object"
-    Head over to [Context]({{config.site_url}}ai/tools/interaction-panel/context/) for more information. 
+    Head over to [Context](context.md) for more information. 
 
 ### Profile object
 The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
 
 !!! note "Profile object"
-    Head over to [Profile]({{config.site_url}}ai/tools/interaction-panel/profile/) for more information.
+    Head over to [Profile](profile.md) for more information.
  
 ## Settings
 <div class="divider"></div>
