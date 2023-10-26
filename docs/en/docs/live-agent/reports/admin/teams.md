@@ -18,8 +18,6 @@ To learn more about metrics, refer to [Report Metrics](overview.md#report-metric
   <figcaption>Teams report</figcaption>
 </figure>
 
-The summary of key metrics is represented in the following charts:
-
 ## View a Report
 
 To view a report, do the following:

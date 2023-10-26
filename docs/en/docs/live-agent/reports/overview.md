@@ -15,6 +15,7 @@ Depending on your role, the following reports will be available:
 - Supervisor:
     - [Overview](supervisor-overview.md)
 - Administrator: 
+    - [Conversations](admin/conversations.md)  
     - [Agents](admin/agents.md)
     - [Labels](admin/labels.md)
     - [Inboxes](admin/inboxes.md)

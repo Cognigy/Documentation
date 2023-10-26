@@ -52,7 +52,7 @@ Conversation handling indicates the following real-time metrics:
 | Resolution Time (Avg)     | The average time required to resolve conversations with a customer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | Queue Time (Avg)          | The average time that an incoming conversation waits for assignment to an agent.<br>This value is measurable in two scenarios:<br>- When [auto-assigning conversations](../conversation/conversation-routing/automatic-mode.md#automatic-assignment) is turned off for the Inbox.<br>- When the [conversation limit per agent](../settings/account-settings.md#conversation-limit-per-agent) is activated, and all agents in an Inbox with auto-assignment activated are at full capacity and unable to take on additional conversations. |
 
-## Line Chart
+## Line Charts
 
 ### Conversation Metrics
 
