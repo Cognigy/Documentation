@@ -6,11 +6,11 @@ hidden: false
 
 # Reports
 
-_Reports_ are analytic dashboards for supervisors and managers in customer service and support operations. These reports offer real-time insights into the performance and activities of agents and teams, allowing for the monitoring and evaluation of interactions with customers, facilitating quick adjustments, and driving improvements in customer support processes.
+_Reports_ are analytic dashboards for supervisors and managers in Live Agent. These reports offer real-time insights into the performance and activities of agents and teams, allowing for the monitoring and evaluation of interactions with customers, facilitating quick adjustments, and driving improvements in customer support processes.
 
 Only users with `Administrator` or `Supervisor` roles have access to the reports.
 
-Related to your permission role, the following reports will be provided:
+Depending on your role, the following reports will be available:
 
 - Supervisor:
     - [Overview](supervisor-overview.md)

@@ -6,18 +6,21 @@ hidden: false
 
 # Conversations Report
 
-This report shows a detailed overview of conversation metrics within an account. 
+This report shows detailed conversation metrics within an account. 
 
-The report lets you easily track trends, such as increases or decreases in the number of conversations, both incoming and outgoing messages, the average response time from agents, the average resolution time for user issues, and the number of successfully resolved user requests.
+The report lets you easily track trends,
+such as increases or decreases in the number of conversations, both incoming and outgoing messages,
+the average response time from agents, the average resolution time for customer issues,
+and the number of successfully resolved customer requests.
 
-To learn more about metrics, read [Report Metrics](overview.md#report-metrics).
+To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_conversations_report.png" width="100%" alt="Live Agent conversations report" />
   <figcaption>Conversations report</figcaption>
 </figure>
 
-You can filter a conversation using a time period fileter. The time period considered in the measurement, you can select in the upper drop-down list.
+You can filter data by date. You can select the time period for measurement from the upper drop-down list.
 
 For example, if **last 7 days** is selected, which is the default, the calculation period extends backward from now for seven days.
 

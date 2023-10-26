@@ -6,7 +6,7 @@ hidden: false
 
 # Administrator Reports
 
-Administratos can monitor the account's performance in terms of [agents](agents.md),
+Administrators can monitor the account's performance in terms of [agents](agents.md),
 [labels](labels.md), [Inboxes](inboxes.md), [teams](teams.md),
 and also track [conversation](conversations.md) metrics over time periods.
 
@@ -17,13 +17,13 @@ These metrics are presented in combined charts, including an indicator and a bar
 The combined chart includes the following charts:
 
 - **Indicator.** Represents a total or an average number. When there is a significant increase or decrease in conversation handling based on the last entry, it will be displayed next to the indicator value with a percentage figure related to the calculated average value of the selected time period. Increasing trends will be indicated with a plus and a green colored figure, and decreasing trends will be indicated with a minus in red color. For conversations, an increasing number means you have got more customer messages. For solving problems, increasing number, for example, `+25%`, means you got better at solving customer issues or got easier conversations.
-- **Bar chart.** The horizontal axis typically represents dates or time periods, illustrating how the metrics change over time, while the vertical axis represents various performance metrics.
+- **Bar chart.** The horizontal axis typically represents dates or time periods, illustrating how the metrics change over time, while the vertical axis represents various performance metrics such as the number of messages or conversations.
 
 When hovering the mouse cursor over the bar chart, details of metrics that happened can be seen.
 
 You can display the values per day, week, month or year, depending on the selected filters.
 
-For instance, in the image below, there is a conversations combined chart for the QA team to analyze performance data.
+For instance, in the image below, there is a combined chart for the QA team to analyze performance data.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Team_report.png" width="100%" alt="Live Agent Team report" />
@@ -36,8 +36,10 @@ Each report includes charts with the following metrics:
 
 {! _includes/live-agent/reports.md !}
 
+## More Information
 
-
+- [Reports](../overview.md)
+- [Supervisor report](../supervisor-overview.md)
 
 
 

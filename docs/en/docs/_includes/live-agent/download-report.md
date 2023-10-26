@@ -1,1 +1,1 @@
-To download a report as a CSV file, click the **Download Report** button located on the top-right side of the report page.
+To download a report as a CSV file, click **Download Report** in the upper-right corner of the report page.

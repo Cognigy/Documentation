@@ -6,11 +6,11 @@ hidden: false
 
 # Labels Report
 
-This report shows a detailed overview of labels metrics within an account.
+This report shows label-specific metrics, including the number of conversations, incoming and outgoing messages, average response time, average resolution time, and the count of successfully resolved user requests for each label.
 
-You can track how often various labels are used and which requests they cover.
+With this report, you can monitor how many conversations or requests are linked to particular labels. This allows you to recognize the most frequent and critical issues or topics. For instance, you can check if there's a rise in the number of conversations marked as `billing issues` and then take necessary steps accordingly.
 
-To learn more about metrics, read [Report Metrics](overview.md#report-metrics).
+To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Labels_report.png" width="100%" alt="Live Agent Labels report" />

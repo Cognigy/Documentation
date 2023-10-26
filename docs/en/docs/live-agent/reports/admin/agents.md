@@ -6,11 +6,11 @@ hidden: false
 
 # Agents Report
 
-This report provides agent-specific metrics, such as the number of conversations, outgoing messages, average response time, average resolution time, and the number of successfully resolved user requests, to assess and optimize an agent's performance in handling conversations.
+This report shows agent-specific metrics, such as the number of conversations, outgoing messages, average response time, average resolution time, and the number of successfully resolved user requests, to assess and optimize an agent's performance in handling conversations.
 
 By analyzing these metrics over time, you can identify trends and make data-driven decisions to improve the efficiency and quality of your customer support or communication processes. For example, if you notice an increase in average response time, you may need to allocate more resources or provide additional training to your agents. If the number of resolved requests is declining, it may signal a need for process improvements or better tools.
 
-To learn more about metrics, read [Report Metrics](overview.md#report-metrics).
+To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Agents_report.png" width="100%" alt="Live Agent Agents report" />
@@ -27,7 +27,7 @@ To view a report, do the following:
 
 The chart will be updated with the corresponding data related to the selected filters.
 
-## Download Agents Report
+## Download a Report
 
 {! _includes/live-agent/download-report.md !}
 
