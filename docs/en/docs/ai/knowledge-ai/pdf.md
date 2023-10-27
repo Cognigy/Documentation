@@ -14,7 +14,7 @@ When you use a PDF file as a knowledge source, the following chunk strategies wi
 
 ## Default Chunk Strategy
 
-Splits the extracted content into chunks based on fixed token lengths. This means that chunks are typically of equal size, regardless of the content's natural structure.
+Splits the extracted content into chunks based on fixed token lengths. This approach means that chunks are typically of equal size, regardless of the content's natural structure.
 
 The strategy is recommended for use in combination with a **Top K** value of `5` in the [Search Extract Output](../../ai/flow-nodes/other-nodes/search-extract-output.md) Node.
 It can be effective when you are searching for and extracting specific pieces of information.
