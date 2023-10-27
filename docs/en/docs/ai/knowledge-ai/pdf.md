@@ -27,7 +27,10 @@ Splits the extracted content into chunks based on the newline character.
 For more complicated formats, such as PDF, an attempt is made to discern the structure, for example, sections,
 and then split each into one or more chunks.
 
-To use this strategy, you need to add a postfix to the name of your file, such as `.preset_uiolc_ls`. For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial name for the file, `.preset_uiolc_ls` is the postfix to apply the Alternative Chunk Strategy, and `.pdf` is the file extension.
+To use this strategy, you need to add a postfix to the name of your file, such as `.preset_uiolc_ls`.
+For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
+`.preset_uiolc_ls` is the postfix to apply the Alternative Chunk Strategy,
+and `.pdf` is the file extension.
 
 Use Case: The Alternative Chunk Strategy is suitable for processing content with variable structures, especially when line breaks and document sections can be used as cues to create meaningful chunks. It allows for a more contextually relevant chunking approach.
 
