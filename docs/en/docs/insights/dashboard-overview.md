@@ -284,4 +284,3 @@ Result:
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
 - [Dashboard Live Agent](dashboard-live-agent.md)
-- [Dashboard Calls](dashboard-calls.md)

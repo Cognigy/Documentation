@@ -480,7 +480,6 @@ nav:
   - insights/dashboard-engagement.md
   - insights/dashboard-nlu-performance.md
   - insights/dashboard-live-agent.md
-  - insights/dashboard-calls.md
   - insights/step-explorer.md
   - insights/transcript-explorer.md
   - insights/message-explorer.md
