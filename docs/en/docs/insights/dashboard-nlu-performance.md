@@ -275,4 +275,3 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard Live Agent](dashboard-live-agent.md)
-- [Dashboard Calls](dashboard-calls.md)
