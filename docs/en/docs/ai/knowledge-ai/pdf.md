@@ -21,7 +21,7 @@ It can be effective when you are searching for and extracting specific pieces of
 
 Use Case: This strategy works well when you want consistency in the size of the processed chunks. It can be helpful in situations where you need a fixed, uniform chunk size for further processing or analysis.
 
-## Alternative Chunk Strategy Example
+## Alternative Chunk Strategy
 
 Splits the extracted content into chunks based on the newline character.
 For more complicated formats, such as PDF, an attempt is made to discern the structure, for example, sections,
@@ -40,7 +40,7 @@ and `.pdf` is the file extension.
 Use Case: The Alternative Chunk Strategy is suitable for processing content with variable structures,
 especially when line breaks and document sections can be used as cues to create meaningful chunks. It allows for a more contextually relevant chunking approach, making it a good choice when the content's natural structure varies or when you need to capture the logical divisions within a document.
 
-## Examples
+## Example
 
 Let's assume that we have the following text in PDF from the Cognigy blog:
 
@@ -66,7 +66,7 @@ Let's assume that we have the following text in PDF from the Cognigy blog:
 
 You can also download this [call-tracing-sample.pdf](https://docs.cognigy.com/ai/images/knowledge-ai/call-tracing-sample.pdf) file in the `.pdf` format.
 
-### Default Chunk Strategy Example
+### Default Case
 
 In the case of the Default Chunk Strategy, the system splits this text into 3 equal chunks.
 
@@ -108,7 +108,7 @@ In the case of the Default Chunk Strategy, the system splits this text into 3 eq
         immediately evident in transcriptions or basic audio playback.
         ```
 
-### Alternative Chunk Strategy Example
+### Alternative Case
 
 In the case of the Alternative Chunk Strategy, the system splits this text into 5 logical chunks.
 
