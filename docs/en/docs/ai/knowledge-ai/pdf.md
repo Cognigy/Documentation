@@ -14,31 +14,22 @@ When you use a PDF file as a knowledge source, the following chunk splitting str
 
 ## Default Chunk Strategy
 
-Splits the extracted content into chunks based on fixed token lengths. This approach means that chunks are typically of equal size, regardless of the content's natural structure.
+This strategy extracts content from PDF in an improved way, for example, regarding tables found in the PDF.
+It splits the extracted into chunks based on a fixed token length, which returns the best results based on our research.
 
-The strategy is recommended for use in combination with a **Top K** value of `5` in the [Search Extract Output](../../ai/flow-nodes/other-nodes/search-extract-output.md) Node.
-It can be effective when you are searching for and extracting specific pieces of information.
-
-Use Case: This strategy works well when you want consistency in the size of the processed chunks. It can be helpful in situations where you need a fixed, uniform chunk size for further processing or analysis.
+We recommended using this strategy in combination with **Top K** set to `5` in the [Search Extract Output](../../ai/flow-nodes/other-nodes/search-extract-output.md) Node.
 
 ## Alternative Chunk Strategy
 
-Splits the extracted content into chunks based on the newline character.
-For more complicated formats, such as PDF, an attempt is made to discern the structure, for example, sections,
-and then split each into one or more chunks.  
+This strategy can be used as an alternative extraction and chunking strategy. It works well if the document is logically pre-chunked based on double-line breaks. Additionally, it attempts to discern the structure, for example, sections, and then split each into one or more chunks.
+
+This strategy is applied when `cognigy.preset_uiolc_ls.pdf` is appended to the file name of an uploaded file. For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
+`.preset_uiolc_ls` is the preset to apply the Alternative Chunk Strategy, and `.pdf` is the file extension.
 
 Note that during text processing, the system may omit complex elements from PDFs,
 such as visually complex headers or lists,
 and not include such text in a chunk.
 Therefore, your text should be simple and preferably not contain complex elements.
-
-To use this strategy, you need to add a postfix to the name of your file, such as `.preset_uiolc_ls`.
-For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
-`.preset_uiolc_ls` is the postfix to apply the Alternative Chunk Strategy,
-and `.pdf` is the file extension.
-
-Use Case: The Alternative Chunk Strategy is suitable for processing content with variable structures,
-especially when line breaks and document sections can be used as cues to create meaningful chunks. It allows for a more contextually relevant chunking approach, making it a good choice when the content's natural structure varies or when you need to capture the logical divisions within a document.
 
 ## Example
 
