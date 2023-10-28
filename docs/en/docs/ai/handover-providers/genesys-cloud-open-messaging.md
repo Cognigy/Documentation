@@ -65,8 +65,8 @@ To create a Queue, follow these steps:
 2. Go to **Admin > Contact Center > Queues**.
 3. On the **Queues** page, click **Create Queue**.
 4. In the left-side **Create Queue** window, fill in the following fields:
-    - Name — enter a unique name of the queue. Save and copy this name for later use.
-    - Division — select `Home`.
+    - **Name** — enter a unique name of the queue. Save and copy this name for later use.
+    - **Division** — select `Home`.
 5. Click **Save**.
 
 Your queue will appear in the queue list.
@@ -152,6 +152,24 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI, follow thes
 Add a [Handover to Agent](../tools/agent-handover.md) Node without any additional configuration.
 
 To test connection, click **Open Demo Web Chat**.
+
+## Agent Assist Workspace
+
+Within Genesys integration, you can use [Agent Assist Workspace](../../agent-assist/overview.md) as an assistant for your human agents. Agent Assist will be available as a standalone application via the following link:
+
+`https://agent-assist-dev.cognigy.ai/?sessionId=<cognigy-session-id>&userId=<cognigy-user-id>&URLToken=<token-on-the-Cognigy-side>&organisationId=<8x8-tenant-id>&configId=<agent-assist-workspace-config-id>`
+
+Where:
+
+- `sessionId` — the Cognigy Session ID.
+- `userId` — the Cognigy user ID.
+- `URLToken` — the API Key on the Cognigy side.
+- `organisationId` — the organization id on the Genesys side.
+- `configId` — the Agent Assist Workspace config ID. You can get this ID in the API response once you have created Agent Assist Workspace via API.
+
+For example:
+
+`https://agent-assist-dev.cognigy.ai/?sessionId=session-2a4dc476-2f91-4f16-a420-a731144b8bac&userId=51c8f577-c352-4fb6-a496-9b7a74141450&URLToken=760bcb4beb5da6169aa7c53cfca8fc06e1b9e4ec31dc6784df396f2cc5163fc4&organisationId=63babf6e92add771923e87b7&projectId=64257f5a9ebf0514e9c1c7bb&configId=fbe5297e-e71c-4166-b909-3b99d27efdee`
 
 ## More Information
 
