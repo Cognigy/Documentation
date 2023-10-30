@@ -164,7 +164,7 @@ Where:
 - `sessionId` — the Cognigy Session ID.
 - `userId` — the Cognigy user ID.
 - `URLToken` — the API Key on the Cognigy side.
-- `organisationId` — the organization id on the Genesys side.
+- `organisationId` — the Cognigy organization ID.
 - `configId` — the Agent Assist Workspace config ID. You can get this ID in the API response once you have created Agent Assist Workspace via API.
 
 For example:
