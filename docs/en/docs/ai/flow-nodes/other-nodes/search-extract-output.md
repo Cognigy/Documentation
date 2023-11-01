@@ -80,6 +80,11 @@ Select a store from the list to allow the Node to retrieve the data.
 | String to search for      | CognigyScript | The string to search for in the knowledge store. A default value is stored in `input.text`.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Source Tags               | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br><br> Before specifying tags, ensure that they were provided during the upload of the source file for this knowledge source. Add tags by specifying each tag separately and pressing **enter**. The maximum number of tags is 5.                                                                                                |
 
+!!! tip "Tips: Source Tags"
+	- You can add CognigyScript within Source Tags.  
+	- Source Tags are always lower-case, only alpha-numerics (a-z, 0-9), underscores, and hyphens are allowed.  
+	- When using CognigyScript for Source Tags, it is important to lowercase them. For example by using the following: `{{"{{input.text.toLowerCase()}}"}}`
+
 ### Extract Settings
 
 | Parameter         | Type          | Description                                                                                                                                                                                   |
