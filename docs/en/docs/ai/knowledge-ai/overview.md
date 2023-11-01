@@ -117,10 +117,16 @@ The maximum number of sources per store is described in the [Limitations](#limit
 
 Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
 as a result, improve the accuracy of search outputs.
+
 To apply these tags, specify them when uploading a source file.
 For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
 while for other formats,
-you need to specify them within the Cognigy.AI interface when creating a new knowledge source. The maximum number of tags per knowledge source is 10.
+you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
+
+
+!!! note "Source Tags"
+    - The maximum number of tags per knowledge source is 10.
+    - A Source Tag cannot be modified after creating the source.
 
 #### Chunk 
 
