@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../release-notes/4.63.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -117,6 +117,20 @@ The maximum number of sources per store is described in the [Limitations](#limit
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-source.png" width="100%" />
 </figure>
 
+Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
+as a result, improve the accuracy of search outputs.
+
+To apply these tags, specify them when uploading a source file.
+For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
+while for other formats,
+you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
+
+
+!!! note "Source Tags"
+    - The maximum number of tags per knowledge source is 10.
+    - A Source Tag cannot be modified after creating the source.
+    - A Source Tag cannot be added to already existing sources. 
+
 #### Chunk 
 
 A _Chunk_ is a unit of knowledge extracted from a Knowledge Source. Chunks are smaller, self-contained pieces of information that the Knowledge AI system can process and manage effectively.
@@ -156,10 +170,12 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
      <figure>
        <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/configure-search-extract-output.png" width="100%" />
      </figure>
-5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing a virtual agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side.
-6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results. 
-7. Click **Save Node**. 
-8. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
+   
+5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing a virtual agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side. 
+6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results.
+7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the source file for the selected knowledge source. 
+8. Click **Save Node**. 
+9. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
 
 You will receive a response generated from the absorbed Knowledge.
 
@@ -169,14 +185,16 @@ To learn more about the Search Extract Output Node, refer to the [related articl
 
 The table below presents limitations. These limitations are subject to future changes by Cognigy.
 
-| Description                                     | Current Limit |
-|-------------------------------------------------|---------------|
-| Maximum number of Knowledge Stores per project  | 10            |
-| Maximum number of Knowledge Sources per Store   | 10            |
-| Maximum number of Chunks per Knowledge Source   | 1000          |
-| Maximum number of Source metadata pairs         | 20            |
-| Maximum number of Chunk metadata pairs          | 20            |
-| Maximum number of characters for text per Chunk | 2000          |
+| Description                                                                                                        | Current Limit |
+|--------------------------------------------------------------------------------------------------------------------|---------------|
+| Maximum number of Knowledge Stores per project                                                                     | 10            |
+| Maximum number of Knowledge Sources per Store                                                                      | 10            |
+| Maximum number of source tags per Knowledge Source                                                                 | 10            |
+| Maximum number of source tags per [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md) | 5             |
+| Maximum number of Chunks per Knowledge Source                                                                      | 1000          |
+| Maximum number of Source metadata pairs                                                                            | 20            |
+| Maximum number of Chunk metadata pairs                                                                             | 20            |
+| Maximum number of characters for text per Chunk                                                                    | 2000          |
 
 !!! Snapshots
     Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon.    
