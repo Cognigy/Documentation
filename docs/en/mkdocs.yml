@@ -440,6 +440,7 @@ nav:
   - Knowledge AI:
       - ai/knowledge-ai/overview.md
       - ai/knowledge-ai/ctxt.md
+      - ai/knowledge-ai/pdf.md
   - ai/generative-ai.md
   - ai/architecture.md
   

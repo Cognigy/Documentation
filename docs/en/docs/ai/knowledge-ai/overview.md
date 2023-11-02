@@ -109,6 +109,8 @@ The following types of files are supported:
 
 The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
+The `.pdf` format has [two chunk splitting strategies](pdf.md).
+
 The maximum number of sources per store is described in the [Limitations](#limitations) section.
 
 <figure>
@@ -192,6 +194,7 @@ The table below presents limitations. These limitations are subject to future ch
 ## More Information
 
 - [Cognigy Text Format](ctxt.md)
+- [PDF](pdf.md)
 - [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
 - [LLM](../resources/build/llm.md)
 - [Generative AI](../generative-ai.md)
