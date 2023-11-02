@@ -20,6 +20,12 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 - Shows any type of information like PDFs or even interactive 3D animations.
 - Access to 100% of Cognigy.AI features, including Extensions and extensive logic.
 
+### Agent Assist Workspace: Standalone or Embedded
+
+You can use the Agent Assist Workspace in two different ways:
+
+- **Standalone application**. When a conversation is handed over to a human agent, they receive a link in the conversation chat that allows them to access the workspace. This workspace opens in a new browser tab.
+- **Embedded application**. When a conversation is handed over to a human agent, the workspace is displayed alongside the conversation chat within an iFrame in the existing interface.
 
 ## More Information
 
