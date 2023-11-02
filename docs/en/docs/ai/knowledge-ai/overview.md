@@ -128,7 +128,7 @@ you need to specify them within the Cognigy.AI interface when creating a new kno
     - The maximum number of tags per knowledge source is 10.
     - A Source Tag cannot be modified after creating the source.
     - Source Tags cannot be added to already existing sources. 
-    - Tags cannot be added to already existing sources. 
+ 
 
 #### Chunk 
 
