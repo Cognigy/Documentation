@@ -16,7 +16,7 @@ Before using this feature, you need to configure a machine translation provider.
 
 ## Configure Real-time Translation Settings
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.63.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../release-notes/4.63.md)
 
 After selecting a translation provider, you can now configure translation parameters in the Endpoint configuration.
 
