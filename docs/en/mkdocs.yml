@@ -541,6 +541,11 @@ nav:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
   - Conversations:
+    - live-agent/conversation/overview.md
+    - live-agent/conversation/assign-conversations.md
+    - live-agent/conversation/send-reply.md
+    - live-agent/conversation/filter-and-sort.md
+    - live-agent/conversation/other-operations.md
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
     - Conversation Queue:
