@@ -102,9 +102,9 @@ Your integration will be listed among integrations.
                         {
                            "name": "Success",
                            "slots": {
-                              "processedDate": {
-                                 "name": "processedDate",
-                                 "type": "datetime"
+                              "processedTimestamp": {
+                                 "name": "processedTimestamp",
+                                 "type": "integer"
                               }
                            }
                         }
