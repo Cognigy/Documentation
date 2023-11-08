@@ -100,7 +100,13 @@ Your integration will be listed among integrations.
                      "supportedLanguages": ["en-us"],
                      "intents": [
                         {
-                           "name": "Success"
+                           "name": "Success",
+                           "slots": {
+                              "processedDate": {
+                                 "name": "processedDate",
+                                 "type": "datetime"
+                              }
+                           }
                         }
                      ]
                   }
