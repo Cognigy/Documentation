@@ -423,6 +423,8 @@ nav:
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
       - agent-assist/plug-and-play-widgets.md
+      - Migration Guides:
+          - agent-assist/installation/migration/integrating-agent-assist-with-cognigy-ai-app-helm-chart.md
 
   - xApps:
       - ai/xApp/overview.md
