@@ -7,10 +7,10 @@ hidden: false
 
 # Conversation
 
-Your chats with various customers are referred to as conversations in Live Agent. This includes all session messages, including the customer, bot or human agent responses.
+Your chats with various customers are referred to as conversations in Live Agent. This includes all session messages, including the customer, bot or human Agent responses.
 A Conversation is the communication channel opened between an Agent and a customer.
 The customer initiates a conversation from the website front end - using the Webchat widget.
-An automated response set in the Cognigy.AI Flow will immediately be displayed on the screen as a reply. When a Virtual Agent initiates a handover to the Live Agent interface, the conversation will be continued by a human agent.
+An automated response set in the Cognigy.AI Flow will immediately be displayed on the screen as a reply. When a Virtual Agent initiates a handover to the Live Agent interface, the conversation will be continued by a human Agent.
 
 ## Open a Conversation in Live Agent:
 
@@ -37,16 +37,15 @@ Conversations between customer and operator in Live Agent can get different stat
 
 The Conversation statuses are listed below.
 
-| Options                 | Actions                                                                                             |
-|-------------------------|-----------------------------------------------------------------------------------------------------|
-| Mark as Pending         | Change the issue to Pending status                                                                  |
-| Resolve                 | Change the issue to Resolved status                                                                 |
-| Abandon and Resolve     | Change the issue to Resolved status, and add the queryable abandon attribute                        |
-| Open                    | Change the pending issue to Open status                                                             |
-| Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer |
-
-| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                    |????
-| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                       |????
+| Status                  | Description                                                                                          |
+|-------------------------|------------------------------------------------------------------------------------------------------|
+| Mark as Pending         | Changes the issue to Pending status                                                                  |
+| Resolve                 | Changes the issue to Resolved status                                                                 |
+| Abandon and Resolve     | Changes the issue to Resolved status, and add the queryable abandon attribute                        |
+| Open                    | Changes the pending issue to Open status                                                             |
+| Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer  |
+| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                     |
+| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                        |
 
 Conversations can be selected and filtered by their statuses within the Conversation panel as follows:
 
@@ -104,7 +103,7 @@ For more information, read the [Live Agent](https://docs.cognigy.com/insights/da
 
 ## Conversation Assignment Statuses 
 
-When you have selected an Inbox you will see the corresponding conversations assigned to this Inbox, listed in three groups: 
+When you have selected an Inbox you will see the corresponding conversations assigned to this Inbox, listed in following groups: 
 
 - [Mine](#mine)
 - [Unassigned](#unassigned)
@@ -116,7 +115,10 @@ To change Assignment statuses, do the following:
 1. Click the checkbox on the left side next to a conversation.
 2. To assign a conversation to a human Agent, click the **Assign Agent** icon and select yourself or one of the available Agents in a drop-down list. The conversation will be assigned to the selected Agent.
 3. To **Resolve** or **Snooze until next reply** a conversation, click the **Change status** icon and select the required option.
-4. To assign a label to the selected conversation, click the **Assign Labels** icon and select one or more available labels.
+4. To assign a label to the selected conversation, click the **Assign Labels** icon and select one or more available labels. Labels improve the overview of conversations for the human Agent.
+
+For more information, read the [Assign Conversations](assign-conversations.md) documentation.
+
 
 ### Mine 
 
@@ -177,18 +179,15 @@ For more information, read the [Assist Bots](../conversation/assist-bot.md) docu
 
 ### LA Agent Assist
 
-Refers to the feature or functionality that provides assistance to live agents during their interactions with customers. It typically includes real-time guidance, suggestions, and recommendations to help agents effectively handle customer inquiries or issues. Agent Assist Live Agent focuses on providing support directly from the conversation window.
+The functionality of **LA Agent Assist** provides assistance to live agents during their interactions with customers. It typically includes real-time guidance, suggestions, and recommendations to help agents effectively handle customer inquiries or issues. Agent Assist in Live Agent focuses on providing support directly from the conversation window.
 For more information, read the [LA Agent Assist](../../ai/handover-providers/la-agent-assist-workspace-setup.md) documentation:
 
 ### Agent Assist Workspace
 
-Refers to the dedicated workspace or environment where human agents access various tools, resources, and features to assist them in their customer interactions. It encompasses the entire workspace setup, which may include customer information, knowledge bases, collaboration tools, and other relevant components. Agent Assist Workspace aims to provide a comprehensive and efficient working environment for human agents to manage their interactions with customers.
-
+The functionality of the **Agent Assist Workspace** provides dedicated workspace or environment where human agents access various tools, resources, and features to assist them in their customer interactions. It encompasses the entire workspace setup, which may include customer information, knowledge bases, collaboration tools, and other relevant components. Agent Assist Workspace aims to provide a comprehensive and efficient working environment for human agents to manage their interactions with customers.
 Cognigy's **Agent Assist Workspace** offers the most comprehensive functions compared to the other assistants, enabling Agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's Agent desktop, it enhances the overall efficiency of your contact center.
-
-For more information, read the [Agent Assist Workspace](../../agent-assist/overview.md) documentation.
-
 When Agent Assist is enabled, Agents can communicate with an assitant using a separate conversation channel. The AI-supported output of Agent Assist enables the human agent to respond more efficiently to customer inquiries.
+For more information, read the [Agent Assist Workspace](../../agent-assist/overview.md) documentation.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
