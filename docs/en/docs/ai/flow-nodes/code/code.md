@@ -20,7 +20,9 @@ The execution of the Code Node will be synchronous, the Flow will continue after
 
 Just as within other Nodes, `input`, `context` and `profile` can be accessed (and modified) within Code Nodes. If the script crashes or takes longer than one second to execute, it will be stopped and throw an error. In case of an uncaught error, the Flow Execution will be stopped.
 
-The `actions` object provides access to most internal node functions (see [Actions](ai/flow-nodes/code/actions)) within the Code Node.
+The `actions` object provides access to most internal Cognigy functions (see [Actions](ai/flow-nodes/code/actions)) within the Code Node.
+
+The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](../flow-nodes/code/actions.md#text-cleaner).
 
 The `lastConversationEntries` array contains the user inputs and bot outputs for the past 10 turns of the conversation in the following format:
 
