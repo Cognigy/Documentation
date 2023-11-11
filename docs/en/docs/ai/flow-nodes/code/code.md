@@ -20,7 +20,22 @@ The execution of the Code Node will be synchronous, the Flow will continue after
 
 Just as within other Nodes, `input`, `context` and `profile` can be accessed (and modified) within Code Nodes. If the script crashes or takes longer than one second to execute, it will be stopped and throw an error. In case of an uncaught error, the Flow Execution will be stopped.
 
-The `actions` object provides access to most internal node functions within the Code Node.
+The `actions` object provides access to most internal node functions (see [Actions](ai/flow-nodes/code/actions)) within the Code Node.
+
+The `lastConversationEntries` array contains the user inputs and bot outputs for the past 10 turns of the conversation in the following format:
+
+```json
+[
+    {
+        source: "user",
+        text: "hello"
+    },
+    {
+        source: "bot",
+        text: "hello and welcome to Cognigy"
+    }
+]
+```
 
 For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `moment` ([https://momentjs.com/](https://momentjs.com/)) libraries are exposed for use within Code Nodes.
 
@@ -29,6 +44,37 @@ For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `
 - Maximum number of characters in the code editor is 200K.
 - Maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed under input.codeNodeError.message. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../resources/manage/extensions.md#extension-marketplace).
 
+## Auto-completion (Intellisense) in the Code Node
+<div class="divider"></div>
+
+The Code Node supports full Intellisense (auto-complete).
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3c5a246-Screen_Shot_008.PNG" width="100%" />
+</figure>
+
+When using the  **input** operator a Code Node, all available input object properties will be automatically displayed e.g. text, channel, language, etc
+
+If you have executed the Flow before, the **context** object will also support full Intellisense for the current context.
+
+The **profile** object is also fully supported by Intellisense, which is based on the [Profile Schema]({{config.site_url}}ai/resources/manage/contact-profiles).
+
+
+## Adding Log Statements to Code Nodes
+<div class="divider"></div>
+
+To see log statements on the [Logs page](../../resources/test/logs.md), place `api.log()` statements into the Code Node.
+
+- Input code in a Code Node:
+    ```javaScript
+    const testKeyAPILOG = "Test for api.log"
+    actions.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
+    api.log("debug", testKeyAPILOG);
+    ``` 
+- Result on the Logs page:
+
+`2023-01-12 10:27:08 <mark>debug</mark> ***Test for api.log*** { "flowId": "94311a23-b905-4e38-b121-9bffeb658783", "entrypoint": "63bff4588642adbc590be047", "userId": "user1234"`
+   
 ## Sending Facebook JSON
 <div class="divider"></div>
 
@@ -70,35 +116,3 @@ You can send Facebook JSON directly from within Code Nodes using the output acti
     // output the reply
     actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
     ``` 
-
-## Auto-completion in Code-Nodes Editor
-<div class="divider"></div>
-
-When using the  **input.** operator in the Node Editor of a Code Node, all available input objects  will be automatically displayed e.g. 
-
-question<br/>
-entryPoint<br/>
-flowName<br/>
-traceId<br/>
-localeId<br/>
-conditionalEntryPointWasExecuted
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3c5a246-Screen_Shot_008.PNG" width="100%" />
-</figure>
-
-## Adding Log Statements to Code Nodes
-<div class="divider"></div>
-
-To see log statements on the [Logs page](../../resources/test/logs.md), place `api.log()` statements into the Code Node.
-
-- Input code in a Code Node:
-    ```javaScript
-    const testKeyAPILOG = "Test for api.log"
-    actions.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
-    api.log("debug", testKeyAPILOG);
-    ``` 
-- Result on the Logs page:
-
-`2023-01-12 10:27:08 <mark>debug</mark> ***Test for api.log*** { "flowId": "94311a23-b905-4e38-b121-9bffeb658783", "entrypoint": "63bff4588642adbc590be047", "userId": "user1234"`
-   
