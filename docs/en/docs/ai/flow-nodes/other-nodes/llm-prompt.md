@@ -16,26 +16,26 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-The LLM Prompt Node allows using Generative AI for creating relevant content. To do that, you need to add a text prompt that helps Generative AI continue the text.
+The LLM Prompt Node allows using Generative AI for creating relevant content.
 
-Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../resources/build/llm.md#supported-models).
+Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
+You can configure the Node to either use the default model defined under Settings or choose a specific configured LLM.
 
-To display the output of the LLM Prompt Node to the user, follow these steps:
+The Node can be used in Chat and Prompt mode. If your provider doesn't support Chat mode, we will convert the Chat request to a Prompt request automatically.
 
-1. In the Flow editor, add a Say Node below the LLM Prompt Node.
-2. In the **Output Type** field, select **Text**.
-3. In the **Text** field, click ![token](../../../assets/icons/token.svg) and select the **LLM Prompt Result** Token.
-4. Click **Save Node**.
+When using chat mode, we will automatically populate the request with the chosen number of transcript turns.
 
-If you want the output result to be immediately displayed in the chat,
-without saving it in the Input or Context objects and utilizing the Say Node,
-select **Stream to Output** setting in the [Storage & Streaming Options](#storage--streaming-options) section.
+### Storing Results
+To store the model output and then display the output of the LLM Prompt Node to the user, select **Store to Input** or **Store to Context** in the [Storage & Streaming Options](#storage--streaming-options) section.
+
+### Streaming Results
+If you want the output result to be immediately displayed in the chat, without saving it in the Input or Context objects and utilizing the Say Node, select the **Stream to Output** setting in the [Storage & Streaming Options](#storage--streaming-options) section.
 
 ## Settings
 
-### Prompt
+### Instructions
 
-The prompt to generate completions for.
+Theis is either the prompt for completions or the system message for chat.
 
 Additionally, you can inject the recent conversation into the **Prompt** field by using these tags:
 
@@ -45,9 +45,9 @@ You can inject the recent conversation in the **Prompt** field by using these ta
 
 - `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
    ```text
-   Agent: agentOutput1
+   Bot: agentOutput1
    User: userOutput1
-   Agent: agentOutput2
+   Bot: agentOutput2
    User: userOutput2
    ```
 - `@cognigyRecentUserInputs` — the tag is replaced with a string that can contain up to 10 recent user outputs, for example:
@@ -90,7 +90,21 @@ Describe the user sentiment in one very short line.
 | Context Key to store Result | CognigyScript | The parameter is active when **Store in Context** selected. The result is stored in the `promptResult` Context object by default. You can specify another value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Stream Output Tokens        | CognigyScript | The parameter is active when **Stream to Output** is selected. Tokens after which to output the stream buffer. The tokens can be punctuation marks or symbols, such as `\n`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-[^*]: The Stream to Output feature is supported by the `gpt-3.5-turbo` and `text-davinci-003` models from Microsoft Azure OpenAI and OpenAI, as well as the Antrophic models `claude-v1-100k` and `claude-instant-v1`.
+[^*]: Please note not all LLM models support streaming.
+
+### Debugging Options
+
+When using the Interaction Panel, you can trigger two types of debug logs to be written. Please note these will only be written when using the Interaction Panel and can't be used for production debugging.
+
+Both log types can be combined.
+
+**Log Token Count**
+
+This will log the number of consumed LLM tokens for the request and completion. We use the GPT-3 tokenizer algorithm, so actual token usage may differ depending on the model used.
+
+**Log Request and Completion**
+This logs both the request going to the LLM provider and then completion.
+
 
 ## More Information
 
