@@ -1,7 +1,7 @@
 ---
- title: "Code" 
- slug: "code" 
- hidden: false 
+title: "Code" 
+slug: "code" 
+hidden: false 
 ---
 # Code
 
@@ -49,7 +49,9 @@ For convenience, the [lodash](https://lodash.com/) and [moment](https://momentjs
 ## IntelliSense in the Code Node
 <div class="divider"></div>
 
-The Code Node offers a comprehensive IntelliSense feature. This feature provides auto-complete suggestions for various objects, making coding more efficient and reducing the likelihood of errors.
+The Code Node offers a comprehensive IntelliSense feature.
+This feature provides auto-complete suggestions for various objects and actions,
+making coding more efficient and reducing the likelihood of errors.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3c5a246-Screen_Shot_008.PNG" width="100%" />
@@ -57,7 +59,7 @@ The Code Node offers a comprehensive IntelliSense feature. This feature provides
 
 When you use the `input` operator within a Code Node, you'll see a list of all available properties of the `input` object. These properties may include text, channel, language, and more attributes.
 
-Additionally, if you've run a Flow before, the `context` object benefits from full IntelliSense support. When working with the context object in your code, you'll receive auto-complete suggestions based on the current context, making accessing and using the relevant information easier.
+Additionally, if you've run a Flow before, the `context` object benefits from full IntelliSense support. When working with the `context` object in your code, you'll receive auto-complete suggestions based on the current context, making accessing and using the relevant information easier.
 
 Furthermore, IntelliSense fully supports the `profile` object.
 When working with the `profile` object in your code,
