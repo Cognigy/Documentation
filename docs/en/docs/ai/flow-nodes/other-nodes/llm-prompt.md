@@ -7,7 +7,7 @@ hidden: false
 
 # LLM Prompt
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/llm-prompt.png" width="80%" />
@@ -19,29 +19,32 @@ hidden: false
 The LLM Prompt Node allows using Generative AI for creating relevant content.
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
-You can configure the Node to either use the default model defined under Settings or choose a specific configured LLM.
+You can configure the Node to either use the default model defined in the Settings or choose a specific configured LLM.
 
-The Node can be used in Chat and Prompt mode. If your provider doesn't support Chat mode, we will convert the Chat request to a Prompt request automatically.
+The Node supports the following modes:
 
-When using chat mode, we will automatically populate the request with the chosen number of transcript turns.
+- **Chat**. This mode is activated by default and is preferable for dynamic conversations and interactions with the model.
+  It takes into account the context of messages from the user and the bot,
+  depending on the chosen number of transcript turns (messages) in the **Transcript Steps** setting.
+- **Prompt**. This mode is preferable for single-turn tasks or generating text based on a single prompt.
+
+If your LLM provider doesn't support Chat mode, Cognigy will automatically convert the Chat request to a Prompt request.
 
 ### Storing Results
+
 To store the model output and then display the output of the LLM Prompt Node to the user, select **Store to Input** or **Store to Context** in the [Storage & Streaming Options](#storage--streaming-options) section.
 
 ### Streaming Results
+
 If you want the output result to be immediately displayed in the chat, without saving it in the Input or Context objects and utilizing the Say Node, select the **Stream to Output** setting in the [Storage & Streaming Options](#storage--streaming-options) section.
 
 ## Settings
 
-### Instructions
+### Instruction
 
-Theis is either the prompt for completions or the system message for chat.
+This is either the prompt for completions or the system message for chat.
 
 Additionally, you can inject the recent conversation into the **Prompt** field by using these tags:
-
-## Additional tags
-
-You can inject the recent conversation in the **Prompt** field by using these tags:
 
 - `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
    ```text
@@ -90,21 +93,16 @@ Describe the user sentiment in one very short line.
 | Context Key to store Result | CognigyScript | The parameter is active when **Store in Context** selected. The result is stored in the `promptResult` Context object by default. You can specify another value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Stream Output Tokens        | CognigyScript | The parameter is active when **Stream to Output** is selected. Tokens after which to output the stream buffer. The tokens can be punctuation marks or symbols, such as `\n`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-[^*]: Please note not all LLM models support streaming.
+[^*]: Note that not all LLM models support streaming.
 
 ### Debugging Options
 
-When using the Interaction Panel, you can trigger two types of debug logs to be written. Please note these will only be written when using the Interaction Panel and can't be used for production debugging.
+When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
 
-Both log types can be combined.
-
-**Log Token Count**
-
-This will log the number of consumed LLM tokens for the request and completion. We use the GPT-3 tokenizer algorithm, so actual token usage may differ depending on the model used.
-
-**Log Request and Completion**
-This logs both the request going to the LLM provider and then completion.
-
+| Parameter                  | Type   | Description                                                                                                                                                                     |
+|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Log Token Count            | Toggle | Log the number of consumed LLM tokens for the request and completion. Cognigy uses the GPT-3 tokenizer algorithm, so actual token usage may differ depending on the model used. |
+| Log Request and Completion | Toggle | Log both the request sent to the LLM provider and the subsequent completion.                                                                                                    |
 
 ## More Information
 
