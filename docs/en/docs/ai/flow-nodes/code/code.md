@@ -39,27 +39,31 @@ The `lastConversationEntries` array contains the user inputs and bot outputs for
 ]
 ```
 
-For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `moment` ([https://momentjs.com/](https://momentjs.com/)) libraries are exposed for use within Code Nodes.
+For convenience, the [lodash](https://lodash.com/) and [moment](https://momentjs.com/) libraries are exposed for use within Code Nodes.
 
 ## Restrictions
 
 - Maximum number of characters in the code editor is 200K.
 - Maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed under input.codeNodeError.message. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../resources/manage/extensions.md#extension-marketplace).
 
-## Auto-completion (Intellisense) in the Code Node
+## IntelliSense in the Code Node
 <div class="divider"></div>
 
-The Code Node supports full Intellisense (auto-complete).
+The Code Node offers a comprehensive IntelliSense feature. This feature provides auto-complete suggestions for various objects, making coding more efficient and reducing the likelihood of errors.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3c5a246-Screen_Shot_008.PNG" width="100%" />
 </figure>
 
-When using the  **input** operator a Code Node, all available input object properties will be automatically displayed e.g. text, channel, language, etc
+When you use the `input` operator within a Code Node, you'll see a list of all available properties of the `input` object. These properties may include text, channel, language, and more attributes.
 
-If you have executed the Flow before, the **context** object will also support full Intellisense for the current context.
+Additionally, if you've run a Flow before, the `context` object benefits from full IntelliSense support. When working with the context object in your code, you'll receive auto-complete suggestions based on the current context, making accessing and using the relevant information easier.
 
-The **profile** object is also fully supported by Intellisense, which is based on the [Profile Schema]({{config.site_url}}ai/resources/manage/contact-profiles).
+Furthermore, IntelliSense fully supports the `profile` object.
+When working with the `profile` object in your code,
+you'll receive auto-complete suggestions that are contextually relevant,
+aligning with the structure and attributes
+defined in the [Profile Schema](../../resources/manage/contact-profiles.md#profile-schema).
 
 
 ## Adding Log Statements to Code Nodes
