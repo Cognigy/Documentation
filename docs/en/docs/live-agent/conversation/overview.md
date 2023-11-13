@@ -21,7 +21,7 @@ To open a conversation in Live Agent, do the following:
 3. Click on a specific Conversation. The Conversation will open with further details and actions available in the right-hand side panel.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
+<img src="{{config.site_url}}live-agent/images/LA_conversation_details.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
 </figure>
 
@@ -119,7 +119,6 @@ To change Assignment statuses, do the following:
 
 For more information, read the [Assign Conversations](assign-conversations.md) documentation.
 
-
 ### Mine 
 
 To see all conversations assigned to you, click on tab **Mine**.
@@ -136,35 +135,87 @@ You can assign conversations to a human Agent manually or incomng conversations 
 By default, users having the Agent role cannot see the **All** tab for all conversations. However, for administrators there is a setting, editable in the **Inboxes** settings for every Inbox, allowing Agents to see all conversations in the selected Inbox. When enabled, the Agent can see all conversations, including those from other Agents. Otherwise, access will be restricted to his assigned Inboxes only. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Conversations Details" />
-  <figcaption>Show All Inbox setting</figcaption>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="" />
+  <figcaption></figcaption>
 </figure>
 
 ## Conversation Details 
 
-### User Profile details
+When a conversation is selected conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
+
+To find the **Conversation Details**, proceed as follows:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. In the conversations list of the selected Inbox select a conversation. Conversation details will be displayed at the right side of the Live Agent interface. 
+
+The conversation details include the following items:
+
+- [User Profile Details](#user-profile-details)
+- [Conversation Actions](#conversation-actions)
+- [Conversation Information](#conversation-information)
+
+### User Profile Details
+
+Related to a conversation in Live Agent user profile details will be displayed in the conversation details section. The following table lists all user items which can be edited and stored as meta data.
+
+| User Profile data     | Description                                           |
+|-----------------------|-------------------------------------------------------|
+| Email Address         | User's email address.                                 |
+| First name            | User's first name .                                   |
+| Last name             | User's last name.                                     |
+| Age                   | User's age.                                           |
+| Birthday              | User's birthday.                                      |
+| Gender                | User's gender (male, female,...).                     |
+| Location              | User's location.                                      | 
+| Profile Picture       | When available, the URL address of a users pricture.  |
+| Accepted GDPR         | User accepted European privacy law: Yes/No            |
+| Goals                 | The users intention or task.                          |
+
+To edit profile data click ![edit](../../assets/icons/edit.svg), enter data and confirm with **Submit**. 
+
 ### Conversation Actions
-#### Assign Agents, Teams, Priority, Labels (only a short explanation with a reference to the detailed article)
+
+Related to a conversation in Live Agent the human Agent can assign other Agents to the selected conversation, can assign a group of Agents defined in a team, can define the priority for handling the customers request in the conversation and can assign one or more labels to make the overview of the listed conversations easier to the agent at a glance.
+For more information of these details, read the [Assign Conversations](assign-conversations.md) documentation.
 
 ### Conversation Information
-When  a conversation is selected conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
+
+When a conversation is selected conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
+
+To find the **Conversation Information**, proceed as follows:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. From the **Inboxes** list, select an Inbox.
+4. In the conversations list of the selected Inbox select a conversation. Conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**:
 
 - [Cognigy Session ID](#copy-cognigy-session-id)
 - [Channel Type](#channel-type)
 - [Cognigy User ID](#cognigy-user-id)
 
-To find this field
-
 #### Copy Cognigy Session ID
 
-Go to the conversation information 
+A session describes the collection of user inputs and Agent replies in a conversation tracked by a common Session ID on a Cognigy product (e.g., a call or Webchat conversation). In case you need to copy the session ID, do the following: 
+
+1. Click ![copy](../../assets/icons/copy.svg) on the right side next to the item.
 
 #### Channel Type
 
+The medium or platform through which users can interact with the Virtual Agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the Virtual Agent through various interfaces. Cognigy Channels include platforms like Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
+
+In case you need to copy the channel type, do the following: 
+
+1. Click ![copy](../../assets/icons/copy.svg) on the right side next to the item.
 
 #### Cognigy User ID
 
+User ID is a unique identifier for authorized access to Cognigy.AI and Live Agent.
 
+In case you need to copy the Cognigy User ID, do the following: 
+
+1. Click ![copy](../../assets/icons/copy.svg) on the right side next to the item.
 
 ### Previous Conversations
 
@@ -213,7 +264,6 @@ If forwarding was enabled for Assist messages, the Agent can click the **Send** 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
     </figure>
-
 
 ## More information
 

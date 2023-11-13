@@ -27,7 +27,7 @@ To filter conversations by priority, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
 3. From the **Inboxes** list, select an Inbox.
-4. At the top of the **Conversations** list next to the Inbox name click ![filter](../../assets/icons/filter.svg).
+4. Click ![filter](../../assets/icons/filter.svg) at the top of the **Conversations** list next to the Inbox name.
 5. In the **Filter Conversations** window, select the following options:<br>
     5.1 In the **Filter** list, select **Priority**.<br>
     5.2 In the **Operator** list, select **Equal to** or **Not Equal to** as the filter condition. These operators indicate whether you want to filter conversations that match or do not match the specified priority level.<br>

@@ -17,7 +17,7 @@ By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ in
 The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="80%" alt="Live Agent Conversations Reply" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="100%" alt="Live Agent Conversations Reply" />
   <figcaption>Reply to a Message</figcaption>
 </figure>
 
@@ -34,11 +34,11 @@ Below is a list describing Conversation reply actions an Agent can take by click
 
 | Icon                                                                                                  | Description                                                                                              |
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />  | **Show emoji selector** - This button allows a human agent to select and include an Emoji in the message.|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | **Attach files** - This button allows  a human agent to select and include attachments in the message.   |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | **Request file** - This button allows a human agent to request a file from the customer.                 |
-| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" />                  | **Record audio** - This button allows a human agent to send voice messages to the customer.              |
-| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | **Insert link** - This button allows a human agent to send hyperlinked text to the customer.             |
+| <img src="{{config.site_url}}assets/icons/emoji.svg" width="50%" alt="" />                            | **Show emoji selector** - This button allows a human agent to select and include an Emoji in the message.|
+| <img src="{{config.site_url}}assets/icons/attach-files.svg" width="50%" alt="" />                     | **Attach files** - This button allows  a human agent to select and include attachments in the message.   |
+| <img src="{{config.site_url}}assets/icons/request-file.svg" width="50%" alt="" />                     | **Request file** - This button allows a human agent to request a file from the customer.                 |
+| <img src="{{config.site_url}}assets/icons/record-audio.svg" width="50%" alt="" />                     | **Record audio** - This button allows a human agent to send voice messages to the customer.              |
+| <img src="{{config.site_url}}assets/icons/insert-link.svg" width="50%" alt="" />                      | **Insert link** - This button allows a human agent to send hyperlinked text to the customer.             |
 
 ### Quick Reply
 

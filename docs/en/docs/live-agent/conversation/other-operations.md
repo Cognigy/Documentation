@@ -16,15 +16,16 @@ hidden: false
 
 To Mute / Unmute a conversation, do the following:
 
-To mute a conversation, click the button labeled **Mute conversation**, placed in the top right corner. No audio messages can then be sent or received in this chat.
-To unmute a conversation, click the button labeled **Unmute conversation**, placed in the top right corner. Audio messages can then be sent or received again in this chat. 
-When hovering over the button the current setting will be displayed. Every change of the audio setting will be notified in your chat
+1. To **mute** a conversation, click ![mute conversation](../../assets/icons/mute-conversation.svg) labeled **Mute conversation**, placed in the top right corner. No audio messages can then be sent or received in this chat.
+
+2. To **unmute** a conversation, click ![unmute conversation](../../assets/icons/unmute-conversation.svg) labeled **Unmute conversation**, placed in the top right corner. Audio messages can then be sent or received again in this chat. 
+When hovering over the button the current status of the setting will be displayed. Every change of the audio setting will be notified in your chat
  
 ## Send a conversation Transcript by email
 
 To send a copy of the current conversation by email, proceed as follows:
 
-1. Click the button labeled **Send Transcript**, placed in the top right corner. A screen opens up which allows to sent a conversation transcript as email to Agents in the Team. The chat transcript can also be sent to the customer or another selected email address.
+1. Click [send transcript](../../assets/icons/send-transcript.svg) labeled **Send Transcript**, placed in the top right corner. A screen opens up which allows to sent a conversation transcript as email to Agents in the Team. The chat transcript can also be sent to the customer or another selected email address.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-send-transcript.png" width="100%" alt="Live Agent Conversation Transcript Dialog" />
@@ -37,7 +38,7 @@ To send a copy of the current conversation by email, proceed as follows:
 
 To Clear a chat history, administrator or supervisor role is required. 
 
-Click the button labeled **Clear Conversation History**, placed in the top right corner.The current selected conversation history will be deleted.
+Click ![clear conversation history](../../assets/icons/clear-conversation-history.svg) labeled **Clear Conversation History**, placed in the top right corner.The current selected conversation history will be deleted.
 
 ## Enable Agent Masking in a chat
 
@@ -48,7 +49,7 @@ For more information, read the [Account Settings](../settings/account-settings.m
 
 ## Private Chat with Agents
 
-As a human Agent you can discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the **Reply** tab, labeled **Private Note**.
+As a human Agent you can discuss the customer's conversation with another Agent, should you need some more clarification or assistance. This option is available beside the **Reply** tab, labeled **Private Note**.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
@@ -63,7 +64,7 @@ As a human Agent you can discuss the customer's Conversation with another Agent,
   <figcaption>Private Chat with Agent -2</figcaption>
 </figure>
 
-3. Click **Add Note** to send the message. You can see a locked sign on the message that has been sent. This message will not be visible to the customer.
+3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
@@ -76,10 +77,5 @@ The second Agent addressed in the private note will receive a notification in hi
 
 To delete the private note which you have already sent, do the following: 
 
-1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An option is available to **Copy**, or to **Delete** the private note.
+1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
 2. Select **Delete**. The private note will be deleted.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-18.png" width="100%" alt="Live Agent Delete Message" />
-  <figcaption>Delete Message</figcaption>
-</figure>

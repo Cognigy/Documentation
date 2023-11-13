@@ -9,6 +9,11 @@ hidden: false
 
 When working with Live Agents you can assign Agents, Teams, Priority, and Labels to conversations as described below.  
 
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA_conversation_details.png" width="100%" alt="Live Agent Conversations Details" />
+  <figcaption>Conversations Details</figcaption>
+</figure>
+
 ## Assign Agents
 
 Indicates the number of conversations that were assigned to a human agent
@@ -17,11 +22,6 @@ If the Inbox has been created without 'auto assign' selected, Conversations will
 
 Click on the drop-box within the Assigned Agent menu and select the Agent name. You can change the Agents assigned here at any time.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-4.png" width="100%" alt="Live Agent Assign Agent" />
-  <figcaption>Assign Agent</figcaption>
-</figure>
-
 ### Transferring Agents
 
 You can transfer an issue/Conversation to another Agent by selecting a different Agent from the Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
@@ -29,11 +29,6 @@ You can transfer an issue/Conversation to another Agent by selecting a different
 ## Assign Teams
 
 Click on the drop-box within the Assigned Team menu and select the Team to which this Conversation belongs.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-5.png" width="100%" alt="Live Agent Assign Teams" />
-  <figcaption>Assign Teams</figcaption>
-</figure>
 
 ## Assign Priority
 
