@@ -10,14 +10,7 @@
 
 ## Copying agent-assist namespace secrets
 
-The first step is to copy the existing secrets of agent-assist namespace and create them in the cognigy-ai namespace.
-
-  <figure>
-      <img src="{{config.site_url}}agent-assist/images/AA-migrate-helm-secrets.png" width="100%" alt="agent-assist namespace secrets">
-      <figcaption>agent-assist namespace secrets</figcaption>
-  </figure>
-
-These are as per the screenshot:
+The first step is to copy the existing secrets of agent-assist namespace and create them in the cognigy-ai namespace These are:
 
 - agent-assist-api-key - API auth token
 - cognigy-agent-assist - MongoDB connection string
@@ -50,12 +43,6 @@ This secret contains an `api-key` field and is used for authenticating the Agent
 
 ```yaml
 cognigyEnv:
-  # Agent Assist Frontend URL
-  AGENT_ASSIST_WORKSPACE_FRONTEND_URL_WITH_PROTOCOL: "<agent-assist-frontend-url>"
-  # Agent Assist Backend API URL
-  AGENT_ASSIST_WORKSPACE_API_BASE_URL_WITH_PROTOCOL: "<agent-assist-backend-api-url>"
-  # Cognigy.AI endpoint
-  COGNIGY_AI_ENDPOINT_URL_WITH_PROTOCOL: "<cognigy-ai-endpoint-url>"
   # Only enable it if you want to forward Genesys notifications to Agent Assist,
   FEATURE_ENABLE_AGENT_ASSIST_WORKSPACE_GENESYS_CREDENTIALS_WHITELIST: "*"
 ```
