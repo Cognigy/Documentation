@@ -17,6 +17,41 @@ The first step is to copy the existing secrets of agent-assist namespace and cre
 
 The rest of the secrets are no longer necessary.
 
+You can use the following script `copy-secrets.sh` to copy the secrets:
+
+```bash
+#!/bin/bash
+
+# Define secrets and namespaces
+sourceNamespace="agent-assist"
+destinationNamespace="cognigy-ai"
+secrets=("cognigy-agent-assist" "agent-assist-api-key")
+
+# Check if kubectl is installed
+if ! command -v kubectl &> /dev/null
+then
+    echo "kubectl could not be found, please install it to run this script."
+    exit 1
+fi
+
+# Copy each secret
+for secret in "${secrets[@]}"; do
+  echo "Copying $secret from $sourceNamespace to $destinationNamespace..."
+  kubectl get secret $secret --namespace $sourceNamespace -o yaml |\
+  sed '/namespace:/d' |\
+  kubectl apply --namespace=$destinationNamespace -f -
+done
+
+echo "Secrets copied successfully."
+```
+
+Then run the script:
+
+```bash
+chmod +x copy-secrets.sh
+./copy-secrets.sh
+```
+
 ## New values
 
 ```yaml
