@@ -8,16 +8,20 @@
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
-## Copying agent-assist namespace secrets
+This guide provides step-by-step instructions to migrate Agent Assist services to the cognigy-ai-app helm chart.
 
-The first step is to copy the existing secrets of agent-assist namespace and create them in the cognigy-ai namespace These are:
+## Pre-Migration Tasks
 
-- agent-assist-api-key - API auth token
-- cognigy-agent-assist - MongoDB connection string
+Before initiating the migration, complete the following preparatory steps.
 
-The rest of the secrets are no longer necessary.
+### Copying agent-assist Namespace Secrets
 
-You can use the following script `copy-secrets.sh` to copy the secrets:
+You need to copy the existing secrets from the `agent-assist` namespace to the `cognigy-ai` namespace. The required secrets are:
+
+- `agent-assist-api-key` - API auth token
+- `cognigy-agent-assist` - MongoDB connection string
+
+Use the `copy-secrets.sh` script to copy these secrets:
 
 ```bash
 #!/bin/bash
@@ -45,14 +49,16 @@ done
 echo "Secrets copied successfully."
 ```
 
-Then run the script:
+Run the script:
 
 ```bash
 chmod +x copy-secrets.sh
 ./copy-secrets.sh
 ```
 
-## New values
+### Preparing `values.yaml` for Migration
+
+Configure the `values.yaml` file with new values for the ingress and the cognigyAgentAssist section:
 
 ```yaml
 ingress:
@@ -66,15 +72,14 @@ cognigyAgentAssist:
   # Only enable it if you want to forward Genesys notifications to Agent Assist,
   # enableGenesysNotificationsForwarder: true
   enabled: true
-
   existingSecret: "agent-assist-api-key"
 ```
 
-The existing secret would be the value of the secret `agent-assist-api-key` copied from the agent-assist namespace.
+This secret `agent-assist-api-key` contains an `api-key` field and is used for authenticating the Agent Assist API Rest and WebSocket API.
 
-This secret contains an `api-key` field and is used for authenticating the Agent Assist API Rest and WebSocket API.
+### Setting Environment Variables
 
-## Environment variables
+Update the `cognigyEnv` section to reflect the correct domain names for your environment:
 
 ```yaml
 cognigyEnv:
@@ -82,11 +87,19 @@ cognigyEnv:
   FEATURE_ENABLE_AGENT_ASSIST_WORKSPACE_GENESYS_CREDENTIALS_WHITELIST: "*"
 ```
 
-These are the current environment variables. They need to point to the right domain names for each environment.
+## Migration Process
 
-## Uninstall agent-assist namespace
+### Note on Downtime
 
-The last step is to uninstall the agent-assist namespace.
+Switching the ingress as part of the migration process will create a period of downtime. During this time, until all the new pods in the `cognigy-ai` namespace are up and running and the `agent-assist` namespace is deleted, the product will be unavailable. Plan this migration accordingly to minimize impact.
+
+### Migrating to cognigy-ai-app Helm Chart
+
+After completing the pre-migration tasks, proceed with the migration by deploying the cognigy-ai-app helm chart with the updated `values.yaml`.
+
+### Uninstalling the agent-assist Namespace
+
+After successfully migrating, uninstall the `agent-assist` namespace:
 
 ```bash
 helm uninstall agent-assist
