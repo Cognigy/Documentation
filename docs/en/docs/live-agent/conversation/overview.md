@@ -99,7 +99,7 @@ Indicates the number of conversations that were temporarily suspended until a ti
 This conversation status is applied when you need to wait for a specific period or require a reply from the customer to continue the conversation.
 In a conversation workflow, it indicates that the issue will be set aside for now, and the status will change to Open when a time trigger or customer response trigger was activated.
 
-For more information, read the [Live Agent](https://docs.cognigy.com/insights/dashboard-live-agent/) and the [Conversation Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/?h=snooze#setting-reminders-and-status)documentation.
+For more information, read the [Live Agent](https://docs.cognigy.com/insights/dashboard-live-agent/) documentation.
 
 ## Conversation Assignment Statuses 
 
@@ -147,9 +147,24 @@ By default, users having the Agent role cannot see the **All** tab for all conve
 #### Assign Agents, Teams, Priority, Labels (only a short explanation with a reference to the detailed article)
 
 ### Conversation Information
+When  a conversation is selected conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
+
+- [Cognigy Session ID](#copy-cognigy-session-id)
+- [Channel Type](#channel-type)
+- [Cognigy User ID](#cognigy-user-id)
+
+To find this field
+
 #### Copy Cognigy Session ID
+
+Go to the conversation information 
+
 #### Channel Type
+
+
 #### Cognigy User ID
+
+
 
 ### Previous Conversations
 
