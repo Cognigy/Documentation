@@ -32,10 +32,10 @@ cognigyAgentAssist:
   # enableGenesysNotificationsForwarder: true
   enabled: true
 
-  existingSecret: "agent-assist-workspace-credentials"
+  existingSecret: "agent-assist-api-key"
 ```
 
-The existing secret would be the value of the existing secret `agent-assist-api-key` copied from the agent-assist namespace.
+The existing secret would be the value of the secret `agent-assist-api-key` copied from the agent-assist namespace.
 
 This secret contains an `api-key` field and is used for authenticating the Agent Assist API Rest and WebSocket API.
 
