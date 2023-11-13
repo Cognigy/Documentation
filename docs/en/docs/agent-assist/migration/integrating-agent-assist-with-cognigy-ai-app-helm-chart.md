@@ -18,18 +18,17 @@ Before initiating the migration, complete the following preparatory steps.
 
 You need to copy the existing secrets from the `agent-assist` namespace to the `cognigy-ai` namespace. The required secrets are:
 
-- `agent-assist-api-key` - API auth token
 - `cognigy-agent-assist` - MongoDB connection string
 
-Use the `copy-secrets.sh` script to copy these secrets:
+Use the `copy-secret.sh` script to copy these secrets:
 
 ```bash
 #!/bin/bash
 
-# Define secrets and namespaces
+# Define secret and namespaces
 sourceNamespace="agent-assist"
 destinationNamespace="cognigy-ai"
-secrets=("cognigy-agent-assist" "agent-assist-api-key")
+secret="cognigy-agent-assist"
 
 # Check if kubectl is installed
 if ! command -v kubectl &> /dev/null
@@ -38,22 +37,21 @@ then
     exit 1
 fi
 
-# Copy each secret
-for secret in "${secrets[@]}"; do
-  echo "Copying $secret from $sourceNamespace to $destinationNamespace..."
-  kubectl get secret $secret --namespace $sourceNamespace -o yaml |\
-  sed '/namespace:/d' |\
-  kubectl apply --namespace=$destinationNamespace -f -
-done
+# Copy the secret
+echo "Copying $secret from $sourceNamespace to $destinationNamespace..."
+kubectl get secret $secret --namespace $sourceNamespace -o yaml |\
+sed '/namespace:/d' |\
+kubectl apply --namespace=$destinationNamespace -f -
 
-echo "Secrets copied successfully."
+echo "Secret copied successfully."
+
 ```
 
 Run the script:
 
 ```bash
-chmod +x copy-secrets.sh
-./copy-secrets.sh
+chmod +x copy-secret.sh
+./copy-secret.sh
 ```
 
 ### Preparing `values.yaml` for Migration
@@ -72,7 +70,6 @@ cognigyAgentAssist:
   # Only enable it if you want to forward Genesys notifications to Agent Assist,
   # enableGenesysNotificationsForwarder: true
   enabled: true
-  existingSecret: "agent-assist-api-key"
 ```
 
 This secret `agent-assist-api-key` contains an `api-key` field and is used for authenticating the Agent Assist API Rest and WebSocket API.
