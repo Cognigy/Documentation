@@ -71,26 +71,30 @@ defined in the [Profile Schema](../../resources/manage/contact-profiles.md#profi
 ## Adding Log Statements to Code Nodes
 <div class="divider"></div>
 
-To see log statements on the [Logs page](../../resources/test/logs.md), place `api.log()` statements into the Code Node.
+To view log statements on the [Logs page](../../resources/test/logs.md), insert `api.log()` statements into the Code Node.
 
-- Input code in a Code Node:
-    ```javaScript
-    const testKeyAPILOG = "Test for api.log"
-    actions.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
-    api.log("debug", testKeyAPILOG);
-    ``` 
-- Result on the Logs page:
+Input code in a Code Node:
+
+```javaScript
+const testKeyAPILOG = "Test for api.log"
+actions.addToContext("test.contextKeyAPI", testKeyAPILOG, "simple")
+api.log("debug", testKeyAPILOG);
+``` 
+
+Result on the Logs page:
 
 `2023-01-12 10:27:08 <mark>debug</mark> ***Test for api.log*** { "flowId": "94311a23-b905-4e38-b121-9bffeb658783", "entrypoint": "63bff4588642adbc590be047", "userId": "user1234"`
    
 ## Sending Facebook JSON
 <div class="divider"></div>
 
-You can send Facebook JSON directly from within Code Nodes using the output action. You can do this in two ways:
+You can send Facebook JSON directly from within Code Nodes using the [output](actions.md#actionsoutput--actionssay--apioutput--apisay) action. 
 
-- Writing the JSON yourself
+You can do this in two ways:
+
+=== "Manually creating the JSON"
     ```javaScript
-    // build the faceboook reply
+    // build the facebook reply
     const obj = {
         "_cognigy": {
             "_facebook": {      
@@ -114,7 +118,7 @@ You can send Facebook JSON directly from within Code Nodes using the output acti
     actions.output("test", obj);
     ``` 
 
-- Using the facebook-bot-messenger module (more information on [GitHub](https://github.com/snlangsuan/facebook-bot-messenger)
+=== "Utilizing the facebook-bot-messenger module"
     ```javaScript
     // use facebook-bot-messenger to compile reply
     const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');
@@ -124,3 +128,5 @@ You can send Facebook JSON directly from within Code Nodes using the output acti
     // output the reply
     actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
     ``` 
+    
+    More details can be found on its [GitHub documentation](https://github.com/snlangsuan/facebook-bot-messenger).
