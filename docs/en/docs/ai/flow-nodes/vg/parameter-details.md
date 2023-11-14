@@ -35,7 +35,7 @@ The TTS settings can be chosen from a pre-filled dropdown for Microsoft Azure, A
 
 ### Recognizer - Speech-To-Text
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../../release-notes/4.62.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 The STT settings can be chosen from a pre-filled dropdown for Microsoft Azure, AWS, Google, Nuance, Soniox, or a custom vendor.
 
