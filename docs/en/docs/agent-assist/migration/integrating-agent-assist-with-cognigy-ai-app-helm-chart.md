@@ -72,7 +72,7 @@ cognigyAgentAssist:
   enabled: true
 ```
 
-This secret `agent-assist-api-key` contains an `api-key` field and is used for authenticating the Agent Assist API Rest and WebSocket API.
+This `agent-assist-api-key` secret contains an `api-key` field and is used for authenticating both the Agent Assist API Rest and WebSocket API.
 
 ### Add Environment Variables
 
