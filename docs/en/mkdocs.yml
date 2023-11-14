@@ -424,7 +424,7 @@ nav:
           - agent-assist/voice-agent-assist/webhook-endpoint.md
       - agent-assist/plug-and-play-widgets.md
       - Migration Guides:
-          - agent-assist/installation/migration/integrating-agent-assist-with-cognigy-ai-app-helm-chart.md
+          - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
 
   - xApps:
       - ai/xApp/overview.md
