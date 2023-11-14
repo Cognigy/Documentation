@@ -414,6 +414,8 @@ nav:
           - agent-assist/installation/version-compatibility-matrix.md
           - agent-assist/installation/prerequisites.md
           - agent-assist/installation/installation-process.md
+          - Migration Guides:
+              - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md
@@ -425,8 +427,6 @@ nav:
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
       - agent-assist/plug-and-play-widgets.md
-      - Migration Guides:
-          - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
 
   - xApps:
       - ai/xApp/overview.md
