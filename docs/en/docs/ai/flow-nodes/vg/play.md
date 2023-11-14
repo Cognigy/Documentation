@@ -24,4 +24,4 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 
 
 !!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.
+    You can find more information about activity parameters on our [Parameter Details](parameter-details.md) page.
