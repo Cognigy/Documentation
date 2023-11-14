@@ -1,7 +1,7 @@
 ---
- title: "Migration Guide: Integrating Agent Assist with Cognigy.AI App Helm Chart" 
- slug: "migration-guide-integrating-agent-assist-with-cognigy-ai-app-helm-chart" 
- hidden: false 
+title: "Migration Guide: Agent Assist to Cognigy.AI Helm Chart" 
+slug: "agent-assist-to-cognigy-ai-helm-chart-migration" 
+hidden: false 
 ---
 
 # Migration Guide: Agent Assist to Cognigy.AI Helm Chart
