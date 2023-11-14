@@ -90,7 +90,7 @@ cognigyEnv:
 
 Switching the ingress as part of the migration process will create a period of downtime. During this time, until all the new pods in the `cognigy-ai` namespace are up and running and the `agent-assist` namespace is deleted, the product will be unavailable. Plan this migration accordingly to minimize impact.
 
-### Migrating to cognigy-ai-app Helm Chart
+### Migrate to Cognigy. AI Helm Chart
 
 After completing the pre-migration tasks, proceed with the migration by deploying the `cognigy-ai-app ` Helm chart with the updated `values.yaml` file.
 
