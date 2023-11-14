@@ -88,7 +88,7 @@ cognigyEnv:
 
 ### Note on Downtime
 
-Switching the ingress as part of the migration process will create a period of downtime. During this time, until all the new pods in the `cognigy-ai` namespace are up and running and the `agent-assist` namespace is deleted, the product will be unavailable. Plan this migration accordingly to minimize impact.
+Switching the `ingress` as part of the migration process will create a period of downtime. The product will be unavailable until all the new pods in the `county-ai` namespace are up and running, and the agent-assist namespace is deleted. Plan this migration accordingly to minimize impact.
 
 ### Migrate to Cognigy. AI Helm Chart
 
