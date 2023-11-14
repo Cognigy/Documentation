@@ -8,7 +8,7 @@
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
-This guide provides step-by-step instructions to migrate Agent Assist services to the cognigy-ai-app helm chart.
+This guide provides step-by-step instructions for migrating Agent Assist services to the `cognigy-ai-app` Helm chart.
 
 ## Pre-Migration Tasks
 
