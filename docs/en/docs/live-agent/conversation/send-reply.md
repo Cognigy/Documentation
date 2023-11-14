@@ -21,24 +21,16 @@ The ++enter++ key will be used for line breaks. If you want to change hotkey opt
   <figcaption>Reply to a Message</figcaption>
 </figure>
 
-
 ## Audience
 
 
 
 ## Types of Responses
 
-### What you can add within a Reply
+In Live Agent conversations the human Agent can use different types of responses:
 
-Below is a list describing Conversation reply actions an Agent can take by clicking the following icons.
-
-| Icon                                                                                                  | Description                                                                                              |
-|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}assets/icons/emoji.svg" width="50%" alt="" />                            | **Show emoji selector** - This button allows a human agent to select and include an Emoji in the message.|
-| <img src="{{config.site_url}}assets/icons/attach-files.svg" width="50%" alt="" />                     | **Attach files** - This button allows  a human agent to select and include attachments in the message.   |
-| <img src="{{config.site_url}}assets/icons/request-file.svg" width="50%" alt="" />                     | **Request file** - This button allows a human agent to request a file from the customer.                 |
-| <img src="{{config.site_url}}assets/icons/record-audio.svg" width="50%" alt="" />                     | **Record audio** - This button allows a human agent to send voice messages to the customer.              |
-| <img src="{{config.site_url}}assets/icons/insert-link.svg" width="50%" alt="" />                      | **Insert link** - This button allows a human agent to send hyperlinked text to the customer.             |
+- [Quick Reply](#quick-reply)
+- [Quick reply with Canned response](#quick-reply-with-canned-response)
 
 ### Quick Reply
 
@@ -121,39 +113,44 @@ A canned response with variables is called the same way as a [simple canned resp
 When you select the canned response, variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
-#### Request File Upload
+### Reply actions and what you can add within a Chat
+
+Below is a list describing Conversation reply actions an Agent can take by clicking the following icons.
+
+| Icon                                                                                                  | Description                                                                                              |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <img src="{{config.site_url}}assets/icons/emoji.svg" width="50%" alt="" />                            | **Show emoji selector** - This button allows a human agent to select and include an Emoji in the message.|
+| <img src="{{config.site_url}}assets/icons/attach-files.svg" width="50%" alt="" />                     | **Attach files** - This button allows  a human agent to select and include attachments in the message.   |
+| <img src="{{config.site_url}}assets/icons/request-file.svg" width="50%" alt="" />                     | **Request file** - This button allows a human agent to request a file from the customer.                 |
+| <img src="{{config.site_url}}assets/icons/record-audio.svg" width="50%" alt="" />                     | **Record audio** - This button allows a human agent to send voice messages to the customer.              |
+| <img src="{{config.site_url}}assets/icons/insert-link.svg" width="50%" alt="" />                      | **Insert link** - This button allows a human agent to send hyperlinked text to the customer.             |
+
+### Request File Upload
 
 By default, human Agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
 
 File requirements:
 
-- Supported File Types are jpeg, jpg, png, docx, wav, ogg, pdf.
+- Supported file types are jpeg, jpg, png, docx, wav, ogg, pdf.
 - Maximum file size is 40MB.
 
 To request a file, follow these steps:
 
-1. Click the **Request file** icon at the bottom of the Live Agent reply field. 
+1. Click the **Request file** icon at the bottom of the Live Agent reply field. A window for the file request appears prompts your confirmation.
 
     <figure>
     <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
       <figcaption>Request file upload</figcaption>
     </figure>
 
-2. Confirm that you want to send it to the customer to enable the file upload.
-
-    <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
-      <figcaption>Request file upload confirm</figcaption>
-    </figure>
-
-A message should appear in the chat indicating that the file has been requested.
+2. Click **Send** to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="100%" alt="Live Agent request file upload message" />
   <figcaption>Request file upload message</figcaption>
 </figure>
 
-Now the customer should see a button to open a file upload dialog.
+The customer will see a button in the chat to open a file upload dialog.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
@@ -166,6 +163,8 @@ After uploading the file, it should be reflected in the Webchat and the Live Age
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="100%" alt="Live Agent request file upload webchat completed" />
   <figcaption>Request file upload in Webchat completed</figcaption>
 </figure>
+
+The successful upload is displayed in Live Agent.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
