@@ -16,9 +16,7 @@ Before initiating the migration, complete the following preparatory steps.
 
 ### Copying agent-assist Namespace Secrets
 
-You need to copy the existing secrets from the `agent-assist` namespace to the `cognigy-ai` namespace. The required secrets are:
-
-- `cognigy-agent-assist` - MongoDB connection string
+You need to copy the existing secrets from the `agent-assist` namespace to the `cognigy-ai` namespace. The required secret is `cognigy-agent-assist` (MongoDB connection string).
 
 Use the `copy-secret.sh` script to copy these secrets:
 
