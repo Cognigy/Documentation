@@ -46,36 +46,3 @@ When the end user should not see a name and an image of the human agent in the c
 Activating the **Enable Agent masking** setting masks all Agents personal information, such as name, email, and profile images. For example, the Agent name "Max Mustermann" would turn into "Agent x4gH5tZ". Only the Agent himself can see the clear name himself. No one in your organization and of course, no customer can connect the arbitrary masked name with a real human Agent's name.
 
 For more information, read the [Account Settings](../settings/account-settings.md) documentation.
-
-## Private Chat with Agents
-
-As a human Agent you can discuss the customer's conversation with another Agent, should you need some more clarification or assistance. This option is available beside the **Reply** tab, labeled **Private Note**.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
-  <figcaption>Private Chat with Agents</figcaption>
-</figure>
-
-1. Type '@' in the Private Note window. All Agents who have been added to this Team will be listed.
-2. Select an Agent and type in a message to consult with the selected Agent.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-16.png" width="100%" alt="Live Agent Private Chat 2" />
-  <figcaption>Private Chat with Agent -2</figcaption>
-</figure>
-
-3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
-  <figcaption>Private Message with Agent</figcaption>
-</figure>
-
-The second Agent addressed in the private note will receive a notification in his account. Replies sent by the second Agent will be visible in the Private Note window.
-
-### Delete Private Note
-
-To delete the private note which you have already sent, do the following: 
-
-1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
-2. Select **Delete**. The private note will be deleted.

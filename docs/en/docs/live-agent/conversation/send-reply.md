@@ -21,7 +21,58 @@ The ++enter++ key will be used for line breaks. If you want to change hotkey opt
   <figcaption>Reply to a Message</figcaption>
 </figure>
 
-## Audience
+## Audience to Assist Bot
+
+see []() documentation.
+
+### Audience to LA Agent Assist
+
+In Cognigy.AI you can activate additional **Live Agent** settings in the handover Node, to display a button in your Live Agent UI allowing human agents to reply as end user.
+
+To activate this option, do the following:
+
+1. Go to Cognigy.AI and open the Virtual Agent Flow, which is prepared with a **Handover to Live Agent** Node and uses the Endpoint using the Live Agent Inbox for communication.
+2. Click on the handover Node in the Flow. A settings menu will be displayed on the right hand side of the panel.
+3. Open the **Live Agent Settings** field.
+4. Activate **Allow to reply as user via UI** using the slider switch.
+5. Click **Save Node** to save the changed setting.
+
+When this option is active, the human Agent can use a corresponding reply field which allows direct communication via an LA Agent Assist channel.
+
+For more information, how to use the LA Agent Asisst in a conversation, read the [LA Agent Assist Setup](../../ai/handover-providers/la-agent-assist-setup/) documentation.
+
+### Private Chat with Agents
+
+As a human Agent you can discuss the customer's conversation with another Agent, should you need some more clarification or assistance. This option is available beside the **Reply** tab, labeled **Private Note**.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
+  <figcaption>Private Chat with Agents</figcaption>
+</figure>
+
+1. Type '@' in the Private Note window. All Agents who have been added to this Team will be listed.
+2. Select an Agent and type in a message to consult with the selected Agent.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-16.png" width="100%" alt="Live Agent Private Chat 2" />
+  <figcaption>Private Chat with Agent -2</figcaption>
+</figure>
+
+3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
+
+<figure>
+<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
+  <figcaption>Private Message with Agent</figcaption>
+</figure>
+
+The second Agent addressed in the private note will receive a notification in his account. Replies sent by the second Agent will be visible in the Private Note window.
+
+#### Delete Private Note
+
+To delete the private note which you have already sent, do the following: 
+
+1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
+2. Select **Delete**. The private note will be deleted.
 
 
 
