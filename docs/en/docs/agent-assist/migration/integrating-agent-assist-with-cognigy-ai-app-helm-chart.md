@@ -4,7 +4,7 @@
  hidden: false 
 ---
 
-# Migration Guide: Integrating Agent Assist with Cognigy.AI App Helm Chart
+# Migration Guide: Agent Assist to Cognigy.AI Helm Chart
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
