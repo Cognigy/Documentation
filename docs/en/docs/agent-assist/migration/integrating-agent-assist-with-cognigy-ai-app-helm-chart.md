@@ -74,7 +74,7 @@ cognigyAgentAssist:
 
 This secret `agent-assist-api-key` contains an `api-key` field and is used for authenticating the Agent Assist API Rest and WebSocket API.
 
-### Setting Environment Variables
+### Add Environment Variables
 
 Update the `cognigyEnv` section to ensure it reflects the correct domain names for your environment:
 
