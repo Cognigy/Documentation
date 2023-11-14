@@ -87,6 +87,46 @@ This `agent-assist-api-key` secret contains an `api-key` field and is used for a
 
 ### Add Environment Variables
 
+Remove old `extraEnvVars` containing `AGENT_ASSIST_WORKSPACE_API_ACCESS_TOKEN` in case they are defined from the `cognigy-ai-app` Helm chart:
+
+```yaml
+serviceAi:
+  # ...
+  # Remove the following lines
+  extraEnvVars:
+    - name: AGENT_ASSIST_WORKSPACE_API_ACCESS_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: agent-assist-workspace-credentials
+          key: api-access-token
+
+serviceEndpoint:
+  # ...
+  # Remove the following lines
+  extraEnvVars:
+    - name: AGENT_ASSIST_WORKSPACE_API_ACCESS_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: agent-assist-workspace-credentials
+          key: api-access-token
+
+serviceHandover:
+  # ...
+  # Remove the following lines
+  extraEnvVars:
+    - name: AGENT_ASSIST_WORKSPACE_API_ACCESS_TOKEN
+      valueFrom:
+        secretKeyRef:
+          name: agent-assist-workspace-credentials
+          key: api-access-token
+
+cognigyEnv:
+  # ...
+  # Remove the following variables
+  AGENT_ASSIST_WORKSPACE_FRONTEND_URL_WITH_PROTOCOL=
+  AGENT_ASSIST_WORKSPACE_API_BASE_URL_WITH_PROTOCOL=
+```
+
 Update the `cognigyEnv` section to ensure it reflects the correct domain names for your environment:
 
 ```yaml
@@ -112,4 +152,4 @@ helm uninstall agent-assist --namespace agent-assist
 kubectl delete ns agent-assist
 ```
 
-Now the migration is complete. You can now use the `cognigy-ai-app` Helm chart to manage your Agent Assist services.
+The migration is complete. You can now use the `cognigy-ai-app` Helm chart to manage your Agent Assist services.
