@@ -94,7 +94,7 @@ Switching the ingress as part of the migration process will create a period of d
 
 After completing the pre-migration tasks, proceed with the migration by deploying the cognigy-ai-app helm chart with the updated `values.yaml`.
 
-### Uninstalling the agent-assist Namespace
+### Uninstall the Agent Assist Namespace
 
 After successfully migrating, uninstall the `agent-assist` namespace:
 
