@@ -14,6 +14,12 @@ This guide provides step-by-step instructions for migrating Agent Assist service
 
 Switching the `ingress` as part of the migration process will create a period of downtime. The product will be unavailable until all the new pods in the `county-ai` namespace are up and running, and the agent-assist namespace is deleted. Plan this migration accordingly to minimize impact.
 
+## Prerequisites
+
+### Upgrade the current installation of Agent Assist to v4.64
+
+The migration to the `cognigy-ai-app` Helm chart requires Agent Assist v4.64 or later. If you are running an earlier version, upgrade to v4.64 or later before proceeding with the migration.
+
 ## Pre-Migration Tasks
 
 Before starting the migration, accomplish the following preliminary tasks.
