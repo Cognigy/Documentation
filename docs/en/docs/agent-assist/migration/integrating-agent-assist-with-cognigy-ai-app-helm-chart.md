@@ -76,7 +76,7 @@ This secret `agent-assist-api-key` contains an `api-key` field and is used for a
 
 ### Setting Environment Variables
 
-Update the `cognigyEnv` section to reflect the correct domain names for your environment:
+Update the `cognigyEnv` section to ensure it reflects the correct domain names for your environment:
 
 ```yaml
 cognigyEnv:
