@@ -86,8 +86,8 @@ If you want to see examples of Extensions, visit our GitHub repository.
    </div>
 </blockquote>
 
-!!! Tip "Cognigy Hammer"
-   [Cognigy Hammer](https://github.com/tgbv/cognigy-hammer/) is an extension development suite for Cognigy.AI. This project seeks to eliminate the need of managing nodes dependencies and establish a standard for better development of CognigyAI extensions. Please be aware this is an open source community project, and is not a supported Cognigy product.
+!!! tip "Cognigy Hammer - Extension Development Suite"
+    [Cognigy Hammer](https://github.com/tgbv/cognigy-hammer/) is a community created extension development suite for Cognigy.AI. It offers several tools and features to assist in development of Cognigy Extensions. Please note Cognigy Hammer is not a product of Cognigy, and does not qualify for enterprise support.
 
 ### Handle Timeouts in an Extension
 Extensions have a default timeout of 20 seconds, meaning if the time it takes for the Extension to complete is more than 20 seconds, the Extension will stop and an error will be returned to the Flow. The Flow execution will continue, and the error can be accessed under `input.extensionError.message`.
