@@ -12,7 +12,7 @@ This guide provides step-by-step instructions to migrate Agent Assist services t
 
 ## Pre-Migration Tasks
 
-Before initiating the migration, complete the following preparatory steps.
+Before starting the migration, accomplish the following preliminary tasks.
 
 ### Copy Agent Assist Namespace Secrets
 
