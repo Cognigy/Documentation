@@ -5,7 +5,7 @@
 ---
 # Endpoints
 
-**Endpoints** are used to connect external channels, such as Facebook Messenger, Slack, Alexa and many others, to specific Cognigy [**Flows**]({{config.site_url}}ai/resources/build/flows/). They convert channel-specific input and output (images, galleries, voice) to the standardized [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
+**Endpoints** are used to connect external channels, such as Facebook Messenger, Slack, Alexa and many others, to specific Cognigy [Flows]({{config.site_url}}ai/resources/build/flows/). They convert channel-specific input and output (images, galleries, voice) to the standardized [Input]({{config.site_url}}ai/tools/interaction-panel/input/)  object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/6d72d72-endpoints-screen.jpg" width="100%" />
@@ -14,7 +14,6 @@
 Find more details about each type of endpoint and links to our [Help Center](https://support.cognigy.com/hc/en-us?_ga=2.36371232.1055740288.1600087042-336273911.1592472592) in the [Endpoints]({{config.site_url}}ai/endpoints/overview/) section of the documentation.
 
 ## Standard Endpoints
-<div class="divider"></div>
 
 The platform includes many pre-built Endpoints that can be configured in a couple of steps. 
 
@@ -46,15 +45,13 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 
 ### Endpoint Configuration
 
-<div class="divider"></div>
-
 #### Snapshot
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/3c33561-endpoints-snapshot.jpg" width="100%" />
 </figure>
 
-Endpoints can be pointed to a specific [**Snapshot**]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
+Endpoints can be pointed to a specific [Snapshot]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
 
 While an Endpoint is active, you can replace or remove a Snapshot. In this case, you need to take into account that there may still be active sessions running on the Endpoint using the old Snapshot.
 
@@ -67,35 +64,31 @@ When an old Snapshot is replaced with a new one or is deleted, the following rul
 
 ##### Override Snapshot Connections
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.21.0-blue.svg)]({{config.site_url}})
-
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection.png" width="100%" />
 </figure>
 
-Agents with Snapshots have the toggle "Override Snapshot Connections" in the Endpoint editor. Turning this toggle ON will allow this Endpoint to override the Connections in a Snapshot with the [**Connections**]({{config.site_url}}ai/resources/build/connections/) in the Project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
+Agents with Snapshots have the toggle **Override Snapshot Connections** in the Endpoint editor. Turning this toggle **ON** will allow this Endpoint to override the Connections in a Snapshot with the [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
 
 !!! info "Default setting"
     By default, any Endpoint will keep using the Connections from the Snapshot unless the toggle is turned ON.
 
-The Agent in which the Connection is to be overridden should initially be either restored from a Snapshot, or should have the Connections imported from another (source) Agent using a Package. The Snapshot selected in the Endpoint editor should be a Snapshot created from the same (source) Agent, to make sure that the Connections "match". In this case, if the toggle is ON, any change in the Connections of the restored Agent will be considered over the Connections in the selected Snapshot.
+The Agent in which the Connection is to be overridden should initially be either restored from a Snapshot, or should have the Connections imported from another (source) Agent using a Package. The Snapshot selected in the Endpoint Editor should be a Snapshot created from the same (source) Agent, to make sure that the Connections "match". In this case, if the toggle is **ON**, any change in the Connections of the restored Agent will be considered over the Connections in the selected Snapshot.
 
 !!! note
-    You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use [Cognigy.AI API](../../developer-guides/using-api.md) with the Get all Connections request.
+    You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use [Cognigy.AI API](../../developer-guides/using-api.md) with the **Get all Connections** request.
 
 
 #### Flow
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-
-Endpoints also need an entry [**Flow**]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Note that it is possible to switch Flows during a conversation. 
-As of Cognigy.AI 4.9.0, you can use the **jump to Flow** button next to the Flow selection field on the right-hand side.
+Endpoints also need an entry [Flow]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Note that it is possible to switch Flows during a conversation. 
+You can use the **jump to Flow** button next to the Flow selection field on the right-hand side.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/6f3084d-Endpoint_Webchat_jump_to_Flow_button_5.svg" width="100%" />
 </figure>
 
-Clicking on the link "Manual Input" below the Flow drop-down field displays the Flow ID of the currently selected Flow. Clicking the "Select from Dropdown" link will take you back to the drop-down selection list of Flows.
+Clicking on the link **Manual Input** below the Flow drop-down field displays the Flow ID of the currently selected Flow. Clicking the **Select from Dropdown** link will take you back to the drop-down selection list of Flows.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/99b555f-Flow_select_from_Dropdown.svg" width="100%" />
