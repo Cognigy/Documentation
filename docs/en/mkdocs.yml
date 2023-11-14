@@ -64,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.64:
+    - release-notes/4.64.md
   - 4.63:
     - release-notes/4.63.md
   - 4.62:
@@ -423,6 +425,8 @@ nav:
           - agent-assist/voice-agent-assist/transfer-node.md
           - agent-assist/voice-agent-assist/webhook-endpoint.md
       - agent-assist/plug-and-play-widgets.md
+      - Migration Guides:
+          - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
 
   - xApps:
       - ai/xApp/overview.md
