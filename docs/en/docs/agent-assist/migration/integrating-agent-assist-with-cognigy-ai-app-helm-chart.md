@@ -56,7 +56,7 @@ chmod +x copy-secret.sh
 
 ### Preparing `values.yaml` for Migration
 
-Configure the `values.yaml` file with new values for the ingress and the cognigyAgentAssist section:
+Configure the `values.yaml` file with new values for the `ingress` and the c`ognigyAgentAssist` sections:
 
 ```yaml
 ingress:
