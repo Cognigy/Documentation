@@ -105,5 +105,6 @@ After completing the pre-migration tasks, proceed with the migration by deployin
 After successfully migrating, uninstall the `agent-assist` namespace:
 
 ```bash
-helm uninstall agent-assist
+helm uninstall agent-assist --namespace agent-assist
+kubectl delete ns agent-assist
 ```
