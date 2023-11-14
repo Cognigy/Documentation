@@ -1,7 +1,7 @@
 ---
-title: "Migration Guide: Agent Assist to Cognigy.AI Helm Chart" 
-slug: "agent-assist-to-cognigy-ai-helm-chart-migration" 
-hidden: false 
+title: "Migration Guide: Agent Assist to Cognigy.AI Helm Chart"
+slug: "agent-assist-to-cognigy-ai-helm-chart-migration"
+hidden: false
 ---
 
 # Migration Guide: Agent Assist to Cognigy.AI Helm Chart
@@ -9,6 +9,10 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 This guide provides step-by-step instructions for migrating Agent Assist services to the `cognigy-ai-app` Helm chart.
+
+### Note on Downtime
+
+Switching the `ingress` as part of the migration process will create a period of downtime. The product will be unavailable until all the new pods in the `county-ai` namespace are up and running, and the agent-assist namespace is deleted. Plan this migration accordingly to minimize impact.
 
 ## Pre-Migration Tasks
 
@@ -85,10 +89,6 @@ cognigyEnv:
 ## Migration Process
 
 To initiate the migration, complete the following tasks.
-
-### Note on Downtime
-
-Switching the `ingress` as part of the migration process will create a period of downtime. The product will be unavailable until all the new pods in the `county-ai` namespace are up and running, and the agent-assist namespace is deleted. Plan this migration accordingly to minimize impact.
 
 ### Migrate to Cognigy. AI Helm Chart
 
