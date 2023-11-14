@@ -108,3 +108,5 @@ After successfully migrating, uninstall the `agent-assist` namespace:
 helm uninstall agent-assist --namespace agent-assist
 kubectl delete ns agent-assist
 ```
+
+Now the migration is complete. You can now use the `cognigy-ai-app` Helm chart to manage your Agent Assist services.
