@@ -8,7 +8,7 @@
 **Endpoints** are used to connect external channels, such as Facebook Messenger, Slack, Alexa and many others, to specific Cognigy [Flows]({{config.site_url}}ai/resources/build/flows/). They convert channel-specific input and output (images, galleries, voice) to the standardized [Input]({{config.site_url}}ai/tools/interaction-panel/input/)  object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/6d72d72-endpoints-screen.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-screen.png" width="100%" />
 </figure>
 
 Find more details about types of endpoints and links to our [Help Center](https://support.cognigy.com/hc/en-us?_ga=2.36371232.1055740288.1600087042-336273911.1592472592) in the [Endpoints]({{config.site_url}}ai/endpoints/overview/) documentation.
@@ -48,7 +48,7 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 #### Snapshot
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/3c33561-endpoints-snapshot.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-snapshot.png" width="100%" />
 </figure>
 
 Endpoints can be pointed to a specific [Snapshot]({{config.site_url}}ai/resources/deploy/snapshots/). This allows to easily deploy different versions of your Virtual Agent.
@@ -65,7 +65,7 @@ When an old Snapshot is replaced with a new one or is deleted, the following rul
 ##### Override Snapshot Connections
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection_f.png" width="100%" />
 </figure>
 
 Agents with Snapshots have the toggle switch **Override Snapshot Connections** in the Endpoint editor. Turning this toggle **ON** enables this Endpoint to override the Connections in a Snapshot with [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
@@ -78,25 +78,24 @@ The Agent in which the Connection is to be overridden should initially be either
 !!! note
     You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use [Cognigy.AI API](../../developer-guides/using-api.md) with the **Get all Connections** request.
 
-
 #### Flow
 
 Endpoints need an entry [Flow]({{config.site_url}}ai/resources/build/flows/) to start the conversation. You can switch Flows during a conversation. 
 To switch to a Flow, click <img src="{{config.site_url}}ai/resources/deploy/images/jump-to-flow.png" width="3%" alt="" /> next to the Flow selection field on the right-hand side.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/6f3084d-Endpoint_Webchat_jump_to_Flow_button_5.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Endpoint_Webchat_jump_to_Flow_button.png" width="100%" />
 </figure>
 
 To display the Flow ID of the currently selected Flow, click **Manual Input** below the Flow drop-down field. Clicking the **Select from Dropdown** link will take you back to the drop-down selection list of Flows.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/99b555f-Flow_select_from_Dropdown.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow_select_from_Dropdown.png" width="100%" />
 </figure>
 
 #### Endpoint URL
 
-The Endpoint URL states the **technical interface** to the specific Endpoint. For most channels, it needs to be copied in the channel's settings so that the channel is configured for the Cognigy.AI connection. 
+The Endpoint URL is the interface to the Endpoint. For most channels, you need to copy it in the channel's settings, so that the channel is configured for the Cognigy.AI connection. 
 
 #### General Settings > Enabled
 
@@ -105,24 +104,26 @@ This switch allows you to quickly **enable** or **disable** the Endpoint.
 #### Natural Language Understanding
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/af0d4ec-endpoints-nlu.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-nlu.png" width="100%" />
 </figure>
 
-This drop-down allows you to select a different **NLU engine** for this particular Endpoint. Only NLUs that are configured under [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) are shown in this list.
+This drop-down field allows you to select a different **NLU engine** for the selected Endpoint. The available NLU engines you can find here: [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/).
 
 #### Data Protection & Analytics (*previously called Data Management*)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/0c950c4-Data_Protection__Analytics.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/data_protection_analytics.png" width="100%" />
 </figure>
 
 The Data Protection & Analytics section lets you configure which analytics (if any) are collected. 
 
-**Chatbase**
+##### Chatbase #####
+
 Cognigy.AI can be connected directly to Google's Chatbase analytics platform. When enabled, an API key needs to be entered. All relevant data that enters the Endpoint, is forwarded to Chatbase.
 
-**Dashbot**
-The Endpoint can also be setup to forward all relevant analytics to Dashbot.
+##### Dashbot #####
+
+When enabled **Dashbot** will collect analytics data for the selected Endpoint.
 
 ## More Information
 
