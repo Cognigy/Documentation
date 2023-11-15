@@ -68,12 +68,12 @@ When an old Snapshot is replaced with a new one or is deleted, the following rul
   <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection_f.png" width="100%" />
 </figure>
 
-Agents with Snapshots have the toggle switch **Override Snapshot Connections** in the Endpoint editor. Turning this toggle **ON** enables this Endpoint to override the Connections in a Snapshot with [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
+When Agents use a Snapshot a toggle switch **Override Snapshot Connections** will be displayed in the Endpoint editor. When you enable this option, the Endpoint can override the Connections in a Snapshot with [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
 
 !!! info "Default setting"
     By default, any Endpoint will keep using the Connections from the Snapshot unless the toggle is turned ON.
 
-The Agent in which the Connection is to be overridden should initially be either restored from a Snapshot, or should have the Connections imported from another (source) Agent using a Package. The Snapshot selected in the Endpoint Editor should be a Snapshot created from the same (source) Agent, to make sure that the Connections "match". In this case, if the toggle is **ON**, any change in the Connections of the restored Agent will be considered over the Connections in the selected Snapshot.
+The agent, in which the connection should be overridden, should initially be either restored from a Snapshot, or should have the Connections imported from another (source) Agent using a Package. The Snapshot selected in the Endpoint Editor should be a Snapshot created from the same (source) Agent, to make sure that the Connections "match". In this case, if the toggle is **ON**, any change in the Connections of the restored Agent will be considered over the Connections in the selected Snapshot.
 
 !!! note
     You can verify or troubleshoot Connections by their `referenceId`, which needs to match both in the Project and the Snapshot for the override feature to work. To do that, use [Cognigy.AI API](../../developer-guides/using-api.md) with the **Get all Connections** request.
@@ -123,7 +123,7 @@ Cognigy.AI can be connected directly to Google's Chatbase analytics platform. Wh
 
 ##### Dashbot #####
 
-When enabled **Dashbot** will collect analytics data for the selected Endpoint.
+When enabled, **Dashbot** will collect analytics data for the selected Endpoint.
 
 ## More Information
 
