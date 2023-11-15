@@ -11,7 +11,7 @@
   <img class="image-center" src="{{config.site_url}}ai/resources/images/6d72d72-endpoints-screen.jpg" width="100%" />
 </figure>
 
-Find more details about each type of endpoint and links to our [Help Center](https://support.cognigy.com/hc/en-us?_ga=2.36371232.1055740288.1600087042-336273911.1592472592) in the [Endpoints]({{config.site_url}}ai/endpoints/overview/) section of the documentation.
+Find more details about types of endpoints and links to our [Help Center](https://support.cognigy.com/hc/en-us?_ga=2.36371232.1055740288.1600087042-336273911.1592472592) in the [Endpoints]({{config.site_url}}ai/endpoints/overview/) documentation.
 
 ## Standard Endpoints
 
@@ -40,7 +40,7 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
 | [Webhook](../../endpoints/webhook.md)                                                      | The Webhook Endpoint lets you expose Cognigy Flows via Webhook.                                                                                                                  |
 
 !!! note
-    Endpoints that act as **channel aggregators** allow you to connect to multiple channels via a single connection point. Examples: [Sunshine Conversations](https://smooch.io/channels/), [DialogFlow](https://cloud.google.com/dialogflow/es/docs/integrations), [Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0) and [RingCentral Engage](https://www.ringcentral.com/digital-customer-engagement.html#ring-cc-off).
+    Endpoints that act as channel aggregators allow you to connect to multiple channels via a single connection point. Examples: [Sunshine Conversations](https://smooch.io/channels/), [DialogFlow](https://cloud.google.com/dialogflow/es/docs/integrations), [Azure Bot Service](https://docs.microsoft.com/en-us/azure/bot-service/bot-service-channels-reference?view=azure-bot-service-4.0) and [RingCentral Engage](https://www.ringcentral.com/digital-customer-engagement.html#ring-cc-off).
 
 
 ### Endpoint Configuration
@@ -51,11 +51,11 @@ The platform includes many pre-built Endpoints that can be configured in a coupl
   <img class="image-center" src="{{config.site_url}}ai/resources/images/3c33561-endpoints-snapshot.jpg" width="100%" />
 </figure>
 
-Endpoints can be pointed to a specific [Snapshot]({{config.site_url}}ai/resources/deploy/snapshots/). This makes it possible to easily deploy different versions of your Virtual Agent.
+Endpoints can be pointed to a specific [Snapshot]({{config.site_url}}ai/resources/deploy/snapshots/). This allows to easily deploy different versions of your Virtual Agent.
 
-While an Endpoint is active, you can replace or remove a Snapshot. In this case, you need to take into account that there may still be active sessions running on the Endpoint using the old Snapshot.
+While an Endpoint is active, you can replace or remove a Snapshot. In this case, consider that there may still be active sessions running on the Endpoint using the old Snapshot.
 
-Keep in mind, if you have a configuration in which sessions never expire, for example, a Webchat Endpoint with [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md). Without modifications, sessions started with Persistent History enabled will not automatically expire.
+Keep in mind, if you have a configuration in which sessions never expire, for example, a Webchat Endpoint with [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md). Without modifications, sessions started with enabled persistent history, will not automatically expire.
 
 When an old Snapshot is replaced with a new one or is deleted, the following rules will be applied to the active session:
 
@@ -68,7 +68,7 @@ When an old Snapshot is replaced with a new one or is deleted, the following rul
   <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection.png" width="100%" />
 </figure>
 
-Agents with Snapshots have the toggle **Override Snapshot Connections** in the Endpoint editor. Turning this toggle **ON** will allow this Endpoint to override the Connections in a Snapshot with the [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
+Agents with Snapshots have the toggle switch **Override Snapshot Connections** in the Endpoint editor. Turning this toggle **ON** enables this Endpoint to override the Connections in a Snapshot with [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
 
 !!! info "Default setting"
     By default, any Endpoint will keep using the Connections from the Snapshot unless the toggle is turned ON.
@@ -81,24 +81,26 @@ The Agent in which the Connection is to be overridden should initially be either
 
 #### Flow
 
-Endpoints also need an entry [Flow]({{config.site_url}}ai/resources/build/flows/) to start the conversation with. Note that it is possible to switch Flows during a conversation. 
-You can use the **jump to Flow** button next to the Flow selection field on the right-hand side.
+Endpoints need an entry [Flow]({{config.site_url}}ai/resources/build/flows/) to start the conversation. You can switch Flows during a conversation. 
+To switch to a Flow, click <img src="{{config.site_url}}ai/resources/deploy/images/jump-to-flow.png" width="3%" alt="" /> next to the Flow selection field on the right-hand side.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/6f3084d-Endpoint_Webchat_jump_to_Flow_button_5.svg" width="100%" />
 </figure>
 
-Clicking on the link **Manual Input** below the Flow drop-down field displays the Flow ID of the currently selected Flow. Clicking the **Select from Dropdown** link will take you back to the drop-down selection list of Flows.
+To display the Flow ID of the currently selected Flow, click **Manual Input** below the Flow drop-down field. Clicking the **Select from Dropdown** link will take you back to the drop-down selection list of Flows.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/99b555f-Flow_select_from_Dropdown.svg" width="100%" />
 </figure>
 
 #### Endpoint URL
-The Endpoint URL states the **technical interface** to the specific Endpoint. For most channels, it needs to be copied / configured in the channel's settings so that the channel knows how to contact Cognigy.AI. 
+
+The Endpoint URL states the **technical interface** to the specific Endpoint. For most channels, it needs to be copied in the channel's settings so that the channel is configured for the Cognigy.AI connection. 
 
 #### General Settings > Enabled
-This switch allows you to quickly enable or **disable the Endpoint**.
+
+This switch allows you to quickly **enable** or **disable** the Endpoint.
 
 #### Natural Language Understanding
 
@@ -106,7 +108,7 @@ This switch allows you to quickly enable or **disable the Endpoint**.
   <img class="image-center" src="{{config.site_url}}ai/resources/images/af0d4ec-endpoints-nlu.jpg" width="100%" />
 </figure>
 
-This drop-down allows you to select a different **NLU engine** for this particular Endpoint. Only NLUs that are configured under [**NLU Connectors**]({{config.site_url}}ai/resources/build/nlu-connectors/) are shown in this list.
+This drop-down allows you to select a different **NLU engine** for this particular Endpoint. Only NLUs that are configured under [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) are shown in this list.
 
 #### Data Protection & Analytics (*previously called Data Management*)
 
