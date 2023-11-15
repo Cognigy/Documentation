@@ -7,10 +7,6 @@ hidden: false
 
 {! _includes/ai/providers/live-agent/agent-assist-setup.md !}
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-flow-example-f.png" width="100%" />
-</figure>
-
 ## Set up an Endpoint
 
 To configure your Endpoint:
@@ -53,7 +49,6 @@ Once the human agent receives this message, the testing behavior will vary depen
        <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete_f.png" width="50%" />
        </figure>
-
 
 If the testing is successful, the Agent Assist setup is complete.
 
