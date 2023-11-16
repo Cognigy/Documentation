@@ -546,6 +546,7 @@ nav:
     - live-agent/conversation/send-reply.md
     - live-agent/conversation/filter-and-sort.md
     - live-agent/conversation/other-operations.md
+    - live-agent/conversation/agent-inject.md
     - Workflow:
         - live-agent/conversation/conversation-workflow.md
     - Conversation Queue:
