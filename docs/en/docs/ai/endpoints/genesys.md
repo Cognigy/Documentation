@@ -45,7 +45,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 To set up the Genesys Endpoint, follow these steps:
 
 1. [Configure Genesys Endpoint](#configure-genesys-endpoint)
-2. [Configure Genesys](#configure-genesys)
+2. [Configure Genesys](#configure-genesys-cloud-cx)
 
 ### Configure Genesys Endpoint
 
