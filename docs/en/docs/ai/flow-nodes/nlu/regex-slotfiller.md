@@ -22,5 +22,4 @@ Use this Node to fill Slots using regular expressions. To learn more about Slots
 !!! warning "Regex"
     Make sure that your regular expression starts with `/` and ends with `/g`.
     
-    Example:
-    `* /^1\d{​​​​7}​​​​$/g`.
+    Example: `/^1\d{​​​​7}​​​​$/g`.
