@@ -47,10 +47,6 @@ Endpoints that act as channel aggregators enable you to connect to multiple chan
 
 #### Snapshot
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-snapshot.png" width="100%" />
-</figure>
-
 Endpoints can be pointed to a specific [Snapshot](snapshots.md).
 This allows to easily deploy different versions of your virtual agent.
 
@@ -65,14 +61,14 @@ When an old Snapshot is replaced with a new one or is deleted, the following rul
 
 ##### Override Snapshot Connections
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection_f.png" width="100%" />
-</figure>
-
 When Agents use a Snapshot a toggle **Override Snapshot Connections** will be displayed in the Endpoint editor. When you enable this option, the Endpoint can override the Connections in a Snapshot with [Connections]({{config.site_url}}ai/resources/build/connections/) in the project. If a Connection is available only in the Snapshot, then it will be used from the Snapshot irrespective of this toggle setting. If needed, this Connection needs to be manually updated.
 
 !!! info "Default setting"
     By default, any Endpoint will keep using the Connections from the Snapshot unless the toggle is turned on.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/override-snapshots-connection_f.png" width="100%" />
+</figure>
 
 To override the connection in the designated Agent, begin by either restoring it from a Snapshot or importing Connections from another Agent using a [Package](../../resources/manage/packages.md). Ensure that the Snapshot selected in the Endpoint Editor is created from the same Agent to guarantee a match of Connections.
 
@@ -86,11 +82,13 @@ In this case, if the toggle is **ON**, any change in the Connections of the rest
 Endpoints need an entry [Flow](../build/flows.md) to start the conversation. You can switch Flows during a conversation. 
 To switch to a Flow, click ![clock](../../../assets/icons/jump-to-flow.svg) next to the Flow selection field on the right-hand side.
 
+To display the Flow ID of the currently selected Flow, click **Manual Input** below the Flow drop-down field.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Endpoint_Webchat_jump_to_Flow_button.png" width="100%" />
 </figure>
 
-To display the Flow ID of the currently selected Flow, click **Manual Input** below the Flow drop-down field. Clicking the **Select from Dropdown** link will take you back to the drop-down selection list of Flows.
+Clicking the **Select from Dropdown** link will take you back to the drop-down selection list of Flows.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow_select_from_Dropdown.png" width="100%" />
@@ -106,20 +104,12 @@ This switch allows you to quickly enable or disable the Endpoint.
 
 #### Natural Language Understanding
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-nlu.png" width="100%" />
-</figure>
-
 This drop-down field allows you to select a different **NLU engine** for the selected Endpoint.
 The available NLU engines you can find in [NLU Connectors](../../resources/build/nlu-connectors.md).
 
 #### Data Protection & Analytics
 
 In the **Data Protection & Analytics** section, you can configure the collection of analytics and choose whether or not to gather any data.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/data_protection_analytics.png" width="100%" />
-</figure>
 
 ##### Chatbase
 
