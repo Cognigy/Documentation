@@ -60,6 +60,30 @@ To set up the Genesys Endpoint, follow these steps:
 6. In the **Genesys Bot Connector Setup** section, in the **Verify Token** field, create a verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. Save this token for later usage in Genesys.
 7. Click **Save**.
 
+### (Optional) Activate Agent Assist Workspace
+
+If you want to use Agent Assist Workspace on the Genesys side,
+create credentials on the Genesys side and configure the Agent Assist Workspace settings in the Endpoint.
+
+#### Create Credentials
+
+{! _includes/ai/providers/genesys/configure-credentials.md !}
+
+#### Configure Settings for Agent Assist Workspace
+
+To configure the Agent Assist Workspace settings, follow these steps:
+
+1. In the **Genesys Endpoint settings**, navigate to the **Agent Assist** section.
+2. Configure the Agent Assist Workspace by creating an [Agent Assist Workspace config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Assist documentation](../../agent-assist/overview.md).
+3. Set up Genesys Cloud Credentials:
+    - **Connection Name** — create a unique name for your connection.
+    - **oAuth2Url** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting the `apps.` or `login.` part. For more information on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
+    - **oAuth2ClientId** — enter the Client ID that you generated [on the Genesys side](#configure-credentials).
+    - **oAuth2ClientSecret** — enter the Client Secret that you generated [on the Genesys side](#configure-credentials).
+    - **oAuth2Scope** — enter `*`. This system field is only necessary for authorizing the application.
+4. Click **Create**.
+5. Click **Save**.
+
 ### Configure Genesys Cloud CX
 
 #### Create a Genesys Bot Connector
@@ -173,6 +197,11 @@ To create a new version of a messenger configuration and a messenger deployment,
 15. To test the virtual agent, visit [CodeSandbox](https://codesandbox.io/) and select a default **HTML** project. Paste the copied code snippet into the `<body>` element of the HTML document.
 
 To check the virtual agent's performance, access the installation that your server administrator has deployed.
+
+### Configure Genesys Credentials for Agent Assist Workspace
+
+
+
 
 ## What's Next?
 
