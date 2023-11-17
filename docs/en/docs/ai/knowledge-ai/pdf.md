@@ -21,7 +21,7 @@ We recommended using this strategy in combination with **Top K** set to `5` in t
 
 ## Alternative Chunk Strategy
 
-This strategy can be used as an alternative extraction and chunking strategy. It works well if the document is logically pre-chunked based on double-line breaks. Additionally, it attempts to discern the structure, for example, sections, and then split each into one or more chunks.
+This strategy can be used as an alternative extraction and chunking method. This approach works effectively if your original PDF is divided into logical paragraphs using double-line breaks. Within this strategy, the system attempts to discern the structure, such as sections, and then splits each of them into one or more chunks.
 
 This strategy is applied when `cognigy.preset_uiolc_ls.pdf` is appended to the file name of an uploaded file. For example, `cognigy.preset_uiolc_ls.pdf`, where `cognigy` is the initial file name,
 `.preset_uiolc_ls` is the preset to apply the Alternative Chunk Strategy, and `.pdf` is the file extension.

@@ -64,6 +64,8 @@ nav:
 
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.64:
+    - release-notes/4.64.md
   - 4.63:
     - release-notes/4.63.md
   - 4.62:
@@ -412,6 +414,8 @@ nav:
           - agent-assist/installation/version-compatibility-matrix.md
           - agent-assist/installation/prerequisites.md
           - agent-assist/installation/installation-process.md
+          - Migration Guides:
+              - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md

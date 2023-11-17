@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Model (LLM)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../release-notes/4.63.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 

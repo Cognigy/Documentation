@@ -1,7 +1,7 @@
 ---
- title: "Code" 
- slug: "code" 
- hidden: false 
+title: "Code"
+slug: "code"
+hidden: false
 ---
 # Code
 
@@ -14,7 +14,7 @@
 ## Description
 <div class="divider"></div>
 
-Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the node is saved. If the transpilation fails the code will be saved and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code. 
+Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the node is saved. If the transpilation fails the code will be saved and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code.
 
 The execution of the Code Node will be synchronous, the Flow will continue after the Code Node has finished executing.
 
@@ -74,7 +74,7 @@ You can send Facebook JSON directly from within Code Nodes using the output acti
 ## Auto-completion in Code-Nodes Editor
 <div class="divider"></div>
 
-When using the  **input.** operator in the Node Editor of a Code Node, all available input objects  will be automatically displayed e.g. 
+When using the  **input.** operator in the Node Editor of a Code Node, all available input objects  will be automatically displayed e.g.
 
 question<br/>
 entryPoint<br/>
@@ -101,4 +101,3 @@ To see log statements on the [Logs page](../../resources/test/logs.md), place `a
 - Result on the Logs page:
 
 `2023-01-12 10:27:08 <mark>debug</mark> ***Test for api.log*** { "flowId": "94311a23-b905-4e38-b121-9bffeb658783", "entrypoint": "63bff4588642adbc590be047", "userId": "user1234"`
-   
