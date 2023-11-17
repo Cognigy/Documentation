@@ -79,7 +79,7 @@ Examples:
 
 ```typescript
 @cognigyRecentConversation:3 // returns the last 3 turns of the conversation.
-@cognigyRecentUserInputs:2 // return the last 2 user inputs.
+@cognigyRecentUserInputs:2 // returns the last 2 user inputs.
 ```
 
 ### Advanced
