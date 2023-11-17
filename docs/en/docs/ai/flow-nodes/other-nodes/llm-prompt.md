@@ -75,6 +75,7 @@ Describe the user sentiment in one very short line.
 Both tags can include an optional turn limit parameter, which is appended to the tag. 
 
 Examples:
+
 ```typescript
 @cognigyRecentConversation:3 // returns the last 3 turns of the conversation.
 @cognigyRecentUserInputs:2 // return the last 2 user inputs.
