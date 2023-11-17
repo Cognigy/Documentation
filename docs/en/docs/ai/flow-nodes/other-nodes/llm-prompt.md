@@ -72,6 +72,15 @@ A user had a conversation with a chatbot. The conversation history so far is:
 Describe the user sentiment in one very short line.
 ```
 
+Both tags can include an optional turn limit parameter, which is appended to the tag. 
+
+Examples:
+
+```typescript
+@cognigyRecentConversation:3 // returns the last 3 turns of the conversation.
+@cognigyRecentUserInputs:2 // returns the last 2 user inputs.
+```
+
 ### Advanced
 
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                            |
