@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
 
-To respond to a user in the conversation chat, type your message in the **Reply** section.
+To respond to a user in a conversation, type your message in the **Reply** field and click **Send**.
 
 For quick reply, you can use canned responses, variables, or a combination of both.
 
@@ -23,11 +23,20 @@ The ++enter++ key will be used for line breaks. If you want to change hotkey opt
 
 ## Audience to Assist Bot
 
-see []() documentation.
+With the help of the Assist Bot,which is one of the Live Agent assitants, human Agents will be able to actively converse with a Virtual Agent in a separate conversation, including follow up questions from the bot etc.. The Assist Bot will assist the human Agent, for example, by actively finding out information regarding a product, the customer or his requests.
+This conversation is separate from the conversation between human agent and end user and will be shown in a separate panel on the right hand side. Human Agents will be able to forward messages from the Virtual Agent to the input field and will also be able to forward end user input to this separate conversation. One or several of such Assist Bots could be attached to an Inbox via Live Agent settings.
+
+For more information, read the [Assist Bot]({config.site_url}live-agent/conversation/assist-bot/) documentation.
+
 
 ### Audience to LA Agent Assist
 
-In Cognigy.AI you can activate additional **Live Agent** settings in the handover Node, to display a button in your Live Agent UI allowing human agents to reply as end user.
+In Cognigy.AI you can activate additional **Live Agent** settings in the Handover Node, to display a button in your Live Agent UI allowing human agents to reply as end user.
+
+**LA Agent Assist** is one of the Live Agent assistants
+
+
+
 
 To activate this option, do the following:
 
