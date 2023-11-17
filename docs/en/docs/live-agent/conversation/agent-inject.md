@@ -73,6 +73,7 @@ Live Agent conversation: The **Reply to Bot** message of the human Agent is red 
   <figcaption>AgentInject Chat</figcaption>
 </figure>
 
+
 ## More information
 
 - [Question Node](https://docs.cognigy.com/ai/flow-nodes/message/question/)
