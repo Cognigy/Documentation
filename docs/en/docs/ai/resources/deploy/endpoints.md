@@ -115,11 +115,11 @@ The available NLU engines you can find in [NLU Connectors](../../resources/build
 
 #### Data Protection & Analytics
 
+In the **Data Protection & Analytics** section, you can configure the collection of analytics and choose whether or not to gather any data.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/data_protection_analytics.png" width="100%" />
 </figure>
-
-In the Data Protection & Analytics section, you can configure the collection of analytics and choose whether or not to gather any data.
 
 ##### Chatbase
 
