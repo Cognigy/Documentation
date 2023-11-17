@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../release-notes/4.63.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../release-notes/4.64.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -39,22 +39,24 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
       <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-ai-wizard.png" width="100%" />
     </figure>
 
-5. Click **Configure Connection** and enter credentials for the model:
+5. Click **Configure** and enter credentials for the model:
 
     === "Microsoft Azure OpenAI"
         - **Connection name** — create a unique name for your connection.<br>
         - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
-        - **resourceName** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). This value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.<br>
-        - **deploymentName** — add a [model name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).<br>
-        - **apiVersion** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format.<br>
+        - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). This value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.<br>
+        - **Deployment Name** — add a [model name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).<br>
+        - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `2023-03-15-preview`. <br>
+        - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern: `https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/completions?api-version=<api-verson>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.
+    
     === "OpenAI"
         - **Connection name** — create a unique name for your connection.<br>
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
 
-6. Click **Next**.
-7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format.
-8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file.
-9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure Connection** and enter model credentials.
+6. Click **Next**. 
+7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
+8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**.
+9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.
 

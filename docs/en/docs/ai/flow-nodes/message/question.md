@@ -1,7 +1,7 @@
 ---
- title: "Question" 
- slug: "question" 
- hidden: false 
+title: "Question" 
+slug: "question" 
+hidden: false 
 ---
 # Question
 
@@ -66,9 +66,9 @@ Question Nodes have a selection of types that determine the validation used befo
 | Pattern: Credit Card                 | A pattern for the bank card                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | `4111111111111111`                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ||
 
 !!! warning "Regex"
-    Ensure that your regular expression starts with a **/** and ends with **/g**.
+    Ensure that your regular expression starts with a `/` and ends with `/g`.
 
-    Example: `* /^1\d{​​​​7}​​​​$/g`
+    Example: `/^1\d{​​​​7}​​​​$/g`
 
 !!! note "Supported Data formats for System Defined slots"
     All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../nlu/slot-mapping/slot-mapping.md) page.
