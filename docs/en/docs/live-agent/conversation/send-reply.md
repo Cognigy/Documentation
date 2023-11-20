@@ -46,7 +46,7 @@ As a human Agent you can discuss the customer's conversation with another Agent,
 3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="80%" alt="Live Agent Private Message" />
   <figcaption>Private Message with Agent</figcaption>
 </figure>
 
@@ -133,7 +133,7 @@ To include a [canned response](../settings/canned-responses.md) as a reply to th
 The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="100%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
@@ -173,34 +173,40 @@ To request a file, follow these steps:
 1. Click the **Request file** icon at the bottom of the Live Agent reply field. A window for the file request appears and prompts you to confirm.
 
     <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
+    <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="80%" alt="Live Agent request file upload" />
       <figcaption>Request file upload</figcaption>
     </figure>
 
 2. Click **Send**, to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="100%" alt="Live Agent request file upload message" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="80%" alt="Live Agent request file upload message" />
   <figcaption>Request file upload message</figcaption>
 </figure>
 
 The customer will see a button in the chat to open a file upload dialog.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
   <figcaption>Request file upload Webchat</figcaption>
 </figure>
 
 After uploading the file, it should be reflected in the Webchat and the Live Agent and the file should be ready for download on the Live Agent side.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="100%" alt="Live Agent request file upload webchat completed" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="80%" alt="Live Agent request file upload webchat completed" />
   <figcaption>Request file upload in Webchat completed</figcaption>
 </figure>
 
 The successful upload is displayed in Live Agent.
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
   <figcaption>Request file upload completed in Live Agent</figcaption>
 </figure>
+
+## More Information
+
+- [Assist Bot](assist-bot.md)
+- [LA Agent Assist Setup](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-setup/?h=agent+assist#set-up-a-flow)
+- [LA Agent Assist Workspace](../../agent-assist/overview.md)

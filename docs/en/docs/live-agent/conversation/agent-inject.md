@@ -61,7 +61,7 @@ For more information, read the [On Resolve Options](https://docs.cognigy.com/ai/
 
 1. Select tab **Reply to Bot**, to open the input field.
 2. Enter the message you want to send in behalf of the end user, or click ![transfer-arrow](../../assets/icons/transfer-arrow.svg) to transfer a result message from an assistant to the reply field. The transfer arrow will be visible when hovering over the area next to the assistant message.
-3. Click **Send as User**, to send the message to the end user.
+3. Click **Send as User** to send the message to the end user.
 
 ### Example of a Live Agent conversation 
 
