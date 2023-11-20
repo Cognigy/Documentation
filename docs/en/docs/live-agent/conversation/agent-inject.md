@@ -18,7 +18,7 @@ In addition to that the human Agent can also use another interaction in a conver
 - enables handling of messages and sending them on behalf of users.
 
 !!! note
-    The tab **Reply to Bot** will be available in Live Agent, when the option **Allow to reply as user via UI** in Node editor settings is anabled.
+    The tab **Reply to Bot** will be available in Live Agent, when the option **Allow to reply as user via UI** in the Node editor settings of Cognigy.AI is anabled.
 
 Cognigy.AI supports two Flow Nodes to activate and to configure Agent inject.
 
@@ -57,22 +57,20 @@ To activate and configure **Agent Inject** for Live Agent in the [Question Node]
 
 For more information, read the [On Resolve Options](https://docs.cognigy.com/ai/tools/agent-handover/?h=below+node#on-resolve-options).
 
-### Sending a Message using Agent Inject feature
+### Sending a Message using Agent Inject
 
 1. Select tab **Reply to Bot**, to open the input field.
-2. Enter the message you want to send in behalf of the end user, or click the ![transfer-arrow](../../assets/icons/transfer-arrow.svg) to transfer a result message from an assistant to the reply field. The transfer arrow will be visible when hovering the area beneath the assistant message.
-3. Optionally you can  arrow is 
-4. Click **Send as User** <img class="image-center" src="{{config.site_url}}live-agent/images/send-as-user_button.png" width="10%" alt="" />, to send the message to the end user.
+2. Enter the message you want to send in behalf of the end user, or click ![transfer-arrow](../../assets/icons/transfer-arrow.svg) to transfer a result message from an assistant to the reply field. The transfer arrow will be visible when hovering over the area next to the assistant message.
+3. Click **Send as User**, to send the message to the end user.
 
 ### Example of a Live Agent conversation 
 
-Live Agent conversation: The **Reply to Bot** message of the human Agent is red marked and is indicated by a small icon below the message.
+The **Reply to Bot** message, using the Agent Inject feature of the human Agent, is red marked and is indicated by a small icon below the message.
 
 <figure>
-<img src="{{config.site_url}}live-agent/conversation/images/AgentInject_Live_Agent_chat_example.png" width="100%" alt="Live Agent AgentInject Chat" />
-  <figcaption>AgentInject Chat</figcaption>
+<img src="{{config.site_url}}live-agent/conversation/images/Agent-Inject_LA_conversation.png" width="100%" alt="Live Agent AgentInject Chat" />
+  <figcaption>Live Agent conversation with Agent inject</figcaption>
 </figure>
-
 
 ## More information
 

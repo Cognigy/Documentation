@@ -26,47 +26,23 @@ The ++enter++ key will be used for line breaks. If you want to change hotkey opt
 With the help of the Assist Bot,which is one of the Live Agent assitants, human Agents will be able to actively converse with a Virtual Agent in a separate conversation, including follow up questions from the bot etc.. The Assist Bot will assist the human Agent, for example, by actively finding out information regarding a product, the customer or his requests.
 This conversation is separate from the conversation between human agent and end user and will be shown in a separate panel on the right hand side. Human Agents will be able to forward messages from the Virtual Agent to the input field and will also be able to forward end user input to this separate conversation. One or several of such Assist Bots could be attached to an Inbox via Live Agent settings.
 
-For more information, read the [Assist Bot]({config.site_url}live-agent/conversation/assist-bot/) documentation.
-
+For more information, read the [Assist Bot](assist-bot.md) documentation.
 
 ### Audience to LA Agent Assist
 
-In Cognigy.AI you can activate additional **Live Agent** settings in the Handover Node, to display a button in your Live Agent UI allowing human agents to reply as end user.
+**LA Agent Assist** is one of the Live Agent assistants, which enables human Agents to actively converse with a Virtual Agent in a separate conversation. The LA Agent Assist will assist the human Agent, for example, by actively finding out information regarding a product, the customer or his requests. 
+This conversation is separate from the conversation between human agent and end user. 
+When this option is active, the human Agent can use a corresponding reply field, which allows direct communication with LA Agent Assist. Human Agents will be able to forward messages from the Agent Assist to the input field by hovering over the Agent Assist conversation area in the Live Agent conversation and to reply the messages to the end user. 
+You can use the Agent Assist in combination with other available assistants in Live Agent.
 
-**LA Agent Assist** is one of the Live Agent assistants
-
-
-
-
-To activate this option, do the following:
-
-1. Go to Cognigy.AI and open the Virtual Agent Flow, which is prepared with a **Handover to Live Agent** Node and uses the Endpoint using the Live Agent Inbox for communication.
-2. Click on the handover Node in the Flow. A settings menu will be displayed on the right hand side of the panel.
-3. Open the **Live Agent Settings** field.
-4. Activate **Allow to reply as user via UI** using the slider switch.
-5. Click **Save Node** to save the changed setting.
-
-When this option is active, the human Agent can use a corresponding reply field which allows direct communication via an LA Agent Assist channel.
-
-For more information, how to use the LA Agent Asisst in a conversation, read the [LA Agent Assist Setup](../../ai/handover-providers/la-agent-assist-setup/) documentation.
+For more information and how to activate LA Agent Assist for Live Agent, read the [LA Agent Assist Setup](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-setup/?h=agent+assist#set-up-a-flow) documentation:
 
 ### Private Chat with Agents
 
 As a human Agent you can discuss the customer's conversation with another Agent, should you need some more clarification or assistance. This option is available beside the **Reply** tab, labeled **Private Note**.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
-  <figcaption>Private Chat with Agents</figcaption>
-</figure>
-
 1. Type '@' in the Private Note window. All Agents who have been added to this Team will be listed.
 2. Select an Agent and type in a message to consult with the selected Agent.
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-16.png" width="100%" alt="Live Agent Private Chat 2" />
-  <figcaption>Private Chat with Agent -2</figcaption>
-</figure>
-
 3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
 
 <figure>
@@ -83,8 +59,6 @@ To delete the private note which you have already sent, do the following:
 1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
 2. Select **Delete**. The private note will be deleted.
 
-
-
 ## Types of Responses
 
 In Live Agent conversations the human Agent can use different types of responses:
@@ -94,7 +68,7 @@ In Live Agent conversations the human Agent can use different types of responses
 
 ### Quick Reply
 
-For [quick reply](../../ai/endpoints/webchat/webchat-features.md#quick-replies) to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
+For [Quick Reply](../../ai/endpoints/webchat/webchat-features.md#quick-replies) to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
 #### Send a Response with Variables
 
@@ -196,14 +170,14 @@ File requirements:
 
 To request a file, follow these steps:
 
-1. Click the **Request file** icon at the bottom of the Live Agent reply field. A window for the file request appears prompts your confirmation.
+1. Click the **Request file** icon at the bottom of the Live Agent reply field. A window for the file request appears and prompts you to confirm.
 
     <figure>
     <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
       <figcaption>Request file upload</figcaption>
     </figure>
 
-2. Click **Send** to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
+2. Click **Send**, to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="100%" alt="Live Agent request file upload message" />

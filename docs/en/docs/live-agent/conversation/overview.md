@@ -271,6 +271,7 @@ If forwarding was enabled for Assist messages, the Agent can click the **Send** 
 - [Send Replies](send-reply.md)
 - [Filter and Sort](filter-and-sort.md)
 - [Other Operations](other-operations.md)
+- [Agent Inject](agent-inject.md)
 - [Insights: Live Agent dashboard](../../insights/dashboard-live-agent.md)
 - [Live Agent Glossary](../glossary.md)
 - [Notifications](../notifications.md)
