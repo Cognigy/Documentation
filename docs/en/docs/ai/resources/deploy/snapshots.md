@@ -41,7 +41,12 @@ In order to see all Snapshots of your Virtual Agent, head over to **Deploy** -->
 
 ### Creating a new Snapshot
 
-In order to create a new Snapshot of the current state of your Virtual Agent, click on **New Snapshot** followed by providing a name and description. We suggest to include some sort of version number in the name field and describe what has changed in this version of the Snapshot in the description field.
+In order to create a new Snapshot of the current state of your Virtual Agent, do the following:
+
+1. Click **New Snapshot**.
+2. Enter a name and description for the new Snapshot.
+
+We suggest to include some sort of version number in the name field and describe what has changed in this version of the Snapshot in the description field.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/creating-a-snapshot.png" width="100%" />
@@ -61,14 +66,13 @@ In order to download a Snapshot, you have to go through a two-step process:
 
 **Prepare a downloadable package**
 
-  1. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on three-dot menu of a Snapshot from the list.
-  2. Select **Prepare Download**. 
-  A downloadable Snapshot package will be created. A success notification will appear once your Snapshot package is prepared.
+  1. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to download from the list.
+  2. Select **Prepare Download**. A downloadable Snapshot package will be created. A success notification will appear once your Snapshot package is prepared.
 
 **Download the packaged Snapshot**
 
-  3. Click ![snap download](../../../assets/icons/snap-download.svg) on the right side next to the previously prepared Snapshot in order to initiate the download.
-  The web browser will start to download your prepared Snapshot package as a **.CSNAP** file type.
+  3. Click ![snapshot download](../../../assets/icons/snapshot-download.svg) on the right side next to the previously prepared Snapshot in order to initiate the download.
+  The web browser will start to download your prepared Snapshot package as a `.csnap` file.
 
 !!! note ".CSNAP File Type"
     The .csnap (Cognigy Snapshot) file type is a dedicated proprietary file type that can only be uploaded and opened within the Snapshot tool of a Cognigy.AI v4 platform. Cognigy does not provide any tooling to open a Snapshot outside Cognigy.AI. The data in your Snapshots will be encrypted as Snapshots also contain potentially sensitive data in the form of Cognigy Connections.
@@ -93,23 +97,23 @@ To upload a Snapshot, follow these steps:
 
 ### Restore Virtual Agent from Snapshot
 
-If you are using Snapshots as a way of archiving your Virtual Agent, you might want to restore your Virtual Agent to the point where the Snapshot was taken initially. We offer this functionality through our "Restore Snapshot" option.
+If you are using Snapshots as a way of archiving your Virtual Agent, you might want to restore your Virtual Agent to the point where the Snapshot was taken initially. We offer this functionality through our Restore Snapshot option.
 
 !!! danger "Restoring a Snapshot Overwrites all existing agent resources"
     Make sure that you are fully aware of the implications when restoring a Virtual Agent from a Snapshot. All resources within the Virtual Agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your Virtual Agent, conversations will break as those Flows will be removed.
 
 In order to restore a Virtual Agent from a Snapshot, do the following:
 
-  * Upload the Snapshot in case the Snapshot from which you want to restore is not present in your Virtual Agent
-  * Click on the "Restore" option in the three-dot menu
-  * A warning dialog will appear
-  * Enter the name of the Snapshot in order to confirm the operation
-  * A new task will be created as deleting all current resources from the Virtual Agent and restoring the resources from the Snapshot can take some time
-  * A success notification will be displayed once your Virtual Agent has been successfully restored from the Snapshot
+  1. Upload the Snapshot in case the Snapshot from which you want to restore is not present in your Virtual Agent.
+  2. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to restore. A selection menu will appear.
+  3. Click **Restore**. A warning dialog will appear.
+  4. Enter the name of the Snapshot in order to confirm the operation.
+  
+  A new task will be created as deleting all current resources from the Virtual Agent and restoring the resources from the Snapshot can take some time.
+  A success notification will be displayed once your Virtual Agent has been successfully restored from the Snapshot.
 
-!!! note "Restoring a Snapshot from another agent may require manual changes to the endpoints"
-    [![Version badge](https://img.shields.io/badge/Added in-v4.19.0-blue.svg)]({{config.site_url}})
-    Restoring a snapshot from another agent will automatically update the endpoints assigned with primary locale but would need a manual update for endpoints with secondary locale. Those endpoints will be indicated with a red dot beside the endpoint name, like in the images below.
+!!! note "Restoring a Snapshot from another Agent may require manual changes to the Endpoints"
+    Restoring a Snapshot from another Agent will automatically update the Endpoints assigned with primary locale but would need a manual update for Endpoints with secondary locale. Those Endpoints will be indicated with a red dot beside the Endpoint name, like in the images below.
 
 ### Deleting a Snapshot
 
@@ -117,9 +121,11 @@ Once you reach the maximum number of Snapshots in your Virtual Agent, you have t
 
 In order to actually delete the Snapshot, do the following:
 
-  * Select "Delete" by clicking the three-dot menu for a Snapshot you want to remove
-  * Click on "Confirm" in the dialog that will open
-  * A new task will be created and your Snapshot will be removed
+  1. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to delete. A selection menu will appear.
+  2. Select **Delete**. 
+  3. Click **Confirm** in the dialog that will open. 
+  
+  A new task will be created and your Snapshot will be removed.
 
 !!! danger "Check usage of your Snapshot!"
     Endpoints in production should point to Snapshots. It is important that you first check whether no Endpoints are any longer pointing to the Snapshot you want to remove. Removing a Snapshot which is still being referenced by one of your Endpoints will break the conversations for your customers!
@@ -140,9 +146,9 @@ The following three scenarios show how Virtual Agents should be deployed into pr
 
 The Snapshot concept allows you to make your Virtual Agents available through Endpoints while you are already working on the next version of your Virtual Agent. This scenario is the simplest of all, but also quite elegant. Let's assume that you have a Virtual Agent called "Order Bot" for your restaurant.
 
-**People developing** the bot would simply create Flows, Lexicons, Intents and all other Resources as usual. Eventually you have reached a state that you want to publish to your customers. A new Snapshots needs to be created. You don't have to prepare a downloadable package for the Snapshot as we won't download and upload it to a different place - all will remain in the current Virtual Agents project.
+**People developing** the bot would simply create Flows, Lexicons, Intents and all other resources as usual. Eventually you have reached a state that you want to publish to your customers. A new Snapshots needs to be created. You don't have to prepare a downloadable package for the Snapshot as we won't download and upload it to a different place - all will remain in the current Virtual Agents project.
 
-**In order to release** the new Snapshot, you visit your Endpoint(s) (e.g. your Webchat endpoint that you are using on your website) and simply select the new Snapshot and the Flow(s) within the Snapshot. Since you are now using resources within the Snapshot in production, developers can - without any fear - modify the Flows in the Virtual Agent directly without breaking conversation logic for your customers.
+**In order to release** the new Snapshot, you visit your Endpoint(s), for example your Webchat Endpoint that you are using on your website, and simply select the new Snapshot and the Flow(s) within the Snapshot. Since you are now using resources within the Snapshot in production, developers can - without any fear - modify the Flows in the Virtual Agent directly without breaking conversation logic for your customers.
 
 ### Using multiple Virtual Agents
 
@@ -173,12 +179,12 @@ A customer wants to build a Virtual Agent for FAQs on their website. Two Agents 
 
 If you are having multiple, physically separated, Cognigy.AI installations, you can even go one step further compared to the second concept explained previously. Customers in this situation usually have:
 
-- a Cognigy.AI installation with low hardware specs for "development" purpose
-- a Cognigy.AI installation with higher hardware specs for "staging" purpose where acceptance tests for new versions are being executed
-- a Cognigy.AI installation with high hardware specs for "production"
+- a Cognigy.AI installation with low hardware specs for "development" purpose.
+- a Cognigy.AI installation with higher hardware specs for "staging" purpose where acceptance tests for new versions are being executed.
+- a Cognigy.AI installation with high hardware specs for "production".
 
 **Developers only have access** to Virtual Agent projects in the "development" installation. They build bots, craft entire new experiences or improve already existing solutions. Once they have reached a desired state in their projects, they create new Snapshots. Downloadable packages for Snapshots will be created and provided to the team(s) working on the "staging" installation.
 
 **Personnel on staging** will receive the Snapshots from developers and upload these into their Virtual Agent projects in the "staging" system. They point their Endpoints to the new Snapshots and run acceptance tests. If they find defects, they will tell their development team(s) which will then fix the problems and provide new Snapshots. If testing goes well, the Snapshots will be moved to the "production" system.
 
-**Personnel with access to the production** system - usually only a very small group of people - point the productive Endpoints to the new Snapshots provided by the team(s) who have verified the quality on the "staging" system. The "production" system is also the place in which [**Cognigy Insights**]({{config.site_url}}insights/cognigy-insights/) will be used to understand how the actual users use the Virtual Agents as productive interaction only happens on this system.
+**Personnel with access to the production** system - usually only a very small group of people - point the productive Endpoints to the new Snapshots provided by the team(s) who have verified the quality on the "staging" system. The "production" system is also the place in which [Cognigy Insights](../../../insights/cognigy-insights.md) will be used to understand how the actual users use the Virtual Agents as productive interaction only happens on this system.
