@@ -7,12 +7,13 @@ hidden: false
 # Voice Copilot
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c514dae-EP_webhook.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-copilot.png" width="100%" />
 </figure>
 
-When a transfer occurs, the new AAV triggers its own flow, which, in turn, generates a dashboard in Genesis.
-
-The use case is that a human agent, for example, in Genesys, receives transcripts from a transferred call.
+The Voice Copilot Endpoint is used for integration between [AI Copilot](../../agent-assist/overview.md) and [Genesys Cloud](https://apps.mypurecloud.de/). If you use [AI Copilot for voice](../../agent-assist/voice-agent-assist/voice-overview.md) with the [Webhook](webhook.md) Endpoint,
+you can switch to a specific Voice Copilot Endpoint.
+This eliminates the need for a separate Code Node to create a webhook URL,
+as all the necessary logic is already included in the Voice Copilot Endpoint.
 
 ## Prerequisites
 
@@ -51,3 +52,10 @@ Within your voice Flow, configure the Transfer Nodes:
 3. Go to the Voice Gateway Transfer Node.
 4. In the Transfer Node, select the **Dial Transfer** type and activate the **Enable Copilot** setting.
 5. Click **Save Node**.
+
+When a transfer occurs, AI Copilot triggers its own Flow, resulting in the generation of an AI Copilot workspace in Genesys. Subsequently, a human agent on the Genesys side receives transcripts from the transferred call within the AI Copilot workspace.
+
+## More Information
+
+- [AI Copilot](../../agent-assist/overview.md)
+- [Voice Gateway](../../voicegateway/overview.md)
