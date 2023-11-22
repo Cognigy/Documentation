@@ -6,50 +6,39 @@ hidden: false
 
 # Download Report
 
-You can get detailed reports from the charts on the Insights dashboards in CSV format. These files have important info like intent scores, transcripts, and conversation details, which help you understand user behavior.
+You can obtain detailed reports in CSV format from the charts on the Insights dashboards:
 
-The CSV format ensures compatibility with various tools, facilitating seamless analysis. You can easily import this data into Excel or databases like Microsoft Access.
+- [Overview dashboard](dashboard-overview.md)
+- [Engagement dashboard](dashboard-engagement.md)
+- [NLU Performance](dashboard-nlu-performance.md)
+- [Live Agent](dashboard-live-agent.md)
+
+These CSV reports contain crucial information, including intent scores, transcripts, and conversation details, enabling a better understanding of user behavior.
+
+The CSV format ensures compatibility with various tools, making analysis seamless.
+You can easily import this data into Microsoft Excel or databases like Microsoft Access.
 
 ## Download a Report via Insights UI
 
-Insight provides several dashboards to indicate analytics data in diagrams and charts.
-
-- Overview dashboard
-- Engagement dashboard
-- Live Agent
-- NLU Performance
-
-Every chart on Insights dashboards provides a **Download report as .csv file** item in a dropdown menu.
-
-To download a report, proceed as follows:
-
-**Reports**
+To download a report, follow these steps:
 
 1. Go to Insights and select one of the previous mentioned dashboards in the side menu bar on the left side.
 2. Click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) in the top right corner of a dashboard chart you want to get as a report. 
 3. Select **Download report as .csv file**. The report will now be stored in a CSV file.
 
-The downloaded report file contains the complete chart data set, depending on the filter settings, for your database or further analysis. 
-You can open the `.csv` file using, for example, Microsoft Excel. 
-
-**Reports with daily data**:
-
-When a chart displays data on a weekly basis the report will present the weekly summarized data according to the filter settings. 
-To get a more detailed report presenting daily data, do the following:
-
-1. Click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) in the top right corner of a dashboard chart you want to get as a daily report. 
-2. Select **Show details**. A new window presents a chart on a daily base according to the filter settings.
-3. In the details chart window click again ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) in the top right corner. The report will now be stored in a CSV file containing daily analysis data.
+The downloaded report file contains the complete chart dataset based on the filter settings. You can open the `.csv` file using applications such as Microsoft Excel or similar software.
 
 ## Export Analytics Reports as CSV using API
 
-Cognigy.AI 4.10.0 provides to export the Analytics reports as CSV using API. This API makes sure that a report does not return only the data displayed intents in a chart but all intents. Even the CSV export for a transcript is provided.
+Cognigy.AI 4.10.0 provides the ability to export Analytics reports as CSV using an API. 
+
+This API ensures that a report returns not only the data displayed in a chart but also includes all intents. Additionally, the CSV export for a transcript is available.
 
 Cognigy Insights:
 
-- can reply Analytics reports as CSV data
-- can reply transcript reports as CSV data
-- returns full data if no limit is provided for intents
+- Can reply with Analytics reports as CSV data.
+- Can reply with transcript reports as CSV data.
+- Returns full data if no limit is provided for intents.
 
 ## More Information
 
