@@ -155,7 +155,7 @@ _**Profile Settings**_
 ## R
 
 _**Reports**_
-: The conversation reports which have occurred over time. They can be viewed in the Reports section. Click Reports in the Live Agent Dashboard sidebar to get an overview displayed. A graph will show the Conversations that have occurred during the selected days. For more information, read the [Reports](reports.md) documentation.
+: The conversation reports which have occurred over time. They can be viewed in the Reports section. Click Reports in the Live Agent Dashboard sidebar to get an overview displayed. A graph will show the Conversations that have occurred during the selected days. For more information, read the [Reports](reports/overview.md) documentation.
 
 _**Resolved (conversations)**_
 : This conversation status means that a conversation is closed because the user's problem has been fixed.
