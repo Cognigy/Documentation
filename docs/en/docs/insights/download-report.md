@@ -6,7 +6,7 @@ hidden: false
 
 # Download Report
 
-You can obtain detailed reports in CSV format from the charts on the Insights dashboards:
+You can download detailed reports in CSV format from the charts on the Insights dashboards:
 
 - [Overview dashboard](dashboard-overview.md)
 - [Engagement dashboard](dashboard-engagement.md)
