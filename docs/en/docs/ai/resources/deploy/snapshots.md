@@ -27,7 +27,7 @@ Snapshots can be used in the following cases:
 
 ## Restrictions
 
-Note that the following resources that are not included in the Snapshot:
+The following resources are not included in the Snapshot:
 
 * Endpoints
 * Intent Trainer records
