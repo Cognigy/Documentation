@@ -2,13 +2,10 @@
 title: "Redis: Single Replica to Redis HA Migration"
 slug: "single-replica-redis-to-redis-ha-migration"
 hidden: false
-ignore_macros: true
 ---
 # Redis: Single Replica to Redis in High Availability (HA) Mode Migration
 
 Starting from Cognigy.AI release v4.65, the single-replica Redis setup is deprecated and replaced with Redis in High Availability (HA) Mode.
-
-!!! warning "You must perform the following steps before upgrading Cognigy.AI to v4.65 and modify `values.yaml` of your Cognigy.AI Helm Release accordingly"
 
 ## Prepare Redis and Redis persistent HA Configuration 
 
@@ -69,7 +66,7 @@ the parameters for the new `redis-persistent-ha` StorageClass equal to the exist
 5. If your cloud provider is either AWS or Azure, the `redis-persistent-ha` StorageClass will be created automatically. **Before upgrading the Helm Release**, ensure that: 
      * On AWS: the `gp3` storage and the `ebs.csi.aws.com` provisioner are enabled in your cluster.
      * On Azure:  the `Premium_LRS` storage account type and the  `disk.csi.azure.com` provisioner are enabled in your cluster.
-     * Alternatively, you can override the `redisPersistentHa` settings under `storageClass:` section to match the parameters of the existing `redis-persistent` StorageClass. Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for reference.     * Alternatively, you can override `redisPersistentHa` settings under `storageClass:` section to match the parameters of the existing `redis-persistent` StorageClass, see [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for reference.
+     * Alternatively, you can override `redisPersistentHa` settings under `storageClass:` section to match the parameters of the existing `redis-persistent` StorageClass, see [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for reference.
 
 ### Migrate Custom Redis and Redis Persistent Configuration 
 
