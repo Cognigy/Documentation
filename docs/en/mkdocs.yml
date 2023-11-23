@@ -369,7 +369,7 @@ nav:
       - ai/endpoints/webchat/webchat.md
     - Voice Gateway:
       - ai/endpoints/cognigy-vg.md
-      - ai/endpoints/audiocodes.md
+    - ai/endpoints/audiocodes.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
