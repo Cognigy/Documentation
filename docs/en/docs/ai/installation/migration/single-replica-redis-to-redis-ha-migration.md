@@ -30,7 +30,6 @@ statefulRedisPersistent:
      enabled: false
    ```
 2. Remove the `statefulRedis` and `statefulRedisPersistent` sections from `values.yaml` and skip the remaining steps in this migration guide.
-
 ### Cloud Infrastructure Configuration 
 
 1. Redis and Redis persistent in HA mode are provisioned with 3 replicas to increase service availability. Ensure that your Kubernetes cluster has enough free capacity for additional Redis and Redis persistent pods in HA setups. In total, both configurations require an additional provision of 3 CPU cores and 3GB RAM in the cluster.
