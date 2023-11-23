@@ -654,6 +654,9 @@ nav:
   - help/get-help.md
   - help/community.md
 
+- Marketplace:
+  - pci-vault.md
+
 markdown_extensions:
 - toc:
     permalink: true
