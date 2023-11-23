@@ -14,6 +14,8 @@ Starting from Cognigy.AI release v4.65, the single-replica Redis setup is deprec
 
 Before upgrading to Cognigy.AI v4.65, you must perform the following steps and modify the `values.yaml` of your Cognigy.AI Helm Release accordingly.
 
+Before upgrading to Cognigy.AI v4.65, you must perform the following steps and modify the `values.yaml` of your Cognigy.AI Helm Release accordingly.
+
 ### Self-Managed Redis Installations
 
 If you do not use Redis and Redis persistent services delivered with AI Helm Chart and prefer self-managed external Redis services instead, ensure that you have the following variables in your `values.yaml`:
