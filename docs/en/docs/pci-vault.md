@@ -30,7 +30,7 @@ The image below represents a high-level interaction diagram with PCI Vault.
 The PCI Vault interacts with components of the Cognigy.AI system, the contact center, as well as end users.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/pci-dss.png"/>
+    <img class="image-center" src="{{config.site_url}}ai/images/pci-dss.png" width="70%"/>
 </figure>
 
 High-level description of the process:
