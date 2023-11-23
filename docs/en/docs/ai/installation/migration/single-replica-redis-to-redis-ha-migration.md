@@ -11,8 +11,6 @@ Starting from Cognigy.AI release v4.65, the single-replica Redis setup is deprec
 
 Before upgrading to Cognigy.AI v4.65, you must perform the following steps and modify the `values.yaml` of your Cognigy.AI Helm Release accordingly.
 
-Before upgrading to Cognigy.AI v4.65, you must perform the following steps and modify the `values.yaml` of your Cognigy.AI Helm Release accordingly.
-
 ### Self-Managed Redis Installations
 
 If you do not use Redis and Redis persistent services delivered with AI Helm Chart and prefer self-managed external Redis services instead, ensure that you have the following variables in your `values.yaml`:
@@ -83,10 +81,10 @@ and `redisPersistentHa` respectively as follows:
     * If custom `resources` for `statefulRedis` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to  `redisHa.replica.resources`. Set the `maxmemory` setting under the `redisHa.replica.configuration` parameter to 85% of  `resources.limits.memory`.  Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for details. 
     * If custom `resources` for `statefulRedisPersistent` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to `redisPersistentHa.replica.resources`. Set the `maxmemory` setting under the `redisPersistentHa.replica.configuration` parameter to 85% of `resources.limits.memory`. Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for details.
 
-## Cognigy.AI Helm Release Upgrade
+## Upgrade Cognigy.AI Helm Release to v4.65
 
 1. Double check that all parameters in your `values.yaml` are adjusted as described above.
-2. Perform the upgrade of the Cognigy.AI Helm Release as usual. During the upgrade:
+2. Perform the upgrade of the Cognigy.AI Helm Release to v4.65 as usual. During the upgrade:
 
     * New `redis-ha-node` and `redis-persistent-ha-node` StatefulSets, along with their corresponding pods, will be created in the cluster.
     * Old `redis` and `redis-persistent` Deployments and corresponding pods will be removed from the cluster
