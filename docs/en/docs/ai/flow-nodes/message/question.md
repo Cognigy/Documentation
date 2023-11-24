@@ -87,7 +87,18 @@ Question node output types carry the same functionality as the [Say Node](say.md
 
 ### Re-prompt Message
 
-Re-prompt Messages are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validation didn't return true). 
+Re-prompts are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validation didn't return true). 
+
+Four types of re-prompt actions can be taken:
+
+- **Simple Text**
+<br />Outputs a simple text message to the user.
+- **Channel Message**
+<br />Output a rich, channel-specific message to the user, including the ability to include rich-media (e.g., images, audio) and to define distinct messages per channel (e.g., Webchat, Voice Gateway, WhatsApp, etc).
+- **LLM Prompt**
+<br />Runs an LLM Prompt and outputs the completion to the user.
+- **Execute Flow and return**
+<br />Executes a specific Flow and returns to the question afterwards.
 
 The Re-prompt can be configured to automatically re-ask the question. 
 
