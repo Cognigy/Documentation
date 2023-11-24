@@ -55,7 +55,7 @@ redisPersistentHa:
 ```
 4. If your cloud provider is neither AWS nor Azure, create `redis-persistent-ha` StorageClass manually. Set all
 the parameters for the new `redis-persistent-ha` StorageClass equal to the existing `redis-persistent` StorageClass: 
-    * get existing `redis-persistent` StorageClass and store it in the `redis-persistent-ha.yaml` file:
+    * Get existing `redis-persistent` StorageClass and store it in the `redis-persistent-ha.yaml` file:
     ```shell
     kubectl get storageclass redis-persistent -o yaml > redis-persistent-ha.yaml
     ```
