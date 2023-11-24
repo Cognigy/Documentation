@@ -22,6 +22,7 @@ Cognigy.AI supports the following Nodes:
 - [Set IFrame tile](set-iframe-tile.md)
 - [Set Agent Assist grid](set-agent-assist-grid.md)
 - [Transcript Assist](transcript-assist.md)
+- [Copilot: SecureForms Tile](secure-forms-tile.md)
 
 ## More Information
 

@@ -275,6 +275,7 @@ nav:
         - ai/flow-nodes/agent-assist/set-iframe-tile.md
         - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
         - ai/flow-nodes/agent-assist/transcript-assist.md
+        - ai/flow-nodes/agent-assist/secure-forms-tile.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -655,7 +656,10 @@ nav:
   - help/community.md
 
 - Marketplace:
-  - pci-vault.md
+  - overview.md
+
+- PCI Vault:
+  - pci-vault/overview.md
 
 markdown_extensions:
 - toc:
