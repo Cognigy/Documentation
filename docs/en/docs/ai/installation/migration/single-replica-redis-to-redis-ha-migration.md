@@ -60,12 +60,12 @@ the parameters for the new `redis-persistent-ha` StorageClass equal to the exist
     kubectl get storageclass redis-persistent -o yaml > redis-persistent-ha.yaml
     ```
     * Open the `redis-persistent-ha.yaml` file in a text editor. Change the `name:` field to `redis-persistent-ha`. Remove the `uid:`, `resourceVersion:` and `creationTimestamp:` fields.
-    * Save the file and create the new `redis-persistent-ha` StorageClass by applying it to the cluster: `kubectl apply -f redis-persistent-ha.yaml` 
-    * Check that the new StorageClass is created in the cluster: `kubectl get storageclass redis-persistent-ha -o yaml`
+    * Save the file and create the new `redis-persistent-ha` StorageClass by applying it to the cluster: `kubectl apply -f redis-persistent-ha.yaml`.
+    * Check that the new StorageClass is created in the cluster: `kubectl get storageclass redis-persistent-ha -o yaml`.
 5. If your cloud provider is either AWS or Azure, the `redis-persistent-ha` StorageClass will be created automatically. **Before upgrading the Helm Release**, ensure that: 
      * On AWS: the `gp3` storage and the `ebs.csi.aws.com` provisioner are enabled in your cluster.
      * On Azure:  the `Premium_LRS` storage account type and the  `disk.csi.azure.com` provisioner are enabled in your cluster.
-     * Alternatively, you can override `redisPersistentHa` settings under `storageClass:` section to match the parameters of the existing `redis-persistent` StorageClass, see [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for reference.
+     * Alternatively, you can override `redisPersistentHa` settings under `storageClass:` section to match the parameters of the existing `redis-persistent` StorageClass, see `values.yaml` for [AWS](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/c0474cfe67bbf28fa1aea728118a2ae5b0676498/values.yaml#L3909) and [Azure](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/c0474cfe67bbf28fa1aea728118a2ae5b0676498/values.yaml#L3954) reference.
 
 ### Migrate Custom Redis and Redis Persistent Configuration 
 
@@ -77,8 +77,8 @@ and `redisPersistentHa` respectively as follows:
     * If `statefulRedisPersistent.auth.password` is defined in cleartext, copy its value under `redisPersistentHa.auth.password`.
     * If a custom `statefulRedis.auth.existingSecret` is defined, copy its value under `redisHa.auth.existingSecret`. Ensure that the corresponding custom secret exists in the cluster.
     * If a custom `statefulRedisPersistent.auth.existingSecret` is defined copy its value under `redisPersistentHa.auth.existingSecret`. Ensure that the corresponding custom secret exists in the cluster.
-    * If custom `resources` for `statefulRedis` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to  `redisHa.replica.resources`. Set the `maxmemory` setting under the `redisHa.replica.configuration` parameter to 85% of  `resources.limits.memory`.  Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for details. 
-    * If custom `resources` for `statefulRedisPersistent` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to `redisPersistentHa.replica.resources`. Set the `maxmemory` setting under the `redisPersistentHa.replica.configuration` parameter to 85% of `resources.limits.memory`. Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml) for details.
+    * If custom `resources` for `statefulRedis` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to  `redisHa.replica.resources`. Set the `maxmemory` setting under the `redisHa.replica.configuration` parameter to 85% of  `resources.limits.memory`.  Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/c0474cfe67bbf28fa1aea728118a2ae5b0676498/values.yaml#L4494) for details. 
+    * If custom `resources` for `statefulRedisPersistent` are defined in your `values.yaml`, copy the `resources` section (including both `requests` and `limits`) to `redisPersistentHa.replica.resources`. Refer to [values.yaml](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/c0474cfe67bbf28fa1aea728118a2ae5b0676498/values.yaml#L4575) for details.
 
 ## Upgrade Cognigy.AI Helm Release to v4.65
 
@@ -86,10 +86,15 @@ and `redisPersistentHa` respectively as follows:
 2. Perform the upgrade of the Cognigy.AI Helm Release to v4.65 as usual. During the upgrade:
 
     * New `redis-ha-node` and `redis-persistent-ha-node` StatefulSets, along with their corresponding pods, will be created in the cluster.
-    * Old `redis` and `redis-persistent` Deployments and corresponding pods will be removed from the cluster
+    * Old `redis` and `redis-persistent` Deployments and corresponding pods will be removed from the cluster.
     * Cognigy.AI services will reconnect to Redis and Redis persistent HA setups.
+    * Verify that all the pods are running as expected by executing: `kubectl get pods -n=cognigy-ai`.
 
 ## Persistent Volume Clean-up
+
+After upgrading Cognigy.AI to v4.65 and verifying that the release works properly, you can clean up the remaining persistent 
+volume (PV) for the old `redis-persistent` Deployment:
+
 1. If `reclaimPolicy: Delete` was set for the old `redis-persistent` `StorageClass`, skip this section. The underlying PV and PVC will be deleted automatically.
 2. If `reclaimPolicy: Retain` was set for the old `redis-persistent` `StorageClass`, manually remove the PV associated with the old  `redis-persistent` Deployment and the underlying disk in your cloud infrastructure:
 
