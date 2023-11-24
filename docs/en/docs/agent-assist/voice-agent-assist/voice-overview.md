@@ -6,6 +6,9 @@ hidden: false
 
 # Agent Assist for Voice
 
+!!! warning
+    This functionality is deprecated. Use the [Voice Copilot](../../ai/endpoints/voice-copilot.md) Endpoint instead.
+
 This feature provides Agent Assist Workspace for integration into contact center voice deployments.
 
 To set up Agent Assist for Voice, you'll need a Main Flow that can transfer the call to a human agent, as well as an Agent Assist Workspace Flow. The Workspace Flow must be configured with a Webhook Endpoint to receive the transcription of the audio stream

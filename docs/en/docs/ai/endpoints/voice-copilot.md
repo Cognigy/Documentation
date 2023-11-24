@@ -10,10 +10,9 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-copilot.png" width="100%" />
 </figure>
 
-The Voice Copilot Endpoint is used for integration between [AI Copilot](../../agent-assist/overview.md) and [Genesys Cloud](https://apps.mypurecloud.de/). If you use [AI Copilot for voice](../../agent-assist/voice-agent-assist/voice-overview.md) with the [Webhook](webhook.md) Endpoint,
-you can switch to a specific Voice Copilot Endpoint.
-This eliminates the need for a separate Code Node to create a webhook URL,
-as all the necessary logic is already included in the Voice Copilot Endpoint.
+This Endpoint is intended for voice use cases to receive the transcription of the audio stream and execute the agent assist flow. The Endpoint splits audio streams into user and agent input. When the transcription is sent to this Endpoint, Cognigy will receive two variables: `user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
+
+This endpoint Voice Copilot works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
 
 ## Prerequisites
 
@@ -43,17 +42,26 @@ Find out about the generic endpoint settings available with this endpoint on the
 5. Activate the **Enable Endpoint** setting. 
 6. Click **Save**.
 
-## Configure Voice Gateway Nodes
+## Cognigy.AI in Front
 
-Within your voice Flow, configure the Transfer Nodes:
+If Cognigy.AI in Front, you need to configure the Transfer Node:
 
 1. In the left-side menu of your Agent, click **Build > Flows**. 
 2. Select a voice Flow from the list.
 3. Go to the Voice Gateway Transfer Node.
-4. In the Transfer Node, select the **Dial Transfer** type and activate the **Enable Copilot** setting.
+4. In the Transfer Node, select the **Dial** transfer type.<br>
+   4.1 Activate the **Enable Copilot** setting.<br>
+   4.2 Define the **Copilot Headers Key**. The key is provider-dependent. For example, for Genesys, the key is `User-to-User`. The generated value becomes accessible after engaging the **Transfer** Node, located in the input object as `{{ "{{input.UUIValue}}" }}`. Note that you do not need to handle this value manually. It is automatically generated and added to the header.<br>
+   4.3 In the **Transcribe** section, navigate to the **Transcription Webhook** field. Enter the Voice Copilot Endpoint URL with `user ID` and `session ID`. This setup ensures that the Voice Copilot Endpoint receives not only the transcription but also the corresponding session and user ID, making sure the transcript is correctly matched with the workspace. For example, `https://endpoint-dev.cognigy.ai/<your-endpoint-id>?userId={{"{{input.userId}}"}}&sessionId={{"{{input.sessionId}}"}}`.
 5. Click **Save Node**.
 
-When a transfer occurs, AI Copilot triggers its own Flow, resulting in the generation of an AI Copilot workspace in Genesys. Subsequently, a human agent on the Genesys side receives transcripts from the transferred call within the AI Copilot workspace.
+## SIPREC Contact Center Integration in Front
+
+When the contact center is in front, you do not have to configure the Transfer Node.
+
+SIPREC is an open SIP based protocol for call recording in contact centers. Session Border Controllers (SBC) are used to integrate SIPREC with the contact center. 
+
+When a call is transferred to a human agent, audio from the SIPREC call is transcribed by Voice Gateway and sent to the Voice Copilot Endpoint for processing. The system replaces the traditional Cognigy session ID and user ID with a specific ID from the Contact Center. For instance, the original Cognigy session ID and user ID can be replaced with Agent ID and Conversation ID respectively.
 
 ## More Information
 
