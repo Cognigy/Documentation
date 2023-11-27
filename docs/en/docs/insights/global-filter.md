@@ -16,26 +16,30 @@ Cognigy Insights has global filters. These filters can be set in a selection men
 
 Global filter will always be available no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
 
+Global Filter settings will always be available in Cognigy Insights no matter where you navigate. Once you have changed a Filter setting, all the data visualized in any location will respect your changed Filter configuration.
+The Global Filter options are available in all applications running in Cognigy Insights.
+
+
 !!! note
     The global filter options are available in all applications running in Cognigy Insights.
 
 !!! warning
     Every change in filter settings needs to be confirmed with **Apply** to be active.
 
-Several filter menus provide a **Negate** slide bar. When active, all but the selected endpoints will be analyzed. 
+Several filter menus provide a **Negate** slide swich. When active, all but the selected options will be analyzed. 
 
 The following global filters are available:
 
 - [Timeframe](#timeframe)
 - [Endpoints](#endpoints)
-- [Snapshot](#snapshots)
+- [Snapshot](#snapshot)
 - [Message Rating](#message-rating)
 
 ## Timeframe
 
-You can select the time period or set it individually with a date picker in a calendar.
+You can select a preset time frame or set it individually with a date picker.
 
-Available preset time periods are: 
+Available preset time frames are: 
 
 - Last 7 days
 - Last 30 days
@@ -43,20 +47,21 @@ Available preset time periods are:
 - Today
 - This month
 - This year
-- Custom period (date picker via calendar)
+- Custom period, providing date and time picker
+
+If you have changed a time frame, click **Apply**, to confirm and activate the selected ime frame.
 
 ### Narrowing results to minutes
 
 It is possible to select hours for the chosen timeframe.
-This might be helpful if needed to narrow the result to a more precise range.
-To do this, enable the **Select time**
-option when setting a Custom Timeframe.
+This might be helpful if you need to narrow the result to a more precise range.
+To do this, use the slide witch and enable the **Select time** option when setting a **Custom Period** .
 
 ## Endpoints
 
 Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
 Endpoint examples are Webchat, Voice Gateway, Microsoft Teams.
-You can find more information here: [Endpoints](../ai/endpoints/overview.md)
+For more information, read the [Endpoints](../ai/endpoints/overview.md) documentation.
 
 You can select one or more Endpoint(s) to be analyzed. 
 
@@ -69,52 +74,70 @@ So if you have tested the Virtual Agent using the Interaction Panel, you now wil
 - Open the global filter **Endpoints**. 
 - Select "Interaction Panel" and confirm with **Apply** to get the analytics data displayed.
 
-## Snapshots
+## Snapshot
 
 !!! note
-    Before the version 4.15, it was only possible to inspect the data of a single snapshot at a time.
+    Before Cognigy.AI version 4.15, it was only possible to show data of a single Snapshot in Insights. As of this version Insights can show data for **All** Snapshots as a default setting, when no filter is selected.
 
 A Snapshot is an exported Agent and includes required resources.
-The selection list displays the available snapshots which can be analyzed.
 For more information, read the [Snapshots](../ai/resources/deploy/snapshots.md) documentation.
 
-By default, we show the **data for all snapshots including the data which was gathered 
-without any snapshot (live deployment, here "None" option)**.
+To use the **Snapshot** filter, proceed as follows:
 
-You can granually inspect the analytics data by choosing only the preferred snapshots,
-also by using the "negate" option — in this case, you will be excluding certain options. 
+1. Click ![insight-filter-blue](../../assets/icons/insight-filter-blue.svg) to open the side bar menu of global filters on the right hand side.
+2. Click **Snapshot** to open the settings drop-down menu.
+3. Use one of the following filter options:
 
-For example, selecting "None" and "Negate" will show all the data excluding the one gathered from endpoints without selected snapshots.
+     - Select one of the available Snapshots you want to analyze. 
+     - Enter the name of a Snapshot in the **Type to search** field, and click ![filter](../../assets/icons/filter.svg) to find the selected Snapshot and select.
+     - Select **None** to obtain analysis data of all available endpoint data, with the exception of Snapshot data.
+     - Enable **Negate** using the slide switch and select Snapshots you want to exclude for your analysis. All but the selected Snapshots will be considered for the analysis. 
+        
+4. Click **Apply** to activate the selected filter settings.
+
+Everytime you changed a setting, click **Apply** to activate the changed filter settings.
 
 ## Locales
 
-This filter considers the locales of the available conversations. 
-
-You can select one or more Locales to be analyzed. 
-
-Using the **Negate** slider bar "all but the selected" locales will be analyzed.
-
+**Locales** filter considers the locales of available conversations for analysis. You can select one or more Locales to be analyzed. 
 For more information, read the [Localization](../ai/resources/manage/localization.md) documentation.
 
-!!! note
-    To clear all filter settings at once, click on the **Reset filters** button.  We will show it if the value of any global filter is not equal to the default value.
+To use the **Locales** filter, proceed as follows:
+
+1. Click ![insight-filter-blue](../../assets/icons/insight-filter-blue.svg) to open the side bar menu of global filters on the right hand side.
+2. Click **Locales** to open the settings drop-down menu.
+3. Select the Locale you want to filter for analysis or optionally, if you have a longer Locales list, enter the language code in the **Type to Search** field, and click ![filter](../../assets/icons/filter.svg) to find the selected Locales displayed.
+4. Click **Apply** to activate the filter setting.
+
+If you want to exclude some Locales for your analysis, select them in the list and activate the **Negate** slider switch. When enabled and you confirmed  the settings with **Apply"**, all but the selected Locales will be considered for the analysis.
+
+Everytime you changed a setting, click **Apply** to activate the changed filter settings.
 
 ## Message Rating
 
-This filter allows you to select the analytics data based on the last user rating given in a session. By default, all data is shown, regardless of whether user feedback is given or missing.
+This filter allows you to select the analytics data based on the last user ratings given in a session. By default, **All** data is shown, regardless of whether user feedback is given or missing. In Live Agent this global filter is not available.
+For more information, read the [Request Rating Node](../ai/flow-nodes/other-nodes/request-rating.md) documentation.
 
-For more information, read the [Request rating Node](../ai/flow-nodes/other-nodes/request-rating.md) documentation.
+| Settings      | Description                                                          |
+| --------------|----------------------------------------------------------------------|
+| All           | Default setting. All available rating data will be used for analysis.|
+| Positive      | Only positive rating data will be used for analysis.                 |
+| None          | No rating data will be considered for analysis.                      |
+| Negative      | Only negative rating data will be used for analysis.                 |
+| Negate        | When enabled, all filter options but the selected are active.        |
+
+Everytime you changed a setting, click **Apply** to activate the changed filter settings.
 
 ## Updating Analytics records using Rest API
 
 If you intend to update certain analytics fields on Insights dashboards for an ongoing session, you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
-More information you can find here: [Using the API](../ai/developer-guides/using-api.md).
+For more information, read the [Using the API](../ai/developer-guides/using-api.md) documentation.
 
-To use the "analytics" API, you need to specify **userId**, **projectId**, **sessionId** and **inputId** in the request.
+To use the analytics API, you need to specify **userId**, **projectId**, **sessionId** and **inputId** in your request.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/0f15d77-OpenAPI_Analytics_v20_2.svg" width="100%" />
-  <figcaption>OpenAPI "analytics" for updating analytics records</figcaption>
+  <figcaption></figcaption>
 </figure>
 
 ## Sharing application URL
