@@ -54,6 +54,6 @@ If the testing is successful, the Agent Assist setup is complete.
 
 ## More Information
 
-- [LA Agent Assist Workspace Setup](ai-copilot.md)
-- [Agent Assist Workspace Overview](../../ai-copilot/overview.md)
-- [LA Agent Assist Setup](la-agent-assist.md)
+- [AI Copilot in Live Agent](ai-copilot.md)
+- [AI Copilot Overview](../../ai-copilot/overview.md)
+- [LA Agent Assist](la-agent-assist.md)

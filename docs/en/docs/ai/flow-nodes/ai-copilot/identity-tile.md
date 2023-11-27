@@ -14,13 +14,13 @@ hidden: true
 
 ## Description
 
-This Node is designed to display and process customer-specific information directly within the widget of your Agent Assist Workspace, enhancing the context and usability of the identity-related data.
+This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot Workspace, enhancing the context and usability of the identity-related data.
 
 ## Settings
 
 | Parameter     | Type          | Description                                                                                                                                       |
 |---------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID       | CognigyScript | The ID that you created in the Agent Assist configuration.                                                                                        |
+| Tile ID       | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                          |
 | Widget Layout | Select        | The layout of how the widget should be placed in the Workspace (horizontal/vertical).                                                             |
 | Image Shape   | Select        | The shape or format of the image (round or square).                                                                                               |
 | Image URL     | URL           | The URL where the image is hosted or located.                                                                                                     |
@@ -35,7 +35,7 @@ This allows human agents to have contextually relevant discussions without the n
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/identity-assist-example.png" width="80%"/>
-  <figcaption>Identity Tile Widget in AI Copilot</figcaption>
+  <figcaption>The Identity Tile Widget in AI Copilot</figcaption>
 </figure>
 
 ## More Information
@@ -43,5 +43,5 @@ This allows human agents to have contextually relevant discussions without the n
 - [Copilot: Transcript Tile](transcript-tile.md)
 - [Copilot: Sentiment Tile Node](sentiment-tile.md)
 - [Copilot: Next Action Tile Node](next-action-tile.md)
-- [Agent Assist Nodes](overview.md)
-- [Agent Assist](../../../ai-copilot/overview.md)
+- [AI Copilot Nodes](overview.md)
+- [AI Copilot](../../../ai-copilot/overview.md)

@@ -1,9 +1,9 @@
 ---
-title: "Agent Assist Workspace Setup"
-slug: "la-agent-assist-workspace-setup"
+title: "AI Copilot"
+slug: "ai-copilot"
 hidden: false
 ---
-# Agent Assist Workspace Setup
+# AI Copilot in Live Agent
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
@@ -20,16 +20,16 @@ To configure your Endpoint:
 1. Go to **Deploy > Endpoints**.
 2. Go to your **Webchat** Endpoint.
 3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
-4. Go to the **Agent Assist** section.
-5. In the **Agent Assist Config** field, select a config you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
+4. Go to the **Copilot** section.
+5. In the **Copilot Config** field, select a config you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
 6. Click **Save**.
-7. In Live Agent, go to **Profile settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > Agent Assist Workspace** and select **Enable Agent Assist Workspace**, then click **Update Settings**.
+7. In Live Agent, go to **Profile settings > AI Copilot** and select **Enable AI Copilot Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > AI Copilot Workspace** and select **Enable AI Copilot Workspace**, then click **Update Settings**.
 
 The Endpoint setup is completed.
 
-## Test Agent Assist Workspace
+## Test AI Copilot Workspace
 
-To test Agent Assist, follow these steps:
+To test AI Copilot, follow these steps:
 
 1. Start a Webchat session.
 2. Complete the handover process to Live Agent.
@@ -48,9 +48,9 @@ This Workspace is accessible from the right side of the conversation chat.
  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-workspace.png" width="90%" />
 </figure>
 
-If the testing is successful, the Agent Assist setup is complete.
+If the testing is successful, the AI Copilot setup is complete.
 
 ## More Information 
 
-- [Agent Assist Workspace Overview](../../ai-copilot/overview.md)
-- [Getting started with Agent Assist Workspace](../../ai-copilot/getting-started.md)
+- [AI Copilot Overview](../../ai-copilot/overview.md)
+- [Getting started with AI Copilot](../../ai-copilot/getting-started.md)

@@ -96,8 +96,8 @@ To create your Endpoint, follow these steps:
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
 7. Go to **Handover Settings**. 
-8. In **AI Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
-9. In **AI Copilot Config**, select the config, which you recently created via API.
+8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
+9. In **Copilot Config**, select the config, which you recently created via API.
 10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
 11. Click **Save**.
 
@@ -106,7 +106,7 @@ To create your Endpoint, follow these steps:
 1. To configure the first Widget, go into to the AI Copilot Flow.
 2. Add your desired AI Copilot Flow Node. 
 3. Add the content, which will be displayed as a Widget in the AI Copilot Workspace.
-4. Ensure that the tile ID matches the ID chosen in the AI Copilot configuration, this defines the size and placement of the Widget within the Workspace.
+4. Ensure that the tile ID matches the ID chosen in the AI Copilot configuration; this defines the size and placement of the Widget within the Workspace.
 
 ## Explore an AI Copilot workspace
 
