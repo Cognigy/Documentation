@@ -155,7 +155,7 @@ To test connection, click **Open Demo Web Chat**.
 
 ## AI Copilot Workspace
 
-Within Genesys integration, you can use [AI Copilot Workspace](../../agent-assist/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
 
 `https://agent-assist-dev.cognigy.ai/?sessionId=<cognigy-session-id>&userId=<cognigy-user-id>&URLToken=<token-on-the-Cognigy-side>&organisationId=<8x8-tenant-id>&configId=<agent-assist-workspace-config-id>`
 

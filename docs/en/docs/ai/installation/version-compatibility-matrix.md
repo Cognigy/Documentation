@@ -43,5 +43,5 @@ such as Kubernetes, MongoDB, and Redis.
 Version Compatibility Matrix:
 
 - [Live Agent](../../live-agent/installation/deployment/version-compatibility-matrix.md)
-- [Agent Assist Workspace](../../agent-assist/installation/version-compatibility-matrix.md)
+- [Agent Assist Workspace](../../ai-copilot/installation/version-compatibility-matrix.md)
 - [Voice Gateway](../../voicegateway/installation/version-compatibility-matrix.md)

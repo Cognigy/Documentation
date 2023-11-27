@@ -56,7 +56,7 @@ For on-premises installations, the **Live Agent** section in the **Create Agent*
 If the Live Agent Account is already configured for your organization, you can create an Agent with a Live Agent Flow by following these steps:
 
 1. Create a [Live Agent Inbox](../../../live-agent/settings/inboxes.md) by activating **Create Cognigy Live Agent Inbox**.
-2. Configure [Live Agent Assist](../../handover-providers/la-agent-assist-overview.md) in the **Agent Assist** section by selecting one of the following options:
+2. Configure [Live Agent Assist](../../../live-agent/assistants/overview.md) in the **Agent Assist** section by selecting one of the following options:
     - **Disable Agent Assist** — this option doesn't require any additional resources. Agent Assist functionalities will be turned off.
     - **Enable Agent Assist** — this option creates an Agent Assist Flow. This Flow includes a Say Node, which allows the system to communicate messages. This Agent Assist Flow will be assigned as the one you use for Agent Assist interactions.
    
