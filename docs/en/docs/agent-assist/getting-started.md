@@ -4,9 +4,9 @@ slug: "getting-started"
 hidden: false
 ---
 
-# Getting started with Agent Assist Workspace
+# Getting started with AI Copilot Workspace
 
-In this getting started guide, you will learn how to configure your Agent Assist Workspace.
+In this getting started guide, you will learn how to configure your AI Copilot Workspace.
 
 {! _includes/agent-assist/before-you-begin.md !}
 
@@ -20,16 +20,16 @@ To get started with the service:
 4. Save the copied Agent ID for the later use.
 5. Go to the left-side menu and click **Build > Flows**.
 6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent 
-7. Create the additional flow for Agent Assist.
+7. Create the additional flow for AI Copilot.
 
-Check that you have two Flows: the Main flow and the Agent Assist flow.
+Check that you have two Flows: the Main flow and the AI Copilot flow.
 
-## Configure the Agent Assist Config
+## Configure the AI Copilot Config
 
-With the Agent Assist Config  API you can configure the position and size of the tiles in your grid. This gives full flexibility to use the Agent Assist Workspace as efficient as possible.​
+With the AI Copilot Config  API you can configure the position and size of the tiles in your grid. This gives full flexibility to use the AI Copilot Workspace as efficient as possible.​
 
 1. [Get your API Key from your Profile](#get-an-api-key)
-2. [Create your Agent Assist Config](#create-an-agent-assist-config)
+2. [Create your AI Copilot Config](#create-an-agent-assist-config)
 
 ### Get an API Key
 
@@ -44,9 +44,9 @@ To get your API key, follow these steps:
     - API Key (api_key)
 6. Click **Set** near both fields. 
 
-### Create an Agent Assist Config
+### Create an AI Copilot Config
 
-To create your Agent Assist Config, follow these steps:
+To create your AI Copilot Config, follow these steps:
 
 1. Create an agent assist configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
@@ -96,29 +96,29 @@ To create your Endpoint, follow these steps:
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
 7. Go to **Handover Settings**. 
-8. In **Agent Assist Flow**, select the Agent Assist Flow, that you created in the first steps. 
-9. In **Agent Assist Config**, select the config which you recently created via API.
-10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the Agent Assist Settings.
+8. In **AI Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
+9. In **AI Copilot Config**, select the config which you recently created via API.
+10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
 11. Click **Save**.
 
-## Configure an Agent Assist Flow
+## Configure an AI Copilot Flow
 
-1. To configure the first Widget, go into to the Agent Assist Flow.
-2. Add your desired Agent Assist Flow Node. 
-3. Add the content, which will be displayed as a Widget in the Agent Assist Workspace.
-4. Ensure that the tile ID matches the ID chosen in the Agent Assist configuration, this defines the size and placement of the Widget within the Workspace.
+1. To configure the first Widget, go into to the AI Copilot Flow.
+2. Add your desired AI Copilot Flow Node. 
+3. Add the content, which will be displayed as a Widget in the AI Copilot Workspace.
+4. Ensure that the tile ID matches the ID chosen in the AI Copilot configuration, this defines the size and placement of the Widget within the Workspace.
 
-## Explore an Agent Assist workspace
+## Explore an AI Copilot workspace
 
-Now, we can observe the Agent Assist workspace.
+Now, we can observe the AI Copilot workspace.
 
-To get to the Agent Assist Workspace, start a conversation with your Virtual Agent. At one point you will be handed over to a human agent. 
+To get to the AI Copilot Workspace, start a conversation with your Virtual Agent. At one point you will be handed over to a human agent. 
 
-If you use the `standalone` version of Agent Assist, this is when you will receive the link to your Agent Assist Workspace.​
+If you use the `standalone` version of AI Copilot, this is when you will receive the link to your AI Copilot Workspace.​
 
-When a customer is being  handed over not only the  conversation history with the  bot and the current intent are  being forwarded to the human agent, but also a specific link to access the Agent Assist  Workspace.​
+When a customer is being  handed over not only the  conversation history with the  bot and the current intent are  being forwarded to the human agent, but also a specific link to access the AI Copilot  Workspace.​
 
-In case you are using the `embedded` version, the Agent Assist Workspace will be shown within an iFrame in your Agents Desktop.
+In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your Agents Desktop.
 
 Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
 
@@ -127,12 +127,12 @@ The widgets will populate their content once the customer starts the conversatio
 
 ## More Information
 
-- [Agent Assist Workspace](overview.md)
-- [Agent Assist Configuration](configuration.md)
-- [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
-- [Agent Assist Embedding](embedding.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [AI Copilot Workspace](overview.md)
+- [AI Copilot Configuration](configuration.md)
+- [AI Copilot Nodes](../ai/flow-nodes/agent-assist/overview.md)
+- [AI Copilot Embedding](embedding.md)
+- [AI Copilot for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
+- [AI Copilot for Chat](chat-agent-assist.md)
 - [Integration with Contact Centers](contact-center-integration.md)
 
 

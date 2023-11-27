@@ -265,7 +265,7 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-    - Agent Assist:
+    - AI Copilot:
         - ai/flow-nodes/agent-assist/overview.md
         - ai/flow-nodes/agent-assist/identity-assist.md
         - ai/flow-nodes/agent-assist/next-action-assist.md
@@ -404,7 +404,7 @@ nav:
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
 
-  - Agent Assist:
+  - AI Copilot:
       - agent-assist/overview.md
       - agent-assist/getting-started.md
       - agent-assist/architecture.md
@@ -419,9 +419,9 @@ nav:
       - agent-assist/contact-center-integration.md
       - agent-assist/configuration.md
       - agent-assist/embedding.md
-      - Chat Agent Assist:
+      - Chat AI Copilot:
           - agent-assist/chat-agent-assist.md
-      - Voice Agent Assist:
+      - Voice AI Copilot:
           - agent-assist/voice-agent-assist/voice-overview.md
           - agent-assist/voice-agent-assist/code-node.md
           - agent-assist/voice-agent-assist/transfer-node.md
@@ -553,12 +553,11 @@ nav:
         - live-agent/conversation/conversation-routing/overview.md
         - live-agent/conversation/conversation-routing/manual-mode.md
         - live-agent/conversation/conversation-routing/automatic-mode.md
-    - Assist Bot:
-        - live-agent/conversation/assist-bot.md
-    - LA Agent Assist:
+  - Assistants:
         - ai/handover-providers/la-agent-assist-overview.md
         - ai/handover-providers/la-agent-assist-setup.md
         - ai/handover-providers/la-agent-assist-workspace-setup.md
+        - live-agent/conversation/assist-bot.md
   - Reports:
       - live-agent/reports/overview.md
       - live-agent/reports/supervisor-overview.md

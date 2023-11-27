@@ -1,16 +1,16 @@
 ---
-title: "Agent Assist"
+title: "AI Copilot"
 slug: "overview"
 hidden: false
 ---
 
-# Agent Assist Workspace
+# AI Copilot Workspace
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../release-notes/4.51.md)
 
 {! _includes/agent-assist/pricing.md !}
 
-_Cognigy Agent Assist Workspace_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's agent desktop, it enhances the overall efficiency of your contact center.
+_Cognigy AI Copilot Workspace_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's agent desktop, it enhances the overall efficiency of your contact center.
 
 ## Key features
 
@@ -20,9 +20,9 @@ _Cognigy Agent Assist Workspace_ offers a variety of advanced features that empo
 - Shows any type of information like PDFs or even interactive 3D animations.
 - Access to 100% of Cognigy.AI features, including Extensions and extensive logic.
 
-### Agent Assist Workspace: Standalone or Embedded
+### AI Copilot Workspace: Standalone or Embedded
 
-You can use the Agent Assist Workspace in two different ways:
+You can use the AI Copilot Workspace in two different ways:
 
 - **Standalone application**. When a conversation is handed over to a human agent, they receive a link in the conversation chat that allows them to access the workspace. This workspace opens in a new browser tab.
 - **Embedded application**. When a conversation is handed over to a human agent, the workspace is displayed alongside the conversation chat within an iFrame in the existing interface.

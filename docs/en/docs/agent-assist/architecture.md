@@ -7,13 +7,13 @@
 # Architecture
 
 <figure>
- <img class="image-center" src="{{config.site_url}}agent-assist/images/Agent-Assist-Architecture-Flow.drawio.png" alt="Agent Assist Architecture" width="100%" />
-  <figcaption>Agent Assist Architecture Diagram</figcaption>
+ <img class="image-center" src="{{config.site_url}}agent-assist/images/Agent-Assist-Architecture-Flow.drawio.png" alt="AI Copilot Architecture" width="100%" />
+  <figcaption>AI Copilot Architecture Diagram</figcaption>
 </figure>
 
-Agent Assist is composed of Node.JS microservices that serves a React Frontend along with an API for performing actions such as CRUD operations and WebSockets.
+AI Copilot is composed of Node.JS microservices that serves a React Frontend along with an API for performing actions such as CRUD operations and WebSockets.
 
-Agent Assist has the following set of services running:
+AI Copilot has the following set of services running:
 
 - Required to run in a Kubernetes cluster
   - agent-assist-backend (API)

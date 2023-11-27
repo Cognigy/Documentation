@@ -4,9 +4,9 @@ slug: "embedding"
 hidden: false
 ---
 
-# Agent Assist Workspace Embedding
+# AI Copilot Workspace Embedding
 
-Agent Assist is supported by all handover providers.
+AI Copilot is supported by all handover providers.
 
 {! _includes/agent-assist/genesys-note.md !}
 
