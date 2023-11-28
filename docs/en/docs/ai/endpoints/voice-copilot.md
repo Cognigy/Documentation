@@ -10,7 +10,7 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-copilot.png" width="100%" />
 </figure>
 
-This Endpoint is intended for voice use cases to receive the transcription of the audio stream and execute the agent assist flow. The Endpoint splits audio streams into user and agent input. When the transcription is sent to this Endpoint, Cognigy will receive two variables: `user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
+This Endpoint is intended for voice use cases to receive the transcription of the audio stream and execute the Copilot flow. The Endpoint splits audio streams into user and agent input. When the transcription is sent to this Endpoint, Cognigy will receive two variables: `user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
 
 This endpoint Voice Copilot works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
 
