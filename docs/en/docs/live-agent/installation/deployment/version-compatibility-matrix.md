@@ -43,5 +43,5 @@ such as Kubernetes, MongoDB, and Redis.
 Version Compatibility Matrix:
 
 - [Cognigy.AI and Insights](../../../ai/installation/version-compatibility-matrix.md)
-- [Agent Assist Workspace](../../../agent-assist/installation/version-compatibility-matrix.md)
+- [Agent Assist Workspace](../../../ai-copilot/installation/version-compatibility-matrix.md)
 - [Voice Gateway](../../../voicegateway/installation/version-compatibility-matrix.md)

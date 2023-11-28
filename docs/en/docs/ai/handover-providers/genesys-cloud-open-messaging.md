@@ -153,9 +153,9 @@ Add a [Handover to Agent](../tools/agent-handover.md) Node without any additiona
 
 To test connection, click **Open Demo Web Chat**.
 
-## Agent Assist Workspace
+## AI Copilot Workspace
 
-Within Genesys integration, you can use [Agent Assist Workspace](../../agent-assist/overview.md) as an assistant for your human agents. Agent Assist will be available as a standalone application via the following link:
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
 
 `https://agent-assist-dev.cognigy.ai/?sessionId=<cognigy-session-id>&userId=<cognigy-user-id>&URLToken=<token-on-the-Cognigy-side>&organisationId=<8x8-tenant-id>&configId=<agent-assist-workspace-config-id>`
 
@@ -165,7 +165,7 @@ Where:
 - `userId` — the Cognigy user ID.
 - `URLToken` — the API Key on the Cognigy side.
 - `organisationId` — the Cognigy organization ID.
-- `configId` — the Agent Assist Workspace config ID. You can get this ID in the API response once you have created Agent Assist Workspace via API.
+- `configId` — the AI Copilot Workspace config ID. You can get this ID in the API response once you have created AI Copilot Workspace via API.
 
 For example:
 

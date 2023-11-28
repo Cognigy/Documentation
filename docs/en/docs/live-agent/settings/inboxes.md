@@ -128,10 +128,10 @@ To remove the Inbox appearance, do the following:
 
 Within an Inbox, you can add one or multiple Assist bots that will assist your human agents.
 To create such a bot, you need to have a separate Flow and Endpoint on the Cognigy.AI side.
-For more details, refer to [Assist Bot](./../conversation/assist-bot.md). 
+For more details, refer to [Assist Bot](../assistants/assist-bot.md). 
 
 ## More Information
 
 - [Agents](agents.md)
-- [Assist Bot](../conversation/assist-bot.md)
+- [Assist Bot](../assistants/assist-bot.md)
 - [Conversation Routing](../conversation/conversation-routing/overview.md)

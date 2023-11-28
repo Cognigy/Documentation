@@ -265,16 +265,16 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-    - Agent Assist:
-        - ai/flow-nodes/agent-assist/overview.md
-        - ai/flow-nodes/agent-assist/identity-assist.md
-        - ai/flow-nodes/agent-assist/next-action-assist.md
-        - ai/flow-nodes/agent-assist/sentiment-assist.md
-        - ai/flow-nodes/agent-assist/set-html-file.md
-        - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
-        - ai/flow-nodes/agent-assist/set-iframe-tile.md
-        - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
-        - ai/flow-nodes/agent-assist/transcript-assist.md
+    - AI Copilot:
+        - ai/flow-nodes/ai-copilot/overview.md
+        - ai/flow-nodes/ai-copilot/identity-tile.md
+        - ai/flow-nodes/ai-copilot/next-action-tile.md
+        - ai/flow-nodes/ai-copilot/sentiment-tile.md
+        - ai/flow-nodes/ai-copilot/set-html-tile.md
+        - ai/flow-nodes/ai-copilot/set-adaptive-card-tile.md
+        - ai/flow-nodes/ai-copilot/set-iframe-tile.md
+        - ai/flow-nodes/ai-copilot/set-grid.md
+        - ai/flow-nodes/ai-copilot/transcript-tile.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -405,30 +405,6 @@ nav:
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
 
-  - Agent Assist:
-      - agent-assist/overview.md
-      - agent-assist/getting-started.md
-      - agent-assist/architecture.md
-      - Installation:
-          - agent-assist/installation/overview.md
-          - agent-assist/installation/browser-requirements.md
-          - agent-assist/installation/version-compatibility-matrix.md
-          - agent-assist/installation/prerequisites.md
-          - agent-assist/installation/installation-process.md
-          - Migration Guides:
-              - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
-      - agent-assist/contact-center-integration.md
-      - agent-assist/configuration.md
-      - agent-assist/embedding.md
-      - Chat Agent Assist:
-          - agent-assist/chat.md
-      - Voice Agent Assist:
-          - agent-assist/voice-agent-assist/voice-overview.md
-          - agent-assist/voice-agent-assist/code-node.md
-          - agent-assist/voice-agent-assist/transfer-node.md
-          - agent-assist/voice-agent-assist/webhook-endpoint.md
-      - agent-assist/plug-and-play-widgets.md
-
   - xApps:
       - ai/xApp/overview.md
       - ai/xApp/use-cases.md
@@ -508,6 +484,32 @@ nav:
   - Release Notes: 
     - ai/endpoints/webchat/release-notes.md
 
+- AI Copilot:
+    - Overview:
+      - ai-copilot/overview.md
+    - ai-copilot/getting-started.md
+    - ai-copilot/architecture.md
+    - Installation:
+        - ai-copilot/installation/overview.md
+        - ai-copilot/installation/browser-requirements.md
+        - ai-copilot/installation/version-compatibility-matrix.md
+        - ai-copilot/installation/prerequisites.md
+        - ai-copilot/installation/installation-process.md
+        - Migration Guides:
+            - ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
+    - ai-copilot/contact-center-integration.md
+    - ai-copilot/configuration.md
+    - ai-copilot/embedding.md
+    - Chat AI Copilot:
+        - ai-copilot/chat.md
+    - Voice AI Copilot:
+        - ai-copilot/voice/voice-overview.md
+        - ai-copilot/voice/code-node.md
+        - ai-copilot/voice/transfer-node.md
+        - ai-copilot/voice/webhook-endpoint.md
+    - ai-copilot/plug-and-play-widgets.md
+    - ai-copilot/release-notes.md
+
 - Live Agent:
   - Overview:
     - live-agent/overview.md
@@ -555,12 +557,11 @@ nav:
         - live-agent/conversation/conversation-routing/overview.md
         - live-agent/conversation/conversation-routing/manual-mode.md
         - live-agent/conversation/conversation-routing/automatic-mode.md
-    - Assist Bot:
-        - live-agent/conversation/assist-bot.md
-    - LA Agent Assist:
-        - ai/handover-providers/la-agent-assist-overview.md
-        - ai/handover-providers/la-agent-assist-setup.md
-        - ai/handover-providers/la-agent-assist-workspace-setup.md
+  - Assistants:
+        - live-agent/assistants/overview.md
+        - live-agent/assistants/la-ai-copilot.md
+        - live-agent/assistants/ai-copilot.md
+        - live-agent/assistants/assist-bot.md
   - Reports:
       - live-agent/reports/overview.md
       - live-agent/reports/supervisor-overview.md
