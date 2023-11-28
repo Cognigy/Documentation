@@ -7,15 +7,22 @@ hidden: false
 
 # PCI Vault
 
-_[PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)_ (Payment Card Industry Data Security Standard) establishes a comprehensive framework of requirements to protect cardholder data. These mandatory standards apply to all entities engaged in processing data from major payment systems such as Visa, MasterCard, American Express, and JCB.
+_PCI Vault_ is a specialized solution designed by Cognigy for contact center staff
+to securely collect confidential information from end users,
+including credit card details.
 
-To enable our clients to use the capability for virtual agents to process payment card data with a proven and reliable security system, we have developed the _PCI Vault_ service.
-
-The PCI Vault application is a specialized solution designed for contact center staff to securely collect confidential information from end users, including credit card details. PCI Vault is a shared Software as a Service (SaaS) product and can be utilized only if you have shared or dedicated SaaS Cognigy installations.
-
-Cognigy PCI Vault is extensively audited to meet PCI standards, ensuring strict adherence to PCI DSS guidelines.
-In the [Cognigy Trust Center](https://trust.cognigy.com/), you can view our [PCI DSS v3.2.1 compliance certificate](https://trust.cognigy.com/overview/05e85d7e-e354-413e-853f-a95b217c0e85/pci-dss),
+Cognigy PCI Vault is extensively audited to meet the _[PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)_
+(Payment Card Industry Data Security Standard) guidelines.
+The PCI DSS standard establishes a comprehensive framework of requirements to protect cardholder data.
+These mandatory standards apply to all entities engaged in processing data from major payment systems such as Visa,
+MasterCard, American Express, and JCB.
+In the [Cognigy Trust Center](https://trust.cognigy.com/),
+you can view our [PCI DSS v3.2.1 compliance certificate](https://trust.cognigy.com/overview/05e85d7e-e354-413e-853f-a95b217c0e85/pci-dss),
 showcasing our commitment to top-notch security.
+
+PCI Vault is a shared SaaS (Software as a Service)
+product and can be utilized only if you have shared or dedicated SaaS Cognigy installations.
+This application is used within AI Copilot. Thus, the capabilities of the PCI vault are available for various handover providers supported by AI Copilot, including Cognigy Live Agent, Genesys, 8x8, and others.
 
 ## Architecture
 

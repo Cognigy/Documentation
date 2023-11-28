@@ -658,9 +658,6 @@ nav:
 - Marketplace:
   - overview.md
 
-- PCI Vault:
-  - pci-vault/overview.md
-
 markdown_extensions:
 - toc:
     permalink: true
