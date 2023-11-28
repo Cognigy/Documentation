@@ -65,5 +65,5 @@ When a call is transferred to a human agent, audio from the SIPREC call is trans
 
 ## More Information
 
-- [AI Copilot](../../agent-assist/overview.md)
+- [AI Copilot](../../ai-copilot/overview.md)
 - [Voice Gateway](../../voicegateway/overview.md)
