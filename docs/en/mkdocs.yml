@@ -557,7 +557,7 @@ nav:
         - live-agent/conversation/conversation-routing/automatic-mode.md
   - Assistants:
         - live-agent/assistants/overview.md
-        - live-agent/assistants/la-agent-assist.md
+        - live-agent/assistants/la-ai-copilot.md
         - live-agent/assistants/ai-copilot.md
         - live-agent/assistants/assist-bot.md
   - Reports:

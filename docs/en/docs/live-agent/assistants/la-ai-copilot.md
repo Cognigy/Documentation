@@ -1,9 +1,9 @@
 ---
-title: "Agent Assist Setup"
-slug: "la-agent-assist-setup"
+title: "LA AI Copilot"
+slug: "la-ai-copilot"
 hidden: false
 ---
-# LA Agent Assist Setup
+# LA AI Copilot 
 
 {! _includes/live-agent/assistant-setup.md !}
 
@@ -14,9 +14,9 @@ To configure your Endpoint:
 1. Go to **Deploy > Endpoints**.
 2. Go to your **Webchat** Endpoint.
 3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
-4. Go to the **Agent Assist** section.
-5. In the **Agent Assist Config** field, select **None**.
-6. In the **Agent Assist Flow** field, select the name of the Agent Assist Flow you've created in the previous step.
+4. Go to the **Copilot** section.
+5. In the **Copilot Config** field, select **None**.
+6. In the **Copilot Flow** field, select the name of the AI Copilot Flow you've created in the previous step.
 7. Click **Save**.
 
 The Endpoint setup is completed.
@@ -37,7 +37,7 @@ To test Agent Assist, follow these steps:
 Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand:
 
 1. The human agent will receive a dropdown menu **Assist**. 
-2. In this menu, the human agent will find the results from the Flow sent via Agent Assist.
+2. In this menu, the human agent will find the results from the Flow sent via LA AI Copilot.
        <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview_f.png" width="55%" />
        </figure>
@@ -50,10 +50,9 @@ Once the human agent receives this message, the testing behavior will vary depen
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete_f.png" width="50%" />
        </figure>
 
-If the testing is successful, the Agent Assist setup is complete.
+If the testing is successful, the LA AI Copilot setup is complete.
 
 ## More Information
 
 - [AI Copilot in Live Agent](ai-copilot.md)
 - [AI Copilot Overview](../../ai-copilot/overview.md)
-- [LA Agent Assist](la-agent-assist.md)

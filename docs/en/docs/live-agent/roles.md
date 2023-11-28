@@ -157,13 +157,13 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Assistants
 
-| Actions                       | Agent | Supervisor | Administrator |
-|-------------------------------|-------|------------|---------------|
-| **LA Agent Assist**           |       |            |               |
-| Activate AI Copilot Workspace | +     | +          | +             |
-| **Assist Bot**                |       |            |               |
-| Edit Assist Bot Settings      | +     | +          | +             |
-| Reset Session                 | +     | +          | +             |
+| Actions                        | Agent | Supervisor | Administrator |
+|--------------------------------|-------|------------|---------------|
+| **LA AI Copilott**             |       |            |               |
+| Activate AI Copilot Workspace  | +     | +          | +             |
+| **Assist Bot**                 |       |            |               |
+| Edit Assist Bot Settings       | +     | +          | +             |
+| Reset Session                  | +     | +          | +             |
 
 ### Account and Profile Settings
 
