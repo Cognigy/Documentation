@@ -369,7 +369,7 @@ nav:
       - ai/endpoints/webchat/webchat.md
     - Voice Gateway:
       - ai/endpoints/cognigy-vg.md
-      - ai/endpoints/audiocodes.md
+    - ai/endpoints/audiocodes.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
@@ -470,6 +470,7 @@ nav:
       - ai/installation/migration/kustomize-to-helm-migration.md
       - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
       - ai/installation/migration/from-nlu-v1-to-v2-migration.md
+      - ai/installation/migration/single-replica-redis-to-redis-ha-migration.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:

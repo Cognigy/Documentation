@@ -11,3 +11,4 @@ ignore_macros: true
 - [Kustomize to Helm](kustomize-to-helm-migration.md)
 - [Amazon EFC Provisioner to EFC CSI](efs-provisioner-to-efs-csi-migration.md)
 - [Cognigy NLU: from V1 to V2](from-nlu-v1-to-v2-migration.md)
+- [Redis: Single Replica to Redis HA Migration](single-replica-redis-to-redis-ha-migration.md)

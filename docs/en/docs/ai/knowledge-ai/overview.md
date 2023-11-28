@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../release-notes/4.64.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -28,7 +28,7 @@ For the Knowledge AI case, you need only the `text-embedding-ada-002` model. How
 
 ## Create a Knowledge Store
 
-You can create a preconfigured knowlege store. To do this, follow these steps:
+You can create a preconfigured knowledge store. To do this, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select **Knowledge**. The knowledge wizard will be opened.
@@ -52,6 +52,7 @@ You can create a preconfigured knowlege store. To do this, follow these steps:
     === "OpenAI"
         - **Connection name** — create a unique name for your connection.<br>
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
+        - **Custom Model** — this parameter is optional. Add the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
 
 6. Click **Next**. 
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
