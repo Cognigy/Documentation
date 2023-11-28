@@ -1,12 +1,12 @@
 ---
-title: "Agent Assist for Voice: Webhook Endpoint"
-slug: "voice-agent-assist-webhook-endpoint"
+title: "AI Copilot for Voice: Webhook Endpoint"
+slug: "voice-ai-copilot-webhook-endpoint"
 hidden: false
 ---
 
-# Agent Assist for Voice: Webhook Endpoint 
+# AI Copilot for Voice: Webhook Endpoint 
 
-A Webhook Endpoint needs to be created to receive the transcription and forward it to the Agent Assist Workspace Flow, triggering widget updates.
+A Webhook Endpoint needs to be created to receive the transcription and forward it to the AI Copilot Workspace Flow, triggering widget updates.
 
 ### Transformers
 
@@ -22,14 +22,14 @@ You can find the transformer code in the [Help Center article](https://support.c
 
 - [Code Node](code-node.md)
 - [Transfer Node](transfer-node.md)
-- [Agent Assist for Voice](voice-overview.md)
+- [AI Copilot for Voice](voice-overview.md)
 
 ## More general information
 
-- [Agent Assist Workspace](../overview.md)
-- [Getting started with Agent Assist](../getting-started.md)
-- [Agent Assist Configuration](../configuration.md)
-- [Agent Assist Nodes](../../ai/flow-nodes/agent-assist/overview.md)
-- [Agent Assist Embedding](../embedding.md)
-- [Agent Assist for Chat](../chat-agent-assist.md)
+- [AI Copilot Workspace](../overview.md)
+- [Getting started with AI Copilot](../getting-started.md)
+- [AI Copilot Configuration](../configuration.md)
+- [AI Copilot Nodes](../../ai/flow-nodes/agent-assist/overview.md)
+- [AI Copilot Embedding](../embedding.md)
+- [AI Copilot for Chat](../chat.md)
 - [Integration with Contact Centers](../contact-center-integration.md)

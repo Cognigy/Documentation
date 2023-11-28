@@ -19,5 +19,5 @@ We're continuously expanding the list of integration examples in Cognigy Help Ce
 - [Agent Assist Configuration](configuration.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Embedding](embedding.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [Agent Assist for Voice](voice/voice-overview.md)
+- [Agent Assist for Chat](chat.md)

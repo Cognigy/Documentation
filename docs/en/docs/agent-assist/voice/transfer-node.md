@@ -1,10 +1,10 @@
 ---
-title: "Agent Assist for Voice: Transfer Node"
-slug: "voice-agent-assist-transfer-node"
+title: "AI Copilot for Voice: Transfer Node"
+slug: "voice-ai-copilot-transfer-node"
 hidden: false
 ---
 
-# Agent Assist for Voice: Transfer Node
+# AI Copilot for Voice: Transfer Node
 
 When using the Cognigy Voice Gateway, you need to add a Transfer Node to hand over the call to a human agent. 
 
@@ -20,7 +20,7 @@ In this Transfer Node you need to enable the transcription of audio streams. You
 
 ### Transcription Webhook
 
-The **Transcription Webhook** should be set to the Endpoint URL of the Webhook Endpoint that the Agent Assist Workspace flow uses to send the transcription.
+The **Transcription Webhook** should be set to the Endpoint URL of the Webhook Endpoint that the AI Copilot Workspace flow uses to send the transcription.
 
 ### Custom SIP Headers
 
@@ -38,14 +38,14 @@ To submit the **UUIValue** created in the Code Node before, add following to the
 
 - [Code Node](code-node.md)
 - [Webhook Endpoint](webhook-endpoint.md)
-- [Agent Assist for Voice](../../agent-assist/voice-agent-assist/voice-overview.md)
+- [AI Copilot for Voice](/voice-overview.md)
 
 ## More general information
 
-- [Agent Assist Workspace](../overview.md)
-- [Getting started with Agent Assist](../getting-started.md)
-- [Agent Assist Configuration](../configuration.md)
-- [Agent Assist Nodes](../../ai/flow-nodes/agent-assist/overview.md)
-- [Agent Assist Embedding](../embedding.md)
-- [Agent Assist for Chat](../chat-agent-assist.md)
+- [AI Copilot Workspace](../overview.md)
+- [Getting started with AI Copilot](../getting-started.md)
+- [AI Copilot Configuration](../configuration.md)
+- [AI Copilot Nodes](../../ai/flow-nodes/agent-assist/overview.md)
+- [AI Copilot Embedding](../embedding.md)
+- [AI Copilot for Chat](../chat.md)
 - [Integration with Contact Centers](../contact-center-integration.md)

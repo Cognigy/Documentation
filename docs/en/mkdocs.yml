@@ -421,7 +421,7 @@ nav:
       - agent-assist/configuration.md
       - agent-assist/embedding.md
       - Chat Agent Assist:
-          - agent-assist/chat-agent-assist.md
+          - agent-assist/chat.md
       - Voice Agent Assist:
           - agent-assist/voice-agent-assist/voice-overview.md
           - agent-assist/voice-agent-assist/code-node.md

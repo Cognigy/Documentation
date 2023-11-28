@@ -12,7 +12,7 @@ hidden: false
 
 In Cognigy.AI, you can easily connect your resources to a Webhook using the Webhook Endpoint integration. This setup ensures quick communication by instantly sending information to a specified callback URL when it's ready. Connecting your Cognigy resources to this Webhook enables fast and smooth interactions, allowing for real-time updates and actions.
 
-If you use [AI Copilot for voice](../../agent-assist/voice-agent-assist/voice-overview.md) with the Webhook Endpoint, you can switch to a specific [Voice Copilot](voice-copilot.md) Endpoint. This eliminates the need for a separate Code Node to create a webhook URL, as all the necessary logic is already included in the Voice Copilot Endpoint.
+If you use [AI Copilot for voice](../../agent-assist/voice/voice-overview.md) with the Webhook Endpoint, you can switch to a specific [Voice Copilot](voice-copilot.md) Endpoint. This eliminates the need for a separate Code Node to create a webhook URL, as all the necessary logic is already included in the Voice Copilot Endpoint.
 
 ## Generic Endpoint Settings
 

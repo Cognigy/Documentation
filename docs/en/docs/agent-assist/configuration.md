@@ -32,8 +32,8 @@ If Agent Assist Workspace receives updates for a Tile ID not present in the Agen
 - [Getting started with Agent Assist](getting-started.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Embedding](embedding.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [Agent Assist for Voice](voice/voice-overview.md)
+- [Agent Assist for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
 
 

@@ -33,8 +33,8 @@ You can use the Agent Assist Workspace in two different ways:
 - [Agent Assist Configuration](configuration.md)
 - [Agent Assist Nodes](../ai/flow-nodes/agent-assist/overview.md)
 - [Agent Assist Embedding](embedding.md)
-- [Agent Assist for Voice](../agent-assist/voice-agent-assist/voice-overview.md)
-- [Agent Assist for Chat](chat-agent-assist.md)
+- [Agent Assist for Voice](voice/voice-overview.md)
+- [Agent Assist for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
 - [LA Agent Assist Workspace](../ai/handover-providers/la-agent-assist-workspace-setup.md)
 
