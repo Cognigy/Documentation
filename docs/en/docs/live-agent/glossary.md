@@ -38,7 +38,7 @@ For more information, read the [Conversation Routing](conversation/conversation-
 
 _**Assist Bot**_
 :  A tool for assisting the Agents while talking to the customers. It consists of a dedicated Flow to provide information to the Agent. Therefore, it needs to be configured as a separate Flow in Cognigy.AI.
-For more information, read the [Assist Bot](conversation/assist-bot.md) documentation.
+For more information, read the [Assist Bot](assistants/assist-bot.md) documentation.
 
 _**Attachments**_
 :  In an ongoing conversation in Live Agent both, the user and the Agent can send files (images, videos, documents, forms). This way the files can be shared directly during a conversation. All the Attachments contained in the account conversations are available in the Settings menu.
@@ -108,8 +108,8 @@ _**Inbox ID**_
 
 ## L
 
-_**LA Agent Assist**_
-: LA Agent Assist allows human agents using Cognigy Live Agent to be assisted by AI-powered Virtual Agents when conversing with the customer. Using this functionality, during an active handover, fully configurable virtual agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Agent Assist](../ai/handover-providers/la-agent-assist-overview.md) documentation.
+_**LA Copilot**_
+: LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered Virtual Agents when conversing with the customer. Using this functionality, during an active handover, fully configurable virtual agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
 
 _**Labels**_
 : Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation. For more information, read the [Labels](settings/labels.md) documentation.
