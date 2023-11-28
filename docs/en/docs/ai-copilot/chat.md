@@ -1,6 +1,6 @@
 ---
 title: "AI Copilot for Chat"
-slug: "chat-agent-assist"
+slug: "chat"
 hidden: false
 ---
 

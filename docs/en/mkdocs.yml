@@ -373,6 +373,7 @@ nav:
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
+    - ai/endpoints/voice-copilot.md
     - ai/endpoints/amazon-lex.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
