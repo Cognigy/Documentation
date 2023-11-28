@@ -23,7 +23,9 @@
             - **Connection name** — create a unique name for your connection.<br>
             - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
         8.2 Click **Create**.<br>
-    
+        8.3 Fill in the remaining field:<br>
+            - **Custom Model** - specify the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
+
     === "Anthropic"
         8.1 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
@@ -45,7 +47,14 @@
             - **API Endpoint** — add a [service endpoint](https://cloud.google.com/vertex-ai/docs/reference/rest#service-endpoint) for the model. For example, `us-central1-aiplatform.googleapis.com`. Note that the endpoint should be specified without `https://` or `http://`. <br>
             - **Publisher** — add an owner's name of the model. If not specified, `Google` will be used by default.
                This parameter is optional.<br>
-            
+
+    === "Aleph Alpha"
+        8.1 Fill in the following fields:<br>
+            - **Connection name** — create a unique name for your connection.<br>
+            - **Token*** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>
+        8.2 Click **Create**.<br>
+        8.3 Fill in the remaining field:<br>
+            - **Custom Model** - specify a particular model you want to use, for example, `luminous-base`. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about the provider's models, refer to the [Aleph Alpha documentation](https://docs.aleph-alpha.com/docs/introduction/model-card).<br>  
 
 9. To apply changes, click **Save**.
 10. To check if the connection was set up, click **Test**.
