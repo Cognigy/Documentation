@@ -68,3 +68,4 @@ The following Endpoints provide integrations with third party products:
 - [WhatsApp](whatsapp.md)
 - [8x8](8x8.md)
 - [Genesys](genesys.md)
+- [Voice Copilot](voice-copilot.md)

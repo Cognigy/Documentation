@@ -17,7 +17,7 @@ With audit logs, you can answer "Who did what, where, and when?" questions withi
 
 The logs include events such as `create`, `update`, and `delete` for the following entities:
 
-- [Assist Bots](./../conversation/assist-bot.md)
+- [Assist Bots](../assistants/assist-bot.md)
 - [Automation Rules](automation-rules.md)
 - [Inboxes](inboxes.md)
 - [Inbox Collaborators](inboxes.md#inbox-collaborators)

@@ -33,11 +33,12 @@ such as Kubernetes, MongoDB, and Redis.
 | 4.62                                | 1.23-1.26  | 14.8       | 7.0   | 8.0   | 2.10    | 1.8      | 3.9 or higher |
 | 4.63                                | 1.23-1.26  | 14.9       | 7.0   | 8.0   | 2.10    | 1.8      | 3.9 or higher |
 | 4.64                                | 1.23-1.26  | 14.9       | 7.0   | 8.0   | 2.10    | 1.8      | 3.9 or higher |
+| 4.65                                | 1.23-1.26  | 14.9       | 7.0   | 8.0   | 2.10    | 1.8      | 3.9 or higher |
 
 ## More Information
 
 Version Compatibility Matrix:
 
 - [Cognigy.AI and Insights](../../ai/installation/version-compatibility-matrix.md)
-- [Agent Assist Workspace](../../agent-assist/installation/version-compatibility-matrix.md)
+- [Agent Assist Workspace](../../ai-copilot/installation/version-compatibility-matrix.md)
 - [Live Agent](../../live-agent/installation/deployment/version-compatibility-matrix.md)
