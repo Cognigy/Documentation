@@ -8,7 +8,7 @@ hidden: false
 
 This feature provides an AI Copilot Workspace for integration into contact center voice deployments.
 
-To set up AI Copilot for Voice, you'll need a Main Flow capable of transferring the call to a human agent, as well as an AI Copilot Workspace Flow. The Workspace Flow must be configured with a Webhook Endpoint to receive the transcription of the audio stream.
+To set up AI Copilot for Voice, you'll need a Main Flow capable of transferring the call to a human agent, as well as an AI Copilot Workspace Flow. The Workspace Flow will be executed through the Voice Copilot Endpoint, which receives the transcription of the audio stream.
 
 Before transferring the call to a human agent, add a Transfer Node to route the call to the contact center via SIP headers.
 
