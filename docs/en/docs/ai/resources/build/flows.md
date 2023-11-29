@@ -5,34 +5,44 @@
 ---
 # Flows 
 
-## Chart
+## Introduction
 
-**Flows** provide a **visual representation of a potential dialog** in a user-friendly interface. 
-Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
+**Flows** are an important concept within Cognigy.AI. They provide a visual representation of a potential dialog based on a **Flow chart** in a user-friendly interface. Virtual Agent projects in Cognigy.AI are realized by creating Flows.   
+Flows are build as a composition of individual Nodes with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
+
+## Flow Chart
 
 !!! tip "How to create a new Flow"
     To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
 
-<br>
-<img src="{{config.site_url}}ai/resources/images/e1151fe-flow_example_detail.PNG" width="100%" style="margin-bottom: 5px">
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100.png" width="100%" />
+</figure>
 
-Flows are executed from top to bottom and use a logic-based system to determine which nodes should be executed. The execution path is shown through a highlighted green path. 
+Flows are executed from top to bottom in a conversation and use a logic-based system to determine which nodes should be executed. The execution path of a conversation is indicated by a highlighted green path. 
 
-<img src="{{config.site_url}}ai/resources/images/ec03ff1-flow_executed_detail.PNG" width="100%" style="margin-bottom: 5px">
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100_executed.png" width="100%" />
+</figure>
+
+### Creating a Flow Chart 
+
+{! _includes/ai/generative-ai/generate-flows.md !}
+
+How to create a Flow, read the [Generative AI](../../generative-ai.md#generate-flows) documentation.
+
 
 ## Flow Nodes
-<div class="divider"></div>
 
 **Flow Nodes** can be used to add interactivity to a flow. They can be added by clicking on the **+** icon in between two existing Nodes. There are many types of Nodes, ranging from **Question Nodes** to **Marketing Nodes**. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="80%" />
 </figure>
 
 Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) for more information on the different types of **Nodes**.
 
 ## Entry Points
-<div class="divider"></div>
 
 Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are subsequently published to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
 
@@ -49,14 +59,12 @@ The **Entry Point** can change depending on the state of the conversation. It is
 In some cases there are **multiple Entry Points.** This can be the case if an Optional Question was triggered or if a given **Intent Entrypoint** has been set explicitly.
 
 ## NLU 
-<div class="divider"></div>
 
 In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
 
 Refer to [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
 
 ## Settings
-<div class="divider"></div>
 
 Certain settings can be configured per Flow. 
 
@@ -76,15 +84,12 @@ Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-over
 
 ### Switching to different Flows
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
-
-<div class="divider"></div>
-
 With Cognigy.AI 4.10.0 switching between Flows with different settings and different Intents has been improved as follows:
 
 - When you are in the **NLU tab** of Flow A and you switch to Flow B you will still be in the NLU tab.
 - When you are in the **Settings tab** of Flow A and you switch to Flow B you will still be in the Settings tab.
 
+
 ## Generative AI
 
-To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, read the [Generative AI](../../generative-ai.md#generate-flows) article.
+To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, read the [Generative AI](../../generative-ai.md#generate-flows) documentation.
