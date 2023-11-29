@@ -11,12 +11,14 @@ hidden: false
 When using the Cognigy Voice Gateway, add a [Transfer](../../ai/flow-nodes/vg/transfer.md) Node to hand over the call to a human agent. 
 
 To transfer the call, select the **Dial** option to remain in the session and transcribe the audio streams.
-### Enable Copilot
 
-The toggle to enable Copilot will create a UUIValue. This UUIValue is creating the AI Copilot URL, which will be sent to the Contact Center when doing the transfer via SIP Headers. 
+## Enable Copilot
 
-The UUIValue has following structure: `${AICopilotBaseUrl}/?userId=${userId}&sessionId=${sessionId}&URLToken=${URLToken}`
-### Transcription
+The toggle to enable Copilot will create a UUIValue. This UUIValue creates the AI Copilot URL, which will be sent to the Contact Center when transferring via SIP Headers.
+
+The UUIValue has the following structure: `${AICopilotBaseUrl}/?userId=${userId}&sessionId=${sessionId}&URLToken=${URLToken}`
+
+## Transcription
 
 In this Transfer Node, you need to enable the transcription of audio streams. You can choose between three options:
 
@@ -24,15 +26,14 @@ In this Transfer Node, you need to enable the transcription of audio streams. Yo
 - **Called** — the human agent audio stream.
 - **Caller/Called** — the customer and the human agent audio stream.
 
-### Transcription Webhook
+## Transcription Webhook
 
-The **Transcription Webhook** should be set to the Endpoint URL of the [Voice Copilot](../../ai/endpoints/voice-copilot.md) Endpoint that the AI Copilot Workspace flow uses to send the transcription.
+The **Transcription Webhook** should be set to the Endpoint URL of the [Voice Copilot](../../ai/endpoints/voice-copilot.md) Endpoint
+that the AI Copilot Workspace Flow utilizes for sending transcriptions.
 
-### Custom SIP Headers
+## Custom SIP Headers
 
-Activate **Enable Copilot** toggle to provide a Header Key.
-
-This header key is used to submit the UUIValue, which is being created when enabling the toggle to enable Copilot. Please note, that the Headers Key should match to your Contact Centers requirements. As an example, the headers key for Genesys Cloud CX would be `User-to-User`.
+Activate the **Enable Copilot** toggle to generate a Header Key. This header key is used to submit the UUIValue. Note that the Header Key should align with the requirements of your Contact Center. For example, the header key for Genesys Cloud CX is `User-to-User`.
 
 ## More Information for Voice Use Cases
 
