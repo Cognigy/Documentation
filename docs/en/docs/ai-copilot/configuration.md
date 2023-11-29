@@ -28,6 +28,8 @@ If AI Copilot receives updates for a Tile ID not present in the AI Copilot confi
 
 ## URL
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../release-notes/4.65.md)
+
 If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
 
 {! _includes/agent-assist/url-pattern.md !}
