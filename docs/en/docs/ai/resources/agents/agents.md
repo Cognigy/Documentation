@@ -56,9 +56,9 @@ For on-premises installations, the **Live Agent** section in the **Create Agent*
 If the Live Agent Account is already configured for your organization, you can create an Agent with a Live Agent Flow by following these steps:
 
 1. Create a [Live Agent Inbox](../../../live-agent/settings/inboxes.md) by activating **Create Cognigy Live Agent Inbox**.
-2. Configure [Live Agent Assist](../../../live-agent/assistants/overview.md) in the **Agent Assist** section by selecting one of the following options:
-    - **Disable Agent Assist** — this option doesn't require any additional resources. Agent Assist functionalities will be turned off.
-    - **Enable Agent Assist** — this option creates an Agent Assist Flow. This Flow includes a Say Node, which allows the system to communicate messages. This Agent Assist Flow will be assigned as the one you use for Agent Assist interactions.
+2. Configure [AI Copilot](../../../live-agent/assistants/overview.md) in the **Copilot** section by selecting one of the following options:
+    - **Disable Agent Assist** — this option doesn't require any additional resources. AI Copilot functionalities will be turned off.
+    - **Enable Agent Assist** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
    
     <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_inbox.png" width="80%" style="margin-bottom: 5px">
 

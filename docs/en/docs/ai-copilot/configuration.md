@@ -26,6 +26,12 @@ Each tile must have a name, for example, `map`, `profile`, or `history`, that wo
 
 If AI Copilot receives updates for a Tile ID not present in the AI Copilot configuration, the tile will not be rendered. In such cases, a warning indicator will be displayed in the lower-right corner of the workspace, indicating that an "unknown tile update" has been received.
 
+## URL
+
+If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
+
+{! _includes/agent-assist/url-pattern.md !}
+
 ## More Information
 
 - [AI Copilot Workspace](overview.md)
@@ -35,5 +41,3 @@ If AI Copilot receives updates for a Tile ID not present in the AI Copilot confi
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
-
-

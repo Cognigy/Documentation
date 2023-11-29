@@ -21,9 +21,9 @@ To configure your Endpoint:
 
 The Endpoint setup is completed.
 
-## Test Agent Assist
+## Test LA AI Copilot
 
-To test Agent Assist, follow these steps:
+To test LA AI Copilot, follow these steps:
 
 1. Start a Webchat session.
 2. Complete the handover process to Live Agent.
