@@ -157,19 +157,7 @@ To test connection, click **Open Demo Web Chat**.
 
 Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
 
-`https://agent-assist-dev.cognigy.ai/?sessionId=<cognigy-session-id>&userId=<cognigy-user-id>&URLToken=<token-on-the-Cognigy-side>&organisationId=<8x8-tenant-id>&configId=<agent-assist-workspace-config-id>`
-
-Where:
-
-- `sessionId` — the Cognigy Session ID.
-- `userId` — the Cognigy user ID.
-- `URLToken` — the API Key on the Cognigy side.
-- `organisationId` — the Cognigy organization ID.
-- `configId` — the AI Copilot Workspace config ID. You can get this ID in the API response once you have created AI Copilot Workspace via API.
-
-For example:
-
-`https://agent-assist-dev.cognigy.ai/?sessionId=session-2a4dc476-2f91-4f16-a420-a731144b8bac&userId=51c8f577-c352-4fb6-a496-9b7a74141450&URLToken=760bcb4beb5da6169aa7c53cfca8fc06e1b9e4ec31dc6784df396f2cc5163fc4&organisationId=63babf6e92add771923e87b7&projectId=64257f5a9ebf0514e9c1c7bb&configId=fbe5297e-e71c-4166-b909-3b99d27efdee`
+{! _includes/ai/agent-assist/url-pattern.md !}
 
 ## More Information
 
