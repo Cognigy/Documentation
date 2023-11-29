@@ -6,13 +6,15 @@ hidden: false
 
 # AI Copilot for Voice: Transfer Node
 
-When using the Cognigy Voice Gateway, you need to add a Transfer Node to hand over the call to a human agent. 
+{! _includes/agent-assist/genesys-note.md !}
+
+When using the Cognigy Voice Gateway, add a Transfer Node to hand over the call to a human agent. 
 
 To transfer the call, select the **Dial** option to remain in the session and transcribe the audio streams.
 
 ### Transcription
 
-In this Transfer Node you need to enable the transcription of audio streams. You can choose between three options:
+In this Transfer Node, you need to enable the transcription of audio streams. You can choose between three options:
 
 - **Caller** — the customer audio stream.
 - **Called** — the human agent audio stream.
@@ -20,25 +22,20 @@ In this Transfer Node you need to enable the transcription of audio streams. You
 
 ### Transcription Webhook
 
-The **Transcription Webhook** should be set to the Endpoint URL of the Webhook Endpoint that the AI Copilot Workspace flow uses to send the transcription.
+The **Transcription Webhook** should be set to the Endpoint URL of the [Voice Copilot](../../ai/endpoints/voice-copilot.md) Endpoint that the AI Copilot Workspace flow uses to send the transcription.
 
 ### Custom SIP Headers
 
-To submit the **UUIValue** created in the Code Node before, add following to the **Custom SIP Headers** section within the Transfer Node:
+Activate **Enable Copilot** toggle to provide a Header Key.
 
-<code>
-{
-    "User-to-User": "&lcub;&lcub;input.UUIValue&rcub;&rcub;"
-}
-</code>
+To submit the **UUIValue**, add the `User-to-User` key to the **Copilot Headers Key** section within the Transfer Node:
 
-{! _includes/agent-assist/genesys-note.md !}
+
 
 ## More Information for Voice Use Cases
 
-- [Code Node](code-node.md)
-- [Webhook Endpoint](webhook-endpoint.md)
-- [AI Copilot for Voice](/voice-overview.md)
+- [Voice Copilot](../../ai/endpoints/voice-copilot.md)
+- [AI Copilot for Voice](voice-overview.md)
 
 ## More general information
 

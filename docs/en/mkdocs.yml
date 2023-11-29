@@ -506,9 +506,7 @@ nav:
         - ai-copilot/chat.md
     - Voice AI Copilot:
         - ai-copilot/voice/voice-overview.md
-        - ai-copilot/voice/code-node.md
         - ai-copilot/voice/transfer-node.md
-        - ai-copilot/voice/webhook-endpoint.md
     - ai-copilot/plug-and-play-widgets.md
     - ai-copilot/release-notes.md
 
