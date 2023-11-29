@@ -13,7 +13,7 @@
 </figure>
 
 Cognigy Insights enables you to select available Endpoint data for analysis using global filters. Once you have changed a filter setting, the corresponding data will be considered for the analysis report in Insights.
-The Global Filter options are available in all applications running in Cognigy Insights.
+The Global Filter options are available in all applications running in Cognigy Insights an filter settings have a global effect on all applications.
 
 !!! note
     The global filter options are available in all applications running in Cognigy Insights.
@@ -31,7 +31,7 @@ The following global filters are available:
 
 ## Timeframe
 
-You can select a preset time frame or set it individually using a date picker.
+To analyze a defined range of Endpoint data you can define a preset time frame or set it individually using a date picker.
 
 Available preset time frames are: 
 
@@ -50,7 +50,7 @@ If you have changed a time frame, click **Apply**, to confirm and activate the s
 It is possible to select hours for the chosen timeframe.
 This might be helpful if you need to narrow the result to a more precise range.
 
-To define date, and hours, and minutes, do the following: 
+To define a date and times, such as hours and minutes, proceed as follows:
 
 1. Click the global time frame filter at the top right corner next to the user menu to open the list of time frames. 
 2. Click **Custom Period** for setting an individual time frame.
