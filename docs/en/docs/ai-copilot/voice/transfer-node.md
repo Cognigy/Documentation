@@ -8,7 +8,7 @@ hidden: false
 
 {! _includes/agent-assist/genesys-note.md !}
 
-When using the Cognigy Voice Gateway, add a Transfer Node to hand over the call to a human agent. 
+When using the Cognigy Voice Gateway, add a [Transfer](../../ai/flow-nodes/vg/transfer.md) Node to hand over the call to a human agent. 
 
 To transfer the call, select the **Dial** option to remain in the session and transcribe the audio streams.
 
@@ -28,9 +28,7 @@ The **Transcription Webhook** should be set to the Endpoint URL of the [Voice Co
 
 Activate **Enable Copilot** toggle to provide a Header Key.
 
-To submit the **UUIValue**, add the `User-to-User` key to the **Copilot Headers Key** section within the Transfer Node:
-
-
+To submit the **UUIValue**, add the `User-to-User` key to the **Copilot Headers Key** section within the Transfer Node.
 
 ## More Information for Voice Use Cases
 
