@@ -7,8 +7,19 @@
 
 ## Introduction
 
-**Flows** are an important concept within Cognigy.AI. They provide a visual representation of a potential dialog based on a **Flow chart** in a user-friendly interface. Virtual Agent projects in Cognigy.AI are realized by creating Flows.   
+**Flows** are an important concept within Cognigy.AI. They provide a visual representation of a potential dialog based on a **Flow** in a user-friendly interface. Virtual Agent projects in Cognigy.AI are realized by creating Flows.   
 Flows are build as a composition of individual Nodes with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
+
+Elements of Flows:
+
+- [Flow Chart](#flow-chart)
+- [Flow Nodes](#flow-nodes)
+- [NLU](#nlu)
+- [Settings](#settings)
+- [Localization](#locale-settings)
+- [Agent Top Toolbar](#agent-toolbar)
+
+
 
 ## Flow Chart
 
@@ -19,17 +30,67 @@ Flows are build as a composition of individual Nodes with different functionalit
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100.png" width="100%" />
 </figure>
 
-Flows are executed from top to bottom in a conversation and use a logic-based system to determine which nodes should be executed. The execution path of a conversation is indicated by a highlighted green path. 
+A Flow is represented visually with the help of a flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can select the Flow Nodes that offer the required functionality for your project. 
+Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path so that you can understand logical system decicisons at any step and follow the path. 
+
+
+### Agent Top Toolbar
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100_executed.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar.png" width="80%" />
 </figure>
 
-### Creating a Flow Chart 
+Agents have a Top Toolbar in every view, offering quick access to Agent-specific resources, such as Help, Search, Product Journeys, and Task Menu. The Top Toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available. The Interaction Panel is very important because, among other things, it allows the flow functionality to be tested during development, see section [Execute a Flow](#execute-a-flow)
+
+The Toolbar provides also tooltips to enhance navigation when hovering over an item.
+
+For detailed information to each item, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
+
+### Creating a Flow
+
+
+
+The most sophisticated way to create a Flow for your Virtual [Agent](https://docs.cognigy.com/ai/resources/agents/agents/) is to use [Generative AI](../../generative-ai.md#generate-flows). 
 
 {! _includes/ai/generative-ai/generate-flows.md !}
 
-How to create a Flow, read the [Generative AI](../../generative-ai.md#generate-flows) documentation.
+### Execute a Flow
+
+For testing issues the [Top Toolbar](../../../ai/resources/agents/agents.md#top-toolbar) on the top right side of Cognigy.AI interface provides the **Interaction Panel**. Using the Interaction Panel you can chat at any time with your Virtual Agent during the project development in order to evaluate the Flow functionality. 
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_Interaction-Panel_executed.png" width="100%" />
+</figure>
+
+To start a chat with your Virtual Agent and test the Flow functionality, do the following:
+
+1. Open your Cognigy.AI interface with your Virtual Agent. 
+2. Select the Flow you want to test.
+3. Click  ![chat](../../../assets/icons/chat.svg) on the top right toolbar to open the **Interaction Panel**. The Interaction Panel will be opened on the right side of the panel.
+4. Click tab **TEST** to open the conversation window of the Interaction Panel.  
+5. In the **Text Message** field enter a message and press **ENTER** or click ![send-message](../../../assets/icons/send-message.svg) next to the field. The message you send is an input on behalf of a potential user and initiates a conversation with your Virtual Agent, who will reply to your input according to the created Flow. The conversation will be displayed on the Interaction Panel screen. 
+
+When interacting with the Agent in a potential user conversation you can check the Flow construction, if it fits your intended task properties. The execution path of your conversation is indicated by a highlighted green path in your Flow Chart so that you can understand the logical system decisions at any step and follow the path. 
+
+For more information, read the [Interaction panel](../../../ai/tools/interaction-panel/interaction-panel.md) documentation. 
+
+
+### Flow Actions
+
+To manage Flows in different use cases for your Agent, do the following:
+
+1. Open Cognigy.AI and select the Virtual Agent on the left side of the UI. 
+2. Go to **Build** > **Flows** to see your available Flows for the selected Agent.
+3. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Flow you want to delete. A selection menu appears.
+4. Select one of the following options, depending on the intended action you need:
+
+     - **Edit** - You can change the name and the description for the selected Flow.
+     - **Delete** - when selected you are prompted to confirm the deletion of the selected Flow.  
+     - **Copy Reference ID** - Every item in Cognigy.AI has a unique ID. Depending on the task you need to copy the Reference ID. For example, you want to realize [API calls](../../../ai/developer-guides/using-api.md) in a multiple Flows environment. In that case you need to specify the reference ID for every Flow to use the API in that Flow.    
+     - **Export as Package** - [Packages](../../../ai/resources/manage/packages.md) allow the export and import of individual resources, such as Flows or Lexicons, for the purpose of sharing these assets with other teams. 
+     - **Clone** - A Clone will be created, indicated by a red dot and an increasing clone number. You have two more options for Clones: 
+          1. **Build Model** -  
+          2. **Quick Build** - 
 
 
 ## Flow Nodes
@@ -62,7 +123,7 @@ In some cases there are **multiple Entry Points.** This can be the case if an Op
 
 In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
 
-Refer to [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
+Refer to [NLU Overview](../../../ai/nlu/nlu-overview/overview.md) to learn more.
 
 ## Settings
 
@@ -84,12 +145,24 @@ Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-over
 
 ### Switching to different Flows
 
-With Cognigy.AI 4.10.0 switching between Flows with different settings and different Intents has been improved as follows:
+Cognigy.AI provides easy switching between different Flows.
 
-- When you are in the **NLU tab** of Flow A and you switch to Flow B you will still be in the NLU tab.
-- When you are in the **Settings tab** of Flow A and you switch to Flow B you will still be in the Settings tab.
+- When you are in the **Chart** tab of Flow A and you switch to Flow B, you will still be in the Chart tab.
+- When you are in the **NLU** tab of Flow A and you switch to Flow B you will still be in the NLU tab.
+- When you are in the **Settings** tab of Flow A and you switch to Flow B you will still be in the Settings tab.
 
 
 ## Generative AI
 
+Generative AI is a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
+Cognigy.AI integrates with the Generative AI providers that allow text generation based on user input. That involves utilizing [Large Language Models (LLMs)](../../../ai/resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
+**Large Language Models (LLMs)** are a specific type of Generative AI model that is able to generate human-like text based on the input and context provided. In the Cognigy.AI interface, LLMs generate human-like and personalized content for a Virtual Agent.
+To use Generative AI with LLM model in your project, creating a LLM model and access to aGenerative AI provider is required.
+
+For more information, read the [Large Language Models (LLMs)](../../../ai/resources/build/llm.md) documentation.
+
 To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, read the [Generative AI](../../generative-ai.md#generate-flows) documentation.
+
+## More information
+
+- [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md)

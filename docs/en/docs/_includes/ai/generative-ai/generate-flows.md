@@ -1,6 +1,6 @@
 Note that the generation of Flows for primary NLU languages besides German and English is not fully supported.
 
-To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, do the following:
+To use [Generative AI](../../generative-ai.md#generate-flows) technology for creating a new Flow with pre-configured Nodes based on your scenario, do the following:
 
 1. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
 2. Click **+ New Flow**.
@@ -11,7 +11,3 @@ To use Generative AI technology for creating a new Flow with pre-configured Node
 4. Generate the Flow by clicking **Create**.
 
 In the existing Flow, you can edit Nodes created based on your scenario. Generate new Intent sentences or responses for a chatbot.
-
-<figure>
-  <img class="image-center" src="https://docs.cognigy.com/ai/images\generating-flows.png" width="100%" />
-</figure>
