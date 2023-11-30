@@ -28,18 +28,6 @@ To download a report, follow these steps:
 
 The downloaded report file contains the complete chart dataset based on the filter settings. You can open the `.csv` file using applications such as Microsoft Excel or similar software.
 
-## Export Analytics Reports as CSV using API
-
-Cognigy.AI 4.10.0 provides the ability to export Analytics reports as CSV using an API. 
-
-This API ensures that a report returns not only the data displayed in a chart but also includes all intents. Additionally, the CSV export for a transcript is available.
-
-Cognigy Insights:
-
-- Can reply with Analytics reports as CSV data.
-- Can reply with transcript reports as CSV data.
-- Returns full data if no limit is provided for intents.
-
 ## More Information
 
 - [Cognigy Insights](cognigy-insights.md)

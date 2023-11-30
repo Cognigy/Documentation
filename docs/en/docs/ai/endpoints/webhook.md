@@ -1,17 +1,18 @@
 ---
- title: "Webhook" 
- slug: "webhook" 
- hidden: false 
+title: "Webhook" 
+slug: "webhook" 
+hidden: false 
 ---
+
 # Webhook
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c514dae-EP_webhook.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Webhook** by using our Webhook Endpoint integration.
+In Cognigy.AI, you can easily connect your resources to a Webhook using the Webhook Endpoint integration. This setup ensures quick communication by instantly sending information to a specified callback URL when it's ready. Connecting your Cognigy resources to this Webhook enables fast and smooth interactions, allowing for real-time updates and actions.
 
-A **Webhook** (sometimes called web callback or HTTP push API) provides information as soon as it is available, to the specified callback URL.
+If you use [AI Copilot for voice](../../ai-copilot/voice/voice-overview.md) with the Webhook Endpoint, you can switch to a specific [Voice Copilot](voice-copilot.md) Endpoint. This eliminates the need for a separate Code Node to create a webhook URL, as all the necessary logic is already included in the Voice Copilot Endpoint.
 
 ## Generic Endpoint Settings
 
