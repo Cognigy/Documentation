@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Next Action Tile"
 slug: "next-action-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Next Action Tile

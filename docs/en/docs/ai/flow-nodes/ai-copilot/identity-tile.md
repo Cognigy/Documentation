@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Identity Tile"
 slug: "identity-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Identity Tile

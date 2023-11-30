@@ -1,7 +1,7 @@
 ---
 title: "AI Copilot"
 slug: "overview"
-hidden: true
+hidden: false
 ---
 
 # AI Copilot Nodes
