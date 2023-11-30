@@ -63,7 +63,7 @@ Then, the human agent processes the payment or addresses any further user querie
 To empower your human agents to securely access user card data via PCI Vault, configure the following resources:
 
 - The Main Flow is created with a [Handover to Agent](../ai/tools/agent-handover.md) Node.
-- AI Copilot is configured in a separate Flow. The [Copilot: SecureForms Tile Node](../ai/flow-nodes/agent-assist/secure-forms-tile.md) must be added to this Flow.
+- AI Copilot is configured in a separate Flow. The [Copilot: SecureForms Tile Node](../ai/flow-nodes/ai-copilot/secure-forms-tile.md) must be added to this Flow.
 - Contact Center Integration is set up. For example, [Cognigy Live Agent](../live-agent/overview.md) is selected as a handover provider.
 - An Endpoint is created. It should include the Main Flow, Handover Provider, and the Flow for AI Copilot. We recommend using [Cognigy Webchat Widget](../ai/endpoints/webchat/webchat.md) for further testing of configuration in [Demo Webchat](../ai/endpoints/webchat/integrated-demo-page.md) mode.
 

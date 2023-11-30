@@ -7,7 +7,7 @@ hidden: true
 # Copilot: SecureForms Tile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/agent-assist/secure-forms.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/secure-forms.png" width="80%"/>
 </figure>
 
 ## Description
