@@ -14,7 +14,14 @@ hidden: false
 
 ## Description
 
-This Node is designed
+This Node is designed to provide potential answers to customer questions
+using responses based on the Large Language Model through Cognigy Knowledge AI.
+It will also offer article previews, source links, and disclaimers.
+
+Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../resources/build/llm.md#supported-models).
+
+To configure, you need two Nodes, one of which initiates the knowledge search process, and the second one executes it. Also, to prevent the content of other widgets from updating during the node's operation, you need to move the nodes under the child node IF.
+
 
 ## Settings
 
