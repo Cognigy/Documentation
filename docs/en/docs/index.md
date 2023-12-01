@@ -62,6 +62,15 @@
 
 <div class="card-container">
 
+  <a class="card-link" href="{{config.site_url}}ai-copilot/overview/">
+    <div class="card">
+      <img class="card-image" src="{{config.site_url}}assets/img/ai-copilot-blue.svg" alt="Cognigy Logo">
+      <div class="item-container">
+        <h3><b>AI Copilot</b></h3>
+      </div>
+    </div>
+  </a>
+
   <a class="card-link" href="{{config.site_url}}live-agent/overview/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">

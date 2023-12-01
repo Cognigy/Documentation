@@ -101,3 +101,41 @@ const result = xmljs.xml2json(xml, { compact: true, spaces: 4 });
 
 // result will now contain a JSON representation of the xml above
 ``` 
+
+## Text Cleaner
+<div class="divider"></div>
+
+### Usage
+---
+Within a Code Node, you can invoke the `getTextCleaner` function, which retrieves an instance of the [Text Cleaner](../../tools/text-cleaner.md) class. 
+This class provides access to various text-cleaning functions.
+
+**Parameters**
+
+| Parameter | Type   | Description                                                                |
+|-----------|--------|----------------------------------------------------------------------------|
+| locale    | string | The locale for which to instantiate the class. For example, 'de' or 'en'). |
+| options   | object | See below for the config options.                                          |
+
+
+**Config Options**
+
+```json
+{
+    // additional characters which won't be cleaned by cleanDisallowedSymbols
+    additionalAllowedCharacters: string[], 
+
+    // additional symbols which are replace (for example, "minus": "-")
+    additionalMappedSymbols: { [key: string]: string }, 
+
+    // additional phrases which are replaced
+    additionalSpecialPhrases: { [key: string]: string }, 
+
+    // additions to the phonetic alphabet (for example, "cognigy": "c")
+    additionalPhoneticAlphabet: { [key: string]: string } 
+}
+```
+
+**Returns**
+
+Instance of the Text Cleaner class.

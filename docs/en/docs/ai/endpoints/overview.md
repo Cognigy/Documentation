@@ -13,6 +13,7 @@ This connection can range from text-based conversation to a conversation on your
 <div class="divider"></div>
 
 Every Endpoint has the following features: 
+
 - it points to a single Locale of a single Flow of a single Snapshot
 - it can be disabled
 - customization of the [Data Protection & Analytics](data-protection-and-analytics.md) 
@@ -20,9 +21,9 @@ Every Endpoint has the following features:
 
 Selected Endpoints also have the option to customize the NLU that provides the Intent and Slot mapping for the agent.
 
-The [NLU Connectors](../resources/build/nlu-connectors.md) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU]({{config.site_url}}ai/nlu/external-nlu/no-nlu/) option can be selected to completely disable the intent and slot mapping for an endpoint. 
+The [NLU Connectors](../resources/build/nlu-connectors.md) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU](../nlu/external-nlu/no-nlu.md) option can be selected to completely disable the intent and slot mapping for an endpoint. 
 
-Additionally, there are Endpoint specific features and configuration options available.
+Additionally, there are Endpoint-specific features and configuration options available.
 
 ## Cognigy Endpoints
 
@@ -66,3 +67,5 @@ The following Endpoints provide integrations with third party products:
 - [Workplace by Facebook](workplace-by-fb.md)
 - [WhatsApp](whatsapp.md)
 - [8x8](8x8.md)
+- [Genesys](genesys.md)
+- [Voice Copilot](voice-copilot.md)

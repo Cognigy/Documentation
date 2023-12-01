@@ -30,7 +30,6 @@ If the endpoint does not support the selected output type, the system returns a 
 | Slack                  | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Sunshine Conversations | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Twilio                 | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Twilio Autopilot       | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Twilio SMS             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | AudioCodes             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |

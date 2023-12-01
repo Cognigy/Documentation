@@ -9,11 +9,11 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
 
-*Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. 
+*Speech Services* allow adding multiple Speech Vendors to the Voice Gateway. The full list of supported vendors is available in the [TTS and STT Vendors](../references/tts-and-stt-vendors.md) reference.
 
 To create a speech service, in the left-side menu, select Applications, then click **Add speech service** or **+**. Select available speech providers from the list. Get credentials from your provider and add them to the speech service provider settings.
 
-You can create more than one speech service using speech vendors form the [list](../references/tts-and-stt-vendors.md)
+You can create more than one speech service using speech vendors.
 
 If you need to create multiple speech services from the same vendor, use the **Lable** field to create a unique speech service.
 
@@ -45,3 +45,7 @@ you need to specify the provider name in the **Custom** parameter of the relevan
 such as [Set Session Config](../../ai/flow-nodes/vg/set-session-config.md),
 [Say](../../ai/flow-nodes/message/say.md#voice-gateway), [Question](../../ai/flow-nodes/message/question.md) or [Optional Question](../../ai/flow-nodes/message/optional-question.md),
 or [Session Speech Parameters Config](../../ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md).
+
+## More Information
+
+- [TTS and STT Vendors](../references/tts-and-stt-vendors.md)
