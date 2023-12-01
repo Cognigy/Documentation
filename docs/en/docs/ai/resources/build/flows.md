@@ -5,8 +5,6 @@
 ---
 # Flows 
 
-## Introduction
-
 **Flows** are an important concept within Cognigy.AI. They provide a visual representation of a potential dialog based on a **Flow** in a user-friendly interface. Virtual Agent projects in Cognigy.AI are realized by creating Flows.   
 Flows are build as a composition of individual Nodes with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
 
@@ -29,7 +27,6 @@ Elements of Flows:
 A Flow is represented visually with the help of a flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can select the Flow Nodes that offer the required functionality for your project. 
 Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path so that you can understand logical system decicisons at any step and follow the path. 
 
-
 ### Agent Management
 
 <figure>
@@ -37,10 +34,12 @@ Flows are executed from a **Start** Node to an **End** Node in a conversation an
 </figure>
 
 In the top left corner of the Flow Chart panel you will find the Agent specific indications as currently active Agent. 
-- To open the Agents dashboard, click the icon on the left side  next to the displayed Agent name.
-- To select another available Agent, click on the Agent name and select another Agent in the drop-down list. 
-- 
 
+- To open the [Agents dashboard](../../../ai/resources/agents/agents.md#agent-dashboard), click the icon on the left side  next to the displayed Agent name. The dasboard gives you specific information regarding your projects, involved project members, and an analytic chart. 
+- To switch to another available Agent, click on the current displayed Agent name and select the Agent you want to switch to in the drop-down list. 
+- To change the [location](#locale-settings), click on the current displayed location name on the right side next to the Agent name and select the location you want to switch to.
+
+For more information, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
 
 ### Agent Top Toolbar
 
@@ -62,7 +61,7 @@ For detailed information to each item, read the [Agent](../../../ai/resources/ag
 
 
 
-### Creating a Flow
+### Create a Flow
 
 !!! tip "How to create a new Flow"
     To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
