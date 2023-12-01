@@ -8,7 +8,7 @@ hidden: false
 
 In this getting started guide, you will learn how to configure your AI Copilot Workspace.
 
-{! _includes/agent-assist/before-you-begin.md !}
+{! _includes/ai-copilot/before-you-begin.md !}
 
 ## Create Flows
 
@@ -48,7 +48,7 @@ To get your API key, follow these steps:
 
 To create your AI Copilot Config, follow these steps:
 
-1. Create an agent assist configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
+1. Create an AI Copilot configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
 2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
 3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
 4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
@@ -130,7 +130,7 @@ The widgets will populate their content once the customer starts the conversatio
 - [AI Copilot Configuration](configuration.md)
 - [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
 - [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](/voice-agent-assist/voice-overview.md)
+- [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)
 - [Integration with Contact Centers](contact-center-integration.md)
 

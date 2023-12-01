@@ -8,7 +8,7 @@ hidden: false
 
 AI Copilot is supported by all handover providers.
 
-{! _includes/agent-assist/genesys-note.md !}
+{! _includes/ai-copilot/genesys-note.md !}
 
 To embed the workspace into Genesys, create a script in Genesys and add an iFrame to it.
 
