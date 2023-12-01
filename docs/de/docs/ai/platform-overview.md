@@ -1,12 +1,12 @@
 ---
- title: "Platform Overview" 
- slug: "platform-overview" 
- hidden: false 
+ Titel: "Plattform-Übersicht" 
+ Slug: "Plattform-Übersicht" 
+ ausgeblendet: false 
 ---
-# Platform Overview
+# Plattform-Übersicht
 
-Cognigy.AI was developed to overcome many of the challenges in building conversational AIs. One of the unique aspects of the platform is bundling conversational AI-related resources in a user-friendly interface.
+Cognigy.AI wurde entwickelt, um viele der Herausforderungen beim Aufbau von Konversations-KIs zu meistern. Einer der einzigartigen Aspekte der Plattform ist die Bündelung von Conversational AI-bezogenen Ressourcen in einer benutzerfreundlichen Oberfläche.
 
-An overview of some of the most important components can be found in the following diagram:
+Einen Überblick über einige der wichtigsten Komponenten finden Sie in der folgenden Grafik:
 
 <img src="{{config.site_url}}ai/resources/images/platform-overview-cognigy.png" width="100%" style="margin-bottom: 5px">
