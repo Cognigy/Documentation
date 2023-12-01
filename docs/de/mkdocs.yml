@@ -159,7 +159,7 @@ nav:
     - ai/flow-nodes/flow-nodes-overview.md
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
-    - Nachriten:
+    - Nachrichten:
       - ai/flow-nodes/message/message.md
       - ai/flow-nodes/message/say.md
       - ai/flow-nodes/message/question.md
