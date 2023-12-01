@@ -24,8 +24,8 @@ Elements of Flows:
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100.png" width="100%" />
 </figure>
 
-A Flow is represented visually with the help of a flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can select the Flow Nodes that offer the required functionality for your project. 
-Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path so that you can understand logical system decicisons at any step and follow the path. 
+A Flow is represented visually with the help of a Flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can add Flow Nodes that offer the required functionality for your project. 
+Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path, so that you can understand logical system decicisons at any step and follow the path. 
 
 ### Agent Management
 
@@ -59,6 +59,16 @@ For detailed information to each item, read the [Agent](../../../ai/resources/ag
   <img class="image-center" src="{{config.site_url}}ai/resources/images/chart-controls.png" width="80%" />
 </figure>
 
+When you create a Flow, the Chart panel provides several controls in the bottom left side: 
+
+| Control item                                                       | Description          |
+|  ---                                                               | ----                 |
+| zoom controls                                                      |  - zoom out / + zoom in: displayed size is related to 100% standard size|
+| ![flow-centralize](../../../assets/icons/flow-centralize.svg)      | The Flow chart will be moved on the screen and located in the way that the chart fits best to the available panel size.  |
+| ![magnifying-glass](../../../assets/icons/magnifying-glass.svg)    | Search: You can search for Nodes in the Flow | 
+| ![voice-preview](../../../assets/icons/voice-preview.svg)          | The [Voice Preview](../../../ai/tools/voice-preview.md) feature allows you to test how voice output sounds without executing the whole flow with a mock call.|
+| ![arrow-back](../../../assets/icons/arrow-back.svg)                | You can Undo the last step(s) by going backward in history: Update Chart Node. |
+| ![arrow-forward](../../../assets/icons/arrow-forward.svg)          | You can Redo the last step(s) by going forward in history: Update Chart Node. |
 
 
 ### Create a Flow
@@ -66,9 +76,32 @@ For detailed information to each item, read the [Agent](../../../ai/resources/ag
 !!! tip "How to create a new Flow"
     To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
 
-The most sophisticated way to create a Flow for your Virtual [Agent](https://docs.cognigy.com/ai/resources/agents/agents/) is to use [Generative AI](#generative-ai). 
+You can create two kinds of Flows:
+
+   - Flow without using Generative AI
+   - Flow using Generative AI
+
+#### Create Flow without using Generative AI
+
+When creating a new Agent in Cognigy.AI you do not need to enable the Generative AI option. You can also enable / disable the Generative AI option at any time for an existing Agent. When you consider that difference you can follow the Flow creation instruction in the following section.  
+
+
+#### Create Flow using Generative AI
+
+The most sophisticated way to create a Flow for your Virtual [Agent](https://docs.cognigy.com/ai/resources/agents/agents/) is to use Generative AI. 
 
 {! _includes/ai/generative-ai/generate-flows.md !}
+
+Generative AI is a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
+Cognigy.AI integrates with the Generative AI providers that allow text generation based on user input. That involves utilizing [Large Language Models (LLMs)](../../../ai/resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
+**Large Language Models (LLMs)** are a specific type of Generative AI model that is able to generate human-like text based on the input and context provided. In the Cognigy.AI interface, LLMs generate human-like and personalized content for a Virtual Agent.
+
+To use Generative AI with LLM model in your project, following prerequisits are required:
+
+- Creating a [Large Language Model (LLM)](../../../ai/resources/build/llm.md). 
+- Access to a Generative AI provider.
+
+To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, read the [Generative AI](../../generative-ai.md#generate-flows) documentation.
 
 ### Execute a Flow
 
@@ -102,35 +135,59 @@ To manage Flows in different use cases for your Agent, do the following:
      - **Copy Reference ID** - Every item in Cognigy.AI has a unique ID. Depending on the task you need to copy the Reference ID. For example, you want to realize [API calls](../../../ai/developer-guides/using-api.md) in a multiple Flows environment. In that case you need to specify the reference ID for every Flow to use the API in that Flow.    
      - **Export as Package** - [Packages](../../../ai/resources/manage/packages.md) allow the export and import of individual resources, such as Flows or Lexicons, for the purpose of sharing these assets with other teams. 
      - **Clone** - A Clone will be created, indicated by a red dot and an increasing clone number. You have two more options for Clones: 
-          1. **Build Model** -  
-          2. **Quick Build** - 
+          1. **Build Model** [^1]
+          2. **Quick Build** [^1] 
 
+[^1]: Clone options **Build Model** and **Quick Build** currently not in production.
 
 ### Flow Nodes
 
-**Flow Nodes** can be used to add interactivity to a flow. They can be added by clicking on the **+** icon in between two existing Nodes. There are many types of Nodes, ranging from **Question Nodes** to **Marketing Nodes**. 
+**Flow Nodes** can be used to add interactivity to a Flow. They can be added by clicking on the **+** icon in between two existing Nodes. Depending on the function Cognigy.AI provides many types of Nodes, ranging from **Basic Nodes** to **Advanced Nodes**. 
+
+The different Nodes are assigned to the following categories:
+
+     - Basic Nodes
+     - Message Nodes
+     - Logic Nodes
+     - Profile Nodes
+     - Service Nodes
+     - NLU Nodes
+
+To add a Node to your Flow, do the following:
+
+1. 
+
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="80%" />
 </figure>
 
-Head over to [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) for more information on the different types of **Nodes**.
+For more information, read the [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) documentation.
 
 ### Entry Points
 
 Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU](../../../ai/nlu/nlu-overview/overview.md) takes place and the NLU results are subsequently published to the [Input](../../../ai/tools/interaction-panel/input.md) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/620d8e2-nodes-start.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/start-node.png" width="80%" />
 </figure>
 
 The **Entry Point** can change depending on the state of the conversation. It is indicated by a green triangle, next to a particular flow and shows where the next [Input](../../../ai/tools/interaction-panel/input.md)  object (user input) would enter the flow. In case a Question Node has been triggered, the entry point will shift to that particular Node as can be seen in the following screenshot.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/9c4cb06-nodes-question.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/question-node_entry-point_moved.png" width="80%" />
 </figure>
 
 In some cases there are **multiple Entry Points.** This can be the case if an Optional Question was triggered or if a given **Intent Entrypoint** has been set explicitly.
+
+To set or unset an Entry point in your Flow explicitly, do the following:
+
+1. Open the Flow you want to edit in Cognigy.AI.
+2. Go to the Node where you want to set the Entry point explicitly, for example, a Say Node in a loop to be passed several times to avoid going back to the Start Node when it is not necessary for the task completion.
+3. Right-click on the Node. A drop-down menu appears. 
+4. Select one of the following options:
+     - **Set Entrypoint**. A green triangle icon next to the Node appears and indicates that the Entrypoint has been set at that step.
+     - **Unset Entrypoint**. Disables  a previous set Entrypoint at that step.  
 
 ## NLU 
 
@@ -141,6 +198,9 @@ Refer to [NLU Overview](../../../ai/nlu/nlu-overview/overview.md) to learn more.
 ## Settings
 
 Certain settings can be configured per Flow. 
+
+https://docs.cognigy.com/ai/resources/manage/manage/
+
 
 #### Flow Configuration
 Information about the Flow Configuration Settings can be found here: [Flow Settings](../../../ai/resources/manage/settings.md#general-flow-logic).
@@ -156,7 +216,10 @@ Activate this setting to inherit the [Intent](../../../ai/nlu/nlu-overview/ml-in
 
 <img src="{{config.site_url}}ai/images/locale-settings.png" width="100%" />
 
-### Switching to different Flows
+http://127.0.0.1:8000/ai/resources/manage/localization/
+
+
+### Switch to different Flow
 
 Cognigy.AI provides easy switching between different Flows.
 
