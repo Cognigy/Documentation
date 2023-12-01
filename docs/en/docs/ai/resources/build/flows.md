@@ -13,18 +13,14 @@ Flows are build as a composition of individual Nodes with different functionalit
 Elements of Flows:
 
 - [Flow Chart](#flow-chart)
+- [Agent Top Toolbar](#agent-toolbar)
 - [Flow Nodes](#flow-nodes)
 - [NLU](#nlu)
 - [Settings](#settings)
 - [Localization](#locale-settings)
-- [Agent Top Toolbar](#agent-toolbar)
-
 
 
 ## Flow Chart
-
-!!! tip "How to create a new Flow"
-    To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_100.png" width="100%" />
@@ -32,6 +28,18 @@ Elements of Flows:
 
 A Flow is represented visually with the help of a flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can select the Flow Nodes that offer the required functionality for your project. 
 Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path so that you can understand logical system decicisons at any step and follow the path. 
+
+
+### Agent Management
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/agent-controls.png" width="80%" />
+</figure>
+
+In the top left corner of the Flow Chart panel you will find the Agent specific indications as currently active Agent. 
+- To open the Agents dashboard, click the icon on the left side  next to the displayed Agent name.
+- To select another available Agent, click on the Agent name and select another Agent in the drop-down list. 
+- 
 
 
 ### Agent Top Toolbar
@@ -46,17 +54,26 @@ The Toolbar provides also tooltips to enhance navigation when hovering over an i
 
 For detailed information to each item, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
 
+### Chart Controls
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/chart-controls.png" width="80%" />
+</figure>
+
+
+
 ### Creating a Flow
 
+!!! tip "How to create a new Flow"
+    To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
 
-
-The most sophisticated way to create a Flow for your Virtual [Agent](https://docs.cognigy.com/ai/resources/agents/agents/) is to use [Generative AI](../../generative-ai.md#generate-flows). 
+The most sophisticated way to create a Flow for your Virtual [Agent](https://docs.cognigy.com/ai/resources/agents/agents/) is to use [Generative AI](#generative-ai). 
 
 {! _includes/ai/generative-ai/generate-flows.md !}
 
 ### Execute a Flow
 
-For testing issues the [Top Toolbar](../../../ai/resources/agents/agents.md#top-toolbar) on the top right side of Cognigy.AI interface provides the **Interaction Panel**. Using the Interaction Panel you can chat at any time with your Virtual Agent during the project development in order to evaluate the Flow functionality. 
+For testing issues the [Top Toolbar](../../../ai/resources/agents/agents.md#top-toolbar) on the top right side of Cognigy.AI interface provides the [Interaction panel](../../../ai/tools/interaction-panel/interaction-panel.md). Using the **Interaction Panel** you can chat at any time with your Virtual Agent during the project development in order to evaluate the Flow functionality. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Flow-example_Interaction-Panel_executed.png" width="100%" />
@@ -71,9 +88,6 @@ To start a chat with your Virtual Agent and test the Flow functionality, do the 
 5. In the **Text Message** field enter a message and press **ENTER** or click ![send-message](../../../assets/icons/send-message.svg) next to the field. The message you send is an input on behalf of a potential user and initiates a conversation with your Virtual Agent, who will reply to your input according to the created Flow. The conversation will be displayed on the Interaction Panel screen. 
 
 When interacting with the Agent in a potential user conversation you can check the Flow construction, if it fits your intended task properties. The execution path of your conversation is indicated by a highlighted green path in your Flow Chart so that you can understand the logical system decisions at any step and follow the path. 
-
-For more information, read the [Interaction panel](../../../ai/tools/interaction-panel/interaction-panel.md) documentation. 
-
 
 ### Flow Actions
 
@@ -93,7 +107,7 @@ To manage Flows in different use cases for your Agent, do the following:
           2. **Quick Build** - 
 
 
-## Flow Nodes
+### Flow Nodes
 
 **Flow Nodes** can be used to add interactivity to a flow. They can be added by clicking on the **+** icon in between two existing Nodes. There are many types of Nodes, ranging from **Question Nodes** to **Marketing Nodes**. 
 
@@ -101,17 +115,17 @@ To manage Flows in different use cases for your Agent, do the following:
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="80%" />
 </figure>
 
-Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) for more information on the different types of **Nodes**.
+Head over to [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) for more information on the different types of **Nodes**.
 
-## Entry Points
+### Entry Points
 
-Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) takes place and the NLU results are subsequently published to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
+Flow execution typically starts at the top with the green **Start Node**. This is where the [NLU](../../../ai/nlu/nlu-overview/overview.md) takes place and the NLU results are subsequently published to the [Input](../../../ai/tools/interaction-panel/input.md) object.  A flow is triggered with each new input and starts at the **Start Node** unless specified differently.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/620d8e2-nodes-start.jpg" width="100%" />
 </figure>
 
-The **Entry Point** can change depending on the state of the conversation. It is indicated by a green triangle, next to a particular flow and shows where the next [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object (user input) would enter the flow. In case a Question Node has been triggered, the entry point will shift to that particular Node as can be seen in the following screenshot.
+The **Entry Point** can change depending on the state of the conversation. It is indicated by a green triangle, next to a particular flow and shows where the next [Input](../../../ai/tools/interaction-panel/input.md)  object (user input) would enter the flow. In case a Question Node has been triggered, the entry point will shift to that particular Node as can be seen in the following screenshot.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/9c4cb06-nodes-question.jpg" width="100%" />
@@ -130,16 +144,16 @@ Refer to [NLU Overview](../../../ai/nlu/nlu-overview/overview.md) to learn more.
 Certain settings can be configured per Flow. 
 
 #### Flow Configuration
-Information about the Flow Configuration Settings can be found here: [Flow Settings]({{config.site_url}}ai/resources/manage/settings/#general-flow-logic).
+Information about the Flow Configuration Settings can be found here: [Flow Settings](../../../ai/resources/manage/settings.md#general-flow-logic).
 
 #### Default Context
-Can be used as a starting point for the Flow's Context object. Head over to [Context]({{config.site_url}}ai/tools/interaction-panel/context/) for more information.
+Can be used as a starting point for the Flow's Context object. Head over to [Context](../../../ai/tools/interaction-panel/context.md) for more information.
 
 #### Locale Settings
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.32.0-blue.svg)]({{config.site_url}})
 
-Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) model from [fallback]({{config.site_url}}ai/resources/manage/localization/) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) on the Intents page and error badge on NLU tab are hidden, also the [Build Model]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) button in Settings, Chart and NLU is disabled.
+Activate this setting to inherit the [Intent](../../../ai/nlu/nlu-overview/ml-intents.md) model from [fallback](../../../ai/resources/manage/localization.md) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator](../../../ai/nlu/nlu-overview/ml-intents.md) on the Intents page and error badge on NLU tab are hidden, also the [Build Model](../../../ai/nlu/nlu-overview/ml-intents.md) button in Settings, Chart and NLU is disabled.
 
 <img src="{{config.site_url}}ai/images/locale-settings.png" width="100%" />
 
@@ -166,3 +180,5 @@ To use Generative AI technology for creating a new Flow with pre-configured Node
 ## More information
 
 - [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md)
+- [Interaction Panel](../../../ai/tools/interaction-panel/interaction-panel.md)
+- [Agent](../../../ai/resources/agents/agents.md#top-toolbar)
