@@ -1,146 +1,112 @@
 ---
- title: "General Node Usage" 
- slug: "node-usage" 
- hidden: false 
+ Titel: "Allgemeine Knotenverwendung" 
+ slug: "Knoten-Nutzung" 
+ ausgeblendet: false 
 ---
-# General Node Usage
+# Allgemeine Knotennutzung
 
-Flow Nodes can be used to add interactivity to a Flow. When combined in a certain way, they can help create dynamic interactive conversations. There are many types of Nodes, ranging from Basic to Advanced.
+Flow-Knoten können verwendet werden, um einem Flow Interaktivität hinzuzufügen. Wenn sie auf eine bestimmte Weise kombiniert werden, können sie dazu beitragen, dynamische, interaktive Gespräche zu führen. Es gibt viele Arten von Nodes, von Basic bis Advanced.
 
-## Create a Node
-<div class="divider"></div>
-
-Nodes can be created by clicking on the + icon in a [Flow](../resources/build/flows.md), after which the Node selection menu appears.
+## Einen Knoten erstellen<div class="divider"></div>Knoten können durch Klicken auf das +-Symbol in einem [Flow](.. /resources/build/flows.md), woraufhin das Knotenauswahlmenü angezeigt wird.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-Switch to the [Extensions](../resources/manage/extensions.md) tab to install Nodes from Extensions or click the Extension button in the corner to install new Extensions from the [Extension Marketplace](../resources/manage/extensions.md#extension-marketplace).
+Wechseln Sie zu den [Erweiterungen](.. /resources/manage/extensions.md), um Knoten aus Erweiterungen zu installieren, oder klicken Sie auf die Schaltfläche Erweiterung in der Ecke, um neue Erweiterungen aus dem [Extension Marketplace](.. /resources/manage/extensions.md#extension-marketplace).
 
-A Node can be copied by right-clicking it and pasted by right-clicking on a **+** section in the [Flow](../resources/build/flows.md). 
+Ein Node kann kopiert werden, indem Sie mit der rechten Maustaste darauf klicken, und eingefügt werden, indem Sie mit der rechten Maustaste auf einen **+**-Abschnitt im [Flow](.. /resources/build/flows.md). 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c032451-node-copy-paste.jpg" width="100%" />
 </figure>
 
-## Remove a Node
-<div class="divider"></div>
-
-To remove a Node, you can either delete or cut it. If you choose to cut the Node, you can paste it at the location of your choice. If you delete it, it is gone but can be restored by reverting the change. Removing a Node also removes all of its child Nodes.
+## Einen Knoten entfernen<div class="divider"></div>Um einen Knoten zu entfernen, können Sie ihn entweder löschen oder ausschneiden. Wenn Sie den Knoten ausschneiden möchten, können Sie ihn an der gewünschten Stelle einfügen. Wenn Sie sie löschen, ist sie verschwunden, kann aber wiederhergestellt werden, indem Sie die Änderung rückgängig machen. Wenn Sie einen Knoten entfernen, werden auch alle untergeordneten Knoten entfernt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9fdb2b4-node-cut.jpg" width="100%" />
 </figure>
 
-!!! note "Flow Editor Hotkeys"
-    For a full list of flow editor keyboard shortcuts, see the [Hotkeys Page]({{config.site_url}}ai/tools/hotkeys/).
+!!! Hinweis "Flow-Editor-Hotkeys"
+    Eine vollständige Liste der Tastaturkürzel für den Flow-Editor finden Sie auf der [Hotkeys-Seite]({{config.site_url}}ai/tools/hotkeys/).
 
-## Copy a Node
-<div class="divider"></div>
-
-You can copy a Node with the corresponding menu option. This also copies all child Nodes (e.g. all the Case and Default Nodes and their children, if you copy a Lookup Node).
+## Kopieren eines Knotens<div class="divider"></div>Sie können einen Knoten mit dem entsprechenden Menüpunkt kopieren. Dadurch werden auch alle untergeordneten Knoten kopiert (z. B. alle Fall- und Standardknoten und deren untergeordnete Knoten, wenn Sie einen Nachschlageknoten kopieren).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c032451-node-copy-paste.jpg" width="100%" />
 </figure>
 
-!!! note "Drag & Drop"
-    The flow editor supports drag and drop within the flow editor. To copy a node, simply hold the **alt** key while dropping the node to the required location.
+!!! Hinweis "Drag & Drop"
+    Der Flow-Editor unterstützt Drag & Drop innerhalb des Flow-Editors. Um einen Knoten zu kopieren, halten Sie einfach die **Alt**-Taste gedrückt, während Sie den Knoten an der gewünschten Stelle ablegen.
 
-## Add Comment
-
-<div class="divider"></div>
-
-You can add additional information about Nodes in the Node Comment. To add a comment, open a Node by clicking on it and scroll down to the **Styling** section. Here you can add a comment.
+## Kommentar hinzufügen<div class="divider"></div>Sie können zusätzliche Informationen zu Knoten im Knotenkommentar hinzufügen. Um einen Kommentar hinzuzufügen, öffnen Sie einen Knoten, indem Sie darauf klicken, und scrollen Sie nach unten zum Abschnitt **Styling**. Hier können Sie einen Kommentar hinzufügen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e710f5e-styling.jpg" width="100%" />
 </figure>
 
-## Add Label
-
-<div class="divider"></div>
-
-Adding a Label replaces the bottom text line of a Node. This allows you to have a Node functionality summary that is directly visible in the Flow editor. You can change the Label by opening a Node and scrolling down to the **Styling** section.
+## Beschriftung hinzufügen<div class="divider"></div>Durch das Hinzufügen einer Beschriftung wird die untere Textzeile eines Knotens ersetzt. Auf diese Weise erhalten Sie eine Zusammenfassung der Knotenfunktionalität, die direkt im Flow-Editor angezeigt wird. Sie können die Beschriftung ändern, indem Sie einen Knoten öffnen und nach unten zum Abschnitt **Styling** scrollen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/e710f5e-styling.jpg" width="100%" />
 </figure>
 
-## Set Entrypoint
-
-<div class="divider"></div>
-
-Any flow node can be added as an entrypoint for the flow. This means that a [Go To Node]({{config.site_url}}ai/flow-nodes/logic/go-to/) or an [Execute Flow Node]({{config.site_url}}ai/flow-nodes/logic/execute-flow/) can be set to start directly at any node. The **Start Node** is the default entrypoint for the flow and both [Question Nodes]({{config.site_url}}ai/flow-nodes/message/question/) and [Optional Question Nodes]({{config.site_url}}ai/flow-nodes/message/optional-question/) will be automatically assigned as an optional entrypoint when they are added. 
+## Einstiegspunkt setzen<div class="divider"></div>Ein beliebiger Flow-Knoten kann als Einstiegspunkt für den Flow hinzugefügt werden. Das bedeutet, dass ein [Go To Node]({{config.site_url}}ai/flow-nodes/logic/go-to/) oder ein [Execute Flow Node]({{config.site_url}}ai/flow-nodes/logic/execute-flow/) so eingestellt werden kann, dass er direkt an einem beliebigen Knoten startet. Der **Startknoten** ist der Standardeinstiegspunkt für den Flow, und sowohl [Question Nodes]({{config.site_url}}ai/flow-nodes/message/question/) als auch [Optionale Frageknoten]({{config.site_url}}ai/flow-nodes/message/optionale-frage/) werden automatisch als optionaler Einstiegspunkt zugewiesen, wenn sie hinzugefügt werden. 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9d7d9bc-SetEntrypoint1.jpg" width="100%" />
 </figure>
 
-Any other node can be manually assigned as a flow entrypoint by opening the node editing menu and selecting the three dot menu from the top right hand corner. The option to "Set Entrypoint" can be selected which will add this node to the list of available entrypoints.
+Jeder andere Knoten kann manuell als Flow-Einstiegspunkt zugewiesen werden, indem Sie das Knotenbearbeitungsmenü öffnen und das Drei-Punkte-Menü in der oberen rechten Ecke auswählen. Die Option "Einstiegspunkt setzen" kann ausgewählt werden, wodurch dieser Knoten zur Liste der verfügbaren Einstiegspunkte hinzugefügt wird.
 
-!!! note "Naming Entrypoints"
-    It is helpful to define unique names for each entry point node using the [label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) feature. This means that users will be able to easily differentiate when selecting them from a list of options. For example, all Question nodes will be called "Question" unless the label is manually adjusted.
+!!! Hinweis "Benennung von Einstiegspunkten"
+    Es ist hilfreich, eindeutige Namen für jeden Einstiegspunktknoten mit der Funktion [label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) zu definieren. Dies bedeutet, dass Benutzer leicht unterscheiden können, wenn sie sie aus einer Liste von Optionen auswählen. Beispielsweise werden alle Frageknoten als "Frage" bezeichnet, es sei denn, die Beschriftung wird manuell angepasst.
 
-## Warning
+## Warnung<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.8.0-blue.svg)] ({{config.site_url}})
 
-<div class="divider"></div>
+Ab Version 4.8 wird eine Warnmeldung angezeigt, falls Ihr Flow mehr als 100 Knoten enthält:
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
-
-As of release v4.8 a warning message will be displayed in case your Flow includes more than 100 nodes:
-
-- If you create a flow including more than 100 nodes you will get a warning.
-- If you open an existing flow with more than 100 nodes you will get this warning.
-- The error should disappear if you remove some nodes and sink below 100.
-- You can disable the notification in your profile settings.
-
+- Wenn Sie einen Flow mit mehr als 100 Knoten erstellen, erhalten Sie eine Warnung.
+- Wenn Sie einen vorhandenen Flow mit mehr als 100 Knoten öffnen, erhalten Sie diese Warnung.
+- Der Fehler sollte verschwinden, wenn Sie einige Knoten entfernen und unter 100 sinken.
+- Sie können die Benachrichtigung in Ihren Profileinstellungen deaktivieren.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0faf93c-warning_more_than_100_nodes_in_Flow.svg" width="100%" />
-  <figcaption>Warning information - Nodes > 100</figcaption>
+  <figcaption>Warnhinweise - Knoten > 100</figcaption>
 </figure>
 
-## Node ID
+## Knoten-ID<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.10.0-blue.svg)] ({{config.site_url}})
 
-<div class="divider"></div>
+Ab Version Cognigy.AI (4.10.0) stellt Cognigy.AI Knoten-IDs in jedem Flow bereit. Wenn Sie durch eine solche URL navigieren, wird die Seitenleiste geöffnet und im Viewport zum Node gescrollt.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+Ausführlich:
 
-As of release Cognigy.AI (4.10.0), Cognigy.AI provides Node IDs in every Flow. Navigating such URL opens the sidebar and scrolls the viewport to the Node.
+- Wenn Sie auf einen Knoten im Flussdiagramm klicken, wird seine ID zur URL hinzugefügt.
+- Wenn Sie die Seitenleiste schließen, wird die ID aus der URL entfernt.
+- Wenn Sie die Seite öffnen, die die Node-ID enthält, wird die Seitenleiste geöffnet und das Viewport auf dem Node zentriert.
 
-In detail:
+## Flow aus Branch erstellen<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.26.0-blue.svg)] ({{config.site_url}})
 
-- Clicking on a Node in the Flow Chart adds its ID to the URL.
-- Closing the sidebar removes the ID from the URL.
-- Opening the page containing Node ID will open the sidebar and center the viewport on the Node.
-
-## Create Flow from Branch
-
-<div class="divider"></div>
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
-
-It is possible to create a new Flow from a Node's execution branch.  Any Node that can create a *Child Flow* will have the option **Create Flow from Branch** within its context menu. 
+Es ist möglich, einen neuen Flow aus dem Ausführungszweig eines Knotens zu erstellen.  Jeder Node, der einen *Child Flow* erstellen kann, hat die Option **Create Flow from Branch** in seinem Kontextmenü. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children.png" width="100%" />
-  <figcaption>Create flow from branch option.</figcaption>
+  <figcaption>Option "Flow aus Verzweigung erstellen".</figcaption>
 </figure>
 
-Clicking on **Create Flow from Branch** option will open a dialog box that prompts you to enter the name for your new Flow.
+Wenn Sie auf die Option **Flow aus Branch erstellen** klicken, wird ein Dialogfeld geöffnet, in dem Sie aufgefordert werden, den Namen für Ihren neuen Flow einzugeben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/create-flow-from-children-2.png" width="100%" />
-  <figcaption>Child Flow from Branch name</figcaption>
+  <figcaption>Untergeordneter Flow aus Branch-Name</figcaption>
 </figure>
 
-Providing a valid Flow name and clicking the *Create* button in the dialog will do the following:
+Wenn Sie einen gültigen Flow-Namen angeben und im Dialogfeld auf die Schaltfläche *Erstellen* klicken, wird Folgendes ausgeführt:
 
-  * Create a new Executed Flow containing all the Nodes from the selected branch.
+* Erstellen Sie einen neuen ausgeführten Flow, der alle Knoten aus dem ausgewählten Zweig enthält.
 
-  * Replace all Nodes from the selected branch, with an **Execute Flow Node** from which the created Flow will be executed.
+* Ersetzen Sie alle Nodes aus dem ausgewählten Branch durch einen **Execute Flow Node**, von dem aus der erstellte Flow ausgeführt wird.
 
-  * The Intents/Slots will not be parsed, and the Context will not be absorbed when executing the new Executed Flow.
+* Die Intents/Slots werden nicht geparst und der Kontext wird beim Ausführen des neuen ausgeführten Flows nicht absorbiert.
 
-  * Also, NLU configuration/settings/default Context etc. will not be copied to Executed Flow. Therefore, check and adjust the NLU section of the created Flow, as necessary.
+* Außerdem werden NLU-Konfigurationen/Einstellungen/Standardkontext usw. nicht in den ausgeführten Flow kopiert. Überprüfen Sie daher den NLU-Abschnitt des erstellten Flows und passen Sie ihn bei Bedarf an.

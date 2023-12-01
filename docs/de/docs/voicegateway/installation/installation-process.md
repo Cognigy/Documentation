@@ -1,14 +1,12 @@
 ---
-title: "Installation Process"
-slug: "installation-process"
-hidden: false
+Titel: "Installationsprozess"
+slug: "Installations-Prozess"
+ausgeblendet: false
 ---
 
-# Install Voice Gateway
+# Voice Gateway installieren
 
-In order to install Voice Gateway, get in touch with us via an email to <a href="mailto:support@cognigy.com?subject=Request to install Cognigy Voice Gateway">support@cognigy.com</a>.
-
-<!---
+Um Voice Gateway zu installieren, kontaktieren Sie uns per E-Mail an <a href="mailto:support@cognigy.com?subject=Request to install Cognigy Voice Gateway">support@cognigy.com</a>.<!---
 TODO: Update the Voice Gateway Helm Chart links (main page and readme) with the public GitHub Helm Chart repository once we have it.
 TODO: Voice Gateway Helm Chart is being refactored and only when is done the above comment will be fulfilled.
 -->

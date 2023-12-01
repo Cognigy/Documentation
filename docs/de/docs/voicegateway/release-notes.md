@@ -1,9 +1,9 @@
 ---
- title: "Release notes Voice Gateway" 
- slug: "release-notes-voice-gateway" 
- hidden: false 
+ title: "Versionshinweise Voice Gateway" 
+ Slug: "Release-Notes-Voice-Gateway" 
+ ausgeblendet: false 
 ---
 
-# Release Notes
+# Versionshinweise
 
-Starting with Cognigy 4.42, we have included Voice Gateway updates to the [central Release notes]({{config.site_url}}/release-notes/release-notes/) page.
+Beginnend mit Cognigy 4.42 haben wir Voice Gateway-Updates auf der Seite [zentrale Versionshinweise]({{config.site_url}}/release-notes/release-notes/) integriert.

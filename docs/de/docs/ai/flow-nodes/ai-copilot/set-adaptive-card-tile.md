@@ -1,35 +1,31 @@
 ---
-title: "Copilot: Adaptive Card Tile"
-slug: "set-adaptive-card-tile"
-hidden: true
+Titel: "Copilot: Adaptive Kartenkachel"
+Slug: "Adaptive-Karten-Kachel setzen"
+Ausgeblendet: Wahr
 ---
 
-# Copilot: Adaptive Card Tile
+# Copilot: Adaptive Kartenkachel
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/set-adaptive-card-tile.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Mit diesem Knoten können Sie adaptive Karten in Ihrem AI Copilot-Arbeitsbereich erstellen und anzeigen. Adaptive Karten können umfangreiche Inhalte und interaktive Elemente wie Bilder, Text, Schaltflächen und Formulare anzeigen. 
 
-This Node allows you to create and display adaptive cards in your AI Copilot Workspace. Adaptive cards can display rich content and interactive elements, such as images, text, buttons, and forms. 
+Der [Designer adaptiver Karten](https://adaptivecards.io/designer) kann Ihnen dabei helfen, eine adaptive Karte zu definieren. Kopieren Sie die JSON-Kartennutzlast und fügen Sie sie in das Formular ein.
 
-The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
+## Einstellungen 
 
-## Settings 
-
-| Parameter          | Type          | Description                                               |
+| Parameter | Typ | Beschreibung |
 |--------------------|---------------|-----------------------------------------------------------|
-| Tile ID            | CognigyScript | The ID that you created in the AI Copilot configuration.  |
-| Adaptive Card JSON | HTML          | The Adaptive Card JSON payload to render inside the tile. |
-| JSON Data          | JSON          | The Data to send to the IFrame as a postMessage event.    |
+| Kachel-ID | CognigyScript | Die ID, die Sie in der AI Copilot-Konfiguration erstellt haben.  |
+| JSON für adaptive Karten | HTML | Die JSON-Nutzlast der adaptiven Karte, die innerhalb der Kachel gerendert werden soll. |
+| JSON-Daten | JSON | Die Daten, die als postMessage-Ereignis an den IFrame gesendet werden sollen.    |
 
+## Mehr Informationen
 
-## More Information
-
-- [Copilot: HTML file](set-html-tile.md)
-- [Copilot: IFrame tile](set-iframe-tile.md)
-- [Copilot: Set Grid](set-grid.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Copilot: HTML-Datei](set-html-tile.md)
+- [Copilot: IFrame-Kachel](set-iframe-tile.md)
+- [Copilot: Raster einstellen](set-grid.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

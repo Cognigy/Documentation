@@ -1,29 +1,29 @@
 ---
-title: "Service" 
-slug: "service" 
-hidden: false 
+Titel: "Service" 
+Schnecke: "Service" 
+ausgeblendet: false 
 ---
 
-# Service
+# Dienstleistung
 
-Service Nodes are used to:
+Serviceknoten werden verwendet, um:
 
-- Serve as connectors to APIs and databases. They assist in tasks such as accessing your user database to enhance the customization of your Flow.
-- Help to operate Flows that include handover logic.
+- Dienen als Konnektoren zu APIs und Datenbanken. Sie helfen bei Aufgaben wie dem Zugriff auf Ihre Benutzerdatenbank, um die Anpassung Ihres Flows zu verbessern.
+- Helfen Sie bei der Bedienung von Flows, die eine Übergabelogik enthalten.
 
-You can use the following Service Nodes:
+Sie können die folgenden Serviceknoten verwenden:
 
-- [HTTP Request](http-request.md) 
+- [HTTP-Anforderung](http-request.md) 
 - [MongoDB](mongo-db.md):
-    - [Update Many](mongo-db.md#update-many)
-    - [Find One](mongo-db.md#find-one)
-    - [Insert](mongo-db.md#insert)
-    - [Remove](mongo-db.md#remove)
-    - [Find](mongo-db.md#find)
+    - [Viele aktualisieren](mongo-db.md#update-many)
+    - [Suchen Sie einen](mongo-db.md#find-one)
+    - [Einfügen](mongo-db.md#einfügen)
+    - [Entfernen](mongo-db.md#entfernen)
+    - [Suchen](mongo-db.md#suchen)
     - [Update One](mongo-db.md#update-one)
-    - [MongoDB Aggregate](mongo-db.md#mongodb-aggregate)
-- [My SQL](ms-sql.md):
-    - [Run Transaction](ms-sql.md#run-transaction)
-    - [Run SQL Query](ms-sql.md#run-query)
-    - [Run StoredProcedure](ms-sql.md#run-stored-procedure)
-- [Check Agent Availability](check-agent-availability.md) 
+    - [MongoDB-Aggregat](mongo-db.md#mongodb-aggregate)
+- [Mein SQL](ms-sql.md):
+    - [Transaktion ausführen](ms-sql.md#Transaktion ausführen)
+    - [SQL-Abfrage ausführen](ms-sql.md#run-query)
+    - [StoredProcedure ausführen](ms-sql.md#stored-procedure ausführen)
+- [Agentenverfügbarkeit prüfen](check-agent-availability.md) 

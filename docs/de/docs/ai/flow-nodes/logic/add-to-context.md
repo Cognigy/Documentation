@@ -1,27 +1,24 @@
 ---
- title: "Add To Context" 
- slug: "add-to-context" 
- hidden: false 
+ Titel: "Zum Kontext hinzufügen" 
+ slug: "Zum Kontext hinzufügen" 
+ ausgeblendet: false 
 ---
-# Add To Context
+# Zum Kontext hinzufügen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/add-to-context.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein **Add to Context Node** wird verwendet, um Informationen im Cognigy [Context](.. /.. /tools/interaction-panel/context.md), so dass es während der gesamten Sitzung für nachfolgende Benutzereingaben verwendet werden kann. 
 
-An **Add to Context Node** is used to store information in the Cognigy [Context](../../tools/interaction-panel/context.md), so that it can be used throughout the session on subsequent user inputs. 
-
-| Parameter | Type         | Description                                                                                             |
+| Parameter | Typ | Beschreibung |
 |-----------|--------------|---------------------------------------------------------------------------------------------------------|
-| Key       | Cognigy Text | The key where to store in the context. This can be a key nested with dot (e.g. my.first.key)            |
-| Value     | Cognigy Text | The value to store in the context.                                                                      |
-| Mode      | Select       | - Simple stores the value directly against the Key<br>- Array stores the value into an Array on the key |
+| Schlüssel | Cognigy Text | Der Schlüssel, wo im Kontext gespeichert werden soll. Dies kann ein mit Punkt verschachtelter Schlüssel sein (z. B. my.first.key) |
+| Wert | Cognigy Text | Der Wert, der im Kontext gespeichert werden soll.                                                                      |
+| Modus | Wählen Sie | - Einfach speichert den Wert direkt auf dem Schlüssel<br>- Array speichert den Wert in einem Array auf dem Schlüssel |
 
-!!! note "Storing an Object"
-    If you want to store an object in the context, use `.preserveType()` at the end in order to keep it an object. Example: `input.slots.city[0].preserveType()` would store the full slot object for the first found city entity in the context.
+!!! Hinweis "Speichern eines Objekts"
+    Wenn Sie ein Objekt im Kontext speichern möchten, verwenden Sie '.preserveType()' am Ende, um es als Objekt zu behalten. Beispiel: 'input.slots.city[0].preserveType()' würde das vollständige Slot-Objekt für die erste gefundene city-Entität im Kontext speichern.
 
-!!! note "Adding a value to an Array only contains unique values"
-    When adding a value to an array by using the addToContext Node, the value will not be added if the value already exists in the Array. If you need to add a value to an Array, no matter if the value already exists in the Array, then you can use the `.push()` function in a Code Node.
+!!! Hinweis "Das Hinzufügen eines Wertes zu einem Array enthält nur eindeutige Werte"
+    Wenn Sie einem Array mithilfe des addToContext-Knotens einen Wert hinzufügen, wird der Wert nicht hinzugefügt, wenn der Wert bereits im Array vorhanden ist. Wenn Sie einem Array einen Wert hinzufügen müssen, unabhängig davon, ob der Wert bereits im Array vorhanden ist, können Sie die Funktion '.push()' in einem Code-Node verwenden.

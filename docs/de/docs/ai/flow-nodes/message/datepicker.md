@@ -1,126 +1,120 @@
 ---
  title: "Datepicker" 
- slug: "datepicker" 
- hidden: false 
+ Schnecke: "Datepicker" 
+ ausgeblendet: false 
 ---
-# Datepicker
+# Datumsauswahl
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/datepicker.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-
-The Datepicker Node renders a **visual datepicker** to the user. It comes with many configurable options that are listed below.
+## Beschreibung<div class="divider"></div>Der Datepicker-Knoten rendert eine visuelle Datumsauswahl für den Benutzer. Es wird mit vielen konfigurierbaren Optionen geliefert, die unten aufgeführt sind.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
 </figure>
 
-!!! tip "Automatically Triggered by Question Nodes"
-    The Datepicker is automatically triggered whenever a Question Node with the **Date** type is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
+!!! Tipp "Automatisch ausgelöst durch Frageknoten"
+    Der Datepicker wird automatisch ausgelöst, wenn ein Frageknoten vom Typ **Datum** verwendet wird. Dies bedeutet, dass Sie den Datepicker-Knoten selbst nur selten explizit hinzufügen müssen. 
 
-## Properties
-<div class="divider"></div>
+## Eigenschaften<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6c556ea-datepicker-options1.jpg" width="100%" />
-</figure>
+</figure>### Titel der Datumsauswahl
+Dies ist der Titel, der in der Kopfzeile des Datepicker-Widgets angezeigt wird (wenn es geöffnet wird).
+**Ein Beispiel wäre**: *"Buchungsdatum & -uhrzeit"* (wie im Screenshot oben zu sehen). 
+### Gebietsschema
+Ein Dropdownmenü, mit dem Sie ein Gebietsschema für die Datumsauswahl auswählen können. Dadurch wird das Datumsformat automatisch in der lokalisierten Sprache ausgegeben.
+### Modus
+Der Modus bestimmt das Verhalten der Datumsauswahl. 
 
-### Datepicker Title
-This is the title that will be shown in the header of the datepicker widget (when opened).
-**An example would be**: *"Booking date & time"* (as can be seen in the screenshot above). 
-### Locale
-A drop-down menu that lets you select a locale for the Datepicker. This automatically outputs the date format in the localized language.
-### Mode
-Mode determines the behavior of the Datepicker. 
-
-  * **Single**: This means that a single date can be selected. 
-  * **Multiple**: This lets the user select multiple dates.
-  * **Range**: This lets the user select a date range. 
+* **Einzelne**: Dies bedeutet, dass ein einzelnes Datum ausgewählt werden kann. 
+  * **Mehrere**: Hiermit kann der Benutzer mehrere Daten auswählen.
+  * **Bereich**: Hier kann der Benutzer einen Datumsbereich auswählen. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ffaba00-date-range.jpg" width="100%" />
 </figure>
 
-### Button Texts
+### Button-Texte
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ee3c577-datepicker-buttontext.jpg" width="100%" />
 </figure>
 
-#### Open Datepicker Button Text
-This is the text that is shown in the button that is rendered when the Datepicker is triggered. By default, is says: **pick date**. 
+#### Text der Datumsauswahl öffnen
+Dies ist der Text, der in der Schaltfläche angezeigt wird, die gerendert wird, wenn die Datumsauswahl ausgelöst wird. Standardmäßig heißt es: **Datum auswählen**. 
 
-#### Cancel Button Label
-This is the text that is shown on the "cancel" button that is rendered when the Datepicker has been opened. The default is **cancel**.
+#### Beschriftung der Schaltfläche abbrechen
+Dies ist der Text, der auf der Schaltfläche "Abbrechen" angezeigt wird, die gerendert wird, wenn die Datumsauswahl geöffnet wurde. Der Standardwert ist **Abbrechen**.
 
-#### Submit Button Label
-This is the text that is shown on the "submit" button that is rendered when the Datepicker has been opened. The default is **submit**.
+#### Beschriftung der Schaltfläche "Senden"
+Dies ist der Text, der auf der Schaltfläche "Senden" angezeigt wird, die gerendert wird, wenn die Datumsauswahl geöffnet wurde. Der Standardwert ist **submit**.
 
-### Date settings
-The Datepicker allows you to pricisely configure which dates can be selected. 
+### Datumseinstellungen
+Mit dem Datepicker können Sie genau konfigurieren, welche Daten ausgewählt werden können. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2573a7e-datepicker-datesettings.jpg" width="100%" />
 </figure>
 
-#### Default Date
-This is the default selected date. If not filled out, it will be the current date. 
+#### Standarddatum
+Dies ist das standardmäßig ausgewählte Datum. Wenn es nicht ausgefüllt ist, ist es das aktuelle Datum. 
 
-#### Minimum Date
-This is the minimum date. If not filled out, it will not have a minimum date. 
+#### Mindestdatum
+Dies ist das Mindestdatum. Wenn es nicht ausgefüllt ist, hat es kein Mindestdatum. 
 
-#### Maxium Date
-This is the maximum selectable date. If not filled out, it will not have a maximum date.
+#### Maxium Datum
+Dies ist das maximal auswählbare Datum. Wenn es nicht ausgefüllt ist, hat es kein maximales Datum.
 
-### Time settings
-The Datepicker allows you to configure whether times can be selected. If so, it also allows you to configure the default times in detail. 
+### Zeiteinstellungen
+Mit dem Datepicker können Sie konfigurieren, ob Zeiten ausgewählt werden können. Wenn dies der Fall ist, können Sie auch die Standardzeiten im Detail konfigurieren. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8204cac-datepicker-timesettings.jpg" width="100%" />
 </figure>
 
-#### Allow Date & Time
-Determines whether the Datepicker should additionally show selectable time.
+#### Datum und Uhrzeit zulassen
+Legt fest, ob der Datepicker zusätzlich auswählbare Zeit anzeigen soll.
 
-#### Use 24-Hour Format
-If selected, the Datepicker will display times in 24-hour format (for example, 20:00h instead of 8:00PM).
+#### 24-Stunden-Format verwenden
+Wenn diese Option ausgewählt ist, zeigt die Datumsauswahl die Uhrzeiten im 24-Stunden-Format an (z. B. 20:00 Uhr statt 20:00 Uhr).
 
-#### Default Hour to show
-Configurable default hour.
+#### Standardmäßig anzuzeigende Stunde
+Konfigurierbare Standardstunde.
 
-#### Default minute to show
-Configurable default minute.
+#### Standardminute für die Anzeige
+Konfigurierbare Standardminute.
 
-#### Step to increase hours
-The increment step size for hours. The default is 1 hour.
+#### Schritt zur Erhöhung der Arbeitszeit
+Die Schrittweite des Inkrements für Stunden. Der Standardwert ist 1 Stunde.
 
-#### Step to increase minutes
-The incremental increase in minutes, when the minute selection is used. The default is 5 minutes.
+#### Schritt zum Erhöhen der Minuten
+Die inkrementelle Erhöhung in Minuten, wenn die Minutenauswahl verwendet wird. Der Standardwert ist 5 Minuten.
 
-#### Show seconds in picker
-Enable this setting to show seconds in the Datepicker options.
+#### Sekunden in der Auswahl anzeigen
+Aktivieren Sie diese Einstellung, um Sekunden in den Datepicker-Optionen anzuzeigen.
 
-### Enable/Disable Dates
-The Datepicker can be configured to exclude (or include) specific dates. This is useful in use cases where specific dates should be unavailable - for example, a booking or reservation bot.
+### Datum aktivieren/deaktivieren
+Die Datumsauswahl kann so konfiguriert werden, dass bestimmte Datumsangaben ausgeschlossen (oder eingeschlossen) werden. Dies ist nützlich in Anwendungsfällen, in denen bestimmte Daten nicht verfügbar sein sollen - z. B. ein Buchungs- oder Reservierungsbot.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c17af07-datepicker-enable-disable.jpg" width="100%" />
 </figure>
 
-#### Enable specific dates
-This setting allows you to enter a range of dates that should be enabled. If configured, all other dates will automatically be disabled. In addition, you can define a function that is used to enable dates - for example only weekdays.
+#### Bestimmte Daten aktivieren
+Mit dieser Einstellung können Sie einen Datumsbereich eingeben, der aktiviert werden soll. Wenn konfiguriert, werden alle anderen Daten automatisch deaktiviert. Darüber hinaus können Sie eine Funktion definieren, mit der Datumsangaben aktiviert werden - z.B. nur Wochentage.
 
-Enable dates by function - example:
-```ts
-(date: Date): boolean => {
-    /* The function takes in a Date object, and should return a boolean value.
-    * If the function returns true, the date will be enabled.
-    * Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6	 
+Datumsangaben nach Funktion aktivieren - Beispiel:
+'''ts
+(Datum: Datum): boolean => {
+    /* Die Funktion nimmt ein Date-Objekt auf und sollte einen booleschen Wert zurückgeben.
+    * Wenn die Funktion true zurückgibt, wird das Datum aktiviert.
+    * Sonntag = 0, Montag = 1, Dienstag = 2, Mittwoch = 3, Donnerstag = 4, Freitag = 5, Samstag = 6	 
     */ 	
-    // This will enable Monday to Friday
-    return (date.getDay() > 0 && date.getDay() < 6);
+    Dies ermöglicht Montag bis Freitag
+    return (date.getDay() > 0 & date.getDay() < 6);
 };
 ```
 
@@ -130,31 +124,30 @@ This setting allows you to enter a range of dates that should be disabled. If co
 Disable dates by function - example:
 ```ts
 (date: Date): boolean => {
-    /* The function takes in a Date object, and should return a boolean value.
-    * If the function returns true, the date will be disabled.
-    * Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6	 
+    /* Die Funktion nimmt ein Date-Objekt auf und sollte einen booleschen Wert zurückgeben.
+    * Wenn die Funktion true zurückgibt, wird das Datum deaktiviert.
+    * Sonntag = 0, Montag = 1, Dienstag = 2, Mittwoch = 3, Donnerstag = 4, Freitag = 5, Samstag = 6	 
     */ 	
-    // This will disable every Sunday and Saturday
+    Dies wird jeden Sonntag und Samstag deaktiviert
     return (date.getDay() === 0 || date.getDay() === 6);
 };
-```
+'''
 
-
-### Advanced Options
-The Datepicker comes with four advanced options:
+### Erweiterte Optionen
+Der Datepicker verfügt über vier erweiterte Optionen:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7f9dcfe-advanced-options.jpg" width="100%" />
 </figure>
 
-#### Date Format
-This field can be used to output a specific date format, like: "Y-m-d".
+#### Datumsformat
+Dieses Feld kann verwendet werden, um ein bestimmtes Datumsformat auszugeben, wie z.B.: "Y-m-d".
 
-#### Hide Calendar
-When enabled, the Datepicker will not display a calendar.
+#### Kalender ausblenden
+Wenn diese Option aktiviert ist, zeigt die Datumsauswahl keinen Kalender an.
 
-#### Show week numbers
-When enabled, the week numbers are shown in the calendar.
+#### Wochennummern anzeigen
+Wenn diese Option aktiviert ist, werden die Wochennummern im Kalender angezeigt.
 
-#### Hide Datepicker Quick Reply
-This hides the quick reply in the Datepicker.
+#### Datepicker-Schnellantwort ausblenden
+Dadurch wird die Schnellantwort in der Datumsauswahl ausgeblendet.

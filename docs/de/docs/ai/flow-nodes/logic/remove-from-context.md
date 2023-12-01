@@ -1,21 +1,18 @@
 ---
-title: "Remove From Context" 
-slug: "remove-from-context" 
-hidden: false 
+title: "Aus dem Kontext entfernen" 
+slug: "Aus dem Kontext entfernen" 
+ausgeblendet: false 
 ---
-# Remove From Context
+# Aus dem Kontext entfernen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/remove-from-context.png" width="80%"/>
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Node wird verwendet, um Informationen aus dem Cognigy [Context](.. /.. /tools/interaction-panel/context.md). 
 
-This Node is used to remove information from the Cognigy [Context](../../tools/interaction-panel/context.md). 
-
-| Parameter | Type         | Description                                                                                              |
+| Parameter | Typ | Beschreibung |
 |-----------|--------------|----------------------------------------------------------------------------------------------------------|
-| Key       | Cognigy Text | The key you want to remove. This can be a key nested with dot, for example, `my.first.key`.              |
-| Value     | Cognigy Text | The value to remove from the array if `Mode = Array` is chosen.                                          |
-| Mode      | Select       | - Simple removes the key completely<br>- Array removes the value from the array stored at `context.key`. |
+| Schlüssel | Cognigy Text | Der Schlüssel, den Sie entfernen möchten. Dabei kann es sich um einen Schlüssel handeln, der mit einem Punkt verschachtelt ist, z. B. "my.first.key".              |
+| Wert | Cognigy Text | Der Wert, der aus dem Array entfernt werden soll, wenn 'Mode = Array' ausgewählt wird.                                          |
+| Modus | Wählen Sie | - Einfach entfernt den Schlüssel vollständig<br>- Array entfernt den Wert aus dem Array, das in 'context.key' gespeichert ist. |

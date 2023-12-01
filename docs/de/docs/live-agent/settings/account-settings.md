@@ -1,121 +1,121 @@
 ---
-title: "Account Settings"
-slug: "account-settings" 
-description: "Account Settings in Cognigy Live Agent refer to the configuration options that allow administrators to customize and manage global settings for the Live Agent instance."
-hidden: false 
+Titel: "Kontoeinstellungen"
+Slug: "Konto-Einstellungen" 
+description: "Die Kontoeinstellungen in Cognigy Live Agent beziehen sich auf die Konfigurationsoptionen, mit denen Administratoren die globalen Einstellungen für die Live Agent-Instanz anpassen und verwalten können."
+ausgeblendet: false 
 ---
-# Account Settings
+# Konto-Einstellungen
 
-_Account Settings_ allow you to modify various general settings for Live Agent installation, including the account name, language preferences, conversation logic, email and push notifications.
+_Account Settings_ ermöglichen es Ihnen, verschiedene allgemeine Einstellungen für die Installation von Live Agent zu ändern, einschließlich des Kontonamens, der Spracheinstellungen, der Konversationslogik, der E-Mail- und Push-Benachrichtigungen.
 
-To access the Account Settings, navigate to the left-side menu of Live Agent and click **Settings**, then select **Account Settings**.
+Um auf die Kontoeinstellungen zuzugreifen, navigieren Sie zum Menü auf der linken Seite von Live Agent und klicken Sie auf **Einstellungen** und wählen Sie dann **Kontoeinstellungen** aus.
 
 ## Name
 
-The name is the name of your account. When a user exists in multiple accounts, the name will be displayed to know in which account the user is logged in.
+Der Name ist der Name Ihres Kontos. Wenn ein Benutzer in mehreren Konten vorhanden ist, wird der Name angezeigt, um zu wissen, in welchem Konto der Benutzer angemeldet ist.
 
-## Language
+## Sprache
 
-The language is the language of your account. All available languages will be displayed in the dropdown.
+Die Sprache ist die Sprache Ihres Kontos. Alle verfügbaren Sprachen werden in der Dropdown-Liste angezeigt.
 
-## Conversation Limit per Agent
+## Konversationslimit pro Agent
 
-The conversation limit per agent is the maximum number of conversations that a human agent can handle simultaneously. If all the agents reach the limit in an Inbox, new conversations will be unassigned, waiting for new agents to pick them up when their capacity decreases. The conversation limit applies to the total number of conversations across all inboxes.
+Das Konversationslimit pro Agent ist die maximale Anzahl von Konversationen, die ein menschlicher Agent gleichzeitig bearbeiten kann. Wenn alle Agenten das Limit in einem Posteingang erreichen, werden neue Konversationen nicht zugewiesen und warten darauf, dass sie von neuen Agenten abgeholt werden, wenn ihre Kapazität abnimmt. Das Konversationslimit gilt für die Gesamtzahl der Konversationen in allen Posteingängen.
 
-For example, the human agent is assigned to inboxes A and B, and the conversation limit is set to 2. In this case, the agent can handle two conversations simultaneously, regardless of the inbox they belong to.
+Beispielsweise wird der menschliche Agent den Posteingängen A und B zugewiesen, und das Konversationslimit wird auf 2 festgelegt. In diesem Fall kann der Agent zwei Konversationen gleichzeitig bearbeiten, unabhängig davon, zu welchem Posteingang sie gehören.
 
-To set up a conversation limit per agent, follow these steps:
+Gehen Sie folgendermaßen vor, um ein Konversationslimit pro Agent einzurichten:
 
-1. Go to **Settings > Account Settings**.
-2. On the **Account Settings** page, go to the **General Settings** section.
-3. Activate the **Set conversation limit for agents** option.
-4. In the **Max number of conversations per agent** field, specify the desired limit for agents.
-5. In the upper-right corner, click **Update Settings**.
+1. Gehen Sie zu **Einstellungen > Kontoeinstellungen**.
+2. Wechseln Sie auf der Seite **Kontoeinstellungen** zum Abschnitt **Allgemeine Einstellungen**.
+3. Aktivieren Sie die Option **Konversationslimit für Agenten festlegen**.
+4. Geben Sie im Feld **Maximale Anzahl von Konversationen pro Agent** das gewünschte Limit für Agenten an.
+5. Klicken Sie in der oberen rechten Ecke auf **Einstellungen aktualisieren**.
 
-The limit will be applied to all Inboxes.
+Das Limit wird auf alle Posteingänge angewendet.
 
-If you want to remove the limit, activate the **No conversation limit for agents** and click **Update Settings**.
+Wenn Sie das Limit aufheben möchten, aktivieren Sie das **Kein Konversationslimit für Agenten** und klicken Sie auf **Einstellungen aktualisieren**.
 
-## Auto Set Away
+## Automatisch wegsetzen
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-account-settings-auto-set-away.png" width="100%" alt="Live Agent Account Settings" />
-  <figcaption>Account Settings Auto Set Away</figcaption>
+  <figcaption>Kontoeinstellungen automatisch wegsetzen</figcaption>
 </figure>
 
-The Auto Set Away option is used to automatically set the agent as away when the agent is not active. This means the agent is not performing any action into the browser window while it is opened. 
-When the user performs an action, it will be set back to online state automatically.
+Die Option "Abwesend automatisch einstellen" wird verwendet, um den Agenten automatisch als abwesend festzulegen, wenn der Agent nicht aktiv ist. Dies bedeutet, dass der Agent keine Aktion im Browserfenster ausführt, während es geöffnet ist. 
+Wenn der Benutzer eine Aktion ausführt, wird sie automatisch in den Online-Status zurückgesetzt.
 
->Note: This does not work if the Live Agent is closed. In this case, the user is set to offline automatically when the browser window is closed.
+>Hinweis: Dies funktioniert nicht, wenn der Live Agent geschlossen ist. In diesem Fall wird der Benutzer automatisch in den Offlinemodus versetzt, wenn das Browserfenster geschlossen wird.
 
-## Attachment TTL
+## Anhang TTL
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-account-settings-attachment-ttl.png" width="100%" alt="Live Agent Account Settings" />
-  <figcaption>Account Settings Attachment TTL</figcaption>
+  <figcaption>Kontoeinstellungen Anhang TTL</figcaption>
 </figure>
 
-The Attachment TT option automatically deletes the attachments in messages of all the account conversations after a specific time. The time is set in the past days. It is disabled by default.
+Die Option Anhänge TT löscht automatisch die Anhänge in den Nachrichten aller Kontounterhaltungen nach einer bestimmten Zeit. Die Uhrzeit ist in den vergangenen Tagen eingestellt. Sie ist standardmäßig deaktiviert.
 
-## Auto Resolve
+## Automatische Auflösung
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-account-settings-auto-resolve.png" width="100%" alt="Live Agent Account Settings" />
-  <figcaption>Account Settings Auto Resolve</figcaption>
+  <figcaption>Automatische Auflösung der Kontoeinstellungen</figcaption>
 </figure>
 
-### Auto Resolve Duration
+### Dauer der automatischen Auflösung
 
-The Auto Resolve Duration option automatically resolves the conversation after a certain number of hours.
+Mit der Option "Dauer automatisch auflösen" wird die Konversation nach einer bestimmten Anzahl von Stunden automatisch aufgelöst.
 
-### Auto Resolve Action
+### Aktion "Automatisch auflösen"
 
-The Auto Resolve Action option is used to resolve or abandon a conversation automatically. If the Auto Resolve Action option is set to **Resolve**, the conversation will be resolved. 
-If the **Auto Resolve Action** option is set to **Abandon**, the conversation will be abandoned. Filters can be applied based on these statuses.
+Die Option "Aktion automatisch auflösen" wird verwendet, um eine Konversation automatisch zu beenden oder abzubrechen. Wenn die Option "Aktion automatisch auflösen" auf "Auflösen" festgelegt ist, wird die Konversation aufgelöst. 
+Wenn die Option **Aktion automatisch auflösen** auf **Abbrechen** festgelegt ist, wird die Konversation abgebrochen. Basierend auf diesen Status können Filter angewendet werden.
 
-### Automatically Delete Resolved Conversations
+### Gelöste Konversationen automatisch löschen
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-automatically-remove-resolved-conversations.png" width="100%" alt="Live Agent Delete Resolved Conversations" />
-  <figcaption>Account Settings Automatically Delete Resolved Conversations</figcaption>
+  <figcaption>Kontoeinstellungen Gelöste Konversationen automatisch löschen</figcaption>
 </figure>
 
-When the checkbox for automatically deleting resolved conversations is marked, the conversations marked as resolved will be automatically deleted. This includes the existing ones as per the warning message.
+Wenn das Kontrollkästchen zum automatischen Löschen von gelösten Konversationen aktiviert ist, werden die als gelöst markierten Konversationen automatisch gelöscht. Dies gilt auch für die vorhandenen gemäß der Warnmeldung.
 
-### Auto Assign Conversations to a Busy Agent
+### Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.53-blue.svg)] (.. /.. /release-notes/4.53.md)
 
-By default, you can manually assign conversations to human agents if they are busy.
+Standardmäßig können Sie menschlichen Agenten manuell Konversationen zuweisen, wenn diese beschäftigt sind.
 
-To automate this process, you can activate the **Assign conversation to a busy agent** setting. 
+Um diesen Prozess zu automatisieren, können Sie die Einstellung **Konversation einem beschäftigten Agenten zuweisen** aktivieren. 
 
-## Notifications
+## Benachrichtigungen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../release-notes/4.45.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.45-blue.svg)] (.. /.. /release-notes/4.45.md)
 
 {! _includes/live-agent/push-notifications.md !}
 
-As an administrator, you can configure push and email notifications for the following events:
+Als Administrator können Sie Push- und E-Mail-Benachrichtigungen für die folgenden Ereignisse konfigurieren:
 
-- When a new conversation is created.
-- When a conversation is assigned to you.
-- When you are mentioned in conversation.
-- When a new message is created in an assigned conversation.
+- Wenn eine neue Konversation erstellt wird.
+- Wenn Ihnen eine Konversation zugewiesen wird.
+- Wenn Sie im Gespräch erwähnt werden.
+- Wenn eine neue Nachricht in einer zugewiesenen Konversation erstellt wird.
 
-This configuration applies to all human agents of your organization account and overrides the agent [Profile settings](../profile-settings.md#notifications).
+Diese Konfiguration gilt für alle menschlichen Agenten Ihres Organisationskontos und überschreibt die [Profileinstellungen](.. /profile-settings.md#notifications).
 
-## Account ID and Version
+## Konto-ID und -Version
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-account-settings-account-id-version.png" width="100%" alt="Live Agent Account Settings" />
-  <figcaption>Account Settings Account ID and Version</figcaption>
+  <figcaption>Kontoeinstellungen Konto-ID und -Version</figcaption>
 </figure>
 
-### Account ID
+### Konto-ID
 
-The Account ID is the unique identifier of your account. It is used in the Live Agent URLs to identify which account is accessed. For example, a Live Agent URL can be https://liveagent-trial.cognigy.ai/app/accounts/**1**/dashboard where **1** is the Account ID.
+Die Konto-ID ist die eindeutige Kennung Ihres Kontos. Es wird in den Live Agent-URLs verwendet, um zu identifizieren, auf welches Konto zugegriffen wird. Eine Live Agent-URL kann beispielsweise https://liveagent-trial.cognigy.ai/app/accounts/**1**/dashboard lauten, wobei **1** die Konto-ID ist.
 
-### Version
+### Ausführung
 
-The version is the version of the Cognigy Live Agent running. To check the features and fixes for each version, head over to [Release Notes](../../release-notes/release-notes.md)
+Bei der Version handelt es sich um die Version des Cognigy Live Agents, die ausgeführt wird. Um die Funktionen und Fehlerbehebungen für jede Version zu überprüfen, gehen Sie zu [Versionshinweise](.. /.. /release-notes/release-notes.md)

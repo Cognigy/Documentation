@@ -1,51 +1,43 @@
 ---
- title: "Inject Transformer" 
- slug: "inject-transformer" 
- hidden: false 
+ Titel: "Transformator injizieren" 
+ Slug: "Inject-Transformer" 
+ ausgeblendet: false 
 ---
-# Inject Transformer
+# Transformator einspritzen
 
-## Description
+## Beschreibung
 
-The `Inject Transformer` makes it possible to hook into the [Inject API]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types). A common use-case is that external systems need to hook into a conversation and e.g. send a notification to the user after a certain process has completed. With the `Inject Transformer`, it is no longer required to have a service that translates the webhook payload of the external service into the correct format needed for the `Inject API`. This can now all be handled in the `Inject Transformer`.
+Der 'Inject Transformer' ermöglicht es, sich in die [Inject API]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) einzuklinken. Ein häufiger Anwendungsfall ist, dass externe Systeme sich in eine Konversation einklinken und z.B. eine Benachrichtigung an den Benutzer senden müssen, nachdem ein bestimmter Prozess abgeschlossen ist. Mit dem "Inject Transformer" ist es nicht mehr erforderlich, einen Dienst zu haben, der die Webhook-Nutzlast des externen Dienstes in das richtige Format übersetzt, das für die "Inject API" benötigt wird. Dies alles kann nun im 'Inject Transformer' gehandhabt werden.
 
-The `Inject Transformer` is triggered when the `Inject Transformer API` is called. The custom request body from the external service can thereby be parsed to return the necessary values for the Inject API, namely the  user ID and session ID as well as text and/or data, which will be sent to the user as a notification.
+Der 'Inject Transformer' wird ausgelöst, wenn die 'Inject Transformer API' aufgerufen wird. Der benutzerdefinierte Anforderungstext aus dem externen Dienst kann dabei geparst werden, um die notwendigen Werte für die Inject-API zurückzugeben, nämlich die Benutzer-ID und die Sitzungs-ID sowie Text und/oder Daten, die als Benachrichtigung an den Benutzer gesendet werden.
 
-The `Inject Transformer` is configured by implementing the ``handleInject`` function in the Transformer in the Endpoint.
+Der 'Inject Transformer' wird durch die Implementierung der ''handleInject'' Funktion im Transformer im Endpoint konfiguriert.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/86f34e4-inject_transformer.png" width="100%" />
 </figure>
 
-!!! warning "REST Transformer Support"
-    The Inject Transformer is not supported for REST Based Endpoints.
+!!! Warnung "REST-Transformer-Unterstützung"
+    Der Inject Transformer wird für REST-basierte Endpunkte nicht unterstützt.
 
-## Transformer Function Arguments
+## Argumente für Transformer-Funktionen<div class="divider"></div>Die Funktion 'handleInject' ruft ein Konfigurationsobjekt als Argument ab. Eine Übersicht über die Schlüssel im Objekt ist unten zu sehen:
 
-<div class="divider"></div>
-
-The `handleInject`  function gets a configuration object as an argument. An overview of the keys in the object can be seen below:
-
-|Argument	|Description	|Webhook Transformers|	Socket Transformers|
+|Argumentation |Beschreibung |Webhook-Transformatoren|	Steckdosen-Transformatoren|
 |--|--|--|--|
-|endpoint|	The configuration object for the Endpoint. Contains the URLToken etc.|	X|	X|
-|request|	The Express request object with a JSON parsed body.|	X|	X|
-|response|	The Express response object.|	X|	X|
+|endpunkt|	Das Konfigurationsobjekt für den Endpunkt. Enthält die URLToken etc.|	X|	X|
+|Anfrage|	Das Express-Anforderungsobjekt mit einem JSON-analysierten Text.|	X|	X|
+|Antwort|	Das Express-Antwortobjekt.|	X|	X|
 
-## Return Values of the Transformer
+## Rückgabewerte des Übertragers<div class="divider"></div>Der 'Inject Transformer' muss eine gültige Benutzer-ID, eine Sitzungs-ID und Text und/oder Daten zurückgeben, die an den Flow gesendet werden sollen. Diese Werte sollten aus dem Text der Anforderung extrahiert werden. Es ist wichtig zu beachten, dass das Format des Anfragetextes je nach verwendetem Kanal unterschiedlich ist, d. h. eine Anfrage von Alexa sieht ganz anders aus als eine Anfrage von Facebook Messenger. Es ist daher notwendig, die Dokumentation des jeweiligen Kanals zu lesen, um zu wissen, wie der Anforderungstext formatiert ist. 
 
-<div class="divider"></div>
+Wenn der 'Inject Transformer' einen falschen Wert zurückgibt, wird die Nachricht nie an den Benutzer weitergeleitet.
 
-The `Inject Transformer` has to return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different to a request from Facebook Messenger. It is therefore necessary to read the documentation from the specific channel to know how the request body is formatted. 
+!!! Warnung "Rückgabewertvalidierung"
+    Der Rückgabewert des 'Inject Transformer' wird anhand einer Reihe von Regeln validiert und abgelehnt, wenn die Regeln nicht erfüllt sind. Die Regeln sind:
 
-If the `Inject Transformer` returns a falsy value, then the message is never forwarded to the user.
+- Die Benutzer-ID ist im Rückgabewert erforderlich. Es hat eine maximale Länge von 256 Zeichen.
+    - Die Sitzungs-ID ist erforderlich. Es hat auch eine maximale Länge von 256 Zeichen.
+    - Der Text ist nicht erforderlich. hat aber eine maximale Länge von 10000 Zeichen.
+    - Das Datenobjekt ist nicht erforderlich.
 
-!!! warning "Return Value Validation"
-    The return value of the `Inject Transformer` will be validated against a set of rules and rejected if the rules are not met. The rules are:
-
-    - The user ID is required in the return value. It has a max length of 256 characters.
-    - The session ID is required. It also has a max length of 256 characters.
-    - The text is not required. but has a max length of 10000 characters.
-    - The data object is not required.
-
-    If neither text or data is defined, then validation also fails.
+Wenn weder Text noch Daten definiert sind, schlägt auch die Validierung fehl.

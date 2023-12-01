@@ -1,7 +1,7 @@
 ---
- title: "LINE Messenger" 
- slug: "line-messenger" 
- hidden: false 
+ Titel: "LINE Messenger" 
+ Schnecke: "Line-Messenger" 
+ ausgeblendet: false 
 ---
 # LINE Messenger
 
@@ -9,51 +9,42 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/16e06a7-Line.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **LINE** channel by using our Line Endpoint integration. 
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihre Cognigy-Ressourcen mit Ihrem **LINE**-Kanal verbinden, indem Sie unsere Line Endpoint-Integration verwenden. 
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die allgemeinen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-Find out about the generic Endpoint settings available with this Endpoint on the following pages:
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
-
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
-
-## Channel Specific Settings
-
-<div class="divider"></div>
-
-The **Line Setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Line Channel**.
+## Kanalspezifische Einstellungen<div class="divider"></div>Im Dropdown-Menü **Line Setup** müssen Cognigy.AI die Anmeldeinformationen erhalten, um eine Verbindung mit einem **Line Channel** herzustellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/d0d13cd-lineSetup.PNG" width="100%" />
 </figure>
 
-### Channel Access Token
+### Kanal-Zugriffstoken
 
-This value is the Line **Channel Access Token** which is obtained from the Line Developer account for each channel that is deployed. This token should be associated with the secret provided below.
+Bei diesem Wert handelt es sich um das Kanalzugriffstoken, das vom Line Developer-Konto für jeden bereitgestellten Kanal abgerufen wird. Dieses Token sollte dem unten angegebenen Geheimnis zugeordnet werden.
 
-### Channel Secret
+### Geheimer Kanal
 
-This value is the Line **Channel Secret** which is associated to a channel access token. This value is obtained from the Line Developer account for each channel that is deployed.
+Bei diesem Wert handelt es sich um den geheimen Leitungsschlüssel, der einem Kanalzugriffstoken zugeordnet ist. Dieser Wert wird vom Line Developer-Konto für jeden bereitgestellten Kanal abgerufen.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Line Messenger** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016222819).
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Line Messenger**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016222819).
 
+!!! Warnung "Konfiguration von Leitungsmeldungen"
+    Line Messenger Messaging API-Anforderungen haben viele Anforderungen, die dazu führen können, dass einige Ihrer konfigurierten Nachrichten nicht gesendet werden. Überprüfen Sie Ihre Knotenkonfigurationen im Hinblick auf die Anforderungen der Line Messaging API [**hier**](https://support.cognigy.com/hc/en-us/articles/5721825020444), um sicherzustellen, dass alle konfigurierten Nachrichten zugestellt werden.
 
-!!! warning "Configuration of Line messages"
-    Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
+## Mehr Informationen 
 
-## More Information 
-
-- [Line Messenger: Deployment](https://support.cognigy.com/hc/en-us/articles/360016222819)
-- [Line Messenger: Message types and payload examples](https://support.cognigy.com/hc/en-us/articles/5721825020444)
+- [Line Messenger: Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016222819)
+- [Line Messenger: Nachrichtentypen und Nutzlastbeispiele](https://support.cognigy.com/hc/en-us/articles/5721825020444)

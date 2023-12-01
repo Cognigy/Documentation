@@ -1,26 +1,20 @@
 ---
- title: "Continuous ASR - Config" 
+ Titel: "Kontinuierliche ASR - Konfiguration" 
  slug: "continuous-asr-config" 
- hidden: false 
+ ausgeblendet: false 
 ---
 
-# Continuous ASR - Config
+# Kontinuierliche ASR - Konfiguration
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/continuous-asr-config.png" width="80%" />
-  <figcaption>Generic Continuous ASR - Config Node</figcaption>
+  <figcaption>Generische fortlaufende ASR - Konfigurationsknoten</figcaption>
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Die kontinuierliche ASR ermöglicht es dem System, mehrere STT-Erkennungen des Benutzers zu verketten und sie dann als eine einzige Textnachricht an den Bot zu senden.<br/><br/>Wenn die Einstellungen ausgeführt werden, gelten sie für den Rest der Sitzung.
 
-<div class="divider"></div>
-Continuous ASR enables the system to concatenate multiple STT recognitions of the user and then send them as a single textual message to the bot.
-<br/><br/>
-
-When executed, the settings will apply for the remainder of the session.
-
-| Parameter                   | Type          | Description                                                                                            |
+| Parameter | Typ | Beschreibung |
 |-----------------------------|---------------|--------------------------------------------------------------------------------------------------------|
-| Enable Continuous ASR       | Toggle        | Enable or disable Continuous ASR                                                                       |
-| Continuous ASR Submit Digit | CognigyScript | Defines a special DTMF key, which sends the accumulated recognitions to the flow                       |
-| Continuous ASR Timeout      | Number        | Defines the number of milliseconds of silence before the accumulated recognitions are send to the flow |
+| Aktivieren der kontinuierlichen ASR | Umschalten | Aktivieren oder Deaktivieren der fortlaufenden ASR |
+| Fortlaufende ASR-Sendeziffer | CognigyScript | Definiert einen speziellen DTMF-Schlüssel, der die akkumulierten Erkennungen an den Fluss |
+| Kontinuierliches ASR-Timeout | Anzahl | Definiert die Anzahl der Millisekunden Stille, bevor die akkumulierten Erkennungen an den Flow gesendet werden |

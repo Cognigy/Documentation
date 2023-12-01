@@ -1,31 +1,31 @@
 ---
-title: "NO_ANSWER"
-slug: "NO_ANSWER"
-hidden: false
+Titel: "NO_ANSWER"
+Schnecke: "NO_ANSWER"
+ausgeblendet: false
 ---
 
 # NO_ANSWER
 
-This event serves to indicate that the call was not answered within the specified ringing time.
+Dieses Ereignis dient dazu, anzuzeigen, dass der Anruf nicht innerhalb der angegebenen Klingelzeit angenommen wurde.
 
-When the virtual agent rings for the number of seconds, you specify in the [Transfer Node](../../../ai/flow-nodes/vg/transfer.md) settings, and if there is no response during this ringing period, the virtual agent will hang up the call. virtual agent will automatically end the call.
+Wenn der virtuelle Agent für die Anzahl der Sekunden klingelt, geben Sie im [Übertragungsknoten](.. /.. /.. /ai/flow-nodes/vg/transfer.md) und wenn während dieses Klingelzeitraums keine Antwort erfolgt, legt der virtuelle Agent den Anruf auf. Der virtuelle Agent beendet den Anruf automatisch.
 
-Payload:
+Nutzlast:
 
-```json
+'''json
 {
   "event": "NO_ANSWER",
-  "payload": {
-    "call_sid": "fd25a8f6-b7a0-41ad-xxxx-xxxxxxxxxxxx",
-    "direction": "inbound",
+  "Nutzlast": {
+    "call_sid": "FD25A8F6-B7A0-41AD-XXXX-XXXXXXXXXXXX",
+    "direction": "eingehend",
     "from": "+140xxxxxxxxx",
     "to": "+441xxxxxxxxx",
-    "call_status": "completed",
-    "call_termination_by": "caller",
-    "duration": 15,
-    "dial_call_status": "no-answer",
+    "call_status": "abgeschlossen",
+    "call_termination_by": "Anrufer",
+    "Dauer": 15,
+    "dial_call_status": "keine Antwort",
     "dial_sip_status": 487,
     "dial_call_sid": "5c854151-0e0a-4fbf-xxxx-xxxxxxxxxxxx"
   }
 }
-```
+'''

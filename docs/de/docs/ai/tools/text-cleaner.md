@@ -1,54 +1,54 @@
 ---
  title: "Text Cleaner" 
- slug: "text-cleaner" 
- hidden: true 
+ Slug: "Text-Bereinigung" 
+ Ausgeblendet: Wahr 
 ---
 
-# Text Cleaner
+# Text-Bereinigung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../release-notes/4.58.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.58-blue.svg)] (.. /.. /release-notes/4.58.md)
 
-Cognigy.AI offers various functions to assist in preprocessing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
+Cognigy.AI bietet verschiedene Funktionen zur Unterstützung bei der Vorverarbeitung von Benutzereingaben, wie z. B. Textnachrichten oder transkribierte Sprachnachrichten. Diese Funktionen erleichtern die Verarbeitung von Daten in Cognigy.AI.
 
-An example would be when a user spells out a part number as `alpha tango hotel double seven three nine minus L for London and C for Canada`, resulting in `ath 7739 - lc`.
+Ein Beispiel wäre, wenn ein Benutzer eine Teilenummer als "alpha tango hotel double seven three nine minus L für London und C für Kanada" buchstabiert, was zu "ath 7739 - lc" führt.
 
-These functions support the English (`en`) and German (`de`) locales.
+Diese Funktionen unterstützen die englischen ('en') und deutschen ('de') Gebietsschemas.
 
-The functions are available in the following entities:
+Die Funktionen sind in den folgenden Entitäten verfügbar:
 
-- [Clean Text Node](../flow-nodes/nlu/clean-text.md)
-- [Question Nodes](../flow-nodes/message/question.md#answer-pre-processing)
-- [Code Node](../flow-nodes/code/actions.md#text-cleaner)
-- [Transformers](../endpoints/transformers/transformers.md#text-cleaner-class)
+- [Textknoten bereinigen](.. /flow-nodes/nlu/clean-text.md)
+- [Frage-Knoten](.. /flow-nodes/message/question.md#answer-pre-processing)
+- [Code-Knoten](.. /flow-nodes/code/actions.md#text-cleaner)
+- [Transformatoren](.. /endpoints/transformers/transformers.md#text-cleaner-class)
 
-## Functions
+## Funktionen
 
-| Function Name                      | Description                                                                                                                                                                                       |
+| Name der Funktion | Beschreibung |
 |------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| cleanDisallowedSymbols             | Removes all symbols that are not explicitly allowed. All letters and numbers are allowed by default, and additional allowed symbols can be set.                                                   |
-| resolveSpelledOutNumbers           | Replaces all number words with their numerical representation. For example, "five and three hundred nineteen" > "5 319".                                                                          |
-| resolvePhoneticAlphabet            | Detects and replaces all words that are part of the phonetic alphabet. For example, "alpha tango lima" > "a t l".                                                                                 |
-| replaceSpecialWords _(Deprecated)_ | Replaces specifically set words with their replacements. For example, "lufthansa" > "lh". <br><br> This function has been deprecated since v4.58. Use the replaceSpecialPhrases function instead. |
-| replaceSpecialPhrases              | Replaces specific words or phrases with replacements. For example, "Conversational AI" is changed to "CAI", "New York" to "NY", and "lufthansa" to "lh".                                          |                                               |
-| resolveSpelledOutAlphabet          | Resolves phrases like "a for anton b as in bertram" to "a b".                                                                                                                                     |
-| resolvePhoneticCounters            | Resolves strings like "3 times 2" to "222" or "double 4" to "44". Learn more about special rules in the [Rules for resolvePhoneticCounters](#rules-for-resolvephoneticcounters) section.          |
-| contractSingleCharacters           | Joins all single characters standing alone into a full string. For example, "my name is c o g n i g y" > "my name is cognigy".                                                                    |
-| contractNumberGroups               | Joins all numbers standing next to each other. For example, "his number is 333 43 22 44" > "his number is 333432244".                                                                             |
-| trimResult                         | Trims the start and end of the string and replaces all double (or more) spaces with single spaces.                                                                                                |
+| cleanDisallowedSymbols | Entfernt alle Symbole, die nicht explizit zulässig sind. Alle Buchstaben und Zahlen sind standardmäßig erlaubt, und es können zusätzliche zulässige Symbole festgelegt werden.                                                   |
+| resolveSpelledOutNumbers | Ersetzt alle Zahlenwörter durch ihre numerische Darstellung. Beispiel: "fünfunddreihundertneunzehn" > "5 319".                                                                          |
+| resolvePhoneticAlphabet | Erkennt und ersetzt alle Wörter, die Teil des phonetischen Alphabets sind. Zum Beispiel "alpha tango lima" > "a t l".                                                                                 |
+| replaceSpecialWords _(Veraltet)_ | Ersetzt spezifisch festgelegte Wörter durch ihre Ersetzungen. Beispiel: "lufthansa" > "lh". <br><br> Diese Funktion ist seit v4.58 veraltet. Verwenden Sie stattdessen die Funktion replaceSpecialPhrases. |
+| replaceSpecialPhrases | Ersetzt bestimmte Wörter oder Ausdrücke durch Ersetzungen. Zum Beispiel wird "Conversational AI" in "CAI", "New York" in "NY" und "lufthansa" in "lh" geändert.                                          |                                               |
+| resolveSpelledOutAlphabet | Löst Ausdrücke wie "a für anton b wie in Bertram" in "a b" auf.                                                                                                                                     |
+| resolvePhoneticCounters | Löst Zeichenfolgen wie "3 mal 2" in "222" oder "double 4" in "44" auf. Weitere Informationen zu speziellen Regeln finden Sie im Abschnitt [Regeln für resolvePhoneticCounters](#rules-for-resolvephoneticcounters).          |
+| contractSingleCharacters | Verbindet alle einzelnen Zeichen, die für sich allein stehen, zu einer vollständigen Zeichenfolge. Zum Beispiel "Mein Name ist c o g n i g y" > "Mein Name ist kognig".                                                                    |
+| contractNumberGroups | Verbindet alle Zahlen, die nebeneinander stehen. Zum Beispiel: "Seine Nummer ist 333 43 22 44" > "Seine Nummer ist 333432244".                                                                             |
+| trimResult | Kürzt den Anfang und das Ende der Zeichenfolge und ersetzt alle doppelten (oder mehr) Leerzeichen durch einfache Leerzeichen.                                                                                                |
 
-### Rules for resolvePhoneticCounters
+### Regeln für resolvePhoneticCounters
 
-This function is designed to convert phrases like "3 times 2" into their numeric representation, such as "3 times 2" to "222" or "double 4" to "44." The function handles sentences that include both a multiplier (for example, "3 times" or "double") and a multiplicand (for example, "2" or "4"). The multiplicand can be either a number or a character.
+Diese Funktion dient dazu, Ausdrücke wie "3 mal 2" in ihre numerische Darstellung umzuwandeln, z. B. "3 mal 2" in "222" oder "double 4" in "44". Die Funktion verarbeitet Sätze, die sowohl einen Multiplikator (z. B. "3 mal" oder "doppelt") als auch einen Multiplikator (z. B. "2" oder "4") enthalten. Der Multiplikand kann entweder eine Zahl oder ein Zeichen sein.
 
-Some examples can be ambiguous. For instance, consider the phrase "double ap 3 4", which could be interpreted as either "aap34" or "apap34."
+Einige Beispiele können mehrdeutig sein. Betrachten Sie zum Beispiel die Phrase "double ap 3 4", die entweder als "aap34" oder "apap34" interpretiert werden könnte.
 
-To avoid this ambiguity, Cognigy defined the following rules for multiplicand types:
+Um diese Mehrdeutigkeit zu vermeiden, hat Cognigy die folgenden Regeln für Multiplikantentypen definiert:
 
-| Multiplicand type                                                        | Rule                                                                                                                                                                                  | Example                                                                                      |
+| Multiplikant-Typ | Regel | Beispiel |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| **Number**                                                               |                                                                                                                                                                                       | 2 times **3**, 2 times **16**                                                                |
-| Multiplicand is a number less than 13                                    | The multiplicand is repeated itself.                                                                                                                                                  | "2 times 3" will return "33" <br> "2 times 11" will return "1111"                            |
-| Multiplicand is a number greater than or equal to 13                     | Only the first digit is repeated. <br><br> The first digit is given priority due to the more common usage of phrases like "3 times 4" or "3 times 12," compared to "3 times 25".      | "2 times 16" will return "116"                                                               |
-| **Character**                                                            |                                                                                                                                                                                       | 2 times **alpha**, 2 times **ox**                                                            |
-| Multiplicand is a phonetic character                                     | It is resolved, and the character is repeated.                                                                                                                                        | "2 times alpha" will return "aa"                                                             |
-| Multiplicand has more than one character and is not a phonetic character | Only the first character is repeated. <br><br> Cognigy assumes that the speech-to-text (STT) system transcribed the user input incorrectly and that the user intended to say another. | "2 times ox" will return "oox" <br> (we assume that the user intended to say "2 times o, x") |
+| **Anzahl** |                                                                                                                                                                                       | 2 mal **3**, 2 mal **16** |
+| Multiplicand ist eine Zahl kleiner als 13 | Der Multiplikator wiederholt sich selbst.                                                                                                                                                  | "2 mal 3" gibt "33" zurück <br> "2 mal 11" gibt "1111" zurück |
+| Multiplikanz ist eine Zahl größer oder gleich 13 | Es wird nur die erste Ziffer wiederholt. <br><br> Die erste Ziffer hat aufgrund der häufigeren Verwendung von Ausdrücken wie "3 mal 4" oder "3 mal 12" im Vergleich zu "3 mal 25" Vorrang.      | "2 mal 16" gibt "116" zurück |
+| **Charakter** |                                                                                                                                                                                       | 2 mal **Alpha**, 2 mal **OX** |
+| Multiplicand ist ein phonetisches Zeichen | Es wird aufgelöst und das Zeichen wird wiederholt.                                                                                                                                        | "2 mal Alpha" gibt "aa" zurück |
+| Multiplicand hat mehr als ein Zeichen und ist kein phonetisches Zeichen | Es wird nur das erste Zeichen wiederholt. <br><br> Cognigy geht davon aus, dass das Speech-to-Text-System (STT) die Benutzereingabe falsch transkribiert hat und dass der Benutzer beabsichtigte, eine andere zu sagen. | "2 mal ox" gibt "oox" zurück <br> (Wir gehen davon aus, dass der Benutzer beabsichtigt hat, "2 mal o, x" zu sagen) |

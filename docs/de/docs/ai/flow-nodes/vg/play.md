@@ -1,27 +1,24 @@
 ---
- title: "Play" 
- slug: "play" 
- hidden: false 
+ Titel: "Spielen" 
+ Schnecke: "Spielen" 
+ ausgeblendet: false 
 ---
-# Play
+# Abspielen
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.64-blue.svg)] (.. /.. /.. /release-notes/4.64.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/play.png" width="80%" />
-  <figcaption>Voice Gateway Play Node</figcaption>
+  <figcaption>Voice-Gateway-Wiedergabeknoten</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Play Node lets you stream a sound file into the call with the ability to loop it. MP3 and WAV encoded files are supported.
+## Beschreibung<div class="divider"></div>Mit dem Play Node können Sie eine Audiodatei in den Anruf streamen und sie in einer Schleife abspielen. MP3- und WAV-kodierte Dateien werden unterstützt.
 
-| Parameter               | Type          | Description                                                         |
+| Parameter | Typ | Beschreibung |
 |-------------------------|---------------|---------------------------------------------------------------------|
-| Media URL               | CognigyScript | You can use MP3 or WAV encoded files                                |
-| Loop count              | Number        | Number of times the media will be looped                            |
-| Set Activity Parameters | Toggle        | Option to add parameters which will be valid for this activity only |
+| Medien-URL | CognigyScript | Sie können MP3- oder WAV-kodierte Dateien |
+| Anzahl der Schleifen | Anzahl | Häufigkeit, mit der das Medium in einer Schleife abgespielt wird |
+| Aktivitätsparameter festlegen | Umschalten | Option zum Hinzufügen von Parametern, die nur für diese Aktivität gültig sind |
 
-
-!!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details](parameter-details.md) page.
+!!! Hinweis "Dieser Knoten unterstützt Aktivitätsparameter"
+    Weitere Informationen zu Aktivitätsparametern finden Sie auf unserer Seite [Parameterdetails](parameter-details.md).

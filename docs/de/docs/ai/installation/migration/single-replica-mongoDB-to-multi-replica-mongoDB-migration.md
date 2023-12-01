@@ -1,104 +1,104 @@
 ---
-title: "MongoDB: Single to Multi Replica"
+title: "MongoDB: Single zu Multi Replica"
 slug: "single-replica-mongoDB-to-multi-replica-mongoDB-migration"
-hidden: false
-ignore_macros: true
+ausgeblendet: false
+ignore_macros: wahr
 ---
 
-# MongoDB: Single to Multi Replica  
+# MongoDB: Einzel- zu Multi-Replikat  
 
-The migration process from a single replica to a multi-replica setup with MongoDB Helm Chart involves several steps. These steps are described in the following section. In this guide, we assume that the old MongoDB installation is deployed in the `default` namespace, and we will install the new MongoDB ReplicaSet into the `mongodb` namespace. We strongly recommend performing migration inside the existing cluster as it simplifies data migration process. 
+Der Migrationsprozess von einem einzelnen Replikat zu einem Multi-Replikat-Setup mit MongoDB Helm Chart umfasst mehrere Schritte. Diese Schritte werden im folgenden Abschnitt beschrieben. In diesem Leitfaden wird davon ausgegangen, dass die alte MongoDB-Installation im "default"-Namespace bereitgestellt wird, und wir installieren das neue MongoDB-ReplicaSet im "mongodb"-Namespace. Es wird dringend empfohlen, die Migration innerhalb des vorhandenen Clusters durchzuführen, da dies den Datenmigrationsprozess vereinfacht. 
 
-## Setting up Multi-Replica MongoDB Helm Chart
+## Einrichten des MongoDB-Helm-Diagramms mit mehreren Replikaten
 
-1. Set up a 3 replica MongoDB Helm Release following the [official guide](https://github.com/Cognigy/cognigy-mongodb-helm-chart) here.
-2. You will need to set the root password in the new setup to the same value as in the old one. You can find out the root password for the existing installation by executing the following command on the current Kubernetes cluster:
-```
-kubectl get secret -n default cognigy-mongo-server -ojsonpath='{.data.mongo-initdb-root-password}' | base64 --decode
-```
-Use this password as `auth.rootPassword` and `metrics.password` in the `values_prod.yaml` file for the new setup.
+1. Richten Sie ein MongoDB-Helm-Release mit 3 Replikaten ein, indem Sie der [offiziellen Anleitung](https://github.com/Cognigy/cognigy-mongodb-helm-chart) hier folgen.
+2. Sie müssen das Root-Passwort in der neuen Konfiguration auf den gleichen Wert wie in der alten einrichten. Sie können das Root-Passwort für die vorhandene Installation herausfinden, indem Sie den folgenden Befehl auf dem aktuellen Kubernetes-Cluster ausführen:
+'''
+kubectl get secret -n default cognigy-mongo-server -ojsonpath='{.data.mongo-initdb-root-password}' | base64 --decodieren
+'''
+Verwenden Sie dieses Passwort als 'auth.rootPassword' und 'metrics.password' in der Datei 'values_prod.yaml' für das neue Setup.
 
-## Modifying MongoDB Connection String Secrets
+## Ändern von Geheimnissen für MongoDB-Verbindungszeichenfolgen
 
-To access MongoDB, Cognigy.AI services use Kubernetes secrets which contain a database connection string. The secrets must be adjusted for the new MongoDB setup. To automate this process, a script can be found in [this](https://github.com/Cognigy/cognigy-mongodb-helm-chart) repository. Ensure that all old secrets are stored in `secrets` folder before executing the script:**
-```bash
+Für den Zugriff auf MongoDB verwenden Cognigy.AI Dienste Kubernetes-Geheimnisse, die eine Datenbankverbindungszeichenfolge enthalten. Die Secrets müssen für das neue MongoDB-Setup angepasst werden. Um diesen Prozess zu automatisieren, befindet sich ein Skript im Repository [this](https://github.com/Cognigy/cognigy-mongodb-helm-chart). Stellen Sie sicher, dass alle alten Geheimnisse im Ordner "secrets" gespeichert sind, bevor Sie das Skript ausführen:**
+'''bash
 git clone https://github.com/Cognigy/cognigy-mongodb-helm-chart.git
-cd scripts
+CD-Skripte
 chmod +x secrets-migration.sh
 ./secrets-migration.sh
-```
-The script will ask for the current MongoDB connection string, i.e.:
-```
+'''
+Das Skript fragt nach der aktuellen MongoDB-Verbindungszeichenfolge, d. h.:
+'''
 mongo-server:27017
-```
-and for a replacement containing the new connection string, i.e:
-```
+'''
+und für eine Ersetzung, die die neue Verbindungszeichenfolge enthält, d. h.:
+'''
 mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017
-```
-execute the script: 
-```bash
+'''
+Führen Sie das Skript aus: 
+'''bash
 ./secrets-migration.sh
-Enter current MongoDB host: mongo-server:27017
-Enter new MongoDB host(s): mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017
-```
-The script will store all relevant old secrets in a folder called `original_secrets` and the adjusted ones in a folder called `new_secrets`.
+Geben Sie den aktuellen MongoDB-Host ein: mongo-server:27017
+Geben Sie neue(n) MongoDB-Host(s) ein: mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017
+'''
+Das Skript speichert alle relevanten alten Geheimnisse in einem Ordner namens 'original_secrets' und die angepassten in einem Ordner namens 'new_secrets'.
 
-## MongoDB Data Migration
+## MongoDB-Datenmigration
 
-1. This step will require downtime of your Cognigy.AI installation. Before starting the MongoDB data migration, you need to scale down the Cognigy.AI installation deployments:
-    ```bash
+1. Dieser Schritt erfordert eine Ausfallzeit Ihrer Cognigy.AI Installation. Bevor Sie mit der MongoDB-Datenmigration beginnen, müssen Sie die Cognigy.AI Installationsbereitstellungen herunterskalieren:
+    '''bash
     for i in $(kubectl get deployment --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}'|grep service-)
-    do
-    kubectl --namespace default scale --replicas=0 deployment $i
-    done
-    ```
+    Fass
+    kubectl --namespace Standardskalierung --replicas=0 Bereitstellung $i
+    fertig
+    '''
 
-2. Find out the primary node of the new mongoDB cluster by executing `rs.status()`:
-    ```bash
+2. Ermitteln Sie den primären Knoten des neuen mongoDB-Clusters, indem Sie 'rs.status()' ausführen:
+    '''bash
     kubectl exec -it -n mongodb mongodb-0 bash
-    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
+    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatenbankadministrator
     rs.status()
-    ```
+    '''
 
-3. If you are setting up the Multi-replica MongoDB setup:
+3. Wenn Sie das Multi-Replica-MongoDB-Setup einrichten:
    
-    * on a different Kubernetes cluster - skip to step 5. 
-    * on the same Kubernetes cluster where single-replica MongoDB is running - connect to the primary MongoDB pod. For example, if  `mongodb-0` is the primary node:
-    ```bash
+* auf einem anderen Kubernetes-Cluster – fahren Sie mit Schritt 5 fort. 
+    * auf demselben Kubernetes-Cluster, in dem MongoDB mit einem Replikat ausgeführt wird – stellen Sie eine Verbindung mit dem primären MongoDB-Pod her. Wenn z. B. "mongodb-0" der primäre Knoten ist:
+    '''bash
     kubectl exec -it mongodb-0 -n mongodb -- bash
-    ```
+    '''
 
-4. After attaching to the primary pod of the multi-replica MongoDB setup, execute the following command to take a dump of an existing database and restore it in the multi-replica MongoDB:
-    ```bash
-    mongodump --archive --authenticationDatabase admin -u admin -p <password> --host "mongo-server.default.svc:27017" | mongorestore --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017" --authenticationDatabase admin -u root -p <password> --archive --drop
-    ```
+4. Führen Sie nach dem Anfügen an den primären Pod des MongoDB-Setups mit mehreren Replikaten den folgenden Befehl aus, um ein Dump einer vorhandenen Datenbank zu erstellen und es in der MongoDB mit mehreren Replikaten wiederherzustellen:
+    '''bash
+    mongodump --archive --authenticationDatabase admin -u admin -p --host "mongo-server.default.svc:27017" <password> | mongorestore --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017" --authenticationDatabase admin -u root -p -- <password> archive --drop
+    '''
 
-5.  If you are setting up the multi-replica MongoDB setup **on a different Kubernetes cluster**, you have to dump the existing database to your local client filesystem and import it into the multi-replica setup afterward. The time of this operation heavily depends on the size of your database and your internet connection speed. To speed up the process, you can execute the commands from a server running in the same data center where your Kubernetes clusters run. In case you follow this scenario, we strongly recommend testing the dump process in advance to evaluate the downtime duration:
+5. Wenn Sie das MongoDB-Setup mit mehreren Replikaten auf einem anderen Kubernetes-Cluster einrichten, müssen Sie die vorhandene Datenbank in Ihr lokales Client-Dateisystem kopieren und anschließend in das Multi-Replikat-Setup importieren. Die Dauer dieses Vorgangs hängt stark von der Größe Ihrer Datenbank und der Geschwindigkeit Ihrer Internetverbindung ab. Um den Prozess zu beschleunigen, können Sie die Befehle von einem Server ausführen, der im selben Rechenzentrum ausgeführt wird, in dem Ihre Kubernetes-Cluster ausgeführt werden. Falls Sie diesem Szenario folgen, empfehlen wir dringend, den Speicherabbildprozess im Voraus zu testen, um die Ausfalldauer zu bewerten:
 
-    1.  To make a dump to the local file system, log in to the old single replica MongoDB pod:
-    ```bash
+1. Um einen Dump in das lokale Dateisystem zu erstellen, melden Sie sich beim alten MongoDB-Pod mit einem Replikat an:
+    '''bash
     kubectl exec -it deployment/mongo-server -- bash
     mkdir -p ./tmp/backup
-    mongodump --authenticationDatabase admin -u admin -p <password> --host "mongo-server.default.svc:27017" --out ./tmp/backup
-    exit
+    mongodump --authenticationDatabase admin -u admin -p --host " <password> mongo-server.default.svc:27017" --out ./tmp/backup
+    Ausgang
     kubectl cp -n default <mongodb-pod-id>:/tmp/backup <path-to-the-local-directory>
-    ```
-    2. Import the data into a multi-replica MongoDB cluster:
-    ```bash
+    '''
+    2. Importieren Sie die Daten in einen MongoDB-Cluster mit mehreren Replikaten:
+    '''bash
     kubectl cp -n mongodb <path-to-the-local-directory> mongodb-0:/tmp/
     kubectl exec -it mongodb-0 -n mongodb -- bash
-    mongorestore --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017" --authenticationDatabase admin -u root -p <password> ./tmp/<backup-folder>
-    ```
-   Here `mongodb-0` considered the primary node. Change it if you have different primary node, for example,`mongodb-1` or `mongodb-2`.
+    mongorestore --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017" --authenticationDatabase admin -u root -p ./ <password> tmp/<backup-folder>
+    '''
+   Hier wurde 'mongodb-0' als primärer Knoten betrachtet. Ändern Sie es, wenn Sie einen anderen primären Knoten haben, z. B. 'mongodb-1' oder 'mongodb-2'.
 
-6. Replace the existing secrets with new secrets:
-    ```bash
+6. Ersetzen Sie die vorhandenen Geheimnisse durch neue Geheimnisse:
+    '''bash
     kubectl replace -f new_secrets
-    ```
-   In case of a rollback, the old secrets can be restored by executing the following:
-    ```bash
+    '''
+   Im Falle eines Rollbacks können die alten Geheimnisse wiederhergestellt werden, indem Folgendes ausgeführt wird:
+    '''bash
     kubectl delete -f new_secrets
     kubectl apply -f original_secrets
-    ```
-7. Scale up all the deployments back to check if everything works as expected.
-8. Move the secrets from the `new_secrets` folder to `secrets` folder and delete the `original_secrets` folder.
+    '''
+7. Skalieren Sie alle Bereitstellungen wieder hoch, um zu überprüfen, ob alles wie erwartet funktioniert.
+8. Verschieben Sie die Geheimnisse aus dem Ordner "new_secrets" in den Ordner "Geheimnisse" und löschen Sie den Ordner "original_secrets".</backup-folder></password></path-to-the-local-directory></path-to-the-local-directory></mongodb-pod-id></password></password></password>

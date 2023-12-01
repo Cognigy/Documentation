@@ -1,42 +1,31 @@
 ---
- title: "Hotkeys" 
- slug: "hotkeys" 
- hidden: false 
+ Titel: "Hotkeys" 
+ Slug: "Hotkeys" 
+ ausgeblendet: false 
 ---
 
 # Hotkeys
 
-In addition to full **Drag and Drop** flow editor functionality, Cognigy.AI supports the following hotkey commands.
+Zusätzlich zur vollständigen **Drag & Drop**-Funktionalität des Flow-Editors unterstützt Cognigy.AI die folgenden Hotkey-Befehle.
 
-## Flow Editor
+## Flow-Editor<div class="divider"></div>Die folgenden Hotkeys sind für den Flow-Editor gültig.
 
-<div class="divider"></div>
-
-The following hotkeys are valid for the Flow Editor.
-
-| Hotkey                                           | Description                          |
+| Hotkey | Beschreibung |
 |--------------------------------------------------|--------------------------------------|
-| ++ctrl+c++<br>++cmd+c++<br>++alt+"[drag/drop]"++ | Copy the Selected Node               |
-| ++ctrl+v++<br>++cmd+v++                          | Paste the Node from the Clipboard    |
-| ++ctrl+x++<br>++cmd+x++                          | Cut the Selected Node                |
-| ++del++                                          | Delete the Selected Node             |
-| ++ctrl+s++<br>++cmd+s++                          | Save the node currently being edited |
-| ++ctrl+alt+f++<br>++cmd+opt+f++                  | Toggle the node search input field   |
-| ++ctrl+alt+p++<br>++cmd+opt+p++                  | Open Voice Preview panel             |
+| ++Strg+C++<br>++cmd+c++<br>++Alt+"[Ziehen/Ablegen]"++ | Kopieren des ausgewählten Knotens |
+| ++Strg+V++<br>++cmd+v++ | Einfügen des Knotens aus der Zwischenablage |
+| ++Strg+X++<br>++cmd+x++ | Ausschneiden des ausgewählten Knotens |
+| ++Entf++ | Löschen des ausgewählten Knotens |
+| ++Strg+S++<br>++cmd+s++ | Speichern des Knotens, der gerade bearbeitet wird |
+| ++Strg+Alt+F++<br>++cmd+opt+f++ | Eingabefeld für die Knotensuche umschalten |
+| ++Strg+Alt+P++<br>++cmd+opt+p++ | Bedienfeld "Sprachvorschau" öffnen |
 
+!!! Anmerkung
+    Der in der Zwischenablage gespeicherte Inhalt läuft nach 10 Minuten ab und ist nicht mehr verfügbar.
 
-!!! note
-    The content stored in your clipboard will expire after 10 minutes and no longer be available.
+## Interaktions-Panel<div class="divider"></div>Die in der folgenden Tabelle angezeigten Hotkeys gelten für das Interaction Panel.
 
-## Interaction Panel
-
-<div class="divider"></div>
-
-The hotkeys displayed in the table below are valid for the Interaction Panel.
-
-| Hotkey                     | Description            |
+| Hotkey | Beschreibung |
 |----------------------------|------------------------|
-| ++ctrl+b++  <br> ++cmd+b++ | Clear the Chat         |
-| ++ctrl+shift+f++           | Toggle the Expert mode |
-
-
+| ++Strg+B++  <br> ++cmd+b++ | Löschen Sie den Chat |
+| ++Strg+Umschalt+F++ | Umschalten des Expertenmodus |

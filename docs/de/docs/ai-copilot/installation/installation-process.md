@@ -1,9 +1,9 @@
 ---
-title: "Installation Process"
-slug: "installation-process"
-hidden: false 
+title: "Installationsprozess"
+slug: "Installations-Prozess"
+ausgeblendet: false 
 ---
 
-# Install Cognigy AI Copilot
+# Cognigy AI Copilot installieren
 
-Install Cognigy AI Copilot with [Cognigy AI Copilot Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-agent-assist-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-agent-assist-helm-chart#readme).
+Installieren Sie Cognigy AI Copilot mit [Cognigy AI Copilot Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-agent-assist-helm-chart). Aktuelle Installationsanweisungen finden Sie unter [README.md](https://github.com/Cognigy/cognigy-agent-assist-helm-chart#readme).

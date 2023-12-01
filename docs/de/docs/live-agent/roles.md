@@ -1,196 +1,196 @@
 ---
-title: "Roles"
-slug: "roles" 
-hidden: false 
+Titel: "Rollen"
+Schnecke: "Rollen" 
+ausgeblendet: false 
 ---
 
-# Roles
+# Rollen
 
-In Live Agents, human agents can have three distinct user roles:
+In Live Agents können menschliche Agenten drei unterschiedliche Benutzerrollen haben:
 
 - [Agent](#agents)
-- [Supervisor](#supervisor)
+- [Vorgesetzter](#supervisor)
 - [Administrator](#administrator)
 
-These roles define the permissions and responsibilities of individuals using the Live Agents system.
+Diese Rollen definieren die Berechtigungen und Verantwortlichkeiten von Personen, die das Live Agents-System verwenden.
 
-## User Roles 
+## Benutzerrollen 
 
 ### Agent
 
-Agents in this role can access inboxes and conversations, assign conversations to other agents or themselves, and resolve conversations. They can access only the inboxes they are part of, participate in conversations within those inboxes, edit their user profile settings, and add personal-level canned responses. Conversation assignment is limited to inbox members.
+Agenten in dieser Rolle können auf Posteingänge und Konversationen zugreifen, Konversationen anderen Agenten oder sich selbst zuweisen und Konversationen lösen. Sie können nur auf die Posteingänge zugreifen, zu denen sie gehören, an Unterhaltungen in diesen Posteingängen teilnehmen, ihre Benutzerprofileinstellungen bearbeiten und vorgefertigte Antworten auf persönlicher Ebene hinzufügen. Die Zuweisung von Unterhaltungen ist auf Mitglieder des Posteingangs beschränkt.
 
-### Supervisor
+### Vorgesetzter
 
-Supervisors have unique access to the supervisor dashboard to observe conversation metrics and are also able to see and interact with all inboxes.
+Vorgesetzte haben eindeutigen Zugriff auf das Supervisor-Dashboard, um Konversationsmetriken zu beobachten, und können auch alle Posteingänge sehen und mit ihnen interagieren.
 
-### Administrator
+### Verwalter
 
-Administrators have access to all Cognigy Live Agent features enabled for your account, including settings, as well as all of a normal agent's privileges, except for the supervisor dashboard. This dashboard is exclusive to the supervisor role.
+Administratoren haben Zugriff auf alle Cognigy Live Agent-Funktionen, die für Ihr Konto aktiviert sind, einschließlich der Einstellungen, sowie auf alle Berechtigungen eines normalen Agenten, mit Ausnahme des Supervisor-Dashboards. Dieses Dashboard ist exklusiv für die Supervisor-Rolle.
 
-## Permissions
+## Berechtigungen
 
-The following tables show single role permissions of Agents, Supervisors and Administrators.
+In den folgenden Tabellen sind die Berechtigungen für einzelne Rollen von Agenten, Supervisoren und Administratoren aufgeführt.
 
-### Agents
+### Agenten
 
-| Actions                         | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |---------------------------------|-------|------------|---------------|
-| Create an Agent [^1]            |  -    | -          | +             |
-| Edit an Agent [^1]              |  -    | -          | +             |
-| Delete an Agent[^1]             |  -    | -          | +             |
-| Assign an Agent                 |  +    | +          | +             |
+| Erstellen eines Agenten [^1] |  -    | -          | +             |
+| Bearbeiten eines Agenten [^1] |  -    | -          | +             |
+| Löschen eines Agenten[^1] |  -    | -          | +             |
+| Zuweisen eines Agenten |  +    | +          | +             |
 
-[^1]: This permission is granted on the Cognigy.AI side.
+[^1]: Diese Berechtigung wird auf der Cognigy.AI Seite erteilt.
 
-### Teams
+### Mannschaften
 
-| Actions                             | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |-------------------------------------|-------|------------|---------------|
-| Create a team                       | -     | -          | +             |
-| Assign a team within a conversation | +     | +          | +             |
-| Edit a team                         | -     | -          | +             |
-| Delete a team                       | -     | -          | +             |
-| Allow Auto Assign for a team        | -     | -          | +             |
+| Erstellen Sie ein Team | -     | -          | +             |
+| Zuweisen eines Teams innerhalb einer Konversation | +     | +          | +             |
+| Bearbeiten eines Teams | -     | -          | +             |
+| Löschen eines Teams | -     | -          | +             |
+| Automatische Zuweisung für ein Team zulassen | -     | -          | +             |
 
-### Inboxes
+### Posteingänge
 
-| Actions                                    | Agent | Supervisor | Administrator  |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |--------------------------------------------|-------|------------|----------------|
-| Create an Inbox                            |  -    | -          | +              |
-| Edit an Inbox                              |  -    | -          | +              |
-| Delete an Inbox                            |  -    | -          | +              |
-| Create Assist Bot                          |  -    | -          | +              |
-| Edit Assist Bot                            |  -    | -          | +              |
-| Delete Assist Bot                          |  -    | -          | +              |
-| Add Agents to the Inbox                    |  -    | -          | +              |
-| Remove Agents from the Inbox               |  -    | -          | +              |
-| Configure Conversation Assignment Settings |  -    | -          | +              |
+| Erstellen eines Posteingangs |  -    | -          | +              |
+| Bearbeiten eines Posteingangs |  -    | -          | +              |
+| Löschen eines Posteingangs |  -    | -          | +              |
+| Assist-Bot erstellen |  -    | -          | +              |
+| Assist-Bot bearbeiten |  -    | -          | +              |
+| Assist-Bot löschen |  -    | -          | +              |
+| Hinzufügen von Agenten zum Posteingang |  -    | -          | +              |
+| Entfernen von Agenten aus dem Posteingang |  -    | -          | +              |
+| Konfigurieren von Einstellungen für die Konversationszuweisung |  -    | -          | +              |
 
-### Conversations
+### Unterhaltungen
 
-| Actions                              | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |--------------------------------------|-------|------------|---------------|
-| Resolve Conversations                | +     | +          | +             |
-| Clear Conversation History           | -     | +          | +             |
-| Mute Conversation                    | +     | +          | +             |
-| Send Transcript                      | +     | +          | +             |
-| Edit User Contact Profile            | -     | +          | +             |
-| Assign an Agent                      | +     | +          | +             |
-| Assign a Team                        | +     | +          | +             |
-| Select Priority                      | +     | +          | +             |
-| Filter Conversations                 | +     | +          | +             |
-| Sort Conversations                   | +     | +          | +             |
-| Search for messages in conversations | +     | +          | +             |
+| Konversationen lösen | +     | +          | +             |
+| Konversationsverlauf löschen | -     | +          | +             |
+| Stummschaltung der Konversation | +     | +          | +             |
+| Transkript senden | +     | +          | +             |
+| Benutzerkontaktprofil bearbeiten | -     | +          | +             |
+| Zuweisen eines Agenten | +     | +          | +             |
+| Zuweisen eines Teams | +     | +          | +             |
+| Wählen Sie Priorität | +     | +          | +             |
+| Unterhaltungen filtern | +     | +          | +             |
+| Unterhaltungen sortieren | +     | +          | +             |
+| Suchen nach Nachrichten in Unterhaltungen | +     | +          | +             |
 
-### Attachments
+### Anhänge
 
-| Actions                                        | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |------------------------------------------------|-------|------------|---------------|
-| Send Attachments within a conversation         | +     | +          | +             |
-| Request Attachments within a conversation [^2] | +     | +          | +             |
-| View Attachments                               | -     | -          | +             |
-| Sort Attachments                               | -     | -          | +             |
-| Filter Attachments                             | -     | -          | +             |
-| Delete Attachments                             | -     | -          | +             |
-| Download Attachments                           | -     | -          | +             |
+| Anhänge innerhalb einer Konversation senden | +     | +          | +             |
+| Anhänge innerhalb einer Konversation anfordern [^2] | +     | +          | +             |
+| Anhänge anzeigen | -     | -          | +             |
+| Anhänge sortieren | -     | -          | +             |
+| Anhänge filtern | -     | -          | +             |
+| Anhänge löschen | -     | -          | +             |
+| Anhänge herunterladen | -     | -          | +             |
 
-[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+[^2]: Standardmäßig können menschliche Agenten keine Dateien von Benutzern anfordern. Um diese Funktion zu aktivieren, müssen Sie das Plugin [Datei-Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) im [Webchat-Endpunkt](.. /ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
 
-### Audit Logs
+### Audit-Protokolle
 
-| Actions                                        | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |------------------------------------------------|-------|------------|---------------|
-| Read Audit Logs                                | -     | -          | +             |
+| Audit-Protokolle lesen | -     | -          | +             |
 
-### Automation Rules
+### Automatisierungsregeln
 
-| Actions                                        | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |------------------------------------------------|-------|------------|---------------|
-| Add Automation Rules                           | -     | -          | +             |
-| Edit Automation Rules                          | -     | -          | +             |
-| Clone Automation Rules                         | -     | -          | +             |
-| Delete Automation Rules                        | -     | -          | +             |
-| Activate Automation Rules                      | -     | -          | +             |
-| Deactivate Automation Rules                    | -     | -          | +             |
+| Hinzufügen von Automatisierungsregeln | -     | -          | +             |
+| Automatisierungsregeln bearbeiten | -     | -          | +             |
+| Regeln für die Klonautomatisierung | -     | -          | +             |
+| Automatisierungsregeln löschen | -     | -          | +             |
+| Automatisierungsregeln aktivieren | -     | -          | +             |
+| Automatisierungsregeln deaktivieren | -     | -          | +             |
 
-### Labels
+### Etiketten
 
-| Actions                                        | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |------------------------------------------------|-------|------------|---------------|
-| Create a Label                                 | -     | +          | +             |
-| Edit a Label                                   | -     | +          | +             |
-| Delete a Label                                 | -     | +          | +             |
-| Add a Label to a conversation                  | +     | +          | +             |
+| Erstellen eines Etiketts | -     | +          | +             |
+| Bearbeiten einer Beschriftung | -     | +          | +             |
+| Löschen eines Labels | -     | +          | +             |
+| Hinzufügen eines Labels zu einer Konversation | +     | +          | +             |
 
-### Skills
+### Fertigkeiten
 
-| Actions                                        | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |------------------------------------------------|-------|------------|---------------|
-| Add Skills                                     | -     | +          | +             |
-| Edit Skills                                    | -     | +          | +             |
-| Delete Skills                                  | -     | +          | +             |
-| Add Skills to an Agent                         | -     | -          | +             |
+| Fertigkeiten hinzufügen | -     | +          | +             |
+| Fertigkeiten bearbeiten | -     | +          | +             |
+| Fertigkeiten löschen | -     | +          | +             |
+| Hinzufügen von Fertigkeiten zu einem Agenten | -     | -          | +             |
 
-### Canned Responses
+### Vorgefertigte Antworten
 
-| Actions                                     | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |---------------------------------------------|-------|------------|---------------|
-| Create a Canned Response [^3]               | +     | +          | +             |
-| Use a Canned Response within a conversation | +     | +          | +             |
-| Edit a Canned Response [^3]                 | +     | +          | +             |
-| Delete a Canned Response [^3]               | +     | +          | +             |
-| Import Canned Responses [^3]                | +     | +          | +             |
+| Erstellen einer vorgefertigten Antwort [^3] | +     | +          | +             |
+| Verwenden einer vorgefertigten Antwort in einer Konversation | +     | +          | +             |
+| Eine vorgefertigte Antwort bearbeiten [^3] | +     | +          | +             |
+| Löschen einer vorgefertigten Antwort [^3] | +     | +          | +             |
+| Vorgefertigte Antworten importieren [^3] | +     | +          | +             |
 
-[^3]: Users with the Agent role can create canned responses for their own usage, edit, and delete canned resources that they created.
+[^3]: Benutzer mit der Rolle "Agent" können vorgefertigte Antworten für ihre eigene Verwendung erstellen, gespeicherte Ressourcen bearbeiten und löschen, die sie erstellt haben.
 
-### Reports
+### Berichte
 
-| Actions                  | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |--------------------------|-------|------------|---------------|
-| View the Overview Report | -     | +          | -             |
-| View the Inbox Report    | -     | +          | +             |
-| View the Agent Report    | -     | +          | +             |
-| View the Label Report    | -     | +          | +             |
-| View the Team Report     | -     | +          | +             |
-| Download Reports         | -     | +          | +             |
+| Übersichtsbericht anzeigen | -     | +          | -             |
+| Anzeigen des Posteingangsberichts | -     | +          | +             |
+| Anzeigen des Agentenberichts | -     | +          | +             |
+| Anzeigen des Etikettenberichts | -     | +          | +             |
+| Teambericht anzeigen | -     | +          | +             |
+| Berichte herunterladen | -     | +          | +             |
 
-### Assistants
+### Assistenten
 
-| Actions                        | Agent | Supervisor | Administrator |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |--------------------------------|-------|------------|---------------|
-| **LA AI Copilott**             |       |            |               |
-| Activate AI Copilot Workspace  | +     | +          | +             |
-| **Assist Bot**                 |       |            |               |
-| Edit Assist Bot Settings       | +     | +          | +             |
-| Reset Session                  | +     | +          | +             |
+| **LA AI Copilott** |       |            |               |
+| AI Copilot Workspace aktivieren | +     | +          | +             |
+| **Bot unterstützen** |       |            |               |
+| Assist-Bot-Einstellungen bearbeiten | +     | +          | +             |
+| Sitzung zurücksetzen | +     | +          | +             |
 
-### Account and Profile Settings
+### Konto- und Profileinstellungen
 
-| Actions                               | Agent | Supervisor | Administrator  |
+| Aktionen | Bearbeiter | Betreuer | Sachbearbeiter |
 |---------------------------------------|-------|------------|----------------|
-| Configure Account Settings            |   -   |     -      | +              |
-| Configure Profile Settings            |   +   |     +      | +              |
+| Kontoeinstellungen konfigurieren |   -   |     -      | +              |
+| Konfigurieren von Profileinstellungen |   +   |     +      | +              |
 
-## Assign Roles
+## Rollen zuweisen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../release-notes/4.44.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.44-blue.svg)] (.. /release-notes/4.44.md)
 
-You can assign roles to human agent.
+Sie können dem menschlichen Agenten Rollen zuweisen.
 
-To create an Agent with certain access rights, do the following steps:
+Um einen Agenten mit bestimmten Zugriffsrechten zu erstellen, führen Sie die folgenden Schritte aus:
 
-1. Create an Agent from the [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md).
-2. Assign one of the following roles to the Agent:
-    - `liveAgentAgent`
-    - `liveAgentSupervisor`
-    - `liveAgentAdmin` <br>If you have an Admin role in Cognigy.AI, you do not need to add the Administrator role for your user because the Cognigy.AI role already includes the right to administer Live Agent.
-3. _(Optional)_ Add any additional roles the Agent should have. For example, if you already have a `liveAgentAgent` role, you can add a `liveAgentSupervisor` role to allow access to the Overview report.
-4. View the created user in Live Agent. Go to **Settings > Agents** in the Live Agent menu.
+1. Erstellen Sie einen Agenten über die [Cognigy.AI Access Control](.. /ai/tools/user-menu/access-control.md).
+2. Weisen Sie dem Agenten eine der folgenden Rollen zu:
+    - 'liveAgentAgent'
+    - 'liveAgentSupervisor'
+    - 'liveAgentAdmin' <br>Wenn Sie eine Administratorrolle in Cognigy.AI haben, müssen Sie die Administratorrolle für Ihren Benutzer nicht hinzufügen, da die Cognigy.AI Rolle bereits das Recht zum Verwalten von Live Agent enthält.
+3. _(Optional)_ Fügen Sie alle zusätzlichen Rollen hinzu, die der Agent haben soll. Wenn Sie z. B. bereits über eine Rolle "liveAgentAgent" verfügen, können Sie eine Rolle "liveAgentSupervisor" hinzufügen, um den Zugriff auf den Übersichtsbericht zu ermöglichen.
+4. Zeigen Sie den erstellten Benutzer in Live Agent an. Gehen Sie zu **Einstellungen > Agenten** im Live Agent-Menü.
 
-To see the roles applied to the Agent, the specific Agent must log in once to have the roles applied.
+Um die auf den Agenten angewendeten Rollen anzuzeigen, muss sich der jeweilige Agent einmal anmelden, damit die Rollen angewendet werden.
 
-## More Information
+## Mehr Informationen
 
-- [Conversation Workflow](./conversation/conversation-workflow.md)
-- [Account Settings](./settings/account-settings.md)
+- [Konversations-Workflow](./Konversation/Konversations-Workflow.md)
+- [Kontoeinstellungen](./settings/account-settings.md)

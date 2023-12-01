@@ -1,212 +1,199 @@
 ---
- title: "HTTP Request" 
- slug: "http-request" 
- hidden: false 
+ title: "HTTP-Anfrage" 
+ slug: "HTTP-Anfrage" 
+ ausgeblendet: false 
 ---
-# HTTP Request
+# HTTP-Anfrage
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/http-request.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-By using the **HTTP Request Node** you are able to perform an HTTP request to a specific resource from within a [Flow]({{config.site_url}}ai/resources/build/flows/).
+## Beschreibung<div class="divider"></div>Durch die Verwendung des **HTTP Request Node** können Sie eine HTTP-Anforderung an eine bestimmte Ressource aus einem [Flow]({{config.site_url}}ai/resources/build/flows/) ausführen.
 
-Whenever the HTTP Request Node gets triggered within a [Flow]({{config.site_url}}ai/resources/build/flows/) execution it will perform the defined request to the specified URL.
+Wann immer der HTTP-Anforderungsknoten innerhalb einer [Flow]({{config.site_url}}ai/resources/build/flows/)-Ausführung ausgelöst wird, führt er die definierte Anforderung an die angegebene URL aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b29e843-http-screenshot.jpg" width="100%" />
-  <figcaption>HTTP Request Node Configuration Prompt</figcaption>
+  <figcaption>Eingabeaufforderung zur Konfiguration des HTTP-Anforderungsknotens</figcaption>
 </figure>
 
-## Request Methods
-<div class="divider"></div>
-The HTTP Node can execute the typical CRUD methods, which are:
+## Anfrage-Methoden<div class="divider"></div>Der HTTP-Knoten kann die typischen CRUD-Methoden ausführen, die wie folgt lauten:
 
-- GET
-- POST
-- PATCH
-- PUT
-- DELETE
+-ERHALTEN
+-BEREITSTELLEN
+-FLICKEN
+-STELLEN
+-LÖSCHEN
 
-## General Configuration
-<div class="divider"></div>
-Each request method has certain fields which it shares with the other methods. These are the fields:
+## Allgemeine Konfiguration<div class="divider"></div>Jede Anforderungsmethode verfügt über bestimmte Felder, die sie mit den anderen Methoden teilt. Dies sind die Felder:
 
-- URL
-- Headers
-- Authorization Type
-- Context Store
-- Async
-- Caching
-    - Cache Expiry
+- Internetadresse
+-Kopfball
+- Art der Autorisierung
+- Kontext-Speicher
+-Asynchron
+-Caching
+    - Ablauf des Caches
 ### URL
 ---
-The URL to the targeted resource: `https://api-endpoint.com/resource`.
+Die URL zur Zielressource: 'https://api-endpoint.com/resource'.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b29e843-http-screenshot.jpg" width="100%" />
-  <figcaption>URL field</figcaption>
+  <figcaption>URL-Feld</figcaption>
 </figure>
 
-!!! warning "URL-Encoding"
-    Cognigy.AI expects an un-encoded URL to the targeted resource. Decode any encoded URL to ensure that the HTTP Request can be executed successfully. 
+!!! Warnung "URL-Kodierung"
+    Cognigy.AI erwartet eine nicht codierte URL zur Zielressource. Dekodieren Sie alle codierten URLs, um sicherzustellen, dass die HTTP-Anforderung erfolgreich ausgeführt werden kann. 
 
-    For more information see [URL encoding (on en:WP)](https://en.wikipedia.org/wiki/URL%20encoding).
+Weitere Informationen finden Sie unter [URL-Kodierung (auf en:WP)](https://en.wikipedia.org/wiki/URL%20encoding).
 
-### Headers
+### Kopfzeilen
 ---
-Here you can add the headers to your HTTP request. All headers are listed in one JSON object, which should have the following format.
+Hier können Sie die Header zu Ihrem HTTP-Request hinzufügen. Alle Header werden in einem JSON-Objekt aufgelistet, das das folgende Format haben sollte.
 
-```
+'''
 {
-  "header-name": "header value",
-  "another-header-name": "another header value"
+  "header-name": "Header-Wert",
+  "another-header-name": "ein anderer Header-Wert"
 }
-```
+'''
 
-To make it easier to add headers, we created a list of key-value fields that can be filled with strings. As soon as you enter a new value a new pair will appear.
+Um das Hinzufügen von Kopfzeilen zu erleichtern, haben wir eine Liste von Schlüssel-Wert-Feldern erstellt, die mit Zeichenfolgen gefüllt werden können. Sobald Sie einen neuen Wert eingeben, erscheint ein neues Paar.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/http-request-node-headers1.png" width="75%" />
-  <figcaption>Key-Value pairs</figcaption>
+  <figcaption>Schlüssel-Wert-Paare</figcaption>
 </figure>
 
-Alternatively you can press the `Use JSON Editor` button to toggle between this list and the JSON editor. The resulting JSON will always be the same.
+Alternativ können Sie auf die Schaltfläche "JSON-Editor verwenden" klicken, um zwischen dieser Liste und dem JSON-Editor zu wechseln. Der resultierende JSON-Code ist immer derselbe.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/http-request-node-headers2.png" width="75%" />
-  <figcaption>JSON Editor</figcaption>
+  <figcaption>JSON-Editor</figcaption>
 </figure>
 
-You can also enable capturing the response headers along with the request body in the specified storage location.
+Sie können auch die Erfassung der Antwortheader zusammen mit dem Anforderungstext am angegebenen Speicherort aktivieren.
 
-### Authentication
+### Authentifizierung
 ---
-The supported types are:
+Folgende Typen werden unterstützt:
 
-- No Auth
-- Basic Auth
-- OAuth2
-- API Key - "Authorization: ApiKey"
-- API Key - "X-API-Key"
+- Keine Authentifizierung
+- Grundlegende Authentifizierung
+- OAuth2-Schnittstelle
+- API-Schlüssel - "Autorisierung: ApiKey"
+- API-Schlüssel - "X-API-Schlüssel"
 
-Authentication makes use of [Connections]({{config.site_url}}ai/resources/build/connections/), which means that the actual authentication information can be encrypted. 
+Die Authentifizierung verwendet [Connections]({{config.site_url}}ai/resources/build/connections/), was bedeutet, dass die eigentlichen Authentifizierungsinformationen verschlüsselt werden können. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/32a68b3-authentication.jpg" width="100%" />
-  <figcaption>Authorization Selection</figcaption>
+  <figcaption>Auswahl der Berechtigungen</figcaption>
 </figure>
 
-When a new authentication connection is created by clicking the "+" button next to the Parameters field, the "New Connection" window will appear to request the details specific to the authentication type.
+Wenn eine neue Authentifizierungsverbindung erstellt wird, indem Sie auf die Schaltfläche "+" neben dem Feld Parameter klicken, wird das Fenster "Neue Verbindung" angezeigt, in dem Sie die für den Authentifizierungstyp spezifischen Details anfordern können.
 
-As an example: The OAuth2 Connection is displayed below, allowing customized parameters to be configured.
+Als Beispiel: Unten wird die OAuth2-Verbindung angezeigt, mit der benutzerdefinierte Parameter konfiguriert werden können.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/312b81a-Oauth2_Connection.PNG" width="100%" />
-  <figcaption>Example Connection: OAuth2</figcaption>
+  <figcaption>Beispiel für eine Verbindung: OAuth2</figcaption>
 </figure>
 
-In case you select an authorization type other than *No Auth*, additional fields will be provided which relate to the respective authorization type.
+Wenn Sie einen anderen Autorisierungstyp als *No Auth* auswählen, werden zusätzliche Felder zur Verfügung gestellt, die sich auf den jeweiligen Autorisierungstyp beziehen.
 
-### Storage Options
+### Speicheroptionen
 ---
-Here you define the context key where you want to store the response from the executed HTTP request. This field is required and needs to have a valid value.
+Hier legen Sie den Kontextschlüssel fest, in dem Sie die Antwort aus dem ausgeführten HTTP-Request speichern möchten. Dieses Feld ist erforderlich und muss einen gültigen Wert aufweisen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
-  <figcaption>Context Store field</figcaption>
+  <figcaption>Feld "Kontextspeicher"</figcaption>
 </figure>
 
-After the HTTP request has been successfully executed you can access the response payload by executing the following [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/):
+Nachdem die HTTP-Anforderung erfolgreich ausgeführt wurde, können Sie auf die Antwortnutzlast zugreifen, indem Sie Folgendes ausführen [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/):
 
-```
-{{ " {{ context.<yourContextStore> }}" }}
-```
+'''
+{{ " {{ Kontext.<yourContextStore> }}" }}
+'''
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/310d590-http-caching.jpg" width="100%" />
-  <figcaption>Execution and Caching</figcaption>
+  <figcaption>Ausführung und Caching</figcaption>
 </figure>
 
-### Execution & Caching
-#### Execute Requests asynchronously
-When enabled, the HTTP Request Node will execute the request asynchronously, meaning that it will not wait for a response before continuing flow execution
+### Ausführung & Caching
+#### Anforderungen asynchron ausführen
+Wenn diese Option aktiviert ist, führt der HTTP-Anforderungsknoten die Anforderung asynchron aus, d. h., er wartet nicht auf eine Antwort, bevor er mit der Ausführung des Flows fortfährt
 
-#### Cache Results
-When enabled the HTTP Node will cache the responses.
+#### Cache-Ergebnisse
+Wenn diese Option aktiviert ist, speichert der HTTP-Knoten die Antworten zwischen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7cd129c-ssl.JPG" width="100%" />
-  <figcaption>Security</figcaption>
+  <figcaption>Sicherheit</figcaption>
 </figure>
 
-### Security
-#### Allow Insecure SSL
-By default, Cognigy.AI will reject connecting against insecure SSL endpoints, such as URLs with no or self-signed certificates. Activating this option will allow the Node to connect against these URLs as well.
+### Sicherheit
+#### Unsicheres SSL zulassen
+Standardmäßig lehnt Cognigy.AI die Verbindung mit unsicheren SSL-Endpunkten ab, z. B. URLs ohne oder mit selbstsignierten Zertifikaten. Wenn Sie diese Option aktivieren, kann der Node auch eine Verbindung zu diesen URLs herstellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c971806-errors.JPG" width="100%" />
-  <figcaption>Error Handling</figcaption>
+  <figcaption>Fehlerbehandlung</figcaption>
 </figure>
 
-### Error Handling
-#### Error Logging
-If HTTP Requests return a status code > 299, the response is considered an error. This setting allows the user to either:
+### Fehlerbehandlung
+#### Fehlerprotokollierung
+Wenn HTTP-Anforderungen den Statuscode > 299 zurückgeben, wird die Antwort als Fehler betrachtet. Mit dieser Einstellung kann der Benutzer entweder:
 
-- not log the error
-- log the error with the response from the server and the URL
-- log the error, the response, the URL and the request payload (**WARNING**: This could expose sensitive data in the logs)
+- den Fehler nicht protokollieren
+- Protokollieren Sie den Fehler mit der Antwort vom Server und der URL
+- Protokollieren Sie den Fehler, die Antwort, die URL und die Anforderungsnutzlast (**WARNUNG**: Dies könnte sensible Daten in den Protokollen offenlegen)
 
-#### Abort Flow Execution on Error
-If active, the Flow will stop here if the response returned with a status code > 299
+#### Flow-Ausführung bei Fehler abbrechen
+Wenn aktiv, wird der Flow hier beendet, wenn die Antwort mit dem Statuscode > 299 zurückgegeben wird
 
-## GET Requests
-<div class="divider"></div>
-The GET method configuration prompt has all the fields described above.
+## GET-Anfragen<div class="divider"></div>Die Konfigurationsaufforderung für die GET-Methode enthält alle oben beschriebenen Felder.
 
-The results of the GET request are stored in the context of the flow. You can retrieve the requested data of your GET request by accessing the context with the key you defined in the HTTP Node settings.
+Die Ergebnisse der GET-Anforderung werden im Kontext des Flows gespeichert. Sie können die angeforderten Daten Ihrer GET-Anforderung abrufen, indem Sie mit dem Schlüssel, den Sie in den HTTP-Node-Einstellungen definiert haben, auf den Kontext zugreifen.
 
-## POST, PUT and PATCH Requests
-<div class="divider"></div>
+## POST-, PUT- und PATCH-Anfragen<div class="divider"></div>!!! Hinweis "Content-Type-Header"
+    Der standardmäßige Content-Type-Header lautet *application/x-www-form-urlencoded*. Wenn Sie einen anderen Content-Type senden möchten, müssen Sie den Header-Wert spezifisch festlegen oder JSON wie unten beschrieben verwenden.
 
-!!! note "Content-Type Headers"
-    The standard Content-Type header is *application/x-www-form-urlencoded*. If you want to send another Content-Type, you have to set the header value specifically or use JSON as described below.
+### Nutzlast
+Hier können Sie die Payload Ihres POST-, PUT- oder PATCH-Requests definieren. Sie können zwischen JSON (Standard) und Text wählen.
 
-### Payload
-Here you can define the payload of your POST, PUT or PATCH request. You can choose between JSON (standard) and Text.
-
-When using a JSON payload to access Cognigy objects such as Input, Context, or Profile, refer to [CognigyScript](../../tools/cognigy-script.md#for-json-arguments) for an example payload.
+Wenn Sie eine JSON-Payload für den Zugriff auf Cognigy-Objekte wie Input, Context oder Profile verwenden, lesen Sie [CognigyScript](.. /.. /tools/cognigy-script.md#for-json-arguments) für eine Beispielnutzlast.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b364540-http-post-payload.jpg" width="100%" />
-  <figcaption>JSON as a POST, PUT or PATCH Request Payload</figcaption>
+  <figcaption>JSON als POST-, PUT- oder PATCH-Request-Payload</figcaption>
 </figure>
 
-Payloads can be text, JSON, XML, Formdata (see below) or any other textual data.
+Bei den Payloads kann es sich um Text, JSON, XML, Formdata (siehe unten) oder andere Textdaten handeln.
 
-!!! tip "application/x-www-form-urlencoded"
-    You can send URL Encoded data by setting no specific header and then sending a URLEncoded non-JSON payload such as *"To=%2B49555262626&Url=https%3A%2F%2Fhandler.twilio.com%2Ftwiml%2FEHf9b7af093c31b5baa1414be891"*
+!!! Tipp "application/x-www-form-urlencoded"
+    Sie können URL-codierte Daten senden, indem Sie keinen bestimmten Header festlegen und dann eine URLEncodierte Nicht-JSON-Payload senden, z. B. *"To=%2B49555262626&Url=https%3A%2F%2Fhandler.twilio.com%2Ftwiml%2FEHf9b7af093c31b5baa1414be891"*
 
-With Cognigy.AI 4.10.0 **Form-Data** as "Payload Type" has been added to the HTTP Node descriptor.
+Mit Cognigy.AI 4.10.0 wurde **Form-Data** als "Payload Type" zum HTTP Node Deskriptor hinzugefügt.
 
-How to use it:
+Wie benutzt man es:
 
-• Insert an HTTP Request Node in your Flow.
+• Fügen Sie einen HTTP-Anforderungsknoten in Ihren Flow ein.
 
-• The methods POST, PUT, PATCH section "payload" provide an additional payload-type in the dropdown: "Form-Data".
+• Die Methoden POST, PUT, PATCH Abschnitt "payload" stellen einen zusätzlichen Payload-Typ im Dropdown zur Verfügung: "Form-Data".
 
-• When you select Form-Data, you are able to save key-value pairs as JSON payload.
+• Wenn Sie Formulardaten auswählen, können Sie Schlüssel-Wert-Paare als JSON-Nutzlast speichern.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/HTTP request Node.png" width="80%" />
-  <figcaption>HTTP Request Node editor</figcaption>
+  <figcaption>Editor für HTTP-Anforderungsknoten</figcaption>
 </figure>
-!!! note "Note"
-    The key-value pairs must be of type text. Data is not supported.
+!!! Notiz "Notiz"
+    Die Schlüssel-Wert-Paare müssen vom Typ Text sein. Daten werden nicht unterstützt.
 
-When using the Interaction Panel you can inspect the response in the "Interaction Panel" INFO tab.
+Wenn Sie das Interaktions-Panel verwenden, können Sie die Antwort auf der Registerkarte "Interaction Panel" (INFO) überprüfen.
 
-## DELETE Requests
-<div class="divider"></div>
-The DELETE request configuration prompt exposes the **General Configuration** fields (see above).
+## DELETE-Anfragen<div class="divider"></div>Die Eingabeaufforderung zur Konfiguration der DELETE-Anforderung zeigt die Felder **Allgemeine Konfiguration** an (siehe oben).</yourContextStore>

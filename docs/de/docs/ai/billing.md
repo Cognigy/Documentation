@@ -1,101 +1,101 @@
 ---
- title: "Billing" 
- slug: "billing" 
- hidden: false 
+ Titel: "Abrechnung" 
+ Slug: "Abrechnung" 
+ ausgeblendet: false 
 ---
 
-# Billing
+# Abrechnung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.52-blue.svg)] (.. /release-notes/4.52.md)
 
-Cognigy has only one billable unit - a *conversation*. A billed conversation is an interaction between a user and a virtual or human agent, and represents one unit of consumption.
+Cognigy hat nur eine abrechenbare Einheit - eine *Konversation*. Eine abgerechnete Konversation ist eine Interaktion zwischen einem Benutzer und einem virtuellen oder menschlichen Agenten und stellt eine Verbrauchseinheit dar.
 
-The billed conversation begins when a user sends their initial *input*, which can be either a chat or voice message.
+Die abgerechnete Konversation beginnt, wenn ein Benutzer seine erste *Eingabe* sendet, bei der es sich entweder um einen Chat oder eine Sprachnachricht handeln kann.
 
-The conversation will be ended for any of the following reasons:
+Die Konversation wird aus einem der folgenden Gründe beendet:
 
-- The user left a chat. 
-- The human agent resolved a conversation. 
-- The conversation has more than 50 user inputs. The 51st input will begin a new conversation. 
-- The conversation is limited to a 24-hour period. Any user input sent after this time will begin a new conversation. 
-- The user reloaded a browser page.
+- Der Benutzer hat einen Chat verlassen. 
+- Der menschliche Agent hat eine Konversation gelöst. 
+- Die Konversation hat mehr als 50 Benutzereingaben. Mit der 51. Eingabe beginnt eine neue Konversation. 
+- Die Konversation ist auf einen Zeitraum von 24 Stunden beschränkt. Jede Benutzereingabe, die nach dieser Zeit gesendet wird, beginnt eine neue Konversation. 
+- Der Benutzer hat eine Browserseite neu geladen.
 
-## Common scenarios
+## Häufige Szenarien
 
-The following scenarios provide examples of billing for conversations.
+Die folgenden Szenarien enthalten Beispiele für die Abrechnung von Unterhaltungen.
 
-The 24-hour period is determined according to your server time zone setting. Contact your administrator if you want to change this time zone setting.
+Der 24-Stunden-Zeitraum wird entsprechend der Zeitzoneneinstellung Ihres Servers bestimmt. Wenden Sie sich an Ihren Administrator, wenn Sie diese Zeitzoneneinstellung ändern möchten.
 
-### Scenario 1
+### Szenario 1
 
-A user sent less than 50 inputs during the conversation within 24 hours.
+Ein Benutzer hat innerhalb von 24 Stunden weniger als 50 Eingaben während der Konversation gesendet.
 
-Example: 50 user inputs.
+Beispiel: 50 Benutzereingaben.
 
-Billing: It will be charged as one conversation
+Abrechnung: Es wird als eine Konversation abgerechnet
 
-### Scenario 2
+### Szenario 2
 
-A user sent more than 50 inputs during the conversation within 24 hours.
+Ein Benutzer hat innerhalb von 24 Stunden mehr als 50 Eingaben während der Konversation gesendet.
 
-Example: 101 user inputs.
+Beispiel: 101 Benutzereingaben.
 
-Billing: It will be charged as 3 conversations.
+Abrechnung: Es wird als 3 Gespräche abgerechnet.
 
-### Scenario 3
+### Szenario 3
 
-A user sent less than 50 messages during the conversation within 30 hours.
+Ein Benutzer hat während der Konversation innerhalb von 30 Stunden weniger als 50 Nachrichten gesendet.
 
-Example: 49 user inputs.
+Beispiel: 49 Benutzereingaben.
 
-Billing: It will be charged as 2 conversations.
+Abrechnung: Es werden 2 Gespräche abgerechnet.
 
-### Scenario 4
+### Szenario 4
 
-A user sent more than 50 messages during the conversation within 30 hours.
+Ein Benutzer hat während der Konversation innerhalb von 30 Stunden mehr als 50 Nachrichten gesendet.
 
-Example 1: 78 user inputs -> 49 within 24 hours and 29 within the next 6 hours.
+Beispiel 1: 78 Benutzereingaben > 49 innerhalb von 24 Stunden und 29 innerhalb der nächsten 6 Stunden.
 
-Billing 1: It will be charged as 2 conversations.
+Abrechnung 1: Es werden 2 Gespräche abgerechnet.
 
-Example 2: 78 user inputs -> 5 within 24 hours, 73 within the next 6 hours.
+Beispiel 2: 78 Benutzereingaben > 5 innerhalb von 24 Stunden, 73 innerhalb der nächsten 6 Stunden.
 
-Billing 2: It will be charged as 3 conversations.
+Abrechnung 2: Es werden 3 Gespräche abgerechnet.
 
 ## xApps
 
-The xApps are a separately licensed Cognigy feature, which must be purchased as an add-on to the Cognigy.AI license.
+Bei den xApps handelt es sich um ein separat lizenziertes Cognigy-Feature, das als Add-on zur Cognigy.AI Lizenz erworben werden muss.
 
-In addition, the general billable unit for Cognigy.AI, the conversation, will be influenced if xApps are used. This is because an xApp session is part of a Cognigy session.
+Darüber hinaus wird die allgemeine abrechenbare Einheit für Cognigy.AI, die Konversation, beeinflusst, wenn xApps verwendet werden. Dies liegt daran, dass eine xApp-Sitzung Teil einer Cognigy-Sitzung ist.
 
-The xApp submit data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
+Die vom Flow empfangenen xApp-Übermittlungsdaten-Payload-Nachrichten werden als abrechnungsrelevante Nachrichten der bestehenden Konversation gezählt.
 
-Cognigy reserves the right to change the billing of xApps in the future.
+Cognigy behält sich das Recht vor, die Abrechnung von xApps in Zukunft zu ändern.
 
-### Scenario 1
+### Szenario 1
 
-During an xApp session, only the xApp submit data payload messages sent by the user are billed. 
+Während einer xApp-Sitzung werden nur die vom Benutzer gesendeten xApp-Übermittlungsdaten-Payload-Nachrichten in Rechnung gestellt. 
 
-Example: A user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). This scenario involves 3 user inputs.
+Beispiel: Ein Benutzer meldet sich an, indem er seine Anmeldedaten eingibt und auf die Schaltfläche Autorisieren (Senden) klickt. Anschließend wählt der Benutzer einen Platz aus und klickt auf die Schaltfläche Bestätigen (Senden). Abschließend gibt der Nutzer auf der Zahlungsseite seine Kartendaten ein und klickt auf die Schaltfläche Bestellen (Absenden). Dieses Szenario umfasst 3 Benutzereingaben.
 
-Billing: It will be charged as 1 conversation. 
+Abrechnung: Es wird als 1 Gespräch berechnet. 
 
-### Scenario 2
+### Szenario 2
 
-Apart from the xApp nodes, a Flow may contain nodes that start and complete the main session. In this case, the xApp submit data payload messages and other user inputs from the main session are counted as part of the same session and conversation.
+Abgesehen von den xApp-Knoten kann ein Flow Knoten enthalten, die die Hauptsitzung starten und abschließen. In diesem Fall werden die xApp-Nutzlastnachrichten zum Senden von Daten und andere Benutzereingaben aus der Hauptsitzung als Teil derselben Sitzung und Konversation gezählt.
 
-Example: A user initiates a chat with a bot and sends 2 messages. This action triggers an xApp session. During the xApp session, the user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). After the xApp session is completed, the bot offers another option, and the user sends 2 more messages. This scenario involves 7 user inputs.
+Beispiel: Ein Benutzer initiiert einen Chat mit einem Bot und sendet 2 Nachrichten. Diese Aktion löst eine xApp-Sitzung aus. Während der xApp-Sitzung meldet sich der Benutzer an, indem er seine Anmeldeinformationen eingibt und auf die Schaltfläche Autorisieren (Senden) klickt. Anschließend wählt der Benutzer einen Platz aus und klickt auf die Schaltfläche Bestätigen (Senden). Abschließend gibt der Nutzer auf der Zahlungsseite seine Kartendaten ein und klickt auf die Schaltfläche Bestellen (Absenden). Nachdem die xApp-Sitzung abgeschlossen ist, bietet der Bot eine weitere Option an, und der Benutzer sendet 2 weitere Nachrichten. Dieses Szenario umfasst 7 Benutzereingaben.
 
-Billing: It will be charged as 1 conversation.
+Abrechnung: Es wird als 1 Gespräch berechnet.
 
-## Additional billing 
+## Zusätzliche Abrechnung 
 
-If you are using the following Endpoint [Transformers](../ai/endpoints/transformers/transformers.md):
+Wenn Sie den folgenden Endpunkt [Transformers](.. /ai/endpoints/transformers/transformers.md):
 
-- Input Transformer
-- Inject Transformer
-- Notify Transformer
+- Eingangs-Übertrager
+- Transformator einspritzen
+- Transformator benachrichtigen
   
-and you return a `falsy` value from them (for example `null`, `undefined` or `false`), the message processing will be terminated in Cognigy system, and no Flow will be executed. In this case, Cognigy will charge 1 conversation per 50 Transformer executions.
+und Sie einen 'falschen' Wert von ihnen zurückgeben (z.B. 'null', 'undefined' oder 'false'), wird die Nachrichtenverarbeitung im Cognigy-System beendet und es wird kein Flow ausgeführt. In diesem Fall berechnet Cognigy 1 Konversation pro 50 Transformer-Ausführungen.
 
-Example: You built an Endpoint which only uses the Input Transformer to implement a custom Handover Provider and you are always returning a `falsy` value of `null` from it. 50 Input Transformers will be executed for user inputs -> 1 conversation will be charged.
+Beispiel: Sie haben einen Endpunkt erstellt, der nur den Eingabetransformator verwendet, um einen benutzerdefinierten Übergabeanbieter zu implementieren, und Sie geben immer einen "falschen" Wert von "null" zurück. 50 Eingangstransformatoren werden für Benutzereingaben ausgeführt - > 1 Konversation wird berechnet.

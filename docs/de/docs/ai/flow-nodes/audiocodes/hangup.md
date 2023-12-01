@@ -1,19 +1,17 @@
 ---
- title: "Hangup" 
- slug: "hangup" 
- hidden: false 
+ Titel: "Auflegen" 
+ Schnecke: "auflegen" 
+ ausgeblendet: false 
 ---
-# Hangup
+# Auflegen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/hang-up.png" width="80%" />
-  <figcaption>AudioCodes Hang Up</figcaption>
+  <figcaption>AudioCodes hängen auf</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Hangup Node will instruct AudioCodes to end the call.
+## Beschreibung<div class="divider"></div>Der Hangup Node weist AudioCodes an, den Anruf zu beenden.
 
-| Parameter | Type          | Description                                              |
+| Parameter | Typ | Beschreibung |
 |-----------|---------------|----------------------------------------------------------|
-| Reasons   | CognigyScript | The reason for hanging up. Will show in AudioCodes logs. |
+| Gründe | CognigyScript | Der Grund für das Auflegen. Wird in den AudioCodes-Protokollen angezeigt. |

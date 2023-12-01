@@ -1,71 +1,55 @@
 ---
-title: "Overview" 
-slug: "overview" 
-hidden: false 
+Titel: "Übersicht" 
+Schnecke: "Übersicht" 
+ausgeblendet: false 
 ---
-# Overview
+# Übersicht
 
-Endpoints are the connector between your user interface and the Cognigy Agent.
-This connection can range from text-based conversation to a conversation on your contact center phone-lines.
+Endpunkte sind das Bindeglied zwischen Ihrer Benutzeroberfläche und dem Cognigy Agent.
+Diese Verbindung kann von einer textbasierten Konversation bis hin zu einer Konversation über die Telefonleitungen Ihres Contact Centers reichen.
 
-## Features
+## Eigenschaften<div class="divider"></div>Jeder Endpunkt verfügt über die folgenden Funktionen: 
 
-<div class="divider"></div>
+- Es zeigt auf ein einzelnes Gebietsschema eines einzelnen Flows eines einzelnen Snapshots
+- Es kann deaktiviert werden
+- Anpassung der [Datenschutz & Analytik](data-protection-and-analytics.md) 
+- es kann eine eigene [Transformer-Funktion](transformers/transformers.md) haben
 
-Every Endpoint has the following features: 
+Ausgewählte Endpunkte haben auch die Möglichkeit, die NLU anzupassen, die die Absichts- und Slotzuordnung für den Agenten bereitstellt.
 
-- it points to a single Locale of a single Flow of a single Snapshot
-- it can be disabled
-- customization of the [Data Protection & Analytics](data-protection-and-analytics.md) 
-- it can have its own [Transformer Function](transformers/transformers.md)
+Die [NLU-Konnektoren](.. /resources/build/nlu-connectors.md), die für den Agent konfiguriert sind, können in diesem Dropdown-Menü ausgewählt werden. Alternativ kann die [No NLU](.. /nlu/external-nlu/no-nlu.md) ausgewählt werden, um die Absichts- und Slot-Zuordnung für einen Endpunkt vollständig zu deaktivieren. 
 
-Selected Endpoints also have the option to customize the NLU that provides the Intent and Slot mapping for the agent.
+Darüber hinaus stehen endpunktspezifische Funktionen und Konfigurationsoptionen zur Verfügung.
 
-The [NLU Connectors](../resources/build/nlu-connectors.md) that are configured to the agent are available to select from this dropdown menu. Alternatively, the [No NLU](../nlu/external-nlu/no-nlu.md) option can be selected to completely disable the intent and slot mapping for an endpoint. 
-
-Additionally, there are Endpoint-specific features and configuration options available.
-
-## Cognigy Endpoints
-
-<div class="divider"></div>
-
-The following Endpoints are specific to the Cognigy.AI platform:
+## Cognigy-Endpunkte<div class="divider"></div>Die folgenden Endpunkte sind spezifisch für die Cognigy.AI Plattform:
 
 - [Cognigy Webchat](webchat/webchat.md) 
 - [Cognigy Voice Gateway](cognigy-vg.md) 
 
-## Generic Endpoints
-
-<div class="divider"></div>
-
-The following Endpoints are provided for custom integrations:
+## Generische Endpunkte<div class="divider"></div>Die folgenden Endpunkte werden für benutzerdefinierte Integrationen bereitgestellt:
 
 - [REST](rest.md) 
-- [Socket](socketio.md) 
+- [Steckdose](socketio.md) 
 - [Webhook](webhook.md) 
 
-## Third Party Endpoints
-
-<div class="divider"></div>
-
-The following Endpoints provide integrations with third party products:
+## Endpunkte von Drittanbietern<div class="divider"></div>Die folgenden Endpunkte bieten Integrationen mit Produkten von Drittanbietern:
 
 - [Amazon Alexa](amazon-alexa.md)
 - [Amazon Lex (Beta)](amazon-lex.md) 
 - [Avaya CPaaS](avaya-cpaas.md) 
-- [Dialogflow](dialogflow.md) 
+- [Dialogfluss](dialogflow.md) 
 - [Facebook Messenger](facebook-messenger.md) 
-- [Intercom](intercom.md) 
-- [LINE Messenger](line-messenger.md) 
+- [Gegensprechanlage](intercom.md) 
+- [ZEILEN-Bote](line-messenger.md) 
 - [Azure Bot Services](azure-bot-services.md) 
 - [Microsoft Teams](microsoft-teams.md) 
 - [RingCentral Engage](ringcentral-engage.md)
-- [Slack](slack.md) 
-- [Sunshine Conversations](sunshine-conversations.md) 
+- [Lockerheit](slack.md) 
+- [Sonnenschein-Gespräche](sunshine-conversations.md) 
 - [Twilio](twilio.md) 
-- [Userlike](userlike.md) 
+- [Benutzerähnlich](userlike.md) 
 - [Workplace by Facebook](workplace-by-fb.md)
 - [WhatsApp](whatsapp.md)
 - [8x8](8x8.md)
 - [Genesys](genesys.md)
-- [Voice Copilot](voice-copilot.md)
+- [Sprach-Copilot](voice-copilot.md)

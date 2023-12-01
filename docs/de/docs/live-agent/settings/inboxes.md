@@ -1,137 +1,136 @@
 ---
-title: "Inboxes" 
-slug: "inboxes" 
-hidden: false 
+Titel: "Posteingänge" 
+Slug: "Posteingänge" 
+ausgeblendet: false 
 ---
 
-# Inboxes
+# Posteingänge
 
-_Inboxes_ are workspaces where human agents handle real-time chat interactions with customers and manage related tasks. Each Inbox ID represents the connection from Cognigy.AI to Live Agent. 
+_Posteingänge_ sind Arbeitsbereiche, in denen menschliche Agenten Echtzeit-Chat-Interaktionen mit Kunden abwickeln und damit verbundene Aufgaben verwalten. Jede Posteingangs-ID steht für die Verbindung von Cognigy.AI zu Live Agent. 
 
-You can have an unlimited number of Inboxes in your Live Agent account, and you can view conversations specific to an Inbox by clicking on it. 
+Sie können eine unbegrenzte Anzahl von Posteingängen in Ihrem Live Agent-Konto haben, und Sie können Konversationen anzeigen, die für einen Posteingang spezifisch sind, indem Sie darauf klicken. 
 
-Within the Inbox setting, you can customize the appearance of the Inbox, add and remove agents,
-configure message visibility for them, set up conversation routing, and add assistant bots.
+In der Einstellung Posteingang können Sie das Erscheinungsbild des Posteingangs anpassen, Agenten hinzufügen und entfernen.
+Konfigurieren Sie die Sichtbarkeit von Nachrichten für sie, richten Sie das Konversationsrouting ein und fügen Sie Assistentenbots hinzu.
 
+## Erstellen eines Posteingangs
 
-## Create an Inbox
+Um einen Posteingang in Live Agent zu erstellen, gehen Sie wie folgt vor:
 
-To create an Inbox in Live Agent, do the following:
+1. Öffnen Sie die Live Agent-Oberfläche. 
+2. Gehen Sie zu **Einstellungen > Posteingänge**.
+3. Klicken Sie in der oberen rechten Ecke auf **+ Posteingang hinzufügen**. Live Agent zeigt Ihnen einen Bildschirm, auf dem Sie Ihren Posteingang einrichten können. 
+4. Füllen Sie auf der Seite **Posteingangseinrichtung** die folgenden Felder aus:
+    - **Kanalname** — Erstellen Sie einen eindeutigen Posteingangsnamen. Zum Beispiel 'Cognigy Handover'.
+    - **Webhook-URL** — Geben Sie den Cognigy.AI Endpoint Config URL-Domänennamen ein, erweitert um "/handover/liveagent". Beispiel: "https://endpoint-trial.cognigy.ai/handover/liveagent". Sie finden die URL für die Endpunktkonfiguration im Abschnitt **Konfigurationsinformationen** Ihres Endpunkts.
+5. Wählen Sie in der Liste **Agenten für den Posteingang auswählen** Agenten aus, indem Sie entweder darauf klicken oder den Mauszeiger darüber bewegen und dann ++Eingabetaste++ drücken. Sie können mehrere Agenten aus der Liste auswählen. Agenten können gleichzeitig zu verschiedenen Posteingängen gehören.
+6. Klicken Sie auf die Schaltfläche **Cognigy.AI Posteingang erstellen**. Nachdem Sie den Posteingang erfolgreich eingerichtet haben, werden Sie im nächsten Schritt aufgefordert, Ihre Agenten dem neuen Posteingang zuzuweisen.
+7. Wählen Sie in der Auswahlliste die gewünschten Agenten aus und klicken Sie auf **Agenten hinzufügen**.
 
-1. Open the Live Agent interface. 
-2. Go to **Settings > Inboxes**.
-3. In the upper-right corner, click **+ Add Inbox**. Live Agent will show you a screen to set up your Inbox. 
-4. On the **Inbox setup** page, fill in the following fields:
-    - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`.
-    - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
-5. In the **Pick agents for the inbox** list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
-6. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your agents to the new Inbox.
-7. Select your required agents in the selection list and click **Add Agents**.
+Ein neuer Live-Agent-Posteingang wurde erstellt. Sie können die Einstellungen für den Posteingang konfigurieren, indem Sie auf **Weitere Einstellungen** klicken.
 
-A new Live Agent Inbox has been created. You can configure the Inbox settings by clicking **More settings**.
+Die Änderungen werden übernommen.
 
-The changes will be applied.
+## Konfigurieren des Erscheinungsbilds eines Posteingangs
 
-## Configure an Inbox Appearance
+Gehen Sie folgendermaßen vor, um das Erscheinungsbild des Posteingangs zu konfigurieren:
 
-To configure the Inbox appearance, do the following:
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Posteingänge**. 
+3. Klicken Sie auf der Seite **Posteingänge** rechts neben dem Posteingang, den Sie ändern möchten, auf **Einstellungen**. 
+4. Im Fenster **Posteingangseinstellungen** können Sie die folgenden Felder nach Bedarf aktualisieren:
+    - **Kanal-Avatar** — Laden Sie ein Bild oder Symbol hoch, das den Posteingang darstellt. Es dient der visuellen Identifikation. 
+    - **Posteingangsname** — Bearbeiten Sie hier den Namen des Posteingangs, was für organisatorische Zwecke hilfreich sein kann.
+5. Klicken Sie auf **Aktualisieren**.
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**. 
-4. In the **Inboxes Settings** tab window, you can update the following fields as needed:
-    - **Channel Avatar** — upload an image or icon that represents the Inbox. It is used for visual identification. 
-    - **Inbox Name** — edit the name of the Inbox here, which can be helpful for organizational purposes.
-5. Click **Update**.
+Die Felder und Einstellungen für Posteingänge werden aktualisiert.
 
-The Inboxes fields and settings will be updated.
+## Kopieren einer Posteingangs-ID
 
-## Copy an Inbox ID
+Jede Posteingangs-ID stellt die Verbindung von Cognigy.AI zu Live Agent dar und wird in API- und UI-URL-Pfadnamen verwendet.
 
-Each Inbox ID represents the connection from Cognigy.AI to Live Agent and is used in API and UI URL path names.
+So verbinden Sie einen Posteingang mit Cognigy.AI
+Kopieren Sie die ID des Posteingangs
+und geben Sie es im Abschnitt **Live Agent-Einstellungen** in der [Übergabe an den Agenten](.. /.. /ai/tools/agent-handover.md) Knoten auf der Cognigy.AI Seite.
 
-To connect an Inbox to Cognigy.AI,
-copy the ID of the Inbox
-and specify it in the **Live Agent Settings** section in the [Handover to Agent](../../ai/tools/agent-handover.md) Node on the Cognigy.AI side.
+Gehen Sie folgendermaßen vor, um eine Posteingangs-ID zu kopieren:
 
-To copy an Inbox ID, follow these steps:
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Wählen Sie in der Spalte "Einstellungen" die Option **Posteingänge** aus.
+4. Wechseln Sie auf der Registerkarte **Konfiguration** zum Abschnitt **Posteingangs-ID**.
+5. Klicken Sie auf **Kopieren**.
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. In the settings column, select **Inboxes**.
-4. On the **Configuration** tab, go to the **Inbox ID** section.
-5. Click **Copy**.
+## Löschen eines Posteingangs
 
-## Delete an Inbox
+Das Löschen eines Posteingangs kann nicht rückgängig gemacht werden und führt zum Verlust der Synchronisierung mit Cognigy.AI.
 
-Deleting an Inbox is irreversible and will result in the loss of synchronization with Cognigy.AI.
+Um einen Posteingang in Live Agent zu löschen, gehen Sie wie folgt vor:
 
-To delete an Inbox within Live Agent, do the following:
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Posteingänge**. 
+3. Klicken Sie auf der Seite **Posteingänge** rechts neben dem Team, das Sie löschen möchten, auf **Löschen**. 
+4. Sie werden aufgefordert, den Namen des Posteingangs einzugeben, den Sie löschen möchten. 
+5. Klicken Sie auf **Ja, löschen**.
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the team you want to delete, click **Delete**. 
-4. You are prompted to enter the Inbox name you want to delete. 
-5. Click **Yes, Delete**.
+Der ausgewählte Posteingang wird gelöscht.
 
-The selected Inbox will be deleted.
+## Steuerung der Konversationsweiterleitung innerhalb eines Posteingangs
 
-## Control Conversation Routing within an Inbox
+Um die Konversationszuweisungen in Live Agent zu konfigurieren, gehen Sie wie folgt vor:
 
-To configure the conversation assignments within Live Agent, do the following:
+1. Gehen Sie zu Live Agent.
+2. Gehen Sie zu **Einstellungen > Posteingänge**. 
+3. Klicken Sie auf der Seite **Posteingänge** rechts neben dem Posteingang, den Sie ändern möchten, auf **Einstellungen** und öffnen Sie die Registerkarte **Mitarbeiter**. 
+4. Aktualisieren Sie in den Abschnitten **Konversationszuweisung** die Einstellungen für die Konversationszuweisung:
+    - [Automatische Zuweisung zulassen](.. /conversation/conversation-routing/automatic-mode.md#automatic-assignment)
+    - [Neuzuweisung von Unterhaltungen zulassen](.. /conversation/conversation-routing/automatic-mode.md#automatische-neuzuweisung)
 
-1. Go to Live Agent.
-2. Go to **Settings > Inboxes**. 
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab. 
-4. In the **Conversation Assignment** sections, update the conversation assignment settings:
-    - [Allow auto assignment](../conversation/conversation-routing/automatic-mode.md#automatic-assignment)
-    - [Allow conversations to be reassigned](../conversation/conversation-routing/automatic-mode.md#automatic-reassignment)
+Die Änderungen werden erfolgreich übernommen.
 
-The changes will be applied successfully.
+## Agenten zu einem Posteingang hinzufügen
 
-## Add Agents to an Inbox
+Um Agenten zu einem Posteingang hinzuzufügen, gehen Sie wie folgt vor:
 
-To add agents to an Inbox, do the following:
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Posteingänge**.
+3. Klicken Sie auf der Seite **Posteingänge** rechts neben dem Posteingang, den Sie ändern möchten, auf **Einstellungen**.
+4. Wechseln Sie auf der Registerkarte **Mitarbeiter** zum Abschnitt **Agenten**.
+5. Wählen Sie in der Agentenliste Agenten aus, indem Sie entweder darauf klicken oder den Mauszeiger darüber bewegen und dann ++Enter++ drücken. Sie können mehrere Agenten aus der Liste auswählen. Agenten können gleichzeitig zu verschiedenen Posteingängen gehören.
+6. Klicken Sie auf **Aktualisieren**.
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
-4. On the **Collaborators** tab, go to the **Agents** section.
-5. In the agent list, select agents by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple agents from the list. Agents can belong to different inboxes simultaneously.
-6. Click **Update**.
+Die Änderungen werden übernommen.
 
-The changes will be applied.
+## Konfigurieren des Agentenzugriffs auf alle Inbox-Konversationen
 
-## Configure Agent Access to all Inbox Conversations
+Standardmäßig können Ihre Agenten alle Nachrichten in einem Posteingang sehen. Um dieses Verhalten zu ändern, gehen Sie wie folgt vor:
 
-By default, your agents can see all messages within an Inbox. To change this behavior, do the following:
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Posteingänge**.
+3. Klicken Sie auf der Seite **Posteingänge** rechts neben dem Posteingang, den Sie ändern möchten, auf **Einstellungen** und öffnen Sie die Registerkarte **Mitarbeiter**.
+4. Deaktivieren Sie im Abschnitt **Konversationszuweisung** die Einstellung **Agenten erlauben, alle Konversationen in diesem Posteingang zu sehen**.
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings** and open the **Collaborators** tab.
-4. In the **Conversation Assignment** section, disable the **Allow Agents to see all conversations in this inbox** setting.
+Die Änderungen werden übernommen.
 
-The changes will be applied.
+## Agenten aus einem Posteingang entfernen
 
-## Remove Agents from an Inbox
+Um das Erscheinungsbild des Posteingangs zu entfernen, gehen Sie wie folgt vor:
 
-To remove the Inbox appearance, do the following:
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Posteingänge**.
+3. Klicken Sie auf der Seite **Posteingänge** rechts neben dem Posteingang, den Sie ändern möchten, auf **Einstellungen**.
+4. Wechseln Sie auf der Registerkarte **Mitarbeiter** zum Abschnitt **Agenten**.
+5. Entfernen Sie in der Agentenliste einen Agenten, indem Sie rechts neben dem Namen des Agenten auf **x** klicken.
+6. Klicken Sie auf **Aktualisieren**.
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Inboxes**.
-3. On the **Inboxes** page, to the right of the Inbox you want to change, click **Settings**.
-4. On the **Collaborators** tab, go to the **Agents** section.
-5. In the agent list, remove an agent by clicking **x** on the right side of the agent's name.
-6. Click **Update**.
+## Füge einen Assist-Bot hinzu 
 
-## Add an Assist Bot 
+Innerhalb eines Posteingangs können Sie einen oder mehrere Assist-Bots hinzufügen, die Ihre menschlichen Agenten unterstützen.
+Um einen solchen Bot zu erstellen, benötigen Sie einen separaten Flow und Endpunkt auf der Cognigy.AI Seite.
+Weitere Informationen finden Sie unter [Assist Bot](.. /assistants/assist-bot.md). 
 
-Within an Inbox, you can add one or multiple Assist bots that will assist your human agents.
-To create such a bot, you need to have a separate Flow and Endpoint on the Cognigy.AI side.
-For more details, refer to [Assist Bot](../assistants/assist-bot.md). 
+## Mehr Informationen
 
-## More Information
-
-- [Agents](agents.md)
-- [Assist Bot](../assistants/assist-bot.md)
-- [Conversation Routing](../conversation/conversation-routing/overview.md)
+- [Agenten](agents.md)
+- [Bot unterstützen](.. /assistants/assist-bot.md)
+- [Konversations-Routing](.. /conversation/conversation-routing/overview.md)

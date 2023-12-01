@@ -1,137 +1,135 @@
 ---
-title: "Getting Started"
-slug: "getting-started"
-hidden: false
+Titel: "Erste Schritte"
+Slug: "Erste Schritte"
+ausgeblendet: false
 ---
 
-# Getting started with AI Copilot
+# Erste Schritte mit AI Copilot
 
-In this getting started guide, you will learn how to configure your AI Copilot Workspace.
+In diesem Leitfaden für die ersten Schritte erfahren Sie, wie Sie Ihren AI Copilot-Arbeitsbereich konfigurieren.
 
 {! _includes/agent-assist/before-you-begin.md !}
 
-## Create Flows
+## Flows erstellen
 
-To get started with the service:
+So beginnen Sie mit dem Dienst:
 
-1. Go to the Cognigy.AI interface.
-2. Create a [virtual agent](../ai/resources/agents/agents.md) or use an existing one.
-3. Copy the Project ID from your URL, for example, `https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/`, where the Project ID is `642c6a2cb45919dfae7b4428`.
-4. Save the copied Agent ID for the later use.
-5. Go to the left-side menu and click **Build > Flows**.
-6. Create a [Flow](../ai/resources/build/flows.md) or use an existing one, which will include a handover or transfer to a human agent 
-7. Create the additional flow for AI Copilot.
+1. Gehen Sie zur Cognigy.AI Oberfläche.
+2. Erstellen Sie einen [virtuellen Agent](.. /ai/resources/agents/agents.md) oder verwenden Sie eine vorhandene.
+3. Kopieren Sie die Projekt-ID aus Ihrer URL, z. B. "https://app.cognigy.ai/agent/642c6a2cb45919dfae7b4428/", wobei die Projekt-ID "642c6a2cb45919dfae7b4428" lautet.
+4. Speichern Sie die kopierte Agenten-ID für die spätere Verwendung.
+5. Gehen Sie zum Menü auf der linken Seite und klicken Sie auf **Build > Flows**.
+6. Erstellen Sie einen [Flow](.. /ai/resources/build/flows.md) oder verwenden Sie eine vorhandene, die eine Übergabe oder Übertragung an einen menschlichen Agenten beinhaltet 
+7. Erstellen Sie den zusätzlichen Flow für AI Copilot.
 
-Check that you have two Flows: the Main Flow and the AI Copilot Flow.
+Vergewissern Sie sich, dass Sie zwei Flows haben: den Main Flow und den AI Copilot Flow.
 
-## Configure the AI Copilot Config
+## Konfigurieren Sie die AI Copilot Config
 
-With the AI Copilot Config  API you can configure the position and size of the tiles in your grid. This gives full flexibility to use the AI Copilot Workspace as efficient as possible.​
+Mit der AI Copilot Config API können Sie die Position und Größe der Kacheln in Ihrem Raster konfigurieren. Dies gibt volle Flexibilität, um den AI Copilot Workspace so effizient wie möglich zu nutzen.
 
-1. [Get your API Key from your Profile](#get-an-api-key)
-2. [Create your AI Copilot Config](#configure-the-ai-copilot-config)
+1. [Holen Sie sich Ihren API-Schlüssel aus Ihrem Profil](#get-an-api-key)
+2. [Erstellen Sie Ihre AI Copilot-Konfiguration](#configure-the-ai-copilot-config)
 
-### Get an API Key
+### Abrufen eines API-Schlüssels
 
-To get your API key, follow these steps:
+Gehen Sie folgendermaßen vor, um Ihren API-Schlüssel zu erhalten:
 
-1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../assets/icons/user-menu.svg) > My Profile**.
-2. In the **API Keys** section, click **+**.
-3. Add an API key name anc click **Confirm**. The API key will appear in the list.
-4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
-5. Paste the API Key to the following fields:
-    - API Key (X-API-Key)
-    - API Key (api_key)
-6. Click **Set** near both fields. 
+1. Klicken Sie in der oberen rechten Ecke der Cognigy.AI auf **Benutzermenü ! [Benutzer-Menü] (.. /assets/icons/user-menu.svg) > Mein Profil**.
+2. Klicken Sie im Abschnitt **API-Schlüssel** auf **+**.
+3. Fügen Sie einen API-Schlüsselnamen hinzu und klicken Sie auf **Bestätigen**. Der API-Schlüssel wird in der Liste angezeigt.
+4. Kopieren Sie diesen API-Schlüssel und gehen Sie zum Abschnitt **AUTHENTICATION** auf der Website [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi).
+5. Fügen Sie den API-Schlüssel in die folgenden Felder ein:
+    - API-Schlüssel (X-API-Schlüssel)
+    - API-Schlüssel (api_key)
+6. Klicken Sie neben beiden Feldern auf **Festlegen**. 
 
-### Create an AI Copilot Config
+### Erstellen einer KI-Copilot-Konfiguration
 
-To create your AI Copilot Config, follow these steps:
+Gehen Sie folgendermaßen vor, um Ihre AI Copilot-Konfiguration zu erstellen:
 
-1. Create an agent assist configuration by using the [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) request. 
-2. Define the grid size in the `config.grid` object of the configuration by specifying the number of rows and columns. 
-3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
-4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
+1. Erstellen Sie eine Agentenunterstützungskonfiguration mithilfe der [Post](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs)-Anforderung. 
+2. Definieren Sie die Rastergröße im Objekt 'config.grid' der Konfiguration, indem Sie die Anzahl der Zeilen und Spalten angeben. 
+3. Wählen Sie die Platzierung Ihrer Kacheln, indem Sie die Startposition und Größe jeder Kachel in Ihrem Raster hinzufügen.
+4. Fügen Sie die Projekt-ID hinzu, die Sie zuvor kopiert haben, um sicherzustellen, dass die Konfiguration dem richtigen Agenten zugeordnet ist.
 
-    ```json
+'''json
     {
-      "name": "string",
-      "description": "string",
+      "name": "Zeichenfolge",
+      "description": "Zeichenfolge",
       "config": {
-        "grid": {
-          "columns": 6,
-          "rows": 9,
-          "gap": 16
+        "Gitter": {
+          "Spalten": 6,
+          "Zeilen": 9,
+          "Lücke": 16
         },
-        "tiles": {
-          "Live Agent": {
+        "Kacheln": {
+          "Live-Agent": {
             "x": 1,
             "y": 1,
-            "columns": 4,
-            "rows": 2
+            "Spalten": 4,
+            "Zeilen": 2
           },
-          "Voice Gateway": {
+          "Sprach-Gateway": {
             "x": 1,
             "y": 1,
-            "columns": 4,
-            "rows": 2
+            "Spalten": 4,
+            "Zeilen": 2
           }
         }
       },
-      "projectId": "your Project ID"
+      "projectId": "Ihre Projekt-ID"
     }
-    ```
-5. Create the request by clicking **Try**.
+    '''
+5. Erstellen Sie die Anforderung, indem Sie auf **Testen** klicken.
 
-When the request is created, you will see the response code `201`.
+Wenn die Anfrage erstellt wird, wird der Antwortcode "201" angezeigt.
 
-## Create an Endpoint
+## Erstellen eines Endpunkts
 
-To create your Endpoint, follow these steps:
+Gehen Sie folgendermaßen vor, um Ihren Endpunkt zu erstellen:
 
-1. Go to the Cognigy.AI interface.
-2. In the left-side menu, select **Deploy > Endpoint**.
-3. Click **+New Endpoint**. 
-4. In the **New Endpoint** window, add an Endpoint name and select your Virtual Agent Flow that hands you over to a human agent. 
-5. In the **Endpoint type** list, select your desired Endpoint. 
-6. Click **Save**. 
-7. Go to **Handover Settings**. 
-8. In **Copilot Flow**, select the AI Copilot Flow, that you created in the first steps. 
-9. In **Copilot Config**, select the config, which you recently created via API.
-10. _(Optional)_ A transcript tile to display the conversation with the customer can be added by enabling the toggle in the AI Copilot Settings.
-11. Click **Save**.
+1. Gehen Sie zur Cognigy.AI Oberfläche.
+2. Wählen Sie im Menü auf der linken Seite **Deploy > Endpoint** aus.
+3. Klicken Sie auf **+Neuer Endpunkt**. 
+4. Fügen Sie im Fenster **Neuer Endpunkt** einen Endpunktnamen hinzu und wählen Sie Ihren Virtual Agent Flow aus, der Sie an einen menschlichen Agenten übergibt. 
+5. Wählen Sie in der Liste **Endpunkttyp** den gewünschten Endpunkt aus. 
+6. Klicken Sie auf **Speichern**. 
+7. Gehen Sie zu **Übergabeeinstellungen**. 
+8. Wählen Sie unter **Copilot Flow** den AI Copilot Flow aus, den Sie in den ersten Schritten erstellt haben. 
+9. Wählen Sie in **Copilot Config** die Konfiguration aus, die Sie kürzlich per API erstellt haben.
+10. _(Optional)_ Eine Transkriptkachel zur Anzeige der Konversation mit dem Kunden kann hinzugefügt werden, indem der Schalter in den AI Copilot-Einstellungen aktiviert wird.
+11. Klicken Sie auf **Speichern**.
 
-## Configure an AI Copilot Flow
+## Konfigurieren eines KI-Copilot-Flows
 
-1. To configure the first Widget, go into to the AI Copilot Flow.
-2. Add your desired AI Copilot Flow Node. 
-3. Add the content, which will be displayed as a Widget in the AI Copilot Workspace.
-4. Ensure that the tile ID matches the ID chosen in the AI Copilot configuration; this defines the size and placement of the Widget within the Workspace.
+1. Um das erste Widget zu konfigurieren, gehen Sie in den AI Copilot Flow.
+2. Fügen Sie den gewünschten AI Copilot Flow Node hinzu. 
+3. Fügen Sie den Inhalt hinzu, der als Widget im AI Copilot-Arbeitsbereich angezeigt wird.
+4. Stellen Sie sicher, dass die Kachel-ID mit der ID übereinstimmt, die in der AI Copilot-Konfiguration ausgewählt wurde. Dies definiert die Größe und Platzierung des Widgets innerhalb des Arbeitsbereichs.
 
-## Explore an AI Copilot workspace
+## Erkunden eines AI Copilot-Arbeitsbereichs
 
-To observe the AI Copilot workspace, start a conversation with your virtual agent
+Um den AI Copilot-Arbeitsbereich zu beobachten, beginnen Sie eine Konversation mit Ihrem virtuellen Agenten
 
-At one point, you will be handed over to a human agent. 
+An einem Punkt werden Sie an einen menschlichen Agenten übergeben. 
 
-If you are using the `standalone` version of AI Copilot, you will receive the link to your AI Copilot Workspace at this point.
+Wenn Sie die "Standalone"-Version von AI Copilot verwenden, erhalten Sie an dieser Stelle den Link zu Ihrem AI Copilot Workspace.
 
-When a customer is handed over, not only is the conversation history with the bot and the current intent forwarded to the human agent, but also a specific link to access the AI Copilot Workspace.
+Bei der Übergabe eines Kunden wird nicht nur der Gesprächsverlauf mit dem Bot und die aktuelle Absicht an den menschlichen Agenten weitergeleitet, sondern auch ein spezifischer Link zum Zugriff auf den AI Copilot Workspace.
 
-In case you are using the `embedded` version, the AI Copilot Workspace will be shown within an iFrame in your Agents Desktop.
+Falls Sie die "eingebettete" Version verwenden, wird der AI Copilot Workspace in einem iFrame in Ihrem Agents Desktop angezeigt.
 
-Once the human agent engages with the conversation, the grid will show an empty state with outlines of the widgets. 
+Sobald sich der menschliche Agent an der Konversation beteiligt, zeigt das Raster einen leeren Zustand mit den Umrissen der Widgets an. 
 
-The widgets will populate their content once the customer starts the conversation.
+Die Widgets füllen ihren Inhalt aus, sobald der Kunde die Konversation beginnt.
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot Workspace](overview.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](/voice-agent-assist/voice-overview.md)
-- [AI Copilot for Chat](chat.md)
-- [Integration with Contact Centers](contact-center-integration.md)
-
-
+- [Arbeitsbereich für KI-Copilot](overview.md)
+- [Konfiguration des KI-Copiloten](configuration.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](embedding.md)
+- [KI-Copilot für Sprache](/voice-agent-assist/voice-overview.md)
+- [KI-Copilot für Chat](chat.md)
+- [Integration mit Contact Centern](contact-center-integration.md)

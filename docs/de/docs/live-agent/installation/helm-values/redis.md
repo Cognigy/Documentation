@@ -1,16 +1,16 @@
 ---
- title: "Redis" 
- slug: "redis" 
- hidden: false 
+ Titel: "Redis" 
+ Schnecke: "Redis" 
+ ausgeblendet: false 
 ---
 
 # Redis
 
-Redis is an in-memory data structure store used for caching and improving performance across the application.
-It can either run inside the Kubernetes cluster as an additional workload, or outside the cluster.
-You can also use a fully managed solution for PostgreSQL.
+Redis ist ein In-Memory-Datenstrukturspeicher, der zum Zwischenspeichern und Verbessern der Leistung in der gesamten Anwendung verwendet wird.
+Sie kann entweder innerhalb des Kubernetes-Clusters als zusätzliche Workload oder außerhalb des Clusters ausgeführt werden.
+Sie können auch eine vollständig verwaltete Lösung für PostgreSQL verwenden.
 
-Compatible and tested Redis versions are **>= 5** and **<= 7**
+Kompatible und getestete Redis-Versionen sind **>= 5** und **<= 7**
 
 ## Redis Variables
 

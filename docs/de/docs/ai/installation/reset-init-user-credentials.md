@@ -1,45 +1,45 @@
 ---
-title: "Reset Initial Credentials"
+title: "Anfängliche Anmeldeinformationen zurücksetzen"
 slug: "reset-init-credentials"
-hidden: false
+ausgeblendet: false
 ---
-# Resetting Initial User Credentials
+# Zurücksetzen der anfänglichen Benutzeranmeldeinformationen
 
-In case, you cannot obtain credentials from logs of `service-security` in the way it is described in [Cognigy.AI installation process](installation-process.md), e.g. because `service-security` service was restarted several times, or you have deleted and recreated Cognigy.AI installation, you need to drop `service-security` database to generate new initial credentials. 
+Falls Sie keine Anmeldeinformationen aus den Protokollen von 'service-security' erhalten können, wie es in [Cognigy.AI Installationsprozess](installation-process.md) beschrieben ist, z.B. weil der 'service-security'-Dienst mehrmals neu gestartet wurde oder Sie Cognigy.AI Installation gelöscht und neu erstellt haben, müssen Sie die 'service-security'-Datenbank löschen, um neue anfängliche Anmeldeinformationen zu generieren. 
 
-!!! warning "Attention: Loss of Data"
-    All Organizations and Users will be lost as a result of this operation. Perform this process only during initial Cognigy.AI setup. 
+!!! Warnung "Achtung: Datenverlust"
+    Alle Organisationen und Benutzer gehen durch diesen Vorgang verloren. Führen Sie diesen Vorgang nur während der Ersteinrichtung Cognigy.AI durch. 
 
-To generate new initial user credentials, run the following commands:
+Führen Sie die folgenden Befehle aus, um neue anfängliche Benutzeranmeldeinformationen zu generieren:
 
-1. Drop the collections in `service-security` database by connecting to the _primary_ node of MongoDB. To get which node is primary, execute `rs.status()`:
+1. Löschen Sie die Sammlungen in der Datenbank "service-security", indem Sie eine Verbindung mit dem _primary_-Knoten von MongoDB herstellen. Um herauszufinden, welcher Knoten primär ist, führen Sie 'rs.status()' aus:
 
-    ```bash
+'''bash
     kubectl exec -it -n mongodb mongodb-0 bash
-    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
+    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatenbankadministrator
     rs.status()
-    ```
+    '''
 
-2. Connect to the primary node (e.g. if `mongodb-0` is the primary node) and drop the collections in `service-security` database:
+2. Stellen Sie eine Verbindung zum primären Knoten her (z. B. wenn "mongodb-0" der primäre Knoten ist) und legen Sie die Sammlungen in der Datenbank "service-security" ab:
 
-    ```bash
+'''bash
     kubectl exec -it -n mongodb mongodb-0 bash
-    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
-    use service-security
+    mongo -u root -p $MONGODB_ROOT_PASSWORD --authenticationDatenbankadministrator
+    Verwenden von Service-Security
     db.users.drop()
     db.organisations.drop()
-    exit
-    exit
-    ```
+    Ausgang
+    Ausgang
+    '''
 
-3. Restart the `service-security` deployment: 
+3. Starten Sie die Bereitstellung "Service-Security" neu: 
 
-    ```bash
+'''bash
     kubectl rollout restart -n=cognigy-ai deployment service-security
-    ```
+    '''
 
-4. Obtain the newly generated initial credentials from the logs of `service-security` deployment as usual:
+4. Rufen Sie die neu generierten anfänglichen Anmeldeinformationen wie gewohnt aus den Protokollen der Bereitstellung von "Dienstsicherheit" ab:
 
-    ```bash
-    kubectl logs -f -n=cognigy-ai --tail 100 deployment/service-security
-    ```
+'''bash
+    kubectl logs -f -n=cognigy-ai --tail 100 Bereitstellung/Dienstsicherheit
+    '''

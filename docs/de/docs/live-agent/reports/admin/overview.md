@@ -1,46 +1,42 @@
 ---
-title: "Administrator Reports"
-slug: "admin-reports"
-hidden: false
+Titel: "Administratorberichte"
+slug: "Admin-Berichte"
+ausgeblendet: false
 ---
 
-# Administrator Reports
+# Administrator-Berichte
 
-Administrators can monitor the account's performance in terms of [agents](agents.md),
-[labels](labels.md), [Inboxes](inboxes.md), [teams](teams.md),
-and also track [conversation](conversations.md) metrics over time periods.
+Administratoren können die Leistung des Kontos in Bezug auf [Agenten](agents.md) überwachen.
+[Etiketten] (labels.md), [Posteingänge](inboxes.md), [Teams](teams.md),
+und verfolgen Sie auch [Konversation](conversations.md)-Metriken über Zeiträume.
 
-These metrics are presented in combined charts, including an indicator and a bar chart. This combined format allows for both a quick overview and a detailed, comprehensive understanding of the metrics. The indicator provides high-level information by displaying total and average values, while the detailed data is presented as bar charts.
+Diese Metriken werden in kombinierten Diagrammen dargestellt, einschließlich eines Indikators und eines Balkendiagramms. Dieses kombinierte Format ermöglicht sowohl einen schnellen Überblick als auch ein detailliertes, umfassendes Verständnis der Kennzahlen. Der Indikator liefert allgemeine Informationen, indem er Gesamt- und Durchschnittswerte anzeigt, während die detaillierten Daten als Balkendiagramme dargestellt werden.
 
-## Combined Charts
+## Kombinierte Diagramme
 
-The combined chart includes the following charts:
+Das kombinierte Diagramm enthält die folgenden Diagramme:
 
-- **Indicator.** Represents a total or an average number. When there is a significant increase or decrease in conversation handling based on the last entry, it will be displayed next to the indicator value with a percentage figure related to the calculated average value of the selected time period. Increasing trends will be indicated with a plus and a green colored figure, and decreasing trends will be indicated with a minus in red color. For conversations, an increasing number means you have got more customer messages. For solving problems, increasing number, for example, `+25%`, means you got better at solving customer issues or got easier conversations.
-- **Bar chart.** The horizontal axis typically represents dates or time periods, illustrating how the metrics change over time, while the vertical axis represents various performance metrics such as the number of messages or conversations.
+- **Indikator.** Stellt eine Gesamt- oder Durchschnittszahl dar. Wenn es eine signifikante Zunahme oder Abnahme der Konversationsverarbeitung auf der Grundlage des letzten Eintrags gibt, wird dies neben dem Indikatorwert mit einer Prozentzahl angezeigt, die sich auf den berechneten Durchschnittswert des ausgewählten Zeitraums bezieht. Steigende Trends werden mit einem Plus und einer grünen Zahl angezeigt, und abnehmende Trends werden mit einem Minus in roter Farbe angezeigt. Bei Konversationen bedeutet eine steigende Anzahl, dass Sie mehr Kundennachrichten erhalten haben. Bei der Lösung von Problemen bedeutet eine Erhöhung der Zahl, z. B. "+25 %", dass Sie bei der Lösung von Kundenproblemen besser geworden sind oder einfachere Gespräche geführt haben.
+- **Balkendiagramm.** Die horizontale Achse stellt in der Regel Datumsangaben oder Zeiträume dar und veranschaulicht, wie sich die Metriken im Laufe der Zeit ändern, während die vertikale Achse verschiedene Leistungsmetriken wie die Anzahl der Nachrichten oder Konversationen darstellt.
 
-When hovering the mouse cursor over the bar chart, details of metrics that happened can be seen.
+Wenn Sie mit dem Mauszeiger über das Balkendiagramm fahren, werden Details zu den Metriken angezeigt, die aufgetreten sind.
 
-You can display the values per day, week, month or year, depending on the selected filters.
+Sie können sich die Werte pro Tag, Woche, Monat oder Jahr anzeigen lassen, abhängig von den ausgewählten Filtern.
 
-For instance, in the image below, there is a combined chart for the QA team to analyze performance data.
+In der folgenden Abbildung sehen Sie beispielsweise ein kombiniertes Diagramm für das QA-Team zur Analyse von Leistungsdaten.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Team_report.png" width="100%" alt="Live Agent Team report" />
-  <figcaption>Combined chart: Conversations</figcaption>
+  <figcaption>Kombiniertes Diagramm: Konversationen</figcaption>
 </figure>
 
-## Report Metrics
+## Metriken melden
 
-Each report includes charts with the following metrics:
+Jeder Bericht enthält Diagramme mit den folgenden Metriken:
 
 {! _includes/live-agent/reports.md !}
 
-## More Information
+## Mehr Informationen
 
-- [Reports](../overview.md)
-- [Supervisor report](../supervisor-overview.md)
-
-
-
-
+- [Berichte](.. /overview.md)
+- [Bericht des Vorgesetzten](.. /supervisor-overview.md)

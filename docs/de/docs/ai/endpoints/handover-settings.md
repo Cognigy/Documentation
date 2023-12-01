@@ -1,17 +1,13 @@
 ---
- title: "Handover Settings" 
- slug: "handover-settings" 
- hidden: false 
+ Titel: "Übergabe-Einstellungen" 
+ Slug: "Übergabe-Einstellungen" 
+ ausgeblendet: false 
 ---
-# Handover Settings
+# Übergabe-Einstellungen
 
-Cognigy.AI supports integrating with various `Live Agent Tools`, so that a user can be transferred to an agent at any point during the conversation by using a [Handover To Agent Node]({{config.site_url}}ai/tools/agent-handover/) in the Flow.
+Cognigy.AI unterstützt die Integration mit verschiedenen "Live Agent Tools", sodass ein Benutzer jederzeit während der Konversation an einen Agenten weitergeleitet werden kann, indem er eine [Übergabe an einen Agentenknoten]({{config.site_url}}ai/tools/agent-handover/) im Flow verwendet.
 
-## Channel Support
-
-<div class="divider"></div>
-
-Supported Endpoints have a configuration tab called `Handover Settings`. In there, the `Handover Platform` that the user should be forwarded to when a Handover Node is triggered is selected and configured. Cognigy.AI currently has native support with the following Handover Platforms:
+## Kanal-Unterstützung<div class="divider"></div>Unterstützte Endpunkte verfügen über eine Konfigurationsregisterkarte mit dem Namen "Übergabeeinstellungen". Dort wird die 'Handover Platform' ausgewählt und konfiguriert, zu der der Benutzer weitergeleitet werden soll, wenn ein Handover Node ausgelöst wird. Cognigy.AI bietet derzeit native Unterstützung für die folgenden Übergabeplattformen:
 
 - [Cognigy Live Agent]({{config.site_url}}ai/handover-providers/live-agent-handover/)
 
@@ -21,17 +17,17 @@ Supported Endpoints have a configuration tab called `Handover Settings`. In ther
 
 - [Salesforce]({{config.site_url}}ai/handover-providers/salesforce-handover/)
 
-The Endpoints that support handover are listed below:
+Die Endpunkte, die die Übergabe unterstützen, sind unten aufgeführt:
 
-| Method      |
+| Methode |
 | ----------- | 
-| [Facebook Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/) | 
-| [LINE Messenger]({{config.site_url}}ai/endpoints/line-messenger/) | 
-| [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/) | 
-| [RingCentral Engage]({{config.site_url}}ai/endpoints/ringcentral-engage/) | 
-| [Slack]({{config.site_url}}ai/endpoints/slack/) |
-| [Socket]({{config.site_url}}ai/endpoints/socketio/)|
-| [Sunshine Conversations]({{config.site_url}}ai/endpoints/sunshine-conversations/) |
-| [WhatsApp]({{config.site_url}}ai/endpoints/whatsapp/) |
-| [Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/) |
-| [Webhook]({{config.site_url}}ai/endpoints/webhook/)|
+| [Facebook Messenger] ({{config.site_url}}ai/endpoints/facebook-messenger/) | 
+| [LINE Messenger] ({{config.site_url}}ai/endpoints/line-messenger/) | 
+| [Azure Bot Services] ({{config.site_url}}ai/endpoints/azure-bot-services/) | 
+| [RingCentral Engage] ({{config.site_url}}ai/endpoints/ringcentral-engage/) | 
+| [Lockerheit] ({{config.site_url}}ai/endpoints/slack/) |
+| [Steckdose] ({{config.site_url}}ai/endpoints/socketio/)|
+| [Sonnenschein-Gespräche] ({{config.site_url}}ai/endpoints/sunshine-conversations/) |
+| [WhatsApp] ({{config.site_url}}ai/endpoints/whatsapp/) |
+| [Webchat] ({{config.site_url}}ai/endpoints/webchat/webchat/) |
+| [Webhook] ({{config.site_url}}ai/endpoints/webhook/)|

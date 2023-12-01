@@ -1,162 +1,140 @@
 ---
-title: "Agents" 
-slug: "agents"
-description: "Cognigy.AI Agents are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../deploy/endpoints.md), and other resources. You can collaborate on a given Agent with multiple team members."
-hidden: false 
+Titel: "Agenten" 
+Schnecke: "Agenten"
+description: "Cognigy.AI Agenten sind Projekte, die Sammlungen von Conversational AI-Ressourcen enthalten, einschließlich [Flows](.. /build/flows.md), [Lexika](.. /build/lexicons.md), [Endpunkte](.. /deploy/endpoints.md) und andere Ressourcen. Sie können an einem bestimmten Agenten mit mehreren Teammitgliedern zusammenarbeiten."
+ausgeblendet: false 
 ---
-# Agents
+# Agenten
 
-_Agents_ are projects that contain collections of Conversational AI resources, including [Flows](../build/flows.md), [Lexicons](../build/lexicons.md), [Endpoints](../deploy/endpoints.md), and other resources. You can collaborate on a given Agent with multiple team members.
+_Agents_ sind Projekte, die Sammlungen von Conversational AI-Ressourcen enthalten, einschließlich [Flows](.. /build/flows.md), [Lexika](.. /build/lexicons.md), [Endpunkte](.. /deploy/endpoints.md) und andere Ressourcen. Sie können an einem bestimmten Agent mit mehreren Teammitgliedern zusammenarbeiten.
 
-Within an Agent as a project, you can create virtual agents. A virtual agent is a bot that is designed to automatically handle interactions. A virtual agent is typically designed to tackle one use case, and it can handle multiple user intents.
-Virtual agents can deploy on a wide range of channels. 
+Innerhalb eines Agenten als Projekt können Sie virtuelle Agenten erstellen. Ein virtueller Agent ist ein Bot, der darauf ausgelegt ist, Interaktionen automatisch zu verarbeiten. Ein virtueller Agent ist in der Regel für einen Anwendungsfall konzipiert und kann mehrere Benutzerabsichten verarbeiten.
+Virtuelle Agenten können auf einer Vielzahl von Kanälen bereitgestellt werden. 
 
-## Create an Agent
+## Erstellen eines Agenten
 
-1. Go to the Cognigy.AI interface.
-2. In the upper-left corner, click **Create Agent**.
+1. Gehen Sie zur Cognigy.AI Oberfläche.
+2. Klicken Sie in der oberen linken Ecke auf **Agent erstellen**.
 
     <img class="image-center" src="{{config.site_url}}ai/resources/images/create_agent.png" width="80%" style="margin-bottom: 5px">
 
-3. Give your project a unique name that describes its purpose. You will also be able to change the name later.
-4. Select the primary language for your Agent.
-5. Select a color that will be associated with your Agent.
-6. _(Optional)_ Activate **Set up Live Agent**. For more information, refer to the [Create an Agent with Live Agent Flow](#create-an-agent-with-live-agent-flow) section.
-7. Click **Next: Select Solution Accelerator**.
+3. Geben Sie Ihrem Projekt einen eindeutigen Namen, der seinen Zweck beschreibt. Sie können den Namen auch später ändern.
+4. Wählen Sie die primäre Sprache für Ihren Agenten aus.
+5. Wählen Sie eine Farbe aus, die Ihrem Agenten zugeordnet werden soll.
+6. _(Optional)_ Aktivieren Sie **Live Agent einrichten**. Weitere Informationen finden Sie im Abschnitt [Erstellen eines Agenten mit Live-Agent-Flow](#create-einer-Agent-mit-Live-Agent-Flow)).
+7. Klicken Sie auf **Weiter: Solution Accelerator auswählen**.
 
     <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_basic_settings.png" width="80%">
 
-8. Select **Blank** or any pre-build solution accelerators that can help you build a specific virtual agent for you.
+8. Wählen Sie **Leer** oder einen beliebigen vorgefertigten Solution Accelerator aus, mit dem Sie einen bestimmten virtuellen Agenten erstellen können.
 
     <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_solution_accelerator.png" width="80%">
 
-9. Select an Endpoint you want to use first for the Agent. You can also add more Endpoints later.
+9. Wählen Sie einen Endpunkt aus, den Sie zuerst für den Agenten verwenden möchten. Sie können auch später weitere Endpunkte hinzufügen.
 
     <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_channels.png" width="80%">
 
-10. Select the pre-build skills if you want to use one for your Agent.
+10. Wählen Sie die vorgefertigten Skills aus, wenn Sie einen für Ihren Agenten verwenden möchten.
 
     <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_skills.png" width="80%">
 
-11. Click **Go to Agent** to view the created Agent.
+11. Klicken Sie auf **Gehe zu Agent**, um den erstellten Agenten anzuzeigen.
 
     <img class="image-center" src="{{config.site_url}}ai/resources/images/agent_wizard_go_to_agent.png" width="80%">
 
-Once these steps are completed, your Agent setup is finished.
+Sobald diese Schritte abgeschlossen sind, ist die Einrichtung des Agenten abgeschlossen.
 
-## Create an Agent with Live Agent Flow
+## Erstellen eines Agenten mit Live Agent Flow
 
-The setup of the Live Agent depends on your project role:
+Die Einrichtung des Live Agents hängt von Ihrer Projektrolle ab:
 
-- If you are an **admin** and no Live Agent Account is configured for your organization, you will see an option in the **Create Agent** wizard to set up a Live Agent Account.
-- If you are a **project manager**, you do not have the option to set up a Live Agent Account. Instead, contact your admin to set up a Live Agent Account for your organization.
+- Wenn Sie ein **Administrator** sind und kein Live Agent-Konto für Ihre Organisation konfiguriert ist, wird im Assistenten **Agent erstellen** eine Option zum Einrichten eines Live Agent-Kontos angezeigt.
+- Wenn Sie ein **Projektmanager** sind, haben Sie nicht die Möglichkeit, ein Live Agent-Konto einzurichten. Wenden Sie sich stattdessen an Ihren Administrator, um ein Live Agent-Konto für Ihre Organisation einzurichten.
 
-For on-premises installations, the **Live Agent** section in the **Create Agent** wizard will only be visible if the Live Agent is configured at the infrastructure level, which requires the `FEATURE_USE_COGNIGY_LIVE_AGENT` environment variable to be enabled.
+Bei On-Premises-Installationen ist der Abschnitt **Live Agent** im Assistenten **Agent erstellen** nur sichtbar, wenn der Live Agent auf Infrastrukturebene konfiguriert ist, wofür die Umgebungsvariable "FEATURE_USE_COGNIGY_LIVE_AGENT" aktiviert sein muss.
 
-If the Live Agent Account is already configured for your organization, you can create an Agent with a Live Agent Flow by following these steps:
+Wenn das Live-Agent-Konto bereits für Ihre Organisation konfiguriert ist, können Sie einen Agenten mit einem Live-Agenten-Flow erstellen, indem Sie die folgenden Schritte ausführen:
 
-1. Create a [Live Agent Inbox](../../../live-agent/settings/inboxes.md) by activating **Create Cognigy Live Agent Inbox**.
-2. Configure [AI Copilot](../../../live-agent/assistants/overview.md) in the **Copilot** section by selecting one of the following options:
-    - **Disable Agent Assist** — this option doesn't require any additional resources. AI Copilot functionalities will be turned off.
-    - **Enable Agent Assist** — this option creates an AI Copilot Flow. This Flow includes a Say Node, which allows the system to communicate messages. This AI Copilot Flow will be assigned as the one you use for AI Copilot interactions.
+1. Erstellen Sie einen [Live Agent-Posteingang](.. /.. /.. /live-agent/settings/inboxes.md), indem Sie **Cognigy Live Agent Posteingang erstellen** aktivieren.
+2. Konfigurieren Sie [AI Copilot](.. /.. /.. /live-agent/assistants/overview.md) im Abschnitt **Copilot**, indem Sie eine der folgenden Optionen auswählen:
+    - **Agent Assist deaktivieren** – Für diese Option sind keine zusätzlichen Ressourcen erforderlich. Die Funktionen von AI Copilot werden deaktiviert.
+    - **Agent Assist aktivieren** – mit dieser Option wird ein AI Copilot Flow erstellt. Dieser Flow enthält einen Say-Knoten, der es dem System ermöglicht, Nachrichten zu kommunizieren. Dieser AI Copilot-Flow wird als derjenige zugewiesen, den Sie für AI Copilot-Interaktionen verwenden.
    
     <img src="{{config.site_url}}ai/resources/images/agent_wizard_setup_liveagent_inbox.png" width="80%" style="margin-bottom: 5px">
 
-Complete the agent setup with the Live Agent feature by following the steps as you would for a [simple agent](#create-an-agent).
+Schließen Sie die Agenteneinrichtung mit der Live-Agent-Funktion ab, indem Sie die Schritte wie bei einem [einfachen Agenten](#create-ein-Agent) ausführen.
 
-## Agent Dashboard
+## Agenten-Dashboard
 
-The Agent Dashboard serves as an overview page for your Agent. It displays relevant information about your agent, including Analytics, Project Members, Recently Changed resources, and additional information about Cognigy.AI itself.
+Das Agenten-Dashboard dient als Übersichtsseite für Ihren Agenten. Es zeigt relevante Informationen über Ihren Agenten an, einschließlich Analysen, Projektmitglieder, kürzlich geänderte Ressourcen und zusätzliche Informationen über Cognigy.AI selbst.
 
 <img class="image-center" src="{{config.site_url}}ai/resources/images/Agent_dashboard.png" width="80%">
 
-### Analytics Widget
+### Analyse-Widget
 
-As of release v4.10, Cognigy provides a completely new designed Analytics solution called [Insights](../../../insights/cognigy-insights.md).
+Ab Version 4.10 bietet Cognigy eine völlig neu gestaltete Analytics-Lösung namens [Insights](.. /.. /.. /insights/cognigy-insights.md).
 
-- When the Insights application is enabled in your product, clicking on the arrow icon in the Analytics widget on the Agents dashboard will lead you to the Insights Overview dashboard.
-- When the Insights application is not enabled in your product, clicking on the arrow icon in the Analytics widget on the Agents dashboard will still lead you to the Analytics page, just as before.
+- Wenn die Insights-Anwendung in Ihrem Produkt aktiviert ist, gelangen Sie durch Klicken auf das Pfeilsymbol im Analytics-Widget im Agenten-Dashboard zum Insights-Übersichts-Dashboard.
+- Wenn die Insights-Anwendung in Ihrem Produkt nicht aktiviert ist, werden Sie durch Klicken auf das Pfeilsymbol im Analytics-Widget im Agenten-Dashboard wie zuvor zur Analytics-Seite weitergeleitet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/conversation-count-chart.png" width="100%"/>
-  <figcaption>Agent dashboard - Analytics widget</figcaption>
+  <figcaption>Agenten-Dashboard - Analytics-Widget</figcaption>
 </figure>
 
-You can find more information about Cognigy Analytics on the [Agent Analytics](../../tools/analytics/analytics.md) page.
+Weitere Informationen zu Cognigy Analytics finden Sie auf der Seite [Agent Analytics](.. /.. /tools/analytics/analytics.md) ein.
 
-## Top Toolbar
+## Obere Symbolleiste
 
-Agents have a Top Toolbar in every view, offering quick access to Agent-specific resources, such as Search, Tasks, and the Interaction Panel. The Top Toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available. 
+Agenten verfügen in jeder Ansicht über eine obere Symbolleiste, die einen schnellen Zugriff auf agentenspezifische Ressourcen wie Suche, Aufgaben und den Interaktionsbereich bietet. Die obere Symbolleiste enthält auch Elemente, wie z. B. das Benutzermenü und den Interaktionsbereich, die durchgängig verfügbar sind. 
 
-With Cognigy.AI version 4.11.0, tooltips have been added to the Toolbar to enhance navigation through hover interactions.
-
-<div class="right-image">
+Mit Cognigy.AI Version 4.11.0 wurden Tooltips zur Symbolleiste hinzugefügt, um die Navigation durch Hover-Interaktionen zu verbessern.<div class="right-image">
 <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar.png">
-</div>
+</div>### Help-Center-Suche
 
-### Help Center Search
-
-The Help Center Search feature allows you to search for potential answers within the list of articles available on the [Cognigy Help Center](https://support.cognigy.com/) website.
+Mit der Help-Center-Suchfunktion können Sie in der Liste der auf der Website [Cognigy Help Center](https://support.cognigy.com/) verfügbaren Artikel nach möglichen Antworten suchen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/HelpCenter_search_result.png"/>
-  <figcaption>List of available Help Center articles</figcaption>
+  <figcaption>Liste der verfügbaren Help-Center-Artikel</figcaption>
 </figure>
 
-### Journeys
+### Reisen
 
-Journeys are on-screen tutorials that are a part of the [Cognigy Help Center](https://support.cognigy.com/hc/en-us) and offer step-by-step instructions directly within the Cognigy.AI user interface.
-
-<div class="right-image">
+Journeys sind Tutorials auf dem Bildschirm, die Teil des [Cognigy Help Center](https://support.cognigy.com/hc/en-us) sind und Schritt-für-Schritt-Anleitungen direkt in der Cognigy.AI Benutzeroberfläche bieten.<div class="right-image">
  <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_journeys.png">
-</div>
+</div>Weitere Informationen finden Sie unter [Journeys](journeys.md).
 
-Head over to [Journeys](journeys.md) for more information.
+### Suche
 
-### Search
-
-The Search interface can be utilized to search for resources within the Agent.
-It offers a convenient way to promptly access resources and includes an autocomplete feature. 
-
-<div class="right-image">
+Die Suchschnittstelle kann verwendet werden, um innerhalb des Agenten nach Ressourcen zu suchen.
+Es bietet eine bequeme Möglichkeit, sofort auf Ressourcen zuzugreifen, und enthält eine Autocomplete-Funktion.<div class="right-image">
   <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_search.png">
 </div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/search.png"/>
-</figure>
+</figure>### Aufgaben
 
-### Tasks
-
-Tasks are specific activities, such as training Intents, importing Snapshots, or creating a new Agent. A Task is an asynchronous process that can run in the background and is associated with the notification system.
-
-<div class="right-image">
+Aufgaben sind bestimmte Aktivitäten, wie z. B. das Trainieren von Intents, das Importieren von Snapshots oder das Erstellen eines neuen Agenten. Eine Aufgabe ist ein asynchroner Prozess, der im Hintergrund ausgeführt werden kann und dem Benachrichtigungssystem zugeordnet ist.<div class="right-image">
 <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_taskmenu.png">
-</div>
+</div>Gehen Sie zu den [Aufgaben](.. /.. /resources/agents/tasks.md) für weitere Informationen.
 
-Head over to the [Tasks](../../resources/agents/tasks.md) for more information.
+### Benutzer-Menü
 
-### User Menu
-
-The User Menu provides access to a set of views.
-
- <div class="right-image">
+Das Benutzermenü bietet Zugriff auf eine Reihe von Ansichten. <div class="right-image">
  <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_usermenu.png">
  </div>
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/user_menu.png" />
-  <figcaption>User menu</figcaption>
+  <figcaption>Menü "Benutzer"</figcaption>
 </figure>
 
-Head over to [User Menu](../../tools/user-menu/user-menu.md) for more information.
+Gehen Sie zu [Benutzermenü](.. /.. /tools/user-menu/user-menu.md) für weitere Informationen.
 
-### Interaction Panel
+### Interaktions-Panel
 
-The Interaction Panel can be used to interact with your virtual agent at any time. It is a useful tool that provides a representation of channel-specific output and can display more detailed debugging information.
-
-<div class="right-image">
+Über das Interaktionspanel können Sie jederzeit mit Ihrem virtuellen Agenten interagieren. Es ist ein nützliches Tool, das eine Darstellung der kanalspezifischen Ausgabe bereitstellt und detailliertere Debugging-Informationen anzeigen kann.<div class="right-image">
  <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_Interaction_Panel.png" style="margin-bottom: 5px">
- </div>
-
-Head over to [Interaction Panel](../../tools/interaction-panel/interaction-panel.md) for more information.
+ </div>Gehen Sie zu [Interaction Panel](.. /.. /tools/interaction-panel/interaction-panel.md) für weitere Informationen.

@@ -1,52 +1,52 @@
 ---
-title: "Copilot: Transcript Tile"
-slug: "transcript-tile"
-hidden: true
+Titel: "Copilot: Transkript-Kachel"
+Schnecke: "Transkript-Kachel"
+Ausgeblendet: Wahr
 ---
 
-# Copilot: Transcript Tile
+# Copilot: Transkript-Kachel
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /.. /release-notes/4.60.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/transcript-tile.png" width="80%"/>
 </figure>
 
-## Description
+## Beschreibung
 
-This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
+Dieser Knoten erfasst die neueste Kundenantwort und zeigt sie in einem bestimmten Widget innerhalb des AI Copilot-Arbeitsbereichs an.
 
-Additionally, the Transcript Assist Node offers the option to enable Sentiment Analysis,
-which allows for assessing the user's speech tone.
-This sentiment analysis can provide insights into whether the user's response is positive, negative, or neutral.
-Before using this option,
-set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai)
-and select the appropriate model in the [supported model list](../../resources/build/llm.md#supported-models).
+Darüber hinaus bietet der Transkript-Assist-Knoten die Möglichkeit, die Stimmungsanalyse zu aktivieren.
+Dies ermöglicht es, den Sprachton des Benutzers zu beurteilen.
+Diese Stimmungsanalyse kann Aufschluss darüber geben, ob die Reaktion des Benutzers positiv, negativ oder neutral ist.
+Bevor Sie diese Option verwenden,
+Legen Sie den Generative AI-Anbieter in den [Einstellungen](.. /.. /generative-ai.md#setup-generative-ai)
+und wählen Sie das entsprechende Modell in der [Liste der unterstützten Modelle] (.. /.. /resources/build/llm.md#supported-models).
 
-## Settings
+## Einstellungen
 
-| Parameter        | Type          | Description                                                                                                                                                                                                                          |
+| Parameter | Typ | Beschreibung |
 |------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID          | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                                                                                                             |
-| Enable sentiment | Toggle        | The option allows you to decide whether sentiment analysis should be applied to the customer's voice input. Enabling this option means that the system will assess the emotional tone (positive, negative, or neutral) of the input. |
+| Kachel-ID | CognigyScript | Die ID, die Sie in der AI Copilot-Konfiguration erstellt haben.                                                                                                                                                                             |
+| Aktivieren von Stimmungen | Umschalten | Mit dieser Option können Sie entscheiden, ob die Stimmungsanalyse auf die Spracheingabe des Kunden angewendet werden soll. Wenn Sie diese Option aktivieren, bewertet das System den emotionalen Ton (positiv, negativ oder neutral) der Eingabe. |
 
-## Use Case
+## Anwendungsfall
 
-This Node is well-suited for scenarios involving voice calls,
-where a human agent needs to listen to the user's speech and make quick decisions.
-In such cases, the Transcript Assist Node plays a crucial role in recording and presenting the user's spoken responses.
-This approach allows human agents to have immediate access to this information,
-thereby facilitating more effective and efficient communication and decision-making during voice call interactions.
+Dieser Knoten eignet sich gut für Szenarien mit Sprachanrufen,
+wo ein menschlicher Agent der Sprache des Benutzers zuhören und schnelle Entscheidungen treffen muss.
+In solchen Fällen spielt der Transcript Assist Node eine entscheidende Rolle bei der Aufzeichnung und Darstellung der gesprochenen Antworten des Benutzers.
+Dieser Ansatz ermöglicht es menschlichen Agenten, sofortigen Zugriff auf diese Informationen zu haben.
+Dadurch wird eine effektivere und effizientere Kommunikation und Entscheidungsfindung bei Sprachanrufen ermöglicht.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/transcript-tile-example.png" width="80%"/>
-    <figcaption>Transcript Tile Widget in AI Copilot</figcaption>
+    <figcaption>Transkriptkachel-Widget im KI-Copilot</figcaption>
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Copilot: Next Action Tile](next-action-tile.md)
-- [Copilot: Sentiment Tile](sentiment-tile.md)
-- [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Copilot: Kachel für die nächste Aktion](next-action-tile.md)
+- [Copilot: Stimmungskachel](sentiment-tile.md)
+- [Copilot: Identitätskachel](identity-tile.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

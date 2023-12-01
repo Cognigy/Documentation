@@ -1,86 +1,69 @@
 ---
- title: "Triggering Webchat Plugins" 
- slug: "triggering-webchat-plugins" 
- hidden: false 
+ title: "Auslösen von Webchat-Plugins" 
+ Slug: "Auslösende-Webchat-Plugins" 
+ ausgeblendet: false 
 ---
-# Triggering Webchat Plugins
+# Webchat-Plugins auslösen
 
-## Description
+## Beschreibung<div class="divider"></div>Viele Plugins, z.B. solche, die einen String als 'match'-Wert verwenden, werden nur dann ausgelöst, wenn eine Nachricht bestimmte 'Daten' enthält.
 
-<div class="divider"></div>
+Nehmen wir als Beispiel an, wir haben ein Plugin, das Bilder im Chat anzeigt und die URL aus den Daten der Nachricht nimmt.
+Das Feld 'match' ist auf 'inline-image' gesetzt und liest die Bild-URL aus 'message.data._plugin.url'.
+Um das Plugin auszulösen, müssten wir eine Nachricht senden, in der das Feld "Daten" wie folgt eingerichtet ist:
 
-Many Plugins, for example, those who use a string as the `match` value) will only be triggered whenever a message contains specific `data`.
-
-As an example, let's imagine we have a plugin that displays images in the chat, taking the url from the message's data.
-The `match` field is set to `inline-image` and it reads the image url from `message.data._plugin.url`.
-In order to trigger the plugin, we would need to send a message with the `data` field set up like this:
-
-```JSON
+'''JSON
 {
   "_plugin": {
-    "type": "inline-image",
+    "type": "Inline-Bild",
     "url": "https://placekitten.com/256/256"
   }
 }
-```
+'''
 
-When the webchat receives this message, it will trigger the `inline-image`-plugin because of `message.data._plugin.type === 'inline-image'`. The plugin itself then reads the url from `message.data._plugin.url`.
+Wenn der Webchat diese Nachricht erhält, löst er das 'inline-image'-Plugin aus, weil 'message.data._plugin.type === 'inline-image'' ist. Das Plugin selbst liest dann die URL aus 'message.data._plugin.url' aus.
 
-## Usage within regular Flow Nodes
-
-<div class="divider"></div>
-
-Using regular Flow Nodes (such as the Say Node), you can make use of the `data` field in order to append a data payload to a message. The Data Field will help you with syntax highlighting to prevent structural errors.
+## Verwendung innerhalb regulärer Flow-Nodes<div class="divider"></div>Mit regulären Flow-Knoten (z. B.dem Say-Knoten) können Sie das Feld "data" verwenden, um eine Datennutzlast an eine Nachricht anzuhängen. Das Datenfeld hilft Ihnen bei der Syntaxhervorhebung, um strukturelle Fehler zu vermeiden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/f123a42-imagePlugin.PNG" width="100%" />
 </figure>
 
-## Usage within Code Nodes
-
-<div class="divider"></div>
-
-If you prefer using a Code Node to send a message, you can pass the structured `data` payload as a second parameter to the `actions.output` method.
+## Verwendung innerhalb von Code-Nodes<div class="divider"></div>Wenn Sie es vorziehen, einen Code Node zum Senden einer Nachricht zu verwenden, können Sie die strukturierte Nutzlast "data" als zweiten Parameter an die Methode "actions.output" übergeben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7bb9a4b-codePlugin.PNG" width="100%" />
 </figure>
 
-## Usage within Extensions
-
-<div class="divider"></div>
-
-To get the best user experience for the editors of a Conversational AI, you can build a customized [Extension]({{config.site_url}}ai/resources/manage/extensions/) that sends a message triggering the webchat plugin, abstracting away everything but the required parameters.
+## Verwendung innerhalb von Erweiterungen<div class="divider"></div>Um die beste Benutzererfahrung für die Redakteure einer Konversations-KI zu erhalten, können Sie eine benutzerdefinierte [Erweiterung]({{config.site_url}}ai/resources/manage/extensions/) erstellen, die eine Nachricht sendet, die das Webchat-Plugin auslöst und alles außer den erforderlichen Parametern abstrahiert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/f123a42-imagePlugin.PNG" width="100%" />
 </figure>
 
-**Custom Module Example**
-```JavaScript
+**Beispiel für ein benutzerdefiniertes Modul**
+'''JavaScript
 /**
- * Sends an Image to the user via webchat
- * @arg {CognigyScript} `url` The url of the image
+ * Sendet ein Bild per Webchat an den Benutzer
+ * @arg {CognigyScript} 'url' Die URL des Bildes
  */
-const sendInlineImage = async (input, args) => {
-    const { url } = args;
+const sendInlineImage = asynchron (Eingabe, Argumente) => {
+    const { url } = Argumente;
 
-    // if no url is set
+Wenn keine URL festgelegt ist
     if (!url) {
-        // do nothing
-        return input;
+        nichts tun
+        Return-Eingang;
     }
 
-    // send a message that triggers the 'inline-image' plugin with a url
+Senden Sie eine Nachricht, die das Plugin 'inline-image' mit einer URL auslöst
     input.actions.output('', {
         _plugin: {
-            type: "inline-image",
+            Typ: "Inline-Bild",
             url: "https://placekitten.com/256/256"
         }
     });
 
-
-    return input;
+Return-Eingang;
 }
 
-```
+'''

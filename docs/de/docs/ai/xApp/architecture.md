@@ -1,82 +1,82 @@
 ---
-title: "Architecture"
-slug: "xApp-architecture"
-hidden: true
+Titel: "Architektur"
+slug: "xApp-Architektur"
+Ausgeblendet: Wahr
 ---
 
-# xApp Architecture
+# xApp-Architektur
 
-The following diagram illustrates the process when the xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files via HTTP/HTTPs 1.1 requests to `service-static-files` and establishes a WebSocket connection (via Socket.io)  to `serviceapp-session-manager` to retrieve information about xApp sessions. This information includes an async event to initialize an xApp session, which creates a unique URL, and specifies which xApp will be displayed in a specific xApp session. The Elastic Load Balancer helps distribute incoming traffic, while Traefik dynamically routes traffic to backend servers based on specific requirements. The `serviceapp-session-manager` updates the xApp session state in the App Session DB, and the WebSocket transfers data to the Shell page, which loads xApps and provides data to the SDK.
+Das folgende Diagramm veranschaulicht den Vorgang, wenn die xApp-Shell-Seite ihre Ressourcen (HTML/CSS/JS) lädt, indem sie statische Dateien über HTTP/HTTPs 1.1-Anforderungen an "service-static-files" anfordert und eine WebSocket-Verbindung (über Socket.io) zu "serviceapp-session-manager" herstellt, um Informationen über xApp-Sitzungen abzurufen. Zu diesen Informationen gehört ein asynchrones Ereignis zum Initialisieren einer xApp-Sitzung, das eine eindeutige URL erstellt und angibt, welche xApp in einer bestimmten xApp-Sitzung angezeigt wird. Der Elastic Load Balancer hilft bei der Verteilung des eingehenden Datenverkehrs, während Traefik den Datenverkehr basierend auf bestimmten Anforderungen dynamisch an Backend-Server weiterleitet. Der "serviceapp-session-manager" aktualisiert den xApp-Sitzungsstatus in der App-Sitzungsdatenbank, und der WebSocket überträgt Daten an die Shell-Seite, die xApps lädt und Daten für das SDK bereitstellt.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/architecture.png" width="100%" />
 </figure>
 
-## xApp Sequence Diagram
+## xApp-Sequenzdiagramm
 
-The diagram illustrates the sequence of interactions between a user, Cognigy Flow, xApp Backend, and xApp Page in the context of an xApp architecture integration.
+Das Diagramm veranschaulicht die Abfolge der Interaktionen zwischen einem Benutzer, Cognigy Flow, xApp Backend und xApp Page im Kontext einer xApp-Architekturintegration.
 
-```mermaid
+'''Meerjungfrau
 sequenceDiagram
-title Cognigy xApp - typical sequence of interactions
+title Cognigy xApp - typischer Ablauf von Interaktionen
 
-actor u as User
-participant f as Cognigy Flow
-participant xb as xApp Backend
-participant xf as xApp Page
+actor u als User
+Teilnehmer f as Cognigy Flow
+participant xb als xApp Backend
+participant xf als xApp-Seite
 
-u->>f: 1. Start conversation
-activate f
-%% f->>f:  xApp Init session
-f->> xb: 2. xApp Init session
-activate xb
-xb->>f: 3. xApp session token
-f->>f: 4. Compose xApp URL using token
-f->>u: 5. "Enter your data in xApp using this URL"
-f->>xb: 6. xApp Show HTML
-xb->>xb: 7. Remember HTML
-u->>xf: 8. Open xApp page
-activate xf
-xf->>xf: 9. Render Loading screen
-xf->>xb: 10. Get page
-xb->>xf: 11. Page HTML
-xf->>xf: 12. Render HTML page
-xf->>u: 13. HTML Page
-u->>xf: 14. Fill in and submit data
-xf->>xf: 15. SDK.submit(data)
-xf->>xb: 16. data
-xf->>xf: 17. Render Nothing to do here
-deactivate xf
-xb->>f: 18. input.data._cognigy._app.payload
-deactivate xb
-f->>f: 19. Process input.data
-f->>u: 20. "Received your data from xApp"
-deactivate f
-```
+u->>f: 1. Gespräch beginnen
+F aktivieren
+%% f->>f: xApp-Init-Sitzung
+f->> xb: 2. xApp Init-Sitzung
+XB aktivieren
+xb->>f: 3. xApp-Sitzungstoken
+f->>f: 4. Erstellen der xApp-URL mithilfe des Tokens
+f->>u: 5. "Geben Sie Ihre Daten in xApp über diese URL ein"
+f->>xb: 6. xApp HTML anzeigen
+XB->>XB: 7.HTML merken
+u->>xf: 8. xApp-Seite öffnen
+XF aktivieren
+xf->>xf: 9. Ladebildschirm für das Rendern
+xf->>xb: 10. Seite abrufen
+xb->>xf: 11. HTML-Code der Seite
+xf->>xf: 12. HTML-Seite rendern
+xf->>u: 13. HTML-Seite
+U->>XF: 14. Ausfüllen und Übermitteln von Daten
+xf->>xf: 15. SDK.submit(Daten)
+xf->>xb: 16. Daten
+xf->>xf: 17. Rendern Hier gibt es nichts zu tun
+XF deaktivieren
+XB->>F: 18. input.data._cognigy._app.payload
+XB deaktivieren
+F->>F: 19. Verarbeiten von input.data
+F->>U: 20. "Sie haben Ihre Daten von xApp erhalten"
+F deaktivieren
+'''
 
-1. The user starts a conversation with a Cognigy Flow.
-2. The Cognigy Flow initializes a session with the xApp backend.
-3. The xApp backend responds with a session token.
-4. The Cognigy Flow composes a URL using the session token
-5. The Cognigy Flow sends a message "Enter your data in xApp using this URL" to the user.
-6. The Cognigy Flow sends a request to the xApp backend to show the HTML page.
-7. The xApp backend remembers the HTML page.
-8. The user opens the xApp page.
-9. The xApp page renders a loading screen.
-10. The xApp page requests the HTML page from the xApp backend.
-11. The xApp backend responds with the HTML page.
-12. The xApp page renders the HTML page.
-13. The HTML page is shown to the user.
-14. The user fills in and submits data.
-15. The xApp page submits the data to the SDK.
-16. The SDK sends the data to the xApp backend.
-17. The Nothing to do here page is rendered.
-18. The xApp backend processes `input.data._cognigy._app.payload` and sends it to Cognigy Flow as input.
-19. The Cognigy Flow processes `input.data`. 
-20. The Cognigy Flow sends a message "Received your data from xApp" to the user confirming the data has been received.
+1. Der Benutzer beginnt eine Konversation mit einem Cognigy Flow.
+2. Der Cognigy Flow initialisiert eine Sitzung mit dem xApp-Backend.
+3. Das xApp-Backend antwortet mit einem Sitzungstoken.
+4. Der Cognigy Flow erstellt eine URL unter Verwendung des Sitzungstokens
+5. Der Cognigy Flow sendet eine Nachricht: "Geben Sie Ihre Daten über diese URL in xApp ein" an den Benutzer.
+6. Der Cognigy Flow sendet eine Anfrage an das xApp-Backend, um die HTML-Seite anzuzeigen.
+7. Das xApp-Backend merkt sich die HTML-Seite.
+8. Der Benutzer öffnet die xApp-Seite.
+9. Auf der xApp-Seite wird ein Ladebildschirm gerendert.
+10. Die xApp-Seite fordert die HTML-Seite vom xApp-Backend an.
+11. Das xApp-Backend antwortet mit der HTML-Seite.
+12. Die xApp-Seite rendert die HTML-Seite.
+13. Die HTML-Seite wird dem Benutzer angezeigt.
+14. Der Benutzer füllt die Daten aus und übermittelt sie.
+15. Die xApp-Seite sendet die Daten an das SDK.
+16. Das SDK sendet die Daten an das xApp-Backend.
+17. Die Seite "Hier ist nichts zu tun" wird gerendert.
+18. Das xApp-Backend verarbeitet 'input.data._cognigy._app.payload' und sendet es als Eingabe an Cognigy Flow.
+19. Der Cognigy Flow verarbeitet "input.data". 
+20. Der Cognigy Flow sendet eine Nachricht "Received your data from xApp" an den Benutzer und bestätigt, dass die Daten empfangen wurden.
 
-## More Information
+## Mehr Informationen
 
-- [Overview](overview.md)
-- [Build an xApp](build/overview.md)
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
+- [Übersicht](overview.md)
+- [Erstellen einer xApp](build/overview.md)
+- [xApp-Knoten](.. /flow-nodes/xApp/overview.md)

@@ -1,128 +1,128 @@
 ---
-title: "Build an xApp with Multiple Channels"
-slug: "xApp-with-multi-channels"
-hidden: true
+title: "Erstellen einer xApp mit mehreren Kanälen"
+Slug: "xApp-mit-Multi-Kanälen"
+Ausgeblendet: Wahr
 ---
 
-# Build an xApp with Multiple Channels
+# Erstellen Sie eine xApp mit mehreren Kanälen
 
-In this tutorial, you will learn how to build an xApp that can compliment a primary channel, the voice channel, to cover a certain use case which cannot be ideally covered via the voice channel. The xApp will be used to collect the email address from the users.  As part of this tutorial it will also be implemented that the link to the xApp will be shared with the customers via text message. 
+In diesem Tutorial erfahren Sie, wie Sie eine xApp erstellen, die einen primären Kanal, den Sprachkanal, ergänzen kann, um einen bestimmten Anwendungsfall abzudecken, der nicht ideal über den Sprachkanal abgedeckt werden kann. Die xApp wird verwendet, um die E-Mail-Adresse der Benutzer zu erfassen.  Im Rahmen dieses Tutorials wird auch implementiert, dass der Link zur xApp per SMS mit den Kunden geteilt wird. 
 
-## Prerequisites
+## Voraussetzungen
 
-- Access to a [voice provider](../../tools/voice-preview.md), for example, Microsoft Azure Speech Services.
-- [Twilio API Key](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys).
-- Twilio Extension preinstalled from [Cognigy Marketplace](../../resources/manage/extensions.md).
-- [Voice Gateway Endpoint](../../endpoints/cognigy-vg.md) configured in Cognigy.
+- Zugang zu einem [Sprachanbieter](.. /.. /tools/voice-preview.md), z. B. Microsoft Azure Speech Services.
+- [Twilio-API-Schlüssel](https://www.twilio.com/docs/glossary/what-is-an-api-key#how-can-i-create-api-keys).
+- Twilio-Erweiterung vorinstalliert von [Cognigy Marketplace](.. /.. /resources/manage/extensions.md).
+- [Voice Gateway-Endpunkt](.. /.. /endpoints/cognigy-vg.md), die in Cognigy konfiguriert ist.
 
-## Configure a Basic xApp Flow
+## Konfigurieren eines einfachen xApp-Flows
 
-1. Create a new Flow in Cognigy and name it `Multichannel App Tutorial`.
-2. In the Flow editor, add an **xApp: Init Session Node** to initialize the xApp session.
-3. Below the **xApp: Init Session** Node, add an **xApp: Show Adaptive Card** Node to update the initialized xApp session with a new Adaptive Card-based xApp page.
-4. In the **AdaptiveCard Definition** field, paste the following JSON:
-    ```json 
+1. Erstellen Sie einen neuen Flow in Cognigy und nennen Sie ihn "Multichannel App Tutorial".
+2. Fügen Sie im Flow-Editor einen **xApp: Init-Sitzungsknoten** hinzu, um die xApp-Sitzung zu initialisieren.
+3. Fügen Sie unterhalb des Knotens **xApp: Init-Sitzung** einen Knoten **xApp: Adaptive Karte anzeigen** hinzu, um die initialisierte xApp-Sitzung mit einer neuen, auf adaptiven Karten basierenden xApp-Seite zu aktualisieren.
+4. Fügen Sie in das Feld **AdaptiveCard Definition** den folgenden JSON-Code ein:
+    '''json 
      {
             "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
             "type": "AdaptiveCard",
             "version": "1.5",
-            "body": [
+            "Körper": [
                 {
                     "type": "TextBlock",
-                    "text": "Demo xApp form",
-                    "weight": "Bolder",
-                    "size": "Medium",
-                    "wrap": true,
-                    "style": "heading"
+                    "text": "Demo-xApp-Formular",
+                    "weight": "Mutiger",
+                    "size": "Mittel",
+                    "wrap": wahr,
+                    "style": "Überschrift"
                 },
                 {
                     "type": "Input.Text",
-                    "id": "myEmail",
-                    "label": "Your email",
-                    "regex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.][A-Za-z0-9-]{2,4}$",
-                    "isRequired": true,
-                    "errorMessage": "Please enter a valid email address",
-                    "style": "Email"
+                    "id": "Meine E-Mail",
+                    "label": "Ihre E-Mail-Adresse",
+                    "regex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.] [A-Za-z0-9-] {2,4}$",
+                    "isRequired": wahr,
+                    "errorMessage": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                    "style": "E-Mail"
                 }
             ],
-            "actions": [
+            "Aktionen": [
                 {
-                    "type": "Action.Submit",
-                    "title": "Submit",
-                    "style": "positive"
+                    "type": "Aktion.Senden",
+                    "title": "Senden",
+                    "style": "positiv"
                 }
             ]
         }
-    ```    
-5. Click **Save Node**.
-6. Below **xApp: Show Adaptive Card** Node, add a **Question** Node. This Node will be used to prompt the user, via the primary channel, to provide data through the xApp. It will then wait for the xApp's submit input before proceeding with further Flow execution.
-7. Set the **xApp** question type to ensure only data from the xApp will be accepted as a valid answer.
-8. Select the **Text with Buttons** output type to display a button with the xApp URL.
-9. Configure the prompt message to instruct users to enter their email using the xApp. In the **Text** field, paste the following text:
-   ```txt
-   Welcome to the xApp tutorial. Please enter your email in the xApp using the link which I texted you via SMS
-   ```
-10. Copy and paste the text from the **Text with Buttons** setting to the **Fallback Text** field, as a voice channel doesn't support the **Text with Buttons** setting.
-11. Click **Add button**. Fill in the following fields:
-    - **Button Title** — enter **Open xApp**.
-    - **Selection Button Type** — select the **URL** from the list.
-    - **URL** — click ![token](../../../assets/icons/token.svg) and select the **xApp Session URL** Token.
-    - **URL Target** — select **Open URL in a new tab**.
-12. If a user types anything in the chat, inform them that they need to use the xApp URL to enter their email. To do that, go to the **Reprompt Options** section and paste the following reprompt message:
-    ```txt
-    I can't continue before you enter the email in the xApp
-    ```
-13. Click **Save**.
-14. Click **Save Node**.
-15. Below the **Question** Node, add a **Say** Node.
-16. In the **Text** field, paste the following text:
-    ```txt
-    I received the following email: {{"{{ input.data._cognigy._app.payload.myEmail }}"}}
-    Goodbye!
-    ```
-17. Click **Save Node**.
+    '''    
+5. Klicken Sie auf **Knoten speichern**.
+6. Fügen Sie unter **xApp: Adaptive Karte anzeigen** Knoten einen **Frage** Knoten hinzu. Dieser Knoten wird verwendet, um den Benutzer über den primären Kanal aufzufordern, Daten über die xApp bereitzustellen. Anschließend wartet er auf die Sendeeingabe der xApp, bevor er mit der weiteren Flow-Ausführung fortfährt.
+7. Legen Sie den Fragetyp **xApp** fest, um sicherzustellen, dass nur Daten aus der xApp als gültige Antwort akzeptiert werden.
+8. Wählen Sie den Ausgabetyp **Text mit Schaltflächen** aus, um eine Schaltfläche mit der xApp-URL anzuzeigen.
+9. Konfigurieren Sie die Eingabeaufforderung, um Benutzer anzuweisen, ihre E-Mail-Adresse mithilfe der xApp einzugeben. Fügen Sie in das Feld **Text** den folgenden Text ein:
+   '''txt
+   Willkommen beim xApp-Tutorial. Bitte geben Sie Ihre E-Mail-Adresse in der xApp über den Link ein, den ich Ihnen per SMS geschickt habe
+   '''
+10. Kopieren Sie den Text aus der Einstellung **Text mit Schaltflächen** und fügen Sie ihn in das Feld **Fallbacktext** ein, da ein Sprachkanal die Einstellung **Text mit Schaltflächen** nicht unterstützt.
+11. Klicken Sie auf die Schaltfläche **Hinzufügen**. Füllen Sie die folgenden Felder aus:
+    - **Button Title** — Geben Sie **Open xApp** ein.
+    - **Auswahlschaltflächentyp** — Wählen Sie die **URL** aus der Liste aus.
+    - **URL** — klicken Sie auf ! [Marke] (.. /.. /assets/icons/token.svg) und wählen Sie das **xApp-Sitzungs-URL**-Token aus.
+    - **URL-Ziel**: Wählen Sie **URL in einem neuen Tab öffnen** aus.
+12. Wenn ein Benutzer etwas in den Chat eingibt, informieren Sie ihn, dass er die xApp-URL verwenden muss, um seine E-Mail-Adresse einzugeben. Wechseln Sie dazu zum Abschnitt **Optionen für erneute Eingabeaufforderung** und fügen Sie die folgende Meldung für die erneute Eingabeaufforderung ein:
+    '''txt
+    Ich kann nicht fortfahren, bevor Sie die E-Mail-Adresse in die xApp eingegeben haben.
+    '''
+13. Klicken Sie auf **Speichern**.
+14. Klicken Sie auf **Knoten speichern**.
+15. Fügen Sie unterhalb des Knotens **Frage** einen Knoten Sagen hinzu.
+16. Fügen Sie in das Feld **Text** den folgenden Text ein:
+    '''txt
+    Ich habe die folgende E-Mail erhalten: {{"{{ input.data._cognigy._app.payload.myEmail }}"}}
+    Auf Wiedersehen!
+    '''
+17. Klicken Sie auf **Knoten speichern**.
 
     <figure>
         <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/multichannel/basic-xApp-flow.png" width="100%">
     </figure>
 
-## Configure Voice Channel Support
+## Konfigurieren der Sprachkanalunterstützung
 
-1. Below the **Say** Node, add a **Hang Up** Voice Gateway Node at the end of the Flow to terminate the conversation after email confirmation.
-2. In the **Reason for hang up** field, specify **Bot ended the call**.
-3. Click **Save Node**.
+1. Fügen Sie unterhalb des Knotens "Sagen" am Ende des Flows einen Knoten "Voice Gateway auflegen" hinzu, um die Konversation nach der Bestätigung per E-Mail zu beenden.
+2. Geben Sie im Feld **Grund für das Auflegen** **Bot hat den Anruf beendet** an.
+3. Klicken Sie auf **Knoten speichern**.
 
-## Implement SMS Functionality
+## SMS-Funktionalität implementieren
 
-1. Below the **xApp: Show Adaptive Card** Node, add an **IF** Node to check if the caller number is available in the input metadata. This step is optional but helps distinguish between different channels in testing scenarios.
-2. In the **If** Node, add the **VG: Caller Number** condition.
-3. Click **Save Node**.
-4. If the caller number is available, add a **Send SMS** Node using a service like Twilio.
-5. In the **Send SMS** Node, fill in the following fields:
-    - **Twilio Connection** — specify an API key that you previously got from your Twilio account.
-    - **Sender Number** — set the sender number.
-    - **Receiver Number** — specify the **VG: Caller Number** condition.
-    - **Message Body** — customize the SMS message to include the xApp session URL.
-6. Click **Save Node**.
+1. Fügen Sie unterhalb des Knotens **xApp: Adaptive Karte anzeigen** einen Knoten **IF** hinzu, um zu überprüfen, ob die Anrufernummer in den Eingabemetadaten verfügbar ist. Dieser Schritt ist optional, hilft aber bei der Unterscheidung zwischen verschiedenen Kanälen in Testszenarien.
+2. Fügen Sie im Knoten **Wenn** die Bedingung **VG: Anrufernummer** hinzu.
+3. Klicken Sie auf **Knoten speichern**.
+4. Wenn die Anrufernummer verfügbar ist, fügen Sie einen **SMS-Sendeknoten** mit einem Dienst wie Twilio hinzu.
+5. Füllen Sie im Knoten **SMS senden** die folgenden Felder aus:
+    - **Twilio-Verbindung** – Geben Sie einen API-Schlüssel an, den Sie zuvor von Ihrem Twilio-Konto erhalten haben.
+    - **Absendernummer** — Legt die Absendernummer fest.
+    - **Empfängernummer** — Geben Sie die Bedingung **VG: Anrufernummer** an.
+    - **Nachrichtentext**: Passen Sie die SMS-Nachricht so an, dass sie die xApp-Sitzungs-URL enthält.
+6. Klicken Sie auf **Knoten speichern**.
 
-Once you created the xApp, test your Flow via the Interaction Panel.
+Nachdem Sie die xApp erstellt haben, testen Sie Ihren Flow über das Interaktionsfenster.
 
-## Test the Flow with a Voice Channel
+## Testen des Flows mit einem Sprachkanal
 
-1. Use the Interaction Panel's voice call feature to test the Flow. Ensure the voice preview settings in the agent's settings are properly configured.
-2. Call the specified voice gateway number from your phone.
-3. Follow the conversation prompts and observe the Flow's behavior.
+1. Verwenden Sie die Sprachanruffunktion des Interaction Panels, um den Flow zu testen. Stellen Sie sicher, dass die Einstellungen für die Sprachvorschau in den Einstellungen des Agenten ordnungsgemäß konfiguriert sind.
+2. Rufen Sie die angegebene Voice-Gateway-Nummer von Ihrem Telefon aus an.
+3. Befolgen Sie die Anweisungen zur Konversation und beobachten Sie das Verhalten des Flows.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/multichannel/test-voice-channel-flow.png" width="100%">
 </figure>
 
-Note that the voice fallback text will be used instead of buttons.
+Beachten Sie, dass der Sprach-Fallback-Text anstelle von Schaltflächen verwendet wird.
 
-The conversation should progress only when the user enters data through the xApp.
+Die Konversation sollte nur fortgesetzt werden, wenn der Benutzer Daten über die xApp eingibt.
 
-## More Information
+## Mehr Informationen
 
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
-- [Build an xApp](overview.md)
-- [xApps](../overview.md)
+- [xApp-Knoten](.. /.. /flow-nodes/xApp/overview.md)
+- [Erstellen einer xApp](overview.md)
+- [xApps](.. /overview.md)

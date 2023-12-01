@@ -1,42 +1,38 @@
 ---
- title: "Overview" 
- slug: "vg-webapp-overview" 
- hidden: false 
+ Titel: "Übersicht" 
+ Slug: "VG-WebApp-Übersicht" 
+ ausgeblendet: false 
 ---
 
-# Voice Gateway Self-Service Portal
+# Voice Gateway Self-Service-Portal
 
-The Cognigy Voice Gateway Self-Service Portal is a web-based interface that allows users to manage their accounts, settings, and preferences for Cognigy Voice Gateway.
+Das Cognigy Voice Gateway Self-Service Portal ist eine webbasierte Schnittstelle, mit der Benutzer ihre Konten, Einstellungen und Präferenzen für Cognigy Voice Gateway verwalten können.
 
-The Web App has the following entities:
+Die Web-App verfügt über die folgenden Entitäten:
 
-- [Users](users.md)
-- [Accounts](accounts.md)
-- [Applications](applications.md)
-- [Recent Calls](recent-calls.md)
-- [Alerts](alerts.md)
-- [Carriers](carriers.md)
-- [Speech](speech-services.md)
-- [Phone Numbers](phone-numbers.md)
-- [Outbound Call Routing](outbound-call-routing.md)
+- [Benutzer](users.md)
+- [Konten](accounts.md)
+- [Anwendungen](applications.md)
+- [Kürzliche Anrufe](recent-calls.md)
+- [Warnungen](alerts.md)
+- [Spediteure](carriers.md)
+- [Rede](speech-services.md)
+- [Telefonnummern](phone-numbers.md)
+- [Weiterleitung ausgehender Anrufe](outbound-call-routing.md)
 
+## Wie man anfängt
 
-## How to start
+Wenn Sie das Cognigy Voice Gateway Self-Service Portal zum ersten Mal verwenden, stellen Sie sicher, dass Sie die Schritte im [Handbuch "Erste Schritte]" (.. /getting-started.md). Nachdem Sie die Anleitung abgeschlossen haben, fahren Sie mit den folgenden Schritten fort:
 
-If you use the Cognigy Voice Gateway Self-Service Portal for the first time, ensure that you have completed the steps in the [Getting Started guide](../getting-started.md). Once you have completed the guide, proceed with the following steps:
+1. Identifizieren Sie den [Benutzerbereich](users.md), den Sie haben, oder fügen Sie einen neuen Benutzer hinzu. Die Vorgänge, die Sie in Voice Gateway ausführen können, basieren auf Ihrem Benutzerbereich, z. B. Administrator, Dienstanbieter oder Konto.
+2. Erstellen Sie ein [Konto](accounts.md) oder verwenden Sie ein vorhandenes.
+3. Erstellen Sie eine [Anwendung](applications.md) oder verwenden Sie eine vorhandene.
+4. Fügen Sie einen [neuen Spediteur](carriers.md) hinzu oder verwenden Sie einen vorhandenen.
+5. Fügen Sie eine [Telefonnummer](phone-numbers.md) hinzu oder verwenden Sie eine vorhandene.
+6. Fügen Sie [Anmeldeinformationen des Sprachanbieters](speech-services.md) hinzu oder verwenden Sie vorhandene.
 
-1. Identify the [user scope](users.md) you have or add a new user. The operations that you can perform in Voice Gateway are based on your user scope, such as Admin, Service Provider, or Account.
-2. Create an [account](accounts.md) or use an existing one.
-3. Create an [application](applications.md) or use an existing one.
-4. Add a [new carrier](carriers.md) or use an existing one.
-5. Add a [phone number](phone-numbers.md) or use an existing one.
-6. Add [speech provider credentials](speech-services.md) or use existing ones.
+Darüber hinaus können Sie:
 
-Additionally, you can:
-
-- Check [recent calls](recent-calls.md) and view all information about the call.
-- Check [alerts](alerts.md) if something went wrong with call configuration.
-- Configure [outbound call routing](outbound-call-routing.md).
-
-
-
+- Überprüfen Sie [Letzte Anrufe](recent-calls.md) und zeigen Sie alle Informationen zum Anruf an.
+- Überprüfen Sie [Warnungen](alerts.md), wenn bei der Anrufkonfiguration ein Fehler aufgetreten ist.
+- Konfigurieren Sie [Routing für ausgehende Anrufe](outbound-call-routing.md).

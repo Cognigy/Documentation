@@ -1,166 +1,153 @@
 ---
- title: "NLU Transformers" 
- slug: "nlu-transformers" 
- hidden: false 
+ Titel: "NLU Transformers" 
+ Schnecke: "NLU-Transformatoren" 
+ ausgeblendet: false 
 ---
-# NLU Transformers
+# NLU-Transformatoren
 
-## Description
-<div class="divider"></div>
-NLU Transformers are used to customize the pipeline in NLU Connectors. This makes it possible to change the incoming message from the endpoint before it is sent to the NLU engine, and to change the response from the NLU engine before it is sent to the Flow execution.
+## Beschreibung<div class="divider"></div>NLU-Transformatoren werden verwendet, um die Pipeline in NLU-Konnektoren anzupassen. Dadurch ist es möglich, die eingehende Nachricht vom Endpunkt zu ändern, bevor sie an die NLU-Engine gesendet wird, und die Antwort der NLU-Engine zu ändern, bevor sie an die Flow-Ausführung gesendet wird.
 
-[NLU Transformers]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#nlu-transformers_1) are available for Cognigy NLU, as well as for Alexa, DialogFlow, Microsoft LUIS and Watson Assistant connectors.
+[NLU-Transformatoren] ({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#nlu-transformers_1) sind für Cognigy NLU sowie für Alexa-, DialogFlow-, Microsoft LUIS- und Watson Assistant-Konnektoren verfügbar.
 
-When using Cognigy NLU, no Connector is required. However, to use Transformers for Cognigy NLU, it is necessary to explicitly create a Cognigy NLU Connector and select this Connector in the Endpoint.
+Bei Verwendung von Cognigy NLU ist kein Connector erforderlich. Um Transformers für Cognigy NLU zu verwenden, ist es jedoch erforderlich, explizit einen Cognigy NLU-Konnektor zu erstellen und diesen Konnektor im Endpunkt auszuwählen.
 
-It is also possible to write a custom NLU Connector, without using one of the NLU providers that are available in the different Connectors, by creating a Code NLU Connector and write a custom NLU pipeline in the [Code Transformer]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#nlu-code-transformer).
+Es ist auch möglich, einen benutzerdefinierten NLU-Konnektor zu schreiben, ohne einen der NLU-Anbieter zu verwenden, die in den verschiedenen Konnektoren verfügbar sind, indem Sie einen Code-NLU-Konnektor erstellen und eine benutzerdefinierte NLU-Pipeline im [Code Transformer]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#nlu-code-transformer) schreiben.
 
-## NLU Transformers
-<div class="divider"></div>
-To create a **NLU Transformer** for a Cognigy NLU, Alexa, DialogFlow, LUIS or Watson Assistant Connector, open the **Transformer Functions** tab in the NLU Connector. Here are the different [Transformer Settings]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings) that can be configured, as well as the Transformer code editor.
+## NLU-Transformatoren<div class="divider"></div>Um einen **NLU-Transformer** für einen Cognigy NLU-, Alexa-, DialogFlow-, LUIS- oder Watson Assistant-Konnektor zu erstellen, öffnen Sie die Registerkarte **Transformer-Funktionen** im NLU-Konnektor. Hier sind die verschiedenen [Transformer-Einstellungen]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings), die konfiguriert werden können, sowie der Transformer-Code-Editor.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/377f21a-NLU_Transformer.png" width="100%" />
 </figure>
 
 ### preNlu
-The transformer function ``preNlu`` has the parameters ``text``, ``data`` and ``language``, as received from the Endpoint. It has to return ``text`` and ``data``, which can be changed in the function, before being sent to the NLU engine.
+Die Transformer-Funktion ''preNlu'' hat die Parameter ''text'', ''data'' und ''language'', wie sie vom Endpunkt empfangen werden. Es muss ''Text'' und ''Daten'' zurückgeben, die in der Funktion geändert werden können, bevor es an die NLU-Engine gesendet wird.
 
-This preNlu transformer function can be used for typical NLP steps such as stop word removal, punctuation removal, noise removal, text normalization, spell checking, ...
+Diese preNlu-Transformer-Funktion kann für typische NLP-Schritte wie Stoppwortentfernung, Interpunktionsentfernung, Rauschentfernung, Textnormalisierung, Rechtschreibprüfung, ...
 
 ### postNlu
-The transformer function ``postNlu`` has the parameters ``text``, ``data``, ``nluResult`` and ``connectorOutput``, as received from the NLU engine.
+Die Transformer-Funktion ''postNlu'' hat die Parameter ''text'', ''data'', ''nluResult'' und ''connectorOutput'', wie sie von der NLU-Engine empfangen werden.
 
-The ``connectorOutput`` is the raw output from the NLU engine like DialogFlow, LUIS or Watson. It has more data than ``nluResult``, where the raw data from the NLU engine was already filtered and mapped to use in the Flow execution.
+Der ''connectorOutput'' ist die Rohausgabe der NLU-Engine wie DialogFlow, LUIS oder Watson. Es enthält mehr Daten als ''nluResult'', wo die Rohdaten der NLU-Engine bereits gefiltert und für die Verwendung in der Flow-Ausführung zugeordnet wurden.
 
-The function has to return ``data`` and ``nluResult``, which can be changed in the function, before processing the Flow.
+Die Funktion muss ''data'' und ''nluResult'' zurückgeben, die in der Funktion geändert werden können, bevor der Flow verarbeitet wird.
 
-## NLU Code Transformer
-<div class="divider"></div>
-
-The NLU Code transformer makes it possible to write a custom NLU pipeline. To create a NLU Transformer, open the **Transformer Functions** tab in the Code Connector. Here are the different [Transformer Settings]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings) that can be configured, as well as the Transformer code editor.
+## NLU-Code-Transformator<div class="divider"></div>Der NLU-Code-Transformator ermöglicht es, eine benutzerdefinierte NLU-Pipeline zu schreiben. Um einen NLU-Transformer zu erstellen, öffnen Sie die Registerkarte **Transformerfunktionen** im Code-Connector. Hier sind die verschiedenen [Transformer-Einstellungen]({{config.site_url}}ai/nlu/external-nlu/nlu-transformers/#transformer-settings), die konfiguriert werden können, sowie der Transformer-Code-Editor.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/5021c51-NLU_Code_Transformer.png" width="100%" />
 </figure>
 
-The transformer function ``preNlu`` has the parameters ``text``, ``data`` and ``language``, as received from the Endpoint. The function has to return ``data`` and ``nluResult``, which will be sent to the Flow execution.
+Die Transformer-Funktion ''preNlu'' hat die Parameter ''text'', ''data'' und ''language'', wie sie vom Endpunkt empfangen werden. Die Funktion muss ''data'' und ''nluResult'' zurückgeben, die an die Flow-Ausführung gesendet werden.
 
-## Available Modules
-<div class="divider"></div>
+## Verfügbare Module<div class="divider"></div>### HTTP-Anfragen senden
+Es ist möglich, HTTP-Anfragen an externe Dienste, wie z. B. NLU-Engines von Drittanbietern, aus einem Transformer heraus zu senden. Zu diesem Zweck können alle Transformer-Funktionen auf das Modul 'httpRequest' zugreifen. Das Modul wird als Funktion aufgerufen, die ein einzelnes Konfigurationsobjekt als Argumente verwendet. Dieses Objekt hat das gleiche Format wie das options-Objekt für das NPM-Modul [Request](https://www.npmjs.com/package/request#requestoptions-callback). Beispiel:
 
-### Sending HTTP Requests
-It is possible to send HTTP requests to external services, like 3rd party NLU engines, from within a Transformer. All Transformer functions can access the `httpRequest` module for this purpose. The module is invoked as a function which takes a single configuration object as arguments. This object has the same format as the options object for the NPM module [Request](https://www.npmjs.com/package/request#requestoptions-callback). Example:
-
-```ts
+'''ts
 handleInput: async () => {
   const result = await httpRequest({
-    uri: "some-uri",
-    method: "POST",
+    uri: "irgendein-uri",
+    Methode: "POST",
     body: {},
-    json: true
+    JSON: Stimmt
   });
   
-  console.log(result);
-  return result;
+Konsole.log(Ergebnis);
+  Ergebnis zurückgeben;
 }
-``` 
+''' 
 
-!!! warning "Limitations for the httpRequest module"
-    It is per default only possible to send one HTTP request per Transformer execution, and it is per default not possible to send HTTP requests to other Endpoints.
+!!! Warnung "Einschränkungen für das httpRequest-Modul"
+    Standardmäßig ist es nur möglich, eine HTTP-Anfrage pro Transformer-Ausführung zu senden, und es ist standardmäßig nicht möglich, HTTP-Anfragen an andere Endpunkte zu senden.
 
 ### Cognigy NLU
-It is possible to execute Cognigy NLU from within a Transformer. All NLU Transformer functions can access the `getCognigyNlu`  function. This function takes string as arguments.
-Example:
+Es ist möglich, Cognigy NLU aus einem Transformer heraus auszuführen. Alle Funktionen des NLU Transformers können auf die Funktion 'getCognigyNlu' zugreifen. Diese Funktion verwendet Zeichenfolgen als Argumente.
+Beispiel:
 
-```ts
+'''ts
 const cognigyNluResult = await getCognigyNlu(text + "Lorem ipsum dolor sit amet, consectetur adipiscing elit.");
-``` 
+''' 
 
-### Session Storage
-The Session Storage is a storage object available to all Transformer functions and which will be available throughout the session. This can be used to store variables that have to be used later, in other Transformer functions, or to store conversation state. There is a function called `getSessionStorage` exposed to the Transformer functions. It will return a Promise, which resolves with the `sessionStorage` object, which can be manipulated as a normal object. Example:
+### Sitzungsspeicher
+Der Sitzungsspeicher ist ein Speicherobjekt, das für alle Transformer-Funktionen verfügbar ist und während der gesamten Sitzung verfügbar ist. Dies kann verwendet werden, um Variablen zu speichern, die später verwendet werden müssen, in anderen Transformer-Funktionen oder um den Konversationsstatus zu speichern. Es gibt eine Funktion namens "getSessionStorage", die für die Transformer-Funktionen verfügbar gemacht wird. Es wird ein Promise zurückgegeben, das mit dem 'sessionStorage'-Objekt aufgelöst wird, das wie ein normales Objekt manipuliert werden kann. Beispiel:
 
-!!! warning "Mutating Objects in SessionStorage"
-    When wanting to change objects inside SessionStorage, it is best practice to not change them directly, but change them locally and later assign.
+!!! Warnung "Mutation von Objekten in SessionStorage"
+    Wenn Sie Objekte innerhalb von SessionStorage ändern möchten, empfiehlt es sich, sie nicht direkt, sondern lokal zu ändern und später zuzuweisen.
 
-```ts
+'''ts
 const sessionStorage = await getSessionStorage();
 
-sessionStorage.test = "test";
+sessionStorage.test = "testen";
 
-// Muting complex objects
-// Instead of changing the objects directly inside sessionStorage
-// change them locally and then assign them to the sessionStorage
+Stummschalten komplexer Objekte
+Anstatt die Objekte direkt in sessionStorage zu ändern
+Ändern Sie sie lokal und weisen Sie sie dann dem sessionStorage zu
 let tempArr = sessionStorage.arr || [];
 tempArr.push(1);
 tempArr.push(2);
 sessionStorage.arr = tempArr;
-``` 
+''' 
 
-### NPM Modules
-The following NPM modules are available in the Transformer:
+### NPM-Modul
+Die folgenden NPM-Module sind im Transformer verfügbar:
 
-- uuid
-- crypto
+- UUID
+-krypto
 - _ (Lodash)
-- moment
+-Moment
 
-### Logging
-It is possible to use the exposed modules `console.log`, `console.info` and `console.error` in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
+### Protokollierung
+Es ist möglich, die exponierten Module 'console.log', 'console.info' und 'console.error' in den Transformern zu verwenden. Dadurch wird das Protokoll auf der Seite [Projektprotokolle]({{config.site_url}}ai/resources/test/logs/) als Debug-Protokoll, Info-Protokoll bzw. Fehlerprotokoll angezeigt.
 
-## Transformer Settings
-<div class="divider"></div>
+## Transformator-Einstellungen<div class="divider"></div>### Aktivieren
+Um eine bestimmte Transformer-Funktion verwenden zu können, muss sie im Abschnitt Transformer-Einstellungen aktiviert werden. Es gibt einen Schalter, um jede einzelne Transformer-Funktion zu aktivieren. Transformer-Funktionen können vorübergehend deaktiviert werden, ohne dass der Code gelöscht werden muss.
 
-### Enable
-In order to use a specific Transformer function, it has to be enabled in the Transformer Settings section. There is a toggle to enable each individual Transformer function. Transformer functions can be temporarily disabled without having to delete the code.
+### Fehlerbehandlung in Transformern
+Die Standardfehlerbehandlung für Transformers besteht darin, den Fehler auf der Protokollseite zu protokollieren und dann mit der normalen Ausführung fortzufahren. Das heißt, wenn in der Transformer-Funktion ein Fehler auftritt, wird die Nachricht trotzdem so verarbeitet, als ob die Transformer-Funktion nicht vorhanden wäre. Es gibt eine Einstellung **Abort On Error**, die aktiviert werden kann, um die Ausführung vollständig zu stoppen, nachdem der Transformer einen Fehler ausgelöst hat. 
 
-### Error handling in Transformers
-The default error handling for Transformers is to log the error on the logs page and then continue with the normal execution. This means that if something fails in the Transformer function, the message will still be processed as if the Transformer function wouldn't exist. There is a setting **Abort On Error**, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
+### Transformer-Stack debuggen
+Wenn die Einstellung **Transformerstapel debuggen** aktiviert ist, werden die verschiedenen Ein- und Ausgänge der Transformer als Eingabeobjekt im Interaktionsfenster verfügbar gemacht. Beachten Sie, dass dies nur funktioniert, wenn Sie in das Interaktionsfenster schreiben, es ist nicht Teil des Eingabeobjekts, wenn andere Endpunkte verwendet werden.
+Beispiel:
 
-### Debug Transformer Stack
-If the **Debug Transformer Stack** setting is enabled, the different inputs and outputs from the Transformers are exposed input object in the interaction panel. Note that this only works when writing in the interaction panel, it is not part of the input object when using other endpoints.
-Example:
-
-```json
+'''json
 {
    "transformerStack":{
       "preNluInput":{
-         "text":"hi!!!"
+         "text":"Hallo!!"
       },
       "preNluOutput":{
-         "text":"hi",
-         "data":{
+         "text":"Hallo",
+         "Daten":{
 
-         }
+}
       },
       "postNluInput":{
-         "text":"hi",
-         "data":{
+         "text":"Hallo",
+         "Daten":{
 
-         },
+},
          "nluResult":{
-            "intent":"",
+            "Absicht":"",
             "intentScore":0,
             "slots":{
 
-            },
-            "type":"Greeting"
+},
+            "type":"Gruß"
          },
          "connectorOutput":null
       },
       "postNluOutput":{
-         "data":{
+         "Daten":{
 
-         },
+},
          "nluResult":{
             "intent":"myIntent",
             "intentScore":1,
             "slots":{
 
-            },
-            "type":"Greeting"
+},
+            "type":"Gruß"
          }
       }
    }
 }
-``` 
+''' 

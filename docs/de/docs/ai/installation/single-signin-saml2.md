@@ -1,75 +1,58 @@
 ---
-title: "Single Sign-on using SAML 2.0" 
-slug: "single-signin-saml2" 
-hidden: false 
+title: "Single Sign-on mit SAML 2.0" 
+Slug: "Single-Signin-SAML2" 
+ausgeblendet: false 
 ---
 
-# Single Sign-on using SAML 2.0
+# Single Sign-On mit SAML 2.0
 
-Cognigy.AI integrates with popular Single Sign-On (SSO) Identity Providers, such as Azure Active Directory, OneLogin, and Okta. This integration allows users within your organization to log in to Cognigy.AI without separate credentials. Using Single Sign-On automatically grants access that ensures a streamlined authentication process. Additionally, you can utilize the robust Access Control tool in Cognigy.AI to effectively manage and control the access rights of individual users.
+Cognigy.AI lässt sich in gängige SSO-Identitätsanbieter (Single Sign-On) wie Azure Active Directory, OneLogin und Okta integrieren. Diese Integration ermöglicht es Benutzern innerhalb Ihrer Organisation, sich ohne separate Anmeldeinformationen bei Cognigy.AI anzumelden. Durch die Verwendung von Single Sign-On wird automatisch Zugriff gewährt, der einen optimierten Authentifizierungsprozess gewährleistet. Darüber hinaus können Sie das robuste Zugriffskontrolltool verwenden, Cognigy.AI die Zugriffsrechte einzelner Benutzer effektiv zu verwalten und zu kontrollieren.
 
-## Get the SSO URL
+## Abrufen der SSO-URL<div class="divider"></div>Um Single Sign-On in Ihrem Identitätsanbieter zu konfigurieren, benötigen Sie die URL, die während des SAML-Authentifizierungsprozesses verwendet wird. Die SAML-Anforderungen werden an den API-Dienst gesendet, daher sollten Sie die API-Domäne verwenden, die Sie für Ihre Installation konfiguriert haben. Die SSO-URL hat das folgende Format:
 
-<div class="divider"></div>
+'''txt
+https://<api-url>/auth/saml/login/<organization-id>''' 
 
-To configure Single Sign-on in your Identity Provider, you will need the URL that is used during the SAML authentication process. The SAML requests are sent to the API service, so you should use the API domain that you have configured for your installation. The SSO URL will have the following format:
+Die API-URL für die App-Umgebung lautet beispielsweise "api-app.cognigy.ai". Die "Organisations-ID" ist die "ID" Ihrer Organisation innerhalb Cognigy.AI. Sie können Ihre 'organizationId' auf der [Mein Profil](.. /tools/interaction-panel/profile.md) durch Klicken auf ! [vertikale-Auslassungspunkte] (.. /.. /assets/icons/vertical-ellipsis.svg) **> Organisations-ID kopieren**.
 
-```txt
-https://<api-url>/auth/saml/login/<organization-id>
-``` 
+Sie benötigen die SSO-URL, wenn Sie Ihren Identitätsanbieter (IDP) mit einem der bereitgestellten Einrichtungsleitfäden konfigurieren.
 
-For example, the api-url for the app environment is `api-app.cognigy.ai`. The `organization-id` is the `id` of your organization within Cognigy.AI. You can get your `organizationId` on the [My Profile](../tools/interaction-panel/profile.md) page by clicking ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) **> Copy Organization ID**.
+Informationen zum Konfigurieren des SSO-Anbieters mit Cognigy.AI finden Sie in einem der spezifischen Handbücher für die [unterstützten Identitätsanbieter](#more-Informationen). Diese Leitfäden enthalten Beispiele für die erforderlichen API-Anfragen. Wenn Ihr Identitätsanbieter nicht aufgeführt ist, empfehlen wir, dem [OneLogin-Handbuch](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin#introduction-0-0) als Beispiel zu folgen. Die API-Anforderung für die Konfiguration von SSO mit Cognigy.AI ist dieselbe, aber die Konfigurationswerte können je nach Anbieter variieren.
 
-You will need the SSO URL when configuring your Identity Provider (IDP) using one of the setup guides provided.
+## Abrufen der SLO-URL<div class="divider"></div>!!! Warnung
+    - Single Logout wird nur mit OneLogin und Microsoft Azure Active Directory unterstützt:
+        - Die vom Dienstanbieter initiierte einmalige Abmeldung wird nur mit Microsoft Azure Active Directory unterstützt.
+        - Vom Identitätsanbieter initiiertes Single Logout wird nur mit OneLogin unterstützt.
 
-To configure the SSO Provider with Cognigy.AI, refer to one of the specific guides for the [supported Identity Providers](#more-information). These guides provide examples of the required API requests. If your Identity Provider is not listed, we recommend following the [OneLogin guide](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin#introduction-0-0) as an example. The API request for configuring SSO with Cognigy.AI is the same, but the configuration values may vary depending on the provider.
+Um Single Logout für Ihren Identitätsanbieter zu konfigurieren, benötigen Sie die URL, die für die Verarbeitung der Abmeldeanforderung vom IDP verwendet wird. Während des Single-Logout-Prozesses leitet der IDP an das Frontend von Cognigy.AI weiter. Daher sollten Sie die Frontend-Domäne verwenden, die Sie für Ihre Installation konfiguriert haben. Die SLO-URL hat das folgende Format:
 
-## Get the SLO URL
-<div class="divider"></div>
+'''txt
+https://<frontend-url>/Slo/<organization-id>''' 
 
-!!! warning
-    - Single Logout is only supported with OneLogin and Microsoft Azure Active Directory:
-        - Service Provider initiated Single Logout is only supported with Microsoft Azure Active Directory.
-        - Identity Provider initiated Single Logout is only supported with OneLogin.
+Zum Beispiel könnte die Frontend-URL "app.cognigy.ai" lauten.
 
-To configure Single Logout for your Identity Provider, you will need the URL that is used to process the logout request from the IDP. During the Single Logout process, the IDP will redirect to the frontend of Cognigy.AI. Therefore, you should use the frontend domain that you have configured for your installation. The SLO URL will have the following format:
+Weitere Informationen zum Herstellen einer Verbindung mit Ihrem angebotenen SSO-Anbieter finden Sie im [Cognigy Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on).
 
-```txt
-https://<frontend-url>/slo/<organization-id>
-``` 
+## Ändern einer Single-Sign-On-Konfiguration in Cognigy.AI<div class="divider"></div>Sie können nur eine SSO-Konfiguration für Ihre Organisation haben. Wenn Sie die Konfiguration ändern möchten, müssen Sie sie zunächst löschen und eine neue erstellen. Um eine SSO-Konfiguration zu löschen, senden Sie eine "POST"-Anfrage an:
 
-For instance, the frontend URL could be `app.cognigy.ai`.
-
-Learn more about connecting to your proffered SSO provider in [Cognigy Help Center](https://support.cognigy.com/hc/en-us/sections/360004563679-Single-Sign-on).
-
-## Change a Single Sign-on Configuration in Cognigy.AI
-
-<div class="divider"></div>
-
-You can have only one SSO configuration for your organization. If you want to change the configuration, you first need to delete it and create a new one. To delete an SSO configuration, send a `POST` request to:
-
-```txt
+'''txt
 https://<api-url>/v2.0/identityprovider/reset
-``` 
+''' 
 
-Read more about using the Cognigy.AI API on the [API Reference Page](https://api-trial.cognigy.ai/openapi#post-/v2.0/identityprovider/reset).
+Weitere Informationen zur Verwendung der Cognigy.AI API finden Sie auf der [API-Referenzseite](https://api-trial.cognigy.ai/openapi#post-/v2.0/identityprovider/reset).
 
-## Log in via SSO
+## Melden Sie sich über SSO an<div class="divider"></div>Wenn sich ein Benutzer zum ersten Mal über SSO bei Cognigy.AI anmeldet, muss er dies über den Identitätsanbieter tun. Auf diese Weise erhalten sie die richtigen Zugriffsrechte in Cognigy.AI und können sich bei nachfolgenden Anmeldungen über die Cognigy.AI Anmeldeseite anmelden.
 
-<div class="divider"></div>
+!!! Warnung "Erstmalige Anmeldung"
+    Bei der ersten Anmeldung müssen sich Benutzer mit ihren Anmeldeinformationen für den Identitätsanbieter (IDP) anmelden.
 
-When a user logs into Cognigy.AI via SSO for the first time, they need to do it from the Identity Provider. Doing this will give them the correct access rights in Cognigy.AI, and allow them to login via the Cognigy.AI login page on subsequent logins.
+Um sich auf der Anmeldeseite bei Cognigy.AI anzumelden, klicken Sie auf **Mit SSO anmelden** und geben Sie Ihre E-Mail-Adresse ein. Dadurch werden Sie zu Ihrem konfigurierten IDP weitergeleitet, wenn ein IDP für Ihre Organisation konfiguriert ist.
 
-!!! warning "First time login"
-    During the first login, users need to log in using their Identity Provider (IDP) credentials.
+## Mehr Informationen
 
-To log in to Cognigy.AI on the Login page, click **Log in with SSO** and enter your email. This will redirect you to your configured IDP if an IDP is configured for your organization.
-
-## More Information
-
-- Help Center articles:
-    - [SSO with Azure Active Directory](https://support.cognigy.com/hc/en-us/articles/360016310859-Azure-Active-Directory)
-    - [SSO with Google](https://support.cognigy.com/hc/en-us/articles/360016274780-Google)
-    - [SSO with Okta](https://support.cognigy.com/hc/en-us/articles/360016311079-Okta)
-    - [SSO with OneLogin](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin)
-    - [SSO with Auth0](https://support.cognigy.com/hc/en-us/articles/360018693139)
+- Help-Center-Beiträge:
+    - [SSO mit Azure Active Directory](https://support.cognigy.com/hc/en-us/articles/360016310859-Azure-Active-Directory)
+    - [SSO mit Google](https://support.cognigy.com/hc/en-us/articles/360016274780-Google)
+    - [SSO mit Okta](https://support.cognigy.com/hc/en-us/articles/360016311079-Okta)
+    - [SSO mit OneLogin](https://support.cognigy.com/hc/en-us/articles/360016310699-OneLogin)
+    - [SSO mit Auth0](https://support.cognigy.com/hc/en-us/articles/360018693139)</api-url></organization-id></frontend-url></organization-id></api-url>

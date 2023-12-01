@@ -1,96 +1,96 @@
 ---
-title: "Auto-translation" 
-slug: "auto-localization" 
-hidden: false 
+Titel: "Automatische Übersetzung" 
+Slug: "Automatische Lokalisierung" 
+ausgeblendet: false 
 ---
 
-# Automatic Translation
+# Automatische Übersetzung
 
-Cognigy has integrated _automatic translation_ capabilities
-to streamline the process of customizing Flows and Intents for various locales.
-This feature is helpful for users who need multilingual support without the need for manual translations.
+Cognigy hat _automatic translation_ Funktionen integriert
+, um den Prozess des Anpassens von Flows und Intents für verschiedene Gebietsschemata zu optimieren.
+Diese Funktion ist hilfreich für Benutzer, die mehrsprachigen Support benötigen, ohne dass manuelle Übersetzungen erforderlich sind.
 
-Cognigy.AI is compatible with the following machine translation providers:
+Cognigy.AI ist mit den folgenden Anbietern von maschineller Übersetzung kompatibel:
 
-- Microsoft Translator
-    - Microsoft Azure Cognitive Services Translator[^*]
-- Google Cloud Translation
-- DeepL Translation Pro
+-Microsoft Translator
+    - Microsoft Azure Cognitive Services-Übersetzer[^*]
+- Google Cloud-Übersetzung
+- DeepL Übersetzung Pro
 
-[^*]: To use **Azure Cognitive Services Translator** you must select Microsoft Translator in Settings > Translation Settings
+[^*]: Um **Azure Cognitive Services Translator** verwenden zu können, müssen Sie Microsoft Translator unter Einstellungen > Übersetzungseinstellungen auswählen
 
-These providers offer several valuable benefits:
+Diese Anbieter bieten mehrere wertvolle Vorteile:
 
-- **Freedom of Language Choice**. You have the flexibility to choose your preferred translation language.
-- **Supervised or Automatic Translation**. Translation can be performed manually under your supervision or set to work automatically, depending on your needs.
-- **Voice-Ready Translation**. Our translation capabilities are equipped to handle all modes, making them voice-ready and adaptable to various communication methods.
+- **Freiheit der Sprachwahl**. Sie haben die Flexibilität, Ihre bevorzugte Übersetzungssprache zu wählen.
+- **Überwachte oder automatische Übersetzung**. Die Übersetzung kann je nach Bedarf manuell unter Ihrer Aufsicht durchgeführt oder automatisch ausgeführt werden.
+- **Sprachfähige Übersetzung**. Unsere Übersetzungsfunktionen sind so ausgestattet, dass sie mit allen Modi umgehen können, so dass sie sprachfähig und an verschiedene Kommunikationsmethoden anpassbar sind.
 
-## Add a Machine Translation Provider
+## Hinzufügen eines Anbieters für maschinelle Übersetzung
 
 {! _includes/ai/settings/add-machine-translation-provider.md !}
 
-## Add a Locale
+## Hinzufügen eines Gebietsschemas
 
 {! _includes/ai/localization/add-locales.md !}
 
-## Machine Translation for Flow Localization
+## Maschinelle Übersetzung für die Lokalisierung von Abläufen
 
-In a Flow, you can change languages, localize Flow Nodes and Intents.
+In einem Flow können Sie Sprachen ändern, Flow-Knoten und Intents lokalisieren.
 
 {! _includes/ai/localization/switch-a-locale.md !}
 
-### Machine Translation for Node Localization
+### Maschinelle Übersetzung für die Lokalisierung von Knoten
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.61-blue.svg)] (.. /.. /release-notes/4.61.md)
 
-Localized Nodes are in color, while non-localized ones are grayed out. Within the Flow, you can set up multiple localizations, with fallback layers for locales without content.
+Lokalisierte Knoten sind farbig, während nicht lokalisierte Knoten ausgegraut sind. Innerhalb des Flows können Sie mehrere Lokalisierungen mit Fallback-Layern für Gebietsschemata ohne Inhalt einrichten.
 
-You can configure the machine translation settings for all types of text output Nodes, including Say, Question, and other Node types.
+Sie können die Einstellungen für die maschinelle Übersetzung für alle Arten von Textausgabeknoten konfigurieren, einschließlich Sagen, Fragen und andere Knotentypen.
 
-To localize a Node using machine translation, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Knoten mithilfe der maschinellen Übersetzung zu lokalisieren:
 
-1. Open now your Flow in which you want to localize Nodes. 
-2. Select the locale with untranslated Nodes. 
-3. Click a Node and select **Add Localization**. 
-4. Select **Add Translated Localization**. 
-5. Define the source locale for your translation by selecting a language from the **Locale to Translate from** list. 
-6. Define the target language for translation by selecting a language from the **Language to Translate to** list. 
-7. Click **Confirm**. 
+1. Öffnen Sie nun Ihren Flow, in dem Sie Nodes lokalisieren möchten. 
+2. Wählen Sie das Gebietsschema mit den nicht übersetzten Knoten aus. 
+3. Klicken Sie auf einen Knoten und wählen Sie **Lokalisierung hinzufügen** aus. 
+4. Wählen Sie **Übersetzte Lokalisierung hinzufügen** aus. 
+5. Definieren Sie das Quellgebietsschema für Ihre Übersetzung, indem Sie eine Sprache aus der Liste **Zu übersetzendes Gebietsschema aus** auswählen. 
+6. Definieren Sie die Zielsprache für die Übersetzung, indem Sie eine Sprache aus der Liste **Zu übersetzende Sprache** auswählen. 
+7. Klicken Sie auf **Bestätigen**. 
 
-The Node will be translated automatically.
-In the Node editor, make sure to review the translated fields,
-paying attention to [Tokens](../resources/manage/tokens.md) and [Cognigy.Script](../tools/cognigy-script.md), which should remain untranslated.
+Der Node wird automatisch übersetzt.
+Stellen Sie sicher, dass Sie im Knoten-Editor die übersetzten Felder überprüfen.
+Achten Sie auf [Tokens](.. /resources/manage/tokens.md) und [Cognigy.Script](.. /tools/cognigy-script.md), die unübersetzt bleiben sollte.
 
-### Machine Translation for Intent Localization
+### Maschinelle Übersetzung für die Lokalisierung von Absichten
 
-To localize an Intent using machine translation, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Intent mithilfe der maschinellen Übersetzung zu lokalisieren:
 
-1. In the upper-right corner of the Flow editor, select **NLU**.
-2. On the **Intents** tab, select an Intent that you want to translate.
-3. On the **Intent** page, click **Add Localization > Add Translated Localization**.
-4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation. 
-5. From the **Language to Translate from** list, select the language of the content you are translating.
-6. From the **Language to Translate to** list, select the language into which you want the content to be translated. 
-7. Click **Confirm**.
+1. Wählen Sie in der oberen rechten Ecke des Flow-Editors **NLU** aus.
+2. Wählen Sie auf der Registerkarte **Absichten** eine Absicht aus, die Sie übersetzen möchten.
+3. Klicken Sie auf der Seite **Absicht** auf **Lokalisierung hinzufügen > Übersetzte Lokalisierung hinzufügen**.
+4. Wählen Sie in der Liste **Zu übersetzendes Gebietsschema aus** ein Gebietsschema aus, um das Ausgangsgebietsschema für Ihre Übersetzung anzugeben. 
+5. Wählen Sie in der Liste **Zu übersetzende Sprache** die Sprache des zu übersetzenden Inhalts aus.
+6. Wählen Sie in der Liste **Zu übersetzende Sprache** die Sprache aus, in die der Inhalt übersetzt werden soll. 
+7. Klicken Sie auf **Bestätigen**.
 
-Intent example sentences will be translated automatically.
+Intent-Beispielsätze werden automatisch übersetzt.
 
-### Machine Translation for Multi-Intent Localization
+### Maschinelle Übersetzung für Multi-Intent-Lokalisierung
 
-To localize all Intents within your Flow using machine translation, follow these steps:
+Gehen Sie folgendermaßen vor, um alle Absichten in Ihrem Flow mithilfe der maschinellen Übersetzung zu lokalisieren:
 
-1. In the upper-right corner of the Flow editor, select **NLU**.
-2. On the **Intents** tab, on the right side of the **+ Create Intent** button, click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Add Localisations to all Intents**.
-3. In the **Add Localizations to all Intents** window, select **Auto-Translate from another locale**.
-4. From the **Locale to Translate from** list, select a locale to indicate the source locale for your translation.
-5. From the **Language to Translate from** list, select the language of the content you are translating.
-6. From the **Language to Translate to** list, select the language into which you want the content to be translated.
-7. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing Intents within the current Flow locale.
-8. Click **Confirm**.
+1. Wählen Sie in der oberen rechten Ecke des Flow-Editors **NLU** aus.
+2. Klicken Sie auf der Registerkarte **Absichten** auf der rechten Seite der Schaltfläche **+ Absicht erstellen** auf ! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Lokalisierungen zu allen Absichten hinzufügen**.
+3. Wählen Sie im Fenster **Lokalisierungen zu allen Absichten hinzufügen** die Option **Automatische Übersetzung aus einem anderen Gebietsschema** aus.
+4. Wählen Sie in der Liste **Zu übersetzendes Gebietsschema aus** ein Gebietsschema aus, um das Ausgangsgebietsschema für Ihre Übersetzung anzugeben.
+5. Wählen Sie in der Liste **Zu übersetzende Sprache** die Sprache des zu übersetzenden Inhalts aus.
+6. Wählen Sie in der Liste **Zu übersetzende Sprache** die Sprache aus, in die der Inhalt übersetzt werden soll.
+7. _(Optional)_ Aktivieren Sie die Einstellung **Bereits lokalisierte Intents überschreiben**, um Änderungen auf alle vorhandenen Intents innerhalb des aktuellen Flow-Gebietsschemas anzuwenden.
+8. Klicken Sie auf **Bestätigen**.
 
-This process ensures that all Intents are automatically translated.
+Dieser Prozess stellt sicher, dass alle Absichten automatisch übersetzt werden.
 
-## More Information
+## Mehr Informationen
 
-- [Localization](../resources/manage/localization.md)
-- [Switch Locale Node](../flow-nodes/logic/switch-locale.md)
+- [Lokalisierung](.. /resources/manage/localization.md)
+- [Gebietsschemaknoten wechseln](.. /flow-nodes/logic/switch-locale.md)

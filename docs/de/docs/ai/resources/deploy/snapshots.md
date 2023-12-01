@@ -1,213 +1,213 @@
 ---
- title: "Snapshots" 
- slug: "snapshots" 
- hidden: false 
+ Titel: "Schnappschüsse" 
+ Schnecke: "Schnappschüsse" 
+ ausgeblendet: false 
 ---
-# Snapshots
+# Schnappschüsse
 
-_Snapshots_ are immutable forms of your virtual agent, including the following resources:
+_Snapshots_ sind unveränderliche Formen Ihres virtuellen Agenten, einschließlich der folgenden Ressourcen:
 
-* Flows (including any trained NLU models)
-* Lexicons
-* Connections
-* NLU Connectors
-* Functions
-* Playbooks
-* Settings
-* Localization
-* Tokens
-* Extensions
+* Flows (einschließlich aller trainierten NLU-Modelle)
+*Lexika
+*Verbindungen
+* NLU-Steckverbinder
+*Funktionen
+* Spielbücher
+*Einstellungen
+*Lokalisierung
+*Zeichen
+*Erweiterungen
 
-Once a resource has been included in a Snapshot, that resource within the Snapshot can no longer be modified through any operation, for example, in the Flow Editor or through Cognigy's RESTful APIs.
+Sobald eine Ressource in einen Snapshot aufgenommen wurde, kann diese Ressource innerhalb des Snapshots nicht mehr durch einen Vorgang geändert werden, z. B. im Flow-Editor oder über die RESTful-APIs von Cognigy.
 
-Snapshots can be used in the following cases:
+Snapshots können in den folgenden Fällen verwendet werden:
 
-- To create an immutable just-in-time copy of all relevant resources of a virtual agent, allowing this specific version to be deployed through Endpoints while your developers are already working on the next version of your virtual agent.
-- To create a backup of your virtual agent, enabling you to revert to an earlier state if needed.
+- Um eine unveränderliche Just-in-Time-Kopie aller relevanten Ressourcen eines virtuellen Agenten zu erstellen, sodass diese spezifische Version über Endpunkte bereitgestellt werden kann, während Ihre Entwickler bereits an der nächsten Version Ihres virtuellen Agenten arbeiten.
+- Um eine Sicherungskopie Ihres virtuellen Agenten zu erstellen, damit Sie bei Bedarf zu einem früheren Zustand zurückkehren können.
 
-## Restrictions
+## Einschränkungen
 
-The following resources are not included in the Snapshot:
+Die folgenden Ressourcen sind nicht im Snapshot enthalten:
 
-* Endpoints
-* Intent Trainer records
-* Analytics data
-* Contact Profiles
-* Logs
-* Members
-* Knowledge AI
-* Other Snapshots
+*Endpunkte
+* Intent-Trainer-Aufzeichnungen
+* Analyse-Daten
+* Kontakt-Profil
+*Baumstämme
+*Angehörige
+* Wissen KI
+* Andere Schnappschüsse
 
-## Quotas and Limitations
+## Kontingente und Einschränkungen
 
-- The maximum number of Snapshots per Agent is 10. This limit can be modified in a dedicated product installation. It can be adjusted via the following environment variable in the `cognigy-env` config-map: `MAX_AMOUNT_SNAPSHOTS_IN_AGENT`.
-- The maximum size of a packaged Snapshot is 256 MB. If you have reached this limit, you must first delete older Snapshots before creating new ones. With a dedicated installation, you can increase the maximum number of Snapshots using an environment variable in the `cognigy-env` config-map: `SNAPSHOT_MAX_FILE_SIZE`.
-- The lifetime of a downloadable Snapshot until you have to re-create the download is 1 day.
+- Die maximale Anzahl von Snapshots pro Agent beträgt 10. Dieser Grenzwert kann in einer dedizierten Produktinstallation geändert werden. Sie kann über die folgende Umgebungsvariable in der Konfigurationskarte 'cognigy-env' angepasst werden: 'MAX_AMOUNT_SNAPSHOTS_IN_AGENT'.
+- Die maximale Größe eines gepackten Snapshots beträgt 256 MB. Wenn Sie dieses Limit erreicht haben, müssen Sie zuerst ältere Snapshots löschen, bevor Sie neue erstellen. Bei einer dedizierten Installation können Sie die maximale Anzahl von Snapshots erhöhen, indem Sie eine Umgebungsvariable in der Konfigurationszuordnung 'cognigy-env' verwenden: 'SNAPSHOT_MAX_FILE_SIZE'.
+- Die Lebensdauer eines herunterladbaren Snapshots, bis Sie den Download neu erstellen müssen, beträgt 1 Tag.
 
-## Snapshot File Format
+## Snapshot-Dateiformat
 
-The `.csnap` (Cognigy Snapshot) file is a special type that can only be used within the Cognigy.AI Snapshots. You cannot open or upload it outside of Cognigy.AI. Snapshots encrypt their data, including potentially sensitive information in the form of [Cognigy Connections](../build/connections.md).
+Die '.csnap'-Datei (Cognigy Snapshot) ist ein spezieller Typ, der nur innerhalb der Cognigy.AI Snapshots verwendet werden kann. Sie können es nicht außerhalb von Cognigy.AI öffnen oder hochladen. Snapshots verschlüsseln ihre Daten, einschließlich potenziell sensibler Informationen in Form von [Cognigy Connections](.. /build/connections.md).
 
-## Create a new Snapshot
+## Einen neuen Snapshot erstellen
 
-To create a new Snapshot of the current state of your virtual agent, do the following:
+Um einen neuen Snapshot des aktuellen Status Ihres virtuellen Agenten zu erstellen, gehen Sie wie folgt vor:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select **Deploy > Snapshots**. 
-3. Click **New Snapshot**. 
-4. Enter a name and description for the new Snapshot. We recommend including a version number in the name field and providing a description of the changes made in this version in the description field.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Wählen Sie im Menü auf der linken Seite **Deploy > Snapshots** aus. 
+3. Klicken Sie auf **Neuer Snapshot**. 
+4. Geben Sie einen Namen und eine Beschreibung für den neuen Snapshot ein. Es wird empfohlen, eine Versionsnummer in das Namensfeld einzugeben und im Beschreibungsfeld eine Beschreibung der in dieser Version vorgenommenen Änderungen anzugeben.
 
-Your Snapshot will appear in the list.
+Ihr Schnappschuss wird in der Liste angezeigt.
 
-We highly encourage you to create Snapshots and **point productive Endpoints** only to Flows that are contained within Snapshots.
+Wir empfehlen Ihnen dringend, Snapshots zu erstellen und produktive Endpunkte nur auf Flows zu verweisen, die in Snapshots enthalten sind.
 
-## Download a Snapshot
+## Einen Snapshot herunterladen
 
-You can download Snapshots you have created previously. This is useful if you want to archive your Snapshots offline or if you have multiple Cognigy.AI systems, and you want to transfer a Snapshot to your other Cognigy.AI system.
+Sie können Snapshots herunterladen, die Sie zuvor erstellt haben. Dies ist nützlich, wenn Sie Ihre Snapshots offline archivieren möchten oder wenn Sie mehrere Cognigy.AI Systeme haben und einen Snapshot auf Ihr anderes Cognigy.AI System übertragen möchten.
 
-To download a Snapshot, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Snapshot herunterzuladen:
 
-1. When you Snapshot has been created, click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to download from the list.
-2. Select **Prepare Download**. A downloadable Snapshot package will be created. A success notification will appear once your Snapshot package is prepared.
-3. Click ![snapshot download](../../../assets/icons/snapshot-download.svg) on the right side next to the previously prepared Snapshot
-   in order to initiate the download.
+1. Wenn Ihr Schnappschuss erstellt wurde, klicken Sie auf! [vertikale Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) auf der rechten Seite neben dem Snapshot, den Sie aus der Liste herunterladen möchten.
+2. Wählen Sie **Download vorbereiten**. Es wird ein herunterladbares Snapshot-Paket erstellt. Eine Erfolgsbenachrichtigung wird angezeigt, sobald Ihr Snapshot-Paket vorbereitet wurde.
+3. Klicken Sie auf ! [Schnappschuss herunterladen] (.. /.. /.. /assets/icons/snapshot-download.svg) auf der rechten Seite neben dem zuvor vorbereiteten Snapshot
+   um den Download zu starten.
   
-The web browser will start to download your prepared Snapshot package as a `.csnap` file.
+Der Webbrowser beginnt mit dem Herunterladen Ihres vorbereiteten Snapshot-Pakets als '.csnap'-Datei.
 
-## Upload a Snapshot
+## Einen Schnappschuss hochladen
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.47-blue.svg)] (.. /.. /.. /release-notes/4.47.md)
 
-The use case for uploading a Snapshot is usually to deploy its Flows into production.
-Since Snapshots live within virtual agents as other resources,
-you have to either first create a new virtual agent or upload the Snapshot in one of your existing ones.
+Der Anwendungsfall für das Hochladen eines Snapshots besteht in der Regel darin, seine Flows in der Produktion bereitzustellen.
+Da sich Snapshots in virtuellen Agenten als andere Ressourcen befinden,
+Sie müssen entweder zuerst einen neuen virtuellen Agenten erstellen oder den Snapshot in einen Ihrer vorhandenen hochladen.
 
-To upload a Snapshot, follow these steps:
+Um einen Snapshot hochzuladen, gehen Sie folgendermaßen vor:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, click **Deploy > Snapshots**.
-3. On the **Snapshots** page, click **Upload Snapshot**.
-4. Select a Snapshot with the `.csnap` format from your computer. When the file starts uploading, you will see a dialog window with a progress bar.
-5. Once the file has been uploaded, a new [task](../agents/tasks.md), titled **Upload Snapshot**, will be created. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie im Menü auf der linken Seite auf **Deploy > Snapshots**.
+3. Klicken Sie auf der Seite **Snapshots** auf **Snapshot hochladen**.
+4. Wählen Sie einen Snapshot im Format ".csnap" von Ihrem Computer aus. Wenn die Datei hochgeladen wird, wird ein Dialogfenster mit einem Fortschrittsbalken angezeigt.
+5. Sobald die Datei hochgeladen wurde, wird eine neue [Aufgabe](.. /agents/tasks.md) mit dem Titel **Upload Snapshot** erstellt. Um die Aufgabe anzuzeigen, klicken Sie auf ! [Aufgaben-Menü] (.. /.. /assets/icons/task-menu.svg) in der oberen rechten Ecke.
 
-After completing the **Upload Snapshot** task, your Snapshot will be installed and appear in the list on the **Snapshots** page.
+Nach Abschluss der Aufgabe **Snapshot hochladen** wird Ihr Snapshot installiert und in der Liste auf der Seite **Snapshots** angezeigt.
 
-## Procedure for Restoring a Virtual Agent from a Snapshot
+## Vorgehensweise zum Wiederherstellen eines virtuellen Agenten aus einem Snapshot
 
-If you are using Snapshots as a way of archiving your virtual agent, you might want to restore your virtual agent to the point where the Snapshot was taken initially.
+Wenn Sie Snapshots verwenden, um Ihren virtuellen Agenten zu archivieren, sollten Sie den virtuellen Agenten an dem Punkt wiederherstellen, an dem der Snapshot ursprünglich erstellt wurde.
 
-### Before Getting Started
+### Bevor es losgeht
 
-- **Restoring a Snapshot overwrites all existing Agent resources**. Make sure that you are fully aware of the implications when restoring a virtual agent from a Snapshot. All resources within the virtual agent will be deleted before they will be reconstructed from the Snapshot. In case you have active Endpoints pointing to the Flows in your virtual agent, conversations will break as those Flows will be removed.
-- **Restoring a Snapshot from another Agent may require manual changes to the Endpoints**. Restoring a Snapshot from another Agent will automatically update the Endpoints assigned with primary locale but would need a manual update for Endpoints with secondary locale. Those Endpoints will be indicated with a red dot beside the Endpoint name, like in the images below.
+- **Bei der Wiederherstellung eines Snapshots werden alle vorhandenen Agentenressourcen überschrieben**. Stellen Sie sicher, dass Sie sich der Auswirkungen bewusst sind, wenn Sie einen virtuellen Agenten aus einem Snapshot wiederherstellen. Alle Ressourcen innerhalb des virtuellen Agenten werden gelöscht, bevor sie aus dem Snapshot rekonstruiert werden. Falls Sie aktive Endpunkte haben, die auf die Flows in Ihrem virtuellen Agenten verweisen, werden Konversationen unterbrochen, da diese Flows entfernt werden.
+- **Die Wiederherstellung eines Snapshots von einem anderen Agenten erfordert möglicherweise manuelle Änderungen an den Endpunkten**. Durch die Wiederherstellung eines Snapshots von einem anderen Agenten werden die Endpunkte, denen das primäre Gebietsschema zugewiesen ist, automatisch aktualisiert, für Endpunkte mit dem sekundären Gebietsschema ist jedoch ein manuelles Update erforderlich. Diese Endpunkte werden mit einem roten Punkt neben dem Namen des Endpunkts angezeigt, wie in den folgenden Abbildungen.
 
-### Restore an Agent from the Snapshot
+### Wiederherstellen eines Agenten aus dem Snapshot
 
-Before initiating the restoration process, review the associated risks in the [Before Getting Started](#before-getting-started) section.
+Bevor Sie mit dem Wiederherstellungsprozess beginnen, überprüfen Sie die damit verbundenen Risiken im Abschnitt [Vor den ersten Schritten](#before-erste Schritte).
 
-To restore an Agent from a Snapshot, do the following:
+Um einen Agenten aus einem Snapshot wiederherzustellen, gehen Sie wie folgt vor:
 
-1. Upload the Snapshot in case the Snapshot from which you want to restore is not present in your virtual agent.
-2. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to restore. A selection menu will appear.
-3. Click **Restore**. A warning dialog will appear.
-4. Enter the name of the Snapshot in order to confirm the operation.
+1. Laden Sie den Snapshot hoch, falls der Snapshot, von dem Sie wiederherstellen möchten, nicht in Ihrem virtuellen Agenten vorhanden ist.
+2. Klicken Sie auf ! [vertikale Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) auf der rechten Seite neben dem Snapshot, den Sie wiederherstellen möchten. Es erscheint ein Auswahlmenü.
+3. Klicken Sie auf **Wiederherstellen**. Ein Warndialogfeld wird angezeigt.
+4. Geben Sie den Namen des Snapshots ein, um den Vorgang zu bestätigen.
   
-A new task will be created as deleting all current resources from the virtual agent and restoring the resources from the Snapshot can take some time.
-A success notification will be displayed once your virtual agent has been successfully restored from the Snapshot.
+Es wird eine neue Aufgabe erstellt, da das Löschen aller aktuellen Ressourcen aus dem virtuellen Agenten und das Wiederherstellen der Ressourcen aus dem Snapshot einige Zeit in Anspruch nehmen kann.
+Eine Erfolgsbenachrichtigung wird angezeigt, sobald Ihr virtueller Agent erfolgreich aus dem Snapshot wiederhergestellt wurde.
 
-## Delete a Snapshot
+## Einen Snapshot löschen
 
-Once you reach the maximum number of Snapshots in your virtual agent, you have to start deleting older Snapshots. 
+Sobald Sie die maximale Anzahl von Snapshots in Ihrem virtuellen Agenten erreicht haben, müssen Sie mit dem Löschen älterer Snapshots beginnen. 
 
-!!! danger "Check usage of your Snapshot"
-    In production, Endpoints should be directed to Snapshots. It is crucial to first check whether any Endpoints are still pointing to the Snapshot you intend to remove. Removing a Snapshot that is still referenced by one of your Endpoints will disrupt conversations for your customers.
+!!! danger "Überprüfen Sie die Verwendung Ihres Snapshots"
+    In der Produktion sollten Endpunkte an Snapshots weitergeleitet werden. Es ist wichtig, zunächst zu überprüfen, ob Endpunkte noch auf den Snapshot verweisen, den Sie entfernen möchten. Das Entfernen eines Snapshots, auf den noch von einem Ihrer Endpunkte verwiesen wird, unterbricht die Konversation für Ihre Kunden.
 
-To delete a Snapshot, do the following:
+Um einen Snapshot zu löschen, gehen Sie wie folgt vor:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, click **Deploy > Snapshots**.
-3. On the **Snapshots** page, select the Snapshot you want to delete. 
-4. Click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to delete. A selection menu will appear. 
-5. Select **Delete**. 
-6. Click **Confirm** in the dialog that opens.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie im Menü auf der linken Seite auf **Deploy > Snapshots**.
+3. Wählen Sie auf der Seite **Snapshots** den Snapshot aus, den Sie löschen möchten. 
+4. Klicken Sie auf ! [vertikale Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) auf der rechten Seite neben dem Snapshot, den Sie löschen möchten. Es erscheint ein Auswahlmenü. 
+5. Wählen Sie **Löschen**. 
+6. Klicken Sie im sich öffnenden Dialog auf **Bestätigen**.
   
-A new task will be created, and your Snapshot will be removed.
+Es wird eine neue Aufgabe erstellt und Ihr Snapshot wird entfernt.
 
-## Snapshot Compatibility
+## Snapshot-Kompatibilität
 
-Snapshots that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
+Snapshots, die in älteren Versionen von Cognigy.AI erstellt wurden, können problemlos in neuere Versionen der Plattform importiert werden und werden vollständig unterstützt.
 
-However, Snapshots created in newer versions may not be compatible with older versions, and are not supported.
+Snapshots, die in neueren Versionen erstellt wurden, sind jedoch möglicherweise nicht mit älteren Versionen kompatibel und werden nicht unterstützt.
 
-Importing and restoring a Snapshot from a newer version into an older version of Cognigy.AI are not recommended, as they can cause unexpected errors.
+Das Importieren und Wiederherstellen eines Snapshots aus einer neueren Version in eine ältere Version von Cognigy.AI wird nicht empfohlen, da dies zu unerwarteten Fehlern führen kann.
 
-## Deploy Virtual Agents to Production with Snapshots
+## Bereitstellen von virtuellen Agenten in der Produktion mit Snapshots
 
-The following three scenarios show the recommended methods for deploying virtual agents into production. Consider an Agent in Cognigy.AI as analogous to a project in other software.
+Die folgenden drei Szenarien zeigen die empfohlenen Methoden zum Bereitstellen virtueller Agents in der Produktion. Betrachten Sie einen Agenten in Cognigy.AI als Analogie zu einem Projekt in einer anderen Software.
 
-### Use a Single Virtual Agent
+### Verwenden Sie einen einzelnen virtuellen Agenten
 
-The Snapshot concept allows you to make your virtual agents available through Endpoints while you are already working on the next version of your virtual agent. This scenario is the simplest of all, but also quite elegant. 
+Das Snapshot-Konzept ermöglicht es Ihnen, Ihre virtuellen Agenten über Endpunkte verfügbar zu machen, während Sie bereits an der nächsten Version Ihres virtuellen Agenten arbeiten. Dieses Szenario ist das einfachste von allen, aber auch ziemlich elegant. 
 
-Let's assume that you have a virtual agent called **Order Bot** for your restaurant.
+Nehmen wir an, Sie haben einen virtuellen Agenten namens **Order Bot** für Ihr Restaurant.
 
-People developing the bot would create Flows, Lexicons, Intents, and all other resources as usual. Eventually, you reach a state where you want to publish to your customers. A new Snapshot needs to be created. You don't have to prepare a downloadable package for the Snapshot because you won't download and upload it to a different place — everything will remain in the current virtual agent's project.
+Die Entwickler des Bots würden wie gewohnt Flows, Lexika, Absichten und alle anderen Ressourcen erstellen. Schließlich erreichen Sie einen Zustand, in dem Sie für Ihre Kunden veröffentlichen möchten. Es muss ein neuer Snapshot erstellt werden. Sie müssen kein herunterladbares Paket für den Snapshot vorbereiten, da Sie es nicht an einen anderen Ort herunterladen und hochladen – alles verbleibt im Projekt des aktuellen virtuellen Agenten.
 
-To release the new Snapshot, go to your Endpoints, for example, your Webchat Endpoint used on your website, and select the new Snapshot and the Flows within it.
+Um den neuen Snapshot freizugeben, gehen Sie zu Ihren Endpunkten, z. B. Ihrem Webchat-Endpunkt, der auf Ihrer Website verwendet wird, und wählen Sie den neuen Snapshot und die darin enthaltenen Flows aus.
 
-Since you are now using resources within the Snapshot in production, developers can modify the Flows in the virtual agent directly without breaking the conversation logic for your customers.
+Da Sie jetzt Ressourcen innerhalb des Snapshots in der Produktion verwenden, können Entwickler die Flows im virtuellen Agenten direkt ändern, ohne die Konversationslogik für Ihre Kunden zu unterbrechen.
 
-### Use Multiple Virtual Agents
+### Verwenden Sie mehrere virtuelle Agenten
 
-For more control on what is actually running in production, this approach should be chosen.
+Für mehr Kontrolle darüber, was tatsächlich in der Produktion ausgeführt wird, sollte dieser Ansatz gewählt werden.
 
-Let's assume that you want to build a virtual agent for FAQs on their website.
-In this case, two virtual agents should be created in Cognigy.AI:
+Nehmen wir an, Sie möchten einen virtuellen Agenten für FAQs auf ihrer Website erstellen.
+In diesem Fall sollten zwei virtuelle Agenten in Cognigy.AI erstellt werden:
 
-- FAQ Bot development
-- FAQ Bot production
+- FAQ Bot-Entwicklung
+- FAQ Bot-Produktion
 
-Developers only have access to the **FAQ Bot development** Agent. All Flows, Lexicons, Intents, and all development, in general, happen here. Eventually, a certain state is reached, and a Snapshot is created. A downloadable package for the Snapshot has to be created, and the Snapshot has to be downloaded.
+Entwickler haben nur Zugriff auf den **FAQ Bot-Entwicklung** Agent. Alle Flows, Lexika, Absichten und alle Entwicklungen im Allgemeinen finden hier statt. Schließlich wird ein bestimmter Zustand erreicht, und es wird ein Snapshot erstellt. Ein herunterladbares Paket für den Snapshot muss erstellt werden, und der Snapshot muss heruntergeladen werden.
 
-To release the Snapshot, someone with access to the **FAQ Bot production** Agent uploads the packaged Snapshot and then points the productive Webchat endpoint to the new version of the Snapshot.
+Um den Snapshot freizugeben, lädt eine Person mit Zugriff auf den **FAQ Bot-Produktionsagent** den gepackten Snapshot hoch und verweist dann den produktiven Webchat-Endpunkt auf die neue Version des Snapshots.
 
-Remember that **Snapshots do not need to be restored** for Endpoints to use their content. The **FAQ Bot production** Agent should not contain direct resources like Flows; it should only store Snapshots, and its Endpoints should directly point to these Snapshots.
+Denken Sie daran, dass **Snapshots nicht wiederhergestellt** werden müssen, damit Endpunkte ihren Inhalt verwenden können. Der Agent **FAQ Bot production** sollte keine direkten Ressourcen wie Flows enthalten. Es sollten nur Snapshots gespeichert werden, und seine Endpunkte sollten direkt auf diese Snapshots verweisen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/deploy/images/deployment-two-agents.drawio.png" width="100%" />
-  <figcaption>Deployment concept using Snapshots and two Agents (projects)</figcaption>
+  <figcaption>Deployment-Konzept mit Snapshots und zwei Agenten (Projekten)</figcaption>
 </figure>
 
-### Use Multiple Virtual Agents with Multiple Cognigy.AI Systems
+### Verwenden Sie mehrere virtuelle Agenten mit mehreren Cognigy.AI Systemen
 
-You can go one step further compared to the [Using Multiple Virtual Agents](#use-multiple-virtual-agents) concept if you have multiple physically separated Cognigy.AI installations.
+Sie können im Vergleich zum Konzept [Using Multiple Virtual Agents](#use-multiple-virtual-agents) noch einen Schritt weiter gehen, wenn Sie über mehrere physisch getrennte Cognigy.AI Installationen verfügen.
 
-Let's assume that you have the following environments:
+Nehmen wir an, Sie verfügen über die folgenden Umgebungen:
 
-- **Dev**. A Cognigy.AI installation with low-hardware specs for development purposes.
-- **Staging**. A Cognigy.AI installation with higher hardware specs for staging purposes, where acceptance tests for new versions are conducted.
-- **Production**. A Cognigy.AI installation with high-hardware specs for production purposes.
+-**Dev**. Eine Cognigy.AI Installation mit niedrigen Hardwarespezifikationen für Entwicklungszwecke.
+-**Inszenierung**. Eine Cognigy.AI Installation mit höheren Hardwarespezifikationen für Staging-Zwecke, bei der Akzeptanztests für neue Versionen durchgeführt werden.
+-**Produktion**. Eine Cognigy.AI Installation mit hohen Hardwarespezifikationen für Produktionszwecke.
 
-In this case, your developers only have access to virtual agent projects in the **Dev** installation.
-They build bots, craft entire new experiences, or improve already existing solutions.
-Once they reach a desired state in their projects, they create new Snapshots.
-Downloadable packages for Snapshots are then created and provided to the teams working on the **Staging** installation.
+In diesem Fall haben Ihre Entwickler nur Zugriff auf virtuelle Agentenprojekte in der **Dev**-Installation.
+Sie entwickeln Bots, schaffen völlig neue Erfahrungen oder verbessern bereits bestehende Lösungen.
+Sobald sie einen gewünschten Zustand in ihren Projekten erreicht haben, erstellen sie neue Snapshots.
+Herunterladbare Pakete für Snapshots werden dann erstellt und den Teams zur Verfügung gestellt, die an der **Staging**-Installation arbeiten.
 
-People on staging receive the Snapshots from developers
-and upload them into their virtual agent projects in the **Staging** system.
-They point their Endpoints to the new Snapshots and run acceptance tests.
-If they find defects, they inform their development teams, which then fix the problems and provide new Snapshots.
-If testing goes well, the Snapshots are moved to the **Production** system.
+Staging-Personen erhalten die Snapshots von Entwicklern
+und laden Sie sie in ihre virtuellen Agentenprojekte im **Staging**-System hoch.
+Sie verweisen ihre Endpunkte auf die neuen Snapshots und führen Akzeptanztests durch.
+Wenn sie Fehler finden, informieren sie ihre Entwicklungsteams, die dann die Probleme beheben und neue Snapshots bereitstellen.
+Wenn die Tests erfolgreich verlaufen, werden die Snapshots in das **Produktionssystem** verschoben.
 
-People with access to the production system (usually only a very small group of people) point the productive Endpoints to the new Snapshots
-provided by the teams who have verified the quality on the **Staging**
-system.
-The **Production**
-system is also the place
-in which [Cognigy Insights](../../../insights/cognigy-insights.md) will be used to understand how the actual users use the virtual agents,
-as productive interaction only happens on this system.
+Personen mit Zugriff auf das Produktionssystem (in der Regel nur eine sehr kleine Gruppe von Personen) verweisen die produktiven Endpunkte auf die neuen Snapshots
+von den Teams zur Verfügung gestellt werden, die die Qualität der **Inszenierung**
+System.
+Die **Produktion**
+System ist auch der Ort, an dem
+in dem [Cognigy Insights](.. /.. /.. /insights/cognigy-insights.md) wird verwendet, um zu verstehen, wie die tatsächlichen Benutzer die virtuellen Agenten verwenden.
+da die produktive Interaktion nur auf diesem System stattfindet.
 
-## More Information
+## Mehr Informationen
 
-- [Endpoints](endpoints.md)
-- [Flows](../build/flows.md)
+- [Endpunkte](endpoints.md)
+- [Flüsse](.. /build/flows.md)

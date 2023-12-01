@@ -1,49 +1,46 @@
 ---
- title: "Think" 
- slug: "think" 
- hidden: false 
+ Titel: "Denken" 
+ Schnecke: "denken" 
+ ausgeblendet: false 
 ---
-# Think
+# Denk nach
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/think.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten wird verwendet, um den Flow innerhalb eines Aufrufs erneut auszuführen.
 
-This Node is used to re-execute the Flow within one invocation.
+Bei Erreichen dieses Knotens wird der Flow gestoppt und dann am Startknoten neu ausgeführt.
 
-Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
+Sie können einen Eingabetext und Eingabedaten angeben, die dann als simulierte Nachricht des Benutzers behandelt werden.
 
-You may specify an input text and input data which will then be treated as a simulated message from the user.
+!!! Hinweis "Think NLU"
+    Wenn ein Flow erneut über einen Think Node ausgeführt wird, wird die neue Nachricht erneut durch die NLU-Pipeline gesendet, wobei Slots und übereinstimmende Absichten gefunden werden.
 
-!!! note "Think NLU"
-    When a Flow gets executed again via a Think Node, the new message will be sent through the NLU pipeline again, finding Slots and matching Intents.
+## Einstellungen
 
-## Settings
-
-| Parameter | Type               | Description                             |
+| Parameter | Typ | Beschreibung |
 |-----------|--------------------|-----------------------------------------|
-| Text      | CognigyScript      | A simulated message text from the user. |
-| Data      | CognigyScript JSON | Simulated message data from the user.   |
+| Text | CognigyScript | Ein simulierter Meldungstext des Benutzers. |
+| Daten | CognigyScript JSON | Simulierte Nachrichtendaten des Benutzers.   |
 
-You can select two **Advanced** options to integrate a Think Node functionality in your Flow:
+Sie können zwei **Erweiterte** Optionen auswählen, um eine Think Node-Funktionalität in Ihren Flow zu integrieren:
 
-1. Think Text (default setting)
-2. Trigger Intent
+1. Text denken (Standardeinstellung)
+2. Absicht auslösen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.2.0-blue.svg)] ({{config.site_url}})
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/558c716-Screen_Shot_057.PNG" width="100%" />
 </figure>
 
-Using the **Trigger Intent** option, you can re-execute the flow while forcing that a specific intent is found, instead of getting the intent result from our NLU engine. It is exactly the same behaviour as described in [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/).
+Mit der Option **Trigger Intent** können Sie den Flow erneut ausführen und gleichzeitig erzwingen, dass eine bestimmte Absicht gefunden wird, anstatt das Intent-Ergebnis von unserer NLU-Engine abzurufen. Es ist genau das gleiche Verhalten wie in [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/ beschrieben).
 
-You can trigger an intent with a user input like "cIntent:orderFood", then the intent "orderFood" will be triggered. 
-Using the Think Node you can have the same behaviour by choosing the "Trigger Intent" option, and "orderFood" in the "intent to trigger" field.
+Sie können einen Intent mit einer Benutzereingabe wie "cIntent:orderFood" auslösen, dann wird der Intent "orderFood" ausgelöst. 
+Mit dem Think Node können Sie das gleiche Verhalten haben, indem Sie die Option "Trigger Intent" und "orderFood" im Feld "Intent to trigger" auswählen.
 
-## Alternatives
+## Alternativen
 
-When you need to process user input or other text in the middle of a Flow to retrieve an NLU result, and you do not want to restart the Flow from the Start Node, use the [Execute Cognigy NLU Node](../nlu/execute-cognigy-nlu.md).
+Wenn Sie Benutzereingaben oder anderen Text in der Mitte eines Flows verarbeiten müssen, um ein NLU-Ergebnis abzurufen, und Sie den Flow nicht vom Startknoten aus neu starten möchten, verwenden Sie den Befehl [Cognigy NLU-Knoten ausführen](.. /nlu/execute-cognigy-nlu.md).

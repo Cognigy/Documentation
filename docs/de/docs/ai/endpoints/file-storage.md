@@ -1,8 +1,8 @@
 ---
-title: "File Storage"
-slug: "file-storage"
-hidden: false
+Titel: "Dateiablage"
+slug: "Datei-Speicher"
+ausgeblendet: false
 ---
-# File Storage
+# Dateiablage
 
 {! _includes/ai/file-storage.md !}

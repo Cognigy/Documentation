@@ -1,18 +1,16 @@
 ---
 Titel: "Say" 
-slug: "say" 
+Schnecke: "sagen" 
 ausgeblendet: false 
 ---
 
-# Say
+# Durchhängen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/say.png" width="80%" />
 </figure>
 
-## Beschreibung
-<div class="divider"></div>
-Ein Say-Knoten wird verwendet, um eine Nachricht an den Benutzer zu senden.
+## Beschreibung<div class="divider"></div>Ein Say-Knoten wird verwendet, um eine Nachricht an den Benutzer zu senden.
 
 Je nach aktuellem Kanal stehen weitere Rich-Media-Formate zur Verfügung. Fügen Sie eine neue Kanalausgabe hinzu, indem Sie auf das Symbol **+** klicken und den Kanal auswählen, der dem Kanalendpunkt entspricht, der bereitgestellt werden soll.
 <figure>
@@ -22,22 +20,16 @@ Je nach aktuellem Kanal stehen weitere Rich-Media-Formate zur Verfügung. Fügen
 
 Wenn es eine kanalspezifische Konfiguration für den aktuellen Kanal gibt, wird diese Konfiguration *anstatt* der Konfiguration im Standardabschnitt verwendet.
 
-## KI (Standardkanal) 
-<div class="divider"></div>
+## KI (Standardkanal)<div class="divider"></div>
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/894062b-1AI.jpg" width="100%" />
-</figure>
-
-!!! Tipp "Automatische Konvertierung in kanalspezifische Ausgabe"
+</figure>!!! Tipp "Automatische Konvertierung in kanalspezifische Ausgabe"
     Falls Rich Media auf der Standard-KI-Registerkarte konfiguriert ist, versucht die Plattform, die Ausgabe automatisch in das Äquivalent des Kanals zu konvertieren. Überprüfen Sie den spezifischen Ausgabetyp oben, um die Kanalunterstützung zu überprüfen.
 
 !!! Warnung "Fallback-Text"
     Falls die automatische Konvertierung in kanalspezifische Ausgabe nicht stattfinden kann, wird der Fallback-Text ausgelöst.
 
-## Ausgabe-Typen
-<div class="divider"></div>
-
-Der AI-Kanal ermöglicht die Konfiguration verschiedener **Ausgabetypen**. Nicht alle [Endpunkte](.. /.. /endpoints/overview.md) können Ihre Inhalte korrekt in den gewünschten Ausgabetyp konvertieren. Vor der Konfiguration [Kompatibilität prüfen](.. /.. /endpoints/content-conversion.md) des Ausgabetyps mit dem Endpunkt.
+## Ausgabe-Typen<div class="divider"></div>Der AI-Kanal ermöglicht die Konfiguration verschiedener **Ausgabetypen**. Nicht alle [Endpunkte](.. /.. /endpoints/overview.md) können Ihre Inhalte korrekt in den gewünschten Ausgabetyp konvertieren. Vor der Konfiguration [Kompatibilität prüfen](.. /.. /endpoints/content-conversion.md) des Ausgabetyps mit dem Endpunkt.
 
 ### Text
 <figure>
@@ -281,7 +273,7 @@ Sie können auch generative KI verwenden, um eine neue adaptive Karte zu erstell
 Um diese Funktion zu aktivieren, gehen Sie folgendermaßen vor: 
 
 1. Wählen Sie den Ausgabetyp **Adaptive Karte** aus.
-2. Klicken Sie auf der rechten Seite der Liste **Ausgabetyp** auf ! [das Gen-KI-Symbol] (.. /.. /.. /assets/icons/beta.svg).
+2. Klicken Sie auf der rechten Seite der Liste **Ausgabetyp** auf ! [das Gen-KI-Symbol] (.. /.. /assets/icons/beta.svg).
 3. Weisen Sie im Abschnitt **Knotenausgabe generieren** das generative KI-Modell an, wie die aktuelle adaptive Karte verbessert werden kann. Beispiel: "Erstellen Sie ein Formular mit einem Feld für den Kundennamen und einem Eingabefeld für das Datum".
 4. Klicken Sie auf **Generieren**. Die adaptive Karte wird generiert.
 5. Verbessern Sie iterativ die resultierende adaptive Karte, indem Sie im Abschnitt **Knotenausgabe generieren** weitere Anweisungen geben. Beispiel: "Fügen Sie ein Flugnummernfeld hinzu".
@@ -289,7 +281,7 @@ Um diese Funktion zu aktivieren, gehen Sie folgendermaßen vor:
 
 Um zwischen Ihren Eingaben zu navigieren, verwenden Sie ! [Pfeil zurück] (.. /.. /.. /assets/icons/back-arrow.svg) ! [beta] (.. /.. /.. /assets/icons/next-arrow.svg).
 
-Um die aktuelle adaptive Karte durch eine neue zu ersetzen, klicken Sie auf ! [Papierkorb] (.. /.. /.. /assets/icons/recycle-bin.svg).
+Um die aktuelle adaptive Karte durch eine neue zu ersetzen, klicken Sie auf ! [Papierkorb] (.. /.. /assets/icons/recycle-bin.svg).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
@@ -326,14 +318,11 @@ Um die aktuelle adaptive Karte durch eine neue zu ersetzen, klicken Sie auf ! [P
     }
     '''
 
-## Alexa
-<div class="divider"></div>
+## Alexa<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1ebe307-alexa.jpg" width="100%" />
-</figure>
-
-Definiert, was ein Amazon Echo-fähiges System als Antwort sagt. 
+</figure>Definiert, was ein Amazon Echo-fähiges System als Antwort sagt. 
 
 ### SSML-Editor
 
@@ -366,7 +355,7 @@ Die folgenden Anzeigevorlagen stehen zur Verfügung:
 
 * Text in voller Breite
 * Text & Bild rechts
-* Text & Bild links
+* Text- & Bildlinks
 * Bild- und Text-Overlay
 * Vertikale Liste
 * Horizontale Liste
@@ -377,15 +366,12 @@ Anstatt den WYSIWYG-Ansatz zu verwenden, können Sie eine Direktive auch manuell
 
 Weitere Informationen finden Sie in der [Amazon Alexa-Dokumentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).
 
-## Bote
-<div class="divider"></div>
+## Bote<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/16b8fc7-messenger.jpg" width="100%" />
     <div style="text-align: center;"><a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api" target="_blank">Link: Messenger-Sende-API</a></div>
-</figure>
-
-Definiert Vorlagen, die im Facebook Messenger Channel auf besondere Weise angezeigt werden können.
+</figure>Definiert Vorlagen, die im Facebook Messenger Channel auf besondere Weise angezeigt werden können.
 
 Die folgenden Facebook Messenger-Vorlagen sind verfügbar:
 
@@ -418,27 +404,21 @@ Weitere Informationen finden Sie unter [Code Nodes]({{config.site_url}}ai/flow-n
 !!! danger "Verwerfung der Standortschaltfläche"
     Der Schnellantwort-Button "Standort", um den Standort eines Benutzers zu senden, wurde vom Facebook Messenger als veraltet markiert und ist nicht mehr verfügbar. Entferne es, wenn du es in einem älteren Flow hast, da Facebook Messenger die vollständige Nachricht ablehnt, wenn noch eine Schnellantwort für den Standort definiert ist.
 
-## Webchat
-<div class="divider"></div>
+## Webchat<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/26ca2e8-webchat.jpg" width="100%" />
-</figure>
-
-Der Webchat-Kanal bietet die Konfigurationsmöglichkeiten unserer Facebook-Integration.
+</figure>Der Webchat-Kanal bietet die Konfigurationsmöglichkeiten unserer Facebook-Integration.
 
 Da das Ausgabeformat identisch ist, können Sie den Webchat-Kanal so konfigurieren, dass er Ihre Ausgabe aus dem Facebook-Tab verwendet, oder ihn manuell für Webchat-spezifische Anpassungen überschreiben.
 
 Der Webchat rendert HTML-Markup für Ausgaben aus dem Text des DEFAULT-Tabs sowie das Textfeld aus der Webchat-Tab-Vorlage "Text + Quick Replies".
-## LINIE
-<div class="divider"></div>
+## LINIE<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8313bb3-line.jpg" width="100%" />
-  <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE Message API</a></div>
-</figure>
-
-Die Registerkarte **LINE** bietet zwei Methoden zum Erstellen und Bearbeiten einer Nachricht, die nur für den **LINE**-Kanal gilt:
+  <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE-Nachrichten-API</a></div>
+</figure>Die Registerkarte **LINE** bietet zwei Methoden zum Erstellen und Bearbeiten einer Nachricht, die nur für den **LINE**-Kanal gilt:
 
 - **Text** zum Senden von SMS-Antworten
 - **Benutzerdefiniertes JSON** zum Definieren komplexerer Nachrichten und Vorlagen
@@ -448,15 +428,12 @@ Die Registerkarte **LINE** bietet zwei Methoden zum Erstellen und Bearbeiten ein
 | Text | Eine einfache Textnachricht.                                                                                                                                           |
 | Benutzerdefiniertes JSON | Kann ein gültiges LINE-Nachrichtenobjekt enthalten. Weitere Informationen und Vorlagen finden Sie in der [Leitungsdokumentation](https://developers.line.me/en/reference/messaging-api/). |
 
-## Twilio
-<div class="divider"></div>
+## Twilio<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6404b3e-twilio.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio-Dokumentation</a></div>
-</figure>
-
-| Typ | Beschreibung |
+</figure>| Typ | Beschreibung |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text | Eine einfache Textnachricht.                                                                                                                                                                                         |
 | TwiML | Kann gültiges TwiML enthalten. Weitere Informationen und Vorlagen finden Sie in der [Twilio-Dokumentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml). |
@@ -471,15 +448,12 @@ Im Endpunkt-Editor Ihres **Twilio-Endpunkts** können Sie die **Amazon Polly**-S
 
 [:link: Twilio Amazon Polly] (https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
 
-## Twilio SMS
-<div class="divider"></div>
+## Twilio SMS<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9819b1c-twiliosms.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS-Dokumentation</a></div>
-</figure>
-
-| Typ | Beschreibung |
+</figure>| Typ | Beschreibung |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Text | Eine einfache Textnachricht.                                                                                                                    |
 | TwiML | Kann gültiges TwiML enthalten. Weitere Informationen und Vorlagen finden Sie in der [Twilio-Dokumentation](https://www.twilio.com/docs/sms/twiml/message). |
@@ -488,20 +462,14 @@ Im Endpunkt-Editor Ihres **Twilio-Endpunkts** können Sie die **Amazon Polly**-S
     Stellen Sie sicher, dass die TwiML, die Sie in den Editor eingeben, gültig ist. Wenn die an Twilio gesendete TwiML ungültig ist, schlägt der Anruf sofort fehl oder kann nicht initiiert werden.
 
 Sie müssen auch sicherstellen, dass der Inhalt Ihrer TwiML mit XML-Escapezeichen versehen ist.
-## Microsoft Teams
-<div class="divider"></div>
+## Microsoft Teams<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/892e801-teams.jpg" width="100%" />
-</figure>
+</figure>!!! Hinweis "Teams-Karten"
+    Strukturierte Inhalte in Microsoft Teams werden als sogenannte Cards versendet. Informationen zum Senden von Nachrichten finden Sie auf der Seite [Bereitstellung eines Microsoft Teams-Endpunkts]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/).<!-- müssen den obigen Link ändern -->
 
-!!! Hinweis "Teams-Karten"
-    Strukturierte Inhalte in Microsoft Teams werden als sogenannte Cards versendet. Informationen zum Senden von Nachrichten finden Sie auf der Seite [Bereitstellung eines Microsoft Teams-Endpunkts]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/).
-<!-- müssen den obigen Link ändern -->
-
-<div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams-Dokumentation</a></div>
-
-| Typ | Beschreibung                                                                                                                                                                                                                                                                    |
+<div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams-Dokumentation</a></div>| Typ | Beschreibung                                                                                                                                                                                                                                                                    |
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Text | Eine einfache Textnachricht.                                                                                                                                                                                                                                                         |
 | JSON | Kann gültigen JSON-Code im Bot Framework-/Microsoft Teams-Format enthalten. Weitere Informationen und Vorlagen finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0). |
@@ -604,10 +572,7 @@ Die Registerkarte **Bandbreite** bietet zwei Methoden zum Erstellen und Bearbeit
     }
     '''
 
-## Optionen zum Öffnen von URLs im bestehenden Browser-Tab im Webchat-Widget
-<div class="divider"></div>
-
-[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.5.0-blue.svg)] ({{config.site_url}})
+## Optionen zum Öffnen von URLs im bestehenden Browser-Tab im Webchat-Widget<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.5.0-blue.svg)] ({{config.site_url}})
 
 Ab Version 4.5 können Sie entscheiden, ob Sie eine URL im selben Webchat-Widget-Fenster oder in einem neuen öffnen möchten, wenn Sie die Option "Knotentext mit Schaltflächen", "Galerie" oder "Liste" verwenden.
 

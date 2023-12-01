@@ -1,25 +1,23 @@
 ---
- title: "Regex Slot Filler" 
- slug: "regex-slot-filler" 
- hidden: false 
+ Titel: "Regex Slot Filler" 
+ Slug: "Regex-Slot-Filler" 
+ ausgeblendet: false 
 ---
-# Regex Slot Filler
+# Regex-Slot-Füller
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/regex-slot-filler.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags see [**Lexicons & Slots**]({{config.site_url}}ai/resources/build/lexicons/).
+## Beschreibung<div class="divider"></div>Verwenden Sie diesen Knoten, um Slots mit regulären Ausdrücken zu füllen. Weitere Informationen zu Slots und Tags finden Sie unter [**Lexicons & Slots**]({{config.site_url}}ai/resources/build/lexicons/).
 
-| Parameter | Type                                                | Description                                        |
+| Parameter | Typ | Beschreibung |
 |-----------|-----------------------------------------------------|----------------------------------------------------|
-| Regex     | Regular expression                                  | The regular expression applied to input utterance. |
-| Flags     | Regular expression flag characters in single string | Regular expression flags you want to set           |
-| Tag       | CognigyScript                                       | The Tag/Slot you want to fill                      |
+| Regex | Regulärer Ausdruck | Der reguläre Ausdruck, der auf die Eingabeäußerung angewendet wird. |
+| Flaggen | Flag-Zeichen für reguläre Ausdrücke in einer einzelnen Zeichenfolge | Flags für reguläre Ausdrücke, die Sie festlegen möchten |
+| Markieren | CognigyScript | Der Tag/Slot, den Sie füllen möchten |
 
-!!! warning "Regex"
-    Make sure that your regular expression starts with `/` and ends with `/g`.
+!!! Warnung "Regex"
+    Stellen Sie sicher, dass Ihr regulärer Ausdruck mit '/' beginnt und mit '/g' endet.
     
-    Example: `/^1\d{​​​​7}​​​​$/g`
+Beispiel: '/^1\d{7}$/g'

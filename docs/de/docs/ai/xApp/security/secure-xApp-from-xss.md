@@ -1,28 +1,28 @@
 ---
-title: "Secure xApps from XSS"
+title: "Sichere xApps von XSS"
 slug: "secure-xApp-from-xss"
-description: "When building an xApp, it's important to mitigate the risk of an XSS attack by following specific guidelines."
-hidden: true
+description: "Beim Erstellen einer xApp ist es wichtig, das Risiko eines XSS-Angriffs zu minimieren, indem bestimmte Richtlinien befolgt werden."
+Ausgeblendet: Wahr
 ---
 
-# xApp Security: Prevent XSS Attacks
+# xApp Security: XSS-Angriffe verhindern
 
-_XSS (Cross-Site Scripting)_ is a type of security vulnerability in web applications. It occurs when a web application includes untrusted data from a user in its output to a web browser without proper validation or escaping. This vulnerability allows an attacker to inject malicious scripts into web pages viewed by other users.
+_XSS (Cross-Site Scripting)_ ist eine Art Sicherheitslücke in Webanwendungen. Es tritt auf, wenn eine Webanwendung nicht vertrauenswürdige Daten von einem Benutzer in ihrer Ausgabe an einen Webbrowser enthält, ohne dass eine ordnungsgemäße Überprüfung oder ein Escapezeichen erfolgt. Diese Sicherheitsanfälligkeit ermöglicht es einem Angreifer, schädliche Skripts in Webseiten einzuschleusen, die von anderen Benutzern angezeigt werden.
 
-When building an xApp, it's important to mitigate the risk of an XSS attack by following specific guidelines:
+Beim Erstellen einer xApp ist es wichtig, das Risiko eines XSS-Angriffs zu minimieren, indem Sie bestimmte Richtlinien befolgen:
 
-- Always validate all variables and escape or sanitize them to protect against threats.
-- Treat all untrusted data as text and not as JavaScript or HTML.
-- Use HTML sanitization to remove dangerous HTML from a variable and return a safe HTML string. [OWASP](https://en.wikipedia.org/wiki/OWASP) recommends using DOMPurify for HTML sanitization.
-- Use output encoding when you need to safely display data exactly as a user typed it.
-- Consider adding JavaScript encoding to untrusted data, but be cautious as it may alter the application's functionality.
+- Validieren Sie immer alle Variablen und maskieren oder bereinigen Sie sie, um sie vor Bedrohungen zu schützen.
+- Behandeln Sie alle nicht vertrauenswürdigen Daten als Text und nicht als JavaScript oder HTML.
+- Verwenden Sie die HTML-Bereinigung, um gefährlichen HTML-Code aus einer Variablen zu entfernen und eine sichere HTML-Zeichenfolge zurückzugeben. [OWASP] (https://en.wikipedia.org/wiki/OWASP) empfiehlt die Verwendung von DOMPurify für die HTML-Bereinigung.
+- Verwenden Sie die Ausgabecodierung, wenn Sie Daten sicher genau so anzeigen müssen, wie ein Benutzer sie eingegeben hat.
+- Erwägen Sie, nicht vertrauenswürdigen Daten JavaScript-Codierung hinzuzufügen, aber seien Sie vorsichtig, da dies die Funktionalität der Anwendung beeinträchtigen kann.
 
-## Helpful Materials
+## Hilfreiche Materialien
 
-- You can secure the application from XSS in many other ways by following the techniques in the [Cross Site Scripting Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html).
-- It is also important to protect user data by enforcing a Content-Security-Policy. This can be achieved in various ways as described in the [Content Security Policy Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+- Sie können die Anwendung auf viele andere Arten vor XSS schützen, indem Sie die Techniken im [Spickzettel zur Verhinderung von Cross-Site-Scripting](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) befolgen.
+- Es ist auch wichtig, Benutzerdaten durch die Durchsetzung einer Content-Security-Policy zu schützen. Dies kann auf verschiedene Weise erreicht werden, wie im [Spickzettel zur Inhaltssicherheitsrichtlinie](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html) beschrieben.
 
-## More Information
+## Mehr Informationen
 
-- [Build an xApp](../build/overview.md)
-- [xApps](../overview.md)
+- [Erstellen einer xApp](.. /build/overview.md)
+- [xApps](.. /overview.md)

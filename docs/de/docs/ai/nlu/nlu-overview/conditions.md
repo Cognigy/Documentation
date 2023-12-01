@@ -1,45 +1,42 @@
 ---
- title: "Intent Conditions" 
- slug: "conditions" 
- hidden: false 
+ Titel: "Absichtsbedingungen" 
+ Slug: "Bedingungen" 
+ ausgeblendet: false 
 ---
-# Intent Conditions
+# Intent-Bedingungen
 
-Intent Conditions allow you to disable and enable Intents dynamically. The Intent Conditions therefore represent a dynamic State, defined by the state of [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) Intent Conditions. 
+Absichtsbedingungen ermöglichen es Ihnen, Absichten dynamisch zu deaktivieren und zu aktivieren. Die Absichtsbedingungen stellen daher einen dynamischen Zustand dar, der durch den Zustand der [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) Intent-Bedingungen definiert wird. 
 
+## Festlegen der Absichtsbedingung für eine Absicht
+Jedes Intent hat eine Zeile CognigyScript-Code, die als "true" oder "false" ausgewertet wird. Die Absicht wird nur gefunden, wenn die Bedingung als "wahr" ausgewertet wird. Wenn keine Absichtsbedingung festgelegt ist, ist die Absicht aktiviert.
 
-## Setting the Intent Condition on an Intent
-Each Intent has a line of CognigyScript code which evaluates to `true` or `false`. The Intent will only be found if the condition evaluates to `true`. If no Intent Condition is set the Intent is enabled.
+Das Feld wird für jede Absicht als [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) Code festgelegt. Es hat sich bewährt, die gesamte Bedingung in einen "exists"-Operator einzuschließen:
 
-The field is set on each Intent as [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) code. As a best practice, wrap the entire condition in an "exists" operator:
+'''js
+!! (input.slots.city[0].keyphrase === "Düsseldorf")
+'''
 
-```js
-!!(input.slots.city[0].keyphrase === "Düsseldorf")
-```
+oder
 
-or
+'''js
+!! ( !context.topics.includes("Cognigy"))
+'''
 
-```js
-!!( !context.topics.includes("Cognigy"))
-```
+Die CognigyScript-Bedingung wird zur Laufzeit ausgewertet, bevor das Intent-Modell bewertet wird. 
 
+Es kann die angegebenen 'input'-, 'profile'- oder 'context'-Werte berücksichtigen, um Intents basierend auf den im Eingabetext oder Kontaktprofil enthaltenen Informationen zu aktivieren und zu deaktivieren.
 
-The CognigyScript Condition is evaluated at runtime before the Intent model is scored. 
+## Zustände vs. Bedingungen
+Hinweis: [States]({{config.site_url}}ai/tools/interaction-panel/state/) verwendet eine vordefinierte Liste von Intents, die basierend auf der Variablen 'input.state' aktiviert/deaktiviert werden, die natürlich auch dynamisch gesetzt werden kann. Dies bietet eine einfache Bedienung, wenn Sie eine große Anzahl von Absichten auf einmal deaktivieren möchten.
 
-It can take into account the given `input`, `profile` or `context` values to enable and disable Intents based on information contained in the input text or Contact Profile.
+## Beispiel
 
-## States vs Conditions
-Note [States]({{config.site_url}}ai/tools/interaction-panel/state/) use a predefined list of Intents that are enabled/disabled based on the `input.state` variable, which can of course also be set dynamically. This offers ease of use when you want to disable a large number of Intents at once.
+Um ein Beispiel zu nennen, kümmert sich ein virtueller Agent einer Bank um Absichten im Zusammenhang mit Kreditkarten. Wenn der Kunde z.B. kein Kreditkartenprodukt hat, möchten wir nicht, dass ein "CancelCreditCard"-Intent gefunden wird.
 
-## Example
+Wir aktivieren und deaktivieren den Intent basierend auf dem "Profil" des Kunden. Nehmen wir an, es hat eine Variable 'has_credit_card', die Informationen darüber speichert, ob der Kunde das Produkt hat oder nicht, dann wäre die Absichtsbedingung:
 
-To give an example, a banks virtual agent caters to Intents related to credit cards. If the customer does not have a credit card product, for example, we would not like a `CancelCreditCard` Intent to be found.
+'''js
+!! (profile.has_credit_card)
+'''
 
-We enable and disable the Intent based on the customer's `profile`. Let's assume it has a variable `has_credit_card` which stores information on whether the customer has the product or not, the Intent Condition would be:
-
-
-```js
-!!(profile.has_credit_card)
-```
-
-As a result, the `CancelCreditCard` Intent will only be taken into account by the machine learning model and triggered for customers who actually have a credit card which may need cancelling.
+Infolgedessen wird die Absicht "CancelCreditCard" nur vom maschinellen Lernmodell berücksichtigt und für Kunden ausgelöst, die tatsächlich über eine Kreditkarte verfügen, die möglicherweise gekündigt werden muss.

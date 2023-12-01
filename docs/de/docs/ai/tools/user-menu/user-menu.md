@@ -1,51 +1,51 @@
 ---
- title: "User Menu" 
- slug: "user-menu" 
- hidden: false 
+ title: "Benutzermenü" 
+ slug: "Benutzer-Menü" 
+ ausgeblendet: false 
 ---
-# User Menu
+# Benutzer-Menü
 
-The User Menu provides access to a set of views that are related to the user that is logged-in.
+Das Benutzermenü bietet Zugriff auf eine Reihe von Ansichten, die sich auf den angemeldeten Benutzer beziehen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/new-user-menu.png" width="100%" />
 </figure>
 
-### My Profile
-The My Profile view exposes a number of settings that apply to the user that is logged-in. 
+### Mein Profil
+In der Ansicht "Mein Profil" werden eine Reihe von Einstellungen angezeigt, die für den angemeldeten Benutzer gelten. 
 
-!!! note "My Profile"
-    Head over to [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/)  for more information.
+!!! Hinweis "Mein Profil"
+    Weitere Informationen finden Sie unter [Mein Profil]({{config.site_url}}ai/tools/user-menu/my-profile/).
 
-### Access Control
-The Access Control interface offers a user management interface. It acts as an Access Control List (ACL) and makes it possible to give users a specific role. 
+### Zutrittskontrolle
+Die Zugriffssteuerungsschnittstelle bietet eine Benutzerverwaltungsschnittstelle. Sie fungiert als Zugriffskontrollliste (Access Control List, ACL) und ermöglicht es, Benutzern eine bestimmte Rolle zuzuweisen. 
 
-!!! note "Access Control"
-    Refer to [Access Control]({{config.site_url}}ai/tools/user-menu/access-control/) for more information.
+!!! Hinweis "Zutrittskontrolle"
+    Weitere Informationen finden Sie unter [Zugriffskontrolle]({{config.site_url}}ai/tools/user-menu/access-control/).
 
-### Organisation Details
-The Organisation Details interface offers a platform analytics overview for agent usage. 
+### Details zur Organisation
+Die Benutzeroberfläche "Organisationsdetails" bietet eine Übersicht über die Plattformanalyse für die Agentennutzung. 
 
-!!! note "Organisation Details"
-    Refer to [Organisation Details]({{config.site_url}}ai/tools/user-menu/organisation-details/) for more information.
+!!! Hinweis "Angaben zur Organisation"
+    Weitere Informationen finden Sie unter [Organisationsdetails]({{config.site_url}}ai/tools/user-menu/organisation-details/).
 
-### Audit Events
+### Audit-Ereignisse
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.35.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.35.0-blue.svg)] ({{config.site_url}})
 
-The Audit Events dashboard offers a user interface that allows admin users to see what actions other users from the team are doing. 
+Das Dashboard "Überwachungsereignisse" bietet eine Benutzeroberfläche, mit der Admin-Benutzer sehen können, welche Aktionen andere Benutzer aus dem Team ausführen. 
 
-!!! note "Audit Events"
-    Refer to [Audit Events]({{config.site_url}}ai/tools/user-menu/audit-events/) for more information.
+!!! Hinweis "Audit-Ereignisse"
+    Weitere Informationen finden Sie unter [Audit Events]({{config.site_url}}ai/tools/user-menu/audit-events/).
 
-### Documentation
-This option refers to the documentation that you are currently browsing.
+### Dokumentation
+Diese Option bezieht sich auf die Dokumentation, die Sie gerade durchsuchen.
 
-### Insights
-Insights is a Cognigy analytics reporting tool to improve your customer service.
+### Einblicke
+Insights ist ein Analyse-Reporting-Tool von Cognigy, mit dem Sie Ihren Kundenservice verbessern können.
 
-!!! note "Insights"
-    Refer to [Insights]({{config.site_url}}insights/cognigy-insights/) for more information.
+!!! Hinweis "Einblicke"
+    Weitere Informationen finden Sie unter [Insights]({{config.site_url}}insights/cognigy-insights/).
 
-### Logout
-This options lets the user logout of the user interface. Below it, you can also see the version of the product you are currently using.
+### Abmelden
+Mit dieser Option kann sich der Benutzer von der Benutzeroberfläche abmelden. Darunter sehen Sie auch die Version des Produkts, die Sie gerade verwenden.

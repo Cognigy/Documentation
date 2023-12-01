@@ -1,48 +1,48 @@
 ---
- title: "Installation Updates" 
- slug: "installation-updates" 
- hidden: false 
+ title: "Installations-Updates" 
+ Slug: "Installationen-Updates" 
+ ausgeblendet: false 
 ---
-# Installation Updates
+# Installationen-Updates
 
-For upgrading the Live Agent installation, once there is a new release, there are two ways:
+Um die Live Agent-Installation zu aktualisieren, gibt es zwei Möglichkeiten, sobald eine neue Version verfügbar ist:
 
->**Note:** Learn more about making upgrades and rollbacks at the [official Helm Docs](https://helm.sh/docs/intro/using_helm/#helm-upgrade-and-helm-rollback-upgrading-a-release-and-recovering-on-failure)
+>**Hinweis:** Weitere Informationen zum Durchführen von Upgrades und Rollbacks finden Sie in den [offiziellen Helm-Dokumenten](https://helm.sh/docs/intro/using_helm/#helm-upgrade-and-helm-rollback-upgrading-a-release-and-recovering-on-failure)
 
-## Pulling and upgrading at the same time
+## Ziehen und Aufrüsten gleichzeitig
 
-The following command can be used to pull and upgrade the Live Agent Helm chart at the same time:
+Der folgende Befehl kann verwendet werden, um das Live Agent Helm-Diagramm gleichzeitig abzurufen und zu aktualisieren:
 
-```sh
+'''sch
  helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
-```
+'''
 
-Note that the `custom-values.yaml` file can contain just the values that need to be overridden, such as ingresses configurations, replicas and resources. In this way, the new release won't break the existing setup. You can refer to the documentation and see the [release notes](../../release-notes/release-notes.md) related to Helm if it does.
+Beachten Sie, dass die Datei "custom-values.yaml" nur die Werte enthalten kann, die überschrieben werden müssen, z. B. Eingangskonfigurationen, Replikate und Ressourcen. Auf diese Weise wird die neue Version das bestehende Setup nicht beschädigen. Sie können sich auf die Dokumentation beziehen und die [Versionshinweise](.. /.. /release-notes/release-notes.md) im Zusammenhang mit Helm, falls dies der Fall ist.
 
-## Pulling and modifying the `values.yaml` file
+## Ziehen und Ändern der Datei 'values.yaml'
 
-Run the following command:
+Führen Sie den folgenden Befehl aus:
 
-```sh
-helm pull oci://cognigy.azurecr.io/helm/live-agent --version X.X.X
-```
+'''sch
+Steuerzug oci://cognigy.azurecr.io/helm/live-agent --Version X.X.X
+'''
 
-This will download the Helm chart compressed.
+Dadurch wird das Helm-Diagramm komprimiert heruntergeladen.
 
-`live-agent-X.X.X.tgz`
+'live-agent-X.X.X.tgz'
 
-Now it can be uncompressed, the `values.yaml` file inside the folder needs to be modified according to your needs, and then, the chart can be upgraded by using the following command:
+Jetzt kann es dekomprimiert werden, die Datei "values.yaml" innerhalb des Ordners muss an Ihre Bedürfnisse angepasst werden, und dann kann das Diagramm mit dem folgenden Befehl aktualisiert werden:
 
-```sh
+'''sch
  helm upgrade cognigy-live-agent ./live-agent-X.X.X --namespace live-agent
-```
+'''
 
-## Troubleshooting
+## Fehlerbehebung
 
-Both upgrade commands should automatically run a database migration job and apply every new change.
+Beide Upgradebefehle sollten automatisch einen Datenbankmigrationsauftrag ausführen und jede neue Änderung übernehmen.
 
-In case it fails, you can manually run the following command inside one of the main Live Agent pods:
+Falls dies fehlschlägt, können Sie den folgenden Befehl manuell in einem der Haupt-Live Agent-Pods ausführen:
 
-```sh
-bin/rails db:migrate
-```
+'''sch
+bin/rails db:migrieren
+'''

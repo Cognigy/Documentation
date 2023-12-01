@@ -1,51 +1,50 @@
 ---
-title: "Cognigy Live Agent OAuth" 
-slug: "labels" 
-hidden: false 
+Titel: "Cognigy Live Agent OAuth" 
+slug: "Etiketten" 
+ausgeblendet: false 
 ---
 
 # Cognigy Live Agent OAuth
 
-You can log in to Live Agent using your Cognigy.AI account by utilizing the OAuth2 protocol.
-To configure this, follow the instructions provided in the [Helm Values](../helm-values/helm-values.md) article. Note that this approach is the default login method for Live Agent.
+Sie können sich mit Ihrem Cognigy.AI-Konto bei Live Agent anmelden, indem Sie das OAuth2-Protokoll verwenden.
+Um dies zu konfigurieren, befolgen Sie die Anweisungen im Abschnitt [Helm-Werte](.. /helm-values/helm-values.md) Artikel. Beachten Sie, dass dieser Ansatz die Standard-Anmeldemethode für Live Agent ist.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-cognigy-oauth.png" width="100%" alt="Live Agent OAuth screen and Cognigy Login" />
-  <figcaption>Live Agent OAuth screen and Cognigy Login</figcaption>
+  <figcaption>Live-Agent-OAuth-Bildschirm und Cognigy-Anmeldung</figcaption>
 </figure>
 
+Nachdem Sie Ihre Anmeldedaten eingegeben haben, werden Sie auf die Live Agent-Seite weitergeleitet, auf der Ihr Cognigy.AI Konto angemeldet ist.
 
-After entering your credentials, you will be redirected to the Live Agent page with your Cognigy.AI account logged in.
+!!! Anmerkung 
+    Denken Sie daran, dass der Benutzer über die richtigen Rollen verfügen muss, um sich bei Live Agent anmelden zu können. Andernfalls wird ein nicht autorisierter Fehler ausgelöst.
 
-!!! note 
-    Remember that the user needs to have the proper roles in order to log in to Live Agent. Otherwise, an unauthorized error will be thrown.
+## Migrieren Sie bestehende Benutzer, die sich derzeit mit ihrer E-Mail-Adresse und ihrem Passwort anmelden, zur Verwendung von Cognigy.AI OAuth
 
-## Migrate existing users who currently log in with their email and password to using Cognigy.AI OAuth
+Alte Benutzer, die über die Verwaltungsbenutzeroberfläche erstellt wurden, können sich weiterhin mit dem Endpunkt "/old-login" anmelden.
 
-Old users created from Management UI can still log in using the `/old-login` endpoint.
+Es wird jedoch empfohlen, diese Benutzer zu migrieren, um die Cognigy.AI OAuth-Anmeldung zu verwenden. Gehen Sie folgendermaßen vor, um den Migrationsprozess zu initiieren:
 
-However, it is recommended to migrate these users to utilize the Cognigy.AI OAuth login. To initiate the migration process, follow these steps:
+1. Erstellen Sie ein Cognigy.AI Benutzerkonto mit derselben E-Mail-Adresse wie der alte Benutzer. 
+2. Um sich bei Live Agent anzumelden, weisen Sie eine gültige Rolle zu, indem Sie der Anleitung [Hinzufügen von Agenten und Administratoren zum Live Agent] folgen (.. /.. /getting-started/live-agent-setup/live-agent-setup-agents.md). 
+3. Melden Sie sich mit Cognigy.AI OAuth (Endpunkt "/login") bei Live Agent an.
 
-1. Create a Cognigy.AI user account with the same email as the old user. 
-2. To log in to Live Agent, assign a valid role by following the guide [Adding Agents and Admins to Live Agent](../../getting-started/live-agent-setup/live-agent-setup-agents.md). 
-3. Log in to Live Agent using Cognigy.AI OAuth (`/login` endpoint).
+!!! Anmerkung 
+    Sobald dieser Vorgang abgeschlossen ist, kann sich der Benutzer nicht mehr mit "/old-login" anmelden, und alle Änderungen an seinen Anmeldeinformationen müssen über die Cognigy.AI Plattform vorgenommen werden.
 
-!!! note 
-    Once this process is completed, the user will no longer be able to log in using `/old-login`, and any changes to their credentials must be made through the Cognigy.AI platform.
+## OAuth-Fehler
 
-## OAuth Errors
+Die folgende Liste enthält die häufigsten Fehler, die bei der Verwendung des Cognigy.AI OAuth angezeigt werden können.
 
-The following list contains the common errors that can be shown while using the Cognigy.AI OAuth.
+### Irgendetwas stimmt nicht mit der OAuth-Konfiguration
 
-### Something is wrong with the OAuth configuration
+Das Problem bezieht sich auf die Art und Weise, wie die Cognigy.AI- und Live Agent-APIs für die Kommunikation eingerichtet sind. Um dieses Problem zu beheben, müssen Sie die Konfiguration für Live Agent im Feld [Helm-Werte](.. /helm-values/helm-values.md#oauth) ein. Überprüfen Sie außerdem die Cognigy.AI Konfigurationszuordnung, die die Live Agent-API-Endpunkte und Clientdaten enthält.
 
-The problem relates to how the Cognigy.AI and Live Agent APIs are set up to communicate. To resolve this, you must review and double-check the configuration for Live Agent in the [Helm Values](../helm-values/helm-values.md#oauth) section. Additionally, verify the Cognigy.AI configmap containing the Live Agent API endpoints and client data.
+### Die Benutzerorganisation '{Organisations-ID}' wurde im System nicht gefunden
 
-### The user organisation `{Organisation ID}` was not found in the system
+Diese Fehlermeldung weist darauf hin, dass dem angegebenen Cognigy.AI Organisation kein Live Agent-Konto zugeordnet ist. Um dieses Problem zu beheben, müssen Sie die Organisation in Live Agent einrichten. Weitere Informationen finden Sie in der [Cognigy Live Agent Setup](.. /.. /getting-started/live-agent-setup/live-agent-setup-org.md) für eine Anleitung dazu.
 
-This error message indicates that there is no Live Agent account associated with the specified Cognigy.AI organization. To resolve this, you need to set up the organization in Live Agent. Please refer to the [Cognigy Live Agent Setup](../../getting-started/live-agent-setup/live-agent-setup-org.md) guide for instructions on how to do this.
+### Der Cognigy-Benutzer ist nicht berechtigt, auf das System zuzugreifen
 
-### The Cognigy user is not authorized to access the system
-
-If the user does not have the necessary permissions, follow the instructions provided in the guide [Adding agents and admins to Live Agent](../../getting-started/live-agent-setup/live-agent-setup-agents.md) to grant them the appropriate roles and resolve the authorization issue.
-In case the guides above didn't solve the issue, [you can reach us through support](https://support.cognigy.com/hc/en-us/requests/new?).
+Wenn der Benutzer nicht über die erforderlichen Berechtigungen verfügt, befolgen Sie die Anweisungen im Handbuch [Hinzufügen von Agenten und Administratoren zu Live Agent](.. /.. /getting-started/live-agent-setup/live-agent-setup-agents.md), um ihnen die entsprechenden Rollen zuzuweisen und das Autorisierungsproblem zu beheben.
+Falls die obigen Anleitungen das Problem nicht gelöst haben, [können Sie uns über den Support erreichen](https://support.cognigy.com/hc/en-us/requests/new?).

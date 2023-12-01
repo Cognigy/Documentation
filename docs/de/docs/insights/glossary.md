@@ -1,15 +1,15 @@
 ---
-title: "Glossary"
-slug: "glossary"
-hidden: false
+Titel: "Glossar"
+Schnecke: "Glossar"
+ausgeblendet: false
 ---
 
-# Insights Glossary
+# Insights-Glossar
 
-All the terms are given in the glossary for informational purposes.
+Alle Begriffe sind im Glossar zu Informationszwecken aufgeführt.
 
-_**Session**_
-: A unit of interaction between a user and a Cognigy virtual or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. The session can contain an unlimited number of user inputs.
+_**Sitzung**_
+: Eine Interaktionseinheit zwischen einem Benutzer und einem virtuellen oder menschlichen Agenten von Cognigy. Die Sitzung beginnt, wenn ein Benutzer seine erste Eingabe an Cognigy sendet, bei der es sich entweder um einen Chat oder eine Sprachnachricht handeln kann, und endet, wenn der Benutzer oder der menschliche Agent die Interaktion beendet oder beendet. Die Sitzung kann eine unbegrenzte Anzahl von Benutzereingaben enthalten.
 
-_**Conversation**_
-: A billable unit of interaction between a user and a Cognigy virtual or human agent. For more information about billed conversations, read [Cognigy Billing Policy](../ai/billing.md).
+_**Gespräch**_
+: Eine abrechenbare Interaktionseinheit zwischen einem Benutzer und einem virtuellen oder menschlichen Agenten von Cognigy. Weitere Informationen zu abgerechneten Konversationen finden Sie unter [Cognigy-Abrechnungsrichtlinie](.. /ai/billing.md).

@@ -1,10 +1,10 @@
 ---
-title: "Release notes"
-slug: "release-notes-ai-copilot"
-hidden: false
+title: "Versionshinweise"
+Slug: "Release-Notes-ai-copilot"
+ausgeblendet: false
 ---
 
-# Release notes
+# Versionshinweise
 
-For more information about AI Copilot releases,
-refer to our [main release notes](../release-notes/release-notes.md) page. Note that before release 4.65, the service was called Agent Assist Workspace.
+Weitere Informationen zu AI Copilot-Versionen finden Sie unter
+Weitere Informationen finden Sie in unseren [Main Release Notes](.. /release-notes/release-notes.md) aufgerufen werden. Beachten Sie, dass der Dienst vor Version 4.65 als Agent Assist Workspace bezeichnet wurde.

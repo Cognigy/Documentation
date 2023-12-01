@@ -1,292 +1,291 @@
 ---
-title: "Engagement" 
-slug: "dashboard-engagement" 
-hidden: false 
+Titel: "Engagement" 
+Slug: "Dashboard-Engagement" 
+ausgeblendet: false 
 ---
-# Engagement Dashboard
+# Engagement-Dashboard
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.51-blue.svg)](../release-notes/4.51.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.51-blue.svg)] (.. /release-notes/4.51.md)
 
-The Engagement Dashboard is focused on customer interactions in conversations. Engagement performance of your Agent is visualized in the following charts:
+Das Engagement-Dashboard konzentriert sich auf Kundeninteraktionen in Konversationen. Die Engagement-Leistung Ihres Agenten wird in den folgenden Diagrammen visualisiert:
 
-- [Indicators](#indicators) 
-- [Heat maps](#heat-maps)
-- [Bar charts](#bar-charts)
-- [Line charts](#line-charts)
+- [Indikatoren](#indicators) 
+- [Heatmaps](#heat-Karten)
+- [Balkendiagramme](#bar-Diagramme)
+- [Liniendiagramme](#line-Diagramme)
 
 {! _includes/insights/global-filters.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/engagement-dashboard.png" width="100%" />
-  <figcaption>Engagement dashboard</figcaption>
+  <figcaption>Dashboard für das Engagement</figcaption>
 </figure>
 
-## Indicators
+## Indikatoren
 
-The Indicator charts presents real-time data that refreshes every 30 seconds.
+Die Indikatordiagramme präsentieren Echtzeitdaten, die alle 30 Sekunden aktualisiert werden.
 
-### Goals reached 
+### Ziele erreicht 
 
-Indicates the total number of [completed goals](../ai/flow-nodes/profile/complete-goal.md). 
+Gibt die Gesamtzahl der [abgeschlossenen Ziele](.. /ai/flow-nodes/profile/complete-goal.md). 
 
-Source table:
+Quelltabelle:
 
-```txt
- | StartedAt  |  Sessions   |  Goals                   | Goals reached |
+'''txt
+ | Gestartet bei |  Sitzungen |  Ziele | Erreichte Ziele |
  | ---------- | ----------- | ------------------------ | ------------- |
- | 2022/01/01 | session-123 | "Goal A, Goal B, Goal D" |       3       |
- | 2022/01/01 | session-456 | "Goal B, Goal C, Goal E" |       3       |
- | 2022/01/03 | session-789 | "Goal B, Goal E"         |       2       |
- | 2022/01/03 | session-abc | "Goal B"                 |       1       |
- | 2022/01/05 | session-def | "Goal A, Goal B"         |       2       |
-```
+ | 01.01.2022 | Sitzung-123 | "Ziel A, Ziel B, Ziel D" |       3 |
+ | 01.01.2022 | Sitzung-456 | "Ziel B, Tor C, Ziel E" |       3 |
+ | 03.01.2022 | Sitzung-789 | "Ziel B, Ziel E" |       2 |
+ | 03.01.2022 | Sitzung-ABC | "Ziel B" |       Nr. 1 |
+ | 05.01.2022 | session-def | "Ziel A, Ziel B" |       2 |
+'''
 
-Result: `11`
+Ergebnis: '11'
 
-### Avg. Session length
+### Durchschnittliche Sitzungsdauer
 
-Indicates how long the average session lasted.
+Gibt an, wie lange die durchschnittliche Sitzung gedauert hat.
 
-Session length is the time difference between the timestamp of the first user input and the last user input.
+Die Sitzungslänge ist die Zeitdifferenz zwischen dem Zeitstempel der ersten Benutzereingabe und der letzten Benutzereingabe.
 
-The Average session length is the mean of all session lengths within the specified time frame in your Insights filter.
+Die durchschnittliche Sitzungsdauer ist der Mittelwert aller Sitzungslängen innerhalb des angegebenen Zeitraums in Ihrem Insights-Filter.
 
-Source table:
+Quelltabelle:
 
-```txt
- | StartedAt           |  EndedAt            | Sessions    |          
+'''txt
+ | Gestartet bei |  Beendet um | Sitzungen |          
  | ------------------- | ------------------- | ----------- |
- | 2022/01/01 12:15 00 | 2022/01/01 12:18 00 | session-123 |
- | 2022/01/01 14:00 00 | 2022/01/01 15:00 00 | session-456 |
- | 2022/01/03 09:05 30 | 2022/01/03 09:15 30 | session-789 |
- | 2022/01/03 11:30 00 | 2022/01/03 11:44 00 | session-abc |
- | 2022/01/05 06:10 00 | 2022/01/05 06:20 00 | session-def |
-```
+ | 01.01.2022 12:15 00 Uhr | 01.01.2022 12:18 00 Uhr | Sitzung-123 |
+ | 01.01.2022 14:00 00 Uhr | 01.01.2022 15:00 00 Uhr | Sitzung-456 |
+ | 03.01.2022 09:05 30 Uhr | 03.01.2022 09:15 30 Uhr | Sitzung-789 |
+ | 03.01.2022 11:30 00 Uhr | 03.01.2022 11:44 00 Uhr | Sitzung-ABC |
+ | 05.01.2022 06:10 00 | 05.01.2022 06:20 00 Uhr | session-def |
+'''
 
-Calculation:
+Berechnung:
 
-1. Length for a particular session `Max(timestamp) - Min(timestamp)`.
-2. `Length of all sessions / total number of sessions`.
+1. Länge für eine bestimmte Sitzung 'Max(Zeitstempel) - Min(Zeitstempel)'.
+2. "Dauer aller Sitzungen / Gesamtzahl der Sitzungen".
 
-Example:
+Beispiel:
 
-1. Total Length = `3 minutes + 1 hour + 10 minutes + 14 minutes + 10 minutes  = 1 hour 37 minutes`
-2. Average Session Length = `1 hour 37 minutes / 5 = 19 minutes and 24 seconds`
+1. Gesamtlänge = "3 Minuten + 1 Stunde + 10 Minuten + 14 Minuten + 10 Minuten = 1 Stunde 37 Minuten"
+2. Durchschnittliche Sitzungsdauer = "1 Stunde 37 Minuten / 5 = 19 Minuten und 24 Sekunden"
 
-Result: `00:19:24`
+Ergebnis: '00:19:24'
 
-### Positive Ratings
+### Positive Bewertungen
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+Gibt die Gesamtzahl der positiven Bewertungen an, die vom Endbenutzer als Feedback abgegeben wurden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Sessions    | Positive Rating | Negative Rating | Rated Sessions |
+'''txt
+| Sitzungen | Positive Bewertung | Negative Bewertung | Bewertete Sitzungen |
 | ----------- | --------------- | --------------- | -------------- |
-| session-123 |        1        |        0        |       1        |
-| session-456 |        0        |        1        |       1        |
-| session-789 |        0        |        0        |       0        |
-| session-abc |        1        |        0        |       1        |
-| session-def |        1        |        0        |       1        |
+| Sitzung-123 |        Nr. 1 |        0 |       Nr. 1 |
+| Sitzung-456 |        0 |        Nr. 1 |       Nr. 1 |
+| Sitzung-789 |        0 |        0 |       0 |
+| Sitzung-ABC |        Nr. 1 |        0 |       Nr. 1 |
+| session-def |        Nr. 1 |        0 |       Nr. 1 |
 | ---------------------------------------------------------------- |
-| TOTAL       |        3        |        1        |       4        |
-```
+| INSGESAMT |        3 |        Nr. 1 |       4 |
+'''
 
-Result: `3`
+Ergebnis: '3'
 
-### Containment Rate
+### Eindämmungsrate
 
-Indicates the ratio of sessions without any handover to all sessions.
+Gibt das Verhältnis von Sitzungen ohne Übergabe zu allen Sitzungen an.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Session ID  | Handovers | Handover Sessions | Sessions |
+'''txt
+| Sitzungs-ID | Übergaben | Übergabe-Sitzungen | Sitzungen |
 | ----------- | ----------| ----------------- | -------- |
-| session-123 |     3     |        1          |    1     |
-| session-456 |     0     |        0          |    1     |
-| session-789 |     0     |        0          |    1     |
-| session-abc |     2     |        1          |    1     |
-| session-def |     1     |        1          |    1     |
+| Sitzung-123 |     3 |        Nr. 1 |    Nr. 1 |
+| Sitzung-456 |     0 |        0 |    Nr. 1 |
+| Sitzung-789 |     0 |        0 |    Nr. 1 |
+| Sitzung-ABC |     2 |        Nr. 1 |    Nr. 1 |
+| session-def |     Nr. 1 |        Nr. 1 |    Nr. 1 |
 | ------------------------------------------------------ |
-| TOTAL       |     6     |        3          |    5     |
-```  
+| INSGESAMT |     6 |        3 |    Nr. 5 |
+'''  
 
-Formula:
+Formel:
 
-1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
+1. Eindämmungsrate = '1 - (Übergabe inklusive Sitzungen)/(Sitzungen insgesamt)'.
    
-2. Percentage `Containment Rate * 100%`. 
+2. Prozentsatz "Eindämmungsrate * 100 %". 
 
-Result: `40%` 
+Ergebnis: '40%' 
 
-## Heat maps
+## Heatmaps
 
-### Handovers by time of the day
+### Übergaben nach Tageszeiten
 
-Indicates the number of times a human Agent was contacted. Multiple handovers may occur during a session.
+Gibt an, wie oft ein menschlicher Agent kontaktiert wurde. Während einer Sitzung kann es zu mehreren Übergaben kommen.
 
-Source table:
+Quelltabelle:
 
-```txt 
-| DateTime        | Handover   |
+'''txt 
+| Datum/Uhrzeit | Übergabe |
 | --------------- | ---------- |
-| 01/8/2023 16:00 |	   0       |
-| 01/8/2023 17:00 |	   0       |
-| 01/9/2023 00:00 |    0       |
-| 1/11/2023 15:00 |    0       |
-| 1/15/2023 18:00 |    0       |
-| 1/16/2023 21:00 |    0       |
-| 1/17/2023 11:00 |    0       |
-| 1/18/2023 06:00 |    1       |
-| 1/18/2023 21:00 |    1       |
-| 1/19/2023 00:00 |    2       |
-| 1/19/2023 10:00 |    1       |
-| 1/23/2023 13:00 |    0       |
-| 1/24/2023 23:00 |    0       |
-```
+| 08.01.2023 16:00 Uhr |	   0 |
+| 08.01.2023 17:00 Uhr |	   0 |
+| 09.01.2023 00:00 Uhr |    0 |
+| 11.01.2023 15:00 Uhr |    0 |
+| 15.01.2023 18:00 Uhr |    0 |
+| 16.01.2023 21:00 Uhr |    0 |
+| 17.01.2023 11:00 Uhr |    0 |
+| 18.01.2023 06:00 Uhr |    Nr. 1 |
+| 18.01.2023 21:00 Uhr |    Nr. 1 |
+| 19.01.2023 00:00 Uhr |    2 |
+| 19.01.2023 10:00 Uhr |    Nr. 1 |
+| 23.01.2023 13:00 Uhr |    0 |
+| 24.01.2023 23:00 Uhr |    0 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/heatmap.png" width="100%" />
 </figure>
 
-## Bar charts
+## Balkendiagramme
 
-### Top Goals
+### Top-Ziele
 
-Indicates the top-rated number of goals reached. 
+Gibt die am höchsten bewertete Anzahl der erreichten Ziele an. 
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
-you can select **Go to Step Explorer**,
-which leads you to the Step Explorer in Insights.
+Mit einem Klick auf ! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+Sie können **Gehe zum Schritt-Explorer** auswählen,
+Dies führt Sie zum Schritt-Explorer in Insights.
 
-Source table:
+Quelltabelle:
 
-```txt 
-| Sessions    | Goals                  |
+'''txt 
+| Sitzungen | Ziele |
 | ----------- | ---------------------- |
-| session-123 | Goal A, Goal B, Goal D |
-| session-456 | Goal B, Goal C, Goal E |
-| session-789 | Goal A, Goal B, Goal E |
-| session-abc | Goal A                 |
-| session-def | Goal, Goal A           |
-| session-ghi | Goal, Goal A           |
-```
+| Sitzung-123 | Ziel A, Ziel B, Tor D |
+| Sitzung-456 | Ziel B, Tor C, Ziel E |
+| Sitzung-789 | Ziel A, Ziel B, Ziel E |
+| Sitzung-ABC | Ziel A |
+| session-def | Tor, Ziel A |
+| Sitzungs-GHI | Tor, Ziel A |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/goals.png" width="80%" />
 </figure>
 
-### Containment Rate
+### Eindämmungsrate
 
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.48-blue.svg)] (.. /release-notes/4.48.md)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48-blue.svg)](../release-notes/4.48.md)
+Gibt den Prozentsatz der Sitzungen ohne Übergabe während der Zeitachse an.
 
-Indicates the percentage of sessions without any handover during the timeline.
-
-Source table:
+Quelltabelle:
  
-```txt
-| Date      | Containment Rate | Total Sessions | Handover included Sessions |
+'''txt
+| Datum | Eindämmungsrate | Sitzungen gesamt | Übergabe inklusive Sessions |
 | --------- | ---------------  | -------------- | -------------------------- |
-| 3/1/2023  | 	87.5           |       40       | 	       35                |
-| 3/2/2023  | 	82.60869565    |       46       | 	       38                |
-| 3/3/2023  | 	96.77419355    |       62       | 	       60                |
-| 3/6/2023  | 	92.5           |       40       | 	       37                |
-| 3/7/2023  | 	100            |       58       | 	       58                |
-| 3/8/2023  | 	100            |       92       | 	       92                |
-| 3/10/2023 | 	100            |       10       | 	       10                |
-```
+| 01.03.2023 | 	87,5 |       40 | 	       35 |
+| 02.03.2023 | 	82.60869565 |       Nr. 46 | 	       38 |
+| 03.03.2023 | 	96.77419355 |       62 | 	       60 |
+| 06.03.2023 | 	92,5 |       40 | 	       Nr. 37 |
+| 07.03.2023 | 	100 |       Nr. 58 | 	       Nr. 58 |
+| 08.03.2023 | 	100 |       92 | 	       92 |
+| 10.03.2023 | 	100 |       Nr. 10 | 	       Nr. 10 |
+'''
 
-Formula:
+Formel:
 
-1. Containment Rate = `1 - (Handover included Sessions)/(Total Sessions)`.
+1. Eindämmungsrate = '1 - (Übergabe inklusive Sitzungen)/(Sitzungen insgesamt)'.
 
-2. Percentage `Containment Rate * 100%`.
+2. Prozentsatz "Eindämmungsrate * 100 %".
 
-Example for the 3/1/2023: `(35/40)* 100% = 87.5%`
+Beispiel für den 01.03.2023: "(35/40)* 100% = 87,5%"
 
-Result: 
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/containment-rate.png" width="100%" />
 </figure>
 
-## Line charts
+## Liniendiagramme
 
-### Handovers in Time
+### Pünktliche Übergaben
 
-Indicates the number of times a human Agent was contacted. Multiple escalations may occur during a session.
+Gibt an, wie oft ein menschlicher Agent kontaktiert wurde. Während einer Sitzung können mehrere Eskalationen auftreten.
 
-Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
+Gibt an, wie oft ein Live-Agent angerufen wurde, der auf einer Zeitachsenskala angezeigt wird, abhängig von der Einstellung für den Zeitrahmenfilter.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
-you can select **Go to Step Explorer**,
-which leads you to the Step Explorer in Insights.
+Mit einem Klick auf ! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+Sie können **Gehe zum Schritt-Explorer** auswählen,
+Dies führt Sie zum Schritt-Explorer in Insights.
 
-Source table:
+Quelltabelle:
 
-```txt
-| DateTime   | Handovers per day |
+'''txt
+| Datum/Uhrzeit | Übergaben pro Tag |
 |------------|-------------------|
-| 4/11/2023  |         3         |           
-| 4/12/2023  |         0         |            
-| 4/13/2023	 |        24         |           
-| 4/14/2023	 |         8         |             
-| 4/17/2023	 |        17         |        
-| 4/18/2023	 |        12         |       
-| 4/20/2023	 |         5         |         
-| 4/21/2023	 |         5         |        
-```
+| 11.04.2023 |         3 |           
+| 12.04.2023 |         0 |            
+| 13.04.2023 |        24 |           
+| 14.04.2023 |         8 |             
+| 17.04.2023 |        Nr. 17 |        
+| 18.04.2023 |        Nr. 12 |       
+| 20.04.2023 |         Nr. 5 |         
+| 21.04.2023 |         Nr. 5 |        
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/handovers-on-time.png" width="100%" />
 </figure>
 
-### Positive Ratings over Time
+### Positive Bewertungen im Laufe der Zeit
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+Gibt die Gesamtzahl der positiven Bewertungen an, die vom Endbenutzer als Feedback abgegeben wurden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date (weeks) | Positive | Negative | Number of Ratings |
+'''txt
+| Datum (Wochen) | Positiv | Negativ | Anzahl der Bewertungen |
 | ------------ | -------- | -------- | ----------------- |	
-| 2023-W01	   |     1	  |    0     |         1         |
-| 2023-W04	   |     1	  |    0     |         1         |
-| 2023-W05	   |     2	  |    0     |         2         |
-```
+| 2023-W01 |     Nr. 1 |    0 |         Nr. 1 |
+| 2023-W04 |     Nr. 1 |    0 |         Nr. 1 |
+| 2023-W05 |     2 |    0 |         2 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/positive-ratings.png" width="80%" />
 </figure>
 
-### Unique Contacts
+### Einzigartige Kontakte
 
-Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Gibt die Anzahl der eindeutigen Kontakte ('userid') auf einer Zeitskala an. Wenn der Benutzer mehr als eine Sitzung an einem einzigen Tag erstellt, wird dies als ein eindeutiger Kontakt für diesen Tag gezählt.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date    	| Contacts |
+'''txt
+| Datum | Kontakte |
 | --------- | -------- |
-| 1/16/2023	|    1     |
-| 1/17/2023	|    8     |
-| 1/18/2023	|    15    |
-| 1/19/2023	|    6     |
-| 1/20/2023	|    18    |
-```
+| 16.01.2023 |    Nr. 1 |
+| 17.01.2023 |    8 |
+| 18.01.2023 |    15 |
+| 19.01.2023 |    6 |
+| 20.01.2023 |    18 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/unique-contacts.png" width="100%" />
@@ -294,8 +293,8 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More Information
+## Mehr Informationen
 
-- [Dashboard Overview](dashboard-overview.md)
-- [Dashboard NLU Performance](dashboard-nlu-performance.md)
-- [Dashboard Live Agent](dashboard-live-agent.md)
+- [Dashboard-Übersicht](dashboard-overview.md)
+- [NLU-Leistung des Dashboards](dashboard-nlu-performance.md)
+- [Dashboard-Live-Agent](dashboard-live-agent.md)

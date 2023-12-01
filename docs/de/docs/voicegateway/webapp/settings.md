@@ -1,15 +1,13 @@
 ---
- title: "Settings" 
- slug: "settings" 
- hidden: false 
+ title: "Einstellungen" 
+ slug: "Einstellungen" 
+ ausgeblendet: false 
 ---
 
-# Settings
+# Einstellungen
 
-*Settings* help you to set integration with other services by using the API key.
+*Einstellungen* helfen Ihnen, die Integration mit anderen Diensten mithilfe des API-Schlüssels festzulegen.
 
-Create a unique service provider name and save changes.
+Erstellen Sie einen eindeutigen Dienstanbieternamen, und speichern Sie die Änderungen.
 
-Generate a new API key by clicking **Add key**.
-
-<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-settings.png"  width="100%" />
+Generieren Sie einen neuen API-Schlüssel, indem Sie auf **Schlüssel hinzufügen** klicken.<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-settings.png"  width="100%" />

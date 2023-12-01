@@ -1,36 +1,36 @@
 ---
- title: "Fuzzy Search" 
- slug: "fuzzy-search" 
- hidden: false 
+ Titel: "Fuzzy-Suche" 
+ Slug: "Fuzzy-Suche" 
+ ausgeblendet: false 
 ---
-# Fuzzy Search
+# Fuzzy-Suche
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/fuzzy-search.png" width="80%" />
 </figure>
 
-## Description
-The Fuzzy Search Node enables a Flow to search through a list (string array) of source data by providing a search pattern. It will return the best possible match(es), based on a set of parameters.
+## Beschreibung
+Der Fuzzy-Suchknoten ermöglicht es einem Flow, eine Liste (String-Array) von Quelldaten zu durchsuchen, indem er ein Suchmuster bereitstellt. Es gibt die bestmögliche(n) Übereinstimmung(en) zurück, basierend auf einer Reihe von Parametern.
 
-The score assigned to each match ranges from 0 (the closest match - best) to 1 (no match - weakest).
+Die Punktzahl, die jeder Übereinstimmung zugewiesen wird, reicht von 0 (die nächste Übereinstimmung - die beste) bis 1 (keine Übereinstimmung - die schwächste).
 
-The result will be stored in either the Cognigy context (`context.STORE`) or input object (`input.STORE`) using the store name given in the node's settings.
+Das Ergebnis wird entweder im Cognigy-Kontext ('context. STORE') oder input-Objekt ('input. STORE') unter Verwendung des in den Einstellungen des Knotens angegebenen Speichernamens.
 
-In case of an error, this is stored in either the Cognigy context (`context.STORE.error`) or input object (`input.STORE.error`). 
+Im Falle eines Fehlers wird dieser entweder im Cognigy-Kontext ('context. STORE.error') oder input-Objekt ('input. STORE.error'). 
 
-## Parameters
+## Parameter
 
-| Parameter          | Type    | Description                                                                                                                                                         |
+| Parameter | Typ | Beschreibung |
 |--------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Search Pattern     | String  | The pattern to search for                                                                                                                                           |
-| Source Data        | JSON    | An array of strings or an object to search through                                                                                                                  |
-| Is Case Sensitive  | Boolean | Indicates whether comparisons should be case sensitive                                                                                                              |
-| Include Score      | Boolean | Whether the score should be included in the result set. A score of 1.0 indicates a perfect match, while a score of 0.0 indicates a complete mismatch                |
-| Include Matches    | Boolean | Whether the matches should be included in the result set. When active, each record in the result set will include the indices of the matched characters             |
-| Minimum Characters | Number  | Only the matches whose length exceeds this value will be returned                                                                                                   |
-| Should Sort        | Boolean | Whether to sort the result list, by score                                                                                                                           |
-| Find All Matches   | Boolean | When activated, the matching function will continue to the end of a search pattern even if a perfect match has already been located in the string                   |
-| Location           | Number  | Determines approximately where in the text is the pattern expected to be found                                                                                      |
-| Threshold          | Number  | At what point does the match algorithm give up. A threshold of 1.0 requires a perfect match (of both letters and location), a threshold of 0.0 would match anything |
-| Distance           | Number  | Determines how close the match must be to the fuzzy location (specified by Location)                                                                                |
-| Ignore Location    | Boolean | When activated, search will ignore Location and Distance, so it won't matter where in the string the pattern appears                                                |
+| Suchmuster | Zeichenfolge | Das Muster, nach dem gesucht werden soll |
+| Quelldaten | JSON | Ein Array von Zeichenfolgen oder ein Objekt, das durchsucht werden soll |
+| Groß-/Kleinschreibung wird beachtet | Boolescher Wert | Gibt an, ob bei Vergleichen zwischen Groß- und Kleinschreibung unterschieden werden soll |
+| Partitur einbeziehen | Boolescher Wert | Gibt an, ob die Bewertung in das Resultset einbezogen werden soll. Ein Wert von 1,0 zeigt eine perfekte Übereinstimmung an, während ein Wert von 0,0 eine vollständige Nichtübereinstimmung anzeigt |
+| Übereinstimmungen einschließen | Boolescher Wert | Gibt an, ob die Übereinstimmungen in das Resultset einbezogen werden sollen. Wenn diese Option aktiviert ist, enthält jeder Datensatz in der Ergebnismenge die Indizes der übereinstimmenden Zeichen |
+| Minimale Anzahl von Zeichen | Anzahl | Nur die Übereinstimmungen, deren Länge diesen Wert überschreitet, werden zurückgegeben |
+| Soll sortieren | Boolescher Wert | Gibt an, ob die Ergebnisliste nach Punktzahl sortiert werden soll |
+| Alle Übereinstimmungen suchen | Boolescher Wert | Wenn diese Option aktiviert ist, wird die Matching-Funktion bis zum Ende eines Suchmusters fortgesetzt, auch wenn bereits ein perfekter Treffer in der Zeichenfolge |
+| Lage | Anzahl | Bestimmt ungefähr, wo im Text das Muster zu finden ist |
+| Schwellenwert | Anzahl | An welchem Punkt gibt der Match-Algorithmus auf? Ein Schwellenwert von 1,0 erfordert eine perfekte Übereinstimmung (sowohl der Buchstaben als auch des Ortes), ein Schwellenwert von 0,0 würde mit allem übereinstimmen |
+| Distanz | Anzahl | Legt fest, wie no die Übereinstimmung an der Fuzzy-Position sein muss (angegeben durch Location) |
+| Standort ignorieren | Boolescher Wert | Wenn diese Option aktiviert ist, ignoriert die Suche "Ort" und "Entfernung", sodass es keine Rolle spielt, an welcher Stelle in der Zeichenfolge das Muster |

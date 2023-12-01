@@ -1,76 +1,72 @@
 ---
- title: "Playbooks" 
- slug: "playbooks" 
- hidden: false 
+ Titel: "Playbooks" 
+ Slug: "Spielbücher" 
+ ausgeblendet: false 
 ---
 # Playbooks
 
-**Playbooks** help you test your **Flows** and make sure that they work as intended. They are automated conversations, which include **Assertions** that can check various elements of your **Flow**.
+**Playbooks** helfen Ihnen, Ihre **Flows** zu testen und sicherzustellen, dass sie wie beabsichtigt funktionieren. Dabei handelt es sich um automatisierte Konversationen, die **Assertions** enthalten, mit denen verschiedene Elemente Ihres **Flows** überprüft werden können.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/68fdbe2-playbook.png" width="100%" />
 </figure>
 
-!!! note "Create Playbooks from the Interaction Panel"
-    You can turn any conversation in your Interaction Panel directly into a playbook:<br><br>
-    1. Go to the Interaction Panel and chat with your bot<br>
-    2. Click the three dots right next to the Flow selection<br>
-    3. Select *Create Playbook*<br><br>
-    You will be taken to the Playbook Editor with a new Playbook based on your chat history. You can now go on and add assertions and additional steps.
+!!! Hinweis "Erstellen von Playbooks über das Interaktionsfenster"
+    Sie können jede Konversation in Ihrem Interaktions-Panel direkt in ein Playbook verwandeln:<br><br>1. Gehen Sie zum Interaktionsbereich und chatten Sie mit Ihrem Bot<br>2. Klicken Sie auf die drei Punkte rechts neben der Flow-Auswahl<br>3. Wählen Sie *Playbook erstellen*<br><br>Sie werden mit einem neuen Playbook, das auf Ihrem Chatverlauf basiert, zum Playbook-Editor weitergeleitet. Sie können nun fortfahren und Assertionen und zusätzliche Schritte hinzufügen.
 
-## Functionality
+## Funktionsweise
 
-#### Set timeout per step
-To set the timeout threshold for each step in the playbook, type a duration in milliseconds into this text field. If a step takes longer than this threshold, an error will be thrown in the playbook player.
+#### Timeout pro Schritt festlegen
+Um den Timeoutschwellenwert für jeden Schritt im Playbook festzulegen, geben Sie eine Dauer in Millisekunden in dieses Textfeld ein. Wenn ein Schritt länger als dieser Schwellenwert dauert, wird im Playbook-Player ein Fehler ausgelöst.
 
-#### Toggle 'abort on error'
-This setting determines whether to continue after a failed step or abort the playbook on the first step with errors.
+#### 'Abbruch bei Fehler' umschalten
+Diese Einstellung bestimmt, ob nach einem fehlgeschlagenen Schritt fortgefahren oder das Playbook beim ersten Schritt mit Fehlern abgebrochen werden soll.
 
-#### Playbook Step
-A **Step** represents a single input including both text and data, in combination with various **Assertions** on the Flow output and status.
+#### Playbook-Schritt
+Ein **Schritt** stellt eine einzelne Eingabe dar, die sowohl Text als auch Daten enthält, in Kombination mit verschiedenen **Assertions** für die Flow-Ausgabe und den Status.
 
-!!! warning
-    Playbooks contain a maximum of 50 steps.
+!!! Warnung
+    Playbooks enthalten maximal 50 Schritte.
 
-#### Assertion
-**Assertions** are checks on various Flow related elements, you can check on:
+#### Behauptung
+**Assertions** sind Überprüfungen für verschiedene Flow-bezogene Elemente, die Sie überprüfen können:
 
-* Output text
-* Output data
-* Flow State
-* Context 
-* Slots
-* Intent
+* Text ausgeben
+* Ausgangsdaten
+* Durchfluss-Zustand
+*Zusammenhang 
+*Schlitze
+*Absicht
 
-All Assertion results can be inverted.
+Alle Assertion-Ergebnisse können invertiert werden.
 
-## Playbook Runs
+## Playbook-Läufe
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.27.0-blue.svg)] ({{config.site_url}})
 
-In addition to executing a Playbook in the Interaction Panel, you can also schedule a Playbook Run from the Playbook Editor. When you open a Playbook from the list, you will now see a new tab named **Run** that will list all the previously scheduled Playbook runs.
+Zusätzlich zum Ausführen eines Playbooks im Interaktionsbereich können Sie auch eine Playbook-Ausführung über den Playbook-Editor planen. Wenn Sie ein Playbook aus der Liste öffnen, wird nun eine neue Registerkarte mit dem Namen **Ausführen** angezeigt, auf der alle zuvor geplanten Playbook-Ausführungen aufgelistet sind.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-runs.png" width="100%" />
 </figure>
 
-In order to schedule a new Run, click on the *Run* button. In the dialog box that opens, select the Snapshot, Flow and Locale against which you want to run your current Playbook. Configuring a Playbook Run in this dialog box is similar to configuring a Playbook Execution in the Interaction Panel. When done, click on the **Run** button in the dialog box.
+Um einen neuen Lauf zu planen, klicken Sie auf die Schaltfläche *Ausführen*. Wählen Sie im daraufhin geöffneten Dialogfeld den Snapshot, den Flow und das Gebietsschema aus, für die Sie Ihr aktuelles Playbook ausführen möchten. Das Konfigurieren einer Playbook-Ausführung in diesem Dialogfeld ähnelt der Konfiguration einer Playbook-Ausführung im Interaktionsbereich. Wenn Sie fertig sind, klicken Sie im Dialogfeld auf die Schaltfläche **Ausführen**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-runs-dialog.png" width="100%" />
 </figure>
 
-!!! tip "Schedule playbook runs in bulk using the Cognigy CLI"
-    You can schedule multiple Playbook Runs simultaneously using the `run` command in the [Cognigy CLI](https://www.npmjs.com/package/@cognigy/cognigy-cli) than scheduling them one by one via the UI.
+!!! Tipp "Planen Sie Playbook-Ausführungen in großen Mengen mit der Cognigy CLI"
+    Sie können mehrere Playbook-Ausführungen gleichzeitig mit dem Befehl "run" in der [Cognigy CLI](https://www.npmjs.com/package/@cognigy/cognigy-cli) planen, anstatt sie nacheinander über die Benutzeroberfläche zu planen.
 
-The Playbook Run will be created in the background and a success notification will be displayed once the creation is complete. When the Playbook Run creation is successful, you can see the newly created run in the Runs list. Each item in this list shows the status, creator and the creation time of the Run. The list can be sorted by these three parameters. Furthermore, the list can also be filtered by its *Status* and *Creator*.
+Die Playbookausführung wird im Hintergrund erstellt, und eine Erfolgsbenachrichtigung wird angezeigt, sobald die Erstellung abgeschlossen ist. Wenn die Erstellung der Playbookausführung erfolgreich ist, wird die neu erstellte Ausführung in der Liste Ausführungen angezeigt. Jedes Element in dieser Liste zeigt den Status, den Ersteller und die Erstellungszeit des Laufs an. Die Liste kann nach diesen drei Parametern sortiert werden. Darüber hinaus kann die Liste auch nach ihrem *Status* und *Ersteller* gefiltert werden.
 
-If the status of a Run is **Failed**, it means that there is one or more failing assertions in the Playbook Run. If the status is **Successful**, then all the Playbook assertions have passed. Clicking on a Playbook Run can give you further information on which assertions failed or passed, helping you to see what went wrong or right with the executed Flow.
+Wenn der Status einer Ausführung **Fehler** lautet, bedeutet dies, dass eine oder mehrere fehlgeschlagene Assertionen in der Playbookausführung vorhanden sind. Wenn der Status **Erfolgreich** lautet, wurden alle Playbook-Assertionen bestanden. Wenn Sie auf eine Playbook-Ausführung klicken, erhalten Sie weitere Informationen darüber, welche Assertionen fehlgeschlagen oder bestanden wurden, sodass Sie sehen können, was mit dem ausgeführten Flow schief oder richtig gelaufen ist.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/playbook-run-details.png" width="100%" />
 </figure>
 
-!!! note "Tip: Schedule a Run or Navigate to Runs page from Playbooks List"
-    You can also schedule a Run directly from the Playbooks list. To do this, click on the secondary button of the Playbook that you wand to run. In the menu, click on **Run Playbook** option. You can then configure and create a Playbook Run in the same way as you do in the *Runs* page.
-	Quick navigation to the Runs page is possible by clicking on **Show Runs** option in the menu.
+!!! Hinweis "Tipp: Planen Sie eine Ausführung oder navigieren Sie in der Playbooks-Liste zur Seite "Ausführungen"
+    Sie können eine Ausführung auch direkt aus der Playbooks-Liste planen. Klicken Sie dazu auf die sekundäre Schaltfläche des Playbooks, das Sie ausführen möchten. Klicken Sie im Menü auf die Option **Playbook ausführen**. Sie können dann eine Playbookausführung auf die gleiche Weise konfigurieren und erstellen wie auf der Seite *Ausführungen*.
+	Eine schnelle Navigation zur Seite "Läufe" ist möglich, indem Sie im Menü auf die Option "Läufe anzeigen" klicken.

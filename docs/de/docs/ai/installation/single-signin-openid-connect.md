@@ -1,52 +1,46 @@
 ---
- title: "Single Sign-on using OpenID Connect" 
- slug: "single-signin-openid-connect" 
- hidden: false 
+ title: "Single Sign-On mit OpenID Connect" 
+ Slug: "Single-Signin-OpenID-Connect" 
+ ausgeblendet: false 
 ---
-# Single Sign-on using OpenID Connect
+# Single Sign-On mit OpenID Connect
 
-## Description 
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Cognigy.AI unterstützt bereits [SSO (Single Sign-on)]({{config.site_url}}ai/installation/single-signin-saml2/) durch die Verwendung unserer SAML 2.0-Integration. 
 
-Cognigy.AI already supports [SSO (Single Sign-on)]({{config.site_url}}ai/installation/single-signin-saml2/) through the usage of our SAML 2.0 integration. 
+Mit der Version v4.3.0 hat Cognigy die Unterstützung von Single Sign-On für OpenID Connect hinzugefügt. Kunden können nun auswählen, welche Art von Strategie sie zur Umsetzung ihrer SSO-Unternehmensstrategie verwenden möchten. 
 
-With release v4.3.0  Cognigy has added Single Sign-on support for OpenID Connect. Customers can now select which type of strategy they want to use in order to implement their corporate SSO strategy. 
+So verwenden Sie Open ID Connect mit Auth0 als Anbieter Lesen Sie den folgenden Artikel: [Single Sign-On](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)
 
+!!! Warnung "So verwenden Sie OpenID Connect"
+    Möchten Sie mehr über die Verwendung von OpenID Connect erfahren? Werfen Sie einen Blick auf **[Auth0 - OpenID Connect](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)** in unserem Hilfe-Center.
 
-How to use Open ID Connect with Auth0 as a provider read following article: [Single Sign-on](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)
-
-!!! warning "How to use OpenID Connect"
-    Want to learn how to use OpenID Connect? Have a look at **[Auth0 - OpenID Connect](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)** in our Help Center.
-
-!!! note "Note"
-    "This guide covers how to setup SSO in Cognigy.AI with Auth0 as the **Identity Provider** using the OpenID Connect protocol. After completing this guide, your users can login to Cognigy.AI through Auth0 and will automatically have a user account created for them in Cognigy.AI that is assigned a Cognigy.AI access role as defined by the administrator in Auth0."
+!!! Notiz "Notiz"
+    "In dieser Anleitung erfahren Sie, wie Sie SSO in Cognigy.AI mit Auth0 als **Identitätsanbieter** unter Verwendung des OpenID Connect-Protokolls einrichten. Nachdem Sie diesen Leitfaden abgeschlossen haben, können sich Ihre Benutzer über Auth0 bei Cognigy.AI anmelden und es wird automatisch ein Benutzerkonto für sie in Cognigy.AI erstellt, dem eine Cognigy.AI Zugriffsrolle zugewiesen wird, die vom Administrator in Auth0 definiert wurde.
     
-    "When setting up SSO with Auth0, you can choose between two different SSO protocols. This article covers the OpenID Connect protocol. 
+"Bei der Einrichtung von SSO mit Auth0 kann man zwischen zwei verschiedenen SSO-Protokollen wählen. In diesem Artikel wird das OpenID Connect-Protokoll behandelt. 
     
-    For SAML 2.0, refer to the following article: [Auth0 - saml2.0](https://support.cognigy.com/hc/en-us/articles/360018693139)
+Informationen zu SAML 2.0 finden Sie im folgenden Artikel: [Auth0 - saml2.0](https://support.cognigy.com/hc/en-us/articles/360018693139)
 
+##Configuring SSO in Cognigy.AI für OpenID Connect
 
+Nachdem Sie SSO in Ihrem Identitätsanbieter konfiguriert haben, können Sie endlich eine SSO-Konfiguration für Ihre Organisation in Cognigy.AI erstellen.
+ - siehe [Auth0 - OpenID Connect](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)
 
-##Configuring SSO in Cognigy.AI for OpenID Connect
+Senden Sie dazu eine POST-Anforderung an die folgende URL:
 
-After configuring SSO in your identity provider, you are finally ready to create an SSO configuration for your organisation in Cognigy.AI.
- - see [Auth0 - OpenID Connect](https://support.cognigy.com/hc/en-us/articles/360021171120-Auth0-OpenID-Connect#introduction-0-0)
+''''
+https://<API adress="">/v2.0/identityprovider/configure
+''''
 
-To do this, send a POST request to the following URL:
+Und hängen Sie die folgenden JSON-Payload-Einstellungen mit Ihren eindeutigen Werten an die Anfrage an (siehe unten):
 
-````
-https://<API ADRESS>/v2.0/identityprovider/configure
-````
-
-And attach the following JSON payload settings to the request with your unique values (see below):
-
-````JSON
+''''JSON
 {
 "idpType": "oidc",
 "idpIssuer": "<DOMAIN>",
-"idpClientId": "<CLIENT ID>",
-"idpClientSecret": "<CLIENT SECRET>",
+"idpClientId": "<CLIENT id="">",
+"idpClientSecret": "<CLIENT secret="">",
 "idpIdTokenSignedResponseAlg": "RS256",
 "idpTokenEndpointAuthMethod": "client_secret_basic"
 }
-````
+''''</CLIENT></CLIENT></DOMAIN></API>

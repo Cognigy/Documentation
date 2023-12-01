@@ -1,1 +1,1 @@
-Fields beginning with the characters `@`, `+`, `-`, or `=` are not allowed.
+Felder, die mit den Zeichen '@', '+', '-' oder '=' beginnen, sind nicht zulässig.

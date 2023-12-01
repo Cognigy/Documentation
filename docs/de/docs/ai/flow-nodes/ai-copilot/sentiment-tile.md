@@ -1,49 +1,49 @@
 ---
 title: "Copilot: Sentiment Tile"
-slug: "sentiment-tile"
-hidden: true
+Schnecke: "Sentiment-Kachel"
+Ausgeblendet: Wahr
 ---
 
-# Copilot: Sentiment Tile
+# Copilot: Stimmungskachel
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /.. /release-notes/4.60.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/sentiment-tile.png" width="80%"/>
 </figure>
 
-## Description
+## Beschreibung
 
-This Node performs sentiment analysis on the most recent input and provides insights into the emotional tone
-(positive, negative, or neutral) of the last user inputs.
-It continuously evaluates the sentiment of customer interactions,
-such as chat conversations or phone calls, in real time.
-This real-time analysis offers immediate feedback to agents regarding the emotional tone of the customer within the AI Copilot Workspace.
-For instance, if the sentiment becomes negative during a conversation,
-the system can promptly alert the human agent to take appropriate action.
+Dieser Knoten führt eine Stimmungsanalyse für die letzte Eingabe durch und bietet Einblicke in den emotionalen Ton
+(positiv, negativ oder neutral) der letzten Benutzereingaben.
+Es bewertet kontinuierlich die Stimmung der Kundeninteraktionen,
+wie Chat-Gespräche oder Telefonanrufe, in Echtzeit.
+Diese Echtzeit-Analyse bietet den Agenten sofortiges Feedback über den emotionalen Ton des Kunden innerhalb des AI Copilot Workspace.
+Wenn zum Beispiel die Stimmung während eines Gesprächs negativ wird,
+Das System kann den menschlichen Agenten sofort alarmieren, damit er geeignete Maßnahmen ergreifen kann.
 
-Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai) and select the appropriate model in the [supported model list](../../resources/build/llm.md#supported-models).
+Bevor Sie diesen Node verwenden, legen Sie den Generative AI-Anbieter in den [Einstellungen](.. /.. /generative-ai.md#set-up-generative-ai) und wählen Sie das entsprechende Modell in der [Liste der unterstützten Modelle](.. /.. /resources/build/llm.md#supported-models).
 
-## Settings
+## Einstellungen
 
-| Parameter                | Type          | Description                                                                                                                                    |
+| Parameter | Typ | Beschreibung |
 |--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID                  | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                       |
-| Sentiment Analysis Input | Select        | The number of user inputs that should be analyzed by a model. You can choose whether you want to analyze the last input or the last 10 inputs. |
+| Kachel-ID | CognigyScript | Die ID, die Sie in der AI Copilot-Konfiguration erstellt haben.                                                                                       |
+| Eingabe für die Stimmungsanalyse | Wählen Sie | Die Anzahl der Benutzereingaben, die von einem Modell analysiert werden sollen. Sie können wählen, ob Sie die letzte Eingabe oder die letzten 10 Eingaben analysieren möchten. |
 
-## Use Case
+## Anwendungsfall
 
-Differing from the [Copilot: Transcript Tile](transcript-tile.md) Node, this Node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
+Im Gegensatz zum Knoten [Copilot: Transkriptkachel](transcript-tile.md) können Sie mit diesem Knoten einen größeren Teil der Konversation analysieren, der über die letzte Nachricht des Benutzers hinausgeht. Dieser Knoten trägt zu einer objektiveren Bewertung von Gesprächen bei und ermöglicht die Verwaltung des Gesamteindrucks des Kunden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/sentiment-tile-example.png" width="80%"/>
-  <figcaption>Sentiment Tile Widget in AI Copilot</figcaption>
+  <figcaption>Widget "Stimmungskachel" im KI-Copilot</figcaption>
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Copilot: Transcript Tile](transcript-tile.md)
-- [Copilot: Next Action Tile](next-action-tile.md)
-- [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Copilot: Transkript-Kachel](transcript-tile.md)
+- [Copilot: Kachel für die nächste Aktion](next-action-tile.md)
+- [Copilot: Identitätskachel](identity-tile.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

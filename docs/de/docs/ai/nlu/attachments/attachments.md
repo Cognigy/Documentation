@@ -1,33 +1,29 @@
 ---
- title: "Attachments" 
- slug: "attachments" 
- hidden: false 
+ Titel: "Anhänge" 
+ slug: "Anhänge" 
+ ausgeblendet: false 
 ---
-# Attachments
+# Anhänge
 
-Agent Flows and Lexicons can be shared across multiple flows throughout the agent. This is achieved using the **Attachments** menu where lists of the respective resources are populated and can be enabled. 
+Agentenflüsse und Lexika können über mehrere Flows im gesamten Agenten hinweg gemeinsam genutzt werden. Dies wird über das Menü **Anhänge** erreicht, in dem Listen der jeweiligen Ressourcen aufgefüllt und aktiviert werden können. 
 
-The **Attachments Menu** is found in the **NLU** tab inside the Flow Editor.
+Das **Menü Anhänge** befindet sich auf der Registerkarte **NLU** im Flow-Editor.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b585fa6-attachments.PNG" width="80%" />
 </figure>
 
-The **Attachments** feature means that duplication of intent and lexicon libraries is not required as multiple flows can be designed to reference single libraries.
+Die **Anlagen**-Funktion bedeutet, dass die Duplizierung von Absichts- und Lexikonbibliotheken nicht erforderlich ist, da mehrere Flüsse entworfen werden können, um auf einzelne Bibliotheken zu verweisen.
 
-!!! warning "Train Intents when Attaching"
-    The NLU must be re-trained anytime a new flow or lexicon is attached.
+!!! Warnung "Train Intents beim Anhängen"
+    Die NLU muss jedes Mal neu trainiert werden, wenn ein neuer Flow oder ein neues Lexikon angehängt wird.
 
-## Attached Flows
-<div class="divider"></div>
-Flow attachment is an optional feature that allows virtual agents to access the intents of separate flows.
+## Angehängte Flows<div class="divider"></div>Die Flow-Zuordnung ist eine optionale Funktion, die es virtuellen Agenten ermöglicht, auf die Absichten separater Flows zuzugreifen.
 
-!!! note "Using Attached Flows"
-    Find out more about flow attachment on the [Attached Flows Page]({{config.site_url}}ai/nlu/attachments/attached-flows/).
+!!! Hinweis "Verwenden von angehängten Flows"
+    Weitere Informationen zum Flow-Anhang finden Sie auf der Seite [Attached Flows]({{config.site_url}}ai/nlu/attachments/attached-flows/).
 
-## Attached Lexicons
-<div class="divider"></div>
-Lexicon attachment is required in order to teach the NLU to understand the specific keyphrases added in the [Lexicon Editor](https://docs.cognigy.com/v4.11/docs/lexicons). This means that particular flows can recognize specified keyphrases where others will not, adding to the flexibility of Cognigy.AI virtual agents.
+## Angehängte Lexika<div class="divider"></div>Das Anhängen eines Lexikons ist erforderlich, um der NLU beizubringen, die spezifischen Schlüsselphrasen zu verstehen, die im [Lexikon-Editor](https://docs.cognigy.com/v4.11/docs/lexicons) hinzugefügt wurden. Dies bedeutet, dass bestimmte Flows bestimmte Schlüsselwörter erkennen können, während andere dies nicht tun, was die Flexibilität Cognigy.AI virtuellen Agenten erhöht.
 
-!!! note "Using Attached Lexicons"
-    Find out more about lexicon attachment on the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/).
+!!! Hinweis "Angehängte Lexika verwenden"
+    Weitere Informationen zum Anhängen von Lexika finden Sie auf der [Seite Angehängte Lexika]({{config.site_url}}ai/nlu/attachments/attached-lexicons/).

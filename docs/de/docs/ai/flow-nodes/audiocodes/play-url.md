@@ -1,26 +1,23 @@
 ---
- title: "Play URL" 
- slug: "play-url" 
- hidden: false 
+ title: "URL abspielen" 
+ slug: "Play-URL" 
+ ausgeblendet: false 
 ---
-# Play URL
+# URL abspielen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/play-url.png" width="80%" />
-  <figcaption>AudioCodes Play URL</figcaption>
+  <figcaption>AudioCodes URL abspielen</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Play URL Node lets you retrieve a WAV file from a URL location and play it back to the user.
+## Beschreibung<div class="divider"></div>Mit dem Knoten "URL wiedergeben" können Sie eine WAV-Datei von einem URL-Speicherort abrufen und für den Benutzer wiedergeben.
 
-| Parameter               | Type          | Description                                                                                         |
+| Parameter | Typ | Beschreibung |
 |-------------------------|---------------|-----------------------------------------------------------------------------------------------------|
-| Media URL               | CognigyScript | The URL to the WAV file. Must be accessible to your AudioCodes instance.                            |
-| Media Format            | Select        | Options:<br/>- wav/lpcm15<br/>- raw/lpcm16                                                          |
-| Cache Audio             | Toggle        | Whether to cache the audio file or not. Caching will make future playbacks quicker. Default: false. |
-| Set Activity Parameters | Toggle        | Option to add parameters which will be valid for this activity only                                 |
+| Medien-URL | CognigyScript | Die URL zur WAV-Datei. Muss für Ihre AudioCodes-Instanz zugänglich sein.                            |
+| Medienformat | Wählen Sie | Optionen:<br/>- WAV/LPCM15<br/>- raw/lpcm16 |
+| Audio zwischenspeichern | Umschalten | Gibt an, ob die Audiodatei zwischengespeichert werden soll oder nicht. Durch das Caching werden zukünftige Wiedergaben beschleunigt. Standardwert: false. |
+| Aktivitätsparameter festlegen | Umschalten | Option zum Hinzufügen von Parametern, die nur für diese Aktivität gültig sind |
 
-
-!!! note "This Node supports Activity Parameters"
-    To learn more about activity parameters, visit our Help Center at: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)
+!!! Hinweis "Dieser Knoten unterstützt Aktivitätsparameter"
+    Um mehr über Aktivitätsparameter zu erfahren, besuchen Sie unser Hilfe-Center unter: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)

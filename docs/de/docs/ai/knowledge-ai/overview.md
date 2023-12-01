@@ -1,223 +1,213 @@
 ---
-title: "Knowledge AI"
-slug: "Knowledge AI"
-description: "Cognigy Knowledge AI technology empowers you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes."
-hidden: false
+Titel: "Wissens-KI"
+Schnecke: "Wissens-KI"
+Beschreibung: "Die KI-Technologie von Cognigy Knowledge ermöglicht es Ihnen, vorhandenes Wissen als Dokumente hochzuladen, z. B.PDF-, Text- und DOCX-Dateien sowie Dateien in einem benutzerdefinierten Cognigy-Format. Diese Technologie extrahiert aussagekräftige Informationen aus diesen Dokumenten und macht sie den Flow-Designern über die Knowledge AI Nodes zugänglich."
+ausgeblendet: false
 ---
 
-# Knowledge AI
+# Wissen KI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.65-blue.svg)] (.. /.. /release-notes/4.65.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
-Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
+Wissens-KI kann verwendet werden, um Natural Language Processing (NLP) und Conversational AI zu verbessern. Das Hauptziel von Knowledge AI ist es, diese Systeme in die Lage zu versetzen, auf eine große Menge an Informationen aus verschiedenen Formaten zuzugreifen und diese zu verstehen, z. B. Dokumente, Artikel, Handbücher, FAQs und mehr. Durch den Zugriff auf und das Verständnis von Wissensdatenbanken können diese KI-Systeme genauere, kontextbezogene und hilfreichere Antworten auf Benutzeranfragen liefern.
 
-With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
+Mit der neuen KI-Lösung von Cognigy Knowledge müssen Sie sich nicht mehr nur auf [Intents](.. /nlu/nlu-overview/ml-intents.md) und [Standardantworten](.. /nlu/nlu-overview/overview.md#default-replies), um Benutzerfragen zu identifizieren und relevante Inhalte basierend auf vordefinierten Antworten bereitzustellen. Die Erstellung dieser Frage-Antwort-Paare kann zeit- und arbeitsintensiv sein und einen kontinuierlichen Wartungsaufwand erfordern.
 
-Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
+Stattdessen können Sie mit der KI-Technologie von Cognigy Knowledge vorhandenes Wissen als Dokumente hochladen, z. B.PDF-, Text- und DOCX-Dateien sowie Dateien in einem benutzerdefinierten Cognigy-Format. Diese Technologie extrahiert aussagekräftige Informationen aus diesen Dokumenten und macht sie über die Knowledge AI Nodes für Flow-Designer zugänglich. Dieser Ansatz ermöglicht es Ihnen, schnell und mühelos wissensbasierte virtuelle Agenten zu erstellen, die Einschränkungen herkömmlicher absichtsbasierter Systeme zu umgehen und den Prozess der Erstellung anspruchsvoller Konversationserlebnisse zu vereinfachen.
 
-## Prerequisites
+## Voraussetzungen
 
-Before using this feature, create an account in one of the LLM Providers:
+Bevor Sie diese Funktion verwenden, erstellen Sie ein Konto bei einem der LLM-Anbieter:
 
-- [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
+- [OpenAI](https://platform.openai.com/). Sie müssen über ein kostenpflichtiges Konto verfügen oder Mitglied einer Organisation sein, die Ihnen Zugriff gewährt. Öffnen Sie Ihr OpenAI-Benutzerprofil, kopieren Sie den vorhandenen API-Schlüssel oder erstellen Sie einen neuen und kopieren Sie ihn.
+- [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). Sie müssen über ein kostenpflichtiges Konto verfügen oder Mitglied einer Organisation sein, die Ihnen Zugriff gewährt. Bitten Sie Ihren Azure-Administrator, den API-Schlüssel, den Ressourcennamen und den Namen des Bereitstellungsmodells anzugeben.
 
-For the Knowledge AI case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
+Für den Fall von Knowledge AI benötigen Sie nur das Modell "text-embedding-ada-002". Wenn Sie jedoch beabsichtigen, das Ergebnis der Wissenssuche zu transformieren und auszugeben, benötigen Sie auch ein zusätzliches Modell aus der Spalte **LLM Prompt Node & Search Extract Output Node** in der Spalte [unterstützte Modelle](.. /resources/build/llm.md) aufgerufen werden.
 
-## Create a Knowledge Store
+## Erstellen eines Wissensspeichers
 
-You can create a preconfigured knowledge store. To do this, follow these steps:
+Sie können einen vorkonfigurierten Wissensspeicher erstellen. Gehen Sie dazu folgendermaßen vor:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, select **Knowledge**. The knowledge wizard will be opened.
-3. Continue following the wizard instructions.
-4. Specify a unique name and select an embedding model.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Wählen Sie im Menü auf der linken Seite **Wissen** aus. Der Wissensassistent wird geöffnet.
+3. Folgen Sie den Anweisungen des Assistenten.
+4. Geben Sie einen eindeutigen Namen an und wählen Sie ein Einbettungsmodell aus.
 
     <figure>
       <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-ai-wizard.png" width="100%" />
     </figure>
 
-5. Click **Configure** and enter credentials for the model:
+5. Klicken Sie auf **Konfigurieren** und geben Sie die Anmeldeinformationen für das Modell ein:
 
-    === "Microsoft Azure OpenAI"
-        - **Connection name** — create a unique name for your connection.<br>
-        - **apiKey** — add an [Azure API Key](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint). This value can be found in the **Keys & Endpoint** section when examining your resource from the Azure portal. You can use either `KEY1` or `KEY2`.<br>
-        - **Resource Name** — add a [resource name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource). This value can be found under **Resource Management > Deployments** in the Azure portal or alternatively under **Management > Deployments** in Azure OpenAI Studio.<br>
-        - **Deployment Name** — add a [model name](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model).<br>
-        - **Api Version** — add an [API version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning). The API version to use for this operation in the `YYYY-MM-DD` format. Note that the version may have an extended format, for example, `2023-03-15-preview`. <br>
-        - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Azure OpenAI provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the URL in the following pattern: `https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/completions?api-version=<api-verson>`. When a Custom URL is added, the **Resource Name**, **Deployment Name**, and **API Version** fields will be ignored.
+=== "Microsoft Azure OpenAI"
+        - **Verbindungsname** – Erstellen Sie einen eindeutigen Namen für Ihre Verbindung.<br>- **apiKey** – Fügen Sie einen [Azure-API-Schlüssel](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/quickstart?tabs=command-line&pivots=rest-api#retrieve-key-and-endpoint) hinzu. Dieser Wert finden Sie im Abschnitt Schlüssel und Endpunkt, wenn Sie Ihre Ressource über das Azure-Portal untersuchen. Sie können entweder 'KEY1' oder 'KEY2' verwenden.<br>- **Ressourcenname** — Fügen Sie einen [Ressourcennamen](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#create-a-resource) hinzu. Diesen Wert finden Sie im Azure-Portal unter **Ressourcenverwaltung > Bereitstellungen** oder alternativ unter **Verwaltung > Bereitstellungen** in Azure OpenAI Studio.<br>- **Bereitstellungsname** – fügen Sie einen [Modellnamen](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal#deploy-a-model) hinzu.<br>- **API-Version** — Fügen Sie eine [API-Version](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/reference#rest-api-versioning) hinzu. Die API-Version, die für diesen Vorgang im Format "JJJJ-MM-TT" verwendet werden soll. Beachten Sie, dass die Version ein erweitertes Format haben kann, z. B. "2023-03-15-preview". <br>- **Benutzerdefinierte URL** – dieser Parameter ist optional. Um die Verbindung zwischen Ihren Clustern und dem Azure OpenAI-Anbieter zu steuern, können Sie Verbindungen über dedizierte Proxyserver weiterleiten und so eine zusätzliche Sicherheitsebene schaffen. Geben Sie dazu die URL nach folgendem Muster an: 'https://<resource-name>.openai.azure.com/openai/deployments/<deployment-name>/completions?api-version=<api-verson>'. Wenn eine benutzerdefinierte URL hinzugefügt wird, werden die Felder **Ressourcenname**, **Bereitstellungsname** und **API-Version** ignoriert.
     
-    === "OpenAI"
-        - **Connection name** — create a unique name for your connection.<br>
-        - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
-        - **Custom Model** — this parameter is optional. Add the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
+=== "OpenAI"
+        - **Verbindungsname** – Erstellen Sie einen eindeutigen Namen für Ihre Verbindung.<br>- **apiKey** — fügen Sie einen API-Schlüssel aus Ihrem OpenAI-Konto hinzu. Diesen Schlüssel finden Sie in den [Benutzereinstellungen](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) Ihres OpenAI-Kontos.<br>- **Benutzerdefiniertes Modell** — dieser Parameter ist optional. Fügen Sie das Modell hinzu, das Sie verwenden möchten. Dieser Parameter ist hilfreich, wenn Sie mehrere Modelltypen auf der Seite des LLM-Anbieters haben und beabsichtigen, einen bestimmten Modelltyp zu verwenden. Wenn Sie beispielsweise GPT-4 haben, können Sie "gpt-4-0613" für Ihren Anwendungsfall angeben. Wenn ein benutzerdefiniertes Modell hinzugefügt wird, wird das standardmäßige LLM-Modell ignoriert. Weitere Informationen zu den Modellen des Anbieters finden Sie in der [OpenAI-Dokumentation](https://platform.openai.com/docs/models/overview).<br>6. Klicken Sie auf **Weiter**. 
+7. Laden Sie die Datei [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) im Format ".ctxt" herunter. 
+8. Wählen Sie im Schritt **Wissen hochladen** den Typ **Cognigy CTXT** aus, laden Sie die gespeicherte Datei hoch und klicken Sie dann auf **Weiter**.
+9. _(Optional)_ Wählen Sie im Abschnitt **Antwortextraktionsmodell konfigurieren** das zusätzliche Modell aus, wenn Sie Schlüsselpunkte extrahieren und das Suchergebnis als Text oder adaptive Karte ausgeben möchten. Klicken Sie auf **Konfigurieren**, und geben Sie die Anmeldeinformationen für das Modell ein.
+10. _(Optional)_ Wenn das zusätzliche Modell konfiguriert ist, klicken Sie auf **Flow erstellen**. Es wird ein Flow mit dem Knoten **Search Extract Output** erstellt. 
+11. Klicken Sie auf **Weiter**.
 
-6. Click **Next**. 
-7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
-8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**.
-9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
-10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
-11. Click **Next**.
+Schließen Sie die Installation ab und beginnen Sie mit der Erkundung der Wissens-KI-Projektstruktur.   
 
-Complete installation and start exploring knowledge AI project structure.   
+Weitere Informationen zu 'ctxt' finden Sie unter [Cognigy Text Format](ctxt.md).
 
-To learn more about `ctxt`, refer to [Cognigy Text Format](ctxt.md).
+## Erkunden Sie ein Knowledge AI-Projekt 
 
-## Explore a Knowledge AI project 
+Die Arbeit mit Knowledge AI umfasst zwei Phasen, die dem Intent-Workflow ähneln. Die erste Phase ist das Erfassen und Vorbereiten von Wissen, und die zweite Phase ist die Abfrage des Wissens während der Laufzeit.
 
-Working with Knowledge AI involves two phases similar to Intent workflow. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime.
+**Erste Phase:**
 
-**First phase:**
+1. **Hochladen von Rohinformationen**. Cognigy.AI erhält Zugriff auf Rohinformationen über hochgeladene Dateien, die Wissen enthalten.
+2. **Extraktion von Wissensblöcken**. Eine Sammlung von Werkzeugen, die Text und Metadaten aus den Rohinformationen extrahieren. Chunks können im Chunk-Editor geändert werden.
+3. **Vektorisierung**. Der Text von Knowledge Chunks wird mithilfe eines eingebetteten Machine Learning-Modells in numerische Darstellungen codiert. Einbettungen sind hochdimensionale Vektoren, die die Bedeutung und Ähnlichkeit von Wörtern in numerischen Darstellungen kodieren. Cognigy.AI speichert diese Vektoren in einer speziellen internen Datenbank, um während der Laufzeit schnell darauf zugreifen zu können.
 
-1. **Raw Information Upload**. Cognigy.AI receives access to raw information via uploaded files that contain knowledge.
-2. **Knowledge Chunk Extraction**. A collection of tools that extracts text and metadata from the raw information. Chunks are accessible for modification in the Chunk Editor.
-3. **Vectorization**. The text of Knowledge Chunks is encoded into numeric representations using an Embedding machine learning model. Embeddings are high-dimensional vectors that encode word meaning and similarity into numeric representations. Cognigy.AI stores these vectors in a specialized internal database for quick access during runtime.
+**Zweite Phase:**
 
-**Second phase:**
+1. **Abfrage der Wissensdatenbank**. Während der Laufzeit kann das Knowledge AI-System die Wissensdatenbank abfragen, um genaue und kontextbezogene Antworten auf Benutzeranfragen zu geben.
+2. **Wissensbasierter Aufbau virtueller Agenten**. Virtuelle Agenten nutzen das in der Wissensdatenbank gespeicherte Wissen, um anspruchsvollere und intelligentere Gespräche mit Benutzern zu führen. Diese Agenten können kontextbezogene Antworten basierend auf den aus den hochgeladenen Dateien extrahierten Informationen bereitstellen.
 
-1. **Knowledge Base Querying**. During runtime, the Knowledge AI system can query the knowledge base to provide accurate and contextually appropriate responses to user queries.
-2. **Knowledge-based Virtual Agents Building**. Virtual agents utilize the knowledge stored in the Knowledge Base to engage in more sophisticated and intelligent conversations with users. These agents can provide context-aware responses based on the information extracted from the uploaded files.
+### Wissens-KI-Management
 
-### Knowledge AI Management
+Das Wissen ist in einer Hierarchie von Speichern, Quellen und Blöcken organisiert, um genaue Antworten des Systems zu ermöglichen. Diese hierarchischen Strukturen werden im Folgenden beschrieben.
 
-Knowledge is organized in a hierarchy of stores, sources, and chunks to enable accurate responses by the system. These hierarchical structures are described below.
+#### Wissensspeicher
 
-#### Knowledge Store
+Ein _Knowledge Store_ ist ein Container, der mehrere Wissensquellen enthält und organisiert. Es bietet eine zentralisierte und strukturierte Umgebung für die Verwaltung und Kategorisierung verschiedener Wissensquellen.
+Der Wissensspeicher trägt zur Optimierung des Wissensmanagementprozesses bei, indem er verwandte Wissensquellen gruppiert und so das Organisieren, Suchen und Abrufen relevanter Informationen während der Laufzeit erleichtert.
 
-A _Knowledge Store_ is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
-The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
-
-The maximum number of stores per project is described in the [Limitations](#limitations) section.
+Die maximale Anzahl von Speichern pro Projekt wird im Abschnitt [Einschränkungen](#limitations) beschrieben.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-store.png" width="100%" />
 </figure>
 
-#### Knowledge Source
+#### Wissensquelle
 
-A _Knowledge Source_ represents the output of transforming various types of files into a structured and accessible format. Each file corresponds uniquely to a specific Knowledge Source, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
+Ein _Knowledge Source_ stellt die Ausgabe der Umwandlung verschiedener Dateitypen in ein strukturiertes und zugängliches Format dar. Jede Datei entspricht eindeutig einer bestimmten Wissensquelle, die wertvolles Wissen in Form von Benutzerhandbüchern, Artikeln, FAQs und anderen relevanten Informationen enthält.
 
-By breaking down the content of these files into smaller units known as _chunks_, the Knowledge Source becomes a specific collection of organized and structured knowledge.
+Durch die Aufteilung des Inhalts dieser Dateien in kleinere Einheiten, die als _Chunks_ bezeichnet werden, wird die Wissensquelle zu einer spezifischen Sammlung von organisiertem und strukturiertem Wissen.
 
-In addition to the main content, you can include other types of information, such as links and dates, in the metadata.
+Zusätzlich zum Hauptinhalt können Sie andere Arten von Informationen, z. B. Links und Datumsangaben, in die Metadaten aufnehmen.
 
-The following types of files are supported:
+Die folgenden Dateitypen werden unterstützt:
 
-- `.ctxt` (recommended) 
-- `.txt`
-- `.pdf`
-- `.docx`
+- '.ctxt' (empfohlen) 
+- '.txt'
+- '.pdf'
+- '.docx'
 
-The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
+Das Format '.ctxt' ([Cognigy text](ctxt.md)) teilt den Text effektiv in Blöcke auf und bietet breite Möglichkeiten für die Arbeit mit Metadaten. Bei anderen Formaten können die Ergebnisse der Dateikonvertierung zu schlechteren Ergebnissen führen.
 
-The `.pdf` format has [two chunk splitting strategies](pdf.md).
+Das '.pdf'-Format verfügt über [zwei Chunk-Splitting-Strategien](pdf.md).
 
-The maximum number of sources per store is described in the [Limitations](#limitations) section.
+Die maximale Anzahl von Quellen pro Speicher wird im Abschnitt [Einschränkungen](#limitations) beschrieben.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/knowledge-source.png" width="100%" />
 </figure>
 
-Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
-as a result, improve the accuracy of search outputs.
+Darüber hinaus können Sie Quell-Tags verwenden. Diese Tags dienen dazu, den Umfang Ihrer Wissenssuche zu verfeinern, so dass Sie nur die relevantesten Abschnitte der Wissensdatenbank einbeziehen und
+Dadurch wird die Genauigkeit der Suchausgaben verbessert.
 
-To apply these tags, specify them when uploading a source file.
-For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
-while for other formats,
-you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
+Um diese Tags anzuwenden, geben Sie sie beim Hochladen einer Quelldatei an.
+Für das .ctxt-Format müssen Sie sie in die [Quellmetadaten](ctxt.md#source-metadata) aufnehmen.
+während für andere Formate
+Sie müssen sie in der Cognigy.AI Benutzeroberfläche angeben, wenn Sie eine neue Wissensquelle erstellen.
 
+!!! Hinweis "Quellen-Tags"
+    - Die maximale Anzahl von Tags pro Wissensquelle beträgt 10.
+    - Ein Quell-Tag kann nach dem Erstellen der Quelle nicht mehr geändert werden.
+    - Ein Quellen-Tag kann nicht zu bereits vorhandenen Quellen hinzugefügt werden. 
 
-!!! note "Source Tags"
-    - The maximum number of tags per knowledge source is 10.
-    - A Source Tag cannot be modified after creating the source.
-    - A Source Tag cannot be added to already existing sources. 
+#### Brocken 
 
-#### Chunk 
+Ein _Chunk_ ist eine Wissenseinheit, die aus einer Wissensquelle extrahiert wird. Chunks sind kleinere, in sich geschlossene Informationen, die das Knowledge AI-System effektiv verarbeiten und verwalten kann.
 
-A _Chunk_ is a unit of knowledge extracted from a Knowledge Source. Chunks are smaller, self-contained pieces of information that the Knowledge AI system can process and manage effectively.
+Ein Block kann beispielsweise einen einzelnen Absatz, einen Satz oder sogar eine kleinere Texteinheit aus einem Dokument darstellen. Durch die Aufteilung des Inhalts in Blöcke erhält das System eine bessere Granularität, sodass es Benutzeranfragen effizienter analysieren und beantworten kann. Die Extraktion von Wissen in Blöcke verbessert die Fähigkeit des Systems, die richtigen Informationen mit Benutzerfragen abzugleichen, was zu genaueren und kontextuell angemessenen Antworten führt.
 
-For instance, a chunk can represent a single paragraph, a sentence, or even a smaller unit of text from a document. By dividing the content into chunks, the system gains better granularity, enabling it to analyze and respond to user queries more efficiently. The extraction of knowledge into chunks enhances the system's ability to match the right information to user questions, resulting in more accurate and contextually appropriate responses.
-
-Each chunk can have associated metadata.
-The number of meta-data key-value pairs is limited and supports only simple data types such as number,
-string, and boolean.
-The maximum number of Chunks as well as the maximum length of supported characters per Chunk are described in the [Limitations](#limitations) section.
+Jedem Block können Metadaten zugeordnet sein.
+Die Anzahl der Metadaten-Schlüssel-Wert-Paare ist begrenzt und unterstützt nur einfache Datentypen wie Zahl,
+string und boolean.
+Die maximale Anzahl von Chunks sowie die maximale Länge der unterstützten Zeichen pro Chunk sind im Abschnitt [Limitations](#limitations) beschrieben.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk.png" width="100%" />
 </figure>
 
-#### Chunk Editor
+#### Chunk-Editor
 
-The _Chunk Editor_ is a tool that helps you interact with and manage chunks. 
-The Editor provides a user-friendly interface that enables you to manipulate the content within each chunk.
-Users can modify the text, add new information, delete sections,
-or rearrange the order of content to ensure the accuracy and relevance of the knowledge.
+Das _Chunk Editor_ ist ein Tool, mit dem Sie mit Chunks interagieren und diese verwalten können. 
+Der Editor bietet eine benutzerfreundliche Oberfläche, mit der Sie den Inhalt innerhalb der einzelnen Blöcke bearbeiten können.
+Benutzer können den Text ändern, neue Informationen hinzufügen, Abschnitte löschen,
+oder ordnen Sie die Reihenfolge der Inhalte neu, um die Richtigkeit und Relevanz des Wissens zu gewährleisten.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/chunk-editor.png" width="100%" />
 </figure>
 
-## Search, Extract and Output Knowledge
+## Wissen suchen, extrahieren und ausgeben
 
-1. Navigate to **Build > Flows** and create a new Flow.
-2. In the **Flow** editor, add a **Search Extract Output** Node.
-3. In the **Node** editor, select the knowledge store that you recently created.
-4. Select one of the following modes:
-    - **Search & Extract & Output** — performs a knowledge search, extracts key points, and outputs the result as text or adaptive card. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search & Extract** — performs a knowledge search, extracts key points, but no automatic output. For this mode, you need models from the [list of supported providers](../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
-    - **Search only** — performs a knowledge search and retrieves information without extraction or automatic output. For this mode, you only the `text-embedding-ada-002` model.
+1. Navigieren Sie zu **Build > Flows** und erstellen Sie einen neuen Flow.
+2. Fügen Sie im **Flow**-Editor einen Knoten **Search Extract Output** hinzu.
+3. Wählen Sie im **Node**-Editor den Wissensspeicher aus, den Sie kürzlich erstellt haben.
+4. Wählen Sie einen der folgenden Modi:
+    - **Suchen & Extrahieren & Ausgabe** – führt eine Wissenssuche durch, extrahiert Schlüsselpunkte und gibt das Ergebnis als Text oder adaptive Karte aus. Für diesen Modus benötigen Sie Modelle aus der [Liste der unterstützten Anbieter](.. /resources/build/llm.md), die sowohl die Fälle "LLM Prompt Node & Search Extract Output Node" als auch "Knowledge Search" abdecken.
+    - **Suchen & Extrahieren** — führt eine Wissenssuche durch, extrahiert Schlüsselpunkte, aber keine automatische Ausgabe. Für diesen Modus benötigen Sie Modelle aus der [Liste der unterstützten Anbieter](.. /resources/build/llm.md), die sowohl die Fälle "LLM Prompt Node & Search Extract Output Node" als auch "Knowledge Search" abdecken.
+    - **Nur Suche** – führt eine Wissenssuche durch und ruft Informationen ohne Extraktion oder automatische Ausgabe ab. Für diesen Modus verwenden Sie nur das Modell 'text-embedding-ada-002'.
 
      <figure>
        <img class="image-center" src="{{config.site_url}}ai/images/knowledge-ai/configure-search-extract-output.png" width="100%" />
      </figure>
    
-5. Check if **Context-Aware Search** is activated in the **Search settings** section. This feature considers the context of the transcript for the search, allowing a virtual agent to address follow-up questions. Be aware that this feature will consume LLM tokens on your LLM prover side. 
-6. When the **Context-Aware Search** setting is enabled, configure the number of **Transcript Steps**. This setting affects the depth of context considered when retrieving search results.
-7. _(Optional)_ In the **Source Tags** field, add tags by specifying each tag separately and pressing **enter**. Before specifying tags, ensure that they were provided during the upload of the source file for the selected knowledge source. 
-8. Click **Save Node**. 
-9. Proceed to the [Interaction Panel](../tools/interaction-panel/interaction-panel.md) and send the `Can Cognigy connect to a Contact Center?` question.
+5. Prüfen Sie, ob die **Kontextabhängige Suche** im Abschnitt **Sucheinstellungen** aktiviert ist. Diese Funktion berücksichtigt den Kontext des Transkripts für die Suche, sodass ein virtueller Agent Folgefragen beantworten kann. Beachten Sie, dass diese Funktion LLM-Token auf Ihrer LLM-Testseite verbraucht. 
+6. Wenn die Einstellung **Kontextabhängige Suche** aktiviert ist, konfigurieren Sie die Anzahl der **Transkriptschritte**. Diese Einstellung wirkt sich auf die Tiefe des Kontexts aus, der beim Abrufen von Suchergebnissen berücksichtigt wird.
+7. _(Optional)_ Fügen Sie im Feld **Quell-Tags** Tags hinzu, indem Sie jedes Tag separat angeben und **Eingabe** drücken. Stellen Sie vor dem Angeben von Tags sicher, dass diese beim Hochladen der Quelldatei für die ausgewählte Wissensquelle bereitgestellt wurden. 
+8. Klicken Sie auf **Knoten speichern**. 
+9. Fahren Sie mit dem [Interaktionsbereich](.. /tools/interaction-panel/interaction-panel.md) und senden Sie die Frage "Kann Cognigy eine Verbindung zu einem Contact Center herstellen?".
 
-You will receive a response generated from the absorbed Knowledge.
+Du wirst eine Antwort erhalten, die aus dem absorbierten Wissen generiert wird.
 
-To learn more about the Search Extract Output Node, refer to the [related article](../flow-nodes/other-nodes/search-extract-output.md).
+Weitere Informationen zum Suchextrakt-Ausgabeknoten finden Sie im [verwandten Artikel](.. /flow-nodes/other-nodes/search-extract-output.md).
 
-## Limitations
+## Einschränkungen
 
-The table below presents limitations. These limitations are subject to future changes by Cognigy.
+In der folgenden Tabelle sind die Einschränkungen aufgeführt. Diese Einschränkungen unterliegen zukünftigen Änderungen durch Cognigy.
 
-| Description                                                                                                        | Current Limit |
+| Beschreibung | Strom-Grenzwert |
 |--------------------------------------------------------------------------------------------------------------------|---------------|
-| Maximum number of Knowledge Stores per project                                                                     | 10            |
-| Maximum number of Knowledge Sources per Store                                                                      | 10            |
-| Maximum number of source tags per Knowledge Source                                                                 | 10            |
-| Maximum number of source tags per [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md) | 5             |
-| Maximum number of Chunks per Knowledge Source                                                                      | 1000          |
-| Maximum number of Source metadata pairs                                                                            | 20            |
-| Maximum number of Chunk metadata pairs                                                                             | 20            |
-| Maximum number of characters for text per Chunk                                                                    | 2000          |
-| Maximum number of characters for metadata per Chunk                                                                | 1000          |
-| Maximum number of characters for metadata per Source                                                               | 1000          |
+| Maximale Anzahl von Wissensspeichern pro Projekt | Nr. 10 |
+| Maximale Anzahl von Wissensquellen pro Shop | Nr. 10 |
+| Maximale Anzahl von Quellen-Tags pro Wissensquelle | Nr. 10 |
+| Maximale Anzahl von Quell-Tags pro [Search Extract Output Node](.. /flow-nodes/other-nodes/search-extract-output.md) | Nr. 5 |
+| Maximale Anzahl von Chunks pro Wissensquelle | 1000 |
+| Maximale Anzahl von Quellmetadatenpaaren | Nr. 20 |
+| Maximale Anzahl von Chunk-Metadatenpaaren | Nr. 20 |
+| Maximale Anzahl von Zeichen für Text pro Block | 2000 |
+| Maximale Anzahl von Zeichen für Metadaten pro Chunk | 1000 |
+| Maximale Anzahl von Zeichen für Metadaten pro Quelle | 1000 |
 
-!!! Snapshots
-    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon.    
+!!! Schnappschüsse
+    Wissens-KI-spezifische Objekte, wie z. B. Stores, Sources und Chunks, **sind** nicht Teil von Cognigy.AI [Snapshots](.. /resources/deploy/snapshots.md). Diese Funktion wird in Kürze implementiert.    
 
-## FAQ
+## Häufig gestellte Fragen
 
-**Q1**: Will Knowledge AI be free of charge?
+**F1**: Wird Knowledge AI kostenlos sein?
 
-**A1**: No, we will provide pricing information in the near future.
+**A1**: Nein, wir werden in naher Zukunft Preisinformationen zur Verfügung stellen.
 
-**Q2**: I encountered a `Request failed with status code 429` error while attempting to upload a file. How can I solve this issue?
+F2: Beim Versuch, eine Datei hochzuladen, ist der Fehler "Anforderung mit Statuscode 429 fehlgeschlagen" aufgetreten. Wie kann ich dieses Problem lösen?
 
-**A2**: The `429` error occurs when your organization's rate limit is exceeded on the side of your LLM's provider. To learn more, refer to your provider's documentation. For instance, if you're using the OpenAI API, check out the article [How can I solve 429: 'Too Many Requests' errors?](https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
+**A2**: Der Fehler "429" tritt auf, wenn das Ratenlimit Ihrer Organisation auf der Seite des LLM-Anbieters überschritten wird. Weitere Informationen finden Sie in der Dokumentation Ihres Anbieters. Wenn Sie beispielsweise die OpenAI-API verwenden, lesen Sie den Artikel [Wie kann ich 429: 'Too Many Requests'-Fehler lösen?] (https://help.openai.com/en/articles/5955604-how-can-i-solve-429-too-many-requests-errors).
 
-## More Information
+## Mehr Informationen
 
-- [Cognigy Text Format](ctxt.md)
+- [Cognigy-Textformat](ctxt.md)
 - [PDF](pdf.md)
-- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
-- [LLM](../resources/build/llm.md)
-- [Generative AI](../generative-ai.md)
+- [Suchextrakt-Ausgabeknoten](.. /flow-nodes/other-nodes/search-extract-output.md)
+- [LLM](.. /resources/build/llm.md)
+- [Generative KI](.. /generative-ai.md)</api-verson></deployment-name></resource-name>

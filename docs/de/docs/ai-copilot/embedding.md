@@ -1,26 +1,26 @@
 ---
-title: "Embedding"
-slug: "embedding"
-hidden: false
+title: "Einbetten"
+Slug: "Einbetten"
+ausgeblendet: false
 ---
 
-# AI Copilot Embedding
+# Einbettung von KI-Copiloten
 
-AI Copilot is supported by all handover providers.
+AI Copilot wird von allen Übergabeanbietern unterstützt.
 
 {! _includes/agent-assist/genesys-note.md !}
 
-To embed the workspace into Genesys, create a script in Genesys and add an iFrame to it.
+Um den Arbeitsbereich in Genesys einzubetten, erstellen Sie ein Skript in Genesys und fügen Sie ihm einen iFrame hinzu.
 
-To display the AI Copilot Workspace, add a value in the respective field:
+Um den AI Copilot-Arbeitsbereich anzuzeigen, fügen Sie einen Wert in das entsprechende Feld ein:
 
-- [For Chat Use Cases](chat.md) — add the **AI Copilot Embedding URL** value, which can be found in the Endpoint under in the **Copilot** section.
-- [For Voice Use Cases](voice/voice-overview.md) — add the **UUIValue** value, which will be generated and forwarded via SIP headers during the transfer to the human agent.
+- [Für Chat-Anwendungsfälle](chat.md) – Fügen Sie den Wert **AI Copilot Embedding URL** hinzu, den Sie im Endpunkt unter im Abschnitt **Copilot** finden.
+- [For Voice Use Cases](voice/voice-overview.md) — fügen Sie den **UUIValue**-Wert hinzu, der während der Übertragung an den menschlichen Agenten generiert und über SIP-Header weitergeleitet wird.
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot](overview.md)
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
-- [Integration with Contact Centers](contact-center-integration.md)
+- [KI-Copilot](overview.md)
+- [Erste Schritte mit AI Copilot](getting-started.md)
+- [Konfiguration des KI-Copiloten](configuration.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)
+- [Integration mit Contact Centern](contact-center-integration.md)

@@ -1,34 +1,30 @@
 ---
-title: "Carriers" 
-slug: "vg-webapp-carriers"
-hidden: false 
+Titel: "Spediteure" 
+Slug: "VG-WebApp-Träger"
+ausgeblendet: false 
 ---
 
-# Carriers
+# Spediteure
 
-*Carriers* allow you to connect your SIP Trunk with Voice Gateway. 
+*Carrier* ermöglichen es Ihnen, Ihren SIP-Trunk mit dem Voice Gateway zu verbinden. 
 
-There are two options on how the SIP Trunk can be added:
+Es gibt zwei Möglichkeiten, wie der SIP-Trunk hinzugefügt werden kann:
 
-- by going through the form and filling out all the fields.
-- by clicking **Select a predefined carrier** and selecting one of the pre-configured carriers. That will pre-fill all the fields with standard values.
+- indem Sie das Formular durchgehen und alle Felder ausfüllen.
+- indem Sie auf **Vordefinierten Spediteur auswählen** klicken und einen der vorkonfigurierten Spediteure auswählen. Dadurch werden alle Felder mit Standardwerten vorausgefüllt.
 
-!!! warning
-    Users with an Account scope can only edit carriers they have created, as well as carriers created by other users with the same scope. They can still use and view carriers shared by Service providers or Admins.
+!!! Warnung
+    Benutzer mit einem Kontobereich können nur Spediteure bearbeiten, die sie selbst erstellt haben, sowie Spediteure, die von anderen Benutzern mit demselben Bereich erstellt wurden. Sie können weiterhin Spediteure verwenden und anzeigen, die von Dienstanbietern oder Administratoren freigegeben wurden.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-carriers.png"  width="100%" />
 
-## Settings
-
-<div class="divider"></div>
-
-| Settings                    | Description                                                                                                                  | Scope                            |
+## Einstellungen<div class="divider"></div>| Einstellungen | Beschreibung | Geltungsbereich |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Name                        | SIP Trunk Name.                                                                                                              | Account, Service Provider, Admin |
-| Select a predefined carrier | Pre-configured list of SIP Trunks.                                                                                           | Account, Service Provider, Admin |
-| Active                      | Enable or disable the carrier.                                                                                               | Account, Service Provider, Admin |
-| E.164 Syntax                | Defines a general format for international telephone numbers.                                                                | Account, Service Provider, Admin |
-| Outbound Authentication     | Using a username and a password for the authentication.                                                                      | Account, Service Provider, Admin |
-| Prefix                      | Is used to match a specific pattern of digits in the dialed number and route the call accordingly.                           | Account, Service Provider, Admin |
-| SIP Diversion Header        | Means a header used to support PSTN redirecting services such as Call Forwarding.                                            | Account, Service Provider, Admin |
-| SIP Gateways                | Add the Network Address / Port / Netmask of your carrier. You can select the direction of calls: Outbound, Inbound, or both. | Account, Service Provider, Admin |
+| Bezeichnung: | Name des SIP-Trunks.                                                                                                              | Konto, Dienstanbieter, Admin |
+| Wählen Sie einen vordefinierten Spediteur aus | Vorkonfigurierte Liste von SIP-Trunks.                                                                                           | Konto, Dienstanbieter, Admin |
+| Aktiv | Aktivieren oder deaktivieren Sie den Spediteur.                                                                                               | Konto, Dienstanbieter, Admin |
+| E.164 Syntax | Definiert ein allgemeines Format für internationale Telefonnummern.                                                                | Konto, Dienstanbieter, Admin |
+| Ausgehende Authentifizierung | Verwendung eines Benutzernamens und eines Kennworts für die Authentifizierung.                                                                      | Konto, Dienstanbieter, Admin |
+| Präfix | Wird verwendet, um ein bestimmtes Ziffernmuster in der gewählten Nummer abzugleichen und den Anruf entsprechend weiterzuleiten.                           | Konto, Dienstanbieter, Admin |
+| SIP-Umleitungs-Header | Bezeichnet einen Header, der zur Unterstützung von PSTN-Umleitungsdiensten wie der Anrufweiterleitung verwendet wird.                                            | Konto, Dienstanbieter, Admin |
+| SIP-Gateways | Fügen Sie die Netzwerkadresse / den Port / die Netzmaske Ihres Netzbetreibers hinzu. Sie können die Richtung der Anrufe auswählen: Ausgehend, Eingehend oder beides. | Konto, Dienstanbieter, Admin |

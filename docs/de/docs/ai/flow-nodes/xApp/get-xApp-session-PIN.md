@@ -1,32 +1,29 @@
 ---
- title: "xApp: Get Session PIN" 
+ title: "xApp: Sitzungs-PIN abrufen" 
  slug: "Get-xApp-Session-PIN" 
- hidden: false 
+ ausgeblendet: false 
 ---
 
-# xApp: Get Session PIN
+# xApp: Sitzungs-PIN abrufen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/get-xApp-session-PIN.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten erhält eine neue xApp-Sitzungs-PIN, auf die mit dem Befehl [xApp: Sitzungs-PIN abrufen] (.. /.. /xApp/tokens.md#xapp-session-pin) oder über 'input.apps.session.pin'.
 
-This Node gets a new xApp Session PIN which can be accessed using the [xApp: Get Session PIN](../../xApp/tokens.md#xapp-session-pin) token or via `input.apps.session.pin`.
+Der PIN-Code ist nur 5 Minuten gültig.
 
-The PIN code is only valid for 5 minutes.
+Mit dieser PIN können sich Benutzer über eine xApp-PIN-Webseite anmelden.
 
-With this PIN, users can log in via an xApp PIN webpage.
+### xApp-PIN-Seiten-URL
 
-### xApp PIN Page URL
+Geben Sie die URL der xApp-PIN-Seite für Benutzer frei, auf der sie die PIN eingeben können. Die URL kann im Flow mit einer [xApp-PIN-Seiten-URL](.. /.. /xApp/tokens.md#xapp-pin-page-url) Cognigy-Token.
 
-Share the xApp PIN Page URL with users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](../../xApp/tokens.md#xapp-pin-page-url) Cognigy token.
+## Mehr Informationen
 
-## More Information
-
-- [xApp Tokens](../../xApp/tokens.md)
-- [xApp Nodes](overview.md)
-- [xApp: Init Session](init-xApp-session.md)
-- [xApp: Show HTML](set-html-xApp-state.md)
-- [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
+- [xApp-Token](.. /.. /xApp/tokens.md)
+- [xApp-Knoten](overview.md)
+- [xApp: Init-Sitzung](init-xApp-session.md)
+- [xApp: HTML anzeigen](set-html-xApp-state.md)
+- [xApp: Adaptive Karte anzeigen](set-AdaptiveCard-xApp-state.md)

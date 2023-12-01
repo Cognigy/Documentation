@@ -1,11 +1,11 @@
 ---
-title: "AI Copilot"
-slug: "ai-copilot"
-hidden: false
+Titel: "KI-Copilot"
+Schnecke: "KI-Copilot"
+ausgeblendet: false
 ---
-# AI Copilot in Live Agent
+# KI-Copilot im Live-Agenten
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.51-blue.svg)] (.. /.. /release-notes/4.51.md)
 
 {! _includes/agent-assist/pricing.md !}
 
@@ -13,44 +13,44 @@ hidden: false
 
 {! _includes/live-agent/assistant-setup.md !}
 
-## Set up an Endpoint
+## Einrichten eines Endpunkts
 
-To configure your Endpoint:
+So konfigurieren Sie Ihren Endpunkt:
 
-1. Go to **Deploy > Endpoints**.
-2. Go to your **Webchat** Endpoint.
-3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
-4. Go to the **Copilot** section.
-5. In the **Copilot Config** field, select a config you recently created via [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs).
-6. Click **Save**.
-7. In Live Agent, go to **Profile settings > AI Copilot** and select **Enable AI Copilot Workspace**. Alternatively, you can activate the Workspace for all human agents in your project. To do this, go to **Settings > Account Settings > AI Copilot Workspace** and select **Enable AI Copilot Workspace**, then click **Update Settings**.
+1. Wechseln Sie zu **Bereitstellen > Endpunkte**.
+2. Gehen Sie zu Ihrem **Webchat**-Endpunkt.
+3. Scrollen Sie nach unten zu **Übergabeeinstellungen** und wählen Sie **Cognigy Live Agent** aus der Liste aus.
+4. Gehen Sie zum Abschnitt **Copilot**.
+5. Wählen Sie im Feld **Copilot Config** eine Konfiguration aus, die Sie kürzlich über [API](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) erstellt haben.
+6. Klicken Sie auf **Speichern**.
+7. Gehen Sie in Live Agent zu **Profileinstellungen > AI Copilot** und wählen Sie **AI Copilot Workspace aktivieren** aus. Alternativ können Sie den Arbeitsbereich für alle menschlichen Agenten in Ihrem Projekt aktivieren. Wechseln Sie dazu zu **Einstellungen > Kontoeinstellungen > AI Copilot-Arbeitsbereich**, wählen Sie **AI Copilot-Arbeitsbereich aktivieren** aus und klicken Sie dann auf **Einstellungen aktualisieren**.
 
-The Endpoint setup is completed.
+Die Einrichtung des Endpunkts ist abgeschlossen.
 
-## Test AI Copilot Workspace
+## AI Copilot Workspace testen
 
-To test AI Copilot, follow these steps:
+Gehen Sie folgendermaßen vor, um AI Copilot zu testen:
 
-1. Start a Webchat session.
-2. Complete the handover process to Live Agent.
-3. Once the handover is complete, send a message as an Agent.
-4. After that, send a message as the user in Webchat.
+1. Starten Sie eine Webchat-Sitzung.
+2. Schließen Sie den Übergabevorgang an Live Agent ab.
+3. Sobald die Übergabe abgeschlossen ist, senden Sie eine Nachricht als Agent.
+4. Senden Sie danach eine Nachricht als Benutzer im Webchat.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat.png" width="50%" />
 </figure>
 
-Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand.
+Sobald der menschliche Agent diese Nachricht erhält, hängt das Testverhalten davon ab, wie Sie den Endpunkt zuvor konfiguriert haben.
 
-This Workspace is accessible from the right side of the conversation chat.
+Dieser Arbeitsbereich ist über die rechte Seite des Konversations-Chats zugänglich.
       
 <figure>
  <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-workspace.png" width="90%" />
 </figure>
 
-If the testing is successful, the AI Copilot setup is complete.
+Wenn der Test erfolgreich ist, ist das AI Copilot-Setup abgeschlossen.
 
-## More Information 
+## Mehr Informationen 
 
-- [AI Copilot Overview](../../ai-copilot/overview.md)
-- [Getting started with AI Copilot](../../ai-copilot/getting-started.md)
+- [KI-Copilot-Übersicht](.. /.. /ai-copilot/overview.md)
+- [Erste Schritte mit AI Copilot](.. /.. /ai-copilot/getting-started.md)

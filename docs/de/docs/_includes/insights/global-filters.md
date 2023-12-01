@@ -1,1 +1,1 @@
-Charts display data based on the [global filter](https://docs.cognigy.com/insights/global-filter/) settings.
+In Diagrammen werden Daten basierend auf den Einstellungen für [globaler Filter](https://docs.cognigy.com/insights/global-filter/) angezeigt.

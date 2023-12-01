@@ -1,99 +1,99 @@
 ---
-title: "Data Protection and Analytics" 
-slug: "data-protection-and-analytics" 
-description: "The Data Protection & Analytics section in Cognigy Endpoints provides control over analytics and system logging. It allows you to customize the handling of contact data creation and storage, analytics data collection, and sensitive data masking to ensure comprehensive data protection."
-hidden: false 
+Titel: "Datenschutz und Analytik" 
+Slug: "Datenschutz und Analytik" 
+Beschreibung: "Der Abschnitt "Datenschutz und Analyse" in Cognigy Endpoints bietet Kontrolle über Analysen und Systemprotokollierung. Es ermöglicht Ihnen, die Handhabung der Erstellung und Speicherung von Kontaktdaten, die Erfassung von Analysedaten und die Maskierung sensibler Daten anzupassen, um einen umfassenden Datenschutz zu gewährleisten."
+ausgeblendet: false 
 ---
 
-# Data Protection & Analytics
+# Datenschutz & Analytik
 
-The **Data Protection & Analytics** section is all about analytics and system logging. Here you can toggle whether you want to create and store data about contacts and whether you want to collect analytics data for the Endpoint. If you choose to collect data, you can also configure whether you are masking sensitive data or not.
+Im Abschnitt **Datenschutz & Analyse** dreht sich alles um Analysen und Systemprotokollierung. Hier können Sie umschalten, ob Sie Daten über Kontakte erstellen und speichern möchten und ob Sie Analysedaten für den Endpunkt sammeln möchten. Wenn Sie sich für das Sammeln von Daten entscheiden, können Sie auch konfigurieren, ob Sie vertrauliche Daten maskieren oder nicht.
 
-## Contact Profiles
+## Kontaktprofil
 
-This setting enables the collection of individual contact profiles to store persisted user data across sessions.
+Diese Einstellung ermöglicht die Erfassung einzelner Kontaktprofile, um persistente Benutzerdaten sitzungsübergreifend zu speichern.
 
-## Collect Analytics
+## Sammeln von Analysen
 
-Enable the collection of Analytics data for this endpoint.
+Aktivieren Sie die Erfassung von Analytics-Daten für diesen Endpunkt.
 
-### Store Extensive Data Payloads in Analytics
+### Umfangreiche Datennutzlasten in Analytics speichern
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /release-notes/4.60.md)
 
-This setting applies only to the [Voice Gateway](cognigy-vg.md) Endpoint
-and can be activated if the [Collect Analytics](#collect-analytics) toggle is turned on.
+Diese Einstellung gilt nur für den Endpunkt [Voice Gateway](cognigy-vg.md)
+und kann aktiviert werden, wenn der Schalter [Analyse erfassen] (#collect-Analyse) aktiviert ist.
 
-When the setting is enabled, all information from the [Voice Gateway event](../../voicegateway/references/events/overview.md) payloads will be stored in the Analytics database and available via OData or the Transcript Explorer in Insights.
+Wenn die Einstellung aktiviert ist, werden alle Informationen aus dem [Voice Gateway-Ereignis](.. /.. /voicegateway/references/events/overview.md) werden in der Analytics-Datenbank gespeichert und sind über OData oder den Transkript-Explorer in Insights verfügbar.
 
-By default, the setting is disabled, and the following fields are not stored:
+Standardmäßig ist die Einstellung deaktiviert, und die folgenden Felder werden nicht gespeichert:
 
-- `trace_id`
-- `account_sid`
-- `application_sid`
-- `call_id`
-- `sip_status`
-- `sip_reason`
-- `originating_sip_ip`
-- `local_sip_address`
-- `service_provider_sid`
-- `fs_sip_address`
-- `api_base_url`
-- `originating_sip_trunk_name`
+- 'trace_id'
+- 'account_sid'
+- 'application_sid'
+- 'call_id'
+- 'sip_status'
+- 'sip_reason'
+- 'originating_sip_ip'
+- 'local_sip_address'
+- 'service_provider_sid'
+- 'fs_sip_address'
+- 'api_base_url'
+- 'originating_sip_trunk_name'
 
-## Mask IP Address
+## IP-Adresse maskieren
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.53-blue.svg)] (.. /.. /release-notes/4.53.md)
 
-Masks IP addresses in the analytics and input object when you use `{{ "{{ input.ip }}" }}` or `{{ "{{ ci.ip }}" }}` in the Say Node or  `ci.ip` or `input.ip` in the Code Node. If the user input contains an IP address and the text, Cognigy will only mask the IP address while leaving the rest unmasked. When enabled, the setting replaces the `IP` of user inputs with asterisks in both the analytics data and the input object.
-The IP addresses will not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md) and [Insights](../../insights/cognigy-insights.md).
+Maskiert IP-Adressen im Analyse- und Eingabeobjekt, wenn Sie "{{ "{{ input.ip }}" }}' oder "{{ "{{ ci.ip }}" }}' im Say-Knoten oder "ci.ip" oder "input.ip" im Codeknoten verwenden. Wenn die Benutzereingabe eine IP-Adresse und den Text enthält, maskiert Cognigy nur die IP-Adresse und lässt den Rest unmaskiert. Wenn diese Option aktiviert ist, wird die "IP" von Benutzereingaben sowohl in den Analysedaten als auch im Eingabeobjekt durch Sternchen ersetzt.
+Die IP-Adressen sind nicht über [Cognigy OData Analytics Endpoint](.. /tools/analytics/odata-analytics-endpoint.md) und [Insights](.. /.. /insights/cognigy-insights.md).
 
-## Mask Sensitive Analytics
+## Sensible Analysen maskieren
 
-Masks sensitive information in analytics. Specifically, it replaces `inputText`, `inputData`, `userLanguageText`, and the `IP` of user inputs with asterisks in the analytics data. If this feature is used within an Endpoint, the [Intent Trainer](../resources/tweak/intent-trainer.md) can't be used, as Cognigy will not store the original text of the user. The individual records will also not be available through [Cognigy OData Analytics Endpoint](../tools/analytics/odata-analytics-endpoint.md).
+Maskiert vertrauliche Informationen in Analysen. Insbesondere werden "inputText", "inputData", "userLanguageText" und die "IP" von Benutzereingaben in den Analysedaten durch Sternchen ersetzt. Wenn diese Funktion innerhalb eines Endpunkts verwendet wird, wird der [Intent Trainer](.. /resources/tweak/intent-trainer.md) kann nicht verwendet werden, da Cognigy den Originaltext des Benutzers nicht speichert. Die einzelnen Datensätze sind auch nicht über [Cognigy OData Analytics Endpoint](.. /tools/analytics/odata-analytics-endpoint.md).
 
-### Ignore specific fields
+### Bestimmte Felder ignorieren
 
-In order to disable logging of specific analytic fields, one can access and manipulate them within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) using the `analyticsdata` variable:
+Um die Protokollierung bestimmter Analysefelder zu deaktivieren, kann man innerhalb eines [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) mit der Variablen 'analyticsdata' darauf zugreifen und sie manipulieren:
 
-```js
-analyticsdata.text = "overwritten text";
-delete analyticsdata.data.token;
-```
+'''js
+analyticsdata.text = "überschriebener Text";
+analyticsdata.data.token löschen;
+'''
 
-In this example, the token will be deleted from the analytics data before it's written to the database.
+In diesem Beispiel wird das Token aus den Analysedaten gelöscht, bevor es in die Datenbank geschrieben wird.
 
-## Mask Sensitive Logging
+## Maskensensitive Protokollierung
 
-Masks potential sensitive information in system logs produced by the underlying infrastructure. This will also include the logs page within our UI. Here is an example of a log which gets produced when a new message arrives in our system:
+Maskiert potenziell vertrauliche Informationen in Systemprotokollen, die von der zugrunde liegenden Infrastruktur erstellt werden. Dazu gehört auch die Protokollseite in unserer Benutzeroberfläche. Hier ist ein Beispiel für ein Protokoll, das erstellt wird, wenn eine neue Nachricht in unserem System eintrifft:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5c5ee41-log.png" width="100%" />
 </figure>
 
-The text could contain the name of the user, his location or a credit card number. Once the masking was enabled, all fields which could contain information from the user will be hidden and replaced as you can see in the following figure:
+Der Text kann den Namen des Benutzers, seinen Standort oder eine Kreditkartennummer enthalten. Sobald die Maskierung aktiviert wurde, werden alle Felder, die Informationen vom Benutzer enthalten könnten, ausgeblendet und ersetzt, wie Sie in der folgenden Abbildung sehen können:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/53c0057-hidden-log.png" width="100%" />
 </figure>
 
-We will replace the following properties:
+Wir ersetzen die folgenden Eigenschaften:
 - userId
-- text
-- data
+-Text
+-Daten
 
-## Collect Conversations
+## Konversationen sammeln
 
-Defines whether we should store conversation histories in contact profiles for end-users.
+Definiert, ob Konversationsverläufe in Kontaktprofilen für Endbenutzer gespeichert werden sollen.
 
-## External Analytics Services
+## Externe Analysedienste
 
-You can connect your endpoint with additional analytics providers. An account and API key with an external analytics service provider is required. Note when using external Analytics providers API quota limits, additional terms, conditions and/or charges may apply.
+Sie können Ihren Endpunkt mit zusätzlichen Analyseanbietern verbinden. Ein Konto und ein API-Schlüssel bei einem externen Analysedienstleister sind erforderlich. Hinweis: Bei der Verwendung von API-Kontingentgrenzen für externe Analytics-Anbieter können zusätzliche Bedingungen und/oder Gebühren anfallen.
 
-### Available External Analytics Services:
+### Verfügbare externe Analysedienste:
 ##### Chatbase
-We have an integration with Chatbase. To get more information about Chatbase, follow [this](http://www.chatbase.com) link.
+Wir haben eine Integration mit Chatbase. Um weitere Informationen über Chatbase zu erhalten, folgen Sie [diesem](http://www.chatbase.com) Link.
 
 ##### Dashbot
-Cognigy.AI provides an extensive, channel-specific integration with [Dashbot](https://www.dashbot.io).
-Go to our [HelpCenter Dashbot Page](https://support.cognigy.com/hc/en-us/articles/360016311379) for a detailed description of how to set up your Dashbot integration.
+Cognigy.AI bietet eine umfangreiche, kanalspezifische Integration mit [Dashbot](https://www.dashbot.io).
+Auf unserer [HelpCenter-Dashbot-Seite](https://support.cognigy.com/hc/en-us/articles/360016311379) finden Sie eine detaillierte Beschreibung, wie Sie Ihre Dashbot-Integration einrichten können.

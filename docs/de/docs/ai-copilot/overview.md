@@ -1,38 +1,37 @@
 ---
-title: "AI Copilot"
-slug: "overview"
-hidden: false
+Titel: "AI Copilot"
+Slug: "Übersicht"
+ausgeblendet: false
 ---
 
-# AI Copilot
+# KI-Copilot
 
 {! _includes/agent-assist/pricing.md !}
 
-_Cognigy AI Copilot_ offers a variety of advanced features that empower agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's agent desktop, it enhances the overall efficiency of your contact center.
+_Cognigy KI-Copilot_ bietet eine Vielzahl fortschrittlicher Funktionen, die es Agenten ermöglichen, einen schnelleren und genaueren Kundensupport zu bieten. Der Arbeitsbereich ist vollständig anpassbar mit Widgets, die die relevantesten Informationen für jeden Chat- und Sprachanwendungsfall anzeigen. Wenn es in den Agenten-Desktop Ihres Contact Centers eingebettet ist, steigert es die Gesamteffizienz Ihres Contact Centers.
 
-## Key features
+## Hauptmerkmale
 
-- Displays completely interactive micro applications in a customizable grid.
-- Adds rich-media capabilities to any contact center stack.
-- Stand-alone or integrated into existing contact center agent desktops.
-- Shows any type of information like PDFs or even interactive 3D animations.
-- Access to 100% of Cognigy.AI features, including Extensions and extensive logic.
+- Zeigt vollständig interaktive Mikroanwendungen in einem anpassbaren Raster an.
+- Fügt Rich-Media-Funktionen zu jedem Contact-Center-Stack hinzu.
+- Eigenständig oder integriert in bestehende Contact-Center-Agenten-Desktops.
+- Zeigt jede Art von Informationen wie PDFs oder sogar interaktive 3D-Animationen an.
+- Zugriff auf 100 % Cognigy.AI Funktionen, einschließlich Erweiterungen und umfangreicher Logik.
 
-## AI Copilot: Standalone or Embedded
+## KI-Copilot: Eigenständig oder eingebettet
 
-You can use the AI Copilot Workspace in two different ways:
+Sie können den AI Copilot-Arbeitsbereich auf zwei verschiedene Arten verwenden:
 
-- **Standalone application**. When a conversation is handed over to a human agent, they receive a link in the conversation chat that allows them to access the workspace. This workspace opens in a new browser tab.
-- **Embedded application**. When a conversation is handed over to a human agent, the workspace is displayed alongside the conversation chat within an iFrame in the existing interface.
+- **Eigenständige Anwendung**. Wenn eine Konversation an einen menschlichen Agenten übergeben wird, erhält dieser einen Link im Konversationschat, über den er auf den Arbeitsbereich zugreifen kann. Dieser Arbeitsbereich wird in einem neuen Browser-Tab geöffnet.
+- **Eingebettete Anwendung**. Wenn eine Konversation an einen menschlichen Agenten übergeben wird, wird der Arbeitsbereich neben dem Konversations-Chat in einem iFrame in der vorhandenen Benutzeroberfläche angezeigt.
 
-## More Information
+## Mehr Informationen
 
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](voice/voice-overview.md)
-- [AI Copilot for Chat](chat.md)
-- [Integration with Contact Centers](contact-center-integration.md)
-- [AI Copilot in Live Agent](../live-agent/assistants/ai-copilot.md)
-
+- [Erste Schritte mit AI Copilot](getting-started.md)
+- [Konfiguration des KI-Copiloten](configuration.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](embedding.md)
+- [KI-Copilot für Sprache](voice/voice-overview.md)
+- [KI-Copilot für Chat](chat.md)
+- [Integration mit Contact Centern](contact-center-integration.md)
+- [KI-Copilot im Live-Agenten](.. /live-agent/assistants/ai-copilot.md)

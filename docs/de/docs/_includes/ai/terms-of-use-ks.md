@@ -1,4 +1,3 @@
-!!! note
-    - You are subject to the terms of the Generative AI model providers to which you are connecting. Cognigy cannot take responsibility for your use of third-party services, systems, or materials.
-    - If you are an existing Cognigy customer, the performance timelines (SLA) specified in your contract do not apply to the trial version of Knowledge AI.
-
+!!! Anmerkung
+    - Sie unterliegen den Bedingungen der Anbieter von generativen KI-Modellen, mit denen Sie sich verbinden. Cognigy übernimmt keine Verantwortung für Ihre Nutzung von Diensten, Systemen oder Materialien Dritter.
+    - Wenn Sie ein bestehender Kunde von Cognigy sind, gelten die in Ihrem Vertrag festgelegten Leistungsfristen (SLA) nicht für die Testversion von Knowledge AI.

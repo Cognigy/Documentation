@@ -1,102 +1,102 @@
 ---
- title: "Cognigy Live Agent" 
- slug: "pre-4.30" 
- hidden: false 
+ Titel: "Cognigy Live Agent" 
+ Schnecke: "vor 4.30" 
+ ausgeblendet: false 
 ---
-# Cognigy Live Agent
+# Cognigy Live-Agent
 
 ## 4.29.0
 
-**Released** July 7th, 2022
+**Veröffentlicht** 7. Juli 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by adding support to remember the first accessed URL path and redirecting to it after log in successfully
+- Verbessert, indem Unterstützung hinzugefügt wurde, um sich den ersten URL-Pfad zu merken und nach erfolgreicher Anmeldung darauf umzuleiten
 
-- Improved by removing resolve functionality from the mute operation. Previously, whenever an agent would mute a conversation, the conversation would be automatically resolved
+- Verbessert, indem die Auflösungsfunktion aus dem Stummschaltungsvorgang entfernt wurde. Bisher wurde jedes Mal, wenn ein Agent eine Konversation stummschaltete, die Konversation automatisch aufgelöst
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where the preview of conversation messages for adaptive cards were not displayed properly
+- Es wurde ein Fehler behoben, bei dem die Vorschau von Konversationsnachrichten für adaptive Karten nicht korrekt angezeigt wurde
 
 ## 4.28.0
 
-**Released** June 23rd, 2022
+**Veröffentlicht** 23. Juni 2022
 
-### Features
+### Eigenschaften
 
-- Add the new supervisor dashboard under the "Reports" section, including information about agents' availability and conversation statuses.
+- Fügen Sie das neue Supervisor-Dashboard im Abschnitt "Berichte" hinzu, einschließlich Informationen über die Verfügbarkeit und den Konversationsstatus der Agenten.
 
-- Add the new notification center that makes it quick to access the latest notifications.
+- Fügen Sie die neue Mitteilungszentrale hinzu, mit der Sie schnell auf die neuesten Benachrichtigungen zugreifen können.
 
-### Improvements
+### Verbesserungen
 
-- Improved by adding the possibility to reply to conversations on behalf of the user when it has the agent inject option enabled
+- Verbessert durch Hinzufügen der Möglichkeit, im Namen des Benutzers auf Konversationen zu antworten, wenn die Option zum Einfügen des Agenten aktiviert ist
 
 ## 4.27.0
 
-**Released** June 7th, 2022
+**Veröffentlicht** 7. Juni 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved the UI for agent assist by reducing the structured content messages and simple messages to 70% of their original size, changed the forward arrow icon and added functionality to forward the agent assist message by clicking the whole agent assist message container. Also augmented the size of non-forwardable informational elements like Lists and Text with buttons
+- Die Benutzeroberfläche für den Agentenassistenten wurde verbessert, indem die Nachrichten mit strukturiertem Inhalt und einfache Nachrichten auf 70 % ihrer ursprünglichen Größe verkleinert wurden, das Vorwärtspfeilsymbol geändert und Funktionen zum Weiterleiten der Agentenhilfenachricht hinzugefügt wurden, indem Sie auf den gesamten Nachrichtencontainer für die Agentenhilfe klicken. Außerdem wurde die Größe von nicht weiterleitenden Informationselementen wie Listen und Text mit Schaltflächen erhöht
 
-- Improved by adding the possibility to render adaptive card messages in Live Agent as structured content and as agent assist messages, non-forwardable adaptive cards are shown in the original size, so they can serve as informational elements
+- Verbessert durch die Möglichkeit, adaptive Kartennachrichten in Live Agent als strukturierten Inhalt und als Agentenunterstützungsnachrichten zu rendern, werden nicht weiterleitende adaptive Karten in Originalgröße angezeigt, so dass sie als Informationselemente dienen können
 
 ## 4.26.0
 
-**Released** May 24th, 2022
+**Veröffentlicht** 24. Mai 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by adding the capability to upload doc/docx files by agents and contacts
+- Verbessert durch Hinzufügen der Möglichkeit, doc/docx-Dateien von Agenten und Kontakten hochzuladen
 
-- Improved by including the Cognigy Session ID field in Live Agent as part of the conversation information and also as a filterable field for conversations
+- Verbessert durch die Aufnahme des Cognigy-Sitzungs-ID-Felds in Live Agent als Teil der Konversationsinformationen und auch als filterbares Feld für Konversationen
 
-- Improved by adding support for trusting self-signed CA certificates and client certificates in the requests to Cognigy.AI. Have a look at the Helm Values SSL section
+- Verbessert, indem Unterstützung für das Vertrauen in selbstsignierte CA-Zertifikate und Clientzertifikate in den Anforderungen an Cognigy.AI hinzugefügt wurde. Werfen Sie einen Blick auf den Abschnitt Helm Values SSL
 
-- Improved by removing UI parts related to custom attributes as they were not used
+- Verbessert, indem UI-Teile, die sich auf benutzerdefinierte Attribute beziehen, entfernt wurden, da sie nicht verwendet wurden
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where the agent will not show its online status in the contact actions dropdown
+- Es wurde ein Fehler behoben, durch den der Agent seinen Online-Status nicht in der Dropdown-Liste "Kontaktaktionen" anzeigte.
 
-- Fixed a bug where the website favicon didn't change, and the notification sound was not played while receiving new messages
+- Es wurde ein Fehler behoben, bei dem sich das Website-Favicon nicht änderte und der Benachrichtigungston nicht abgespielt wurde, wenn neue Nachrichten empfangen wurden
 
-- Fixed a bug where Cognigy.AI multi-tenant users were not able to log in into the proper Cognigy.AI organization using OAuth login
+- Es wurde ein Fehler behoben, bei dem sich Cognigy.AI mehrinstanzenfähige Benutzer nicht mit der OAuth-Anmeldung bei der richtigen Cognigy.AI Organisation anmelden konnten.
 
-- Fixed a bug where agents were not notified about conversation assignment the first time the conversation was created and auto-assigned to them
+- Es wurde ein Fehler behoben, bei dem Agenten nicht über die Konversationszuweisung benachrichtigt wurden, wenn die Konversation zum ersten Mal erstellt und ihnen automatisch zugewiesen wurde.
 
 ## 4.25.0
 
-**Released** May 10th, 2022
+**Veröffentlicht** 10. Mai 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by fixing security vulnerability CVE-2022-28391 affecting the OData service
-- Improved by adding optional antivirus scan with ClamAV on file uploads
-- Improved by adding the section "Previous Conversations" to the conversations view a right panel to allow agents to see the rest of the conversations with the same contact
+- Verbessert durch Behebung der Sicherheitslücke CVE-2022-28391, die den OData-Dienst betrifft
+- Verbessert durch Hinzufügen eines optionalen Antiviren-Scans mit ClamAV beim Hochladen von Dateien
+- Verbessert, indem der Abschnitt "Vorherige Konversationen" zur Konversationsansicht hinzugefügt wurde, damit Agenten den Rest der Konversationen mit demselben Kontakt sehen können
 
 ## 4.24.0
 
-**Released** May 2nd, 2022
+**Veröffentlicht** 2. Mai 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by polishing contact info section styling for displaying Cognigy.AI contact profile fields
-- Improved by changing the color of the agent messages to a slightly lighter blue to differentiate them from the Cognigy.AI bot messages
-- Improved by rendering Cognigy.AI contact profile data in the conversation view under the contact info section.
-  - A new value called `COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL` must be added to the Helm values.yaml file to make it work. [More information here]({{config.site_url}}live-agent/installation/helm-values/helm-values/#urls).
-- Improved by removing functionality related to adding agents as now Cognigy.AI is where the user management happens
-- Improved by removing the ability to reopen resolved conversations at UI and API level
-- Improved by adding Cognigy Logo for bot messages
-- Ability to send multiple attachments from the agent dashboard
+- Verbessert, indem das Styling des Kontaktinfo-Abschnitts für die Anzeige Cognigy.AI Kontaktprofilfelder verbessert wurde
+- Verbessert, indem die Farbe der Agentennachrichten in ein etwas helleres Blau geändert wurde, um sie von den Cognigy.AI Bot-Nachrichten zu unterscheiden
+- Verbessert durch das Rendern Cognigy.AI Kontaktprofildaten in der Konversationsansicht unter dem Abschnitt "Kontaktinformationen".
+  - Ein neuer Wert namens "COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL" muss der Datei Helm values.yaml hinzugefügt werden, damit es funktioniert. [Mehr Informationen hier] ({{config.site_url}}live-agent/installation/helm-values/helm-values/#urls).
+- Verbessert, indem die Funktionalität im Zusammenhang mit dem Hinzufügen von Agenten entfernt wurde, da jetzt Cognigy.AI die Benutzerverwaltung stattfindet
+- Verbessert, indem die Möglichkeit entfernt wurde, gelöste Konversationen auf UI- und API-Ebene erneut zu öffnen
+- Verbessert durch Hinzufügen des Cognigy-Logos für Bot-Nachrichten
+- Möglichkeit, mehrere Anhänge über das Agenten-Dashboard zu senden
 
 ## 4.23.0
 
-### Improvements
+### Verbesserungen
 
-- Improved by having proper OAuth error pages design with links to receive support in the Live Agent documentation
-- Improved by extending Cognigy.AI OAuth handler logic to update user fields while doing log in when they are changed in Cognigy.AI, such as the username
-- Improved by hiding inbox setting allow messages after a conversation is resolved as it was not working as expected
-- Improved by hiding conversation section "previous conversations" as it was not working as expected
+- Verbessert durch ein korrektes Design von OAuth-Fehlerseiten mit Links zum Erhalt von Support in der Live Agent-Dokumentation
+- Verbessert durch Erweiterung Cognigy.AI OAuth-Handler-Logik, um Benutzerfelder während der Anmeldung zu aktualisieren, wenn sie in Cognigy.AI geändert werden, z. B. der Benutzername
+- Verbessert durch das Ausblenden der Posteingangseinstellung, die Nachrichten nach der Auflösung einer Konversation zulässt, da sie nicht wie erwartet funktioniert hat
+- Verbessert, indem der Konversationsabschnitt "vorherige Konversationen" ausgeblendet wurde, da er nicht wie erwartet funktionierte

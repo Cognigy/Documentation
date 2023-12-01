@@ -1,120 +1,102 @@
 ---
- title: "Analytics Concepts" 
- slug: "analytics-concepts" 
- hidden: false 
+ Titel: "Analytics-Konzepte" 
+ Slug: "Analytics-Konzepte" 
+ ausgeblendet: false 
 ---
-# Analytics Concepts
+# Analytics-Konzepte
 
-## Data Collections
+## Datensammlungen<div class="divider"></div>Analytics-Daten werden aus Konversationen mit virtuellen Agenten in Cognigy.AI erstellt und sind aus fünf verschiedenen Sammlungen verfügbar:
 
-<div class="divider"></div>
+1. Eingänge
+ 2. Chat-Verlauf
+ 3. Schritte
+ 4. Ausgeführte Schritte
+ 5. Sitzungen
 
-Analytics data is created from conversations with virtual agents in Cognigy.AI and is available from five distinct collections:
+Der Zugriff auf diese Daten erfolgt über eine Verbindung mit dem [OData Analytics-Endpunkt]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/). 
 
- 1. Inputs
- 2. Chat History
- 3. Steps
- 4. Executed Steps
- 5. Sessions
+### Eingänge
 
-This data is accessed by connecting to the [OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/). 
+Diese Auflistung besteht aus einem Eintrag pro Benutzereingabe. Es enthält detaillierte Daten über die Eingabenachricht, wie z. B. NLU-Ergebnisse (Intents & Slots), erreichte Ziele und mehr. Die Eingabeauflistung unterscheidet sich von den anderen 4 Auflistungen, da sie von der Ablauflogik mithilfe der Knoten [Overwrite Analytics]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) oder [Code]({{config.site_url}}ai/flow-nodes/code/code/) angepasst werden kann. Dieser Vorgang wird im Folgenden erläutert.
 
-### Inputs
+### Chat-Verlauf
 
-This collection consists of one entry per user input. It contains detailed data about the input message such as NLU results (intents & slots), goals achieved and more. The inputs collection is different from the other 4 collections as it can be adjusted by the flow logic using the [Overwrite Analytics]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) or [Code]({{config.site_url}}ai/flow-nodes/code/code/) nodes. This process is explained below.
+Diese Sammlung enthält einen Datensatz pro Benutzereingabe, einen Datensatz pro virtueller Agentenausgabe und einen Datensatz pro menschlicher Agenteneingabe. Der Chatverlauf wird sofort geschrieben, wenn die Nachricht von der jeweiligen Quelle eintrifft. Dieser Datensatz wird häufig zum Generieren von Gesprächsprotokollen verwendet.
 
+### Schritte
 
-### Chat History
+Diese Sammlung enthält einen Datensatz pro Analyseschritt, der in einem Flow vorhanden ist. Bei einem Schritt kann es sich entweder um einen Flow-Knoten oder eine Absicht handeln. Sowohl [Question]({{config.site_url}}ai/flow-nodes/message/question/) Nodes als auch [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) werden automatisch mit einem angehängten Analyseschritt erstellt, aber jeder andere Flow-Knoten kann auch als Schritt erstellt werden. Die Hauptfunktion dieses Datensatzes besteht darin, als Referenzliste von Entitäts-IDs zu fungieren, um die aktuelle Bezeichnung jedes Analyseschritts für die Abwärtskompatibilität von Datensätzen abzurufen, da die Bezeichnung des Analyseschritts jederzeit von Cognigy.AI aktualisiert werden kann.
 
-This collection contains one record per user input, one record per virtual agent output and one record per human agent input. Chat History records are written immediately whenever the message from the respective source arrives. This record is commonly used for generating conversation transcripts.
+### Ausgeführte Schritte
 
-### Steps
+Diese Sammlung enthält einen Datensatz pro ausgeführtem Schritt aus jeder Sitzung, die in den Datensätzen vorhanden ist. Diese Auflistung kann verwendet werden, um den Schritt zu identifizieren, der vor dem aktuellen Schritt aufgetreten ist, da sie auch eine Referenz-ID für den vorherigen Schritt enthält.
 
-This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question]({{config.site_url}}ai/flow-nodes/message/question/) Nodes and [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) are automatically created with an attached analytics step but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
+### Sitzungen
 
+Diese Auflistung enthält einen Datensatz pro Sitzung. Der Hauptzweck dieses Datensatzes besteht darin, eine Liste der geordneten Schritte zu liefern, die jede einzelne Sitzung ausgeführt hat. 
 
-### Executed Steps
-
-This collection contains one record per executed step from every session that exists in the records. This collection can be used to identify the step that occurred prior to the current step as it also contains a reference id for the previous step.
-
-### Sessions
-
-This collection contains one record per session. The main purpose of this record is to deliver a list of ordered steps that each individual session has taken. 
-
-
-## Analytics Data Flow
-
-<div class="divider"></div>
-
-Analytics data is generated through the whole lifecycle of an input message being processed by Cognigy.AI. The diagram below shows when each type of data is generated and written to the respective collection.
+## Analytics-Datenfluss<div class="divider"></div>Analytics-Daten werden während des gesamten Lebenszyklus einer Eingabenachricht generiert, die von Cognigy.AI verarbeitet wird. Das folgende Diagramm zeigt, wann die einzelnen Datentypen generiert und in die jeweilige Sammlung geschrieben werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/analytics-data-flow.png" width="100%" />
 </figure>
 
-1. When the input arrives (but after the NLU), the analytics record is initialized with the following data:
+1. Wenn die Eingabe eintrifft (aber nach der NLU), wird der Analysedatensatz mit den folgenden Daten initialisiert:
 
-	```JavaScript
+'''JavaScript
 	{
 		projectId,
 		projectName,
 		contactId,
 		sessionId,
 		inputId,
-		state,
-		mode,
-		organisation,
+		Zustand
+		Modus
+		Organisation
 		userType,
-		channel,
+		Kanal
 		flowReferenceId,
 		flowName,
-		entrypoint,
+		Einstiegspunkt,
 		localeReferenceId,
 		flowLanguage,
 		inputText,
 		inputData,
-		intent,
+		Absicht
 		intentScore,
 		intentFlow,
-		slots,
-		understood,
-		timestamp
+		Schlitze
+		verstanden
+		Zeitstempel
 	}
-	```
+	'''
 
-2. While a Flow is processing the Input, the Flow can overwrite the initialized data. This can be done by using the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) or [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) 
+2. Während ein Flow die Eingabe verarbeitet, kann der Flow die initialisierten Daten überschreiben. Dies kann mithilfe von [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) oder [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) 
 
-3. When the Flow Execution finished, Cognigy.AI adds final analytics information (such as execution time) to the Analytics Record before storing it to the database
+3. Wenn die Flow-Ausführung abgeschlossen ist, fügt Cognigy.AI dem Analysedatensatz die endgültigen Analyseinformationen (z. B. Ausführungszeit) hinzu, bevor er in der Datenbank gespeichert wird
 
-## Analytics Steps
+## Analytics-Schritte<div class="divider"></div>Analytics-Schritte werden erstellt Cognigy.AI um die Sitzungspfade zu verfolgen, die Benutzer verwenden, wenn sie mit dem virtuellen Agenten sprechen.
 
-<div class="divider"></div>
+### Erstellen eines Schritts
 
-Analytics Steps are created in Cognigy.AI to track the session paths that users are taking when talking to the virtual agent.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.2.0-blue.svg)] ({{config.site_url}})
 
-### Creating a Step
+Eine Schrittentität ist entweder ein [Flow-Knoten]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) oder ein [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/). Jeder Entitätstyp kann über das Einstellungsmenü der jeweiligen Entität als Schritt zugewiesen werden. 
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
+#### Schritte des Flow-Knotens
 
-A step entity is either a [Flow Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) or an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/). Each type of entity can be assigned as a step via the settings menu for the respective entity. 
-
-#### Flow Node Steps
-
-A flow node is created as an analytics step by entering a text label in the "Analytics Step" field within the "settings" dropdown menu of the node settings:
+Ein Flow-Knoten wird als Analyseschritt erstellt, indem eine Textbeschriftung in das Feld "Analyseschritt" im Dropdown-Menü "Einstellungen" der Knoteneinstellungen eingegeben wird:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/b9e42cf-StepFlow.PNG" width="100%" />
 </figure>
 
-#### Intent Steps
+#### Intent-Schritte
 
-An intent is created as an analytics step by entering a text label in the "Analytics Step" field within the "Advanced" dropdown menu of the intent settings.
+Ein Intent wird als Analytics-Schritt erstellt, indem eine Textbeschriftung in das Feld "Analytics-Schritt" im Dropdown-Menü "Erweitert" der Intent-Einstellungen eingegeben wird.
 
-!!! warning "Step Creation in the Odata Records"
-    A step will only exist in the OData records after a conversation has triggered it at least once.
-
-
-<figure>
+!!! Warnung "Schritterstellung in den OData-Datensätzen"
+    Ein Schritt ist nur dann in den OData-Datensätzen vorhanden, wenn er mindestens einmal durch eine Konversation ausgelöst wurde.<figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/0d04fd1-IntentStep.PNG" width="100%" />
 </figure>
 

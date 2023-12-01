@@ -1,45 +1,43 @@
 ---
-title: "Organization Setup" 
-slug: "live-agent-setup-org" 
-hidden: false 
+Titel: "Organisations-Setup" 
+Slug: "live-agent-setup-org" 
+ausgeblendet: false 
 ---
 
-# Set up Live Agent for your Organization
+# Richten Sie den Live-Agenten für Ihr Unternehmen ein
 
-To set up the Live Agent Account for your organization, follow these steps:
+Gehen Sie folgendermaßen vor, um das Live Agent-Konto für Ihre Organisation einzurichten:
 
-1. Open the Cognigy.AI interface.
-2. In the upper-right corner, click the **User Menu**.
-3. Select the **Organisation Details** from the menu. 
-4. Click **Set up Live Agent**.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie in der oberen rechten Ecke auf das **Benutzermenü**.
+3. Wählen Sie die **Organisationsdetails** aus dem Menü aus. 
+4. Klicken Sie auf **Live Agent einrichten**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/organisation-wide-live-agent-setup-button.png" width="100%"/>
 </figure>
 
-When you set up Live Agent for your Organisation, you can [create your Project Inbox for Live Agent](live-agent-setup-inbox.md).
+Wenn Sie Live Agent für Ihre Organisation einrichten, können Sie [Ihren Projekteingang für Live Agent erstellen](live-agent-setup-inbox.md).
 
-## Troubleshooting
+## Fehlerbehebung
 
-If the **Set up Live Agent** button is disabled, it could be for the following reasons:
+Wenn die Schaltfläche **Live Agent einrichten** deaktiviert ist, kann dies folgende Gründe haben:
 
-- You do not have the Cognigy Live Agent feature enabled. 
-- You do not have permissions to create a Live Agent account. 
-- There is already a Live Agent account created for your organization.
+- Sie haben die Cognigy Live Agent-Funktion nicht aktiviert. 
+- Sie sind nicht berechtigt, ein Live Agent-Konto zu erstellen. 
+- Es wurde bereits ein Live Agent-Konto für Ihre Organisation erstellt.
 
-**Example 1**
+**Beispiel 1**
 
-Cognigy Live Agent feature is not enabled. 
+Die Cognigy Live Agent-Funktion ist nicht aktiviert. 
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/organisation-wide-live-agent-not-configured.png" width="100%" />
 </figure>
 
-**Example 2**
+**Beispiel 2**
 
-Live Agent Account is already set up for the Organisation.
-
-<figure>
+Das Live-Agent-Konto ist bereits für die Organisation eingerichtet.<figure>
     <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/organisation-wide-live-agent-successfully-configured.png" width="100%"/>
 </figure>
 

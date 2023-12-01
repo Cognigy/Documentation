@@ -1,7 +1,7 @@
 ---
- title: "MS SQL" 
- slug: "ms-sql" 
- hidden: false 
+ Titel: "MS SQL" 
+ Slug: "MS-SQL" 
+ ausgeblendet: false 
 ---
 # MS SQL
 
@@ -9,50 +9,38 @@
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/run-sql-query.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The SQL Node lets you run queries, transactions or stored procedures on MS-SQL Server.
+## Beschreibung<div class="divider"></div>Mit dem SQL-Knoten können Sie Abfragen, Transaktionen oder gespeicherte Prozeduren auf MS-SQL Server ausführen.
 
-### Operation
+### Bedienung
 ---
-Choose an Operation from the dropdown:
+Wählen Sie einen Vorgang aus der Dropdown-Liste aus:
 
-  * [Run Query]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-query)
-  * [Run Transaction]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-transaction)
-  * [Run Stored Procedure]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-stored-procedure)
+* [Abfrage ausführen]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-query)
+  * [Transaktion ausführen]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-transaction)
+  * [Gespeicherte Prozedur ausführen]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-stored-procedure)
 
-### Connection
+### Verbindung
 ---
-Select or create a new database connection, see [Connections]({{config.site_url}}ai/resources/build/connections/).
+Wählen Sie eine neue Datenbankverbindung aus, oder erstellen Sie eine neue, siehe [Connections]({{config.site_url}}ai/resources/build/connections/).
 
-### Context Store
+### Kontextspeicher
 ---
-The SQL Node executes the configured operation on the database. The query response from the database will be stored in the Context. Specify the store location here.
+Der SQL-Knoten führt den konfigurierten Vorgang für die Datenbank aus. Die Abfrageantwort aus der Datenbank wird im Kontext gespeichert. Geben Sie hier den Standort des Geschäfts an.
 
-## Run Query
-<div class="divider"></div>
+## Abfrage ausführen<div class="divider"></div>Führt eine einzelne SQL-Abfrageanweisung aus. Geben Sie eine gültige SQL-Abfrage in das Feld Abfrage ein.
 
-Runs a single SQL query statement. Enter a valid SQL query in the Query field.
+## Transaktion ausführen<div class="divider"></div>Führt eine Transaktion aus. Geben Sie eine gültige SQL-Transaktionsabfrage in das Feld Abfrage ein. Sie müssen die Felder "BEGIN TRANSACTION" und "Commit" nicht hinzufügen, da dies implizit geschieht. Wenn Sie mit Try / Catch-Blöcken arbeiten und komplexere Transaktionen mit Rollbacks ausführen möchten, sollten Sie stattdessen [Run Query]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-query) verwenden  
 
-## Run Transaction
-<div class="divider"></div>
+## Gespeicherte Prozedur ausführen<div class="divider"></div>Führt eine gespeicherte Prozedur aus. Die gespeicherte Prozedur muss in der Datenbank vorhanden sein, die unter Verbindung angegeben ist.
 
-Runs a transaction. Enter a valid SQL transaction query in the Query field. You do not need to add the "BEGIN TRANSACTION" and "COMMIT" fields, since this will be done implicitly. If you want to work with Try / catch blocks and do more advanced transactions with rollbacks, then you might want to use the [Run Query]({{config.site_url}}ai/flow-nodes/services/ms-sql/#run-query) instead  
-
-## Run Stored Procedure
-<div class="divider"></div>
-
-Runs a stored procedure. The stored procedure must exist in the database specified under Connection.
-
-### Stored Procedure Name
+### Name der gespeicherten Prozedur
 ---
-The name of the stored procedure
+Der Name der gespeicherten Prozedur
 
-### Inputs
+### Eingänge
 ---
-Enter an array of input parameters of your stored procedure as defined in the database. You can forward parameters from the Context to the database, for example. Parameters must be specified in an array of objects that define the input parameter in the following format: `{name,value,type}`
+Geben Sie ein Array von Eingabeparametern der gespeicherten Prozedur ein, wie in der Datenbank definiert. Sie können z.B. Parameter aus dem Context an die Datenbank weiterleiten. Parameter müssen in einem Array von Objekten angegeben werden, die den Eingabeparameter im folgenden Format definieren: '{name,value,type}'
 
-
-### Outputs
+### Ausgänge
 ---
-Enter an array of output parameters of your stored procedure as defined in the database. You can forward parameters from the database to the Context, for example. Parameters must be specified in an array of objects that define the output parameter in the following format: `{name,value,type}`
+Geben Sie ein Array von Ausgabeparametern der gespeicherten Prozedur ein, wie in der Datenbank definiert. Sie können z.B. Parameter aus der Datenbank an den Context weiterleiten. Parameter müssen in einem Array von Objekten angegeben werden, die den Ausgabeparameter im folgenden Format definieren: '{name,value,type}'

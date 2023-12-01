@@ -1,30 +1,30 @@
 ---
-title: "TRANSFER_DIAL_ERROR"
-slug: "TRANSFER_DIAL_ERROR"
-hidden: false
+Titel: "TRANSFER_DIAL_ERROR"
+Schnecke: "TRANSFER_DIAL_ERROR"
+ausgeblendet: false
 ---
 
 # TRANSFER_DIAL_ERROR
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.61-blue.svg)](../../../release-notes/4.61.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.61-blue.svg)] (.. /.. /.. /release-notes/4.61.md)
 
-This event indicates that a call transfer attempt using the `Dial` method resulted in an error or failure. 
+Dieses Ereignis weist darauf hin, dass ein Anrufweiterleitungsversuch mit der "Dial"-Methode zu einem Fehler oder Misserfolg geführt hat. 
 
-The `Dial` method establishes a new, independent call to the transfer destination. However, in this case, the transfer failed due to various reasons, such as the destination being unreachable, the destination line being busy, or network issues.
+Die "Dial"-Methode baut einen neuen, unabhängigen Anruf an das Übertragungsziel auf. In diesem Fall ist die Übertragung jedoch aus verschiedenen Gründen fehlgeschlagen, z. B. weil das Ziel nicht erreichbar ist, die Zielleitung ausgelastet ist oder Netzwerkprobleme vorliegen.
 
-Payload:
+Nutzlast:
 
-```json
+'''json
 {
-  "payload": {
+  "Nutzlast": {
     "call_sid": "48bd7509-5c60-4b49-xxxx-xxxxxxxxxxxx",
-    "direction": "outbound",
+    "direction": "ausgehend",
     "from": "+441xxxxxxxxx",
     "to": "+491xxxxxxxxx",
     "call_id": "fa142b41-d07e-123c-xxxx-xxxxxxxxxxxx",
     "sip_status": 488,
-    "sip_reason": "Not Acceptable Here",
-    "call_status": "failed",
+    "sip_reason": "Hier nicht akzeptabel",
+    "call_status": "fehlgeschlagen",
     "caller_id": "+44xxxxxxxxxx",
     "account_sid": "41f4d1f1-13b2-4c00-xxxx-xxxxxxxxxxxx",
     "trace_id": "bb9c648d913cbffe3480723c632d398d",
@@ -39,9 +39,9 @@ Payload:
     "country": "GB",
     "countryCallingCode": "44",
     "nationalNumber": "23921601xx",
-    "valid": true,
+    "valid": wahr,
     "type": "FIXED_LINE",
     "uri": "tel:+44xxxxxxxxxx"
   }
 }
-```
+'''

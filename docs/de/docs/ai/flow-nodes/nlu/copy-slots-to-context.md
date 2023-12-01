@@ -1,24 +1,22 @@
 ---
- title: "Copy Slots to Context" 
+ title: "Slots in den Kontext kopieren" 
  slug: "copy-slots-to-context" 
- hidden: false 
+ ausgeblendet: false 
 ---
-# Copy Slots to Context
+# Slots in den Kontext kopieren
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/copy-slots-to-context.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The Copy Slots to Context Node is used to store a found Slot in a specific place in the Context.
+## Beschreibung<div class="divider"></div>Der Knoten Slots in Kontext kopieren wird verwendet, um einen gefundenen Slot an einer bestimmten Stelle im Kontext zu speichern.
 
-| Parameter | Type          | Description                                                                                                                                                                                                                                     |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                     |
 |-----------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Key       | CognigyScript | The place in the Context where the found Slot should be stored.                                                                                                                                                                                 |
-| Tag       | CognigyScript | The tag of the Slot that should be stored in the Context if found (e.g a food).                                                                                                                                                                 |
-| Mode      | Select        | Can be either ``simple`` or ``array``. If ``simple`` then only the last found Slot will be stored, and if the mode is ``array`` then all found Slots with the correct tag will be stored as an array.                                           |
-| UseNeg    | Toggle        | If `true`, then only positive Slots will be added to the Context. This means that in the sentence "I don't like pizza", "pizza" will not be stored in the Context because it is negated. If the toggle is `false`, then "pizza" will be stored. |
+| Schlüssel | CognigyScript | Die Stelle im Kontext, an der der gefundene Slot gespeichert werden soll.                                                                                                                                                                                 |
+| Markieren | CognigyScript | Das Tag des Slots, der im Kontext gespeichert werden soll, wenn er gefunden wird (z.B. ein Lebensmittel).                                                                                                                                                                 |
+| Modus | Wählen Sie | Kann entweder ''einfach'' oder ''array'' sein. Wenn ''simple'', dann wird nur der zuletzt gefundene Slot gespeichert, und wenn der Modus ''array'' ist, dann werden alle gefundenen Slots mit dem richtigen Tag als Array gespeichert.                                           |
+| UseNeg | Umschalten | Wenn 'true', dann werden nur positive Slots zum Kontext hinzugefügt. Das bedeutet, dass im Satz "Ich mag keine Pizza" "Pizza" nicht im Kontext gespeichert wird, da es negiert wird. Wenn der Schalter "false" ist, wird "Pizza" gespeichert. |
 
-!!! note "Handling Multiple Slots with Arrays"
-    Let's say you create a Copy Slots To Context Node with a ``key`` of "foods", a ``tag`` of "food", a ``mode`` of "array", and ``UseNeg`` as `false`. You then attach a Lexicon that has the Keyphrases "salad" and "pizza" with a Tag of "food". If a user then says "I want to order a pizza and a salad", then the Keyphrases "pizza" and "salad" will be stored in an array in the Context under the key "foods".
+!!! Hinweis "Umgang mit mehreren Slots mit Arrays"
+    Nehmen wir an, Sie erstellen einen Copy Slots To Context Node mit einem ''Schlüssel'' von ''foods'', einem ''tag'' von 'food'' von ''mode'' von 'array'' und ''UseNeg'' als ''false'. Anschließend hängen Sie ein Lexikon mit den Schlüsselwörtern "Salat" und "Pizza" mit dem Tag "Essen" an. Wenn ein Benutzer dann sagt: "Ich möchte eine Pizza und einen Salat bestellen", dann werden die Keyphrases "Pizza" und "Salat" in einem Array im Context unter dem Schlüssel "Lebensmittel" gespeichert.

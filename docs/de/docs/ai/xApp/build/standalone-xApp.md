@@ -1,53 +1,52 @@
 ---
-title: "Build a Standalone xApp"
+title: "Erstellen einer eigenständigen xApp"
 slug: "standalone-xApp"
-hidden: true
+Ausgeblendet: Wahr
 ---
 
-# Build a Standalone xApp
+# Erstellen einer eigenständigen xApp
 
-In this tutorial, you will learn how to build and deploy an xApp as a standalone application. A standalone xApp can be accessed via a URL, enabling direct user interaction without the need for a primary communication channel.
+In diesem Tutorial erfahren Sie, wie Sie eine xApp als eigenständige Anwendung erstellen und bereitstellen. Auf eine eigenständige xApp kann über eine URL zugegriffen werden, was eine direkte Benutzerinteraktion ermöglicht, ohne dass ein primärer Kommunikationskanal erforderlich ist.
 
-## Configure the Flow
+## Konfigurieren des Flows
 
-### xApp: Init Session Node
+### xApp: Init-Sitzungsknoten
 
-1. Create a new Flow in Cognigy and name it `Standalone xApp Tutorial`.
-2. In the Flow Editor, add an **xApp: Init Session** Node.
-3. Open the Node editor and fill in the following fields:
-    - In the **Style Customization** section:
-        - **Background Color** — specify `darkslategray`.
-        - **Logo** — select **Show Default Logo**.
-    - In the **xApp Screens** section:
-        - **Loading Text** — specify `Loading...`
-    - In the **Intermediate Screen** section:
-        - **Customization type** — select **Customized Texts** from the list.
-        - **Text Override** — enter `Thank you for the info`. You can now close this tab.
-    - In the **Connection Screen** section:
-        - **Customization type** — select **No customization**.
-4. Click **Save Node**.
+1. Erstellen Sie einen neuen Flow in Cognigy und nennen Sie ihn "Standalone xApp Tutorial".
+2. Fügen Sie im Flow-Editor einen Knoten **xApp: Init-Sitzung** hinzu.
+3. Öffnen Sie den Node-Editor und füllen Sie die folgenden Felder aus:
+    - Gehen Sie im Abschnitt **Stilanpassung** wie folgt vor:
+        - **Hintergrundfarbe** — geben Sie 'darkslategray' an.
+        - **Logo** — Wählen Sie **Standardlogo anzeigen** aus.
+    - Gehen Sie im Abschnitt **xApp-Bildschirme** wie folgt vor:
+        - **Text wird geladen** — geben Sie 'Laden...' ein.
+    - Im Abschnitt **Zwischenbildschirm**:
+        - **Anpassungstyp** — Wählen Sie **Benutzerdefinierte Texte** aus der Liste aus.
+        - **Text überschreiben** — Geben Sie "Vielen Dank für die Info" ein. Sie können diesen Tab nun schließen.
+    - Gehen Sie im Abschnitt **Verbindungsbildschirm** wie folgt vor:
+        - **Anpassungstyp**: Wählen Sie **Keine Anpassung** aus.
+4. Klicken Sie auf **Knoten speichern**.
 
-### Say Node
+### Knoten sagen
 
-1. Below the **xApp: Init Session** Node, add a **Say** Node.
-2. In the **Options** section, in the **Data** field, specify the code:
+1. Fügen Sie unterhalb des Knotens **xApp: Init Session** einen Knoten **Say** hinzu.
+2. Geben Sie im Abschnitt **Optionen** im Feld **Daten** den Code an:
 
-    ```json
+'''json
     {
      "xAppUrl": "{{"{{ input.apps.url }}"}}"
     }
-    ```
-   This data-only message is received in the `handleExecutionFinished` transformer method. The URL is then used to redirect the browser to the xApp Shell page.
+    '''
+   Diese reine Datennachricht wird in der Transformermethode "handleExecutionFinished" empfangen. Die URL wird dann verwendet, um den Browser auf die xApp-Shell-Seite umzuleiten.
 
-3. Click **Save Node**.
+3. Klicken Sie auf **Knoten speichern**.
 
-### xApp: Show HTML Node
+### xApp: HTML-Knoten anzeigen
 
-1. Below the **Say** Node, add an **xApp: Show HTML** Node.
-2. In the **Content** section, select **Full HTML Document**.
-3. In the **HTML Document** section, specify the following code:
-    ```html
-     <!DOCTYPE html>
+1. Fügen Sie unter dem Knoten **Say** einen Knoten **xApp: HTML anzeigen** hinzu.
+2. Wählen Sie im Abschnitt **Inhalt** die Option **Vollständiges HTML-Dokument** aus.
+3. Geben Sie im Abschnitt **HTML-Dokument** den folgenden Code an:
+    '''html     <!DOCTYPE html>
      <html lang="en">
     
      <head>
@@ -55,91 +54,89 @@ In this tutorial, you will learn how to build and deploy an xApp as a standalone
      </head>
     
      <body>
-     <p>Received info:</p>
+     <p>Erhaltene Informationen:</p>
      <pre>"{{"{{ JSON.stringify(input.data, null, 2) }}"}}"</pre>
-     <button type="button" onclick="SDK.submit({ option: 'ok' })">OK</button>
+     <button type="button" onclick="SDK.submit({ option: 'ok' })">OKAY</button>
      </body>
     
-     </html>
-    ```
-4. Click **Save Node**.
+     </html>'''
+4. Klicken Sie auf **Knoten speichern**.
 
-### xApp: Show Adaptive Card Node
+### xApp: Adaptiven Kartenknoten anzeigen
 
-1. Below the **Question** Node, add the **xApp: Show Adaptive Card** Node.
-2. In the **AdaptiveCard Definition** field, specify the following code:
-    ```json
+1. Fügen Sie unter dem Knoten **Frage** den Knoten **xApp: Adaptive Karte anzeigen** hinzu.
+2. Geben Sie im Feld **AdaptiveCard Definition** den folgenden Code an:
+    '''json
     {
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "type": "AdaptiveCard",
         "version": "1.5",
-        "body": [
+        "Körper": [
             {
-                "type": "Container",
-                "items": [
+                "type": "Behälter",
+                "Gegenstände": [
                     {
                         "type": "TextBlock",
-                        "text": "Tell us about yourself",
-                        "weight": "Bolder",
-                        "size": "Medium",
-                        "wrap": true,
-                        "style": "heading"
+                        "text": "Erzählen Sie uns etwas über sich",
+                        "weight": "Mutiger",
+                        "size": "Mittel",
+                        "wrap": wahr,
+                        "style": "Überschrift"
                     },
                     {
                         "type": "TextBlock",
-                        "text": "We just need a few more details to get you booked for the trip of a lifetime!",
-                        "isSubtle": true,
-                        "wrap": true
+                        "text": "Wir brauchen nur noch ein paar Details, um Sie für die Reise Ihres Lebens zu buchen!",
+                        "isSubtle": wahr,
+                        "wrap": wahr
                     },
                     {
                         "type": "Input.Text",
-                        "id": "name",
-                        "label": "Your name (Last, First)",
-                        "isRequired": true,
+                        "id": "Name",
+                        "label": "Dein Name (Nachname, Vorname)",
+                        "isRequired": wahr,
                         "regex": "^[A-Z][a-z]+, [A-Z][a-z]+$",
-                        "errorMessage": "Please enter your name in the specified format",
-                        "value": "Doe, John"
+                        "errorMessage": "Bitte geben Sie Ihren Namen im angegebenen Format ein",
+                        "value": "Mustermann, John"
                     },
                     {
                         "type": "Input.Text",
-                        "id": "email",
-                        "label": "Your email",
-                        "regex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.][A-Za-z0-9-]{2,4}$",
-                        "isRequired": true,
-                        "errorMessage": "Please enter a valid email address",
-                        "style": "Email",
+                        "id": "E-Mail",
+                        "label": "Ihre E-Mail-Adresse",
+                        "regex": "^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+[.] [A-Za-z0-9-] {2,4}$",
+                        "isRequired": wahr,
+                        "errorMessage": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+                        "style": "E-Mail",
                         "value": "john@doe.cc"
                     },
                     {
                         "type": "Input.Text",
-                        "id": "phone",
-                        "label": "Phone Number (xxx xxx xxxx)",
-                        "regex": "^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$",
-                        "errorMessage": "Invalid phone number. Please enter a 10 digit phone number",
+                        "id": "Telefon",
+                        "label": "Telefonnummer (xxx xxx xxxx)",
+                        "regex": "^\\(?( [0-9] {3}) \\)? [-.\\s]? ([0-9]{3}) [-.\\s]? ([0-9]{4})$",
+                        "errorMessage": "Ungültige Telefonnummer. Bitte geben Sie eine 10-stellige Telefonnummer ein",
                         "style": "Tel"
                     }
                 ]
             }
         ],
-        "actions": [
+        "Aktionen": [
             {
-                "type": "Action.Submit",
-                "title": "Submit",
-                "style": "positive"
+                "type": "Aktion.Senden",
+                "title": "Senden",
+                "style": "positiv"
             }
         ]
     }
-    ```
-3. Under **Waiting Behavior**, select **Wait for xApp User Input**.
-4. Click **Save Node**.
+    '''
+3. Wählen Sie unter **Warteverhalten** die Option **Auf xApp-Benutzereingabe warten** aus.
+4. Klicken Sie auf **Knoten speichern**.
 
-### xApp: Show HTML Node
+### xApp: HTML-Knoten anzeigen
 
-1. Below the **xApp: Show Adaptive Card** Node, add an **xApp: Show HTML** Node.
-2. In the **Content** field, select **Full HTML Document**.
-3. In the **HTML Document** field, specify the following code:
-    ```html
-    <!DOCTYPE html>
+1. Fügen Sie unterhalb des Knotens **xApp: Adaptive Karte anzeigen** einen Knoten **xApp: HTML anzeigen** hinzu.
+2. Wählen Sie im Feld **Inhalt** die Option **Vollständiges HTML-Dokument** aus.
+3. Geben Sie im Feld **HTML-Dokument** den folgenden Code an:
+    '''html    <!DOCTYPE html>
     <html lang="en">
     
     <head>
@@ -147,87 +144,81 @@ In this tutorial, you will learn how to build and deploy an xApp as a standalone
     </head>
     
     <body>
-      <p>
-          Received info:
-      <hr>
-        Name: "{{"{{ input.data._cognigy._app.payload.name }}"}}"<br>
-        Email: "{{"{{ input.data._cognigy._app.payload.email }}"}}"<br>
-        Phone: "{{"{{ input.data._cognigy._app.payload.phone }}"}}"<br>
+      <p>Erhaltene Informationen:      <hr>Name: "{{"{{ input.data._cognigy._app.payload.name }}"}}"<br>E-Mail: "{{"{{ input.data._cognigy._app.payload.email }}"}}"<br>Telefon: "{{"{{ input.data._cognigy._app.payload.phone }}"}}"<br>
       </p>
-      <button type="button" onclick="SDK.submit({ option: 'ok' })">OK</button>
+      <button type="button" onclick="SDK.submit({ option: 'ok' })">OKAY</button>
     </body>
     
-    </html>
-    ```
-4. Under **Waiting Behavior**, select **Wait for xApp User Input**.
-5. Click **Save Node**.
+    </html>'''
+4. Wählen Sie unter **Warteverhalten** die Option **Auf xApp-Benutzereingabe warten** aus.
+5. Klicken Sie auf **Knoten speichern**.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/flow-result.png" width="100%">
 </figure>
 
-Now you can test the result via the Interaction Panel.
+Nun können Sie das Ergebnis über das Interaction Panel testen.
 
-## Test the Flow
+## Testen des Flows
 
-1. Open the Interaction Panel and enter a message like `Hi` to trigger the Flow.
-2. In the Interaction Panel, expand the **Event/Message with payload** section to access the xApp session. Also, you can check the **Info** tab to see the xApp's URL in the`input.apps.url`input object.
-3. Open the xApp's URL.
-4. Once the page is opened, click **Ok**. The Adaptive Card form will be loaded.
-5. In the **Phone Number** field, specify a mobile number and click **Submit**.
+1. Öffnen Sie das Interaktionsfenster und geben Sie eine Nachricht wie "Hallo" ein, um den Flow auszulösen.
+2. Erweitern Sie im Interaktionsbereich den Abschnitt **Ereignis/Nachricht mit Nutzlast**, um auf die xApp-Sitzung zuzugreifen. Sie können auch die Registerkarte **Info** überprüfen, um die URL der xApp im Eingabeobjekt "input.apps.url" anzuzeigen.
+3. Öffnen Sie die URL der xApp.
+4. Sobald die Seite geöffnet ist, klicken Sie auf **Ok**. Das Formular "Adaptive Karte" wird geladen.
+5. Geben Sie im Feld **Telefonnummer** eine Handynummer an und klicken Sie auf **Senden**.
 
    <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/build-xApps/standalone/test-flow.png" width="100%">
    </figure>
 
-If the operation is successful, you will receive the following message: `Thank you for the info. You can now close this tab`.
+Wenn die Operation erfolgreich ist, erhalten Sie die folgende Nachricht: "Vielen Dank für die Info. Sie können diesen Tab jetzt schließen."
 
-After that, you can deploy your xApp.
+Danach können Sie Ihre xApp bereitstellen.
 
-## Deploy the xApp
+## Bereitstellen der xApp
 
-1. Go to **Deploy > Endpoints**.
-2. Click **+ New Endpoint**.
-3. Select the **Rest** Endpoint from the list.
-4. Specify a unique name and select the corresponding Flow.
-5. In the Endpoint editor, go to the **Transformer Functions** section.
-6. Activate the **Enable Input Transformer** and **Enable Execution Finished Transformer** settings.
-7. In the **Transformer** field, specify the following code:
-    ```js
+1. Wechseln Sie zu **Bereitstellen > Endpunkte**.
+2. Klicken Sie auf **+ Neuer Endpunkt**.
+3. Wählen Sie den **Rest**-Endpunkt aus der Liste aus.
+4. Geben Sie einen eindeutigen Namen an und wählen Sie den entsprechenden Flow aus.
+5. Wechseln Sie im Endpunkt-Editor zum Abschnitt **Transformer-Funktionen**.
+6. Aktivieren Sie die Einstellungen **Enable Input Transformer** und **Enable Execution Finished Transformer**.
+7. Geben Sie im Feld **Transformer** den folgenden Code an:
+    '''js
     const generateId = () => 'xxxx-xxxx-xxxx-xxxx'.replace(/x/g, () => String.fromCharCode(97 + Math.random() * 25))
     
-    createRestTransformer({
-      handleInput: async ({ endpoint, request, response }) => {
+createRestTransformer({
+      handleInput: async ({ Endpunkt, Anforderung, Antwort }) => {
         const userId = 'xapp-user'
         const sessionId = generateId()
         const text = 'GET_STARTED'
-        const data = request.query
+        Konstante Daten = Request.Query
         return { userId, sessionId, text, data }
       },
     
-      handleOutput: async ({ output, endpoint, userId, sessionId }) => {
-        return output
+handleOutput: async ({ output, endpoint, userId, sessionId }) => {
+        Ausgang zurückgeben
       },
     
-      handleExecutionFinished: async ({ processedOutput, outputs, userId, sessionId, endpoint, response }) => {
+handleExecutionFinished: async ({ processedOutput, outputs, userId, sessionId, endpoint, response }) => {
         const { xAppUrl } = processedOutput.data
         if (xAppUrl) {
-          response
+          Antwort Antwort
             .redirect(xAppUrl)
-        //   .status(200)
-        //   .header('Content-Type', 'application/json')
-        //   .send(JSON.stringify({ processedOutput, outputs }, null, 2))
+        .status(200)
+        .header('Content-Type', 'application/json')
+        .send(JSON.stringify({ processedOutput, outputs }, null, 2))
         }
         return processedOutput
       }
     })
-    ```
-8. Click **Save**.
+    '''
+8. Klicken Sie auf **Speichern**.
 
-To check if the xApp was deployed as expected, copy and paste the Endpoint URL into your browser's address bar and test your Flow again.
+Um zu überprüfen, ob die xApp wie erwartet bereitgestellt wurde, kopieren Sie die Endpunkt-URL, fügen Sie sie in die Adressleiste Ihres Browsers ein und testen Sie Ihren Flow erneut.
 
-## More Information
+## Mehr Informationen
 
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
-- [Build an xApp](overview.md)
-- [xApps](../overview.md)
+- [xApp-Knoten](.. /.. /flow-nodes/xApp/overview.md)
+- [Erstellen einer xApp](overview.md)
+- [xApps](.. /overview.md)

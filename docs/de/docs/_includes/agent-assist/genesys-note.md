@@ -1,2 +1,2 @@
-!!! note
-    This information is currently specific to embedding the solution into Genesys Cloud CX. If you plan to embed it into other contact centers, additional information may be required.
+!!! Anmerkung
+    Diese Informationen sind derzeit spezifisch für die Einbettung der Lösung in Genesys Cloud CX. Wenn Sie beabsichtigen, es in andere Contact Center einzubetten, sind möglicherweise zusätzliche Informationen erforderlich.

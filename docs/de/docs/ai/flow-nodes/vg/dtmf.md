@@ -1,20 +1,18 @@
 ---
- title: "DTMF" 
- slug: "dtmf" 
- hidden: false 
+ Titel: "DTMF" 
+ Schnecke: "DTMF" 
+ ausgeblendet: false 
 ---
 # DTMF
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/dtmf.png" width="80%" />
-  <figcaption>Voice Gateway DTMF Node</figcaption>
+  <figcaption>DTMF-Knoten des Voice-Gateways</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The DTMF Node will play the DTMF digits to the caller.
+## Beschreibung<div class="divider"></div>Der DTMF-Knoten gibt dem Aufrufer die DTMF-Ziffern wieder.
 
-| Parameter       | Type   | Description                           |
+| Parameter | Typ | Beschreibung |
 |-----------------|--------|---------------------------------------|
-| Digits sequence | Text   | Digits sequence to play to the caller |
-| Pause time      | Slider | Pause time in ms between the digits   |  
+| Ziffernfolge | Text | Ziffernfolge, die dem Anrufer vorgespielt werden soll |
+| Pausenzeit | Schieberegler | Pausenzeit in ms zwischen den Ziffern |  

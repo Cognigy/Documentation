@@ -1,137 +1,112 @@
 ---
-title: "User Inactivity Detection and Handling"
-slug: "user-inactivity-detection-and-handling"
-description: "Cognigy Inactivity Detection and Handling feature allows you to detect inactivity of end users during handovers and to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions."
-hidden: false
+title: "Erkennung und Behandlung von Benutzerinaktivität"
+Slug: "Erkennung und Behandlung von Benutzerinaktivität"
+Beschreibung: "Die Cognigy Inactivity Detection and Handling-Funktion ermöglicht es Ihnen, Inaktivität von Endbenutzern während der Übergabe zu erkennen und diese Inaktivität zu behandeln, indem Sie die Übergabe automatisch schließen, automatisierte Antworten konfigurieren oder weitere Aktionen auslösen."
+ausgeblendet: false
 ---
-# User Inactivity Detection and Handling
+# Erkennung und Behandlung von Benutzerinaktivität
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.53-blue.svg)] (.. /.. /release-notes/4.53.md)
 
-The _Inactivity Detection and Handling_ feature allows you to detect inactivity of end users during handovers and allows you to handle this inactivity by auto-closing the handover, configuring automated responses or trigger further actions. This feature helps to ensure that human agent's resources are being used more efficiently.
+Die _Inactivity Erkennungs- und Handling_Funktion ermöglicht es Ihnen, Inaktivität von Endbenutzern während der Übergabe zu erkennen und diese Inaktivität zu behandeln, indem Sie die Übergabe automatisch schließen, automatisierte Antworten konfigurieren oder weitere Aktionen auslösen. Diese Funktion trägt dazu bei, dass die Ressourcen des menschlichen Agenten effizienter genutzt werden.
 
-Configuring several nodes is required to use The Inactivity Detection and Handling feature:
+Die Konfiguration mehrerer Knoten ist erforderlich, um die Funktion "Inaktivitätserkennung und -behandlung" verwenden zu können:
 
-- [Handover to Agent](#set-up-handover-to-agent-node)
-- [Lookup](#set-up-lookup-node)
-- [Set Handover Inactivity](#set-up-set-handover-inactivity-node)
-- [Go To](#set-up-go-to-node)
-- [If](#set-up-if-node)
+- [Übergabe an Agent](#set-up-handover-to-agent-node)
+- [Suche](#set-up-lookup-node)
+- [Übergabeinaktivität festlegen](#set-up-set-handover-inactivity-node)
+- [Gehe zu](#set-up-go-to-node)
+- [Wenn](#set-up-if-Knoten)
 
-Below, we provide an example of how to set up Inactivity Detection and Handling, which can be customized to meet your specific needs.
+Im Folgenden finden Sie ein Beispiel für die Einrichtung der Inaktivitätserkennung und -behandlung, die an Ihre spezifischen Anforderungen angepasst werden kann.
 
-## Set up Handover to Agent Node
+## Übergabe an Agentenknoten einrichten
 
-To ensure proper detection and handling of inactivity during queue time or active handovers, follow these steps:
+Gehen Sie folgendermaßen vor, um sicherzustellen, dass Inaktivität während der Warteschlangenzeit oder bei aktiven Übergaben ordnungsgemäß erkannt und behandelt wird:
 
-1. In the Flow editor, add the **Handover to Agent** Node.
-2. Open a Node editor by clicking the **Handover to Agent** Node.
-3. In the Node editor, go to the **Event Settings** section:
-4. Toggle on the **Send Queue Event** and **Send Active Event** settings:
-     - **Send Queue Event** - if enabled, an event is sent to the Flow once the end user enters the queue. This is a pre-requisite to detect inactivity while the end user is in the queue. 
-     - **Send Active Event** - if enabled, an event is sent to the Flow as soon as the handover becomes active, that is when the human agent sends the first message. This is a pre-requisite to detect inactivity while a handover is active.
-5. Click **Save Node**.
+1. Fügen Sie im Flow-Editor den Knoten **Übergabe an Agent** hinzu.
+2. Öffnen Sie einen Node-Editor, indem Sie auf den Knoten **Übergabe an Agent** klicken.
+3. Gehen Sie im Node-Editor zum Abschnitt **Ereigniseinstellungen**:
+4. Schalten Sie die Einstellungen **Warteschlangenereignis senden** und **Aktives Ereignis senden** ein:
+     - **Warteschlangenereignis senden** – Wenn diese Option aktiviert ist, wird ein Ereignis an den Flow gesendet, sobald der Endbenutzer die Warteschlange betritt. Dies ist eine Voraussetzung, um Inaktivität zu erkennen, während sich der Endbenutzer in der Warteschlange befindet. 
+     - **Aktives Ereignis senden** - Wenn diese Option aktiviert ist, wird ein Ereignis an den Flow gesendet, sobald die Übergabe aktiv wird, d. h. wenn der menschliche Agent die erste Nachricht sendet. Dies ist eine Voraussetzung, um Inaktivität zu erkennen, während eine Übergabe aktiv ist.
+5. Klicken Sie auf **Knoten speichern**.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/1-handover-event-settings.png" width="100%" />
 </figure>
 
-## Set up Lookup Node
+## Lookup-Knoten einrichten
 
-Set up the Lookup Node with handover statuses:
+Richten Sie den Lookup Node mit Übergabestatus ein:
 
-1. In the Flow editor, below the **Handover to Agent** Node, add the **Lookup** Node.
-2. Open a Node editor by clicking the Node.
-3. In the Node editor, go to the **Type** setting and select **Handover Status** from the list. 
-4. Click **Save Node**.
+1. Fügen Sie im Flow-Editor unter dem Knoten **Übergabe an Agent** den Knoten **Lookup** hinzu.
+2. Öffnen Sie einen Node-Editor, indem Sie auf den Node klicken.
+3. Gehen Sie im Node-Editor zur Einstellung **Typ** und wählen Sie **Übergabestatus** aus der Liste aus. 
+4. Klicken Sie auf **Knoten speichern**.
     <figure>
         <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/2-handover-lookup.png" width="100%" />
     </figure>
-5. Go to the child Nodes:<br>
-   5.1 Click the **Case** Node.<br>
-   5.3 In the **Value** field, specify the `active` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
-   5.4 Click **Save Node**.<br>
+5. Gehen Sie zu den untergeordneten Nodes:<br>5.1 Klicken Sie auf den Knoten **Fall**.<br>5.3 Geben Sie im Feld **Wert** den Übergabestatus "aktiv" an, wenn Sie Inaktivität erkennen und behandeln möchten, während sich die Endbenutzer in der Warteschlange befinden.<br>5.4 Klicken Sie auf **Knoten speichern**.<br>
       <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/3-handover-child-lookup.png" width="100%" />
-      </figure>
-   5.5 Click the second **Case** Node.<br>
-   5.6 In the **Value** field, specify the `queue` handover status if you want to detect and handle inactivity while the end users are in the queue.<br>
-   5.7 Click **Save Node**.<br>
+      </figure>5.5 Klicken Sie auf den zweiten **Fall**-Knoten.<br>5.6 Geben Sie im Feld **Wert** den Übergabestatus "Warteschlange" an, wenn Sie Inaktivität erkennen und behandeln möchten, während sich die Endbenutzer in der Warteschlange befinden.<br>5.7 Klicken Sie auf **Knoten speichern**.<br>
       <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/4-handover-second-child-lookup.png" width="100%" />
-      </figure>
-6. Add **completed** and **error** child Nodes by analogy.
+      </figure>6. Fügen Sie die untergeordneten Knoten **completed** und **error** analog hinzu.
    
+## Set Handover Inactivity Node einrichten
 
-## Set up Set Handover Inactivity Node
+Wenn Sie Inaktivität während der Warteschlangenzeit erkennen möchten, sollte der erste Timer gestartet werden, sobald der Endbenutzer die Warteschlange betritt.
 
-If you want to detect inactivity during the queue time, the first timer should be started once the end user enters the queue.
+Fügen Sie dazu den Once-Knoten hinzu, um den Inaktivitäts-Timer zu starten, wenn Sie das Warteschlangenereignis erhalten:
 
-To do this, add the Once Node to start the inactivity timer when you receive the queue event:
-
-1. Below the **queue** child Node, add **Once** Node.
-2. Below the **On First Time** child Node, add the **Set Handover Inactivity** Node.
-3. In the **Set Handover Inactivity** Node, specify the inactivity timeout in minutes, for example, `1`.  On each incoming user input, the timer is automatically reset and starts from the beginning. Once the timer expires, an inactivity event is sent to the Flow.
-4. Click **Save Node**.
-5. Repeat the same steps for the **active** child Node in case you want to detect and handle inactivity during active handovers.
+1. Fügen Sie unter dem untergeordneten Knoten **Warteschlange** den Knoten **Once** hinzu.
+2. Fügen Sie unter dem untergeordneten Knoten **Beim ersten Mal** den Knoten **Übergabeinaktivität festlegen** hinzu.
+3. Geben Sie im Knoten **Übergabeinaktivität festlegen** die Inaktivitätszeitüberschreitung in Minuten an, z. B. "1".  Bei jeder eingehenden Benutzereingabe wird der Timer automatisch zurückgesetzt und beginnt von vorne. Sobald der Timer abgelaufen ist, wird ein Inaktivitätsereignis an den Flow gesendet.
+4. Klicken Sie auf **Knoten speichern**.
+5. Wiederholen Sie die gleichen Schritte für den **aktiven** untergeordneten Node, falls Sie Inaktivität während aktiver Übergaben erkennen und behandeln möchten.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/5-set-handover-inactivity.png" width="100%" />
 </figure>
 
-The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after the specified time. If an end user input is received before the timeout, the timer will automatically reset and start from the beginning.
+Der Timer wird in Minuten eingestellt und kann um bis zu einer Minute variieren. Wenn keine Eingabe durch den Endbenutzer erfolgt, läuft der Timer nach der angegebenen Zeit ab. Wenn eine Endbenutzereingabe vor der Zeitüberschreitung empfangen wird, wird der Timer automatisch zurückgesetzt und beginnt von vorne.
 
-## Set up Go To Node
+## Gehe zu Knoten einrichten
 
-Set the **Go To** Node to return to the Lookup Node. This moves the entrypoint to the Lookup node, allowing the Flow to execute the correct Lookup child branch based on incoming events.
+Legen Sie den Knoten **Gehe zu** fest, um zum Suchknoten zurückzukehren. Dadurch wird der Einstiegspunkt auf den Lookup-Knoten verschoben, sodass der Flow die richtige untergeordnete Lookup-Verzweigung basierend auf eingehenden Ereignissen ausführen kann.
 
-In the **Go To** Node editor,
-select **Lookup** from the **Select Node** list
-and **Go To Node and wait for Input** from the **Execution Mode** list in the **Advanced** section.
+Wählen Sie im **Gehe zu** Knoten-Editor
+Wählen Sie **Lookup** aus der Liste **Select Node** aus.
+und **Gehe zu Knoten und warte auf Eingabe** aus der Liste **Ausführungsmodus** im Abschnitt **Erweitert**.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/6-handover-go-to.png" width="100%" />
 </figure>
 
-## Set up If Node
+## If Node einrichten
 
-An example of how detected inactivity could be handled is explained here:
+Ein Beispiel dafür, wie mit erkannter Inaktivität umgegangen werden könnte, wird hier erläutert:
 
-1. Add the IF Node at the end of the Flow.
-2. In the Node editor, specify `input.handover.inactivityCount >= 2`. This allows to handle the second detected inactivity differently from the first one. Please note that the `input.handover.inactivityCount` is reset to 0 once the End User sends a message.
-3. Below the **If** Node and its **Else** child Node, do the following to ask the end user, based on detected inactivity, if he is still there.<br>
-   3.1 Add the **Say** Node.<br>
-   3.2 In the **Say** Node editor, in the text field, specify `Are you still there? The conversation will be automatically closed soon`.  <br>
-   3.3 In **Handover Settings > Handover Output Destination**, select **User** to only show the message to the user and not the human agent.<br>
-   3.4 Click **Save Node**.<br>
-   3.5 Add the **Set Handover Inactivity** Node to start a subsequent inactivity timer.<br>
-   If the inactivity count is greater than two, it triggers the close handover process, which can close the handover on both the user and human agent sides.
-4. Below the **If** Node and its **Then** child Node, do the following to auto-close the handover after the inactivity timer expired the second time in direct succession.:<br>
-   4.1 Add the **Close Handover** Node to auto-close the handover.<br>
-   4.2 Add the **Say** Node.<br>
-   4.3. In the **Say** Node editor, in the text field, specify `You are back with the bot now!`.<br>
-   4.4 In **Handover Settings > Handover Output Destination**, select **User and Agent**.<br>
-   4.5 Click **Save Node**.<br>
-If the inactivity count is less than two, it triggers prompt the user to respond to prevent the conversation from being automatically closed. The Set Handover Inactivity Node will set the time period for inactivity after which the conversation will be closed or restart a Flow from the beginning.
+1. Fügen Sie den IF-Knoten am Ende des Flows hinzu.
+2. Geben Sie im Node-Editor "input.handover.inactivityCount >= 2" an. Dies ermöglicht es, die zweite erkannte Inaktivität anders zu behandeln als die erste. Bitte beachten Sie, dass "input.handover.inactivityCount" auf 0 zurückgesetzt wird, sobald der Endbenutzer eine Nachricht sendet.
+3. Gehen Sie unter dem **If**-Knoten und seinem **Else**-untergeordneten Knoten wie folgt vor, um den Endbenutzer basierend auf der erkannten Inaktivität zu fragen, ob er noch vorhanden ist.<br>3.1 Fügen Sie den Knoten **say** hinzu.<br>3.2 Geben Sie im **Say** Node-Editor im Textfeld "Sind Sie noch da? Die Konversation wird in Kürze automatisch geschlossen."  <br>3.3 Wählen Sie unter **Übergabeeinstellungen > Übergabeausgabeziel** die Option **Benutzer** aus, um die Nachricht nur dem Benutzer und nicht dem menschlichen Agenten anzuzeigen.<br>3.4 Klicken Sie auf **Knoten speichern**.<br>3.5 Fügen Sie den Knoten **Übergabeinaktivität festlegen** hinzu, um einen nachfolgenden Inaktivitäts-Timer zu starten.<br>Wenn die Anzahl der Inaktivität größer als zwei ist, wird der Close-Handover-Prozess ausgelöst, der die Übergabe sowohl auf der Benutzer- als auch auf der menschlichen Agentenseite abschließen kann.
+4. Führen Sie unter dem **If**-Knoten und seinem **Then**-untergeordneten Knoten die folgenden Schritte aus, um die Übergabe automatisch zu schließen, nachdem der Inaktivitäts-Timer zum zweiten Mal direkt hintereinander abgelaufen ist:<br>4.1 Fügen Sie den Knoten **Übergabe schließen** hinzu, um die Übergabe automatisch zu schließen.<br>4.2 Fügen Sie den Knoten **say** hinzu.<br>4.3. Geben Sie im **Say** Node-Editor im Textfeld "Sie sind jetzt wieder beim Bot!" an.<br>4.4 Wählen Sie unter **Übergabeeinstellungen > Übergabeausgabeziel** die Option **Benutzer und Agent** aus.<br>4.5 Klicken Sie auf **Knoten speichern**.<br>Wenn die Anzahl der Inaktivität weniger als zwei beträgt, wird der Benutzer durch Trigger aufgefordert, zu antworten, um zu verhindern, dass die Konversation automatisch geschlossen wird. Der Knoten "Übergabe festlegen" legt den Zeitraum für die Inaktivität fest, nach dem die Konversation geschlossen wird oder ein Flow von Anfang an neu gestartet wird.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/scenarios/7-handover-if.png" width="100%" />
 </figure>
 
-In the end, add the **Go To** Node to return to the **Lookup** Node as you did before. In the **Go To** Node editor,
-select **Lookup** from the **Select Node** list
-and **Go To Node and wait for Input** from the **Execution Mode** list in the **Advanced** section. 
+Fügen Sie am Ende den Knoten "Gehe zu" hinzu, um wie zuvor zum Knoten "Suchen" zurückzukehren. Wählen Sie im **Gehe zu** Knoten-Editor
+Wählen Sie **Lookup** aus der Liste **Select Node** aus.
+und **Gehe zu Knoten und warte auf Eingabe** aus der Liste **Ausführungsmodus** im Abschnitt **Erweitert**. 
 
-Test your Flow via the demo Webchat and any connected providers, for example, Cognigy Live Agent.
+Testen Sie Ihren Flow über den Demo-Webchat und alle angeschlossenen Anbieter, z. B. Cognigy Live Agent.
 
-## More Information
+## Mehr Informationen
 
-- [Set Handover Inactivity](../flow-nodes/other-nodes/set-handover-inactivity.md)
-- [Close Handover](../flow-nodes/other-nodes/close-handover.md)
-- [Handover Providers](overview.md)
-- [Agent Handover](../tools/agent-handover.md)
-
-
-
-
-
+- [Übergabeinaktivität einstellen](.. /flow-nodes/other-nodes/set-handover-inactivity.md)
+- [Übergabe schließen](.. /flow-nodes/other-nodes/close-handover.md)
+- [Übergabeanbieter](overview.md)
+- [Agentenübergabe](.. /tools/agent-handover.md)

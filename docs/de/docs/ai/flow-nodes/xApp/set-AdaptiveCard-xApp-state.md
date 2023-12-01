@@ -1,43 +1,40 @@
 ---
- title: "xApp: Show Adaptive Card" 
+ title: "xApp: Adaptive Karte anzeigen" 
  slug: "Set-AdaptiveCard-xApp-State" 
- hidden: false 
+ ausgeblendet: false 
 ---
 
-# xApp: Show Adaptive Card
+# xApp: Adaptive Karte anzeigen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-AdaptiveCard-xApp-state.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Eine xApp-Seite kann erstellt werden, indem eine adaptive Karte im JSON-Format bereitgestellt wird.
 
-An xApp Page can be built by providing an Adaptive Card in JSON format.
+Um Daten zurück an den Flow zu senden, müssen Sie eine Aktion vom Typ "Senden" in die adaptive Karte einfügen.
 
-To submit data back to the Flow, you need to include an action of type submit within the Adaptive Card.
-
-To view submitted data, use the Interaction panel. You can access submitted data in the `data` object by clicking **INFO > Input**, or in the chat by adding a Say Node and specifying <code>Submit payload: &lcub;&lcub;JSON.stringify(input.data)&rcub;&rcub;</code> or <code>Submit payload: &lcub;&lcub;JSON.stringify(ci.data)&rcub;&rcub;</code>.
+Um übermittelte Daten anzuzeigen, verwenden Sie den Bereich "Interaktion". Sie können auf die übermittelten Daten im Objekt "data" zugreifen, indem Sie auf **INFO > Eingabe** klicken, oder im Chat, indem Sie einen Say-Knoten hinzufügen und oder <code>Submit payload: &lcub;&lcub;JSON.stringify(ci.data)&rcub;&rcub;</code>angeben.<code>Submit payload: &lcub;&lcub;JSON.stringify(input.data)&rcub;&rcub;</code>
 
 {! _includes/ai/xApp/custom-node.md !}
 
-### AdaptiveCard Definition
+### AdaptiveCard-Definition
 
-The [Adaptive Card Designer](https://adaptivecards.io/designer) can help you to define an Adaptive Card. Copy the JSON card payload and paste it into the form.
+Der [Designer adaptiver Karten](https://adaptivecards.io/designer) kann Ihnen dabei helfen, eine adaptive Karte zu definieren. Kopieren Sie die JSON-Kartennutzlast und fügen Sie sie in das Formular ein.
 
-### Style Overrides
+### Stil-Außerkraftsetzungen
 
-To override the background and interaction element colors, use CSS color codes.
+Um die Farben des Hintergrunds und des Interaktionselements zu überschreiben, verwenden Sie CSS-Farbcodes.
 
-### Waiting Behavior
+### Warteverhalten
 
-To wait for a user input, for example, when the user clicks `Submit` on the Ordering page, activate the **Waiting Behavior** option.
-You can store the input result in the Context and use the data in the other Nodes.
+Um auf eine Benutzereingabe zu warten, z. B. wenn der Benutzer auf der Bestellseite auf "Senden" klickt, aktivieren Sie die Option **Warteverhalten**.
+Sie können das Eingabeergebnis im Context speichern und die Daten in den anderen Nodes verwenden.
 
-## More Information
+## Mehr Informationen
 
-- [xApps](../../xApp/overview.md)
-- [xApp Nodes](overview.md)
-- [xApp: Init Session](init-xApp-session.md)
-- [xApp: Get Session PIN](get-xApp-session-PIN.md)
-- [xApp: Show HTML](set-html-xApp-state.md)
+- [xApps](.. /.. /xApp/overview.md)
+- [xApp-Knoten](overview.md)
+- [xApp: Init-Sitzung](init-xApp-session.md)
+- [xApp: Sitzungs-PIN abrufen](get-xApp-session-PIN.md)
+- [xApp: HTML anzeigen](set-html-xApp-state.md)

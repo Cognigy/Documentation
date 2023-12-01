@@ -1,24 +1,22 @@
 ---
- title: "Call Recording" 
- slug: "call-recording" 
- hidden: false 
+ Titel: "Anrufaufzeichnung" 
+ Slug: "Anruf-Aufzeichnung" 
+ ausgeblendet: false 
 ---
-# Call Recording
+# Anruf-Aufzeichnung
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/call-recording.png" width="80%" />
-  <figcaption>AudioCodes Call Recording</figcaption>
+  <figcaption>AudioCodes-Anrufaufzeichnung</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Call Recording Node controls the voice recording capabilities of the conversation.
+## Beschreibung<div class="divider"></div>Der Anrufaufzeichnungsknoten steuert die Sprachaufzeichnungsfunktionen des Gesprächs.
 
-Recording is done by the SBC (SRC) using the SIPRec protocol and functioning as the Session Recording Client (SRC). The session recording server (SRS) can be for example AudioCodes SmartTAP recording solution or any other SRS.
+Die Aufzeichnung erfolgt durch den SBC (SRC) unter Verwendung des SIPRec-Protokolls und fungiert als Sitzungsaufzeichnungsclient (SRC). Der Session Recording Server (SRS) kann z.B. AudioCodes SmartTAP Recording Lösung oder ein anderes SRS sein.
 
-| Parameter             | Type          | Description                                                                                               |
+| Parameter | Typ | Beschreibung |
 |-----------------------|---------------|-----------------------------------------------------------------------------------------------------------|
-| Activity              | Select        | Whether to start or stop a call recording.                                                                |
-| Call Recording Server | CognigyScript | Defines the SRS as an IP Group name (as configured on the SBC) to record the call.                        |
-| Call Recording ID     | CognigyScript | Defines the recording ID session, which is forwarded by the SBC to the SRS in the XML body.               |
-| Destination Username  | CognigyScript | Defines the username that is used in the SIP Request-URI and To headers of the INVITE request for SIPRec. |
+| Aktivität | Wählen Sie | Gibt an, ob eine Anrufaufzeichnung gestartet oder beendet werden soll.                                                                |
+| Anrufaufzeichnungs-Server | CognigyScript | Definiert den SRS als IP-Gruppennamen (wie auf dem SBC konfiguriert), um den Anruf aufzuzeichnen.                        |
+| Anrufaufzeichnungs-ID | CognigyScript | Definiert die Aufzeichnungs-ID-Sitzung, die vom SBC an den SRS im XML-Text weitergeleitet wird.               |
+| Ziel-Benutzername | CognigyScript | Definiert den Benutzernamen, der in den Kopfzeilen SIP Request-URI und To der INVITE-Anforderung für SIPRec verwendet wird. |

@@ -1,30 +1,30 @@
 ---
-title: "AI Copilot for Voice"
-slug: "voice-agent-assist"
-hidden: false
+Titel: "AI Copilot for Voice"
+Slug: "Voice-Agent-Assist"
+ausgeblendet: false
 ---
 
-# AI Copilot for Voice
+# KI-Copilot für Sprache
 
-This feature provides an AI Copilot Workspace for integration into contact center voice deployments.
+Diese Funktion bietet einen KI-Copilot-Arbeitsbereich für die Integration in Contact-Center-Sprachbereitstellungen.
 
-To set up AI Copilot for Voice, you'll need a Main Flow capable of transferring the call to a human agent, as well as an AI Copilot Workspace Flow. The Workspace Flow will be executed through the Voice Copilot Endpoint, which receives the transcription of the audio stream.
+Um AI Copilot for Voice einzurichten, benötigen Sie einen Main Flow, der den Anruf an einen menschlichen Agenten weiterleiten kann, sowie einen AI Copilot Workspace Flow. Der Workspace Flow wird über den Voice Copilot-Endpunkt ausgeführt, der die Transkription des Audiostreams empfängt.
 
-Before transferring the call to a human agent, add a Transfer Node to route the call to the contact center via SIP headers.
+Bevor Sie den Anruf an einen menschlichen Agenten weiterleiten, fügen Sie einen Übertragungsknoten hinzu, um den Anruf über SIP-Header an das Contact Center weiterzuleiten.
 
-The voice configuration contains the following parts:
+Die VoIP-Konfiguration besteht aus den folgenden Teilen:
 
-- [Transfer Node](transfer-node.md)
-- [Voice Copilot Endpoint](../../ai/endpoints/voice-copilot.md)
+- [Übertragungsknoten](transfer-node.md)
+- [Voice Copilot-Endpunkt](.. /.. /ai/endpoints/voice-copilot.md)
 
 {! _includes/agent-assist/genesys-note.md !}
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot Workspace](../overview.md)
-- [Getting started with AI Copilot](../getting-started.md)
-- [AI Copilot Configuration](../configuration.md)
-- [AI Copilot Nodes](../../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](../embedding.md)
-- [AI Copilot for Chat](../chat.md)
-- [Integration with Contact Centers](../contact-center-integration.md)
+- [AI Copilot Workspace](.. /overview.md)
+- [Erste Schritte mit AI Copilot](.. /getting-started.md)
+- [Konfiguration des KI-Copiloten](.. /configuration.md)
+- [KI-Copilot-Knoten](.. /.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](.. /embedding.md)
+- [KI-Copilot für Chat](.. /chat.md)
+- [Integration mit Contact Centern](.. /contact-center-integration.md)

@@ -1,35 +1,35 @@
 ---
-title: "xApp Tokens" 
-slug: "xApp-Tokens" 
-hidden: false
+title: "xApp-Token" 
+slug: "xApp-Token" 
+ausgeblendet: false
 ---
 
-# xApp Tokens
+# xApp-Token
 
-URLs as well as the PIN code to access an xApp session are exposed via Cognigy Tokens.
+URLs sowie der PIN-Code für den Zugriff auf eine xApp-Sitzung werden über Cognigy-Token verfügbar gemacht.
 
-## xApp PIN Page URL	
+## xApp-PIN-Seiten-URL	
 
-The xApp Ping Page URL token provides a URL to access the PIN Page.
-You can get this URL when the [xApp: Init Session](../flow-nodes/xApp/init-xApp-session.md#by-entering-a-pin-code)  Node is executed.
-This URL is also accessible via `input.apps.baseUrl` in the input object.
+Das URL-Token der xApp-Ping-Seite stellt eine URL für den Zugriff auf die PIN-Seite bereit.
+Sie können diese URL abrufen, wenn die [xApp: Init-Sitzung](.. /flow-nodes/xApp/init-xApp-session.md#by-entering-a-pin-code) Node ausgeführt wird.
+Diese URL ist auch über 'input.apps.baseUrl' im Eingabeobjekt erreichbar.
 
-## xApp Session PIN
+## xApp-Sitzungs-PIN
 
-The xApp Session PIN token provides the PIN code to access the xApp Session.
-This PIN is also accessible via `input.apps.session.pin` in the input object.
+Das PIN-Token für die xApp-Sitzung stellt den PIN-Code für den Zugriff auf die xApp-Sitzung bereit.
+Diese PIN ist auch über 'input.apps.session.pin' im Eingabeobjekt erreichbar.
 
-The PIN code is only valid for 5 minutes after it is created by the [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) Node.
+Der PIN-Code ist nur 5 Minuten lang gültig, nachdem er von [xApp: Get Session PIN](.. /flow-nodes/xApp/get-xApp-session-PIN.md) Knoten.
 
-## xApp Session URL
+## xApp-Sitzungs-URL
 
-The xApp Session URL token provides the URL to access the xApp Session without a PIN.
-You can get this token
-when the [xApp: Init Session](../flow-nodes/xApp/init-xApp-session.md#without-entering-a-pin-code) Node is executed.
-This URL is also accessible via `input.apps.url` in the input object.
+Das URL-Token der xApp-Sitzung stellt die URL für den Zugriff auf die xApp-Sitzung ohne PIN bereit.
+Sie können dieses Token erhalten
+Wenn die [xApp: Init Session](.. /flow-nodes/xApp/init-xApp-session.md#without-entering-a-pin-code) Node wird ausgeführt.
+Diese URL ist auch über 'input.apps.url' im Eingabeobjekt erreichbar.
 
-## More Information
+## Mehr Informationen
 
-- [xApp: Get Session PIN](../flow-nodes/xApp/get-xApp-session-PIN.md) 
+- [xApp: Sitzungs-PIN abrufen](.. /flow-nodes/xApp/get-xApp-session-PIN.md) 
 - [xApps](overview.md)
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
+- [xApp-Knoten](.. /flow-nodes/xApp/overview.md)

@@ -1,36 +1,29 @@
 ---
  title: "Trigger Intent" 
- slug: "trigger-intent" 
- hidden: false 
+ Slug: "Trigger-Absicht" 
+ ausgeblendet: false 
 ---
-# Trigger Intent
-## Description
-<div class="divider"></div>
+# Trigger-Absicht
+## Beschreibung<div class="divider"></div>Die Funktion "Trigger Intent" ermöglicht es Ihnen, einen Intent manuell auszulösen, indem Sie "cIntent:" gefolgt vom gewünschten Intent-Namen in Ihre Texteingabe schreiben, die reguläre Intent-Zuordnung wird ignoriert.
 
-The Trigger Intent feature allows you to manually trigger an Intent by writing `cIntent:`, followed by the desired intent name in your text input, the regular Intent mapping will be ignored.
+Ab Cognigy 3.4.1 können Sie zusätzlich zusätzlichen Text für das Parsen von Schlüsselwörtern bereitstellen.
 
-As of Cognigy 3.4.1 you can additionally supply additional text for keyphrase parsing.
+Die vollständige Syntax lautet wie folgt. Beachten Sie, dass der durch den senkrechten Strich getrennte Text optional ist, nur der fettgedruckte Text ist erforderlich. Ersetzen Sie die gewünschte Absicht und den Text, der nach Slots analysiert werden soll, in den jeweiligen Platzhaltern:
 
-The full syntax is as follows. Note the pipe ***|*** separated text is optional, only the bold text is required. Replace the desired intent and text to parse for slots in the respective placeholders:
+> **cIntent:Intent-Name**|Text, der für Slots analysiert werden soll
 
-> **cIntent:intent name**|text to parse for slots
+!!! Hinweis "Vollständige NLU wird nicht ausgeführt"
+    Beachten Sie, dass die vollständige NLU-Logik nicht ausgeführt wird, wenn Sie die Triggerabsicht verwenden. Wenn die benannte Absicht über Standardantworten oder andere erweiterte Optionen verfügt, werden diese nicht in Kraft gesetzt. Stattdessen wird eine Flow-Eingabe immer mit dem angegebenen Intent und (optional) dem angegebenen Text und den abgeleiteten Slots generiert.
 
-!!! note "Full NLU is not run"
-    Note that full NLU logic is not run when using Trigger Intent. If the Intent named has Default Replies, or other advanced options, these are not enacted. Instead, a Flow input is always generated with the specified Intent and (optionally) the given text and derived slots.
+!!! Hinweis "Trigger Intent Score"
+    Die Funktion "Trigger Intent" führt immer zu einem Intent-Score von 1.
 
-!!! note "Trigger Intent Score"
-    The Trigger Intent feature always leads to an Intent score of 1.
-
-## Usage
-<div class="divider"></div>
-You use the Trigger Intent feature by sending a text input into your Flow that starts with `cIntent:`. Whatever follows will be your found Intent. If you want your intent to be named `myIntent` you'd send the text input `cIntent:myIntent` (do not leave any space). Here's an example:
+## Verwendung<div class="divider"></div>Sie verwenden die Funktion "Trigger Intent", indem Sie eine Texteingabe in Ihren Flow senden, die mit "cIntent:" beginnt. Was auch immer folgt, wird deine gefundene Absicht sein. Wenn Sie möchten, dass Ihre Absicht "myIntent" genannt wird, senden Sie die Texteingabe "cIntent:myIntent" (lassen Sie kein Leerzeichen). Hier ist ein Beispiel:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/f2ba2e4-Screenshot_from_2019-09-12_15-33-12.png" width="100%" />
 </figure>
 
-You may supply additional text that will be parsed for keyphrases using the pipe operator. Here is an example that illustrates the functionality:
-
-<figure>
+Sie können zusätzlichen Text angeben, der mithilfe des Pipe-Operators nach Schlüsselwörtern analysiert wird. Hier ist ein Beispiel, das die Funktionalität veranschaulicht:<figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/08f251c-Screenshot_from_2019-10-28_13-48-19.png" width="100%" />
 </figure>

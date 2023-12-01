@@ -1,115 +1,115 @@
 ---
-title: "Use Cases"
-slug: "use-cases"
-hidden: false
+Titel: "Anwendungsfälle"
+Slug: "Anwendungsfälle"
+ausgeblendet: false
 ---
 
-# xApp Use Cases
+# xApp-Anwendungsfälle
 
-The xApps can be used in two different ways:
+Die xApps können auf zwei verschiedene Arten verwendet werden:
 
-- [As a multichannel solution](#multichannel)
-- [As a standalone solution](#standalone)
+- [Als Multichannel-Lösung](#multichannel)
+- [Als Standalone-Lösung](#standalone)
 
-## Multichannel
+## Mehrkanal
 
-You can use an xApp in addition to the main communication channels, such as voice, Webchat Widget, Teams, WhatsApp, and others. The full list is provided in [Supported Channels](supported-browsers-and-channels.md#supported-channels).
+Sie können eine xApp zusätzlich zu den Hauptkommunikationskanälen wie Sprache, Webchat-Widget, Teams, WhatsApp und anderen verwenden. Die vollständige Liste finden Sie unter [Unterstützte Kanäle](supported-browsers-and-channels.md#supported-channels).
 
-To learn how it works, follow [Build an xApp with multiple channels](build/xApp-with-multi-channels.md).
+Um zu erfahren, wie es funktioniert, folgen Sie [Erstellen einer xApp mit mehreren Kanälen](build/xApp-with-multi-channels.md).
 
-### Power up virtual agents
+### Virtuelle Agenten einschalten
 
-Enhance the capabilities of virtual agents by supporting use cases that go beyond the limitations of the current communication channel. This allows virtual agents to handle more complex tasks and provide better assistance to users.
+Erweitern Sie die Funktionen virtueller Agenten, indem Sie Anwendungsfälle unterstützen, die über die Grenzen des aktuellen Kommunikationskanals hinausgehen. Dies ermöglicht es virtuellen Agenten, komplexere Aufgaben zu erledigen und den Benutzern eine bessere Unterstützung zu bieten.
 
-### Power up human agents
+### Menschliche Agenten stärken
 
-Enable AI Copilot to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
+Aktivieren Sie AI Copilot, um menschlichen Agenten xApps vorzuschlagen. Diese xApps können für Benutzer freigegeben werden, um Aufgaben wie das Ausfüllen von Formularen zu vereinfachen oder Aktionen auszuführen, die der Agent nicht allein ausführen kann, z. B. die Authentifizierung per Fingerabdruck oder das Einziehen von Zahlungen.
 
-## Standalone
+## Eigenständig
 
-You can use an xApp as a standalone application. The xApp can be built to address specific tasks or processes that don't require a conversation. These xApps can be accessed via a URL, allowing users to interact with them directly without the need for another communication channel.
+Sie können eine xApp als eigenständige Anwendung verwenden. Die xApp kann für bestimmte Aufgaben oder Prozesse erstellt werden, für die keine Konversation erforderlich ist. Diese xApps können über eine URL aufgerufen werden, so dass Benutzer direkt mit ihnen interagieren können, ohne dass ein weiterer Kommunikationskanal erforderlich ist.
 
-To learn how it works, follow [Create a Standalone xApp](build/standalone-xApp.md).
+Um zu erfahren, wie es funktioniert, folgen Sie [Erstellen einer eigenständigen xApp](build/standalone-xApp.md).
 
-## Examples
+## Beispiele
 
-xApps are infinitely flexible. Below examples illustrate some specific use cases where an xApp can provide convenient and efficient solutions, enhancing user experiences and improving process workflows. 
+xApps sind unendlich flexibel. Die folgenden Beispiele veranschaulichen einige spezifische Anwendungsfälle, in denen eine xApp bequeme und effiziente Lösungen bereitstellen kann, um die Benutzererfahrung zu verbessern und Prozessabläufe zu verbessern. 
 
-### Authentication via Credentials
+### Authentifizierung über Anmeldeinformationen
 
-With xApps, you can allow users to authenticate using various methods such as email addresses, user numbers, or other identification details.
+Mit xApps können Sie Benutzern die Authentifizierung mit verschiedenen Methoden wie E-Mail-Adressen, Benutzernummern oder anderen Identifikationsdetails ermöglichen.
 
-Users can securely verify their identity and gain access to specific services or information.
+Benutzer können ihre Identität sicher verifizieren und Zugang zu bestimmten Diensten oder Informationen erhalten.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/images/xApp/use-cases/microsoft-login.png" width="50%">
-    <figcaption>Authentication via Credentials</figcaption>
+    <figcaption>Authentifizierung über Anmeldeinformationen</figcaption>
 </figure>
 
-### Select a flight seat
+### Wählen Sie einen Sitzplatz
 
-With xApps, you can offer users an interface to choose their preferred seat for their flight.
+Mit xApps können Sie Benutzern eine Schnittstelle anbieten, über die sie ihren bevorzugten Sitzplatz für ihren Flug auswählen können.
 
-Users can view the available seats and select the seat of their choice, enhancing their travel experience.
+Benutzer können die verfügbaren Sitzplätze anzeigen und den Sitzplatz ihrer Wahl auswählen, um ihr Reiseerlebnis zu verbessern.
 
-You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/flight-seat-picker) repository.
+Ein Beispiel für die Implementierung finden Sie im Repository [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/flight-seat-picker).
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/select-seat.png" width="50%">
-    <figcaption>Select a flight seat</figcaption>
-</figure>
+    <figcaption>Wählen Sie einen Sitzplatz</figcaption>
+</figure> aus
 
-### Share location 
+### Standort teilen 
 
-With xApps, you can allow users to share their device's location information.
+Mit xApps können Sie Benutzern erlauben, die Standortinformationen ihres Geräts freizugeben.
 
-This use case can be useful in various scenarios, such as providing location-based services, tracking deliveries, or finding nearby resources.
+Dieser Anwendungsfall kann in verschiedenen Szenarien nützlich sein, z. B. bei der Bereitstellung standortbezogener Dienste, der Nachverfolgung von Lieferungen oder der Suche nach Ressourcen in der Nähe.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/share-location.png" width="50%">
-    <figcaption>Share device location</figcaption>
+    <figcaption>Gerätestandort freigeben</figcaption>
 </figure>
 
-### Take a picture via a mobile camera
+### Machen Sie ein Foto mit einer mobilen Kamera
 
-With xApps, you can provide users an interface to capture images of metering devices using their mobile camera.
+Mit xApps können Sie Benutzern eine Schnittstelle zur Verfügung stellen, mit der sie Bilder von Messgeräten mit ihrer mobilen Kamera aufnehmen können.
 
-This use case can be useful for utility companies or service providers to remotely monitor and analyze metering data.
+Dieser Anwendungsfall kann für Versorgungsunternehmen oder Dienstanbieter nützlich sein, um Messdaten aus der Ferne zu überwachen und zu analysieren.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/energy-meter.png" width="50%">
-    <figcaption>Take a picture via a mobile camera</figcaption>
+    <figcaption>Nehmen Sie ein Bild mit einer mobilen Kamera auf</figcaption>
 </figure>
 
-### Add a boarding pass to a wallet
+### Hinzufügen einer Bordkarte zu einer Brieftasche
 
-With xApps, you can allow users to add their boarding pass to a digital wallet.
+Mit xApps können Sie Benutzern erlauben, ihre Bordkarte zu einer digitalen Geldbörse hinzuzufügen.
 
-This use case enables users to easily access their boarding information, simplifies the check-in process, and eliminates the need for printed boarding passes.
+Dieser Anwendungsfall ermöglicht es Benutzern, einfach auf ihre Boarding-Informationen zuzugreifen, vereinfacht den Check-in-Prozess und macht gedruckte Bordkarten überflüssig.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/boarding-pass.png" width="50%">
-    <figcaption>Add a boarding pass</figcaption>
+    <figcaption>Hinzufügen einer Bordkarte</figcaption>
 </figure>
 
-### Create a signature
+### Erstellen einer Signatur
 
-With xApps, you can provide a digital signature functionality.
+Mit xApps können Sie eine Funktion für digitale Signaturen bereitstellen.
 
-Users can sign documents or forms electronically, eliminating the need for physical signatures and streamlining paperwork processes.
+Benutzer können Dokumente oder Formulare elektronisch signieren, wodurch physische Unterschriften überflüssig werden und Papierkramprozesse rationalisiert werden.
 
-You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/signature) repository.
+Ein Beispiel für die Implementierung finden Sie im Repository [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/signature).
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/signature-pad.png" width="50%">
-    <figcaption>Create a signature</figcaption>
+    <figcaption>Erstellen einer Signatur</figcaption>
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Overview](overview.md)
-- [Build an xApp](build/overview.md)
-- [Architecture](architecture.md)
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
-- [xApp Tokens](tokens.md)
-- [xApp Flow API](api.md)
+- [Übersicht](overview.md)
+- [Erstellen einer xApp](build/overview.md)
+- [Architektur](architecture.md)
+- [xApp-Knoten](.. /flow-nodes/xApp/overview.md)
+- [xApp-Token](tokens.md)
+- [xApp-Flow-API](api.md)

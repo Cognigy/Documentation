@@ -1,51 +1,41 @@
 ---
- title: "Context" 
- slug: "context" 
- hidden: false 
+ title: "Kontext" 
+ slug: "Kontext" 
+ ausgeblendet: false 
 ---
-# Context
+# Kontext
 
-The Context is a JSON object which stores persistent information.
+Der Context ist ein JSON-Objekt, das persistente Informationen speichert.
 
-Every contact that connects to Cognigy.AI has their own Context which lives throughout the lifetime of the session. When a contact disconnects from Cognigy.AI, the Context is persisted in the database and retrieved upon reconnection.
+Jeder Kontakt, der sich mit Cognigy.AI verbindet, hat seinen eigenen Kontext, der während der gesamten Lebensdauer der Sitzung erhalten bleibt. Wenn ein Kontakt die Verbindung zu Cognigy.AI trennt, wird der Kontext in der Datenbank beibehalten und bei der Wiederherstellung der Verbindung abgerufen.
 
-The Flow can read from and write to the Context by saving user messages, slots, intents or any other data available throughout the session. For more information about the lifespan of the context, see the [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/#cognigy-objects-life-span/) page.
+Der Flow kann aus dem Kontext lesen und in ihn schreiben, indem er Benutzernachrichten, Slots, Absichten oder andere Daten speichert, die während der Sitzung verfügbar sind. Weitere Informationen zur Lebensdauer des Kontexts finden Sie auf der Seite [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/#cognigy-objects-life-span/).
 
-## Accessing the Context object
-<div class="divider"></div>
+## Zugriff auf das Context-Objekt<div class="divider"></div>Flow-Knoten können dynamisch über [Tokens]({{config.site_url}}ai/resources/manage/tokens/) oder [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) zugreifen, z. B. '{{ " {{context.property}}" }}'. Das Cognigy-Skript, das für den Zugriff auf das Kontextobjekt verwendet wird, folgt der Punktnotation 'property.child.child'.
 
+!!! note "JSON-Pfad aus dem Context-Objekt kopieren"
+    Sie können den genauen JSON-Pfad kopieren, den Sie benötigen, um auf einen bestimmten Wert im Context-Objekt zu verweisen, indem Sie mit der rechten Maustaste darauf klicken und im Kontextmenü "JSON-Pfad kopieren" auswählen. 
 
-Flow nodes can dynamically access Context properties via [Tokens]({{config.site_url}}ai/resources/manage/tokens/) or [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) e.g. `{{ " {{context.property}}" }}`. The Cognigy Script used to access the context object follows the dot-notation `property.child.child`.
+**Beispiel**
 
-!!! note "Copy JSON path from the Context Object"
-    You can copy the exact JSON path you need to reference a certain value in the Context object by right-clicking it and selecting "Copy JSON Path" from the context menu. 
-
-**Example**
-
-```JavaScript
+'''JavaScript
 {
-    "user": {
+    "Benutzer": {
         "name": "Luke Skywalker"
     }
 }
-```
+'''
 
-* `{{ " {{context.user.name}}" }}` would return `Luke Skywalker`
-* `{{ " {{context.user.age}}" }}` would return ` ` (empty string) or - if used in a condition - `false`
+* '{{ " {{context.user.name}}" }}' würde 'Luke Skywalker' zurückgeben
+* '{{ " {{context.user.age}}" }}' würde ' ' (leere Zeichenkette) oder - wenn in einer Bedingung verwendet - 'false' zurückgeben
 
-
-!!! tip "Edit, Save or Reset your current Context"
-    You can Save, Cancel or Reset the Context Object by clicking the Save, Cancel or Reset buttons in the bottom option pane of the Interaction Panel. Context manipulations will only manipulate the value(s) in your current session.
-
-<div class="divider"></div>
-
-The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. The default context is configured in the [Flow Editor]({{config.site_url}}ai/resources/build/flows/) under the **Settings** tab.
-
+!!! Tipp "Bearbeiten, Speichern oder Zurücksetzen des aktuellen Kontexts"
+    Sie können das Kontextobjekt speichern, abbrechen oder zurücksetzen, indem Sie auf die Schaltflächen "Speichern", "Abbrechen" oder "Zurücksetzen" im unteren Optionsbereich des Interaktionsfensters klicken. Bei Kontextmanipulationen werden nur die Werte in der aktuellen Sitzung bearbeitet.<div class="divider"></div>Der Standardkontext ist der Anfangszustand des Kontexts, wenn die Sitzung gestartet wird. Dies kann angepasst werden, um Variablen zu initiieren, auf die während der Konversation zugegriffen und die geändert werden. Der Standardkontext wird im [Flow-Editor]({{config.site_url}}ai/resources/build/flows/) auf der Registerkarte **Einstellungen** konfiguriert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/0654144-defaultContext.PNG" width="100%" />
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Profile]({{config.site_url}}ai/tools/interaction-panel/profile/)
+- [Profil]({{config.site_url}}ai/tools/interaction-panel/profile/)

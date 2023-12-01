@@ -1,23 +1,21 @@
 ---
- title: "Send Message" 
- slug: "send-message" 
- hidden: false 
+ Titel: "Nachricht senden" 
+ slug: "Nachricht senden" 
+ ausgeblendet: false 
 ---
-# Send Message
+# Nachricht senden
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/send-message.png" width="80%" />
-  <figcaption>AudioCodes Send Message</figcaption>
+  <figcaption>AudioCodes Nachricht senden</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Send Message Node sends a text (optionally with SSML) to AudioCodes, which then turns this text into speech (TTS) and outputs it to the caller.
+## Beschreibung<div class="divider"></div>Der Knoten "Nachricht senden" sendet einen Text (optional mit SSML) an AudioCodes, der diesen Text dann in Sprache (TTS) umwandelt und an den Aufrufer ausgibt.
 
-| Parameter               | Type                    | Description                                                                                                |
+| Parameter | Typ | Beschreibung |
 |-------------------------|-------------------------|------------------------------------------------------------------------------------------------------------|
-| Text                    | CognigyScript with SSML | The text to send back to AudioCodes. Can contain SSML (either entered manually or via the provided editor) |
-| Set Activity Parameters | Toggle                  | Option to add parameters which will be valid for this activity only.                                       |
+| Text | CognigyScript mit SSML | Der Text, der an AudioCodes zurückgesendet werden soll. Kann SSML enthalten (entweder manuell oder über den mitgelieferten Editor eingegeben) |
+| Aktivitätsparameter festlegen | Umschalten | Option zum Hinzufügen von Parametern, die nur für diese Aktivität gültig sind.                                       |
 
-!!! note "This Node supports Activity Parameters"
-    To learn more about activity parameters, visit our Help Center at: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)
+!!! Hinweis "Dieser Knoten unterstützt Aktivitätsparameter"
+    Um mehr über Aktivitätsparameter zu erfahren, besuchen Sie unser Hilfe-Center unter: [https://support.cognigy.com/hc/en-us/articles/360017413959](https://support.cognigy.com/hc/en-us/articles/360017413959)

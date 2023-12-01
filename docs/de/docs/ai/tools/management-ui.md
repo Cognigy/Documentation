@@ -1,214 +1,214 @@
 ---
-title: "Management UI" 
-slug: "management-ui" 
-hidden: false 
+Titel: "Verwaltungs-UI" 
+Slug: "Verwaltungs-UI" 
+ausgeblendet: false 
 ---
 
-# Management UI
+# Verwaltungs-UI
 
-## Introduction
+## Einleitung
 
-The Cognigy Management UI is an additional product originally developed as a Cognigy internal tool for managing our own cloud installations. You need to install it in addition to our actual product in order to use it.
+Die Cognigy Management UI ist ein zusätzliches Produkt, das ursprünglich als Cognigy-internes Tool zur Verwaltung unserer eigenen Cloud-Installationen entwickelt wurde. Sie müssen es zusätzlich zu unserem eigentlichen Produkt installieren, um es verwenden zu können.
 
-You can set up Management UI yourself if you have an on-premise Cognigy.AI installation. Otherwise, if you want to make changes in Management UI, contact [technical support](../help/get-help.md/#help-center).
+Sie können die Verwaltungsbenutzeroberfläche selbst einrichten, wenn Sie über eine lokale Cognigy.AI-Installation verfügen. Andernfalls, wenn Sie Änderungen an der Verwaltungs-Benutzeroberfläche vornehmen möchten, wenden Sie sich an [Technischer Support](.. /help/get-help.md/#help-center).
 
-Many users don't know that Cognigy.AI is able to handle a multi-tenant scenario. These individual tenants are called **organisations** within Cognigy.AI.
+Viele Benutzer wissen nicht, dass Cognigy.AI in der Lage ist, ein mehrinstanzenfähiges Szenario zu verarbeiten. Diese einzelnen Mandanten werden innerhalb Cognigy.AI als **Organisationen** bezeichnet.
 
-An organisation has completely separated:
+Eine Organisation hat sich komplett getrennt:
 
-- projects
-- users
-- api- access and -keys
-- contact profile schemas
-- quotas & limits
+-Projekte
+-Benutzer
+- API-Zugriff und -Schlüssel
+- Kontaktprofil-Schemata
+- Quoten & Limits
 
-With the use of organisations, you can use your own Cognigy.AI installation e.g. for multiple customers and separate their data in a safe manner. Although a new organisation can be created by using a special sort of **internal API**, we created an additional tool called the **Cognigy Management UI**. This is an additional product you can deploy in your cluster. It then lets you connect to your installation to inspect e.g. all organisations within your system.
+Mit dem Einsatz von Organisationen können Sie Ihre eigene Cognigy.AI Installation z.B. für mehrere Kunden verwenden und deren Daten auf sichere Weise trennen. Obwohl eine neue Organisation mithilfe einer speziellen Art von **interner API** erstellt werden kann, haben wir ein zusätzliches Tool namens **Cognigy Management UI** erstellt. Dies ist ein zusätzliches Produkt, das Sie in Ihrem Cluster bereitstellen können. Anschließend können Sie eine Verbindung zu Ihrer Installation herstellen, um z. B. alle Organisationen in Ihrem System zu inspizieren.
 
-The following figure shows a screenshot of what this product looks like.
+Die folgende Abbildung zeigt einen Screenshot davon, wie dieses Produkt aussieht.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/745f45a-mui-1.png" width="100%" />
-  <figcaption> The Cognigy.AI Management UI</figcaption>
+  <figcaption> Die Benutzeroberfläche für die Cognigy.AI-Verwaltung</figcaption>
 </figure>
 
-## Usage
+## Verwendung
 
-The usage of the Management UI is quite self-explanatory. We have global navigation on the left side, which allows you to switch between:
-- Users
-- Organisations
-- System Message
+Die Bedienung der Verwaltungsoberfläche ist recht selbsterklärend. Auf der linken Seite haben wir eine globale Navigation, mit der Sie zwischen folgenden Optionen wechseln können:
+-Benutzer
+- Organisationen
+- Systemmeldung
 
-We will now have a look at the individual view and what can be done in there.
+Wir schauen uns nun die individuelle Ansicht an und was dort getan werden kann.
 
-## Users
+## Benutzer
 
-Here you can add new users to the system. A user needs to get assigned to an **organisation**, so you might need to create a new organisation first. To create a new user, click on the huge pink button on the right-bottom corner of the view. You will then see a dialog where you enter the:
+Hier können Sie neue Benutzer zum System hinzufügen. Ein Benutzer muss einer **Organisation** zugewiesen werden, daher müssen Sie möglicherweise zuerst eine neue Organisation erstellen. Um einen neuen Benutzer zu erstellen, klicken Sie auf die große rosa Schaltfläche in der rechten unteren Ecke der Ansicht. Sie sehen dann einen Dialog, in dem Sie Folgendes eingeben:
 
-- name
-- email
-- select the organisation
+-Name
+-E-Mail
+- Wählen Sie die Organisation aus
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/d5af6c0-mui-2.png" width="100%" />
-  <figcaption>Creating a new user is simple</figcaption>
+  <figcaption>Das Erstellen eines neuen Benutzers ist einfach</figcaption>
 </figure>
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}}) 
-You can add a user (identified by an email address) to multiple organisations and how the user can log in for their organisation can be found on [Login for Users in multiple organisation]({{config.site_url}}ai/installation/AI-login/#login-for-users-in-multiple-organisation) page 
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.16.0-blue.svg)] ({{config.site_url}}) 
+Sie können einen Benutzer (identifiziert durch eine E-Mail-Adresse) zu mehreren Organisationen hinzufügen, und wie sich der Benutzer für seine Organisation anmelden kann, finden Sie auf der Seite [Login für Benutzer in mehreren Organisationen]({{config.site_url}}ai/installation/AI-login/#login-for-users-in-multiple-organisation) 
 
-If you click on one of the already existing users, a details page opens and displays you certain information about the user. The most important things you can do here are:
+Wenn Sie auf einen der bereits vorhandenen Benutzer klicken, öffnet sich eine Detailseite, auf der Ihnen bestimmte Informationen über den Benutzer angezeigt werden. Die wichtigsten Dinge, die Sie hier tun können, sind:
 
-- see general information
-- see the users current [roles]({{config.site_url}}ai/tools/user-menu/access-control/)
-- see certain status information
-- impersonate the user. This will forward to the actual product and login as if you were the selected user
-- additional actions for the user are in the triple-dot icon on the right-top corner
+- siehe allgemeine Informationen
+- Sehen Sie sich die aktuellen [Rollen]({{config.site_url}}ai/tools/user-menu/access-control/) an
+- Bestimmte Statusinformationen einsehen
+- sich als Benutzer auszugeben. Dadurch wird zum eigentlichen Produkt weitergeleitet und Sie melden sich an, als wären Sie der ausgewählte Benutzer
+- Zusätzliche Aktionen für den Benutzer befinden sich im Triple-Dot-Symbol in der rechten oberen Ecke
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/a8411d2-mui-3.png" width="100%" />
-  <figcaption> Details of a user</figcaption>
+  <figcaption> Details zu einem Benutzer</figcaption>
 </figure>
 
-!!! note "Impersonating a user"
-    By impersonating a user, you can log in into the system as the users you have selected, without knowing the actual account password. Ensure that you log out after you have finished your work.
+!!! Hinweis "Annehmen der Identität eines Benutzers"
+    Wenn Sie sich als Benutzer ausgeben, können Sie sich als der von Ihnen ausgewählte Benutzer beim System anmelden, ohne das tatsächliche Kontokennwort zu kennen. Stellen Sie sicher, dass Sie sich nach Beendigung Ihrer Arbeit abmelden.
 
-## Organisations
+## Organisationen
 
-This view presents all organisations that exist within the system. Each installation has at least one organisation that will be created automatically. This initial organisation is called **defaultOrg-xxx**. Have a look at the following figure.
+In dieser Ansicht werden alle Organisationen dargestellt, die innerhalb des Systems vorhanden sind. Jede Installation hat mindestens eine Organisation, die automatisch erstellt wird. Diese anfängliche Organisation wird als **defaultOrg-xxx** bezeichnet. Werfen Sie einen Blick auf die folgende Abbildung.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/0454252-mui-4.png" width="100%" />
-  <figcaption> All organisations within the system</figcaption>
+  <figcaption> Alle Organisationen innerhalb des Systems</figcaption>
 </figure>
 
-You can also create a new organisation or disable an already existing one.
+Sie können auch eine neue Organisation erstellen oder eine bereits vorhandene deaktivieren.
 
-## System Message
+## Systemmeldung
 
-If you have your own Cognigy.AI installation, you might want to schedule maintenance at a certain point. This is what you can use our **System Message** feature for. Select system message in the navigation on the left and click on the pink button to create a new system message.
+Wenn Sie über eine eigene Cognigy.AI Installation verfügen, sollten Sie die Wartung zu einem bestimmten Zeitpunkt planen. Dafür können Sie unsere **Systemmeldung**-Funktion verwenden. Wählen Sie in der linken Navigation Systemmeldung aus und klicken Sie auf den pinken Button, um eine neue Systemmeldung zu erstellen.
 
-Only one system message can exist at a time. Such a message has an actual message text and a **valid until** date. The message will be displayed on all UI clients as long as the message is valid. It will automatically varnish when it is expired.
+Es kann jeweils nur eine Systemmeldung vorhanden sein. Eine solche Nachricht hat einen tatsächlichen Nachrichtentext und ein **gültig bis** Datum. Die Meldung wird auf allen UI-Clients angezeigt, solange die Meldung gültig ist. Es lackiert automatisch, wenn es abgelaufen ist.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/8c17539-mui-5.png" width="100%" />
-  <figcaption>Creating a new system message</figcaption>
+  <figcaption>Erstellen einer neuen Systemmeldung</figcaption>
 </figure>
 
-The system message will get displayed for all users - regardless of their organisation.
+Die Systemmeldung wird für alle Benutzer angezeigt - unabhängig von ihrer Organisation.
 
-## Quotas & Limits
+## Quoten & Limits
 
-With version 3.4.0 of Cognigy.AI, we have introduced quotas and limits on an organisation level. Larger customers with multiple organisations can use these quotas to limit what is possible within certain organisations. To configure limits, first select an organisation, open its details and click on the triple-dot button on the right-top corner.
+Mit der Version 3.4.0 von Cognigy.AI haben wir Quoten und Limits auf Organisationsebene eingeführt. Größere Kunden mit mehreren Organisationen können diese Kontingente verwenden, um die Möglichkeiten innerhalb bestimmter Organisationen einzuschränken. Um Limits zu konfigurieren, wählen Sie zunächst eine Organisation aus, öffnen Sie deren Details und klicken Sie auf die Schaltfläche mit den drei Punkten in der rechten oberen Ecke.
 
-In the menu, select **Change Organisation Quotas**.
+Wählen Sie im Menü **Organisationskontingente ändern** aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/19b27f4-mui-6.png" width="100%" />
-  <figcaption>Configuring quotas & limits for an organisation</figcaption>
+  <figcaption>Konfigurieren von Kontingenten und Grenzwerten für eine Organisation</figcaption>
 </figure>
 
-You can currently configure the following quotas & limits:
+Sie können derzeit die folgenden Kontingente und Grenzwerte konfigurieren:
 
-| Attributes                                  | 	Description                                                                                                                 |
+| Attribut | 	Beschreibung |
 |--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| Max users            | 	This is the maximum number of users that can be created within the organisation.                                                                    |
-| Max projects                         | The maximum number of projects that can be created within this organisation.                                                       |
-| Max channels per project                   | 	The maximum number of different types of channels within a single project. A channel is e.g. an Alexa-Endpoint. If this is e.g. set to one, you can create an infinite number of Alexa Endpoints but will get an error once you try to e.g. create a Google Actions Endpoint in addition. It's the number of different types of channels that gets restricted                                   |
-| Max messages per day             | 	This is currently a soft limit and will not do anything if projects go above it. We will introduce changes to this quota in the future.     |
+| Max. Benutzer | 	Dies ist die maximale Anzahl von Benutzern, die innerhalb der Organisation erstellt werden können.                                                                    |
+| Max. Projekte | Die maximale Anzahl von Projekten, die innerhalb dieser Organisation erstellt werden können.                                                       |
+| Max. Kanäle pro Projekt | 	Die maximale Anzahl verschiedener Kanaltypen innerhalb eines einzelnen Projekts. Ein Kanal ist z.B. ein Alexa-Endpunkt. Wenn dies z.B. auf eins gesetzt ist, können Sie unendlich viele Alexa Endpoints erstellen, erhalten aber eine Fehlermeldung, wenn Sie versuchen, z.B. zusätzlich einen Google Actions Endpoint zu erstellen. Es ist die Anzahl der verschiedenen Arten von Kanälen, die eingeschränkt wird |
+| Max. Nachrichten pro Tag | 	Dies ist derzeit ein weiches Limit und wird nichts bewirken, wenn Projekte darüber hinausgehen. Wir werden in Zukunft Änderungen an diesem Kontingent vornehmen.     |
  
-Setting a quota to 0 disables the quota.
+Wenn Sie ein Kontingent auf 0 festlegen, wird das Kontingent deaktiviert.
 
-## Password Policy
+## Passwort-Richtlinie
 
-It is also possible to configure the password policies of an organisation in the Management UI.  To configure the password policy, first select an organisation and click on the triple-dot button on the right-top corner.
+Es ist auch möglich, die Passwortrichtlinien einer Organisation in der Verwaltungsoberfläche zu konfigurieren.  Um die Passwortrichtlinie zu konfigurieren, wählen Sie zunächst eine Organisation aus und klicken Sie auf die Schaltfläche mit den drei Punkten in der rechten oberen Ecke.
 
-In the menu, select **Change Password Policy**.
+Wählen Sie im Menü die Option **Kennwortrichtlinie ändern** aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/cefc01d-Screenshot_from_2020-03-25_16-46-15.png" width="100%" />
-  <figcaption>Configuring a Password Policy for an organisation</figcaption>
+  <figcaption>Konfigurieren einer Kennwortrichtlinie für eine Organisation</figcaption>
 </figure>
 
-It is currently possible to configure the following attributes of the password policy:
+Derzeit ist es möglich, die folgenden Attribute der Kennwortrichtlinie zu konfigurieren:
 
-| Attributes                                             | 	Description                                                                                                                                                                                                        |
+| Attribut | 	Beschreibung |
 |--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Minimum Length                                         | The minimum number of characters the password needs to consist of.                                                                                                                                                  |
-| Maximum Length                                         | The maximum number of characters the password can consist of.                                                                                                                                                       |
-| Minimum Amount of Lowercase                            | The minimum number of characters in the password which have to be lowercase.                                                                                                                                        |
-| Minimum Amount of Uppercase                            | The minimum number of characters in the password which have to be uppercase.                                                                                                                                        |
-| Minimum Amount of Special Characters                   | The minimum number of special characters in the password.	                                                                                                                                                          |
-| Maximum Amount of Identical Characters                 | The maximum numner of characters which can be identical in the password.                                                                                                                                            |
-| Amount of failed logins resulting in account disabling | Specifies how many times a user can attempt to log in before their account is disabled. Settings this to 0 means that the account will never be disabled. Disabled users can be enabled again in the Management UI. |
+| Mindestlänge | Die Mindestanzahl von Zeichen, aus denen das Kennwort bestehen muss.                                                                                                                                                  |
+| Maximale Länge | Die maximale Anzahl von Zeichen, aus denen das Kennwort bestehen kann.                                                                                                                                                       |
+| Mindestanzahl von Kleinbuchstaben | Die Mindestanzahl von Zeichen im Passwort, die in Kleinbuchstaben geschrieben werden müssen.                                                                                                                                        |
+| Mindestanzahl von Großbuchstaben | Die Mindestanzahl von Zeichen im Passwort, die in Großbuchstaben geschrieben werden müssen.                                                                                                                                        |
+| Mindestanzahl an Sonderzeichen | Die Mindestanzahl von Sonderzeichen im Kennwort.	                                                                                                                                                          |
+| Maximale Anzahl identischer Zeichen | Die maximale Anzahl von Zeichen, die im Kennwort identisch sein können.                                                                                                                                            |
+| Anzahl der fehlgeschlagenen Anmeldungen, die zur Deaktivierung des Kontos führen | Gibt an, wie oft ein Benutzer versuchen kann, sich anzumelden, bevor sein Konto deaktiviert wird. Wenn Sie diesen Wert auf 0 setzen, bedeutet dies, dass das Konto nie deaktiviert wird. Deaktivierte Benutzer können in der Verwaltungsoberfläche wieder aktiviert werden. |
 
-Clicking the ``Save & Enforce`` button results in all users of the organisation to get logged out. Upon re-logging they will be required to change their password.
+Ein Klick auf die Schaltfläche "Speichern & Erzwingen" führt dazu, dass alle Benutzer der Organisation abgemeldet werden. Bei der erneuten Anmeldung müssen sie ihr Passwort ändern.
 
-## Data Privacy Settings
+## Datenschutz-Einstellungen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.38.0-blue.svg)]({{config.site_url}}) 
-It is possible to set the data privacy settings of an organisation in the Management UI. To configure the data privacy settings, first select and organisation and then click on the triple-dot button on the right-top corner.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.38.0-blue.svg)] ({{config.site_url}}) 
+Es ist möglich, die Datenschutzeinstellungen einer Organisation in der Verwaltungsoberfläche festzulegen. Um die Datenschutzeinstellungen zu konfigurieren, wählen Sie zunächst eine Organisation aus und klicken Sie dann auf den Dreipunkt-Button in der rechten oberen Ecke.
 
-In the menu, select **Change Data Privacy Settings**
+Wählen Sie im Menü **Datenschutzeinstellungen ändern**
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/docs-mngmt-org-data-privacy.png" width="100%" />
-  <figcaption>Configuring Data Privacy Settings for an organisation</figcaption>
+  <figcaption>Konfigurieren von Datenschutzeinstellungen für eine Organisation</figcaption>
 </figure>
 
-- Enable data privacy settings
+- Datenschutzeinstellungen aktivieren
   
-Apply data privacy settings to all projects of this organisation
+Datenschutzeinstellungen auf alle Projekte dieser Organisation anwenden
 
-- Contact Profiles  
+- Kontaktprofil  
 
-Create individual contact profiles to store persisted user data across sessions
+Erstellen Sie individuelle Kontaktprofile, um persistente Benutzerdaten sitzungsübergreifend zu speichern
 
-- Collect Analytics
+- Sammeln von Analysen
   
-Collecting analytics data for all endpoints
+Sammeln von Analysedaten für alle Endpunkte
 
-- Mask Sensitive Analytics
+- Sensible Analysen maskieren
 
-Mask all sensitive analytics data for all endpoints
+Maskieren Sie alle sensiblen Analysedaten für alle Endpunkte
 
-- Mask Sensitive Logging
+- Maskensensitive Protokollierung
 
-Mask all sensitive logging for all endpoints
+Maskieren Sie die gesamte vertrauliche Protokollierung für alle Endpunkte
 
-- Collect Conversations
+- Sammeln von Konversationen
 
-Collecting conversations history for all endpoints
+Erfassen des Konversationsverlaufs für alle Endpunkte
 
-- Ignore List
+- Ignorierliste
 
-The projects will ignore the organisation data privacy settings and use the ones defined in the endpoint
+Die Projekte ignorieren die Datenschutzeinstellungen der Organisation und verwenden die im Endpunkt definierten Einstellungen
 
-## Expiration Values (TTL) for Sensitive Data
+## Ablaufwerte (TTL) für sensible Daten
 
-It is possible to configure when certain sensitive data expires and is deleted from the system. In order to change this, first select an organisation and click on the triple-dot button on the right-top corner.
+Es kann konfiguriert werden, wann bestimmte sensible Daten ablaufen und aus dem System gelöscht werden. Um dies zu ändern, wählen Sie zunächst eine Organisation aus und klicken Sie auf den Dreipunkt-Button in der rechten oberen Ecke.
 
-In the menu, select **Change Expiration Values**.
+Wählen Sie im Menü **Ablaufwerte ändern** aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/exp-values.png" width="100%" />
-  <figcaption> Configuring the expiration values for sensitive data in an Organisation</figcaption>
+  <figcaption> Konfigurieren der Ablaufwerte für sensible Daten in einer Organisation</figcaption>
 </figure>
 
-All the expiration values define how many **minutes** it takes from when the data was created until it expires. Setting an expiration value to 0 means that the data will never expire. It is possible to configure the expiration of the following data:
+Alle Ablaufwerte definieren, wie viele **Minuten** es dauert, bis die Daten erstellt wurden, bis sie ablaufen. Das Festlegen eines Ablaufwerts auf 0 bedeutet, dass die Daten nie ablaufen. Es ist möglich, den Ablauf der folgenden Daten zu konfigurieren:
 
-| Expiration value                  | 	Description                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Ablaufwert | 	Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Contact Profiles Expiration       | This expiration value determines the number of minutes from when a contact profile was last active in a conversation until it is deleted.                                                                                                                                                                                                                                                                                                                |
-| Session Expiration                | This expiration value determines the number of minutes from when the last message in a session was sent until the session is deleted. This means that the expiration timer is reset on every new message in a session. The [session expiration]({{config.site_url}}ai/endpoints/session-management/) can also be configured in the individual Endpoints for some Endpoints. In case the value is also configured there, the smallest value will be used. |
-| Conversation Expiration           | This expiration value determines the number of minutes from when a [conversation](analytics/analytics-concepts.md) is created until it is deleted from the database.                                                                                                                                                                                                                                                                                     |
-| Analytics Expiration              | This expiration value determines the number of minutes from when the data of the [Analytics](analytics/analytics-concepts.md) is created until it is deleted from the database.                                                                                                                                                                                                                                                                          |
-| Insight's Session Data Expiration | This expiration value determines the number of minutes from when the data of Insight's Session is created until it is deleted from the database.                                                                                                                                                                                                                                                                                                         |
-| Steps Data Expiration             | This expiration value determines the number of minutes from when the data of [Steps](analytics/analytics-concepts.md#steps) is created until it is deleted from the database.                                                                                                                                                                                                                                                                            |
+| Ablauf von Kontaktprofilen | Dieser Ablaufwert bestimmt die Anzahl der Minuten zwischen dem Zeitpunkt, an dem ein Kontaktprofil zuletzt in einer Konversation aktiv war, und dem Zeitpunkt, an dem es gelöscht wird.                                                                                                                                                                                                                                                                                                                |
+| Ablauf der Sitzung | Dieser Ablaufwert bestimmt die Anzahl der Minuten zwischen dem Senden der letzten Nachricht in einer Sitzung und dem Löschen der Sitzung. Das bedeutet, dass der Ablauf-Timer bei jeder neuen Nachricht in einer Sitzung zurückgesetzt wird. Der [Sitzungsablauf]({{config.site_url}}ai/endpoints/session-management/) kann für einige Endpunkte auch in den einzelnen Endpunkten konfiguriert werden. Falls der Wert auch dort konfiguriert ist, wird der kleinste Wert verwendet. |
+| Ablauf der Konversation | Dieser Ablaufwert bestimmt die Anzahl der Minuten zwischen der Erstellung einer [Konversation](analytics/analytics-concepts.md) und dem Löschen aus der Datenbank.                                                                                                                                                                                                                                                                                     |
+| Analytics-Ablauf | Dieser Ablaufwert bestimmt die Anzahl der Minuten zwischen der Erstellung der Daten von [Analytics](analytics/analytics-concepts.md) bis zum Löschen aus der Datenbank.                                                                                                                                                                                                                                                                          |
+| Ablauf der Sitzungsdaten von Insight | Dieser Ablaufwert bestimmt die Anzahl der Minuten zwischen der Erstellung der Daten der Insight-Sitzung und dem Löschen aus der Datenbank.                                                                                                                                                                                                                                                                                                         |
+| Schritte Datenablauf | Dieser Ablaufwert bestimmt die Anzahl der Minuten zwischen der Erstellung der Daten von [Steps](analytics/analytics-concepts.md#steps) und dem Löschen aus der Datenbank.                                                                                                                                                                                                                                                                            |
 
-For more information about data expiration in Insights, read [Data Expiration](../../insights/ttl.md) in the Insights documentation.
+Weitere Informationen zum Datenablauf in Insights finden Sie unter [Datenablauf](.. /.. /insights/ttl.md) in der Insights-Dokumentation.
 
-It is also possible to set a server-wide maximum expiration time for all the sensitive data mentioned above. This is documented in the infrastructure documentation that is provided to customers upon installation.
+Es ist auch möglich, eine serverweite maximale Ablaufzeit für alle oben genannten sensiblen Daten festzulegen. Dies ist in der Infrastrukturdokumentation dokumentiert, die den Kunden bei der Installation zur Verfügung gestellt wird.
 
 ## Installation
 
-Further information about installing the Cognigy Management UI can be found on the [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui) page, by contacting your Cognigy sales representative or by sending an email with your question to info@cognigy.com.
+Weitere Informationen zur Installation der Cognigy Management-Benutzeroberfläche finden Sie auf der Seite [GitHub](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/README.md#install-management-ui), indem Sie sich an Ihren Cognigy-Vertriebsmitarbeiter wenden oder eine E-Mail mit Ihrer Frage an info@cognigy.com senden.

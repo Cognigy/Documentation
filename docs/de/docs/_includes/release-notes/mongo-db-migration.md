@@ -1,3 +1,2 @@
-!!! warning "Migration to MongoDB 5"
-    Starting with [v4.48](https://docs.cognigy.com/release-notes/4.48/), Cognigy.AI and Cognigy Insights fully support MongoDB 5. From our first release in July, we will no longer support MongoDB 4.4 and earlier versions.
-
+!!! Warnung "Migration auf MongoDB 5"
+    Ab [v4.48](https://docs.cognigy.com/release-notes/4.48/) unterstützen Cognigy.AI und Cognigy Insights MongoDB 5 vollständig. Ab unserer ersten Version im Juli werden MongoDB 4.4 und frühere Versionen nicht mehr unterstützt.

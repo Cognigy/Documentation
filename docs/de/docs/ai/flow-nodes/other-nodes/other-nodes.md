@@ -1,21 +1,21 @@
 ---
-title: "Other Nodes"
-slug: "other-nodes"
-hidden: false
+Titel: "Andere Knoten"
+Schnecke: "andere-Knoten"
+ausgeblendet: false
 ---
 
-# Other Nodes
+# Andere Knoten
 
-Nodes that did not fit into any category above:
+Knoten, die in keine der oben genannten Kategorien passten:
 
-- [Log Message](log-message.md)
-- [Overwrite Analytics](overwrite-analytics.md)
-- [Set Rating](set-rating.md)
-- [Set Translation](set-rating.md)
-- [Request Rating](request-rating.md)
-- [LLM Prompt](llm-prompt.md)
-- [GPT Conversation](gpt-conversation.md)
-- [Knowledge Search](knowledge-search.md)
-- [Search Extract Output](search-extract-output.md)
-- [Close Handover](close-handover.md)
-- [Set Handover Inactivity](set-handover-inactivity.md)
+- [Protokollmeldung](log-message.md)
+- [Analyse überschreiben](overwrite-analytics.md)
+- [Bewertung einstellen](set-rating.md)
+- [Übersetzung einstellen](set-rating.md)
+- [Bewertung anfordern](request-rating.md)
+- [LLM-Eingabeaufforderung](llm-prompt.md)
+- [GPT-Konversation](gpt-conversation.md)
+- [Wissenssuche](knowledge-search.md)
+- [Ausgabe des Suchextrakts](search-extract-output.md)
+- [Übergabe abschließen](close-handover.md)
+- [Übergabeinaktivität festlegen](set-handover-inactivity.md)

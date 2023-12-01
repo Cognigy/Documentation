@@ -1,55 +1,49 @@
 ---
-title: "RingCentral Engage" 
-slug: "ring-central-engage-handover" 
-hidden: false 
+Titel: "RingCentral Engage" 
+Slug: "Ring-Central-Engage-Handover" 
+ausgeblendet: false 
 ---
-# RingCentral Engage Integration
+# RingCentral Engage-Integration
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/ring-central-engage.svg" width="100%" />
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Cognigy hat **RingCentral Engage** als zusätzlichen Übergabeanbieter integriert
+, die von Cognigy-Kunden verwendet werden können, um ihre Benutzer mit menschlichen Agenten zu verbinden.
+Weitere Informationen zur Agentenübergabe finden Sie [hier](.. /.. /ai/tools/agent-handover.md). 
 
-<div class="divider"></div>
+## Einrichtung<div class="divider"></div>Um RingCentral Engage als Übergabeanbieter mit Cognigy.AI zu verwenden, gehen Sie zu Bereitstellen und öffnen Sie Ihre Endpunkte.
 
-Cognigy has integrated **RingCentral Engage** as an additional handover provider
-that can be used by Cognigy customers to connect their users with human agents.
-You can read more about Agent Handover [here](../../ai/tools/agent-handover.md). 
+Öffnen Sie den Endpunkt, an dem Sie die Übergabe an RingCentral Engage aktivieren möchten. Scrollen Sie nach unten zu **Übergabeeinstellungen** und wählen Sie RingCentral Engage aus.
 
-## Setup
-<div class="divider"></div>
-To start using RingCentral Engage as a handover provider with Cognigy.AI, go to Deploy and open your Endpoints.
+Um die Einrichtung abzuschließen, gehen Sie wie folgt vor:
+Siehe
+im Artikel [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration).
 
-Open the Endpoint where you would like to enable Handover to RingCentral Engage. Scroll down to **Handover Settings** and select RingCentral Engage.
+## Benutzerprofil an RingCentral Engage senden
 
-To complete your setup,
-see
-the [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration) article.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.29.0-blue.svg)] ({{config.site_url}})
 
-## Send User Profile to RingCentral Engage
+Während eines Übergabeereignisses wird das Benutzerprofil an RingCentral Engage gesendet, um hilfreiche Informationen für menschliche Agenten bereitzustellen.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.29.0-blue.svg)]({{config.site_url}})
+!!! Warnung "Profilfelder von Cognigy Profile und RingCentral Profile stimmen nicht genau überein"
+    Das Cognigy-Benutzerprofil wird an RingCentral Engage gesendet und mit den in RingCentral Engage vorhandenen Objektschlüsseln abgeglichen. Die Informationen, die nicht übereinstimmen, werden dem Objekt "context_data" hinzugefügt. 
 
-During a Handover event, the User Profile is sent to RingCentral Engage to provide helpful information to human agents.
+- [RingCentral Engage akzeptierte Benutzerprofilobjektstruktur](https://developers.ringcentral.com/engage/digital/guide/sdks/source-sdk/objects#users), die während der Übergabe gesendet wurde.
+    - [Cognigy-Profilschema]({{config.site_url}}ai/resources/manage/contact-profiles/?h=profile#manage-contact-profiles). Das Cognigy-Profilschema kann bearbeitet und zusätzliche Felder mit bestimmten Objektschlüsseln hinzugefügt werden.
 
-!!! warning "Profile fields of Cognigy Profile and RingCentral Profile do not match exactly"
-    Cognigy User Profile will be sent to RingCentral Engage and matched up with the object keys existing on RingCentral Engage. The information that was not matched will be added to the "context_data" object. 
+## Warteschlangen-Updates abrufen
 
-    - [RingCentral Engage accepted User Profile Object structure](https://developers.ringcentral.com/engage/digital/guide/sdks/source-sdk/objects#users) sent during the handover.
-    - [Cognigy Profile schema]({{config.site_url}}ai/resources/manage/contact-profiles/?h=profile#manage-contact-profiles). Cognigy Profile Schema can be edited and additional fields with specific object keys added.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.58.0-blue.svg)] ({{config.site_url}})
 
-## Get Queue Updates
+Die Einstellung **Warteschlangenaktualisierung abrufen** ermöglicht das Einfügen von Warteschlangenaktualisierungen als Ereignisse in den Konversationsfluss. Diese Funktion ermöglicht es Ihnen, auf Warteschlangenaktualisierungen in Ihrem Konversationsablauf zu reagieren.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.58.0-blue.svg)]({{config.site_url}})
+Zusätzlich zum Aktivieren der Option **Warteschlangenaktualisierung abrufen**
+Sie müssen den Suchknoten so konfigurieren, dass der Übergabetyp als **Warteschlange** ausgewählt ist. Weitere Informationen finden Sie unter [Übergabestatus](.. /flow-nodes/logic/lookup.md#handover-status) ein.
 
-The **Get Queue Update** setting enables the injection of queue updates into the conversation flow as events. This capability allows you to react to queue updates within your conversation flow.
+Die Warteschlangenaktualisierungen von RingCentral Engage sind im Objekt "input.data.handover" sichtbar. 
+Das Objekt enthält die folgenden Eigenschaften:
 
-In addition to enabling the **Get Queue Update** option,
-you need to configure the Lookup Node so that the handover type is selected as **Queue**. For more details, refer to the [Handover Status](../flow-nodes/logic/lookup.md#handover-status) section.
-
-The queue updates from RingCentral Engage are visible in the `input.data.handover` object. 
-The object contains the following properties:
-
-- `estimatedWaitTime` — the approximate wait time for the user, measured in milliseconds.
-- `position` — the conversation's position in the queue.
+- 'estimatedWaitTime' — die ungefähre Wartezeit für den Benutzer, gemessen in Millisekunden.
+- 'position' — die Position der Konversation in der Warteschlange.

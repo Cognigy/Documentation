@@ -1,38 +1,34 @@
 ---
- title: "Intent Up and Download" 
- slug: "Intent Up- and Download" 
- hidden: false 
+ Titel: "Intent Up und Download" 
+ slug: "Intent Up- und Download" 
+ ausgeblendet: false 
 ---
-# Intent Up and Download
+# Absicht nach oben und Download
 
-You can upload and download intents from Cognigy. Quickly import intents, edit them with your favourite spreadsheet tool or developer scripts or quickly move intents between flows.
+Sie können Intents von Cognigy hoch- und herunterladen. Importieren Sie schnell Intents, bearbeiten Sie sie mit Ihrem bevorzugten Tabellenkalkulationstool oder Entwicklerskripten oder verschieben Sie Intents schnell zwischen Flows.
 
-We currently support two formats
+Wir unterstützen derzeit zwei Formate
 
-## CSV
-<div class="divider"></div>
-Your CSV should be formatted as follows
+## CSV-Datei<div class="divider"></div>Ihre CSV-Datei sollte wie folgt formatiert sein
 
-* No header
-* We auto detect various CSV formats, if you have any issues use UTF-8 encoding, comma (`,`) as the delimiter  and double quotes ( `"`) as your quote character and newline (`\n`) as your line terminator
-* You will need to populate the following three columns:
+* Kein Header
+* Wir erkennen automatisch verschiedene CSV-Formate, wenn Sie Probleme haben, verwenden Sie UTF-8-Kodierung, Komma (',') als Trennzeichen und doppelte Anführungszeichen ( '"') als Anführungszeichen und Zeilenumbruch ('\n') als Zeilenabschlusszeichen
+* Sie müssen die folgenden drei Spalten ausfüllen:
 
-| Name	                             | Property type	                                                                                                                         | Value                                                                                        |
+| Bezeichnung: | Art der Immobilie | Wert |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| The intent name of type *string*	 | The type of property, corresponding to Cognigy intent properties<br/>*"exampleSentence" "defaultReply" "confirmationSentence" "rules"* | The value of the field, e.g., an example sentence utterance "I want pizza", of type *string* |
+| Der Intent-Name des Typs *string* | Der Typ der Eigenschaft, der den Absichtseigenschaften von Cognigy entspricht<br/>*"exampleSentence" "defaultReply" "confirmationSentence" "rules"* | Der Wert des Feldes, z.B. eine Beispielsatzäußerung "Ich will Pizza", vom Typ *string* |
 
-To illustrate:
+Zur Veranschaulichung:
 
 |              |                      |                                          |
 |--------------|----------------------|------------------------------------------|
-| rejectIntent | exampleSentence      | this sentence is invalid, and that is ok |
-| Intent1      | exampleSentence      | I want to go home                        |
-| Intent1      | defaultReply         | Ok go home then                          |
-| Intent1      | defaultReply         | Ok bye then                              |
-| Intent1      | confirmationSentence | Are you sure you want to go home?        |
-| Intent2      | exampleSentence      | I want to order a pizza with cheese      |
-| Intent2      | exampleSentence      | I am hungry                              |
+| rejectIntent | BeispielSatz | Dieser Satz ist ungültig, und das ist in Ordnung |
+| Absicht1 | BeispielSatz | Ich will nach Hause |
+| Absicht1 | defaultReply | Ok, dann geh nach Hause |
+| Absicht1 | defaultReply | Ok tschüss dann |
+| Absicht1 | confirmationSentence | Sind Sie sicher, dass Sie nach Hause wollen?        |
+| Absicht 2 | BeispielSatz | Ich möchte eine Pizza mit Käse bestellen |
+| Absicht 2 | BeispielSatz | Ich habe Hunger |
 
-## JSON
-<div class="divider"></div>
-The Cognigy Intent JSON format specifies your intents completely. For more details refer to our API documentation [here](https://api-trial.cognigy.ai/openapi#post-/v2.0).
+## JSON<div class="divider"></div>Das JSON-Format von Cognigy Intent spezifiziert Ihre Absichten vollständig. Weitere Informationen finden Sie in unserer API-Dokumentation [hier](https://api-trial.cognigy.ai/openapi#post-/v2.0).

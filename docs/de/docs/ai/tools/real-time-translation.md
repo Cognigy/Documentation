@@ -1,83 +1,83 @@
 ---
-title: "Real-time Translation" 
-slug: "real-time-translation" 
-hidden: false 
+Titel: "Echtzeit-Übersetzung" 
+Slug: "Echtzeit-Übersetzung" 
+ausgeblendet: false 
 ---
 
-# Real-time Translation
+# Echtzeit-Übersetzung
 
-_Real-time translation_ instantly converts languages during live conversations, eliminating the need for pre-translation, as usually required in typical [localization](../resources/manage/localization.md) scenarios.
+_Real-Time-translation_ konvertiert Sprachen während Live-Konversationen sofort, so dass keine Vorübersetzung erforderlich ist, wie sie normalerweise bei typischen [Lokalisierung](.. /resources/manage/localization.md) Szenarien.
 
-With the Real-time translation feature, there's no need to have agents who speak all the required languages for your business. You can focus on just two or three core languages, but at the same time, by utilizing Cognigy's real-time translation capabilities, you can provide service to customers in up to a hundred languages.
+Mit der Echtzeit-Übersetzungsfunktion benötigen Sie keine Agenten, die alle für Ihr Unternehmen erforderlichen Sprachen sprechen. Sie können sich auf nur zwei oder drei Kernsprachen konzentrieren, aber gleichzeitig können Sie durch die Nutzung der Echtzeit-Übersetzungsfunktionen von Cognigy Ihren Kunden Dienstleistungen in bis zu hundert Sprachen anbieten.
 
-You can configure the Real-time translation feature within the [Real Time Translation](../endpoints/real-time-translation-settings.md) settings in the Endpoint.
-Real-time translation can be configured for any Endpoint type, including voice Endpoints, such as the Voice Gateway.
+Sie können die Echtzeit-Übersetzungsfunktion innerhalb der [Echtzeit-Übersetzung](.. /endpoints/real-time-translation-settings.md) im Endpunkt.
+Die Echtzeitübersetzung kann für jeden Endpunkttyp konfiguriert werden, einschließlich Sprachendpunkten, wie z. B.dem Voice Gateway.
 
-Use this feature for translating a conversation between the following actors:
+Verwenden Sie diese Funktion, um eine Konversation zwischen den folgenden Akteuren zu übersetzen:
 
-- [users and virtual agents](#users-and-virtual-agents)
-- [users and human agents](#users-and-human-agents)
+- [Benutzer und virtuelle Agenten](#users-und-virtuelle-Agenten)
+- [Benutzer und menschliche Agenten](#users-und-menschliche-agenten)
 
-## Users and Virtual Agents
+## Benutzer und virtuelle Agenten
 
-Translation between a user and a virtual agent in real-time works for text-based and voice conversations.
+Die Übersetzung zwischen einem Benutzer und einem virtuellen Agenten in Echtzeit funktioniert für textbasierte und sprachbasierte Gespräche.
 
-### Webchat Endpoint Example
+### Beispiel für einen Webchat-Endpunkt
 
-Conditions:
+Bedingungen:
 
-- Webchat conversation with the **pre-selected** user language.
-- User's language is Russian.
+- Webchat-Konversation mit der **vorausgewählten** Benutzersprache.
+- Die Sprache des Benutzers ist Russisch.
 
-Result:
+Ergebnis:
 
-Virtual agent's content is translated into Russian in real time. Everything in the conversation is translated, including components like the date picker (day, month, week).
+Die Inhalte des virtuellen Agenten werden in Echtzeit ins Russische übersetzt. Alles in der Konversation wird übersetzt, einschließlich Komponenten wie die Datumsauswahl (Tag, Monat, Woche).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/preselected_user_language_1.png" width="70%" />
-  <figcaption>Webchat Real-time translation and pre-selected language for user inputs</figcaption>
+  <figcaption>Webchat Echtzeit-Übersetzung und vorgewählte Sprache für Benutzereingaben</figcaption>
 </figure>
 
-## Users and Human Agents
+## Benutzer und menschliche Agenten
 
-Conversations with real-time translation between the user and a human agent are recorded for compliance purposes.
+Unterhaltungen mit Echtzeitübersetzung zwischen dem Benutzer und einem menschlichen Agenten werden zu Compliance-Zwecken aufgezeichnet.
 
-In your Flow, a **Handover to Agent** Node must be added.
+In Ihrem Flow muss ein **Übergabeknoten an den Agenten** hinzugefügt werden.
 
-### Chatwoot Handover Example
+### Beispiel für eine Chatwoot-Übergabe
 
-Conditions:
+Bedingungen:
 
-- User's language is German. 
-- Human Agent's language is English.
+- Die Sprache des Nutzers ist Deutsch. 
+- Die Sprache von Human Agent ist Englisch.
 
-Result:
+Ergebnis:
 
-The Webchat conversation between a user and the virtual agent begins.
-At any point in the conversation, if the user expresses a desire to speak to a human agent,
-such as saying `I would like to talk to a human agent`,
-Cognigy Virtual Agent recognizes this intent, stops the Flow execution,
-and transfers the conversation to a Live Agent who can then take over and continue the interaction.
+Die Webchat-Konversation zwischen einem Benutzer und dem virtuellen Agenten beginnt.
+Wenn der Benutzer zu irgendeinem Zeitpunkt in der Konversation den Wunsch äußert, mit einem menschlichen Agenten zu sprechen,
+wie z.B. zu sagen: "Ich würde gerne mit einem menschlichen Agenten sprechen",
+Cognigy Virtual Agent erkennt diese Absicht, stoppt die Flow-Ausführung,
+und übergibt die Konversation an einen Live-Agenten, der dann die Interaktion übernehmen und fortsetzen kann.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/Webchat_1.png" width="70%" />
-  <figcaption>Webchat conversation with a users handover request</figcaption>
+  <figcaption>Webchat-Konversation mit einem Übergabeantrag des Benutzers</figcaption>
 </figure>
 
-The chat flow process between the user and the human agent, which involves real-time translation, proceeds as follows:
+Der Chat-Flow-Prozess zwischen dem Benutzer und dem menschlichen Agenten, der eine Echtzeitübersetzung beinhaltet, läuft wie folgt ab:
 
-- The human agent sees real-time translated user inputs in English and responds in English.
-- The user receives real-time translated responses from the human agent in German within their Webchat application and replies in German.
+- Der menschliche Agent sieht in Echtzeit übersetzte Benutzereingaben auf Englisch und antwortet auf Englisch.
+- Der Benutzer erhält in Echtzeit übersetzte Antworten des menschlichen Agenten auf Deutsch innerhalb seiner Webchat-Anwendung und Antworten auf Deutsch.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/real-time_translation_Webchat-Live_Agent_4.png" width="100%" />
-  <figcaption>A human agent (English) conversation with a user (German) in real-time translation</figcaption>
+  <figcaption>Ein menschliches Agentengespräch (Englisch) mit einem Benutzer (Deutsch) in Echtzeit-Übersetzung</figcaption>
 </figure>
 
-By clicking Resolve, the human agent can close the conversation, and the user is returned to the virtual agent conversation as before.
+Wenn Sie auf "Auflösen" klicken, kann der menschliche Agent die Konversation schließen, und der Benutzer kehrt wie zuvor zur Konversation des virtuellen Agenten zurück.
 
-## More Information
+## Mehr Informationen
 
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
-- [Automatic Translation](auto-localization.md)
-- [Localization](../resources/manage/localization.md)
+- [Echtzeit-Übersetzungseinstellungen](.. /endpoints/real-time-translation-settings.md)
+- [Automatische Übersetzung](auto-localization.md)
+- [Lokalisierung](.. /resources/manage/localization.md)

@@ -1,139 +1,131 @@
 ---
 title: "Lookup" 
-slug: "lookup" 
-hidden: false 
+Schnecke: "Nachschlagen" 
+ausgeblendet: false 
 ---
-# Lookup
+# Nachschlagen
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../../release-notes/4.58.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.58-blue.svg)] (.. /.. /.. /release-notes/4.58.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein **Lookup-Knoten** wird verwendet, um verschiedene Flow-Pfade basierend auf einem ausgewählten Operanden zu erstellen.
 
-A **Lookup Node** is used to create different Flow paths, based on a chosen operand.
+Der 'Operand' kann manuell auf 'Intent', 'State', 'Type' und 'Mode' gesetzt werden, oder auf ein benutzerdefiniertes 'CognigyScript'. In den angehängten Fallknoten werden die spezifischen Werte für den ausgewählten Operanden eingetragen. Der Operand wird während der Ausführung des Flows ausgewertet, und das Ergebnis wird mit den Werten der einzelnen Fälle verglichen. Wenn es eine Übereinstimmung gibt, wird der Flow-Pfad des übereinstimmenden Falls ausgeführt. Wenn es keine Übereinstimmung mit der Groß-/Kleinschreibung gibt, wird der Pfad des **Default Node** ausgeführt.
 
-The `operand` can be set manually to `Intent`, `State`, `Type` and `Mode`, or custom `CognigyScript`. In the appended Case Nodes, the specific values for the selected operand are entered. The operand is evaluated during the execution of the Flow, and the result is compared with the values of each case. If there is a match, the Flow path of the matched case will be executed. If there is no case match, the path of the **Default Node** will be executed.
+Wenn Sie CognigyScript als Operanden auswählen, müssen Sie ein direktes CognigyScript verwenden, das dem [If-Knoten](.. /logic/if.md). Sie können auch auswählen, ob das CognigyScript als Zeichenfolge analysiert werden soll oder nicht.
 
-If you choose CognigyScript as the operand, you must use direct CognigyScript similar to the [If Node](../logic/if.md). You can also select to parse the CognigyScript as a string or not.
+!!! Warnung "Groß-/Kleinschreibung beachten"
+    Bei allen Lookup-Case-Knoten wird zwischen Groß- und Kleinschreibung unterschieden. Achten Sie darauf, die richtige Groß- oder Kleinschreibung im Feld **Wert** Ihrer Fallknoten zu verwenden.
 
-!!! warning "Case Sensitivity"
-    All Lookup Case Nodes are case sensitive. Be careful to use the correct upper or lower case spelling in the **Value** field of your Case Nodes.
+### Eine Alternative zu verschachtelten IF-Knoten
 
-### An alternative to nested IF Nodes
+**Nachschlageknoten** werden verwendet, wenn die Anzahl der möglichen Optionen zu groß wird, um If-Knoten zu verwenden. 
 
-**Lookup Nodes** are used if the number of possible options becomes too large to use If Nodes. 
+Anstatt if 'input.intent === "orderFood"' then x, else -> 'input.intent === "orderDrink"', else -> 'input.intent === "askHelp"', else ..., zu sagen, können Sie einfach ein **Lookup on Intent** mit mehreren Fällen ('orderFood', 'orderDrink', 'askHelp') und einem Standardwert verwenden.
 
-Instead of saying if `input.intent === "orderFood"` then x, else -> `input.intent === "orderDrink"`, else -> `input.intent === "askHelp"`, else ..., you can simply use a **Lookup on Intent** with multiple cases (`orderFood`, `orderDrink`, `askHelp`) and a default.
+## Typ der Suche<div class="divider"></div>### Absicht 
 
-## Lookup Type
-<div class="divider"></div>
+Dies ist die Standardeinstellung für den **Lookup-Knoten** und ermöglicht es Ihnen, die ausgelöste Absicht einfach nachzuschlagen. 
 
-### Intent 
+Standardmäßig wird die Absicht am detailliertesten **[Absichtshierarchie](.. /.. /nlu/nlu-overview/intent-hierarchy.md)** übereinstimmt. In diesem Fall sind die Intents aller drei Ebenen im Dropdown-Menü Intent der Case Nodes auswählbar.
 
-This is the default setting for the **Lookup Node**, and it allows you to easily look up the Intent that has been triggered. 
-
-By default, the Intent at the most detailed **[Intent Hierarchy](../../nlu/nlu-overview/intent-hierarchy.md)** level is matched. In this case, the Intents of all three levels are selectable in the Intent dropdown menu of the Case Nodes.
-
-However, you can also select a level via the "Intent Level" dropdown if Intents should only be matched on a certain hierarchy level.
-In this case, only the Intents of the chosen level are selectable in the Intent dropdown menu of the Case Nodes.
+Sie können aber auch über das Dropdown "Intent Level" eine Ebene auswählen, wenn Intents nur auf einer bestimmten Hierarchieebene abgeglichen werden sollen.
+In diesem Fall können nur die Intents der gewählten Ebene im Dropdown-Menü Intent der Case Nodes ausgewählt werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-intent.png" width="100%" />
-  <figcaption>An intent type Lookup Node with 3 cases</figcaption>
+  <figcaption>Ein Suchknoten vom Typ "Intent" mit 3 Fällen</figcaption>
 </figure>
 
-!!! note "Want to know more about using Intents?"
-    Find more information about building Flows with intents on the **[NLU Overview Page](../../nlu/nlu-overview/overview.md)**.
+!!! Hinweis "Möchten Sie mehr über die Verwendung von Intents erfahren?"
+    Weitere Informationen zum Erstellen von Flows mit Absichten finden Sie auf der **[NLU-Übersichtsseite](.. /.. /nlu/nlu-overview/overview.md)**.
 
 ### Text
 
-By changing the lookup type to **Text**, the Flow will select a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
+Wenn Sie den Suchtyp in **Text** ändern, wählt der Flow eine Groß-/Kleinschreibung aus, die dem Wert von "input.text" entspricht. Die Fallwerte müssen für diese Art der Suche manuell geschrieben werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-text.png" width="100%" />
-  <figcaption>A Text type Lookup Node with 2 cases</figcaption>
+  <figcaption>Ein Nachschlageknoten vom Typ Text mit 2 Fällen</figcaption>
 </figure>
 
-### State
+### Zustand
 
-By changing the lookup type to **[State](../../tools/interaction-panel/state.md)**, the Flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
+Durch Ändern des Suchtyps in **[State](.. /.. /tools/interaction-panel/state.md)** wählen, wählt der Flow einen Fall aus, der dem Wert von 'input.state' entspricht. Die Fallwerte müssen für diese Art der Suche manuell geschrieben werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-state.png" width="100%" />
-  <figcaption>A State type Lookup Node with 3 cases</figcaption>
+  <figcaption>Ein Suchknoten vom Typ Status mit 3 Fällen</figcaption>
 </figure>
 
-!!! note "What is State??"
-    States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. Find out more on the **[States Page]({{config.site_url}}ai/tools/interaction-panel/state/)**.
+!!! Notiz "Was ist Staat??"
+    Zustände erlauben das Festlegen von Einschränkungen für eine Konversation, die die gültigen Absichten einschränken, auf die die NLU Zugriff hat. Weitere Informationen finden Sie auf der **[States Page]({{config.site_url}}ai/tools/interaction-panel/state/)**.
 
-### Type
+### Typ
 
-By changing the lookup type to **Type**, the Flow will select a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
+Wenn Sie den Suchtyp in **Type** ändern, wählt der Flow eine Groß-/Kleinschreibung aus, die dem Wert von "input.type" entspricht. Die Fallwerte müssen für diese Art der Suche manuell geschrieben werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-type.png" width="100%" />
-  <figcaption>A Type Lookup Node with 3 cases</figcaption>
+  <figcaption>Ein Type Lookup Node mit 3 Fällen</figcaption>
 </figure>
 
-!!! note "What is Type?"
-    The **Type** is defined as a classification of the last user message as determined by the NLU. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer.* 
+!!! Hinweis "Was ist Typ?"
+    Der **Typ** ist definiert als eine Klassifizierung der letzten Benutzernachricht, die von der NLU festgelegt wird. Der Typ ist eine [Input]({{config.site_url}}ai/tools/interaction-panel/input/)-Variable, die einen der folgenden Werte annehmen kann: *Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer oder nAnswer.* 
 
-### Mode
+### Modus
 
-By changing the lookup type to **Mode**, the Flow will select a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
+Wenn Sie den Suchtyp in **Mode** ändern, wählt der Flow einen Fall aus, der dem Wert von "input.mode" entspricht. Die Fallwerte müssen für diese Art der Suche manuell geschrieben werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-mode.png" width="100%" />
-  <figcaption>A Mode type Lookup Node with 2 cases</figcaption>
+  <figcaption>Ein Lookup-Knoten vom Typ Modus mit 2 Fällen</figcaption>
 </figure>
 
-!!! note "What is Mode?"
-    The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+!!! Hinweis "Was ist der Modus?"
+    Der **Modus** gibt Auskunft darüber, was in der letzten Benutzernachricht enthalten war. Der Typ ist eine [Input]({{config.site_url}}ai/tools/interaction-panel/input/)-Variable, die einen der folgenden Werte annehmen kann: *TextOnly oder TextData.* (Nur-Daten-Nachrichten haben einen implizit definierten Text, der 'DATA_ONLY_MESSAGE_' gefolgt von einer zufällig generierten Zeichenfolge von 20 Zeichen enthält)
 
-### Handover Status
+### Status der Übergabe
 
-By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for type of lookup.
+Wenn Sie den Suchtyp in **Übergabestatus** ändern, wählt der Flow einen Fall aus, der dem Wert von "input.handover.status" entspricht. Die case-Werte müssen manuell für den Typ der Suche geschrieben werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-handover-status.png" width="100%" />
-  <figcaption>A Handover Status type Lookup Node with 4 cases</figcaption>
+  <figcaption>Ein Suchknoten vom Typ "Übergabestatus" mit 4 Fällen</figcaption>
 </figure>
 
-The table below shows handover statuses that you can select in the Case Node.
+Die folgende Tabelle zeigt die Übergabestatus, die Sie im Fallknoten auswählen können.
 
-| Status    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Restrictions                                                                                                                                                                                                                                                |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Completed | Conversations are resolved successfully. Agent assistance is provided.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | -                                                                                                                                                                                                                                                           |
-| Cancelled | Conversations are ended by users, indicating termination before resolution.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | -                                                                                                                                                                                                                                                           |
-| Error     | Conversations are encountering issues. This issues could be technical, communicative, or related to misinformation. Human agents work to address the issue and guide the conversation back to its intended course.                                                                                                                                                                                                                                                                                                                                           | -                                                                                                                                                                                                                                                           |
-| Events    | Conversations are triggered by specific occurrences significant to the conversation. These could be time-sensitive events, important updates, or prompts that guide the conversation's direction or provide additional context.                                                                                                                                                                                                                                                                                                                              | -                                                                                                                                                                                                                                                           |
-| Active    | Conversations are actively managed by a human agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | -                                                                                                                                                                                                                                                           |
-| Queue     | Conversations are on hold, awaiting agent assignment. The end user can receive a message if a Say Node is placed under the Case Node. The Say Node should contain the following text:<br/><br><code>Estimated time:  {{"{{input?.handover?.data?.estimatedWaitTime / 1000}}"}} seconds</code><br><code>Position: {{"{{input?.handover?.data?.position}}"}}</code><br> <br> Where `Estimated time` is the approximate duration in seconds that the user must wait for a response from a human agent, and `Position` is the conversation's order in the queue. | The status is applicable only to the [RingCentral Engage](../../handover-providers/ringcentralengage-handover.md) provider when the the [Get Queue Updates](../../handover-providers/ringcentralengage-handover.md#get-queue-updates) setting is activated. |
+| Status | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Einschränkungen                                                                                                                                                                                                                                                |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Abgeschlossen | Konversationen werden erfolgreich gelöst. Agentenunterstützung wird angeboten.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | -                                                                                                                                                                                                                                                           |
+| Abgesagt | Unterhaltungen werden von Benutzern beendet, was auf eine Beendigung vor der Lösung hinweist.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | -                                                                                                                                                                                                                                                           |
+| Fehler | Gespräche stoßen auf Probleme. Diese Probleme können technischer, kommunikativer Natur sein oder mit Fehlinformationen zusammenhängen. Menschliche Agenten arbeiten daran, das Problem zu beheben und das Gespräch wieder in die gewünschte Richtung zu lenken.                                                                                                                                                                                                                                                                                                                                           | -                                                                                                                                                                                                                                                           |
+| Veranstaltungen | Unterhaltungen werden durch bestimmte Ereignisse ausgelöst, die für die Konversation von Bedeutung sind. Dabei kann es sich um zeitkritische Ereignisse, wichtige Aktualisierungen oder Eingabeaufforderungen handeln, die die Richtung der Konversation vorgeben oder zusätzlichen Kontext bereitstellen.                                                                                                                                                                                                                                                                                                                              | -                                                                                                                                                                                                                                                           |
+| Aktiv | Konversationen werden aktiv von einem menschlichen Agenten verwaltet.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | -                                                                                                                                                                                                                                                           |
+| Warteschlange | Unterhaltungen werden angehalten und warten auf die Zuweisung durch einen Agenten. Der Endbenutzer kann eine Nachricht erhalten, wenn ein Say-Knoten unter dem Case-Knoten platziert wird. Der Say-Knoten sollte den folgenden Text enthalten:<br/><br><code>Estimated time:  {{"{{input?.handover?.data?.estimatedWaitTime / 1000}}"}} seconds</code><br><code>Position: {{"{{input?.handover?.data?.position}}"}}</code><br> <br>Dabei ist "Geschätzte Zeit" die ungefähre Dauer in Sekunden, die der Benutzer auf eine Antwort eines menschlichen Agenten warten muss, und "Position" ist die Reihenfolge der Konversation in der Warteschlange. | Der Status gilt nur für [RingCentral Engage](.. /.. /handover-providers/ringcentralengage-handover.md), wenn die [Get Queue Updates](.. /.. /handover-providers/ringcentralengage-handover.md#get-queue-updates) aktiviert ist. |
 
 ### CognigyScript
-By changing the lookup type to **CognigyScript**, the Flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
+Wenn Sie den Suchtyp in **CognigyScript** ändern, wählt der Flow einen Fall aus, der mit dem Wert einer beliebigen Variablen übereinstimmt, die in das Feld "Operator" eingegeben wird, entweder durch Verwendung eines *Tokens* oder durch Schreiben des Variablenpfads in *CognigyScript*. Diese Funktion ermöglicht es, den Flow-Pfad basierend auf einer beliebigen Variable in der 'Eingabe', 'Kontext' oder 'Profil' zu ändern. Die Fallwerte müssen für diese Art der Suche manuell geschrieben werden.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-cognigy-script.png" width="100%" />
-  <figcaption>Setting the Lookup type to CognigyScript</figcaption>
+<figure><img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-cognigy-script.png" width="100%" /><figcaption>Festlegen des Suchtyps</figcaption>
+  
+  
+</figure> auf CognigyScript <figure><figcaption>Ein Suchknoten vom Typ CognigyScript mit 3 Fällen basierend auf einer Profilvariablen</figcaption><img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-cognigy-script-example.png" width="100%" />
+  
+  
 </figure>
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-cognigy-script-example.png" width="100%" />
-  <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable</figcaption>
-</figure>
+!!! Tipp "Was ist CognigyScript?"
+    CognigyScript ist eine Obermenge von JavaScript, die den Zugriff auf die Input-, Context- und Profile-Objekte in Text und JSON ermöglicht. Weitere Informationen finden Sie im Abschnitt [CognigyScript](.. /.. /tools/cognigy-script.md) Seite.
 
-!!! tip "What is CognigyScript?"
-    CognigyScript is a superset of JavaScript that provides access to the Input, Context, and Profile objects within text and JSON. To learn more, read the [CognigyScript](../../tools/cognigy-script.md) page.
+### Status des Anrufereignisses
 
-### Call Event Status
+Wenn Sie den Suchtyp in **Anrufereignisstatus** ändern, wählt der Flow einen Fall aus, der dem Wert von "input.data.event" entspricht. Die Fallwerte müssen für diese Art der Suche manuell geschrieben werden.
 
-By changing the lookup type to **Call Event Status**, the Flow will select a case that matches the value of `input.data.event`. The case values must manually be written for this type of lookup.
+Im untergeordneten Suchknoten können Sie verschiedene Voice Gateway-Ereignisse behandeln, z. B. erkannte Sprache, erkanntes DTMF, Anruf erstellt, Anrufbeantwortererkennung und mehr.
 
-In the child Lookup Node, you can handle various Voice Gateway events, including Recognized Speech, Recognized DTMF, Call Created, Answering Machine Detection, and more.
-
-More information about these events you can find in the [Voice Gateway Events](../../../voicegateway/references/events/overview.md) reference.
+Weitere Informationen zu diesen Ereignissen finden Sie in der [Voice Gateway Events](.. /.. /.. /voicegateway/references/events/overview.md) Referenz.

@@ -1,14 +1,14 @@
 ---
- title: "Database" 
- slug: "database" 
- hidden: false 
+ Titel: "Datenbank" 
+ slug: "Datenbank" 
+ ausgeblendet: false 
 ---
 
-# Database
+# Datenbank
 
-The database used by Live Agent is PostgreSQL. It can either run inside the Kubernetes cluster as an additional workload, or outside the cluster. You can also use a fully managed solution for PostgreSQL.
+Die von Live Agent verwendete Datenbank ist PostgreSQL. Sie kann entweder innerhalb des Kubernetes-Clusters als zusätzliche Workload oder außerhalb des Clusters ausgeführt werden. Sie können auch eine vollständig verwaltete Lösung für PostgreSQL verwenden.
 
-Compatible and tested PostgreSQL versions **>= 10** and **<= 15**
+Kompatible und getestete PostgreSQL-Versionen **>= 10** und **<= 15**
 
 ## Postgres Variables
 

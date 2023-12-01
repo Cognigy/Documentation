@@ -1,50 +1,50 @@
 ---
-title: "Version Compatibility Matrix"
-slug: "cognigy-ai-version-compatibility-matrix"
-description: "Version compatibility matrix for Cognigy.AI and Infrastructure Components provides valuable insights and ensures seamless integration and upgrades for optimal performance."
-hidden: false
+Titel: "Versionskompatibilitätsmatrix"
+Slug: "Cognigy-AI-Version-Kompatibilitätsmatrix"
+Beschreibung: "Die Versionskompatibilitätsmatrix für Cognigy.AI- und Infrastrukturkomponenten liefert wertvolle Erkenntnisse und gewährleistet eine nahtlose Integration und Upgrades für eine optimale Leistung."
+ausgeblendet: false
 ---
 
-# Cognigy.AI and Insights: Version Compatibility Matrix
+# Cognigy.AI und Einblicke: Versionskompatibilitätsmatrix
 
-This matrix outlines the compatibility of Cognigy.AI and Insights product versions with Cognigy infrastructure components,
-such as Kubernetes, MongoDB, and Redis. 
+Diese Matrix beschreibt die Kompatibilität von Cognigy.AI- und Insights-Produktversionen mit Cognigy-Infrastrukturkomponenten.
+wie Kubernetes, MongoDB und Redis. 
 
 {! _includes/installation/on-prem-compatibility-matrix-note.md !}
 
-| Cognigy.AI + Insights /<br> Infra component | Kubernetes | MongoDB | Redis / Redis Persistent | Traefik | RabbitMQ | Helm          |
+| Cognigy.AI + Einblicke /<br> Infra-Komponente | Kubernetes | MongoDB | Redis / Redis Persistent | Traefik | RabbitMQ | Helm |
 |---------------------------------------------|------------|---------|--------------------------|---------|----------|---------------|
-| 4.46                                        | 1.19-1.24  | 4.2-4.4 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.47                                        | 1.19-1.24  | 4.2-4.4 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.48                                        | 1.19-1.24  | 4.4-5.0 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.49                                        | 1.19-1.24  | 4.4-5.0 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.50                                        | 1.19-1.24  | 4.4-5.0 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.51                                        | 1.19-1.25  | 4.4-5.0 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.52                                        | 1.19-1.25  | 4.4-5.0 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.53                                        | 1.19-1.25  | 4.4-5.0 | 7.0[^*]                  | 2.6     | 3.9      | 3.8 or higher |
-| 4.54                                        | 1.19-1.25  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.55                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.56                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.57                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.58                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.59                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.60                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.61                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.62                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.63                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.64                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
-| 4.65                                        | 1.19-1.26  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
+| 4,46 | 1,19-1,24 | 4,2-4,4 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,47 | 1,19-1,24 | 4,2-4,4 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,48 | 1,19-1,24 | 4,4-5,0 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,49 | 1,19-1,24 | 4,4-5,0 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| Nr. 4,50 | 1,19-1,24 | 4,4-5,0 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,51 | 1,19-1,25 | 4,4-5,0 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,52 | 1,19-1,25 | 4,4-5,0 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,53 | 1,19-1,25 | 4,4-5,0 | 7.0[^*] | 2,6 | 3,9 | 3.8 oder höher |
+| 4,54 | 1,19-1,25 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| Nr. 4,55 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,56 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,57 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,58 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,59 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| Nr. 4,60 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,61 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,62 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,63 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| Nr. 4,64 | 1,19-1,26 | 5,0 | 7.0[^**] | 2.10 | 3,9 | 3.9 oder höher |
+| 4,65 | 1,19-1,26 | 5,0 | 7.0[^***] | 2.10 | 3,9 | 3.9 oder höher |
 
-[^*]: Stand-alone deployment.
+[^*]: Eigenständiger Einsatz.
 
-[^**]: Both stand-alone and High Availability (HA) with Sentinel deployments.
+[^**]: Sowohl eigenständige als auch Hochverfügbarkeit (HA) mit Sentinel-Bereitstellungen.
 
-[^**]: High Availability (HA) with Sentinel deployment.
+[^**]: Hochverfügbarkeit (HA) mit Sentinel-Bereitstellung.
 
-## More Information
+## Mehr Informationen
 
-Version Compatibility Matrix:
+Versions-Kompatibilitäts-Matrix:
 
-- [Live Agent](../../live-agent/installation/deployment/version-compatibility-matrix.md)
-- [Agent Assist Workspace](../../ai-copilot/installation/version-compatibility-matrix.md)
-- [Voice Gateway](../../voicegateway/installation/version-compatibility-matrix.md)
+- [Live Agent](.. /.. /live-agent/installation/deployment/version-compatibility-matrix.md)
+- [Arbeitsbereich "Agent Assist"](.. /.. /ai-copilot/installation/version-compatibility-matrix.md)
+- [Sprach-Gateway](.. /.. /voicegateway/installation/version-compatibility-matrix.md)

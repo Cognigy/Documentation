@@ -1,78 +1,73 @@
 ---
- title: "REST" 
- slug: "rest" 
- hidden: false 
+ Titel: "REST" 
+ Schnecke: "Ruhe" 
+ ausgeblendet: false 
 ---
-# REST
+# AUSRUHEN
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/d4a23f8-EP_REST.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Rest** client by using our Rest Endpoint integration.
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihre Cognigy-Ressourcen mit Ihrem **Rest**-Client verbinden, indem Sie unsere REST-Endpunkt-Integration verwenden.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-## Connect your Application
+## Verbinden Sie Ihre Anwendung<div class="divider"></div>Nachdem Sie einen REST-Endpunkt erstellt haben, können Sie **POST**-Anforderungen an die **Endpunkt-URL** senden. Der Text der Anforderungen sollte das folgende Format haben:
 
-<div class="divider"></div>
-
-After creating a REST Endpoint you are able to send **POST** requests to the **Endpoint URL**. The body of the requests should have the following format:
-
-```JSON
+'''JSON
 {
-  "userId":"userId",
+  "userId":"Benutzer-ID",
   "sessionId": "someUniqueId",
-  "text":"message text",
-  "data": {
-    "key": "value"
+  "text":"Text der Nachricht",
+  "Daten": {
+    "key": "Wert"
   }
 }
-```
+'''
 
-**Parameters**
-*userId* - a user ID of the end user in form of a string
-*sessionId* - a unique ID that is used to track the current conversation in form of a string
-*text* - message text that should get processed by the assigned flow in form of a string
-*data* - message data that should get processed by the assigned flow in form of an object
+**Parameter**
+*userId* - eine Benutzer-ID des Endbenutzers in Form eines Strings
+*sessionId* - eine eindeutige ID, die verwendet wird, um die aktuelle Konversation in Form einer Zeichenfolge zu verfolgen
+*text* - Meldungstext, der vom zugewiesenen Flow in Form eines Strings verarbeitet werden soll
+*data* - Nachrichtendaten, die vom zugewiesenen Flow in Form eines Objekts verarbeitet werden sollen
 
-!!! note "Sending text and data"
-    By default, you can use the REST Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the REST Endpoint throws an error.
+!!! Hinweis "Senden von Text und Daten"
+    Standardmäßig können Sie den REST-Endpunkt verwenden, um entweder Text oder Daten an Ihren Flow zu senden. Sie können beide senden, aber mindestens eine ist erforderlich. Wenn ungültiger Text und ungültige Daten angegeben werden, löst der REST-Endpunkt einen Fehler aus.
 
-!!! tip "Session ID"
-    The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
+!!! Tipp "Session-ID"
+    Die sessionId ist ein eindeutiger Bezeichner, der verwendet wird, um den Status einer Konversation beizubehalten. Das bedeutet, dass Sie immer dann eine neue eindeutige ID generieren sollten, wenn eine neue Konversation beginnt, und nicht bei jeder Nachricht. Zu Testzwecken können Sie einen beliebigen Zeichenfolgenwert als sessionId verwenden und ihn jederzeit ändern, wenn eine neue Konversation beginnen soll.
 
+Die Antwort enthält den Ausgabetext, die Ausgabedaten und den outputStack, bei dem es sich um ein Array aller Flow-Ausgaben handelt. Da der Rest-Endpunkt alle Flow-Ausgaben (z. B. alle Say-Knoten) zu einer Text-/Datenausgabe verkettet, können Sie den outputStack für Debugging-Zwecke verwenden.
 
-The response contains the output text, output data and the outputStack, which is an array of all Flow outputs. Since the Rest Endpoint will concatenate all Flow Outputs (e.g. all Say Nodes) into one text / data output, you can use the outputStack for debugging purposes.
-
-```JSON
+'''JSON
 {
-    "text": "output2",
-    "data": {
-        "output": 2
+    "text": "Ausgabe2",
+    "Daten": {
+        "Ausgang": 2
     },
     "outputStack": [
         {
-            "text": "output 1",
-            "data": {
-                "output": 1
+            "text": "Ausgang 1",
+            "Daten": {
+                "Ausgang": 1
             }
         },
         {
-            "text": "output 2",
-            "data": {
-                "output": 2
+            "text": "Ausgang 2",
+            "Daten": {
+                "Ausgang": 2
             }
         }
     ]
 }
-```
+'''
 
-!!! note "AI Default Channel Formats"
-    You can find out more about the format for the default channels [**here**]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/)
+!!! Hinweis "AI-Standardkanalformate"
+    Weitere Informationen zum Format für die Standardkanäle finden Sie [**hier**]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/)

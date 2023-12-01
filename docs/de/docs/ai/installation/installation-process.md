@@ -1,56 +1,54 @@
 ---
-title: "Installation Process"
-slug: "installation-process"
-hidden: false
+Titel: "Installationsprozess"
+slug: "Installations-Prozess"
+ausgeblendet: false
 ---
-# Install Cognigy.AI
+# Cognigy.AI installieren
 
-## Install Helm Charts 
+## Helm Charts installieren 
 
-To install Cognigy.AI perform following steps: 
+Führen Sie zur Installation Cognigy.AI folgenden Schritte aus: 
 
-1. Install MongoDB database with [MongoDB Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-mongodb-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-mongodb-helm-chart#readme)
-2. Install Cognigy.AI with [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart). For up-to-date installation instructions refer to [README.md](https://github.com/Cognigy/cognigy-ai-helm-chart#readme)
+1. Installieren Sie die MongoDB-Datenbank mit [MongoDB Helm Chart for Cognigy.AI](https://github.com/Cognigy/cognigy-mongodb-helm-chart). Aktuelle Installationsanweisungen finden Sie unter [README.md](https://github.com/Cognigy/cognigy-mongodb-helm-chart#readme)
+2. Installieren Sie Cognigy.AI mit [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart). Aktuelle Installationsanweisungen finden Sie unter [README.md](https://github.com/Cognigy/cognigy-ai-helm-chart#readme)
 
-
-Once both Helm releases are successfully installed, you can open a web-browser and visit the URL which you have set in `serviceUi.host` parameter Cognigy.AI Helm release. You should be able to see the login screen of Cognigy.AI frontend application:
+Sobald beide Helm-Versionen erfolgreich installiert sind, können Sie einen Webbrowser öffnen und die URL aufrufen, die Sie im Parameter 'serviceUi.host' Cognigy.AI Helm-Version festgelegt haben. Sie sollten in der Lage sein, den Anmeldebildschirm Cognigy.AI Frontend-Anwendung zu sehen:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-login-screen.png" width="90%" />
-  <figcaption>Login screen of Cognigy.AI v4</figcaption>
+  <figcaption>Anmeldebildschirm von Cognigy.AI v4</figcaption>
 </figure>
 
-## Retrieve Login Credentials
+## Anmeldedaten abrufen
 
-Once you are able to see the Congigy.AI login screen you might wonder which credentials can be used to log in. We chose not to add default `admin` user with static-credentials as such users will often not get properly removed from systems and leave software products exposed to potential security attacks. Our system creates random credentials on startup if no credentials exist within the system yet. The credentials will get printed into `service-security` deployment logs during its first start-up, to retrieve the initial credentials execute: 
-```
-kubectl logs -f -n=cognigy-ai --tail 100 deployment/service-security
-```
-You should see something along the following lines with initial user credentials (email and password): 
-```
-{"level":"info","time":"2022-07-18T14:07:53.328Z","name":"SECURITY","message":"This is the initial user account you can use to login","meta":{},"traceId":""}
+Sobald Sie den Congigy.AI Anmeldebildschirm sehen, fragen Sie sich vielleicht, mit welchen Anmeldeinformationen Sie sich anmelden können. Wir haben uns dafür entschieden, keinen standardmäßigen "Admin"-Benutzer mit statischen Anmeldeinformationen hinzuzufügen, da solche Benutzer oft nicht ordnungsgemäß aus Systemen entfernt werden und Softwareprodukte potenziellen Sicherheitsangriffen ausgesetzt sind. Unser System erstellt beim Start zufällige Anmeldeinformationen, wenn noch keine Anmeldeinformationen im System vorhanden sind. Die Anmeldeinformationen werden beim ersten Start in die Bereitstellungsprotokolle "Service-Security" gedruckt, um die anfänglichen Anmeldeinformationen wie folgt abzurufen: 
+'''
+kubectl logs -f -n=cognigy-ai --tail 100 Bereitstellung/Dienstsicherheit
+'''
+Sie sollten etwas in der Art der folgenden Zeilen mit den anfänglichen Benutzeranmeldeinformationen (E-Mail-Adresse und Kennwort) sehen: 
+'''
+{"level":"info","time":"2022-07-18T14:07:53.328Z","name":"SECURITY","message":"Dies ist das erste Benutzerkonto, mit dem Sie sich anmelden können","meta":{},"traceId":""}
 {"level":"info","time":"2022-07-18T14:07:53.328Z","name":"SECURITY","message":"email: userc3c6ee0f61@cognigy.com","meta":{},"traceId":""}
 {"level":"info","time":"2022-07-18T14:07:53.328Z","name":"SECURITY","message":"password: 1caf47b6b79efc59d5f11fde0669b261aA1!","meta":{},"traceId":""}
-```
+'''
 
-It may happen that `service-security` deployment gets restarted several times during provisioning and the initial logs are not visible anymore. If `service-security` has restarted only once, you can obtain the logs of the previous container with `--previous` flag:
-```
-kubectl logs -n=cognigy-ai --previous deployment/service-security
-```
-If `service-security` was restarted several times, to reset init user credentials you will need to drop `service-security` database in MongoDB database and restart `service-security` deployment. 
+Es kann vorkommen, dass die Bereitstellung der Dienstsicherheit während der Bereitstellung mehrmals neu gestartet wird und die anfänglichen Protokolle nicht mehr sichtbar sind. Wenn 'service-security' nur einmal neu gestartet wurde, können Sie die Protokolle des vorherigen Containers mit dem Flag '--previous' abrufen:
+'''
+kubectl logs -n=cognigy-ai --vorherige Bereitstellung/Dienstsicherheit
+'''
+Wenn "service-security" mehrmals neu gestartet wurde, müssen Sie zum Zurücksetzen der init-Benutzeranmeldeinformationen die "service-security"-Datenbank in der MongoDB-Datenbank löschen und die "service-security"-Bereitstellung neu starten. 
 
-**IMPORTANT: All Organizations and Users will be lost during this process. Perform it only during initial Cognigy.AI setup**.  Here is a separate document on how to [Reset Initial Credentials](reset-init-user-credentials.md)
+**WICHTIG: Alle Organisationen und Benutzer gehen während dieses Vorgangs verloren. Führen Sie dies nur während der Ersteinrichtung Cognigy.AI** durch.  Hier finden Sie ein separates Dokument zum [Zurücksetzen der anfänglichen Anmeldeinformationen](reset-init-user-credentials.md)
 
-## License Key Activation
-Once you obtained the initial user credentials, visit the web interface of Cognigy.AI, but replace the URL ending `/login` with `/license`. This will open our license activation screen which looks quite similar to the login-form but with an additional license-key field:
+## Aktivierung des Lizenzschlüssels
+Sobald Sie die anfänglichen Benutzeranmeldeinformationen erhalten haben, besuchen Sie die Weboberfläche von Cognigy.AI, aber ersetzen Sie die URL mit der Endung "/login" durch "/license". Dadurch öffnet sich unser Lizenzaktivierungsbildschirm, der dem Anmeldeformular sehr ähnlich sieht, aber ein zusätzliches Lizenzschlüsselfeld enthält:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/cognigy-ai-license-key.png" width="90%" />
-  <figcaption>Activating Cognigy.AI Product License</figcaption>
+  <figcaption>Aktivieren Cognigy.AI Produktlizenz</figcaption>
 </figure>
 
+Fügen Sie die anfänglichen Anmeldeinformationen (E-Mail-Adresse und Passwort) und Ihren Lizenzschlüssel ein (einschließlich der beiden Trennzeichen '====BEGIN LICENSE====' und '=====END LICENSE=====') und klicken Sie auf 'Lizenz aktivieren'. Wenn alles funktioniert hat, leitet die Anwendung auf den Anmeldebildschirm weiter, auf dem Sie sich anmelden können, um endlich Cognigy.AI zu verwenden.
 
-Paste initial credentials (email and password) and your license-key (including both `====BEGIN LICENSE====` and `=====END LICENSE=====` delimiters) and click on `Activate license`. If everything worked, the application will redirect to the login screen on which you can log in to finally get start to use Cognigy.AI.
-
-!!! warning "Limited Windows support"
-    If you open and save the file with the license key on a Windows machine it may become corrupted with hidden windows characters. Use a Linux machine to copy the license or a Windows text editor which can handle linux files properly, e.g. [Notepad++](https://notepad-plus-plus.org/)
+!!! Warnung "Eingeschränkte Windows-Unterstützung"
+    Wenn Sie die Datei mit dem Lizenzschlüssel auf einem Windows-Computer öffnen und speichern, kann sie mit versteckten Windows-Zeichen beschädigt werden. Verwenden Sie einen Linux-Rechner, um die Lizenz zu kopieren, oder einen Windows-Texteditor, der Linux-Dateien korrekt verarbeiten kann, z.B. [Notepad++](https://notepad-plus-plus.org/)

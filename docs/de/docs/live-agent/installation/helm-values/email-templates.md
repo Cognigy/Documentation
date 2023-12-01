@@ -1,62 +1,56 @@
 ---
- title: "Email Templates" 
- slug: "email-templates" 
- hidden: false 
- ignore_macros: true
+ title: "E-Mail-Vorlagen" 
+ Slug: "E-Mail-Vorlagen" 
+ ausgeblendet: false 
+ ignore_macros: wahr
 ---
 
-# Email Templates
+# E-Mail-Vorlagen
 
-Live Agent allows customization of email notifications.
+Live Agent ermöglicht die Anpassung von E-Mail-Benachrichtigungen.
 
-To customize the email notifications, follow the instructions below. To update the content, you have to add a new template in the Database, here is how you can do it.
+Um die E-Mail-Benachrichtigungen anzupassen, befolgen Sie die folgenden Anweisungen. Um den Inhalt zu aktualisieren, müssen Sie eine neue Vorlage in der Datenbank hinzufügen, hier erfahren Sie, wie Sie dies tun können.
 
-### 1. Login Into The Rails Console.
+### 1. Melden Sie sich bei der Rails-Konsole an.
 
-Attach a shell to the main Live Agent pod and run the following command:
+Fügen Sie eine Shell an den Haupt-Live Agent-Pod an und führen Sie den folgenden Befehl aus:
 
-```rb
-RAILS_ENV=production bundle exec rails console
-```
+'''rb
+RAILS_ENV=Produktions-Bundle exec rails-Konsole
+'''
 
-### 2. Create A New Template For The Emails. Execute The Following Commands.
+### 2. Erstellen Sie eine neue Vorlage für die E-Mails. Führen Sie die folgenden Befehle aus.
 
-```rb
+'''rb
 email_template = EmailTemplate.new
-email_template.name = 'conversation_assignment' # Accepts conversation_assignment, conversation_creation
-email_template.body = '// Enter your content'
-email_template.save!
-```
+email_template.name = 'conversation_assignment' # Akzeptiert conversation_assignment, conversation_creation
+email_template.body = '// Geben Sie Ihre Inhalte ein'
+email_template.sparen!
+'''
 
-#### Variables
+#### Variablen
 
-The template can receive 3 variables:
+Die Vorlage kann 3 Variablen empfangen:
 
-1. `user` - Use `{{ user.name }}` to get the username.
-2. `conversation` - Use `{{ conversation.display_id }}` to get the conversation ID
-3. `action_url` - This is the URL for the conversation.
+1. 'user' - Verwenden Sie '{{ user.name }}', um den Benutzernamen zu erhalten.
+2. 'conversation' - Verwenden Sie '{{ conversation.display_id }}', um die Konversations-ID zu erhalten
+3. "action_url" - Dies ist die URL für die Konversation.
 
-### Default content
+### Standardinhalt
 
-The default content of the above template is shown below.
+Der Standardinhalt der obigen Vorlage ist unten dargestellt.
 
-#### 1. Conversation Assignment
+#### 1. Konversations-Zuweisung
 
-```html
-<p>Hi {{user.available_name}},</p>
-<p>A new conversation has been assigned to you</p>
-<p> Click <a href="{{action_url}}">here</a> to get cracking.</p>
-```
+'''html<p>Hallo {{user.available_name}},</p>
+<p>Ihnen wurde eine neue Konversation zugewiesen</p>
+<p> Klicken Sie <a href="{{action_url}}">hier</a> , um loszulegen.</p>'''
 
-#### 2. Conversation Creation
+#### 2. Erstellung von Konversationen
 
-```html
-<p>Hi {{user.available_name}}</p>
+'''html<p>Hallo {{user.available_name}}</p>
 
-<p>A new conversation has been created in {{ inbox.name }}</p>
-<p>
-Click <a href="{{ action_url }}">here</a> to get cracking.
-</p>
-```
+<p>Eine neue Konversation wurde in {{ inbox.name }} erstellt.</p>
+<p>Klicken Sie <a href="{{ action_url }}">hier</a> , um loszulegen.</p>'''
 
-[Liquid templating engine](https://shopify.github.io/liquid/) is used internally, which means that all valid operators can also be used.
+[Flüssigkeits-Templating-Engine] (https://shopify.github.io/liquid/) wird intern verwendet, d.h. es können auch alle gültigen Operatoren verwendet werden.

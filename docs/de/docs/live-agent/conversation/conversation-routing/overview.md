@@ -1,17 +1,17 @@
 ---
-title: "Conversation Routing"
-slug: "conversation-routing"
-description: "With Cognigy Live Agent conversation routing, you can improve customer support by efficiently assigning conversations based on agent availability and workload. This feature helps enhance productivity and optimize resource utilization."
-hidden: false
+Titel: "Konversations-Routing"
+Slug: "Konversations-Routing"
+Beschreibung: "Mit der Konversationsweiterleitung von Cognigy Live Agent können Sie den Kundensupport verbessern, indem Sie Konversationen basierend auf der Verfügbarkeit und Arbeitsbelastung der Agenten effizient zuweisen. Diese Funktion trägt dazu bei, die Produktivität zu steigern und die Ressourcennutzung zu optimieren."
+ausgeblendet: false
 ---
 
-# Conversation Routing 
+# Konversations-Routing 
 
-_Conversation routing_ is the mechanism used to assign and distribute incoming conversations to the appropriate human agents for handling. It involves intelligent routing algorithms that consider factors like agent availability and workload to determine a recipient for each conversation. In Cognigy Live Agent, conversation routing ensures that conversations are efficiently directed to the right agents or teams, enabling timely and effective customer support. This feature optimizes resource utilization and enhances the productivity of human agents.
+_Conversation routing_ ist der Mechanismus, der verwendet wird, um eingehende Konversationen den entsprechenden menschlichen Agenten zur Bearbeitung zuzuweisen und zu verteilen. Dabei handelt es sich um intelligente Routing-Algorithmen, die Faktoren wie die Verfügbarkeit und Arbeitsbelastung der Agenten berücksichtigen, um einen Empfänger für jede Konversation zu bestimmen. In Cognigy Live Agent stellt die Konversationsweiterleitung sicher, dass Konversationen effizient an die richtigen Agenten oder Teams weitergeleitet werden, was einen zeitnahen und effektiven Kundensupport ermöglicht. Diese Funktion optimiert die Ressourcenauslastung und steigert die Produktivität menschlicher Agenten.
 
-In Live Agent, there are two routing modes:
+In Live Agent gibt es zwei Routing-Modi:
 
-- [Manual](manual-mode.md)
-- [Automatic](automatic-mode.md)
+- [Handbuch](manual-mode.md)
+- [Automatisch](automatic-mode.md)
 
-Conversation routing can consider a [limit per agent](../../settings/account-settings.md#conversation-limit-per-agent) applied to both Manual and Automatic modes and can only be set up for all Inboxes.
+Bei der Weiterleitung von Konversationen kann ein [Limit pro Agent](.. /.. /settings/account-settings.md#conversation-limit-per-agent) gilt sowohl für den manuellen als auch für den automatischen Modus und kann nur für alle Posteingänge eingerichtet werden.

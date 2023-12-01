@@ -1,193 +1,162 @@
 ---
- title: "Conversation Workflow" 
- slug: "conversation-workflow" 
- hidden: false 
+ Titel: "Konversations-Workflow" 
+ Slug: "Konversations-Workflow" 
+ ausgeblendet: false 
 ---
-# Conversation Workflow
+# Konversations-Workflow
 
-The customer initiates a Conversation from the website front end - through the Webchat widget.
+Der Kunde initiiert eine Konversation über das Frontend der Website - über das Webchat-Widget.
 
-For example, A customer types 'Hi'
-
+Beispiel: Ein Kunde gibt "Hallo" ein.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-1.png" width="100%" alt="Cognigy Webchat Widget" />
-  <figcaption>Cognigy Webchat Widget</figcaption>
+  <figcaption>Cognigy Webchat-Widget</figcaption>
 </figure>
 
+Eine automatisierte Antwort, die im Cognigy.AI Flow festgelegt wurde, wird sofort als Antwort auf dem Bildschirm angezeigt.
 
-An automated response set in the Cognigy.AI Flow will immediately be displayed on the screen as a reply.
+Sehen wir uns nun an, wie diese Nachricht im Agenten-Dashboard erfasst wird.
 
-Now let us look at how this message is captured in the Agent Dashboard.
-
-### Conversations
-<div class="divider"></div>
-
-Go to the home screen of Live Agent Agent Dashboard
-
+### Unterhaltungen<div class="divider"></div>Rufen Sie den Startbildschirm des Live Agent Agent-Dashboards auf
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-2.png" width="100%" alt="Live Agent Conversations" />
-  <figcaption>Conversations</figcaption>
+  <figcaption>Gespräche</figcaption>
 </figure>
 
+Klicken Sie auf das Symbol für die Sprechblase in der Seitenleiste. Klicken Sie dann auf Alle Konversationen. Gespräche, die Kunden initiiert haben, können hier eingesehen werden.
 
-Click on the Conversation bubble icon in the sidebar. Then click on All Conversations. Conversations which customers have initiated can be seen here.
-
-Now click on a specific Conversation. The Conversation will open with further details and actions available in the right-hand side panel.
+Klicken Sie nun auf eine bestimmte Konversation. Die Konversation wird mit weiteren Details und Aktionen geöffnet, die im rechten Seitenbereich verfügbar sind.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-3.png" width="100%" alt="Live Agent Conversations Details" />
-  <figcaption>Conversations Details</figcaption>
+  <figcaption>Details zu Unterhaltungen</figcaption>
 </figure>
 
-#### Show All Conversations: Inbox Settings
+#### Alle Konversationen anzeigen: Posteingangseinstellungen
 
-By default, users with the Agent role cannot see the "All" tab for all Conversations. However, there is a setting enabling it per Inbox. When enabled, the user can see all Conversations, including those from other Agents. Otherwise, access will be restricted.
+Standardmäßig können Benutzer mit der Rolle "Agent" die Registerkarte "Alle" nicht für alle Unterhaltungen sehen. Es gibt jedoch eine Einstellung, die dies pro Posteingang ermöglicht. Wenn diese Option aktiviert ist, kann der Benutzer alle Unterhaltungen sehen, einschließlich der Unterhaltungen anderer Agenten. Andernfalls wird der Zugriff eingeschränkt.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="Live Agent Conversations Details" />
-  <figcaption>Show All Inbox setting</figcaption>
+  <figcaption>Einstellung "Gesamten Posteingang anzeigen"</figcaption>
 </figure>
 
-### Assign Agent
-<div class="divider"></div>
+### Bearbeiter zuweisen<div class="divider"></div>Wenn der Posteingang erstellt wurde, ohne dass die Option "Automatisch zuweisen" ausgewählt ist, werden Konversationen nicht automatisch Agenten zugewiesen.
 
-If the Inbox has been created without 'auto assign' selected, Conversations will not be automatically assigned to Agents.
-
-Click on the drop-box within the Assigned Agent menu and select the Agent name. You can change the Agents assigned here at any time.
-
+Klicken Sie auf das Dropdown-Feld im Menü "Zugewiesener Agent" und wählen Sie den Namen des Agenten aus. Sie können die hier zugewiesenen Agenten jederzeit ändern.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-4.png" width="100%" alt="Live Agent Assign Agent" />
-  <figcaption>Assign Agent</figcaption>
+  <figcaption>Bearbeiter zuweisen</figcaption>
 </figure>
 
-
-### Assign Team
-<div class="divider"></div>
-
-Click on the drop-box within the Assigned Team menu and select the Team to which this Conversation belongs.
-
+### Team zuweisen<div class="divider"></div>Klicken Sie auf das Dropdown-Feld im Menü "Zugewiesenes Team" und wählen Sie das Team aus, zu dem diese Konversation gehört.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-5.png" width="100%" alt="Live Agent Assign Teams" />
-  <figcaption>Assign Teams</figcaption>
+  <figcaption>Zuweisen von Teams</figcaption>
 </figure>
 
-### Assign Priority
-<div class="divider"></div>
+### Priorität zuweisen<div class="divider"></div>Um einer Konversation in Live Agent eine Priorität zuzuweisen, gehen Sie wie folgt vor:
 
-To assign a priority to a conversation within Live Agent, do the following:
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Unterhaltungen** aus.
+3. Wählen Sie in der Liste **Posteingänge** einen Posteingang aus.
+4. Wählen Sie in der Liste **Konversationen** die Konversation aus, der Sie eine Priorität zuweisen möchten.
+5. Gehen Sie auf der rechten Seite des Konversationschats zu **Details > Konversationsaktionen**.
+6. Klicken Sie im Abschnitt **Priorität** auf **Priorität auswählen**.
+7. Scrollen oder tippen Sie, um nach einer Prioritätsstufe zu suchen, und klicken Sie dann auf die gewünschte Stufe. 
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. From the **Inboxes** list, select an Inbox.
-4. From the **Conversations** list, select your conversation where you want to assign a priority.
-5. On the right of the conversation chat, go to **Details > Conversation Actions**.
-6. Under the **Priority** section, click **Select priority**.
-7. Scroll or type to search for a priority level, then click the intended level. 
+Die Priorität wird der Konversation zugewiesen. Das Symbol der übereinstimmenden Prioritätsstufe ist jetzt für die Konversation in der Spalte "Unterhaltungen" sichtbar.
 
-The priority will be assigned to the conversation. The matching priority level's icon will now be visible for the conversation within the Conversations column.
+#### Unterhaltungen nach Priorität filtern
 
-#### Filter Conversations by Priority
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.62-blue.svg)] (.. /.. /release-notes/4.62.md)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
+Um Unterhaltungen nach Priorität zu filtern, gehen Sie wie folgt vor:
 
-To filter conversations by priority, do the following:
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Unterhaltungen** aus.
+3. Wählen Sie in der Liste **Posteingänge** einen Posteingang aus.
+4. Klicken Sie oben in der Liste **Konversationen** neben dem Namen des Posteingangs auf ! [filtern] (.. /.. /assets/icons/filter.svg).
+5. Wählen Sie im Fenster **Unterhaltungen filtern** die folgenden Optionen aus:<br>5.1 Wählen Sie in der Liste **Filter** die Option **Priorität** aus.<br>5.2 Wählen Sie in der Liste **Operator** als Filterbedingung **Gleich** oder **Ungleich** aus. Diese Operatoren geben an, ob Sie Unterhaltungen filtern möchten, die der angegebenen Prioritätsstufe entsprechen oder nicht.<br>5.3 Wählen Sie in der Liste **Auswählen** eine Prioritätsstufe aus, indem Sie entweder darauf klicken oder den Mauszeiger darüber bewegen und dann ++Eingabe++ drücken. Sie können mehrere Prioritäten aus der Liste auswählen.<br> 6. Klicken Sie auf **Filter anwenden**, um die Filtereinstellungen zu aktivieren.
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. From the **Inboxes** list, select an Inbox.
-4. At the top of the **Conversations** list next to the Inbox name click ![filter](../../assets/icons/filter.svg).
-5. In the **Filter Conversations** window, select the following options:<br>
-    5.1 In the **Filter** list, select **Priority**.<br>
-    5.2 In the **Operator** list, select **Equal to** or **Not Equal to** as the filter condition. These operators indicate whether you want to filter conversations that match or do not match the specified priority level.<br>
-    5.3 In the **Select** list, choose a priority level by either clicking it or hovering your cursor over it and then pressing ++enter++. You can select multiple priorities from the list.<br> 
-6. Click **Apply filters** to activate the filter settings.
+Die gefilterten Konversationen, die den aktivierten Prioritätsfiltereinstellungen entsprechen, werden in der Liste der Konversationen angezeigt.
 
-The filtered conversations, matching to the activated priority filter settings, will be displayed in the list of conversations.
+### Beschriftungen zuweisen<div class="divider"></div>Um einer Konversation in Live Agent ein Label zuzuweisen, gehen Sie wie folgt vor:
 
-### Assign Labels
-<div class="divider"></div>
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Unterhaltungen** aus.
+3. Wählen Sie in der Liste **Posteingänge** einen Posteingang aus.
+4. Wählen Sie in der Liste **Unterhaltungen** die Konversation aus, in der Sie ein Label hinzufügen möchten.
+5. Gehen Sie auf der rechten Seite des Konversationschats zu **Details > Konversationsaktionen**.
+6. Klicken Sie im Abschnitt **Konversationslabels** auf **Labels hinzufügen**.
+7. Scrollen oder tippen Sie, um nach einer Beschriftung zu suchen, und klicken Sie dann auf eine Beschriftung. Sie können mehrere Beschriftungen gleichzeitig hinzufügen. 
 
-To assign a label to a conversation within Live Agent, do the following:
+Die Bezeichnung wird der Konversation hinzugefügt.
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. From the **Inboxes** list, select an Inbox.
-4. From the **Conversations** list, select your conversation where you want to add a label.
-5. On the right of the conversation chat, go to **Details > Conversation Actions**.
-6. Under the **Conversation Labels** section, click **Add Labels**.
-7. Scroll or type to search for a label, then click a label. You can add multiple labels at once. 
+### Antwort senden<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.59-blue.svg)] (.. /.. /release-notes/4.59.md)
 
-The label will be added to the conversation.
+Um einem Benutzer im Unterhaltungschat zu antworten, geben Sie Ihre Nachricht in den Abschnitt **Antworten** ein.
 
-### Send a Response 
-<div class="divider"></div>
+Für eine schnelle Antwort können Sie vorgefertigte Antworten, Variablen oder eine Kombination aus beidem verwenden.
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
-
-To respond to a user in the conversation chat, type your message in the **Reply** section.
-
-For quick reply, you can use canned responses, variables, or a combination of both.
-
-By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button.
-The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
+Standardmäßig können Sie Nachrichten senden, indem Sie ++cmd+enter++ oder ++ctrl+enter++ drücken, anstatt auf die Schaltfläche **Senden** zu klicken.
+Die Taste ++enter++ wird für Zeilenumbrüche verwendet. Wenn Sie die Hotkey-Optionen ändern möchten, gehen Sie zu [Profileinstellungen](.. /profile-settings.md).
 
 <figure>
 <img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="80%" alt="Live Agent Conversations Reply" />
-  <figcaption>Reply to a Message</figcaption>
+  <figcaption>Auf eine Nachricht antworten</figcaption>
 </figure>
 
-### Send Quick Responses
+### Schnelle Antworten senden
 
-For quick reply to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
+Für eine schnelle Antwort auf einen Benutzer im Konversations-Chat können Sie vorgefertigte Antworten, Variablen oder eine Kombination aus beidem verwenden.
 
-#### Send a Response with Variables
+#### Antwort mit Variablen senden
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.55-blue.svg)] (.. /.. /release-notes/4.55.md)
 
-Live Agent offers a limited list of variables for user contact profile data or human agent profile data that you can re-use in the **Reply** section. 
+Live Agent bietet eine begrenzte Liste von Variablen für Benutzerkontaktprofildaten oder menschliche Agentenprofildaten, die Sie im Abschnitt **Antworten** wiederverwenden können. 
 
-To include a variable, follow these steps:
+Gehen Sie folgendermaßen vor, um eine Variable einzuschließen:
 
-1. Begin typing <code>&lcub;&lcub;</code> in the field. After that, a list of available variables will appear, allowing you to select the desired variable. 
-2. Select a variable by using one of these methods:
-    - Click on the desired variable.
-    - Use the arrow keys on your keyboard to navigate to the variable, and then press **Enter**.<br>
-    Alternatively, you can type out variables instead of selecting them from the suggestions.
+1. Beginnen Sie mit der Eingabe <code>&lcub;&lcub;</code> in das Feld. Danach erscheint eine Liste der verfügbaren Variablen, in der Sie die gewünschte Variable auswählen können. 
+2. Wählen Sie eine Variable mit einer der folgenden Methoden aus:
+    - Klicken Sie auf die gewünschte Variable.
+    - Verwenden Sie die Pfeiltasten auf der Tastatur, um zur Variablen zu navigieren, und drücken Sie dann die Eingabetaste.<br>Alternativ können Sie Variablen eingeben, anstatt sie aus den Vorschlägen auszuwählen.
 
-The variable will be replaced with a value relevant to the current conversation.
-For example, <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> → `David`,
-<code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> → `3705`. If any of the variables do not have values, you will receive a corresponding warning.
+Die Variable wird durch einen Wert ersetzt, der für die aktuelle Konversation relevant ist.
+Zum Beispiel <code>&lcub;&lcub;contact.first_name&rcub;&rcub;</code> → 'David',
+<code>&lcub;&lcub;conversation.id&rcub;&rcub;</code> → '3705'. Wenn eine der Variablen keine Werte hat, erhalten Sie eine entsprechende Warnung.
 
-Note that you cannot create a custom variable.
+Beachten Sie, dass Sie keine benutzerdefinierte Variable erstellen können.
 
-There is a list of available variables:
+Es gibt eine Liste der verfügbaren Variablen:
 
-| Variable                | Description                                                                                                                                        |
+| Variabel | Beschreibung |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `conversation.id`       | The ID of the current conversation.                                                                                                                |
-| `contact.id`            | The ID belonging to a user who creates a conversation.                                                                                             |
-| `contact.id`            | The user ID belonging to a user who creates a conversation.                                                                                        |
-| `contact.name`          | The user's first and last names. If both are not specified in the profile, the default value `customer` will be used.                              |
-| `contact.first_name`    | The user's first name. If it is not specified in the profile, the last name will be used. Otherwise, the default value `customer` will be applied. |
-| `contact.last_name`     | The user's last name. If it is not specified in the profile, the first name will be used. Otherwise, the default value `customer` will be applied. |
-| `contact.email`         | The user's email address.                                                                                                                          |
-| `contact.age`           | The user's age.                                                                                                                                    |
-| `contact.gender`        | The user's gender.                                                                                                                                 |
-| `contact.birthday`      | The user's date of birth.                                                                                                                          |
-| `contact.location`      | The user's current location.                                                                                                                       |
-| `contact.accepted_gdpr` | The user's acceptance of the General Data Protection Regulation (GDPR) policy.                                                                     |
-| `agent.name`            | The first and last names of the human agent.                                                                                                       |
-| `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
-| `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
+| 'conversation.id' | Die ID der aktuellen Konversation.                                                                                                                |
+| "contact.id" | Die ID eines Benutzers, der eine Konversation erstellt.                                                                                             |
+| "contact.id" | Die Benutzer-ID, die zu einem Benutzer gehört, der eine Konversation erstellt.                                                                                        |
+| "contact.name" | Vor- und Nachname des Benutzers. Wenn nicht beides im Profil angegeben ist, wird der Standardwert 'customer' verwendet.                              |
+| "contact.first_name" | Der Vorname des Benutzers. Wenn er nicht im Profil angegeben ist, wird der Nachname verwendet. Andernfalls wird der Standardwert 'customer' angewendet. |
+| "contact.last_name" | Der Nachname des Benutzers. Wenn er nicht im Profil angegeben ist, wird der Vorname verwendet. Andernfalls wird der Standardwert 'customer' angewendet. |
+| "contact.email" | Die E-Mail-Adresse des Benutzers.                                                                                                                          |
+| 'contact.age' | Das Alter des Benutzers.                                                                                                                                    |
+| 'contact.gender' | Das Geschlecht des Benutzers.                                                                                                                                 |
+| 'Kontakt.Geburtstag' | Das Geburtsdatum des Benutzers.                                                                                                                          |
+| 'contact.location' | Der aktuelle Standort des Benutzers.                                                                                                                       |
+| "contact.accepted_gdpr" | Die Zustimmung des Nutzers zur Datenschutz-Grundverordnung (DSGVO).                                                                     |
+| "agent.name" | Der Vor- und Nachname des menschlichen Agenten.                                                                                                       |
+| "agent.first_name" | Der Vorname des menschlichen Agenten. Wenn er nicht im Profil angegeben ist, wird der Nachname verwendet.                                                   |
+| "agent.last_name" | Der Nachname des menschlichen Agenten. Wenn er nicht im Profil angegeben ist, wird der Vorname verwendet.                                                   |
 
+Dieselben Variablen können innerhalb einer einzigen Antwort mehrfach verwendet werden.
 
-The same variables can be used multiple times within a single reply.
-
-Example:
+Beispiel:
 
 <code>
 Hi &lcub;&lcub;contact.first_name&rcub;&rcub;,
@@ -197,224 +166,184 @@ Our team will review it and provide a response as soon as possible.
 &lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
 </code>
 
-#### Send a Canned Response
+#### Senden Sie eine vorgefertigte Antwort
 
-To include a [canned response](../settings/canned-responses.md) as a reply to the user, follow these steps:
+Um eine [vorgefertigte Antwort](.. /settings/canned-responses.md) als Antwort an den Benutzer verwenden, gehen Sie folgendermaßen vor:
 
-1. In the **Reply to User** or **Reply to Bot** sections, type `/`. A list of available canned responses will be displayed. 
-2. Select the desired canned response from the list.
+1. Geben Sie in den Abschnitten **Dem Benutzer antworten** oder **Dem Bot antworten** "/" ein. Eine Liste der verfügbaren vorgefertigten Antworten wird angezeigt. 
+2. Wählen Sie die gewünschte vorgefertigte Antwort aus der Liste aus.
 
-The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
+Die ausgewählte vorgefertigte Antwort wird in Ihre Antwort eingefügt, sodass Sie ganz einfach vorgefertigte Nachrichten in Ihre Konversation einfügen können.
 
 <figure>
 <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
-  <figcaption>Send Canned Response</figcaption>
+  <figcaption>Vorgefertigte Antwort senden</figcaption>
 </figure>
 
-#### Send a Canned Response with Variables
+#### Senden einer vorgefertigten Antwort mit Variablen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.55-blue.svg)] (.. /.. /release-notes/4.55.md)
 
-You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
+Sie können einen Text mit [Variablen](#send-eine-Antwort-mit-Variablen) für [vorgefertigte Antworten](.. /settings/canned-responses.md).
 
-A canned response with variables is called the same way as a [simple canned response](#send-a-response),
-by using the symbol `/`.
-When you select the canned response,
-variables in the response will be replaced with values relevant to the current conversation.
-If any of the variables do not have values, you will receive a corresponding warning.
+Eine vorgefertigte Antwort mit Variablen wird auf die gleiche Weise wie eine [einfache vorgefertigte Antwort](#send-a-response) aufgerufen.
+mit dem Symbol '/'.
+Wenn Sie die vorgefertigte Antwort auswählen,
+Variablen in der Antwort werden durch Werte ersetzt, die für die aktuelle Konversation relevant sind.
+Wenn eine der Variablen keine Werte hat, erhalten Sie eine entsprechende Warnung.
 
-### Conversation Actions
+### Konversations-Aktionen
 
-[![Version badge](https://img.shields.io/badge/updated in-v4.45-blue.svg)](../../release-notes/4.45.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/updated in-v4.45-blue.svg)] (.. /.. /release-notes/4.45.md)
 
-Below is a list describing Conversation actions an Agent can take by clicking the following icons.
+Nachfolgend finden Sie eine Liste mit Konversationsaktionen, die ein Agent ausführen kann, indem er auf die folgenden Symbole klickt.
 
-| Button                                                                                                | Description                                                                         |
+| Schaltfläche | Beschreibung |
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />  | This button allows a human agent to select and include an Emoji in the message.     |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | This button allows  a human agent to select and include attachments in the message. |
-| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | This button allows a human agent to request a file from the customer.               |
-| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" />                  | This button allows a human agent to send voice messages to the customer.            |
-| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | This button allows a human agent to send hyperlinked text to the customer.          |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-9.png" width="50%" alt="" />  | Diese Schaltfläche ermöglicht es einem menschlichen Agenten, ein Emoji auszuwählen und in die Nachricht einzufügen.     |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-10.png" width="50%" alt="" /> | Diese Schaltfläche ermöglicht es einem menschlichen Agenten, Anhänge auszuwählen und in die Nachricht aufzunehmen. |
+| <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-11.png" width="50%" alt="" /> | Diese Schaltfläche ermöglicht es einem menschlichen Agenten, eine Datei vom Kunden anzufordern.               |
+| <img src="{{config.site_url}}live-agent/images/audio-icon.png" width="50%" alt="" />                  | Diese Schaltfläche ermöglicht es einem menschlichen Agenten, Sprachnachrichten an den Kunden zu senden.            |
+| <img src="{{config.site_url}}live-agent/images/link-icon.png" width="50%" alt="" />                   | Diese Schaltfläche ermöglicht es einem menschlichen Agenten, Hyperlink-Text an den Kunden zu senden.          |
 
-
-### LA AI Copilot
-<div class="divider"></div>
-
-When LA AI Copilot is enabled, 
-Agents will (based on customer input) receive AI-powered Copilot output as part of the conversation, which can help to better answer a customer.
+### LA AI Copilot<div class="divider"></div>Wenn LA AI Copilot aktiviert ist, 
+Agenten erhalten (basierend auf Kundeneingaben) KI-gestützte Copilot-Ausgaben als Teil des Gesprächs, die dazu beitragen können, einem Kunden besser zu antworten.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview.png" width="75%" />
     </figure>
 
-If forwarding was enabled for AI Copilot messages, the Agent can click the blue arrow to forward content to the end user or customer.
+Wenn die Weiterleitung für AI Copilot-Nachrichten aktiviert wurde, kann der Agent auf den blauen Pfeil klicken, um Inhalte an den Endbenutzer oder Kunden weiterzuleiten.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward.png" width="75%" />
     </figure>
 
+### Datei-Upload anfordern
 
-### Request File Upload
+Standardmäßig können menschliche Agenten keine Dateien von Benutzern anfordern. Um diese Funktion zu aktivieren, müssen Sie das Plugin [Datei-Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) im [Webchat-Endpunkt](.. /.. /ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
 
-By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+Anforderungen an die Datei:
 
-File requirements:
+- Unterstützte Dateitypen sind jpeg, jpg, png, docx, wav, ogg, pdf.
+- Die maximale Dateigröße beträgt 40 MB.
 
-- Supported File Types are jpeg, jpg, png, docx, wav, ogg, pdf.
-- Maximum file size is 40MB.
+Gehen Sie folgendermaßen vor, um eine Datei anzufordern:
 
-To request a file, follow these steps:
+1. Klicken Sie auf das Symbol **Datei anfordern** am unteren Rand des Live Agent-Antwortfelds. 
 
-1. Click the **Request file** icon at the bottom of the Live Agent reply box. 
-
-    <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" />
-      <figcaption>Request file upload</figcaption>
+<figure><img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="100%" alt="Live Agent request file upload" /><figcaption>Datei-Upload anfordern</figcaption>
+    
+      
     </figure>
 
-2. Confirm that you want to send it to the customer to enable the file upload.
+2. Bestätigen Sie, dass Sie die Datei an den Kunden senden möchten, um den Datei-Upload zu aktivieren.
 
-    <figure>
-    <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" />
-      <figcaption>Request file upload confirm</figcaption>
+<figure><img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-25.png" width="100%" alt="Live Agent request file upload confirm" /><figcaption>Datei-Upload anfordern bestätigen</figcaption>
+    
+      
     </figure>
 
-A message should appear in the chat indicating that the file has been requested.
+Im Chat sollte eine Nachricht angezeigt werden, die darauf hinweist, dass die Datei angefordert wurde.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="100%" alt="Live Agent request file upload message" />
-  <figcaption>Request file upload message</figcaption>
+<figure><img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="100%" alt="Live Agent request file upload message" /><figcaption>Nachricht zum Hochladen von Dateien anfordern</figcaption>
+
+  
 </figure>
 
-Now the customer should see a button to open a file upload dialog.
+Jetzt sollte der Kunde eine Schaltfläche sehen, um einen Datei-Upload-Dialog zu öffnen.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
-  <figcaption>Request file upload Webchat</figcaption>
+<figure><img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" /><figcaption>Datei-Upload anfordern Webchat</figcaption>
+
+  
 </figure>
 
-After uploading the file, it should be reflected in the Webchat and the Live Agent and the file should be ready for download on the Live Agent side.
+Nach dem Hochladen der Datei sollte sie im Webchat und im Live Agent angezeigt werden und die Datei sollte auf der Live Agent-Seite zum Download bereit sein.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="100%" alt="Live Agent request file upload webchat completed" />
-  <figcaption>Request file upload in Webchat completed</figcaption>
+<figure><img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="100%" alt="Live Agent request file upload webchat completed" /><figcaption>Datei-Upload im Webchat angefordert</figcaption>
+
+  
+</figure> abgeschlossen <figure><figcaption>Datei-Upload in Live Agent abgeschlossen</figcaption><img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
+
+  
 </figure>
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
-  <figcaption>Request file upload completed in Live Agent</figcaption>
-</figure>
-
-### Private Chat with Agents
-<div class="divider"></div>
-
-There is an option to discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the Reply tab, labeled Private Note.
-
+### Privater Chat mit Agenten<div class="divider"></div>Es besteht die Möglichkeit, das Gespräch des Kunden mit einem anderen Agenten zu besprechen, falls Sie weitere Erläuterungen oder Unterstützung benötigen. Diese Option ist neben der Registerkarte "Antworten" mit der Bezeichnung "Private Notiz" verfügbar.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-15.png" width="100%" alt="Live Agent Private Chat" />
-  <figcaption>Private Chat with Agents</figcaption>
+  <figcaption>Privater Chat mit Agenten</figcaption>
 </figure>
 
-
-Type '@' in the Private Note window, and all Agents who have been added to this Team will be listed. Select an Agent and type in a message to consult with the selected Agent.
-
+Geben Sie "@" in das Fenster "Private Notiz" ein, und alle Agenten, die zu diesem Team hinzugefügt wurden, werden aufgelistet. Wählen Sie einen Agenten aus und geben Sie eine Nachricht ein, um sich mit dem ausgewählten Agenten zu beraten.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-16.png" width="100%" alt="Live Agent Private Chat 2" />
-  <figcaption>Private Chat with Agent -2</figcaption>
+  <figcaption>Privater Chat mit Agent -2</figcaption>
 </figure>
 
-
-Click on Add Note to send the message. You can see a locked sign on the message that has been sent. This message will not be visible to the customer.
-
+Klicken Sie auf Notiz hinzufügen, um die Nachricht zu senden. Sie können ein Sperrzeichen auf der gesendeten Nachricht sehen. Diese Meldung ist für den Kunden nicht sichtbar.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
-  <figcaption>Private Message with Agent</figcaption>
+  <figcaption>Private Nachricht mit Agent</figcaption>
 </figure>
 
+Der zweite Agent, der in der privaten Notiz angesprochen wird, erhält eine Benachrichtigung in seinem Konto.
 
-The second Agent addressed in the private note will receive a notification in their account.
+Antworten, die vom zweiten Agenten gesendet werden, werden im Fenster "Private Notiz" angezeigt.
 
-Replies sent by the second Agent will be visible in the Private Note window.
-
-#### Delete Private Note
-<div class="divider"></div>
-There is an option to delete the private note which you have already sent. Click on the 3 dots(...) beside the sent message.
-An option is available to copy, or to delete the private note.
-Click on Delete. The private note will be deleted.
-
+#### Private Notiz löschen<div class="divider"></div>Es besteht die Möglichkeit, die private Notiz, die Sie bereits gesendet haben, zu löschen. Klicken Sie auf die 3 Punkte (...) neben der gesendeten Nachricht.
+Es steht eine Option zum Kopieren oder Löschen der privaten Notiz zur Verfügung.
+Klicken Sie auf Löschen. Die private Notiz wird gelöscht.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-18.png" width="100%" alt="Live Agent Delete Message" />
-  <figcaption>Delete Message</figcaption>
+  <figcaption>Nachricht löschen</figcaption>
 </figure>
 
-
-### Sending E-mails
-<div class="divider"></div>
-
-
-To send a copy of the current conversation, click on the button labeled Send Transcript, placed in the top right corner.
-
+### E-Mails versenden<div class="divider"></div>Um eine Kopie der aktuellen Konversation zu senden, klicken Sie auf die Schaltfläche "Transkript senden" in der oberen rechten Ecke.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-20.png" width="100%" alt="Live Agent Contact Details Menu" />
-  <figcaption>Send transcript button</figcaption>
+  <figcaption>Schaltfläche "Transkript senden"</figcaption>
 </figure>
 
-
-A screen opens up which allows an email to be sent to Agents in the Team. The chat transcript can also be sent to the customer or another selected e-mail address.
-
+Es öffnet sich ein Bildschirm, über den eine E-Mail an Agenten im Team gesendet werden kann. Das Chat-Protokoll kann auch an den Kunden oder eine andere ausgewählte E-Mail-Adresse gesendet werden.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-21.png" width="100%" alt="Live Agent Conversation Transcript Dialog" />
-  <figcaption>Conversation Transcript Dialog</figcaption>
+  <figcaption>Dialogfeld "Gesprächsprotokoll"</figcaption>
 </figure>
 
+Wählen Sie die gewünschte Option aus und klicken Sie auf Senden. Es wird die Meldung "Das Chatprotokoll wurde erfolgreich gesendet" angezeigt. Der ausgewählte Empfänger erhält das Chat-Transkript in seinem E-Mail-Posteingang.
 
-Select your desired option and click on Submit. A message will be displayed "The chat transcript was sent successfully". The chosen recipient will receive the chat transcript in their email inbox.
+### Agenten übertragen<div class="divider"></div>Sie können ein Problem/eine Konversation an einen anderen Agenten weiterleiten, indem Sie im Menü "Zugewiesener Agent" einen anderen Agenten auswählen. Die gesamte Konversation ist für den neu ausgewählten Agenten sichtbar.
 
-### Transferring Agents
-<div class="divider"></div>
-
-You can transfer an issue/Conversation to another Agent by selecting a different Agent from the Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
-
-### Setting Reminders and Status
-<div class="divider"></div>
-
-The status can be changed to 'Resolved' once a resolution is provided to the customer.
-
+### Erinnerungen und Status festlegen<div class="divider"></div>Der Status kann in "Gelöst" geändert werden, sobald dem Kunden eine Lösung zur Verfügung gestellt wurde.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-22.png" width="100%" alt="Live Agent Conversations Status" />
-  <figcaption>Conversations Status</figcaption>
+  <figcaption>Konversationen-Status</figcaption>
 </figure>
 
-The Conversation statuses available are listed below. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.
+Die verfügbaren Konversationsstatus sind unten aufgeführt. Sobald eine Konversation als gelöst markiert wurde, kann ihr Status nicht mehr in "Offen" oder "Ausstehend" geändert werden.
 
-| Options                 | Actions                                                                                             |
+| Optionen | Aktionen |
 |-------------------------|-----------------------------------------------------------------------------------------------------|
-| Mark as Pending         | Change the issue to Pending status                                                                  |
-| Resolve                 | Change the issue to Resolved status                                                                 |
-| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                          |
-| Open                    | Change the pending issue to Open status                                                             |
-| Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer |
-| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                    |
-| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                       |
+| Als ausstehend markieren | Ändern Sie das Problem in den Status "Ausstehend" |
+| Auflösen | Ändern Sie das Problem in den Status "Gelöst" |
+| Abbrechen und Auflösen | Ändern Sie das Problem in den Status "Gelöst", und fügen Sie das abfragbare Abbruchattribut |
+| Öffnen | Ändern Sie das ausstehende Problem in den Status "Offen" |
+| Snooze bis zur nächsten Antwort | Das Problem wird vorerst beiseite gelegt, und der Status ändert sich bei der nächsten Antwort des Kunden |
+| Schlummern bis morgen | Das Problem wird vorerst beiseite gelegt, und der Status ändert sich am nächsten Tag in Offen |
+| Snooze bis nächste Woche | Das Problem wird vorerst beiseite gelegt, und der Status wird nächste Woche in Offen |
 
-Conversations can be selected and filtered by their statuses within the Conversation panel, as seen below.
+Unterhaltungen können im Bereich "Unterhaltung" ausgewählt und nach ihrem Status gefiltert werden, wie unten zu sehen ist.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-23.png" width="100%" alt="Live Agent Conversations Selections" />
-  <figcaption>Select Conversation</figcaption>
+  <figcaption>Wählen Sie Konversation aus</figcaption>
 </figure>
 
-### Previous Conversations
-<div class="divider"></div>
-
-Once a Conversation has been marked as resolved - the next time the same customer starts a new Conversation, the previous Conversation associated with this customer will be shown in the Previous Conversations menu. This will help the Agent to understand the history of the customer's issue.
-
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="50%" alt="Live Agent Previous Conversations" />
+### Vorherige Unterhaltungen<div class="divider"></div>Sobald eine Konversation als gelöst markiert wurde, wird das nächste Mal, wenn derselbe Kunde eine neue Konversation startet, die vorherige Konversation, die mit diesem Kunden verknüpft ist, im Menü "Vorherige Konversationen" angezeigt. Dies hilft dem Agenten, die Historie des Kundenproblems zu verstehen.<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-12.png" width="50%" alt="Live Agent Previous Conversations" />

@@ -1,73 +1,65 @@
 ---
  title: "Azure Bot Services" 
- slug: "azure-bot-services" 
- hidden: false 
+ Slug: "azure-bot-services" 
+ ausgeblendet: false 
 ---
 # Azure Bot Services
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../release-notes/4.55.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.55-blue.svg)] (.. /.. /release-notes/4.55.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/501691c-AzureBotServices.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to **Azure Bot Services** by using our Azure Bot Services Endpoint integration.
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihren Cognigy-Agent mit **Azure Bot Services** verbinden, indem Sie unsere Azure Bot Services-Endpunktintegration verwenden.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte](overview.md) 
+- [Datenschutz & Analyse](data-protection-and-analytics.md)
+- [Transformator-Funktionen](Transformatoren/Transformatoren.md) 
+- [NLU-Anschlüsse](.. /resources/build/nlu-connectors.md)
+- [Sitzungsverwaltung](session-management.md)
+- [Übergabe-Einstellungen](handover-settings.md)
+- [Einstellungen für Echtzeitübersetzung](real-time-translation-settings.md) 
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die Funktion [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) mit diesem Endpunkttyp verwenden.
 
-- [Endpoints Overview](overview.md) 
-- [Data Protection & Analytics](data-protection-and-analytics.md)
-- [Transformer Functions](transformers/transformers.md) 
-- [NLU Connectors](../resources/build/nlu-connectors.md)
-- [Session Management](session-management.md)
-- [Handover Settings](handover-settings.md)
-- [Real Time Translation Settings](real-time-translation-settings.md) 
+## Kanalspezifische Einstellungen<div class="divider"></div>Im Dropdownmenü **Azure Bot Services-Einstellungen** müssen Cognigy.AI die Anmeldeinformationen angeben, um eine Verbindung mit einer Azure Bot Services-Bereitstellung herzustellen.
 
-!!! tip "Supports Inject & Notify"
-    You can use the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality with this type of Endpoint.
+### Zugriffsbereich
 
-## Channel Specific Settings
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.55-blue.svg)] (.. /.. /release-notes/4.55.md)
 
-<div class="divider"></div>
+Diese Einstellung bestimmt, wer auf diese Anwendung zugreifen kann, und wählt **Multi Tenant** und **Single Tenant** aus.
 
-The **Azure Bot Services Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with an Azure Bot Services deployment.
+#### Auf Azure AD-Konten beschränken
 
-### Access Scope
+Wenn Sie **Multi Tenant** auswählen, haben Sie einen zusätzlichen Umschalter. Die Einstellung **Auf Azure AD-Konten beschränken** verhindert den öffentlichen Zugriff auf Ihren Endpunkt und lässt nur den Zugriff auf Teams-Konten zu, die von einer Organisation in Azure Active Directory verwaltet werden.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.55-blue.svg)](../../release-notes/4.55.md)
+### Microsoft-App-ID
 
-This setting determines who can access this application, choosing being **Multi Tenant** and **Single Tenant**.
+Bei diesem Wert handelt es sich um die Microsoft-App-ID, die auf der Einstellungsseite Ihres Bots im Azure Bot Services-Dashboard abgerufen wird.
 
-#### Restrict to Azure AD Accounts
+### Microsoft-App-Passwort
 
-When choosing **Multi Tenant**, you will have an additional toggle. The **Restrict to Azure AD Accounts** setting prevents public access to your Endpoint, and only allows access to Teams accounts that are managed by an organization in Azure Active Directory.
+Bei diesem Wert handelt es sich um das **Microsoft-App-Kennwort** Ihres Bots, das auch als **geheimer Clientschlüssel** bezeichnet wird. Dies erhalten Sie, indem Sie auf der Seite App-Registrierungen für Ihren Bot im Azure Bot Services-Dashboard einen neuen geheimen Clientschlüssel erstellen.
 
-### Microsoft App ID
+### Name der SSO-Verbindung
 
-This value is the **Microsoft App ID** which is obtained in the settings page of your bot in the Azure Bot Services Dashboard.
+Dieser Wert ist der **SSO-Verbindungsname**, wenn dieser Endpunkt mit einer SSO-Integration verwendet wird.
 
-### Microsoft App Password
-
-This value is the **Microsoft App Password** of your Bot, also referred to as the **Client Secret**. This is obtained by creating a new Client Secret in the App Registrations page for your bot in the Azure Bot Services Dashboard.
-
-### SSO Connection Name
-
-This value is the **SSO Connection Name** when using this endpoint with an SSO integration.
-
-!!! note "Help Center"
-    More detailed information on how to set up an **Azure Bot Services** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016183720).
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines Azure Bot Services-Endpunkts finden Sie in unseren Hilfecenterartikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016183720).
 
 ### Microsoft Teams
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.9.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.9.0-blue.svg)] ({{config.site_url}})
 
-As of release v4.9 the display changes for clicked postback buttons in a Microsoft Teams chat. 
+Ab Version 4.9 ändert sich die Anzeige für angeklickte Postback-Schaltflächen in einem Microsoft Teams-Chat. 
 
-When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-nodes/message/say/#text-with-quick-replies), [gallery]({{config.site_url}}ai/flow-nodes/message/say/#gallery), [list]({{config.site_url}}ai/flow-nodes/message/say/#list), or [button]({{config.site_url}}ai/flow-nodes/message/say/#text-with-buttons) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
+Wenn Sie in einer Konfiguration für [Schnellantwort]({{config.site_url}}ai/flow-nodes/message/say/#text-with-quick-replies), [gallery]({{config.site_url}}ai/flow-nodes/message/say/#gallery), [list]({{config.site_url}}ai/flow-nodes/message/say/#list) oder [button]({{config.site_url}}ai/flow-nodes/message/say/#text-with-buttons) klicken, wird der Titel der Schaltfläche jetzt auf der Benutzerseite des Chats angezeigt. Für andere Azure Bot Service-Kanäle ist diese Änderung nicht relevant.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Azure_Bot_Service_with_Microsoft_Teams_chat_1.svg" width="100%" />
@@ -77,48 +69,47 @@ When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c891b0a-Eatery_make_order_2.svg" width="100%" />
 </figure>
 
-## Channel Priority when using Azure Bot Services
+## Kanalpriorität bei Verwendung von Azure Bot Services
 
-You can use the Azure Bot Services Endpoint to serve multiple channels, such as Line, Messenger, Microsoft Teams, and others. 
+Sie können den Azure Bot Services-Endpunkt verwenden, um mehrere Kanäle zu bedienen, z. B. Line, Messenger, Microsoft Teams und andere. 
 
-To define where the output will be delivered, select these channels in the Say, Question, or Optional Question Nodes. 
+Um zu definieren, wohin die Ausgabe geliefert wird, wählen Sie diese Kanäle in den Knoten "Sagen", "Frage" oder "Optionale Frage" aus. 
 
-However, the sequence of using these channels in the Node is determined by their fixed priority.
+Die Reihenfolge, in der diese Kanäle im Node verwendet werden, wird jedoch durch ihre feste Priorität bestimmt.
 
-Priority rules exist for the following supported Azure Bot Services channels:
+Prioritätsregeln sind für die folgenden unterstützten Azure Bot Services-Kanäle vorhanden:
 
-- Line
-- Messenger
+-Linie
+-Kurier
 - Microsoft Teams
-- Slack
-- SMS
+-Schlaff
+-SMS
 - Azure Bot Services
-- AI
+-KÜNSTLICHE INTELLIGENZ
 
-### Examples
+### Beispiele
 
-Consider the following examples when using the Azure Bot Services Endpoint from the perspective of channel priority.
+Betrachten Sie die folgenden Beispiele, wenn Sie den Azure Bot Services-Endpunkt aus der Perspektive der Kanalpriorität verwenden.
 
-**Example 1**
+**Beispiel 1**
 
-The Say Node is configured with AI, Azure Bot Services, and Microsoft Teams channels.
+Der Say-Knoten ist mit KI, Azure Bot Services und Microsoft Teams-Kanälen konfiguriert.
 
-Result: The user will receive the text output from the Microsoft Teams channel.
+Ergebnis: Der Benutzer erhält die Textausgabe aus dem Microsoft Teams-Kanal.
 
-**Example 2**
+**Beispiel 2**
 
-The Question Node is configured with AI and Azure Bot Services channels.
+Der Frageknoten ist mit KI- und Azure Bot Services-Kanälen konfiguriert.
 
-Result: The user will receive the text output from the Azure Bot Services channel.
+Ergebnis: Der Benutzer erhält die Textausgabe aus dem Azure Bot Services-Kanal.
 
-**Example 3**
+**Beispiel 3**
 
-The Optional Question Node is configured with only the AI channel.
+Der optionale Frageknoten ist nur mit dem AI-Kanal konfiguriert.
 
-Result: The user will receive the text output from the AI channel.
+Ergebnis: Der Benutzer erhält die Textausgabe aus dem KI-Kanal.
 
-## More Information
+## Mehr Informationen
 
-
-- [Help Center: Microsoft Bot Framework Deployment ](https://support.cognigy.com/hc/en-us/articles/360016183720-Microsoft-Bot-Framework-Deploy-an-Endpoint)
-- [Help Center: Microsoft Bot Framework Adaptive Cards](https://support.cognigy.com/hc/en-us/articles/360016184000-Microsoft-Bot-Framework-Using-Adaptive-Cards)
+- [Hilfe-Center: Microsoft Bot Framework-Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016183720-Microsoft-Bot-Framework-Deploy-an-Endpoint)
+- [Hilfecenter: Adaptive Karten für Microsoft Bot Framework](https://support.cognigy.com/hc/en-us/articles/360016184000-Microsoft-Bot-Framework-Using-Adaptive-Cards)

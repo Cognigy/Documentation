@@ -1,21 +1,19 @@
-## Set up a Flow
+## Einrichten eines Flows
 
-To provide additional real-time information to your agents, this assistant uses a Flow.
+Um Ihren Agenten zusätzliche Echtzeitinformationen zur Verfügung zu stellen, verwendet dieser Assistent einen Flow.
 
-To set up an assistant, you need to have two separate flows:
+Um einen Assistenten einzurichten, benötigen Sie zwei separate Flows:
 
-- The Main Flow where the primary logic is defined.
-- A Flow where the logic for your assistant will be implemented.
+- Der Hauptfluss, in dem die primäre Logik definiert ist.
+- Ein Flow, in dem die Logik für Ihren Assistenten implementiert wird.
 
-During an active Live Agent handover, this Flow will process all customer inputs and display the outputs as part of the conversation for the human agent.
+Während einer aktiven Live-Agent-Übergabe verarbeitet dieser Flow alle Kundeneingaben und zeigt die Ausgaben als Teil der Konversation für den menschlichen Agenten an.
 
-Assistant's messages are only shown based on customer inputs received during an active handover after the human agent has initially responded.
+Die Nachrichten des Assistenten werden nur auf der Grundlage von Kundeneingaben angezeigt, die während einer aktiven Übergabe empfangen wurden, nachdem der menschliche Agent zunächst geantwortet hat.
 
-!!! warning
-    You don't need to include the Handover Node in the assistant's Flow, as using the Handover to Agent Node in the main Live Agent Flow is enough for the configuration process.
+!!! Warnung
+    Sie müssen den Übergabeknoten nicht in den Ablauf des Assistenten aufnehmen, da die Verwendung des Übergabeknotens an den Agentenknoten im Hauptablauf des Live-Agenten für den Konfigurationsprozess ausreicht.
 
-To provide helpful information to your agents, create Intents and use Lookup Nodes with Say Nodes based on customer inputs.
-
-<figure>
+Um Ihren Agenten hilfreiche Informationen zur Verfügung zu stellen, erstellen Sie Absichten und verwenden Sie Suchknoten mit Say-Knoten basierend auf Kundeneingaben.<figure>
   <img class="image-center" src="https://docs.cognigy.com/ai/handover-providers/images/la-agent-assist-flow-example.png" width="100%" />
 </figure>

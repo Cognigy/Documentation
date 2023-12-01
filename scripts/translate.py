@@ -43,6 +43,7 @@ def translate_file(file_path, language):
     if len(content_to_be_translated) >= characters_limit:
         #todo - do better reporting of where this line has been found
         print("A line that can't be translated because its bigger than 50_000 characters has been found!")
+        return
 
     # surround it with try catch in case the call fails
     translated_md_content = translate_text(content_to_be_translated, language)

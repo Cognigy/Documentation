@@ -1,7 +1,7 @@
 ---
- title: "Twilio" 
- slug: "twilio" 
- hidden: false 
+ Titel: "Twilio" 
+ Schnecke: "Twilio" 
+ ausgeblendet: false 
 ---
 # Twilio
 
@@ -9,63 +9,46 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7db29f9-Twilio.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Twilio** channel by using our Twilio Endpoint. This allows you to build Bots your users can talk to or chat with via SMS.
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihren Cognigy-Agenten über unseren Twilio-Endpunkt mit Ihrem **Twilio**-Kanal verbinden. Auf diese Weise können Sie Bots erstellen, mit denen Ihre Benutzer per SMS sprechen oder chatten können.
 
-## Twilio Voice, Twilio SMS / WhatsApp
+## Twilio Voice, Twilio SMS / WhatsApp<div class="divider"></div>Sie können zwischen **zwei verschiedenen Arten von Twilio-Endpunkten** wählen
+- *Twilio*, der Twilio-VoIP-Endpunkt
+- *Twilio SMS*, mit dem Sie SMS und WhatsApp-Nachrichten versenden können
 
-<div class="divider"></div>
+Für alle Endpunkttypen müssen Sie eine Telefonnummer abrufen. Eine kurze Beschreibung zum Erfassen einer Twilio-Telefonnummer finden Sie auf unseren Hilfe-Center-Seiten, die unten aufgeführt sind. Nachdem Sie eine Nummer erhalten haben, können Sie einen Twilio-Endpunkt bereitstellen und verwenden.
 
-You can select between **two different types of Twilio Endpoints**
-- *Twilio*, which is the Twilio Voice Endpoint
-- *Twilio SMS*, which allows you to send SMS and WhatsApp messages
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-For all Endpoint types, you'll have to obtain a phone number. A short description about how to gather a Twilio phone number can be found on our help center pages listed below. After obtaining a number you're able to deploy and use a Twilio Endpoint.
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-## Generic Endpoint Settings
-
-<div class="divider"></div>
-
-Find out about the generic endpoint settings available with this endpoint on the following pages:
-
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
-
-## Channel Specific Settings
-## Twilio Endpoint Settings
+## Kanalspezifische Einstellungen
+## Twilio-Endpunkt-Einstellungen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7db29f9-Twilio.PNG" width="100%" />
 </figure>
 
-
-The **Twilio Settings** dropdown menu is available in a standard **Twilio** type endpoint and provides options to configure the interaction between Cognigy.AI a Twilio deployment.
-
- <div class="center-image">
+Das Dropdown-Menü **Twilio-Einstellungen** ist in einem standardmäßigen Endpunkt vom Typ **Twilio** verfügbar und bietet Optionen zum Konfigurieren der Interaktion zwischen Cognigy.AI einer Twilio-Bereitstellung. <div class="center-image">
  <img src="{{config.site_url}}ai/endpoints/images/c69d7a2-TwilioSettings.PNG" width="80%" style="margin-bottom: 5px">
- </div>
+ </div>### STT / TTS Sprache
 
-### STT / TTS Language
+Hier können Sie die Sprache konfigurieren, die die Speech-To-Text- und Text-to-Speech-Dienste verwenden, wenn Nachrichten zwischen Twilio und Cognigy.AI kommuniziert werden.
 
-Here you are able to configure the language that the Speech-To-Text and Text-To-Speech services use when messages are communicated between Twilio and Cognigy.AI.
+### Stimme
 
-### Voice
-
-This dropdown menu allows the delivery voice of a Twilio voice bot to be customized. You can select a Twilio voice from a list.
-
- <div class="center-image">
+Mit diesem Dropdown-Menü kann die Zustellungsstimme eines Twilio-Voicebots angepasst werden. Sie können eine Twilio-Stimme aus einer Liste auswählen. <div class="center-image">
  <img src="{{config.site_url}}ai/endpoints/images/8e51d15-Screen_Shot_06-08-21_at_12.18_PM_002.PNG" width="70%" style="margin-bottom: 5px">
- </div>
-
-## More Information
-- [Help Center: Twilio Intro](https://support.cognigy.com/hc/en-us/articles/360016308619-Twilio-Intro)
-- [Help Center: Twilio Prerequisites](https://support.cognigy.com/hc/en-us/articles/360016308859-Twilio-Prerequisites)
-- [Help Center: Twilio Deploy a Voice Endpoint](https://support.cognigy.com/hc/en-us/articles/360016308979-Twilio-Deploy-a-Voice-Endpoint)
-- [Help Center: Twilio Deploy an SMS and WhatsApp Endpoint](https://support.cognigy.com/hc/en-us/articles/360016273320-Twilio-Deploy-an-SMS-and-WhatsApp-Endpoint)
-- [Help Center: Twilio Trigger a Call](https://support.cognigy.com/hc/en-us/articles/360016273540-Twilio-Trigger-a-Call)
-- [Help Center: Twilio WhatsApp](https://support.cognigy.com/hc/en-us/articles/360016309659-Twilio-WhatsApp )
-- [Help Center: Twilio Forward a Call](https://support.cognigy.com/hc/en-us/articles/360016309779-Twilio-Forward-a-call)
-- [Help Center: Twilio Security](https://support.cognigy.com/hc/en-us/articles/360016309919-Twilio-Security)
+ </div>## Mehr Informationen
+- [Hilfe-Center: Twilio-Einführung](https://support.cognigy.com/hc/en-us/articles/360016308619-Twilio-Intro)
+- [Hilfe-Center: Twilio-Voraussetzungen](https://support.cognigy.com/hc/en-us/articles/360016308859-Twilio-Prerequisites)
+- [Hilfe-Center: Twilio Bereitstellen eines VoIP-Endpunkts](https://support.cognigy.com/hc/en-us/articles/360016308979-Twilio-Deploy-a-Voice-Endpoint)
+- [Hilfe-Center: Twilio stellt einen SMS- und WhatsApp-Endpunkt bereit](https://support.cognigy.com/hc/en-us/articles/360016273320-Twilio-Deploy-an-SMS-and-WhatsApp-Endpoint)
+- [Hilfe-Center: Twilio löst einen Anruf aus](https://support.cognigy.com/hc/en-us/articles/360016273540-Twilio-Trigger-a-Call)
+- [Hilfe-Center: Twilio WhatsApp](https://support.cognigy.com/hc/en-us/articles/360016309659-Twilio-WhatsApp )
+- [Hilfe-Center: Twilio Anruf weiterleiten](https://support.cognigy.com/hc/en-us/articles/360016309779-Twilio-Forward-a-call)
+- [Hilfe-Center: Twilio-Sicherheit](https://support.cognigy.com/hc/en-us/articles/360016309919-Twilio-Security)

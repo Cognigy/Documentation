@@ -1,119 +1,102 @@
 ---
- title: "Settings" 
- slug: "settings" 
- hidden: false 
+ title: "Einstellungen" 
+ slug: "Einstellungen" 
+ ausgeblendet: false 
 ---
-# Settings
+# Einstellungen
 
-Cognigy.AI provides creators with customization settings that allow the agent processes to be adjusted to achieve optimal performance.
+Cognigy.AI bietet Entwicklern Anpassungseinstellungen, mit denen die Agentenprozesse angepasst werden können, um eine optimale Leistung zu erzielen.
 
-The **Agent Settings** are used to configure:
+Die **Agenteneinstellungen** werden verwendet, um Folgendes zu konfigurieren:
 
-- The **Flow Logic** of all Flows within this agent
-- The **Timezone** of the agent
-- The **Intent Mapper** of Flows NLU
-- The **Thresholds** for NLU recognition
-- The **Analytics** of the agent
+- Die **Flow-Logik** aller Flows innerhalb dieses Agenten
+- Die **Zeitzone** des Agenten
+- Der **Intent Mapper** von Flows NLU
+- Die **Schwellenwerte** für die NLU-Erkennung
+- Die **Analyse** des Agenten
 
-Within your agent, from the left toolbar click **Manage** --> **Settings** to access the agent settings menu.
+Klicken Sie in Ihrem Agent in der linken Symbolleiste auf **Verwalten** --> **Einstellungen**, um auf das Menü mit den Agenteneinstellungen zuzugreifen.
 
-## General Flow Logic || Flow Settings
-<div class="divider"></div>
+## Allgemeine Ablauflogik || Flow-Einstellungen<div class="divider"></div>### Ja/Nein-Logik
 
-### Yes/No logic
+Fügen Sie eine bestimmte [Ja/Nein-Logik](.. /.. /nlu/nlu-overview/yes-no-intents.md) in Ihrem Flow, um eine [Intent](.. /.. /nlu/nlu-overview/ml-intents.md) oder den Typ **Ja/Nein** von [Question Nodes](.. /.. /flow-nodes/flow-nodes-overview.md#question) .
 
-Add a specific [Yes/No logic](../../nlu/nlu-overview/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../nlu/nlu-overview/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../flow-nodes/flow-nodes-overview.md#question) .
+### Zusätzliche Bestätigungswörter
 
-### Additional confirmation words
+Fügen Sie Ihre eigenen benutzerdefinierten Antworten hinzu, um eine [Absicht](.. /.. /nlu/nlu-overview/ml-intents.md) und [Question Nodes](.. /.. /flow-nodes/flow-nodes-overview.md#question).
 
-Add your own customized responses to confirm an [Intent](../../nlu/nlu-overview/ml-intents.md) and [Question Nodes](../../flow-nodes/flow-nodes-overview.md#question).
+### Zusätzliche negative Bestätigungswörter 
 
-### Additional negative confirmation words 
+Fügen Sie Ihre eigenen benutzerdefinierten Antworten hinzu, um eine [Absicht](.. /.. /nlu/nlu-overview/ml-intents.md) und [Question Nodes](.. /.. /flow-nodes/flow-nodes-overview.md#question).
 
-Add your own customized responses to negate an [Intent](../../nlu/nlu-overview/ml-intents.md) and [Question Nodes](../../flow-nodes/flow-nodes-overview.md#question).
+### Weiter **main** Flow nach angehängtem Flow
 
-### Continue **main** Flow after attached Flow
+Sie können diese Einstellung deaktivieren und den Hauptablauf beenden, nachdem ein angehängter Abfluss ausgeführt wurde.
 
-You can disable this setting and stop your main flow after an attached flow has been executed.
+### Flow nach Standardantwort fortsetzen
 
-### Continue Flow after default reply
+Aktivieren Sie diese Einstellung, um die Ausführung der Ablauflogik fortzusetzen, nachdem eine Standardantwort übermittelt wurde.
 
-Enable this setting to continue executing the flow logic after a default reply has been delivered.
+### Flow nach negativer Bestätigung fortsetzen
 
-### Continue Flow after negative confirmation
+Aktivieren Sie diese Einstellung, um die Ablauflogik fortzusetzen, nachdem ein Intent-Bestätigungssatz zu negativ beantwortet wurde.
 
-Enable this setting to continue the flow logic after an intent confirmation sentence has been responded too negatively.
+### Standardantwort an Flow übergeben
 
-### Pass Default Reply into Flow
+Wenn die Einstellung aktiviert ist, antwortet der virtuelle Agent nicht mit der Standardantwort, sondern schreibt sie in das Eingabeobjekt. Anschließend können diese Informationen verwendet werden, um in der Ablauflogik etwas damit anzufangen. 
 
-If the setting is on, the virtual agent doesn't answer with the default reply but writes it in the input object. Afterward, this information can be used in order to do something with it in the flow logic. 
+### Standardantwort in NLU-Training einbeziehen
 
-### Include Default Reply in NLU Training
+Wenn die Einstellung aktiviert ist, enthält das NLU-Training auch Standardantworten, die für jede Absicht als Beispielsatz konfiguriert sind, um der Absicht zu entsprechen. Diese Einstellung kann auch individuell auf Intent-Ebene konfiguriert werden.
 
-If the setting in on, NLU training will also include default replies configured for each Intent as example sentence to match the intent. This setting can be also configured individually on intent level.
+## Zeitzone<div class="divider"></div>Legen Sie die Zeitzone fest, in der Ihr virtueller Agent arbeiten soll.
 
-## Timezone
-<div class="divider"></div>
+## Absichts-Mapper<div class="divider"></div>### Aktivieren der Absichtszuordnung unter Berücksichtigung der Groß-/Kleinschreibung
 
-Set the timezone that your virtual agent will operate in.
+Wenn diese Option aktiviert ist, werden Groß-/Kleinschreibung und Interpunktion vom Intent-Mapper berücksichtigt. Deaktivieren Sie diese Einstellung, um Groß-/Kleinschreibung und Interpunktion in der ML-Absichtszuordnung zu ignorieren.
 
-## Intent Mapper
-<div class="divider"></div>
+!!! danger "Englischer Support"
+    Obwohl diese Funktion in den Einstellungen des Agenten konfigurierbar ist, ist sie nicht für die regulären englischen Gebietsschemata implementiert, d. h. US-amerikanisches, indisches, britisches, kanadisches und australisches Englisch. Sie können diese Funktion jedoch mit dem Gebietsschema "Universal" verwenden, das auch allgemeines Englisch unterstützt.
 
-### Enable Case Sensitive Intent Mapping
+### Angehängte Flow-Intent-Mapping-Priorität
+- Haupt- und angehängten Flow gemeinsam zuordnen: Behandelt Haupt- und angehängte Flow-Intents so, als wären sie eine einzelne Intent-Sammlung, findet die am besten übereinstimmende Absicht und führt den entsprechenden Flow aus.
+- Main Flow zuerst zuordnen: Ordnet zuerst die Main Flow Intents separat zu. Wenn im Hauptfluss kein Intent gefunden wird, wird der angehängte Fluss zugeordnet.
+- Angehängten Flow zuerst zuordnen: Zuerst werden die angehängten Flow-Intents separat zugeordnet. Wenn im angehängten Flow kein Intent gefunden wird, wird der Main Flow zugeordnet.
 
-When enabled, case sensitivity and punctuation will be taken into account by the intent mapper. Disable this setting to ignore casing and punctuation in ML intent mapping.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.1.4-blue.svg)] ({{config.site_url}})
 
-!!! danger "English Support"
-    Despite configurable in the agent's settings, this feature is not implemented for the regular English locales, i.e. US, Indian, UK, Canadian, and Australian English. However, you may use this feature using the "Universal" locale which also supports general English.
+### Implizites Slot-Parsing
+Legt fest, ob Slots in NLU-Beispielsätzen implizit analysiert werden sollen oder nur Slot-Anmerkungen für das Training verwendet werden sollen. Konfigurierbar ab 4.1.4. Vor 4.1.4 war das Verhalten wie im "Full"-Modus, vorhandene Agenten behalten diese Standardeinstellung bei.
 
-### Attached Flow Intent Mapping Priority
-- Jointly Map Main and Attached Flow: treats Main and Attached Flow Intents as if they were a single intent collection and finds the best matching intent and executes the corresponding Flow.
-- Map Main Flow first: first maps the Main Flow Intents separately. If no Intent is found in the Main Flow the Attached Flow is mapped.
-- Map Attached Flow first: first maps the Attached Flow Intents separately. If no Intent is found in the Attached Flow the Main Flow is mapped.
+- Deaktiviert: Nur Slot-Anmerkungen verwenden: Dies berücksichtigt nur vom Benutzer kommentierte Slots, Lexikone oder beliebige Slots in Beispielsätzen.
+- Vollständig: Analysiert implizit sowohl System- als auch Lexikon-Slots
+- System-Slots - Keine Lexikon-Slots: Analysieren Sie nur System-Slots wie Zahlen, Datumsangaben, E-Mail-Adressen implizit. Berücksichtigen Sie nur Anmerkungen für Lexikon-Slots.
+- Lexikon-Slots - Keine System-Slots: Analysieren Sie nur Lexikon-Slots wie aus angehängten Lexika implizit. Berücksichtigen Sie nur Anmerkungen für Systemsteckplätze.
 
+## Schwellenwerte<div class="divider"></div>### Vergessen Sie die Frageschwelle
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.4-blue.svg)]({{config.site_url}})
+Anzahl der Kontaktantworten, nach denen die Antwort eines Benutzers auf eine Frage nicht mehr registriert wird.
 
-### Implicit Slot Parsing
-Determines whether slots in NLU example sentences should be parsed implicitly or only slot annotations should be used for training. Configurable from 4.1.4 onwards. Prior to 4.1.4 the behavior was as in "Full" mode, existing agents will retain this default.
+### Konfidenzschwelle
 
-- Disabled: Only use slot annotations: This will only consider user-annotated slots, Lexicon, or Any Slots, in example sentences.
-- Full: Parse both System and Lexicon slots implicitly
-- System Slots - No Lexicon Slots: Parse only System slots like numbers, dates, email implicitly. Only consider annotations for Lexicon Slots.
-- Lexicon Slots - No System Slots: Parse only Lexicon slots like from attached Lexicons implicitly. Only consider annotations for System Slots.
+Punktzahl, ab der ein Intent als bestätigt gilt, wenn ein Bestätigungssatz gesetzt ist. Wert zwischen 0 und 1.
 
-## Thresholds
-<div class="divider"></div>
+### Schwellenwert für die Rückbestätigung
 
-### Forget question threshold
+Punktzahl, ab der ein Intent als bestätigt gilt oder für die erneute Bestätigung markiert wird, wenn ein Rückbestätigungssatz festgelegt ist. Wert zwischen 0 und 1.
 
-Number of contact responses after which a user's answer to a question is no longer registered.
+!!! danger "Passen Sie die Rückbestätigungsschwelle an"
+    Der Konfidenzschwellenwert hat **keine Auswirkungen, es sei denn, die Absicht verwendet Bestätigungssätze**.
+    Der Schwellenwert für die erneute Bestätigung ist Ihre untere Konfidenzgrenze – Sie müssen ihn zusätzlich zum Konfidenzschwellenwert festlegen. **Absichtswerte, die über dem Schwellenwert für die erneute Bestätigung liegen, werden bestätigt oder für die erneute Bestätigung markiert.**
 
-### Confidence threshold
+## Analytik<div class="divider"></div>### Sammeln
 
-Score from which on an Intent is considered confirmed if a confirmation sentence is set. Value between 0 and 1.
+Wenn diese Option deaktiviert ist, werden keine Analysedaten für den Agenten erfasst und gespeichert.
 
-### Reconfirmation threshold
+### Nur Daten zulassen
 
-Score from which on an Intent is considered confirmed or marked for reconfirmation if a reconfirmation sentence is set. Value between 0 and 1.
-
-!!! danger "Adjust the Reconfirmation Threshold"
-    The confidence threshold has **no effect unless the intent uses confirmation sentences**.
-    The Reconfirmation Threshold is your lower confidence bound - you must set it in addition to the Confidence Threshold. **Intent scores above the reconfirmation threshold are confirmed or marked for reconfirmation.**
-
-## Analytics
-<div class="divider"></div>
-
-### Collect
-
-If disabled, analytics data will not be collected and stored for the agent.
-
-### Allow data only
-
-If disabled, analytics data will not be collected for messages with only a JSON data payload and no text input.
+Wenn diese Option deaktiviert ist, werden keine Analysedaten für Nachrichten erfasst, die nur eine JSON-Datennutzlast und keine Texteingabe enthalten.
 
 ## Generative.AI
 
-To set up the connection between Cognigy.AI and the Generative AI Provider, read the [Generative AI](../../generative-ai.md#prerequisites) article.
-
+Um die Verbindung zwischen Cognigy.AI und dem Generative AI Provider einzurichten, lesen Sie die [Generative AI](.. /.. /generative-ai.md#prerequisites) Artikel.

@@ -1,273 +1,273 @@
 ---
- title: "Yes/No Intents (Beta)" 
- slug: "yes-no-intents" 
- hidden: false 
+ Titel: "Ja/Nein-Absichten (Beta)" 
+ Schnecke: "Ja-Nein-Absichten" 
+ ausgeblendet: false 
 ---
 
-# Yes/No Intents (Beta)
+# Ja/Nein-Absichten (Beta)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47(Beta)-purple.svg)](../../../release-notes/4.47.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.47(Beta)-lila.svg)] (.. /.. /.. /release-notes/4.47.md)
 
-!!! note
-    The Yes/No Intents feature is in Beta. We encourage you to try this feature out and provide us with feedback.
+!!! Anmerkung
+    Die Ja/Nein-Absichten befinden sich in der Beta-Phase. Wir empfehlen Ihnen, diese Funktion auszuprobieren und uns Feedback zu geben.
 
-The **Yes/No Intents** feature enables machine learning to determine `yes` and `no` confirmations similar to regular Intent matching. That allows a small set of example sentences to train a model capable of understanding various `yes` and `no` confirmation phrases, introducing a more fluent natural language experience.
+Die **Ja/Nein-Intents**-Funktion ermöglicht es maschinellem Lernen, "Ja"- und "Nein"-Bestätigungen zu ermitteln, ähnlich wie beim regulären Intent-Abgleich. Auf diese Weise kann ein kleiner Satz von Beispielsätzen ein Modell trainieren, das in der Lage ist, verschiedene "Ja"- und "Nein"-Bestätigungsphrasen zu verstehen, was zu einer flüssigeren natürlichen Spracherfahrung führt.
 
-In the previous [Confirmation words](../../resources/manage/settings.md#general-flow-logic--flow-settings) feature, you have a limited range of `yes,` and `no` variations, and you have to customize this by manually adding a list of synonyms. With the **Yes/No Intents** feature, you have a preinstalled vocabulary with the opportunity to add new words, which helps a virtual agent recognize different variations of `yes` and `no` Intents.
+In der vorhergehenden [Bestätigungswörter](.. /.. /resources/manage/settings.md#general-flow-logic--flow-settings) haben Sie eine begrenzte Auswahl an "Ja"- und "Nein"-Variationen, und Sie müssen diese anpassen, indem Sie manuell eine Liste von Synonymen hinzufügen. Mit der **Ja/Nein-Absichten**-Funktion verfügen Sie über ein vorinstalliertes Vokabular mit der Möglichkeit, neue Wörter hinzuzufügen, was einem virtuellen Agenten hilft, verschiedene Variationen von "Ja"- und "Nein"-Absichten zu erkennen.
 
-Before using Yes/No Intents:
+Vor der Verwendung von Ja/Nein-Absichten:
 
-```txt
-User: Hello! 
-Virtual agent: Do you want to play the Star Wars quiz?
-User: Certainly
-Virtual agent: Not sure I understood this correctly. Try again.
-```
+'''txt
+Benutzer: Hallo! 
+Virtueller Agent: Willst du das Star Wars-Quiz spielen?
+Benutzer: Auf jeden Fall
+Virtueller Agent: Ich bin mir nicht sicher, ob ich das richtig verstanden habe. Wiederholen.
+'''
 
-After using Yes/No Intents:
+Nach der Verwendung von Ja/Nein-Absichten:
 
-```txt
-User: Hello! 
-Virtual agent: Do you want to play the Star Wars quiz?
-User: Certainly
-Virtual agent: Let's start!
-```
+'''txt
+Benutzer: Hallo! 
+Virtueller Agent: Willst du das Star Wars-Quiz spielen?
+Benutzer: Auf jeden Fall
+Virtueller Agent: Los geht's!
+'''
 
-Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/question.md), [Optional Question](../../flow-nodes/message/optional-question.md) and [Code](../../flow-nodes/code/code.md) Nodes.
+Die Ja/Nein-Intents-Funktion wird in der [Frage](.. /.. /flow-nodes/message/question.md), [optionale Frage](.. /.. /flow-nodes/message/optionale-frage.md) und [Code](.. /.. /flow-nodes/code/code.md) Knoten.
 
-To set up this feature, do the following:
+Um diese Funktion einzurichten, gehen Sie wie folgt vor:
 
-1. [Select a proper locale or use a default one](#select-a-locale)
-2. [Choose whether you want to use local for specific or all Flows](#use-yesno-intents-for-specific-or-all-flows)
-3. [Test your Flow by using the Interaction Panel](#test-your-flow-by-using-the-interaction-panel)
+1. [Wählen Sie ein geeignetes Gebietsschema aus oder verwenden Sie ein Standardgebiet](#select-a-locale)
+2. [Wählen Sie aus, ob Sie local für bestimmte oder alle Flows verwenden möchten](#use-yesno-intents-for-specific-or-all-flows)
+3. [Testen Sie Ihren Flow mithilfe des Interaktionsfensters](#test Sie Ihren Flow mithilfe des Interaktionsbereichs verwenden)
 
-### Select a Locale
+### Wählen Sie ein Gebietsschema aus
 
-A separate Yes/No Intents model is trained for each locale configured for the project. Therefore, the Yes/No Intents training is configured separately for each locale. The Universal locale has preinstalled English example sentences.
+Für jedes für das Projekt konfigurierte Gebietsschema wird ein separates Ja/Nein-Intents-Modell trainiert. Daher wird das Ja/Nein-Intents-Training für jedes Gebietsschema separat konfiguriert. Das universelle Gebietsschema verfügt über vorinstallierte englische Beispielsätze.
 
-To configure a locale, do the following:
+Um ein Gebietsschema zu konfigurieren, gehen Sie wie folgt vor:
 
-1. To see the project's configured locales, click **Manage > Localization**.
-2. Select a locale and click ![ellipsis](../images/icons/vertical-ellipsis.svg), then **Edit Yes/No Intents**.
-3. In the **Edit Yes/No Intents** pane, you can configure Intents for the current locale:
-      - **Yes Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
-      - **No Intent** — by default, the setting is toggled on. When the setting is toggled off, the Intent is excluded from the build.
-      - **Reject Intent** — by default, the setting is toggled on. You need to add examples manually. When the setting is toggled off, the Intent is excluded from the build.
-4. Additionally, for Yes and No Intents, you can add [rules](rule-intents.md). 
-5. Click **Save & Build** to build a model. The Yes/No model is always built when you edit and save settings. 
+1. Um die konfigurierten Gebietsschemata des Projekts anzuzeigen, klicken Sie auf **> Lokalisierung verwalten**.
+2. Wählen Sie ein Gebietsschema aus und klicken Sie auf! [Auslassungspunkte] (.. /images/icons/vertical-ellipsis.svg), dann **Ja/Nein-Absichten bearbeiten**.
+3. Im Bereich **Ja/Nein-Absichten bearbeiten** können Sie Absichten für das aktuelle Gebietsschema konfigurieren:
+      - **Ja Absicht** – standardmäßig ist die Einstellung aktiviert. Wenn die Einstellung deaktiviert ist, wird die Absicht aus dem Build ausgeschlossen.
+      - **Keine Absicht** – standardmäßig ist die Einstellung aktiviert. Wenn die Einstellung deaktiviert ist, wird die Absicht aus dem Build ausgeschlossen.
+      - **Absicht ablehnen** – standardmäßig ist die Einstellung aktiviert. Sie müssen Beispiele manuell hinzufügen. Wenn die Einstellung deaktiviert ist, wird die Absicht aus dem Build ausgeschlossen.
+4. Zusätzlich können Sie für Ja- und Nein-Absichten [Regeln](rule-intents.md) hinzufügen. 
+5. Klicken Sie auf **Speichern & Erstellen**, um ein Modell zu erstellen. Das Ja/Nein-Modell wird immer erstellt, wenn Sie Einstellungen bearbeiten und speichern. 
 
-## Use Yes/No Intents for Specific or All Flows
+## Ja/Nein-Absichten für bestimmte oder alle Flows verwenden
 
-You can use the Yes/No Intents feature for:
+Sie können die Ja/Nein-Absichtsfunktion für Folgendes verwenden:
 
-- [a specific Flow](#flow-level-settings) 
-- [all Flows in the virtual agent project](#project-level-settings)
+- [ein bestimmter Flow](#flow-Level-Einstellungen) 
+- [alle Flows im Projekt des virtuellen Agenten](#project-level-settings)
 
-### Project-level settings
+### Einstellungen auf Projektebene
 
-To use Yes/No Intents for all Flows, do the following:
+Um Ja/Nein-Absichten für alle Flows zu verwenden, gehen Sie wie folgt vor:
 
-1. In the left-side menu, click **Manage > Settings**.
-2. On the **Settings** page, click **NLU Settings**. 
-3. In the **General Flow Logic** section, select one of the following options from the **Yes/No Logic** list:
-     - **Confirmation Words** — disables the Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
-     - **Yes/No Intents with extended rules** — evaluates the standard Confirmation words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.
-     - **Yes/No Intents** — evaluates the Yes/No Intents logic for every user input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
-4. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales.
-You can change this value for a specific Flow.
-5. Click **Save** to apply settings and build a model. The Yes/No model is always built when you edit and save settings. 
+1. Klicken Sie im Menü auf der linken Seite auf **> Einstellungen verwalten**.
+2. Klicken Sie auf der Seite **Einstellungen** auf **NLU-Einstellungen**. 
+3. Wählen Sie im Abschnitt **Allgemeine Ablauflogik** eine der folgenden Optionen aus der Liste **Ja/Nein-Logik** aus:
+     - **Bestätigungswörter** — deaktiviert die Ja/Nein-Absichtsfunktion. Bestätigungswörter werden auf die gleiche Weise wie zuvor in der Ja/Nein-Intents-Funktion verwendet. Die Option ist standardmäßig aktiviert.
+     - **Ja/Nein-Absichten mit erweiterten Regeln** – wertet zuerst die Standardlogik für Bestätigungswörter aus. Wenn die standardmäßige Logik der Bestätigungswörter den Eingabetyp nicht ermitteln kann, wird das Ja/Nein-Intents-Modell ausgewertet.
+     - **Ja/Nein-Absichten** – wertet die Ja/Nein-Absichtslogik für jede Benutzereingabe aus. Die standardmäßige Logik für Bestätigungswörter wird nur dann als Fallback verwendet, wenn keine Ja-, Nein- oder Ablehnungsabsichten aus dem Ja/Nein-Intents-Modell ausgelöst werden.
+4. Wenn Sie **Ja/Nein-Absichten – mit erweiterten Regeln** oder **Ja/Nein-Absichten** ausgewählt haben, konfigurieren Sie **Ja/Nein-Schwellenwert**. Der Schieberegler für den Konfidenzschwellenwert legt die Mindestpunktzahl fest, die für das Auslösen von Ja/Nein-Absichten erforderlich ist. Ein Ja, Nein oder Absicht ablehnen wird nur ausgelöst, wenn die Absichtsbewertung größer oder gleich diesem Schwellenwert ist. Dieser Wert gilt für Ja/Nein-Intents-Modelle für alle Gebietsschemas.
+Sie können diesen Wert für einen bestimmten Flow ändern.
+5. Klicken Sie auf **Speichern**, um Einstellungen anzuwenden und ein Modell zu erstellen. Das Ja/Nein-Modell wird immer erstellt, wenn Sie Einstellungen bearbeiten und speichern. 
 
-If you have set settings at the project level but want to change them for certain Flows, you should go to the Flow-level settings.
+Wenn Sie Einstellungen auf Projektebene festgelegt haben, diese aber für bestimmte Flows ändern möchten, sollten Sie zu den Einstellungen auf Flow-Ebene wechseln.
 
-### Flow-level settings
+### Einstellungen für die Durchflussebene
 
-By default, all Flows inherit the **Yes/No Logic** and the **Yes/No threshold** settings from the project-level configuration. You can override these settings for a specific Flow.
+Standardmäßig erben alle Flows die Einstellungen **Ja/Nein-Logik** und **Ja/Nein-Schwellenwert** von der Konfiguration auf Projektebene. Sie können diese Einstellungen für einen bestimmten Flow überschreiben.
 
-To use Yes/No Intents for a specific Flow, do the following:
+Um Ja/Nein-Absichten für einen bestimmten Flow zu verwenden, gehen Sie wie folgt vor:
 
-1. Open the existing Flow.
-2. In the upper-right corner of the **Flow Editor** page, select **Settings**.
-3. On the **Configuration** tab, in **General Flow Logic** activate checkbox near the **Yes/No Logic** setting.
-4. From the **Yes/No Logic** list, select one of the following options:
-     - **Confirmation Words** — disables the current Flow's Yes/No Intents feature. Confirmation words are used the same way as before the Yes/No Intents feature. The option is enabled by default.
-     - **Yes/No Intents with extended rules** — evaluates the standard Confirmation Words logic first. If the standard Confirmation Words logic fails to determine the input type, the Yes/No Intents model is evaluated.
-     - **Yes/No Intents** — evaluates the Yes/No Intents logic for every user input. The standard Confirmation Words logic is only used as a fallback when no Yes, No, or Reject Intents from the Yes/No Intents model are triggered.
-5. If you selected **Yes/No Intents – with extended rules** or **Yes/No Intents**, configure **Yes/No threshold**. The confidence threshold slider sets the minimum score required for Yes/No Intents to trigger. A Yes, No, or Reject Intent will only be triggered if the Intent score is greater than or equal to this threshold. This value applies to Yes/No Intents models for all locales in the current Flow.
-6. Click **Save** to apply settings and build a model. The Yes/No model is always built when you edit and save settings. 
+1. Öffnen Sie den vorhandenen Flow.
+2. Wählen Sie in der oberen rechten Ecke der Seite **Flow-Editor** die Option **Einstellungen** aus.
+3. Aktivieren Sie auf der Registerkarte **Konfiguration** unter **Allgemeine Ablauflogik** das Kontrollkästchen neben der Einstellung **Ja/Nein-Logik**.
+4. Wählen Sie in der Liste **Ja/Nein-Logik** eine der folgenden Optionen aus:
+     - **Bestätigungswörter** – deaktiviert die Ja/Nein-Intents-Funktion des aktuellen Flows. Bestätigungswörter werden auf die gleiche Weise wie zuvor in der Ja/Nein-Intents-Funktion verwendet. Die Option ist standardmäßig aktiviert.
+     - **Ja/Nein-Absichten mit erweiterten Regeln** – wertet zuerst die Standardlogik für Bestätigungswörter aus. Wenn die standardmäßige Logik der Bestätigungswörter den Eingabetyp nicht ermitteln kann, wird das Ja/Nein-Intents-Modell ausgewertet.
+     - **Ja/Nein-Absichten** – wertet die Ja/Nein-Absichtslogik für jede Benutzereingabe aus. Die standardmäßige Logik für Bestätigungswörter wird nur dann als Fallback verwendet, wenn keine Ja-, Nein- oder Ablehnungsabsichten aus dem Ja/Nein-Intents-Modell ausgelöst werden.
+5. Wenn Sie **Ja/Nein-Absichten – mit erweiterten Regeln** oder **Ja/Nein-Absichten** ausgewählt haben, konfigurieren Sie **Ja/Nein-Schwellenwert**. Der Schieberegler für den Konfidenzschwellenwert legt die Mindestpunktzahl fest, die für das Auslösen von Ja/Nein-Absichten erforderlich ist. Ein Ja, Nein oder Absicht ablehnen wird nur ausgelöst, wenn die Absichtsbewertung größer oder gleich diesem Schwellenwert ist. Dieser Wert gilt für Ja/Nein-Intents-Modelle für alle Gebietsschemas im aktuellen Flow.
+6. Klicken Sie auf **Speichern**, um Einstellungen anzuwenden und ein Modell zu erstellen. Das Ja/Nein-Modell wird immer erstellt, wenn Sie Einstellungen bearbeiten und speichern. 
 
-## Test your Flow by using the Interaction Panel
+## Testen Sie Ihren Flow mithilfe des Interaktionsfensters
 
-!!! tip
-    Starting from Cognigy 4.47, Yes/No Intents are supported in [Expert mode](../../tools/interaction-panel/interaction-panel.md#expert-mode).
+!!! Trinkgeld
+    Ab Cognigy 4.47 werden Ja/Nein-Absichten im [Expertenmodus](.. /.. /tools/interaction-panel/interaction-panel.md#expert-mode).
 
-Check if the Yes/No Intent feature works as expected via the [Interaction Panel](../../tools/interaction-panel/context.md):
+Überprüfen Sie, ob die Ja/Nein-Absichtsfunktion wie erwartet funktioniert, indem Sie den [Interaktionsbereich](.. /.. /tools/interaction-panel/context.md):
 
-1. In the existing Flow, open the Interaction Panel by clicking ![interaction-panel](../images/icons/interaction-panel.svg) **Chat with your Agent** in the upper-right corner of the page.
-2. Run a Flow.
-3. On the **INFO** tab, select **Input** to view JSON. In the `yesNoIntentResults` object, you will see the result of Yes/No Intents model evaluation. Below are examples of possible results:
+1. Öffnen Sie im vorhandenen Flow das Interaktionsfenster, indem Sie auf ! [Interaktions-Panel] (.. /images/icons/interaction-panel.svg) **Chatten Sie mit Ihrem Agenten** in der oberen rechten Ecke der Seite.
+2. Führen Sie einen Flow aus.
+3. Wählen Sie auf der Registerkarte **INFO** die Option **Eingabe** aus, um JSON anzuzeigen. Im Objekt "yesNoIntentResults" sehen Sie das Ergebnis der Auswertung des Yes/No-Intents-Modells. Im Folgenden finden Sie Beispiele für mögliche Ergebnisse:
 
-=== "Yes Intent"
+=== "Ja Absicht"
 
-      ```json
+'''json
       "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": "yesIntent",
             "finalIntentScore": 0.8887347172756052,
-            "scores": [
+            "Partituren": [
                   {
-                  "id": "a396391d-3cab-43ab-8b8a-cefd0135041b",
+                  "ID": "A396391D-3CAB-43AB-8B8A-CEFD0135041B",
                   "name": "yesIntent",
-                  "score": 0.8887347172756052
+                  "Punktzahl": 0.8887347172756052
                   },
                   {
-                  "id": "fa2ab1d3-b5cd-4021-91c6-8b642ec51dd8",
-                  "name": "noIntent",
-                  "score": 0.32411091251643426
+                  "ID": "FA2AB1D3-B5CD-4021-91C6-8B642EC51DD8",
+                  "name": "keine Absicht",
+                  "Partitur": 0.32411091251643426
                   }
             ]
          }
       },
-      "mode": "TextOnly",
-      "type": "pAnswer"
-      ```
+      "mode": "Nur Text",
+      "type": "pAntwort"
+      '''
 
-=== "No Intent"
+=== "Keine Absicht"
 
-      ```json
+'''json
       "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": "noIntent",
-            "finalIntentScore": 0.9659235010108965,
-            "scores": [
+            "finalIntentScore": 0,9659235010108965,
+            "Partituren": [
                   {
-                  "id": "fa2ab1d3-b5cd-4021-91c6-8b642ec51dd8",
-                  "name": "noIntent",
-                  "score": 0.9659235010108965
+                  "ID": "FA2AB1D3-B5CD-4021-91C6-8B642EC51DD8",
+                  "name": "keine Absicht",
+                  "Punktzahl": 0.9659235010108965
                   },
                   {
-                  "id": "a396391d-3cab-43ab-8b8a-cefd0135041b",
+                  "ID": "A396391D-3CAB-43AB-8B8A-CEFD0135041B",
                   "name": "yesIntent",
-                  "score": 0.021069213045105353
+                  "Punktzahl": 0.021069213045105353
                   },
                   {
-                  "id": "c646dd2b-f7d2-45d8-8451-cae95142c81f",
-                  "name": "rejectIntent",
-                  "score": 0.0034825030367928644
+                  "ID": "C646DD2B-F7D2-45D8-8451-CAE95142C81F",
+                  "name": "Absicht",
+                  "Punktzahl": 0.0034825030367928644
                   }
             ]
         }
       },
-      "mode": "TextOnly",
-      "type": "nAnswer"
-      ```
-=== "Reject Intent"
+      "mode": "Nur Text",
+      "type": "nAntwort"
+      '''
+=== "Absicht ablehnen"
       
-      ```json
+'''json
       "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": "rejectIntent",
             "finalIntentScore": 0.7307951831435443,
-            "scores": [
+            "Partituren": [
                   {
-                  "id": "c646dd2b-f7d2-45d8-8451-cae95142c81f",
-                  "name": "rejectIntent",
-                  "score": 0.7307951831435443
+                  "ID": "C646DD2B-F7D2-45D8-8451-CAE95142C81F",
+                  "name": "Absicht",
+                  "Punktzahl": 0.7307951831435443
                   },
                   {
-                  "id": "a396391d-3cab-43ab-8b8a-cefd0135041b",
+                  "ID": "A396391D-3CAB-43AB-8B8A-CEFD0135041B",
                   "name": "yesIntent",
-                  "score": 0.03191703050840985
+                  "Punktzahl": 0.03191703050840985
                   },
                   {
-                  "id": "fa2ab1d3-b5cd-4021-91c6-8b642ec51dd8",
-                  "name": "noIntent",
-                  "score": 0.007946727310282035
+                  "ID": "FA2AB1D3-B5CD-4021-91C6-8B642EC51DD8",
+                  "name": "keine Absicht",
+                  "Punktzahl": 0.007946727310282035
                   }
                ]
             }
       },
-      "mode": "TextOnly",
-      "type": "Statement"
-      ```
+      "mode": "Nur Text",
+      "type": "Anweisung"
+      '''
      
-=== "Fallback Reject Intent"
+=== "Fallback-Ablehnungsabsicht"
 
-      ```json
+'''json
       "nlu": {
         "yesNoIntentResults": {
             "finalIntentName": null,
             "finalIntentScore": null,
-            "scores": [
+            "Partituren": [
                   {
                   "id": null,
-                  "name": "null - Fallback Reject Intent",
-                  "score": 0.7277484634707633
+                  "name": "null - Fallback-Ablehnungsabsicht",
+                  "Punktzahl": 0.7277484634707633
                   },
                   {
-                  "id": "a396391d-3cab-43ab-8b8a-cefd0135041b",
+                  "ID": "A396391D-3CAB-43AB-8B8A-CEFD0135041B",
                   "name": "yesIntent",
-                  "score": 0.207322792467384
+                  "Bewertung": 0.207322792467384
                   },
                   {
-                  "id": "c646dd2b-f7d2-45d8-8451-cae95142c81f",
-                  "name": "rejectIntent",
-                  "score": 0.018095447571065546
+                  "ID": "C646DD2B-F7D2-45D8-8451-CAE95142C81F",
+                  "name": "Absicht",
+                  "Punktzahl": 0.018095447571065546
                   }
             ]
          }
       },
-      "mode": "TextOnly",
-      "type": "Statement"
-      ```  
+      "mode": "Nur Text",
+      "type": "Anweisung"
+      '''  
 
-Depending on the **Yes/No Logic** setting, the Yes/No Intents model may not be evaluated. In that case, the `yesNoIntentResults` has the default values:
+Abhängig von der Einstellung **Ja/Nein-Logik** wird das Ja/Nein-Intents-Modell möglicherweise nicht ausgewertet. In diesem Fall hat 'yesNoIntentResults' die Standardwerte:
 
-```json
+'''json
 "yesNoIntentResults": {
   "finalIntentName": null,
   "finalIntentScore": null,
   "scores": []
 }
-```
-Yes/No Intents are evaluated independently of regular Intents and do not overwrite the existing fields for Intents in the input object. Evaluation of Yes/No Intents only affects the `type` and `yesNoIntentResults`. 
+'''
+Ja/Nein-Intents werden unabhängig von regulären Intents ausgewertet und überschreiben nicht die vorhandenen Felder für Intents im Eingabeobjekt. Die Auswertung von Ja/Nein-Absichten wirkt sich nur auf den 'Typ' und 'yesNoIntentResults' aus. 
 
-## FAQ
+## Häufig gestellte Fragen
 
-**Q1**: What happens if the **Yes/No Logic** is set to **Yes/No Intents**, but both the Yes and No Intents have been individually disabled in the locale settings?
+F1: Was passiert, wenn die **Ja/Nein-Logik** auf **Ja/Nein-Absichten** festgelegt ist, aber sowohl die Ja- als auch die Nein-Absichten einzeln in den Gebietsschemaeinstellungen deaktiviert wurden?
 
-**A1**: The standard **Confirmation Words** logic is used.
+**A1**: Es wird die Standardlogik **Bestätigungswörter** verwendet.
 
-**Q2**: I don’t see Yes/No Intents in the Intent Trainer. Why? 
+F2: Ich sehe keine Ja/Nein-Absichten im Intent-Trainer. Warum? 
 
-**A2**: Yes/No Intents support has not been implemented in the Intent Trainer. 
+**A2**: Ja/Nein Intents-Unterstützung wurde im Intent Trainer nicht implementiert. 
 
-**Q3**: I don’t see the traffic lights and training feedback when I train Yes/No Intents. Why?
+F3: Ich sehe die Ampeln und das Trainingsfeedback nicht, wenn ich Ja/Nein-Absichten trainiere. Warum?
 
-**A3**: The traffic light system has not yet been implemented for Yes/No Intents. 
+**A3**: Das Ampelsystem wurde für Ja/Nein-Absichten noch nicht implementiert. 
 
-**Q4**: Are Yes/No Intents independent of standard intent scoring?
+**F4**: Sind Ja/Nein-Absichten unabhängig von der standardmäßigen Absichtsbewertung?
 
-**A4**: Yes, the Yes/No Intents are completely independent of standard intent scoring (`input.intentScore` or `input.nlu.intentMapperResults`). They specifically find the types `nAnswer` and `yAnswer` within the Flow. These types are used for the **Yes/No** type in [Question Nodes](../../flow-nodes/message/question.md) and for [confirming intents](ml-intents.md), similar to [confirmation words](../../resources/manage/settings.md#additional-confirmation-words).
+**A4**: Ja, die Ja/Nein-Absichten sind völlig unabhängig von der standardmäßigen Absichtsbewertung ("input.intentScore" oder "input.nlu.intentMapperResults"). Sie finden insbesondere die Typen "nAnswer" und "yAnswer" innerhalb des Flows. Diese Typen werden für den Typ **Ja/Nein** in [Frageknoten](.. /.. /flow-nodes/message/question.md) und für [confirm intents](ml-intents.md), ähnlich wie [confirmation words](.. /.. /resources/manage/settings.md#additional-confirmation-words).
 
-**Q5**: How are Yes/No Intents evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
+F5: Wie werden Ja/Nein-Absichten ausgewertet, wenn der Knoten "Flow ausführen" mit und ohne aktivierte **Parse Intents** verwendet wird?
 
-**A5**: Yes/No Intent scoring behavior differs only if the Yes/No Intent settings are different in the two Flows. 
+**A5**: Das Bewertungsverhalten der Ja/Nein-Absicht unterscheidet sich nur, wenn die Ja/Nein-Absichtseinstellungen in den beiden Flows unterschiedlich sind. 
 
-For example:
+Zum Beispiel:
 
-Prerequisites:
+Voraussetzungen:
 
-- Flow A has `Yes/No Intents` and only one node, which is an Execute Flow node that executes Flow B.
-- Flow B has `Yes/No Intents - with extended rules` and one Say node.
+- Flow A hat "Ja/Nein-Intents" und nur einen Knoten, nämlich einen Execute Flow-Knoten, der Flow B ausführt.
+- Flow B verfügt über "Ja/Nein-Absichten – mit erweiterten Regeln" und einen Say-Knoten.
 
-Scenario 1: 
+Szenario 1: 
 
-1. The Parse Intents setting is disabled in the Execute Flow node of Flow A.
-2. When the user sends `yes` in Flow A, Yes Intent is triggered in Flow B. 
-3. Flow B inherits the Yes/No Logic from Flow A.
+1. Die Einstellung "Absichten analysieren" ist im Knoten "Flow ausführen" von Flow A deaktiviert.
+2. Wenn der Benutzer in Flow A "Ja" sendet, wird die Ja-Absicht in Flow B ausgelöst. 
+3. Flow B erbt die Ja/Nein-Logik von Flow A.
 
-Scenario 2: 
+Szenario 2: 
 
-1. The Parse Intents setting is enabled in the Execute Flow node of Flow A.
-2. When the user sends `yes` in Flow A, Yes Intent is not triggered in Flow B. 
-3. Flow B uses its own Yes/No Logic.
+1. Die Einstellung "Absichten analysieren" ist im Knoten "Flow ausführen" von Flow A aktiviert.
+2. Wenn der Benutzer in Flow A "Ja" sendet, wird die Ja-Absicht in Flow B nicht ausgelöst. 
+3. Flow B verwendet seine eigene Ja/Nein-Logik.

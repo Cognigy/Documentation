@@ -1,15 +1,12 @@
 ---
- title: "Enable Slot Fillers" 
- slug: "enable-slot-fillers" 
- hidden: false 
+ title: "Slot-Filler aktivieren" 
+ Slug: "Enable-Slot-Fillers" 
+ ausgeblendet: false 
 ---
-# Enable Slot Fillers
+# Slot-Filler aktivieren
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/enable-slot-fillers.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-
-The Enable Slot Fillers Node lets you enable a particular Slot Filler. Use the drop-down menu to select the Slot Filler that you want to enable. For more information on Slot Fillers, refer to [**NLU (Natural Language Understanding**)]({{config.site_url}}ai/nlu/nlu-overview/overview/).
+## Beschreibung<div class="divider"></div>Mit dem Knoten Slot-Filler aktivieren können Sie einen bestimmten Slot-Filler aktivieren. Verwenden Sie das Dropdown-Menü, um den Slot Filler auszuwählen, den Sie aktivieren möchten. Weitere Informationen zu Slot-Fillern finden Sie unter [**NLU (Natural Language Understanding**)]({{config.site_url}}ai/nlu/nlu-overview/overview/).

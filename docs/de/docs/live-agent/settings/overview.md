@@ -1,22 +1,22 @@
 ---
-title: "Live Agent Settings"
-slug: "settings"
-description: "Cognigy Live agent settings offer many features, such as team and inbox management, automation rules, canned responses, attachments, audit logs, and account settings. "
-hidden: false
+title: "Live Agent-Einstellungen"
+slug: "Einstellungen"
+Beschreibung: "Die Agenteneinstellungen von Cognigy Live bieten viele Funktionen, wie z. B. Team- und Posteingangsverwaltung, Automatisierungsregeln, vorgefertigte Antworten, Anhänge, Audit-Protokolle und Kontoeinstellungen. "
+ausgeblendet: false
 ---
 
-# Live Agent Settings
+# Live-Agent-Einstellungen
 
-Cognigy Live agent settings offer many features, such as team and inbox management, automation rules, canned responses, attachments, audit logs, and account settings. These capabilities can significantly improve customer interactions and enhance support efficiency.
+Die Agenteneinstellungen von Cognigy Live bieten viele Funktionen, wie z. B. Team- und Posteingangsverwaltung, Automatisierungsregeln, vorgefertigte Antworten, Anhänge, Audit-Protokolle und Kontoeinstellungen. Diese Funktionen können die Kundeninteraktionen erheblich verbessern und die Effizienz des Supports steigern.
 
-Live Agent settings include the following sections:
+Zu den Live Agent-Einstellungen gehören die folgenden Abschnitte:
 
-- [Agents](agents.md)
+- [Agenten](agents.md)
 - [Teams](teams.md)
-- [Inboxes](inboxes.md)
-- [Labels](labels.md)
-- [Automation Rules](automation-rules.md)
-- [Canned Responses](canned-responses.md)
-- [Attachments](attachments.md)
-- [Audit Logs](audit-logs.md)
-- [Account Settings](account-settings.md)
+- [Posteingänge](inboxes.md)
+- [Beschriftungen](labels.md)
+- [Automatisierungsregeln](automation-rules.md)
+- [Vorgefertigte Antworten](canned-responses.md)
+- [Anhänge](attachments.md)
+- [Audit-Protokolle](audit-logs.md)
+- [Kontoeinstellungen](account-settings.md)

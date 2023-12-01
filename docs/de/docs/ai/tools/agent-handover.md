@@ -1,113 +1,105 @@
 ---
-title: "Agent Handover" 
-slug: "agent-handover" 
-hidden: false 
+Titel: "Agentenübergabe" 
+Schnecke: "Agenten-Übergabe" 
+ausgeblendet: false 
 ---
-# Agent Handover
+# Agentenübergabe
 
-Human support **Agent Handover** is a critical tool for incorporating virtual agents into existing contact center workflows. Direct communication between virtual agents and human agents will enrich the experience of a customer beyond the capabilities of a Conversational AI.
+Menschliche Unterstützung **Agentenübergabe** ist ein wichtiges Werkzeug für die Integration virtueller Agenten in bestehende Contact-Center-Workflows. Die direkte Kommunikation zwischen virtuellen Agenten und menschlichen Agenten wird die Erfahrung eines Kunden über die Fähigkeiten einer Conversational AI hinaus bereichern.
 
-## Handover Processes
-<div class="divider"></div>
+## Übergabeprozesse<div class="divider"></div>Wenn es sich bei einer Anfrage eines Benutzers um einen Grenzfall handelt, der einfach zu spezifisch ist, um vom Bot bearbeitet zu werden, kann der Bot dem Benutzer anbieten, an einen Support-Agenten, einen echten Menschen, weitergeleitet zu werden, der die Konversation abfangen und dem Kunden manuell helfen kann, ohne den Kanal wechseln zu müssen.
 
-If a request from a user is an edge case that is just too specific to be handled by the Bot, the bot can offer the user to be forwarded to a support agent, a real human, that can intercept the conversation and help the customer manually without the need to change channels.
-
-**Agent Handover Processes** can be integrated in a Flow by using the **Handover to Agent Node**. If this Node is triggered, a Handover request from the customer is sent to the **Contact Center Service** that has been configured in the [Endpoint Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/). A human agent can then intercept and take over the conversation from the virtual agent.
+**Agentenübergabeprozesse** können mithilfe des **Übergabeknotens an den Agentenknoten** in einen Flow integriert werden. Wenn dieser Knoten ausgelöst wird, wird eine Übergabeanforderung des Kunden an den **Contact Center-Dienst** gesendet, der in den [Endpoint Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/) konfiguriert wurde. Ein menschlicher Agent kann dann die Konversation abfangen und vom virtuellen Agenten übernehmen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/handover-flow.png" width="100%" />
 </figure>
 
-Once a Handover has been initiated, the normal execution of the Flow is paused until the customer who is waiting for a support agent cancels the request, or until an agent finishes the conversation. Before the conversation with an agent has started, the customer can cancel the request and go back to the normal flow execution by triggering a selected intent or a dedicated quick reply.
+Sobald eine Übergabe initiiert wurde, wird die normale Ausführung des Flows angehalten, bis der Kunde, der auf einen Supportmitarbeiter wartet, die Anfrage abbricht oder bis ein Agent die Konversation beendet. Bevor die Konversation mit einem Agenten begonnen hat, kann der Kunde die Anfrage abbrechen und zur normalen Flow-Ausführung zurückkehren, indem er eine ausgewählte Absicht oder eine dedizierte Schnellantwort auslöst.
 
-!!! note "New Handover Node"
-    The old Handover Node has been replaced with a `Handover To Agent` Node. The content below is only applicable to the new `Handover to Agent` Node
+!!! Hinweis "Neuer Übergabeknoten"
+    Der alte Übergabeknoten wurde durch einen Übergabeknoten an den Agenten ersetzt. Der folgende Inhalt gilt nur für den neuen Knoten "Übergabe an den Agenten"
 
+Wenn die Übergabe abgeschlossen ist, wird die Flow-Ausführung unterhalb des Übergabeknotens an den Agenten fortgesetzt. Dem Eingabeobjekt wird eine Übergabeeigenschaft hinzugefügt, die Informationen darüber verfügbar macht, warum die Übergabe abgeschlossen wurde. Das Objekt, das verfügbar gemacht wird, weist die folgende Struktur auf:
 
-When the Handover is finished, the Flow execution will continue below the Handover to Agent Node. A handover property will be added to the input object, which exposes information about why the handover was finished. The object that is exposed has the following structure:
-
-```JavaScript
+'''JavaScript
 {
-    "handover": {
-        "status": "completed"
+    "Übergabe": {
+        "status": "abgeschlossen"
     }
 }
-```
+'''
 
-The status can have the following values:
+Der Status kann folgende Werte annehmen:
 
-| Handover Status | Description                                    |
+| Status der Übergabe | Beschreibung |
 |-----------------|------------------------------------------------|
-| completed       | The Handover was finished by the agent         |
-| cancelled       | The user has cancelled the Handover request    |
-| error           | An error occurred when requesting the Handover |
+| Abgeschlossen | Die Übergabe wurde vom Agenten abgeschlossen |
+| Abgesagt | Der Benutzer hat die Übergabeanfrage |
+| Fehler | Beim Anfordern der Übergabe |
 
-In case of an error, the handover object is extended to contain additional information:
+Im Fehlerfall wird das Übergabeobjekt um zusätzliche Informationen erweitert:
 
-```JavaScript
+'''JavaScript
 {
-    "handover": {
-        "status": "completed",
-        "error": {
-          "reason": "unsupported",
+    "Übergabe": {
+        "status": "abgeschlossen",
+        "Fehler": {
+          "reason": "nicht unterstützt",
           "message": ""
         }
     }
 }
-```
+'''
 
-The error reason can either be `unsupported` in case the user channel does not support doing a Handover, or `error` if something went wrong when contacting the Handover Provider.
+Der Fehlergrund kann entweder "nicht unterstützt" sein, falls der Benutzerkanal die Durchführung eines Handovers nicht unterstützt, oder "Fehler", wenn bei der Kontaktaufnahme mit dem Übergabeanbieter ein Fehler aufgetreten ist.
 
-There is also a `Handover Status` [Token]({{config.site_url}}ai/resources/manage/tokens/) which can be used to access the handover status in the Flow.
+Es gibt auch einen 'Übergabestatus' [Token]({{config.site_url}}ai/resources/manage/tokens/), der verwendet werden kann, um auf den Übergabestatus im Flow zuzugreifen.
 
-### Handling the Handover Status
-To configure different behavior of the Virtual Agent based on the Handover status, you can use a `Lookup` Node to handle the different possible outcomes of a Handover. In the `Lookup` Node you can select to lookup on the `Handover Status`.
+### Umgang mit dem Übergabestatus
+Um ein anderes Verhalten des virtuellen Agenten basierend auf dem Übergabestatus zu konfigurieren, können Sie einen "Lookup"-Knoten verwenden, um die verschiedenen möglichen Ergebnisse einer Übergabe zu verarbeiten. Im 'Lookup'-Knoten können Sie auswählen, ob Sie nach dem 'Übergabestatus' suchen möchten.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/handover-node-usage.png" width="100%" />
 </figure>
 
-## Handover to Agent Node
-<div class="divider"></div>
+## Übergabe an den Agentenknoten<div class="divider"></div>Der Knoten **Übergabe an Agent** verfügt sowohl über allgemeine als auch über spezifische Einstellungen für jeden Übergabeanbieter.
 
-The **Handover to Agent** Node has both general and specific settings for each handover provider.
+Die allgemeinen Einstellungen sind im Folgenden beschrieben und die spezifischen Einstellungen finden Sie in der [Übersicht der Übergabeanbieter]({{config.site_url}}ai/handover-providers/overview/).
 
-The General settings are described below and the specific settings you can find in the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
+### Übergabe akzeptiert Nachricht
 
-### Handover Accepted Message
-
-| Parameter                        | Type          | Description                                                                                                                                                                                   |
+| Parameter | Typ | Beschreibung |
 |----------------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Handover Accepted Message        | CognigyScript | The message to output if the Handover was requested                                                                                                                                           |
-| Repeat Handover Accepted Message | Toggle        | Whether to re-output the Handover Accepted Message when the user sends a message while waiting in the queue for an agent.                                                                     |
+| Nachricht "Übergabe akzeptiert" | CognigyScript | Die Meldung, die ausgegeben werden soll, wenn die Übergabe angefordert wurde |
+| Übergabe akzeptiert Nachricht wiederholen | Umschalten | Gibt an, ob die Nachricht "Übergabe akzeptiert" erneut ausgegeben werden soll, wenn der Benutzer eine Nachricht sendet, während er in der Warteschlange auf einen Agenten wartet.                                                                     |
 
-### Cancel Handover Options
+### Übergabeoptionen abbrechen
 
-| Parameter          | Type          | Description                                                                       |
+| Parameter | Typ | Beschreibung |
 |--------------------|---------------|-----------------------------------------------------------------------------------|
-| Cancel Intent      | CognigyScript | The intent the user has to trigger to cancel the Handover request                 |
-| Cancel Button Text | CognigyScript | The text for a quick reply button that cancels the Handover request when clicked. |
+| Absicht abbrechen | CognigyScript | Die Absicht, die der Benutzer auslösen muss, um die Übergabeanforderung abzubrechen |
+| Schaltflächentext abbrechen | CognigyScript | Der Text für eine Schnellantwortschaltfläche, die die Übergabeanforderung abbricht, wenn darauf geklickt wird. |
 
-### On Resolve Options
+### Bei Auflösungsoptionen
 
-| Parameter                           | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Flow Continuation                   | Selector | - Below this Node - the user will be taken to the node below the Handover node once the agent resolves the conversation. In this case, the user would continue in a different flow, but the starting point would be the node below the Handover node. <br> - At current AgentInject Entrypoint - the user will continue the chat at the current agent inject entrypoint. This option allows the agent to guide the user to a specific part of the chat and then give control back to the user. | 
-| Send resolve event to Virtual Agent | Toggle   | Sending an event when the virtual agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|-------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ------------------------------|
+| Flow-Fortsetzung | Selektor | - Unterhalb dieses Knotens: Der Benutzer wird zum Knoten unterhalb des Übergabeknotens weitergeleitet, sobald der Agent die Konversation beendet hat. In diesem Fall würde der Benutzer in einem anderen Ablauf fortfahren, aber der Startpunkt wäre der Knoten unterhalb des Übergabeknotens. <br> - Am aktuellen AgentInject-Einstiegspunkt: Der Benutzer setzt den Chat am aktuellen Agent-Inject-Einstiegspunkt fort. Diese Option ermöglicht es dem Agenten, den Benutzer zu einem bestimmten Teil des Chats zu führen und dann die Kontrolle an den Benutzer zurückzugeben. | 
+| Auflösungsereignis an virtuellen Agenten senden | Umschalten | Senden eines Ereignisses, wenn der virtuelle Agent eine Konversation auflöst.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-### Event Settings
+### Event-Einstellungen
 
-| Parameter         | Type   | Description                                               |
+| Parameter | Typ | Beschreibung |
 |-------------------|--------|-----------------------------------------------------------|
-| Send Queue Event  | Toggle | Sending an event to the Flow once the Handover is queued. |
-| Send Active Event | Toggle | Sending an event to the Flow once the Handover is active. |
+| Warteschlangenereignis senden | Umschalten | Senden eines Ereignisses an den Flow, sobald sich die Übergabe in der Warteschlange befindet. |
+| Aktives Ereignis senden | Umschalten | Senden eines Ereignisses an den Flow, sobald die Übergabe aktiv ist. |
 
+## Übergabe-Anbieter
 
-## Handover Providers
+Eine Liste der unterstützten Handover-Services finden Sie in der [Übersicht über Übergabeanbieter](.. /handover-providers/overview.md).
 
-For a list of supported Handover services, refer to the [Handover Providers Overview](../handover-providers/overview.md).
+## Mehr Informationen
 
-## More Information
-
-- [Check Agent Availability Node](../flow-nodes/services/check-agent-availability.md)
-- [User Inactivity Detection and Handling](../handover-providers/user-inactivity-detection.md)
+- [Agentenverfügbarkeitsknoten prüfen](.. /flow-nodes/services/check-agent-availability.md)
+- [Erkennung und Behandlung von Benutzerinaktivität](.. /handover-providers/user-inactivity-detection.md)

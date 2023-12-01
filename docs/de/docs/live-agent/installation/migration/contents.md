@@ -1,11 +1,11 @@
 ---
-title: "Migration Guides"
-slug: "migration-guides"
-hidden: false
-ignore_macros: true
+Titel: "Migrationsleitfäden"
+Schnecke: "Migrations-Leitfäden"
+ausgeblendet: false
+ignore_macros: wahr
 ---
 
-# Migration Guides
+# Migrations-Leitfäden
 
-- [Migration guide for Helm dependencies in Live Agent 4.44](helm-dependencies.md)
-- [Migration guide for Redis Sentinel in Live Agent 4.53](redis-sentinel.md)
+- [Migrationshandbuch für Helm-Abhängigkeiten in Live Agent 4.44](helm-dependencies.md)
+- [Migrationshandbuch für Redis Sentinel in Live Agent 4.53](redis-sentinel.md)

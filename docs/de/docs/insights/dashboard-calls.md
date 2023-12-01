@@ -1,282 +1,279 @@
 ---
-title: "Calls"
-slug: "dashboard-calls"
-hidden: false
+Titel: "Aufrufe"
+Slug: "Dashboard-Aufrufe"
+ausgeblendet: false
 ---
 
-# Calls
+# Aufrufe
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../release-notes/4.51.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.51-blue.svg)] (.. /release-notes/4.51.md)
 
-The Calls dashboard displays data from the Voice Gateway service. This dashboard helps you identify areas where your virtual agent may need improvement and make adjustments to improve the overall quality of voice interactions.
+Im Dashboard "Anrufe" werden Daten aus dem Voice Gateway-Dienst angezeigt. Dieses Dashboard hilft Ihnen, Bereiche zu identifizieren, in denen Ihr virtueller Agent möglicherweise verbessert werden muss, und Anpassungen vorzunehmen, um die Gesamtqualität der Sprachinteraktionen zu verbessern.
 
-Metrics are visualized in the following charts:
+Metriken werden in den folgenden Diagrammen visualisiert:
 
-- [Indicators](#indicators)
-- [Bar charts](#bar-charts)
-- [Line charts](#line-charts)
+- [Indikatoren](#indicators)
+- [Balkendiagramme](#bar-Diagramme)
+- [Liniendiagramme](#line-Diagramme)
 
-Each chart presents real-time data that refreshes every 30 seconds.
+Jedes Diagramm stellt Echtzeitdaten dar, die alle 30 Sekunden aktualisiert werden.
 
-All data displayed in the charts relate to the [global filter](global-filter.md) settings.
+Alle in den Diagrammen angezeigten Daten beziehen sich auf die Einstellungen [globaler Filter](global-filter.md).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/calls-dashboard-overview.png" width="100%" />
-  <figcaption>Calls dashboard</figcaption>
+  <figcaption>Dashboard "Anrufe"</figcaption>
 </figure>
 
-## Indicators
+## Indikatoren
 
-### Active calls
+### Aktive Anrufe
 
-Indicates the data for the number of currently active calls is pulled for the previous 15 minutes and updated every 30 seconds.
+Gibt an, dass die Daten für die Anzahl der derzeit aktiven Anrufe für die letzten 15 Minuten abgerufen und alle 30 Sekunden aktualisiert werden.
 
-### Total number of calls
+### Gesamtzahl der Anrufe
 
-Indicates the total number of calls that occurred in the selected timeframe.
+Gibt die Gesamtzahl der Anrufe an, die im ausgewählten Zeitraum stattgefunden haben.
 
-### Transferred calls rate
+### Tarif für weitergeleitete Anrufe
 
-Indicates the percentage of calls that were successfully transferred to an agent.
+Gibt den Prozentsatz der Anrufe an, die erfolgreich an einen Agenten weitergeleitet wurden.
 
-Calculation: `(successful transfers / total calls) x 100%`
+Berechnung: '(erfolgreiche Weiterleitungen / Anrufe insgesamt) x 100%'
 
-Example: `(600 / 1000) x 100% = 60%`
+Beispiel: '(600 / 1000) x 100% = 60%'
 
-### Total call duration
+### Gesamtdauer des Anrufs
 
-Indicates the total duration of calls in the selected timeframe.
+Gibt die Gesamtdauer der Anrufe im ausgewählten Zeitrahmen an.
 
-Calculation: `duration of call 1 + duration of call 2 + duration of call 3 + ... + duration of call n`
+Berechnung: "Dauer des Anrufs 1 + Dauer des Anrufs 2 + Dauer des Anrufs 3 + ... + Dauer des Anrufs n"
 
-## Bar charts
+## Balkendiagramme
 
-### Call ended by
+### Anruf beendet von
 
-Shows the percentage of calls that were ended by the virtual agent or by the user.
+Zeigt den Prozentsatz der Anrufe an, die vom virtuellen Agenten oder vom Benutzer beendet wurden.
 
-Source table:
+Quelltabelle:
 
-```txt
-|   Date    |   Actor    | Number of calls |
+'''txt
+|   Datum |   Schauspieler | Anzahl der Anrufe |
 | --------  | ---------- | --------------- |
-| 2023-W08  |    user    |      13         |
-| 2023-W08  |    agent   |      46         |
-| 2023-W09  |    user    |      78         |
-| 2023-W10  |    user    |      22         |
-| 2023-W10  |    agent   |      21         |
-| 2023-W11  |    user    |      15         |
-| 2023-W11  |    agent   |      2          |
-```
+| 2023-W08 |    Benutzer |      Nr. 13 |
+| 2023-W08 |    Vermittler |      Nr. 46 |
+| 2023-W09 |    Benutzer |      78 |
+| 2023-W10 |    Benutzer |      Nr. 22 |
+| 2023-W10 |    Vermittler |      Nr. 21 |
+| 2023-W11 |    Benutzer |      15 |
+| 2023-W11 |    Vermittler |      2 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/call-ended-by.png" width="80%" />
 </figure>
 
-### Top Intents
+### Top-Absichten
 
-Shows the top-rated number of intents used, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
+Zeigt die am höchsten bewertete Anzahl der verwendeten Absichten an, wobei maximal 6 Absichten in der Zusammenfassungsansicht und 25 in der Detailansicht angezeigt werden. Jedes Mal, wenn eine Absicht übereinstimmt, wird sie in den Analysedaten aufgezeichnet. Die Daten werden dann nach der übereinstimmenden Absicht gruppiert und in absteigender Reihenfolge sortiert.
 
-Source table:
+Quelltabelle:
 
-```txt
-|  Intent           | Total number  |
+'''txt
+|  Absicht | Gesamtanzahl |
 | ----------------- | ------------- |
-| Flight discounts  |      12       |
-| Book a flight     |      5        |
-| Change a flight   |      5        |
-| Additional fee    |      4        |
-| Reject a flight   |      3        |
-| Transfer flights  |      3        |
-```
+| Rabatte für Flüge |      Nr. 12 |
+| Einen Flug buchen |      Nr. 5 |
+| Einen Flug ändern |      Nr. 5 |
+| Zusätzliche Gebühr |      4 |
+| Einen Flug ablehnen |      3 |
+| Transferflüge |      3 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/top-intents.png" width="80%" />
 </figure>
 
-### Total call duration
+### Gesamtdauer des Anrufs
 
-Shows the total duration of calls in the selected timeframe.
+Zeigt die Gesamtdauer der Anrufe im ausgewählten Zeitrahmen an.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date      | totalCallDuration | averageCallDuration | minCallDuration | maxCallDuration |
-| 2/19/2023 | 142000            | 23666.66667         |    10000        | 40000           |
-| 2/20/2023 | 136000            | 19428.57143         |    1000         | 50000           |
-| 2/21/2023 | 88000             | 14666.66667         |    2000         | 32000           |
-| 2/22/2023 | 95000             | 31666.66667         |    12000        | 48000           |
-| 2/23/2023 | 144000            | 20571.42857         |    2000         | 48000           |
-```
+'''txt
+| Datum | totalCallDuration | averageCallDuration | minCallDuration | maxCallDuration |
+| 19.02.2023 | 142000 | 23666.66667 |    10000 | 40000 |
+| 20.02.2023 | 136000 | 19428.57143 |    1000 | 50000 |
+| 21.02.2023 | 88000 | 14666.66667 |    2000 | 32000 |
+| 22.02.2023 | 95000 | 31666.66667 |    12000 | 48000 |
+| 23.02.2023 | 144000 | 20571.42857 |    2000 | 48000 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/total-call-duration.png" width="100%" />
 </figure>
   
-## Line charts
+## Liniendiagramme
 
-### Call directions
+### Wegbeschreibung anrufen
 
-Shows the number of inbound and outbound calls and summarizes them in a multi-line chart.
+Zeigt die Anzahl der ein- und ausgehenden Anrufe an und fasst sie in einem mehrzeiligen Diagramm zusammen.
 
-A multi-line chart consisting of three lines:
+Ein mehrzeiliges Diagramm, das aus drei Linien besteht:
 
-- Inbound — the number of inbound calls on the timescale.
-- Outbound — the number of outbound calls on the timescale.
-- Bidirectional — the number of calls that involve both inbound and outbound directions during a session on the timescale.
-- Total — the number of all inbound, outbound, and bidirectional calls on the timescale.
+- Eingehend — die Anzahl der eingehenden Anrufe auf der Zeitskala.
+- Ausgehend — die Anzahl der ausgehenden Anrufe auf der Zeitskala.
+- Bidirektional – die Anzahl der Anrufe, die während einer Sitzung auf der Zeitskala sowohl eingehende als auch ausgehende Richtungen beinhalten.
+- Gesamt – die Anzahl aller eingehenden, ausgehenden und bidirektionalen Anrufe auf der Zeitskala.
 
-Source table:
+Quelltabelle:
 
-```txt
-|   Date    |   Type       | Number of calls |
+'''txt
+|   Datum |   Typ | Anzahl der Anrufe |
 | --------- | ------------ | --------------- |
-| 4/26/2023	| total	       |       12        |
-| 4/26/2023	| inbound      |	   10        |
-| 4/26/2023	| outbound     |	   0         |
-| 4/26/2023	| bidirectional|	   2         |
-| 4/27/2023	| total        |	   19        |
-| 4/27/2023	| inbound      |	   18        |
-| 4/27/2023	| outbound     |	    0        |
-| 4/27/2023	| bidirectional|	    1        |
+| 26.04.2023 | Insgesamt |       Nr. 12 |
+| 26.04.2023 | Eingehend |	   Nr. 10 |
+| 26.04.2023 | Ausgehend |	   0 |
+| 26.04.2023 | Bidirektional|	   2 |
+| 27.04.2023 | Insgesamt |	   Nr. 19 |
+| 27.04.2023 | Eingehend |	   18 |
+| 27.04.2023 | Ausgehend |	    0 |
+| 27.04.2023 | Bidirektional|	    Nr. 1 |
 
-```
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/call-directions.png" width="100%" />
 </figure>
 
+### Abbruchrate
 
-### Abandon rate
+Zeigt den Prozentsatz der Benutzer an, die einen Anruf innerhalb von 5 Sekunden nach Initiierung beendet haben.
 
-Shows the percentage of users who ended a call within 5 seconds of it being initiated.
+Quelltabelle:
 
-Source table:
-
-```txt
-|   Date    | Left before 5s  |   Total      |
+'''txt
+|   Datum | Links vor 5 Sekunden |   Gesamt |
 | --------- | --------------- | ------------ |
-| 2/20/2023 |      7          |      7       |
-| 2/21/2023 |      3          |      6       |
-| 2/22/2023 |      0          |      3       |
-| 2/23/2023 |      3          |      7       |
-```
+| 20.02.2023 |      7 |      7 |
+| 21.02.2023 |      3 |      6 |
+| 22.02.2023 |      0 |      3 |
+| 23.02.2023 |      3 |      7 |
+'''
 
-Calculation: `(Number of people who left the call before 5 seconds / Total number of people who entered the call) x 100%`
+Berechnung: "(Anzahl der Personen, die den Anruf vor 5 Sekunden verlassen haben / Gesamtzahl der Personen, die den Anruf betreten haben) x 100 %"
 
-Example: `(4 / 7) x 100% = 12.5%`
+Beispiel: '(4 / 7) x 100% = 12.5%'
 
-Result:
+Ergebnis:
 
-```txt
-|   Date    |      %       |
+'''txt
+|   Datum |      %       |
 | --------- | ------------ |
-| 2/20/2023 |  100         |
-| 2/21/2023 |  50          |
-| 2/22/2023 |  0           |
-| 2/23/2023 |  42.85714286 |
-```
+| 20.02.2023 |  100 |
+| 21.02.2023 |  50 |
+| 22.02.2023 |  0 |
+| 23.02.2023 |  42.85714286 |
+'''
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/abandon-rate.png" width="100%" />
 </figure>
 
-### TTS response time
+### TTS-Reaktionszeit
 
-Shows the time (in milliseconds) it takes for a voice agent to respond to a text-to-speech (TTS) conversion request. The TTS response time includes the time for the system to process the request, generate the audio, and deliver the output. This response time indicates how quickly the system responds to requests and is used to measure the performance of a TTS system.
+Zeigt die Zeit (in Millisekunden) an, die ein Sprachagent benötigt, um auf eine Text-to-Speech-Konvertierungsanforderung (TTS) zu antworten. Die TTS-Antwortzeit umfasst die Zeit, die das System benötigt, um die Anforderung zu verarbeiten, das Audio zu generieren und die Ausgabe zu liefern. Diese Antwortzeit gibt an, wie schnell das System auf Anfragen reagiert und wird verwendet, um die Leistung eines TTS-Systems zu messen.
 
-Source table:
+Quelltabelle:
 
-```txt
-|   Date    | Duration  |
+'''txt
+|   Datum | Dauer |
 | --------- | --------- |
-| 2/23/2023 |   13      |
-| 2/22/2023 |   18      |
-| 2/21/2023 |   15      |
-| 2/20/2023 |   13      |
-| 2/19/2023 |   14      |
-```
-Result:
+| 23.02.2023 |   Nr. 13 |
+| 22.02.2023 |   18 |
+| 21.02.2023 |   15 |
+| 20.02.2023 |   Nr. 13 |
+| 19.02.2023 |   Nr. 14 |
+'''
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/tts-response-time.png" width="100%" />
 </figure>
 
-### Percentage (%) of transferred calls
+### Prozentsatz (%) der weitergeleiteten Anrufe
 
-Shows a multi-line presenting the percentage of calls successfully transferred to an agent.
+Zeigt eine mehrzeilige Anzeige des Prozentsatzes der Anrufe an, die erfolgreich an einen Agenten weitergeleitet wurden.
 
-Source table:
+Quelltabelle:
 
-```txt
-|   Date    | Transferred calls | Total calls |
+'''txt
+|   Datum | Weitergeleitete Anrufe | Anrufe gesamt |
 | --------- | ----------------- | ----------- |
-| 2/23/2023 |        3          |    6        |
-| 2/22/2023 |        3          |    7        |
-| 2/21/2023 |        2          |    4        |
-| 2/20/2023 |        0          |    2        |
-| 2/19/2023 |        3          |    7        |
-```
-Calculation: `(Number of transferred calls / Total number of calls) * 100`
+| 23.02.2023 |        3 |    6 |
+| 22.02.2023 |        3 |    7 |
+| 21.02.2023 |        2 |    4 |
+| 20.02.2023 |        0 |    2 |
+| 19.02.2023 |        3 |    7 |
+'''
+Berechnung: "(Anzahl der weitergeleiteten Anrufe / Gesamtzahl der Anrufe) * 100"
 
-Example: `(3 / 6) * 100 = 50%`
+Beispiel: '(3 / 6) * 100 = 50%'
 
-Result:
+Ergebnis:
 
-```txt
-| Date      | Transferred calls |
+'''txt
+| Datum | Weitergeleitete Anrufe |
 | --------- | ----------------- |
-| 2/19/2023 | 50                |
-| 2/20/2023 | 42.85714286       |
-| 2/21/2023 | 50                |
-| 2/22/2023 | 0                 |
-| 2/23/2023 | 42.85714286       |
-```
+| 19.02.2023 | 50 |
+| 20.02.2023 | 42.85714286 |
+| 21.02.2023 | 50 |
+| 22.02.2023 | 0 |
+| 23.02.2023 | 42.85714286 |
+'''
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/transferred-calls.png" width="100%" />
 </figure>
 
-### Average concurrent session
+### Durchschnittliche gleichzeitige Sitzung
 
-The average number of active sessions happening within a specific time frame. Additionally, Insights displays the Concurrent Session Limit on the chart with a line that indicates whether the call license limit is exceeded.
+Die durchschnittliche Anzahl aktiver Sitzungen, die innerhalb eines bestimmten Zeitraums stattfinden. Darüber hinaus zeigt Insights das Limit für gleichzeitige Sitzungen im Diagramm mit einer Linie an, die angibt, ob das Limit für die Anruflizenz überschritten wird.
 
-Source table:
+Quelltabelle:
 
-
-```txt
-| Date      | Total call duration | Time period           |
+'''txt
+| Datum | Gesamtdauer des Anrufs | Zeitraum |
 |-----------|---------------------|-----------------------|
-| 4/25/2023 | 7.04 minutes        | 1 hour (3600 seconds) |
-```
+| 25.04.2023 | 7.04 Minuten | 1 Stunde (3600 Sekunden) |
+'''
 
-Calculation: `Total Session Time During a Time Period / Time Period`
+Berechnung: 'Gesamtsitzungszeit während eines Zeitraums / Zeitraums'
 
-Example: 
+Beispiel: 
 
-1. Total call duration: 7.04 minutes x 60 seconds = 422.4 seconds
-2. Average Concurrent Sessions: 422.4 / 3600 = 0.117
+1. Gesamtanrufdauer: 7,04 Minuten x 60 Sekunden = 422,4 Sekunden
+2. Durchschnittliche gleichzeitige Sitzungen: 422,4 / 3600 = 0,117
 
-Result: `0.117`
+Ergebnis: '0.117'
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/average-concurrent-session.png" width="100%" />
 </figure>
 
-
 {! _includes/insights/download-report.md !}
 
-## More Information
+## Mehr Informationen
 
-- [Dashboard Overview](dashboard-overview.md)
-- [Dashboard NLU Performance](dashboard-nlu-performance.md)
-- [Dashboard Engagement](dashboard-engagement.md)
-- [Dashboard Live Agent](dashboard-live-agent.md)
+- [Dashboard-Übersicht](dashboard-overview.md)
+- [NLU-Leistung des Dashboards](dashboard-nlu-performance.md)
+- [Dashboard-Interaktion](dashboard-engagement.md)
+- [Dashboard-Live-Agent](dashboard-live-agent.md)

@@ -1,76 +1,76 @@
 ---
  title: "Agent Assist Bot"
- slug: "agent-assist-bot" 
- hidden: false 
+ Slug: "Agenten-Assist-Bot" 
+ ausgeblendet: false 
 ---
-# Assist Bot
+# Bot unterstützen
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-overview.png" width="100%" alt="Live Agent Assist Bot Overview" />
-  <figcaption>Live Agent Assist Bot Overview</figcaption>
+  <figcaption>Übersicht über den Live Agent Assist Bot</figcaption>
 </figure>
 
-The Assist Bot is a tool designed to assist human agents during customer conversations.
-It includes a dedicated Flow for providing information to the human agent,
-and as such, it needs to be configured as a separate Flow in Cognigy.AI.
+Der Assist Bot ist ein Tool, das entwickelt wurde, um menschliche Agenten bei Kundengesprächen zu unterstützen.
+Es enthält einen dedizierten Flow für die Bereitstellung von Informationen für den menschlichen Agenten,
+und als solches muss es als separater Flow in Cognigy.AI konfiguriert werden.
 
-## Creating an Assist Bot
+## Erstellen eines Assist-Bots
 
-### 1. Create a new WebChat Endpoint
+### 1. Erstellen eines neuen WebChat-Endpunkts
 
-A new WebChat endpoint needs to be created.  Once the endpoint is created, it is time to copy the endpoint URL from its settings.
+Es muss ein neuer WebChat-Endpunkt erstellt werden.  Nachdem der Endpunkt erstellt wurde, ist es an der Zeit, die Endpunkt-URL aus den Einstellungen zu kopieren.
 
-To learn more about how to create an Endpoint, head over to [Endpoints](../../ai/resources/deploy/endpoints.md). 
-A new WebChat endpoint needs
-to be created for learning about how to create endpoint head over to [Endpoints](../../ai/resources/deploy/endpoints.md).
-Once the endpoint is created, it is time to copy the endpoint URL from its settings.
+Weitere Informationen zum Erstellen eines Endpunkts finden Sie unter [Endpunkte](.. /.. /ai/resources/deploy/endpoints.md). 
+Ein neuer WebChat-Endpunkt benötigt
+um zu erfahren, wie man einen Endpunkt erstellt, gehen Sie zu [Endpoints](.. /.. /ai/resources/deploy/endpoints.md).
+Nachdem der Endpunkt erstellt wurde, ist es an der Zeit, die Endpunkt-URL aus den Einstellungen zu kopieren.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/ai-endpoint-config-url.png" width="100%" alt="Cognigy.AI Endpoint Config URL" />
-  <figcaption>Cognigy.AI Endpoint Config URL</figcaption>
+  <figcaption>Cognigy.AI Endpunktkonfigurations-URL</figcaption>
 </figure>
 
-### 2. Create an Assist Bot for an Inbox
+### 2. Erstellen eines Assist-Bots für einen Posteingang
 
-Once the endpoint with the Assist flow is set up, and the URL is copied, it is time to create the Assist Bot in Live Agent. Go to the inbox settings and add a new Assist Bot.
+Nachdem der Endpunkt mit dem Assist-Flow eingerichtet und die URL kopiert wurde, ist es an der Zeit, den Assist-Bot in Live Agent zu erstellen. Gehen Sie zu den Einstellungen für den Posteingang und fügen Sie einen neuen Assist Bot hinzu.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/live-agent-inbox-settings-assist-bots.png" width="100%" alt="Live Agent Assist Bot Inbox Settings" />
-  <figcaption>Live Agent Assist Bot Inbox Settings</figcaption>
+  <figcaption>Einstellungen für den Bot-Posteingang von Live Agent Assist</figcaption>
 </figure>
 
-Click on the "Add Bots" button and fill in the following fields:
+Klicken Sie auf die Schaltfläche "Bots hinzufügen" und füllen Sie die folgenden Felder aus:
 
-| Field        | Value                                     |
+| Feld | Wert |
 |--------------|-------------------------------------------|
-| Name         | Assist Bot Name                           |
-| Endpoint URL | The URL copied from the endpoint settings |
+| Bezeichnung: | Name des Assist-Bots |
+| Endpunkt-URL | Die URL, die aus den Endpunkteinstellungen |
 
-The newly added Assist Bot will be available in the "Assist Bot" section of the conversations belonging to the according inbox. It is possible to have multiple Assist Bots in the same inbox and edit them. The changes will be applied instantly.
+Der neu hinzugefügte Assist Bot wird im Abschnitt "Assist Bot" der Konversationen verfügbar sein, die zum entsprechenden Posteingang gehören. Es ist möglich, mehrere Assist-Bots im selben Posteingang zu haben und sie zu bearbeiten. Die Änderungen werden sofort übernommen.
 
-### 3. Use the Assist Bot in a Conversation
+### 3. Verwenden des Assist-Bots in einer Konversation
 
-When the conversation inbox configures Assist Bot, they can be selected under the Conversation Information section in the right-hand sidebar. There is a tab called "Assist," and then the Assist Bots can be set via the dropdown to chat with them.
+Wenn der Assistent-Bot im Konversationseingang konfiguriert ist, können sie im Abschnitt "Konversationsinformationen" in der rechten Seitenleiste ausgewählt werden. Es gibt eine Registerkarte namens "Assist", und dann können die Assist-Bots über das Dropdown-Menü so eingestellt werden, dass sie mit ihnen chatten.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-chat.png" width="100%" alt="Live Agent Assist Bot Chat" />
-  <figcaption>Live Agent Assist Bot Chat</figcaption>
+  <figcaption>Live-Agenten-Assist-Bot-Chat</figcaption>
 </figure>
 
-## Forwarding Assist Bot messages
+## Weiterleiten von Assist-Bot-Nachrichten
 
-The Assist Bot messages can be easily forwarded to the customer by clicking directly on the messages. The message will be forwarded automatically, as shown in the screenshot.
+Die Assist Bot Nachrichten können einfach an den Kunden weitergeleitet werden, indem Sie direkt auf die Nachrichten klicken. Die Nachricht wird automatisch weitergeleitet, wie im Screenshot gezeigt.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-forward-messages.png" width="100%" alt="Live Agent Assist Bot Forward Messages" />
-  <figcaption>Live Agent Assist Bot Forward Messages</figcaption>
+  <figcaption>Live-Agent unterstützt Bot-Weiterleitungsnachrichten</figcaption>
 </figure>
 
-## Resetting Assist Bot session
+## Zurücksetzen der Assist-Bot-Sitzung
 
-The Assist Bot chat can be reset by clicking on the "Reset Session" button in the dropdown three-dots menu. This will clear the history and reset the session with the Assist Bot.
+Der Assist-Bot-Chat kann zurückgesetzt werden, indem Sie auf die Schaltfläche "Sitzung zurücksetzen" im Dropdown-Menü mit drei Punkten klicken. Dadurch wird der Verlauf gelöscht und die Sitzung mit dem Assist Bot zurückgesetzt.
 
 <figure>
 <img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-reset-session.png" width="100%" alt="Live Agent Assist Bot Reset Session" />
-  <figcaption>Live Agent Assist Bot Reset Session</figcaption>
+  <figcaption>Live-Agent-Assist-Bot-Reset-Sitzung</figcaption>
 </figure>

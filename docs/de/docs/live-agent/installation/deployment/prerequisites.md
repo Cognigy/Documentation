@@ -1,62 +1,61 @@
 ---
- title: "Prerequisites" 
- slug: "prerequisites" 
- hidden: false 
+ Titel: "Voraussetzungen" 
+ Slug: "Voraussetzungen" 
+ ausgeblendet: false 
 ---
-# Prerequisites
+# Voraussetzungen
 
-## Kubernetes cluster and Helm
+## Kubernetes-Cluster und Helm
 
-For installing and running Live Agent, a Kubernetes cluster is required, on which the workloads can be scheduled. In addition, Helm is also necessary to automatically deploy all necessary Kubernetes resources. 
+Für die Installation und den Betrieb von Live Agent wird ein Kubernetes-Cluster benötigt, auf dem die Workloads eingeplant werden können. Darüber hinaus ist Helm auch notwendig, um alle notwendigen Kubernetes-Ressourcen automatisch bereitzustellen. 
 
 - [Kubernetes](https://kubernetes.io/) 1.16+
 - [Helm](https://helm.sh/) 3.1.0+
 
->**Note:** It is recommended to install Live Agent in a separate namespace as it has its own resources, separated from Cognigy.AI ones.
+>**Hinweis:** Es wird empfohlen, Live Agent in einem separaten Namensraum zu installieren, da er über eigene Ressourcen verfügt, die von Cognigy.AI getrennt sind.
 
-## Pod resources
+## Pod-Ressourcen
 
 ### CPU
 
-CPU requirements are dependent on usage and expected workload.
-Your workload is influenced by factors such as how active your users are, how many conversations you receive, the conversation channels you are using, and more.
+Die CPU-Anforderungen hängen von der Auslastung und der erwarteten Arbeitslast ab.
+Ihre Arbeitsbelastung wird von Faktoren beeinflusst, z. B. wie aktiv Ihre Benutzer sind, wie viele Konversationen Sie erhalten, welche Konversationskanäle Sie verwenden und vieles mehr.
 
-The following are the recommended minimum CPU hardware configurations for a small sample of example Live Agent conversation sizes.
+Im Folgenden finden Sie die empfohlenen minimalen CPU-Hardwarekonfigurationen für eine kleine Auswahl von Beispielgrößen für Live Agent-Konversationen.
 
-- 4 cores is the recommended minimum number of cores and supports up to 10,000 conversations a day.
-- 8 cores supports up to 20,000 conversations a day.
+- 4 Kerne ist die empfohlene Mindestanzahl von Kernen und unterstützt bis zu 10.000 Unterhaltungen pro Tag.
+- 8 Kerne unterstützen bis zu 20.000 Konversationen pro Tag.
 
-For more conversations,
-we recommended increasing the number of pods and therefore also the number of available CPU cores.
+Für weitere Gespräche,
+Wir haben empfohlen, die Anzahl der Pods und damit auch die Anzahl der verfügbaren CPU-Kerne zu erhöhen.
 
-### Memory
+### Speicher
 
-Memory requirements are dependent on usage and expected additional workload.
-Your workload is influenced by factors such as how active your users are,
-how many conversations you receive, the conversation channels you are using, and more.
+Die Speicheranforderungen hängen von der Nutzung und der erwarteten zusätzlichen Arbeitslast ab.
+Ihre Arbeitsbelastung wird von Faktoren beeinflusst, wie z. B. der Aktivität Ihrer Benutzer,
+wie viele Konversationen Sie erhalten, welche Konversationskanäle Sie verwenden und vieles mehr.
 
-The following are the recommended minimum Memory hardware configurations for a small sample of example Live Agent conversation sizes.
+Im Folgenden finden Sie die empfohlenen Mindestkonfigurationen für die Speicherhardware für eine kleine Auswahl von Beispielen für Live Agent-Konversationsgrößen.
 
-- 4GB RAM is the required minimum memory size and supports up to 10,000 conversations a day.
-- 8GB RAM supports up to 20,000 conversations a day.
+- 4 GB RAM ist die erforderliche Mindestspeichergröße und unterstützt bis zu 10.000 Gespräche pro Tag.
+- 8 GB RAM unterstützen bis zu 20.000 Gespräche pro Tag.
 
-For more conversations, it is recommended to increase the number of pods and therefore also to increase the memory.
+Für mehr Konversationen empfiehlt es sich, die Anzahl der Pods und damit auch den Speicher zu erhöhen.
 
-### Storage
+### Lagerung
 
-The amount of storage necessary largely depends on your usage and other factors, the size and number of attachments you receive through your conversations, for example, etc.
+Die Menge des erforderlichen Speicherplatzes hängt weitgehend von Ihrer Nutzung und anderen Faktoren ab, der Größe und Anzahl der Anhänge, die Sie z. B. durch Ihre Gespräche erhalten, usw.
 
-Consider using a storage option provided by AWS, Azure, Google cloud etc., this can help you to stay flexible, and to accommodate any growing storage requirements.
+Erwägen Sie die Verwendung einer Speicheroption, die von AWS, Azure, Google Cloud usw. bereitgestellt wird, um flexibel zu bleiben und wachsenden Speicheranforderungen gerecht zu werden.
 
 ### PostgreSQL
 
-The server running PostgreSQL should have at least 5-10 GB of storage available, although the exact requirements will depend on your Live Agent Instance usage.
+Der Server, auf dem PostgreSQL ausgeführt wird, sollte über mindestens 5-10 GB Speicherplatz verfügen, obwohl die genauen Anforderungen von der Nutzung Ihrer Live Agent-Instanz abhängen.
 
 ### Redis
 
-Redis stores the background task queue and various cached Live Agent configurations. Therefore, the storage requirements for Redis are minimal. You can start with 1GB and scale up as required.
+Redis speichert die Warteschlange für Hintergrundaufgaben und verschiedene zwischengespeicherte Live Agent-Konfigurationen. Daher sind die Speicheranforderungen für Redis minimal. Sie können mit 1 GB beginnen und nach Bedarf hochskalieren.
 
 ### Sidekiq
 
-Sidekiq processes background jobs via a multithreaded process. This process starts with the entire Rails stack. On a very active server, the Sidekiq process can use 1GB+ of memory.
-
+Sidekiq verarbeitet Hintergrundaufträge über einen Multithread-Prozess. Dieser Prozess beginnt mit dem gesamten Rails-Stapel. Auf einem sehr aktiven Server kann der Sidekiq-Prozess 1GB+ Speicher verwenden.

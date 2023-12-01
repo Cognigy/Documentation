@@ -1,7 +1,7 @@
 ---
- title: "Amazon Alexa" 
- slug: "amazon-alexa" 
- hidden: false 
+ Titel: "Amazon Alexa" 
+ Schnecke: "Amazon-Alexa" 
+ ausgeblendet: false 
 ---
 # Amazon Alexa
 
@@ -9,53 +9,45 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/cb3fa30-EP_alexa.png" width="100%" />
 </figure>
 
-The **Alexa** Endpoint allows you to connect your Amazon Alexa Skill to an **Agent**. Amazon Alexa Skills allow user interaction via voice, with potential visual support.
+Mit dem **Alexa**-Endpunkt können Sie Ihren Amazon Alexa Skill mit einem **Agenten** verbinden. Amazon Alexa Skills ermöglichen die Benutzerinteraktion per Sprache mit potenzieller visueller Unterstützung.
 
-!!! warning
-    The Alexa Endpoint uses the Alexa NLU Connector. See the [NLU Connectors Page]({{config.site_url}}/ai/resources/build/nlu-connectors/) for more details. When using Amazon Alexa with Cognigy, all NLU is done by Amazon. **It is NOT possible to use the Cognigy NLU**.
+!!! Warnung
+    Der Alexa Endpoint verwendet den Alexa NLU Connector. Weitere Informationen finden Sie auf der Seite [NLU-Konnektoren]({{config.site_url}}/ai/resources/build/nlu-connectors/). Wenn Sie Amazon Alexa mit Cognigy verwenden, wird die gesamte NLU von Amazon durchgeführt. **Es ist NICHT möglich, die Cognigy NLU zu verwenden**.
 
-    Amazon only passes the Intent name to the flow, not the actual user input! Therefore, any nodes that use conditions based on user input (e.g. if-nodes and rule intents are capable of doing so) will not work as intended.
+Amazon übergibt nur den Intent-Namen an den Flow, nicht die eigentliche Benutzereingabe! Daher funktionieren alle Knoten, die Bedingungen verwenden, die auf Benutzereingaben basieren (z. B. if-Nodes und Regelabsichten), nicht wie vorgesehen.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}/ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}/ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
-
-- [Endpoints Overview]({{config.site_url}}/ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}/ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
-
-## Channel Specific Settings
-<div class="divider"></div>
-
-The **Alexa Settings** dropdown menu is where Cognigy.AI is provided with the credentials to connect with an **Amazon Alexa Skill**.
+## Kanalspezifische Einstellungen<div class="divider"></div>Im Dropdown-Menü **Alexa-Einstellungen** erhalten Cognigy.AI die Anmeldeinformationen, um eine Verbindung mit einem **Amazon Alexa Skill** herzustellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7f18dd3-alexaMenu.PNG" width="100%" />
 </figure>
 
+### Alexa-Slots neu parsen
 
-### Reparse Alexa Slots
+Aktivieren Sie diesen Schalter, damit die von Alexa gefundenen Slots an Cognigy.AI übergeben und von der Cognigy NLU verarbeitet werden können.
 
-Enable this toggle to allow the slots found by Alexa to be passed to Cognigy.AI and processed by the Cognigy NLU.
+## Bereitstellung
 
-## Deployment
+### Geschicklichkeit
 
-### Skill
+Hier können Sie sich direkt in Ihr Amazon-Konto einloggen, das Zugriff auf Ihre Alexa-Skills hat. Sie können sich auch über die Seite [Mein Profil]({{config.site_url}}ai/tools/user-menu/my-profile/) bei Amazon anmelden. Sobald Sie angemeldet sind, können Sie den **Alexa Skill** auswählen, den Sie mit Ihrem Cognigy.AI Endpunkt verbinden möchten.
 
-Here you can log in directly to your Amazon account that has access to your Alexa skills. You can also log in to Amazon from the [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/) page. Once logged in, you will be able to select the **Alexa Skill** that you wish to connect with your Cognigy.AI endpoint.
+### Bereitstellen
 
-### Deploy
+Nachdem ein Skill ausgewählt wurde, klicken Sie auf die Schaltfläche **DEPLOY**, um Ihren Skill so zu konfigurieren, dass er diesen Endpunkt verwendet, wenn er aufgerufen wird. Der Vorgang kann auch manuell durchgeführt werden, besuchen Sie unser [Hilfe-Center](https://support.cognigy.com/hc/en-us/articles/360016192979) für weitere Informationen.
 
-Once a skill has been selected, click the **DEPLOY** button to configure your skill to use this endpoint when invoked. The process can also be carried out manually, visit our [help center](https://support.cognigy.com/hc/en-us/articles/360016192979) for more info.
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Alexa**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016192979).
 
-!!! note "Help Center"
-    More detailed information on how to set up an **Alexa** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016192979).
+## Mehr Informationen
 
-## More Information
-
-- [HelpCenter: Amazon Alexa Intro ](https://support.cognigy.com/hc/en-us/articles/360016192979)
-- [HelpCenter: Amazon Alexa Deployment ](https://support.cognigy.com/hc/en-us/articles/360016193099-Amazon-Alexa-Deploy-an-Endpoint)
-- [HelpCenter: Amazon Alexa Account Linking ](https://support.cognigy.com/hc/en-us/articles/360016153600-Amazon-Alexa-Account-Linking)
+- [HelpCenter: Einführung in Amazon Alexa](https://support.cognigy.com/hc/en-us/articles/360016192979)
+- [HelpCenter: Amazon Alexa-Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016193099-Amazon-Alexa-Deploy-an-Endpoint)
+- [HelpCenter: Verknüpfen von Amazon Alexa-Konten ](https://support.cognigy.com/hc/en-us/articles/360016153600-Amazon-Alexa-Account-Linking)

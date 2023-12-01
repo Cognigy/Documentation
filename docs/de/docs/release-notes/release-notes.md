@@ -1,14 +1,14 @@
 ---
- title: "Release notes main page" 
- slug: "release-notes-main" 
- hidden: false 
+ title: "Hauptseite der Versionshinweise" 
+ slug: "Release-Notes-Main" 
+ ausgeblendet: false 
 ---
 
-# Release notes
+# Versionshinweise
 
-Select a specific release for which you want to get more information in the navigation on the left side.
+Wählen Sie in der Navigation auf der linken Seite ein bestimmtes Release aus, zu dem Sie weitere Informationen erhalten möchten.
 
-Prior to release v4.30 we have collected release notes separately for each product:
+Vor der Veröffentlichung von v4.30 haben wir für jedes Produkt separat Versionshinweise gesammelt:
 
 - [Cognigy.AI]({{config.site_url}}/ai/release-notes/pre-4.30/)
 - [Cognigy Insights]({{config.site_url}}/insights/release-notes/pre-4.30/)

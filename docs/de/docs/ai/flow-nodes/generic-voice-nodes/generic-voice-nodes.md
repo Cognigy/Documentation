@@ -1,17 +1,17 @@
 ---
- title: "Generic Voice Nodes" 
- slug: "generic-voice-nodes" 
- hidden: false 
+ Titel: "Generische Sprachknoten" 
+ slug: "generische-Sprachknoten" 
+ ausgeblendet: false 
 ---
 
-# Generic Voice Nodes
+# Generische Sprachknoten
 
-The Generic Voice Nodes allow Users to use a set of nodes for their voice flows which is not related to one specific endpoint. Voice nodes are compatible with both Voice Integrations, AudioCodes and VoiceGateway.
+Die generischen Sprachknoten ermöglichen es Benutzern, eine Reihe von Knoten für ihre Sprachflüsse zu verwenden, die nicht auf einen bestimmten Endpunkt bezogen sind. Voice-Knoten sind sowohl mit Voice-Integrationen, AudioCodes als auch mit VoiceGateway kompatibel.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/overview.png" width="80%" />
-  <figcaption>Generic Voice Nodes</figcaption>
+  <figcaption>Generische Sprachknoten</figcaption>
 </figure>
 
-!!! note "Usage recommendation"
-    A general recommendation to use the Generic Voice Nodes for your voice flows to be more flexible while creating voice bots.
+!!! Hinweis "Gebrauchsempfehlung"
+    Eine allgemeine Empfehlung, die generischen Sprachknoten für Ihre Sprachflüsse zu verwenden, um beim Erstellen von Sprachbots flexibler zu sein.

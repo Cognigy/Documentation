@@ -1,12 +1,10 @@
 ---
- title: "Overview" 
- slug: "overview" 
- hidden: false 
+ Titel: "Übersicht" 
+ Schnecke: "Übersicht" 
+ ausgeblendet: false 
 ---
-# Overview
+# Übersicht
 
-Live Agent is a customer engagement suite provided by Cognigy. It offers a seamless transition between conversational AI and human agents to meet your business needs. Its purpose is to enhance the customer experience and improve support team productivity.
+Live Agent ist eine Customer Engagement Suite, die von Cognigy bereitgestellt wird. Es bietet einen nahtlosen Übergang zwischen dialogorientierter KI und menschlichen Agenten, um Ihre Geschäftsanforderungen zu erfüllen. Sein Zweck ist es, das Kundenerlebnis zu verbessern und die Produktivität des Support-Teams zu steigern.
 
-An overview of some of the most important components can be found in the following diagram:
-
-<img src="{{config.site_url}}live-agent/images/LA-overview.png" alt="Live Agent Overview">
+Einen Überblick über einige der wichtigsten Komponenten finden Sie in der folgenden Grafik:<img src="{{config.site_url}}live-agent/images/LA-overview.png" alt="Live Agent Overview">

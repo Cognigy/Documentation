@@ -1,19 +1,19 @@
 ---
- title: "State" 
- slug: "state" 
- hidden: false 
+ Titel: "Staat" 
+ slug: "Zustand" 
+ ausgeblendet: false 
 ---
-# State
+# Zustand
 
-States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. 
+Zustände erlauben das Festlegen von Einschränkungen für eine Konversation, die die gültigen Absichten einschränken, auf die die NLU Zugriff hat. 
 
-Only Intents added to the **Whitelist** of the current State of the conversation can be detected. Conversely, Intents added to the **Blacklist** of the current State will not be recognized.
+Es können nur Intents erkannt werden, die der **Whitelist** des aktuellen Status der Konversation hinzugefügt wurden. Umgekehrt werden Intents, die der **Blacklist** des aktuellen Status hinzugefügt wurden, nicht erkannt.
 
-!!! note "Example of How States Work"
-    The admin has defined three States:
+!!! Hinweis "Beispiel für die Funktionsweise von Staaten"
+    Der Admin hat drei Zustände definiert:
 
-    * start
-    * ordering
-    * finished
+*anfangen
+    *Ordnung
+    *fertig
 
-    The admin could now configure that the user can only say *"I want to order a pizza*" when they're in the `start` State, as it wouldn't make sense in another State. Similarly the sentence *"When will my order arrive"* could trigger different outputs depending on the State the conversation is in.
+Der Administrator könnte nun konfigurieren, dass der Benutzer nur *"Ich möchte eine Pizza bestellen*" sagen kann, wenn er sich im "Start"-Status befindet, da dies in einem anderen Bundesstaat keinen Sinn machen würde. In ähnlicher Weise kann der Satz *"Wann kommt meine Bestellung an"* unterschiedliche Ausgaben auslösen, je nachdem, in welchem Zustand sich die Konversation befindet.

@@ -1,37 +1,37 @@
 ---
 title: "Labels" 
-slug: "labels" 
-hidden: false 
+slug: "Etiketten" 
+ausgeblendet: false 
 ---
 
-# Labels Report
+# Labels-Bericht
 
-This report shows label-specific metrics, including the number of conversations, incoming and outgoing messages, average response time, average resolution time, and the count of successfully resolved user requests for each label.
+Dieser Bericht zeigt labelspezifische Metriken an, einschließlich der Anzahl der Konversationen, der eingehenden und ausgehenden Nachrichten, der durchschnittlichen Antwortzeit, der durchschnittlichen Lösungszeit und der Anzahl der erfolgreich gelösten Benutzeranforderungen für jede Bezeichnung.
 
-With this report, you can monitor how many conversations or requests are linked to particular labels. This allows you to recognize the most frequent and critical issues or topics. For instance, you can check if there's a rise in the number of conversations marked as `billing issues` and then take necessary steps accordingly.
+Mit diesem Bericht können Sie überwachen, wie viele Konversationen oder Anfragen mit bestimmten Labels verknüpft sind. Auf diese Weise können Sie die häufigsten und kritischsten Probleme oder Themen erkennen. Sie können beispielsweise überprüfen, ob die Anzahl der Gespräche, die als "Abrechnungsprobleme" gekennzeichnet sind, zugenommen hat, und dann die erforderlichen Schritte einleiten.
 
-To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
+Weitere Informationen zu Metriken finden Sie unter [Berichtsmetriken](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Labels_report.png" width="100%" alt="Live Agent Labels report" />
-  <figcaption>Labels report</figcaption>
+  <figcaption>Bericht "Etiketten"</figcaption>
 </figure>
 
-## View a Report
+## Einen Bericht anzeigen
 
-To view a report, do the following:
+Um einen Bericht anzuzeigen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Labels**.
-3. In the upper-left corner of the report page, select a label and time period from the list.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Berichte > Labels**.
+3. Wählen Sie in der oberen linken Ecke der Berichtsseite eine Bezeichnung und einen Zeitraum aus der Liste aus.
 
-The chart will be updated with the corresponding data related to the selected filter.
+Das Diagramm wird mit den entsprechenden Daten aktualisiert, die sich auf den ausgewählten Filter beziehen.
 
-## Download a Report
+## Bericht herunterladen
 
 {! _includes/live-agent/download-report.md !}
 
-## More information
+## Mehr Informationen
 
-- [Admin reports](overview.md)
-- [Reports](overview.md)
+- [Admin-Berichte](overview.md)
+- [Berichte](overview.md)

@@ -1,18 +1,15 @@
 ---
- title: "Reset State" 
- slug: "reset-state" 
- hidden: false 
+ title: "Status zurücksetzen" 
+ slug: "Reset-Zustand" 
+ ausgeblendet: false 
 ---
-# Reset State
+# Status zurücksetzen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/reset-state.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Der Knoten "Status zurücksetzen" setzt den Status zurück, wenn der Knoten getroffen wird. Weitere Informationen finden Sie unter [State](.. /.. /tools/interaction-panel/state.md), um mehr über Zustände zu erfahren.
 
-The Reset State node resets the State when the Node is hit. See [State](../../tools/interaction-panel/state.md) to learn more about States.
-
-!!! warning "Use with caution!"
-    Resetting the State loses information and is generally not a recommended pattern.
+!!! Warnung "Mit Vorsicht verwenden!"
+    Durch das Zurücksetzen des Zustands gehen Informationen verloren und es wird im Allgemeinen nicht empfohlen.

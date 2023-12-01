@@ -1,141 +1,133 @@
 ---
- title: "Lexicons" 
- slug: "lexicons" 
- hidden: false 
+ Titel: "Lexika" 
+ Schnecke: "Lexika" 
+ ausgeblendet: false 
 ---
-# Lexicons
+# Lexika
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../../release-notes/4.52.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.52-blue.svg)] (.. /.. /.. /release-notes/4.52.md)
 
-**Lexicons** are collections of domain-specific **Keyphrases** (also known as **Entities**) that can be attached to a Flow. A Lexicon can be seen as a dictionary, that allows the Virtual Agent to "understand" specific words, like car brands, product groups or zipcodes. As soon as a Keyphrase is detected, it is published to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object for further use. This process is called **Slot Mapping**.
+**Lexika** sind Sammlungen von domänenspezifischen **Schlüsselwörtern** (auch als **Entitäten** bezeichnet), die an einen Flow angehängt werden können. Ein Lexikon kann als ein Wörterbuch betrachtet werden, das es dem virtuellen Agenten ermöglicht, bestimmte Wörter wie Automarken, Produktgruppen oder Postleitzahlen zu "verstehen". Sobald eine Keyphrase erkannt wird, wird sie zur weiteren Verwendung im Objekt [Input]({{config.site_url}}ai/tools/interaction-panel/input/) veröffentlicht. Dieser Vorgang wird als **Slot-Mapping** bezeichnet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/c95b04b-lexicon-small.jpg" width="100%" />
 </figure>
 
-To learn more about use cases for Lexicons, read [Match user expressions with a Lexicon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) Help Center article. 
+Weitere Informationen zu Anwendungsfällen für Lexika finden Sie im Hilfecenter-Artikel [Abgleichen von Benutzerausdrücken mit einem Lexikon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon. 
 
-## Restrictions
+## Einschränkungen
 
-- Maximum of 1 Keyphrase and 199 synonyms per entry (row).
-- Maximum of 250 Slots per Lexicon.
-- Maximum of 100K entries per Lexicon.
+- Maximal 1 Schlüsselphrase und 199 Synonyme pro Eintrag (Zeile).
+- Maximal 250 Slots pro Lexikon.
+- Maximal 100.000 Einträge pro Lexikon.
 
-## Manage Keyphrases
-<div class="divider"></div>
-
-Individual Lexicon entries are referred to as **Keyphrases**. Keyphrases have **Slots** (also known as Tags) and  **Synonyms**, and can be used by the [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/). 
+## Keyphrases verwalten<div class="divider"></div>Einzelne Lexikoneinträge werden als **Schlüsselwörter** bezeichnet. Schlüsselwörter haben **Slots** (auch als Tags bezeichnet) und **Synonyme** und können von der [NLU]({{config.site_url}}ai/nlu/nlu-overview/overview/) verwendet werden. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/973f877-lexicon-keyphrase.jpg" width="100%" />
 </figure>
 
-In the example above, the **Keyphrase** is *Apple iPhone*. The **Slots** that are filled when this Keyphrase is detected, are *device* and *mobile*. Its synonym is *Cool phone*. 
+Im obigen Beispiel lautet die **Schlüsselphrase** *Apple iPhone*. Die **Slots**, die gefüllt werden, wenn diese Schlüsselphrase erkannt wird, sind *device* und *mobile*. Sein Synonym ist *Cooles Telefon*. 
 
-### Add Keyphrases
-To add a new Keyphrase, go to the ``Enter new keyphrase`` input field, type the name of the Keyphrase and hit enter.
+### Keyphrasen hinzufügen
+Um eine neue Keyphrase hinzuzufügen, gehen Sie in das Eingabefeld ''Neue Keyphrase eingeben'', geben Sie den Namen der Keyphrase ein und drücken Sie die Eingabetaste.
 
-### Edit Keyphrases
-To edit a Keyphrase, just click on the name of the Keyphrase, and an input field will appear. To add Tags/Synonyms, just click in the respective text field, type the Tag/Synonym name and hit enter. 
+### Keyphrases bearbeiten
+Um eine Keyphrase zu bearbeiten, klicken Sie einfach auf den Namen der Keyphrase und es erscheint ein Eingabefeld. Um Tags/Synonyme hinzuzufügen, klicken Sie einfach in das entsprechende Textfeld, geben Sie den Tag-/Synonymnamen ein und drücken Sie die Eingabetaste. 
 
-### Add Keyphrase Data 
-You can also add data to Lexicons, which will be displayed in the input object when a Keyphrase is triggered, and it is therefore useful to store something like product IDs here. To add data, simply click on the `expand` arrow on the right of the Keyphrase entry, and then type in the desired data in JSON format.
+### Keyphrase-Daten hinzufügen 
+Sie können auch Daten zu Lexika hinzufügen, die beim Auslösen einer Keyphrase im Eingabeobjekt angezeigt werden, und daher ist es sinnvoll, hier so etwas wie Produkt-IDs zu hinterlegen. Um Daten hinzuzufügen, klicken Sie einfach auf den Pfeil "Erweitern" rechts neben dem Keyphrase-Eintrag und geben Sie dann die gewünschten Daten im JSON-Format ein.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/1776c15-lexiconData.PNG" width="100%" />
 </figure>
 
-### Delete Keyphrases
-There are two ways to delete a Keyphrase: One is to expand the Keyphrase by clicking on the "expand" arrow on the right side of the menu, then clicking on the "DELETE" button in the bottom right corner. Another way is to mark the desired Keyphrase(s) by clicking the checkbox on the left of a Keyphrase, and then scrolling down to the bottom to delete it. You can delete several Keyphrases this way.
+### Keyphrases löschen
+Es gibt zwei Möglichkeiten, eine Keyphrase zu löschen: Die eine besteht darin, die Keyphrase zu erweitern, indem Sie auf den "Expand"-Pfeil auf der rechten Seite des Menüs klicken und dann auf die Schaltfläche "LÖSCHEN" in der unteren rechten Ecke klicken. Eine andere Möglichkeit besteht darin, die gewünschte(n) Keyphrase(s) zu markieren, indem Sie auf das Kontrollkästchen links neben einer Keyphrase klicken und dann nach unten scrollen, um sie zu löschen. Auf diese Weise können Sie mehrere Schlüsselwörter löschen.
 
-### Search Keyphrases
-You can search through your Keyphrases via the search bar in the top right corner. This will return Keyphrase names, Tags and Synonyms in the search results.
+### Suche Schlüsselwörter
+Sie können Ihre Keyphrases über die Suchleiste in der oberen rechten Ecke durchsuchen. Dadurch werden Schlüsselwörternamen, Tags und Synonyme in den Suchergebnissen zurückgegeben.
 
-### Navigate Keyphrases
+### Keyphrases navigieren
 
-At the bottom, you can navigate to different pages and toggle the amount of Keyphrases you wish to show per page. This is quite handy when your Lexicons start to grow and have dozens of entries - just switch to a smaller page-size on smaller screens or increase the limit of entries on a page for large monitor usage.
+Unten können Sie zu verschiedenen Seiten navigieren und die Anzahl der Keyphrases umschalten, die Sie pro Seite anzeigen möchten. Dies ist sehr praktisch, wenn Ihre Lexika zu wachsen beginnen und Dutzende von Einträgen haben - wechseln Sie einfach zu einer kleineren Seitengröße auf kleineren Bildschirmen oder erhöhen Sie das Limit der Einträge auf einer Seite für die Verwendung großer Monitore.
 
-!!! warning "Attach your Lexicons"
-    Lexicons are not automatically recognized by the Cognigy NLU after adding them in the flow editor. They must be attached to the specific flows where they are to be used. See the [Attached Lexicons Page]({{config.site_url}}ai/nlu/attachments/attached-lexicons/) for more information.
+!!! Warnung "Hängen Sie Ihre Lexika an"
+    Lexika werden von der Cognigy NLU nicht automatisch erkannt, nachdem sie im Flusseditor hinzugefügt wurden. Sie müssen an die spezifischen Flüsse angehängt werden, in denen sie verwendet werden sollen. Weitere Informationen finden Sie auf der Seite [Angehängte Lexika]({{config.site_url}}ai/nlu/attachments/attached-lexicons/).
 
-!!! tip "Access slots in your Flow"
-    Build smart virtual agents that recognize your custom libraries by finding Lexicon keyphrases in the NLU Slot mapping results. See the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) for more information.
+!!! Tipp "Zugriff auf Slots in deinem Flow"
+    Erstellen Sie intelligente virtuelle Agenten, die Ihre benutzerdefinierten Bibliotheken erkennen, indem Sie Lexicon-Schlüsselwörter in den NLU-Slot-Zuordnungsergebnissen finden. Weitere Informationen finden Sie auf der [Slot-Mapping-Seite]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
 
-## Upload and Download Lexicons
+## Lexika hoch- und herunterladen
 
-Lexicons libraries can be uploaded and downloaded in CSV format.
+Lexikonbibliotheken können im CSV-Format hoch- und heruntergeladen werden.
 
-### CSV File Requirements
+### Anforderungen an CSV-Dateien
 
-#### Encoding
+#### Kodierung
 
-To upload the file, make sure your CSV file is UTF-8 encoded.
+Um die Datei hochzuladen, stellen Sie sicher, dass Ihre CSV-Datei UTF-8-codiert ist.
 
 #### Format
 
-The CSV file should have the following format:
+Die CSV-Datei sollte folgendes Format haben:
 
-```txt
-KEYPHRASE,"TAGS","SYNONYMS","{DATA}"
-```
+'''txt
+SCHLÜSSELWORT,"TAGS","SYNONYME","{DATEN}"
+'''
 
-Example:
+Beispiel:
 
-```txt
+'''txt
 Keyphrase1,"tag","synonym1","{""key1"":""value""}"
 Keyphrase2,"tag,tag2","synonym2,synonym2_2","{""key2"":""value""}"
 Keyphrase3,"tag,tag2,tag3","synonym3,synonym3_2,synonym3_3","{""key3"":""value""}"
-```
-#### Forbidden characters
+'''
+#### Verbotene Zeichen
 
 {! _includes/ai/forbidden-characters.md !}
 
-### Upload Lexicons
+### Lexika hochladen
 
-To upload Lexicons, follow these steps:
+Um Lexika hochzuladen, gehen Sie folgendermaßen vor:
 
-1. Go to **Build > Lexicons**.
-2. Open the existing Lexicon.
-3. In the upper-right corner of the Lexicon Editor page, click ![upload](../../../assets/icons/upload.svg).
-4. In the **Import Lexicon CSV file** window, select one of the following options:
-    - **Skip importing duplicate Keyphrases** — the option skips importing any Synonyms from the CSV file that already exist in the current Lexicon. If there are duplicate Synonyms in the CSV file, they will be ignored during the import process. Only new and unique Synonyms will be imported.
-    - **Overwrite the current Keyphrases** — the option replaces all the current Keyphrases in the lexicon with the Keyphrases from the CSV file. If there are any existing keyphrases in the Lexicon, they will be completely overwritten, and only the Keyphrases from the CSV file will be retained.
-    - **Merge Tags & Synonyms from the current and imported Keyphrases** — the option allows merging the Synonyms of Keyphrases from both the current Lexicon and the CSV file. Only unique Synonyms will be merged. If a Synonym exists in both the current Lexicon and the CSV file, this Synonym will not be merged.
-5. Click **Choose CSV file**.
+1. Gehen Sie zu **Erstellen > Lexika**.
+2. Öffnen Sie das vorhandene Lexikon.
+3. Klicken Sie in der oberen rechten Ecke der Seite des Lexikon-Editors auf ! [hochladen] (.. /.. /.. /assets/icons/upload.svg).
+4. Wählen Sie im Fenster **Lexikon-CSV-Datei importieren** eine der folgenden Optionen aus:
+    - **Import doppelter Schlüsselwörter überspringen** — die Option überspringt den Import von Synonymen aus der CSV-Datei, die bereits im aktuellen Lexikon vorhanden sind. Wenn die CSV-Datei doppelte Synonyme enthält, werden diese beim Import ignoriert. Es werden nur neue und eindeutige Synonyme importiert.
+    - **Aktuelle Schlüsselwörter überschreiben** — die Option ersetzt alle aktuellen Schlüsselwörter im Lexikon durch die Schlüsselwörter aus der CSV-Datei. Wenn im Lexikon Schlüsselwörter vorhanden sind, werden diese vollständig überschrieben, und nur die Schlüsselwörter aus der CSV-Datei bleiben erhalten.
+    - **Tags und Synonyme aus den aktuellen und importierten Schlüsselwörtern zusammenführen** — die Option ermöglicht das Zusammenführen der Synonyme von Schlüsselwörtern sowohl aus dem aktuellen Lexikon als auch aus der CSV-Datei. Nur eindeutige Synonyme werden zusammengeführt. Wenn ein Synonym sowohl im aktuellen Lexikon als auch in der CSV-Datei vorhanden ist, wird dieses Synonym nicht zusammengeführt.
+5. Klicken Sie auf **CSV-Datei auswählen**.
 
-To track uploading process, you can view the **Import Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+Um den Upload-Prozess zu verfolgen, können Sie die Aufgabe **Lexikon importieren** anzeigen, indem Sie auf ! [Aufgaben-Menü] (.. /.. /assets/icons/task-menu.svg) in der oberen rechten Ecke.
 
-### Download Lexicons
+### Lexika herunterladen
 
-To download Lexicons, follow these steps:
+Gehen Sie folgendermaßen vor, um Lexika herunterzuladen:
 
-1. Go to **Build > Lexicons**.
-2. Open the existing Lexicon.
-3. In the upper-right corner of the Lexicon Editor page, click ![download](../../../assets/icons/download.svg). Waiting for when the CSV file will be generated for downloading. To track this process, you can view the **Export Lexicon** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
-4. When the task is completed, click ![cloud](../../../assets/icons/cloud.svg) in the upper-right corner of the Lexicon Editor page.
+1. Gehen Sie zu **Erstellen > Lexika**.
+2. Öffnen Sie das vorhandene Lexikon.
+3. Klicken Sie in der oberen rechten Ecke der Seite des Lexikon-Editors auf ! [herunterladen] (.. /.. /assets/icons/download.svg). Warten auf den Zeitpunkt, an dem die CSV-Datei zum Herunterladen generiert wird. Um diesen Vorgang zu verfolgen, können Sie die Aufgabe **Lexikon exportieren** anzeigen, indem Sie auf ! [Aufgaben-Menü] (.. /.. /assets/icons/task-menu.svg) in der oberen rechten Ecke.
+4. Wenn die Aufgabe abgeschlossen ist, klicken Sie auf! [Wolke] (.. /.. /.. /assets/icons/cloud.svg) in der oberen rechten Ecke der Seite Lexikon-Editor.
 
-The file will be downloaded.
+Die Datei wird heruntergeladen.
 
-## Built-in Slots
+## Eingebaute Steckplätze<div class="divider"></div>Cognigy.AI verfügt über eine integrierte Slot-Erkennung für eine breite Palette gängiger Datentypen. Es ist nicht notwendig, benutzerdefinierte Lexikonbibliotheken zu erstellen, um diese Datentypen zu erkennen, da sie automatisch von der Cognigy NLU gefunden werden. Die integrierten Slot-Typen sind unten aufgeführt:
 
-<div class="divider"></div>
-
-Cognigy.AI features built-in Slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built-in Slot types are listed below:
-
-| Slot type   |
+| Slot-Typ |
 |-------------|
-| Date        |
-| Number      |
-| Duration    |
-| Temperature |
-| Age         |
-| Email       |
-| Percentage  |
+| Datum |
+| Anzahl |
+| Dauer |
+| Temperatur |
+| Alter |
+| E-Mail |
+| Prozentsatz |
 
-!!! note "Built in Slot Details"
-    Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
+!!! Hinweis "Eingebaute Steckplatzdetails"
+    Weitere Informationen zur Verwendung von integrierten Slots und ihren verschiedenen Formaten finden Sie auf der [Slot-Mapping-Seite]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
 
+## Generative KI
 
-## Generative AI
-
-To use Generative AI technology for creating a new Lexicon, read the [Generative AI](../../generative-ai.md#generate-lexicons) article.
+Um die generative KI-Technologie zum Erstellen eines neuen Lexikons zu verwenden, lesen Sie die [Generative KI](.. /.. /generative-ai.md#generate-lexicons) Artikel.

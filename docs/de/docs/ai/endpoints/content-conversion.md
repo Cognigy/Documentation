@@ -1,37 +1,37 @@
 ---
 title: "Content Conversion" 
-slug: "content-conversion"
-hidden: false 
+Slug: "Inhalts-Konvertierung"
+ausgeblendet: false 
 ---
 
-# Content Conversion
+# Konvertierung von Inhalten
 
-Cognigy provides a wide range of endpoints for its conversational AI platform. Not all of these endpoints can correctly convert your content to the desired output type.
+Cognigy bietet eine breite Palette von Endpunkten für seine Conversational AI-Plattform. Nicht alle diese Endpunkte können Ihre Inhalte ordnungsgemäß in den gewünschten Ausgabetyp konvertieren.
 
-The table below shows the [output types](../flow-nodes/message/say.md#output-types) that Cognigy can provide for different endpoints.
+Die folgende Tabelle zeigt die [Ausgabetypen](.. /flow-nodes/message/say.md#output-types), die Cognigy für verschiedene Endpunkte bereitstellen kann.
 
-If the endpoint does not support the selected output type, the system returns a fallback text as a default output. The following table shows whether Cognigy.AI will convert the respective output type (+) or use the fallback text (-).
+Wenn der Endpunkt den ausgewählten Ausgabetyp nicht unterstützt, gibt das System einen Fallback-Text als Standardausgabe zurück. Die folgende Tabelle zeigt, ob Cognigy.AI den jeweiligen Ausgabetyp (+) konvertieren oder den Fallbacktext (-) verwenden.
 
-| Endpoint / Output Type | Text | Text with Quick Replies | Gallery | Text with Buttons | List | Audio | Image | Video | Adaptive Card (including supported versions) |
+| Endpunkt / Ausgabetyp | Text | Text mit Schnellantworten | Bildergalerie | Text mit Schaltflächen | Liste | Audio | Bild | Zum Video | Adaptive Karte (einschließlich unterstützter Versionen) |
 |------------------------|------|-------------------------|---------|-------------------|------|-------|-------|-------|----------------------------------------------|
-| Interaction Panel      | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.2                                          |
-| Webchat                | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.5                                          |
-| Webchat plugin         | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
-| VoiceGateway           | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| WhatsApp               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| 8x8                    | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
-| Alexa                  | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Avaya CPaaS            | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Facebook Messenger     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Azure Bot Services     | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
-| Line                   | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Microsoft Teams        | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
-| RingCentral Engage     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Slack                  | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Sunshine Conversations | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Twilio                 | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Twilio SMS             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| AudioCodes             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Genesys                | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Bandwidth              | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Interaktions-Panel | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.2 |
+| Webchat | +    | +                       | +       | +                 | +    | +     | +     | +     | 1,5 |
+| Webchat-Plugin | +    | +                       | +       | +                 | +    | +     | +     | +     | 1,3 |
+| VoiceGateway | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| WhatsApp | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| 8x8 | +    | +                       | +       | +                 | +    | +     | +     | +     | 1,3 |
+| Alexa | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Avaya CPaaS | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Facebook Messenger | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| Azure Bot Services | +    | +                       | +       | +                 | +    | +     | +     | +     | 1,0 |
+| Linie | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| Microsoft Teams | +    | -                       | +       | +                 | +    | +     | +     | +     | 1,0 |
+| RingCentral Engage | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| Slack | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| Sonnenschein-Gespräche | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| Twilio | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Twilio SMS | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Userlike | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| AudioCodes | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Genesys | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
+| Bandbreite | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |

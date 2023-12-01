@@ -1,74 +1,74 @@
 ---
- title: "My Profile" 
- slug: "my-profile" 
- hidden: false 
+ Titel: "Mein Profil" 
+ Schnecke: "Mein-Profil" 
+ ausgeblendet: false 
 ---
-# My Profile
+# Mein Profil
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/945574c-usermenu-profile.jpg" width="100%" />
 </figure>
 
-## Preferences
+## Einstellungen
 
-In this section the **user interface language** can be selected. Cognigy.AI currently supports the following user interface languages: **English**, **German**, **Korean**, **Japanese** and **Spanish**.
+In diesem Abschnitt kann die **Sprache der Benutzeroberfläche** ausgewählt werden. Cognigy.AI unterstützt derzeit die folgenden Sprachen der Benutzeroberfläche: **Englisch**, **Deutsch**, **Koreanisch**, **Japanisch** und **Spanisch**.
 
-## Global Roles
+## Globale Rollen
 
-The **Global Roles** section allows for the assignment of global roles that **apply across different Agents**. More granular Local Roles can be configured per Agent. 
+Im Abschnitt **Globale Rollen** können globale Rollen zugewiesen werden, die für verschiedene Agenten gelten. Detailliertere lokale Rollen können pro Agent konfiguriert werden. 
 
-## Login History
+## Login-Historie
 
-This section shows a list of previous login-sessions and their location (if available). This can be used for auditing purposes.
+Dieser Abschnitt zeigt eine Liste der bisherigen Login-Sitzungen und deren Speicherort (falls vorhanden). Dies kann zu Prüfungszwecken verwendet werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/8a69f25-usermenu-login-history.jpg" width="100%" />
 </figure>
 
-## API Keys
+## API-Schlüssel
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.49-blue.svg)] (.. /.. /.. /release-notes/4.49.md)
 
-Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
+API-Schlüssel (Application Programming Interface) sind Sicherheitstoken, die für ein Benutzerkonto registriert sind. Diese Token können von externen Anwendungen verwendet werden, um auf Cognigy.AI zuzugreifen, so wie ein menschlicher Benutzer sein Passwort eingeben würde, um sich bei der Plattform anzumelden. 
 
-API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. 
+API-Schlüssel erben die gleichen Berechtigungen wie das zugeordnete Benutzerprofil, z. B. Admin, Projektmanager oder OData. 
 
-API keys provides authorization to perform requests made available via the [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/)  or to return conversation data from the [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
+API-Schlüssel bieten die Autorisierung zum Ausführen von Anfragen, die über die [Cognigy Open API]({{config.site_url}}ai/developer-guides/using-api/) zur Verfügung gestellt werden, oder zum Zurückgeben von Konversationsdaten vom [Cognigy OData Analytics Endpoint]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
 
-### Create API Keys
+### API-Schlüssel erstellen
 
-A user that holds the global permissions can create their API keys on the **My profile** page:
+Ein Benutzer, der über die globalen Berechtigungen verfügt, kann seine API-Schlüssel auf der Seite **Mein Profil** erstellen:
 
-To create an API key, follow these steps:
+Gehen Sie folgendermaßen vor, um einen API-Schlüssel zu erstellen:
 
-1. On the **My profile** page, go to the **API Keys** section.
-2. Click **+**. 
-3. Enter a unique name of the API key and click **Confirm**.
-4. Copy the key by clicking on the key value, then save it to your local storage. For security reasons, the key is shown only once in this window, so if you do not save the key, you cannot see or copy the key value again.
+1. Wechseln Sie auf der Seite **Mein Profil** zum Abschnitt **API-Schlüssel**.
+2. Klicken Sie auf **+**. 
+3. Geben Sie einen eindeutigen Namen für den API-Schlüssel ein und klicken Sie auf **Bestätigen**.
+4. Kopieren Sie den Schlüssel, indem Sie auf den Schlüsselwert klicken, und speichern Sie ihn dann in Ihrem lokalen Speicher. Aus Sicherheitsgründen wird der Schlüssel nur einmal in diesem Fenster angezeigt, d. h., wenn Sie den Schlüssel nicht speichern, können Sie den Schlüsselwert nicht erneut anzeigen oder kopieren.
 
-Once the API key is created, its name and creation date will be displayed in the list of API keys.
+Sobald der API-Schlüssel erstellt wurde, werden sein Name und sein Erstellungsdatum in der Liste der API-Schlüssel angezeigt.
 
-### Revoke API Keys
+### API-Schlüssel widerrufen
 
-To revoke an API key, follow these steps:
+Gehen Sie folgendermaßen vor, um einen API-Schlüssel zu widerrufen:
 
-1. On the **My profile** page, go to the **API Keys** section.
-2. Near the selected API key, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Revoke API Key**.
+1. Wechseln Sie auf der Seite **Mein Profil** zum Abschnitt **API-Schlüssel**.
+2. Klicken Sie neben dem ausgewählten API-Schlüssel auf ! [vertikale-Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) **> API-Schlüssel widerrufen**.
 
-The API key will be revoked and can no longer be used for the requests.
+Der API-Schlüssel wird widerrufen und kann nicht mehr für die Anfragen verwendet werden.
 
-## Connected Accounts
+## Verbundene Konten
 
-This section lets users manage their **Connected Accounts**, 3rd-party accounts that Cognigy.AI can connect to in order to make it easier to deploy to certain platforms. 
+In diesem Abschnitt können Benutzer ihre **verbundenen Konten** verwalten, 3rd-Party-Konten, mit denen Cognigy.AI eine Verbindung herstellen können, um die Bereitstellung auf bestimmten Plattformen zu erleichtern. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/ca44eac-usermenu-accounts.jpg" width="100%" />
 </figure>
 
-## Extended Menu
+## Erweitertes Menü
 
-The Profile page includes an extended menu accessed by clicking the three dots in the top right hand corner of the page. This provides access to the following functions:
+Die Profilseite enthält ein erweitertes Menü, auf das Sie zugreifen können, indem Sie auf die drei Punkte in der oberen rechten Ecke der Seite klicken. Damit stehen Ihnen folgende Funktionen zur Verfügung:
 
-  * Edit Profile
-  * Copy Organization ID (Used for [Single Sign-on]({{config.site_url}}ai/installation/single-signin-saml2/))
-  * Delete Account
+* Profil bearbeiten
+  * Organisations-ID kopieren (wird für [Single Sign-On]({{config.site_url}}ai/installation/single-signin-saml2/)) verwendet
+  * Konto löschen

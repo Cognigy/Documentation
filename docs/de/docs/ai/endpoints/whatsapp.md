@@ -1,77 +1,69 @@
 ---
- title: "WhatsApp" 
- slug: "whatsapp" 
- hidden: false 
+ Titel: "WhatsApp" 
+ Schnecke: "WhatsApp" 
+ ausgeblendet: false 
 ---
 # WhatsApp
-
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/whatsApp-endpoint.png" width="100%" />
 </figure>
 
-Within our Cognigy.AI platform, you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook Developer Dashboard by using our WhatsApp Endpoint integration. 
+Innerhalb unserer Cognigy.AI-Plattform kannst du Cognigy-Ressourcen über das Facebook Developer Dashboard mit dem **WhatsApp** Cloud API-Zugriff verbinden, indem du unsere WhatsApp Endpoint-Integration verwendest. 
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-## Channel Specific Settings
+## Kanalspezifische Einstellungen<div class="divider"></div>## WhatsApp einrichten
 
-<div class="divider"></div>
-
-## WhatsApp Setup
-
-The WhatsApp Setup dropdown menu is where Cognigy.AI is provided with the credentials to access the WhatsApp App, created on the Meta/Facebook Developer Dashboard.
+Im Dropdown-Menü WhatsApp Setup erhalten Cognigy.AI die Anmeldeinformationen für den Zugriff auf die WhatsApp App, die auf dem Meta/Facebook Developer Dashboard erstellt wurde.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/whatsapp-settings.png" width="100%" />
 </figure>
 
-### App ID
+### App-ID
 
-This value is a unique App ID used by Meta/Facebook Developer Dashboard to identify the WhatsApp App that communicates with the Cloud API. This is a required field.
+Dieser Wert ist eine eindeutige App-ID, die vom Meta/Facebook Developer Dashboard verwendet wird, um die WhatsApp App zu identifizieren, die mit der Cloud API kommuniziert. Dies ist ein Pflichtfeld.
 
-### Access Token
+### Zugriffs-Token
 
-Access token provided by WhatsApp App on Meta/Facebook Developer Dashboard that enables the communication between Cognigy.AI and WhatsApp Cloud API. This is a required field.
+Zugriffstoken, das von der WhatsApp App auf dem Meta/Facebook Developer Dashboard bereitgestellt wird und die Kommunikation zwischen Cognigy.AI und der WhatsApp Cloud API ermöglicht. Dies ist ein Pflichtfeld.
 
+### Telefonnummern-ID
 
-### Phone Number ID
+Die Telefonnummern-ID ist eine ID für eine Telefonnummer, die in der WhatsApp App registriert ist oder vom Facebook Developer Dashboard während der Einrichtung für Tests bereitgestellt wird. Diese wird als ID in den Anfragen an die WhatsApp Cloud API verwendet. Dies ist ein Pflichtfeld.
 
-Phone number ID is an ID for a phone number registered on the WhatsApp App or provided by Facebook Developer Dashboard while setting up for testing. This will be used as an ID in the requests made to the WhatsApp Cloud API. This is a required field.
+### Token verifizieren
 
-### Verify Token
+Das Verifizierungstoken wird verwendet, wenn die Endpunkt-URL im Meta-/Facebook-Entwickler-Dashboard überprüft wird. Sie müssen übereinstimmen, um die erste Verbindung herzustellen.
 
-Verify token is used when verifying the endpoint URL on Meta/Facebook Developer Dashboard. They need to match to make the initial connection.
+### App-Geheimnis
 
-### App Secret
+Der geheime App-Schlüssel ist ein optionales Feld. Dieses Feld wird verwendet, um eine zusätzliche Sicherheitsebene hinzuzufügen, auf der jede Anforderung nicht nur mit dem Zugriffstoken, sondern auch mit dem App-Geheimnis abgeglichen wird.
 
-App Secret is an optional field. This field will be used to add an extra security layer where every request will not only be checked against the Access Token, but also the App Secret.
+## WhatsApp-Einstellungen
 
-## WhatsApp Settings
+### Nachrichten-Verzögerung
 
-### Message Delay
+Die Zeitspanne, die zwischen dem Senden von Bot-Antworten gewartet werden soll. Gemessen in Millisekunden.
 
-The amount of time to wait between sending bot replies. Measured in milliseconds.
+!!! Hinweis "Hilfe-Center"
+    Weitere Informationen zum Konfigurieren des **Zugriffstokens**, der **Telefonnummer**, der **App-ID** und des **App-Geheimnisses** finden Sie in unserem Hilfe-Center-Artikel [**hier**](https://support.cognigy.com/hc/en-us/articles/5326220817948).
 
+## Mehr Informationen
 
-!!! note "Help Center"
-    For more information on how to configure the **Access Token**, **Phone Number**, **App ID** and **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/5326220817948).
-
-
-## More Information
-
-* [HelpCenter: WhatsApp Endpoint: Deploy Native Endpoint](https://support.cognigy.com/hc/en-us/articles/5326220817948)
-* [HelpCenter: WhatsApp Endpoint: Get a Permanent Access Token](https://support.cognigy.com/hc/en-us/articles/5326310754332)
-* [HelpCenter: WhatsApp Endpoint: Messages Types and Payload Examples](https://support.cognigy.com/hc/en-us/articles/5326454286108)
+* [HelpCenter: WhatsApp-Endpunkt: Nativer Endpunkt bereitstellen](https://support.cognigy.com/hc/en-us/articles/5326220817948)
+* [HelpCenter: WhatsApp-Endpunkt: Permanentes Zugriffstoken erhalten](https://support.cognigy.com/hc/en-us/articles/5326310754332)
+* [HelpCenter: WhatsApp-Endpunkt: Nachrichtentypen und Payload-Beispiele](https://support.cognigy.com/hc/en-us/articles/5326454286108)

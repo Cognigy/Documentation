@@ -1,18 +1,18 @@
 ---
-title: "Backups"
-slug: "backups"
-hidden: false
+Titel: "Backups"
+Slug: "Sicherungen"
+ausgeblendet: false
 ---
 
-## Cognigy.AI Secrets Backups
-Follow Cognigy.AI installation guide to [make a backup of secrets](https://github.com/Cognigy/cognigy-ai-helm-chart#cognigyai-secrets-backup)
+## Cognigy.AI Secrets-Backups
+Befolgen Sie Cognigy.AI Installationsanleitung, um [eine Sicherungskopie von Geheimnissen zu erstellen](https://github.com/Cognigy/cognigy-ai-helm-chart#cognigyai-secrets-backup)
 
-## Cognigy.AI Data Backups
+## Cognigy.AI Datensicherungen
 
-Periodic backups of Cognigy.AI installation are crucial for production operation. Backup process may vary depending on your cloud provider and installation specification. We recommend performing regular backups of the following stateful data:
+Regelmäßige Backups Cognigy.AI Installation sind für den Produktionsbetrieb von entscheidender Bedeutung. Der Sicherungsprozess kann je nach Cloud-Anbieter und Installationsspezifikation variieren. Es wird empfohlen, regelmäßige Sicherungen der folgenden zustandsbehafteten Daten durchzuführen:
 
-- Redis persistent data (`redis-persistent` PV)
-- MongoDB data (`datadir-mongodb-0` - `datadir-mongodb-2` PVs)
-- `flow-modules` and `functions` shared PVs
+- Persistente Redis-Daten ('redis-persistent' PV)
+- MongoDB-Daten ('datadir-mongodb-0' - 'datadir-mongodb-2' PVs)
+- "Durchflussmodule" und "Funktionen" gemeinsam genutzte PVs
 
-The exact backup and disaster recovery plan depends on your choice's cloud provider and the Kubernetes cluster's provisioning method. Thus, we do not adhere to any guidelines but recommend following your cloud provider's backup and disaster recovery best practices. There are also open-source tools like [Velero](https://velero.io/) that can help you automate backups and disaster recovery for Kubernetes clusters in a vendor-neutral way. 
+Der genaue Backup- und Disaster-Recovery-Plan hängt vom Cloud-Anbieter Ihrer Wahl und der Bereitstellungsmethode des Kubernetes-Clusters ab. Daher halten wir uns an keine Richtlinien, empfehlen aber, die Best Practices Ihres Cloud-Anbieters für Backup und Disaster Recovery zu befolgen. Es gibt auch Open-Source-Tools wie [Velero](https://velero.io/), mit denen Sie Backups und Disaster Recovery für Kubernetes-Cluster herstellerneutral automatisieren können. 

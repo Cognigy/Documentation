@@ -1,37 +1,37 @@
 ---
-title: "Agents" 
-slug: "agents-report" 
-hidden: false 
+Titel: "Agenten" 
+Slug: "Agenten-Bericht" 
+ausgeblendet: false 
 ---
 
-# Agents Report
+# Agenten-Bericht
 
-This report shows agent-specific metrics, such as the number of conversations, outgoing messages, average response time, average resolution time, and the number of successfully resolved user requests, to assess and optimize an agent's performance in handling conversations.
+Dieser Bericht zeigt agentenspezifische Metriken an, z. B. die Anzahl der Konversationen, ausgehende Nachrichten, die durchschnittliche Antwortzeit, die durchschnittliche Lösungszeit und die Anzahl der erfolgreich gelösten Benutzeranfragen, um die Leistung eines Agenten bei der Bearbeitung von Konversationen zu bewerten und zu optimieren.
 
-By analyzing these metrics over time, you can identify trends and make data-driven decisions to improve the efficiency and quality of your customer support or communication processes. For example, if you notice an increase in average response time, you may need to allocate more resources or provide additional training to your agents. If the number of resolved requests is declining, it may signal a need for process improvements or better tools.
+Indem Sie diese Metriken im Laufe der Zeit analysieren, können Sie Trends erkennen und datengestützte Entscheidungen treffen, um die Effizienz und Qualität Ihres Kundensupports oder Ihrer Kommunikationsprozesse zu verbessern. Wenn Sie beispielsweise eine Verlängerung der durchschnittlichen Reaktionszeit feststellen, müssen Sie möglicherweise mehr Ressourcen zuweisen oder Ihren Agenten zusätzliche Schulungen anbieten. Wenn die Anzahl der gelösten Anfragen abnimmt, kann dies darauf hindeuten, dass Prozessverbesserungen oder bessere Tools erforderlich sind.
 
-To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
+Weitere Informationen zu Metriken finden Sie unter [Berichtsmetriken](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Agents_report.png" width="100%" alt="Live Agent Agents report" />
-  <figcaption>Agents report</figcaption>
+  <figcaption>Bericht "Agenten"</figcaption>
 </figure>
 
-## View a Report
+## Einen Bericht anzeigen
 
-To view a report, do the following:
+Um einen Bericht anzuzeigen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Agents**.
-3. In the upper-left corner of the report page, select a an agent and time period from the lists.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Berichte > Agenten**.
+3. Wählen Sie in der oberen linken Ecke der Berichtsseite einen Agenten und einen Zeitraum aus den Listen aus.
 
-The chart will be updated with the corresponding data related to the selected filters.
+Das Diagramm wird mit den entsprechenden Daten zu den ausgewählten Filtern aktualisiert.
 
-## Download a Report
+## Bericht herunterladen
 
 {! _includes/live-agent/download-report.md !}
 
-## More information
+## Mehr Informationen
 
-- [Admin reports](overview.md)
-- [Reports](overview.md)
+- [Admin-Berichte](overview.md)
+- [Berichte](overview.md)

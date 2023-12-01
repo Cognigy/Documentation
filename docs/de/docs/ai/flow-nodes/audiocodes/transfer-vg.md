@@ -1,22 +1,20 @@
 ---
- title: "Transfer" 
- slug: "transfer-ac" 
- hidden: false 
+ Titel: "Transfer" 
+ Schnecke: "Transfer-AC" 
+ ausgeblendet: false 
 ---
-# Transfer
+# Übertragung
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/transfer.png" width="80%" />
-  <figcaption>AudioCodes Transfer</figcaption>
+  <figcaption>AudioCodes-Übertragung</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Transfer Node lets you pass an active call to a tel or sip target.
+## Beschreibung<div class="divider"></div>Mit dem Transfer Node können Sie einen aktiven Anruf an ein Tel- oder SIP-Ziel weiterleiten.
 
-| Parameter            | Type          | Description                                                                                                                     |
+| Parameter | Typ | Beschreibung |
 |----------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Reasons              | CognigyScript | The reason for the handover. Will show in AudioCode logs.                                                                       |
-| Target               | CognigyScript | The target URI to pass the call to. Typically either a "tel" or "sip" URI.                                                      |
-| Referral URL         | CognigyScript | Defines the party (URL) who initiated the call referral                                                                         |
-| Transfer SIP Headers | JSON          | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute. |
+| Gründe | CognigyScript | Der Grund für die Übergabe. Wird in AudioCode-Protokollen angezeigt.                                                                       |
+| Ziel | CognigyScript | Der Ziel-URI, an den der Aufruf übergeben werden soll. In der Regel entweder ein "tel"- oder ein "sip"-URI.                                                      |
+| Empfehlungs-URL | CognigyScript | Definiert den Teilnehmer (URL), der die Anrufweiterleitung initiiert hat |
+| SIP-Header übertragen | JSON | Array von Objekten, die SIP-Header auflisten, die an den Empfänger gesendet werden sollen. Jedes Objekt besteht aus einem Namens- und einem Wertattribut. |

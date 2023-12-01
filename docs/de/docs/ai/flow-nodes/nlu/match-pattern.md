@@ -1,80 +1,80 @@
 ---
- title: "Match Pattern" 
- slug: "match-pattern" 
- hidden: false 
+ Titel: "Übereinstimmungsmuster" 
+ Schnecke: "Match-Muster" 
+ ausgeblendet: false 
 ---
-# Match Pattern
+# Muster abgleichen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/match-pattern.png" width="80%" />
 </figure>
 
-## Description
+## Beschreibung
 
-The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object](../../tools/interaction-panel/input.md).
+Der Übereinstimmungsmuster-Knoten ermöglicht es einem Benutzer, Muster im Text zu finden und sie im [Eingabeobjekt](.. /.. /tools/interaction-panel/input.md).
 
-You can define patterns that will be searched for in the input text or the alternate text that was provided. If a pattern is found, a matchedPatterns group will be created in the [Input Object](../../tools/interaction-panel/input.md).
+Sie können Muster definieren, nach denen im Eingabetext oder im angegebenen Alternativtext gesucht wird. Wenn ein Muster gefunden wird, wird eine matchedPatterns-Gruppe im [Eingabeobjekt](.. /.. /tools/interaction-panel/input.md).
 
-## Patterns
+## Muster
 
-Patterns can be any text and can contain references to slots by using the `@` symbol. 
+Muster können beliebiger Text sein und Verweise auf Slots enthalten, indem das "@"-Symbol verwendet wird. 
 
-Example: `@color @product`
+Beispiel: '@color @product'
 
-A text like `I need a green shirt` would find the compound slot group and assign `color = green` and `product = shirt`.
+Ein Text wie "Ich brauche ein grünes Hemd" würde die zusammengesetzte Slot-Gruppe finden und "Farbe = Grün" und "Produkt = Hemd" zuweisen.
 
-### Tags
+### Schlagwörter
 
-Slots can be tagged in a pattern to be easier identifiable later.
+Slots können in einem Muster markiert werden, um später leichter identifiziert werden zu können.
 
-Example: `from @city>origin to @city>destination`.
+Beispiel: "vom @city>Start- zum @city>Zielort".
 
-A text like `I want to go from Düsseldorf to Tokyo` would find a matched pattern group with origin and destination set.
+Ein Text wie "Ich möchte von Düsseldorf nach Tokio fahren" würde eine übereinstimmende Mustergruppe mit Ursprung und Ziel finden.
 
-## Parameters
+## Parameter
 
-| Parameter               | Type        | Description                                                                          |
+| Parameter | Typ | Beschreibung |
 |-------------------------|-------------|--------------------------------------------------------------------------------------|
-| Patterns                | TextArray   | The patterns to be applied to the text.                                              |
-| Pattern Group Name      | CognigyText | The name of the pattern matching group.                                              |
-| Create New Slots        | Boolean     | Indicates whether new slots should be created from tags or not.                      |
-| Tag Existing Slots      | Boolean     | Indicates whether existing slots should be tagged or not.                            |
-| Detailed Compound Slots | Boolean     | Indicates whether detailed results for the matched patterns should be stored or not. |
-| Alternate Input         | CognigyText | The input text to be used instead of the current input text.                         |
+| Muster | TextArray | Die Muster, die auf den Text angewendet werden sollen.                                              |
+| Name der Mustergruppe | CognigyText | Der Name der Mustervergleichsgruppe.                                              |
+| Neue Slots erstellen | Boolescher Wert | Gibt an, ob neue Slots aus Tags erstellt werden sollen oder nicht.                      |
+| Vorhandene Slots markieren | Boolescher Wert | Gibt an, ob vorhandene Slots markiert werden sollen oder nicht.                            |
+| Detaillierte zusammengesetzte Slots | Boolescher Wert | Gibt an, ob detaillierte Ergebnisse für die übereinstimmenden Muster gespeichert werden sollen oder nicht. |
+| Alternative Eingabe | CognigyText | Der Eingabetext, der anstelle des aktuellen Eingabetextes verwendet werden soll.                         |
 
-## Example
+## Beispiel
 
-Text: `I want to fly from bErlin to NEW York with 3 or 4 people on October 1st 2021 if its 30 degrees and I am 22 years old 100%`
+Text: "Ich möchte am 1. Oktober 2021 mit 3 oder 4 Personen von bErlin nach NEW York fliegen, wenn es 30 Grad hat und ich zu 100% 22 Jahre alt bin"
 
-Pattern: `from @city>origin to @city>destination with @NUMBER>ppl1 or @NUMBER>ppl2 people @DATE>date if its @TEMPERATURE>celsius degrees and I am @AGE>userage years old @PERCENTAGE>perc`
+Muster: 'vom @city>Ursprung zum @city>Ziel mit @NUMBER>ppl1 oder @NUMBER>ppl2 Personen @DATE>date, wenn es @TEMPERATURE>Grad Celsius ist und ich @AGE>Userage Jahre alt bin @PERCENTAGE>perc"
 
-Result:
+Ergebnis:
 
-```JSON
+'''JSON
 "matchedPatterns": {
-        "group": [
+        "Gruppe": [
             {
-                "matchedPhrase": "from bErlin to NEW York with 3 or 4 people on October 1st 2021 if its 30 degrees and I am 22 years old 100%",
+                "matchedPhrase": "von bErlin nach NEW York mit 3 oder 4 Personen am 1. Oktober 2021, wenn es 30 Grad hat und ich 22 Jahre alt bin, 100%",
                 "origin": "Berlin",
                 "destination": "New York",
                 "ppl1": 3,
                 "ppl2": 4,
-                "date": {
-                    "day": 1,
-                    "month": 10,
-                    "year": 2021,
-                    "hour": 12,
-                    "minute": 0,
-                    "second": 0,
-                    "millisecond": 0,
-                    "weekday": 1,
-                    "dayOfWeek": "Monday",
+                "Datum": {
+                    "Tag": 1,
+                    "Monat": 10,
+                    "Jahr": 2021,
+                    "Stunde": 12,
+                    "Minute": 0,
+                    "Sekunde": 0,
+                    "Millisekunde": 0,
+                    "Wochentag": 1,
+                    "dayOfWeek": "Montag",
                     "ISODate": "2020-06-15T12:00:00"
                 },
-                "celsius": 30,
-                "userage": 22,
-                "perc": 100
+                "Celsius": 30,
+                "Benutzeralter": 22,
+                "Schl": 100
             }
         ]
     }
-```
+'''

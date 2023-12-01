@@ -1,47 +1,43 @@
 ---
-title: "Tasks" 
-slug: "tasks"
-description: "Cognigy Tasks are specific activities, such as training Intents, importing Snapshots, or creating a new Agent. A Task is an asynchronous process that can run in the background and is associated with the notification system."
-hidden: false 
+Titel: "Aufgaben" 
+slug: "Aufgaben"
+Beschreibung: "Cognigy-Aufgaben sind spezifische Aktivitäten, wie z. B. das Trainieren von Intents, das Importieren von Snapshots oder das Erstellen eines neuen Agenten. Eine Aufgabe ist ein asynchroner Prozess, der im Hintergrund ausgeführt werden kann und mit dem Benachrichtigungssystem verknüpft ist."
+ausgeblendet: false 
 ---
 
-# Tasks
+# Aufgaben
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../../release-notes/4.65.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.65-blue.svg)] (.. /.. /.. /release-notes/4.65.md)
 
-_Tasks_ are specific activities, such as training Intents, importing Snapshots, or creating a new Agent. A Task is an asynchronous process that can run in the background and is associated with the notification system.
+_Tasks_ sind spezifische Aktivitäten, wie z. B. das Trainieren von Intents, das Importieren von Snapshots oder das Erstellen eines neuen Agenten. Eine Aufgabe ist ein asynchroner Prozess, der im Hintergrund ausgeführt werden kann und dem Benachrichtigungssystem zugeordnet ist.
 
-## Task Panel
+## Aufgabenbereich
 
-The Task Panel provides an overview of both current and previous tasks,
-serving as a high-level change log for relevant activities.
-It is accessible by clicking the **Task** icon ![task-menu](../../../assets/icons/task-menu.svg) located at the top-right of the Cognigy.AI interface.
-
-<div class="right-image">
+Der Aufgabenbereich bietet einen Überblick über aktuelle und frühere Aufgaben.
+dient als allgemeines Änderungsprotokoll für relevante Aktivitäten.
+Es ist zugänglich, indem Sie auf das **Task**-Symbol klicken! [Aufgaben-Menü] (.. /.. /.. /assets/icons/task-menu.svg) oben rechts auf der Cognigy.AI Benutzeroberfläche.<div class="right-image">
   <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar_taskmenu.png">
-</div>
-
-The Task Panel displays both ongoing and finished tasks.
+</div>Im Aufgabenbereich werden sowohl laufende als auch abgeschlossene Aufgaben angezeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/task-panel.png"/>
 </figure>
 
-To navigate to the source of the launched task, click the task in the list.
+Um zur Quelle der gestarteten Aufgabe zu navigieren, klicken Sie auf die Aufgabe in der Liste.
 
-Note that only the most recent 100 tasks are visible on the Task panel.
-To view tasks beyond the latest 100,
-use the [Get Tasks](https://api-trial.cognigy.ai/openapi#get-/v2.0/tasks) API request.
-When making the API request, include the `limit` and `skip` parameters.
-For example, if you want to see the previous 100 tasks not displayed in the UI,
-set `limit` to `100` and `skip` to `100`.
-This means
-you are requesting to skip the first 100 tasks
-and display the next 100 to view the preceding tasks that are not visible on the UI.
+Beachten Sie, dass nur die letzten 100 Aufgaben im Aufgabenbereich angezeigt werden.
+So zeigen Sie Aufgaben an, die über die letzten 100 hinausgehen:
+Verwenden Sie die API-Anforderung [Get Tasks](https://api-trial.cognigy.ai/openapi#get-/v2.0/tasks).
+Wenn Sie die API-Anfrage stellen, geben Sie die Parameter "limit" und "skip" an.
+Wenn Sie z. B. möchten, dass die vorherigen 100 Aufgaben nicht in der Benutzeroberfläche angezeigt werden,
+Setzen Sie 'limit' auf '100' und 'skip' auf '100'.
+Das bedeutet:
+Sie beantragen, die ersten 100 Aufgaben zu überspringen
+und zeigen Sie die nächsten 100 an, um die vorhergehenden Aufgaben anzuzeigen, die auf der Benutzeroberfläche nicht sichtbar sind.
 
-## Notifications
+## Benachrichtigungen
 
-After a task is completed, in the upper-right corner of the Cognigy.AI interface, you will receive one of the following notifications:
+Nachdem eine Aufgabe abgeschlossen ist, erhalten Sie in der oberen rechten Ecke der Cognigy.AI Benutzeroberfläche eine der folgenden Benachrichtigungen:
 
-- **Success Notification**. This notification is displayed when a task is successfully completed.
-- **Error Notification**. This notification is displayed when a task encounters an error and fails. The notification provides a description of the issue.
+- **Erfolgsmeldung**. Diese Benachrichtigung wird angezeigt, wenn eine Aufgabe erfolgreich abgeschlossen wurde.
+- **Fehler-Benachrichtigung**. Diese Benachrichtigung wird angezeigt, wenn bei einer Aufgabe ein Fehler auftritt und ein Fehler auftritt. Die Benachrichtigung enthält eine Beschreibung des Problems.

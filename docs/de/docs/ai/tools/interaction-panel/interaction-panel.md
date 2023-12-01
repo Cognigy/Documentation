@@ -1,236 +1,226 @@
 ---
-title: "Interaction Panel" 
-slug: "interaction-panel" 
-hidden: false 
+Titel: "Interaktions-Panel" 
+Slug: "Interaktions-Panel" 
+ausgeblendet: false 
 ---
 
-# Interaction Panel
+# Interaktions-Panel
 
-The Interaction Panel can be used to interact with your virtual agent. It can be accessed by clicking on the chat button at the top right of the interface when inside any Agent. 
+Das Interaktionsfenster kann verwendet werden, um mit Ihrem virtuellen Agenten zu interagieren. Sie können darauf zugreifen, indem Sie auf die Chat-Schaltfläche oben rechts in der Benutzeroberfläche klicken, wenn Sie sich in einem Agenten befinden. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/8f8cdab-interaction.jpg" width="100%" />
 </figure>
 
-## Test
-<div class="divider"></div>
+## Testen<div class="divider"></div>!!! Anmerkung
+    Die Registerkarte **Chat** wurde ab Version 4.25.0 in **Test** umbenannt.
 
-!!! note
-    **Chat** tab was renamed to **Test** from version 4.25.0.
+### Kanalspezifischer Ausgang
 
-### Channel-Specific output
-
-The Interaction Panel will preview channel-specific output in case this has been configured in output nodes like the Say-Node.
+Das Interaction Panel zeigt eine Vorschau der kanalspezifischen Ausgabe an, falls dies in Ausgabeknoten wie dem Say-Node konfiguriert wurde.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-channel-selection.png" width="100%" />
 </figure>
 
-!!! tip "Tip: Showing only selected output"
-    It is possible to only show specific output for a selected set of channels. This can be configured under the [Interaction Panel settings](interaction-panel/#chat-output).
+!!! tip "Tipp: Nur ausgewählte Ausgabe anzeigen"
+    Es ist möglich, nur eine bestimmte Ausgabe für einen ausgewählten Satz von Kanälen anzuzeigen. Dies kann unter den [Einstellungen des Interaktions-Panels] (Interaktions-Panel/#chat-Ausgabe) konfiguriert werden.
 
-### Input Modes
-Clicking on the secondary button located in the bottom-left corner of the Interaction Panel, a menu opens up with the list of available input modes. Following are the three input modes in the Interaction Panel.
+### Eingabe-Modi
+Wenn Sie auf die sekundäre Schaltfläche in der unteren linken Ecke des Interaktionsfensters klicken, öffnet sich ein Menü mit der Liste der verfügbaren Eingabemodi. Im Folgenden sind die drei Eingabemodi im Interaktionsbereich aufgeführt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-input-modes.png" width="100%" />
 </figure>
 
-!!! note
-    Prior to version 4.25.0, **Input Mode** select was a part of Interaction Panel settings tab.
+!!! Anmerkung
+    Vor Version 4.25.0 war die Auswahl des **Eingabemodus** Teil der Registerkarte "Interaction Panel"-Einstellungen.
 
 #### Chat
-When **Chat** is selected as the input mode, the **Virtual Agent** can be triggered by typing into the input field and hitting the enter key (or pressing the send button). Alternatively, the microphone button can be pressed after which your device's microphone is started and voice input is registered. 
+Wenn **Chat** als Eingabemodus ausgewählt ist, kann der **Virtuelle Agent** durch Eingabe in das Eingabefeld und Drücken der Eingabetaste (oder Drücken der Senden-Taste) ausgelöst werden. Alternativ kann die Mikrofontaste gedrückt werden, woraufhin das Mikrofon Ihres Geräts gestartet und die Spracheingabe registriert wird. 
 
-It is common for messages to be sent to Cognigy.AI with attached data. It is possible to simulate this data input by adding a data payload in [JSON](https://www.json.org/json-en.html) format to the data input field. The **Data Input** field can be activated by enabling the **Show data input** switch in the [Interaction Panel settings](input.md). Any data sent to Cognigy.AI with a message is accessible via [CognigyScript](../cognigy-script.md) under `{{ " {{input.data}}" }}`
+Es ist üblich, dass Nachrichten mit angehängten Daten an Cognigy.AI gesendet werden. Es ist möglich, diese Dateneingabe zu simulieren, indem dem Dateneingabefeld eine Datennutzlast im [JSON](https://www.json.org/json-en.html)-Format hinzugefügt wird. Das Feld **Dateneingabe** kann aktiviert werden, indem der Schalter **Dateneingabe anzeigen** in den [Einstellungen des Interaktionsfensters](input.md) aktiviert wird. Alle Daten, die mit einer Nachricht an Cognigy.AI gesendet werden, sind über [CognigyScript](.. /cognigy-script.md) unter '{{ " {{input.data}}" }}'
 
-#### Voice Call
+#### Sprachanruf
 
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Beta-purple.svg)] ({{config.site_url}})
 
-!!! info "Feature availability"
-    - If you use a SaaS Cognigy installation, contact the support team to activate this feature.
-    - If you use an On-Premises Cognigy installation, activate this feature by adding `FEATURE_ENABLE_VOICECALL_WHITELIST`  in `values.yaml`. For example, `FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>`.
+!!! info "Verfügbarkeit von Funktionen"
+    - Wenn Sie eine SaaS Cognigy-Installation verwenden, wenden Sie sich an das Support-Team, um diese Funktion zu aktivieren.
+    - Wenn Sie eine On-Premises-Cognigy-Installation verwenden, aktivieren Sie diese Funktion, indem Sie "FEATURE_ENABLE_VOICECALL_WHITELIST" in "values.yaml" hinzufügen. Beispiel: 'FEATURE_ENABLE_VOICECALL_WHITELIST:<organization-1-id>,<organization-2-id>'.
 
-When **Voice Call** input mode is selected, you will be able to initiate a test voice call from the Interaction Panel and understand how the voice bot would sound like.
+Wenn der Eingabemodus **Sprachanruf** ausgewählt ist, können Sie einen Testanruf über das Interaktionspanel initiieren und verstehen, wie der Sprachbot klingen würde.
 
-Before starting a voice call, you need to configure an **Audio Provider** in the Agent Settings page. 
+Bevor Sie einen Sprachanruf starten, müssen Sie auf der Seite "Agenteneinstellungen" einen **Audioanbieter** konfigurieren. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/agent-settings-audio-provider-settings.png" width="100%" />
 </figure>
 
-Based on the selected **Audio Provider**, the list of supported STT/TTS languages and voices will change. You can choose your preferred language and voice for your test call from the [Voice Call](interaction-panel.md#voice-call) section of the Settings tab in the Interaction Panel. 
+Basierend auf dem ausgewählten **Audioanbieter** ändert sich die Liste der unterstützten STT/TTS-Sprachen und -Stimmen. Sie können Ihre bevorzugte Sprache und Stimme für Ihren Testanruf im Abschnitt [Sprachanruf](interaction-panel.md#voice-call) auf der Registerkarte Einstellungen im Interaktionsbereich auswählen. 
 
-After configuring the Audio Provider, language and voice, you can start the call by simply clicking the **Start Call** button.
+Nachdem Sie den Audioanbieter, die Sprache und die Stimme konfiguriert haben, können Sie den Anruf starten, indem Sie einfach auf die Schaltfläche **Anruf starten** klicken.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-start-voice-call.png" width="60%" />
 </figure>
 
-When the call is ongoing, you will be able to see how long the call is currently active with the help of the call timer below the **End Call** button. In addition, DTMF tones can also be inserted during the call using the **Dialpad**. You will also be able to see the conversation and follow the test voice call.
+Wenn der Anruf läuft, können Sie mit Hilfe des Anruf-Timers unter der Schaltfläche **Anruf beenden** sehen, wie lange der Anruf gerade aktiv ist. Darüber hinaus können DTMF-Töne auch während des Gesprächs über die **Wähltastatur** eingefügt werden. Sie können auch das Gespräch sehen und dem Test-Sprachanruf folgen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-end-voice-call.png" width="100%" />
 </figure>
 
-#### Live Follow
+#### Live-Folgen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.26.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.26.0-blue.svg)] ({{config.site_url}})
 
-The **Live Follow** input mode helps observe a conversation between a virtual agent and a user in real time.
-You can debug a Flow when you have already set up an Endpoint for this Flow.
+Der **Live-Follow**-Eingabemodus hilft dabei, eine Konversation zwischen einem virtuellen Agenten und einem Benutzer in Echtzeit zu beobachten.
+Sie können einen Flow debuggen, wenn Sie bereits einen Endpunkt für diesen Flow eingerichtet haben.
 
-To use and test this mode, follow these steps:
+Gehen Sie folgendermaßen vor, um diesen Modus zu verwenden und zu testen:
 
-1. Go to **Test > Logs**.
-2. On the **Logs** page, find `userId` in the `info Received message from user` log. If you do not see this log, navigate to the channel chat you created via the Endpoint (such as Webchat, Teams, or Slack). Send a message to this chat, then go the **Logs** page. To get `userId` for Cognigy Demo Webchat, read [Manually defining the user ID](../../endpoints/webchat/integrated-demo-page.md#description).
-3. Copy `userId`.
-4. Go to the Flow editor, and open the Interaction panel.
-5. At the bottom of the Interaction panel, click ![live-follow](../../../assets/icons/live-follow.svg).
-6. Paste `userId` into the **User ID** field.
-7. To start live following, click ![start-live-following](../../../assets/icons/start-live-following.svg).
+1. Gehen Sie zu **Test > Logs**.
+2. Suchen Sie auf der Seite **Protokolle** nach "userId" im Protokoll "info Received message from user". Wenn dieses Protokoll nicht angezeigt wird, navigieren Sie zu dem Kanalchat, den Sie über den Endpunkt erstellt haben (z. B. Webchat, Teams oder Slack). Senden Sie eine Nachricht an diesen Chat und rufen Sie dann die Seite **Protokolle** auf. Um 'userId' für Cognigy Demo Webchat zu erhalten, lesen Sie [Manuelles Definieren der Benutzer-ID](.. /.. /endpoints/webchat/integrated-demo-page.md#description).
+3. Kopieren Sie 'userId'.
+4. Wechseln Sie zum Flow-Editor und öffnen Sie das Bedienfeld Interaktion.
+5. Klicken Sie am unteren Rand des Interaktionsfensters auf ! [Live-Folgen] (.. /.. /.. /assets/icons/live-follow.svg).
+6. Fügen Sie "userId" in das Feld **Benutzer-ID** ein.
+7. Um das Live-Following zu starten, klicken Sie auf ! [Start-Live-Folgen] (.. /.. /.. /assets/icons/start-live-following.svg).
 
-Now you can view and track the user's real-time conversation from your Interaction Panel. To terminate live following, click **Stop Live Following**.
+Jetzt können Sie die Echtzeit-Konversation des Benutzers in Ihrem Interaktions-Panel anzeigen und verfolgen. Um die Live-Follower zu beenden, klicken Sie auf **Live-Follower beenden**.
 
-!!! note
-    Human agent messages are not shown in the Live Follow mode.
+!!! Anmerkung
+    Menschliche Agentennachrichten werden im Live-Follow-Modus nicht angezeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-user.gif" width="80%" />
 </figure>
 
 #### Playbook
-When **Playbook** input mode is selected, a select field appears with the list of Playbooks present in the Virtual Agent. Select a Playbook that you wish to execute, and click the **Play** button. During execution, one can see the information about the Playbook Step assertions that failed or passed. Hovering over the assertion results will provide you further details in a tooltip. 
+Wenn der Eingabemodus **Playbook** ausgewählt ist, wird ein Auswahlfeld mit der Liste der Playbooks angezeigt, die im virtuellen Agenten vorhanden sind. Wählen Sie ein Playbook aus, das Sie ausführen möchten, und klicken Sie auf die Schaltfläche **Wiedergabe**. Während der Ausführung können die Informationen zu den Playbook Step-Assertionen angezeigt werden, die fehlgeschlagen oder bestanden wurden. Wenn Sie den Mauszeiger über die Assertionsergebnisse bewegen, erhalten Sie weitere Details in einem Tooltip. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-playbook.png" width="100%" />
 </figure>
 
+!!! Tipp: Konfigurieren der Playbookausführung"
+	Sie können die Playbook-Ausführung unter den [Playbook-Einstellungen des Interaktionsbereichs](interaction-panel.md#playbooks) weiter konfigurieren.
 
-!!! tip "Tip: Configuring Playbook Execution"
-	You can further configure the Playbook execution under the [Interaction Panel Playbook settings](interaction-panel.md#playbooks).
-
-## Info
-<div class="divider"></div>
-The Info tab exposes 4 sub-tabs - Input, State, Context and Profile.
+## Infos<div class="divider"></div>Die Registerkarte "Info" enthält 4 Unterregisterkarten - Eingabe, Status, Kontext und Profil.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/7983f68-interaction-info.jpg" width="100%" />
 </figure>
 
-### Input object
-The Input object is updated with every user input and holds a lot of relevant information about the user's input, like the **Intents** that were found, the **Channel** that the message was sent through and any other relevant meta-data. 
+### Eingabe-Objekt
+Das Input-Objekt wird mit jeder Benutzereingabe aktualisiert und enthält viele relevante Informationen über die Eingabe des Benutzers, z. B. die gefundenen **Intents**, den **Kanal**, über den die Nachricht gesendet wurde, und alle anderen relevanten Metadaten. 
 
-!!! note "Input object"
-    Head over to [Input](input.md) for more information.
+!!! Hinweis "Eingabeobjekt"
+    Weitere Informationen finden Sie unter [Eingabe](input.md).
 
-### State
-State can be used to narrow the set of **Intents** that can be triggered, by actively excluding certain Intents from a certain state. 
+### Zustand
+State kann verwendet werden, um die Gruppe von **Intents** einzuschränken, die ausgelöst werden können, indem bestimmte Intents aktiv von einem bestimmten Status ausgeschlossen werden. 
 
-!!! note "State"
-    Head over to [State](state.md) to learn more. 
+!!! Hinweis "Bundesland"
+    Gehen Sie zu [State](state.md), um mehr zu erfahren. 
 
-### Context object
+### Context-Objekt
 
-The **Context** can be seen as the short-term memory of the **Virtual Agent** and is used to store session-specific information, like selected products or the user's current location. It is the location where API responses are typically stored, as they are relevant to the particular session. 
+Der **Kontext** kann als Kurzzeitgedächtnis des **Virtual Agent** angesehen werden und wird verwendet, um sitzungsspezifische Informationen zu speichern, wie z. B. ausgewählte Produkte oder den aktuellen Standort des Benutzers. Es ist der Ort, an dem API-Antworten in der Regel gespeichert werden, da sie für die jeweilige Sitzung relevant sind. 
 
-!!! note "Context object"
-    Head over to [Context](context.md) for more information. 
+!!! Hinweis "Kontextobjekt"
+    Weitere Informationen finden Sie unter [Kontext](context.md). 
 
-### Profile object
-The **(Contact) Profile** acts as persistent - long term - memory and is used to store specific user data, like the user's name and email, as well as use case specific information like for example,example, the user's favorite color.
+### Profil-Objekt
+Das **(Kontakt-)Profil** fungiert als persistenter - Langzeitspeicher - und wird verwendet, um bestimmte Benutzerdaten wie den Namen und die E-Mail-Adresse des Benutzers sowie anwendungsfallspezifische Informationen wie z. B. die Lieblingsfarbe des Benutzers zu speichern.
 
-!!! note "Profile object"
-    Head over to [Profile](profile.md) for more information.
+!!! Hinweis "Profilobjekt"
+    Weitere Informationen finden Sie unter [Profil](profile.md).
  
-## Settings
-<div class="divider"></div>
-The Interaction Panel can be configured with a number of settings across different sections.
+## Einstellungen<div class="divider"></div>Das Interaktionsfenster kann mit einer Reihe von Einstellungen in verschiedenen Abschnitten konfiguriert werden.
 
-### Chat Input
-This section allows you to enable an alternative NLU engine for use in your Interaction Panel. It is possible to connector 3rd-party NLU engines by navigating to the [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) page. 
+### Chat-Eingabe
+In diesem Abschnitt können Sie eine alternative NLU-Engine für die Verwendung in Ihrem Interaction Panel aktivieren. Es ist möglich, NLU-Engines von Drittanbietern zu verbinden, indem Sie zur Seite [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) navigieren. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-chat-input.png" width="100%" />
 </figure>
 
-### Chat Output
-This section lets you configure the chat outputs in the Interaction Panel.
+### Chat-Ausgabe
+In diesem Abschnitt können Sie die Chat-Ausgaben im Interaktionsbereich konfigurieren.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-chat-output.png" width="100%" />
 </figure>
 
-#### Text to Speech
-If enabled, the Virtual Agent will speak to you through the browser's Text to Speech functionality.
+#### Text-to-Speech
+Wenn diese Option aktiviert ist, spricht der virtuelle Agent über die Text-to-Speech-Funktion des Browsers mit Ihnen.
 
-#### Expert Mode
+#### Experten-Modus
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.47-blue.svg)] (.. /.. /.. /release-notes/4.47.md)
 
-If enabled, the Interaction Panel will display additional information about the Flow execution:
+Wenn diese Option aktiviert ist, werden im Interaktionsbereich zusätzliche Informationen zur Flow-Ausführung angezeigt:
 
-- Triggered [Intents](../../nlu/nlu-overview/ml-intents.md) and their score.
-- Triggered [Yes/No Intents](../../nlu/nlu-overview/yes-no-intents.md) and their score.
-- The name of the Flow that was triggered. 
+- Ausgelöste [Intents](.. /.. /nlu/nlu-overview/ml-intents.md) und deren Punktzahl.
+- Ausgelöste [Ja/Nein-Absichten](.. /.. /nlu/nlu-overview/yes-no-intents.md) und deren Punktzahl.
+- Der Name des Flows, der ausgelöst wurde. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-chat-tab-expert-mode.png" width="80%" />
 </figure>
 
-#### Channel Select
-We can also filter the messages in the Interaction panel by a specific channel. By default, outputs from all channels will be displayed.
+#### Kanal auswählen
+Wir können die Nachrichten im Interaktionsbereich auch nach einem bestimmten Kanal filtern. Standardmäßig werden die Ausgänge aller Kanäle angezeigt.
 
-### Voice Call
+### Sprachanruf
 
-[![Version badge](https://img.shields.io/badge/Beta-purple.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Beta-purple.svg)] ({{config.site_url}})
 
-This section allows you to choose the language and voice for testing the voice calls from Interaction Panel.
+In diesem Abschnitt können Sie die Sprache und die Stimme auswählen, um die Sprachanrufe aus dem Interaktionsbereich zu testen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-voice-settings.png" width="100%" />
 </figure>
 
 ### Playbooks
-This section lets you configure the Playbook executions in the Interaction Panel.
+In diesem Abschnitt können Sie die Playbook-Ausführungen im Interaktionsbereich konfigurieren.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-playbook.png" width="100%" />
 </figure>
 
-#### Repeat
-Turning this feature on will repeat executing the selected Playbook over and over again.
+#### Wiederholen
+Wenn Sie diese Funktion aktivieren, wird das ausgewählte Playbook immer wieder ausgeführt.
 
-#### Delay
-Time (in milliseconds) to wait between each Playbook Step execution.
+#### Verzögerung
+Zeit (in Millisekunden), die zwischen der Ausführung der einzelnen Playbookschritte gewartet werden soll.
 
-### General
+### Allgemeines
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-general.png" width="100%" />
 </figure>
 
-#### Auto-move Flow Editor
+#### Automatisches Verschieben des Flow-Editors
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.27.0-blue.svg)] ({{config.site_url}})
 
-If turned on, based on the Interaction Panel outputs, the Flow Editor will automatically move and center the Flow node that was last executed. If the last triggered node belongs to a different Flow, other than the one that is currently open in the editor, then the Flow of the last triggered node will be opened automatically and the node will be centered.
+Wenn diese Option aktiviert ist, verschiebt und zentriert der Flow-Editor basierend auf den Ausgaben des Interaktionsbereichs automatisch den zuletzt ausgeführten Flow-Knoten. Wenn der letzte ausgelöste Knoten zu einem anderen Flow gehört als dem, der derzeit im Editor geöffnet ist, wird der Flow des zuletzt ausgelösten Knotens automatisch geöffnet und der Knoten wird zentriert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-follow-flow-node.gif" width="100%" />
 </figure>
 
-!!! note
-    Turning this setting on will automatically turn off and disable **Auto-switch Target Flow Selection** setting.
+!!! Anmerkung
+    Wenn Sie diese Einstellung aktivieren, wird die Einstellung "Ziel-Flow-Auswahl automatisch wechseln" automatisch deaktiviert und deaktiviert.
 
-#### Auto-switch Target Flow Selection
-When this setting is turned on, the Flow selection in the Interaction Panel automatically switches to the Flow opened in the Flow Editor. 
+#### Automatisches Umschalten der Zielflussauswahl
+Wenn diese Einstellung aktiviert ist, wechselt die Flow-Auswahl im Interaktionsbereich automatisch zu dem Flow, der im Flow-Editor geöffnet ist. 
 
-### Input
+### Eingabe
 
-Under this section, you can turn on **Show data input** toggle to enable the **Data Input** field for Chat input mode in Interaction Panel.
-
-<figure>
+In diesem Abschnitt können Sie den Schalter **Dateneingabe anzeigen** aktivieren, um das Feld **Dateneingabe** für den Chat-Eingabemodus im Interaktionsbereich zu aktivieren.<figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/interaction-panel-setting-input.png" width="100%" />
-</figure>
+</figure></organization-2-id></organization-1-id>

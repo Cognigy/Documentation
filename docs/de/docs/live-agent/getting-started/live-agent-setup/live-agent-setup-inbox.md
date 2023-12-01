@@ -1,57 +1,57 @@
 ---
-title: "Inbox Setup" 
-slug: "live-agent-setup-inbox" 
-hidden: false 
+title: "Posteingang einrichten" 
+Slug: "Live-Agent-Setup-Posteingang" 
+ausgeblendet: false 
 ---
 
-# Set up the Inbox for Live Agent
+# Einrichten des Posteingangs für Live Agent
 
-After [setting up Live Agent for your organization](live-agent-setup-org.md), configure your default Live Agent Inbox.
+Konfigurieren Sie nach [Einrichten von Live Agent für Ihre Organisation](live-agent-setup-org.md) Ihren standardmäßigen Live Agent-Posteingang.
 
-## Agent Settings
+## Agenten-Einstellungen
 
-To create a new Inbox for the Agent, follow these steps:
+Gehen Sie folgendermaßen vor, um einen neuen Posteingang für den Agenten zu erstellen:
 
-1. In the Cognigy.AI interface, open an existing [Agent](../../../ai/resources/agents/agents.md).
-2. In the left-side menu of the Agent, click **Manage > Settings**.
-3. Scroll down and find **Live Agent Settings**.
-4. Click **Create Project Inbox**.
+1. Öffnen Sie in der Cognigy.AI Schnittstelle einen vorhandenen [Agent](.. /.. /.. /ai/resources/agents/agents.md).
+2. Klicken Sie im Menü auf der linken Seite des Agenten auf **> Einstellungen verwalten**.
+3. Scrollen Sie nach unten und suchen Sie nach **Live Agent-Einstellungen**.
+4. Klicken Sie auf **Projekteingang erstellen**.
 
-Once the Inbox is created, the **Default Inbox ID** button will be disabled.
+Sobald der Posteingang erstellt wurde, wird die Schaltfläche **Standard-Posteingangs-ID** deaktiviert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-with-inbox-id.png" width="100%" />
-  <figcaption>Inbox already created for the Agent</figcaption>
+  <figcaption>Posteingang, der bereits für den Agenten erstellt wurde</figcaption>
 </figure>
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Create Project Inbox disabled
+### Projekteingang erstellen deaktiviert
 
-The **Create Project Inbox** button could also be disabled for the following reasons:
+Die Schaltfläche **Projekteingang erstellen** kann auch aus folgenden Gründen deaktiviert werden:
 
-* You do not have the Cognigy Live Agent feature enabled.
-* The organization does not have a Live Agent account set up.
-* You do not have permissions to create an Inbox for the Agent.
+* Sie haben die Cognigy Live Agent-Funktion nicht aktiviert.
+* Die Organisation hat kein Live Agent-Konto eingerichtet.
+* Sie sind nicht berechtigt, einen Posteingang für den Agenten zu erstellen.
 
-**Example 1**
+**Beispiel 1**
 
-The Cognigy Live Agent feature is not enabled, or a Live Agent account is not set up at the organizational level.
+Die Cognigy Live Agent-Funktion ist nicht aktiviert, oder es ist kein Live Agent-Konto auf Organisationsebene eingerichtet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-settings-not-configured.png" width="100%"/>
 </figure>
 
-**Example 2**
+**Beispiel 2**
 
-You don't have permissions to create an Inbox for Live Agent.
+Sie verfügen nicht über die Berechtigungen, einen Posteingang für Live Agent zu erstellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/cognigy-live-agent/images/project-wide-live-agent-setting-no-permissions.png" width="100%"/>
 </figure>
 
-If you have both **Theming** enabled and the Cognigy Live Agent feature disabled, The **Live Agent Settings** section on both the **Organisation Details** and **Agent Settings** pages will not be displayed.
+Wenn Sie sowohl das **Theming** als auch die Cognigy Live Agent-Funktion deaktiviert haben, wird der Abschnitt **Live Agent-Einstellungen** auf den Seiten **Organisationsdetails** und **Agenteneinstellungen** nicht angezeigt.
 
-## What's Next?
+## Wie geht es weiter?
 
-Now you need to set up a [Handover](live-agent-setup-handover.md) to Live Agent.
+Jetzt müssen Sie eine [Übergabe](live-agent-setup-handover.md) an Live Agent einrichten.

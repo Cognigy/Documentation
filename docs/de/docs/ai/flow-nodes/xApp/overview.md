@@ -1,24 +1,24 @@
 ---
- title: "xApps" 
- slug: "overview" 
- hidden: false 
+ Titel: "xApps" 
+ Schnecke: "Übersicht" 
+ ausgeblendet: false 
 ---
 
-# xApp Flow Nodes
+# xApp-Flow-Knoten
 
 {! _includes/ai/xApp/pricing.md !}
 
-The xApp Flow Nodes allow creating xApps, flexible micro-web applications for customer self-service. You can build the actual xApp Pages by yourself in various ways, for example, by providing HTML code or by specifying an Adaptive Card in JSON format.
+Die xApp Flow Nodes ermöglichen die Erstellung von xApps, flexiblen Micro-Web-Anwendungen für den Self-Service von Kunden. Sie können die eigentlichen xApp-Seiten auf verschiedene Weise selbst erstellen, z. B. durch Bereitstellen von HTML-Code oder durch Angeben einer adaptiven Karte im JSON-Format.
 
-Cognigy.AI supports the following Nodes:
+Cognigy.AI unterstützt die folgenden Nodes:
 
- - [xApp: Init Session](init-xApp-session.md)
- - [xApp: Get Session PIN](get-xApp-session-PIN.md)
- - [xApp: Show HTML](set-html-xApp-state.md)
- - [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
+- [xApp: Init-Sitzung](init-xApp-session.md)
+ - [xApp: Sitzungs-PIN abrufen](get-xApp-session-PIN.md)
+ - [xApp: HTML anzeigen](set-html-xApp-state.md)
+ - [xApp: Adaptive Karte anzeigen](set-AdaptiveCard-xApp-state.md)
    
-## More Information
+## Mehr Informationen
 
-- [xApps](../../xApp/overview.md)
-- [xApp Tokens](../../xApp/tokens.md)
-- [xApp Flow API](../../xApp/api.md)
+- [xApps](.. /.. /xApp/overview.md)
+- [xApp-Token](.. /.. /xApp/tokens.md)
+- [xApp Flow-API](.. /.. /xApp/api.md)

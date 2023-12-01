@@ -1,19 +1,17 @@
 ---
-title: "Set Session Config"
+title: "Sitzungskonfiguration festlegen"
 slug: "set-session-config"
-hidden: false
+ausgeblendet: false
 ---
 
-# Set Session Config
+# Sitzungskonfiguration festlegen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/set-session-config.png" width="80%" />
-  <figcaption>Voice Gateway Set Session Config Node</figcaption>
+  <figcaption>Voice Gateway Sitzungskonfigurationsknoten festlegen</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Set Session Config Node configures the Voice Gateway session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
+## Beschreibung<div class="divider"></div>Der Knoten Sitzungskonfiguration festlegen konfiguriert die Voice-Gateway-Sitzung. Alle hier eingestellten Parameter sind für den Rest der Sitzung gültig, es sei denn, sie werden entweder direkt oder durch Aktivitätsparameter überschrieben.
 
-!!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details](parameter-details.md) page.
+!!! Hinweis "Dieser Knoten unterstützt Aktivitätsparameter"
+    Weitere Informationen zu Aktivitätsparametern finden Sie auf unserer Seite [Parameterdetails](parameter-details.md).

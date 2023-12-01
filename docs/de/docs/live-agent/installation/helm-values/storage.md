@@ -1,94 +1,94 @@
 ---
- title: "Storage" 
- slug: "storage" 
- hidden: false 
+ Titel: "Lagerung" 
+ slug: "Speicher" 
+ ausgeblendet: false 
 ---
-# Storage
+# Lagerung
 
-Live Agent uses [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) for storing attachments. The default storage option is the local storage on your server, or with an NFS server (preferred way) and CDNs from any cloud provider such as AWS S3, Microsoft Azure and Google Cloud, etc. See below for the additional values required.
+Live Agent verwendet [active storage](https://edgeguides.rubyonrails.org/active_storage_overview.html) zum Speichern von Anhängen. Die Standardspeicheroption ist der lokale Speicher auf Ihrem Server oder mit einem NFS-Server (bevorzugter Weg) und CDNs von einem beliebigen Cloud-Anbieter wie AWS S3, Microsoft Azure und Google Cloud usw. Nachfolgend finden Sie die erforderlichen zusätzlichen Werte.
 
-## Using a NFS Server
+## Verwenden eines NFS-Servers
 
 ### AWS
 
-When using AWS, [an existing Elastic File System or EFS must be setup](https://aws.amazon.com/efs/). Based on your EFS, fill in the following values:
+Bei Verwendung von AWS muss [ein vorhandenes Elastic File System oder EFS eingerichtet werden](https://aws.amazon.com/efs/). Geben Sie basierend auf Ihrem EFS die folgenden Werte ein:
 
-| Name                               | Type   | Value       | 
+| Bezeichnung: | Typ | Wert | 
 |------------------------------------|--------|-------------| 
-| `storage.cloudProvider`            | string | `"aws"`     |
-| `storage.fileSystemId`             | string | `""`        |
-| `storage.provisionerName`          | string | `""`        |
-| `storage.region`                   | string | `""`        |
-| `configmap.ACTIVE_STORAGE_SERVICE` | string | `"local"`   |
+| 'storage.cloudProvider' | Zeichenfolge | '"aws"' |
+| 'storage.fileSystemId' | Zeichenfolge | '""'        |
+| 'storage.provisionerName' | Zeichenfolge | '""'        |
+| 'storage.region' | Zeichenfolge | '""'        |
+| 'configmap. ACTIVE_STORAGE_SERVICE' | Zeichenfolge | '"lokal"' |
 
 ### Azure
 
-When using Azure, a Network File System or NFS server must be set up. Based on your NFS server, fill in the following values:
+Bei der Verwendung von Azure muss ein Netzwerkdateisystem oder NFS-Server eingerichtet werden. Geben Sie basierend auf Ihrem NFS-Server die folgenden Werte ein:
 
-| Name                               | Type   | Value     | 
+| Bezeichnung: | Typ | Wert | 
 |------------------------------------|--------|-----------| 
-| `storage.size`                     | string | `"10Gi"`  |
-| `storage.cloudProvider`            | string | `"azure"` |
-| `storage.nfsServer`                | string | `""`      |
-| `configmap.ACTIVE_STORAGE_SERVICE` | string | `"local"` |
+| 'storage.size' | Zeichenfolge | '"10Gi"' |
+| 'storage.cloudProvider' | Zeichenfolge | '"azurblau"' |
+| 'storage.nfsServer' | Zeichenfolge | '""'      |
+| 'configmap. ACTIVE_STORAGE_SERVICE' | Zeichenfolge | '"lokal"' |
 
-## Using a CDN
+## Verwenden eines CDN
 
-Set the following value to `"cdn"` to use a Content Delivery network or CDN, and fill in the remaining values based on the provider that you want to use.
+Legen Sie den folgenden Wert auf '"cdn"' fest, um ein Content Delivery Network oder CDN zu verwenden, und geben Sie die restlichen Werte basierend auf dem Anbieter ein, den Sie verwenden möchten.
 
-| Name                    | Type   | Value   | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------|--------|---------| 
-| `storage.cloudProvider` | string | `"cdn"` |
+| 'storage.cloudProvider' | Zeichenfolge | '"CDN"' |
 
-[//]: <> (Commented for now as this is for thought for assets in the live chat widget attachments from Chatwoot)
-[//]: <> (## Using CDN for asset delivery)
-[//]: <> (If you have a high traffic website, we recommend to setup CDN for your asset delivery.)
+[//]: <> (Vorerst kommentiert, da dies für Assets in den Live-Chat-Widget-Anhängen von Chatwoot gedacht ist)
+[//]: <> (## Verwenden von CDN für die Asset-Bereitstellung)
+[//]: <> (Wenn Sie eine stark frequentierte Website haben, empfehlen wir Ihnen, CDN für Ihre Asset-Bereitstellung einzurichten.)
 
-[//]: <> (| Name            | Type | Value | )
+[//]: <> (| Bezeichnung: | Typ | Wert | )
 [//]: <> (| --------------- | ----- | ---- | )
-[//]: <> (| `configmap.ASSET_CDN_HOST` | string | `"<distribution>.cloudfront.net"` |)
+[//]: <> (| 'configmap. ASSET_CDN_HOST' | Zeichenfolge | '"<distribution>.cloudfront.net"' |)
 
-### Using Amazon S3
+### Verwenden von Amazon S3
 
-You can start by creating an [S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html)
-and [IAM user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
-to configure the following details.
+Sie können beginnen, indem Sie einen [S3-Bucket](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) erstellen
+und [IAM-Benutzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
+, um die folgenden Details zu konfigurieren.
 
-| Name                               | Type   | Value      | 
+| Bezeichnung: | Typ | Wert | 
 |------------------------------------|--------|------------| 
-| `configmap.ACTIVE_STORAGE_SERVICE` | string | `"amazon"` |
-| `configmap.S3_BUCKET_NAME`         | string | `""`       |
-| `configmap.AWS_ACCESS_KEY_ID`      | string | `""`       |
-| `configmap.AWS_SECRET_ACCESS_KEY`  | string | `""`       |
-| `configmap.AWS_REGION`             | string | `""`       |
+| 'configmap. ACTIVE_STORAGE_SERVICE' | Zeichenfolge | '"Amazonas"' |
+| 'configmap. S3_BUCKET_NAME' | Zeichenfolge | '""'       |
+| 'configmap. AWS_ACCESS_KEY_ID' | Zeichenfolge | '""'       |
+| 'configmap. AWS_SECRET_ACCESS_KEY' | Zeichenfolge | '""'       |
+| 'configmap. AWS_REGION' | Zeichenfolge | '""'       |
 
-A secret must be set up for setting the `AWS_SECRET_ACCESS_KEY` environment variable.
+Für das Festlegen der Umgebungsvariablen "AWS_SECRET_ACCESS_KEY" muss ein geheimer Schlüssel eingerichtet werden.
 
-| Name                                          | Type   | Value                     | 
+| Bezeichnung: | Typ | Wert | 
 |-----------------------------------------------|--------|---------------------------| 
-| `storage.secretAccessKey.environmentVariable` | string | `"AWS_SECRET_ACCESS_KEY"` |
-| `storage.secretAccessKey.existingSecret`      | string | `"<secret-name>"`         |
-| `storage.secretAccessKey.existingSecretKey`   | string | `"<secret-key>"`          |
+| 'storage.secretAccessKey.environmentVariable' | Zeichenfolge | '"AWS_SECRET_ACCESS_KEY"' |
+| 'storage.secretAccessKey.existingSecret' | Zeichenfolge | '"<secret-name>"' |
+| 'storage.secretAccessKey.existingSecretKey' | Zeichenfolge | '"<secret-key>"' |
 
-### Using Google GCS
+### Verwendung von Google GCS
 
-| Name                               | Type   | Value      | 
+| Bezeichnung: | Typ | Wert | 
 |------------------------------------|--------|------------| 
-| `configmap.ACTIVE_STORAGE_SERVICE` | string | `"google"` |
-| `configmap.GCS_PROJECT`            | string | `""`       |
-| `configmap.GCS_BUCKET`             | string | `""`       |
+| 'configmap. ACTIVE_STORAGE_SERVICE' | Zeichenfolge | '"Google"' |
+| 'configmap. GCS_PROJECT' | Zeichenfolge | '""'       |
+| 'configmap. GCS_BUCKET' | Zeichenfolge | '""'       |
 
-A secret must be set up for setting the `GCS_CREDENTIALS` environment variable. 
+Für das Festlegen der Umgebungsvariablen "GCS_CREDENTIALS" muss ein geheimer Schlüssel eingerichtet werden. 
 
-| Name                                          | Type   |Value               | 
+| Bezeichnung: | Typ |Wert | 
 |-----------------------------------------------|--------|--------------------| 
-| `storage.secretAccessKey.environmentVariable` | string | `"GCS_CREDENTIALS"`|
-| `storage.secretAccessKey.existingSecret`      | string | `"<secret-name>"`  |
-| `storage.secretAccessKey.existingSecretKey`   | string | `"<secret-key>"`   |
+| 'storage.secretAccessKey.environmentVariable' | Zeichenfolge | '"GCS_CREDENTIALS"'|
+| 'storage.secretAccessKey.existingSecret' | Zeichenfolge | '"<secret-name>"' |
+| 'storage.secretAccessKey.existingSecretKey' | Zeichenfolge | '"<secret-key>"' |
 
-The value of the `GCS_CREDENTIALS` should be a json formatted string, containing the following keys.
+Der Wert von 'GCS_CREDENTIALS' sollte eine JSON-formatierte Zeichenfolge sein, die die folgenden Schlüssel enthält.
 
-```bash
+'''bash
 {
   "type": "service_account",
   "project_id" : "",
@@ -101,54 +101,54 @@ The value of the `GCS_CREDENTIALS` should be a json formatted string, containing
   "auth_provider_x509_cert_url" : "",
   "client_x509_cert_url" : ""
 }
-```
+'''
 
-### Using Microsoft Azure
+### Verwenden von Microsoft Azure
 
-| Name                                   | Type   | Value         | 
+| Bezeichnung: | Typ | Wert | 
 |----------------------------------------|--------|---------------| 
-| `configmap.ACTIVE_STORAGE_SERVICE`     | string | `"microsoft"` |
-| `configmap.AZURE_STORAGE_ACCOUNT_NAME` | string | `""`          |
-| `configmap.AZURE_STORAGE_CONTAINER`    | string | `""`          |
+| 'configmap. ACTIVE_STORAGE_SERVICE' | Zeichenfolge | '"Microsoft"' |
+| 'configmap. AZURE_STORAGE_ACCOUNT_NAME' | Zeichenfolge | '""'          |
+| 'configmap. AZURE_STORAGE_CONTAINER' | Zeichenfolge | '""'          |
 
-A secret must be set up for setting the `AZURE_STORAGE_ACCESS_KEY` environment variable. 
+Für das Festlegen der Umgebungsvariablen "AZURE_STORAGE_ACCESS_KEY" muss ein geheimer Schlüssel eingerichtet werden. 
 
-| Name                                          | Type   | Value                        | 
+| Bezeichnung: | Typ | Wert | 
 |-----------------------------------------------|--------|------------------------------| 
-| `storage.secretAccessKey.environmentVariable` | string | `"AZURE_STORAGE_ACCESS_KEY"` |
-| `storage.secretAccessKey.existingSecret`      | string | `"<secret-name>"`            |
-| `storage.secretAccessKey.existingSecretKey`   | string | `"<secret-key>"`             |
+| 'storage.secretAccessKey.environmentVariable' | Zeichenfolge | '"AZURE_STORAGE_ACCESS_KEY"' |
+| 'storage.secretAccessKey.existingSecret' | Zeichenfolge | '"<secret-name>"' |
+| 'storage.secretAccessKey.existingSecretKey' | Zeichenfolge | '"<secret-key>"' |
 
-### Using Amazon S3 Compatible Service
+### Verwenden eines Amazon S3-kompatiblen Service
 
-To use an S3 compatible service such as [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/#configure-a-client), Minio etc..
+Um einen S3-kompatiblen Dienst wie [DigitalOcean Spaces](https://www.digitalocean.com/docs/spaces/resources/s3-sdk-examples/#configure-a-client), Minio usw. zu verwenden.
 
-| Name                               | Type   | Value                                   | 
+| Bezeichnung: | Typ | Wert | 
 |------------------------------------|--------|-----------------------------------------| 
-| `configmap.ACTIVE_STORAGE_SERVICE` | string | `"s3_compatible"`                       |
-| `configmap.STORAGE_BUCKET_NAME`    | string | `""`                                    |
-| `configmap.STORAGE_ACCESS_KEY_ID`  | string | `""`                                    |
-| `configmap.STORAGE_REGION`         | string | `"nyc3"`                                |
-| `configmap.STORAGE_ENDPOINT`       | string | `"https://nyc3.digitaloceanspaces.com"` |
+| 'configmap. ACTIVE_STORAGE_SERVICE' | Zeichenfolge | '"s3_compatible"' |
+| 'configmap. STORAGE_BUCKET_NAME' | Zeichenfolge | '""'                                    |
+| 'configmap. STORAGE_ACCESS_KEY_ID' | Zeichenfolge | '""'                                    |
+| 'configmap. STORAGE_REGION' | Zeichenfolge | '"NYC3"' |
+| 'configmap. STORAGE_ENDPOINT' | Zeichenfolge | '"https://nyc3.digitaloceanspaces.com"' |
 
-A secret must be set up for setting the `STORAGE_SECRET_ACCESS_KEY` environment variable. 
+Für das Festlegen der Umgebungsvariablen "STORAGE_SECRET_ACCESS_KEY" muss ein geheimer Schlüssel eingerichtet werden. 
 
-| Name                                          | Type   | Value                         | 
+| Bezeichnung: | Typ | Wert | 
 |-----------------------------------------------|--------|-------------------------------| 
-| `storage.secretAccessKey.environmentVariable` | string | `"STORAGE_SECRET_ACCESS_KEY"` |
-| `storage.secretAccessKey.existingSecret`      | string | `"<secret-name>"`             |
-| `storage.secretAccessKey.existingSecretKey`   | string | `"<secret-key>"`              |
+| 'storage.secretAccessKey.environmentVariable' | Zeichenfolge | '"STORAGE_SECRET_ACCESS_KEY"' |
+| 'storage.secretAccessKey.existingSecret' | Zeichenfolge | '"<secret-name>"' |
+| 'storage.secretAccessKey.existingSecretKey' | Zeichenfolge | '"<secret-key>"' |
 
-Set force_path_style to true if using minio.
+Setzen Sie force_path_style auf true, wenn Sie minio verwenden.
 
-| Name                                 | Type | Value  | 
+| Bezeichnung: | Typ | Wert | 
 |--------------------------------------|------|--------| 
-| `configmap.STORAGE_FORCE_PATH_STYLE` | bool | `true` |
+| 'configmap. STORAGE_FORCE_PATH_STYLE' | bool | 'wahr' |
 
-## Using a single PVC (Not recommended)
+## Verwendung eines einzelnen PVC (nicht empfohlen)
 
-A local Persistent Volume Claim (PVC) is available for storage. However, it is not recommended for scaling up deployments as there is only one PVC per deployment. 
-| Name                    | Type           | Value      | 
+Für die Speicherung steht ein lokaler Persistent Volume Claim (PVC) zur Verfügung. Es wird jedoch nicht für das zentrale Hochskalieren von Bereitstellungen empfohlen, da nur ein PVC pro Bereitstellung vorhanden ist. 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------|----------------|------------| 
-| `storage.cloudProvider` | string         | `"none"`   |
-| `storage.size`          | string         | `"10Gi"`   |
+| 'storage.cloudProvider' | Zeichenfolge | '"keine"' |
+| 'storage.size' | Zeichenfolge | '"10Gi"' |</secret-key></secret-name></secret-key></secret-name></secret-key></secret-name></secret-key></secret-name></distribution>

@@ -1,21 +1,19 @@
 ---
- title: "Add Lexicon Keyphrase" 
- slug: "add-lexicon-keyphrase" 
- hidden: false 
+ title: "Lexikon-Schlüsselphrase hinzufügen" 
+ slug: "Lexikon-Schlüsselphrase hinzufügen" 
+ ausgeblendet: false 
 ---
-# Add Lexicon Keyphrase
+# Lexikon-Schlüsselphrase hinzufügen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/add-lexicon-keyphrase.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)  from within your Flow using [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
+## Beschreibung<div class="divider"></div>Verwenden Sie den Knoten Lexikon-Schlüsselphrase hinzufügen, um neue Schlüsselwörter zu [Lexicons]({{config.site_url}}ai/resources/build/lexicons/) in Ihrem Flow mit [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) hinzuzufügen.
 
-| Parameter   | Type                         | Description                                   |
+| Parameter | Typ | Beschreibung |
 |-------------|------------------------------|-----------------------------------------------|
-| LexiconName | CognigyScript                | TThe name of the Lexicon you want to update   |
-| Keyphrase   | CognigyScript                | The Keyphrase you want to add to the Lexicon  |
-| Tags        | String, one tag per line     | Tags you want to attach to the Keyphrase      |
-| Synonyms    | String, one synonym per line | Synonyms you want to attach to the Keyphrase. |
+| LexikonName | CognigyScript | Der Name des Lexikons, das Sie aktualisieren möchten |
+| Schlüsselwort | CognigyScript | Die Schlüsselphrase, die Sie dem Lexikon hinzufügen möchten |
+| Schlagwörter | String, ein Tag pro Zeile | Tags, die Sie an die Schlüsselphrase |
+| Synonyme | Zeichenfolge, ein Synonym pro Zeile | Synonyme, die Sie an die Schlüsselphrase anhängen möchten. |

@@ -1,83 +1,64 @@
 ---
- title: "OData Analytics Endpoint" 
- slug: "odata-analytics-endpoint" 
- hidden: false 
+ Titel: "OData Analytics-Endpunkt" 
+ Slug: "OData-Analytics-Endpunkt" 
+ ausgeblendet: false 
 ---
-# OData Analytics Endpoint
+# OData Analytics-Endpunkt
 
-Cognigy.AI exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoint allows you to retrieve all raw data out of Cognigy.AI by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
+Cognigy.AI macht einen OData v4-Analyseendpunkt zum Abrufen von Analysedatensätzen verfügbar. [OData] (https://www.odata.org/), der beste Weg zu REST, ist ein leistungsstarkes API-Framework. Mit dem OData-Endpunkt können Sie alle Rohdaten mithilfe von GET-Anforderungen aus Cognigy.AI abrufen. Es deckt alle Ihre Anforderungen an Unternehmensanalysen ab, um fein abgestufte Abfragen in Ihren Tabellenkalkulationen durchzuführen oder umfangreiche Dashboards für Ihre Bots mit Ihrem bevorzugten Datenvisualisierungstool zu erstellen.
 
-Note that the Cognigy OData Endpoint only supports `GET` requests and does not support any other request types, such as `PATCH`, `DELETE`, or `POST`.
-
-<blockquote class="callout callout_info" theme="📘">
+Beachten Sie, dass der Cognigy OData-Endpunkt nur "GET"-Anforderungen unterstützt und keine anderen Anforderungstypen wie "PATCH", "DELETE" oder "POST".<blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank" >Technical video "Analytics &amp; OData"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019467199-Cognigy-Sessions-Analytics-OData" target="_blank">Technisches Video "Analytics &amp; OData"</a>
       </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
+      <div class="callout-subtext">Sehen Sie sich diese Folge von Cognigy Sessions an, um einen technischen Einblick zu erhalten      </div>
    </div>
-</blockquote>
+</blockquote>## Verwendung und Authentifizierung<div class="divider"></div>Sie können eine Verbindung mit dem OData-Endpunkt herstellen, indem Sie Ihren [API-Schlüssel]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/) in der OData-URL auf Ihrem Server verwenden.
 
-## Usage and Authentication
+Eine OData-URL wird aus dem Dienststamm, der API-Version, der Sammlung und dem API-Schlüsselparameter wie folgt kombiniert:
 
-<div class="divider"></div>
+"https://<odata domain="">/<api-version>/<collection>?apikey=YOURAPIKEY'
 
-You can connect to the OData Endpoint using your [API Key]({{config.site_url}}ai/tools/user-menu/my-profile/#api-keys/) in the OData URL on your server.
+!!! Hinweis "OData-Domänenname"
+    Der OData-Endpunkt ist in einer anderen Domäne als Ihrer Cognigy-Benutzeroberflächendomäne verfügbar. Wenn Sie sich über [https://trial.cognigy.ai](https://trial.cognigy.ai) bei Cognigy anmelden, lautet Ihre OData-Domain [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
 
-An OData URL is combined of the service root, api version, the collection and api key parameter as follows:
+Auf unserem Testserver lautet die OData-Endpunkt-URL für die Analytics-Eingabesammlung beispielsweise "https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY" (wobei YOURAPIKEY durch Ihren jeweiligen API-Schlüssel ersetzt werden muss). Ersetzen Sie bei lokalen Installationen den Domänennamen "odata-trial.cognigy.ai" durch den Domänennamen, der für Ihre lokale Installation konfiguriert ist.
 
-`https://<odata domain>/<api-version>/<collection>?apikey=YOURAPIKEY`
+!!! Hinweis "Excel/Power BI"
+    Wenn Sie PowerBI oder Excel verwenden, werden Sie möglicherweise aufgefordert, sich zu authentifizieren. Wählen Sie einfach "Anonyme Authentifizierung".
 
-!!! note "OData Domain Name"
-    The OData Endpoint is available on a different domain to your Cognigy User Interface domain. If you log in to Cognigy via [https://trial.cognigy.ai](https://trial.cognigy.ai), your OData domain will be [https://odata-trial.cognigy.ai](https://odata-trial.cognigy.ai).
+## Endpunkt-Version<div class="divider"></div>=== "Version 2.3"
 
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.31.0-blue.svg)] ({{config.site_url}})
 
-For example, on our trial server, the OData Endpoint URL for the Analytics Inputs Collection is `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY` (where YOURAPIKEY must be replaced with your respective API Key). For On-Prem installations replace the `odata-trial.cognigy.ai` domain name with the domain name configured for your local installation.
+Die aktuelle Version des OData-Endpunkts ist "v2.3". In dieser Version stehen die folgenden OData-Sammlungen zur Verfügung:
 
-!!! note "Excel/Power BI"
-    When using PowerBI or Excel, you might be asked to authenticate. Simply choose `anonymous authentication`.
+- [Analytics](#analytics) ('/Analytics')
+    - [Unterhaltungen](#conversations) ('/Unterhaltungen')
+    - [Schritte](#steps) ('/Schritte')
+    - [AusgeführteSchritte](#executedsteps) ('/AusgeführteSchritte')
+    - [Sitzungen](#sessions) ('/Sitzungen')
+    - [LiveAgentEscalations](#liveagentescalations) ('/LiveAgentEscalations')
 
-## Endpoint Version
+Die URL für den Zugriff auf den V2.3-OData-Endpunkt lautet wie folgt:
+    'https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY'
 
-<div class="divider"></div>
+=== "Version 2.2 und früher"
+    !!! Warnung "Deprecation of OData v2.0 - 2.2"
+        Die OData-Endpunktversionen 2.0 bis 2.2 wurden veraltet und in Cognigy.AI "v4.48.0" entfernt.
 
-=== "Version 2.3"
+- [Inputs](#analytics) ('/Inputs') – umbenannt in Analytics in v2.3 Endpoint
+    - [ChatHistory](#conversations) ('/ChatHistory') – umbenannt in Conversations in v2.3 endpoint
+    - [Schritte](#steps) ('/Schritte')
+    - [AusgeführteSchritte](#executedsteps) ('/AusgeführteSchritte')
+    - [Conversations](#sessions) ('/Conversations') – umbenannt in Sessions in v2.3 endpoint
 
-    [![Version badge](https://img.shields.io/badge/Added in-v4.31.0-blue.svg)]({{config.site_url}})
+Die URL für den Zugriff auf die V2. Der X-OData-Endpunkt lautet wie folgt:
+    "https://<hostname>/v2. X/<collection>?apikey=YOURAPIKEY'
 
-    The current version of the OData Endpoint is `v2.3`. In this version, the following OData collections are available:
-
-    - [Analytics](#analytics) (`/Analytics`)
-    - [Conversations](#conversations) (`/Conversations`)
-    - [Steps](#steps) (`/Steps`)
-    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-    - [Sessions](#sessions) (`/Sessions`)
-    - [LiveAgentEscalations](#liveagentescalations) (`/LiveAgentEscalations`)
-
-    The URL for accessing the V2.3 OData Endpoint is as follows:
-    `https://<hostname>/v2.3/<collection>?apikey=YOURAPIKEY`
-
-=== "Version 2.2 and Earlier"
-    !!! warning "Deprecation of OData v2.0 - 2.2"
-        OData Endpoint versions 2.0 - 2.2 were deprecated and removed in Cognigy.AI `v4.48.0`.
-
-    - [Inputs](#analytics) (`/Inputs`) - Renamed to Analytics in V2.3 Endpoint
-    - [ChatHistory](#conversations) (`/ChatHistory`) - Renamed to Conversations in V2.3 Endpoint
-    - [Steps](#steps) (`/Steps`)
-    - [ExecutedSteps](#executedsteps) (`/ExecutedSteps`)
-    - [Conversations](#sessions) (`/Conversations`) - Renamed to Sessions in V2.3 Endpoint
-
-    The URL for accessing the V2.X OData Endpoint is as follows:
-    `https://<hostname>/v2.X/<collection>?apikey=YOURAPIKEY`
-
-## Querying
-
-<div class="divider"></div>
-
-The Endpoint supports following the OData Query Language operators:
+## Abfragen<div class="divider"></div>Der Endpunkt unterstützt die folgenden OData-Abfragesprachenoperatoren:
 
 - $filter
 - $skip
@@ -86,383 +67,371 @@ The Endpoint supports following the OData Query Language operators:
 - $count
 - $select
 
-!!! warning "$count and Excel or PowerBI"
-    Microsoft Excel and PowerBI do not support for the $count query. Use Postman or other options.
+!!! Warnung "$count und Excel oder PowerBI"
+    Microsoft Excel und PowerBI unterstützen die $count Abfrage nicht. Verwenden Sie Postman oder andere Optionen.
 
-## Example Requests
+## Beispiel-Anfragen
 
 === "OData 2.3"
 
-    | Request Description                                                                                 | OData 2.3 Request                                                                                                                                          |
+| Beschreibung anfordern | OData 2.3-Anforderung |
     | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | Returns total count of Anayltics records (Not Supported in Excel or PowerBI)                        | `https://odata-trial.cognigy.ai/v2.3/Analytics/$count?apikey=YOURAPIKEY`                                                                                   |
-    | Returns all Analytics records for the given APIKey                                                  | `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`                                                                                          |
-    | Returns the first 10 Analytics records                                                              | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$top=10&apikey=YOURAPIKEY`                                                                                 |
-    | Returns the top 5 Analytics records where executionTime is less than 50ms, ordered by executionTime | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`                               |
-    | Returns all Analytics records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
-    | Returns all Analytics records between two dates, for example, 1st Jan 2021 and 1st July 2021        | `https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY` |
+    | Gibt die Gesamtanzahl der Analysedatensätze zurück (wird in Excel oder PowerBI nicht unterstützt) | "https://odata-trial.cognigy.ai/v2.3/Analytics/$count?apikey=YOURAPIKEY" |
+    | Gibt alle Analytics-Datensätze für den angegebenen APIKey | "https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY" |
+    | Gibt die ersten 10 Analytics-Datensätze zurück | "https://odata-trial.cognigy.ai/v2.3/Analytics/?$top=10&apikey=YOURAPIKEY" |
+    | Gibt die 5 wichtigsten Analytics-Datensätze zurück, bei denen executionTime weniger als 50 ms beträgt, sortiert nach executionTime | 'https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=executionTime lt 50&$top=5&$orderby=Ausführungszeit&apikey=YOURAPIKEY' |
+    | Gibt alle Analytics-Datensätze für einen bestimmten Cognigy.AI-Agent zurück, gefiltert nach ProjectId | 'https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY' |
+    | Gibt alle Analytics-Datensätze zwischen zwei Datumsangaben zurück, z. B. 1. Januar 2021 und 1. Juli 2021 | 'https://odata-trial.cognigy.ai/v2.3/Analytics/?$filter=timestamp gt 2021-01-01T00:00:00.000Z und Zeitstempel lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY' |
 
-=== "OData 2.2 and earlier"
+=== "OData 2.2 und früher"
 
-    | Request Description                                                                              | OData 2.2 Request                                                                                                                                       |
+| Beschreibung anfordern | OData 2.2-Anforderung |
     | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | Returns total count of Inputs records (Not Supported in Excel or PowerBI)                        | `https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY`                                                                                   |
-    | Returns all Inputs records for the given APIKey                                                  | `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`                                                                                          |
-    | Returns the first 10 Inputs records                                                              | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY`                                                                                 |
-    | Returns the top 5 Inputs records where executionTime is less than 50ms, ordered by executionTime | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=executionTime&apikey=YOURAPIKEY`                               |
-    | Returns all Inputs records for a specific Cognigy.AI Agent filtered by ProjectId                 | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY`                                                        |
-    | Returns all Inputs records between two dates, for example, 1st Jan 2021 and 1st July 2021        | `https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z and timestamp lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY` |
+    | Gibt die Gesamtanzahl der Eingabedatensätze zurück (wird in Excel oder PowerBI nicht unterstützt) | "https://odata-trial.cognigy.ai/v2.2/Inputs/$count?apikey=YOURAPIKEY" |
+    | Gibt alle Inputs-Datensätze für den angegebenen APIKey | "https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY" |
+    | Gibt die ersten 10 Inputs-Datensätze zurück | "https://odata-trial.cognigy.ai/v2.2/Inputs/?$top=10&apikey=YOURAPIKEY" |
+    | Gibt die obersten 5 Eingabedatensätze zurück, bei denen executionTime weniger als 50 ms beträgt, sortiert nach executionTime | 'https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=executionTime lt 50&$top=5&$orderby=Ausführungszeit&apikey=YOURAPIKEY' |
+    | Gibt alle Eingabedatensätze für einen bestimmten Cognigy.AI-Agent zurück, gefiltert nach ProjectId | 'https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=projectId eq 'PROJECTID'&apikey=YOURAPIKEY' |
+    | Gibt alle Inputs-Datensätze zwischen zwei Datumsangaben zurück, z. B. 1. Januar 2021 und 1. Juli 2021 | 'https://odata-trial.cognigy.ai/v2.2/Inputs/?$filter=timestamp gt 2021-01-01T00:00:00.000Z und Zeitstempel lt 2021-07-01T00:00:00.000Z&apikey=YOURAPIKEY' |
 
-## Reference documentation
+## Referenz-Dokumentation
 
-For a full reference refer to the [extensive collection of resources at OData.org](https://www.odata.org/) and the [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
+Eine vollständige Referenz finden Sie in der [umfangreichen Sammlung von Ressourcen unter OData.org](https://www.odata.org/) und in der [Oasis OData URL Convention Documentation](http://docs.oasis-open.org/odata/odata/v4.0/odata-v4.0-part2-url-conventions.html).
 
-## Data Protection & Analytics
+## Datenschutz & Analytik<div class="divider"></div>Sie steuern und verwalten die im OData-Endpunkt verfügbaren Daten über das Einstellungsmenü des Agenten. Weitere Informationen finden Sie unter [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/):
 
-<div class="divider"></div>
+- Wenn Sie *Collect Analytics* deaktivieren, werden keine Analytics-Daten protokolliert oder sind in OData verfügbar.
 
-You control and manage the data available in the OData Endpoint via the agent settings menu. See [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/) for more details:
+- Wenn Sie *Sensible Analysen maskieren* aktivieren, werden die Felder *inputText* und *inputData* maskiert.
 
-- If you disable *Collect Analytics* no analytics data will be logged or available in OData.
+Darüber hinaus können Sie das Verhalten der Analyseprotokollierung innerhalb eines Flows steuern, indem Sie [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#blind-mode)-Knoten verwenden, die die in OData verfügbaren Analysedaten entsprechend Ihren Knoteneinstellungen deaktivieren oder maskieren.
 
-- If you enable *Mask Sensitive Analytics* the *inputText* and *inputData* fields will be masked.
+## Cognigy.AI OData-Sammlungen<div class="divider"></div>In diesem Abschnitt werden die Datentypen beschrieben, die in den OData-Auflistungen vorhanden sind, die vom OData-Endpunkt abgerufen werden können. Folgende Kollektionen stehen zur Verfügung:
 
-Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#blind-mode) nodes that will disable or mask analytics data available in OData according to your node settings.
+* [Analytik](#analytics)
+  * [Gespräche](#conversations)
+  * [Schritte](#steps)
+  * [AusgeführteSchritte](#executedsteps)
+  * [Sitzungen](#sessions)
 
-## Cognigy.AI OData Collections
+### Felder
 
-<div class="divider"></div>
+Jede Sammlung gibt Felder zurück und kann nach diesen gefiltert werden. Viele der OData-Datensatzfelder werden direkt aus den Ergebnissen des Eingabeobjekts abgerufen.
 
-This section details the data types that exist within the OData Collections that can be retrieved from the OData Endpoint. The following Collections are available:
+Siehe [hier]({{config.site_url}}ai/tools/interaction-panel/input/) für weitere Informationen darüber, was diese Variablen im Eingabeobjekt sind.
 
-  * [Analytics](#analytics)
-  * [Conversations](#conversations)
-  * [Steps](#steps)
-  * [ExecutedSteps](#executedsteps)
-  * [Sessions](#sessions)
+### Analytik
 
-### Fields
+**Beschreibung**
 
-Each collection will return, and can be filtered by, fields. Many of the OData record fields are retrieved directly from the input object results.
+Jedes Mal, wenn ein Kontakt eine Nachricht an einen Cognigy.AI Flow sendet, erstellt Cognigy.AI einen Analytics-Datensatz mit detaillierten Analyseprotokollen über die Interaktion. Jede Interaktion wird im Analyseendpunkt als einzelne Werbebuchung verfügbar gemacht. Daten, die in diese Sammlung geschrieben werden, werden am Ende der Flow-Ausführung festgeschrieben, daher ist es möglich, die in dieser Sammlung enthaltenen Daten mithilfe von [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) zu überschreiben.
 
-See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more information about what these variables in the input object are.
-
-### Analytics
-
-**Description**
-
-Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Analytics record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
-
-**Example Query**
+**Beispielabfrage**
 
 === "OData 2.3"
     
-    `https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.3/Analytics?apikey=YOURAPIKEY"
 
 === "OData 2.2"
     
-    `https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY`
+'https://odata-trial.cognigy.ai/v2.2/Inputs?apikey=YOURAPIKEY'
 
 === "OData 2.0"
     
-    `https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.0/Inputs?apikey=YOURAPIKEY"
 
-**Data Types**
+**Datentypen**
 
-When retrieving this collection, the endpoint will return the following fields:
+Beim Abrufen dieser Auflistung gibt der Endpunkt die folgenden Felder zurück:
 
-| Field Name         | Description                                                                                | Type     | Example                              |
+| Feldname | Beschreibung | Typ | Beispiel |
 | ------------------ | ------------------------------------------------------------------------------------------ | -------- | ------------------------------------ |
-| _id                | Unique analytics record ID                                                                 | String   | 5a91d194fde28b0011ce2423             |
-| organisation       | Name of your organisation                                                                  | String   | cognigy                              |
-| projectId          | Project ID                                                                                 | String   | 5a91d194fde28b0011ce2422             |
-| flowReferenceId    | ID of the Flow                                                                             | String   | 66ceb9cc-ac5b-4cdd-9f4b-8a48dfbb35d9 |
-| entrypoint         | The ID of the Project / Agent, or of a Snapshot when in use by the Endpoint                | String   | 621d3deb87016d3855ec0c92             |
-| ip                 | The IP address the request originated from                                                 | String   | 78.143.45.111                        |
-| contactId          | ID of the connecting user                                                                  | String   | myContactID                          |
-| sessionId          | Session ID                                                                                 | String   | 5a91d194fde28b0011ce2425             |
-| inputId            | Unique input ID                                                                            | String   | 5a91d194fde28b0011ce2424             |
-| inputText          | The input text                                                                             | String   | Hello World!                         |
-| inputData          | The input data object as a string                                                          | String   | {"key":"value"}                      |
-| state              | State of the Flow at input                                                                 | String   | default                              |
-| mode               | [Mode]({config.site_url}}ai/tools/interaction-panel/input#Properties/) of the input        | String   | TextOnly                             |
-| userType           | Type of the connecting user. Either "external" for external user or "admin" for admin user | String   | external                             |
-| channel            | Channel the input came through                                                             | String   | facebook                             |
-| flowLanguage       | Language of the Flow                                                                       | String   | en-EN                                |
-| intent             | Found intent (can be blank)                                                                | String   | orderFood                            |
-| intentFlow         | The Parent ID of the Flow in which the intent was found (can be blank)                     | String   | 5e33b160e6236da3aa54221461a53f04     |
-| intentScore        | The numerical score of the input against a recognized intent (can be blank)                | Number   | 0.836322430892043                    |
-| completedGoalsList | List of completed goals in this session                                                    | String   | orderedFood                          |
-| foundSlots         | Found slot tags                                                                            | String   | DATE                                 |
-| foundSlotDetails   | Found slot tags with details                                                               | String   | DATE[2018-2-25T12:32:32.000]         |
-| understood         | Whether any slots, intents or the message type was found                                   | Boolean  | true                                 |
-| timestamp          | DateTime of the input                                                                      | DateTime | 2018-2-25T12:32:32.000Z              |
-| executionTime      | Time it took to execute the Flow in ms                                                     | Number   | 32                                   |
-| execution          | The execution count                                                                        | Number   | 3                                    |
-| custom1            | Custom value created by flow                                                               | String   |                                      |
-| custom2            | Custom value created by flow                                                               | String   |                                      |
-| custom3            | Custom value created by flow                                                               | String   |                                      |
-| custom4            | Custom value created by flow                                                               | String   |                                      |
-| custom5            | Custom value created by flow                                                               | String   |                                      |
-| custom6            | Custom value created by flow                                                               | String   |                                      |
-| custom7            | Custom value created by flow                                                               | String   |                                      |
-| custom8            | Custom value created by flow                                                               | String   |                                      |
-| custom9            | Custom value created by flow                                                               | String   |                                      |
-| custom10           | Custom value created by flow                                                               | String   |                                      |
-| localeReferenceId  | Reference Id for locale                                                                    | String   |                                      |
-| localeName         | Name of locale                                                                             | String   |                                      |
-| endpointUrlToken   | The URL Token for the Endpoint                                                             | String   |                                      |
-| endpointName       | The name of the Endpoint                                                                   | String   |                                      |
-| rating             | The rating for the session. -1 for a negative rating or 1 for a positive rating            | Number   |                                      |
-| ratingComment      | Comment left when given a rating                                                           | String   |                                      |
-| snapshotName       | Name for the Snapshot used by the Endpoint                                                 | String   |                                      |
+| _id | Eindeutige Analysedatensatz-ID | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| Organisation | Name Ihrer Organisation | Zeichenfolge | cognigy |
+| projectId | Projekt-ID | Zeichenfolge | 5A91D194FDE28B0011CE2422 |
+| flowReferenceId | ID des Flows | Zeichenfolge | 66CEB9CC-AC5B-4CDD-9F4B-8A48DFBB35D9 |
+| Einstiegspunkt | Die ID des Projekts/Agenten oder eines Snapshots, wenn er vom Endpunkt | Zeichenfolge | 621d3deb87016d3855ec0c92 |
+| Geistiges Eigentum | Die IP-Adresse, von der die Anfrage stammt | Zeichenfolge | 78.143.45.111 |
+| Kontakt-ID | ID des verbindenden Benutzers | Zeichenfolge | myContactID |
+| sessionId | Sitzungs-ID | Zeichenfolge | 5A91D194FDE28B0011CE2425 |
+| inputId | Eindeutige Eingabe-ID | Zeichenfolge | 5A91D194FDE28B0011CE2424 |
+| inputText | Der Eingabetext | Zeichenfolge | Hallo Welt!                         |
+| inputData | Das Eingabedatenobjekt als String | Zeichenfolge | {"Schlüssel":"Wert"} |
+| Bundesland | Zustand des Durchflusses am Eingang | Zeichenfolge | Standardeinstellung |
+| Modus | [Modus] ({config.site_url}}ai/tools/interaction-panel/input#Properties/) der Eingabe | Zeichenfolge | TextOnly |
+| userType | Typ des verbindenden Benutzers. Entweder "extern" für externen Benutzer oder "admin" für admin-Benutzer | Zeichenfolge | Externes |
+| Kanal | Kanal, durch den der Eingang kam | Zeichenfolge | Facebook |
+| flowLanguage | Sprache des Flusses | Zeichenfolge | en-DE |
+| Absicht | Gefundene Absicht (kann leer sein) | Zeichenfolge | bestellenEssen |
+| intentFlow | Die übergeordnete ID des Flows, in dem die Absicht gefunden wurde (kann leer sein) | Zeichenfolge | 5e33b160e6236da3aa54221461a53f04 |
+| intentScore | Die numerische Bewertung der Eingabe im Vergleich zu einer erkannten Absicht (kann leer sein) | Anzahl | 0,836322430892043 |
+| completedGoalsList | Liste der abgeschlossenen Ziele in dieser Sitzung | Zeichenfolge | bestellteEssen |
+| foundSlots | Gefundene Slot-Tags | Zeichenfolge | DATUM |
+| foundSlotDetails | Gefundene Slot-Tags mit Details | Zeichenfolge | DATUM[2018-2-25T12:32:32.000] |
+| verstanden | Ob Slots, Absichten oder der Nachrichtentyp gefunden wurden | Boolescher Wert | Wahr |
+| Zeitstempel | Datum/Uhrzeit der Eingabe | Datum/Uhrzeit | 2018-2-25T12:32:32.000Z |
+| Ausführungszeit | Zeit, die zum Ausführen des Flows in ms | Anzahl | Nr. 32 |
+| Ausführung | Die Anzahl der Ausführungen | Anzahl | 3 |
+| benutzerdefiniert1 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert2 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert3 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert4 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert5 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert6 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert7 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert8 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert9 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| benutzerdefiniert10 | Benutzerdefinierter Wert, der durch Flow erstellt wird | Zeichenfolge |                                      |
+| localeReferenceId | Referenz-ID für Gebietsschema | Zeichenfolge |                                      |
+| localeName | Name des Gebietsschemas | Zeichenfolge |                                      |
+| endpointUrlToken | Das URL-Token für den Endpunkt | Zeichenfolge |                                      |
+| endpointName | Der Name des Endpunkts | Zeichenfolge |                                      |
+| Bewertung | Die Bewertung für die Sitzung. -1 für eine negative Bewertung oder 1 für eine positive Bewertung | Anzahl |                                      |
+| ratingKommentieren | Kommentar bei Bewertung hinterlassen | Zeichenfolge |                                      |
+| snapshotName | Name für den Snapshot, der vom Endpunkt verwendet wird | Zeichenfolge |                                      |
 
-!!! warning "Max length of custom fields"
-    You can store maximum 500 characters as the value of each of the custom fields
+!!! Warnung "Maximale Länge der benutzerdefinierten Felder"
+    Sie können maximal 500 Zeichen als Wert für jedes der benutzerdefinierten Felder speichern
 
-!!! note "Why is the Analytics Step label not used?"
-    The analytics step label can be updated from the Cognigy user interface at any time. Therefore, in order to make all previous data records compatible with future records, the entityReferenceId is used. The entityReferenceID is either the Node ID or Intent ID which has been assigned as an analytics step. The current analytics label of the step can be retrieved by mapping the entityReferenceID to the [`Steps`](#steps) record.
+!!! Hinweis "Warum wird das Label Analytics-Schritt nicht verwendet?"
+    Die Beschriftung des Analyseschritts kann jederzeit über die Cognigy-Benutzeroberfläche aktualisiert werden. Um alle bisherigen Datensätze mit zukünftigen Datensätzen kompatibel zu machen, wird daher die entityReferenceId verwendet. Die entityReferenceID ist entweder die Node-ID oder die Intent-ID, die als Analyseschritt zugewiesen wurde. Die aktuelle Analysebezeichnung des Schritts kann abgerufen werden, indem die entityReferenceID dem Datensatz ['Steps'](#steps) zugeordnet wird.
 
-### Conversations
+### Unterhaltungen
 
-**Description**
+**Beschreibung**
 
-The Conversations collection offers a log of all session messages, including the end user, bot or human agent responses. Each time one of these sources sends a message to a Cognigy.AI Flow, Cognigy.AI creates a record to log the interaction. Each interaction is exposed in the analytics endpoint as single line item.
+Die Conversations-Sammlung bietet ein Protokoll aller Sitzungsnachrichten, einschließlich der Antworten von Endbenutzern, Bots oder menschlichen Agenten. Jedes Mal, wenn eine dieser Quellen eine Nachricht an einen Cognigy.AI Flow sendet, erstellt Cognigy.AI einen Datensatz, um die Interaktion zu protokollieren. Jede Interaktion wird im Analyseendpunkt als einzelne Werbebuchung verfügbar gemacht.
 
-**Example Query**
+**Beispielabfrage**
 
 === "OData 2.3"
 
-    `https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.3/Conversations?apikey=YOURAPIKEY"
 
 === "OData 2.2"
 
-    `https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.2/ChatHistory?apikey=YOURAPIKEY"
 
 === "OData 2.0"
     
-    `https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.0/ChatHistory?apikey=YOURAPIKEY"
 
-**Data Types**
+**Datentypen**
 
-When retrieving this collection, the endpoint will return the following fields:
+Beim Abrufen dieser Auflistung gibt der Endpunkt die folgenden Felder zurück:
 
-| Field Name             | Description                                           | Type     | Example                                    |
+| Feldname | Beschreibung | Typ | Beispiel |
 | ---------------------- | ----------------------------------------------------- | -------- | ------------------------------------------ |
-| _id                    | Unique analytics record ID                            | String   | 5a91d194fde28b0011ce2423                   |
-| projectId              | Project ID                                            | String   | 5a91d194fde28b0011ce2422                   |
-| projectName            | Name of the Cognigy.AI project                        | String   | Project 1                                  |
-| inputId                | Unique input ID                                       | String   | 5a91d194fde28b0011ce2424                   |
-| sessionId              | Session ID                                            | String   | 5a91d194fde28b0011ce2425                   |
-| contactId              | ID of the connecting user                             | String   | myContactID                                |
-| organisation           | Name of your organisation                             | String   | cognigy                                    |
-| inputText              | The input text                                        | String   | Hello World!                               |
-| inputData              | The input data object as a string                     | String   | {"key":"value"}                            |
-| type                   | Whether the message is an input or output of the Flow | String   | "input" or "output"                        |
-| source                 | The source of the message                             | String   | "user" or "bot" or "agent" or "suggestion" |
-| timestamp              | DateTime of the input                                 | DateTime | 2018-2-25T12:32:32.000Z                    |
-| flowName               | Name of the Flow                                      | String   | MainFlow                                   |
-| flowParentId           | ParentId of the Flow                                  | String   | 5e33b160e6236da3aa54221461a53f04           |
-| channel                | Channel the input came through                        | String   | facebook                                   |
-| inHandoverRequest      | Flag whether the session is in a Handover request     | Boolean  | false                                      |
-| inHandoverConversation | Flag whether the session is in a Handover session     | Boolean  | true                                       |
-| outputId               | Output ID                                             | String   | f514b7b2-7dc0-4e75-be62-a53fed5b2bb7       |
+| _id | Eindeutige Analysedatensatz-ID | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| projectId | Projekt-ID | Zeichenfolge | 5A91D194FDE28B0011CE2422 |
+| Projektname | Name des Cognigy.AI Projekts | Zeichenfolge | Projekt 1 |
+| inputId | Eindeutige Eingabe-ID | Zeichenfolge | 5A91D194FDE28B0011CE2424 |
+| sessionId | Sitzungs-ID | Zeichenfolge | 5A91D194FDE28B0011CE2425 |
+| Kontakt-ID | ID des verbindenden Benutzers | Zeichenfolge | myContactID |
+| Organisation | Name Ihrer Organisation | Zeichenfolge | cognigy |
+| inputText | Der Eingabetext | Zeichenfolge | Hallo Welt!                               |
+| inputData | Das Eingabedatenobjekt als String | Zeichenfolge | {"Schlüssel":"Wert"} |
+| Typ | Unabhängig davon, ob es sich bei der Nachricht um eine Ein- oder Ausgabe der Flow | Zeichenfolge | "Eingang" oder "Ausgang" |
+| Quelle | Die Quelle der Nachricht | Zeichenfolge | "Benutzer" oder "Bot" oder "Agent" oder "Vorschlag" |
+| Zeitstempel | Datum/Uhrzeit der Eingabe | Datum/Uhrzeit | 2018-2-25T12:32:32.000Z |
+| flowName | Name des Flows | Zeichenfolge | MainFlow |
+| flowParentId | ParentId des Flows | Zeichenfolge | 5e33b160e6236da3aa54221461a53f04 |
+| Kanal | Kanal, durch den der Eingang kam | Zeichenfolge | Facebook |
+| inHandoverRequest | Kennzeichnen, ob sich die Sitzung in einer Übergabeanforderung befindet | Boolescher Wert | falsch |
+| inHandoverKonversation | Kennzeichnen, ob sich die Sitzung in einer Übergabesitzung befindet | Boolescher Wert | Wahr |
+| outputId | Ausgabe-ID | Zeichenfolge | F514B7B2-7DC0-4E75-BE62-A53Fed5B2BB7 |
 
-### Steps
+### Schritte
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-flow-nodes-and-intents)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.2-blue.svg)] (.. /.. /release-notes/pre-4.30.md#analytics-steps-for-flow-nodes-and-intents)
 
-**Description**
+**Beschreibung**
 
-The Steps collection offers a list of all entities (an entity is a flow node or an intent) that have been assigned as an analytics step and that exist in any flow that the API key has access to. Analytics Steps are created in Cognigy.AI by adding a value to the "Analytics Step" field in the settings for an entity. For a Step to exist in this OData collection, it must also have been triggered by at least one session with the flow. Each step that can exist in ExecutedSteps, is exposed in this analytics endpoint as single line item.
+Die Steps-Sammlung bietet eine Liste aller Entitäten (eine Entität ist ein Flow-Knoten oder ein Intent), die als Analyseschritt zugewiesen wurden und die in jedem Flow vorhanden sind, auf den der API-Schlüssel Zugriff hat. Analytics-Schritte werden in Cognigy.AI erstellt, indem in den Einstellungen für eine Entität ein Wert in das Feld "Analytics-Schritt" eingefügt wird. Damit ein Step in dieser OData-Auflistung vorhanden ist, muss er auch durch mindestens eine Sitzung mit dem Flow ausgelöst worden sein. Jeder Schritt, der in ExecutedSteps vorhanden sein kann, wird in diesem Analyseendpunkt als einzelner Einzelposten verfügbar gemacht.
 
-**Example Query**
+**Beispielabfrage**
 
 === "OData 2.3" 
     
-    `https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.3/Steps?apikey=YOURAPIKEY"
 
 === "OData 2.2" 
 
-    `https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.2/Steps?apikey=YOURAPIKEY"
 
 === "OData 2.0" 
     
-    `https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.0/Steps?apikey=YOURAPIKEY"
 
-**Data Types**
+**Datentypen**
 
-When retrieving this collection, the endpoint will return the following fields:
+Beim Abrufen dieser Auflistung gibt der Endpunkt die folgenden Felder zurück:
 
-| Field Name        | Description                                                                | Type   | Example                          |
+| Feldname | Beschreibung | Typ | Beispiel |
 | ----------------- | -------------------------------------------------------------------------- | ------ | -------------------------------- |
-| _id               | Unique analytics record ID                                                 | String | 5a91d194fde28b0011ce2423         |
-| label             | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String | Question (2)                     |
-| type              | Type of entity                                                             | String | `node` or `intent`               |
-| entityReferenceId | Unique ID for the entity (node ID or flow ID)                              | String | 5a91d194fde28b0011ce2423         |
-| flowReferenceId   | ID of the flow                                                             | String | 5a91d194fde28b0011ce2423         |
-| flowName          | Name of the Flow where the step exists                                     | String | Main Flow                        |
-| projectName       | Name of the Cognigy.AI project                                             | String | Project 1                        |
-| snapshotId        | ID of the snapshot                                                         | String | 5e33b160e6236da3aa54221461a53f04 |
-| snapshotName      | Name of the snapshot                                                       | String | Bot Release 2.2                  |
+| _id | Eindeutige Analysedatensatz-ID | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| Etikett | Analytics-Schrittbezeichnung, die für die Entität (Knoten oder Intent) in Cognigy.AI | Zeichenfolge | Frage (2) |
+| Typ | Art des Unternehmens | Zeichenfolge | 'Knoten' oder 'Absicht' |
+| entityReferenceId | Eindeutige ID für die Entität (Knoten-ID oder Flow-ID) | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| flowReferenceId | ID des Flows | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| flowName | Name des Flows, in dem der Schritt vorhanden ist | Zeichenfolge | Hauptstrom |
+| Projektname | Name des Cognigy.AI Projekts | Zeichenfolge | Projekt 1 |
+| snapshotId | ID des Snapshots | Zeichenfolge | 5e33b160e6236da3aa54221461a53f04 |
+| snapshotName | Name des Snapshots | Zeichenfolge | Bot-Version 2.2 |
 
-!!! note "Building Visualizations with Steps Records"
-    The following support article explains how these records can be manipulated in BI software to build insightful session path analytics: [Step Monitoring with OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
+!!! Hinweis "Erstellen von Visualisierungen mit Schrittdatensätzen"
+    Im folgenden Support-Artikel wird erläutert, wie diese Datensätze in BI-Software bearbeitet werden können, um aufschlussreiche Sitzungspfadanalysen zu erstellen: [Schrittüberwachung mit OData](https://support.cognigy.com/hc/en-us/articles/360021089180-Step-Monitoring-with-OData)
 
-### ExecutedSteps
+### Ausgeführte Schritte
  
-**Description**
+**Beschreibung**
 
-The ExecutedSteps collection contains a list of all step events that have occurred in sessions. It also includes a reference to the step that occurred prior (parent step). Each time an entity (flow node or intent with an assigned step) is executed, a record is created in this collection. Each executed step is exposed in this analytics endpoint as single line item.
+Die ExecutedSteps-Auflistung enthält eine Liste aller Schrittereignisse, die in Sitzungen aufgetreten sind. Er enthält auch einen Verweis auf den Schritt, der zuvor ausgeführt wurde (übergeordneter Schritt). Jedes Mal, wenn eine Entität (Flow-Knoten oder Intent mit einem zugewiesenen Schritt) ausgeführt wird, wird ein Datensatz in dieser Sammlung erstellt. Jeder ausgeführte Schritt wird in diesem Analyseendpunkt als einzelne Werbebuchung verfügbar gemacht.
 
-**Example Query**
+**Beispielabfrage**
 
 === "OData 2.3"
     
-    `https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.3/ExecutedSteps?apikey=YOURAPIKEY"
 
 === "OData 2.2"
     
-    `https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.2/ExecutedSteps?apikey=YOURAPIKEY"
 === "OData 2.0"
     
-    `https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.0/ExecutedSteps?apikey=YOURAPIKEY"
 
-**Data Types**
+**Datentypen**
 
-When retrieving this collection, the endpoint will return the following fields:
+Beim Abrufen dieser Auflistung gibt der Endpunkt die folgenden Felder zurück:
 
-| Field Name        | Description                                                                | Type     | Example                          |
+| Feldname | Beschreibung | Typ | Beispiel |
 | ----------------- | -------------------------------------------------------------------------- | -------- | -------------------------------- |
-| _id               | Unique analytics record ID                                                 | String   | 5a91d194fde28b0011ce2423         |
-| userId            | ID of the connecting user                                                  | String   | myContactID                      |
-| sessionId         | Session ID                                                                 | String   | 5a91d194fde28b0011ce2425         |
-| inputId           | ID of the message                                                          | String   | 5a91d194fde28b0011ce2425         |
-| stepLabel         | Analytics step label defined for the entity (node or intent) in Cognigy.AI | String   | Question (2)                     |
-| parentStep        | ID of the step that occurred prior to this step                            | String   | 5a91d194fde28b0011ce2425         |
-| type              | Type of entity                                                             | String   | `node` or `intent`               |
-| entityReferenceId | Unique ID for the entity (node ID or intent ID)                            | String   | 5a91d194fde28b0011ce2423         |
-| flowReferenceId   | ID of the flow                                                             | String   | 5a91d194fde28b0011ce2423         |
-| flowName          | Name of the Flow where the step exists                                     | String   | Main Flow                        |
-| timestamp         | Timestamp when the step was executed                                       | DateTime | 2018-2-25T12:32:32.000Z          |
-| projectName       | Name of the Cognigy.AI project                                             | String   | Project 1                        |
-| projectId         | ID of the project                                                          | String   | 6067352c18887e471da4e392         |
-| organisationId    | Cognigy.AI Organisation ID                                                 | String   | 5f8833dae72b850ad2ed4d53         |
-| snapshotId        | ID of the snapshot                                                         | String   | 5e33b160e6236da3aa54221461a53f04 |
-| snapshotName      | Name of the snapshot                                                       | String   | Bot Release 2.2                  |
+| _id | Eindeutige Analysedatensatz-ID | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| userId | ID des verbindenden Benutzers | Zeichenfolge | myContactID |
+| sessionId | Sitzungs-ID | Zeichenfolge | 5A91D194FDE28B0011CE2425 |
+| inputId | ID der Nachricht | Zeichenfolge | 5A91D194FDE28B0011CE2425 |
+| stepLabel | Analytics-Schrittbezeichnung, die für die Entität (Knoten oder Intent) in Cognigy.AI | Zeichenfolge | Frage (2) |
+| parentStep | ID des Schritts, der vor diesem Schritt ausgeführt wurde | Zeichenfolge | 5A91D194FDE28B0011CE2425 |
+| Typ | Art des Unternehmens | Zeichenfolge | 'Knoten' oder 'Absicht' |
+| entityReferenceId | Eindeutige ID für die Entität (Knoten-ID oder Intent-ID) | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| flowReferenceId | ID des Flows | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| flowName | Name des Flows, in dem der Schritt vorhanden ist | Zeichenfolge | Hauptstrom |
+| Zeitstempel | Zeitstempel, wann der Schritt ausgeführt wurde | Datum/Uhrzeit | 2018-2-25T12:32:32.000Z |
+| Projektname | Name des Cognigy.AI Projekts | Zeichenfolge | Projekt 1 |
+| projectId | ID des Projekts | Zeichenfolge | 6067352c18887e471da4e392 |
+| organisationId | Cognigy.AI Organisations-ID | Zeichenfolge | 5F8833DAE72B850AD2ED4D53 |
+| snapshotId | ID des Snapshots | Zeichenfolge | 5e33b160e6236da3aa54221461a53f04 |
+| snapshotName | Name des Snapshots | Zeichenfolge | Bot-Version 2.2 |
 
-### Sessions
+### Sitzungen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.41-blue.svg)](../../../release-notes/4.41.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.41-blue.svg)] (.. /.. /.. /release-notes/4.41.md)
 
-**Description**
+**Beschreibung**
 
-The Sessions collection contains a list of all sessions that have occurred. The primary objective of this collection is to provide a list of the analytics steps that took place in any given session and the order in which they took place. This information is included as a comma separated list within a single column called `stepPath`. Each session is exposed in this analytics endpoint as single line item.
+Die Sessions-Auflistung enthält eine Liste aller Sitzungen, die stattgefunden haben. Das Hauptziel dieser Sammlung besteht darin, eine Liste der Analyseschritte bereitzustellen, die in einer bestimmten Sitzung stattgefunden haben, und die Reihenfolge, in der sie stattgefunden haben. Diese Informationen sind als kommagetrennte Liste in einer einzigen Spalte mit dem Namen "stepPath" enthalten. Jede Sitzung wird in diesem Analyseendpunkt als einzelne Werbebuchung verfügbar gemacht.
 
-**Example Query**
+**Beispielabfrage**
 
 === "OData 2.3"
     
-    `https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY`
+'https://odata-trial.cognigy.ai/v2.3/Sessions?apikey=YOURAPIKEY'
 
 === "OData 2.2"
     
-    `https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.2/Conversations?apikey=YOURAPIKEY"
 
 === "OData 2.0"
  
-    `https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.0/Conversations?apikey=YOURAPIKEY"
 
-**Data Types**
+**Datentypen**
 
-When retrieving this collection, the endpoint will return the following fields:
+Beim Abrufen dieser Auflistung gibt der Endpunkt die folgenden Felder zurück:
 
-| Field Name          | Description                                      | Type     | Example                                                                        |
+| Feldname | Beschreibung | Typ | Beispiel |
 | ------------------- | ------------------------------------------------ | -------- | ------------------------------------------------------------------------------ |
-| _id                 | Unique analytics record ID                       | String   | 5a91d194fde28b0011ce2423                                                       |
-| goals               | All goals that were achieved in the session      | String   | Goal1, Goal2                                                                   |
-| stepPath            | Comma separated list of steps executed           | String   | 9ac4f679-beae-4461-b9e3-43aece8b3430,f1e72fe3-f04b-48f5-b862-1e35ad253f18, ... |
-| stepsCount          | Count of the number of steps                     | Number   | 10                                                                             |
-| handoverEscalations | Number of times the session triggered a handover | Number   | 3                                                                              |
-| startedAt           | Timestamp when first message was received        | DateTime | 2018-2-25T12:32:32.000Z                                                        |
-| userId              | ID of the connecting user                        | String   | myContactID                                                                    |
-| sessionId           | Session ID                                       | String   | 5a91d194fde28b0011ce2425                                                       |
-| localeReferenceId   | Id of the locale                                 | String   | en-EN                                                                          |
-| localeName          | Name of the locale                               | String   | English                                                                        |
-| endpointReferenceId | ID of the endpoint                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
-| endpointName        | Endpoint name                                    | String   | Webchat                                                                        |
-| projectName         | Name of the Cognigy.AI project                   | String   | Project 1                                                                      |
-| projectId           | ID of the project                                | String   | 6067352c18887e471da4e392                                                       |
-| organisationId      | Cognigy.AI Organisation ID                       | String   | 5f8833dae72b850ad2ed4d53                                                       |
-| snapshotId          | ID of the snapshot                               | String   | 5e33b160e6236da3aa54221461a53f04                                               |
-| snapshotName        | Name of the snapshot                             | String   | Bot Release 2.2                                                                |
+| _id | Eindeutige Analysedatensatz-ID | Zeichenfolge | 5A91D194FDE28B0011CE2423 |
+| Ziele | Alle Ziele, die in der Sitzung erreicht wurden | Zeichenfolge | Tor 1, Tor 2 |
+| stepPath | Kommagetrennte Liste der ausgeführten Schritte | Zeichenfolge | 9ac4f679-beae-4461-b9e3-43aece8b3430,f1e72fe3-f04b-48f5-b862-1e35ad253f18, ... |
+| SchritteAnzahl | Anzahl der Schritte | Anzahl | Nr. 10 |
+| ÜbergabeEskalationen | Häufigkeit, mit der die Sitzung eine Übergabe ausgelöst hat | Anzahl | 3 |
+| startedAt | Zeitstempel, wann die erste Nachricht empfangen wurde | Datum/Uhrzeit | 2018-2-25T12:32:32.000Z |
+| userId | ID des verbindenden Benutzers | Zeichenfolge | myContactID |
+| sessionId | Sitzungs-ID | Zeichenfolge | 5A91D194FDE28B0011CE2425 |
+| localeReferenceId | ID des Gebietsschemas | Zeichenfolge | en-DE |
+| localeName | Name des Gebietsschemas | Zeichenfolge | Englisch |
+| endpointReferenceId | ID des Endpunkts | Zeichenfolge | 5e33b160e6236da3aa54221461a53f04 |
+| endpointName | Name des Endpunkts | Zeichenfolge | Webchat |
+| Projektname | Name des Cognigy.AI Projekts | Zeichenfolge | Projekt 1 |
+| projectId | ID des Projekts | Zeichenfolge | 6067352c18887e471da4e392 |
+| organisationId | Cognigy.AI Organisations-ID | Zeichenfolge | 5F8833DAE72B850AD2ED4D53 |
+| snapshotId | ID des Snapshots | Zeichenfolge | 5e33b160e6236da3aa54221461a53f04 |
+| snapshotName | Name des Snapshots | Zeichenfolge | Bot-Version 2.2 |
 
-### LiveAgentEscalations
+### LiveAgentEskalationen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.49-blue.svg)](../../../release-notes/4.49.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.49-blue.svg)] (.. /.. /.. /release-notes/4.49.md)
 
-**Description**
+**Beschreibung**
 
-The LiveAgentEscalations collection contains records from Live Agent escalations and includes the related data about handovers to Live Agent.
+Die LiveAgentEscalations-Auflistung enthält Datensätze aus Live Agent-Eskalationen und enthält die zugehörigen Daten zu Übergaben an Live Agent.
 
-**Example Query**
+**Beispielabfrage**
 
 === "OData 2.3"
     
-    `https://odata-trial.cognigy.ai/v2.3/LiveAgentEscalations?apikey=YOURAPIKEY`
+"https://odata-trial.cognigy.ai/v2.3/LiveAgentEscalations?apikey=YOURAPIKEY"
 
-**Data Types**
+**Datentypen**
 
-When retrieving this collection, the endpoint will return the following fields:
+Beim Abrufen dieser Auflistung gibt der Endpunkt die folgenden Felder zurück:
 
-| Field Name        | Description                                               | Type     | Example                                                          |
+| Feldname | Beschreibung | Typ | Beispiel |
 | ----------------- | --------------------------------------------------------- | -------- | ---------------------------------------------------------------- |
-| _id               | Unique identifier for the record                          | String   | 649be849b7fd71d48b9bacc8                                         |
-| organisationId    | Identifier of the organization associated with the record | String   | 5eb4a49d426cd3d05f2892a9                                         |
-| projectId         | Identifier of the project related to the record           | String   | 6409b6c53c9687b5e78e6403                                         |
-| sessionId         | Identifier of the session                                 | String   | session-2a38246e-0395-49a5-876d-dd5133fd5418                     |
-| timestamp         | Date and time when the record was created                 | DateTime | 2023-06-28T07:59:04.628Z                                         |
-| localeName        | Name of the locale                                        | String   | en                                                               |
-| status            | Current status of the record                              | String   | opened                                                           |
-| inboxId           | Identifier of the inbox associated with the record        | String   | 7983                                                             |
-| inboxName         | Name of the inbox                                         | String   | LA Chatbot-default                                               |
-| teamId            | Identifier of the team                                    | String   | 8                                                                |
-| teamName          | Name of the team                                          | String   | IT Support                                                       |
-| labels            | List of labels associated with the record                 | Array    | [Hardware]                                                       |
-| agentId           | Identifier of the agent                                   | String   | 618cf7687614774ba028dcac                                         |
-| agentName         | Name of the agent                                         | String   | John Smith                                                       |
-| contactId         | Identifier of the contact                                 | String   | 649ba8450d5df5cadf8b75b8                                         |
-| endpointName      | Name of the endpoint                                      | String   | LA Chatbot                                                       |
-| endpointType      | Type of the endpoint                                      | String   | webchat2                                                         |
-| endpointUrlToken  | Token or identifier associated with the endpoint          | String   | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
-| channel           | Channel through which the record was received             | String   | admin-webchat                                                    |
-| localeReferenceId | Identifier for the specific locale reference              | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
-| snapshotId        | Identifier of the snapshot                                | String   | 63ff0cc47a466cab278fd19b                                         |
-| endpsnapshotName  | Name of the snapshot                                      | String   | Prod-Snapshot 26.7.23                                            |
+| _id | Eindeutige Kennung für den Datensatz | Zeichenfolge | 649be849b7fd71d48b9bacc8 |
+| organisationId | Kennung der Organisation, die dem Datensatz zugeordnet ist | Zeichenfolge | 5eb4a49d426cd3d05f2892a9 |
+| projectId | Kennung des Projekts, das sich auf den Datensatz bezieht | Zeichenfolge | 6409b6c53c9687b5e78e6403 |
+| sessionId | Kennung der Sitzung | Zeichenfolge | Sitzung-2A38246E-0395-49A5-876D-DD5133FD5418 |
+| Zeitstempel | Datum und Uhrzeit der Erstellung des Datensatzes | Datum/Uhrzeit | 2023-06-28T07:59:04.628Z |
+| localeName | Name des Gebietsschemas | Zeichenfolge | en |
+| Status | Aktueller Stand des Datensatzes | Zeichenfolge | geöffnet |
+| inboxId | Kennung des Posteingangs, der dem Datensatz zugeordnet ist | Zeichenfolge | 7983 |
+| inboxName | Name des Posteingangs | Zeichenfolge | LA Chatbot-Standard |
+| teamId | Kennung des Teams | Zeichenfolge | 8 |
+| teamName | Name des Teams | Zeichenfolge | IT-Unterstützung |
+| Etiketten | Liste der Labels, die dem Datensatz zugeordnet sind | Anordnung | [Hardware] |
+| agentId | Kennung des Agenten | Zeichenfolge | 618cf7687614774ba028dcac |
+| agentenname | Name des Agenten | Zeichenfolge | John Smith |
+| Kontakt-ID | Kennung des Kontakts | Zeichenfolge | 649ba8450d5df5cadf8b75b8 |
+| endpointName | Name des Endpunkts | Zeichenfolge | LA Chatbot |
+| endpointType | Typ des Endpunkts | Zeichenfolge | webchat2 |
+| endpointUrlToken | Token oder Bezeichner, der dem Endpunkt zugeordnet ist | Zeichenfolge | ea30b8f20db52f9d86ea36fd55a7d66bd2c4c60eb24ac7ad52f1c9e173dd4cdb |
+| Kanal | Kanal, über den der Datensatz empfangen wurde | Zeichenfolge | Admin-Webchat |
+| localeReferenceId | Bezeichner für den spezifischen Gebietsschemaverweis | Zeichenfolge | 7eff993c-b801-4556-b111-1c319e8577cf |
+| snapshotId | Kennung des Snapshots | Zeichenfolge | 63ff0cc47a466cab278fd19b |
+| endpsnapshotName | Name des Snapshots | Zeichenfolge | Prod-Snapshot 26.7.23 |
 
-## Integrations
+## Integrationen<div class="divider"></div>### Excel
 
-<div class="divider"></div>
-
-### Excel
-
-When connecting from Microsoft Excel 2016, you must use the PowerQuery feature, which can be found under `Data > Get & Transform > New Query > From Other Sources > From OData Feed`. This will connect to our OData v4 feed.
+Wenn Sie eine Verbindung von Microsoft Excel 2016 aus herstellen, müssen Sie die PowerQuery-Funktion verwenden, die Sie unter "Daten > Abrufen und Transformieren > neuen Abfrage > aus anderen Quellen > aus OData-Feed" finden. Dadurch wird eine Verbindung zu unserem OData v4-Feed hergestellt.
 
 ### PowerBI
 
-Follow the [instructions in the Power BI documentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).
+Befolgen Sie die [Anweisungen in der Power BI-Dokumentation](https://docs.microsoft.com/en-us/power-bi/desktop-connect-odata).
 
 ### Tableau
 
-!!! danger "Incompatible OData Version"
-    At the moment, Cognigy.AI supports OData version 4.0, which means that certain versions of Tableau are not compatible.
+!!! danger "Inkompatible OData-Version"
+    Derzeit unterstützt Cognigy.AI OData-Version 4.0, was bedeutet, dass bestimmte Versionen von Tableau nicht kompatibel sind.
 
-The instructions on how to connect an OData Feed in Tableau [here](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
+Die Anleitung zum Verbinden eines OData-Feeds in Tableau [hier](https://help.tableau.com/current/pro/desktop/en-gb/examples_odata.htm).
 
-### OData Consumer Ecosystem
+### OData-Consumer-Ökosystem
 
-For a full list of available OData Consumer options [follow the link to Consumers on OData.org](https://www.odata.org/ecosystem/#consumers).
+Eine vollständige Liste der verfügbaren OData-Consumer-Optionen finden Sie [folgen Sie dem Link zu Consumern auf OData.org](https://www.odata.org/ecosystem/#consumers).
 
-### Client Libraries in .NET, Java, JavaScript, C++ and other platforms
+### Client-Bibliotheken in .NET, Java, JavaScript, C++ und anderen Plattformen
 
-For a full list of available OData Libraries [see the latest directory of available libraries on OData.org](https://www.odata.org/libraries/)
+Eine vollständige Liste der verfügbaren OData-Bibliotheken finden Sie im aktuellen Verzeichnis der verfügbaren Bibliotheken auf OData.org](https://www.odata.org/libraries/)</collection></hostname></collection></hostname></collection></api-version></odata>

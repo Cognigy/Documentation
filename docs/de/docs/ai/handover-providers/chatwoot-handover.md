@@ -1,7 +1,7 @@
 ---
-title: "Chatwoot" 
-slug: "chatwoot-handover" 
-hidden: false 
+Titel: "Chatwoot" 
+Schnecke: "Chatwoot-Übergabe" 
+ausgeblendet: false 
 ---
 
 # Chatwoot
@@ -10,112 +10,104 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/chatwoot.svg" width="25%" />
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Cognigy hat **Chatwoot** als zusätzlichen Übergabeanbieter integriert. Diese Integration ermöglicht es Cognigy-Kunden, ihre Benutzer über die [Chatwoot](https://www.chatwoot.com/)-Plattform mit menschlichen Agenten zu verbinden. Chatwoot ist eine Open-Source-Lösung und kann kostenlos verwendet werden.
 
-<div class="divider"></div>
+## Einrichtung<div class="divider"></div>### Voraussetzungen
 
-Cognigy has integrated **Chatwoot** as an additional handover provider. This integration allows Cognigy customers to connect their users with human agents via the [Chatwoot](https://www.chatwoot.com/) platform. Chatwoot is an open-source solution and is free to use.
+- Sie benötigen ein Konto in [Chatwoot](https://www.chatwoot.com/). Sie können Chatwoot auch so einrichten, dass es in einer [On-Premise-Umgebung](https://www.chatwoot.com/docs/self-hosted) ausgeführt wird.
+- Sie benötigen zwei IDs, die in der Chatwoot-Adresszeile aufgeführt sind:
 
-## Setup
-<div class="divider"></div>
+- **Konto-ID** ist eine eindeutige Nummer für Sie als Benutzer.
+    - **Posteingangs-ID** ist nicht eindeutig und wird mit jedem neuen Kanal neu erstellt.<br>Beide IDs sind erforderlich, um den neuen Posteingangskanal zu verwenden. Sie finden sie in Ihrer Chatwoot-URL. Beispiel: "https://app.chatwoot.com/app/account/6607/inbox/5446", wobei die Konto-ID "6607" und die Posteingangs-ID "5446" lautet.
 
-### Prerequisites
+### Agenten in Chatwoot
 
-- You need to have an account in [Chatwoot](https://www.chatwoot.com/). You can also set up Chatwoot to run on an [on-premise environment](https://www.chatwoot.com/docs/self-hosted).
-- You need two IDs that are listed in the Chatwoot address line:
-
-    - **Account ID** is a unique number for you as the user.
-    - **Inbox ID** is not unique and will be created newly with every new channel.<br>
-    Both IDs are required to use the new Inbox channel. You can find them in your Chatwoot URL. For example, `https://app.chatwoot.com/app/account/6607/inbox/5446`, where the Account ID is `6607` and the Inbox ID is `5446`.
-
-### Agents in Chatwoot
-
-In case you want to add a new Agent to Chatwoot, go to your Chatwoot installation.
-On the Home page, and click the **Agents** in the left-side Settings menu.
+Falls Sie einen neuen Agenten zu Chatwoot hinzufügen möchten, gehen Sie zu Ihrer Chatwoot-Installation.
+Klicken Sie auf der Startseite im Menü "Einstellungen" auf der linken Seite auf **Agents**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Chatwoot_settings_menu.png" width="80%" />
-  <figcaption>Settings menu in Chatwoot</figcaption>
+  <figcaption>Menü "Einstellungen" in Chatwoot</figcaption>
 </figure>
 
-### Add a Webhook
+### Hinzufügen eines Webhooks
 
-To configure the webhook for the **Inbox** incoming messages, follow these steps:
+Gehen Sie folgendermaßen vor, um den Webhook für die eingehenden Nachrichten **Posteingang** zu konfigurieren:
 
-1. In the left-side menu of the **Chatwoot** main page, click **Inboxes**. 
-2. To start the Inbox creation and configuration procedure, click **Add Inbox**.
-3. Create an API channel by selecting the **API channel** and entering a channel name. 
+1. Klicken Sie im linken Menü der **Chatwoot**-Hauptseite auf **Posteingänge**. 
+2. Um den Erstellungs- und Konfigurationsvorgang für den Posteingang zu starten, klicken Sie auf **Posteingang hinzufügen**.
+3. Erstellen Sie einen API-Kanal, indem Sie den **API-Kanal** auswählen und einen Kanalnamen eingeben. 
 
     <figure>
       <img class="image-center" src="{{config.site_url}}ai/endpoints/images/inbox-create-api-channel-edit.png" width="100%" />
     </figure>
 
-4. Enter the Endpoint Base URL in the **Webhook URL** field and append `/handover/chatwoot/` to the end of the URL, for example, `https://endpoint-trial.cognigy.com/handover/chatwoot`.
-5. Click **Create API Channel**. 
-6. Select the Agent that will be assigned to the Inbox messages, then confirm the action by clicking **Add agents**.
+4. Geben Sie die Endpunkt-Basis-URL in das Feld **Webhook-URL** ein und hängen Sie "/handover/chatwoot/" an das Ende der URL an, z. B. "https://endpoint-trial.cognigy.com/handover/chatwoot".
+5. Klicken Sie auf **API-Kanal erstellen**. 
+6. Wählen Sie den Agenten aus, der den Posteingangsnachrichten zugewiesen werden soll, und bestätigen Sie die Aktion, indem Sie auf **Agenten hinzufügen** klicken.
 
-The new channel will be added to the Chatwoot Inbox.
+Der neue Kanal wird dem Chatwoot-Posteingang hinzugefügt.
  
-### Connect Chatwoot to Cognigy.AI
+### Chatwoot mit Cognigy.AI verbinden
 
-#### Set your Chatwoot Inbox
+#### Richten Sie Ihren Chatwoot-Posteingang ein
 
-To connect Chatwoot to your virtual agnent in Cognigy.AI, you need to specify to which Chatwoot Inbox you want the handover to go.
+Um Chatwoot in Cognigy.AI mit Ihrem virtuellen Agont zu verbinden, müssen Sie angeben, in welchen Chatwoot-Posteingang die Übergabe erfolgen soll.
 
-To do this, follow these steps:
+Gehen Sie dazu folgendermaßen vor:
 
-1. In the Flow editor, add a **Handover to Agent** Node, if you did not do it before.
-2. In the Node editor of the **Handover to Agent** Node, go to the **Chatwoot settings** section. 
-3. In the **Chatwoot Inbox Id** field, specify the Inbox ID.  You can use [CognigyScript](../../ai/tools/cognigy-script.md) to dynamically decide, which Inbox should be used for the handover request.
+1. Fügen Sie im Flow-Editor einen **Übergabe an Agent**-Knoten hinzu, falls Sie dies noch nicht getan haben.
+2. Gehen Sie im Node-Editor des Knotens **Handover to Agent** zum Abschnitt **Chatwoot-Einstellungen**. 
+3. Geben Sie im Feld **Chatwoot-Posteingangs-ID** die Posteingangs-ID an.  Sie können [CognigyScript](.. /.. /ai/tools/cognigy-script.md), um dynamisch zu entscheiden, welcher Posteingang für die Übergabeanfrage verwendet werden soll.
 
-#### Connect your Endpoint to Chatwoot
+#### Verbinden Sie Ihren Endpunkt mit Chatwoot
 
-To connect the Endpoint to Chatwoot, do the following:
+Um den Endpunkt mit Chatwoot zu verbinden, gehen Sie wie folgt vor:
 
-1. Open your **Endpoint Editor** in Cognigy.AI and select the **Handover Settings**.
-2. Select **Chatwoot** as **Handover Platform**.
-3. Enter a Base URL for the Chatwoot instance. The Base URL is your Chatwoot installation URL extended by `/api/v1`. For example, `https://app.chatwoot.com/api/v1` serves as the Base URL, where `https://app.chatwoot.com` is the Chatwoot URL. Alternatively, you can use your on-premise Chatwoot API URL
-4. Enter Chatwoot **Account ID**.
-5. Enter the **API Key**.
-6. Click **Save** to confirm the entries.
-7. To check the functionality, click **Open Webchat** and start a conversation with a handover request.
+1. Öffnen Sie Ihren **Endpunkt-Editor** in Cognigy.AI und wählen Sie die **Übergabeeinstellungen** aus.
+2. Wählen Sie **Chatwoot** als **Übergabeplattform** aus.
+3. Geben Sie eine Basis-URL für die Chatwoot-Instanz ein. Die Basis-URL ist Ihre Chatwoot-Installations-URL, die um '/api/v1' erweitert wurde. Zum Beispiel dient "https://app.chatwoot.com/api/v1" als Basis-URL, wobei "https://app.chatwoot.com" die Chatwoot-URL ist. Alternativ können Sie auch Ihre lokale Chatwoot-API-URL verwenden
+4. Geben Sie Chatwoot **Konto-ID** ein.
+5. Geben Sie den **API-Schlüssel** ein.
+6. Klicken Sie auf **Speichern**, um die Eingaben zu bestätigen.
+7. Um die Funktionalität zu überprüfen, klicken Sie auf **Webchat öffnen** und starten Sie eine Konversation mit einer Übergabeanfrage.
 
-When you start a conversation with the Endpoint and the Handover Node is triggered, Agent Handover with Chatwoot will be started, and you will find a handover message in the Chatwoot Inbox.
+Wenn Sie eine Konversation mit dem Endpunkt beginnen und der Übergabeknoten ausgelöst wird, wird die Agentenübergabe mit Chatwoot gestartet und Sie finden eine Übergabenachricht im Chatwoot-Posteingang.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Chatwoot_handing_over_info.PNG" width="100%" />
   <figcaption></figcaption>
 </figure>
 
-In your Chatwoot Inbox, user messages are displayed on the left-hand side, on the right-hand side you can see the connected real Agent replies.
-On the left-hand side, the user messages are displayed. On the right-hand side, the connected real agent replies are displayed in Chatwoot.
+In Ihrem Chatwoot-Posteingang werden auf der linken Seite Benutzernachrichten angezeigt, auf der rechten Seite sehen Sie die verbundenen echten Agentenantworten.
+Auf der linken Seite werden die Benutzermeldungen angezeigt. Auf der rechten Seite werden die Antworten der verbundenen echten Agenten in Chatwoot angezeigt.
 
-!!! note "Note"
-    When a User request is answered and solved by the agent, the agent can **Resolve** the connection, and if a further request will come in from the user side, the agent can **Reopen** the connection in Chatwoot to be able to reply to the request.
+!!! note "Notiz"
+    Wenn eine Benutzeranfrage vom Agenten beantwortet und gelöst wird, kann der Agent die Verbindung **auflösen**, und wenn eine weitere Anfrage von der Benutzerseite eingeht, kann der Agent die Verbindung in Chatwoot **erneut öffnen**, um auf die Anfrage antworten zu können.
 
-### Supported message content
+### Unterstützte Nachrichteninhalte
 
-Using the Chatwoot integration, the user can receive
+Mit der Chatwoot-Integration kann der Benutzer
 
-- text messages
-- files
-- videos (for example, mp4)
-- images (for example, jpg, png)
-- animated gifs
+- Textnachrichten
+-Dateien
+- Videos (z.B. mp4)
+- Bilder (z. B. JPG, PNG)
+- Animierte GIFs
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Screen_Shot_139.png" width="100%" />
-  <figcaption>Webchat conversation with text and image</figcaption>
+  <figcaption>Webchat-Konversation mit Text und Bild</figcaption>
 </figure>
 
-### Chatwoot API updates
+### Chatwoot-API-Aktualisierungen
 
-With Cognigy.AI 4.10.0, the Chatwoot API has been updated due to the implementation with Cognigy Live Agent (new color, chat history).
+Mit Cognigy.AI 4.10.0 wurde die Chatwoot-API aufgrund der Implementierung mit Cognigy Live Agent aktualisiert (neue Farbe, Chatverlauf).
 
 Details:
 
-- Chatwoot API updated to version 1.19.0.
-- Support for custom agent bot name (config-map: `AGENT_BOT_NAME`).
-- Support for custom agent bot description (config-map: `AGENT_BOT_DESCRIPTION`).
-- Message history of a conversation is available.
-- Messages in the Chatwoot dashboard appear in a new theming and styling.
+- Die Chatwoot-API wurde auf Version 1.19.0 aktualisiert.
+- Unterstützung für benutzerdefinierte Agent-Bot-Namen (config-map: 'AGENT_BOT_NAME').
+- Unterstützung für benutzerdefinierte Agenten-Bot-Beschreibungen (config-map: 'AGENT_BOT_DESCRIPTION').
+- Der Nachrichtenverlauf einer Konversation ist verfügbar.
+- Nachrichten im Chatwoot-Dashboard werden in einem neuen Design und Styling angezeigt.

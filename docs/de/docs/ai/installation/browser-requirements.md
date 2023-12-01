@@ -1,27 +1,27 @@
 ---
- title: "Browser Requirements" 
- slug: "browser-requirements" 
- hidden: false 
+ title: "Browser-Anforderungen" 
+ Slug: "Browser-Anforderungen" 
+ ausgeblendet: false 
 ---
-# Browser Requirements
+# Browser-Anforderungen
 
-## Cognigy.AI User Interface
+## Cognigy.AI Benutzeroberfläche
 
-The Cognigy.AI User Interface is compatible with the browsers listed below:
+Die Cognigy.AI Benutzeroberfläche ist mit den unten aufgeführten Browsern kompatibel:
 
-| Browser           | Version    |
+| Browser | Ausführung |
 |-------------------|------------|
-| Google Chrome     | 112, 113   |
-| Firefox           | 112, 113   |
-| Microsoft Edge    | 112, 113   |
-| Safari            | 15.6, 16.3 |
+| Google Chrome | 112, 113 |
+| Firefox | 112, 113 |
+| Microsoft Edge | 112, 113 |
+| Safari | 15,6, 16,3 |
 
-For security reasons, older versions of the listed web browsers are not supported by Cognigy.
+Ältere Versionen der aufgeführten Webbrowser werden von Cognigy aus Sicherheitsgründen nicht unterstützt.
 
-## Troubleshooting
+## Fehlerbehebung
 
-If you encounter any issues with browser compatibility, ensure the following before contacting the Cognigy support team:
+Wenn Sie Probleme mit der Browserkompatibilität haben, stellen Sie Folgendes sicher, bevor Sie sich an das Cognigy-Support-Team wenden:
 
-- You are using the latest version of one of the Cognigy.AI supported browsers.
-- Your viewport is larger than 1280x800 pixels.
-- For using Microsoft Japanese IME, your Edge or Chrome browser is on Windows 10 or higher, as there might be issues with other browsers and operating systems.
+- Sie verwenden die neueste Version eines der Cognigy.AI unterstützten Browser.
+- Ihr Viewport ist größer als 1280 x 800 Pixel.
+- Für die Verwendung von Microsoft Japanisch IME ist Ihr Edge- oder Chrome-Browser unter Windows 10 oder höher, da es möglicherweise Probleme mit anderen Browsern und Betriebssystemen gibt.

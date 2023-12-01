@@ -1,100 +1,84 @@
 ---
- title: "Webchat Features" 
- slug: "webchat-features" 
- hidden: false 
+ Titel: "Webchat-Funktionen" 
+ Slug: "Webchat-Funktionen" 
+ ausgeblendet: false 
 ---
-# Webchat Features
+# Webchat-Funktionen
 
-## Webchat Templates
+## Webchat-Vorlagen<div class="divider"></div>## Schnelle Antworten
 
-
-<div class="divider"></div>
-
-## Quick Replies
-
-Using Quick Replies, you can help your users advancing in a conversation by providing example phrases which would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
+Mit Schnellantworten können Sie Ihren Benutzern helfen, in einer Konversation voranzukommen, indem Sie Beispielsätze bereitstellen, die als Antwort passen würden. Wenn der Benutzer auf eine Schnellantwort klickt, sendet er eine von Ihnen definierte vorkonfigurierte Nachricht.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/495f9cb-Screenshot_from_2019-12-09_14-55-49.png" width="100%" />
 </figure>
 
-## Gallery
+## Galerie
 
-If you want to showcase structured content interactively, you can use the Gallery-Template to present one (or more) items with an image, a title, a subtitle as well as optional buttons with links or pre-configured messages.
+Wenn Sie strukturierte Inhalte interaktiv präsentieren möchten, können Sie das Gallery-Template verwenden, um ein (oder mehrere) Elemente mit einem Bild, einem Titel, einem Untertitel sowie optionalen Schaltflächen mit Links oder vorkonfigurierten Nachrichten zu präsentieren.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0098400-Screenshot_from_2019-12-09_14-56-40.png" width="100%" />
 </figure>
 
-## List
+## Liste
 
-Using the List Template, you can present 2-4 list options to a user. This is preferably used over a Gallery Template in case the user has to see all options at a glance.
+Mit der Listenvorlage können Sie einem Benutzer 2-4 Listenoptionen präsentieren. Dies wird vorzugsweise über einem Gallery Template verwendet, falls der Benutzer alle Optionen auf einen Blick sehen muss.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c244a02-Screenshot_from_2019-12-09_14-57-10.png" width="100%" />
 </figure>
 
+## Anhang
 
-## Attachment
+Manchmal ist es notwendig, bestimmte Mediendateien an Benutzer zu senden. Dazu können Sie die Anhangsvorlage verwenden.
 
-Sometimes it is necessary to send certain media files to users. To do this, you can use the Attachment Template.
+### Audio-Anhang
 
-### Audio Attachment
-
-This can be used to send audio files. The user will see a web player and is able to play the file at once.
+Dies kann zum Versenden von Audiodateien verwendet werden. Der Benutzer sieht einen Webplayer und kann die Datei sofort abspielen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/988b7b8-Screenshot_from_2019-12-09_14-56-00.png" width="100%" />
 </figure>
 
-### Image Attachment
+### Bild-Anhang
 
-This can be used to send image files. The user will see the image in a fixed aspect ratio.
+Dies kann zum Versenden von Bilddateien verwendet werden. Der Benutzer sieht das Bild in einem festen Seitenverhältnis.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/59d72bc-Screenshot_from_2019-12-09_14-56-12.png" width="100%" />
 </figure>
 
-### Video Attachment
+### Video-Anhang
 
-This can be used to send video files. The user will see a web player and is able to play the file at once.
+Dies kann zum Versenden von Videodateien verwendet werden. Der Benutzer sieht einen Webplayer und kann die Datei sofort abspielen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c5beeda-Screenshot_from_2019-12-09_14-56-28.png" width="100%" />
 </figure>
 
-## Button Template
+## Button-Vorlage
 
-If you need to provide navigation options for users, but do not need the rich structuring of the Gallery Template, you can use the Button Template to send just Text and Buttons.
+Wenn Sie Navigationsoptionen für Benutzer bereitstellen müssen, aber nicht die umfangreiche Strukturierung der Galerievorlage benötigen, können Sie die Schaltflächenvorlage verwenden, um nur Text und Schaltflächen zu senden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/80f80ca-Screenshot_from_2019-12-09_14-56-57.png" width="100%" />
 </figure>
 
-## Date Picker
-<div class="divider"></div>
+## Datumsauswahl<div class="divider"></div>Jedes Mal, wenn Ihr Bot über den Webchat nach einer Datumseingabe fragt, können Benutzer dieses Datum über eine interaktive Datumsauswahl auswählen.
 
-Anytime your Bot asks for a date input via the Webchat, it will let users select that Date through an interactive Date Picker.
-
-At first, it will present the user a button which indicates the selection of a date.
-
+Zunächst wird dem Benutzer eine Schaltfläche angezeigt, die die Auswahl eines Datums anzeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5f4e69f-Screenshot_from_2019-12-09_15-00-12.png" width="100%" />
 </figure>
 
-When clicked, it will open a full-screen overlay for the Webchat. The user can now pick a date based on constraints you defined in the bot.
+Wenn Sie darauf klicken, wird ein Vollbild-Overlay für den Webchat geöffnet. Der Benutzer kann jetzt ein Datum basierend auf Einschränkungen auswählen, die Sie im Bot definiert haben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/2658fa3-Screenshot_from_2019-12-09_15-00-21.png" width="100%" />
 </figure>
 
-## Persistent Menu
-
-<div class="divider"></div>
-
-If your bot contains a broad and deep set of features, it may be helpful for users to be able to use a menu for navigation. The Persistent Menu solves this issue by providing a set of pre-defined messages (like Quick Replies) that can be accessed from the input bar at any point in the conversation.
-
-<figure>
+## Persistentes Menü<div class="divider"></div>Wenn Ihr Bot einen breiten und tiefen Satz von Features enthält, kann es für Benutzer hilfreich sein, ein Menü für die Navigation verwenden zu können. Das persistente Menü löst dieses Problem, indem es eine Reihe vordefinierter Nachrichten (z. B. Schnellantworten) bereitstellt, auf die jederzeit in der Konversation über die Eingabeleiste zugegriffen werden kann.<figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4aa55ce-Screenshot_from_2019-12-09_14-57-31.png" width="100%" />
 </figure>

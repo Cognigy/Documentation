@@ -1,52 +1,51 @@
 ---
- title: "Data Expiration" 
- slug: "Data Expiration" 
- hidden: false 
+ Titel: "Ablauf der Daten" 
+ slug: "Ablauf der Daten" 
+ ausgeblendet: false 
 ---
-# Data Expiration
+# Ablauf der Daten
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../release-notes/4.59.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.59-blue.svg)] (.. /release-notes/4.59.md)
 
-*Data Expiration* (TTL, time-to-live) displays the duration until the expiration of the Insights data displayed on dashboards. 
+*Datenablauf* (TTL, Time-to-Live) zeigt die Dauer bis zum Ablauf der auf Dashboards angezeigten Insights-Daten an. 
 
-To know when the data will be expired, click ![clock](images/icons/clock.svg) in the upper-right corner of the current page. To view the value in minutes, hover the cursor over the current value.
+Um zu erfahren, wann die Daten ablaufen, klicken Sie auf ! [Uhr] (images/icons/clock.svg) in der oberen rechten Ecke der aktuellen Seite. Um den Wert in Minuten anzuzeigen, bewegen Sie den Mauszeiger über den aktuellen Wert.
 
-When Cognigy products are used daily, the data expiration values will remain unchanged, as the countdown starts from the last data update.
+Wenn Cognigy-Produkte täglich verwendet werden, bleiben die Datenablaufwerte unverändert, da der Countdown ab der letzten Datenaktualisierung beginnt.
 
-## Data Expiration Table
+## Tabelle mit Datenablauf
 
-In the table below, you can view the data included in TTL.
+In der folgenden Tabelle können Sie die in TTL enthaltenen Daten anzeigen.
 
-| Data                | Description                                                                                                       | Dashboards/Explorers                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|---------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Analytics           | This indicates the duration between the creation of all Analytics data and its removal from the database.         | [Overview](dashboard-overview.md): <br>- Number of Inputs <br>- Top Intents  <br>- Understood Messages  <br>- Understood / Misunderstood Messages<br> [Engagement](dashboard-engagement.md): <br>- Avg. Session Length<br> - Max. Session Length <br> [NLU Performance](dashboard-nlu-performance.md): <br> - Avg Intent Score <br> - Average Execution Time <br> - Intents by Score Range <br> - Max Intent Score <br> - Understood Messages <br> - Understood / Misunderstood Messages <br> - Top Intents <br> - Top Intent Scores <br> | 
-| Conversations       | This indicates the duration between the creation of chat history analytics and its removal from the database.     | [Transcript Explorer](transcript-explorer.md), [Message Explorer](message-explorer.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Sessions            | This indicates the duration between the creation of Insights session analytics and its removal from the database. | [Overview](dashboard-overview.md): <br> - Active Contacts<br> - Positive Ratings<br> - Sessions<br> - Session by Channel<br> - Sessions Count<br> - Top Goals<br>- Top Slots<br> - Unique Contacts<br> - Users by Locale<br> [Engagement](dashboard-engagement.md): <br>- Contacts <br>- Goals Reached <br>- Handovers by time of the day <br>- Live Agent Escalations <br>- Positive Ratings <br>- Positive Ratings over Time <br>- Top Goals <br>[NLU Performance](dashboard-nlu-performance.md):<br>- Top Slots                        | 
-| Step Events         | This indicates the duration between the creation of Step data and its removal from the database.                  | [Step Explorer](step-explorer.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| LiveAgentEscalation | This indicates the duration between the creation of Live Agent data and its removal from the database.            | [Live Agent](dashboard-live-agent.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| VoiceGatewayEvents  | This indicates the duration between the creation of Voice Gateway data and its removal from the database.         | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| Daten | Beschreibung | Dashboards/Explorer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|---------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Analytik | Dies gibt die Zeitspanne zwischen der Erstellung aller Analytics-Daten und deren Entfernung aus der Datenbank an.         | [Übersicht] dashboard-overview.md): <br>- Anzahl der Eingänge <br>- Top-Absichten  <br>- Verstandene Botschaften  <br>- Verstandene / missverstandene Nachrichten<br> [Verlobung] (dashboard-engagement.md): <br>- Durchschnittliche Sitzungsdauer<br> - Max. Sitzungsdauer <br> [NLU-Leistung] dashboard-nlu-performance.md): <br> - Durchschnittliche Absichtsbewertung <br> - Durchschnittliche Ausführungszeit <br> - Absichten nach Punktebereich <br> - Maximaler Intent-Score <br> - Verstandene Botschaften <br> - Verstandene / missverstandene Nachrichten <br> - Top-Absichten <br> - Top-Intent-Scores <br> | 
+| Unterhaltungen | Dies gibt die Zeitspanne zwischen der Erstellung der Chatverlaufsanalyse und ihrer Entfernung aus der Datenbank an.     | [Transkript-Explorer] (transcript-explorer.md), [Nachrichten-Explorer](message-explorer.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Sitzungen | Dies gibt die Zeitspanne zwischen der Erstellung der Insights-Sitzungsanalyse und ihrer Entfernung aus der Datenbank an. | [Übersicht] dashboard-overview.md): <br> - Aktive Kontakte<br> - Positive Bewertungen<br> -Sitzungen<br> - Sitzung nach Kanal<br> - Anzahl der Sitzungen<br> - Top-Ziele<br>- Top-Slots<br> - Einzigartige Kontakte<br> - Benutzer nach Gebietsschema<br> [Verlobung] (dashboard-engagement.md): <br>-Kontakte <br>- Erreichte Ziele <br>- Übergaben nach Tageszeiten <br>- Live-Agenten-Eskalationen <br>- Positive Bewertungen <br>- Positive Bewertungen im Laufe der Zeit <br>- Top-Ziele <br>[NLU-Leistung] dashboard-nlu-performance.md):<br>- Top-Slots | 
+| Schritt-Veranstaltungen | Dies gibt die Zeitspanne zwischen der Erstellung von Schrittdaten und deren Entfernung aus der Datenbank an.                  | [Schritt-Explorer] (step-explorer.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| LiveAgentEskalation | Dies gibt die Zeitspanne zwischen der Erstellung von Live Agent-Daten und deren Entfernung aus der Datenbank an.            | [Live-Agent] (dashboard-live-agent.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| VoiceGatewayEvents | Dies gibt die Zeitspanne zwischen der Erstellung von Voice Gateway-Daten und deren Entfernung aus der Datenbank an.         | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
+## Datenablauf aktivieren
 
-## Activating Data Expiration
+Cognigy bewahrt Daten standardmäßig auf unbestimmte Zeit auf. Um dieses Verhalten zu ändern, muss ein Ablaufdatum eingerichtet werden.
 
-Cognigy keeps data indefinitely by default. To change this behavior, an expiration date must be set up.
+Um die Funktion "Datenablauf" zu aktivieren, legen Sie Limits über die [management-ui](.. /ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data), wenn Sie über eine lokale Cognigy.AI-Installation verfügen. Andernfalls wenden Sie sich an [Technischer Support](.. /help/get-help.md#help-center) und geben Sie die gewünschten Grenzwerte in Ihrer Anfrage an.
 
-To activate the Data Expiration feature, set limits via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center) and specify the desired limits in your request.
+Wenn Sie bereits Grenzwerte im management-ui-Dienst festgelegt haben, wird der Indikator Datenablauf automatisch in der Insights-Benutzeroberfläche angezeigt.
 
-If you have already set limits in the management-ui service, the Data Expiration indicator will automatically appear in the Insights interface.
+Die Funktion "Datenablauf" gilt nur für neue Daten, die von Cognigy nach der Aktivierung des Datenablaufs in der Verwaltungsoberfläche abgerufen wurden. Daten, die vor dem Festlegen des Ablaufwerts abgerufen wurden, bleiben erhalten.
 
-The Data Expiration feature applies only to new data obtained by Cognigy after activating Data Expiration in management-ui. Data obtained before setting the expiration value remains.
+Zum Beispiel:
 
-For example:
-
-> In management-ui, you set the 1-minute expiration value at 13:00 for Sessions.
+> In management-ui legen Sie den 1-Minuten-Ablaufwert für Sitzungen auf 13:00 Uhr fest.
 > 
-> Sessions created after 13:00 will automatically terminate after 1 minute due to the 1-minute expiration date set in management-ui.
+> Sitzungen, die nach 13:00 Uhr erstellt wurden, werden aufgrund des in der management-ui festgelegten Ablaufdatums von 1 Minute automatisch nach 1 Minute beendet.
 > 
-> Sessions created before 13:00 will remain unchanged.
+> Sitzungen, die vor 13:00 Uhr erstellt wurden, bleiben unverändert.
 
-## Changing Data Expiration
+## Datenablauf ändern
 
-You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
+Sie können die Dauer des Datenablaufs über die [management-ui](.. /ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data), wenn Sie über eine lokale Cognigy.AI-Installation verfügen. Andernfalls wenden Sie sich an [Technischer Support](.. /help/get-help.md#help-center). 
 
-When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
+Wenn Sie den Wert für den Datenablauf anpassen, gilt er nur für neue Daten, die von Cognigy erhalten wurden. Der Ablaufwert für zuvor abgerufene Daten bleibt unverändert.

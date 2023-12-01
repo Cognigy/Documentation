@@ -1,34 +1,34 @@
 ---
-title: "Overview" 
-slug: "overview" 
-hidden: false 
+Titel: "Übersicht" 
+Schnecke: "Übersicht" 
+ausgeblendet: false 
 ---
 
-# Reports
+# Berichte
 
-_Reports_ are analytic dashboards for supervisors and managers in Live Agent. These reports offer real-time insights into the performance and activities of agents and teams, allowing for the monitoring and evaluation of interactions with customers, facilitating quick adjustments, and driving improvements in customer support processes.
+_Berichte_ sind analytische Dashboards für Vorgesetzte und Manager in Live Agent. Diese Berichte bieten Echtzeit-Einblicke in die Leistung und die Aktivitäten von Agenten und Teams, ermöglichen die Überwachung und Bewertung von Interaktionen mit Kunden, erleichtern schnelle Anpassungen und treiben Verbesserungen in den Kundensupportprozessen voran.
 
-Only users with `Administrator` or `Supervisor` roles have access to the reports.
+Nur Benutzer mit den Rollen "Administrator" oder "Supervisor" haben Zugriff auf die Berichte.
 
-Depending on your role, the following reports will be available:
+Abhängig von Ihrer Rolle stehen die folgenden Berichte zur Verfügung:
 
-- Supervisor:
-    - [Overview](supervisor-overview.md)
-- Administrator: 
-    - [Conversations](admin/conversations.md)  
-    - [Agents](admin/agents.md)
+-Aufseher:
+    - [Übersicht](supervisor-overview.md)
+-Administrator: 
+    - [Unterhaltungen](admin/conversations.md)  
+    - [Agenten](admin/agents.md)
     - [Labels](admin/labels.md)
-    - [Inboxes](admin/inboxes.md)
+    - [Posteingänge](admin/inboxes.md)
     - [Teams](admin/teams.md)
 
-## View Reports
+## Berichte anzeigen
 
-To view the reports, do the following:
+Um die Berichte anzuzeigen, gehen Sie wie folgt vor:
 
-1. Go to Live Agent.
-2. In the left-side menu, click **Reports**.
+1. Gehen Sie zu Live Agent.
+2. Klicken Sie im Menü auf der linken Seite auf **Berichte**.
 
-## More information
+## Mehr Informationen
 
-- [Insights: Live Agent dashboard](../../insights/dashboard-live-agent.md)
-- [Live Agent Glossary](../glossary.md)
+- [Einblicke: Live-Agenten-Dashboard](.. /.. /insights/dashboard-live-agent.md)
+- [Live-Agenten-Glossar](.. /glossary.md)

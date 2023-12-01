@@ -1,19 +1,17 @@
 ---
- title: "Hang Up" 
- slug: "hang-up" 
- hidden: false 
+ Titel: "Auflegen" 
+ Schnecke: "auflegen" 
+ ausgeblendet: false 
 ---
-# Hang Up
+# Auflegen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/hang-up.png" width="80%" />
-  <figcaption>Voice Gateway Hang Up Node</figcaption>
+  <figcaption>Voice-Gateway-Knoten zum Auflegen</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Hang Up Node will instruct Voice Gateway to end the call.
+## Beschreibung<div class="divider"></div>Der Hang Up Node weist Voice Gateway an, den Anruf zu beenden.
 
-| Parameter          | Type | Description                                      |
+| Parameter | Typ | Beschreibung |
 |--------------------|------|--------------------------------------------------|
-| Reason for hang up | Text | The reason for hanging up, will be shown in logs |
+| Grund für das Auflegen | Text | Der Grund für das Auflegen wird in Protokollen angezeigt |

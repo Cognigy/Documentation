@@ -1,31 +1,31 @@
 ---
-title: "AI Copilot for Chat"
-slug: "chat"
-hidden: false
+Titel: "KI-Copilot für Chat"
+Schnecke: "chatten"
+ausgeblendet: false
 ---
 
-# AI Copilot for Chat 
+# KI-Copilot für Chat 
 
-## Cognigy in Front
+## Cognigy im Vordergrund
 
-In Cognigy In Front use cases, no additional manual effort is needed. 
+In den Anwendungsfällen von Cognigy In Front ist kein zusätzlicher manueller Aufwand erforderlich. 
 
-Ensure that you configure the **Handover Settings** and **Copilot** Settings in the Endpoint and use **the Handover to Agent** Node in the Flow.
+Stellen Sie sicher, dass Sie die **Übergabeeinstellungen** und **Copilot**-Einstellungen im Endpunkt konfigurieren und den Knoten **Übergabe an Agent** im Flow verwenden.
 
-All necessary information like `sessionId`, `orgId`, `projectId`, `userId`, and `configId` will be forwarded while doing the transfer to the human agent. 
+Alle notwendigen Informationen wie 'sessionId', 'orgId', 'projectId', 'userId' und 'configId' werden während der Übertragung an den menschlichen Agenten weitergeleitet. 
 
-This approach lets you connect to the right session and send widget updates.
+Auf diese Weise können Sie eine Verbindung mit der richtigen Sitzung herstellen und Widget-Updates senden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai-copilot/images/chat.png" width="80%" />
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot](overview.md)
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](voice/voice-overview.md)
-- [Integration with Contact Centers](contact-center-integration.md)
+- [KI-Copilot](overview.md)
+- [Erste Schritte mit AI Copilot](getting-started.md)
+- [Konfiguration des KI-Copiloten](configuration.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](embedding.md)
+- [KI-Copilot für Sprache](voice/voice-overview.md)
+- [Integration mit Contact Centern](contact-center-integration.md)

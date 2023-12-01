@@ -1,13 +1,10 @@
 ---
- title: "Agent Analytics" 
- slug: "agents-analytics" 
- hidden: false 
+ Titel: "Agenten-Analyse" 
+ Slug: "Agenten-Analytik" 
+ ausgeblendet: false 
 ---
-# Agent Analytics
+# Agenten-Analyse
 
-With **Cognigy.AI v4.10.0** we made [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) the default analytics platform. Head over to the Cognigy Insights specific documentation for more info.
+Mit **Cognigy.AI v4.10.0** haben wir [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/) zur Standard-Analyseplattform gemacht. Weitere Informationen finden Sie in der spezifischen Dokumentation von Cognigy Insights.
 
-## Customization
-<div class="divider"></div>
-
-Customization of dashboards in Cognigy Insights is not possible, however the data used to populate the dashboards is accessible via the [OData Analytics Endpoint](odata-analytics-endpoint.md). Find out more about how to access the OData feed [here]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).
+## Anpassung<div class="divider"></div>Die Anpassung von Dashboards in Cognigy Insights ist nicht möglich, jedoch sind die Daten, die zum Befüllen der Dashboards verwendet werden, über den [OData Analytics Endpoint](odata-analytics-endpoint.md) zugänglich. Weitere Informationen zum Zugriff auf den OData-Feed finden Sie [hier]({{config.site_url}}ai/tools/analytics/odata-analytics-endpoint/).

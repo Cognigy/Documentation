@@ -1,8 +1,8 @@
 ---
- title: "AudioCodes" 
- slug: "audiocodes" 
- hidden: false 
+ Titel: "AudioCodes" 
+ Slug: "Audiocodes" 
+ ausgeblendet: false 
 ---
 # AudioCodes
 
-AudioCodes Nodes expose functionality provided by [AudioCodes](https://www.cognigy.com/products/voice-gateway){:target="_blank"} directly in the Flow Editor. The Nodes are installed by default from Cognigy.AI 4.0.2 on.
+AudioCodes-Knoten stellen die von [AudioCodes](https://www.cognigy.com/products/voice-gateway){:target="_blank"} bereitgestellten Funktionen direkt im Flow-Editor zur Verfügung. Die Nodes werden standardmäßig ab Cognigy.AI 4.0.2 installiert.

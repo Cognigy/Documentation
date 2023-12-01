@@ -1,14 +1,14 @@
 ---
-title: "Handover Setup" 
-slug: "live-agent-setup-handover" 
-hidden: false 
+title: "Übergabe-Setup" 
+Slug: "Live-Agent-Setup-Handover" 
+ausgeblendet: false 
 ---
 
-# Set up Handover for Live Agent
+# Übergabe für Live-Agent einrichten
 
-After configuring your Project Inbox for Live Agent, proceed to set up your Cognigy.AI Agent for Handover to Live Agent.
+Nachdem Sie Ihren Projekteingang für Live Agent konfiguriert haben, fahren Sie mit der Einrichtung Ihres Cognigy.AI Agenten für die Übergabe an Live Agent fort.
 
-Configuring the Handover for Live Agent involves two steps:
+Die Konfiguration der Übergabe für Live Agent umfasst zwei Schritte:
 
-1. [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md)
-2. [Set up your Flow for Handover to Live Agent](live-agent-setup-handover-flow.md)
+1. [Richten Sie Ihren Endpunkt für die Übergabe an den Live-Agenten ein](live-agent-setup-handover-endpoint.md)
+2. [Richten Sie Ihren Flow für die Übergabe an den Live-Agenten ein](live-agent-setup-handover-flow.md)

@@ -1,25 +1,25 @@
 ---
-title: "Assistants" 
-slug: "overview" 
-hidden: false 
+Titel: "Assistenten" 
+Schnecke: "Übersicht" 
+ausgeblendet: false 
 ---
 
-# Live Agent Assistants
+# Live-Agenten-Assistenten
 
-Assistants in Cognigy.AI are tools designed to support human agents in their interactions with customers. They often involve AI-powered features, helping agents provide more effective assistance and enhance the overall customer experience.
+Assistenten in Cognigy.AI sind Werkzeuge, die menschliche Agenten bei der Interaktion mit Kunden unterstützen sollen. Sie beinhalten oft KI-gestützte Funktionen, die den Agenten helfen, effektivere Unterstützung zu leisten und das allgemeine Kundenerlebnis zu verbessern.
 
-With assistants, among other things, the following can be achieved:
+Mit Assistenten kann u.a. folgendes erreicht werden:
 
-- Provide contextual information for the agent (CRM records, ERP data, small talk clues, and more).
-- Enable quick access to resources such as knowledge base articles.
-- Suggest replies (including media) that can be forwarded to the customer.
+- Stellen Sie Kontextinformationen für den Agenten bereit (CRM-Datensätze, ERP-Daten, Smalltalk-Hinweise und mehr).
+- Ermöglichen Sie den schnellen Zugriff auf Ressourcen wie Wissensdatenbankartikel.
+- Schlagen Sie Antworten (einschließlich Medien) vor, die an den Kunden weitergeleitet werden können.
 
-To set up your Project for assistants, choose a virtual assistant that best suits your requirements:
+Um Ihr Projekt für Assistenten einzurichten, wählen Sie einen virtuellen Assistenten aus, der Ihren Anforderungen am besten entspricht:
 
-- [Assist Bot](assist-bot.md). Refers to the personal tool for human agents. It offers a unique Flow for agents to access additional information as needed.
-- [LA AI Copilot](la-ai-copilot.md). Refers to the functionality that provides assistance to live agents during their interactions with customers. It typically includes real-time guidance, suggestions, and recommendations to help agents effectively handle customer inquiries or issues. LA AI Copilot focuses on providing support directly from the conversation window.
-- [AI Copilot](ai-copilot.md). Refers to the dedicated workspace or environment where human agents access various tools, resources, and features to assist them in their customer interactions. It encompasses the entire workspace setup, which may include customer information, knowledge bases, collaboration tools, and other relevant components. AI Copilot aims to provide a comprehensive and efficient working environment for human agents to manage their interactions with customers.
+- [Bot unterstützen](assist-bot.md). Bezieht sich auf das persönliche Werkzeug für menschliche Agenten. Es bietet einen einzigartigen Flow für Agenten, um bei Bedarf auf zusätzliche Informationen zuzugreifen.
+- [LA AI Copilot](la-ai-copilot.md). Bezieht sich auf die Funktionalität, die Live-Agenten bei ihren Interaktionen mit Kunden unterstützt. Es umfasst in der Regel Echtzeit-Anleitungen, Vorschläge und Empfehlungen, um Agenten bei der effektiven Bearbeitung von Kundenanfragen oder -problemen zu unterstützen. LA AI Copilot konzentriert sich auf die Bereitstellung von Unterstützung direkt aus dem Konversationsfenster.
+- [KI-Copilot](ai-copilot.md). Bezieht sich auf den dedizierten Arbeitsbereich oder die Umgebung, in der menschliche Agenten auf verschiedene Tools, Ressourcen und Funktionen zugreifen, um sie bei ihren Kundeninteraktionen zu unterstützen. Es umfasst die gesamte Einrichtung des Arbeitsbereichs, die Kundeninformationen, Wissensdatenbanken, Tools für die Zusammenarbeit und andere relevante Komponenten umfassen kann. AI Copilot zielt darauf ab, eine umfassende und effiziente Arbeitsumgebung für menschliche Agenten bereitzustellen, um ihre Interaktionen mit Kunden zu verwalten.
 
-## More Information
+## Mehr Informationen
 
-- [Agent Assist Workspace Overview](../../ai-copilot/overview.md)
+- [Übersicht über den Arbeitsbereich "Agent Assist"](.. /.. /ai-copilot/overview.md)

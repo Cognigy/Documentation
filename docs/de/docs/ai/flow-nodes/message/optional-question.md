@@ -1,108 +1,87 @@
 ---
- title: "Optional Question" 
- slug: "optional-question" 
- hidden: false 
+ Titel: "Optionale Frage" 
+ Slug: "Optionale-Frage" 
+ ausgeblendet: false 
 ---
-# Optional Question
+# Optionale Frage
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/optional-question.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein optionaler Frageknoten wird verwendet, um eine Frage zu stellen, die bestimmte Informationen vom Benutzer anfordert. Der Knoten kann so konfiguriert werden, dass er verschiedene Arten von Eingaben erwartet. Sobald der ausgewählte Datentyp in der Benutzereingabe erkannt wird, wird der optionale Frageknoten beantwortet.
 
-An Optional Question Node is used to ask a question that requests specific information from the user. The Node can be configured to expect different types of input. As soon as the selected type of data is detected in the user input, the Optional Question Node is answered.
-
-!!! warning "Difference with Question Node"
-    The **Optional Question** Node is **non-blocking**. This means that the user will be able to continue their conversation with the Flow if they have not provided an answer to the Optional Question. Before regular Flow execution, the System will check if the User Input answers the Optional Question to find a result. If not, the flow execution will follow a different path.
-
-<blockquote class="callout callout_info" theme="📘">
+!!! Warnung "Unterschied zum Frageknoten"
+    Der Knoten **Optionale Frage** ist **nicht blockierend**. Dies bedeutet, dass der Benutzer seine Konversation mit dem Flow fortsetzen kann, wenn er keine Antwort auf die optionale Frage gegeben hat. Vor der regulären Flow-Ausführung prüft das System, ob die Benutzereingabe die optionale Frage beantwortet, um ein Ergebnis zu erhalten. Ist dies nicht der Fall, folgt die Flow-Ausführung einem anderen Pfad.<blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Technical video "Question Nodes"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank">Technisches Video "Question Nodes"</a>
       </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
+      <div class="callout-subtext">Sehen Sie sich diese Folge von Cognigy Sessions an, um einen technischen Einblick zu erhalten      </div>
    </div>
-</blockquote>
+</blockquote>!!! info "Fragetypen"
+    Es gibt verschiedene Arten von Abfragen, die Sie verwenden können, die im Folgenden ausführlich beschrieben werden:
 
-!!! info "Question Types"
-    There are different types of queries that you can use, which are described in detail below:
-
-| Type        | Required user input to answer question                                                                                                                                                                                                  |
+| Typ | Erforderliche Benutzereingabe zum Beantworten der Frage |
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text        | Any text input                                                                                                                                                                                                                          |
-| Yes / No	   | A positive or negative response                                                                                                                                                                                                         |
-| Intent      | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) must be identified from the user's response                                                                                                            |
-| Slot        | A [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) or [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) must be detected within the user's response. The slot is defined by name. |
-| Date        | Any date (system-defined)                                                                                                                                                                                                               |
-| Number      | Any number (system-defined)                                                                                                                                                                                                             |
-| Temperature | Any temperature (system-defined)                                                                                                                                                                                                        |
-| Age         | Any age (system-defined)                                                                                                                                                                                                                |
-| Duration    | Any time duration (system-defined)                                                                                                                                                                                                      |
-| Email       | Any email address (system-defined)                                                                                                                                                                                                      |
-| Money       | Any monetary value (system-defined)                                                                                                                                                                                                     |
-| URL         | Any reference/address to a resource on the Internet for example, http://example.com                                                                                                                                                     |
-| Percentage  | Any percentage (system-defined)                                                                                                                                                                                                         |
-| Regex       | Any custom data format defined by a regex expression must be detected in the user's response                                                                                                                                            |
-| Data        | Any data (input.data) input                                                                                                                                                                                                             |
+| Text | Beliebige Texteingabe |
+| Ja / Nein | Eine positive oder negative Antwort |
+| Absicht | Eine der trainierten [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) muss aus der Antwort des Benutzers identifiziert werden |
+| Spielautomat | In der Antwort des Benutzers muss ein [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) oder [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) erkannt werden. Der Slot wird durch den Namen definiert. |
+| Datum | Beliebiges Datum (systemdefiniert) |
+| Anzahl | Beliebige Zahl (systemdefiniert) |
+| Temperatur | Beliebige Temperatur (systemdefiniert) |
+| Alter | Beliebiges Alter (systemdefiniert) |
+| Dauer | Beliebige Zeitdauer (systemdefiniert) |
+| E-Mail | Beliebige E-Mail-Adresse (systemdefiniert) |
+| Geld | Beliebiger Geldwert (systemdefiniert) |
+| Internetadresse | Jeder Verweis/jede Adresse auf eine Ressource im Internet, z. B. http://example.com |
+| Prozentsatz | Beliebiger Prozentsatz (systemdefiniert) |
+| Regex | Jedes benutzerdefinierte Datenformat, das durch einen Regex-Ausdruck definiert wird, muss in der Antwort des Benutzers erkannt werden |
+| Daten | Beliebige Dateneingabe (input.data) |
 
-!!! info "Supported Data formats for System Defined slots"
-    All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) page.
-## Channels and Output types
-<div class="divider"></div>
+!!! info "Unterstützte Datenformate für System Defined Slots"
+    Alle Datenformate, die von der Cognigy NLU für die System-Slot-Zuordnung unterstützt werden, sind auf der Seite [Slot-Zuordnung]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) aufgeführt.
+## Kanäle und Ausgangstypen<div class="divider"></div>Die Ausgabetypen des Frageknotens haben die gleiche Funktionalität wie der [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
 
-Question node output types carry the same functionality as the [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
+!!! Erfolg "Date-Fragen"
+    Falls der Fragetyp Datum ausgewählt wurde, rendert der Frageknoten automatisch eine Datumsauswahl, wenn der Kanal dies zulässt. Weitere Informationen finden Sie unter [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/). 
+## Fortgeschritten<div class="divider"></div>Der optionale Frageknoten verfügt über vier erweiterte Einstellungen, die verwendet werden können.
 
-!!! success "Date Questions"
-    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
-## Advanced
-<div class="divider"></div>
+### Detaillierte Ergebnisse speichern
+Wenn diese Einstellung aktiviert ist, wird ein detaillierteres JSON-Objekt unter der result-Eigenschaft der Eingabe gespeichert. Dies ist nützlich, falls weitere Informationen benötigt werden.
 
-The Optional Question Node has four advanced settings that can be used.
+### Beenden der Flow-Ausführung nach der Antwort
+Wenn diese Option aktiviert ist, wird die Flow-Ausführung nach dem Fall "On answer" gestoppt und wartet auf eine weitere Eingabe.
 
-### Store detailed Results
-This setting, when enabled, stores a more detailed JSON object under the result property of the input. This is useful in case more information is needed.
+### Frageschwelle vergessen
+Der Unterschied zu einem normalen Frageknoten besteht darin, dass der optionale Frageknoten nicht beantwortet werden muss. Wenn der optionale Frageknoten ausgelöst wird und keine Antwort gegeben wird, bleibt die Tatsache, dass die Frage "gestellt" wurde, dennoch im Speicher. Mit dieser Einstellung können Sie entscheiden, für wie viele Eingaben die optionale Frage im Speicher gehalten werden soll. 
 
-### Stop Flow execution after Answer
-When enabled, Flow execution will stop after the "On answer" case and wait for another input.
-
-### Forget Question Threshold
-The difference with a regular Question Node is that the Optional Question Node does not need to be answered. If the Optional Question Node is triggered and no answer is provided, the fact that the question was "asked" is nonetheless kept in memory. With this setting you can decide for how many inputs the Optional Question should be kept in memory. 
-
-### Parse CognigyScript
-Lets you decide on which user input the CognigyScript after Answer should be executed.
+### CognigyScript-Parsen
+Hiermit können Sie entscheiden, bei welcher Benutzereingabe das CognigyScript nach Answer ausgeführt werden soll.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/711c019-optional-question-advanced.jpg" width="100%" />
 </figure>
 
-## Result Storage
-<div class="divider"></div>
+## Speicherung von Ergebnissen<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c04587d-context.jpg" width="100%" />
-</figure>
+</figure>Wenn Ergebnis im Kontext speichern aktiviert ist, wird das Frageergebnis auch im Objekt [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) gespeichert. 
 
-If Store Result in Context is enabled, the Question Result will also be stored in the [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) object. 
+## Fragen Sie Informationen in der Eingabe<div class="divider"></div>Wenn eine optionale Frage "aktiv" ist, d. h. auf eine Antwort gewartet wird, werden dem Input-Objekt Informationen über die optionale Frage hinzugefügt.
 
-## Question Information in Input
-<div class="divider"></div>
-
-When an Optional Question is "active", meaning an answer is being waited for, information about the Optional Question is added to the Input object.
-
-```JSON
+'''JSON
 "activeOptionalQuestion": {
     "nodeId": "cb81db3a-6230-49e7-8ce4-12f877abe0cb",
-    "type": "yesNo",
+    "type": "jaNein",
     "lastExecutedAt": 1,
     "forgetQuestionThreshold": 3
 }
-``` 
+''' 
 
-## AI-enhanced output
+## KI-gestützte Ausgabe
 
-To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+Um die KI-gestützte Umformulierung der Bot-Ausgabe zu verwenden, lesen Sie die [Generative AI](.. /.. /generative-ai.md#rephrase-bot-outputs) Artikel.

@@ -1,14 +1,14 @@
 ---
-title: "Migration Guides"
-slug: "migration-guides"
-hidden: false
-ignore_macros: true
+Titel: "Migrationsleitfäden"
+Schnecke: "Migrations-Leitfäden"
+ausgeblendet: false
+ignore_macros: wahr
 ---
 
-# Migration Guides
+# Migrations-Leitfäden
 
-- [MongoDB: Single to Multi Replica](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md)
+- [MongoDB: Einzel- zu Multi-Replikat](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md)
 - [Kustomize to Helm](kustomize-to-helm-migration.md)
-- [Amazon EFC Provisioner to EFC CSI](efs-provisioner-to-efs-csi-migration.md)
-- [Cognigy NLU: from V1 to V2](from-nlu-v1-to-v2-migration.md)
-- [Redis: Single Replica to Redis HA Migration](single-replica-redis-to-redis-ha-migration.md)
+- [Amazon EFC Provisioner für EFC CSI](efs-provisioner-to-efs-csi-migration.md)
+- [Cognigy NLU: von V1 bis V2](from-nlu-v1-to-v2-migration.md)
+- [Redis: Migration eines einzelnen Replikats zu Redis HA](single-replica-redis-to-redis-ha-migration.md)

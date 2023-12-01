@@ -1,44 +1,44 @@
 ---
-title: "Conversations" 
-slug: "conversations-report" 
-hidden: false 
+Titel: "Gespräche" 
+Slug: "Konversations-Bericht" 
+ausgeblendet: false 
 ---
 
-# Conversations Report
+# Bericht "Gespräche"
 
-This report shows detailed conversation metrics within an account. 
+In diesem Bericht werden detaillierte Konversationsmetriken innerhalb eines Kontos angezeigt. 
 
-The report lets you easily track trends,
-such as increases or decreases in the number of conversations, both incoming and outgoing messages,
-the average response time from agents, the average resolution time for customer issues,
-and the number of successfully resolved customer requests.
+Mit dem Bericht können Sie ganz einfach Trends verfolgen,
+wie z. B. die Zunahme oder Verringerung der Anzahl der Gespräche, sowohl eingehende als auch ausgehende Nachrichten,
+die durchschnittliche Reaktionszeit von Agenten, die durchschnittliche Lösungszeit für Kundenprobleme,
+und die Anzahl der erfolgreich gelösten Kundenanfragen.
 
-To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
+Weitere Informationen zu Metriken finden Sie unter [Berichtsmetriken](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_conversations_report.png" width="100%" alt="Live Agent conversations report" />
-  <figcaption>Conversations report</figcaption>
+  <figcaption>Bericht "Konversationen"</figcaption>
 </figure>
 
-You can filter data by date. You can select the time period for measurement from the upper drop-down list.
+Sie können Daten nach Datum filtern. Sie können den Zeitraum für die Messung aus der oberen Dropdown-Liste auswählen.
 
-For example, if **last 7 days** is selected, which is the default, the calculation period extends backward from now for seven days.
+Wenn z. B. **letzte 7 Tage** ausgewählt ist, was die Standardeinstellung ist, erstreckt sich der Berechnungszeitraum ab jetzt um sieben Tage nach hinten.
 
-## View a Report
+## Einen Bericht anzeigen
 
-To view a report, do the following:
+Um einen Bericht anzuzeigen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Conversations**.
-3. In the upper-left corner of the report page, select a time period from the list.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Berichte > Unterhaltungen**.
+3. Wählen Sie in der oberen linken Ecke der Berichtsseite einen Zeitraum aus der Liste aus.
 
-The chart will be updated with the corresponding data related to the selected filter.
+Das Diagramm wird mit den entsprechenden Daten aktualisiert, die sich auf den ausgewählten Filter beziehen.
 
-## Download a Report
+## Bericht herunterladen
 
 {! _includes/live-agent/download-report.md !}
 
-## More information
+## Mehr Informationen
 
-- [Admin reports](overview.md)
-- [Reports](overview.md)
+- [Admin-Berichte](overview.md)
+- [Berichte](overview.md)

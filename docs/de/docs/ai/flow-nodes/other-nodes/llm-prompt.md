@@ -1,120 +1,116 @@
 ---
-title: "LLM Prompt"
+Titel: "LLM-Eingabeaufforderung"
 slug: "llm-prompt"
-description: "The Cognigy LLM Prompt Node allows using Generative AI for creating relevant content."
-hidden: false
+description: "Der Cognigy LLM Prompt Node ermöglicht den Einsatz von generativer KI für die Erstellung relevanter Inhalte."
+ausgeblendet: false
 ---
 
-# LLM Prompt
+# LLM-Eingabeaufforderung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.64-blue.svg)] (.. /.. /.. /release-notes/4.64.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/llm-prompt.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Der LLM Prompt Node ermöglicht die Verwendung von generativer KI für die Erstellung relevanter Inhalte.
 
-The LLM Prompt Node allows using Generative AI for creating relevant content.
+Bevor Sie diesen Node verwenden, legen Sie den Generative AI-Anbieter in den [Einstellungen](.. /.. /generative-ai.md#set-up-generative-ai).
+Sie können den Knoten so konfigurieren, dass er entweder das in den Einstellungen definierte Standardmodell verwendet oder einen bestimmten konfigurierten LLM auswählt.
 
-Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
-You can configure the Node to either use the default model defined in the Settings or choose a specific configured LLM.
+Der Node unterstützt die folgenden Modi:
 
-The Node supports the following modes:
+-**Plaudern**. Dieser Modus ist standardmäßig aktiviert und eignet sich hervorragend für dynamische Konversationen und Interaktionen mit dem Modell.
+  Es berücksichtigt den Kontext der Nachrichten des Benutzers und des Bots,
+  abhängig von der gewählten Anzahl von Transkript-Turns (Nachrichten) in der Einstellung **Transkriptschritte**.
+-**Prompt**. Dieser Modus ist für Single-Turn-Aufgaben oder das Generieren von Text basierend auf einer einzelnen Eingabeaufforderung vorzuziehen.
 
-- **Chat**. This mode is activated by default and is preferable for dynamic conversations and interactions with the model.
-  It takes into account the context of messages from the user and the bot,
-  depending on the chosen number of transcript turns (messages) in the **Transcript Steps** setting.
-- **Prompt**. This mode is preferable for single-turn tasks or generating text based on a single prompt.
+Wenn Ihr LLM-Anbieter den Chat-Modus nicht unterstützt, wandelt Cognigy die Chat-Anfrage automatisch in eine Eingabeaufforderung um.
 
-If your LLM provider doesn't support Chat mode, Cognigy will automatically convert the Chat request to a Prompt request.
+### Speichern von Ergebnissen
 
-### Storing Results
+Um die Modellausgabe zu speichern und dann dem Benutzer die Ausgabe des LLM-Eingabeaufforderungsknotens anzuzeigen, wählen Sie **In Eingabe speichern** oder **In Kontext speichern** im Abschnitt [Speicher- und Streaming-Optionen](#storage--streaming-options) aus.
 
-To store the model output and then display the output of the LLM Prompt Node to the user, select **Store to Input** or **Store to Context** in the [Storage & Streaming Options](#storage--streaming-options) section.
+### Streaming-Ergebnisse
 
-### Streaming Results
+Wenn Sie möchten, dass das Ausgabeergebnis sofort im Chat angezeigt wird, ohne es in den Input- oder Context-Objekten zu speichern und den Say-Knoten zu verwenden, wählen Sie die Einstellung **Stream to Output** im Abschnitt [Speicher- und Streaming-Optionen](#storage--streaming-options) aus.
 
-If you want the output result to be immediately displayed in the chat, without saving it in the Input or Context objects and utilizing the Say Node, select the **Stream to Output** setting in the [Storage & Streaming Options](#storage--streaming-options) section.
+## Einstellungen
 
-## Settings
+### Anleitung
 
-### Instruction
+Dies ist entweder die Aufforderung zum Abschluss oder die Systemnachricht für den Chat.
 
-This is either the prompt for completions or the system message for chat.
+Darüber hinaus können Sie die letzte Konversation in das Feld **Eingabeaufforderung** einfügen, indem Sie die folgenden Tags verwenden:
 
-Additionally, you can inject the recent conversation into the **Prompt** field by using these tags:
-
-- `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
-   ```text
+- '@cognigyRecentConversation' — das Tag wird durch eine Zeichenfolge ersetzt, die bis zu 10 aktuelle virtuelle Agenten und 10 Benutzerausgaben enthalten kann, zum Beispiel:
+   '''text
    Bot: agentOutput1
-   User: userOutput1
+   Benutzer: userOutput1
    Bot: agentOutput2
-   User: userOutput2
-   ```
-- `@cognigyRecentUserInputs` — the tag is replaced with a string that can contain up to 10 recent user outputs, for example:
+   Benutzer: userOutput2
+   '''
+- '@cognigyRecentUserInputs' — das Tag wird durch eine Zeichenfolge ersetzt, die bis zu 10 aktuelle Benutzerausgaben enthalten kann, zum Beispiel:
 
-    ```text
-    User: userOutput1
-    User: userOutput2
-    ```
+'''text
+    Benutzer: userOutput1
+    Benutzer: userOutput2
+    '''
 
-  If you want to access only the last user input, specify `Text` token in the **Prompt** field.
+Wenn Sie nur auf die letzte Benutzereingabe zugreifen möchten, geben Sie im Feld **Eingabeaufforderung** das Token "Text" an.
 
+Achten Sie beim Hinzufügen eines Tags darauf, dass Sie vor und nach dem Tag einen Zeilenumbruch lassen, z. B.:
 
-When adding a tag, ensure that you leave a line break before and after the tag, for example:
-
-```text
-A user had a conversation with a chatbot. The conversation history so far is:
+'''text
+Ein Benutzer hatte eine Konversation mit einem Chatbot. Die bisherige Konversationshistorie lautet:
 @cognigyRecentConversation
 
-Describe the user sentiment in one very short line.
-```
+Beschreiben Sie die Benutzerstimmung in einer sehr kurzen Zeile.
+'''
 
-Both tags can include an optional turn limit parameter, which is appended to the tag. 
+Beide Tags können einen optionalen Parameter für die Kantenübergangsbegrenzung enthalten, der an das Tag angehängt wird. 
 
-Examples:
+Beispiele:
 
-```typescript
-@cognigyRecentConversation:3 // returns the last 3 turns of the conversation.
-@cognigyRecentUserInputs:2 // returns the last 2 user inputs.
-```
+'''Typoskript
+@cognigyRecentConversation:3 // gibt die letzten 3 Runden der Konversation zurück.
+@cognigyRecentUserInputs:2 // gibt die letzten 2 Benutzereingaben zurück.
+'''
 
-### Advanced
+### Fortgeschritten
 
-| Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                            |
 |---------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Sampling Method           | Select        | Methods:<br/>- **Temperature** — determines the level of randomness in the generated text. A higher temperature allows for more diverse and creative outputs, while a lower temperature leads to more predictable and consistent outputs with the training data.<br> - **Top Percentage** — specifies the percentage of the most probable outputs for generation, resulting in more consistent output. |
-| Maximal Tokens            | Indicator     | The maximum number of tokens to generate in the completion.                                                                                                                                                                                                                                                                                                                                            |
-| Presence Penalty          | Indicator     | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.                                                                                                                                                                                                                       |
-| Frequency Penalty         | Indicator     | Number between -2.0 and 2.0. The penalty assigns a lower probability to tokens frequently appearing in the generated text, encouraging the model to generate more diverse and unique content.                                                                                                                                                                                                          |
-| Use Stops                 | Toggle        | Whether to use a list of stop words to let Generative AI know where the sentence stops.                                                                                                                                                                                                                                                                                                                |
-| Stops                     | Text          | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                                                                                                                                                                                                                             |
-| Timeout                   | Number        | The maximum amount of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                             |
+| Probenahme-Methode | Wählen Sie | Methodik:<br/>- **Temperatur** — bestimmt den Grad der Zufälligkeit im generierten Text. Eine höhere Temperatur ermöglicht vielfältigere und kreativere Ausgaben, während eine niedrigere Temperatur zu vorhersehbareren und konsistenteren Ergebnissen mit den Trainingsdaten führt.<br> - **Top Percentage** — gibt den Prozentsatz der wahrscheinlichsten Ausgaben für die Generierung an, was zu einer konsistenteren Ausgabe führt. |
+| Maximale Anzahl an Token | Indikator | Die maximale Anzahl von Token, die beim Abschluss generiert werden sollen.                                                                                                                                                                                                                                                                                                                                            |
+| Anwesenheitsstrafe | Indikator | Zahl zwischen -2,0 und 2,0. Positive Werte bestrafen neue Token basierend darauf, ob sie bisher im Text erschienen sind, und erhöhen die Wahrscheinlichkeit, dass das Modell über neue Themen spricht.                                                                                                                                                                                                                       |
+| Häufigkeits-Strafe | Indikator | Zahl zwischen -2,0 und 2,0. Die Strafe weist Token, die häufig im generierten Text vorkommen, eine geringere Wahrscheinlichkeit zu und ermutigt das Modell, vielfältigere und einzigartigere Inhalte zu generieren.                                                                                                                                                                                                          |
+| Stopps verwenden | Umschalten | Gibt an, ob eine Liste von Stoppwörtern verwendet werden soll, um Generative AI wissen zu lassen, wo der Satz endet.                                                                                                                                                                                                                                                                                                                |
+| Haltestellen | Text | Bis zu 4 Sequenzen, in denen die API keine weiteren Token mehr generiert. Der zurückgegebene Text enthält nicht die Stoppsequenz.                                                                                                                                                                                                                                                                             |
+| Zeitüberschreitung | Anzahl | Die maximale Anzahl von Millisekunden, die auf eine Antwort des generativen KI-Anbieters gewartet werden soll.                                                                                                                                                                                                                                                                                                             |
 
-### Storage & Streaming Options
+### Speicher- und Streaming-Optionen
 
-| Parameter                   | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|-----------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| How to handle the result    | Select        | Determine how to handle the prompt result:<br> - **Store in Input** — stores the result in the Input object. To print the prompt result, use the LLM Prompt Result Token in the Say Node. <br> - **Store in Context** — stores the result in the Input object in the Context. To print the prompt result, use the LLM Prompt Result Token in the Say Node. <br>- **Stream to Output** — streams the result directly into the output. This means that the model provides prompts directly into the conversation chat, and you don't need to use the LLM Prompt Result token and Say node. This result won't be stored in either the Input or the Context. Note that streaming may not be supported by all [Cognigy LLM Prompt Node](../../resources/build/llm.md#supported-models) providers, such as Google[^*]. If streaming is not supported, the result will be written to the Input object. |
-| Input Key to store Result   | CognigyScript | The parameter is active when **Store in Input** selected. The result is stored in the `promptResult` Input object by default. You can specify another value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Context Key to store Result | CognigyScript | The parameter is active when **Store in Context** selected. The result is stored in the `promptResult` Context object by default. You can specify another value.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| Stream Output Tokens        | CognigyScript | The parameter is active when **Stream to Output** is selected. Tokens after which to output the stream buffer. The tokens can be punctuation marks or symbols, such as `\n`.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| So gehen Sie mit dem Ergebnis um | Wählen Sie | Legen Sie fest, wie das Eingabeaufforderungsergebnis behandelt werden soll:<br> - **In Eingabe speichern** – speichert das Ergebnis im Input-Objekt. Um das Eingabeaufforderungsergebnis zu drucken, verwenden Sie das LLM-Eingabeaufforderungsergebnistoken im Say-Knoten. <br> - **Im Kontext speichern** — speichert das Ergebnis im Input-Objekt im Kontext. Um das Eingabeaufforderungsergebnis zu drucken, verwenden Sie das LLM-Eingabeaufforderungsergebnistoken im Say-Knoten. <br>- **Stream to Output** — Das Ergebnis wird direkt in die Ausgabe gestreamt. Dies bedeutet, dass das Modell Eingabeaufforderungen direkt im Unterhaltungschat bereitstellt und Sie das LLM-Eingabeaufforderungsergebnistoken und den Say-Knoten nicht verwenden müssen. Dieses Ergebnis wird weder in der Eingabe noch im Kontext gespeichert. Beachten Sie, dass Streaming möglicherweise nicht von allen [Cognigy LLM Prompt Node](.. /.. /resources/build/llm.md#supported-models), z. B. Google[^*]. Wenn Streaming nicht unterstützt wird, wird das Ergebnis in das Input-Objekt geschrieben. |
+| Eingabetaste zum Speichern des Ergebnisses | CognigyScript | Der Parameter ist aktiv, wenn **In Eingabe speichern** ausgewählt ist. Das Ergebnis wird standardmäßig im Input-Objekt 'promptResult' gespeichert. Sie können einen anderen Wert angeben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Kontextschlüssel zum Speichern des Ergebnisses | CognigyScript | Der Parameter ist aktiv, wenn **Im Kontext speichern** ausgewählt ist. Das Ergebnis wird standardmäßig im Context-Objekt 'promptResult' gespeichert. Sie können einen anderen Wert angeben.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Stream-Ausgabe-Token | CognigyScript | Der Parameter ist aktiv, wenn **Stream to Output** ausgewählt ist. Token, nach denen der Streampuffer ausgegeben werden soll. Bei den Token kann es sich um Satzzeichen oder Symbole handeln, z. B. '\n'.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-[^*]: Note that not all LLM models support streaming.
+[^*]: Beachten Sie, dass nicht alle LLM-Modelle Streaming unterstützen.
 
-### Debugging Options
+### Debugging-Optionen
 
-When using the Interaction Panel, you can trigger two types of debug logs. These logs are only available when using the Interaction Panel and are not intended for production debugging. You can also combine both log types.
+Wenn Sie den Interaktionsbereich verwenden, können Sie zwei Arten von Debug-Protokollen auslösen. Diese Protokolle sind nur verfügbar, wenn Sie den Interaktionsbereich verwenden, und sind nicht für das Debuggen in der Produktion vorgesehen. Sie können auch beide Protokolltypen kombinieren.
 
-| Parameter                  | Type   | Description                                                                                                                                                                     |
+| Parameter | Typ | Beschreibung |
 |----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Log Token Count            | Toggle | Log the number of consumed LLM tokens for the request and completion. Cognigy uses the GPT-3 tokenizer algorithm, so actual token usage may differ depending on the model used. |
-| Log Request and Completion | Toggle | Log both the request sent to the LLM provider and the subsequent completion.                                                                                                    |
+| Anzahl der Protokolltoken | Umschalten | Protokollieren Sie die Anzahl der verbrauchten LLM-Token für die Anforderung und den Abschluss. Cognigy verwendet den GPT-3-Tokenizer-Algorithmus, so dass die tatsächliche Token-Nutzung je nach verwendetem Modell variieren kann. |
+| Protokollanforderung und -vervollständigung | Umschalten | Protokollieren Sie sowohl die an den LLM-Anbieter gesendete Anforderung als auch den anschließenden Abschluss.                                                                                                    |
 
-## More Information
+## Mehr Informationen
 
-- [LLM](../../resources/build/llm.md)
-- [Generative AI](../../generative-ai.md)
-- [GPT Conversation Node](gpt-conversation.md)
+- [LLM](.. /.. /resources/build/llm.md)
+- [Generative KI](.. /.. /generative-ai.md)
+- [GPT-Konversationsknoten](gpt-conversation.md)

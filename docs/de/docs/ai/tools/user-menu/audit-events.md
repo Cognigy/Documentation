@@ -1,74 +1,74 @@
 ---
- title: "Audit Events" 
- slug: "audit-events" 
- hidden: false 
+ Titel: "Audit-Ereignisse" 
+ Slug: "Audit-Ereignisse" 
+ ausgeblendet: false 
 ---
-# Audit Events
+# Audit-Ereignisse
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.35.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.35.0-blue.svg)] ({{config.site_url}})
 
-Audit Events interface permits users with admin [role]({{config.site_url}}live-agent/roles) to track events on an organizational level. 
+Die Schnittstelle "Ereignisse überwachen" ermöglicht es Benutzern mit admin [role]({{config.site_url}}live-agent/roles), Ereignisse auf Organisationsebene zu verfolgen. 
 
-### Access Audit Events Dashboard
+### Dashboard für Audit-Ereignisse aufrufen
 
-As an admin user, you are able to see the **Audit Events** button on the user menu. Click on it to access the Audit Events dashboard:
+Als Admin-Benutzer können Sie die Schaltfläche **Ereignisse überwachen** im Benutzermenü sehen. Klicken Sie darauf, um auf das Dashboard "Audit-Ereignisse" zuzugreifen:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/audit-events-dashboard.png" width="100%" />
 </figure>
 
-### Audit Events List
-The Audit Events list includes all the events that happened during the last 30 days, represented by six informative columns to describe each event:
+### Liste der Überwachungsereignisse
+Die Liste Überwachungsereignisse enthält alle Ereignisse, die in den letzten 30 Tagen aufgetreten sind, dargestellt durch sechs informative Spalten zur Beschreibung der einzelnen Ereignisse:
 
-- **Type**: Event type, which can be one of the pre-defined event types (Action, Create, Replace, Patch, Delete, Unauthorized).
-- **Action**: Specific column to describe the **Action** type. It has items like "cancelTask", "addRoleToUser", "addProjectMember".
-- **Resource Type**: Type of [resource]({{config.site_url}}ai/resources/agents/agents) used in the event (e.g. Project, Node, Flow, ...etc). 
-- **Timestamp**: The exact time of the event. 
-- **Project**:  Identification number of the project in which the event happened. 
-- **User E-mail**: Email of user who triggered the event. 
+- **Typ**: Ereignistyp, bei dem es sich um einen der vordefinierten Ereignistypen handeln kann (Aktion, Erstellen, Ersetzen, Patchen, Löschen, Nicht autorisiert).
+- **Aktion**: Spezifische Spalte zur Beschreibung des **Aktions**-Typs. Es enthält Elemente wie "cancelTask", "addRoleToUser", "addProjectMember".
+- **Ressourcentyp**: Typ der [Ressource]({{config.site_url}}ai/resources/agents/agents), die im Ereignis verwendet wird (z. B. Projekt, Knoten, Flow, ... usw.). 
+- **Zeitstempel**: Die genaue Uhrzeit des Ereignisses. 
+- **Projekt**: Identifikationsnummer des Projekts, in dem das Ereignis stattgefunden hat. 
+- **Benutzer-E-Mail**: E-Mail-Adresse des Benutzers, der das Ereignis ausgelöst hat. 
 
-## Functionality
+## Funktionsweise
 
-#### 1. Filter audit events
-Audit events list can be filtered by user e-mail to find all events that a specific user triggered:
+#### 1. Filtern von Überwachungsereignissen
+Die Liste der Überwachungsereignisse kann nach Benutzer-E-Mail gefiltert werden, um alle Ereignisse zu finden, die ein bestimmter Benutzer ausgelöst hat:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/filter-by-user-email.png" width="100%" />
 </figure>
 
-They can also be filtered by type to find a specific event (e.g. Action):
+Sie können auch nach Typ gefiltert werden, um ein bestimmtes Ereignis (z. B. Aktion) zu finden:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/filter-by-type.png" width="100%" />
 </figure>
 
-#### 2. Sort audit events
-By default, the audit events list is sorted by most recent event:
+#### 2. Sortieren von Überwachungsereignissen
+Standardmäßig ist die Liste der Überwachungsereignisse nach dem neuesten Ereignis sortiert:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/default-sorting.png" width="100%" />
 </figure>
 
-It can be sorted by Type, Timestamp, or user E-mail. 
+Sie kann nach Typ, Zeitstempel oder Benutzer-E-Mail sortiert werden. 
 
-#### 3. View user details
-Click on users email to see their profile for more details.
+#### 3. Benutzerdetails anzeigen
+Klicken Sie auf die E-Mail-Adresse des Benutzers, um sein Profil für weitere Details anzuzeigen.
 
-#### 4. Visualize event chain
+#### 4. Ereigniskette visualisieren
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/event-chain.png" width="100%" />
 </figure>
 
-Hover over an event item to view the event's chain. It shows the dependency of all resources that are related to the event.
+Bewegen Sie den Mauszeiger über ein Ereigniselement, um die Kette des Ereignisses anzuzeigen. Es zeigt die Abhängigkeit aller Ressourcen, die sich auf das Ereignis beziehen.
 
-#### 5. View event details
+#### 5. Veranstaltungsdetails anzeigen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/raw-event-details.png" width="100%" />
 </figure>
 
-Click on an event item to see more details about the event in a technical format (JSON).
+Klicken Sie auf ein Ereigniselement, um weitere Details zum Ereignis in einem technischen Format (JSON) anzuzeigen.
 
-#### 6. Copy event details
-Click on the secondary menu button next to the close (X) button to copy the event details.
+#### 6. Kopieren von Ereignisdetails
+Klicken Sie auf die sekundäre Menüschaltfläche neben der Schaltfläche "Schließen" (X), um die Ereignisdetails zu kopieren.

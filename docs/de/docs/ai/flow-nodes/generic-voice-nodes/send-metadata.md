@@ -1,35 +1,31 @@
 ---
- title: "Send Metadata" 
- slug: "send-metadata" 
- hidden: false 
+ title: "Metadaten senden" 
+ Slug: "Send-Metadaten" 
+ ausgeblendet: false 
 ---
 
-# Send Metadata
+# Metadaten senden
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.45-blue.svg)] (.. /.. /.. /release-notes/4.45.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/send-metadata.png" width="80%" />
-  <figcaption>Voice Gateway Send Metadata Node</figcaption>
+  <figcaption>Voice-Gateway-Knoten zum Senden von Metadaten</figcaption>
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Der Send Meta Data Node sendet Metadaten über SIP INFO-Nachrichten an den angeschlossenen SIP-Trunk.
 
-<div class="divider"></div>
-
-The Send Meta Data Node sends metadata via SIP INFO messages to the connected SIP trunk.
-
-| Parameter | Type | Description                        |
+| Parameter | Typ | Beschreibung |
 |-----------|------|------------------------------------|
-| Meta Data | JSON | The metadata to send via SIP INFO. |
+| Metadaten | JSON | Die Metadaten, die über SIP INFO gesendet werden sollen. |
 
-Example:
+Beispiel:
 
-```json
+'''json
 {
-  "myParamName": "myParamValue"
+  "myParamName": "meinParamWert"
 }
-```
+'''
 
-!!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on the [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.
+!!! Hinweis "Dieser Knoten unterstützt Aktivitätsparameter"
+    Weitere Informationen zu Aktivitätsparametern finden Sie auf der Seite [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/).

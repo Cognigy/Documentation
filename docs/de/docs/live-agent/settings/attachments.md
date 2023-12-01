@@ -1,124 +1,122 @@
 ---
-title: "Attachments"
-slug: "attachments" 
-description: "Live Agent Attachments are files or documents that are sent or received during a conversation between a human agent and a user."
-hidden: false 
+Titel: "Anhänge"
+slug: "Anhänge" 
+description: "Live Agent-Anhänge sind Dateien oder Dokumente, die während einer Konversation zwischen einem menschlichen Agenten und einem Benutzer gesendet oder empfangen werden."
+ausgeblendet: false 
 ---
-# Attachments
+# Anhänge
 
-_Attachments_ are files or documents that are sent or received during a conversation between a human agent and a user.
+_Anhänge_ sind Dateien oder Dokumente, die während einer Konversation zwischen einem menschlichen Agenten und einem Benutzer gesendet oder empfangen werden.
 
-These attachments can include various file types; `jpeg`, `jpg`, `png`, `docx`, `wav`, `ogg`, `pdf`.
+Diese Anhänge können verschiedene Dateitypen enthalten. 'jpeg', 'jpg', 'png', 'docx', 'wav', 'ogg', 'pdf'.
 
-Attachments can provide additional information or media, for example, an invoice or a photo related to the issue a customer is facing.
+Anhänge können zusätzliche Informationen oder Medien enthalten, z. B. eine Rechnung oder ein Foto, das sich auf das Problem bezieht, mit dem ein Kunde konfrontiert ist.
 
-##  Upload an Attachment
+## Einen Anhang hochladen
 
-To upload a file in a conversation within Live Agent, follow these steps:
+Gehen Sie folgendermaßen vor, um eine Datei in einer Konversation in Live Agent hochzuladen:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. In the **Inboxes** column, select an Inbox.
-4. Select your conversation.
-5. At the bottom of the conversation chat, in the **Reply to User** section, click **Attach files**.
-6. In the opened window, select the file you want to upload and click **Open**.
-7. When the file is uploaded, click **Send**.
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Unterhaltungen** aus.
+3. Wählen Sie in der Spalte **Posteingänge** einen Posteingang aus.
+4. Wählen Sie Ihre Konversation aus.
+5. Klicken Sie am unteren Rand des Konversationschats im Abschnitt **Dem Benutzer antworten** auf **Dateien anhängen**.
+6. Wählen Sie im geöffneten Fenster die Datei aus, die Sie hochladen möchten, und klicken Sie auf **Öffnen**.
+7. Wenn die Datei hochgeladen ist, klicken Sie auf **Senden**.
 
-The file will be sent to the user and will appear in the chat. The user can download this attachment.
+Die Datei wird an den Benutzer gesendet und im Chat angezeigt. Der Benutzer kann diesen Anhang herunterladen.
 
-## Request an Attachment
+## Anhang anfordern
 
-When using a Webchat Endpoint with Live Agent, human agents can request an attachment from a user.
+Wenn Sie einen Webchat-Endpunkt mit Live Agent verwenden, können menschliche Agenten einen Anhang von einem Benutzer anfordern.
 
-Other Endpoint channels do not support the attachment request functionality. Users can still upload a file using their built in app file upload features.
+Andere Endpunktkanäle unterstützen die Anlagenanforderungsfunktionalität nicht. Benutzer können weiterhin eine Datei hochladen, indem sie ihre integrierten Funktionen zum Hochladen von App-Dateien verwenden.
 
-To request an attachment in a conversation within Live Agent, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Anhang in einer Konversation in Live Agent anzufordern:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. In the **Inboxes** column, select an Inbox.
-4. Select your conversation.
-5. At the bottom of the conversation chat, in the **Reply to User** section, click **Request file**.
-6. In the opened window, click **Send**. The file will be requested from the user, and the request will appear in the chat.
-7. Wait for the attachment to be sent by the user. The file will appear in the chat.
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Unterhaltungen** aus.
+3. Wählen Sie in der Spalte **Posteingänge** einen Posteingang aus.
+4. Wählen Sie Ihre Konversation aus.
+5. Klicken Sie am unteren Rand des Konversations-Chats im Abschnitt **Dem Benutzer antworten** auf **Datei anfordern**.
+6. Klicken Sie im geöffneten Fenster auf **Senden**. Die Datei wird vom Benutzer angefordert und die Anfrage wird im Chat angezeigt.
+7. Warten Sie, bis der Anhang vom Benutzer gesendet wurde. Die Datei wird im Chat angezeigt.
 
-When the file has been uploaded, you can view and download this file directly from the chat.
+Wenn die Datei hochgeladen wurde, können Sie diese Datei direkt aus dem Chat anzeigen und herunterladen.
 
-!!! note
-    If you use [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/), you will also need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files. 
+!!! Anmerkung
+    Wenn Sie [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/) verwenden, müssen Sie auch das [Datei-Upload-Plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) zum Webchat-Endpunkt hinzufügen, um Dateien hochzuladen. 
 
-## Download an Attachment
+## Laden Sie einen Anhang herunter
 
-To download an attachment within Live Agent, this can be done either in a conversation or the **Attachments** page.
+Um einen Anhang in Live Agent herunterzuladen, kann dies entweder in einer Konversation oder auf der Seite **Anhänge** erfolgen.
 
-=== "Attachment Page"
+=== "Seite des Anhangs"
 
-    1. Go to Live Agent.
-    2. On the left side of the screen, select **Settings**.
-    3. Go to **Attachments**.
-    4. Go to the file you want to download.
-    5. In the **ACTIONS** column, click **Download**.  
+1. Gehen Sie zu Live Agent.
+    2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+    3. Gehen Sie zu **Anhänge**.
+    4. Gehen Sie zu der Datei, die Sie herunterladen möchten.
+    5. Klicken Sie in der Spalte **AKTIONEN** auf **Herunterladen**.  
 
+=== "Konversationsseite"
 
-=== "Conversation Page"
+1. Gehen Sie zu Live Agent.
+    2. Wählen Sie auf der linken Seite des Bildschirms **Unterhaltungen** aus.
+    3. Wählen Sie in der Spalte **Posteingänge** einen Posteingang aus.
+    4. Wählen Sie Ihre Konversation aus.
+    5. Suchen Sie den Anhang in der Konversation und klicken Sie auf **Herunterladen**.
 
-    1. Go to Live Agent.
-    2. On the left side of the screen, select **Conversations**.
-    3. In the **Inboxes** column, select an Inbox.
-    4. Select your conversation.
-    5. Find the attachment in the conversation, click **Download**.
+Die Datei wird in einem neuen Tab Ihres Browsers geöffnet. Klicken Sie auf Ihre Datei, um sie auf Ihrem lokalen Gerät zu speichern.
 
+## Einen Anhang löschen
 
-The file will be opened in a new tab of your browser. Click on your file to save it to your local device.
+Gehen Sie folgendermaßen vor, um einen Anhang in Live Agent zu löschen:
 
-## Delete an Attachment
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Gehen Sie zu **Anhänge**.
+4. Gehen Sie zu der Datei, die Sie herunterladen möchten.
+5. Klicken Sie in der Spalte **AKTIONEN** auf **Löschen**.  
+6. Bestätigen Sie den Löschvorgang.
 
-To delete an attachment within Live Agent, follow these steps:
+Die Datei wird von der Seite Anhänge gelöscht und ist in der Unterhaltung, in der sie hochgeladen wurde, nicht mehr verfügbar.
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. Go to **Attachments**.
-4. Go to the file you want to download.
-5. In the **ACTIONS** column, click **Delete**.  
-6. Confirm the deletion.
+## Anhänge filtern
 
-The file will be deleted from the Attachments page and will no longer be available in the conversation where it was uploaded.
+Gehen Sie folgendermaßen vor, um Anhänge in Live Agent zu filtern:
 
-## Filter Attachments
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Gehen Sie zu **Anhänge**.
+4. Klicken Sie auf der Seite **Anhänge** auf **Anhänge filtern**
+5. Wählen Sie im Fenster **Anhänge filtern** die Optionen aus, nach denen Sie filtern möchten: 
+    - **Cognigy-Sitzungs-ID**
+    - **Cognigy-Benutzer-ID**
+    -**Dateiname**
+6. Geben Sie den Wert ein, nach dem Sie filtern möchten, und klicken Sie auf **Filter anwenden**.
 
-To filter attachments within Live Agent, follow these steps:
+Optional können Sie weitere Filter hinzufügen, indem Sie auf **+ Filter hinzufügen** klicken.
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. Go to **Attachments**.
-4. On the **Attachments** page, click **Filter Attachments**
-5. In the **Filter Attachments** window, select the options you need to filter by: 
-    - **Cognigy Session ID**
-    - **Cognigy User ID**
-    - **Filename**
-6. Enter the value you need to filter by and click **Apply filters**.
+Auf der Seite **Anhänge** werden nur Ergebnisse angezeigt, die dem angewendeten Filter entsprechen.
 
-Optionally, you can add additional filters by clicking **+ Add Filter**.
+Um den Filter zu löschen, klicken Sie auf **Filter löschen**.
 
-The **Attachments** page will only display results that match the applied filter.
+## Öffne die Quelle des Anhangs
 
-To drop the filter, click **Clear Filters**.
+Die Quelle kann "Posteingang", "Konversation" oder "Cognigy-Sitzungs-ID" sein.
 
-## Open the source of the Attachment
+Gehen Sie folgendermaßen vor, um eine Konversation oder einen Posteingang zu untersuchen, in den ein Anhang hochgeladen wurde:
 
-The source can be Inbox, Conversation, or Cognigy Session ID.
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Gehen Sie zu **Anhänge**.
+4. Wechseln Sie zu der Zeile der Datei, die Sie untersuchen möchten.
+5. Klicken Sie in dieser Zeile auf einen der folgenden Links:
+    - **Posteingang** – die Option navigiert Sie zum Posteingang der Unterhaltung, in die der Anhang hochgeladen wurde.
+    - **CONVERSATIONS** — die Option navigiert Sie zu der Konversation, in die der Anhang hochgeladen wurde.
+    - **COGNIGY-SITZUNGS-ID** – Die Option navigiert Sie zu der Unterhaltung, in die der Anhang hochgeladen wurde.
 
-To investigate a conversation or Inbox where an attachment was uploaded, follow these steps:
+## Mehr Informationen
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. Go to **Attachments**.
-4. Go to the row of the file you want to investigate.
-5. On this row, click one of the following links:
-    - **INBOX** — the option will navigate you to the Inbox of the conversation where the attachment was uploaded.
-    - **CONVERSATIONS** — the option will navigate you to the conversation where the attachment was uploaded.
-    - **COGNIGY SESSION ID** — the option will navigate you to the conversation where the attachment was uploaded.
-
-## More Information
-
-- [Conversation Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/)
+- [Konversations-Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/)

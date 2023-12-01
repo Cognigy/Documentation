@@ -1,51 +1,50 @@
 ---
- title: "Manage" 
- slug: "manage" 
- hidden: false 
+ Titel: "Verwalten" 
+ Slug: "Verwalten" 
+ ausgeblendet: false 
 ---
-# Manage
+# Verwalten
  
-## Settings
+## Einstellungen
 
-The **Agent Settings** menu provides customization options for creators to activate, deactivate and adjust important settings that affect the performance and results of the agent's NLU and flow logic.
+Das Menü **Agenteneinstellungen** bietet Anpassungsoptionen für Ersteller zum Aktivieren, Deaktivieren und Anpassen wichtiger Einstellungen, die sich auf die Leistung und die Ergebnisse der NLU und der Ablauflogik des Agenten auswirken.
 
-Head over to [Settings]({{config.site_url}}ai/resources/manage/settings/) for more information.
+Weitere Informationen finden Sie unter [Einstellungen]({{config.site_url}}ai/resources/manage/settings/).
 
+## Lokalisierung
 
-## Localization
+Die **Lokalisierungsfunktion** bietet Tools zum Aktivieren mehrsprachiger Agenten. Hier können Sie ein **Gebietsschema** hinzufügen, das auf einen Agenten angewendet wird und die Konfiguration sprachspezifischer Ausgabenachrichten innerhalb von Flows ermöglicht.
 
-The **Localization** feature provides tools for enabling multilingual agents. Here you can add a **Locale** that will be applied across an agent and allow for language specific output messages to be configured within flows.
+Weitere Informationen finden Sie unter [Localization]({{config.site_url}}ai/resources/manage/localization/).
 
-Head over to [Localization]({{config.site_url}}ai/resources/manage/localization/)  for more information.
+## Marken
 
-## Tokens
+**Token** bieten eine benutzerfreundliche Option zum Abrufen dynamischer Daten, ohne dass Code geschrieben werden muss. Der Zugriff auf die Eingabe, den Kontext und das Profil ist möglich, indem Standard- oder benutzerdefinierte **Token** verwendet werden, die über das AI-Menü auf der rechten Seite jedes dynamischen Textfelds innerhalb von Flow-Knoten verfügbar sind.
 
-**Tokens** provide a user-friendly option for retrieving dynamic data, without the need for writing code. Accessing the input, context and profile is possible by using default or custom **Tokens** that are available from the AI menu on the right side of each dynamic text field within flow nodes.
+Weitere Informationen finden Sie unter [Tokens]({{config.site_url}}ai/resources/manage/tokens/).
 
-Head over to [Tokens]({{config.site_url}}ai/resources/manage/tokens/)  for more information.
+## Erweiterungen
 
-## Extensions
+Die **Erweiterungen**-Funktion bietet Entwicklern die Möglichkeit, der Cognigy.AI-Plattform ihre eigenen **Flow-Knoten** hinzuzufügen, um die Funktionen von Agenten zu erweitern. Erweiterungen führen bestimmte benutzerdefinierte Aufgaben aus, z. B. B. die Interaktion mit Back-End-Systemen oder das Auslösen von Verarbeitungen, die für eine Organisation eindeutig sind.
 
-The **Extensions** feature provides creators with the ability to add their own **Flow Nodes** to the Cognigy.AI platform to extend the capability of agents. Extensions perform specific customized tasks such as interacting with back-end systems or triggering processed that are unique to an organization.
+Weitere Informationen finden Sie unter [Erweiterungen]({{config.site_url}}ai/resources/manage/extensions/).
 
-Head over to [Extensions]({{config.site_url}}ai/resources/manage/extensions/)  for more information.
+## Mitglieder
 
-## Members
+Die Funktion "Mitglieder" ist ein Verwaltungstool, mit dem die Zugriffsrechte von Mitarbeitern in einer Organisation verwaltet werden können. 
 
-The **Members** feature is an administration tool that is used to manage the access rights of collaborators across an organization. 
+Weitere Informationen finden Sie unter [Members]({{config.site_url}}ai/resources/manage/members/).
 
-Head over to [Members]({{config.site_url}}ai/resources/manage/members/) for more information.
+## Kontaktprofil
 
-## Contact Profiles
+**Kontaktprofile** speichern Informationen über die Endbenutzer Ihrer KI und können von Flows und Endpunkten abgerufen werden, um kanalübergreifende Konversationen mit personalisierten Inhalten zu ermöglichen.
 
-**Contact Profiles** store information about the end-users of your AI and can be accessed by Flows and Endpoints to enable cross-channel conversations with personalized content.
+Weitere Informationen finden Sie unter [Kontaktprofile]({{config.site_url}}ai/resources/manage/contact-profiles/).
 
-Head over to [Contact Profiles]({{config.site_url}}ai/resources/manage/contact-profiles/) for more information.
+## Pakete
 
-## Packages
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.5.0-blue.svg)] ({{config.site_url}})
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
+**Pakete** ermöglichen es unseren Kunden, einzelne Ressourcen wie Flows oder Lexika zu exportieren, um diese Ressourcen mit anderen Teams zu teilen. Pakete enthalten automatisch ihre direkten Abhängigkeiten und können nach dem Herunterladen als portables ZIP-Archiv freigegeben werden. Kunden können auch Pakete hochladen und sich die Schritte zur Auflösung der Zusammenführung anzeigen lassen.
 
-**Packages** allow our customers to export individual resources like Flows or Lexicons in order to share those assets with other teams. Packages automatically contain their direct dependencies and can be shared as a portable zip archive once downloaded. Customers can also upload packages and get merge resolution steps displayed.
-
-Head over to [Packages]({{config.site_url}}ai/resources/manage/packages/) for more information.
+Weitere Informationen finden Sie unter [Packages]({{config.site_url}}ai/resources/manage/packages/).

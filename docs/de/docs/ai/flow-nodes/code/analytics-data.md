@@ -1,65 +1,55 @@
 ---
- title: "Analytics data" 
- slug: "analytics-data" 
- hidden: false 
+ Titel: "Analytics-Daten" 
+ Slug: "Analytics-Daten" 
+ ausgeblendet: false 
 ---
-# Analytics data
-## Description
-<div class="divider"></div>
+# Analytics-Daten
+## Beschreibung<div class="divider"></div>Innerhalb eines [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) können Sie bestimmte Teile der Analysedaten ändern, um mehr Kontrolle darüber zu erhalten, was genau in die Analyse geschrieben wird.
 
-Within a [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
+Sie können auf die Analysedaten in einem Codeknoten zugreifen, indem Sie den Schlüssel "analyticsdata" verwenden. Zum Beispiel:
 
-You can access the analytics data in a code node by using the key `analyticsdata`. For example:
+'''Javascript
+analyticsdata.intent = "testen";
+''' 
 
-```javascript
-analyticsdata.intent = "test";
-``` 
+## Analytics-Felder<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.45-blue.svg)] (.. /.. /.. /release-notes/4.45.md)
 
-## Analytics fields
-<div class="divider"></div>
+Die folgenden Felder können in einem Codeknoten überschrieben werden:
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../release-notes/4.45.md)
-
-The following fields can be overwritten in a Code Node:
-
-| Field          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Type            |
+| Feld | Beschreibung | Kunst            |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|
-| intent         | The intent that will be written to analytics. You can for instance modify this field to store the intent that was found in an executed Flow in analytics                                                                                                                                                                                                                                                                                                                                  | String          |
-| intentFlow     | The ID of the Flow where the intent was found (main flow or attached flow)                                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| intentScore    | The score of the intent that was found                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Number          |
-| inputText      | The input text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | String          |
-| inputData      | The input data object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | {"key":"value"} |
-| state          | The [State]({{config.site_url}}ai/tools/interaction-panel/state/) the Flow is currently in                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| slots          | The slots that were found in the user's input                                                                                                                                                                                                                                                                                                                                                                                                                                             | Object          |
-| completedGoals | A list of goals the user has completed                                                                                                                                                                                                                                                                                                                                                                                                                                                    | List of Strings |
-| understood     | Whether the input was understood. An input is counted as understood if an Intent or a Slot is found, the input is marked as understood via the Code Node or Overwrite Analytics Node, or the type of sentence is pAnswer, nAnswer, or Greeting (if Confirmation Word logic is activated). In all other cases, it is marked as not understood, except if there is an active handover (without activation of an agent Assist Flow) or a message has been marked as `Don't count` or `Null`. | Boolean         |
-| custom1        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom2        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom3        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom4        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom5        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom6        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom7        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom8        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom9        | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
-| custom10       | A custom field that can be set to any string value during Flow execution. Defaults to null                                                                                                                                                                                                                                                                                                                                                                                                | String          |
+| Absicht | Die Absicht, die in Analytics geschrieben wird. Sie können dieses Feld z. B. ändern, um den Intent zu speichern, der in einem ausgeführten Flow in Analytics | Zeichenfolge |
+| intentFlow | Die ID des Flows, in dem die Absicht gefunden wurde (Haupt-Flow oder angefügter Flow) | Zeichenfolge |
+| intentScore | Die Bewertung der gefundenen Absicht | Anzahl |
+| inputText | Der eingegebene Text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Zeichenfolge |
+| inputData | Das Eingabedatenobjekt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | {"Schlüssel":"Wert"} |
+| Bundesland | Der [State]({{config.site_url}}ai/tools/interaction-panel/state/), in dem sich der Flow derzeit befindet | Zeichenfolge |
+| Spielautomaten | Die Slots, die in der Benutzereingabe gefunden wurden | Objekt |
+| completedGoals | Eine Liste der Ziele, die der Benutzer erreicht hat | Liste der Strings |
+| verstanden | Ob die Eingabe verstanden wurde. Eine Eingabe wird als verstanden gezählt, wenn ein Intent oder ein Slot gefunden wird, die Eingabe über den Code Node oder den Overwrite Analytics Node als verstanden markiert wird oder der Satztyp pAnswer, nAnswer oder Greeting ist (wenn die Confirmation Word-Logik aktiviert ist). In allen anderen Fällen wird es als nicht verstanden markiert, es sei denn, es gibt eine aktive Übergabe (ohne Aktivierung eines Agenten-Assist-Flows) oder eine Nachricht wurde als "Nicht zählen" oder "Null" markiert. | Boolescher Wert |
+| benutzerdefiniert1 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert2 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert3 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert4 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert5 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert6 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert7 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert8 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert9 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
+| benutzerdefiniert10 | Ein benutzerdefiniertes Feld, das während der Flow-Ausführung auf einen beliebigen Zeichenfolgenwert festgelegt werden kann. Der Standardwert ist null | Zeichenfolge |
 
-## Working with the custom fields
-<div class="divider"></div>
-The custom fields are used to store any custom data into analytics. This can be any string value that has a maximum length of 512 characters. If you want to store more complex data, you can store a string field object as the value:
+## Arbeiten mit den benutzerdefinierten Feldern<div class="divider"></div>Die benutzerdefinierten Felder werden verwendet, um benutzerdefinierte Daten in Analysen zu speichern. Dabei kann es sich um einen beliebigen Zeichenfolgenwert mit einer maximalen Länge von 512 Zeichen handeln. Wenn Sie komplexere Daten speichern möchten, können Sie ein Zeichenfolgenfeldobjekt als Wert speichern:
 
-```javascript
+'''Javascript
 const customData = {
-  key: "value"
+  Schlüssel: "Wert"
 };
 
 analyticsdata.custom1 = "userFocusGroup: focusGroup1";
 analyticsdata.custom2 = JSON.stringify(customData);
-``` 
+''' 
 
-!!! warning "Max length of custom fields"
-    You can store a maximum of 512 characters as the value for each of the custom fields
+!!! Warnung "Maximale Länge der benutzerdefinierten Felder"
+    Sie können maximal 512 Zeichen als Wert für jedes der benutzerdefinierten Felder speichern
 
-## Analytics data life span
-<div class="divider"></div>
-The analyticsdata object is generated for each Flow Execution. This means that any data you store in the analyticsdata object (for example, a custom field) will only be stored in analytics for this Flow Execution. On the next Flow Execution, there will be a new analyticsdata object with a new intent etc.
+## Lebensdauer von Analysedaten<div class="divider"></div>Das analyticsdata-Objekt wird für jede Flow-Ausführung generiert. Dies bedeutet, dass alle Daten, die Sie im analyticsdata-Objekt speichern (z. B. ein benutzerdefiniertes Feld), nur für diese Flow-Ausführung in Analytics gespeichert werden. Bei der nächsten Flow-Ausführung wird ein neues analyticsdata-Objekt mit einer neuen Absicht usw. angezeigt.

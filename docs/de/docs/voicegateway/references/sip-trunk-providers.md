@@ -1,22 +1,16 @@
 ---
-title: "SIP Trunk Providers"
-slug: "sip-trunk-providers"
-hidden: false
+Titel: "SIP-Trunk-Anbieter"
+Slug: "SIP-Trunk-Anbieter"
+ausgeblendet: false
 ---
 
-# SIP Trunk Providers
+# SIP-Trunk-Anbieter
 
-SIP trunk providers offer services that allow connecting phone systems to the public telephone network using the Session Initiation Protocol (SIP) over an IP network. These providers enable to make and receive calls over the Internet, providing flexibility, cost savings, and scalability compared to traditional phone lines.
+SIP-Trunk-Anbieter bieten Dienste an, die es ermöglichen, Telefonanlagen über das Session Initiation Protocol (SIP) über ein IP-Netzwerk mit dem öffentlichen Telefonnetz zu verbinden. Diese Anbieter ermöglichen das Tätigen und Empfangen von Anrufen über das Internet und bieten Flexibilität, Kosteneinsparungen und Skalierbarkeit im Vergleich zu herkömmlichen Telefonleitungen.
 
-Cognigy Voice Gateway can support any SIP trunk provider. Additionally, Cognigy Voice Gateway includes preinstalled configurations for the following SIP trunk providers:
+Cognigy Voice Gateway kann jeden SIP-Trunk-Anbieter unterstützen. Darüber hinaus enthält Cognigy Voice Gateway vorinstallierte Konfigurationen für die folgenden SIP-Trunk-Anbieter:
 
 - Voxbone
 - Twilio
 - Simwood
-- TelecomsXChange
-
-
-
-
-
-
+- TelekommunikationXChange

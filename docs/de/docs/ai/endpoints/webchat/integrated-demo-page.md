@@ -1,53 +1,52 @@
 ---
-title: "Demo Webchat" 
-slug: "demo-webchat" 
-hidden: false 
+Titel: "Demo Webchat" 
+Schnecke: "Demo-Webchat" 
+ausgeblendet: false 
 ---
 
 # Demo Webchat
 
-_Cognigy Demo Webchat_ provides the opportunity to test webchat integrations with various providers, including handover providers, and also allows you to preview the appearance of your webchat before deploying it in a production environment. Demo Webchat is a valuable tool for testing and customization, ensuring that your Webchat functions according to your expectations and looks the way you want it to before launching it.
+_Cognigy Demo-Webchat_ bietet die Möglichkeit, Webchat-Integrationen mit verschiedenen Anbietern, einschließlich Übergabeanbietern, zu testen, und ermöglicht es Ihnen auch, eine Vorschau des Aussehens Ihres Webchats anzuzeigen, bevor Sie ihn in einer Produktionsumgebung bereitstellen. Demo-Webchat ist ein wertvolles Tool zum Testen und Anpassen, um sicherzustellen, dass Ihr Webchat gemäß Ihren Erwartungen funktioniert und so aussieht, wie Sie es möchten, bevor Sie ihn starten.
 
-## Using Demo Webchat
+## Demo-Webchat verwenden
 
-To start using Demo Webchat, follow these steps:
+Gehen Sie folgendermaßen vor, um Demo-Webchat zu verwenden:
 
-1. Open the Cognigy.AI interface.
-2. Go to **Build > Endpoints**.
-3. On the **Endpoints** page, select existing Webchat Endpoint or create a new one by clicking **+ New Endpoint**. 
-4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Wechseln Sie zu **Build > Endpoints**.
+3. Wählen Sie auf der Seite **Endpunkte** einen vorhandenen Webchat-Endpunkt aus oder erstellen Sie einen neuen, indem Sie auf **+ Neuer Endpunkt** klicken. 
+4. Klicken Sie in der oberen rechten Ecke des Endpoint-Editors auf **Demo-Webchat öffnen**.
 
-The Webchat Demo Page will display a website that contains a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
+Auf der Webchat-Demoseite wird eine Website angezeigt, die einen Webchat enthält, den Sie in den Webchat-Einstellungen auf dem Endpunkt in Cognigy.AI konfiguriert haben.
 
-### Manually Defining the User ID
+### Manuelles Definieren der Benutzer-ID
 
-By default, when you load the Webchat, you are assigned a random `user id` that is stored in local memory, ensuring that you have the same `user id` the next time you use the Webchat.
+Wenn Sie den Webchat laden, wird Ihnen standardmäßig eine zufällige "Benutzer-ID" zugewiesen, die im lokalen Speicher gespeichert wird, um sicherzustellen, dass Sie bei der nächsten Verwendung des Webchats dieselbe "Benutzer-ID" haben.
 
-To test your Webchat as an end user, define the `user id` by adding `?user=<user-id>` to the Demo Webchat URL.
-For example, in the
-`https://webchat-trial.cognigy.ai/v2/7e466a9d76611d8decbd15f366f607345efc36805c4e7cff25789ec91ee66457?user=test` URL,
-the `user id` is set to `test`.
+Um Ihren Webchat als Endbenutzer zu testen, definieren Sie die 'Benutzer-ID', indem Sie '?user=<user-id>' an die Demo-Webchat-URL anhängen.
+Zum Beispiel in der
+'https://webchat-trial.cognigy.ai/v2/7e466a9d76611d8decbd15f366f607345efc36805c4e7cff25789ec91ee66457?user=test'-URL,
+Die 'Benutzer-ID' ist auf 'test' gesetzt.
 
-To create a new session for the existing user, use `?user=<old-user-id>&sessionId=<new-user-id>`.
+Um eine neue Sitzung für den vorhandenen Benutzer zu erstellen, verwenden Sie '?user=<old-user-id>&sessionId=<new-user-id>'.
 
-To locate the `user id` of past conversations, `Navigate to 'Manage > Contact Profiles`.
+Um die "Benutzer-ID" vergangener Konversationen zu finden, navigieren Sie zu "> Kontaktprofile verwalten".
 
-## Demo Webchat Settings
+## Demo-Webchat-Einstellungen
 
-These configuration options within the Webchat Endpoint will only have an effect on the integrated Demo Webchat page.
+Diese Konfigurationsoptionen innerhalb des Webchat-Endpunkts wirken sich nur auf die integrierte Demo-Webchat-Seite aus.
 
-| Parameter                     | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |-------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Demo Webchat           | Toggle | Enables or disables the integrated Demo Webchat for this Endpoint.                                                                                                                                                                                                                                                                                                                                                                         |
-| Enable Speech-to-Text         | Toggle | Toggle whether the Webchat should feature a microphone button.                                                                                                                                                                                                                                                                                                                                                                             |
-| Enable Text-to-Speech         | Toggle | Toggle whether the Webchat should read all bot messages aloud.                                                                                                                                                                                                                                                                                                                                                                             |
-| Background Image              | URL    | The image that will be displayed behind the Webchat.                                                                                                                                                                                                                                                                                                                                                                                       |
-| Center Webchat                | Select | Determines where on the page to position the Webchat: center or bottom right.                                                                                                                                                                                                                                                                                                                                                              |
-| Use Custom Webchat Bundle URL | Toggle | This is an advanced feature. Some Endpoint configurations might not work as they might not be supported in your Webchat Bundle.                                                                                                                                                                                                                                                                                                            |
-| Custom Webchat Bundle URL     | URL    | This field available only when the **Use Custom Webchat Bundle URL** is acrivated. You can specify a new URL of Webchat if you want to use customized Webchat by modifying the Webchat source code. The URL should have the following format: `https://url.to/webchat.<package-name>.js`, where `url.to` is a storage for your plugin, for example, Amazon S3, and `package-name` is a name of your package, for example `webchat.legacy`. |
+| Demo-Webchat aktivieren | Umschalten | Aktiviert oder deaktiviert den integrierten Demo-Webchat für diesen Endpunkt.                                                                                                                                                                                                                                                                                                                                                                         |
+| Aktivieren von Speech-to-Text | Umschalten | Schalten Sie um, ob der Webchat eine Mikrofontaste enthalten soll.                                                                                                                                                                                                                                                                                                                                                                             |
+| Aktivieren von Text-to-Speech | Umschalten | Schalten Sie um, ob der Webchat alle Bot-Nachrichten laut vorlesen soll.                                                                                                                                                                                                                                                                                                                                                                             |
+| Hintergrundbild | Internetadresse | Das Bild, das hinter dem Webchat angezeigt wird.                                                                                                                                                                                                                                                                                                                                                                                       |
+| Zentrums-Webchat | Wählen Sie | Legt fest, wo auf der Seite der Webchat positioniert werden soll: mittig oder unten rechts.                                                                                                                                                                                                                                                                                                                                                              |
+| Benutzerdefinierte Webchat-Bundle-URL verwenden | Umschalten | Dies ist eine erweiterte Funktion. Einige Endpoint-Konfigurationen funktionieren möglicherweise nicht, da sie in Ihrem Webchat-Bundle möglicherweise nicht unterstützt werden.                                                                                                                                                                                                                                                                                                            |
+| Benutzerdefinierte Webchat-Bundle-URL | Internetadresse | Dieses Feld ist nur verfügbar, wenn die **Benutzerdefinierte Webchat-Bundle-URL verwenden** aktiviert ist. Sie können eine neue URL von Webchat angeben, wenn Sie benutzerdefiniertes Webchat verwenden möchten, indem Sie den Webchat-Quellcode ändern. Die URL sollte das folgende Format haben: "https://url.to/webchat. <package-name>.js', wobei 'url.to' ein Speicher für Ihr Plugin ist, z. B. Amazon S3, und 'package-name' ein Name Ihres Pakets ist, z. B. 'webchat.legacy'. |
 
+## Mehr Informationen
 
-## More Information
-
-- [Webchat Endpoint](deploy-webchat-endpoint.md)
-- [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/)
+- [Webchat-Endpunkt](deploy-webchat-endpoint.md)
+- [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/)</package-name></new-user-id></old-user-id></user-id>

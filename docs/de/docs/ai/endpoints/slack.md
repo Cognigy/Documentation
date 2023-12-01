@@ -1,49 +1,39 @@
 ---
- title: "Slack" 
- slug: "slack" 
- hidden: false 
+ Titel: "Slack" 
+ Schnecke: "schlaff" 
+ ausgeblendet: false 
 ---
-# Slack
+# Lockerheit
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4c350b3-Slack.PNG" width="100%" />
 </figure>
 
+Innerhalb unserer **Cognigy.AI** Plattform können Sie Ihren Cognigy Agent mit Ihrem **Slack Bot** verbinden, indem Sie unseren Slack Endpoint verwenden. 
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Slack Bot** by using our Slack Endpoint. 
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-## Generic Endpoint Settings
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.<div class="divider"></div>### OAuth-Zugriffstoken
 
-<div class="divider"></div>
+Dieser Wert ist das **OAuth-Zugriffstoken** für den Workspace deiner Slack-App, das auf der Seite *OAuth & Berechtigungen* deiner Slack-App abgerufen wird.
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+### Token verifizieren
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+Dieser Wert ist das **Verifizierungstoken** deiner Slack-App. Diese erhalten Sie auf der Seite *Grundlegende Informationen* Ihrer Slack-App im Abschnitt *App-Anmeldeinformationen*.
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Slack**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016307039).
 
-<div class="divider"></div>
+## Mehr Informationen
 
-### OAuth access token
-
-This value is the **OAuth access token** for your Slack app's workspace which is obtained in the *OAuth & Permissions* page of your Slack App.
-
-### Verify Token
-
-This value is the **Verification Token** of your Slack app. This is obtained from the *Basic Information* page of your Slack App in the *App Credentials* section.
-
-!!! note "Help Center"
-    More detailed information on how to set up a **Slack** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307039).
-
-## More Information
-
-- [Help Center: Slack Deployment](https://support.cognigy.com/hc/en-us/articles/360016307039-Slack-Deploy-an-Endpoint)
-- [Help Center: Slack Renaming a Bot](https://support.cognigy.com/hc/en-us/articles/360016271340-Slack-Rename-your-bot)
+- [Hilfe-Center: Slack-Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016307039-Slack-Deploy-an-Endpoint)
+- [Help Center: Slack umbenennen eines Bots](https://support.cognigy.com/hc/en-us/articles/360016271340-Slack-Rename-your-bot)

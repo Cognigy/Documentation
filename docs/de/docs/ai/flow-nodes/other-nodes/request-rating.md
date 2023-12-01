@@ -1,33 +1,31 @@
 ---
- title: "Request Rating" 
- slug: "request-rating" 
- hidden: false 
+ title: "Bewertung anfordern" 
+ slug: "Anfrage-Bewertung" 
+ ausgeblendet: false 
 ---
-# Request Rating
+# Bewertung anfordern
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/request-rating.png" width="80%" />
 </figure>
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.10.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.10.0-blue.svg)] ({{config.site_url}})
 
-## Description
-<div class="divider"></div>
-Cognigy introduces as of release Cognigy.AI (4.10.0) a new Flow Node Request Rating. 
+## Beschreibung<div class="divider"></div>Cognigy führt ab Version Cognigy.AI (4.10.0) ein neues Flow Node Request Rating ein. 
 
-The Request Rating Node is used to request a rating. If the Node is triggered in your webchat conversation, you will see the rating dialog.
+Der Knoten Bewertung anfordern wird verwendet, um eine Bewertung anzufordern. Wenn der Node in Ihrer Webchat-Konversation ausgelöst wird, sehen Sie den Bewertungsdialog.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9a139fc-Request_Rating_Webchat_5.svg" width="100%" />
-  <figcaption>Webchat rating dialog</figcaption>
+  <figcaption>Dialogfeld "Webchat-Bewertung"</figcaption>
 </figure>
 
-## Settings
+## Einstellungen
 
-The configuration options and their functions are listed below:
+Die Konfigurationsmöglichkeiten und ihre Funktionen sind im Folgenden aufgeführt:
 
-| Parameter               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Rating Title**        | Define a custom title for the rating request dialog.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| **Rating Comment Text** | Define a custom comment text for the rating request dialog.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| **Settings**            | - **Label**: Enter a name for your choice to the Node. [Adding a Label]({{config.site_url}}ai/flow-nodes/node-usage/#add-label) replaces the bottom text line of a Node.<br/>- **Comment**: [Additional information]({{config.site_url}}ai/flow-nodes/node-usage/#add-comment) about the Node.<br/>- **Analytics step**: Enter a meaningful step name used as **[Annotation]({{config.site_url}}insights/step-explorer/#annotations)** for the [Step Explorer]({{config.site_url}}insights/step-explorer/) in [Insights]({{config.site_url}}insights/cognigy-insights/) analytics. |
+| Parameter | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -------------------------------------------------------------------------------------------|
+| **Titel der Bewertung** | Definieren Sie einen benutzerdefinierten Titel für das Dialogfeld für die Bewertungsanfrage.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Text des Bewertungskommentars** | Definieren Sie einen benutzerdefinierten Kommentartext für den Bewertungsanfragedialog.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Einstellungen** | - **Label**: Geben Sie einen Namen für den Node ein, den Sie wählen können. [Hinzufügen einer Beschriftung] ({{config.site_url}}ai/flow-nodes/node-usage/#add-label) ersetzt die unterste Textzeile eines Nodes.<br/>- **Kommentar**: [Zusätzliche Informationen]({{config.site_url}}ai/flow-nodes/node-usage/#add-comment) über den Node.<br/>- **Analytics-Schritt**: Geben Sie einen aussagekräftigen Schrittnamen ein, der als **[Annotation]({{config.site_url}}insights/step-explorer/#annotations)** für den [Step Explorer]({{config.site_url}}insights/step-explorer/) in [Insights]({{config.site_url}}insights/cognigy-insights/) Analytics verwendet wird. |

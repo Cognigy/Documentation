@@ -1,220 +1,181 @@
 ---
- title: "Global Filter" 
- slug: "global-filter" 
- hidden: false 
+ Titel: "Globaler Filter" 
+ Slug: "Global-Filter" 
+ ausgeblendet: false 
 ---
-# Global Filter
+# Globaler Filter
 
-## Global Filter options
-
-<div class="divider"></div>
-
-Cognigy Insights has global filters. These filters can be set in a selection menu when clicking on the filter icon next to the user menu icon on the top right-hand side of the user interface. 
+## Globale Filteroptionen<div class="divider"></div>Cognigy Insights verfügt über globale Filter. Diese Filter können in einem Auswahlmenü gesetzt werden, indem Sie auf das Filtersymbol neben dem Benutzermenü-Symbol oben rechts in der Benutzeroberfläche klicken. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/ce5e349-tooltip_Insights_Filter.svg" width="100%" />
-  <figcaption>Filter icon with tooltip</figcaption>
+  <figcaption>Filtersymbol mit Tooltip</figcaption>
 </figure>
 
-Global filter will always be available no matter where you navigate. Once you have changed the filters, all the data visualized in any location will respect your filter configuration.
+Der globale Filter ist immer verfügbar, egal wohin Sie navigieren. Sobald Sie die Filter geändert haben, berücksichtigen alle Daten, die an einem beliebigen Ort visualisiert werden, Ihre Filterkonfiguration.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/06794a7-Global_filter_1_250.png" width="100%" />
-  <figcaption>Global filter menu</figcaption>
+  <figcaption>Menü "Globaler Filter"</figcaption>
 </figure>
 
-!!! note
-    The global filter options are available in all applications running in Cognigy Insights.
+!!! Anmerkung
+    Die globalen Filteroptionen sind in allen Anwendungen verfügbar, die in Cognigy Insights ausgeführt werden.
 
-!!! warning
-    Every change in filter settings needs to be confirmed with **Apply** to be active.
+!!! Warnung
+    Jede Änderung der Filtereinstellungen muss mit **Übernehmen** bestätigt werden, um aktiv zu sein.
 
-Several filter menus provide a **Negate** slide bar. When active, all but the selected endpoints will be analyzed. 
+Mehrere Filtermenüs bieten einen **Negieren**-Schieberegler. Wenn diese Option aktiviert ist, werden alle außer den ausgewählten Endpunkten analysiert. 
 
-
-## Timeframe
-
-<div class="divider"></div>
-
-!!! note
-    In v4.16 timeframe filter was updated to show currently selected date range. The widget is now placed on the top of the page.
+## Zeitrahmen<div class="divider"></div>!!! Anmerkung
+    In v4.16 wurde der Zeitrahmenfilter aktualisiert, um den aktuell ausgewählten Datumsbereich anzuzeigen. Das Widget wird nun oben auf der Seite platziert.
 
     <figure>
     <img class="image-center" src="{{config.site_url}}insights/images/timeframe-top.png" width="100%" />
-    <figcaption>Timeframe filter showing selected range of Dates.</figcaption>
+    <figcaption>Zeitrahmenfilter, der den ausgewählten Datumsbereich anzeigt.</figcaption>
     </figure>
     
+Sie können den Zeitraum auswählen oder mit einer Datumsauswahl in einem Kalender individuell festlegen.
 
-You can select the time period or set it individually with a date picker in a calendar.
+Verfügbare voreingestellte Zeiträume sind: 
 
-Available preset time periods are: 
-
-- Last 7 days
-- Last 30 days
-- Last 365 days
-- This month
-- This year
-- Custom period (freely selectable with the entry of start date and end date)
+- Letzte 7 Tage
+- Letzte 30 Tage
+- Letzte 365 Tage
+- Diesen Monat
+-Dieses Jahr
+- Benutzerdefinierter Zeitraum (frei wählbar mit der Eingabe von Startdatum und Enddatum)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/f1a1b85-Global_filter_Timeframe_2.png" width="50%" />
-  <figcaption>Timeframe filter options</figcaption>
+  <figcaption>Optionen zum Filtern von Zeitrahmen</figcaption>
 </figure>
 
-### Narrowing results to minutes
+### Eingrenzen der Ergebnisse auf Minuten
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.16-blue.svg)] ({{config.site_url}})
 
-It is possible to select hours for the chosen timeframe.
-This might be helpful if needed to narrow the result to a more precise range.
-To do this, enable the **Select time**
-option when setting a Custom Timeframe.
+Es ist möglich, Stunden für den gewählten Zeitraum auszuwählen.
+Dies kann bei Bedarf hilfreich sein, um das Ergebnis auf einen präziseren Bereich einzugrenzen.
+Aktivieren Sie dazu die **Uhrzeit auswählen**
+beim Festlegen eines benutzerdefinierten Zeitrahmens.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/select-time.png" width="50%" />
-  <figcaption>Custom timeframe with minute precision</figcaption>
+  <figcaption>Benutzerdefinierter Zeitrahmen mit Minutengenauigkeit</figcaption>
 </figure>
 
-## Endpoints
+## Endpunkte<div class="divider"></div>Endpunkte stellen sicher, dass die kanalspezifischen Ein- und Ausgaben (Bilder, Galerien, Sprache) in das standardisierte Input-Objekt konvertiert werden. Auf diese Weise muss ein Cognigy Flow nur einmal entwickelt werden, danach kann er durch die Konfiguration von Endpoints auf vielen Kanälen bereitgestellt werden.
+Beispiele für Endpunkte sind Webchat, Voice Gateway und Microsoft Teams.
+Weitere Informationen finden Sie hier: [Endpunkte](.. /ai/endpoints/overview.md)
 
-<div class="divider"></div>
-
-Endpoints make sure that the channel-specific input and output (Images, Galleries, Voice) gets converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints.
-Endpoint examples are Webchat, Voice Gateway, Microsoft Teams.
-You can find more information here: [Endpoints](../ai/endpoints/overview.md)
-
-You can select one or more Endpoint(s) to be analyzed. 
+Sie können einen oder mehrere Endpunkte auswählen, die analysiert werden sollen. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/1fe8b3c-Endpoints_filter.svg" width="100%" />
-  <figcaption>Endpoints filter options</figcaption>
+  <figcaption>Filteroptionen für Endpunkte</figcaption>
 </figure>
 
-**Admin Console (Interaction Panel) filter**
+**Admin-Konsole (Interaktionsbereich)-Filter**
 
-As of Cognigy.AI 4.10.0, you can filter the Insights reports for the admin console (or Interaction Panel) also.
+Ab Cognigy.AI 4.10.0 können Sie die Insights-Berichte auch für die Admin-Konsole (oder das Interaktions-Panel) filtern.
 
-So if you have tested the Virtual Agent using the Interaction Panel, you now will be able to fetch the Insights reports for this also.
+Wenn Sie also den virtuellen Agenten mit dem Interaktions-Panel getestet haben, können Sie nun auch dafür die Insights-Berichte abrufen.
 
-- Open the global filter **Endpoints**. 
-- Select "Interaction Panel" and confirm with **Apply** to get the analytics data displayed.
+- Öffnen Sie den globalen Filter **Endpunkte**. 
+- Wählen Sie "Interaction Panel" und bestätigen Sie mit **Übernehmen**, um die Analytics-Daten angezeigt zu bekommen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/c4625a8-5268_Global_filter_Interaction_Panel_2.png" width="100%" />
-  <figcaption>Insights Dashboard for "Interaction Panel" filter</figcaption>
+  <figcaption>Insights-Dashboard für den Filter "Interaction Panel"</figcaption>
 </figure>
 
-## Snapshots
+## Schnappschüsse<div class="divider"></div>!!! Anmerkung
+    Vor der Version 4.15 war es nur möglich, die Daten eines einzelnen Snapshots auf einmal zu überprüfen.
 
-<div class="divider"></div>
+Ein Snapshot ist ein exportierter Agent und enthält die erforderlichen Ressourcen.
+In der Auswahlliste werden die verfügbaren Snapshots angezeigt, die analysiert werden können.
+Weitere Informationen finden Sie hier: [Snapshots](https://docs.cognigy.com/docs/snapshots-1)
 
-!!! note
-    Before the version 4.15, it was only possible to inspect the data of a single snapshot at a time.
+Standardmäßig zeigen wir die **Daten für alle Snapshots an, einschließlich der Daten, die gesammelt wurden 
+ohne Snapshot (Live-Deployment, hier Option "Keine")**.
 
-A Snapshot is an exported Agent and includes required resources.
-The selection list displays the available snapshots which can be analyzed.
-You can find more information here: [Snapshots](https://docs.cognigy.com/docs/snapshots-1)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.15-blue.svg)] ({{config.site_url}})
 
-By default, we show the **data for all snapshots including the data which was gathered 
-without any snapshot (live deployment, here "None" option)**.
+Sie können die Analysedaten granuell überprüfen, indem Sie nur die bevorzugten Snapshots auswählen.
+Auch durch die Verwendung der Option "Negieren" – in diesem Fall schließen Sie bestimmte Optionen aus. 
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
-
-You can granually inspect the analytics data by choosing only the preferred snapshots,
-also by using the "negate" option — in this case, you will be excluding certain options. 
-
-For example, selecting "None" and "Negate" will show all the data excluding the one gathered from endpoints without selected snapshots.
+Wenn Sie beispielsweise "Keine" und "Negieren" auswählen, werden alle Daten mit Ausnahme der Daten angezeigt, die von Endpunkten ohne ausgewählte Snapshots gesammelt wurden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/snapshots.png" width="50%" />
-  <figcaption>The new "Snapshots" global filter</figcaption>
+  <figcaption>Der neue globale Filter "Snapshots"</figcaption>
 </figure>
 
-## Locales
+## Gebietsschemata<div class="divider"></div>Dieser Filter berücksichtigt die Gebietsschemas der verfügbaren Konversationen. 
 
-<div class="divider"></div>
+Sie können ein oder mehrere Gebietsschemata auswählen, die analysiert werden sollen. 
 
-This filter considers the locales of the available conversations. 
+Mit dem Schieberegler **Negieren** werden "alle außer den ausgewählten" Gebietsschemata analysiert.
 
-You can select one or more Locales to be analyzed. 
-
-Using the **Negate** slider bar "all but the selected" locales will be analyzed.
-
-You can find more information here: [Localization]({{config.site_url}}ai/resources/manage/localization/).
+Weitere Informationen finden Sie hier: [Lokalisierung]({{config.site_url}}ai/resources/manage/localization/).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/2e76d97-Global_filter_Locales_2.svg" width="100%" />
-  <figcaption>Local filter options</figcaption>
+  <figcaption>Lokale Filteroptionen</figcaption>
 </figure>
 
-!!! note
-    To clear all filter settings at once, click on the **Reset filters** button.  We will show it if the value of any global filter is not equal to the default value.
+!!! Anmerkung
+    Um alle Filtereinstellungen auf einmal zu löschen, klicken Sie auf die Schaltfläche **Filter zurücksetzen**.  Wir zeigen es an, wenn der Wert eines globalen Filters nicht dem Standardwert entspricht.
 
-## Rating
+## Bewertung
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.17-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.17-blue.svg)] ({{config.site_url}})
 
-This filter allows you to select the analytics data based on the last user rating given in a session. By default, all data is shown, regardless of whether user feedback is given or missing.
+Mit diesem Filter können Sie die Analysedaten basierend auf der letzten Benutzerbewertung auswählen, die in einer Sitzung abgegeben wurde. Standardmäßig werden alle Daten angezeigt, unabhängig davon, ob Benutzerfeedback gegeben wird oder nicht.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/rating.png" width="50%" />
-  <figcaption>Rating filter</figcaption>
+  <figcaption>Bewertungsfilter</figcaption>
 </figure>
 
-!!! note
-    See documentation for [Request rating Node]({{config.site_url}}ai/flow-nodes/other-nodes/request-rating/)
+!!! Anmerkung
+    Siehe Dokumentation für [Request rating Node]({{config.site_url}}ai/flow-nodes/other-nodes/request-rating/)
 
+## Aktualisieren von Analytics-Datensätzen mit der REST-API<div class="divider"></div>Wenn Sie beabsichtigen, bestimmte Analysefelder in Insights-Dashboards für eine laufende Sitzung zu aktualisieren, müssen Sie die Update-API für Analysen verwenden, die unter [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi) verfügbar ist.
+Weitere Informationen finden Sie hier: [Using the API]({{config.site_url}}ai/developer-guides/using-api/).
 
-## Updating Analytics records using Rest API
-
-<div class="divider"></div>
-
-
-If you intend to update certain analytics fields on Insights dashboards for an ongoing session, you need to use the update API for analytics, available on [https://api-trial.cognigy.ai/openapi](https://api-trial.cognigy.ai/openapi).
-More information you can find here: [Using the API]({{config.site_url}}ai/developer-guides/using-api/).
-
-To use the "analytics" API, you need to specify **userId**, **projectId**, **sessionId** and **inputId** in the request.
+Um die API "analytics" zu verwenden, müssen Sie **userId**, **projectId**, **sessionId** und **inputId** in der Anforderung angeben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/0f15d77-OpenAPI_Analytics_v20_2.svg" width="100%" />
-  <figcaption>OpenAPI "analytics" for updating analytics records</figcaption>
+  <figcaption>OpenAPI-"Analysen" zum Aktualisieren von Analysedatensätzen</figcaption>
 </figure>
 
-## Sharing application URL
+## Freigeben der Anwendungs-URL<div class="divider"></div>Cognigy ist stets bestrebt, die Analyse und Verarbeitung von Konversationsdaten für Kunden zu verbessern und bietet die Möglichkeit, gemeinsam nutzbare URLs für die Insights-Anwendung zu verwenden.
 
-<div class="divider"></div>
+Ausführlich:
+Wenn Sie zu einem bestimmten Ziel in Insights navigieren und globale Filter anwenden, indem Sie die URL aus Ihrer Adressleiste kopieren und für ein Teammitglied freigeben, wird die Anwendung beim Öffnen der URL in denselben Zustand versetzt (dasselbe Tool, dieselben ausgewählten Daten, dieselben angewendeten Filter). 
 
+Ihre Vorteile:
 
-Cognigy is always striving to improve conversational data analysis and processing for clients and provides the ability to use shareable URLs for the Insights application.
+- Sie können auf jeder Insights-Seite neu laden, und es werden die globalen Filter wiederhergestellt, die Sie zuvor ausgewählt haben.
+- Sie können ein geöffnetes Transkript im Transkript-Explorer neu laden und landen mit dem geöffneten Transkript auf derselben Seite.
+- Sie können im Nachrichten-Explorer neu laden, während eine "Suche" angewendet wird, und auf den gleichen Stand gelangen, in dem Sie sich vor dem Neuladen befanden.
+- Sie können im Nachrichten-Explorer neu laden, während Sie eine Nachricht ausgewählt haben, und zu der gleichen Nachricht gelangen, in der Sie sich vor dem Neuladen befanden.
 
-In detail:
-If you navigate to a specific destination within Insights and apply global filters, copying the URL from your address bar and sharing it with a team member, opening the URL will bring the application into the same state (same tool, same selected data, same filters applied). 
+## Mehr Informationen<div class="divider"></div>- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
 
+- [Dashboard-Übersicht]({{config.site_url}}insights/dashboard-overview/)
 
-Your advantages:
+- [Dashboard-Engagement]({{config.site_url}}insights/dashboard-engagement/)
 
-- You can reload on any Insights Page, and it will restore the global filters you selected before.
-- You can reload on an open Transcript in the Transcript Explorer, and you will land on the same page with the transcript open.
-- You can reload on the Message Explorer while having a "search" applied and get to the same as you were in before reloading.
-- You can reload on the Message Explorer while having a message selected and get to the same as you were in before reloading.
+- [NLU-Leistung des Dashboards]({{config.site_url}}insights/dashboard-nlu-performance/)
 
+- [Schritt-Explorer]({{config.site_url}}insights/step-explorer/)
 
+- [Transkript-Explorer]({{config.site_url}}insights/transcript-explorer/)
 
-## More Information
-<div class="divider"></div>
+- [Nachrichten-Explorer]({{config.site_url}}insights/message-explorer/)
 
-- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
-
-- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
-
-- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
-
-- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
-
-- [Step Explorer]({{config.site_url}}insights/step-explorer/)
-
-- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
-
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
-
-- [Download Report]({{config.site_url}}insights/download-report/)
+- [Bericht herunterladen]({{config.site_url}}insights/download-report/)

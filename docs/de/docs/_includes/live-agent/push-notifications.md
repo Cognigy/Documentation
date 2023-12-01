@@ -1,3 +1,3 @@
-!!! note
-    - Push notifications must be enabled in Live Agent and in your browser. Otherwise, they are not available.
-    - Push notifications are not supported by the Microsoft Edge browser.
+!!! Anmerkung
+    - Push-Benachrichtigungen müssen in Live Agent und in Ihrem Browser aktiviert sein. Andernfalls sind sie nicht verfügbar.
+    - Pushbenachrichtigungen werden vom Microsoft Edge-Browser nicht unterstützt.

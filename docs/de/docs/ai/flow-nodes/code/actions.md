@@ -1,294 +1,289 @@
 ---
-title: "Action" 
-slug: "actions" 
-hidden: false 
+Titel: "Aktion" 
+slug: "Aktionen" 
+ausgeblendet: false 
 ---
 
-# Action
+# Aktion
 
-Within a [Code Node](code.md), you can use the functions of the `actions` and `api` classes.
+Innerhalb eines [Code Node](code.md) können Sie die Funktionen der Klassen 'actions' und 'api' verwenden.
 
-!!! note "Available in Extensions"
-    The following functions are available in Extensions as well. There, one can use the `api` object and, for example, execute an `api.say()`.
+!!! Hinweis "Verfügbar in Erweiterungen"
+    Die folgenden Funktionen stehen auch in den Erweiterungen zur Verfügung. Dort kann man das Objekt 'api' verwenden und z.B. ein 'api.say()' ausführen.
 
-## Misc
+## Sonstiges
 
 ### actions.output / actions.say || api.output / api.say
 
-Executes a basic output to the contact, similar to the functionality of the [Say](../message/say.md) Node. 
+Führt eine grundlegende Ausgabe an den Kontakt aus, ähnlich der Funktionalität von [Say](.. /message/say.md) Knoten. 
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                  |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|----------------------------------------------|
-| text      | string | The output text which is sent to the contact |
-| data      | any    | The output data which is sent to the contact |
+| Text | Zeichenfolge | Der Ausgabetext, der an den Kontakt |
+| Daten | beliebig | Die Ausgabedaten, die an den Kontakt |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
 ### actions.completeGoal || api.completeGoal
 
-Adds a defined goal to the **completedGoals** array in the **Input Object**.
+Fügt dem Array **completedGoals** im **Input-Objekt** ein definiertes Ziel hinzu.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                                    |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|----------------------------------------------------------------|
-| key       | string | name of the goal the will be added to the completedGoals array |
+| Schlüssel | Zeichenfolge | Name des Ziels, das dem completedGoals-Array hinzugefügt wird |
 
-**Returns**
+**Ertrag**
 
-Promise<void>
+Versprechen<void>### actions.setTimezoneOffset || api.setTimezoneOffset
 
-### actions.setTimezoneOffset || api.setTimezoneOffset
+Legt den Zeitzonen-Offset von UTC fest.
 
-Sets the timezone offset from UTC.
+**Parameter**
 
-**Parameters**
-
-| Parameter | Type     | Description              |
+| Parameter | Typ | Beschreibung |
 |-----------|----------|--------------------------|
-| offset    | *number* | The time offset in hours |
+| Versatz | *Anzahl* | Der Zeitversatz in Stunden |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
-### actions.log || api.log
+### Aktionen:.log || api:.log
 
-Writes a message to the project logs.
+Schreibt eine Meldung in die Projektprotokolle.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                           |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|---------------------------------------|
-| level     | string | The log level, e.g. *debug* or *info* |
-| text      | string | The message for the logs              |
+| Ebene | Zeichenfolge | Der Log-Level, z.B. *debug* oder *info* |
+| Text | Zeichenfolge | Die Nachricht für die Protokolle |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
-### actions.think || api.think
+### aktionen.denken || api.think
 
-Is used to re-execute the Flow within one invocation.
+Wird verwendet, um den Flow innerhalb eines Aufrufs erneut auszuführen.
 
-The Flow will stop and then restart executing at the Start Node.
+Der Flow wird gestoppt und dann am Startknoten neu ausgeführt.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                             |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|-----------------------------------------|
-| text      | string | A simulated message text from the user. |
-| data      | any    | Simulated message data from the user.   |
+| Text | Zeichenfolge | Ein simulierter Meldungstext des Benutzers. |
+| Daten | beliebig | Simulierte Nachrichtendaten des Benutzers.   |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
-## Context
+## Kontext
 
 ### actions.addToContext || api.addToContext
 
-Is used to simplify storing information into the conversation's Context.
+Wird verwendet, um das Speichern von Informationen im Kontext der Konversation zu vereinfachen.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                                                                                                                  |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| key       | string | Where to store the data in the Context.                                                                                                      |
-| value     | string | The value to store in the Context.                                                                                                           |
-| mode      | string | In `simple` mode, will replace existing values, in `array` mode, it will store information in an array and push new results into that array. |
+| Schlüssel | Zeichenfolge | Wo die Daten im Kontext gespeichert werden sollen.                                                                                                      |
+| Wert | Zeichenfolge | Der Wert, der im Kontext gespeichert werden soll.                                                                                                           |
+| Modus | Zeichenfolge | Im "einfachen" Modus werden vorhandene Werte ersetzt, im "Array"-Modus werden Informationen in einem Array gespeichert und neue Ergebnisse in dieses Array übertragen. |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
 ### actions.getContext || api.getContext
 
-Gets the data from the context by the key.
+Ruft die Daten aus dem Kontext durch den Schlüssel ab.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                  |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|----------------------------------------------|
-| key       | string | Where to retrieve the data from the context. |
+| Schlüssel | Zeichenfolge | Wo die Daten aus dem Kontext abgerufen werden sollen. |
 
-**Returns**
+**Ertrag**
 
-any : The requested context data
+any : Die angeforderten Kontextdaten
 
 ### actions.resetContext || api.resetContext
 
-Resets the context.
+Setzt den Kontext zurück.
 
-**Parameters**
+**Parameter**
 
-none
+nichts
 
-**Returns**
+**Ertrag**
 
-Promise
+Versprechen
 
 ### actions.removeFromContext || api.removeFromContext
 
-Removes information from the conversation's Context.
+Entfernt Informationen aus dem Kontext der Konversation.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                                                                                       |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|-------------------------------------------------------------------------------------------------------------------|
-| key       | string | The key in the Context to remove information from                                                                 |
-| value     | string | The value to remove (in array mode)                                                                               |
-| mode      | string | In simple mode will remove the property completely, in array mode it will remove matching values from that array. |
+| Schlüssel | Zeichenfolge | Der Schlüssel im Kontext zum Entfernen von Informationen aus |
+| Wert | Zeichenfolge | Der zu entfernende Wert (im Array-Modus) |
+| Modus | Zeichenfolge | Im einfachen Modus wird die Eigenschaft vollständig entfernt, im Array-Modus werden übereinstimmende Werte aus diesem Array entfernt. |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
 ### actions.deleteContext || api.deleteContext
 
-Deletes the key and its values from the conversation's Context.
+Löscht den Schlüssel und seine Werte aus dem Kontext der Konversation.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                       |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|---------------------------------------------------|
-| key       | string | The key in the Context to remove information from |
+| Schlüssel | Zeichenfolge | Der Schlüssel im Kontext zum Entfernen von Informationen aus |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
-## State
-<div class="divider"></div>
+## Zustand<div class="divider"></div>### Aktionen .setState || api.setState
 
-### actions .setState || api.setState
+Wird verwendet, um den aktuellen Status dieser Konversation festzulegen.
 
-Is used to set the current State of this Conversation.
+**Parameter**
 
-**Parameters**
-
-| Parameter | Type   | Description                         |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|-------------------------------------|
-| state     | string | The State that should be activated. |
+| Bundesland | Zeichenfolge | Der Status, der aktiviert werden soll. |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
-### actions .getState || api.getState
+### Aktionen .getState || api.getState
 
-Returns the current state.
+Gibt den aktuellen Zustand zurück.
 
-**Parameters**
+**Parameter**
 
-none
+nichts
 
-**Returns**
+**Ertrag**
 
-string: The current state.
+string: Der aktuelle Status.
 
-### actions .resetState || api.resetState
+### Aktionen .resetState || api.resetState
 
-Resets the state of the flow to the *default* state
+Setzt den Status des Flows auf den *Standard*-Zustand zurück
 
-**Parameters**
+**Parameter**
 
-none
+nichts
 
-**Returns**
+**Ertrag**
 
-Promise<string>
+Versprechen<string>
 
-## Lexicon
+## Lexikon
 
-### actions .setKeyphrase || api.setKeyphrase
+### Aktionen .setKeyphrase || api.setKeyphrase
 
-**Parameters**
+**Parameter**
 
-| Parameter             | Type       | Description                                  |
+| Parameter | Typ | Beschreibung |
 |-----------------------|------------|----------------------------------------------|
-| keyphrase             | string     | The Keyphrase you want to set                |
-| tags                  | *string[]* | Tags you want to attach to the Keyphrase     |
-| synonyms *(optional)* | *string[]* | Synonyms you want to attach to the Keyphrase |
+| Schlüsselwort | Zeichenfolge | Die Keyphrase, die Sie festlegen möchten |
+| Schlagwörter | *Zeichenfolge[]* | Tags, die Sie an die Schlüsselphrase |
+| Synonyme *(optional)* | *Zeichenfolge[]* | Synonyme, die Sie an die Schlüsselphrase |
 
-**Returns**
+**Ertrag**
 
-void
+Leere
 
-### actions.addLexiconKeyphrase || api.addLexiconKeyphrase
+### actions.addLexiconSchlüsselphrase || api.addLexiconKeyphrase
 
-Adds a new keyphrase to a lexicon.
+Fügt einem Lexikon eine neue Schlüsselphrase hinzu.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                  |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|----------------------------------------------|
-| lexiconId | string | The ID of the Lexicon you want to update     |
-| keyphrase | string | The Keyphrase you want to add to the Lexicon |
-| tags      | any    | Tags you want to attach to the Keyphrase.    |
-| synonyms  | any    | Synonyms you want to attach to the Keyphrase |
+| lexiconId | Zeichenfolge | Die ID des Lexikons, das Sie aktualisieren möchten |
+| Schlüsselwort | Zeichenfolge | Die Schlüsselphrase, die Sie dem Lexikon hinzufügen möchten |
+| Schlagwörter | beliebig | Tags, die Sie an die Schlüsselphrase anhängen möchten.    |
+| Synonyme | beliebig | Synonyme, die Sie an die Schlüsselphrase |
 
-**Returns**
+**Ertrag**
 
-Promise<string>
+Versprechen<string>
 
-## Profile
+## Steckbrief
 
 ### actions.activateProfile || api.activateProfile
 
-Is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again.
+Wird verwendet, um ein deaktiviertes Profil wieder zu aktivieren, falls der Benutzer die Datenerfassung versehentlich deaktiviert hat oder die Datenerfassung wieder zulassen möchte.
 
-**Parameters**
+**Parameter**
 
-None
+Nichts
 
-**Returns**
+**Ertrag**
 
-Promise<any> 
+Versprechen<any> 
 
 ### actions.updateProfile || api.updateProfile
 
-Is used to update the users' Contact Profile.
+Wird verwendet, um das Kontaktprofil des Benutzers zu aktualisieren.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                          |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|------------------------------------------------------|
-| key       | string | Which field in the user's Contact Profile to update. |
-| value     | string | The value you want to set.                           |
+| Schlüssel | Zeichenfolge | Das Feld im Kontaktprofil des Benutzers, das aktualisiert werden soll. |
+| Wert | Zeichenfolge | Der Wert, den Sie festlegen möchten.                           |
 
-**Returns**
+**Ertrag**
 
-Promise<any>
+Versprechen<any>
 
 ### actions.mergeProfile || api.mergeProfile
 
-Is used to merge the profile of the contact who hits the node with another contact profile. 
+Wird verwendet, um das Profil des Kontakts, der auf den Knoten trifft, mit einem anderen Kontaktprofil zusammenzuführen. 
 
-This is useful in an omnichannel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
+Dies ist nützlich in einer Omnichannel-Umgebung, in der ein Kontakt auf verschiedenen Plattformen mit Ihrem Flow kommunizieren kann, aber auf allen Plattformen als dieselbe Person erkannt werden möchte.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                                                        |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|------------------------------------------------------------------------------------|
-| contactId | string | The id of the contact you want to merge with the current contact who hit the Node. |
+| Kontakt-ID | Zeichenfolge | Die ID des Kontakts, den Sie mit dem aktuellen Kontakt zusammenführen möchten, der den Knoten erreicht hat. |
 
-**Returns**
+**Ertrag**
 
-Promise<any> 
+Versprechen<any> 
 
 ### actions.deactivateProfile || api.deactivateProfile
 
-Is used to deactivate a specific contact profile in case a contact requests it.
+Wird verwendet, um ein bestimmtes Kontaktprofil zu deaktivieren, falls ein Kontakt es anfordert.
 
-**Parameters**
+**Parameter**
 
-None
+Nichts
 
-**Returns**
+**Ertrag**
 
-Promise<any>
+Versprechen<any></any></any></any></any></string></string></void>

@@ -1,47 +1,47 @@
 ---
-title: "Copilot: Identity Tile"
-slug: "identity-tile"
-hidden: true
+Titel: "Copilot: Identitätskachel"
+Schnecke: "Identitäts-Kachel"
+Ausgeblendet: Wahr
 ---
 
-# Copilot: Identity Tile
+# Copilot: Identitäts-Kachel
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /.. /release-notes/4.60.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/identity-tile.png" width="80%"/>
 </figure>
 
-## Description
+## Beschreibung
 
-This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot Workspace, enhancing the context and usability of the identity-related data.
+Dieser Node wurde entwickelt, um kundenspezifische Informationen direkt im Widget Ihres AI Copilot Workspace anzuzeigen und zu verarbeiten und so den Kontext und die Benutzerfreundlichkeit der identitätsbezogenen Daten zu verbessern.
 
-## Settings
+## Einstellungen
 
-| Parameter     | Type          | Description                                                                                                                                       |
+| Parameter | Typ | Beschreibung |
 |---------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID       | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                          |
-| Widget Layout | Select        | The layout of how the widget should be placed in the Workspace (horizontal/vertical).                                                             |
-| Image Shape   | Select        | The shape or format of the image (round or square).                                                                                               |
-| Image URL     | URL           | The URL where the image is hosted or located.                                                                                                     |
-| Customer Data | CognigyScript | Additional customer-specific data for analysis in a key-value format. For example, the key is `Email` and the value is `{{"{{profile.email}}"}}`. |
+| Kachel-ID | CognigyScript | Die ID, die Sie in der AI Copilot-Konfiguration erstellt haben.                                                                                          |
+| Widget-Layout | Wählen Sie | Das Layout, wie das Widget im Arbeitsbereich platziert werden soll (horizontal/vertikal).                                                             |
+| Bildform | Wählen Sie | Die Form oder das Format des Bildes (rund oder quadratisch).                                                                                               |
+| Bild-URL | Internetadresse | Die URL, unter der das Bild gehostet oder gespeichert wird.                                                                                                     |
+| Kundendaten | CognigyScript | Zusätzliche kundenspezifische Daten für die Analyse in einem Schlüssel-Wert-Format. Der Schlüssel lautet z. B. "E-Mail" und der Wert ist "{{"{{profile.email}}"}}'. |
 
-## Use Case 
+## Anwendungsfall 
 
-Displaying the user's profile picture adds a human touch to the conversation, making it more engaging and personal.
-One way to enhance the conversation further is by showing key customer data,
-such as their name, account information, or preferences, directly within the chat conversation.
-This allows human agents to have contextually relevant discussions without the need to search for customer data in multiple tools.
+Die Anzeige des Profilbilds des Benutzers verleiht der Konversation eine menschliche Note und macht sie ansprechender und persönlicher.
+Eine Möglichkeit, die Konversation weiter zu verbessern, besteht darin, wichtige Kundendaten anzuzeigen.
+wie z. B. ihren Namen, Kontoinformationen oder Präferenzen direkt in der Chat-Konversation.
+Dies ermöglicht es menschlichen Agenten, kontextbezogene Diskussionen zu führen, ohne in mehreren Tools nach Kundendaten suchen zu müssen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/identity-assist-example.png" width="80%"/>
-  <figcaption>The Identity Tile Widget in AI Copilot</figcaption>
+  <figcaption>Das Widget "Identitätskachel" in AI Copilot</figcaption>
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Copilot: Transcript Tile](transcript-tile.md)
-- [Copilot: Sentiment Tile Node](sentiment-tile.md)
-- [Copilot: Next Action Tile Node](next-action-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Copilot: Transkript-Kachel](transcript-tile.md)
+- [Copilot: Stimmungskachelknoten](sentiment-tile.md)
+- [Copilot: Nächster Aktionskachelknoten](next-action-tile.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

@@ -1,87 +1,71 @@
 ---
- title: "Output Transformer" 
- slug: "output-transformer" 
- hidden: false 
+ Titel: "Ausgangsübertrager" 
+ Slug: "Ausgangs-Übertrager" 
+ ausgeblendet: false 
 ---
-# Output Transformer
+# Ausgangsübertrager
 
-## Description
+## Beschreibung<div class="divider"></div>Der 'Output Transformer' wird bei jedem Ausgang des Flows ausgelöst, jedoch unterscheidet sich das Verhalten der Transformer-Funktion stark, je nachdem, welcher [Basistyp]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) des Transformers verwendet wird, was im Folgenden näher beschrieben wird.
 
-<div class="divider"></div>
-
-The `Output Transformer` is triggered on every output from the Flow, however, the behavior of the Transformer function differs greatly depending on which [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) of Transformer is being used, which is described in more detail below.
-
-The `Output Transformer` is configured by implementing the `handleOutput` function in the Transformer in the Endpoint.
+Der "Output Transformer" wird durch die Implementierung der "handleOutput"-Funktion im Transformer im Endpunkt konfiguriert.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/0d259a5-output_transformer.png" width="100%" />
-  <figcaption>Output Transformer Example</figcaption>
+  <figcaption>Beispiel für einen Ausgangstransformator</figcaption>
 </figure>
 
-## Differences between Transformer Types
+## Unterschiede zwischen den Transformatortypen<div class="divider"></div>## REST-Transformatoren
+Bei REST-basierten Transformern ist es nicht möglich, mehrere Ausgänge an den Benutzer zu senden, aber es ist immer noch möglich, mehrere Say-Node-Ausführungen in einem Flow pro Eingabe des Benutzers zu haben. Alle Ausgaben werden daher in einem "Puffer" gespeichert und nach Abschluss der Ausführung zu einer Ausgabe zusammengeführt. Das bedeutet, dass der Rückgabewert der handleOutput-Funktion *nicht* an den Benutzer gesendet wird, sondern stattdessen im Puffer gespeichert und im 'handleExecutionFinished'-Transformer verarbeitet wird. Es ist daher möglich, die endgültige Ausgabe an den Benutzer zu beeinflussen, indem jede einzelne Ausgabe in der handleOutput-Funktion manipuliert und zurückgegeben wird.
 
-<div class="divider"></div>
+## Webhook- und Socket-Transformatoren
+Bei Webhook- und Socket-basierten Transformern wird die Ausgabe des Flows an den Benutzer gesendet, sobald sie ausgegeben wird. Das bedeutet, dass der Rückgabewert der handleOutput-Funktion ohne weitere Änderungen direkt an den Benutzer gesendet wird. Dies hat zur Folge, dass es in der Verantwortung des Transformer-Editors liegt, sicherzustellen, dass das Format des Rückgabewerts der handleOutput-Funktion das richtige Format aufweist, das dem vom Kanal verwendeten Format entspricht. Es ist daher notwendig, die Dokumentation für den betreffenden Kanal zu lesen, um das Format zu bestimmen, das für das Senden einer Nachricht an den Benutzer erforderlich ist.
 
-## REST Transformers
-For REST based Transformers, it is impossible to send multiple outputs to the user, but it is still possible to have multiple Say Node executions in a Flow per input from the user. All outputs are therefore stored in a 'buffer' and will be merged into one output when execution has finished. This means the return value of the handleOutput function will *not* be sent to the user, but will instead be stored in the buffer and processed in the `handleExecutionFinished` Transformer. It is therefore possible to influence the final output to the user by manipulating every individual output in the handleOutput function and returning them.
+Die handleOutput-Funktion erhält in diesem Fall ein weiteres Argument namens 'processedOutput'. Diese Variable enthält die Ausgabe, die *wie besehen* an den Kanal gesendet wird, was bedeutet, dass sie im richtigen Format für den jeweiligen Kanal vorliegt. Ein Beispiel ist [hier](#section-return-values-of-the-transformer) zu sehen
 
-## Webhook and Socket Transformers
-For Webhook and Socket based Transformers, the output from the Flow is sent to the user as soon as it is output. This means that the return value of the handleOutput function will be sent directly to the user without any further changes. This has the implication that it is the responsibility of the Transformer editor to make sure that the format of the return value of the handleOutput function is in the correct format corresponding to the format used by the channel. It is therefore necessary to read the documentation for the channel in question to determine the format needed to send a message to the user.
+## Argumente für Transformer-Funktionen<div class="divider"></div>Die Funktion 'handleOutput' ruft ein Konfigurationsobjekt als Argument ab. Eine Übersicht über die Schlüssel im Objekt finden Sie unten
 
-The handleOutput function will in this case get one further argument, called `processedOutput`. This variable contains the output that would be sent *as-is* to the channel, meaning that it is in the correct format corresponding to the specific channel. An example can be seen [here](#section-return-values-of-the-transformer)
-
-## Transformer Function Arguments
-
-<div class="divider"></div>
-
-The `handleOutput` function gets a configuration object as an argument. An overview of the keys in the object can be seen below
-
-|Argument|	Description|	Webhook Transformers|	REST Transformers|	Socket Transformers|
+|Argument|	Beschreibung|	Webhook-Transformatoren|	REST-Transformatoren|	Steckdosen-Transformatoren|
 |--|--|--|--|--|
-|endpoint|	The configuration object for the Endpoint. Contains the URLToken etc.|	X	|X|	X|
-|output	|The raw output from the Flow.|	X|	X	|X|
-|processedOutput|	The output that was processed into the format that the specific channel expects. This is what is sent to the user if the Output Transformer is not executed.|	X	||	X|
-|userId|	The unique ID of the user.|	X|	X	|X|
-|sessionId|	The unique ID of the conversation.|	X|	X|	X|
+|endpunkt|	Das Konfigurationsobjekt für den Endpunkt. Enthält die URLToken etc.|	X |X|	X|
+|Ausgang |Die Rohausgabe des Flows.|	X|	X |X|
+|processedOutput|	Die Ausgabe, die in dem Format verarbeitet wurde, das der jeweilige Kanal erwartet. Dies ist das, was an den Benutzer gesendet wird, wenn der Ausgangstransformator nicht ausgeführt wird.|	X ||	X|
+|userId|	Die eindeutige ID des Benutzers.|	X|	X |X|
+|sessionId|	Die eindeutige ID der Konversation.|	X|	X|	X|
 
-## Return Values of the Transformer
+## Rückgabewerte des Übertragers<div class="divider"></div>Der Rückgabewert des 'Output Transformers' hängt von der Art des Transformers ab. Der Rückgabewert des Ausgangstransformators wird nicht überprüft.
 
-<div class="divider"></div>
+## REST-Transformatoren
+Der 'Output Transformer' muss einen Ausgang zurückgeben, der in einem 'outputs'-Array gespeichert wird, das in der 'handleExecutionFinished' Transformer-Funktion verfügbar ist. Die Ausgaben haben normalerweise das unten gezeigte Format, aber es ist auch möglich, ein anderes Ausgabeformat im outputs-Array zu speichern.
 
-The return value of the `Output Transformer` depends on the type of Transformer. There is no validation of the return value of the Output Transformer.
-
-## REST Transformers
-The `Output Transformer` has to return an output which will be stored in an `outputs` array, which is available in the `handleExecutionFinished` Transformer function. The outputs would normally have the format as seen below, but it is also possible to store a different output format into the outputs array.
-
-**Rest Return format**
-```JavaScript
-handleOutput: async ({ }) => {
+**Rest-Return-Format**
+'''JavaScript
+handleOutput: asynchron ({ }) => {
   const modifiedOutput = {
-    text: "someText",
-    data: {}
+    text: "irgendeinText",
+    Daten: {}
   };
  
-  return modifiedOutput;
+return modifiedOutput;
 }
-```
+'''
 
-If the `Output Transformer` returns a falsy value, then specific output will not be stored in the `outputs` array, and will essentially be discarded.
+Wenn der 'Output Transformer' einen falschen Wert zurückgibt, dann wird die spezifische Ausgabe nicht im 'outputs'-Array gespeichert und im Wesentlichen verworfen.
 
-## Webhook and Socket Transformers
-The `Output Transformer` has to return an output which can be sent directly to the specific channel without making any further modifications. This means that if the Transformer is active in a `Sunshine Conversations` Endpoint, then the format has to be according to the message format described in the Sunshine Conversations documentation.
+## Webhook- und Socket-Transformatoren
+Der 'Output Transformer' muss einen Ausgang zurückgeben, der ohne weitere Modifikationen direkt an den jeweiligen Kanal gesendet werden kann. Das heißt, wenn der Transformer in einem "Sunshine Conversations"-Endpunkt aktiv ist, muss das Format dem in der Sunshine Conversations-Dokumentation beschriebenen Nachrichtenformat entsprechen.
 
-Here is an example of the correct return format for a Sunshine Conversations Endpoint:
+Im Folgenden finden Sie ein Beispiel für das richtige Rückgabeformat für einen Sunshine Conversations-Endpunkt:
 
-**Webhook / Socket Return format**
-```JavaScript
-handleOutput: async ({ }) => {
+**Webhook-/Socket-Rückgabeformat**
+'''JavaScript
+handleOutput: asynchron ({ }) => {
    const requestPayload = {
-	   role: "appMaker",
-     type: "text",
-		 text: "some text"
+	   Rolle: "appMaker",
+     type: "Text",
+		 text: "etwas Text"
    };
   
-  return requestPayload;
+return requestPayload;
 }
-```
-If the `Output Transformer` returns falsy, then the output will not be sent to the user, and will thereby be discarded.
+'''
+Wenn der 'Output Transformer' falsch zurückgibt, wird die Ausgabe nicht an den Benutzer gesendet und somit verworfen.

@@ -1,158 +1,146 @@
 ---
-title: "Salesforce Service Cloud" 
-slug: "salesforce-handover" 
-description: "Cognigy has seamlessly integrated with Salesforce, adding it as an additional handover provider. This integration enables users to effortlessly connect with human agents who utilize Salesforce Service Cloud as their contact center."
-hidden: false 
+Titel: "Salesforce Service Cloud" 
+Slug: "Salesforce-Übergabe" 
+description: "Cognigy hat sich nahtlos in Salesforce integriert und als zusätzlichen Übergabeanbieter hinzugefügt. Diese Integration ermöglicht es Benutzern, mühelos mit menschlichen Agenten in Kontakt zu treten, die die Salesforce Service Cloud als Contact Center nutzen."
+ausgeblendet: false 
 ---
 # Salesforce Service Cloud
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.55.1-blue.svg)](../../release-notes/4.55.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.55.1-blue.svg)] (.. /.. /release-notes/4.55.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/salesforce.svg" width="100%" />
   <figcaption>Salesforce Service Cloud </figcaption>
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Cognigy hat **Salesforce** als zusätzlichen Übergabeanbieter integriert,
+, die verwendet werden kann, um Benutzer mit menschlichen Agenten zu verbinden, die Salesforce Service Cloud als Contact Center verwenden.
 
-<div class="divider"></div>
+Weitere Informationen zu Übergaben finden Sie unter [Agentenübergabe](overview.md).
 
-Cognigy has integrated **Salesforce** as an additional handover provider,
-which can be used to connect users with human agents who use Salesforce Service Cloud as a contact center.
+## Einrichtung<div class="divider"></div>Gehen Sie folgendermaßen vor, um Salesforce als Übergabeanbieter mit Cognigy.AI zu verwenden:
 
-To learn more about handovers, refer to [Agent Handover](overview.md).
+1. [Anmelden](https://login.salesforce.com/) bei Salesforce.
+2. Wenn in Salesforce keine Chat-Bereitstellung verfügbar ist, erstellen Sie mithilfe der folgenden Anleitungen eine neue: [Erstellen einer einfachen Chat-Implementierung](https://help.salesforce.com/s/articleView?id=sf.live_agent_set_up_basic_implementation.htm) und [Erstellen von Chat-Bereitstellungen](https://help.salesforce.com/s/articleView?id=sf.live_agent_create_deployments.htm).
 
-## Setup
+### Erstellen eines Endpunkts
 
-<div class="divider"></div>
-
-To start using Salesforce as a handover provider with Cognigy.AI, follow these steps:
-
-1. [Sign in](https://login.salesforce.com/) to Salesforce.
-2. If no Chat Deployment is available in Salesforce, create a new one using these guides: [Create a Basic Chat Implementation](https://help.salesforce.com/s/articleView?id=sf.live_agent_set_up_basic_implementation.htm) and [Create Chat Deployments](https://help.salesforce.com/s/articleView?id=sf.live_agent_create_deployments.htm).
-
-### Create an Endpoint
-
-1. Go to **Deploy > Endpoints**.
-2. Open the Endpoint where you want to enable handover to Salesforce.
-3. Scroll down to **Handover Settings** and select **Salesforce** from the **Handover Platform** list.
-4. Fill in the following fields:
-    - **Live Agent Base URL** — the Base URL which you need to retrieve from the Salesforce installation.
-      On the **Home** page, navigate to **Feature Settings > Service > Chat > Chat Settings**.
-      On the **Chat Settings** page, go to the **API Information > Chat API Endpoint**.
-      Copy the Endpoint value without the `/chat/rest` part, for example `https://x.xxx-xx-xxx.salesforceliveagent.com`.
-    - **API Version** — the value of the API version is `52`.
-    - **Organization ID** — the ID of your organization in Salesforce.
-    - **Deployment ID** — the ID of your deployment in Salesforce.
-    - **Button ID** — the ID of your button for related deployment in Salesforce.<br><br>
-      Go to the Salesforce installation to retrieve the Organization ID, Deployment ID, and Button ID.
-      Navigate to **Feature Settings > Service > Embedded Service > Embedded Service Deployments**.
-      In the raw with the deployment you want to use, click the **Show 3 more actions** button, then select **View**.
-      In the **Embedded Service Code Snippets** section, click **Get Code**.
-      A dialog with a code snippet will be opened.
-      Search the snippet for the following part and copy the commented values from the snippet to the Endpoint Settings.
-      Leave out the `''` markers.
-      <br>
-
-          ```javascript
+1. Wechseln Sie zu **Bereitstellen > Endpunkte**.
+2. Öffnen Sie den Endpunkt, an dem Sie die Übergabe an Salesforce aktivieren möchten.
+3. Scrollen Sie nach unten zu **Übergabeeinstellungen** und wählen Sie **Salesforce** aus der Liste **Übergabeplattform** aus.
+4. Füllen Sie die folgenden Felder aus:
+    - **Live Agent Base URL** – die Basis-URL, die Sie aus der Salesforce-Installation abrufen müssen.
+      Navigieren Sie auf der Seite **Startseite** zu **Funktionseinstellungen > Dienst > Chat > Chateinstellungen**.
+      Navigieren Sie auf der Seite **Chateinstellungen** zu **API-Informationen > Chat-API-Endpunkt**.
+      Kopieren Sie den Endpoint-Wert ohne den Teil "/chat/rest", z. B. "https://x.xxx-xx-xxx.salesforceliveagent.com".
+    - **API-Version** — der Wert der API-Version ist '52'.
+    - **Organisations-ID** – die ID Ihrer Organisation in Salesforce.
+    - **Bereitstellungs-ID** – die ID Ihrer Bereitstellung in Salesforce.
+    - **Schaltflächen-ID** – die ID Ihrer Schaltfläche für die zugehörige Bereitstellung in Salesforce.<br><br>Wechseln Sie zur Salesforce-Installation, um die Organisations-ID, die Bereitstellungs-ID und die Schaltflächen-ID abzurufen.
+      Navigieren Sie zu **Featureeinstellungen > Service > Embedded Service > Embedded Service Deployments**.
+      Klicken Sie in der Rohdatei mit der Bereitstellung, die Sie verwenden möchten, auf die Schaltfläche **3 weitere Aktionen anzeigen**, und wählen Sie dann **Ansicht** aus.
+      Klicken Sie im Abschnitt **Codeausschnitte für eingebettete Dienste** auf **Code abrufen**.
+      Es öffnet sich ein Dialog mit einem Code-Snippet.
+      Suchen Sie im Codeausschnitt nach dem folgenden Teil, und kopieren Sie die kommentierten Werte aus dem Codeausschnitt in die Endpunkteinstellungen.
+      Lassen Sie die '''''-Markierungen weg.      <br>'''Javascript
           embedded_svc.init(
-              'https://...'
-              'https://...',
+              "https://..."
+              "https://...",
               gslbBaseURL
-              '<your-organization-id>', // copy the Organization ID
+              '<your-organization-id>', // Kopieren Sie die Organisations-ID
               '...',
               {
                   baseLiveAgentContentURL: '...',
-                  deploymentId: '<your-deployment-id>', // copy the Deployment ID
-                  buttonId: '<your-button-id>', // copy the Button ID
+                  deploymentId: '<your-deployment-id>', // Kopieren der Bereitstellungs-ID
+                  buttonId: '<your-button-id>', // Kopiere die Button-ID
               }
           );
-          ```
+          '''
 
-5. _(Optional)_ Activate the **Forward Events to the Flow** setting. This setting forwards any event to the Flow, which can be handled in the Events case of a Handover Status Lookup Node. Agent Replies and Conversation Closed events are not forwarded.
-6. Click **Save**.
+5. _(Optional)_ Aktivieren Sie die Einstellung **Ereignisse an den Flow weiterleiten**. Diese Einstellung leitet jedes Ereignis an den Flow weiter, was im Fall von Ereignissen eines Übergabestatus-Suchknotens behandelt werden kann. Agentenantworten und Ereignisse vom Typ "Konversation geschlossen" werden nicht weitergeleitet.
+6. Klicken Sie auf **Speichern**.
 
-### Configure Handover Settings
+### Übergabeeinstellungen konfigurieren
 
-In the Salesforce settings of the [Handover to Agent](../tools/agent-handover.md) Node,
-configure the following settings:
+Wählen Sie in den Salesforce-Einstellungen der [Übergabe an den Agenten](.. /tools/agent-handover.md) Knoten,
+Konfigurieren Sie die folgenden Einstellungen:
 
-- **Send Transcript as a first message** — the setting allows Salesforce to receive conversation transcript as a first message. It is turned off by default.
-- **Button ID** — the ID of the Button you created in the Salesforce installation. This setting will override the default Button ID that you specified in the [Endpoint configuration](#create-an-endpoint). You can use different Button IDs for individual Handover to Agent Nodes.
-- **Pre-chat Entities and Details** — the additional context sent in a custom JSON structure, providing the information before engaging with the human agent. See more information in the [Pre-chat Entities and Details](#pre-chat-details) section.
+- **Transkript als erste Nachricht senden** – Die Einstellung ermöglicht es Salesforce, das Transkript der Konversation als erste Nachricht zu empfangen. Sie ist standardmäßig deaktiviert.
+- **Schaltflächen-ID** – die ID der Schaltfläche, die Sie in der Salesforce-Installation erstellt haben. Diese Einstellung überschreibt die Standard-Schaltflächen-ID, die Sie in der [Endpunktkonfiguration](#create-an-endpoint) angegeben haben. Sie können unterschiedliche Schaltflächen-IDs für die individuelle Übergabe an Agentenknoten verwenden.
+- **Pre-Chat-Entitäten und -Details** – der zusätzliche Kontext, der in einer benutzerdefinierten JSON-Struktur gesendet wird und die Informationen bereitstellt, bevor er mit dem menschlichen Agenten in Kontakt tritt. Weitere Informationen finden Sie im Abschnitt [Entitäten und Details vor dem Chat](#pre-chat-details).
 
-#### Pre-chat Entities and Details
+#### Entitäten und Details vor dem Chat
 
-Cognigy.AI sends the Conversation History by default, which includes the entire chat between the user and agent. 
-It's displayed when the agent receives the first message from the user
-and can be found in the **Transcripts** tab of Salesforce Service Console under the **Transcript > Details > Transcript > Body** section.
+Cognigy.AI sendet standardmäßig den Konversationsverlauf, der den gesamten Chat zwischen dem Benutzer und dem Agenten enthält. 
+Sie wird angezeigt, wenn der Agent die erste Nachricht vom Benutzer erhält
+und finden Sie auf der Registerkarte **Transkripte** der Salesforce Service Console im Abschnitt **Transkript > Details > Transkript > Text**.
 
-Moreover, Cognigy.AI allows users to send Pre-chat Details and Pre-chat Entities arrays as a custom JSON structure.
-This feature allows users
-to include additional context or relevant information before initiating the chat with the human agent.
-This information can then be used for further processing or personalizing the conversation based on the provided details.
+Darüber hinaus ermöglicht Cognigy.AI Benutzern, Pre-Chat-Details und Pre-Chat-Entities-Arrays als benutzerdefinierte JSON-Struktur zu senden.
+Diese Funktion ermöglicht es Benutzern,
+, um zusätzlichen Kontext oder relevante Informationen einzubeziehen, bevor Sie den Chat mit dem menschlichen Agenten initiieren.
+Diese Informationen können dann für die weitere Verarbeitung oder Personalisierung der Konversation auf der Grundlage der bereitgestellten Details verwendet werden.
 
-##### Pre-chat Entities
+##### Entitäten vor dem Chat
 
-Cognigy.AI allows the creation of fields
-and linking User details obtained through Pre-Chat Details to Salesforce Entities like Contact or Case.
+Cognigy.AI ermöglicht die Erstellung von Feldern
+und das Verknüpfen von Benutzerdaten, die über Pre-Chat-Details erhalten wurden, mit Salesforce-Entitäten wie Kontakt oder Fall.
 
-To do this, you must send the Pre-Chat Entities array to the live chat session on Salesforce.
+Zu diesem Zweck müssen Sie das Array "Pre-Chat-Entitäten" an die Live-Chat-Sitzung in Salesforce senden.
 
-The JSON example shows how to connect the conversation to a Case and utilize Pre-Chat Details:
+Das JSON-Beispiel zeigt, wie Sie die Konversation mit einem Fall verbinden und Pre-Chat-Details verwenden:
 
-```json
+'''json
 [
    {
-         "entityName":"Contact",         
-         "saveToTranscript": "Contact",
-         "linkToEntityName":"Case",
-         "linkToEntityField":"ContactId",
+         "entityName":"Kontakt",         
+         "saveToTranscript": "Kontakt",
+         "linkToEntityName":"Groß-/Kleinschreibung",
+         "linkToEntityField":"Kontakt-ID",
          "showOnCreate":true,          
          "entityFieldsMaps":[
              {
-               "fieldName":"LastName",
-               "label":"LastName",
-               "doFind":true,
+               "fieldName":"Nachname",
+               "label":"Nachname",
+               "doFind":wahr,
                "isExactMatch":true,
                "doCreate":true
             },
             {
-               "fieldName":"FirstName",
-               "label":"FirstName",
-               "doFind":true,
+               "fieldName":"Vorname",
+               "label":"Vorname",
+               "doFind":wahr,
                "isExactMatch":true,
                "doCreate":true
             },
             {
-               "fieldName":"Email",
-               "label":"Email",
-               "doFind":true,
+               "fieldName":"E-Mail",
+               "label":"E-Mail",
+               "doFind":wahr,
                "isExactMatch":true,
                "doCreate":true
             }          
          ]
       }   
    ]
-```
+'''
 
-##### Pre-chat Details
+##### Details vor dem Chat
 
-Cognigy.AI allows sending conversation information to Salesforce Live Agent using Pre-chat Details.
+Cognigy.AI ermöglicht das Senden von Konversationsinformationen an Salesforce Live Agent mithilfe von Pre-Chat-Details.
 
-By utilizing the entityMaps field, this information can be mapped to specific Pre-Chat Entity fields.
+Durch die Verwendung des entityMaps-Felds können diese Informationen bestimmten Pre-Chat-Entitätsfeldern zugeordnet werden.
 
-Cognigy Script can fetch values from Cognigy input, profile, and context objects before sending the data.
+Cognigy Script kann Werte aus Cognigy-Eingabe-, Profil- und Kontextobjekten abrufen, bevor die Daten gesendet werden.
 
-```json
+'''json
 [
        {
-         "label":"LastName",
+         "label":"Nachname",
          "value":"Mustermann",
          "entityMaps":[
             {
-               "entityName":"contact",
-               "fieldName":"LastName"
+               "entityName":"Kontakt",
+               "fieldName":"Nachname"
             }
          ],
          "transcriptFields":[
@@ -161,12 +149,12 @@ Cognigy Script can fetch values from Cognigy input, profile, and context objects
          "displayToAgent":true
       },
       {
-         "label":"FirstName",
+         "label":"Vorname",
          "value":"Max",
          "entityMaps":[
             {
-               "entityName":"contact",
-               "fieldName":"FirstName"
+               "entityName":"Kontakt",
+               "fieldName":"Vorname"
             }
          ],
          "transcriptFields":[
@@ -175,12 +163,12 @@ Cognigy Script can fetch values from Cognigy input, profile, and context objects
          "displayToAgent":true
       },
       {
-         "label":"Email",
+         "label":"E-Mail",
          "value":"max.mustermann@mail.de",
          "entityMaps":[
             {
-               "entityName":"contact",
-               "fieldName":"Email"
+               "entityName":"Kontakt",
+               "fieldName":"E-Mail"
             }
          ],
          "transcriptFields":[
@@ -189,9 +177,10 @@ Cognigy Script can fetch values from Cognigy input, profile, and context objects
          "displayToAgent":true
       }
    ]
-```
+'''
 
-For more information about the Pre-Chat Entities and Pre-Chat Details fields and their usage,
-read the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail). 
+Weitere Informationen zu den Feldern "Pre-Chat-Entitäten" und "Pre-Chat-Details" und deren Verwendung finden Sie unter
+Lesen Sie die [Salesforce-API-Dokumentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail). 
 
-To check the handover, go to the installation that your server administrator has deployed.
+Um die Übergabe zu überprüfen, wechseln Sie zu der Installation, die Ihr Serveradministrator bereitgestellt hat.
+</your-button-id></your-deployment-id></your-organization-id>

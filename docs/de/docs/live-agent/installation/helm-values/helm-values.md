@@ -1,311 +1,312 @@
 ---
- title: "Helm Values" 
- slug: "helm-values" 
- hidden: false 
+ Titel: "Helm Values" 
+ Slug: "Helm-Werte" 
+ ausgeblendet: false 
 ---
 
-# Helm Values
+# Helm-Werte
 
-## Quick Introduction
+## Kurze Einführung
 
-Helm values are all the variables used for configuring the Live Agent app and resources. These are stored on a file called `values.yaml`. It can be edited as desired to configure Live Agent behavior. Here is an example of this file:
+Helm-Werte sind alle Variablen, die für die Konfiguration der Live Agent-App und der Ressourcen verwendet werden. Diese werden in einer Datei namens "values.yaml" gespeichert. Er kann nach Belieben bearbeitet werden, um das Verhalten des Live Agents zu konfigurieren. Hier ist ein Beispiel für diese Datei:
 
-```yaml
-# Defining Ingress host
-ingress:
-  enabled: false
-  annotations:
+'''Yaml
+# Definieren des Ingress-Hosts
+Eintritt:
+  Aktiviert: false
+  Anmerkungen:
     kubernetes.io/ingress.class: traefik
-  hosts:
-    - host: "live-agent-domain.com"
-      paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              name: cognigy-live-agent-app
+  Wirte:
+    - Gastgeber: "live-agent-domain.com"
+      Pfade:
+        -Pfad:/
+          pathType: Präfix
+          Backend:
+            Dienst:
+              Name: cognigy-live-agent-app
 
 configmap:
-  # Comment about a commented variable, it is ignored
-  # REST_CLIENT_SSL_VERIFICATION=false
-  FORCE_SSL: true
-```
+  # Kommentar zu einer kommentierten Variablen, sie wird ignoriert
+  # REST_CLIENT_SSL_VERIFICATION=falsch
+  FORCE_SSL: wahr
+'''
 
-Apart from modifying or commenting the variables inside the `values.yaml` file, parameters can be modified also using the `--set key=value[,key=value]` argument to `helm install`. For example:
+Abgesehen davon, dass die Variablen in der Datei 'values.yaml' geändert oder kommentiert werden können, können Parameter auch mit dem Argument '--set key=value[,key=value]' in 'helm install' geändert werden. Zum Beispiel:
 
-```sh
+'''sch
 helm install my-release \
-  --set configmap.SSL_CA_FILE="/etc/ca.pem"\
+  --set configmap. SSL_CA_FILE="/etc/ca.pem"\
     ./cognigy-live-agent
-```
+'''
 
-The above command sets the Live Agent certificate file path to `/etc/ca.pem`. More information can be found at the Helm documentation [Template and Values](https://helm.sh/docs/chart_best_practices/values).
+Der obige Befehl setzt den Pfad der Live Agent-Zertifikatsdatei auf '/etc/ca.pem'. Weitere Informationen finden Sie in der Helm-Dokumentation [Template and Values](https://helm.sh/docs/chart_best_practices/values).
 
-It is recommended to create a `custom-values.yaml` and add the key-values that need to be overridden instead of modifying the `values.yaml` file directly. Then at the moment of performing install/upgrade commands, it would be as easy as using the argument at the end like this:
+Es wird empfohlen, eine Datei "custom-values.yaml" zu erstellen und die Schlüssel/Wert-Paare hinzuzufügen, die überschrieben werden müssen, anstatt die Datei "values.yaml" direkt zu ändern. Dann wäre es im Moment des Ausführens von Installations-/Upgrade-Befehlen so einfach, wie das Argument am Ende wie folgt zu verwenden:
 
-```sh
+'''sch
 helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
-```
+'''
 
-Next, you can find a definition for each of these values, to understand how to modify them accordingly.
+Als Nächstes finden Sie eine Definition für jeden dieser Werte, um zu verstehen, wie Sie sie entsprechend ändern können.
 
-## Specific Configurations
+## Spezifische Konfigurationen
 
-For specific values and logic, here you can utilize these dedicated sections:
+Für bestimmte Werte und Logik können Sie hier diese speziellen Abschnitte verwenden:
 
-- [Database](database.md)
+- [Datenbank](database.md)
 - [Redis](redis.md)
-- [Storage](storage.md)
+- [Lagerung](storage.md)
 - [SMTP](smtp.md)
-- [Email Templates](email-templates.md)
+- [E-Mail-Vorlagen](email-templates.md)
 
-## Images
+## Bilder
 
-| Name                         | Description                             | Value                                 |
+| Bezeichnung: | Beschreibung | Wert |
 |------------------------------|-----------------------------------------|---------------------------------------|
-| `image.repository`           | Live Agent Image Repository             | `cognigy.azurecr.io/live-agent`       |
-| `image.tag`                  | Live Agent Image Tag                    | `e.g. 2.0.0`                          |
-| `image.pullPolicy`           | Live Agent Image Pull Policy            | `IfNotPresent`                        |
-| `image.pullSecretName`       | Live Agent Image Pull secret name       | `cognigy-registry-token`              |
-| `odata.image.repository`     | Live Agent OData Image Repository       | `cognigy.azurecr.io/live-agent-odata` |
-| `odata.image.tag`            | Live Agent OData Image Tag              | `e.g. 1.0.0`                          |
-| `odata.image.pullPolicy`     | Live Agent OData Image Pull Policy      | `IfNotPresent`                        |
-| `odata.image.pullSecretName` | Live Agent OData Image Pull secret name | `cognigy-registry-token`              |
+| 'image.repository' | Live-Agenten-Bild-Repository | "cognigy.azurecr.io/live-agent" |
+| 'image.tag' | Live-Agent-Bild-Tag | "z.B. 2.0.0" |
+| 'image.pullPolicy' | Richtlinie zum Abrufen von Live-Agent-Images | 'IfNotPresent' |
+| 'image.pullSecretName' | Name des geheimen Geheimnisses für Live Agent-Image abrufen | 'cognigy-registry-token' |
+| 'odata.image.repository' | OData-Image-Repository für Live-Agenten | "cognigy.azurecr.io/live-agent-odata" |
+| 'odata.image.tag' | OData-Bild-Tag für Live-Agent | "z.B. 1.0.0" |
+| 'odata.image.pullPolicy' | OData-Image-Pullrichtlinie für Live Agent | 'IfNotPresent' |
+| 'odata.image.pullSecretName' | Name des geheimen Geheimnisses für Live Agent OData-Image abrufen | 'cognigy-registry-token' |
 
 ## Cognigy
 
-### App Platform Token
+### App-Plattform-Token
 
-Cognigy.AI uses an App Platform Token to perform operations,
- such as synchronizing and creating data (for example, Inboxes and accounts),
-using the Live Agent API.
-For this, Live Agent and Cognigy.AI need to have secrets set to matching values.
+Cognigy.AI verwendet ein App Platform Token zum Ausführen von Vorgängen,
+ z. B. das Synchronisieren und Erstellen von Daten (z. B. Posteingänge und Konten),
+mit der Live Agent-API.
+Zu diesem Zweck müssen die Geheimnisse von Live Agent und Cognigy.AI auf übereinstimmende Werte festgelegt sein.
 
-#### Live Agent Secret
+#### Live-Agenten-Geheimnis
 
-The recommendation is to create a new secret under the Live Agent namespace and reference it in the Helm values. Otherwise, it will automatically create a secret called `live-agent-cognigy-live-agent-cognigy-platform-app-token` with a random value (this secret will be persisted and not changed in future Helm upgrades).
+Es wird empfohlen, einen neuen geheimen Schlüssel unter dem Live Agent-Namespace zu erstellen und in den Helm-Werten darauf zu verweisen. Andernfalls wird automatisch ein Geheimnis mit dem Namen "live-agent-cognigy-live-agent-cognigy-platform-app-token" mit einem zufälligen Wert erstellt (dieses Geheimnis wird beibehalten und in zukünftigen Helm-Upgrades nicht geändert).
 
-| Name                                        | Description                            | Default Value |
+| Bezeichnung: | Beschreibung | Standardwert |
 |---------------------------------------------|----------------------------------------|---------------|
-| `cognigyPlatformAppToken.existingSecret`    | Cognigy App Platform Token Secret Name | `""`          |
-| `cognigyPlatformAppToken.existingSecretKey` | Cognigy App Platform Token Secret Key  | `""`          |
+| 'cognigyPlatformAppToken.existingSecret' | Geheimer Name des Cognigy-App-Plattform-Tokens | '""'          |
+| 'cognigyPlatformAppToken.existingSecretKey' | Geheimer Token-Schlüssel für die Cognigy-App-Plattform | '""'          |
 
-> Note: The secret key value must be a random alphanumeric string of 24 characters, similar to `V65Xyf6pphEeac64g2d92pvw`
+> Hinweis: Der Wert des geheimen Schlüssels muss eine zufällige alphanumerische Zeichenfolge mit 24 Zeichen sein, ähnlich wie "V65Xyf6pphEeac64g2d92pvw"
 
-#### Cognigy.AI Secret
+#### Cognigy.AI Geheimnis
 
-The following Helm values need to be set up:
+Die folgenden Helm-Werte müssen eingerichtet werden:
 
-```yaml
+'''Yaml
 cognigyLiveAgent:
-  ## Existing secret with live-agent credentials. The secret must have the following key:
-  ##   "cognigy-live-agent-platform-token": The token for cognigy live agent
+  ## Vorhandener geheimer Schlüssel mit Live-Agent-Anmeldeinformationen. Der geheime Schlüssel muss über den folgenden Schlüssel verfügen:
+  ## "cognigy-live-agent-platform-token": Das Token für den kognitiven Live-Agenten
   existingSecret: ""
-```
+'''
 
-#### Troubleshooting
+#### Fehlerbehebung
 
-If the secrets are the same value, but the integration is not working (for example, handover or preconfigured Live Agent not working), perform the following:
+Wenn die Geheimnisse denselben Wert haben, die Integration jedoch nicht funktioniert (z. B. Übergabe oder vorkonfigurierter Live Agent funktioniert nicht), gehen Sie wie folgt vor:
 
-1. Restart the `live-agent-cognigy-live-agent-XXX` app pod in the Live Agent namespace.
-2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
-   - service-handover
-   - service-security
-   - service-api
-   - service-resources
+1. Starten Sie den App-Pod "live-agent-cognigy-live-agent-XXX" im Live Agent-Namespace neu.
+2. Starten Sie die folgenden Cognigy.AI Pods im Cognigy.AI-Namespace neu:
+   - Service-Übergabe
+   - Service-Sicherheit
+   - Service-API
+   - Service-Ressourcen
    - service-ui
 
 ### OAuth
 
-These are the values used for enabling the Cognigy authentication in Live Agent. This allows Cognigy users to log into Live Agent with their same credentials.
+Dies sind die Werte, die für die Aktivierung der Cognigy-Authentifizierung in Live Agent verwendet werden. Auf diese Weise können sich Cognigy-Benutzer mit denselben Anmeldedaten bei Live Agent anmelden.
 
-| Name                                    | Description                     | Default Value                                                     |
+| Bezeichnung: | Beschreibung | Standardwert |
 |-----------------------------------------|---------------------------------|-------------------------------------------------------------------|
-| `configmap.COGNIGY_OAUTH_CLIENT_ID`     | OAuth Client ID                 | `"cognigy-live-agent"`                                            |
-| `configmap.COGNIGY_OAUTH_SITE`          | Cognigy API Site                | `"https://api-installation.cognigy.ai"/v2.0`                      |
-| `configmap.COGNIGY_OAUTH_AUTHORIZE_URL` | Cognigy OAuth API Authorize URL | `"https://installation.cognigy.ai/login?cognigy-live-agent=true"` |
-| `configmap.COGNIGY_OAUTH_TOKEN_URL`     | OAuth Token URL                 | `"https://api-installation.cognigy.ai/auth/oauth2/token"`         |
+| 'configmap. COGNIGY_OAUTH_CLIENT_ID' | OAuth-Client-ID | '"cognigy-live-agent"' |
+| 'configmap. COGNIGY_OAUTH_SITE' | Cognigy API-Webseite | '"https://api-installation.cognigy.ai"/v2.0' |
+| 'configmap. COGNIGY_OAUTH_AUTHORIZE_URL' | Cognigy OAuth API URL autorisieren | '"https://installation.cognigy.ai/login?cognigy-live-agent=true"' |
+| 'configmap. COGNIGY_OAUTH_TOKEN_URL' | OAuth-Token-URL | '"https://api-installation.cognigy.ai/auth/oauth2/token"' |
 
-For the OAuth client secret, create a secret in the Live Agent namespace and then set the following values:
+Erstellen Sie für den geheimen OAuth-Clientschlüssel einen geheimen Schlüssel im Live Agent-Namespace, und legen Sie dann die folgenden Werte fest:
 
-| Name                             | Description                             | Default Value |
+| Bezeichnung: | Beschreibung | Standardwert |
 |----------------------------------|-----------------------------------------|---------------|
-| `cognigyOAuth.existingSecret`    | Secret Name for The OAuth Client Secret | `""`          |
-| `cognigyOAuth.existingSecretKey` | Secret key For The OAuth Client Secret  | `""`          |
+| 'cognigyOAuth.existingSecret' | Geheimnisname für den geheimen OAuth-Clientschlüssel | '""'          |
+| 'cognigyOAuth.existingSecretKey' | Geheimer Schlüssel für den geheimen OAuth-Client | '""'          |
 
-> Note: The secret key value must be a random alphanumeric string of 64 characters, similar to `DUSOBAPM2L5V3CNLBw48surpgzrpk6bji9fav65xyf6ppheeac64g2d92pvwouhm`
+> Hinweis: Der Wert des geheimen Schlüssels muss eine zufällige alphanumerische Zeichenfolge mit 64 Zeichen sein, ähnlich wie "DUSOBAPM2L5V3CNLBw48surpgzrpk6bji9fav65xyf6ppheeac64g2d92pvwouhm"
 
 #### Cognigy.AI
 
-The following Helm values need to be set up:
+Die folgenden Helm-Werte müssen eingerichtet werden:
 
-```yaml
+'''Yaml
 cognigyEnv:
   ...
   COGNIGY_LIVE_AGENT_API_BASE_URL_WITH_PROTOCOL: <live-agent-url>"
-  CLIENT_ID_COGNIGY_LIVE_AGENT: "cognigy-live-agent"
+  CLIENT_ID_COGNIGY_LIVE_AGENT: "Cognigy-Live-Agent"
   CLIENT_SECRET_COGNIGY_LIVE_AGENT: "<secret-value>"
-  REDIRECT_URI_COGNIGY_LIVE_AGENT: "<live-agent-url>/omniauth/cognigy/callback"
+  REDIRECT_URI_COGNIGY_LIVE_AGENT: "/<live-agent-url>omniauth/cognigy/callback"
   COGNIGY_LIVE_AGENT_UI_BASE_URL_WITH_PROTOCOL: "<live-agent-url>"
-  FEATURE_USE_COGNIGY_LIVE_AGENT: "true"
-```
+  FEATURE_USE_COGNIGY_LIVE_AGENT: "wahr"
+'''
 
-#### Troubleshooting
+#### Fehlerbehebung
 
-If the secrets and configmaps are the same value, but the integration is not working (for example, OAuth configuration error "Something is wrong with the OAuth configuration"), perform the following:
+Wenn die Geheimnisse und Konfigurationszuordnungen den gleichen Wert haben, die Integration jedoch nicht funktioniert (z. B. OAuth-Konfigurationsfehler "Mit der OAuth-Konfiguration stimmt etwas nicht"), führen Sie die folgenden Schritte aus:
 
-1. Restart the `cognigy-live-agent-app-XXX` app pod in the Live Agent namespace.
-2. Restart the following Cognigy.AI pods in the Cognigy.AI namespace:
-   - service-security
-   - service-api
-   - service-resources
+1. Starten Sie den App-Pod "cognigy-live-agent-app-XXX" im Live Agent-Namespace neu.
+2. Starten Sie die folgenden Cognigy.AI Pods im Cognigy.AI-Namespace neu:
+   - Service-Sicherheit
+   - Service-API
+   - Service-Ressourcen
    - service-ui
 
-### Insights
+### Einblicke
 
-In order to send analytics about conversations from Live Agent to Insights, there is a need to set the following Helm values:
+Um Analysen zu Konversationen von Live Agent an Insights zu senden, müssen die folgenden Helm-Werte festgelegt werden:
 
-| Name                        | Description                                                                                  | Default Value                                                  |
+| Bezeichnung: | Beschreibung | Standardwert |
 |-----------------------------|----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| `cognigyInsights.apiUrl`    | This is the url of the service collector and will consist of the service name and namespace. | `"http://service-collector.cognigy-ai.svc.cluster.local:8000"` |
-| `cognigyInsights.secret`    | Secret name containing the key and value for the API key                                     | `""`                                                           |
-| `cognigyInsights.secretKey` | Secret key that points to the value for the API key                                          | `""`                                                           |
+| 'cognigyInsights.apiUrl' | Dies ist die URL des Dienstsammlers und besteht aus dem Dienstnamen und dem Namespace. | '"http://service-collector.cognigy-ai.svc.cluster.local:8000"' |
+| 'cognigyInsights.secret' | Name des Geheimnisses, der den Schlüssel und den Wert für den API-Schlüssel enthält | '""'                                                           |
+| 'cognigyInsights.secretKey' | Geheimer Schlüssel, der auf den Wert für den API-Schlüssel verweist | '""'                                                           |
 
-The value for the secret key is obtained from the secret
-contained in the Cognigy.AI namespace with the name "cognigy-insights-collector-api-key"
-and a key called Secret.
-The URL needs to point to the Insights service-collector local address.
+Der Wert für den geheimen Schlüssel wird aus dem geheimen Schlüssel abgerufen
+im Cognigy.AI-Namespace mit dem Namen "cognigy-insights-collector-api-key" enthalten
+und einen Schlüssel namens Secret.
+Die URL muss auf die lokale Adresse des Insights-Dienstsammlers verweisen.
 
-#### Troubleshooting
+#### Fehlerbehebung
 
-If these values are not set, conversation analytics data will not be sent to Insights and a warning log will be displayed when Live Agent pod starts.
+Wenn diese Werte nicht festgelegt sind, werden keine Konversationsanalysedaten an Insights gesendet, und ein Warnprotokoll wird angezeigt, wenn der Live Agent-Pod gestartet wird.
 
-```
-Data will not be sent to Cognigy Insights, as neither of the following environment variables were set: COGNIGY_INSIGHTS_API_KEY and COGNIGY_INSIGHTS_API_BASE_URL_WITH_PROTOCOL
-```
+'''
+Die Daten werden nicht an Cognigy Insights gesendet, da keine der folgenden Umgebungsvariablen festgelegt wurde: COGNIGY_INSIGHTS_API_KEY und COGNIGY_INSIGHTS_API_BASE_URL_WITH_PROTOCOL
+'''
 
 ### URLs
 
-| Name                                              | Description                                           | Default Value                             |
+| Bezeichnung: | Beschreibung | Standardwert |
 |---------------------------------------------------|-------------------------------------------------------|-------------------------------------------|
-| `configmap.COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL`  | URL used for accessing Cognigy.AI UI from Live Agent. | `""https://installation.cognigy.ai""`     |
-| `configmap.COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL` | URL for performing requests to Cognigy.AI API         | `""https://api-installation.cognigy.ai""` |
+| 'configmap. COGNIGY_AI_UI_BASE_URL_WITH_PROTOCOL' | URL, die für den Zugriff auf Cognigy.AI Benutzeroberfläche von Live Agent aus verwendet wird. | '""https://installation.cognigy.ai""' |
+| 'configmap. COGNIGY_AI_API_BASE_URL_WITH_PROTOCOL' | URL zum Ausführen von Anforderungen an Cognigy.AI API | '""https://api-installation.cognigy.ai""' |
 
-## File Upload Antivirus Scan
+## Antivirus-Scan zum Hochladen von Dateien
 
-In order to enable the antivirus file upload scan, the following values must be enabled:
+Um den Antivirus-Datei-Upload-Scan zu aktivieren, müssen die folgenden Werte aktiviert werden:
 
-| Name                      | Description                                              | Default Value |
+| Bezeichnung: | Beschreibung | Standardwert |
 | ------------------------- | -------------------------------------------------------- | ------------- |
-| `antivirusScan.enabled`   | Boolean to enable file upload antivirus scan             | `false`       |
-| `antivirusScan.resources` | Recommended values are already set for the pod resources |               |
+| 'antivirusScan.enabled' | Boolescher Wert zum Aktivieren des Datei-Upload-Antivirus-Scans | 'falsch' |
+| 'antivirusScan.resources' | Empfohlene Werte sind bereits für die Pod-Ressourcen festgelegt |               |
 
-It will scan the file uploading for viruses and block the upload if a virus is found. It scans any file uploaded contained in a message as an attachment, including the ones from Live Agent UI and Cognigy.AI Webchat.
+Es scannt die hochgeladene Datei auf Viren und blockiert den Upload, wenn ein Virus gefunden wird. Es scannt alle Dateien, die in einer Nachricht als Anhang hochgeladen werden, einschließlich der Dateien von Live Agent UI und Cognigy.AI Webchat.
 
 ## App
 
-| Name                                 | Description                                                                                       | Default Value |
+| Bezeichnung: | Beschreibung | Standardwert |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------- | ------------- |
-| `configmap.FORCE_SSL`                | Force all access to the app over SSL, default is set to false.                                    | `"false"`     |
-| `configmap.GOOGLE_MAPS_API_TOKEN`    | This value is used to load a Google Maps map with the location shared by the user.                | `""`          |
-| `configmap.USE_INBOX_AVATAR_FOR_BOT` | Bot Customizations                                                                                | `"true"`      |
-| `configmap.FRONTEND_EXTERNAL_URL`    | Set a different Frontend URL for external systems to access Live Agent (e.g. request file upload) | `""`          |
-| `configmap.SENTRY_DSN`               | Sentry DSN for error tracking                                                                     | `""`          |
+| 'configmap. FORCE_SSL' | Erzwingt den gesamten Zugriff auf die App über SSL, der Standardwert ist auf false festgelegt.                                    | '"falsch"' |
+| 'configmap. GOOGLE_MAPS_API_TOKEN' | Dieser Wert wird verwendet, um eine Google Maps-Karte mit dem vom Nutzer freigegebenen Standort zu laden.                | '""'          |
+| 'configmap. USE_INBOX_AVATAR_FOR_BOT' | Bot-Anpassungen | '"wahr"' |
+| 'configmap. FRONTEND_EXTERNAL_URL' | Legen Sie eine andere Frontend-URL für externe Systeme fest, um auf Live Agent zuzugreifen (z. B. Datei-Upload anfordern) | '""'          |
+| 'configmap. SENTRY_DSN' | Sentry DSN zur Fehlerverfolgung | '""'          |
 
-### Cookies Integrity
+### Integrität von Cookies
 
-Live Agent uses a secure stored for signing cookies. The `SECRET_KEY_BASE` value must be set to a secure value. The default value is set to a random string, but it is recommended to change it to a secure value.
+Live Agent verwendet einen sicheren Speicher zum Signieren von Cookies. Der Wert "SECRET_KEY_BASE" muss auf einen sicheren Wert festgelegt werden. Der Standardwert ist auf eine zufällige Zeichenfolge festgelegt, es wird jedoch empfohlen, ihn in einen sicheren Wert zu ändern.
 
-> Note: Previously the `SECRET_KEY_BASE` was set directly under the `configmap` section. This is now deprecated and should be set under the `cookiesIntegrity` section. For previous installations, it is recommended to create an existing secret, otherwise the value will change, and all the Live Agent user sessions will expire.
+> Hinweis: Bisher wurde das 'SECRET_KEY_BASE' direkt unter dem Abschnitt 'configmap' gesetzt. Dies ist jetzt veraltet und sollte im Abschnitt "cookiesIntegrity" festgelegt werden. Für frühere Installationen wird empfohlen, einen vorhandenen geheimen Schlüssel zu erstellen, da sich sonst der Wert ändert und alle Live Agent-Benutzersitzungen ablaufen.
 
-```yaml
-cookiesIntegrity:
-  # Uncomment these lines in case there is an existing secret and don't want to create it on install
+'''Yaml
+cookiesIntegrität:
+  # Kommentieren Sie diese Zeilen aus, falls es ein vorhandenes Geheimnis gibt und Sie es bei der Installation nicht erstellen möchten
   # existingSecret: "<secret-name>"
   # existingSecretKey: "<secret-key>"
-```
+'''
 
-### Rest Client SSL
+### Rest-Client-SSL
 
-Live Agent performs requests to Cognigy.AI APIs. If you are running Cognigy.AI services with a Self-Signed Certificate with Custom Certificate Authority (CA) to trust, or if you need SSL to be disabled, these settings are necessary.
+Live Agent führt Anforderungen an Cognigy.AI-APIs aus. Wenn Sie Cognigy.AI Dienste mit einem selbstsignierten Zertifikat mit einer benutzerdefinierten Zertifizierungsstelle (CA) ausführen, der Sie vertrauen möchten, oder wenn SSL deaktiviert werden muss, sind diese Einstellungen erforderlich.
 
-#### Certificates Verification
+#### Verifizierung von Zertifikaten
 
-| Name                          | Description                         | Default Value |
+| Bezeichnung: | Beschreibung | Standardwert |
 | ----------------------------- | ----------------------------------- | ------------- |
-| `restClient.ssl.verification` | Enable SSL certificate verification | `"true"`      |
+| 'restClient.ssl.verification' | SSL-Zertifikatsüberprüfung aktivieren | '"wahr"' |
 
-#### Self-Signed Certificate with Custom Certificate Authority
+#### Selbstsigniertes Zertifikat mit benutzerdefinierter Zertifizierungsstelle
 
-Create a secret with a key named the certificate file name (e.g. `cert.pem`). It will be mounted in the pod file system to be trusted by the Live Agent app. The value must contain the certificate file content without extra tabs/spaces. Then fill in the following values:
+Erstellen Sie einen geheimen Schlüssel mit einem Schlüssel, der als Name der Zertifikatsdatei bezeichnet wird (z. B. "cert.pem"). Er wird im Pod-Dateisystem gemountet, um von der Live Agent-App als vertrauenswürdig eingestuft zu werden. Der Wert muss den Inhalt der Zertifikatsdatei ohne zusätzliche Tabulatoren/Leerzeichen enthalten. Geben Sie dann die folgenden Werte ein:
 
-| Name                         | Description    |
+| Bezeichnung: | Beschreibung |
 | ---------------------------- | -------------- |
-| `restClient.ssl.CASecret`    | CA secret name |
-| `restClient.ssl.CASecretKey` | CA secret key  |
+| 'restClient.ssl.CASecret' | Name des geheimen CA-Geheimnisses |
+| 'restClient.ssl.CASecretKey' | Geheimer CA-Schlüssel |
 
-Ensure pods are restarted after updating the values.
+Stellen Sie sicher, dass die Pods nach dem Aktualisieren der Werte neu gestartet werden.
 
-#### Client Certificate
+#### Client-Zertifikat
 
-For using a client certificate, create a secret containing the client certificate, the client certificate key and the key passphrase (if the key has a passphrase). Then fill in the following values:
+Um ein Clientzertifikat zu verwenden, erstellen Sie einen geheimen Schlüssel, der das Clientzertifikat, den Clientzertifikatschlüssel und die Schlüsselpassphrase enthält (sofern der Schlüssel eine Passphrase hat). Geben Sie dann die folgenden Werte ein:
 
-| Name                                          | Description                                                                       |
+| Bezeichnung: | Beschreibung |
 |-----------------------------------------------|-----------------------------------------------------------------------------------|
-| `restClient.ssl.clientCertSecret`             | Client cert secret name                                                           |
-| `restClient.ssl.clientCertSecretKey`          | Client cert secret key. Its value must be in X509 format                          |
-| `restClient.ssl.clientKeySecretKey`           | Client key secret key. Its value must be as an RSA Key content                    |
-| `restClient.ssl.clientKeySecretPassphraseKey` | Client key passphrase secret key. Leave it commented if the key has no passphrase |
+| 'restClient.ssl.clientCertSecret' | Name des geheimen Clientzertifikats |
+| 'restClient.ssl.clientCertSecretKey' | Geheimer Schlüssel des Clientzertifikats. Der Wert muss im X509-Format |
+| 'restClient.ssl.clientKeySecretKey' | Geheimer Schlüssel des Clientschlüssels. Sein Wert muss als RSA-Schlüsselinhalt |
+| 'restClient.ssl.clientKeySecretPassphraseKey' | Geheimer Schlüssel für die Passphrase des Clientschlüssels. Lassen Sie es kommentieren, wenn der Schlüssel keine Passphrase hat |
 
-Ensure pods are restarted after updating the values.
+Stellen Sie sicher, dass die Pods nach dem Aktualisieren der Werte neu gestartet werden.
 
 ## OData
 
-| Key                              | Description                       | Type    | Default Value |
+| Schlüssel | Beschreibung | Typ | Standardwert |
 |----------------------------------|-----------------------------------|---------|---------------|
-| `odata.enabled`                  | Enable OData service and endpoint | Boolean | `true`        |
-| `odata.configmap.ODATA_PROTOCOL` | http or https                     | String  | `"https"`     |
+| 'odata.enabled' | Aktivieren des OData-Diensts und -Endpunkts | Boolescher Wert | 'wahr' |
+| "odata.configmap.ODATA_PROTOCOL" | http oder https | Zeichenfolge | '"https"' |
 
-## Other
+## Sonstiges
 
-| Key                                                     | Type                                                                                                     | Default Value                        |
+| Schlüssel | Typ | Standardwert |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------------------------|--------------------------------------|
-| `affinity`                                              | object                                                                                                   | `{}`                                 |
-| `frontendUrlOverride`                                   | By default the Frontend URL is the Ingress host. Override it with this property in case it is necessary. | `"https://<live-agent-domain>.com/"` |
-| `fullnameOverride`                                      | string                                                                                                   | `""`                                 |
-| `hooks.affinity`                                        | object                                                                                                   | `{}`                                 |
-| `hooks.migrate.env`                                     | list                                                                                                     | `[]`                                 |
-| `hooks.migrate.hookAnnotation                           | string                                                                                                   | `"post`-install,post-upgrade"`       |
-| `hooks.migrate.resources.limits.memory`                 | string                                                                                                   | `"1000Mi"`                           |
-| `hooks.migrate.resources.requests.memory`               | string                                                                                                   | `"1000Mi"`                           |
-| `ingress.annotations`                                   | object                                                                                                   | `{}`                                 |
-| `ingress.enabled`                                       | bool                                                                                                     | `false`                              |
-| `ingress.hosts[0].host`                                 | string                                                                                                   | `""`                                 |
-| `ingress.hosts[0].paths[0].backend.service.name`        | string                                                                                                   | `"cognigy-live-agent-app"`           |
-| `ingress.hosts[0].paths[0].backend.service.port.number` | int                                                                                                      | `3000`                               |
-| `ingress.hosts[0].paths[0].path`                        | string                                                                                                   | `"/"`                                |
-| `ingress.hosts[0].paths[0].pathType`                    | string                                                                                                   | `"Prefix"`                           |
-| `ingress.tls`                                           | list                                                                                                     | `[]`                                 |
-| `nameOverride`                                          | string                                                                                                   | `""`                                 |
-| `nodeSelector`                                          | object                                                                                                   | `{}`                                 |
-| `podAnnotations`                                        | object                                                                                                   | `{}`                                 |
-| `podSecurityContext`                                    | object                                                                                                   | `{}`                                 |
-| `resources`                                             | object                                                                                                   | `{}`                                 |
-| `securityContext`                                       | object                                                                                                   | `{}`                                 |
-| `service.port`                                          | int                                                                                                      | `80`                                 |
-| `service.type`                                          | string                                                                                                   | `"ClusterIP"`                        |
-| `serviceAccount.annotations`                            | object                                                                                                   | `{}`                                 |
-| `serviceAccount.create`                                 | bool                                                                                                     | `false`                              |
-| `serviceAccount.name`                                   | string                                                                                                   | `""`                                 |
-| `services.annotations`                                  | object                                                                                                   | `{}`                                 |
-| `services.internlPort`                                  | int                                                                                                      | `3000`                               |
-| `services.name`                                         | string                                                                                                   | `"cognigy-live-agent-app"`           |
-| `services.targetPort`                                   | int                                                                                                      | `3000`                               |
-| `services.type`                                         | string                                                                                                   | `"LoadBalancer"`                     |
-| `tolerations`                                           | list                                                                                                     | `[]`                                 |
-| `app.replica`                                           | int                                                                                                      | `1`                                  |
-| `app.extraVolumes`                                      | object                                                                                                   | `{}`                                 |
-| `app.extraVolumeMounts`                                 | object                                                                                                   | `{}`                                 |
-| `worker.replica`                                        | int                                                                                                      | `1`                                  |
-| `worker.extraVolumes`                                   | object                                                                                                   | `{}`                                 |
-| `worker.extraVolumeMounts`                              | object                                                                                                   | `{}`                                 |
+| 'Affinität' | Objekt | '{}'                                 |
+| 'frontendUrlOverride' | Standardmäßig ist die Front-End-URL der Ingress-Host. Überschreiben Sie sie mit dieser Eigenschaft, falls dies erforderlich ist. | '"https://<live-agent-domain>.com/"' |
+| 'fullnameOverride' | Zeichenfolge | '""'                                 |
+| 'hooks.affinity' | Objekt | '{}'                                 |
+| 'hooks.migrate.env' | Liste | '[]'                                 |
+| 'hooks.migrate.hookAnnotation | Zeichenfolge | '"post'-install,post-upgrade"' |
+| 'hooks.migrate.resources.limits.memory' | Zeichenfolge | '"1000Mi"' |
+| 'hooks.migrate.resources.requests.memory' | Zeichenfolge | '"1000Mi"' |
+| 'ingress.annotations' | Objekt | '{}'                                 |
+| 'ingress.enabled' | bool | 'falsch' |
+| 'ingress.hosts[0].host' | Zeichenfolge | '""'                                 |
+| 'ingress.hosts[0].paths[0].backend.service.name' | Zeichenfolge | '"cognigy-live-agent-app"' |
+| 'ingress.hosts[0].paths[0].backend.service.port.number' | int | '3000' |
+| 'ingress.hosts[0].paths[0].path' | Zeichenfolge | '"/"'                                |
+| 'ingress.hosts[0].paths[0].pathType' | Zeichenfolge | '"Präfix"' |
+| 'ingress.tls' | Liste | '[]'                                 |
+| 'nameOverride' | Zeichenfolge | '""'                                 |
+| 'nodeSelector' | Objekt | '{}'                                 |
+| 'podAnnotations' | Objekt | '{}'                                 |
+| 'podSecurityContext' | Objekt | '{}'                                 |
+| "Ressourcen" | Objekt | '{}'                                 |
+| 'securityContext' | Objekt | '{}'                                 |
+| 'service.port' | int | '80' |
+| 'service.type' | Zeichenfolge | '"ClusterIP"' |
+| 'serviceAccount.annotations' | Objekt | '{}'                                 |
+| 'serviceAccount.create' | bool | 'falsch' |
+| "serviceAccount.name" | Zeichenfolge | '""'                                 |
+| 'services.annotations' | Objekt | '{}'                                 |
+| 'services.internlPort' | int | '3000' |
+| "services.name" | Zeichenfolge | '"cognigy-live-agent-app"' |
+| 'services.targetPort' | int | '3000' |
+| 'services.type' | Zeichenfolge | '"LoadBalancer"' |
+| "Toleranzen" | Liste | '[]'                                 |
+| 'app.replica' | int | "1" |
+| 'app.extraVolumes' | Objekt | '{}'                                 |
+| 'app.extraVolumeMounts' | Objekt | '{}'                                 |
+| 'worker.replica' | int | "1" |
+| 'worker.extraVolumes' | Objekt | '{}'                                 |
+| 'worker.extraVolumeMounts' | Objekt | '{}'                                 |
+</live-agent-domain></secret-key></secret-name></live-agent-url></live-agent-url></secret-value></live-agent-url>

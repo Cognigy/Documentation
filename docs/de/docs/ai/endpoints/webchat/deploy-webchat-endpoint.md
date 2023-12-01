@@ -1,210 +1,209 @@
 ---
- title: "Deploy a Webchat Endpoint" 
- slug: "deploy-webchat-endpoint" 
- hidden: false 
+ title: "Bereitstellen eines Webchat-Endpunkts" 
+ slug: "webchat-endpunkt bereitstellen" 
+ ausgeblendet: false 
 ---
-# Deploy a Webchat Endpoint
+# Bereitstellen eines Webchat-Endpunkts
 
-## Creating a Webchat Endpoint
+## Erstellen eines Webchat-Endpunkts
 
-First, create an Endpoint that uses the Webchat Channel. When you created the Endpoint and assigned the Flow that the Endpoint should use, then you can already click on **Open Webchat** in the upper right corner. This will open the configured Webchat in an [Integrated Demo Page]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/), and you can already start talking to your flow. Read on to figure out how you can configure the appearance of the Webchat to style it in your company colors, add a background image, and much more. 
+Erstellen Sie zunächst einen Endpunkt, der den Webchat-Kanal verwendet. Wenn Sie den Endpunkt erstellt und den Flow zugewiesen haben, den der Endpunkt verwenden soll, dann können Sie bereits oben rechts auf **Webchat öffnen** klicken. Dadurch wird der konfigurierte Webchat in einer [Integrated Demo Page]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/) geöffnet, und Sie können bereits mit Ihrem Flow sprechen. Lesen Sie weiter, um herauszufinden, wie Sie das Erscheinungsbild des Webchats konfigurieren können, um ihn in Ihren Unternehmensfarben zu gestalten, ein Hintergrundbild hinzuzufügen und vieles mehr. 
 
+## Generische Endpunkteinstellungen
 
-## Generic Endpoint Settings
+Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die Funktion [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) mit diesem Endpunkttyp verwenden.
 
-!!! tip "Supports Inject & Notify"
-    You can use the [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality with this type of Endpoint.
+## Kanalspezifische Einstellungen
 
-## Channel Specific Settings
+Sie können fast alles an Webchat konfigurieren, um es nur für Ihre Bedürfnisse zu personalisieren. Dazu gehört das Ändern der Farben, das Hinzufügen von Funktionen wie Datei-Uploads und vieles mehr, damit Sie die von Ihnen erstellte Conversational AI auf sehr schöne Weise präsentieren können. Sobald Sie eine Einstellung geändert haben, wird beim Laden oder Neuladen einer Website mit einem Webchat, der auf diesen Endpunkt verweist, angezeigt, dass die Änderungen bereits wirksam geworden sind.
 
-You can configure almost everything about Webchat to personalize it just for your needs. This includes modifying the colors, adding functionality like file uploads and much more, so that you can present the Conversational AI that you have created in a very nice way. As soon as you have changed a setting, loading or reloading a Website with a Webchat pointing to this Endpoint will show the changes will already have taken effect.
-
-### Webchat Layout
+### Webchat-Layout
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout.png" width="100%" />
-  <figcaption>Webchat Layout</figcaption>
+  <figcaption>Webchat-Layout</figcaption>
 </figure>
 
-| Parameter |	Description |
+| Parameter |	Beschreibung |
 | -- | -- |
-| Webchat Title | The text to display within the webchat header. |
-| Color Scheme | The main colors for the Webchat, for example, #008080. |
-| Bot Avatar Logo URL | A URL linking to the logo that should be the virtual agent's avatar. |
-| Header Logo URL | A URL linking to the logo that should be displayed in the Webchat header. |
-| Enable Typing Indicators | Enables a typing indicator while the Bot is replying. |
-| Input Placeholder Text | The text to display as a placeholder in the input field. |
+| Webchat-Titel | Der Text, der im Webchat-Header angezeigt werden soll. |
+| Farbschema | Die Hauptfarben für den Webchat, z. B. #008080. |
+| Bot-Avatar-Logo-URL | Eine URL, die auf das Logo verweist, das der Avatar des virtuellen Agenten sein soll. |
+| Header-Logo-URL | Eine URL, die auf das Logo verweist, das im Webchat-Header angezeigt werden soll. |
+| Aktivieren von Eingabeindikatoren | Aktiviert einen Eingabeindikator, während der Bot antwortet. |
+| Platzhaltertext eingeben | Der Text, der als Platzhalter im Eingabefeld angezeigt werden soll. |
 
-#### Advanced Layout Settings
+#### Erweiterte Layout-Einstellungen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout-advanced.png" width="100%" />
-  <figcaption>Advanced Layout Settings</figcaption>
+  <figcaption>Erweiterte Layout-Einstellungen</figcaption>
 </figure>
 
-| Parameter | Description |
+| Parameter | Beschreibung |
 | -- | -- |
-| Enable Input Autogrow | If this is enabled, the text input for Webchat users will grow automatically when the user types long texts. It also enables line breaks for user text inputs. |
-| Maximum Number of Input Rows | Defines the number of text lines the text input can grow to. After the maximum line size is exceeded, a vertical scroll bar will appear in the text input. |
-| Dynamic Image Aspect Ratio | Images from the 'gallery', 'attachment' or 'top list item' template will not have a forced aspect ratio and will be fully displayed full-width without cropping. |
-| Disable Input Autocomplete | Use this setting to disable the autocomplete functionality for everyone. |
-| Enable generic HTML Styling | If this is active, additional generic styling will be applied to HTML content inside regular text messages. |
-| Allow JavaScript in HTML Message Content | By default, potentially malicious HTML content like 'onclick' or 'onload' attributes are removed before rendering. If this setting is enabled, they will not be removed. |
-| Allow JavaScript in Button/Action URLs | By default, 'JavaScript URLs' starting with javascript: will get removed. If this setting is enabled, they will not be removed and the JavaScript code will get executed when the user clicks the button/element. |
+| Automatische Vergrößerung der Eingabe aktivieren | Ist diese Option aktiviert, wächst die Texteingabe für Webchat-Benutzer automatisch, wenn der Benutzer lange Texte eintippt. Es ermöglicht auch Zeilenumbrüche für Benutzertexteingaben. |
+| Maximale Anzahl von Eingabezeilen | Definiert die Anzahl der Textzeilen, auf die die Texteingabe anwachsen kann. Nachdem die maximale Zeilengröße überschritten wurde, erscheint ein vertikaler Bildlaufbalken in der Texteingabe. |
+| Dynamisches Bild-Seitenverhältnis | Bilder aus der Vorlage "Galerie", "Anhang" oder "Top-Listeneintrag" haben kein erzwungenes Seitenverhältnis und werden ohne Zuschneiden in voller Breite angezeigt. |
+| Automatische Vervollständigung von Eingaben deaktivieren | Verwenden Sie diese Einstellung, um die Funktion zur automatischen Vervollständigung für alle zu deaktivieren. |
+| Generisches HTML-Styling aktivieren | Wenn diese Option aktiviert ist, wird ein zusätzlicher generischer Stil auf HTML-Inhalte in normalen Textnachrichten angewendet. |
+| JavaScript im HTML-Nachrichteninhalt zulassen | Standardmäßig werden potenziell schädliche HTML-Inhalte wie die Attribute "onclick" oder "onload" vor dem Rendern entfernt. Wenn diese Einstellung aktiviert ist, werden sie nicht entfernt. |
+| JavaScript in Schaltflächen-/Aktions-URLs zulassen | Standardmäßig werden 'JavaScript-URLs', die mit javascript: beginnen, entfernt. Wenn diese Einstellung aktiviert ist, werden sie nicht entfernt und der JavaScript-Code wird ausgeführt, wenn der Benutzer auf die Schaltfläche/das Element klickt. |
 
-!!! note "Text Input Sanitization"
-    Text Input Sanitization is enabled by default for security reasons, before sending text from the Webchat to the NLU. This changes characters which are reserved by HTML, as for example `**",',&,<,>**`, to an entity name. For example **&** will have **amp;** appended to the input.
-    This can cause issues in your Agent if a condition or Intent is only triggered by the reserved character in its original form. If you need to circumvent this issue, toggle **Allow JavaScript in HTML Message Content** to be enabled.
+!!! Hinweis "Bereinigung von Texteingaben"
+    Die Texteingabebereinigung ist aus Sicherheitsgründen standardmäßig aktiviert, bevor Text aus dem Webchat an die NLU gesendet wird. Dadurch werden Zeichen geändert, die von HTML reserviert sind, wie z.B. '**",',&,<,>**' in einen Entitätsnamen. Beispiel: **&** wird **amp;** an die Eingabe angehängt.
+    Dies kann zu Problemen in Ihrem Agenten führen, wenn eine Bedingung oder Absicht nur durch den reservierten Charakter in seiner ursprünglichen Form ausgelöst wird. Wenn Sie dieses Problem umgehen müssen, aktivieren Sie die Option **JavaScript im HTML-Nachrichteninhalt zulassen**.
 
-#### Persistent Menu
+#### Persistentes Menü
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout-persistent.png" width="100%" />
-  <figcaption>Persistent Menu Configuration</figcaption>
+  <figcaption>Konfiguration des persistenten Menüs</figcaption>
 </figure>
 
-The Persistent Menu is a great way to show your users all the capabilities that your bot has. You can use it to switch to different conversation stages, to guide the user and much more. The user can open the menu at any time during the conversation through a small icon in the left corner:
+Das persistente Menü ist eine großartige Möglichkeit, Ihren Benutzern alle Funktionen Ihres Bots zu zeigen. Sie können damit zu verschiedenen Gesprächsphasen wechseln, den Benutzer führen und vieles mehr. Der Benutzer kann das Menü jederzeit während der Konversation über ein kleines Symbol in der linken Ecke öffnen:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/91c86d0-Screenshot_from_2019-04-16_11-06-25.png" width="100%" />
-  <figcaption>Persistent Menu</figcaption>
+  <figcaption>Persistentes Menü</figcaption>
 </figure>
 
-To create a **Persistent Menu** like this, open the *Persistent Menu Panel*. The first thing you have to do is enabling the Persistent Menu. As soon as you do this, the menu icon will appear in the lower left corner of the Webchat. You can give the menu any title you want in the **Title** field in the Persistent Menu Panel. In order to actually add the Persistent Menu Items themselves, click on **ADD** on the right. Clicking this will add a new Persistent Menu item, which consists of a **Title** and a **Payload**. The text in the title field controls what the user can see in the Persistent Menu, while the text in the payload field is what is actually sent to your flow. This way, you can show a simple word to your user, but actually send a more complex query to your flow in order to process the request. The image below shows the configuration behind the webchat pictured above.
+Um ein **persistentes Menü** wie dieses zu erstellen, öffnen Sie das *Persistent Menu Panel*. Das erste, was Sie tun müssen, ist, das persistente Menü zu aktivieren. Sobald Sie dies tun, erscheint das Menüsymbol in der unteren linken Ecke des Webchats. Sie können dem Menü im Feld **Titel** im Bereich "Persistentes Menü" einen beliebigen Titel geben. Um die Persistent Menu Items selbst hinzuzufügen, klicken Sie rechts auf **ADD**. Wenn Sie darauf klicken, wird ein neuer persistenter Menüpunkt hinzugefügt, der aus einem **Titel** und einer **Payload** besteht. Der Text im Titelfeld steuert, was der Benutzer im persistenten Menü sehen kann, während der Text im Payload-Feld tatsächlich an Ihren Flow gesendet wird. Auf diese Weise können Sie dem Benutzer ein einfaches Wort anzeigen, aber tatsächlich eine komplexere Abfrage an Ihren Flow senden, um die Anforderung zu verarbeiten. Die folgende Abbildung zeigt die Konfiguration hinter dem oben abgebildeten Webchat.
 
-#### Webchat Plugins
+#### Webchat-Plugins
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-layout-plugins.png" width="100%" />
-  <figcaption>Webchat Plugins</figcaption>
+  <figcaption>Webchat-Plugins</figcaption>
 </figure>
 
-To trigger the plugin, for example, to display an upload button for the file-upload plugin, a plugin-specific data payload is required.
+Um das Plugin auszulösen, um z.B. einen Upload-Button für das Datei-Upload-Plugin anzuzeigen, ist eine Plugin-spezifische Daten-Payload erforderlich.
 
-To configure Webchat plugins, navigate to the **Webchat Layout** configuration settings within the **Webchat Endpoint** Editor. 
-The **Webchat Plugin URL** should follow the format `https://url.to/plugin.js`, where `url.to` represents the storage location for your plugin, such as Amazon S3, and `plugin` is the name of the specific plugin you use.
+Um Webchat-Plugins zu konfigurieren, navigieren Sie zu den Konfigurationseinstellungen **Webchat-Layout** im **Webchat-Endpunkt**-Editor. 
+Die **Webchat-Plug-in-URL** sollte das Format "https://url.to/plugin.js" haben, wobei "url.to" den Speicherort für Ihr Plug-in darstellt, z. B. Amazon S3, und "Plugin" der Name des spezifischen Plugins ist, das Sie verwenden.
 
-For a collection of example plugins compatible with Cognigy Webchat,
-you can refer to the [GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
-You can copy the URL of one or more of them from the **Assets** section of the plugin on the [Releases](https://github.com/Cognigy/WebchatPlugins/releases) page.
-Paste the URL directly into the **Webchat Plugin URL** field.
+Eine Sammlung von Beispiel-Plugins, die mit Cognigy Webchat kompatibel sind, finden Sie unter
+Sie können sich auf das [GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master)-Repository beziehen.
+Sie können die URL eines oder mehrerer von ihnen aus dem Abschnitt **Assets** des Plugins auf der Seite [Releases](https://github.com/Cognigy/WebchatPlugins/releases) kopieren.
+Fügen Sie die URL direkt in das Feld **Webchat-Plugin-URL** ein.
 
-For example, the URL for the Google Firebase Authentication Webchat Plugin is 
-`https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js`.
+Die URL für das Webchat-Plugin für die Google Firebase-Authentifizierung lautet beispielsweise 
+'https://github.com/Cognigy/WebchatPlugins/releases/download/google-firebase-authentication100/google-firebase-authentication.webchat-plugin.js'.
 
-To use custom plugins in your production environment or modify existing ones, you need to install them manually as follows:
+Um benutzerdefinierte Plug-ins in Ihrer Produktionsumgebung zu verwenden oder vorhandene zu ändern, müssen Sie sie wie folgt manuell installieren:
 
-1. Open the [Coginigy GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master) repository.
-2. Clone the source code.
-3. Modify plugin code as needed.
-4. Build your plugin by running the `npm ci && npm run build` command.
-5. Upload your plugin to cloud storage, for example, to Amazon S3.
-6. In the Webchat Endpoint, navigate to the **Webchat Layout** section and paste the URL into the **Webchat Plugin URL** field.
+1. Öffnen Sie das Repository [Coginigy GitHub](https://github.com/Cognigy/WebchatPlugins/tree/master).
+2. Klonen Sie den Quellcode.
+3. Ändern Sie den Plugin-Code nach Bedarf.
+4. Erstellen Sie Ihr Plugin, indem Sie den Befehl "npm ci & npm run build" ausführen.
+5. Laden Sie Ihr Plugin in den Cloud-Speicher hoch, z. B. in Amazon S3.
+6. Navigieren Sie im Webchat-Endpunkt zum Abschnitt **Webchat-Layout** und fügen Sie die URL in das Feld **Webchat-Plugin-URL** ein.
 
-!!! warning "Possible Plugin URL errors"
-    The uploaded plugin should be available to the target audience. Check the availability settings on your cloud storage side.
+!!! Warnung "Mögliche Plugin-URL-Fehler"
+    Das hochgeladene Plugin sollte für die Zielgruppe verfügbar sein. Überprüfen Sie die Verfügbarkeitseinstellungen auf der Seite Ihres Cloud-Speichers.
 
-### Webchat Behavior
+### Webchat-Verhalten
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-webchat-behavior.png" width="100%" />
-  <figcaption>Webchat Behavior</figcaption>
+  <figcaption>Webchat-Verhalten</figcaption>
 </figure>
 
-| Parameter (main) |	Parameter (sub)	| Description |
+| Parameter (main) |	Parameter (sub) | Beschreibung |
 | -- | -- | -- |
-| Start Behavior	| Start Behavior <br>- Start with a Text Field<br>- Start with a Button<br>- Auto Send a Message to the Bot |	Start behavior when opening the Webchat. |
-|| Payload | The text that is sent into your Flow. |
-|| Display Text | Text to display as a simulated user input bubble when the bot starts. |
-|| Button Title | The text to display on the Start Button. |
-| Additional Behavior | Message Delay | The amount of time to wait between sending bot replies. Measured in milliseconds. |
-|| Focus Input after Postback | The message input field will receive focus after a Postback button or quick reply button is clicked. |
-|| Enable Connection Status Indicator | Whether to show a warning if the connection is lost during a conversation. The warning will disappear when the connection is re-established. |
+| Startverhalten | Start-Verhalten <br>- Beginnen Sie mit einem Textfeld<br>- Beginnen Sie mit einem Button<br>- Automatisches Senden einer Nachricht an den Bot |	Startverhalten beim Öffnen des Webchats. |
+|| Nutzlast | Der Text, der an Ihren Flow gesendet wird. |
+|| Text anzeigen | Text, der beim Start des Bots als simulierte Benutzereingabeblase angezeigt werden soll. |
+|| Button-Titel | Der Text, der auf der Schaltfläche Start angezeigt werden soll. |
+| Zusätzliches Verhalten | Nachrichten-Verzögerung | Die Zeitspanne, die zwischen dem Senden von Bot-Antworten gewartet werden soll. Gemessen in Millisekunden. |
+|| Fokuseingabe nach Postback | Das Nachrichteneingabefeld erhält den Fokus, nachdem auf eine Postback-Schaltfläche oder eine Schnellantwortschaltfläche geklickt wurde. |
+|| Verbindungsstatusanzeige aktivieren | Gibt an, ob eine Warnung angezeigt werden soll, wenn die Verbindung während eines Gesprächs unterbrochen wird. Die Warnung verschwindet, wenn die Verbindung wiederhergestellt wird. |
 
-### Teaser Message Settings
+### Einstellungen für Teaser-Nachrichten
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-teaser-message.png" width="100%" />
-  <figcaption>Teaser Message Settings</figcaption>
+  <figcaption>Einstellungen für Teaser-Nachrichten</figcaption>
 </figure>
 
-| Parameter | Description |
+| Parameter | Beschreibung |
 | -- | -- |
-| Teaser Message Text | The text of the message to display next to the webchat icon to get the user to engage. |
-| Show Engagement Messages in Chat | Show Engagement Messages in Chat. |
+| Text der Teaser-Nachricht | Der Text der Nachricht, der neben dem Webchat-Symbol angezeigt werden soll, um den Benutzer zur Interaktion zu bewegen. |
+| Interaktionsnachrichten im Chat anzeigen | Interaktionsnachrichten im Chat anzeigen. |
 
-### Unread Message Settings
+### Einstellungen für ungelesene Nachrichten
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-unread-message.png" width="100%" />
-  <figcaption>Unread Message Settings</figcaption>
+  <figcaption>Einstellungen für ungelesene Nachrichten</figcaption>
 </figure>
 
-| Parameter | Description |
+| Parameter | Beschreibung |
 | -- | -- |
-| Enable Unread Message Title Indicator | Indicate the number of unread messages in the page title every 1000ms. |
-| Enable Unread Message Badge | The webchat shows a badge with the number of unread messages at the toggle button. |
-| Enable Unread Message Preview | The webchat shows a message bubble with the latest-retrieved bot message. |
-| Enable Unread Message Sound Confirmation | Play a notification sound for each incoming unread message. |
+| Indikator für den Titel ungelesener Nachrichten aktivieren | Geben Sie alle 1000 ms die Anzahl der ungelesenen Nachrichten im Seitentitel an. |
+| Badge für ungelesene Nachrichten aktivieren | Der Webchat zeigt ein Badge mit der Anzahl der ungelesenen Nachrichten an der Umschalttaste. |
+| Vorschau für ungelesene Nachrichten aktivieren | Der Webchat zeigt eine Sprechblase mit der zuletzt abgerufenen Bot-Nachricht an. |
+| Tonbestätigung für ungelesene Nachrichten aktivieren | Spielen Sie einen Benachrichtigungston für jede eingehende ungelesene Nachricht ab. |
 
-### Conversation Rating Settings
+### Einstellungen für die Konversationsbewertung
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-conversation-rating.png" width="100%" />
-  <figcaption>Conversation Rating Settings</figcaption>
+  <figcaption>Einstellungen für die Konversationsbewertung</figcaption>
 </figure>
 
-| Parameter | Description |
+| Parameter | Beschreibung |
 | -- | -- |
-| Enable Rating Functionality | Select when a webchat user can give a rating. |
-| Rating Title Text | The title displayed in the rating dialog prompt. |
-| Rating Comment Text | The text is displayed above the comment field in the rating dialog prompt. |
-| Message History Rating Text | The text is displayed in the message history after giving a rating. A text is followed by the icon representing the rating. |
-| Message History Comment Text | The text is displayed in the message history after giving a rating, if there was a comment sent. A text is followed by the actual comment. |
+| Aktivieren der Bewertungsfunktion | Wählen Sie aus, wann ein Webchat-Benutzer eine Bewertung abgeben kann. |
+| Bewertung Titeltext | Der Titel, der in der Eingabeaufforderung des Bewertungsdialogfelds angezeigt wird. |
+| Kommentartext | Der Text wird über dem Kommentarfeld in der Eingabeaufforderung des Bewertungsdialogs angezeigt. |
+| Bewertungstext für den Nachrichtenverlauf | Der Text wird nach der Abgabe einer Bewertung in der Nachrichtenhistorie angezeigt. Auf einen Text folgt das Symbol, das die Bewertung darstellt. |
+| Nachrichtenverlauf Kommentartext | Der Text wird nach der Abgabe einer Bewertung im Nachrichtenverlauf angezeigt, wenn ein Kommentar gesendet wurde. Auf einen Text folgt der eigentliche Kommentar. |
 
-### Demo Webchat Settings
+### Demo-Webchat-Einstellungen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-demo.png" width="100%" />
-  <figcaption>Demo Webchat Settings</figcaption>
+  <figcaption>Demo-Webchat-Einstellungen</figcaption>
 </figure>
 
-| Parameter | Description |
+| Parameter | Beschreibung |
 | -- | -- |
-| Enable Demo Webchat | Enables or disables the integrated Demo Webchat for this Endpoint. |
-| Enable Speech-to-Text | Toggle whether the Webchat should feature a microphone button. |
-| Enable Text-to-Speech | Toggle whether the Webchat should read all bot messages aloud. |
-| Background Image | The image that will be displayed behind the Webchat. |
-| Center Webchat | Toggle to `Yes` when the Webchat should be centered and toggle to `No` for locating at the bottom right corner.|
+| Demo-Webchat aktivieren | Aktiviert oder deaktiviert den integrierten Demo-Webchat für diesen Endpunkt. |
+| Aktivieren von Speech-to-Text | Schalten Sie um, ob der Webchat eine Mikrofontaste enthalten soll. |
+| Aktivieren von Text-to-Speech | Schalten Sie um, ob der Webchat alle Bot-Nachrichten laut vorlesen soll. |
+| Hintergrundbild | Das Bild, das hinter dem Webchat angezeigt wird. |
+| Zentrums-Webchat | Schalten Sie auf 'Ja', wenn der Webchat zentriert sein soll, und schalten Sie auf 'Nein', um sich in der unteren rechten Ecke zu befinden.|
 
-### Webchat Custom Settings
+### Webchat-Einstellungen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-custom.png" width="100%" />
-  <figcaption>Webchat Custom Settings</figcaption>
+  <figcaption>Benutzerdefinierte Webchat-Einstellungen</figcaption>
 </figure>
 
-This field can be used to configure additional settings not available in the GUI. These settings override GUI settings. Entering malformed JSON might result in crashing the webchat, so use it with caution and at own risk.
+Dieses Feld kann verwendet werden, um zusätzliche Einstellungen zu konfigurieren, die in der GUI nicht verfügbar sind. Diese Einstellungen überschreiben die GUI-Einstellungen. Die Eingabe von falsch formatiertem JSON kann zum Absturz des Webchats führen, verwenden Sie ihn daher mit Vorsicht und auf eigenes Risiko.
 
-## File Storage
+## Dateiablage
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../release-notes/4.45.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.45-blue.svg)] (.. /.. /.. /release-notes/4.45.md)
 
 {! _includes/ai/file-storage.md !}
 
-## More Information
+## Mehr Informationen
 
 - [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
-- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)
-- [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/)
-- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/)
+- [Webchat-Funktionen ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)
+- [Auslösen von Webchat-Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/)
+- [Integrierte Demo-Seite]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/)</,>

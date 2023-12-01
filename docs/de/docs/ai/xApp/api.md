@@ -1,19 +1,19 @@
 ---
 title: "xApp Flow API" 
 slug: "xApp-Flow-API" 
-hidden: true 
+Ausgeblendet: Wahr 
 ---
 
 # xApp Flow API
 
-The Flow API has been extended, giving access to the following new functionalities:
+Die Flow-API wurde erweitert und bietet Zugriff auf die folgenden neuen Funktionalitäten:
 
-| Function                                     | 	Usage                                                                                                                                           |
+| Funktion | 	Verwendung |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `api.setAppState(templateUrl, templateData)` | Updates the xApp Session State by defining which xApp should be shown (`templateUrl`) and which data should be in the template (`templateData`). |
+| 'api.setAppState(templateUrl, templateData)' | Aktualisiert den xApp-Sitzungsstatus, indem definiert wird, welche xApp angezeigt werden soll ('templateUrl') und welche Daten in der Vorlage enthalten sein sollen ('templateData'). |
 
-## More Information
+## Mehr Informationen
 
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
-- [Build an xApp](build/overview.md)
+- [xApp-Knoten](.. /flow-nodes/xApp/overview.md)
+- [Erstellen einer xApp](build/overview.md)
 - [xApps](overview.md)

@@ -1,79 +1,80 @@
 ---
-title: "Add another Inbox for your Project" 
-slug: "live-agent-setup-additional-inbox" 
-hidden: false 
+title: "Füge einen weiteren Posteingang für dein Projekt hinzu" 
+Slug: "Live-Agent-Setup-zusätzliche-Posteingang" 
+ausgeblendet: false 
 ---
-# Add another Inbox for your Project
+# Fügen Sie einen weiteren Posteingang für Ihr Projekt hinzu
 
-You can create extra Inboxes in Live Agent and configure them for handover within your Flows.
+Sie können zusätzliche Posteingänge in Live Agent erstellen und diese für die Übergabe innerhalb Ihrer Flows konfigurieren.
 
-## Add an Additional Inbox
+## Fügen Sie einen zusätzlichen Posteingang hinzu
 
-To add another Inbox in Live Agent, follow these steps:
+Gehen Sie folgendermaßen vor, um einen weiteren Posteingang in Live Agent hinzuzufügen:
 
-1. In the sidebar of the Live Agent dashboard, click **Inboxes**.
-2. In the upper-right corner, click the **+ Add Inbox** button. Live Agent will show you a screen to set up your Inbox.
+1. Klicken Sie in der Seitenleiste des Live Agent-Dashboards auf **Posteingänge**.
+2. Klicken Sie in der oberen rechten Ecke auf die Schaltfläche **+ Posteingang hinzufügen**. Live Agent zeigt Ihnen einen Bildschirm, auf dem Sie Ihren Posteingang einrichten können.
 
     <figure>
         <img src="{{config.site_url}}live-agent/getting-started/images/LA_Inbox_setup.png" width="80%" alt="Live Agent Inbox Setup">
       <figcaption></figcaption>
     </figure>
 
-3. On the Inbox setup page, fill in the following fields:
-    - **Channel Name** — create a unique Inbox name. For example, `Cognigy Handover`.
-    - **Webhook URL** — enter the Cognigy.AI Endpoint Config URL domain name, extended by `/handover/liveagent`. For example, `https://endpoint-trial.cognigy.ai/handover/liveagent`. You can find the Endpoint Config URL in the **Configuration Information** section of your Endpoint.
+3. Füllen Sie auf der Seite Posteingang einrichten die folgenden Felder aus:
+    - **Kanalname** — Erstellen Sie einen eindeutigen Posteingangsnamen. Zum Beispiel 'Cognigy Handover'.
+    - **Webhook-URL** — Geben Sie den Cognigy.AI Endpoint Config URL-Domänennamen ein, erweitert um "/handover/liveagent". Beispiel: "https://endpoint-trial.cognigy.ai/handover/liveagent". Sie finden die URL für die Endpunktkonfiguration im Abschnitt **Konfigurationsinformationen** Ihres Endpunkts.
 
         <figure>
             <img src="{{config.site_url}}live-agent/getting-started/images/LA_Config_URL.png" width="80%">
         </figure>
 
-4. Click the **Create Cognigy.AI Inbox** button. Once you have successfully set up the Inbox, you are prompted in the next step to assign your Agents to the new Inbox. 
-5. Select your required Agents in the selection list and click **Add Agents**. 
+4. Klicken Sie auf die Schaltfläche **Cognigy.AI Posteingang erstellen**. Nachdem Sie den Posteingang erfolgreich eingerichtet haben, werden Sie im nächsten Schritt aufgefordert, Ihre Agenten dem neuen Posteingang zuzuweisen. 
+5. Wählen Sie in der Auswahlliste die gewünschten Agenten aus und klicken Sie auf **Agenten hinzufügen**. 
 
-A new Live Agent Inbox has been created.
+Ein neuer Live-Agent-Posteingang wurde erstellt.
 
-### Find Account and Inbox IDs
+### Account- und Posteingangs-IDs suchen
 
-The new Inbox is defined by an Account ID and an Inbox ID. The Inbox ID is required to configure the **Handover to Agent** Node.
+Der neue Posteingang wird durch eine Konto-ID und eine Posteingangs-ID definiert. Die Posteingangs-ID ist erforderlich, um den Knoten **Übergabe an den Agenten** zu konfigurieren.
 
-Both IDs can be found in the Live Agent URL after creating the Inbox.
+Beide IDs finden Sie in der Live Agent-URL, nachdem Sie den Posteingang erstellt haben.
 
-To locate them, follow these steps:
+Gehen Sie folgendermaßen vor, um sie zu finden:
 
-1. Go to **Settings > Inboxes**.
-2. In the **Inboxes** list, find the Inbox that you have created before, and click the **Settings** icon next to the Inbox. 
+1. Gehen Sie zu **Einstellungen > Posteingänge**.
+2. Suchen Sie in der Liste **Posteingänge** den Posteingang, den Sie zuvor erstellt haben, und klicken Sie auf das Symbol **Einstellungen** neben dem Posteingang. 
 
-The Inbox settings will be displayed,
-and you will see the address line of your browser as follows:
-`https://liveagent-<your-environment>/app/accounts/<account-id>/settings/inboxes/<inbox-id>`.
-For example, in the URL `https://liveagent-dev.cognigy.ai/app/accounts/2/settings/inboxes/32852`, the Account ID is `2`,
-and the Inbox ID is `32852`.
+Die Einstellungen für den Posteingang werden angezeigt.
+und Sie sehen die Adresszeile Ihres Browsers wie folgt:
+'https://liveagent-<your-environment>/app/accounts/<account-id>/settings/inboxes/<inbox-id>'.
+In der URL "https://liveagent-dev.cognigy.ai/app/accounts/2/settings/inboxes/32852" lautet die Konto-ID beispielsweise "2".
+und die Posteingangs-ID lautet "32852".
 
 <figure>
     <img src="{{config.site_url}}live-agent/getting-started/images/LA_Inbox_URL.png" width="80%">
 </figure>
 
-## Configure a Flow for Handover to the Additional Inbox
+## Konfigurieren eines Flows für die Übergabe an den zusätzlichen Posteingang
 
-To configure a Flow for a Handover to a Live Agent, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Flow für eine Übergabe an einen Live-Agenten zu konfigurieren:
 
-1. Open your Flow in Cognigy.AI, prepared with a Handover Node.
+1. Öffnen Sie Ihren Flow in Cognigy.AI, der mit einem Übergabeknoten vorbereitet wurde.
 
     <figure>
         <img src="{{config.site_url}}live-agent/images/Flow_handover_node_config.png" width="80%">
     </figure>
 
-2. Click the **Handover to Agent** Node, to open the Node Editor.
-3. In the **Live Agent Settings** section, enter the Inbox Id of your new Live Agent Inbox.  
-4. Click **Save Node**.
+2. Klicken Sie auf den Knoten **Übergabe an Agent**, um den Knoten-Editor zu öffnen.
+3. Geben Sie im Abschnitt **Live Agent-Einstellungen** die Posteingangs-ID Ihres neuen Live Agent-Posteingangs ein.  
+4. Klicken Sie auf **Knoten speichern**.
 
-Your Flow is now configured for a Live Agent Handover.  
+Ihr Flow ist jetzt für eine Live-Agentenübergabe konfiguriert.  
 
-## What's Next?
+## Wie geht es weiter?
 
-- [Explore Conversation Workflow](../../../live-agent/conversation/conversation-workflow.md)
-- [Configure Conversation Routing](../../../live-agent/conversation/conversation-routing/overview.md)
-- [Customize your Live Agent by changing the Account Settings](../../settings/overview.md)
-    - [Group human agents in Teams](../../settings/teams.md)
-    - [Organize your work by adding Labels](../../settings/labels.md)
+- [Konversations-Workflow erkunden](.. /.. /.. /live-agent/conversation/conversation-workflow.md)
+- [Konversations-Routing konfigurieren](.. /.. /.. /live-agent/conversation/conversation-routing/overview.md)
+- [Passen Sie Ihren Live-Agenten an, indem Sie die Kontoeinstellungen ändern](.. /.. /settings/overview.md)
+    - [Menschliche Agenten in Teams gruppieren](.. /.. /settings/teams.md)
+    - [Organisieren Sie Ihre Arbeit durch Hinzufügen von Beschriftungen](.. /.. /settings/labels.md)
 
+</inbox-id></account-id></your-environment>

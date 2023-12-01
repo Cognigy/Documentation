@@ -1,522 +1,522 @@
 ---
-title: "Cognigy NLU: V1 to V2"
-slug: "from-nlu-v1-to-v2"
-hidden: false
+Titel: "Cognigy NLU: V1 bis V2"
+Schnecke: "von-nlu-v1-zu-v2"
+ausgeblendet: false
 ---
 
-# Cognigy NLU: from V1 to V2
+# Cognigy NLU: von V1 auf V2
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /.. /release-notes/4.60.md)
 
-This guide is intended for Cognigy on-premise customers who are migrating from the older version of Cognigy NLP to the newer version.
+Dieser Leitfaden richtet sich an On-Premise-Kunden von Cognigy, die von der älteren Version von Cognigy NLP auf die neuere Version migrieren.
 
-!!! note "Deprecation of Cognigy NLU V1"
-    Starting from release **4.60.0**, we will only provide bug fixes for the old NLP services if they are critical. The old NLP services will be fully deprecated with release **4.64.0**, at which point all on-premise customers should have migrated. After the **4.64.0** release, the old NLP services will no longer be available.
+!!! Hinweis "Verwerfung von Cognigy NLU V1"
+    Ab Version **4.60.0** werden wir nur noch Fehlerbehebungen für die alten NLP-Dienste bereitstellen, wenn diese kritisch sind. Die alten NLP-Dienste werden mit der Version **4.64.0** vollständig veraltet sein, zu diesem Zeitpunkt sollten alle On-Premise-Kunden migriert sein. Nach der Veröffentlichung von **4.64.0** werden die alten NLP-Dienste nicht mehr verfügbar sein.
 
-## Introduction
+## Einleitung
 
-We have improved our NLP services' scalability, reliability, and security to handle large workloads and reduce hardware footprint. In doing so, we have split our existing NLP architecture into multiple smaller services that scale better independently. In addition, we have adjusted how we store the trained NLU models, leading to less memory required by the services when training the models. Due to this change, it is therefore required to rebuild the models on the system. Since manually rebuilding the models would take significant effort, we have written a migration job that takes care of it. This guide describes how to use the migration job.
+Wir haben die Skalierbarkeit, Zuverlässigkeit und Sicherheit unserer NLP-Dienste verbessert, um große Workloads zu bewältigen und den Hardware-Platzbedarf zu reduzieren. Dabei haben wir unsere bestehende NLP-Architektur in mehrere kleinere Dienste aufgeteilt, die unabhängig voneinander besser skalieren können. Darüber hinaus haben wir die Art und Weise angepasst, wie wir die trainierten NLU-Modelle speichern, was dazu führt, dass die Dienste beim Trainieren der Modelle weniger Arbeitsspeicher benötigen. Aufgrund dieser Änderung ist es daher erforderlich, die Modelle auf dem System neu zu erstellen. Da die manuelle Neuerstellung der Modelle einen erheblichen Aufwand erfordern würde, haben wir einen Migrationsauftrag geschrieben, der sich darum kümmert. In dieser Anleitung wird beschrieben, wie Sie den Migrationsauftrag verwenden.
 
-We have successfully migrated and removed the old NLP services on all customer production environments hosted by Cognigy.
+Wir haben die alten NLP-Dienste erfolgreich auf allen von Cognigy gehosteten Produktionsumgebungen unserer Kunden migriert und entfernt.
 
-## Terminology
+## Terminologie
 
-This guide uses specific terms.
+In diesem Leitfaden werden bestimmte Begriffe verwendet.
 
-_**Old NLP services**_
+_**Alte NLP-Dienste**_
 
-Refers to the deprecated NLP services.
+Bezieht sich auf die veralteten NLP-Dienste.
 
-_**NLP V2 stack**_
+_**NLP V2-Stapel**_
 
-Refers to the new NLP services that we have introduced.
+Bezieht sich auf die neuen NLP-Dienste, die wir eingeführt haben.
 
-## What's New?
+## Was gibt's Neues?
 
-### Changes to Functionality
+### Änderungen an der Funktionalität
 
-These changes have **no impact** on the functionality of existing AI Agents. All intent models will continue to work as they do now, as we have not implemented any functional changes.
+Diese Änderungen haben **keine Auswirkungen** auf die Funktionalität vorhandener KI-Agenten. Alle Intent-Modelle funktionieren weiterhin wie bisher, da wir keine funktionalen Änderungen vorgenommen haben.
 
-To ensure this is the case, we have monitored thousands of requests and compared the intent results between the old and the new NLP services. Our findings showed that in less than 1% of requests, there was a change in the intent scores. In those few cases, the changes in intent scores were minimal.
+Um dies sicherzustellen, haben wir Tausende von Anfragen überwacht und die Intent-Ergebnisse zwischen den alten und den neuen NLP-Diensten verglichen. Unsere Ergebnisse zeigten, dass es bei weniger als 1 % der Anfragen zu einer Veränderung der Intent-Scores kam. In diesen wenigen Fällen waren die Veränderungen in den Absichtswerten minimal.
 
-### Changes to Service Architecture
+### Änderungen an der Service-Architektur
 
-The following services will be deprecated:
+Die folgenden Dienste werden als veraltet markiert:
 
-- `service-nlp-score-<language>`
-- `service-nlp-train-<language>`
+- 'Service-NLP-Score-<language>'
+- 'Service-NLP-Zug-<language>'
 
-Instead, the following services will be introduced:
+Stattdessen werden folgende Dienstleistungen eingeführt:
 
-- `service-nlp-orchestrator`
-- `service-nlp-classifier-score-<language>`
-- `service-nlp-classifier-train-<language>`
-- `service-nlp-embedding-<language>`
+- 'Service-NLP-Orchestrator'
+- 'service-nlp-classifier-score<language>-'
+- 'service-nlp-classifier-train-<language>'
+- 'Service-NLP-Einbetten<language>-'
 
-The new services are smaller than the old services and can better reuse components between scoring and training, as well as between different languages. The new architecture also allows for a much more flexible scaling when load increases on an environment.
+Die neuen Dienste sind kleiner als die alten Dienste und können Komponenten zwischen Bewertung und Training sowie zwischen verschiedenen Sprachen besser wiederverwenden. Die neue Architektur ermöglicht auch eine viel flexiblere Skalierung, wenn die Last in einer Umgebung zunimmt.
 
-## Migration Quality Assurance
+## Qualitätssicherung bei der Migration
 
-The Cognigy team began deploying the new NLP services with the release **4.54.0** of Cognigy.AI. As a result, we already have significant experience running these services in production and migrating existing AI Agents to utilize the new services.
+Das Cognigy-Team begann mit der Bereitstellung der neuen NLP-Dienste mit der Veröffentlichung **4.54.0** von Cognigy.AI. Daher verfügen wir bereits über umfangreiche Erfahrung mit der Ausführung dieser Dienste in der Produktion und der Migration vorhandener KI-Agenten, um die neuen Dienste zu nutzen.
 
-Furthermore, we **successfully migrated all Cognigy-hosted customer environments without downtime or impacting the users**.
+Darüber hinaus haben wir alle von Cognigy gehosteten Kundenumgebungen erfolgreich migriert, ohne Ausfallzeiten oder Auswirkungen auf die Benutzer.
 
-## Migrate Dev and Production Environments
+## Migrieren von Entwicklungs- und Produktionsumgebungen
 
-If you have multiple environments running Cognigy.AI, such as development and production,
-then it is important to **deploy NLP V2 on all environments at the same time**.
-This ensures that Snapshots work smoothly when transferred between these environments.
+Wenn Sie über mehrere Umgebungen verfügen, in denen Cognigy.AI ausgeführt wird, z. B. in der Entwicklungs- und Produktionsumgebung,
+dann ist es wichtig, NLP V2 in allen Umgebungen gleichzeitig bereitzustellen**.
+Dadurch wird sichergestellt, dass Snapshots reibungslos funktionieren, wenn sie zwischen diesen Umgebungen übertragen werden.
 
-## Prerequisites
+## Voraussetzungen
 
-Before beginning the migration, ensure the following prerequisites are met:
+Bevor Sie mit der Migration beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-- Deploy Cognigy.AI version 4.54.0 or higher.
-- Deploy the NLP V2 stack in all environments (see below).
+- Stellen Sie Cognigy.AI Version 4.54.0 oder höher bereit.
+- Stellen Sie den NLP V2-Stack in allen Umgebungen bereit (siehe unten).
 
-### Install the NLP V2 Stack
+### Installieren Sie den NLP V2 Stack
 
-#### Enable NLP V2
+#### NLP V2 aktivieren
 
-To enable the NLP V2 Stack, you need to set environment variables in the `cognigyEnv` config map and deploy some new services.
+Um den NLP V2-Stack zu aktivieren, müssen Sie Umgebungsvariablen in der Konfigurationszuordnung "cognigyEnv" festlegen und einige neue Dienste bereitstellen.
 
-The environment variables that need to be set in the `cognigyEnv` config map are:
+Die Umgebungsvariablen, die in der Konfigurationszuordnung "cognigyEnv" festgelegt werden müssen, sind:
 
-```yaml
+'''Yaml
 cognigyEnv:
-  FEATURE_USE_SERVICE_NLP_V2: "true"
-  FEATURE_MIGRATE_SNAPSHOTS_TO_NLP_V2: "true"
-```
+  FEATURE_USE_SERVICE_NLP_V2: "wahr"
+  FEATURE_MIGRATE_SNAPSHOTS_TO_NLP_V2: "wahr"
+'''
 
-Setting these environment variables will not affect existing models. However, as soon as you retrain your NLU model, it will be trained using the NLP v2 stack.
+Das Festlegen dieser Umgebungsvariablen wirkt sich nicht auf vorhandene Modelle aus. Sobald Sie Ihr NLU-Modell jedoch erneut trainieren, wird es mit dem NLP v2-Stack trainiert.
 
-#### Add NLP V2 Services
+#### NLP V2-Dienste hinzufügen
 
-The new NLP V2 stack contains the following services:
+Der neue NLP V2 Stack enthält folgende Services:
 
-- `service-nlp-orchestrator`
-- `service-nlp-embedding-<language>`
-- `service-nlp-classifier-score-<language>`
-- `service-nlp-classifier-train-<language>`
+- 'Service-NLP-Orchestrator'
+- 'Service-NLP-Einbetten<language>-'
+- 'service-nlp-classifier-score<language>-'
+- 'service-nlp-classifier-train-<language>'
 
-You need to add these services to your `values-local.yaml` file according to this example:
+Sie müssen diese Dienste gemäß diesem Beispiel zu Ihrer Datei "values-local.yaml" hinzufügen:
 
-```yaml
+'''Yaml
 serviceNlpOrchestrator:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpEmbeddingEn:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpEmbeddingXx:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpEmbeddingGe:
-  enabled: true
+  Aktiviert: true
   replicaCount: 2
 
 serviceNlpClassifierScoreEn:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierTrainEn:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
   
 serviceNlpClassifierScoreDe:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierTrainDe:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierScoreXx:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierTrainXx:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierScoreGe:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierTrainGe:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierScoreJa:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierTrainJa:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierScoreKo:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
 
 serviceNlpClassifierTrainKo:
-  enabled: true
+  Aktiviert: true
   replicaCount: 3
-```
+'''
 
-**Make sure to apply these changes to all of your Cognigy.AI environments.**
+**Stellen Sie sicher, dass Sie diese Änderungen auf alle Ihre Cognigy.AI Umgebungen anwenden.**
 
-#### Choose which Languages to Deploy
+#### Wählen Sie aus, welche Sprachen bereitgestellt werden sollen
 
-Similar to the NLP V1 stack, deploy the services for the languages that you need. The table below shows you which services you need for which languages. Note that `service-nlp-orchestrator` is always needed.
+Stellen Sie ähnlich wie beim NLP V1-Stack die Dienste für die Sprachen bereit, die Sie benötigen. Die folgende Tabelle zeigt Ihnen, welche Dienste Sie für welche Sprachen benötigen. Beachten Sie, dass 'service-nlp-orchestrator' immer benötigt wird.
 
-| Language                  | Code        |  service-nlp-embedding instance | service-nlp-classifier instance |
+| Sprache | Kodierung |  service-nlp-embedding-Instanz | service-nlp-classifier-Instanz |
 | ------------------------- | ----------- |  ------------------------------ | -- |
-| Universal                 | ge-GE       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Finnish - Finland         | fi-FI       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Swedish - Sweden          | sv-SE       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Danish - Denmark          | da-DK       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Norwegian - Norway        | nn-NO       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Vietnamese - Vietnam      | vi-VN       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Hindi - India             | hi-IN       | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Bangla - Bangladesh       | bn-IN	      | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| Tamil - India             | ta-IN	      | service-nlp-embedding-ge       | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
-| German - Germany          | de-DE	      | service-nlp-embedding-xx       | service-nlp-classifier-score-de && service-nlp-classifier-train-de
-| Japanese - Japan          | ja-JP	      | service-nlp-embedding-xx       | service-nlp-classifier-score-ja & service-nlp-classifier-train-ja |
-| Korean - Korea            | ko-KR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-ko & service-nlp-classifier-train-ko |
-| Arabic - U.A.E.           | ar-AE	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx |
-| Spanish - Spain           | es-ES	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| French - France           | fr-FR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Dutch - Netherlands       | nl-NL	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Italian - Italy           | it-IT	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Polish - Poland           | pl-PL	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Portuguese - Portugal     | pt-PT	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Portuguese - Brazil       | pt-BR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Thai - Thailand           | th-TH	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Russian - Russia          | ru-RU	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Turkish - Turkey          | tr-TR	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| Chinese - China           | zh-CN	      | service-nlp-embedding-xx       | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
-| English - United States   | en-US	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - India           | en-IN	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - United Kingdom  | en-GB	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - Canada          | en-CA	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
-| English - Australia       | en-AU	      | service-nlp-embedding-en       | service-nlp-classifier-score-en & service-nlp-classifier-train-en |
+| Universell | ge-GE | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Finnisch - Finnland | fi-FI | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Schwedisch - Schweden | sv-SE | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Dänisch - Dänemark | da-DK | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Norwegisch - Norwegen | nn-NEIN | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Vietnamesisch - Vietnam | vi-VN | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Hindi - Indien | hi-IN | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Bangla - Bangladesch | bn-IN | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Tamilisch - Indien | ta-IN | service-nlp-embedding-ge | service-nlp-classifier-score-ge & service-nlp-classifier-train-ge |
+| Deutsch - Deutschland | de-DE | service-nlp-embedding-xx | service-nlp-classifier-score-de & service-nlp-classifier-train-de
+| Japanisch - Japan | ja-JP | service-nlp-embedding-xx | service-nlp-classifier-score-ja & service-nlp-classifier-train-ja |
+| Koreanisch - Korea | ko-KR | service-nlp-embedding-xx | service-nlp-classifier-score-ko & service-nlp-classifier-train-ko |
+| Arabisch - Vereinigte Arabische Emirate | ar-AE | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx |
+| Spanisch - Spanien | es-ES | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Französisch - Frankreich | fr-FR | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Niederländisch - Niederlande | nl-NL | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Italienisch - Italien | it-IT | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Polnisch - Polen | pl-PL | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Portugiesisch - Portugal | pt-PT | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Portugiesisch - Brasilien | pt-BR | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Thailändisch - Thailand | th-TH | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Russisch - Russland | ru-RU | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Türkisch - Türkei | tr-TR | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Chinesisch - China | zh-CN | service-nlp-embedding-xx | service-nlp-classifier-score-xx & service-nlp-classifier-train-xx
+| Deutsch - Vereinigte Staaten | en-DE | service-nlp-embedding-de | service-nlp-classifier-score-de & service-nlp-classifier-train-de |
+| Deutsch - Indien | en-IN | service-nlp-embedding-de | service-nlp-classifier-score-de & service-nlp-classifier-train-de |
+| English - Vereinigtes Königreich | de-DE | service-nlp-embedding-de | service-nlp-classifier-score-de & service-nlp-classifier-train-de |
+| Deutsch - Kanada | de-CA | service-nlp-embedding-de | service-nlp-classifier-score-de & service-nlp-classifier-train-de |
+| Deutsch - Australien | en-AU | service-nlp-embedding-de | service-nlp-classifier-score-de & service-nlp-classifier-train-de |
 
-#### Scale down Old Train Services
+#### Alte Zugverbindungen verkleinern
 
-When the NLP V2 stack is running, all new intent training jobs will use the NLP V2 stack. You can therefore already scale down the **service-nlp-train-<language>** services. You can do this by setting `enabled: false` in the values-local.yaml.
+Wenn der NLP V2-Stack ausgeführt wird, verwenden alle neuen Intent-Trainingsaufträge den NLP V2-Stack. Sie können daher bereits jetzt die **service-nlp-train-<language>**-Dienste herunterskalieren. Sie können dies tun, indem Sie in der Datei values-local.yaml "enabled: false" setzen.
 
-Example:
+Beispiel:
 
-```yaml
+'''Yaml
 serviceNlpTrainEn:
-  enabled: false
-```
+  Aktiviert: false
+'''
 
-#### Increase Memory Limit
+#### Speicherlimit erhöhen
 
-Similar to the NLP V1 stack, you might run into issues with the default memory limit of the nlp-classifier-train service when training large models, though we have greatly improved the amount of memory necessary. We recommend beginning with the default resource constraints and then increasing the classifier-train service's memory limit as needed.
+Ähnlich wie beim NLP V1-Stack kann es beim Trainieren großer Modelle zu Problemen mit dem Standardspeicherlimit des nlp-classifier-train-Dienstes kommen, obwohl wir die erforderliche Speichermenge erheblich verbessert haben. Es wird empfohlen, mit den standardmäßigen Ressourceneinschränkungen zu beginnen und dann den Speichergrenzwert des classifier-train-Diensts nach Bedarf zu erhöhen.
 
-The orchestrator and embedding services do not require additional memory for training large Flows.
+Der Orchestrator und die Einbettungsdienste benötigen keinen zusätzlichen Arbeitsspeicher zum Trainieren großer Flows.
 
-#### Scale the NLP V2 Stack
+#### Skalieren Sie den NLP V2-Stack
 
-As more projects begin to utilize the NLP V2 stack, the need for scaling may arise. The simplest approach is to monitor the **NLP Orchestrator** dashboard in Grafana, where you can assess the overall system latency and determine whether scaling is required for components such as embeddings or the classifier.
+Wenn immer mehr Projekte beginnen, den NLP V2-Stack zu nutzen, kann die Notwendigkeit einer Skalierung entstehen. Der einfachste Ansatz besteht darin, das **NLP Orchestrator**-Dashboard in Grafana zu überwachen, in dem Sie die Gesamtsystemlatenz bewerten und bestimmen können, ob eine Skalierung für Komponenten wie Einbettungen oder den Klassifikator erforderlich ist.
 
-![grafana-metrics.png](../images/grafana-metrics.png)
+! [grafana-metrics.png] (.. /images/grafana-metrics.png)
 
-It might also be necessary to scale up the nlp-orchestrator itself, although this is quite uncommon. On the same dashboard, you can monitor the CPU load of the service. If it approaches 1 CPU, then it's advisable to scale this service accordingly.
+Es kann auch notwendig sein, den NLP-Orchestrator selbst hochzuskalieren, obwohl dies recht ungewöhnlich ist. Auf demselben Dashboard können Sie die CPU-Auslastung des Diensts überwachen. Wenn er sich 1 CPU nähert, ist es ratsam, diesen Dienst entsprechend zu skalieren.
 
-#### Validate that the Services are Deployed Correctly
+#### Überprüfen, ob die Dienste ordnungsgemäß bereitgestellt werden
 
-To validate that the services have been deployed correctly, you can build the NLU model of a Flow. Then, open the logs of the `service-nlp-classifier-train-<language>` service and ensure that the service is logging that it is training the model.
+Um zu überprüfen, ob die Dienste ordnungsgemäß bereitgestellt wurden, können Sie das NLU-Modell eines Flows erstellen. Öffnen Sie dann die Protokolle des Diensts "service-nlp-classifier-train-<language>", und stellen Sie sicher, dass der Dienst protokolliert, dass er das Modell trainiert.
 
-## Run the Migration
+## Führen Sie die Migration aus
 
-The migration is run by applying a `Kubernetes Job` into the cluster. This job will run for some time and migrate all existing NLU Models to the NLP V2 Stack. Before running the migration script, ensure the NLP V2 stack is properly running as per the last chapter.
+Die Migration wird ausgeführt, indem ein "Kubernetes-Auftrag" auf den Cluster angewendet wird. Dieser Auftrag wird einige Zeit lang ausgeführt und migriert alle vorhandenen NLU-Modelle in den NLP V2-Stack. Stellen Sie vor dem Ausführen des Migrationsskripts sicher, dass der NLP V2-Stack gemäß dem letzten Kapitel ordnungsgemäß ausgeführt wird.
 
-The standard migration job will migrate all models across all organizations and languages, including models in Snapshots. It will migrate three projects simultaneously, with one Flow per project.
+Der Standardmigrationsauftrag migriert alle Modelle in allen Organisationen und Sprachen, einschließlich der Modelle in Snapshots. Es werden drei Projekte gleichzeitig migriert, mit einem Flow pro Projekt.
 
-```yaml
+'''Yaml
 apiVersion: batch/v1
-kind: Job
-metadata:
-  name: migrate-nlp-v2-all-organisations
-spec:
+Kunst: Hiob
+Metadaten:
+  Name: migrate-nlp-v2-all-organizations
+Spekulation:
   ttlSecondsAfterFinished: 100
-  template:
-    spec:
-      restartPolicy: Never
-      volumes:
-        - name: rabbitmq-connection-string
-          secret:
+  Schablone:
+    Spekulation:
+      restartPolicy: Nie
+      Inhalte:
+        - Name: rabbitmq-connection-string
+          geheim:
             secretName: cognigy-rabbitmq
-            items:
-              - key: connection-string
-                path: rabbitmqConnectionString
-        - name: mongodb-connection-string
-          secret:
+            Artikel:
+              - Schlüssel: Verbindungszeichenfolge
+                Pfad: rabbitmqConnectionString
+        - Name: mongoDB-connection-string
+          geheim:
             secretName: cognigy-service-resources
-            items:
-              - key: connection-string
-                path: mongodbConnectionString
-        - name: redis-password
-          secret:
+            Artikel:
+              - Schlüssel: Verbindungszeichenfolge
+                Pfad: mongodbConnectionString
+        - Name: redis-password
+          geheim:
             secretName: cognigy-redis-password
       imagePullSecrets:
-        - name: cognigy-registry-token
-      containers:
-        - name: nlp-v2-migrator-all
-          image: cognigy.azurecr.io/nlp_v2_migrator:6f28f4760e24678a27b5649555b7e0fdcdea0ebb
+        - Name: cognigy-registry-token
+      Container:
+        - Name: NLP-v2-migrator-all
+          Bild: cognigy.azurecr.io/nlp_v2_migrator:6f28f4760e24678a27b5649555b7e0fdcdea0ebb
           volumeMounts:
-            - name: rabbitmq-connection-string
+            - Name: rabbitmq-connection-string
               mountPath: /var/run/secrets/rabbitmqConnectionString
               subPath: rabbitmqConnectionString
-            - name: mongodb-connection-string
+            - Name: mongoDB-connection-string
               mountPath: /var/run/secrets/mongodbConnectionString
               subPath: mongodbConnectionString
-            - name: redis-password
+            - Name: redis-password
               mountPath: /var/run/secrets/redis-password.conf
               subPath: redis-password.conf
           envFrom:
             - configMapRef:
-                name: cognigy-env
-          env:
-            - name: SERVICE_RESOURCES_CONNECTION_STRING
+                Bezeichnung: cognigy-env
+          Env:
+            - Bezeichnung: SERVICE_RESOURCES_CONNECTION_STRING
               valueFrom:
                 secretKeyRef:
-                  name: cognigy-service-resources
-                  key: connection-string
+                  Name: cognigy-service-resources
+                  Schlüssel: Verbindungszeichenfolge
 
-          args:
+Argumente:
             - -o
-            - "all"
+            - "Alle"
             - -c
             - "2"
-            - -cf
+            --vgl
             - "2"
             - -s
-            - "true"
-```
+            - "wahr"
+'''
 
-### Which Environment to Migrate First?
+### Welche Umgebung soll zuerst migriert werden?
 
-In case you have multiple environments, such as development and production, then the development environment should be migrated first.
+Falls Sie über mehrere Umgebungen verfügen, z. B. Entwicklung und Produktion, sollte die Entwicklungsumgebung zuerst migriert werden.
 
-### Tweak the Migration Parameters
+### Passen Sie die Migrationsparameter an
 
-If the standard configuration doesn't align with your preferred way of migrating the models, we offer various configuration options to tailor the process to your needs. For example, you can select specific projects or speed up the migration.
+Wenn die Standardkonfiguration nicht mit Ihrer bevorzugten Art der Migration der Modelle übereinstimmt, bieten wir verschiedene Konfigurationsoptionen an, um den Prozess an Ihre Bedürfnisse anzupassen. So können Sie z.B. bestimmte Projekte auswählen oder die Migration beschleunigen.
 
-To do this, use the following parameters:
+Verwenden Sie dazu die folgenden Parameter:
 
-| Value | Description                                                                                                                                                          | Examples                                               |
+| Wert | Beschreibung | Beispiele |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| -o    | The organizations to run for. A comma-separated list of organization IDs                                                                                             | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe"    |
-| -p    | The projects to migrate. A comma-separated list of project IDs                                                                                                       | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe"    |
-| -l    | The locales to run for. A comma-separated list of language codes                                                                                                     | "en-US,de-DE,ar-AE"                                    |
-| -c    | The amount of projects to migrate in parallel                                                                                                                        | "10"                                                   |
-| -cf   | The amount of Flows per project to migrate in parallel                                                                                                               | "10"                                                   |
-| -s    | Whether to migrate models in Snapshots                                                                                                                               | "true"                                                 |
-| -ct   | Count the number of models per locale. This process doesn't involve migration but provides you with a list of how many models exist per locale, offering an overview | "true"                                                 |
+| -o | Die Organisationen, für die kandidiert werden soll. Eine durch Kommas getrennte Liste von Organisations-IDs | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe" |
+| -p | Die zu migrierenden Projekte. Eine durch Kommas getrennte Liste von Projekt-IDs | "63c6af010aa7a0eadd88edbd,63c6af010aa7a0eadd88edbe" |
+| -l | Die Gebietsschemas, für die ausgeführt werden soll. Eine durch Kommas getrennte Liste von Sprachcodes | "en-US,de-DE,ar-AE" |
+| -c | Die Anzahl der parallel zu migrierenden Projekte | "10" |
+| -cf | Die Anzahl der Flows pro Projekt, die parallel migriert werden sollen | "10" |
+| -s | Migrieren von Modellen in Snapshots | "wahr" |
+| -ct | Zählen Sie die Anzahl der Modelle pro Gebietsschema. Dieser Prozess beinhaltet keine Migration, sondern bietet Ihnen eine Liste der Anzahl der Modelle, die pro Gebietsschema vorhanden sind, und bietet einen Überblick | "wahr" |
 
-### Increase the Speed of the Migration
+### Erhöhen Sie die Geschwindigkeit der Migration
 
-The migration process can take a considerable amount of time, depending on the number of Flows present in the environment. If you have the option to add extra hardware for the migration or if you have additional capacity available, it's possible to scale up the NLP V2 stack and migrate multiple projects simultaneously. To achieve this, we recommend migrating language by language. For instance, start by migrating all English models, followed by all models that use the `XX` container group, and so on.
+Der Migrationsprozess kann viel Zeit in Anspruch nehmen, abhängig von der Anzahl der in der Umgebung vorhandenen Flows. Wenn Sie die Möglichkeit haben, zusätzliche Hardware für die Migration hinzuzufügen, oder wenn Sie zusätzliche Kapazität zur Verfügung haben, ist es möglich, den NLP V2-Stack hochzuskalieren und mehrere Projekte gleichzeitig zu migrieren. Um dies zu erreichen, empfehlen wir, Sprache für Sprache zu migrieren. Beginnen Sie beispielsweise mit der Migration aller englischen Modelle, gefolgt von allen Modellen, die die Containergruppe "XX" verwenden, usw.
 
-To scale up the services, use the following guidelines:
+Verwenden Sie zum zentralen Hochskalieren der Dienste die folgenden Richtlinien:
 
-- If you want to migrate 20 models at once, increase the capacity of the `nlp-classifier-train-<language>` service to handle 20 training jobs simultaneously.
-- If you have 20 classifiers, increase the number of replicas for the `service-nlp-embedding-<language>` service to 8, which corresponds to 40% of the total number of classifiers you possess.
-- If you have 20 classifiers, increase the number of replicas for the `service-nlp-ner` service to 16, which corresponds to 80% of the total number of classifiers you possess.
-- If you have 20 classifiers, increase the number of replicas for the `service-nlp-orchestrator` service to 4,  which corresponds to 20% of the total number of replicas of `service-nlp-classifier`.
+- Wenn Sie 20 Modelle gleichzeitig migrieren möchten, erhöhen Sie die Kapazität des Dienstes 'nlp-classifier-train-<language>', um 20 Trainingsaufträge gleichzeitig zu verarbeiten.
+- Wenn Sie 20 Klassifikatoren haben, erhöhen Sie die Anzahl der Replikate für den Dienst 'service-nlp-embedding-<language>' auf 8, was 40 % der Gesamtzahl der Klassifikatoren entspricht, die Sie besitzen.
+- Wenn Sie 20 Klassifikatoren haben, erhöhen Sie die Anzahl der Replikate für den Dienst "service-nlp-ner" auf 16, was 80 % der Gesamtzahl der Klassifikatoren entspricht, die Sie besitzen.
+- Wenn Sie über 20 Klassifikatoren verfügen, erhöhen Sie die Anzahl der Replikate für den Dienst "service-nlp-orchestrator" auf 4, was 20 % der Gesamtzahl der Replikate von "service-nlp-classifier" entspricht.
 
-After scaling up, you can modify the `-c` and `-cf` parameters to achieve the number of models to train in parallel. If you have many projects, we recommend using a higher value for `-c`. Conversely, if you have a few projects with a lot of Flows, it is advisable to set a a higher value for `-cf`.
+Nach dem Hochskalieren können Sie die Parameter "-c" und "-cf" ändern, um die Anzahl der parallel zu trainierenden Modelle zu erreichen. Wenn Sie viele Projekte haben, empfehlen wir, einen höheren Wert für '-c' zu verwenden. Umgekehrt, wenn Sie ein paar Projekte mit vielen Flows haben, ist es ratsam, einen höheren Wert für '-cf' zu setzen.
 
-Here is an example of training 20 Flows in parallel for the `XX` train group:
+Hier ist ein Beispiel für das parallele Training von 20 Flows für die Zuggruppe 'XX':
 
-```yaml
+'''Yaml
 apiVersion: batch/v1
-kind: Job
-metadata:
-  name: migrate-nlp-v2-all-organisations
-spec:
+Kunst: Hiob
+Metadaten:
+  Name: migrate-nlp-v2-all-organizations
+Spekulation:
   ttlSecondsAfterFinished: 100
-  template:
-    spec:
-      restartPolicy: Never
-      volumes:
-        - name: rabbitmq-connection-string
-          secret:
+  Schablone:
+    Spekulation:
+      restartPolicy: Nie
+      Inhalte:
+        - Name: rabbitmq-connection-string
+          geheim:
             secretName: cognigy-rabbitmq
-            items:
-              - key: connection-string
-                path: rabbitmqConnectionString
-        - name: mongodb-connection-string
-          secret:
+            Artikel:
+              - Schlüssel: Verbindungszeichenfolge
+                Pfad: rabbitmqConnectionString
+        - Name: mongoDB-connection-string
+          geheim:
             secretName: cognigy-service-resources
-            items:
-              - key: connection-string
-                path: mongodbConnectionString
-        - name: redis-password
-          secret:
+            Artikel:
+              - Schlüssel: Verbindungszeichenfolge
+                Pfad: mongodbConnectionString
+        - Name: redis-password
+          geheim:
             secretName: cognigy-redis-password
       imagePullSecrets:
-        - name: cognigy-registry-token
-      containers:
-        - name: nlp-v2-migrator-all
-          image: cognigy.azurecr.io/nlp_v2_migrator:6f28f4760e24678a27b5649555b7e0fdcdea0ebb
+        - Name: cognigy-registry-token
+      Container:
+        - Name: NLP-v2-migrator-all
+          Bild: cognigy.azurecr.io/nlp_v2_migrator:6f28f4760e24678a27b5649555b7e0fdcdea0ebb
           volumeMounts:
-            - name: rabbitmq-connection-string
+            - Name: rabbitmq-connection-string
               mountPath: /var/run/secrets/rabbitmqConnectionString
               subPath: rabbitmqConnectionString
-            - name: mongodb-connection-string
+            - Name: mongoDB-connection-string
               mountPath: /var/run/secrets/mongodbConnectionString
               subPath: mongodbConnectionString
-            - name: redis-password
+            - Name: redis-password
               mountPath: /var/run/secrets/redis-password.conf
               subPath: redis-password.conf
           envFrom:
             - configMapRef:
-                name: cognigy-env
-          env:
-            - name: SERVICE_RESOURCES_CONNECTION_STRING
+                Bezeichnung: cognigy-env
+          Env:
+            - Bezeichnung: SERVICE_RESOURCES_CONNECTION_STRING
               valueFrom:
                 secretKeyRef:
-                  name: cognigy-service-resources
-                  key: connection-string
+                  Name: cognigy-service-resources
+                  Schlüssel: Verbindungszeichenfolge
 
-          args:
+Argumente:
             - -o
-            - "all"
+            - "Alle"
             - -l
             - "ar-AE,es-ES,fr-FR,nl-NL,it-IT,pl-PL,pt-PT,pt-BR,th-TH,ru-RU,tr-TR,zh-CN"
             - -c
             - "5"
-            - -cf
+            --vgl
             - "4"
             - -s
-            - "true"
-```
+            - "wahr"
+'''
 
-### Run the Job
+### Ausführen des Auftrags
 
-To run the job, use the `kubectl apply` command to apply it into the namespace:
+Verwenden Sie zum Ausführen des Auftrags den Befehl 'kubectl apply', um ihn im Namespace anzuwenden:
 
-```bash
+'''bash
 kubectl apply -n <namespace-of-cognigy-ai> <path-to-job>
-```
+'''
 
-When running the job, you should initially see a printout indicating the number of V1 train groups and the number of projects existing in the system:
+Beim Ausführen des Jobs sollte zunächst ein Ausdruck angezeigt werden, der die Anzahl der V1-Zuggruppen und die Anzahl der im System vorhandenen Projekte angibt:
 
-![run-job](../images/run-job.png)
+! [run-job] (.. /images/run-job.png)
 
-When the migration job has finished running, you should check how many models have been successfully migrated and whether any have failed. If any models have failed, you should run the script again. If you notice that any of the classifier-train Pods experienced restarts, you might need to increase their memory before proceeding:
+Wenn die Ausführung des Migrationsauftrags abgeschlossen ist, sollten Sie überprüfen, wie viele Modelle erfolgreich migriert wurden und ob einige fehlgeschlagen sind. Wenn Modelle fehlgeschlagen sind, sollten Sie das Skript erneut ausführen. Wenn Sie feststellen, dass einer der Klassifikatorzug-Pods neu gestartet wurde, müssen Sie möglicherweise den Arbeitsspeicher erhöhen, bevor Sie fortfahren können:
 
-![job-failed](../images/job-failed.png)
+! [Auftrag fehlgeschlagen] (.. /images/job-failed.png)
 
-#### Re-run the Job
+#### Erneutes Ausführen des Auftrags
 
-If the job fails or if you need to run it again, it is always safe to do so. The job is aware of which models still need to be migrated and will continue where it left off.
+Wenn der Auftrag fehlschlägt oder Sie ihn erneut ausführen müssen, ist dies immer sicher. Der Auftrag weiß, welche Modelle noch migriert werden müssen, und macht dort weiter, wo er aufgehört hat.
 
-### Clean up Old Data
+### Alte Daten bereinigen
 
-After completing the migration of all models, you might encounter a situation where the migration script still indicates that there are V1 models pending training. This situation can occur due to old data not thoroughly cleaned up, for example, during the deletion of Snapshots.
+Nach Abschluss der Migration aller Modelle kann es zu einer Situation kommen, in der das Migrationsskript immer noch angibt, dass V1-Modelle trainiert werden müssen. Diese Situation kann auftreten, wenn alte Daten nicht gründlich bereinigt wurden, z. B. beim Löschen von Snapshots.
 
-To resolve this issue, run the job again with the `-r` flag, which will repair the data. **Only run this after you have completed all other migration tasks.**
+Um dieses Problem zu beheben, führen Sie den Auftrag erneut mit dem Flag "-r" aus, wodurch die Daten repariert werden. **Führen Sie diesen Befehl erst aus, nachdem Sie alle anderen Migrationsaufgaben abgeschlossen haben.**
 
-```yaml
+'''Yaml
 apiVersion: batch/v1
-kind: Job
-metadata:
-  name: migrate-nlp-v2-all-organisations
-spec:
+Kunst: Hiob
+Metadaten:
+  Name: migrate-nlp-v2-all-organizations
+Spekulation:
   ttlSecondsAfterFinished: 100
-  template:
-    spec:
-      restartPolicy: Never
-      volumes:
-        - name: rabbitmq-connection-string
-          secret:
+  Schablone:
+    Spekulation:
+      restartPolicy: Nie
+      Inhalte:
+        - Name: rabbitmq-connection-string
+          geheim:
             secretName: cognigy-rabbitmq
-            items:
-              - key: connection-string
-                path: rabbitmqConnectionString
-        - name: mongodb-connection-string
-          secret:
+            Artikel:
+              - Schlüssel: Verbindungszeichenfolge
+                Pfad: rabbitmqConnectionString
+        - Name: mongoDB-connection-string
+          geheim:
             secretName: cognigy-service-resources
-            items:
-              - key: connection-string
-                path: mongodbConnectionString
-        - name: redis-password
-          secret:
+            Artikel:
+              - Schlüssel: Verbindungszeichenfolge
+                Pfad: mongodbConnectionString
+        - Name: redis-password
+          geheim:
             secretName: cognigy-redis-password
       imagePullSecrets:
-        - name: cognigy-registry-token
-      containers:
-        - name: nlp-v2-migrator-all
-          image: cognigy.azurecr.io/nlp_v2_migrator:6f28f4760e24678a27b5649555b7e0fdcdea0ebb
+        - Name: cognigy-registry-token
+      Container:
+        - Name: NLP-v2-migrator-all
+          Bild: cognigy.azurecr.io/nlp_v2_migrator:6f28f4760e24678a27b5649555b7e0fdcdea0ebb
           volumeMounts:
-            - name: rabbitmq-connection-string
+            - Name: rabbitmq-connection-string
               mountPath: /var/run/secrets/rabbitmqConnectionString
               subPath: rabbitmqConnectionString
-            - name: mongodb-connection-string
+            - Name: mongoDB-connection-string
               mountPath: /var/run/secrets/mongodbConnectionString
               subPath: mongodbConnectionString
-            - name: redis-password
+            - Name: redis-password
               mountPath: /var/run/secrets/redis-password.conf
               subPath: redis-password.conf
           envFrom:
             - configMapRef:
-                name: cognigy-env
-          env:
-            - name: SERVICE_RESOURCES_CONNECTION_STRING
+                Bezeichnung: cognigy-env
+          Env:
+            - Bezeichnung: SERVICE_RESOURCES_CONNECTION_STRING
               valueFrom:
                 secretKeyRef:
-                  name: cognigy-service-resources
-                  key: connection-string
+                  Name: cognigy-service-resources
+                  Schlüssel: Verbindungszeichenfolge
 
-          args:
+Argumente:
             - -o
-            - "all"
+            - "Alle"
             - -s
-            - "true"
+            - "wahr"
             - -r
-            - "true"
-```
+            - "wahr"
+'''
 
-After running it, you will see how many old models could be safely removed and how many were repaired.
-If any models were repaired, then you need to **run the migration again**:
+Nach dem Ausführen sehen Sie, wie viele alte Modelle sicher entfernt werden konnten und wie viele repariert wurden.
+Wenn Modelle repariert wurden, müssen Sie die Migration erneut ausführen:
 
-![clean-up-old-data](../images/clean-up-old-data.png)
+! [alte-Daten bereinigen] (.. /images/clean-up-old-data.png)
 
-## Check if Migration is Complete
+## Prüfen, ob die Migration abgeschlossen ist
 
-To ensure that the migration has been completed successfully and that NLP V1 is no longer in use, check the **Service NLP** dashboard in Grafana. Here, you can monitor the traffic received by the old NLP V1 stack. We recommend observing this for a couple of days, and if it consistently shows 0 load, you can safely remove the V1 stack.
+Um sicherzustellen, dass die Migration erfolgreich abgeschlossen wurde und NLP V1 nicht mehr verwendet wird, überprüfen Sie das Dashboard **Service NLP** in Grafana. Hier können Sie den Datenverkehr überwachen, der vom alten NLP V1-Stack empfangen wurde. Wir empfehlen, dies einige Tage lang zu beobachten, und wenn konstant 0 Auslastung angezeigt wird, können Sie den V1-Stapel sicher entfernen.
 
-![check-completed-migration](../images/check-completed-migration.png)
+! [Abgeschlossene-Migration] (.. /images/check-completed-migration.png)
 
-### Remove the NLP V1 Stack
+### NLP V1 Stack entfernen
 
-To remove the NLP V1 stack, remove the `service-nlp-score-<lang>` and `service-nlp-train-<lang>` services from your `values-local.yaml` file.
+Um den NLP V1-Stack zu entfernen, entfernen Sie die Dienste "service-nlp-score-" und " <lang>service-nlp-train-" <lang>aus Ihrer Datei "values-local.yaml".
 
-## FAQ
+## Häufig gestellte Fragen
 
-**Q1:** Is it required to make any changes to existing projects after migrating?
+**F1:** Müssen nach der Migration Änderungen an bestehenden Projekten vorgenommen werden?
 
-**A1:** No, the migration has no impact on existing projects.
+**A1:** Nein, die Migration hat keine Auswirkungen auf bestehende Projekte.
 
-**Q2:** Will a project work properly if only some of the Flows have been migrated to NLP V2?
+**F2:** Funktioniert ein Projekt ordnungsgemäß, wenn nur einige der Flows auf NLP V2 migriert wurden?
 
-**A2:** Yes, a project will work fine if some Flows are using NLP V2, while others are using NLP V1.  This is applicable as long as the **score** containers of NLP V1 are still operational in the environment.
+**A2:** Ja, ein Projekt funktioniert einwandfrei, wenn einige Flows NLP V2 verwenden, während andere NLP V1 verwenden.  Dies gilt so lange, wie die **Score**-Container von NLP V1 in der Umgebung noch betriebsbereit sind.
 
-**Q3:** Will a project work properly if some locales have been migrated to NLP V2 and others not?
+**F3:** Funktioniert ein Projekt ordnungsgemäß, wenn einige Gebietsschemata auf NLP V2 migriert wurden und andere nicht?
 
-**A3:** Yes, a project will work fine if some locales have been migrated to NLP V2 while others have not.
+**A3:** Ja, ein Projekt funktioniert einwandfrei, wenn einige Gebietsschemata auf NLP V2 migriert wurden, andere jedoch nicht.
 
-**Q4:** What happens if I upload an old Snapshot created before NLP V2 existed?
+**F4:** Was passiert, wenn ich einen alten Snapshot hochlade, der vor NLP V2 erstellt wurde?
 
-**A4:** When you upload a Snapshot, all the NLU models of the Snapshot will be migrated to NLP V2 as part of the upload, if necessary. An overview of the models that were migrated can be seen in the Task Menu.
- 
+**A4:** Wenn Sie einen Snapshot hochladen, werden bei Bedarf alle NLU-Modelle des Snapshots im Rahmen des Uploads auf NLP V2 migriert. Eine Übersicht über die Modelle, die migriert wurden, finden Sie im Task-Menü.
+ </lang></lang></path-to-job></namespace-of-cognigy-ai></language></language></language></language></language></language></language></language></language></language></language></language>

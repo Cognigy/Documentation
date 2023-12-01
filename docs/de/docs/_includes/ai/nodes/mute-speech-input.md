@@ -1,26 +1,23 @@
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten steuert, wann Spracheingaben in Ihrem Flow erfasst werden können.
+Es verhindert Sprachunterbrechungen in bestimmten Fällen, wie z. B. [xApp Flows](https://docs.cognigy.com/ai/xApp/overview/), und ermöglicht so eine reibungslosere Konversation.
+Durch Aktivieren oder Deaktivieren der Spracherfassung nach Bedarf,
+Sie behalten eine bessere Kontrolle und sorgen für einen nahtlosen Workflow in Ihrer Anwendung.
 
-This Node controls when speech user inputs can be collected in your Flow.
-It prevents speech interruptions in specific cases, such as [xApp Flows](https://docs.cognigy.com/ai/xApp/overview/), allowing for a smoother conversation experience.
-By enabling or disabling speech gathering as needed,
-you can maintain better control and ensure a seamless workflow in your application.
+## Einstellungen
 
-## Settings
+!!! Warnung
+    Deaktivieren Sie eine Spracheingabe während des gesamten Anrufs nicht, um zusätzliche Nachrichten vom Benutzer zu erhalten, insbesondere wenn der virtuelle Assistent mehrere Nachrichten mit Zeitabständen dazwischen senden muss.  
 
-!!! warning
-    Do not turn off a speech user input throughout the call to receive additional messages from the user, especially when the virtual assistant needs to send multiple messages with time gaps in between.  
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -----------------------------------------------------------------------|
+| Spracheingabe stummschalten | Umschalten | Deaktiviert die Spracheingabeerkennung für den aktuellen Anruf. Standardmäßig ist die Einstellung deaktiviert, sodass die Knoten unterhalb des Spracheingabeknotens Spracheingabe stummschalten Spracheingaben akzeptieren können. <br><br> Wenn diese Einstellung aktiviert ist, akzeptieren die Knoten unterhalb des Spracheingabeknotens stummschalten keine Spracheingaben oder Ziffern als Antwort.  Sie wirkt sich auf alle Spracheingaben aus, die über die folgenden Knoten getätigt werden:<br> - Knoten mit festgelegten Aktivitätsparametern. <br> - Say-and-Play-Knoten mit aktiviertem Barge-In können nicht mehr unterbrochen werden.<br> - Frage- und optionale Frageknoten. |
 
-| Parameter         | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mute Speech Input | Toggle | Disables speech input recognition for the current call. By default, the setting is deactivated, allowing the Nodes below the Mute Speech Input Node to accept speech inputs. <br><br> When this setting is activated, the Nodes below the Mute Speech Input Node will not accept speech inputs or digits as the answer.  It affects all speech inputs made through the following Nodes:<br> - Nodes with Set Activity Parameters. <br> - Say and Play Nodes with enabled barge-in can no longer be interrupted.<br> - Question and Optional Question Nodes. |
+## Beispiel
 
-## Example
+Im folgenden Beispiel können Sie mit dem Mute-Knoten steuern, wann Spracheingaben innerhalb des Flows akzeptiert oder deaktiviert werden:
 
-In the following example, the Mute Node allows you to control when speech input is accepted or disabled within the Flow:
-
-1. Say Node: `Hello, you will receive an xApp`.
-2. xApp: Init Session Node.
-3. Mute Speech Input (enabled).
-4. Question Node: `Please rate your experience with the xApp on a scale of 1 to 5`.<br>When the Mute Node STT is enabled, the question node will not accept speech inputs or digits as the answer. The user must provide the rating through other means, such as selecting a number using buttons or typing the response. This process ensures that the speech gathering is temporarily turned off during the rating question to avoid unintended interference from background speech.
-5. Mute Node STT (disabled). <br> After the rating question, the Mute Node STT is disabled, allowing the subsequent Nodes to accept speech inputs normally.
+1. Sagen Sie Node: "Hallo, Sie erhalten eine xApp".
+2. xApp: Init-Sitzungsknoten.
+3. Spracheingabe stummschalten (aktiviert).
+4. Frageknoten: "Bitte bewerten Sie Ihre Erfahrung mit der xApp auf einer Skala von 1 bis 5".<br>Wenn der STT des Stummschaltungsknotens aktiviert ist, akzeptiert der Frageknoten keine Spracheingaben oder Ziffern als Antwort. Der Benutzer muss die Bewertung auf andere Weise bereitstellen, z. B. durch Auswählen einer Zahl mithilfe von Schaltflächen oder Eingeben der Antwort. Dieser Prozess stellt sicher, dass die Spracherfassung während der Bewertungsfrage vorübergehend ausgeschaltet wird, um unbeabsichtigte Interferenzen durch Hintergrundsprache zu vermeiden.
+5. Knoten STT stummschalten (deaktiviert). <br> Nach der Bewertungsfrage wird der Mute Node STT deaktiviert, so dass die nachfolgenden Nodes Spracheingaben normal akzeptieren können.

@@ -1,73 +1,74 @@
 ---
-title: "Amazon EFC Provisioner to EFC CSI"
-slug: "efs-provisioner-to-efs-csi-migration"
-hidden: false
-ignore_macros: true
+title: "Amazon EFC Provisioner für EFC CSI"
+Slug: "EFS-Provisioner-zu-EFS-CSI-Migration"
+ausgeblendet: false
+ignore_macros: wahr
 ---
-# Amazon EFC Provisioner to EFC CSI
+# Amazon EFC Provisioner für EFC CSI
 
-Starting from version 4.45, Cognigy.AI supports [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) as the currently used [efs external provisioner](https://github.com/kubernetes-retired/external-storage) is deprecated.
+Ab Version 4.45 unterstützt Cognigy.AI [Amazon EFS CSI-Treiber](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html), da der derzeit verwendete [EFS External Provisioner](https://github.com/kubernetes-retired/external-storage) veraltet ist.
 
-## Prerequisites
+## Voraussetzungen
 
 - Kubernetes v1.21 - 1.24.
-- Kubectl utility is installed locally.
-- [Helm](https://helm.sh/) v3.8+ is installed on the client host.
-- [Amazon EFS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) is installed in the kubernetes cluster.
-- Cognigy.AI installation must be >= v4.45.
-- Snapshots/Backups of all EFS Persistent Volume Claims/Persistent Volumes (flow modules, functions) are must be ready before the migration starts.
+- Das Dienstprogramm Kubectl ist lokal installiert.
+- [Helm](https://helm.sh/) v3.8+ ist auf dem Client-Host installiert.
+- [Amazon EFS CSI-Treiber](https://docs.aws.amazon.com/eks/latest/userguide/efs-csi.html) ist im Kubernetes-Cluster installiert.
+- Cognigy.AI Installation muss >= v4.45 sein.
+- Snapshots/Sicherungen aller EFS Persistent Volume Claims/Persistent Volumes (Flow-Module, Funktionen) müssen vor Beginn der Migration bereit sein.
 
-## Migration process
+## Migrationsprozess
 
-1. Retain the `flow-modules` and `functions` Persistent volumes.
+1. Behalten Sie die persistenten Volumes "flow-modules" und "functions" bei.
 
-    ```bash
-    kubectl patch pv <flow-modules-pv-id> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
-    kubectl patch pv <functions-pv-id> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
-    ```
+'''bash
+    kubectl patch pv -p '{"spec": {" <flow-modules-pv-id> persistentVolumeReclaimPolicy":"Behalten"}}'
+    kubectl patch pv -p '{"spec": {" <functions-pv-id> persistentVolumeReclaimPolicy":"Behalten"}}'
+    '''
 
-2. Enable the EFS CSI provisioner in the values file.
+2. Aktivieren Sie den EFS CSI-Provisioner in der Wertedatei.
 
-    ```bash
-    flowModules:
-      persistence:
-        aws:
+'''bash
+    flowModule:
+      Ausdauer:
+        AWS:
           efs:
-            enabled: true
-            ## EFS File system ID
+            Aktiviert: true
+            ## EFS-Dateisystem-ID
             ##
-            id: ""
+            Kennung: ""
             efs_csi:
-              enabled: true
-    functions:
-      persistence:
-        aws:
+              Aktiviert: true
+    Funktionen:
+      Ausdauer:
+        AWS:
           efs:
-            enabled: true
-            ## EFS File system ID
+            Aktiviert: true
+            ## EFS-Dateisystem-ID
             ##
-            id: ""
+            Kennung: ""
             efs_csi:
-              enabled: true
-    ```
-    For more details check [here](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml)
+              Aktiviert: true
+    '''
+    Weitere Informationen finden Sie [hier](https://github.com/Cognigy/cognigy-ai-helm-chart/blob/main/values.yaml)
 
-3. Disable the currently running efs provisioner in the values file by deleting the following code block.
+3. Deaktivieren Sie den aktuell ausgeführten efs-Provisioner in der Wertedatei, indem Sie den folgenden Codeblock löschen.
 
-    ```bash
+'''bash
     efs:
-      flowModules:
-        id: "<flow-module efs id>"
-      functions:
-        id: "<function efs id>"
-    ```
-4. Delete the `flow-modules` and `function` [StorageClass](https://kubernetes.io/docs/concepts/storage/storage-classes/).
+      flowModule:
+        Kennung: "<flow-module efs="" id="">"
+      Funktionen:
+        Kennung: "<function efs="" id="">"
+    '''
+4. Löschen Sie die 'flow-modules' und 'function' [StorageClass](https://kubernetes.io/docs/concepts/storage/storage-classes/).
 
-    ```bash
-    kubectl delete sc aws-efs-flow-modules aws-efs-functions
-    ```
-5. Reapply the helm chart.
+'''bash
+    kubectl sc löschen aws-efs-flow-modules aws-efs-functions
+    '''
+5. Wenden Sie das Ruderdiagramm erneut an.
 
-    ```bash
+'''bash
     helm upgrade --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version HELM_CHART_VERSION --values YOUR_VALUES_FILE.yaml --create-namespace
-    ```
+    '''
+</function></flow-module></functions-pv-id></flow-modules-pv-id>

@@ -1,32 +1,29 @@
 ---
- title: "Attached Lexicon" 
- slug: "attached-lexicons" 
- hidden: false 
+ Titel: "Angehängtes Lexikon" 
+ Schnecke: "Angehängte-Lexika" 
+ ausgeblendet: false 
 ---
-# Attached Lexicon
+# Angehängtes Lexikon
 
-The Lexicon attachment feature allows single Lexicon libraries to be re-used across any Cognigy.AI agents. Lexicons can simply be **Attached** to single or multiple flows, in order to recognize custom keyphrases.
+Mit der Funktion "Lexikonanhang" können einzelne Lexikonbibliotheken für alle Cognigy.AI Agenten wiederverwendet werden. Lexika können einfach an einzelne oder mehrere Flows angehängt werden, um benutzerdefinierte Schlüsselwörter zu erkennen.
 
-In order to attach a Lexicon, it must first be created in the [Lexicons Editor]({{config.site_url}}ai/resources/build/lexicons/). All available Lexicons that have been added to the agent will be populated in the *Attach Lexicon* list.
+Um ein Lexikon anzuhängen, muss es zunächst im [Lexicons Editor]({{config.site_url}}ai/resources/build/lexicons/) erstellt werden. Alle verfügbaren Lexika, die dem Agenten hinzugefügt wurden, werden in die Liste *Lexikon anhängen* eingetragen.
 
-## Managing Attached Lexicons
-<div class="divider"></div>
+## Angehängte Lexika verwalten<div class="divider"></div>### Zugriff auf das Menü "Anhang"
 
-### Accessing the Attachment Menu
-
-From the flow editor, select the **NLU** tab in the top menu and then select the **Attachments** sub-tab to open the Attachments menu.
+Wählen Sie im Flow-Editor im oberen Menü die Registerkarte **NLU** und dann die Unterregisterkarte **Anhänge** aus, um das Menü Anhänge zu öffnen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/49cf615-attachFlowsMenu.PNG" width="100%" />
 </figure>
 
-### Attach a Lexicon
+### Ein Lexikon anhängen
 
-Lexicons are attached by clicking the lexicon in the list which enables the attachment toggle.
+Lexika werden angehängt, indem Sie auf das Lexikon in der Liste klicken, wodurch der Schalter für Anhänge aktiviert wird.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/3285852-attachLexicons.PNG" width="100%" />
 </figure>
 
-!!! warning "Train Intents when Attaching"
-    The NLU must be re-trained anytime a new flow or lexicon is attached.
+!!! Warnung "Train Intents beim Anhängen"
+    Die NLU muss jedes Mal neu trainiert werden, wenn ein neuer Flow oder ein neues Lexikon angehängt wird.

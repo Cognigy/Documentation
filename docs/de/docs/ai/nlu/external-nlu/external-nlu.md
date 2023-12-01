@@ -1,60 +1,55 @@
 ---
- title: "External NLU" 
- slug: "external-nlu" 
- hidden: false 
+ Titel: "Externe NLU" 
+ Schnecke: "external-nlu" 
+ ausgeblendet: false 
 ---
-# External NLU
+# Externe NLU
 
-Cognigy.AI is set up to handle all intent and slot mapping for agents with the built-in Cognigy NLU using the resources defined in flow [Intents]({{config.site_url}}ai/nlu/nlu-overview/overview/#intents) and [Lexicons]({{config.site_url}}ai/resources/build/lexicons/). 
+Cognigy.AI ist so eingerichtet, dass die gesamte Intent- und Slot-Zuordnung für Agenten mit der integrierten Cognigy-NLU unter Verwendung der Ressourcen verarbeitet wird, die in Flow [Intents]({{config.site_url}}ai/nlu/nlu-overview/overview/#intents) und [Lexicons]({{config.site_url}}ai/resources/build/lexicons/) definiert sind. 
 
-However, it is also possible to integrate an external NLU Provider to handle intent mapping within Cognigy.AI using the [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) feature. These external NLU Connectors will generate the same input object as Cognigy, which enables agents to easily switch NLU providers without having to change flows. 
+Es ist jedoch auch möglich, einen externen NLU-Anbieter zu integrieren, um das Intent-Mapping innerhalb Cognigy.AI mithilfe der Funktion [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) zu verarbeiten. Diese externen NLU-Konnektoren generieren das gleiche Eingabeobjekt wie Cognigy, sodass Agenten problemlos den NLU-Anbieter wechseln können, ohne die Abläufe ändern zu müssen. 
 
-Cognigy.AI natively supports NLU connections with **Dialogflow**, **LUIS**, **Watson Assistant** and **Alexa**. Any other third party NLU can be integrated using the "Code" type NLU connector.
+Cognigy.AI unterstützt nativ NLU-Verbindungen mit **Dialogflow**, **LUIS**, **Watson Assistant** und **Alexa**. Jede andere NLU von Drittanbietern kann mit dem NLU-Steckverbinder vom Typ "Code" integriert werden.
 
-## Creating NLU Connectors
-<div class="divider"></div>
-
-To create a new NLU Connection, open an [Agent]({{config.site_url}}ai/resources/agents/agents/) and navigate to the [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) menu available from the resources menu on the left side of the interface under the **Build** section. 
+## Erstellen von NLU-Konnektoren<div class="divider"></div>Um eine neue NLU-Verbindung zu erstellen, öffnen Sie einen [Agent]({{config.site_url}}ai/resources/agents/agents/) und navigieren Sie zum Menü [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/), das im Ressourcenmenü auf der linken Seite der Benutzeroberfläche im Abschnitt **Build** verfügbar ist. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/8c71128-NLUConnectors_Menu.PNG" width="100%" />
 </figure>
 
-Inside this menu simply click on the "+ New NLU Connector" button, add a name for the connector and select the *NLU Connector Type* from the dropdown list.
+Klicken Sie in diesem Menü einfach auf die Schaltfläche "+ Neuer NLU-Konnektor", fügen Sie einen Namen für den Konnektor hinzu und wählen Sie den *NLU-Konnektortyp* aus der Dropdown-Liste aus.
 
-A new NLU Connection will be added to the list of NLU Connectors and by default, the settings for the newly added connector will be opened. In the instance of third party NLU's this is where the authentication credentials are entered to allow Cognigy.AI to connection with the external NLU service. 
+Eine neue NLU-Verbindung wird der Liste der NLU-Konnektoren hinzugefügt, und standardmäßig werden die Einstellungen für den neu hinzugefügten Konnektor geöffnet. Im Falle von NLUs von Drittanbietern werden hier die Anmeldeinformationen für die Authentifizierung eingegeben, damit Cognigy.AI eine Verbindung mit dem externen NLU-Dienst herstellen können. 
 
-!!! note "Want to learn how to connect an External NLU Service?"
-    Find out how to connect to each supported external NLU service via the Help Center articles listed below:
+!!! Hinweis "Möchten Sie erfahren, wie Sie einen externen NLU-Dienst verbinden?"
+    Informationen zum Herstellen einer Verbindung mit den einzelnen unterstützten externen NLU-Diensten finden Sie in den unten aufgeführten Hilfe-Center-Artikeln:
 
-    * Alexa NLU (Article coming soon)
-    * [Watson Assistant: External NLU] (https://support.cognigy.com/hc/en-us/articles/360017484979-Watson-Assistant-External-NLU)
-    * [Microsoft LUIS: External NLU] (https://support.cognigy.com/hc/en-us/articles/360017517319)
-    * [Dialogflow: External NLU] (https://support.cognigy.com/hc/en-us/articles/360017466620)
+* Alexa NLU (Artikel folgt in Kürze)
+    * [Watson-Assistent: Externe NLU] (https://support.cognigy.com/hc/en-us/articles/360017484979-Watson-Assistant-External-NLU)
+    * [Microsoft LUIS: Externe NLU] (https://support.cognigy.com/hc/en-us/articles/360017517319)
+    * [Dialogflow: Externe NLU] (https://support.cognigy.com/hc/en-us/articles/360017466620)
 
-!!! warning "Usage of external services"
-    Note when using external NLU Connectors API quota limits, additional terms, conditions and/or charges may apply.
+!!! Warnung "Nutzung externer Dienste"
+    Hinweis: Bei der Verwendung externer NLU Connectors API-Kontingentgrenzen können zusätzliche Bedingungen und/oder Gebühren anfallen.
 
-### Testing and Deploying with an External NLU
-<div class="divider"></div>
-Cognigy.AI provides platform users with the opportunity to substitute the NLU service used for a given agent during both testing and deployment.
+### Testen und Bereitstellen mit einer externen NLU<div class="divider"></div>Cognigy.AI bietet Plattformbenutzern die Möglichkeit, den NLU-Dienst, der für einen bestimmten Agenten verwendet wird, sowohl während des Tests als auch während der Bereitstellung zu ersetzen.
 
-### Testing with an External NLU
+### Testen mit einer externen NLU
 ---
-An external NLU service that has been connected via the NLU connectors feature can be used for testing via the **Interaction Panel**. Open the interaction panel from within an agent and select the ***settings*** tab to access the ***NLU Connector*** dropdown menu. This menu is populated with all the NLU connectors that have been added to the agent.
+Ein externer NLU-Dienst, der über die NLU-Konnektoren-Funktion verbunden wurde, kann zum Testen über das **Interaction Panel** verwendet werden. Öffnen Sie das Interaktionsfenster in einem Agenten und wählen Sie die Registerkarte ***Einstellungen*** aus, um auf das Dropdown-Menü ***NLU Connector*** zuzugreifen. Dieses Menü wird mit allen NLU-Konnektoren aufgefüllt, die dem Agenten hinzugefügt wurden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/017da2e-NLUConnectors_MenuIP.PNG" width="100%" />
 </figure>
 
-### Deploying with an External NLU
+### Bereitstellen mit einer externen NLU
 ---
-An external NLU service that has been linked via an [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) feature can be used to deploy to any [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/) that communicates with a deployment channel. This allows different conversational channels to use different NLU's when connected to the same agent in Cognigy.AI.
+Ein externer NLU-Dienst, der über eine [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)-Funktion verknüpft wurde, kann für die Bereitstellung auf jedem [Endpunkt]({{config.site_url}}ai/resources/deploy/endpoints/) verwendet werden, der mit einem Bereitstellungskanal kommuniziert. Auf diese Weise können verschiedene Konversationskanäle unterschiedliche NLUs verwenden, wenn sie mit demselben Agenten in Cognigy.AI verbunden sind.
 
-To change the NLU for a given endpoint, open the ***Endpoints*** menu found under the ***Deploy*** sub-menu in the resources panel. Select the endpoint that you wish to adjust by clicking on it to open the endpoint settings menu. Navigate to the **Natural Language Understanding** section of the endpoint settings and access the ***NLU Connector*** dropdown menu. This menu is populated with all the NLU connectors that have been added to the agent.
+Um die NLU für einen bestimmten Endpunkt zu ändern, öffnen Sie das Menü ***Endpunkte*** unter dem Untermenü ***Bereitstellen*** im Ressourcenbereich. Wählen Sie den Endpunkt aus, den Sie anpassen möchten, indem Sie darauf klicken, um das Menü mit den Endpunkteinstellungen zu öffnen. Navigieren Sie zum Abschnitt **Natural Language Understanding** der Endpunkteinstellungen und greifen Sie auf das Dropdown-Menü ***NLU Connector*** zu. Dieses Menü wird mit allen NLU-Konnektoren aufgefüllt, die dem Agenten hinzugefügt wurden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/8fb7e35-NLUEndpointSelectionDocs.PNG" width="100%" />
 </figure>
 
-Select an NLU connector to use the associated NLU service for any messages received via this endpoint.
+Wählen Sie einen NLU-Connector aus, um den zugeordneten NLU-Dienst für alle Nachrichten zu verwenden, die über diesen Endpunkt empfangen werden.

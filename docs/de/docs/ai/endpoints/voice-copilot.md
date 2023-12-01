@@ -1,69 +1,58 @@
 ---
-title: "Voice Copilot"
-slug: "voice-copilot"
-hidden: false
+Titel: "Voice Copilot"
+Schnecke: "Voice-Copilot"
+ausgeblendet: false
 ---
 
-# Voice Copilot
+# Sprach-Copilot
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-copilot.png" width="100%" />
 </figure>
 
-This Endpoint is intended for voice use cases to receive the transcription of the audio stream and execute the Copilot flow. The Endpoint splits audio streams into user and agent input. When the transcription is sent to this Endpoint, Cognigy will receive two variables: `user ID` and `session ID`, which help identify the AI Copilot workspace to be updated.
+Dieser Endpunkt ist für Sprachanwendungsfälle vorgesehen, um die Transkription des Audiodatenstroms zu empfangen und den Copilot-Flow auszuführen. Der Endpunkt teilt Audiostreams in Benutzer- und Agenteneingaben auf. Wenn die Transkription an diesen Endpunkt gesendet wird, erhält Cognigy zwei Variablen: "Benutzer-ID" und "Sitzungs-ID", die dabei helfen, den zu aktualisierenden AI Copilot-Arbeitsbereich zu identifizieren.
 
-This endpoint Voice Copilot works with any [handover provider](../../ai/handover-providers/overview.md) supported by Cognigy.
+Dieser Endpunkt Voice Copilot funktioniert mit jedem [Übergabeanbieter](.. /.. /ai/handover-providers/overview.md), unterstützt von Cognigy.
 
-## Prerequisites
+## Voraussetzungen
 
-- You need to have an account in [Genesys Cloud](https://apps.mypurecloud.de/).
-- Activate this Endpoint on the Cognigy side:
-    - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-    - If you have an on-premise installation, specify the following feature flag: `FEATURE_ENABLE_AGENT_ASSIST_VOICE: true`.
+- Sie müssen über ein Konto in [Genesys Cloud](https://apps.mypurecloud.de/) verfügen.
+- Aktivieren Sie diesen Endpunkt auf der Cognigy-Seite:
+    - Wenn Sie über eine gemeinsam genutzte oder dedizierte SaaS-Installation verfügen, wenden Sie sich an den technischen Support von Cognigy.
+    - Wenn Sie eine On-Premise-Installation haben, geben Sie das folgende Feature-Flag an: 'FEATURE_ENABLE_AGENT_ASSIST_VOICE: true'.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte](overview.md)
+- [Transformator-Funktionen](Transformatoren/Transformatoren.md)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+## Konfigurieren des Voice Copilot-Endpunkts
 
-- [Endpoints Overview](overview.md)
-- [Transformer Functions](transformers/transformers.md)
+1. Klicken Sie im Menü auf der linken Seite Ihres Agents auf **Deploy > Endpoints**.
+2. Klicken Sie auf der Seite **Endpunkte** auf **+ Neuer Endpunkt**.
+3. Gehen Sie im Abschnitt **Neuer Endpunkt** wie folgt vor: <br>3.1 Wählen Sie den Endpunkttyp **Voice Copilot** aus. <br>3.2 Fügen Sie einen eindeutigen Namen hinzu.<br>3.3 Wählen Sie einen relevanten Flow aus der Liste aus.<br>4. Kopieren Sie im Abschnitt **Konfigurationsinformationen** die Endpunkt-URL und speichern Sie sie für die spätere Verwendung in Genesys.
+5. Aktivieren Sie die Einstellung **Endpunkt aktivieren**. 
+6. Klicken Sie auf **Speichern**.
 
-## Configure Voice Copilot Endpoint
+## Cognigy.AI vorne
 
-1. In the left-side menu of your Agent, click **Deploy > Endpoints**.
-2. On the **Endpoints** page, click **+ New Endpoint**.
-3. In the **New Endpoint** section, do the following: <br>
-   3.1 Select the **Voice Copilot** Endpoint type. <br>
-   3.2 Add a unique name.<br>
-   3.3 Select a relevant Flow from the list.<br>
-4. In the **Configuration Information** section, copy the Endpoint URL and save it for later usage in Genesys.
-5. Activate the **Enable Endpoint** setting. 
-6. Click **Save**.
+Wenn Cognigy.AI im Vordergrund stehen, müssen Sie den Übertragungsknoten konfigurieren:
 
-## Cognigy.AI in Front
+1. Klicken Sie im Menü auf der linken Seite Ihres Agents auf **Build > Flows**. 
+2. Wählen Sie einen Sprachfluss aus der Liste aus.
+3. Wechseln Sie zum Voice Gateway Transfer Node.
+4. Wählen Sie im Übertragungsknoten den Übertragungstyp **Wählen** aus.<br>4.1 Aktivieren Sie die Einstellung **Copilot aktivieren**.<br>4.2 Definieren Sie den **Copilot-Header-Schlüssel**. Der Schlüssel ist anbieterabhängig. Für Genesys lautet der Schlüssel beispielsweise "User-to-User". Auf den generierten Wert kann zugegriffen werden, nachdem der **Transfer**-Knoten aktiviert wurde, der sich im Eingabeobjekt als '{{ "{{input. UUIValue}}" }}'. Beachten Sie, dass Sie diesen Wert nicht manuell behandeln müssen. Er wird automatisch generiert und dem Header hinzugefügt.<br>4.3 Navigieren Sie im Abschnitt **Transkribieren** zum Feld **Transkriptions-Webhook**. Geben Sie die URL des Voice Copilot-Endpunkts mit "Benutzer-ID" und "Sitzungs-ID" ein. Durch diese Einrichtung wird sichergestellt, dass der Voice Copilot-Endpunkt nicht nur die Transkription, sondern auch die entsprechende Sitzungs- und Benutzer-ID empfängt, wodurch sichergestellt wird, dass das Transkript korrekt mit dem Arbeitsbereich abgeglichen wird. Beispiel: 'https://endpoint-dev.cognigy.ai/?userId={{"{{input.userId}}"}}<your-endpoint-id>&sessionId={{"{{input.sessionId}}"}}'.
+5. Klicken Sie auf **Knoten speichern**.
 
-If Cognigy.AI in Front, you need to configure the Transfer Node:
+## SIPREC Contact Center Integration im Vorfeld
 
-1. In the left-side menu of your Agent, click **Build > Flows**. 
-2. Select a voice Flow from the list.
-3. Go to the Voice Gateway Transfer Node.
-4. In the Transfer Node, select the **Dial** transfer type.<br>
-   4.1 Activate the **Enable Copilot** setting.<br>
-   4.2 Define the **Copilot Headers Key**. The key is provider-dependent. For example, for Genesys, the key is `User-to-User`. The generated value becomes accessible after engaging the **Transfer** Node, located in the input object as `{{ "{{input.UUIValue}}" }}`. Note that you do not need to handle this value manually. It is automatically generated and added to the header.<br>
-   4.3 In the **Transcribe** section, navigate to the **Transcription Webhook** field. Enter the Voice Copilot Endpoint URL with `user ID` and `session ID`. This setup ensures that the Voice Copilot Endpoint receives not only the transcription but also the corresponding session and user ID, making sure the transcript is correctly matched with the workspace. For example, `https://endpoint-dev.cognigy.ai/<your-endpoint-id>?userId={{"{{input.userId}}"}}&sessionId={{"{{input.sessionId}}"}}`.
-5. Click **Save Node**.
+Wenn sich das Contact Center im Vordergrund befindet, müssen Sie den Transfer Node nicht konfigurieren.
 
-## SIPREC Contact Center Integration in Front
+SIPREC ist ein offenes SIP-basiertes Protokoll für die Anrufaufzeichnung in Contact Centern. Session Border Controller (SBC) werden verwendet, um SIPREC in das Contact Center zu integrieren. 
 
-When the contact center is in front, you do not have to configure the Transfer Node.
+Wenn ein Anruf an einen menschlichen Agenten weitergeleitet wird, wird das Audio des SIPREC-Anrufs von Voice Gateway transkribiert und zur Verarbeitung an den Voice Copilot-Endpunkt gesendet. Das System ersetzt die traditionelle Cognigy-Sitzungs-ID und Benutzer-ID durch eine bestimmte ID aus dem Contact Center. Beispielsweise können die ursprüngliche Cognigy-Sitzungs-ID und Benutzer-ID durch die Agenten-ID bzw. die Konversations-ID ersetzt werden.
 
-SIPREC is an open SIP based protocol for call recording in contact centers. Session Border Controllers (SBC) are used to integrate SIPREC with the contact center. 
+## Mehr Informationen
 
-When a call is transferred to a human agent, audio from the SIPREC call is transcribed by Voice Gateway and sent to the Voice Copilot Endpoint for processing. The system replaces the traditional Cognigy session ID and user ID with a specific ID from the Contact Center. For instance, the original Cognigy session ID and user ID can be replaced with Agent ID and Conversation ID respectively.
-
-## More Information
-
-- [AI Copilot](../../ai-copilot/overview.md)
-- [Voice Gateway](../../voicegateway/overview.md)
+- [KI-Copilot](.. /.. /ai-copilot/overview.md)
+- [Sprach-Gateway](.. /.. /voicegateway/overview.md)</your-endpoint-id>

@@ -1,28 +1,28 @@
 ---
-title: "Build xApps"
+title: "xApps erstellen"
 slug: "build-xApps"
-hidden: true
+Ausgeblendet: Wahr
 ---
 
-# Build xApps
+# xApps erstellen
 
-To build xApps, use these tutorials:
+Verwenden Sie die folgenden Tutorials, um xApps zu erstellen:
 
-- [Build your First xApp](first-xApp.md)
-- [Build an xApp with Multiple Channels](xApp-with-multi-channels.md)
-- [Build a Standalone xApp](standalone-xApp.md)
+- [Erstellen Sie Ihre erste xApp](first-xApp.md)
+- [Erstellen einer xApp mit mehreren Kanälen](xApp-with-multi-channels.md)
+- [Eigenständige xApp erstellen](standalone-xApp.md)
 
-Additionally, you can create your own [customized Node](custom-xApp-node.md).
+Darüber hinaus können Sie Ihren eigenen [benutzerdefinierten Knoten](custom-xApp-node.md) erstellen.
 
-## Examples
+## Beispiele
 
-You can find ready-made examples of xApps in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main) repository.
+Vorgefertigte Beispiele für xApps finden Sie im Repository [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main).
 
-## Security
+## Sicherheit
 
-When building an xApp, it's important to mitigate the risk of an XSS attack. Check out our recommendations in the [xApps Security](../security/secure-xApp-from-xss.md) section.
+Beim Erstellen einer xApp ist es wichtig, das Risiko eines XSS-Angriffs zu minimieren. Schauen Sie sich unsere Empfehlungen in der [xApps-Sicherheit](.. /security/secure-xApp-from-xss.md) verwenden.
 
-## More Information
+## Mehr Informationen
 
 - [xApps](overview.md)
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [xApp-Knoten](.. /.. /flow-nodes/xApp/overview.md)

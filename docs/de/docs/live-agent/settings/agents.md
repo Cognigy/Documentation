@@ -1,27 +1,27 @@
 ---
-title: "Agents"
-slug: "agents"
-description: "An Agent is a member of your Customer Support team. Agents will be able to view and reply to messages from your users."
-hidden: false 
+Titel: "Agenten"
+Schnecke: "Agenten"
+description: "Ein Agent ist ein Mitglied Ihres Kundensupport-Teams. Agenten werden in der Lage sein, Nachrichten von Ihren Benutzern anzuzeigen und darauf zu antworten."
+ausgeblendet: false 
 ---
 
-# Agents
+# Agenten
 
-An Agent is a member of your customer support team. Agents will be able to view and reply to messages from your users.
+Ein Agent ist ein Mitglied Ihres Kundensupportteams. Agenten können Nachrichten von Ihren Benutzern anzeigen und beantworten.
 
-On the Live Agent sidebar, click **Settings > Agents**.
+Klicken Sie in der Live Agent-Seitenleiste auf **Einstellungen > Agenten**.
 
- Your name will be listed by default as Administrator.
- An Administrator will have access to all Live Agent features enabled for your account,
- including settings, along with all the normal Agents' privileges.
+Ihr Name wird standardmäßig als Administrator aufgeführt.
+ Ein Administrator hat Zugriff auf alle Live Agent-Funktionen, die für Ihr Konto aktiviert sind.
+ einschließlich der Einstellungen, zusammen mit allen normalen Agentenrechten.
 
-## Agent Statuses
+## Agentenstatus
 
-Agent statuses help manage the availability and workload of human agents, ensure consistent and efficient customer service, and provide transparency regarding the agent's availability to handle chat requests.
+Agentenstatus helfen dabei, die Verfügbarkeit und Arbeitsbelastung menschlicher Agenten zu verwalten, einen konsistenten und effizienten Kundenservice zu gewährleisten und Transparenz über die Verfügbarkeit des Agenten für die Bearbeitung von Chat-Anfragen zu schaffen.
 
-In Live Agent, human agents can have the following statuses:
+In Live Agent können menschliche Agenten die folgenden Status haben:
 
-- **Online**. This status indicates that the agent is available and actively handling customer interactions.
-- **Busy**. This status indicates that the agent is currently engaged in productive activities or actively assisting a customer. While in this state, the agent may not be immediately available to accept new chat requests. Agents in the `Busy` status temporarily defer new customer interactions until they return to the `Online` status. However, for enhanced workflow management, you can activate the **Assign conversation to a busy agent** setting in the [Account settings](account-settings.md#auto-assign-conversations-to-a-busy-agent), empowering agents to efficiently handle new customer conversations even when they are occupied with ongoing tasks or interactions.
-- **Away**. This status indicates that the agent is temporarily unavailable or not actively monitoring the chat system. They may take a break, attend to other responsibilities, or leave their workstation. Agents in this status cannot handle customer conversations until they back in.
-- **Offline**. This status indicates that the agent is not currently logged into the Live Agent system. Agents in this status cannot handle customer interactions until they log back in.
+-**Online**. Dieser Status zeigt an, dass der Agent verfügbar ist und sich aktiv um Kundeninteraktionen kümmert.
+-**Beschäftigt**. Dieser Status zeigt an, dass der Agent derzeit produktiven Aktivitäten nachgeht oder einen Kunden aktiv unterstützt. In diesem Zustand ist der Agent möglicherweise nicht sofort verfügbar, um neue Chatanfragen anzunehmen. Agenten mit dem Status "Beschäftigt" verschieben vorübergehend neue Kundeninteraktionen, bis sie wieder in den Status "Online" zurückkehren. Für ein verbessertes Workflow-Management können Sie jedoch die Einstellung **Konversation einem beschäftigten Agenten zuweisen** in den [Kontoeinstellungen](account-settings.md#auto-assign-conversations-to-a-busy-agent) aktivieren, sodass Agenten neue Kundengespräche effizient bearbeiten können, auch wenn sie mit laufenden Aufgaben oder Interaktionen beschäftigt sind.
+-**Weg**. Dieser Status zeigt an, dass der Agent vorübergehend nicht verfügbar ist oder das Chat-System nicht aktiv überwacht. Sie können eine Pause einlegen, sich anderen Aufgaben widmen oder ihren Arbeitsplatz verlassen. Agenten in diesem Status können keine Kundengespräche bearbeiten, bis sie wieder eingehen.
+-**Offline**. Dieser Status zeigt an, dass der Agent derzeit nicht beim Live Agent-System angemeldet ist. Agenten in diesem Status können Kundeninteraktionen erst bearbeiten, wenn sie sich wieder anmelden.

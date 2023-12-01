@@ -1,2 +1,2 @@
-!!! note
-    The existing payment terms for xApps are outlined in the [Billing](https://docs.cognigy.com/ai/billing/) article. Cognigy reserves the right to change the billing of xApps in the future.
+!!! Anmerkung
+    Die bestehenden Zahlungsbedingungen für xApps sind im Artikel [Abrechnung](https://docs.cognigy.com/ai/billing/) beschrieben. Cognigy behält sich das Recht vor, die Abrechnung von xApps in Zukunft zu ändern.

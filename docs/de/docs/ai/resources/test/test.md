@@ -1,14 +1,14 @@
 ---
- title: "Test" 
- slug: "test" 
- hidden: false 
+ Titel: "Test" 
+ Schnecke: "Testen" 
+ ausgeblendet: false 
 ---
-# Test
+# Testen
 
-Testing is incredibly important when working with machine-learning models, across a broad range of channels.
+Tests sind unglaublich wichtig, wenn Sie mit Machine-Learning-Modellen über eine Vielzahl von Kanälen hinweg arbeiten.
 
 ## Playbooks
 
-Playbooks allow for rapid - automated-testing of pre-recorded dialogs. This can be used for **Unit Testing** (testing units of Flow) as well as **Regression Testing** (checking if everything still works as expected).
+Playbooks ermöglichen ein schnelles, automatisiertes Testen von vorab aufgezeichneten Dialogen. Dies kann sowohl für **Unit Testing** (Testen von Flow-Einheiten) als auch für **Regressionstests** (Überprüfen, ob alles noch wie erwartet funktioniert) verwendet werden.
 
-Head over to [**Playbooks**]({{config.site_url}}ai/resources/test/playbooks/) for more information.
+Weitere Informationen finden Sie unter [**Playbooks**]({{config.site_url}}ai/resources/test/playbooks/).

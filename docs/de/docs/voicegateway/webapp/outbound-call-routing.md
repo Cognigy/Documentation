@@ -1,45 +1,43 @@
 ---
-title: "Outbound Call Routing"
-slug: "outbound-call-routing"
-description: "Voice Gateway Outbound Call Routing lets you choose a SIP trunk for outbound calls and set up specific rules for call routing."
-hidden: false
+title: "Routing für ausgehende Anrufe"
+Slug: "Routing von ausgehenden Anrufen"
+description: "Mit Voice Gateway Outbound Call Routing können Sie einen SIP-Trunk für ausgehende Anrufe auswählen und bestimmte Regeln für die Anrufweiterleitung einrichten."
+ausgeblendet: false
 ---
 
-# Outbound Call Routing
+# Weiterleitung von ausgehenden Anrufen
 
-_Outbound Call Routing_ allows you to select a [carrier](carriers.md) (SIP trunk) for outbound calls and configure specific rules for call routing.
+_Outbound Anruf Routing_ können Sie einen [Carrier](carriers.md) (SIP-Trunk) für ausgehende Anrufe auswählen und bestimmte Regeln für die Anrufweiterleitung konfigurieren.
 
-## How it Works
+## So funktioniert's
 
-When a user initiates an outbound call, the Outbound Call Routing feature determines the preferred carrier (SIP trunk) to use based on the following cases:
+Wenn ein Benutzer einen ausgehenden Anruf initiiert, bestimmt die Funktion für die Weiterleitung ausgehender Anrufe den bevorzugten Netzbetreiber (SIP-Trunk) basierend auf den folgenden Fällen:
 
-- **Caller's phone number registered in Voice Gateway**. If the caller's phone number is registered in Voice Gateway, the system will automatically use the SIP Trunk linked to that phone number for the outbound call.
-- **Caller's phone number matches a created outbound routing rule**. If the caller's phone number matches one of the created rules, the system will use the SIP Trunk specified in the rule for the outbound call.
-- **Caller's phone number does not match any rule**. If the caller's phone number does not match any created outbound routing rules, the system will randomly select one of the available SIP Trunks to route the outbound call.
+- **Die Telefonnummer des Anrufers, die in Voice Gateway registriert ist**. Wenn die Telefonnummer des Anrufers im Voice Gateway registriert ist, verwendet das System automatisch den SIP-Trunk, der mit dieser Telefonnummer verknüpft ist, für den ausgehenden Anruf.
+- **Die Telefonnummer des Anrufers stimmt mit einer erstellten ausgehenden Routingregel überein**. Wenn die Telefonnummer des Anrufers mit einer der erstellten Regeln übereinstimmt, verwendet das System den in der Regel angegebenen SIP-Trunk für den ausgehenden Anruf.
+- **Die Telefonnummer des Anrufers stimmt mit keiner Regel überein**. Wenn die Telefonnummer des Anrufers nicht mit einer erstellten ausgehenden Routing-Regel übereinstimmt, wählt das System nach dem Zufallsprinzip einen der verfügbaren SIP-Trunks aus, um den ausgehenden Anruf weiterzuleiten.
 
-## Configure Outbound Routing Rules
+## Ausgehende Routing-Regeln konfigurieren
 
-Before configuring the outbound routing rules, ensure that the **Outbound** option is activated in the **SIP Gateways** settings of the carrier.
+Stellen Sie vor der Konfiguration der Outbound-Routing-Regeln sicher, dass die Option **Outbound** in den **SIP Gateways**-Einstellungen des Carriers aktiviert ist.
 
-To set up a rule for outbound calls, follow these steps:
+Gehen Sie folgendermaßen vor, um eine Regel für ausgehende Anrufe einzurichten:
 
-1. Open the Cognigy Voice Gateway Self-Service Portal. 
-2. In the left-side menu, select **Outbound Call Routing**. 
-3. On the **Outbound Call Routing** page, click **Add outbound call routes**. 
-4. On the **Add Outbound Call Routing** page, in the Name field, specify a unique name that complies with the requirements for your rule. 
-5. Enable the **Active** setting to start applying this rule. If you want to save this rule as a draft, deactivate this setting. 
-6. Select a default outbound carrier through which the outbound calls will route when no rules are applied. 
-7. Select accounts to which the rule should belong from the Used by list. By default, All accounts are selected. 
-8. In the **Route based on first match** section, configure a set of rules:
-    - **Digit pattern** — specify a code number of the country, for example, 49 for Germany, 46 for Sweden, or 1 for the United States.<br>If you need to capture a specific area, you can also use a regular expression (regex). For example, `^\d{2}41\d{8}` maps only Brazilian numbers with the country code `55` and area code `41`, which covers several cities in Brazil. Alternatively, using the digit combination `5541` gives the same mapping result.
-    - **Carrier** — select a carrier from the list.
-9. Click **Save**.
+1. Öffnen Sie das Self-Service-Portal von Cognigy Voice Gateway. 
+2. Wählen Sie im Menü auf der linken Seite **Routing für ausgehende Anrufe** aus. 
+3. Klicken Sie auf der Seite **Routing ausgehender Anrufe** auf **Routen für ausgehende Anrufe hinzufügen**. 
+4. Geben Sie auf der Seite **Routing für ausgehende Anrufe hinzufügen** im Feld Name einen eindeutigen Namen an, der den Anforderungen für Ihre Regel entspricht. 
+5. Aktivieren Sie die Einstellung **Aktiv**, um mit der Anwendung dieser Regel zu beginnen. Wenn Sie diese Regel als Entwurf speichern möchten, deaktivieren Sie diese Einstellung. 
+6. Wählen Sie einen Standard-Outbound-Carrier aus, über den die ausgehenden Anrufe weitergeleitet werden, wenn keine Regeln angewendet werden. 
+7. Wählen Sie in der Liste Verwendet von die Konten, zu denen die Regel gehören soll, aus. Standardmäßig sind Alle Konten ausgewählt. 
+8. Konfigurieren Sie im Abschnitt **Route basierend auf erster Übereinstimmung** eine Reihe von Regeln:
+    - **Ziffernmuster** – Geben Sie eine Codenummer des Landes an, z. B. 49 für Deutschland, 46 für Schweden oder 1 für die Vereinigten Staaten.<br>Wenn Sie einen bestimmten Bereich erfassen müssen, können Sie auch einen regulären Ausdruck (Regex) verwenden. Beispielsweise ordnet '^\d{2}41\d{8}' nur brasilianische Nummern mit der Landesvorwahl "55" und der Vorwahl "41" zu, die mehrere Städte in Brasilien abdeckt. Alternativ führt die Verwendung der Ziffernkombination "5541" zum gleichen Zuordnungsergebnis.
+    - **Spediteur** — Wählen Sie einen Spediteur aus der Liste aus.
+9. Klicken Sie auf **Speichern**.
 
-The rule will be applied.
+Die Regel wird angewendet.
 
-You create multiple rules and assign the same carrier to several of them. 
-These rules are applied in the sequence they are listed. 
-The rule positioned at the top takes precedence, followed by the subsequent ones in order. 
-To modify the order of the rules, hover over a rule, hold it, and move it to the desired position.
-
-
+Sie erstellen mehrere Regeln und ordnen denselben Spediteur mehreren davon zu. 
+Diese Regeln werden in der Reihenfolge angewendet, in der sie aufgeführt sind. 
+Die oben positionierte Regel hat Vorrang, gefolgt von den folgenden in der Reihenfolge. 
+Um die Reihenfolge der Regeln zu ändern, bewegen Sie den Mauszeiger über eine Regel, halten Sie sie gedrückt und verschieben Sie sie an die gewünschte Position.

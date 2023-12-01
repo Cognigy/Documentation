@@ -1,72 +1,72 @@
 ---
-title: "Teams" 
-slug: "teams" 
-hidden: false 
+Titel: "Teams" 
+Slug: "Teams" 
+ausgeblendet: false 
 ---
 
-# Teams
+# Mannschaften
 
-_Teams_  are organized groups of human agents within your customer support team. These teams are formed based on their specific responsibilities or expertise in handling different types of customer inquiries or issues.
+_Teams_ sind organisierte Gruppen von menschlichen Agenten innerhalb Ihres Kundensupport-Teams. Diese Teams werden auf der Grundlage ihrer spezifischen Verantwortlichkeiten oder ihres Fachwissens im Umgang mit verschiedenen Arten von Kundenanfragen oder -problemen gebildet.
 
-A human agent can be part of multiple teams.
+Ein menschlicher Agent kann Teil mehrerer Teams sein.
 
-Human agents can assign conversations manually to a team when they are working collaboratively.
+Menschliche Agenten können Konversationen manuell einem Team zuweisen, wenn sie zusammenarbeiten.
 
-## Create a Team
+## Erstelle ein Team
 
-To create a team within Live Agent, do the following:
+Um ein Team in Live Agent zu erstellen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Teams**.
-3. In the upper-right corner, click **Create new team**.
-4. In the **Create a new team** window, fill in the following fields:
-    - **Team name** — enter a meaningful name of the team, that associates with its responsibilities, for example, `Team Customer Support`.
-    - **Team Description** — enter a short description about this team. 
-5. Click **Create team**.
-6. On the **Add agents to team** page, add available agents you want to your newly created team. This lets you collaborate as a team on conversations and get notified on new events in the same conversation. You can also select all available agents at once for the new team by activating the setting next to **AGENT**.
-7. Click **Add agents** to confirm your selection.
-8. Click **Finish**. 
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Teams**.
+3. Klicken Sie in der oberen rechten Ecke auf **Neues Team erstellen**.
+4. Füllen Sie im Fenster **Neues Team erstellen** die folgenden Felder aus:
+    - **Teamname** — Geben Sie einen aussagekräftigen Namen des Teams ein, der mit seinen Zuständigkeiten verknüpft ist, z. B. "Team-Kundensupport".
+    - **Teambeschreibung** — Geben Sie eine kurze Beschreibung zu diesem Team ein. 
+5. Klicken Sie auf **Team erstellen**.
+6. Fügen Sie auf der Seite **Agenten zum Team hinzufügen** dem neu erstellten Team verfügbare Agenten hinzu, die Sie möchten. Auf diese Weise können Sie als Team an Unterhaltungen zusammenarbeiten und sich über neue Ereignisse in derselben Unterhaltung benachrichtigen lassen. Sie können auch alle verfügbaren Agenten auf einmal für das neue Team auswählen, indem Sie die Einstellung neben **AGENT** aktivieren.
+7. Klicken Sie auf **Agenten hinzufügen**, um Ihre Auswahl zu bestätigen.
+8. Klicken Sie auf **Fertig stellen**. 
 
-The new team will be added and displayed on the **Teams** page.
+Das neue Team wird hinzugefügt und auf der Seite **Teams** angezeigt.
 
-## Edit a Team
+## Ein Team bearbeiten
 
-To edit a team within Live Agent, do the following:
+Um ein Team in Live Agent zu bearbeiten, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Teams**. 
-3. On the **Teams** page, to the right of the team you want to change, click **Edit**. 
-4. In the **Edit your team** window, update the fields as needed. 
-5. Click **Update team**.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Teams**. 
+3. Klicken Sie auf der Seite **Teams** rechts neben dem Team, das Sie ändern möchten, auf **Bearbeiten**. 
+4. Aktualisieren Sie im Fenster **Team bearbeiten** die Felder nach Bedarf. 
+5. Klicken Sie auf **Team aktualisieren**.
 
-The team fields and settings will be updated.
+Die Teamfelder und -einstellungen werden aktualisiert.
 
-## Delete a Team
+## Ein Team löschen
 
-To delete a team within Live Agent, do the following:
+Um ein Team in Live Agent zu löschen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Teams**.
-3. In the settings column, select **Teams**.
-4. On the **Teams** page, to the right of the team you want to delete, click **Delete**.
-5. You are prompted to enter the team name you want to delete, for example, `Team Customer Support`, then click **Delete Team Customer Support** to confirm.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Teams**.
+3. Wählen Sie in der Spalte "Einstellungen" die Option "Teams" aus.
+4. Klicken Sie auf der Seite **Teams** rechts neben dem Team, das Sie löschen möchten, auf **Löschen**.
+5. Sie werden aufgefordert, den Teamnamen einzugeben, den Sie löschen möchten, z. B. "Team-Kundensupport", und klicken Sie dann zur Bestätigung auf **Team-Kundensupport löschen**.
 
-Deleting the team will remove the team assignment from the conversations assigned to this team.
+Wenn Sie das Team löschen, wird die Teamzuweisung aus den Unterhaltungen entfernt, die diesem Team zugewiesen sind.
 
-## Assign a Team to a Conversation
+## Zuweisen eines Teams zu einer Konversation
 
-To manually assign a team to a conversation within Live Agent, follow these steps:
+Gehen Sie folgendermaßen vor, um ein Team manuell einer Konversation in Live Agent zuzuweisen:
 
-1. Open the Live Agent interface. 
-2. In the left-side menu of Live Agent, click **Conversations**. 
-3. Go to the relevant conversation. 
-4. In the **Details** menu, go to the **Conversation Actions** section.
-5. From the **Assigned Team** list, select a team that can be assigned to this conversation. Note that the previously selected agent in the **Assigned Agent** list should be a part of this team.
+1. Öffnen Sie die Live Agent-Oberfläche. 
+2. Klicken Sie im Menü auf der linken Seite von Live Agent auf **Konversationen**. 
+3. Wechseln Sie zur entsprechenden Konversation. 
+4. Wechseln Sie im Menü **Details** zum Abschnitt **Konversationsaktionen**.
+5. Wählen Sie in der Liste **Zugewiesenes Team** ein Team aus, das dieser Konversation zugewiesen werden kann. Beachten Sie, dass der zuvor ausgewählte Agent in der Liste **Zugewiesener Agent** Teil dieses Teams sein sollte.
 
-The conversation will be assigned to the team.
+Die Konversation wird dem Team zugewiesen.
 
-## More Information
+## Mehr Informationen
 
-- [Agents](agents.md)
-- [Manual assignment](./../conversation/conversation-routing/manual-mode.md#manual-assignment)
-- [Conversations Workflow](./../conversation/conversation-workflow.md#assign-agent)
+- [Agenten](agents.md)
+- [Manuelle Zuweisung](./.. /conversation/conversation-routing/manual-mode.md#manual-assignment)
+- [Konversations-Workflow](./.. /conversation/conversation-workflow.md#assign-agent)

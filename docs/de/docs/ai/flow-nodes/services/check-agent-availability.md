@@ -1,99 +1,92 @@
 ---
-title: "Check Agent Availability"
-slug: "check-agent-availability"
-description: "The Check Agent Availability Node verifies the availability of agents with specific skills. With this Node, you can manage your Flow, for example, send notifications to the user that the agent is unavailable at the moment or suggest an alternative response."
-hidden: false
+Titel: "Agentenverfügbarkeit prüfen"
+Slug: "Agenten-Verfügbarkeit prüfen"
+description: "Der Knoten "Agentenverfügbarkeit prüfen" überprüft die Verfügbarkeit von Agenten mit bestimmten Fähigkeiten. Mit diesem Node können Sie Ihren Flow verwalten, z. B. Benachrichtigungen an den Benutzer senden, dass der Agent gerade nicht verfügbar ist, oder eine alternative Antwort vorschlagen."
+ausgeblendet: false
 ---
 
-# Check Agent Availability
+# Agentenverfügbarkeit prüfen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/check-agent-availability.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten prüft die Verfügbarkeit von Agenten mit bestimmten Fähigkeiten. 
+Mit diesem Node können Sie Ihren Flow verwalten,
+Senden Sie z. B. Benachrichtigungen an den Benutzer, dass der Agent im Moment nicht verfügbar ist,
+oder schlagen Sie eine alternative Antwort vor.
 
-This Node checks the availability of agents with specific skills. 
-With this Node, you can manage your Flow,
-for example, send notifications to the user that the agent is unavailable at the moment,
-or suggest an alternative response.
+Der Knoten Agentenverfügbarkeit prüfen unterstützt die folgenden Übergabeanbieter:
 
-The Check Agent Availability Node supports the following handover providers:
-
-- [Cognigy Live Agent](#live-agent)
-- [Genesys Cloud](#genesys-cloud)
+- [Cognigy Live-Agent](#live-Agent)
+- [Genesys Cloud](#genesys-Cloud)
 - [Chatwoot](#chatwoot)
 
-## Settings
+## Einstellungen
 
-### Live Agent 
+### Live-Agent 
 
-| Parameter           | Type          | Description                                                                   |
+| Parameter | Typ | Beschreibung |
 |---------------------|---------------|-------------------------------------------------------------------------------|
-| Skills              | CognigyScript          | A list of skills that should be used to filter the available human agents.    |
-| Live Agent Inbox Id | CognigyScript | The ID of your Inbox in Live Agent.                                           |
-| Languages           | CognigyScript          | A list of languages that should be used to filter the available human agents. |
-
+| Fertigkeiten | CognigyScript | Eine Liste von Fertigkeiten, die zum Filtern der verfügbaren menschlichen Agenten verwendet werden sollten.    |
+| Posteingangs-ID des Live-Agenten | CognigyScript | Die ID Ihres Posteingangs in Live Agent.                                           |
+| Sprachen | CognigyScript | Eine Liste der Sprachen, die zum Filtern der verfügbaren menschlichen Agenten verwendet werden sollen. |
 
 ### Genesys Cloud
 
-| Parameter       | Type | Description                                                                         |
+| Parameter | Typ | Beschreibung |
 |-----------------|------|-------------------------------------------------------------------------------------|
-| Skills          | List | A list of skills that should be used to filter the available human agents.          |
-| Profile Skills  | List | A list of profile skills that should be used to filter the available human agents.  |
-| Language Skills | List | A list of language skills that should be used to filter the available human agents. |
-
+| Fertigkeiten | Liste | Eine Liste von Fertigkeiten, die zum Filtern der verfügbaren menschlichen Agenten verwendet werden sollten.          |
+| Profil Kompetenzen | Liste | Eine Liste von Profilfertigkeiten, die zum Filtern der verfügbaren menschlichen Agenten verwendet werden sollen.  |
+| Sprachkenntnisse | Liste | Eine Liste von Sprachkenntnissen, die zum Filtern der verfügbaren menschlichen Agenten verwendet werden sollten. |
 
 ### Chatwoot
 
-
-| Parameter         | Type          | Description                      |
+| Parameter | Typ | Beschreibung |
 |-------------------|---------------|----------------------------------|
-| Chatwoot Inbox Id | CognigyScript | The ID of our Inbox in Chatwoot. |
+| Chatwoot Posteingangs-ID | CognigyScript | Die ID unseres Posteingangs in Chatwoot. |
 
-### Storage Options
+### Speicheroptionen
 
-| Parameter                     | Type          | Description                                                                                                                                                                            |
+| Parameter | Typ | Beschreibung |
 |-------------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Where to store the result     | Select        | The storage for the search results. Select a storage:<br> - **Input** — the content will be stored in the Input object.<br> - **Context** — the content will be stored in the Context. |
-| Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                                |
-| Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                            |
+| Wo soll das Ergebnis gespeichert werden? | Wählen Sie | Der Speicher für die Suchergebnisse. Wählen Sie einen Speicher aus:<br> - **Input** — der Inhalt wird im Input-Objekt gespeichert.<br> - **Kontext** — der Inhalt wird im Kontext gespeichert. |
+| Eingabetaste zum Speichern des Ergebnisses | CognigyScript | Der Speicherort im Eingabeobjekt, an dem das Ergebnis gespeichert wird. Beispiel: 'input.knowledgeSearch'.                                                                                |
+| Eingabekontext zum Speichern des Ergebnisses | CognigyScript | Der Speicherort im Kontextobjekt, an dem das Ergebnis gespeichert wird. Beispiel: "context.knowledgeSearch".                                                                            |
 
+### Fehlerbehandlung
 
-### Error Handling
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|-------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Fehlerprotokollierung | Wählen Sie | Sie können eine der Optionen für die Fehlerprotokollierung auswählen:<br>- **Fehler nicht protokollieren** – die Einstellung lässt nicht zu, dass Fehler protokolliert werden. Es eignet sich für Umgebungen, in denen die Fehlerverfolgung nicht erwünscht ist, z. B. Produktionssysteme, um saubere Protokolle zu erhalten.<br>- **Fehlercodes und Antworten protokollieren** – Die Einstellung zeichnet wichtige Informationen auf, einschließlich Fehlercodes wie HTTP-Statuscodes und die vom Server empfangenen Antworten. Es ist nützlich für die grundlegende Fehlerbehebung und das Verständnis von Fehlerkontexten.<br>- **Vollständige Fehler protokollieren und Nutzlasten anfordern**: Die Einstellung bietet eine umfassende Fehlerprotokollierung. Es erfasst nicht nur Fehlercodes und Antworten, sondern protokolliert auch die vollständigen Fehlermeldungen oder -details und die gesamte an den Server gesendete Anforderungsnutzlast. Seien Sie vorsichtig mit dieser Option, da sie vertrauliche Daten offenlegen kann. Dies ist am vorteilhaftesten für tiefgreifendes Debuggen und Diagnosen. |
+| Flow-Ausführung bei Fehler abbrechen | Umschalten | Hält die Flow-Ausführung bei HTTP-Statuscodes an, die größer als 299 sind.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-| Parameter                     | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|-------------------------------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Error Logging                 | Select | You can select one of the Error Logging options:<br>- **Don't log errors** — the setting does not allow errors to be logged. It's suitable for environments where error tracking is not desired, such as production systems, to maintain clean logs.<br>- **Log error codes and responses** — the setting records essential information, including error codes such as HTTP status codes, and the responses received from the server. It's useful for basic troubleshooting and understanding error contexts.<br>- **Log full errors and request payloads** — the setting provides comprehensive error logging. It not only captures error codes and responses but also logs the complete error messages or details and the entire request payload sent to the server. Be cautious with this option, as it can expose sensitive data. It's most beneficial for in-depth debugging and diagnostics. |
-| Abort Flow Execution on Error | Toggle | Halts Flow Execution on HTTP status codes greater than 299.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+## Beispiel
 
-## Example
+Gehen Sie folgendermaßen vor, um einen einfachen Flow mit dem Knoten "Agentenverfügbarkeit prüfen" zu erstellen:
 
-To build a simple Flow using the Check Agent Availability Node, follow these steps:
+1. Fügen Sie im Flow-Editor einen Knoten **Agentenverfügbarkeit prüfen** hinzu.
+2. Geben Sie im Knoteneditor **Agentenverfügbarkeit prüfen** die erforderlichen Werte ein. Für den Live Agent-Übergabeanbieter müssen Sie z. B. **Live Agent-Posteingangs-ID**, **Skills** und **Sprachen** angeben, die Ihnen beim Sortieren der verfügbaren Agenten helfen.
+3. Klicken Sie auf **Speichern** Knoten.
+4. Fügen Sie unterhalb des Knotens Agentenverfügbarkeit prüfen einen IF-Knoten hinzu.
+5. Öffnen Sie den IF-Node-Editor.
+6. Klicken Sie im Feld **Bedingung** auf ! [Marke] (.. /.. /.. /assets/icons/token.svg) und wählen Sie das Token **Verfügbare Agenten** aus.
+7. Geben Sie die Bedingung **> 0** an.
+8. Klicken Sie auf **Knoten speichern**.
+9. Fügen Sie unter Ihrem untergeordneten **Dann**-Knoten einen **Übergabe-zu-Agent**-Knoten hinzu. Geben Sie die erforderlichen Werte für Ihren Übergabeanbieter ein. Für den Live Agent-Übergabeanbieter müssen Sie z. B. **Live Agent-Posteingangs-ID**, **Fähigkeiten** und **Sprachen** angeben, mit denen Sie die Konversation an verfügbare Agenten weiterleiten können.
+10. Klicken Sie auf **Knoten speichern**.
+11. Fügen Sie unter dem untergeordneten **Else**-Knoten einen **Say**-Knoten hinzu. 
+12. Geben Sie im **Say**-Knoten-Editor im Feld **Text** den folgenden Text an: "Alle unsere Agenten unterstützen derzeit andere Kunden. Bitte versuchen Sie es später noch einmal." 
+13. Klicken Sie auf **Knoten speichern**.
 
-1. In the Flow editor, add a **Check Agent Availability Node**.
-2. In the **Check Agent Availability** Node editor, enter the required values. For example, for the Live Agent handover provider, you need to specify **Live Agent Inbox Id**, **Skills**, and **Languages** that help you sort available agents.
-3. Click **Save** Node.
-4. Below the Check Agent Availability Node, add an IF Node.
-5. Open the IF Node Editor.
-6. In the **Condition** field, click ![token](../../../assets/icons/token.svg) and select the **Available Agents** Token.
-7. Specify the **> 0** condition.
-8. Click **Save Node**.
-9. Below your **Then** child Node, add a **Handover to Agent** Node. Enter the required values for your handover provider. For example, for the Live Agent handover provider, you need to specify **Live Agent Inbox Id**, **Skills**, and **Languages** that help you route the conversation to available agents.
-10. Click **Save Node**.
-11. Below the **Else** child Node, add a **Say** Node. 
-12. In the **Say** Node editor, in the **Text** field, specify the following text: `All of our agents are currently assisting other customers. Please try again later`. 
-13. Click **Save Node**.
-
-To test your Flow, use [Demo Webchat](../../endpoints/webchat/integrated-demo-page.md).
+Um Ihren Flow zu testen, verwenden Sie [Demo Webchat](.. /.. /endpoints/webchat/integrated-demo-page.md).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/check-agent-availability-flow.png" width="100%" />
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Agent to Handover Node](../../handover-providers/live-agent-handover.md)
-- [IF Node](../logic/if.md)
-- [Say Node](../message/say.md)
+- [Agent an Übergabeknoten](.. /.. /übergabe-anbieter/live-agent-handover.md)
+- [IF-Knoten](.. /logic/if.md)
+- [Knoten sagen](.. /message/say.md)

@@ -1,32 +1,29 @@
 ---
-title: "Copilot: HTML Tile"
+title: "Copilot: HTML-Kachel"
 slug: "set-html-tile"
-hidden: true
+Ausgeblendet: Wahr
 ---
 
-# Copilot: HTML Tile
+# Copilot: HTML-Kachel
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/set-html-tile.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Mit diesem Knoten können Sie benutzerdefinierte HTML-Inhalte im AI Copilot-Arbeitsbereich anzeigen. Sie können benutzerdefinierte Layouts und Designs erstellen, um Informationen einem menschlichen Agenten zu präsentieren. HTML-Inhalte können Text, Bilder, Videos und Links enthalten. Der HTML-Kachelknoten festlegen ist nützlich für die Anzeige komplexer Informationen.
 
-This Node allows you to display customized HTML content in the AI Copilot Workspace. You can create custom layouts and designs for presenting information to a human agent. HTML content can include text, images, videos, and links. The Set HTML Tile Node is useful for displaying complex information.
+## Einstellungen
 
-## Settings
-
-| Parameter    | Type          | Description                                              |
+| Parameter | Typ | Beschreibung |
 |--------------|---------------|----------------------------------------------------------|
-| Tile ID      | CognigyScript | The ID that you created in the AI Copilot configuration. |
-| HTML Content | HTML          | The HTML content to render inside the Widget.            |
-| JSON Data    | JSON          | The Data to send to the IFrame as a postMessage event.   |
+| Kachel-ID | CognigyScript | Die ID, die Sie in der AI Copilot-Konfiguration erstellt haben. |
+| HTML-Inhalt | HTML | Der HTML-Inhalt, der innerhalb des Widgets gerendert werden soll.            |
+| JSON-Daten | JSON | Die Daten, die als postMessage-Ereignis an den IFrame gesendet werden sollen.   |
 
-## More Information
+## Mehr Informationen
 
-- [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
-- [Copilot: IFrame tile](set-iframe-tile.md)
-- [Copilot: Set Grid](set-grid.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Copilot: Adaptive Kartenkachel](set-adaptive-card-tile.md)
+- [Copilot: IFrame-Kachel](set-iframe-tile.md)
+- [Copilot: Raster einstellen](set-grid.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

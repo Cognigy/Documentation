@@ -1,14 +1,14 @@
-To configure credentials, follow these steps:
+Gehen Sie folgendermaßen vor, um Anmeldeinformationen zu konfigurieren:
 
-1. Open the Genesys Cloud interface.
-2. Go to **Admin > Integrations > OAuth**.
-3. Click **+ Add Client**.
-4. On the **Client Details** tab, provide a unique name in the **App Name** field.
-5. On the **Roles** tab, activate the corresponding role for the client.
-6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list.
-7. Click **Save**.
-8. Copy the Client ID and Client Secret and save them for future use.
-9. From the left-side menu, select **Authorized Applications**.
-10. In the upper-right corner, click **+ Authorize a Client**.
-11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously.
-12. Click **Authorize Client**.
+1. Öffnen Sie die Genesys Cloud-Oberfläche.
+2. Gehen Sie zu **Admin > Integrationen > OAuth**.
+3. Klicken Sie auf **+ Client hinzufügen**.
+4. Geben Sie auf der Registerkarte **Clientdetails** einen eindeutigen Namen in das Feld **App-Name** ein.
+5. Aktivieren Sie auf der Registerkarte **Rollen** die entsprechende Rolle für den Mandanten.
+6. Kehren Sie zur Registerkarte **Clientdetails** zurück, und wählen Sie **Clientanmeldeinformationen** in der Liste **Grand Types** aus.
+7. Klicken Sie auf **Speichern**.
+8. Kopieren Sie die Client-ID und den geheimen Clientschlüssel, und speichern Sie sie für die zukünftige Verwendung.
+9. Wählen Sie im Menü auf der linken Seite **Autorisierte Anwendungen** aus.
+10. Klicken Sie in der oberen rechten Ecke auf **+ Client autorisieren**.
+11. Geben Sie im Fenster **Client autorisieren** die Client-ID ein, die Sie zuvor kopiert und gespeichert haben.
+12. Klicken Sie auf **Client autorisieren**.

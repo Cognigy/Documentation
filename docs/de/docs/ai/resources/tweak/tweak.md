@@ -1,10 +1,10 @@
 ---
- title: "Tweak" 
- slug: "tweak" 
- hidden: false 
+ Titel: "Tweak" 
+ slug: "Optimieren" 
+ ausgeblendet: false 
 ---
-# Tweak
+# Optimieren
 
-One of the characteristics of **Virtual Agents** is that they can improve over time. Cognigy.AI provides the ability to tweak Agents based on existing dialogs. This can be done using the **Intent Trainer**.
+Eines der Merkmale von **Virtual Agents** ist, dass sie sich im Laufe der Zeit verbessern können. Cognigy.AI bietet die Möglichkeit, Agenten basierend auf vorhandenen Dialogen zu optimieren. Dies kann mit dem **Intent Trainer** erfolgen.
 
-Head over to [**Intent Trainer**]({{config.site_url}}ai/resources/tweak/intent-trainer/) for more information.
+Weitere Informationen finden Sie unter [**Intent Trainer**]({{config.site_url}}ai/resources/tweak/intent-trainer/).

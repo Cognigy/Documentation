@@ -1,24 +1,22 @@
 ---
- title: "Deactivate Profile" 
- slug: "deactivate-profile" 
- hidden: false 
+ title: "Profil deaktivieren" 
+ Slug: "Profil deaktivieren" 
+ ausgeblendet: false 
 ---
-# Deactivate Profile
+# Profil deaktivieren
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/deactivate-profile.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-This Node is used to deactivate a specific contact profile in case a contact requests it. This node has one parameter, as it will deactivate the profile of the contact that hits the Node and could also delete the stored profile data if required.
+## Beschreibung<div class="divider"></div>Dieser Knoten wird verwendet, um ein bestimmtes Kontaktprofil zu deaktivieren, falls ein Kontakt dies anfordert. Dieser Knoten hat einen Parameter, da er das Profil des Kontakts, der auf den Knoten trifft, deaktiviert und bei Bedarf auch die gespeicherten Profildaten löschen kann.
 
-| Parameter  | Type    | Description                                                                                                                                                                                                                             |
+| Parameter | Typ | Beschreibung |
 |------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DeleteData | Boolean | If True, this node will deactivate the contact profile and delete stored data including **all analytics data** and **all transcripts**. The **contact profile** won't get deleted so that it is still possible to re-activate the user. |
+| Daten löschen | Boolescher Wert | Bei True deaktiviert dieser Knoten das Kontaktprofil und löscht gespeicherte Daten, einschließlich **aller Analysedaten** und **aller Transkripte**. Das **Kontaktprofil** wird nicht gelöscht, so dass es weiterhin möglich ist, den Benutzer erneut zu aktivieren. |
 
-!!! tip "Common usage"
-    It is common to place this node behind an ``If Node`` that is only activated if the contact specifically requests that you shouldn't collect data their data.
+!!! Tipp "Allgemeiner Gebrauch"
+    Es ist üblich, diesen Knoten hinter einem ''Wenn-Knoten'' zu platzieren, der nur aktiviert wird, wenn der Kontakt ausdrücklich darum bittet, dass Sie keine Daten sammeln sollen.
 
-!!! danger "Important"
-    If the "DeleteData" option is being used, **all analytics data** and **all transcripts** will be removed from the system. This operation is not revertible.
+!!! Gefahr "Wichtig"
+    Wenn die Option "DeleteData" verwendet wird, werden **alle Analysedaten** und **alle Transkripte** aus dem System entfernt. Dieser Vorgang kann nicht rückgängig gemacht werden.

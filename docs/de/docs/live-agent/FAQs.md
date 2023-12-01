@@ -1,130 +1,128 @@
 ---
-title: "Questions and Answers" 
-slug: "questions-and-answers" 
-hidden: false 
+Titel: "Fragen und Antworten" 
+Slug: "Fragen-und-Antworten" 
+ausgeblendet: false 
 ---
 
-# Questions and Answers about Live Agent
+# Fragen und Antworten zu Live Agent
 
-## Live Agent
+## Live-Agent
 
-### How to remove a user?
-Removing a user (human Agent) from Live Agent can be done from the Cognigy.AI [Members page](../ai/resources/manage/members.md). The `liveAgentAdmin`/`liveAgentAgent` roles need to be removed, and this will prevent the human Agent from logging into Live Agent. This can also be achieved by deleting the user from Cognigy.AI.
+### Wie entferne ich einen Benutzer?
+Das Entfernen eines Benutzers (menschlicher Agent) aus Live Agent kann über die Cognigy.AI [Mitgliederseite](.. /ai/resources/manage/members.md). Die Rollen 'liveAgentAdmin'/'liveAgentAgent' müssen entfernt werden, um zu verhindern, dass sich der menschliche Agent bei Live Agent anmeldet. Dies kann auch erreicht werden, indem der Benutzer aus Cognigy.AI gelöscht wird.
 
-Head over to [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) for more information.
+Gehen Sie zu [Cognigy.AI Access Control](.. /ai/tools/user-menu/access-control.md) für weitere Informationen.
 
-### How to create an Agent with multiple roles?
+### Wie erstelle ich einen Agenten mit mehreren Rollen?
 
-To create an Agent with multiple roles, read the [Roles](roles.md#multiple-roles) article.
+Um einen Agenten mit mehreren Rollen zu erstellen, lesen Sie den Artikel [Rollen](roles.md#multiple-roles).
 
-### What happens if an Inbox is deleted?
-Inboxes created manually can be safely deleted, except those with the `-default` suffix. Deleting Inboxes with `-default` breaks the integration between Live Agent and Cognigy.AI. If this Inbox is accidentally deleted, see the solution in the question below.
+### Was passiert, wenn ein Posteingang gelöscht wird?
+Manuell erstellte Posteingänge können sicher gelöscht werden, mit Ausnahme derjenigen mit dem Suffix "-default". Das Löschen von Posteingängen mit '-default' unterbricht die Integration zwischen Live Agent und Cognigy.AI. Wenn dieser Posteingang versehentlich gelöscht wird, finden Sie die Lösung in der folgenden Frage.
 
-### What should I do if the Inbox is deleted?
+### Was soll ich tun, wenn der Posteingang gelöscht wird?
 
-You need to create a new Inbox. To do that, use the [Adding another Inbox for your Project](getting-started/live-agent-setup/live-agent-setup-additional-inbox.md) article.
+Sie müssen einen neuen Posteingang erstellen. Verwenden Sie dazu den Artikel [Hinzufügen eines weiteren Posteingangs für Ihr Projekt](getting-started/live-agent-setup/live-agent-setup-additional-inbox.md).
 
-### Where can I check what the default Inbox is? Does it have a special account id?
+### Wo kann ich nachsehen, was der Standard-Posteingang ist? Hat es eine spezielle Konto-ID?
 
-The default Inbox has a pattern name `XXXX-default`, for example, `7119-default`. You can rename it in [Inbox Settings](settings/inboxes.md#inbox-settings).
+Der Standardeingang hat den Musternamen "XXXX-default", z. B. "7119-default". Sie können es in [Inbox-Einstellungen](settings/inboxes.md#inbox-settings) umbenennen.
 
-### How to fix custom SSL certificate verification error?
-That may happen because Cognigy.AI is running under a custom SSL certificate (Error can not validate certificate). And Live Agent is failing to perform the requests to it as SSL requests can not be verified.
+### Wie behebt man einen Fehler bei der Überprüfung des benutzerdefinierten SSL-Zertifikats?
+Dies kann passieren, weil Cognigy.AI unter einem benutzerdefinierten SSL-Zertifikat ausgeführt wird (Fehler kann Zertifikat nicht validieren). Und Live Agent kann die Anfragen an ihn nicht ausführen, da SSL-Anfragen nicht überprüft werden können.
 
-Head over to [Rest Client SSL Helm values](../live-agent/installation/helm-values/helm-values.md#rest-client-ssl) for configuring it.
+Gehen Sie zu [Rest-Client-SSL-Helm-Werte](.. /live-agent/installation/helm-values/helm-values.md#rest-client-ssl) für die Konfiguration.
 
-### How to fix SMTP for no authentication provider.
-For self-hosted installations, the SMTP configuration needs to be modified.
+### So beheben Sie SMTP ohne Authentifizierungsanbieter.
+Bei selbstgehosteten Installationen muss die SMTP-Konfiguration geändert werden.
 
-Head over to [Helm SMTP values](../live-agent/installation/helm-values/smtp.md) for more information.
+Gehen Sie zu [Helm-SMTP-Werte](.. /live-agent/installation/helm-values/smtp.md) für weitere Informationen.
 
-### How to create labels and assign them to conversations? 
-Once a label has been created, navigate to a conversation. There is a section called ***Conversation Labels*** on the right side, where labels can be added.
+### Wie erstelle ich Labels und weise sie Konversationen zu? 
+Nachdem ein Label erstellt wurde, navigieren Sie zu einer Unterhaltung. Auf der rechten Seite befindet sich ein Abschnitt mit dem Namen ***Conversation Labels***, in dem Labels hinzugefügt werden können.
 
-Head over to [Labels](settings/labels.md) for more information.
+Weitere Informationen finden Sie unter [Labels](settings/labels.md).
 
-### How to request a file from a conversation? 
+### Wie fordere ich eine Datei aus einer Konversation an? 
 
 <figure>
   <img src="{{config.site_url}}live-agent/images/LA-request-file.png" width="100%" alt="Live Agent request file" />
-  <figcaption>Request File Upload Button</figcaption>
+  <figcaption>Schaltfläche "Datei-Upload anfordern"</figcaption>
 </figure>
 
-Head over to [Conversations Workflow](../live-agent/conversation/conversation-workflow.md) for more information.
+Gehen Sie zu [Conversations-Workflow](.. /live-agent/conversation/conversation-workflow.md) für weitere Informationen.
 
-### How to add Agents to an Inbox?
-Only users with `Administrator` roles can perform this action. 
+### Wie füge ich Agenten zu einem Posteingang hinzu?
+Nur Benutzer mit der Rolle "Administrator" können diese Aktion ausführen. 
 
-To add an Agent to an Inbox, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Agenten zu einem Posteingang hinzuzufügen:
 
-1. In the left-side menu, navigate to **Settings**, then select **Inboxes**.
-2. Locate the Inbox that you want to edit and click the **Settings** icon.
-3. On the **Collaborators** tab, select the Agent name from the **Agents** list.
-4. Apply changes by clicking **Update**.
-Head over to [Inboxes](settings/inboxes.md#inbox-collaborators) for more information.
+1. Navigieren Sie im Menü auf der linken Seite zu **Einstellungen** und wählen Sie dann **Posteingänge** aus.
+2. Suchen Sie den Posteingang, den Sie bearbeiten möchten, und klicken Sie auf das Symbol **Einstellungen**.
+3. Wählen Sie auf der Registerkarte **Mitarbeiter** den Agentennamen aus der Liste **Agenten** aus.
+4. Übernehmen Sie die Änderungen, indem Sie auf **Aktualisieren** klicken.
+Weitere Informationen finden Sie unter [Posteingänge](settings/inboxes.md#inbox-collaborators).
 
-### How to create a team and add members to it?
-Navigate to **Settings > Teams** and click on the **Create new team** button. In the second step, add the desired Agents. The added Agents can be updated later.
+### Wie erstelle ich ein Team und füge Mitglieder hinzu?
+Navigieren Sie zu **Einstellungen > Teams** und klicken Sie auf die Schaltfläche **Neues Team erstellen**. Fügen Sie im zweiten Schritt die gewünschten Agenten hinzu. Die hinzugefügten Agenten können später aktualisiert werden.
 
-Head over to [Teams](settings/teams.md) for more information.
+Weitere Informationen finden Sie unter [Teams](settings/teams.md).
 
-### How to get the user access token (API Key)?
-The user access token is displayed at the bottom of the [Profile Settings](../live-agent/profile-settings.md).
+### Wie bekomme ich das Benutzerzugriffstoken (API-Schlüssel)?
+Das Benutzerzugriffstoken wird am unteren Rand der [Profileinstellungen](.. /live-agent/profile-settings.md).
 
-### How to view the account ID and the inbox ID? 
-This information can be obtained from the Live Agent URL. 
+### Wie kann ich die Konto-ID und die Posteingangs-ID anzeigen? 
+Diese Informationen können über die Live Agent-URL abgerufen werden. 
 
-A quick way is to select an Inbox on the dashboard screen. The URL will look like: ``https://<live-agent-domain>/app/accounts/1/inbox/4``.
+Eine schnelle Möglichkeit besteht darin, einen Posteingang auf dem Dashboard-Bildschirm auszuwählen. Die URL sieht folgendermaßen aus: ''https:/// <live-agent-domain>app/accounts/1/inbox/4''.
 
-The URL follows the pattern `accounts/{Account ID}/inbox/{Inbox ID}`, where the account ID is `1` and inbox ID is `4`.
+Die URL folgt dem Muster "accounts/{Account ID}/inbox/{Inbox ID}", wobei die Konto-ID "1" und die Posteingangs-ID "4" lautet.
 
-### Can a TTL be set for attachments contained in messages?
-Yes, a TTL for attachments contained in messages per account can be defined under the [Account Settings](settings/account-settings.md#attachment-ttl).
+### Kann eine TTL für Anhänge in Nachrichten festgelegt werden?
+Ja, eine TTL für Anhänge, die in Nachrichten pro Konto enthalten sind, kann unter [Kontoeinstellungen](settings/account-settings.md#attachment-ttl) definiert werden.
 
-### Is antivirus file upload scanning enabled for App and Trial environments?
-The antivirus file upload scanning needs to be configured at the infrastructure level, and it is not enabled for the Trial and App instances at the moment.
-Head over to [File Upload Antivirus Scan Helm Values](../live-agent/installation/helm-values/helm-values.md#file-upload-antivirus-scan) for learning how to configure it.
+### Ist das Hochladen von Antivirendateien für App- und Testumgebungen aktiviert?
+Das Hochladen von Antivirendateien muss auf Infrastrukturebene konfiguriert werden und ist derzeit nicht für die Test- und App-Instanzen aktiviert.
+Gehen Sie zu [Antivirus-Scan-Helm-Werte für Datei-Uploads](.. /live-agent/installation/helm-values/helm-values.md#file-upload-antivirus-scan), um zu lernen, wie man es konfiguriert.
 
-### How to navigate to Cognigy.AI from Live Agent?
-Under the profile menu, there is a link called Cognigy.AI that heads over to the Cognigy.AI. If it is not present, head over to [URLs Helm values](../live-agent/installation/helm-values/helm-values.md#urls) for configuring it.
+### Wie navigiere ich von Live Agent zu Cognigy.AI?
+Unter dem Profilmenü befindet sich ein Link namens Cognigy.AI, der zum Cognigy.AI führt. Wenn es nicht vorhanden ist, gehen Sie zu [URLs Helm values](.. /live-agent/installation/helm-values/helm-values.md#urls) für die Konfiguration.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-link-cognigi.ai-platform.png" width="100%" alt="Link to Cognigy.AI" />
-  <figcaption>Link to Cognigy.AI</figcaption>
+  <figcaption>Link zu Cognigy.AI</figcaption>
 </figure>
 
-### Get a Google Maps API key
-To see a location sent from WhatsApp with Google Maps, you need to get a [Google Maps API key](https://developers.google.com/maps/documentation/javascript/get-api-key). Head over to the [App](../live-agent/installation/helm-values/helm-values.md#app) to configure it.
+### Abrufen eines Google Maps API-Schlüssels
+Um einen von WhatsApp gesendeten Standort mit Google Maps zu sehen, benötigen Sie einen [Google Maps API-Schlüssel](https://developers.google.com/maps/documentation/javascript/get-api-key). Gehen Sie zur [App](.. /live-agent/installation/helm-values/helm-values.md#app), um es zu konfigurieren.
 
+## Live-Agent-OData-Dienst
 
-## Live Agent OData service
+### Warum gibt der OData-Dienst nicht alle Informationen aus der Datenbank zurück?
+Der OData-Dienst gibt Daten zurück, die zu Ihrem Konto gehören.
 
-### Why is the OData service not returning all the information from the database?
-The OData service returns data belonging to your account.
+Gehen Sie zu [OData-Endpunkt](.. /live-agent/tools/odata-endpoint.md) für weitere Informationen.
 
-Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
+### Warum löst der OData-Endpunkt bei der Abfrage einen nicht autorisierten Fehler aus?
+Wenn ein nicht autorisierter Fehler auftritt, stellen Sie sicher, dass das API-Zugriffstoken zu einem Benutzer mit der Rolle "Administrator" für das Konto gehört, das in der Abfrage verwendet wird.
+### Wie kann ich alle Inhalte aus einer bestimmten Sammlung abrufen?
 
-### Why is the OData endpoint throwing an unauthorized error while querying?
-If you encounter an unauthorized error, ensure that the API access token belongs to a user with the `Administrator` role for the account being used in the query.
-### How to retrieve all content from a particular collection?
+Sie können alle Inhalte aus einer bestimmten Sammlung abrufen, z. B. Unterhaltung, Nachricht.
 
+Die folgende Filterabfrage kann durchgeführt werden:
 
-You can retrieve all content from a particular collection, for example, Conversation, Message.
+Beispiel: 'http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00''.
 
-The following filtering query can be performed:
+Es werden alle Felder für das Konversationsmodell zurückgegeben, die vor dem 23.11.2126 erstellt wurden. 
 
-For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$filter=created_at le '2126-11-23T00:00:00'`.
+Gehen Sie zu [OData-Endpunkt](.. /live-agent/tools/odata-endpoint.md) für weitere Informationen.
 
-It will return all the fields for the Conversation model created before 23/11/2126. 
+### Wie filtere ich OData mit bestimmten Feldern?
 
-Head over to [OData Endpoint](../live-agent/tools/odata-endpoint.md) for more information.
+Um OData-Ergebnisse nach bestimmten Feldern zu filtern, können Sie die Abfrageparameter "$select" und "$filter" verwenden. 
 
-### How to filter OData with specific fields?
+Beispiel: 'http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'.
 
-To filter OData results by specific fields, you can use the `$select` and `$filter` query parameters. 
+In diesem Beispiel ruft die Anforderung die Felder "id" und "account_id" aus dem Konversationsmodell ab, gefiltert nach dem Feld "created_at", das kleiner oder gleich "2026-11-23T00:00:00" ist.
 
-For example, `http://{{host}}:{{port}}/v1.0/odata/Conversation?$select=id,account_id&$filter=created_at le '2026-11-23T00:00:00'`.
-
-In this example, the request is retrieving the `id` and `account_id` fields from the Conversation model, filtered by the `created_at` field being less than or equal to `2026-11-23T00:00:00`.
-
-For more detailed information, refer to the [OData Endpoint](../live-agent/tools/odata-endpoint.md) article.
+Ausführlichere Informationen finden Sie unter [OData-Endpunkt](.. /live-agent/tools/odata-endpoint.md) Artikel.</live-agent-domain>

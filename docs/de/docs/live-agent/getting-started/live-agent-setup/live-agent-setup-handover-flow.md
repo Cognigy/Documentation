@@ -1,69 +1,69 @@
 ---
-title: "Flow Setup" 
-slug: "live-agent-setup-handover-flow" 
-hidden: false 
+title: "Flow-Setup" 
+Slug: "Live-Agent-Setup-Handover-Flow" 
+ausgeblendet: false 
 ---
 
-# Set up a Cognigy.AI Flow for Handover
+# Richten Sie einen Cognigy.AI Flow für die Übergabe ein
 
-Once you've set up your Endpoint for handover to a Live Agent, the next step is configuring your Flow for this purpose within Cognigy.AI.
+Sobald Sie Ihren Endpunkt für die Übergabe an einen Live-Agenten eingerichtet haben, besteht der nächste Schritt darin, Ihren Flow innerhalb Cognigy.AI für diesen Zweck zu konfigurieren.
 
-## Set up a Flow for Handover
+## Einrichten eines Flows für die Übergabe
 
-Once you have [Set up your Endpoint for Handover to Live Agent](live-agent-setup-handover-endpoint.md), you can set up your [Flow](../../../ai/resources/build/flows.md) for handover to Live Agent.
+Sobald Sie [Richten Sie Ihren Endpunkt für die Übergabe an den Live-Agenten ein](live-agent-setup-handover-endpoint.md) haben, können Sie Ihren [Flow](.. /.. /.. /ai/resources/build/flows.md) für die Übergabe an Live Agent.
 
-To create a Live Agent Flow, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Live Agent Flow zu erstellen:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
-3. Click **+ New Flow**.
-4. Specify a unique name and provide a relevant description. For example, `Customer Support Flow`.
-5. Click **Create**.
-6. In the Flow editor, add a Say Node.
-7. Open the Node editor by clicking the Say Node.
-8. In the **Text** field, enter the following text: `Hi, let's hand you over to the humans`.
-9. Click **Save Node**.
-10. Below the Say Node, add a Handover to Agent Node.
-11. Open the Node editor by clicking the Handover to Agent Node.
-12. In the **Handover Accepted Message** field, enter the following text: `Performing the Handover...`
-13. In the **Live Agent Settings** section, fill in the following fields:
-    - **Live Agent Inbox Id** — enter the Inbox ID that you obtained in the [previous step](live-agent-setup-handover-endpoint.md#account-id-and-api-key-in-live-agent).
-    - **Skills** — enter a list of skills that should be used to filter the available agents. For example, `technical support, billing`.
-    - **Languages** — enter a list of languages that should be used to filter the available agents. For example, `english, spanish`.
-    - **Priority** — select a priority for the conversation from the list. For example, `Urgent`.
-14. Click **Save Node**.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie im Menü auf der linken Seite der Cognigy.AI auf **Build > Flows**.
+3. Klicken Sie auf **+ Neuer Flow**.
+4. Geben Sie einen eindeutigen Namen an und geben Sie eine relevante Beschreibung an. Beispiel: "Customer Support Flow".
+5. Klicken Sie auf **Erstellen**.
+6. Fügen Sie im Flow-Editor einen Say-Knoten hinzu.
+7. Öffnen Sie den Node-Editor, indem Sie auf den Say-Knoten klicken.
+8. Geben Sie im Feld **Text** den folgenden Text ein: "Hallo, wir übergeben Sie an die Menschen".
+9. Klicken Sie auf **Knoten speichern**.
+10. Fügen Sie unterhalb des Knotens "Sagen" einen Knoten "Übergabe an Agent" hinzu.
+11. Öffnen Sie den Node-Editor, indem Sie auf den Knoten Übergabe an Agent klicken.
+12. Geben Sie im Feld **Übergabe akzeptiert** den folgenden Text ein: 'Übergabe wird durchgeführt...'
+13. Füllen Sie im Abschnitt **Live Agent-Einstellungen** die folgenden Felder aus:
+    - **Posteingangs-ID des Live-Agenten** – Geben Sie die Posteingangs-ID ein, die Sie im [vorherigen Schritt] erhalten haben (live-agent-setup-handover-endpoint.md#account-id-and-api-key-in-live-agent).
+    - **Skills** — Geben Sie eine Liste von Skills ein, die zum Filtern der verfügbaren Agenten verwendet werden sollen. Zum Beispiel "technischer Support, Abrechnung".
+    - **Sprachen** — Geben Sie eine Liste der Sprachen ein, die zum Filtern der verfügbaren Agenten verwendet werden sollen. Zum Beispiel 'Englisch, Spanisch'.
+    - **Priorität** — Wählen Sie eine Priorität für die Konversation aus der Liste aus. Beispiel: "Dringend".
+14. Klicken Sie auf **Knoten speichern**.
 
-## Test your Connection
+## Testen Sie Ihre Verbindung
 
-1. Go to the Endpoint that you created.
-2. Click **Open Demo Webchat**.
-3. Start the conversation by typing `Hi` and clicking the **Send** button.
+1. Wechseln Sie zu dem Endpunkt, den Sie erstellt haben.
+2. Klicken Sie auf **Demo-Webchat öffnen**.
+3. Beginnen Sie die Unterhaltung, indem Sie "Hallo" eingeben und auf die Schaltfläche "Senden" klicken.
 
     <figure>
         <img src="{{config.site_url}}live-agent/images/LA-webchat-hi.png" width="100%" alt="Webchat Screen">
-        <figcaption>Webchat Screen</figcaption>
+        <figcaption>Webchat-Bildschirm</figcaption>
     </figure>
 
-4. In the upper-right corner, click **User Menu > Live Agent**.
-5. In the left-side menu of the Live Agent interface, select **Conversations**.
-   On the **All** tab, the conversation that you started should appear in the conversation list.
-6. Open the conversation.
-7. In the **Reply** section, send a message to the user as a human agent.
+4. Klicken Sie in der oberen rechten Ecke auf **Benutzermenü > Live Agent**.
+5. Wählen Sie im Menü auf der linken Seite der Live Agent-Benutzeroberfläche **Konversationen** aus.
+   Auf der Registerkarte **Alle** sollte die Unterhaltung, die Sie begonnen haben, in der Unterhaltungsliste angezeigt werden.
+6. Öffnen Sie die Unterhaltung.
+7. Senden Sie im Abschnitt **Antworten** eine Nachricht als menschlicher Agent an den Benutzer.
 
     <figure>
        <img src="{{config.site_url}}live-agent/images/LA-conversation-example.png" width="100%" alt="Live Agent Conversation">
-       <figcaption>Live Agent Conversation</figcaption>
+       <figcaption>Live-Agenten-Konversation</figcaption>
     </figure>
 
-8. This message should also appear in the Cognigy.AI Webchat window.
+8. Diese Nachricht sollte auch im Cognigy.AI Webchat-Fenster angezeigt werden.
 
     <figure>
         <img class="image-center" src="{{config.site_url}}live-agent/images/LA-webchat.png" width="100%" alt="Cognigy.AI Webchat">
         <figcaption>Cognigy.AI Webchat</figcaption>
     </figure>
 
-You have successfully completed your first conversation in Live Agent.
+Sie haben Ihre erste Konversation in Live Agent erfolgreich abgeschlossen.
 
-## What's Next?
+## Wie geht es weiter?
 
-Next, you can [add more users](live-agent-setup-agents.md) with `Agent` and `Administrator` roles, and assign them to Inboxes in Live Agent:
+Als Nächstes können Sie [weitere Benutzer hinzufügen](live-agent-setup-agents.md) mit den Rollen "Agent" und "Administrator" und sie den Posteingängen in Live Agent zuweisen:

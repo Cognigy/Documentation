@@ -1,76 +1,73 @@
 ---
- title: "xApp: Init Session" 
+ title: "xApp: Init-Sitzung" 
  slug: "Init-xApp-Session" 
- hidden: false 
+ ausgeblendet: false 
 ---
 
-# xApp: Init Session
+# xApp: Init-Sitzung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../release-notes/4.51.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.50-blue.svg)] (.. /.. /.. /release-notes/4.51.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/init-xApp-session.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten initialisiert eine neue xApp-Sitzung. 
 
-This Node initializes a new xApp session. 
+Nach der Ausführung dieses Nodes kann auf zwei verschiedene Arten auf die xApp zugegriffen werden:
 
-After the execution of this Node, the xApp can be accessed in two different ways:
+- [Ohne Eingabe eines PIN-Codes](#without-Eingabe-eines-PIN-Codes)
+- [Durch Eingabe eines PIN-Codes](#by-Eingabe-eines-PIN-Codes)
 
-- [Without entering a PIN Code](#without-entering-a-pin-code)
-- [By entering a PIN Code](#by-entering-a-pin-code)
+### Ohne Eingabe eines PIN-Codes 
 
-### Without entering a PIN Code 
+Wenn für den Zugriff auf eine xApp-Sitzung nur eine URL erforderlich ist, kann eine Sitzungs-URL freigegeben werden. Diese URL ist über die [xApp-Sitzungs-URL](.. /.. /xApp/tokens.md#xapp-session-url) token.
 
-To require only a URL to access an xApp session, a Session URL can be shared. This URL is available via the [xApp Session URL](../../xApp/tokens.md#xapp-session-url) token.
+Das Token **xApp-Sitzungs-URL** stellt eine URL bereit, auf die auch über "input.apps.url" im Eingabeobjekt zugegriffen werden kann.
 
-The **xApp Session URL** token provides a URL, which is also accessible via `input.apps.url` in the input object.
+Mit dem bereitgestellten Link kann ein Benutzer auf die xApp-Seite zugreifen, ohne eine PIN zu benötigen.
 
-With the provided link, a user can access the xApp page without requiring a PIN.
+### Durch Eingabe eines PIN-Codes 
 
-### By entering a PIN Code 
+Um Benutzern den Zugriff auf die xApp-Sitzung über eine PIN zu ermöglichen, geben Sie sowohl eine PIN als auch eine PIN-Seiten-URL für die Benutzer frei. 
 
-To allow users to access the xApp session via a PIN, share both a PIN and a PIN Page URL with the users. 
+Diese Funktion ist über die [xApp-PIN-Seiten-URL](.. /.. /xApp/tokens.md#xapp-pin-page-url) und dem Knoten [xApp: Sitzungs-PIN abrufen](get-xApp-session-PIN.md).
 
-This functionality is available via the [xApp PIN Page URL](../../xApp/tokens.md#xapp-pin-page-url) token and the [xApp: Get Session PIN](get-xApp-session-PIN.md) Node.
+Der Knoten **Sitzungs-PIN abrufen** generiert eine PIN, auf die über das [xApp-Sitzungs-PIN-Token](.. /.. /xApp/tokens.md#xapp-session-pin) oder 'input.apps.session.pin' im Eingabeobjekt.
 
-The **Get Session PIN** Node generates a PIN, which is accessible via the [xApp Session PIN token](../../xApp/tokens.md#xapp-session-pin) or `input.apps.session.pin` in the input object.
+Das Token **xApp-PIN-Seiten-URL** stellt eine URL bereit, auf die auch über "input.apps.baseUrl" im Eingabeobjekt zugegriffen werden kann.
 
-The **xApp PIN Page URL** token provides a URL, which is also accessible via `input.apps.baseUrl` in the input object.
+Mit dem bereitgestellten Link kann ein Benutzer auf die PIN-Seite zugreifen und seine angegebene PIN eingeben, um Zugriff auf die xApp zu erhalten.
 
-With the provided link, a user can access the PIN page and enter their provided PIN to gain access to the xApp.
+## Einstellungen
 
-## Settings
+### Anpassung des Stils
 
-### Style Customization
+Passen Sie die folgenden Parameter für den Standardbildschirm an:
 
-Customize the following parameters for the default screen:
+- Hintergrundfarbe — eine Farbe, die im Hintergrund aller Shell-Seitenbildschirme angezeigt wird. Sie können CSS-Hintergrundfarbwerte wie 'hex', 'hsl+a' und 'rgb+a' verwenden.
+- Textfarbe – eine Farbe, die für Textinhalte auf allen Shell-Seitenbildschirmen verwendet wird. Sie können CSS-Farbwerte wie 'hex', 'hsl+a' und 'rgb+a' verwenden. Achten Sie darauf, dass die Textfarbe einen hohen Kontrast zur Hintergrundfarbe aufweist.
+- Logo: Sie können wählen, ob das Standardlogo, nicht irgendein Logo oder ein benutzerdefiniertes Logo angezeigt werden soll. Wenn Sie die Option "Benutzerdefiniertes Logo" auswählen, geben Sie die URL für das benutzerdefinierte Logo an.
+- Benutzerdefinierte Favicon-URL – eine Bild-URL für das benutzerdefinierte Favicon.
+- Seitentitel – ein Text, der als Registerkarten- oder Fenstertitel angezeigt wird. Der Titel wird auf allen Shell-Seitenbildschirmen angezeigt.
 
-- Background Color — a color that is displayed in the background of all Shell Page Screens. You can use CSS background-color values such as `hex`, `hsl+a`, and `rgb+a`.
-- Text Color — a color that is used for textual content on all Shell Page Screens. You can use CSS color values such as `hex`, `hsl+a`, and `rgb+a`. Make sure that the text color has high contrast with the background color.
-- Logo — you can choose to show the default logo, not any logo, or a custom logo. If you select the custom logo option, specify the Custom Logo URL.
-- Custom Favicon URL — an image URL for the custom favicon.
-- Page Title — a text shown as a tab or window title. The title is displayed on all Shell Page Screens.
+### xApp-Bildschirme
 
-### xApp Screens
+Geben Sie Meldungen an, die dem Benutzer angezeigt werden, wenn die xApp-Seite geladen wird, aus irgendeinem Grund fehlschlägt, ein Fehler auftritt oder angehalten wird.
 
-Specify messages displayed to the user when the xApp Page is loading, fails for some reason, encounters an error, or is halted.
+### Zwischenbildschirm
 
-### Intermediate Screen
+Passen Sie den Text an, der auf dem Zwischenbildschirm angezeigt wird. Alternativ können Sie den standardmäßigen Zwischenbildschirm durch eine xApp-Seite ersetzen, indem Sie die xApp-Vorlage, eine Mini-Website mit HTML/CSS/JS, und Parameter, die Sie an diese xApp-Vorlage übergeben, die xApp-Vorlagendaten, bereitstellen.
 
-Customize the text displayed on the Intermediate Screen. Alternatively, you can replace the default Intermediate Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+### Verbindungsbildschirm
 
-### Connection Screen
+Passen Sie den Text an, der auf dem Verbindungsbildschirm angezeigt wird. Alternativ können Sie den standardmäßigen Verbindungsbildschirm durch eine xApp-Seite ersetzen, indem Sie die xApp-Vorlage, eine Mini-Website mit HTML/CSS/JS, und Parameter, die Sie an diese xApp-Vorlage übergeben, die xApp-Vorlagendaten, bereitstellen.
 
-Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
+## Mehr Informationen
 
-## More Information
-
-- [xApp Tokens](../../xApp/tokens.md)
-- [xApp Nodes](overview.md)
-- [xApp: Get Session PIN](get-xApp-session-PIN.md)
-- [xApp: Show HTML](set-html-xApp-state.md)
-- [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
-- [xApps](../../xApp/overview.md)
+- [xApp-Token](.. /.. /xApp/tokens.md)
+- [xApp-Knoten](overview.md)
+- [xApp: Sitzungs-PIN abrufen](get-xApp-session-PIN.md)
+- [xApp: HTML anzeigen](set-html-xApp-state.md)
+- [xApp: Adaptive Karte anzeigen](set-AdaptiveCard-xApp-state.md)
+- [xApps](.. /.. /xApp/overview.md)

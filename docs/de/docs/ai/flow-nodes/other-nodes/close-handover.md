@@ -1,27 +1,24 @@
 ---
-title: "Close Handover"
-slug: "close-handover"
-hidden: false
+Titel: "Übergabe abschließen"
+Schnecke: "Knappe Übergabe"
+ausgeblendet: false
 ---
-# Close Handover
+# Übergabe abschließen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/close-handover.png" width="80%" />
-  <figcaption>Close Handover</figcaption>
+  <figcaption>Schließen Sie die Übergabe</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Schließt die Übergabekonversation im Übergabeanbieter, z. B. Live Agent. Wenn diese Option deaktiviert ist, wird der Benutzer nur an den virtuellen Agenten zurückgegeben.
 
-Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the virtual agent.
+Wenn der Close Handover Node nicht aktiv ist und der menschliche Agent später eine Konversation im Handover Provider auflöst, wird der Node ignoriert und löst keinen Flow aus.
 
-If the Close Handover Node is not active and the human agent resolves a conversation in the Handover Provider later, the Node will be ignored and not trigger a Flow.
+Sie können diesen Knoten nach dem Knoten [Übergabeinaktivität einstellen](set-handover-inactivity.md) verwenden.
 
-You can use this Node after the [Set Handover Inactivity](set-handover-inactivity.md) Node.
+## Mehr Informationen
 
-## More Information
-
-- [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)
-- [Set Handover Inactivity](set-handover-inactivity.md)
-- [Handover Providers](../../handover-providers/overview.md)
-- [Agent Handover](../../tools/agent-handover.md)
+- [Erkennung und Behandlung von Benutzerinaktivität](.. /.. /handover-providers/user-inactivity-detection.md)
+- [Übergabeinaktivität festlegen](set-handover-inactivity.md)
+- [Übergabe-Anbieter](.. /.. /übergabe-anbieter/übersicht.md)
+- [Agentenübergabe](.. /.. /tools/agent-handover.md)

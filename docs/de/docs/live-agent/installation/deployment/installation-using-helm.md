@@ -1,80 +1,80 @@
 ---
- title: "Installation using Helm" 
- slug: "installation-using-helm" 
- hidden: false 
+ Titel: "Installation mit Helm" 
+ Slug: "Installation-using-Helm" 
+ ausgeblendet: false 
 ---
-# Installation using Helm
+# Installation mit Helm
 
-Helm is a tool for easily deploying resources into a Kubernetes cluster. First, install it following the [official documentation](https://helm.sh/docs/intro/install/).
+Helm ist ein Tool zum einfachen Bereitstellen von Ressourcen in einem Kubernetes-Cluster. Installieren Sie es zunächst gemäß der [offiziellen Dokumentation](https://helm.sh/docs/intro/install/).
 
-For the Helm chart installation, the Helm package needs to be pulled from the Cognigy OCI registry. There are two ways of pulling the Helm Chart. First, you need to have access to the OCI registry `cognigy.azurecr.io` in both of them (Are the same credentials as for the Docker registry). Then do the following:
+Für die Installation des Helm-Diagramms muss das Helm-Paket aus der OCI-Registry von Cognigy abgerufen werden. Es gibt zwei Möglichkeiten, das Helm-Diagramm abzurufen. Zuerst müssen Sie Zugriff auf die OCI-Registry "cognigy.azurecr.io" in beiden haben (sind die gleichen Anmeldeinformationen wie für die Docker-Registry). Gehen Sie dann wie folgt vor:
 
-1. Set the following environment variable for running all the commands below:
+1. Legen Sie die folgende Umgebungsvariable für die Ausführung aller folgenden Befehle fest:
 
-   ```sh
+'''sch
    HELM_EXPERIMENTAL_OCI=1
-   ```
+   '''
 
-2. Login into the OCI prod registry with the following command:
+2. Melden Sie sich mit dem folgenden Befehl bei der OCI prod-Registry an:
 
-   ```sh
-   helm registry login cognigy.azurecr.io
-   ```
+'''sch
+   Helm Registry Login cognigy.azurecr.io
+   '''
 
-## Pulling and installing at the same time (preferred)
+## Ziehen und Montieren gleichzeitig (bevorzugt)
 
-The following command can be used to install and pull the Live Agent Helm chart at the same time:
+Der folgende Befehl kann verwendet werden, um das Live Agent Helm-Diagramm gleichzeitig zu installieren und abzurufen:
 
-```sh
+'''sch
 helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
-```
+'''
 
-Note that the `custom-values.yaml` file can contain just the values that need to be overridden, such as ingresses configurations, replicas and resources. In this way, the new release won't break the existing setup. You can refer to the documentation and see the [release notes]({{config.site_url}}live-agent/release-notes/releases/) related to Helm if it does.
+Beachten Sie, dass die Datei "custom-values.yaml" nur die Werte enthalten kann, die überschrieben werden müssen, z. B. Eingangskonfigurationen, Replikate und Ressourcen. Auf diese Weise wird die neue Version das bestehende Setup nicht beschädigen. Sie können in der Dokumentation nachschlagen und die [Versionshinweise]({{config.site_url}}live-agent/release-notes/releases/) zu Helm lesen, falls dies der Fall ist.
 
-## Pulling and modifying the `values.yaml` file
+## Ziehen und Ändern der Datei 'values.yaml'
 
-Run the following command:
+Führen Sie den folgenden Befehl aus:
 
-```sh
-helm pull oci://cognigy.azurecr.io/helm/live-agent --version X.X.X
-```
+'''sch
+Steuerzug oci://cognigy.azurecr.io/helm/live-agent --Version X.X.X
+'''
 
-This will download the Helm chart compressed.
+Dadurch wird das Helm-Diagramm komprimiert heruntergeladen.
 
-`live-agent-X.X.X.tgz`
+'live-agent-X.X.X.tgz'
 
-Now it can be uncompressed, the `values.yaml` file inside the folder needs to be modified according to your needs and then, the chart can be installed by using the following command:
+Jetzt kann es dekomprimiert werden, die Datei 'values.yaml' im Ordner muss nach Ihren Bedürfnissen geändert werden und dann kann das Diagramm mit dem folgenden Befehl installiert werden:
 
-```sh
+'''sch
 helm install cognigy-live-agent ./live-agent-X.X.X --namespace live-agent
-```
+'''
 
-## After running the `helm install` command
+## Nach dem Ausführen des Befehls 'helm install'
 
->**Note:** Our Helm chart has been tested and is compatible with API version v2. Older versions are not compatible.
+>**Hinweis:** Unser Helm-Diagramm wurde getestet und ist mit der API-Version v2 kompatibel. Ältere Versionen sind nicht kompatibel.
 
-This command will create the secrets, deploy the pods, and run a job building the tables on the Database. Also, remember that if you have a secret for pulling Docker images, it must also be applied to the namespace where Live Agent will be installed. After some time, the following message should appear.
+Mit diesem Befehl werden die Geheimnisse erstellt, die Pods bereitgestellt und ein Auftrag ausgeführt, der die Tabellen in der Datenbank erstellt. Denken Sie auch daran, dass, wenn Sie über ein Geheimnis zum Abrufen von Docker-Images verfügen, dieses auch auf den Namespace angewendet werden muss, in dem Live Agent installiert wird. Nach einiger Zeit sollte die folgende Meldung erscheinen.
 
-```
-NOTES:
-Thank you for installing live-agent.
+'''
+NOTIZEN:
+Vielen Dank, dass Sie live-agent installiert haben.
 
-Your release is named cognigy-live-agent with version .
+Ihr Release heißt cognigy-live-agent mit der Version .
 
-The following secrets have been created:
+Die folgenden Geheimnisse wurden erstellt:
 - cognigy-live-agent-postgresql
 - cognigy-live-agent-redis
 
-To learn more about the release, try:
+Um mehr über die Version zu erfahren, versuchen Sie:
 
-  $ helm status cognigy-live-agent
-  $ helm get all cognigy-live-agent
+$ helm status cognigy-live-agent
+  $ helm Holen Sie sich alle Cognigy-Live-Agent
 
-NOTE: It may take a few minutes for the LoadBalancer IP to be available.
-You can watch the status by running
+HINWEIS: Es kann einige Minuten dauern, bis die LoadBalancer-IP verfügbar ist.
+Sie können den Status überwachen, indem Sie
 'kubectl get svc -w cognigy-live-agent'
-```
+'''
 
-For learning about customizing your installation, head over to Helm Docs [Customizing the chart before installing](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing).
+Weitere Informationen zum Anpassen Ihrer Installation finden Sie in der Helm-Dokumentation [Anpassen des Diagramms vor der Installation](https://helm.sh/docs/intro/using_helm/#customizing-the-chart-before-installing).
 
-Once you have a good understanding of how customizing works, you can look at the section [Helm Values]({{config.site_url}}live-agent/installation/helm-values/helm-values/), which contains a brief explanation about each value and its purpose.
+Sobald Sie ein gutes Verständnis dafür haben, wie das Customizing funktioniert, können Sie sich den Abschnitt [Helm-Werte]({{config.site_url}}live-agent/installation/helm-values/helm-values/) ansehen, der eine kurze Erklärung zu jedem Wert und seinem Zweck enthält.

@@ -1,66 +1,54 @@
 ---
- title: "Sunshine Conversations" 
- slug: "sunshine-conversations" 
- hidden: false 
+ Titel: "Sunshine Conversations" 
+ Schnecke: "Sonnenschein-Gespräche" 
+ ausgeblendet: false 
 ---
-# Sunshine Conversations
+# Sonnenschein-Gespräche
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/2ae70b9-SunshineConversations.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Sunshine Conversations application** by using our Sunshine Conversations Endpoint.
+Innerhalb unserer **Cognigy.AI** Plattform können Sie Ihren Cognigy Agent mit Ihrer **Sunshine Conversations-Anwendung** verbinden, indem Sie unseren Sunshine Conversations-Endpunkt verwenden.
 
-!!! note "Where is the Smooch Endpoint?"
-    This Endpoint was previously known as the Smooch Endpoint. Smooch was acquired by Zendesk in 2019 and renamed to Sunshine Conversations.
+!!! Hinweis "Wo ist der Smooch-Endpunkt?"
+    Dieser Endpunkt wurde zuvor als Smooch-Endpunkt bezeichnet. Smooch wurde 2019 von Zendesk übernommen und in Sunshine Conversations umbenannt.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+# Kanalspezifische Einstellungen<div class="divider"></div>Die Werte der folgenden Felder werden für die Kommunikation mit Ihrer Sunshine Conversations-App verwendet. Alle Werte können von der Sunshine Conversations-Plattform abgerufen werden.
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+### API-Version
 
+Cognigy.AI unterstützt die APIs V1.1 und V2, die von Sunshine Conversations angeboten werden. Die Auswahl in diesem Feld muss mit der API-Version übereinstimmen, die zum Erstellen der Webhook-Integration in der Sunshine Conversations-App verwendet wurde.
 
-# Channel Specific Settings
+### Schlüssel-ID
 
-<div class="divider"></div>
+Die API-Schlüssel-ID aus Ihrer Sunshine Conversations-App. Dieser Wert hat in der Regel das Format "app_XXXXXXXXXXXXXXXXXXXXXXXX" und muss die API-Schlüssel-ID sein, die dem im folgenden Feld eingegebenen Geheimnis zugeordnet ist.
 
-The values of the following fields are used to communicate with your Sunshine Conversations app. All values can be retrieved from the Sunshine Conversations platform.
+### Geheimnis
 
-### API Version
-
-Cognigy.AI supports the V1.1 and V2 APIs offered by Sunshine Conversations. The selection in this field must match the API version used to create the webhook integration in the Sunshine conversations app.
-
-### Key ID
-
-The API Key ID from your Sunshine Conversations app. This value is typically in the format `app_XXXXXXXXXXXXXXXXXXXXXXXX` and must be the API Key ID associated with the secret entered the following field.
-
-### Secret
-
-Your Sunshine Conversations app's Key ID SECRET that is a randomly generated API key secret from Sunshine Conversations. The value of this field must be the SECRET associated with the API Key ID entered the previous field.
+Die Schlüssel-ID SECRET Ihrer Sunshine Conversations-App, bei der es sich um ein zufällig generiertes API-Schlüsselgeheimnis von Sunshine Conversations handelt. Der Wert dieses Feldes muss das SECRET sein, das mit der API-Schlüssel-ID verknüpft ist, die im vorherigen Feld eingegeben wurde.
 
 ### URI
 
-The URI where we send messages to your Sunshine Conversations app. For example, `https://app.smooch.io` (ensure the "/" is omitted from the end of the URI)
+Der URI, über den wir Nachrichten an Ihre Sunshine Conversations-App senden. Beispiel: "https://app.smooch.io" (stellen Sie sicher, dass das "/" am Ende des URI weggelassen wird)
 
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Sunshine Conversations**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016307699).
 
+## Mehr Informationen
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Sunshine Conversations** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
-
-
-## More Information
-
-- [HelpCenter: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
-- [HelpCenter: Sunshine Conversations Zendesk Handovers](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)
+- [HelpCenter: Bereitstellung von Sunshine Conversations](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
+- [HelpCenter: Sunshine Conversations Zendesk-Übergaben](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)

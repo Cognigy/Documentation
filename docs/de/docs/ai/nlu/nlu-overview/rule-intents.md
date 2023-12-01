@@ -1,113 +1,103 @@
 ---
  title: "Rule Intents" 
- slug: "rule-intents" 
- hidden: false 
+ Slug: "Regel-Absichten" 
+ ausgeblendet: false 
 ---
-# Rule Intents
+# Regel-Absichten
 
-Rule intents gives you the capability to use advanced rules to understand what a user wants. You can often get by with only using our [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) that use various Machine Learning techniques to understand what your users are saying, but sometimes you need more power than this. 
+Regelabsichten bieten Ihnen die Möglichkeit, erweiterte Regeln zu verwenden, um zu verstehen, was ein Benutzer möchte. Sie können oft damit auskommen, nur unsere [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) zu verwenden, die verschiedene Machine Learning-Techniken verwenden, um zu verstehen, was Ihre Benutzer sagen, aber manchmal benötigen Sie mehr Leistung als das. 
 
-For example, if you use the Universal Language and want to match an intent on a specific data input or if you want to make sure that you have a specific entry in the context before triggering the intent.
+Dies ist beispielsweise der Fall, wenn Sie die universelle Sprache verwenden und eine Absicht für eine bestimmte Dateneingabe abgleichen möchten oder wenn Sie sicherstellen möchten, dass Sie einen bestimmten Eintrag im Kontext haben, bevor Sie die Absicht auslösen.
 
-## Concept
-<div class="divider"></div>
-Rule intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. After you have created an intent, you can specify rules for this intent in the **Rules** section right below the section for **Example Sentences**.  When using rules in an intent, example sentences are not required and can be omitted. However, you can also use example sentences in combination with rules, but more on that later.
+## Konzept<div class="divider"></div>Regelabsichten werden auf die gleiche Weise wie [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) über die Registerkarte **NLU** im Flow-Editor erstellt. Nachdem Sie eine Absicht erstellt haben, können Sie im Abschnitt **Regeln** direkt unter dem Abschnitt für **Beispielsätze** Regeln für diese Absicht angeben.  Bei der Verwendung von Regeln in einem Intent sind Beispielsätze nicht erforderlich und können weggelassen werden. Sie können Beispielsätze aber auch in Kombination mit Regeln verwenden, aber dazu später mehr.
 
-Rule Intents require the following:
+Für Rule Intents ist Folgendes erforderlich:
 
-| Item        | Description                                          |
+| Artikel | Beschreibung |
 |-------------|------------------------------------------------------|
-| Intent Name | Unique name of the Intent                            |
-| Rule(s)     | A set of rules for this Intent (Minimum of one rule) |
+| Name der Absicht | Eindeutiger Name der Absicht |
+| Regel(n) | Eine Reihe von Regeln für diese Absicht (mindestens eine Regel) |
 
-## Writing Rules
-<div class="divider"></div>
-Each Intent can have any number of rules attached to it. The rules are written as Direct CognigyScript, meaning that you don't need the CognigyScript tags. You can therefore write your rules using the [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) or [Context Object]({{config.site_url}}ai/tools/interaction-panel/context/) (for example, input.text === "restart") and use free form JavaScript. You can create as many rules as you want, and if any one of them is matched, the intent will be returned with a score of 1.
+## Regeln schreiben<div class="divider"></div>Jedem Intent kann eine beliebige Anzahl von Regeln zugeordnet werden. Die Regeln sind als Direct CognigyScript geschrieben, was bedeutet, dass Sie die CognigyScript-Tags nicht benötigen. Sie können Ihre Regeln daher mit [Input Object]({{config.site_url}}ai/tools/interaction-panel/input/) oder [Context Object]({{config.site_url}}ai/tools/interaction-panel/context/) schreiben (z. B. input.text === "restart") und Freiform-JavaScript verwenden. Sie können so viele Regeln erstellen, wie Sie möchten, und wenn eine von ihnen übereinstimmt, wird die Absicht mit einer Punktzahl von 1 zurückgegeben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/b23c4c5-rules.PNG" width="100%" />
 </figure>
 
-!!! note "Rule Intent Example"
-    The intent is `orderFood`. Rules could include.
+!!! Hinweis "Beispiel für eine Regelabsicht"
+    Die Absicht ist "orderFood". Zu den Regeln könnten gehören.
 
-    * input.text === "I want to order pizza"
-    * input.slots.food[0].keyphrase === "pizza" && inut.slots.food.length === 1
-    * input.text === \`${input.slots.male_firstname[0].keyphrase} wants cake\`
-    * input.text.split(" ")[0] === "Add" && input.text.match("to favorites")
+* input.text === "Ich möchte Pizza bestellen"
+    * input.slots.food[0].keyphrase === "Pizza" && inut.slots.food.length === 1
+    * input.text === \'${input.slots.male_firstname[0].keyphrase} will Kuchen\'
+    * input.text.split(" ")[0] === "Hinzufügen" && input.text.match("zu den Favoriten")
 
-## Which rules take priority
+## Welche Regeln haben Vorrang?
 
-Rule Intents take precedence over ML Intents. That means if the user said a sentence that would trigger both a Rule Intent **and** an ML Intent, then the Rule Intent wins.
+Regelabsichten haben Vorrang vor ML-Absichten. Das heißt, wenn der Benutzer einen Satz gesagt hat, der sowohl eine Regelabsicht **und** eine ML-Absicht auslösen würde, dann gewinnt die Regelabsicht.
 
-In case rules of multiple intents simultaneously apply, the order of Rule Intents within the flow and its attached flows plays a role in which intent is triggered with priority. There are three principles to remember when working with rules:
+Für den Fall, dass Regeln mit mehreren Absichten gleichzeitig gelten, spielt die Reihenfolge der Regelabsichten innerhalb des Ablaufs und der angehängten Abläufe eine Rolle, bei der die Absicht mit Priorität ausgelöst wird. Es gibt drei Prinzipien, die Sie bei der Arbeit mit Regeln beachten sollten:
 
-1. Rule Intents lower in the list come first
-2. Children come second
-3. Attached flows come third, in the order they were created or arranged
+1. Regelabsichten weiter unten in der Liste stehen an erster Stelle
+2. Kinder kommen an zweiter Stelle
+3. Angehängte Flows kommen an dritter Stelle, in der Reihenfolge, in der sie erstellt oder angeordnet wurden
 
-To have an example, consider an agent with a flow having multiple intents on different hierarchy levels. The flow also has two flows attached to it, each having its own intents:
+Stellen Sie sich als Beispiel einen Agenten mit einem Flow vor, der mehrere Absichten auf verschiedenen Hierarchieebenen hat. Dem Flow sind außerdem zwei Flows zugeordnet, die jeweils ihre eigenen Absichten haben:
 
-```
-Main Flow
-├── Intent A
-│   └── Intent A.1
-│       └── Intent A.2
-└── Intent B
+'''
+Hauptstrom
+├── Absicht A
+│ └── Absicht A.1
+│ └── Absicht A.2
+└── Absicht B
 
-Attached Flow 1
-└── Intent C
-    └── Intent C.1
-        └── Intent C.2
+Angehängter Flow 1
+└── Absicht C
+    └── Absicht C.1
+        └── Absicht C.2
 
-Attached Flow 2
-└── Intent D
-```
+Angehängter Durchfluss 2
+└── Absicht D
+'''
 
-### 1. Rule Intents lower in the list come first
+### 1. Regelabsichten weiter unten in der Liste stehen an erster Stelle
 
-Imagine that both `Intent A.2` and `Intent B` have a rule `input.text.includes("foo bar")`. If we send the message *This text includes foo bar* to the agent, then the intent last in the list of intents will take precedence and be triggered, which is `Intent B`.
-### 2. Children come second
+Stellen Sie sich vor, dass sowohl "Absicht A.2" als auch "Absicht B" eine Regel "input.text.includes("foo bar")" haben. Wenn wir die Nachricht *Dieser Text enthält foo bar* an den Agenten senden, dann hat die letzte Absicht in der Liste der Absichten Vorrang und wird ausgelöst, nämlich "Absicht B".
+### 2. Kinder kommen an zweiter Stelle
 
-Imagine that both `Intent A.1` and `Intent A.2` have a rule `input.text.includes("foo bar")`. If we send the message *This text includes foo bar* to the agent, then the child deepest in the hierarchy will take precedence and be triggered, which is `Intent A.2`.
-### 3. Attached flows come third
+Stellen Sie sich vor, dass sowohl "Absicht A.1" als auch "Absicht A.2" eine Regel "input.text.includes("foo bar")" haben. Wenn wir die Nachricht *This text includes foo bar* an den Agenten senden, dann hat das untergeordnete Element, das am tiefsten in der Hierarchie steht, Vorrang und wird ausgelöst, nämlich "Intent A.2".
+### 3. Angehängte Flows kommen an dritter Stelle
 
-Imagine that `Intent A`, `Intent B`, `Intent C`, and `Intent D` each have a rule `input.text.includes("foo bar")`. Remember the second principle. If we send the message *This text includes foo bar* to the agent, then the child last in the list will take precedence and be triggered, which is `Intent B` in this case.
+Stellen Sie sich vor, dass 'Intent A', 'Intent B', 'Intent C' und 'Intent D' jeweils eine Regel 'input.text.includes("foo bar")" haben. Denken Sie an das zweite Prinzip. Wenn wir die Nachricht *This text includes foo bar* an den Agenten senden, dann hat das letzte Kind in der Liste Vorrang und wird ausgelöst, was in diesem Fall 'Intent B' ist.
 
-Now imagine that we delete the rules in `Intent A` and `Intent B`. If we now send the above message to the agent, then `Intent C` will be triggered. This is because we consider intents of attached flows last, but in their corresponding order. If we switched the places of `Intent C` and `Intent D` in the user interface, such that `Intent D` comes before `Intent C`, then `Intent D` would be triggered.
+Stellen Sie sich nun vor, dass wir die Regeln in "Absicht A" und "Absicht B" löschen. Wenn wir nun die obige Nachricht an den Agenten senden, dann wird 'Intent C' ausgelöst. Dies liegt daran, dass wir die Absichten der angefügten Flows zuletzt betrachten, jedoch in der entsprechenden Reihenfolge. Wenn wir die Stellen von "Absicht C" und "Absicht D" in der Benutzeroberfläche vertauschen würden, so dass "Absicht D" vor "Absicht C" steht, dann würde "Absicht D" ausgelöst werden.
 
-As a last example, imagine that both `Intent C.2` and `Intent D` have a rule `input.text.includes("foo bar")`. If we send the message *This text includes foo bar* to the agent, then `Intent C.2` will be triggered, because the entire `Attached Flow 1` takes precedence over any intent in `Attached Flow 2`.
+Stellen Sie sich als letztes Beispiel vor, dass sowohl "Intent C.2" als auch "Intent D" eine Regel "input.text.includes("foo bar")" haben. Wenn wir die Nachricht *This text includes foo bar* an den Agenten senden, wird 'Intent C.2' ausgelöst, da der gesamte 'Attached Flow 1' Vorrang vor allen Intent in 'Attached Flow 2' hat.
 
-## Thresholds
-<div class="divider"></div>
-Rule intents will always have a score of 1 if they match. Therefore, thresholds do not apply.
+## Schwellenwerte<div class="divider"></div>Regelabsichten haben immer eine Punktzahl von 1, wenn sie übereinstimmen. Daher gelten keine Schwellenwerte.
 
-## What is a good use case for Rule Intents?
-<div class="divider"></div>
-Let's say we want to inform the user on a general level about a very specific topic. A good example would be information about a certain disease, for example,example, "diabetes". The disease name is very unlikely to show up in example sentences for other intents and should show up in the vast majority of user input for that intent. 
+## Was ist ein guter Anwendungsfall für Rule Intents?<div class="divider"></div>Nehmen wir an, wir möchten den Nutzer auf einer allgemeinen Ebene über ein ganz bestimmtes Thema informieren. Ein gutes Beispiel wären Informationen über eine bestimmte Krankheit, zum Beispiel "Diabetes". Es ist sehr unwahrscheinlich, dass der Name der Krankheit in Beispielsätzen für andere Absichten auftaucht, und sollte in der überwiegenden Mehrheit der Benutzereingaben für diese Absicht angezeigt werden. 
 
-Additionally, it is very unlikely that "diabetes" will be mentioned when the user wants information about other diseases.
+Darüber hinaus ist es sehr unwahrscheinlich, dass "Diabetes" erwähnt wird, wenn der Benutzer Informationen über andere Krankheiten wünscht.
 
-!!! note "Good Rule Example"
-    For this use case the following rule should sufficiently cover a great variety of user input.
+!!! Hinweis "Beispiel für eine gute Regel"
+    Für diesen Anwendungsfall sollte die folgende Regel eine Vielzahl von Benutzereingaben ausreichend abdecken.
 
-```js
-ci.text.includes("diabetes")
-```
+'''js
+ci.text.includes("Diabetes")
+'''
 
-With this rule, any user input that includes the character sequence "diabetes" will trigger the intent - even within word combinations that are not separated by " " !
+Mit dieser Regel löst jede Benutzereingabe, die die Zeichenfolge "diabetes" enthält, den Intent aus - auch innerhalb von Wortkombinationen, die nicht durch " " getrennt sind!
 
-!!! danger "Bad Rule Example"
-    The following rule will be worse than an ML intent with only one example sentence!
+!!! danger "Beispiel für eine schlechte Regel"
+    Die folgende Regel ist schlimmer als ein ML-Intent mit nur einem Beispielsatz!
 
-```js
-ci.text === "I want information about diabetes"
-```
+'''js
+ci.text === "Ich möchte Informationen über Diabetes"
+'''
 
-This will only work for this exact sentence, even a "  " (double space) instead of a " " (single space) or an exclamation mark at the end will prevent the intent from being triggered.
+Dies funktioniert nur für genau diesen Satz, selbst ein " " (doppeltes Leerzeichen) anstelle eines " " (einfaches Leerzeichen) oder ein Ausrufezeichen am Ende verhindert, dass der Intent ausgelöst wird.
 
-## What is a bad use case for Rule Intents?
-<div class="divider"></div>
-Let's say we have multiple intents that are closely related and can be uttered with a wide variety of vocabulary. A fitting example would be reporting symptoms to a medical chatbot. 
-It makes a huge difference whether you say "my chest hurts" or "it hurts when I am breathing" or "I have difficulties breathing". 
-In this case using ML intents is superior to trying to create a fitting rule intent.
+## Was ist ein schlechter Anwendungsfall für Rule Intents?<div class="divider"></div>Nehmen wir an, wir haben mehrere Absichten, die eng miteinander verwandt sind und mit einer Vielzahl von Vokabeln ausgedrückt werden können. Ein passendes Beispiel wäre die Meldung von Symptomen an einen medizinischen Chatbot. 
+Es macht einen großen Unterschied, ob du sagst "meine Brust tut weh" oder "es tut weh, wenn ich atme" oder "Ich habe Schwierigkeiten beim Atmen". 
+In diesem Fall ist die Verwendung von ML-Absichten dem Versuch überlegen, eine passende Regelabsicht zu erstellen.

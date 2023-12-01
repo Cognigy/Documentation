@@ -1,105 +1,105 @@
 ---
- title: "Intent Mapping Priority" 
- slug: "Intent Mapping Priority" 
- hidden: false 
+ Titel: "Intent-Mapping-Priorität" 
+ slug: "Intent-Mapping-Priorität" 
+ ausgeblendet: false 
 ---
 
-# Intent Mapping Priority
+# Intent-Mapping-Priorität
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.43-blue.svg)](../../../release-notes/4.43.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.43-blue.svg)] (.. /.. /.. /release-notes/4.43.md)
 
-This feature helps avoid ambiguity between parent and child Intents. The ambiguity can happen when the user input contains a combination of parent and child Intent sentences.
+Diese Funktion hilft, Mehrdeutigkeiten zwischen übergeordneten und untergeordneten Absichten zu vermeiden. Die Mehrdeutigkeit kann auftreten, wenn die Benutzereingabe eine Kombination aus übergeordneten und untergeordneten Intent-Sätzen enthält.
 
-With **Intent Mapping Priority**, you choose whether you want to prioritize the current Intent or its child Intents. By giving priority to certain Intents, you can influence whether the parent or child Intents are more likely to be mapped. 
+Mit **Intent-Mapping-Priorität** wählen Sie aus, ob Sie die aktuelle Absicht oder ihre untergeordneten Absichten priorisieren möchten. Indem Sie bestimmten Absichten Priorität einräumen, können Sie beeinflussen, ob die übergeordneten oder untergeordneten Absichten mit größerer Wahrscheinlichkeit zugeordnet werden. 
 
-We recommend using full sentences when you generate examples for Intents. This approach leads to more accurate result during the mapping process. 
+Es wird empfohlen, ganze Sätze zu verwenden, wenn Sie Beispiele für Absichten generieren. Dieser Ansatz führt zu genaueren Ergebnissen während des Mapping-Prozesses. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/intents/intent-mapping-priority.png" width="80%" />
 </figure>
 
-## How to Set up
+## Wie man es einrichtet
 
-To set a priority, do the following steps:
+Um eine Priorität festzulegen, führen Sie die folgenden Schritte aus:
 
-1. Open a Flow or create a new one.
-2. In the upper-right corner of the **Flow Editor** page, select **NLU**.
-3. On the **Intent** tab, click **Create Intent**.
-4. Specify a unique name for the Intent and click **Save**.
-5. Open created Intent and fill in the required fields.
-6. In the **Intent Mapping Priority** field, select one of the following options:
-    - **Prioritise This Intent** — set a priority for the current parent Intent. By default, this option is set up.
-    - **Prioritise Child Intents** — set a priority for child Intents.
-7. Save changes and click **Build model**. Build a model every time when you want to change settings.
+1. Öffnen Sie einen Flow oder erstellen Sie einen neuen.
+2. Wählen Sie in der oberen rechten Ecke der Seite **Flow-Editor** die Option **NLU** aus.
+3. Klicken Sie auf der Registerkarte **Absicht** auf **Absicht erstellen**.
+4. Geben Sie einen eindeutigen Namen für den Intent an und klicken Sie auf **Speichern**.
+5. Öffnen Sie den erstellten Intent und füllen Sie die erforderlichen Felder aus.
+6. Wählen Sie im Feld **Intent-Mapping-Priorität** eine der folgenden Optionen aus:
+    - **Diese Absicht priorisieren**: Legen Sie eine Priorität für die aktuelle übergeordnete Absicht fest. Standardmäßig ist diese Option eingerichtet.
+    - **Untergeordnete Absichten priorisieren** – Legen Sie eine Priorität für untergeordnete Absichten fest.
+7. Speichern Sie die Änderungen, und klicken Sie auf **Modell erstellen**. Erstellen Sie jedes Mal ein Modell, wenn Sie Einstellungen ändern möchten.
  
-## Examples
+## Beispiele
 
-Let's assume that we have the following Intent data:
+Nehmen wir an, wir haben die folgenden Intent-Daten:
 
-| Intent  | Intent name        | Sentences                                                                                                                                                                                                                                                       |
+| Absicht | Name der Absicht | Sätze                                                                                                                                                                                                                                                       |
 |---------|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parent  | Order Pizza        | I'd like to order a pizza. <br> Can I have a pizza delivered? <br> Can I get a pizza please? <br> I need to purchase a pizza. <br> I want to buy a pizza.                                                                                                       |
-| Child 1 | Order Ham Pizza    | I want to get a ham pizza. <br> Can I have a ham pizza please? <br> I need a ham pizza. <br> I would like to order a ham pizza. <br> I am in the mood of for a ham pizza. <br> Can I order a ham pizza? <br> I'd like to have a ham pizza.                      |
-| Child 2 | Order Cheese Pizza | I want to get a cheese pizza. <br> Can I have a cheese pizza please? <br> I need a cheese pizza. <br> I would like to order a cheese pizza. <br> I am in the mood of for a cheese pizza. <br> Can I order a cheese pizza? <br> I'd like to have a cheese pizza. |
+| Elternteil | Pizza bestellen | Ich möchte eine Pizza bestellen. <br> Kann ich mir eine Pizza liefern lassen? <br> Kann ich bitte eine Pizza bekommen? <br> Ich muss eine Pizza kaufen. <br> Ich möchte eine Pizza kaufen.                                                                                                       |
+| Art 1 | Schinkenpizza bestellen | Ich möchte eine Schinkenpizza essen. <br> Kann ich bitte eine Schinkenpizza essen? <br> Ich brauche eine Schinkenpizza. <br> Ich möchte eine Schinkenpizza bestellen. <br> Ich habe Lust auf eine Schinkenpizza. <br> Kann ich eine Schinkenpizza bestellen? <br> Ich hätte gerne eine Schinkenpizza.                      |
+| Art 2 | Käsepizza bestellen | Ich möchte eine Käsepizza essen. <br> Kann ich bitte eine Käsepizza essen? <br> Ich brauche eine Käsepizza. <br> Ich möchte eine Käsepizza bestellen. <br> Ich habe Lust auf eine Käsepizza. <br> Kann ich eine Käsepizza bestellen? <br> Ich hätte gerne eine Käsepizza. |
 
-Consider various examples of how each option of the Intent Mapping Priority setting works.
+Sehen Sie sich verschiedene Beispiele dafür an, wie die einzelnen Optionen der Einstellung "Intent-Mapping-Priorität" funktionieren.
 
-### Prioritise This Intent
+### Priorisieren Sie diese Absicht
 
-Set up **Prioritise This Intent** for the parent Intent.
+Richten Sie **Diese Absicht priorisieren** für die übergeordnete Absicht ein.
 
-User input: `I want to order a bacon pizza` 
+Benutzereingabe: "Ich möchte eine Bacon-Pizza bestellen" 
 
-Result: `intent: Order Pizza, intent score: 0.33`
+Ergebnis: "Absicht: Pizza bestellen, Absichtswert: 0,33"
 
-JSON: One object in the `nlu.intentMapperResults.scores` array 
+JSON: Ein Objekt im Array "nlu.intentMapperResults.scores" 
 
-```json
-"scores": [
+'''json
+"Partituren": [
         {
           "id": "6262e9e7-9dc5-4146-9153-96ef0693c18f",
-          "name": "Order Pizza",
-          "score": 0.3363160895380178,
-          "negated": false,
+          "name": "Pizza bestellen",
+          "Partitur": 0.3363160895380178,
+          "negiert": falsch,
           "confirmationSentence": null,
           "confirmationSentences": null,
           "disambiguationSentence": null,
           "flow": "898601c7-c5db-44f3-bfa0-bce265af02ad"
         }
       ]
-```
+'''
 
-### Prioritise Child Intents
+### Untergeordnete Absichten priorisieren
 
-Set up **Prioritise Child Intents** for the parent Intent.
+Richten Sie **Untergeordnete Absichten priorisieren** für die übergeordnete Absicht ein.
 
-User input: `I want to order a bacon pizza` 
+Benutzereingabe: "Ich möchte eine Bacon-Pizza bestellen" 
 
-Result: `intent: Order Ham Pizza, intent score: 0.63`
+Ergebnis: "Absicht: Schinkenpizza bestellen, Absichtsbewertung: 0,63"
 
-JSON: Two objects in the `nlu.intentMapperResults.scores` array 
+JSON: Zwei Objekte im Array "nlu.intentMapperResults.scores" 
 
-```json
-"scores": [
+'''json
+"Partituren": [
         {
           "id": "8bba4b5a-1166-4459-bd1c-9e8b5391727e",
-          "name": "Order Ham Pizza",
-          "score": 0.6494886591790712,
-          "negated": false,
+          "name": "Schinkenpizza bestellen",
+          "Punktzahl": 0.6494886591790712,
+          "negiert": falsch,
           "confirmationSentence": null,
           "confirmationSentences": null,
           "disambiguationSentence": null,
           "flow": "898601c7-c5db-44f3-bfa0-bce265af02ad"
         },
         {
-          "id": "c16f7afc-2875-49dc-8d7a-e06629d7fef9",
-          "name": "Order Cheese Pizza",
-          "score": 0.24775283391091624,
-          "negated": false,
+          "ID": "C16F7AFC-2875-49DC-8D7A-E06629D7FEF9",
+          "name": "Käsepizza bestellen",
+          "Partitur": 0.24775283391091624,
+          "negiert": falsch,
           "confirmationSentence": null,
           "confirmationSentences": null,
           "disambiguationSentence": null,
           "flow": "898601c7-c5db-44f3-bfa0-bce265af02ad"
         }
       ]
-```
+'''

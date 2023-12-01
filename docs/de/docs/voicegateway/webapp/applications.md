@@ -1,106 +1,105 @@
 ---
-title: "Applications" 
-slug: "vg-webapp-applications"
-hidden: false
+Titel: "Anwendungen" 
+Slug: "VG-WebApp-Anwendungen"
+ausgeblendet: false
 ---
 
-# Applications
+# Anwendungen
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.60-blue.svg)] (.. /.. /release-notes/4.60.md)
 
-*Applications* are connectors
-that allow the [Endpoint](../getting-started.md#create-a-voice-gateway-endpoint) to be routed to Voice Gateway.
-These applications set default values, including the default speech vendor, 
-language, and voice, for the Text-To-Speech output and Speech-To-Text recognition.
+*Anwendungen* sind Konnektoren
+, die den [Endpunkt](.. /getting-started.md#create-a-voice-gateway-endpoint), die an Voice Gateway weitergeleitet werden soll.
+Diese Anwendungen legen Standardwerte fest, einschließlich des Standardanbieters für Spracherkennung, 
+Sprache und Stimme für die Text-to-Speech-Ausgabe und die Speech-to-Text-Erkennung.
 
-To create an application, select **Applications** in the left-side menu, then click **Add application** or **+**.
+Um eine Anwendung zu erstellen, wählen Sie im Menü auf der linken Seite **Anwendungen** aus und klicken Sie dann auf **Anwendung hinzufügen** oder **+**.
 
-You can create more than one application, dependent on the number of Endpoints created in Cognigy.AI.
+Sie können mehr als eine Anwendung erstellen, abhängig von der Anzahl der in Cognigy.AI erstellten Endpunkte.
 
-After creating an application, you can edit or delete it.
+Nachdem Sie eine Anwendung erstellt haben, können Sie sie bearbeiten oder löschen.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-applications-overview.png"  width="100%" />
 
-## Settings 
+## Einstellungen 
 
-| Settings                                      | Description                                                                                                                                                                                                 | Scope                            |
+| Einstellungen | Beschreibung | Geltungsbereich |
 |-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Application Name                              | A unique application name.                                                                                                                                                                                  | Account, Service Provider, Admin |
-| Account                                       | Select an account from the list.                                                                                                                                                                            | Account, Service Provider, Admin | 
-| Calling Webhook                               | A Cognigy.AI Endpoint URL for the Web Application that will handle calls.                                                                                                                                   | Account, Service Provider, Admin |
-| Call Status Webhook                           | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status.                                                                                                                        | Account, Service Provider, Admin | 
-| Speech synthesis vendor                       | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin | 
-| Speech recognizer vendor                      | Select a default vendor and set up Language Settings for Speech-To-Text recognition. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field.   | Account, Service Provider, Admin |
-| Use a fallback speech vendor if primary fails | Add an [additional Speech-To-Text or Text-To-Speech](#add-additional-tts-and-stt-vendor) vendor.                                                                                                            | Account, Service Provider, Admin |
+| Name der Anwendung | Ein eindeutiger Anwendungsname.                                                                                                                                                                                  | Konto, Dienstanbieter, Admin |
+| Konto | Wählen Sie ein Konto aus der Liste aus.                                                                                                                                                                            | Konto, Dienstanbieter, Admin | 
+| Webhook aufrufen | Eine Cognigy.AI Endpunkt-URL für die Webanwendung, die Aufrufe verarbeitet.                                                                                                                                   | Konto, Dienstanbieter, Admin |
+| Webhook für den Anrufstatus | Eine Cognigy.AI Endpunkt-URL für die Webanwendung, die den Aufrufstatus empfängt.                                                                                                                        | Konto, Dienstanbieter, Admin | 
+| Anbieter von Sprachsynthese | Wählen Sie einen Standardanbieter aus und richten Sie Spracheinstellungen, Voice für Text-to-Speech-Ausgabe ein. Wenn Sie einen anderen Kreditor mit denselben Anmeldeinformationen haben, geben Sie den alternativen Namen des Kreditors in das Feld Bezeichnung ein. | Konto, Dienstanbieter, Admin | 
+| Anbieter von Spracherkennungsgeräten | Wählen Sie einen Standardanbieter aus, und richten Sie die Spracheinstellungen für die Sprache-zu-Text-Erkennung ein. Wenn Sie einen anderen Kreditor mit denselben Anmeldeinformationen haben, geben Sie den alternativen Namen des Kreditors in das Feld Bezeichnung ein.   | Konto, Dienstanbieter, Admin |
+| Verwenden eines Anbieters für Fallback-Sprachausgabe, wenn der primäre Sprachbefehl ausfällt | Fügen Sie einen [zusätzlichen Speech-To-Text- oder Text-to-Speech](#add-additional-tts-and-stt-vendor)-Anbieter hinzu.                                                                                                            | Konto, Dienstanbieter, Admin |
 
+## Zusätzlichen TTS- und STT-Anbieter hinzufügen
 
-## Add Additional TTS and STT Vendor
+Gehen Sie folgendermaßen vor, um einen zusätzlichen Anbieter hinzuzufügen:
 
-To add extra vendor, follow these steps:
-
-1. Open the Cognigy Voice Gateway Self-Service Portal.
-2. In the left-side menu, select **Applications**. 
-3. Create a new application or use an existing one.
-4. On the application page, activate the **Use a fallback speech vendor if primary fails** setting.
-5. Choose the vendor type you want to add (STT or TTS) or add both at once:
-    - TTS:
-        - **Speech synthesis vendor** — select a TTS vendor from the list.
-        - **Lable** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials. 
-        - **Language** — select a primary language.
-        - **Voice** — select a primary voice for the virtuial agent.
+1. Öffnen Sie das Self-Service-Portal von Cognigy Voice Gateway.
+2. Wählen Sie im Menü auf der linken Seite **Anwendungen** aus. 
+3. Erstellen Sie eine neue Anwendung oder verwenden Sie eine vorhandene.
+4. Aktivieren Sie auf der Anwendungsseite die Einstellung **Fallback-Sprachanbieter verwenden, wenn der primäre Fehler ausfällt**.
+5. Wählen Sie den Lieferantentyp aus, den Sie hinzufügen möchten (STT oder TTS) oder fügen Sie beide auf einmal hinzu:
+    -TTS:
+        - **Anbieter von Sprachsynthese**: Wählen Sie einen TTS-Anbieter aus der Liste aus.
+        - **Beschriftung** – Geben Sie den alternativen Namen des Lieferanten in das Feld Bezeichnung ein, wenn Sie über einen Standardlieferanten mit denselben Anmeldeinformationen verfügen. 
+        - **Sprache** — Wählen Sie eine primäre Sprache aus.
+        - **Stimme** — Wählen Sie eine primäre Stimme für den virtualen Agenten aus.
     - STT:
-        - **Speech recognizer vendor** — select an STT vednor from the list.
-        - **Lable** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials.
-        - **Language** — select a primary language. 
-6. _(Optional)_ Click **Swap primary and fallback**. The primary and fallback credentials will change places.
-7. Click **Save**.
+        - **Anbieter der Spracherkennung** – Wählen Sie einen STT-Anbieter aus der Liste aus.
+        - **Beschriftung** – Geben Sie den alternativen Namen des Lieferanten in das Feld Bezeichnung ein, wenn Sie über einen Standardlieferanten mit denselben Anmeldeinformationen verfügen.
+        - **Sprache** — Wählen Sie eine primäre Sprache aus. 
+6. _(Optional)_ Klicken Sie auf **Primär und Fallback tauschen**. Die primären Anmeldeinformationen und die Fallback-Anmeldeinformationen wechseln die Positionen.
+7. Klicken Sie auf **Speichern**.
 
-The changes will be applied.
+Die Änderungen werden übernommen.
 
-## Call recording configuration
+## Konfiguration der Anrufaufzeichnung
 
-Call recordings can be enabled at an account or application level for debugging purposes.
+Anrufaufzeichnungen können zu Debugging-Zwecken auf Konto- oder Anwendungsebene aktiviert werden.
 
-This is a separate recording functionality, and cannot be controlled by Cognigy.AI within a Flow.
+Hierbei handelt es sich um eine separate Aufzeichnungsfunktion, die nicht von Cognigy.AI innerhalb eines Flows gesteuert werden kann.
 
-You must provide a Bucket Vendor and additional details and credentials in order to enable this feature and store your recorded calls.
+Sie müssen einen Bucket-Anbieter sowie zusätzliche Details und Anmeldeinformationen angeben, um diese Funktion zu aktivieren und Ihre aufgezeichneten Anrufe zu speichern.
 
-After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
+Nachdem ein Anruf aufgezeichnet wurde, kann ein Administrator die Aufzeichnungen unter [Letzte Anrufe](recent-calls.md#call-recordings) anhören und überprüfen.
 
-### Application level recording
+### Aufzeichnung auf Anwendungsebene
 
-When enabled at the application level, only calls from a specific application will be recorded.
+Wenn diese Option auf Anwendungsebene aktiviert ist, werden nur Anrufe von einer bestimmten Anwendung aufgezeichnet.
 
-To enable recording calls at an application level, follow these steps:
+Gehen Sie folgendermaßen vor, um die Aufzeichnung von Anrufen auf Anwendungsebene zu aktivieren:
 
-1. Open the Voice Gateway interface.
-2. In the left-side menu, select **Applications**.
-3. Create a new application or use an existing one.
-4. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
-5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats.
-6. Select a bucket vendor:
+1. Öffnen Sie die Voice Gateway-Schnittstelle.
+2. Wählen Sie im Menü auf der linken Seite **Anwendungen** aus.
+3. Erstellen Sie eine neue Anwendung oder verwenden Sie eine vorhandene.
+4. Scrollen Sie nach unten zum Abschnitt **Konfiguration der Anrufaufzeichnung** und klicken Sie auf das Kontrollkästchen für **Anrufaufzeichnung aktivieren**.
+5. Wählen Sie im Feld **Audioformat** zwischen den Formaten ".wav" und ".mp3".
+6. Wählen Sie einen Bucket-Anbieter aus:
 
-    === "Amazon S3"
-        - **Bucket Name** — provide the name of your bucket.
-        - **Region** — choose the region for your storage from the list.
-        - **Access key ID** — provide the access key ID for your bucket.
-        - **Secret access key** — provide the secret access key ID for your bucket.
-        - **S3 Tags** — provide any S3 tags with name and value as needed.
+=== "Amazon S3"
+        - **Bucket Name** — Geben Sie den Namen Ihres Buckets an.
+        - **Region** — Wählen Sie die Region für Ihren Speicher aus der Liste aus.
+        - **Zugriffsschlüssel-ID** – Geben Sie die Zugriffsschlüssel-ID für Ihren Bucket an.
+        - **Geheimer Zugriffsschlüssel** – Geben Sie die ID des geheimen Zugriffsschlüssels für Ihren Bucket an.
+        - **S3-Tags** – Geben Sie bei Bedarf Namen und Wert für alle S3-Tags an.
 
-    === "Google Cloud Storage"
-        - **Bucket Name** — provide the name of your bucket.
-        - **Service key** — provide a JSON key for a Service Account with APIs enabled for Cloud Storage and Storage Transfer API.
-        - **Google Cloud Storage Tags** — provide any Google Cloud Storage tags with name and value as needed.
+=== "Google Cloud-Speicher"
+        - **Bucket Name** — Geben Sie den Namen Ihres Buckets an.
+        - **Dienstschlüssel**: Geben Sie einen JSON-Schlüssel für ein Dienstkonto mit APIs an, die für Cloud Storage und Storage Transfer API aktiviert sind.
+        - **Google Cloud Storage-Tags**: Geben Sie alle Google Cloud Storage-Tags nach Bedarf mit Namen und Wert an.
 
-    === "Azure Cloud Storage"
-        - **Container Name** — provide the name of your container.
-        - **Connection String** — provide a [connection string](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string).
-        - **Azure Cloud Storage Tags** — provide any Azure Cloud Storage tags with name and value as needed.
+=== "Azure Cloud Storage"
+        - **Containername** — Geben Sie den Namen Ihres Containers an.
+        - **Verbindungszeichenfolge** — Geben Sie eine [Verbindungszeichenfolge](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string) an.
+        - Azure Cloud Storage-Tags: Geben Sie bei Bedarf Namen und Wert für alle Azure Cloud Storage-Tags an.
 
-7. Click **Test** to verify your connection. 
-8. Go to **Applications** and select the Account from the dropdown box on the right side of the screen. 
-9. Click the application to edit. 
-10. Scroll down to the **Call recording configuration** section, click  the checkbox for **Record all calls**
-11. Click **Save**.
+7. Klicken Sie auf **Test**, um Ihre Verbindung zu überprüfen. 
+8. Gehen Sie zu **Anwendungen** und wählen Sie das Konto aus dem Dropdown-Feld auf der rechten Seite des Bildschirms aus. 
+9. Klicken Sie auf die Anwendung, die Sie bearbeiten möchten. 
+10. Scrollen Sie nach unten zum Abschnitt **Konfiguration der Anrufaufzeichnung** und aktivieren Sie das Kontrollkästchen für **Alle Anrufe aufzeichnen**
+11. Klicken Sie auf **Speichern**.
 
-All calls from this application will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
+Alle Anrufe von dieser Anwendung werden aufgezeichnet und auf der Seite [Letzte Anrufe](recent-calls.md#call-recordings) angezeigt.

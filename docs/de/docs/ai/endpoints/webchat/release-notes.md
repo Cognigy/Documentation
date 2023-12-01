@@ -1,11 +1,9 @@
 ---
- title: "Release notes Webchat" 
- slug: "release-notes-webchat" 
- hidden: false 
+ title: "Release Notes Webchat" 
+ Slug: "Release-Notes-Webchat" 
+ ausgeblendet: false 
 ---
 
-# Release Notes
+# Versionshinweise
 
-You can find the release notes for our Webchat Widget on [GitHub](https://github.com/Cognigy/WebchatWidget/releases). Also, we always mention Webchat Widget version updates on the [central Release notes]({{config.site_url}}/release-notes/release-notes/) page.
-
-
+Die Release Notes für unser Webchat-Widget finden Sie auf [GitHub](https://github.com/Cognigy/WebchatWidget/releases). Außerdem erwähnen wir immer Versionsaktualisierungen des Webchat-Widgets auf der Seite [zentrale Versionshinweise]({{config.site_url}}/release-notes/release-notes/).

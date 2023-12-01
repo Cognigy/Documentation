@@ -1,30 +1,30 @@
 ---
-title: "Plug-and-Play Widgets"
-slug: "plug-and-play-widgets"
-hidden: false
+Titel: "Plug-and-Play-Widgets"
+Slug: "Plug-and-Play-Widgets"
+ausgeblendet: false
 ---
 
-# Plug-and-Play Widgets
+# Plug-and-Play-Widgets
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /release-notes/4.60.md)
 
-You can use the Plug-and-Play Widgets to customize your AI Copilot Workspace.
+Sie können die Plug-and-Play-Widgets verwenden, um Ihren AI Copilot-Arbeitsbereich anzupassen.
 
-These widgets are seamlessly integrated with other AI Copilot Widgets and require minimal manual configuration.
+Diese Widgets sind nahtlos in andere AI Copilot-Widgets integriert und erfordern nur eine minimale manuelle Konfiguration.
 
-You can build these widgets by using the following Nodes:
+Sie können diese Widgets erstellen, indem Sie die folgenden Knoten verwenden:
 
-- [Copilot:Identity Tile](../ai/flow-nodes/ai-copilot/identity-tile.md)
-- [Copilot: Next Action Tile](../ai/flow-nodes/ai-copilot/next-action-tile.md)
-- [Copilot: Sentiment Tile](../ai/flow-nodes/ai-copilot/sentiment-tile.md)
-- [Copilot: Transcript Tile](../ai/flow-nodes/ai-copilot/transcript-tile.md)
+- [Copilot:Identitätskachel](.. /ai/flow-nodes/ai-copilot/identity-tile.md)
+- [Copilot: Kachel für die nächste Aktion](.. /ai/flow-nodes/ai-copilot/next-action-tile.md)
+- [Copilot: Stimmungskachel](.. /ai/flow-nodes/ai-copilot/sentiment-tile.md)
+- [Copilot: Transkript-Kachel](.. /ai/flow-nodes/ai-copilot/transcript-tile.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai-copilot/images/plug-and-play-widgets.png" width="80%"/>
-  <figcaption> Plug-and-Play Widgets in AI Copilot</figcaption>
+  <figcaption> Plug-and-Play-Widgets in AI Copilot</figcaption>
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot](overview.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot](overview.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)

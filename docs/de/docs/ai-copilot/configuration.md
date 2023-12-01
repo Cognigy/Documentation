@@ -1,45 +1,45 @@
 ---
-title: "Configuration"
-slug: "configuration"
-hidden: false
+title: "Konfiguration"
+slug: "Konfiguration"
+ausgeblendet: false
 ---
 
-# AI Copilot Configuration
+# Konfiguration des KI-Copiloten
 
-The AI Copilot configuration refers to the AI Copilot Config, which you can define via API to configure the position and size of the widgets in your grid. This functionality provides full flexibility to use the Agent Assist Workspace as efficiently as possible.
+Die AI Copilot Konfiguration bezieht sich auf die AI Copilot Config, die du per API definieren kannst, um die Position und Größe der Widgets in deinem Grid zu konfigurieren. Diese Funktion bietet volle Flexibilität, um den Agent Assist-Arbeitsbereich so effizient wie möglich zu nutzen.
 
-The workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. While configuring your grid you can choose the best placement for specific types of widgets.
+Der Arbeitsbereich kann angepasst werden, um verschiedene Arten von Inhalten anzuzeigen, z. B. HTML, adaptive Karten oder iframes. Bei der Konfiguration Ihres Rasters können Sie die beste Platzierung für bestimmte Arten von Widgets auswählen.
 
-The AI Copilot configurations can be created, modified, and deleted **only** using the [AI Copilot API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs).
+Die AI Copilot-Konfigurationen können **nur** mit der [AI Copilot-API](https://api-trial.cognigy.ai/openapi#get-/v2.0/agentassistconfigs) erstellt, geändert und gelöscht werden.
 
-## Grid
+## Raster
 
-The AI Copilot workspace is based on a customizable grid layout where widgets can be added to display different information. 
+Der Arbeitsbereich von AI Copilot basiert auf einem anpassbaren Rasterlayout, in dem Widgets hinzugefügt werden können, um verschiedene Informationen anzuzeigen. 
 
-The gird is fully customizable and gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
+Der Gürtel ist vollständig anpassbar und gibt Ihnen die Möglichkeit, die Anzahl der Spalten, Zeilen sowie die Abstände zwischen ihnen zu konfigurieren.
 
-## Tile ID
+## Kachel-ID
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.54-blue.svg)](../release-notes/4.54.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.54-blue.svg)] (.. /release-notes/4.54.md)
 
-Each tile must have a name, for example, `map`, `profile`, or `history`, that works as a unique identifier. This exact tile ID is needed for the AI Copilot Node configuration, to ensure the content is displayed in the right Widget.
+Jede Kachel muss einen Namen haben, z. B. "Karte", "Profil" oder "Verlauf", der als eindeutiger Bezeichner fungiert. Genau diese Kachel-ID wird für die Konfiguration des AI Copilot-Knotens benötigt, um sicherzustellen, dass der Inhalt im richtigen Widget angezeigt wird.
 
-If AI Copilot receives updates for a Tile ID not present in the AI Copilot configuration, the tile will not be rendered. In such cases, a warning indicator will be displayed in the lower-right corner of the workspace, indicating that an "unknown tile update" has been received.
+Wenn AI Copilot Aktualisierungen für eine Kachel-ID erhält, die nicht in der AI Copilot-Konfiguration vorhanden ist, wird die Kachel nicht gerendert. In solchen Fällen wird in der unteren rechten Ecke des Arbeitsbereichs eine Warnanzeige angezeigt, die darauf hinweist, dass ein "unbekanntes Kachelupdate" empfangen wurde.
 
 ## URL
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../release-notes/4.65.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.65-blue.svg)] (.. /release-notes/4.65.md)
 
-If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
+Wenn Sie AI Copilot als eigenständige Anwendung verwenden, folgt die AI Copilot-URL dem folgenden Muster:
 
 {! _includes/agent-assist/url-pattern.md !}
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot Workspace](overview.md)
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](voice/voice-overview.md)
-- [AI Copilot for Chat](chat.md)
-- [Integration with Contact Centers](contact-center-integration.md)
+- [Arbeitsbereich für KI-Copilot](overview.md)
+- [Erste Schritte mit AI Copilot](getting-started.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](embedding.md)
+- [KI-Copilot für Sprache](voice/voice-overview.md)
+- [KI-Copilot für Chat](chat.md)
+- [Integration mit Contact Centern](contact-center-integration.md)

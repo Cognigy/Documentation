@@ -1,28 +1,25 @@
 ---
- title: "Update Profile" 
- slug: "update-profile" 
- hidden: false 
+ title: "Profil aktualisieren" 
+ Slug: "Update-Profil" 
+ ausgeblendet: false 
 ---
-# Update Profile
+# Profil aktualisieren
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/update-profile.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The Update Profile Node is used to update the users' Contact Profile.
+## Beschreibung<div class="divider"></div>Der Knoten "Profil aktualisieren" wird verwendet, um das Kontaktprofil des Benutzers zu aktualisieren.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/18cbc8a-update-profile.jpg" width="100%" />
 </figure>
 
-The available `Key` options are all defined fields in the Profile Schema of this Project.
+Die verfügbaren 'Schlüssel'-Optionen sind alle definierten Felder im Profilschema dieses Projekts.
 
- 
-If the key used is an invalid value, it will not perform any function. For a list of default profile property keys, see the [Contact Profiles Page]({{config.site_url}}ai/resources/manage/contact-profiles/)
+Wenn der verwendete Schlüssel einen ungültigen Wert hat, führt er keine Funktion aus. Eine Liste der standardmäßigen Profileigenschaftsschlüssel finden Sie auf der Seite [Kontaktprofile]({{config.site_url}}ai/resources/manage/contact-profiles/)
 
-| Parameter | Type          | Description                                          |
+| Parameter | Typ | Beschreibung |
 |-----------|---------------|------------------------------------------------------|
-| Key       | select        | Which field in the user's Contact Profile to update. |
-| Value     | CognigyScript | The value you want to set.                           |
+| Schlüssel | Wählen Sie | Das Feld im Kontaktprofil des Benutzers, das aktualisiert werden soll. |
+| Wert | CognigyScript | Der Wert, den Sie festlegen möchten.                           |

@@ -1,47 +1,47 @@
 ---
-title: "LA AI Copilot"
-slug: "la-ai-copilot"
-hidden: false
+Titel: "LA AI Copilot"
+Schnecke: "La-ai-Copilot"
+ausgeblendet: false
 ---
 # LA AI Copilot 
 
 {! _includes/live-agent/assistant-setup.md !}
 
-## Set up an Endpoint
+## Einrichten eines Endpunkts
 
-To configure your Endpoint:
+So konfigurieren Sie Ihren Endpunkt:
 
-1. Go to **Deploy > Endpoints**.
-2. Go to your **Webchat** Endpoint.
-3. Scroll down to **Handover Settings** and select **Cognigy Live Agent** from the list.
-4. Go to the **Copilot** section.
-5. In the **Copilot Config** field, select **None**.
-6. In the **Copilot Flow** field, select the name of the AI Copilot Flow you've created in the previous step.
-7. Click **Save**.
+1. Wechseln Sie zu **Bereitstellen > Endpunkte**.
+2. Gehen Sie zu Ihrem **Webchat**-Endpunkt.
+3. Scrollen Sie nach unten zu **Übergabeeinstellungen** und wählen Sie **Cognigy Live Agent** aus der Liste aus.
+4. Gehen Sie zum Abschnitt **Copilot**.
+5. Wählen Sie im Feld **Copilot-Konfiguration** die Option **Keine** aus.
+6. Wählen Sie im Feld **Copilot Flow** den Namen des AI Copilot Flow aus, den Sie im vorherigen Schritt erstellt haben.
+7. Klicken Sie auf **Speichern**.
 
-The Endpoint setup is completed.
+Die Einrichtung des Endpunkts ist abgeschlossen.
 
-## Test LA AI Copilot
+## LA AI Copilot testen
 
-To test LA AI Copilot, follow these steps:
+Gehen Sie folgendermaßen vor, um LA AI Copilot zu testen:
 
-1. Start a Webchat session.
-2. Complete the handover process to Live Agent.
-3. Once the handover is complete, send a message as an Agent.
-4. After that, send a message as the user in Webchat.
+1. Starten Sie eine Webchat-Sitzung.
+2. Schließen Sie den Übergabevorgang an Live Agent ab.
+3. Sobald die Übergabe abgeschlossen ist, senden Sie eine Nachricht als Agent.
+4. Senden Sie danach eine Nachricht als Benutzer im Webchat.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat_f.png" width="50%" />
 </figure>
 
-Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand:
+Sobald der menschliche Agent diese Nachricht erhält, hängt das Testverhalten davon ab, wie Sie den Endpunkt zuvor konfiguriert haben:
 
-1. The human agent will receive a dropdown menu **Assist**. 
-2. In this menu, the human agent will find the results from the Flow sent via LA AI Copilot.
+1. Der menschliche Agent erhält ein Dropdown-Menü **Assist**. 
+2. In diesem Menü findet der menschliche Agent die Ergebnisse des Flows, der über LA AI Copilot gesendet wurde.
        <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview_f.png" width="55%" />
        </figure>
-3. The human agent can click the blue arrow to forward content to the user.
+3. Der menschliche Agent kann auf den blauen Pfeil klicken, um Inhalte an den Benutzer weiterzuleiten.
       <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward_f.png" width="55%" />
       </figure>
@@ -50,9 +50,9 @@ Once the human agent receives this message, the testing behavior will vary depen
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete_f.png" width="50%" />
        </figure>
 
-If the testing is successful, the LA AI Copilot setup is complete.
+Wenn der Test erfolgreich ist, ist das LA AI Copilot-Setup abgeschlossen.
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot in Live Agent](ai-copilot.md)
-- [AI Copilot Overview](../../ai-copilot/overview.md)
+- [KI-Copilot im Live-Agenten](ai-copilot.md)
+- [KI-Copilot-Übersicht](.. /.. /ai-copilot/overview.md)

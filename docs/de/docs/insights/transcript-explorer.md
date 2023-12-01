@@ -1,180 +1,172 @@
 ---
- title: "Transcript Explorer" 
- slug: "transcript-explorer" 
- hidden: false 
+ Titel: "Transkript-Explorer" 
+ Schnecke: "Transkript-Explorer" 
+ ausgeblendet: false 
 ---
-# Transcript Explorer
+# Transkript-Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.48-blue.svg)] (.. /release-notes/4.48.md)
 
-With Transcript Explorer you get an inspection application that enables you to evaluate messages 
-in detail to improve your Agent, your customer service, and the user experience of your customer.
+Mit dem Transkript-Explorer erhalten Sie eine Inspektionsanwendung, mit der Sie Nachrichten auswerten können 
+im Detail, um Ihren Agenten, Ihren Kundenservice und die Benutzererfahrung Ihrer Kunden zu verbessern.
 
-The Transcript Explorer enables you to search for key phrases like "booking", "cancel", "message" in a list of transcripts.
+Der Transkript-Explorer ermöglicht es Ihnen, in einer Liste von Transkripten nach Schlüsselbegriffen wie "Buchung", "Stornierung", "Nachricht" zu suchen.
 
-Click **Transcript Explorer** in the Insights sidebar menu.
+Klicken Sie im Menü der Insights-Seitenleiste auf **Transkript-Explorer**.
 
-## Message research
-<div class="divider"></div>
+## Nachrichtenrecherche<div class="divider"></div>Die Kundensitzungen werden in einer Liste mit folgenden Daten angezeigt: 
 
-The customer sessions will be displayed in a list with the following data: 
-
-- Session ID
-- Contact ID
-- Message Count
-- Channel
-- Endpoint
-- Date and time of the last message
+- Sitzungs-ID
+- Kontakt-ID
+- Anzahl der Nachrichten
+-Kanal
+-Endpunkt
+- Datum und Uhrzeit der letzten Nachricht
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
-  <figcaption>Transcript Explorer displaying a list of transcripts (conversations)</figcaption>
+  <figcaption>Transkript-Explorer zeigt eine Liste von Transkripten (Konversationen) an</figcaption>
 </figure>
 
-- Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
-- Use the [global filter]({{config.site_url}}insights/global-filter/) options to configure your research.
-- You can select one or more message sources such as **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages, click on the filter option Virtual Agent Messages and leave the other options not selected.
-- You can select one or more flows to show only messages that were generated during the selected flow passing.
+- Verwenden Sie die lokalen Filteroptionen, um Ihre Recherche zu konfigurieren. Sie können bestimmte Sitzungen mit Transkripten finden, indem Sie nach Textnachrichten, Sitzungs-ID oder Kontakt-ID suchen. Verwenden Sie Ausdrücke oder Schlüsselwörter, um genauere Suchergebnisse zu erhalten. Sie können die Sitzungs-ID oder Kontakt-ID kopieren, indem Sie auf ! [vertikale-Auslassungspunkte] (.. /assets/icons/vertical-ellipsis.svg).
+- Verwenden Sie die Optionen [global filter]({{config.site_url}}insights/global-filter/), um Ihre Recherche zu konfigurieren.
+- Sie können eine oder mehrere Nachrichtenquellen auswählen, z. B. **Virtuelle Agentenmeldungen**, **Benutzernachrichten** oder **Agentennachrichten** durch **lokalen Filter** oben rechts.  Wenn Sie nur nach Nachrichten suchen möchten, die für den virtuellen Agenten spezifisch sind, klicken Sie auf die Filteroption Nachrichten des virtuellen Agenten und lassen Sie die anderen Optionen deaktiviert.
+- Sie können einen oder mehrere Flows auswählen, um nur Nachrichten anzuzeigen, die während der ausgewählten Flow-Übergabe generiert wurden.
 
-!!! note
-    Using the Negate slider bar. All filter options except the selected one will be analyzed. For example, when selecting Agent messages and toggling **Negate**, all data will be analyzed except for the Agent-message data.
+!!! Anmerkung
+    Verwenden des Schiebereglers "Negieren". Alle Filteroptionen außer der ausgewählten werden analysiert. Wenn Sie z. B. Agentennachrichten auswählen und **Negieren** umschalten, werden alle Daten mit Ausnahme der Agentennachrichtendaten analysiert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/fd64fcb-Transcript_Explorer_n2.svg" width="100%" />
-  <figcaption>Local filter "Source"</figcaption>
+  <figcaption>Lokaler Filter "Quelle"</figcaption>
 </figure>
 
-- You can limit the results to a conversations containing a specific number of messages using "Message count" filters.
+- Sie können die Ergebnisse auf eine Konversation beschränken, die eine bestimmte Anzahl von Nachrichten enthält, indem Sie die Filter "Nachrichtenanzahl" verwenden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/message-count-filter-inputs.png" width="50%" />
-  <figcaption>Local filters "Message count"</figcaption>
+  <figcaption>Lokale Filter "Anzahl der Nachrichten"</figcaption>
 </figure>
 
-- To limit the results to a conversations containing certain Step, see the [Contains Step](../insights/transcript-explorer.md#contains-step-filter) filter section.
+- Um die Ergebnisse auf eine Konversation zu beschränken, die einen bestimmten Schritt enthält, siehe [Enthält Schritt](.. /insights/transcript-explorer.md#contains-step-filter) filtern.
 
-- When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
+- Wenn globale und lokale Filteroptionen eingestellt sind, geben Sie eine Schlüsselphrase wie "Buchung", "Stornierung", "Zeitplan", "Nachricht" oder "Termin" usw. ein und Sie erhalten eine Liste aller Nachrichten, die Ihren Suchkriterien entsprechen.
 
-- Transcript Explorer provides a sorting function for "Message count" and "Last message". 
-- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
-- Clicking on "Last message" sorts the listed transcripts alternately, according to the newest/oldest entries.
+- Der Transkript-Explorer bietet eine Sortierfunktion für "Nachrichtenanzahl" und "Letzte Nachricht". 
+- Wenn Sie auf "Nachrichtenanzahl" klicken, werden die aufgelisteten Transkripte abwechselnd nach auf- und absteigender Reihenfolge sortiert.
+- Mit einem Klick auf "Letzte Nachricht" werden die aufgelisteten Transkripte abwechselnd nach den neuesten/ältesten Einträgen sortiert.
 
-### Contains Step filter
+### Enthält Schrittfilter
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.49-blue.svg)] (.. /release-notes/4.49.md)
 
-To further refine your search results to include only conversations that contain a specific step,
-click ![live-follow](../assets/icons/filter.svg) on the search panel and select a step from the list. 
+Um Ihre Suchergebnisse weiter zu verfeinern, um nur Unterhaltungen einzubeziehen, die einen bestimmten Schritt enthalten,
+Klicken! [Live-Folgen] (.. /assets/icons/filter.svg) im Suchfeld und wählen Sie einen Schritt aus der Liste aus. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="100%" />
-  <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
+  <figcaption>Liste der Schritte, die über die Filterschaltfläche geöffnet werden (rot markiert)</figcaption>
 </figure>
 
-### Reset local filters
+### Lokale Filter zurücksetzen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.16-blue.svg)] ({{config.site_url}})
 
-You can reset local filters by clicking the "Reset" button. It will appear as soon as you have some filter with a non-default value.
+Sie können lokale Filter zurücksetzen, indem Sie auf die Schaltfläche "Zurücksetzen" klicken. Es wird angezeigt, sobald Sie einen Filter mit einem nicht standardmäßigen Wert haben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer-reset.png" width="50%" />
-  <figcaption>Reset button appeared after selecting Virtual Agent as an only source.</figcaption>
+  <figcaption>Die Schaltfläche Zurücksetzen wurde angezeigt, nachdem der virtuelle Agent als einzige Quelle ausgewählt wurde.</figcaption>
 </figure>
 
-## Inspect conversation 
+## Konversation untersuchen 
 
-- To inspect a specific transcript, click on a transcript conversation item in the list, and the transcript details will be displayed on the right-hand side in a conversation panel.
+- Um ein bestimmtes Transkript zu überprüfen, klicken Sie auf ein Transkript-Konversationselement in der Liste, und die Transkriptdetails werden auf der rechten Seite in einem Konversationsfenster angezeigt.
 
-- Use the scroll bar to navigate through the conversation. 
+- Verwenden Sie die Bildlaufleiste, um durch die Konversation zu navigieren. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/781cb26-Transcript_Explorer_n4.svg" width="100%" />
-  <figcaption>Transcript Explorer: selected transcript displayed for research on the right-hand side</figcaption>
+  <figcaption>Transkript-Explorer: Ausgewähltes Transkript wird auf der rechten Seite für die Recherche angezeigt</figcaption>
 </figure>
 
-When you click on the "profile" icon on the left top side of the conversation panel user's **conversation details** and the user **contact profile details** will be displayed. 
+Wenn Sie auf das "Profil"-Symbol auf der linken oberen Seite des Konversationsfensters klicken, werden die **Konversationsdetails** des Benutzers und die **Kontaktprofildetails** des Benutzers angezeigt. 
  
-**Conversation details**:
+**Details zur Konversation**:
 
-- Conversation-ID (unique)
-- First message (date and time)
-- Last message (date and time)
-- User messages count (numerical value)
-- Bot messages count (numerical value)
-- Agent messages count (numerical value)
-- Flow name (for example, 00 Main)
-- Rating (User feedback given in conversation: thumbs down icon: rating 0 to 4 / thumbs up icon: rating 5 to 10)
-- Comment (User can write a comment in a conversation which is displayed here)
+- Conversation-ID (eindeutig)
+- Erste Nachricht (Datum und Uhrzeit)
+- Letzte Nachricht (Datum und Uhrzeit)
+- Anzahl der Benutzernachrichten (numerischer Wert)
+- Anzahl der Bot-Nachrichten (numerischer Wert)
+- Anzahl der Agentennachrichten (numerischer Wert)
+- Flow-Name (z. B. 00 Main)
+- Bewertung (Benutzerfeedback im Gespräch: Daumen-runter-Symbol: Bewertung 0 bis 4 / Daumen-hoch-Symbol: Bewertung 5 bis 10)
+- Kommentar (Benutzer kann einen Kommentar in einer Konversation schreiben, die hier angezeigt wird)
 
+**Details zum Kontaktprofil**:
 
-**Contact profile details**:
-
-- First Name
-- Last name
-- Email
-- Gender
-- Age
-- Birthday
-- Location 
-- Accepted GDPR (accepted General Data Protection Regulation)
-- Goals completed (all goals that were achieved in the session)
+-Vorname
+-Nachname
+-E-Mail
+-Geschlecht
+-Ändern
+-Geburtstag
+-Ort 
+- Akzeptierte DSGVO (akzeptierte Datenschutz-Grundverordnung)
+- Erreichte Ziele (alle Ziele, die in der Sitzung erreicht wurden)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/76ad683-Transcript_Explorer_n5.svg" width="100%" />
-  <figcaption>Selected transcript with displayed customer profile data</figcaption>
+  <figcaption>Ausgewähltes Transkript mit angezeigten Kundenprofildaten</figcaption>
 </figure>
 
-### Expert mode
+### Experten-Modus
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.15-blue.svg)] ({{config.site_url}})
 
-You can enable an "Expert Mode" by clicking a toggle on top of the transcript's panel. This will
-provide additional information to conversation messages (if any), such as:
+Sie können einen "Expertenmodus" aktivieren, indem Sie auf einen Schalter oben im Bedienfeld des Transkripts klicken. Dies wird dazu führen, dass
+Bereitstellen zusätzlicher Informationen zu Unterhaltungsnachrichten (falls vorhanden), z. B.:
 
-- What Intent was triggered and its score
-- What Slots were filled
+- Welcher Intent ausgelöst wurde und welche Punktzahl er hat
+- Welche Slots wurden gefüllt?
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/expert-mode.png" width="50%" />
-  <figcaption>Transcript with "Expert mode" enabled </figcaption>
+  <figcaption>Transkript mit aktiviertem "Expertenmodus" </figcaption>
 </figure>
 
-### Open Flow 
-To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow** option when right-clicking on a specific message displayed in the conversation panel.
-Clicking the button leads you to the related Flow in Cognigy.AI.
+### Offener Durchfluss 
+So überprüfen Sie Ihren [Flow](.. /ai/resources/build/flows.md) oder zur Verbesserung der Konfiguration bietet der Transkript-Explorer die Kontextmenüoption **Flow öffnen**, wenn Sie mit der rechten Maustaste auf eine bestimmte Nachricht klicken, die im Konversationsbereich angezeigt wird.
+Wenn Sie auf die Schaltfläche klicken, gelangen Sie zum zugehörigen Flow in Cognigy.AI.
 
-!!! note
-    The context menu "Open Flow" is not available on "drop off" steps or collapsed steps (steps with arrows). 
-    The "Open Flow" option is not available if there is no corresponding flow in Cognigy. AI or if the data comes from a snapshot.
+!!! Anmerkung
+    Das Kontextmenü "Flow öffnen" ist bei "Drop-off"-Schritten oder reduzierten Schritten (Schritte mit Pfeilen) nicht verfügbar. 
+    Die Option "Open Flow" ist nicht verfügbar, wenn es keinen entsprechenden Flow in Cognigy gibt. KI oder wenn die Daten aus einem Snapshot stammen.
 
-Using the "Search" field, you can enter keywords to find the messages in which these keywords were used in conversations.
+Über das Feld "Suchen" können Sie Schlüsselwörter eingeben, um die Nachrichten zu finden, in denen diese Schlüsselwörter in Konversationen verwendet wurden.
 
-- Enter a keyword in the search field, for example, "appointment". All transcript conversations which include the keyword will now be displayed. 
-- Click on any transcript conversation in the list.
-- The clicked transcript conversation, containing the search string, will be displayed in a conversation panel. 
-The message that contains the search text has a gray background.
-  Also, the matching text within the message itself is highlighted yellow.
+- Geben Sie ein Stichwort in das Suchfeld ein, z. B. "Termin". Alle Transkript-Konversationen, die das Schlüsselwort enthalten, werden nun angezeigt. 
+- Klicken Sie auf eine beliebige Transkript-Konversation in der Liste.
+- Die angeklickte Transkript-Konversation, die den Suchbegriff enthält, wird in einem Konversationsfenster angezeigt. 
+Die Nachricht, die den Suchtext enthält, hat einen grauen Hintergrund.
+  Außerdem wird der übereinstimmende Text in der Nachricht selbst gelb hervorgehoben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/5326ee3-Open_Flow_in_Transcript_Explorer_3.svg" width="100%" />
-  <figcaption>Highlighted keyword in a message and displayed context menu "Open Flow"</figcaption>
+  <figcaption>Schlüsselwort in einer Nachricht hervorgehoben und Kontextmenü "Open Flow" angezeigt</figcaption>
 </figure>
 
+## Navigieren zum Nachrichten-Explorer<div class="divider"></div>Mit der Nutzung des Transkript-Explorers bietet Ihnen Cognigy die Möglichkeit, nach der Auswahl einer Konversation direkt in den Nachrichten-Explorer zu wechseln, der Ihnen die vorherige Nachricht und die nachfolgende Nachricht zur ausgewählten Nachricht anzeigen kann. Diese Option unterstützt eine detailliertere Konversationsanalyse.
 
-## Navigating to Message Explorer
-<div class="divider"></div>
-With the usage of the Transcript Explorer, Cognigy offers you the possibility to switch directly to the Message Explorer after selecting a conversation, which can show you the previous message and the subsequent message for the selected message. This option supports a more detailed conversation analysis.
+Um vom Transkript-Explorer in den Nachrichten-Explorer zu wechseln, gehen Sie wie folgt vor:
 
-To switch from the Transcript Explorer to the Message Explorer, proceed as follows:
+- Wählen Sie eine Transkriptnachricht in der Liste Transkript-Explorer aus. Auf der rechten Seite des Bildschirms wird der Unterhaltungsbereich angezeigt, in dem der Konversationsfluss angezeigt wird. 
 
-- Select a transcript message in the Transcript Explorer list. On the right side of the screen, the conversation panel appears and displays the conversation flow. 
+- Klicken Sie nun auf eine einzelne Nachricht, um die konkrete Gesprächssituation zu analysieren.
 
-- Click now on an individual message to analyze the specific conversation situation.
+Der Meldungs-Explorer wird gestartet und zeigt die ausgewählte Meldung mit der vorherigen Meldung und der folgenden Meldung auf dem Bildschirm an. 
 
-The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
+## Mehr Informationen 
 
-## More Information 
-
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
-
+- [Nachrichten-Explorer]({{config.site_url}}insights/message-explorer/)

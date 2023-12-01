@@ -1,104 +1,104 @@
 ---
-title: "Supervisor Report" 
-slug: "supervisor report" 
-hidden: false 
+Titel: "Bericht des Vorgesetzten" 
+Slug: "Bericht des Vorgesetzten" 
+ausgeblendet: false 
 ---
 
-# Supervisor Overview Report
+# Supervisor-Übersichtsbericht
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.46-blue.svg)](../../release-notes/4.46.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.46-blue.svg)] (.. /.. /release-notes/4.46.md)
 
-!!! note
-    This report is only visible with the [Supervisor Role](../roles.md#supervisor).
+!!! Anmerkung
+    Dieser Bericht ist nur mit der Option [Supervisor-Rolle](.. /roles.md#supervisor).
 
-This report offers an overview of all conversations related to a specific inbox,
-including the number of conversations received within the last 24 hours.
-All displayed data is relevant to this 24-hour time period.
-Additionally, you will find an overview of the Agent Status and conversation handling metrics.
-At the bottom of the report, there is a list of conversations, indicating the agents' ongoing work.
+Dieser Bericht bietet einen Überblick über alle Konversationen, die sich auf einen bestimmten Posteingang beziehen.
+einschließlich der Anzahl der Gespräche, die innerhalb der letzten 24 Stunden eingegangen sind.
+Alle angezeigten Daten sind für diesen 24-Stunden-Zeitraum relevant.
+Darüber hinaus finden Sie eine Übersicht über den Agentenstatus und die Metriken zur Konversationsverarbeitung.
+Am Ende des Berichts befindet sich eine Liste von Gesprächen, die auf die laufende Arbeit der Agenten hinweist.
 
-The summary of key metrics is represented in the following charts:
+Die Zusammenfassung der wichtigsten Metriken ist in den folgenden Diagrammen dargestellt:
 
-- [Indicators](#indicators)
-- [Line Charts](#line-chart)
-- [Tables](#tables)
+- [Indikatoren](#indicators)
+- [Liniendiagramm](#line-Diagramm)
+- [Tabellen](#tables)
 
 <figure>
 <img class="image-center" src="{{config.site_url}}live-agent/images/LA_Supervisor_overview_1.png" width="80%" alt="Live Agent Supervisor overview" />
-  <figcaption>Overview report</figcaption>
+  <figcaption>Übersichtsbericht</figcaption>
 </figure>
 
-## Indicators
+## Indikatoren
 
-### Open Conversations
+### Unterhaltungen öffnen
 
-Indicates the number of conversations that have the following statuses: Open, Queued, and Unassigned.
+Gibt die Anzahl der Konversationen an, die den folgenden Status haben: Offen, In Warteschlange und Nicht zugewiesen.
 
-### Today
+### Heute
 
-Indicates the number of conversations that were handled on current day.
+Gibt die Anzahl der Konversationen an, die am aktuellen Tag bearbeitet wurden.
 
-### Agent Status
+### Status des Agenten
 
-Indicates the number of agents that currently are Online, Busy, Away, or Offline.
+Gibt die Anzahl der Agenten an, die derzeit online, beschäftigt, abwesend oder offline sind.
 
-### Conversation handling
+### Umgang mit Konversationen
 
-Conversation handling indicates the following real-time metrics:
+Die Konversationsverarbeitung gibt die folgenden Echtzeitmetriken an:
 
-| Metrics                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| First Response Time (Avg) | The average time it takes for an agent to respond to a customer in a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Resolution Time (Avg)     | The average time required to resolve conversations with a customer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Queue Time (Avg)          | The average time that an incoming conversation waits for assignment to an agent.<br>This value is measurable in two scenarios:<br>- When [auto-assigning conversations](../conversation/conversation-routing/automatic-mode.md#automatic-assignment) is turned off for the Inbox.<br>- When the [conversation limit per agent](../settings/account-settings.md#conversation-limit-per-agent) is activated, and all agents in an Inbox with auto-assignment activated are at full capacity and unable to take on additional conversations. |
+| Metriken | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------|
+| Erste Reaktionszeit (Durchschnitt) | Die durchschnittliche Zeit, die ein Agent benötigt, um einem Kunden in einer Konversation zu antworten.                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Lösungszeit (Durchschnitt) | Die durchschnittliche Zeit, die benötigt wird, um Gespräche mit einem Kunden zu lösen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Wartezeit (Durchschnitt) | Die durchschnittliche Zeit, die eine eingehende Konversation auf die Zuweisung an einen Agenten wartet.<br>Dieser Wert ist in zwei Szenarien messbar:<br>- Wenn [Konversationen automatisch zuweisen](.. /conversation/conversation-routing/automatic-mode.md#automatic-assignment) ist für den Posteingang deaktiviert.<br>- Wenn die Option [Konversationslimit pro Agent](.. /settings/account-settings.md#conversation-limit-per-agent) aktiviert ist, und alle Agenten in einem Posteingang mit aktivierter automatischer Zuweisung sind voll ausgelastet und können keine weiteren Konversationen annehmen. |
 
-## Line Charts
+## Liniendiagramme
 
-### Conversation Metrics
+### Konversations-Metriken
 
-Indicates conversation details in a 24-hour time grid, visualized with colored lines:
+Zeigt Konversationsdetails in einem 24-Stunden-Zeitraster an, visualisiert durch farbige Linien:
 
-| Line graph                  | Description                                                     |
+| Liniendiagramm | Beschreibung |
 |-----------------------------|-----------------------------------------------------------------|
-| Incoming Conversations      | Number of conversations that were created in the last 24 hours. |
-| Conversation Duration (min) | Minutes it took to solve a conversation from start to finish.   |
-| Queued Conversations        | Number of conversations that are not assigned to an Agent.      |
+| Eingehende Unterhaltungen | Anzahl der Konversationen, die in den letzten 24 Stunden erstellt wurden. |
+| Gesprächsdauer (min) | Minuten, die es dauerte, um ein Gespräch von Anfang bis Ende zu lösen.   |
+| Unterhaltungen in der Warteschlange | Anzahl der Konversationen, die keinem Agenten zugewiesen sind.      |
 
-## Tables
+## Tabellen
 
-### Conversations by Agents
+### Unterhaltungen von Agenten
 
-Provides information about the status and performance of agents:
+Stellt Informationen über den Status und die Leistung von Agents bereit:
 
-| Title                   | Description                                                        |
+| Titel | Beschreibung |
 |-------------------------|--------------------------------------------------------------------|
-| STATUS                  | Indicates the status of the Agent: Away, Busy, Online, Offline.    |
-| OPEN                    | Number of active conversations pending.                            |
-| QUEUED                  | Indicates the number of assigned conversations waiting.            |
-| AVG FIRST RESPONSE TIME | Indicates the average value when an Agent responded first.         |
-| AVG RESOLUTION TIME     | Indicates the average value when an Agent resolved a conversation. |
-| RESOLVED                | Indicates how many conversations were resolved by Agents.          |
+| STATUS | Gibt den Status des Agenten an: Abwesend, Beschäftigt, Online, Offline.    |
+| GEÖFFNET | Anzahl der aktiven ausstehenden Konversationen.                            |
+| IN DER WARTESCHLANGE | Gibt die Anzahl der zugewiesenen Konversationen an, die warten.            |
+| DURCHSCHNITTLICHE ERSTE REAKTIONSZEIT | Gibt den Durchschnittswert an, wann ein Agent zuerst geantwortet hat.         |
+| DURCHSCHNITTLICHE AUFLÖSUNGSZEIT | Gibt den Durchschnittswert an, wenn ein Agent eine Konversation gelöst hat. |
+| GELÖST | Gibt an, wie viele Konversationen von Agenten gelöst wurden.          |
 
-You can modify an agent's status when they are online by clicking an agent icon in the **Agent** column of the table. You can choose to set their status as 'busy' or 'away.' However, if the agent is offline, any changes you attempt to make to their status will not be applied.
+Sie können den Status eines Agenten ändern, wenn er online ist, indem Sie auf ein Agentensymbol in der Spalte **Agent** der Tabelle klicken. Sie können wählen, ob der Status "Beschäftigt" oder "Abwesend" festgelegt werden soll. Wenn der Agent jedoch offline ist, werden alle Änderungen, die Sie an seinem Status vornehmen möchten, nicht angewendet.
 
-Additionally, you can filter the data in the table according to the agent's status.
+Darüber hinaus können Sie die Daten in der Tabelle nach dem Status des Agenten filtern.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Supervisor_overview_2.png" width="100%" alt="Live Agent Supervisor overview 2" />
-  <figcaption>Conversations by Agents chart</figcaption>
+  <figcaption>Diagramm "Unterhaltungen nach Agenten"</figcaption>
 </figure>
 
-## View a Report
+## Einen Bericht anzeigen
 
-To view a report, do the following:
+Um einen Bericht anzuzeigen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Overview**. 
-3. At the top of the report, from the **Inbox** list, select an Inbox you want to inspect.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Berichte > Übersicht**. 
+3. Wählen Sie oben im Bericht in der Liste **Posteingang** einen Posteingang aus, den Sie überprüfen möchten.
 
-The report will be updated with the corresponding data related to the selected Inbox.
+Der Bericht wird mit den entsprechenden Daten aktualisiert, die sich auf den ausgewählten Posteingang beziehen.
 
-## More Information
+## Mehr Informationen
 
-- [Reports](overview.md)
-- [Admin reports](admin/overview.md)
+- [Berichte](overview.md)
+- [Admin-Berichte](admin/overview.md)

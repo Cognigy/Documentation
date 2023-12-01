@@ -1,21 +1,14 @@
 ---
- title: "Deploy" 
- slug: "deploy" 
- hidden: false 
+ title: "Bereitstellen" 
+ slug: "Bereitstellen" 
+ ausgeblendet: false 
 ---
-# Deploy
+# Bereitstellen
 
-## Endpoints
-<div class="divider"></div>
+## Endpunkte<div class="divider"></div>Virtuelle Agenten müssen in Kanälen bereitgestellt werden, damit sie für das allgemeine Publikum verfügbar sind. Dabei kommen sogenannte Endpoints zum Einsatz.
 
-Virtual Agents need to be deployed to channels in order for them to be available to the general audience. This process uses so-called Endpoints.
+Weitere Informationen finden Sie unter [**Endpoints**]({{config.site_url}}ai/resources/deploy/endpoints/).
 
-Head over to [**Endpoints**]({{config.site_url}}ai/resources/deploy/endpoints/) for more information.
+## Schnappschüsse<div class="divider"></div>Snapshots ermöglichen die Bündelung von Ressourcen in einem einzigen Paket. Dies ist sehr nützlich, wenn Sie mit verschiedenen Agentenversionen arbeiten.
 
-## Snapshots
-
-<div class="divider"></div>
-
-Snapshots allow for the bundling of resources into a single package. This is very useful when working with different Agent versions.
-
-Head over to [**Snapshots**]({{config.site_url}}ai/resources/deploy/snapshots/) for more information.
+Weitere Informationen finden Sie unter [**Snapshots**]({{config.site_url}}ai/resources/deploy/snapshots/).

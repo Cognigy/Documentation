@@ -1,39 +1,39 @@
 ---
-title: "CALL_COMPLETED"
-slug: "CALL_COMPLETED"
-hidden: false
+Titel: "CALL_COMPLETED"
+Schnecke: "CALL_COMPLETED"
+ausgeblendet: false
 ---
 
 # CALL_COMPLETED
 
-The call was terminated by the virtual agent or by the user.
+Der Anruf wurde vom virtuellen Agenten oder vom Benutzer beendet.
 
-To test a payload with the `CALL_COMPLETED` event, you can use an empty Flow.
+Um eine Payload mit dem Ereignis "CALL_COMPLETED" zu testen, können Sie einen leeren Flow verwenden.
 
-Input: Start a call via the Interaction Panel by clicking ![phone](../../../assets/icons/phone.svg) **> Start Call**. The call will either automatically end when the virtual agent terminates the conversation due to inactivity, or you can end the call by clicking **End Call**.
+Eingabe: Starten Sie einen Anruf über das Interaction Panel, indem Sie auf ! [Telefon] (.. /.. /.. /assets/icons/phone.svg) **> Anruf starten**. Der Anruf wird entweder automatisch beendet, wenn der virtuelle Agent die Konversation aufgrund von Inaktivität beendet, oder Sie können den Anruf beenden, indem Sie auf **Anruf beenden** klicken.
 
-Payload:
+Nutzlast:
 
-```json
+'''json
 {
-    "payload": {
+    "Nutzlast": {
         "call_sid": "c0855b01-4207-480b-xxxx-xxxxxxxxxxxx",
-        "direction": "inbound",
+        "direction": "eingehend",
         "from": "user-2U4yyrZ3sgBXYvX6yyxxxx",
         "to": "123456789",
         "call_id": "9adb52f3-5e1e-123c-xxxx-xxxxxxxxxxxx",
         "sip_status": 200,
         "sip_reason": "OK",
-        "call_status": "completed",
+        "call_status": "abgeschlossen",
         "account_sid": "28265983-502c-4ed7-xxxx-xxxxxxxxxxxx",
-        "trace_id": "ddd45512f6c5bf3ab8d14727d2a93739",
+        "trace_id": "DDD45512F6C5BF3AB8D14727D2A93739",
         "application_sid": "822aff21-5879-403f-xxxx-xxxxxxxxxxxx",
         "fs_sip_address": "10.1.193.xxx:xxxx",
         "originating_sip_ip": "88.77.xx.xxx",
-        "call_termination_by": "bot",
-        "duration": 12,
+        "call_termination_by": "Bot",
+        "Dauer": 12,
         "api_base_url": "voicegateway-app.cognigy.ai/v1"
     },
     "event": "CALL_COMPLETED"
 }
-```
+'''

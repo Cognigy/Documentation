@@ -1,58 +1,58 @@
 ---
-title: "Recent Calls" 
-slug: "vg-webapp-recent-calls"
-description: "The Voice Gateway Recent Calls feature provides essential information about each call, including the date, direction, caller ID, recipient, SIP trunk, and call duration."
-hidden: false
+Titel: "Letzte Anrufe" 
+Slug: "vg-webapp-recent-calls"
+description: "Die Funktion "Letzte Anrufe" des Voice Gateways bietet wichtige Informationen zu jedem Anruf, einschließlich Datum, Richtung, Anrufer-ID, Empfänger, SIP-Trunk und Anrufdauer."
+ausgeblendet: false
 ---
 
-# Recent Calls
+# Kürzliche Anrufe
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.60-blue.svg)] (.. /.. /release-notes/4.60.md)
 
-*Recent Calls* are calls of your [account](accounts.md). Voice Gateway provides general data about the calls, such as the Date, Direction, From, To, SIP Trunk, and Call Duration. 
+*Kürzliche Anrufe* sind Anrufe Ihres [Kontos](accounts.md). Voice Gateway stellt allgemeine Daten zu den Anrufen bereit, z. B. Datum, Richtung, Von, An, SIP-Trunk und Anrufdauer. 
 
-Account, Date, Direction, and Status can filter these calls. Note that you can only filter by a maximum of the last 30 days.
+"Konto", "Datum", "Richtung" und "Status" können diese Anrufe filtern. Beachten Sie, dass Sie nur maximal nach den letzten 30 Tagen filtern können.
 
-To view detailed information about the call, click the **Details** tab.
+Um detaillierte Informationen zum Anruf anzuzeigen, klicken Sie auf die Registerkarte **Details**.
 
-Additionally, Voice Gateway provides PCAP files which can be downloaded in the detailed information overview.
+Darüber hinaus stellt Voice Gateway PCAP-Dateien zur Verfügung, die in der detaillierten Informationsübersicht heruntergeladen werden können.
 
-For inbound calls, you can analyze the captured media stream to diagnose and troubleshoot voice quality issues by clicking the **Tracing** tab and viewing the report. This feature provides valuable insights into the duration of different actions during the call, such as speech recognition and connections. By reviewing the report, you can identify any delays or issues that occurred during these actions, helping you pinpoint potential areas of improvement in terms of performance and efficiency.
+Bei eingehenden Anrufen können Sie den erfassten Medienstream analysieren, um Probleme mit der Sprachqualität zu diagnostizieren und zu beheben, indem Sie auf die Registerkarte **Ablaufverfolgung** klicken und den Bericht anzeigen. Diese Funktion bietet wertvolle Einblicke in die Dauer verschiedener Aktionen während des Anrufs, wie z. B. Spracherkennung und Verbindungen. Durch die Überprüfung des Berichts können Sie alle Verzögerungen oder Probleme identifizieren, die während dieser Aktionen aufgetreten sind, und so potenzielle Bereiche mit Verbesserungspotenzial in Bezug auf Leistung und Effizienz ermitteln.
 
-If [call recordings](recent-calls.md#call-recordings) are enabled under [account settings](accounts.md#call-recording-configuration), any recorded calls will also appear within an audio player beneath the call details.
+Wenn [Anrufaufzeichnungen](recent-calls.md#call-recordings) unter [Kontoeinstellungen](accounts.md#call-recording-configuration) aktiviert sind, werden alle aufgezeichneten Anrufe auch in einem Audioplayer unter den Anrufdetails angezeigt.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-recent-calls.png"  width="100%" />
 
-## PCAP fields
+## PCAP-Felder
 
-| Settings             | Description                                                                                                                             |
+| Einstellungen | Beschreibung |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| attempted_at         | The time of the attempt.                                                                                                                |
-| account_sid          | Identifies the account this phone belongs to.                                                                                           |
-| answered             | Determines whether a call was answered or not.                                                                                          |
-| answered_at          | The time when an answer was given.                                                                                                      |
-| application_sid      | A unique identifier for the application.                                                                                                |
-| call_sid             | A unique identifier for the call. Specific for the call SIP sessions.                                                                   |
-| direction            | Determines whether a call was inbound or unbound.                                                                                       |
-| duration             | The duration of the call in seconds.                                                                                                    |
-| from                 | A phone number of the party who made the call.                                                                                          |
-| host                 | An SBC SIP server that handled the incoming calls.                                                                                      |
-| remote_host          | Displays the IP address of carrier/SIP trunk.                                                                                           |
-| service_provider_sid | A unique identifier for the service provider.                                                                                           |
-| sip_callid           | A unique session identifier that you can use for several purposes, including call logging and billing correlation.                      |
-| sip_status           | A [SIP code response](https://en.wikipedia.org/wiki/List_of_SIP_response_codes).                                                        |
-| terminated_at        | The time of the call was ended.                                                                                                         |
-| termination_reason   | The reason why the call was ended.                                                                                                      |
-| to                   | A phone number of the party to whom the call was made.                                                                                  |
-| trace_id             | A unique identifier for the call. Can be used to track any type of call or session as it passes through different parts of the network. |
-| trunk                | A [carrier](carriers.md) name.                                                                                                          |
+| attempted_at | Der Zeitpunkt des Versuchs.                                                                                                                |
+| account_sid | Identifiziert das Konto, zu dem dieses Telefon gehört.                                                                                           |
+| beantwortet | Bestimmt, ob ein Anruf angenommen wurde oder nicht.                                                                                          |
+| answered_at | Der Zeitpunkt, an dem eine Antwort gegeben wurde.                                                                                                      |
+| application_sid | Ein eindeutiger Bezeichner für die Anwendung.                                                                                                |
+| call_sid | Ein eindeutiger Bezeichner für den Aufruf. Spezifisch für die Anruf-SIP-Sitzungen.                                                                   |
+| Richtung | Bestimmt, ob ein Anruf eingehend oder ungebunden war.                                                                                       |
+| Dauer | Die Dauer des Anrufs in Sekunden.                                                                                                    |
+| von | Eine Telefonnummer des Teilnehmers, der den Anruf getätigt hat.                                                                                          |
+| Gastgeber | Ein SBC-SIP-Server, der die eingehenden Anrufe verarbeitet hat.                                                                                      |
+| remote_host | Zeigt die IP-Adresse des Netzbetreibers/SIP-Trunks an.                                                                                           |
+| service_provider_sid | Eine eindeutige Kennung für den Dienstanbieter.                                                                                           |
+| sip_callid | Eine eindeutige Sitzungs-ID, die Sie für verschiedene Zwecke verwenden können, einschließlich Anrufprotokollierung und Abrechnungskorrelation.                      |
+| sip_status | Eine [SIP-Code-Antwort](https://en.wikipedia.org/wiki/List_of_SIP_response_codes).                                                        |
+| terminated_at | Die Zeit des Anrufs war beendet.                                                                                                         |
+| termination_reason | Der Grund, warum der Anruf beendet wurde.                                                                                                      |
+| bis | Eine Telefonnummer des Teilnehmers, an den der Anruf getätigt wurde.                                                                                  |
+| trace_id | Ein eindeutiger Bezeichner für den Aufruf. Kann verwendet werden, um jede Art von Anruf oder Sitzung zu verfolgen, während sie durch verschiedene Teile des Netzwerks läuft. |
+| Kofferraum | Ein [Spediteur](carriers.md) Name.                                                                                                          |
 
-## Call recordings
+## Gesprächsaufzeichnungen
 
-When call recording is enabled, you can use the embedded media player to listen to recordings of calls for debugging purposes.
+Wenn die Anrufaufzeichnung aktiviert ist, können Sie den eingebetteten Media Player verwenden, um Aufzeichnungen von Anrufen zu Debugging-Zwecken abzuhören.
 
-The included media player controls allow you to scan the audio, and additionally download the recording locally.
+Mit den mitgelieferten Mediaplayer-Steuerelementen können Sie den Ton scannen und die Aufnahme zusätzlich lokal herunterladen.
 
-Highlighted sections of the customer recording can be clicked, which opens a new window and displays the speech to a text result.
+Markierte Abschnitte der Kundenaufzeichnung können angeklickt werden, wodurch sich ein neues Fenster öffnet und die Sprache zu einem Textergebnis angezeigt wird.
 
-You can delete a call recording by clicking ![delete](../images/delete.svg). Note that this action will delete your file both from Voice Gateway and remote storage, for example, Amazon S3.
+Sie können eine Anrufaufzeichnung löschen, indem Sie auf ! [Löschen] (.. /images/delete.svg). Beachten Sie, dass diese Aktion Ihre Datei sowohl aus Voice Gateway als auch aus dem Remote-Speicher, z. B. Amazon S3, löscht.

@@ -1,38 +1,34 @@
 ---
- title: "Intent Hierarchy" 
- slug: "intent-hierarchy" 
- hidden: false 
+ Titel: "Absichtshierarchie" 
+ Schnecke: "Absichts-Hierarchie" 
+ ausgeblendet: false 
 ---
-# Intent Hierarchy
+# Absichts-Hierarchie
 
-The intent training module includes a **Hierarchy** feature that enable intent grouping and layering. This means that parent intents are created which can inherit the example sentences from child intents to provide more flexibility to the agent's understanding and increase the chances of the correct intent being identified.
+Das Intent-Trainingsmodul enthält eine **Hierarchie**-Funktion, die das Gruppieren und Layern von Absichten ermöglicht. Dies bedeutet, dass übergeordnete Absichten erstellt werden, die die Beispielsätze von untergeordneten Absichten erben können, um dem Verständnis des Agenten mehr Flexibilität zu verleihen und die Wahrscheinlichkeit zu erhöhen, dass die richtige Absicht identifiziert wird.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/51146c7-hierarchy.PNG" width="80%" />
 </figure>
 
-## Overview
-<div class="divider"></div>
-Intents are added as children by dragging and dropping on the parent intent via the intent list.
+## Übersicht<div class="divider"></div>Absichten werden als untergeordnete Absichten hinzugefügt, indem Sie die übergeordnete Absicht per Drag & Drop über die Absichtsliste ziehen.
 
-Intents can be structured into three layers:
+Intents können in drei Ebenen strukturiert werden:
 
-- Level 1 Intents
-- Level 2 Intents
-- Level 3 Intents
+- Absichten der Stufe 1
+- Absichten der Stufe 2
+- Absichten der Stufe 3
 
-!!! tip "Tip: Use Intent Naming Conventions"
-    It is recommended to follow a pattern when naming your intents. Either create a topic category name or use a numbering system to group intent families.
+!!! tip "Tipp: Verwenden Sie Absichts-Namenskonventionen"
+    Es wird empfohlen, bei der Benennung Ihrer Absichten einem Muster zu folgen. Erstellen Sie entweder einen Themenkategorienamen, oder verwenden Sie ein Nummerierungssystem, um Absichtsfamilien zu gruppieren.
 
-Level 1 Intents can inherit Example Sentences from their level 2 child Intents, which can inherit Example Sentences from their level 3 grandchild Intents. 
+Absichten der Ebene 1 können Beispielsätze von ihren untergeordneten Absichten der Ebene 2 erben, die wiederum Beispielsätze von ihren untergeordneten Absichten der Ebene 3 erben können. 
 
-## Inheritance
-<div class="divider"></div>
-Enable the *"Inherit Example Sentences from Child Intents"* slider for each intent to incorporate the example sentences of all child intents in the training model. 
+## Vererbung<div class="divider"></div>Aktivieren Sie den Schieberegler *"Beispielsätze von untergeordneten Absichten erben"* für jede Absicht, um die Beispielsätze aller untergeordneten Absichten in das Trainingsmodell einzubinden. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/df59f39-inherit.PNG" width="80%" />
 </figure>
 
-When an inherited example sentence is found, both the parent and the child intent will score a high intent mapping result but the child intent will be placed in the `input.intent` property. Find the parent as an additional high scoring intent in the `input.nlu.intentMapperResults.scores` array.
-You can find the whole found Intent hierarchy in the `input.intentLevel` object and in the `input.nlu.intentMapperResults.intentPath` array.
+Wenn ein geerbter Beispielsatz gefunden wird, erzielen sowohl die übergeordnete als auch die untergeordnete Absicht ein hohes Ergebnis für die Absichtszuordnung, aber die untergeordnete Absicht wird in der Eigenschaft "input.intent" platziert. Suchen Sie das übergeordnete Element als zusätzliche Absicht mit hoher Bewertung im Array "input.nlu.intentMapperResults.scores".
+Sie finden die gesamte gefundene Intent-Hierarchie im 'input.intentLevel'-Objekt und im 'input.nlu.intentMapperResults.intentPath'-Array.

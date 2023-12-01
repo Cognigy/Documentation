@@ -1,7 +1,7 @@
 ---
- title: "Avaya CPaaS" 
- slug: "avaya-cpaas" 
- hidden: false 
+ Titel: "Avaya CPaaS" 
+ Schnecke: "Avaya-CPAAs" 
+ ausgeblendet: false 
 ---
 
 # Avaya CPaaS
@@ -10,104 +10,71 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/avaya-cpaas-logo.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy.AI resources to your **Avaya CPaaS** phone number by using the Avaya CPaaS Endpoint.
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihre Cognigy.AI Ressourcen mit Ihrer **Avaya CPaaS**-Telefonnummer verbinden, indem Sie den Avaya CPaaS-Endpunkt verwenden.
 
-## Generic Endpoint Settings
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+## Generische Endpunkteinstellungen
+Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
 
-## Setting up Avaya CPaaS
+## Avaya CPaaS einrichten<div class="divider"></div>Um den Avaya CPaaS-Endpunkt in Cognigy.AI mit einer Telefonnummer in Avaya CPaaS zu verbinden, kopieren Sie die Endpunkt-URL aus dem Endpunkt in Cognigy.AI und fügen Sie sie in die Anforderungs-URL in der Avaya CPaaS-Telefonnummernkonfiguration ein.
 
-<div class="divider"></div>
+## Konfigurieren des Avaya CPaaS-Endpunkts<div class="divider"></div>Im Avaya CPaaS Endpoint können Sie anpassen, wie sich die Konversation mit Avaya CPaaS verhalten soll.
 
-To connect the Avaya CPaaS Endpoint in Cognigy.AI to a phone number in Avaya CPaaS, copy the Endpoint URL from within the Endpoint in Cognigy.AI and insert it into the Request URL inside the Avaya CPaaS phone number configuration.
+### Avaya-Einstellungen
 
-## Configuring the Avaya CPaaS Endpoint
-<div class="divider"></div>
-
-In the Avaya CPaaS Endpoint you can customize how the conversation with Avaya CPaaS should behave.
-
-### Avaya Settings
-
-In the **Avaya Settings** section, you can configure the following settings for the Avaya CPaaS Endpoint:
-
-<table>
+Im Abschnitt **Avaya-Einstellungen** können Sie die folgenden Einstellungen für den Avaya CPaaS-Endpunkt konfigurieren:<table>
     <tr>
-    <th>Setting</th>
-    <th>Description</th> 
+    <th>Beschreibung der Einstellung</th><th></th>
+     
   </tr>
   <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">STT + TTS Language</td>
-    <td style="padding: 20px;">
-      The language that Avaya CPaaS should use to read out the outputs from the bot.
-    </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">STT + TTS Sprache</td>
+    <td style="padding: 20px;">Die Sprache, die Avaya CPaaS verwenden soll, um die Ausgaben des Bots auszulesen.    </td>
   </tr>
     <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Voice</td>
-    <td style="padding: 20px;">
-      The voice to use with Avaya CPaaS.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Stimme</td>
+    <td style="padding: 20px;">Die Stimme, die mit Avaya CPaaS verwendet werden soll.      </td>
   </tr>
     <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Avaya CPaaS Token</td>
-    <td style="padding: 20px;">
-      An optional security token you can insert that comes from Avaya CPaaS to validate that the request does not come from a third party.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Avaya CPaaS-Token</td>
+    <td style="padding: 20px;">Ein optionales Sicherheitstoken, das Sie einfügen können und das von Avaya CPaaS stammt, um zu überprüfen, ob die Anforderung nicht von einem Drittanbieter stammt.      </td>
   </tr>
-</table>
-
-### Gather Settings
-In the **Gather Settings** section, you can configure several attributes that will be attached to the Gather statement that is sent to Avaya CPaaS:
-
-<table>
+</table>### Einstellungen sammeln
+Im Abschnitt **Gather-Einstellungen** können Sie mehrere Attribute konfigurieren, die an die Gather-Anweisung angehängt werden, die an Avaya CPaaS gesendet wird:<table>
     <tr>
-    <th>Setting</th>
-    <th>Description</th> 
+    <th>Beschreibung der Einstellung</th><th></th>
+     
   </tr>
   <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Action URL</td>
-    <td style="padding: 20px;">
-      The URL which Avaya CPaaS will use to send the user inputs to. Keep it empty to have the requests go to the Avaya CPaaS Endpoint.
-    </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Aktions-URL</td>
+    <td style="padding: 20px;">Die URL, die Avaya CPaaS verwendet, um die Benutzereingaben zu senden. Lassen Sie es leer, damit die Anforderungen an den Avaya CPaaS-Endpunkt gesendet werden.    </td>
   </tr>
     <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Input Type</td>
-    <td style="padding: 20px;">
-      The different kind of input types that Avaya CPaaS should accept. Default is digits + voice.
-    </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Eingabe-Typ</td>
+    <td style="padding: 20px;">Die verschiedenen Arten von Eingabetypen, die Avaya CPaaS akzeptieren sollte. Der Standardwert ist Ziffern + Stimme.    </td>
   </tr>
   <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Hints</td>
-    <td style="padding: 20px;">
-      A set of words or phrases that Avaya CPaaS should listen for. Commas should separate words.
-    </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Hinweise</td>
+    <td style="padding: 20px;">Eine Reihe von Wörtern oder Ausdrücken, auf die Avaya CPaaS achten soll. Kommas sollten Wörter trennen.    </td>
   </tr>
   <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Method</td>
-    <td style="padding: 20px;">
-      The HTTP request method that Avaya CPaaS should use to contact the Action URL. Default is POST.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Methode</td>
+    <td style="padding: 20px;">Die HTTP-Anforderungsmethode, die Avaya CPaaS verwenden soll, um die Aktions-URL zu kontaktieren. Der Standardwert ist POST.      </td>
   </tr>
       <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Timeout</td>
-    <td style="padding: 20px;">
-      The amount of time the user has to answer the bot before the call disconnects. The timeout is specified in seconds with a default value of 30 seconds. <b>Note:</b> The timeout starts counting as soon as the bot starts speaking, meaning if you are reading out a long text to the user, it might time out before they even start to answer.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Zeitüberschreitung</td>
+    <td style="padding: 20px;">Die Zeitspanne, die der Benutzer hat, um dem Bot zu antworten, bevor der Anruf unterbrochen wird. Die Zeitüberschreitung wird in Sekunden mit einem Standardwert von 30 Sekunden angegeben. <b>Anmerkung:</b> Das Timeout beginnt zu zählen, sobald der Bot zu sprechen beginnt, d.h. wenn Sie dem Benutzer einen langen Text vorlesen, kann es sein, dass es zu einer Zeitüberschreitung kommt, bevor er überhaupt mit der Antwort beginnt.      </td>
   </tr>
       <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Finish On Key</td>
-    <td style="padding: 20px;">
-      The key the user should press to send an answer when using DTMF.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Auf Taste beenden</td>
+    <td style="padding: 20px;">Die Taste, die der Benutzer drücken sollte, um eine Antwort zu senden, wenn DTMF verwendet wird.      </td>
   </tr>
       <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Num digits</td>
-    <td style="padding: 20px;">
-      The maximum amount of digits the user can enter.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Ziffern</td>
+    <td style="padding: 20px;">Die maximale Anzahl von Ziffern, die der Benutzer eingeben kann.      </td>
   </tr>
 </table>

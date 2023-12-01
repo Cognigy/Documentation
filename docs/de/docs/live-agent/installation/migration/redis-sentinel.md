@@ -1,120 +1,121 @@
 ---
-title: "Migration guide for Redis Sentinel in Live Agent 4.53"
-slug: "migration-guide-for-redis-sentinel-in-live-agent"
-description: "This migration guide assists in upgrading the Redis chart to utilize Redis Sentinel for high availability in Live Agent version 4.53 and later versions."
-hidden: false
+Titel: "Migrationshandbuch für Redis Sentinel in Live Agent 4.53"
+Slug: "migration-guide-for-redis-sentinel-in-live-agent"
+Beschreibung: "Dieser Migrationsleitfaden unterstützt Sie beim Aktualisieren des Redis-Diagramms, um Redis Sentinel für Hochverfügbarkeit in Live Agent Version 4.53 und höheren Versionen zu verwenden."
+ausgeblendet: false
 ---
 
-# Migration guide for Redis Sentinel in Live Agent 4.53
+# Migrationsleitfaden für Redis Sentinel in Live Agent 4.53
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../../release-notes/4.53.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.53-blue.svg)] (.. /.. /.. /release-notes/4.53.md)
 
-This migration guide is for the Live Agent 4.53 version upgrade. This release upgrades the Redis chart to use Redis Sentinel for high availability.
+Dieser Migrationsleitfaden gilt für das Upgrade der Live Agent 4.53-Version. In dieser Version wird das Redis-Diagramm aktualisiert, um Redis Sentinel für Hochverfügbarkeit zu verwenden.
 
-## Perform a Standard Upgrade
+## Durchführen eines Standard-Upgrades
 
-The first step is to perform a standard upgrade of the Live Agent chart to the desired new version to ensure the migration job is run before enabling Redis Sentinel.
+Der erste Schritt besteht darin, ein Standard-Upgrade des Live Agent-Diagramms auf die gewünschte neue Version durchzuführen, um sicherzustellen, dass der Migrationsauftrag ausgeführt wird, bevor Redis Sentinel aktiviert wird.
 
-If the values were not specified previously, ensure that Sentinel mode is disabled in the `values.yaml` file.
+Wenn die Werte zuvor nicht angegeben wurden, stellen Sie sicher, dass der Sentinel-Modus in der Datei "values.yaml" deaktiviert ist.
 
-```yaml
+'''Yaml
 # ...
 
 redis:
-  enabled: true
-  sentinel:
-    enabled: false
+  Aktiviert: true
+  Wache:
+    Aktiviert: false
 # ...
-```
+'''
 
-Upgrade the chart to the latest version.
+Aktualisieren Sie das Diagramm auf die neueste Version.
 
-```bash
+'''bash
  helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
-```
+'''
 
-## Change values.yaml
+## Werte.yaml ändern
 
-The new values for version 4.53 already include the new Redis Sentinel configuration. If you use a custom `values.yaml` file, ensure it does not override the new Redis Sentinel configuration.
+Die neuen Werte für Version 4.53 enthalten bereits die neue Redis Sentinel-Konfiguration. Wenn Sie eine benutzerdefinierte Datei "values.yaml" verwenden, stellen Sie sicher, dass die neue Redis Sentinel-Konfiguration nicht überschrieben wird.
 
-```yaml
+'''Yaml
 # ...
 
 redis:
-  enabled: true
-  sentinel:
-    enabled: true
+  Aktiviert: true
+  Wache:
+    Aktiviert: true
 # ...
-```
+'''
 
-## Change the Migration Job Hooks
+## Ändern der Hooks für Migrationsaufträge
 
-The migration job hooks must be temporarily changed to `post-install,post-upgrade` to run the migration job after the upgrade. Otherwise, the migration job will run before new Redis pods are created, resulting in a failed migration.
+Die Hooks für den Migrationsauftrag müssen vorübergehend in "post-install,post-upgrade" geändert werden, um den Migrationsauftrag nach dem Upgrade auszuführen. Andernfalls wird der Migrationsauftrag ausgeführt, bevor neue Redis-Pods erstellt werden, was zu einer fehlgeschlagenen Migration führt.
 
-```yaml
-# migration job (uncomment if needed)
-migration:
-  enabled: true
-  hooks:
-    migrate:
-      # the setting here will override the default, which is "post-install,pre-upgrade"
-      hookAnnotation: "post-install,post-upgrade"
-```
+'''Yaml
+# Migrationsauftrag (bei Bedarf auskommentieren)
+Migration:
+  Aktiviert: true
+  Haken:
+    wandern:
+      # Die Einstellung hier überschreibt die Standardeinstellung, die "post-install,pre-upgrade" ist
+      hookAnnotation: "nach der Installation, nach dem Upgrade"
+'''
 
-### Upgrade the chart
+### Aktualisieren Sie das Diagramm
 
-Upgrade the chart to the latest version.
+Aktualisieren Sie das Diagramm auf die neueste Version.
 
-```bash
+'''bash
  helm upgrade cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version X.X.X --namespace live-agent -f custom-values.yaml
-```
+'''
 
-### Verify Functionality and Pod Status
+### Überprüfen der Funktionalität und des Pod-Status
 
-Ensure that the pods are running and the application is functioning correctly, including passing the startup health check.
+Stellen Sie sicher, dass die Pods ausgeführt werden und die Anwendung ordnungsgemäß funktioniert, einschließlich des Bestehens der Systemdiagnose für den Start.
 
-```bash
+'''bash
 kubectl get pods
-```
+'''
 
-### Remove the Old PVCs and PVs
+### Entfernen Sie die alten PVCs und PVs
 
-Remove the previous PVCs used by the Redis pods before the upgrade. They are typically named as follows:
+Entfernen Sie vor dem Upgrade die vorherigen PVCs, die von den Redis-Pods verwendet wurden. Sie werden in der Regel wie folgt benannt:
 
-- `redis-data-cognigy-live-agent-redis-master-0`
-- `redis-data-cognigy-live-agent-redis-replicas-0`
+- 'redis-data-cognigy-live-agent-redis-master-0'
+- 'redis-data-cognigy-live-agent-redis-replicas-0'
 
-To remove the previous PVCs and PVS, follow these steps:
+Gehen Sie folgendermaßen vor, um die vorherigen PVCs und PVS zu entfernen:
 
-1. Check that PVCs' status is now `Released`:
-   ```bash
+1. Überprüfen Sie, ob der Status der PVCs jetzt "Freigegeben" ist:
+   '''bash
    kubectl get pvc -n live-agent
-   ```
-2. Delete PVCs.
-   ```bash
+   '''
+2. PVCs löschen.
+   '''bash
    kubectl delete pvc redis-data-cognigy-live-agent-redis-master-0 -n live-agent
    kubectl delete pvc redis-data-cognigy-live-agent-redis-replicas-0 -n live-agent
-   ```
-3. Check that the PVs are now `Available`.
-   ```bash
+   '''
+3. Vergewissern Sie sich, dass die PVs jetzt "Verfügbar" sind.
+   '''bash
    kubectl get pv
-   ```
-4. Delete PVs.
-   ```bash
-   kubectl delete pv <pv_name> # replace <pv_name> with the name of the PV associated with the deleted PVCs
-   ```
+   '''
+4. PVs löschen.
+   '''bash
+   kubectl delete pv <pv_name> # Ersetzen <pv_name> Sie durch den Namen des PV, der den gelöschten PVCs zugeordnet ist
+   '''
 
-## Remove the Migration Job Hooks after the Upgrade
+## Entfernen Sie die Hooks für den Migrationsauftrag nach dem Upgrade
 
-Remove the migration job hooks from the `values.yaml` file that was added in the previous step and revert to the default value after the upgrade.
+Entfernen Sie die Hooks für den Migrationsauftrag aus der Datei "values.yaml", die im vorherigen Schritt hinzugefügt wurde, und stellen Sie nach dem Upgrade den Standardwert wieder her.
 
-```yaml
-# migration job (uncomment if needed)
-# migration:
-#   enabled: true
-#   hooks:
-#     migrate:
-#       hookAnnotation: "post-install,pre-upgrade"
-```
+'''Yaml
+# Migrationsauftrag (bei Bedarf auskommentieren)
+# Migration:
+# aktiviert: true
+# Haken:
+# migrieren:
+# hookAnnotation: "nach der Installation, vor dem Upgrade"
+'''
 
-If you have any issues, [contact technical support](https://support.cognigy.com/hc/en-us/requests/new?).
+Wenn Sie Probleme haben, [technischen Support kontaktieren](https://support.cognigy.com/hc/en-us/requests/new?).
+</pv_name></pv_name>

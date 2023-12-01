@@ -1,7 +1,7 @@
 ---
- title: "Dialogflow" 
- slug: "dialogflow" 
- hidden: false 
+ Titel: "Dialogflow" 
+ Slug: "Dialogflow" 
+ ausgeblendet: false 
 ---
 # Dialogflow
 
@@ -9,35 +9,26 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/5d94892-EP_Dialogflow.png" width="100%" />
 </figure>
 
-In case you have existing functionality on Dialogflow, or want to make use of one of Dialogflow's integrations, this Endpoint has you covered. 
+Für den Fall, dass Sie bereits über Funktionen in Dialogflow verfügen oder eine der Integrationen von Dialogflow nutzen möchten, ist dieser Endpunkt genau das Richtige für Sie. 
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+## Spezifische Endpunkteinstellungen<div class="divider"></div>Im Dropdown-Menü Dialogablaufeinstellungen können Cognigy.AI für die DialogFlow-Kommunikation konfiguriert werden.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
+### Slots neu parsen
 
-## Specific Endpoint Settings
+Wenn Sie den Schalter **Slots reparse** aktivieren, können Sie Ihre Dialogflow- und Cognigy-NLU kombinieren. Mit dieser Funktion können die von Dialog flow gefundenen Slots an Cognigy.AI übergeben und von der Cognigy NLU verarbeitet werden.
 
-<div class="divider"></div>
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Dialogflow**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016153980).
 
-The Dialog Flow Settings dropdown menu is where Cognigy.AI can be configured to handle DialogFlow communications.
+## Mehr Informationen
 
-### Reparse Slots
-
-By enabling the **Reparse Slots** toggle you can combine your Dialogflow and Cognigy NLU. This feature allows the slots found by Dialog flow to be passed to Cognigy.AI and processed by the Cognigy NLU.
-
-!!! note "Help Center"
-    For more detailed information on how to set up a **Dialogflow** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016153980).
-
-## More Information
-
-
-- [HelpCenter: Dialogflow Intro ](https://support.cognigy.com/hc/en-us/articles/360016153980)
-- [HelpCenter: Dialogflow Deployment](https://support.cognigy.com/hc/en-us/articles/360016154040)
+- [HelpCenter: Dialogflow-Einführung](https://support.cognigy.com/hc/en-us/articles/360016153980)
+- [HelpCenter: Dialogflow-Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016154040)

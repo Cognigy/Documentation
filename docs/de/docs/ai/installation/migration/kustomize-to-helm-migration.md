@@ -1,357 +1,355 @@
 ---
-title: "Kustomize to Helm"
-slug: "kustomize-to-helm-migration"
-hidden: false
-ignore_macros: true
+Titel: "Kustomize to Helm"
+Slug: "Kustomize-to-Helm-Migration"
+ausgeblendet: false
+ignore_macros: wahr
 ---
 
-# Kustomize to Helm 
+# Kustomize zum Helm 
 
-## Prerequisites
+## Voraussetzungen
 
 - Kubernetes v1.21 - 1.23.
-- Kubectl utility installed locally on Linux or macOS client host. The following guide does not support Windows client hosts.
-- [Helm](https://helm.sh/) v3.8+ installed on the client host.
-- [Yq](https://github.com/mikefarah/yq/) installed on the client host.
-- Kubernetes cluster meets general Cognigy.AI [prerequisites](https://docs.cognigy.com/ai/installation/prerequisites/#whitelisting-of-domains), including hardware resources.
-- Backup of Cognigy secrets for Kustomize installation (MongoDB and Redis connection strings) exists in the form of Kubernetes manifests.
-- [Multi-replica MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) is used. Cognigy.AI Helm Chart is incompatible with the single-replica MongoDB (mongo-server) installation. If you have not migrated from single to multi-replica, follow [migration guide](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md). 
-- Cognigy.AI Kustomize installation must be the same version as Cognigy.AI Helm Chart during migration.
-- Cognigy.AI Kustomize installation must be >= v4.38.
-- Snapshots/Backups of all PVCs/PVs (MongoDB, Redis-Persistent, flow-modules, flow-functions) are made before the migration starts.
+- Lokal auf dem Linux- oder macOS-Client-Host installiertes Dienstprogramm Kubectl. Das folgende Handbuch unterstützt keine Windows-Clienthosts.
+- [Helm](https://helm.sh/) v3.8+ auf dem Client-Host installiert.
+- [Yq](https://github.com/mikefarah/yq/) auf dem Client-Host installiert.
+- Der Kubernetes-Cluster erfüllt allgemeine Cognigy.AI [Voraussetzungen](https://docs.cognigy.com/ai/installation/prerequisites/#whitelisting-of-domains), einschließlich Hardwareressourcen.
+- Die Sicherung von Cognigy-Geheimnissen für die Kustomize-Installation (MongoDB- und Redis-Verbindungszeichenfolgen) liegt in Form von Kubernetes-Manifesten vor.
+- [Multi-replica MongoDB Helm Chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) wird verwendet. Cognigy.AI Helm-Diagramm ist nicht mit der MongoDB-Installation (Mongo-Server) mit einem Replikat kompatibel. Wenn Sie noch nicht von einem zu einem Multi-Replikat migriert sind, befolgen Sie die Anweisungen [Migrationsanleitung](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md). 
+- Cognigy.AI Kustomize-Installation muss während der Migration die gleiche Version wie Cognigy.AI Helm Chart haben.
+- Cognigy.AI Kustomize-Installation muss >= v4.38 sein.
+- Snapshots/Backups aller PVCs/PVs (MongoDB, Redis-Persistent, Flow-Module, Flow-Funktionen) werden vor Beginn der Migration erstellt.
 
-## Migration Checklist 
+## Checkliste für die Migration 
 
-There are 2 migration scenarios considered here:
+Hier werden 2 Migrationsszenarien betrachtet:
    
-- **Migration inside the existing cluster.** Cognigy.AI Helm chart in the `cognigy-ai` namespace and MongoDB Helm Chart in the `mongodb` namespace are installed alongside the existing Kustomize installation. We strongly recommend this scenario as this process significantly simplifies the migration of the existing storage.
-- **Migration to a new cluster.** Cognigy.AI and MongoDB Helm Charts are installed in a new cluster. This scenario is more complex than the first one. You will either need to ensure that underlying storage for existing PVCs can be reattached to the new cluster or restore the data from snapshots in the new cluster.
+- **Migration innerhalb des vorhandenen Clusters.** Cognigy.AI Helm-Chart im 'cognigy-ai'-Namespace und MongoDB-Helm-Chart im 'mongodb'-Namespace werden zusammen mit der vorhandenen Kustomize-Installation installiert. Dieses Szenario wird dringend empfohlen, da dieser Prozess die Migration des vorhandenen Speichers erheblich vereinfacht.
+- **Migration zu einem neuen Cluster.** Cognigy.AI- und MongoDB-Helm-Charts werden in einem neuen Cluster installiert. Dieses Szenario ist komplexer als das erste. Sie müssen entweder sicherstellen, dass der zugrunde liegende Speicher für vorhandene PVCs erneut an den neuen Cluster angefügt werden kann, oder die Daten aus Snapshots im neuen Cluster wiederherstellen.
 
-Before starting migration, do the following steps: 
+Führen Sie vor Beginn der Migration die folgenden Schritte aus: 
 
-- Make sure backups (snapshots) for all PVCs are created in your Cloud Provider, including MongoDB, redis-persistent, flow-modules, functions.
-- Make sure a backup of Cognigy secrets for Kustomize installation is present.
-- Prepare `values_prod.yaml` values file for Cognigy.AI Helm Chart as described [here](https://github.com/Cognigy/cognigy-ai-helm-chart). Ensure that all adjustments (patches) of the current Kustomize installation done form your side are properly migrated to `values_prod.yaml` file: ENV variables, resource request/limits, replica counts, etc.
-- Prepare the script from [Rename MongoDB Databases](#rename-mongodb-databases) section, fill in the required password values in advance.
+- Stellen Sie sicher, dass Backups (Snapshots) für alle PVCs in Ihrem Cloud-Anbieter erstellt werden, einschließlich MongoDB, redis-persistent, flow-modules und functions.
+- Stellen Sie sicher, dass ein Backup der Cognigy-Geheimnisse für die Kustomize-Installation vorhanden ist.
+- Bereiten Sie die Wertedatei 'values_prod.yaml' für Cognigy.AI Helm-Chart vor, wie [hier](https://github.com/Cognigy/cognigy-ai-helm-chart) beschrieben. Stellen Sie sicher, dass alle Anpassungen (Patches) der aktuellen Kustomize-Installation, die von Ihrer Seite aus vorgenommen wurden, ordnungsgemäß in die Datei "values_prod.yaml" migriert werden: ENV-Variablen, Ressourcenanforderung/-limits, Anzahl der Replikate usw.
+- Bereiten Sie das Skript aus dem Abschnitt [MongoDB-Datenbanken umbenennen](#rename-mongodb-databases) vor und geben Sie die erforderlichen Kennwortwerte im Voraus ein.
 
-## Preparation for Migration
+## Vorbereitung auf die Migration
 
-This section describes the procedure to prepare the migration of Cognigy.AI from Kustomize to Helm. These steps can be performed in advance and without bringing your Cognigy.AI installation down.
+In diesem Abschnitt wird das Verfahren zum Vorbereiten der Migration von Cognigy.AI von Kustomize zu Helm beschrieben. Diese Schritte können im Voraus durchgeführt werden, ohne dass Ihre Cognigy.AI Installation heruntergefahren wird.
 
-### Secrets
+### Geheimnisse
 
-During migration, Cognigy.AI product will be moved from `default` to a different namespace. In this document, we consider `cognigy-ai` as a target namespace, you can replace it with a namespace of your choice, but we strongly recommend using the `cognigy-ai` namespace. Hence, it is required to migrate the existing secrets to the new namespace and inform Helm release about the migrated secrets. To do so, execute the following steps:
+Während der Migration wird Cognigy.AI Produkt von "default" in einen anderen Namespace verschoben. In diesem Dokument betrachten wir 'cognigy-ai' als Ziel-Namespace, Sie können es durch einen Namespace Ihrer Wahl ersetzen, aber wir empfehlen dringend, den 'cognigy-ai'-Namespace zu verwenden. Daher ist es erforderlich, die vorhandenen Geheimnisse in den neuen Namespace zu migrieren und das Helm-Release über die migrierten Geheimnisse zu informieren. Führen Sie dazu die folgenden Schritte aus:
 
-1. The migration scripts can be found in [this](https://github.com/Cognigy/cognigy-ai-helm-chart) repository. Clone the repository and checkout to your current Cognigy.AI version:
-```bash
+1. Die Migrationsskripte befinden sich in [diesem](https://github.com/Cognigy/cognigy-ai-helm-chart) Repository. Klonen Sie das Repository und checken Sie es in Ihre aktuelle Cognigy.AI Version aus:
+'''bash
 git clone https://github.com/Cognigy/cognigy-ai-helm-chart.git
 git checkout tags/<release>
-cd scripts/kustomize-to-helm-migration-scripts
-```
-2. Place a backup of existing secrets in the `secrets` folder.
-3. Copy the `secrets` folder into the `kustomize-to-helm-migration-scripts` folder 
-4. Make sure that all the existing secrets are stored in the `secrets` folder before running the script.
-5. Execute the script, it will generate new secrets for the Helm installation in the `migration-secrets` folder:
-```bash
-pip3 install -r requirements.txt
+cd-skripte/kustomize-to-helm-migration-scripts
+'''
+2. Legen Sie eine Sicherungskopie der vorhandenen Geheimnisse im Ordner "secrets" ab.
+3. Kopieren Sie den Ordner "secrets" in den Ordner "kustomize-to-helm-migration-scripts" 
+4. Stellen Sie sicher, dass alle vorhandenen Geheimnisse im Ordner "secrets" gespeichert sind, bevor Sie das Skript ausführen.
+5. Führen Sie das Skript aus, es generiert neue Geheimnisse für die Helm-Installation im Ordner 'migration-secrets':
+'''bash
+pip3 install -r Anforderungen:.txt
 python3 secret-migration.py -ns cognigy-ai
-```
-1. Apply the secrets into a new `cognigy-ai` namespace:
-```bash
+'''
+1. Wenden Sie die Geheimnisse in einen neuen "cognigy-ai"-Namespace an:
+'''bash
 kubectl create ns cognigy-ai
 kubectl apply -f migration-secrets
-```
-### Persistent Volumes
+'''
+### Persistente Volumes
 
-This subsection describes the migration of persistent volumes for AWS (EBS and EFS with efs-provisoner) and AZURE (Azure disk and Azure files). If your Cognigy.AI  is deployed on a different cloud provider, you need to adapt the migration steps accordingly.
+In diesem Unterabschnitt wird die Migration von persistenten Volumes für AWS (EBS und EFS mit efs-provisoner) und AZURE (Azure-Datenträger und Azure-Dateien) beschrieben. Wenn Ihr Cognigy.AI bei einem anderen Cloud-Anbieter bereitgestellt wird, müssen Sie die Migrationsschritte entsprechend anpassen.
 
-This subsection considers the **Migration inside the existing cluster** scenario. For the **Migration to a new cluster** scenario, you need to restore the data from snapshots of persistent volumes made in the old cluster. We do not provide any commands for the second case, as this process heavily depends on your cloud provider setup. Refer to your infrastructure data backup and restore processes and your cloud provider's documentation.
+In diesem Unterabschnitt wird das Szenario "Migration innerhalb des vorhandenen Clusters" behandelt. Für das Szenario **Migration zu einem neuen Cluster** müssen Sie die Daten aus Snapshots von persistenten Volumes wiederherstellen, die im alten Cluster erstellt wurden. Für den zweiten Fall stellen wir keine Befehle zur Verfügung, da dieser Prozess stark von der Einrichtung Ihres Cloud-Anbieters abhängt. Weitere Informationen finden Sie in den Sicherungs- und Wiederherstellungsprozessen Ihrer Infrastrukturdaten und in der Dokumentation Ihres Cloud-Anbieters.
 
-1. Create snapshots of existing Cognigy.AI PVCs: `flow-modules`, `functions`, `redis-persistent`
-2. To avoid loss of PVs during the migration, set `Reclaim Policy` to `retain` for underlying PVs of 3 PVCs mentioned above and note down the corresponding PV names:
-```bash
-# get the PV names for PVs attached to flow-modules`, `functions`, `redis-persistent` PVCs of Kustomize installation:
+1. Erstellen Sie Snapshots von bestehenden Cognigy.AI PVCs: 'flow-modules', 'functions', 'redis-persistent'
+2. Um den Verlust von PVs während der Migration zu vermeiden, setzen Sie "Reclaim Policy" auf "Retain" für zugrunde liegende PVs von 3 oben genannten PVCs und notieren Sie sich die entsprechenden PV-Namen:
+'''bash
+# Holen Sie sich die PV-Namen für PVs, die an Flow-Module', 'functions', 'redis-persistent' PVCs der Kustomize-Installation angeschlossen sind:
 kubectl get pv 
-# patch the reclaim policy for PV, set <pv-name> to the NAME from the previous command, repeat for all 3 PVCs:
-kubectl patch pv <pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
-# check that reclaim policy has changed to Retain: 
+# Patchen Sie die Rückforderungsrichtlinie für PV, setzen Sie <pv-name> sie auf den NAMEN aus dem vorherigen Befehl, wiederholen Sie dies für alle 3 PVCs:
+kubectl patch pv -p '{"spec": {" <pv-name> persistentVolumeReclaimPolicy":"Behalten"}}'
+# Überprüfen Sie, ob sich die Rückforderungsrichtlinie in Beibehalten geändert hat: 
 kubectl get pv
-```
-1. Get the PVs IDs and note them down:
-```bash
+'''
+1. Holen Sie sich die PV-IDs und notieren Sie sie:
+'''bash
 kubectl get pv | grep -E 'redis-persistent|flow-modules|functions'
 for i in $(kubectl get pv | grep -E 'redis-persistent|flow-modules|functions' | awk '{print $1}')
-do
-echo $i
-done
-```
-1. *(AWS only)* Get the IDs of underlying Volumes (EFS files shares) for all 2 PVs mentioned above and note them down. You will need to use these IDs in the following steps: 
-```bash
-## Get details of the PVs, set <pv-name> to the NAME of PV attached flow-modules, functions, and redis-persistent PVCs:
+Fass
+Echo $i
+fertig
+'''
+1. *(Nur AWS)* Rufen Sie die IDs der zugrunde liegenden Volumes (EFS-Dateifreigaben) für alle 2 oben genannten PVs ab und notieren Sie sie. Sie müssen diese IDs in den folgenden Schritten verwenden: 
+'''bash
+## Rufen Sie Details zu den PVs ab, die <pv-name> auf den NAMEN der an PV angeschlossenen Durchflussmodule, Funktionen und redispersistenten PVCs gesetzt sind:
 kubectl describe pv <pv-name> 
-## Example for `flow modules` and `functions` PVs on AWS: 
-Source:
-Type:      NFS (an NFS mount that lasts the lifetime of a pod)
-Server:    fs-000000000001a.efs.eu-central-1.amazonaws.com
-```
+## Beispiel für 'Flow Module' und 'Functions' PVs auf AWS: 
+Quelle:
+Typ: NFS (ein NFS-Mount, der die Lebensdauer eines Pods überdauert)
+Server: fs-000000000001a.efs.eu-central-1.amazonaws.com
+'''
 
-1. *(AWS only)*: Set the IDs of `flow-modules` and `functions` volumes obtained in the previous step in your `values_prod.yaml` for Cognigy.AI Helm Chart:
-```yaml
-# Example for AWS:
+1. *(nur AWS)*: Legen Sie die IDs der Volumes "flow-modules" und "functions" fest, die Sie im vorherigen Schritt in Ihrer "values_prod.yaml" für Cognigy.AI Helm-Diagramm erhalten haben:
+'''Yaml
+# Beispiel für AWS:
 efs:
-  flowModules:
-    id: "fs-000000000001a"
-  functions:
-    id: "fs-000000000001b"
-```
-1. *(AWS only)*: For the **Migration inside the existing cluster** scenario, add annotations and labels to existing `flow-modules` and `functions` storage classes and related rolebindings:
-```bash
-## annotate `flow-modules` and `functions` StorageClasses
+  flowModule:
+    Kennung: "FS-00000000000001A"
+  Funktionen:
+    Kennung: "FS-00000000000001B"
+'''
+1. *(nur AWS)*: Fügen Sie für das Szenario **Migration innerhalb des vorhandenen Clusters** Anmerkungen und Bezeichnungen zu vorhandenen Speicherklassen "flow-modules" und "functions" und zugehörigen Rollenbindungen hinzu:
+'''bash
+## 'flow-modules' und 'functions' annotieren StorageClasses
 kubectl annotate storageclass flow-modules meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label storageclass flow-modules app.kubernetes.io/managed-by=Helm
-kubectl annotate storageclass functions meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
-kubectl label storageclass functions app.kubernetes.io/managed-by=Helm
+kubectl annotate storageclass-Funktionen meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
+kubectl label storageclass-Funktionen app.kubernetes.io/managed-by=Helm
 
-## AWS only: annotate related ClusterRoleBindings
+## Nur AWS: Kommentieren verwandter ClusterRoleBindings
 kubectl annotate clusterrolebindings efs-provisioner-flow-modules meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label clusterrolebindings efs-provisioner-flow-modules app.kubernetes.io/managed-by=Helm
 kubectl annotate clusterrolebindings efs-provisioner-functions meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label clusterrolebindings efs-provisioner-functions app.kubernetes.io/managed-by=Helm
-```
-7. Save backups of PVC manifests for Kustomize and Helm installations:
-```bash
+'''
+7. Speichern Sie Backups von PVC-Manifesten für Kustomize- und Helm-Installationen:
+'''bash
 kubectl get pvc -n=default redis-persistent -o yaml > redis-persistent-pvc-kustomize.yaml
 kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc-kustomize.yaml
-kubectl get pvc -n=default functions -o yaml > functions-pvc-kustomize.yaml
-```
-8. Create another copy of PVC manifests which will be modified in next step:
+kubectl get pvc -n=Standardfunktionen -o yaml > functions-pvc-kustomize.yaml
+'''
+8. Erstellen Sie eine weitere Kopie der PVC-Manifeste, die im nächsten Schritt geändert werden:
 
-```bash
+'''bash
 kubectl get pvc -n=default redis-persistent -o yaml > redis-persistent-pvc.yaml
 kubectl get pvc -n=default flow-modules -o yaml > flow-modules-pvc.yaml
-kubectl get pvc -n=default functions -o yaml > functions-pvc.yaml
-```
-9. Remove unnecessary fields from PVC:
-```bash
-for i in redis-persistent-pvc flow-modules-pvc functions-pvc
-do
-    yq -i 'del(.metadata.annotations, .metadata.finalizers, .metadata.labels,  .metadata.creationTimestamp, .metadata.resourceVersion, .metadata.uid, .status)' $i.yaml
-done
-```
-10. Edit PVC manifests saved in Step 8 for all 3 PVCs in the following way:
+kubectl get pvc -n=Standardfunktionen -o yaml > functions-pvc.yaml
+'''
+9. Entfernen Sie unnötige Felder aus PVC:
+'''bash
+für i in redis-persistent-pvc flow-modules-pvc functions-pvc
+Fass
+    yq -i 'del(.metadata.annotations, .metadata.finalizers, .metadata.labels, .metadata.creationTimestamp, .metadata.resourceVersion, .metadata.uid, .status)' $i.yaml
+fertig
+'''
+10. Bearbeiten Sie die in Schritt 8 gespeicherten PVC-Manifeste für alle 3 PVCs folgendermaßen:
 
-  1. Change `metadata.namespace` to `cognigy-ai`. 
-  2. Add `meta.helm.sh/release-name: cognigy-ai` and `meta.helm.sh/release-namespace: cognigy-ai` under `metadata.annotations`. 
-  3. Add `app.kubernetes.io/managed-by: Helm` under `metadata.labels`.
-  4. Change `spec.volumeName` to the name of the respective PVs from Step 2.
+1. Ändern Sie 'metadata.namespace' in 'cognigy-ai'. 
+  2. Fügen Sie "meta.helm.sh/release-name: cognigy-ai" und "meta.helm.sh/release-namespace: cognigy-ai" unter "metadata.annotations" hinzu. 
+  3. Fügen Sie "app.kubernetes.io/managed-by: Helm" unter "metadata.labels" hinzu.
+  4. Ändern Sie 'spec.volumeName' in den Namen der jeweiligen PVs aus Schritt 2.
 
 ### Traefik
 
-If you use the `Traefik` reverse-proxy shipped with Cognigy.AI installation by default, you need to execute the following commands. You do not need to execute these commands if you use a 3rd-party reverse-proxy:
-```bash
+Wenn Sie standardmäßig den Reverse-Proxy 'Traefik' verwenden, der mit Cognigy.AI Installation ausgeliefert wird, müssen Sie die folgenden Befehle ausführen. Sie müssen diese Befehle nicht ausführen, wenn Sie einen Reverse-Proxy eines Drittanbieters verwenden:
+'''bash
 kubectl annotate clusterrole traefik meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label clusterrole traefik app.kubernetes.io/managed-by=Helm
 kubectl annotate clusterrolebindings traefik meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label clusterrolebindings traefik app.kubernetes.io/managed-by=Helm
 kubectl annotate ingressclass traefik meta.helm.sh/release-name=cognigy-ai meta.helm.sh/release-namespace=cognigy-ai
 kubectl label ingressclass traefik app.kubernetes.io/managed-by=Helm
-```
+'''
 
 ## Migration 
 
-This section describes the actual migration of Cognigy.AI from Kustomize to Helm. The migration will require downtime of your Cognigy.AI installation. Plan a maintenance window for at least 2 hours accordingly. 
+In diesem Abschnitt wird die eigentliche Migration von Cognigy.AI von Kustomize zu Helm beschrieben. Die Migration erfordert eine Ausfallzeit Ihrer Cognigy.AI-Installation. Planen Sie entsprechend ein Wartungsfenster von mindestens 2 Stunden ein. 
 
-### Rename MongoDB Databases
-1. Scale down the current installation:
-```bash
+### MongoDB-Datenbanken umbenennen
+1. Verkleinern Sie die aktuelle Installation:
+'''bash
 for i in $(kubectl get deployment --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
-do
-    kubectl --namespace default scale --replicas=0 deployment $i
-done
-```
-1. Rename the databases and create new users. In Cognigy.AI Helm Chart, we have renamed `service-analytics-collector-provider` database to `service-analytics-collector` and `service-analytics-conversation-collector-provider` to `service-analytics-conversation`. To rename the databases, execute the following script, fill in the password values in advance (see the comments inside the script). Check the root username for MongoDB Helm installation (`root` or `admin`) and use that as <root_username> while migrating the databases.
+Fass
+    kubectl --namespace Standardskalierung --replicas=0 Bereitstellung $i
+fertig
+'''
+1. Benennen Sie die Datenbanken um und legen Sie neue Benutzer an. In Cognigy.AI Helm Chart haben wir die Datenbank "service-analytics-collector-provider" in "service-analytics-collector" und "service-analytics-conversation-collector-provider" in "service-analytics-conversation" umbenannt. Um die Datenbanken umzubenennen, führen Sie das folgende Skript aus, geben Sie die Kennwortwerte im Voraus ein (siehe die Kommentare im Skript). Überprüfen Sie den Root-Benutzernamen für die MongoDB Helm-Installation ('root' oder 'admin') und verwenden Sie diesen <root_username> bei der Migration der Datenbanken.
 
-!!! warning "MongoDB Migration Script Compatibility"
-    The script below is compatible with the [cognigy-mongodb-helm-chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) only. If you are using any other MongoDB service (for example, MongoDB Atlas), you need to find compatible commands for your database service to rename the databases.
+!!! Warnung "Kompatibilität mit MongoDB-Migrationsskripten"
+    Das folgende Skript ist nur mit dem [cognigy-mongodb-helm-chart](https://github.com/Cognigy/cognigy-mongodb-helm-chart) kompatibel. Wenn Sie einen anderen MongoDB-Dienst verwenden (z. B. MongoDB Atlas), müssen Sie kompatible Befehle für Ihren Datenbankdienst finden, um die Datenbanken umzubenennen.
 
-   ```bash
+'''bash
    kubectl exec -it -n mongodb mongodb-0 bash
 
-   # rename the service-analytics-collector-provider, set admin root password in <password>
-   mongodump -u <root_username> -p <password> --authenticationDatabase admin --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017" --archive --db=service-analytics-collector-provider | mongorestore -u admin -p <password> --authenticationDatabase admin --archive --nsFrom='service-analytics-collector-provider.*' --nsTo='service-analytics-collector.*'
+# Benennen Sie den Service-Analytics-Collector-Provider um, setzen Sie das Admin-Root-Passwort in <password>
+   mongodump -u -p --authenticationDatabase admin --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local: <root_username> <password> 27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017" --archive --db=service-analytics-collector-provider | mongorestore -u admin -p -- <password> authenticationDatabase admin --archive --nsFrom='service-analytics-collector-provider.*' --nsTo='service-analytics-collector.*'
 
-   # rename the service-analytics-conversation-collector-provider, set admin root password in <password>
-   mongodump -u <root_username> -p <password> --authenticationDatabase admin --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017" --archive --db=service-analytics-conversation-collector-provider | mongorestore -u admin -p <password> --authenticationDatabase admin --archive --nsFrom='service-analytics-conversation-collector-provider.*' --nsTo='service-analytics-conversation.*'
+# Benennen Sie den Service-Analytics-Conversation-Collector-Provider um, setzen Sie das Admin-Root-Passwort in <password>
+   mongodump -u -p --authenticationDatabase admin --host "mongodb-0.mongodb-headless.mongodb.svc.cluster.local:27017,mongodb-1.mongodb-headless.mongodb.svc.cluster.local: <root_username> <password> 27017,mongodb-2.mongodb-headless.mongodb.svc.cluster.local:27017" --archive --db=service-analytics-conversation-collector-provider | mongorestore -u admin -p -- <password> authenticationDatabase admin --archive --nsFrom='service-analytics-conversation-collector-provider.*' --nsTo=' Service-Analytics-Konversation.*'
 
-   # Create service-analytics-collector user in service-analytics-collector db
-   # Get the existing password from `cognigy-service-analytics-collector-provider` secret and put it into <password-service-analytics-collector>:
-   mongo -u <root_username> -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
-   use service-analytics-collector
+# Erstellen eines service-analytics-collector-Benutzers in der service-analytics-collector-Datenbank
+   # Holen Sie sich das vorhandene Passwort aus dem Geheimnis 'cognigy-service-analytics-collector-provider' und fügen Sie es in <password-service-analytics-collector>:
+   mongo -u - <root_username> p $MONGODB_ROOT_PASSWORD --authenticationDatenbankadministrator
+   Verwenden von service-analytics-collector
    db.createUser({
-   	user: "service-analytics-collector",
+   	Benutzer: "service-analytics-collector",
    	pwd: "<password-service-analytics-collector>",
-   	roles: [
+   	Rollen: [
    		{ role: "readWrite", db: "service-analytics-collector" }
    	]
    });
 
-   # Create service-analytics-conversation user in service-analytics-conversation db
-   # Get the existing password from `cognigy-service-analytics-conversation-collector-provider` secret and put it into <password-service-analytics-conversation>:
-   use service-analytics-conversation
+# Erstellen Sie einen service-analytics-conversation-Benutzer in der service-analytics-conversation-Datenbank
+   # Holen Sie sich das vorhandene Passwort aus dem Geheimnis 'cognigy-service-analytics-conversation-collector-provider' und geben Sie es in <password-service-analytics-conversation>ein:
+   Verwenden von Service-Analytics-Conversation
    db.createUser({
-   	user: "service-analytics-conversation",
+   	Benutzer: "service-analytics-conversation",
    	pwd: "<password-service-analytics-conversation>",
-   	roles: [
+   	Rollen: [
    		{ role: "readWrite", db: "service-analytics-conversation" }
    	]
    });
 
-   exit
-   exit
-   ```
+Ausgang
+   Ausgang
+   '''
 
-### Migrate Persistent Volumes for Cognigy.AI
+### Migrieren von persistenten Volumes für Cognigy.AI
 
-1. Attach PVCs of `flow-modules`, `functions` and `redis-persistent` of Cognigy.AI Helm release to the existing PVs of Kustomize installation:
-```bash
-## delete dynamically provisioned PVCs for flow-modules, functions and redis-persistent during Kustomization deployment
-kubectl delete pvc -n=default flow-modules 
-kubectl delete pvc -n=default functions 
+1. Befestigen Sie PVCs von 'Flow-Modulen', 'Funktionen' und 'Redis-Persistent' von Cognigy.AI Helm-Version an den vorhandenen PVs der Kustomize-Installation:
+'''bash
+## Dynamisch bereitgestellte PVCs für Flow-Module, Funktionen und redis-persistent während der Kustomization-Bereitstellung löschen
+kubectl delete pvc -n=Standard-Durchflussmodule 
+kubectl delete pvc -n=Standardfunktionen 
 kubectl delete pvc -n=default redis-persistent  
-## verify that dynamic PVCs are removed and that PVs from Kustomize installation still exist
+## Überprüfen, ob dynamische PVCs entfernt wurden und ob PVs aus der Kustomize-Installation noch vorhanden sind
 kubectl get pvc
 kubectl get pvc -n=cognigy-ai
 kubectl get pv
-# edit PVs for `flow-modules`, `functions` and `redis-persistent` and remove `spec.claimRef:` section completely
-kubectl patch pv <pv-name> -p '{"spec":{"claimRef": null}}' 
-# check that PVs status has changed from `Released` to `Available`
+# PVs für 'flow-modules', 'functions' und 'redis-persistent' bearbeiten und den Abschnitt 'spec.claimRef:' komplett entfernen
+kubectl patch pv -p '{"spec": {" <pv-name> claimRef": null}}' 
+# Überprüfen Sie, ob sich der PV-Status von "Freigegeben" in "Verfügbar" geändert hat
 kubectl get pv
-```
+'''
 
-2. Deploy the PVCs manifests, which have been modified in [Prepare Persistent Volumes](#prepare-persistent-volumes) section.
+2. Stellen Sie die PVC-Manifeste bereit, die im Abschnitt [Persistente Volumes vorbereiten](#prepare-persistente-volumes) geändert wurden.
 
-```bash
-# apply modified PVCs to the cluster
+'''bash
+# modifizierte PVCs auf den Cluster anwenden
 kubectl apply -f redis-persistent-pvc.yaml
 kubectl apply -f flow-modules-pvc.yaml
 kubectl apply -f functions-pvc.yaml
-# check that status of PVs and PVCs has changed to Bound:
+# Überprüfen Sie, ob sich der Status von PVs und PVCs in Bound geändert hat:
 kubectl get pv
 kubectl get pvc -n=cognigy-ai
-```
-### Migrate Cognigy.AI from Kustomize to Helm
+'''
+### Migrieren Sie Cognigy.AI von Kustomize zu Helm
 
-Perform the following steps for Cognigy.AI migration:
+Führen Sie die folgenden Schritte für Cognigy.AI Migration aus:
 
-1. Bring back the deployments of Cognigy.AI Helm Release:
+1. Stellen Sie die Bereitstellungen von Cognigy.AI Helm-Version wieder her:
 
-```bash
-helm registry login cognigy.azurecr.io \
---username <your-username> \
---password <your-password>
+'''bash
+Helm Registry Login cognigy.azurecr.io \
+--Benutzername <your-username> \
+--Passwort <your-password>
 
 helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version HELM_CHART_VERSION --values values_prod.yaml
-```
-2. Verify that all deployments are in a ready state: 
-```bash
+'''
+2. Stellen Sie sicher, dass sich alle Bereitstellungen in einem Bereitschaftszustand befinden: 
+'''bash
 kubectl get deployments -n=cognigy-ai
-```
-3. *(Traefik as reverse-proxy only)* In case `EXTERNAL-IP` for `traefik` service of type `LoadBalancer` changes, update the DNS records to point to the new `EXTERNAL-IP` of `traefik` Service. If you're using Traefik Ingress with AWS Classic Load Balancer, change the CNAME of the DNS entries to the new `EXTERNAL-IP`. Check the new external IP/CNAME record with:
-```bash
+'''
+3. *(Traefik nur als Reverse-Proxy)* Falls sich 'EXTERNAL-IP' für den 'traefik'-Dienst vom Typ 'LoadBalancer' ändert, aktualisieren Sie die DNS-Einträge so, dass sie auf die neue 'EXTERNAL-IP' des 'traefik'-Dienstes verweisen. Wenn Sie Traefik Ingress mit AWS Classic Load Balancer verwenden, ändern Sie den CNAME der DNS-Einträge in die neue "EXTERNAL-IP". Überprüfen Sie den neuen externen IP/CNAME-Eintrag mit:
+'''bash
 kubectl get service -n=cognigy-ai traefik
-```
+'''
 
-## Rollback
+## Zurücksetzen
 
-In case Cognigy.AI Helm release does not function properly and rollback is required, perform the following steps:
+Falls Cognigy.AI Helm-Version nicht ordnungsgemäß funktioniert und ein Rollback erforderlich ist, führen Sie die folgenden Schritte aus:
 
-1. Scale down the Cognigy.AI Helm Release deployments
-```bash
+1. Herunterskalieren der Cognigy.AI Helm Release-Bereitstellungen
+'''bash
  
 for i in $(kubectl get deployment --namespace cognigy-ai --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
-do
-    kubectl --namespace cognigy-ai scale --replicas=0 deployment $i
-done
-```
-2. Delete PVCs for Helm Release:
-```
+Fass
+    kubectl --namespace cognigy-ai scale --replicas=0 Bereitstellung $i
+fertig
+'''
+2. PVCs für Helm-Release löschen:
+'''
 kubectl delete pvc -n=cognigy-ai flow-modules 
-kubectl delete pvc -n=cognigy-ai functions 
+kubectl delete pvc -n=cognigy-ai Funktionen 
 kubectl delete pvc -n=cognigy-ai redis-persistent  
-```
-3. Restore PVCs for Kustomize installation:
-```
+'''
+3. Stellen Sie PVCs für die Kustomize-Installation wieder her:
+'''
 kubectl apply -f redis-persistent-pvc-kustomize.yaml
 kubectl apply -f flow-modules-pvc-kustomize.yaml
 kubectl apply -f functions-pvc-kustomize.yaml
-```
-4. Bring back Kustomize installation:
-```
+'''
+4. Bringen Sie die Kustomize-Installation zurück:
+'''
 cd kubernetes/core/<environment>/product
 kubectl apply -k ./
-```
-5. After Cognigy.AI Kustomize installation is up and running, you can clean up the Helm release by completely removing `cognigy-ai` namespace (the namespace of Helm release):
-```
-kubectl delete namespace cognigy-ai
-```
+'''
+5. Nachdem Cognigy.AI Kustomize-Installation ausgeführt wurde, können Sie die Helm-Version bereinigen, indem Sie den Namensraum "cognigy-ai" (den Namensraum der Helm-Version) vollständig entfernen:
+'''
+kubectl Namespace löschen cognigy-ai
+'''
 
-## Clean-up
+## Aufräumen
 
-After Cognigy.AI Helm release is up and running properly, you can clean up the Kustomize installation, for this execute following steps: 
+Nachdem Cognigy.AI Helm-Version ordnungsgemäß ausgeführt wurde, können Sie die Kustomize-Installation bereinigen und dazu die folgenden Schritte ausführen: 
 
-1. Drop old databases in MongoDB (set `MONGODB_ROOT_USER` to `root` or `admin` in accordance with `values_prod.yaml` in MongoDB Helm Chart):
-```bash
+1. Löschen Sie alte Datenbanken in MongoDB (setzen Sie 'MONGODB_ROOT_USER' auf 'root' oder 'admin' in Übereinstimmung mit 'values_prod.yaml' im MongoDB Helm Chart):
+'''bash
 kubectl exec -it -n mongodb mongodb-0 -- bash
-mongo -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD --authenticationDatabase admin
+mongo -u $MONGODB_ROOT_USER -p $MONGODB_ROOT_PASSWORD --authenticationDatenbankadministrator
 
-# Drop service-analytics-collector-provider
-use service-analytics-collector-provider
+# Service-Analytics-Collector-Provider löschen
+Verwenden von service-analytics-collector-provider
 db.dropDatabase()
 
-# Drop service-analytics-conversation-collector-provider
-use service-analytics-conversation-collector-provider
+# Löschen von service-analytics-conversation-collector-provider
+Verwenden von Service-Analytics-Conversation-Collector-Provider
 db.dropDatabase()
-```
+'''
 
-2. Delete the Kustomize deployments running in the `default` namespace:
-```bash
+2. Löschen Sie die Kustomize-Bereitstellungen, die im "default"-Namespace ausgeführt werden:
+'''bash
 for i in $(kubectl get deployment --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')             
-do
-    kubectl --namespace default delete deployment $i
-done
-```
+Fass
+    kubectl --namespace default löscht Bereitstellungs$i
+fertig
+'''
 
-3. Delete the services in the `default` namespace:
-```bash
+3. Löschen Sie die Dienste im 'default'-Namensraum:
+'''bash
 for i in $(kubectl get service --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}' | grep service-)
-do
-    kubectl --namespace default delete service $i
-done
-# delete rabbitmq, redis, redis-persistent, and traefik
+Fass
+    kubectl --namespace Standard-Löschdienst $i
+fertig
+# RabbitMQ, Redis, Redis-Persistent und Traefik löschen
 kubectl --namespace default delete svc rabbitmq redis redis-persistent traefik
-```
-**Be careful while deleting service, do not delete the `kubernetes` service.**
+'''
+**Seien Sie vorsichtig beim Löschen des Dienstes, löschen Sie nicht den "Kubernetes"-Dienst.**
 
-4. Delete the ingresses in the `default` namespace:
-```bash
+4. Löschen Sie die Ingresses im 'default'-Namensraum:
+'''bash
 for i in $(kubectl get ingress --namespace default --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
-do
+Fass
     kubectl delete ingress $i --namespace default
-done
-```
+fertig
+'''
 
-5. Delete PVCs from `default` namespace (if still present): 
-```bash
-kubectl delete pvc -n=default flow-modules
-kubectl delete pvc -n=default functions
+5. Löschen Sie PVCs aus dem 'default'-Namensraum (falls noch vorhanden): 
+'''bash
+kubectl delete pvc -n=Standard-Durchflussmodule
+kubectl delete pvc -n=Standardfunktionen
 kubectl delete pvc -n=default redis-persistent
-```
+'''
 
-6. *(Optional)* Delete PVC for single replica MongoDB setup in case of single-replica to multi-replica MongoDB migration:
-```bash
+6. *(Optional)* Löschen Sie PVC für das MongoDB-Setup mit einem Replikat im Falle einer MongoDB-Migration von einem einzelnen Replikat zu einem MongoDB mit mehreren Replikaten:
+'''bash
 kubectl delete pvc mongodb -n default
-```
+'''
 
-
-
-
+</environment></your-password></your-username></pv-name></password-service-analytics-conversation></password-service-analytics-conversation></password-service-analytics-collector></root_username></password-service-analytics-collector></password></password></root_username></password></password></password></root_username></password></root_username></pv-name></pv-name></pv-name></pv-name></release>

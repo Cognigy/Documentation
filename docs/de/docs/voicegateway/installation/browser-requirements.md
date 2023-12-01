@@ -1,17 +1,17 @@
 ---
- title: "Browser Requirements" 
- slug: "browser-requirements" 
- hidden: false 
+ title: "Browser-Anforderungen" 
+ Slug: "Browser-Anforderungen" 
+ ausgeblendet: false 
 ---
 
-# Browser Requirements
+# Browser-Anforderungen
 
-The Voice Gateway Self Service Portal supports most modern web browsers. The following table shows the list of supported web browsers:
+Das Voice Gateway Self Service Portal unterstützt die meisten modernen Webbrowser. Die folgende Tabelle zeigt die Liste der unterstützten Webbrowser:
 
-| Browser         | Minimum version |
+| Browser | Mindestversion |
 |-----------------|-----------------|
-| Mozilla Firefox | 52              |
-| Google Chrome   | 57              |
-| Chromium        | 57              |
-| Apple Safari    | 14.1            |
-| Microsoft Edge  | 16              |
+| Mozilla Firefox | Nr. 52 |
+| Google Chrome | Nr. 57 |
+| Chrom | Nr. 57 |
+| Apple Safari | 14,1 |
+| Microsoft Edge | Nr. 16 |

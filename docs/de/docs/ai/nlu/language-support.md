@@ -1,128 +1,120 @@
 ---
- title: "Language Support" 
- slug: "language-support" 
- hidden: false 
+ Titel: "Sprachunterstützung" 
+ slug: "Sprachunterstützung" 
+ ausgeblendet: false 
 ---
-# Language Support
+# Unterstützte Sprachen
 
-## Overview of Supported Languages
-<div class="divider"></div>
-
-Cognigy.AI's on-board NLU is pre-trained with curated data from over 100 languages to support intent recognition and keyphrase detection. Any other natural (or artificial) language is supported based on language-agnostic NLU algorithms.
+## Übersicht der unterstützten Sprachen<div class="divider"></div>Die integrierte NLU von Cognigy.AI ist mit kuratierten Daten aus über 100 Sprachen vortrainiert, um die Absichtserkennung und Schlüsselphrasenerkennung zu unterstützen. Jede andere natürliche (oder künstliche) Sprache wird auf der Grundlage sprachunabhängiger NLU-Algorithmen unterstützt.
  
-For 28 of the most common languages, Cognigy.AI provides prebuilt entities that allow automatic processing of inputs like dates, currencies and others specific to a language that is defined in the Flow.
+Für 28 der gebräuchlichsten Sprachen bietet Cognigy.AI vorgefertigte Entitäten, die die automatische Verarbeitung von Eingaben wie Datumsangaben, Währungen und anderen spezifischen Sprachen ermöglichen, die im Flow definiert sind.
 
-* Universal (see below)
-* Arabic
-* Bengali
-* Chinese (simplified)
-* Danish
-* Dutch
-* English (Australia)
-* English (Canada)
-* English (India)
-* English (UK)
-* English (US)
-* German
-* Hindi
-* Japanese
-* Korean
-* Finnish
-* French
-* Italian
-* Norwegian
-* Polish
-* Portuguese - Brazil
-* Portuguese
-* Russian
-* Spanish
-* Swedish
-* Tamil
-* Thai
-* Turkish
-* Vietnamese
+* Universell (siehe unten)
+*Arabisch
+*Bengali
+* Chinesisch (vereinfacht)
+*Dänisch
+*Holländisch
+* Englisch (Australien)
+* Englisch (Kanada)
+* Englisch (Indien)
+* Englisch (UK)
+* Englisch (US)
+*English
+*Hindi
+*Japanisch
+*Koreanisch
+*Finnisch
+*Französisch
+*Italienisch
+*Norwegisch
+*Polnisch
+* Portugiesisch - Brasilien
+*Portugiesisch
+*Russisch
+*Spanisch
+*Schwedisch
+*Tamil
+*Thailändisch
+*Türkisch
+*Vietnamesisch
 
+## Universelle Sprache<div class="divider"></div>Die Universal Language-Option erweitert die Kompatibilität der Cognigy NLU mit über 100 Sprachen durch den Einsatz fortschrittlicher mehrsprachiger Machine-Learning-Modelle. Zu den unterstützten Sprachen gehören:
 
-## Universal Language
-<div class="divider"></div>
-
-The Universal Language option extends the Cognigy NLU’s compatibility with over 100 languages by employing advanced multilingual machine learning models. The languages supported include:
-
-* Afrikaans
-* Albanian
-* Arabic
-* Azerbaijani
-* Bahasa Indonesia
+*Afrikaans
+*Albanisch
+*Arabisch
+*Aserbaidschanisch
+* Bahasa Indonesien
 * Bahasa Melayu
-* Belarusian
-* Bengali
-* Bosnian
-* Bulgarian
-* Catalan
-* Chinese (Traditional / Cantonese)
-* Croatian
-* Czech
-* Danish
-* Dutch
-* English
-* Estonian
-* Finnish
-* French
-* Georgian
-* German
-* Greek
-* Gujarati
-* Haitian
-* Hebrew
-* Hindi
-* Hungarian
-* Icelandic
-* Indonesian
-* Irish
-* Italian
-* Japanese
-* Kazakh
-* Korean
-* Latin
-* Latvian
-* Lithuanian
-* Macedonian
-* Malay
-* Norwegian
-* Persian (Farsi)
-* Polish
-* Portuguese
-* Punjabi
-* Romanian
-* Russian
-* Serbian
-* Sicilian
-* Slovak
-* Slovenian
-* Spanish
-* Sundanese
-* Swedish
-* Tamil
-* Thai
-* Turkish
-* Ukrainian
-* Urdu
-* Uzbek
-* Vietnamese
+*Belarussisch
+*Bengali
+*Bosnisch
+*Bulgarisch
+*Katalanisch
+* Chinesisch (traditionell / Kantonesisch)
+*Kroatisch
+*Tschechisch
+*Dänisch
+*Holländisch
+*Englisch
+*Estnisch
+*Finnisch
+*Französisch
+*Georgisch
+*English
+*Griechisch
+*Gujarati
+*Haitianisch
+*Hebräisch
+*Hindi
+*Ungarisch
+*Isländisch
+*Indonesisch
+*Irisch
+*Italienisch
+*Japanisch
+*Kasachisch
+*Koreanisch
+*Latein
+*Lettisch
+*Litauisch
+*Mazedonisch
+*Malaiisch
+*Norwegisch
+* Persisch (Farsi)
+*Polnisch
+*Portugiesisch
+*Punjabi
+*Rumänisch
+*Russisch
+*Serbisch
+*Sizilianisch
+*Slowakisch
+*Slowenisch
+*Spanisch
+*Sundanesisch
+*Schwedisch
+*Tamil
+*Thailändisch
+*Türkisch
+*Ukrainisch
+*Urdu
+*Usbekisch
+*Vietnamesisch
 * Laothian 
-* Sinhalese
-* and more
+*Singhalesisch
+* und mehr
 
-The Universal Language allows you to use Intent mapping in any language which, along with Keyphrase detection and our powerful Rule Intent Engine, enables you to build Flows in any language.
+Die Universal Language ermöglicht es Ihnen, das Intent-Mapping in jeder Sprache zu verwenden, was es Ihnen zusammen mit der Keyphrase-Erkennung und unserer leistungsstarken Rule Intent Engine ermöglicht, Flows in jeder Sprache zu erstellen.
 
-### Description
-The Universal Language uses multilingual NLU algorithms and models. This must be qualified to include only space-tokenized languages such as English for full support. E.g., keyphrase detection uses spaces " " as a delimiter. Intent mapping works across tokenization schemes but also benefits from space-tokenized languages.
+### Beschreibung
+Die Universal Language verwendet mehrsprachige NLU-Algorithmen und -Modelle. Dies muss so qualifiziert werden, dass nur Sprachen mit Leerzeichen wie Englisch enthalten sind, um eine vollständige Unterstützung zu gewährleisten. Bei der Keyphrase-Erkennung werden z. B. Leerzeichen " " als Trennzeichen verwendet. Das Intent-Mapping funktioniert über Tokenisierungsschemata hinweg, profitiert aber auch von Spaces-tokenisierten Sprachen.
 
-### Rule Intents with the Universal Language
-A powerful and useful way to use the Universal Language is by using Rule Intents. These Intents let you define custom rules using CognigyScript that will decide whether the Intent is triggered. You can create a rule like `input.slots.food[0].keyphrase === "pizza"`.
+### Rule Intents mit der Universellen Sprache
+Eine leistungsstarke und nützliche Möglichkeit, die universelle Sprache zu verwenden, ist die Verwendung von Regelabsichten. Mit diesen Absichten können Sie mithilfe von CognigyScript benutzerdefinierte Regeln definieren, die entscheiden, ob die Absicht ausgelöst wird. Sie können eine Regel wie 'input.slots.food[0].keyphrase === "pizza"' erstellen.
 
+Das heißt, sobald der Nutzer das Wort Pizza erwähnt, wird dieser Intent ausgelöst. Weitere Informationen zur Verwendung dieser Intents finden Sie [hier]({{config.site_url}}ai/nlu/nlu-overview/overview/#rules).
 
-Which means that as soon as the user mentions the word pizza, this Intent will be triggered. For more information on how to use these Intents, go [here]({{config.site_url}}ai/nlu/nlu-overview/overview/#rules).
-
-### Adding Positive and Negative Confirmation Words
-For our askYNQuestion Nodes to work, we need to know which words are positive confirmations, and which words are negative confirmations. For instance, if you use English as a language, then we know that if the user answers "yes", then we will trigger the onYes part of the askYNQuestion Node. However, since you are essentially using any language by using the Universal language, we don't have this information. You, therefore, need to open the FlowProperties panel in your Flow and navigate to settings. Here are two settings called "Additional confirmation words" and "Additional negative confirmation words". The first one is a list of words that should trigger the onYes part of an askYNQuestion Node, whereas the second one is a list of words that should trigger the onNo part of an askYNQuestion Node. You simply write each variation into a new row. You can also use these to extend the confirmation words for other languages.
+### Hinzufügen von positiven und negativen Bestätigungswörtern
+Damit unsere askYNQuestion Nodes funktionieren, müssen wir wissen, welche Wörter positive Bestätigungen und welche Wörter negative Bestätigungen sind. Wenn Sie z. B. Englisch als Sprache verwenden, wissen wir, dass wir den onYes-Teil des askYNQuestion-Knotens auslösen, wenn der Benutzer mit "Ja" antwortet. Da Sie jedoch im Wesentlichen jede Sprache verwenden, indem Sie die universelle Sprache verwenden, haben wir diese Informationen nicht. Sie müssen daher das Bedienfeld "FlowProperties" in Ihrem Flow öffnen und zu den Einstellungen navigieren. Hier sind zwei Einstellungen namens "Zusätzliche Bestätigungswörter" und "Zusätzliche negative Bestätigungswörter". Die erste ist eine Liste von Wörtern, die den onYes-Teil eines askYNQuestion-Knotens auslösen sollen, während die zweite eine Liste von Wörtern ist, die den onNo-Teil eines askYNQuestion-Knotens auslösen sollen. Du schreibst einfach jede Variation in eine neue Zeile. Sie können diese auch verwenden, um die Bestätigungswörter für andere Sprachen zu erweitern.

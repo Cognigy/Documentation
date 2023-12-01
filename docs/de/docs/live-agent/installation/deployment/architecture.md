@@ -1,24 +1,24 @@
 ---
- title: "Architecture" 
- slug: "architecture" 
- hidden: false 
+ Titel: "Architektur" 
+ Slug: "Architektur" 
+ ausgeblendet: false 
 ---
-# Architecture
+# Architektur
 
 <figure>
  <img class="image-center" src="{{config.site_url}}live-agent/images/LA-diagram.svg" alt="Live Agent Architecture" width="100%" />
-  <figcaption>Live Agent Architecture Diagram</figcaption>
+  <figcaption>Diagramm der Live-Agent-Architektur</figcaption>
 </figure>
 
-Live Agent is composed of a Ruby On Rails application that serves a Vue.js Frontend along with an API for performing actions such as CRUD operations, WebSockets, etc...
+Live Agent besteht aus einer Ruby On Rails-Anwendung, die ein Vue.js Frontend zusammen mit einer API zum Ausführen von Aktionen wie CRUD-Operationen, WebSockets usw. bereitstellt.
 
-Live Agent has the following set of services running:
+Live Agent verfügt über die folgenden Dienste:
 
-- Required to run in a Kubernetes cluster
-    - Live Agent web servers (API & UI)
-    - Live Agent workers (Sidekiq)
-- External/Internal services
-    - PostgreSQL Database as persistent storage
-    - Redis Database for caching and performance
-    - Email Service (SMTP servers)
-    - Storage Solution: NFS server with (AWS, Azure) or optional integration with External Object Storage (S3, Azure Storage, GCS)
+- Erforderlich für die Ausführung in einem Kubernetes-Cluster
+    - Live-Agent-Webserver (API & UI)
+    - Live-Agent-Arbeiter (Sidekiq)
+- Externe/Interne Dienstleistungen
+    - PostgreSQL-Datenbank als persistenter Speicher
+    - Redis-Datenbank für Caching und Performance
+    - E-Mail-Dienst (SMTP-Server)
+    - Storage-Lösung: NFS-Server mit (AWS, Azure) oder optionale Integration mit External Object Storage (S3, Azure Storage, GCS)

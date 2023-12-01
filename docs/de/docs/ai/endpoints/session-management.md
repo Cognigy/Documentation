@@ -1,24 +1,23 @@
 ---
- title: "Session Management" 
- slug: "session-management" 
- hidden: false 
+ Titel: "Sitzungsmanagement" 
+ Slug: "Sitzungs-Verwaltung" 
+ ausgeblendet: false 
 ---
-# Session Management
+# Sitzungsverwaltung
 
-The **Session Management** section exists on some Endpoints. Here you can set the session expiration. Once a session has expired, the conversation will restart with the next user input.
+Der Abschnitt **Sitzungsverwaltung** ist auf einigen Endpunkten vorhanden. Hier können Sie den Ablauf der Sitzung festlegen. Sobald eine Sitzung abgelaufen ist, wird die Konversation mit der nächsten Benutzereingabe neu gestartet.
 
-The following Endpoints support session expiration:
+Die folgenden Endpunkte unterstützen den Ablauf von Sitzungen:
 
 - Facebook Messenger
-- Line
-- Slack
+-Linie
+-Schlaff
 - TwilioSMS
 - Azure Bot Services
-- WhatsApp
+- WhatsApp (englisch)
 
-!!! note "Default Session Expiration"
-    The default session expiration is set to 30 minutes.
+!!! Hinweis "Standard-Sitzungsablauf"
+    Der Standard-Sitzungsablauf ist auf 30 Minuten festgelegt.
 
-
-!!! warning "Disable Session Expiration"
-    You can disable session expiration by setting it to 0. This will prevent a user from having multiple sessions in the **Contact Profile**, which reduces the **Analytics** effectiveness.
+!!! Warnung "Sitzungsablauf deaktivieren"
+    Sie können den Sitzungsablauf deaktivieren, indem Sie ihn auf 0 setzen. Dadurch wird verhindert, dass ein Benutzer mehrere Sitzungen im **Kontaktprofil** hat, was die Effektivität von **Analytics** verringert.

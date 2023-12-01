@@ -1,18 +1,16 @@
 ---
-title: "Set Session Parameters"
-slug: "set-session-parameters"
-hidden: false
+title: "Sitzungsparameter festlegen"
+slug: "Sitzungsparameter setzen"
+ausgeblendet: false
 ---
 
-# Set Session Params
+# Sitzungsparameter festlegen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/set-session-parameters.png" width="80%" />
-  <figcaption>AudioCodes Set Session Parameters</figcaption>
+  <figcaption>AudioCodes Session-Parameter festlegen</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
-The Set Session Params Node configures the AudioCodes Session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
+## Beschreibung<div class="divider"></div>Der Knoten Sitzungsparameter festlegen konfiguriert die AudioCodes-Sitzung. Alle hier eingestellten Parameter sind für den Rest der Sitzung gültig, es sei denn, sie werden entweder direkt oder durch Aktivitätsparameter überschrieben.
 
-To learn more about session and activity parameters, read [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/360017413959).
+Weitere Informationen zu Sitzungs- und Aktivitätsparametern finden Sie im [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/360017413959).

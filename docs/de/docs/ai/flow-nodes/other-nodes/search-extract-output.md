@@ -1,142 +1,136 @@
 ---
-title: "Search Extract Output"
-slug: "search-extract-output"
-description: "The Search Extract Output performs a content search, extracts, and outputs content from data previously uploaded to the knowledge store through a source file."
-hidden: false
+Titel: "Suchextrakt-Ausgabe"
+slug: "Suchen-Extrahieren-Ausgabe"
+description: "Die Suchextraktausgabe führt eine Inhaltssuche durch, extrahiert und gibt Inhalte aus Daten aus, die zuvor über eine Quelldatei in den Wissensspeicher hochgeladen wurden."
+ausgeblendet: false
 ---
 
-# Search Extract Output
+# Ausgabe des Suchextrakts
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../release-notes/4.63.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.63-blue.svg)] (.. /.. /.. /release-notes/4.63.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/search-extract-output.png" width="80%"/>
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Node durchsucht Daten innerhalb der Knowledge AI-Lösung, extrahiert eine relevante Antwort über ein generatives KI-Modell und erstellt eine Ausgabe.
 
-This Node searches through data within the Knowledge AI solution, extracts a relevant answer via a generative AI model, and creates an output.
+Bevor Sie diesen Knoten verwenden,
+Stellen Sie sicher, dass Sie das Modell 'text-embedding-ada-002' sowie die
+Modelle "Text-DaVinci-003 (deprecated)" oder "GPT-3.5-turbo".
+Weitere Informationen finden Sie in der [Liste der unterstützten Anbieter](.. /.. /resources/build/llm.md).
 
-Before using this Node,
-ensure that you configured the `text-embedding-ada-002` model as well as the
-`text-davinci-003 (deprecated)`  or `gpt-3.5-turbo` models.
-For more information, refer to the [list of supported providers](../../resources/build/llm.md).
+## Einstellungen
 
-## Settings
+### Modus
 
-### Mode
+Es gibt drei Modi, die unterschiedliche Ebenen der Datenextraktion und -präsentation bieten.
 
-There are three modes that offer different levels of data extraction and presentation.
+#### Suchen & Extrahieren & Ausgabe
 
-#### Search & Extract & Output
+Führt eine Suche durch, extrahiert eine Antwort und gibt das Ergebnis als Text oder adaptive Karte aus.
 
-Performs a search, extracts an answer, and outputs the result as text or adaptive card.
+Im Modus Suchen & Extrahieren & Ausgabe sind die folgenden Schritte erforderlich:
 
-In the Search & Extract & Output mode, the following steps are involved:
+1. Das System führt eine Wissenssuche durch und ruft relevante Informationen ab.
+2. Die abgerufenen Daten werden zur weiteren Verarbeitung an ein Sprachmodell (LLM) gesendet. 
+3. Der LLM extrahiert wichtige Punkte oder Antworten aus den Suchergebnissen und filtert unnötige Details heraus. 
+4. Die extrahierten Informationen werden in den Input- oder Context-Objekten gespeichert. 
+5. Das System gibt das Ergebnis aus dem LLM automatisch entweder als Klartext oder als adaptive Karte aus.
 
-1. The system performs a knowledge search and retrieves relevant information.
-2. The retrieved data is sent to a Language Model (LLM) for further processing. 
-3. The LLM extracts key points or answers from the search results, filtering out unnecessary details. 
-4. The extracted information is stored in the Input or Context objects. 
-5. The system automatically outputs the result from the LLM as either plain text or an adaptive card.
+Wählen Sie für diesen Modus Modelle aus der [Liste der unterstützten Anbieter] (.. /.. /resources/build/llm.md), die sowohl die Fälle "LLM Prompt Node & Search Extract Output Node" als auch "Knowledge Search" abdecken.
 
-For this mode, select models from the [list of supported providers](../../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+#### Suchen & Extrahieren
 
-#### Search & Extract
+Führt eine Suche durch, extrahiert eine Antwort, führt jedoch keine automatische Ausgabe durch. Unsere Kunden können dann manuell die gewünschte Ausgabe erstellen.
 
-Performs a search, extracts an answer, but does not perform an automatic output. Our customers can then manually create the output they desire.
+Im Modus "Suchen & Extrahieren" sind die folgenden Schritte erforderlich:
 
-In the Search & Extract mode, the following steps are involved:
+1. Das System führt eine Wissenssuche durch und ruft relevante Informationen ab.
+2. Die abgerufenen Daten werden direkt an das LLM gesendet, um Schlüsselpunkte oder Antworten zu extrahieren.
+3. Der LLM extrahiert die relevanten Informationen und schreibt sie in die Input- oder Context-Objekte.
 
-1. The system performs a knowledge search and retrieves relevant information.
-2. The retrieved data is directly sent to the LLM for extraction of key points or answers.
-3. The LLM extracts the relevant information and writes it to the Input or Context objects.
+Wählen Sie für diesen Modus Modelle aus der [Liste der unterstützten Anbieter] (.. /.. /resources/build/llm.md), die sowohl die Fälle "LLM Prompt Node & Search Extract Output Node" als auch "Knowledge Search" abdecken.
 
-For this mode, select models from the [list of supported providers](../../resources/build/llm.md) that cover both the `LLM Prompt Node & Search Extract Output Node` and `Knowledge Search` cases.
+#### Nur suchen
 
-#### Search Only
+Führt eine Wissenssuche durch und ruft Informationen ohne Extraktion oder automatische Ausgabe ab.
 
-Performs a knowledge search and retrieves information without extraction or automatic output.
+Im Modus "Nur Suche" sind die folgenden Schritte erforderlich:
 
-In the Search only mode, the following steps are involved:
+1. Das System führt eine Wissenssuche durch und ruft relevante Informationen ab. 
+2. Die Suchantwort wird in den Input- oder Context-Objekten gespeichert.
 
-1. The system performs a knowledge search and retrieves relevant information. 
-2. The search response is stored in the Input or Context objects.
+Wählen Sie für diesen Modus Modelle aus der [Liste der unterstützten Anbieter] (.. /.. /resources/build/llm.md), die den Fall "Wissenssuche" abdecken.
 
-For this mode, select models from the [list of supported providers](../../resources/build/llm.md) that cover the `Knowledge Search` case.
+### Wissensspeicher
 
-### Knowledge Store
+Wählen Sie einen Speicher aus der Liste aus, damit der Knoten die Daten abrufen kann.
 
-Select a store from the list to allow the Node to retrieve the data.
+### Such-Einstellungen
 
-### Search Settings
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|---------------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -------------------------------------------------------------------|
+| Kontextbezogene Suche | Wählen Sie | Berücksichtigung des Kontexts des Transkripts für die Suche. Es ermöglicht einem virtuellen Agenten, Folgefragen zu beantworten. Sie können eine der folgenden Optionen auswählen:<br>- **Ein** — ist die Standardoption. Wenn diese Einstellung aktiviert ist, wirkt sie sich auf die Tokenisierungskosten aus, die sich auf die Menge an Arbeitsspeicher, Rechenleistung und Gesamtkosten auswirken, die für die Ausführung eines OpenAI- oder Azure OpenAI-Modells erforderlich sind. Um ein besseres Verständnis dafür zu bekommen, wie die Funktion in der Praxis funktioniert, siehe [Beispiele](#examples). <br> - **Aus** — die Einstellung ist ausgeschaltet. |
+| Schritte zur Transkription | Indikator | Anzahl der vorherigen Transkriptschritte, die in einer kontextsensitiven Suche verwendet werden sollen. Dieser Parameter ist aktiv, wenn die Einstellung Kontextabhängige Suche aktiviert ist.                                                                                                                                                                                                                                                                                                                                                                                            |
+| Wo soll das Ergebnis gespeichert werden? | Wählen Sie | Der Speicher für die Suchergebnisse. Wählen Sie einen Speicher aus:<br> - **default** — der Inhalt wird im Input-Objekt ('input.knowledgeSearch') gespeichert. <br> - **Input** — der Inhalt wird im Input-Objekt gespeichert.<br> - **Kontext** — der Inhalt wird im Kontext gespeichert.                                                                                                                                                                                                                                                    |
+| Zeichenfolge, nach der gesucht werden soll | CognigyScript | Die Zeichenfolge, nach der im Wissensspeicher gesucht werden soll. Ein Standardwert wird in 'input.text' gespeichert.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Quell-Schlagwörter | CognigyScript | Die Tags dienen dazu, den Umfang Ihrer Wissenssuche zu verfeinern, sodass Sie nur die relevantesten Abschnitte der Wissensdatenbank einbeziehen und dadurch die Genauigkeit der Suchausgaben verbessern können. <br><br> Stellen Sie vor dem Angeben von Tags sicher, dass diese beim Hochladen der Quelldatei für diese Wissensquelle bereitgestellt wurden. Fügen Sie Tags hinzu, indem Sie jedes Tag separat angeben und die Eingabetaste drücken. Die maximale Anzahl von Tags beträgt 5.                                                                                                |
 
-| Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|---------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Context-Aware Search      | Select        | Considering the transcript's context for the search. It allows a virtual agent to answer follow-up questions. You can select one of the following options:<br>- **On** — is the default option. When this setting is enabled, it affects tokenization costs, which impact the amount of memory, computational power, and overall expenses needed for running an OpenAI or Azure OpenAI model. To get a better understanding of how the feature works in practice, see [Examples](#examples). <br> - **Off** — the setting is turned off. |
-| Transcript Steps          | Indicator     | Number of prior transcript steps to use in a context-aware search. This parameter is active when the Context-Aware Search setting is enabled.                                                                                                                                                                                                                                                                                                                                                                                            |
-| Where to store the result | Select        | The storage for the search results. Select a storage:<br> - **default** — the content will be stored in the Input object (`input.knowledgeSearch`). <br> - **Input** — the content will be stored in the Input object.<br> - **Context** — the content will be stored in the Context.                                                                                                                                                                                                                                                    |
-| String to search for      | CognigyScript | The string to search for in the knowledge store. A default value is stored in `input.text`.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Source Tags               | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br><br> Before specifying tags, ensure that they were provided during the upload of the source file for this knowledge source. Add tags by specifying each tag separately and pressing **enter**. The maximum number of tags is 5.                                                                                                |
+!!! Tipp "Tipps: Quellen-Tags"
+	- Sie können CognigyScript innerhalb von Quell-Tags hinzufügen.  
+	- Quellen-Tags sind immer in Kleinbuchstaben geschrieben, nur alphanumerische Zeichen (a-z, 0-9), Unterstriche und Bindestriche sind zulässig.  
+	- Bei der Verwendung von CognigyScript für Quell-Tags ist es wichtig, diese in Kleinbuchstaben zu schreiben. Zum Beispiel, indem Sie Folgendes verwenden: '{{"{{input.text.toLowerCase()}}"}}'
 
-!!! tip "Tips: Source Tags"
-	- You can add CognigyScript within Source Tags.  
-	- Source Tags are always lower-case, only alpha-numerics (a-z, 0-9), underscores, and hyphens are allowed.  
-	- When using CognigyScript for Source Tags, it is important to lowercase them. For example by using the following: `{{"{{input.text.toLowerCase()}}"}}`
+### Einstellungen extrahieren
 
-### Extract Settings
-
-| Parameter         | Type          | Description                                                                                                                                                                                   |
+| Parameter | Typ | Beschreibung |
 |-------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Prompt            | CognigyScript | The prompt to generate completions for.                                                                                                                                                       |
-| Temperature       | Indicator     | The appropriate sampling temperature for the model. Higher values mean the model will take more risks.                                                                                        |
-| Maximal Tokens    | Indicator     | The maximum number of tokens to generate in the completion.                                                                                                                                   |
-| Presence Penalty  | Indicator     | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.              |
-| Frequency Penalty | Indicator     | Number between -2.0 and 2.0. The penalty assigns a lower probability to tokens frequently appearing in the generated text, encouraging the model to generate more diverse and unique content. |
-| Use Stops         | Toggle        | Whether to use a list of stop words to let Generative AI know where the sentence stops.                                                                                                       |
-| Stops             | Text          | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                    |
-| Timeout           | Number        | The maximum amount of time in milliseconds to wait for a response from the Generative AI Provider.                                                                                            |
-| Timeout Message   | CognigyScript | The message to output if the timeout is reached.                                                                                                                                              |
+| Eingabeaufforderung | CognigyScript | Die Eingabeaufforderung zum Generieren von Vervollständigungen für.                                                                                                                                                       |
+| Temperatur | Indikator | Die geeignete Probenahmetemperatur für das Modell. Höhere Werte bedeuten, dass das Modell mehr Risiken eingeht.                                                                                        |
+| Maximale Anzahl an Token | Indikator | Die maximale Anzahl von Token, die beim Abschluss generiert werden sollen.                                                                                                                                   |
+| Anwesenheitsstrafe | Indikator | Zahl zwischen -2,0 und 2,0. Positive Werte bestrafen neue Token basierend darauf, ob sie bisher im Text erschienen sind, und erhöhen die Wahrscheinlichkeit, dass das Modell über neue Themen spricht.              |
+| Häufigkeits-Strafe | Indikator | Zahl zwischen -2,0 und 2,0. Die Strafe weist Token, die häufig im generierten Text vorkommen, eine geringere Wahrscheinlichkeit zu und ermutigt das Modell, vielfältigere und einzigartigere Inhalte zu generieren. |
+| Stopps verwenden | Umschalten | Gibt an, ob eine Liste von Stoppwörtern verwendet werden soll, um Generative AI wissen zu lassen, wo der Satz endet.                                                                                                       |
+| Haltestellen | Text | Bis zu 4 Sequenzen, in denen die API keine weiteren Token mehr generiert. Der zurückgegebene Text enthält nicht die Stoppsequenz.                                                                    |
+| Zeitüberschreitung | Anzahl | Die maximale Zeitspanne in Millisekunden, die auf eine Antwort des generativen KI-Anbieters gewartet werden soll.                                                                                            |
+| Zeitüberschreitungsmeldung | CognigyScript | Die Meldung, die ausgegeben werden soll, wenn die Zeitüberschreitung erreicht ist.                                                                                                                                              |
 
-### Output Settings
+### Ausgabe-Einstellungen
 
-| Parameter            | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                         |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| OutputMode           | Select        | This parameter allows you to choose between two options for the output:<br> - **Text** — select this option if you want the system to provide a basic text-based response as the output.<br>- **Adaptive Card** — select this option if you want a visual representation of an Adaptive Card as the output. Adaptive Cards are interactive and display rich content with buttons, images, and more. |
-| Output Fallback Text | CognigyScript | The text to output if no answer was found.                                                                                                                                                                                                                                                                                                                                                          |
+| Ausgabemodus | Wählen Sie | Mit diesem Parameter können Sie zwischen zwei Optionen für die Ausgabe wählen:<br> - **Text** — Wählen Sie diese Option aus, wenn das System eine einfache textbasierte Antwort als Ausgabe bereitstellen soll.<br>- **Adaptive Karte**: Wählen Sie diese Option aus, wenn Sie eine visuelle Darstellung einer adaptiven Karte als Ausgabe wünschen. Adaptive Karten sind interaktiv und zeigen umfangreiche Inhalte mit Schaltflächen, Bildern und mehr an. |
+| Fallback-Text ausgeben | CognigyScript | Der Text, der ausgegeben werden soll, wenn keine Antwort gefunden wurde.                                                                                                                                                                                                                                                                                                                                                          |
 
-### Error Handling
+### Fehlerbehandlung
 
-| Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                            |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                            |
 |--------------------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Select Error Handling Approach | Select | You can select one of the Error Handling options:<br>- **Stop Flow Execution** — terminate the current Flow execution.<br>- **Continue Flow Execution** — allow the Flow to continue executing, bypassing the error and proceeding to the next steps.<br>- **Go to Node** — redirect the workflow to a specific Node in the Flow, which can be useful for error recovery or customized error handling. |
-| Error Message (optional)       | Text   | Active when the **Continue Flow Execution** option is selected. Optional message to output if the Search or Extract service fails.                                                                                                                                                                                                                                                                     |
-| Select Flow                    | Select | Active when the **Go to Node** option is selected. Select a Flow from the available options.                                                                                                                                                                                                                                                                                                           |
-| Select Node                    | Select | Active when the **Go to Node** option is selected. Select a Node from the available options.                                                                                                                                                                                                                                                                                                           |
+| Auswählen des Fehlerbehandlungsansatzes | Wählen Sie | Sie können eine der Optionen für die Fehlerbehandlung auswählen:<br>- **Stop Flow Execution** — Beendet die aktuelle Flow-Ausführung.<br>- **Flow-Ausführung fortsetzen** – Lassen Sie zu, dass der Flow die Ausführung fortsetzt, den Fehler umgeht und mit den nächsten Schritten fortfährt.<br>- **Go to Node** – leitet den Workflow an einen bestimmten Node im Flow weiter, was für die Fehlerbehebung oder die benutzerdefinierte Fehlerbehandlung nützlich sein kann. |
+| Fehlermeldung (optional) | Text | Aktiv, wenn die Option **Flow-Ausführung fortsetzen** ausgewählt ist. Optionale Meldung, die ausgegeben wird, wenn der Such- oder Extraktionsdienst fehlschlägt.                                                                                                                                                                                                                                                                     |
+| Wählen Sie Flow | Wählen Sie | Aktiv, wenn die Option **Gehe zu Knoten** ausgewählt ist. Wählen Sie einen Flow aus den verfügbaren Optionen aus.                                                                                                                                                                                                                                                                                                           |
+| Knoten auswählen | Wählen Sie | Aktiv, wenn die Option **Gehe zu Knoten** ausgewählt ist. Wählen Sie einen Knoten aus den verfügbaren Optionen aus.                                                                                                                                                                                                                                                                                                           |
 
-## Examples
+## Beispiele
 
-### Context-Aware Search
+### Kontextbezogene Suche
 
-By [considering the context](#search-settings),
-the search can help users find information within a transcript more quickly,
-as it understands the nuances of the content.
-When enabling a context-aware search system,
-you can configure the number of prior transcript steps to use in the search to suit your specific requirements.
-The number of prior transcript steps affects the depth of context considered when retrieving search results.
+Durch [Berücksichtigung des Kontexts](#search-Einstellungen)
+Die Suche kann Benutzern helfen, Informationen innerhalb eines Transkripts schneller zu finden.
+da es die Nuancen des Inhalts versteht.
+Wenn Sie ein kontextsensitives Suchsystem aktivieren,
+Sie können die Anzahl der vorherigen Transkriptschritte, die bei der Suche verwendet werden sollen, so konfigurieren, dass sie Ihren spezifischen Anforderungen entspricht.
+Die Anzahl der vorherigen Transkriptschritte wirkt sich auf die Tiefe des Kontexts aus, der beim Abrufen von Suchergebnissen berücksichtigt wird.
 
-In the following table, a dialogue between the user and the virtual agent is presented, showing the agent's responses in both the enabled and disabled modes of the Context-Aware Search feature.
+In der folgenden Tabelle wird ein Dialog zwischen dem Benutzer und dem virtuellen Agenten dargestellt, in dem die Antworten des Agenten sowohl im aktivierten als auch im deaktivierten Modus der Funktion "Kontextabhängige Suche" angezeigt werden.
 
-| <div style="width:430px">Context-Aware Search is off</div>                                                                                                                                                                                                                                                                                                            | Context-Aware Search is on                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **user:** What animals are allowed on a plane?<br> **virtual agent:** Passengers are allowed to bring a maximum of two animals (dogs or cats) on the plane, either in the cabin or in the cargo hold, as long as they are in approved transport containers.<br> **user:** Give me more details! <br> **virtual agent:** Unfortunately, I cannot answer your question. | **user:** What animals are allowed on a plane?<br> **virtual agent:** Passengers are allowed to bring a maximum of two animals (dogs or cats) on the plane, either in the cabin or in the cargo hold, as long as they are in an approved transport container.<br> **user:** Give me more details! <br> **virtual agent:** The approved transport container for animals on a plane must have a maximum size of 118 cm (55 x 40 x 23 cm) or 47 in (22 x 16 x 9 in) and a total weight, including the animal, not exceeding 8 kg. The container should be escape-proof, leak-proof, bite-proof, and lined with absorbent material. Only one transport container per passenger is allowed in the cabin, and the number of animals per container is limited to one, with exceptions for specific cases. |
+| <div style="width:430px">Die kontextabhängige Suche ist deaktiviert</div>                                                                                                                                                                                                                                                                                                            | Die kontextabhängige Suche ist aktiviert.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- - -------------------------------------------------------------------------------------------------------------------------------------|
+| **user:** Welche Tiere sind in einem Flugzeug erlaubt?<br> **virtueller Agent:** Passagiere dürfen maximal zwei Tiere (Hunde oder Katzen) mit ins Flugzeug nehmen, entweder in der Kabine oder im Frachtraum, solange sie sich in zugelassenen Transportbehältern befinden.<br> **user:** Gib mir mehr Details! <br> **virtueller Agent:** Leider kann ich Ihre Frage nicht beantworten. | **user:** Welche Tiere sind in einem Flugzeug erlaubt?<br> **virtueller Agent:** Passagiere dürfen maximal zwei Tiere (Hunde oder Katzen) mit ins Flugzeug nehmen, entweder in der Kabine oder im Frachtraum, solange sie sich in einem zugelassenen Transportbehälter befinden.<br> **user:** Gib mir mehr Details! <br> **virtueller Agent:** Der zugelassene Transportbehälter für Tiere in einem Flugzeug muss eine maximale Größe von 118 cm (55 x 40 x 23 cm) oder 47 Zoll (22 x 16 x 9 Zoll) und ein Gesamtgewicht von höchstens 8 kg haben. Der Behälter sollte ausbruchsicher, auslaufsicher, bissfest und mit saugfähigem Material ausgekleidet sein. In der Kabine ist nur ein Transportbehälter pro Passagier erlaubt, und die Anzahl der Tiere pro Behälter ist auf ein Tier begrenzt, mit Ausnahmen für bestimmte Fälle. |
 
+## Mehr Informationen
 
-## More Information
-
-- [Knowledge Search Node](knowledge-search.md)
-- [Knowledge Search Overview](../../knowledge-ai/overview.md)
-- [LLM](../../resources/build/llm.md)
-
-
+- [Knoten "Wissenssuche](knowledge-search.md)
+- [Übersicht über die Wissenssuche](.. /.. /wissens-ai/übersicht.md)
+- [LLM](.. /.. /resources/build/llm.md)

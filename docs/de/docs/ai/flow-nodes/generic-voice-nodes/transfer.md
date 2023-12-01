@@ -1,23 +1,20 @@
 ---
- title: "Transfer" 
- slug: "transfer" 
- hidden: false 
+ Titel: "Transfer" 
+ slug: "Übertragung" 
+ ausgeblendet: false 
 ---
 
-# Transfer
+# Übertragung
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/transfer.png" width="80%" />
-  <figcaption>Generic Transfer</figcaption>
+  <figcaption>Generische Übertragung</figcaption>
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Mit dem Transfer Node können Sie einen aktiven Anruf an ein Tel- oder SIP-Ziel weiterleiten.
 
-<div class="divider"></div>
-The Transfer Node let's you pass an active call to a tel or sip target.
-
-| Parameter            | Type          | Description                                                                                                                     |
+| Parameter | Typ | Beschreibung |
 |----------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Reason               | CognigyScript | The reason for the handover. Will show in VG/AC logs                                                                            |
-| Transfer Destination | CognigyScript | E.164 syntax or a SIP URI are supported                                                                                         |
-| Custom SIP Headers   | JSON          | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute. |
+| Begründung | CognigyScript | Der Grund für die Übergabe. Wird in VG/AC-Protokollen angezeigt |
+| Transfer-Ziel | CognigyScript | E.164-Syntax oder ein SIP-URI werden unterstützt |
+| Benutzerdefinierte SIP-Header | JSON | Array von Objekten, die SIP-Header auflisten, die an den Empfänger gesendet werden sollen. Jedes Objekt besteht aus einem Namens- und einem Wertattribut. |

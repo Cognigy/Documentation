@@ -1,40 +1,35 @@
 ---
- title: "Reject Intents" 
- slug: "reject-intents" 
- hidden: false 
+ Titel: "Absichten ablehnen" 
+ Slug: "Reject-Intents" 
+ ausgeblendet: false 
 ---
-# Reject Intents
+# Absichten ablehnen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/2bebb67-rejectIntent.PNG" width="100%" />
 </figure>
 
-Reject intents give you the capability to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
+Mit Ablehnungsabsichten können Sie absichtlich verhindern, dass die NLU Benutzereingaben erkennt, die sich außerhalb des Bereichs des virtuellen Agenten befinden.
 
-## Concept
-<div class="divider"></div>
-Reject intents are created in the same way as [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) via the **NLU** tab in the flow editor. Select **Create 'Reject Intent'** from the extended menu available next to the creation intent butting. Then simply add example sentences to match the user input that should be ignored from the NLU.
+## Konzept<div class="divider"></div>Ablehnungsabsichten werden auf die gleiche Weise wie [Machine Learning Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) über die Registerkarte **NLU** im Flow-Editor erstellt. Wählen Sie **Create 'Reject Intent'** aus dem erweiterten Menü aus, das neben dem Creation Intent Butting verfügbar ist. Fügen Sie dann einfach Beispielsätze hinzu, die zu den Benutzereingaben passen, die von der NLU ignoriert werden sollen.
 
-Reject Intents require the following:
+Für Ablehnungsabsichten ist Folgendes erforderlich:
 
-| Name	              | Property type	                                 |
+| Bezeichnung: | Art der Immobilie |
 |--------------------|------------------------------------------------|
-| Intent Name	       | Unique name of the Intent	                     |
-| Example Sentences	 | A set of sentences that predict the user input |
+| Name der Absicht | Eindeutiger Name der Absicht |
+| Beispiel-Sätze | Eine Reihe von Sätzen, die die Benutzereingabe vorhersagen |
 
-## What is a good use case for Reject Intents?
-<div class="divider"></div>
+## Was ist ein guter Anwendungsfall für Reject Intents?<div class="divider"></div>Stellen wir uns vor, wir haben Nutzer, die anstelle eines schmutzigen Parkplatzes nach Grünflächen suchen, um frische Luft zu schnappen.
 
-Let's imagine we have users looking for green space to take a breath of fresh air instead of a dirty parking lot.
+"Wo finde ich einen Park in der Nähe?"
 
-"Where can I find a park nearby"
+Angenommen, Ihre App befasst sich nur mit Treibern, und Sie möchten solche Anfragen einfach ignorieren. In diesem Fall möchten Sie die anstößigen Sätze der Ablehnungsabsicht hinzufügen.
 
-Say your app only deals with drivers, and you simply want to ignore such requests. In this case, you want to add the offending sentences to the Reject Intent.
+Es hat sich bewährt, die Ablehnungsabsicht zum Erfassen von Äußerungen, die Ihr Bot ignorieren sollte, mit der gleichen Wichtigkeit zu behandeln wie jede andere Absicht, die für das Funktionieren Ihres Bots unerlässlich ist.
 
-As a best practice, simply treat the Reject Intent to capture utterances your bot should ignore with the same importance as any other intent essential to the functioning of your bot.
+Alternativ können Sie den Entwurf Ihres Bots überdenken. Wenn Sie in Ihren Protokollen häufig auf eine Klasse von Äußerungen außerhalb des Geltungsbereichs stoßen, möchten Sie wahrscheinlich eine zusätzliche Absicht hinzufügen. Sie können die geäußerte Benutzerabsicht auch dann ansprechen, wenn sie nur den Umfang Ihres Bots verdeutlicht.
 
-Alternatively, you may want to reconsider the design of your bot. If you encounter a class of out-of-scope utterances frequently in your logs then you likely want to add an additional intent. You can address the expressed user intent even if it only clarifies the scope of your bot.
+Wenn Sie eine erweiterte Erkennung außerhalb des Gültigkeitsbereichs benötigen, können Sie auch eine Regel oder eine ML-Absicht verwenden, um Sätze außerhalb des Gültigkeitsbereichs zu erfassen. Dies ist möglich, wenn Sie die Absicht in Ihrem Flow ignorieren.
 
-If you require more advanced out-of-scope recognition you can also use a Rule or ML intent to capture out-of-scope sentences. This can be done if you ignore the intent otherwise in your Flow.
-
-You will have to be mindful of your architecture when using Rule and ML intents to catch out-of-scope sentences, however, when using Attached Flows: an attached Flow is executed if and only if one of its intents is triggered - to avoid triggering false positives in other Flows you need to put the Flow that captures the out-of-scope intents at the top of the attached Flow ordering and possibly enable the 'Map global intents first' setting.
+Sie müssen Ihre Architektur beachten, wenn Sie Regel- und ML-Absichten verwenden, um Sätze außerhalb des Geltungsbereichs abzufangen, aber wenn Sie angefügte Flows verwenden: Ein angehängter Flow wird nur ausgeführt, wenn eine seiner Absichten ausgelöst wird - um das Auslösen von Fehlalarmen in anderen Flows zu vermeiden, müssen Sie den Flow, der die Absichten außerhalb des Geltungsbereichs erfasst,  an den Anfang der angehängten Flow-Reihenfolge setzen und möglicherweise die Einstellung "Globale Absichten zuerst zuordnen" aktivieren.

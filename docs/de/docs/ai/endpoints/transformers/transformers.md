@@ -1,19 +1,15 @@
 ---
- title: "Transformers" 
- slug: "transformers" 
- hidden: false 
+ Titel: "Transformers" 
+ Schnecke: "Transformatoren" 
+ ausgeblendet: false 
 ---
-# Transformers
-
-<blockquote class="callout callout_info" theme="📘">
-    <span class="callout-icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span>
+# Transformatoren<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://github.com/Cognigy/Transformers" target="_blank" >Cognigy/Transformers</a>
+         <a href="https://github.com/Cognigy/Transformers" target="_blank">Cognigy/Transformers</a>
       </div>
-      <div class="callout-subtext">
-            Reference to Cognigy repository on GitHub
-      </div>
+      <div class="callout-subtext">Verweis auf das Cognigy-Repository auf GitHub      </div>
    </div>
 </blockquote>
 
@@ -21,235 +17,194 @@
     <span class="callout-icon">📘</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019704899-Transformers-Overview" target="_blank" >Transformers Overview</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019704899-Transformers-Overview" target="_blank">Transformers Übersicht</a>
       </div>
-      <div class="callout-subtext">
-            Cognigy HelpCenter article
-      </div>
+      <div class="callout-subtext">Cognigy HelpCenter-Artikel      </div>
    </div>
-</blockquote>
+</blockquote>## Beschreibung<div class="divider"></div>Endpunkttransformatoren ermöglichen die Änderung des Endpunktverhaltens. 
 
+Sie können sie für Folgendes verwenden:
 
-## Description
+- Ändern Sie die Anforderungsnutzlast von einem Endpunkt, bevor sie an den Flow gesendet wird.
+- Ändern Sie die Ausgaben eines Flows, bevor sie an den Benutzer gesendet werden 
+- Erstellen Sie zusätzliche Integrationen mit einem benutzerdefinierten Endpunkt
+- Transformieren Sie die Ausgabe eines Kanals, um auf einem anderen Kanal zu funktionieren, z. B. konvertieren Sie die Webchat-Ausgabe in eine WhatsApp-kompatible Ausgabe
+- Behandeln von Webhook-Ereignissen aus benutzerdefinierten Diensten
+- Übersetzen Sie die Nachrichten eines Benutzers in die Sprache des Flows
 
-<div class="divider"></div>
-
-Endpoint Transformers enable the modification of the Endpoint behavior. 
-
-You can use them to:
-
-- change the request payload from an Endpoint before being sent to the Flow
-- change outputs from a Flow before they are sent to the user 
-- create additional integrations with a custom-built endpoint
-- transform the output of channel to work on another channel, e.g. convert Webchat output to WhatsApp compatible output
-- handle Webhook events from custom services
-- translate the messages from a user into the language of the Flow
-
-The Transformers have full TypeScript support, meaning that the variables and NPM modules are typed, and it is possible to write custom interfaces in the Transformer. However, TypeScript knowledge is not required and plain JavaScript can be used as well.
-
-<blockquote class="callout callout_info" theme="📘">
+Die Transformer haben volle TypeScript-Unterstützung, was bedeutet, dass die Variablen und NPM-Module typisiert sind und es möglich ist, benutzerdefinierte Schnittstellen in den Transformer zu schreiben. TypeScript-Kenntnisse sind jedoch nicht erforderlich und es kann auch einfaches JavaScript verwendet werden.<blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360019893159-Cognigy-Sessions-Endpoint-Transformers" target="_blank" >Technical video "Endpoint Transformers"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360019893159-Cognigy-Sessions-Endpoint-Transformers" target="_blank">Technisches Video "Endpunkt Transformatoren"</a>
       </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
+      <div class="callout-subtext">Sehen Sie sich diese Folge von Cognigy Sessions an, um einen technischen Einblick zu erhalten      </div>
    </div>
-</blockquote>
+</blockquote>## Transformator-Funktionen<div class="divider"></div>Die folgende Liste gibt einen Überblick über alle verfügbaren Transformer-Funktionen. Jede Transformer-Funktion hat ein eigenes Kapitel, das viel mehr ins Detail geht.
 
-## Transformer Functions
-
-<div class="divider"></div>
-
-The list below gives an overview of all the Transformer functions that are available. Each Transformer function has its own chapter that goes much more into detail.
-
-|Transformer Function|	Description|
+|Trafo-Funktion|	Beschreibung|
 |--|--|
-|[handleInput]({{config.site_url}}ai/endpoints/transformers/input-transformer/)|This Transformer function is executed when a user sends a message to an Endpoint, before the Flow is executed. The return value of the function will be sent to the Flow.|
-|[handleOutput]({{config.site_url}}ai/endpoints/transformers/output-transformer/)|	This Transformer function is executed on each output from the Flow. For Webhook and Socket based Endpoints, the return value will be sent to the user. Read more [here](#different-base-transformer-types).|
-|[handleExecutionFinished]({{config.site_url}}ai/endpoints/transformers/execution-finished-transformer/)	|This Transformer function is executed when the Flow execution has finished. For REST based Endpoints, the return value will be sent to the user. Read more [here](#different-base-transformer-types).|
-|[handleNotify]({{config.site_url}}ai/endpoints/transformers/notify-transformer/)	|This Transformer function is executed when the Endpoint Notify API is used. The return value of the function will be sent directly to the user as a notification.|
-|[handleInject]({{config.site_url}}ai/endpoints/transformers/inject-transformer/)	|This Transformer function is executed when the Endpoint Inject API is used. The return value of the function will be sent to the Flow.|
+|[handleInput] ({{config.site_url}}ai/endpoints/transformers/input-transformer/)|Diese Transformer-Funktion wird ausgeführt, wenn ein Benutzer eine Nachricht an einen Endpunkt sendet, bevor der Flow ausgeführt wird. Der Rückgabewert der Funktion wird an den Flow gesendet.|
+|[handleOutput] ({{config.site_url}}ai/endpoints/transformers/output-transformer/)|	Diese Transformer-Funktion wird für jeden Ausgang des Flows ausgeführt. Bei Webhook- und Socket-basierten Endpunkten wird der Rückgabewert an den Benutzer gesendet. Lesen Sie mehr [hier](#different-base-transformer-types).|
+|[handleExecutionFinished] ({{config.site_url}}ai/endpoints/transformers/execution-finished-transformer/) |Diese Transformer-Funktion wird ausgeführt, wenn die Flow-Ausführung abgeschlossen ist. Bei REST-basierten Endpunkten wird der Rückgabewert an den Benutzer gesendet. Lesen Sie mehr [hier](#different-base-transformer-types).|
+|[handleNotify] ({{config.site_url}}ai/endpoints/transformers/notify-transformer/) |Diese Transformer-Funktion wird ausgeführt, wenn die Endpoint Notify-API verwendet wird. Der Rückgabewert der Funktion wird als Benachrichtigung direkt an den Benutzer gesendet.|
+|[handleInject] ({{config.site_url}}ai/endpoints/transformers/inject-transformer/) |Diese Transformer-Funktion wird ausgeführt, wenn die Endpoint Inject-API verwendet wird. Der Rückgabewert der Funktion wird an den Flow gesendet.|
 
+## Einen Transformator erstellen
 
-## Creating a Transformer
+Um einen Transformer für einen Endpunkt zu erstellen, öffnen Sie die Registerkarte ''Transformer-Funktionen'' im Endpunkt. Hier sind die verschiedenen [Transformer-Einstellungen](#transformer-Einstellungen), die konfiguriert werden können, sowie der Transformer-Code-Editor.
 
-To create a Transformer for an Endpoint, open the ``Transformer Functions`` tab in the Endpoint. Here are the different [Transformer Settings](#transformer-settings) that can be configured, as well as the Transformer code editor.
+!!! Warnung "Transformatorfunktionen aktivieren"
+    Jede Transformer-Funktion ist standardmäßig deaktiviert und muss separat im Abschnitt [Transformer-Einstellungen](#transformer-Einstellungen) aktiviert werden.
 
-!!! warning "Enabling Transformer Functions"
-    Every Transformer function is disabled per default and has to be enabled separately in the [Transformer Settings](#transformer-settings) section.
-
-The Transformer code editor has a default value for new Endpoints, which explains in brief how each Transformer function should be used. As soon as a specific Transformer has been enabled, the code in the corresponding Transformer function will be executed.
+Der Transformer-Code-Editor verfügt über einen Standardwert für neue Endpunkte, in dem kurz erläutert wird, wie die einzelnen Transformer-Funktionen verwendet werden sollten. Sobald ein bestimmter Transformer aktiviert wurde, wird der Code in der entsprechenden Transformer-Funktion ausgeführt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/ec4fa74-Transformer_example.png" width="100%" />
-   <figcaption>Persistent Menu</figcaption>
+   <figcaption>Persistentes Menü</figcaption>
 </figure>
 
-## Transformer Settings
+## Transformator-Einstellungen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/883b792-transformer.png" width="100%" />
 </figure>
 
-In order to use a specific Transformer function, it has to be enabled in the Transformer Settings section. There is a toggle to enable each individual Transformer function. Transformer functions can thereby also be temporarily disabled without having to delete the code.
+Um eine bestimmte Transformer-Funktion verwenden zu können, muss sie im Abschnitt Transformer-Einstellungen aktiviert werden. Es gibt einen Schalter, um jede einzelne Transformer-Funktion zu aktivieren. Transformer-Funktionen können dabei auch temporär deaktiviert werden, ohne den Code löschen zu müssen.
 
-## Error handling in Transformers
-The default error handling for Transformers is to log the error on the logs page and then continue with the normal execution. This means that if something fails in the Transformer function, the message will still be processed as if the Transformer function wouldn't exist.
+## Fehlerbehandlung in Transformatoren
+Die Standardfehlerbehandlung für Transformers besteht darin, den Fehler auf der Protokollseite zu protokollieren und dann mit der normalen Ausführung fortzufahren. Das heißt, wenn in der Transformer-Funktion ein Fehler auftritt, wird die Nachricht trotzdem so verarbeitet, als ob die Transformer-Funktion nicht vorhanden wäre.
 
-If the Transformer is a vital part of the pipeline, for instance when building a custom Endpoint integration, then it might not make sense to execute the underlying Endpoint in case of an error. There is a setting called `Abort On Error`, which can be turned on to stop the execution fully after the Transformer has thrown an error. 
+Wenn der Transformer ein wichtiger Bestandteil der Pipeline ist, z. B. beim Erstellen einer benutzerdefinierten Endpunktintegration, ist es möglicherweise nicht sinnvoll, den zugrunde liegenden Endpunkt im Fehlerfall auszuführen. Es gibt eine Einstellung namens 'Abort On Error', die eingeschaltet werden kann, um die Ausführung vollständig zu stoppen, nachdem der Transformer einen Fehler ausgelöst hat. 
 
-!!! warning "Line Number in Error Logs"
-      When an error is thrown in a Transformer during execution, the line number where the error occurred will be listed in the log. The line number can be a bit incorrect, since it does not take lines occupied by interfaces and comments into account.
+!!! Warnung "Zeilennummer in Fehlerprotokollen"
+      Wenn während der Ausführung ein Fehler in einem Transformer ausgelöst wird, wird die Zeilennummer, in der der Fehler aufgetreten ist, im Protokoll aufgeführt. Die Zeilennummer kann etwas falsch sein, da sie Zeilen, die von Schnittstellen und Kommentaren belegt sind, nicht berücksichtigt.
 
-      Also note that if the error is caused by a return value validation error, no line number will be shown.
+Beachten Sie auch, dass keine Zeilennummer angezeigt wird, wenn der Fehler durch einen Fehler bei der Überprüfung des Rückgabewerts verursacht wird.
 
-## Stopping Transformer Execution
+## Transformer-Ausführung stoppen<div class="divider"></div>Jede Transformer-Funktion erwartet einen bestimmten Rückgabewert, den sie dann je nach spezifischer Transformer-Funktion auf unterschiedliche Weise verwendet. In einigen Fällen kann es wünschenswert sein, die Ausführung vollständig zu stoppen, z. B. wenn die Ausgabe des Flows bereits an eine andere Plattform weitergeleitet wurde. Um dies zu erreichen, kann die Transformer-Funktion einen falschen Wert zurückgeben, z.B. null oder void.
 
-<div class="divider"></div>
+## Verfügbare Module<div class="divider"></div>### NPM-Modul
+Die folgenden NPM-Module sind im Transformer verfügbar:
 
-Every Transformer function expects a certain return value, which it will then use in different ways depending on the specific Transformer function. In some cases, it might be desired to stop the execution completely, e.g. if the output from the Flow was already forwarded to another platform. In order to achieve this, the Transformer function can return a falsy value, e.g. null or void.
-
-## Available Modules
-<div class="divider"></div>
-
-### NPM Modules
-The following NPM modules are available in the Transformer:
-
-| NPM Modules |
+| NPM-Modul |
 |-------------|
-| uuid        |
-| crypto      |
-| _ (Lodash)  |
-| moment      |
-| xmljs       |
+| UUID |
+| Krypto |
+| _ (Lodash) |
+| Augenblick |
+| XMLJS |
 
-### Text Cleaner Class
+### Textbereinigungsklasse
 
-Transformers, like Code Nodes, can use the `getTextCleaner` function to retrieve an instance of the [Text Cleaner](../../tools/text-cleaner.md) class, which exposes functions for cleaning text.
+Transformatoren, wie z. B. Codeknoten, können die Funktion 'getTextCleaner' verwenden, um eine Instanz von [Text Cleaner](.. /.. /tools/text-cleaner.md), die Funktionen zum Bereinigen von Text verfügbar macht.
 
-## Logging
-It is possible to use the exposed modules `console.log`, `console.info` and `console.error` in the Transformers. This will make the log appear on the [Project Logs page]({{config.site_url}}ai/resources/test/logs/) as a debug log, info log and error log respectively.
+## Protokollierung
+Es ist möglich, die exponierten Module 'console.log', 'console.info' und 'console.error' in den Transformern zu verwenden. Dadurch wird das Protokoll auf der Seite [Projektprotokolle]({{config.site_url}}ai/resources/test/logs/) als Debug-Protokoll, Info-Protokoll bzw. Fehlerprotokoll angezeigt.
 
-## Sending HTTP Requests
-It is possible to send HTTP requests to external services from within a Transformer. All Transformer functions can access the `httpRequest` module for this purpose. The module is invoked as a function which takes a single configuration object as arguments. This object has the same format as the options object for the NPM module [Request](https://www.npmjs.com/package/request#requestoptions-callback). Example:
+## HTTP-Anfragen senden
+Es ist möglich, HTTP-Anfragen aus einem Transformer heraus an externe Dienste zu senden. Zu diesem Zweck können alle Transformer-Funktionen auf das Modul 'httpRequest' zugreifen. Das Modul wird als Funktion aufgerufen, die ein einzelnes Konfigurationsobjekt als Argumente verwendet. Dieses Objekt hat das gleiche Format wie das options-Objekt für das NPM-Modul [Request](https://www.npmjs.com/package/request#requestoptions-callback). Beispiel:
 
-
-**HTTP Request**
-```JavaScript
+**HTTP-Anforderung**
+'''JavaScript
 handleInput: async () => {
   const result = await httpRequest({
-    uri: "some-uri",
-    method: "POST",
+    uri: "irgendein-uri",
+    Methode: "POST",
     body: {},
-    json: true
+    JSON: Stimmt
   });
   
-  console.log(result);
-  return result;
+Konsole.log(Ergebnis);
+  Ergebnis zurückgeben;
 }
-```
+'''
 
-!!! warning "Limitations for the httpRequest module"
-      It is per default only possible to send one HTTP request per Transformer execution, and it is per default not possible to send HTTP requests to other Endpoints.
+!!! Warnung "Einschränkungen für das httpRequest-Modul"
+      Standardmäßig ist es nur möglich, eine HTTP-Anfrage pro Transformer-Ausführung zu senden, und es ist standardmäßig nicht möglich, HTTP-Anfragen an andere Endpunkte zu senden.
 
-## Session Storage
+## Session-Speicher
 
-The Session Storage is a storage object available to all Transformer functions and which will be available throughout the session. This can be used to store variables that have to be used later, in other Transformer functions, or to store conversation state. There is a function called `getSessionStorage` exposed to the Transformer functions, which takes the `userId` and `sessionId` as arguments. It will return a Promise, which resolves with the `sessionStorage` object, which can be manipulated as a normal object. Example:
+Der Sitzungsspeicher ist ein Speicherobjekt, das für alle Transformer-Funktionen verfügbar ist und während der gesamten Sitzung verfügbar ist. Dies kann verwendet werden, um Variablen zu speichern, die später verwendet werden müssen, in anderen Transformer-Funktionen oder um den Konversationsstatus zu speichern. Es gibt eine Funktion namens "getSessionStorage", die für die Transformer-Funktionen verfügbar gemacht wird und die "userId" und "sessionId" als Argumente verwendet. Es wird ein Promise zurückgegeben, das mit dem 'sessionStorage'-Objekt aufgelöst wird, das wie ein normales Objekt manipuliert werden kann. Beispiel:
 
-!!! warning "Mutating Objects inside SessionStorage"
-      Complex objects (e.g. Arrays) should not be mutated (e.g. pushed to) directly, but instead locally and the re-assigned to the sessionStorage. See below.
+!!! Warnung "Mutation von Objekten innerhalb von SessionStorage"
+      Komplexe Objekte (z.B. Arrays) sollen nicht direkt, sondern lokal mutiert (z.B. gepusht) und dem sessionStorage neu zugewiesen werden. Siehe unten.
 
-**Session Storage**
-```JavaScript
+**Sitzungsspeicher**
+'''JavaScript
 const handleOutput: async ({ userId, sessionId }) => {
 	const sessionStorage = await getSessionStorage(userId, sessionId);
 
-	sessionStorage.test = "test";
+sessionStorage.test = "testen";
   
-  // Muting complex objects
-  // Instead of changing the objects directly inside sessionStorage
-  // change them locally and then assign them to the sessionStorage
+Stummschalten komplexer Objekte
+  Anstatt die Objekte direkt in sessionStorage zu ändern
+  Ändern Sie sie lokal und weisen Sie sie dann dem sessionStorage zu
   let tempArr = sessionStorage.arr || [];
   tempArr.push(1);
   tempArr.push(2);
   sessionStorage.arr = tempArr;
 }
-```
+'''
 
-## Different Base Transformer Types
+## Verschiedene Sockel-Transformator-Typen<div class="divider"></div>Es gibt drei verschiedene Arten von Transformern, und jeder Endpunkt implementiert einen von ihnen. Jeder Transformer-Typ hat eine etwas andere Art und Weise, die spezifischen Transformatorfunktionen zu handhaben.
 
-<div class="divider"></div>
+Die folgenden Abschnitte geben einen kurzen Überblick über die verschiedenen Transformer-Typen. Wie jede Transformer-Funktion für jeden Transformer-Typ unterschiedlich funktioniert, wird in den Unterkapiteln zu den einzelnen Transformer-Funktionen erklärt.
 
-There are three different types of Transformers, and each Endpoint will implement one of them. Each Transformer type will have a slightly different way of handling the specific Transformer Functions.
+## REST-Transformator
+Der REST-Transformator wird für alle Endpunkte implementiert, die REST-basiert sind, was bedeutet, dass sie eine Nachricht vom Benutzer empfangen und eine Antwort zurücksenden. Für diese Endpunkte ist es möglich, mehr Say-Knoten im Flow zu haben, aber alle Ausgaben werden zu einer Ausgabe verkettet, die dann an den Benutzer gesendet wird.
 
-The sections below give a quick overview of the different Transformer types. How every Transformer function works differently for every Transformer type is explained in the subchapters for the individual Transformer functions.
+Die REST-basierten Endpunkte sind:
 
-## REST Transformer
-The REST Transformer is implemented for all Endpoints that are REST based, which means that they receive one message from the user and send one reply back. For these Endpoints, it is possible to have more Say Nodes in the Flow, but all outputs will be concatenated into one output which will then be sent to the user.
-
-The REST based endpoints are:
-
-| REST Endpoints   |
+| REST-Endpunkte |
 |------------------|
-| Alexa            |
-| Dialogflow       |
-| Twilio           |
-| Twilio SMS       |
-| Microsoft Teams  |
-| Userlike         |
-| AudioCodes       |
-| REST             |
+| Alexa |
+| Dialogflow |
+| Twilio |
+| Twilio SMS |
+| Microsoft Teams |
+| Userlike |
+| AudioCodes |
+| RUHE |
 
-## Webhook Transformer
-The Webhook Transformer is implemented for all Endpoints that are webhook based, which means that they receive one message from the user, but can reply to the user multiple times via a webhook URL.
+## Webhook-Transformator
+Der Webhook-Transformer ist für alle Endpunkte implementiert, die Webhook-basiert sind, was bedeutet, dass sie eine Nachricht vom Benutzer erhalten, dem Benutzer aber mehrmals über eine Webhook-URL antworten können.
 
-The Webhook based Transformers are: 
+Die Webhook-basierten Transformer sind: 
 
-| Webhook Endpoints       |
+| Webhook-Endpunkte |
 |-------------------------|
-| Facebook Messenger      |
-| Slack                   |
+| Facebook Messenger |
+| Slack |
 | Microsoft Bot Framework |
-| Sunshine Conversations  |
-| LINE                    |
-| RingCentral Engage      |
-| Intercom                |
-| WhatsApp                |
-| Webhook                 |
+| Sonnenschein-Gespräche |
+| LINIE |
+| RingCentral Engage |
+| Gegensprechanlage |
+| WhatsApp |
+| Webhook |
 
-## Socket Transformer
-The Socket Transformer is implemented for all Endpoints that use sockets to communicate. These Endpoints are:
+## Steckdosen-Transformator
+Der Socket-Transformator wird für alle Endpunkte implementiert, die Sockets für die Kommunikation verwenden. Diese Endpunkte sind:
 
-| Socket Endpoints |
+| Socket-Endpunkte |
 |------------------|
-| Webchat          |
-| Socket           |
+| Webchat |
+| Steckdose |
 
-## Creating a Custom Endpoint
-To create an integration with a custom channel, the first step is to figure out which type of Endpoint this custom channel is. When it is known whether the custom integration uses a REST based API, a Webhook API or is socket based, then the corresponding Endpoint can be created in Cognigy.AI. 
+## Erstellen eines benutzerdefinierten Endpunkts
+Um eine Integration mit einem benutzerdefinierten Kanal zu erstellen, müssen Sie zunächst herausfinden, um welche Art von Endpunkt es sich bei diesem benutzerdefinierten Kanal handelt. Wenn bekannt ist, ob die benutzerdefinierte Integration eine REST-basierte API, eine Webhook-API oder Socket-basiert ist, kann der entsprechende Endpunkt in Cognigy.AI erstellt werden. 
 
-There is an example of a custom-built integration in the Example repository (see below).
+Ein Beispiel für eine benutzerdefinierte Integration finden Sie im Beispiel-Repository (siehe unten).
 
-## Example Repository
+## Beispiel-Repository<div class="divider"></div>Beispielimplementierungen für verschiedene Transformer finden Sie in unserem neuen GitHub-Repository:
 
-<div class="divider"></div>
-
-You can find example implementations for various transformers in our new GitHub repository:
-
-https://github.com/Cognigy/TransformersSamples
-
-
-<blockquote class="callout callout_info" theme="📘">
-    <span class="callout-icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span>
+https://github.com/Cognigy/TransformersSamples<blockquote class="callout callout_info" theme="📘">
+    <span class="callout-icon-svg"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 16 16" width="60" height="60"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg></span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://github.com/Cognigy/TransformersSamples" target="_blank" >Transformer Samples</a>
+         <a href="https://github.com/Cognigy/TransformersSamples" target="_blank">Transformator-Beispiele</a>
       </div>
-      <div class="callout-subtext">
-            Reference to Cognigy repository on GitHub
-      </div>
+      <div class="callout-subtext">Verweis auf das Cognigy-Repository auf GitHub      </div>
    </div>
 </blockquote>

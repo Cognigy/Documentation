@@ -1,28 +1,19 @@
 ---
- title: "Community" 
- slug: "community" 
- hidden: false 
+ Titel: "Community" 
+ Slug: "Gemeinschaft" 
+ ausgeblendet: false 
 ---
-# Community
+# Gemeinschaft
 
-## Description
+## Beschreibung<div class="divider"></div>Die Cognigy Community ist ein Ort der Diskussion, der Zusammenarbeit und der gegenseitigen Unterstützung. Jeder kann sich aktiv in die Community einbringen, die Teil unseres Help Centers ist.
 
-<div class="divider"></div>
+[Treten Sie unserer Community bei!] (https://support.cognigy.com/hc/en-us/community/topics) { .md-button .md-button--primary .center}
 
-The Cognigy Community is a place for discussion, collaboration and mutual support. Anyone can actively contribute to the community which is part of our Help Center.
-
-
-[Join our Community!](https://support.cognigy.com/hc/en-us/community/topics){ .md-button .md-button--primary .center}
-
-Sign in to our Help Center if you like to actively contribute and post articles and comments.
+Melden Sie sich in unserem Hilfe-Center an, wenn Sie aktiv Beiträge leisten und Artikel und Kommentare veröffentlichen möchten.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/550e629-community_screenshot.png" width="100%" />
-    <figcaption>Cognigy Community in Help Center</figcaption>
+    <figcaption>Cognigy Community im Help Center</figcaption>
 </figure>
 
-## Recommendations
-
-<div class="divider"></div>
-
-Feel free to post questions, answers and ideas on our community platform.
+## Empfehlungen<div class="divider"></div>Zögern Sie nicht, Fragen, Antworten und Ideen auf unserer Community-Plattform zu posten.

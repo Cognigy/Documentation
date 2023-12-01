@@ -1,149 +1,130 @@
 ---
-title: "GPT Conversation"
-slug: "gpt-conversation"
-hidden: false
+Titel: "GPT Conversation"
+Slug: "GPT-Konversation"
+ausgeblendet: false
 ---
 
-# GPT Conversation (Research preview)
+# GPT-Konversation (Forschungsvorschau)
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../release-notes/4.48.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.48(Forschungsvorschau)-lila.svg)] (.. /.. /.. /release-notes/4.48.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation.png" width="80%" />
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>!!! Warnung
+    Dieser Node ist Teil der Forschungsbemühungen von Cognigy im Bereich der großen Sprachmodelle und dient ausschließlich als Vorschaufunktion. Der GPT-Konversationsknoten ist nicht für die Verwendung in der Produktion vorgesehen.
 
-<div class="divider"></div>
+Der GPT Conversation Node verarbeitet und versteht natürlichsprachliche Eingaben von Benutzern und nutzt diese Eingaben, um relevante und kontextuell angemessene Antworten zu generieren. Die Node-Konfiguration umfasst die Definition einer Persona, eines Wissens und einer Aufgabe für den Bot, sodass er KI-basierte Antworten auf Benutzereingaben generieren und Aktionen auslösen kann. Der GPT-Konversationsknoten kann die gesamte Konversation mithilfe von Large Language Models (LLMs) unterstützen.
 
-!!! warning
-    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+Bevor Sie diesen Node verwenden, legen Sie den Generative AI-Anbieter in den [Einstellungen](.. /.. /generative-ai.md#set-up-generative-ai).
 
-The GPT Conversation Node processes and comprehends natural language input from users and utilizes this input to generate relevant and contextually appropriate responses. The Node configuration includes defining a persona, knowledge, and task for the bot, allowing it to generate AI-based responses to user inputs and trigger actions. The GPT Conversation Node can support the entire conversation using Large Language Models (LLMs).
+## Einstellungen
 
-Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
+### Modus
 
-## Settings
+Wählen Sie einen der folgenden Modi aus:
 
-### Mode
-
-Select one of these modes:
-
-- **QnA** — is focused on answering user questions based on pre-existing knowledge of the conversation topic.
-- **Transactional** — is focused on answering user questions based on pre-existing knowledge of the conversation topic and strict sequence of virtual agent's steps. In this mode, you can call an action, which should be handled in Flow logic after the GPT Conversation Node. You can use the [Lookup](../logic/lookup.md) and [If](../logic/if.md) Nodes to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request.
+- **QnA** – konzentriert sich auf die Beantwortung von Benutzerfragen, die auf bereits vorhandenen Kenntnissen des Gesprächsthemas basieren.
+- **Transaktional** – konzentriert sich auf die Beantwortung von Benutzerfragen auf der Grundlage bereits vorhandener Kenntnisse des Gesprächsthemas und der strikten Abfolge der Schritte des virtuellen Agenten. In diesem Modus können Sie eine Aktion aufrufen, die in der Flow-Logik nach dem GPT-Konversationsknoten behandelt werden soll. Sie können die Schaltfläche [Lookup](.. /logic/lookup.md) und [If](.. /logic/if.md) Knoten, um zu überprüfen, ob der Kontext über die Aktion verfügt, und dann eine bestimmte Aufgabe entsprechend auszuführen, z. B. eine HTTP-Anforderung zu erstellen.
 
 ### Persona
 
-| Parameter           | Type          | Description                                                                                                                                                                                                                                                                                                                               |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                               |
 |---------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Company Name        | CognigyScript | The name of the company.                                                                                                                                                                                                                                                                                                                  |
-| Company Description | CognigyScript | Company's current activities: What is your company doing?                                                                                                                                                                                                                                                                                 |
-| Bot Name            | CognigyScript | The name of the virtual agent.                                                                                                                                                                                                                                                                                                            |
-| Character           | Text          | The character traits of the virtual agent. For example, is the virtual agent `professional` or `patient`? Enter phrases that describe your agent's personality.                                                                                                                                                                           |
-| Strictness          | Select        | The level of adherence expected from the virtual agent regarding the task: <br/> - Trivia and small talk — including trivia and small talk. <br> - Stick to the task — strictly sticking to the task. <br> - Some small talk — incorporating some small talk. <br> - Complete free style — engaging in completely free-form conversation. |
+| Firmenname | CognigyScript | Der Name des Unternehmens.                                                                                                                                                                                                                                                                                                                  |
+| Unternehmensbeschreibung | CognigyScript | Aktuelle Aktivitäten des Unternehmens: Was macht Ihr Unternehmen?                                                                                                                                                                                                                                                                                 |
+| Bot-Name | CognigyScript | Der Name des virtuellen Agenten.                                                                                                                                                                                                                                                                                                            |
+| Charakter | Text | Die Charaktereigenschaften des virtuellen Agenten. Ist der virtuelle Agent beispielsweise "professionell" oder "geduldig"? Geben Sie Sätze ein, die die Persönlichkeit Ihres Agenten beschreiben.                                                                                                                                                                           |
+| Strenge | Wählen Sie | Der Grad der Befolgung, der vom virtuellen Agenten in Bezug auf die Aufgabe erwartet wird: <br/> - Trivia und Smalltalk – einschließlich Trivia und Smalltalk. <br> - Halten Sie sich an die Aufgabe – halten Sie sich strikt an die Aufgabe. <br> - Etwas Smalltalk – etwas Smalltalk einbeziehen. <br> - Völlig freier Stil – völlig freie Konversation. |
 
-### Task Settings
+### Aufgaben-Einstellungen
 
-Available only in Transactional mode.
+Nur im Transaktionsmodus verfügbar.
 
-| Parameter             | Type          | Description                                                                                                                                                                                                                                                                                                                      |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bot Task              | CognigyScript | Task for the virtual agent. Examples: book an appointment, rebook a flight, order a product.                                                                                                                                                                                                                                     |
-| Steps                 | CognigyScript | Description of task steps.                                                                                                                                                                                                                                                                                                       |
-| Step Analytics Labels | Text          | Labels of the steps to be used in analytics.                                                                                                                                                                                                                                                                                     |
-| Slots to collect      | Text          | The keys of the slots to collect                                                                                                                                                                                                                                                                                                 |
-| Available Actions     | Text          | Actions the virtual agent can trigger. You can reuse these actions in the [Lookup](../logic/lookup.md) or [If](../logic/if.md) Nodes to check if the context has the action and then perform a specific task accordingly, for example, create an HTTP request. For more information, read [Specific Example](#specific-example). |
-| Further Information   | CognigyScript | Additional information for the virtual agent, such as topics that should be avoided during the conversation.                                                                                                                                                                                                                     |
+| Bot-Aufgabe | CognigyScript | Task für den virtuellen Agenten. Beispiele: Termin buchen, Flug umbuchen, Produkt bestellen.                                                                                                                                                                                                                                     |
+| Schritte | CognigyScript | Beschreibung der Aufgabenschritte.                                                                                                                                                                                                                                                                                                       |
+| Step Analytics-Labels | Text | Bezeichnungen der Schritte, die in der Analyse verwendet werden sollen.                                                                                                                                                                                                                                                                                     |
+| Slots zum Sammeln | Text | Die Schlüssel der zu sammelnden Slots |
+| Verfügbare Aktionen | Text | Aktionen, die der virtuelle Agent auslösen kann. Sie können diese Aktionen in der [Suche](.. /logic/lookup.md) oder [If](.. /logic/if.md) Knoten, um zu überprüfen, ob der Kontext über die Aktion verfügt, und dann eine bestimmte Aufgabe entsprechend auszuführen, z. B. eine HTTP-Anforderung zu erstellen. Weitere Informationen finden Sie unter [Spezifisches Beispiel](#specific-Beispiel). |
+| Weitere Informationen | CognigyScript | Zusätzliche Informationen für den virtuellen Agenten, z. B. Themen, die während des Gesprächs vermieden werden sollten.                                                                                                                                                                                                                     |
 
+### Erdung
 
-
-### Grounding
-
-| Parameter           | Type          | Description                                                                      |
+| Parameter | Typ | Beschreibung |
 |---------------------|---------------|----------------------------------------------------------------------------------|
-| Grounding Knowledge | CognigyScript | Knowledge to help the virtual agent build a factual response. Optional field.    |
-| Injected Slots      | CognigyScript | Slots you wish to send to the virtual agent. Will be appended to the user input. |
+| Wissen auf der Grundlage | CognigyScript | Wissen, das dem virtuellen Agenten hilft, eine sachliche Antwort zu erstellen. Optionales Feld.    |
+| Eingespritzte Steckplätze | CognigyScript | Slots, die Sie an den virtuellen Agenten senden möchten. Wird an die Benutzereingabe angehängt. |
 
-### Advanced
+### Fortgeschritten
 
-| Parameter         | Type      | Description                                                                                                                                                                                   |
+| Parameter | Typ | Beschreibung |
 |-------------------|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Temperature       | Indicator | The appropriate sampling temperature for the model. Higher values mean the model will take more risks.                                                                                        |
-| Maximal Tokens    | Indicator | The maximum number of tokens to generate in the completion.                                                                                                                                   |
-| Presence Penalty  | Indicator | Number between -2.0 and 2.0. Positive values penalize new tokens based on whether they appear in the text so far, increasing the model's likelihood of talking about new topics.              |
-| Frequency Penalty | Indicator | Number between -2.0 and 2.0. The penalty assigns a lower probability to tokens frequently appearing in the generated text, encouraging the model to generate more diverse and unique content. |
-| Use Stops         | Toggle    | Whether to use a list of stop words to let Generative AI know where the sentence stops.                                                                                                       |
-| Stops             | Text      | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                    |
+| Temperatur | Indikator | Die geeignete Probenahmetemperatur für das Modell. Höhere Werte bedeuten, dass das Modell mehr Risiken eingeht.                                                                                        |
+| Maximale Anzahl an Token | Indikator | Die maximale Anzahl von Token, die beim Abschluss generiert werden sollen.                                                                                                                                   |
+| Anwesenheitsstrafe | Indikator | Zahl zwischen -2,0 und 2,0. Positive Werte bestrafen neue Token basierend darauf, ob sie bisher im Text erschienen sind, und erhöhen die Wahrscheinlichkeit, dass das Modell über neue Themen spricht.              |
+| Häufigkeits-Strafe | Indikator | Zahl zwischen -2,0 und 2,0. Die Strafe weist Token, die häufig im generierten Text vorkommen, eine geringere Wahrscheinlichkeit zu und ermutigt das Modell, vielfältigere und einzigartigere Inhalte zu generieren. |
+| Stopps verwenden | Umschalten | Gibt an, ob eine Liste von Stoppwörtern verwendet werden soll, um Generative AI wissen zu lassen, wo der Satz endet.                                                                                                       |
+| Haltestellen | Text | Bis zu 4 Sequenzen, in denen die API keine weiteren Token mehr generiert. Der zurückgegebene Text enthält nicht die Stoppsequenz.                                                                    |
 
+### Timeout-Einstellungen
 
-### Timeout Settings
-
-| Parameter       | Type          | Description                                                                                |
+| Parameter | Typ | Beschreibung |
 |-----------------|---------------|--------------------------------------------------------------------------------------------|
-| Timeout         | Selector      | The maximum amount of milliseconds to wait for a response from the Generative AI Provider. |
-| Timeout Message | CognigyScript | The message to output if the timeout is hit.                                               |
+| Zeitüberschreitung | Selektor | Die maximale Anzahl von Millisekunden, die auf eine Antwort des generativen KI-Anbieters gewartet werden soll. |
+| Zeitüberschreitungsmeldung | CognigyScript | Die Meldung, die ausgegeben werden soll, wenn die Zeitüberschreitung erreicht wird.                                               |
 
-## Examples
+## Beispiele
 
-### General example
+### Allgemeines Beispiel
 
-This video shows a live example of how the GPT Conversation Node can generate text based on the user input.
-
-<div style="text-align:center;">
+Dieses Video zeigt ein Live-Beispiel, wie der GPT Conversation Node Text basierend auf der Benutzereingabe generieren kann.<div style="text-align:center;">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/WKJO4_JfIFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+</div>Nach 0:12 Sekunden erhält der Benutzer die erwartete Antwort vom virtuellen Agenten in Form eines generierten Conversational AI-Textes:
 
-At 0:12 second, the user receives the expected answer from the virtual agent in the form of generated Conversational AI text:
+'''text
+Es tut mir leid, von dem Notfall zu hören, <user name="">. 
+Können Sie mir Ihre Ticketnummer mitteilen? 
+damit ich Ihnen helfen kann, so schnell wie möglich nach London zu kommen? 
+Vielen Dank.
+'''
 
-```text
-Sorry to hear about the emergency, <user name>. 
-Can you provide me with your ticket number 
-so that I can help you get to London as quickly as possible? 
-Thank you.
-```
+### Konkretes Beispiel
 
-### Specific example
+Im Transaktionsmodus können Sie die Schaltfläche [Lookup](.. /logic/lookup.md) oder [If](.. /logic/if.md), um eine Ablauflogik fortzusetzen. 
 
-In the Transaction mode, you can use the [Lookup](../logic/lookup.md) or [If](../logic/if.md) to continue a flow logic. 
+Für beide Knoten müssen Sie die Aktion im Feld **Verfügbare Aktionen** des GPT-Konversationsknotens angeben. Wählen Sie dazu den Knoten aus:
 
-For both Nodes, you need to specify the action in the **Available Actions** field of the GPT Conversation Node. To do this, select the Node:
+=== "Nachschlagen"
 
-=== "Lookup"
-
-      1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it. 
-      2. After the GPT Conversation Node, add the **Lookup** Node. 
-      3. Go to the **Lookup** Node:<br>
-         3.1 Select **CognigyScript** from the **Type** list.<br>
-         3.2 Enter `context.action` in the **Operator** field.<br>
-         3.3 Click **Save Node**.
+1. Gehen Sie zum GPT-Konversationsknoten, wählen Sie den **Transaktionsmodus** aus und überprüfen Sie, ob der Parameter 'checkAppointment' im Feld **Verfügbare Aktionen** vorhanden ist. Ist dies nicht der Fall, fügen Sie diesen Wert hinzu und kopieren Sie ihn. 
+      2. Fügen Sie nach dem GPT-Konversationsknoten den Knoten **Lookup** hinzu. 
+      3. Wechseln Sie zum Knoten **Lookup**:<br>3.1 Wählen Sie **CognigyScript** aus der Liste **Typ** aus.<br>3.2 Geben Sie 'context.action' in das Feld **Operator** ein.<br>3.3 Klicken Sie auf **Knoten speichern**.
            <figure>
            <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup.png" width="80%" />
          </figure>
-      4. Go to the Case of the Lookup Node:<br>
-         4.1 Paste`checkAppointment` in the **Value** field.<br>
-         4.2 Click **Save Node**.
+      4. Wechseln Sie zum Fall des Lookup-Knotens:<br>4.1 Fügen Sie 'checkAppointment' in das Feld **Wert** ein.<br>4.2 Klicken Sie auf **Knoten speichern**.
        <figure>
            <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup-case.png" width="80%" />
          </figure>
-      5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
-      6. Test this Flow via the Interaction Panel.
+      5. Fügen Sie im Flow-Editor den zusätzlichen Say-Knoten mit der Ausgabe vom Typ **Text** hinzu. Sie können auch den HTTP-Knoten verwenden.
+      6. Testen Sie diesen Ablauf über das Interaktionsfenster.
 
-=== "IF"
+=== "WENN"
 
-      1. Go to the GPT Conversation Node, select the **Transaction** mode and check if the `checkAppointment` parameter exists in the **Available Actions** field. If not, add this value and copy it.
-      2. After the GPT Conversation Node, add the IF Node.
-      3. Go to the **IF** Node:<br>
-         3.1 Select **CognigyScript** from the **Type** list.<br>
-         3.2 Enter `context.action === "checkAppointment"` in the **Condition** field.<br>
-         3.3 Select **exists** from the list.
-         3.4 Click **Save Node**.
+1. Gehen Sie zum GPT-Konversationsknoten, wählen Sie den **Transaktionsmodus** aus und überprüfen Sie, ob der Parameter 'checkAppointment' im Feld **Verfügbare Aktionen** vorhanden ist. Ist dies nicht der Fall, fügen Sie diesen Wert hinzu und kopieren Sie ihn.
+      2. Fügen Sie nach dem GPT-Konversationsknoten den IF-Knoten hinzu.
+      3. Gehen Sie zum Knoten **IF**:<br>3.1 Wählen Sie **CognigyScript** aus der Liste **Typ** aus.<br>3.2 Geben Sie 'context.action === "checkAppointment"' in das Feld **Bedingung** ein.<br>3.3 Wählen Sie **existiert** aus der Liste aus.
+         3.4 Klicken Sie auf **Knoten speichern**.
          <figure>
            <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-if.png" width="80%" />
          </figure>
-      4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
-      5. Test this Flow via the Interaction Panel.
+      4. Fügen Sie im Flow-Editor den zusätzlichen Say-Knoten mit der Ausgabe vom Typ **Text** hinzu. Sie können auch den HTTP-Knoten verwenden.
+      5. Testen Sie diesen Ablauf über das Interaktionsfenster.
 
-## More Information
+## Mehr Informationen
 
-- [Generative AI](../../generative-ai.md)
-- [LLM Prompt Node](llm-prompt.md)
+- [Generative KI](.. /.. /generative-ai.md)
+- [LLM-Eingabeaufforderungsknoten](llm-prompt.md)</user>

@@ -1,7 +1,7 @@
 ---
- title: "AudioCodes" 
- slug: "audiocodes" 
- hidden: false 
+ Titel: "AudioCodes" 
+ Slug: "Audiocodes" 
+ ausgeblendet: false 
 ---
 # AudioCodes
 
@@ -9,80 +9,69 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/audiocodes-endpoint-logo.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using the AudioCodes Endpoint, allowing customers to speak to your **Agent** instead of just writing with it.
-
-<blockquote class="callout callout_info" theme="📘">
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihren **Agenten** über den AudioCodes-Endpunkt mit Ihrem Contact Center oder anderen Telefonnummern verbinden, sodass Kunden mit Ihrem **Agenten** sprechen können, anstatt nur mit ihm zu schreiben.<blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway" target="_blank" >Technical video "Building a Phone Bot with Voice Gateway"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360017522940-Cognigy-Sessions-Building-a-Phone-Bot-with-Voice-Gateway" target="_blank">Technisches Video "Erstellen eines Telefon-Bots mit Voice Gateway"</a>
       </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
+      <div class="callout-subtext">Sehen Sie sich diese Folge von Cognigy Sessions an, um einen technischen Einblick zu erhalten      </div>
    </div>
-</blockquote>
+</blockquote>## AudioCodes-Einstellungen
+### Asynchroner Modus
+Wenn der asynchrone Modus für den AudioCodes-Endpunkt aktiviert ist, werden die Ausgaben direkt gesendet, während sie in einem Flow verarbeitet werden. Dies kann von Vorteil sein, wenn der Flow z.B. eine HTTP-Anfrage senden muss. Wenn der asynchrone Modus deaktiviert ist, werden die Ausgaben gesendet, wenn der gesamte Flow die Verarbeitung für die angegebene Eingabe abgeschlossen hat.
 
-## AudioCodes Settings
-### Async Mode
-When async mode is enabled for the AudioCodes Endpoint, then outputs will be sent directly as they are processed in a Flow. This can be beneficial when the Flow for example has to send an HTTP request. When the async mode is off, then the outputs will be sent when the entire Flow has finished processing for the given input.
+Die Funktion [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) funktioniert nur, wenn der asynchrone Modus aktiviert ist.
 
-The [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/) functionality only works when async mode is enabled.
+## AudioCodes-spezifische Knoten
 
-## AudioCodes specific Nodes
+Cognigy.AI verfügt über eine große Anzahl von eingebauten Nodes, um das Verhalten von AudioCodes zu steuern. Weitere Informationen finden Sie unter [AudioCodes Nodes]({{config.site_url}}ai/flow-nodes/audiocodes/audiocodes/).
 
-Cognigy.AI comes with a large number of inbuilt Nodes to control the AudioCodes behaviour. See [AudioCodes Nodes]({{config.site_url}}ai/flow-nodes/audiocodes/audiocodes/) for more information.
+## Zahlen-Metadaten
 
-## Number Meta Data
+AudioCodes identifiziert Informationen über den Aufrufer und fügt sie dem Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/)-Objekt als 'input.data.numberMetaData' hinzu.
 
-AudioCodes identifies information about the caller and adds it to the Cognigy [Input]({{config.site_url}}ai/tools/interaction-panel/input/) Object as `input.data.numberMetaData`.
-
-| Parameter   | Type |Description|Example|
+| Parameter | Typ |Beschreibung|Beispiel|
 | ----------- | ------------------------------------ |||
-| number      | string |The phone number of the caller, including country code|+4921154591991|
-| country     | string |The 2-character country code|DE|
-| countryCallingCode | string |The calling code of the country|49|
-| nationalNumber      | string |The national number without the country code and without a leading zero.|21154591991|
-| valid      | boolean |Whether the number is valid|true|
-| valid      | string |The type of number. See below.|FIXED_LINE|
-| uri      | string |The URI for the number|tel:+4921154591991|
+| Anzahl | Zeichenfolge |Die Telefonnummer des Anrufers, einschließlich Landesvorwahl|+4921154591991|
+| Grundstücke | Zeichenfolge |Der 2-stellige Ländercode|DE|
+| countryCallingCode | Zeichenfolge |Die Vorwahl des Landes|49|
+| nationalNummer | Zeichenfolge |Die nationale Nummer ohne Landesvorwahl und ohne führende Null.|21154591991|
+| gültig | Boolescher Wert |Ob die Nummer gültig ist|true|
+| gültig | Zeichenfolge |Der Typ der Nummer. Siehe unten.|FIXED_LINE|
+| URI | Zeichenfolge |Der URI für die Nummer|tel:+4921154591991|
 
-`numberMetaData.type` can be any of:
+'numberMetaData.type' kann einer der folgenden Werte sein:
 
 - PREMIUM_RATE
 - TOLL_FREE
 - SHARED_COST
 - VOIP
 - PERSONAL_NUMBER
-- PAGER
+-PIEPSER
 - UAN
 - VOICEMAIL
 - FIXED_LINE_OR_MOBILE
 - FIXED_LINE
-- MOBILE
+-MOBIL
 
+!!! Hinweis "NumberMetaData in Tokens"
+    Alle oben genannten sind auch als [Tokens]({{config.site_url}}ai/resources/manage/tokens/) in Cognigy Text-Feldern verfügbar.
 
-!!! note "NumberMetaData in Tokens"
-    All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-## Generic Endpoint Settings
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
 
-<div class="divider"></div>
+!!! Hinweis "Contact Center & Telefonnummernverknüpfung"
+    Um einen **AudioCodes** **Endpunkt** mit einer Telefonnummer zu verknüpfen, wenden Sie sich an Ihren **Cognigy**-Vertreter, um eine VG-Instanz bereitzustellen und zu konfigurieren.
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Warnung "AudioCodes VoiceAI Connect"
+    Cognigy AudioCodes Endpoint ist zu 100 % kompatibel mit [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), wo Sie sich kostenlos anmelden und innerhalb weniger Minuten eine Telefonnummer erhalten können.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings) 
-
-!!! note "Contact Center & Phone number linking"
-    To link a **AudioCodes** **Endpoint** to a phone number, contact your **Cognigy** representative in order to provision and configure a VG instance.
-
-!!! warning "AudioCodes VoiceAI Connect"
-    Cognigy AudioCodes Endpoint is 100% compatible with [AudioCodes VoiceAI Connect](https://voiceaiconnect.audiocodes.com), where you can sign up for free and get a phone number within minutes.
-
-!!! warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Voice Gateway integration to Cognigy AI the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes. This applies to the Flow Nodes and the Endpoint.
+!!! Warnung "Rebranding des Voice Gateways mit AudioCodes"
+    Mit der nativen Voice-Gateway-Integration in Cognigy AI wird die AudioCodes-Implementierung von Voice Gateway in AudioCodes umbenannt. Dies gilt für die Flow-Knoten und den Endpunkt.

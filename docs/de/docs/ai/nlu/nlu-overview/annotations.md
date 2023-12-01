@@ -1,81 +1,77 @@
 ---
- title: "Annotations" 
- slug: "annotations" 
- hidden: false 
+ title: "Anmerkungen" 
+ slug: "Anmerkungen" 
+ ausgeblendet: false 
 ---
-# Annotations
+# Anmerkungen
 
-The Cognigy.AI intent builder features the **Annotations** tool that allows sentence words to be assigned as placeholders to recognize specific details from user utterances. Each placeholder is assigned to the **Slot** that will be recognized and filled by the NLU.
+Der Cognigy.AI Intent-Builder verfügt über das Tool **Anmerkungen**, mit dem Satzwörter als Platzhalter zugewiesen werden können, um bestimmte Details aus Benutzeräußerungen zu erkennen. Jeder Platzhalter wird dem **Slot** zugewiesen, der von der NLU erkannt und gefüllt wird.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/d6edddb-annotations.PNG" width="100%" />
 </figure>
 
-This feature is particularly useful to reduce repetition by allowing lexicon libraries to be recognized within example sentence structures.
+Diese Funktion ist besonders nützlich, um Wiederholungen zu reduzieren, indem Lexikonbibliotheken in Beispielsatzstrukturen erkannt werden können.
 
-## Example Sentences
-<div class="divider"></div>
-
-Annotations can be added to example sentences by highlighting the required word in the text field and selecting the **+** icon at the right end of the field.
+## Beispiel-Sätze<div class="divider"></div>Anmerkungen können zu Beispielsätzen hinzugefügt werden, indem Sie das gewünschte Wort im Textfeld markieren und das **+**-Symbol am rechten Ende des Feldes auswählen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/da1ef79-annotateWord1.PNG" width="100%" />
 </figure>
 
-A new menu line will be created for each annotation added to the sentence. The annotation menu includes drop down fields to select the `Slot Type` and `key`. Both of these values are required for each annotation.
+Für jede Anmerkung, die dem Satz hinzugefügt wird, wird eine neue Menüzeile erstellt. Das Anmerkungsmenü enthält Dropdown-Felder zur Auswahl des "Slot-Typs" und des "Schlüssels". Beide Werte sind für jede Annotation erforderlich.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/0c923ee-annotateWord3.PNG" width="100%" />
 </figure>
 
-Multiple annotations of different types can be added to a single example sentence where each annotation will be underlined in a different color. 
+Mehrere Anmerkungen unterschiedlichen Typs können zu einem einzigen Beispielsatz hinzugefügt werden, wobei jede Anmerkung in einer anderen Farbe unterstrichen wird. 
 
-!!! note "Copy and Paste Annotated Sentences"
-    It is possible to copy a sentence including annotations to another example sentence line which will carry all the assigned annotations with it. Although similar sentences should be avoided, this can help save time by reducing the need to re-annotate words.
+!!! Hinweis "Kopieren und Einfügen von kommentierten Sätzen"
+    Es ist möglich, einen Satz mit Anmerkungen in eine andere Beispielsatzzeile zu kopieren, die alle zugewiesenen Anmerkungen mitnimmt. Obwohl ähnliche Sätze vermieden werden sollten, kann dies dazu beitragen, Zeit zu sparen, indem die Notwendigkeit reduziert wird, Wörter erneut zu kommentieren.
 
-### Lexicon Slot
-Insert **Lexicon Slot** placeholders within example sentences to teach the NLU to recognize words with similar meanings. For example, annotate the product name `shirts` with a custom `product` lexicon tag to allow the NLU to recognize `pants`, `hats`, and `jackets` that have been given the same slot tag in the [Lexicon Editor]({{config.site_url}}ai/resources/build/lexicons/).
+### Lexikon-Steckplatz
+Fügen Sie **Lexicon Slot** Platzhalter in Beispielsätze ein, um der NLU beizubringen, Wörter mit ähnlicher Bedeutung zu erkennen. Kommentieren Sie z. B. den Produktnamen "Hemden" mit einem benutzerdefinierten "Produkt"-Lexikon-Tag, damit die NLU "Hosen", "Hüte" und "Jacken" erkennen kann, die im [Lexikon-Editor]({{config.site_url}}ai/resources/build/lexicons/) dasselbe Slot-Tag erhalten haben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/bc5d3a5-lexiconSlot.PNG" width="100%" />
 </figure>
 
-**Synonyms** you provide in attached Lexicons are used at score and train time to improve accuracy.
+**Synonyme**, die Sie in angehängten Lexika angeben, werden zur Notations- und Trainingszeit verwendet, um die Genauigkeit zu verbessern.
 
-Note that Slot Tags and Synonyms for intents must be attached in the same flow. This means when training with attached flows: intents in attached flows use the lexicons of their attached flows, not the lexicons of the parent Flow.
+Beachten Sie, dass Slot-Tags und Synonyme für Absichten im selben Ablauf angehängt werden müssen. Dies bedeutet, dass beim Training mit angefügten Flows Intents in angefügten Flows die Lexika ihrer angehängten Flows verwenden, nicht die Lexika des übergeordneten Flows.
 
+!!! Hinweis "Profi-Tipp: Verwenden Sie Synonyme, um seltene Wörter zu übersetzen"
+    Geben Sie verständliche, gebräuchliche Synonyme für seltene Wörter an. Cognigy Natural Language Understanding wird in der Lage sein, seltene Wörter besser zu verstehen, wenn Sie sie in gängige Äußerungen übersetzen. So könnte z.B. ein bestimmter Markenname wie "PremiumPayID" mit dem Synonym "Kreditkarte" versehen werden, und Cognigy wird seine Verbindung zu Zahlungen verstehen, wo es sonst ein unbekanntes Wort wäre.
 
-!!! note "Pro Tip: use synonyms to translate rare words"
-    Provide understandable, common synonyms for rare words. Cognigy Natural Language Understanding will be able to better make sense of rare words if you translate them to common utterances. E.g., a specific brand name such as "PremiumPayID" could be provided with the synonym "credit card" and Cognigy will understand its connection to payments where it would otherwise be an unknown word.
+!!! Warnung "Tags nicht überstrapazieren"
+    Für kleine Wortgruppen, die das Gleiche bedeuten, ist es effektiver, nur Synonyme zu verwenden. Tags eignen sich für eine große Anzahl von Wörtern, die in einem Konzept zusammengefasst sind, z. B. Vornamen oder Ländercodes.
 
-!!! warning "Do not overuse tags"
-    For small word groups which mean the same thing it more effective to use only synonyms. Tags are appropriate for a large number of words collected in one concept, such as first names or country codes.
+!!! Hinweis "Exaktes Tag ersetzte Matching-Algorithmus"
+    Beispiel- und Eingabeäußerungen, die genau übereinstimmen, mit Ausnahme von Schlüsselwörtern, die dasselbe Tag verwenden, erhalten automatisch eine Punktzahl von 0,95
 
-!!! note "Exact tag replaced matching algorithm"
-    Example and input utterances that match exactly save for Keyphrase(s) which share the same Tag automatically receive a score of 0.95
+Zur Veranschaulichung:
 
-    To illustrate:
+Die Eingabe "Ich möchte eine Pizza" stimmt direkt mit einem Beispielsatz "Ich möchte einen Burger" mit einer Punktzahl von 0,95 überein, wenn "Pizza" und "Burger" Schlüsselwörter in einem angehängten Lexikon sind, die dasselbe Tag haben.
 
-    The input "I want a pizza" will match an example sentence "I want a burger" directly with score 0.95 if "pizza" and "burger" are Keyphrases in an attached Lexicon that share the same Tag.
+Beachten Sie, dass der direkte Vergleich nur aus Effizienzgründen auf das **allererste Tag in einem Lexikon** beschränkt ist.
 
-    Note the direct comparison is limited to the **very first Tag in a Lexicon** only for efficiency reasons.
-
-| Slot Name |
+| Name des Steckplatzes |
 | --------- |
-| Number |
-| Date |
-| Age |
-| Temperature |
-| Duration |
-| Percentage |
+| Anzahl |
+| Datum |
+| Alter |
+| Temperatur |
+| Dauer |
+| Prozentsatz |
 | E-Mail |
-| URL |
-| Money |
-| Distance |
+| Internetadresse |
+| Geld |
+| Distanz |
 
-!!! note "Detailed Slot Information"
-    For more information about System Slots, including data formats and examples, visit the [Slot Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
+!!! Hinweis "Detaillierte Slot-Informationen"
+    Weitere Informationen zu System-Slots, einschließlich Datenformaten und Beispielen, finden Sie unter [Slot-Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/).
 
-### Any Slot
+### Beliebiger Spielautomat
 
-This slot option provides an open text field for a custom slot name to be specified. The name should match any slot that will be recognised by the NLU and published to the input data as a child of `input.slots`.
+Diese Slot-Option stellt ein offenes Textfeld für einen benutzerdefinierten Slot-Namen bereit, der angegeben werden kann. Der Name sollte mit jedem Slot übereinstimmen, der von der NLU erkannt und in den Eingabedaten als untergeordnetes Element von "input.slots" veröffentlicht wird.

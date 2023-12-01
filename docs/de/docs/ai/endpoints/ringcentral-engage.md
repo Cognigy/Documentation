@@ -1,7 +1,7 @@
 ---
- title: "RingCentral Engage" 
- slug: "ringcentral-engage" 
- hidden: false 
+ Titel: "RingCentral Engage" 
+ Slug: "RingCentral-Engage" 
+ ausgeblendet: false 
 ---
 # RingCentral Engage
 
@@ -9,24 +9,20 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/211ecb3-RingCentralEngage.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to **RingCentral Engage** by using our RingCentral Engage Endpoint integration.  
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihre Cognigy-Ressourcen mit **RingCentral Engage** verbinden, indem Sie unsere RingCentral Engage Endpoint-Integration verwenden.  
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-## Channel Specific Settings
-
-<div class="divider"></div>
-
-The **RingCentral Engage setup** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **RingCentral Engage** deployment.
+## Kanalspezifische Einstellungen<div class="divider"></div>Im Dropdown-Menü **RingCentral Engage-Setup** müssen Cognigy.AI die Anmeldeinformationen erhalten, um eine Verbindung mit einer **RingCentral Engage**-Bereitstellung herzustellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/a85269e-rceSetup.PNG" width="100%" />
@@ -34,32 +30,32 @@ The **RingCentral Engage setup** dropdown menu is where Cognigy.AI needs to be p
 
 ###API URL
 
-The RingCentral Engage API URL that is determined from your application name and the version of the API.
+Die RingCentral Engage-API-URL, die aus Ihrem Anwendungsnamen und der API-Version ermittelt wird.
 
-### Access Token
+### Zugriffs-Token
 
-The RingCentral Engage access token to use for API requests as an authentication variable. 
+Das RingCentral Engage-Zugriffstoken, das für API-Anforderungen als Authentifizierungsvariable verwendet werden soll. 
 
-### Verification token
+### Verifizierungs-Token
 
-Verification token applies an added layer of security to ensure the authenticity of API requests to your API domain in RingCentral.
+Das Verifizierungstoken wendet eine zusätzliche Sicherheitsebene an, um die Authentizität von API-Anfragen an Ihre API-Domäne in RingCentral sicherzustellen.
 
-### Secret
+### Geheimnis
 
-This value matches the secret key setup in the RingCentral Engage webhook configuration and is used for the handshake process.
+Dieser Wert stimmt mit der Einrichtung des geheimen Schlüssels in der RingCentral Engage-Webhook-Konfiguration überein und wird für den Handshake-Prozess verwendet.
 
-### Bot category ID
+### Bot-Kategorie-ID
 
-The category ID which will be used to identify the bot. This value is obtained from the RingCentral Engage platform.
+Die Kategorie-ID, die zur Identifizierung des Bots verwendet wird. Dieser Wert wird von der RingCentral Engage-Plattform abgerufen.
 
-### Agent category ID
+### ID der Agentenkategorie
 
-The category ID which will be used to identify the agent. This value is obtained from the RingCentral Engage platform.
+Die Kategorie-ID, die zur Identifizierung des Agenten verwendet wird. Dieser Wert wird von der RingCentral Engage-Plattform abgerufen.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **RingCentral Engage** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016306779).
-## More Information
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **RingCentral Engage**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016306779).
+## Mehr Informationen
 
-- [Help Center: RingCentral Engage Deployment](https://support.cognigy.com/hc/en-us/articles/360016306779-RingCentral-Engage-Deploy-an-Endpoint)
-- [Help Center: RingCentral Engage Send Structured Content](https://support.cognigy.com/hc/en-us/articles/360016306859-RingCentral-Engage-Send-Structured-Content)
-- [Help Center: RingCentral Engage Handover Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration)
+- [Hilfe-Center: RingCentral Engage-Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016306779-RingCentral-Engage-Deploy-an-Endpoint)
+- [Hilfe-Center: RingCentral Engage Strukturierte Inhalte senden](https://support.cognigy.com/hc/en-us/articles/360016306859-RingCentral-Engage-Send-Structured-Content)
+- [Hilfe-Center: RingCentral Engage-Übergabe-Integration](https://support.cognigy.com/hc/en-us/articles/360016275260-RingCentral-Engage-Handover-Integration)

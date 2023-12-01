@@ -1,7 +1,7 @@
 ---
-title: "Webhook" 
-slug: "webhook" 
-hidden: false 
+Titel: "Webhook" 
+Schnecke: "Webhook" 
+ausgeblendet: false 
 ---
 
 # Webhook
@@ -10,53 +10,45 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c514dae-EP_webhook.png" width="100%" />
 </figure>
 
-In Cognigy.AI, you can easily connect your resources to a Webhook using the Webhook Endpoint integration. This setup ensures quick communication by instantly sending information to a specified callback URL when it's ready. Connecting your Cognigy resources to this Webhook enables fast and smooth interactions, allowing for real-time updates and actions.
+In Cognigy.AI können Sie Ihre Ressourcen ganz einfach mit einem Webhook verbinden, indem Sie die Webhook-Endpunktintegration verwenden. Dieses Setup gewährleistet eine schnelle Kommunikation, indem Informationen sofort an eine angegebene Rückruf-URL gesendet werden, wenn sie bereit ist. Die Verbindung Ihrer Cognigy-Ressourcen mit diesem Webhook ermöglicht schnelle und reibungslose Interaktionen, die Aktualisierungen und Aktionen in Echtzeit ermöglichen.
 
-If you use [AI Copilot for voice](../../ai-copilot/voice/voice-overview.md) with the Webhook Endpoint, you can switch to a specific [Voice Copilot](voice-copilot.md) Endpoint. This eliminates the need for a separate Code Node to create a webhook URL, as all the necessary logic is already included in the Voice Copilot Endpoint.
+Wenn Sie [AI Copilot für Sprache](.. /.. /ai-copilot/voice/voice-overview.md) mit dem Webhook-Endpunkt verwenden, können Sie zu einem bestimmten [Voice Copilot](voice-copilot.md)-Endpunkt wechseln. Dadurch entfällt die Notwendigkeit eines separaten Codeknotens, um eine Webhook-URL zu erstellen, da die gesamte erforderliche Logik bereits im Voice Copilot-Endpunkt enthalten ist.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+## Verbinden Sie Ihre Anwendung<div class="divider"></div>Sie müssen einen Webserver ausführen, der POST-Aufrufe empfängt. Geben Sie die **Webhook-URL** Ihrer Anwendung ein, an die die Ausgaben des zugewiesenen Flows gesendet werden. Die Felder **Benutzer** und **Passwort** werden nur verwendet, wenn Sie eine Basisauthentifizierung für Ihren Webserver definiert haben.
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+Alle **POST**-Anforderungen, die an die **Endpunkt-URL** gesendet werden, werden vom zugewiesenen *Flow* verarbeitet, und die ausgelösten Ausgaben werden an die **Webhook-URL** weitergeleitet. Der Text der Anforderungen sollte das folgende Format haben:
 
-## Connect your Application
-
-<div class="divider"></div>
-
-You need to run a Webserver that receives POST calls. Enter the **Webhook URL** of your application to which the outputs of the assigned flow get sent to. The **User** and **Password** fields are only used in case you have defined basic authentication for your Webserver.
-
-All **POST** requests that are sent to the **Endpoint URL** are processed by the assigned *Flow* and the triggered outputs are forwarded to the **Webhook URL**. The body of the requests should have the following format:
-
-```JSON
+'''JSON
 {
-  "userId":"userId",
+  "userId":"Benutzer-ID",
   "sessionId": "someUniqueId",
-  "text":"message text",
-  "data": {
-    "key": "value"
+  "text":"Text der Nachricht",
+  "Daten": {
+    "key": "Wert"
   }
 }
-```
+'''
 
-**Parameters**
-*userId* - a user ID of the user who has access to the REST Endpoint in form of a string
-*sessionId* - a unique ID that is used to track the current conversation in form of a string
-*text* - message text that should get processed by the assigned flow in form of a string
-*data* - message data that should get processed by the assigned flow in form of an object
+**Parameter**
+*userId* - eine Benutzer-ID des Benutzers, der Zugriff auf den REST-Endpunkt in Form einer Zeichenfolge hat
+*sessionId* - eine eindeutige ID, die verwendet wird, um die aktuelle Konversation in Form einer Zeichenfolge zu verfolgen
+*text* - Meldungstext, der vom zugewiesenen Flow in Form eines Strings verarbeitet werden soll
+*data* - Nachrichtendaten, die vom zugewiesenen Flow in Form eines Objekts verarbeitet werden sollen
 
-!!! note "Sending text and data"
-    You can use the Webhook Endpoint to send either text or data to your Flow. You can choose to send both, but at least one is required. If invalid text and invalid data is specified, then the Webhook Endpoint throws an error.
+!!! Hinweis "Senden von Text und Daten"
+    Sie können den Webhook-Endpunkt verwenden, um entweder Text oder Daten an Ihren Flow zu senden. Sie können beide senden, aber mindestens eine ist erforderlich. Wenn ungültiger Text und ungültige Daten angegeben werden, löst der Webhook-Endpunkt einen Fehler aus.
 
-!!! note "SessionID"
-    The sessionId is a unique identifier that is used to keep the state of a conversation. This means that you should generate a new unique ID whenever a new conversation starts, and not on every message. For testing purposes, you can use whatever string value you like as the sessionId, and change it whenever you want a new conversation to start.
+!!! Hinweis "SessionID"
+    Die sessionId ist ein eindeutiger Bezeichner, der verwendet wird, um den Status einer Konversation beizubehalten. Das bedeutet, dass Sie immer dann eine neue eindeutige ID generieren sollten, wenn eine neue Konversation beginnt, und nicht bei jeder Nachricht. Zu Testzwecken können Sie einen beliebigen Zeichenfolgenwert als sessionId verwenden und ihn jederzeit ändern, wenn eine neue Konversation beginnen soll.

@@ -1,60 +1,60 @@
 ---
-title: "Add Agents and Admins" 
-slug: "add-agents-and-admins" 
-hidden: false 
+title: "Agenten und Administratoren hinzufügen" 
+Slug: "Hinzufügen-Agenten-und-Admins" 
+ausgeblendet: false 
 ---
 
-# Add Agents and Admins to Live Agent
+# Agenten und Administratoren zum Live-Agenten hinzufügen
 
-Once you have [set up your Endpoint and Flow for Handover to Live Agent](live-agent-setup-handover.md), tested a Conversation, you can then proceed to add new Agents and Admins and assign them to Inboxes in Live Agent.
+Nachdem Sie [Ihren Endpunkt und Flow für die Übergabe an den Live-Agenten eingerichtet](live-agent-setup-handover.md) und eine Konversation getestet haben, können Sie neue Agenten und Administratoren hinzufügen und sie den Posteingängen in Live Agent zuweisen.
 
-## Create a User
+## Einen Benutzer anlegen
 
-To create a User, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Benutzer zu erstellen:
 
-1. Open the Cognigy.AI interface. If the Agent or Admin you want to add already exists as a User in Cognigy.AI, proceed to [Adding Live Agent Roles to Users](#Adding-Live-Agent-Roles-to-Users).
-2. In the upper-right corner, click **User Menu > Access Control**.
-3. In the upper-left corner of the **Users** page, click **+ Create new User**. 
-4. In the **New User** window, fill in the following fields:
-    - **Display Name** — enter the name that you want to be displayed for this user. For example, `John Doe`.
-    - **Email Address** — enter the user's email address. For example, `johndoe@example.com`.
-    - **Password** — set a password for the user's account. A user can change a password later.
-5. Click **Save**.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle. Wenn der Agent oder Administrator, den Sie hinzufügen möchten, bereits als Benutzer in Cognigy.AI vorhanden ist, fahren Sie mit [Hinzufügen von Live-Agent-Rollen zu Benutzern] (#Adding-Live-Agent-Roles-to-Users) fort.
+2. Klicken Sie in der oberen rechten Ecke auf **Benutzermenü > Zugriffssteuerung**.
+3. Klicken Sie in der oberen linken Ecke der Seite **Benutzer** auf **+ Neuen Benutzer erstellen**. 
+4. Füllen Sie im Fenster **Neuer Benutzer** die folgenden Felder aus:
+    - **Anzeigename** — Geben Sie den Namen ein, der für diesen Benutzer angezeigt werden soll. Beispiel: "John Doe".
+    - **E-Mail-Adresse** — Geben Sie die E-Mail-Adresse des Benutzers ein. Beispiel: "johndoe@example.com".
+    - **Kennwort** — Legen Sie ein Kennwort für das Benutzerkonto fest. Ein Benutzer kann ein Kennwort später ändern.
+5. Klicken Sie auf **Speichern**.
 
-Once a user has been created, you can assign Live Agent roles to this user.
+Sobald ein Benutzer erstellt wurde, können Sie diesem Benutzer Live-Agent-Rollen zuweisen.
 
-## Add Live Agent Roles to Users
+## Hinzufügen von Live-Agent-Rollen zu Benutzern
 
-Cognigy Live Agent has three different user roles:
+Cognigy Live Agent verfügt über drei verschiedene Benutzerrollen:
 
-- `Administrator`
-- `Agent`
-- `Supervisor`
+- 'Administrator'
+- 'Agent'
+- 'Vorgesetzter'
 
-For more information, see [Live Agent Roles](../../roles.md).
+Weitere Informationen finden Sie unter [Live-Agent-Rollen](.. /.. /roles.md).
 
-To add one of these roles to users, follow these steps:
+Gehen Sie folgendermaßen vor, um Benutzern eine dieser Rollen hinzuzufügen:
 
-1. Open the Cognigy.AI interface.
-2. In the upper-right corner, click **User Menu > Access Control**. 
-3. Select a user you would like to assign roles to.
-4. On the User page, go to the **Global Roles** section. 
-5. Click **+** and select the needed role. 
-6. Assign one of the following roles:
-    - `liveAgentAdmin` — for users intended to have Admin rights in Live Agent.
-    - `liveAgentAgent` — for users intended to have Agent rights in Live Agent.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie in der oberen rechten Ecke auf **Benutzermenü > Zugriffssteuerung**. 
+3. Wählen Sie einen Benutzer aus, dem Sie Rollen zuweisen möchten.
+4. Wechseln Sie auf der Seite Benutzer zum Abschnitt **Globale Rollen**. 
+5. Klicken Sie auf **+** und wählen Sie die gewünschte Rolle aus. 
+6. Weisen Sie eine der folgenden Rollen zu:
+    - 'liveAgentAdmin' — für Benutzer, die Admin-Rechte in Live Agent haben sollen.
+    - 'liveAgentAgent' — für Benutzer, die Agentenrechte in Live Agent haben sollen.
 
-After assigning the Live Agent Role to the user, you can add them to an Inbox.
+Nachdem Sie dem Benutzer die Rolle "Live-Agent" zugewiesen haben, können Sie ihn zu einem Posteingang hinzufügen.
 
-## Add Agents to an Inbox
+## Agenten zu einem Posteingang hinzufügen
 
-To add an Agent to an Inbox, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Agenten zu einem Posteingang hinzuzufügen:
 
-1. Open the Live Agent interface.
-2. In the left-side menu, click **Settings**.
-3. Go to **Inboxes**, select an Inbox and click the gear icon next to your Inbox.
-4. Open the **Collaborators** tab. 
-5. Go to the **Agents** section, click the Agent list and select Agents from this list. 
-6. Click **Update**.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Klicken Sie im Menü auf der linken Seite auf **Einstellungen**.
+3. Gehen Sie zu **Posteingänge**, wählen Sie einen Posteingang aus und klicken Sie auf das Zahnradsymbol neben Ihrem Posteingang.
+4. Öffnen Sie die Registerkarte **Mitarbeiter**. 
+5. Gehen Sie zum Abschnitt **Agenten**, klicken Sie auf die Agentenliste und wählen Sie Agenten aus dieser Liste aus. 
+6. Klicken Sie auf **Aktualisieren**.
 
-When the Agents have been included in the Inbox, you can [add another Inbox for your Project](https://docs.cognigy.com/ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/).
+Wenn die Agenten in den Posteingang aufgenommen wurden, können Sie [einen weiteren Posteingang für Ihr Projekt hinzufügen](https://docs.cognigy.com/ai/handover-providers/live-agent-setup/live-agent-setup-additional-inbox/).

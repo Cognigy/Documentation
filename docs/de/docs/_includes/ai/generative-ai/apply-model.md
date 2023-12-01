@@ -1,7 +1,7 @@
-To apply a model, follow these steps:
+Gehen Sie folgendermaßen vor, um ein Modell anzuwenden:
 
-1. Open the Cognigy.AI interface.
-2. In the left-side menu, click **Manage > Settings**.
-3. In the **Generative AI Settings** section, activate **Enable Generative AI Features**. This setting is toggled on by default if you have previously set up the Generative AI credentials.
-4. Navigate to the desired feature and choose a model from the list. If there are no models available for the selected feature, the system will automatically select **None**.
-5. Click **Save**.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie im Menü auf der linken Seite auf **> Einstellungen verwalten**.
+3. Aktivieren Sie im Abschnitt **Generative KI-Einstellungen** die Option **Generative KI-Funktionen aktivieren**. Diese Einstellung ist standardmäßig aktiviert, wenn Sie zuvor die Anmeldeinformationen für die generative KI eingerichtet haben.
+4. Navigieren Sie zum gewünschten Merkmal und wählen Sie ein Modell aus der Liste aus. Wenn für das ausgewählte Feature keine Modelle verfügbar sind, wählt das System automatisch **Keine** aus.
+5. Klicken Sie auf **Speichern**.

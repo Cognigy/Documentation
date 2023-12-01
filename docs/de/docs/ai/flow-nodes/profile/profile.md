@@ -1,17 +1,17 @@
 ---
- title: "Profile" 
- slug: "profile" 
- hidden: false 
+ Titel: "Profil" 
+ slug: "Profil" 
+ ausgeblendet: false 
 ---
-# Profile
+# Steckbrief
 
-Profile Nodes let you take advantage of Cognigy AI's comprehensive marketing functionality. Use and update [Contact Profiles]({{config.site_url}}ai/resources/manage/contact-profiles/) within your Flow for personalized, adaptive Flows that connect with your audience.
+Mit Profilknoten können Sie die umfassenden Marketingfunktionen von Cognigy AI nutzen. Verwenden und aktualisieren Sie [Kontaktprofile]({{config.site_url}}ai/resources/manage/contact-profiles/) in Ihrem Flow für personalisierte, adaptive Flows, die eine Verbindung zu Ihrer Zielgruppe herstellen.
 
-Profile Nodes:
-- [Update Profile](update-profile.md)            
-- [Deactivate Profile](deactivate-profile.md)        
-- [Delete Profile](delete-profile.md)
-- [Activate Profile](activate-profile.md)    
-- [Merge Profile](merge-profile.md)    
-- [Complete Goal](complete-goal.md)
-- [Blind Mode](blind-mode.md)
+Profil-Knoten:
+- [Profil aktualisieren](update-profile.md)            
+- [Profil deaktivieren](deactivate-profile.md)        
+- [Profil löschen](delete-profile.md)
+- [Profil aktivieren](activate-profile.md)    
+- [Profil zusammenführen](merge-profile.md)    
+- [Ziel abschließen](complete-goal.md)
+- [Blind-Modus](blind-mode.md)

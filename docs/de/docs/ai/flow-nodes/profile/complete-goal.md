@@ -1,63 +1,61 @@
 ---
-title: "Complete Goal"
-slug: "complete-goal"
-hidden: false
+Titel: "Ziel abschließen"
+Slug: "Vollständiges Ziel"
+ausgeblendet: false
 ---
-# Complete Goal
+# Ziel abschließen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/complete-goal.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The Complete Goal Node will set a specific goal as completed when the contact hits the Node.
+## Beschreibung<div class="divider"></div>Der Knoten "Ziel abschließen" legt ein bestimmtes Ziel als abgeschlossen fest, wenn der Kontakt den Knoten erreicht.
 
-To start using this Node, add it below the Node that completes the action.
+Um mit der Verwendung dieses Knotens zu beginnen, fügen Sie ihn unter dem Knoten hinzu, der die Aktion ausführt.
 
-The completed goal will be stored in the contact's profile and Analytics.
+Das abgeschlossene Ziel wird im Profil und in Analytics des Kontakts gespeichert.
 
-Goals are useful when analyzing milestones in the user profiles using OData or for handover to Cognigy Live Agent. You can track [top goals](../../../insights/dashboard-engagement.md#goals-reached) in the Insights Engagement dashboard. If you don't intend to analyze user profiles and prefer a more focused analysis using the [Insights Step Explorer](../../../insights/step-explorer.md), then Analytics Steps would be more suitable.
+Ziele sind nützlich bei der Analyse von Meilensteinen in den Benutzerprofilen mit OData oder bei der Übergabe an Cognigy Live Agent. Sie können [Top-Ziele](.. /.. /.. /insights/dashboard-engagement.md#goals-reached) im Insights Engagement-Dashboard. Wenn Sie keine Benutzerprofile analysieren möchten und eine gezieltere Analyse mit dem [Insights Step Explorer](.. /.. /.. /insights/step-explorer.md), dann wären Analytics-Schritte besser geeignet.
 
-The difference between a Complete Goal and an Analytics Step lies in their purpose and usage within a system. Complete Goals determine whether a user has completed a specific objective or task. In contrast, Analytics Steps collect data about individual events or actions for analytical purposes. Complete Goals are associated with a user's profile, whereas Analytics Steps focus on tracking and storing data information.
+Der Unterschied zwischen einem vollständigen Ziel und einem Analyseschritt liegt in ihrem Zweck und ihrer Verwendung innerhalb eines Systems. Ziele abschließen bestimmen, ob ein Benutzer ein bestimmtes Ziel oder eine bestimmte Aufgabe abgeschlossen hat. Im Gegensatz dazu sammeln Analytics-Schritte Daten über einzelne Ereignisse oder Aktionen zu Analysezwecken. Vollständige Zielvorhaben sind mit dem Profil eines Nutzers verknüpft, während sich Analytics-Schritte auf das Verfolgen und Speichern von Dateninformationen konzentrieren.
 
-## Settings
+## Einstellungen
 
-| Parameter | Type          | Description                                                                   |
+| Parameter | Typ | Beschreibung |
 |-----------|---------------|-------------------------------------------------------------------------------|
-| Goal      | CognigyScript | The name of the goal that should be completed when the contact hits the Node. |
+| Ziel | CognigyScript | Der Name des Ziels, das abgeschlossen sein soll, wenn der Kontakt den Knoten erreicht. |
 
-## Use Cases
+## Anwendungsfälle
 
-### Order Placement
+### Auftragserteilung
 
-When a user completes the order placement process successfully, you can use the Complete Goal Node to mark the "Order Placement" goal as completed.
+Wenn ein Benutzer den Bestellvorgang erfolgreich abgeschlossen hat, können Sie den Knoten "Ziel abschließen" verwenden, um das Ziel "Auftragserteilung" als abgeschlossen zu markieren.
 
-This goal helps you track the number of successful order placements by customers.
+Dieses Ziel hilft Ihnen, die Anzahl der erfolgreichen Bestellungen durch Kunden zu verfolgen.
 
-### Account Registration
+### Konto-Registrierung
 
-When a user needs to create an account, you can use the Complete Goal Node to indicate that the "Account Registration" goal has been achieved.
+Wenn ein Benutzer ein Konto erstellen muss, können Sie den Knoten "Ziel abschließen" verwenden, um anzugeben, dass das Ziel "Kontoregistrierung" erreicht wurde.
 
-This goal helps you to track the number of successful account registrations via the chatbot.
+Dieses Ziel hilft Ihnen, die Anzahl der erfolgreichen Kontoregistrierungen über den Chatbot zu verfolgen.
 
-### Appointment Booking
+### Terminbuchung
 
-When a user books an appointment, you can use the Complete Goal Node to signify the completion of the appointment booking process.
+Wenn ein Benutzer einen Termin bucht, können Sie den Knoten "Ziel abschließen" verwenden, um den Abschluss des Terminbuchungsprozesses anzuzeigen.
 
-This goal helps you track the number of successful appointments scheduled through the chatbot.
+Dieses Ziel hilft Ihnen, die Anzahl der erfolgreichen Termine zu verfolgen, die über den Chatbot geplant wurden.
 
-### Information Retrieval
+### Informationsbeschaffung
 
-When a user seeks specific information from the chatbot, such as product details or FAQ answers, you can utilize the Complete Goal Node to mark the "Information Retrieval" goal as completed.
+Wenn ein Benutzer bestimmte Informationen vom Chatbot sucht, z. B. Produktdetails oder FAQ-Antworten, können Sie den Knoten "Ziel abschließen" verwenden, um das Ziel "Information Retrieval" als abgeschlossen zu markieren.
 
-This goal allows you to track successful information retrieval interactions.
+Dieses Ziel ermöglicht es Ihnen, erfolgreiche Interaktionen beim Abrufen von Informationen zu verfolgen.
 
-## Example
+## Beispiel
 
-The example shows how to measure the chatbot's effectiveness in your customer call center. You can use the following approach:
+Das Beispiel zeigt, wie Sie die Effektivität des Chatbots in Ihrem Kunden-Callcenter messen können. Sie können den folgenden Ansatz verwenden:
 
-1. In the Flow, add a Question Node with the "Are you helped sufficiently?" question and provide buttons (B1 and B2) as options.
-2. If the user selects B1 (Yes, I'm helped sufficiently), connect it to a Complete Goal Node. This Node will mark the "Successful Chatbot Conversation" goal as completed, indicating that the chatbot has effectively assisted the customer.
-3. If the customer selects B2 (No, speak to an agent), handle this separately by triggering a Handover to Agent Node. In this case, you don't need to use the Complete Goal Node.
-4. If the customer doesn't reply or types another question directly, consider it as a neutral conversation. You don't need to track it as a completed or unsuccessful goal.
+1. Fügen Sie im Ablauf einen Frageknoten mit der Frage "Wird Ihnen ausreichend geholfen?" hinzu und stellen Sie die Schaltflächen (B1 und B2) als Optionen bereit.
+2. Wenn der Benutzer B1 auswählt (Ja, mir wird ausreichend geholfen), verbinden Sie es mit einem vollständigen Zielknoten. Dieser Knoten markiert das Ziel "Erfolgreiche Chatbot-Konversation" als abgeschlossen, was darauf hinweist, dass der Chatbot den Kunden effektiv unterstützt hat.
+3. Wenn der Kunde B2 (Nein, mit einem Agenten sprechen) auswählt, behandeln Sie dies separat, indem Sie eine Übergabe an den Agentenknoten auslösen. In diesem Fall müssen Sie den Knoten "Ziel abschließen" nicht verwenden.
+4. Wenn der Kunde nicht antwortet oder direkt eine andere Frage eintippt, betrachten Sie dies als neutrales Gespräch. Sie müssen es nicht als abgeschlossenes oder erfolgloses Ziel verfolgen.

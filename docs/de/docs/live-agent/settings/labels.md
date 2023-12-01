@@ -1,68 +1,68 @@
 ---
 title: "Labels" 
-slug: "labels"
-description: "Labels are tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation."
-hidden: false 
+slug: "Etiketten"
+description: "Labels sind Tags, die Ihnen helfen, Konversationen zu kategorisieren und zu priorisieren, indem sie zusätzlichen Kontext und Informationen über den Inhalt oder den Status jeder Konversation bereitstellen."
+ausgeblendet: false 
 ---
-# Labels
+# Etiketten
 
-_Labels_ are tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation.
+_Labels_ sind Tags, die Ihnen helfen, Unterhaltungen zu kategorisieren und zu priorisieren, indem sie zusätzlichen Kontext und Informationen über den Inhalt oder den Status jeder Konversation bereitstellen.
 
-They can be used to create custom workflows, to make conversations easier to identify, filter, and organize.
+Sie können verwendet werden, um benutzerdefinierte Workflows zu erstellen, um das Identifizieren, Filtern und Organisieren von Unterhaltungen zu erleichtern.
 
-Only Administrators and Supervisors can create, edit, and delete labels.
+Nur Administratoren und Supervisoren können Bezeichnungen erstellen, bearbeiten und löschen.
 
-### Create a Label
+### Beschriftung erstellen
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.57-blue.svg)] (.. /.. /release-notes/4.57.md)
 
-To create a label within Live Agent, do the following:
+Um ein Label in Live Agent zu erstellen, gehen Sie wie folgt vor:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. In the settings column, select **Labels**.
-4. At the top right of the window, click **Add label**.
-5. In the **Add label** window, do the following, fill in the following fields:
-    - **Label Name** — a name for the label to identify its category. Only letters, numbers, hyphens and underscores are allowed. For example, `Premium_Customer`.        
-    - **Description** — a brief explanation of the label's meaning. For example, `This issue needs to be handled with priority`.  
-    - **Level** — a level of access to objects where the label is applicable. Select one of the following levels: 
-        - **Global** — the label is available for all Teams and Inboxes. 
-        - **Team** — the label is available only for a specific Team. Select a Team from the **Team** list. Note that you cannot select multiple Teams.
-        - **Inbox** — the label is available only for a specific Inbox. Select an Inbox from the **Inbox** list. Note that you cannot select multiple Inboxes.
-    - **Color** — a color for the label to make it visually identifiable. Select your desired color, click the small square again to confirm your selection.
-    - **Show Label on Sidebar** — the option determines whether a label will be displayed on the sidebar. By using the label on the sidebar, you can filter conversations.
-6. Click **Create**.
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Wählen Sie in der Spalte "Einstellungen" die Option **Labels** aus.
+4. Klicken Sie oben rechts im Fenster auf **Label hinzufügen**.
+5. Füllen Sie im Fenster **Beschriftung hinzufügen** die folgenden Felder aus:
+    - **Bezeichnungsname** — ein Name für die Bezeichnung zur Identifizierung der Kategorie. Nur Buchstaben, Zahlen, Bindestriche und Unterstriche sind erlaubt. Beispiel: "Premium_Customer".        
+    - **Beschreibung** — eine kurze Erläuterung der Bedeutung der Bezeichnung. Zum Beispiel: "Dieses Problem muss mit Priorität behandelt werden".  
+    - **Ebene** — eine Zugriffsebene auf Objekte, auf die die Bezeichnung anwendbar ist. Wählen Sie eine der folgenden Ebenen aus: 
+        - **Global** – die Bezeichnung ist für alle Teams und Posteingänge verfügbar. 
+        - **Team** – das Label ist nur für ein bestimmtes Team verfügbar. Wählen Sie ein Team aus der Liste **Team** aus. Beachten Sie, dass Sie nicht mehrere Teams auswählen können.
+        - **Posteingang** – die Bezeichnung ist nur für einen bestimmten Posteingang verfügbar. Wählen Sie einen Posteingang aus der Liste **Posteingang** aus. Beachten Sie, dass Sie nicht mehrere Posteingänge auswählen können.
+    - **Farbe** — eine Farbe für das Etikett, um es visuell identifizierbar zu machen. Wählen Sie die gewünschte Farbe aus und klicken Sie erneut auf das kleine Quadrat, um Ihre Auswahl zu bestätigen.
+    - **Beschriftung in der Seitenleiste anzeigen** — die Option bestimmt, ob eine Beschriftung in der Seitenleiste angezeigt wird. Mithilfe der Beschriftung in der Seitenleiste können Sie Unterhaltungen filtern.
+6. Klicken Sie auf **Erstellen**.
 
-The label will be created, appear under the **Labels** section on the sidebar, and will be available to [add to Conversations](#add-a-label-to-a-conversation).
+Das Label wird erstellt, wird im Abschnitt **Labels** in der Seitenleiste angezeigt und steht für [Zu Konversationen hinzufügen] zur Verfügung (#add-a-label-to-a-conversation).
 
-!!! tip
-    It is good practice to give meaningful names to labels, and to use chosen colors to easily identify visually which categories, or topics, a conversation belongs to.
+!!! Trinkgeld
+    Es empfiehlt sich, Bezeichnungen aussagekräftige Namen zu geben und ausgewählte Farben zu verwenden, um visuell leicht zu erkennen, zu welchen Kategorien oder Themen eine Konversation gehört.
 
-### Edit a Label
+### Beschriftung bearbeiten
 
-To edit a label within Live Agent, do the following:
+Um eine Beschriftung in Live Agent zu bearbeiten, gehen Sie wie folgt vor:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. In the settings column, select **Labels**.
-4. On the **Labels** page, to the right of the label you want to change, click **Edit**. 
-5. In the **Edit label** window, update the fields as needed.
-6. Click **Edit**.
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Wählen Sie in der Spalte "Einstellungen" die Option **Labels** aus.
+4. Klicken Sie auf der Seite **Beschriftungen** rechts neben der Beschriftung, die Sie ändern möchten, auf **Bearbeiten**. 
+5. Aktualisieren Sie im Fenster **Beschriftung bearbeiten** die Felder nach Bedarf.
+6. Klicken Sie auf **Bearbeiten**.
 
-The label fields and settings will be updated.
+Die Beschriftungsfelder und -einstellungen werden aktualisiert.
 
-### Delete a Label
+### Löschen eines Labels
 
-To delete a label within Live Agent, do the following:
+Um ein Label in Live Agent zu löschen, gehen Sie wie folgt vor:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Settings**.
-3. In the settings column, select **Labels**.
-4. On the **Labels** page, to the right of the label you want to delete, click **Delete**.
-5. Confirm deletion by clicking **Yes, Delete**.
+1. Gehen Sie zu Live Agent.
+2. Wählen Sie auf der linken Seite des Bildschirms **Einstellungen**.
+3. Wählen Sie in der Spalte "Einstellungen" die Option **Labels** aus.
+4. Klicken Sie auf der Seite **Labels** rechts neben der Bezeichnung, die Sie löschen möchten, auf **Löschen**.
+5. Bestätigen Sie den Löschvorgang, indem Sie auf **Ja, Löschen** klicken.
 
-The label will be deleted and no longer under the **Labels** section on the sidebar, and will no longer be available to add to Conversations. Also, the label will be removed from the conversations where it was added earlier.
+Das Label wird gelöscht und befindet sich nicht mehr im Abschnitt **Labels** in der Seitenleiste und kann nicht mehr zu Unterhaltungen hinzugefügt werden. Außerdem wird das Label aus den Unterhaltungen entfernt, in denen es zuvor hinzugefügt wurde.
 
-### Add a Label to a Conversation
+### Hinzufügen eines Labels zu einer Konversation
 
-To start using Labels in Conversations, go to [Assign Labels](./../conversation/conversation-workflow.md#assign-labels).
+Um mit der Verwendung von Labels in Konversationen zu beginnen, gehen Sie zu [Labels zuweisen](./.. /conversation/conversation-workflow.md#assign-labels).

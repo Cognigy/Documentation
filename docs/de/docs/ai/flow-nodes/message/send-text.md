@@ -1,20 +1,15 @@
 ---
- title: "Send Text" 
- slug: "send-text" 
- hidden: false 
+ title: "Text senden" 
+ slug: "Text senden" 
+ ausgeblendet: false 
 ---
-# Send Text
+# Text senden
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/send-text.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Verwenden Sie den Knoten Text senden, wenn Sie einfachen Text ausgeben möchten. 
 
-Use the Send Text Node if you want to output simple text. 
-
-## Properties
-<div class="divider"></div>
-### Text Message
-A configurable text message.
+## Eigenschaften<div class="divider"></div>### SMS
+Eine konfigurierbare Textnachricht.

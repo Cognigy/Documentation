@@ -1,44 +1,39 @@
 ---
- title: "Timezone" 
- slug: "timezone" 
- hidden: false 
+ Titel: "Zeitzone" 
+ Schnecke: "Zeitzone" 
+ ausgeblendet: false 
 ---
-# Timezone
+# Zeitzone
 
-## Timezone support
+## Zeitzonen-Unterstützung<div class="divider"></div>Insights-Anwendungen unterstützen die Darstellung zeitbasierter Daten mit einem Konto in der Zeitzone des Benutzers. 
 
-<div class="divider"></div>
+!!! Anmerkung 
+    In OData-Feed wird die Zeit immer im UTC-Format angegeben. Dies sollten Sie berücksichtigen, wenn Sie es mit Insights vergleichen.
 
-Insights applications support presenting time-based data with an account to the user's timezone. 
+## Bevorzugte Zeitzone ändern
 
-!!! note 
-    In OData feed time is always in UTC format. You should take this into account if you compare it with Insights.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.14-blue.svg)] ({{config.site_url}})
 
-## Changing preferred Timezone
+Standardmäßig verwendet Insights die Zeitzoneneinstellungen Ihres Geräts. Sie können dies unter **Mein Profil** überschreiben. 
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
+Dies ist praktisch, wenn Sie viel reisen und die Zeitzone Ihres Geräts von Ihrem Standort aktualisiert wird, oder wenn Sie einen multinationalen Agenten mit Benutzern auf der ganzen Welt haben.
 
-By default, Insights uses timezone preferences of your device. You can override this in **My Profile**. 
+So ändern Sie die Zeitzoneneinstellungen:
 
-This comes handy if you travel a lot and your device timezone gets updated by your location, or you may have a multinational Agent with the users all over the globe.
-
-To change timezone preferences:
-
-- Click on the user icon in the top-right corner.
-- Select **My Profile**.
+- Klicken Sie auf das Benutzersymbol in der oberen rechten Ecke.
+- Wählen Sie **Mein Profil** aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/user-menu-my-profile.png" width="50%" alt="User menu with 'My profile' option" />
-  <figcaption>User menu with "My profile" option</figcaption>
+  <figcaption>Benutzermenü mit der Option "Mein Profil"</figcaption>
 </figure>
 
-- Choose preferred timezone in the "Select Timezone" input.
+- Wählen Sie in der Eingabe "Zeitzone auswählen" die bevorzugte Zeitzone aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/my-profile-timezone-selection.png" width="100%" alt="Excerpt of the settings on 'My Profile page'" />
-  <figcaption>Here selected the "Europe/Berlin" timezone</figcaption>
+  <figcaption>Hier wurde die Zeitzone "Europa/Berlin" ausgewählt</figcaption>
 </figure>
 
-
-!!! note
-    Custom Timezone preferences are stored inside the browser storage, means you need to select custom timezone preference again if you change the device and/or the browser.
+!!! Anmerkung
+    Benutzerdefinierte Zeitzoneneinstellungen werden im Browserspeicher gespeichert, was bedeutet, dass Sie die benutzerdefinierte Zeitzoneneinstellung erneut auswählen müssen, wenn Sie das Gerät und/oder den Browser wechseln.

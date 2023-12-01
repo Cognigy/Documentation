@@ -1,58 +1,49 @@
 ---
- title: "Workplace by Facebook" 
- slug: "workplace-by-fb" 
- hidden: false 
+ Titel: "Workplace by Facebook" 
+ Slug: "Workplace-by-FB" 
+ ausgeblendet: false 
 ---
-# Workplace by Facebook
+# Arbeitsplatz von Facebook
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4056489-Workplace.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform, you're able to connect your Cognigy resources to your **Workplace** channel by using our Workplace Endpoint integration.
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihre Cognigy-Ressourcen mithilfe unserer Workplace Endpoint-Integration mit Ihrem **Workplace**-Kanal verbinden.
 
-!!! note "Available on app.cognigy.ai and dedicated environments"
-    This Endpoint is currently not available in the Cognigy.AI Free Trial.
+!!! Hinweis "Verfügbar in app.cognigy.ai und dedizierten Umgebungen"
+    Dieser Endpunkt ist derzeit nicht in der kostenlosen Testversion von Cognigy.AI verfügbar.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
-
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
-
-## Channel Specific Settings
-
-<div class="divider"></div>
-
-The **Workplace Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with **Workplace Bot** deployment.
+## Kanalspezifische Einstellungen<div class="divider"></div>Im Dropdownmenü **Arbeitsplatzeinstellungen** müssen Cognigy.AI die Anmeldeinformationen erhalten, um eine Verbindung mit der Bereitstellung von **Workplace Bot** herzustellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/54dca97-workplaceSettings.PNG" width="100%" />
 </figure>
 
+### Empfänger-ID des Arbeitsplatzes
 
-### Workplace Recipient ID
+Bei diesem Wert handelt es sich um die **Empfänger-ID**, die aus der Seiten-URL abgerufen wird, wenn eine Konversation mit dem Arbeitsplatzbot stattfindet. Diese muss hinzugefügt werden, nachdem sie in Ihrer Arbeitsplatzinstanz installiert wurde.
 
-This value is the **Recipient ID** which is obtained from the page URL when a conversation with the workplace bot is taking place. This must be added after it has been installed to your workplace instance.
+### Installieren
 
-### Install
+Verwenden Sie diese Schaltfläche, um den Installationsprozess des Cognigy.AI Bots auf Ihrer Arbeitsplatzinstanz auszulösen. Ein Popup-Fenster wird angezeigt und leitet zum Setup-Menü des Arbeitsplatz-Bots weiter.
 
-Use this button to trigger the installation process of the Cognigy.AI Bot to your workplace instance. A pop-up window will appear and redirect to the workplace bot setup menu.
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zur Einrichtung eines **Workplace by Facebook** Endpoints findest du in unserem Hilfe-Center-Artikel [**hier**](https://support.cognigy.com/hc/en-us/articles/360016310379).
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Workplace by Facebook** Endpoint can be found in our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360016310379).
+## Mehr Informationen
 
-## More Information
-
-- [HelpCenter: Workplace by Facebook Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310379)
+- [HelpCenter: Workplace by Facebook Bereitstellen eines Endpunkts](https://support.cognigy.com/hc/en-us/articles/360016310379)

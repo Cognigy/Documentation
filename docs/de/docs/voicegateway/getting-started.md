@@ -1,80 +1,80 @@
 ---
- title: "Getting Started" 
- slug: "vg-getting-started" 
- hidden: false 
+ Titel: "Erste Schritte" 
+ Slug: "VG-Getting Started" 
+ ausgeblendet: false 
 ---
 
-# Getting Started with Voice Gateway
+# Erste Schritte mit Voice Gateway
 
 <figure>
 <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-logo.png" width="80%" />
-   <figcaption>Voice Gateway Logo</figcaption>
+   <figcaption>Voice-Gateway-Logo</figcaption>
 </figure>
 
-## How to Set Up Voice Gateway?
+## Wie richte ich ein Voice Gateway ein?
 
-To set up Voice Gateway, do the following steps:
+Führen Sie die folgenden Schritte aus, um Voice Gateway einzurichten:
 
-1. [Create a Voice Gateway flow](#create-a-voice-gateway-flow)
-2. [Create a Voice Gateway Endpoint](#create-a-voice-gateway-endpoint)
-3. [Route your Contact Center or Phone Number to Voice Gateway](#route-your-contact-center-or-phone-number-to-voice-gateway)
-4. [Set up Voice Gateway for your Organization](#set-up-voice-gateway-for-your-organization)
+1. [Erstellen eines Voice-Gateway-Flows](#create-a-voice-gateway-flow)
+2. [Erstellen eines Voice-Gateway-Endpunkts](#create-a-voice-gateway-endpoint)
+3. [Leiten Sie Ihr Contact Center oder Ihre Telefonnummer an das Voice Gateway weiter](#route Sie Ihr Contact Center oder Ihre Telefonnummer an das Voice-Gateway weiter)
+4. [Voice-Gateway für Ihre Organisation einrichten](#set-up-voice-gateway-for-your-organization)
 
-## Create a Voice Gateway flow
+## Erstellen eines Voice Gateway-Flows
 
-Start your **Voice Gateway** project by creating a voice-enabled flow. With a voice conversation, the virtual agent must respond with a text-based message for every user input. Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs that are triggered by the flow will be bundled into one message and delivered across the phone line.
+Starten Sie Ihr **Voice Gateway**-Projekt, indem Sie einen sprachgesteuerten Flow erstellen. Bei einer Sprachkonversation muss der virtuelle Agent für jede Benutzereingabe mit einer textbasierten Nachricht antworten. Sprachgespräche finden auf Turn-by-Turn-Basis statt, was bedeutet, dass alle Dialogausgaben, die durch den Flow ausgelöst werden, in einer Nachricht gebündelt und über die Telefonleitung zugestellt werden.
 
-Every Cognigy.AI node that offers text-based messages can be used in a voice flow. If you have rich media in your flow, the fallback text field will be used as voice output.
+Jeder Cognigy.AI Knoten, der textbasierte Nachrichten anbietet, kann in einem Sprachfluss verwendet werden. Wenn Sie Rich Media in Ihrem Flow haben, wird das Fallback-Textfeld als Sprachausgabe verwendet.
 
-If there is a Voice Gateway channel-specific configuration, this configuration will be used instead of the one in the default section. In the Voice Gateway channel, you can find pre-defined SSML tags and [activity parameters]({{config.site_url}}ai/flow-nodes/vg/parameter-details/).
+Wenn eine kanalspezifische Konfiguration für das Voice Gateway vorhanden ist, wird diese Konfiguration anstelle der Konfiguration im Standardabschnitt verwendet. Im Voice Gateway-Kanal finden Sie vordefinierte SSML-Tags und [Aktivitätsparameter]({{config.site_url}}ai/flow-nodes/vg/parameter-details/).
 
-For voice-specific actions, you can use the [Voice Gateway Flow Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/).
+Für sprachspezifische Aktionen können Sie die [Voice Gateway Flow Nodes]({{config.site_url}}ai/flow-nodes/vg/voice-gateway/) verwenden.
 
-!!! note
-    With the native Cognigy Voice Gateway integration to Cognigy.AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
+!!! Anmerkung
+    Mit der nativen Integration von Cognigy Voice Gateway in Cognigy.AI wird die AudioCodes-Implementierung von Voice Gateway in AudioCodes umbenannt.
 
 <figure>
    <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-nodes-overview.png"  width="80%" />
 </figure>
 
-## Create a Voice Gateway Endpoint
+## Erstellen eines Voice Gateway-Endpunkts
 
-To do voice-based experiences with your Virtual Agent, create your [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vg/) in Cognigy.AI. To do that:
+Um sprachbasierte Erfahrungen mit Ihrem virtuellen Agenten zu erstellen, erstellen Sie Ihren [Voice Gateway Endpoint]({{config.site_url}}ai/endpoints/cognigy-vg/) in Cognigy.AI. Gehen Sie dazu wie folgt vor:
 
-1. In the left-side menu of your Agent, click **Deploy > Endpoints**. 
-2. On the **Endpoints** page, click **+ New Endpoint**. 
-3. In the **New Endpoint** section, do the following:
-   3.1 Select the **VoiceGateway** Endpoint type.
-   3.2 Add a unique name.
-   3.3 Select a relevant Flow from the list.
-4. Click **Save**.
+1. Klicken Sie im Menü auf der linken Seite Ihres Agents auf **Deploy > Endpoints**. 
+2. Klicken Sie auf der Seite **Endpunkte** auf **+ Neuer Endpunkt**. 
+3. Gehen Sie im Abschnitt **Neuer Endpunkt** wie folgt vor:
+   3.1 Wählen Sie den Endpunkttyp **VoiceGateway** aus.
+   3.2 Fügen Sie einen eindeutigen Namen hinzu.
+   3.3 Wählen Sie einen relevanten Flow aus der Liste aus.
+4. Klicken Sie auf **Speichern**.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}voicegateway/images/VG-endpoint-new.png" width="100%" />
 </figure>
 
-## Route your Contact Center or Phone Number to Voice Gateway
+## Leiten Sie Ihr Contact Center oder Ihre Telefonnummer an Voice Gateway weiter
 
-To route your Contact Center or Phone Number to your Voice Gateway Endpoint, your SIP Trunk needs to be set up. Get in touch with [Cognigy technical support](../help/get-help.md) to configure your SIP Trunk and route your number to the right Endpoint.
+Um Ihr Contact Center oder Ihre Telefonnummer an Ihren Voice Gateway-Endpunkt weiterzuleiten, muss Ihr SIP-Trunk eingerichtet werden. Wenden Sie sich an [Technischer Support von Cognigy](.. /help/get-help.md), um Ihren SIP-Trunk zu konfigurieren und Ihre Nummer an den richtigen Endpunkt weiterzuleiten.
 
-## Set up Voice Gateway for your Organization
+## Voice Gateway für Ihr Unternehmen einrichten
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.62-blue.svg)](../release-notes/4.62.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.62-blue.svg)] (.. /release-notes/4.62.md)
 
-This setting allows users with the [Account](./webapp/users.md#account) role to log in to the Voice Gateway Self-Service Portal using their Cognigy.AI user credentials. To enable this option, you need to follow these steps:
+Mit dieser Einstellung können sich Benutzer mit der Rolle [Konto](./webapp/users.md#account) mit ihren Cognigy.AI Benutzeranmeldeinformationen beim Voice Gateway Self-Service-Portal anmelden. Um diese Option zu aktivieren, müssen Sie die folgenden Schritte ausführen:
 
-To set up the Voice Gateway for your organization, follow these steps:
+Gehen Sie folgendermaßen vor, um das VoIP-Gateway für Ihre Organisation einzurichten:
 
-1. Open the Cognigy.AI interface.
-2. In the upper-right corner, click the **User Menu**.
-3. Select the **Organisation Details** from the menu.
-4. Click **Set up Voice Gateway**.
-5. Go to **User Menu > Access Control** and assign the `voiceGatewayUser` role to the users who need access to the Voice Gateway Portal with the Account role. Note that Admins and Service Providers cannot log in using Cognigy.AI user credentials.
+1. Öffnen Sie die Cognigy.AI-Schnittstelle.
+2. Klicken Sie in der oberen rechten Ecke auf das **Benutzermenü**.
+3. Wählen Sie die **Organisationsdetails** aus dem Menü aus.
+4. Klicken Sie auf **Voice Gateway einrichten**.
+5. Gehen Sie zu **Benutzermenü > Zugriffssteuerung** und weisen Sie den Benutzern, die Zugriff auf das Voice Gateway Portal benötigen, mit der Rolle "Konto" die Rolle "voiceGatewayUser" zu. Beachten Sie, dass sich Administratoren und Dienstanbieter nicht mit Cognigy.AI Benutzeranmeldeinformationen anmelden können.
 
-## What's Next?
+## Wie geht es weiter?
 
-- [Create an account](webapp/accounts.md)
-- [Create an application](webapp/applications.md)
-- [Add a new carrier](webapp/carriers.md)
-- [Add a phone number](webapp/phone-numbers.md)
-- [Add speech provider credentials](webapp/speech-services.md)
+- [Konto erstellen](webapp/accounts.md)
+- [Anwendung erstellen](webapp/applications.md)
+- [Neuen Mobilfunkanbieter hinzufügen](webapp/carriers.md)
+- [Telefonnummer hinzufügen](webapp/phone-numbers.md)
+- [Anmeldeinformationen für Sprachanbieter hinzufügen](webapp/speech-services.md)

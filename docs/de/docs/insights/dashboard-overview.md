@@ -1,280 +1,279 @@
 ---
-title: "Dashboard Overview" 
-slug: "dashboard-overview" 
-hidden: false 
+title: "Dashboard-Übersicht" 
+Slug: "Dashboard-Übersicht" 
+ausgeblendet: false 
 ---
 
-# Dashboard Overview
+# Dashboard-Übersicht
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.45-blue.svg)] (.. /release-notes/4.45.md)
 
-The Overview dasboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
+Das Übersichts-dasboard gibt Ihnen eine kurze Zusammenfassung wichtiger Informationen darüber, wie Kunden mit Ihrem virtuellen Agenten interagieren.
 
-The summary of key metrics is represented in the following charts:
+Die Zusammenfassung der wichtigsten Metriken ist in den folgenden Diagrammen dargestellt:
 
-- [Indicators](#indicators) 
-- [Ring charts](#ring-charts)
-- [Bar charts](#bar-charts)
-- [Line charts](#line-charts)
+- [Indikatoren](#indicators) 
+- [Ringdiagramme](#ring-Karten)
+- [Balkendiagramme](#bar-Diagramme)
+- [Liniendiagramme](#line-Diagramme)
 
-Charts display data based on the global filter settings.
+In Diagrammen werden Daten basierend auf den globalen Filtereinstellungen angezeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/overview_dashboard.png" width="100%" />
-  <figcaption>Overview dashboard</figcaption>
+  <figcaption>Übersichts-Dashboard</figcaption>
 </figure>
 
-## Indicators
+## Indikatoren
 
-### Active Contacts 
+### Aktive Kontakte 
 
-Indicates the total number of currently active user sessions in the last 15 minutes. This widget updates in a regular interval of 30 seconds.
+Gibt die Gesamtzahl der derzeit aktiven Benutzersitzungen in den letzten 15 Minuten an. Dieses Widget wird in einem regelmäßigen Intervall von 30 Sekunden aktualisiert.
 
-### Sessions Count
+### Anzahl der Sitzungen
 
-Indicates the total number of sessions.
+Gibt die Gesamtzahl der Sitzungen an.
 
-### Understood Messages
+### Verstandene Botschaften
 
-Indicates the percentage of understood messages occurred during conversations.
+Gibt den Prozentsatz der verstandenen Nachrichten an, die während Unterhaltungen aufgetreten sind.
 
-### Positive Ratings
+### Positive Bewertungen
 
-Indicates the total number of Positive Ratings given as feedback by the end user.
+Gibt die Gesamtzahl der positiven Bewertungen an, die vom Endbenutzer als Feedback abgegeben wurden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Sessions    | Positive Rating | Negative Rating | Rated Sessions |
+'''txt
+| Sitzungen | Positive Bewertung | Negative Bewertung | Bewertete Sitzungen |
 | ----------- | --------------- | --------------- | -------------- |
-| session-123 |        1        |        0        |       1        |
-| session-456 |        0        |        1        |       1        |
-| session-789 |        0        |        0        |       0        |
-| session-abc |        1        |        0        |       1        |
-| session-def |        1        |        0        |       1        |
+| Sitzung-123 |        Nr. 1 |        0 |       Nr. 1 |
+| Sitzung-456 |        0 |        Nr. 1 |       Nr. 1 |
+| Sitzung-789 |        0 |        0 |       0 |
+| Sitzung-ABC |        Nr. 1 |        0 |       Nr. 1 |
+| session-def |        Nr. 1 |        0 |       Nr. 1 |
 | ---------------------------------------------------------------- |
-| TOTAL       |        3        |        1        |       4        |
-```
+| INSGESAMT |        3 |        Nr. 1 |       4 |
+'''
 
-Result: `3`
+Ergebnis: '3'
 
-## Ring charts
+## Ringdiagramme
 
-### Sessions by Channel
+### Sitzungen nach Kanal
 
-Indicates the total number of conversations displayed in a pie chart based on the channels used. 
+Gibt die Gesamtzahl der Konversationen an, die in einem Kreisdiagramm basierend auf den verwendeten Kanälen angezeigt werden. 
 
-Source table:
+Quelltabelle:
 
-```txt
-| Sessions    | Channel          | Conversations   | Percentage     |
+'''txt
+| Sitzungen | Kanal | Unterhaltungen | Prozentsatz |
 | ----------- | ---------------  | --------------- | -------------- |
-| session-123 | Demo Webchat     |        14       |       46.67    |
-| session-456 | Voice Gateway    |        12       |       40       |
-| session-789 | Interaction Panel|        3        |       10       |
-| session-abc | Webchat          |        1        |       3.33     |
+| Sitzung-123 | Demo Webchat |        Nr. 14 |       46,67 |
+| Sitzung-456 | Sprach-Gateway |        Nr. 12 |       40 |
+| Sitzung-789 | Interaktions-Panel|        3 |       Nr. 10 |
+| Sitzung-ABC | Webchat |        Nr. 1 |       3,33 |
 | ----------------------------------------------------------------- |
-| TOTAL       |                  |        30       |       100      |
-```
-Result: 
+| INSGESAMT |                  |        30 |       100 |
+'''
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/sessions_by_channel.png" width="100%" />
 </figure>
 
-## Bar charts
+## Balkendiagramme
 
-### Top Intents
+### Top-Absichten
 
-Indicates the top-rated number of used intents, displayed in a horizontal bar chart. The chart showcases the top-rated number of intents used, with a maximum of 6 intents shown in the summary view and 25 in the detailed view. Whenever an intent is matched, it is recorded in the analytics data. The data is then grouped by the matched intent and sorted in descending order.
+Gibt die am höchsten bewertete Anzahl der verwendeten Absichten an, die in einem horizontalen Balkendiagramm angezeigt werden. Das Diagramm zeigt die am besten bewertete Anzahl der verwendeten Intents, wobei maximal 6 Intents in der Zusammenfassungsansicht und 25 in der Detailansicht angezeigt werden. Jedes Mal, wenn eine Absicht übereinstimmt, wird sie in den Analysedaten aufgezeichnet. Die Daten werden dann nach der übereinstimmenden Absicht gruppiert und in absteigender Reihenfolge sortiert.
 
-Source table:
+Quelltabelle:
 
-```txt
-|  Intent           | Total number  |
+'''txt
+|  Absicht | Gesamtanzahl |
 | ----------------- | ------------- |
-| Flight discounts  |      12       |
-| Book a flight     |      5        |
-| Change a flight   |      5        |
-| Additional fee    |      4        |
-| Reject a flight   |      3        |
-| Transfer flights  |      3        |
-```
+| Rabatte für Flüge |      Nr. 12 |
+| Einen Flug buchen |      Nr. 5 |
+| Einen Flug ändern |      Nr. 5 |
+| Zusätzliche Gebühr |      4 |
+| Einen Flug ablehnen |      3 |
+| Transferflüge |      3 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/top-intents.png" width="100%" />
 </figure>
 
-### Users by Locale
+### Benutzer nach Gebietsschema
 
-Indicates time-related recognized conversations depending on different locales given in percentages.
+Gibt zeitbezogene erkannte Konversationen in Abhängigkeit von verschiedenen Gebietsschemata an, die in Prozent angegeben werden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date       | Conversations   | Locales         | Percentage      |
+'''txt
+| Datum | Unterhaltungen | Gebietsschemata | Prozentsatz |
 | -----------| --------------- | --------------- | --------------- |
-| 2023-08-27 | 0               |     -           |  -              |
-| 2023-08-28 | 1               | "en-US"         | 100             |
-| 2023-08-29 | 4               | "en-US"         | 100             |
-| 2023-08-30 | 27              | "en-US"         | 100             |
-| 2023-08-31 | 1               | "en-US"         | 100             |
-| 2023-09-01 | 1               | "en-US"         | 100             |
-| 2023-09-02 | 0               |     -           |  -              |
-```
-Result: 
+| 27.08.2023 | 0 |     -           |  -              |
+| 28.08.2023 | Nr. 1 | "en-US" | 100 |
+| 29.08.2023 | 4 | "en-US" | 100 |
+| 30.08.2023 | Nr. 27 | "en-US" | 100 |
+| 31.08.2023 | Nr. 1 | "en-US" | 100 |
+| 01.09.2023 | Nr. 1 | "en-US" | 100 |
+| 02.09.2023 | 0 |     -           |  -              |
+'''
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/users_by_locale.png" width="100%" />
 </figure>
 
-### Top Goals
+### Top-Ziele
 
-Indicates the top-rated number of goals reached.
+Gibt die am höchsten bewertete Anzahl der erreichten Ziele an.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
-you can select **Go to Step Explorer**,
-which leads you to the Step Explorer in Insights.
+Mit einem Klick auf ! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+Sie können **Gehe zum Schritt-Explorer** auswählen,
+Dies führt Sie zum Schritt-Explorer in Insights.
 
-Source table:
+Quelltabelle:
 
-```txt 
-| Sessions    | Goals                  |
+'''txt 
+| Sitzungen | Ziele |
 | ----------- | ---------------------- |
-| session-123 | Goal A, Goal B, Goal D |
-| session-456 | Goal B, Goal C, Goal E |
-| session-789 | Goal A, Goal B, Goal E |
-| session-abc | Goal A                 |
-| session-def | Goal, Goal A           |
-| session-ghi | Goal, Goal A           |
-```
-Result:
+| Sitzung-123 | Ziel A, Ziel B, Tor D |
+| Sitzung-456 | Ziel B, Tor C, Ziel E |
+| Sitzung-789 | Ziel A, Ziel B, Ziel E |
+| Sitzung-ABC | Ziel A |
+| session-def | Tor, Ziel A |
+| Sitzungs-GHI | Tor, Ziel A |
+'''
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/goals.png" width="100%" />
 </figure>
 
-### Top Slots
+### Top-Slots
 
-Similar to Top Goals and Top Intents, this chart displays top-rated number of slots displayed in a bar chart.
+Ähnlich wie bei "Top-Ziele" und "Top-Absichten" zeigt dieses Diagramm die am besten bewertete Anzahl von Slots an, die in einem Balkendiagramm angezeigt werden.
 
-Source table:
+Quelltabelle:
 
-```txt 
-| Slot        | Number      |
+'''txt 
+| Spielautomat | Anzahl |
 | ----------- | ----------- |
-| DATE        | 2           |
-| NUMBER      | 1           |
-```
+| DATUM | 2 |
+| ANZAHL | Nr. 1 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/top_slots.png" width="80%" />
 </figure>
 
-### Understood / Misunderstood Messages
+### Verstandene / missverstandene Nachrichten
 
-Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
+Gibt die zeitbezogene Anzahl der verstandenen und missverstandenen Nachrichten in Prozent an, die in einem Balkendiagramm angezeigt werden.
 
-A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/). 
-A message is not counted as understood
-if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/)
-or sent during an active handover
-without configuring [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow. 
+Eine Nachricht wird als verstanden gezählt, wenn sie einen Intent ausgelöst hat, ein Slot abgeglichen wird oder sie über den [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) oder [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) als verstanden markiert wird. 
+Eine Nachricht wird nicht als verstanden gezählt
+wenn es im [Analytics-Knoten überschreiben](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) als "Nicht zählen" markiert ist
+oder während einer aktiven Übergabe gesendet
+ohne [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow zu konfigurieren. 
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
-you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow.
+Mit einem Klick auf ! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+Sie können den **Go to Intent Trainer** auswählen,
+Dadurch gelangen Sie zur Anwendung, Cognigy.AI Sie Ihren Flow verbessern können.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date       | understood   | misunderstood   | Percentages     |
+'''txt
+| Datum | verstanden | missverstanden | Prozentsätze |
 | -----------| ------------ | --------------- | --------------- |
-| 2023-08-27 | 0            |     0           |  0              |
-| 2023-08-28 | 1            | 0               | 100/0           |
-| 2023-08-29 | 12           | 10              | 55/45           |
-| 2023-08-30 | 31           | 18              | 63/37           |
-| 2023-08-31 | 7            | 1               | 87.5/12.5       |
-| 2023-09-01 | 2            | 0               | 100/0           |
-| 2023-09-02 | 0            |     -           |  -              |
-```
-Result: 
+| 27.08.2023 | 0 |     0 |  0 |
+| 28.08.2023 | Nr. 1 | 0 | 100/0 |
+| 29.08.2023 | Nr. 12 | Nr. 10 | 55/45 |
+| 30.08.2023 | 31 | 18 | 63/37 |
+| 31.08.2023 | 7 | Nr. 1 | 87,5/12,5 |
+| 01.09.2023 | 2 | 0 | 100/0 |
+| 02.09.2023 | 0 |     -           |  -              |
+'''
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/understood_messages.png" width="100%" />
 </figure>
 
-### Number of Inputs
+### Anzahl der Eingänge
 
-Indicates the time-related number of inputs displayed in a bar chart.
+Gibt die zeitbezogene Anzahl der Eingaben an, die in einem Balkendiagramm angezeigt werden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date       | Inputs       | 
+'''txt
+| Datum | Eingänge | 
 | -----------| ------------ |
-| 2023-08-27 | 0            | 
-| 2023-08-28 | 1            |
-| 2023-08-29 | 23           | 
-| 2023-08-30 | 72           | 
-| 2023-08-31 | 8            | 
-| 2023-09-01 | 3            | 
-| 2023-09-02 | 0            | 
-```
-Result: 
+| 27.08.2023 | 0 | 
+| 28.08.2023 | Nr. 1 |
+| 29.08.2023 | 23 | 
+| 30.08.2023 | 72 | 
+| 31.08.2023 | 8 | 
+| 01.09.2023 | 3 | 
+| 02.09.2023 | 0 | 
+'''
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/number_of_inputs.png" width="100%" />
 </figure>
 
+## Liniendiagramme
 
-## Line charts
+### Sitzungen
 
-### Sessions
+Gibt die Anzahl der Sitzungen auf einer Zeitskala an
 
-Indicates the number of sessions on a timescale
+Quelltabelle:
 
-Source table:
-
-```txt
-| Date       | Sessions     | 
+'''txt
+| Datum | Sitzungen | 
 | -----------| ------------ |
-| 2023-08-27 | 0            | 
-| 2023-08-28 | 1            |
-| 2023-08-29 | 4            | 
-| 2023-08-30 | 30           | 
-| 2023-08-31 | 6            | 
-| 2023-09-01 | 1            | 
-| 2023-09-02 | 0            | 
-```
+| 27.08.2023 | 0 | 
+| 28.08.2023 | Nr. 1 |
+| 29.08.2023 | 4 | 
+| 30.08.2023 | 30 | 
+| 31.08.2023 | 6 | 
+| 01.09.2023 | Nr. 1 | 
+| 02.09.2023 | 0 | 
+'''
 
-Result: 
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/sessions.png" width="100%" />
 </figure>
 
-### Unique Contacts
+### Einzigartige Kontakte
 
-Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Gibt die Anzahl der eindeutigen Kontakte ('userid') auf einer Zeitskala an. Wenn der Benutzer mehr als eine Sitzung an einem einzigen Tag erstellt, wird dies als ein eindeutiger Kontakt für diesen Tag gezählt.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date    	| Contacts |
+'''txt
+| Datum | Kontakte |
 | --------- | -------- |
-| 1/16/2023	|    1     |
-| 1/17/2023	|    8     |
-| 1/18/2023	|    15    |
-| 1/19/2023	|    6     |
-| 1/20/2023	|    18    |
-```
+| 16.01.2023 |    Nr. 1 |
+| 17.01.2023 |    8 |
+| 18.01.2023 |    15 |
+| 19.01.2023 |    6 |
+| 20.01.2023 |    18 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/unique-contacts.png" width="100%" />
@@ -282,8 +281,8 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More Information
+## Mehr Informationen
 
-- [Dashboard Engagement](dashboard-engagement.md)
-- [Dashboard NLU Performance](dashboard-nlu-performance.md)
-- [Dashboard Live Agent](dashboard-live-agent.md)
+- [Dashboard-Interaktion](dashboard-engagement.md)
+- [NLU-Leistung des Dashboards](dashboard-nlu-performance.md)
+- [Dashboard-Live-Agent](dashboard-live-agent.md)

@@ -1,50 +1,44 @@
 ---
- title: "Switch Locale" 
+ title: "Gebietsschema wechseln" 
  slug: "switch-locale" 
- hidden: false 
+ ausgeblendet: false 
 ---
-# Switch Locale
+# Gebietsschema wechseln
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/switch-locale.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Der Knoten **Switch Locale** wird verwendet, um zu einem alternativen [Locale](.. /.. /resources/manage/localization.md) während eines Gesprächs. Es ist üblich, diesen Knoten nach der Spracherkennung oder basierend auf der Region des Benutzers zu verwenden, um eine Änderung der Konversationssprache oder -struktur basierend auf einer Bewertung der Region oder der gesprochenen Sprache des Benutzers auszuführen. 
 
-The **Switch Locale** node is used to change to an alternate [Locale](../../resources/manage/localization.md) during a conversation. It is common to use this node after language detection or based on the region of the user to execute a change to the conversational language or structure based on an assessment of the user's region or spoken language. 
+Ein Gebietsschema muss vorkonfiguriert sein, damit die Optionen ausgefüllt werden können, die im Dropdown-Menü Gebietsschema zur Auswahl stehen.
 
-A locale must be pre-configured in order to populate the options available for selection in the Locale dropdown menu.
-
-## Usage
-<div class="divider"></div>
-
-In order to switch the locale for the current execution, one needs to use a [Think](think.md) Node after the Switch Locale Node. With this functionality, the current Flow will be triggered again -- the new locale will be used instead of the old one.
+## Verwendung<div class="divider"></div>Um das Gebietsschema für die aktuelle Ausführung zu wechseln, muss ein [Think](think.md) Node nach dem Switch Locale Node verwendet werden. Mit dieser Funktion wird der aktuelle Flow erneut ausgelöst – das neue Gebietsschema wird anstelle des alten verwendet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/switch-locale-usage.png" width="80%" />
 </figure>
 
-## Locale Reference ID
+## Locale-Referenz-ID
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.8.0-blue.svg)] ({{config.site_url}})
 
-As of release v4.8 Cognigy Script can be used to switch to another locale by using the locale reference ID. 
+Ab Version v4.8 kann Cognigy Script verwendet werden, um mithilfe der Gebietsschema-Referenz-ID zu einem anderen Gebietsschema zu wechseln. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/d22f5e3-Switch_Locale_example.svg" width="100%" />
-  <figcaption>Switch locale using Cognigy Script</figcaption>
+  <figcaption>Wechseln des Gebietsschemas mit Cognigy Script</figcaption>
 </figure>
 
-The reference ID you can find in the **Localization** of the **Manage** application in Cognigy.AI.
+Die Referenz-ID finden Sie in der **Lokalisierung** der Anwendung **Verwalten** in Cognigy.AI.
 
-Click on the 'three dots' button on the right side of any available locale to copy the respective reference ID. 
-Then open the Switch Locale Node configuration editor and enter the reference ID in the **Locale ID** field when Cognigy Script is activated.
+Klicken Sie auf die Schaltfläche "drei Punkte" auf der rechten Seite eines verfügbaren Gebietsschemas, um die entsprechende Referenz-ID zu kopieren. 
+Öffnen Sie dann den Konfigurationseditor für den Switch Locale Node und geben Sie die Referenz-ID in das Feld **Locale ID** ein, wenn Cognigy Script aktiviert ist.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/cda3717-copy_reference_ID_00.svg" width="100%" />
-  <figcaption>Copying locale reference ID</figcaption>
+  <figcaption>Kopieren der Gebietsschema-Referenz-ID</figcaption>
 </figure>
 
-!!! note "More information on Localization"
-    Find out about building multilingual and regional specific bots on the [Localization Page](../../resources/manage/localization.md).
+!!! Hinweis "Weitere Informationen zur Lokalisierung"
+    Weitere Informationen zum Erstellen mehrsprachiger und regionalspezifischer Bots finden Sie auf der [Lokalisierungsseite](.. /.. /resources/manage/localization.md).

@@ -1,92 +1,86 @@
 ---
-title: "Overview" 
-slug: "overview" 
-hidden: false 
+Titel: "Übersicht" 
+Schnecke: "Übersicht" 
+ausgeblendet: false 
 ---
 
-# xApps Overview
+# xApps Übersicht
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.51-blue.svg)] (.. /.. /release-notes/4.51.md)
 
 {! _includes/ai/xApp/pricing.md !}
 
-Cognigy xApps are infinitely flexible micro-web applications for customer self-service. xApps can be used stand-alone or complimentary to any channel to enhance virtual and human agents' capabilities and to overcome channel limitations compromising user experiences.
+Cognigy xApps sind unendlich flexible Micro-Web-Anwendungen für den Self-Service von Kunden. xApps können eigenständig oder ergänzend zu jedem Kanal verwendet werden, um die Fähigkeiten virtueller und menschlicher Agenten zu verbessern und Kanaleinschränkungen zu überwinden, die die Benutzererfahrung beeinträchtigen.
 
-The behavior of xApps is controlled via a set of [xApp Flow Nodes](../flow-nodes/xApp/overview.md).
-You can build the actual xApp Pages in two ways,
-by providing [HTML code](../flow-nodes/xApp/set-html-xApp-state.md)
-or by specifying an [Adaptive Card in JSON](../flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
-Alternatively, for more customization, you can create your own Node by implementing and uploading an Extension.
+Das Verhalten von xApps wird über eine Reihe von [xApp Flow Nodes](.. /flow-nodes/xApp/overview.md).
+Sie können die eigentlichen xApp-Seiten auf zwei Arten erstellen:
+durch Bereitstellen von [HTML-Code](.. /flow-nodes/xApp/set-html-xApp-state.md)
+oder durch Angabe einer [Adaptiven Karte in JSON](.. /flow-nodes/xApp/set-AdaptiveCard-xApp-state.md).
+Alternativ können Sie für weitere Anpassungen Ihren eigenen Node erstellen, indem Sie eine Erweiterung implementieren und hochladen.
 
-Watch this webinar to get a quick overview of what xApps are, how they work, and in which scenarios you can use them. The webinar also includes a tutorial on how to build a simple xApp.
-
-<div style="text-align:center;">
+Sehen Sie sich dieses Webinar an, um einen schnellen Überblick darüber zu erhalten, was xApps sind, wie sie funktionieren und in welchen Szenarien Sie sie verwenden können. Das Webinar enthält auch ein Tutorial zum Erstellen einer einfachen xApp.<div style="text-align:center;">
   <iframe width="701" height="438" src="https://www.youtube.com/embed/4qvZGG6qK6w" title="Design Multimodal Customer Journeys with Cognigy xApps" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+</div>## Kompatibilität
 
-## Compatibility
+- Cognigy xApps sind mit den [hier](supported-browsers-and-channels.md) aufgeführten Browsern und Kanälen kompatibel.
 
-- Cognigy xApps are compatible with the browsers and channels listed [here](supported-browsers-and-channels.md).
+## Konzepte 
 
-## Concepts 
+### Session-Konzept
 
-### Session Concept
+Eine xApp-Sitzung kann über die URL aufgerufen und über die [xApp: Init-Sitzung](.. /flow-nodes/xApp/init-xApp-session.md) Flow-Knoten. Die xApp-Sitzung zeigt eine Sequenz von xApp-Seiten an, die nach Belieben konfiguriert werden können. Pro Cognigy-Sitzung kann maximal eine xApp-Sitzung initialisiert werden.
 
-An xApp Session can be accessed via the URL and be initialized via the [xApp: Init Session](../flow-nodes/xApp/init-xApp-session.md) Flow Node. The xApp Session displays a sequence of xApp pages that can be configured as desired. A maximum of one xApp Session can be initialized per Cognigy Session.
+### Bildschirm-Konzept
 
-### Screen Concept
+Die Shell-Seite verfügt über eine Reihe von konfigurierbaren integrierten Bildschirmen. Diese Standardbildschirme können verwendet werden, um mit Endbenutzern zu interagieren, z. B. wenn der xApp-Inhalt nicht angezeigt wird. Diese Standardbildschirme sind Teil der Shell-Seite, die die Verbindung zum Cognigy.AI-Backend hält.
 
-The Shell Page has a set of configurable built-in screens. These default screens can be used to interact with end users, for example, when the xApp content is not displayed. These default screens are part of the Shell Page, which holds the connection to the Cognigy.AI backend.
+#### xApp-Bildschirm
 
-#### xApp Screen
+Die xApp-Bildschirme werden angezeigt, wenn die xApp-Seite gestartet wird, nicht gestartet werden kann, ein Fehler auftritt und angehalten wird.
 
-The xApp Screens are shown when the xApp Page is launched, fails to launch, encounters an Error, and is halted.
-
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/success-screen.png" width="80%">
-    <figcaption>xApp Success Screen</figcaption>
+<figure><img class="image-center" src="{{config.site_url}}ai/images/success-screen.png" width="80%"><figcaption>xApp-Erfolgsbildschirm xApp-Fehlerbildschirm</figcaption>
+    
+    
+</figure><figure><img class="image-center" src="{{config.site_url}}ai/images/error-screen.png" width="80%"><figcaption></figcaption>
+    
+    
 </figure>
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/error-screen.png" width="80%">
-    <figcaption>xApp Error Screen</figcaption>
+#### Zwischenbildschirm
+
+Die Zwischenbildschirme werden dem Endbenutzer angezeigt, während keine xApp-Seite für die Anzeige konfiguriert ist. Der standardmäßige Zwischenbildschirm kann durch eine benutzerdefinierte xApp-Seite ersetzt werden.
+
+<figure><img class="image-center" src="{{config.site_url}}ai/images/intermediate-screen.png" width="80%" /><figcaption>Zwischenbildschirm</figcaption>
+    
+    
 </figure>
 
-#### Intermediate Screen
+#### Verbindungsbildschirm
 
-The Intermediate Screens are displayed to the end user while no xApp Page is configured to be displayed. The default Intermediate Screen can be replaced with a custom-built xApp Page.
+Die Verbindungsbildschirme werden angezeigt, während die Echtzeitverbindung zum Backend wiederhergestellt wird. Der standardmäßige Verbindungsbildschirm kann durch eine benutzerdefinierte xApp-Seite ersetzt werden.
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/intermediate-screen.png" width="80%" />
-    <figcaption>Intermediate Screen</figcaption>
+<figure><img class="image-center" src="{{config.site_url}}ai/images/connection-screen.png" width="80%" /><figcaption>Bildschirm "Verbindung"</figcaption>
+    
+    
 </figure>
 
-#### Connection Screen
+#### PIN-Bildschirm
 
-The Connection Screens are shown while the real-time connection to the backend is re-established. The default Connection Screen can be replaced with a custom-built xApp Page.
+Auf dem PIN-Bildschirm wird der Endbenutzer aufgefordert, die xApp-Sitzungs-PIN einzugeben. Der Benutzer muss die richtige PIN angeben, um auf die xApp-Seiten zugreifen zu können. Das Anfordern einer PIN für die Teilnahme an der Sitzung ist optional.
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/connection-screen.png" width="80%" />
-    <figcaption>Connection Screen</figcaption>
+<figure><img class="image-center" src="{{config.site_url}}ai/images/pin-screen.png" width="80%" /><figcaption>xApp-Pin-Bildschirm</figcaption>
+    
+    
 </figure>
 
-#### PIN Screen
+## So funktioniert's
 
-The PIN Screen prompts the end user to enter the xApp Session PIN. The user needs to provide the correct PIN to access the xApp Pages. Requesting a PIN to enter the session is optional.
+Weitere Informationen zur Funktionsweise einer xApp finden Sie in den Artikeln [Anwendungsfälle](use-cases.md) und [Erstellen Ihrer ersten xApp](build/first-xApp.md).
+Vorgefertigte Beispiele für xApps finden Sie im Repository [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main).
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}ai/images/pin-screen.png" width="80%" />
-    <figcaption>xApp Pin Screen</figcaption>
-</figure>
+## Mehr Informationen
 
-## How it Works
-
-To learn more about how an xApp works, read the [Use cases](use-cases.md) and [Build your first xApp](build/first-xApp.md) articles.
-You can find ready-made examples of xApps in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main) repository.
-
-## More Information
-
-- [Architecture](architecture.md)
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
-- [xApp Tokens](tokens.md)
-- [xApp Flow API](api.md)
+- [Architektur](architecture.md)
+- [xApp-Knoten](.. /flow-nodes/xApp/overview.md)
+- [xApp-Token](tokens.md)
+- [xApp-Flow-API](api.md)

@@ -1,33 +1,33 @@
 ---
-title: "Download Report" 
-slug: "download-report" 
-hidden: false 
+title: "Bericht herunterladen" 
+Slug: "Download-Bericht" 
+ausgeblendet: false 
 ---
 
-# Download Report
+# Bericht herunterladen
 
-You can download detailed reports in CSV format from the charts on the Insights dashboards:
+Sie können detaillierte Berichte im CSV-Format aus den Diagrammen in den Insights-Dashboards herunterladen:
 
-- [Overview dashboard](dashboard-overview.md)
-- [Engagement dashboard](dashboard-engagement.md)
-- [NLU Performance](dashboard-nlu-performance.md)
-- [Live Agent](dashboard-live-agent.md)
+- [Übersichts-Dashboard](dashboard-overview.md)
+- [Interaktions-Dashboard](dashboard-engagement.md)
+- [NLU-Leistung](dashboard-nlu-performance.md)
+- [Live-Agent](dashboard-live-agent.md)
 
-These CSV reports contain crucial information, including intent scores, transcripts, and conversation details, enabling a better understanding of user behavior.
+Diese CSV-Berichte enthalten wichtige Informationen, einschließlich Absichtsbewertungen, Transkripte und Konversationsdetails, die ein besseres Verständnis des Benutzerverhaltens ermöglichen.
 
-The CSV format ensures compatibility with various tools, making analysis seamless.
-You can easily import this data into Microsoft Excel or databases like Microsoft Access.
+Das CSV-Format gewährleistet die Kompatibilität mit verschiedenen Tools und macht die Analyse nahtlos.
+Sie können diese Daten ganz einfach in Microsoft Excel oder Datenbanken wie Microsoft Access importieren.
 
-## Download a Report via Insights UI
+## Laden Sie einen Bericht über die Insights-Benutzeroberfläche herunter
 
-To download a report, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Bericht herunterzuladen:
 
-1. Go to Insights and select one of the previous mentioned dashboards in the side menu bar on the left side.
-2. Click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) in the top right corner of a dashboard chart you want to get as a report. 
-3. Select **Download report as .csv file**. The report will now be stored in a CSV file.
+1. Gehen Sie zu Insights und wählen Sie eines der zuvor genannten Dashboards in der seitlichen Menüleiste auf der linken Seite aus.
+2. Klicken Sie auf ! [vertikale Auslassungspunkte] (.. /assets/icons/vertical-ellipsis.svg) in der oberen rechten Ecke eines Dashboard-Diagramms, das Sie als Bericht erhalten möchten. 
+3. Wählen Sie **Bericht als .csv Datei herunterladen**. Der Bericht wird nun in einer CSV-Datei gespeichert.
 
-The downloaded report file contains the complete chart dataset based on the filter settings. You can open the `.csv` file using applications such as Microsoft Excel or similar software.
+Die heruntergeladene Berichtsdatei enthält das vollständige Diagrammdataset basierend auf den Filtereinstellungen. Sie können die Datei ".csv" mit Anwendungen wie Microsoft Excel oder ähnlicher Software öffnen.
 
-## More Information
+## Mehr Informationen
 
 - [Cognigy Insights](cognigy-insights.md)

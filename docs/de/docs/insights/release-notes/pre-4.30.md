@@ -1,94 +1,94 @@
 ---
- title: "Cognigy Insights" 
- slug: "pre-4.30" 
- hidden: false 
+ Titel: "Cognigy Insights" 
+ Schnecke: "vor 4.30" 
+ ausgeblendet: false 
 ---
-# Cognigy Insights
+# Cognigy Einblicke
 
 ## 4.29.0
 
-**Released** July 7th, 2022
+**Veröffentlicht** 7. Juli 2022
 
-## Bugfixes
+## Fehlerbehebungen
 
-- Fixed a bug where Odata would double stringify already stringified content and produce wrong JSON
-- Fixed a bug where the top part of the filters sidebar was blocked after the Notification disappeared
+- Es wurde ein Fehler behoben, bei dem Odata bereits stringifizierte Inhalte doppelt stringifizierte und falsches JSON erzeugte
+- Es wurde ein Fehler behoben, bei dem der obere Teil der Filter-Seitenleiste blockiert wurde, nachdem die Benachrichtigung verschwunden war
 
 ## 4.28.0
 
-**Released** June 23rd, 2022
+**Veröffentlicht** 23. Juni 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by adding Endpoint column to Transcript Explorer
+- Verbessert durch Hinzufügen der Spalte "Endpunkt" zum Transkript-Explorer
 
 ## 4.27.0
 
-**Released** June 7th, 2022
+**Veröffentlicht** 7. Juni 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by fixing the Analytics API openapi documentation which was unclear and cannot get the request to work. changed handoverEscalations to number
+- Verbessert, indem die OpenAPI-Dokumentation der Analytics-API korrigiert wurde, die unklar war und die Anfrage nicht zum Laufen bringen konnte. HandoverEskalationen auf Nummer geändert
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where the locale options in global filters of insights repeated twice, because they contained both locale name and nluLanguage
-- Fixed a bug where analytics sessions used to use always hardcoded new Date() instead of incoming timestamp
+- Es wurde ein Fehler behoben, bei dem sich die Gebietsschemaoptionen in globalen Filtern von Erkenntnissen zweimal wiederholten, da sie sowohl den Gebietsschemanamen als auch nluLanguage enthielten.
+- Es wurde ein Fehler behoben, bei dem in Analysesitzungen immer das hartcodierte neue Date() anstelle des eingehenden Zeitstempels verwendet wurde.
 
 ## 4.26.0
 
-**Released** May 24th, 2022
+**Veröffentlicht** 24. Mai 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by adding necessary and missing indices on analytics and sessions collections so that the initial load of Quantitative Queries are covered. Reduces the count totalDocsExamined to 0 by only scanning the indexed Keys
-- Improved by adding distinct color to the agent messages
+- Verbessert durch Hinzufügen notwendiger und fehlender Indizes für Analyse- und Sitzungssammlungen, sodass die anfängliche Last quantitativer Abfragen abgedeckt wird. Reduziert die Anzahl totalDocsExamine auf 0, indem nur die indizierten Schlüssel gescannt werden
+- Verbessert durch Hinzufügen einer eindeutigen Farbe zu den Agentennachrichten
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where conversation records(input) would miss the analytics database because of invalid field names that start with $
-- Fixed a visualization problem of "switched Flow" messages in the Transcript Explorer
+- Es wurde ein Fehler behoben, bei dem Konversationsdatensätze (Eingabe) die Analysedatenbank aufgrund ungültiger Feldnamen, die mit $ beginnen, übersehen haben.
+- Ein Visualisierungsproblem von "Switched Flow"-Nachrichten im Transkript-Explorer wurde behoben
 
 ## 4.25.0
 
-**Released** May 10th, 2022
+**Veröffentlicht** 10. Mai 2022
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where Message Explorer had 2 scroll bars which caused to invalid infinite loader behavior
+- Es wurde ein Fehler behoben, bei dem der Nachrichten-Explorer 2 Bildlaufleisten hatte, was zu einem ungültigen Infinite-Loader-Verhalten führte
 
 ## 4.24.0
 
-**Released** May 2nd, 2022
+**Veröffentlicht** 2. Mai 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by adding an endpoint for deleting analytics records for an organization
-- Improved by fixing accessibility issues in step explorer
-- Improved by reducing the dashboard UI response time by replacing SVG based charts with canvas-based charts
-- Improved by adding pagination in the Step Explorer to support complex step graphs
+- Verbessert durch Hinzufügen eines Endpunkts zum Löschen von Analysedatensätzen für eine Organisation
+- Verbessert durch Behebung von Problemen mit der Barrierefreiheit im Schritt-Explorer
+- Verbessert durch Verkürzung der Reaktionszeit der Dashboard-Benutzeroberfläche durch Ersetzen von SVG-basierten Diagrammen durch Canvas-basierte Diagramme
+- Verbessert durch Hinzufügen von Paginierung im Schritt-Explorer zur Unterstützung komplexer Schrittdiagramme
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where number reports with "Amount" types show non-integer values
-- Fixed a bug when a transcript list had a loading issue after filters/agent change
+- Es wurde ein Fehler behoben, bei dem Zahlenberichte mit dem Typ "Betrag" nicht ganzzahlige Werte anzeigten
+- Es wurde ein Fehler behoben, bei dem eine Transkriptliste nach einem Filter-/Agentenwechsel ein Ladeproblem hatte
 
 ## 4.23.0
 
-**Released** April 12th, 2022
+**Veröffentlicht** 12. April 2022
 
-This release does not contain any fixes or improvements.
+Diese Version enthält keine Fehlerbehebungen oder Verbesserungen.
 
 ## 4.22.0
 
-**Released** March 28th, 2022
+**Veröffentlicht** 28. März 2022
 
-### Improvements
+### Verbesserungen
 
-- Improved by indicating Flow switches in the expert mode of Transcript Explorer
+- Verbessert durch die Anzeige von Flow-Schaltern im Expertenmodus des Transkript-Explorers
 
-### Bugfixes
+### Fehlerbehebungen
 
-- Fixed a bug where data are not loaded in Step Explorer
-- Fixed a bug where Step Explorer mistakenly does not display a newly tracked steps, if there is already a cached version of today’s report
-- Fixed a bug where Contact Profiles are not displayed correctly in the Transcript Explorer
+- Es wurde ein Fehler behoben, bei dem Daten im Step Explorer nicht geladen wurden
+- Es wurde ein Fehler behoben, bei dem der Schritt-Explorer fälschlicherweise keine neu getrackten Schritte anzeigte, wenn bereits eine zwischengespeicherte Version des heutigen Berichts vorhanden war
+- Es wurde ein Fehler behoben, bei dem Kontaktprofile im Transkript-Explorer nicht korrekt angezeigt wurden

@@ -1,182 +1,177 @@
 ---
-title: "Generative AI"
-slug: "Generative AI"
-hidden: false
+Titel: "Generative KI"
+slug: "Generative KI"
+ausgeblendet: false
 ---
 
-# Generative AI
+# Generative KI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.52-blue.svg)] (.. /release-notes/4.52.md)
 
 {! _includes/ai/terms-of-use.md !}
 
-Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
+Generative KI bezieht sich auf eine Art von künstlicher Intelligenz, die mithilfe von Algorithmen des maschinellen Lernens neue, originelle Inhalte wie Bilder, Videos, Audios und Texte erstellt. Es funktioniert, indem es aus vorhandenen Daten lernt und auf der Grundlage dieses Lernens neue Inhalte erstellt.
 
-Cognigy.AI integrates with the [Generative AI providers](#prerequisites) that allow text generation based on user input. That involves utilizing [Large Language Models (LLMs)](resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
+Cognigy.AI lässt sich in die [Anbieter generativer KI](#prerequisites) integrieren, die eine Textgenerierung auf der Grundlage von Benutzereingaben ermöglichen. Dazu gehört die Verwendung von [Large Language Models (LLMs)](resources/build/llm.md), um Daten zu analysieren und kontextuell relevante und personalisierte Inhalte zu generieren.
 
-In the Cognigy.AI interface, LLMs generate human-like and personalized content for a bot. It can be used for the following purposes:
+In der Cognigy.AI Benutzeroberfläche generieren LLMs menschenähnliche und personalisierte Inhalte für einen Bot. Es kann für folgende Zwecke verwendet werden:
 
-- [Generating Lexicons](#generate-lexicons)
-- [Creating new Flows with pre-configured Nodes](#generate-flows)
-- [Generating new Intent sentences](#generate-intent-sentences)
-- [Rephrasing bot outputs](#rephrase-bot-outputs)
-- [Completing texts](#complete-texts)
+- [Generieren von Lexika](#generate-Lexika)
+- [Erstellen neuer Flows mit vorkonfigurierten Nodes](#generate-Flows)
+- [Generieren neuer Absichtssätze](#generate-Absichtssätze)
+- [Umformulieren von Bot-Ausgaben](#rephrase-bot-outputs)
+- [Vervollständigung von Texten](#complete-Texte)
 
-To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
-
-<div style="text-align:center;">
+Um mehr über die Vorteile der Integration von Conversational AI mit generativen KI-Plattformen zu erfahren, sehen Sie sich dieses Webinar an:<div style="text-align:center;">
   <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+</div>## Voraussetzungen
 
-## Prerequisites
+Bevor Sie diese Funktion nutzen können, müssen Sie ein Konto bei einem der Anbieter für generative KI erstellen:
 
-Before using this feature, you need to create an account in one of the Generative AI Providers:
+- [OpenAI](https://platform.openai.com/). Sie müssen über ein kostenpflichtiges Konto verfügen oder Mitglied einer Organisation sein, die Ihnen Zugriff gewährt. Öffnen Sie Ihr OpenAI-Benutzerprofil, kopieren Sie den vorhandenen API-Schlüssel oder erstellen Sie einen neuen und kopieren Sie ihn.
+- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). Sie müssen über ein kostenpflichtiges Konto verfügen oder Mitglied einer Organisation sein, die Ihnen Zugriff gewährt. Bitten Sie Ihren Azure-Administrator, den API-Schlüssel, den Ressourcennamen und den Namen des Bereitstellungsmodells anzugeben.
+- [Anthropischer Claude](https://console.anthropic.com/docs). Sie müssen ein [Mitglied einer Organisation](https://console.anthropic.com/docs/access) sein, die Ihnen Zugriff gewährt.
+- [Google Vertex AI](https://cloud.google.com/vertex-ai). Sie müssen über ein kostenpflichtiges Konto verfügen oder Mitglied einer Organisation sein, die Ihnen Zugriff gewährt.
 
-- [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
-- [Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
-- [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
-- [Google Vertex AI](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
+## Generative KI einrichten
 
-## Set up Generative AI
+Gehen Sie wie folgt vor, um die Verbindung zwischen Cognigy.AI und dem Generative AI Provider einzurichten:
 
-To set up the connection between Cognigy.AI and the Generative AI Provider, do the following:
+- [Modell hinzufügen](#add-a-model)
+- [Modell anwenden](#apply-das-Modell)
 
-- [Add a model](#add-a-model)
-- [Apply the model](#apply-the-model)
-
-### Add a Model
+### Hinzufügen eines Modells
 
 {! _includes/ai/generative-ai/credentials.md !}
 
-### Apply the Model
+### Anwenden des Modells
 
 {! _includes/ai/generative-ai/apply-model.md !}
 
-You can check if the connection works by creating a new generative AI Flow.
+Sie können überprüfen, ob die Verbindung funktioniert, indem Sie einen neuen generativen KI-Flow erstellen.
 
-## Generate Lexicons
+## Lexika generieren
 
-Note that the generation of Lexicons for primary NLU languages besides German and English is not fully supported.
+Beachten Sie, dass die Generierung von Lexika für primäre NLU-Sprachen neben Deutsch und Englisch nicht vollständig unterstützt wird.
 
-To use Generative AI technology for creating a new Lexicon, do the following:
+Um die generative KI-Technologie zum Erstellen eines neuen Lexikons zu verwenden, gehen Sie wie folgt vor:
 
-1. In the left-side menu of the Cognigy.AI interface, click **Build > Lexicons**.
-2. Click **+ New Lexicon**.
-3. In the **New Lexicon** window, specify the name covering the Lexicon's general main topic and add a relevant description. It helps generate a more accurate result. To ensure that the generated content meets the desired expectations, fill in both fields. Relying solely on the title without using the description field will not produce the intended results.
-4. Go to the **Lexicon Entry Generation** setting, and activate **Generate Lexicon Entries**.
-5. Select **Lexicon language** from the list.
-6. Set the number of entries (lexicon units).
-7. *(Optional)* Add the default [Slot](../ai/nlu/slot-mapping/slot-mapping.md).
-8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agent understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
-9. Click **Create**.
+1. Klicken Sie im Menü auf der linken Seite der Cognigy.AI Benutzeroberfläche auf **Lexika > erstellen**.
+2. Klicken Sie auf **+ Neues Lexikon**.
+3. Geben Sie im Fenster **Neues Lexikon** den Namen an, der das allgemeine Hauptthema des Lexikons abdeckt, und fügen Sie eine relevante Beschreibung hinzu. Es hilft, ein genaueres Ergebnis zu erzielen. Um sicherzustellen, dass der generierte Inhalt den gewünschten Erwartungen entspricht, füllen Sie beide Felder aus. Wenn Sie sich ausschließlich auf den Titel verlassen, ohne das Beschreibungsfeld zu verwenden, werden nicht die beabsichtigten Ergebnisse erzielt.
+4. Gehen Sie zur Einstellung **Generierung von Lexikoneinträgen** und aktivieren Sie **Lexikoneinträge generieren**.
+5. Wählen Sie **Lexikonsprache** aus der Liste aus.
+6. Legen Sie die Anzahl der Einträge (Lexikoneinheiten) fest.
+7. *(Optional)* Fügen Sie den Standardwert [Slot](.. /ai/nlu/slot-mapping/slot-mapping.md).
+8. *(Optional)* Aktivieren Sie **Synonyme generieren**. Synonyme helfen virtuellen Agenten, verschiedene Variationen desselben Konzepts zu verstehen und zu erkennen. Für jede Schlüsselphrase werden bis zu fünf Synonyme generiert.
+9. Klicken Sie auf **Erstellen**.
 
-When Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
+Wenn der Lexikon-Editor mit neuen Schlüsselwörtern geöffnet wird, können Sie sie manuell bearbeiten, löschen oder neue hinzufügen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/generating-lexicons.png" width="90%" />
 </figure>
 
-## Generate Flows
+## Flows generieren
 
-Note that the generation of Flows for primary NLU languages besides German and English is not fully supported.
+Beachten Sie, dass die Generierung von Flows für primäre NLU-Sprachen neben Deutsch und Englisch nicht vollständig unterstützt wird.
 
-To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, do the following:
+Gehen Sie folgendermaßen vor, um die generative KI-Technologie zum Erstellen eines neuen Flows mit vorkonfigurierten Knoten basierend auf Ihrem Szenario zu verwenden:
 
-1. In the left-side menu of the Cognigy.AI interface, click **Build > Flows**.
-2. Click **+ New Flow**.
-3. In the **New Flow** window, go to the **Flow Generation** section and select one of the options:
-    - **None** — the Generative AI will not be applied to this Flow. This setting is activated by default.
-    - **Name and Description** — the Generative AI will use the Name and Description fields for generating Flow.
-    - **Name and Transcript** — the Generative AI will use the Name and Transcript fields for generating Flow. For this setting, you need to create a scenario and put it in the Transcript field. Use the Transcript field template as an example for your scenario.
-4. Generate the Flow by clicking **Create**.
+1. Klicken Sie im Menü auf der linken Seite der Cognigy.AI auf **Build > Flows**.
+2. Klicken Sie auf **+ Neuer Flow**.
+3. Wechseln Sie im Fenster **Neuer Flow** zum Abschnitt **Flow-Generierung** und wählen Sie eine der Optionen aus:
+    - **Keine** — Die generative KI wird nicht auf diesen Flow angewendet. Diese Einstellung ist standardmäßig aktiviert.
+    - **Name und Beschreibung** – Die generative KI verwendet die Felder "Name" und "Beschreibung" zum Generieren von Flow.
+    - **Name und Transkript** – die generative KI verwendet die Felder "Name" und "Transkript" zum Generieren von Flow. Für diese Einstellung müssen Sie ein Szenario erstellen und es in das Feld Transkript eingeben. Verwenden Sie die Feldvorlage Transkript als Beispiel für Ihr Szenario.
+4. Generieren Sie den Flow, indem Sie auf **Erstellen** klicken.
 
-In the existing Flow, you can edit Nodes created based on your scenario. Generate new Intent sentences or responses for a chatbot.
+Im vorhandenen Flow können Sie Knoten bearbeiten, die basierend auf Ihrem Szenario erstellt wurden. Generieren Sie neue Intent-Sätze oder Antworten für einen Chatbot.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/generating-flows.png" width="90%" />
 </figure>
 
-## Generate Intent sentences
+## Intent-Sätze generieren
 
-Note that the generation of Intent sentences for primary NLU languages besides German and English is not fully supported.
+Beachten Sie, dass die Generierung von Intent-Sätzen für primäre NLU-Sprachen außer Deutsch und Englisch nicht vollständig unterstützt wird.
 
-To use Generative AI technology for creating Intent example sentences, do the following:
+Gehen Sie folgendermaßen vor, um die generative KI-Technologie zum Erstellen von Intent-Beispielsätzen zu verwenden:
 
-1. Open the existing Flow.
-2. In the upper-right corner of the **Flow Editor** page, select **NLU**.
-3. On the **Intent** tab, click **Create Intent**.
-4. Specify a unique name for the Intent and add a relevant description. It helps generate a more accurate result. To ensure that the generated content meets the desired expectations, fill in both fields. Relying solely on the title without using the description field will not produce the intended results.
-5. Activate the **Generate Example Sentences** setting.
-6. Set the number of generative sentences.
-7. Generate new sentences by clicking **Create**.
-8. Click **Build Model**, to learn the existing sentence.
+1. Öffnen Sie den vorhandenen Flow.
+2. Wählen Sie in der oberen rechten Ecke der Seite **Flow-Editor** die Option **NLU** aus.
+3. Klicken Sie auf der Registerkarte **Absicht** auf **Absicht erstellen**.
+4. Geben Sie einen eindeutigen Namen für die Absicht an und fügen Sie eine relevante Beschreibung hinzu. Es hilft, ein genaueres Ergebnis zu erzielen. Um sicherzustellen, dass der generierte Inhalt den gewünschten Erwartungen entspricht, füllen Sie beide Felder aus. Wenn Sie sich ausschließlich auf den Titel verlassen, ohne das Beschreibungsfeld zu verwenden, werden nicht die beabsichtigten Ergebnisse erzielt.
+5. Aktivieren Sie die Einstellung **Beispielsätze generieren**.
+6. Legen Sie die Anzahl der generativen Sätze fest.
+7. Generieren Sie neue Sätze, indem Sie auf **Erstellen** klicken.
+8. Klicken Sie auf **Modell erstellen**, um den vorhandenen Satz zu lernen.
 
-If you want to add more examples automatically, use the **Generate Sentences** button. New sentences will be marked in light blue. The system generates specific numbers of sentences. Save changes and build your model again.
+Wenn Sie weitere Beispiele automatisch hinzufügen möchten, verwenden Sie die Schaltfläche **Sätze generieren**. Neue Sätze werden hellblau markiert. Das System erzeugt eine bestimmte Anzahl von Sätzen. Speichern Sie die Änderungen, und erstellen Sie das Modell erneut.
 
-You can also use Generative AI in the Node configuration.
+Sie können Generative AI auch in der Node-Konfiguration verwenden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/generating-intent-sentences.png" width="90%" />
 </figure>
 
-## Rephrase bot outputs
+## Bot-Ausgaben umformulieren
 
-Generative AI is supported by the [Say](../ai/flow-nodes/message/say.md), [Question](../ai/flow-nodes/message/question.md), and [Optional Question](../ai/flow-nodes/message/optional-question.md) Nodes.
+Generative KI wird durch die [Say](.. /ai/flow-nodes/message/say.md), [Frage](.. /ai/flow-nodes/message/question.md) und [Optionale Frage](.. /ai/flow-nodes/message/optional-question.md) Knoten.
 
-To use AI-enhanced bot output rephrasing, do the following:
+Gehen Sie folgendermaßen vor, um die KI-gestützte Umformulierung der Botausgabe zu verwenden:
 
-1. Open the existing Flow.
-2. Add one of the Nodes: Say, Question, or Optional Question.
-3. Go to the AI-enhanced output section.
-4. In the Rephrase Output setting, select one of the options:
-    - **None** — the Generative AI will not be applied to this Node. This setting is activated by default.
-    - **Based on Custom Input** — specify custom values for the Input. Use the **Custom Inputs** field that allows the bot developer to input information for contextualizing and rephrasing the output.
-    - **Based on previous user inputs** — set the last `x` user Inputs considered.
-5. Set the score in the Temperature setting. The temperature range determines the extent of variation in Generative AI's response.
-6. Click **Save Node**.
+1. Öffnen Sie den vorhandenen Flow.
+2. Fügen Sie einen der Knoten hinzu: Say, Question oder Optionale Frage.
+3. Gehen Sie zum Abschnitt KI-gestützte Ausgabe.
+4. Wählen Sie in der Einstellung Ausgabe umformulieren eine der folgenden Optionen aus:
+    - **Keine** — die generative KI wird nicht auf diesen Knoten angewendet. Diese Einstellung ist standardmäßig aktiviert.
+    - **Basierend auf benutzerdefinierter Eingabe** – geben Sie benutzerdefinierte Werte für die Eingabe an. Verwenden Sie das Feld **Benutzerdefinierte Eingaben**, mit dem der Bot-Entwickler Informationen zum Kontextualisieren und Umformulieren der Ausgabe eingeben kann.
+    - **Basierend auf vorherigen Benutzereingaben** — setzt die zuletzt berücksichtigten 'x' Benutzereingaben.
+5. Stellen Sie die Punktzahl in der Einstellung Temperatur ein. Der Temperaturbereich bestimmt das Ausmaß der Variation in der Reaktion der generativen KI.
+6. Klicken Sie auf **Knoten speichern**.
 
-Check in the interactive panel if your Flow works as expected.
+Überprüfen Sie im interaktiven Bedienfeld, ob Ihr Flow wie erwartet funktioniert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
 </figure>
 
-## Complete texts
+## Vollständige Texte
 
-You can use the following Nodes for completing tasks.
+Sie können die folgenden Knoten zum Ausführen von Aufgaben verwenden.
 
-- [LLM Prompts](#llm-prompt)
-- [GPT Conversations](#gpt-conversation)
+- [LLM-Eingabeaufforderung](#llm-Eingabeaufforderung)
+- [GPT-Konversationen](#gpt-Konversation)
 
-These Nodes support only text output in the [AI channel](flow-nodes/message/say.md#description).
+Diese Nodes unterstützen nur die Textausgabe im [AI-Kanal](flow-nodes/message/say.md#description).
 
-### LLM Prompt
+### LLM-Eingabeaufforderung
 
-The [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
+Die Funktion [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) ermöglicht die Erstellung relevanter Inhalte mithilfe von generativer KI. Um diese Funktion zu verwenden, stellen Sie einfach eine Texteingabeaufforderung bereit, die die KI beim Fortsetzen des generierten Textes anleitet.
 
-### GPT Conversation 
+### GPT-Konversation 
 
-!!! warning
-    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+!!! Warnung
+    Dieser Node ist Teil der Forschungsbemühungen von Cognigy im Bereich der großen Sprachmodelle und dient ausschließlich als Vorschaufunktion. Der GPT-Konversationsknoten ist nicht für die Verwendung in der Produktion vorgesehen.
 
-The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) feature enables the creation of relevant content using Generative AI based on your scenario. By default, this node has already pre-filled fields with a scenario.
+Die Funktion [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) ermöglicht die Erstellung relevanter Inhalte mithilfe von generativer KI basierend auf Ihrem Szenario. Standardmäßig verfügt dieser Knoten bereits über vorausgefüllte Felder mit einem Szenario.
 
+## Häufig gestellte Fragen
 
-## FAQ
+**F1:** Kann ich mein kostenloses OpenAI-Konto für die generative KI-Funktion in Cognigy.AI verwenden?
 
-**Q1:** Can I use my OpenAI free account for the Generative AI feature in Cognigy.AI?
+**A1:** Ein kostenpflichtiges Konto ist erforderlich, um einen API-Schlüssel zu erhalten, der für die Verwendung von Generative AI erforderlich ist. Ein kostenloses Konto stellt diesen Schlüssel nicht zur Verfügung.
 
-**A1:** A paid account is required to get an API Key, which is necessary for using Generative AI. A free account does not provide this key.
+**F2**: Warum funktioniert die generative KI nicht mit AudioCodes-Knoten?
 
-**Q2**: Why doesn't Generative AI work with AudioCodes Nodes?
+**A2:** Die generative KI-Ausgabe unterstützt nur Textnachrichten im [KI-Kanal](#complete-Texte).
 
-**A2:** Generative AI output supports only text messages in the [AI channel](#complete-texts).
+## Mehr Informationen
 
-## More Information
-
-- [Flows](../ai/resources/build/flows.md)
-- [Flow Nodes](../ai/flow-nodes/flow-nodes-overview.md)
-- [Intents](../ai/nlu/nlu-overview/overview.md#intents)
-- [Lexicons](../ai/resources/build/lexicons.md)
-- [LLM](../ai/resources/build/llm.md)
-- [Cognigy.AI Settings](../ai/resources/manage/settings.md)
+- [Flüsse](.. /ai/resources/build/flows.md)
+- [Flow-Knoten](.. /ai/flow-nodes/flow-nodes-overview.md)
+- [Absichten](.. /ai/nlu/nlu-overview/overview.md#intents)
+- [Lexika](.. /ai/resources/build/lexicons.md)
+- [LLM](.. /ai/resources/build/llm.md)
+- [Cognigy.AI Einstellungen](.. /ai/resources/manage/settings.md)

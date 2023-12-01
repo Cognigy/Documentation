@@ -1,10 +1,10 @@
 ---
- title: "Overview" 
- slug: "overview" 
- hidden: false
+ Titel: "Übersicht" 
+ Schnecke: "Übersicht" 
+ ausgeblendet: false
 ---
-# Overview
+# Übersicht
 
-This document is the official installation and operations document for Cognigy.AI. It is meant to be used by system administrators and operations engineers who are responsible for setting up Cognigy.AI installations and who maintain the operational stability of Cognigy's software product. It also provides documentation on how to monitor an installation, detect anomalies and ensure that the product delivers high performance and stability even under high load scenarios.
+Dieses Dokument ist das offizielle Installations- und Betriebsdokument für Cognigy.AI. Es ist für Systemadministratoren und Betriebsingenieure gedacht, die für die Einrichtung Cognigy.AI Installationen verantwortlich sind und die Betriebsstabilität des Softwareprodukts von Cognigy aufrechterhalten. Es bietet auch eine Dokumentation zur Überwachung einer Installation, zur Erkennung von Anomalien und zur Sicherstellung, dass das Produkt auch bei hoher Last eine hohe Leistung und Stabilität bietet.
 
-Cognigy.AI is a highly scalable software product based on a modern microservices-based software architecture which runs on top of Kubernetes clusters. Before proceeding with the installation, please, make sure **you are confident with standard Kubernetes administration and operation tasks**. You can get more information in [Kubernetes official documentation](https://kubernetes.io/).
+Cognigy.AI ist ein hochskalierbares Softwareprodukt, das auf einer modernen Microservices-basierten Softwarearchitektur basiert, die auf Kubernetes-Clustern läuft. Bevor Sie mit der Installation fortfahren, stellen Sie bitte sicher, dass Sie mit den standardmäßigen Kubernetes-Verwaltungs- und Betriebsaufgaben vertraut sind. Weitere Informationen finden Sie in der [offiziellen Kubernetes-Dokumentation](https://kubernetes.io/).

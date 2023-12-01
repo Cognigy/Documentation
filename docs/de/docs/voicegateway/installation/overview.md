@@ -1,11 +1,11 @@
 ---
- title: "Overview" 
- slug: "overview" 
- hidden: false
+ Titel: "Übersicht" 
+ Schnecke: "Übersicht" 
+ ausgeblendet: false
 ---
 
-# Overview
+# Übersicht
 
-This document is the official installation and operations document for Voice Gateway. The audience of this document is system administrators and operation engineers responsible for setting up Voice Gateway installations and maintaining the operational stability of our software product. It also provides documentation on monitoring an installation, detecting anomalies, and ensures that the product delivers high performance and stability even under high-load scenarios.
+Dieses Dokument ist das offizielle Installations- und Betriebsdokument für Voice Gateway. Die Zielgruppe dieses Dokuments sind Systemadministratoren und Betriebsingenieure, die für die Einrichtung von Voice Gateway-Installationen und die Aufrechterhaltung der Betriebsstabilität unseres Softwareprodukts verantwortlich sind. Es bietet auch eine Dokumentation zur Überwachung einer Installation, zur Erkennung von Anomalien und stellt sicher, dass das Produkt auch bei hoher Last eine hohe Leistung und Stabilität bietet.
 
-Voice Gateway is a highly scalable software product based on a modern microservices-based software architecture that runs on top of Kubernetes clusters. Before proceeding with the installation, ensure you are confident with standard Kubernetes administration and operation tasks. You can get more information in [Kubernetes official documentation](https://kubernetes.io/).
+Voice Gateway ist ein hochskalierbares Softwareprodukt, das auf einer modernen, auf Microservices basierenden Softwarearchitektur basiert, die auf Kubernetes-Clustern läuft. Bevor Sie mit der Installation fortfahren, stellen Sie sicher, dass Sie mit den standardmäßigen Kubernetes-Verwaltungs- und Betriebsaufgaben vertraut sind. Weitere Informationen finden Sie in der [offiziellen Kubernetes-Dokumentation](https://kubernetes.io/).

@@ -1,128 +1,125 @@
 ---
- title: "SMTP" 
- slug: "smtp" 
- hidden: false 
+ Titel: "SMTP" 
+ Schnecke: "SMTP" 
+ ausgeblendet: false 
 ---
 # SMTP
 
-SMTP needs to be configured for functionalities such as Agent notifications for new conversations, password resets, to verify new Agent accounts, etc.
+SMTP muss für Funktionen wie Agentenbenachrichtigungen für neue Konversationen, Zurücksetzen von Kennwörtern, zur Überprüfung neuer Agentenkonten usw. konfiguriert werden.
 
-## Values
+## Werte
 
-| Name                                  | Type                                                          | Default Value |
+| Bezeichnung: | Typ | Standardwert |
 |---------------------------------------|---------------------------------------------------------------|---------------|
-| `configmap.SMTP_ADDRESS`              | Set your SMTP address.                                        | `""`          |
-| `configmap.SMTP_AUTHENTICATION`       | Allowed values: `plain`,`login`,`cram_md5`                    | `"plain"`     |
-| `configmap.SMTP_ENABLE_STARTTLS_AUTO` | Defaults to true.                                             | `"true"`      |
-| `configmap.SMTP_OPENSSL_VERIFY_MODE`  | Can be: `none`, `peer`, `client_once`, `fail_if_no_peer_cert` | `"none"`      |
-| `configmap.SMTP_PASSWORD`             | SMTP Password, ignored when the secret is defined.            | `""`          |
-| `configmap.SMTP_PORT`                 | SMTP Port                                                     | `"587"`       |
-| `configmap.SMTP_USERNAME`             | SMTP Username                                                 | `""`          |
-| `configmap.MAILER_SENDER_EMAIL`       | The email from which all outgoing emails are sent.            | `""`          |
+| 'configmap. SMTP_ADDRESS' | Legen Sie Ihre SMTP-Adresse fest.                                        | '""'          |
+| 'configmap. SMTP_AUTHENTICATION' | Erlaubte Werte: 'plain','login','cram_md5' | '"plain"' |
+| 'configmap. SMTP_ENABLE_STARTTLS_AUTO' | Der Standardwert ist true.                                             | '"wahr"' |
+| 'configmap. SMTP_OPENSSL_VERIFY_MODE' | Kann sein: 'none', 'peer', 'client_once', 'fail_if_no_peer_cert' | '"keine"' |
+| 'configmap. SMTP_PASSWORD' | SMTP-Kennwort, das ignoriert wird, wenn der geheime Schlüssel definiert wird.            | '""'          |
+| 'configmap. SMTP_PORT' | SMTP-Anschluss | '"587"' |
+| 'configmap. SMTP_USERNAME' | SMTP-Benutzername | '""'          |
+| 'configmap. MAILER_SENDER_EMAIL' | Die E-Mail-Adresse, von der aus alle ausgehenden E-Mails gesendet werden.            | '""'          |
 
-### Creating A Secret For The SMTP Password
+### Erstellen eines Geheimnisses für das SMTP-Passwort
 
-Before installing Live Agent with Helm, create a secret on the Kubernetes cluster namespace where Live Agent is installed. Take note of the SMTP secret name and key, and set the following values:
+Erstellen Sie vor der Installation von Live Agent mit Helm einen geheimen Schlüssel für den Kubernetes-Cluster-Namespace, in dem Live Agent installiert ist. Notieren Sie sich den Namen und den Schlüssel des SMTP-Geheimnisses, und legen Sie die folgenden Werte fest:
 
-| Name                     | Type             | Default Value |
+| Bezeichnung: | Typ | Standardwert |
 |--------------------------|------------------|---------------|
-| `smtp.secret`            | SMTP Secret Name | `""`          |
-| `smtp.secretPasswordKey` | SMTP Secret Key  | `""`          |
+| 'smtp.secret' | Name des SMTP-Geheimnisses | '""'          |
+| 'smtp.secretPasswordKey' | Geheimer SMTP-Schlüssel | '""'          |
 
-## Configuring Different SMTP Servers
+## Verschiedene SMTP-Server konfigurieren
 
-Here is a sample of configurations for getting email functionality working for the Live Agent application.  Remember that the SMTP password is stored in the secret, as mentioned above.
+Im Folgenden finden Sie ein Beispiel für Konfigurationen, mit denen Sie die E-Mail-Funktionalität für die Live Agent-Anwendung zum Laufen bringen können.  Denken Sie daran, dass das SMTP-Kennwort, wie oben erwähnt, im geheimen Schlüssel gespeichert wird.
 
-For the following sender value, you could use either `email@yourdomain.com` or `BrandName <email@yourdomain.com>`
+Für den folgenden Absenderwert können Sie entweder 'email@yourdomain.com' oder 'BrandName <email@yourdomain.com>' verwenden
 
-| Name                          | Type   | Value | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------|--------|-------| 
-| configmap.MAILER_SENDER_EMAIL | string | `""`  |
+| configmap. MAILER_SENDER_EMAIL | Zeichenfolge | '""'  |
 
-Set the following variables based on your SMTP server configuration.
+Legen Sie die folgenden Variablen basierend auf Ihrer SMTP-Serverkonfiguration fest.
 
-| Name                    | Type   | Value | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------|--------|-------| 
-| configmap.SMTP_ADDRESS  | string | `""`  |
-| configmap.SMTP_USERNAME | string | `""`  |
-| Password secret         | string | `""`  |
+| configmap. SMTP_ADDRESS | Zeichenfolge | '""'  |
+| configmap. SMTP_USERNAME | Zeichenfolge | '""'  |
+| Passwort-Geheimnis | Zeichenfolge | '""'  |
 
-## No Authentication
+## Keine Authentifizierung
 
-If your server does not need authentication, comment, or don't provide these values: SMTP_AUTHENTICATION.
-SMTP_USERNAME, SMTP_PASSWORD in the `values.yaml` file.
+Wenn Ihr Server keine Authentifizierung benötigt, kommentieren Sie oder geben Sie diese Werte nicht an: SMTP_AUTHENTICATION.
+SMTP_USERNAME, SMTP_PASSWORD in der Datei 'values.yaml'.
 
-| Name                                | Type    | Value                     | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------------|---------|---------------------------| 
-| configmap.MAILER_SENDER_EMAIL       | string  | `"Your SMTP Username"`    |
-| configmap.SMTP_ADDRESS              | string  | `"smtp-mail.outlook.com"` |
-| configmap.SMTP_ENABLE_STARTTLS_AUTO | bool    | `true`                    |
-| configmap.SMTP_PORT                 | string  | `"587"`                   |
+| configmap. MAILER_SENDER_EMAIL | Zeichenfolge | '"Ihr SMTP-Benutzername"' |
+| configmap. SMTP_ADDRESS | Zeichenfolge | '"smtp-mail.outlook.com"' |
+| configmap. SMTP_ENABLE_STARTTLS_AUTO | bool | 'wahr' |
+| configmap. SMTP_PORT | Zeichenfolge | '"587"' |
 
 ## Amazon SES
 
-| Name                                | Type   | Value                                 | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------------|--------|---------------------------------------| 
-| configmap.SMTP_ADDRESS              | string | `"email-smtp.<region>.amazonaws.com"` |
-| configmap.SMTP_AUTHENTICATION       | string | `"plain"`                             |
-| configmap.SMTP_ENABLE_STARTTLS_AUTO | bool   | `true`                                |
-| configmap.SMTP_USERNAME             | string | `"<Your SMTP Username>"`              |
-| Secret Password                     | string | `"<Your SMTP Password>"`              |
+| configmap. SMTP_ADDRESS | Zeichenfolge | '"email-smtp. <region>.amazonaws.com"' |
+| configmap. SMTP_AUTHENTICATION | Zeichenfolge | '"plain"' |
+| configmap. SMTP_ENABLE_STARTTLS_AUTO | bool | 'wahr' |
+| configmap. SMTP_USERNAME | Zeichenfolge | '"<Your smtp="" username="">"' |
+| Geheimes Passwort | Zeichenfolge | '"<Your smtp="" password="">"' |
 
+## Ausblick
 
-## Outlook
+Absender und Benutzername müssen mit denen in Outlook übereinstimmen.
 
-The sender and username must be the same as in Outlook.
-
-| Name                                | Type   | Value                     | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------------|--------|---------------------------| 
-| configmap.MAILER_SENDER_EMAIL       | string | `"Your SMTP Username"`    |
-| configmap.SMTP_ADDRESS              | string | `"smtp-mail.outlook.com"` |
-| configmap.SMTP_AUTHENTICATION       | string | `"login"`                 |
-| configmap.SMTP_ENABLE_STARTTLS_AUTO | bool   | `true`                    |
-| configmap.SMTP_USERNAME             | string | `"<Your SMTP username>"`  |
-| Secret Password                     | string | `"<Your SMTP Password>"`  |
-| configmap.SMTP_PORT                 | string | `"587"`                   |
-
+| configmap. MAILER_SENDER_EMAIL | Zeichenfolge | '"Ihr SMTP-Benutzername"' |
+| configmap. SMTP_ADDRESS | Zeichenfolge | '"smtp-mail.outlook.com"' |
+| configmap. SMTP_AUTHENTICATION | Zeichenfolge | '"login"' |
+| configmap. SMTP_ENABLE_STARTTLS_AUTO | bool | 'wahr' |
+| configmap. SMTP_USERNAME | Zeichenfolge | '"<Your smtp="" username="">"' |
+| Geheimes Passwort | Zeichenfolge | '"<Your smtp="" password="">"' |
+| configmap. SMTP_PORT | Zeichenfolge | '"587"' |
 
 ## SendGrid
 
-| Name                                | Type   | Value                       | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------------|--------|-----------------------------| 
-| configmap.SMTP_ADDRESS              | string | `"smtp.sendgrid.net"`       |
-| configmap.SMTP_AUTHENTICATION       | string | `"plain"`                   |
-| configmap.SMTP_DOMAIN               | string | `"<Your Verified Domain>"`  |
-| configmap.SMTP_ENABLE_STARTTLS_AUTO | bool   | `true`                      |
-| configmap.SMTP_PORT                 | string | `"587"`                     |
-| configmap.SMTP_USERNAME             | string | `"apikey"`                  |
-| Secret Password                     | string | `"<your Sendgrid API key>"` |
-
+| configmap. SMTP_ADDRESS | Zeichenfolge | '"smtp.sendgrid.net"' |
+| configmap. SMTP_AUTHENTICATION | Zeichenfolge | '"plain"' |
+| configmap. SMTP_DOMAIN | Zeichenfolge | '"<Your verified="" domain="">"' |
+| configmap. SMTP_ENABLE_STARTTLS_AUTO | bool | 'wahr' |
+| configmap. SMTP_PORT | Zeichenfolge | '"587"' |
+| configmap. SMTP_USERNAME | Zeichenfolge | '"apikey"' |
+| Geheimes Passwort | Zeichenfolge | '"<your sendgrid="" api="" key="">"' |
 
 ## MailGun
 
-| Name                                | Type    | Value                                                 | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------------|---------|-------------------------------------------------------| 
-| configmap.SMTP_ADDRESS              | string  | `"smtp.mailgun.org"`                                  |
-| configmap.SMTP_AUTHENTICATION       | string  | `"plain"`                                             |
-| configmap.SMTP_DOMAIN               | string  | `"<Your Domain, this has to be verified in Mailgun>"` |
-| configmap.SMTP_ENABLE_STARTTLS_AUTO | bool    | `true`                                                |
-| configmap.SMTP_PORT                 | string  | `"587"`                                               |
-| configmap.SMTP_USERNAME             | string  | `"<Your SMTP Username, view under Domains tab>"`      |
-| Secret Password                     | string  | `"<Your SMTP Password, view under Domains tab>"`      |
-
+| configmap. SMTP_ADDRESS | Zeichenfolge | '"smtp.mailgun.org"' |
+| configmap. SMTP_AUTHENTICATION | Zeichenfolge | '"plain"' |
+| configmap. SMTP_DOMAIN | Zeichenfolge | '"<Your domain,="" this="" has="" to="" be="" verified="" in="" mailgun="">"' |
+| configmap. SMTP_ENABLE_STARTTLS_AUTO | bool | 'wahr' |
+| configmap. SMTP_PORT | Zeichenfolge | '"587"' |
+| configmap. SMTP_USERNAME | Zeichenfolge | '"<Your smtp="" username,="" view="" under="" domains="" tab="">"' |
+| Geheimes Passwort | Zeichenfolge | '"<Your smtp="" password,="" view="" under="" domains="" tab="">"' |
 
 ## Mandrill
-If you would like to use Mailchimp to send your emails, use the following environment variables:
+Wenn Sie Mailchimp zum Versenden Ihrer E-Mails verwenden möchten, verwenden Sie die folgenden Umgebungsvariablen:
 
->Note: Mandrill is the transactional email service for Mailchimp. You need to enable transactional email and log in to mandrillapp.com.
+>Hinweis: Mandrill ist der Transaktions-E-Mail-Dienst für Mailchimp. Sie müssen Transaktions-E-Mail aktivieren und sich bei mandrillapp.com anmelden.
 
-| Name                                | Type   | Value                                                                        | 
+| Bezeichnung: | Typ | Wert | 
 |-------------------------------------|--------|------------------------------------------------------------------------------| 
-| configmap.SMTP_ADDRESS              | string | `"smtp.mandrillapp.com"`                                                     |
-| configmap.SMTP_AUTHENTICATION       | string | `"plain"`                                                                    |
-| configmap.SMTP_DOMAIN               | string | `"<Your Verified Domain in Mailchimp>"`                                      |
-| configmap.SMTP_ENABLE_STARTTLS_AUTO | bool   | `true`                                                                       |
-| configmap.SMTP_PORT                 | string | `"587"`                                                                      |
-| configmap.SMTP_USERNAME             | string | `"<Your SMTP Username, displayed under Settings -> SMTP & API info>"`        |
-| Secret Password                     | string | `"<Any Valid API key, create an API key under Settings -> SMTP & API Info>"` |
+| configmap. SMTP_ADDRESS | Zeichenfolge | '"smtp.mandrillapp.com"' |
+| configmap. SMTP_AUTHENTICATION | Zeichenfolge | '"plain"' |
+| configmap. SMTP_DOMAIN | Zeichenfolge | '"<Your verified="" domain="" in="" mailchimp="">"' |
+| configmap. SMTP_ENABLE_STARTTLS_AUTO | bool | 'wahr' |
+| configmap. SMTP_PORT | Zeichenfolge | '"587"' |
+| configmap. SMTP_USERNAME | Zeichenfolge | '"<Your smtp="" username,="" displayed="" under="" settings="" -=""> SMTP & API info>"' |
+| Geheimes Passwort | Zeichenfolge | '"<Any valid="" api="" key,="" create="" an="" api="" key="" under="" settings="" -=""> SMTP & API Info>"' |
 
+</Any></Your></Your></Your></Your></Your></your></Your></Your></Your></Your></Your></region></email@yourdomain.com>

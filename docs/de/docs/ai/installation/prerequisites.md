@@ -1,70 +1,68 @@
 ---
-title: "Prerequisites"
-slug: "prerequisites"
-hidden: false
+Titel: "Voraussetzungen"
+Slug: "Voraussetzungen"
+ausgeblendet: false
 ---
-# Prerequisites
+# Voraussetzungen
 
-### Kubernetes Cluster
-Cognigy.AI installation requires a fully functional Kubernetes cluster. We suggest that you use a managed Kubernetes cluster provided by common public cloud operators (Amazon EKS, Microsoft AKS, Google GKE). Cognigy.AI is fully compatible with following managed Kubernetes services:
+### Kubernetes-Cluster
+Cognigy.AI Installation erfordert einen voll funktionsfähigen Kubernetes-Cluster. Wir empfehlen Ihnen, einen verwalteten Kubernetes-Cluster zu verwenden, der von gängigen Public-Cloud-Betreibern (Amazon EKS, Microsoft AKS, Google GKE) bereitgestellt wird. Cognigy.AI ist vollständig kompatibel mit den folgenden verwalteten Kubernetes-Diensten:
 
 - AWS EKS
 - Azure AKS
 
-Running Cognigy.AI on top of on-premise Kubernetes clusters will require additional configuration effort from your side. Therefore, we recommend to use public clouds instead. Be aware that Cognigy will not provide support for configuring and provisioning Kubernetes clusters.
+Das Ausführen von Cognigy.AI auf lokalen Kubernetes-Clustern erfordert zusätzlichen Konfigurationsaufwand von Ihrer Seite. Daher empfehlen wir, stattdessen Public Clouds zu nutzen. Beachten Sie, dass Cognigy keine Unterstützung für die Konfiguration und Bereitstellung von Kubernetes-Clustern bietet.
 
-!!! warning "Kubernetes versions"
-    Kubernetes versions compatible with Cognigy.AI are specified in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
+!!! Warnung "Kubernetes-Versionen"
+    Kubernetes-Versionen, die mit Cognigy.AI kompatibel sind, sind in [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart) angegeben.
 
-### Hardware Requirements
-For a Cognigy.AI installation with English as the default NLU language, we recommend a Kubernetes cluster with the following specification for AWS EKS (or equivalents on other cloud providers):
+### Hardware-Anforderungen
+Für eine Cognigy.AI Installation mit Englisch als NLU-Standardsprache empfehlen wir einen Kubernetes-Cluster mit der folgenden Spezifikation für AWS EKS (oder Äquivalente bei anderen Cloud-Anbietern):
 
-- At least 6 x `c5.2xlarge` (AWS)  or 6 x `Standard_F8s_v2` (Azure) worker nodes or equivalent VMs with 8 CPU/16 GB RAM and `x86_64` CPU architecture on other cloud providers.
-- 100 GB root SSD storage per worker node.
-- Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup.
-- 250 GB of block SSD storage for application databases (250 GB x 3 for 3-replica MongoDB setup).
-- 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets.
+- Mindestens 6 x "c5.2xlarge" (AWS) oder 6 x "Standard_F8s_v2" (Azure) Workerknoten oder gleichwertige VMs mit 8 CPU/16 GB RAM und "x86_64"-CPU-Architektur bei anderen Cloudanbietern.
+- 100 GB Root-SSD-Speicher pro Worker-Knoten.
+- Kubernetes-Workerknoten sind für die Einrichtung von Hochverfügbarkeit auf 3 Availability Zones (AZ) verteilt.
+- 250 GB SSD-Blockspeicher für Anwendungsdatenbanken (250 GB x 3 für MongoDB-Setup mit 3 Replikaten).
+- 10 GB Dateisystemspeicher (EFS oder andere NFS-kompatible Entsprechungen) für Anwendungsressourcen.
 
-!!! warning "General-purpose machines"
-    Choosing general-purpose machines instead of compute-optimized machines will have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
+!!! Warnung "Allzweckmaschinen"
+    Die Wahl von Allzweckmaschinen anstelle von rechenoptimierten Maschinen wirkt sich negativ auf die Leistung unserer Software aus. Wir empfehlen Ihnen, rechenoptimierte Maschinen mit hohen CPU-Taktraten und reservierten CPU-Budgets zu wählen. Dies ist besonders wichtig, wenn Sie mehrere Dienste zum Verstehen natürlicher Sprache installieren möchten.
 
+### Kubectl-Binärdatei 
+Um Cognigy.AI in einem Kubernetes-Cluster bereitzustellen, muss die Binärdatei [kubectl](https://kubernetes.io/docs/reference/kubectl/) auf einem Linux-Computer installiert sein, der für Cognigy.AI Installation auf den Kubernetes-Cluster zugreifen kann. Weitere Informationen finden Sie in der offiziellen Kubernetes-Dokumentation. Beachten Sie, dass die kubectl-Version mit der Version Ihres Kubernetes-Clusters übereinstimmen muss.
 
-### Kubectl binary 
-To deploy Cognigy.AI on a Kubernetes cluster you will need [kubectl](https://kubernetes.io/docs/reference/kubectl/) binary installed on a Linux machine which can access the Kubernetes cluster for Cognigy.AI installation. Refer to the official Kubernetes documentation for details. Note that the kubectl version must match the version of your Kubernetes cluster.
+### Helm-Paket-Manager
+Cognigy-Produkte werden mit dem [Helm](https://helm.sh/)-Paketmanager für Kubernetes verpackt. Machen Sie sich mit den grundlegenden Helm-Vorgängen vertraut, bevor Sie mit der Installation fortfahren.
 
-### Helm Package Manager
-Cognigy products are packaged with the [Helm](https://helm.sh/) package manager for Kubernetes. Get familiar with basic Helm operations before proceeding with installation.
+!!! Warnung "Kustomize deprecation"
+    [Kustomize] (https://kustomize.io/) Skripte für Cognigy.AI Installation sind **veraltet**. Wir empfehlen dringend, Helm Charts für alle Neuinstallationen zu verwenden. Sie können die beschriebene Installationsdokumentation für kustomize weiterhin [hier](https://docs.cognigy.com/downloads/cognigy-4-x.zip) herunterladen. Wir werden die Aktualisierung unserer **kustomize-Dateien Ende dieses Jahres (31. Dezember 2022)** einstellen.
 
-!!! warning "Kustomize deprecation"
-    [Kustomize](https://kustomize.io/) scripts for Cognigy.AI installation are **deprecated**. We strongly recommend to use Helm Charts for all new installations. You can still download the depecated installation documentation for kustomize [here](https://docs.cognigy.com/downloads/cognigy-4-x.zip). We will stop updating our **kustomize files end this year (31st December 2022)**.
+!!! Warnung "Helm-Versionen"
+    Informationen zu Helm-Versionen, die mit Cognigy.AI kompatibel sind, finden Sie unter [Cognigy.AI Helm-Karte](https://github.com/Cognigy/cognigy-ai-helm-chart).
 
-!!! warning "Helm versions"
-    For Helm versions compatible with Cognigy.AI refer to [Cognigy.AI Helm Chart](https://github.com/Cognigy/cognigy-ai-helm-chart).
+### Cognigy-Lizenz
+Cognigy.AI Produkt erfordert einen Lizenzschlüssel, den Sie nach Unterzeichnung eines Lizenzvertrags erhalten. Der Schlüssel ist für die Installation des Produkts erforderlich.
 
+### Anmeldeinformationen für die Container-Image-Registrierung:
+Cognigy.AI ist vollständig containerisiert und seine Binärdateien werden in Form von Docker-Images ausgeliefert, die in der Container-Registry von Cognigy gespeichert sind. Sie erhalten Anmeldeinformationen, die zum Authentifizieren und Abrufen dieser Images erforderlich sind.
 
-### Cognigy License
-Cognigy.AI product requires a license key which you will receive once a license agreement is signed. The key is necessary to install the product.
+### Domains / DNS-Namen
+Cognigy.AI werden mehrere Webdienste verfügbar gemacht, für die Sie DNS-Einträge in einer öffentlichen Domäne zuweisen müssen, die von Ihrer Organisation betrieben wird. Stellen Sie sicher, dass Sie Zugriff auf den DNS-Anbieter Ihrer Domain (z. B. Go-Daddy, United-Domains usw.) haben, um DNS-Einträge zu konfigurieren. Wenn Cognigy.AI nur über Ihr privates Netzwerk zugänglich sein muss, stellen Sie sicher, dass Sie DNS-Einträge in Ihrer privaten Domäne erstellen können.
 
-### Container Image registry credentials:
-Cognigy.AI is fully containerized and its binaries are shipped in a form of Docker images which are stored in Cognigy's container registry. You will receive credentials which are necessary to authenticate and pull these images.
+### TLS-Zertifikat(e)
+Um einen Webserver zu authentifizieren und den Webverkehr zwischen Clients und dem Webserver zu verschlüsseln, benötigen Sie ein SSL-Zertifikat für die Domäne, in der DNS-Einträge für Cognigy.AI erstellt werden. Wir empfehlen dringend ein Platzhalterzertifikat, da es den Installationsprozess vereinfacht. Wenn Sie aus irgendeinem Grund kein Platzhalterzertifikat verwenden können, stellen Sie sicher, dass Ihre eigenständigen Zertifikate alle DNS-Einträge für Cognigy.AI abdecken. Der Reverse-Proxy, mit dem wir Cognigy.AI ausgeliefert werden, kann nicht standardmäßig mehrere Zertifikate unterstützen, und Cognigy bietet keine Unterstützung für solche Konfigurationen.
 
-### Domains / DNS names
-Cognigy.AI exposes several web services for which you will need to assign DNS records in a public domain operated by your organization. Ensure that you have access to DNS provider of your domain (e.g. Go- Daddy, United-Domains etc.) to configure DNS records. If Cognigy.AI needs to be accessible only from your private network, ensure that you can create DNS records in your private domain.
+### Whitelisting von Domains
+Wenn Sie planen, eine Kubernetes-Umgebung in einem privaten Rechenzentrum einzurichten, oder wenn in Ihrem Public-Cloud-Setup einige Netzwerkeinschränkungen gelten, stellen Sie sicher, dass Kubernetes-Knoten die Container-Registry von Cognigy cognigy.azurecr.io:443 erreichen können. Andernfalls kann Cognigy.AI Setup die erforderlichen Docker-Images und -Assets während des Installationsvorgangs nicht herunterladen.
 
-### TLS certificate(s)
-To authenticate a web server and to encrypt web traffic between clients and the web server you need an SSL certificate for the domain in which DNS records for Cognigy.AI will be created. We highly suggest a wildcard certificate as it simplifies installation process. If you cannot use a wildcard certificate for some reason, make sure that your standalone certificate(s) cover(s) all DNS records for Cognigy.AI. The reverse-proxy we ship with Cognigy.AI cannot support multiple certificates out of the box and Cognigy will not provide support for such configurations.
+### Netzwerk-Firewalls / Websocket-Unterstützung
+Wenn Sie beabsichtigen, eine Kubernetes-Umgebung in einem privaten Rechenzentrum einzurichten, oder wenn in Ihrem Public Cloud-Setup einige Netzwerkeinschränkungen gelten, stellen Sie sicher, dass alle gültigen HTTP-Methoden (GET, POST, DELETE usw.) nicht durch Firewallregeln zwischen Kubernetes-Knoten und dem Internet in beide Richtungen blockiert werden. Cognigy.AI stützt sich stark auf das WebSocket-Protokoll und stellt daher sicher, dass alle Netzwerkgeräte (Web-Proxys, DPI-Engines, Firewalls) zwischen Kubernetes-Knoten und dem Internet WebSocket-Verbindungen unterstützen und so konfiguriert sind, dass sie solche Verbindungen ordnungsgemäß verarbeiten.
 
-### Whitelisting of Domains
-If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that Kubernetes nodes can reach `cognigy.azurecr.io:443` Cognigy’s container registry. Otherwise, Cognigy.AI setup will not be able to download necessary docker images and assets during installation process.
+!!! Warnung "Unterstützung der Netzwerkkonfiguration"
+    Bitte beachten Sie, dass wir keine Unterstützung bei der Einrichtung der oben genannten netzwerkbezogenen Voraussetzungen leisten können. Wenden Sie sich an einen Netzwerk-/Systemadministrator oder ein verwandtes Team Ihrer Organisation, um weitere Unterstützung zu erhalten.
 
-### Network Firewalls / Websocket Support
-If you plan to set up a Kubernetes environment in a private data center, or there are some networking restrictions applied in your public cloud setup, make sure that all valid HTTP methods (GET, POST, DELETE, etc.) are not blocked by any firewall rules between Kubernetes nodes and Internet in both directions. Cognigy.AI heavily relies on WebSocket protocol, thus ensure that any network appliances (web proxies, DPI engines, firewalls) between Kubernetes nodes and Internet support WebSocket connections and are configured to handle such connections properly.
+!!! Warnung "Eingeschränkte Windows-Unterstützung"
+    Während eine Installation auf Windows-Servern möglich ist, unterstützen wir weder Windows als Betriebssystem noch testen wir Cognigy.AI auf Windows-Servern. Wir können keinen Support für Cognigy.AI anbieten, wenn Sie Windows als Betriebssystem auswählen.
 
-!!! warning  "Network configuration support"
-    Note, that we will not be able to provide any support on setting up any aforementioned network-related prerequisites. Contact a network/system administrator or a related team of your organization for further support.
-
-!!! warning "Limited Windows support"
-    While an installation on Windows servers might be possible, we neither support Windows as an OS nor test Cognigy.AI on Windows servers. We will not be able to provide any support for Cognigy.AI if you pick Windows as an OS.
-
-!!! warning "Pre-installation Checklist"
-    Make sure, that all aforementioned prerequisites are met before you move installation process. Use [Pre-installation Checklist](pre-installation-checklist.md) for a cross-check. Note, that any installation process assisted by our engineers also implies that these prerequisites are fulfilled from your side before installation begins.
+!!! Warnung "Checkliste vor der Installation"
+    Stellen Sie sicher, dass alle oben genannten Voraussetzungen erfüllt sind, bevor Sie den Installationsprozess verschieben. Verwenden Sie [Checkliste vor der Installation](pre-installation-checklist.md) für eine Gegenprüfung. Beachten Sie, dass jeder Installationsprozess, der von unseren Ingenieuren unterstützt wird, auch bedeutet, dass diese Voraussetzungen von Ihrer Seite erfüllt sind, bevor die Installation beginnt.

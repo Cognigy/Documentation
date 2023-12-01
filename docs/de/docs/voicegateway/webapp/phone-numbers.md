@@ -1,17 +1,15 @@
 ---
-title: "Phone Numbers" 
-slug: "vg-webapp-phone-numbers" 
-hidden: false 
+Titel: "Telefonnummern" 
+Schnecke: "vg-webapp-telefonnummern" 
+ausgeblendet: false 
 ---
 
-# Phone Numbers
+# Telefonnummern
 
-_Phone Numbers_ are routed to your [Endpoints](../getting-started.md#create-a-voice-gateway-endpoint). Phone number helps route incoming voice calls to the Cognigy conversation flow. 
+_Phone Numbers_ werden an Ihre [Endpunkte](.. /getting-started.md#create-a-voice-gateway-endpoint). Die Telefonnummer hilft dabei, eingehende Sprachanrufe an den Cognigy-Konversationsfluss weiterzuleiten. 
 
-To create a phone number, select **Phone numbers** in the left-side menu, then click **Add phone number** or **+**. After that, add a carrier, account, and application, then save changes.
+Um eine Telefonnummer zu erstellen, wählen Sie im Menü auf der linken Seite **Telefonnummern** aus und klicken Sie dann auf **Telefonnummer hinzufügen** oder **+**. Fügen Sie anschließend einen Mobilfunkanbieter, ein Konto und eine Anwendung hinzu und speichern Sie die Änderungen.
 
-You can create more than one phone number.
+Sie können mehr als eine Telefonnummer erstellen.
 
-After creating a phone number, you can delete it or edit the Account and Application fields.
-
-<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-phone-numbers.png"  width="100%" />
+Nachdem Sie eine Telefonnummer erstellt haben, können Sie sie löschen oder die Felder "Konto" und "Anwendung" bearbeiten.<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-phone-numbers.png"  width="100%" />

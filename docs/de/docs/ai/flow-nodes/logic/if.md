@@ -1,35 +1,26 @@
 ---
- title: "If" 
- slug: "if" 
- hidden: false 
+ Titel: "Wenn" 
+ Schnecke: "wenn" 
+ ausgeblendet: false 
 ---
-# If
+# Wenn
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/if.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein **If Node** wird verwendet, um entweder einen oder einen anderen Teil eines [**Flow**]({{config.site_url}}ai/resources/build/flows/ basierend auf einer Bedingung auszuführen. Ein If-Knoten hat zwei untergeordnete Elemente: einen Dann-Knoten und einen Else-Knoten. Die Bedingung wird während der Ausführung des Flows ausgewertet. Wenn die Bedingung als "true" ausgewertet wird, nimmt der Flow den Pfad des **Then-Knotens**, wenn er als "false" ausgewertet wird, wird der Pfad des **Else-Knotens** ausgeführt. 
+## Anlegen einer Bedingung<div class="divider"></div>!!! Hinweis "Direct CognigyScript"
+    Im Bedingungsfeld sollte direct [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) verwendet werden. Das bedeutet, dass Sie '{{ " {{ }}" }}' nicht verwenden müssen. Daher ist "input.slots.city" alles, was benötigt wird. Dies wird als 'true' ausgewertet, wenn eine Eingabe-Keyphrase mit dem Tag 'city' gefunden wurde.
+## Regel-Editor
 
-An **If Node** is used to execute either one or another part of a [**Flow**]({{config.site_url}}ai/resources/build/flows/) , based on a condition. An If Node has two children: a **Then Node** and an **Else Node**. The condition is evaluated during the execution of the Flow. If the condition evaluates to `true`, the Flow will take the path of the **Then Node**, if it evaluates to `false` the path of the **Else Node** will be executed. 
-## Creating a Condition
-<div class="divider"></div>
-
-!!! note "Direct CognigyScript"
-    In the condition field, direct [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) should be used. This means that you don't have to use `{{ " {{ }}" }}`. Therefore, `input.slots.city` is all that is required. This will evaluate to `true`, if an Input Keyphrase with the tag `city` was found.
-## Rule Editor
-
-
-The Rule Editor allows you to quickly create simple conditions.
+Mit dem Regeleditor können Sie schnell einfache Bedingungen erstellen.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/db4d06f-if-conditions.jpg" width="100%" />
 </figure>
 
-## Advanced Editor
+## Erweiterter Editor
 
-
-The Advanced Editor allows you to write Conditions that go beyond one comparison.
-<figure>
+Mit dem erweiterten Editor können Sie Bedingungen schreiben, die über einen Vergleich hinausgehen.<figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/48b7a3f-if-conditions-rule.jpg" width="100%" />
 </figure>

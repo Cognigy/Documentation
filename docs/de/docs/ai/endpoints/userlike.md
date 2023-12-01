@@ -1,7 +1,7 @@
 ---
  title: "Userlike" 
- slug: "userlike" 
- hidden: false 
+ Slug: "benutzerfreundlich" 
+ ausgeblendet: false 
 ---
 # Userlike
 
@@ -9,52 +9,41 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/9f52df7-Userlike.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy Agent to your **Userlike Bot Operator** by using our Userlike Endpoint.
+Innerhalb unserer **Cognigy.AI** Plattform können Sie Ihren Cognigy Agent mit Ihrem **Userlike Bot Operator** verbinden, indem Sie unseren Userlike Endpoint verwenden.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Userlike** Endpoints finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016310079).
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+## Nachrichtentypen in Userlike Unified Messaging Kanälen
 
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.5.0-blue.svg)] ({{config.site_url}})<div class="divider"></div>Ab Version 4.5 können Sie dem Unified Messaging-Kanal Userlike Nachrichtentypen hinzufügen.
 
-!!! note "Help Center"
-    More detailed information on how to set up an **Userlike** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016310079).
+Die folgenden Nachrichtentypen werden im benutzerähnlichen Unified Messaging-Kanal korrekt angezeigt:
 
-## Message types in Userlike unified messaging channels
+-Text 
+- Text mit Schaltflächen (siehe Chat-Beispiel unten) 
+- Schnelle Antworten 
+- Bild/Audio/Video 
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
-
-
-<div class="divider"></div>
-
-As of Release v4.5, you can add message types to the Userlike unified messaging channel.
-
-The below message types will be properly displayed in the Userlike unified messaging channel:
-
-- Text 
-- Text with buttons (see chat example below) 
-- Quick replies 
-- Image/Audio/Video 
-
-!!! note 
-    The Fallback Text is displayed for the Output Type "Gallery" and "List" as well as for invalid media formats for image/audio/video.
-
+!!! Anmerkung 
+    Der Fallback-Text wird sowohl für die Ausgabetypen "Galerie" und "Liste" als auch für ungültige Medienformate für Bild/Audio/Video angezeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/f04d531-Userlike_Webchat.png" width="100%" />
 </figure>
 
-How to create and configure an Endpoint for a Userlike unified messaging channel see in our Help-Center [Userlike: Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310079).
+Wie Sie einen Endpunkt für einen Userlike-Unified Messaging-Kanal erstellen und konfigurieren, finden Sie in unserem Hilfe-Center [Userlike: Bereitstellen eines Endpunkts](https://support.cognigy.com/hc/en-us/articles/360016310079).
 
-You will find an overview of Third Party Endpoints [here]({{config.site_url}}ai/endpoints/overview/).
+Eine Übersicht über Third Party Endpoints finden Sie [hier]({{config.site_url}}ai/endpoints/overview/).
 
-## More Information
+## Mehr Informationen
 
-- [Help Center: Userlike Deployment](https://support.cognigy.com/hc/en-us/articles/360016310079)
+- [Hilfe-Center: Userlike Deployment](https://support.cognigy.com/hc/en-us/articles/360016310079)

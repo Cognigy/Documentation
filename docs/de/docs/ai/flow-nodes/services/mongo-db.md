@@ -1,7 +1,7 @@
 ---
- title: "Mongo DB" 
- slug: "mongo-db" 
- hidden: false 
+ Titel: "Mongo DB" 
+ Slug: "mongo-db" 
+ ausgeblendet: false 
 ---
 # Mongo DB
 
@@ -9,153 +9,147 @@
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/mongo-db-find.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The MongoDB nodes lets you execute a range of operations on your MongoDB.
+## Beschreibung<div class="divider"></div>Mit den MongoDB-Knoten können Sie eine Reihe von Vorgängen auf Ihrer MongoDB ausführen.
 
-## Nodes
-<div class="divider"></div>
+## Knoten<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1f1446e-mongo-operations.jpg" width="100%" />
-</figure>
+</figure>### Finden
+#### Kollektion
+Der Name der MongoDB-Sammlung.
+#### Abfrage
+Die MongoDB-Abfrage im JSON-Format.
 
-### Find
-#### Collection
-The name of the MongoDB collection.
-#### Query
-The MongoDB query in JSON format.
-
- [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/){:target="_blank"}
+[MongoDB-Dokumentation: Suchen] (https://docs.mongodb.com/manual/reference/method/db.collection.find/) {:target="_blank"}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
 
-#### Result Storage
-This section lets you configure where to store the result of the MongoDB request.
+#### Speicherung von Ergebnissen
+In diesem Abschnitt können Sie konfigurieren, wo das Ergebnis der MongoDB-Anforderung gespeichert werden soll.
 
-#### Advanced
-The advanced section exposes a number of extra settings.
+#### Fortgeschritten
+Im Abschnitt "Erweitert" werden eine Reihe zusätzlicher Einstellungen angezeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37fb69f-mongodb-projection.jpg" width="100%" />
 </figure>
 
-##### Projection
+##### Projektion
 
-Read the MongoDB documentation for more information on Projection.
+Weitere Informationen zur Projektion finden Sie in der MongoDB-Dokumentation.
  
- [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"}
+[MongoDB-Dokumentation: Projektion] (https://docs.mongodb.com/manual/reference/operator/projection/) {:target="_blank"}
 
-##### Options
+##### Optionen
 
-Read the MongoDB documentation for configurable options.
+In der MongoDB-Dokumentation finden Sie konfigurierbare Optionen.
  
- [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}
+[MongoDB-Dokumentation] (https://docs.mongodb.com/manual) {:target="_blank"}
 
-##### Index 
+##### Inhaltsverzeichnis 
 
-Refer to the MongoDB documentation on Indexes.
+Weitere Informationen finden Sie in der MongoDB-Dokumentation zu Indizes.
  
- [MongoDB Documentation: Indexes](https://docs.mongodb.com/manual/indexes/){:target="_blank"}
+[MongoDB-Dokumentation: Indizes] (https://docs.mongodb.com/manual/indexes/) {:target="_blank"}
 
-##### Stop on Error
-Lets you configure whether to stop flow execution when an error occurs or not.
+##### Stopp bei Fehler
+Hier können Sie konfigurieren, ob die Schemaausführung gestoppt werden soll, wenn ein Fehler auftritt oder nicht.
 
-#### Caching
-##### Cache Response from MongoDB Operation. 
-Whether to cache the MongoDB responses to optimize performance.
+#### Zwischenspeicherung
+##### Cacheantwort vom MongoDB-Vorgang. 
+Gibt an, ob die MongoDB-Antworten zwischengespeichert werden sollen, um die Leistung zu optimieren.
 
-### Find One
-#### Collection
-The name of the MongoDB collection.
-#### Query
-The MongoDB query in JSON format.
+### Finde einen
+#### Kollektion
+Der Name der MongoDB-Sammlung.
+#### Abfrage
+Die MongoDB-Abfrage im JSON-Format.
 
- [MongoDB Documentation: FindOne](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/){:target="_blank"}
+[MongoDB-Dokumentation: FindOne] (https://docs.mongodb.com/manual/reference/method/db.collection.findOne/) {:target="_blank"}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
 
-#### Result Storage
-This section lets you configure where to store the result of the MongoDB request.
+#### Speicherung von Ergebnissen
+In diesem Abschnitt können Sie konfigurieren, wo das Ergebnis der MongoDB-Anforderung gespeichert werden soll.
 
-#### Advanced
-The advanced section exposes a number of extra settings.
+#### Fortgeschritten
+Im Abschnitt "Erweitert" werden eine Reihe zusätzlicher Einstellungen angezeigt.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37fb69f-mongodb-projection.jpg" width="100%" />
 </figure>
 
-##### Projection
+##### Projektion
 
-Read the MongoDB documentation for more information on Projection.
+Weitere Informationen zur Projektion finden Sie in der MongoDB-Dokumentation.
  
- [MongoDB Documentation: Projection](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"}
+[MongoDB-Dokumentation: Projektion] (https://docs.mongodb.com/manual/reference/operator/projection/) {:target="_blank"}
 
-##### Options
+##### Optionen
 
-Read the MongoDB documentation for configurable options.
+In der MongoDB-Dokumentation finden Sie konfigurierbare Optionen.
  
- [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}
+[MongoDB-Dokumentation] (https://docs.mongodb.com/manual) {:target="_blank"}
 
-##### Index 
+##### Inhaltsverzeichnis 
 
-Read the MongoDB documentation on Indexes.
+Lesen Sie die MongoDB-Dokumentation zu Indizes.
  
- [MongoDB Documentation: Indexes](https://docs.mongodb.com/manual/indexes/){:target="_blank"}
+[MongoDB-Dokumentation: Indizes] (https://docs.mongodb.com/manual/indexes/) {:target="_blank"}
 
-##### Stop on Error
-Lets you configure whether to stop flow execution when an error occurs or not.
+##### Stopp bei Fehler
+Hier können Sie konfigurieren, ob die Schemaausführung gestoppt werden soll, wenn ein Fehler auftritt oder nicht.
 
-#### Caching
-##### Cache Response from MongoDB Operation. 
-Whether to cache the MongoDB responses to optimize performance.
+#### Zwischenspeicherung
+##### Cacheantwort vom MongoDB-Vorgang. 
+Gibt an, ob die MongoDB-Antworten zwischengespeichert werden sollen, um die Leistung zu optimieren.
 
+### Update Eins
 
-### Update One
+#### Kollektion
+Der Name der MongoDB-Sammlung.
 
-#### Collection
-The name of the MongoDB collection.
+#### Abfrage
+Die MongoDB-Abfrage im JSON-Format.
 
-#### Query
-The MongoDB query in JSON format.
+#### Aktualisieren
+Die Nutzlast für das MongoDB-Update im JSON-Format.
 
-#### Update
-The MongoDB update payload in JSON format.
-
- [MongoDB Documentation: UpdateOne](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/){:target="_blank"}
+[MongoDB-Dokumentation: UpdateOne] (https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/) {:target="_blank"}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
 
-#### Result Storage
-This section lets you configure where to store the result of the MongoDB request.
+#### Speicherung von Ergebnissen
+In diesem Abschnitt können Sie konfigurieren, wo das Ergebnis der MongoDB-Anforderung gespeichert werden soll.
 
-#### Advanced
-The advanced section exposes a number of extra settings.
-[https://docs.mongodb.com/manual/reference/operator/projection/](https://docs.mongodb.com/manual/reference/operator/projection/){:target="_blank"}
+#### Fortgeschritten
+Im Abschnitt "Erweitert" werden eine Reihe zusätzlicher Einstellungen angezeigt.
+[https://docs.mongodb.com/manual/reference/operator/projection/] (https://docs.mongodb.com/manual/reference/operator/projection/) {:target="_blank"}
 
-##### Use Operators
-If enabled, then you can use operators like $push in the update query. If not, then we will automatically $set everything that you write in the update query into the database.
+##### Operatoren verwenden
+Wenn diese Option aktiviert ist, können Sie Operatoren wie $push in der Aktualisierungsabfrage verwenden. Wenn nicht, dann $set wir automatisch alles, was Sie in die Update-Abfrage schreiben, in die Datenbank.
 
-##### Options
+##### Optionen
 
-Read the MongoDB documentation for configurable options.
+In der MongoDB-Dokumentation finden Sie konfigurierbare Optionen.
  
- [MongoDB Documentation](https://docs.mongodb.com/manual){:target="_blank"}
+[MongoDB-Dokumentation] (https://docs.mongodb.com/manual) {:target="_blank"}
 
-### Update Many
- [MongoDB Documentation: UpdateMany](https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/){:target="_blank"}
+### Viele aktualisieren
+ [MongoDB-Dokumentation: UpdateMany] (https://docs.mongodb.com/manual/reference/method/db.collection.updateMany/) {:target="_blank"}
 
-### Insert
- [MongoDB Documentation:  Insert](https://docs.mongodb.com/manual/reference/method/db.collection.insert/){:target="_blank"}
+### Einfügen
+ [MongoDB-Dokumentation: Einfügen] (https://docs.mongodb.com/manual/reference/method/db.collection.insert/) {:target="_blank"}
 
-### Remove
- [MongoDB Documentation: Remove](https://docs.mongodb.com/manual/reference/method/db.collection.remove/){:target="_blank"}
+### Entfernen
+ [MongoDB-Dokumentation: Entfernen] (https://docs.mongodb.com/manual/reference/method/db.collection.remove/) {:target="_blank"}
 
-### MongoDB Aggregate
- [MongoDB Documentation: Aggregate](https://docs.mongodb.com/manual/reference/method/db.collection.aggregate/){:target="_blank"}
+### MongoDB-Aggregat
+ [MongoDB-Dokumentation: Aggregat] (https://docs.mongodb.com/manual/reference/method/db.collection.aggregate/) {:target="_blank"}

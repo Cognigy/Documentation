@@ -1,84 +1,60 @@
 ---
- title: "Using the API" 
+ title: "Verwenden der API" 
  slug: "using-api" 
- hidden: false 
+ ausgeblendet: false 
 ---
-# Using the API
+# Verwendung der API
 
-## What is the Cognigy API?
+## Was ist die Cognigy API?<div class="divider"></div>Für die Kommunikation mit der Cognigy.AI Installation verwendet das Frontend eine HTTP-basierte API.
+Diese API kann auch von Entwicklern verwendet werden, um benutzerdefinierte Integrationen mit Cognigy.AI zu erstellen. Wir bieten auch eine Bibliothek in Form eines NPM-Pakets namens "rest-api-client" an, das dazu beiträgt, die Belastung durch die Nutzung unserer APIs zu verringern. Diese Bibliothek ist auf NPM verfügbar und in modernem JavaScript einschließlich Typescript-Definitionen geschrieben.
 
-<div class="divider"></div>
+## Was sind die API-Funktionen?<div class="divider"></div>Jede Art von Information, die sichtbar ist, und jede Art von Aktion, die im Frontend ausgeführt werden kann, wird über diese API abgefragt oder ausgelöst, die auch für Entwickler zu 100% verfügbar ist. 
 
-For communication with the Cognigy.AI installation, the frontend uses an HTTP-based API.
-This API can also be used by developers to build custom integrations with Cognigy.AI. We also offer a library in the form of an NPM package called the "rest-api-client" which helps to lower the burden of consuming our APIs. This library is available on NPM and is written in modern JavaScript including Typescript definitions.
+## Was benötige ich, um auf die API zugreifen zu können?<div class="divider"></div>Um die API verwenden zu können, benötigen Sie zwei Dinge:
 
-## What are the API capabilities?
+## Die API-Basis-URL
 
-<div class="divider"></div>
+Dies ist die URL, unter der die API verfügbar ist.
 
-Any kind of information that is visible and any kind of action that can be performed in the frontend is queried or triggered through this API, which is 100% exposed for developers, too. 
-
-## What do I need to access the API?
-
-<div class="divider"></div>
-
-To use the API, you will need to have two things:
-
-## The API baseurl
-
-This is the url which the API is available at.
-
-| Environment              | API Base URL                                                                                            |
+| Umwelt | API-Basis-URL |
 |--------------------------|---------------------------------------------------------------------------------------------------------|
-| Trial (trial.cognigy.ai) | `https://api-trial.cognigy.ai`                                                                          |
-| App (app.cognigy.ai)     | `https://api-app.cognigy.ai`                                                                            |
-| On-Premise Installations | This is the url that has been defined as `BACKEND_BASE_URL_WITH_PROTOCOL` in your `production.env` file | 
+| Testversion (trial.cognigy.ai) | "https://api-trial.cognigy.ai" |
+| App (app.cognigy.ai) | "https://api-app.cognigy.ai" |
+| On-Premise-Installationen | Dies ist die URL, die in Ihrer Datei "production.env" als "BACKEND_BASE_URL_WITH_PROTOCOL" definiert wurde | 
 
+## API-Schlüssel verwalten
 
-## Manage API Keys
+Ein API-Schlüssel wird verwendet, um sich bei der Cognigy.AI-API als Benutzer im System zu authentifizieren, ohne die Anmeldeinformationen des Benutzers offenzulegen.
 
-An API key is used to authenticate to the Cognigy.AI API as a user in the system without exposing the user's credentials.
+Um einen API-Schlüssel zu generieren, lesen Sie [API-Schlüssel erstellen](.. /tools/user-menu/my-profile.md#create-api-keys).
 
-To generate an API key, read [Create API Keys](../tools/user-menu/my-profile.md#create-api-keys).
+Um einen API-Schlüssel zu löschen, lesen Sie [API-Schlüssel widerrufen](.. /tools/user-menu/my-profile.md#revoke-api-keys).<div style="margin-bottom: 120px"/>## Wie verwende ich die API?<div class="divider"></div>Die Cognigy-API enthält eine OpenAPI-Dokumentation, in der die verschiedenen API-Operationen im Detail beschrieben werden. Für die Testumgebung von Cognigy finden Sie es beispielsweise unter https://api-trial.cognigy.ai/openapi.
 
-To delete an API key, read [Revoke API Keys](../tools/user-menu/my-profile.md#revoke-api-keys).
+Um einen Aufruf der API durchzuführen, führen Sie eine HTTP-Anforderung aus, und fügen Sie entweder
+- einen Abfrageparameter 'api_key' mit Ihrem API-Schlüssel als Wert
+- einen Header 'X-API-Key'mit Ihrem API-Schlüssel als Wert
 
-<div style="margin-bottom: 120px"/>
+Nehmen wir an, ich habe eine Cognigy.AI-Installation, die unter "https://api-dummy.cognigy.ai" läuft, und ich habe mir einen API-Schlüssel mit der Aufschrift "myDummyApiKey123" erstellt. 
 
-## How do I use the API?
+Ich kann jetzt einen neuen Browser-Tab öffnen und auf "https://api-dummy.cognigy.ai/projects?api_key=myDummyApiKey123" gehen, um eine Liste aller Projekte zu erhalten, die mir zugewiesen sind, einschließlich Meta-Informationen zu den Ressourcen innerhalb dieses Projekts.
+Dieser Aufruf wird z.B. vom Frontend verwendet, wenn Sie die Seite **Projekte** laden.
 
-<div class="divider"></div>
-Cognigy API includes an OpenAPI documentation which outlines all the different API operations in detail. For example for Cognigy trial environment it can be found at https://api-trial.cognigy.ai/openapi.
+## Super API-Schlüssel<div class="divider"></div>Die meisten APIs in Cognigy.AI sind agentengebunden, was bedeutet, dass ein Entwickler, der unsere API verwendet, nur Informationen von Agenten anfordern kann, auf die er tatsächlich Zugriff hat. Es gibt bestimmte Anwendungsfälle, in denen z.B. alle Flows innerhalb einer bestimmten Organisation aufgelistet werden sollen. Für solche Anwendungsfälle haben wir mit unserem Release 4.1.4 eine Funktion namens "Super API-Key" eingeführt.
 
-To do a call to the API, do an HTTP request and add either
-- a query parameter `api_key` with your API key as value
-- a header `X-API-Key`with your API key set as value
+!!! Warnung "Verfügbarkeit von Funktionen"
+    Diese Funktion ist nur für On-Premise-Kunden mit separaten Cognigy.AI Installationen verfügbar.
 
-Let's assume I have a Cognigy.AI installation running at `https://api-dummy.cognigy.ai` and I created myself an API key which reads `myDummyApiKey123`. 
+Diese Funktion ist standardmäßig in allen Cognigy.AI Installationen deaktiviert. Unsere On-Premise-Kunden können diese Funktion aktivieren, indem sie die folgende Umgebungsvariable auf "true" setzen:
 
-I can now open a new browser tab and go to `https://api-dummy.cognigy.ai/projects?api_key=myDummyApiKey123` to get a list of all the projects that are assigned to me, including meta-information about the resources within that project.
-This call, for example, is used by the frontend when you load the **Projects** page.
-
-## Super API-Key
-
-<div class="divider"></div>
-
-Most of the APIs in Cognigy.AI are agent-bound, meaning that a developer using our API can only request information from agents he actually has access to. There are certain use-cases where e.g. all Flows within a certain Organization should be listed. For such use-cases, we have introduced a feature called the "Super API-Key" with our 4.1.4 release.
-
-!!! warning "Feature availability"
-    This feature is only available for on-premise customers with separate Cognigy.AI installations.
-
-This feature is, by default, disabled in all Cognigy.AI installations. Our on-premise customers can activate this feature by setting the following environment variable to "true":
-
-````JavaScript
+''''JavaScript
 FEATURE_USE_SUPERAPIKEY_API
-````
+''''
 
-````
+''''
 https://api-trial.cognigy.ai/openapi#post-/management/v2.0/organisations/{organisationId}/apikeys
-````
+''''
 
-This API-key is not bound to a specific user and lives within the scope of an Organization. It can be used to manipulate all assets and objects within the system.
+Dieser API-Schlüssel ist nicht an einen bestimmten Benutzer gebunden und befindet sich im Bereich einer Organisation. Es kann verwendet werden, um alle Assets und Objekte innerhalb des Systems zu manipulieren.
 
-!!! note "Super API-Key and TTL"
-    This API-key has a default TTL (Time to life) of 15 minutes for security reasons. Once the key has been created, it will only be valid for 15 minutes.
+!!! Hinweis "Super API-Key und TTL"
+    Dieser API-Schlüssel hat aus Sicherheitsgründen eine Standard-TTL (Time to Life) von 15 Minuten. Sobald der Schlüssel erstellt wurde, ist er nur noch 15 Minuten gültig.

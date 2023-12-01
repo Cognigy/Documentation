@@ -1,17 +1,15 @@
 ---
- title: "Activate Profile" 
- slug: "activate-profile" 
- hidden: false 
+ title: "Profil aktivieren" 
+ Slug: "Profil aktivieren" 
+ ausgeblendet: false 
 ---
-# Activate Profile
+# Profil aktivieren
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/activate-profile.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The Activate Profile Node is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again. The Node doesn't take any parameters, since it just activates the profile of the contact who hit the Node.
+## Beschreibung<div class="divider"></div>Der Knoten Profil aktivieren wird verwendet, um ein deaktiviertes Profil wieder zu aktivieren, falls der Benutzer die Datenerfassung versehentlich deaktiviert hat oder die Datenerfassung wieder zulassen möchte. Der Node nimmt keine Parameter an, da er nur das Profil des Kontakts aktiviert, der den Node getroffen hat.
 
-!!! tip "Common usage"
-    It is common to place this Node behind an `If Node` so that the Node is only hit if the contact specifically requests that data should be collected.
+!!! Tipp "Allgemeiner Gebrauch"
+    Es ist üblich, diesen Node hinter einem 'If Node' zu platzieren, so dass der Node nur dann getroffen wird, wenn der Kontakt ausdrücklich darum bittet, dass Daten gesammelt werden sollen.

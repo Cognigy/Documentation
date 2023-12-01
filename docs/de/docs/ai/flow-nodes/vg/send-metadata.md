@@ -1,27 +1,24 @@
 ---
- title: "Send Metadata" 
- slug: "send-metadata" 
- hidden: false 
+ title: "Metadaten senden" 
+ Slug: "Send-Metadaten" 
+ ausgeblendet: false 
 ---
 
-# Send Metadata
+# Metadaten senden
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/send-metadata.png" width="80%" />
-  <figcaption>Voice Gateway Send Metadata Node</figcaption>
+  <figcaption>Voice-Gateway-Knoten zum Senden von Metadaten</figcaption>
 </figure>
 
-## Description
+## Beschreibung<div class="divider"></div>Der Send Meta Data Node sendet Metadaten über SIP INFO-Nachrichten an den angeschlossenen SIP-Trunk.
 
-<div class="divider"></div>
-The Send Meta Data Node will send meta data via SIP INFO messages to the connected SIP trunk.
-
-| Parameter | Type | Description                                                   |
+| Parameter | Typ | Beschreibung |
 |-----------|------|---------------------------------------------------------------|
-| Meta Data | JSON | The meta data to send via SIP INFO. See below for an example. |
+| Metadaten | JSON | Die Metadaten, die über SIP INFO gesendet werden sollen. Unten finden Sie ein Beispiel. |
 
-```json
+'''json
 {
-  "myParamName": "myParamValue"
+  "myParamName": "meinParamWert"
 }
-```
+'''

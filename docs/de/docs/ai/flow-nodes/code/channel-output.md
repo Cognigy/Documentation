@@ -1,25 +1,22 @@
 ---
- title: "Channel Output" 
- slug: "channel-output" 
- hidden: false 
+ Titel: "Kanalausgang" 
+ Schnecke: "Kanal-Ausgang" 
+ ausgeblendet: false 
 ---
-# Channel Output
+# Kanal-Ausgang
 
-## Description
-<div class="divider"></div>
-
-Within a code node you have the ability to output a text message along with a data object by using the following `actions` functions:
-```javaScript
+## Beschreibung<div class="divider"></div>Innerhalb eines Code-Knotens haben Sie die Möglichkeit, eine Textnachricht zusammen mit einem Datenobjekt auszugeben, indem Sie die folgenden 'actions'-Funktionen verwenden:
+'''javaScript
 actions.output("<YOUR_TEXT>", {"key": "value" });
-// OR
-actions.say("<YOUR_TEXT>", {"key": "value" });
-``` 
+ODER
+actions.say("<YOUR_TEXT>", {"key": "Wert" });
+''' 
 
-The `data` parameter should take the JSON payload that defines the custom channel message:
-```javaScript
+Der Parameter "data" sollte die JSON-Nutzlast übernehmen, die die benutzerdefinierte Kanalnachricht definiert:
+'''javaScript
 const jsonPayload = {
  "_cognigy":{
-  // Channel Specific Payload 
+  Kanalspezifische Nutzlast 
  }
 }
 
@@ -29,29 +26,25 @@ actions.say("<YOUR_TEXT", jsonPayload);
 See the next sections for the required format.
 
 ## AI Default Channel
-<div class="divider"></div>
+<div class="divider"></div>Der Cognigy AI Default Channel hat ein bestimmtes Kanalformat, über das Sie mehr unter [AI Default Channel Format]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/) erfahren können.
 
-Cognigy AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/).
+## Alexa<div class="divider"></div>[:link: JSON-Referenz für Alexa-Antworten] (https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html)
 
-## Alexa
-<div class="divider"></div>
-[:link: Alexa Response JSON Reference](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html)
-
-### Example
+### Beispiel
 ---
-We'll output a simple card to our contact by using the following snippet:
-```JSON
+Wir geben eine einfache Karte an unseren Kontakt aus, indem wir den folgenden Codeausschnitt verwenden:
+'''JSON
 {
 	"_cognigy": {
 		"_alexa": {
-			"response": {
+			"Antwort": {
                 "shouldEndSession": false,
-				"card":  {
+				"Karte": {
  					"type": "Standard",
- 					"title": "Title of the card",
- 					"content": "Content of a simple card",
- 					"text": "Text content for a standard card",
- 					"image": {
+ 					"title": "Titel der Karte",
+ 					"content": "Inhalt einer einfachen Karte",
+ 					"text": "Textinhalt für eine Standardkarte",
+ 					"Bild": {
 						"smallImageUrl": "https://url-to-small-card-image",
 						"largeImageUrl": "https://url-to-large-card-image"
  					}
@@ -60,192 +53,175 @@ We'll output a simple card to our contact by using the following snippet:
 		}
 	}
 }
-``` 
+''' 
 
-## Messenger
-<div class="divider"></div>
-[:link: Messenger Messaging Reference](https://developers.facebook.com/docs/messenger-platform/send-messages)
+## Bote<div class="divider"></div>[:link: Messenger-Nachrichten-Referenz] (https://developers.facebook.com/docs/messenger-platform/send-messages)
 
-For the messenger you can send multiple templates by building a json object or by using the **facebook-bot-messenger module**. For further information got to their [GitHub Page](https://github.com/snlangsuan/facebook-bot-messenger#readme).
+Für den Messenger können Sie mehrere Vorlagen senden, indem Sie ein JSON-Objekt erstellen oder das **facebook-bot-messenger-Modul** verwenden. Weitere Informationen finden Sie auf ihrer [GitHub Page](https://github.com/snlangsuan/facebook-bot-messenger#readme).
 
-### Example
+### Beispiel
 ---
-The following snippet will send a simple text message and a quick reply to the contact:
-```JSON
+Mit dem folgenden Snippet wird eine einfache Textnachricht und eine schnelle Antwort an den Kontakt gesendet:
+'''JSON
 {
 	"_cognigy": {
         "_facebook": {      
-          "message": {
-            "text": "Hello World",
+          "Nachricht": {
+            "text": "Hallo Welt",
             "quick_replies": [
               {
-                "content_type": "text",
+                "content_type": "Text",
                 "condition": "",
-                "title": "Hi",
+                "title": "Hallo",
                 "image_url": "",
-                "payload": "Hi"
+                "payload": "Hallo"
               }
             ]
           }
         }
     }
 }
-``` 
+''' 
 
-Or you can use the **facebook-bot-messenger** module for building custom json. Here we'll send quick replies to the contact:
-```javaScript
-// use facebook-bot-messenger to compile reply
-const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');
-builder.addImageOption('Red', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'http://petersfantastichats.com/img/red.png')
-       .addImageOption('Green', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'http://petersfantastichats.com/img/green.png');
+Oder Sie können das **facebook-bot-messenger**-Modul verwenden, um benutzerdefiniertes JSON zu erstellen. Hier senden wir schnelle Antworten an den Kontakt:
+'''javaScript
+Verwenden Sie Facebook-Bot-Messenger, um Antworten zu kompilieren
+const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Wählen Sie eine Farbe:');
+builder.addImageOption('Rot', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'http://petersfantastichats.com/img/red.png')
+       .addImageOption('Grün', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'http://petersfantastichats.com/img/green.png');
 
-// output the reply
+Antwort ausgeben
 actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
-```
+'''
 
-## Webchat
-<div class="divider"></div>
+## Webchat<div class="divider"></div>Der Webchat verwendet das gleiche Format wie der **Messenger**, aber anstatt die Eigenschaft '_facebook' hinzuzufügen, müssen Sie '_webchat' hinzufügen.
 
-The Webchat uses the same format as the **Messenger** but instead of adding the `_facebook` property you have to add `_webchat`.
-
-### Example
+### Beispiel
 ---
-The following example sends a text message and a quick reply to the contact:
-```JSON
+Im folgenden Beispiel werden eine Textnachricht und eine Schnellantwort an den Kontakt gesendet:
+'''JSON
 {
 	"_cognigy": {
         "_webchat": {      
-            "message": {
-                "text": "Hello World",
+            "Nachricht": {
+                "text": "Hallo Welt",
                 "quick_replies": [
                     {
-                        "content_type": "text",
+                        "content_type": "Text",
                         "condition": "",
-                        "title": "Hi",
+                        "title": "Hallo",
                         "image_url": "",
-                        "payload": "Hi"
+                        "payload": "Hallo"
                     }
                 ]
             }
         }
     }
 }
-```
+'''
 
-## AI
-<div class="divider"></div>
+## KI<div class="divider"></div>Der Standard-KI-Kanal, der immer aus dem Standard ausgewählt wird, verwendet fast das gleiche Format wie der Webchat oben. Der einzige Unterschied besteht darin, dass Sie "_default" anstelle von "_webchat" eingeben. 
 
-The default AI Channel, which is always selected from the default, uses the almost same format as the webchat above. The only difference is that you type `_default` instead of `_webchat`. 
-
-### Example
+### Beispiel
 ---
-The following example sends a text message and a quick reply to the contact:
-```JSON
+Im folgenden Beispiel werden eine Textnachricht und eine Schnellantwort an den Kontakt gesendet:
+'''JSON
 {
 	"_cognigy": {
         "_default": {      
-            "message": {
-                "text": "Hello World",
+            "Nachricht": {
+                "text": "Hallo Welt",
                 "quick_replies": [
                     {
-                        "content_type": "text",
+                        "content_type": "Text",
                         "condition": "",
-                        "title": "Hi",
+                        "title": "Hallo",
                         "image_url": "",
-                        "payload": "Hi"
+                        "payload": "Hallo"
                     }
                 ]
             }
         }
     }
 }
-```
+'''
 
-## LINE
-<div class="divider"></div>
+## LINIE<div class="divider"></div>[:link: LINE Messaging API] (https://developers.line.me/en/reference/messaging-api/#template-messages)
 
-[:link: LINE Messaging API](https://developers.line.me/en/reference/messaging-api/#template-messages)
-
-### Example
+### Beispiel
 ---
-The following outputs a simple confirm prompt to the contact:
-```JSON
+Im Folgenden wird eine einfache Bestätigungsaufforderung an den Kontakt ausgegeben:
+'''JSON
 {
 	"_cognigy": {
 		"_line": {
-			  	"type": "template",
-				"altText": "this is a confirm template",
-				"template": {
-					"type": "confirm",
-					"text": "Are you sure?",
-					"actions": [
+			  	"type": "Vorlage",
+				"altText": "Dies ist eine Bestätigungsvorlage",
+				"Vorlage": {
+					"type": "Bestätigen",
+					"text": "Bist du sicher?",
+					"Aktionen": [
 						{
-							"type": "message",
-							"label": "Yes",
-							"text": "yes"
+							"type": "Nachricht",
+							"label": "Ja",
+							"text": "Ja"
 						},
 						{
-							"type": "message",
-							"label": "No",
-							"text": "no"
+							"type": "Nachricht",
+							"label": "Nein",
+							"text": "nein"
 						}
 					]
 				}
 		}
 	}
 }
-```
+'''
 
-## Smooch
-<div class="divider"></div>
+## Knutschen<div class="divider"></div>[:link: Smooch-Messaging-API] (https://docs.smooch.io/rest/?shell#message-types)
 
-[:link: Smooch messaging API](https://docs.smooch.io/rest/?shell#message-types)
-
-### Example
+### Beispiel
 ---
-The following outputs a simple image to the end user:
-```JSON
+Im Folgenden wird ein einfaches Bild an den Endbenutzer ausgegeben:
+'''JSON
 {
     "role": "appMaker",
-    "type": "image",
-    "text": "Hello!",
+    "type": "Bild",
+    "text": "Hallo!",
     "mediaUrl": "http://example.org/image.jpg",
-    "actions": [{
-        "text": "More info",
-        "type": "link",
+    "Aktionen": [{
+        "text": "Mehr Infos",
+        "type": "Verknüpfung",
         "uri": "http://example.org"
     }]
 }
-```
+'''
 
-## RingCentral Engage
-<div class="divider"></div>
-
-### Example
+## RingCentral Engage<div class="divider"></div>### Beispiel
 ---
-The following outputs a gallery with images to the end user. This example is quite interesting since one needs to [create an attachment for each image](https://developers.ringcentral.com/engage/digital/api-reference/Attachments/createAttachment) using the RingCentral Engage API. The returned **attachmentIds** are inserted in the **Custom JSON** below: 
-```JSON
+Im Folgenden wird ein Katalog mit Bildern an den Endbenutzer ausgegeben. Dieses Beispiel ist sehr interessant, da man [einen Anhang für jedes Bild erstellen](https://developers.ringcentral.com/engage/digital/api-reference/Attachments/createAttachment) mit der RingCentral Engage-API erstellen muss. Die zurückgegebenen **attachmentIds** werden in den folgenden **benutzerdefinierten JSON-Code** eingefügt: 
+'''JSON
 {
-  "command": "structured-content",
+  "command": "Strukturierter-Inhalt",
   "body": "",
   "structuredContent": {
-    "type": "carousel",
-    "items": [
+    "type": "Karussell",
+    "Gegenstände": [
         {
-            "attachment_id": "5f73470a0e69dc",
-            "title": "This is the title",
+            "attachment_id": "5F73470A0E69DC",
+            "title": "Das ist der Titel",
             "url": "https://url-to-image.com",
-            "subtitle": "This is the first subtitle",
-            "items": [
+            "subtitle": "Dies ist der erste Untertitel",
+            "Gegenstände": [
                 {
-                    "type": "url",
+                    "type": "URL",
                     "url": "https://www.cognigy.com/",
-                    "title": "Visit Website"
+                    "title": "Webseite besuchen"
                 },
                 {
-                    "type": "reply",
-                    "payload": "I want to select this one",
-                    "title": "Select"
+                    "type": "Antworten",
+                    "payload": "Ich möchte diesen auswählen",
+                    "title": "Auswählen"
                 }
             ]
         },
@@ -253,4 +229,4 @@ The following outputs a gallery with images to the end user. This example is qui
     ]
   }
 }
-```
+'''</YOUR_TEXT></YOUR_TEXT>

@@ -1,105 +1,102 @@
 ---
-title: "LLM"
-slug: "llm"
-description: "Large Language Models (LLMs) in Cognigy are advanced Generative AI models that generate human-like text based on input and context. Trained on vast text data, they understand user input, provide contextually appropriate responses, manage dialogues, and offer multilingual support for an enhanced conversational experience."
-hidden: false
+Titel: "LLM"
+Schnecke: "llm"
+Beschreibung: "Large Language Models (LLMs) in Cognigy sind fortschrittliche generative KI-Modelle, die menschenähnlichen Text auf der Grundlage von Eingaben und Kontext generieren. Sie sind auf riesige Textdaten geschult, verstehen Benutzereingaben, geben kontextuell passende Antworten, verwalten Dialoge und bieten mehrsprachige Unterstützung für ein verbessertes Konversationserlebnis."
+ausgeblendet: false
 ---
-# Large Language Model (LLM)
+# Großes Sprachmodell (LLM)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../../release-notes/4.65.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.65-blue.svg)] (.. /.. /.. /release-notes/4.65.md)
 
-[Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
+[Große Sprachmodelle (LLMs)] (https://en.wikipedia.org/wiki/Large_language_model) sind eine bestimmte Art von generativen KI-Modellen, die für die Generierung von menschenähnlichem Text auf der Grundlage der bereitgestellten Eingaben und des bereitgestellten Kontexts entwickelt wurden. Diese Modelle werden mit großen Mengen an Textdaten trainiert, sodass sie Muster, Syntax und semantische Beziehungen zwischen Wörtern und Phrasen erlernen können. 
 
-With LLMs, Cognigy virtual agents can understand and respond to user input in a natural way. These models make conversations more engaging by generating relevant and contextually appropriate responses. LLMs also assist in managing dialogues and providing multilingual support, enhancing the overall conversational experience for users.
+Mit LLMs können virtuelle Agenten von Cognigy Benutzereingaben auf natürliche Weise verstehen und darauf reagieren. Diese Modelle machen Gespräche ansprechender, indem sie relevante und kontextuell angemessene Antworten generieren. LLMs helfen auch bei der Verwaltung von Dialogen und der Bereitstellung mehrsprachigen Supports, um das allgemeine Gesprächserlebnis für die Benutzer zu verbessern.
 
-## Supported Models
+## Unterstützte Modelle
 
-The table below lists the LLMs supported by Cognigy.
+In der folgenden Tabelle sind die LLMs aufgeführt, die von Cognigy unterstützt werden.
 
-| Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & Search Extract Output Node | Generate Node Output | Knowledge Search | Sentiment Analysis |
+| Modelle/<br>Cognigy-Funktionen | Generierung von Absichtssätzen | KI-gestützte Ausgaben | Generierung von Lexikonen | Flow-Generierung | GPT-Konversationsknoten | LLM-Eingabeaufforderungsknoten & Suchextrakt-Ausgabeknoten | Node-Ausgabe generieren | Wissenssuche | Stimmungsanalyse |
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|----------------------------------------------|----------------------|------------------|--------------------|
-| **Microsoft Azure OpenAI**                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
-| gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| text-davinci-003 ([Deprecated](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/legacy-models#gpt-35)) | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
-| text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
-| **OpenAI**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
-| gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| text-davinci-003 ([Deprecated](https://platform.openai.com/docs/deprecations/2023-07-06-gpt-and-embeddings))              | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
-| text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
-| **Anthropic**                                                                                                             |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| claude-v1-100k                                                                                                            | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| claude-instant-v1                                                                                                         | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| **Google**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| text-bison-001 (Bard)                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-| **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| luminous-extended-control                                                                                                                  | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  | 
+| **Microsoft Azure OpenAI** |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| gpt-3.5-turbo (ChatGPT) | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
+| GPT-3.5-turbo-instruct | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| GPT-4 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| text-davinci-003 ([Veraltet](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/legacy-models#gpt-35)) | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
+| text-embedding-ada-002 | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
+| **OpenAI** |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| gpt-3.5-turbo (ChatGPT) | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
+| GPT-3.5-turbo-instruct | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| GPT-4 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| text-davinci-003 ([veraltet](https://platform.openai.com/docs/deprecations/2023-07-06-gpt-and-embeddings)) | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
+| text-embedding-ada-002 | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
+| **Anthropisch** |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| claude-v1-100k | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| claude-instant-v1 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| **Google** |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| text-bison-001 (Barde) | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| **Aleph Alpha** |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| Leucht-Erweiterte-Steuerung | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  | 
 
-## Add a Model
+## Hinzufügen eines Modells
 
-To add a model to Cognigy.AI, follow these steps:
+Gehen Sie folgendermaßen vor, um Cognigy.AI ein Modell hinzuzufügen:
 
 {! _includes/ai/generative-ai/credentials.md !}
 
-## Apply a Model
+## Anwenden eines Modells
 
 {! _includes/ai/generative-ai/apply-model.md !}
 
-## Clone a Model
+## Klonen eines Modells
 
-To create a copy of the existing model, follow these steps:
+Gehen Sie folgendermaßen vor, um eine Kopie des vorhandenen Modells zu erstellen:
 
-1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
-3. Select **Clone** from the list.
+1. Wechseln Sie zu **Build > LLM**.
+2. Bewegen Sie den Mauszeiger über das vorhandene Modell und klicken Sie auf! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Wählen Sie **Klonen** aus der Liste aus.
 
-The model will contain the same settings as the initial one. 
+Das Modell enthält die gleichen Einstellungen wie das ursprüngliche. 
 
-## Set a Model as Default
+## Ein Modell als Standard festlegen
 
-Setting a default model ensures a smooth transition when a specific model is removed. It guarantees that there is always a model available to handle compatible use cases, even if the assigned model is removed.
+Durch das Festlegen eines Standardmodells wird ein reibungsloser Übergang sichergestellt, wenn ein bestimmtes Modell entfernt wird. Es garantiert, dass immer ein Modell verfügbar ist, um kompatible Anwendungsfälle zu behandeln, auch wenn das zugewiesene Modell entfernt wird.
 
-To set a model as the default, follow these steps:
+Gehen Sie folgendermaßen vor, um ein Modell als Standard festzulegen:
 
-1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
-3. Select **Make Default** from the list.
+1. Wechseln Sie zu **Build > LLM**.
+2. Bewegen Sie den Mauszeiger über das vorhandene Modell und klicken Sie auf! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Wählen Sie **Als Standard festlegen** aus der Liste aus.
 
-The setting will be applied for the selected model.
+Die Einstellung wird auf das ausgewählte Modell angewendet.
 
-## Export a Model as Package
+## Exportieren eines Modells als Paket
 
-To reuse a model in other agents, you can package the model.
+Um ein Modell in anderen Agents wiederzuverwenden, können Sie das Modell packen.
 
-To package a model, follow these steps:
+Gehen Sie folgendermaßen vor, um ein Modell zu packen:
 
-1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
-3. Select **Create a package**. 
-4. Once the package has created, a new [task](../agents/tasks.md), titled **Create package**, will be run. To view the task, click ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+1. Wechseln Sie zu **Build > LLM**.
+2. Bewegen Sie den Mauszeiger über das vorhandene Modell und klicken Sie auf! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Wählen Sie **Paket erstellen** aus. 
+4. Sobald das Paket erstellt wurde, wird eine neue [Aufgabe](.. /agents/tasks.md) mit dem Titel **Paket erstellen** ausgeführt werden. Um die Aufgabe anzuzeigen, klicken Sie auf ! [Aufgaben-Menü] (.. /.. /assets/icons/task-menu.svg) in der oberen rechten Ecke.
 
-When the task is completed, the package will be downloaded.
+Wenn die Aufgabe abgeschlossen ist, wird das Paket heruntergeladen.
 
-## Delete a Model
+## Löschen eines Modells
 
-Note that a [default model](#set-a-model-as-default) cannot be deleted. Before deletion, you need to remove the default tag.
+Beachten Sie, dass ein [Standardmodell](#set-a-model-as-default) nicht gelöscht werden kann. Vor dem Löschen müssen Sie das Standard-Tag entfernen.
 
-To delete a model, follow these steps:
+Um ein Modell zu löschen, gehen Sie folgendermaßen vor:
 
-1. Go to **Build > LLM**.
-2. Hover over the existing model and click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
-3. Select **Delete**. 
-4. Confirm the deletion. Features relying on this model will stop working if no default model is configured to support those features.
+1. Wechseln Sie zu **Build > LLM**.
+2. Bewegen Sie den Mauszeiger über das vorhandene Modell und klicken Sie auf! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg).
+3. Wählen Sie **Löschen**. 
+4. Bestätigen Sie den Löschvorgang. Funktionen, die auf diesem Modell basieren, funktionieren nicht mehr, wenn kein Standardmodell für die Unterstützung dieser Funktionen konfiguriert ist.
 
-The model will be deleted from the list.
+Das Modell wird aus der Liste gelöscht.
 
-## More Information
+## Mehr Informationen
 
-- [Generative AI](../../generative-ai.md)
-- [Knowledge AI](../../knowledge-ai/overview.md)
-
-
-
+- [Generative KI](.. /.. /generative-ai.md)
+- [Wissens-KI](.. /.. /wissens-ai/übersicht.md)

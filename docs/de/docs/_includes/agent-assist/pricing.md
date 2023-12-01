@@ -1,2 +1,2 @@
-!!! note
-    The product is new and free of charge until further notice. Cognigy reserves the right to change the billing of AI Copilot in the future.
+!!! Anmerkung
+    Das Produkt ist neu und bis auf Weiteres kostenlos. Cognigy behält sich das Recht vor, die Abrechnung von AI Copilot in Zukunft zu ändern.

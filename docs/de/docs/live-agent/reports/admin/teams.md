@@ -1,38 +1,38 @@
 ---
-title: "Teams" 
-slug: "teams" 
-hidden: false 
+Titel: "Teams" 
+Slug: "Teams" 
+ausgeblendet: false 
 ---
 
-# Teams Report
+# Teams-Bericht
 
-This report shows team-specific metrics, such as the number of conversations, outgoing messages,
-average response time, average resolution time, and the number of successfully resolved user requests for ecah team.
+Dieser Bericht zeigt teamspezifische Metriken an, z. B. die Anzahl der Konversationen, ausgehende Nachrichten,
+Durchschnittliche Antwortzeit, durchschnittliche Lösungszeit und die Anzahl der erfolgreich gelösten Benutzeranfragen für ECAH Team.
 
-The Teams report provides a comprehensive view of team performance and is essential for identifying areas that may need improvement. For instance, if the average response time is too high, it could mean that the team needs to improve its responsiveness. If the resolution time is long, it might indicate the need for more effective problem-solving strategies.
+Der Teams-Bericht bietet einen umfassenden Überblick über die Teamleistung und ist wichtig, um Bereiche zu identifizieren, die möglicherweise verbessert werden müssen. Wenn beispielsweise die durchschnittliche Reaktionszeit zu hoch ist, kann dies bedeuten, dass das Team seine Reaktionsfähigkeit verbessern muss. Wenn die Lösungszeit lang ist, kann dies auf die Notwendigkeit effektiverer Problemlösungsstrategien hinweisen.
 
-To learn more about metrics, refer to [Report Metrics](overview.md#report-metrics).
+Weitere Informationen zu Metriken finden Sie unter [Berichtsmetriken](overview.md#report-metrics).
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_Team_report.png" width="100%" alt="Live Agent Team report" />
-  <figcaption>Teams report</figcaption>
+  <figcaption>Teams-Bericht</figcaption>
 </figure>
 
-## View a Report
+## Einen Bericht anzeigen
 
-To view a report, do the following:
+Um einen Bericht anzuzeigen, gehen Sie wie folgt vor:
 
-1. Open the Live Agent interface.
-2. Go to **Reports > Teams**.
-3. In the upper-left corner of the report page, select a team and time period from the list.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Wechseln Sie zu **Berichte > Teams**.
+3. Wählen Sie in der oberen linken Ecke der Berichtsseite ein Team und einen Zeitraum aus der Liste aus.
 
-The chart will be updated with the corresponding data related to the selected filter.
+Das Diagramm wird mit den entsprechenden Daten aktualisiert, die sich auf den ausgewählten Filter beziehen.
 
-## Download a Report
+## Bericht herunterladen
 
 {! _includes/live-agent/download-report.md !}
 
-## More information
+## Mehr Informationen
 
-- [Admin reports](overview.md)
-- [Reports](overview.md)
+- [Admin-Berichte](overview.md)
+- [Berichte](overview.md)

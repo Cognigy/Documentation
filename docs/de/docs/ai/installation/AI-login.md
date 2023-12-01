@@ -1,71 +1,64 @@
 ---
-title: "Cognigy.AI Sign-in and Sign-out"
-slug: "AI-login"
-hidden: false
+Titel: "Cognigy.AI An- und Abmeldung"
+slug: "KI-Login"
+ausgeblendet: false
 ---
 
-# Cognigy.AI Sign-in and Sign-out
+# Cognigy.AI An- und Abmeldung
 
-Users can sign in to Cognigy.AI with this URL:
+Benutzer können sich mit dieser URL bei Cognigy.AI anmelden:
 
-```txt
-https://<frontend-url>/login
-```
+'''txt
+https://<frontend-url>/einloggen
+'''
 
-For example, the `frontend-url` for the Trial Cognigy environment is `trial.cognigy.ai`.
+Zum Beispiel ist die 'Frontend-URL' für die Trial Cognigy-Umgebung 'trial.cognigy.ai'.
 
-## Log in to multiple organizations
+## Melden Sie sich bei mehreren Organisationen an<div class="divider"></div>[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.16.0-blue.svg)] ({{config.site_url}})
 
-<div class="divider"></div>
+Cognigy.AI ermöglicht es Benutzern, Teil mehrerer Organisationen zu sein. Ein Benutzer, der durch eine E-Mail-Adresse und ein Kennwort identifiziert wird, kann Teil verschiedener Organisationen sein. Die URL für die Anmeldung bei Cognigy.AI sollte wie folgt lauten und angeben, bei welcher Organisation sich der Benutzer anmelden möchte:
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16.0-blue.svg)]({{config.site_url}})
+'''txt
+<frontend-url>https:///login?organisationId=<organisation-id>'''
 
-
-Cognigy.AI allows users to be part of multiple organizations. A user, identified by an email address and a password, can be part of different organizations. The URL to log in to Cognigy.AI should be like this, specifying which organization the user wants to log in to:
-
-```txt
-https://<frontend-url>/login?organisationId=<organisation-id>
-```
-
-The `organization-id` is a unique identifier of 24 characters that identifies an organization in the Cognigy system.
-
-<br>
+Die "organization-id" ist eine eindeutige Kennung aus 24 Zeichen, die eine Organisation im Cognigy-System identifiziert.<br>
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/installation/images/CognigyAI_Login.png" width="100%" />
-  <figcaption> Cognigy.AI User Login page</figcaption>
+  <figcaption> Cognigy.AI Benutzer-Login-Seite</figcaption>
 </figure>
 
-!!! warning
-    If a user is part of multiple organizations and no `organizationId` is passed in the login URL, the user will be denied a login.
+!!! Warnung
+    Wenn ein Benutzer Teil mehrerer Organisationen ist und in der Anmelde-URL keine "organizationId" übergeben wird, wird dem Benutzer die Anmeldung verweigert.
 
-    For a user assigned to a single organization, including the `organizationId` in the login URL is optional and has no impact.
+Für einen Benutzer, der einer einzelnen Organisation zugewiesen ist, ist die Angabe der "organizationId" in der Anmelde-URL optional und hat keine Auswirkungen.
 
-### Multiple organization email notification
+### E-Mail-Benachrichtigung für mehrere Organisationen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.27.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.27.0-blue.svg)] ({{config.site_url}})
 
-When a user with a valid email address belongs to multiple organizations, and if no organizationId is passed in the login URL, the user will be denied a login; but will receive an email with direct login links for each organization they belong to.
-Clicking those links will open the Cognigy.AI login page with the respective organizationId param in the URL.
+Wenn ein Benutzer mit einer gültigen E-Mail-Adresse mehreren Organisationen angehört und in der Anmelde-URL keine organizationId übergeben wird, wird dem Benutzer die Anmeldung verweigert. Sie erhalten jedoch eine E-Mail mit direkten Anmeldelinks für jede Organisation, der sie angehören.
+Wenn Sie auf diese Links klicken, wird die Cognigy.AI Anmeldeseite mit dem entsprechenden organizationId-Parameter in der URL geöffnet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/installation/images/multi-org-email.png" width="100%" />
-  <figcaption>Multiple organization user email on failed login.</figcaption>
+  <figcaption>E-Mail-Adresse mehrerer Organisationsbenutzer bei fehlgeschlagener Anmeldung.</figcaption>
 </figure>
 
-### Reset a Password
+### Passwort zurücksetzen
 
-Suppose a user wants to reset the password for one of the organizations to which the user is assigned. In that case, having the organizationId in the login URL is mandatory when filling out the "Forgot Password" form.
+Angenommen, ein Benutzer möchte das Kennwort für eine der Organisationen zurücksetzen, denen der Benutzer zugewiesen ist. In diesem Fall ist die Angabe organizationId in der Anmelde-URL beim Ausfüllen des Formulars "Passwort vergessen" zwingend erforderlich.
 
-### Log in with SSO
+### Melden Sie sich mit SSO an
 
-A user who is part of multiple organizations can log in with SSO using the above same login URL, including the organizationId, and then clicking **LOG IN WITH SSO**.
+Ein Benutzer, der Teil mehrerer Organisationen ist, kann sich mit SSO anmelden, indem er dieselbe Anmelde-URL verwendet, einschließlich der organizationId, und dann auf **MIT SSO ANMELDEN** klicken.
 
-More information on configuring Cognigy.AI with SSO can be found on [Single Sign-on using SAML 2.0](single-signin-saml2.md) page.
+Weitere Informationen zum Konfigurieren von Cognigy.AI mit SSO finden Sie auf der Seite [Single Sign-On mit SAML 2.0](single-signin-saml2.md).
 
-## Automatic Sign-out
+## Automatische Abmeldung
 
-The **Automatic sign-out** feature allows you to set an inactivity period for members of your organization. If a user remains inactive during this period, they will be automatically signed out.
+Mit der Funktion **Automatische Abmeldung** können Sie einen Inaktivitätszeitraum für Mitglieder Ihrer Organisation festlegen. Wenn ein Benutzer während dieses Zeitraums inaktiv bleibt, wird er automatisch abgemeldet.
 
-This feature is available only for on-premises and dedicated SaaS customers. To activate the feature, specify `FEATURE_ENABLE_AUTO_LOGOUT_ON_INACTIVITY= true` in the `values.yaml` file.
+Diese Funktion ist nur für lokale und dedizierte SaaS-Kunden verfügbar. Um die Funktion zu aktivieren, geben Sie in der Datei "values.yaml" "FEATURE_ENABLE_AUTO_LOGOUT_ON_INACTIVITY= true" an.
 
-By default, the inactivity period is set to 15 minutes. You can change this value by specifying `AUTO_LOGOUT_IDLE_TIME_IN_MIN=<your time in minutes>` in the `values.yaml` file.
+Standardmäßig ist der Inaktivitätszeitraum auf 15 Minuten festgelegt. Sie können diesen Wert ändern, indem Sie 'AUTO_LOGOUT_IDLE_TIME_IN_MIN=' <your time="" in="" minutes="">in der Datei 'values.yaml' angeben.
+</your></organisation-id></frontend-url></frontend-url>

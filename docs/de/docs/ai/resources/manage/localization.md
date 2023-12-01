@@ -1,38 +1,38 @@
 ---
-title: "Localization" 
-slug: "localization" 
-hidden: false 
+Titel: "Lokalisierung" 
+slug: "Lokalisierung" 
+ausgeblendet: false 
 ---
 
-# Localization
+# Lokalisierung
 
-Cognigy.AI offers a robust Localization feature for easy customization and content reuse.
+Cognigy.AI bietet eine robuste Lokalisierungsfunktion für eine einfache Anpassung und Wiederverwendung von Inhalten.
 
-With the localization view, you can configure multiple locales.
-If one locale doesn't have content configured, the system automatically falls back to another locale that does.
+In der Lokalisierungsansicht können Sie mehrere Gebietsschemata konfigurieren.
+Wenn für ein Gebietsschema kein Inhalt konfiguriert ist, greift das System automatisch auf ein anderes Gebietsschema zurück, in dem dies der Fall ist.
 
-While you can add additional locales for content localization later on, note that once the primary locale is selected, it cannot be modified.
+Sie können zwar später weitere Gebietsschemata für die Inhaltslokalisierung hinzufügen, beachten Sie jedoch, dass das primäre Gebietsschema nicht mehr geändert werden kann, sobald es ausgewählt ist.
 
-You can localize your Flow in two ways:
+Sie können Ihren Flow auf zwei Arten lokalisieren:
 
-- [Standard Localization](#standard-localization)
-- [Localization with machine translation](../../tools/auto-localization.md) (provider credentials are required)
+- [Standard-Lokalisierung](#standard-Lokalisierung)
+- [Lokalisierung mit maschineller Übersetzung](.. /.. /tools/auto-localization.md) (Anmeldeinformationen des Anbieters sind erforderlich)
 
-## Standard Localization
+## Standard-Lokalisierung
 
-Within standard localization, you manually localize Nodes and Intents without the use of machine translation.
+Bei der Standardlokalisierung lokalisieren Sie Nodes und Intents manuell ohne maschinelle Übersetzung.
 
-### Add a Locale to an Agent
+### Hinzufügen eines Gebietsschemas zu einem Agenten
 
 {! _includes/ai/localization/add-locales.md !}
 
-### Localize a Flow
+### Lokalisieren eines Flows
 
-1. Go to the existing Flow by selecting **Build > Flows**.
-2. In the upper-left corner of the Flow editor, select a locale that you recently created. 
+1. Wechseln Sie zum vorhandenen Flow, indem Sie **Build > Flows** auswählen.
+2. Wählen Sie in der oberen linken Ecke des Flow-Editors ein Gebietsschema aus, das Sie kürzlich erstellt haben. 
 
-When switching localization, the Flow will change its appearance.
-Greyed-out Nodes indicate that they have not been localized yet. 
+Wenn Sie die Lokalisierung wechseln, ändert der Flow sein Aussehen.
+Ausgegraute Knoten zeigen an, dass sie noch nicht lokalisiert wurden. 
 
 {! _includes/ai/localization/switch-a-locale.md !}
 
@@ -40,47 +40,47 @@ Greyed-out Nodes indicate that they have not been localized yet.
   <img class="image-center" src="{{config.site_url}}ai/resources/images/compare-localization-in-flows.jpg" width="100%" />
 </figure>
 
-Now you need to localize each Node separately.
+Jetzt müssen Sie jeden Knoten separat lokalisieren.
 
-#### Add a Locale to a Node
+#### Hinzufügen eines Gebietsschemas zu einem Knoten
 
-To localize a Node manually, follow these steps:
+Gehen Sie folgendermaßen vor, um einen Knoten manuell zu lokalisieren:
 
-1. In the Flow editor, select a Node that you want to localize.
-2. If the Node is not localized yet, click **Add Localization** in the Node editor. If the Node was localized before, delete a previous localization by clicking ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Remove Localization**.
-3. Select one of the following options:
-    - **Add Empty Localization** — create a new locale for the selected Node without any content. It's useful when you want to provide a new translation or content for a specific Node.
-    - **Copy from** — copy the content from an existing locale of the same Node or another source. It's useful when you want to reuse or duplicate content from a different locale.
-4. Fill in the corresponding fields with text that matches the selected locale.
-5. Click **Save Node**.
+1. Wählen Sie im Flow-Editor einen Knoten aus, den Sie lokalisieren möchten.
+2. Wenn der Node noch nicht lokalisiert ist, klicken Sie im Node-Editor auf **Lokalisierung hinzufügen**. Wenn der Knoten zuvor lokalisiert wurde, löschen Sie eine vorherige Lokalisierung, indem Sie auf ! [vertikale-Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) **> Lokalisierung entfernen**.
+3. Wählen Sie eine der folgenden Optionen aus:
+    - **Leere Lokalisierung hinzufügen** – erstellt ein neues Gebietsschema für den ausgewählten Knoten ohne Inhalt. Dies ist nützlich, wenn Sie eine neue Übersetzung oder einen neuen Inhalt für einen bestimmten Node bereitstellen möchten.
+    - **Kopieren von** — Kopiert den Inhalt aus einem vorhandenen Gebietsschema desselben Knotens oder einer anderen Quelle. Dies ist nützlich, wenn Sie Inhalte aus einem anderen Gebietsschema wiederverwenden oder duplizieren möchten.
+4. Füllen Sie die entsprechenden Felder mit Text aus, der dem ausgewählten Gebietsschema entspricht.
+5. Klicken Sie auf **Knoten speichern**.
 
-#### Add a Locale to an Intent
+#### Hinzufügen eines Gebietsschemas zu einem Intent
 
-To localize an Intent, follow these steps:
+Gehen Sie folgendermaßen vor, um ein Intent zu lokalisieren:
 
-1. In the upper-right corner of the Flow editor, select **NLU**.
-2. On the **Intents** tab, select an Intent that you want to localize.
-3. On the **Intent** page, click **Add Localization**. If the Intent was localized before, delete a previous locale by clicking ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Remove Localization**.
-4. Select one of the following options:
-    - **Add Empty Localization** — create a new locale for the selected Intent without any content. It's useful when you want to provide a new translation or content for a specific Intent.
-    - **Copy from** — copy the content from an existing locale of the same Intent or another source. It's useful when you want to reuse or duplicate content from a different locale.
-5. Click **Build model**.
-6. Click **Save**.
+1. Wählen Sie in der oberen rechten Ecke des Flow-Editors **NLU** aus.
+2. Wählen Sie auf der Registerkarte **Absichten** eine Absicht aus, die Sie lokalisieren möchten.
+3. Klicken Sie auf der Seite **Absicht** auf **Lokalisierung hinzufügen**. Wenn die Absicht zuvor lokalisiert wurde, löschen Sie ein vorheriges Gebietsschema, indem Sie auf ! [vertikale-Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) **> Lokalisierung entfernen**.
+4. Wählen Sie eine der folgenden Optionen aus:
+    - **Leere Lokalisierung hinzufügen** – Erstellen Sie ein neues Gebietsschema für die ausgewählte Absicht ohne Inhalt. Dies ist nützlich, wenn Sie eine neue Übersetzung oder einen neuen Inhalt für eine bestimmte Absicht bereitstellen möchten.
+    - **Kopieren von** – Kopieren Sie den Inhalt aus einem vorhandenen Gebietsschema desselben Intent oder einer anderen Quelle. Dies ist nützlich, wenn Sie Inhalte aus einem anderen Gebietsschema wiederverwenden oder duplizieren möchten.
+5. Klicken Sie auf **Modell erstellen**.
+6. Klicken Sie auf **Speichern**.
 
-#### Add a Locale to Multiple Intents
+#### Hinzufügen eines Gebietsschemas zu mehreren Absichten
 
-To localize all Intents within your Flow, follow these steps:
+Gehen Sie folgendermaßen vor, um alle Absichten in Ihrem Flow zu lokalisieren:
 
-1. In the upper-right corner of the Flow editor, select **NLU**.
-2. On the **Intents** tab, on the right side of the **+ Create Intent** button, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) **> Add Localisations to all Intents**.
-3. In the **Add Localizations to all Intents** window, select one of the following options:
-    - **Create empty** — create a new locale for the selected Intent without any content. It's useful when you want to provide a new translation or content for Intents.
-    - **Copy from another locale** — copy the content from an existing locale of the same Intent or another source. It's useful when you want to reuse or duplicate content from a different locale.
-4. _(Optional)_ Activate the **Overwrite already localized Intents** setting to apply changes to all existing Intents within the current Flow locale.
-5. Click **Build model**. 
-6. Click **Save**.
+1. Wählen Sie in der oberen rechten Ecke des Flow-Editors **NLU** aus.
+2. Klicken Sie auf der Registerkarte **Absichten** auf der rechten Seite der Schaltfläche **+ Absicht erstellen** auf ! [vertikale-Auslassungspunkte] (.. /.. /.. /assets/icons/vertical-ellipsis.svg) **> Lokalisierungen zu allen Absichten hinzufügen**.
+3. Wählen Sie im Fenster **Lokalisierungen zu allen Absichten hinzufügen** eine der folgenden Optionen aus:
+    - **Leer erstellen** – erstellt ein neues Gebietsschema für die ausgewählte Absicht ohne Inhalt. Dies ist nützlich, wenn Sie eine neue Übersetzung oder einen neuen Inhalt für Absichten bereitstellen möchten.
+    - **Aus einem anderen Gebietsschema kopieren** – Kopieren Sie den Inhalt aus einem vorhandenen Gebietsschema desselben Intent oder einer anderen Quelle. Dies ist nützlich, wenn Sie Inhalte aus einem anderen Gebietsschema wiederverwenden oder duplizieren möchten.
+4. _(Optional)_ Aktivieren Sie die Einstellung **Bereits lokalisierte Intents überschreiben**, um Änderungen auf alle vorhandenen Intents innerhalb des aktuellen Flow-Gebietsschemas anzuwenden.
+5. Klicken Sie auf **Modell erstellen**. 
+6. Klicken Sie auf **Speichern**.
 
-## More Information
+## Mehr Informationen
 
-- [Automatic Translation](../../tools/auto-localization.md)
-- [Switch Locale Node](../../flow-nodes/logic/switch-locale.md)
+- [Automatische Übersetzung](.. /.. /tools/auto-localization.md)
+- [Gebietsschemaknoten wechseln](.. /.. /flow-nodes/logic/switch-locale.md)

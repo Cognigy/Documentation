@@ -1,41 +1,40 @@
 ---
- title: "Build" 
- slug: "build" 
- hidden: false 
+ Titel: "Bauen" 
+ Schnecke: "bauen" 
+ ausgeblendet: false 
 ---
-# Build
+# Bauen
 
-The Build section allows for the creation of resources that help shape your Virtual Agent. 
+Im Abschnitt "Erstellen" können Sie Ressourcen erstellen, die Ihnen bei der Gestaltung Ihres virtuellen Agenten helfen. 
 
-## Flows
+## Flüsse
 
-The **Flow** is an important (and powerful) concept within Cognigy.AI. It provides a **visual representation of a potential dialog** using a user-friendly flow chart. Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information.
+Der **Flow** ist ein wichtiges (und mächtiges) Konzept innerhalb Cognigy.AI. Es bietet eine **visuelle Darstellung eines möglichen Dialogs** unter Verwendung eines benutzerfreundlichen Flussdiagramms. Flows bestehen aus einzelnen **Nodes** mit unterschiedlichen Funktionalitäten, die von der Generierung von Ausgaben bis hin zum Sammeln von Backend-Informationen reichen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/590536c-flow-small.jpg" width="100%" />
 </figure>
 
+Weitere Informationen finden Sie unter [Flows]({{config.site_url}}ai/resources/build/flows/).
 
-Head over to [Flows]({{config.site_url}}ai/resources/build/flows/) for more information.
+## Lexika
 
-## Lexicons
-
-**Lexicons** are collections of **domain-specific Keyphrases** (also known as **Entities**) that can be attached to a **Flow**. A **Lexicon** can be seen as a dictionary, that allows the **Virtual Agent** to "understand" specific words, like car brands, product groups or zipcodes.
+**Lexika** sind Sammlungen von **domänenspezifischen Schlüsselwörtern** (auch als **Entitäten** bezeichnet), die an einen **Flow** angehängt werden können. Ein **Lexikon** kann als ein Wörterbuch angesehen werden, das es dem **virtuellen Agenten** ermöglicht, bestimmte Wörter wie Automarken, Produktgruppen oder Postleitzahlen zu "verstehen".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/62602a8-lexicon-small.jpg" width="100%" />
 </figure>
 
- Head over to [Lexicons]({{config.site_url}}ai/resources/build/lexicons/) for more information.
+Weitere Informationen finden Sie unter [Lexicons]({{config.site_url}}ai/resources/build/lexicons/).
 
-## Connections
+## Anschlüsse
 
-Connections are encrypted credentials that can be used with [Extensions]({{config.site_url}}ai/resources/build/connections/). The Connections view can be used to update and delete existing Connections. New Connections are created directly within the Extension Nodes that use them.
+Verbindungen sind verschlüsselte Anmeldeinformationen, die mit [Erweiterungen]({{config.site_url}}ai/resources/build/connections/) verwendet werden können. Die Ansicht "Verbindungen" kann verwendet werden, um vorhandene Verbindungen zu aktualisieren und zu löschen. Neue Verbindungen werden direkt in den Erweiterungsknoten erstellt, die sie verwenden.
 
-Head over to [Connections]({{config.site_url}}ai/resources/build/connections/) for more information.
+Weitere Informationen finden Sie unter [Connections]({{config.site_url}}ai/resources/build/connections/).
 
-## NLU Connectors
+## NLU-Steckverbinder
 
-NLU Connectors can be used to connect to third-party NLU engines, like Google Dialogflow and IBM Watson.  
+NLU-Konnektoren können verwendet werden, um eine Verbindung zu NLU-Engines von Drittanbietern wie Google Dialogflow und IBM Watson herzustellen.  
 
-Head over to [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/) for more information.
+Weitere Informationen finden Sie unter [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/).

@@ -1,10 +1,10 @@
 ---
- title: "Cognigy Documentation"
- hidden: false 
- hide:
-  - navigation
-  - toc
-  - footer
+ Titel: "Cognigy Documentation"
+ ausgeblendet: false 
+ verstecken:
+  -Navigation
+  -Toc
+  -Fußzeile
 ---
 
 <style>
@@ -17,16 +17,12 @@
   }
 </style>
 
-#
-
-<figure >
+#<figure>
   <img class="image-center logo-home-page" src="{{config.site_url}}assets/img/Cognigy-blue.svg" width="50%" />
   <br>
 </figure>
 
-<b>Welcome to the Cognigy developer documentation!</b> Cognigy enables enterprises to easily create and operate AI-powered virtual agents to automatically handle calls and chats from customers and employees. Choose a product line and explore all features and platform capabilities.
-
-<h3>Choose a product:</h3>
+<b>Willkommen bei der Cognigy-Entwicklerdokumentation!</b> Cognigy ermöglicht es Unternehmen, auf einfache Weise KI-gestützte virtuelle Agenten zu erstellen und zu betreiben, um Anrufe und Chats von Kunden und Mitarbeitern automatisch zu bearbeiten. Wählen Sie eine Produktlinie und entdecken Sie alle Funktionen und Plattformmöglichkeiten.<h3>Wählen Sie ein Produkt:</h3>
 <div class="divider"></div>
 
 <div class="card-container">
@@ -35,7 +31,7 @@
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/AI-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
-        <h3><b>Virtual Agents</b></h3>
+        <h3><b>Virtuelle Agenten</b></h3>
       </div>
     </div>
   </a>
@@ -44,7 +40,7 @@
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/IN-blue.svg" alt="Cognigy Logo" >
       <div class="item-container">
-        <h3><b>Insights</b></h3>
+        <h3><b>Einblicke</b></h3>
       </div>
     </div>
   </a>
@@ -53,7 +49,7 @@
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/webchat-svg.svg" alt="Cognigy Logo">
       <div class="item-container">
-        <h3><b>Webchat Widget</b></h3>
+        <h3><b>Webchat-Widget</b></h3>
       </div>
     </div>
   </a>
@@ -66,7 +62,7 @@
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/ai-copilot-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
-        <h3><b>AI Copilot</b></h3>
+        <h3><b>KI-Copilot</b></h3>
       </div>
     </div>
   </a>
@@ -75,7 +71,7 @@
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
-        <h3><b>Live Agent</b></h3>
+        <h3><b>Live-Agent</b></h3>
       </div>
     </div>
   </a>
@@ -84,14 +80,14 @@
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/VG-blue.svg" alt="Cognigy Logo">
       <div class="item-container">
-        <h3><b>Voice Gateway</b></h3>
+        <h3><b>Sprach-Gateway</b></h3>
       </div>
     </div>
   </a>
 
 </div>
 
-<h3>More developer resources & learning materials</h3>
+<h3>Weitere Ressourcen und Lernmaterialien für Entwickler</h3>
 
 <div class="card-container">
 
@@ -99,8 +95,8 @@
     <div class="card">
       <img class="card-2-image" src="{{config.site_url}}assets/img/something-002.svg">
       <div class="item-2-container">
-        <h3><b>Cognigy<br/>Help Center</b></h3>
-        <p>Browse our step-by-step tutorials, how-to's, and best practices</p>
+        <h3><b>Cognigy<br/>Hilfe-Center</b></h3>
+        <p>Stöbern Sie in unseren Schritt-für-Schritt-Tutorials, Anleitungen und Best Practices</p>
       </div>
     </div>
   </a>
@@ -109,8 +105,8 @@
     <div class="card">
       <img class="card-2-image" src="{{config.site_url}}assets/img/something-001.svg">
       <div class="item-2-container">
-        <h3><b>Cognigy Academy</b></h3>
-        <p>Enroll in our free video courses and become a certified expert</p>
+        <h3><b>Cognigy Akademie</b></h3>
+        <p>Melden Sie sich für unsere kostenlosen Videokurse an und werden Sie zertifizierter Experte</p>
       </div>
     </div>
   </a>
@@ -119,8 +115,8 @@
     <div class="card">
       <img class="card-2-image" src="{{config.site_url}}assets/img/something-003.svg">
       <div class="item-2-container">
-        <h3><b>Community</b></h3>
-        <p>Ask questions and share your ideas with the community!</p>
+        <h3><b>Gemeinschaft</b></h3>
+        <p>Stellen Sie Fragen und teilen Sie Ihre Ideen mit der Community!</p>
       </div>
     </div>
   </a>
@@ -129,8 +125,8 @@
     <div class="card">
       <img class="card-2-image" style="padding: 10px" src="{{config.site_url}}/assets/img/product-blog.svg">
       <div class="item-2-container">
-        <h3><b>Product Blog</b></h3>
-        <p>Browse our latest articles and learn about Cognigy.AI</p>
+        <h3><b>Produkt-Blog</b></h3>
+        <p>Stöbern Sie in unseren neuesten Artikeln und erfahren Sie mehr über Cognigy.AI</p>
       </div>
     </div>
   </a>

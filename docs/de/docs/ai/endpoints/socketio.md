@@ -1,7 +1,7 @@
 ---
- title: "Socket.io" 
- slug: "socketio" 
- hidden: false 
+ Titel: "Socket.io" 
+ Schnecke: "socketio" 
+ ausgeblendet: false 
 ---
 # Socket.io
 
@@ -9,76 +9,68 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/603e5e6-socket-io-logo.svg" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **socket.io** client by using our Socket Endpoint integration.
+Innerhalb unserer **Cognigy.AI** Plattform können Sie Ihre Cognigy-Ressourcen mit Ihrem **socket.io** Client verbinden, indem Sie unsere Socket Endpoint-Integration verwenden.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+## Verbinden Sie Ihre Anwendung<div class="divider"></div>### URL-Token
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
-
-## Connect your Application
-
-<div class="divider"></div>
-
-### URL Token
-
-The URL Token is the last part of the displayed Endpoint URL:
+Das URL-Token ist der letzte Teil der angezeigten Endpunkt-URL:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dfe50b1-EP_Socket_URL_token.png" width="100%" />
 </figure>
 
-In the given example you would connect to **https://endpoint-trial.cognigy.ai**.
+Im angegebenen Beispiel würden Sie eine Verbindung zu **https://endpoint-trial.cognigy.ai** herstellen.
 
-### Sending Messages
+### Nachrichten senden
 
-Messages are sent by using the **processInput** event with a payload of the following format:
+Nachrichten werden mithilfe des **processInput**-Ereignisses mit einer Nutzlast im folgenden Format gesendet:
 
-```JSON
+'''JSON
 {
     "URLToken": "urlToken",
     "sessionId": "sessionId",
     "userId": "user@cognigy.com",
     "passthroughIP": "127.0.0.1",
-    "resetFlow": "false",  // Resets the flow and starts a new one from the beginning
-    "text": "Example text",  // Can be skipped with "resetFlow": true
-    "data": {
-        "key": "value"
+    "resetFlow": "false", // Setzt den Flow zurück und beginnt einen neuen von vorne
+    "text": "Beispieltext", // Kann mit "resetFlow" übersprungen werden: true
+    "Daten": {
+        "key": "Wert"
     }
 }
-```
+'''
 
-When the `resetFlow` flag is set to `true`, the new flow will start from the beginning. Such payload may or may not have a message. If it does then this message will become the first one in a new flow. Don't forget to set `resetFlow` flag to `false` when sending the following messages, otherwise each such message will start a new flow.
+Wenn das Flag "resetFlow" auf "true" gesetzt ist, beginnt der neue Flow von vorne. Eine solche Nutzlast kann eine Nachricht enthalten oder auch nicht. Wenn dies der Fall ist, wird diese Nachricht die erste in einem neuen Flow. Vergessen Sie nicht, das 'resetFlow'-Flag auf 'false' zu setzen, wenn Sie die folgenden Nachrichten senden, da sonst jede dieser Nachrichten einen neuen Flow startet.
 
-### Receiving Messages
+### Empfangen von Nachrichten
 
-Messages can be received by listening to the **output** event. The responses have the following format:
+Nachrichten können empfangen werden, indem das Ereignis **output** überwacht wird. Die Antworten haben das folgende Format:
 
-```JSON
+'''JSON
 {
-  "type":"output",
-  "data":
+  "type":"Ausgabe",
+  "Daten":
   {
     "text":"responseText",
-    "data":
+    "Daten":
     {
-      "key":"value"
+      "key":"Wert"
     }
   }
 }
-```
+'''
 
 ### Cognigy Socket Client
-Cognigy provides a socket client for connecting with a Cognigy Socket Endpoint. The documentation and open source code for this client is available on the [Cognigy GitHub Page](https://github.com/Cognigy/SocketClient)
+Cognigy stellt einen Socket-Client für die Verbindung mit einem Cognigy-Socket-Endpunkt bereit. Die Dokumentation und der Open-Source-Code für diesen Client sind auf der [Cognigy GitHub Page](https://github.com/Cognigy/SocketClient) verfügbar.

@@ -1,361 +1,361 @@
 ---
- title: "Migration guide for Helm dependencies in Live Agent 4.44" 
- slug: "migration-guide-helm-dependencies-4.44" 
- hidden: false 
+ title: "Migrationsleitfaden für Helm-Abhängigkeiten in Live Agent 4.44" 
+ Slug: "migration-guide-helm-dependencies-4.44" 
+ ausgeblendet: false 
 ---
 
-# Migration guide for Helm dependencies in Live Agent 4.44
+# Migrationsleitfaden für Helm-Abhängigkeiten in Live Agent 4.44
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.44-blue.svg)](../../../release-notes/4.44.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.44-blue.svg)] (.. /.. /.. /release-notes/4.44.md)
 
-This is a migration guide for the Live Agent 4.44 version upgrade. This release upgrades the PostgreSQL and Redis dependency versions. This breaking change requires manual data migration if you are not using them externally.
+Dies ist ein Migrationsleitfaden für das Upgrade der Live Agent 4.44-Version. Mit dieser Version werden die Abhängigkeitsversionen von PostgreSQL und Redis aktualisiert. Diese wichtige Änderung erfordert eine manuelle Datenmigration, wenn Sie sie nicht extern verwenden.
 
-In the case of Redis, it works out of the box, but for PostgreSQL, you need to migrate the data from the old database to the new one.
+Im Fall von Redis funktioniert es sofort nach dem Auspacken, aber für PostgreSQL müssen Sie die Daten von der alten Datenbank in die neue migrieren.
 
-## Pre-migration preparations
+## Vorbereitungen vor der Migration
 
-### Change values.yaml
+### Werte.yaml ändern
 
-Values under `.Values.postgresql` are also affected. Make the necessary changes to your custom `values.yaml` file.
+Werte unter '. Values.postgresql' sind ebenfalls betroffen. Nehmen Sie die erforderlichen Änderungen an Ihrer benutzerdefinierten Datei "values.yaml" vor.
 
-| Old Value                                     | New Value                                            |
+| Alter Wert | Neuer Wert |
 |-----------------------------------------------|------------------------------------------------------|
-| `Values.postgresql.postgresqlDatabase`        | `Values.postgresql.auth.database`                    |
-| `Values.postgresql.postgresqlUsername`        | `Values.postgresql.auth.username`                    |
-| `Values.postgresql.postgresqlPassword`        | `Values.postgresql.auth.postgresPassword`            |
-| `Values.postgresql.postgresqlHost`            | `Values.postgresql.host`                             |
-| `Values.postgresql.postgresqlPort`            | `Values.postgresql.port`                             |
-| `Values.postgresql.existingSecret`            | `Values.postgresql.auth.existingSecret`              |
-| `Values.postgresql.existingPasswordSecretKey` | `Values.postgresql.auth.secretKeys.adminPasswordKey` |
+| 'Werte.postgresql.postgresqlDatenbank' | 'Werte.postgresql.auth.database' |
+| 'Werte.postgresql.postgresqlBenutzername' | 'Werte.postgresql.auth.username' |
+| 'Werte.postgresql.postgresqlPasswort' | 'Werte.postgresql.auth.postgresPassword' |
+| 'Werte.postgresql.postgresqlHost' | 'Werte.postgresql.host' |
+| 'Werte.postgresql.postgresqlPort' | 'Werte.postgresql.port' |
+| 'Werte.postgresql.existingSecret' | 'Werte.postgresql.auth.existingSecret' |
+| 'Werte.postgresql.existingPasswordSecretKey' | 'Werte.postgresql.auth.secretKeys.adminPasswordKey' |
 
-The cognigy-live-agent deployment is now called `cognigy-live-agent-app`. The change also applies to the service and ingress in your custom `values.yaml` file.
+Das cognigy-live-agent-Deployment heißt jetzt 'cognigy-live-agent-app'. Die Änderung gilt auch für den Dienst und den Eingang in Ihrer benutzerdefinierten Datei "values.yaml".
 
-#### Old values
+#### Alte Werte
 
-```yaml
-ingress:
-  enabled: true
-  annotations:
+'''Yaml
+Eintritt:
+  Aktiviert: true
+  Anmerkungen:
     kubernetes.io/ingress.class: traefik
-  hosts:
-    - host: '<host>'
-      paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              # Same value as service.name above
-              name: cognigy-live-agent
-              port:
-                number: 3000
+  Wirte:
+    - Gastgeber: '<host>'
+      Pfade:
+        -Pfad:/
+          pathType: Präfix
+          Backend:
+            Dienst:
+              # Derselbe Wert wie service.name oben
+              Name: Cognigy-Live-Agent
+              Hafen:
+                Nummer: 3000
 
-service:
-  name: cognigy-live-agent
-  internalPort: 3000
+Dienst:
+  Name: Cognigy-Live-Agent
+  interner Anschluss: 3000
   targetPort: 3000
-  type: ClusterIP
-  annotations: {}
-```
+  Typ: ClusterIP
+  Anmerkungen: {}
+'''
 
-#### New values
+#### Neue Werte
 
-```yaml
-ingress:
-  enabled: true
-  annotations:
+'''Yaml
+Eintritt:
+  Aktiviert: true
+  Anmerkungen:
     kubernetes.io/ingress.class: traefik
-  hosts:
-    - host: '<host>'
-      paths:
-        - path: /
-          pathType: Prefix
-          backend:
-            service:
-              # Same value as service.name above
-              name: cognigy-live-agent-app
-              port:
-                number: 3000
+  Wirte:
+    - Gastgeber: '<host>'
+      Pfade:
+        -Pfad:/
+          pathType: Präfix
+          Backend:
+            Dienst:
+              # Derselbe Wert wie service.name oben
+              Name: cognigy-live-agent-app
+              Hafen:
+                Nummer: 3000
 
-service:
-  name: cognigy-live-agent-app
-  internalPort: 3000
+Dienst:
+  Name: cognigy-live-agent-app
+  interner Anschluss: 3000
   targetPort: 3000
-  type: ClusterIP
-  annotations: {}
-```
+  Typ: ClusterIP
+  Anmerkungen: {}
+'''
 
-### Create backup-pod.yaml
+### backup-pod.yaml erstellen
 
-A backup pod is required to access the PostgreSQL database. This pod will create a backup and restore it to the new database. The size of the backup pod must be at least three times bigger to store the dump.
+Für den Zugriff auf die PostgreSQL-Datenbank ist ein Backup-Pod erforderlich. Dieser Pod erstellt ein Backup und stellt es in der neuen Datenbank wieder her. Die Größe des Backup-Pods muss mindestens dreimal so groß sein, dass der Dump gespeichert werden kann.
 
-#### Calculate the size of the database
+#### Berechnen Sie die Größe der Datenbank
 
-For knowing the size of the database, you can run the following command:
+Um die Größe der Datenbank zu ermitteln, können Sie den folgenden Befehl ausführen:
 
-```sh
-kubectl exec -n live-agent -it <postgresql-pod-name> -- psql -U <postgresql-username> -d live_agent_production -c "SELECT pg_database_size('live_agent_production')/1024/1024/1024 AS size_in_gb;"
-```
+'''sch
+kubectl exec -n live-agent -it <postgresql-pod-name> -- psql -U - <postgresql-username> d live_agent_production -c "SELECT pg_database_size('live_agent_production')/1024/1024/1024 AS size_in_gb;"
+'''
 
-The output will be something like this:
+Die Ausgabe sieht in etwa so aus:
 
-```sh
+'''sch
  size_in_gb
 ------------
   1.0000000
-(1 row)
-```
+(1 Reihe)
+'''
 
-The size of the backup pod should be at least 3 GB.
+Die Größe des Backup-Pods sollte mindestens 3 GB betragen.
 
 #### backup-pod.yaml
 
-```yaml
-# Create a new file backup-pod.yaml
+'''Yaml
+# Erstellen Sie eine neue Datei backup-pod.yaml
 apiVersion: storage.k8s.io/v1
 allowVolumeExpansion: true
-kind: StorageClass
-metadata:
-  name: postgres-backup
-provisioner: ebs.csi.aws.com
+Kunst: StorageClass
+Metadaten:
+  Name: postgres-backup
+Anbieter: ebs.csi.aws.com
 volumeBindingMode: WaitForFirstConsumer
-parameters:
-  type: gp3
-  encrypted: 'true'
-  fsType: ext4
-reclaimPolicy: Retain
+Parameter:
+  Typ: GP3
+  Verschlüsselt: 'true'
+  fsTyp: ext4
+reclaimPolicy: Beibehalten
 
 ---
 apiVersion: apps/v1
-kind: StatefulSet
-metadata:
-  labels:
-    app: postgres-backup
-  name: postgres-backup
-  namespace: live-agent
-spec:
+Art: Zustandsbehaftetes Set
+Metadaten:
+  Etiketten:
+    App: Postgres-Backup
+  Name: postgres-backup
+  Namensraum: live-agent
+Spekulation:
   serviceName: postgres-backup
-  replicas: 1
-  selector:
+  Repliken: 1
+  Selektor:
     matchLabels:
-      app: postgres-backup
-  template:
-    metadata:
-      name: postgres-backup
-      labels:
-        app: postgres-backup
-    spec:
-      containers:
-        - image: postgres:11-alpine
-          name: postgres-backup
-          env:
-            - name: POSTGRES_PASSWORD
-              value: postgres # This is the password for the postgres admin user (can be obtained from the secret `cognigy-live-agent-postgresql`)
-            - name: PGPASSWORD
-              value: postgres # This is the password for the postgres admin user (can be obtained from the secret `cognigy-live-agent-postgresql`)
-            - name: POSTGRES_USER
-              value: postgres # This is the username specified in the values.yaml file
-            # - name: PGDATA
-            # value: /var/lib/postgresql/data/pgdata
-          ports:
-            - containerPort: 5432
-          resources: {}
+      App: Postgres-Backup
+  Schablone:
+    Metadaten:
+      Name: postgres-backup
+      Etiketten:
+        App: Postgres-Backup
+    Spekulation:
+      Container:
+        - Bild: Postgres:11-Alpine
+          Name: postgres-backup
+          Env:
+            - Bezeichnung: POSTGRES_PASSWORD
+              value: postgres # Dies ist das Passwort für den Postgres-Admin-Benutzer (kann aus dem Geheimnis 'cognigy-live-agent-postgresql' abgerufen werden)
+            - Name: PGPASSWORD
+              value: postgres # Dies ist das Passwort für den Postgres-Admin-Benutzer (kann aus dem Geheimnis 'cognigy-live-agent-postgresql' abgerufen werden)
+            - Bezeichnung: POSTGRES_USER
+              value: postgres # Dies ist der Benutzername, der in der Datei values.yaml angegeben ist
+            # - Name: PGDATA
+            # Wert: /var/lib/postgresql/data/pgdata
+          Häfen:
+            - containerHafen: 5432
+          Ressourcen: {}
           volumeMounts:
             - mountPath: /mnt/postgres-backup
-              name: postgres-backup-claim
-      restartPolicy: Always
+              Name: postgres-backup-claim
+      restartPolicy: Immer
   volumeClaimTemplates:
-    - metadata:
-        name: postgres-backup-claim
-      spec:
+    -Metadaten:
+        Name: postgres-backup-claim
+      Spekulation:
         accessModes: ['ReadWriteOnce']
         storageClassName: 'postgres-backup'
-        resources:
-          requests:
-            storage: 100Gi # This is the size of the backup pod
+        Betriebsmittel:
+          Aufforderungen:
+            Speicher: 100Gi # Dies ist die Größe des Backup-Pods
 
 ---
 apiVersion: v1
-kind: Service
-metadata:
-  labels:
-    app: postgres-backup
-  name: postgres-backup
-  namespace: live-agent
-spec:
-  ports:
-    - name: 'postgres-backup'
-      port: 5432
+Art: Dienstleistung
+Metadaten:
+  Etiketten:
+    App: Postgres-Backup
+  Name: postgres-backup
+  Namensraum: live-agent
+Spekulation:
+  Häfen:
+    - Name: 'postgres-backup'
+      Hafen: 5432
       targetPort: 5432
-  selector:
-    app: postgres-backup
-  clusterIP: None
-```
+  Selektor:
+    App: Postgres-Backup
+  clusterIP: Keine
+'''
 
-To deploy the backup pod, run the following command:
+Führen Sie den folgenden Befehl aus, um den Backup-Pod bereitzustellen:
 
-```sh
+'''sch
 kubectl apply -n live-agent -f backup-pod.yaml
-```
+'''
 
-## Migration steps
+## Schritte zur Migration
 
-### Step 1. Set the replica count to 0
+### Schritt 1. Legen Sie die Anzahl der Replikate auf 0 fest.
 
-For app and worker replica sets, specify `0` in the replica count. It ensures that the database will not have any activity and the data will be backed up safely.
+Geben Sie für App- und Workerreplikatgruppen in der Anzahl der Replikate den Wert "0" an. Es stellt sicher, dass die Datenbank keine Aktivität aufweist und die Daten sicher gesichert werden.
 
-```sh
-kubectl scale --replicas=0 -n live-agent deployment/cognigy-live-agent
-kubectl scale --replicas=0 -n live-agent deployment/cognigy-live-agent-worker
-kubectl scale --replicas=0 -n live-agent deployment/cognigy-live-agent-odata
-```
+'''sch
+kubectl scale --replicas=0 -n Live-Agent-Bereitstellung/cognigy-live-agent
+kubectl scale --replicas=0 -n live-agent-bereitstellung/cognigy-live-agent-worker
+kubectl scale --replicas=0 -n Live-Agent-Bereitstellung/cognigy-live-agent-odata
+'''
 
-!!! note
-    In the previous version, the `cognigy-live-agent-app` deployment is still called `cognigy-live-agent`.
+!!! Anmerkung
+    In der vorherigen Version hieß das Deployment "cognigy-live-agent-app" immer noch "cognigy-live-agent".
 
-### Step 2. Attach a shell to the PostgreSQL backup pod and make a backup of the Live Agent database
+### Schritt 2. Fügen Sie eine Shell an den PostgreSQL-Backup-Pod an und erstellen Sie eine Sicherung der Live Agent-Datenbank
 
-Log in to the postgres-backup pod and create a dump of the `live_agent_production` database.
+Melden Sie sich beim postgres-backup-Pod an und erstellen Sie einen Dump der "live_agent_production"-Datenbank.
 
-```sh
+'''sch
 kubectl exec -n live-agent -it postgres-backup-0 -- bash
 
-# Inside the PostgreSQL backup pod
+# Innerhalb des PostgreSQL-Backup-Pods
 cd /mnt/postgres-backup/
 
 nohup time pg_dump --user $POSTGRES_USER --host cognigy-live-agent-postgresql -d live_agent_production > live_agent_production-postgres-dump.sql &
 
-# (Alternative) Take a compressed dump, but this takes longer
-nohup pg_dump --user $POSTGRES_USER --host cognigy-live-agent-postgresql -Fc -d live_agent_production > live_agent_production-postgres-dump.sql &
-```
+# (Alternative) Einen komprimierten Dump erstellen, aber das dauert länger
+nohup pg_dump --user $POSTGRES_USER --host cognigy-live-agent-postgresql -fc -d live_agent_production > live_agent_production-postgres-dump.sql &
+'''
 
-The prefix `nohup` and suffix `&` are used in the `pg_dump` command to run it in the background. You can bring the background command of the current session with the `fg` command and check the status of the background jobs with the `jobs` command.
+Das Präfix 'nohup' und das Suffix '&' werden im Befehl 'pg_dump' verwendet, um ihn im Hintergrund auszuführen. Sie können den Hintergrundbefehl der aktuellen Sitzung mit dem Befehl 'fg' importieren und den Status der Hintergrundjobs mit dem Befehl 'jobs' überprüfen.
 
-```sh
-bash-5.1# jobs
-[1]+  Running                 nohup pg_dump --user $POSTGRES_USER --host cognigy-live-agent-postgresql -d live_agent_production > live_agent_production-postgres-dump.sql &
+'''sch
+bash-5.1# Jobs
+[1]+ Ausführen von nohup pg_dump --user $POSTGRES_USER --host cognigy-live-agent-postgresql -d live_agent_production > live_agent_production-postgres-dump.sql &
 
-# Once it has finished, check the output of the backup file
+# Wenn es fertig ist, überprüfen Sie die Ausgabe der Backup-Datei
 cat live_agent_production-postgres-dump.sql
 
-exit
-```
+Ausgang
+'''
 
-Once done, `jobs` command should give no output.
+Sobald dies erledigt ist, sollte der Befehl 'jobs' keine Ausgabe ausgeben.
 
-### Step 3. Delete current release and check PVC reclaim policy
+### Schritt 3. Löschen Sie die aktuelle Version und überprüfen Sie die Richtlinie für die PVC-Rückgewinnung
 
-When the PostgreSQL and Redis versions have changed, the PVCs become incompatible with the new versions. To recover compatibility, delete the current release and the PVCs, then check the Live Agent PVC reclaim policy.
+Wenn sich die PostgreSQL- und Redis-Versionen geändert haben, sind die PVCs nicht mehr mit den neuen Versionen kompatibel. Um die Kompatibilität wiederherzustellen, löschen Sie die aktuelle Version und die PVCs, und überprüfen Sie dann die Richtlinie für die PVC-Rückforderung von Live Agent.
 
-```sh
-# Check that PVs are set as Retain:
+'''sch
+# Überprüfen Sie, ob PVs auf Beibehalten gesetzt sind:
 kubectl get pv
-# Patch the reclaim policy for the EFS storage PV, set <pv-name> to the name from the previous command
-# Repeat for any PV related to LA that is not set to "Retain"
-kubectl patch pv <pv-name> -p '{"spec":{"persistentVolumeReclaimPolicy":"Retain"}}'
-# Check that the reclaim policy is set to "Retain":
+# Patchen Sie die Rückforderungsrichtlinie für den EFS-Speicher-PV, <pv-name> die auf den Namen aus dem vorherigen Befehl festgelegt ist
+# Wiederholen Sie den Vorgang für alle PV-Vorgänge im Zusammenhang mit LA, die nicht auf "Retain" eingestellt sind
+kubectl patch pv -p '{"spec": {" <pv-name> persistentVolumeReclaimPolicy":"Behalten"}}'
+# Vergewissern Sie sich, dass die Rückforderungsrichtlinie auf "Behalten" eingestellt ist:
 kubectl get pv
 
-# Delete the current release
+# Aktuelle Version löschen
 helm delete -n live-agent cognigy-live-agent
 
-# Change the EFS storage PV status from "Released" to "Available"
-kubectl patch pv <pv-name> -p '{"spec":{"claimRef": null}}'
+# Ändern Sie den EFS-Speicher-PV-Status von "Freigegeben" auf "Verfügbar"
+kubectl patch pv -p '{"spec": {" <pv-name> claimRef": null}}'
 
-# Check the PVCs
+# Überprüfen Sie die PVCs
 kubectl get pvc -n live-agent
 
-# These commands will delete the database volumes. Make sure a backup was done before proceeding
+# Mit diesen Befehlen werden die Datenbank-Volumes gelöscht. Stellen Sie sicher, dass ein Backup erstellt wurde, bevor Sie fortfahren
 kubectl delete pvc -n live-agent <data-postgres>
 kubectl delete pvc -n live-agent <redis>
 kubectl delete pvc -n live-agent <redis-replica>
-```
+'''
 
-### Step 4. Delete or modify existing database secrets
+### Schritt 4. Löschen oder Ändern vorhandener Datenbankgeheimnisse
 
-The existing secrets need to be deleted or modified with the new keys. The system automatically generates new secrets in a new release if existing secrets are not specified in the values file.
+Die vorhandenen Geheimnisse müssen gelöscht oder mit den neuen Schlüsseln geändert werden. Das System generiert automatisch neue Geheimnisse in einem neuen Release, wenn vorhandene Geheimnisse nicht in der Wertedatei angegeben sind.
 
-=== "Delete the secrets (recommended)"
+=== "Löschen Sie die Geheimnisse (empfohlen)"
 
-    We recommend deleting the existing secrets and leaving the password fields commented in the values file for getting autogenerated ones.
+Es wird empfohlen, die vorhandenen Geheimnisse zu löschen und die Kennwortfelder in der Wertedatei kommentiert zu lassen, um automatisch generierte Geheimnisse zu erhalten.
 
-    ```sh
-    # Delete the secrets
+'''sch
+    # Löschen Sie die Geheimnisse
     kubectl delete secret -n live-agent cognigy-live-agent-postgresql
     kubectl delete secret -n live-agent cognigy-live-agent-redis
-    ```
+    '''
 
-=== "Modify the existing secrets"
+=== "Ändere die vorhandenen Geheimnisse"
 
-    As an alternative to deleting the secrets, you can modify the existing ones. The only change when using internal PostgreSQL is the new PostgreSQL secret. It needs to contain the following keys:
+Als Alternative zum Löschen der Geheimnisse können Sie die vorhandenen ändern. Die einzige Änderung bei der Verwendung von internem PostgreSQL ist das neue PostgreSQL-Geheimnis. Es muss die folgenden Schlüssel enthalten:
 
-    ```sh
-    # The PostgreSQL admin password (.Values.postgresql.auth.secretKeys.adminPasswordKey)
-    postgres-password
-    # New field - The PostgreSQL user password
-    password
-    ```
+'''sch
+    # Das PostgreSQL-Admin-Passwort (. Werte.postgresql.auth.secretKeys.adminPasswordKey)
+    postgres-passwort
+    # Neues Feld - Das PostgreSQL-Benutzerpasswort
+    Passwort
+    '''
 
-    The values `postgresql.auth.existingSecret` and `postgresql.auth.secretKeys.adminPasswordKey` are set to `postgres-password` and `password` by default and need to be uncommented for using the created secret.   
+Die Werte 'postgresql.auth.existingSecret' und 'postgresql.auth.secretKeys.adminPasswordKey' sind standardmäßig auf 'postgres-password' und 'password' gesetzt und müssen für die Verwendung des erstellten Secrets auskommentiert werden.   
 
-### Step 5. Install the chart version 4.44.0
+### Schritt 5. Installieren der Diagrammversion 4.44.0
 
-To restore the previous backup, install the new release without the migrations job running or the deployments accessing the DB as it is empty. Set the migrations job to false in the custom-values.yaml file and decrease the replica count to 0 for both the app and worker:
+Um die vorherige Sicherung wiederherzustellen, installieren Sie die neue Version, ohne dass der Migrationsauftrag ausgeführt wird oder die Bereitstellungen auf die Datenbank zugreifen, da diese leer ist. Legen Sie den Migrationsauftrag in der Datei custom-values.yaml auf false fest, und verringern Sie die Anzahl der Replikate sowohl für die App als auch für den Worker auf 0:
 
-```yaml
-# custom-values.yaml
-app:
-  replica: 0
+'''Yaml
+# benutzerdefinierte-werte.yaml
+App:
+  Replika: 0
 
-worker:
-  replica: 0
+Arbeiter:
+  Replika: 0
 
-odata:
-  enabled: false
+OData:
+  Aktiviert: false
 
-migration:
-  enabled: false
-```
+Migration:
+  Aktiviert: false
+'''
 
-Install the new version of the chart:
+Installieren Sie die neue Version des Diagramms:
 
-```sh
+'''sch
 helm install cognigy-live-agent oci://cognigy.azurecr.io/helm/live-agent --version 4.44.0 --namespace live-agent -f custom-values.yaml
-```
+'''
 
-Then the only pods running will be the EFS, PostgreSQL and Redis ones.
+Dann werden nur noch die Pods EFS, PostgreSQL und Redis ausgeführt.
 
-### Step 6. Restore backup to the new PostgreSQL pod
+### Schritt 6. Wiederherstellen des Backups auf dem neuen PostgreSQL-Pod
 
-Attach a shell to the PostgreSQL backup pod and restore the 'live_agent_production' database to the new PostgreSQL pod.
+Fügen Sie eine Shell an den PostgreSQL-Backup-Pod an und stellen Sie die "live_agent_production"-Datenbank auf dem neuen PostgreSQL-Pod wieder her.
 
-```sh
-# Log in to the postgres-backup-0 pod
+'''sch
+# Melden Sie sich beim postgres-backup-0-Pod an
 kubectl exec -n live-agent -it postgres-backup-0 -- bash
 
-# Get the password of the new PostgreSQL from the `cognigy-live-agent-postgresql` secret key `postgres-password` and export it to `PGPASSWORD` environment variable
+# Holen Sie sich das Passwort des neuen PostgreSQL aus dem geheimen Schlüssel 'cognigy-live-agent-postgresql' 'postgres-password' und exportieren Sie es in die Umgebungsvariable 'PGPASSWORD'
 export PGPASSWORD=<password>
 
-# Connect to the newly deployed PostgreSQL DB with the `psql` command
+# Verbinden Sie sich mit der neu bereitgestellten PostgreSQL-Datenbank mit dem Befehl 'psql'
 psql --host cognigy-live-agent-postgresql -U postgres -d postgres -p 5432
 
-# List details of DBs
+# Details von DBs auflisten
 \l+
 
-DROP DATABASE live_agent_production;
+DATENBANK live_agent_production LÖSCHEN;
 
-create database live_agent_production;
+Datenbank-live_agent_production erstellen;
 
-grant all privileges on database live_agent_production to postgres;
+Erteilen Sie Postgres alle Berechtigungen für Datenbank live_agent_production;
 
-# List details of DBs
+# Details von DBs auflisten
 \l+
 
-# quit
+# beenden
 \q
 
 cd /mnt/postgres-backup/
 
-# Restore the data from old postgres. This takes some time
+# Stellen Sie die Daten aus dem alten Postgres wieder her. Dies nimmt einige Zeit in Anspruch
 nohup time psql --host cognigy-live-agent-postgresql -U postgres -d live_agent_production < live_agent_production-postgres-dump.sql &
 
 # (Optional) Once restored, check postgres disk usages
@@ -415,6 +415,7 @@ kubectl delete statefulset -n live-agent postgres-backup
 kubectl delete service -n live-agent postgres-backup
 kubectl delete sc postgres-backup
 kubectl delete pvc -n live-agent <postgres-backup-pvc>
-```
+'''
 
-Remember to review that the released persistent volumes are deleted. If you have any issues, [contact technical support](https://support.cognigy.com/hc/en-us/requests/new?).
+Denken Sie daran, zu überprüfen, ob die freigegebenen persistenten Volumes gelöscht wurden. Wenn Sie Probleme haben, [technischen Support kontaktieren](https://support.cognigy.com/hc/en-us/requests/new?).
+</postgres-backup-pvc></password></redis-replica></redis></data-postgres></pv-name></pv-name></pv-name></postgresql-username></postgresql-pod-name></host></host>

@@ -1,9 +1,9 @@
 ---
- title: "Release notes LA" 
- slug: "release-notes-la" 
- hidden: false 
+ Titel: "Release Notes LA" 
+ Slug: "release-notes-la" 
+ ausgeblendet: false 
 ---
 
-# Release notes
+# Versionshinweise
 
-More information on individual releases for Cognigy Live Agent can be found on our [central release notes]({{config.site_url}}/release-notes/release-notes/) page. In case you need more information for releases older than v4.30, [go here]({{config.site_url}}/live-agent/release-notes/pre-4.30/).
+Weitere Informationen zu den einzelnen Releases für Cognigy Live Agent finden Sie auf unserer Seite [central release notes]({{config.site_url}}/release-notes/release-notes/). Falls Sie weitere Informationen zu Versionen benötigen, die älter als v4.30 sind, [gehen Sie hier]({{config.site_url}}/live-agent/release-notes/pre-4.30/).

@@ -1,60 +1,57 @@
 ---
- title: "Execute Flow" 
- slug: "execute-flow" 
- hidden: false 
+ title: "Flow ausführen" 
+ slug: "Ausführen-Flow" 
+ ausgeblendet: false 
 ---
-# Execute Flow
+# Flow ausführen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/execute-flow.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein Execute Flow Node wird verwendet, um sofort einen anderen Flow auszuführen.
 
-An Execute Flow Node is used to immediately execute another Flow.
+Nachdem die Ausführung des Ziel-Flows abgeschlossen ist, wird der aktuelle Flow weiter ausgeführt.
 
-After the target Flow finished executing, the current Flow will continue executing.
+Cognigy überwacht, wie oft ein Execute Flow Node ohne Benutzereingabe ausgelöst wird. Die maximale Schleifenanzahl ist standardmäßig auf 4 festgelegt. Dieser Wert kann nur für On-Premise-Installationen konfiguriert werden.
 
-Cognigy monitors the number of times an Execute Flow Node is triggered without user input. The maximum loop count is set to 4 by default. This value is configurable only for on-premise installations.
+Wenn ein Flow ausgeführt wird, erbt er den aktuellen Context vom übergeordneten Flow. Der ausgeführte Flow kann dann Änderungen an diesem Kontext vornehmen, und diese Änderungen stehen dem übergeordneten Flow zur Verfügung, sobald die Ausführung des untergeordneten Flows abgeschlossen ist.
 
-When a Flow is executed, it will inherit the current Context from the parent Flow. The executed Flow can then make modifications to this Context, and these changes will be available to the parent Flow once the execution of the child Flow is completed.
+## Einstellungen
 
-## Settings
+### Flow auswählen
 
-### Select Flow
+Wählen Sie den Ziel-Flow aus, der immer dann ausgeführt wird, wenn die Flow-Ausführung den Knoten **Flow ausführen** auslöst.
 
-Select the target Flow that is executed whenever the Flow execution triggers the **Execute Flow** Node.
+### Knoten auswählen
 
-### Select Node
+Ein Knoten muss als Einstiegspunkt festgelegt werden, bevor er ausgewählt werden kann. Um einen Knoten als Einstiegspunkt festzulegen, verwenden Sie die Schaltfläche [Einstiegspunkt festlegen](.. /node-usage.md#set-entrypoint) eingestellt werden.
 
-A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../node-usage.md#set-entrypoint) setting.
+Wählen Sie den Zielknoten aus, der immer dann ausgeführt wird, wenn die Flow-Ausführung den **Execute Flow**-Knoten auslöst.
 
-Select the target Node which is executed whenever the Flow execution triggers the **Execute Flow** Node.
+!!! Hinweis "Zielfluss öffnen"
+    Mit einem Klick auf das Symbol rechts neben dem Dropdown-Menü Flow können Sie den Ziel-Flow öffnen. Stellen Sie sicher, dass Sie zuerst Ihren Node speichern.
 
-!!! note "Open Target Flow"
-    By clicking on the icon to the right of the Flow drop-down you can open the target Flow. Make sure to save your Node first.
+### Fortgeschritten 
 
-### Advanced 
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|----------------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------------------------------------------------|
+| Absichten analysieren | Umschalten | Legt fest, ob Cognigy Absichten innerhalb des untergeordneten Flows analysieren soll. Diese Option ist standardmäßig aktiviert.<br><br> Wenn die Einstellung aktiviert ist, analysiert Cognigy NLU die Intents im Ziel-Flow erneut, indem entweder [input.text](.. /.. /tools/interaction-panel/input.md#accessing-the-input-object) oder die [Optional eingefügter Text](go-to.md#optionaler-injizierter-Text). <br><br> Mit dieser Einstellung wird die Eingabe in den untergeordneten Flow analysiert, und die NLU bewertet diesen Text dann mithilfe der verfügbaren Absichten im untergeordneten Flow. Dies wird nicht basierend auf Intents im übergeordneten Flow bewertet. |                                                                                                                                                                                                                                                                                                                                                     |
+| Spielautomaten parsen | Umschalten | Legt fest, ob Cognigy Slots innerhalb des untergeordneten Flows analysieren soll. Diese Option ist standardmäßig aktiviert.<br><br> Wenn die Einstellung aktiviert ist, analysiert Cognigy NLU die Slots im Ziel-Flow neu, indem entweder [input.text](.. /.. /tools/interaction-panel/input.md#accessing-the-input-object) oder die [Optional eingefügter Text](go-to.md#optionaler-injizierter-Text). <br><br> Mit dieser Einstellung wird die Eingabe in den untergeordneten Flow analysiert, und die NLU bewertet diesen Text dann anhand der verfügbaren Slots im untergeordneten Flow. Dies wird nicht basierend auf Slots im übergeordneten Flow bewertet.         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Kontext aufnehmen | Umschalten | Legt fest, ob der standardmäßige Flow-Kontext des untergeordneten Flows auf den aktuellen Context angewendet werden soll. <br><br> Wenn der untergeordnete Flow einen Wert innerhalb seines Standardkontexts hat, wird der Wert in den aktuellen Kontext kopiert, sobald Sie den untergeordneten Flow eingeben.                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 
-| Parameter      | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|----------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parse Intents  | Toggle | Determines whether Cognigy should parse intents within the child Flow. This is enabled by default.<br><br> If the setting is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](go-to.md#optionally-injected-text). <br><br> This setting will parse the input into the child Flow, and the NLU will then score this text using the available Intents in the child Flow. This will not score based on Intents in the parent Flow. |                                                                                                                                                                                                                                                                                                                                                     |
-| Parse Slots    | Toggle | Determines whether Cognigy should parse slots within the child Flow. This is enabled by default.<br><br> If the setting is enabled, Cognigy NLU will reparse the Slots in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](go-to.md#optionally-injected-text). <br><br> This setting will parse the input into the child Flow, and the NLU will then score this text using the available Slots in the child Flow. This will not score based on Slots in the parent Flow.         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Absorb Context | Toggle | Determines whether the default Flow Context of the child Flow should be applied to the current Context. <br><br> If the child Flow has a value within its default Context, the value will be copied into the current Context as soon as you enter the child Flow.                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+#### Wiederherstellung von Eingabeobjekten
 
-#### Input Object Restoration
+Wenn Sie Absichten und Slots in einem untergeordneten Flow analysieren, verhält sich das Eingabeobjekt je nach den ausgewählten Optionen unterschiedlich. 
 
-When you parse intents and slots in a child Flow, the Input Object behaves differently depending on the options you select. 
+Wenn Sie sowohl **Parse Intents** als auch **Parse Slots** aktivieren, werden die meisten Eigenschaften des Eingabeobjekts wiederhergestellt, wenn Sie zum übergeordneten Flow zurückkehren. Die Eigenschaften 'inputId', 'execution' und alle benutzerdefinierten Eigenschaften, die dem Input-Objekt hinzugefügt wurden, werden jedoch nicht wiederhergestellt. Zum Beispiel:
 
-If enable both **Parse Intents** and **Parse Slots**, most of the Input Object's properties are restored when you return to the parent Flow. However, the properties `inputId`, `execution`, and any custom properties added to the Input Object are not restored. For example:
+1. Der übergeordnete Flow empfängt ein Eingabeobjekt mit der Absicht **A**.
+2. Der untergeordnete Flow analysiert die Eingabe und erkennt die Absicht **B**.
+3. Bei der Rückkehr zum übergeordneten Flow wird das Eingabeobjekt mit der Absicht **A** und allen Slot-Werten, die vom untergeordneten Flow übergeben wurden, wiederhergestellt.
 
-1. Parent Flow receives an Input Object with intent **A**.
-2. Child Flow parses the input and recognizes intent **B**.
-3. Upon returning to the parent Flow, the Input Object will be restored with intent **A** and any slot values passed from the child Flow.
+Wenn Sie sowohl **Parse Intents** als auch **Parse Slots** deaktivieren, wird das Eingabeobjekt nicht wiederhergestellt, wenn Sie zum übergeordneten Flow zurückkehren. Zum Beispiel:
 
-If disable both **Parse Intents** and **Parse Slots**, the Input Object will not be restored when you return to the parent Flow. For example:
-
-1. Parent Flow receives an Input Object with intent **A**.
-2. Child Flow parses the input but does not recognize any intents or slots.
-3. Upon returning to the parent Flow, the Input Object will not be restored and any changes made in the child Flow will not be propagated to the parent Flow.
+1. Der übergeordnete Flow empfängt ein Eingabeobjekt mit der Absicht **A**.
+2. Child Flow analysiert die Eingabe, erkennt aber keine Absichten oder Slots.
+3. Bei der Rückkehr zum übergeordneten Flow wird das Eingabeobjekt nicht wiederhergestellt und alle Änderungen, die im untergeordneten Flow vorgenommen werden, werden nicht an den übergeordneten Flow weitergegeben.

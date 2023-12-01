@@ -1,41 +1,33 @@
 ---
- title: "Cognigy Live Agent" 
- slug: "liveagent-handover" 
- hidden: false 
+ Titel: "Cognigy Live Agent" 
+ Slug: "LiveAgent-Übergabe" 
+ ausgeblendet: false 
 ---
-# Live Agent
+# Live-Agent
 
-## Description
+## Beschreibung<div class="divider"></div>Live Agent ist ein Übergabeanbieter von Cognigy, der es menschlichen Agenten ermöglicht, eskalierte Konversationen von virtuellen Agenten zu übernehmen.
 
-<div class="divider"></div>
+Enge Integration mit Cognigy.AI, die weit über die Integration hinausgeht, die wir mit anderen Übergabediensten haben:
 
-Live Agent is Cognigy handover provider, allowing human agents to take over escalated conversations from virtual agents.
-
-Tight integration with Cognigy.AI that goes far beyond the integration we have with other handover services:
-
-- Experience an easy, seamless setup of a Live Agent Inbox for a Cognigy.AI Project
+- Erleben Sie eine einfache, nahtlose Einrichtung eines Live-Agenten-Posteingangs für ein Cognigy.AI-Projekt
     
-- Configuration of the handover with just a few clicks
+- Konfiguration der Übergabe mit wenigen Klicks
 
-- AI Copilot: Support of human agents by virtual agents
+- AI Copilot: Unterstützung menschlicher Agenten durch virtuelle Agenten
     
-- Enhance the capabilities of the virtual agent, based on outputs of human agents
+- Verbessern Sie die Fähigkeiten des virtuellen Agenten auf der Grundlage der Ergebnisse menschlicher Agenten
 
-Projects and Inboxes within Live Agent are easily setup, and Agents can be added and managed with ease.
+Projekte und Posteingänge in Live Agent lassen sich einfach einrichten, und Agenten können problemlos hinzugefügt und verwaltet werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}live-agent/images/la-diagram-mapping.PNG" width="100%" />
-  <figcaption>Live Agent Project and Inbox Mapping</figcaption>
+  <figcaption>Live Agent-Projekt- und Posteingangszuordnung</figcaption>
 </figure>
 
-## Ready to Set up Live Agent?
-<div class="divider"></div>
-Are you ready to set up Live Agent? Start here:
+## Sind Sie bereit, Live Agent einzurichten?<div class="divider"></div>Sind Sie bereit, Live Agent einzurichten? Beginnen Sie hier:
 
-- [Live Agent Setup](../../live-agent/getting-started/overview.md)
+- [Live-Agent-Einrichtung](.. /.. /live-agent/getting-started/overview.md)
 
-## Already Setup Live Agent?
-<div class="divider"></div>
-For more on Live Agent, visit our documentation here: 
+## Haben Sie den Live-Agenten bereits eingerichtet?<div class="divider"></div>Weitere Informationen zu Live Agent finden Sie in unserer Dokumentation hier: 
 
-- [Live Agent Overview](../../live-agent/overview.md)
+- [Live-Agent-Übersicht](.. /.. /live-agent/overview.md)

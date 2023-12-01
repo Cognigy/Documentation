@@ -1,7 +1,7 @@
 ---
- title: "Microsoft Teams" 
- slug: "microsoft-teams" 
- hidden: false 
+ Titel: "Microsoft Teams" 
+ Slug: "Microsoft-Teams" 
+ ausgeblendet: false 
 ---
 # Microsoft Teams
 
@@ -9,34 +9,30 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/4a085fb-MSTeams.PNG" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy.AI Flows to **Microsoft Teams** by using our Microsoft Teams Endpoint.
+Innerhalb unserer **Cognigy.AI** Plattform können Sie Ihre Cognigy.AI Flows mit **Microsoft Teams** verbinden, indem Sie unseren Microsoft Teams-Endpunkt verwenden.
 
-# Generic Endpoint Settings
+# Generische Endpunkteinstellungen
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)
 
-# Channel Specific Settings
-
-<div class="divider"></div>
-
-The **Microsoft Teams Settings** dropdown menu is where Cognigy.AI needs to be provided with the credentials to connect with a **Microsoft Teams Bot**.
+# Kanalspezifische Einstellungen<div class="divider"></div>Im Dropdownmenü **Microsoft Teams-Einstellungen** müssen Cognigy.AI die Anmeldeinformationen angeben, um eine Verbindung mit einem **Microsoft Teams-Bot** herzustellen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/c7b9753-teamsSettings.PNG" width="100%" />
 </figure>
 
-### Security Token
+### Sicherheits-Token
 
-The Security Token obtained in the process of setting up the Microsoft Teams outgoing webhook.
+Das Sicherheitstoken, das beim Einrichten des ausgehenden Microsoft Teams-Webhooks abgerufen wurde.
 
-!!! note "Help Center"
-    More detailed information on how to set up a **Microsoft Teams** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016224039).
+!!! Hinweis "Hilfe-Center"
+    Ausführlichere Informationen zum Einrichten eines **Microsoft Teams**-Endpunkts finden Sie in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360016224039).
 
-## More Information
+## Mehr Informationen
 
-- [Help Center: Microsoft Teams Deployment](https://support.cognigy.com/hc/en-us/articles/360016224039-Microsoft-Teams-Deploy-an-Endpoint)
+- [Hilfe-Center: Microsoft Teams-Bereitstellung](https://support.cognigy.com/hc/en-us/articles/360016224039-Microsoft-Teams-Deploy-an-Endpoint)

@@ -1,17 +1,14 @@
 ---
- title: "Sleep" 
- slug: "sleep" 
- hidden: false 
+ Titel: "Schlaf" 
+ Schnecke: "Schlaf" 
+ ausgeblendet: false 
 ---
-# Sleep
+# Schlaf
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/sleep.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein Sleep Node wird verwendet, um die Ausführung eines Flows für eine bestimmte Zeit zu pausieren.
 
-A Sleep Node is used to pause the execution of a Flow for a certain time.
-
-If your Flow returns multiple messages at once with much content (e.g. a query Flow), you can use a Sleep Node to set a pause between messages to simulate a more natural human-like response behavior.
+Wenn Ihr Flow mehrere Nachrichten gleichzeitig mit viel Inhalt zurückgibt (z. B. einen Abfrage-Flow), können Sie einen Sleep-Knoten verwenden, um eine Pause zwischen den Nachrichten festzulegen, um ein natürlicheres, menschenähnliches Antwortverhalten zu simulieren.

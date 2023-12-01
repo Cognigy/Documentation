@@ -1,124 +1,124 @@
 ---
-title: "Automation Rules"
-slug: "Automation Rules"
-hidden: false
+Titel: "Automatisierungsregeln"
+slug: "Automatisierungsregeln"
+ausgeblendet: false
 ---
 
-# Automation
+# Automatisierung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.61-blue.svg)] (.. /.. /release-notes/4.61.md)
 
-_Automation Rules_ are a powerful tool to enhance efficiency and streamline processes by automating various tasks within your workflow. With these rules, you can easily assign conversations to specific agents or teams, add labels, adjust priorities, and more without manual intervention. By leveraging Automation Rules, you save time and resources, allowing your team to focus on their core competencies and minimize the time spent on routine tasks.
+_Automation Rules_ sind ein leistungsstarkes Werkzeug, um die Effizienz zu steigern und Prozesse zu rationalisieren, indem verschiedene Aufgaben innerhalb Ihres Workflows automatisiert werden. Mit diesen Regeln können Sie Konversationen ganz einfach bestimmten Agenten oder Teams zuweisen, Labels hinzufügen, Prioritäten anpassen und vieles mehr, ohne manuell eingreifen zu müssen. Durch die Nutzung von Automatisierungsregeln sparen Sie Zeit und Ressourcen, sodass sich Ihr Team auf seine Kernkompetenzen konzentrieren und den Zeitaufwand für Routineaufgaben minimieren kann.
 
-## Automation Rule Components
+## Komponenten von Automatisierungsregeln
 
-Each automation rule contains the following components:
+Jede Automatisierungsregel enthält die folgenden Komponenten:
 
-- [Events](#events)
-- [Conditions](#conditions)
-- [Actions](#actions)
+- [Veranstaltungen](#events)
+- [Bedingungen](#conditions)
+- [Aktionen](#actions)
 
-### Events
+### Veranstaltungen
 
-Automation Events serve as triggers for when you want your automation to be executed.
+Automatisierungsereignisse dienen als Auslöser dafür, wann Ihre Automatisierung ausgeführt werden soll.
 
-| Events               | Description                                                                                                          |
+| Veranstaltungen | Beschreibung |
 |----------------------|----------------------------------------------------------------------------------------------------------------------|
-| Conversation created | Triggers when a new conversation is created in your system. This will include conversations created by all channels. |
-| Conversation updated | Triggers when a conversation is updated.                                                                             |
-| Message created      | Triggers when any new message inside a conversation is created.                                                      |
-| Conversation opened  | Triggers when a conversation is reopened in your system.                                                             |
+| Konversation erstellt | Wird ausgelöst, wenn eine neue Konversation in Ihrem System erstellt wird. Dazu gehören Konversationen, die von allen Kanälen erstellt wurden. |
+| Konversation aktualisiert | Wird ausgelöst, wenn eine Konversation aktualisiert wird.                                                                             |
+| Nachricht erstellt | Wird ausgelöst, wenn eine neue Nachricht in einer Konversation erstellt wird.                                                      |
+| Konversation eröffnet | Wird ausgelöst, wenn eine Konversation in Ihrem System erneut geöffnet wird.                                                             |
 
-### Conditions
+### Bedingungen
 
-Conditions are the criteria that are verified before executing the action. The conditions are evaluated in the order they are defined.
+Bedingungen sind die Kriterien, die vor dem Ausführen der Aktion überprüft werden. Die Bedingungen werden in der Reihenfolge ausgewertet, in der sie definiert sind.
 
-| Condition Types | Description                             | Applicable Events                                                                |
+| Konditionsarten | Beschreibung | Anwendbare Veranstaltungen |
 |-----------------|-----------------------------------------|----------------------------------------------------------------------------------|
-| Assignee        | Based on conversation assignee.         | Conversation updated, Conversation opened                                        |
-| Status          | Based on conversation status.           | Conversation created, Conversation updated                                       |
-| Inbox           | Based on the Inbox of the conversation. | Conversation created, Conversation updated, Conversation opened, Message created |
-| Priority        | Based on the conversation's priority.   | Conversation created, Conversation updated, Conversation opened                  |
-| Team            | Based on the assigned team.             | Conversation updated, Conversation opened                                        |
-| Message Type    | Based on the type of message.           | Message created                                                                  |
-| Message Content | Based on the content of the message.    | Message created                                                                  |
+| Abtretungsempfänger | Basierend auf dem Konversationsbeauftragten.         | Konversation aktualisiert, Konversation geöffnet |
+| Status | Basierend auf dem Konversationsstatus.           | Konversation erstellt, Konversation aktualisiert |
+| Posteingang | Basierend auf dem Posteingang der Konversation. | Konversation erstellt, Konversation aktualisiert, Konversation geöffnet, Nachricht erstellt |
+| Priorität | Basierend auf der Priorität des Gesprächs.   | Konversation erstellt, Konversation aktualisiert, Konversation geöffnet |
+| Mannschaft | Basierend auf dem zugewiesenen Team.             | Konversation aktualisiert, Konversation geöffnet |
+| Nachrichtentyp | Basierend auf der Art der Nachricht.           | Nachricht erstellt |
+| Inhalt der Nachricht | Basierend auf dem Inhalt der Nachricht.    | Nachricht erstellt |
 
-### Actions
+### Aktionen
 
-Actions are tasks or processes that are executed when the conditions are met.
+Aktionen sind Aufgaben oder Prozesse, die ausgeführt werden, wenn die Bedingungen erfüllt sind.
 
-| Actions               | Description                                      |
+| Aktionen | Beschreibung |
 |-----------------------|--------------------------------------------------|
-| Assign an agent       | Assigns a specific agent to the conversation.    |
-| Assign a team         | Assigns the conversation to a specific team.     |
-| Add Label             | Adds a label to the conversation.                |
-| Send Email to Team    | Sends an email notification to the team.         |
-| Send Email Transcript | Sends an email with the conversation transcript. |
-| Mute Conversation     | Mutes notifications for the conversation.        |
-| Snooze Conversation   | Temporarily suppresses the conversation.         |
-| Resolve Conversation  | Marks the conversation as resolved.              |
-| Send Attachment       | Sends an attachment to the conversation.         |
-| Send Message          | Sends a message to the conversation.             |
-| Change Priority       | Adjusts the conversation's priority.             |
+| Zuweisen eines Agenten | Weist der Konversation einen bestimmten Agenten zu.    |
+| Zuweisen eines Teams | Weist die Konversation einem bestimmten Team zu.     |
+| Etikett hinzufügen | Fügt der Konversation eine Bezeichnung hinzu.                |
+| E-Mail an Team senden | Sendet eine E-Mail-Benachrichtigung an das Team.         |
+| E-Mail-Transkript senden | Sendet eine E-Mail mit dem Gesprächsprotokoll. |
+| Stummschaltung der Konversation | Schaltet Benachrichtigungen für die Unterhaltung stumm.        |
+| Snooze-Konversation | Unterdrückt vorübergehend die Unterhaltung.         |
+| Konversation lösen | Markiert die Konversation als abgeschlossen.              |
+| Anhang senden | Sendet eine Anlage an die Unterhaltung.         |
+| Nachricht senden | Sendet eine Nachricht an die Unterhaltung.             |
+| Änderungspriorität | Passt die Priorität der Konversation an.             |
 
-## Create an Automation Rule
+## Erstellen einer Automatisierungsregel
 
-To create an automation rule, follow these steps:
+Gehen Sie folgendermaßen vor, um eine Automatisierungsregel zu erstellen:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Automation**.
-3. In the upper-right corner, click **+ Add Automation Rule**.
-4. In the **Rule Name** field, enter a unique name for the rule.
-5. In the **Description** field, enter a relevant description for the rule.
-6. From the **Event** list, select the desired event.
-7. In the **Conditions** section, set up a condition:
-    - **Left operand** — select a [condition type](#automation-condition-types).
-    - **Operator** — a comparison operator that checks whether the value of the left operand is `Equal to` or `Not Equal to` the value of the right operand.
-    - **Right operand** — select values corresponding to condition types. For example, if you choose `Status` as a condition type, you can add multiple statuses, such as `Open`, `Pending`, `Resolved`.
-8. _(Optional)_ Add an additional condition by clicking **+ Add Condition**. Repeat the same steps as you did for the first condition and select one of the following operators:
-    - **AND** — all conditions must be true for the overall condition to be true. For example, `Condition A AND Condition B` means that both `Condition A` and `Condition B` must be true to trigger the action.
-    - **OR** — at least one of the conditions must be true for the overall condition to be true. For example, `Condition A OR Condition B` means that if either `Condition A` or `Condition B` is true, the action will be triggered.
-9. In the **Actions** section, select an action. Note that you need to provide additional information depending on which type of action you selected. For example, if you select **Send an email to a Team**, you need to choose a team and write an email template.
-10. _(Optional)_ Add one more action.
-11. Click **Create**.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Gehen Sie zu **Einstellungen > Automatisierung**.
+3. Klicken Sie in der oberen rechten Ecke auf **+ Automatisierungsregel hinzufügen**.
+4. Geben Sie im Feld **Regelname** einen eindeutigen Namen für die Regel ein.
+5. Geben Sie im Feld **Beschreibung** eine relevante Beschreibung für die Regel ein.
+6. Wählen Sie in der Liste **Ereignis** das gewünschte Ereignis aus.
+7. Richten Sie im Abschnitt **Bedingungen** eine Bedingung ein:
+    - **Linker Operand** — Wählen Sie einen [Bedingungstyp](#automation-Bedingungstypen) aus.
+    - **Operator** — ein Vergleichsoperator, der prüft, ob der Wert des linken Operanden dem Wert des rechten Operanden "gleich" oder "ungleich" ist.
+    - **Rechter Operand** — Wählen Sie Werte aus, die den Bedingungstypen entsprechen. Wenn Sie z.B. 'Status' als Konditionsart wählen, können Sie mehrere Status hinzufügen, z.B. 'Offen', 'Ausstehend', 'Gelöst'.
+8. _(Optional)_ Fügen Sie eine zusätzliche Bedingung hinzu, indem Sie auf **+ Bedingung hinzufügen** klicken. Wiederholen Sie die gleichen Schritte wie bei der ersten Bedingung, und wählen Sie einen der folgenden Operatoren aus:
+    - **UND** — alle Bedingungen müssen erfüllt sein, damit die Gesamtbedingung wahr ist. "Bedingung A UND Bedingung B" bedeutet beispielsweise, dass sowohl "Bedingung A" als auch "Bedingung B" erfüllt sein müssen, um die Aktion auszulösen.
+    - **ODER** — mindestens eine der Bedingungen muss erfüllt sein, damit die Gesamtbedingung wahr ist. Zum Beispiel bedeutet "Bedingung A ODER Bedingung B", dass die Aktion ausgelöst wird, wenn entweder "Bedingung A" oder "Bedingung B" wahr ist.
+9. Wählen Sie im Abschnitt **Aktionen** eine Aktion aus. Beachten Sie, dass Sie zusätzliche Informationen angeben müssen, je nachdem, welche Art von Aktion Sie ausgewählt haben. Wenn Sie z. B. **E-Mail an ein Team senden** auswählen, müssen Sie ein Team auswählen und eine E-Mail-Vorlage schreiben.
+10. _(Optional)_ Fügen Sie eine weitere Aktion hinzu.
+11. Klicken Sie auf **Erstellen**.
 
-The automation rule will appear in the automation rule list and will be automatically activated.
+Die Automatisierungsregel wird in der Liste der Automatisierungsregeln angezeigt und automatisch aktiviert.
 
-To deactivate the rule, move the toggle switch to the left position.
+Um die Regel zu deaktivieren, verschieben Sie den Kippschalter in die linke Position.
 
-### Example
+### Beispiel
 
-You can use multiple conditions with the `AND` or `OR` operator as in the example below.
+Sie können mehrere Bedingungen mit dem Operator "UND" oder "ODER" verwenden, wie im folgenden Beispiel gezeigt.
 
-When AI Copilot is active, and a new conversation is created with the Open status, the conversation is assigned to a team.
+Wenn AI Copilot aktiv ist und eine neue Konversation mit dem Status "Offen" erstellt wird, wird die Konversation einem Team zugewiesen.
 
-- Name: Sales
-- Description: This automation assigns new **Open** status conversations to the Sales team.
-- Select the event as Conversation Created.
-- Add two conditions and combine them using the `AND` operator:
-    - Condition 1: Check if the **Conversation Status** is **Open**.
-    - Condition 2: Verify that the **Inbox** is set to **AI Copilot bot-default** selected from the dropdown menu.
-- Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure the Sales team is created before executing this action.
+- Name: Vertrieb
+- Beschreibung: Diese Automatisierung weist dem Vertriebsteam neue **offene** Statusgespräche zu.
+- Wählen Sie das Ereignis als Konversation erstellt aus.
+- Fügen Sie zwei Bedingungen hinzu und kombinieren Sie sie mit dem Operator "UND":
+    - Bedingung 1: Überprüfen Sie, ob der **Konversationsstatus** **Offen** ist.
+    - Bedingung 2: Vergewissern Sie sich, dass der **Posteingang** auf **AI Copilot bot-default** festgelegt ist, der aus dem Dropdown-Menü ausgewählt wurde.
+- Aktion hinzufügen: Weisen Sie die Konversation dem Vertriebsteam zu, indem Sie sie aus dem Dropdown-Menü auswählen. Stellen Sie sicher, dass das Vertriebsteam erstellt wurde, bevor Sie diese Aktion ausführen.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}live-agent/images/add-automation-rule.png" width="80%" />
 </figure>
 
-## Edit an Automation Rule
+## Bearbeiten einer Automatisierungsregel
 
-To edit an automation rule, click the **Edit** icon next to the desired automation rule in the list.
+Um eine Automatisierungsregel zu bearbeiten, klicken Sie auf das Symbol **Bearbeiten** neben der gewünschten Automatisierungsregel in der Liste.
 
-## Clone an Automation Rule
+## Klonen einer Automatisierungsregel
 
-To make a copy of an existing automation rule, click the clone icon from the Automation list you want to copy.
-A replica of the automation reule with the same conditions and actions will be created.
+Um eine Kopie einer vorhandenen Automatisierungsregel zu erstellen, klicken Sie auf das Klonsymbol in der Automatisierungsliste, die Sie kopieren möchten.
+Es wird eine Replik der Automatisierungsumgebung mit den gleichen Bedingungen und Aktionen erstellt.
 
-## Delete an Automation Rule
+## Löschen einer Automatisierungsregel
 
-To delete an automation rule, click **Delete** next to the desired Automation in the list. Note that this action is permanent and cannot be undone.
+Um eine Automatisierungsregel zu löschen, klicken Sie neben der gewünschten Automatisierung in der Liste auf **Löschen**. Beachten Sie, dass diese Aktion dauerhaft ist und nicht rückgängig gemacht werden kann.
 
-## More Information
+## Mehr Informationen
 
-- [Settings](overview.md)
-- [Convesation Workflow](../conversation/conversation-workflow.md)
-- [Conversation Routing](../conversation/conversation-routing/overview.md)
+- [Einstellungen](overview.md)
+- [Arbeitsablauf der Besprechung](.. /conversation/conversation-workflow.md)
+- [Konversations-Routing](.. /conversation/conversation-routing/overview.md)

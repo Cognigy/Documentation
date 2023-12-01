@@ -1,41 +1,36 @@
 ---
-title: "Bandwidth"
-slug: "bandwidth"
-hidden: false
+Titel: "Bandbreite"
+Slug: "Bandbreite"
+ausgeblendet: false
 ---
 
-# Bandwidth
+# Bandbreite
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /release-notes/4.60.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/bandwidth.png" width="20%"/>
 </figure>
 
-Within our **Cognigy.AI** platform,
-you are able to connect your virtual agent to your Contact Center or other phone numbers using the [Bandwidth Voice API](https://www.bandwidth.com/voice/voice-api/),
-allowing customers to speak to your virtual agent instead of just writing with it.
+Innerhalb unserer **Cognigy.AI**-Plattform
+Sie können Ihren virtuellen Agenten über die [Bandbreiten-Sprach-API](https://www.bandwidth.com/voice/voice-api/) mit Ihrem Contact Center oder anderen Telefonnummern verbinden.
+Ermöglichen Sie es Kunden, mit Ihrem virtuellen Agenten zu sprechen, anstatt nur mit ihm zu schreiben.
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen<div class="divider"></div>Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-<div class="divider"></div>
+- [Übersicht über Endpunkte](overview.md)
+- [Datenschutz & Analyse](data-protection-and-analytics.md)
+- [Transformator-Funktionen](Transformatoren/Transformatoren.md)
+- [NLU-Anschlüsse](.. /resources/build/nlu-connectors.md)
+- [Sitzungsverwaltung](.. /endpoints/session-management.md)
+- [Echtzeit-Übersetzungseinstellungen](.. /endpoints/real-time-translation-settings.md)
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+## Bandbreiten-Einstellungen
 
-- [Endpoints Overview](overview.md)
-- [Data Protection & Analytics](data-protection-and-analytics.md)
-- [Transformer Functions](transformers/transformers.md)
-- [NLU Connectors](../resources/build/nlu-connectors.md)
-- [Session Management](../endpoints/session-management.md)
-- [Real Time Translation Settings](../endpoints/real-time-translation-settings.md)
+### Asynchroner Modus
 
-## Bandwidth Settings
+Wenn der asynchrone Modus für den Bandbreitenendpunkt aktiviert ist, werden Ausgaben direkt gesendet, wenn sie in einem Flow verarbeitet werden.
+Dieser Ansatz ist von Vorteil, wenn der Flow eine HTTP-Anforderung senden muss.
+Wenn der asynchrone Modus deaktiviert ist, werden Ausgaben gesendet, wenn der gesamte Flow die Verarbeitung für die angegebene Eingabe abgeschlossen hat.
 
-### Async Mode
-
-When async mode is enabled for the Bandwidth Endpoint, outputs are sent directly as they are processed in a Flow.
-This approach is beneficial when the Flow needs to send an HTTP request.
-When async mode is off, outputs are sent when the entire Flow has finished processing for the given input.
-
-The [Inject & Notify](inject-and-notify.md) functionality only works when async mode is enabled.
-
+Die Funktion [Inject & Notify](inject-and-notify.md) funktioniert nur, wenn der asynchrone Modus aktiviert ist.

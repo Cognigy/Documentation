@@ -1,13 +1,11 @@
 ---
-title: "Alerts" 
-slug: "vg-webapp-alerts"
-hidden: false
+Titel: "Warnungen" 
+Slug: "vg-webapp-alerts"
+ausgeblendet: false
 ---
 
-# Alerts
+# Benachrichtigungen
 
-*Alerts* are created when errors happen in your account configuration. For example, your credentials from the speech provider need to be updated.
+*Warnungen* werden erstellt, wenn Fehler in Ihrer Kontokonfiguration auftreten. Beispielsweise müssen Ihre Anmeldeinformationen vom Sprachanbieter aktualisiert werden.
 
-Note that you can only filter by a maximum of the last 7 days.
-
-<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-alerts.png"  width="100%" />
+Beachten Sie, dass Sie nur nach maximal den letzten 7 Tagen filtern können.<img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-alerts.png"  width="100%" />

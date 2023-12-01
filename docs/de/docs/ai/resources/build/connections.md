@@ -1,14 +1,14 @@
 ---
- title: "Connections" 
- slug: "connections" 
- hidden: false 
+ Titel: "Verbindungen" 
+ slug: "Verbindungen" 
+ ausgeblendet: false 
 ---
-# Connections
+# Anschlüsse
 
-Connections are encrypted credentials that can be used with [Extensions]({{config.site_url}}ai/resources/manage/extensions/). The Connections view can be used to update and delete existing Connections. New Connections are created directly within the [Extension]({{config.site_url}}ai/resources/manage/extensions/) Nodes that use them. 
+Verbindungen sind verschlüsselte Anmeldeinformationen, die mit [Erweiterungen]({{config.site_url}}ai/resources/manage/extensions/) verwendet werden können. Die Ansicht "Verbindungen" kann verwendet werden, um vorhandene Verbindungen zu aktualisieren und zu löschen. Neue Verbindungen werden direkt in den [Extension]({{config.site_url}}ai/resources/manage/extensions/)-Knoten erstellt, die sie verwenden. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Connections.png" width="100%" />
 </figure>
 
-To learn more about Connections, head over to the Help Center tutorial: [Add new features to your Virtual Agent by uploading and  activating Extensions](https://support.cognigy.com/hc/en-us/articles/360016409380).
+Weitere Informationen zu Connections finden Sie im Hilfe-Center-Tutorial: [Hinzufügen neuer Funktionen zu Ihrem virtuellen Agenten durch Hochladen und Aktivieren von Erweiterungen](https://support.cognigy.com/hc/en-us/articles/360016409380).

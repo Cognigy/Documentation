@@ -1,21 +1,19 @@
 ---
- title: "Merge Profile" 
- slug: "merge-profile" 
- hidden: false 
+ Titel: "Profil zusammenführen" 
+ Slug: "Merge-Profil" 
+ ausgeblendet: false 
 ---
-# Merge Profile
+# Profil zusammenführen
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/merge-profile.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
-The Merge Profile Node is used to merge the profile of the contact who hits the node with another contact profile. This is useful in an omnichannel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
+## Beschreibung<div class="divider"></div>Der Merge Profile Node wird verwendet, um das Profil des Kontakts, der auf den Node trifft, mit einem anderen Kontaktprofil zusammenzuführen. Dies ist nützlich in einer Omnichannel-Umgebung, in der ein Kontakt auf verschiedenen Plattformen mit Ihrem Flow kommunizieren kann, aber auf allen Plattformen als dieselbe Person erkannt werden möchte.
 
-| Parameter | Type          | Description                                                                        |
+| Parameter | Typ | Beschreibung |
 |-----------|---------------|------------------------------------------------------------------------------------|
-| ContactId | CognigyScript | The id of the contact you want to merge with the current contact who hit the Node. |
+| Kontakt-ID | CognigyScript | Die ID des Kontakts, den Sie mit dem aktuellen Kontakt zusammenführen möchten, der den Knoten erreicht hat. |
 
-!!! note "Example"
-    Let's say a user is logged in on your website and using the webchat you have there. They will thereby have a contact profile where the userId is equal to their ID on your website. If you then want to link their website ID to e.g. their account on Amazon, so that they will have the same **Contact Profile** when they talk to your flow through an Alexa device, you just have to obtain their Amazon userId through account linking and give that ID to the Merge Profile Node. After this, the contact will have one profile that is activated when they talk with your Flow through the webchat and through their Alexa device.
+!!! Hinweis "Beispiel"
+    Nehmen wir an, ein Benutzer ist auf Ihrer Website angemeldet und verwendet den Webchat, den Sie dort haben. Sie haben dadurch ein Kontaktprofil, in dem die Benutzer-ID mit ihrer ID auf Ihrer Website übereinstimmt. Wenn Sie dann ihre Website-ID z. B. mit ihrem Konto bei Amazon verknüpfen möchten, damit sie das gleiche **Kontaktprofil** haben, wenn sie über ein Alexa-Gerät mit Ihrem Flow sprechen, müssen Sie nur ihre Amazon-Benutzer-ID durch Kontoverknüpfung erhalten und diese ID an den Merge Profile Node weitergeben. Danach hat der Kontakt ein Profil, das aktiviert wird, wenn er über den Webchat und über sein Alexa-Gerät mit Ihrem Flow spricht.

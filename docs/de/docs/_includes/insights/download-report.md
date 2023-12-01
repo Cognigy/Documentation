@@ -1,5 +1,5 @@
-## Download Report
+## Bericht herunterladen
 
-To download a report as a CSV file for the chart,
-click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) in the upper-right corner of the chart.
-To create a report file, refer to the [Download Report](https://docs.cognigy.com/insights/download-report/) article. 
+So laden Sie einen Bericht als CSV-Datei für das Diagramm herunter:
+Klicken! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) in der oberen rechten Ecke des Diagramms.
+Informationen zum Erstellen einer Berichtsdatei finden Sie im Artikel [Bericht herunterladen](https://docs.cognigy.com/insights/download-report/).

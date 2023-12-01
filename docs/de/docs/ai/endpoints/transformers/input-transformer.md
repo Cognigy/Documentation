@@ -1,119 +1,111 @@
 ---
- title: "Input Transformer" 
- slug: "input-transformer" 
- hidden: false 
+ Titel: "Eingangsübertrager" 
+ Slug: "Eingangs-Übertrager" 
+ ausgeblendet: false 
 ---
-# Input Transformer
+# Eingangs-Übertrager
 
-## Description
+## Beschreibung
 
-The `Input Transformer` is triggered on every message from the user before the Flow is executed. This makes it possible to manipulate the text before it has been sent to the Flow, communicate with external systems, implement integrations with a new channel, and much more.
+Der 'Input Transformer' wird bei jeder Nachricht des Benutzers ausgelöst, bevor der Flow ausgeführt wird. Dadurch ist es möglich, den Text zu manipulieren, bevor er an den Flow gesendet wurde, mit externen Systemen zu kommunizieren, Integrationen mit einem neuen Kanal zu implementieren und vieles mehr.
 
-The `Input Transformer` is configured by implementing the ``handleInput`` function in the Transformer in the Endpoint.
+Der 'Input Transformer' wird durch die Implementierung der ''handleInput'' Funktion im Transformer im Endpunkt konfiguriert.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/7944f05-handleInputTransformer.png" width="100%" />
 </figure>
 
-## Transformer Function Arguments
+## Argumente für Transformer-Funktionen<div class="divider"></div>Die Funktion 'handleInput' ruft ein Konfigurationsobjekt als Argument ab. Dieses Objekt enthält immer den Schlüssel 'endpoint', der die Endpoint-Konfiguration enthält. Der Rest der Schlüssel im Objekt hängt vom [Basistyp]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) des Transformers ab. Eine Übersicht über die Schlüssel im Objekt finden Sie unten
 
-<div class="divider"></div>
-
-The `handleInput` function gets a configuration object as an argument. This object always contains the key `endpoint`, which contains the Endpoint configuration. The rest of the keys in the object depends on the [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) of the Transformer. An overview of the keys in the object can be seen below
-
-|Argument|	Description|	Webhook Transformers|	REST Transformers|	Socket Transformers|
+|Argument|	Beschreibung|	Webhook-Transformatoren|	REST-Transformatoren|	Steckdosen-Transformatoren|
 |--|--|--|--|--|
-|endpoint|	The configuration object for the Endpoint. Contains the URLToken etc.|	X|	X	|X|
-|request|	The Express request object with a JSON parsed body.|	X|	X	||
-|response|	The Express response object.|	X	|X	||
-|payload|	The payload object contains the userId, sessionId, text and data that was sent through the Socket. It also contains the channel of the client.|||			X|
+|endpunkt|	Das Konfigurationsobjekt für den Endpunkt. Enthält die URLToken etc.|	X|	X |X|
+|Anfrage|	Das Express-Anforderungsobjekt mit einem JSON-analysierten Text.|	X|	X ||
+|Antwort|	Das Express-Antwortobjekt.|	X |X ||
+|Nutzlast|	Das Payload-Objekt enthält die userId, sessionId, den Text und die Daten, die über den Socket gesendet wurden. Es enthält auch den Kanal des Clients.|||			X|
 
-## Return Values of the Transformer
-<div class="divider"></div>
-## Regular Transformer Usage
-The `Input Transformer` can  return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different compared to a request from Facebook Messenger. It is, therefore, necessary to read the documentation from the specific channel to know how the request body is formatted. 
+## Rückgabewerte des Übertragers<div class="divider"></div>## Regelmäßige Nutzung des Transformators
+Der "Input Transformer" kann eine gültige Benutzer-ID, Sitzungs-ID und Text und/oder Daten zurückgeben, die an den Flow gesendet werden sollen. Diese Werte sollten aus dem Text der Anforderung extrahiert werden. Es ist wichtig zu beachten, dass das Format des Anfragetextes je nach verwendetem Kanal unterschiedlich ist, d. h. eine Anfrage von Alexa sieht ganz anders aus als eine Anfrage von Facebook Messenger. Es ist daher notwendig, die Dokumentation des jeweiligen Kanals zu lesen, um zu wissen, wie der Anforderungstext formatiert ist. 
 
-Example:
+Beispiel:
 
-```javascript
+'''Javascript
 return {
     userId: request.body.user,
     sessionId: request.body.conversation,
     text: request.body.messageText,
     data: { "test": 1 }
 };
-```
+'''
 
-## Partial Transformer Results
-If `undefined` is returned for userId, sessionId, text or data, the already extracted value from the Endpoint is used.
+## Partielle Transformator-Ergebnisse
+Wenn "undefined" für userId, sessionId, text oder data zurückgegeben wird, wird der bereits extrahierte Wert aus dem Endpunkt verwendet.
 
-The following example overwrites `text` and `data`, but keeps the userId and sessionId as they are:
+Im folgenden Beispiel werden "text" und "data" überschrieben, aber userId und sessionId bleiben unverändert:
 
-```javascript
+'''Javascript
 return {
-    userId: undefined,
-    sessionId: undefined,
+    userId: nicht definiert,
+    sessionId: nicht definiert,
     text: request.body.messageText,
     data: { "test": 1 }
 };
-```
+'''
 
-## Stopping Execution
-If the `Input Transformer` returns a falsy value altogether, then the message from the user is never sent to the Flow.
+## Ausführung stoppen
+Wenn der 'Input Transformer' insgesamt einen falschen Wert zurückgibt, wird die Nachricht des Benutzers nie an den Flow gesendet.
 
-Example:
+Beispiel:
 
-```javascript
+'''Javascript
 return null;
-```
+'''
 
-### Transformers and Conversation Counts
-Conversations in Cognigy.AI are only counted if the Input Transformer returns a non-falsy result.
+### Transformer und Konversationszählung
+Unterhaltungen in Cognigy.AI werden nur gezählt, wenn der Eingangstransformator ein nicht falsches Ergebnis liefert.
 
+!!! Warnung "Rückgabewertvalidierung"
+    Der Rückgabewert des 'Input Transformer', falls angegeben, wird anhand einer Reihe von Regeln validiert und abgelehnt, wenn die Regeln nicht erfüllt sind. 
+    Jeder Wert kann undefined zurückgegeben werden. Wenn etwas anderes zurückgegeben wird, gelten die folgenden Regeln:
 
-!!! warning "Return Value Validation"
-    The return value of the `Input Transformer`, if provided, will be validated against a set of rules and rejected if the rules are not met. 
-    Every value can return undefined. If something else is returned, these rules apply:
+- userId ist eine Zeichenfolge mit einer maximalen Länge von 256 Zeichen.
+    - sessionId ist eine Zeichenfolge mit einer maximalen Länge von 256 Zeichen.
+    - Text ist eine Zeichenfolge mit einer maximalen Länge von 10000 Zeichen.
+    - Daten sind ein Objekt
 
-    - userId is a string with max length of 256 characters.
-    - sessionId is a string with max length of 256 characters.
-    - text is a string with a max length of 10000 characters.
-    - data is an object
+### Transformatoren und Ereignismeldungen
 
-### Transformers and Event Messages
+Der Webchat und die Socket.IO-Endpunkte erzeugen Ereignismeldungen, die auf die Benutzeraktivität hinweisen, z. B. ob der Benutzer verbunden ('user-connected') oder getrennt ('user-disconnected') ist. Diese Ereignismeldungen lösen keine Flows aus und werden nicht gezählt, aber Sie können auf sie stoßen, wenn Sie die Eingabetransformatoren verwenden:
 
-The Webchat and the Socket.IO Endpoints produce event messages that indicate user activity,  such as whether the user is connected (`user-connected`) or disconnected  (`user-disconnected`). These event messages will not trigger Flows and will not be counted, but you may encounter them by using the Input Transformers:
-
-```json
+'''json
 {
     "userId": "<current-user-id>",
     "sessionId": "<current-session-id>",
     "text": "",
-    "data": {
+    "Daten": {
         "_cognigy": {
-            "event": {
-                "type": "user-connected"
+            "Ereignis": {
+                "type": "mit dem Benutzer verbunden"
             }
         }
     }
 }
-```
+'''
 
-The event messages inform Handover Providers about user activity, allowing human agents to determine if the user is still engaged in the conversation. 
+Die Ereignismeldungen informieren die Übergabeanbieter über die Benutzeraktivität, sodass menschliche Agenten feststellen können, ob der Benutzer noch an der Konversation beteiligt ist. 
 
+Wenn Sie in den Eingangstransformatoren auf diese Ereignismeldungen stoßen, empfehlen wir Ihnen, diese unverändert weiterzugeben. Die Ereignismeldungen können nur dann als solche erkannt werden, wenn ihre Datennutzlast einem bestimmten Format folgt. Um dieses Ergebnis zu erzielen, können Sie den folgenden Codeausschnitt in Ihrem Eingabetransformator verwenden:
 
-When you come across these event messages in the Input Transformers, we advise you to pass them on without any changes. The event messages can only be recognized as such if their data payload follows a specific format. To achieve this result, you can use the following code snippet in your Input Transformer:
-
-```javascript
+'''Javascript
 {
 
-    handleInput: async ({ payload, endpoint }) => {
-        if (!!payload.data?._cognigy?.event) {
-            // pass on "event messages" without modification
-			return payload;
+handleInput: async ({ payload, endpoint }) => {
+        if (!! payload.data?. _cognigy?. Ereignis) {
+            "Ereignismeldungen" unverändert weitergeben
+			Nutzlast zurückgeben;
 		}
 
-		// rest of your input transformer code
+Rest des Input-Transformer-Codes
 	}
 }
-```
+</current-session-id></current-user-id>'''

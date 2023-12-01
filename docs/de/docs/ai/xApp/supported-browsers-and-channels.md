@@ -1,48 +1,47 @@
 ---
-title: "Supported Browsers and Channels"
-slug: "supported-browsers-and-channels"
-hidden: false
+Titel: "Unterstützte Browser und Kanäle"
+slug: "Unterstützte-Browser-und-Kanäle"
+ausgeblendet: false
 ---
 
-# Supported Browsers and Channels
+# Unterstützte Browser und Kanäle
 
-Cognigy xApps are compatible with the browsers and channels listed below.
+Cognigy xApps sind mit den unten aufgeführten Browsern und Kanälen kompatibel.
 
-## Supported Browsers
+## Unterstützte Browser
 
-The following browsers are supported by xApps:
+Die folgenden Browser werden von xApps unterstützt:
 
-| Browser  | Versions                                      |
+| Browser | Versionen |
 |----------|-----------------------------------------------|
-| Firefox  | The newest version and two previous versions. |
-| Chrome   | The newest version and two previous versions. |
-| Chromium | The newest version and two previous versions. |
-| Safari   | The newest version and two previous versions. |
-| Edge     | The newest version and two previous versions. |
+| Firefox | Die neueste Version und zwei frühere Versionen. |
+| Chrom | Die neueste Version und zwei frühere Versionen. |
+| Chrom | Die neueste Version und zwei frühere Versionen. |
+| Safari | Die neueste Version und zwei frühere Versionen. |
+| Kante | Die neueste Version und zwei frühere Versionen. |
 
-## Supported Channels
+## Unterstützte Kanäle
 
-The following channels are supported by xApps:
+Die folgenden Kanäle werden von xApps unterstützt:
 
-- [Voice Gateway](../endpoints/cognigy-vg.md)
-- [Audiocodes](../endpoints/audiocodes.md)[^*]
-- [Facebook Messenger](../endpoints/facebook-messenger.md)
-- [LINE Messenger](../endpoints/line-messenger.md)
-- [Azure Bot Services](../endpoints/azure-bot-services.md)
-- [RingCentral Engage](../endpoints/ringcentral-engage.md)
-- [Slack](../endpoints/slack.md)
-- [Socket](../endpoints/socketio.md)
-- [Sunshine Conversation](../endpoints/sunshine-conversations.md)
-- [WhatsApp](../endpoints/whatsapp.md)
-- [Webchat Widget](../endpoints/webchat/webchat.md)
-- [Webhook](../endpoints/webhook.md)
-- [REST Endpoint](../endpoints/rest.md)
+- [Sprach-Gateway](.. /endpoints/cognigy-vg.md)
+- [Audiocodes](.. /endpoints/audiocodes.md)[^*]
+- [Facebook Messenger](.. /endpoints/facebook-messenger.md)
+- [LINE Messenger](.. /endpoints/line-messenger.md)
+- [Azure Bot Services](.. /endpoints/azure-bot-services.md)
+- [RingCentral Engage](.. /endpoints/ringcentral-engage.md)
+- [Lockerheit](.. /endpoints/slack.md)
+- [Steckdose](.. /endpoints/socketio.md)
+- [Sonnenschein-Gespräch](.. /endpoints/sunshine-conversations.md)
+- [WhatsApp](.. /endpoints/whatsapp.md)
+- [Webchat-Widget](.. /endpoints/webchat/webchat.md)
+- [Webhook](.. /endpoints/webhook.md)
+- [REST-Endpunkt](.. /endpoints/rest.md)
 
+[^*]: Für diesen Kanal muss der asynchrone Modus in den Endpunkteinstellungen aktiviert werden.
 
-[^*]: For this channel, Async Mode needs to be activated in the Endpoint settings.
+## Mehr Informationen
 
-## More Information
-
-- [Overview](overview.md)
-- [Build an xApp](build/overview.md)
-- [xApp Architecture](architecture.md)
+- [Übersicht](overview.md)
+- [Erstellen einer xApp](build/overview.md)
+- [xApp-Architektur](architecture.md)

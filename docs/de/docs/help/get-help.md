@@ -1,86 +1,69 @@
 ---
- title: "Get Help & Report Problems" 
- slug: "get-help" 
- hidden: false 
+ title: "Hilfe erhalten und Probleme melden" 
+ slug: "Hilfe" 
+ ausgeblendet: false 
 ---
 
-# Get Help & Report Problems
+# Hilfe erhalten & Probleme melden
 
-## Description
+## Beschreibung<div class="divider"></div>Wann immer Sie sich auf unserer Plattform festgefahren fühlen oder auf ein Problem stoßen, zögern Sie nicht, um Hilfe zu bitten. Es gibt viele Möglichkeiten, Hilfe zu erhalten, von denen wir einige im Folgenden beschreiben.
 
-<div class="divider"></div>
-
-Whenever you feel stuck or encounter a problem on our platform, do not hesitate to ask for help. There's many ways of getting help, some of which we're describing below.
-
-## In-Product Contextual Help
-<div class="divider"></div>
-
-Inside Cognigy.AI, you can find contextual in-product help by clicking the Help icon in the App Bar on the upper right of the screen.
+## Kontextbezogene Hilfe im Produkt<div class="divider"></div>In Cognigy.AI finden Sie kontextbezogene Hilfe im Produkt, indem Sie in der App-Leiste oben rechts auf dem Bildschirm auf das Hilfesymbol klicken.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/87f223b-appbar.JPG" width="100%" />
-  <figcaption>Help Icon in the App Bar</figcaption>
+  <figcaption>Hilfesymbol in der App-Leiste</figcaption>
 </figure>
 
-When clicking on this menu, the help widget will open, and you can search for help directly within the product.
+Wenn Sie auf dieses Menü klicken, öffnet sich das Hilfe-Widget, und Sie können direkt im Produkt nach Hilfe suchen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/be71391-helpwidget.JPG" width="100%" />
-  <figcaption>Help Widget</figcaption>
+  <figcaption>Hilfe-Widget</figcaption>
 </figure>
 
-## Help Center
+## Hilfe-Center
 
-Every article in the Help Widget comes from the Cognigy Help Center, which can be reached by clicking the "View original article" link.
+Jeder Artikel im Hilfe-Widget stammt aus dem Cognigy Help Center, das Sie über den Link "Originalartikel anzeigen" erreichen können.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}help/images/9b61424-viewarticle.JPG" width="100%" />
 </figure>
 
-Alternatively, you can always reach the Help Center by following the link below.
-
-<blockquote class="callout callout_info" theme="📘">
+Alternativ können Sie das Help Center jederzeit erreichen, indem Sie dem unten stehenden Link folgen.<blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">📘</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us" target="_blank" >Cognigy.AI Help Center</a>
+         <a href="https://support.cognigy.com/hc/en-us" target="_blank">Cognigy.AI Hilfe-Center</a>
       </div>
-      <div class="callout-subtext">
-            Cognigy HelpCenter
-      </div>
+      <div class="callout-subtext">Cognigy HelpCenter      </div>
    </div>
-</blockquote>
+</blockquote>## Cognigy Community
 
-## Cognigy Community
+Teil des Cognigy Help Centers ist die Cognigy Community, in der Cognigy-Enthusiasten Fragen stellen und Ideen austauschen können.
 
-Part of the Cognigy Help Center is the Cognigy Community, where Cognigy enthusiasts can ask questions and share ideas.
+## Einreichen eines Support-Tickets
 
-## Filing a Support Ticket
+Falls Sie einen Fehler gefunden haben oder technische Hilfe benötigen, können Sie ein Support-Ticket einreichen. Sie können dies auf drei Arten tun:
 
-In case you've found a bug or need technical assistance, you can file a support ticket. You can do this in three ways:
+1. Klicken Sie direkt über das Hilfe-Widget in Cognigy.AI unten auf "Kontakt"
+2. Durch Registrierung bei [https://support.cognigy.com](https://support.cognigy.com) und Einreichung eines Tickets
+3. Senden Sie eine E-Mail an support [AT] cognigy (dot) com
 
-1. Directly from the Help Widget inside Cognigy.AI by clicking "Contact Us" on the bottom
-2. By registering at [https://support.cognigy.com](https://support.cognigy.com) and filing a ticket from there
-3. By sending an email to support [AT] cognigy (dot) com
+## Empfehlungen für Ticketinhalte<div class="divider"></div>Für eine bessere und schnellere Abwicklung Ihres Tickets sollten Sie uns so viele Informationen wie möglich zur Verfügung stellen.
 
-## Ticket Content Recommendations
+In den folgenden Abschnitten werden empfohlene Anhänge und Informationen beschrieben, die Sie uns senden können, um den Ticketbearbeitungsprozess zu beschleunigen. 
 
-<div class="divider"></div>
+## Allgemeine Probleme
 
-For a better and faster handling of your ticket, you should provide as much information as you can give us.
+Bei einem Problem, das Sie nicht wirklich mit einer bestimmten Ressource (Flow, Endpunkt usw.) in Verbindung bringen können, fügen Sie dem Ticket mindestens einen Screenshot der Konsole (**F12**) als Anhang hinzu.
 
-The following sections describe recommended attachments and information you could send us to accelerate the ticket handling process. 
+## Probleme mit einem Flow
 
-## General Problems
+Das Ticket für ein Problem mit einem Flow sollte den Flow und alle seine Abhängigkeiten enthalten.
 
-For an issue which you can't really associate with a specific resource (flow, endpoint etc.) add at least a screenshot of the console (**F12**) as an attachment to the ticket.
+Sie können auch einen Screenshot der Protokolle (siehe [Logs]({{config.site_url}}ai/resources/test/logs/)) an das Ticket anhängen. 
 
-## Problems with a Flow
+## Probleme mit der Benutzeroberfläche
 
-The ticket for a problem with a flow should have the Flow and all its dependencies attached.
-
-You can also attach a screenshot of the logs (see [Logs]({{config.site_url}}ai/resources/test/logs/)) to the ticket. 
-
-## Problems with the UI
-
-In addition to your description, add a screenshot of the bug to your ticket.
+Fügen Sie Ihrem Ticket zusätzlich zu Ihrer Beschreibung einen Screenshot des Fehlers hinzu.

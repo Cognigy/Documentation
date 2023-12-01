@@ -6,10 +6,7 @@ ausgeblendet: false
 
 # Architektur
 
-## Übersicht
-
-<div class="divider"></div>
-Cognigy.AI handelt es sich um eine moderne, cloudnative Softwarelösung, die auf einer skalierbaren Microservice-Architektur basiert. Diese moderne Architektur ermöglicht es,
+## Übersicht<div class="divider"></div>Cognigy.AI handelt es sich um eine moderne, cloudnative Softwarelösung, die auf einer skalierbaren Microservice-Architektur basiert. Diese moderne Architektur ermöglicht es,
 um die Rechenleistung mehrerer Server für ein einziges Softwareprodukt zu nutzen. Anstatt eine einzelne ausführbare Datei auf einem einzelnen Server auszuführen,
 Wir haben Cognigy.AI in mehr als 30 separate ausführbare Dateien zerlegt. Diese kleineren ausführbaren Dateien (daher der Name Microservice), obwohl sie getrennt sind,
 agieren als ein einzelnes Produkt - Cognigy.AI - indem sie über Netzwerkanrufe miteinander interagieren.
@@ -34,10 +31,7 @@ Die Verwaltung einer hohen Anzahl von beweglichen Teilen - den oben erwähnten M
 - Testen, ob containerisierte Prozesse noch reagieren, indem sie Readiness- und Livess-Probes senden
 - Skalierung von Microservices nach Auslastungsindikatoren wie CPU-Auslastung, Speicherprofil oder benutzerdefinierten Metriken durch das Starten zusätzlicher Kopien von Diensten
 
-## Laufzeit & IDE
-
-<div class="divider"></div>
-Cognigy.AI selbst ist ein Produkt, das verschiedene Arten von Funktionen bietet:
+## Laufzeit & IDE<div class="divider"></div>Cognigy.AI selbst ist ein Produkt, das verschiedene Arten von Funktionen bietet:
 
 -ALAND
 -Laufzeit
@@ -46,7 +40,7 @@ Cognigy Insights ist zwar auch Teil Cognigy.AI, spielt aber eine geringere Rolle
 
 ### IDE - Erstellen Ihrer virtuellen Agenten
 
-Ein Ort, an dem Sie virtuelle Agenten erstellen und alle Funktionen wie Flows, Playbooks, Lexika und Absichten nutzen können. Wir nennen diesen Teil des Produktes die IDE (=Integrated Development Environment) – ein Begriff, der in der Softwareentwicklung häufig verwendet wird. Sobald Sie mit der ersten Iteration Ihres virtuellen Agenten fertig sind, wird ein sogenannter [Snapshot](.. /ai/resources/deploy/snapshots.md) muss erstellt werden, um Ihren virtuellen Agenten in der Produktion bereitzustellen. Ein Snapshot ist eine unveränderliche Kopie Ihres virtuellen Agenten, die alle Ressourcen enthält, aus denen er besteht - zum Beispiel Ihre Flows, Lexika, Absichten und Erweiterungen. Snapshots fungieren als Schnittstelle zur zweiten Gruppe von Funktionen: der Cognigy.AI Runtime.
+Ein Ort, an dem Sie virtuelle Agenten erstellen und alle Funktionen wie Flows, Playbooks, Lexika und Absichten nutzen können. Wir nennen diesen Teil des Produktes die IDE (=Integrated Development Environment) – ein Begriff, der in der Softwareentwicklung häufig verwendet wird. Sobald Sie mit der ersten Iteration Ihres virtuellen Agenten fertig sind, wird ein sogenannter [Snapshot](.. /ai/resources/deploy/snapshots.md) erstellt werden, um Ihren virtuellen Agenten in der Produktion bereitzustellen. Ein Snapshot ist eine unveränderliche Kopie Ihres virtuellen Agenten, die alle Ressourcen enthält, aus denen er besteht - zum Beispiel Ihre Flows, Lexika, Absichten und Erweiterungen. Snapshots fungieren als Schnittstelle zur zweiten Gruppe von Funktionen: der Cognigy.AI Runtime.
 
 In der folgenden Tabelle sind die wichtigsten Microservices aufgeführt, aus denen die IDE besteht:
 
@@ -56,7 +50,7 @@ In der folgenden Tabelle sind die wichtigsten Microservices aufgeführt, aus den
 | Service-UI | Dient der WebGUI für Cognigy.AI |
 | Service-Webchat | Server ist eine Demo-Website, auf der immer die aktuellste Version des Cognigy WebchatWidgets eingebettet ist. Fungiert als Ort für Rapid Prototyping. |
 | Service-Ressourcen | Verwaltet alle Ressourcen innerhalb Cognigy.AI - also Flows, Endpunkte, Playbooks usw. - durch das Angebot interner APIs, die von anderen Microservices aufgerufen werden können.                                                                                                                                               |
-| Service-Custom-Module | Verarbeitet hochgeladene Cognigy Extensions und bereitet sie für die Nutzung vor.                                                                                                                                                               |
+| Service-Custom-Modul | Verarbeitet hochgeladene Cognigy Extensions und bereitet sie für die Nutzung vor.                                                                                                                                                               |
 | Service-Sicherheit | Verwaltet Benutzer, Organisationen und Rollen einschließlich Berechtigungen.                                                                                                                                                                    |
 | Service-Task-Manager | Verwaltet lang andauernde Vorgänge innerhalb Cognigy.AI. Zu diesen Vorgängen gehören die Erstellung von Cognigy-Snapshots, das Verpacken von Assets für Downloads und die Verarbeitung Ihrer hochgeladenen Dokumente als Teil unserer Knowledge AI-Lösung. Unsere Benutzeroberfläche stellt einen Task-Manager zur Verfügung, der alle lang andauernden Vorgänge anzeigt. |
 
@@ -76,6 +70,6 @@ In der folgenden Tabelle werden die Zuständigkeiten der wichtigsten Laufzeitmic
 | service-nlp-classifier-score | Implementieren Sie die Absichtserkennung auf der Grundlage von [Intent-Modellen]({{config.site_url}}ai/nlu/nlu-overview/overview/), die unsere Kunden innerhalb unserer Plattform trainieren können. Es gibt Varianten für verschiedene Sprachen (Deutsch, Englisch, Koreanisch, Japanisch, Generisch, XX).                      |
 | service-nlp-einbetten | Führt unsere vortrainierten Worteinbettungsmodelle aus, die Teil unseres NLU-Systems sind und [Intent-Modelle]({{config.site_url}}ai/nlu/nlu-overview/overview/) steuern, die unsere Kunden als Teil unserer Plattform erstellen können. Sprachabhängige Einbettungsdienste sind verfügbar. |
 | Service-HTTP & Ausführung | Sendet HTTP-Requests an externe 3rd-Party-Systeme, wenn [HTTP Request Flow Node]({{config.site_url}}ai/flow-nodes/services/http-request/) verwendet wird und führt Flow Nodes unserer Kunden im Rahmen von [Extensions]({{config.site_url}}ai/resources/manage/extensions/) aus. |
-| Leistungsprofile | Verwaltet [Kontaktprofile]({{config.site_url}}ai/resources/manage/contact-profiles/) und bietet die Möglichkeit, über Cognigy Script darauf zuzugreifen.     |
+| Leistungsprofil | Verwaltet [Kontaktprofile]({{config.site_url}}ai/resources/manage/contact-profiles/) und bietet die Möglichkeit, über Cognigy Script darauf zuzugreifen.     |
 | Service-Funktion-Scheduler & Funktionsausführung | Plant und führt den Quellcode unserer Kunden in [Cognigy Functions]({{config.site_url}}ai/resources/build/functions/) aus.                                                                                                                                      |
 | Service-Übergabe | Implementiert eine Schnittstelle für 3rd-Party-[Handover-Anbieter]({{config.site_url}}ai/handover-providers/overview/) wie Ring Central Engage. Leitet die Nachricht der Endbenutzer an diese externen Anbieter weiter, während sich die Konversationen in der "Übergabe" befinden.                                                                                         |

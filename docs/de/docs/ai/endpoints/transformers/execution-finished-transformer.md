@@ -1,83 +1,68 @@
 ---
- title: "Execution Finished Transformer" 
- slug: "execution-finished-transformer" 
- hidden: false 
+ title: "Ausführung abgeschlossen Transformer" 
+ Slug: "Execution-Finished-Transformer" 
+ ausgeblendet: false 
 ---
-# Execution Finished Transformer
+# Ausführung Transformator beendet
 
-## Description
+## Beschreibung<div class="divider"></div>Der 'Execution Finished Transformer' wird ausgelöst, wenn die Flow-Ausführung beendet ist, jedoch unterscheidet sich das Verhalten der Transformer-Funktion stark, je nachdem, welcher [Basistyp]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) von Transformer verwendet wird, was im Folgenden näher beschrieben wird.
 
-<div class="divider"></div>
-
-The `Execution Finished Transformer` is triggered when the Flow execution has finished, however, the behavior of the Transformer function differs greatly depending on which [base type]({{config.site_url}}ai/endpoints/transformers/transformers/#different-base-transformer-types) of Transformer is being used, which is described in more detail below.
-
-The `Execution Finished Transformer` is configured by implementing the `handleExecutionFinished` function in the Transformer in the Endpoint.
+Der "Execution Finished Transformer" wird konfiguriert, indem die Funktion "handleExecutionFinished" im Transformer im Endpunkt implementiert wird.
 
  <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/40791e8-alexa-transformer.png" width="100%" />
-  <figcaption>Execution Finished Transformer Example</figcaption>
+  <figcaption>Beispiel für einen abgeschlossenen Transformator</figcaption>
 </figure>
 
-## Differences between Transformer Types
-<div class="divider"></div>
+## Unterschiede zwischen den Transformatortypen<div class="divider"></div>## REST-Transformatoren
+Bei REST-basierten Transformern wird die Ausgabe an den Benutzer in dieser Transformer-Funktion gesendet.
 
-## REST Transformers
-For REST based Transformers, the output to the user will be sent in this Transformer function.
+Die Funktion handleExecutionFinished erhält in diesem Fall ein weiteres Argument namens 'processedOutput'. Diese Variable enthält die Ausgabe, die *wie besehen* an den Kanal gesendet wird, was bedeutet, dass sie im richtigen Format für den jeweiligen Kanal vorliegt. Ein Beispiel ist [hier](#section-return-values-of-the-transformer) zu sehen. Außerdem erhält er Zugriff auf die Liste der Ausgänge, die im Ausgangstransformator verarbeitet wurden.
 
-The handleExecutionFinished function will in this case get a further argument, called `processedOutput`. This variable contains the output that would be sent *as-is* to the channel, meaning that it is in the correct format corresponding to the specific channel. An example can be seen [here](#section-return-values-of-the-transformer). It also gets access to the list of outputs that were processed in the Output Transformer.
+## Webhook- und Socket-Transformatoren
+Der 'Execution Finished Transformer' hat keine wichtige Funktion für Webhook- und Socket-basierte Endpunkte. Weitere Informationen [hier](#section-return-values-of-the-transformer).
 
-## Webhook and Socket Transformers
-The `Execution Finished Transformer` does not have an important function for Webhook and Socket based endpoints. More information [here](#section-return-values-of-the-transformer).
+## Argumente für Transformer-Funktionen<div class="divider"></div>Die Funktion 'handleExecutionFinished' ruft ein Konfigurationsobjekt als Argument ab. Eine Übersicht über die Schlüssel im Objekt finden Sie unten
 
-## Transformer Function Arguments
-
-<div class="divider"></div>
-
-The `handleExecutionFinished` function gets a configuration object as an argument. An overview of the keys in the object can be seen below
-
-|Argument|	Description	|Webhook Transformers|	REST Transformers|	Socket Transformers|
+|Argument|	Beschreibung |Webhook-Transformatoren|	REST-Transformatoren|	Steckdosen-Transformatoren|
 |--|--|--|--|--|
-|endpoint|	The configuration object for the Endpoint. Contains the URLToken etc.|	X|	X	|X|
-|outputs|	A list of all the outputs from the Flow. This outputs in the list could be influenced in the Output Transformer for REST Endpoints|	|	X	||
-|processedOutput|	The output that was processed into the format that the specific channel expects. This is what would normally be sent to the channel if the Execution Finished Transformer would be disabled.|	|	X	||
-|userId|	The unique ID of the user.|	X	|X|	X|
-|sessionId	|The unique ID of the conversation.|	X|	X|	X|
+|endpunkt|	Das Konfigurationsobjekt für den Endpunkt. Enthält die URLToken etc.|	X|	X |X|
+|Ausgänge|	Eine Liste aller Ausgaben des Flows. Diese Ausgänge in der Liste können im Ausgangstransformator für REST-Endpunkte| |	X ||
+|processedOutput|	Die Ausgabe, die in dem Format verarbeitet wurde, das der jeweilige Kanal erwartet. Dies ist das, was normalerweise an den Kanal gesendet wird, wenn der Execution Finished-Transformer deaktiviert wäre.|	|	X ||
+|userId|	Die eindeutige ID des Benutzers.|	X |X|	X|
+|sessionId |Die eindeutige ID der Konversation.|	X|	X|	X|
 
-## Return Values of the Transformer
+## Rückgabewerte des Übertragers<div class="divider"></div>Der Rückgabewert des 'Execution Finished Transformers' hängt vom Basistyp des Transformers ab. Es findet keine Überprüfung des Rückgabewerts des Transformators "Ausführung abgeschlossen" statt.
 
-<div class="divider"></div>
+## REST-Transformatoren
+Der 'Execution Finished Transformer' muss einen Ausgang zurückgeben, der ohne weitere Modifikationen direkt an den jeweiligen Kanal gesendet werden kann. Das heißt, wenn der Transformer in einem 'Alexa'-Endpunkt aktiv ist, dann muss das Format dem Nachrichtenformat entsprechen, das in der Dokumentation für Alexa beschrieben ist.
 
-The return value of the `Execution Finished Transformer` depends on the base type of Transformer. There is no validation of the return value of the Execution Finished Transformer.
+Hier ist ein Beispiel für das richtige Rückgabeformat für einen Alexa-Endpunkt:
 
-## REST Transformers
-The `Execution Finished Transformer` has to return an output which can be sent directly to the specific channel without making any further modifications. This means that if the Transformer is active in a `Alexa` Endpoint, then the format has to be according to the message format described in the documentation for Alexa.
-
-Here is an example of the correct return format for an Alexa Endpoint:
-
-**Webhook / Socket Return Format**
-```JavaScript
+**Webhook-/Socket-Rückgabeformat**
+'''JavaScript
 handleExecutionFinished: async ({ processedOutput, outputs, userId, sessionId, endpoint, response }) => {
     /**
-     * Combine all of the Flow outputs into one message
+     * Kombinieren Sie alle Flow-Ausgänge in einer Nachricht
      */
-    const text = outputs.reduce((mergedOutput, output) => `${mergedOutput}. ${output.text}`, "").trim();
+    const text = outputs.reduce((mergedOutput, output) => '${mergedOutput}. ${output.text}', "").trim();
 
-    const responseToAlexa = {
-        version: "1.0",
-        response: {
+const responseToAlexa = {
+        Ausführung: "1.0",
+        Antwort: {
             outputSpeech: {
-                type: 'SSML',
-                ssml: `<speak>${text}</speak>`
+                Typ: 'SSML',
+                ssml: '<speak>${text}</speak>'
             },
             shouldEndSession: false
         }
     };
 
-    return responseToAlexa;
+return responseToAlexa;
 }
-```
+'''
 
-If the `Execution Finished Transformer` returns falsy, then the output will not be sent to the user, and will thereby be discarded.
+Wenn der 'Execution Finished Transformer' einen Fehler zurückgibt, wird die Ausgabe nicht an den Benutzer gesendet und somit verworfen.
 
-## Webhook and Socket Transformers
-The `Execution Finished Transformer` does not have any special functionality and therefore does not have any return value. At this point, all outputs have been sent to the user, and it is possible to use the Transformer to e.g. send logging information to an external system.
+## Webhook- und Socket-Transformatoren
+Der 'Execution Finished Transformer' hat keine spezielle Funktionalität und daher auch keinen Rückgabewert. Zu diesem Zeitpunkt wurden alle Ausgänge an den Benutzer gesendet, und es ist möglich, den Transformer zu verwenden, um z.B. Protokollierungsinformationen an ein externes System zu senden.

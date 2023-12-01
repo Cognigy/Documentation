@@ -1,161 +1,147 @@
 ---
- title: "Machine learning Intents" 
- slug: "ml-intents" 
- hidden: false 
+ Titel: "Machine Learning Intents" 
+ Slug: "ML-Absichten" 
+ ausgeblendet: false 
 ---
-# Machine learning Intents
+# Absichten für maschinelles Lernen
 
-Intents are collections of identified user intents (for example, what does the user want).
+Absichten sind Sammlungen identifizierter Benutzerabsichten (z. B. was der Benutzer möchte).
 
-The user input is scored against all example sentences and Cognigy.AI will identify the intent with the highest score as the intent for this input if it is above the configured [thresholds]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/#thresholds).
+Die Benutzereingabe wird anhand aller Beispielsätze bewertet, und Cognigy.AI identifizieren die Absicht mit der höchsten Punktzahl als Absicht für diese Eingabe, wenn sie über den konfigurierten [Schwellenwerten]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/#thresholds) liegt.
 
-## Building the NLU Model
-<div class="divider"></div>
+## Erstellen des NLU-Modells<div class="divider"></div>Das Gebäudemenü ist unter dem Reiter "NLU" im Flow-Editor verfügbar. Jeder Flow, für den die Erstellung seines NLU-Modells erforderlich ist, zeigt einen roten Indikator neben seinem Namen in der Liste der Flows und auf der Registerkarte NLU im Flow-Editor an. 
 
-The building menu is available under the "NLU" tab in the flow editor. Any Flow that requires building of their NLU model will display a red indicator next to its name in the list of Flows and on the NLU tab in the flow editor. 
-
-Flows that are only processed as an attached Flow do not need to be individually built (the exclamation mark can be ignored) as the building of the attaching Flow will pull in the Intents of the attached Flows and the Build will be done there. Flows that are used separately with intent mapping need to be built separately.
+Flows, die nur als angehängter Flow verarbeitet werden, müssen nicht einzeln erstellt werden (das Ausrufezeichen kann ignoriert werden), da die Erstellung des angehängten Flows die Intents der angehängten Flows einzieht und der Build dort durchgeführt wird. Flows, die separat mit Absichtszuordnung verwendet werden, müssen separat erstellt werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/79986da-buildmodel.JPG" width="100%" />
 </figure>
 
-*Cognigy NLU* requires pre-building of the intent mapping model.
+*Cognigy NLU* erfordert die Voraberstellung des Intent-Mapping-Modells.
 
-To build your model go to the Intents tab in your Flow Editor and click the blue *Build Model* button.
+Um Ihr Modell zu erstellen, gehen Sie in Ihrem Flow-Editor auf die Registerkarte Intents und klicken Sie auf die blaue Schaltfläche *Modell erstellen*.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/a5917c2-intentMenu.PNG" width="100%" />
 </figure>
 
-A new [Task]({{config.site_url}}ai/resources/agents/tasks/) will begin and the spinning task icon indicates model building is in progress. While new models are built the latest version of your flow will fall back to the most recently trained model.
+Eine neue [Aufgabe]({{config.site_url}}ai/resources/agents/tasks/) wird gestartet, und das sich drehende Aufgabensymbol zeigt an, dass die Modellerstellung ausgeführt wird. Während neue Modelle erstellt werden, greift die neueste Version des Flows auf das zuletzt trainierte Modell zurück.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/c33ef5a-trainedSuccess.PNG" width="100%" />
 </figure>
 
-Successful builds are indicated with a green success notification. It is possible that builds may fail, this will be indicated by a red error notification. Expand the error message to learn more, for example, you may have to add more example sentence data to complete the build successfully.
+Erfolgreiche Builds werden mit einer grünen Erfolgsbenachrichtigung angezeigt. Es ist möglich, dass Builds fehlschlagen, dies wird durch eine rote Fehlerbenachrichtigung angezeigt. Erweitern Sie die Fehlermeldung, um mehr zu erfahren, z. B. müssen Sie möglicherweise weitere Beispielsatzdaten hinzufügen, um den Build erfolgreich abzuschließen.
 
-Any time adjustments are made to the model data, the NLU model must be rebuilt to incorporate the changes. The following actions also trigger the need to build the model (the red exclamation point next to the **Build Model** icon will appear):
+Jedes Mal, wenn Anpassungen an den Modelldaten vorgenommen werden, muss das NLU-Modell neu erstellt werden, um die Änderungen zu übernehmen. Die folgenden Aktionen lösen auch die Notwendigkeit aus, das Modell zu erstellen (das rote Ausrufezeichen neben dem Symbol **Modell erstellen** wird angezeigt):
 
-* creating, editing and deleting an intent
-* attaching a Lexicon
-* editing a Lexicon
-* attaching and detaching a Flow
+* Erstellen, Bearbeiten und Löschen eines Intent
+* Anhängen eines Lexikons
+* Bearbeiten eines Lexikons
+* Anbringen und Lösen eines Flows
 
-### Quick Build
+### Schnellbau
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.1.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.1.0-blue.svg)] ({{config.site_url}})
 
-When clicking the arrow on the **Build Model** button, a **Quick Build** option can be selected. This option will build a machine learning model for your intents which doesn't contain specifications for [States]({{config.site_url}}ai/tools/interaction-panel/state/) and Intent Conditions and is thus significantly faster in building your model.
+Wenn Sie auf den Pfeil auf der Schaltfläche **Modell erstellen** klicken, kann eine Option für die **Schnellerstellung** ausgewählt werden. Mit dieser Option wird ein Machine-Learning-Modell für Ihre Absichten erstellt, das keine Spezifikationen für [States]({{config.site_url}}ai/tools/interaction-panel/state/) und Absichtsbedingungen enthält und daher bei der Erstellung Ihres Modells erheblich schneller ist.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/0a0edf3-quick.JPG" width="100%" />
 </figure>
 
-If you're not using [States]({{config.site_url}}ai/tools/interaction-panel/state/) or Intent Conditions, the training speed (as in the time it takes for Cognigy.AI to build the model after you clicked the button) and quality of the model will be the same whether you use the regular *Build Model* or *Quick Build* options.
+Wenn Sie [States]({{config.site_url}}ai/tools/interaction-panel/state/) oder Absichtsbedingungen nicht verwenden, sind die Trainingsgeschwindigkeit (d. h. die Zeit, die Cognigy.AI benötigt, um das Modell zu erstellen, nachdem Sie auf die Schaltfläche geklickt haben) und die Qualität des Modells gleich, unabhängig davon, ob Sie die regulären Optionen *Modell erstellen* oder *Schnellerstellung* verwenden.
 
-## Example Sentences
-<div class="divider"></div>
+## Beispiel-Sätze<div class="divider"></div>Hier haben Entwickler die Möglichkeit, virtuellen Agenten ein einzigartiges Maß an individuellem Verständnis hinzuzufügen, das es ihnen ermöglicht, intelligent auf jede Nachricht zu reagieren, die ein Endbenutzer erhält.
 
-This is where creators are given the power to add unique levels of customized understanding to virtual agents which enable them to react intelligently to any message received by an end user.
+Auch wenn jede Absicht bis zu 2000 Beispielsätze enthalten kann, empfehlen wir mindestens 5 und maximal 100. Bei diesen Sätzen sollte es sich um ein breites Spektrum möglicher Benutzereingaben handeln, von denen erwartet wird, dass sie die Absicht aktivieren. Das Erstellen einer umfassenden Beispielsatzliste ist ein entscheidender Schritt beim Aufbau eines intelligenten KI-Dienstes.
 
-Even though each Intent can have up to 2000 example sentences, we recommend a minimum of 5 and a maximum of 100. These sentences should be a broad range of possible user inputs that are expected to activate the Intent. Building a comprehensive example sentence list is a critical step in the process of building a smart AI service.
-
-When entering the example sentences you can use the **TAB** or **ENTER** key to go to the next NLU example sentence field.
+Bei der Eingabe der Beispielsätze können Sie mit der **TAB**- oder **ENTER**-Taste zum nächsten NLU-Beispielsatzfeld springen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/f97faca-exampleSentences.PNG" width="100%" />
-  <figcaption>Machine Learning Intents: Example Sentences</figcaption>
+  <figcaption>Machine Learning Intents: Beispielsätze</figcaption>
 </figure>
 
-!!! warning "Avoid Repetition"
-    Rather than writing similar sentences for different entity names i.e. `I want to order Pizza, I want to order Pasta...` build and attach a Lexicon to the flow that can be [Annotated]({{config.site_url}}ai/nlu/nlu-overview/annotations/) into your sentence.
+!!! Warnung "Wiederholung vermeiden"
+    Anstatt ähnliche Sätze für verschiedene Entitätsnamen zu schreiben, z. B. "Ich möchte Pizza bestellen, ich möchte Pasta bestellen...", erstellen Sie ein Lexikon und hängen Sie es an den Fluss an, das [Annotated]({{config.site_url}}ai/nlu/nlu-overview/annotations/) in Ihren Satz eingefügt werden kann.
 
-As stated previously, a minimum of 5 and a maximum of 100 example sentences per Intent are recommended to ensure that the NLU model is sufficiently trained. If the minimum threshold is not reached or if the maximum threshold is surpassed, a warning icon will be displayed to prompt the user to add or remove example sentences.
+Wie bereits erwähnt, werden mindestens 5 und maximal 100 Beispielsätze pro Intent empfohlen, um sicherzustellen, dass das NLU-Modell ausreichend trainiert ist. Wenn der Mindestschwellenwert nicht erreicht oder überschritten wird, wird ein Warnsymbol angezeigt, um den Benutzer aufzufordern, Beispielsätze hinzuzufügen oder zu entfernen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/87fee07-minSentenceWarning.PNG" width="100%" />
-  <figcaption>Machine Learning Intents: Minimum Example Sentence warning</figcaption>
+  <figcaption>Machine Learning-Absichten: Warnung zum minimalen Beispielsatz</figcaption>
 </figure>
 
-Any attempt at training the Intents with less than 5 example sentences will result in a negative feedback indicator once the build completes.
+Jeder Versuch, die Intents mit weniger als 5 Beispielsätzen zu trainieren, führt zu einem negativen Feedback-Indikator, sobald der Build abgeschlossen ist.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/87fee07-minSentenceNegativeFeedback.PNG" width="100%" />
-  <figcaption>Negative Feedback Indicator after training Intents with less than 5 Example Sentences</figcaption>
+  <figcaption>Negativer Feedback-Indikator nach dem Training von Intents mit weniger als 5 Beispielsätzen</figcaption>
 </figure>
 
-Intent example sentences should be as distinct and unique as possible. If there is too much similarity and overlap with other intents, then the intent mapping will become less predictable and, if configured, intent confirmation sentences will be triggered more frequently.
+Beispielsätze für Absichten sollten so eindeutig und einzigartig wie möglich sein. Wenn es zu viele Ähnlichkeiten und Überschneidungen mit anderen Absichten gibt, wird das Intent-Mapping weniger vorhersehbar und wenn konfiguriert, werden Absichtsbestätigungssätze häufiger ausgelöst.
 
-!!! note "Evaluation of Example Sentences"
-    Find out more about how Cognigy.AI evaluates example sentences on the [Intent Analyzer Page]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
+!!! Hinweis "Auswertung von Beispielsätzen"
+    Weitere Informationen darüber, wie Cognigy.AI Beispielsätze auswertet, finden Sie auf der [Intent Analyzer Page]({{config.site_url}}ai/nlu/nlu-overview/intent-analyzer/).
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.17.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.17.0-blue.svg)] ({{config.site_url}})
 
-When you hover over an example sentence, a *Delete Icon* will appear. Clicking on this will delete the corresponding example sentence field for you.
+Wenn Sie mit der Maus über einen Beispielsatz fahren, wird ein *Löschen-Symbol* angezeigt. Wenn Sie darauf klicken, wird das entsprechende Beispielsatzfeld für Sie gelöscht.
 
-!!! warning "Delete Example Sentences using Keyboard"
-    The *Delete Icon* of an example sentence cannot be accessed when only using a keyboard. However, a keyboard-only user can still delete an example sentence simply by clearing the field using *Delete* or *Backspace* keys.
+!!! Warnung "Beispielsätze mit Tastatur löschen"
+    Auf das *Löschen-Symbol* eines Beispielsatzes kann nicht zugegriffen werden, wenn nur eine Tastatur verwendet wird. Ein Benutzer, der nur über die Tastatur arbeitet, kann jedoch weiterhin einen Beispielsatz löschen, indem er das Feld einfach mit den Tasten *Löschen* oder *Rücktaste* löscht.
 
-### Create examples with Generative AI 
+### Erstellen von Beispielen mit generativer KI 
 
-To use Generative AI technology for creating Intent example sentences, read the [Generative AI](../../generative-ai.md#generate-intent-sentences) article.
+Um die generative KI-Technologie zum Erstellen von Intent-Beispielsätzen zu verwenden, lesen Sie den Abschnitt [Generative AI](.. /.. /generative-ai.md#generate-intent-sentences) Artikel.
 
+## Slots und Lexika<div class="divider"></div>Beim Schreiben von Beispielsätzen ist es möglich, der Satzstruktur mithilfe der Funktion "Anmerkungen" Systemslots und angehängte Lexika hinzuzufügen. 
 
-## Slots and Lexicons
-<div class="divider"></div>
-
-When writing example sentences, it is possible to add System Slots and attached Lexicons to the sentence structure by using the Annotations feature. 
-
-If you have configured **Lexicons** with similar items (for example, pizza = FOOD and cake = FOOD), you don't need to enter similar sentences for both. Build a general sentence that will be configured with Annotations to recognize your custom Lexicon keyphrases for example, `I want to order some FOOD`.
+Wenn Sie **Lexika** mit ähnlichen Elementen konfiguriert haben (z. B. Pizza = ESSEN und Kuchen = ESSEN), müssen Sie für beide keine ähnlichen Sätze eingeben. Erstellen Sie einen allgemeinen Satz, der mit Anmerkungen konfiguriert wird, um Ihre benutzerdefinierten Lexikon-Schlüsselwörter zu erkennen, z. B. "Ich möchte etwas ESSEN bestellen".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/e85013c-lexiconSentences.PNG" width="100%" />
-  <figcaption>Machine Learning Intents: Slot & Lexicon Annotations</figcaption>
+  <figcaption>Machine-Learning-Absichten: Slot- und Lexikon-Anmerkungen</figcaption>
 </figure>
 
-Simply **highlight** the word that should be mapped as a slot or lexicon and click the **+** at the right end of the text field to open the **Annotations** menu. The annotations menu provides options to select the type of slot that should be mapped to the highlighted word. 
+Markieren Sie einfach das Wort, das als Slot oder Lexikon zugeordnet werden soll, und klicken Sie auf das **+** am rechten Ende des Textfelds, um das Menü **Anmerkungen** zu öffnen. Das Anmerkungsmenü enthält Optionen zur Auswahl des Slot-Typs, der dem markierten Wort zugeordnet werden soll. 
 
-!!! note "Example Sentence Annotation"
-    Find out more about recognizing **Slots** and **Lexicons** in example sentences on the [Annotations Page]({{config.site_url}}ai/nlu/nlu-overview/annotations/).
+!!! Hinweis "Beispiel für eine Satzanmerkung"
+    Erfahren Sie mehr über das Erkennen von **Slots** und **Lexika** in Beispielsätzen auf der [Anmerkungsseite]({{config.site_url}}ai/nlu/nlu-overview/annotations/).
 
-## Thresholds
-<div class="divider"></div>
-Intents can fall into one of three thresholds:
+## Schwellenwerte<div class="divider"></div>Absichten können in einen von drei Schwellenwerten fallen:
 
-* **Confirmed**
-    The Intent has a score higher than the confidence threshold and is considered "confirmed".
+Bestätigt**
+    Die Absicht hat eine Punktzahl, die höher ist als die Konfidenzschwelle und gilt als "bestätigt".
 
-* **Reconfirmation Needed**
-    The Intent has a score higher than the reconfirmation threshold, but lower than the confidence threshold and must be reconfirmed by the system.
+* **Erneute Bestätigung erforderlich**
+    Die Absicht hat eine Punktzahl, die höher als der Schwellenwert für die erneute Bestätigung, aber niedriger als der Konfidenzschwellenwert ist, und muss vom System erneut bestätigt werden.
 
-* **Not found**
-    The Intent has a score lower than the reconfirmation threshold and isn't considered a valid result for this input.
+* **Nicht gefunden**
+    Die Absicht hat eine niedrigere Punktzahl als der Schwellenwert für die erneute Bestätigung und wird für diese Eingabe nicht als gültiges Ergebnis betrachtet.
 
-You can change these thresholds in [Agent Settings]({{config.site_url}}ai/resources/manage/settings/).
+Sie können diese Schwellenwerte in [Agenteneinstellungen]({{config.site_url}}ai/resources/manage/settings/) ändern.
 
 !!! danger "Confirmation Sentence"
-    In case you haven't defined a confirmation sentence for your Machine Learning intent the reconfirmation threshold is used to confirm an intent.
+    Falls Sie keinen Bestätigungssatz für Ihre Machine Learning-Absicht definiert haben, wird der Schwellenwert für die erneute Bestätigung verwendet, um eine Absicht zu bestätigen.
 
-    So the reconfirmation threshold is used in two different ways depending on the existence of a confirmation sentence:
+Die Rückbestätigungsschwelle wird also auf zwei verschiedene Arten verwendet, je nachdem, ob ein Bestätigungssatz vorhanden ist:
 
-    - **With** confirmation sentence: the reconfirmation threshold triggers the reconfirmation sentence.
+- **Mit** Bestätigungssatz: Die Rückbestätigungsschwelle löst den Rückbestätigungssatz aus.
 
-    - **Without** confirmation sentence: the reconfirmation threshold confirms the input.
+- **Ohne** Bestätigungssatz: Die Rückbestätigungsschwelle bestätigt die Eingabe.
 
-## Confirmation Sentence and Reconfirmations
-<div class="divider"></div>
-If an Intent has been marked as `Reconfirmation Needed` and it is the highest found Intent, Cognigy AI will ask the user the question set in the **`Confirmation Sentence`** property for the Intent. If the user confirms the question with a positive answer, Cognigy AI will remember the answer for this user and not ask the user again. 
+## Bestätigungssatz und Rückbestätigungen<div class="divider"></div>Wenn ein Intent als "Erneute Bestätigung erforderlich" markiert wurde und es sich um die höchste gefundene Absicht handelt, stellt Cognigy AI dem Benutzer die Frage, die in der Eigenschaft "Bestätigungssatz" für die Absicht festgelegt ist. Wenn der Benutzer die Frage mit einer positiven Antwort bestätigt, merkt sich Cognigy AI die Antwort für diesen Benutzer und fragt den Benutzer nicht erneut. 
 
-!!! note "How Reconfirmation Works"
-    * User: *"I want to order a snack"*
-    * Cognigy AI scores the Intent `orderPizza` with 0.7
-    * Cognigy AI: *"Do you mean you want to order a pizza?"*
-    * User: *"Yes"*
-    * Cognigy AI executes the sentence as if the user had said *"I want to order pizza"*, plus remembers the confirmation for the future
+!!! Hinweis "So funktioniert die Rückbestätigung"
+    * Benutzer: *"Ich möchte einen Snack bestellen"*
+    * Cognigy AI bewertet den Intent 'orderPizza' mit 0,7
+    * Cognigy AI: *"Meinst du, du willst eine Pizza bestellen?" *
+    * Benutzer: *"Ja"*
+    * Cognigy AI führt den Satz so aus, als hätte der Nutzer *"Ich möchte Pizza bestellen"* gesagt, und merkt sich die Bestätigung für die Zukunft
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/9ab14af-reconfirmation.PNG" width="100%" />
-  <figcaption>Machine Learning Intents: Confirmation Sentence</figcaption>
+  <figcaption>Machine Learning Intents: Bestätigungssatz</figcaption>
 </figure>

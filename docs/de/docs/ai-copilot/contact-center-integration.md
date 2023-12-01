@@ -1,19 +1,19 @@
 ---
-title: "Integration with Contact Centers"
-slug: "contact-center-integration"
-hidden: false
+Titel: "Integration mit Contact Centern"
+Slug: "Contact-Center-Integration"
+ausgeblendet: false
 ---
 
-# Integration with Contact Centers
+# Integration mit Contact Centern
 
-The AI Copilot workspace is designed to work with any contact center. However, additional contact-center-specific configuration may be required. 
+Der AI Copilot-Arbeitsbereich ist so konzipiert, dass er mit jedem Contact Center zusammenarbeitet. Möglicherweise ist jedoch eine zusätzliche Contact-Center-spezifische Konfiguration erforderlich. 
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot Workspace](overview.md)
-- [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](embedding.md)
-- [AI Copilot for Voice](voice/voice-overview.md)
-- [AI Copilot for Chat](chat.md)
+- [Arbeitsbereich für KI-Copilot](overview.md)
+- [Erste Schritte mit AI Copilot](getting-started.md)
+- [Konfiguration des KI-Copiloten](configuration.md)
+- [KI-Copilot-Knoten](.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](embedding.md)
+- [KI-Copilot für Sprache](voice/voice-overview.md)
+- [KI-Copilot für Chat](chat.md)

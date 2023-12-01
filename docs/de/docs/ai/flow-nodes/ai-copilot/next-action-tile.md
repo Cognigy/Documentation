@@ -1,44 +1,44 @@
 ---
-title: "Copilot: Next Action Tile"
-slug: "next-action-tile"
-hidden: true
+Titel: "Copilot: Nächste Aktionskachel"
+Slug: "Nächste-Aktions-Kachel"
+Ausgeblendet: Wahr
 ---
 
-# Copilot: Next Action Tile
+# Copilot: Kachel "Nächste Aktion"
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.60-blue.svg)] (.. /.. /.. /release-notes/4.60.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/next-action-tile.png" width="80%"/>
 </figure>
 
-## Description
+## Beschreibung
 
-This Node is designed
-to determine the appropriate next step or action in a conversation or process based on the user's input or the current context.
-This Node helps guide a conversation flow and ensures that the system responds effectively to user requests or queries.
+Dieser Knoten ist so konzipiert, dass er
+, um den geeigneten nächsten Schritt oder die nächste Aktion in einer Konversation oder einem Prozess basierend auf der Eingabe des Benutzers oder dem aktuellen Kontext zu bestimmen.
+Dieser Knoten hilft bei der Steuerung eines Konversationsflusses und stellt sicher, dass das System effektiv auf Benutzeranfragen oder -anfragen reagiert.
 
-## Settings
+## Einstellungen
 
-| Parameter | Type          | Description                                                                                                               |
+| Parameter | Typ | Beschreibung |
 |-----------|---------------|---------------------------------------------------------------------------------------------------------------------------|
-| Tile ID   | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                  |
-| Text      | CognigyScript | Enter the text you want to display in the next action widget. This text is an essential part of guiding the conversation. |
+| Kachel-ID | CognigyScript | Die ID, die Sie in der AI Copilot-Konfiguration erstellt haben.                                                                  |
+| Text | CognigyScript | Geben Sie den Text ein, der im nächsten Aktions-Widget angezeigt werden soll. Dieser Text ist ein wesentlicher Bestandteil, um das Gespräch zu führen. |
 
-## Use Case
+## Anwendungsfall
 
-This Node helps the human agent by providing guidance and predefined instructions based on the user's question. 
-For instance, if a user asks about the latest release version, the agent can give them both the answer and links to important updates in that release.
+Dieser Node hilft dem menschlichen Agenten, indem er Anleitungen und vordefinierte Anweisungen basierend auf der Frage des Benutzers bereitstellt. 
+Wenn ein Benutzer beispielsweise nach der neuesten Release-Version fragt, kann der Agent ihm sowohl die Antwort als auch Links zu wichtigen Updates in dieser Version geben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/next-action-tile-example.png" width="80%"/>
-  <figcaption>The Next Action Tile Widget in AI Copilot</figcaption>
+  <figcaption>Das nächste Aktionskachel-Widget in AI Copilot</figcaption>
 </figure>
 
-## More Information
+## Mehr Informationen
 
-- [Copilot: Transcript Tile](transcript-tile.md)
-- [Copilot: Sentiment Tile Node](sentiment-tile.md)
-- [Copilot: Identity Tile](identity-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [Copilot: Transkript-Kachel](transcript-tile.md)
+- [Copilot: Stimmungskachelknoten](sentiment-tile.md)
+- [Copilot: Identitätskachel](identity-tile.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

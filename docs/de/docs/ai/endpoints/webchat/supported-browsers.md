@@ -1,20 +1,17 @@
 ---
-title: "Supported Browsers"
-slug: "supported-browsers"
-hidden: false
+title: "Unterstützte Browser"
+slug: "Unterstützte-Browser"
+ausgeblendet: false
 ---
-# Supported Browsers
+# Unterstützte Browser
 
-Cognigy Webchat Widget is compatible with the browsers listed below:
+Das Cognigy Webchat Widget ist mit den unten aufgeführten Browsern kompatibel:
 
-| Browser           | Version            |
+| Browser | Ausführung |
 |-------------------|--------------------|
-| Google Chrome     | 66 or higher       |
-| Firefox           | 57 or higher       |
-| Microsoft Edge    | 16 or higher       |
-| Safari            | 11.1 or higher[^*] |
+| Google Chrome | 66 oder höher |
+| Firefox | 57 oder höher |
+| Microsoft Edge | 16 oder höher |
+| Safari | 11.1 oder höher[^*] |
 
-
-[^*]: Cognigy only supports Websockets on Safari, which means that the fallback to long-polling is not allowed.
-
-
+[^*]: Cognigy unterstützt nur Websockets in Safari, was bedeutet, dass der Fallback auf Long-Polling nicht erlaubt ist.

@@ -1,87 +1,87 @@
 ---
-title: "Accounts" 
-slug: "vg-webapp-accounts" 
-hidden: false 
+Titel: "Konten" 
+Slug: "vg-webapp-accounts" 
+ausgeblendet: false 
 ---
 
-# Accounts
+# Konten
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.60-blue.svg)] (.. /.. /release-notes/4.60.md)
 
-*Accounts* are containers for resources such as [applications](applications.md), [carriers](carriers.md), and [speech services](speech-services.md) that are used to create and manage voice applications.
+*Konten* sind Container für Ressourcen wie [Anwendungen](applications.md), [Netzbetreiber](carriers.md) und [Sprachdienste](speech-services.md), die zum Erstellen und Verwalten von Sprachanwendungen verwendet werden.
 
-In Voice Gateway, an account may represent a specific customer organization and can have multiple users associated with it. 
+In Voice Gateway kann ein Konto eine bestimmte Kundenorganisation darstellen und mehreren Benutzern zugeordnet sein. 
 
-The account owner controls what the other users can see and do within the platform, ensuring that sensitive data and functions are kept secure. The account owner can be a user with Service Provider and Admin scopes. They can create more than one account and manage them. To create an account, in the left-side menu, select Accounts, then click **Add account** or **+**.
+Der Kontoinhaber kontrolliert, was die anderen Benutzer auf der Plattform sehen und tun können, und stellt sicher, dass sensible Daten und Funktionen sicher aufbewahrt werden. Der Kontobesitzer kann ein Benutzer mit den Bereichen "Dienstanbieter" und "Administrator" sein. Sie können mehr als ein Konto erstellen und verwalten. Um ein Konto zu erstellen, wählen Sie im Menü auf der linken Seite Konten aus und klicken Sie dann auf **Konto hinzufügen** oder **+**.
 
-A user with the Account scope can view and edit only the account to which they belong.
+Ein Benutzer mit dem Kontobereich kann nur das Konto anzeigen und bearbeiten, zu dem er gehört.
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-accounts.png"  width="100%" />
 
-## Settings
+## Einstellungen
 
-| Settings                         | Description                                                                                                                  | Scope                            |
+| Einstellungen | Beschreibung | Geltungsbereich |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Account SID                      | The value generates automatically when the admin creates an account                                                          | Account, Service Provider, Admin |
-| Account name                     | A unique account name.                                                                                                       | Account, Service Provider, Admin |
-| Unit                             | You can choose sessions or minutes and specify a maximum number of them.                                                     | Admin                            |
-| Licensed sessions                | A number of purchased sessions.                                                                                              | Admin                            |
-| SIP Realm                        | A domain name that SIP devices will register with.                                                                           | Account, Service Provider, Admin |
-| Webhook Secret                   | A layer of security "signing" the webhook calls.                                                                             | Account, Service Provider, Admin |
-| Application for SIP device calls | Select the application which is used to handle incoming calls from SIP users who have registered to the Account's SIP Realm. | Account, Service Provider, Admin |
-| Application for SIPREC calls     | Select the application for [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866) calls.                                    | Account, Service Provider, Admin |
-| Registration Webhook             | A URL for your Web Application that handles registrations.                                                                   | Account, Service Provider, Admin |
-| Queue Event Webhook              | A URL to notify when a member joins or leaves a queue.                                                                       | Account, Service Provider, Admin |
-| TTS prompt caching               | View the count of cached prompts, and click to clear the TTS cache.                                                          | Account, Service Provider, Admin |
-| Call recording configuration     | Enable and configure call recordings at an account level.                                                                    | Account, Service Provider, Admin |
-| Account API keys                 | You can generate API key by clicking **Add key**.                                                                            | Account, Service Provider, Admin |
+| Konto-SID | Der Wert wird automatisch generiert, wenn der Administrator ein Konto erstellt | Konto, Dienstanbieter, Admin |
+| Kontoname | Ein eindeutiger Kontoname.                                                                                                       | Konto, Dienstanbieter, Admin |
+| Einheit | Sie können Sitzungen oder Minuten auswählen und eine maximale Anzahl davon angeben.                                                     | Admin |
+| Lizenzierte Sitzungen | Eine Anzahl von gekauften Sitzungen.                                                                                              | Admin |
+| SIP-Bereich | Ein Domänenname, mit dem SIP-Geräte registriert werden.                                                                           | Konto, Dienstanbieter, Admin |
+| Webhook-Geheimnis | Eine Sicherheitsebene, die die Webhook-Aufrufe "signiert".                                                                             | Konto, Dienstanbieter, Admin |
+| Anwendung für SIP-Geräteanrufe | Wählen Sie die Anwendung aus, die für die Verarbeitung eingehender Anrufe von SIP-Benutzern verwendet wird, die sich im SIP-Bereich des Kontos registriert haben. | Konto, Dienstanbieter, Admin |
+| Beantragung von SIPREC-Ausschreibungen | Wählen Sie die Anwendung für [SIPREC](https://datatracker.ietf.org/doc/html/rfc7866)-Aufrufe aus.                                    | Konto, Dienstanbieter, Admin |
+| Registrierung Webhook | Eine URL für Ihre Webanwendung, die Registrierungen verarbeitet.                                                                   | Konto, Dienstanbieter, Admin |
+| Webhook für Warteschlangenereignisse | Eine URL, über die benachrichtigt wird, wenn ein Mitglied einer Warteschlange beitritt oder sie verlässt.                                                                       | Konto, Dienstanbieter, Admin |
+| Zwischenspeichern von TTS-Eingabeaufforderungen | Zeigen Sie die Anzahl der zwischengespeicherten Eingabeaufforderungen an, und klicken Sie, um den TTS-Cache zu löschen.                                                          | Konto, Dienstanbieter, Admin |
+| Konfiguration der Anrufaufzeichnung | Aktivieren und konfigurieren Sie Anrufaufzeichnungen auf Kontoebene.                                                                    | Konto, Dienstanbieter, Admin |
+| Konto-API-Schlüssel | Sie können einen API-Schlüssel generieren, indem Sie auf **Schlüssel hinzufügen** klicken.                                                                            | Konto, Dienstanbieter, Admin |
 
-### TTS prompt caching
+### Zwischenspeicherung von TTS-Eingabeaufforderungen
 
-The **Clear TTS Cache** button resets the cached audio for TTS. This forces the bot to load new audio for TTS, to help to resolve TTS related issues.
+Mit der Schaltfläche **TTS-Cache löschen** wird das zwischengespeicherte Audiomaterial für TTS zurückgesetzt. Dadurch wird der Bot gezwungen, neue Audiodaten für TTS zu laden, um TTS-bezogene Probleme zu beheben.
 
-### Call recording configuration
+### Konfiguration der Anrufaufzeichnung
 
-Call recordings can be enabled at an account or application level for debugging purposes.
+Anrufaufzeichnungen können zu Debugging-Zwecken auf Konto- oder Anwendungsebene aktiviert werden.
 
-This is a separate recording functionality, and cannot be controlled by Cognigy.AI within a Flow.
+Hierbei handelt es sich um eine separate Aufzeichnungsfunktion, die nicht von Cognigy.AI innerhalb eines Flows gesteuert werden kann.
 
-You must provide a Bucket Vendor and additional details and credentials in order to enable this feature and store your recorded calls.
+Sie müssen einen Bucket-Anbieter sowie zusätzliche Details und Anmeldeinformationen angeben, um diese Funktion zu aktivieren und Ihre aufgezeichneten Anrufe zu speichern.
 
-After a call is recorded, an admin can listen to and review recordings at [Recent calls](recent-calls.md#call-recordings).
+Nachdem ein Anruf aufgezeichnet wurde, kann ein Administrator die Aufzeichnungen unter [Letzte Anrufe](recent-calls.md#call-recordings) anhören und überprüfen.
 
-#### Account level recording
+#### Aufzeichnung auf Kontoebene
 
-When enabled at the account level, calls from all applications within an account will be recorded.
+Wenn diese Option auf Kontoebene aktiviert ist, werden Anrufe von allen Anwendungen innerhalb eines Kontos aufgezeichnet.
 
-To enable recording calls at an account level, follow these steps:
+Gehen Sie folgendermaßen vor, um die Aufzeichnung von Anrufen auf Kontoebene zu aktivieren:
 
-1. Open the Voice Gateway interface.
-2. In the left-side menu, select **Accounts**.
-3. Create a new account or use an existing one.
-4. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
-5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats. 
-6. Select a bucket vendor:
+1. Öffnen Sie die Voice Gateway-Schnittstelle.
+2. Wählen Sie im Menü auf der linken Seite **Konten** aus.
+3. Erstellen Sie ein neues Konto oder verwenden Sie ein bestehendes.
+4. Scrollen Sie nach unten zum Abschnitt **Konfiguration der Anrufaufzeichnung** und klicken Sie auf das Kontrollkästchen für **Anrufaufzeichnung aktivieren**.
+5. Wählen Sie im Feld **Audioformat** zwischen den Formaten ".wav" und ".mp3". 
+6. Wählen Sie einen Bucket-Anbieter aus:
 
-    === "Amazon S3"
-        - **Bucket Name** — provide the name of your bucket.
-        - **Region** — choose the region for your storage from the list.
-        - **Access key ID** — provide the access key ID for your bucket.
-        - **Secret access key** — provide the secret access key ID for your bucket.
-        - **S3 Tags** — provide any S3 tags with name and value as needed.
+=== "Amazon S3"
+        - **Bucket Name** — Geben Sie den Namen Ihres Buckets an.
+        - **Region** — Wählen Sie die Region für Ihren Speicher aus der Liste aus.
+        - **Zugriffsschlüssel-ID** – Geben Sie die Zugriffsschlüssel-ID für Ihren Bucket an.
+        - **Geheimer Zugriffsschlüssel** – Geben Sie die ID des geheimen Zugriffsschlüssels für Ihren Bucket an.
+        - **S3-Tags** – Geben Sie bei Bedarf Namen und Wert für alle S3-Tags an.
 
-    === "Google Cloud Storage"
-        - **Bucket Name** — provide the name of your bucket.
-        - **Service key** — provide a JSON key for a Service Account with APIs enabled for Cloud Storage and Storage Transfer API.
-        - **Google Cloud Storage Tags** — provide any Google Cloud Storage tags with name and value as needed.
+=== "Google Cloud-Speicher"
+        - **Bucket Name** — Geben Sie den Namen Ihres Buckets an.
+        - **Dienstschlüssel**: Geben Sie einen JSON-Schlüssel für ein Dienstkonto mit APIs an, die für Cloud Storage und Storage Transfer API aktiviert sind.
+        - **Google Cloud Storage-Tags**: Geben Sie alle Google Cloud Storage-Tags nach Bedarf mit Namen und Wert an.
 
-    === "Azure Cloud Storage"
-        - **Container Name** — provide the name of your container.
-        - **Connection String** — provide a [connection string](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string).
-        - **Azure Cloud Storage Tags** — provide any Azure Cloud Storage tags with name and value as needed.
+=== "Azure Cloud Storage"
+        - **Containername** — Geben Sie den Namen Ihres Containers an.
+        - **Verbindungszeichenfolge** — Geben Sie eine [Verbindungszeichenfolge](https://learn.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string) an.
+        - Azure Cloud Storage-Tags: Geben Sie bei Bedarf Namen und Wert für alle Azure Cloud Storage-Tags an.
 
-7. Click **Test** to verify your connection. 
-8. Click the **Record all calls for this account** option if you do not want to record calls not only for a specific application.
-9. Click **Save**.
+7. Klicken Sie auf **Test**, um Ihre Verbindung zu überprüfen. 
+8. Klicken Sie auf die Option **Alle Anrufe für dieses Konto aufzeichnen**, wenn Sie Anrufe nicht nur für eine bestimmte Anwendung aufzeichnen möchten.
+9. Klicken Sie auf **Speichern**.
 
-All calls from all applications on this account will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
+Alle Anrufe von allen Anwendungen in diesem Konto werden aufgezeichnet und auf der Seite [Letzte Anrufe](recent-calls.md#call-recordings) angezeigt.

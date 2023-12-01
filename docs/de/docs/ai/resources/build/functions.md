@@ -1,118 +1,113 @@
 ---
-title: "Functions" 
-slug: "functions" 
-description: "Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API."
-hidden: false 
+title: "Funktionen" 
+slug: "Funktionen" 
+Beschreibung: "Cognigy-Funktionen sind Codeblöcke, die innerhalb Ihrer Cognigy.AI-Installation ausgeführt werden können und Sie bei lang andauernden asynchronen Prozessen unterstützen, wie z. B. der Interaktion mit Systemen von Drittanbietern über die HTTP-API."
+ausgeblendet: false 
 ---
-# Functions 
+# Funktionen 
 
-Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API.
+Cognigy-Funktionen sind Codeblöcke, die innerhalb Ihrer Cognigy.AI-Installation ausgeführt werden können und Sie bei lang andauernden asynchronen Prozessen unterstützen, wie z. B. der Interaktion mit Drittsystemen über die HTTP-API.
 
-Functions are independent of Flows but can be triggered from a Flow and can also use the [Inject & Notify](../../endpoints/inject-and-notify.md) APIs to send their results back into a Flow.
+Funktionen sind unabhängig von Flows, können aber von einem Flow aus ausgelöst werden und können auch die [Inject & Notify](.. /.. /endpoints/inject-and-notify.md), um ihre Ergebnisse zurück in einen Flow zu senden.
 
-When running a Function, you can pass additional parameters, which are then available in the Function Code.
+Beim Ausführen einer Funktion können Sie zusätzliche Parameter übergeben, die dann im Funktionscode zur Verfügung stehen.
 
-You can start using Functions by navigating to **Build > Functions** in the left-side menu.
-<br>
+Sie können mit der Verwendung von Functions beginnen, indem Sie im Menü auf der linken Seite zu **Build > Functions** navigieren.<br>## Einschränkungen
 
-## Limitations
+Die maximale Laufzeit für eine Instanz einer Cognigy-Funktion ist auf 15 Minuten begrenzt. Wenn Sie über eine On-Premise-Umgebung verfügen, können Sie diesen Grenzwert ändern.
 
-The maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. If you have On-premise environment, you can change this limit.
+## Konfiguration und Überwachung
 
-## Configuration and Monitoring
+Mit dem **Funktions-Editor** können Sie ein Code-Snippet in JavaScript oder TypeScript definieren.
 
-The **Function Editor** lets you define a Code snippet in JavaScript or TypeScript language.
-
-You can access the `parameters` and `api` objects from the Function's arguments.
+Sie können über die Argumente der Funktion auf die Objekte "parameters" und "api" zugreifen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Function_editor.png" width="100%" />
 </figure>
 
-## Interacting with Third-Party Systems
+## Interaktion mit Drittsystemen
 
-You can use HTTP requests to interact with third-party systems.
+Sie können HTTP-Requests verwenden, um mit Drittsystemen zu interagieren.
 
-````JavaScript
+''''JavaScript
 const response = await api.httpRequest({
-    method: "get",
+    Methode: "get",
     url: "https://example.com/api/v2",
-    headers: {
-        "Accept": "application/json"
+    Kopfzeilen: {
+        "Akzeptieren": "Anwendung/JSON"
     }
 });
-````
+''''
 
-## Interacting with Flows
+## Interagieren mit Flows
 
-You can use Functions to interact with Flows using the [Inject & Notify](../../endpoints/inject-and-notify.md) APIs.
+Sie können Funktionen verwenden, um mit Flows zu interagieren, indem Sie die Schaltfläche [Inject & Notify](.. /.. /endpoints/inject-and-notify.md)-APIs.
 
-The following examples assume that you pass `userId` and `sessionId` through the Function's Parameters.
+In den folgenden Beispielen wird davon ausgegangen, dass Sie "userId" und "sessionId" über die Parameter der Funktion übergeben.
 
-````JavaScript
-const { userId, sessionId } = parameters;
+''''JavaScript
+const { userId, sessionId } = Parameter;
 
 api.inject({
     userId,
     sessionId,
-    text: "This text was injected through a Function"
+    text: "Dieser Text wurde durch eine Funktion eingefügt"
 });
-````
+''''
 
-**Performing a "Notify" call**
+**Ausführen eines "Notify"-Anrufs**
 
-````JavaScript
-const { userId, sessionId } = parameters;
+''''JavaScript
+const { userId, sessionId } = Parameter;
 
 api.notify({
     userId,
     sessionId,
-    text: "This text was injected through a Function"
+    text: "Dieser Text wurde durch eine Funktion eingefügt"
 });
-````
+''''
 
-### Monitoring
+### Überwachung
 
-By switching to the **Instances** tab, you can see an execution history for the currently edited Function. Each execution will list its current execution status, the trigger source, the start time and the finish time.
+Wenn Sie auf die Registerkarte **Instanzen** wechseln, können Sie einen Ausführungsverlauf für die aktuell bearbeitete Funktion anzeigen. Jede Ausführung listet den aktuellen Ausführungsstatus, die Triggerquelle, die Startzeit und die Endzeit auf.
 
-By hovering an item, you can also see the parameters that were provided for this individual execution.
+Wenn Sie mit der Maus über ein Element fahren, können Sie auch die Parameter sehen, die für diese einzelne Ausführung bereitgestellt wurden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Function_instances.png" width="100%" />
 </figure>
 
-## Triggering a Function
+## Auslösen einer Funktion
 
-Cognigy Functions can be triggered in three different ways:
+Cognigy-Funktionen können auf drei verschiedene Arten ausgelöst werden:
 
-- [Using the UI](#using-the-ui)
-- [Using the REST API](#using-the-rest-api)
-- [Using a Node](#using-a-node)
+- [Verwenden der Benutzeroberfläche](#using-the-ui)
+- [Verwenden der REST-API](#using-the-rest-api)
+- [Verwenden eines Knotens](#using-a-Knoten)
 
-### Using the UI
+### Verwenden der Benutzeroberfläche
 
-On the **Function Editor** page, click the **Run** button in the upper-left corner of the page.
-This action will run the Function without parameters. 
+Klicken Sie auf der Seite **Funktions-Editor** auf die Schaltfläche **Ausführen** in der oberen linken Ecke der Seite.
+Mit dieser Aktion wird die Funktion ohne Parameter ausgeführt. 
 
-To run a Function with parameters, click the **Arrow** button next to the **Run** button.
-This action will open a dialog, where you can define additional parameters as a JSON object.
+Um eine Funktion mit Parametern auszuführen, klicken Sie auf die Schaltfläche **Pfeil** neben der Schaltfläche **Ausführen**.
+Diese Aktion öffnet einen Dialog, in dem Sie zusätzliche Parameter als JSON-Objekt definieren können.
 
-### Using the REST API
+### Verwenden der REST-API
 
-You can trigger a Function by using the REST API.
-For more information, read the [OpenAPI](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger) documentation.
+Sie können eine Funktion mithilfe der REST-API auslösen.
+Weitere Informationen finden Sie in der [OpenAPI](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)-Dokumentation.
 
-### Using a Node
+### Verwenden eines Knotens
 
-To trigger a Function from a Flow, use the [Trigger Function](../../flow-nodes/logic/trigger-function.md) Node.
+Um eine Funktion aus einem Flow auszulösen, verwenden Sie die [Funktion auslösen](.. /.. /flow-nodes/logic/trigger-function.md) Knoten.
 
-## More Information
+## Mehr Informationen
 
-- [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)
-- [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)
-- [Trigger Function]({{config.site_url}}ai/flow-nodes/logic/trigger-function/)
-
-<!--
+- [Injizieren & Benachrichtigen]({{config.site_url}}ai/endpoints/inject-and-notify/)
+- [OpenAPI-Dokumentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)
+- [Trigger-Funktion]({{config.site_url}}ai/flow-nodes/logic/trigger-function/)<!--
 
 Cognigy Functions are a big leap forward when it comes to running asynchronous code in the background. 
 Functions allow you to schedule long-running code (e.g. 10 minutes!) in the background. 

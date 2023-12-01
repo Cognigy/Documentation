@@ -1,23 +1,23 @@
 ---
-title: "Architecture" 
-slug: "architecture" 
-hidden: false 
+Titel: "Architektur" 
+Slug: "Architektur" 
+ausgeblendet: false 
 ---
 
-# Architecture
+# Architektur
 
 <figure>
  <img class="image-center" src="{{config.site_url}}ai-copilot/images/AI-Copilot-Architecture-Flow.png" alt="AI Copilot Architecture" width="100%" />
-  <figcaption>AI Copilot Architecture Diagram</figcaption>
+  <figcaption>KI-Copilot-Architekturdiagramm</figcaption>
 </figure>
 
-AI Copilot is composed of Node.JS microservices that serves a React Frontend along with an API for performing actions such as CRUD operations and WebSockets.
+AI Copilot besteht aus Node.JS Microservices, die ein React-Frontend zusammen mit einer API zum Ausführen von Aktionen wie CRUD-Operationen und WebSockets bereitstellen.
 
-AI Copilot has the following set of services running:
+AI Copilot verfügt über die folgenden Dienste:
 
-- Required to run in a Kubernetes cluster
-  - agent-assist-backend (API)
-  - agent-assist-frontend (UI)
-- External/Internal services
-  - MongoDB Database as persistent storage
-  - Redis Database for caching and performance
+- Erforderlich für die Ausführung in einem Kubernetes-Cluster
+  - Agenten-Assist-Backend (API)
+  - Agenten-Assist-Frontend (UI)
+- Externe/Interne Dienstleistungen
+  - MongoDB-Datenbank als persistenter Speicher
+  - Redis-Datenbank für Caching und Performance

@@ -1,243 +1,198 @@
 ---
-title: "Question" 
-slug: "question" 
-hidden: false 
+Titel: "Frage" 
+slug: "Frage" 
+ausgeblendet: false 
 ---
-# Question
+# Frage
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.55-blue.svg)] (.. /.. /.. /release-notes/4.55.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein Frageknoten wird verwendet, um eine Frage zu stellen, die bestimmte Informationen vom Benutzer anfordert. 
 
-A Question Node is used to ask a question that requests specific information from the user. 
+Nachdem eine Frage gestellt wurde und der Benutzer antwortet, wird die Antwort entsprechend ihrem Typ überprüft. Wenn sie erfolgreich ist, ist die Antwort gültig und gespeichert, und die Konversation wird fortgesetzt.
 
-After a question is asked and the user answers, the answer is validated according to its type. If it passes, the answer is valid and stored, and the conversation continues.
-
-!!! note "Attached Flows"
-    When a user input is recieved, it will be scored by the NLU. If an attached Flow has an Intent, which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
-
-<blockquote class="callout callout_info" theme="📘">
+!!! Hinweis "Angehängte Flows"
+    Wenn eine Benutzereingabe eingeht, wird sie von der NLU bewertet. Wenn ein angehängter Flow über ein Intent verfügt, das höher bewertet ist als Intents im aktuellen Flow, wird das angehängte Flow ausgeführt. Dies geschieht, bevor die Validierung des Fragenknotens abgeschlossen ist. Weitere Informationen finden Sie unter [Angehängter Flow](.. /.. /nlu/attachments/attached-flows.md).<blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
     <div class="callout-heading">
       <div class="callout-text">
-         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank" >Technical video "Question Nodes"</a>
+         <a href="https://support.cognigy.com/hc/en-us/articles/360020609199-Cognigy-Sessions-Question-Nodes" target="_blank">Technisches Video "Question Nodes"</a>
       </div>
-      <div class="callout-subtext">
-      Watch this Episode of Cognigy Sessions for a technical deep dive
-      </div>
+      <div class="callout-subtext">Sehen Sie sich diese Folge von Cognigy Sessions an, um einen technischen Einblick zu erhalten      </div>
    </div>
-</blockquote>
+</blockquote>## Frage-Typen<div class="divider"></div> Frageknoten verfügen über eine Auswahl von Typen, die die Validierung bestimmen, die verwendet wird, bevor eine Konversation fortgesetzt wird.
 
-## Question Types
-<div class="divider"></div> 
+| Typ | Erwartete Benutzereingabe zur Beantwortung der Frage                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Beispiel                                                             |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ----------------------------------------------|---------------------------------------------------------------------|
+| Text | Beliebige Texteingaben                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                     |
+| Ja / Nein | Eine positive oder negative Antwort                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                     |
+| Absicht | Einer der trainierten [Intents](.. /.. /nlu/nlu-overview/ml-intents.md) muss aus der Antwort des Benutzers identifiziert werden |                                                                     |
+| Spielautomat | Ein [Systemsteckplatz](.. /.. /nlu/slot-mapping/slot-mapping.md#system-defined-slots) oder [Lexicon Slot](.. /.. /resources/build/lexicons.md) muss in der Antwort des Benutzers erkannt werden. Der Slot wird durch den Namen definiert.                                                                                                                                                                                                                                                                                                              |                                                                     |
+| Datum | Beliebiges Datum (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                     |
+| Anzahl | Beliebige Zahl (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                     |
+| Temperatur | Beliebige Temperatur (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                     |
+| Alter | Beliebiges Alter (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                     |
+| Dauer | Beliebige Zeitdauer (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                     |
+| E-Mail | Beliebige E-Mail-Adresse (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                     |
+| Geld | Beliebiger Geldwert (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                     |
+| Internetadresse | Jeder Verweis/jede Adresse auf eine Ressource im Internet, z. B. http://example.com |                                                                     |
+| Prozentsatz | Beliebiger Prozentsatz (systemdefiniert)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                     |
+| Regex | Jedes benutzerdefinierte Datenformat, das durch einen Regex-Ausdruck definiert wird, muss in der Antwort des Benutzers erkannt werden                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                     |
+| Daten | Alle Dateneingaben (input.data)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                     |
+| xApp | Beliebiger xApp-Eingang                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                     |
+| Benutzerdefiniert | Beliebige Eingabe                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                     |
+| Muster: Nummernschild (DE) | Ein Muster für das [deutsche Kfz-Kennzeichen](https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Germany). Dieses Nummernschild ist ein eindeutiges alphanumerisches Identifikationsschild, das an einem Fahrzeug angebracht ist. Es besteht aus Buchstaben, Zahlen und manchmal auch Sonderzeichen, z. B. "ö", "ä" oder "ü". Nummernschilder dienen der Identifizierung und Registrierung von Fahrzeugen und liefern wichtige Informationen wie Fahrzeugbesitz, Zulassungsdaten und die Einhaltung gesetzlicher Anforderungen.  | 'M-345', 'x1Y2Z3', 'D 12345C' |
+| Muster: IBAN | Ein Muster für die Internationale Bankkontonummer (IBAN)                                                                                                                                                                                                                                                                                                                                                                                                                                                               | "DE12345678901234567890" | 
+| Muster: Bank Identifier Code (BIC) | Ein Muster für den Bank Identifier Code (BIC)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | "DEUTDEFF500" | 
+| Muster: Sozialversicherungsnummer (US) | Ein Muster für die US-Sozialversicherungsnummer                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | "123-45-6789" |
+| Muster: IP-Adresse (IPv4) | Ein Muster für die IPv4-Adresse                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | "192.168.1.1" |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Muster: Telefonnummer | Ein Muster für die Telefonnummer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | "+49 00000000000", "49 000000000000", "+4900000000000", "(555) 000-000" |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Muster: Kreditkarte | Ein Muster für die Bankkarte                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | "4111111111111111" |                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ||
 
-Question Nodes have a selection of types that determine the validation used before a conversation continues.
+!!! Warnung "Regex"
+    Stellen Sie sicher, dass der reguläre Ausdruck mit einem "/" beginnt und mit "/g" endet.
 
-| Type                                 | Expected user input to answer question                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Example                                                             |
-|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| Text                                 | Any text input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                     |
-| Yes / No                             | A positive or negative response                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                     |
-| Intent                               | One of the trained [Intents](../../nlu/nlu-overview/ml-intents.md) must be identified from the user's response                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                     |
-| Slot                                 | A [System Slot](../../nlu/slot-mapping/slot-mapping.md#system-defined-slots) or [Lexicon Slot](../../resources/build/lexicons.md) must be detected within the user's response. The slot is defined by name.                                                                                                                                                                                                                                                                                                              |                                                                     |
-| Date                                 | Any date (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                     |
-| Number                               | Any number (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                     |
-| Temperature                          | Any temperature (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                                                                     |
-| Age                                  | Any age (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                     |
-| Duration                             | Any time duration (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                     |
-| Email                                | Any email address (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                     |
-| Money                                | Any monetary value (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                     |
-| URL                                  | Any reference/address to a resource on the Internet for example, http://example.com                                                                                                                                                                                                                                                                                                                                                                                                                                      |                                                                     |
-| Percentage                           | Any percentage (system-defined)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                                                                     |
-| Regex                                | Any custom data format defined by a regex expression must be detected in the user's response                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                     |
-| Data                                 | Any data (input.data) input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |                                                                     |
-| xApp                                 | Any xApp input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                     |
-| Custom                               | Any input                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                     |
-| Pattern: License Plate (DE)          | A pattern for the [German vehicle registration plate](https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Germany). This license plate is a unique alphanumeric identification tag displayed on a vehicle. It consists of letters, numbers, and sometimes special characters, for example, `ö`, `ä`, or `ü`. License plates serve as a means of identifying and registering vehicles, providing important information such as vehicle ownership, registration details, and compliance with legal requirements.  | `M-345`, `x1Y2Z3`, `D 12345C`                                       |
-| Pattern: IBAN                        | A pattern for the International Bank Account Number (IBAN)                                                                                                                                                                                                                                                                                                                                                                                                                                                               | `DE12345678901234567890`                                            | 
-| Pattern: Bank Identifier Code (BIC)  | A pattern for the Bank Identifier Code (BIC)                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | `DEUTDEFF500`                                                       | 
-| Pattern: Social Security Number (US) | A pattern for the US Social Security Number                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | `123-45-6789`                                                       |
-| Pattern: IP Address (IPv4)           | A pattern for the IPv4 address                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `192.168.1.1`                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Pattern: Phone Number                | A pattern for the phone number                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | `+49 0000000000`, `49 0000000000`, `+490000000000`, `(555) 000-000` |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| Pattern: Credit Card                 | A pattern for the bank card                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | `4111111111111111`                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ||
+Beispiel: '/^1\d{7}$/g'
 
-!!! warning "Regex"
-    Ensure that your regular expression starts with a `/` and ends with `/g`.
+!!! Hinweis "Unterstützte Datenformate für systemdefinierte Steckplätze"
+    Alle Datenformate, die von der Cognigy NLU für die System-Slot-Zuordnung unterstützt werden, sind auf der [Slot-Zuordnung](.. /.. /nlu/slot-mapping/slot-mapping.md) Seite.
 
-    Example: `/^1\d{​​​​7}​​​​$/g`
+## Kanäle und Ausgangstypen<div class="divider"></div>Die Ausgabetypen des Frageknotens verfügen über die gleiche Funktionalität wie der [Say-Knoten](say.md).
 
-!!! note "Supported Data formats for System Defined slots"
-    All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../nlu/slot-mapping/slot-mapping.md) page.
+!!! Tipp "Date-Fragen"
+    Falls der Fragetyp Datum ausgewählt wurde, rendert der Frageknoten automatisch eine Datumsauswahl, wenn der Kanal dies zulässt. Weitere Informationen finden Sie unter [Datepicker](datepicker.md). 
 
-## Channels and Output types
-<div class="divider"></div>
+## Optionen für die erneute Eingabeaufforderung<div class="divider"></div>### Nachricht erneut auffordern
 
-Question node output types carry the same functionality as the [Say Node](say.md).
+Erneute Eingabeaufforderung Nachrichten werden automatisch ausgelöst, wenn die Frage nicht richtig beantwortet wurde (z. B. mit dem erwarteten Eingabetyp oder eine Validierung, die nicht true zurückgegeben hat). 
 
-!!! tip "Date Questions"
-    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [Datepicker](datepicker.md) for more information. 
-
-## Re-prompt Options
-
-<div class="divider"></div>
-
-### Re-prompt Message
-
-Re-prompt Messages are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validation didn't return true). 
-
-The Re-prompt can be configured to automatically re-ask the question. 
+Die erneute Eingabeaufforderung kann so konfiguriert werden, dass die Frage automatisch erneut gestellt wird. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-re-prompt-message.png" width="60%" />
 </figure>
 
-### Re-prompt Condition
+### Bedingung erneut auffordern
 
-Optionally a [CognigyScript](../../tools/cognigy-script.md) condition can be added which will determine whether the Re-prompt Message is shown or not.
+Optional kann ein [CognigyScript](.. /.. /tools/cognigy-script.md) hinzugefügt werden, die bestimmt, ob die Meldung "Erneute Eingabeaufforderung" angezeigt wird oder nicht.
 
-### Skip on Intent
+### Absicht überspringen
 
-Skips the re-prompt if an intent was found in the input
+Überspringt die erneute Eingabeaufforderung, wenn eine Absicht in der Eingabe gefunden wurde
 
-## Result Storage
-<div class="divider"></div>
-
-Question results are always stored in `input.result`.
+## Speicherung von Ergebnissen<div class="divider"></div>Die Ergebnisse der Fragen werden immer in 'input.result' gespeichert.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-context.png" width="60%" />
 </figure>
 
-If **Store Result in Context** is enabled, the Question Result will also be stored in the [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) object. 
+Wenn **Ergebnis im Kontext speichern** aktiviert ist, wird das Frageergebnis auch im Objekt [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) gespeichert. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-profile-storage.png" width="60%" />
 </figure>
 
-If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) object.
+Wenn **Ergebnis im Kontaktprofil speichern** aktiviert ist, wird das Frageergebnis auch im Objekt [**Profil**]({{config.site_url}}ai/tools/interaction-panel/profile/) gespeichert.
 
-## Escalation to Handover
-<div class="divider"></div>
+## Eskalation bis zur Übergabe<div class="divider"></div>Ermöglicht es, dass die Konversation aus dem Frageknoten ausbricht, wenn eine bestimmte Absicht gefunden wurde. 
 
-Allows the conversation to break out of the Question Node if a specified Intent was found. 
-
-| Action                  | Description                                                                                         |
+| Aktion | Beschreibung |
 |-------------------------|-----------------------------------------------------------------------------------------------------|
-| Output Message          | Outputs a message (equal to a Say Node)                                                             |
-| Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                      |
-| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                         |
-| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
-| Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
+| Nachricht ausgeben | Gibt eine Nachricht aus (entspricht einem Say-Knoten) |
+| Frage überspringen | Überspringt die Frage und gibt einen bestimmten Wert in das Objekt "input.result" ein.                      |
+| Gehe zu Knoten | Wechselt zu einem bestimmten Flow-Knoten und fährt von dort aus fort (entspricht Gehe zu Knoten) |
+| Ausführen von Fluss und Rücklauf | Wechselt zu einem bestimmten Flow-Knoten und kehrt zur Frage nach (entspricht Execute Flow Node) |
+| Übergabe an einen menschlichen Agenten | Das Gespräch wird an einen Agenten übergeben, der Ihnen helfen kann, den Frageschritt zu beenden und ihn zurückzugeben |
 
-Add intents that can trigger the "escalate on intent" function by typing the intent name into the "Valid Intents" field and pressing ENTER on your keyboard. Adjust the dedicated intent score threshold slider to the preferred setting so that the escalation will only occur if one of the listed intents reaches that score.
+Fügen Sie Absichten hinzu, die die Funktion "Eskalation bei Absicht" auslösen können, indem Sie den Absichtsnamen in das Feld "Gültige Absichten" eingeben und die EINGABETASTE auf Ihrer Tastatur drücken. Passen Sie den Schieberegler für den Schwellenwert für die dedizierte Absichtsbewertung auf die bevorzugte Einstellung an, sodass die Eskalation nur erfolgt, wenn eine der aufgelisteten Absichten diese Bewertung erreicht.
 
-## Escalation on Wrong Answers
-<div class="divider"></div>
+## Eskalation bei falschen Antworten<div class="divider"></div>Ermöglicht es, dass die Konversation aus dem Frageknoten ausbricht, nachdem eine Reihe falscher Antworten eingegeben wurden.
 
-Allows the conversation to break out of the Question Node after a number of incorrect answers were provided.
-
-| Action                  | Description                                                                                         |
+| Aktion | Beschreibung |
 |-------------------------|-----------------------------------------------------------------------------------------------------|
-| Output Message          | Outputs a message (equal to a Say Node)                                                             |
-| Skip Question           | Skips the Question and enters a specific value into the `input.result` object.                      |
-| Go To Node              | Goes to a specific Flow Node and continues from there (equal to Go To Node)                         |
-| Execute Flow and Return | Goes to a specific Flow Node and returns to the question after (equal to Execute Flow Node)         |
-| Handover to Human Agent | The conversation is handed to an agent, who can  help you finish the question step and hand it back |
+| Nachricht ausgeben | Gibt eine Nachricht aus (entspricht einem Say-Knoten) |
+| Frage überspringen | Überspringt die Frage und gibt einen bestimmten Wert in das Objekt "input.result" ein.                      |
+| Gehe zu Knoten | Wechselt zu einem bestimmten Flow-Knoten und fährt von dort aus fort (entspricht Gehe zu Knoten) |
+| Ausführen von Fluss und Rücklauf | Wechselt zu einem bestimmten Flow-Knoten und kehrt zur Frage nach (entspricht Execute Flow Node) |
+| Übergabe an einen menschlichen Agenten | Das Gespräch wird an einen Agenten übergeben, der Ihnen helfen kann, den Frageschritt zu beenden und ihn zurückzugeben |
 
-It is possible to prevent reprompts when the escalation is happening. 
+Es ist möglich, erneute Eingabeaufforderungen zu verhindern, wenn die Eskalation stattfindet. 
 
-The option "only escalate once" determines if the escalation only happens once on the threshold or on every input form the threshold on.
+Die Option "nur einmal eskalieren" legt fest, ob die Eskalation nur einmal auf der Schwelle oder auf jeder Eingabe der Schwelle erfolgt.
 
-## Handover to Human Agent
+## Übergabe an den menschlichen Agenten
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.4.0-blue.svg)]({{config.site_url}})
-
-<div class="divider"></div>
-
-As of Release v4.4.0, we added the option **Handover to Human Agent**. Open the **Node Editor** and you will find this option as an escalation action for Intents and Wrong_Answers that offers the ability to escalate questions by creating handovers to a real human agent.  
-When this escalation is hit, the conversation is handed to an agent, who can then help you finish the question step and hand it back.
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.4.0-blue.svg)] ({{config.site_url}})<div class="divider"></div>Ab Version 4.4.0 haben wir die Option **Übergabe an menschlichen Agenten** hinzugefügt. Öffnen Sie den **Node-Editor** und Sie finden diese Option als Eskalationsaktion für Intents und Wrong_Answers, die die Möglichkeit bietet, Fragen zu eskalieren, indem Übergaben an einen echten menschlichen Agenten erstellt werden.  
+Wenn diese Eskalation erreicht ist, wird das Gespräch an einen Agenten übergeben, der Ihnen dann helfen kann, den Frageschritt zu beenden und ihn zurückzugeben.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-escalation-to-handover.png" width="60%" />
 </figure>
 
-## Reconfirmation Settings
-<div class="divider"></div>
+## Einstellungen für die erneute Bestätigung<div class="divider"></div>Ermöglicht es, Antworten erneut zu bestätigen, bevor Sie fortfahren. Dies ist besonders nützlich, wenn Sie Voice-Bots verwenden und erneut bestätigen, was der Bot verstanden hat
+(z. B. in Zahlenfragen, wenn der Benutzer sagt: "_my Zahl ist drei, doppelt, fünf, drei, neun, fünf, sechs, eight_").
+Die Antwort auf die Rückbestätigungsfrage
+als Ja/Nein-Antwort und folgt den gleichen Regeln wie eine Ja/Nein-Frage.
 
-Allows for answers to be reconfirmed before continuing. This is especially useful when using voice bots and reconfirming what the bot understood
-(for example, in Number questions when the user said "_my number is three double five triple nine five six eight_").
-The answer given to the reconfirmation question has
-to be a yes/no style answer and follows the same rules as a Yes/No Question.
+Rückbestätigungsfragen können eine bestimmte symbolische "ANTWORT" enthalten, die durch eine Kurzform der gegebenen Antwort ersetzt wird (z. B. "3 EUR" in einer Geldfrage). Die Kurzform der Antwort stammt aus 'input.activeQuestion.tentativeShortFormAnswer';
 
-Reconfirmation Questions can contain a specific token `ANSWER`, which will be replaced with a short form version of the given answer (for example, "3 EUR" in a Money question). The short form answer is taken from `input.activeQuestion.tentativeShortFormAnswer`;
+Für Rückbestätigungsfragen kann eine bestimmte erneute Eingabeaufforderung festgelegt werden, die vor der Frage ausgegeben wird, wenn die Antwort auf die Frage nicht im Ja/Nein-Stil ist.
 
-Reconfirmation Questions can have a specific re-prompt set, which will be output before the question if the answer to the question is not of yes/no style.
+## Fortgeschritten<div class="divider"></div>Der Frageknoten verfügt über zwei erweiterte Einstellungen, die verwendet werden können.
 
-## Advanced
-<div class="divider"></div>
+### Detaillierte Ergebnisse speichern
 
-The Question Node has two advanced settings that can be used.
+Wenn diese Einstellung aktiviert ist, wird ein detaillierteres JSON-Objekt unter der result-Eigenschaft der Eingabe gespeichert. Dies ist nützlich, falls weitere Informationen benötigt werden.
 
-### Store detailed Results
+### Überspringen, wenn Antwort in Eingabe
 
-This setting, when enabled, stores a more detailed JSON object under the result property of the input. This is useful in case more information is needed.
-
-### Skip if Answer in Input
-
-When enabled, this setting will skip the Question if the answer is already provided in the input text.
+Wenn diese Einstellung aktiviert ist, wird die Frage übersprungen, wenn die Antwort bereits im Eingabetext enthalten ist.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-skip-if-answer-in-input.png" width="60%" />
 </figure>
 
-### Additional Validation
+### Zusätzliche Validierung
 
-A [CognigyScript](../../tools/cognigy-script.md) condition which must return `true` in order for the answer to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
+Ein [CognigyScript](.. /.. /tools/cognigy-script.md), die 'true' zurückgeben muss, damit die Antwort als gültig angesehen wird. Ein Beispiel wäre eine zusätzliche Validierung für eine E-Mail-Frage von 'input.slots.EMAIL[0].endsWith("cognigy.com")', die garantieren würde, dass nur cognigy.com E-Mail-Adressen die Validierung bestehen.
 
-### Result Location
+### Position des Ergebnisses
 
-The location of an answer is determined by default by the question type (for example, `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (for example, `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.
+Die Position einer Antwort wird standardmäßig durch den Fragetyp bestimmt (z. B. "input.slots.EMAIL[0]" für E-Mail-Fragen). Dies kann mit dieser Einstellung überschrieben werden (z. B. würde 'input.slots.EMAIL' alle gefundenen E-Mail-Slots speichern). Wenn die Ergebnisposition keinen Wert zurückgibt (= ist falsch), wird die Antwort als ungültig betrachtet.
 
-### Forget Question Threshold
+### Frageschwelle vergessen
 
-This setting determines how long a user can have been "away" from the Node after the question was initially asked. With the default setting `1` this means that the question has to be answered on the next user input. If a user input comes back to the question at a later stage, it will be treated as if the question was hit for the first time and the question will be asked.
+Diese Einstellung legt fest, wie lange ein Benutzer vom Node "abwesend" gewesen sein kann, nachdem die Frage zum ersten Mal gestellt wurde. Bei der Standardeinstellung '1' bedeutet dies, dass die Frage bei der nächsten Benutzereingabe beantwortet werden muss. Wenn eine Benutzereingabe zu einem späteren Zeitpunkt auf die Frage zurückkommt, wird sie so behandelt, als ob die Frage zum ersten Mal getroffen wurde, und die Frage wird gestellt.<div class="divider"></div>!!! Warnung "Question Nodes und Intent Execution"
+    Question Nodes werden - standardmäßig - immer wieder ausgelöst, bis eine gültige Antwort gegeben wurde. Um dies zu vermeiden, können Sie sich für eine [**Optionale Frage**]({{config.site_url}}ai/flow-nodes/message/optionale-frage/) entscheiden oder die Einstellung **Intent Execution** ändern.
 
-<div class="divider"></div>
+!!! Tipp "Schlitzfüller"
+    Fragen können mit **Slot Fillern** kombiniert werden, um ein sogenanntes "Missing Pattern" zu erstellen. Dieser Mechanismus fragt den Benutzer auf sehr natürliche Weise nach den fehlenden Informationen, bis alle Fragen beantwortet sind.
 
-!!! warning "Question Nodes and Intent Execution"
-    Question Nodes - by default - will be triggered again and again until a valid answer has been provided. In order to avoid this, you can opt for an [**Optional Question**]({{config.site_url}}ai/flow-nodes/message/optional-question/) or you can change the **Intent Execution** setting.
+## Fragen Sie Informationen in der Eingabe<div class="divider"></div>Wenn eine Frage "aktiv" ist, d. h. auf eine Antwort gewartet wird, werden dem Input-Objekt Informationen über die Frage hinzugefügt.
 
-!!! tip "Slot Fillers"
-    Questions can be combined with **Slot Fillers** to create a so-called "Missing Pattern". This mechanism keeps asking the user for the missing information in a very natural way, until all questions have been answered.
-
-## Question Information in Input
-<div class="divider"></div>
-
-When a Question is "active", meaning an answer is being waited for, information about the Question is added to the Input object.
-
-```JSON
+'''JSON
 "activeQuestion": {
     "nodeId": "18b158bf-71a3-4d4f-a31f-812b1810f8af",
-    "type": "yesNo",
+    "type": "jaNein",
     "lastExecutedAt": 2,
     "forgetQuestionThreshold": 1,
     "repromptCount": 1,
     "escalationCount": 0
 }
-``` 
+''' 
 
-This information can be used to trigger specific actions on escalation or to jump back to the Question Node after an escalation.
+Diese Informationen können verwendet werden, um bei einer Eskalation bestimmte Aktionen auszulösen oder nach einer Eskalation zurück zum Question Node zu springen.
 
-## AI-enhanced output
+## KI-gestützte Ausgabe
 
-To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+Um die KI-gestützte Umformulierung der Bot-Ausgabe zu verwenden, lesen Sie die [Generative AI](.. /.. /generative-ai.md#rephrase-bot-outputs) Artikel.
 
-## Answer Preprocessing
+## Vorverarbeitung von Antworten
 
-You can use various functions of the [Text Cleaner](../../../ai/tools/text-cleaner.md) class to preprocess the answer to a question before it is evaluated. This can be helpful, for example, when requesting a name using a `text` type question or when asking for a part number using a `slot` question.
+Sie können verschiedene Funktionen des [Text Cleaner](.. /.. /.. /ai/tools/text-cleaner.md), um die Antwort auf eine Frage vorzuverarbeiten, bevor sie ausgewertet wird. Dies kann z. B. hilfreich sein, wenn Sie einen Namen mit einer Frage vom Typ "Text" oder eine Teilenummer mit einer Frage vom Typ "Slot" anfordern.
 
-In addition to the Text Cleaner functions, users have the option to rerun NLU after the cleaning process. This approach allows for tasks such as re-detecting slots or properly filling any remaining slots.
+Zusätzlich zu den Textbereinigungsfunktionen haben Benutzer die Möglichkeit, NLU nach dem Bereinigungsvorgang erneut auszuführen. Dieser Ansatz ermöglicht Aufgaben wie das erneute Erkennen von Slots oder das ordnungsgemäße Füllen von verbleibenden Slots.

@@ -1,59 +1,51 @@
 ---
- title: "Voice Preview" 
- slug: "voice-preview" 
- hidden: true 
+ Titel: "Sprachvorschau" 
+ Slug: "Sprachvorschau" 
+ Ausgeblendet: Wahr 
 ---
 
-# Voice Preview
+# Sprachvorschau
 
-The Voice Preview feature allows users to quickly test how voice output sounds without having to execute the whole flow with a mock call.
+Mit der Voice Preview-Funktion können Benutzer schnell testen, wie die Sprachausgabe klingt, ohne den gesamten Ablauf mit einem Mock-Anruf ausführen zu müssen.
 
-It supports the cloud SST/TTS from the providers Google, Microsoft and Amazon AWS.
+Es unterstützt die Cloud SST/TTS der Anbieter Google, Microsoft und Amazon AWS.
 
-Once in the Voice Preview panel, you will be able to introduce raw text or SSML syntax. You can also choose the language and the voice to use. Bear in mind that the SSML syntax that you introduce will have to be supported by the Voice Preview provider you chose.
+Sobald Sie sich im Bedienfeld "Sprachvorschau" befinden, können Sie Rohtext oder SSML-Syntax eingeben. Sie können auch die Sprache und die zu verwendende Stimme auswählen. Beachten Sie, dass die von Ihnen eingeführte SSML-Syntax von dem von Ihnen ausgewählten Sprachvorschauanbieter unterstützt werden muss.
 
-### Set up a Voice Preview provider
-
-<div class="divider"></div>
-
-You need to navigate to the Agent Settings -> Voice Preview Settings. From there, choose your STT/TTS provider and
-enter your credentials.
+### Einrichten eines Voice Preview-Anbieters<div class="divider"></div>Sie müssen zu den Agenteneinstellungen -> Einstellungen für die Sprachvorschau navigieren. Wählen Sie dort Ihren STT/TTS-Anbieter aus und
+Geben Sie Ihre Anmeldeinformationen ein.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-settings.png" width="100%" />
-  <figcaption>Voice Preview Settings</figcaption>
+  <figcaption>Einstellungen für die Sprachvorschau</figcaption>
 </figure>
 
-### Use Voice Preview
+### Sprachvorschau verwenden<div class="divider"></div>Sie können die Sprachvorschau von 3 verschiedenen Orten aus verwenden:
 
-<div class="divider"></div>
+1 - Mit der Tastenkombination ++Strg+Alt+P++ oder ++Cmd+Opt+P++.
 
-You can use the Voice Preview from 3 different places:
-
-1 - With the hotkey ++ctrl+alt+p++ or ++cmd+opt+p++.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-panel.png" width="100%" />
-  <figcaption>Voice Preview panel</figcaption>
+<figure><img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-panel.png" width="100%" /><figcaption>Bedienfeld "Sprachvorschau"</figcaption>
+  
+  
 </figure>
 
-2 - Click on the Voice Preview icon from the Flow editor.
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-icon.png" width="20%" />
-  <figcaption>Voice Preview Icon</figcaption>
+2 - Klicken Sie im Flow-Editor auf das Symbol für die Sprachvorschau.
+<figure><img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-icon.png" width="20%" /><figcaption>Voice-Vorschau-Symbol Flow-Editor</figcaption>
+  
+  
+</figure><figure><img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-flow-editor.png" width="100%" /> für<figcaption>die Sprachvorschau</figcaption>
+  
+  
 </figure>
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-flow-editor.png" width="100%" />
-  <figcaption>Voice Preview Flow editor</figcaption>
+3 - Klicken Sie auf die Schaltfläche Sprachvorschau im interaktiven Tooltip einer Nachrichtenausgabe im Interaktionsbereich. Der Ausgabetext wird in das Eingabefeld der Sprachvorschau kopiert.
+
+!!! Hinweis "Unterstützte Ausgabe"
+    Beachten Sie, dass die Schaltfläche Sprachvorschau nur für eine bestimmte Ausgabe angezeigt wird. Dazu gehören die reguläre Textausgabe, der Fallback-Text sowie die Text-/SSML-Ausgabe von Kanälen mit Sprachunterstützung.
+
+<figure><img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-chat-panel.png" width="100%" /><figcaption>Interaktiver Tooltip für die Sprachvorschau</figcaption>
+  
+  
 </figure>
 
-3 - Click on the Voice Preview button in the interactive tooltip of a message output in the Interaction Panel. The output text will be copied to the Voice Preview input field.
 
-!!! note "Supported Output"
-    Note that the Voice Preview button will only be shown for specific output. This includes regular text output, fallback text, as well as text/ssml output from channels with Voice support.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/voice-preview-chat-panel.png" width="100%" />
-  <figcaption>Voice Preview Interactive Tooltip</figcaption>
-</figure>

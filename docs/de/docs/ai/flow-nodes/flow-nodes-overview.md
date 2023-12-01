@@ -1,241 +1,213 @@
 ---
- title: "Flow Nodes Overview" 
- slug: "flow-nodes-overview" 
- hidden: false 
+ Titel: "Übersicht über Flow-Knoten" 
+ slug: "Flow-Knoten-Übersicht" 
+ ausgeblendet: false 
 ---
-# Flow Nodes Overview
+# Übersicht über Flow-Knoten
 
-Flow Nodes can be used to add interactivity to a Flow. When combined in a certain way, they can help create dynamic interactive conversations. There are many types of Nodes, ranging from Basic to Advanced. 
+Flow-Knoten können verwendet werden, um einem Flow Interaktivität hinzuzufügen. Wenn sie auf eine bestimmte Weise kombiniert werden, können sie dazu beitragen, dynamische, interaktive Gespräche zu führen. Es gibt viele Arten von Nodes, von Basic bis Advanced. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-Head over to the [Extensions](../resources/manage/extensions.md) section for information on adding more types of **Nodes**.
+Gehen Sie zu den [Erweiterungen](.. /resources/manage/extensions.md) für Informationen zum Hinzufügen weiterer Typen von **Knoten**.
 
-| Node Categories                 |
+| Knoten-Kategorien |
 |---------------------------------|
-| [Basic Nodes](#basic-nodes)     |
-| [Message Nodes](#message-nodes) |
-| [Logic Nodes](#logic-nodes)     |
-| [Profile Nodes](#profile-nodes) |
-| [Service Nodes](#service-nodes) |
-| [NLU Nodes](#nlu-nodes)         |
+| [Grundlegende Knoten] (#basic-Knoten) |
+| [Nachrichten-Knoten] (#message-Knoten) |
+| [Logik-Knoten] (#logic-Knoten) |
+| [Profil-Knoten] (#profile-Knoten) |
+| [Service-Knoten] (#service-Knoten) |
+| [NLU-Knoten] (#nlu-Knoten) |
 
-## Basic Nodes
-<div class="divider"></div>
+## Grundlegende Knoten<div class="divider"></div>Grundlegende Knoten werden häufig in grundlegenden Konversationsabläufen verwendet. Enthalten sind typische Nodes wie der [Say Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#say), der [Question Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#question) sowie bestimmte Flow-Aktionen wie [Stop and Return]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#stop-and-return). 
 
-Basic Nodes are commonly used in basic conversational Flows. Included are typical Nodes like the [Say Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#say), the [Question Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#question) as well as certain Flow actions like [Stop and Return]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#stop-and-return). 
+## [Nachrichtenknoten](./message/message.md)<div class="divider"></div>Nachrichtenknoten generieren eine bestimmte Ausgabe, die an den Benutzer zurückgegeben wird. Sie sind in der Regel multichannelfähig, was bedeutet, dass sie über eine breite Palette von Endpunkten hinweg funktionieren.
 
-## [Message Nodes](./message/message.md)
-<div class="divider"></div>
-Message Nodes generate certain output that is returned to the user. They are generally multichannel capable, which means that they work across a broad-range of Endpoints.
+### [Sagen](./message/say.md)
 
-### [Say](./message/say.md)
+Dies ist der grundlegendste Ausgabeknoten, der verwendet werden kann, um eine Nachricht an den Benutzer auf seinem aktuellen Kanal zu senden. 
 
-This is the most basic output Node that can be used to send a message to the user on his current channel. 
+### [Frage](./message/question.md)
 
-### [Question](./message/question.md)
+Der Frageknoten kann verwendet werden, um dem Benutzer eine Frage zu stellen. Wenn er ausgelöst wird, verschiebt sich der Einstiegspunkt zu diesem Knoten, sodass die Konversation fortgesetzt werden kann, wenn der Benutzer antwortet - und ein neues [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)-Objekt generiert wird. Standardmäßig bleibt der [**Einstiegspunkt**]({{config.site_url}}ai/resources/build/flows/#entry-points) an diesem Knoten, bis eine gültige Antwort gefunden wurde.
 
-The Question Node can be used to ask the user a question. When triggered, the Entry Point will shift to this Node so that the conversation can continue when the user answers - and a new [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) object is generated. By default, the [**Entry Point**]({{config.site_url}}ai/resources/build/flows/#entry-points) will stick to this Node until a valid answer has found.
+### [Optionale Frage](./message/optionale-frage.md)
 
-### [Optional Question](./message/optional-question.md)
+Der optionale Frageknoten funktioniert ähnlich wie der Frageknoten, mit der Ausnahme, dass der Einstiegspunkt standardmäßig optional ist. 
 
-The Optional Question Node works similar to the Question Node, except for the fact that the Entry Point is optional by default. 
+### [SMTP-E-Mail senden](./message/send-smtp-email.md)
 
-### [Send SMTP Email](./message/send-smtp-email.md)
-
-The Send Email Node can be used to send an email message directly from within the Flow. IT requires a [Connection]({{config.site_url}}ai/resources/build/connections/) in order to work.
+Der Knoten "E-Mail senden" kann verwendet werden, um eine E-Mail-Nachricht direkt aus dem Flow heraus zu senden. Die IT benötigt eine [Connection]({{config.site_url}}ai/resources/build/connections/), um zu funktionieren.
 
 ### [Datepicker](./message/datepicker.md)
 
-The Datepicker can be used to render a date selection widget in certain channels. It has an extensive list of configurable options.
+Der Datepicker kann verwendet werden, um ein Datumsauswahl-Widget in bestimmten Kanälen zu rendern. Es verfügt über eine umfangreiche Liste konfigurierbarer Optionen.
 
-## [Logic Nodes](./logic/logic.md)
-<div class="divider"></div>
+## [Logik-Knoten](./logic/logic.md)<div class="divider"></div>Logikknoten können verwendet werden, um eine bestimmte Logik im Ablauf auszuführen. Dazu gehören sowohl klassische Bedingungen als auch spezifisches Flow-Verhalten wie das Warten auf eine Benutzereingabe.
 
-Logic Nodes can be used to execute a certain logic in the flow. They include classical conditions, as well as specific Flow behavior like waiting for a user input.
+### [if](./logic/if.md)
 
-### [If](./logic/if.md)
+Der If-Knoten ist einer der gebräuchlichsten Logikknoten. Es kann verwendet werden, um eine Aussage zu bewerten, und je nach Ergebnis werden die Fälle Then or Else ausgelöst.  Bedingungen können mit **CognigyScript** oder mit dem integrierten [**Token System**]({{config.site_url}}ai/resources/manage/tokens/) erstellt werden.
 
-The If Node is one of the most common Logic Nodes. It can be used to evaluate a statement and depending on the outcome, the Then or Else cases are triggered.  Conditions can be created using **CognigyScript** or using the built-in  [**Token System**]({{config.site_url}}ai/resources/manage/tokens/).
+### [Nachschlagen](./logic/lookup.md)
 
+Der Lookup Node fungiert als Schalter zwischen verschiedenen Optionen. Ein bestimmter Eingabetyp (z. B. Intents) wird ausgewertet und basierend auf dem Wert wird eine bestimmte Verzweigung ausgeführt.
 
-### [Lookup](./logic/lookup.md)
+!!! Hinweis "Kommen Sie von Cognigy Version 3.x?"
+    Der Lookup-Node wurde zuvor als **Switch-Node** bezeichnet.
 
-The Lookup Node acts as a switch between different options. A certain type of input (for example, Intents) is evaluated and based on the value, a certain branch is executed.
+### [Gehe zu](./logic/go-to.md)
 
-!!! note "Coming from Cognigy version 3.x?"
-    The Lookup Node was previously known as the **Switch Node**.
+Der Gehe zu Knoten kann verwendet werden, um zwischen Flows oder zwischen Nodes zu springen. Wenn der "Gehe zu"-Knoten verwendet wird, um zu einem anderen Flow zu wechseln, wechselt der **Einstiegspunkt** vollständig zu diesem Flow (bis er zurückgeschaltet wird).
 
-### [Go To](./logic/go-to.md)
+### [Flow ausführen](./logic/execute-flow.md)
 
-The Go To Node can be used to jump between Flows or between Nodes. If the Go To Node is used to switch to another Flow, the **Entry Point** will switch to that Flow altogether (until switched back).
+Der Execute Flow Node kann verwendet werden, um einen anderen Flow auszuführen, was bedeutet, dass er diesen Flow ausführt und anschließend zum ursprünglichen Flow zurückkehrt. Das bedeutet, dass der *Einstiegspunkt* nicht zum neuen Flow wechselt. Dieser Vorgang kann mit einem Funktionsaufruf verglichen werden. 
 
-### [Execute Flow](./logic/execute-flow.md)
+### [Denken](./logic/think.md)
 
-The Execute Flow Node can be used to execute another Flow, meaning that it will run that Flow and return to the initial Flow afterwards. This means that the *Entry Point* will not switch to the new Flow. This operation can be compared to a function call. 
+Der Think Node kann verwendet werden, um absichtlich einen Text in den **Start Node** des Flows einzufügen. Dies ist nützlich, falls es notwendig ist, den Flow mit einer bestimmten Nutzlast erneut zu starten. Die Nutzlast könnte z.B. einem bestimmten Intent entsprechen.
 
-### [Think](./logic/think.md)
+### [Einmal](./logic/once.md)
 
-The Think Node can be used to deliberately inject a text into the **Start Node** of the Flow. This is useful in case it is necessary to start the Flow again, with a specific payload. The payload could, for example, correspond to a certain Intent.
+Alles, was sich unterhalb eines Once Node befindet, wird nur einmal pro Sitzung ausgeführt. Dies ist nützlich, wenn der Bot den Benutzer begrüßen muss oder wenn eine Datenbankanforderung nur einmal pro Sitzung erfolgen muss.
 
-### [Once](./logic/once.md)
+### [Intervall](./logic/interval.md)
 
-Everything below a Once Node will be executed only once per session. This is useful in case the bot needs to greet the user or in case a database request needs to happen only once per session.
+Der Intervallknoten kann verwendet werden, um bestimmte Knoten nur dann auszuführen, wenn eine bestimmte Zeit (Intervall) verstrichen ist. Es ist mit einer Anzahl von Millisekunden konfigurierbar.
 
-### [Interval](./logic/interval.md)
+### [Stopp und Rückkehr](./logic/stop-and-return.md)
 
-The Interval Node can be used to only allow certain Nodes to be executed if a given time (interval) has passed. It is configurable with a number of milliseconds.
+Der Stop-and-Return-Knoten stoppt die Flow-Ausführung und kehrt zum Einstiegspunkt am Startknoten zurück.
 
-### [Stop and Return](./logic/stop-and-return.md)
+### [Warten auf Eingabe](./logic/wait-for-input.md)
 
-The Stop and Return node stops Flow execution and return to the Entry Point at the start node.
+Der Knoten Warten auf Eingabe wartet auf Benutzereingaben und setzt die Flow-Ausführung fort.
 
-### [Wait for Input](./logic/wait-for-input.md)
+### [Ruhezustand](./logic/sleep.md)
 
-The Wait for Input Node waits for user input and continues Flow execution.
+Der Ruhezustandsknoten unterbricht die Ausführung für eine bestimmte Anzahl von Millisekunden. Dieser Knoten wurde früher als Pause-Knoten bezeichnet. 
 
-### [Sleep](./logic/sleep.md)
+### [Status festlegen](./logic/set-state.md)
 
-The Sleep Node pauses execution for a number of milliseconds. This Node used to be known as the Pause Node. 
+Mit dem Knoten "Status festlegen" wird der [state](.. /tools/interaction-panel/state.md) geändert werden.
 
-### [Set State](./logic/set-state.md)
+### [Status zurücksetzen](./logic/reset-state.md)
 
-With the Set State Node, the Flow's [State](../tools/interaction-panel/state.md) can be changed.
+Mit dem Knoten Status zurücksetzen wird der [state](.. /tools/interaction-panel/state.md) zurückgesetzt werden.
 
-### [Reset State](./logic/reset-state.md)
+## [Profilknoten](./profile/profile.md)<div class="divider"></div>Profilknoten werden verwendet, um [Kontaktprofil](.. /resources/manage/contact-profiles.md) Informationen. Gängige Vorgänge sind:
 
-With the Reset State Node, the Flow's [State](../tools/interaction-panel/state.md) can be reset.
+### [Profil aktivieren](./profile/activate-profile.md)
 
-## [Profile Nodes](./profile/profile.md)
-<div class="divider"></div>
+Dieser Knoten kann verwendet werden, um ein [Kontaktprofil](.. /resources/manage/contact-profiles.md), falls sie deaktiviert wurde. Der Knoten ist nicht konfigurierbar. 
 
-Profile Nodes are used to update [Contact Profile](../resources/manage/contact-profiles.md) information. Common operations are:
+### [Profil deaktivieren](./profile/deactivate-profile.md)
 
-### [Activate Profile](./profile/activate-profile.md)
+Kann verwendet werden, um das [Kontaktprofil](.. /resources/manage/contact-profiles.md).
 
-This Node can be used to activate a [Contact Profile](../resources/manage/contact-profiles.md) in case it has been deactivated. The Node is not configurable. 
+### [Profil aktualisieren](./profile/update-profile.md)
 
-### [Deactivate Profile](./profile/deactivate-profile.md)
+Dieser Knoten wird häufig verwendet, da er bei der Aktualisierung von [Kontaktprofil](.. /resources/manage/contact-profiles.md) Informationen. Es kann mit einem Dropdown-Menü aller [**Kontaktprofilschema**]({{config.site_url}}ai/resources/manage/contact-profiles/) konfiguriert werden.  
 
-Can be used to deactivate the [Contact Profile](../resources/manage/contact-profiles.md).
+### [Profil zusammenführen](./profile/merge-profile.md)
 
-### [Update Profile](./profile/update-profile.md)
+Dieser Knoten kann verwendet werden, um die aktuelle Sitzung mit einem vorhandenen [Kontaktprofil](.. /resources/manage/contact-profiles.md). Der Knoten kann mit einer Kennung konfiguriert werden, die als Benutzer-ID verwendet werden kann.
 
-This Node is commonly used, as it helps update [Contact Profile](../resources/manage/contact-profiles.md) information. It is configurable with a drop-down of all the [**Contact Profile Schema**]({{config.site_url}}ai/resources/manage/contact-profiles/) attributes.  
+### [Blind-Modus](./profile/blind-mode.md)
 
-### [Merge Profile](./profile/merge-profile.md)
+Der Blind-Modus deaktiviert die gesamte (oder ausgewählte) Protokollierung. Der Node kann immer dann verwendet werden, wenn der virtuelle Agent vertrauliche Daten verarbeitet, die aus den Protokollen ausgeschlossen werden sollen.
 
-This Node can be used to merge the current session to an existing [Contact Profile](../resources/manage/contact-profiles.md). The Node can be configured with an identifier that can be used as a user id.
+* Mask Login: Gibt XXXX in den Ausgabeprotokollen des Agenten aus.
+* Analyse maskieren: Gibt XXXX in der Analyse aus (einschließlich Kontaktprofil-Konversationen).
+* Konversationen deaktivieren: Ausgabeanalysen wurden vollständig deaktiviert.
 
-### [Blind Mode](./profile/blind-mode.md)
+### [Profil löschen](./profile/delete-profile.md)
 
-The Blind Mode disables all (or selected) logging. The Node can be used whenever the Virtual Agent handles sensitive data, that should be excluded from the logs.
+Löscht das aktuell aktive [Kontaktprofil](.. /resources/manage/contact-profiles.md).
 
-* Mask Login: Outputs XXXX in the output logs of the Agent.
-* Mask Analytics: Outputs XXXX in the analytics (including Contact Profile conversations).
-* Disable Conversations: Disabled output analytics altogether.
+### [Ziel abschließen](./profile/complete-goal.md)
 
-### [Delete Profile](./profile/delete-profile.md)
+Kann verwendet werden, um dem [Kontaktprofil](.. /resources/manage/contact-profiles.md). Benutzerdefinierte Ziele sind KPIs, die dynamisch konfiguriert werden können und in der Ausgabeanalyse sowie in der Übersicht [**Kontaktprofil**]({{config.site_url}}ai/resources/manage/contact-profiles/) angezeigt werden.
 
-Deletes the currently active [Contact Profile](../resources/manage/contact-profiles.md).
+## [Dienstknoten](./services/services.md)<div class="divider"></div>Service Nodes können verwendet werden, um externe Dienste wie Datenbanken und E-Mail-Server auszulösen. Cognigy.AI wird mit einer Reihe von integrierten Diensten geliefert. Zusätzliche Dienste können über [**Erweiterungen**]({{config.site_url}}ai/resources/manage/extensions/) hinzugefügt werden.
 
-### [Complete Goal](./profile/complete-goal.md)
+### [HTTP-Anforderung](./services/http-request.md)
 
-Can be used to add a custom Goal to the [Contact Profile](../resources/manage/contact-profiles.md). Custom Goals are KPIs that can be dynamically configured and that show up in the output analytics as well as the  [**Contact Profile**]({{config.site_url}}ai/resources/manage/contact-profiles/) overview.
+Der HTTP Request Node ist ein sehr praktischer Node, der HTTP-Anfragen an andere Schnittstellen (APIs) ausführen kann. Es kann mit typischen REST-Operationen (GET, POST, PATCH, PUT, DELETE) konfiguriert werden und verfügt über konfigurierbare JSON- oder Text-Nutzlasten.
 
-## [Service Nodes](./services/services.md)
-<div class="divider"></div>
+Jede Anforderungsmethode verfügt über ein Feld, das sie mit den anderen Methoden teilt. Dies sind die Felder:
 
-Service Nodes can be used to trigger external services, like databases and email servers. Cognigy.AI ships with a number of built-in services. Additional services can be added through [**Extensions**]({{config.site_url}}ai/resources/manage/extensions/).
-
-### [HTTP Request](./services/http-request.md)
-
-The HTTP Request Node is a very convenient Node that can execute HTTP requests to other interfaces (APIs). It can be configured with typical REST operations (GET, POST, PATCH, PUT, DELETE) and has configurable JSON or Text payloads.
-
-Each request method has some field which it shares with the other methods. These are the fields:
-
-  * [URL](#url)
-  * [Headers](#headers)
-  * [Authorization Type](#authorization-type)
-  * Context Store
-  * Async
-  * [Caching](#execution-and-caching)
-    * Cache Expiry
+* [URL](#url)
+  * [Überschriften](#headers)
+  * [Autorisierungstyp](#authorization-Typ)
+  * Kontext-Speicher
+  *Asynchron
+  * [Zwischenspeicherung](#execution-und-Zwischenspeicherung)
+    * Ablauf des Caches
    
 #### URL
 
-The URL to the targeted resource in the format: `https://api-endpoint.com/resource`.
+Die URL zur Zielressource im Format: "https://api-endpoint.com/resource".
 
-#### Headers
+#### Kopfzeilen
 
-Here you can add the headers you need to successfully perform the HTTP request.
+Hier können Sie die Header hinzufügen, die Sie benötigen, um die HTTP-Anfrage erfolgreich auszuführen.
 
-#### Authorization Type
+#### Berechtigungsart
 
-  * No Auth
-  * Basic Auth
+* Keine Authentifizierung
+  * Grundlegende Authentifizierung
   * OAuth2
-  * API Key - "Authorization: ApiKey"
-  * API Key - "X-API-Key"
+  * API-Schlüssel - "Autorisierung: ApiKey"
+  * API-Schlüssel - "X-API-Schlüssel"
 
-In case you select an authorization type other than No Auth you'll get additional fields which depend on the selected authorization type.
+Wenn Sie einen anderen Autorisierungstyp als No Auth auswählen, erhalten Sie zusätzliche Felder, die vom ausgewählten Autorisierungstyp abhängen.
 
-#### Execution and Caching
+#### Ausführung und Caching
 
-This sections lets you configure the HTTP request to be asynchronous and optionally enable request caching.
+In diesem Abschnitt können Sie die HTTP-Anforderung so konfigurieren, dass sie asynchron ist, und optional die Zwischenspeicherung von Anforderungen aktivieren.
 
-### [MongoDB Nodes](./services/mongo-db.md)
+### [MongoDB-Knoten](./services/mongo-db.md)
 
-Cognigy.AI has a built-in MongoDB connector that can be used directly within the Flow. The Node exposes a number of requests:
+Cognigy.AI verfügt über einen integrierten MongoDB-Konnektor, der direkt im Flow verwendet werden kann. Der Knoten macht eine Reihe von Anforderungen verfügbar:
 
+### [Microsoft SQL-Knoten](./services/ms-sql.md)
 
-### [Microsoft SQL Nodes](./services/ms-sql.md)
+Cognigy.AI verfügt über einen integrierten Microsoft SQL-Konnektor, der direkt im Flow verwendet werden kann. Der Knoten macht eine Reihe von Anforderungen verfügbar:
 
-Cognigy.AI has a built-in Microsoft SQL connector that can be used directly within the Flow. The Node exposes a number of requests:
+* SQL-Abfrage ausführen
+Führt eine SQL-Abfrage aus.
 
-  * Run SQL Query
-Executes an SQL Query.
+* Transaktion ausführen
+Führt eine Transaktion aus.
 
-  * Run Transaction
-Runs a transaction.
+* StoredProcedure ausführen
+Löst eine StoredProcedure aus.
 
-  * Run StoredProcedure
-Triggers a StoredProcedure.
+## [NLU-Knoten](./nlu/nlu.md)<div class="divider"></div>NLU-Knoten sind eine Sammlung von Knoten, die sich auf die [**NLU**]({{config.site_url}}ai/nlu/nlu-overview/overview/) der Plattform beziehen. Es verfügt über eine Reihe verschiedener Nodes.
 
-## [NLU Nodes](./nlu/nlu.md)
-<div class="divider"></div>
-NLU Nodes are a collection of Nodes that are related to the platform's [**NLU**]({{config.site_url}}ai/nlu/nlu-overview/overview/). It features a range of different Nodes.
+### [Slots in den Kontext kopieren](./nlu/copy-slots-to-context.md)
 
-### [Copy Slots to Context](./nlu/copy-slots-to-context.md)
+Dieser Knoten kann verwendet werden, um Slots, die im Objekt [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/) erkannt und veröffentlicht wurden, in die Konversation [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) zu kopieren. 
 
-This Node can be used to copy slots that were detected and published in the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object, to the conversation [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/). 
+### [Lexikon-Schlüsselphrase hinzufügen](./nlu/add-lexicon-keyphrase.md)
 
-### [Add Lexicon Keyphrase](./nlu/add-lexicon-keyphrase.md)
+Dieser Knoten kann verwendet werden, um dynamisch einen [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)-Schlüsselworteintrag zu erstellen, entweder basierend auf hartcodierten oder dynamischen Daten.
 
-This Node can be used to dynamically create a [Lexicons]({{config.site_url}}ai/resources/build/lexicons/) Keyphrase entry, either based on hardcoded or dynamic data.
+### [Cognigy NLU ausführen](./nlu/execute-cognigy-nlu.md)
 
-### [Execute Cognigy NLU](./nlu/execute-cognigy-nlu.md)
+Kann verwendet werden, um **Cognigy NLU** an einem bestimmten Punkt im Ablauf explizit auszuführen. Die NLU-Ausführung erfolgt automatisch zu Beginn des Flows und bei jeder neuen Benutzereingabe.
 
-Can be used to explicitly execute **Cognigy NLU** at a certain point in the flow. NLU execution happens automatically at the start of the Flow and with each new user input.
+### [Regex-Slot-Füller](./nlu/regex-slotfiller.md)
 
-### [Regex Slot Filler](./nlu/regex-slotfiller.md)
+Dieser Knoten kann verwendet werden, um einen Slot basierend auf einem **Regex-Muster** zu erstellen. Wenn das Muster erkannt wird, wird ein Slot im [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)-Objekt veröffentlicht.
 
-This Node can be used to create a Slot based on a **Regex Pattern**. When the pattern is detected, a slot will be published to the [**Input**]({{config.site_url}}ai/tools/interaction-panel/input/)  object.
+## [Code-Knoten](./code/code.md)<div class="divider"></div>Der Codeknoten ermöglicht es einem Flow-Ersteller, benutzerdefinierten JavaScript- oder TypeScript-Code innerhalb des Flows auszuführen. Der Editor verfügt über vollständiges IntelliSense und macht alle Cognigy-Objekte und -Aktionen verfügbar. Um eine bessere Leistung zu erzielen, wird der TypeScript-Code beim Speichern des Knotens transpiliert. Wenn die Transpilation fehlschlägt, wird der Code gespeichert, und in der oberen rechten Ecke des Codeknotens wird ein Fehlersymbol angezeigt, das darauf hinweist, dass ein potenzielles Problem mit dem Code vorliegt.
 
-## [Code Node](./code/code.md)
-<div class="divider"></div>
+## [Voice-Gateway-Knoten](./vg/voice-gateway.md)<div class="divider"></div>Cognigy Voice Gateway Nodes stellen die von Cognigy Voice Gateway bereitgestellten Funktionen direkt im Flow-Editor zur Verfügung.
 
-Code Node enables a Flow creator to execute custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the node is saved. If the transpilation fails the code will be saved and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code.
-
-## [Voice Gateway Nodes](./vg/voice-gateway.md)
-<div class="divider"></div>
-
-Cognigy Voice Gateway Nodes expose functionality provided by Cognigy Voice Gateway directly in the Flow Editor.
-
-## [Other Nodes](./other-nodes/other-nodes.md)
-<div class="divider"></div>
-
-Nodes that did not fit into any category above.
- 
+## [Andere Knoten](./andere-Knoten/andere-Knoten.md)<div class="divider"></div>Knoten, die in keine der oben genannten Kategorien passten. 

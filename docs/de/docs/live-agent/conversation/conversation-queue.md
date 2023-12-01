@@ -1,60 +1,59 @@
 ---
-title: "Conversation Queue"
-slug: "conversation-queue"
-description: "Conversation Queue is a list of conversations waiting for attention from human agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the agent has not sent the first reply."
-hidden: false
+Titel: "Konversationswarteschlange"
+slug: "Konversations-Warteschlange"
+description: "Die Konversationswarteschlange ist eine Liste von Konversationen, die auf die Aufmerksamkeit menschlicher Agenten warten. In Live Agent ähnelt eine Warteschlange dem Wartebereich, in dem Gespräche geführt werden, bis der Agent die erste Antwort nicht gesendet hat."
+ausgeblendet: false
 ---
 
-# Conversation Queue
+# Konversations-Warteschlange
 
-_Conversation Queue_ is a list of conversations waiting for attention from agents. In Live Agent, a queue is similar to the waiting area, where conversations are held until the agent has not sent the first reply.
+_Conversation Queue_ ist eine Liste von Gesprächen, die auf die Aufmerksamkeit von Agenten warten. In Live Agent ähnelt eine Warteschlange dem Wartebereich, in dem Konversationen geführt werden, bis der Agent die erste Antwort gesendet hat.
 
-The queue is visible to agents on the **Mine** tab of the Conversation page, where they can see the conversations assigned to them and wait for their attention.
+Die Warteschlange ist für Agenten auf der Registerkarte **Mine** der Seite "Konversation" sichtbar, wo sie die ihnen zugewiesenen Konversationen sehen und auf ihre Aufmerksamkeit warten können.
 
-The provided examples show how the agent queue works:
+Die bereitgestellten Beispiele zeigen, wie die Agentenwarteschlange funktioniert:
 
-!!! note
-    The [conversation limits](../settings/account-settings.md#conversation-limit-per-agent) and specific queue behavior may vary depending on the Live Agent configuration and settings in use.
+!!! Anmerkung
+    Die [Konversationslimits](.. /settings/account-settings.md#conversation-limit-per-agent) und das spezifische Warteschlangenverhalten können je nach Live Agent-Konfiguration und -Einstellungen variieren.
 
-**Example 1**
+**Beispiel 1**
 
-Conditions:
+Bedingungen:
 
-- Conversations are assigned to an agent, but the agent still needs to send the first reply.
-- The Conversation limit is set to 2 conversations per agent.
-- There is one online agent available.
-- 3 conversations are created.
+- Konversationen werden einem Agenten zugewiesen, aber der Agent muss immer noch die erste Antwort senden.
+- Das Konversationslimit ist auf 2 Konversationen pro Agent festgelegt.
+- Es steht ein Online-Agent zur Verfügung.
+- Es werden 3 Konversationen erstellt.
 
-Result: The first two conversations are assigned to the agent and are in the queue, waiting for the agent to reply. One conversation remains unassigned.
+Ergebnis: Die ersten beiden Konversationen werden dem Agenten zugewiesen und befinden sich in der Warteschlange, wo sie auf die Antwort des Agenten warten. Eine Konversation bleibt nicht zugewiesen.
 
-**Example 2**
+**Beispiel 2**
 
-Conditions:
+Bedingungen:
 
-- Conversations are assigned to an agent, but the agent still needs to send the first reply.
-- The Conversation limit is turned off, meaning there is no limit on the number of conversations per agent.
-- There is 1 online agent available.
-- 3 conversations are created.
+- Konversationen werden einem Agenten zugewiesen, aber der Agent muss immer noch die erste Antwort senden.
+- Das Konversationslimit ist deaktiviert, d. h. es gibt keine Begrenzung für die Anzahl der Konversationen pro Agent.
+- Es steht 1 Online-Agent zur Verfügung.
+- Es werden 3 Konversationen erstellt.
 
-Result: All three conversations are assigned to the agent and in a queue, waiting for the agent to send the first reply. None of the conversations have been assigned yet.
+Ergebnis: Alle drei Konversationen werden dem Agenten zugewiesen und befinden sich in einer Warteschlange, in der darauf gewartet wird, dass der Agent die erste Antwort sendet. Keine der Konversationen wurde bisher zugewiesen.
 
-**Example 3**
+**Beispiel 3**
 
-Conditions:
+Bedingungen:
 
-- Both settings in the Inbox are activated: Automatic Conversation Assignment and Consider Conversation Priority.
-- Conversations are assigned to an agent, but the agent still needs to send the first reply.
-- The Conversation limit is set to 2 conversations per agent.
-- There is one online agent available.
-- 3 conversations with different [priorities](conversation-routing/automatic-mode.md#consider-conversation-parameters) are created:
-    - Conversation 1 is Medium.
-    - Conversation 2 is Low.
-    - Conversation 3 is High.
+- Beide Einstellungen im Posteingang sind aktiviert: Automatische Konversationszuweisung und Konversationspriorität berücksichtigen.
+- Konversationen werden einem Agenten zugewiesen, aber der Agent muss immer noch die erste Antwort senden.
+- Das Konversationslimit ist auf 2 Konversationen pro Agent festgelegt.
+- Es steht ein Online-Agent zur Verfügung.
+- Es werden 3 Konversationen mit unterschiedlichen [Prioritäten](conversation-routing/automatic-mode.md#consider-conversation-parameters) erstellt:
+    - Konversation 1 ist mittel.
+    - Konversation 2 ist Niedrig.
+    - Konversation 3 ist hoch.
 
-Result: The agent is assigned Conversation 3 (High), followed by Conversation 1 (Medium), both in the queue. Conversation 2 (Low) remains unassigned.
+Ergebnis: Dem Agenten wird Konversation 3 (Hoch) zugewiesen, gefolgt von Konversation 1 (Mittel), beide in der Warteschlange. Unterhaltung 2 (Niedrig) bleibt nicht zugewiesen.
 
+## Mehr Informationen
 
-## More Information
-
-- [Converation Routing: Automatic mode](conversation-routing/automatic-mode.md)
-- [Converation Routing Overview](conversation-routing/overview.md)
+- [Converation Routing: Automatischer Modus](conversation-routing/automatic-mode.md)
+- [Übersicht über das Converation Routing](conversation-routing/overview.md)

@@ -1,25 +1,17 @@
 ---
- title: "Handover Providers Overview" 
- slug: "overview" 
- hidden: false 
+ Titel: "Übergabeanbieter im Überblick" 
+ Slug: "Übersicht" 
+ ausgeblendet: false 
 ---
-# Overview
+# Übersicht
 
-**Handover Providers** are connectors between a Cognigy **Agent** and a third-party Handover Service. Conversations can be passed between Cognigy.AI and a Handover Service using the Handover Node.
+**Übergabeanbieter** sind Konnektoren zwischen einem Cognigy **Agenten** und einem Übergabedienst eines Drittanbieters. Konversationen können zwischen Cognigy.AI und einem Übergabedienst mithilfe des Übergabeknotens übergeben werden.
 
-To learn more about Handover, refer to our [Agent Handover documentation](../../ai/tools/agent-handover.md).
+Weitere Informationen zur Übergabe finden Sie in unserer [Dokumentation zur Agentenübergabe](.. /.. /ai/tools/agent-handover.md).
 
-## Cognigy Handover Provider
+## Cognigy Übergabe-Anbieter<div class="divider"></div>Die [Cognigy Live Agent](live-agent-handover.md) Endpoints sind spezifisch für die Cognigy.AI Plattform.
 
-<div class="divider"></div>
-
-The [Cognigy Live Agent](live-agent-handover.md) Endpoints is specific to the Cognigy.AI platform.
-
-## Third-party Handover Providers
-
-<div class="divider"></div>
-
-The following Handover Providers allow integrations with third-party products:
+## Drittanbieter für Übergaben<div class="divider"></div>Die folgenden Übergabeanbieter ermöglichen Integrationen mit Produkten von Drittanbietern:
 
 - [Chatwoot](chatwoot-handover.md)
 - [RingCentral Engage](ringcentralengage-handover.md)
@@ -27,9 +19,9 @@ The following Handover Providers allow integrations with third-party products:
 - [Genesys Cloud (Beta)](genesys-cloud-guest-chat.md) 
 - [8x8](8x8.md)
 
-## More Information
+## Mehr Informationen
 
-- [User Inactivity Detection and Handling](user-inactivity-detection.md)
-- [Set Handover Inactivity](../flow-nodes/other-nodes/set-handover-inactivity.md)
-- [Close Handover](../flow-nodes/other-nodes/close-handover.md)
-- [Agent Handover](../tools/agent-handover.md)
+- [Erkennung und Behandlung von Benutzerinaktivitäten](user-inactivity-detection.md)
+- [Übergabeinaktivität einstellen](.. /flow-nodes/other-nodes/set-handover-inactivity.md)
+- [Übergabe schließen](.. /flow-nodes/other-nodes/close-handover.md)
+- [Agentenübergabe](.. /tools/agent-handover.md)

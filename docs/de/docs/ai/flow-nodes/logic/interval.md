@@ -1,23 +1,20 @@
 ---
- title: "Interval" 
- slug: "interval" 
- hidden: false 
+ Titel: "Intervall" 
+ slug: "Intervall" 
+ ausgeblendet: false 
 ---
-# Interval
+# Intervall
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/interval.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein Intervallknoten wird nur dann verwendet, um einen Teil des Flows auszuführen, wenn er nicht innerhalb einer bestimmten Zeitspanne ausgeführt wurde.
 
-An Interval Node is used to execute a part of the Flow only if it has not been executed within a certain timespan.
+Nur wenn ein Intervallknoten nicht innerhalb der definierten Zeitspanne ausgeführt wurde, werden seine untergeordneten Knoten ausgeführt, andernfalls wird er übersprungen.
 
-On reaching an Interval Node, only if it has not been executed within the defined timespan, its child nodes will be executed, otherwise it will be skipped.
+Zu Beginn einer Sitzung sind alle Intervallknoten aktiv.
 
-At the beginning of a session, all Interval Nodes will be active.
-
-| Parameter | Type          | Description            |
+| Parameter | Typ | Beschreibung |
 |-----------|---------------|------------------------|
-| Interval  | CognigyScript | Time (in milliseconds) |
+| Intervall | CognigyScript | Zeit (in Millisekunden) |

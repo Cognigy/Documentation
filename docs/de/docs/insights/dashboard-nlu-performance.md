@@ -1,271 +1,271 @@
 ---
-title: "NLU Performance" 
-slug: "dashboard-nlu-performance" 
-hidden: false 
+Titel: "NLU Performance" 
+Slug: "Dashboard-NLU-Leistung" 
+ausgeblendet: false 
 ---
 
-# NLU Performance
+# NLU-Leistung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.45-blue.svg)] (.. /release-notes/4.45.md)
 
-The NLU Performance dashboard provides valuable insights into the performance of your virtual agent's natural language understanding (NLU) capabilities. It allows you to monitor and enhance message comprehension, Intent recognition, and execution efficiency. Moreover, it offers easy access to resources like the Intent Trainer for further performance improvement.
+Das NLU-Leistungsdashboard bietet wertvolle Einblicke in die Leistung der NLU-Funktionen (Natural Language Understanding) Ihres virtuellen Agenten. Es ermöglicht Ihnen, das Nachrichtenverständnis, die Absichtserkennung und die Ausführungseffizienz zu überwachen und zu verbessern. Darüber hinaus bietet es einen einfachen Zugriff auf Ressourcen wie den Intent Trainer zur weiteren Leistungsverbesserung.
 
-More information regarding NLU and Intents you can find in [NLU Overview](../ai/nlu/nlu-overview/overview.md).
+Weitere Informationen zu NLU und Intents finden Sie unter [NLU-Übersicht](.. /ai/nlu/nlu-overview/overview.md).
 
-The NLU Performance data of your Agent is visualized in the following charts:
+Die NLU-Leistungsdaten Ihres Agenten werden in den folgenden Diagrammen visualisiert:
 
-- [Indicators](#indicators) 
-- [Bar charts](#bar-charts)
-- [Line charts](#line-charts)
+- [Indikatoren](#indicators) 
+- [Balkendiagramme](#bar-Diagramme)
+- [Liniendiagramme](#line-Diagramme)
 
-Charts display data based on the [global filter](global-filter.md) settings. 
+In Diagrammen werden Daten basierend auf den Einstellungen für [globaler Filter](global-filter.md) angezeigt. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_dashboard.png" width="100%" />
-  <figcaption>NLU Performance dashboard</figcaption>
+  <figcaption>NLU-Leistungs-Dashboard</figcaption>
 </figure>
 
-## Indicators
+## Indikatoren
 
-The Indicator charts presents real-time data that refreshes every 30 seconds.
+Die Indikatordiagramme präsentieren Echtzeitdaten, die alle 30 Sekunden aktualisiert werden.
 
-### Understood Messages
+### Verstandene Botschaften
 
-Indicates the percentage of understood messages occurred during conversations.
-A calculation example with data visualization in a bar chart
-you will find in the [Understood/Misunderstood](#understood--misunderstood-messages) bar chart.  
+Gibt den Prozentsatz der verstandenen Nachrichten an, die während Unterhaltungen aufgetreten sind.
+Ein Rechenbeispiel mit Datenvisualisierung in einem Balkendiagramm
+finden Sie im Balkendiagramm [Verstanden/Verstanden](#understood--missverstandene-Nachrichten).  
 
-### Average Execution Time
+### Durchschnittliche Ausführungszeit
 
-Indicates the average execution time on a timescale.
+Gibt die durchschnittliche Ausführungszeit auf einer Zeitskala an.
 
-Formula:
+Formel:
  
-Average Execution Time = `Sum of Execution Times / Total number of inputs`
+Durchschnittliche Ausführungszeit = 'Summe der Ausführungszeiten / Gesamtzahl der Eingaben'
 
-A calculation example with data visualization in a line chart you can find in the [Average Execution Time](#average-execution-time-1) line chart. 
+Ein Berechnungsbeispiel mit Datenvisualisierung in einem Liniendiagramm finden Sie im Liniendiagramm [Average Execution Time](#average-execution-time-1). 
 
-### Avg Intent Score
+### Durchschnittliche Absichtsbewertung
 
-Indicates the average Intent score depending on the timeframe setting. The value indicates the quality of your Agent, how "good" Intents were found in conversations.
-For more information, see [Machine Learning Intents](../ai/nlu/nlu-overview/ml-intents.md).        
+Gibt den durchschnittlichen Intent-Score in Abhängigkeit von der Zeitrahmeneinstellung an. Der Wert gibt die Qualität Ihres Agenten an, wie "gute" Intents in Konversationen gefunden wurden.
+Weitere Informationen finden Sie unter [Machine Learning Intents](.. /ai/nlu/nlu-overview/ml-intents.md).        
 
-To find the average intent score, Insights sums up all the intent scores and divides by the total number of records.
+Um die durchschnittliche Absichtsbewertung zu ermitteln, summiert Insights alle Absichtsbewertungen und dividiert sie durch die Gesamtzahl der Datensätze.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Analytics Record | Intent Score |
+'''txt
+| Analytics-Datensatz | Absichts-Bewertung |
 | ---------------- | ------------ |
-| Record-1         | 0.30         |
-| Record-2         | 0.90         |
-| Record-3         | 0.10         |
-| Record-4         | 1            |
-| Record-5         | 0.20         |
-| Record-6         | 0.02         |
-| Record-7         | 0.50         |
-```
-Calculation:
+| Datensatz-1 | 0,30 |
+| Datensatz-2 | 0,90 |
+| Datensatz-3 | 0,10 |
+| Datensatz-4 | Nr. 1 |
+| Datensatz-5 | 0,20 |
+| Datensatz-6 | 0,02 |
+| Datensatz-7 | 0,50 |
+'''
+Berechnung:
 
-1. Sum of Intent Scores = `0.30 + 0.90 + 0.10 + 1 + 0.20 + 0.02 + 0.50 = 3.02`
-2. Number of Records = `7`
-3. Average Intent Score = `(Sum of Intent Scores) / (Number of Records)`
-4. Average Intent Score = `3.02 / 7`
+1. Summe der Intent-Scores = '0,30 + 0,90 + 0,10 + 1 + 0,20 + 0,02 + 0,50 = 3,02'
+2. Anzahl der Datensätze = '7'
+3. Durchschnittlicher Intent-Score = '(Summe der Intent-Scores) / (Anzahl der Datensätze)'
+4. Durchschnittliche Absichtsbewertung = '3,02 / 7'
 
-Result: `0.43`
+Ergebnis: '0.43'
 
-### Max Intent Score
+### Maximaler Intent-Score
 
-Indicates the number of Intents that were matched with 100% efficacy.
+Gibt die Anzahl der Absichten an, die mit einer Wirksamkeit von 100 % abgeglichen wurden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Analytics Record | Intent Score |
+'''txt
+| Analytics-Datensatz | Absichts-Bewertung |
 | ---------------- | ------------ |
-| Record-1         | 0.30         |
-| Record-2         | 0.90         |
-| Record-3         | 0.10         |
-| Record-4         | 1            |
-| Record-5         | 0.20         |
-| Record-6         | 0.02         |
-| Record-7         | 0.50         |
-```
+| Datensatz-1 | 0,30 |
+| Datensatz-2 | 0,90 |
+| Datensatz-3 | 0,10 |
+| Datensatz-4 | Nr. 1 |
+| Datensatz-5 | 0,20 |
+| Datensatz-6 | 0,02 |
+| Datensatz-7 | 0,50 |
+'''
 
-Result: In the provided source table, there is one record with an intent score of `1`, so the max intent score is `1`.
+Ergebnis: In der bereitgestellten Quelltabelle gibt es einen Datensatz mit einer Absichtsbewertung von "1", sodass die maximale Absichtsbewertung "1" ist.
 
-## Bar charts
+## Balkendiagramme
 
-### Understood / Misunderstood Messages
+### Verstandene / missverstandene Nachrichten
 
-Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
+Gibt die zeitbezogene Anzahl der verstandenen und missverstandenen Nachrichten in Prozent an, die in einem Balkendiagramm angezeigt werden.
 
-A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/).
-A message is not counted as understood
-if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/)
-or sent during an active handover
-without configuring [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow.
+Eine Nachricht wird als verstanden gezählt, wenn sie einen Intent ausgelöst hat, ein Slot abgeglichen wird oder sie über den [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) oder [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) als verstanden markiert wird.
+Eine Nachricht wird nicht als verstanden gezählt
+wenn es im [Analytics-Knoten überschreiben](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) als "Nicht zählen" markiert ist
+oder während einer aktiven Übergabe gesendet
+ohne [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow zu konfigurieren.
 
-By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
-you can select the **Go to Intent Trainer**,
-which will take you to the application in Cognigy.AI for improving your Flow. For more information, see [Intent Trainer](../ai/resources/tweak/intent-trainer.md).
+Mit einem Klick auf ! [vertikale-Auslassungspunkte] (https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+Sie können den **Go to Intent Trainer** auswählen,
+Dadurch gelangen Sie zur Anwendung, Cognigy.AI Sie Ihren Flow verbessern können. Weitere Informationen finden Sie unter [Intent Trainer](.. /ai/resources/tweak/intent-trainer.md).
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date       | understood   | misunderstood   | Percentages     |
+'''txt
+| Datum | verstanden | missverstanden | Prozentsätze |
 | -----------| ------------ | --------------- | --------------- |
-| 2023-09-13 | 20           | 33              | 38/62           |
-| 2023-09-14 | -            | -               |   -             |
-| 2023-09-15 | 29           | 18              | 62/38           |
-| 2023-09-16 | 0            | 0               | -               |
-| 2023-09-17 | 0            | 0               | -               |
-| 2023-09-18 | 0            | 0               | -               |
-| 2023-09-19 | 0            | 0               | -               |
+| 13.09.2023 | Nr. 20 | 33 | Nr. 38/62 |
+| 14.09.2023 | -            | -               |   -             |
+| 15.09.2023 | Nr. 29 | 18 | 62/38 |
+| 16.09.2023 | 0 | 0 | -               |
+| 17.09.2023 | 0 | 0 | -               |
+| 18.09.2023 | 0 | 0 | -               |
+| 19.09.2023 | 0 | 0 | -               |
 | ------------------------------------------------------------- |
-| TOTAL      | 49           | 51              |                 |
-```
+| INSGESAMT | Nr. 49 | Nr. 51 |                 |
+'''
 
-Calculation for the selected timeframe:
+Berechnung für den ausgewählten Zeitraum:
 
-1. Misunderstood %  = `(51 / 100) * 100 = 51%`
-2. Understood % = `(49 / 100) * 100 = 49%`
+1. Missverständnisse % = '(51 / 100) * 100 = 51%'
+2. Verstanden % = '(49 / 100) * 100 = 49%'
 
-Calculation example for the date `2023-09-15`: 
+Berechnungsbeispiel für das Datum '15.09.2023': 
 
-1. Misunderstood %  = `(18 / 47) * 100 = 38%`
-2. Understood % = `(29 / 47) * 100 = 62%`
+1. Missverstanden % = '(18 / 47) * 100 = 38%'
+2. Verstanden % = '(29 / 47) * 100 = 62%'
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_understood_messages.png" width="80%" />
 </figure>
 
-### Top Intents
+### Top-Absichten
 
-Indicates the top-rated number of Intents used displayed in a horizontal bar chart, with a maximum of 6 Intents shown in the summary view and 25 in the detailed view. Whenever an Intent is matched, it is recorded in the analytics data. The data is then grouped by the matched Intent and sorted in descending order.
+Gibt die höchste Anzahl der verwendeten Absichten an, die in einem horizontalen Balkendiagramm angezeigt werden, wobei maximal 6 Absichten in der Zusammenfassungsansicht und 25 in der Detailansicht angezeigt werden. Jedes Mal, wenn ein Intent abgeglichen wird, wird dies in den Analysedaten aufgezeichnet. Die Daten werden dann nach dem übereinstimmenden Intent gruppiert und in absteigender Reihenfolge sortiert.
 
-Source table: 
+Quelltabelle: 
 
-```txt
-|  Intent           | Total number  |
+'''txt
+|  Absicht | Gesamtanzahl |
 | ----------------- | ------------- |
-| Flight discounts  |      12       |
-| Book a flight     |      5        |
-| Change a flight   |      5        |
-| Additional fee    |      4        |
-| Reject a flight   |      3        |
-| Transfer flights  |      3        |
-```
+| Rabatte für Flüge |      Nr. 12 |
+| Einen Flug buchen |      Nr. 5 |
+| Einen Flug ändern |      Nr. 5 |
+| Zusätzliche Gebühr |      4 |
+| Einen Flug ablehnen |      3 |
+| Transferflüge |      3 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/calls/top-intents.png" width="90%" />
 </figure>
 
-### Top Slots
+### Top-Slots
 
-Similar to **Top Goals** and **Top Intents**, this chart displays top-rated number of slots in a horizontal bar chart.
+Ähnlich wie **Top-Ziele** und **Top-Absichten** zeigt dieses Diagramm die am besten bewertete Anzahl von Slots in einem horizontalen Balkendiagramm an.
 
-Source table:
+Quelltabelle:
 
-```txt 
-| Slot        | Number      |
+'''txt 
+| Spielautomat | Anzahl |
 | ----------- | ----------- |
-| DATE        | 2           |
-| NUMBER      | 1           |
-```
+| DATUM | 2 |
+| ANZAHL | Nr. 1 |
+'''
 
-Result:
+Ergebnis:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/top_slots.png" width="80%" />
 </figure>
 
-### Intents by Score Range
+### Absichten nach Punktebereich
 
-The scoring range of found Intents displayed in a stacked bar chart. Every score range bar shows a min-max value and has an average value marker.
-Clicking on the three-dots menu item,
-you can select the **Go to Intent Trainer** that leads you to the application in Cognigy.AI to improve your Flow.
-For more information, see [Intent Trainer](../ai/resources/tweak/intent-trainer.md).
+Der Bewertungsbereich der gefundenen Absichten, der in einem gestapelten Balkendiagramm angezeigt wird. Jeder Score-Bereichsbalken zeigt einen Min-Max-Wert an und verfügt über eine Durchschnittswertmarkierung.
+Klicken Sie auf den Menüpunkt mit den drei Punkten,
+Sie können den **Go to Intent Trainer** auswählen, der Sie zu der Anwendung führt, Cognigy.AI Ihren Flow zu verbessern.
+Weitere Informationen finden Sie unter [Intent Trainer](.. /ai/resources/tweak/intent-trainer.md).
 
-Source table:
+Quelltabelle:
 
-```txt
-| Date               | intentScoreAvg     | intentScoreMax     | intentScoreMin     |
+'''txt
+| Datum | intentScoreAvg | intentScoreMax | intentScoreMin |
 | ------------------ | --------------     | --------------     | ------------------ |
-| cakes              | 0.6517875252045072 | 0.6517875252045072 | 0.6517875252045072 |
-| pizza              | 0.6863160928710601 | 0.7237952611766103 | 0.6491475952551133 |
-| drinks             | 0.698537294767418  | 0.698537294767418  | 0.698537294767418  |
-| ice cream          | 0.7862064089630107 | 0.7862064089630107 | 0.7862064089630107 |
-| transfer with refer| 1                  | 1                  | 1                  |
-| transfer with dial | 1                  | 1                  | 1                  |
-| play               | 1                  | 1                  | 1                  |
-| DTMF               | 1                  | 1                  | 1                  |
+| Kuchen | 0,6517875252045072 | 0,6517875252045072 | 0,6517875252045072 |
+| Pizza | 0,6863160928710601 | 0,7237952611766103 | 0,6491475952551133 |
+| Getränke | 0,698537294767418 | 0,698537294767418 | 0,698537294767418 |
+| EIS | 0,7862064089630107 | 0,7862064089630107 | 0,7862064089630107 |
+| Überweisung mit REFER| Nr. 1 | Nr. 1 | Nr. 1 |
+| Übertragung mit Wählscheibe | Nr. 1 | Nr. 1 | Nr. 1 |
+| Spielen | Nr. 1 | Nr. 1 | Nr. 1 |
+| DTMF | Nr. 1 | Nr. 1 | Nr. 1 |
 
-```
-Result: 
+'''
+Ergebnis: 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_intents_by_score_range.png" width="80%" />
 </figure>
 
-### Top Intent Scores
+### Top-Intent-Scores
 
-Indicates the top-rated numbers of Intents displayed in a bar chart.
-For more information, see [Intent Analyzer](../ai/nlu/nlu-overview/intent-analyzer.md).
+Gibt die am besten bewertete Anzahl von Absichten an, die in einem Balkendiagramm angezeigt werden.
+Weitere Informationen finden Sie unter [Intent Analyzer](.. /ai/nlu/nlu-overview/intent-analyzer.md).
 
-Source table:
+Quelltabelle:
 
-```txt
-|  Intents             | Intent Score       |
+'''txt
+|  Absichten | Absichts-Bewertung |
 | -------------------- | ------------------ |
-| play                 | 1                  |
-| transfer with dial   | 1                  |
-| transfer with refer  | 1                  |
-| DTMF                 | 1                  |
-| ice cream            | 0.7862064089630107 |
-| drinks               | 0.698537294767418  |
-| pizza                | 0.6863160928710601 |
-| cakes                | 0.6517875252045072 |
-```
+| Spielen | Nr. 1 |
+| Übertragung mit Wählscheibe | Nr. 1 |
+| Überweisung mit REFER | Nr. 1 |
+| DTMF | Nr. 1 |
+| EIS | 0,7862064089630107 |
+| Getränke | 0,698537294767418 |
+| Pizza | 0,6863160928710601 |
+| Kuchen | 0,6517875252045072 |
+'''
 
-Result: 
+Ergebnis: 
 
-1. Intent Score Max: `1`
-2. Intent Score Min: `0.65`
+1. Absichts-Score Max: '1'
+2. Absichts-Score min: '0,65'
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_top_intent_scores.png" width="80%" />
 </figure>
 
-## Line charts
+## Liniendiagramme
 
-### Average Execution Time
+### Durchschnittliche Ausführungszeit
 
-Indicates the average execution time of a Flow process on a timescale. The chart indicates the average time it took to execute the Flow in ms. Time scaling depends on the global filter setting.
+Gibt die durchschnittliche Ausführungszeit eines Flow-Prozesses auf einer Zeitskala an. Das Diagramm zeigt die durchschnittliche Zeit an, die für die Ausführung des Flows in ms benötigt wurde. Die Zeitskalierung hängt von der globalen Filtereinstellung ab.
 
-Formula:
+Formel:
                              
-Average Execution Time = `Sum of Execution Times / Total number of inputs`
+Durchschnittliche Ausführungszeit = 'Summe der Ausführungszeiten / Gesamtzahl der Eingaben'
 
-Source table:
+Quelltabelle:
 
-```txt
-|  Date        | Execution Time  |
+'''txt
+|  Datum | Ausführungszeit |
 | ------------ | --------------- |
-| 2023-09-13   |      130        |
-| 2023-09-14   |      0          |
-| 2023-09-15   |      123        |
-| 2023-09-16   |      0          |
-| 2023-09-17   |      0          |
-| 2023-09-18   |      0          |
-| 2023-09-19   |      0          |
-```
+| 13.09.2023 |      130 |
+| 14.09.2023 |      0 |
+| 15.09.2023 |      123 |
+| 16.09.2023 |      0 |
+| 17.09.2023 |      0 |
+| 18.09.2023 |      0 |
+| 19.09.2023 |      0 |
+'''
 
-Result: `(130ms + 123ms) / 2 = 127.5ms`
+Ergebnis: '(130ms + 123ms) / 2 = 127.5ms'
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/NLU_avg_execution_time.png" width="80%" />
@@ -273,8 +273,8 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 
 {! _includes/insights/download-report.md !}
 
-## More Information
+## Mehr Informationen
 
-- [Dashboard Engagement](dashboard-engagement.md)
-- [Dashboard Overview](dashboard-overview.md)
-- [Dashboard Live Agent](dashboard-live-agent.md)
+- [Dashboard-Interaktion](dashboard-engagement.md)
+- [Dashboard-Übersicht](dashboard-overview.md)
+- [Dashboard-Live-Agent](dashboard-live-agent.md)

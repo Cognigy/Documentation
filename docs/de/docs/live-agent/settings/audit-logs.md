@@ -1,69 +1,69 @@
 ---
-title: "Audit Logs"
-slug: "audit-logs"
-description: "Live Agent Audit Logs ensure transparency and accountability by recording user activities, system events, and configuration changes. They help answer key questions about actions taken in your Live Agent environment, enhancing security and auditing."
-hidden: false
+Titel: "Audit-Protokolle"
+Slug: "Audit-Protokolle"
+Beschreibung: "Live-Agenten-Audit-Protokolle sorgen für Transparenz und Verantwortlichkeit, indem sie Benutzeraktivitäten, Systemereignisse und Konfigurationsänderungen aufzeichnen. Sie helfen bei der Beantwortung wichtiger Fragen zu Maßnahmen, die in Ihrer Live-Agent-Umgebung ergriffen werden, und verbessern die Sicherheit und Prüfung."
+ausgeblendet: false
 ---
 
-# Audit Logs
+# Audit-Protokolle
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.57-blue.svg)](../../release-notes/4.57.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.57-blue.svg)] (.. /.. /release-notes/4.57.md)
 
-_Audit Logs_ are a tool for maintaining transparency and accountability within your Live Agent resources. 
+_Audit Logs_ sind ein Werkzeug zur Aufrechterhaltung der Transparenz und Verantwortlichkeit innerhalb Ihrer Live Agent-Ressourcen. 
 
-These logs record important user activities, system events, and configuration changes, providing details for security and auditing purposes. 
+In diesen Protokollen werden wichtige Benutzeraktivitäten, Systemereignisse und Konfigurationsänderungen aufgezeichnet und Details zu Sicherheits- und Überwachungszwecken bereitgestellt. 
 
-With audit logs, you can answer "Who did what, where, and when?" questions within your Live Agent environment. 
+Mit Audit-Protokollen können Sie Fragen wie "Wer hat was, wo und wann gemacht?" in Ihrer Live Agent-Umgebung beantworten. 
 
-The logs include events such as `create`, `update`, and `delete` for the following entities:
+Die Protokolle enthalten Ereignisse wie "create", "update" und "delete" für die folgenden Entitäten:
 
-- [Assist Bots](../assistants/assist-bot.md)
-- [Automation Rules](automation-rules.md)
-- [Inboxes](inboxes.md)
-- [Inbox Collaborators](inboxes.md#inbox-collaborators)
-- [Inbox Webhooks](inboxes.md#inbox-settings)
+- [Assist-Bots](.. /assistants/assist-bot.md)
+- [Automatisierungsregeln](automation-rules.md)
+- [Posteingänge](inboxes.md)
+- [Mitarbeiter im Posteingang](inboxes.md#posteingang-Mitarbeiter)
+- [Posteingangs-Webhooks](inboxes.md#posteingangseinstellungen)
 - [Teams](teams.md)
 
-Only users with the `Administrator` role can access these logs. 
+Nur Benutzer mit der Rolle "Administrator" können auf diese Protokolle zugreifen. 
 
-## Structure of Audit Log Entries
+## Struktur der Audit-Log-Einträge
 
-Every audit log entry provides a structured format that includes the user responsible for the activity, the specific action performed, and the timestamp of the event.
+Jeder Überwachungsprotokolleintrag bietet ein strukturiertes Format, das den für die Aktivität verantwortlichen Benutzer, die ausgeführte Aktion und den Zeitstempel des Ereignisses enthält.
 
-```txt
-| User             | Activity                          | Time                  |
+'''txt
+| Benutzer | Aktivität | Zeit |
 | ---------------- | --------------------------------- | --------------------- |
-| System           | Created a new inbox (#24725)      | Jun 22, 2023 03:06 PM |
-| user@cognigy.com | Deleted an automation rule (#376) | Jun 22, 2023 12:48 PM |
-```
-In the first log entry, the system created a new inbox with the identifier `#24725`. The activity occurred on `Jun 22, 2023, at 03:06 PM`.
+| System | Einen neuen Posteingang erstellt (#24725) | 22.06.2023 15:06 Uhr |
+| user@cognigy.com | Automatisierungsregel gelöscht (#376) | 22.06.2023 12:48 Uhr |
+'''
+Im ersten Protokolleintrag legte das System einen neuen Eingang mit der Kennung '#24725' an. Die Aktivität trat am "22. Juni 2023 um 15:06 Uhr" auf.
 
-In the second log entry, the user with the `user@cognigy.com` login deleted an automation rule with the identifier `#376`. The activity occurred on `Jun 22, 2023, at 12:48 PM`.
+Im zweiten Protokolleintrag hat der Benutzer mit dem Login "user@cognigy.com" eine Automatisierungsregel mit der Kennung "#376" gelöscht. Die Aktivität ereignete sich am 22. Juni 2023 um 12:48 Uhr.
 
-## View Audit Logs
+## Audit-Protokolle anzeigen
 
-To view audit logs, follow these steps:
+Gehen Sie folgendermaßen vor, um Überwachungsprotokolle anzuzeigen:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Audit Logs**.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Wechseln Sie zu **Einstellungen > Überwachungsprotokolle**.
 
-You will see a list of log entries containing user and system events.
+Es wird eine Liste von Protokolleinträgen angezeigt, die Benutzer- und Systemereignisse enthalten.
 
-### View Changes
+### Änderungen anzeigen
 
-For actions, you can view details on any changes that were made.
+Bei Aktionen können Sie Details zu allen vorgenommenen Änderungen anzeigen.
 
-To do this, follow these steps:
+Gehen Sie dazu folgendermaßen vor:
 
-1. Open the Live Agent interface.
-2. Go to **Settings > Audit Logs**.
-3. Select a log from the list by clicking on it.
+1. Öffnen Sie die Live Agent-Oberfläche.
+2. Wechseln Sie zu **Einstellungen > Überwachungsprotokolle**.
+3. Wählen Sie ein Protokoll aus der Liste aus, indem Sie darauf klicken.
 
-A window will open displaying the details of the changes.
+Es öffnet sich ein Fenster, in dem die Details der Änderungen angezeigt werden.
 
-For an `update` action, the **Before** section presents the original values or configuration, while the **After** section displays the new values after the update.
+Bei einer Aktualisierungsaktion werden im Abschnitt "Vorher** die ursprünglichen Werte oder die ursprüngliche Konfiguration angezeigt, während im Abschnitt "Nachher" die neuen Werte nach dem Update angezeigt werden.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA-audit-logs-update-inbox-changes.png" width="100%" alt="Audit Logs Changes" />
-  <figcaption>Audit Logs Changes</figcaption>
+  <figcaption>Änderungen an Überwachungsprotokollen</figcaption>
 </figure>

@@ -1,1 +1,1 @@
-To download a report as a CSV file, click **Download Report** in the upper-right corner of the report page.
+Um einen Bericht als CSV-Datei herunterzuladen, klicken Sie in der oberen rechten Ecke der Berichtsseite auf **Bericht herunterladen**.

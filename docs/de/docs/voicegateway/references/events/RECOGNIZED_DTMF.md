@@ -1,30 +1,30 @@
 ---
-title: "RECOGNIZED_DTMF"
-slug: "RECOGNIZED_DTMF"
-hidden: false
+Titel: "RECOGNIZED_DTMF"
+Schnecke: "RECOGNIZED_DTMF"
+ausgeblendet: false
 ---
 
 # RECOGNIZED_DTMF
 
-The DTMF code was recognized by the virtual agent.
+Der DTMF-Code wurde vom virtuellen Agenten erkannt.
 
-To test a payload with the `RECOGNIZED_DTMF` event, you can use a Flow with only one **Set Session Config** Node.
+Um eine Payload mit dem Ereignis "RECOGNIZED_DTMF" zu testen, können Sie einen Flow mit nur einem **Set Session Config** Node verwenden.
 
-Input: Add the **Set Session Config** Node to the Flow editor and enable the **Capture DTMF Signals** setting in the Node. Start a call via the Interaction Panel by clicking ![phone](../../../assets/icons/phone.svg) **> Start Call**, then enter `#`.
+Eingabe: Fügen Sie dem Flow-Editor den Knoten **Sitzungskonfiguration festlegen** hinzu und aktivieren Sie die Einstellung **DTMF-Signale erfassen** im Knoten. Starten Sie einen Anruf über das Interaction Panel, indem Sie auf ! [Telefon] (.. /.. /.. /assets/icons/phone.svg) **> Anruf starten** und geben Sie dann '#' ein.
 
-Payload:
+Nutzlast:
 
-```json
+'''json
 {
-    "payload": {
+    "Nutzlast": {
         "call_sid": "a140138d-2796-4184-xxxx-xxxxxxxxxxxx",
-        "direction": "inbound",
+        "direction": "eingehend",
         "from": "user-vG92uZPRaxHmns4xUXxxxx",
         "to": "123456789",
         "call_id": "0cb0bef6-5e22-123c-xxxx-xxxxxxxxxxxx",
         "sip_status": 200,
         "sip_reason": "OK",
-        "call_status": "in-progress",
+        "call_status": "in Bearbeitung",
         "account_sid": "34a2746a-782a-4804-xxxx-xxxxxxxxxxxx",
         "trace_id": "fbb8df1bd3fec33bfece07adb2a8xxxx",
         "application_sid": "6794ed5e-b3d4-4d36-xxxx-xxxxxxxxxxxx",
@@ -32,8 +32,8 @@ Payload:
         "originating_sip_ip": "176.198.xxx.xx",
         "api_base_url": "voicegateway-app.cognigy.ai/v1",
         "digits": "9791108569",
-        "reason": "dtmfDetected"
+        "reason": "dtmfErkannt"
     },
     "event": "RECOGNIZED_DTMF"
 }
-```
+'''

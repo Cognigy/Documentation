@@ -1,33 +1,33 @@
 ---
-title: "AI Copilot"
-slug: "overview"
-hidden: true
+Titel: "KI-Copilot"
+Schnecke: "Übersicht"
+Ausgeblendet: Wahr
 ---
 
-# AI Copilot Nodes
+# KI-Copilot-Knoten
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../release-notes/4.51.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.51-blue.svg)] (.. /.. /.. /release-notes/4.51.md)
 
 {! _includes/agent-assist/pricing.md !}
 
-The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding HTML, Adaptive Cards, and IFrame content.
+Mit den AI Copilot-Knoten können Benutzer den AI Copilot-Arbeitsbereich anpassen, indem sie HTML, adaptive Karten und IFrame-Inhalte hinzufügen.
 
-Cognigy.AI supports the following Nodes:
+Cognigy.AI unterstützt die folgenden Nodes:
 
-- [Copilot: Identity Tile](identity-tile.md)
-- [Copilot: Next Action Tile](next-action-tile.md)
-- [Copilot: Sentiment Tile](sentiment-tile.md)
-- [Copilot: HTML Tile](set-html-tile.md)
-- [Copilot: Adaptive Card Tile](set-adaptive-card-tile.md)
-- [Copilot: IFrame Tile](set-iframe-tile.md)
-- [Copilot: Set Grid](set-grid.md)
-- [Copilot: Transcript Tile](transcript-tile.md)
+- [Copilot: Identitätskachel](identity-tile.md)
+- [Copilot: Kachel für die nächste Aktion](next-action-tile.md)
+- [Copilot: Stimmungskachel](sentiment-tile.md)
+- [Copilot: HTML-Kachel](set-html-tile.md)
+- [Copilot: Adaptive Kartenkachel](set-adaptive-card-tile.md)
+- [Copilot: IFrame-Kachel](set-iframe-tile.md)
+- [Copilot: Raster einstellen](set-grid.md)
+- [Copilot: Transkript-Kachel](transcript-tile.md)
 
-## More Information
+## Mehr Informationen
 
-- [AI Copilot](../../../ai-copilot/overview.md)
-- [Getting started with AI Copilot](../../../ai-copilot/getting-started.md)
-- [AI Copilot configuration](../../../ai-copilot/configuration.md)
-- [AI Copilot embedding](../../../ai-copilot/embedding.md)
-- [AI Copilot for Voice](../../../ai-copilot/voice/voice-overview.md)
-- [AI Copilot for Chat](../../../ai-copilot/chat.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)
+- [Erste Schritte mit AI Copilot](.. /.. /.. /ai-copilot/getting-started.md)
+- [AI Copilot-Konfiguration](.. /.. /.. /ai-copilot/configuration.md)
+- [KI-Copilot-Einbettung](.. /.. /.. /ai-copilot/embedding.md)
+- [KI-Copilot für Sprache](.. /.. /.. /ai-copilot/voice/voice-overview.md)
+- [KI-Copilot für Chat](.. /.. /.. /ai-copilot/chat.md)

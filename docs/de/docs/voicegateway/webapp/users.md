@@ -1,47 +1,47 @@
 ---
-title: "users" 
-slug: "users"
-hidden: false
+title: "Benutzer" 
+Slug: "Benutzer"
+ausgeblendet: false
 ---
 
-# Users
+# Benutzer
 
-_Users_ allow you to manage members in your account: create new members, edit, or delete existing ones. 
+_Benutzer_ ermöglicht es Ihnen, Mitglieder in Ihrem Konto zu verwalten: neue Mitglieder erstellen, bestehende bearbeiten oder löschen. 
 
 <img class="image-center"  src="{{config.site_url}}voicegateway/images/VG-webapp-users.png"  width="100%" />
 
-## Scopes
+## Geltungsbereiche
 
-Depending on Cognigy Voice Gateway installation, members can have the following roles (scopes):
+Abhängig von der Installation von Cognigy Voice Gateway können Mitglieder die folgenden Rollen (Bereiche) haben:
 
-- [Account](#account)
-- [Service Provider](#service-provider)
+- [Konto](#account)
+- [Dienstanbieter](#service-Anbieter)
 - [Admin](#admin)
 
-### Account
+### Konto
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.62-blue.svg)] (.. /.. /release-notes/4.62.md)
 
-This scope includes basic operations with Voice Gateway entities, such as creating, editing, and deleting entities. 
+Dieser Bereich umfasst grundlegende Vorgänge mit Voice Gateway-Entitäten, z. B. das Erstellen, Bearbeiten und Löschen von Entitäten. 
 
-It also allows for editing user profiles, carriers, and speech services that belong to users with the Account scope.
+Es ermöglicht auch das Bearbeiten von Benutzerprofilen, Netzbetreibern und Sprachdiensten, die zu Benutzern mit dem Kontobereich gehören.
 
-Users with the Account role can be authorized in the Voice Gateway Self-Service Portal via their Cognigy.AI user credentials.
-To activate this option, you need to activate the **Set up Voice Gateway**
-button in the **User menu > Organization Details** of the Cognigy.AI UI. Go to **User Menu > Access Control** and add a `voiceGatewayUser` role for selected users.
+Benutzer mit der Rolle "Konto" können im Voice Gateway Self-Service-Portal über ihre Cognigy.AI Benutzeranmeldeinformationen autorisiert werden.
+Um diese Option zu aktivieren, müssen Sie die Option **Voice Gateway einrichten**
+im **Benutzermenü > Organisationsdetails** der Cognigy.AI Benutzeroberfläche. Gehen Sie zu **Benutzermenü > Zugriffssteuerung** und fügen Sie eine "voiceGatewayUser"-Rolle für ausgewählte Benutzer hinzu.
 
-### Service Provider
+### Dienstleister
 
-This scope is only available for On-premises Cognigy Voice Gateway installations. 
+Dieser Bereich ist nur für lokale Cognigy Voice Gateway-Installationen verfügbar. 
 
-It includes all the operations in the Account scope and the ability to edit user profiles, carriers, and speech services that belong to users with either the Account scope or the Service Provider scope. 
+Es umfasst alle Vorgänge im Kontobereich und die Möglichkeit, Benutzerprofile, Netzbetreiber und Spracherkennungsdienste zu bearbeiten, die Benutzern mit dem Kontobereich oder dem Dienstanbieterbereich gehören. 
 
-Additionally, users with the Service Provider scope can create, edit, and delete users with the Account and Service Provider scopes, and they can generate API keys.
+Darüber hinaus können Benutzer mit dem Bereich "Dienstanbieter" Benutzer mit den Bereichen "Konto" und "Dienstanbieter" erstellen, bearbeiten und löschen und API-Schlüssel generieren.
 
-### Admin
+### Verwaltung
 
-This scope is only available for On-premises Cognigy Voice Gateway installations. 
+Dieser Bereich ist nur für lokale Cognigy Voice Gateway-Installationen verfügbar. 
 
-It includes all operations in the Account and Service Provider scopes, allowing for performing all operations in the Voice Gateway. 
+Es umfasst alle Vorgänge in den Bereichen Konto und Dienstanbieter, sodass alle Vorgänge im VoIP-Gateway ausgeführt werden können. 
 
-Additionally, Admins can create, edit, and delete users with the Account, Service Provider, and Admin scopes. They can also generate API keys and change password requirements.
+Darüber hinaus können Administratoren Benutzer mit den Bereichen "Konto", "Dienstanbieter" und "Administrator" erstellen, bearbeiten und löschen. Sie können auch API-Schlüssel generieren und Passwortanforderungen ändern.

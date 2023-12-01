@@ -1,40 +1,37 @@
 ---
- title: "Logs" 
- slug: "logs" 
- hidden: false 
+ Titel: "Protokolle" 
+ Schnecke: "Protokolle" 
+ ausgeblendet: false 
 ---
-# Logs
+# Protokolle
 
-The **Logs** feature allows platform users to track each input and output message that occurs with an **Agent**. The Logs are most frequently used to debug workflows by observing if and where errors are occurring.
+Die **Protokolle**-Funktion ermöglicht es Plattformbenutzern, jede Eingabe- und Ausgabenachricht zu verfolgen, die mit einem **Agent** auftritt. Die Protokolle werden am häufigsten zum Debuggen von Workflows verwendet, indem beobachtet wird, ob und wo Fehler auftreten.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/8ef7347-logs.png" width="100%" />
 </figure>
 
-The logs can be followed in real-time as they will be automatically appended when new log outputs are emitted. The log history can also be loaded to review outputs that occurred in the past.
+Die Protokolle können in Echtzeit verfolgt werden, da sie automatisch angehängt werden, wenn neue Protokollausgaben ausgegeben werden. Der Protokollverlauf kann auch geladen werden, um Ausgaben zu überprüfen, die in der Vergangenheit aufgetreten sind.
 
-### Log entries
+### Log-Einträge
 
-Each log entry consists of a `timestamp`, the `log type`, the log `message` and additional `metadata`.
+Jeder Log-Eintrag besteht aus einem 'Zeitstempel', dem 'Log-Typ', der Log-'Nachricht' und zusätzlichen 'Metadaten'.
 
-##Log Filtering
-<div class="divider"></div>
+##Log Filtern<div class="divider"></div>### Anzeige-Einstellungen
+Die Konfiguration der Protokollanzeige ist möglich, indem die folgenden Funktionen aktiviert oder deaktiviert werden:
 
-### Display Settings
-Configuration of the log display is possible by enabling or disabling the following features:
-
-| Setting Name             | Function                                                               |
+| Name der Einstellung | Funktion |
 |--------------------------|------------------------------------------------------------------------|
-| Live Logging             | Activates/Deactivates immediate update of the log as soon events occur |
-| Show Timestamp           | Activates/Deactivates the timestamp of each event                      |
-| Show Additional Metadata | Activates/Deactivates data attached to incoming and outgoing messages  |
-| Info                     | Activates/Deactivates info type events                                 |
-| Error                    | Activates/Deactivates error type events                                |
-| Debug                    | Activates/Deactivates debugging type events                            |
+| Live-Protokollierung | Aktiviert/deaktiviert die sofortige Aktualisierung des Protokolls, sobald Ereignisse eintreten |
+| Zeitstempel anzeigen | Aktiviert/deaktiviert den Zeitstempel jedes Ereignisses |
+| Zusätzliche Metadaten anzeigen | Aktiviert/deaktiviert Daten, die an ein- und ausgehende Nachrichten angehängt sind |
+| Infos | Aktivieren/Deaktivieren von Infotyp-Ereignissen |
+| Fehler | Aktivieren/Deaktivieren von Fehlertypereignissen |
+| Debuggen | Aktivieren/Deaktivieren von Debugging-Typereignissen |
 
-### Searching
+### Suche
 
-It is possible to search for specific user IDs and **Flow** names by entering these values in the respective search fields found at the top right of the logs page. The log will instantly be filtered by any value added to these fields.
+Es ist möglich, nach bestimmten Benutzer-IDs und **Flow**-Namen zu suchen, indem Sie diese Werte in die entsprechenden Suchfelder oben rechts auf der Protokollseite eingeben. Das Protokoll wird sofort nach jedem Wert gefiltert, der diesen Feldern hinzugefügt wird.
 
-!!! warning "Copying Log Entries"
-    For browser performance reasons the log list is virtualized, which means that only the log entries that you see currently exist in your browser. This prevents scrolling and copying more lines than there are currently in your view.
+!!! Warnung "Kopieren von Log-Einträgen"
+    Aus Gründen der Browserleistung wird die Protokollliste virtualisiert, was bedeutet, dass nur die Protokolleinträge vorhanden sind, die Sie derzeit in Ihrem Browser sehen. Dadurch wird verhindert, dass mehr Zeilen gescrollt und kopiert werden, als sich derzeit in Ihrer Ansicht befinden.

@@ -1,23 +1,22 @@
 ---
- title: "Logic" 
- slug: "logic" 
- hidden: false 
+ Titel: "Logik" 
+ Schnecke: "Logik" 
+ ausgeblendet: false 
 ---
-# Logic
+# Logik
 
-Logic Nodes allow you to customize your Flow's behavior. You can use them to control which parts of the Flow should run based on conditions or integrate with other Flows.
+Mit Logikknoten können Sie das Verhalten Ihres Flows anpassen. Sie können sie verwenden, um zu steuern, welche Teile des Flows basierend auf Bedingungen ausgeführt oder in andere Flows integriert werden sollen.
 
-- [If](if.md)
-- [Lookup](lookup.md)
-- [Go To](go-to.md)
-- [Execute Flow](execute-flow.md)
-- [Once](once.md)
-- [Interval](interval.md)
-- [Stop and Return](stop-and-return.md)
-- [Wait for Input](wait-for-input.md)
-- [Sleep](sleep.md)
-- [Think](think.md)
-- [Reset State](reset-state.md)
-- [Set State](set-state.md)
-- [Switch Locale](switch-locale.md)
-
+- [Wenn](if.md)
+- [Nachschlagen](lookup.md)
+- [Gehe zu](go-to.md)
+- [Flow ausführen](execute-flow.md)
+- [Einmal](once.md)
+- [Intervall](interval.md)
+- [Stopp und Rückkehr](stop-and-return.md)
+- [Auf Eingabe warten](wait-for-input.md)
+- [Schlaf](sleep.md)
+- [Denken](think.md)
+- [Status zurücksetzen](reset-state.md)
+- [Status einstellen](set-state.md)
+- [Gebietsschema wechseln](switch-locale.md)

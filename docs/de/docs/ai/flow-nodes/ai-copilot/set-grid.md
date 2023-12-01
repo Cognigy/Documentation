@@ -1,34 +1,31 @@
 ---
 title: "Copilot: Set Grid"
-slug: "set-grid"
-hidden: true
+Schnecke: "Set-Grid"
+Ausgeblendet: Wahr
 ---
 
-# Copilot: Set Grid
+# Copilot: Raster festlegen
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../../release-notes/4.57.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.57-blue.svg)] (.. /.. /.. /release-notes/4.57.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/set-grid.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten aktualisiert das vorhandene AI Copilot Workspace-Raster in der AI Copilot-Konfiguration, die Sie über eine [API POST-Anforderung](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) erstellt haben. Darüber hinaus können Sie diesen Knoten verwenden, um eine Vorschau des Rasters anzuzeigen, bevor Sie diese Anforderung stellen.
 
-This Node updates the existing AI Copilot Workspace grid in the AI Copilot Configuration that you created via an [API POST request](https://api-dev.cognigy.ai/openapi#post-/v2.0/agentassistconfigs). Additionally, you can use this Node to preview the grid before making this request.
+Innerhalb eines einzigen AI Copilot Flow können mehrere Knoten verwendet werden, sodass Sie das Raster nach Ihren spezifischen Anforderungen anpassen können.
 
-Multiple nodes can be utilized within a single AI Copilot Flow, enabling you to modify the grid according to your specific requirements.
+## Einstellungen
 
-## Settings
-
-| Parameter                  | Type | Description                                                                                                                                                        |
+| Parameter | Typ | Beschreibung |
 |----------------------------|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Copilot Grid Configuration | JSON | Updates the AI Copilot Workspace grid configuration. By default, there is a grid example in the code editor. You can view a grid with Tile IDs in the Node editor. |
+| Copilot Grid-Konfiguration | JSON | Aktualisiert die Rasterkonfiguration des AI Copilot-Arbeitsbereichs. Standardmäßig gibt es ein Rasterbeispiel im Code-Editor. Sie können ein Raster mit Kachel-IDs im Knoten-Editor anzeigen. |
 
-## More Information
+## Mehr Informationen
 
-- [Set HTML file](set-html-tile.md)
-- [Set Adaptive card tile](set-adaptive-card-tile.md)
-- [Set IFrame tile](set-iframe-tile.md)
-- [AI Copilot Nodes](overview.md)
-- [AI Copilot](../../../ai-copilot/overview.md)
+- [HTML-Datei festlegen](set-html-tile.md)
+- [Kachel für adaptive Karte festlegen](set-adaptive-card-tile.md)
+- [IFrame-Kachel setzen](set-iframe-tile.md)
+- [KI-Copilot-Knoten](overview.md)
+- [KI-Copilot](.. /.. /.. /ai-copilot/overview.md)

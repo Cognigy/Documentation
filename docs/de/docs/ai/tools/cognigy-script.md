@@ -1,106 +1,97 @@
 ---
- title: "CognigyScript" 
- slug: "cognigy-script" 
- hidden: false 
+ Titel: "CognigyScript" 
+ Schnecke: "Kognigy-Schrift" 
+ ausgeblendet: false 
 ---
 # CognigyScript
 
-CognigyScript is a superset of JavaScript which gives you access to the [Input]({{config.site_url}}ai/tools/interaction-panel/input/) and [Context]({{config.site_url}}ai/tools/interaction-panel/context/) objects within text and JSON.
+CognigyScript ist eine Obermenge von JavaScript, die Ihnen Zugriff auf die Objekte [Input]({{config.site_url}}ai/tools/interaction-panel/input/) und [Context]({{config.site_url}}ai/tools/interaction-panel/context/) in Text und JSON ermöglicht.
 
-Using CognigyScript, you can execute powerful scripts to create the replies you want to return to the client.
+Mit CognigyScript können Sie leistungsstarke Skripte ausführen, um die Antworten zu erstellen, die Sie an den Client zurückgeben möchten.
 
-Within text, you write CognigyScript within `{{"{{ }}"}}` tags. Example: `{{"{{input.text}}"}}`
+Innerhalb von Text schreiben Sie CognigyScript innerhalb von '{{"{{ }}"}}'-Tags. Beispiel: '{{"{{input.text}}"}}'
 
-CognigyScript is essentially JavaScript, but gives you access to the Cognigy objects via exposed variables:
+CognigyScript ist im Wesentlichen JavaScript, ermöglicht Ihnen aber den Zugriff auf die Cognigy-Objekte über verfügbar gemachte Variablen:
 
-| Variable | Description                | Example                            |
+| Variabel | Beschreibung | Beispiel |
 |----------|----------------------------|------------------------------------|
-| input    | 	The Input Object          | {{ " {{input.text}}" }}            |
-| context  | The Context Object         | {{ " {{context.selectedHotel}}" }} |
-| profile  | The Contact Profile Object | {{ " {{profile.firstname}}" }}     |
+| Eingabe | 	Das Eingabeobjekt | {{ " {{input.text}}" }} |
+| Kontext | Das Context-Objekt | {{ " {{context.selectedHotel}}" }} |
+| Profil | Das Kontaktprofilobjekt | {{ " {{Profil.Vorname}}" }} |
 
-## Node Arguments
+## Knoten-Argumente<div class="divider"></div>Der Zugriff auf die CognigyScript-Funktionalität unterscheidet sich zwischen verschiedenen Arten von Argumenten.
 
-<div class="divider"></div>
+## Für Text-Argumente
 
-Accessing the CognigyScript functionality differs between different types of arguments.
+Innerhalb von Textargumenten eines Cognigy Flow Node wird CognigyScript mit '{{"{{ }}"}}'-Tags geschrieben. Es wurde so ausgewertet, wie es geschrieben ist. Dies wird durch die Beschriftung 'CognigyScript' oberhalb des Eingabefeldes angezeigt.
 
-## For Text arguments
+!!! Hinweis "Ungültige Ausdrücke geben einen leeren String zurück"
+    Wenn der Ausdruck ungültig ist, wird eine leere Zeichenfolge zurückgegeben.
 
-Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{{"{{ }}"}}` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
+*Beispiel*
+'{{"{{input.text.toUpperCase()}}"}}' würde den vom Client gesendeten Text in Großbuchstaben zurückgeben.
 
-!!! note "Invalid expressions return an empty string"
-    If the expression is invalid, an empty string is returned.
+**Typerhaltung**
+CognigyScript in Node Arguments wird immer als Zeichenfolge zurückgegeben, es sei denn, Sie erzwingen, dass der Typ beibehalten wird. Sie können dies tun, indem Sie '.preserveType()' an Ihr Skript anhängen.
 
-*Example*
-`{{"{{input.text.toUpperCase()}}"}}` would return the text the client sent all in upper case.
+*Beispiel*
+'{{"{{context.anObject.preserveType()}}"}}' gibt das zurück, was auch immer 'anObject' ist, also z.B. ein JavaScript-Objekt.
 
-**Type Preservation**
-CognigyScript in Node Arguments is always returned as string, unless you force the type to be preserved. You can do this by appending `.preserveType()` to your script.
+## Für JSON-Argumente
 
-*Example*
-`{{"{{context.anObject.preserveType()}}"}}` will return whatever `anObject` is, so for example a JavaScript Object.
+Innerhalb von JSON-Argumenten kann eine spezielle Notation '{ "$cs": { "script": "x", "type": "t"}}" }}' zum Ausführen von CognigyScript verwendet werden. Sie können ein Skript und einen Rückgabetyp angeben. Die spezielle Notation ermöglicht es Ihnen, einen Typ zu definieren. Anschließend wird versucht, den Wert in diesen Typ zu konvertieren, z. B. String "6" in eine Zahl oder ein Object in einen String.
 
-## For JSON arguments
-
-Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"}}" }}` can to be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, for example, String "6" to a number, or an Object to a String.
-
-**Example with Typing**
-```JavaScript
+**Beispiel mit Typisierung**
+'''JavaScript
 {
     "customer_orders": {
         "$cs": {
             "script": "context.orders",
-            "type": "object"
+            "type": "Objekt"
         }
     }
 }
-```
+'''
 
-**Example with Inline CognigyScript**
-```JavaScript
+**Beispiel mit Inline CognigyScript**
+'''JavaScript
 {
     "customer_orders": "{{ "{{context.orders}}" }}"
 }
-```
-This would try to retrieve the orders Object from the Context and assign it to customer_orders. If `context.orders` doesn't exist, the "customer_orders" key is simply skipped.
+'''
+Dadurch wird versucht, das orders-Objekt aus dem Kontext abzurufen und customer_orders zuzuweisen. Wenn 'context.orders' nicht existiert, wird die Taste "customer_orders" einfach übersprungen.
 
-## IF Conditions and SWITCH Operands
+## IF-Bedingungen und SWITCH-Operanden
 
-Within conditions, CognigyScript is also written without `{{"{{ }}"}}` tags. It is evaluated just like standard JavaScript would. This is indicated by the label `CognigyScript (direct)` above the input field.
+Innerhalb von Bedingungen wird CognigyScript auch ohne '{{"{{ }}"}}'-Tags geschrieben. Es wird genau wie Standard-JavaScript ausgewertet. Dies wird durch die Beschriftung 'CognigyScript (direct)' oberhalb des Eingabefeldes angezeigt.
 
-!!! note "Example"
-    The condition `context.orders === 3`  would evaluate to `true` if the `orders` variable stored in the `context` is equal to `3`.
+!!! Hinweis "Beispiel"
+    Die Bedingung 'context.orders === 3' würde als 'true' ausgewertet werden, wenn die im 'context' gespeicherte Variable 'orders' gleich '3' ist.
 
-## Code Nodes
+## Code-Knoten
 
+Innerhalb von Codeknoten müssen Sie die {{ " {{ }}" }}-Tags nicht verwenden. Die Variablen 'input', 'context', 'profile' und 'actions' werden standardmäßig angezeigt, ebenso wie '_' und 'moment'.
 
-Within Code Nodes you don't need to use the {{ " {{ }}" }} tags. The `input`, `context`, `profile` and `actions` variables are exposed by default, as are `_` and `moment`.
-
-**Example**
-```JavaScript
+**Beispiel**
+'''JavaScript
 const ordercount = context.orders;
 switch(ordercount) {
-    case 0:
-        input.ordertext = "You ordered no items";
-        actions.output('Hello', {'action': 1}); // outputs the text 'hello' with data {'action': 1}
-        break;
-    case 1:
-        input.ordertext = "You ordered one item";
-        break;
-    default:
-        input.ordertext = "You ordered many items";
+    Sturz 0:
+        input.ordertext = "Sie haben keine Artikel bestellt";
+        actions.output('Hallo', {'Aktion': 1}); gibt den Text 'hello' mit data {'action': 1} aus
+        brechen;
+    Herbst 1:
+        input.ordertext = "Sie haben einen Artikel bestellt";
+        brechen;
+    Vorgabe:
+        input.ordertext = "Sie haben viele Artikel bestellt";
 }
-```
+'''
 
-## Cognigy Objects Life Span
-
-<div class="divider"></div>
-
-The picture below shows the life span of the different Cognigy objects. The Input object (input) is created anew on each new user input (each new Flow Execution), the Context object (context) is stored for the duration of the entire conversation, and the Profile object (profile) is stored forever. This means that information about the user that you want to persist (e.g. the name of the user), should be stored in the Profile object.
+## Lebensdauer von Cognigy-Objekten<div class="divider"></div>Das Bild unten zeigt die Lebensdauer der verschiedenen Cognigy-Objekte. Das Input-Objekt (input) wird bei jeder neuen Benutzereingabe neu erstellt (jede neue Flow-Ausführung), das Context-Objekt (context) wird für die Dauer der gesamten Konversation gespeichert, und das Profile-Objekt (profile) wird für immer gespeichert. Dies bedeutet, dass Informationen über den Benutzer, den Sie beibehalten möchten (z. B. der Name des Benutzers), im Profile-Objekt gespeichert werden sollten.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/tools/images/a570379-data.PNG" width="100%" />
-  <figcaption>Life Span of Cognigy Objects</figcaption>
+  <figcaption>Lebensdauer von Cognigy-Objekten</figcaption>
 </figure>
 

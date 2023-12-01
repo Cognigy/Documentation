@@ -1,534 +1,533 @@
 ---
-title: "Automatic Mode"
-slug: "automatic-mode"
-description: "Automatic mode in Live Agent includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents."
-hidden: false
+Titel: "Automatik-Modus"
+Slug: "Automatik-Modus"
+description: "Der automatische Modus in Live Agent umfasst zwei Hauptfunktionen: Automatische Zuweisung und Neuzuweisung von Konversationen zulassen, die Agenten Konversationen zuweisen."
+ausgeblendet: false
 ---
 
-# Automatic Mode
+# Automatik-Modus
 
-_Automatic mode_ includes two key features: Auto Assignment and Allow conversations to be reassigned, that allocate conversations to agents. Automatic Assignment distributes conversations among online agents, while Automatic Reassignment reassigns conversations in real time based on agent availability changes. These features optimize conversation handling and improve customer support efficiency.
+_Automatic mode_ enthält zwei wichtige Funktionen: Automatische Zuweisung und Neuzuweisung von Konversationen zulassen, die Konversationen Agenten zuweisen. Die automatische Zuweisung verteilt Konversationen auf Online-Agenten, während die automatische Neuzuweisung Konversationen in Echtzeit basierend auf Änderungen der Agentenverfügbarkeit neu zuweist. Diese Funktionen optimieren die Gesprächsführung und verbessern die Effizienz des Kundensupports.
 
-In automatic mode, conversations can be automatically assigned or reassigned to users with specific Live Agent roles within a specific inbox: `Agent`, `Supervisor`, or `Administrator`.
+Im automatischen Modus können Konversationen automatisch Benutzern mit bestimmten Live Agent-Rollen innerhalb eines bestimmten Posteingangs zugewiesen oder neu zugewiesen werden: "Agent", "Supervisor" oder "Administrator".
 
-There are different scenarios for distributing conversations to human agents based on their online status and workload:
+Es gibt verschiedene Szenarien für die Verteilung von Konversationen an menschliche Agenten, basierend auf ihrem Onlinestatus und ihrer Arbeitsbelastung:
 
-- **Online Agents**. When a conversation is created in the Inbox, and there are agents online with access to it, the system distributes the conversations evenly among them.
-  Unassigned conversations are automatically assigned to agents when the [limit threshold](../../settings/account-settings.md#conversation-limit-per-agent) is lower than the maximum value, and they take precedence over newly incoming conversations.
-- **Offline Agents**. When a conversation is created in the Inbox, and there are no agents online with access to it, the system will remain all conversations unassigned.
+- **Online-Agenten**. Wenn eine Konversation im Posteingang erstellt wird und Agenten online sind, die Zugriff darauf haben, verteilt das System die Konversationen gleichmäßig auf sie.
+  Nicht zugewiesene Konversationen werden automatisch Agenten zugewiesen, wenn die Option [Schwellenwert begrenzen](.. /.. /settings/account-settings.md#conversation-limit-per-agent) ist niedriger als der Maximalwert und hat Vorrang vor neu eingehenden Konversationen.
+- **Offline-Agenten**. Wenn eine Konversation im Posteingang erstellt wird und keine Agenten online sind, die darauf zugreifen können, behält das System alle Konversationen nicht zugewiesen.
 
-## Automatic Assignment
+## Automatische Zuweisung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.47-blue.svg)](../../../release-notes/4.47.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.47-blue.svg)] (.. /.. /.. /release-notes/4.47.md)
 
-Live Agent provides an auto-assignment system for conversations based on _round-robin_ logic by default. Using this logic, the system automatically distributes incoming conversations in a sequential manner among your human agents.
+Live Agent bietet standardmäßig ein automatisches Zuweisungssystem für Konversationen, das auf _round-robin_Logik basiert. Mit dieser Logik verteilt das System eingehende Konversationen automatisch sequentiell auf Ihre menschlichen Agenten.
 
-When set up, the action lists users and assigns conversations one by one. For example, if your Customer Support team consists of three users, the first conversation goes to Alex, the second to David, and the third to Sara. When the fourth conversation arrives, the cycle starts again, and it will be assigned to Alex.
+Nach der Einrichtung listet die Aktion Benutzer auf und weist Konversationen nacheinander zu. Wenn Ihr Kundensupport-Team beispielsweise aus drei Benutzern besteht, geht die erste Konversation an Alex, die zweite an David und die dritte an Sara. Wenn das vierte Gespräch eintrifft, beginnt der Zyklus von vorne, und es wird Alex zugewiesen.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/round-robin.png" width="50%" />
-    <figcaption>Round-robin approach</figcaption>
+    <figcaption>Round-Robin-Ansatz</figcaption>
 </figure>
 
-You can configure the auto-assignment system by using the **Auto Assignment** setting. This setting is activated by default for all Inboxes. You can change this behavior for a specific Inbox.
+Sie können das System für die automatische Zuweisung konfigurieren, indem Sie die Einstellung **Automatische Zuweisung** verwenden. Diese Einstellung ist standardmäßig für alle Posteingänge aktiviert. Sie können dieses Verhalten für einen bestimmten Posteingang ändern.
 
-To configure auto assignment in your Inbox, follow these steps:
+Gehen Sie folgendermaßen vor, um die automatische Zuweisung in Ihrem Posteingang zu konfigurieren:
 
-1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
-3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
-4. From the **Allow auto assignment** list, select one of the following options:
-    * Enable — allows the automatic assignment of agents to conversations. The setting is activated by default.
-    * Disable — allows the manual assignment of agents to conversations.
+1. Gehen Sie zu **Einstellungen > Posteingänge**.
+2. Wählen Sie einen Posteingang aus der Liste aus und klicken Sie auf ! [Ausrüstung] (.. /.. /assets/icons/gear.svg).
+3. Wechseln Sie auf der Registerkarte **Mitarbeiter** zum Abschnitt **Konversationszuweisung**.
+4. Wählen Sie in der Liste **Automatische Zuweisung zulassen** eine der folgenden Optionen aus:
+    * Aktivieren — ermöglicht die automatische Zuweisung von Agenten zu Konversationen. Die Einstellung ist standardmäßig aktiviert.
+    * Deaktivieren — ermöglicht die manuelle Zuweisung von Agenten zu Konversationen.
 
-The changes will be applied.
+Die Änderungen werden übernommen.
 
-### Additional Automatic Assignment Parameters
+### Zusätzliche automatische Zuweisungsparameter
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.60-blue.svg)] (.. /.. /.. /release-notes/4.60.md)
 
-By default, [Automatic Assignment](#automatic-assignment) does not take into account additional parameters,
-such as the number of conversations being handled by each agent, agent skills, or conversation priority.
-In this case,
-new conversations may be assigned to any available agent without considering their current workload, skills, or language.
+Standardmäßig berücksichtigt [Automatische Zuweisung](#automatic-Zuweisung) keine zusätzlichen Parameter.
+z. B. die Anzahl der Konversationen, die von jedem Agenten bearbeitet werden, die Agentenfähigkeiten oder die Konversationspriorität.
+In diesem Fall
+Neue Konversationen können jedem verfügbaren Agenten zugewiesen werden, ohne seine aktuelle Arbeitsbelastung, seine Fähigkeiten oder seine Sprache zu berücksichtigen.
 
-You can control this behavior by using the following settings:
+Sie können dieses Verhalten steuern, indem Sie die folgenden Einstellungen verwenden:
 
-| Setting                         | Description                                                                                                                                                                                                                                                                                                                                                                                                   | Example                                                                                                                                                                                                                                                                                                                         |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Consider conversation count     | When this setting is enabled, Live Agent takes into account the number of conversations that each agent is already handling before assigning new conversations to them. Using this setting, the system automatically distributes incoming conversations in a ballanced manner among your human agents. It prevents your agents from becoming overwhelmed and ensures your customers receive prompt responses. | If Alex is currently handling three conversations, and Sara is handling one conversation, the system will assign new incoming conversations to Sara, as she has a lower workload. More examples of how this setting works can be found in [Scenario 5](#scenario-5).                                                            |
-| Consider conversation skills    | When this setting is enabled, Live Agent considers an agent's proficiency in specific skills when assigning new conversations to ensure a more balanced workload distribution among agents with the relevant expertise                                                                                                                                                                                        | If a conversation requires expertise in the Billing skill, and if Alex possesses expertise in Technical Support while Sara specializes in Billing, the system will assign new conversations requiring the Billing skill to Sara. More examples of how this setting works can be found in [Scenario 6](#scenario-6).             |                                                                                                                                                                                                                                                                      |
-| Consider conversation languages | When this setting is enabled, Live Agent takes into account the languages an agent is proficient in when assigning new conversations. This ensures that customer inquiries in different languages are directed to agents who can effectively communicate in those languages.                                                                                                                                  | If a customer inquiry is in Spanish, and Alex is not fluent in Spanish while Sara is, the system will assign that conversation to Sara. More examples of how this setting works can be found in [Scenario 7](#scenario-7).                                                                                                      |
-| Consider conversation priority  | When this setting is enabled, Live Agent prioritizes conversations based on their urgency. The priority option is primarily applicable to reassigned or queued conversations, not to new incoming ones.                                                                                                                                                                                                       | If there are both High priority and Urgent priority conversations in the Conversation Queue, the system will assign the Urgent conversation first to Alex. If Sara is online, the second High priority conversation will be assigned to her. More examples of how this setting works can be found in [Scenario 8](#scenario-8). |
+| Einstellung | Beschreibung | Beispiel                                                                                                                                                                                                                                                                                                                         |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Berücksichtigen Sie die Anzahl der Konversationen | Wenn diese Einstellung aktiviert ist, berücksichtigt Live Agent die Anzahl der Konversationen, die jeder Agent bereits bearbeitet, bevor ihm neue Konversationen zugewiesen werden. Mit dieser Einstellung verteilt das System eingehende Konversationen automatisch gleichmäßig auf Ihre menschlichen Agenten. Es verhindert, dass Ihre Agenten überfordert werden, und stellt sicher, dass Ihre Kunden schnelle Antworten erhalten. | Wenn Alex derzeit drei Konversationen bearbeitet und Sara eine Konversation bearbeitet, weist das System Sara neue eingehende Konversationen zu, da sie eine geringere Arbeitsbelastung hat. Weitere Beispiele für die Funktionsweise dieser Einstellung finden Sie in [Szenario 5](#scenario-5).                                                            |
+| Konversationsfähigkeiten berücksichtigen | Wenn diese Einstellung aktiviert ist, berücksichtigt Live Agent bei der Zuweisung neuer Konversationen die Kenntnisse eines Agenten in bestimmten Fähigkeiten, um eine ausgewogenere Verteilung der Arbeitslast zwischen Agenten mit dem entsprechenden Fachwissen zu gewährleisten | Wenn für eine Konversation Fachwissen in der Fertigkeit "Abrechnung" erforderlich ist und Alex über Fachkenntnisse im technischen Support verfügt, während Sara sich auf die Abrechnung spezialisiert hat, weist das System Sara neue Konversationen zu, für die die Fertigkeit "Abrechnung" erforderlich ist. Weitere Beispiele für die Funktionsweise dieser Einstellung finden Sie in [Szenario 6](#scenario-6).             |                                                                                                                                                                                                                                                                      |
+| Konversationssprachen in Betracht ziehen | Wenn diese Einstellung aktiviert ist, berücksichtigt Live Agent bei der Zuweisung neuer Konversationen die Sprachen, die ein Agent beherrscht. Dadurch wird sichergestellt, dass Kundenanfragen in verschiedenen Sprachen an Agenten weitergeleitet werden, die in diesen Sprachen effektiv kommunizieren können.                                                                                                                                  | Wenn eine Kundenanfrage auf Spanisch ist und Alex nicht fließend Spanisch spricht, Sara aber schon, weist das System diese Konversation Sara zu. Weitere Beispiele für die Funktionsweise dieser Einstellung finden Sie in [Szenario 7](#scenario-7).                                                                                                      |
+| Konversationspriorität berücksichtigen | Wenn diese Einstellung aktiviert ist, priorisiert Live Agent Konversationen basierend auf ihrer Dringlichkeit. Die Prioritätsoption gilt in erster Linie für neu zugewiesene oder in der Warteschlange befindliche Konversationen, nicht für neue eingehende Konversationen.                                                                                                                                                                                                       | Wenn sich in der Konversationswarteschlange sowohl Konversationen mit hoher Priorität als auch mit dringender Priorität befinden, weist das System die dringende Konversation zuerst Alex zu. Wenn Sara online ist, wird ihr die zweite Konversation mit hoher Priorität zugewiesen. Weitere Beispiele für die Funktionsweise dieser Einstellung finden Sie in [Szenario 8](#scenario-8). |
 
-When agents have an equal number of active conversations, they'll be assigned the next conversation in order using standard round-robin logic. If online agents lack the necessary skill, the conversation will be directed to the nearest available agent through the standard round-robin logic.
+Wenn Agenten die gleiche Anzahl aktiver Konversationen haben, wird ihnen die nächste Konversation in der richtigen Reihenfolge zugewiesen, wobei die Standard-Roundrobin-Logik verwendet wird. Wenn Online-Agenten nicht über die erforderlichen Fähigkeiten verfügen, wird die Konversation über die Standard-Round-Robin-Logik an den nächstgelegenen verfügbaren Agenten weitergeleitet.
 
-To consider additional automatic assignment parameters within your Inbox, follow these steps:
+Gehen Sie folgendermaßen vor, um zusätzliche automatische Zuweisungsparameter in Ihrem Posteingang zu berücksichtigen:
 
-1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
-3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
-4. Activate the following options:
-    - Consider conversation count — consider agent workload.
-    - Consider conversation skills — consider agent skills.
-    - Consider conversation languages — consider agent languages.
-    - Consider conversation priority — consider conversation urgency.
+1. Gehen Sie zu **Einstellungen > Posteingänge**.
+2. Wählen Sie einen Posteingang aus der Liste aus und klicken Sie auf ! [Ausrüstung] (.. /.. /assets/icons/gear.svg).
+3. Wechseln Sie auf der Registerkarte **Mitarbeiter** zum Abschnitt **Konversationszuweisung**.
+4. Aktivieren Sie die folgenden Optionen:
+    - Berücksichtigen Sie die Anzahl der Konversationen – berücksichtigen Sie die Arbeitsbelastung der Agenten.
+    - Berücksichtigen Sie die Konversationsfähigkeiten – berücksichtigen Sie die Fähigkeiten der Agenten.
+    - Berücksichtigen Sie Konversationssprachen – berücksichtigen Sie Agentensprachen.
+    - Berücksichtigen Sie die Konversationspriorität – berücksichtigen Sie die Dringlichkeit des Gesprächs.
 
-The changes will be applied.
+Die Änderungen werden übernommen.
 
-## Automatic Reassignment
+## Automatische Neuzuweisung
 
-Live Agent provides an auto-reassignment system for conversations. This system follows a round-robin approach, similar to [automatic assignment](#automatic-assignment).
+Live Agent bietet ein System zur automatischen Neuzuweisung von Gesprächen. Dieses System folgt einem Round-Robin-Ansatz, ähnlich wie [automatische Zuweisung](#automatic-Zuweisung).
 
-The auto-reassignment system operates in real-time, triggered by specific agent-related events. These events include:
+Das automatische Neuzuweisungssystem arbeitet in Echtzeit und wird durch bestimmte agentenbezogene Ereignisse ausgelöst. Zu diesen Veranstaltungen gehören:
 
-- When a human agent changes their availability to `Offline`, `Away`, or `Busy`.
-- When a human agent logs out.
+- Wenn ein menschlicher Agent seine Verfügbarkeit auf "Offline", "Abwesend" oder "Beschäftigt" ändert.
+- Wenn sich ein menschlicher Agent abmeldet.
 
-When one of these events are triggered, the conversations assigned to the human agent are automatically reassigned to other available human agents. If no human agents are currently online, the conversations are marked as unassigned.
+Wenn eines dieser Ereignisse ausgelöst wird, werden die Konversationen, die dem menschlichen Agenten zugewiesen sind, automatisch anderen verfügbaren menschlichen Agenten zugewiesen. Wenn derzeit keine menschlichen Agenten online sind, werden die Konversationen als nicht zugewiesen markiert.
 
-You can configure the auto-reassignment system by using the **Allow conversations to be reassigned** setting. This setting is activated by default for all Inboxes. You can change this behavior for a specific Inbox.
+Sie können das System für die automatische Neuzuweisung konfigurieren, indem Sie die Einstellung **Neuzuweisung von Unterhaltungen zulassen** verwenden. Diese Einstellung ist standardmäßig für alle Posteingänge aktiviert. Sie können dieses Verhalten für einen bestimmten Posteingang ändern.
 
-To configure auto reassignment in your Inbox, follow these steps:
+Gehen Sie folgendermaßen vor, um die automatische Neuzuweisung in Ihrem Posteingang zu konfigurieren:
 
-1. Go to **Settings > Inboxes**.
-2. Select an Inbox from the list and click ![gear](../../../assets/icons/gear.svg).
-3. On the **Collaborators** tab, go to the **Conversation Assignment** section.
-4. From the **Allow conversations to be reassigned** list, select one of the following options:
-    * Enable — allows the automatic reassignment of agents to conversations. The setting is activated by default.
-    * Disable — allows the manual reassignment of agents to conversations.
+1. Gehen Sie zu **Einstellungen > Posteingänge**.
+2. Wählen Sie einen Posteingang aus der Liste aus und klicken Sie auf ! [Ausrüstung] (.. /.. /assets/icons/gear.svg).
+3. Wechseln Sie auf der Registerkarte **Mitarbeiter** zum Abschnitt **Konversationszuweisung**.
+4. Wählen Sie in der Liste **Neuzuweisung von Unterhaltungen zulassen** eine der folgenden Optionen aus:
+    * Aktivieren: Ermöglicht die automatische Neuzuweisung von Agenten zu Konversationen. Die Einstellung ist standardmäßig aktiviert.
+    * Deaktivieren — ermöglicht die manuelle Neuzuweisung von Agenten zu Konversationen.
 
-The changes will be applied.
+Die Änderungen werden übernommen.
 
-## Automatic Assignment and Reassignment for Busy Agents
+## Automatische Zuweisung und Neuzuweisung für beschäftigte Agenten
 
-By default, human agents with `Busy` status cannot be assigned or reassigned automatically.
+Standardmäßig können menschliche Agenten mit dem Status "Beschäftigt" nicht automatisch zugewiesen oder neu zugewiesen werden.
 
-If an agent is already assigned conversations before they become busy,
-those assigned conversations will remain in the [Conversation Queue](../conversation-queue.md).
-However, new conversations will not be assigned to that agent until they are no longer in the `Busy` status.
+Wenn einem Agenten bereits Konversationen zugewiesen wurden, bevor er beschäftigt ist,
+Diese zugewiesenen Konversationen verbleiben in der [Konversationswarteschlange](.. /conversation-queue.md).
+Neue Konversationen werden diesem Agenten jedoch erst dann zugewiesen, wenn er sich nicht mehr im Status "Beschäftigt" befindet.
 
-You can modify this behavior by enabling the [Auto Assign Conversations to a Busy Agent](../../settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) option in **Account Settings**. Note that this setting is activated at the Live Agent installation level, and you cannot modify the behavior for a specific Inbox.
+Sie können dieses Verhalten ändern, indem Sie die Option [Konversationen einem beschäftigten Agenten automatisch zuweisen](.. /.. /settings/account-settings.md#auto-assign-conversations-to-a-busy-agent) in **Kontoeinstellungen**. Beachten Sie, dass diese Einstellung auf der Live Agent-Installationsebene aktiviert ist und Sie das Verhalten für einen bestimmten Posteingang nicht ändern können.
 
-When the setting is activated, busy agents will be treated as having an `Online` status and following the same assignment and reassignment rules as other available agents.
+Wenn die Einstellung aktiviert ist, werden beschäftigte Agenten so behandelt, als hätten sie den Status "Online" und befolgen die gleichen Zuweisungs- und Neuzuweisungsregeln wie andere verfügbare Agenten.
 
-## Common Scenarios
+## Häufige Szenarien
 
-The routing process depends on incoming data and the combination of settings you have configured at the Account Settings level and Inbox level.
+Der Routing-Prozess hängt von den eingehenden Daten und der Kombination von Einstellungen ab, die Sie auf der Ebene der Kontoeinstellungen und des Posteingangs konfiguriert haben.
 
-There are various common scenarios or situations relevant to the automatic mode.
+Es gibt verschiedene gängige Szenarien oder Situationen, die für den Automatikmodus relevant sind.
 
-### Default Scenario
+### Standardszenario
 
-This is the default scenario where all conversations are assigned to the first available agent.
+Dies ist das Standardszenario, in dem alle Konversationen dem ersten verfügbaren Agenten zugewiesen werden.
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Status  |
+'''txt
+| Name des Agenten | Status |
 |------------|---------|
-| Agent 1    | Online  |
-| Agent 2    | Online  |
-| Agent 3    | Online  |
-| Agent 4    | Offline |
-```
+| Agent 1 | Online |
+| Agent 2 | Online |
+| Agent 3 | Online |
+| Agent 4 | Offline |
+'''
 
-Conditions:
+Bedingungen:
 
-- No [conversation limit](../../settings/account-settings.md#conversation-limit-per-agent) per agent.
-- 4 conversations are created.
-- Activated:
-    - Automatic Conversation Assignment.
-    - Automatic Conversation Reassignment.
-- Deactivated:
-    - Auto Assign Conversations to a Busy Agent.
-    - Consider Conversation Count.
+- Kein [Konversationslimit](.. /.. /settings/account-settings.md#conversation-limit-per-agent) pro Agent.
+- Es werden 4 Konversationen erstellt.
+-Aktiviert:
+    - Automatische Zuweisung von Konversationen.
+    - Automatische Neuzuweisung von Konversationen.
+-Deaktiviert:
+    - Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
+    - Berücksichtigen Sie die Anzahl der Konversationen.
 
-Result: Agent 1 receives the first and forth conversations, Agent 2 receives the second, Agent 3 gets the third.
+Ergebnis: Agent 1 erhält das erste und vierte Gespräch, Agent 2 erhält das zweite, Agent 3 das dritte.
 
-### Scenario 1
+### Szenario 1
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Limit | Status  |
+'''txt
+| Name des Agenten | Grenzwert | Status |
 |------------|-------|---------|
-| Agent 1    | 2     | Online  |
-| Agent 2    | 2     | Busy    |
-| Agent 3    | 2     | Away    |
-| Agent 4    | 2     | Offline |
-```
+| Agent 1 | 2 | Online |
+| Agent 2 | 2 | Beschäftigt |
+| Agent 3 | 2 | Auswärts |
+| Agent 4 | 2 | Offline |
+'''
 
-Common conditions:
+Häufige Bedingungen:
 
-- The limit is 2 conversations per agent.
-- 4 conversations are created.
+- Das Limit liegt bei 2 Konversationen pro Agent.
+- Es werden 4 Konversationen erstellt.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Auto Assign Conversations to a Busy Agent is deactivated.
-- Automatic Conversation Assignment is activated.
-- Automatic Conversation Reassignment is activated.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist deaktiviert.
+- Die automatische Konversationszuweisung ist aktiviert.
+- Die automatische Neuzuweisung von Konversationen ist aktiviert.
 
-Result: The first two will be assigned to Agent 1, and the next two remain unassigned.
+Ergebnis: Die ersten beiden werden Agent 1 zugewiesen, und die nächsten beiden bleiben nicht zugewiesen.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Automatic Conversation Assignment is activated.
-- Automatic Conversation Reassignment is activated.
-- Auto Assign Conversations to a Busy Agent is activated.
+- Die automatische Konversationszuweisung ist aktiviert.
+- Die automatische Neuzuweisung von Konversationen ist aktiviert.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist aktiviert.
 
-Result: Agent 1 receives the first conversation, Agent 2 receives the second, Agent 1 gets the third, and Agent 2 gets the fourth.
+Ergebnis: Agent 1 erhält die erste Konversation, Agent 2 erhält die zweite, Agent 1 erhält die dritte und Agent 2 erhält die vierte.
 
-**Example 3**
+**Beispiel 3**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Automatic Conversation Assignment is activated.
-- Automatic Conversation Reassignment is deactivated.
-- Auto Assign Conversations to a Busy Agent is deactivated.
-- Agent 1 goes offline.
+- Die automatische Konversationszuweisung ist aktiviert.
+- Die automatische Neuzuweisung von Konversationen ist deaktiviert.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist deaktiviert.
+- Agent 1 geht offline.
 
-Result: The first two conversations will remain assigned to Agent 1, and the next two remain unassigned.
+Ergebnis: Die ersten beiden Konversationen bleiben Agent 1 zugewiesen, und die nächsten beiden bleiben nicht zugewiesen.
 
-**Example 4**
+**Beispiel 4**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Automatic Conversation Assignment is deactivated.
-- Automatic Conversation Reassignment is activated.
-- Auto Assign Conversations to a Busy Agent is activated.
+- Die automatische Konversationszuweisung ist deaktiviert.
+- Die automatische Neuzuweisung von Konversationen ist aktiviert.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist aktiviert.
 
-Result: All conversations remain unassigned.
+Ergebnis: Alle Konversationen bleiben nicht zugewiesen.
 
-### Scenario 2
+### Szenario 2
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Status |
+'''txt
+| Name des Agenten | Status |
 |------------|--------|
-| Agent 1    | Online |
-| Agent 2    | Online |
-| Agent 3    | Online |
-| Agent 4    | Online |
-```
+| Agent 1 | Online |
+| Agent 2 | Online |
+| Agent 3 | Online |
+| Agent 4 | Online |
+'''
 
-Common conditions:
+Häufige Bedingungen:
 
-- Activated:
-    - Automatic Conversation Reassignment.
-    - Automatic Conversation Assignment.
-- Deactivated:
-    - Consider Conversation Count.
-- Auto Assign Conversations to a Busy Agent is activated or deactivated.
+-Aktiviert:
+    - Automatische Neuzuweisung von Konversationen.
+    - Automatische Zuweisung von Konversationen.
+-Deaktiviert:
+    - Berücksichtigen Sie die Anzahl der Konversationen.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist aktiviert oder deaktiviert.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- The limit is 2 conversations per agent.
-- 4 conversations are created.
+- Das Limit liegt bei 2 Konversationen pro Agent.
+- Es werden 4 Konversationen erstellt.
 
-Result: Each agent receives one conversation.
+Ergebnis: Jeder Agent erhält eine Konversation.
 
-**Example 2**
+**Beispiel 2**
 
-- The limit is 2 conversations per agent.
-- 8 conversations are created.
-- Agent 1 has changed the status to `Away` after the conversation assignment.
+- Das Limit liegt bei 2 Konversationen pro Agent.
+- Es werden 8 Konversationen erstellt.
+- Agent 1 hat den Status nach der Konversationszuweisung in "Abwesend" geändert.
 
-Result: Each agent has two ongoing conversations. However, when Agent 1 goes offline or is marked as away, their two conversations will remain unassigned.
+Ergebnis: Jeder Agent führt zwei laufende Gespräche. Wenn Agent 1 jedoch offline geht oder als abwesend markiert wird, bleiben seine beiden Konversationen nicht zugewiesen.
 
-### Scenario 3
+### Szenario 3
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Limit | Status  |
+'''txt
+| Name des Agenten | Grenzwert | Status |
 |------------|-------|---------|
-| Agent 1    | 2     | Offline |
-| Agent 2    | 2     | Away    |
-| Agent 3    | 2     | Offline |
-| Agent 4    | 2     | Busy    |
-```
+| Agent 1 | 2 | Offline |
+| Agent 2 | 2 | Auswärts |
+| Agent 3 | 2 | Offline |
+| Agent 4 | 2 | Beschäftigt |
+'''
 
-Common conditions:
+Häufige Bedingungen:
 
-- The limit is 2 conversations per agent.
-- 4 conversations are created.
-- Activated:
-    - Automatic Conversation Reassignment.
-    - Automatic Conversation Assignment.
-- Deactivated:
-    - Consider Conversation Count.
+- Das Limit liegt bei 2 Konversationen pro Agent.
+- Es werden 4 Konversationen erstellt.
+-Aktiviert:
+    - Automatische Neuzuweisung von Konversationen.
+    - Automatische Zuweisung von Konversationen.
+-Deaktiviert:
+    - Berücksichtigen Sie die Anzahl der Konversationen.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Auto Assign Conversations to a Busy Agent is deactivated.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist deaktiviert.
 
-Result: all conversations will be unassigned.
+Ergebnis: Die Zuweisung aller Konversationen wird aufgehoben.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Auto Assign Conversations to a Busy Agent is deactivated.
-- Agent 1 has changed the status to `Online`.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist deaktiviert.
+- Agent 1 hat den Status in "Online" geändert.
 
-Result: When Agent 1 returns online, two conversations will be assigned to an agent, and two conversations will remain unassigned.
+Ergebnis: Wenn Agent 1 wieder online ist, werden einem Agenten zwei Konversationen zugewiesen, und zwei Konversationen bleiben nicht zugewiesen.
 
-**Example 3**
+**Beispiel 3**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Auto Assign Conversations to a Busy Agent is activated.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist aktiviert.
 
-Result: The first two conversations will be assigned to Agent 4, and the next two remain unassigned.
+Ergebnis: Die ersten beiden Konversationen werden Agent 4 zugewiesen, und die nächsten beiden bleiben unzugewiesen.
 
-### Scenario 4
+### Szenario 4
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Limit | Status  |
+'''txt
+| Name des Agenten | Grenzwert | Status |
 |------------|-------|---------|
-| Agent 1    | 2     | Offline |
-| Agent 2    | 2     | Offline |
-| Agent 3    | 2     | Offline |
-| Agent 4    | 2     | Offline |
-```
+| Agent 1 | 2 | Offline |
+| Agent 2 | 2 | Offline |
+| Agent 3 | 2 | Offline |
+| Agent 4 | 2 | Offline |
+'''
 
-Common conditions:
+Häufige Bedingungen:
 
-- The limit is 2 conversations per agent.
-- Activated:
-    - Automatic Conversation Reassignment.
-    - Automatic Conversation Assignment.
-- Deactivated:
-    - Consider Conversation Count.
+- Das Limit liegt bei 2 Konversationen pro Agent.
+-Aktiviert:
+    - Automatische Neuzuweisung von Konversationen.
+    - Automatische Zuweisung von Konversationen.
+-Deaktiviert:
+    - Berücksichtigen Sie die Anzahl der Konversationen.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 5 conversations are created.
-- Auto Assign Conversations to a Busy Agent is activated or deactivated.
+- Es werden 5 Konversationen erstellt.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist aktiviert oder deaktiviert.
 
-Result: All conversations are unassigned.
+Ergebnis: Alle Konversationen sind nicht zugewiesen.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Auto Assign Conversations to a Busy Agent is deactivated.
-- Agent 1 has changed the status to `Busy`.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist deaktiviert.
+- Agent 1 hat den Status in "Beschäftigt" geändert.
 
-Result: All conversations are unassigned.
+Ergebnis: Alle Konversationen sind nicht zugewiesen.
 
-**Example 3**
+**Beispiel 3**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- Auto Assign Conversations to a Busy Agent is activated.
-- Agent 1 has changed the status to `Busy`.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist aktiviert.
+- Agent 1 hat den Status in "Beschäftigt" geändert.
 
-Result: When Agent 1 has changed the status from `Offline` to `Busy`, two conversations are assigned to this human agent.
+Ergebnis: Wenn Agent 1 den Status von "Offline" in "Beschäftigt" geändert hat, werden diesem menschlichen Agenten zwei Konversationen zugewiesen.
 
-### Scenario 5
+### Szenario 5
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Limit | Status  | Conversations |
+'''txt
+| Name des Agenten | Grenzwert | Status | Unterhaltungen |
 |------------|-------|---------|---------------|
-| Agent 1    | 5     | Online  | 2             |
-| Agent 2    | 5     | Online  | 3             |
-| Agent 3    | 5     | Online  | 1             |
-| Agent 4    | 5     | Online  | 4             |
-```
+| Agent 1 | Nr. 5 | Online | 2 |
+| Agent 2 | Nr. 5 | Online | 3 |
+| Agent 3 | Nr. 5 | Online | Nr. 1 |
+| Agent 4 | Nr. 5 | Online | 4 |
+'''
 
-Common conditions:
+Häufige Bedingungen:
 
-- The limit is 5 conversations per agent.
-- Each agent has assigned conversations.
-- Activated:
-    - Automatic Conversation Assignment.
-    - Automatic Conversation Reassignment.
-    - Consider Conversation Count.
+- Das Limit liegt bei 5 Konversationen pro Agent.
+- Jedem Agenten sind Konversationen zugewiesen.
+-Aktiviert:
+    - Automatische Zuweisung von Konversationen.
+    - Automatische Neuzuweisung von Konversationen.
+    - Berücksichtigen Sie die Anzahl der Konversationen.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 3 new incoming conversations.
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 3 neue eingehende Konversationen.
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first conversation is assigned to Agent 3, while the second and third conversations are randomly assigned to either Agent 1 or Agent 3.
+Ergebnis: Die erste Konversation wird Agent 3 zugewiesen, während die zweite und dritte Konversation nach dem Zufallsprinzip entweder Agent 1 oder Agent 3 zugewiesen werden.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 4 new incoming conversations.
-- Auto Assign Conversations to a Busy Agent is deactivated.
-- Agent 3 has changed the status to `Offline`, `Away`, or `Busy`.
+- 4 neue eingehende Konversationen.
+- Die automatische Zuweisung von Konversationen zu einem beschäftigten Agenten ist deaktiviert.
+- Agent 3 hat den Status in "Offline", "Abwesend" oder "Beschäftigt" geändert.
 
-Result: The first conversation will be assigned to Agent 1. The second conversation will be assigned to either Agent 1 or Agent 2 . The third conversation will be assigned to the Agent who is left with three conversations. The fourth conversation will be randomly assigned to one of the three agents.
+Ergebnis: Die erste Konversation wird Agent 1 zugewiesen. Die zweite Konversation wird entweder Agent 1 oder Agent 2 zugewiesen. Die dritte Konversation wird dem Agenten zugewiesen, der nur noch drei Konversationen hat. Das vierte Gespräch wird nach dem Zufallsprinzip einem der drei Agenten zugewiesen.
 
+### Szenario 6
 
-### Scenario 6
+Quelltabelle:
 
-Source table:
-
-```txt
-| Agent name | Limit | Status | Conversations | Skills            | 
+'''txt
+| Name des Agenten | Grenzwert | Status | Unterhaltungen | Fertigkeiten | 
 |------------|-------|--------|---------------|-------------------|
-| Agent 1    | 5     | Online | 1             | Technical support |
-| Agent 2    | 5     | Online | 1             | Billing           |
-| Agent 3    | 5     | Online | 1             | Customer Support  |
-| Agent 4    | 5     | Online | 1             | Technical support |
-```
+| Agent 1 | Nr. 5 | Online | Nr. 1 | Technischer Support |
+| Agent 2 | Nr. 5 | Online | Nr. 1 | Abrechnung |
+| Agent 3 | Nr. 5 | Online | Nr. 1 | Kundenbetreuung |
+| Agent 4 | Nr. 5 | Online | Nr. 1 | Technischer Support |
+'''
 
-Common conditions:
+Häufige Bedingungen:
 
-- The limit is 5 conversations per agent. 
-- Each agent is assigned per conversation
-- Activated:
-  - Automatic Conversation Assignment.
-  - Automatic Conversation Reassignment.
-  - Consider Conversation Count.
-  - Consider Conversation Skills.
+- Das Limit liegt bei 5 Konversationen pro Agent. 
+- Jeder Agent wird pro Konversation zugewiesen
+-Aktiviert:
+  - Automatische Zuweisung von Konversationen.
+  - Automatische Neuzuweisung von Konversationen.
+  - Berücksichtigen Sie die Anzahl der Konversationen.
+  - Berücksichtigen Sie die Konversationsfähigkeiten.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 1 new incoming conversation with the `Technical support` skill 
-- 1 new incoming conversation with the `Technical support`, `Billing` skills
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 1 neue eingehende Konversation mit dem Skill "Technischer Support" 
+- 1 neue eingehende Konversation mit den Fähigkeiten 'Technischer Support', 'Abrechnung'
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first conversation is assigned to either Agent 1 or Agent 4, both of whom possess the required skills. The second conversation is assigned to either Agent 2 or the agent left with one conversation from the previous assignment.
+Ergebnis: Das erste Gespräch wird entweder Agent 1 oder Agent 4 zugewiesen, die beide über die erforderlichen Fähigkeiten verfügen. Die zweite Konversation wird entweder Agent 2 oder dem Agenten zugewiesen, dem eine Konversation aus der vorherigen Zuweisung überlassen wurde.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 1 new incoming conversation with the `Technical support` skill
-- 1 new incoming conversation with the `Technical support`, `Billing` skills
-- Agent 2 is going to offline
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 1 neue eingehende Konversation mit dem Skill "Technischer Support"
+- 1 neue eingehende Konversation mit den Fähigkeiten 'Technischer Support', 'Abrechnung'
+- Agent 2 geht offline
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first incoming conversation will be assigned to Agent 1,
-the second to Agent 4.
+Ergebnis: Die erste eingehende Konversation wird Agent 1 zugewiesen.
+die zweite an Agent 4.
 
-**Example 3**
+**Beispiel 3**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 1 new incoming conversation with the `Technical support` skill
-- 1 new incoming conversation with the `Technical support`, `Billing` skills
-- Agent 1 and Agent 2 are going to offline
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 1 neue eingehende Konversation mit dem Skill "Technischer Support"
+- 1 neue eingehende Konversation mit den Fähigkeiten 'Technischer Support', 'Abrechnung'
+- Agent 1 und Agent 2 gehen offline
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first and the second incoming conversations will be assigned to Agent 4.
+Ergebnis: Die erste und die zweite eingehende Konversation werden Agent 4 zugewiesen.
 
-### Scenario 7
+### Szenario 7
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Limit | Status | Conversations | Skills            | Languages        |
+'''txt
+| Name des Agenten | Grenzwert | Status | Unterhaltungen | Fertigkeiten | Sprachen |
 |------------|-------|--------|---------------|-------------------|------------------|
-| Agent 1    | 5     | Online | 1             | Technical support | English          |
-| Agent 2    | 5     | Online | 1             | Billing           | Spanish          |
-| Agent 3    | 5     | Online | 1             | Customer Support  | English, Spanish |
-| Agent 4    | 5     | Online | 1             | Technical support | Greek            |
-```
-Common conditions:
+| Agent 1 | Nr. 5 | Online | Nr. 1 | Technischer Support | Englisch |
+| Agent 2 | Nr. 5 | Online | Nr. 1 | Abrechnung | Spanisch |
+| Agent 3 | Nr. 5 | Online | Nr. 1 | Kundenbetreuung | Englisch, Spanisch |
+| Agent 4 | Nr. 5 | Online | Nr. 1 | Technischer Support | Griechisch |
+'''
+Häufige Bedingungen:
 
-- The limit is 5 conversations per agent.
-- Each agent has assigned per conversation.
-- Activated:
-    - Automatic Conversation Assignment.
-    - Automatic Conversation Reassignment.
-    - Consider Conversation Count.
-    - Consider Conversation Skills.
-    - Consider Conversation Languages.
+- Das Limit liegt bei 5 Konversationen pro Agent.
+- Jeder Agent hat pro Konversation zugewiesen.
+-Aktiviert:
+    - Automatische Zuweisung von Konversationen.
+    - Automatische Neuzuweisung von Konversationen.
+    - Berücksichtigen Sie die Anzahl der Konversationen.
+    - Berücksichtigen Sie die Konversationsfähigkeiten.
+    - Berücksichtigen Sie Konversationssprachen.
   
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 1 new incoming conversation with the `Technical support`, `English` skills
-- 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 1 neues eingehendes Gespräch mit den Kenntnissen 'Technischer Support', 'Englisch'
+- 1 neues eingehendes Gespräch mit den Fähigkeiten 'Technischer Support', 'Abrechnung', 'Spanisch'
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first incoming conversation will be assigned to Agent 1, the second coversation will be assigned randomly except Agent 1.
+Ergebnis: Die erste eingehende Konversation wird Agent 1 zugewiesen, die zweite Deckung wird nach dem Zufallsprinzip zugewiesen, mit Ausnahme von Agent 1.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 3 new incoming conversation with the `Technical support`, `English` skills
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 3 neue eingehende Konversation mit den Kenntnissen 'Technischer Support', 'Englisch'
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: 3 incoming conversation will be assigned to Agent 1.
+Ergebnis: 3 eingehende Konversationen werden Agent 1 zugewiesen.
 
-### Scenario 8
+### Szenario 8
 
-Source table:
+Quelltabelle:
 
-```txt
-| Agent name | Limit | Status | Conversations | Skills            | Languages        | 
+'''txt
+| Name des Agenten | Grenzwert | Status | Unterhaltungen | Fertigkeiten | Sprachen | 
 |------------|-------|--------|---------------|-------------------|------------------|
-| Agent 1    | 5     | Online | 1             | Technical support | English          |
-| Agent 2    | 5     | Online | 1             | Billing           | Spanish          |
-| Agent 3    | 5     | Online | 1             | Customer Support  | English, Spanish |
-| Agent 4    | 5     | Online | 1             | Technical support | Greek            |
-```
-Common conditions:
+| Agent 1 | Nr. 5 | Online | Nr. 1 | Technischer Support | Englisch |
+| Agent 2 | Nr. 5 | Online | Nr. 1 | Abrechnung | Spanisch |
+| Agent 3 | Nr. 5 | Online | Nr. 1 | Kundenbetreuung | Englisch, Spanisch |
+| Agent 4 | Nr. 5 | Online | Nr. 1 | Technischer Support | Griechisch |
+'''
+Häufige Bedingungen:
 
-- The limit is 5 conversations per agent.
-- Each agent is assigned per conversation.
-- Activated:
-    - Automatic Conversation Assignment.
-    - Automatic Conversation Reassignment.
-    - Consider Conversation Count.
-    - Consider Conversation Skills.
-    - Consider Conversation Languages.
-    - Consider Conversation Priority.
+- Das Limit liegt bei 5 Konversationen pro Agent.
+- Jeder Agent wird pro Konversation zugewiesen.
+-Aktiviert:
+    - Automatische Zuweisung von Konversationen.
+    - Automatische Neuzuweisung von Konversationen.
+    - Berücksichtigen Sie die Anzahl der Konversationen.
+    - Berücksichtigen Sie die Konversationsfähigkeiten.
+    - Berücksichtigen Sie Konversationssprachen.
+    - Berücksichtigen Sie die Priorität der Konversation.
 
-**Example 1**
+**Beispiel 1**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 1 new incoming conversation with the `Technical support`, `English` skills, and **Law** priority
-- 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills, and **Urgent** priority
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 1 neue eingehende Konversation mit den Prioritäten "Technischer Support", "Englisch" und **Recht**
+- 1 neue eingehende Konversation mit den Fertigkeiten "Technischer Support", "Abrechnung", "Spanisch" und **Dringend**
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first incoming conversation will be assigned to Agent 1, while the second one will be randomly assigned to any available agent, except Agent 1.
+Ergebnis: Die erste eingehende Konversation wird Agent 1 zugewiesen, während die zweite Konversation nach dem Zufallsprinzip jedem verfügbaren Agenten zugewiesen wird, mit Ausnahme von Agent 1.
 
-**Example 2**
+**Beispiel 2**
 
-Additional conditions:
+Zusätzliche Bedingungen:
 
-- 1 new incoming conversation with the **Law** priority.
-- 1 new incoming conversation with the `Technical support`, `Billing`, `Spanish` skills, and **Urgent** priority
-- Deactivated: Auto Assign Conversations to a Busy Agent.
+- 1 neue eingehende Konversation mit der Priorität **Gesetz**.
+- 1 neue eingehende Konversation mit den Fertigkeiten "Technischer Support", "Abrechnung", "Spanisch" und **Dringend**
+- Deaktiviert: Automatisches Zuweisen von Konversationen zu einem beschäftigten Agenten.
 
-Result: The first conversation will be assigned randomly,
-and the second one will also be assigned randomly between the remaining agents with skill and language matches.
+Ergebnis: Das erste Gespräch wird nach dem Zufallsprinzip vergeben,
+Und der zweite wird ebenfalls zufällig zwischen den verbleibenden Agenten mit Skill- und Sprachübereinstimmungen zugewiesen.
 
-## More Information
+## Mehr Informationen
 
-- [Manual Conversation Mode](manual-mode.md)
-- [Conversation Routing](automatic-mode.md)
-- [Inboxes](../../settings/inboxes.md)
-- [Account Settings](../../settings/account-settings.md)
+- [Manueller Konversationsmodus](manual-mode.md)
+- [Konversations-Routing](automatic-mode.md)
+- [Posteingänge](.. /.. /settings/inboxes.md)
+- [Kontoeinstellungen](.. /.. /settings/account-settings.md)

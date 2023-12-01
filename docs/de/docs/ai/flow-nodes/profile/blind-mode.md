@@ -1,38 +1,33 @@
 ---
-title: "Blind Mode"
-slug: "blind-mode"
-hidden: false
+Titel: "Blind-Modus"
+Slug: "Blind-Modus"
+ausgeblendet: false
 ---
-# Blind Mode
+# Blind-Modus
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/blind-mode.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Die Maskierung von Daten ist wichtig, um die Privatsphäre der Benutzer und ihre sensiblen Informationen zu schützen. In Cognigy.AI werden Benutzereingaben und -antworten protokolliert und für das Training analysiert. Diese Protokolle können jedoch personenbezogene Daten wie Namen, Adressen oder andere vertrauliche Daten enthalten.
 
-Masking data is important for protecting the privacy of users and their sensitive information. In Cognigy.AI, user inputs and responses are logged and analyzed for training. However, these logs can contain personally identifiable information, such as names, addresses, or other sensitive data.
+Der Blind Mode Node bietet Optionen zum vollständigen Maskieren von Daten innerhalb der Protokollierung, Analysen, Intent Trainer-Aufzeichnungen oder Konversationen. Mit diesem Knoten können Sie sicherstellen, dass Benutzerinformationen sicher und privat bleiben.
 
-The Blind Mode Node provides options for masking data within the logging, analytics, Intent Trainer records, or conversations entirely. Using this Node, you can ensure that user information remains secure and private.
+## Einstellungen
 
-## Settings
-
-| Parameter                      | Type   | Description                                                                                                                                                                                                                                                                                             |
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                             |
 |--------------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mask Logging                   | Toggle | Masks user inputs in the [Logs](../../resources/test/logs.md).                                                                                                                                                                                                                                          |
-| Mask Analytics                 | Toggle | Masks user inputs in the [Analytics](../../tools/analytics/analytics.md) data, including Contact Profile conversations), and hides them from the message preview in the Insights [Message](../../../insights/message-explorer.md) and [Transcript](../../../insights/transcript-explorer.md) Explorers. |
-| Disable Intent Trainer Records | Toggle | Does not record Intents from the conversation.                                                                                                                                                                                                                                                          |
-| Disable Conversations          | Toggle | Does not collect user inputs for [Analytics](../../tools/analytics/analytics.md) data.                                                                                                                                                                                                                  |
+| Masken-Protokollierung | Umschalten | Maskiert Benutzereingaben in den [Logs](.. /.. /resources/test/logs.md).                                                                                                                                                                                                                                          |
+| Masken-Analytik | Umschalten | Maskiert Benutzereingaben in der [Analytics](.. /.. /tools/analytics/analytics.md) (einschließlich Kontaktprofil-Konversationen) und blendet sie in der Nachrichtenvorschau in der Insights [Nachricht](.. /.. /.. /insights/message-explorer.md) und [Transcript](.. /.. /.. /insights/transcript-explorer.md) Entdecker. |
+| Intent-Trainer-Datensätze deaktivieren | Umschalten | Absichten aus der Konversation werden nicht aufgezeichnet.                                                                                                                                                                                                                                                          |
+| Unterhaltungen deaktivieren | Umschalten | Erfasst keine Benutzereingaben für [Analytics](.. /.. /tools/analytics/analytics.md) Daten.                                                                                                                                                                                                                  |
 
-Alternatively, if you want to mask data for the entire Flow, you can enable masking at the [Endpoint](../../resources/deploy/endpoints.md) level.
+Wenn Sie Daten für den gesamten Flow maskieren möchten, können Sie die Maskierung alternativ am [Endpunkt](.. /.. /resources/deploy/endpoints.md) verwenden.
 
-## Example
+## Beispiel
 
-By adding a Blind Mode Node, you can turn on masking at a particular point in the Flow and later turn it off to make the data visible again throughout the conversation. 
+Durch Hinzufügen eines Blindmodus-Knotens können Sie die Maskierung an einem bestimmten Punkt im Flow aktivieren und später deaktivieren, um die Daten während der gesamten Konversation wieder sichtbar zu machen. 
 
-For example, place the Blind Mode Node before asking for a user's email, turn it on with the Blind Mode on label, and later turn it off with the Blind Mode off label. This way, all user responses to the email question will be entirely masked, and no one will be able to see them in the conversation records and logs.
-
-<figure>
+Platzieren Sie z. B. den Knoten für den Blindmodus, bevor Sie nach der E-Mail-Adresse eines Benutzers fragen, aktivieren Sie ihn mit der Beschriftung "Blinder Modus ein" und deaktivieren Sie ihn später mit der Beschriftung "Blindmodus aus". Auf diese Weise werden alle Benutzerantworten auf die E-Mail-Frage vollständig maskiert, und niemand kann sie in den Konversationsaufzeichnungen und -protokollen sehen.<figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/blind-mode-example.png" width="100%" />
 </figure>

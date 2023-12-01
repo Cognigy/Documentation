@@ -1,35 +1,35 @@
 ---
- title: "NLU Connectors" 
- slug: "nlu-connectors" 
- hidden: false 
+ Titel: "NLU-Steckverbinder" 
+ Slug: "NLU-Steckverbinder" 
+ ausgeblendet: false 
 ---
-# NLU Connectors
+# NLU-Steckverbinder
 
-Cognigy.AI features built-in support for a number of third-party NLU engines:
+Cognigy.AI bietet integrierte Unterstützung für eine Reihe von NLU-Engines von Drittanbietern:
 
-- Cognigy
+- Kognigie
 - Google Dialogflow
-- IBM Watson Assistant
+- IBM Watson-Assistent
 - Amazon Alexa
 - Amazon Lex
 - Microsoft LUIS
-- Code (custom)
+- Code (benutzerdefiniert)
 
-## How to Connect
+## So stellen Sie eine Verbindung her
 
-To connect an External NLU Service:
+So stellen Sie eine Verbindung zu einem externen NLU-Dienst her:
 
-To create and manage NLU connectors, read [External NLU](../../nlu/external-nlu/external-nlu.md#creating-nlu-connectors) page.
+Um NLU-Konnektoren zu erstellen und zu verwalten, lesen Sie [Externe NLU](.. /.. /nlu/external-nlu/external-nlu.md#creating-nlu-connectors) Seite.
 
-To find out how to connect to each supported external NLU service via the Help Center articles listed below:
+Informationen zum Herstellen einer Verbindung mit den einzelnen unterstützten externen NLU-Diensten finden Sie in den unten aufgeführten Hilfe-Center-Artikeln:
 
-* [Amazon Lex: External NLU](https://support.cognigy.com/hc/en-us/articles/4408910240530)
-* [Watson Assistant: External NLU](https://support.cognigy.com/hc/en-us/articles/360017484979-Watson-Assistant-External-NLU)
-* [Microsoft LUIS: External NLU](https://support.cognigy.com/hc/en-us/articles/360017517319)
-* [Dialogflow: External NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)
+* [Amazon Lex: Externe NLU](https://support.cognigy.com/hc/en-us/articles/4408910240530)
+* [Watson-Assistent: Externe NLU](https://support.cognigy.com/hc/en-us/articles/360017484979-Watson-Assistant-External-NLU)
+* [Microsoft LUIS: Externe NLU](https://support.cognigy.com/hc/en-us/articles/360017517319)
+* [Dialogflow: Externe NLU](https://support.cognigy.com/hc/en-us/articles/360017466620)
 
-To test and deploy an Agent using a third-party NLU, read [External NLU](../../nlu/external-nlu/external-nlu.md#testing-and-deploying-with-an-external-nlu) page.
+Um einen Agenten mit einer NLU eines Drittanbieters zu testen und bereitzustellen, lesen Sie [Externe NLU](.. /.. /nlu/external-nlu/external-nlu.md#testing-and-deploying-with-an-external-nlu) Seite.
 
-## More Information
+## Mehr Informationen
 
-- [NLU](../../nlu/nlu-overview/overview.md)
+- [NLU](.. /.. /nlu/nlu-übersicht/übersicht.md)

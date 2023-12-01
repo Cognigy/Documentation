@@ -1,141 +1,126 @@
 ---
- title: "Modules" 
- slug: "modules" 
- hidden: false 
+ Titel: "Modul" 
+ slug: "Modul" 
+ ausgeblendet: false 
 ---
-# Modules
+# Modul
 
-## Description
-<div class="divider"></div>
-In a code node you're able to use a selection of predefined NPM modules. 
-On this page you'll find all the necessary information to run these modules in a code node.
+## Beschreibung<div class="divider"></div>In einem Codeknoten können Sie eine Auswahl vordefinierter NPM-Module verwenden. 
+Auf dieser Seite finden Sie alle notwendigen Informationen, um diese Module in einem Codeknoten auszuführen.
 
-## moment.js
-<div class="divider"></div>
-[Moment.js Documentation](https://momentjs.com/docs/)
+## moment.js<div class="divider"></div>[Moment.js Dokumentation] (https://momentjs.com/docs/)
 
-You can use the moment.js module for parsing, validating, manipulation and displaying dates.
+Sie können das moment.js-Modul zum Parsen, Validieren, Bearbeiten und Anzeigen von Datumsangaben verwenden.
 
-### Usage
+### Verwendung
 ---
-In a code node call the following function:
-```javaScript
+Rufen Sie in einem Codeknoten die folgende Funktion auf:
+'''javaScript
 moment(inp?:any, format?: any, strict?: boolean);
-``` 
+''' 
 
-### Example
+### Beispiel
 ---
-the following example gets the current UTC time and date and outputs it back to the contact.
-```javaScript
+Im folgenden Beispiel werden die aktuelle UTC-Uhrzeit und das aktuelle UTC-Datum abgerufen und an den Kontakt zurückgegeben.
+'''javaScript
 const utc = moment.utc();
-actions.output(utc);
-``` 
+actions.output(UTC);
+''' 
 
+## Lodash<div class="divider"></div>[Lodash-Dokumentation] (https://lodash.com/docs/4.17.10)
 
-## Lodash
-<div class="divider"></div>
-[Lodash Documentation](https://lodash.com/docs/4.17.10)
+Cognigy.AI unterstützt auch die Utility-Bibliothek Lodash innerhalb von Codeknoten.
 
-Cognigy.AI also supports the utility library Lodash within code nodes.
-
-### Usage
+### Verwendung
 ---
-You can call functions of the Lodash module by using the following syntax:
-```javaScript
+Sie können Funktionen des Lodash-Moduls mit der folgenden Syntax aufrufen:
+'''javaScript
 _.keys(<OBJECT>);
-``` 
-You can use any Lodash function within a code node. See their [documentation](https://lodash.com/docs/4.17.10) for further information.
+''' 
+Sie können jede Lodash-Funktion innerhalb eines Codeknotens verwenden. Weitere Informationen finden Sie in der [Dokumentation](https://lodash.com/docs/4.17.10).
 
-### Example
+### Beispiel
 ---
-The following example shows a typical use-case and syntax of the Lodash module.
-```javaScript
-const favouriteFoods = ["pizza", "spaghetti", "burger"];
+Das folgende Beispiel zeigt einen typischen Anwendungsfall und die Syntax des Lodash-Moduls.
+'''javaScript
+const favoriteFoods = ["Pizza", "Spaghetti", "Burger"];
 const last = _.last(favouriteFoods);
-actions.output(last);
-``` 
-In this example we're extracting the last element of the `favouriteFoods` array and sending it as an output message.
+actions.output(letzte);
+''' 
+In diesem Beispiel extrahieren wir das letzte Element des Arrays "favouriteFoods" und senden es als Ausgabenachricht.
 
-## Messenger Platform
-<div class="divider"></div>
-[Messenger Documentation](https://github.com/snlangsuan/facebook-bot-messenger)
+## Messenger-Plattform<div class="divider"></div>[Messenger-Dokumentation] (https://github.com/snlangsuan/facebook-bot-messenger)
 
-For building Facebook Messenger messages (quick replies, buttons, lists, generic templates etc.) you can use the **facebook-bot-messenger** module within a Code Node.
+Für die Erstellung von Facebook Messenger-Nachrichten (Schnellantworten, Buttons, Listen, generische Vorlagen usw.) können Sie das **facebook-bot-messenger**-Modul innerhalb eines Code Node verwenden.
 
-### Usage
+### Verwendung
 ---
-In a Code Node you can create a message type of your choice by using the **MessengerPlatform** namespace. For a list of possible message types, visit the [facebook-bot-messenger documentation](https://github.com/snlangsuan/facebook-bot-messenger).
+In einem Codeknoten können Sie einen Nachrichtentyp Ihrer Wahl erstellen, indem Sie den Namespace **MessengerPlatform** verwenden. Eine Liste möglicher Nachrichtentypen finden Sie in der [facebook-bot-messenger-Dokumentation](https://github.com/snlangsuan/facebook-bot-messenger).
 
-### Example
+### Beispiel
 ---
-The following snippet can be used to generate a quick reply message. Keep in mind that the built message (`builder.buildMessage()`) must be the value of the **message** property of the **_facebook** object. 
-```javaScript
-// use facebook-bot-messenger to compile reply
-const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Pick a color:');
-builder.addImageOption('Red', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'https://cognigy.com/img/red.png')
-       .addImageOption('Green', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'https://cognigy.com/img/green.png');
+Der folgende Codeausschnitt kann verwendet werden, um eine Schnellantwortnachricht zu generieren. Beachten Sie, dass die erstellte Nachricht ('builder.buildMessage()') der Wert der **message**-Eigenschaft des **_facebook**-Objekts sein muss. 
+'''javaScript
+Verwenden Sie Facebook-Bot-Messenger, um Antworten zu kompilieren
+const builder = new MessengerPlatform.QuickRepliesMessageBuilder('Wählen Sie eine Farbe:');
+builder.addImageOption('Rot', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'https://cognigy.com/img/red.png')
+       .addImageOption('Grün', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_GREEN', 'https://cognigy.com/img/green.png');
 
-// output the reply
+Antwort ausgeben
 actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
-``` 
+''' 
 
-## Messenger Platform
-<div class="divider"></div>
-[XML-js Documentation](https://www.npmjs.com/package/xml-js)
+## Messenger-Plattform<div class="divider"></div>[XML-js-Dokumentation] (https://www.npmjs.com/package/xml-js)
 
-In case you want to parse XML data, you can use this module.
+Wenn Sie XML-Daten parsen möchten, können Sie dieses Modul verwenden.
 
-### Usage
+### Verwendung
 ---
-Within a Code Node you can call the following method: 
-```javaScript
+Innerhalb eines Codeknotens können Sie die folgende Methode aufrufen: 
+'''javaScript
 const xml =
     '<?xml version="1.0" encoding="utf-8"?>' +
     '<note importance="high" logged="true">' +
-    '    <title>Happy</title>' +
-    '    <todo>Work</todo>' +
-    '    <todo>Play</todo>' +
-    '</note>';
+    '    <title>Glücklich</title>' +
+    '    <todo>Arbeit</todo>' +
+    '    <todo>Spielen</todo>' +
+    ''</note>;
 
 const result = xmljs.xml2json(xml, { compact: true, spaces: 4 });
 
-// result will now contain a JSON representation of the xml above
-``` 
+result enthält nun eine JSON-Darstellung des obigen XML-Codes
+''' 
 
-## Text Cleaner
-<div class="divider"></div>
-
-### Usage
+## Text-Bereinigung<div class="divider"></div>### Verwendung
 ---
-Within a Code Node, you can invoke the `getTextCleaner` function, which retrieves an instance of the [Text Cleaner](../../tools/text-cleaner.md) class. 
-This class provides access to various text-cleaning functions.
+Innerhalb eines Codeknotens können Sie die Funktion 'getTextCleaner' aufrufen, die eine Instanz von [Text Cleaner](.. /.. /tools/text-cleaner.md)-Klasse. 
+Diese Klasse bietet Zugriff auf verschiedene Textbereinigungsfunktionen.
 
-**Parameters**
+**Parameter**
 
-| Parameter | Type   | Description                                                                |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|----------------------------------------------------------------------------|
-| locale    | string | The locale for which to instantiate the class. For example, 'de' or 'en'). |
-| options   | object | See below for the config options.                                          |
+| Gebietsschema | Zeichenfolge | Das Gebietsschema, für das die Klasse instanziiert werden soll. Beispiel: 'de' oder 'en'). |
+| Optionen | Objekt | Unten finden Sie die Konfigurationsoptionen.                                          |
 
+**Konfigurationsoptionen**
 
-**Config Options**
-
-```json
+'''json
 {
-    // additional characters which won't be cleaned by cleanDisallowedSymbols
+    zusätzliche Zeichen, die nicht von cleanDisallowedSymbols bereinigt werden
     additionalAllowedCharacters: string[], 
 
-    // additional symbols which are replace (for example, "minus": "-")
+zusätzliche Symbole, die ersetzt werden (z. B. "minus": "-")
     additionalMappedSymbols: { [key: string]: string }, 
 
-    // additional phrases which are replaced
+zusätzliche Sätze, die ersetzt werden
     additionalSpecialPhrases: { [key: string]: string }, 
 
-    // additions to the phonetic alphabet (for example, "cognigy": "c")
+Ergänzungen zum phonetischen Alphabet (z. B. "cognigy": "c")
     additionalPhoneticAlphabet: { [key: string]: string } 
 }
-```
+'''
 
-**Returns**
+**Ertrag**
 
-Instance of the Text Cleaner class.
+Instanz der Text Cleaner-Klasse.</OBJECT>

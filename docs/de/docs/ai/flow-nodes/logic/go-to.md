@@ -1,69 +1,65 @@
 ---
- title: "Go To" 
- slug: "go-to" 
- hidden: false 
+ Titel: "Gehe zu" 
+ Slug: "Go-to" 
+ ausgeblendet: false 
 ---
-# Go To
+# Gehe zu
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/go-to.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Ein **Go To Node** wird verwendet, um die Konversation auf einen anderen **Node** oder **Flow** umzuschalten, der sofort ausgeführt wird, wenn dieser Node aktiviert wird.
 
-A **Go To Node** is used to switch the conversation over to another **Node** or **Flow** which will be executed immediately when this node is activated.
+## Einstellungen
 
-## Settings
+### Flow auswählen
 
-### Select Flow
+Wählen Sie den Ziel-Flow aus, zu dem gewechselt wird, wenn die Flow-Ausführung den **Gehe zu**-Knoten auslöst.
 
-Select the target Flow that is switched to whenever the Flow execution triggers the **Go To** Node.
+### Knoten auswählen
 
-### Select Node
+Wählen Sie den Zielknoten aus, zu dem immer dann gewechselt wird, wenn die Flow-Ausführung den **Gehe zu**-Knoten auslöst.
 
-Select the target Node that is switched to whenever the Flow execution triggers the **Go To** Node.
+Ein Knoten muss als Einstiegspunkt festgelegt werden, bevor er ausgewählt werden kann. Um einen Knoten als Einstiegspunkt festzulegen, verwenden Sie die Schaltfläche [Einstiegspunkt festlegen](.. /node-usage.md#set-entrypoint) eingestellt werden.
 
-A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../node-usage.md#set-entrypoint) setting.
+!!! Hinweis "Gehe zu und Ausführen zusammen verwenden"
+    Ein Gehe zu Knoten überschreibt die Ausführung eines Execute Flow-Knotens. Wenn ein Flow mit einem Go To Node ausgeführt wird, stoppt der Go To Node nach einem Execute Flow Node die ursprüngliche Ausführung und die Sitzung verbleibt im Ziel-Flow des Go To Nodes. Dadurch wird verhindert, dass das normale Verhalten des Execute-Flow-Knotens zu dem Flow zurückkehrt, in dem er sich befindet.
 
-!!! note "Using Go To and Execute together"
-    A Go To Node will overwrite the execution of an Execute Flow Node. If a Flow containing a Go To Node is executed, after an Execute Flow Node, the Go To Node will stop the original execution and the session will stay In the Go To Node's destination Flow. This will prevent the Execute Flow Node's normal behavior, of returning to the Flow it is located in.
+## Fortgeschritten
 
-## Advanced
+### Ausführungsmodus
 
-### Execution Mode
+Der Ausführungsmodus bestimmt das Verhalten des Gehe zu-Knotens. Er kann zum Zielknoten wechseln und fortfahren oder auf Eingaben warten.
 
-The Execution Mode determines the behavior of the Go To Node. It can go to the target Node and continue, or it can wait for input.
+### Optionaler eingefügter Text
 
-### Optionally Injected Text
+Wenn der Ausführungsmodus auf **Gehe zu Knoten und fortfahren** eingestellt ist, können Sie den Text überschreiben, mit dem Sie hier fortfahren möchten. Wenn kein Text angegeben ist, wird input.text verwendet.
 
-If the Execution Mode is set to **Go to Node and continue**, you can overwrite the text with which to continue here. If no text is specified, input.text will be used.
+### Optional injizierte Daten
 
-### Optionally Injected Data
+Wenn der Ausführungsmodus auf **Gehe zu Knoten und fortfahren** eingestellt ist, können Sie die Daten überschreiben, mit denen Sie hier fortfahren möchten. Wenn keine Daten angegeben werden, wird input.data verwendet.
 
-If the Execution Mode is set to **Go to Node and continue**, you can overwrite the data with which to continue here. If no data is specified, input.data will be used.
+### Absichten analysieren
 
-### Parse Intents
+Der Benutzer entscheidet, ob wir Intents innerhalb des Sub-Flows **parsen** sollen. Diese Option ist standardmäßig deaktiviert.
 
-The user decides whether we should  **parse intents** within the sub Flow. This is disabled by default.
+Wenn die Einstellung **Parse Intents** aktiviert ist, analysiert Cognigy NLU die Intents im Ziel-Flow erneut, indem entweder [input.text](.. /.. /tools/interaction-panel/input.md#accessing-the-input-object) oder [Optional eingefügter Text](#optionally-injected-text)
 
-If the **Parse Intents** setting is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+Mit dieser Einstellung wird die Eingabe in den Sub-Flow geparst, und die NLU bewertet diesen Text dann mit den verfügbaren Intents im Sub-Flow. Dies wird nicht basierend auf Intents im übergeordneten Flow bewertet.
 
-This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
+### Slots analysieren
 
-### Parse Slots
+Der Benutzer entscheidet, ob wir Slots innerhalb des Sub-Flows **parsen** sollen. Diese Option ist standardmäßig deaktiviert.
 
-The user decides whether we should **parse slots** within the sub Flow. This is disabled by default.
+Wenn die Einstellung **Parse Slots** aktiviert ist, analysiert Cognigy NLU die Slots im Ziel-Flow im Ziel-Flow neu, indem entweder [input.text](.. /.. /tools/interaction-panel/input.md#accessing-the-input-object) oder [Optional eingefügter Text](#optionally-injected-text)
 
-If the **Parse Slots** setting is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+Mit dieser Einstellung wird die Eingabe in den Sub-Flow geparst, und die NLU bewertet diesen Text dann anhand der verfügbaren Slots im Sub-Flow. Dies wird nicht basierend auf Slots im übergeordneten Flow bewertet.
 
-This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
+### Kontext aufnehmen
+Wenn die Einstellung **Kontext absorbieren** aktiviert ist, wird beim Umschalten der Standardkontext des Zielflows auf den aktuellen Kontext angewendet.
 
-### Absorb Context
-If the **Absorb Context** setting is enabled, the default Context of the target Flow will be applied to the current Context upon switching.
+!!! Warnung "Schleifen"
+    Cognigy.AI prüft, wie oft ein Go To Node ohne Benutzereingabe dazwischen aktiviert wurde. Die Standardeinstellung für die maximale Anzahl von Schleifen ist 4, kann aber für On-Premise-Installationen konfiguriert werden.
 
-!!! warning "Loops"
-    Cognigy.AI checks how often a Go To Node was activated without a user input in-between. The default setting for maximum loops is 4, but it is configurable for on-premise installations.
-
-
-!!! note "Open Target Flow"
-    By clicking on the Flow Name in the Node Preview, you can directly jump to the target Flow.
+!!! Hinweis "Zielfluss öffnen"
+    Mit einem Klick auf den Flow-Namen in der Node-Vorschau können Sie direkt zum Ziel-Flow springen.

@@ -1,19 +1,19 @@
 ---
- title: "Clients" 
- slug: "clients" 
- hidden: false 
+ Titel: "Kunden" 
+ Slug: "Kunden" 
+ ausgeblendet: false 
 ---
-# Clients
+# Kunden
 
-Cognigy offers a variety of clients in various languages to connect with Cognigy.AI. All of these are hosted on [Cognigy GitHub account](https://github.com/Cognigy). 
+Cognigy bietet eine Vielzahl von Kunden in verschiedenen Sprachen an, um mit Cognigy.AI in Kontakt zu treten. All dies wird auf [Cognigy GitHub-Konto](https://github.com/Cognigy) gehostet. 
 
-All clients except the REST API Client connect against Cognigy Endpoints. The REST API Client connects directly against the Cognigy API and can be used to interface with Cognigy Resources directly from TypeScript/JavaScript.
+Alle Clients mit Ausnahme des REST-API-Clients stellen eine Verbindung zu Cognigy Endpoints her. Der REST-API-Client stellt eine direkte Verbindung zur Cognigy-API her und kann verwendet werden, um direkt aus TypeScript/JavaScript heraus eine Schnittstelle zu Cognigy-Ressourcen herzustellen.
 
-| Client Name                                                               | Language     | Description                                                                                                               |
+| Name des Kunden | Sprache | Beschreibung |
 |---------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| [WebchatWidget](https://github.com/Cognigy/WebchatWidget)                 | TypeScript   | A graphical chat widget you can embed into your website to provide visitors access to a Conversational AI via Cognigy.AI. |
-| [SocketClient](https://github.com/Cognigy/SocketClient)                   | TypeScript   | A JavaScript/TypeScript client that can be used to connect to Cognigy.AI Socket Endpoints                                 |
-| [Unity 3D Client](https://github.com/Cognigy/CognigyUnity3DClient)        | C#           | Unity3D game-engine integration                                                                                           |
-| [REST Client](https://github.com/Cognigy/RestClient)                      | TypeScript   | A simple client you can use in your projects to connect to a Cognigy.AI REST endpoint.                                    |
-| [REST API Client](https://www.npmjs.com/package/@cognigy/rest-api-client) | TypeScript   | An npm module to connect against the Cognigy API                                                                          |
-| [Cognigy CLI](https://github.com/Cognigy/Cognigy-CLI)                     | Command Line | Cognigy-CLI is a series of tools to interact with your Cognigy.AI virtual agent projects from the command line            |
+| [WebchatWidget] (https://github.com/Cognigy/WebchatWidget) | TypeScript | Ein grafisches Chat-Widget, das Sie in Ihre Website einbetten können, um Besuchern über Cognigy.AI Zugriff auf eine Conversational AI zu ermöglichen. |
+| [SocketClient] (https://github.com/Cognigy/SocketClient) | TypeScript | Ein JavaScript-/TypeScript-Client, der zum Herstellen einer Verbindung mit Cognigy.AI Socket-Endpunkten verwendet werden kann |
+| [Unity-3D-Client] (https://github.com/Cognigy/CognigyUnity3DClient) | C# | Unity3D-Game-Engine-Integration |
+| [REST-Client] (https://github.com/Cognigy/RestClient) | TypeScript | Ein einfacher Client, den Sie in Ihren Projekten verwenden können, um eine Verbindung mit einem Cognigy.AI REST-Endpunkt herzustellen.                                    |
+| [REST-API-Client] (https://www.npmjs.com/package/@cognigy/rest-api-client) | TypeScript | Ein npm-Modul zum Herstellen einer Verbindung mit der Cognigy-API |
+| [Cognigy CLI] (https://github.com/Cognigy/Cognigy-CLI) | Befehlszeile | Cognigy-CLI ist eine Reihe von Tools, mit denen Sie über die Befehlszeile mit Ihren Cognigy.AI virtuellen Agentenprojekten interagieren können |

@@ -1,29 +1,21 @@
 ---
  title: "Barge In - Config" 
- slug: "transfer" 
- hidden: false 
+ slug: "Übertragung" 
+ ausgeblendet: false 
 ---
 
-# Barge In - Config
+# Barge In - Konfiguration
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/barge-in-config.png" width="80%" />
-  <figcaption>Generic Barge In - Config Node</figcaption>
+  <figcaption>Generischer Barge In - Config Node</figcaption>
 </figure>
 
-## Description
-
-<div class="divider"></div>
-The Barge In - Config Node is a session config that enables the interruption of the bot.
-<br/><br/>
-When executed, the settings will apply for the remainder of the session.
-<br/><br/>
-
-| Parameter                | Type          | Description                                                                                                                                    |
+## Beschreibung<div class="divider"></div>Der Barge In - Config Node ist eine Sitzungskonfiguration, die die Unterbrechung des Bots ermöglicht.<br/><br/>Wenn die Einstellungen ausgeführt werden, gelten sie für den Rest der Sitzung.<br/><br/>| Parameter | Typ | Beschreibung |
 |--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Barge In On Speech       | Toggle        | Enables to interrupt the bot with speech.                                                                                                      |
-| Barge In Minimum Words   | Slider        | Defines the minimum number of words that the user must say for the Voice Gateway to consider it a barge in                                     |
-| Barge In On DTMF         | Toggle        | Enables to interrupt the bot with DTMF digits. Capturing of DTMF signals is enabled by default                                                 |
-| DTMF Inter Digit Timeout | Number        | Defines the timeout in between collected DTMF digits                                                                                           |
-| DTMF Max Digits          | Number        | Defines the maximum number of digits which can be entered by the user, the digits are being submitted automatically once this limit is reached |                      |
-| DTMF Submit Digit        | CognigyScript | Defines the DTMF submit digit which will be used for submitting the previously entered digits. This overrides the minimum digits validation    |
+| Barge In On Speech | Umschalten | Ermöglicht es, den Bot mit Sprache zu unterbrechen.                                                                                                      |
+| Barge in minimalen Worten | Schieberegler | Definiert die Mindestanzahl von Wörtern, die der Benutzer sagen muss, damit das Voice Gateway es als Barge in |
+| Binnenschiff in DTMF | Umschalten | Ermöglicht es, den Bot mit DTMF-Ziffern zu unterbrechen. Die Erfassung von DTMF-Signalen ist standardmäßig aktiviert |
+| DTMF-Zeitüberschreitung zwischen Ziffern | Anzahl | Definiert die Zeitüberschreitung zwischen erfassten DTMF-Ziffern |
+| DTMF Max. Ziffern | Anzahl | Definiert die maximale Anzahl von Ziffern, die vom Benutzer eingegeben werden können, die Ziffern werden automatisch übermittelt, sobald dieses Limit erreicht ist |                      |
+| DTMF-Sendeziffer | CognigyScript | Definiert die DTMF-Sendeziffer, die für die Übermittlung der zuvor eingegebenen Ziffern verwendet wird. Dadurch wird die Validierung der Mindestziffern überschrieben |

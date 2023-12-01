@@ -1,123 +1,115 @@
 ---
-title: "Email Notification"
-slug: "email-notification"
-hidden: false
+title: "E-Mail-Benachrichtigung"
+Slug: "E-Mail-Benachrichtigung"
+ausgeblendet: false
 ---
-# Email Notification
+# E-Mail-Benachrichtigung
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.49-blue.svg)] (.. /.. /.. /release-notes/4.49.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/email-notification.png" width="80%" />
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Mit dem E-Mail-Benachrichtigungsknoten können Sie während Sitzungen oder für die interne Kommunikation schnell und einfach E-Mails versenden, ohne dass Anbietereinstellungen in der Benutzeroberfläche eingerichtet werden müssen. Stattdessen können Sie die erforderlichen Anbietereinstellungen in den Umgebungsvariablen und Geheimnissen konfigurieren. Es kann jeweils nur ein Anbieter eingerichtet werden. 
 
-The Email Notification Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time. 
+## Einschränkungen
 
-## Restrictions
+* Ihre SMTP-Server-Einstellungen müssen angepasst werden, um die interne Cognigy-E-Mail-Benachrichtigung verwenden zu können.
+* E-Mail-Anhänge sind eingeschränkt (z. B. Dateien, Bilder). Verwenden Sie bei Bedarf [SMTP-E-Mail-Knoten senden](send-smtp-email.md).
 
-*  Your SMTP Server settings need to be adjusted to use the internal Cognigy Email notification.
-*  Email attachments are restricted (for example, files, images). If required, use [Send SMTP Email Node](send-smtp-email.md).
+## Authentifizierung
 
-## Authentication
+Dieser Knoten unterstützt sowohl die Standardauthentifizierung als auch die OAuth2-Authentifizierungsmethode.
 
-This Node supports both Basic Auth and OAuth2 authentication methods.
+Wenn Sie eine lokale Installation haben, müssen Sie der Datei "values.yaml" die folgenden Parameter hinzufügen:
 
-If you have on-premises installation, you need to add the following parameters to the `values.yaml` file:
-
-=== "OAuth2 (recommended)"
-    object:
+=== "OAuth2 (empfohlen)"
+    Objekt:
     
-    ```yaml
+'''Yaml
     smtpEmailNotificationCredentials:
      authType: "oauth2"
-     oauth2:
-       user: "<smtp-server>@domain.com"
-       clientId: "your client id"
-       clientSecret: "your client secret"
-       refreshToken: "your refresh token"
-       accessToken: "your access token"
-    ```
-    variables:
+     OAuth2:
+       Benutzer: "<smtp-server>@domain.com"
+       clientId: "Ihre Kunden-ID"
+       clientSecret: "Ihr geheimer Clientschlüssel"
+       refreshToken: "Ihr Aktualisierungstoken"
+       accessToken: "Ihr Zugriffstoken"
+    '''
+    Variablen:
     
-    ```yaml
+'''Yaml
     EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
     EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "oauth2"
-    EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<email service, for example, Outlook365>"
-    EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "<provider token access url, for example, for Microsoft https://login.microsoftonline.com/common/oauth2/v2.0/token, for Google https://accounts.google.com/o/oauth2/token>"
-    EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix timestamp for the current accessToken, for example, 1681382246000>"
-    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method, for example, 'tls' for default TLS on port 443, 'starttls' to upgrade an insecure connection on the same port, or 'none' to connect without TLS>"
-    ```
-    Cognigy caches connections by default, and for OAuth2 connections, Cognigy also caches the refresh and access tokens. To update the refresh token or access token, create a [snapshot](../../resources/deploy/snapshots.md).
+    EMAIL_NOTIFICATION_SMTP_EMAIL_SERVICE_TYPE: "<email service,="" for="" example,="" outlook365="">"
+    EMAIL_NOTIFICATION_SMTP_OAUTH2_TOKEN_ACCESS_URL: "<provider token="" access="" url,="" for="" example,="" for="" microsoft="" https://login.microsoftonline.com/common/oauth2/v2.0/token,="" for="" google="" https://accounts.google.com/o/oauth2/token="">"
+    EMAIL_NOTIFICATION_SMTP_OAUTH2_EXPIRY_DATE_UNIX_TIMESTAMP: "<unix timestamp="" for="" the="" current="" accesstoken,="" for="" example,="" 1681382246000="">"
+    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method,="" for="" example,="" 'tls'="" for="" default="" tls="" on="" port="" 443,="" 'starttls'="" to="" upgrade="" an="" insecure="" connection="" on="" the="" same="" port,="" or="" 'none'="" to="" connect="" without="" tls="">"
+    '''
+    Cognigy speichert Verbindungen standardmäßig zwischen, und bei OAuth2-Verbindungen speichert Cognigy auch die Aktualisierungs- und Zugriffstoken zwischen. Um das Aktualisierungstoken oder Zugriffstoken zu aktualisieren, erstellen Sie ein [snapshot](.. /.. /resources/deploy/snapshots.md).
 
-=== "Basic Auth"
-    object:
+=== "Grundlegende Authentifizierung"
+    Objekt:
 
-    ```yaml
+'''Yaml
     smtpEmailNotificationCredentials:
       authType: "basic"
-      basic:
-        username: "<your email client's username>"
-        password: "<your email clientl's password>"
-    ```
-    variables:
+      Grundlegend:
+        Benutzername: "<your email="" client's="" username="">"
+        Passwort: "<your email="" clientl's="" password="">"
+    '''
+    Variablen:
 
-    ```yaml
-    EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "basic"
+'''Yaml
+    EMAIL_NOTIFICATION_SMTP_AUTH_TYPE: "einfach"
     EMAIL_NOTIFICATION_SMTP_HOST: "<SMTP_HOST>"
     EMAIL_NOTIFICATION_SMTP_PORT: "<SMTP_PORT>"
     EMAIL_NOTIFICATION_SMTP_FROM: "<smtp-server>@domain.com"
-    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method, for example, 'tls' for default TLS on port 443, 'starttls' to upgrade an insecure connection on the same port, or 'none' to connect without TLS>"
-    ```
+    EMAIL_NOTIFICATION_SMTP_TLS_REQUIRED: "<tls method,="" for="" example,="" 'tls'="" for="" default="" tls="" on="" port="" 443,="" 'starttls'="" to="" upgrade="" an="" insecure="" connection="" on="" the="" same="" port,="" or="" 'none'="" to="" connect="" without="" tls="">"
+    '''
 
+## Einstellungen
 
-## Settings
+### Empfänger-E-Mail-Adressen
 
-### Recipient TO Email Addresses
+Kommagetrennte Liste von E-Mail-Adressen, an die die E-Mail gesendet werden soll.
 
-Comma-separated list of email addresses to send the email to.
+### Betreff der E-Mail
 
-### Email Subject
+Der Betreff der E-Mail.
 
-The subject of the email.
+### E-Mail-Inhalt
 
-### Email Content
+Der Inhalt der E-Mail.
+Das Feld unterstützt die grundlegende Rich-Text-Bearbeitung.
 
-The content of the email.
-The field supports basic rich text editing.
+### Speicherort des SMTP-Anforderungsergebnisses
 
-### Store location of SMTP Request result
+Kann auf **Ergebnis nicht speichern** (Standard), **Eingabe** oder **Kontext** festgelegt werden.
+Wenn diese Option auf **Input** oder **Context** festgelegt ist, können Sie einen Speicherort für das Ergebnis innerhalb von **Input** oder **Context** definieren.
+Das Ergebnis der gesendeten E-Mail-Antwort wird dann an diesem Ort abgelegt.
 
-Can be set to **Don't store result** (default), **Input**, or **Context**.
-If set to **Input** or **Context**, you can define a location for the result within **Input** or **Context**.
-The result of the sent mail response will then be put at that location.
+#### Stopp bei Fehler
 
-#### Stop on Error
+Wenn diese Option aktiviert ist, wird die Flow-Ausführung angehalten, falls der E-Mail-Versand fehlschlägt.
 
-If switched on, the flow execution will halt in case the mail-sending fails.
+#### CC-E-Mail-Adressen
 
-#### CC Email Addresses
+Die CC-Empfänger Ihrer E-Mail.
 
-The CC recipients of your email.
+#### BCC-E-Mail-Adressen
 
-#### BCC Email Addresses
+Die BCC-Empfänger Ihrer E-Mail.
 
-The BCC recipients of your email.
+#### Request asynchron ausführen
 
-#### Execute Request asynchronous
+Wenn diese Option aktiviert ist, wird die Flow-Ausführung direkt nach dem Auslösen des Knotens "E-Mail senden" fortgesetzt. Wenn diese Option deaktiviert ist, wartet die Flow-Ausführung, bis die E-Mail gesendet wird.
 
-If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned-off, flow execution will **wait until the email is sent**.
-
-## Email Template
-<div class="divider"></div>
-
-The email will be sent with templating around it, looking roughly like this:
+## E-Mail-Vorlage<div class="divider"></div>Die E-Mail wird mit einer Vorlage gesendet, die in etwa wie folgt aussieht:
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/eccd2bc-Screen_Shot_080.PNG" width="100%" />
 </figure>
 
-The recipient will get the email notification
-
+Der Empfänger erhält die E-Mail-Benachrichtigung</tls></smtp-server></SMTP_PORT></SMTP_HOST></your></your></tls></unix></provider></email></smtp-server></smtp-server>

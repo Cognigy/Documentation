@@ -1,7 +1,7 @@
 ---
- title: "Facebook Messenger" 
- slug: "facebook-messenger" 
- hidden: false 
+ Titel: "Facebook Messenger" 
+ Slug: "Facebook-Messenger" 
+ ausgeblendet: false 
 ---
 # Facebook Messenger
 
@@ -9,133 +9,110 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/92b8453-EP_Facebook_messenger.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Facebook Messenger** channel by using our Messenger Endpoint integration. 
+Innerhalb unserer **Cognigy.AI**-Plattform können Sie Ihre Cognigy-Ressourcen mit Ihrem **Facebook Messenger**-Kanal verbinden, indem Sie unsere Messenger-Endpunkt-Integration verwenden. 
 
-## Generic Endpoint Settings
+## Generische Endpunkteinstellungen
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+Informieren Sie sich auf den folgenden Seiten über die generischen Endpunkteinstellungen, die für diesen Endpunkt verfügbar sind:
 
-- [Endpoints Overview]({{config.site_url}}ai/endpoints/overview/) 
-- [Data Protection & Analytics]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
-- [Transformer Functions]({{config.site_url}}ai/endpoints/transformers/transformers/) 
-- [NLU Connectors]({{config.site_url}}ai/resources/build/nlu-connectors/)
-- [Session Management]({{config.site_url}}ai/endpoints/session-management/)
-- [Handover Settings]({{config.site_url}}ai/endpoints/handover-settings/)
-- [Real Time Translation Settings]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
+- [Übersicht über Endpunkte]({{config.site_url}}ai/endpoints/overview/) 
+- [Datenschutz & Analyse]({{config.site_url}}ai/endpoints/data-protection-and-analytics/)
+- [Transformer-Funktionen]({{config.site_url}}ai/endpoints/transformers/transformers/) 
+- [NLU-Konnektoren]({{config.site_url}}ai/resources/build/nlu-connectors/)
+- [Sitzungsverwaltung]({{config.site_url}}ai/endpoints/session-management/)
+- [Übergabe-Einstellungen]({{config.site_url}}ai/endpoints/handover-settings/)
+- [Einstellungen für Echtzeitübersetzung]({{config.site_url}}ai/endpoints/real-time-translation-settings)  
 
+!!! Tipp "Unterstützt Inject & Notify"
+    Sie können die **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)**-Funktionalität mit diesem Endpunkttyp verwenden.
 
-!!! tip "Supports Inject & Notify"
-    You can use the **[Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)** functionality with this type of Endpoint.
+## Kanalspezifische Einstellungen<div class="divider"></div>## Facebook-Seite einrichten
 
-## Channel Specific Settings
+In diesem Dropdown-Menü erhalten Ihre Cognigy.AI die Anmeldedaten für den Zugriff auf Ihre Facebook Messenger-App.
 
-<div class="divider"></div>
+### Seiten-Zugriffstoken
 
-## Facebook Page Setup
+Das Seitenzugriffstoken wird von Facebook als Authentifizierungsvariable bereitgestellt, um die Kommunikation mit Ihrer Seite zu ermöglichen.
 
-This dropdown menu is where your Cognigy.AI is provided with the credentials to access your Facebook Messenger App.
+### App-ID
 
-### Page Access Token
+Dieser Wert ist eine eindeutige App-ID, die von Facebook verwendet wird, um Ihre App zu identifizieren.
 
-The page access token is provided by Facebook as an authentication variable to allow communication with your page.
+### App-Geheimnis
 
-### App ID
+Das Geheimnis Ihrer Facebook-App, bei dem es sich um einen zufällig generierten Wert von Facebook handelt. Der Wert dieses Felds muss der GEHEIME Schlüssel sein, der dem Seitenzugriffstoken und der App-ID zugeordnet ist, die in den vorherigen Feldern eingegeben wurden.
 
-This value is a unique App ID used by Facebook to identify you app.
+!!! Hinweis "Hilfe-Center"
+    Weitere Informationen zum Konfigurieren des **Page Access Token**, der **App-ID** und des **App-Geheimnisses** finden Sie in unserem Hilfe-Center-Artikel [**hier**](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
 
-### App Secret
+## Facebook-Profil
 
-Your Facebook app's Secret that is a randomly generated value from Facebook. The value of this field must be the SECRET associated with the Page access token and App ID entered the previous fields.
+In Ihrem Facebook-Endpunkt sehen Sie einen Abschnitt mit dem Namen **Facebook-Profile**.
+Hier können Sie verschiedene Einstellungen zum Umgang mit Kontaktprofilen für den Facebook-Endpunkt aktivieren oder deaktivieren.
 
-!!! note "Help Center"
-    For more information on how to configure the **Page Access Token**, **App ID** an   **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
+### Profildaten anfordern
 
-## Facebook Profiles
-
-In your Facebook Endpoint, you will notice a section called **Facebook Profiles**.
-Here you can enable or disable several settings regarding how to handle contact profiles for the Facebook Endpoint.
-
-### Request Profile Data
-
-The `Request Profile Data` exposes a contact's Facebook Profile information, such as their name and profile picture, in your Flow. If enabled, you can access this profile information in ci.data.profile in your Flow. The table below shows some common information you will find in the ci.data.profile object.
-
-<table>
+Die "Profildaten anfordern" zeigt die Facebook-Profilinformationen eines Kontakts, wie z. B. seinen Namen und sein Profilbild, in deinem Flow an. Wenn diese Option aktiviert ist, können Sie auf diese Profilinformationen in ci.data.profile in Ihrem Flow zugreifen. Die folgende Tabelle zeigt einige allgemeine Informationen, die Sie im ci.data.profile-Objekt finden.<table>
     <tr>
-    <th>Key</th>
-    <th>Description</th> 
+    <th>Beschreibung des Schlüssels</th><th></th>
+     
   </tr>
   <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">Id</td>
-    <td style="padding: 20px;">
-      The Facebook user's PSID. Each Facebook user has a unique id for each Facebook Page they talk to.
-    </td>
+    <td style="padding: 20px;">Die PSID des Facebook-Nutzers. Jeder Facebook-Nutzer hat eine eindeutige ID für jede Facebook-Seite, mit der er spricht.    </td>
   </tr>
     <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">first_name</td>
-    <td style="padding: 20px;">
-The user's first name.
-      </td>
+    <td style="padding: 20px;">Der Vorname des Benutzers.      </td>
   </tr>
     <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">last_name</td>
-    <td style="padding: 20px;">
-      The user's last name.
-      </td>
+    <td style="padding: 20px;">Der Nachname des Benutzers.      </td>
   </tr>
       <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">profile_pic</td>
-    <td style="padding: 20px;">
-      A url linking to the profile picture of the user.
-      </td>
+    <td style="padding: 20px;">Eine URL, die auf das Profilbild des Benutzers verweist.      </td>
   </tr>
       <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">locale</td>
-    <td style="padding: 20px;">
-      Information about the user's locale.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Gebietsschema</td>
+    <td style="padding: 20px;">Informationen über das Gebietsschema des Benutzers.      </td>
   </tr>
       <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">timezone</td>
-    <td style="padding: 20px;">
-      The user's timezone.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Zeitzone</td>
+    <td style="padding: 20px;">Die Zeitzone des Benutzers.      </td>
   </tr>
       <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">gender</td>
-    <td style="padding: 20px;">
-      The user's gender.
-      </td>
+    <td class="type" style="vertical-align: middle; padding: 10px;">Geschlecht</td>
+    <td style="padding: 20px;">Das Geschlecht des Benutzers.      </td>
   </tr>
-</table>
+</table>!!! Warnung "Daten, die in ci.data.profile verfügbar gemacht werden"
+    Nicht bei jedem Benutzer auf Facebook werden die gleichen Daten im Profilobjekt angezeigt. Dies hängt ausschließlich davon ab, welche Daten sie in ihrem Facebook-Profil haben und welche Datenschutzeinstellungen sie haben.
 
-!!! warning "Data exposed in ci.data.profile"
-    Not every user on Facebook will have the same data exposed in the profile object. This depends solely on what data they have on their Facebook profile, and what their privacy settings are.
+### Kontaktprofile aktualisieren
 
-### Update Contact Profiles
+Wenn diese Einstellung aktiviert ist, werden die Informationen, die ein Facebook-Benutzer in seinem Profil hat, in sein Kontaktprofil kopiert. Dies ist sehr nützlich, um das Kontaktprofil einfach mit nützlichen Daten zu füllen.
 
-If this setting is enabled, then the information a Facebook user has on their profile will be copied over to their contact profile. This is very useful in order to easily fill the contact profile with useful data.
+### Kontaktprofile zusammenführen
 
-### Merge Contact Profiles
+Jeder Nutzer auf Facebook hat eine eindeutige ID, eine PSID, für jede Facebook-Seite, mit der er spricht. Das bedeutet, dass Sie, wenn Sie zwei oder mehr Facebook-Seiten besitzen, nicht in der Lage sind, Benutzer auf diesen Seiten sofort zu identifizieren, da sie für jede Seite eine andere ID haben. Wenn Sie diese Einstellung jedoch aktivieren, rufen wir alle PSIDs eines Benutzers für Ihre Seiten ab und führen diese Profile zu einem Profil zusammen. Das bedeutet, dass Sie einen einzelnen Benutzer auf all Ihren Seiten leicht identifizieren und so den Chat noch mehr personalisieren können.
 
-Each user on Facebook has a unique ID, a PSID, for each Facebook page they talk to. This means that if you own two or more Facebook Pages, you will not be able to immediately identify users across these pages, since they will have a different ID for each page. However, if you enable this setting, we will fetch all of a user's PSIDs for your pages and merge these profiles into one profile. This means that you can easily identify a single user across all of your pages, and thus personalize the chat even more.
+!!! Warnung "Erfordert ein Geschäft"
+    Um die API-Aufrufe ausführen zu können, die erforderlich sind, um alle PSIDs für den Benutzer zu erhalten, muss dasselbe Unternehmen alle Facebook-Seiten besitzen. Weitere Informationen unter: [https://www.facebook.com/business](https://www.facebook.com/business)
 
-!!! warning "Requires a Business"
-    In order to perform the API calls necessary to get all the PSIDs for the user, the same Business needs to own all the Facebook Pages. More information at: [https://www.facebook.com/business](https://www.facebook.com/business)
+## Messenger-Einstellungen
 
-## Messenger Settings
-
-Here you can configure whether typing indicators should be used and how many milliseconds of delay there should be between each message.
+Hier können Sie konfigurieren, ob Eingabeindikatoren verwendet werden sollen und wie viele Millisekunden Verzögerung zwischen den einzelnen Nachrichten liegen sollen.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/940f0ef-facebookMessageSettings.PNG" width="100%" />
 </figure>
 
-!!! note "Help Center"
-  For more detailed information on how to set up a **Facebook Messenger** Endpoint, refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro).
+!!! Hinweis "Hilfe-Center"
+  Ausführlichere Informationen zum Einrichten eines **Facebook Messenger**-Endpunkts findest du in unseren Hilfe-Center-Artikeln [**hier**](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro).
 
-## More Information
+## Mehr Informationen
 
-* [HelpCenter: Facebook Messenger Intro](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
-* [HelpCenter: Facebook Messenger Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)
-* [HelpCenter: Facebook Messenger Use Facebook Handover ](https://support.cognigy.com/hc/en-us/articles/360016021919-Facebook-Messenger-Use-Facebook-Handover)
+* [HelpCenter: Einführung in den Facebook Messenger](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
+* [HelpCenter: Facebook Messenger Bereitstellen eines Endpunkts](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)
+* [HelpCenter: Facebook Messenger verwenden Facebook-Übergabe](https://support.cognigy.com/hc/en-us/articles/360016021919-Facebook-Messenger-Use-Facebook-Handover)
 * [HelpCenter: Facebook Messenger Facebook Tools](https://support.cognigy.com/hc/en-us/articles/360015980780-Facebook-Messenger-Facebook-Tools)

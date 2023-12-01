@@ -1,61 +1,58 @@
 ---
-title: "Mute Speech Input"
-slug: "mute-speech-input"
-description: "The Voice Gateway Mute Speech Input Node allows you to control when speech input is collected in your Flow, preventing interruptions and ensuring a smoother conversation experience, especially in xApp Flows. By enabling or disabling speech gathering as needed, you can maintain better control and create a seamless workflow in your application."
-hidden: false
+title: "Spracheingabe stummschalten"
+slug: "stumm-spracheingabe"
+description: "Mit dem Voice Gateway Mute Speech Input Node können Sie steuern, wann Spracheingaben in Ihrem Flow erfasst werden, um Unterbrechungen zu vermeiden und ein reibungsloseres Gesprächserlebnis zu gewährleisten, insbesondere in xApp Flows. Indem Sie die Spracherfassung nach Bedarf aktivieren oder deaktivieren, können Sie eine bessere Kontrolle behalten und einen nahtlosen Workflow in Ihrer Anwendung schaffen."
+ausgeblendet: false
 ---
 
-# Mute Speech Input
+# Spracheingabe stummschalten
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../release-notes/4.61.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.61-blue.svg)] (.. /.. /.. /release-notes/4.61.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/mute-speech-input.png" width="80%" />
-  <figcaption>Voice Gateway Mute Speech Input</figcaption>
+  <figcaption>Spracheingabe für das Voice-Gateway stummschalten</figcaption>
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>Dieser Knoten steuert, wann Sprach- und DTMF-Benutzereingaben in Ihrem Flow erfasst werden können.
+Es verhindert Sprach- und DTMF-Unterbrechungen in bestimmten Fällen, z. B. [xApp Flows](https://docs.cognigy.com/ai/xApp/overview/), und ermöglicht so eine reibungslosere Konversation.
+Durch Aktivieren oder Deaktivieren von Einstellungen in diesem Knoten nach Bedarf,
+Sie behalten eine bessere Kontrolle und sorgen für einen nahtlosen Workflow in Ihrer Anwendung.
 
-This Node controls when speech and DTMF user inputs can be collected in your Flow.
-It prevents speech and DTMF interruptions in specific cases, such as [xApp Flows](https://docs.cognigy.com/ai/xApp/overview/), allowing for a smoother conversation experience.
-By enabling or disabling settings in this Node as needed,
-you can maintain better control and ensure a seamless workflow in your application.
+## Einstellungen
 
-## Settings
+!!! Warnung
+    Deaktivieren Sie eine Spracheingabe während des gesamten Anrufs nicht, um zusätzliche Nachrichten vom Benutzer zu erhalten, insbesondere wenn der virtuelle Assistent mehrere Nachrichten mit Zeitabständen dazwischen senden muss.
 
-!!! warning
-    Do not turn off a speech user input throughout the call to receive additional messages from the user, especially when the virtual assistant needs to send multiple messages with time gaps in between.
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-------------------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -----------------------------------------------------------------------|
+| Spracheingabe stummschalten | Umschalten | Deaktiviert die Spracheingabeerkennung für den aktuellen Anruf. Standardmäßig ist die Einstellung deaktiviert, sodass die Knoten unterhalb des Spracheingabeknotens Spracheingabe stummschalten Spracheingaben akzeptieren können. <br><br> Wenn diese Einstellung aktiviert ist, akzeptieren die Knoten unterhalb des Spracheingabeknotens stummschalten keine Spracheingaben oder Ziffern als Antwort.  Sie wirkt sich auf alle Spracheingaben aus, die über die folgenden Knoten getätigt werden:<br> - Knoten mit festgelegten Aktivitätsparametern. <br> - Say-and-Play-Knoten mit aktiviertem Barge-In können nicht mehr unterbrochen werden.<br> - Frage- und optionale Frageknoten. |
+| DTMF-Eingang stummschalten | Umschalten | Deaktiviert die DTMF-Eingangserkennung für den aktuellen Anruf. Standardmäßig ist diese Einstellung deaktiviert, so dass die Knoten unterhalb des Mute-Eingangsknotens DTMF-Eingaben akzeptieren können. <br><br> Wenn diese Einstellung aktiviert ist, akzeptieren die Knoten unterhalb des DTMF-Eingangsknotens "DTMF stummschalten" keine DTMF-Eingaben mehr. Diese Einstellung wirkt sich auf alle DTMF-Eingaben aus, die über die folgenden Knoten erfolgen:<br> - Knoten mit festgelegten Aktivitätsparametern.<br> - DTMF- und Play-Nodes mit aktivierter DTMF-Einstellung können nicht mehr unterbrochen werden.                                                              |
 
-| Parameter         | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-------------------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mute Speech Input | Toggle | Disables speech input recognition for the current call. By default, the setting is deactivated, allowing the Nodes below the Mute Speech Input Node to accept speech inputs. <br><br> When this setting is activated, the Nodes below the Mute Speech Input Node will not accept speech inputs or digits as the answer.  It affects all speech inputs made through the following Nodes:<br> - Nodes with Set Activity Parameters. <br> - Say and Play Nodes with enabled barge-in can no longer be interrupted.<br> - Question and Optional Question Nodes. |
-| Mute DTMF Input   | Toggle | Disables DTMF input recognition for the current call. By default, this setting is deactivated, allowing the nodes below the Mute Input Node to accept DTMF inputs. <br><br> When this setting is activated, the Nodes below the Mute DTMF Input Node will no longer accept DTMF inputs. This setting affects all DTMF inputs made through the following nodes:<br> - Nodes with Set Activity Parameters.<br> - DTMF and Play Nodes with the enabled DTMF setting can no longer be interrupted.                                                              |
+## Beispiel für die Stummschaltung von Spracheingaben
 
-## Mute Speech Input Example
+Im folgenden Beispiel können Sie mit dem Mute-Knoten steuern, wann Spracheingaben innerhalb des Flows akzeptiert oder deaktiviert werden:
 
-In the following example, the Mute Node allows you to control when speech input is accepted or disabled within the Flow:
+1. Sagen Sie Node: "Hallo, Sie erhalten eine xApp".
+2. xApp: Init-Sitzungsknoten.
+3. Spracheingabe stummschalten (aktiviert).
+4. Frageknoten: "Bitte bewerten Sie Ihre Erfahrung mit der xApp auf einer Skala von 1 bis 5".<br>Wenn der STT des Stummschaltungsknotens aktiviert ist, akzeptiert der Frageknoten keine Spracheingaben oder Ziffern als Antwort. Der Benutzer muss die Bewertung auf andere Weise bereitstellen, z. B. durch Auswählen einer Zahl mithilfe von Schaltflächen oder Eingeben der Antwort. Dieser Prozess stellt sicher, dass die Spracherfassung während der Bewertungsfrage vorübergehend ausgeschaltet wird, um unbeabsichtigte Interferenzen durch Hintergrundsprache zu vermeiden.
+5. Knoten STT stummschalten (deaktiviert). <br> Nach der Bewertungsfrage wird der Mute Node STT deaktiviert, so dass die nachfolgenden Nodes Spracheingaben normal akzeptieren können.
 
-1. Say Node: `Hello, you will receive an xApp`.
-2. xApp: Init Session Node.
-3. Mute Speech Input (enabled).
-4. Question Node: `Please rate your experience with the xApp on a scale of 1 to 5`.<br>When the Mute Node STT is enabled, the question node will not accept speech inputs or digits as the answer. The user must provide the rating through other means, such as selecting a number using buttons or typing the response. This process ensures that the speech gathering is temporarily turned off during the rating question to avoid unintended interference from background speech.
-5. Mute Node STT (disabled). <br> After the rating question, the Mute Node STT is disabled, allowing the subsequent Nodes to accept speech inputs normally.
+## Beispiel für einen DTMF-Eingang stummschalten
 
-## Mute DTMF Input Example
+Im folgenden Beispiel können Sie mit dem DTMF-Eingangsknoten "DTMF stummschalten" steuern, wann der DTMF-Eingang (Dual-Tone Multi-Frequency) innerhalb des Flows akzeptiert oder deaktiviert wird:
 
-In the following example, the Mute DTMF Input Node allows you to control when DTMF (Dual-Tone Multi-Frequency) input is accepted or disabled within the Flow:
+1. Sagen Sie Node: "Willkommen im interaktiven Menü".
+2. xApp: Init-Sitzungsknoten.
+3. DTMF-Eingang stummschalten (aktiviert).
+4. Frageknoten: "Bitte wählen Sie mit Ihrer Tastatur eine Option aus dem Menü aus". <br>Wenn der DTMF-Eingangsknoten stummschalten aktiviert ist, akzeptiert der Frageknoten keine DTMF-Eingaben. Benutzer müssen mit anderen Mitteln mit dem Menü interagieren, z. B. mit Spracherkennung oder der Auswahl von Optionen über Tasten oder Touchscreen. Dadurch werden unbeabsichtigte DTMF-Eingabestörungen vermieden, während die Spracherkennung oder andere Eingabemethoden aktiv sind.
+5. DTMF-Eingang stummschalten (deaktiviert).
 
-1. Say Node: `Welcome to the interactive menu`.
-2. xApp: Init Session Node.
-3. Mute DTMF Input (enabled).
-4. Question Node: `Please select an option from the menu using your keypad`. <br>When the Mute DTMF Input Node is enabled, the Question Node will not accept DTMF inputs. Users must interact with the menu using other means, such as speech recognition or selecting options through buttons or touchscreen. This prevents unintended DTMF input interference while speech recognition or other input methods are active.
-5. Mute DTMF Input (disabled).
+Nach der Menüinteraktion wird der DTMF-Eingangsknoten stummschalten deaktiviert, sodass nachfolgende Knoten DTMF-Eingaben normal akzeptieren können.
 
-After the menu interaction, the Mute DTMF Input Node is disabled, allowing subsequent Nodes to accept DTMF inputs normally.
+## Mehr Informationen
 
-## More Information
-
-- [Generic Mute Speech Input Node](../generic-voice-nodes/mute-speech-input.md)
-- [xApps](../../xApp/overview.md)
-- [xApp Nodes](../xApp/overview.md)
+- [Generischer Spracheingabeknoten stummschalten](.. /generic-voice-nodes/mute-speech-input.md)
+- [xApps](.. /.. /xApp/overview.md)
+- [xApp-Knoten](.. /xApp/overview.md)

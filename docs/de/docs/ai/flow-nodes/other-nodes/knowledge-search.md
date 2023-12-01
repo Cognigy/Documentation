@@ -1,51 +1,48 @@
 ---
-title: "Knowledge Search"
-slug: "knowledge-search"
-description: "The Knowledge Search Node performs a content search and retrieves content from data that was previously uploaded to the knowledge store through a source file."
-hidden: false
+Titel: "Wissenssuche"
+Slug: "Wissenssuche"
+description: "Der Knowledge Search Node führt eine Inhaltssuche durch und ruft Inhalte aus Daten ab, die zuvor über eine Quelldatei in den Wissensspeicher hochgeladen wurden."
+ausgeblendet: false
 ---
 
-# Knowledge Search
+# Wissenssuche
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../release-notes/4.61.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.61-blue.svg)] (.. /.. /.. /release-notes/4.61.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/knowledge-search.png" width="80%"/>
 </figure>
 
-## Description
-<div class="divider"></div>
+## Beschreibung<div class="divider"></div>!!! danger "Deprecation des Knowledge Search Node"
+    Der Knoten ist veraltet. Um einen nahtlosen Übergang zu gewährleisten, empfehlen wir dringend, den Knoten [Search Extract Output](search-extract-output.md) zu verwenden, der die gleiche Funktionalität wie dieser enthält.
 
-!!! danger "Deprecation of the Knowledge Search Node"
-    The Node is deprecated. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node that includes the same functionality as this one.
+Dieser Knoten sucht und ruft Inhalte aus Daten ab, die zuvor in die Knowledge AI-Lösung hochgeladen wurden.
 
-This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
+Bevor Sie diesen Node verwenden, stellen Sie bitte sicher, dass Sie einen 'text-embedding-ada-002' LLM konfiguriert haben - siehe diese [Liste der unterstützten Anbieter](.. /.. /resources/build/llm.md). 
 
-Before using this Node, please ensure that you have a `text-embedding-ada-002` LLM configured - see this [list of supported providers](../../resources/build/llm.md). 
+Gehen Sie folgendermaßen vor, um dem Benutzer die Ausgabe des Knowledge Search-Knotens anzuzeigen:
 
-To display the output of the Knowledge Search Node to the user, follow these steps:
+1. Fügen Sie im Flow-Editor einen Say-Knoten unter dem Knowledge-Suchknoten hinzu.
+2. Wählen Sie im Feld **Ausgabetyp** die Option **Text** aus.
+3. Klicken Sie im Feld **Text** auf ! [Marke] (.. /.. /.. /assets/icons/token.svg) und wählen Sie das **KSearch:TopK Texts** Token aus.
+4. Klicken Sie auf **Knoten speichern**.
 
-1. In the Flow editor, add a Say Node below the Knowledge Search Node.
-2. In the **Output Type** field, select **Text**.
-3. In the **Text** field, click ![token](../../../assets/icons/token.svg) and select the **KSearch:TopK Texts** Token.
-4. Click **Save Node**.
+## Einstellungen
 
-## Settings
+### Wissensspeicher
 
-### Knowledge Store
+Wählen Sie einen Speicher aus der Liste aus, damit der Knoten die Daten abrufen kann.
 
-Select a store from the list to allow the Node to retrieve the data.
+### Such-Einstellungen
 
-### Search Settings
-
-| Parameter                     | Type          | Description                                                                                                                                                                    |
+| Parameter | Typ | Beschreibung |
 |-------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Top K                         | Number        | The Number of optimal matching chunks that the Knowledge AI solution should provide.                                                                                           |
-| Where to store the result     | Select        | The storage for the search results. Select a storage:<br> - Input - the content will be stored in the Input object.<br> - Context - the content will be stored in the Context. |
-| Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                        |
-| Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                    |
+| Nach oben K | Anzahl | Die Anzahl der optimal übereinstimmenden Chunks, die die Knowledge AI-Lösung bereitstellen soll.                                                                                           |
+| Wo soll das Ergebnis gespeichert werden? | Wählen Sie | Der Speicher für die Suchergebnisse. Wählen Sie einen Speicher aus:<br> - Eingabe - der Inhalt wird im Input-Objekt gespeichert.<br> - Kontext - der Inhalt wird im Kontext gespeichert. |
+| Eingabetaste zum Speichern des Ergebnisses | CognigyScript | Der Speicherort im Eingabeobjekt, an dem das Ergebnis gespeichert wird. Beispiel: 'input.knowledgeSearch'.                                                                        |
+| Eingabekontext zum Speichern des Ergebnisses | CognigyScript | Der Speicherort im Kontextobjekt, an dem das Ergebnis gespeichert wird. Beispiel: "context.knowledgeSearch".                                                                    |
 
-## More Information
+## Mehr Informationen
 
-- [Search Extract Output](search-extract-output.md) 
-- [Knowledge Search Overview](../../knowledge-ai/overview.md)
+- [Ausgabe des Suchextrakts](search-extract-output.md) 
+- [Übersicht über die Wissenssuche](.. /.. /wissens-ai/übersicht.md)

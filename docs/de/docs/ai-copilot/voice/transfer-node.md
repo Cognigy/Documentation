@@ -1,51 +1,51 @@
 ---
-title: "AI Copilot for Voice: Transfer Node"
-slug: "voice-agent-assist-transfer-node"
-hidden: false
+Titel: "AI Copilot for Voice: Transfer Node"
+Slug: "Voice-Agent-Assist-Transfer-Knoten"
+ausgeblendet: false
 ---
 
-# AI Copilot for Voice: Transfer Node
+# KI-Copilot für Sprache: Übertragungsknoten
 
 {! _includes/agent-assist/genesys-note.md !}
 
-When using the Cognigy Voice Gateway, add a [Transfer](../../ai/flow-nodes/vg/transfer.md) Node to hand over the call to a human agent. 
+Wenn Sie das Cognigy Voice Gateway verwenden, fügen Sie ein [Transfer](.. /.. /ai/flow-nodes/vg/transfer.md) Knoten, um den Anruf an einen menschlichen Agenten zu übergeben. 
 
-To transfer the call, select the **Dial** option to remain in the session and transcribe the audio streams.
+Um den Anruf weiterzuleiten, wählen Sie die Option **Wählen** aus, um in der Sitzung zu bleiben und die Audiostreams zu transkribieren.
 
-## Enable Copilot
+## Copilot aktivieren
 
-The toggle to enable Copilot will create a UUIValue. This UUIValue creates the AI Copilot URL, which will be sent to the Contact Center when transferring via SIP Headers.
+Mit dem Schalter zum Aktivieren von Copilot wird eine UUIValue erstellt. Diese UUIValue erstellt die AI Copilot URL, die bei der Übertragung über SIP Header an das Contact Center gesendet wird.
 
-The UUIValue has the following structure: `${AICopilotBaseUrl}/?userId=${userId}&sessionId=${sessionId}&URLToken=${URLToken}`
+Die UUIValue hat die folgende Struktur: '${AICopilotBaseUrl}/?userId=${userId}&sessionId=${sessionId}&URLToken=${URLToken}'
 
-## Transcription
+## Transkription
 
-In this Transfer Node, you need to enable the transcription of audio streams. You can choose between three options:
+In diesem Übertragungsknoten müssen Sie die Transkription von Audiostreams aktivieren. Sie können zwischen drei Optionen wählen:
 
-- **Caller** — the customer audio stream.
-- **Called** — the human agent audio stream.
-- **Caller/Called** — the customer and the human agent audio stream.
+- **Anrufer** – der Audiostream des Kunden.
+- **Called** — der Audiostream des menschlichen Agenten.
+- **Anrufer/Angerufen** – der Audiostream des Kunden und des menschlichen Agenten.
 
-## Transcription Webhook
+## Transkriptions-Webhook
 
-The **Transcription Webhook** should be set to the Endpoint URL of the [Voice Copilot](../../ai/endpoints/voice-copilot.md) Endpoint
-that the AI Copilot Workspace Flow utilizes for sending transcriptions.
+Der **Transkriptions-Webhook** sollte auf die Endpunkt-URL des [Voice Copilot](.. /.. /ai/endpoints/voice-copilot.md) Endpunkt
+, die der AI Copilot Workspace Flow zum Senden von Transkriptionen verwendet.
 
-## Custom SIP Headers
+## Benutzerdefinierte SIP-Header
 
-Activate the **Enable Copilot** toggle to generate a Header Key. This header key is used to submit the UUIValue. Note that the Header Key should align with the requirements of your Contact Center. For example, the header key for Genesys Cloud CX is `User-to-User`.
+Aktivieren Sie den Schalter **Copilot aktivieren**, um einen Header-Schlüssel zu generieren. Dieser Headerschlüssel wird verwendet, um die UUIValue zu übermitteln. Beachten Sie, dass der Header-Schlüssel mit den Anforderungen Ihres Contact Centers übereinstimmen sollte. Der Header-Schlüssel für Genesys Cloud CX lautet beispielsweise "User-to-User".
 
-## More Information for Voice Use Cases
+## Weitere Informationen für Voice-Anwendungsfälle
 
-- [Voice Copilot](../../ai/endpoints/voice-copilot.md)
-- [AI Copilot for Voice](voice-overview.md)
+- [Sprach-Copilot](.. /.. /ai/endpoints/voice-copilot.md)
+- [KI-Copilot für Sprache](voice-overview.md)
 
-## More general information
+## Weitere allgemeine Informationen
 
-- [AI Copilot Workspace](../overview.md)
-- [Getting started with AI Copilot](../getting-started.md)
-- [AI Copilot Configuration](../configuration.md)
-- [AI Copilot Nodes](../../ai/flow-nodes/ai-copilot/overview.md)
-- [AI Copilot Embedding](../embedding.md)
-- [AI Copilot for Chat](../chat.md)
-- [Integration with Contact Centers](../contact-center-integration.md)
+- [AI Copilot Workspace](.. /overview.md)
+- [Erste Schritte mit AI Copilot](.. /getting-started.md)
+- [Konfiguration des KI-Copiloten](.. /configuration.md)
+- [KI-Copilot-Knoten](.. /.. /ai/flow-nodes/ai-copilot/overview.md)
+- [KI-Copilot-Einbettung](.. /embedding.md)
+- [KI-Copilot für Chat](.. /chat.md)
+- [Integration mit Contact Centern](.. /contact-center-integration.md)
