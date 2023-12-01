@@ -1,7 +1,7 @@
 ---
-title: "Say" 
+Titel: "Say" 
 slug: "say" 
-hidden: false 
+ausgeblendet: false 
 ---
 
 # Say
@@ -10,322 +10,321 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/say.png" width="80%" />
 </figure>
 
-## Description
+## Beschreibung
 <div class="divider"></div>
-A Say Node is used to send a message to the user.
+Ein Say-Knoten wird verwendet, um eine Nachricht an den Benutzer zu senden.
 
-Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
+Je nach aktuellem Kanal stehen weitere Rich-Media-Formate zur Verfügung. Fügen Sie eine neue Kanalausgabe hinzu, indem Sie auf das Symbol **+** klicken und den Kanal auswählen, der dem Kanalendpunkt entspricht, der bereitgestellt werden soll.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ea04ba5-channels.jpg" width="80%" />
-  <figcaption>The say node menu with all channel output types enabled.</figcaption>
+  <figcaption>Das Knotenmenü "Sagen" mit aktivierten Kanalausgangstypen.</figcaption>
 </figure>
 
-If there is a Channel-specific configuration for the current Channel, this configuration will be used *instead* of the one on the default section.
+Wenn es eine kanalspezifische Konfiguration für den aktuellen Kanal gibt, wird diese Konfiguration *anstatt* der Konfiguration im Standardabschnitt verwendet.
 
-## AI (default channel) 
+## KI (Standardkanal) 
 <div class="divider"></div>
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/894062b-1AI.jpg" width="100%" />
 </figure>
 
+!!! Tipp "Automatische Konvertierung in kanalspezifische Ausgabe"
+    Falls Rich Media auf der Standard-KI-Registerkarte konfiguriert ist, versucht die Plattform, die Ausgabe automatisch in das Äquivalent des Kanals zu konvertieren. Überprüfen Sie den spezifischen Ausgabetyp oben, um die Kanalunterstützung zu überprüfen.
 
-!!! tip "Automatic Conversion to Channel Specific Output"
-    In case rich media is configured in the default AI tab, the platform will attempt to automatically convert the output to the channel's equivalent. Check the specific Output Type above to verify channel support.
+!!! Warnung "Fallback-Text"
+    Falls die automatische Konvertierung in kanalspezifische Ausgabe nicht stattfinden kann, wird der Fallback-Text ausgelöst.
 
-!!! warning "Fallback Text"
-    In case the automatic conversion to channel specific output cannot take place, the Fallback Text will be triggered.
-
-## Output Types
+## Ausgabe-Typen
 <div class="divider"></div>
 
-The AI Channel allows for the configuration of different **Output Types**. Not all [endpoints](../../endpoints/overview.md) can correctly convert your content to the desired output type. Before configuration, [check the compatibility](../../endpoints/content-conversion.md) of the output type with the endpoint.
+Der AI-Kanal ermöglicht die Konfiguration verschiedener **Ausgabetypen**. Nicht alle [Endpunkte](.. /.. /endpoints/overview.md) können Ihre Inhalte korrekt in den gewünschten Ausgabetyp konvertieren. Vor der Konfiguration [Kompatibilität prüfen](.. /.. /endpoints/content-conversion.md) des Ausgabetyps mit dem Endpunkt.
 
 ### Text
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6746960-node-say.jpg" width="100%" />
 </figure>
 
-The **Text** Output Type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript]({{config.site_url}}/ai/tools/cognigy-script/) and [Tokens]({{config.site_url}}/ai/resources/manage/tokens/) that can be added by clicking the **AI** button at the end of each field.
+Der Ausgabetyp **Text** rendert Text und Emojis (sofern vom Kanal unterstützt). Das Textfeld unterstützt auch [CognigyScript]({{config.site_url}}/ai/tools/cognigy-script/) und [Tokens]({{config.site_url}}/ai/resources/manage/tokens/), die durch Klicken auf die Schaltfläche **AI** am Ende jedes Feldes hinzugefügt werden können.
 
-!!! tip "Channel Support"
-    The **Text** Output Type is currently converted to compatible output on all channels. Keep in mind that **emojis** may not render properly on all channels.
+!!! Tipp "Kanal-Unterstützung"
+    Der **Text**-Ausgabetyp wird derzeit auf allen Kanälen in eine kompatible Ausgabe konvertiert. Beachten Sie, dass **Emojis** möglicherweise nicht auf allen Kanälen richtig gerendert werden.
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9f49b00-OutputTypeText.jpg" width="100%" />
 </figure>
 
-Multiple text messages can be added for conversational variation. When multiple text messages are configured, the delivery order is controlled by the *linear* and *loop* settings available in the ***options*** dropdown menu.
+Mehrere Textnachrichten können hinzugefügt werden, um die Konversation zu variieren. Wenn mehrere Textnachrichten konfiguriert sind, wird die Versandreihenfolge durch die Einstellungen *linear* und *Schleife* gesteuert, die im Dropdown-Menü ***Optionen*** verfügbar sind.
 
-!!! warning "Using Multiple Text Outputs"
-    By configuring multiple messages in a text say node, only one message will be delivered per activation of the node. An additional say node must be configured in order to send two text messages at once.
+!!! Warnung "Verwenden mehrerer Textausgaben"
+    Durch die Konfiguration mehrerer Nachrichten in einem Textknoten wird nur eine Nachricht pro Aktivierung des Knotens zugestellt. Ein zusätzlicher Say-Knoten muss konfiguriert werden, um zwei Textnachrichten gleichzeitig zu senden.
 
-#### Text Options
+#### Text-Optionen
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37689d0-SayOptions.jpg" width="100%" />
 </figure>
 
-When sending simple text output, Cognigy.AI dialog nodes provide options for configuring the behavior of output and attaching data to the message. The configuration options and their functions are listed below:
+Beim Senden einer einfachen Textausgabe bieten Cognigy.AI Dialogknoten Optionen zum Konfigurieren des Ausgabeverhaltens und zum Anhängen von Daten an die Nachricht. Die Konfigurationsmöglichkeiten und ihre Funktionen sind im Folgenden aufgeführt:
 
-| Parameter | Type   | Description                                                                                                                                                     |
+| Parameter | Typ | Beschreibung |
 |-----------|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Linear    | toggle | Iterates through the text options linearly instead of randomly.                                                                                                 |
-| Loop      | toggle | If `linear` is set, the order restarts at the first text response after reaching the end. Otherwise the last text option will be repeatedly used, once reached. |
-| Data      | JSON   | The data you want to send to the client                                                                                                                         |
+| Linear | Umschalten | Iteriert linear und nicht zufällig durch die Textoptionen.                                                                                                 |
+| Schleife | Umschalten | Wenn 'linear' gesetzt ist, beginnt die Reihenfolge bei der ersten Textantwort nach Erreichen des Endes neu. Andernfalls wird die letzte Textoption wiederholt verwendet, sobald sie erreicht ist. |
+| Daten | JSON | Die Daten, die Sie an den Client senden möchten |
 
-!!! note "Linear and Loop"
-    There are three different combinations of applying the Linear and Loop toggles, each providing a different behavior style for the order in which messages are delivered on future activation of the same node. The three combinations are:
+!!! Hinweis "Linear und Loop"
+    Es gibt drei verschiedene Kombinationen der Umschalter "Linear" und "Schleife", die jeweils einen anderen Verhaltensstil für die Reihenfolge bereitstellen, in der Nachrichten bei der zukünftigen Aktivierung desselben Knotens zugestellt werden. Die drei Kombinationen sind:
 
-    * Random (for example, 4, 2, 5, 4, 4, 2, 5, 1, ...)
-    * Linear + non-looping (for example, 1, 2, 3, 4, 5, 5, 5, 5...)
-    * Linear + looping (for example, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...)
-### Text with Quick Replies
+* Zufällig (z. B. 4, 2, 5, 4, 4, 2, 5, 1, ...)
+    * Linear + ohne Schleife (z. B. 1, 2, 3, 4, 5, 5, 5, 5...)
+    * Linear + Schleife (z. B. 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...)
+### Text mit Schnellantworten
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/5f55583-say-node-qr.jpg" width="100%" />
 </figure>
 
-Text with Quick Replies can be used to show the user a number of configurable Quick Replies. Quick Replies are pre-defined answers that are rendered as input chips.
+Text mit Schnellantworten kann verwendet werden, um dem Benutzer eine Reihe von konfigurierbaren Schnellantworten anzuzeigen. Schnellantworten sind vordefinierte Antworten, die als Eingabechips gerendert werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/01d80fd-Say_Node_quick_replies_2.jpg" width="50%" />
 </figure>
 
-The click action can be configured to be **Phone Number** or **Send Postback**.
+Die Klickaktion kann als **Telefonnummer** oder **Postback senden** konfiguriert werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3dbf220-select_button_type.jpg" width="50%" />
 </figure>
 
-#### Postback Value
-When a **Postback Value** is configured and the **Quick Reply** is clicked, the Postback Value will be sent to the start of the Flow. This simulates user input - it is "as if" the user would have manually typed something. This is the most typical behavior for Quick Replies.
+#### Postback-Wert
+Wenn ein **Postback-Wert** konfiguriert ist und auf **Schnellantwort** geklickt wird, wird der Postback-Wert an den Anfang des Flows gesendet. Dadurch wird eine Benutzereingabe simuliert - es ist so, als ob der Benutzer etwas manuell eingegeben hätte. Dies ist das typischste Verhalten für Schnellantworten.
 
-#### Phone Number
-When this option is configured, clicking the Quick Reply will try to open the phone application on the device.
+#### Telefonnummer
+Wenn diese Option konfiguriert ist, wird durch Klicken auf die Schnellantwort versucht, die Telefonanwendung auf dem Gerät zu öffnen.
 
-#### Trigger Intent
-The Trigger Intent feature allows you to manually trigger an Intent by writing cIntent:, followed by the desired intent name in your text input, the regular Intent mapping will be ignored.
-More information see [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/)
+#### Trigger-Absicht
+Mit der Funktion "Trigger Intent" können Sie einen Intent manuell auslösen, indem Sie cIntent: gefolgt vom gewünschten Intent-Namen in Ihre Texteingabe schreiben, die reguläre Intent-Zuordnung wird ignoriert.
+Weitere Informationen finden Sie unter [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/)
 
-!!! warning "Channel Support"
-    The **Text with Quick Replies** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
-### Gallery
+!!! Warnung "Channel-Unterstützung"
+    Der Ausgabetyp **Text mit Schnellantworten** wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** und **RingCentral Engage**.
+### Galerie
 
-Galleries are powerful visual widgets that are ideal for showing a list of options with images. They are typically used to show a number of products or other items that can be browsed.
+Galerien sind leistungsstarke visuelle Widgets, die sich ideal zum Anzeigen einer Liste von Optionen mit Bildern eignen. Sie werden in der Regel verwendet, um eine Reihe von Produkten oder anderen Artikeln anzuzeigen, die durchsucht werden können.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/243f107-Say_order_taxi_2.PNG" width="100%" />
 </figure>
 
-A gallery can be configured with a number of cards. A card contains an image, a title and a subtitle and can be configured with (optional) buttons.
+Eine Galerie kann mit einer Reihe von Karten konfiguriert werden. Eine Karte enthält ein Bild, einen Titel und einen Untertitel und kann mit (optionalen) Schaltflächen konfiguriert werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/cd2a3a1-SAY_gallery_cards_1.PNG" width="75%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Gallery** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
-### Text with Buttons
+!!! Warnung "Channel-Unterstützung"
+    Der Ausgabetyp **Gallery** wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** und **RingCentral Engage**.
+### Text mit Schaltflächen
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c7c32f9-say-buttons.jpg" width="100%" />
 </figure>
 
-**Text with Buttons** is a similar **Output Type** to **Text with Quick Replies**. The difference comes from the way the widget is rendered, which resembles a vertical list of button options. It can be configured in a similar fashion.
+**Text mit Schaltflächen** ist ein ähnlicher **Ausgabetyp** wie **Text mit Schnellantworten**. Der Unterschied ergibt sich aus der Art und Weise, wie das Widget gerendert wird, die einer vertikalen Liste von Schaltflächenoptionen ähnelt. Es kann auf ähnliche Weise konfiguriert werden.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6554383-textbuttons.PNG" width="75%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Text with Buttons** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
-### List
+!!! Warnung "Channel-Unterstützung"
+    Der Ausgabetyp **Text mit Schaltflächen** wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** und **RingCentral Engage**.
+### Liste
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1c5a0c7-list1.PNG" width="100%" />
 </figure>
 
-**List** output allows a customized list of items to be displayed with many configuration options such as the header image, buttons, images and more. 
+Die **Listen**-Ausgabe ermöglicht die Anzeige einer benutzerdefinierten Liste von Elementen mit vielen Konfigurationsoptionen wie dem Header-Bild, Schaltflächen, Bildern und mehr. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/782c02f-list2.PNG" width="100%" />
 </figure>
 
-The first list item can optionally be converted to a header item that houses the list title, subtitle and button. Each additional list item can have a title, subtitle, image and button added. The list can also have a button added at the bottom.
+Das erste Listenelement kann optional in ein Headerelement konvertiert werden, das den Listentitel, den Untertitel und die Schaltfläche enthält. Jedem zusätzlichen Listenelement können ein Titel, ein Untertitel, ein Bild und eine Schaltfläche hinzugefügt werden. Der Liste kann auch eine Schaltfläche am unteren Rand hinzugefügt werden.
 
-!!! warning "Channel Support"
-    The **List** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Azure Bot Services**, **RingCentral Engage**, **UserLike** and **Line**.
+!!! Warnung "Channel-Unterstützung"
+    Der Ausgabetyp **Liste** wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: **Webchat**, **Azure Bot Services**, **RingCentral Engage**, **UserLike** und **Line**.
 ### Audio
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7c58ec2-node-audio.jpg" width="100%" />
 </figure>
 
-The **Audio Output Type** can render audio output in case this is supported by the channel. It can be configured, by providing it with a URL to an audio file.
+Der **Audioausgabetyp** kann die Audioausgabe rendern, falls dies vom Kanal unterstützt wird. Es kann konfiguriert werden, indem es mit einer URL zu einer Audiodatei versehen wird.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/86d62bf-audio.jpg" width="100%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Audio** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
-### Image
+!!! Warnung "Channel-Unterstützung"
+    Der **Audioausgabetyp** wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
+### Bild
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/506f002-Say_image.svg" width="100%" />
 </figure>
 
-Image Output Types display an image in a similar fashion to the gallery. The image output, however, only outputs one particular image.
+Bildausgabetypen zeigen ein Bild auf ähnliche Weise wie die Galerie an. Die Bildausgabe gibt jedoch nur ein bestimmtes Bild aus.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c8fd6f9-Output_Type_image.svg" width="100%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Image** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
-### Video
+!!! Warnung "Channel-Unterstützung"
+    Der Ausgabetyp "Bild" wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: "Webchat", "Messenger", "Line**", "Azure Bot Service", "Sunshine Conversations", "Slack".
+### Zum Video
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f8b5cdf-Say_video.svg" width="100%" />
 </figure>
 
-The Video Output Type allows you to configure a video output. It takes a URL as an input parameter and will start playing the video automatically if this is supported by the channel.
+Mit dem Videoausgabetyp können Sie eine Videoausgabe konfigurieren. Es akzeptiert eine URL als Eingabeparameter und beginnt automatisch mit der Wiedergabe des Videos, wenn dies vom Kanal unterstützt wird.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f71165b-Output_Type_video.svg" width="100%" />
 </figure>
 
-!!! warning "Channel Support"
-    The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
+!!! Warnung "Channel-Unterstützung"
+    Der Ausgabetyp **Video** wird derzeit in eine kompatible Ausgabe auf allen folgenden Kanälen konvertiert: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
     
-    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, Youtube links might not work).
+**BITTE BEACHTEN**: Der **Messenger**-Kanal erfordert, dass Videos vom Typ MP4 sind (z. B. funktionieren Youtube-Links möglicherweise nicht).
 
-!!! note "CognigyScript"
-    Any text field in the say node supports the use of **CognigyScript**. 
+!!! Hinweis "CognigyScript"
+    Jedes Textfeld im say-Knoten unterstützt die Verwendung von **CognigyScript**. 
     
-    For detailed instructions, read the Chapter on [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
+Eine detaillierte Anleitung finden Sie im Kapitel [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
 
-### Adaptive Card
+### Adaptive Karte
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../../release-notes/4.56.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.56-blue.svg)] (.. /.. /.. /release-notes/4.56.md)
 
-The Adaptive Card Type allows you to configure an adaptive card output. Adaptive Cards offer customization options, support for rich media (images, video, and audio), ease of use with a simple JSON schema, and the ability to create dynamic content for users to match their specific needs and branding. 
+Mit dem adaptiven Kartentyp können Sie eine adaptive Kartenausgabe konfigurieren. Adaptive Karten bieten Anpassungsoptionen, Unterstützung für Rich Media (Bilder, Video und Audio), Benutzerfreundlichkeit mit einem einfachen JSON-Schema und die Möglichkeit, dynamische Inhalte für Benutzer zu erstellen, die ihren spezifischen Anforderungen und ihrem Branding entsprechen. 
 
-To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecards.io/designer). Customize the existing JSON, then copy and paste it into the code editor. If JSON is correct, you will see the adaptive card rendered under the code editor.
+Um eine adaptive Karte zu erstellen, verwenden Sie den [Designer adaptiver Karten](https://adaptivecards.io/designer). Passen Sie den vorhandenen JSON-Code an, kopieren Sie ihn und fügen Sie ihn in den Code-Editor ein. Wenn JSON korrekt ist, wird die adaptive Karte im Code-Editor gerendert.
 
-!!! warning
-    Cognigy supports the limited number of versions for Adaptive Card, so using the latest versions may cause issues. We recommend using [supported versions](../../endpoints/content-conversion.md) for better compatibility.
+!!! Warnung
+    Cognigy unterstützt die begrenzte Anzahl von Versionen für die adaptive Karte, so dass die Verwendung der neuesten Versionen zu Problemen führen kann. Wir empfehlen die Verwendung von [unterstützte Versionen](.. /.. /endpoints/content-conversion.md) für eine bessere Kompatibilität.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
 </figure>
 
-??? info "Adaptive Card JSON example"
+??? info "JSON-Beispiel für eine adaptive Karte"
 
-      ```json    
+'''json    
       {
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "type": "AdaptiveCard",
         "version": "1.0",
-        "body": [
+        "Körper": [
           {
             "type": "TextBlock",
-            "size": "Medium",
-            "weight": "Bolder",
-            "text": "Publish Adaptive Card Schema"
+            "size": "Mittel",
+            "weight": "Mutiger",
+            "text": "Adaptives Kartenschema veröffentlichen"
           },
           {
-            "type": "ColumnSet",
-            "columns": [
+            "type": "Spaltensatz",
+            "Spalten": [
               {
-                "type": "Column",
-                "items": [
+                "type": "Spalte",
+                "Gegenstände": [
                   {
-                    "type": "Image",
+                    "type": "Bild",
                     "style": "Person",
                     "url": "https://pbs.twimg.com/profile_images/3647943215/d7f12830b3c17a5a9e4afcc370e3a37e_400x400.jpeg",
-                    "size": "Small"
+                    "size": "Klein"
                   }
                 ],
                 "width": "auto"
               },
               {
-                "type": "Column",
-                "items": [
+                "type": "Spalte",
+                "Gegenstände": [
                   {
                     "type": "TextBlock",
-                    "weight": "Bolder",
+                    "weight": "Mutiger",
                     "text": "Matt Hidinger",
-                    "wrap": true
+                    "wrap": wahr
                   },
                   {
                     "type": "TextBlock",
-                    "spacing": "None",
-                    "text": "Created Tue, Feb 14, 2017",
-                    "isSubtle": true,
-                    "wrap": true
+                    "spacing": "Keine",
+                    "text": "Erstellt Di, Feb 14, 2017",
+                    "isSubtle": wahr,
+                    "wrap": wahr
                   }
                 ],
-                "width": "stretch"
+                "width": "dehnen"
               }
             ]
           },
           {
             "type": "TextBlock",
-            "text": "Publish Adaptive Card Schema easily.",
-            "wrap": true
+            "text": "Adaptives Kartenschema einfach veröffentlichen.",
+            "wrap": wahr
           },
           {
             "type": "Action.OpenUrl",
-            "title": "View",
+            "title": "Ansicht",
             "url": "https://adaptivecards.io"
           }
         ]
       }
-      ```
-#### Create an Adaptive Card with Generative AI
+      '''
+#### Erstellen einer adaptiven Karte mit generativer KI
 
-You can also use Generative AI to create a new adaptive card or improve an existing one. Before using it, ensure that you are connected to one of the [Generative AI providers](../../generative-ai.md#prerequisites).
+Sie können auch generative KI verwenden, um eine neue adaptive Karte zu erstellen oder eine vorhandene Karte zu verbessern. Stellen Sie vor der Verwendung sicher, dass Sie mit einem der [Anbieter generativer KI] (.. /.. /generative-ai.md#prerequisites).
 
-To activate this feature, follow these steps: 
+Um diese Funktion zu aktivieren, gehen Sie folgendermaßen vor: 
 
-1. Select the **Adaptive Card** output type.
-2. On the right side of the **Output type** list, click ![the Gen AI Icon](../../../assets/icons/beta.svg).
-3. In the **Generate Node Output** section, instruct the Generative AI model how to improve the current Adaptive Card. For example, `Create a form with a customer name field and a date input field`.
-4. Click **Generate**. The adaptive card will be generated.
-5. Iteratively improve the resulting Adaptive Card by giving further instructions in the **Generate Node Output** section. For example, `Add a flight number field`.
-6. Click **Generate**. The existing adaptive card will be updated.
+1. Wählen Sie den Ausgabetyp **Adaptive Karte** aus.
+2. Klicken Sie auf der rechten Seite der Liste **Ausgabetyp** auf ! [das Gen-KI-Symbol] (.. /.. /.. /assets/icons/beta.svg).
+3. Weisen Sie im Abschnitt **Knotenausgabe generieren** das generative KI-Modell an, wie die aktuelle adaptive Karte verbessert werden kann. Beispiel: "Erstellen Sie ein Formular mit einem Feld für den Kundennamen und einem Eingabefeld für das Datum".
+4. Klicken Sie auf **Generieren**. Die adaptive Karte wird generiert.
+5. Verbessern Sie iterativ die resultierende adaptive Karte, indem Sie im Abschnitt **Knotenausgabe generieren** weitere Anweisungen geben. Beispiel: "Fügen Sie ein Flugnummernfeld hinzu".
+6. Klicken Sie auf **Generieren**. Die vorhandene adaptive Karte wird aktualisiert.
 
-To navigate between your inputs, use ![back arrow](../../../assets/icons/back-arrow.svg) ![beta](../../../assets/icons/next-arrow.svg).
+Um zwischen Ihren Eingaben zu navigieren, verwenden Sie ! [Pfeil zurück] (.. /.. /.. /assets/icons/back-arrow.svg) ! [beta] (.. /.. /.. /assets/icons/next-arrow.svg).
 
-To replace the current Adaptive Card with a new one, click ![recycle bin](../../../assets/icons/recycle-bin.svg).
+Um die aktuelle adaptive Karte durch eine neue zu ersetzen, klicken Sie auf ! [Papierkorb] (.. /.. /.. /assets/icons/recycle-bin.svg).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
 </figure>
 
-??? info "Generative AI Adaptive Card JSON example"
+??? info "JSON-Beispiel für eine adaptive KI-Karte"
 
-    ```json
+'''json
     {
       "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
       "type": "AdaptiveCard",
       "version": "1.0",
-      "body": [
+      "Körper": [
         {
           "type": "TextBlock",
-          "text": "Customer Form"
+          "text": "Kundenformular"
         },
         {
           "type": "Input.Text",
-          "id": "customerName",
-          "placeholder": "Enter customer name"
+          "id": "Kundenname",
+          "placeholder": "Kundennamen eingeben"
         },
         {
-          "type": "Input.Date",
+          "type": "Eingabe.Datum",
           "id": "dateInput",
-          "placeholder": "Enter date"
+          "placeholder": "Datum eingeben"
         },
         {
           "type": "Input.Text",
-          "id": "flightNumber",
-          "placeholder": "Enter flight number"
+          "id": "Flugnummer",
+          "placeholder": "Flugnummer eingeben"
         }
       ]
     }
-    ```
+    '''
 
 ## Alexa
 <div class="divider"></div>
@@ -334,90 +333,90 @@ To replace the current Adaptive Card with a new one, click ![recycle bin](../../
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1ebe307-alexa.jpg" width="100%" />
 </figure>
 
-Defines what an Amazon Echo enabled system will say as an answer. 
+Definiert, was ein Amazon Echo-fähiges System als Antwort sagt. 
 
-### SSML Editor
+### SSML-Editor
 
-In addition to regular text output, Alexa supports SSML which enables the admin to define the way the output is pronounced.
+Zusätzlich zur normalen Textausgabe unterstützt Alexa SSML, mit dem der Administrator die Art und Weise definieren kann, wie die Ausgabe ausgesprochen wird.
 
-!!! warning "Multiple voice outputs"
-    If more than one Say Node is hit in one Flow execution using the Alexa Channel, each Say Nodes' SSML (or text) outputs will be concatenated and sent as one large SSML statement.
+!!! Warnung "Mehrere Sprachausgaben"
+    Wenn mehr als ein Say-Knoten in einer Flow-Ausführung mit dem Alexa-Kanal getroffen wird, werden die SSML-Ausgaben (oder Textausgaben) der einzelnen Say-Knoten verkettet und als eine große SSML-Anweisung gesendet.
 
-!!! note "CognigyScript in SSML"
-    You can also use CognigyScript expressions within SSML parameters.
-### Home Cards
+!!! Hinweis "CognigyScript in SSML"
+    Sie können auch CognigyScript-Ausdrücke in SSML-Parametern verwenden.
+### Home Karten
 
-!!! warning "Multiple Cards"
-    If more than one Card is being output during one Flow execution, only the last one will be sent.
+!!! Warnung "Mehrere Karten"
+    Wenn während einer Flow-Ausführung mehr als eine Karte ausgegeben wird, wird nur die letzte Karte gesendet.
 
-Defines an optional additional Card that is available to the user through a connected Alexa app. They can be used to provide additional information that is not perceptible without a screen.
+Definiert eine optionale zusätzliche Karte, die dem Benutzer über eine verbundene Alexa-App zur Verfügung steht. Sie können verwendet werden, um zusätzliche Informationen bereitzustellen, die ohne Bildschirm nicht wahrnehmbar sind.
 
-The following Card Templates are available:
+Die folgenden Kartenvorlagen sind verfügbar:
 
-- Text
-- Text & Image
-- Link Account
-### Display Templates for Echo Show
+-Text
+- Text & Bild
+- Konto verknüpfen
+### Anzeigevorlagen für Echo Show
 
-If more than one Display configuration is being output during one Flow execution, only the last one will be sent.
+Wenn während einer Flow-Ausführung mehr als eine Anzeigekonfiguration ausgegeben wird, wird nur die letzte gesendet.
 
-Defines content that will be shown on Amazon Echo Show devices.
+Definiert Inhalte, die auf Amazon Echo Show-Geräten angezeigt werden.
 
-The following Display Templates are available:
+Die folgenden Anzeigevorlagen stehen zur Verfügung:
 
-* Full-width Text
-* Text & Image right
-* Text & Image left
-* Image & Text overlay
-* Vertical List
-* Horizontal List
+* Text in voller Breite
+* Text & Bild rechts
+* Text & Bild links
+* Bild- und Text-Overlay
+* Vertikale Liste
+* Horizontale Liste
 
-### Custom JSON Directives
+### Benutzerdefinierte JSON-Direktiven
 
-Instead of going with the WYSIWYG approach, you may also define a directive manually using a CognigyScript-enabled JSON field.
+Anstatt den WYSIWYG-Ansatz zu verwenden, können Sie eine Direktive auch manuell mit einem CognigyScript-fähigen JSON-Feld definieren.
 
-For further details see the [Amazon Alexa Documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).
+Weitere Informationen finden Sie in der [Amazon Alexa-Dokumentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).
 
-## Messenger
+## Bote
 <div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/16b8fc7-messenger.jpg" width="100%" />
-    <div style="text-align: center;"><a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api" target="_blank">Link: Messenger Send API</a></div>
+    <div style="text-align: center;"><a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api" target="_blank">Link: Messenger-Sende-API</a></div>
 </figure>
 
-Defines Templates that can be displayed in a special way in the Facebook Messenger Channel.
+Definiert Vorlagen, die im Facebook Messenger Channel auf besondere Weise angezeigt werden können.
 
-The following Facebook Messenger Templates are available:
+Die folgenden Facebook Messenger-Vorlagen sind verfügbar:
 
-- Text & Quick Replies
-- Buttons
-- Gallery
-- Attachment
-- List
+- Text & Schnellantworten
+-Tasten
+-Galerie
+-Anhang
+-Liste
 
-!!! tip "Output any Facebook JSON"
-    Instead of using the UI functions provided by Cognigy, you can also output arbitrary JSON by selecting **Custom JSON** as the Type. This lets you see the JSON you compiled through Cognigy and modify it or add to it.
+!!! Tipp: "Geben Sie beliebiges Facebook-JSON aus"
+    Anstatt die von Cognigy bereitgestellten UI-Funktionen zu verwenden, können Sie auch beliebigen JSON-Code ausgeben, indem Sie **Benutzerdefiniertes JSON** als Typ auswählen. Auf diese Weise können Sie den JSON-Code, den Sie mit Cognigy kompiliert haben, anzeigen und ändern oder hinzufügen.
 
-!!! tip "Using Code Nodes to output Facebook Markup"
-    You can use the output action in Code Nodes to send JSON directly to Facebook. To do that, set the following code as the data property:
+!!! Tipp "Verwenden von Code-Nodes zur Ausgabe von Facebook-Markup"
+    Sie können die Ausgabeaktion in Codeknoten verwenden, um JSON direkt an Facebook zu senden. Legen Sie dazu den folgenden Code als data-Eigenschaft fest:
 
-    ```JSON
+'''JSON
     {
       "_cognigy": {
         "_facebook": {      
-          "message": {
-            // this contains your message to facebook
+          "Nachricht": {
+            Diese enthält Ihre Nachricht an Facebook
           }
         }
       }
     }
-    ``` 
+    ''' 
 
-    See more under [Code Nodes]({{config.site_url}}ai/flow-nodes/code/code/)
+Weitere Informationen finden Sie unter [Code Nodes]({{config.site_url}}ai/flow-nodes/code/code/)
 
-!!! danger "Location Button Deprecation"
-    The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
+!!! danger "Verwerfung der Standortschaltfläche"
+    Der Schnellantwort-Button "Standort", um den Standort eines Benutzers zu senden, wurde vom Facebook Messenger als veraltet markiert und ist nicht mehr verfügbar. Entferne es, wenn du es in einem älteren Flow hast, da Facebook Messenger die vollständige Nachricht ablehnt, wenn noch eine Schnellantwort für den Standort definiert ist.
 
 ## Webchat
 <div class="divider"></div>
@@ -426,12 +425,12 @@ The following Facebook Messenger Templates are available:
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/26ca2e8-webchat.jpg" width="100%" />
 </figure>
 
-The Webchat Channel features the configuration options of our Facebook integration.
+Der Webchat-Kanal bietet die Konfigurationsmöglichkeiten unserer Facebook-Integration.
 
-As the output format is the same, you can configure the Webchat Channel to use your output from the Facebook tab or manually override it for Webchat-specific customization.
+Da das Ausgabeformat identisch ist, können Sie den Webchat-Kanal so konfigurieren, dass er Ihre Ausgabe aus dem Facebook-Tab verwendet, oder ihn manuell für Webchat-spezifische Anpassungen überschreiben.
 
-The Webchat will render HTML markup for outputs from the DEFAULT tab's text as well as the text field from the Webchat tab's "Text + Quick Replies" template.
-## LINE
+Der Webchat rendert HTML-Markup für Ausgaben aus dem Text des DEFAULT-Tabs sowie das Textfeld aus der Webchat-Tab-Vorlage "Text + Quick Replies".
+## LINIE
 <div class="divider"></div>
 
 <figure>
@@ -439,56 +438,56 @@ The Webchat will render HTML markup for outputs from the DEFAULT tab's text as w
   <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE Message API</a></div>
 </figure>
 
-The **LINE** tab provides two methods for creating and editing a message which is only for the **LINE** channel:
+Die Registerkarte **LINE** bietet zwei Methoden zum Erstellen und Bearbeiten einer Nachricht, die nur für den **LINE**-Kanal gilt:
 
-- **Text** for sending text message responses
-- **Custom JSON** for defining more complex messages and templates
+- **Text** zum Senden von SMS-Antworten
+- **Benutzerdefiniertes JSON** zum Definieren komplexerer Nachrichten und Vorlagen
 
-| Type        | Description                                                                                                                                                      |
+| Typ | Beschreibung |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text        | A simple text message.                                                                                                                                           |
-| Custom JSON | Can contain a valid LINE message object. See the [Line Documentation](https://developers.line.me/en/reference/messaging-api/) for further details and templates. |
+| Text | Eine einfache Textnachricht.                                                                                                                                           |
+| Benutzerdefiniertes JSON | Kann ein gültiges LINE-Nachrichtenobjekt enthalten. Weitere Informationen und Vorlagen finden Sie in der [Leitungsdokumentation](https://developers.line.me/en/reference/messaging-api/). |
 
 ## Twilio
 <div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6404b3e-twilio.jpg" width="100%" />
-  <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio Documentation</a></div>
+  <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio-Dokumentation</a></div>
 </figure>
 
-| Type  | Description                                                                                                                                                                                                    |
+| Typ | Beschreibung |
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text  | A simple text message.                                                                                                                                                                                         |
-| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml) for further details and templates. |
+| Text | Eine einfache Textnachricht.                                                                                                                                                                                         |
+| TwiML | Kann gültiges TwiML enthalten. Weitere Informationen und Vorlagen finden Sie in der [Twilio-Dokumentation](https://www.twilio.com/docs/voice/twiml?code-sample=code-say-hello-to-an-inbound-caller&code-language=output-twiml). |
 
-!!! warning "Validate your TwiML"
-    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+!!! Warnung "Validieren Sie Ihre TwiML"
+    Stellen Sie sicher, dass die TwiML, die Sie in den Editor eingeben, gültig ist. Wenn die an Twilio gesendete TwiML ungültig ist, schlägt der Anruf sofort fehl oder kann nicht initiiert werden.
 
-    You will also have to make sure that the content of your TwiML is escaped XML.
+Sie müssen auch sicherstellen, dass der Inhalt Ihrer TwiML mit XML-Escapezeichen versehen ist.
 ### Amazon Polly Voice
 ---
-In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon Polly** voice. *Polly* has some features which are listed in Twilio documentation, see:
+Im Endpunkt-Editor Ihres **Twilio-Endpunkts** können Sie die **Amazon Polly**-Stimme auswählen. *Polly* verfügt über einige Funktionen, die in der Twilio-Dokumentation aufgeführt sind, siehe:
 
-[:link: Twilio Amazon Polly](https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
+[:link: Twilio Amazon Polly] (https://www.twilio.com/docs/voice/twiml/say/text-speech#amazon-polly)
 
 ## Twilio SMS
 <div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9819b1c-twiliosms.jpg" width="100%" />
-  <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS Documentation</a></div>
+  <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS-Dokumentation</a></div>
 </figure>
 
-| Type  | Description                                                                                                                               |
+| Typ | Beschreibung |
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Text  | A simple text message.                                                                                                                    |
-| TwiML | Can contain valid TwiML. See the [Twilio Documentation](https://www.twilio.com/docs/sms/twiml/message) for further details and templates. |
+| Text | Eine einfache Textnachricht.                                                                                                                    |
+| TwiML | Kann gültiges TwiML enthalten. Weitere Informationen und Vorlagen finden Sie in der [Twilio-Dokumentation](https://www.twilio.com/docs/sms/twiml/message). |
 
-!!! warning "Validate your TwiML"
-    Ensure that the TwiML you enter the editor is valid. If the TwiML sent to Twilio is invalid, the call will immediately fail or not be able to initiate.
+!!! Warnung "Validieren Sie Ihre TwiML"
+    Stellen Sie sicher, dass die TwiML, die Sie in den Editor eingeben, gültig ist. Wenn die an Twilio gesendete TwiML ungültig ist, schlägt der Anruf sofort fehl oder kann nicht initiiert werden.
 
-    You will also have to make sure that the content of your TwiML is escaped XML.
+Sie müssen auch sicherstellen, dass der Inhalt Ihrer TwiML mit XML-Escapezeichen versehen ist.
 ## Microsoft Teams
 <div class="divider"></div>
 
@@ -496,178 +495,177 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/892e801-teams.jpg" width="100%" />
 </figure>
 
-!!! note "Teams Cards"
-    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
-<!-- need to change the link above  -->
+!!! Hinweis "Teams-Karten"
+    Strukturierte Inhalte in Microsoft Teams werden als sogenannte Cards versendet. Informationen zum Senden von Nachrichten finden Sie auf der Seite [Bereitstellung eines Microsoft Teams-Endpunkts]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/).
+<!-- müssen den obigen Link ändern -->
 
-<div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
+<div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams-Dokumentation</a></div>
 
-| Type | Description                                                                                                                                                                                                                                                                    |
+| Typ | Beschreibung                                                                                                                                                                                                                                                                    |
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text | A simple text message.                                                                                                                                                                                                                                                         |
-| JSON | Can contain valid JSON in the Bot Framework / Microsoft Teams format. See the [Microsoft Documentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0) for further details and templates. |
+| Text | Eine einfache Textnachricht.                                                                                                                                                                                                                                                         |
+| JSON | Kann gültigen JSON-Code im Bot Framework-/Microsoft Teams-Format enthalten. Weitere Informationen und Vorlagen finden Sie in der [Microsoft-Dokumentation](https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0). |
 
-!!! warning "Multiple Flow Outputs"
-    If more than one Say Node is hit in one Flow execution using the Microsoft Teams Channel, each Say Nodes' Default Text or Microsoft Teams Text outputs will be concatenated and sent as one message. However, if one or more of the Say Nodes contain Microsoft Teams JSON, then the last node containing this JSON will be sent.
+!!! Warnung "Mehrere Durchflussausgänge"
+    Wenn mehr als ein Say-Knoten in einer Flow-Ausführung mit dem Microsoft Teams-Kanal getroffen wird, werden die Standardtext- oder Microsoft Teams-Textausgaben der einzelnen Say-Knoten verkettet und als eine Nachricht gesendet. Wenn jedoch einer oder mehrere der Say-Knoten Microsoft Teams-JSON enthalten, wird der letzte Knoten gesendet, der diesen JSON-Code enthält.
 
-## Voice Gateway
+## Sprach-Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.48-blue.svg)] (.. /.. /.. /release-notes/4.48.md)
 
-To activate a Voice Gateway channel:
+So aktivieren Sie einen Voice Gateway-Kanal:
 
-1. Go to the **Edit Node** page and click **+**.
-2. From the list, select **Voice Gateway**.
-3. In the **Text** field, add SSML markup to adjust the virtual agent's output speech.
+1. Gehen Sie zur Seite **Knoten bearbeiten** und klicken Sie auf **+**.
+2. Wählen Sie in der Liste **Voice Gateway** aus.
+3. Fügen Sie im Feld **Text** SSML-Markup hinzu, um die Ausgabesprache des virtuellen Agenten anzupassen.
 
-Starting from Cognigy 4.48, you can configure Voice Gateway settings using Activity Parameters. To do this, turn on the Set Activity Parameters toggle. You can find a description of the parameter configurations in [Voice Gateway Parameter Details](../vg/parameter-details.md).
-These configurations are also available in the following Nodes:
+Ab Cognigy 4.48 können Sie die Voice Gateway-Einstellungen mithilfe von Aktivitätsparametern konfigurieren. Aktivieren Sie dazu den Schalter Aktivitätsparameter festlegen. Eine Beschreibung der Parameterkonfigurationen finden Sie unter [Voice Gateway Parameter Details](.. /vg/parameter-details.md).
+Diese Konfigurationen sind auch in den folgenden Knoten verfügbar:
 
-- [Question](question.md)
-- [Optional Question](optional-question.md)
-- [Set Session Config](../vg/set-session-config.md)
-- [Play](../vg/play.md)
-- [Session Speech Parameters Config](../generic-voice-nodes/session-speech-parameters-config.md)
+- [Frage](question.md)
+- [Optionale Frage](optional-question.md)
+- [Sitzungskonfiguration festlegen](.. /vg/set-session-config.md)
+- [Wiedergabe](.. /vg/play.md)
+- [Konfiguration der Sitzungssprachparameter](.. /generic-voice-nodes/session-speech-parameters-config.md)
 
 ## 8x8
 
-The **8x8** tab provides three methods for creating and editing messages within the 8x8 channel.
+Die Registerkarte **8x8** bietet drei Methoden zum Erstellen und Bearbeiten von Nachrichten innerhalb des 8x8-Kanals.
 
-| Type          | Description                                                                                                                   |
+| Typ | Beschreibung |
 |---------------|-------------------------------------------------------------------------------------------------------------------------------|
-| Text          | A simple text message.                                                                                                        |
-| Custom JSON   | Can contain a valid 8x8 message object.                                                                                       |
-| Adaptive Card | Can contain an adaptive card. You can find supported versions in [Content Conversion](../../endpoints/content-conversion.md). |
+| Text | Eine einfache Textnachricht.                                                                                                        |
+| Benutzerdefiniertes JSON | Kann ein gültiges 8x8-Nachrichtenobjekt enthalten.                                                                                       |
+| Adaptive Karte | Kann eine adaptive Karte enthalten. Unterstützte Versionen finden Sie unter [Inhaltskonvertierung](.. /.. /endpoints/content-conversion.md). |
 
-??? info "Custom JSON example"
+??? info "Benutzerdefiniertes JSON-Beispiel"
     
-    ```json
+'''json
     {
-        "authorType": "customer",
-        "text": "Hello!",
-        "attachments": [
+        "authorType": "Kunde",
+        "text": "Hallo!",
+        "Anhänge": [
             {
-                "id": "string"
+                "id": "Zeichenfolge"
             }    
         ],
-        "cards": [
+        "Karten": [
             {
                 "contentType": "application/vnd.microsoft.card.adaptive",
-                "content": {}
+                "Inhalt": {}
             }
         ]
     }
-    ```
+    '''
 
 ## Genesys
 
-The **Genesys** tab provides two methods to create and edit messages that are specific to the **Genesys** channel.
+Die Registerkarte **Genesys** bietet zwei Methoden zum Erstellen und Bearbeiten von Nachrichten, die für den **Genesys**-Kanal spezifisch sind.
 
-| Type        | Description                                                                                    |
+| Typ | Beschreibung |
 |-------------|------------------------------------------------------------------------------------------------|
-| Text        | A simple text message.                                                                         |
-| Custom JSON | Can contain a valid Genesys Cloud message object. Defines more complex messages and templates. |
+| Text | Eine einfache Textnachricht.                                                                         |
+| Benutzerdefiniertes JSON | Kann ein gültiges Genesys Cloud-Nachrichtenobjekt enthalten. Definiert komplexere Nachrichten und Vorlagen. |
 
-??? info "Custom JSON example"
+??? info "Benutzerdefiniertes JSON-Beispiel"
 
-    ```json
+'''json
     {
       "replymessages": [],
-      "parameters": {
-        "command": "handover"
+      "Parameter": {
+        "command": "Übergabe"
       }
     }
-    ```
+    '''
     
-    This message suggests that the virtual agent working on the Cognigy side has finished its task. It also means that control is handed over to the logic within the [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/).
+Diese Meldung deutet darauf hin, dass der virtuelle Agent, der auf der Cognigy-Seite arbeitet, seine Aufgabe erledigt hat. Es bedeutet auch, dass die Kontrolle an die Logik innerhalb des [Genesys architect flow](https://help.mypurecloud.com/articles/use-architect-to-create-a-bot-for-an-inbound-flow/) übergeben wird.
 
-## Bandwidth
+## Bandbreite
 
-The **Bandwidth** tab provides two methods to create and edit messages that are specific to the **Bandwidth** channel.
+Die Registerkarte **Bandbreite** bietet zwei Methoden zum Erstellen und Bearbeiten von Nachrichten, die für den Kanal **Bandbreite** spezifisch sind.
 
-| Type        | Description                                                                                 |
+| Typ | Beschreibung |
 |-------------|---------------------------------------------------------------------------------------------|
-| Text        | A simple text message.                                                                      |
-| Custom JSON | Can contain a valid Bandwidth message object.  Defines more complex messages and templates. |
+| Text | Eine einfache Textnachricht.                                                                      |
+| Benutzerdefiniertes JSON | Kann ein gültiges Bandbreitennachrichtenobjekt enthalten.  Definiert komplexere Nachrichten und Vorlagen. |
 
+??? info "Benutzerdefiniertes JSON-Beispiel"
 
-??? info "Custom JSON example"
-
-    ```json
+'''json
     {
-      "activities": [
+      "Tätigkeiten": [
         {
           "id": "123456789",
           "timestamp": "1999-12-31T23:59:59.999Z",
-          "type": "message",
-          "text": "Hello. This is my message."
+          "type": "Nachricht",
+          "text": "Hallo. Das ist meine Botschaft."
         }
       ]
     }
-    ```
+    '''
 
-## URL opening options in the existing browser tab in Webchat Widget
+## Optionen zum Öffnen von URLs im bestehenden Browser-Tab im Webchat-Widget
 <div class="divider"></div>
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Added in-v4.5.0-blue.svg)] ({{config.site_url}})
 
-As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
+Ab Version 4.5 können Sie entscheiden, ob Sie eine URL im selben Webchat-Widget-Fenster oder in einem neuen öffnen möchten, wenn Sie die Option "Knotentext mit Schaltflächen", "Galerie" oder "Liste" verwenden.
 
-**Say Node example using Text with Buttons**
+**Beispiel für einen Knoten, der Text mit Schaltflächen verwendet**
 
-1. Create a Flow with Say Node. 
-2. Start the Say Node Editor, select the **Text with Buttons** option and click **Add a new Button**. 
-3. Then select **URL** as **Button Type** and enter the Internet address you want. 
-4. Complete the configuration by selecting **Open URL in a new tab** or **Open URL in the same tab**. 
-5. Deploy an Endpoint with the Webchat option and start a bot conversation.
-    The configured Say Node Buttons will be displayed in the Webchat Widget.
-6. Click on the Button.
-7. Depending on the configuration the URL will be opened in a separate tab or in the same tab.
+1. Erstellen Sie einen Flow mit Say Node. 
+2. Starten Sie den Say-Node-Editor, wählen Sie die Option **Text mit Schaltflächen** und klicken Sie auf **Neue Schaltfläche hinzufügen**. 
+3. Wählen Sie dann **URL** als **Schaltflächentyp** und geben Sie die gewünschte Internetadresse ein. 
+4. Schließen Sie die Konfiguration ab, indem Sie **URL in neuem Tab öffnen** oder **URL im selben Tab öffnen** auswählen. 
+5. Stellen Sie einen Endpunkt mit der Webchat-Option bereit und starten Sie eine Bot-Konversation.
+    Die konfigurierten Say Node Buttons werden im Webchat-Widget angezeigt.
+6. Klicken Sie auf den Button.
+7. Je nach Konfiguration wird die URL in einem separaten Tab oder im selben Tab geöffnet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3492532-Show_URL_in_same_tab.PNG" width="75%" />
 </figure>
 
-Say Node configuration with 'URL Target' setting "Open URL in the same tab".
+Sagen Sie Knotenkonfiguration mit der Einstellung "URL-Ziel" "URL im selben Tab öffnen".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
 </figure>
 
-Webchat with button "Show URL in same tab".
+Webchat mit dem Button "URL im gleichen Tab anzeigen".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/320961c-Cognigy_Website_same_tab.png" width="75%" />
 </figure>
 
-URL has been opened in the same tab.
+Die URL wurde im selben Tab geöffnet.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3014d6c-Show_URL_in_new_tab.PNG" width="75%" />
 </figure>
 
-Say Node configuration with 'URL Target' setting "Open URL in new tab".
+Sagen Sie Node-Konfiguration mit der Einstellung "URL-Ziel" "URL in neuem Tab öffnen".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
 </figure>
 
-Webchat with button "Show URL in new tab".
+Webchat mit Button "URL in neuem Tab anzeigen".
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/af2f15e-URL_opened_in_new_tab.png" width="75%" />
 </figure>
 
-URL has been opened in a new tab.
+Die URL wurde in einem neuen Tab geöffnet.
 
-## AI-enhanced output
+## KI-gestützte Ausgabe
 
-To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+Um die KI-gestützte Umformulierung der Bot-Ausgabe zu verwenden, lesen Sie die [Generative AI](.. /.. /generative-ai.md#rephrase-bot-outputs) Artikel.
 
-## Handover Settings
+## Übergabe-Einstellungen
 
-When using a handover, such as to a live agent, you can choose who receives the message from the virtual agent:
+Wenn Sie eine Übergabe verwenden, z. B. an einen Live-Agenten, können Sie auswählen, wer die Nachricht vom virtuellen Agenten erhält:
 
-- User and Agent — by default, both the end user and the human agent will receive the message.
-- User only — the end user will receive the message.
-- Agent only — the responsible human agent will receive the message.
+- Benutzer und Agent – standardmäßig erhalten sowohl der Endbenutzer als auch der menschliche Agent die Nachricht.
+- Nur Benutzer — der Endbenutzer erhält die Nachricht.
+- Nur Agent – der zuständige menschliche Agent erhält die Nachricht.
