@@ -24,21 +24,6 @@ The `actions` object provides access to most internal Cognigy functions within t
 
 The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](../../flow-nodes/code/actions.md#text-cleaner).
 
-The `lastConversationEntries` array contains the user inputs and bot outputs for the past 10 turns of the conversation in the following format:
-
-```json
-[
-    {
-        source: "user",
-        text: "hello"
-    },
-    {
-        source: "bot",
-        text: "hello and welcome to Cognigy"
-    }
-]
-```
-
 For convenience, the [lodash](https://lodash.com/) and [moment](https://momentjs.com/) libraries are exposed for use within Code Nodes.
 
 ## Restrictions

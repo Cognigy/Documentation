@@ -120,6 +120,51 @@ Gets the data from the context by the key.
 
 any : The requested context data
 
+### actions.getConversationTranscript || api.getConversationTranscript
+
+Retrieves a copy of the current conversation transcript for up to the last 10 user inputs and associated bot outputs.
+
+**Parameters**
+
+| Parameter | Type   | Description                                  |
+|-----------|--------|----------------------------------------------|
+| mode      | string | "json" - Returns an array of conversation entries (default)<br>"string" - returns a stringified version of the transcript |
+| options | object | Options to be passed to the function, see below |
+
+Example Options:
+
+```json
+{
+    "turnLimit": 3 // the number of turns to return
+}
+```
+
+**Returns**
+
+Either the JSON array of conversation entries of the string. 
+
+Example JSON:
+
+```json
+[
+    { "source":"user", "text":"hello" },
+    { "source":"bot", "text":"You said: hello" },
+    { "source":"user", "text":"you are an ai agent" },
+    { "source":"bot", "text":"You said: you are an ai agent" },
+    { "source":"user", "text":"show transcript" }
+]
+```
+
+Example string:
+
+```text
+- USER: hello
+- BOT: You said: hello
+- USER: you are an ai agent
+- BOT: You said: you are an ai agent
+- USER: show transcript
+```
+
 ### actions.resetContext || api.resetContext
 
 Resets the context.
