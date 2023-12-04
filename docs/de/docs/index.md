@@ -17,12 +17,16 @@
   }
 </style>
 
-#<figure>
+#
+
+<figure>
   <img class="image-center logo-home-page" src="{{config.site_url}}assets/img/Cognigy-blue.svg" width="50%" />
   <br>
 </figure>
 
-<b>Willkommen bei der Cognigy-Entwicklerdokumentation!</b> Cognigy ermöglicht es Unternehmen, auf einfache Weise KI-gestützte virtuelle Agenten zu erstellen und zu betreiben, um Anrufe und Chats von Kunden und Mitarbeitern automatisch zu bearbeiten. Wählen Sie eine Produktlinie und entdecken Sie alle Funktionen und Plattformmöglichkeiten.<h3>Wählen Sie ein Produkt:</h3>
+<b>Willkommen bei der Cognigy-Entwicklerdokumentation!</b> Cognigy ermöglicht es Unternehmen, auf einfache Weise KI-gestützte virtuelle Agenten zu erstellen und zu betreiben, um Anrufe und Chats von Kunden und Mitarbeitern automatisch zu bearbeiten. Wählen Sie eine Produktlinie und entdecken Sie alle Funktionen und Plattformmöglichkeiten.
+
+<h3>Wählen Sie ein Produkt:</h3>
 <div class="divider"></div>
 
 <div class="card-container">

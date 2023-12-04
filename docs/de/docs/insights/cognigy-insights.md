@@ -9,7 +9,11 @@
   <img class="image-center" src="{{config.site_url}}insights/images/overview.png" width="100%" />
 </figure>
 
-## Beschreibung<div class="divider"></div>Cognigy hat es sich zur Aufgabe gemacht, Ihnen die Tools zur Verfügung zu stellen, die Sie benötigen, um das Kundenerlebnis Ihrer Kunden zu verbessern.
+## Beschreibung
+
+<div class="divider"></div>
+
+Cognigy hat es sich zur Aufgabe gemacht, Ihnen die Tools zur Verfügung zu stellen, die Sie benötigen, um das Kundenerlebnis Ihrer Kunden zu verbessern.
 
 Cognigy.AI verfügt über integrierte Analytics-Reporting-Funktionalitäten sowie eine OData,
 Schnittstelle, auf die sich unsere Kunden verlassen können, um ihre Rohdaten abzurufen.
@@ -21,7 +25,12 @@ genannt **Cognigy Insights**, das das statische Analyse-Dashboard vollständig d
 
 Ab Version 4.10 bietet Cognigy eine komplett neu gestaltete Analytics-Lösung für Insights.
 
-## Dashboard<div class="divider"></div>Cognigy Insights ist eine neue Anwendung, die das alte und statische Analyse-Dashboard ersetzt. Insights verfolgt die Daten Ihrer Kunden, während sie mit Ihren virtuellen Agenten interagieren, und stellt diese Daten auf einer Vielzahl neuer Dashboards und neuer Tools zur Verfügung.
+## Dashboard
+
+<div class="divider"></div>
+
+
+Cognigy Insights ist eine neue Anwendung, die das alte und statische Analyse-Dashboard ersetzt. Insights verfolgt die Daten Ihrer Kunden, während sie mit Ihren virtuellen Agenten interagieren, und stellt diese Daten auf einer Vielzahl neuer Dashboards und neuer Tools zur Verfügung.
 
 Insights ist eine neue Anwendung, die Seite an Seite mit Cognigy.AI existiert und eng in das Cognigy.AI Produkterlebnis integriert ist.
 
@@ -59,10 +68,18 @@ Cognigy bietet drei Kategorien von Dashboards, die über das Insight-Sideboard-M
 - [Engagement Dashboard]({{config.site_url}}insights/dashboard-engagement/) (Analysen, die sich auf Kundenreaktionen in Konversationen konzentrieren)
 - [NLU Performance Dashboard]({{config.site_url}}insights/dashboard-nlu-performance/) (diese Analysen beziehen sich auf Natural Language Understanding) 
 
-## Lokaler Filter<div class="divider"></div>!!! Anmerkung
+## Lokaler Filter
+
+<div class="divider"></div>
+
+!!! Anmerkung
     Die lokalen Filteroptionen sind anwendungsspezifisch und werden im entsprechenden Abschnitt beschrieben.
 
-## Globaler Filter<div class="divider"></div>Cognigy Insights verfügt über sogenannte globale Filter. Diese Filter sind sichtbar, egal wohin Sie navigieren. Sobald Sie die Filter geändert haben, berücksichtigen alle Daten, die an einem beliebigen Ort visualisiert werden, Ihre Filterkonfiguration.
+## Globaler Filter
+
+<div class="divider"></div>
+
+Cognigy Insights verfügt über sogenannte globale Filter. Diese Filter sind sichtbar, egal wohin Sie navigieren. Sobald Sie die Filter geändert haben, berücksichtigen alle Daten, die an einem beliebigen Ort visualisiert werden, Ihre Filterkonfiguration.
 
 - Zeitrahmen
 -Endpunkte
@@ -80,7 +97,12 @@ Cognigy bietet drei Kategorien von Dashboards, die über das Insight-Sideboard-M
     Die globalen Filteroptionen sind in allen Anwendungen verfügbar, die in Cognigy Insights ausgeführt werden.
     Weitere Informationen zum globalen Filter finden Sie hier: [Globaler Filter]({{config.site_url}}insights/global-filter/).
 
-## Benutzer-Menü<div class="divider"></div>Sie finden das [Benutzermenü]({{config.site_url}}ai/tools/user-menu/user-menu/) in der oberen rechten Ecke des Bildschirms (Benutzerprofil-Symbol)
+## Benutzer-Menü
+
+<div class="divider"></div>
+
+
+Sie finden das [Benutzermenü]({{config.site_url}}ai/tools/user-menu/user-menu/) in der oberen rechten Ecke des Bildschirms (Benutzerprofil-Symbol)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/32749de-tooltip_Insights_user_menu_80.svg" width="100%" />
@@ -111,7 +133,11 @@ Sie können jederzeit zu Cognigy.AI und Ihrem virtuellen Agenten zurückkehren. 
   <figcaption>Menü "Benutzer"</figcaption>
 </figure>
 
-## Hauptmenü<div class="divider"></div>Über das Seitenleistenmenü von Insights können Sie alle verfügbaren Datenanalyseanwendungen auswählen, um die Leistung der Agenten zu analysieren und den Agenten für ein besseres Verständnis und eine verbesserte Benutzererfahrung zu verbessern.
+## Hauptmenü
+
+<div class="divider"></div>
+
+Über das Seitenleistenmenü von Insights können Sie alle verfügbaren Datenanalyseanwendungen auswählen, um die Leistung der Agenten zu analysieren und den Agenten für ein besseres Verständnis und eine verbesserte Benutzererfahrung zu verbessern.
 Die aktuell ausgewählte Anwendung wird in einer Primärfarbe hervorgehoben und wird auch oben neben dem Agenten angezeigt.
 Sie können jederzeit zu Cognigy.AI und Ihrem virtuellen Agenten zurückkehren, indem Sie auf den Eintrag Cognigy.AI in der Seitenleiste klicken. 
 
