@@ -11,12 +11,11 @@ Flows are build as a composition of individual Nodes with different functionalit
 Elements of Flows:
 
 - [Flow Chart](#flow-chart)
-- [Agent Top Toolbar](#agent-toolbar)
+- [Agent Toolbar](#agent-toolbar)
 - [Flow Nodes](#flow-nodes)
 - [NLU](#nlu)
 - [Settings](#settings)
 - [Localization](#locale-settings)
-
 
 ## Flow Chart
 
@@ -25,7 +24,7 @@ Elements of Flows:
 </figure>
 
 A Flow is represented visually with the help of a Flow chart, in which each step in a potential dialog are represented by Flow Nodes. Cognigy provides a wide range of different [Flow Nodes]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/). To realize your project, you can add Flow Nodes that offer the required functionality for your project. 
-Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path, so that you can understand logical system decicisons at any step and follow the path. 
+Flows are executed from a **Start** Node to an **End** Node in a conversation and use a logic-based system to determine which Nodes should be executed. The execution path of a conversation is indicated by a highlighted green path, so that you can understand logical system decisions at any step and follow the path. 
 
 ### Agent Management
 
@@ -33,22 +32,30 @@ Flows are executed from a **Start** Node to an **End** Node in a conversation an
   <img class="image-center" src="{{config.site_url}}ai/resources/images/agent-controls.png" width="80%" />
 </figure>
 
-In the top left corner of the Flow Chart panel you will find the Agent specific indications as currently active Agent. 
+In the top left corner of the Flow panel you will find the Agent specific indications as currently selected Agent, currently selected Flow-project, and currently selected Locale. 
 
-- To open the [Agents dashboard](../../../ai/resources/agents/agents.md#agent-dashboard), click the icon on the left side  next to the displayed Agent name. The dasboard gives you specific information regarding your projects, involved project members, and an analytic chart. 
-- To switch to another available Agent, click on the current displayed Agent name and select the Agent you want to switch to in the drop-down list. 
-- To change the [location](#locale-settings), click on the current displayed location name on the right side next to the Agent name and select the location you want to switch to.
+- To open the [Agents dashboard](../../../ai/resources/agents/agents.md#agent-dashboard), click the icon on the left side  next to the displayed agent Flow-project. The dasboard gives you specific information regarding your projects, involved project members, and an analytic chart. 
+- To switch to another available Agent, click on the current displayed Agent name and select the Agent you want to switch to in a drop-down list. 
+- To change the [Locale](#locale-settings), click on the current displayed location name on the right side next to the Flow-project and select the location you want to switch to.
 
 For more information, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
 
-### Agent Top Toolbar
+### Agent Toolbar
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/toolbar.png" width="80%" />
 </figure>
 
-Agents have a Top Toolbar in every view, offering quick access to Agent-specific resources, such as Help, Search, Product Journeys, and Task Menu. The Top Toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available. The Interaction Panel is very important because, among other things, it allows the flow functionality to be tested during development, see section [Execute a Flow](#execute-a-flow)
+Agents' desktops have a toolbar at the top right of each view, which provide quick access to agent-specific resources:
 
+  - [Help Center Search](https://support.cognigy.com/hc/en-us)
+  - [Journeys](../../../ai/resources/agents/journeys.md)
+  - [Search](../../../ai/resources/agents/agents.md#search)
+  - [Tasks](../../../ai/resources/agents/tasks.md)
+  - [User Menu](../../../ai/tools/user-menu/user-menu.md)
+  - [Interaction Panel](../../../ai/tools/interaction-panel/interaction-panel.md)    
+
+The toolbar also includes items, such as the User Menu and Interaction Panel, that are consistently available. The **Interaction Panel** is quite important as it enables, among other things, the testing of flow functionality during development - see section [Execute a Flow](#execute-a-flow).
 The Toolbar provides also tooltips to enhance navigation when hovering over an item.
 
 For detailed information to each item, read the [Agent](../../../ai/resources/agents/agents.md#top-toolbar) documentation.
@@ -113,7 +120,7 @@ For testing issues the [Top Toolbar](../../../ai/resources/agents/agents.md#top-
 
 To start a chat with your Virtual Agent and test the Flow functionality, do the following:
 
-1. Open your Cognigy.AI interface with your Virtual Agent. 
+1. Open your agent project in Cognigy.AI. 
 2. Select the Flow you want to test.
 3. Click  ![chat](../../../assets/icons/chat.svg) on the top right toolbar to open the **Interaction Panel**. The Interaction Panel will be opened on the right side of the panel.
 4. Click tab **TEST** to open the conversation window of the Interaction Panel.  
@@ -146,23 +153,30 @@ To manage Flows in different use cases for your Agent, do the following:
 
 The different Nodes are assigned to the following categories:
 
-     - Basic Nodes
-     - Message Nodes
-     - Logic Nodes
-     - Profile Nodes
-     - Service Nodes
-     - NLU Nodes
-
-To add a Node to your Flow, do the following:
-
-1. 
-
+  - Basic Nodes
+  - Message Nodes
+  - Logic Nodes
+  - Profile Nodes
+  - Service Nodes
+  - NLU Nodes
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="80%" />
 </figure>
 
 For more information, read the [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) documentation.
+
+#### Add a Node to your Flow 
+
+To add a Node to your Flow, do the following:
+
+1. Open your Agent project in Cognigy.AI. 
+2. Select the Flow you want to edit.
+3. Click  + visible on the path between the Nodes in order to add a new Node, for example a **Say** Node which is the most basic output Node. A window appears and provides available Nodes to add.
+4. Select tabs **By Function** > **Basic**. 
+5. Click **Say** in the selection list. A Say Node will be added at the location you clicked the + icon in your Flow.
+6. Configure your added Node as required for your project. Detailed information to Nodes and how to configure them, read the  
+[Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md) documentation.
 
 ### Entry Points
 
@@ -191,53 +205,106 @@ To set or unset an Entry point in your Flow explicitly, do the following:
 
 ## NLU 
 
-In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
+**Natural Language Understanding** is at the core of advanced virtual agents. Cognigy.AI features an industry-leading NLU engine called Cognigy NLU.
+In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to the current Flow.
 
-Refer to [NLU Overview](../../../ai/nlu/nlu-overview/overview.md) to learn more.
+For more information, read the [NLU](../../../ai/nlu/nlu-overview/overview.md) documentation.
+
+When you click the **NLU** tab at the top of your Flow, the following configuration tabs will appear:
+
+  - [Intents](#intents) 
+  - [Attached Flows](#attached-flows)
+  - [Attached Lexicons](#attached-lexicons)
+  - [States](#states)
+  - [Slot Fillers](#slot-fillers)
+
+For more information, read the [NLU](../../../ai/nlu/nlu-overview/overview.md) documentation.
+
+### Intents
+
+Intent Mapping is at the core of the NLU engine and the process uses machine learning to match the user's utterance to the defined intents.
+Intents can be created right within the Intents section of the NLU tab and can be fed with training data in the form of example sentences.
+
+For more information, read the [Machine learning Intents](../../../ai/nlu/nlu-overview/ml-intents.md) documentation.
+To learn how to use Intents, see also [Cognigy Sessions:Cognigy NLU](https://support.cognigy.com/hc/en-us/articles/360019857220-Cognigy-Sessions-Cognigy-NLU) video in the Cognigy.AI Help Center.
+
+### Attached Flows
+
+Whenever a Flow with Intents is attached to another Flow, the Intents in that [Attached Flow](../../../ai/nlu/nlu-overview/overview/#attached-flows.md) will be considered when training the NLU model. That is a practical way of combining different Intent collections into a bigger model.
+
+### Attached Lexicons
+
+Lexicons need to be attached to a Flow in order for a Flow to be able to detect its Keyphrases. Make sure to retrain the model whenever you attach or detach resources.
+More information, read the [Attached Lexicons](../../../ai/nlu/nlu-overview/overview/#attached-lexicons.md) documentation.
+
+### States
+
+**States** can be used to deliberately block certain Intents. This can help with edge-cases or very large Intent collections.
+Only Intents added to the **Whitelist** of the current State of the conversation can be detected. Conversely, Intents added to the **Blacklist** of the current State will not be recognized.
+
+For more information, how states work, read the [State](../../../ai/tools/interaction-panel/state.md) documentation.
+
+### Slot Fillers
+
+[Slot Fillers](../../../ai/nlu/nlu-overview/overview/#slot-fillers.md) allow for advanced Slot filling. Slot Fillers automatically copy found [Slots](../../../ai/nlu/slot-mapping/slot-mapping.md) to the [Context](../../../ai/tools/interaction-panel/context.md) object, meaning that they can be filled using a number of subsequent user utterances. 
 
 ## Settings
 
-Certain settings can be configured per Flow. 
+Every Flow of an Agent can be configured with its own Settings.
 
-https://docs.cognigy.com/ai/resources/manage/manage/
-
+   - [Flow Configuration](#flow-configuration)
+   - [Default Context](#default-context)
+   - [Locale Settings](#locale-settings)
 
 #### Flow Configuration
-Information about the Flow Configuration Settings can be found here: [Flow Settings](../../../ai/resources/manage/settings.md#general-flow-logic).
+
+Following Flow Settings are available to configure:
+
+   - The [General Flow Logic](../../../ai/resources/manage/settings.md#general-flow-logic)
+   - The [Intent Mapper](../../../ai/resources/manage/settings.md#intent-mapper) - see also [Flows NLU](../../../ai/nlu/nlu-overview/overview.md) 
+   - The [Thresholds](../../../ai/nlu/nlu-overview/ml-intents.md#thresholds) for NLU recognition
+   - The [Lexicon Slots](../../../ai/resources/build/lexicons.md)
+   - The [System Slots](../../../ai/nlu/slot-mapping/slot-mapping.md)
+
+More information about the  Flow Configuration Settings you can find here: [Flow Settings](../../../ai/resources/manage/settings.md#general-flow-logic).
 
 #### Default Context
-Can be used as a starting point for the Flow's Context object. Head over to [Context](../../../ai/tools/interaction-panel/context.md) for more information.
+
+The Context is a JSON object which stores persistent information. **Default Context** can be used as a starting point for the Flow's Context object. The default context is the initial state of the context when the session starts. This can be customized to initiate variables that will be accessed and changed throughout the conversation. 
+
+For more information, read the [Context](../../../ai/tools/interaction-panel/context.md) and [Cognigy Script](../../../ai/tools/cognigy-script.md) documentation.
 
 #### Locale Settings
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.32.0-blue.svg)]({{config.site_url}})
 
-Activate this setting to inherit the [Intent](../../../ai/nlu/nlu-overview/ml-intents.md) model from [fallback](../../../ai/resources/manage/localization.md) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator](../../../ai/nlu/nlu-overview/ml-intents.md) on the Intents page and error badge on NLU tab are hidden, also the [Build Model](../../../ai/nlu/nlu-overview/ml-intents.md) button in Settings, Chart and NLU is disabled.
+Cognigy.AI provides the localization feature for easy customization and content reuse.
 
-<img src="{{config.site_url}}ai/images/locale-settings.png" width="100%" />
+The **Locale Settings** tab is disabled for fallback Locale and enabled for alternative Locales. Activate this setting to inherit the [Intent](../../../ai/nlu/nlu-overview/ml-intents.md) model from [fallback](../../../ai/resources/manage/localization.md) Locale. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator](../../../ai/nlu/nlu-overview/ml-intents.md) on the Intents page and error badge on NLU tab are hidden, also the [Build Model](../../../ai/nlu/nlu-overview/ml-intents.md) button in Settings, Chart and NLU is disabled.
 
-http://127.0.0.1:8000/ai/resources/manage/localization/
+With the localization view of your Flow, you can configure multiple Locales. If one Locale doesn't have content configured, the system automatically falls back to another Locale that is configured. Default fallback Locale is **en-US**.
 
+While you can add additional Locales for content localization later on, note that once the primary Locale is selected, it cannot be modified.
+For more information, read the [Localization](../../../ai/resources/manage/localization.md) documentation.
 
-### Switch to different Flow
+##### Add a new Locale to an Agent
 
-Cognigy.AI provides easy switching between different Flows.
+How to add a new Locale to an Agent, read the [Add a Locale to an Agent](../../../ai/resources/manage/localization.md#add-a-locale-to-an-agent) documentation.
+
+##### Add a Locale to a Node
+
+How to localize a Node manually, you can read in the [Add a Locale to a Node](../../../ai/resources/manage/localization.md#add-a-locale-to-a-node) documentation.
+
+## Switch to different Flows
+
+Cognigy.AI provides easy switching between different Flows as follows:
+
+1. Click on the current active Flow-project on the top left side next to the displayed agent name.
+2. In the list of available Flows select a Flow you want to switch to. 
 
 - When you are in the **Chart** tab of Flow A and you switch to Flow B, you will still be in the Chart tab.
 - When you are in the **NLU** tab of Flow A and you switch to Flow B you will still be in the NLU tab.
 - When you are in the **Settings** tab of Flow A and you switch to Flow B you will still be in the Settings tab.
-
-
-## Generative AI
-
-Generative AI is a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
-Cognigy.AI integrates with the Generative AI providers that allow text generation based on user input. That involves utilizing [Large Language Models (LLMs)](../../../ai/resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
-**Large Language Models (LLMs)** are a specific type of Generative AI model that is able to generate human-like text based on the input and context provided. In the Cognigy.AI interface, LLMs generate human-like and personalized content for a Virtual Agent.
-To use Generative AI with LLM model in your project, creating a LLM model and access to aGenerative AI provider is required.
-
-For more information, read the [Large Language Models (LLMs)](../../../ai/resources/build/llm.md) documentation.
-
-To use Generative AI technology for creating a new Flow with pre-configured Nodes based on your scenario, read the [Generative AI](../../generative-ai.md#generate-flows) documentation.
 
 ## More information
 
