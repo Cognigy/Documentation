@@ -11,16 +11,17 @@ _Account settings_ control the administration and optimization of Live Agent fun
 
 Only users having the **Administrator** role have access to the **Account Settings**. 
 
-In the Account Settings page, you can configure the following:
+There are the following settings available within the account:
 
 - [General Settings](#general-settings)
-- [AI Copilot](#agent-assist-workspace)
+- [AI Copilot](#ai-copilot)
 - [Notifications](#notifications)
-- [Account ID](#account-id)
+
+Additionally, you can copy an [Account ID](#account-id) and check a [current version](#version) of your Live Agent installation.
 
 ## General Settings
 
-You can change the general settings for an account, including its name, language, and conversation logic.
+You can change the general settings for an account, including its name, language, and conversation workflow.
 
 ### Account Name
 
@@ -108,7 +109,11 @@ no customer can connect the arbitrary masked name with a real human agent's name
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.53-blue.svg)](../../release-notes/4.53.md)
 
-By default, you can manually assign conversations to any human agents regardless of their status (online, offline, away, busy). To automate this process, activate the 'Assign conversation to a busy agent' setting. When this setting is activated, the system can auto-assign incoming conversations to an agent, even if the agent is busy and engaged in another conversation. By default, only online agents are considered.
+By default, you can manually assign conversations to any human agents regardless of their status
+(online, offline, away, busy).
+When this setting is activated, the system can automatically assign incoming conversations to an agent,
+even if the agent is busy and engaged in another conversation.
+By default, only online agents are considered.
 
 ## AI Copilot
 
@@ -116,12 +121,12 @@ Cognigy AI Copilot offers the most comprehensive functions compared to the other
 
 Administrators can **Enable** the **AI Copilot** in the **Account Settings** of the Live Agent interface.
 If an administrator has already preset the AI Copilot settings in the **Account Settings** of the Live Agent interface,
-this setting will take precedence over the individual human agent Profile Settings.
+this setting will take precedence over the individual agent Profile Settings.
 In this case, a Live Agent can not change **AI Copilot** settings.
 
-Before you can enable **AI Copilot** as a preset for all Live Agents,
+Before you can enable **AI Copilot** for all human agents,
 activate the **Enable overriding AI Copilot preferences** setting.
-The configuration set here applies as a preset to all Live Agents of your organization account and overrides the human agent [Profile settings](../profile-settings.md#notifications).
+The configuration set here applies as a preset to all human agents of your organization account and overrides the human agent [Profile settings](../profile-settings.md#notifications).
 
 ## Notifications
 
@@ -138,8 +143,10 @@ As a user, having the **Administrator** role, you can configure **Push Notificat
 - When you are mentioned in conversation.
 - When a new message is created in an assigned conversation.
 
-Before selecting one or more notification event options as a preset for all Live Agents you need to click the tick box **Enable overriding email notification preferences**, to enable the event options for selecting.
-The configuration set here applies to all Live Agents of your organization account and overrides the ones of the individual agent [Profile settings](../profile-settings.md#notifications).
+Before selecting one or more notification event options as a preset for all human agents,
+activate the **Enable overriding email notification preferences** setting
+to enable the event options for selecting.
+The configuration set here applies to all human agents of your organization account and overrides the ones of the individual agent [Profile settings](../profile-settings.md#notifications).
 
 For more information, read the [Notifications](../notifications.md) documentation.
 
