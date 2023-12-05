@@ -51,8 +51,8 @@ If you want to remove the limit, activate the **No conversation limit for agents
 
 ### Auto Set Away
 
-The **Auto Set Away** option is used to automatically set the human agent as away when they are not active.
-This means the agent is not performing any action into the browser window while it is opened. 
+The **Auto Set Away** option is used to automatically set the human agent as away when they are not active after the amount of time in minutes specified.
+This means the agent is not performing any action in the browser window while it is opened. 
 When the agent performs an action, it will be set back to online state automatically.
 
 - Click **Disable Auto Set Away**, in case you do not want to use this option.
@@ -63,7 +63,7 @@ When the agent performs an action, it will be set back to online state automatic
 
 ### TTL for Attachments
 
-The **TTL for Attachment** option automatically deletes the attachments in messages of all account conversations after a specific time.
+The **TTL for Attachment** option automatically deletes the attachments in messages of all conversations in the account after a specific time.
 
 - Click **Disable TTL for attachments**, in case you do not want to use this option.
 - Click **Enable TTL for attachments** and enter the number of days in a separate field. Afterward, the attachments will be deleted.  
@@ -72,7 +72,7 @@ The **TTL for Attachment** option automatically deletes the attachments in messa
 
 #### Auto Resolve Duration
 
-The Auto Resolve Duration option automatically resolves the conversation after a certain number of hours. After that time, you can assume that the customer's problem is solved, and the conversation can be closed.
+The Auto Resolve Duration option automatically resolves the conversation after a certain number of minutes. After that time, you can assume that the customer's problem is solved, and the conversation can be closed.
 
 - Click **Do not automatically resolve conversations**, in case you do not want to use this option.
 - Click **Automatically resolve conversations if there is no activity** and enter the number of minutes in a separate field. After this period, the conversation should auto-resolve if there is no activity. 
@@ -83,10 +83,10 @@ The **Auto Resolve Action** option resolves or abandons a conversation automatic
 
 You can set two options using the drop-down list:
 
-- Select **Resolve** to resolve a conversation. The conversation will be closed because the user request is resolved. 
+- Select **Resolve** to resolve a conversation. The conversation will be closed because the user request is treated as resolved. 
 - Select **Abandon** to abandon a conversation. The conversation will be closed because the user left the conversation. 
 
-The selected action will start if the conversation did not get any customer reply after the set resolve duration. You can set filters based on these statuses.
+The selected action will start if the conversation did not get any customer reply, agent replay or shows other activity after the set resolve duration. You can set filters based on these statuses.
 
 ### Automatically Delete Resolved Conversations
 
@@ -139,7 +139,7 @@ As a user, having the **Administrator** role, you can configure **Push Notificat
 - When a new message is created in an assigned conversation.
 
 Before selecting one or more notification event options as a preset for all Live Agents you need to click the tick box **Enable overriding email notification preferences**, to enable the event options for selecting.
-The configuration set here applies to all Live Agents of your organization account and overrides the human agent [Profile settings](../profile-settings.md#notifications).
+The configuration set here applies to all Live Agents of your organization account and overrides the ones of the individual agent [Profile settings](../profile-settings.md#notifications).
 
 For more information, read the [Notifications](../notifications.md) documentation.
 
