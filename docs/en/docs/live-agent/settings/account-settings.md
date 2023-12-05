@@ -46,7 +46,7 @@ To set up a conversation limit per Agent, follow these steps:
 4. In the **Max number of conversations per agent** field, specify the desired limit for agents.
 5. In the upper-right corner, click **Update Settings**.
 
-The limit will be applied to all Inboxes.
+The limit will be applied to the account.
 
 If you want to remove the limit, activate the **No conversation limit for agents** and click **Update Settings**.
 
@@ -85,7 +85,7 @@ The **Auto Resolve Action** option resolves or abandons a conversation automatic
 You can set two options using the drop-down list:
 
 - Select **Resolve** to resolve a conversation. The conversation will be closed because the user request is treated as resolved. 
-- Select **Abandon** to abandon a conversation. The conversation will be closed because the user left the conversation. 
+- Select **Abandon** to abandon a conversation. The conversation will be closed because the user or the agent left the conversation. 
 
 The selected action will start if the conversation did not get any customer reply, agent replay or shows other activity after the set resolve duration. You can set filters based on these statuses.
 
