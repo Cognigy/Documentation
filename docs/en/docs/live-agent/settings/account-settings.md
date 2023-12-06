@@ -126,7 +126,8 @@ this setting will take precedence over the user profile settings.
 
 Before you can enable **AI Copilot Workspace** for all human agents,
 activate the **Enable overriding AI Copilot preferences** setting.
-The configuration set here applies as a preset to all human agents of your organization account and overrides the human agent [Profile settings](../profile-settings.md#notifications).
+The configuration set here applies as a preset to all human agents of your organization account
+and overrides the [Profile Settings](../profile-settings.md#notifications).
 
 ## Notifications
 
