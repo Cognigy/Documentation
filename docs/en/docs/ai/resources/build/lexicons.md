@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../../release-notes/4.52.md)
 
-_Lexicons_ are collections of domain-specific keyphrases, also known as entities, that can be attached to a Flow.
+_Lexicons_ are collections of domain-specific Keyphrases, also known as entities, that can be attached to a Flow.
 A Lexicon can be seen as a dictionary that allows the virtual agent to understand
 specific words, such as car brands, product groups, or zip codes.
 As soon as a keyphrase is detected, it is published to the Input object for further use. This process is called Slot Mapping.
