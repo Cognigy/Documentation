@@ -126,8 +126,8 @@ The built-in Slot types are listed below:
 - Email
 - Percentage
 
-!!! note "Built in Slot Details"
-    Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page](../../../ai/nlu/slot-mapping/slot-mapping.md).
+Find more information
+on how to use built-in slots and their various formats on the [Slot Mapping](../../../ai/nlu/slot-mapping/slot-mapping.md) page.
 
 ## Generative AI
 
