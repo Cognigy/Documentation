@@ -7,7 +7,7 @@ hidden: false
 # Profile Settings
 
 Each user in Live Agent has a profile. To individualize profile settings, you can individualize your profile settings, edit your profile image and display name, which will be displayed in conversations.
-It is also possible to customize certain system settings for yourself, such as receiving notifications, managing hotkeys and enabling **Agent Assist Workspace**.
+It is also possible to customize certain system settings for yourself, such as receiving notifications, managing hotkeys and enabling **Copilot**.
 
 To open the **Profile Settings** in Live Agent, do the following:
 
@@ -19,7 +19,7 @@ In the Profile Settings page you can configure following settings:
 
 - [User Profile Appearance](#user-profile-appearance)
 - [Notifications](#notifications)
-- [Agent Assist Workspace](#agent-assist-workspace)
+- [AI Copilot](#ai-copilot)
 - [Hotkey to send messages](#hotkey-to-send-messages)
 - [API Access Token](#api-access-token)
 
@@ -54,14 +54,14 @@ The behavior of notifications can be configured in several ways:
 
 For more information, read the  [Account settings](settings/account-settings.md#notifications) and [Notifications](notifications.md#configure-notifications-at-the-user-profile-level) documentation.
 
-## Agent Assist Workspace
+## AI Copilot
 
-Cognigy **Agent Assist Workspace** offers a variety of advanced features that empower Agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's Agent desktop, it enhances the overall efficiency of your contact center.
+Cognigy AI Copilot offers a variety of advanced features that empower Agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's Agent desktop, it enhances the overall efficiency of your contact center.
 
-In the **Profile Settings** of the Live Agent interface an Agent can **Enable** or **Disable** the **Agent Assist Workspace**.
-If an administrator has already preset the Agent Assist Workspace settings in the **Account Settings** of the Live Agent interface, this setting  will take precedence over the individual agent profile settings. In this case a Live Agent is not able to change **Agent Assist Workspace** settings.
+In the **Profile Settings** of the Live Agent interface an Agent can **Enable** or **Disable** the **Copilot**.
+If an administrator has already preset the Copilot settings in the **Account Settings** of the Live Agent interface, this setting  will take precedence over the individual agent profile settings. In this case a Live Agent is not able to change **Copilot** settings.
 
-For more information, read the [Agent Assist Workspace](../../agent-assist/overview/) and [LA Agent Assist](../../ai/handover-providers/la-agent-assist-overview/) documentation.
+For more information, read the [AI Copilot](assistants/ai-copilot.md) and [LA AI Copilot](assistants/la-ai-copilot.md) documentation.
 
 ## Hotkey to send messages
 
@@ -81,13 +81,9 @@ Using API's opens more opportunities to the user to work with Live Agent.
 Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
 API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. 
 
-API keys provides authorization to perform requests made available via the [Cognigy Live Agent API reference](https://liveagent-trial.cognigy.ai/openapi) site. 
-
-- How to Get an API Key, read [Get an API Key](../agent-assist\getting-started.md#get-an-api-key) documentation.
-
-- How to work with API's, read the [Using the API]({{config.site_url}}ai/developer-guides/using-api/) documentation.
+API keys provides authorization to perform requests made available via the [Cognigy Live Agent API reference](https://liveagent-trial.cognigy.ai/openapi) site.
 
 ## More information
 
 - [User Roles](roles.md)
-- [Agent Assist Workspace](../../agent-assist/overview/)
+- [AI Copilot](../ai-copilot/overview.md)
