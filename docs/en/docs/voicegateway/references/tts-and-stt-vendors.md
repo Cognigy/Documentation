@@ -7,7 +7,7 @@ hidden: false
 
 # TTS and STT Vendors
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.56-blue.svg)](../../release-notes/4.56.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../release-notes/4.64.md)
 
 The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) providers supported by Cognigy Voice Gateway.
 
@@ -18,6 +18,7 @@ The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) provider
 | Google    | +   | +   |
 | Nuance    | +   | +   |
 | Soniox    | -   | +   |
+| Deepgram  | -   | +   |
 | Custom    | +   | +   |
 
 ## More Information

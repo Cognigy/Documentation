@@ -500,7 +500,7 @@ To ensure that the migration has been completed successfully and that NLP V1 is 
 
 ### Remove the NLP V1 Stack
 
-To remove the NLP V2 stack, remove the `service-nlp-score-<lang>` and `service-nlp-train-<lang>` services from your `values-local.yaml` file.
+To remove the NLP V1 stack, remove the `service-nlp-score-<lang>` and `service-nlp-train-<lang>` services from your `values-local.yaml` file.
 
 ## FAQ
 

@@ -1,0 +1,28 @@
+---
+ Titel: "Cognigy NLU ausführen" 
+ slug: "execute-cognigy-nlu" 
+ ausgeblendet: false 
+---
+# Cognigy NLU ausführen
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/execute-cognigy-nlu.png" width="80%" />
+</figure>
+
+## Beschreibung<div class="divider"></div>Der NLU-Knoten "Cognigy ausführen" wird verwendet, um die Cognigy.AI NLU-Pipeline mit der angegebenen Texteingabe auszuführen und das [Eingabeobjekt]({{config.site_url}}ai/tools/interaction-panel/input/) zu aktualisieren. Nach dem Aktualisieren des Eingabeobjekts setzt der Flow die weitere Verarbeitung fort. Beispielsweise kann ein Codeknoten verwendet werden, um die Eingabe eines Benutzers anzupassen und dann die NLU-Pipeline mit dem geänderten Satz auszuführen, um neue NLU-Ergebnisse zu erhalten.   
+
+!!! Warnung
+    Die Flow-Ausführung wird fortgesetzt, indem sie nach der Verarbeitung des NLU-Knotens "Cognigy ausführen" zum nächsten Knoten fließt. Dieser Knoten löst weder Standardantworten in Absichten aus, noch führt er den Flow basierend auf einer ausgelösten Absicht aus. Dieser Knoten aktualisiert nur die Eingabe- oder Kontextobjekte, wie unten beschrieben.
+
+## Einstellungen
+
+| Parameter | Typ | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|-----------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text | CognigyScript | Der Text, für den NLU ausgeführt wird. Kann {{ " {{ input.text }}" }} sein, um die NLU-Pipeline mit der Nachricht des Benutzers auszuführen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Daten | JSON | Daten, die an die NLU-Pipeline gesendet werden sollen. Kann verwendet werden, um input.data zu ändern                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Modus | Wählen Sie | Es stehen drei Modi zur Verfügung, mit denen gesteuert wird, wie die Ausgabe der NLU-Pipeline gespeichert wird. Die verfügbaren Auswahlmöglichkeiten sind:<br/>**Überschreiben:** Mit dieser Auswahl wird das Eingabeobjekt mit dem Ergebnis der NLU-Pipeline überschrieben.<br />**Eingabe:** Diese Auswahl speichert das Ergebnis der NLU-Pipeline im Eingabeobjekt unter einem anderen Schlüssel, wie im Speicherfeld angegeben. Dies ist nützlich, wenn Sie z.B. die NLU-Pipeline ein zweites Mal mit einem völlig anderen Text als der Benutzereingabe ausführen.<br />**Kontext:** Diese Auswahl speichert das Ergebnis der NLU-Pipeline im Kontext unter dem Schlüssel, der im Feld store |
+| Speichern | CognigyScript | Wo das Ergebnis der NLU-Pipeline je nach ausgewähltem Modus entweder im Kontext oder im Eingabeobjekt gespeichert werden soll.<br />**HINWEIS** Wenn der Modus auf ''überschreiben'' eingestellt ist, dann führt das Speicherfeld nichts aus                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+
+## Alternativen
+
+Wenn Sie Benutzereingaben oder anderen Text in der Mitte eines Flows verarbeiten müssen, um ein NLU-Ergebnis abzurufen, und Sie den Flow vom Startknoten aus neu starten möchten, verwenden Sie den Befehl [Think Node](.. /logic/think.md).

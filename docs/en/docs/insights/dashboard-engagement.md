@@ -299,4 +299,3 @@ Result:
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
 - [Dashboard Live Agent](dashboard-live-agent.md)
-- [Dashboard Calls](dashboard-calls.md)

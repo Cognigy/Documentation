@@ -8,24 +8,22 @@
 The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the **[Access Control]({{config.site_url}}ai/tools/user-menu/access-control/)** panel.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/08460d1-members.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/members.png" width="100%" />
 </figure>
 
 ## Project Roles
-<div class="divider"></div>
 
 In addition to global roles, Cognigy.AI offers Agent-specific roles which can be assigned to compliment the global access rights that have been granted for a given user.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/508a047-members2.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/members2.png" width="100%" />
 </figure>
 
 !!! note "Project Member Administration"
     A user profile requires the "Project Admin" role to be able to make changes to any user access for that specific agent. This will automatically be assigned to any user who creates a new agent.
 
-The **Project Roles** available to chose from are listed below:
-
-| Project Role Name      | Permissions                                                                                                                                                                                                                                                                                                                 |
+The available project roles are presented in the table below.
+| Project Role   | Permissions                                                                                                                                                                                                            |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Analytics              | Adds the following permissions: <br> - full permissions on analytics                                                                                                                                                                                                                                                        |
 | Basic                  | Adds the following permissions: <br> - read permission for all agent assets except: User Details, contact profiles, Node Comments, Node Descriptions, Logs and Member Details                                                                                                                                               |
@@ -57,7 +55,6 @@ The **Project Roles** available to chose from are listed below:
 | Playbook Editor        | Adds the following permissions: <br> - Read/Update permissions for Playbooks                                                                                                                                                                                                                                                |
 | Project Admin          | Adds the following permissions: <br> - full access to all project resources (create, read, update, delete)                                                                                                                                                                                                                  |
 | Snapshot Admin         | Adds the following permissions: <br> - full permissions for Snapshots (Note: Permission to restore a Snapshot remains with the Project Admin and above)                                                                                                                                                                     |
-| Snapshots              | Adds the following permissions: <br> - full permissions for Snapshots                                                                                                                                                                                                                                                       |
 | Token Admin            | Adds the following permissions: <br> - full permissions for Tokens                                                                                                                                                                                                                                                          |
 | Token Editor           | Adds the following permissions: <br> - Read/Update permissions for Tokens                                                                                                                                                                                                                                                   |
 
@@ -71,11 +68,10 @@ The **Project Roles** available to chose from are listed below:
 When you create a new member in your project, that user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
 
 ## Locale Restrictions
-<div class="divider"></div>
 
 The locale restrictions feature allows a user's access to be granted to a single locale. By enabling the "User is restricted to the following locales:" option, the user can be assigned any of the locales that exist within the agent.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/cd61670-localeRestrictions.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/localeRestrictions.png" width="100%" />
 </figure>
 The user's access rights will only be available for the assigned locales.

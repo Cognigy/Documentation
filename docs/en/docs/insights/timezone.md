@@ -11,13 +11,8 @@
 
 Insights applications support presenting time-based data with an account to the user's timezone. 
 
----
-**Note**
-
-In OData feed time is always in UTC format. You should take this into account if
-you compare it with Insights.
-
----
+!!! note 
+    In OData feed time is always in UTC format. You should take this into account if you compare it with Insights.
 
 ## Changing preferred Timezone
 
@@ -44,9 +39,6 @@ To change timezone preferences:
   <figcaption>Here selected the "Europe/Berlin" timezone</figcaption>
 </figure>
 
----
-**Note**
 
-Custom Timezone preferences are stored inside the browser storage, means you need to select custom timezone preference again if you change the device and/or the browser.
-
----
+!!! note
+    Custom Timezone preferences are stored inside the browser storage, means you need to select custom timezone preference again if you change the device and/or the browser.
