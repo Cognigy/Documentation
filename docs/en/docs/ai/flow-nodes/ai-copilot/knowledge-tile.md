@@ -61,7 +61,7 @@ For more information, refer to the [Configuration](#configuration) section.
 
 ## Configuration
 
-To use Copilot: Knowledge AI, configure the following Flow:
+To use the Copilot: Knowledge AI widget, configure the following Flow:
 
 1. Add an **If** Node. 
 2. Open the **If** Node editor. 
@@ -78,6 +78,9 @@ To use Copilot: Knowledge AI, configure the following Flow:
 </figure>
 
 Test your Flow by using a [Demo Webchat](../../endpoints/webchat/integrated-demo-page.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
+
+!!! tip
+    If the Flow is not working or issues arise with the Knowledge Source, try creating a new Agent and running the Flow in it.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/knowledge-tile-example.png" width="80%"/>
