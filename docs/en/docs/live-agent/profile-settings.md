@@ -51,7 +51,7 @@ Cognigy AI Copilot offers a variety of advanced features that empower human agen
 
 In the **Profile Settings**, a user can activate AI Copilot if [it has been installed previously](../ai-copilot/getting-started.md).
 
-If an administrator has already preset the **AI Copilot Workspace** settings in the **Account Settings**,
+If an administrator has already preset the **AI Copilot Workspace** setting in the **Account Settings**,
 this setting will take precedence over the user profile settings.
 In this case, a user is not able to change the **AI Copilot Workspace** settings.
 
