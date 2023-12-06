@@ -8,7 +8,7 @@ hidden: true
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../release-notes/4.51.md)
 
-{! _includes/agent-assist/pricing.md !}
+{! _includes/ai-copilot/pricing.md !}
 
 The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding HTML, Adaptive Cards, and IFrame content.
 
