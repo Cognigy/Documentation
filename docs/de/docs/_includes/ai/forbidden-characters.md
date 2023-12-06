@@ -1,0 +1,1 @@
+Felder, die mit den Zeichen '@', '+', '-' oder '=' beginnen, sind nicht zulässig.

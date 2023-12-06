@@ -74,7 +74,7 @@ create credentials on the Genesys side and configure the **Copilot** settings in
 To configure the Agent Assist Workspace settings, follow these steps:
 
 1. In the **Genesys Endpoint settings**, navigate to the **Copilot** section.
-2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Assist documentation](../../agent-assist/overview.md).
+2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Assist documentation](../../ai-copilot/overview.md).
 3. Set up Genesys Cloud Credentials:
     - **Connection Name** — create a unique name for your connection.
     - **oAuth2Url** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting the `apps.` or `login.` part. For more information on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
