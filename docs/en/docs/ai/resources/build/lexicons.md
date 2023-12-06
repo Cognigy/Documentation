@@ -1,16 +1,20 @@
 ---
- title: "Lexicons" 
- slug: "lexicons" 
- hidden: false 
+title: "Lexicons" 
+slug: "lexicons" 
+hidden: false 
 ---
+
 # Lexicons
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../../../release-notes/4.52.md)
 
-**Lexicons** are collections of domain-specific **Keyphrases**, also known as **Entities**, that can be attached to a Flow. A Lexicon can be seen as a dictionary, that allows the Virtual Agent to "understand" specific words, like car brands, product groups or zipcodes. As soon as a Keyphrase is detected, it is published to the [Input](../../tools/interaction-panel/input.md) object for further use. This process is called **Slot Mapping**.
+_Lexicons_ are collections of domain-specific keyphrases, also known as entities, that can be attached to a Flow.
+A Lexicon can be seen as a dictionary that allows the virtual agent to understand
+specific words, such as car brands, product groups, or zip codes.
+As soon as a keyphrase is detected, it is published to the Input object for further use. This process is called Slot Mapping.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/lexicon-editor_Devices.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/resources/images/lexicon-editor_Devices.png" width="80%" />
 </figure>
 
 To learn more about use cases for Lexicons, read [Match user expressions with a Lexicon](https://support.cognigy.com/hc/en-us/articles/360014776979-Match-user-expressions-with-a-Lexicon) Help Center article. 
@@ -110,17 +114,17 @@ The file will be downloaded.
 
 ## Built-in Slots
 
-Cognigy.AI features built-in Slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. The built-in Slot types are listed below:
+Cognigy.AI features built-in Slot detection for a broad range common data types. It is not necessary to create custom Lexicon libraries to recognize these types of data, as they will be found automatically by the Cognigy NLU. 
 
-| Slot type   |
-|-------------|
-| Date        |
-| Number      |
-| Duration    |
-| Temperature |
-| Age         |
-| Email       |
-| Percentage  |
+The built-in Slot types are listed below:
+ 
+- Date
+- Number
+- Duration
+- Temperature
+- Age
+- Email
+- Percentage
 
 !!! note "Built in Slot Details"
     Find out more about how to use built-in slots and their various formats on the [Slot Mapping Page](../../../ai/nlu/slot-mapping/slot-mapping.md).
