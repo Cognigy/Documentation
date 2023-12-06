@@ -22,9 +22,8 @@ In addition to global roles, Cognigy.AI offers Agent-specific roles which can be
 !!! note "Project Member Administration"
     A user profile requires the "Project Admin" role to be able to make changes to any user access for that specific agent. This will automatically be assigned to any user who creates a new agent.
 
-The **Project Roles** available to chose from are listed below:
-
-| Project Role Name      | Permissions                                                                                                                                                                                                            |
+The available project roles are presented in the table below.
+| Project Role   | Permissions                                                                                                                                                                                                            |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Analytics              | Adds the following permissions: <br> - full permissions on analytics                                                                                                                                                                                                                                                        |
 | Basic                  | Adds the following permissions: <br> - read permission for all agent assets except: User Details, contact profiles, Node Comments, Node Descriptions, Logs and Member Details                                                                                                                                               |
