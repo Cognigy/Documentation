@@ -5,7 +5,7 @@
 ---
 # Play
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../../../release-notes/4.48.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/play.png" width="80%" />
@@ -24,4 +24,4 @@ The Play Node lets you stream a sound file into the call with the ability to loo
 
 
 !!! note "This Node supports Activity Parameters"
-    You can find more information about activity parameters on our [Parameter Details]({{config.site_url}}ai/flow-nodes/vg/parameter-details/) page.
+    You can find more information about activity parameters on our [Parameter Details](parameter-details.md) page.

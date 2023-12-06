@@ -92,7 +92,7 @@ To test your Flow, use [Demo Webchat](../../endpoints/webchat/integrated-demo-pa
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/check-agent-availability-flow.png" width="100%" />
 </figure>
 
-## More information
+## More Information
 
 - [Agent to Handover Node](../../handover-providers/live-agent-handover.md)
 - [IF Node](../logic/if.md)

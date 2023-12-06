@@ -53,7 +53,7 @@ This value is the Line **Channel Secret** which is associated to a channel acces
 !!! warning "Configuration of Line messages"
     Line Messenger Messaging API requests have lots of requirements that might cause some of your configured messages not to be sent. Review your node configurations with regard to Line Messaging API requirements [**here**](https://support.cognigy.com/hc/en-us/articles/5721825020444) to make sure all messages configured will be delivered.
 
-## More information 
+## More Information 
 
 - [Line Messenger: Deployment](https://support.cognigy.com/hc/en-us/articles/360016222819)
 - [Line Messenger: Message types and payload examples](https://support.cognigy.com/hc/en-us/articles/5721825020444)

@@ -172,7 +172,7 @@ The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) featur
 
 **A2:** Generative AI output supports only text messages in the [AI channel](#complete-texts).
 
-## More information
+## More Information
 
 - [Flows](../ai/resources/build/flows.md)
 - [Flow Nodes](../ai/flow-nodes/flow-nodes-overview.md)

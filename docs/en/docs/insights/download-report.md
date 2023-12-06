@@ -1,64 +1,33 @@
 ---
- title: "Download Report" 
- slug: "download-report" 
- hidden: false 
+title: "Download Report" 
+slug: "download-report" 
+hidden: false 
 ---
+
 # Download Report
 
-## Download Report as .csv-file
+You can download detailed reports in CSV format from the charts on the Insights dashboards:
 
-<div class="divider"></div>
+- [Overview dashboard](dashboard-overview.md)
+- [Engagement dashboard](dashboard-engagement.md)
+- [NLU Performance](dashboard-nlu-performance.md)
+- [Live Agent](dashboard-live-agent.md)
 
+These CSV reports contain crucial information, including intent scores, transcripts, and conversation details, enabling a better understanding of user behavior.
 
-Every widget on the Insights dashboards provides a **Download report as .csv file** item in a dropdown menu.
+The CSV format ensures compatibility with various tools, making analysis seamless.
+You can easily import this data into Microsoft Excel or databases like Microsoft Access.
 
-To download a report, proceed as follows:
+## Download a Report via Insights UI
 
-- Click on the **secondary actions menu** in the top right corner of a dashboard widget. 
-- Select **Download report as .csv file** with another click. The report will now be stored in a csv file.
+To download a report, follow these steps:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/9ff6326-Intents_by_Score_Range_3.svg" width="100%" />
-  <figcaption>Intents by Score Range</figcaption>
-</figure>
+1. Go to Insights and select one of the previous mentioned dashboards in the side menu bar on the left side.
+2. Click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) in the top right corner of a dashboard chart you want to get as a report. 
+3. Select **Download report as .csv file**. The report will now be stored in a CSV file.
 
-The downloaded report file contains the complete widget data set (depending on the filter settings) for your data storage or further analysis.  
+The downloaded report file contains the complete chart dataset based on the filter settings. You can open the `.csv` file using applications such as Microsoft Excel or similar software.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/3c3a5a9-pr5276_Intents_by_Score_csv.svg" width="100%" />
-  <figcaption>Example: Downloaded .csv report file including the data set for "Intents by Score Range"</figcaption>
-</figure>
+## More Information
 
-## Export Analytics Reports as CSV using API
-
-<div class="divider"></div>
-
-
-Cognigy.AI 4.10.0 provides to export the Analytics reports as CSV using API. This API makes sure that a report does not return only the data displayed intents in a chart but all intents. Even the CSV export for a transcript is provided.
-
-Cognigy Insights:
-
-- can reply Analytics reports as CSV data
-- can reply transcript reports as CSV data
-- returns full data if no limit is provided for intents
-
-
-
-## More information
-<div class="divider"></div>
-
-- [Cognigy Insights]({{config.site_url}}insights/cognigy-insights/)
-
-- [Global Filter]({{config.site_url}}insights/global-filter/)
-
-- [Dashboard Overview]({{config.site_url}}insights/dashboard-overview/)
-
-- [Dashboard Engagement]({{config.site_url}}insights/dashboard-engagement/)
-
-- [Dashboard NLU Performance]({{config.site_url}}insights/dashboard-nlu-performance/)
-
-- [Step Explorer]({{config.site_url}}insights/step-explorer/)
-
-- [Transcript Explorer]({{config.site_url}}insights/transcript-explorer/)
-
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
+- [Cognigy Insights](cognigy-insights.md)

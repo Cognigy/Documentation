@@ -75,7 +75,7 @@ More specific **Access Rights** can be defined for individual features within Ag
 When you create a new user or assign a project to an existing user, that user will receive a notification at the email address specified in their profile. The email will include information about the project name and its URL.
 
 
-## More information
+## More Information
 
 - [Members]({{config.site_url}}ai/resources/manage/members/)
 - [Organisation Details]({{config.site_url}}ai/tools/user-menu/organisation-details/)

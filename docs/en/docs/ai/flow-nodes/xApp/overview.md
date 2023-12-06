@@ -17,7 +17,7 @@ Cognigy.AI supports the following Nodes:
  - [xApp: Show HTML](set-html-xApp-state.md)
  - [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
    
-## More information
+## More Information
 
 - [xApps](../../xApp/overview.md)
 - [xApp Tokens](../../xApp/tokens.md)

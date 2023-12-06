@@ -60,7 +60,7 @@ The URI where we send messages to your Sunshine Conversations app. For example, 
     More detailed information on how to set up a **Sunshine Conversations** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016307699).
 
 
-## More information
+## More Information
 
 - [HelpCenter: Sunshine Conversations Deployment](https://support.cognigy.com/hc/en-us/articles/360016307699-Sunshine-Conversations-Deploy-an-Endpoint)
 - [HelpCenter: Sunshine Conversations Zendesk Handovers](https://support.cognigy.com/hc/en-us/articles/360016224599-Sunshine-Conversations-Zendesk-Handovers)

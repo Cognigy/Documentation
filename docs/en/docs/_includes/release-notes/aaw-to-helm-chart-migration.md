@@ -1,0 +1,4 @@
+!!! warning "Agent Assist Workspace: Helm Chart Migration Required"
+    As of release 4.65, the Agent Assist services have been fully integrated into the `cognigy-ai-app` Helm chart. This integration implies that the services provided by this Helm chart will be incompatible with versions 4.65 and onwards of the Cognigy.AI platform. Users must migrate to the new chart to continue receiving updates and support.
+    For detailed instructions, follow the [migration guide](https://docs.cognigy.com/ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration/).
+    Note that the `agent-assist-genesys-notifications-forwarder` will no longer be compatible with release 4.64 and earlier versions, as it now requires integration with RabbitMQ. Users are advised to plan their upgrade strategies accordingly to ensure smooth transitions and continued functionality.

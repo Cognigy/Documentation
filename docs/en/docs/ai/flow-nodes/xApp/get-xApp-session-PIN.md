@@ -23,7 +23,7 @@ With this PIN, users can log in via an xApp PIN webpage.
 
 Share the xApp PIN Page URL with users, where they can enter the PIN. The URL can be sent in the Flow with an [xApp PIN Page URL](../../xApp/tokens.md#xapp-pin-page-url) Cognigy token.
 
-## More information
+## More Information
 
 - [xApp Tokens](../../xApp/tokens.md)
 - [xApp Nodes](overview.md)

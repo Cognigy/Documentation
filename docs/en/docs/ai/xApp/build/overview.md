@@ -14,7 +14,13 @@ To build xApps, use these tutorials:
 
 Additionally, you can create your own [customized Node](custom-xApp-node.md).
 
+## Examples
+
 You can find ready-made examples of xApps in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main) repository.
+
+## Security
+
+When building an xApp, it's important to mitigate the risk of an XSS attack. Check out our recommendations in the [xApps Security](../security/secure-xApp-from-xss.md) section.
 
 ## More Information
 

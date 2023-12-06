@@ -7,6 +7,8 @@ hidden: false
 
 # Cognigy Text Format
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../release-notes/4.63.md)
+
 _Cognigy text format_ (`ctxt`) is a specialized text format developed by Cognigy.
 This format serves to import custom-chunked content into the [Cognigy Knowledge AI](overview.md) solution.
 
@@ -37,6 +39,7 @@ A `ctxt` format file must contain both [header](#header) and [body](#body) secti
     `version: 1`
     `title: Cognigy xApps FAQs`
     `url: https://www.cognigy.com`
+    `tags: [cognigy, xapps, architecture]`
     
     What is Cognigy?
     Cognigy is a leading enterprise software provider for Conversational AI automation. Our platform, Cognigy.AI, automates customer and employee communications. Available in on-premises and SaaS environments, Cognigy.AI enables enterprises to have natural language conversations with their users on any channel - webchat, SMS, voice and mobile apps - and in any language. Cognigy.AI powers intelligent voice and chatbots that communicate consistently and accurately beyond simple FAQ, resulting in reduced contact center costs and increased efficiency while improving user experiences. The worldwide client portfolio of Cognigy includes Toyota, E.ON, Lufthansa, and many more.
@@ -83,8 +86,9 @@ The header should be separated from the [body](#body) by double-line breaks.
 | Key     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Mandatory |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
 | version | The version of the ctxt format. It should be set to 1 as the only supported version is 1 currently. The version number can be changed when a new version is introduced.                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | yes       |
-| title   | The `title` key is an example of a custom defined meta data key to define the document's name. When a user requests the information source, the virtual agent could be configured in a way to display the document's title in the response message. <br>You can find this parameter in the Input object under `input.knowledgeSearch.topK[0].sourceMetaData.title`.                                                                                                                                                                                                                                                                              | no        |
-| url     | The `url` key is an example of a custom defined meta data key to define a url to the document's source, e.g. a website where the information was obtained. When a user requests the information source, the virtual agent could be configured in a way to display the link to the source in the response message. This parameter enables users to access the source for more details or verification. For example, if the document's information came from your company's website, the URL field would contain the website's URL. <br>You can find this parameter in the Input object under `input.knowledgeSearch.topK[0].sourceMetaData.url` . | no        |
+| title   | The `title` key is an example of a custom-defined meta data key to define the document's name. When a user requests the information source, the virtual agent could be configured in a way to display the document's title in the response message. <br>You can find this parameter in the Input object under `input.knowledgeSearch.topK[0].sourceMetaData.title`.                                                                                                                                                                                                                                                                              | no        |
+| url     | The `url` key is an example of a custom-defined meta data key to define a url to the document's source, e.g. a website where the information was obtained. When a user requests the information source, the virtual agent could be configured in a way to display the link to the source in the response message. This parameter enables users to access the source for more details or verification. For example, if the document's information came from your company's website, the URL field would contain the website's URL. <br>You can find this parameter in the Input object under `input.knowledgeSearch.topK[0].sourceMetaData.url` . | no        |
+| tags    | The `tags` key is an example of a custom-defined metadata key used to define tags that help users filter their knowledge searches, focus on relevant information, and ultimately obtain more accurate search results. The maximum number of tags per knowledge source is 10.                                                                                                                                                                                                                                                                                                                                                                     | no        |             
 
 You can create your types of keys for metadata, for example,
 `author: Cognigy`, where `author` is a key.
@@ -97,6 +101,7 @@ To learn about source metadata limits, go to the [Limitations](overview.md#limit
 `version: 1`
 `title: Cognigy xApps FAQs`
 `url: https://www.cognigy.com`
+`tags: [cognigy, xapps, architecture]`
 ```
 
 ### Body

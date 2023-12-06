@@ -31,15 +31,20 @@ such as Kubernetes, MongoDB, and Redis.
 | 4.60                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
 | 4.61                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
 | 4.62                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
+| 4.63                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
+| 4.64                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
+| 4.65                                        | 1.19-1.26  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
 
 [^*]: Stand-alone deployment.
 
 [^**]: Both stand-alone and High Availability (HA) with Sentinel deployments.
+
+[^**]: High Availability (HA) with Sentinel deployment.
 
 ## More Information
 
 Version Compatibility Matrix:
 
 - [Live Agent](../../live-agent/installation/deployment/version-compatibility-matrix.md)
-- [Agent Assist Workspace](../../agent-assist/installation/version-compatibility-matrix.md)
+- [Agent Assist Workspace](../../ai-copilot/installation/version-compatibility-matrix.md)
 - [Voice Gateway](../../voicegateway/installation/version-compatibility-matrix.md)

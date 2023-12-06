@@ -221,9 +221,8 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
-- [Dashboard Calls](dashboard-calls.md)

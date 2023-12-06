@@ -37,6 +37,6 @@ The Security Token obtained in the process of setting up the Microsoft Teams out
 !!! note "Help Center"
     More detailed information on how to set up a **Microsoft Teams** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016224039).
 
-## More information
+## More Information
 
 - [Help Center: Microsoft Teams Deployment](https://support.cognigy.com/hc/en-us/articles/360016224039-Microsoft-Teams-Deploy-an-Endpoint)

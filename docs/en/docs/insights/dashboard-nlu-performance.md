@@ -101,7 +101,10 @@ Result: In the provided source table, there is one record with an intent score o
 Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
 
 A message is counted as understood if it has triggered an Intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/).
-A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) or sent during an active handover without configuring [Agent Assist](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow.
+A message is not counted as understood
+if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/)
+or sent during an active handover
+without configuring [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow.
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,
@@ -270,9 +273,8 @@ Result: `(130ms + 123ms) / 2 = 127.5ms`
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Engagement](dashboard-engagement.md)
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard Live Agent](dashboard-live-agent.md)
-- [Dashboard Calls](dashboard-calls.md)

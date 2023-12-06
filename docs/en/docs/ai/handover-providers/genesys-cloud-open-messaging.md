@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys Cloud Open Messaging
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.58-blue.svg)](../../release-notes/4.58.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../release-notes/4.63.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="80%" />
@@ -65,8 +65,8 @@ To create a Queue, follow these steps:
 2. Go to **Admin > Contact Center > Queues**.
 3. On the **Queues** page, click **Create Queue**.
 4. In the left-side **Create Queue** window, fill in the following fields:
-    - Name — enter a unique name of the queue. Save and copy this name for later use.
-    - Division — select `Home`.
+    - **Name** — enter a unique name of the queue. Save and copy this name for later use.
+    - **Division** — select `Home`.
 5. Click **Save**.
 
 Your queue will appear in the queue list.
@@ -111,20 +111,7 @@ Your Message Routing configuration will appear in the message routing list.
 
 #### Configure Credentials
 
-To configure credentials, follow these steps:
-
-1. Open the Genesys Cloud interface. 
-2. Go to **Admin > Integrations > OAuth**. 
-3. Click **+ Add Client**. 
-4. On the **Client Details** tab, provide a unique name in the **App Name** field. 
-5. On the **Roles** tab, activate the corresponding role for the client. 
-6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list. 
-7. Click **Save**. 
-8. Copy the Client ID and Client Secret and save them for future use. 
-9. From the left-side menu, select **Authorized Applications**. 
-10. In the upper-right corner, click **+ Authorize a Client**. 
-11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously. 
-12. Click **Authorize Client**.
+{! _includes/ai/providers/genesys/configure-credentials.md !}
 
 Once your client is authorized, you can start configuring Genesys Handover Provider on the Cognigy side.
 
@@ -153,6 +140,12 @@ Add a [Handover to Agent](../tools/agent-handover.md) Node without any additiona
 
 To test connection, click **Open Demo Web Chat**.
 
-## More information
+## AI Copilot Workspace
+
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
+
+{! _includes/agent-assist/url-pattern.md !}
+
+## More Information
 
 - [Genesys Cloud Guest Chat](genesys-cloud-guest-chat.md)

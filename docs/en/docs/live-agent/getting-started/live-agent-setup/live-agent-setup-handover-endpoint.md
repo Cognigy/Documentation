@@ -16,7 +16,7 @@ In case, you want to integrate a Handover process in your Flow, you need to conf
 Before setting up the Endpoint, check whether these steps are done:
 
 - [Live Agent is set up for your Organization](live-agent-setup-org.md)
-- [The Inbox is created for your Live Agent Account](live-agent-setup-inbox.md).
+- [The Inbox is created for your Live Agent Account](live-agent-setup-inbox.md)
 
 ## Handover Configuration
 
@@ -72,7 +72,7 @@ You can find the Account ID in the Live Agent URL of your Live Agent **Inbox**.
 To locate the ID, follow these steps:
 
 1. Open your Live Agent Account and go to **Settings > Inboxes**. 
-2. In the Inboxes list, find the Inbox of your project, and click the Settings icon next to the Inbox. 
+2. In the Inboxes list, find the Inbox of your project, and click the **Settings** icon next to the Inbox. 
 3. The Inbox settings will be displayed, and you will see the address line of your browser as follows: `https://liveagent-<your-environment>/app/accounts/<account-id>/settings/inboxes/<inbox-id>`. For example, in the URL `https://liveagent-dev.cognigy.ai/app/accounts/2/settings/inboxes/32852`, the Account ID is 2.
 
 <figure>

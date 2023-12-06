@@ -7,7 +7,7 @@ hidden: false
 
 # Search Extract Output
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../../release-notes/4.62.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../release-notes/4.63.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/search-extract-output.png" width="80%"/>
@@ -78,6 +78,12 @@ Select a store from the list to allow the Node to retrieve the data.
 | Transcript Steps          | Indicator     | Number of prior transcript steps to use in a context-aware search. This parameter is active when the Context-Aware Search setting is enabled.                                                                                                                                                                                                                                                                                                                                                                                            |
 | Where to store the result | Select        | The storage for the search results. Select a storage:<br> - **default** — the content will be stored in the Input object (`input.knowledgeSearch`). <br> - **Input** — the content will be stored in the Input object.<br> - **Context** — the content will be stored in the Context.                                                                                                                                                                                                                                                    |
 | String to search for      | CognigyScript | The string to search for in the knowledge store. A default value is stored in `input.text`.                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Source Tags               | CognigyScript | The tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and, as a result, improve the accuracy of search outputs. <br><br> Before specifying tags, ensure that they were provided during the upload of the source file for this knowledge source. Add tags by specifying each tag separately and pressing **enter**. The maximum number of tags is 5.                                                                                                |
+
+!!! tip "Tips: Source Tags"
+	- You can add CognigyScript within Source Tags.  
+	- Source Tags are always lower-case, only alpha-numerics (a-z, 0-9), underscores, and hyphens are allowed.  
+	- When using CognigyScript for Source Tags, it is important to lowercase them. For example by using the following: `{{"{{input.text.toLowerCase()}}"}}`
 
 ### Extract Settings
 
@@ -127,7 +133,7 @@ In the following table, a dialogue between the user and the virtual agent is pre
 | **user:** What animals are allowed on a plane?<br> **virtual agent:** Passengers are allowed to bring a maximum of two animals (dogs or cats) on the plane, either in the cabin or in the cargo hold, as long as they are in approved transport containers.<br> **user:** Give me more details! <br> **virtual agent:** Unfortunately, I cannot answer your question. | **user:** What animals are allowed on a plane?<br> **virtual agent:** Passengers are allowed to bring a maximum of two animals (dogs or cats) on the plane, either in the cabin or in the cargo hold, as long as they are in an approved transport container.<br> **user:** Give me more details! <br> **virtual agent:** The approved transport container for animals on a plane must have a maximum size of 118 cm (55 x 40 x 23 cm) or 47 in (22 x 16 x 9 in) and a total weight, including the animal, not exceeding 8 kg. The container should be escape-proof, leak-proof, bite-proof, and lined with absorbent material. Only one transport container per passenger is allowed in the cabin, and the number of animals per container is limited to one, with exceptions for specific cases. |
 
 
-## More information
+## More Information
 
 - [Knowledge Search Node](knowledge-search.md)
 - [Knowledge Search Overview](../../knowledge-ai/overview.md)

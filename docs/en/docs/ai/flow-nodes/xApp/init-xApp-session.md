@@ -66,7 +66,7 @@ Customize the text displayed on the Intermediate Screen. Alternatively, you can 
 
 Customize the text displayed on the Connection Screen. Alternatively, you can replace the default Connection Screen with an xApp Page by providing the xApp Template, a mini website containing HTML/CSS/JS, and parameters that you pass into this xApp Template, the xApp Template Data.
 
-## More information
+## More Information
 
 - [xApp Tokens](../../xApp/tokens.md)
 - [xApp Nodes](overview.md)

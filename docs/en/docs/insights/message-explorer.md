@@ -64,7 +64,7 @@ To go back to the filtered messages again, click on the **X** icon in the column
 </figure>
 
 
-## More information
+## More Information
 
 - [Cognigy Insights](cognigy-insights.md)
 - [Global Filter](global-filter.md)
