@@ -23,19 +23,14 @@ In the Profile Settings page you can configure following settings:
 - [Hotkey to send messages](#hotkey-to-send-messages)
 - [API Access Token](#api-access-token)
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA_Profile_Settings.png" width="100%" alt="Live Agent Profile Profile " />
-  <figcaption></figcaption>
-</figure>
-
 ## User Profile Appearance
 
 To individualize profile settings, you can edit your profile image and display name, which will be displayed in conversations.
 
-| Field         | Description                                                                                                                                                                |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Profile image | The image will be displayed in Agent conversations, Agent lists and profile menu                                                                                                    |
-| Display name  | This name will be displayed  in Agent conversations and is used as sender name when Agents send conversation transcripts in emails.  |
+| Field         | Description                                                                                                                         |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Profile image | The image will be displayed in Agent conversations, Agent lists and profile menu                                                    |
+| Display name  | This name will be displayed  in Agent conversations and is used as sender name when Agents send conversation transcripts in emails. |
 
 The other user data, such as email address, full name and password, need to be updated in the Cognigy.AI account. The changes will automatically apply to Live Agent.
 
