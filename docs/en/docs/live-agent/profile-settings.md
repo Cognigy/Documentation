@@ -6,31 +6,31 @@ hidden: false
 
 # Profile Settings
 
-Each user in Live Agent has a profile. To individualize profile settings, you can individualize your profile settings, edit your profile image and display name, which will be displayed in conversations.
-It is also possible to customize certain system settings for yourself, such as receiving notifications, managing hotkeys and enabling **Copilot**.
+_Profile Settings_ are a set of customizable options and configurations available to individual users within the Live Agent system. These settings include the customization of profile appearance, notification preferences, activation of AI Copilot, configuration of hotkeys for sending messages, and access to API functionality.
 
 To open the **Profile Settings** in Live Agent, do the following:
 
-1. Open your Live Agent interface.
-2. Click **Profile Settings** icon in the bottom left corner of the Live Agent interface to open a drop-down list.
-3. Click **Profile Settings** in the drop-down list. The Profile Settings page will be displayed.
+1. Open your Live Agent interface. 
+2. In the bottom-left corner of the Live Agent interface, click the **Profile Settings**.
+3. In the drop-down list, select **Profile Settings**. The **Profile Settings** page will be displayed.
 
-In the Profile Settings page you can configure following settings:
+There are the following settings available within the user profile:
 
 - [User Profile Appearance](#user-profile-appearance)
 - [Notifications](#notifications)
 - [AI Copilot](#ai-copilot)
 - [Hotkey to send messages](#hotkey-to-send-messages)
-- [API Access Token](#api-access-token)
+
+Additionally, you can copy the [API Token](#api-access-token) to access the [Live Agent API](https://liveagent-trial.cognigy.ai/openapi).
 
 ## User Profile Appearance
 
-To individualize profile settings, you can edit your profile image and display name, which will be displayed in conversations.
+To personalize your profile settings, you can edit both your profile image and the name that will be displayed in conversations.
 
-| Field         | Description                                                                                                                         |
-|---------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Profile image | The image will be displayed in Agent conversations, Agent lists and profile menu                                                    |
-| Display name  | This name will be displayed  in Agent conversations and is used as sender name when Agents send conversation transcripts in emails. |
+| Setting       | Description                                                                                                                            |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Profile image | The image will be displayed in the conversations, agent lists and user profile menu.                                                   |
+| Display name  | This name will be displayed in the conversations and is used as sender name when human agents send conversation transcripts in emails. |
 
 The other user data, such as email address, full name and password, need to be updated in the Cognigy.AI account. The changes will automatically apply to Live Agent.
 
@@ -38,28 +38,21 @@ The other user data, such as email address, full name and password, need to be u
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-{! _includes/live-agent/push-notifications.md !}
-
-!!! note
-    The email and push notification settings in the [Account Settings](notifications.md#configure-notifications-at-the-account-level) will take precedence over the Profile Settings.
-    If the administrator has not yet changed the push and email notification settings, a Live Agent still has the opportunity to change them in the Profile Settings.
-
 In Live Agent, you can configure email and push notifications, and audio alerts for certain types of actions that trigger notifications.
 
-The behavior of notifications can be configured in several ways:
+The email and push notification settings in the [Account Settings](notifications.md#configure-notifications-at-the-account-level) will take precedence over the Profile Settings.
+If the administrator has not yet changed the push and email notification settings, you can change them in the Profile Settings.
 
-1. Notifications can be configured in the **Account Settings** only by users with **Administrator** role. Settings done here overrides settings in the **Profile Settings**.
-
-2. Notifications can be configured in Live Agents **Profile Settings** by users with **Agent, Adminsitrator and Supervisor** roles. If the administrator has not yet changed the push and email notification settings, these users still have the opportunity to configure notifications in the Profile Settings.
-
-For more information, read the  [Account settings](settings/account-settings.md#notifications) and [Notifications](notifications.md#configure-notifications-at-the-user-profile-level) documentation.
+To configure notifications, refer to [Notifications](notifications.md#configure-notifications-at-the-user-profile-level).
 
 ## AI Copilot
 
-Cognigy AI Copilot offers a variety of advanced features that empower Agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center's Agent desktop, it enhances the overall efficiency of your contact center.
+Cognigy AI Copilot offers a variety of advanced features that empower human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
 
-In the **Profile Settings** of the Live Agent interface an Agent can **Enable** or **Disable** the **Copilot**.
-If an administrator has already preset the Copilot settings in the **Account Settings** of the Live Agent interface, this setting  will take precedence over the individual agent profile settings. In this case a Live Agent is not able to change **Copilot** settings.
+In the **Profile Settings**, a user can activate AI Copilot.
+If an administrator has already preset the Copilot settings in the **Account Settings**,
+this setting will take precedence over the user profile settings.
+In this case, a user is not able to change the **Copilot** settings.
 
 For more information, read the [AI Copilot](assistants/ai-copilot.md) and [LA AI Copilot](assistants/la-ai-copilot.md) documentation.
 
@@ -75,15 +68,10 @@ To send messages in the [conversation chat](conversation/conversation-workflow.m
 
 ## API Access Token
 
-The Access Token, displayed here, is used for the Live Agent API and contains authentication and authorization information for a user, and its actions are limited by the user role.
-Using API's opens more opportunities to the user to work with Live Agent.
-
-Application Programming Interface (API) Keys are security tokens registered to a user account. These tokens can be used by external applications to access Cognigy.AI in the same way that a human user would enter their password to log in to the platform. 
-API keys inherit the same permissions as the associated user profile, such as Admin, Project Manager, or OData. 
-
-API keys provides authorization to perform requests made available via the [Cognigy Live Agent API reference](https://liveagent-trial.cognigy.ai/openapi) site.
+The displayed Access Token serves as the authentication and authorization key for the  [Live Agent API](https://liveagent-trial.cognigy.ai/openapi). It contains information specific to a user, and the actions it enables are restricted by the user's [assigned role](roles.md).
 
 ## More information
 
+- [Account Settings](settings/account-settings.md)
 - [User Roles](roles.md)
 - [AI Copilot](../ai-copilot/overview.md)
