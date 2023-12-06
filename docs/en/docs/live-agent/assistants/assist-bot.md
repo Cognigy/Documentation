@@ -10,7 +10,7 @@ _Assist Bots_ are personal virtual assistants for human agents. These assistants
 
 Human agents can interact with Assist Bots in every customer conversation to solve complex customer issues more efficiently and faster to improve customer experience.
 
-Only users with the Admin role can create, edit or delete Assist Bots in Live Agent.
+Only users with the `Administrator` role can create, edit or delete Assist Bots in Live Agent.
 
 Differing from other AI Copilot assistants, a human agent can use multiple Assist Bots within a single conversation.
 While the AI Copilot assistants listen to the main flow and attempt to follow it,
