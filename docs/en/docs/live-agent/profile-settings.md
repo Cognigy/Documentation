@@ -49,11 +49,11 @@ To configure notifications, refer to [Notifications](notifications.md#configure-
 
 Cognigy AI Copilot offers a variety of advanced features that empower human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
 
-In the **Profile Settings**, a user can activate AI Copilot if [AI Copilot has been installed previously](../ai-copilot/getting-started.md).
+In the **Profile Settings**, a user can activate AI Copilot if [it has been installed previously](../ai-copilot/getting-started.md).
 
-If an administrator has already preset the Copilot settings in the **Account Settings**,
+If an administrator has already preset the **AI Copilot Workspace** settings in the **Account Settings**,
 this setting will take precedence over the user profile settings.
-In this case, a user is not able to change the **Copilot** settings.
+In this case, a user is not able to change the **AI Copilot Workspace** settings.
 
 For more information, read the [AI Copilot](assistants/ai-copilot.md) and [LA AI Copilot](assistants/la-ai-copilot.md) documentation.
 

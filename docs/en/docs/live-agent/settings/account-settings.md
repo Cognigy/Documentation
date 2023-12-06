@@ -119,12 +119,12 @@ By default, only online agents are considered.
 
 Cognigy AI Copilot offers the most comprehensive functions compared to the other assistants, enabling human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
  
-In the **Account Settings**, administrators can activate AI Copilot if [AI Copilot has been installed previously](../../ai-copilot/getting-started.md).
+In the **Account Settings**, administrators can activate AI Copilot if [it has been installed previously](../../ai-copilot/getting-started.md).
 
-If an administrator has already preset the AI Copilot settings in the **Account Settings** of the Live Agent interface,
+If an administrator has already preset the **AI Copilot Workspace** settings in the **Account Settings**,
 this setting will take precedence over the user profile settings.
 
-Before you can enable **AI Copilot** for all human agents,
+Before you can enable **AI Copilot Workspace** for all human agents,
 activate the **Enable overriding AI Copilot preferences** setting.
 The configuration set here applies as a preset to all human agents of your organization account and overrides the human agent [Profile settings](../profile-settings.md#notifications).
 
