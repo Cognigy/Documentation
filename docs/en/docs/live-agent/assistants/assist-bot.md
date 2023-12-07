@@ -17,7 +17,6 @@ While the AI Copilot assistants listen to the conversation and attempt to follow
 an Assist Bot acts as an independent secondary bot with built-in logic to assist the human agent.
 For instance, if the human agent requires additional expertise during the conversation,
 they can activate a specialized Assist Bot, such as one for technical support or order processing.
-Unlike other AI Copilot assistants, the workflow of this Assist Bot remains unchanged on the fly.
 
 <figure>
    <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/LA_asked_Assist-Bot_for_help.png" width="80%" alt="Live Agent Assist Bot Overview" />
