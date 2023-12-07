@@ -28,7 +28,7 @@ The usage scenario from the user's perspective is as follows:
 
 1. A human agent initiates the process by clicking a button in the AI Copilot widget.
 2. The end user (cardholder) receives a link via conversation chat, opens it in a new browser window, and completes the card form.
-3. The human agent enters a PIN code to retrieve the card data.
+3. The human agent needs to ask the end-user for a passphrase which the end-user has received after submitting the credit-card data. The human agent can unlock and read respective data via the passphrase.
 
 ## More Information
 
