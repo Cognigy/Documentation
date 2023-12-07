@@ -88,6 +88,9 @@ _**STT**_
 
 ## T
 
+_**Tracing**_
+: Tracing logs are valuable for diagnosing issues, optimizing performance, and understanding the flow of operations for inbound calls. The Tracing tab for recent calls serves to identify delays in various steps, such as speech recognition, connection attempts, and other processing tasks. For more information, read the [Recent Calls](webapp/recent-calls.md) documentation.
+
 _**TTS**_
 : TTS (Text-to-Speech) is a technology that transforms written text into spoken words. It allows computers to generate artificial speech, facilitating applications such as voice response systems by consistently translating written language into audible communication. For more details, see [Wikipedia - Speech synthesis](https://en.wikipedia.org/wiki/Speech_synthesis). A TTS Vendor is a system provider that offers this speech service. For more information, see [TTS Vendors](references/tts-and-stt-vendors.md) supported by Cognigy Voice Gateway.
 
