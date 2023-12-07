@@ -6,7 +6,7 @@ hidden: true
 
 # Copilot: Next Action Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/next-action-tile.png" width="80%"/>
@@ -29,6 +29,10 @@ This Node helps guide a conversation flow and ensures that the system responds e
 
 This Node helps the human agent by providing guidance and predefined instructions based on the user's question. 
 For instance, if a user asks about the latest release version, the agent can give them both the answer and links to important updates in that release.
+
+If you are using Live Agent as a handover provider,
+you can forward information from the widget to the **Reply to User** section
+by clicking ![vertical-ellipsis](../../../live-agent/images/icons/forwarder.svg) and then sending it to the end user.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/next-action-tile-example.png" width="80%"/>
