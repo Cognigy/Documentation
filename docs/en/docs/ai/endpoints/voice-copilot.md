@@ -6,6 +6,8 @@ hidden: false
 
 # Voice Copilot
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../release-notes/4.66.md)
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/voice-copilot.png" width="100%" />
 </figure>
