@@ -177,16 +177,17 @@ To manage Flows in different use cases for your Agent, do the following:
 
 ### Flow Nodes
 
-**Flow Nodes** can be used to add interactivity to a Flow. They can be added by clicking on the **+** icon visible between two existing Nodes. Depending on the function Cognigy.AI provides many types of Nodes, ranging from **Basic Nodes** to **Advanced Nodes**. 
+**Flow Nodes** can be used to add interactivity to a Flow. They can be added by clicking on the **+** icon visible in the Flow chart between the Nodes. Depending on the function Cognigy.AI provides many types of Nodes, ranging from basic to advanced. 
 
 The different Nodes are assigned to the following categories:
 
-  - Basic Nodes
-  - Message Nodes
-  - Logic Nodes
-  - Profile Nodes
-  - Service Nodes
-  - NLU Nodes
+   - Basic
+   - Logic
+   - Voice
+   - Analytics
+   - Service
+   - NLU
+   - Data
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="80%" />
