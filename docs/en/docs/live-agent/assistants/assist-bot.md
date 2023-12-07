@@ -1,76 +1,99 @@
 ---
- title: "Agent Assist Bot"
- slug: "agent-assist-bot" 
- hidden: false 
+title: "Agent Assist Bot"
+slug: "agent-assist-bot" 
+hidden: false 
 ---
+
 # Assist Bot
 
-<figure>
-<img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-overview.png" width="100%" alt="Live Agent Assist Bot Overview" />
-  <figcaption>Live Agent Assist Bot Overview</figcaption>
-</figure>
+_Assist Bots_ are personal virtual assistants for human agents. These assistants automate service processes, give human agents access to relevant resources and assist in answering common customer questions.
 
-The Assist Bot is a tool designed to assist human agents during customer conversations.
-It includes a dedicated Flow for providing information to the human agent,
-and as such, it needs to be configured as a separate Flow in Cognigy.AI.
+Human agents can interact with Assist Bots in every customer conversation to solve complex customer issues more efficiently and faster to improve customer experience.
 
-## Creating an Assist Bot
+Only users with the `Administrator` role can create, edit, or delete Assist Bots in Live Agent.
 
-### 1. Create a new WebChat Endpoint
-
-A new WebChat endpoint needs to be created.  Once the endpoint is created, it is time to copy the endpoint URL from its settings.
-
-To learn more about how to create an Endpoint, head over to [Endpoints](../../ai/resources/deploy/endpoints.md). 
-A new WebChat endpoint needs
-to be created for learning about how to create endpoint head over to [Endpoints](../../ai/resources/deploy/endpoints.md).
-Once the endpoint is created, it is time to copy the endpoint URL from its settings.
+Differing from other AI Copilot assistants, a human agent can use multiple Assist Bots within a single conversation.
+While the AI Copilot assistants listen to the conversation and attempt to follow it,
+an Assist Bot acts as an independent secondary bot with built-in logic to assist the human agent.
+For instance, if the human agent requires additional expertise during the conversation,
+they can activate a specialized Assist Bot, such as one for technical support or order processing.
 
 <figure>
-<img src="{{config.site_url}}live-agent/conversation/images/ai-endpoint-config-url.png" width="100%" alt="Cognigy.AI Endpoint Config URL" />
-  <figcaption>Cognigy.AI Endpoint Config URL</figcaption>
+   <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/LA_asked_Assist-Bot_for_help.png" width="80%" alt="Live Agent Assist Bot Overview" />
 </figure>
 
-### 2. Create an Assist Bot for an Inbox
+## Before you Begin
 
-Once the endpoint with the Assist flow is set up, and the URL is copied, it is time to create the Assist Bot in Live Agent. Go to the inbox settings and add a new Assist Bot.
+To use Assist Bots in a Live Agent conversation, you need to create two Flows and two Endpoints in Cognigy.AI that comply with the following conditions:
 
-<figure>
-<img src="{{config.site_url}}live-agent/conversation/images/live-agent-inbox-settings-assist-bots.png" width="100%" alt="Live Agent Assist Bot Inbox Settings" />
-  <figcaption>Live Agent Assist Bot Inbox Settings</figcaption>
-</figure>
+- The **Main** Flow for interaction between a virtual agent and an end user. Within this Flow, add a [Handover to Agent](../../ai/tools/agent-handover.md) Node to transition the conversation from the virtual agent to a human agent. The Inbox ID must be included in the Handover to Agent Node.
+- The **Endpoint** for the **Main** Flow.
+- The **Assist Bot** Flow for interaction between an Assist Bot and a human agent.
+- The **Endpoint** for **Assist Bot** Flow.
 
-Click on the "Add Bots" button and fill in the following fields:
+## Create an Assist Bot
 
-| Field        | Value                                     |
-|--------------|-------------------------------------------|
-| Name         | Assist Bot Name                           |
-| Endpoint URL | The URL copied from the endpoint settings |
+You can create multiple Assist Bots within an Inbox.
 
-The newly added Assist Bot will be available in the "Assist Bot" section of the conversations belonging to the according inbox. It is possible to have multiple Assist Bots in the same inbox and edit them. The changes will be applied instantly.
+To create an Assist Bot, do the following:
 
-### 3. Use the Assist Bot in a Conversation
+1. Open the Live Agent interface.
+2. Navigate to **Settings > Inboxes**.
+3. To edit the previously created Inbox settings, click **Settings** next to the Inbox.
+4. On the **Settings** tab, click **Add Bots**.
+5. In the **Create New Assist Bot** window, fill in the following fields:
+    - **Name** — enter a unique name for your bot. This name is helpful if there are multiple bots within the same Inbox, allowing you to distinguish them easily.
+    - **Endpoint Config URL** —  enter the URL copied from the Endpoint settings in Cognigy.AI. You can find and copy the **Config URL** in the Webchat Endpoint settings for the previously created Assist Bot Flow in Cognigy.AI.
+6. Click **Add**.   
 
-When the conversation inbox configures Assist Bot, they can be selected under the Conversation Information section in the right-hand sidebar. There is a tab called "Assist," and then the Assist Bots can be set via the dropdown to chat with them.
+The created Assist Bot will be available for all assigned human agents within the Inbox.
 
-<figure>
-<img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-chat.png" width="100%" alt="Live Agent Assist Bot Chat" />
-  <figcaption>Live Agent Assist Bot Chat</figcaption>
-</figure>
+## Use Assist Bots in a Conversation
 
-## Forwarding Assist Bot messages
+Note that you can use multiple Assist Bots within a conversation. Each bot creates a separate session that needs to be [manually closed](#complete-an-assist-bot-session) after ending the conversation.
 
-The Assist Bot messages can be easily forwarded to the customer by clicking directly on the messages. The message will be forwarded automatically, as shown in the screenshot.
+To use Assist Bots in a conversation, do the following:
 
-<figure>
-<img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-forward-messages.png" width="100%" alt="Live Agent Assist Bot Forward Messages" />
-  <figcaption>Live Agent Assist Bot Forward Messages</figcaption>
-</figure>
+1. Go to your conversation.
+2. At the top of the conversation window, click **More Details**.
+3. On the right side of the **Conversation Details** window, select the **Assist** tab. 
+4. Open the drop-down list and select one of the available **Assist Bots**. 
+5. In the **Edit Message** field at the bottom of the window, write your request to the Assist Bot. The Assist Bot performs research as configured in the Assist Bot Flow and sends back the result in a separate Live Agent chat, such as a product video, image, text, and more. 
+6. To forward the provided content to the Live Agent conversation, click directly on the content item. It will be sent to the **Reply to User** field in the main conversation chat. 
+7. Click **Send** to provide the content item to the customer in the main conversation chat.
 
-## Resetting Assist Bot session
+This way, the Assist Bot becomes a dependable assistant for human agents, enabling them to delegate tasks to the bot and then share the outcomes with the customer.
 
-The Assist Bot chat can be reset by clicking on the "Reset Session" button in the dropdown three-dots menu. This will clear the history and reset the session with the Assist Bot.
+## Complete an Assist Bot Session
 
-<figure>
-<img src="{{config.site_url}}live-agent/conversation/images/live-agent-assist-bot-reset-session.png" width="100%" alt="Live Agent Assist Bot Reset Session" />
-  <figcaption>Live Agent Assist Bot Reset Session</figcaption>
-</figure>
+To complete a session with Assist Bot, do the following:
+
+1. Go to your conversation.
+2. At the top of the conversation window, click **More Details**.
+3. On the right side of the conversation window, select the **Assist** tab. 
+4. Click ![vertical ellipsis](../../assets/icons/vertical-ellipsis.svg). 
+5. In the drop-down list, select **Reset Session**. 
+
+The session will stop, the interaction with the bot will finish, and the Assist Bot communication history will be cleared.
+
+## Send a Transcript to Assigned Agents 
+
+In case you want to send a conversation transcript to a specific email address or to the assigned human agents, do the following:
+
+1. Go to your conversation.
+2. In the upper-right corner of the conversation window, click **Send Transcript**.
+3. In the **Send conversation transcript** window, select one of the following options:
+    - **Send transcript to the assigned agent** — the conversation transcript will be sent to a human agent currently assigned to handle the interaction. This is useful when you want the assigned human agent to have a record of the conversation for reference or follow-up.
+    - **Send transcript to another email address** — the conversation transcript will be sent to a different email address. This is helpful when you need to share the conversation details with someone other than the assigned human agent, such as a supervisor, team member, or any other relevant party.
+4. Click **Submit**. 
+
+A transcript will be sent to the selected receiver.
+
+!!! note
+    The email transcript includes only the conversation history between a human agent and their customer. If the human agent calls an Assist Bot for help, that interaction takes place on a separate channel and in a different session, and it will not be included in the transcript.
+
+## More Information
+
+- [Assistants](overview.md)
+- [Endpoints](../../ai/resources/deploy/endpoints.md)
+- [Inboxes](../settings/inboxes.md)
