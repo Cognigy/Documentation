@@ -34,29 +34,74 @@ The application ensures an extra layer of security through the [AES](https://en.
 making it a robust solution for managing and safeguarding sensitive payment-related information.
 
 The image below represents a high-level interaction diagram with PCI Vault.
-The PCI Vault application interacts with components of the Cognigy.AI system, the contact center,
+The PCI Vault application interacts with Cognigy.AI, the contact center,
 as well as end users and human agents.
 
-<figure>
-    <img class="image-center" src="{{config.site_url}}pci-vault/images/pci-dss.png" width="70%"/>
-</figure>
+```mermaid
+sequenceDiagram
+title Cognigy PCI Vault - typical sequence of interactions
 
+participant User as End User
+participant VirtualAgent as Virtual Agent
+participant ContactCenterAgent as Human Agent
+participant AICopilot as AI Copilot Workspace
+participant PCIVault as PCI Vault
+
+User->>VirtualAgent: 1. Initiate payment conversation
+activate VirtualAgent
+
+VirtualAgent->>ContactCenterAgent: 2. Trigger handover to contact center
+activate ContactCenterAgent
+
+ContactCenterAgent->>AICopilot: 3. Request card details link
+activate AICopilot
+AICopilot->>PCIVault: 4. Request secure link
+activate PCIVault
+PCIVault-->>AICopilot: 5. xApp link
+deactivate PCIVault
+AICopilot-->>ContactCenterAgent: 6. Provide xApp link
+deactivate AICopilot
+
+ContactCenterAgent->>User: 7. Provide xApp link to user
+
+User->>PCIVault: 8. Access secure form and submit payment info
+activate PCIVault
+PCIVault-->>User: 9. Generate and provide PIN
+deactivate PCIVault
+
+User->>ContactCenterAgent: 10. Provide PIN
+activate ContactCenterAgent
+ContactCenterAgent->>AICopilot: 11. Enter received PIN
+activate AICopilot
+AICopilot->>PCIVault: 12. Verify PIN and check transaction status
+activate PCIVault
+PCIVault-->>AICopilot: 13. Clear-text form with card details
+deactivate PCIVault
+AICopilot-->>ContactCenterAgent: 14. Receive clear-text form
+deactivate AICopilot
+
+ContactCenterAgent->>User: 15. Process payment or address user queries
+
+deactivate ContactCenterAgent
+deactivate VirtualAgent
+```
 High-level description of the process:
 
-1. An end user initiates a conversation with the virtual agent, expressing the intent to make a payment.
-2. The virtual agent detects the user's handover request and triggers a handover to the contact center using Cognigy Runtime components.
-3. A human agent in the contact center receives the handover and engages with the user.
-4. Using the AI Copilot workspace, the human agent requests a link for entering card details.
-5. A POST API request is made to the `service-secure-forms` backend via Cognigy Runtime to generate a link for the secure card details form.
-6. The`service-app-session-manager` component transmits the link to the end user.
-7. The end user accesses the secure form through the provided link and enters sensitive payment information.
-8. An API request is sent to the `service-secure-forms` backend for form storage: form fields are AES encrypted using a symmetric encryption key from a Kubernetes secret. 
-9. Credit card credentials are temporarily stored in Redis for no more than 30 minutes, ensuring the sensitive data's time-limited retention during the transaction for security purposes.
-10. A PIN is generated and returned to the end user. The end user provides the PIN to the human agent via chat. 
-11. Using the AI Copilot workspace, the human agent enters the received PIN and requests clear-text data from the `service-secure-forms` backend. 
-12. The `service-secure-forms` backend verifies the PIN and checks the transaction status. If the PIN is correct and its status is valid, it returns the clear-text form with card details to the human agent.
-
-Then, the human agent processes the payment or addresses any further user queries related to the transaction.
+1. An end user initiates a conversation with a virtual agent, expressing the intent to make a payment.
+2. The virtual agent detects the user's handover request and triggers a handover to the contact center.
+3. A human agent in the contact center receives the handover and engages with the user. 
+4. The human agent uses the AI Copilot workspace to request a link to enter card details from PCI Vault.
+5. PCI Vault generates a secure xApp link for the card details form and provides it to the AI Copilot workspace.
+6. The human agent receives the xApp link. 
+7. The human agent provides the xApp link to the end user. 
+8. The end user accesses the secure form through the provided link, enters sensitive payment information, and submits it. 
+9. PCI Vault receives the encrypted information from the user, temporarily storing it in the Redis database for security purposes. PCI Vault generates a PIN and provides it to the end user. 
+10. The end user provides the generated PIN to the human agent. 
+11. Using the AI Copilot workspace, the human agent enters the received PIN. 
+12. PCI Vault verifies the PIN and checks the transaction status. 
+13. If the PIN is correct and the transaction status is valid, PCI Vault provides a clear-text form with card details to the AI Copilot workspace. 
+14. The human agent receives the clear-text form with card details. 
+15. The human agent processes the payment or addresses any further user queries related to the transaction.
 
 ## How to Configure
 
@@ -109,5 +154,5 @@ Once the card details are received, the human agent can process the payment on b
 
 ## More Information
 
-- [Copilot Nodes](../ai/flow-nodes/agent-assist/overview.md)
+- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
 - [Endpoints](../ai/endpoints/overview.md)
