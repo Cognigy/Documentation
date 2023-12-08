@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Adaptive Card Tile"
 slug: "set-adaptive-card-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Adaptive Card Tile

@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Set Grid"
 slug: "set-grid"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Set Grid
