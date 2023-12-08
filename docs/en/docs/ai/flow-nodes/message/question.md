@@ -19,7 +19,7 @@ A Question Node is used to ask a question that requests specific information fro
 After a question is asked and the user answers, the answer is validated according to its type. If it passes, the answer is valid and stored, and the conversation continues.
 
 !!! note "Attached Flows"
-    When a user input is recieved, it will be scored by the NLU. If an attached Flow has an Intent, which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
+    When a user input is received, it will be scored by the NLU. If an attached Flow has an Intent, which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -238,6 +238,6 @@ To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generat
 
 ## Answer Preprocessing
 
-You can use various functions of the [Text Cleaner](../../../ai/tools/text-cleaner.md) class to preprocess the answer to a question before it is evaluated. This can be helpful, for example, when requesting a name using a `text` type question or when asking for a part number using a `slot` question.
+You can use various functions of the [Text Cleaner](../../../ai/tools/text-cleaner.md) class to pre-process the answer to a question before it is evaluated. This can be helpful, for example, when requesting a name using a `text` type question or when asking for a part number using a `slot` question.
 
 In addition to the Text Cleaner functions, users have the option to rerun NLU after the cleaning process. This approach allows for tasks such as re-detecting slots or properly filling any remaining slots.

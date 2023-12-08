@@ -97,7 +97,7 @@ The user's first name.
       <tr>
     <td class="type" style="vertical-align: middle; padding: 10px;">timezone</td>
     <td style="padding: 20px;">
-      The user's timezone.
+      The user's time zone.
       </td>
   </tr>
       <tr>

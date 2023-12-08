@@ -120,7 +120,7 @@ without any snapshot (live deployment, here "None" option)**.
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
 
-You can granually inspect the analytics data by choosing only the preferred snapshots,
+You can granularly inspect the analytics data by choosing only the preferred snapshots,
 also by using the "negate" option — in this case, you will be excluding certain options. 
 
 For example, selecting "None" and "Negate" will show all the data excluding the one gathered from endpoints without selected snapshots.

@@ -309,7 +309,7 @@ After uploading the file, it should be reflected in the Webchat and the Live Age
 ### Private Chat with Agents
 <div class="divider"></div>
 
-There is an option to discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the Reply tab, labeled Private Note.
+There is an option to discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the Reply tab, labelled Private Note.
 
 
 <figure>
@@ -357,7 +357,7 @@ Click on Delete. The private note will be deleted.
 <div class="divider"></div>
 
 
-To send a copy of the current conversation, click on the button labeled Send Transcript, placed in the top right corner.
+To send a copy of the current conversation, click on the button labelled Send Transcript, placed in the top right corner.
 
 
 <figure>
@@ -399,7 +399,7 @@ The Conversation statuses available are listed below. Once a conversation is mar
 |-------------------------|-----------------------------------------------------------------------------------------------------|
 | Mark as Pending         | Change the issue to Pending status                                                                  |
 | Resolve                 | Change the issue to Resolved status                                                                 |
-| Abort and Resolve       | Change the issue to Resolved status, and add the queryable abort attribute                          |
+| Abort and Resolve       | Change the issue to Resolved status, and add the query-able abort attribute                          |
 | Open                    | Change the pending issue to Open status                                                             |
 | Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer |
 | Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                    |

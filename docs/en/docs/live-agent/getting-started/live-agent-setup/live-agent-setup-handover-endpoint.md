@@ -56,7 +56,7 @@ You can find these environment variables in the [value.yaml](https://github.com/
 
 To configure your Live Agent manually, follow these steps:
 
-1. Open the Endpoint Editor and deactivate in field **Handover Settings** the **Handover to pre-configured Live Agent acount** option using the toggle switch.
+1. Open the Endpoint Editor and deactivate in field **Handover Settings** the **Handover to pre-configured Live Agent account** option using the toggle switch.
 2. Enter the **Base URL** for the Live Agent instance. The Base URL is your Live Agent installation URL, extended by `plus /api/v1`. For example, in the Cognigy Trial environment `https://liveagent-trial.cognigy.ai/api/v1` is the Base URL where `https://liveagent-trial.cognigy.ai` is the Live Agent URL.
 3. Enter the **Account ID** and the **API Key**. How to find the **Account ID** and the **API Key**, see sections below.
 4. Click **Save** to confirm your Live Agent settings. 

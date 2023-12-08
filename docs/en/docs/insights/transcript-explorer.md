@@ -56,8 +56,8 @@ The customer sessions will be displayed in a list with the following data:
 - When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
 
 - Transcript Explorer provides a sorting function for "Message count" and "Last message". 
-- Clicking on 'Message count' will sort the listed transcripts alternately by increasing/decreasing order.
-- Clicking on "Last message" sorts the listed transcripts alternately, according to the newest/oldest entries.
+- Clicking on 'Message count' will sort the listed transcripts by ascending or descending order.
+- Clicking on "Last message" sorts the listed transcripts according to the newest or oldest entries.
 
 ### Contains Step filter
 
@@ -153,7 +153,7 @@ Using the "Search" field, you can enter keywords to find the messages in which t
 - Enter a keyword in the search field, for example, "appointment". All transcript conversations which include the keyword will now be displayed. 
 - Click on any transcript conversation in the list.
 - The clicked transcript conversation, containing the search string, will be displayed in a conversation panel. 
-The message that contains the search text has a gray background.
+The message that contains the search text has a grey background.
   Also, the matching text within the message itself is highlighted yellow.
 
 <figure>

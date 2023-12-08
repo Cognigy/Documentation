@@ -111,7 +111,7 @@ To edit an automation rule, click the **Edit** icon next to the desired automati
 ## Clone an Automation Rule
 
 To make a copy of an existing automation rule, click the clone icon from the Automation list you want to copy.
-A replica of the automation reule with the same conditions and actions will be created.
+A replica of the automation rule with the same conditions and actions will be created.
 
 ## Delete an Automation Rule
 
@@ -120,5 +120,5 @@ To delete an automation rule, click **Delete** next to the desired Automation in
 ## More Information
 
 - [Settings](overview.md)
-- [Convesation Workflow](../conversation/conversation-workflow.md)
+- [Conversation Workflow](../conversation/conversation-workflow.md)
 - [Conversation Routing](../conversation/conversation-routing/overview.md)

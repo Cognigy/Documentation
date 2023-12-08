@@ -8,7 +8,7 @@
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../release-notes/4.58.md)
 
-Cognigy.AI offers various functions to assist in preprocessing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
+Cognigy.AI offers various functions to assist in pre-processing user inputs, such as text messages or transcribed voice messages. These functions make it easier to process data in Cognigy.AI.
 
 An example would be when a user spells out a part number as `alpha tango hotel double seven three nine minus L for London and C for Canada`, resulting in `ath 7739 - lc`.
 
