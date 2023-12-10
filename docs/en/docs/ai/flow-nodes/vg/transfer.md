@@ -69,3 +69,4 @@ For example, if a call is transferred to a user and AMD detects a machine, you w
 |-----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------------|---------------|
 | Custom Transfer SIP Headers | Toggle | Data that needs to be sent as SIP headers in the generated SIP message.                                                         | All           |
 | Transfer SIP Headers        | JSON   | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute. | All           |
+| Referred By   | String          | A sip uri or a phone number / user identifier; optional | Refer |

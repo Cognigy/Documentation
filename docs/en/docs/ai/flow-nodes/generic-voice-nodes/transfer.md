@@ -20,4 +20,5 @@ The Transfer Node let's you pass an active call to a tel or sip target.
 |----------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------|
 | Reason               | CognigyScript | The reason for the handover. Will show in VG/AC logs                                                                            |
 | Transfer Destination | CognigyScript | E.164 syntax or a SIP URI are supported                                                                                         |
+| Referred By   | String          | A sip uri or a phone number / user identifier; optional |
 | Custom SIP Headers   | JSON          | Array of objects listing SIP headers that should be sent to the transferee. Each object comprises a name and a value attribute. |
