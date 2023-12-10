@@ -31,7 +31,7 @@ which is called a container orchestrator. [Kubernetes](https://kubernetes.io/) i
 - assigning containers to one of the available servers in the Kubernetes cluster respecting their individual hardware requirements and matching these against the available hardware on a server
 - observing whether containers need to be restarted in case they crash
 - updating containers to a newer version when a software update (for example, new version of Cognigy.AI) has been shipped
-- testing whether containerized processes still react by sending readiness- and lives-probes
+- testing whether containerized processes still react by sending readiness- and liveness-probes
 - scaling microservices according to load-indicators such as CPU load, memory profile or custom metrics by starting additional copies of services
 
 ## Runtime & IDE
