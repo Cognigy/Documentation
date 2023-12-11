@@ -6,7 +6,7 @@ hidden: false
 
 # Organization Details
 
-The **Organisation Details** page includes an analytics overview section labelled **Billable Conversations**,
+The **Organisation Details** page includes an analytics overview section labeled **Billable Conversations**,
 offering platform administrators a comprehensive report on the volume of conversations
 that have taken place among all agents in the organization.
 

@@ -43,7 +43,7 @@ In a Flow, you can change languages, localize Flow Nodes and Intents.
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../release-notes/4.61.md)
 
-Localized Nodes are in color, while non-localized ones are greyed out. Within the Flow, you can set up multiple localizations, with fallback layers for locales without content.
+Localized Nodes are in color, while non-localized ones are grayed out. Within the Flow, you can set up multiple localizations, with fallback layers for locales without content.
 
 You can configure the machine translation settings for all types of text output Nodes, including Say, Question, and other Node types.
 

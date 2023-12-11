@@ -309,7 +309,7 @@ After uploading the file, it should be reflected in the Webchat and the Live Age
 ### Private Chat with Agents
 <div class="divider"></div>
 
-There is an option to discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the Reply tab, labelled Private Note.
+There is an option to discuss the customer's Conversation with another Agent, should you need some more clarification or assistance. This option is available beside the Reply tab, labeled Private Note.
 
 
 <figure>

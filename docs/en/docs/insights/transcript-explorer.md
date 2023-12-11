@@ -153,7 +153,7 @@ Using the "Search" field, you can enter keywords to find the messages in which t
 - Enter a keyword in the search field, for example, "appointment". All transcript conversations which include the keyword will now be displayed. 
 - Click on any transcript conversation in the list.
 - The clicked transcript conversation, containing the search string, will be displayed in a conversation panel. 
-The message that contains the search text has a grey background.
+The message that contains the search text has a gray background.
   Also, the matching text within the message itself is highlighted yellow.
 
 <figure>
