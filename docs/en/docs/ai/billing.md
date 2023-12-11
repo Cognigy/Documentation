@@ -14,7 +14,7 @@ Cognigy products have *three different* ways of charging our customers:
 
 ## Billable Conversation
 
-A billable conversation is defined as *an interaction between a user and a virtual or human agent that flows through the Cognigy.AI platform*. A conversation starts when a user sends their initial *input* via an Endpoint to the Cognigy.AI platform and ends when the end-user stops interacting. A billable conversation is limited to up to 50 user inputs and can take up to 24 hours.
+A billable conversation is defined as *an interaction between a user and a virtual or human agent that flows through the Cognigy.AI platform*. A conversation starts with the initial *input* via an Endpoint to the Cognigy.AI platform and ends when the end-user stops interacting. A billable conversation is limited to up to 50 user inputs within a 24 hour period.
 
 Sending more than 50 inputs or interacting with the Cognigy.AI platform for more than 24 hours will start subsequent billable conversations.
 
@@ -24,19 +24,19 @@ Sending more than 50 inputs or interacting with the Cognigy.AI platform for more
 
 **An end-user sends exactly 50 user inputs within less than 24 hours.**
 
-An end-user starts to interact with a Cognigy.AI powered virtual agent and sends 50 user inputs. The entire interaction takes 15 minutes. The system will record *one billable Conversation* as the end-user was below 51 user inputs and only interacted with the system for 15 minutes.
+An end-user starts to interact with a Cognigy.AI powered virtual agent and sends 50 user inputs. The entire interaction takes 15 minutes. The system will record *1 billable Conversation* as the end-user was below 51 user inputs and only interacted with the system for 15 minutes.
 
 #### Scenario 2
 
 **An end-user sends more than 50 user inputs within less than 24 hours.**
 
-An end-user starts to interact with a Cognigy.AI powered virtual agent and sends 101 user inputs within 2 hours of time. The system will record *three billable Conversations* as three multiple of 50 inputs have been processed.
+An end-user starts to interact with a Cognigy.AI powered virtual agent and sends 101 user inputs within 2 hours of time. The system will record *3 billable Conversations* as three multiple of 50 inputs have been processed.
 
 #### Scenario 3
 
 **An end-user starts an interaction by sending a message, then does not respond for a full day and then continues the interaction.**
 
-An end-user starts to interact with a Cognigy.AI powered virtual agent by sending a single message. The user then pauses the interaction for more than 24 hours and comes back the next day by sending another message. The system will record *two billable Conversations* as the Conversation span across multiple days and took longer than 24 hours.
+An end-user starts to interact with a Cognigy.AI powered virtual agent by sending a single message. The user then pauses the interaction for more than 24 hours and comes back the next day by sending another message. The system will record *2 billable Conversations* as the Conversation span across multiple days and took longer than 24 hours.
 
 ### xApps
 
@@ -76,19 +76,16 @@ Please note that additional billing will only apply *if no Flow will be executed
 
 Cognigy.AI offers building voice experiences and virtual agents you can deploy to your telefony systems. Please note that you will need a separate license agreement with Cognigy for a product like Cognigy Voice Gateway.
 
-Customers can buy different packages of *concurrent lines* in order to connect their voice-enabled virtual agents to their telefony systems. Reporting capabilities are available in order to understand the *peak number of concurrent lines* that have been used on a specific day.
+Customers can purchase different packages of *concurrent lines* in order to connect their voice-enabled virtual agents to their telefony systems. Reporting capabilities are available in order to understand the *peak number of concurrent lines* that have been used on a specific day.
 
-If customers use slightly more than the number of purchased concurrent lines, we will charge for overages.
+If a customer is using more concurrent lines than purchased on a day, overage charges will apply for that day.
 
 ## Knowledge AI
 
-Cognigy.AI has recently received a larger update in which we have introduced Knowledge AI - a product feature which allows our customers to implement RAG-based pipelines powered by Large Language Models. Please note that Knowledge AI is a separately licensed product feature and requires a license agreement with Cognigy. You can [learn more about Knowledge AI](./knowledge-ai/overview.md) in our dedicated documentation.
+Knowledge AI allows our customers to build RAG-based pipelines powered by Large Language Models. Please note that Knowledge AI is a separately licensed product feature and requires a license agreement with Cognigy. You can [learn more about Knowledge AI](./knowledge-ai/overview.md) in our dedicated documentation.
 
-For Knowledge AI our customers need to:
+Knowledge AI is licensed by *Knowledge Chunks* and *Knowledge Queries*. While the former will define a *hard-limit* on how much data can be ingested into the Knowledge AI solution, the latter defines how often a query can be placed in order to retrieve a relevant Chunk of knowledge.
 
-- define the number of *Knowledge Chunks* they require in order to ingest their data and
-- define the number of *Knowledge Queries* they want to process e.g. on a monthly basis.
+Cognigy offers different packages which include Knowledge Chunks and Queries. For Knowledge Queries overages will apply if more queries will be performed than included in the original purchased package. The Knowledge Chunk limit can't be exceeded as the product will display an error. Customers can purchase additional Knowledge Chunk packages if required.
 
-Knowledge Chunks define a *hard-limit* of how much data can be stored inside of the Cognigy.AI platform. This limit can't be exceeded as the platform will stop to accept new Knowledge Chunks. Already existing Knowledge Chunks can be deleted in order to free up space. Cognigy customers can purchase additional knowledge Chunks if required.
-
-Knowledge Queries *do not have a hard-limit* but contain included queries e.g. per month. If customers exceed the number of included Knowlege Queries, overages will apply - similar to our billable Conversations.
+Reporting capabilities are available in order to understand the *number of consumed Knowledge Chunks* as well as the number of *performed Knowledge Queries*.
