@@ -6,6 +6,8 @@ ausgeblendet: false
 
 # Generative KI
 
+[! [Versions-Abzeichen] (https://img.shields.io/badge/Updated in-v4.52-blue.svg)] (.. /release-notes/4.52.md)
+
 {! _includes/ai/terms-of-use.md !}
 
 Generative KI bezieht sich auf eine Art von künstlicher Intelligenz, die mithilfe von Algorithmen des maschinellen Lernens neue, originelle Inhalte wie Bilder, Videos, Audios und Texte erstellt. Es funktioniert, indem es aus vorhandenen Daten lernt und auf der Grundlage dieses Lernens neue Inhalte erstellt.
@@ -14,19 +16,15 @@ Cognigy.AI lässt sich in die [Anbieter generativer KI](#prerequisites) integrie
 
 In der Cognigy.AI Benutzeroberfläche generieren LLMs menschenähnliche und personalisierte Inhalte für einen Bot. Es kann für folgende Zwecke verwendet werden:
 
-- [Generieren von Lexika](#lexika-generieren)
-- [Erstellen neuer Flows mit vorkonfigurierten Nodes](#flows-generieren)
-- [Generieren neuer Absichtssätze](#intent-sätze-generieren)
-- [Umformulieren von Bot-Ausgaben](#bot-ausgaben-umformulieren)
-- [Vervollständigung von Texten](#vollständige-texte)
+- [Generieren von Lexika](#generate-Lexika)
+- [Erstellen neuer Flows mit vorkonfigurierten Nodes](#generate-Flows)
+- [Generieren neuer Absichtssätze](#generate-Absichtssätze)
+- [Umformulieren von Bot-Ausgaben](#rephrase-bot-outputs)
+- [Vervollständigung von Texten](#complete-Texte)
 
-Um mehr über die Vorteile der Integration von Conversational AI mit generativen KI-Plattformen zu erfahren, sehen Sie sich dieses Webinar an:
-
-<div style="text-align:center;">
+Um mehr über die Vorteile der Integration von Conversational AI mit generativen KI-Plattformen zu erfahren, sehen Sie sich dieses Webinar an:<div style="text-align:center;">
   <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
-## Voraussetzungen
+</div>## Voraussetzungen
 
 Bevor Sie diese Funktion nutzen können, müssen Sie ein Konto bei einem der Anbieter für generative KI erstellen:
 
@@ -39,8 +37,8 @@ Bevor Sie diese Funktion nutzen können, müssen Sie ein Konto bei einem der Anb
 
 Gehen Sie wie folgt vor, um die Verbindung zwischen Cognigy.AI und dem Generative AI Provider einzurichten:
 
-- [Modell hinzufügen](#hinzufügen-eines-modells)
-- [Modell anwenden](#anwenden-des-modells)
+- [Modell hinzufügen](#add-a-model)
+- [Modell anwenden](#apply-das-Modell)
 
 ### Hinzufügen eines Modells
 
@@ -64,7 +62,7 @@ Um die generative KI-Technologie zum Erstellen eines neuen Lexikons zu verwenden
 4. Gehen Sie zur Einstellung **Generierung von Lexikoneinträgen** und aktivieren Sie **Lexikoneinträge generieren**.
 5. Wählen Sie **Lexikonsprache** aus der Liste aus.
 6. Legen Sie die Anzahl der Einträge (Lexikoneinheiten) fest.
-7. *(Optional)* Fügen Sie den Standardwert [Slot](../ai/nlu/slot-mapping/slot-mapping.md).
+7. *(Optional)* Fügen Sie den Standardwert [Slot](.. /ai/nlu/slot-mapping/slot-mapping.md).
 8. *(Optional)* Aktivieren Sie **Synonyme generieren**. Synonyme helfen virtuellen Agenten, verschiedene Variationen desselben Konzepts zu verstehen und zu erkennen. Für jede Schlüsselphrase werden bis zu fünf Synonyme generiert.
 9. Klicken Sie auf **Erstellen**.
 
@@ -154,7 +152,7 @@ Die Funktion [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) ermöglic
 
 ### GPT-Konversation 
 
-!!! warning
+!!! Warnung
     Dieser Node ist Teil der Forschungsbemühungen von Cognigy im Bereich der großen Sprachmodelle und dient ausschließlich als Vorschaufunktion. Der GPT-Konversationsknoten ist nicht für die Verwendung in der Produktion vorgesehen.
 
 Die Funktion [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) ermöglicht die Erstellung relevanter Inhalte mithilfe von generativer KI basierend auf Ihrem Szenario. Standardmäßig verfügt dieser Knoten bereits über vorausgefüllte Felder mit einem Szenario.
@@ -171,9 +169,9 @@ Die Funktion [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.m
 
 ## Mehr Informationen
 
-- [Flüsse](../ai/resources/build/flows.md)
-- [Flow-Knoten](../ai/flow-nodes/flow-nodes-overview.md)
-- [Absichten](../ai/nlu/nlu-overview/overview.md#intents)
-- [Lexika](../ai/resources/build/lexicons.md)
-- [LLM](../ai/resources/build/llm.md)
-- [Cognigy.AI Einstellungen](../ai/resources/manage/settings.md)
+- [Flüsse](.. /ai/resources/build/flows.md)
+- [Flow-Knoten](.. /ai/flow-nodes/flow-nodes-overview.md)
+- [Absichten](.. /ai/nlu/nlu-overview/overview.md#intents)
+- [Lexika](.. /ai/resources/build/lexicons.md)
+- [LLM](.. /ai/resources/build/llm.md)
+- [Cognigy.AI Einstellungen](.. /ai/resources/manage/settings.md)
