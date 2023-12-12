@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Sentiment Tile"
 slug: "sentiment-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Sentiment Tile
