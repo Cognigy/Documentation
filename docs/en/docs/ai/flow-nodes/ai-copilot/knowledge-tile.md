@@ -13,6 +13,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node is designed to provide potential answers to human agents regarding customer questions.
 The Node creates an [AI Copilot widget](../../../ai-copilot/plug-and-play-widgets.md) that consists of a search bar and a response form.
