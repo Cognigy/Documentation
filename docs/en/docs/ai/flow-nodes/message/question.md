@@ -19,7 +19,7 @@ A Question Node is used to ask a question that requests specific information fro
 After a question is asked and the user answers, the answer is validated according to its type. If it passes, the answer is valid and stored, and the conversation continues.
 
 !!! note "Attached Flows"
-    When a user input is recieved, it will be scored by the NLU. If an attached Flow has an Intent, which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
+    When a user input is received, it will be scored by the NLU. If an attached Flow has an Intent, which scores higher than Intents in the current Flow, the attached Flow is executed. This occurs before validation of the Question Node is completed. See [Attached Flow](../../nlu/attachments/attached-flows.md).
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>
@@ -108,7 +108,7 @@ Outputs a simple text message to the user.
 #### Channel Message
 
 Outputs a comprehensive, channel-specific message to the user.
-This message includes rich-media, for example, images, audio.
+This message includes rich-media, for example, images or audio.
 You can define distinct messages for each channel, such as Webchat, Voice Gateway, WhatsApp, and others.
 
 | Parameter        | Type    | Description                                                                                                                                                                                                                                                     |
@@ -118,7 +118,7 @@ You can define distinct messages for each channel, such as Webchat, Voice Gatewa
 
 #### LLM Prompt
 
-Runs an LLM prompt and outputs the completion to the user.
+Runs an LLM prompt and outputs the result in the format of a text message to the user.
 Before using this Node, configure a model in the [LLM](../../resources/build/llm.md) settings.
 
 | Parameter            | Type          | Description                                                                                                           |
