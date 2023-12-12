@@ -5,7 +5,7 @@ hidden: false
 ---
 # Question
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.55-blue.svg)](../../../release-notes/4.55.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question.png" width="80%" />
@@ -81,27 +81,75 @@ Question node output types carry the same functionality as the [Say Node](say.md
 !!! tip "Date Questions"
     In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [Datepicker](datepicker.md) for more information. 
 
-## Re-prompt Options
+## Reprompt Options
 
 <div class="divider"></div>
 
-### Re-prompt Message
+Reprompt messages are automatically triggered if the question is not answered correctly,
+such as when the expected type of input is not provided or a validation does not return `true`.
 
-Re-prompt Messages are automatically triggered in case the question was not answered correctly (for example, with the expected type of input or a validation didn't return true). 
+### Reprompt Methods
 
-The Re-prompt can be configured to automatically re-ask the question. 
+You can select one of the following reprompt methods:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-re-prompt-message.png" width="60%" />
-</figure>
+- [Simple Text](#simple-text)
+- [Channel Message](#channel-message)
+- [LLM Prompt](#llm-prompt)
+- [Execute Flow and return](#execute-flow-and-return)
 
-### Re-prompt Condition
+#### Simple Text
 
-Optionally a [CognigyScript](../../tools/cognigy-script.md) condition can be added which will determine whether the Re-prompt Message is shown or not.
+Outputs a simple text message to the user.
+
+| Parameter        | Type          | Description                                                                                                |
+|------------------|---------------|------------------------------------------------------------------------------------------------------------|
+| Reprompt Message | CognigyScript | The message to output if the given answer is invalid. For example, `Not sure I understood this correctly`. |
+
+#### Channel Message
+
+Outputs a comprehensive, channel-specific message to the user.
+This message includes rich-media, for example, images or audio.
+You can define distinct messages for each channel, such as Webchat, Voice Gateway, WhatsApp, and others.
+
+| Parameter        | Type    | Description                                                                                                                                                                                                                                                     |
+|------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Reprompt Message | Channel | The channel for which you want to configure the repromt message. You can select multiple channels.                                                                                                                                                              |
+| Output Type      | Select  | The format of the content that delivers through the selected channel. Depending on the selected channel, a list of possible output types suitable for that channel will be presented. All channels support the text type, but support for other types may vary. |
+
+#### LLM Prompt
+
+Runs an LLM prompt and outputs the result in the format of a text message to the user.
+Before using this Node, configure a model in the [LLM](../../resources/build/llm.md) settings.
+
+| Parameter            | Type          | Description                                                                                                           |
+|----------------------|---------------|-----------------------------------------------------------------------------------------------------------------------|
+| Large Language Model | Select        | The channel for which you want to configure the repromt message. You can select multiple channels.                    |
+| LLM Instructions     | CognigyScript | The input or command, such as a prompt or system message, that is given to the Language Model to generate an output.  |
+| Transcript Turns     | Slider        | The number of conversation turns to include in the LLM chat completion request. By default, the value is `3`.         |
+
+#### Execute Flow and return
+
+Executes a specific Flow and returns to the question afterward.
+
+| Parameter      | Type   | Description                                                                                                                                          |
+|----------------|--------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Select Flow    | Select | The Flow that will be executed as the reprompt message.                                                                                              |
+| Select Node    | Select | The Node from which the Flow should be executed as the reprompt message.                                                                             |
+| Parse Intents  | Toggle | This setting determines whether the system should parse Intents separately in the executed Flow. By default, this setting is enabled.                |
+| Parse Slots    | Toggle | This setting determines whether the system should parse Slots separately in the executed Flow. By default, this setting is enabled.                  |
+| Absorb Context | Toggle | This setting determines whether the system should absorb the executed Flow's Context into the current Context. By default, this setting is disabled. |
+
+### Repeat Question
+
+Repeats a question if a user gives an invalid answer. By default, this setting is enabled.
+
+### Reprompt Condition
+
+Optionally, you can add a [CognigyScript](../../tools/cognigy-script.md) condition to determine whether a reprompt message is shown.
 
 ### Skip on Intent
 
-Skips the re-prompt if an intent was found in the input
+Skips the reprompt if an Intent was found in the input.
 
 ## Result Storage
 <div class="divider"></div>
@@ -112,13 +160,13 @@ Question results are always stored in `input.result`.
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-context.png" width="60%" />
 </figure>
 
-If **Store Result in Context** is enabled, the Question Result will also be stored in the [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) object. 
+If **Store Result in Context** is enabled, the Question Result will also be stored in the [Context](../../tools/interaction-panel/context.md) object. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-profile-storage.png" width="60%" />
 </figure>
 
-If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [**Profile**]({{config.site_url}}ai/tools/interaction-panel/profile/) object.
+If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [Profile](../../tools/interaction-panel/profile.md) object.
 
 ## Escalation to Handover
 <div class="divider"></div>
@@ -153,9 +201,6 @@ It is possible to prevent reprompts when the escalation is happening.
 The option "only escalate once" determines if the escalation only happens once on the threshold or on every input form the threshold on.
 
 ## Handover to Human Agent
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.4.0-blue.svg)]({{config.site_url}})
-
 <div class="divider"></div>
 
 As of Release v4.4.0, we added the option **Handover to Human Agent**. Open the **Node Editor** and you will find this option as an escalation action for Intents and Wrong_Answers that offers the ability to escalate questions by creating handovers to a real human agent.  
@@ -234,7 +279,7 @@ This information can be used to trigger specific actions on escalation or to jum
 
 ## AI-enhanced output
 
-To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrasing-virtual-agent-outputs) article.
 
 ## Answer Preprocessing
 
