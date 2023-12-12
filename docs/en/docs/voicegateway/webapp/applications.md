@@ -45,12 +45,12 @@ To add extra vendor, follow these steps:
 5. Choose the vendor type you want to add (STT or TTS) or add both at once:
     - TTS:
         - **Speech synthesis vendor** — select a TTS vendor from the list.
-        - **Lable** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials. 
+        - **Label** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials. 
         - **Language** — select a primary language.
-        - **Voice** — select a primary voice for the virtuial agent.
+        - **Voice** — select a primary voice for the virtual agent.
     - STT:
-        - **Speech recognizer vendor** — select an STT vednor from the list.
-        - **Lable** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials.
+        - **Speech recognizer vendor** — select an STT vendor from the list.
+        - **Label** — specify the alternative name of the vendor in the Label field if you have default vendor with the same credentials.
         - **Language** — select a primary language. 
 6. _(Optional)_ Click **Swap primary and fallback**. The primary and fallback credentials will change places.
 7. Click **Save**.

@@ -3,6 +3,7 @@ title: "Redis: Single Replica to Redis HA Migration"
 slug: "single-replica-redis-to-redis-ha-migration"
 hidden: false
 ---
+
 # Redis: Single Replica to Redis in High Availability (HA) Mode Migration
 
 Starting from Cognigy.AI release v4.65, the single-replica Redis setup is deprecated and replaced with Redis in High Availability (HA) Mode.
