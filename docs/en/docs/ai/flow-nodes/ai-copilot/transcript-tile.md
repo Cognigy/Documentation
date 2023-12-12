@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Transcript Tile"
 slug: "transcript-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Transcript Tile

@@ -13,9 +13,9 @@ hidden: false
 
 Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conversational AI. The primary goal of Knowledge AI is to enable these systems to access and comprehend a vast amount of information from different formats, such as documents, articles, manuals, FAQs, and more. By accessing and understanding knowledge bases, these AI systems can provide more accurate, context-aware, and helpful responses to user queries.
 
-With the new Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
+With the Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI technology lets you to upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in a custom Cognigy format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
+Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in the [Cognigy CTXT](../knowledge-ai/ctxt.md) format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ Before using this feature, create an account in one of the LLM Providers:
 - [OpenAI](https://platform.openai.com/). You need to have a paid account or be a member of an organization that provides you access. Open your OpenAI user profile, copy the existing API Key, or create a new one and copy it.
 - [Microsoft Azure OpenAI](https://azure.microsoft.com/en-us/products/cognitive-services/openai-service). You need to have a paid account or be a member of an organization that provides you access. Ask your Azure Administrator to provide API Key, resource name, and deployment model name.
 
-For the Knowledge AI case, you need only the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
+For the Knowledge AI case, you need the `text-embedding-ada-002` model. However, if you intend to transform the Knowledge Search result and output it, you will also need an additional model from the **LLM Prompt Node & Search Extract Output Node** column in the [supported models](../resources/build/llm.md) list.
 
 ## Create a Knowledge Store
 
@@ -59,15 +59,13 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
 8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
-11. Click **Next**.
-
-Complete installation and start exploring knowledge AI project structure.   
+11. Click **Next**.  
 
 To learn more about `ctxt`, refer to [Cognigy Text Format](ctxt.md).
 
 ## Explore a Knowledge AI project 
 
-Working with Knowledge AI involves two phases similar to Intent workflow. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime.
+Working with Knowledge AI involves two phases similar to how one would work with Intents. The first phase is ingesting and preparing knowledge, and the second phase is querying the knowledge during runtime.
 
 **First phase:**
 

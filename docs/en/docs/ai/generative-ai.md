@@ -12,21 +12,11 @@ hidden: false
 
 Generative AI refers to a type of artificial intelligence that creates new, original content, such as images, video, audio, and text, using machine learning algorithms. It works by learning from existing data and producing new content based on that learning.
 
-Cognigy.AI integrates with the [Generative AI providers](#prerequisites) that allow text generation based on user input. That involves utilizing [Large Language Models (LLMs)](resources/build/llm.md) to analyze data and generate contextually relevant and personalized content.
+Cognigy.AI integrates with various [Generative AI Providers](#prerequisites)
+to enable Generative AI functionality. This functionality is broadly classified as using [Large Language Models (LLMs)](resources/build/llm.md) to:
 
-In the Cognigy.AI interface, LLMs generate human-like and personalized content for a bot. It can be used for the following purposes:
-
-- [Generating Lexicons](#generate-lexicons)
-- [Creating new Flows with pre-configured Nodes](#generate-flows)
-- [Generating new Intent sentences](#generate-intent-sentences)
-- [Rephrasing bot outputs](#rephrase-bot-outputs)
-- [Completing texts](#complete-texts)
-
-To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
-
-<div style="text-align:center;">
-  <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+- [Support the virtual agent builder](#design-time-generative-ai-features) (Design-Time)
+- [Enhance the customer experience](#run-time-generative-ai-features) (Run-Time)
 
 ## Prerequisites
 
@@ -37,24 +27,38 @@ Before using this feature, you need to create an account in one of the Generativ
 - [Anthropic Claude](https://console.anthropic.com/docs). You need to be a [member of an organization](https://console.anthropic.com/docs/access) that provides you access.
 - [Google Vertex AI](https://cloud.google.com/vertex-ai). You need to have a paid account or be a member of an organization that provides you access.
 
-## Set up Generative AI
+### Set up Generative AI
 
 To set up the connection between Cognigy.AI and the Generative AI Provider, do the following:
 
 - [Add a model](#add-a-model)
 - [Apply the model](#apply-the-model)
 
-### Add a Model
+#### Add a Model
 
 {! _includes/ai/generative-ai/credentials.md !}
 
-### Apply the Model
+#### Apply the Model
 
 {! _includes/ai/generative-ai/apply-model.md !}
 
 You can check if the connection works by creating a new generative AI Flow.
 
-## Generate Lexicons
+## Design-Time Generative AI Features
+
+During the design phase of creating virtual agents, LLMs can be used to generate a variety of virtual agent resources:
+
+- [Generating Lexicons](#generate-lexicons)
+- [Creating new Flows with pre-configured Nodes](#generate-flows)
+- [Generating new Intent sentences](#generate-intent-sentences)
+
+To know more about the benefits of integrating Conversational AI with Generative AI platforms, watch this webinar:
+
+<div style="text-align:center;">
+  <iframe width="701" height="438" src="https://www.youtube.com/embed/g_ntrz52BLM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+### Generate Lexicons
 
 Note that the generation of Lexicons for primary NLU languages besides German and English is not fully supported.
 
@@ -67,16 +71,16 @@ To use Generative AI technology for creating a new Lexicon, do the following:
 5. Select **Lexicon language** from the list.
 6. Set the number of entries (lexicon units).
 7. *(Optional)* Add the default [Slot](../ai/nlu/slot-mapping/slot-mapping.md).
-8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agent understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
+8. *(Optional)* Activate **Generate Synonyms**. Synonyms help virtual agents understand and recognize different variations of the same concept. Up to five synonyms will be generated for each keyphrase.
 9. Click **Create**.
 
-When Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
+When the Lexicon Editor with new keyphrases is opened, you can edit, delete, or add new ones manually.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/images/generating-lexicons.png" width="90%" />
 </figure>
 
-## Generate Flows
+### Generate Flows
 
 Note that the generation of Flows for primary NLU languages besides German and English is not fully supported.
 
@@ -96,7 +100,7 @@ In the existing Flow, you can edit Nodes created based on your scenario. Generat
   <img class="image-center" src="{{config.site_url}}ai/images/generating-flows.png" width="90%" />
 </figure>
 
-## Generate Intent sentences
+### Generate Intent Sentences
 
 Note that the generation of Intent sentences for primary NLU languages besides German and English is not fully supported.
 
@@ -119,11 +123,34 @@ You can also use Generative AI in the Node configuration.
   <img class="image-center" src="{{config.site_url}}ai/images/generating-intent-sentences.png" width="90%" />
 </figure>
 
-## Rephrase bot outputs
+## Run-Time Generative AI Features
 
-Generative AI is supported by the [Say](../ai/flow-nodes/message/say.md), [Question](../ai/flow-nodes/message/question.md), and [Optional Question](../ai/flow-nodes/message/optional-question.md) Nodes.
+In Cognigy.AI, the Run-Time Generative AI features enrich virtual agents with dynamic interactions using LLMs.
+These features include running prompts, orchestrating conversations, rephrasing outputs,
+dynamic question reprompts, and generative knowledge retrieval.
 
-To use AI-enhanced bot output rephrasing, do the following:
+You can configure the following Run-Time Generative AI features:
+
+- [LLM Prompt Node](#llm-prompt-node)
+- [GPT Conversation Node](#gpt-conversation-node)
+- [Rephrasing Virtual Agent Outputs](#rephrasing-virtual-agent-outputs)
+- [LLM-powered Question Reprompts](#llm-powered-question-reprompts)
+- [Search Extract Output Node](#search-extract-output-node)
+
+### LLM Prompt Node
+
+The [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) enables you to run a prompt against an LLM and either output the message or store it in the Input or Context objects.
+
+### GPT Conversation Node
+
+!!! warning
+    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
+
+The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determinig the next best action and outputing relevant messages to the customer.
+
+### Rephrasing Virtual Agent Outputs
+
+To use AI-enhanced bot output rephrasing in [Say](../ai/flow-nodes/message/say.md), [Question](../ai/flow-nodes/message/question.md), and [Optional Question](../ai/flow-nodes/message/optional-question.md) Nodes, do the following:
 
 1. Open the existing Flow.
 2. Add one of the Nodes: Say, Question, or Optional Question.
@@ -141,26 +168,13 @@ Check in the interactive panel if your Flow works as expected.
   <img class="image-center" src="{{config.site_url}}ai/images/generating-output.png" width="90%" />
 </figure>
 
-## Complete texts
+### LLM-powered Question Reprompts
 
-You can use the following Nodes for completing tasks.
+The [Question Node](../ai/flow-nodes/message/question.md#reprompt-message) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
 
-- [LLM Prompts](#llm-prompt)
-- [GPT Conversations](#gpt-conversation)
+### Search Extract Output Node
 
-These Nodes support only text output in the [AI channel](flow-nodes/message/say.md#description).
-
-### LLM Prompt
-
-The [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) feature enables the creation of relevant content using Generative AI. To use this feature, simply provide a text prompt that guides the AI in continuing the generated text.
-
-### GPT Conversation 
-
-!!! warning
-    This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
-
-The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) feature enables the creation of relevant content using Generative AI based on your scenario. By default, this node has already pre-filled fields with a scenario.
-
+The [Search Extract Output Node](../ai/flow-nodes/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](../ai/knowledge-ai/overview.md) to execute a search within a Knowledge Store, extracts a relevant answer via a generative AI model, and creates an output.
 
 ## FAQ
 
@@ -170,7 +184,7 @@ The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) featur
 
 **Q2**: Why doesn't Generative AI work with AudioCodes Nodes?
 
-**A2:** Generative AI output supports only text messages in the [AI channel](#complete-texts).
+**A2:** Generative AI output supports only text messages in the AI channel.
 
 ## More Information
 
@@ -178,5 +192,5 @@ The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) featur
 - [Flow Nodes](../ai/flow-nodes/flow-nodes-overview.md)
 - [Intents](../ai/nlu/nlu-overview/overview.md#intents)
 - [Lexicons](../ai/resources/build/lexicons.md)
-- [LLM](../ai/resources/build/llm.md)
+- [LLMs](../ai/resources/build/llm.md)
 - [Cognigy.AI Settings](../ai/resources/manage/settings.md)

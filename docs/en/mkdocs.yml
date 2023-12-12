@@ -264,6 +264,7 @@ nav:
       - ai/flow-nodes/ai-copilot/set-iframe-tile.md
       - ai/flow-nodes/ai-copilot/set-grid.md
       - ai/flow-nodes/ai-copilot/transcript-tile.md
+      - ai/flow-nodes/ai-copilot/knowledge-tile.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
