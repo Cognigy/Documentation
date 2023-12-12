@@ -39,7 +39,7 @@ such as Kubernetes, MongoDB, and Redis.
 
 [^**]: Both stand-alone and High Availability (HA) with Sentinel deployments.
 
-[^**]: High Availability (HA) with Sentinel deployment.
+[^***]: High Availability (HA) with Sentinel deployment.
 
 ## More Information
 
