@@ -110,7 +110,7 @@
       <img class="card-2-image" src="{{config.site_url}}assets/img/something-001.svg">
       <div class="item-2-container">
         <h3><b>Cognigy Academy</b></h3>
-        <p>Enroll in our free video courses and become a certified expert</p>
+        <p>Enrol in our free video courses and become a certified expert</p>
       </div>
     </div>
   </a>

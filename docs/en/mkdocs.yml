@@ -433,6 +433,7 @@ nav:
       - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
       - ai/installation/migration/from-nlu-v1-to-v2-migration.md
       - ai/installation/migration/single-replica-redis-to-redis-ha-migration.md
+      - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:

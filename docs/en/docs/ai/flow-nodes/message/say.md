@@ -190,7 +190,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 !!! warning "Channel Support"
     The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
     
-    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, Youtube links might not work).
+    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, YouTube links might not work).
 
 !!! note "CognigyScript"
     Any text field in the say node supports the use of **CognigyScript**. 

@@ -86,7 +86,7 @@ A secret must be set up for setting the `GCS_CREDENTIALS` environment variable.
 | `storage.secretAccessKey.existingSecret`      | string | `"<secret-name>"`  |
 | `storage.secretAccessKey.existingSecretKey`   | string | `"<secret-key>"`   |
 
-The value of the `GCS_CREDENTIALS` should be a json formatted string, containing the following keys.
+The value of the `GCS_CREDENTIALS` should be a JSON formatted string, containing the following keys.
 
 ```bash
 {

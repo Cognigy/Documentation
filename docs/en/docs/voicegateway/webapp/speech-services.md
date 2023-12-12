@@ -15,7 +15,7 @@ To create a speech service, in the left-side menu, select Applications, then cli
 
 You can create more than one speech service using speech vendors.
 
-If you need to create multiple speech services from the same vendor, use the **Lable** field to create a unique speech service.
+If you need to create multiple speech services from the same vendor, use the **Label** field to create a unique speech service.
 
 After creating a speech service, you can edit or delete it.
 

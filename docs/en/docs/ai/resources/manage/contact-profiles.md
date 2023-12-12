@@ -105,7 +105,7 @@ As of Cognigy.AI v4.11.0 the conversations list in "Contact Profiles" page has b
 
 - Headers of the conversation list can be clicked and the sorting order changes accordingly.
 
-An up or down arrow is displayed next to the header that was clicked most recently, initially it's at the startdate.
+An up or down arrow is displayed next to the header that was clicked most recently, initially it's at the start date.
 
 Arrows indicate the proper sort order, ascending or descending.
 

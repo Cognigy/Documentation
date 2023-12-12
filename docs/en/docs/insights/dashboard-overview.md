@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-The Overview dasboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
+The Overview dashboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
 
 The summary of key metrics is represented in the following charts:
 

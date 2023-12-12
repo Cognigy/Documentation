@@ -37,7 +37,7 @@ To get your API key, follow these steps:
 
 1. In the upper-right corner of the Cognigy.AI interface, click **User Menu ![user-menu](../assets/icons/user-menu.svg) > My Profile**.
 2. In the **API Keys** section, click **+**.
-3. Add an API key name anc click **Confirm**. The API key will appear in the list.
+3. Add an API key name and click **Confirm**. The API key will appear in the list.
 4. Copy this API Key and go to the **AUTHENTICATION** section on the [Cognigy OpenApi](https://api-trial.cognigy.ai/openapi) site.
 5. Paste the API Key to the following fields:
     - API Key (X-API-Key)

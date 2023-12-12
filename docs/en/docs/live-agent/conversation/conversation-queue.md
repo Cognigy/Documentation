@@ -56,5 +56,5 @@ Result: The agent is assigned Conversation 3 (High), followed by Conversation 1 
 
 ## More Information
 
-- [Converation Routing: Automatic mode](conversation-routing/automatic-mode.md)
-- [Converation Routing Overview](conversation-routing/overview.md)
+- [Conversation Routing: Automatic mode](conversation-routing/automatic-mode.md)
+- [Conversation Routing Overview](conversation-routing/overview.md)

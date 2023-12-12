@@ -7,7 +7,7 @@ hidden: false
 # Teams Report
 
 This report shows team-specific metrics, such as the number of conversations, outgoing messages,
-average response time, average resolution time, and the number of successfully resolved user requests for ecah team.
+average response time, average resolution time, and the number of successfully resolved user requests for each team.
 
 The Teams report provides a comprehensive view of team performance and is essential for identifying areas that may need improvement. For instance, if the average response time is too high, it could mean that the team needs to improve its responsiveness. If the resolution time is long, it might indicate the need for more effective problem-solving strategies.
 
