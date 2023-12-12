@@ -13,6 +13,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node is designed
 to determine the appropriate next step or action in a conversation or process based on the user's input or the current context.

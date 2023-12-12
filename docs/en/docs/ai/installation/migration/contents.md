@@ -1,11 +1,11 @@
 ---
-title: "Migration Guides"
+title: "Upgrade and Migration Guides"
 slug: "migration-guides"
 hidden: false
 ignore_macros: true
 ---
 
-# Migration Guides
+# Upgrade and Migration Guides
 
 - [MongoDB: Single to Multi Replica](single-replica-mongoDB-to-multi-replica-mongoDB-migration.md)
 - [Kustomize to Helm](kustomize-to-helm-migration.md)

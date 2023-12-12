@@ -13,6 +13,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
 

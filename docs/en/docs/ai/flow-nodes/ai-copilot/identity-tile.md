@@ -13,6 +13,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot Workspace, enhancing the context and usability of the identity-related data.
 
