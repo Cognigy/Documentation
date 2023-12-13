@@ -36,7 +36,7 @@ An end-user starts to interact with a Cognigy.AI powered virtual agent and sends
 
 **An end-user starts an interaction by sending a message, then does not respond for a full day and then continues the interaction.**
 
-An end-user starts to interact with a Cognigy.AI powered virtual agent by sending a single message. The user then pauses the interaction for more than 24 hours and comes back the next day by sending another message. The system will record *2 billable Conversations* as the Conversation span across multiple days and took longer than 24 hours.
+An end user begins interacting with a Cognigy.AI powered virtual agent by sending a single message. The user then pauses the interaction for more than 24 hours and returns the next day by sending another message. The system will record *2 billable Conversations* since they extend over multiple days and exceed a duration of 24 hours.
 
 ### xApps
 
