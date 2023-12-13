@@ -48,7 +48,7 @@ Submitting data from an xApp back into the Cognigy.AI platform is treated equall
 
 **An end-user books a cinema ticket with a bot using xApps.**
 
-An end-user starts to interact with a Cognigy.AI powered ticket booking chat-bot by sending a chat-input. The bot response by asking for the firstname, the lastname as well as the ticket category. The user responds to all three questions by providing the respective data and then gets a floorplan presented via an xApp through which a seat can be selected. The user selects a seat and submits the selection. The system will record *a single billable Conversation* with the following explanation:
+An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot by sending a chat input. The bot responds by requesting the first name, last name, and ticket category. The user answers all three questions by providing the respective data and then gets a floorplan via an xApp, through which they can select a seat. The user selects a seat and submits the selection. The system will record *a single billable Conversation* with the following explanation:
 
 - end-user greeted the chat-bot - **one user input**
 - virtual agent asked for firstname
