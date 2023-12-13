@@ -62,7 +62,7 @@ An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot 
 
 ### Additional Billable Conversations
 
-Additional charges will apply if you are using Endpoint [Transformers](../ai/endpoints/transformers/transformers.md) such as:
+Additional charges will apply if you use the Endpoint [Transformers](../ai/endpoints/transformers/transformers.md), such as:
 
 - Input Transformer
 - Inject Transformer
