@@ -9,7 +9,7 @@
 Cognigy products have *three different* ways of charging our customers:
 
 - by charging for *conversations* processed with Cognigy.AI
-- by charging for *concurrent lines* for calls handled with Cognigy VG
+- by charging for *concurrent lines* for calls handled with Cognigy Voice Gateway
 - by charging for *knowledge queries* and *knowledge chunks* used in Knowledge AI
 
 ## Billable Conversation
