@@ -14,7 +14,7 @@ Cognigy products have *three different* ways of charging our customers:
 
 ## Billable Conversation
 
-A billable conversation is defined as *an interaction between a user and a virtual or human agent that flows through the Cognigy.AI platform*. A conversation starts with the initial *input* via an Endpoint to the Cognigy.AI platform and ends when the end-user stops interacting. A billable conversation is limited to up to 50 user inputs within a 24 hour period.
+A billable conversation is defined as *an interaction between a user and a virtual or human agent that flows through the Cognigy.AI platform*. A conversation begins with the initial *input* via an Endpoint to the Cognigy.AI platform and ends when the end user stops interacting. A billable conversation is limited to up to 50 user inputs within a 24-hour period.
 
 Sending more than 50 inputs or interacting with the Cognigy.AI platform for more than 24 hours will initiate subsequent billable conversations.
 
