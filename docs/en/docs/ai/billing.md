@@ -88,4 +88,4 @@ Knowledge AI is licensed by *Knowledge Chunks* and *Knowledge Queries*. While th
 
 Cognigy offers different packages which include Knowledge Chunks and Queries. For Knowledge Queries overages will apply if more queries will be performed than included in the original purchased package. The Knowledge Chunk limit can't be exceeded as the product will display an error. Customers can purchase additional Knowledge Chunk packages if required.
 
-Reporting capabilities are available in order to understand the *number of consumed Knowledge Chunks* as well as the number of *performed Knowledge Queries*.
+Reporting capabilities are available to understand both the *number of consumed Knowledge Chunks* and the number of *performed Knowledge Queries*.
