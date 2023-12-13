@@ -28,7 +28,7 @@ An end-user starts to interact with a Cognigy.AI powered virtual agent and sends
 
 #### Scenario 2
 
-**An end-user sends more than 50 user inputs within less than 24 hours.**
+**An end user sends more than 50 user inputs within a period of less than 24 hours.**
 
 An end-user starts to interact with a Cognigy.AI powered virtual agent and sends 101 user inputs within 2 hours of time. The system will record *3 billable Conversations* as three multiple of 50 inputs have been processed.
 
