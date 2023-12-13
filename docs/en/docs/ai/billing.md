@@ -84,7 +84,7 @@ If a customer is using more concurrent lines than purchased on a day, overage ch
 
 Knowledge AI allows Cognigy customers to build RAG-based pipelines powered by Large Language Models. Please note that Knowledge AI is a separately licensed product feature and requires a license agreement with Cognigy. To learn more about Knowledge AI, refer to the [documentation](./knowledge-ai/overview.md).
 
-Knowledge AI is licensed by *Knowledge Chunks* and *Knowledge Queries*. While the former will define a *hard-limit* on how much data can be ingested into the Knowledge AI solution, the latter defines how often a query can be placed in order to retrieve a relevant Chunk of knowledge.
+Knowledge AI is licensed by *Knowledge Chunks* and *Knowledge Queries*. The former defines a *hard limit* on how much data can be ingested into the Knowledge AI solution, while the latter determines how often a query can be placed to retrieve a relevant Chunk of knowledge.
 
 Cognigy offers various packages that include Knowledge Chunks and Queries. For Knowledge Queries, overages will apply if more queries are performed than what is included in the originally purchased package. The Knowledge Chunk limit can't be exceeded, as the product will display an error. Customers can purchase additional Knowledge Chunk packages if required.
 
