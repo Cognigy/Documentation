@@ -78,7 +78,7 @@ Cognigy.AI offers building voice experiences and virtual agents you can deploy t
 
 Customers can purchase different packages of *concurrent lines* in order to connect their voice-enabled virtual agents to their telefony systems. Reporting capabilities are available in order to understand the *peak number of concurrent lines* that have been used on a specific day.
 
-If a customer is using more concurrent lines than purchased on a day, overage charges will apply for that day.
+If a customer uses more concurrent lines than the number purchased on a given day, overage charges will apply for that day.
 
 ## Knowledge AI
 
