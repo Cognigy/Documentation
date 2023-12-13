@@ -70,7 +70,7 @@ Additional charges will apply if you are using Endpoint [Transformers](../ai/end
 
 and return a `falsy` value such as `null`, `undefined` or `false`. In those cases, the message processing pipeline within Cognigy.AI will be terminated and no Flow will be executed. In this case, Cognigy.AI will charge 1 additional billable conversation per 50 Endpoint Transformer executions.
 
-Please note that additional billing will only apply *if no Flow will be executed* after your Endpoint Transformer runs.
+Note that additional billing will only apply *if no Flow will be executed* after your Endpoint Transformer runs.
 
 ## Calls
 
