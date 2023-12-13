@@ -40,7 +40,7 @@ An end user begins interacting with a Cognigy.AI powered virtual agent by sendin
 
 ### xApps
 
-Cognigy xApps offer multi modality interactivity with your end-users. Please note that xApps are a separately licensed product feature which require a license agreement with Cognigy. You can [learn more about xApps](./xApp/overview.md) in our dedicated xApps documentation.
+Cognigy xApps offer multi-modality interactivity with your end users. Note that xApps are a separately licensed product feature that requires a license agreement with Cognigy. To learn more about xApps], refer to the [documentation](./xApp/overview.md).
 
 When data is submitted from an xApp back into the Cognigy.AI platform, it is handled equivalently to a standard end-user interaction, such as sending a chat input or speaking an utterance in the case of a voice bot.
 
