@@ -86,6 +86,6 @@ Knowledge AI allows our customers to build RAG-based pipelines powered by Large 
 
 Knowledge AI is licensed by *Knowledge Chunks* and *Knowledge Queries*. While the former will define a *hard-limit* on how much data can be ingested into the Knowledge AI solution, the latter defines how often a query can be placed in order to retrieve a relevant Chunk of knowledge.
 
-Cognigy offers different packages which include Knowledge Chunks and Queries. For Knowledge Queries overages will apply if more queries will be performed than included in the original purchased package. The Knowledge Chunk limit can't be exceeded as the product will display an error. Customers can purchase additional Knowledge Chunk packages if required.
+Cognigy offers various packages that include Knowledge Chunks and Queries. For Knowledge Queries, overages will apply if more queries are performed than what is included in the originally purchased package. The Knowledge Chunk limit can't be exceeded, as the product will display an error. Customers can purchase additional Knowledge Chunk packages if required.
 
 Reporting capabilities are available to understand both the *number of consumed Knowledge Chunks* and the number of *performed Knowledge Queries*.
