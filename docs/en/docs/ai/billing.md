@@ -54,7 +54,7 @@ An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot 
 - virtual agent asked for firstname
 - The end user provides the first name - **second user input**
 - virtual agent asked for lastname
-- end-user provides lastname - **third user input**
+- The end user provides the last name - **third user input**
 - virtual agent asked for ticket category
 - end-user provides ticket category by clicking on quick-reply - **fourth user input**
 - virtual agent presents a floorplan via xApp
