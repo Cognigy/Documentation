@@ -168,8 +168,7 @@ If **Store Result in Context** is enabled, the Question Result will also be stor
 
 If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [Profile](../../tools/interaction-panel/profile.md) object.
 
-## Escalation to Handover
-<div class="divider"></div>
+## Escalation - Intents
 
 Allows the conversation to break out of the Question Node if a specified Intent was found. 
 
