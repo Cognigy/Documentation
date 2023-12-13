@@ -20,6 +20,9 @@ An **Add to Context Node** is used to store information in the Cognigy [Context]
 | Value     | Cognigy Text | The value to store in the context.                                                                      |
 | Mode      | Select       | - Simple stores the value directly against the Key<br>- Array stores the value into an Array on the key |
 
+!!! note "Restriction"
+    Note that dashes or hyphens cannot be added to the key's value.
+
 !!! note "Storing an Object"
     If you want to store an object in the context, use `.preserveType()` at the end in order to keep it an object. Example: `input.slots.city[0].preserveType()` would store the full slot object for the first found city entity in the context.
 
