@@ -57,7 +57,7 @@ An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot 
 - The end user provides the last name - **third user input**
 - The virtual agent asks for the ticket category
 - The end user provides the ticket category by clicking on a quick reply - **fourth user input**
-- virtual agent presents a floorplan via xApp
+- The virtual agent presents a floorplan via an xApp
 - end-user selects seat using the xApp and submits selection - **fifth user input**
 
 ### Additional Billable Conversations
