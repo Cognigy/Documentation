@@ -76,7 +76,7 @@ Please note that additional billing will only apply *if no Flow will be executed
 
 Cognigy.AI offers building voice experiences and virtual agents you can deploy to your telefony systems. Please note that you will need a separate license agreement with Cognigy for a product like Cognigy Voice Gateway.
 
-Customers can purchase different packages of *concurrent lines* in order to connect their voice-enabled virtual agents to their telefony systems. Reporting capabilities are available in order to understand the *peak number of concurrent lines* that have been used on a specific day.
+Customers can purchase different packages of *concurrent lines* to connect their voice-enabled virtual agents to their telephony systems. Reporting capabilities are available to understand the *peak number of concurrent lines* used on a specific day.
 
 If a customer uses more concurrent lines than the number purchased on a given day, overage charges will apply for that day.
 
