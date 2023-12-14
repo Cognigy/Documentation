@@ -24,10 +24,10 @@ Whenever the HTTP Request Node is triggered during a Flow execution, it will per
 
 ## Limitations
 
-- The default timeout for the HTTP Request Node is 8 seconds in a shared SaaS environment. It can be changed for on-premises installations via the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. For dedicated SaaS installations, contact Cognigy technical support.
+The default timeout for the HTTP Request Node is 8 seconds in a shared SaaS environment. It can be changed for on-premises installations via the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. For dedicated SaaS installations, contact Cognigy technical support.
 
 ## Request Methods
-<div class="divider"></div>
+
 The HTTP Node can execute the typical CRUD methods, which are:
 
 - `GET`
@@ -37,7 +37,6 @@ The HTTP Node can execute the typical CRUD methods, which are:
 - `DELETE`
 
 ## General Configuration
-<div class="divider"></div>
 
 Each request method shares certain fields with the others:
 
@@ -81,7 +80,7 @@ To make it easier to add headers, we created a list of key-value fields that can
   <figcaption>Key-Value pairs</figcaption>
 </figure>
 
-Alternatively you can press the `Use JSON Editor` button to toggle between this list and the JSON editor. The resulting JSON will always be the same.
+Alternatively, you can click the **Use JSON Editor** button to switch between this list and the JSON editor. The resulting JSON will always be the same.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/http-request-node-headers2.png" width="75%" />
