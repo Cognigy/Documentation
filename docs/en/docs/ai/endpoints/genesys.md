@@ -62,7 +62,7 @@ To set up the Genesys Endpoint, follow these steps:
 
 ### (Optional) Activate AI Copilot
 
-If you want to use [AI Copilot](../../ai-copilot/overview.md) and [Genesys Notification Forwarder](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
+If you want to use [AI Copilot](../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
 create credentials on the Genesys side and configure the **Copilot** settings in the Endpoint.
 
 #### Create Credentials
