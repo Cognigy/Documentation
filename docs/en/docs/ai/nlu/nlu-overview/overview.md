@@ -41,7 +41,7 @@ If the NLU predicts the utterance is out of scope of the intent model, no intent
 As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being suboptimal and red being bad. Additional information is given on mouse-hover.
 
 !!! warning "Number of example sentences"
-    Intents must have at least a minimum of five example sentences to train the NLU sufficiently and to get a suitable [Model](ml-intents#building-the-nlu-model). The more examples you enter, the more the model can be built with higher accuracy. As a result, Intents will be recognized in a conversation with a higher likelihood and evaluated by a higher score rate based on the more accurate model. That improves intent recognition of your Agent.
+    Intents must have at least a minimum of five example sentences to train the NLU sufficiently and to get a suitable [Model](ml-intents#building-the-nlu-model). The more examples you enter, the more the model can be built with higher accuracy. As a result, Intents will be recognized in a conversation with a higher likelihood and evaluated by a higher score rate based on the more accurate model. That improves the intent recognition of your virtual agent.
 
 ### Rules
 Rules can be used to trigger the Intent under specific conditions. Rules are defined as **JavaScript expressions** that are evaluated when the NLU is executed.
