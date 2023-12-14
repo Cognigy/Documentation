@@ -26,6 +26,15 @@ After creating a speech service, you can edit or delete it.
 
 ## Add a Custom Speech Vendor
 
+If the desired vendor is not included in the list of pre-installed vendors,
+or if you want to modify the configuration of an existing one, you can add a custom vendor.
+
+Before adding a vendor to the Voice Gateway, you need to create it.
+To do this, use the [custom-speech-example](https://github.com/Cognigy/custom-speech-example/tree/main) template on GitHub.
+Using the same template, you can customize an existing vendor, such as Google.
+After you have created the custom provider, deploy it on a server,
+for example, in the AWS Cloud, then copy the address of the custom provider for use in the Voice Gateway.
+
 To add a custom speech vendor, follow these steps:
 
 1. Open The Cognigy Voice Gateway Self-Service Portal.
@@ -35,8 +44,8 @@ To add a custom speech vendor, follow these steps:
 5. In the **Name** field, specify a unique name for your provider. You need to reuse this name in the Node configuration.
 6. From the **Account** list, select a specific account or leave the **All accounts** value if you want that custom speech provider will be available for all available accounts.
 7. In the **Label** field, create a label only if you need to create multiple speech services from the same vendor. Then, use the label in your [application](applications.md#add-additional-tts-and-stt-vendor) to specify which service to use. 
-8. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL that you get from your TTS vendor. 
-9. Activate the **Use for speech-to-text** setting to use this provider as an STT vendor. Enter the STT websocket URL that you get from your TTS vendor. 
+8. Activate the **Use for text-to-speech** setting to use this provider as a TTS vendor. Enter the TTS HTTP URL of the server where your custom vendor is deployed. 
+9. Activate the **Use for speech-to-text** setting to use this provider as an STT vendor. Enter the STT websocket URL of the server where your custom vendor is deployed.
 10. In the **Authentication Token** field, enter the key that you get from your TTS or STT vendor to set up a connection. 
 11. Click **Save**.
 
