@@ -26,7 +26,7 @@ After creating a speech service, you can edit or delete it.
 
 ## Add a Custom Speech Vendor
 
-If the desired vendor is not included in the list of pre-installed vendors,
+If the desired vendor is not included in the list of preinstalled vendors,
 or if you want to modify the configuration of an existing one, you can add a custom vendor.
 
 Before adding a vendor to the Voice Gateway, you need to create it.
