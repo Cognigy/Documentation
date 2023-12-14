@@ -48,7 +48,7 @@ When data is submitted from an xApp back into the Cognigy.AI platform, it is han
 
 **An end user books a cinema ticket with a bot using xApps.**
 
-An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot by sending a chat input. The bot responds by requesting the first name, last name, and ticket category. The user answers all three questions by providing the respective data and then gets a floorplan via an xApp, through which they can select a seat. The user selects a seat and submits the selection. The system will record *a single billable Conversation* with the following explanation:
+An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot by sending a chat input. The bot responds by requesting the first name, last name, and ticket category. The user answers all three questions by providing the respective data and then gets a floor plan via an xApp, through which they can select a seat. The user selects a seat and submits the selection. The system will record *a single billable Conversation* with the following explanation:
 
 - The end user greets the chatbot - **one user input**
 - The virtual agent asks for the first name
@@ -57,7 +57,7 @@ An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot 
 - The end user provides the last name - **third user input**
 - The virtual agent asks for the ticket category
 - The end user provides the ticket category by clicking on a quick reply - **fourth user input**
-- The virtual agent presents a floorplan via an xApp
+- The virtual agent presents a floor plan via an xApp
 - The end user selects a seat using the xApp and submits the selection - **fifth user input**
 
 ### Additional Billable Conversations
