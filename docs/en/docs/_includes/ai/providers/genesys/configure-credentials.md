@@ -5,12 +5,12 @@ To configure credentials, follow these steps:
 3. Click **+ Add Client**.
 4. On the **Client Details** tab, provide a unique name in the **App Name** field.
 5. On the **Roles** tab, activate the corresponding role for the client. The role must contain at least a minimum scope of the following permissions:
-    - `messaging:integration:view` 
-    - `conversations:message:receive` 
-    - `conversations:message:create` 
-    - `conversation:webmessaging:view` 
-    - `conversation:message:view` 
-    - `analytics:conversationDetail:view`
+    - `messaging:integration:view` (Messaging > Integration > View)
+    - `conversations:message:receive` (Conversation > Message > Receive)
+    - `conversations:message:create` (Conversation > Message > Create)
+    - `conversation:webmessaging:view` (Conversation > Webmessaging > View)
+    - `conversation:message:view` (Conversation > Message > View)
+    - `analytics:conversationDetail:view` (Analytics > Conversation Detail > View)
 6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list.
 7. Click **Save**.
 8. Copy the Client ID and Client Secret and save them for future use.
