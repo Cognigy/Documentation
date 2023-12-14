@@ -1,8 +1,9 @@
 ---
- title: "HTTP Request" 
- slug: "http-request" 
- hidden: false 
+title: "HTTP Request" 
+slug: "http-request" 
+hidden: false 
 ---
+
 # HTTP Request
 
 <figure>
@@ -11,28 +12,34 @@
 
 ## Description
 <div class="divider"></div>
-By using the **HTTP Request Node** you are able to perform an HTTP request to a specific resource from within a [Flow]({{config.site_url}}ai/resources/build/flows/).
 
-Whenever the HTTP Request Node gets triggered within a [Flow]({{config.site_url}}ai/resources/build/flows/) execution it will perform the defined request to the specified URL.
+By using the HTTP Request Node, you can perform an HTTP request to a specific resource from within a Flow.
+
+Whenever the HTTP Request Node is triggered during a Flow execution, it will perform the defined request to the specified URL.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/b29e843-http-screenshot.jpg" width="100%" />
   <figcaption>HTTP Request Node Configuration Prompt</figcaption>
 </figure>
 
+## Limitations
+
+- The default timeout for the HTTP Request Node is 8 seconds in a shared SaaS environment. It can be changed for on-premises installations via the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. For dedicated SaaS installations, contact Cognigy technical support.
+
 ## Request Methods
 <div class="divider"></div>
 The HTTP Node can execute the typical CRUD methods, which are:
 
-- GET
-- POST
-- PATCH
-- PUT
-- DELETE
+- `GET`
+- `POST`
+- `PATCH`
+- `PUT`
+- `DELETE`
 
 ## General Configuration
 <div class="divider"></div>
-Each request method has certain fields which it shares with the other methods. These are the fields:
+
+Each request method shares certain fields with the others:
 
 - URL
 - Headers
@@ -41,8 +48,9 @@ Each request method has certain fields which it shares with the other methods. T
 - Async
 - Caching
     - Cache Expiry
+
 ### URL
----
+
 The URL to the targeted resource: `https://api-endpoint.com/resource`.
 
 <figure>
@@ -56,7 +64,7 @@ The URL to the targeted resource: `https://api-endpoint.com/resource`.
     For more information see [URL encoding (on en:WP)](https://en.wikipedia.org/wiki/URL%20encoding).
 
 ### Headers
----
+
 Here you can add the headers to your HTTP request. All headers are listed in one JSON object, which should have the following format.
 
 ```
@@ -83,7 +91,7 @@ Alternatively you can press the `Use JSON Editor` button to toggle between this 
 You can also enable capturing the response headers along with the request body in the specified storage location.
 
 ### Authentication
----
+
 The supported types are:
 
 - No Auth
@@ -132,10 +140,12 @@ After the HTTP request has been successfully executed you can access the respons
 
 ### Execution & Caching
 #### Execute Requests asynchronously
+
 When enabled, the HTTP Request Node will execute the request asynchronously, meaning that it will not wait for a response before continuing flow execution
 
 #### Cache Results
-When enabled the HTTP Node will cache the responses.
+
+When enabled, the HTTP Node will cache the responses.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7cd129c-ssl.JPG" width="100%" />
@@ -205,7 +215,7 @@ How to use it:
 !!! note "Note"
     The key-value pairs must be of type text. Data is not supported.
 
-When using the Interaction Panel you can inspect the response in the "Interaction Panel" INFO tab.
+When using the Interaction Panel, you can inspect the response in the **INFO** tab.
 
 ## DELETE Requests
 <div class="divider"></div>
