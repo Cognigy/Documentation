@@ -190,6 +190,7 @@ The table below presents limitations. These limitations are subject to future ch
 |--------------------------------------------------------------------------------------------------------------------|---------------|
 | Maximum number of Knowledge Stores per project                                                                     | 10            |
 | Maximum number of Knowledge Sources per Store                                                                      | 10            |
+| Maximum file upload size for creating a Knowledge Source                                                           | 10 MB         |
 | Maximum number of source tags per Knowledge Source                                                                 | 10            |
 | Maximum number of source tags per [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md) | 5             |
 | Maximum number of Chunks per Knowledge Source                                                                      | 1000          |
