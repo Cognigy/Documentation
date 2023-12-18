@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-The Overview dasboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
+The Overview dashboard gives you a quick summary of important information about how customers are interacting with your virtual agent.
 
 The summary of key metrics is represented in the following charts:
 
@@ -180,7 +180,10 @@ Result:
 Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
 
 A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/). 
-A message is not counted as understood if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/) or sent during an active handover without configuring [Agent Assist](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow. 
+A message is not counted as understood
+if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/)
+or sent during an active handover
+without configuring [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow. 
 
 By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
 you can select the **Go to Intent Trainer**,

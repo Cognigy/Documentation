@@ -90,14 +90,14 @@ To deactivate the rule, move the toggle switch to the left position.
 
 You can use multiple conditions with the `AND` or `OR` operator as in the example below.
 
-When Agent Assist is active, and a new conversation is created with the Open status, the conversation is assigned to a team.
+When AI Copilot is active, and a new conversation is created with the Open status, the conversation is assigned to a team.
 
 - Name: Sales
 - Description: This automation assigns new **Open** status conversations to the Sales team.
 - Select the event as Conversation Created.
 - Add two conditions and combine them using the `AND` operator:
     - Condition 1: Check if the **Conversation Status** is **Open**.
-    - Condition 2: Verify that the **Inbox** is set to **Agent Assist bot-default** selected from the dropdown menu.
+    - Condition 2: Verify that the **Inbox** is set to **AI Copilot bot-default** selected from the dropdown menu.
 - Add an action: Assign the conversation to the Sales team by selecting it from the dropdown menu. Make sure the Sales team is created before executing this action.
 
 <figure>
@@ -111,7 +111,7 @@ To edit an automation rule, click the **Edit** icon next to the desired automati
 ## Clone an Automation Rule
 
 To make a copy of an existing automation rule, click the clone icon from the Automation list you want to copy.
-A replica of the automation reule with the same conditions and actions will be created.
+A replica of the automation rule with the same conditions and actions will be created.
 
 ## Delete an Automation Rule
 
@@ -120,5 +120,5 @@ To delete an automation rule, click **Delete** next to the desired Automation in
 ## More Information
 
 - [Settings](overview.md)
-- [Convesation Workflow](../conversation/conversation-workflow.md)
+- [Conversation Workflow](../conversation/conversation-workflow.md)
 - [Conversation Routing](../conversation/conversation-routing/overview.md)

@@ -198,7 +198,6 @@ The REST based endpoints are:
 | Dialogflow       |
 | Twilio           |
 | Twilio SMS       |
-| Twilio Autopilot |
 | Microsoft Teams  |
 | Userlike         |
 | AudioCodes       |

@@ -1,0 +1,2 @@
+!!! Anmerkung
+    Sie unterliegen den Bedingungen der Anbieter von generativen KI-Modellen, mit denen Sie eine Verbindung herstellen. Cognigy übernimmt keine Verantwortung für Ihre Nutzung von Diensten, Systemen oder Materialien Dritter.

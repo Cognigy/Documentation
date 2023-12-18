@@ -6,7 +6,7 @@ hidden: false
 
 # Genesys
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.58-blue.svg)](../../release-notes/4.58.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.64-blue.svg)](../../release-notes/4.64.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="100%" />
@@ -45,7 +45,7 @@ Find out about the generic endpoint settings available with this endpoint on the
 To set up the Genesys Endpoint, follow these steps:
 
 1. [Configure Genesys Endpoint](#configure-genesys-endpoint)
-2. [Configure Genesys](#configure-genesys)
+2. [Configure Genesys](#configure-genesys-cloud-cx)
 
 ### Configure Genesys Endpoint
 
@@ -59,6 +59,43 @@ To set up the Genesys Endpoint, follow these steps:
 5. Activate the **Enable Endpoint** setting.
 6. In the **Genesys Bot Connector Setup** section, in the **Verify Token** field, create a verification token for connecting the Cognigy Genesys Endpoint to the Genesys Bot Connector. The token can consist of letters, numbers, and punctuation marks. Save this token for later usage in Genesys.
 7. Click **Save**.
+
+### (Optional) Activate AI Copilot
+
+If you want to use [AI Copilot](../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
+create credentials on the Genesys side and configure the **Copilot** settings in the Endpoint.
+
+#### Create Credentials
+
+To configure credentials, follow these steps:
+
+1. Open the Genesys Cloud interface.
+2. Go to **Admin > Integrations > OAuth**.
+3. Click **+ Add Client**.
+4. On the **Client Details** tab, provide a unique name in the **App Name** field.
+5. On the **Roles** tab, activate the corresponding role for the client.
+6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list.
+7. Click **Save**.
+8. Copy the Client ID and Client Secret and save them for future use.
+9. From the left-side menu, select **Authorized Applications**.
+10. In the upper-right corner, click **+ Authorize a Client**.
+11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously.
+12. Click **Authorize Client**.
+
+#### Configure Settings for Agent AI Copilot
+
+To configure the Agent Assist Workspace settings, follow these steps:
+
+1. In the **Genesys Endpoint settings**, navigate to the **Copilot** section.
+2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Assist documentation](../../ai-copilot/overview.md).
+3. Set up Genesys Cloud Credentials:
+    - **Connection Name** — create a unique name for your connection.
+    - **oAuth2Url** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting the `apps.` or `login.` part. For more information on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
+    - **oAuth2ClientId** — enter the Client ID that you generated [on the Genesys side](#configure-credentials).
+    - **oAuth2ClientSecret** — enter the Client Secret that you generated [on the Genesys side](#configure-credentials).
+    - **oAuth2Scope** — enter `*`. This system field is only necessary for authorizing the application.
+4. Click **Create**.
+5. Click **Save**.
 
 ### Configure Genesys Cloud CX
 
@@ -100,7 +137,13 @@ Your integration will be listed among integrations.
                      "supportedLanguages": ["en-us"],
                      "intents": [
                         {
-                           "name": "Success"
+                           "name": "Success",
+                           "slots": {
+                              "processedTimestamp": {
+                                 "name": "processedTimestamp",
+                                 "type": "integer"
+                              }
+                           }
                         }
                      ]
                   }

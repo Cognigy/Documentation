@@ -113,17 +113,23 @@ Your Message Routing configuration will appear in the message routing list.
 
 To configure credentials, follow these steps:
 
-1. Open the Genesys Cloud interface. 
-2. Go to **Admin > Integrations > OAuth**. 
-3. Click **+ Add Client**. 
-4. On the **Client Details** tab, provide a unique name in the **App Name** field. 
-5. On the **Roles** tab, activate the corresponding role for the client. 
-6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list. 
-7. Click **Save**. 
-8. Copy the Client ID and Client Secret and save them for future use. 
-9. From the left-side menu, select **Authorized Applications**. 
-10. In the upper-right corner, click **+ Authorize a Client**. 
-11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously. 
+1. Open the Genesys Cloud interface.
+2. Go to **Admin > Integrations > OAuth**.
+3. Click **+ Add Client**.
+4. On the **Client Details** tab, provide a unique name in the **App Name** field.
+5. On the **Roles** tab, activate the corresponding role for the client. The role must contain at least a minimum scope of the following permissions:
+    - `messaging:integration:view` (Messaging > Integration > View)
+    - `conversations:message:receive` (Conversation > Message > Receive)
+    - `conversations:message:create` (Conversation > Message > Create)
+    - `conversation:webmessaging:view` (Conversation > Webmessaging > View)
+    - `conversation:message:view` (Conversation > Message > View)
+    - `analytics:conversationDetail:view` (Analytics > Conversation Detail > View)
+6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list.
+7. Click **Save**.
+8. Copy the Client ID and Client Secret and save them for future use.
+9. From the left-side menu, select **Authorized Applications**.
+10. In the upper-right corner, click **+ Authorize a Client**.
+11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously.
 12. Click **Authorize Client**.
 
 Once your client is authorized, you can start configuring Genesys Handover Provider on the Cognigy side.
@@ -153,23 +159,11 @@ Add a [Handover to Agent](../tools/agent-handover.md) Node without any additiona
 
 To test connection, click **Open Demo Web Chat**.
 
-## Agent Assist Workspace
+## AI Copilot Workspace
 
-Within Genesys integration, you can use [Agent Assist Workspace](../../agent-assist/overview.md) as an assistant for your human agents. Agent Assist will be available as a standalone application via the following link:
+Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
 
-`https://agent-assist-dev.cognigy.ai/?sessionId=<cognigy-session-id>&userId=<cognigy-user-id>&URLToken=<token-on-the-Cognigy-side>&organisationId=<8x8-tenant-id>&configId=<agent-assist-workspace-config-id>`
-
-Where:
-
-- `sessionId` — the Cognigy Session ID.
-- `userId` — the Cognigy user ID.
-- `URLToken` — the API Key on the Cognigy side.
-- `organisationId` — the Cognigy organization ID.
-- `configId` — the Agent Assist Workspace config ID. You can get this ID in the API response once you have created Agent Assist Workspace via API.
-
-For example:
-
-`https://agent-assist-dev.cognigy.ai/?sessionId=session-2a4dc476-2f91-4f16-a420-a731144b8bac&userId=51c8f577-c352-4fb6-a496-9b7a74141450&URLToken=760bcb4beb5da6169aa7c53cfca8fc06e1b9e4ec31dc6784df396f2cc5163fc4&organisationId=63babf6e92add771923e87b7&projectId=64257f5a9ebf0514e9c1c7bb&configId=fbe5297e-e71c-4166-b909-3b99d27efdee`
+{! _includes/ai-copilot/url-pattern.md !}
 
 ## More Information
 
