@@ -38,7 +38,7 @@ If you have changed a time frame, click **Apply** to confirm and activate the se
 
 ### Narrowing Results to Minutes
 
-It is possible to select hours for the chosen timeframe. This might be helpful if you need to narrow the result to a more precise range of times.
+You can select hours for the chosen time frame. This might be helpful if you need to narrow the result to a more precise range of times.
 
 To define a date and times, such as hours and minutes, proceed as follows:
 
@@ -47,7 +47,7 @@ To define a date and times, such as hours and minutes, proceed as follows:
 3. Enable the **Select time** option using the slide switch.
 4. Click **Start Date** to open a date picker calendar.
 5. Click ![date-picker](../assets/icons/date-picker.svg) and select a start date.
-6. Click ![time-picker](../assets/icons/time-picker.svg) and move the clock hand successively to the required hour and minute in the 24h circle.
+6. Click ![time-picker](../assets/icons/time-picker.svg)and move the clock hand successively to the required hour and minute in the 24h circle.
 7. Select **End date** and repeat steps 5 and 6. 
 8. Click **Apply** to activate the selected filter settings.
 
@@ -60,7 +60,7 @@ You can select one or more Endpoints to be analyzed.
 
 To use the **Endpoints** filter, proceed as follows:
 
-1. In the top-right corner, click ![insight-filter-blue](../assets/icons/insight-filter-blue.svg) to open the side bar menu of global filters.
+1. In the top-right corner, click ![insight-filter-blue](../assets/icons/insight-filter-blue.svg) to open the sidebar of global filters.
 2. Click **Endpoints** to open the settings drop-down menu.
 3. Choose one of the following filter settings:
      - **Interaction Panel** — if you have tested the virtual agent in your Cognigy.AI project using the Interaction Panel, you can fetch these data for analysis in Insights, using this filter. For more information, read the [Interaction Panel](../ai/resources/agents/agents.md#interaction-panel) documentation.
@@ -69,7 +69,7 @@ To use the **Endpoints** filter, proceed as follows:
      - **Negate** — use the slide switch to activate and select the Endpoints you want to exclude for your analysis. All but the selected Endpoints will be considered for analysis.  
 4. Click **Apply** to activate the filter settings. The analytics data will be displayed. 
 
-When you changed a setting, click **Apply** to activate the changed filter settings.
+After changing the settings, click **Apply** to activate the changed filter settings.
 
 ## Snapshot
 
@@ -87,7 +87,7 @@ To use the **Snapshot** filter, proceed as follows:
      - **Negate** — use the slide switch to activate and select the Snapshots you want to exclude for your analysis. All but the selected Snapshots will be considered for analysis.  
 4. Click **Apply** to activate the selected filter settings. The analytics data will be displayed. 
 
-When you changed a setting, click **Apply** to activate the changed filter settings.
+After changing the settings, click **Apply** to activate the changed filter settings.
 
 ## Locales
 
@@ -104,7 +104,7 @@ To use the **Locales** filter, proceed as follows:
      - **Negate** — use the slide switch to activate and select the Locales you want to exclude for your analysis. All but the selected Locales will be considered for analysis.  
 4. Click **Apply** to activate the filter settings. The analytics data will be displayed. 
 
-When you changed a setting, click **Apply** to activate the changed filter settings.
+After changing the settings, click **Apply** to activate the changed filter settings.
 
 ## Message Rating
 
@@ -116,18 +116,17 @@ For more information, read the [Request Rating Node](../ai/flow-nodes/other-node
 | All      | Default setting. All available rating data will be considered for analysis. |
 | Positive | Only positive rating data will be considered for analysis.                  |
 | None     | No rating data will be considered for analysis.                             |
-| Negative | Only negative rating data will be condidered for analysis.                  |
+| Negative | Only negative rating data will be considered for analysis.                  |
 | Negate   | When enabled, all filter options but the selected are active.               |
 
-When you make changes to a setting, click **Apply** to activate the updated filter settings, and the corresponding analytics data will be displayed.
+After changing the settings, click **Apply** to activate the updated filter settings, and the corresponding analytics data will be displayed.
 
-## Updating Analytics Records Using Rest API
+## Sharing an Application URL
 
-If you intend to update certain analytics fields on Insights dashboards during an ongoing session, use the [PATCH /v2.0/analytics](https://api-trial.cognigy.ai/openapi#patch-/v2.0/analytics) request.
-
-## Sharing Application URL
-
-Cognigy helps analyze customer conversations. Easily share insights by copying and distributing URLs. When you share a specific URL with global filters applied, your team members will see the same data and filters as you. This ensures consistency across different sessions and scenarios.
+Cognigy helps analyze customer conversations.
+Easily share insights by copying and distributing URLs.
+When you share a specific URL with global filters applied, your team members will see the same data and filters as you.
+This approach ensures consistency across different sessions and scenarios.
 
 Using shareable URLs provides the following benefits:
 

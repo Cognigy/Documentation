@@ -19,3 +19,5 @@ Refer to the [Analytics data](../code/analytics-data.md#analytics-fields) page f
 
 !!! warning "Selective Overwrite"
     Blank fields will remain "as-is", meaning they will contain the data which Cognigy.AI would store by default.
+
+Alternatively, you can update analytics records using the [PATCH /v2.0/analytics](https://api-trial.cognigy.ai/openapi#patch-/v2.0/analytics) request.
