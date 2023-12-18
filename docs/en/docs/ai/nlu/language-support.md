@@ -109,7 +109,7 @@ The Universal Language option extends the Cognigy NLU’s compatibility with ove
 * Urdu
 * Uzbek
 * Vietnamese
-* Laothian 
+* Laotian 
 * Sinhalese
 * and more
 

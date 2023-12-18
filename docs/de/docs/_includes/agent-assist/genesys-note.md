@@ -1,0 +1,2 @@
+!!! Anmerkung
+    Diese Informationen sind derzeit spezifisch für die Einbettung der Lösung in Genesys Cloud CX. Wenn Sie beabsichtigen, es in andere Contact Center einzubetten, sind möglicherweise zusätzliche Informationen erforderlich.

@@ -1,0 +1,2 @@
+!!! Anmerkung
+    Die bestehenden Zahlungsbedingungen für xApps sind im Artikel [Abrechnung](https://docs.cognigy.com/ai/billing/) beschrieben. Cognigy behält sich das Recht vor, die Abrechnung von xApps in Zukunft zu ändern.

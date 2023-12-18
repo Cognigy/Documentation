@@ -23,7 +23,7 @@ Enhance the capabilities of virtual agents by supporting use cases that go beyon
 
 ### Power up human agents
 
-Enable Agent Assist to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
+Enable AI Copilot to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
 
 ## Standalone
 

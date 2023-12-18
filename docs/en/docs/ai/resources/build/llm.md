@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Model (LLM)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.64-blue.svg)](../../../release-notes/4.64.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../../release-notes/4.65.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 
@@ -27,6 +27,7 @@ The table below lists the LLMs supported by Cognigy.
 | **OpenAI**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
 | gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | text-davinci-003 ([Deprecated](https://platform.openai.com/docs/deprecations/2023-07-06-gpt-and-embeddings))              | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
 | text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
 | **Anthropic**                                                                                                             |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
@@ -34,7 +35,8 @@ The table below lists the LLMs supported by Cognigy.
 | claude-instant-v1                                                                                                         | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | **Google**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | text-bison-001 (Bard)                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
-
+| **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| luminous-extended-control                                                                                                                  | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  | 
 
 ## Add a Model
 

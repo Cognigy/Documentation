@@ -3,22 +3,13 @@ site_description: Documentation of Cognigy products
 site_url: https://docs.cognigy.com/
 site_author: Cognigy
 copyright: Copyright &copy; 2023 <a href="https://www.cognigy.com/">Cognigy</a>
-#Temporarily disabled Suggest Edit section
 repo_url: https://github.com/Cognigy/Documentation/
 repo_name: cognigy/documentation
-
 theme:
   name: material
   custom_dir: overrides
   palette:
     scheme: default
-  #   toggle:
-  #     icon: material/lightbulb-outline
-  #     name: Switch to dark mode
-  # - scheme: slate
-  #   toggle:
-  #     icon: material/lightbulb
-  #     name: Switch to light mode
   font:
     text: Mulish
   features:
@@ -42,7 +33,7 @@ theme:
       bug: octicons/bug-16
       example: octicons/beaker-16
       quote: octicons/quote-16
-      edit: material/pencil 
+      edit: material/pencil
       view: material/eye
   logo: assets/img/Cognigy-white.svg
   favicon: assets/img/favicon.webp
@@ -54,16 +45,17 @@ extra_javascript:
 - assets/js/mathjax.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
-
 nav:
 - Cognigy Products: index.md
-
 - Languages:
   - en: /
   - de: /de/
-
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.66:
+    - release-notes/4.66.md
+  - 4.65:
+    - release-notes/4.65.md
   - 4.64:
     - release-notes/4.64.md
   - 4.63:
@@ -99,7 +91,7 @@ nav:
   - 4.47:
     - release-notes/4.47.md
   - 4.46:
-    - release-notes/4.46.md 
+    - release-notes/4.46.md
   - 4.45:
     - release-notes/4.45.md
   - 4.44:
@@ -124,14 +116,12 @@ nav:
   - release-notes/4.30.md
   - Earlier versions:
     - release-notes/earlier-versions.md
-    - ai/release-notes/pre-4.30.md 
+    - ai/release-notes/pre-4.30.md
     - insights/release-notes/pre-4.30.md
     - live-agent/release-notes/pre-4.30.md
-    
-
 - AI:
   - Overview:
-    - ai/platform-overview.md 
+    - ai/platform-overview.md
   - Resources:
     - Agents:
       - ai/resources/agents/agents.md
@@ -255,7 +245,6 @@ nav:
         - ai/flow-nodes/vg/transfer.md
         - ai/flow-nodes/vg/call-recording.md
         - ai/flow-nodes/vg/mute-speech-input.md
-
       - Audio Codes:
         - ai/flow-nodes/audiocodes/audiocodes.md
         - ai/flow-nodes/audiocodes/send-message.md
@@ -265,16 +254,17 @@ nav:
         - ai/flow-nodes/audiocodes/hangup.md
         - ai/flow-nodes/audiocodes/send-meta-data.md
         - ai/flow-nodes/audiocodes/call-recording.md
-    - Agent Assist:
-        - ai/flow-nodes/agent-assist/overview.md
-        - ai/flow-nodes/agent-assist/identity-assist.md
-        - ai/flow-nodes/agent-assist/next-action-assist.md
-        - ai/flow-nodes/agent-assist/sentiment-assist.md
-        - ai/flow-nodes/agent-assist/set-html-file.md
-        - ai/flow-nodes/agent-assist/set-adaptive-card-tile.md
-        - ai/flow-nodes/agent-assist/set-iframe-tile.md
-        - ai/flow-nodes/agent-assist/set-agent-assist-grid.md
-        - ai/flow-nodes/agent-assist/transcript-assist.md
+    - AI Copilot:
+      - ai/flow-nodes/ai-copilot/overview.md
+      - ai/flow-nodes/ai-copilot/identity-tile.md
+      - ai/flow-nodes/ai-copilot/next-action-tile.md
+      - ai/flow-nodes/ai-copilot/sentiment-tile.md
+      - ai/flow-nodes/ai-copilot/set-html-tile.md
+      - ai/flow-nodes/ai-copilot/set-adaptive-card-tile.md
+      - ai/flow-nodes/ai-copilot/set-iframe-tile.md
+      - ai/flow-nodes/ai-copilot/set-grid.md
+      - ai/flow-nodes/ai-copilot/transcript-tile.md
+      - ai/flow-nodes/ai-copilot/knowledge-tile.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -369,10 +359,11 @@ nav:
       - ai/endpoints/webchat/webchat.md
     - Voice Gateway:
       - ai/endpoints/cognigy-vg.md
-      - ai/endpoints/audiocodes.md
+    - ai/endpoints/audiocodes.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
+    - ai/endpoints/voice-copilot.md
     - ai/endpoints/amazon-lex.md
     - ai/endpoints/amazon-alexa.md
     - ai/endpoints/avaya-cpaas.md
@@ -403,53 +394,27 @@ nav:
     - ai/handover-providers/genesys-cloud-open-messaging.md
     - ai/handover-providers/8x8.md
     - ai/handover-providers/user-inactivity-detection.md
-
-  - Agent Assist:
-      - agent-assist/overview.md
-      - agent-assist/getting-started.md
-      - agent-assist/architecture.md
-      - Installation:
-          - agent-assist/installation/overview.md
-          - agent-assist/installation/browser-requirements.md
-          - agent-assist/installation/version-compatibility-matrix.md
-          - agent-assist/installation/prerequisites.md
-          - agent-assist/installation/installation-process.md
-          - Migration Guides:
-              - agent-assist/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
-      - agent-assist/contact-center-integration.md
-      - agent-assist/configuration.md
-      - agent-assist/embedding.md
-      - Chat Agent Assist:
-          - agent-assist/chat-agent-assist.md
-      - Voice Agent Assist:
-          - agent-assist/voice-agent-assist/voice-overview.md
-          - agent-assist/voice-agent-assist/code-node.md
-          - agent-assist/voice-agent-assist/transfer-node.md
-          - agent-assist/voice-agent-assist/webhook-endpoint.md
-      - agent-assist/plug-and-play-widgets.md
-
   - xApps:
-      - ai/xApp/overview.md
-      - ai/xApp/use-cases.md
-      - Build an xApp:
-          - ai/xApp/build/overview.md
-          - ai/xApp/build/first-xApp.md
-          - ai/xApp/build/xApp-with-multi-channels.md
-          - ai/xApp/build/standalone-xApp.md
-          - ai/xApp/build/custom-xApp-node.md
-      - xApp Security:
-          - ai/xApp/security/secure-xApp-from-xss.md
-      - ai/xApp/architecture.md
-      - ai/xApp/tokens.md
-      - ai/xApp/api.md
-      - ai/xApp/supported-browsers-and-channels.md
+    - ai/xApp/overview.md
+    - ai/xApp/use-cases.md
+    - Build an xApp:
+      - ai/xApp/build/overview.md
+      - ai/xApp/build/first-xApp.md
+      - ai/xApp/build/xApp-with-multi-channels.md
+      - ai/xApp/build/standalone-xApp.md
+      - ai/xApp/build/custom-xApp-node.md
+    - xApp Security:
+      - ai/xApp/security/secure-xApp-from-xss.md
+    - ai/xApp/architecture.md
+    - ai/xApp/tokens.md
+    - ai/xApp/api.md
+    - ai/xApp/supported-browsers-and-channels.md
   - Knowledge AI:
-      - ai/knowledge-ai/overview.md
-      - ai/knowledge-ai/ctxt.md
-      - ai/knowledge-ai/pdf.md
+    - ai/knowledge-ai/overview.md
+    - ai/knowledge-ai/ctxt.md
+    - ai/knowledge-ai/pdf.md
   - ai/generative-ai.md
   - ai/architecture.md
-  
   - Installation & Configuration:
     - ai/installation/overview.md
     - ai/installation/browser-requirements.md
@@ -463,12 +428,14 @@ nav:
     - ai/installation/ip-ranges-shared-environments.md
     - ai/installation/reset-init-user-credentials.md
     - ai/installation/backups.md
-    - Migration Guides:
+    - Upgrade and Migration Guides:
       - ai/installation/migration/contents.md
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
       - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
       - ai/installation/migration/from-nlu-v1-to-v2-migration.md
+      - ai/installation/migration/single-replica-redis-to-redis-ha-migration.md
+      - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
@@ -492,9 +459,8 @@ nav:
   - insights/message-explorer.md
   - insights/download-report.md
   - insights/glossary.md
-  - Release Notes:  
-    - insights/release-notes/release-notes.md  
-
+  - Release Notes:
+    - insights/release-notes/release-notes.md
 - Webchat Widget:
   - Overview:
     - ai/endpoints/webchat/webchat.md
@@ -503,9 +469,31 @@ nav:
   - ai/endpoints/webchat/webchat-features.md
   - ai/endpoints/webchat/triggering-webchat-plugins.md
   - ai/endpoints/webchat/integrated-demo-page.md
-  - Release Notes: 
+  - Release Notes:
     - ai/endpoints/webchat/release-notes.md
-
+- AI Copilot:
+  - Overview:
+    - ai-copilot/overview.md
+  - ai-copilot/getting-started.md
+  - ai-copilot/architecture.md
+  - Installation:
+    - ai-copilot/installation/overview.md
+    - ai-copilot/installation/browser-requirements.md
+    - ai-copilot/installation/version-compatibility-matrix.md
+    - ai-copilot/installation/prerequisites.md
+    - ai-copilot/installation/installation-process.md
+    - Migration Guides:
+      - ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
+  - ai-copilot/contact-center-integration.md
+  - ai-copilot/configuration.md
+  - ai-copilot/embedding.md
+  - Chat AI Copilot:
+    - ai-copilot/chat.md
+  - Voice AI Copilot:
+    - ai-copilot/voice/voice-overview.md
+    - ai-copilot/voice/transfer-node.md
+  - ai-copilot/plug-and-play-widgets.md
+  - ai-copilot/release-notes.md
 - Live Agent:
   - Overview:
     - live-agent/overview.md
@@ -514,9 +502,9 @@ nav:
     - live-agent/getting-started/live-agent-setup/live-agent-setup-org.md
     - live-agent/getting-started/live-agent-setup/live-agent-setup-inbox.md
     - Handover Setup:
-        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover.md
-        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md
-        - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md
+      - live-agent/getting-started/live-agent-setup/live-agent-setup-handover.md
+      - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-endpoint.md
+      - live-agent/getting-started/live-agent-setup/live-agent-setup-handover-flow.md
     - live-agent/getting-started/live-agent-setup/live-agent-setup-agents.md
     - live-agent/getting-started/live-agent-setup/live-agent-setup-additional-inbox.md
   - Installation & Configuration:
@@ -546,55 +534,52 @@ nav:
       - live-agent/tools/odata-endpoint.md
   - Conversations:
     - Workflow:
-        - live-agent/conversation/conversation-workflow.md
+      - live-agent/conversation/conversation-workflow.md
     - Conversation Queue:
-        - live-agent/conversation/conversation-queue.md
+      - live-agent/conversation/conversation-queue.md
     - Routing:
-        - live-agent/conversation/conversation-routing/overview.md
-        - live-agent/conversation/conversation-routing/manual-mode.md
-        - live-agent/conversation/conversation-routing/automatic-mode.md
-    - Assist Bot:
-        - live-agent/conversation/assist-bot.md
-    - LA Agent Assist:
-        - ai/handover-providers/la-agent-assist-overview.md
-        - ai/handover-providers/la-agent-assist-setup.md
-        - ai/handover-providers/la-agent-assist-workspace-setup.md
+      - live-agent/conversation/conversation-routing/overview.md
+      - live-agent/conversation/conversation-routing/manual-mode.md
+      - live-agent/conversation/conversation-routing/automatic-mode.md
+  - Assistants:
+    - live-agent/assistants/overview.md
+    - live-agent/assistants/la-ai-copilot.md
+    - live-agent/assistants/ai-copilot.md
+    - live-agent/assistants/assist-bot.md
   - Reports:
-      - live-agent/reports/overview.md
-      - live-agent/reports/supervisor-overview.md
-      - Admin Reports:
-          - live-agent/reports/admin/overview.md
-          - live-agent/reports/admin/conversations.md
-          - live-agent/reports/admin/agents.md
-          - live-agent/reports/admin/labels.md
-          - live-agent/reports/admin/inboxes.md
-          - live-agent/reports/admin/teams.md
+    - live-agent/reports/overview.md
+    - live-agent/reports/supervisor-overview.md
+    - Admin Reports:
+      - live-agent/reports/admin/overview.md
+      - live-agent/reports/admin/conversations.md
+      - live-agent/reports/admin/agents.md
+      - live-agent/reports/admin/labels.md
+      - live-agent/reports/admin/inboxes.md
+      - live-agent/reports/admin/teams.md
   - Settings:
-      - live-agent/settings/overview.md
-      - live-agent/settings/agents.md
-      - live-agent/settings/teams.md
-      - live-agent/settings/inboxes.md
-      - live-agent/settings/labels.md
-      - live-agent/settings/skills.md
-      - live-agent/settings/automation-rules.md
-      - live-agent/settings/canned-responses.md
-      - live-agent/settings/attachments.md
-      - live-agent/settings/audit-logs.md
-      - live-agent/settings/account-settings.md
+    - live-agent/settings/overview.md
+    - live-agent/settings/agents.md
+    - live-agent/settings/teams.md
+    - live-agent/settings/inboxes.md
+    - live-agent/settings/labels.md
+    - live-agent/settings/skills.md
+    - live-agent/settings/automation-rules.md
+    - live-agent/settings/canned-responses.md
+    - live-agent/settings/attachments.md
+    - live-agent/settings/audit-logs.md
+    - live-agent/settings/account-settings.md
   - live-agent/roles.md
   - live-agent/notifications.md
   - live-agent/profile-settings.md
   - live-agent/glossary.md
   - Release Notes:
-    - live-agent/release-notes/release-notes.md 
-  - live-agent/FAQs.md   
-
+    - live-agent/release-notes/release-notes.md
+  - live-agent/FAQs.md
 - Voice Gateway:
   - Overview:
-    - voicegateway/overview.md 
+    - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
-  # Temporary disabled until the Helm Chart refactor and creation of the Public GitHub Helm Chart repository is done
   - Installation & Configuration:
     - voicegateway/installation/overview.md
     - Browser Requirements:
@@ -625,35 +610,32 @@ nav:
       - voicegateway/webapp/outbound-call-routing.md
   - References:
     - Voice Gateway Events:
-        - voicegateway/references/events/overview.md
-        - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
-        - voicegateway/references/events/CALL_CREATED.md
-        - voicegateway/references/events/CALL_COMPLETED.md
-        - voicegateway/references/events/CALL_FAILED.md
-        - voicegateway/references/events/CALL_RECONNECTED.md
-        - voicegateway/references/events/RECOGNIZED_DTMF.md
-        - voicegateway/references/events/RECOGNIZED_SPEECH.md
-        - voicegateway/references/events/TRANSFER_DIAL_ERROR.md
-        - voicegateway/references/events/TRANSFER_DIAL_SUCCESS.md
-        - voicegateway/references/events/TRANSFER_REFER_ERROR.md
-        - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
-        - voicegateway/references/events/USER_BUSY.md
-        - voicegateway/references/events/USER_INPUT_TIMEOUT.md
-        - voicegateway/references/events/NO_ANSWER.md
+      - voicegateway/references/events/overview.md
+      - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
+      - voicegateway/references/events/CALL_CREATED.md
+      - voicegateway/references/events/CALL_COMPLETED.md
+      - voicegateway/references/events/CALL_FAILED.md
+      - voicegateway/references/events/CALL_RECONNECTED.md
+      - voicegateway/references/events/RECOGNIZED_DTMF.md
+      - voicegateway/references/events/RECOGNIZED_SPEECH.md
+      - voicegateway/references/events/TRANSFER_DIAL_ERROR.md
+      - voicegateway/references/events/TRANSFER_DIAL_SUCCESS.md
+      - voicegateway/references/events/TRANSFER_REFER_ERROR.md
+      - voicegateway/references/events/TRANSFER_REFER_SUCCESS.md
+      - voicegateway/references/events/USER_BUSY.md
+      - voicegateway/references/events/USER_INPUT_TIMEOUT.md
+      - voicegateway/references/events/NO_ANSWER.md
     - TTS and STT Vendors:
-        - voicegateway/references/tts-and-stt-vendors.md
+      - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
-        - voicegateway/references/sip-trunk-providers.md
+      - voicegateway/references/sip-trunk-providers.md
   - Release Notes:
-    - voicegateway/release-notes.md      
-
+    - voicegateway/release-notes.md
 - Marketplace:
   - ai/resources/manage/extensions.md
-
 - Help & Contact:
   - help/get-help.md
   - help/community.md
-
 markdown_extensions:
 - toc:
     permalink: true
@@ -699,13 +681,12 @@ markdown_extensions:
       class: mermaid
       format: !!python/name:pymdownx.superfences.fence_code_format ''
 - pymdownx.tabbed:
-    alternate_style: true 
+    alternate_style: true
 - pymdownx.tasklist:
     custom_checkbox: true
 - pymdownx.tilde
 - pymdownx.critic:
     mode: view
-
 extra:
   generator: false
   social:
@@ -727,34 +708,32 @@ extra:
   alternate:
   - link: /
     name: en
+  - link: /de/
+    name: de
   analytics:
-   provider: google
-   property: G-DQ0NQDZTS1
-   feedback:      
+    provider: google
+    property: G-DQ0NQDZTS1
+    feedback:
       title: Was this page helpful?
       ratings:
-       - icon: material/thumb-up-outline
-         name: This page was helpful
-         data: 1
-         note: >-
-            Thanks for your feedback!
-       - icon: material/thumb-down-outline
-         name: This page could be improved
-         data: 0
-         note: >- 
-            Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via a GitHub issue</a>
+      - icon: material/thumb-up-outline
+        name: This page was helpful
+        data: 1
+        note: Thanks for your feedback!
+      - icon: material/thumb-down-outline
+        name: This page could be improved
+        data: 0
+        note: Thanks for your feedback! Help us improve this page by leaving feedback <a href="https://github.com/Cognigy/Documentation/issues/new/?title=[Feedback]+{title}+-+{url}" target="_blank" rel="noopener">via
+          a GitHub issue</a>
   consent:
-   title: Cookie consent
-   description: >-
-            We use cookies to recognize your repeated visits and preferences, as well
-            as to measure the effectiveness of our documentation and whether users
-            find what they're searching for. With your consent, you're helping us to
-            make our documentation better. To find out more about the cookies we use, see our <a href="https://www.cognigy.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
-
+    title: Cookie consent
+    description: We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your
+      consent, you're helping us to make our documentation better. To find out more about the cookies we use, see our <a href="https://www.cognigy.com/privacy-policy" target="_blank" rel="noopener">Privacy
+      Policy</a>
 plugins:
 - section-index
 - macros
 - search
 - exclude:
     glob:
-      - _includes/*
+    - _includes/*

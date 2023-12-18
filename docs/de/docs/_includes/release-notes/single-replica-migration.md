@@ -1,0 +1,2 @@
+!!! Warnung "Deprecation of Single Replica Redis"
+    Ab Cognigy.AI Version v4.65 ist das Redis-Setup für einzelne Replikate veraltet und wird durch Redis im Hochverfügbarkeitsmodus ersetzt. Stellen Sie bei On-Premises-Installationen vor dem Upgrade auf Cognigy.AI v4.65 sicher, dass Sie gemäß [Redis: Migration von Single Replica to Redis HA](https://docs.cognigy.com/ai/installation/migration/single-replica-redis-to-redis-ha-migration/) migrieren.

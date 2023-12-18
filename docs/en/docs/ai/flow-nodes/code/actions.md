@@ -44,7 +44,7 @@ Promise<void>
 
 ### actions.setTimezoneOffset || api.setTimezoneOffset
 
-Sets the timezone offset from UTC.
+Sets the time zone offset from UTC.
 
 **Parameters**
 
