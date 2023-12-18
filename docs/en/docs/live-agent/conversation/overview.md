@@ -12,7 +12,7 @@ A Conversation is the communication channel opened between an Agent and a custom
 The customer initiates a conversation from the website front end - using the Webchat widget.
 An automated response set in the Cognigy.AI Flow will immediately be displayed on the screen as a reply. When a Virtual Agent initiates a handover to the Live Agent interface, the conversation will be continued by a human Agent.
 
-## Open a Conversation in Live Agent:
+## View a Conversation in Live Agent
 
 To open a conversation in Live Agent, do the following:
 
@@ -34,6 +34,11 @@ Conversations between customer and operator in Live Agent can get different stat
 - [Abandoned](#abandoned) 
 - [Pending](#pending)
 - [Snoozed](#snoozed)
+
+<figure>
+<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/conversation-statuses.png" width="60%" alt="Live Agent Conversation Statuses" />
+  <figcaption>Conversation Statuses</figcaption>
+</figure>
 
 The Conversation statuses are listed below.
 

@@ -543,7 +543,7 @@ nav:
       - live-agent/conversation/conversation-workflow.md
     - Conversation Queue:
       - live-agent/conversation/conversation-queue.md
-    - Routing:
+    - Conversation Routing:
       - live-agent/conversation/conversation-routing/overview.md
       - live-agent/conversation/conversation-routing/manual-mode.md
       - live-agent/conversation/conversation-routing/automatic-mode.md
