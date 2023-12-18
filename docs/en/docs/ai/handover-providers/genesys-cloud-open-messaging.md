@@ -163,7 +163,7 @@ To test connection, click **Open Demo Web Chat**.
 
 Within Genesys integration, you can use [AI Copilot Workspace](../../ai-copilot/overview.md) as an assistant for your human agents. AI Copilot will be available as a standalone application via the following link:
 
-{! _includes/agent-assist/url-pattern.md !}
+{! _includes/ai-copilot/url-pattern.md !}
 
 ## More Information
 

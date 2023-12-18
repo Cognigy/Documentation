@@ -6,7 +6,7 @@ hidden: false
 
 # AI Copilot for Voice: Transfer Node
 
-{! _includes/agent-assist/genesys-note.md !}
+{! _includes/ai-copilot/genesys-note.md !}
 
 When using the Cognigy Voice Gateway, add a [Transfer](../../ai/flow-nodes/vg/transfer.md) Node to hand over the call to a human agent. 
 
