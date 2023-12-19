@@ -11,7 +11,7 @@ _Conversations_ are chats between a human agent and a customer, initiated by the
 The conversation is handed over to a human agent when the virtual agent cannot assist with a question due to its complexity or lack of information. During the conversation, the human agent may use additional virtual assistants to help answer the question.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/conversation.png" width="80%" alt="Conversation Panel" />
+<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/conversation-panel.png" width="80%" alt="Conversation Panel" />
   <figcaption>Conversation Panel</figcaption>
 </figure>
 

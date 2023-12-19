@@ -1,59 +1,73 @@
 ---
-title: "Assign Conversations"
-slug: "assign-conversations"
-description: ""
+title: "Conversation Assignment"
+slug: "conversation-assignment"
+description: "Within a Live Agent conversation, you can assign agents, teams, priority, and labels."
 hidden: false
 ---
 
 # Assign Conversations
 
-When working with Live Agents you can assign Agents, Teams, Priority, and Labels to conversations as described below.  
+Within a conversation, you can assign agents, teams, priority, and labels.  
 
 <figure>
-<img src="{{config.site_url}}live-agent/images/LA_conversation_details.png" width="100%" alt="Live Agent Conversations Details" />
-  <figcaption>Conversations Details</figcaption>
+<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/conversation-actions.png" width="80%" alt="Live Agent Conversation Actions" />
+  <figcaption>Conversation Details</figcaption>
 </figure>
 
 ## Assign Agents
 
-Indicates the number of conversations that were assigned to a human agent
+You can transfer a conversation to another human agent by selecting a different agent from the **Assigned Agent** list.
+The entire conversation will be visible to the newly selected agent.
 
-If the Inbox has been created without 'auto assign' selected, Conversations will not be automatically assigned to Agents.
+To assign an agent to a conversation within Live Agent, do the following:
 
-Click on the drop-box within the Assigned Agent menu and select the Agent name. You can change the Agents assigned here at any time.
+1. In the left-side menu of Live Agent, click **Conversations**.
+2. From the **Inboxes** list, select an Inbox.
+3. From the **Conversations** list, select your conversation where you want to assign a priority.
+4. On the right side of the conversation chat, go to **Details > Conversation Actions**.
+5. From the **Assigned Agent** list, select a different agent by scrolling or typing to search for an agent, then click the intended agent.
 
-### Transferring Agents
-
-You can transfer an issue/Conversation to another Agent by selecting a different Agent from the Assigned Agent menu. The entire Conversation will be visible to the newly selected Agent.
+The agent will be assigned to the conversation.
 
 ## Assign Teams
 
-Click on the drop-box within the Assigned Team menu and select the Team to which this Conversation belongs.
+To assign a team to a conversation within Live Agent, do the following:
+
+1. In the left-side menu of Live Agent, click **Conversations**.
+2. From the **Inboxes** list, select an Inbox.
+3. From the **Conversations** list, select your conversation where you want to assign a priority.
+4. On the right side of the conversation chat, go to **Details > Conversation Actions**.
+5. From the **Assigned Team** list, select a desired team by scrolling or typing to search for a team, then click the intended team.
+
+The team will be assigned to the conversation.
 
 ## Assign Priority
 
 To assign a priority to a conversation within Live Agent, do the following:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. From the **Inboxes** list, select an Inbox.
-4. From the **Conversations** list, select your conversation where you want to assign a priority.
-5. On the right of the conversation chat, go to **Details > Conversation Actions**.
-6. Under the **Priority** section, click **Select priority**.
-7. Scroll or type to search for a priority level, then click the intended level. 
+1. In the left-side menu of Live Agent, click **Conversations**.
+2. From the **Inboxes** list, select an Inbox. 
+3. From the **Conversations** list, select your conversation where you want to assign a priority. 
+4. On the right side of the conversation chat, go to **Details > Conversation Actions**. 
+5. From the **Priority** list, select a desired priority by scrolling or typing to search for a priority level, then click the intended level. 
 
-The priority will be assigned to the conversation. The matching priority level's icon will now be visible for the conversation within the Conversations column.
+The priority will be assigned to the conversation.
+The matching priority level's icon will now be visible for the conversation in the Conversations list.
 
 ## Assign Labels 
 
 To assign a label to a conversation within Live Agent, do the following:
 
-1. Go to Live Agent.
-2. On the left side of the screen, select **Conversations**.
-3. From the **Inboxes** list, select an Inbox.
-4. From the **Conversations** list, select your conversation where you want to add a label.
-5. On the right of the conversation chat, go to **Details > Conversation Actions**.
-6. Under the **Conversation Labels** section, click **Add Labels**.
-7. Scroll or type to search for a label, then click a label. You can add multiple labels at once. 
+1. In the left-side menu of Live Agent, click **Conversations**.
+2. From the **Inboxes** list, select an Inbox.
+3. From the **Conversations** list, select your conversation where you want to assign a priority.
+4. On the right side of the conversation chat, go to **Details > Conversation Actions**. 
+5. Under the **Conversation Labels** section, click **Add Labels**. 
+6. Scroll or type to search for a label, then click a label. You can add multiple labels at once. 
 
 The label will be added to the conversation.
+
+## More Information
+
+- [Manual Assignment](conversation-routing/manual-mode.md)
+- [Automatic Assignment](conversation-routing/automatic-mode.md)
