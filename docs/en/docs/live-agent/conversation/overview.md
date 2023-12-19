@@ -1,148 +1,69 @@
 ---
 title: "Overview"
-slug: "conversation overview"
+slug: "conversation-overview"
 description: ""
 hidden: false
 ---
 
-# Conversation
+# Conversations
 
-Your chats with various customers are referred to as conversations in Live Agent. This includes all session messages, including the customer, bot or human Agent responses.
-A Conversation is the communication channel opened between an Agent and a customer.
-The customer initiates a conversation from the website front end - using the Webchat widget.
-An automated response set in the Cognigy.AI Flow will immediately be displayed on the screen as a reply. When a Virtual Agent initiates a handover to the Live Agent interface, the conversation will be continued by a human Agent.
+_Conversations_ are chats between a human agent and a customer, initiated by the customer via a messaging application, such as Cognigy Webchat, WhatsApp, Slack, and so on.
+The conversation is handed over to a human agent when the virtual agent cannot assist with a question due to its complexity or lack of information. During the conversation, the human agent may use additional virtual assistants to help answer the question.
 
 ## View a Conversation in Live Agent
 
-To open a conversation in Live Agent, do the following:
+To open a conversation in Live Agent, follow these steps:
 
-1. Open your Live Agent interface and click **Conversations** on the left hand side of the window.
-2. Click **All Conversations**. All conversations which customers have initiated will be displayed.
-3. Click on a specific Conversation. The Conversation will open with further details and actions available in the right-hand side panel.
+1. Open your Live Agent interface.
+2. In the left-side menu, click **Conversations**.
+3. On the Conversations panel, choose one of the following tabs:
+    - **Mine** - displays conversations assigned to you.
+    - **Unassigned** - shows conversations without a designated owner.
+    - **All** - shows all conversations in the system. All system conversations. Agents, by default, cannot view all conversations, but administrators can enable access in the **Inboxes** settings. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
+4. Select a specific conversation from the chosen tab. The conversation will open, providing additional details and actions in the right-hand side panel.
 
 <figure>
 <img src="{{config.site_url}}live-agent/images/LA_conversation_details.png" width="100%" alt="Live Agent Conversations Details" />
   <figcaption>Conversations Details</figcaption>
 </figure>
 
-## Conversation Statuses
+## Conversation Lifecycle
 
-Conversations between customer and operator in Live Agent can get different statuses:
-
-- [Open](#open)
-- [Resolved](#resolved)
-- [Abandoned](#abandoned) 
-- [Pending](#pending)
-- [Snoozed](#snoozed)
+The conversation lifecycle involves starting a conversation, keeping it open for active engagement, possibly putting it on hold temporarily, and finally closing or resolving it.
 
 <figure>
 <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/conversation-statuses.png" width="60%" alt="Live Agent Conversation Statuses" />
   <figcaption>Conversation Statuses</figcaption>
 </figure>
 
-The Conversation statuses are listed below.
+Each conversation has statuses that are listed in the table.
 
-| Status                  | Description                                                                                          |
-|-------------------------|------------------------------------------------------------------------------------------------------|
-| Mark as Pending         | Changes the issue to Pending status                                                                  |
-| Resolve                 | Changes the issue to Resolved status                                                                 |
-| Abandon and Resolve     | Changes the issue to Resolved status, and add the queryable abandon attribute                        |
-| Open                    | Changes the pending issue to Open status                                                             |
-| Snooze Until Next Reply | The issue will be set aside for now, and status will change to Open on the next reply from customer  |
-| Snooze Until Tomorrow   | The issue will be set aside for now, and status will change to Open the next day                     |
-| Snooze Until Next Week  | The issue will be set aside for now, and status will change to Open next week                        |
+| Status    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Opened    | This conversation status indicates that a conversation is handed over to a human agent. The conversation can be opened by a user or reopened by a human agent. From this status, the conversation can transition in the following ways:<br>- Move to `Pending` and `Snoozed` statuses. Return from inactive statuses to an open state.<br>- Move to `Resolved` or `Abandoned` statuses. If the conversation is marked as resolved or abandoned, it cannot be reopened.<br>                                                                                                                                                                                                                                                                                                                                                                                                    |
+| Pending   | This status reflects the quantity of conversations that were temporarily paused, awaiting a response from either the customer or a human agent.<br> To mark a conversation as pending, in the upper-right corner of the Conversation panel, next to the **Resolve** button, click ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg) ** > Mark as pending**. To reopen the conversation, click **Open**.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Snoozed   | This status indicates the number of conversations that were temporarily suspended until a time trigger or customer response trigger was activated.<br>To mark conversation as snoozed, in the upper-right corner of the Conversation panel, next to the **Resolve** button, click ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg). Select one of the following trigger options:<br>- Snooze Until Next Reply - the issue will be set aside for now, and the status will change to `Open` upon the next customer reply.<br>- Snooze Until Tomorrow - the issue will be set aside for now, and the status will change to `Open` the next day.<br>- Snooze Until Next Week - the issue will be set aside for now, and the status will change to `Open` next week.<br>                                                                                     |
+| Abandoned | The status indicates that a conversation is closed because the user left the conversation.<br>To mark a conversation as abandon, in the top right corner of the Conversation panel, click **Resolve** and select ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg) **> Abandon and resolve**. Once abandoned, the conversation can't be reopened.<br>Agents with the `Administrator` role can set these handling preferences via the [Account Settings](../settings/account-settings.md):<br>- Automatically abandon conversations.<br>- Automatically delete abandoned conversations.<br>The selected action will start if the conversation did not get any customer reply after a set resolve duration. You can set filters based on these statuses. For more information, read the [Account Settings](../settings/account-settings.md) documentation. |
+| Resolved  | This conversation status indicates that a conversation is closed because the user's problem has been fixed.<br>The status can be changed to 'Resolved' once a resolution is provided to the customer. To mark a conversation as resolved, in the upper-right corner of the Conversation panel, click **Resolve**. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.<br>Agents having the `Administrator` role can activate the following settings in the  [Account Settings](../settings/account-settings.md).<br>- Automatically resolve conversations.<br>- Automatically delete conversations that were resolved.<br>                                                                                                                                                                                                        |
 
-Conversations can be selected and filtered by their statuses within the Conversation panel as follows:
-
-1. Click ![filter](../../assets/icons/filter.svg) to open the **Filter Conversations** menu.
-2. Select **Status** and your preferred type of filter to apply.
-3. Click **Apply filters** to confirm and activate the selected filter.
-
-### Open
-
-This conversation status indicates that a conversation is prepared for a handover to a human agent. The conversation can be opened by a user or reopened by a human agent.
-For more information, read the [Live Agent](https://docs.cognigy.com/insights/dashboard-live-agent/#opened) documentation.
-
-### Resolved
-
-This conversation status indicates that a conversation is closed because the user's problem has been fixed.
-The status can be changed to 'Resolved' once a resolution is provided to the customer.
-To mark a conversation as resolved, click **Resolve** in the top right corner of the Conversations panel.
-Once a conversation is marked as resolved, its state cannot be changed back to open or pending.
-
-Agents having the adminstrator role can activate following settings in his "Account Settings" as a preset for conversation handling.  
-
-- Automatically resolve or abandon conversations
-- Automatically delete conversations that were resolved
-
-The selected action will start if the conversation did not get any customer reply after a set resolve duration. You can set filters based on these statuses. For more information, read the [Account Settings](../settings/account-settings.md) documentation. 
-
-### Abandoned
-
-The status that indicates that a conversation is closed because the user left the conversation. It is configurable under the Account Settings section.
-To mark a conversation as abandon, click **Resolve** in the top right corner of the Conversations panel and select **Abandon and resolve** in the drop-down list.
-
-Agents having the adminstrator role can activate following settings in his "Account Settings" as a preset for conversation handling.  
-
-- Automatically resolve or abandon conversations
-- Automatically delete conversations that were resolved
-
-The selected action will start if the conversation did not get any customer reply after a set resolve duration. You can set filters based on these statuses. For more information, read the [Account Settings](../settings/account-settings.md) documentation. 
-
-### Pending
-
-This status reflects the quantity of conversations that were temporarily paused, awaiting a response from either the customer or a human agent.
-
-For more information about Live Agent's indicators, read the [Live Agent](https://docs.cognigy.com/insights/dashboard-live-agent/) documentation.
-
-To mark a conversation as pending, click **Resolve** in the top right corner of the Conversations panel and select **Mark as pending** in the drop-down list.
-
-### Snoozed
-
-Indicates the number of conversations that were temporarily suspended until a time trigger or customer response trigger was activated.
-
-This conversation status is applied when you need to wait for a specific period or require a reply from the customer to continue the conversation.
-In a conversation workflow, it indicates that the issue will be set aside for now, and the status will change to Open when a time trigger or customer response trigger was activated.
-
-For more information, read the [Live Agent](https://docs.cognigy.com/insights/dashboard-live-agent/) documentation.
+Conversations can be [selected and filtered by their statuses](filter-and-sort.md) within the Conversation panel.
 
 ## Conversation Assignment Statuses 
 
-When you have selected an Inbox you will see the corresponding conversations assigned to this Inbox, listed in following groups: 
+When you have selected an Inbox, you will see the corresponding conversations assigned to this Inbox, listed in following groups: 
 
-- [Mine](#mine)
 - [Unassigned](#unassigned)
 - [Assigned](#assigned)
-- [All](#show-all-conversations-inbox-settings)
-
-To change Assignment statuses, do the following:
-
-1. Click the checkbox on the left side next to a conversation.
-2. To assign a conversation to a human Agent, click the **Assign Agent** icon and select yourself or one of the available Agents in a drop-down list. The conversation will be assigned to the selected Agent.
-3. To **Resolve** or **Snooze until next reply** a conversation, click the **Change status** icon and select the required option.
-4. To assign a label to the selected conversation, click the **Assign Labels** icon and select one or more available labels. Labels improve the overview of conversations for the human Agent.
 
 For more information, read the [Assign Conversations](assign-conversations.md) documentation.
 
-### Mine 
-
-To see all conversations assigned to you, click on tab **Mine**.
-
 ### Unassigned
 
-Click on tab **Unassigned**, to see the conversations, which have not been assigned currently to an Agent. You can assign them manually or these conversations will be assigned rule based automatically when automatically assignment is enabled in the [Account Settings](../settings/account-settings.md) by an adminsitrator.  
+Click on tab **Unassigned**, to see the conversations, which have not been assigned currently to an Agent. You can assign them manually, or these conversations will be assigned rule based automatically when automatically assignment is enabled in the [Account Settings](../settings/account-settings.md) by an administrator.  
 
 ### Assigned
-You can assign conversations to a human Agent manually or incomng conversations will be assigned rule based automatically when automatically assignment is enabled in the [Account Settings](../settings/account-settings.md) by an adminsitrator.  
 
-### Show All Conversations: Inbox Settings
-
-By default, users having the Agent role cannot see the **All** tab for all conversations. However, for administrators there is a setting, editable in the **Inboxes** settings for every Inbox, allowing Agents to see all conversations in the selected Inbox. When enabled, the Agent can see all conversations, including those from other Agents. Otherwise, access will be restricted to his assigned Inboxes only. For more information, read the [Configure Agent Access to all Inbox Conversations](../settings/inboxes.md#configure-agent-access-to-all-inbox-conversations).
-
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-workflow-13.png" width="100%" alt="" />
-  <figcaption></figcaption>
-</figure>
+You can assign conversations to a human Agent manually or incoming conversations will be assigned rule based automatically when automatically assignment is enabled in the [Account Settings](../settings/account-settings.md) by an administrator.
 
 ## Conversation Details 
 
@@ -165,18 +86,18 @@ The conversation details include the following items:
 
 Related to a conversation in Live Agent user profile details will be displayed in the conversation details section. The following table lists all user items which can be edited and stored as meta data.
 
-| User Profile data     | Description                                           |
-|-----------------------|-------------------------------------------------------|
-| Email Address         | User's email address.                                 |
-| First name            | User's first name .                                   |
-| Last name             | User's last name.                                     |
-| Age                   | User's age.                                           |
-| Birthday              | User's birthday.                                      |
-| Gender                | User's gender (male, female,...).                     |
-| Location              | User's location.                                      | 
-| Profile Picture       | When available, the URL address of a users pricture.  |
-| Accepted GDPR         | User accepted European privacy law: Yes/No            |
-| Goals                 | The users intention or task.                          |
+| User Profile Data     | Description                                          |
+|-----------------------|------------------------------------------------------|
+| Email Address         | User's email address.                                |
+| First Name            | User's first name.                                   |
+| Last Name             | User's last name.                                    |
+| Age                   | User's age.                                          |
+| Birthday              | User's birthday.                                     |
+| Gender                | User's gender.                                       |
+| Location              | User's location.                                     | 
+| Profile Picture       | When available, the URL address of a user's picture. |
+| Accepted GDPR         | User accepted European privacy law: Yes/No           |
+| Goals                 | The user's intention or task.                        |
 
 To edit profile data click ![edit](../../assets/icons/edit.svg), enter data and confirm with **Submit**. 
 
@@ -187,7 +108,7 @@ For more information of these details, read the [Assign Conversations](assign-co
 
 ### Conversation Information
 
-When a conversation is selected conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
+When a conversation is selected, conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
 
 To find the **Conversation Information**, proceed as follows:
 
