@@ -31,7 +31,7 @@ or if you want to modify the configuration of an existing one, you can add a cus
 
 Before adding a vendor to the Voice Gateway, you need to create it.
 To do this, use the [custom-speech-example](https://github.com/Cognigy/custom-speech-example/tree/main) template on GitHub.
-Using the same template, you can customize an existing vendor, such as Google.
+Using the same template, you can customize vendors that are provided in it as examples, such as Google, AssemblyAI, and Vosk, or create a new one.
 After you have created the custom provider, deploy it on a server,
 for example, in the AWS Cloud, then copy the address of the custom provider for use in the Voice Gateway.
 
