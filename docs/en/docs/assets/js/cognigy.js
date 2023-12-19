@@ -21,8 +21,13 @@ document$.subscribe(() => {
         case window.location.href.indexOf("https://docs.cognigy.com/ai-copilot") !== -1:
             // url = "https://endpoint-app.cognigy.ai/fccd3f57c6495ee152b0e0b045f3e03df123f712a6afdc110f4920e8fd3d16a2";
             break;
-        default:
+            case window.location.href.indexOf("http://localhost:8000/ai") !== -1:
+        case window.location.href.indexOf("http://127.0.0.1:8000/ai") !== -1:
+        case window.location.href.indexOf("https://docs.cognigy.com/ai") !== -1:
             // url = "https://endpoint-app.cognigy.ai/99fee2f43f8436f9ebf4112b31cfc330d85f5c0d86ee26381974aa7bfbb50b16";
+            break;
+        default:
+            // url = "https://endpoint-app.cognigy.ai/0f2688271e9ee676cf1fd60ce656ab847780f8e596b534c991ec2ed1b6d52c70";
     }
     if(url !== ""){
         initWebchat(url, {
