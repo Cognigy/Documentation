@@ -14,9 +14,9 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 ## Supported Models
 
-{! _includes/release-notes/text-davinci-003-sunset.md !}
-
 The table below lists the LLMs supported by Cognigy.
+
+{! _includes/release-notes/text-davinci-003-sunset.md !}
 
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & Search Extract Output Node | Generate Node Output | Knowledge Search | Sentiment Analysis |
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|----------------------------------------------|----------------------|------------------|--------------------|
