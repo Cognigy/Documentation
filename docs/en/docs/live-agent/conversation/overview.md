@@ -77,12 +77,18 @@ To edit profile data click ![edit](../../assets/icons/edit.svg), enter data and 
 
 ### Conversation Actions
 
-Related to a conversation in Live Agent the human Agent can assign other Agents to the selected conversation, can assign a group of Agents defined in a team, can define the priority for handling the customers request in the conversation and can assign one or more labels to make the overview of the listed conversations easier to the agent at a glance.
-For more information of these details, read the [Assign Conversations](assign-conversations.md) documentation.
+Within a conversation in Live Agent, a human agent can do the following:
+
+- Assign other agents to the selected conversation.
+- Assign a group of agents defined in a team.
+- Define the priority for handling the customer's request in the conversation.
+- Assign one or more labels to make the overview of the listed conversations easier for the agent at a glance.
+
+For more information on these details, read the [Assign Conversations](assign-conversations.md) documentation.
 
 ### Conversation Information
 
-When a conversation is selected, conversation details will be displayed at the right side of the Live Agent interface. These details include the following information: 
+Conversation information includes the following details: 
 
 - **Cognigy Session ID** — a unique identifier associated with a session in the Cognigy platform. In the context of Cognigy.AI and the Live Agent interface, a session refers to the collection of user inputs and agent replies within a conversation.
 - **Channel Type** — a messaging platform through which users can interact with the virtual agent. Each channel is associated with one or more Cognigy Endpoints, allowing users to communicate with the virtual agent through various interfaces. Cognigy channels include platforms like Webchat, Facebook Messenger, Slack, WhatsApp, and other messaging or communication platforms.
