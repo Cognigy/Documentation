@@ -14,6 +14,8 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 ## Supported Models
 
+{! _includes/release-notes/text-davinci-003-sunset.md !}
+
 The table below lists the LLMs supported by Cognigy.
 
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & Search Extract Output Node | Generate Node Output | Knowledge Search | Sentiment Analysis |
@@ -36,7 +38,7 @@ The table below lists the LLMs supported by Cognigy.
 | **Google**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | text-bison-001 (Bard)                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| luminous-extended-control                                                                                                                  | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  | 
+| luminous-extended-control                                                                                                 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  | 
 
 ## Add a Model
 
