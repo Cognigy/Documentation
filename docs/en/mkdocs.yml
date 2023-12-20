@@ -537,7 +537,7 @@ nav:
     - live-agent/conversation/assign-conversations.md
     - live-agent/conversation/send-reply.md
     - live-agent/conversation/agent-inject.md
-    - live-agent/conversation/filter-and-sort.md
+    - live-agent/conversation/search-and-filter.md
     - live-agent/conversation/other-operations.md
     - Conversation Queue:
       - live-agent/conversation/conversation-queue.md

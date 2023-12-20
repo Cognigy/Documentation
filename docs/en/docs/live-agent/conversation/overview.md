@@ -34,7 +34,7 @@ Each conversation has statuses that are listed in the table.
 | Abandoned | The status indicates that a conversation is closed because the user left the conversation.<br>To mark a conversation as abandon, in the top right corner of the Conversation panel, click **Resolve** and select ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg) **> Abandon and resolve**. Once a conversation is marked as abandoned, its state cannot be changed back to open or pending.<br> Agents with the `Administrator` role can activate the following options in the [Account Settings](../settings/account-settings.md):<br>- Automatically abandon conversations.<br>- Automatically delete abandoned conversations.                                                                                                                               |
 | Resolved  | This status indicates that a conversation is closed because the user's problem has been fixed.<br> To mark a conversation as resolved, in the upper-right corner of the Conversation panel, click **Resolve**. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.<br>Agents with the `Administrator` role can activate the following settings in the [Account Settings](../settings/account-settings.md).<br>- Automatically resolve conversations.<br>- Automatically delete conversations that were resolved.<br>                                                                                                                                                                                                                       |
 
-Conversations can be [selected and filtered by their statuses](filter-and-sort.md) within the Conversation panel.
+Conversations can be [selected and filtered by their statuses](search-and-filter.md) within the Conversation panel.
 
 ## Conversation Assignment Statuses 
 
@@ -126,6 +126,6 @@ To open a conversation in Live Agent, follow these steps:
 
 - [Assign Conversations](assign-conversations.md)
 - [Send Replies](send-reply.md)
-- [Filter and Sort](filter-and-sort.md)
+- [Filter and Sort](search-and-filter.md)
 - [Other Operations](other-operations.md)
 - [Agent Inject](agent-inject.md)

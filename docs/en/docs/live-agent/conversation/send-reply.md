@@ -177,6 +177,8 @@ To send a reply to another human agent, follow these steps:
 The second agent addressed in the private note will receive a notification in their account.
 Subsequent replies by the second agent will be visible on the **Private Note** tab.
 
+You can find all conversations where other agents mentioned you. To do so, use the **@Mentions** option at the top of the Inboxes list.
+
 ### Delete a Private Note
 
 To delete a private note you have already sent, follow these steps:

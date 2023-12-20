@@ -1,6 +1,6 @@
 ---
-title: "Filter and Sort Conversations"
-slug: "filter-and-sort"
+title: "Search and Filter Conversations"
+slug: "search-and-filter"
 description: "In Live Agent, human agents can easily search, filter, and organize conversations. The agents can find messages by entering keywords, apply filters for status, assignee name, and team name, and sort conversations by last activity, creation date, or priority."
 hidden: false
 ---
@@ -22,6 +22,14 @@ To search for messages in conversations, do the following:
 4. At the top of the **Conversations** list next to the magnifying glass icon click the **search for messages in conversations** field.
 5. Enter the message keywords in that field, for example, keywords describing a specific customer request. As soon as you have entered a search keyword, search process starts and a list of search results will be displayed below the seacrh field.
 6. Select the conversation in the search result list you want to inspect. The conversation will be opened and displayd on the right hand side of the window including the conversation details. 
+
+### Search for Conversations where you were Mentioned
+
+You can find all conversations where other agents mentioned you. To do so, follow these steps:
+
+1. Go to Live Agent.
+2. On the left side of the screen, select **Conversations**.
+3. At the top of the **Inboxes** list, click **@Mentions**.
 
 ## Filter Conversations
 
