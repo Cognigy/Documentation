@@ -9,7 +9,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/92b8453-EP_Facebook_messenger.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Facebook Messenger** channel by using our Messenger Endpoint integration. 
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Facebook (Meta) Messenger** channel by using our Messenger Endpoint integration. 
 
 ## Generic Endpoint Settings
 

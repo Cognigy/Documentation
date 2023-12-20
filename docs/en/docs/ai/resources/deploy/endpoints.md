@@ -5,7 +5,7 @@ hidden: false
 ---
 # Endpoints
 
-_Endpoints_ are utilized to connect external channels, such as Facebook Messenger, Slack, Alexa, and many others, to specific [Flows](../build/flows.md). They convert channel-specific input and output, including images, galleries, and voice, to the standardized Input object. This approach enables the development of a Cognigy Flow only once, following which it can be deployed to various channels by configuring Endpoints.
+_Endpoints_ are utilized to connect external channels, such as Facebook (Meta) Messenger, Slack, Alexa, and many others, to specific [Flows](../build/flows.md). They convert channel-specific input and output, including images, galleries, and voice, to the standardized Input object. This approach enables the development of a Cognigy Flow only once, following which it can be deployed to various channels by configuring Endpoints.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/endpoints-screen.png" width="100%" />
