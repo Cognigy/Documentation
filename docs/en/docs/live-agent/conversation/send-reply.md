@@ -7,8 +7,6 @@ hidden: false
 
 # Send Replies
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
-
 Within a conversation, as a human agent, you can send a reply to the following actors:
 
 - [end user](#send-a-reply-to-a-user)
@@ -37,9 +35,9 @@ Human agents can access a range of reply options through the following buttons:
 |------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
 | ![emoji](../../assets/icons/emoji.svg)               | The **Show emoji selector** button allows a human agent to select and include an Emoji in the message. |
 | ![attach-files](../../assets/icons/attach-files.svg) | The **Attach files** button allows a human agent to select and include attachments in the message.     |
-| ![request-file](../../assets/icons/request-file.svg) | The **Request file** button allows a human agent to request a file from the customer.                  |
-| ![record-audio](../../assets/icons/record-audio.svg) | The **Record audio** button allows a human agent to send voice messages to the customer.               |
-| ![insert-link](../../assets/icons/insert-link.svg)   | The **Insert link** button allows a human agent to send hyperlinked text to the customer.              |
+| ![request-file](../../assets/icons/request-file.svg) | The **Request file** button allows a human agent to request a file from the end user.                  |
+| ![record-audio](../../assets/icons/record-audio.svg) | The **Record audio** button allows a human agent to send voice messages to the end user.               |
+| ![insert-link](../../assets/icons/insert-link.svg)   | The **Insert link** button allows a human agent to send hyperlinked text to the end user.              |
 
 #### Request a File Upload
 
@@ -53,9 +51,9 @@ File requirements:
 To request a file, follow these steps:
 
 1. At the bottom of the **Reply to User** section, click ![request-file](../../assets/icons/request-file.svg). A window for the file request appears and prompts you to confirm.
-2. Click **Send** to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
+2. Click **Send** to confirm that you want to send the file request to the end user to enable the file upload. A message should appear in the chat indicating that the file has been requested.
 
-The customer will see a button in the chat to open a file upload dialog.
+The end user will see a button in the chat to open a file upload dialog.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
@@ -104,9 +102,9 @@ There is a list of available variables:
 | `conversation.id`       | The ID of the current conversation.                                                                                                                |
 | `contact.id`            | The ID belonging to a user who creates a conversation.                                                                                             |
 | `contact.id`            | The user ID belonging to a user who creates a conversation.                                                                                        |
-| `contact.name`          | The user's first and last names. If both are not specified in the profile, the default value `customer` will be used.                              |
-| `contact.first_name`    | The user's first name. If it is not specified in the profile, the last name will be used. Otherwise, the default value `customer` will be applied. |
-| `contact.last_name`     | The user's last name. If it is not specified in the profile, the first name will be used. Otherwise, the default value `customer` will be applied. |
+| `contact.name`          | The user's first and last names. If both are not specified in the profile, the default value `end user` will be used.                              |
+| `contact.first_name`    | The user's first name. If it is not specified in the profile, the last name will be used. Otherwise, the default value `end user` will be applied. |
+| `contact.last_name`     | The user's last name. If it is not specified in the profile, the first name will be used. Otherwise, the default value `end user` will be applied. |
 | `contact.email`         | The user's email address.                                                                                                                          |
 | `contact.age`           | The user's age.                                                                                                                                    |
 | `contact.gender`        | The user's gender.                                                                                                                                 |
@@ -137,10 +135,10 @@ To include a [canned response](../settings/canned-responses.md) as a reply to th
 1. In the **Reply to User** or **Reply to Bot** sections, type `/`. A list of available canned responses will be displayed. 
 2. Select the desired canned response from the list.
 
-The selected canned response will be inserted into your reply, allowing you to easily include pre-written messages in your conversation.
+The selected canned response will be inserted into your reply, allowing you to easily include prewritten messages in your conversation.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="100%" alt="Live Agent Canned Responses" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-14.png" width="80%" alt="Live Agent Canned Responses" />
   <figcaption>Send Canned Response</figcaption>
 </figure>
 
@@ -150,7 +148,7 @@ The selected canned response will be inserted into your reply, allowing you to e
 
 You can create a text including [variables](#send-a-response-with-variables) for [canned responses](../settings/canned-responses.md).
 
-A canned response with variables is called the same way as a [simple canned response](#quick-reply-with-canned-response), by using the symbol `/`.
+A canned response with variables is called the same way as a [simple canned response](#advanced-quick-reply), by using the symbol `/`.
 When you select the canned response, variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
@@ -163,26 +161,27 @@ Note that the **Reply to bot** tab, through which interaction with the bot occur
 
 ## Send a Reply to Another Human Agent
 
-As a human agent, you can discuss the customer's conversation with another agent if you need additional clarification or assistance.
+As a human agent, you can discuss the end user's conversation with another agent if you need additional clarification or assistance.
 
 To send a reply to another human agent, follow these steps:
 
 1. On the Private Note tab, type `@`. All agents who have been added to the team will be listed.
 2. Select an Agent and type in a message to consult with the selected Agent.
-3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
+3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the end user but only to you and your team.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="80%" alt="Live Agent Private Message" />
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
   <figcaption>Private Message with Agent</figcaption>
 </figure>
 
-The second Agent addressed in the private note will receive a notification in his account. Replies sent by the second Agent will be visible in the Private Note window.
+The second agent addressed in the private note will receive a notification in their account.
+Subsequent replies by the second agent will be visible on the **Private Note** tab.
 
 ### Delete a Private Note
 
-To delete the private note you have already sent, follow these steps:
+To delete a private note you have already sent, follow these steps:
 
-1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
+1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message.
 2. Select **Delete**. The private note will be deleted.
 
 ## More Information

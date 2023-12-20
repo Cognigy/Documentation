@@ -39,6 +39,6 @@ Click ![clear conversation history](../../assets/icons/clear-conversation-histor
 ## Enable Agent Masking in a chat
 
 When the end user should not see a name and an image of the human agent in the chat the **Agent masking** option can be enabled in the Account Settings by your administrator.
-Activating the **Enable Agent masking** setting masks all Agents personal information, such as name, email, and profile images. For example, the Agent name `Max Mustermann` would turn into `Agent x4gH5tZ`. Only the Agent himself can see the clear name himself. No one in your organization and of course, no customer can connect the arbitrary masked name with a real human Agent's name.
+Activating the **Enable Agent masking** setting masks all Agents personal information, such as name, email, and profile images. For example, the Agent name `Max Mustermann` would turn into `Agent x4gH5tZ`. Only the Agent himself can see the clear name himself. No one in your organization and of course, no customer can connect the arbitrary masked name with a real human agent's name.
 
 For more information, read the [Account Settings](../settings/account-settings.md) documentation.

@@ -9,7 +9,7 @@ hidden: false
 ## Live Agent
 
 ### How to remove a user?
-Removing a user (human Agent) from Live Agent can be done from the Cognigy.AI [Members page](../ai/resources/manage/members.md). The `liveAgentAdmin`/`liveAgentAgent` roles need to be removed, and this will prevent the human Agent from logging into Live Agent. This can also be achieved by deleting the user from Cognigy.AI.
+Removing a user (human agent) from Live Agent can be done from the Cognigy.AI [Members page](../ai/resources/manage/members.md). The `liveAgentAdmin`/`liveAgentAgent` roles need to be removed, and this will prevent the human agent from logging into Live Agent. This can also be achieved by deleting the user from Cognigy.AI.
 
 Head over to [Cognigy.AI Access Control](../ai/tools/user-menu/access-control.md) for more information.
 
