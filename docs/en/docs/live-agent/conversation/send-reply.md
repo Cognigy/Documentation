@@ -1,74 +1,81 @@
 ---
-title: "Send Reply"
-slug: "send-reply"
-description: ""
+title: "Send Replies"
+slug: "send-replies"
+description: "Within a Live Agent conversation, as a human agent, you can send replies to the end user, the virtual agent, and another human agent."
 hidden: false
 ---
 
-# Send Responses
+# Send Replies
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../release-notes/4.59.md)
 
-To respond to a user in a conversation, type your message in the **Reply** field and click **Send**.
+Within a conversation, as a human agent, you can send a reply to the following actors:
 
-For quick reply, you can use canned responses, variables, or a combination of both.
+- [end user](#send-a-reply-to-a-user)
+- [virtual agent](#send-a-reply-to-a-vitual-agent)
+- [another human agent](#send-a-reply-to-another-human-agent) 
+
+<figure>
+<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="80%" alt="Live Agent Conversations Reply" />
+  <figcaption>The Reply Section</figcaption>
+</figure>
+
+## Send a Reply to a User
+
+To respond to a user in a conversation, type your message in the **Reply** section and click **Send**.
+
+For quick replies, you can use canned responses, variables, or a combination of both.
 
 By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button.
 The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
 
+### Reply Options
+
+Human agents can access a range of reply options through the following buttons:
+
+| Button                                               | Description                                                                                            |
+|------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| ![emoji](../../assets/icons/emoji.svg)               | The **Show emoji selector** button allows a human agent to select and include an Emoji in the message. |
+| ![attach-files](../../assets/icons/attach-files.svg) | The **Attach files** button allows a human agent to select and include attachments in the message.     |
+| ![request-file](../../assets/icons/request-file.svg) | The **Request file** button allows a human agent to request a file from the customer.                  |
+| ![record-audio](../../assets/icons/record-audio.svg) | The **Record audio** button allows a human agent to send voice messages to the customer.               |
+| ![insert-link](../../assets/icons/insert-link.svg)   | The **Insert link** button allows a human agent to send hyperlinked text to the customer.              |
+
+#### Request a File Upload
+
+By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+
+File requirements:
+
+- Supported file types are jpeg, jpg, png, docx, wav, ogg, pdf.
+- Maximum file size is 40 MB.
+
+To request a file, follow these steps:
+
+1. At the bottom of the **Reply to User** section, click ![request-file](../../assets/icons/request-file.svg). A window for the file request appears and prompts you to confirm.
+2. Click **Send** to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
+
+The customer will see a button in the chat to open a file upload dialog.
+
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="100%" alt="Live Agent Conversations Reply" />
-  <figcaption>Reply to a Message</figcaption>
+  <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
 </figure>
 
-## Audience to Assist Bot
-
-With the help of the Assist Bot,which is one of the Live Agent assitants, human Agents will be able to actively converse with a Virtual Agent in a separate conversation, including follow up questions from the bot etc.. The Assist Bot will assist the human Agent, for example, by actively finding out information regarding a product, the customer or his requests.
-This conversation is separate from the conversation between human agent and end user and will be shown in a separate panel on the right hand side. Human Agents will be able to forward messages from the Virtual Agent to the input field and will also be able to forward end user input to this separate conversation. One or several of such Assist Bots could be attached to an Inbox via Live Agent settings.
-
-For more information, read the [Assist Bot](assist-bot.md) documentation.
-
-### Audience to LA Agent Assist
-
-**LA Agent Assist** is one of the Live Agent assistants, which enables human Agents to actively converse with a Virtual Agent in a separate conversation. The LA Agent Assist will assist the human Agent, for example, by actively finding out information regarding a product, the customer or his requests. 
-This conversation is separate from the conversation between human agent and end user. 
-When this option is active, the human Agent can use a corresponding reply field, which allows direct communication with LA Agent Assist. Human Agents will be able to forward messages from the Agent Assist to the input field by hovering over the Agent Assist conversation area in the Live Agent conversation and to reply the messages to the end user. 
-You can use the Agent Assist in combination with other available assistants in Live Agent.
-
-For more information and how to activate LA Agent Assist for Live Agent, read the [LA Agent Assist Setup](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-setup/?h=agent+assist#set-up-a-flow) documentation:
-
-### Private Chat with Agents
-
-As a human Agent you can discuss the customer's conversation with another Agent, should you need some more clarification or assistance. This option is available beside the **Reply** tab, labeled **Private Note**.
-
-1. Type '@' in the Private Note window. All Agents who have been added to this Team will be listed.
-2. Select an Agent and type in a message to consult with the selected Agent.
-3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
+After uploading the file, it should be reflected in both the Webchat and the Live Agent interfaces, making the file ready for download on the Live Agent side.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="80%" alt="Live Agent Private Message" />
-  <figcaption>Private Message with Agent</figcaption>
+  <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="80%" alt="Live Agent request file upload webchat completed" />
 </figure>
 
-The second Agent addressed in the private note will receive a notification in his account. Replies sent by the second Agent will be visible in the Private Note window.
+The successful upload is displayed in Live Agent.
 
-#### Delete Private Note
+<figure>
+  <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
+</figure>
 
-To delete the private note which you have already sent, do the following: 
+### Simple Quick Reply
 
-1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
-2. Select **Delete**. The private note will be deleted.
-
-## Types of Responses
-
-In Live Agent conversations the human Agent can use different types of responses:
-
-- [Quick Reply](#quick-reply)
-- [Quick reply with Canned response](#quick-reply-with-canned-response)
-
-### Quick Reply
-
-For [Quick Reply](../../ai/endpoints/webchat/webchat-features.md#quick-replies) to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
+For a simple quick reply to a user in the conversation chat, you can use canned responses, variables, or a combination of both.
 
 #### Send a Response with Variables
 
@@ -109,7 +116,7 @@ There is a list of available variables:
 | `agent.name`            | The first and last names of the human agent.                                                                                                       |
 | `agent.first_name`      | The human agent's first name. If it is not specified in the profile, the last name will be used.                                                   |
 | `agent.last_name`       | The human agent's last name. If it is not specified in the profile, the first name will be used.                                                   |
-| `agent.email`           | The human agent's email address.                                                   |
+| `agent.email`           | The human agent's email address.                                                                                                                   |
 
 The same variables can be used multiple times within a single reply.
 
@@ -123,7 +130,7 @@ Our team will review it and provide a response as soon as possible.
 &lcub;&lcub;contact.first_name&rcub;&rcub;, please let us know if you have any additional questions or need further assistance.
 </code>
 
-### Quick reply with Canned response
+### Advanced Quick Reply
 
 To include a [canned response](../settings/canned-responses.md) as a reply to the user, follow these steps:
 
@@ -147,66 +154,38 @@ A canned response with variables is called the same way as a [simple canned resp
 When you select the canned response, variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
-### Reply actions and what you can add within a Chat
+## Send a Reply to a Vitual Agent
 
-Below is a list describing Conversation reply actions an Agent can take by clicking the following icons.
+For use cases where the virtual agent doesn't understand the user's reply,
+a human agent can reply on behalf of the bot to continue the conversation with the user.
+To implement this workflow, you need to enable [Agent Inject](agent-inject.md).
+Note that the **Reply to bot** tab, through which interaction with the bot occurs, also supports canned responses.
 
-| Icon                                                                                                  | Description                                                                                              |
-|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| <img src="{{config.site_url}}assets/icons/emoji.svg" width="50%" alt="" />                            | **Show emoji selector** - This button allows a human agent to select and include an Emoji in the message.|
-| <img src="{{config.site_url}}assets/icons/attach-files.svg" width="50%" alt="" />                     | **Attach files** - This button allows  a human agent to select and include attachments in the message.   |
-| <img src="{{config.site_url}}assets/icons/request-file.svg" width="50%" alt="" />                     | **Request file** - This button allows a human agent to request a file from the customer.                 |
-| <img src="{{config.site_url}}assets/icons/record-audio.svg" width="50%" alt="" />                     | **Record audio** - This button allows a human agent to send voice messages to the customer.              |
-| <img src="{{config.site_url}}assets/icons/insert-link.svg" width="50%" alt="" />                      | **Insert link** - This button allows a human agent to send hyperlinked text to the customer.             |
+## Send a Reply to Another Human Agent
 
-### Request File Upload
+As a human agent, you can discuss the customer's conversation with another agent if you need additional clarification or assistance.
 
-By default, human Agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+To send a reply to another human agent, follow these steps:
 
-File requirements:
-
-- Supported file types are jpeg, jpg, png, docx, wav, ogg, pdf.
-- Maximum file size is 40MB.
-
-To request a file, follow these steps:
-
-1. Click the **Request file** icon at the bottom of the Live Agent reply field. A window for the file request appears and prompts you to confirm.
-
-    <figure>
-    <img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-24.png" width="80%" alt="Live Agent request file upload" />
-      <figcaption>Request file upload</figcaption>
-    </figure>
-
-2. Click **Send**, to confirm that you want to send the file request to the customer to enable the file upload. A message should appear in the chat indicating that the file has been requested.
+1. On the Private Note tab, type `@`. All agents who have been added to the team will be listed.
+2. Select an Agent and type in a message to consult with the selected Agent.
+3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the customer but only to you and your team.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-26.png" width="80%" alt="Live Agent request file upload message" />
-  <figcaption>Request file upload message</figcaption>
+<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="80%" alt="Live Agent Private Message" />
+  <figcaption>Private Message with Agent</figcaption>
 </figure>
 
-The customer will see a button in the chat to open a file upload dialog.
+The second Agent addressed in the private note will receive a notification in his account. Replies sent by the second Agent will be visible in the Private Note window.
 
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-27.png" width="100%" alt="Live Agent request file upload webchat" />
-  <figcaption>Request file upload Webchat</figcaption>
-</figure>
+### Delete a Private Note
 
-After uploading the file, it should be reflected in the Webchat and the Live Agent and the file should be ready for download on the Live Agent side.
+To delete the private note you have already sent, follow these steps:
 
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-28.png" width="80%" alt="Live Agent request file upload webchat completed" />
-  <figcaption>Request file upload in Webchat completed</figcaption>
-</figure>
-
-The successful upload is displayed in Live Agent.
-
-<figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-29.png" width="100%" alt="Live Agent request file upload completed" />
-  <figcaption>Request file upload completed in Live Agent</figcaption>
-</figure>
+1. Click ![vertical-ellipsis](../../assets/icons/vertical-ellipsis.svg) icon beside the sent message. An options menu allows to **Delete** or **Copy** the private note.
+2. Select **Delete**. The private note will be deleted.
 
 ## More Information
 
-- [Assist Bot](assist-bot.md)
-- [LA Agent Assist Setup](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-setup/?h=agent+assist#set-up-a-flow)
-- [LA Agent Assist Workspace](../../agent-assist/overview.md)
+- [Conversation](overview.md)
+- [Conversation Assignment](assign-conversations.md)

@@ -67,7 +67,7 @@ For more information, read the [Agent Statuses](settings/agents.md) documentatio
 ## C
 
 _**Canned Responses**_
-: Pre-saved reply templates allow human Agents to respond to a conversation quickly.
+: Pre-saved reply templates allow human agents  to respond to a conversation quickly.
 Canned Response templates provide support for HTML formatting.
 For creating a Canned Response, just click on the Add Canned Response.
 Canned responses are used with the help of Short Codes. Agents can access canned responses while on a chat by typing `/` followed by the short code.

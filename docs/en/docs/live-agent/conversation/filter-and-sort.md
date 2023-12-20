@@ -1,13 +1,13 @@
 ---
-title: "Filter and Sort"
+title: "Filter and Sort Conversations"
 slug: "filter-and-sort"
 description: ""
 hidden: false
 ---
 
-# Search, Filter and Sort 
+# Search, Filter, and Sort Conversations
 
-## Search for Messages in Conversations 
+## Search Conversations 
 
 To search for messages in conversations, do the following:
 
@@ -18,7 +18,10 @@ To search for messages in conversations, do the following:
 5. Enter the message keywords in that field, for example, keywords describing a specific customer request. As soon as you have entered a search keyword, search process starts and a list of search results will be displayed below the seacrh field.
 6. Select the conversation in the search result list you want to inspect. The conversation will be opened and displayd on the right hand side of the window including the conversation details. 
 
-## Filter Conversations by Priority
+## Filter Conversations
+
+
+### Filter Conversations by Priority
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.62-blue.svg)](../../release-notes/4.62.md)
 

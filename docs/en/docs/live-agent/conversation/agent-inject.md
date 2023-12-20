@@ -7,14 +7,14 @@ hidden: false
 
 # Agent Inject
 
-The Agent Inject feature enable Live Agents to manage user interactions by allowing human Agents to send messages on behalf of users.
+The Agent Inject feature enable Live Agents to manage user interactions by allowing human agents  to send messages on behalf of users.
 In Live Agent the human Agent can help users when he is assigned to a user based on a Handover procedure, initiated by a Flow in Cognigy.AI. The human Agent can reply directly to the user, using the **Reply to User** field at the bottom of the Live Agent panel. The human Agent can chat with another Agent, not visible to the customer, using the **Private Note** field. 
 In addition to that the human Agent can also use another interaction in a conversation in case, the user is not able to send a required answer to a Virtual Agent Bot request in  a Cognigy.AI Flow, using the **Reply to Bot** field. This is called **Agent Inject** and allows the human agent to send the required response to the Virtual Agent Bot in behalf of the end user responding to the Bot by using the **Reply to Bot** field. When successful, the human Agent will mark the conversation as **Resolved** and the user will be returned back to his previous Flow conversation (Bot) in Cognigy.AI and the conversation can go on with the next step in the Flow. 
 
 **Agent Inject** 
 
 - can be activated in a **Handover to Agent** Node in Cognigy.AI.
-- improves human Agents message handling by using a separate **Reply to Bot** option in the Agent's reply field.
+- improves human agents  message handling by using a separate **Reply to Bot** option in the Agent's reply field.
 - enables handling of messages and sending them on behalf of users.
 
 !!! note
@@ -32,7 +32,7 @@ To activate and configure Agent Inject for Live Agent in the **Handover to Agent
 
 1. Open **Live Agent Settings** field in the **Handover to Agent** Node editor.
 2. Enter in **Live Agent Inbox Id** field the correct Inbox Id in Live Agent.
-3. Activate the toggle switch **Allow to reply as user via UI**. When enabled a tab **Reply to Bot** will be added to the human Agents Reply field allowing to reply as an end user in Live Agent.
+3. Activate the toggle switch **Allow to reply as user via UI**. When enabled a tab **Reply to Bot** will be added to the human agents  Reply field allowing to reply as an end user in Live Agent.
 
 The **Handover to Agent** Node initiates the handover to Live Agent depending on the Node editor settings.
 
@@ -52,7 +52,7 @@ To activate and configure **Agent Inject** for Live Agent in the [Question Node]
     - **At current AgentInject Entrypoint**: The user will continue the chat at the current AgentInject entrypoint. This option allows the Agent to guide the user to a specific part of the chat and then give control back to the user.
 
 5. Enter in **Live Agent Inbox Id** field the correct Inbox Id in Live Agent.
-6. Activate the toggle switch **Live Agent - Allow to reply as user via UI**. When enabled a tab **Reply to Bot** will be added to the human Agents Reply field allowing to reply as an end user in Live Agent.
+6. Activate the toggle switch **Live Agent - Allow to reply as user via UI**. When enabled a tab **Reply to Bot** will be added to the human agents  Reply field allowing to reply as an end user in Live Agent.
 7. In the **Handover Settings** field select one of the **Handover Output Destination** options. You can select **User, Agent, and Agent only**.  
 
 For more information, read the [On Resolve Options](https://docs.cognigy.com/ai/tools/agent-handover/?h=below+node#on-resolve-options).

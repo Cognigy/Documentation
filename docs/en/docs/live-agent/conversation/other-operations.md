@@ -27,10 +27,6 @@ To send a copy of the current conversation by email, proceed as follows:
 
 1. Click ![send transcript](../../assets/icons/send-transcript.svg) labeled **Send Transcript**, placed in the top right corner. A screen opens up which allows to sent a conversation transcript as email to Agents in the Team. The chat transcript can also be sent to the customer or another selected email address.
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-conversation-send-transcript.png" width="100%" alt="Live Agent Conversation Transcript Dialog" />
-  <figcaption>Conversation Transcript Dialog</figcaption>
-</figure>
 
 2. Select your desired option and click **Submit**. A message will be displayed `The chat transcript was sent successfully`. The chosen recipient will receive the chat transcript in his email inbox.
 
