@@ -17,7 +17,7 @@ To mute a conversation, do the following:
 2. On the left-side menu, select **Conversations**.
 3. In the **Inboxes** column, select an Inbox. 
 4. Select a conversation. 
-5. In the upper-right corner of the Conversation panel, click ![mute conversation](../../assets/icons/mute-conversation.svg). 
+5. In the upper-right corner of the Conversation page, click ![mute conversation](../../assets/icons/mute-conversation.svg). 
 
 No audio messages can then be sent or received in this chat.
 
@@ -29,7 +29,7 @@ To unmute a conversation, do the following:
 2. On the left-side menu, select **Conversations**.
 3. In the **Inboxes** column, select an Inbox.
 4. Select a conversation.
-5. In the upper-right corner of the Conversation panel, click ![unmute conversation](../../assets/icons/unmute-conversation.svg).
+5. In the upper-right corner of the Conversation page, click ![unmute conversation](../../assets/icons/unmute-conversation.svg).
 
 Audio messages can then be sent or received again in this chat. 
 
@@ -41,7 +41,7 @@ To send a copy of the current conversation by email, do the following:
 2. On the left-side menu, select **Conversations**.
 3. In the **Inboxes** column, select an Inbox.
 4. Select a conversation.
-5. In the upper-right corner of the Conversation panel, click ![send transcript](../../assets/icons/send-transcript.svg). A screen opens up which allows to send a conversation transcript as email to human agents in a team. The chat transcript can also be sent to the customer or another selected email address.
+5. In the upper-right corner of the Conversation page, click ![send transcript](../../assets/icons/send-transcript.svg). A screen opens up which allows to send a conversation transcript as email to human agents in a team. The chat transcript can also be sent to the customer or another selected email address.
 6. Select your desired option and click **Submit**. 
 
 7. A message will be displayed `The chat transcript was sent successfully`. The chosen recipient will receive the chat transcript in his email inbox.
@@ -56,7 +56,7 @@ To send a copy of the current conversation by email, do the following:
 2. On the left-side menu, select **Conversations**.
 3. In the **Inboxes** column, select an Inbox.
 4. Select a conversation.
-5. In the upper-right corner of the Conversation panel, click ![clear conversation history](../../assets/icons/clear-conversation-history.svg).
+5. In the upper-right corner of the Conversation page, click ![clear conversation history](../../assets/icons/clear-conversation-history.svg).
 
 The current selected conversation history will be deleted.
 
