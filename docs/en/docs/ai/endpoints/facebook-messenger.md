@@ -1,15 +1,15 @@
 ---
- title: "Facebook Messenger" 
+ title: "Facebook (Meta) Messenger" 
  slug: "facebook-messenger" 
  hidden: false 
 ---
-# Facebook Messenger
+# Facebook (Meta) Messenger
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/92b8453-EP_Facebook_messenger.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Facebook Messenger** channel by using our Messenger Endpoint integration. 
+Within our **Cognigy.AI** platform you're able to connect your Cognigy resources to your **Facebook (Meta) Messenger** channel by using our Messenger Endpoint integration. 
 
 ## Generic Endpoint Settings
 
@@ -31,29 +31,29 @@ Find out about the generic endpoint settings available with this endpoint on the
 
 <div class="divider"></div>
 
-## Facebook Page Setup
+## Facebook (Meta) Page Setup
 
 This dropdown menu is where your Cognigy.AI is provided with the credentials to access your Facebook Messenger App.
 
 ### Page Access Token
 
-The page access token is provided by Facebook as an authentication variable to allow communication with your page.
+The page access token is provided by Facebook (Meta) as an authentication variable to allow communication with your page.
 
 ### App ID
 
-This value is a unique App ID used by Facebook to identify you app.
+This value is a unique App ID used by Facebook (Meta) to identify you app.
 
 ### App Secret
 
-Your Facebook app's Secret that is a randomly generated value from Facebook. The value of this field must be the SECRET associated with the Page access token and App ID entered the previous fields.
+Your Facebook (Meta) app's Secret that is a randomly generated value from Facebook (Meta). The value of this field must be the SECRET associated with the Page access token and App ID entered the previous fields.
 
 !!! note "Help Center"
     For more information on how to configure the **Page Access Token**, **App ID** an   **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint#2-2-add-the-messenger-product-0-6).
 
-## Facebook Profiles
+## Facebook (Meta) Profiles
 
-In your Facebook Endpoint, you will notice a section called **Facebook Profiles**.
-Here you can enable or disable several settings regarding how to handle contact profiles for the Facebook Endpoint.
+In your Facebook (Meta) Endpoint, you will notice a section called **Facebook Profiles**.
+Here you can enable or disable several settings regarding how to handle contact profiles for the Facebook (Meta) Endpoint.
 
 ### Request Profile Data
 
@@ -135,7 +135,7 @@ Here you can configure whether typing indicators should be used and how many mil
 
 ## More Information
 
-* [HelpCenter: Facebook Messenger Intro](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
-* [HelpCenter: Facebook Messenger Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)
-* [HelpCenter: Facebook Messenger Use Facebook Handover ](https://support.cognigy.com/hc/en-us/articles/360016021919-Facebook-Messenger-Use-Facebook-Handover)
-* [HelpCenter: Facebook Messenger Facebook Tools](https://support.cognigy.com/hc/en-us/articles/360015980780-Facebook-Messenger-Facebook-Tools)
+* [HelpCenter: Facebook (Meta) Messenger Intro](https://support.cognigy.com/hc/en-us/articles/360015980560-Facebook-Messenger-Intro)
+* [HelpCenter: Facebook (Meta) Messenger Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360015980660-Facebook-Messenger-Deploy-an-Endpoint)
+* [HelpCenter: Use Facebook (Meta) Handover ](https://support.cognigy.com/hc/en-us/articles/360016021919-Facebook-Messenger-Use-Facebook-Handover)
+* [HelpCenter: Facebook (Meta) Messenger Facebook Tools](https://support.cognigy.com/hc/en-us/articles/360015980780-Facebook-Messenger-Facebook-Tools)

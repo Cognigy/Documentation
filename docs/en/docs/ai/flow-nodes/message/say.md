@@ -388,7 +388,7 @@ For further details see the [Amazon Alexa Documentation](https://developer.amazo
 
 Defines Templates that can be displayed in a special way in the Facebook Messenger Channel.
 
-The following Facebook Messenger Templates are available:
+The following Facebook (Meta) Messenger Templates are available:
 
 - Text & Quick Replies
 - Buttons
@@ -426,7 +426,7 @@ The following Facebook Messenger Templates are available:
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/26ca2e8-webchat.jpg" width="100%" />
 </figure>
 
-The Webchat Channel features the configuration options of our Facebook integration.
+The Webchat Channel features the configuration options of our Facebook (Meta) integration.
 
 As the output format is the same, you can configure the Webchat Channel to use your output from the Facebook tab or manually override it for Webchat-specific customization.
 

@@ -84,7 +84,7 @@ You can reset local filters by clicking the "Reset" button. It will appear as so
 
 ## Inspect conversation 
 
-- To inspect a specific transcript, click on a transcript conversation item in the list, and the transcript details will be displayed on the right-hand side in a conversation panel.
+- To inspect a specific transcript, click on a transcript conversation item in the list, and the transcript details will be displayed on the right-hand side of the Conversation page.
 
 - Use the scroll bar to navigate through the conversation. 
 
@@ -93,7 +93,7 @@ You can reset local filters by clicking the "Reset" button. It will appear as so
   <figcaption>Transcript Explorer: selected transcript displayed for research on the right-hand side</figcaption>
 </figure>
 
-When you click on the "profile" icon on the left top side of the conversation panel user's **conversation details** and the user **contact profile details** will be displayed. 
+When you click on the "profile" icon on the left top side of the Conversation page user's **conversation details** and the user **contact profile details** will be displayed. 
  
 **Conversation details**:
 
@@ -141,7 +141,9 @@ provide additional information to conversation messages (if any), such as:
 </figure>
 
 ### Open Flow 
-To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow** option when right-clicking on a specific message displayed in the conversation panel.
+To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration,
+the Transcript Explorer provides the context menu **Open Flow** option
+when right-clicking on a specific message displayed on the Conversation page.
 Clicking the button leads you to the related Flow in Cognigy.AI.
 
 !!! note
@@ -152,7 +154,7 @@ Using the "Search" field, you can enter keywords to find the messages in which t
 
 - Enter a keyword in the search field, for example, "appointment". All transcript conversations which include the keyword will now be displayed. 
 - Click on any transcript conversation in the list.
-- The clicked transcript conversation, containing the search string, will be displayed in a conversation panel. 
+- The clicked transcript conversation, containing the search string, will be displayed on the Conversation page. 
 The message that contains the search text has a gray background.
   Also, the matching text within the message itself is highlighted yellow.
 
@@ -168,7 +170,7 @@ With the usage of the Transcript Explorer, Cognigy offers you the possibility to
 
 To switch from the Transcript Explorer to the Message Explorer, proceed as follows:
 
-- Select a transcript message in the Transcript Explorer list. On the right side of the screen, the conversation panel appears and displays the conversation flow. 
+- Select a transcript message in the Transcript Explorer list. On the right side of the screen, the Conversation page appears and displays the conversation flow. 
 
 - Click now on an individual message to analyze the specific conversation situation.
 
