@@ -143,7 +143,7 @@ This section details the data types that exist within the OData Collections that
   * [LiveAgentEscalations](#liveagentescalations)
 
 
-### Entity relationship diagram
+### Entity Relationship Diagram
 
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/tools/images/insights-odata-entities.drawio.svg" width="100%" /> 
