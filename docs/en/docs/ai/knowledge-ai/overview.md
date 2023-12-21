@@ -56,7 +56,7 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
 
 6. Click **Next**. 
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 
-8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**.
+8. In the **Upload Knowledge** step, select the **Cognigy CTXT** type and upload the saved file, then click **Next**. If you want to upload a different file from the one mentioned at step 7, note that the file name can have a maximum length of 200 symbols, must not start or end with spaces, and cannot contain the following characters: `/ \ : * ? " < > | ¥`.
 9. _(Optional)_ In the **Configure Answer Extraction Model** section, select the additional model if you want to extract key points and output the search result as text or adaptive card. Click **Configure** and enter model credentials.
 10. _(Optional)_ When the additional model is configured, click **Create Flow**. A Flow with the **Search Extract Output** Node will be created. 
 11. Click **Next**.  
