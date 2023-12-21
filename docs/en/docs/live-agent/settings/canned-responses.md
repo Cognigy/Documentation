@@ -56,4 +56,4 @@ The canned responses will appear in the list on the Canned Responses page.
 
 ## Use a Canned Response
 
-To start using canned responses in the conversations, go to the [Send a Canned Response](../conversation/conversation-workflow.md#send-a-canned-response).
+To start using canned responses in the conversations, go to the [Send a Canned Response](../conversation/send-reply.md#advanced-quick-reply).

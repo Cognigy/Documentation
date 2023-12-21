@@ -121,4 +121,4 @@ To investigate a conversation or Inbox where an attachment was uploaded, follow 
 
 ## More Information
 
-- [Conversation Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/)
+- [Conversation Workflow](../conversation/overview.md)

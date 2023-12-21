@@ -65,4 +65,4 @@ The label will be deleted and no longer under the **Labels** section on the side
 
 ### Add a Label to a Conversation
 
-To start using Labels in Conversations, go to [Assign Labels](./../conversation/conversation-workflow.md#assign-labels).
+To start using Labels in Conversations, go to [Assign Labels](./../conversation/assign-conversations.md#assign-labels).

@@ -50,7 +50,7 @@ Head over to [Labels](settings/labels.md) for more information.
   <figcaption>Request File Upload Button</figcaption>
 </figure>
 
-Head over to [Conversations Workflow](../live-agent/conversation/conversation-workflow.md) for more information.
+Head over to [Conversations Workflow](../live-agent/conversation/overview.md) for more information.
 
 ### How to add Agents to an Inbox?
 Only users with `Administrator` roles can perform this action. 

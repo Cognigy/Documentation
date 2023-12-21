@@ -10,11 +10,10 @@ hidden: false
 Within a conversation, as a human agent, you can send a reply to the following actors:
 
 - [end user](#send-a-reply-to-a-user)
-- [virtual agent](#send-a-reply-to-a-vitual-agent)
 - [another human agent](#send-a-reply-to-another-human-agent) 
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/send-response.png" width="80%" alt="Live Agent Conversations Reply" />
+<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/reply-section.png" width="80%" alt="Live Agent Conversations Reply" />
   <figcaption>The Reply Section</figcaption>
 </figure>
 
@@ -152,13 +151,6 @@ A canned response with variables is called the same way as a [simple canned resp
 When you select the canned response, variables in the response will be replaced with values relevant to the current conversation.
 If any of the variables do not have values, you will receive a corresponding warning.
 
-## Send a Reply to a Vitual Agent
-
-For use cases where the virtual agent doesn't understand the user's reply,
-a human agent can reply on behalf of the bot to continue the conversation with the user.
-To implement this workflow, you need to enable [Agent Inject](agent-inject.md).
-Note that the **Reply to bot** tab, through which interaction with the bot occurs, also supports canned responses.
-
 ## Send a Reply to Another Human Agent
 
 As a human agent, you can discuss the end user's conversation with another agent if you need additional clarification or assistance.
@@ -170,7 +162,7 @@ To send a reply to another human agent, follow these steps:
 3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the end user but only to you and your team.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/images/LA-conversation-workflow-17.png" width="100%" alt="Live Agent Private Message" />
+<img class="image-center" src="{{config.site_url}}live-agent/conversations/images/private-message.png" width="100%" alt="Live Agent Private Message" />
   <figcaption>Private Message with Agent</figcaption>
 </figure>
 

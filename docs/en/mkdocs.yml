@@ -536,7 +536,6 @@ nav:
     - live-agent/conversation/overview.md
     - live-agent/conversation/assign-conversations.md
     - live-agent/conversation/send-reply.md
-    - live-agent/conversation/agent-inject.md
     - Conversation Queue:
       - live-agent/conversation/conversation-queue.md
     - Conversation Routing:

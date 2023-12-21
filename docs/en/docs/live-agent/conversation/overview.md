@@ -128,4 +128,3 @@ To open a conversation in Live Agent, follow these steps:
 - [Send Replies](send-reply.md)
 - [Filter and Sort](search-and-filter.md)
 - [Other Operations](other-operations.md)
-- [Agent Inject](agent-inject.md)

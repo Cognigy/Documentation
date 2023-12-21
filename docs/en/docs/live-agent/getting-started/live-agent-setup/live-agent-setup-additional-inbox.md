@@ -71,7 +71,7 @@ Your Flow is now configured for a Live Agent Handover.
 
 ## What's Next?
 
-- [Explore Conversation Workflow](../../../live-agent/conversation/conversation-workflow.md)
+- [Explore Conversation Workflow](../../../live-agent/conversation/overview.md)
 - [Configure Conversation Routing](../../conversation/conversation-routing/overview.md)
 - [Customize your Live Agent by changing the Account Settings](../../settings/overview.md)
     - [Group human agents in Teams](../../settings/teams.md)

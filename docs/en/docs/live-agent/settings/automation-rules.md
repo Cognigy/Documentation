@@ -120,5 +120,5 @@ To delete an automation rule, click **Delete** next to the desired Automation in
 ## More Information
 
 - [Settings](overview.md)
-- [Conversation Workflow](../conversation/conversation-workflow.md)
+- [Conversation Workflow](../conversation/overview.md)
 - [Conversation Routing](../conversation/conversation-routing/overview.md)

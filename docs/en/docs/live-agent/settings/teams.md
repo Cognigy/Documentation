@@ -69,4 +69,4 @@ The conversation will be assigned to the team.
 
 - [Agents](agents.md)
 - [Manual assignment](../conversation/conversation-routing/manual-mode.md#manual-assignment)
-- [Conversations Workflow](./../conversation/conversation-workflow.md#assign-agent)
+- [Conversation assignment](./../conversation/assign-conversations.md)
