@@ -45,7 +45,8 @@ When a conversation appears in the Live Agent status in the `Open` status, the c
 
 ## Conversation Details 
 
-When a conversation is selected conversation details will be displayed at the right side of the Live Agent interface. These details include the following **Conversation information**: 
+When a conversation is selected, conversation details will be displayed on the right side of the Live Agent interface.
+These details include the following conversation information: 
 
 - [User Profile Details](#user-profile-details)
 - [Conversation Actions](#conversation-actions)

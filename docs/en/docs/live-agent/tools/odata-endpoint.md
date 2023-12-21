@@ -1,8 +1,9 @@
 ---
- title: "Live Agent OData Endpoint" 
- slug: "live-agent-odata-endpoint" 
- hidden: false 
+title: "Live Agent OData Endpoint" 
+slug: "live-agent-odata-endpoint" 
+hidden: false 
 ---
+
 # OData Analytics Endpoint
 
 Live Agent exposes an OData v4 analytics Endpoint to retrieve analytics records. [OData](https://www.odata.org/), the best way to REST, is a powerful API framework. The OData Endpoints allows you to retrieve the most relevant data models from Live Agent by using GET requests. It covers all your enterprise analytics needs to make fine-grained queries in your spreadsheets or build rich dashboards for your bots with your favorite data visualization tool.
@@ -65,11 +66,11 @@ The current version of the OData Endpoint is `v1.0`. This Endpoint version is av
 
 - [Message](#message) (`/Message`)
 - [Conversation](#conversation) (`/Conversation`)
-- [User](#user) (`/User`)
-- [Label](#label) (`/Label`)
 - [Inbox](#inbox) (`/Inbox`)
+- [Label](#label) (`/Label`)
+- [User](#user) (`/User`)
 
-To see all the available OData models, you can ping the following Endpoint:
+To see all the available OData models, you can use the following Endpoint:
 `https://<hostname>/v1.0/odata/`
 
 The URL for accessing the V1.0 OData Endpoint is as follows:
@@ -79,14 +80,14 @@ The URL for accessing the V1.0 OData Endpoint is as follows:
 
 <div class="divider"></div>
 
-The Endpoint supports the following the OData Query Language operators:
+The Endpoint supports the following OData Query Language operators:
 
-- $filter
-- $select
-- $skip
-- $top
-- $orderby
-- $expand
+- `$filter`
+- `$select`
+- `$skip`
+- `$top`
+- `$orderby`
+- `$expand`
 
 ### Example Queries
 
@@ -250,7 +251,7 @@ When retrieving this data model, the Endpoint will return the following fields:
 | Field Name      | Description                                 | Type    | Example                     |
 |-----------------|---------------------------------------------|---------|-----------------------------|
 | id              | Unique Label ID                             | Number  | 1                           |
-| title           | Label Title                                 | String  | label-complain"             |
+| title           | Label Title                                 | String  | "label-complain"            |
 | description     | Label Description                           | String  | "labels used for complains" |
 | color           | Label Color                                 | String  | "red"                       |
 | show_on_sidebar | Allows The Label to Be Shown On The Sidebar | Boolean | true                        |

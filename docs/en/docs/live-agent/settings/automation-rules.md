@@ -72,7 +72,7 @@ To create an automation rule, follow these steps:
 5. In the **Description** field, enter a relevant description for the rule.
 6. From the **Event** list, select the desired event.
 7. In the **Conditions** section, set up a condition:
-    - **Left operand** — select a [condition type](#automation-condition-types).
+    - **Left operand** — select a [condition type](#conditions).
     - **Operator** — a comparison operator that checks whether the value of the left operand is `Equal to` or `Not Equal to` the value of the right operand.
     - **Right operand** — select values corresponding to condition types. For example, if you choose `Status` as a condition type, you can add multiple statuses, such as `Open`, `Pending`, `Resolved`.
 8. _(Optional)_ Add an additional condition by clicking **+ Add Condition**. Repeat the same steps as you did for the first condition and select one of the following operators:

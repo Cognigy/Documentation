@@ -52,7 +52,7 @@ To assign a priority to a conversation within Live Agent, do the following:
 5. From the **Priority** list, select a desired priority by scrolling or typing to search for a priority level, then click the intended level. 
 
 The priority will be assigned to the conversation.
-The matching priority level's icon will now be visible for the conversation in the Conversations list.
+The icon representing the matching priority level will now be visible next to the conversation in the Conversations list.
 
 ## Assign Labels 
 

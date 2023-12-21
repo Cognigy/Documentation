@@ -3,6 +3,7 @@ title: "Add another Inbox for your Project"
 slug: "live-agent-setup-additional-inbox" 
 hidden: false 
 ---
+
 # Add another Inbox for your Project
 
 You can create extra Inboxes in Live Agent and configure them for handover within your Flows.
@@ -63,7 +64,7 @@ To configure a Flow for a Handover to a Live Agent, follow these steps:
         <img src="{{config.site_url}}live-agent/images/Flow_handover_node_config.png" width="80%">
     </figure>
 
-2. Click the **Handover to Agent** Node, to open the Node Editor.
+2. Click the **Handover to Agent** Node to open the Node Editor.
 3. In the **Live Agent Settings** section, enter the Inbox Id of your new Live Agent Inbox.  
 4. Click **Save Node**.
 
