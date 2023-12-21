@@ -148,7 +148,7 @@ This section details the data types that exist within the OData Collections that
 <figure>
     <img class="image-center" src="{{config.site_url}}ai/tools/images/insights-odata-entities.drawio.svg" width="100%" /> 
     <figcaption>
-        This scheme describes the relationships between collection entities.
+        This scheme describes the relationships between the collection entities
     </figcaption>
 </figure>
 
