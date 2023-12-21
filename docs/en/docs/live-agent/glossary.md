@@ -67,7 +67,7 @@ For more information, read the [Agent Statuses](settings/agents.md) documentatio
 ## C
 
 _**Canned Responses**_
-: Pre-saved reply templates allow human Agents to respond to a conversation quickly.
+: Pre-saved reply templates allow human agents  to respond to a conversation quickly.
 Canned Response templates provide support for HTML formatting.
 For creating a Canned Response, just click on the Add Canned Response.
 Canned responses are used with the help of Short Codes. Agents can access canned responses while on a chat by typing `/` followed by the short code.
@@ -81,7 +81,7 @@ _**Conversation**_
 : Your chats with various customers are referred to as conversations in Live Agent.
 This includes all session messages, including the customer, bot or human agent responses.
 A Conversation is the communication channel opened between an Agent and a customer.
-For more information, read the [OData Analytics Endpoint](tools/odata-endpoint.md#conversation) and the [Conversation workflow](conversation/conversation-workflow.md) documentation.
+For more information, read the [OData Analytics Endpoint](tools/odata-endpoint.md#conversation) and the [Conversation workflow](conversation/overview.md) documentation.
 
 _**Conversation Routing**_
 : The process of directing customer or user inquiries to the right agent or team. It matches inquiries with agent skills, languages, and workload, and ensures efficient issue resolution. How you can assign an Agent to a Conversation is described in the [Conversation Routing](conversation/conversation-routing/overview.md) documentation.
@@ -91,7 +91,7 @@ _**Conversation Status**_
 Unassigned, Assigned, Pending, Snoozed, Open, Resolved and Abandoned.
 
 _**Conversation Workflow**_
-: A structured sequence of steps that guide a conversation, from initiation to conclusion. It outlines how interactions progress, often involving greeting, information gathering, responses, problem resolution, and closing. For more information, read the [Conversation Workflow](conversation/conversation-workflow.md) documentation.
+: A structured sequence of steps that guide a conversation, from initiation to conclusion. It outlines how interactions progress, often involving greeting, information gathering, responses, problem resolution, and closing. For more information, read the [Conversation Workflow](conversation/overview.md) documentation.
 
 ## H
 

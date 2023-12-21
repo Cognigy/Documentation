@@ -533,14 +533,17 @@ nav:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
   - Conversations:
-    - Workflow:
-      - live-agent/conversation/conversation-workflow.md
+    - live-agent/conversation/overview.md
+    - live-agent/conversation/assign-conversations.md
+    - live-agent/conversation/send-reply.md
     - Conversation Queue:
       - live-agent/conversation/conversation-queue.md
-    - Routing:
+    - Conversation Routing:
       - live-agent/conversation/conversation-routing/overview.md
       - live-agent/conversation/conversation-routing/manual-mode.md
       - live-agent/conversation/conversation-routing/automatic-mode.md
+    - live-agent/conversation/search-and-filter.md
+    - live-agent/conversation/other-operations.md
   - Assistants:
     - live-agent/assistants/overview.md
     - live-agent/assistants/la-ai-copilot.md
