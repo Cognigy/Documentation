@@ -46,7 +46,7 @@ Conditions:
 - Conversations are assigned to an agent, but the agent still needs to send the first reply.
 - The Conversation limit is set to 2 conversations per agent.
 - There is one online agent available.
-- 3 conversations with different [priorities](conversation-routing/automatic-mode.md#consider-conversation-parameters) are created:
+- 3 conversations with different [priorities](conversation-routing/automatic-mode.md#additional-automatic-assignment-parameters) are created:
     - Conversation 1 is Medium.
     - Conversation 2 is Low.
     - Conversation 3 is High.

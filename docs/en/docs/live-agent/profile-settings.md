@@ -69,7 +69,7 @@ To send messages in the [conversation chat](conversation/overview.md), you can s
 
 ## API Access Token
 
-The displayed Access Token serves as the authentication and authorization key for the  [Live Agent API](https://liveagent-trial.cognigy.ai/openapi). It contains information specific to a user, and the actions it enables are restricted by the user's [assigned role](roles.md).
+The displayed Access Token serves as the authentication and authorization key for the [Live Agent API](https://liveagent-trial.cognigy.ai/openapi). It contains information specific to a user, and the actions it enables are restricted by the user's [assigned role](roles.md).
 
 ## More Information
 

@@ -36,7 +36,7 @@ To create a label within Live Agent, do the following:
 The label will be created, appear under the **Labels** section on the sidebar, and will be available to [add to Conversations](#add-a-label-to-a-conversation).
 
 !!! tip
-    It is good practice to give meaningful names to labels, and to use chosen colors to easily identify visually which categories, or topics, a conversation belongs to.
+    It is good practice to assign meaningful names to labels and use selected colors to visually identify the categories or topics to which a conversation belongs.
 
 ### Edit a Label
 

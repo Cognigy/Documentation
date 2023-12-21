@@ -9,7 +9,7 @@ hidden: false
 When you create a new Agent in Cognigy.AI you are prompted to select an Endpoint. You can select, for example, **Cognigy Webchat** as a specific Endpoint to the Cognigy.AI platform. 
 For more information, see [Endpoints](https://docs.cognigy.com/ai/endpoints/overview/).
 
-In case, you want to integrate a Handover process in your Flow, you need to configure your Endpoint for Handover.
+If you want to integrate a Handover process in your Flow, you need to configure your Endpoint for Handover.
 
 ## Prerequisites
 
@@ -64,8 +64,6 @@ To configure your Live Agent manually, follow these steps:
 Your Live Agent has been configured. 
 
 ## Find an Account ID
-
-The Live Agent Inbox, you have created in a previous step for your project, is defined by an **Account ID**. 
 
 You can find the Account ID in the Live Agent URL of your Live Agent **Inbox**.
 

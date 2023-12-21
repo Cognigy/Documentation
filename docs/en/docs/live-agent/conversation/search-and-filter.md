@@ -19,9 +19,9 @@ To search for messages in conversations, do the following:
 1. Go to Live Agent.
 2. On the left side of the screen, select **Conversations**.
 3. From the **Inboxes** list, select an Inbox.
-4. At the top of the **Conversations** list next to the magnifying glass icon click the **search for messages in conversations** field.
-5. Enter the message keywords in that field, for example, keywords describing a specific customer request. As soon as you have entered a search keyword, search process starts and a list of search results will be displayed below the seacrh field.
-6. Select the conversation in the search result list you want to inspect. The conversation will be opened and displayd on the right hand side of the window including the conversation details. 
+4. At the top of the **Conversations** list next to the magnifying glass icon, click the **search for messages in conversations** field.
+5. Enter the message keywords in that field, for example, keywords describing a specific customer request. Once you enter a search keyword, the search process starts, and a list of search results will be displayed below the search field.
+6. Select the conversation in the search result list you want to inspect. The conversation will be opened and displayed on the right-hand side of the window including the conversation details. 
 
 ### Search for Conversations where you were Mentioned
 
