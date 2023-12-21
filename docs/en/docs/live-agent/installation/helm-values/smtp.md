@@ -1,8 +1,9 @@
 ---
- title: "SMTP" 
- slug: "smtp" 
- hidden: false 
+title: "SMTP" 
+slug: "smtp" 
+hidden: false 
 ---
+
 # SMTP
 
 SMTP needs to be configured for functionalities such as Agent notifications for new conversations, password resets, to verify new Agent accounts, etc.
@@ -35,25 +36,24 @@ Here is a sample of configurations for getting email functionality working for t
 
 For the following sender value, you could use either `email@yourdomain.com` or `BrandName <email@yourdomain.com>`
 
-| Name                          | Type   | Value | 
-|-------------------------------|--------|-------| 
+| Name                          | Type   | Value |
+|-------------------------------|--------|-------|
 | configmap.MAILER_SENDER_EMAIL | string | `""`  |
 
 Set the following variables based on your SMTP server configuration.
 
-| Name                    | Type   | Value | 
-|-------------------------|--------|-------| 
+| Name                    | Type   | Value |
+|-------------------------|--------|-------|
 | configmap.SMTP_ADDRESS  | string | `""`  |
 | configmap.SMTP_USERNAME | string | `""`  |
 | Password secret         | string | `""`  |
 
 ## No Authentication
 
-If your server does not need authentication, comment, or don't provide these values: SMTP_AUTHENTICATION.
-SMTP_USERNAME, SMTP_PASSWORD in the `values.yaml` file.
+If your server does not need authentication, comment, or don't provide these values: `SMTP AUTHENTICATION`, `SMTP_USERNAME`, `SMTP_PASSWORD` in the `values.yaml` file.
 
-| Name                                | Type    | Value                     | 
-|-------------------------------------|---------|---------------------------| 
+| Name                                | Type    | Value                     |
+|-------------------------------------|---------|---------------------------|
 | configmap.MAILER_SENDER_EMAIL       | string  | `"Your SMTP Username"`    |
 | configmap.SMTP_ADDRESS              | string  | `"smtp-mail.outlook.com"` |
 | configmap.SMTP_ENABLE_STARTTLS_AUTO | bool    | `true`                    |
@@ -62,7 +62,7 @@ SMTP_USERNAME, SMTP_PASSWORD in the `values.yaml` file.
 ## Amazon SES
 
 | Name                                | Type   | Value                                 | 
-|-------------------------------------|--------|---------------------------------------| 
+|-------------------------------------|--------|---------------------------------------|
 | configmap.SMTP_ADDRESS              | string | `"email-smtp.<region>.amazonaws.com"` |
 | configmap.SMTP_AUTHENTICATION       | string | `"plain"`                             |
 | configmap.SMTP_ENABLE_STARTTLS_AUTO | bool   | `true`                                |
@@ -74,8 +74,8 @@ SMTP_USERNAME, SMTP_PASSWORD in the `values.yaml` file.
 
 The sender and username must be the same as in Outlook.
 
-| Name                                | Type   | Value                     | 
-|-------------------------------------|--------|---------------------------| 
+| Name                                | Type   | Value                     |
+|-------------------------------------|--------|---------------------------|
 | configmap.MAILER_SENDER_EMAIL       | string | `"Your SMTP Username"`    |
 | configmap.SMTP_ADDRESS              | string | `"smtp-mail.outlook.com"` |
 | configmap.SMTP_AUTHENTICATION       | string | `"login"`                 |
@@ -87,8 +87,8 @@ The sender and username must be the same as in Outlook.
 
 ## SendGrid
 
-| Name                                | Type   | Value                       | 
-|-------------------------------------|--------|-----------------------------| 
+| Name                                | Type   | Value                       |
+|-------------------------------------|--------|-----------------------------|
 | configmap.SMTP_ADDRESS              | string | `"smtp.sendgrid.net"`       |
 | configmap.SMTP_AUTHENTICATION       | string | `"plain"`                   |
 | configmap.SMTP_DOMAIN               | string | `"<Your Verified Domain>"`  |
@@ -100,8 +100,8 @@ The sender and username must be the same as in Outlook.
 
 ## MailGun
 
-| Name                                | Type    | Value                                                 | 
-|-------------------------------------|---------|-------------------------------------------------------| 
+| Name                                | Type    | Value                                                 |
+|-------------------------------------|---------|-------------------------------------------------------|
 | configmap.SMTP_ADDRESS              | string  | `"smtp.mailgun.org"`                                  |
 | configmap.SMTP_AUTHENTICATION       | string  | `"plain"`                                             |
 | configmap.SMTP_DOMAIN               | string  | `"<Your Domain, this has to be verified in Mailgun>"` |
@@ -114,10 +114,10 @@ The sender and username must be the same as in Outlook.
 ## Mandrill
 If you would like to use Mailchimp to send your emails, use the following environment variables:
 
->Note: Mandrill is the transactional email service for Mailchimp. You need to enable transactional email and log in to mandrillapp.com.
+>Note: Mandrill is the transactional email service for Mailchimp. You need to enable transactional email and log in to `mandrillapp.com`.
 
-| Name                                | Type   | Value                                                                        | 
-|-------------------------------------|--------|------------------------------------------------------------------------------| 
+| Name                                | Type   | Value                                                                        |
+|-------------------------------------|--------|------------------------------------------------------------------------------|
 | configmap.SMTP_ADDRESS              | string | `"smtp.mandrillapp.com"`                                                     |
 | configmap.SMTP_AUTHENTICATION       | string | `"plain"`                                                                    |
 | configmap.SMTP_DOMAIN               | string | `"<Your Verified Domain in Mailchimp>"`                                      |
