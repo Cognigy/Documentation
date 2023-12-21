@@ -140,6 +140,17 @@ This section details the data types that exist within the OData Collections that
   * [Steps](#steps)
   * [ExecutedSteps](#executedsteps)
   * [Sessions](#sessions)
+  * [LiveAgentEscalations](#liveagentescalations)
+
+
+### Entity relationship diagram
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/tools/images/insights-odata-entities.drawio.svg" width="100%" /> 
+    <figcaption>
+        This scheme describes the relationships between collection entities.
+    </figcaption>
+</figure>
 
 ### Fields
 
