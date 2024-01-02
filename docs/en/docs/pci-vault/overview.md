@@ -7,35 +7,14 @@ hidden: false
 
 # PCI Vault
 
-_PCI Vault_ is a specialized solution designed by Cognigy for contact center staff
-to securely collect confidential information from end users,
-including credit card details.
+_PCI Vault_ is a specialized software solution designed for collecting end user credit card data during conversations with human agents in contact centers using our AI Copilot product. Cognigy PCI Vault is _[PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)_
+(Payment Card Industry Data Security Standard) compliant - a [PCI DSS v3.2.1 compliance certificate](https://trust.cognigy.com/overview/05e85d7e-e354-413e-853f-a95b217c0e85/pci-dss) is available in our [Cognigy Trust Center](https://trust.cognigy.com/).
 
-Cognigy PCI Vault is extensively audited to meet the _[PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)_
-(Payment Card Industry Data Security Standard) guidelines.
-The PCI DSS standard establishes a comprehensive framework of requirements to protect cardholder data.
-These mandatory standards apply to all entities engaged in processing data from major payment systems such as Visa,
-MasterCard, American Express, and JCB.
-In the [Cognigy Trust Center](https://trust.cognigy.com/),
-you can view our [PCI DSS v3.2.1 compliance certificate](https://trust.cognigy.com/overview/05e85d7e-e354-413e-853f-a95b217c0e85/pci-dss),
-showcasing our commitment to top-notch security.
-
-PCI Vault is a shared SaaS (Software as a Service)
-product and can be utilized only if you have shared or dedicated SaaS Cognigy installations.
-This application is used within AI Copilot. Thus, the capabilities of the PCI vault are available for various handover providers supported by AI Copilot, including Cognigy Live Agent, Genesys, 8x8, and others.
+PCI Vault is a shared SaaS product can can be utilized from all Cognigy customers who have licensed it additionally. Please note that PCI Vault has a tight relationship with AI Copilot and thus is only available if AI Copilot has been purchased. AI Copilot supports multiple Contact Centers.
 
 ## Architecture
 
-The PCI Vault application is hosted within a dedicated AWS (Amazon Web Services) account, a PCI DSS requirement that enhances security by minimizing the potential attack surface and isolating PCI Vault from other systems.
-
-Within PCI Vault, two key components are crucial: `service-secure-forms`,
-which is responsible for managing external interactions, and `Redis`, which is dedicated to in-memory storage.
-The application ensures an extra layer of security through the [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) (Advanced Encryption Standard),
-making it a robust solution for managing and safeguarding sensitive payment-related information.
-
-The image below represents a high-level interaction diagram with PCI Vault.
-The PCI Vault application interacts with Cognigy.AI, the contact center,
-as well as end users and human agents.
+Cognigy's PCI Vault is hosted in a dedicated AWS account running in Frankfurt, Germany. The product runs in a physically separated Kubernetes cluster. The image below represents a high-level interaction diagram with PCI Vault. The PCI Vault application interacts with Cognigy.AI, the contact center, as well as end users and human agents.
 
 ```mermaid
 sequenceDiagram
@@ -55,11 +34,11 @@ activate ContactCenterAgent
 
 ContactCenterAgent->>AICopilot: 3. Request card details link
 activate AICopilot
-AICopilot->>PCIVault: 4. Request secure link
+AICopilot->>PCIVault: 4. Requests secure storage container
 activate PCIVault
-PCIVault-->>AICopilot: 5. xApp link
+PCIVault-->>AICopilot: 5. Authentication tokens for storing data
 deactivate PCIVault
-AICopilot-->>ContactCenterAgent: 6. Provide xApp link
+AICopilot-->>ContactCenterAgent: 6. Provide xApp link with auth tokens
 deactivate AICopilot
 
 ContactCenterAgent->>User: 7. Provide xApp link to user
@@ -73,9 +52,9 @@ User->>ContactCenterAgent: 10. Provide PIN
 activate ContactCenterAgent
 ContactCenterAgent->>AICopilot: 11. Enter received PIN
 activate AICopilot
-AICopilot->>PCIVault: 12. Verify PIN and check transaction status
+AICopilot->>PCIVault: 12. Verify PIN
 activate PCIVault
-PCIVault-->>AICopilot: 13. Clear-text form with card details
+PCIVault-->>AICopilot: 13. Provide decrypted credit card details
 deactivate PCIVault
 AICopilot-->>ContactCenterAgent: 14. Receive clear-text form
 deactivate AICopilot
@@ -88,38 +67,35 @@ deactivate VirtualAgent
 High-level description of the process:
 
 1. An end user initiates a conversation with a virtual agent, expressing the intent to make a payment.
-2. The virtual agent detects the user's handover request and triggers a handover to the contact center.
-3. A human agent in the contact center receives the handover and engages with the user. 
-4. The human agent uses the AI Copilot workspace to request a link to enter card details from PCI Vault.
-5. PCI Vault generates a secure xApp link for the card details form and provides it to the AI Copilot workspace.
-6. The human agent receives the xApp link. 
-7. The human agent provides the xApp link to the end user. 
-8. The end user accesses the secure form through the provided link, enters sensitive payment information, and submits it. 
-9. PCI Vault receives the encrypted information from the user, temporarily storing it in the Redis database for security purposes. PCI Vault generates a PIN and provides it to the end user. 
-10. The end user provides the generated PIN to the human agent. 
-11. Using the AI Copilot workspace, the human agent enters the received PIN. 
-12. PCI Vault verifies the PIN and checks the transaction status. 
-13. If the PIN is correct and the transaction status is valid, PCI Vault provides a clear-text form with card details to the AI Copilot workspace. 
-14. The human agent receives the clear-text form with card details. 
+2. The virtual agent detects the user's handover request and triggers a handover to a contact center using the AI Copilot workspace.
+3. A human agent in the contact center receives the handover and engages with the user.
+4. The human agent uses the AI Copilot workspace and initiates the process to collect credit card data from the end user.
+5. PCI Vault prepares a storage container and returns authentication tokens which will be used to store and retrieve the securely stored data.
+6. The human agent receives an xApp link which will either automatically forwarded to the end user or which has to be forwarded by the human agent in a manual way.
+7. The human agent provides the xApp link to the end user.
+8. The end user accesses the secure form through the provided link, enters sensitive payment information, and submits it.
+9. PCI Vault receives the information from the user via an encrypted connection (HTTPS), encrypts it using AES and temporarily stores it in an in-memory storage. PCI Vault generates a PIN which is bound to the data that has been prviously stored and provides it to the end user.
+10. The end user provides the generated PIN to the human agent via a normal chat interaction.
+11. Using the AI Copilot workspace, the human agent enters the received PIN.
+12. PCI Vault verifies the PIN.
+13. If the PIN is correct and the transaction status is valid, PCI Vault provides a clear-text form with card details to the AI Copilot workspace via an encrypted HTTPS secure connection.
+14. The human agent receives the clear-text form with card details.
 15. The human agent processes the payment or addresses any further user queries related to the transaction.
 
 ## How to Configure
 
-To empower your human agents to securely access user card data via PCI Vault, configure the following resources:
+To empower your human agents to securely access end user credit card data via PCI Vault, configuration of the following resources is a prerequisite:
 
-- The Main Flow is created with a [Handover to Agent](../ai/tools/agent-handover.md) Node.
-- AI Copilot is configured in a separate Flow. The [Copilot: SecureForms Tile Node](../ai/flow-nodes/ai-copilot/secure-forms-tile.md) must be added to this Flow.
-- Contact Center Integration is set up. For example, [Cognigy Live Agent](../live-agent/overview.md) is selected as a handover provider.
-- An Endpoint is created. It should include the Main Flow, Handover Provider, and the Flow for AI Copilot. We recommend using [Cognigy Webchat Widget](../ai/endpoints/webchat/webchat.md) for further testing of configuration in [Demo Webchat](../ai/endpoints/webchat/integrated-demo-page.md) mode.
+- A Flow using the [Handover to Agent](../ai/tools/agent-handover.md) Flow Node to initiate a handover to a human agent.
+- Handover with one of the supported Contact Centers is configured. An example might be the handover integration with [Cognigy Live Agent](../live-agent/overview.md).
+- Usage of AI Copilot and the additional [Copilot: SecureForms Tile Node](../ai/flow-nodes/ai-copilot/secure-forms-tile.md) Flow Node which is used to initiate the entire credit card collection process.
+- An Endpoint through which AI Copilot, the Handover Provider and respective Contact Center settings are configured.
 
 ## Test your Configuration
 
-When the configuration is ready, test your workflow.
-For the example below, Webchat Widget is selected as the Endpoint for testing via Demo Webchat, and Cognigy Live Agent is chosen as a contact center provider.
+In the following example we are using the Webchat Widget, the Webchat Endpoint and Cognigy Live Agent in order to demonstrate PCI Vault:
 
-To test your configuration via Demo Webchat, follow these steps:
-
-1. Open the Congnigy.AI interface. 
+1. Open the Congnigy.AI interface and select your AI Agent.
 2. In the left-side menu of your Agent, click **Deploy > Endpoints**. 
 3. On the **Endpoints** page, select the **Webchat** Endpoint that you have already created with the predefined configuration.
 4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**. 
