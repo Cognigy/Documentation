@@ -32,7 +32,7 @@ If AI Copilot receives updates for a Tile ID not present in the AI Copilot confi
 
 If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
 
-{! _includes/agent-assist/url-pattern.md !}
+{! _includes/ai-copilot/url-pattern.md !}
 
 ## More Information
 

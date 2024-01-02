@@ -9,7 +9,7 @@ hidden: false
 When you create a new Agent in Cognigy.AI you are prompted to select an Endpoint. You can select, for example, **Cognigy Webchat** as a specific Endpoint to the Cognigy.AI platform. 
 For more information, see [Endpoints](https://docs.cognigy.com/ai/endpoints/overview/).
 
-In case, you want to integrate a Handover process in your Flow, you need to configure your Endpoint for Handover.
+If you want to integrate a Handover process in your Flow, you need to configure your Endpoint for Handover.
 
 ## Prerequisites
 
@@ -56,7 +56,7 @@ You can find these environment variables in the [value.yaml](https://github.com/
 
 To configure your Live Agent manually, follow these steps:
 
-1. Open the Endpoint Editor and deactivate in field **Handover Settings** the **Handover to pre-configured Live Agent acount** option using the toggle switch.
+1. Open the Endpoint Editor and deactivate in field **Handover Settings** the **Handover to pre-configured Live Agent account** option using the toggle switch.
 2. Enter the **Base URL** for the Live Agent instance. The Base URL is your Live Agent installation URL, extended by `plus /api/v1`. For example, in the Cognigy Trial environment `https://liveagent-trial.cognigy.ai/api/v1` is the Base URL where `https://liveagent-trial.cognigy.ai` is the Live Agent URL.
 3. Enter the **Account ID** and the **API Key**. How to find the **Account ID** and the **API Key**, see sections below.
 4. Click **Save** to confirm your Live Agent settings. 
@@ -65,14 +65,12 @@ Your Live Agent has been configured.
 
 ## Find an Account ID
 
-The Live Agent Inbox, you have created in a previous step for your project, is defined by an **Account ID**. 
-
 You can find the Account ID in the Live Agent URL of your Live Agent **Inbox**.
 
 To locate the ID, follow these steps:
 
 1. Open your Live Agent Account and go to **Settings > Inboxes**. 
-2. In the Inboxes list, find the Inbox of your project, and click the Settings icon next to the Inbox. 
+2. In the Inboxes list, find the Inbox of your project, and click the **Settings** icon next to the Inbox. 
 3. The Inbox settings will be displayed, and you will see the address line of your browser as follows: `https://liveagent-<your-environment>/app/accounts/<account-id>/settings/inboxes/<inbox-id>`. For example, in the URL `https://liveagent-dev.cognigy.ai/app/accounts/2/settings/inboxes/32852`, the Account ID is 2.
 
 <figure>

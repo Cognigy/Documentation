@@ -62,19 +62,32 @@ To set up the Genesys Endpoint, follow these steps:
 
 ### (Optional) Activate AI Copilot
 
-If you want to use [AI Copilot](../../ai-copilot/overview.md) and [Genesys Notification Forwarder](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
+If you want to use [AI Copilot](../../ai-copilot/overview.md) and [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) within the Genesys integration,
 create credentials on the Genesys side and configure the **Copilot** settings in the Endpoint.
 
 #### Create Credentials
 
-{! _includes/ai/providers/genesys/configure-credentials.md !}
+To configure credentials, follow these steps:
+
+1. Open the Genesys Cloud interface.
+2. Go to **Admin > Integrations > OAuth**.
+3. Click **+ Add Client**.
+4. On the **Client Details** tab, provide a unique name in the **App Name** field.
+5. On the **Roles** tab, activate the corresponding role for the client.
+6. Return to the **Client Details** tab and select **Client Credentials** in the **Grand Types** list.
+7. Click **Save**.
+8. Copy the Client ID and Client Secret and save them for future use.
+9. From the left-side menu, select **Authorized Applications**.
+10. In the upper-right corner, click **+ Authorize a Client**.
+11. In the **Authorize Client** window, enter the Client ID that you copied and saved previously.
+12. Click **Authorize Client**.
 
 #### Configure Settings for Agent AI Copilot
 
 To configure the Agent Assist Workspace settings, follow these steps:
 
 1. In the **Genesys Endpoint settings**, navigate to the **Copilot** section.
-2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Assist documentation](../../agent-assist/overview.md).
+2. Configure AI Copilot by creating an [AI Copilot config](https://api-trial.cognigy.ai/openapi#post-/v2.0/agentassistconfigs) and adding a Flow. For more information, refer to the [Agent Assist documentation](../../ai-copilot/overview.md).
 3. Set up Genesys Cloud Credentials:
     - **Connection Name** — create a unique name for your connection.
     - **oAuth2Url** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting the `apps.` or `login.` part. For more information on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).

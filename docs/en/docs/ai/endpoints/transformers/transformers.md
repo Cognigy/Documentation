@@ -210,7 +210,7 @@ The Webhook based Transformers are:
 
 | Webhook Endpoints       |
 |-------------------------|
-| Facebook Messenger      |
+| Facebook (Meta) Messenger      |
 | Slack                   |
 | Microsoft Bot Framework |
 | Sunshine Conversations  |

@@ -6,96 +6,85 @@
 
 # Billing
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.52-blue.svg)](../release-notes/4.52.md)
+Cognigy products have *three different* ways of charging our customers:
 
-Cognigy has only one billable unit - a *conversation*. A billed conversation is an interaction between a user and a virtual or human agent, and represents one unit of consumption.
+- by charging for *conversations* processed with Cognigy.AI
+- by charging for *concurrent lines* for calls handled with Cognigy Voice Gateway
+- by charging for *knowledge queries* and *knowledge chunks* used in Knowledge AI
 
-The billed conversation begins when a user sends their initial *input*, which can be either a chat or voice message.
+## Billable Conversation
 
-The conversation will be ended for any of the following reasons:
+A billable conversation is defined as *an interaction between a user and a virtual or human agent that flows through the Cognigy.AI platform*. A conversation begins with the initial *input* via an Endpoint to the Cognigy.AI platform and ends when the end user stops interacting. A billable conversation is limited to up to 50 user inputs within a 24-hour period.
 
-- The user left a chat. 
-- The human agent resolved a conversation. 
-- The conversation has more than 50 user inputs. The 51st input will begin a new conversation. 
-- The conversation is limited to a 24-hour period. Any user input sent after this time will begin a new conversation. 
-- The user reloaded a browser page.
+Sending more than 50 inputs or interacting with the Cognigy.AI platform for more than 24 hours will initiate subsequent billable conversations.
 
-## Common scenarios
+### Common Scenarios
 
-The following scenarios provide examples of billing for conversations.
+#### Scenario 1
 
-The 24-hour period is determined according to your server time zone setting. Contact your administrator if you want to change this time zone setting.
+**An end user sends exactly 50 user inputs within a period of less than 24 hours.**
 
-### Scenario 1
+An end user begins interacting with a Cognigy.AI-powered virtual agent and sends 50 user inputs. The entire interaction takes 15 minutes. The system will record *1 billable Conversation* as the end user had fewer than 51 user inputs and only interacted with the system for 15 minutes.
 
-A user sent less than 50 inputs during the conversation within 24 hours.
+#### Scenario 2
 
-Example: 50 user inputs.
+**An end user sends more than 50 user inputs within a period of less than 24 hours.**
 
-Billing: It will be charged as one conversation
+An end-user starts to interact with a Cognigy.AI powered virtual agent and sends 101 user inputs within 2 hours of time. The system will record *3 billable Conversations* as three multiple of 50 inputs have been processed.
 
-### Scenario 2
+#### Scenario 3
 
-A user sent more than 50 inputs during the conversation within 24 hours.
+**An end user starts an interaction by sending a message, doesn't respond for a day, and then continues the interaction.**
 
-Example: 101 user inputs.
+An end user begins interacting with a Cognigy.AI powered virtual agent by sending a single message. The user then pauses the interaction for more than 24 hours and returns the next day by sending another message. The system will record *2 billable Conversations* since they extend over multiple days and exceed a duration of 24 hours.
 
-Billing: It will be charged as 3 conversations.
+### xApps
 
-### Scenario 3
+Cognigy xApps offer multi-modality interactivity with your end users. Note that xApps are a separately licensed product feature that requires a license agreement with Cognigy. To learn more about xApps, refer to the [documentation](./xApp/overview.md).
 
-A user sent less than 50 messages during the conversation within 30 hours.
+When data is submitted from an xApp back into the Cognigy.AI platform, it is handled equivalently to a standard end-user interaction, such as sending a chat input or speaking an utterance in the case of a voice bot.
 
-Example: 49 user inputs.
+#### Scenario 1
 
-Billing: It will be charged as 2 conversations.
+**An end user books a cinema ticket with a bot using xApps.**
 
-### Scenario 4
+An end user begins interacting with a Cognigy.AI-powered ticket booking chatbot by sending a chat input. The bot responds by requesting the first name, last name, and ticket category. The user answers all three questions by providing the respective data and then gets a floor plan via an xApp, through which they can select a seat. The user selects a seat and submits the selection. The system will record *a single billable Conversation* with the following explanation:
 
-A user sent more than 50 messages during the conversation within 30 hours.
+- The end user greets the chatbot - **one user input**
+- The virtual agent asks for the first name
+- The end user provides the first name - **second user input**
+- The virtual agent asks for the last name
+- The end user provides the last name - **third user input**
+- The virtual agent asks for the ticket category
+- The end user provides the ticket category by clicking on a quick reply - **fourth user input**
+- The virtual agent presents a floor plan via an xApp
+- The end user selects a seat using the xApp and submits the selection - **fifth user input**
 
-Example 1: 78 user inputs -> 49 within 24 hours and 29 within the next 6 hours.
+### Additional Billable Conversations
 
-Billing 1: It will be charged as 2 conversations.
-
-Example 2: 78 user inputs -> 5 within 24 hours, 73 within the next 6 hours.
-
-Billing 2: It will be charged as 3 conversations.
-
-## xApps
-
-The xApps are a separately licensed Cognigy feature, which must be purchased as an add-on to the Cognigy.AI license.
-
-In addition, the general billable unit for Cognigy.AI, the conversation, will be influenced if xApps are used. This is because an xApp session is part of a Cognigy session.
-
-The xApp submit data payload messages received by the Flow are counted as billing-relevant messages of the existing conversation.
-
-Cognigy reserves the right to change the billing of xApps in the future.
-
-### Scenario 1
-
-During an xApp session, only the xApp submit data payload messages sent by the user are billed. 
-
-Example: A user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). This scenario involves 3 user inputs.
-
-Billing: It will be charged as 1 conversation. 
-
-### Scenario 2
-
-Apart from the xApp nodes, a Flow may contain nodes that start and complete the main session. In this case, the xApp submit data payload messages and other user inputs from the main session are counted as part of the same session and conversation.
-
-Example: A user initiates a chat with a bot and sends 2 messages. This action triggers an xApp session. During the xApp session, the user logs in by entering their login credentials and clicking the Authorize button (submit). Then, the user selects a seat and clicks the Confirm button (submit). Finally, the user enters their card details on the payment page and clicks the Order button (submit). After the xApp session is completed, the bot offers another option, and the user sends 2 more messages. This scenario involves 7 user inputs.
-
-Billing: It will be charged as 1 conversation.
-
-## Additional billing 
-
-If you are using the following Endpoint [Transformers](../ai/endpoints/transformers/transformers.md):
+Additional charges will apply if you use the Endpoint [Transformers](../ai/endpoints/transformers/transformers.md), such as:
 
 - Input Transformer
 - Inject Transformer
 - Notify Transformer
-  
-and you return a `falsy` value from them (for example `null`, `undefined` or `false`), the message processing will be terminated in Cognigy system, and no Flow will be executed. In this case, Cognigy will charge 1 conversation per 50 Transformer executions.
 
-Example: You built an Endpoint which only uses the Input Transformer to implement a custom Handover Provider and you are always returning a `falsy` value of `null` from it. 50 Input Transformers will be executed for user inputs -> 1 conversation will be charged.
+If the Endpoint Transformer executions result in a `falsy` value, such as `null`, `undefined`, or `false`, the message processing pipeline within Cognigy.AI will be terminated, and no Flow will be executed. In such cases, Cognigy.AI will charge an additional billable conversation for every 50 Endpoint Transformer executions.
+
+Note that additional billing will only apply *if no Flow will be executed* after your Endpoint Transformer runs.
+
+## Calls
+
+Cognigy.AI offers the ability to build voice experiences and virtual agents that you can deploy to your telephony systems. Note that you will need a separate license agreement with Cognigy for a product like Cognigy Voice Gateway.
+Customers can purchase different packages of *concurrent lines* to connect their voice-enabled virtual agents to their telephony systems. Reporting capabilities are available to understand the *peak number of concurrent lines* used on a specific day.
+
+If a customer uses more concurrent lines than the number purchased on a given day, overage charges will apply for that day.
+
+## Knowledge AI
+
+Knowledge AI allows Cognigy customers to build RAG-based pipelines powered by Large Language Models. Please note that Knowledge AI is a separately licensed product feature and requires a license agreement with Cognigy. To learn more about Knowledge AI, refer to the [documentation](./knowledge-ai/overview.md).
+
+Knowledge AI is licensed by *Knowledge Chunks* and *Knowledge Queries*. The former defines a *hard limit* on how much data can be ingested into the Knowledge AI solution, while the latter determines how often a query can be placed to retrieve a relevant Chunk of knowledge.
+
+Cognigy offers various packages that include Knowledge Chunks and Queries. For Knowledge Queries, overages will apply if more queries are performed than what is included in the originally purchased package. The Knowledge Chunk limit can't be exceeded, as the product will display an error. Customers can purchase additional Knowledge Chunk packages if required.
+
+Reporting capabilities are available to understand both the *number of consumed Knowledge Chunks* and the number of *performed Knowledge Queries*.

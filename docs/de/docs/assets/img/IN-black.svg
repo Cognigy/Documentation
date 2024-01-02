@@ -1,0 +1,11 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71 71" width="48" height="48">
+	<title>Insights-IN-svg</title>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #000000 } 
+	</style>
+	<g id="Layer">
+		<path id="Layer" class="shp0" d="M60.36 45.16L60.36 9L70.78 9L70.78 61L60.15 61L29.22 24.73L29.22 60.88L18.78 60.88L18.78 9L29.42 9L60.36 45.16Z" />
+		<path id="Layer" class="shp0" d="M0.78 9L10.78 9L10.78 61L0.78 61L0.78 9Z" />
+	</g>
+</svg>

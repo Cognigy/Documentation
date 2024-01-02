@@ -1,7 +1,7 @@
 ---
- title: "Database" 
- slug: "database" 
- hidden: false 
+title: "Database" 
+slug: "database" 
+hidden: false 
 ---
 
 # Database

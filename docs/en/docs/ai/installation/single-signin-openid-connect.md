@@ -23,7 +23,7 @@ How to use Open ID Connect with Auth0 as a provider read following article: [Sin
     
     "When setting up SSO with Auth0, you can choose between two different SSO protocols. This article covers the OpenID Connect protocol. 
     
-    For SAML 2.0, refer to the following article: [Auth0 - saml2.0](https://support.cognigy.com/hc/en-us/articles/360018693139)
+    For SAML 2.0, refer to the following article: [Auth0 - SAML 2.0](https://support.cognigy.com/hc/en-us/articles/360018693139)
 
 
 

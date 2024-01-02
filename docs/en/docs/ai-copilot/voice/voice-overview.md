@@ -17,7 +17,7 @@ The voice configuration contains the following parts:
 - [Transfer Node](transfer-node.md)
 - [Voice Copilot Endpoint](../../ai/endpoints/voice-copilot.md)
 
-{! _includes/agent-assist/genesys-note.md !}
+{! _includes/ai-copilot/genesys-note.md !}
 
 ## More Information
 

@@ -36,7 +36,7 @@ The `handleInject`  function gets a configuration object as an argument. An over
 
 <div class="divider"></div>
 
-The `Inject Transformer` has to return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different to a request from Facebook Messenger. It is therefore necessary to read the documentation from the specific channel to know how the request body is formatted. 
+The `Inject Transformer` has to return a valid user ID, session ID and text and/or data that should be sent to the Flow. These values should be extracted from the body of the request. It is important to note that the format of the request body will differ based on the specific channel being used, i.e. a request from Alexa looks very different to a request from Facebook (Meta) Messenger. It is therefore necessary to read the documentation from the specific channel to know how the request body is formatted. 
 
 If the `Inject Transformer` returns a falsy value, then the message is never forwarded to the user.
 
