@@ -12,40 +12,28 @@ The User Menu provides access to a set of views that are related to the user tha
 </figure>
 
 ### My Profile
-The My Profile view exposes a number of settings that apply to the user that is logged-in. 
-
-!!! note "My Profile"
-    Head over to [My Profile]({{config.site_url}}ai/tools/user-menu/my-profile/)  for more information.
+The [My Profile](my-profile.md) view exposes a number of settings that apply to the user that is logged-in. 
 
 ### Access Control
-The Access Control interface offers a user management interface. It acts as an Access Control List (ACL) and makes it possible to give users a specific role. 
-
-!!! note "Access Control"
-    Refer to [Access Control]({{config.site_url}}ai/tools/user-menu/access-control/) for more information.
+The [Access Control](access-control.md) interface offers a user management interface. It acts as an Access Control List (ACL) and makes it possible to give users a specific role. 
 
 ### Organisation Details
-The Organisation Details interface offers a platform analytics overview for agent usage. 
-
-!!! note "Organisation Details"
-    Refer to [Organisation Details]({{config.site_url}}ai/tools/user-menu/organisation-details/) for more information.
+The [Organisation Details](organisation-details.md) interface offers a platform analytics overview for agent usage. 
 
 ### Audit Events
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.35.0-blue.svg)]({{config.site_url}})
 
-The Audit Events dashboard offers a user interface that allows admin users to see what actions other users from the team are doing. 
-
-!!! note "Audit Events"
-    Refer to [Audit Events]({{config.site_url}}ai/tools/user-menu/audit-events/) for more information.
+The [Audit Events](audit-events.md) dashboard offers a user interface that allows admin users to see what actions other users from the team are doing. 
 
 ### Documentation
 This option refers to the documentation that you are currently browsing.
 
 ### Insights
-Insights is a Cognigy analytics reporting tool to improve your customer service.
+[Insights](../../../insights/cognigy-insights.md) is a Cognigy analytics reporting tool to improve your customer service.
 
-!!! note "Insights"
-    Refer to [Insights]({{config.site_url}}insights/cognigy-insights/) for more information.
+### Live Agent
+[Live Agent](../../../live-agent/assistants/overview.md) allows human agents using Cognigy Live Agent to be assisted by AI-powered agents when conversing with a customer.
 
 ### Logout
 This options lets the user logout of the user interface. Below it, you can also see the version of the product you are currently using.
