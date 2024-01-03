@@ -10,7 +10,7 @@ hidden: false
 _PCI Vault_ is a specialized software solution designed for collecting end user credit card data during conversations with human agents in contact centers using our AI Copilot product. Cognigy PCI Vault is _[PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)_
 (Payment Card Industry Data Security Standard) compliant - a [PCI DSS v3.2.1 compliance certificate](https://trust.cognigy.com/overview/05e85d7e-e354-413e-853f-a95b217c0e85/pci-dss) is available in our [Cognigy Trust Center](https://trust.cognigy.com/).
 
-PCI Vault is a shared SaaS product can can be utilized from all Cognigy customers who have licensed it additionally. Please note that PCI Vault has a tight relationship with AI Copilot and thus is only available if AI Copilot has been purchased. AI Copilot supports multiple Contact Centers.
+PCI Vault is a shared SaaS product that can be utilized from by Cognigy customers who have purchased the additional license. Please note that PCI Vault has a tight relationship with AI Copilot, and therefore is only available if AI Copilot has also been purchased. AI Copilot supports multiple Contact Centers.
 
 ## Architecture
 
@@ -71,10 +71,10 @@ High-level description of the process:
 3. A human agent in the contact center receives the handover and engages with the user.
 4. The human agent uses the AI Copilot workspace and initiates the process to collect credit card data from the end user.
 5. PCI Vault prepares a storage container and returns authentication tokens which will be used to store and retrieve the securely stored data.
-6. The human agent receives an xApp link which will either automatically forwarded to the end user or which has to be forwarded by the human agent in a manual way.
+6. The human agent receives an xApp link which will either automatically forwarded to the end user or which has to be forwarded manually by the human agent.
 7. The human agent provides the xApp link to the end user.
 8. The end user accesses the secure form through the provided link, enters sensitive payment information, and submits it.
-9. PCI Vault receives the information from the user via an encrypted connection (HTTPS), encrypts it using AES and temporarily stores it in an in-memory storage. PCI Vault generates a PIN which is bound to the data that has been prviously stored and provides it to the end user.
+9. PCI Vault receives the information from the user via an encrypted connection (HTTPS), encrypts it using AES and temporarily stores it in an in-memory storage. PCI Vault generates a PIN which is bound to the data which has been previously stored and provides it to the end user.
 10. The end user provides the generated PIN to the human agent via a normal chat interaction.
 11. Using the AI Copilot workspace, the human agent enters the received PIN.
 12. PCI Vault verifies the PIN.
@@ -95,7 +95,7 @@ To empower your human agents to securely access end user credit card data via PC
 
 In the following example we are using the Webchat Widget, the Webchat Endpoint and Cognigy Live Agent in order to demonstrate PCI Vault:
 
-1. Open the Congnigy.AI interface and select your AI Agent.
+1. Open the Cognigy.AI interface and select your AI Agent.
 2. In the left-side menu of your Agent, click **Deploy > Endpoints**. 
 3. On the **Endpoints** page, select the **Webchat** Endpoint that you have already created with the predefined configuration.
 4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**. 
