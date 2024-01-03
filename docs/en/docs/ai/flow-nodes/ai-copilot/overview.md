@@ -23,6 +23,7 @@ Cognigy.AI supports the following Nodes:
 - [Copilot: Set Grid](set-grid.md)
 - [Copilot: Transcript Tile](transcript-tile.md)
 - [Copilot: Knowledge Tile](knowledge-tile.md)
+- [Copilot: Secure Forms Tile](secure-forms-tile.md)
 
 ## More Information
 
