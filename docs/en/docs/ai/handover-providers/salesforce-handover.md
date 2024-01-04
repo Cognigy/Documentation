@@ -198,4 +198,4 @@ To check the handover, go to the installation that your server administrator has
 
 ### Integrate Copilot into Salesforce Service Cloud
 
-To embed Copilot into Salesforce, see our article on [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations).
+To integrate Copilot directly into Salesforce, see our article on [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations).
