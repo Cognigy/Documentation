@@ -41,8 +41,8 @@ The table below lists the LLMs supported by Cognigy.
 | luminous-extended-control                                                                                                 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | luminous-embedding-128*                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  | 
 
-!!! note luminous-embedding-128*
-     This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used in per project, if you choose to use luminous-embedding-128, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in beta.
+!!! note "luminous-embedding-128"
+          This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project, if you choose to use luminous-embedding-128, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in beta.
 
 ## Add a Model
 
