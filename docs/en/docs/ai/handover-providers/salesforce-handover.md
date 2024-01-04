@@ -195,3 +195,7 @@ For more information about the Pre-Chat Entities and Pre-Chat Details fields and
 read the [Salesforce API documentation](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#CustomDetail). 
 
 To check the handover, go to the installation that your server administrator has deployed.
+
+### Integrate Copilot into Salesforce Service Cloud
+
+To embed Copilot into Salesforce, see our article on [Salesforce Integrations](https://github.com/Cognigy/salesforce-integrations).
