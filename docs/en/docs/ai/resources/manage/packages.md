@@ -82,7 +82,7 @@ As of v4.5.0, importing a Package will show you conflict resolution options in c
 
 ## Locale Mapping
 
-If the Package contains a Flow for import, you will need to provide a Locale Mapping for each Locale from the Package. You can decide between mapping a Package Locale to an Agent Locale or not import it. However, it is mandatory to map the Primary Locale from the Package to the Primary Locale of the Agent.
+If the Package contains a Flow for import, you will need to provide a Locale Mapping for each Locale from the Package. You can decide between mapping a Package Locale to an Agent Locale or not import it. The Primary Locale must be mapped to a Locale in the Agent. If you have a Secondary Locale in the Agent, you can choose to map any Locale from the Package to a Primary or Secondary Locale of the Agent, however you cannot map the Primary Locale to more than one Locale.
 
 ## Conflict Management
 
