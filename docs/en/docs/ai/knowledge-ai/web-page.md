@@ -7,7 +7,7 @@ hidden: false
 
 # Web Page
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.65.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
 
 Knowledge AI supports using a web page as a type when creating a new Knowledge Source. 
 
