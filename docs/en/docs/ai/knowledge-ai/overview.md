@@ -15,7 +15,7 @@ Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conver
 
 With the Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in the [Cognigy CTXT](../knowledge-ai/ctxt.md) format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
+Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in the [Cognigy CTXT](../knowledge-ai/ctxt.md) format and [Web Pages](../knowledge-ai/webpage.md). This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
 
@@ -217,6 +217,7 @@ The table below presents limitations. These limitations are subject to future ch
 
 - [Cognigy Text Format](ctxt.md)
 - [PDF](pdf.md)
+- [Web Page](../knowledge-ai/webpage.md)
 - [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
 - [LLM](../resources/build/llm.md)
 - [Generative AI](../generative-ai.md)
