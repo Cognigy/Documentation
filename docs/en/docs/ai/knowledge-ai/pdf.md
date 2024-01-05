@@ -9,8 +9,13 @@ hidden: false
 
 When you use a PDF file as a knowledge source, the following chunk splitting strategies will be applied after uploading the file:
 
-- [Default](#default-chunk-strategy)
-- [Alternative](#alternative-chunk-strategy)
+- [PDF](#pdf)
+  - [Default Chunk Strategy](#default-chunk-strategy)
+  - [Alternative Chunk Strategy](#alternative-chunk-strategy)
+  - [Example](#example)
+    - [Default Case](#default-case)
+    - [Alternative Case](#alternative-case)
+  - [More Information](#more-information)
 
 ## Default Chunk Strategy
 
@@ -144,5 +149,6 @@ Note that in the first chunk, a title was omitted by the system because the titl
 
 ## More Information
 
-- [Knowledge AI](overview.md)
+- [Knowledge AI Overview](overview.md)
 - [Cognigy Text Format](ctxt.md)
+- [Web Page](../knowledge-ai/web-page.md)
