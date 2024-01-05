@@ -1,6 +1,6 @@
 ---
 title: "AI Copilot Bot"
-slug: "AI-copilot-bot" 
+slug: "ai-copilot-bot" 
 hidden: false 
 ---
 
@@ -19,7 +19,7 @@ For instance, if the human agent requires additional expertise during the conver
 they can activate a specialized AI Copilot Bot, such as one for technical support or order processing.
 
 <figure>
-   <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/LA_asked_Assist-Bot_for_help.png" width="80%" alt="Live Agent AI Copilot Bot Overview" />
+   <img class="image-center" src="{{config.site_url}}live-agent/conversation/images/la_ai_copilot_bot.png" width="80%" alt="Live Agent AI Copilot Bot Overview" />
 </figure>
 
 ## Before you Begin
@@ -29,7 +29,7 @@ To use AI Copilot Bots in a Live Agent conversation, you need to create two Flow
 - The **Main** Flow for interaction between a virtual agent and an end user. Within this Flow, add a [Handover to Agent](../../ai/tools/agent-handover.md) Node to transition the conversation from the virtual agent to a human agent. The Inbox ID must be included in the Handover to Agent Node.
 - The **Endpoint** for the **Main** Flow.
 - The **AI Copilot Bot** Flow for interaction between an AI Copilot Bot and a human agent.
-- The **Endpoint** for **AI Copilot Bot** Flow.
+- The **Endpoint** for the **AI Copilot Bot** Flow.
 
 ## Create an AI Copilot Bot
 
@@ -50,7 +50,7 @@ The created AI Copilot Bot will be available for all assigned human agents withi
 
 ## Use AI Copilot Bots in a Conversation
 
-Note that you can use multiple AI Copilot Bots within a conversation. Each bot creates a separate session that needs to be [manually closed](#complete-an-assist-bot-session) after ending the conversation.
+Note that you can use multiple AI Copilot Bots within a conversation. Each bot creates a separate session that needs to be [manually closed](#complete-an-ai-copilot-bot-session) after ending the conversation.
 
 To use AI Copilot Bots in a conversation, do the following:
 

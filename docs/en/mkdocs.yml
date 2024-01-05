@@ -548,7 +548,7 @@ nav:
     - live-agent/assistants/overview.md
     - live-agent/assistants/la-ai-copilot.md
     - live-agent/assistants/ai-copilot.md
-    - live-agent/assistants/assist-bot.md
+    - live-agent/assistants/ai-copilot-bot.md
   - Reports:
     - live-agent/reports/overview.md
     - live-agent/reports/supervisor-overview.md
