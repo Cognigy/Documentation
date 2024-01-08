@@ -84,9 +84,9 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 | Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.            |
 | Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                      |
 
-!!! note
-    As with all Speech Provider settings, there are certain differences in the use of this feature. Please check your Speech Providers documentation first, to understand which values to add. An example would be the difference between **Microsoft Azure** and **Google**. For **Microsoft Azure** you will need to add how much **%** you would like to **add** or **reduce** from the default settings. Example value: Output Speed -20%. This would reduce 20% the default output speed of 100% and create a new output speed of 80%. To achieve the same with **Google** you would need to add the **final output speed in %**  into the Prosody Settings. Example value: Output Speed 80%. This already displays the new output speed, as for **Google** we are directly adding the final output speed into the settings.
+#### Adapting Values for Your Chosen Speech Provider
 
+As with all Speech Provider settings, there are certain differences in the use of this feature. Refer to your Speech Provider's documentation first to understand which values to add. An example would be the difference between Microsoft Azure and Google. For Microsoft Azure, users need to specify the `%` by which they would like to increase or decrease from the default settings. For instance, an example value could be `Output Speed -20%`, indicating a `20%` reduction from the default output speed of `100%`, resulting in a new output speed of `80%`. To achieve the same effect with Google, users need to add the final output speed in `%` to the Prosody Settings. For example, `Output Speed 80%` directly displays the new output speed, as with Google, the final output speed is directly added to the settings.
 
 ## Call Events
 
