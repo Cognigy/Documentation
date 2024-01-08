@@ -71,10 +71,10 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 
 These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
 
-| Parameter    | Type     | Description |
-|--------------|----------|-------------|
-| Prosody Settings | Toggle | If enabled, the configuration will be used to specify changes to speed, pitch, and volume for the text to speech output.|
-| Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations. |
+| Parameter                  | Type   | Description                                                                                                               |
+|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------|
+| Prosody Settings           | Toggle | If enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output. |
+| Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations.                        |
 
 ### Prosody Settings
 
