@@ -78,11 +78,11 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 
 ### Prosody Settings
 
-| Parameter    | Type     | Description |
-|--------------|----------|-------------|
-| Output Speed | Number | A change in the speaking rate for the contained text in %. Value-range of -100 to 200. |
-| Output Pitch | Number | The baseline pitch for the contained text in %. Value-range of -100 to 200.|
-| Output Volume| Number | The volume for the contained text in %. Value-range of 10 to 200.|
+| Parameter     | Type   | Description                                                                                   |
+|---------------|--------|-----------------------------------------------------------------------------------------------|
+| Output Speed  | Number | The change in the speaking rate for the contained text in percentage. Value range: -100 to 200. |
+| Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.            |
+| Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                      |
 
 !!! note
     As with all Speech Provider settings, there are certain differences in the use of this feature. Please check your Speech Providers documentation first, to understand which values to add. An example would be the difference between **Microsoft Azure** and **Google**. For **Microsoft Azure** you will need to add how much **%** you would like to **add** or **reduce** from the default settings. Example value: Output Speed -20%. This would reduce 20% the default output speed of 100% and create a new output speed of 80%. To achieve the same with **Google** you would need to add the **final output speed in %**  into the Prosody Settings. Example value: Output Speed 80%. This already displays the new output speed, as for **Google** we are directly adding the final output speed into the settings.
