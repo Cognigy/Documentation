@@ -15,7 +15,7 @@ The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) provider
 |-----------|-----|-----|
 | AWS       | +   | +   |
 | Deepgram  | -   | +   |
-| Elevenlabs| +   | -   |
+| ElevenLabs| +   | -   |
 | Google    | +   | +   |
 | Microsoft | +   | +   |
 | Nuance    | +   | +   |
