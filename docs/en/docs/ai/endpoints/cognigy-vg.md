@@ -69,7 +69,7 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 
 ## Generic Settings
 
-These settngs will be valid for every session of this Endpoint. Flow nodes as the Set Session Config or a Say with Activity Parameters enabled, can overwrite the Prosody Settings set within the Endpoint.
+These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
 
 | Parameter    | Type     | Description |
 |--------------|----------|-------------|
