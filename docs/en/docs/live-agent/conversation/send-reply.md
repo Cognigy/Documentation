@@ -173,7 +173,7 @@ Subsequent replies by the second agent will be visible on the **Private Note** t
 
 You can find all conversations where other agents mentioned you. To do so, use the **@Mentions** option at the top of the Inboxes list.
 
-If you do not immediately send the reply, but have already typed it in, the message will be **drafted** for 24 hours. This means that once you switch to another conversation and get back to the previous one, you will be able to see the initial draft of your private note.
+If you don't send your reply right away but have already composed it, the message will be saved for 24 hours. This means that when you switch to another conversation and return to the previous one, you'll find the initial draft of your private note.
 
 ### Delete a Private Note
 
