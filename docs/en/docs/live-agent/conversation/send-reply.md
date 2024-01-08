@@ -26,7 +26,7 @@ For quick replies, you can use canned responses, variables, or a combination of 
 By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button.
 The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
 
-If you do not immediately send the reply, but have already typed it in, the message will be **drafted** for 24 hours. This means that once you switch to another conversation and get back to the previous one, you will be able to see the initial draft of your reply.
+If you don't send your reply right away but have already composed it, the message will be saved for 24 hours. This means that when you switch to another conversation and return to the previous one, you'll find the initial draft of your reply.
 
 ### Reply Options
 
