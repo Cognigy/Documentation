@@ -67,6 +67,27 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
+## Generic Settings
+
+These settngs will be valid for every session of this Endpoint. Flow nodes as the Set Session Config or a Say with Activity Parameters enabled, can overwrite the Prosody Settings set within the Endpoint.
+
+| Parameter    | Type     | Description |
+|--------------|----------|-------------|
+| Prosody Settings | Toggle | If enabled, the configuration will be used to specify changes to speed, pitch, and volume for the text to speech output.|
+| Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations. |
+
+### Prosody Settings
+
+| Parameter    | Type     | Description |
+|--------------|----------|-------------|
+| Output Speed | Number | A change in the speaking rate for the contained text in %. Value-range of -100 to 200. |
+| Output Pitch | Number | The baseline pitch for the contained text in %. Value-range of -100 to 200.|
+| Output Volume| Number | The volume for the contained text in %. Value-range of 10 to 200.|
+
+!!! note
+    As with all Speech Provider settings, there are certain differences in the use of this feature. Please check your Speech Providers documentation first, to understand which values to add. An example would be the difference between **Microsoft Azure** and **Google**. For **Microsoft Azure** you will need to add how much **%** you would like to **add** or **reduce** from the default settings. Example value: Output Speed -20%. This would reduce 20% the default output speed of 100% and create a new output speed of 80%. To achieve the same with **Google** you would need to add the **final output speed in %**  into the Prosody Settings. Example value: Output Speed 80%. This already displays the new output speed, as for **Google** we are directly adding the final output speed into the settings.
+
+
 ## Call Events
 
 Allows activating call events for a Flow.
