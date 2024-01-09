@@ -13,12 +13,13 @@ The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) provider
 
 | Provider  | TTS | STT |
 |-----------|-----|-----|
-| Microsoft | +   | +   |
 | AWS       | +   | +   |
+| Deepgram  | -   | +   |
+| ElevenLabs| +   | -   |
 | Google    | +   | +   |
+| Microsoft | +   | +   |
 | Nuance    | +   | +   |
 | Soniox    | -   | +   |
-| Deepgram  | -   | +   |
 | Custom    | +   | +   |
 
 ## More Information
