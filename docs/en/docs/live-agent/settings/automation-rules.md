@@ -72,7 +72,7 @@ To create an automation rule, follow these steps:
 5. In the **Description** field, enter a relevant description for the rule.
 6. From the **Event** list, select the desired event.
 7. In the **Conditions** section, set up a condition:
-    - **Left operand** — select a [condition type](#automation-condition-types).
+    - **Left operand** — select a [condition type](#conditions).
     - **Operator** — a comparison operator that checks whether the value of the left operand is `Equal to` or `Not Equal to` the value of the right operand.
     - **Right operand** — select values corresponding to condition types. For example, if you choose `Status` as a condition type, you can add multiple statuses, such as `Open`, `Pending`, `Resolved`.
 8. _(Optional)_ Add an additional condition by clicking **+ Add Condition**. Repeat the same steps as you did for the first condition and select one of the following operators:
@@ -111,7 +111,7 @@ To edit an automation rule, click the **Edit** icon next to the desired automati
 ## Clone an Automation Rule
 
 To make a copy of an existing automation rule, click the clone icon from the Automation list you want to copy.
-A replica of the automation reule with the same conditions and actions will be created.
+A replica of the automation rule with the same conditions and actions will be created.
 
 ## Delete an Automation Rule
 
@@ -120,5 +120,5 @@ To delete an automation rule, click **Delete** next to the desired Automation in
 ## More Information
 
 - [Settings](overview.md)
-- [Convesation Workflow](../conversation/conversation-workflow.md)
+- [Conversation Workflow](../conversation/overview.md)
 - [Conversation Routing](../conversation/conversation-routing/overview.md)

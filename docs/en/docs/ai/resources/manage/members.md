@@ -5,7 +5,7 @@
 ---
 # Members
 
-The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the **[Access Control]({{config.site_url}}ai/tools/user-menu/access-control/)** panel.
+The **Members** panel allows **Project Admins** to manage the **Roles** that users in an organization have for a specific Agent. The roles assigned here are complimentary to the **Global Roles** assigned in the [Access Control](../../tools/user-menu/access-control.md) panel.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/members.png" width="100%" />
@@ -13,7 +13,7 @@ The **Members** panel allows **Project Admins** to manage the **Roles** that use
 
 ## Project Roles
 
-In addition to global roles, Cognigy.AI offers Agent-specific roles which can be assigned to compliment the global access rights that have been granted for a given user.
+In addition to global roles, Cognigy.AI offers Agent-specific roles, which can be assigned to compliment the global access rights that have been granted for a given user.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/members2.png" width="100%" />
@@ -23,7 +23,8 @@ In addition to global roles, Cognigy.AI offers Agent-specific roles which can be
     A user profile requires the "Project Admin" role to be able to make changes to any user access for that specific agent. This will automatically be assigned to any user who creates a new agent.
 
 The available project roles are presented in the table below.
-| Project Role   | Permissions                                                                                                                                                                                                            |
+
+| Project Role           | Permissions                                                                                                                                                                                                                                                                                                                 |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Analytics              | Adds the following permissions: <br> - full permissions on analytics                                                                                                                                                                                                                                                        |
 | Basic                  | Adds the following permissions: <br> - read permission for all agent assets except: User Details, contact profiles, Node Comments, Node Descriptions, Logs and Member Details                                                                                                                                               |

@@ -2,7 +2,7 @@
 title: "Glossary"
 slug: "glossary"
 description: "Live Agent Glossary provides a reference for users, agents, and anyone involved in the operation or understanding of Live Agent software and practices."
-hidden:  false
+hidden: false
 ---
 
 # Live Agent Glossary
@@ -18,7 +18,7 @@ _**Account**_
 :  A separate Live Agent instance that represents the entire organization or company. In this context, all the resources, data, and users related to the organization are managed centrally at the org level. In other alternative Live Agent systems, this entity may also be referred to as Tenant.
 
 _**Account Settings**_
-:  You can change the general settings for an account, such as name and language. You will find access via the dasboard sidebar of Live Agent. For more information, read the [Account Settings](settings/account-settings.md) documentation.
+:  You can change the general settings for an account, such as name and language. You will find access via the dashboard sidebar of Live Agent. For more information, read the [Account Settings](settings/account-settings.md) documentation.
 
 _**Agents**_
 :  Members of your Customer Support team. Agents will be able to view and reply to messages from your users. On the Live Agent sidebar you can click Settings > Agents to configure it. To differentiate between virtual agents and human agents in the Live Agent documentation, we primarily use the [Human Agent](#h) term to denote members of the support team. For more information, read the [Agent](settings/agents.md) documentation.
@@ -30,7 +30,7 @@ _**Agent Status**_
 :  Agent statuses help manage the availability and workload of human agents, ensure consistent and efficient customer service, and provide transparency regarding the agent's availability to handle chat requests. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
 _**API Access Token**_
-:  A data structure that contains authentication and authorization information to use an application. It can be used if you are building an API based integration and its actions are limited by the user role. For more information, read the [Profile Settings](profile-settings.md) documentation.
+:  A data structure that contains authentication and authorization information to use an application. It can be used if you are building an API-based integration and its actions are limited by the user role. For more information, read the [Profile Settings](profile-settings.md) documentation.
 
 _**Assigned (conversations)**_
 :  Every Conversation in Live Agent can have an assignee. An assignee can be manually added to the Conversation via the UI, the API, or automatically via an available round-robin assignment system.
@@ -41,7 +41,7 @@ _**Assist Bot**_
 For more information, read the [Assist Bot](assistants/assist-bot.md) documentation.
 
 _**Attachments**_
-:  In an ongoing conversation in Live Agent both, the user and the Agent can send files (images, videos, documents, forms). This way the files can be shared directly during a conversation. All the Attachments contained in the account conversations are available in the Settings menu.
+:  In an ongoing Live Agent conversation, both the user and the agent can send files such as images, videos, documents, and forms directly during the conversation. All attachments within account conversations are accessible in the Settings menu.
 For more information, read the [Attachments](settings/attachments.md) documentation.
 
 _**Audit Logs**_
@@ -67,7 +67,7 @@ For more information, read the [Agent Statuses](settings/agents.md) documentatio
 ## C
 
 _**Canned Responses**_
-: Pre-saved reply templates allow human Agents to respond to a conversation quickly.
+: Pre-saved reply templates allow human agents to respond to a conversation quickly.
 Canned Response templates provide support for HTML formatting.
 For creating a Canned Response, just click on the Add Canned Response.
 Canned responses are used with the help of Short Codes. Agents can access canned responses while on a chat by typing `/` followed by the short code.
@@ -81,7 +81,7 @@ _**Conversation**_
 : Your chats with various customers are referred to as conversations in Live Agent.
 This includes all session messages, including the customer, bot or human agent responses.
 A Conversation is the communication channel opened between an Agent and a customer.
-For more information, read the [OData Analytics Endpoint](tools/odata-endpoint.md#conversation) and the [Conversation workflow](conversation/conversation-workflow.md) documentation.
+For more information, read the [OData Analytics Endpoint](tools/odata-endpoint.md#conversation) and the [Conversation workflow](conversation/overview.md) documentation.
 
 _**Conversation Routing**_
 : The process of directing customer or user inquiries to the right agent or team. It matches inquiries with agent skills, languages, and workload, and ensures efficient issue resolution. How you can assign an Agent to a Conversation is described in the [Conversation Routing](conversation/conversation-routing/overview.md) documentation.
@@ -91,7 +91,7 @@ _**Conversation Status**_
 Unassigned, Assigned, Pending, Snoozed, Open, Resolved and Abandoned.
 
 _**Conversation Workflow**_
-: A structured sequence of steps that guide a conversation, from initiation to conclusion. It outlines how interactions progress, often involving greeting, information gathering, responses, problem resolution, and closing. For more information, read the [Conversation Workflow](conversation/conversation-workflow.md) documentation.
+: A structured sequence of steps that guide a conversation, from initiation to conclusion. It outlines how interactions progress, often involving greeting, information gathering, responses, problem resolution, and closing. For more information, read the [Conversation Workflow](conversation/overview.md) documentation.
 
 ## H
 
@@ -101,7 +101,7 @@ _**Human Agents**_
 ## I
 
 _**Inboxes**_
-: Workspaces where human agents handle real-time chat interactions with customers and manage related tasks You can have unlimited Inboxes in your Live Agent account and you can see conversations specific to an inbox by clicking on it. Also, there are some settings you can change in already existing Inboxes. For more information, read the [Inboxes](settings/inboxes.md) documentation.
+: Workspaces where human agents manage real-time chat interactions with customers and handle related tasks. In your Live Agent account, you can have unlimited inboxes, and you can view conversations specific to an inbox by clicking on it. Additionally, you can modify settings for already existing inboxes. For more information, read the [Inboxes](settings/inboxes.md) documentation.
 
 _**Inbox ID**_
 : A unique identifier that represents the connection between Cognigy.AI and Live Agent. It is used to link and manage the integration between these two systems, enabling seamless communication and data exchange.

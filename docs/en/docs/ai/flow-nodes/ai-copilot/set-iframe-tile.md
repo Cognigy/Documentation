@@ -1,7 +1,7 @@
 ---
 title: "Copilot: IFrame Tile"
 slug: "set-iframe-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: IFrame Tile

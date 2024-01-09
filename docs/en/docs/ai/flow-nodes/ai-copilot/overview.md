@@ -1,12 +1,12 @@
 ---
 title: "AI Copilot"
 slug: "overview"
-hidden: true
+hidden: false
 ---
 
 # AI Copilot Nodes
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../../release-notes/4.51.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 {! _includes/ai-copilot/pricing.md !}
 
@@ -22,6 +22,8 @@ Cognigy.AI supports the following Nodes:
 - [Copilot: IFrame Tile](set-iframe-tile.md)
 - [Copilot: Set Grid](set-grid.md)
 - [Copilot: Transcript Tile](transcript-tile.md)
+- [Copilot: Knowledge Tile](knowledge-tile.md)
+- [Copilot: Secure Forms Tile](secure-forms-tile.md)
 
 ## More Information
 

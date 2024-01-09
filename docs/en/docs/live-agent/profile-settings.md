@@ -61,7 +61,7 @@ For more information, read the [AI Copilot](assistants/ai-copilot.md) and [LA AI
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.59-blue.svg)](../release-notes/4.59.md)
 
-To send messages in the [conversation chat](conversation/conversation-workflow.md), you can select one of the following hotkey options:
+To send messages in the [conversation chat](conversation/overview.md), you can select one of the following hotkey options:
 
 - **None** — send messages by clicking the **Send** button. The ++enter++ key will be used for line breaks.
 - **Enter (↵)** — send messages by pressing the ++enter++ key instead of clicking the **Send** button. The ++shift+enter++ key combination will be used for line breaks.
@@ -69,7 +69,7 @@ To send messages in the [conversation chat](conversation/conversation-workflow.m
 
 ## API Access Token
 
-The displayed Access Token serves as the authentication and authorization key for the  [Live Agent API](https://liveagent-trial.cognigy.ai/openapi). It contains information specific to a user, and the actions it enables are restricted by the user's [assigned role](roles.md).
+The displayed Access Token serves as the authentication and authorization key for the [Live Agent API](https://liveagent-trial.cognigy.ai/openapi). It contains information specific to a user, and the actions it enables are restricted by the user's [assigned role](roles.md).
 
 ## More Information
 

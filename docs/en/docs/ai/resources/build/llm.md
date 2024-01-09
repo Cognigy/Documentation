@@ -16,6 +16,8 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 The table below lists the LLMs supported by Cognigy.
 
+{! _includes/release-notes/text-davinci-003-sunset.md !}
+
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & Search Extract Output Node | Generate Node Output | Knowledge Search | Sentiment Analysis |
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|----------------------------------------------|----------------------|------------------|--------------------|
 | **Microsoft Azure OpenAI**                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
@@ -36,7 +38,11 @@ The table below lists the LLMs supported by Cognigy.
 | **Google**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | text-bison-001 (Bard)                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
-| luminous-extended-control                                                                                                                  | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  | 
+| luminous-extended-control                                                                                                 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| luminous-embedding-128*                                                                                                   | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  | 
+
+!!! note "luminous-embedding-128"
+          This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use luminous-embedding-128, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.
 
 ## Add a Model
 

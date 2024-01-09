@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Identity Tile"
 slug: "identity-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Identity Tile
@@ -13,6 +13,7 @@ hidden: true
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node is designed to display and process customer-specific information directly within the widget of your AI Copilot Workspace, enhancing the context and usability of the identity-related data.
 

@@ -40,11 +40,14 @@ theme:
   language: en
 extra_css:
 - assets/css/extra.css
+- assets/css/cognigy.css
 extra_javascript:
 - assets/js/custom.js
 - assets/js/mathjax.js
+- assets/js/cognigy.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- https://github.com/Cognigy/WebchatWidget/releases/download/v2.57.0/webchat.legacy.js
 nav:
 - Cognigy Products: index.md
 - Languages:
@@ -52,6 +55,8 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.66:
+    - release-notes/4.66.md
   - 4.65:
     - release-notes/4.65.md
   - 4.64:
@@ -262,6 +267,7 @@ nav:
       - ai/flow-nodes/ai-copilot/set-iframe-tile.md
       - ai/flow-nodes/ai-copilot/set-grid.md
       - ai/flow-nodes/ai-copilot/transcript-tile.md
+      - ai/flow-nodes/ai-copilot/knowledge-tile.md
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -425,13 +431,14 @@ nav:
     - ai/installation/ip-ranges-shared-environments.md
     - ai/installation/reset-init-user-credentials.md
     - ai/installation/backups.md
-    - Migration Guides:
+    - Upgrade and Migration Guides:
       - ai/installation/migration/contents.md
       - ai/installation/migration/single-replica-mongoDB-to-multi-replica-mongoDB-migration.md
       - ai/installation/migration/kustomize-to-helm-migration.md
       - ai/installation/migration/efs-provisioner-to-efs-csi-migration.md
       - ai/installation/migration/from-nlu-v1-to-v2-migration.md
       - ai/installation/migration/single-replica-redis-to-redis-ha-migration.md
+      - ai/installation/migration/weaviate-upgrade-to-1.22.5.md
   - ai/billing.md
   - ai/limitations.md
   - Developer Guides:
@@ -529,19 +536,22 @@ nav:
     - Analytics:
       - live-agent/tools/odata-endpoint.md
   - Conversations:
-    - Workflow:
-      - live-agent/conversation/conversation-workflow.md
+    - live-agent/conversation/overview.md
+    - live-agent/conversation/assign-conversations.md
+    - live-agent/conversation/send-reply.md
     - Conversation Queue:
       - live-agent/conversation/conversation-queue.md
-    - Routing:
+    - Conversation Routing:
       - live-agent/conversation/conversation-routing/overview.md
       - live-agent/conversation/conversation-routing/manual-mode.md
       - live-agent/conversation/conversation-routing/automatic-mode.md
+    - live-agent/conversation/search-and-filter.md
+    - live-agent/conversation/other-operations.md
   - Assistants:
     - live-agent/assistants/overview.md
     - live-agent/assistants/la-ai-copilot.md
     - live-agent/assistants/ai-copilot.md
-    - live-agent/assistants/assist-bot.md
+    - live-agent/assistants/ai-copilot-bot.md
   - Reports:
     - live-agent/reports/overview.md
     - live-agent/reports/supervisor-overview.md

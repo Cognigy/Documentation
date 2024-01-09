@@ -1,7 +1,7 @@
 ---
 title: "Copilot: Transcript Tile"
 slug: "transcript-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: Transcript Tile
@@ -13,6 +13,7 @@ hidden: true
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
 

@@ -1,7 +1,7 @@
 ---
 title: "Copilot: HTML Tile"
 slug: "set-html-tile"
-hidden: true
+hidden: false
 ---
 
 # Copilot: HTML Tile

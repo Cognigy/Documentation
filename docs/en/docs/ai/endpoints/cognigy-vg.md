@@ -6,7 +6,7 @@ hidden: false
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../release-notes/4.66.md)
 
 ## Overview
 
@@ -67,6 +67,27 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
+## Generic Settings
+
+These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
+
+| Parameter                  | Type   | Description                                                                                                               |
+|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------|
+| Prosody Settings           | Toggle | If enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output. |
+| Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations.                        |
+
+### Prosody Settings
+
+| Parameter     | Type   | Description                                                                                   |
+|---------------|--------|-----------------------------------------------------------------------------------------------|
+| Output Speed  | Number | The change in the speaking rate for the contained text in percentage. Value range: -100 to 200. |
+| Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.            |
+| Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                      |
+
+#### Adapting Values for Your Chosen Speech Provider
+
+As with all Speech Provider settings, there are certain differences in the use of this feature. Refer to your Speech Provider's documentation first to understand which values to add. An example would be the difference between Microsoft Azure and Google. For Microsoft Azure, users need to specify the `%` by which they would like to increase or decrease from the default settings. For instance, an example value could be `Output Speed -20%`, indicating a `20%` reduction from the default output speed of `100%`, resulting in a new output speed of `80%`. To achieve the same effect with Google, users need to add the final output speed in `%` to the Prosody Settings. For example, `Output Speed 80%` directly displays the new output speed, as with Google, the final output speed is directly added to the settings.
+
 ## Call Events
 
 Allows activating call events for a Flow.
@@ -114,7 +135,7 @@ The Call Failover section is intended to handle runtime errors that occur on the
 | Endpointing Time            | Number        | This parameter is active only when Deepgram is selected in the STT Vendor setting and the Endpointing toggle is enabled. <br><br> Customize the duration (in milliseconds) for detecting the end of speech. The default is 10 milliseconds of silence. Transcripts are sent after detecting silence, and the system waits until the speaker resumes or the required silence time is reached. Once either condition is met, a transcript is sent back with `speech_final` set to `true`.                                                                                                                                                                                                   | Dial          |
 | Smart Formatting            | Toggle        | This parameter is active only when Deepgram is selected in the STT Vendor setting. <br><br> Deepgram's Smart Format feature applies additional formatting to transcripts to optimize them for human readability. Smart Format capabilities vary between models. When Smart Formatting is turned on, Deepgram will always apply the best-available formatting for your chosen model, tier, and language combination. For detailed examples, refer to the [Deepgram documentation](https://developers.deepgram.com/docs/smart-format). <br><br> Note that when Smart Formatting is turned on, punctuation will be activated, even if you have the Disable STT Punctuation setting enabled.  | Dial          |
 | Google Model                | Dropdown      | This parameter is active only when Google is selected in the STT Vendor setting.<br><br>Utilizes one of Google Cloud Speech-to-Text transcription models, with the `latest_short` model being the default choice. For a detailed list of Google models, refer to the [Transcription models](https://cloud.google.com/speech-to-text/docs/transcription-model#transcription_models)  section in the Google Documentation. Keep in mind that the `default` value is a Google Model type that can be used if other models don't suit your specific scenario.                                                                                                                                 | Dial          |
-| Transcription Webhook       | URL           | The Webhook is triggered with an HTTP POST whenever an interim or final transcription is received. Uses the default recognizer.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Dial          |
+| Transcription Webhook       | URL           | The Webhook is triggered with an HTTP POST whenever an interim or final transcription is received. Uses the default recognizer. <br><br> Note that if the [Voice Copilot](voice-copilot.md) Endpoint is inactive, you can use any Webhook URL to receive voice call transcripts. However, when the Voice Copilot Endpoint is enabled, ensure that the specified Webhook URL is associated with it for processing.                                                                                                                                                                                                                                                                         | Dial          |
 | STT Label                   | CognigyScript | The alternative name of the vendor is the one you [specify in the Voice Gateway Self-Service Portal](../../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have created multiple speech services from the same vendor, use the label to specify which service to use.                                                                                                                                                                                                                                                                                                                                                                                      | Dial          |
 | Audio Stream Selection      | Selector      | Select the source of the audio stream: <br> - **Caller/Called** - both the incoming and outgoing audio streams of the caller and the called party. <br> - **Caller** - the incoming and outgoing audio stream of the caller. <br>- **Called** - the incoming and outgoing audio stream of the called party. <br> <br> Ensure that the selected audio stream matches the language specified for transcription. If no audio stream is provided, the system will use the one set in the beginning, which should also match the language specified for transcription.                                                                                                                         | Dial          |
 | Custom Transfer SIP Headers | Toggle        | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | All           |

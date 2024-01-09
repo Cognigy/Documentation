@@ -140,6 +140,7 @@ This section details the data types that exist within the OData Collections that
   * [Steps](#steps)
   * [ExecutedSteps](#executedsteps)
   * [Sessions](#sessions)
+  * [LiveAgentEscalations](#liveagentescalations)
 
 ### Fields
 
@@ -439,6 +440,15 @@ When retrieving this collection, the endpoint will return the following fields:
 | localeReferenceId | Identifier for the specific locale reference              | String   | 7eff993c-b801-4556-b111-1c319e8577cf                             |
 | snapshotId        | Identifier of the snapshot                                | String   | 63ff0cc47a466cab278fd19b                                         |
 | endpsnapshotName  | Name of the snapshot                                      | String   | Prod-Snapshot 26.7.23                                            |
+
+### Entity Relationship Diagram
+
+<figure>
+    <img class="image-center" src="{{config.site_url}}ai/tools/images/insights-odata-entities.drawio.svg" width="100%" /> 
+    <figcaption>
+        This scheme describes the relationships between the collection entities
+    </figcaption>
+</figure>
 
 ## Integrations
 
