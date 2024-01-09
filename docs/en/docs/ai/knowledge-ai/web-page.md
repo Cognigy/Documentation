@@ -15,7 +15,7 @@ Knowledge AI supports using a web page as a type when creating a new Knowledge S
 
 Using a Web Page as a knowledge source has a current set of restrictions:
 
-- Any text that is visible on the page to the user will be included in the result. This includes cookie notices, for example
+- All visible text on the page, including items such as cookie notices, will be included in the result.
 - The content has to be a public facing website, accessible from the Cognigy environment
 - No images or OCR capabilities are supported
 
