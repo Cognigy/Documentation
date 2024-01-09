@@ -30,7 +30,7 @@ To ingest a web page as a new Knowledge Store, perform the following steps:
 3. Click **Save** and then click **New Knowledge Sources**.
 4. Click the drop-down menu under **Type** and select **Web Page**.
 5. Copy and paste the URL of the web page you want to ingest into the **URL** field.
-6. _(Optional)_ Add a Description and Source Tags.
+6. _(Optional)_ Add a description and Source Tags.
 7. Click **Create**. A new entry will appear in the Knowledge Store, and a task will be started to Parse Website Content.
 8. Wait until the status column shows a green checkmark.
 
@@ -55,4 +55,4 @@ The web page content will be imported into a knowledge source once. The source i
 - [Cognigy Text Format](ctxt.md)
 - [PDF](pdf.md)
   
-[^*]: * Lazy loading is a technique in web development that defers the loading of non-critical or non-visible content until it is needed, improving page load times and user experience.
+[^*]: Lazy loading is a technique in web development that defers the loading of non-critical or non-visible content until it is needed, improving page load times and user experience.
