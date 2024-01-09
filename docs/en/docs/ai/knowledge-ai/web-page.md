@@ -17,7 +17,7 @@ Using a Web Page as a knowledge source has a current set of restrictions:
 
 - All visible text on the page, including items such as cookie notices, will be included in the result.
 - The content must be hosted on a publicly accessible website, reachable from the Cognigy environment.
-- No images or OCR capabilities are supported
+- No images or OCR (Optical Character Recognition) capabilities are supported.
 
 ## How to Ingest a Web Page
 
