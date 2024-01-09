@@ -106,7 +106,7 @@ This will help the agent understand the history of the customer's issue.
 
 Cognigy provides three assistants for giving human agents support in their service conversations. You can choose the installation that best suits your requirements:
 
-- [Assist Bots](../assistants/assist-bot.md)
+- [AI Copilot Bot](../assistants/ai-copilot-bot.md)
 - [LA AI Copilot](../assistants/la-ai-copilot.md)
 - [AI Copilot Workspace](../assistants/ai-copilot.md)
 
