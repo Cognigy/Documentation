@@ -14,7 +14,7 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/dea6737-bdb5548-EP_Voice_Gateway.png" width="100%" />
 </figure>
 
-Within our **Cognigy.AI** platform you are able to connect your **Agent** to your Contact Center or other phone numbers using our **VoiceGateway**, allowing customers to speak with your **Agent** instead of just writing to it.
+Within our Cognigy.AI platform, you can connect Cognigy virtual agents to your contact center or other phone numbers using our VoiceGateway, enabling customers to speak with your Agent instead of just writing to it.
 
 ## Voice Gateway Specific Nodes
 
