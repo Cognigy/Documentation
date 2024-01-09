@@ -31,7 +31,7 @@ To ingest a web page as a new Knowledge Store, perform the following steps:
 4. Click the drop-down menu under **Type** and select **Web Page**.
 5. Copy and paste the URL of the web page you want to ingest into the **URL** field.
 6. _(Optional)_ Add a description and Source Tags.
-7. Click **Create**. A new entry will appear in the Knowledge Store, and a task will be started to Parse Website Content.
+7. Click **Create**. A new entry will appear in the Knowledge Store, and a task will be initiated to parse website content.
 8. Wait until the status column shows a green checkmark.
 
 You can now click the name of your Knowledge Source and inspect the results in the [Chunk Editor](overview.md#chunk-editor).
