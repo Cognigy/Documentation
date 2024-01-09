@@ -26,11 +26,11 @@ Before you can use a web page as a source, you must first follow the steps to [C
 To ingest a web page as a new Knowledge Store, perform the following steps:
 
 1. In the left-side menu, navigate to **Build** and then select **Knowledge**.
-2. Click **+ New Knowledge Store** and enter a Name and optional description.
+2. Click **+ New Knowledge Store** and enter a name and optional description.
 3. Click **Save** and then click **New Knowledge Sources**.
-4. Click the drop down menu under **Type** and select **Web Page**.
+4. Click the drop-down menu under **Type** and select **Web Page**.
 5. Copy and paste the URL of the web page you want to ingest into the **URL** field.
-6. (Optional) Add a Description and Source Tags.
+6. _(Optional)_ Add a Description and Source Tags.
 7. Click **Create**. A new entry will appear in the Knowledge Store, and a task will be started to Parse Website Content.
 8. Wait until the status column shows a green checkmark.
 
