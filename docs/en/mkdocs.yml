@@ -635,6 +635,8 @@ nav:
       - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
       - voicegateway/references/sip-trunk-providers.md
+  - Glossary:
+    - voicegateway/glossary.md
   - Release Notes:
     - voicegateway/release-notes.md
 - Marketplace:

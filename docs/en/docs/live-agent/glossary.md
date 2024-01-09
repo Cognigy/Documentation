@@ -112,7 +112,7 @@ _**LA Copilot**_
 : LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered Virtual Agents when conversing with the customer. Using this functionality, during an active handover, fully configurable virtual agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
 
 _**Labels**_
-: Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation. For more information, read the [Labels](settings/labels.md) documentation.
+: Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation.
 
 _**Live Agent**_
 : Cognigy product that combines conversational AI and human agents to enhance customer experiences and improve support team productivity. It allows a smooth transition between customer-virtual agent conversation and human support, making it easier to handle customer inquiries effectively. For more information, read the [Live Agent](overview.md) documentation.
