@@ -38,7 +38,7 @@ For more information, read the [Conversation Routing](conversation/conversation-
 
 _**Assist Bot**_
 :  A tool for assisting the Agents while talking to the customers. It consists of a dedicated Flow to provide information to the Agent. Therefore, it needs to be configured as a separate Flow in Cognigy.AI.
-For more information, read the [Assist Bot](assistants/assist-bot.md) documentation.
+For more information, read the [AI Copilot Bot](assistants/ai-copilot-bot.md) documentation.
 
 _**Attachments**_
 :  In an ongoing Live Agent conversation, both the user and the agent can send files such as images, videos, documents, and forms directly during the conversation. All attachments within account conversations are accessible in the Settings menu.
