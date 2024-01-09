@@ -40,10 +40,10 @@ You can now click the name of your Knowledge Source and inspect the results in t
 
 When ingesting a web page, the Knowledge AI chunking process will perform the following:
 
-1. Visit the URL as a page of a browser session
-2. Scroll to the bottom of a web page 
+1. Visit the URL as a page in a browser session.
+2. Scroll to the bottom of the web page. 
 3. Access "lazy-loaded" content by checking for any text changes until the page is stable and no longer loading additional text
-4. Generate Knowledge Source content based on the result of visible text
+4. Generate Knowledge Source content based on the visible text result.
 
 The web page content will be imported into a knowledge source once. The source is not automatically updated to reflect future content changes on the web page.
 
