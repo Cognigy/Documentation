@@ -6,7 +6,7 @@ hidden: false
 
 # AI Copilot Configuration
 
-The AI Copilot configuration refers to the AI Copilot Config, which you can define via API to configure the position and size of the widgets in your grid. This functionality provides full flexibility to use the Agent Assist Workspace as efficiently as possible.
+The AI Copilot configuration refers to the AI Copilot Config, which you can define via API to configure the position and size of the widgets in your grid. This functionality provides full flexibility to use the AI Copilot Workspace as efficiently as possible.
 
 The workspace can be customized to display various types of content, such as HTML, adaptive cards, or iframes. While configuring your grid you can choose the best placement for specific types of widgets.
 

@@ -22,4 +22,4 @@ To set up your Project for assistants, choose a virtual assistant that best suit
 
 ## More Information
 
-- [Agent Assist Workspace Overview](../../ai-copilot/overview.md)
+- [AI Copilot Workspace Overview](../../ai-copilot/overview.md)
