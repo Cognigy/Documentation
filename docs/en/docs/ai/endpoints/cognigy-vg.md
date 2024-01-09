@@ -78,11 +78,11 @@ These settings will be valid for every session of this Endpoint. The **Set Sessi
 
 ### Prosody Settings
 
-| Parameter     | Type   | Description                                                                                   |
-|---------------|--------|-----------------------------------------------------------------------------------------------|
+| Parameter     | Type   | Description                                                                                     |
+|---------------|--------|-------------------------------------------------------------------------------------------------|
 | Output Speed  | Number | The change in the speaking rate for the contained text in percentage. Value range: -100 to 200. |
-| Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.            |
-| Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                      |
+| Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.              |
+| Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                        |
 
 #### Adapting Values for Your Chosen Speech Provider
 
@@ -138,8 +138,8 @@ The Call Failover section is intended to handle runtime errors that occur on the
 | Transcription Webhook       | URL           | The Webhook is triggered with an HTTP POST whenever an interim or final transcription is received. Uses the default recognizer. <br><br> Note that if the [Voice Copilot](voice-copilot.md) Endpoint is inactive, you can use any Webhook URL to receive voice call transcripts. However, when the Voice Copilot Endpoint is enabled, ensure that the specified Webhook URL is associated with it for processing.                                                                                                                                                                                                                                                                         | Dial          |
 | STT Label                   | CognigyScript | The alternative name of the vendor is the one you [specify in the Voice Gateway Self-Service Portal](../../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor). If you have created multiple speech services from the same vendor, use the label to specify which service to use.                                                                                                                                                                                                                                                                                                                                                                                      | Dial          |
 | Audio Stream Selection      | Selector      | Select the source of the audio stream: <br> - **Caller/Called** - both the incoming and outgoing audio streams of the caller and the called party. <br> - **Caller** - the incoming and outgoing audio stream of the caller. <br>- **Called** - the incoming and outgoing audio stream of the called party. <br> <br> Ensure that the selected audio stream matches the language specified for transcription. If no audio stream is provided, the system will use the one set in the beginning, which should also match the language specified for transcription.                                                                                                                         | Dial          |
+| Referred By                 | String        | This parameter is optional.<br><br> This setting allows you to change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. To define the Referred By value, you can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>- **User Identifier** - `sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example, `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.                                                                                | Refer         |
 | Custom Transfer SIP Headers | Toggle        | Data that needs to be sent as SIP headers in the generated SIP message.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | All           |
-
 
 ## Generic Endpoint Settings
 
