@@ -8,6 +8,13 @@ hidden: false
 
 The AI Copilot workspace is designed to work with any contact center. However, additional contact-center-specific configuration may be required. 
 
+## Native Supported Contact Centers
+
+Cognigy provides native integration with the following contact centers:
+
+- [Genesys Cloud](../ai/handover-providers/genesys-cloud-open-messaging.md#ai-copilot-workspace)
+- [Salesforce Service Cloud](../ai/handover-providers/salesforce-handover.md#integrate-copilot-into-salesforce-service-cloud)
+
 ## More Information
 
 - [AI Copilot Workspace](overview.md)
