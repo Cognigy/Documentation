@@ -95,18 +95,19 @@ The maximum number of stores per project is described in the [Limitations](#limi
 
 #### Knowledge Source
 
-A _Knowledge Source_ represents the output of transforming various types of files into a structured and accessible format. Each file corresponds uniquely to a specific Knowledge Source, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
+A _Knowledge Source_ represents the output of transforming various types of content into a structured and accessible format. Each content type corresponds uniquely to a specific Knowledge Source, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
 
-By breaking down the content of these files into smaller units known as _chunks_, the Knowledge Source becomes a specific collection of organized and structured knowledge.
+By breaking down the content of these sources into smaller units known as _chunks_, the Knowledge Source becomes a specific collection of organized and structured knowledge.
 
 In addition to the main content, you can include other types of information, such as links and dates, in the metadata.
 
-The following types of files are supported:
+The following types of content are supported:
 
 - `.ctxt` (recommended) 
 - `.txt`
 - `.pdf`
 - `.docx`
+- ` Web Page`
 
 The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
@@ -121,7 +122,7 @@ The maximum number of sources per store is described in the [Limitations](#limit
 Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
 as a result, improve the accuracy of search outputs.
 
-To apply these tags, specify them when uploading a source file.
+To apply these tags, specify them when uploading a source type.
 For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
 while for other formats,
 you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
