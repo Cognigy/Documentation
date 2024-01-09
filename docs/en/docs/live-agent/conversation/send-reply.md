@@ -19,6 +19,8 @@ Within a conversation, as a human agent, you can send a reply to the following a
 
 ## Send a Reply to a User
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
+
 To respond to a user in a conversation, type your message in the **Reply** section and click **Send**. 
 
 For quick replies, you can use canned responses, variables, or a combination of both.
@@ -154,6 +156,8 @@ When you select the canned response, variables in the response will be replaced 
 If any of the variables do not have values, you will receive a corresponding warning.
 
 ## Send a Reply to Another Human Agent
+
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
 
 As a human agent, you can discuss the end user's conversation with another agent if you need additional clarification or assistance.
 

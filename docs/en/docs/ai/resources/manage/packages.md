@@ -6,6 +6,8 @@ hidden: false
 
 # Packages
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../../release-notes/4.67.md)
+
 _Packages_ allow the export and import of individual resources, such as Flows or Lexicons, for the purpose of sharing these assets with other teams. Packages automatically include their direct dependencies and can be shared as a portable zip archive once downloaded.
 
 You can either create a Package for a single resource or for multiple resources.
