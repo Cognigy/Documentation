@@ -67,6 +67,27 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 !!! note "NumberMetaData in Tokens"
     All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
 
+## Generic Settings
+
+These settings will be valid for every session of this Endpoint. The **Set Session Config** or **Say** Nodes with **Activity Parameters** enabled can override the **Prosody Settings** option configured within the Endpoint.
+
+| Parameter                  | Type   | Description                                                                                                               |
+|----------------------------|--------|---------------------------------------------------------------------------------------------------------------------------|
+| Prosody Settings           | Toggle | If enabled, this configuration will be used to specify changes to speed, pitch, and volume for the text-to-speech output. |
+| Show Best Transcripts Only | Toggle | If enabled, only the best transcript in the input object is accessible, instead of all variations.                        |
+
+### Prosody Settings
+
+| Parameter     | Type   | Description                                                                                   |
+|---------------|--------|-----------------------------------------------------------------------------------------------|
+| Output Speed  | Number | The change in the speaking rate for the contained text in percentage. Value range: -100 to 200. |
+| Output Pitch  | Number | The baseline pitch for the contained text in percentage. Value range: -100 to 200.            |
+| Output Volume | Number | The volume for the contained text in percentage. Value range: 10 to 200.                      |
+
+#### Adapting Values for Your Chosen Speech Provider
+
+As with all Speech Provider settings, there are certain differences in the use of this feature. Refer to your Speech Provider's documentation first to understand which values to add. An example would be the difference between Microsoft Azure and Google. For Microsoft Azure, users need to specify the `%` by which they would like to increase or decrease from the default settings. For instance, an example value could be `Output Speed -20%`, indicating a `20%` reduction from the default output speed of `100%`, resulting in a new output speed of `80%`. To achieve the same effect with Google, users need to add the final output speed in `%` to the Prosody Settings. For example, `Output Speed 80%` directly displays the new output speed, as with Google, the final output speed is directly added to the settings.
+
 ## Call Events
 
 Allows activating call events for a Flow.

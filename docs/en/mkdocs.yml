@@ -40,11 +40,14 @@ theme:
   language: en
 extra_css:
 - assets/css/extra.css
+- assets/css/cognigy.css
 extra_javascript:
 - assets/js/custom.js
 - assets/js/mathjax.js
+- assets/js/cognigy.js
 - https://polyfill.io/v3/polyfill.min.js?features=es6
 - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+- https://github.com/Cognigy/WebchatWidget/releases/download/v2.57.0/webchat.legacy.js
 nav:
 - Cognigy Products: index.md
 - Languages:
@@ -549,7 +552,7 @@ nav:
     - live-agent/assistants/overview.md
     - live-agent/assistants/la-ai-copilot.md
     - live-agent/assistants/ai-copilot.md
-    - live-agent/assistants/assist-bot.md
+    - live-agent/assistants/ai-copilot-bot.md
   - Reports:
     - live-agent/reports/overview.md
     - live-agent/reports/supervisor-overview.md
