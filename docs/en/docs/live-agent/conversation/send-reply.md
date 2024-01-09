@@ -162,7 +162,7 @@ To send a reply to another human agent, follow these steps:
 3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the end user but only to you and your team.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/conversations/images/private-message.png" width="100%" alt="Live Agent Private Message" />
+<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/private-message.png" width="100%" alt="Live Agent Private Message" />
   <figcaption>Private Message with Agent</figcaption>
 </figure>
 
