@@ -6,7 +6,7 @@ hidden: false
 
 # Cognigy Voice Gateway
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../release-notes/4.66.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
 
 ## Overview
 
