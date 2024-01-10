@@ -7,13 +7,7 @@ hidden: false
 
 # Insights Glossary
 
-All the terms are given in the glossary for informational purposes.
-
-_**Session**_
-: A unit of interaction between a user and a Cognigy virtual or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. The session can contain an unlimited number of user inputs.
-
-_**Conversation**_
-: A billable unit of interaction between a user and a Cognigy virtual or human agent. For more information about billed conversations, read [Cognigy Billing Policy](../ai/billing.md).
+Insights terms listed in alphabetical order. All the terms are given in the glossary for informational purposes.
 
 ## A
 
@@ -97,6 +91,9 @@ _**Overview**_
 : A dashboard in Cognigy Insights that displays various metrics as numerical percentages and in various graphical displays such as bar charts, ring charts, tiles, or time-based line charts. The charts display data based on the Filter settings. For more information, read the [Dashboard Overview](dashboard-overview.md) documentation.
 
 ## S
+
+_**Session**_
+: A unit of interaction between a user and a Cognigy virtual or human agent. The session begins when a user sends their initial input to Cognigy, which can be either a chat or voice message, and ends when the user or human agent completes or terminates the interaction. The session can contain an unlimited number of user inputs.
 
 _**Snapshots**_
 : An exported Agent that includes required resources, it's an immutable, just-in-time copy of all relevant resources of the Agent. For more information, read the [Global Filters: Snapshots](global-filter.md#snapshot) documentation.
