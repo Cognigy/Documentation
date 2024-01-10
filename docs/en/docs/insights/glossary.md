@@ -64,7 +64,7 @@ _**Live Agent**_
 : A dashboard in Cognigy Insights that presents Live Agent metrics for a specific virtual agent. For more information, read the [Live Agent](dashboard-live-agent.md) documentation.
 
 _**Live Agent Handovers**_
-: An Indicator chart that displays the number of handovers. Handovers occur when a virtual agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboard-live-agent.md#live-agent-escalations) documentation.
+: An Indicator chart that displays the number of handovers. Handovers occur when a virtual agent transfers a conversation to a human agent, and multiple handovers may occur during a session. For more information, read the [Live Agent Escalations](dashboard-live-agent.md#live-agent-handovers) documentation.
 
 _**Local Filter**_
 : The Local Filter options are specific to a dashboard or an explorer. For more information, see the [Local Filter](message-explorer.md) example.
@@ -75,7 +75,7 @@ _**Message Explorer**_
 : An analysis tool designed for efficiently searching specific customer or virtual agent messages within the context of an ongoing conversation. It provides a comprehensive view by revealing the messages preceding and following a selected one. For more information, read the [Message Explorer](message-explorer.md) documentation.
 
 _**Message Rating**_
-: A configurable Global Filter setting, allows users to refine their data analysis based on the sentiment of user feedback within a session.
+: A configurable Global Filter setting allows users to refine their data analysis based on the sentiment of user feedback within a session.
 
 _**Message Research**_
 : A feature of the Transcript Explorer and Message Explorer is to find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. For more information, read the corresponding sections in the [Transcript Explorer](transcript-explorer.md#message-research) and the [Message Explorer](message-explorer.md) documentation.
