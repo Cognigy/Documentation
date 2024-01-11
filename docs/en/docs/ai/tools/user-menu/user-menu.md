@@ -7,7 +7,9 @@ hidden: false
 
 # User Menu
 
-The _User Menu_ provides access to various user-specific features. Customize preferences, monitor billing and audit events, manage roles with ACL, access Cognigy products and documentation quickly, and log out.
+The _User Menu_ provides access to various user-specific features.
+From the User menu, you can customize preferences, monitor billing and audit events,
+manage roles with ACL, access Cognigy products and documentation quickly, and log out.
 
 To open the User Menu, follow these steps:
 
