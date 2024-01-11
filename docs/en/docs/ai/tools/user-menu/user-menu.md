@@ -1,45 +1,31 @@
 ---
- title: "User Menu" 
- slug: "user-menu" 
- hidden: false 
+title: "User Menu" 
+slug: "user-menu"
+description: "The User Menu provides access to various user-specific features. Customize preferences, monitor billing and audit events, manage roles with ACL, access Cognigy products and documentation quickly, and log out."
+hidden: false 
 ---
+
 # User Menu
 
-The **User Menu** provides access to a set of menu items that are related to the user who is logged in.
+The _User Menu_ provides access to various user-specific features. Customize preferences, monitor billing and audit events, manage roles with ACL, access Cognigy products and documentation quickly, and log out.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/new-user-menu.png" width="100%" />
-</figure>
+To open the User Menu, follow these steps:
 
-### My Profile
+1. Go to the Cognigy.AI interface.
+2. In the upper-right corner of the Cognigy.AI interface, click ![user-menu](../../../assets/icons/user-menu.svg).
 
-The [My Profile](my-profile.md) view exposes several settings that apply to the user who is logged in.
+## User Menu Options
 
-### Access Control
+The following options are available in the User Menu:
 
-The [Access Control](access-control.md) interface offers a user management interface. It acts as an Access Control List (ACL) and enables to give users a specific role. 
-
-### Organisation Details
-
-The [Organisation Details](organisation-details.md) interface offers a platform with analytics overview for agent usage. 
-
-### Audit Events
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.35.0-blue.svg)]({{config.site_url}})
-
-The [Audit Events](audit-events.md) dashboard offers a user interface that allows admin users to see what actions other users from the team are doing. 
-
-### Documentation
-
-This option refers to the documentation that you are currently browsing.
-
-### Insights
-
-[Insights](../../../insights/cognigy-insights.md) is a Cognigy analytics reporting tool to improve your customer service.
-
-### Live Agent
-[Live Agent](../../../live-agent/assistants/overview.md) allows human agents using Cognigy Live Agent to be assisted by AI-powered agents when conversing with a customer.
-
-### Logout
-
-This option lets the user log out of the user interface. Indicated you can also see the product version you are currently using.
+| Option                                                   | Description                                                                                                                                                                                                                      |
+|----------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [My Profile](my-profile.md)                              | The interface where you can manage and customize personal account settings.                                                                                                                                                      |
+| [Access Control](access-control.md)                      | The interface where you can manage user roles. It works as an Access Control List (ACL) and allows users to be assigned specific roles.                                                                                          |
+| [Organisation Details](organisation-details.md)          | The interface where you can track the number of billable conversations within your organization. Additionally, you can activate other Cognigy services such as Live Agent and Voice Gateway, as well as delete the organization. |
+| [Audit Events](audit-events.md)                          | The interface where users with the Admin role can monitor actions performed by other users within your organization's account.                                                                                                   |
+| Documentation                                            | The link to access the Cognigy technical documentation.                                                                                                                                                                          |
+| [Insights](../../../insights/cognigy-insights.md)        | The link to access Cognigy Insights.                                                                                                                                                                                             |
+| [Live Agent](../../../live-agent/assistants/overview.md) | The link to access Cognigy Live Agent.                                                                                                                                                                                           |
+| [Voice Gateway](../../../voicegateway/overview.md)       | The link to access Cognigy Voice Gateway.                                                                                                                                                                                        |
+| Logout                                                   | The option allows users to log out of the interface and also provides the ability to view the current product version.                                                                                                           |
