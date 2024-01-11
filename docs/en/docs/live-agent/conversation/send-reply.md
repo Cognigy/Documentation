@@ -19,12 +19,16 @@ Within a conversation, as a human agent, you can send a reply to the following a
 
 ## Send a Reply to a User
 
-To respond to a user in a conversation, type your message in the **Reply** section and click **Send**.
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
+
+To respond to a user in a conversation, type your message in the **Reply** section and click **Send**. 
 
 For quick replies, you can use canned responses, variables, or a combination of both.
 
 By default, you can send messages by pressing ++cmd+enter++ or ++ctrl+enter++ instead of clicking the **Send** button.
 The ++enter++ key will be used for line breaks. If you want to change hotkey options, go to [Profile Settings](../profile-settings.md).
+
+If you don't send your reply right away but have already composed it, the message will be saved for 24 hours. This means that when you switch to another conversation and return to the previous one, you'll find the initial draft of your reply.
 
 ### Reply Options
 
@@ -153,6 +157,8 @@ If any of the variables do not have values, you will receive a corresponding war
 
 ## Send a Reply to Another Human Agent
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
+
 As a human agent, you can discuss the end user's conversation with another agent if you need additional clarification or assistance.
 
 To send a reply to another human agent, follow these steps:
@@ -162,7 +168,7 @@ To send a reply to another human agent, follow these steps:
 3. Click **Add Note** to send the message. You can see a locked sign ![locked sign](../../assets/icons/locked.svg) in the chat next to the message that has been sent. This message will not be visible to the end user but only to you and your team.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}live-agent/conversations/images/private-message.png" width="100%" alt="Live Agent Private Message" />
+<img class="image-center" src="{{config.site_url}}live-agent/conversation/images/private-message.png" width="100%" alt="Live Agent Private Message" />
   <figcaption>Private Message with Agent</figcaption>
 </figure>
 
@@ -170,6 +176,8 @@ The second agent addressed in the private note will receive a notification in th
 Subsequent replies by the second agent will be visible on the **Private Note** tab.
 
 You can find all conversations where other agents mentioned you. To do so, use the **@Mentions** option at the top of the Inboxes list.
+
+If you don't send your reply right away but have already composed it, the message will be saved for 24 hours. This means that when you switch to another conversation and return to the previous one, you'll find the initial draft of your private note.
 
 ### Delete a Private Note
 
