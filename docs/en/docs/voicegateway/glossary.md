@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 slug: "glossary"
-description: "Voice Gateway Glossary provides a reference for users, administrators, and anyone involved in the operation or understanding of Live Agent software and practices."
+description: "Voice Gateway Glossary provides a reference for users, administrators, and anyone involved in the operation or understanding of Voice Gateway software and practices."
 hidden:  false
 ---
 
