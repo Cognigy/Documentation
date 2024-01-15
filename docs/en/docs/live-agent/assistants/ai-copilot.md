@@ -50,6 +50,13 @@ This Workspace is accessible from the right side of the conversation chat.
 
 If the testing is successful, the AI Copilot setup is complete.
 
+## Troubleshooting
+
+### Transcript Tile Not Sending Messages
+
+To send messages from the Transcript Tile chat to the end user's conversation chat, assign a human agent.
+If the conversation remains unassigned, the Transcript Tile will not operate properly, as there will be no human agent to associate with the message when it is created.
+
 ## More Information 
 
 - [AI Copilot Overview](../../ai-copilot/overview.md)
