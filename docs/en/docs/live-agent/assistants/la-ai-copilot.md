@@ -54,10 +54,9 @@ If the testing is successful, the LA AI Copilot setup is complete.
 
 ## Troubleshooting
 
-### The Transcript Tile Not Sending Messages
+### Transcript Tile Not Sending Messages
 
-To send a message from the Transcript Tile chat to the conversation chat with the end user,
-it is necessary to assign a human agent.
+To send messages from the Transcript Tile chat to the end user's conversation chat, assign a human agent.
 If the conversation remains unassigned, the Transcript Tile will not operate properly, as there will be no human agent to associate with the message when it is created.
 
 ## More Information
