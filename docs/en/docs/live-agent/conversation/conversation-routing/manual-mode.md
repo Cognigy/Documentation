@@ -1,6 +1,6 @@
 ---
 title: "Manual Mode"
-slug: "cmanual-mode"
+slug: "manual-mode"
 description: "Manual assignment mode can be helpful in scenarios requiring specialized expertise, urgent or high-priority cases, complex or sensitive issues, and or key customers."
 hidden: false
 ---
@@ -45,7 +45,7 @@ You can manually unassign a conversation to an agent or team by following these 
 
 If the **Unassign** value appears in the **Assigned Agent** list, the conversation will be displayed in the list of unassigned conversations.
 
-## More information
+## More Information
 
 - [Automatic Conversation Mode](automatic-mode.md)
 - [Conversation Routing](overview.md)

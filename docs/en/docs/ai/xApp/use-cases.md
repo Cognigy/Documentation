@@ -15,7 +15,7 @@ The xApps can be used in two different ways:
 
 You can use an xApp in addition to the main communication channels, such as voice, Webchat Widget, Teams, WhatsApp, and others. The full list is provided in [Supported Channels](supported-browsers-and-channels.md#supported-channels).
 
-To learn how it works, follow [Getting Started](getting-started.md) (Advanced part).
+To learn how it works, follow [Build an xApp with multiple channels](build/xApp-with-multi-channels.md).
 
 ### Power up virtual agents
 
@@ -23,13 +23,13 @@ Enhance the capabilities of virtual agents by supporting use cases that go beyon
 
 ### Power up human agents
 
-Enable Agent Assist to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
+Enable AI Copilot to suggest xApps to human agents. These xApps can be shared with users to simplify tasks like form completion or perform actions that the agent cannot handle alone, such as fingerprint authentication or collecting payments.
 
 ## Standalone
 
 You can use an xApp as a standalone application. The xApp can be built to address specific tasks or processes that don't require a conversation. These xApps can be accessed via a URL, allowing users to interact with them directly without the need for another communication channel.
 
-To learn how it works, follow [Tutorial: Create a Standalone xApp](https://support.cognigy.com/hc/en-us/articles/8867141515676).
+To learn how it works, follow [Create a Standalone xApp](build/standalone-xApp.md).
 
 ## Examples
 
@@ -51,6 +51,8 @@ Users can securely verify their identity and gain access to specific services or
 With xApps, you can offer users an interface to choose their preferred seat for their flight.
 
 Users can view the available seats and select the seat of their choice, enhancing their travel experience.
+
+You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/flight-seat-picker) repository.
 
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/select-seat.png" width="50%">
@@ -96,17 +98,17 @@ With xApps, you can provide a digital signature functionality.
 
 Users can sign documents or forms electronically, eliminating the need for physical signatures and streamlining paperwork processes.
 
+You can find an example of implementation in the [Cognigy GitHub](https://github.com/Cognigy/xApps/tree/main/xapps/signature) repository.
+
 <figure>
     <img class="image-center" src="{{config.site_url}}/ai/images/xApp/use-cases/signature-pad.png" width="50%">
     <figcaption>Create a signature</figcaption>
 </figure>
 
-## More information
+## More Information
 
 - [Overview](overview.md)
-- [Getting Started](getting-started.md)
-- [Build an xApp](build-an-xApp.md)
-- [Tutorial: Creating a Signature with an xApp](https://support.cognigy.com/hc/en-us/articles/8868026263708)
+- [Build an xApp](build/overview.md)
 - [Architecture](architecture.md)
 - [xApp Nodes](../flow-nodes/xApp/overview.md)
 - [xApp Tokens](tokens.md)

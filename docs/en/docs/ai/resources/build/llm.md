@@ -6,7 +6,7 @@ hidden: false
 ---
 # Large Language Model (LLM)
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.59-blue.svg)](../../../release-notes/4.59.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../../release-notes/4.65.md)
 
 [Large Language Models (LLMs)](https://en.wikipedia.org/wiki/Large_language_model) are a specific type of Generative AI model that are designed for generating human-like text based on the input and context provided. These models are trained on vast amounts of text data, allowing them to learn patterns, syntax, and semantic relationships between words and phrases. 
 
@@ -16,14 +16,20 @@ With LLMs, Cognigy virtual agents can understand and respond to user input in a 
 
 The table below lists the LLMs supported by Cognigy.
 
+{! _includes/release-notes/text-davinci-003-sunset.md !}
+
 | Models/<br>Cognigy Features                                                                                               | Intent Sentence Generation | AI Enhanced Outputs | Lexicon Generation | Flow Generation | GPT Conversation Node | LLM Prompt Node & Search Extract Output Node | Generate Node Output | Knowledge Search | Sentiment Analysis |
 |---------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------|--------------------|-----------------|-----------------------|----------------------------------------------|----------------------|------------------|--------------------|
 | **Microsoft Azure OpenAI**                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
+| gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | text-davinci-003 ([Deprecated](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/legacy-models#gpt-35)) | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
 | text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
 | **OpenAI**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | gpt-3.5-turbo (ChatGPT)                                                                                                   | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | +                  |
+| gpt-3.5-turbo-instruct                                                                                                    | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| gpt-4                                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | text-davinci-003 ([Deprecated](https://platform.openai.com/docs/deprecations/2023-07-06-gpt-and-embeddings))              | +                          | +                   | +                  | +               | +                     | +                                            | +                    | -                | -                  |
 | text-embedding-ada-002                                                                                                    | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  |
 | **Anthropic**                                                                                                             |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
@@ -31,7 +37,12 @@ The table below lists the LLMs supported by Cognigy.
 | claude-instant-v1                                                                                                         | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
 | **Google**                                                                                                                |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
 | text-bison-001 (Bard)                                                                                                     | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| **Aleph Alpha**                                                                                                           |                            |                     |                    |                 |                       |                                              |                      |                  |                    |
+| luminous-extended-control                                                                                                 | -                          | -                   | -                  | -               | -                     | +                                            | -                    | -                | -                  |
+| luminous-embedding-128*                                                                                                   | -                          | -                   | -                  | -               | -                     | -                                            | -                    | +                | -                  | 
 
+!!! note "luminous-embedding-128"
+          This feature is currently in Beta and may contain issues. Only one type of embedding LLM should be used per project. If you choose to use luminous-embedding-128, you must create a new project. Once you have chosen an embedding model for a project, you cannot switch to a different embedding model; you must use a different project. Failing to do so will result in errors while this feature is in Beta.
 
 ## Add a Model
 
@@ -91,7 +102,7 @@ To delete a model, follow these steps:
 
 The model will be deleted from the list.
 
-## More information
+## More Information
 
 - [Generative AI](../../generative-ai.md)
 - [Knowledge AI](../../knowledge-ai/overview.md)

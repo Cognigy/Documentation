@@ -43,7 +43,7 @@ To assign a skill to a human agent, follow these steps:
 
 The skills will appear in the **Skills** column of the row with the agent.
 
-If you want to remove a skill from the raw with the agent, open the **Skills** window and click ![cross](../images/icons/cross.svg)  on the right side of the selected skill.
+If you want to remove a skill from the row with the agent, open the **Skills** window and click ![cross](../images/icons/cross.svg) on the right side of the selected skill.
 
 ## Apply Skills
 

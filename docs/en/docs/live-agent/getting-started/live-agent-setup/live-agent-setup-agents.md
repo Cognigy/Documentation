@@ -6,13 +6,13 @@ hidden: false
 
 # Add Agents and Admins to Live Agent
 
-Once you have [set up your Endpoint and Flow for Handover to Live Agent](live-agent-setup-handover.md), tested a Conversation, you can then proceed to add new Agents and Admins and assign them to Inboxes in Live Agent.
+Once you have [set up your Endpoint and Flow for Handover to Live Agent](live-agent-setup-handover.md) and tested a conversation, you can then proceed to add new Agents and Admins and assign them to Inboxes in Live Agent.
 
 ## Create a User
 
 To create a User, follow these steps:
 
-1. Open the Cognigy.AI interface. If the Agent or Admin you want to add already exists as a User in Cognigy.AI, proceed to [Adding Live Agent Roles to Users](#Adding-Live-Agent-Roles-to-Users).
+1. Open the Cognigy.AI interface. If the Agent or Admin you want to add already exists as a User in Cognigy.AI, proceed to [Adding Live Agent Roles to Users](#add-live-agent-roles-to-users).
 2. In the upper-right corner, click **User Menu > Access Control**.
 3. In the upper-left corner of the **Users** page, click **+ Create new User**. 
 4. In the **New User** window, fill in the following fields:

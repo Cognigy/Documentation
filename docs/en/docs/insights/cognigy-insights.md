@@ -156,7 +156,7 @@ You can always go back to Cognigy.AI and your virtual Agent also by clicking the
     - [Insights product introduction / German](https://youtu.be/kCkUrHM9dQo)
     - [Insights product introduction / English](https://youtu.be/hYB2iQ_dT5g)
 
-## More information
+## More Information
 
 - [Global Filter]({{config.site_url}}insights/global-filter/)
 

@@ -83,11 +83,6 @@ Alexa Channel after searching for the term 'Welcome'
 Go To Node Editor after searching for the term 'Welcome'
 <img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-goTo-node.png" width="100%" />
 
-**Example 5:**
-Say Node Editor Channel tabs with matching fields in 'Default' and 'Google Actions' form, with 'Alexa' as the selected tab 
-<img style="padding-bottom: 20px;" class="image-center" src="{{config.site_url}}ai/tools/images/search-in-say-node-channel-tabs.png" width="100%" />
-
-
 ### Search nodes with Analytics Step
 <div class="divider"></div>
 

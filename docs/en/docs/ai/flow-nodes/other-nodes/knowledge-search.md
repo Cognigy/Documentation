@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge Search
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.57-blue.svg)](../../../release-notes/4.57.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.61-blue.svg)](../../../release-notes/4.61.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/knowledge-search.png" width="80%"/>
@@ -16,8 +16,8 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-!!! warning
-    The Node will soon be deprecated. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node that includes the same functionality as this one.
+!!! danger "Deprecation of the Knowledge Search Node"
+    The Node is deprecated. To ensure a seamless transition, we strongly recommend using the [Search Extract Output](search-extract-output.md) Node that includes the same functionality as this one.
 
 This Node searches and retrieves content from data that was previously uploaded to the Knowledge AI solution.
 
@@ -45,8 +45,7 @@ Select a store from the list to allow the Node to retrieve the data.
 | Input Key to store result     | CognigyScript | The location in the input object where the result will be stored. For example, `input.knowledgeSearch`.                                                                        |
 | Input Context to store result | CognigyScript | The location in the context object where the result will be stored. For example, `context.knowledgeSearch`.                                                                    |
 
-## More information
+## More Information
 
 - [Search Extract Output](search-extract-output.md) 
 - [Knowledge Search Overview](../../knowledge-ai/overview.md)
-

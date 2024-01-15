@@ -87,7 +87,7 @@ Our inject- and notify-APIs don't support all channels we are compatible with. T
 
 The following list shows all endpoints both APIs are compatible with:
 
-- [Facebook Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/)
+- [Facebook (Meta) Messenger]({{config.site_url}}ai/endpoints/facebook-messenger/)
 - [LINE Messenger]({{config.site_url}}ai/endpoints/line-messenger/)
 - [Azure Bot Services]({{config.site_url}}ai/endpoints/azure-bot-services/)
 - [RingCentral Engage]({{config.site_url}}ai/endpoints/ringcentral-engage/)

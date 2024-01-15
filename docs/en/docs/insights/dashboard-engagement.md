@@ -1,7 +1,7 @@
 ---
- title: "Engagement" 
- slug: "dashboard-engagement" 
- hidden: false 
+title: "Engagement" 
+slug: "dashboard-engagement" 
+hidden: false 
 ---
 # Engagement Dashboard
 
@@ -67,7 +67,12 @@ Calculation:
 
 1. Length for a particular session `Max(timestamp) - Min(timestamp)`.
 2. `Length of all sessions / total number of sessions`.
-   
+
+Example:
+
+1. Total Length = `3 minutes + 1 hour + 10 minutes + 14 minutes + 10 minutes  = 1 hour 37 minutes`
+2. Average Session Length = `1 hour 37 minutes / 5 = 19 minutes and 24 seconds`
+
 Result: `00:19:24`
 
 ### Positive Ratings
@@ -120,7 +125,7 @@ Result: `40%`
 
 ### Handovers by time of the day
 
-Indicates the number of times a human Agent was contacted. Multiple handovers may occur during a session.
+Indicates the number of times a human agent was contacted. Multiple handovers may occur during a session.
 
 Source table:
 
@@ -152,9 +157,11 @@ Result:
 
 ### Top Goals
 
-A horizontal bar chart displaying the top-rated number of goals reached. 
+Indicates the top-rated number of goals reached. 
 
-Clicking on the three-dots menu item, you can select the **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select **Go to Step Explorer**,
+which leads you to the Step Explorer in Insights.
 
 Source table:
 
@@ -214,9 +221,13 @@ Result:
 
 ### Handovers in Time
 
-Indicates the number of times a human Agent was contacted. Multiple escalations may occur during a session.
+Indicates the number of times a human agent was contacted. Multiple escalations may occur during a session.
 
 Indicates how often a Live Agent was called displayed on a timeline scale depending on the time frame filter setting.
+
+By clicking ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg),
+you can select **Go to Step Explorer**,
+which leads you to the Step Explorer in Insights.
 
 Source table:
 
@@ -238,8 +249,6 @@ Result:
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/handovers-on-time.png" width="100%" />
 </figure>
-
-Clicking the three-dots menu item, you can select **Go to Step Explorer** that leads you to the application in Cognigy.AI to improve your Agent.
 
 ### Positive Ratings over Time
 
@@ -263,7 +272,7 @@ Result:
 
 ### Unique Contacts
 
-A line chart displaying the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
+Indicates the number of unique contacts (`userid`) on a timescale. If the user creates more than one session in a single day, it will be counted as one unique contact for that day.
 
 Source table:
 
@@ -285,9 +294,8 @@ Result:
 
 {! _includes/insights/download-report.md !}
 
-## More information
+## More Information
 
 - [Dashboard Overview](dashboard-overview.md)
 - [Dashboard NLU Performance](dashboard-nlu-performance.md)
 - [Dashboard Live Agent](dashboard-live-agent.md)
-- [Dashboard Calls](dashboard-calls.md)

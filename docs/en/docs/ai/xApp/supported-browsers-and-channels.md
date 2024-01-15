@@ -26,7 +26,7 @@ The following channels are supported by xApps:
 
 - [Voice Gateway](../endpoints/cognigy-vg.md)
 - [Audiocodes](../endpoints/audiocodes.md)[^*]
-- [Facebook Messenger](../endpoints/facebook-messenger.md)
+- [Facebook (Meta) Messenger](../endpoints/facebook-messenger.md)
 - [LINE Messenger](../endpoints/line-messenger.md)
 - [Azure Bot Services](../endpoints/azure-bot-services.md)
 - [RingCentral Engage](../endpoints/ringcentral-engage.md)
@@ -41,8 +41,8 @@ The following channels are supported by xApps:
 
 [^*]: For this channel, Async Mode needs to be activated in the Endpoint settings.
 
-## More information
+## More Information
 
 - [Overview](overview.md)
-- [Build an xApp](build-an-xApp.md)
+- [Build an xApp](build/overview.md)
 - [xApp Architecture](architecture.md)

@@ -22,16 +22,14 @@ If the endpoint does not support the selected output type, the system returns a 
 | 8x8                    | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
 | Alexa                  | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Avaya CPaaS            | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Facebook Messenger     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
+| Facebook (Meta) Messenger     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Azure Bot Services     | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
-| Google Actions         | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Line                   | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Microsoft Teams        | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.0                                          |
 | RingCentral Engage     | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Slack                  | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Sunshine Conversations | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Twilio                 | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
-| Twilio Autopilot       | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Twilio SMS             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | Userlike               | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | AudioCodes             | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |

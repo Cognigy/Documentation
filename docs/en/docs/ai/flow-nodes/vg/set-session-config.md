@@ -1,8 +1,9 @@
 ---
- title: "Set Session Config" 
- slug: "set-session-config" 
- hidden: false 
+title: "Set Session Config"
+slug: "set-session-config"
+hidden: false
 ---
+
 # Set Session Config
 
 <figure>

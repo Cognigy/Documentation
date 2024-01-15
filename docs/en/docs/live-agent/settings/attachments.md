@@ -30,7 +30,7 @@ The file will be sent to the user and will appear in the chat. The user can down
 
 When using a Webchat Endpoint with Live Agent, human agents can request an attachment from a user.
 
-Other Endpoint channels do not support the attachment request functionality. Users can still upload a file using their built in app file upload features.
+Other Endpoints do not support the attachment request functionality. Users can still upload a file using the built-in file upload features of their app.
 
 To request an attachment in a conversation within Live Agent, follow these steps:
 
@@ -49,7 +49,7 @@ When the file has been uploaded, you can view and download this file directly fr
 
 ## Download an Attachment
 
-To download an attachment within Live Agent, this can be done either in a conversation or the **Attachments** page.
+To download an attachment within Live Agent, you can do this either in a conversation or on the **Attachments** page.
 
 === "Attachment Page"
 
@@ -119,6 +119,6 @@ To investigate a conversation or Inbox where an attachment was uploaded, follow 
     - **CONVERSATIONS** — the option will navigate you to the conversation where the attachment was uploaded.
     - **COGNIGY SESSION ID** — the option will navigate you to the conversation where the attachment was uploaded.
 
-## More information
+## More Information
 
-- [Conversation Workflow](https://docs.cognigy.com/live-agent/conversation/conversation-workflow/)
+- [Conversation Workflow](../conversation/overview.md)

@@ -1,0 +1,2 @@
+!!! Hinweis "Cognigy NLU: von V1 auf V2"
+    Ab Version 4.60.0 werden wir nur noch Fehlerbehebungen für die alten NLP-Dienste bereitstellen, wenn diese kritisch sind. Die alten NLP-Dienste werden mit Version 4.64.0 vollständig veraltet, zu diesem Zeitpunkt sollten alle lokalen Kunden migriert sein. Nach der Version 4.64.0 stehen die alten NLP-Dienste nicht mehr zur Verfügung. Informationen zur Migration auf die neue Version finden Sie im Handbuch [Cognigy NLU: from V1 to V2](https://docs.cognigy.com/ai/installation/migration/from-nlu-v1-to-v2-migration/).

@@ -47,7 +47,7 @@ This field allows a delay in milliseconds to be added for each letter in a messa
 !!! note "Help Center"
     More detailed information on how to set up an **Intercom** Endpoint refer to our Help Center articles [here](https://support.cognigy.com/hc/en-us/articles/360016183040-Intercom-Deploy-an-Endpoint?_ga=2.8010610.1313962342.1600679342-336273911.1592472592).
 
-## More information
+## More Information
 
 - [Help Center: Intercom Deployment](https://support.cognigy.com/hc/en-us/articles/360016183040-Intercom-Deploy-an-Endpoint)
 - [Help Center: Intercom Managing a Bot](https://support.cognigy.com/hc/en-us/articles/360016183200-Intercom-Managing-the-Intercom-Bot)

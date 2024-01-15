@@ -29,6 +29,6 @@ There are two options on how the SIP Trunk can be added:
 | Active                      | Enable or disable the carrier.                                                                                               | Account, Service Provider, Admin |
 | E.164 Syntax                | Defines a general format for international telephone numbers.                                                                | Account, Service Provider, Admin |
 | Outbound Authentication     | Using a username and a password for the authentication.                                                                      | Account, Service Provider, Admin |
-| Prefix                      | Is used to match a specific pattern of digits in the dialed number and route the call accordingly.                           | Account, Service Provider, Admin |
+| Prefix                      | Is used to match a specific pattern of digits in the dialled number and route the call accordingly.                           | Account, Service Provider, Admin |
 | SIP Diversion Header        | Means a header used to support PSTN redirecting services such as Call Forwarding.                                            | Account, Service Provider, Admin |
 | SIP Gateways                | Add the Network Address / Port / Netmask of your carrier. You can select the direction of calls: Outbound, Inbound, or both. | Account, Service Provider, Admin |

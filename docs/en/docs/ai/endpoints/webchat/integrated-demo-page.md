@@ -47,7 +47,7 @@ These configuration options within the Webchat Endpoint will only have an effect
 | Custom Webchat Bundle URL     | URL    | This field available only when the **Use Custom Webchat Bundle URL** is acrivated. You can specify a new URL of Webchat if you want to use customized Webchat by modifying the Webchat source code. The URL should have the following format: `https://url.to/webchat.<package-name>.js`, where `url.to` is a storage for your plugin, for example, Amazon S3, and `package-name` is a name of your package, for example `webchat.legacy`. |
 
 
-## More information
+## More Information
 
 - [Webchat Endpoint](deploy-webchat-endpoint.md)
 - [Cognigy Webchat](https://docs.cognigy.com/ai/endpoints/webchat/webchat/)

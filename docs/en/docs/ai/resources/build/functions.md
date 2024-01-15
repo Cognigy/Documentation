@@ -106,7 +106,7 @@ For more information, read the [OpenAPI](https://api-trial.cognigy.ai/openapi#po
 
 To trigger a Function from a Flow, use the [Trigger Function](../../flow-nodes/logic/trigger-function.md) Node.
 
-## More information
+## More Information
 
 - [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)
 - [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)

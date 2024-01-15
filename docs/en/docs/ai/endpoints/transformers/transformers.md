@@ -195,11 +195,9 @@ The REST based endpoints are:
 | REST Endpoints   |
 |------------------|
 | Alexa            |
-| Google Actions   |
 | Dialogflow       |
 | Twilio           |
 | Twilio SMS       |
-| Twilio Autopilot |
 | Microsoft Teams  |
 | Userlike         |
 | AudioCodes       |
@@ -212,7 +210,7 @@ The Webhook based Transformers are:
 
 | Webhook Endpoints       |
 |-------------------------|
-| Facebook Messenger      |
+| Facebook (Meta) Messenger      |
 | Slack                   |
 | Microsoft Bot Framework |
 | Sunshine Conversations  |

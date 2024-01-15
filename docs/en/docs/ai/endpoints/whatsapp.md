@@ -10,7 +10,7 @@
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/whatsApp-endpoint.png" width="100%" />
 </figure>
 
-Within our Cognigy.AI platform, you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook Developer Dashboard by using our WhatsApp Endpoint integration. 
+Within our Cognigy.AI platform, you're able to connect Cognigy resources to the **WhatsApp** Cloud API access via Facebook (Meta) Developer Dashboard by using our WhatsApp Endpoint integration. 
 
 ## Generic Endpoint Settings
 
@@ -70,7 +70,7 @@ The amount of time to wait between sending bot replies. Measured in milliseconds
     For more information on how to configure the **Access Token**, **Phone Number**, **App ID** and **App Secret** head over to our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/5326220817948).
 
 
-## More information
+## More Information
 
 * [HelpCenter: WhatsApp Endpoint: Deploy Native Endpoint](https://support.cognigy.com/hc/en-us/articles/5326220817948)
 * [HelpCenter: WhatsApp Endpoint: Get a Permanent Access Token](https://support.cognigy.com/hc/en-us/articles/5326310754332)

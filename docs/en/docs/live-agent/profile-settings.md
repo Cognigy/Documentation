@@ -6,53 +6,62 @@ hidden: false
 
 # Profile Settings
 
-Each user in Live Agent has a profile.
-In the profile, you can edit your avatar and name, which are seen by other Live Agent users,
-as well as customize certain system settings for yourself, such as receiving notifications or managing hotkeys.
+_Profile Settings_ are a set of customizable options and configurations available to individual users within the Live Agent system. These settings include the customization of profile appearance, notification preferences, activation of AI Copilot, configuration of hotkeys for sending messages, and access to API functionality.
 
-To access your profile, in the bottom left corner of the Live Agent interface, click on the profile thumbnail, then select **Profile Settings**.
+To open the **Profile Settings** in Live Agent, do the following:
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-profile-settings-menu.png" width="100%" alt="Live Agent Profile  Menu" />
-  <figcaption>Profile Menu</figcaption>
-</figure>
+1. Open your Live Agent interface. 
+2. In the bottom-left corner of the Live Agent interface, click **Profile Settings**.
+3. In the drop-down list, select **Profile Settings**. The **Profile Settings** page will be displayed.
 
-## User Profile data
+There are the following settings available within the user profile:
 
-In this section, the user profile data can be changed.
-Currently, users can customize the profile image and the display name.
+- [User Profile Appearance](#user-profile-appearance)
+- [Notifications](#notifications)
+- [AI Copilot](#ai-copilot)
+- [Hotkey to send messages](#hotkey-to-send-messages)
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-profile-settings-profile.png" width="100%" alt="Live Agent Profile Profile " />
-  <figcaption>Profile</figcaption>
-</figure>
+Additionally, you can copy the [API Token](#api-access-token) to access the [Live Agent API](https://liveagent-trial.cognigy.ai/openapi).
 
-| Field         | Description                                                                                                                                                                |
-|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Profile image | It is displayed in the agent conversation, agent lists and profile menu                                                                                                    |
-| Display name  | Currently, it is used for the conversation transcript that the agent can send by email. Transcript messages sent by the agent will use the display name as the sender name |
+## User Profile Appearance
 
-The rest of the user data, such as email, full name and password, need to be updated in the Cognigy.AI account. The change will automatically apply to Live Agent.
+To personalize your profile settings, you can edit both your profile image and the name that will be displayed in conversations.
+
+| Setting       | Description                                                                                                                            |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Profile image | The image will be displayed in the conversations, agent lists and user profile menu.                                                   |
+| Display name  | This name will be displayed in the conversations and is used as sender name when human agents send conversation transcripts in emails. |
+
+The other user data, such as email address, full name and password, need to be updated in the Cognigy.AI account. The changes will automatically apply to Live Agent.
 
 ## Notifications
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../release-notes/4.45.md)
 
-{! _includes/live-agent/push-notifications.md !}
+In Live Agent, you can configure email and push notifications, and audio alerts for certain types of actions that trigger notifications.
 
-You can customize the behavior of notifications.
+The email and push notification settings in the [Account Settings](notifications.md#configure-notifications-at-the-account-level) will take precedence over the Profile Settings.
+If the administrator has not yet changed the push and email notification settings, you can change them in the Profile Settings.
 
-Starting from Cognigy 4.45, you can configure only Audio Notifications.
-Push and email notifications are moved to [Account settings](settings/account-settings.md#notifications)
-and can only be controlled by administrators.
-If the administrator has not yet changed the push and email notification settings,
-a human agent still has the opportunity to change them in the Profile Settings.
+To configure notifications, refer to [Notifications](notifications.md#configure-notifications-at-the-user-profile-level).
+
+## AI Copilot
+
+Cognigy AI Copilot offers a variety of advanced features that empower human agents to provide faster and more accurate customer support. The workspace is fully customizable with widgets that display the most relevant information for any chat and voice use case. When embedded into your contact center, it enhances the overall efficiency of your contact center.
+
+In the **Profile Settings**, a user can activate AI Copilot if [it has been installed previously](../ai-copilot/getting-started.md).
+
+If an administrator has already preset the **AI Copilot Workspace** setting in the **Account Settings**,
+this setting will take precedence over the user profile settings.
+In this case, a user is not able to change the **AI Copilot Workspace** settings.
+
+For more information, read the [AI Copilot](assistants/ai-copilot.md) and [LA AI Copilot](assistants/la-ai-copilot.md) documentation.
 
 ## Hotkey to send messages
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.59-blue.svg)](../release-notes/4.59.md)
 
-To send messages in the [conversation chat](conversation/conversation-workflow.md), you can select one of the following hotkey options:
+To send messages in the [conversation chat](conversation/overview.md), you can select one of the following hotkey options:
 
 - **None** — send messages by clicking the **Send** button. The ++enter++ key will be used for line breaks.
 - **Enter (↵)** — send messages by pressing the ++enter++ key instead of clicking the **Send** button. The ++shift+enter++ key combination will be used for line breaks.
@@ -60,10 +69,10 @@ To send messages in the [conversation chat](conversation/conversation-workflow.m
 
 ## API Access Token
 
-Here you can also find the user access token.
-This is used for the Live Agent API, and its actions are limited by the user role.
+The displayed Access Token serves as the authentication and authorization key for the [Live Agent API](https://liveagent-trial.cognigy.ai/openapi). It contains information specific to a user, and the actions it enables are restricted by the user's [assigned role](roles.md).
 
-<figure>
-<img src="{{config.site_url}}live-agent/images/LA-profile-settings-access-token-section.png" width="100%" alt="Live Agent Profile Access Token " />
-  <figcaption>Access Token</figcaption>
-</figure>
+## More Information
+
+- [Account Settings](settings/account-settings.md)
+- [User Roles](roles.md)
+- [AI Copilot](../ai-copilot/overview.md)

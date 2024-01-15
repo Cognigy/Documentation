@@ -56,7 +56,7 @@ You can navigate also through the conversation when you click step by step on an
 
 The numbers displayed below a message indicate how often this message has occurred in a selected timeframe. 
 
-To go back to the filtered messages again, click on the **X** icon in the column title labeled with **Current Message**.
+To go back to the filtered messages again, click on the **X** icon in the column title labelled with **Current Message**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/Message_Explorer_n8.svg" width="80%"/>
@@ -64,7 +64,7 @@ To go back to the filtered messages again, click on the **X** icon in the column
 </figure>
 
 
-## More information
+## More Information
 
 - [Cognigy Insights](cognigy-insights.md)
 - [Global Filter](global-filter.md)

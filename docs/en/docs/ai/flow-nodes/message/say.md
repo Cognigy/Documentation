@@ -105,7 +105,7 @@ The Trigger Intent feature allows you to manually trigger an Intent by writing c
 More information see [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/)
 
 !!! warning "Channel Support"
-    The **Text with Quick Replies** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Google Actions**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
+    The **Text with Quick Replies** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### Gallery
 
 Galleries are powerful visual widgets that are ideal for showing a list of options with images. They are typically used to show a number of products or other items that can be browsed.
@@ -134,7 +134,7 @@ A gallery can be configured with a number of cards. A card contains an image, a 
 </figure>
 
 !!! warning "Channel Support"
-    The **Text with Buttons** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Google Actions**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
+    The **Text with Buttons** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### List
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1c5a0c7-list1.PNG" width="100%" />
@@ -190,7 +190,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 !!! warning "Channel Support"
     The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
     
-    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, Youtube links might not work).
+    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, YouTube links might not work).
 
 !!! note "CognigyScript"
     Any text field in the say node supports the use of **CognigyScript**. 
@@ -377,6 +377,7 @@ The following Display Templates are available:
 Instead of going with the WYSIWYG approach, you may also define a directive manually using a CognigyScript-enabled JSON field.
 
 For further details see the [Amazon Alexa Documentation](https://developer.amazon.com/de/docs/custom-skills/request-and-response-json-reference.html).
+
 ## Messenger
 <div class="divider"></div>
 
@@ -387,7 +388,7 @@ For further details see the [Amazon Alexa Documentation](https://developer.amazo
 
 Defines Templates that can be displayed in a special way in the Facebook Messenger Channel.
 
-The following Facebook Messenger Templates are available:
+The following Facebook (Meta) Messenger Templates are available:
 
 - Text & Quick Replies
 - Buttons
@@ -417,105 +418,7 @@ The following Facebook Messenger Templates are available:
 
 !!! danger "Location Button Deprecation"
     The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
-## Google
-<div class="divider"></div>
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0155b74-actions.jpg" width="100%" />
-    <div style="text-align: center;"><a href="https://developers.google.com/actions/assistant/responses" target="_blank">Link: Google Actions documentation</a></div>
-</figure>
-
-If you want to output a card, list, ssml or any other advanced options on the Google Assistant, then you can use the **Google Actions** tab.
-
-### **Keep Session Open**
-
-This toggle defines whether the session should be kept open or whether it should end after this output. This should be turned off when you wish to end the conversations and turned on otherwise
-
-!!! warning "Multiple Keep Session Open Values"
-    If more than one Say Node is hit during Flow Execution, then the Keep Session Open value of the last output is used
-### SSML editor
-
-With our **Google Actions SSML Editor** you're able to build your Google Assistant output speech by either entering SSML markup or by using our SSML markup templates (see figure below).
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f0aa08b-ssml.jpg" width="100%" />
-  <figcaption>SSML Markup Templates</figcaption>
-</figure>
-
-!!! warning "Multiple Voice Outputs"
-    If more than one Say Node is hit in one Flow execution using the Google Channel, each Say Nodes' SSML (or text) outputs will be concatenated and sent as one large SSML statement.
-
-!!! note "Simple Response Text"
-    Instead of writing SSML in the SSML editor, you can also enter your text in the default tab. As long as there is no content in the Google Actions SSML editor, the text from the default tab text field will be used.
-
-For further details see the [Google Actions Documentation](https://developers.google.com/actions/reference/ssml)
-
-### Display - Rich Response
-
-<table>
-  <tr>
-    <th>Type</th>
-    <th>Description</th> 
-  </tr>
-  <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Basic Card</td>
-    <td style="padding: 20px;">
-      Displays information that can include a title, subtitle, a description, an image and a button
-      </br>
-      <h4>Limitations</h4>
-      <ul>
-        <li>Requires Additional Text Output (for example, Output Speech) </li>
-        <li>Description: 10 lines with an image, 15 lines without an image</li>
-      </ul>   
-    </td>
-  </tr>
-  <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Media Response</td>
-    <td style="padding: 20px;">
-      Plays audio content
-      </br>
-      <h4>Limitations:</h4>
-      <ul>
-        <li>Requires Additional Text Output (for example, Output Speech) </li>
-        <li>Must include Suggestion Chips if the session is kept open</li>
-        <li>Only supports .mp3 format</li>
-        <li>Media file URL has to support HTTPS</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td class="type" style="vertical-align: middle; padding: 10px;">Browsing Carousel</td>
-    <td style="padding: 20px;">
-      A Carousel that displays web content
-      </br>
-      <h4>Limitations:</h4>
-      <ul>
-        <li>Requires Additional Text Output (for example, Output Speech) </li>
-        <li>Min. 2 tiles</li>
-        <li>Max. 10 tiles</li>
-        <li>Tiles must link to a web content</li>
-        <li>All Tiles must have the same components</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-!!! warning "Multiple Rich Responses"
-    If more than one Rich Response is being output during one Flow execution, only the last one will be sent.
-
-For details and requirements see the [Google Actions Documentation](https://developers.google.com/assistant/conversational/df-asdk/rich-responses)
-### Display - Suggestions
-
-A suggestion/chip is used to point the conversation to a defined direction.
-
-!!! warning "Multiple Suggestions"
-    If more than one output contains Suggestions during one Flow execution, only the last one will be sent.
-#### Limitations
-- you can add a **maximum of 8 chips** to a response
-- a suggestion/chip can contain text with a **maximum length of 20 characters**
-### Custom Google Action Response JSON
-
-Within the **custom JSON** field you are able to define complex responses. Read the [Google Actions](https://developers.google.com/actions/reference/rest/Shared.Types/AppResponse) documentation for further details.
 ## Webchat
 <div class="divider"></div>
 
@@ -523,7 +426,7 @@ Within the **custom JSON** field you are able to define complex responses. Read 
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/26ca2e8-webchat.jpg" width="100%" />
 </figure>
 
-The Webchat Channel features the configuration options of our Facebook integration.
+The Webchat Channel features the configuration options of our Facebook (Meta) integration.
 
 As the output format is the same, you can configure the Webchat Channel to use your output from the Facebook tab or manually override it for Webchat-specific customization.
 

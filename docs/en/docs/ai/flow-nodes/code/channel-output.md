@@ -103,59 +103,6 @@ builder.addImageOption('Red', 'DEVELOPER_DEFINED_PAYLOAD_FOR_PICKING_RED', 'http
 actions.output("test", { "_cognigy": { "_facebook": {"message": builder.buildMessage() }}});
 ```
 
-## Google Actions
-<div class="divider"></div>
-[:link: Google Actions Responses Reference](https://developers.google.com/actions/assistant/responses)
-
-## Example
----
-Here we'll output some suggestion chips to the contact:
-```JSON
-{
-    "_cognigy":{
-        "_google": {
-            "conversationToken": "",
-            "expectUserResponse": true,
-            "expectedInputs": [
-                {
-                    "inputPrompt": {
-                        "richInitialPrompt": {
-                            "items": [
-                                {
-                                    "simpleResponse": {
-                                        "textToSpeech": "Howdy! I can tell you fun facts about almost any number like 0, 42, or 100. What number do you have in mind?",
-                                        "displayText": "Howdy! I can tell you fun facts about almost any number. What number do you have in mind?"
-                                    }
-                                }
-                            ],
-                            "suggestions": [
-                                {
-                                    "title": "0"
-                                },
-                                {
-                                    "title": "42"
-                                },
-                                {
-                                    "title": "100"
-                                },
-                                {
-                                    "title": "Never mind"
-                                }
-                            ]
-                        }
-                    },
-                    "possibleIntents": [
-                        {
-                            "intent": "actions.intent.TEXT"
-                        }
-                    ]
-                }
-            ]
-        }
-    }
-}
-```
-
 ## Webchat
 <div class="divider"></div>
 

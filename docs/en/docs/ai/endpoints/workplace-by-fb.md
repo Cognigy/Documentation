@@ -1,5 +1,5 @@
 ---
- title: "Workplace by Facebook" 
+ title: "Workplace by Facebook (Meta)" 
  slug: "workplace-by-fb" 
  hidden: false 
 ---
@@ -53,6 +53,6 @@ Use this button to trigger the installation process of the Cognigy.AI Bot to you
 !!! note "Help Center"
     More detailed information on how to set up a **Workplace by Facebook** Endpoint can be found in our Help Center article [**here**](https://support.cognigy.com/hc/en-us/articles/360016310379).
 
-## More information
+## More Information
 
 - [HelpCenter: Workplace by Facebook Deploy an Endpoint](https://support.cognigy.com/hc/en-us/articles/360016310379)
