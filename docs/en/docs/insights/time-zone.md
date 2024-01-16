@@ -1,45 +1,43 @@
 ---
-title: "Time-zone" 
+title: "Time Zone" 
 slug: "time-zone" 
 hidden: false 
 ---
 
-# Timezone
+# Time Zone
 
-## Timezone support
+!!! warning
+    This page explains how the Time Zone works before we start migrating to the [new Insights framework](time-zone-with-pre-aggregation.md). If the migration process has not yet started for your organization, this page remains relevant for you.
+    
 
-<div class="divider"></div>
+In Insights, _Time zone_ settings play a crucial role in presenting time-based data accurately to users based on their geographical location.
+By selecting the appropriate time zone, you can view data in your local time, which is essential for accurate data analysis and interpretation.
 
-Insights applications support presenting time-based data with an account to the user's time zone. 
+Insights supports different time zones with various time offsets. The complete list of time zones is available in your personal profile in the Cognigy.AI interface. Dashboard data is generated on the fly. However, if you choose a rarely used time zone and have a large amount of processed data, dashboard information may not load promptly and could experience delays.
 
-!!! note 
-    In OData feed time is always in UTC format. You should take this into account if you compare it with Insights.
+By default, Insights relies on the time zone preferences of your device according to supported time zones.
 
-## Changing the preferred Time zone
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
+## Change Timezone Settings
 
 By default, Insights uses time zone preferences of your device. You can override this in **My Profile**. 
 
-This comes handy if you travel a lot and your device time zone gets updated by your location, or you may have a multinational Agent with the users all over the globe.
+To change time zone preferences, follow these steps:
 
-To change time zone preferences:
+1. Go to Cognigy.AI.
+2. In the upper-right corner, select **User Menu > My Profile**.
+3. In the **Preferences** section, select time zone from the **Select Insights time zone** list.
 
-- Click on the user icon in the top-right corner.
-- Select **My Profile**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/user-menu-my-profile.png" width="50%" alt="User menu with 'My profile' option" />
-  <figcaption>User menu with "My profile" option</figcaption>
-</figure>
-
-- Choose preferred time zone in the "Select Timezone" input.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/my-profile-timezone-selection.png" width="100%" alt="Excerpt of the settings on 'My Profile page'" />
-  <figcaption>Here selected the "Europe/Berlin" time zone</figcaption>
-</figure>
-
+New time zone will be applied to all existing data.
 
 !!! note
-    Custom time zone preferences are stored inside the browser storage, means you need to select custom time zone preference again if you change the device and/or the browser.
+    Custom time zone preferences are stored in the browser storage, which means you will need to select your custom time zone preference again if you change the device and/or the browser.
+
+## Time Zone Considerations: OData and Insights
+
+In the OData feed, all times are consistently presented in UTC format.
+When comparing time zones with Insights, consider this to ensure accurate data interpretation.
+
+## More Information
+
+- [Pre-aggregation](pre-aggregation.md)
+- [Time Zone with Pre-aggregation](time-zone-with-pre-aggregation.md)

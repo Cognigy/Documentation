@@ -453,16 +453,23 @@ nav:
   - Overview:
     - insights/cognigy-insights.md
   - insights/global-filter.md
+  - Pre-aggregation:
+    - insights/pre-aggregation.md
+    - Time Zone with Pre-aggregation:
+      - insights/time-zone-with-pre-aggregation.md
   - insights/time-zone.md
-  - insights/pre-aggregation.md
   - insights/ttl.md
-  - insights/dashboard-overview.md
-  - insights/dashboard-engagement.md
-  - insights/dashboard-nlu-performance.md
-  - insights/dashboard-live-agent.md
-  - insights/step-explorer.md
-  - insights/transcript-explorer.md
-  - insights/message-explorer.md
+  - Dashboards:
+    - Overview Dashboard:
+      - insights/dashboard-overview.md
+    - insights/dashboard-engagement.md
+    - insights/dashboard-nlu-performance.md
+    - insights/dashboard-live-agent.md
+  - Explorers:
+    - Step Explorers:
+       - insights/step-explorer.md
+    - insights/transcript-explorer.md
+    - insights/message-explorer.md
   - insights/download-report.md
   - insights/glossary.md
   - Release Notes:
