@@ -113,7 +113,7 @@ _**Time frame**_
 : A Global Filter settings option. You can choose from preset time periods or set it individually using a date picker in a calendar. For more information, read the [Timeframe](global-filter.md#timeframe) documentation.
 
 _**Time zone**_
-: Insights supports presenting time-based data according to the user's specified time zone in the Cognigy.AI user profile settings. For more information, read the [Timezone](timezone.md) documentation.
+: Insights supports presenting time-based data according to the user's specified time zone in the Cognigy.AI user profile settings. For more information, read the [Timezone](time-zone.md) documentation.
 
 _**Transcripts**_
 : Logged conversations between end users and agents.

@@ -453,7 +453,7 @@ nav:
   - Overview:
     - insights/cognigy-insights.md
   - insights/global-filter.md
-  - insights/timezone.md
+  - insights/time-zone.md
   - insights/pre-aggregation.md
   - insights/ttl.md
   - insights/dashboard-overview.md

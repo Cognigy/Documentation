@@ -1,8 +1,9 @@
 ---
- title: "Timezone" 
- slug: "timezone" 
- hidden: false 
+title: "Time-zone" 
+slug: "time-zone" 
+hidden: false 
 ---
+
 # Timezone
 
 ## Timezone support

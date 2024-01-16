@@ -14,4 +14,4 @@ Starting from version 4.61, Insights uses pre-aggregation, which means that it g
 
 ## More Information
 
-- [Time Zone](timezone.md)
+- [Time Zone](time-zone.md)
