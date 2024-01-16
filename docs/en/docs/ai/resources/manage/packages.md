@@ -21,7 +21,6 @@ The following agent resources can be included in a Package:
 - [Endpoints](../../endpoints/overview.md)
 - [Playbooks](../test/playbooks.md)
 - [Connections](../build/connections.md)
-- [Knowledge Store](../../knowledge-ai/overview.md#knowledge-ai-management)
 
 ## Create Packages with a single Resource
 
