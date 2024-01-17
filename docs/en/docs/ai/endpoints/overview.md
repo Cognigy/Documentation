@@ -201,12 +201,25 @@ To toggle back to the drop-down selection list of Flows, click the **Select from
 
 ## Locale
 
-Localization
-A powerful concept, featured in Cognigy.AI that allows for customizability combined with content re-use. The Localization view allows for the configuration of any number of localizations. The system works with fallback layers, meaning that a Locale that has not any content configured, will fallback to another Locale that has.
+The [Localization](../resources/manage/localization.md) feature in Cogngiy.AI provides tools for enabling multilingual Agents. Here, you can add a Locale that will be applied across an Agent and allow language-specific output messages to be configured within Flows. The system works with fallback layers, which means that a Locale that has not any content configured will fall back to another Locale that has.
 
-The Localization feature provides tools for enabling multilingual Agents. Here you can add a Locale that will be applied across an Agent and allow for language specific output messages to be configured within Flows.
+The **Locale** configuration field of the Endpoint Editor provides all configured and defined locales in a drop-down menu.
 
-For more information, read the [Localization](../resources/manage/localization.md) documentation.
+To select a Locale, do the following:
+
+- Go to **Deploy > Endpoints** and select the Endpoint you want to use.
+- Click ![expand](../../../assets/icons/expand.svg) next to the Locale selection field on the right-hand side to open the drop-down menu. 
+- Select a locale.
+- Click **Save** to confirm your selection. The endpoint is configured to that Locale now, if the selected language has been edited /defined.
+
+As a result of the selected locale your Endpoint, for example **Webchat** will use the selected language in a conversation based on your Flow. 
+
+You can test the functionality of your **Webchat** Endpoint locale setting as follows:
+ 
+1. Click **Open Demo Webchat** at the top right of the Endpoint Editor. The Cognigy Webchat window is displayed.
+2. Enter a text message in the text field at the bottom and click  to send the message as a user.
+3. The bot replies as configured in the Flow, but using the language of your previous selected Locale.  
+4. Check if it works as expected. When no translated content of the selected Locale is defined a fallback language will be used.  
 
 ### Endpoint URL
 
@@ -229,14 +242,19 @@ In the [Data Protection & Analytics](data-protection-and-analytics.md) section, 
 
 #### Chatbase
 
-Cognigy.AI can be connected directly to Google's Chatbase analytics platform. When enabled, your Chatbase bot's API key needs to be entered. All relevant data that enters the Endpoint, is forwarded to Chatbase.
+Cognigy.AI can be connected directly to Google's **Chatbase** [^1] analytics platform. When enabled, your Chatbase bot's API key needs to be entered. All relevant data that enters the Endpoint, is forwarded to Chatbase.
+
+!!! warning "Support of Chatbase tool is ended"
+    Chatbase is an outdated analytics tool and is not supported any longer.
+
+[^1]: Chatbase is an outdated analytics tool and can not used any longer.
 
 #### Dashbot
 
 When enabled, **Dashbot** will collect analytics data for the selected Endpoint.
 
-
 ## More Information
 
 - [Help Center](https://support.cognigy.com/hc/en-us?_ga=2.36371232.1055740288.1600087042-336273911.1592472592)
 - [AI Copilot](../../ai-copilot/overview.md)
+- [Localization](../resources/manage/localization.md)
