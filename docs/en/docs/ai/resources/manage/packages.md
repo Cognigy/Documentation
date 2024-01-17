@@ -54,23 +54,8 @@ Export one resource as a package using one of the following options:
 To export multiple resources as a package, follow these steps:
 
 1. Go to the Cognigy.AI interface.
-2. In the left-side menu, navigate to **Settings > Packaging**.
-3. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
-4. Select a resource from the list by activating the checkboxes next to the chosen resource types, for example, Flows, Lexicons, or Playbooks or select specific resources.
-5. Click **Next**. 
-6. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is. 
-7. Click **Export**. 
-8. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page. 
-9. Download the package by clicking the link with the package name. The package will be automatically downloaded to your computer. 
-10. Click **Start Over** to return to the page with the selection of resources for export.
-
-### Export All Available Resources
-
-To export all Available Resources as a package within your Agent, follow these steps:
-
-1. Go to the Cognigy.AI interface.
-2. In the left-side menu, navigate to **Settings > Packaging**.
-3. On the **Packages** page, activate the checkbox next to the Select Resources for Export option. 
+2. In the left-side menu, navigate to **Settings > Packaging**. 
+3. On the **Packages** page, select resources from the list by activating the checkboxes next to the specific resources or resource types. For example, if you want to export all existing flows within an agent, choose the Flows resource type. Alternatively, if you intend to export a larger set of resources, activate the checkbox next to the Select Resources for Export option. Then, deactivate the checkbox next to the resources you do not want to export. 
 4. Click **Next**. 
 5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is. 
 6. Click **Export**. 
@@ -78,38 +63,26 @@ To export all Available Resources as a package within your Agent, follow these s
 8. Download the package by clicking the link with the package name. The package will be automatically downloaded to your computer. 
 9. Click **Start Over** to return to the page with the selection of resources for export.
 
+### Export All Available Resources
 
-## Create Packages with a single Resource
+To export all Available Resources as a package within your Agent, follow these steps:
 
-To create a Package from a single resource, navigate to a resource list, e.g. **Flows**, click the **secondary menu button** on the right side of the item, then click **Export as package** in the menu.
+1. Go to the Cognigy.AI interface.
+2. In the left-side menu, navigate to **Settings > Packaging**.
+3. On the **Packages** page, activate the checkbox next to the **Select Resources for Export** option. 
+4. Click **Next**. 
+5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is. 
+6. Click **Export**. 
+7. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page. 
+8. Download the package by clicking the link with the package name. The package will be automatically downloaded to your computer. 
+9. Click **Start Over** to return to the page with the selection of resources for export.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Create_Package.png" width="80%" />
-</figure>
+## Import Resources as a Package
 
-This will start a **create package** task, and you will be notified the Package has been created. Once the task finished, you can download the Package by clicking the link in the task menu. Clicking the link will open a file-save dialog in your browser - select a location in order to start the download.
+!!! warning "Using Packages as Templates: Node IDs and Importing Packages"
+    Node IDs will not change upon import to ensure that hardcoded links between Flows and Nodes do not break. If you need to import a Flow multiple times into the same Project, you can delete and recreate a Node to prevent ID conflicts.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Download_Package.png" width="80%" />
-</figure>
-
-## Create Packages with multiple Resources
-
-Besides exporting or importing single resources in Packages, you can also export multiple resources at the same time. Navigate to **Packaging** in the **Management** section of the Agent sidebar. This will open our packaging tool.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Import-Export_page.png" width="80%" />
-</figure>
-
-Here you can start Exporting or Importing a Package.
-
-### Export
-As of Release v4.5.0, you can select one / many / all resources by activating the corresponding checkboxes for each resource via click. Then set the name, create the package, and start the download. You can also use our search capability to quickly identify and search for the resource you want to export.
-
-### Import
-Similar to the export, the import of Packages is straightforward. Simply drag&drop a Package on the area at the top of the packaging tool or use the file selection functionality. Your package will be uploaded and processed by Cognigy.AI. Once analyzed, the packaging tool will display the contents of the package, and you can go forward and import them.
-
-## Package Compatibility
+### Check Package Compatibility on Import
 
 Packages that were created in older versions of Cognigy.AI can be imported into newer versions of the platform without any issues, and are fully supported.
 
@@ -117,42 +90,41 @@ However, Packages created in newer versions may not be compatible with older ver
 
 Importing a Package from a newer version into an older version of Cognigy.AI is not recommended, as it can cause unexpected errors.
 
-## Import Packages Created Prior v4.0.0
+### Import a Package
 
-Packages created before v4.0.0 may contain special characters not allowed in the current version. 
-In order to allow their importation, those characters will be removed, and in case this causes a name duplication an index iterator will be added.
+To import resources as a package, follow these steps:
 
-For example:
+1. Go to the Cognigy.AI interface.
+2. In the left-side menu, navigate to **Settings > Packaging**.
+3. On the **Packages** page, go to the **Drop a Package here to Import or Browse File** section.
+4. From your folder on your computer, select the package that you exported earlier, then drag it into the gray section. Alternatively, click the **Browse File** button and select the package from your working folder on your computer. 
+5. Wait for the package to load.
+6. In the **Resources to be imported** section, select the resources that you want to import. At this step, you may need to resolve a conflict if the package contains resources that match the names of resources in the agent into which you are importing the new package. If you are importing a package with Flows, you will also need to map the locales.
+7. Click **Export**. 
+8. When the package import is complete, click **Start Over**.
 
-  * old package (prior v4.0.0)
-    * intentName>2
-    * intentName<2
-  * current version
-    * intentName 2
-    * intentName 2 (2)
+### Resolve Conflicts
 
-## Import Configuration
+To resolve conficts that occur during the importing package, use the following conflict strategies:
 
-As of v4.5.0, importing a Package will show you conflict resolution options in case e.g. name conflicts occur. You can either select a conflict resolution strategy for the complete import or per resource.
+1. Go to the **Conflict Management** section.
+2. From the **Duplicate handling for all resources**, select one of the following strategies:
+    - Import as a copy — the uploaded resource will be imported as a duplicate. The original resource in the Agent will remain unaffected, and the imported copy will be added separately. This approach is useful when you want to keep both the original and the imported versions.
+    - Replace existing resource — the uploaded resource will overwrite the existing one. This approach is useful when you want to update an existing resource with a newer version.
+3. Click **Apply**. The selected strategy will be applied to all existing resources in the **Resources to be imported** section. 
+4. _(Optional)_ If you want to change the strategy for a specific resource, select this strategy from the list next to the resource.
+5. _(Optional)_ If you want to exclude a resource from the list, deactivate the checkbox next to the resource.
+6. Click **Import**. The strategy will be applied only to the resources you have selected for import.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Import_Configuration.png" width="80%" />
-</figure>
+### Map Locales on Flow Import
 
-## Locale Mapping
+Locales are not imported together with the Flow.
+Locales from the package can be mapped to the Agent's locales into which the import occurs.
+This means that the locales of the Agent into which you import will overwrite the locales from your package.
 
-If the Package contains a Flow for import, you will need to provide a Locale Mapping for each Locale from the Package. You can decide between mapping a Package Locale to an Agent Locale or not import it. The Primary Locale must be mapped to a Locale in the Agent. If you have a Secondary Locale in the Agent, you can choose to map any Locale from the Package to a Primary or Secondary Locale of the Agent, however you cannot map the Primary Locale to more than one Locale.
+There are two recommended strategies:
 
-## Conflict Management
-
-In case your Agent already contains the Resources from the Package, you will need to decide how Cognigy.AI should handle the duplicates. You can either select a conflict resolution method for all resources or for each resource independently. Currently, we support importing a resource **as a copy** or by **replacing** the existing version.
-
-Once you have selected a conflict resolution strategy, click on **Import** in order to start the Package import.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/resources/images/Conflict_Import_handling.png" width="80%" />
-</figure>
-
-!!! warning "Using Packages As Templates: Node IDs and Importing Packages"
-    Node IDs will not change on import, to ensure that hardcoded links between Flows and Nodes do not break.
-    If you need to import a Flow multiple times to the same Project, you can delete and recreate a Node to prevent ID conflicts.
+- In the Agent where the import occurs, manually create locales in advance, similar to the locales in the package, and map them to the locales from the package.
+- In the Agent where the import occurs, manually create locales in advance, similar to the locales in the package. Map only the primary locale and do not import the others.
+ 
+ The Primary Locale must be mapped to a Locale in the Agent. If you have a Secondary Locale in the Agent, you can choose to map any Locale from the Package to a Primary or Secondary Locale of the Agent, however you cannot map the Primary Locale to more than one Locale.
