@@ -15,12 +15,41 @@ You can either create a Package for a single resource or for multiple resources.
 The following agent resources can be included in a Package:
 
 - [Flows](../build/flows.md)
-- [Intents](../../nlu/nlu-overview/overview.md#intents)
 - [Lexicons](../build/lexicons.md)
 - [NLU Connectors](../build/nlu-connectors.md)
 - [Endpoints](../../endpoints/overview.md)
 - [Playbooks](../test/playbooks.md)
 - [Connections](../build/connections.md)
+
+## Export Resources as a Package
+
+You can export a single resource as a package, or you can export many resources at once.
+
+### Export a Resource
+
+Export one resource as a package using one of the following options:
+
+=== "Via a Resource page"
+     1. Go to the Cognigy.AI interface.
+     2. In the left-side menu, select a section of the resource that you want to export. For example, if you want to export a Flow, select the **Flow** section.
+     3. On the **Resource** page, select a specific resource from the list.
+     4. On the right side of the resource, click ![vertical-ellipsis](https://docs.cognigy.com/assets/icons/vertical-ellipsis.svg) **> Export as package**. This action will trigger the **Create package** task in the Task Manager.
+     5. Check the status of the **Create package** task by clicking ![task-menu](../../../assets/icons/task-menu.svg) in the upper-right corner.
+     6. Once the creation is complete, click the link with the file name in the task. The package will be automatically downloaded to your computer.
+
+=== "Via a Packages page"
+     1. Go to the Cognigy.AI interface.
+     2. In the left-side menu, navigate to **Settings > Packaging**.
+     3. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
+     4. Select a resource from the list by activating the checkbox next to the chosen resource.
+     4. Click **Next**.
+     5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is.
+     6. Click **Export**. 
+     7. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page.
+     8. Download the package by clicking the link with the package name.
+     9. Click **Start Over** to return to the page with the selection of resources for export.
+
+### Export Multiple Resources
 
 ## Create Packages with a single Resource
 
