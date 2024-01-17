@@ -7,8 +7,6 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.51-blue.svg)](../../release-notes/4.51.md)
 
-{! _includes/ai-copilot/pricing.md !}
-
 {! _includes/ai-copilot/before-you-begin.md !}
 
 {! _includes/live-agent/assistant-setup.md !}
