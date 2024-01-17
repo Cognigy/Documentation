@@ -42,14 +42,42 @@ Export one resource as a package using one of the following options:
      2. In the left-side menu, navigate to **Settings > Packaging**.
      3. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
      4. Select a resource from the list by activating the checkbox next to the chosen resource.
-     4. Click **Next**.
-     5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is.
-     6. Click **Export**. 
-     7. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page.
-     8. Download the package by clicking the link with the package name.
-     9. Click **Start Over** to return to the page with the selection of resources for export.
+     5. Click **Next**.
+     6. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is.
+     7. Click **Export**. 
+     8. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page.
+     9. Download the package by clicking the link with the package name. The package will be automatically downloaded to your computer.
+     10. Click **Start Over** to return to the page with the selection of resources for export.
 
 ### Export Multiple Resources
+
+To export multiple resources as a package, follow these steps:
+
+1. Go to the Cognigy.AI interface.
+2. In the left-side menu, navigate to **Settings > Packaging**.
+3. On the **Packages** page, go to the section that corresponds to your resource. For example, if you want to export a Flow, go to the Flow section. For quick searching, you can use the search bar.
+4. Select a resource from the list by activating the checkboxes next to the chosen resource types, for example, Flows, Lexicons, or Playbooks or select specific resources.
+5. Click **Next**. 
+6. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is. 
+7. Click **Export**. 
+8. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page. 
+9. Download the package by clicking the link with the package name. The package will be automatically downloaded to your computer. 
+10. Click **Start Over** to return to the page with the selection of resources for export.
+
+### Export All Available Resources
+
+To export all Available Resources as a package within your Agent, follow these steps:
+
+1. Go to the Cognigy.AI interface.
+2. In the left-side menu, navigate to **Settings > Packaging**.
+3. On the **Packages** page, activate the checkbox next to the Select Resources for Export option. 
+4. Click **Next**. 
+5. On the **Package Configuration** page, in the **Package Name** field, edit the existing name or leave it as is. 
+6. Click **Export**. 
+7. Wait for the package creation to complete. Once the process finishes, a **Download Export** link with the package name will appear on the page. 
+8. Download the package by clicking the link with the package name. The package will be automatically downloaded to your computer. 
+9. Click **Start Over** to return to the page with the selection of resources for export.
+
 
 ## Create Packages with a single Resource
 
