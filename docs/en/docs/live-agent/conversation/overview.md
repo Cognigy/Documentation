@@ -48,7 +48,7 @@ When a conversation appears in the Live Agent status in the `Open` status, the c
 When a conversation is selected, conversation details will be displayed on the right side of the Live Agent interface.
 These details include the following conversation information: 
 
-- [User Profile Details](#user-profile-details)
+- [Contact Profile Details](#contact-profile-details)
 - [Conversation Actions](#conversation-actions)
 - [Conversation Information](#conversation-information)
 
@@ -57,24 +57,37 @@ These details include the following conversation information:
   <figcaption>Conversation Details</figcaption>
 </figure>
 
-### User Profile Details
+### Contact Profile Details
 
-The following table lists all user items that can be edited and stored as metadata.
+The Contact Profile information is shared at the beginning of the handover process. Live Agent does not store private data to comply with GDPR regulations. Instead, Live Agent only retains a reference to Cognigy.AI. When a human agent enters the conversation, Live Agent requests data from Cognigy.AI.
 
-| User Profile Data     | Description                                          |
-|-----------------------|------------------------------------------------------|
-| Email Address         | User's email address.                                |
-| First Name            | User's first name.                                   |
-| Last Name             | User's last name.                                    |
-| Age                   | User's age.                                          |
-| Birthday              | User's birthday.                                     |
-| Gender                | User's gender.                                       |
-| Location              | User's location.                                     | 
-| Profile Picture       | When available, the URL address of a user's picture. |
-| Accepted GDPR         | User accepted European privacy law: Yes/No           |
-| Goals                 | The user's intention or task.                        |
+If the human agent doesn't leave the conversation page, they may miss contact profile updates. To view profile updates that occur on the Cognigy.AI side, the human agent must reenter the conversation. This can be done by switching to another page within Live Agent and then returning.
 
-To edit profile data click ![edit](../../assets/icons/edit.svg), enter data and confirm with **Submit**. 
+The following table represents data that be edited within Live Agent and stored in the Contact Profile.
+
+| Contact Profile Data | Description                                          |
+|----------------------|------------------------------------------------------|
+| Email Address        | User's email address.                                |
+| First Name           | User's first name.                                   |
+| Last Name            | User's last name.                                    |
+| Age                  | User's age.                                          |
+| Birthday             | User's birthday.                                     |
+| Gender               | User's gender.                                       |
+| Location             | User's location.                                     | 
+| Profile Picture      | When available, the URL address of a user's picture. |
+| Accepted GDPR        | User accepted European privacy law: Yes/No           |
+| Goals                | The user's intention or task.                        |
+
+To modify the Contact profile, follow these steps:
+
+1. Go to the Live Agent interface. 
+2. In the left-side menu, select Conversations. 
+3. Select a conversation from the list. 
+4. On the right side of the page, navigate to **Conversation Details**. 
+5. On the **Details** tab, Click ![edit](../../assets/icons/edit.svg) to modify the Contact Profile. 
+6. In the Contact Profile window, fill in the fields and click **Submit** to save your changes.
+
+This action will also update the [Contact Profile](../../ai/resources/manage/contact-profiles.md) on the Cognigy.AI side. In Live Agent, cached Contact Profile data will persist for one hour. You can change this parameter if you have an on-premises or dedicated SaaS environment. To do so, add the `COGNIGY_CONTACT_PROFILE_CACHE_TIME` variable in the Live Agent `values.yaml` file and specify the value in seconds.
 
 ### Conversation Actions
 
