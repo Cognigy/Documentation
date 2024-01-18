@@ -78,7 +78,7 @@ The following table represents data that be edited within Live Agent and stored 
 | Accepted GDPR        | User accepted European privacy law: Yes/No           |
 | Goals                | The user's intention or task.                        |
 
-To modify the Contact profile, follow these steps:
+To modify the Contact Profile, follow these steps:
 
 1. Go to the Live Agent interface. 
 2. In the left-side menu, select Conversations. 
