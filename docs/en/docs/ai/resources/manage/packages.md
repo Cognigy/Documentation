@@ -81,7 +81,7 @@ To export all available resources as a Package within your Agent, follow these s
 
 Ensure to verify package compatibility before importing. Similarly to the export process, you can specify the number of resources to import. During the import, you may need to resolve conflicts if a resource from the package duplicates an existing one.
 
-Note that the specifics of importing resources may vary. For example, for a Flow, you will need to map locales.
+Note that the specifics of importing resources may vary. For example, for a Flow, you need to map locales.
 
 ### Check Package Compatibility
 
@@ -94,16 +94,16 @@ Importing a Package from a newer version into an older version of Cognigy.AI is 
 ### Import a Package
 
 !!! warning "Using Packages as Templates: Node IDs"
-    Node IDs will not change upon import to ensure that hardcoded links between Flows and Nodes do not break. If you need to import a Flow multiple times into the same Project, you can delete and recreate a Node to prevent ID conflicts.
+    Node IDs will not change upon import to ensure that hardcoded links between Flows and Nodes do not break. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
 
 To import resources as a Package, follow these steps:
 
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, navigate to **Settings > Packaging**.
 3. On the **Packages** page, go to the **Drop a Package here to Import or Browse File** section.
-4. From your folder on your computer, select the Package that you exported earlier, then drag it into the gray section. Alternatively, click the **Browse File** button and select the Package from your working folder on your computer. 
+4. From your folder on your computer, select the Package that you exported earlier, then drag it into the gray section. Alternatively, click the **Browse File** button and select the Package from your folder on your computer. 
 5. Wait for the Package to load.
-6. In the **Resources to be imported** section, select the resources that you want to import. At this step, you may need to resolve a conflict if the Package contains resources that match the names of resources in the Agent into which you are importing the new Package. If you are importing a Package with Flows, you will also need to map the Locales.
+6. In the **Resources to be imported** section, select the resources that you want to import. At this step, you may need to [resolve a conflict](#resolve-conflicts) if the Package contains resources that match the names of resources in the Agent into which you are importing the new Package. If you are importing a Package with Flows, you will also need to [map the Locales](#map-locales-during-flow-import).
 7. Click **Export**. 
 8. When the Package import is complete, click **Start Over**.
 
