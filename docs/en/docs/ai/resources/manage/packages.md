@@ -8,9 +8,11 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../../release-notes/4.67.md)
 
-_Packages_ are a useful tool for exporting and importing Agent's resources, such as Flows or Lexicons, to share with other teams. Packages allow you to transfer resources from one Agent to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a portable zip archive.
+_Packages_ are a useful tool for exporting and importing an Agent's resources, such as Flows or Lexicons, to share with other teams. The Packages allow you to transfer resources from one Agent to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a portable zip archive.
 
-Compared to [Snapshots](../deploy/snapshots.md), which export the entire Agent, working with Packages provides more flexibility. With Packages, you can choose which resources to include and which ones to exclude.
+Compared to [Snapshots](../deploy/snapshots.md),
+which export the entire Agent, working with Packages provides more flexibility.
+Using the Packages, you can decide which resources will be included in the package or excluded from it.
 
 The following Agent resources can be included in a Package:
 
@@ -109,7 +111,7 @@ To import resources as a Package, follow these steps:
 
 ### Resolve Conflicts
 
-To resolve conficts that occur during the importing Package, use the following conflict strategies:
+To resolve conflicts that occur during the importing Package, use the following conflict strategies:
 
 1. Go to the **Conflict Management** section.
 2. From the **Duplicate handling for all resources**, select one of the following strategies:
@@ -123,8 +125,8 @@ To resolve conficts that occur during the importing Package, use the following c
 ### Map Locales during Flow Import
 
 Locales as separate resources are not imported along with the Flow.
-However, the localized content within Node configurations,
-default replies, and Intent sentences is included in the import process.
+However, the localized content, such as Node configurations,
+default replies, and Intent sentences, is included in the import process.
 
 Locales from the Package can be mapped to the Agent's Locales into which the import occurs.
 This means that the Locales of the Agent into which you import will overwrite the Locales from your Package.
