@@ -6,6 +6,10 @@ hidden: false
 # LA AI Copilot 
 
 {! _includes/live-agent/assistant-setup.md !}
+ 
+### Supported Output Types
+
+LA AI Copilot supports all **output types** within the [SAY Node](../../ai/flow-nodes/flow-nodes-overview.md#say), [Question Node](../../ai/flow-nodes/flow-nodes-overview.md#question), and the [Optional Question Node](../../ai/flow-nodes/flow-nodes-overview.md#optional-question).
 
 ## Set up an Endpoint
 
@@ -51,19 +55,6 @@ Once the human agent receives this message, the testing behavior will vary depen
        </figure>
 
 If the testing is successful, the LA AI Copilot setup is complete.
-
-### Usage of Say Node Output Types in a LA AI Copilot Flow 
-
-Following output types selectable in a Say Node are compatible with LA AI Copilot:
- 
- - Text with Quick Replies
- - Adaptive Cards
- - Gallery
- - Text with Buttons
- - List
- - Audio
- - Image
- - Video
 
 ## More Information
 
