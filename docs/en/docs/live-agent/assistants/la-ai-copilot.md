@@ -9,7 +9,7 @@ hidden: false
  
 ### Supported Output Types
 
-LA AI Copilot supports all **output types** within the [SAY Node](../../ai/flow-nodes/flow-nodes-overview.md#say), [Question Node](../../ai/flow-nodes/flow-nodes-overview.md#question), and the [Optional Question Node](../../ai/flow-nodes/flow-nodes-overview.md#optional-question).
+LA AI Copilot supports all output types that can be selected in the [Say](../../ai/flow-nodes/flow-nodes-overview.md#say), [Question](../../ai/flow-nodes/flow-nodes-overview.md#question), or [Optional Question](../../ai/flow-nodes/flow-nodes-overview.md#optional-question) Nodes.
 
 ## Set up an Endpoint
 
