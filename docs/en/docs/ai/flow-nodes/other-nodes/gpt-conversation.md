@@ -56,13 +56,16 @@ Available only in Transactional mode.
 | Further Information   | CognigyScript | Additional information for the virtual agent, such as topics that should be avoided during the conversation.                                                                                                                                                                                                                     |
 
 
-
 ### Grounding
 
-| Parameter           | Type          | Description                                                                      |
-|---------------------|---------------|----------------------------------------------------------------------------------|
-| Grounding Knowledge | CognigyScript | Knowledge to help the virtual agent build a factual response. Optional field.    |
-| Injected Slots      | CognigyScript | Slots you wish to send to the virtual agent. Will be appended to the user input. |
+Grounding helps ensure that the model's responses are relevant and coherent within the context of user input. For example, if the user asks the virtual agent about a specific event, grounding would involve the model referencing information it has learned about that event from the Knowledge Store or Grounding Knowledge, making its response more contextually accurate and meaningful.
+
+| Parameter           | Type                 | Description                                                                                                                                                                                                                                                                                                                                                                        |
+|---------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Grounding Mode      | Select               | Choose how grounding knowledge is acquired. The following modes are available: <br> - **Perform Knowledge Search** — retrieves data from the specific Knowledge Store.<br> - **Enter Custom Grounding Knowledge** — retrieves data from the knowledge you provided in the **Grounding Knowledge** field.<br> - **Do not inject grounding knowledge** — deactivates grounding mode. |
+| Knowledge Store     | Select/CognigyScript | This field appears if you selected the **Perform Knowledge Search** grounding mode. <br><br>Select the Knowledge Store to use. You can add a value manually using CognigyScript.                                                                                                                                                                                                   |
+| Grounding Knowledge | CognigyScript        | This field appears if you selected the **Enter Custom Grounding Knowledge** grounding mode. <br><br>Knowledge to help the virtual agent build a factual response.                                                                                                                                                                                                                  |
+| Injected Slots      | CognigyScript        | Slots you want to send to the virtual agent. They will be appended to the user input.                                                                                                                                                                                                                                                                                              |
 
 ### Advanced
 
@@ -80,7 +83,7 @@ Available only in Transactional mode.
 
 | Parameter       | Type          | Description                                                                                |
 |-----------------|---------------|--------------------------------------------------------------------------------------------|
-| Timeout         | Selector      | The maximum amount of milliseconds to wait for a response from the Generative AI Provider. |
+| Timeout         | Select        | The maximum amount of milliseconds to wait for a response from the Generative AI Provider. |
 | Timeout Message | CognigyScript | The message to output if the timeout is hit.                                               |
 
 ## Examples
