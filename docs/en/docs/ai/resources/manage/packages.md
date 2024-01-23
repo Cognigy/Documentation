@@ -131,10 +131,7 @@ default replies, and Intent sentences, is included in the import process.
 
 Locales from the Package can be mapped to the Agent's Locales into which the import occurs.
 This means that the Locales of the Agent into which you import will overwrite the Locales from your Package.
-In this case, the following strategies are recommended:
-
-- In the Agent where the import occurs, manually create Locales in advance, similar to the Locales in the Package, and map them to the Locales from the Package.
-- In the Agent where the import occurs, manually create Locales in advance, similar to the Locales in the Package. Map only the primary Locale and do not import the others.
+In this case, we recommend the following strategy: In the Agent where the import occurs, manually create Locales in advance, similar to the Locales in the Package, and map them to the Locales from the Package.
 
 The Primary Locales must be mapped. You can choose not to import the remaining Locales.
 
@@ -147,6 +144,10 @@ If you link a Non-Primary Locale from the Package to the Primary Locale of the e
 **Q1**: What should I do if I encounter errors during Knowledge Store Import?
 
 **A1**: Try to upload the package again. During the reupload, select only the Knowledge Stores that were not fully imported.
+
+**Q2:** How can I avoid browser request timeouts during Knowledge Store package upload?
+
+**A2:** To avoid browser request timeouts, keep the package size low. Separate your resources into smaller packages.
 
 ## More Information
 
