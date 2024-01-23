@@ -27,7 +27,7 @@ In the table below, you can view the data included in TTL.
 | VoiceGatewayEvents  | This indicates the duration between the creation of Voice Gateway data and its removal from the database.         | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 
-## Activating Data Expiration
+## Activate Data Expiration
 
 Cognigy keeps data indefinitely by default. To change this behavior, an expiration date must be set up.
 
@@ -45,8 +45,17 @@ For example:
 > 
 > Sessions created before 13:00 will remain unchanged.
 
-## Changing Data Expiration
+## Change Data Expiration
 
-You can change the duration of data expiration via the [management-ui](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
+You can change the duration of data expiration via the [Management UI](../ai/tools/management-ui.md#expiration-values-ttl-for-sensitive-data) service if you have an on-premise Cognigy.AI installation. Otherwise, contact [technical support](../help/get-help.md#help-center). 
 
 When you adjust the data expiration value, it will only apply to new data obtained by Cognigy. The expiration value for previously obtained data will remain unchanged.
+
+### Customize Data Expiration for Multiple Organizations
+
+In Cognigy, when managing multiple organizations,
+you can customize Data Expiration settings for each organization independently through the Management UI.
+The default Data Expiration is set in the environment variable in the `values.yaml` file.
+Importantly,
+specifying Data Expiration for a specific organization in the Management UI overrides the environment setting for that organization. 
+This setup ensures tailored Data Expiration configurations per organization, balancing global defaults with organization-specific needs.
