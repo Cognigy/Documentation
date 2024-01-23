@@ -6,6 +6,8 @@ hidden: false
 
 # AI Copilot Bot
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
+
 _AI Copilot Bots_ are personal virtual assistants for human agents. These assistants automate service processes, give human agents access to relevant resources and assist in answering common customer questions.
 
 Human agents can interact with AI Copilot Bots in every customer conversation to solve complex customer issues more efficiently and faster to improve customer experience.

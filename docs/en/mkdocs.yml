@@ -2,7 +2,7 @@ site_name: Cognigy Documentation
 site_description: Documentation of Cognigy products
 site_url: https://docs.cognigy.com/
 site_author: Cognigy
-copyright: Copyright &copy; 2023 <a href="https://www.cognigy.com/">Cognigy</a>
+copyright: Copyright &copy; 2024 <a href="https://www.cognigy.com/">Cognigy</a>
 repo_url: https://github.com/Cognigy/Documentation/
 repo_name: cognigy/documentation
 theme:
@@ -55,6 +55,10 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.68:
+    - release-notes/4.68.md
+  - 4.67:
+    - release-notes/4.67.md
   - 4.66:
     - release-notes/4.66.md
   - 4.65:
@@ -636,6 +640,8 @@ nav:
       - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
       - voicegateway/references/sip-trunk-providers.md
+  - Glossary:
+    - voicegateway/glossary.md
   - Release Notes:
     - voicegateway/release-notes.md
 - Marketplace:

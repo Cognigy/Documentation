@@ -1,6 +1,7 @@
 ---
  title: "Cognigy Documentation"
- hidden: false 
+ hidden: false
+ description: "Welcome to the Cognigy developer documentation! Cognigy enables enterprises to easily create and operate AI-powered virtual agents that automatically handle calls and chats from customers and employees."
  hide:
   - navigation
   - toc

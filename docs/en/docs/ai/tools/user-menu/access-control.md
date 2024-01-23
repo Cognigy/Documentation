@@ -60,7 +60,6 @@ The following **Global Roles** are available:
 | Live Agent Admin  | This role is assigned for users to access Cognigy Live Agent as an admin. This role has the same permissions as the Base Role in Cognigy AI.                                                                                                                  |
 | Live Agent Agent  | This role is assigned for users to access Cognigy Live Agent as an agent. This role has the same permissions as the Base Role in Cognigy AI.                                                                                                                  |
 | userDetailsViewer | This role is limited to read-only access that grants users permissions to view user details, such as email addresses and usernames. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.       |
-| userDetailsViewer | This role is limited to read-only access that grants users permissions to view user details, such as email addresses and usernames. The role allows an administrator to manage user details in Cognigy without granting any other access or privileges.       |
 | voiceGatewayUser  | This role is assigned to users with the [Account](../../../voicegateway/webapp/users.md#account) role to access the Voice Gateway Self-Service Portal, allowing them to authorize via their Cognigy.AI user credentials.                                      |
 
 !!! note "Control of Global Access Rights"
