@@ -1,21 +1,22 @@
 ---
- title: "Think" 
- slug: "think" 
- hidden: false 
+title: "Think" 
+slug: "think"
+hidden: false 
 ---
+
 # Think
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/Think_node.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/think.png" width="80%" />
 </figure>
 
 ## Description
 
 This Node is used to re-execute the Flow within one invocation.
 
-If an Execute Flow Node is used to reach a Flow where a Think Node is present, when the Think node is reached the Flow will stop and start executing at the Start Node of the parent/starting Flow.
-
 Upon reaching the Think Node, the Flow will stop and then restart executing at the Start Node.
+This behavior can be changed if you use an Execute Flow Node in the parent Flow to access a child Flow with a Think node. When the Think node is reached, the child Flow stops,
+and execution resumes from the beginning of the parent Flow at its Start node.
 
 You may specify an input text and input data which will then be treated as a simulated message from the user.
 
@@ -34,14 +35,14 @@ You can select two **Advanced** options to integrate a Think Node functionality 
 1. Think Text (default setting)
 2. Trigger Intent
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Think_node_advanved_settings.png" width="100%" />
-</figure>
 
 Using the **Trigger Intent** option, you can re-execute the flow while forcing that a specific intent is found, instead of getting the intent result from our NLU engine. It is exactly the same behaviour as described in [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/).
 
 You can trigger an intent with a user input like "cIntent:orderFood", then the intent "orderFood" will be triggered. 
 Using the Think Node you can have the same behaviour by choosing the "Trigger Intent" option, and "orderFood" in the "intent to trigger" field.
+
+## Execute Flow with Think Node
+
 
 ## Alternatives
 
