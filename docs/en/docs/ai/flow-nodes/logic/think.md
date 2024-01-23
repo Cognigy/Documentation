@@ -6,13 +6,14 @@
 # Think
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/think.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/Think_node.png" width="80%" />
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 This Node is used to re-execute the Flow within one invocation.
+
+Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
 
 Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
 
@@ -33,10 +34,8 @@ You can select two **Advanced** options to integrate a Think Node functionality 
 1. Think Text (default setting)
 2. Trigger Intent
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
-
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/558c716-Screen_Shot_057.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Think_node_advanved_settings.png" width="100%" />
 </figure>
 
 Using the **Trigger Intent** option, you can re-execute the flow while forcing that a specific intent is found, instead of getting the intent result from our NLU engine. It is exactly the same behaviour as described in [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/).
