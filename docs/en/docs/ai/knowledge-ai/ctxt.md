@@ -175,3 +175,5 @@ The xApp Shell Page loads its assets (HTML/CSS/JS) by requesting static files vi
 
 - [Knowledge AI Overview](overview.md)
 - [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
+- [Web Page](../knowledge-ai/web-page.md)
+- [PDF](pdf.md)
