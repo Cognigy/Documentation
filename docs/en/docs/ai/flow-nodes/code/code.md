@@ -5,7 +5,7 @@ hidden: false
 ---
 # Code
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.50-blue.svg)](../../../release-notes/4.50.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../release-notes/4.68.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/code/code.png" width="80%" />
