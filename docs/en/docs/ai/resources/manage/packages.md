@@ -22,6 +22,7 @@ The following Agent resources can be included in a Package:
 - [Endpoints](../../endpoints/overview.md)
 - [Playbooks](../test/playbooks.md)
 - [Connections](../build/connections.md)
+- [Knowledge Stores](../../knowledge-ai/overview.md#knowledge-store)
 
 ## Export Resources as a Package
 
@@ -115,7 +116,7 @@ To resolve conflicts that occur during the importing Package, use the following 
 
 1. Go to the **Conflict Management** section.
 2. From the **Duplicate handling for all resources**, select one of the following strategies:
-    - **Import as a copy** — the uploaded resource will be imported as a duplicate. The original resource in the Agent will remain unaffected, and the imported copy will be added separately. This approach is useful when you want to keep both the original and the imported versions.
+    - **Import as a copy** — the uploaded resource will be imported as a duplicate. The original resource in the Agent will remain unaffected, and the imported copy will be added separately. This approach is useful when you want to keep both the original and the imported versions. Note if you import a Knowledge Store, it cannot be imported as a copy. Imported Stores will replace the current version.
     - **Replace existing resource** — the uploaded resource will overwrite the existing one. This approach is useful when you want to update an existing resource with a newer version.
 3. Click **Apply**. The selected strategy will be applied to all existing resources in the **Resources to be imported** section. 
 4. _(Optional)_ If you want to change the strategy for a specific resource, select this strategy from the list next to the resource.
@@ -140,6 +141,12 @@ The Primary Locales must be mapped. You can choose not to import the remaining L
 Starting from version 4.67, you can map any Locale from the Package to the Primary Locale of the Agent into which the Package is being imported.
 
 If you link a Non-Primary Locale from the Package to the Primary Locale of the existing Agent, and the Non-Primary Locale does not have a complete configuration, the system will copy the missing settings from the Primary Locale of the Package.
+
+## FAQ
+
+**Q1**: What should I do if I encounter errors during Knowledge Store Import?
+
+**A1**: Try to upload the package again. During the reupload, select only the Knowledge Stores that were not fully imported.
 
 ## More Information
 

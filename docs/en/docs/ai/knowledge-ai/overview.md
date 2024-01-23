@@ -200,8 +200,8 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of characters for metadata per Chunk                                                                | 1000          |
 | Maximum number of characters for metadata per Source                                                               | 1000          |
 
-!!! Snapshots
-    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon.    
+!!! note
+    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon. You can use [Packages](../resources/manage/packages.md) instead to import or export Knowledge Stores.   
 
 ## FAQ
 
