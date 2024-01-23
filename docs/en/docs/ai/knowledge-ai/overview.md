@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../release-notes/4.68.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -86,6 +86,8 @@ Knowledge is organized in a hierarchy of stores, sources, and chunks to enable a
 
 A _Knowledge Store_ is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
 The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
+
+You can also export and import a Knowledge Store as a [Package](../../ai/resources/manage/packages.md).
 
 The maximum number of stores per project is described in the [Limitations](#limitations) section.
 
