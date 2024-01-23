@@ -21,8 +21,8 @@ Executes a basic output to the contact, similar to the functionality of the [Say
 
 | Parameter | Type   | Description                                  |
 |-----------|--------|----------------------------------------------|
-| text      | string | The output text which is sent to the contact |
-| data      | any    | The output data which is sent to the contact |
+| text      | string | The output text that is sent to the contact. |
+| data      | any    | The output data that is sent to the contact  |
 
 **Returns**
 
@@ -34,9 +34,9 @@ Adds a defined goal to the **completedGoals** array in the **Input Object**.
 
 **Parameters**
 
-| Parameter | Type   | Description                                                    |
-|-----------|--------|----------------------------------------------------------------|
-| key       | string | name of the goal the will be added to the completedGoals array |
+| Parameter | Type   | Description                                                          |
+|-----------|--------|----------------------------------------------------------------------|
+| key       | string | The name of the goal that will be added to the completedGoals array. |
 
 **Returns**
 
@@ -48,9 +48,9 @@ Sets the time zone offset from UTC.
 
 **Parameters**
 
-| Parameter | Type     | Description              |
-|-----------|----------|--------------------------|
-| offset    | *number* | The time offset in hours |
+| Parameter | Type     | Description               |
+|-----------|----------|---------------------------|
+| offset    | *number* | The time offset in hours. |
 
 **Returns**
 
@@ -62,10 +62,10 @@ Writes a message to the project logs.
 
 **Parameters**
 
-| Parameter | Type   | Description                           |
-|-----------|--------|---------------------------------------|
-| level     | string | The log level, e.g. *debug* or *info* |
-| text      | string | The message for the logs              |
+| Parameter | Type   | Description                                    |
+|-----------|--------|------------------------------------------------|
+| level     | string | The log level, for example, `debug` or `info`. |
+| text      | string | The message for the logs.                      |
 
 **Returns**
 
@@ -126,10 +126,10 @@ Retrieves the current conversation transcript, including the last 10 user inputs
 
 **Parameters**
 
-| Parameter | Type   | Description                                                                                                                                    |
-|-----------|--------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript |
-| options   | object | Options to be passed to the function. The example is presented below.                                                                          |
+| Parameter | Type   | Description                                                                                                                                     |
+|-----------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript. |
+| options   | object | Options to be passed to the function. The example is presented below.                                                                           |
 
 Example Options:
 
