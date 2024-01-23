@@ -6,7 +6,7 @@ hidden: false
 
 # Packages
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../../release-notes/4.67.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../release-notes/4.68.md)
 
 _Packages_ are a useful tool for exporting and importing an Agent's resources, such as Flows or Lexicons, to share with other teams. The Packages allow you to transfer resources from one Agent to another. When you create a Package, it automatically includes its direct dependencies. Once downloaded, it can be shared as a portable zip archive.
 
