@@ -122,14 +122,14 @@ any : The requested context data
 
 ### actions.getConversationTranscript || api.getConversationTranscript
 
-Retrieves a copy of the current conversation transcript for up to the last 10 user inputs and associated bot outputs.
+Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the virtual agent.
 
 **Parameters**
 
-| Parameter | Type   | Description                                  |
-|-----------|--------|----------------------------------------------|
-| mode      | string | "json" - Returns an array of conversation entries (default)<br>"string" - returns a stringified version of the transcript |
-| options | object | Options to be passed to the function, see below |
+| Parameter | Type   | Description                                                                                                                                    |
+|-----------|--------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript |
+| options   | object | Options to be passed to the function. The example is presented below.                                                                          |
 
 Example Options:
 
@@ -141,7 +141,7 @@ Example Options:
 
 **Returns**
 
-Either the JSON array of conversation entries of the string. 
+Either the JSON array of conversation entries or the string representation. 
 
 Example JSON:
 
