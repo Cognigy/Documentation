@@ -16,7 +16,7 @@ The AI Copilot configurations can be created, modified, and deleted **only** usi
 
 The AI Copilot workspace is based on a customizable grid layout where widgets can be added to display different information. 
 
-The gird is fully customizable and gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
+The grid is fully customizable and gives you the possibility to configure the number of columns, rows, as well as the gaps between them.
 
 ## Tile ID
 
@@ -33,6 +33,22 @@ If AI Copilot receives updates for a Tile ID not present in the AI Copilot confi
 If you are using AI Copilot as a standalone application, the AI Copilot URL follows the pattern:
 
 {! _includes/ai-copilot/url-pattern.md !}
+
+## Transcript Tile
+
+To enable the Transcript Tile feature for the AI Copilot workspace you can configure the **Copilot** Endpoint settings as shown in the following table.
+
+| Setting                                                                                               | Description    |
+|-------------------------------------------------------------------------------------------------------|----------------|
+| Enable Transcript Tile with ID 'transcript' in the AI Copilot Workspace                               | If enabled, you can view the session messages on a transcript tile with the ID 'transcript'. To display this tile, you must include it in your Copilot Config.       |
+| Enable the chat input for the Transcript Tile to enable the agent to send messages to the customer    | If enabled, the agent can send messages to the customer from the Transcript Tile.       |
+| Enable redaction of Transcript Tile messages                                                          | If enabled, the Transcript Tile message's sensitive information will be obfuscated.       |
+
+The Transcript Tile looks like it is shown in the image below, indicated by a red box. This tile is recommended only for standalone AI Copilot, for example, for the Genesys provider. This Transcript tile is used only for chat use cases.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai-copilot/images/transcript-tile.png" width="80%" />
+</figure>
 
 ## More Information
 
