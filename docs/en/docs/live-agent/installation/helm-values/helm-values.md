@@ -1,7 +1,7 @@
 ---
- title: "Helm Values" 
- slug: "helm-values" 
- hidden: false 
+title: "Helm Values" 
+slug: "helm-values" 
+hidden: false 
 ---
 
 # Helm Values

@@ -1,6 +1,7 @@
 ---
  title: "Cognigy Documentation"
- hidden: false 
+ hidden: false
+ description: "Welcome to the Cognigy developer documentation! Cognigy enables enterprises to easily create and operate AI-powered virtual agents that automatically handle calls and chats from customers and employees."
  hide:
   - navigation
   - toc
@@ -62,6 +63,15 @@
 
 <div class="card-container">
 
+  <a class="card-link" href="{{config.site_url}}ai-copilot/overview/">
+    <div class="card">
+      <img class="card-image" src="{{config.site_url}}assets/img/ai-copilot-blue.svg" alt="Cognigy Logo">
+      <div class="item-container">
+        <h3><b>AI Copilot</b></h3>
+      </div>
+    </div>
+  </a>
+
   <a class="card-link" href="{{config.site_url}}live-agent/overview/">
     <div class="card">
       <img class="card-image" src="{{config.site_url}}assets/img/LA-blue.svg" alt="Cognigy Logo">
@@ -101,7 +111,7 @@
       <img class="card-2-image" src="{{config.site_url}}assets/img/something-001.svg">
       <div class="item-2-container">
         <h3><b>Cognigy Academy</b></h3>
-        <p>Enroll in our free video courses and become a certified expert</p>
+        <p>Enrol in our free video courses and become a certified expert</p>
       </div>
     </div>
   </a>

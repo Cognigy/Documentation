@@ -32,7 +32,7 @@ Each Intent can have any number of rules attached to it. The rules are written a
     The intent is `orderFood`. Rules could include.
 
     * input.text === "I want to order pizza"
-    * input.slots.food[0].keyphrase === "pizza" && inut.slots.food.length === 1
+    * input.slots.food[0].keyphrase === "pizza" && input.slots.food.length === 1
     * input.text === \`${input.slots.male_firstname[0].keyphrase} wants cake\`
     * input.text.split(" ")[0] === "Add" && input.text.match("to favorites")
 

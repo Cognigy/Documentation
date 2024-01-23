@@ -26,7 +26,7 @@ To create a new canned response, follow these steps:
     - **Level** — select one of the following options from the list:
         - **Global** — all human agents can use a canned response.
         - **Personal** — only you can use a canned response.
-        - **Team** — only human agens from the selected [team](teams.md) can use a canned response. You can select only one team.
+        - **Team** — only human agents from the selected [team](teams.md) can use a canned response. You can select only one team.
 5. Click **Submit**.
 
 The canned response will appear in the list on the Canned Responses page.
@@ -56,4 +56,4 @@ The canned responses will appear in the list on the Canned Responses page.
 
 ## Use a Canned Response
 
-To start using canned responses in the conversations, go to the [Send a Canned Response](../conversation/conversation-workflow.md#send-a-canned-response).
+To start using canned responses in the conversations, go to the [Send a Canned Response](../conversation/send-reply.md#advanced-quick-reply).

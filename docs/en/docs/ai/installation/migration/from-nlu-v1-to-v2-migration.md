@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
 
-This guide is intended for Cognigy on-premise customers who are migrating from the older version of Cognigy NLP to the newer version.
+This guide is intended for Cognigy on-premises customers who are migrating from the older version of Cognigy NLP to the newer version.
 
 !!! note "Deprecation of Cognigy NLU V1"
     Starting from release **4.60.0**, we will only provide bug fixes for the old NLP services if they are critical. The old NLP services will be fully deprecated with release **4.64.0**, at which point all on-premise customers should have migrated. After the **4.64.0** release, the old NLP services will no longer be available.
@@ -500,7 +500,7 @@ To ensure that the migration has been completed successfully and that NLP V1 is 
 
 ### Remove the NLP V1 Stack
 
-To remove the NLP V2 stack, remove the `service-nlp-score-<lang>` and `service-nlp-train-<lang>` services from your `values-local.yaml` file.
+To remove the NLP V1 stack, remove the `service-nlp-score-<lang>` and `service-nlp-train-<lang>` services from your `values-local.yaml` file.
 
 ## FAQ
 

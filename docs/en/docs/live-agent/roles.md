@@ -157,13 +157,13 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Assistants
 
-| Actions                         | Agent | Supervisor | Administrator |
-|---------------------------------|-------|------------|---------------|
-| **LA Agent Assist**             |       |            |               |
-| Activate Agent Assist Workspace | +     | +          | +             |
-| **Assist Bot**                  |       |            |               |
-| Edit Assist Bot Settings        | +     | +          | +             |
-| Reset Session                   | +     | +          | +             |
+| Actions                       | Agent | Supervisor | Administrator |
+|-------------------------------|-------|------------|---------------|
+| **LA AI Copilot**             |       |            |               |
+| Activate AI Copilot Workspace | +     | +          | +             |
+| **Assist Bot**                |       |            |               |
+| Edit Assist Bot Settings      | +     | +          | +             |
+| Reset Session                 | +     | +          | +             |
 
 ### Account and Profile Settings
 
@@ -192,5 +192,5 @@ To see the roles applied to the Agent, the specific Agent must log in once to ha
 
 ## More Information
 
-- [Conversation Workflow](./conversation/conversation-workflow.md)
+- [Conversation Workflow](./conversation/overview.md)
 - [Account Settings](./settings/account-settings.md)

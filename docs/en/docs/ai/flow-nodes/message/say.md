@@ -190,7 +190,7 @@ The Video Output Type allows you to configure a video output. It takes a URL as 
 !!! warning "Channel Support"
     The **Video** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
     
-    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, Youtube links might not work).
+    **PLEASE NOTE**: the **Messenger** channel requires videos to be of the MP4 type (for example, YouTube links might not work).
 
 !!! note "CognigyScript"
     Any text field in the say node supports the use of **CognigyScript**. 
@@ -388,7 +388,7 @@ For further details see the [Amazon Alexa Documentation](https://developer.amazo
 
 Defines Templates that can be displayed in a special way in the Facebook Messenger Channel.
 
-The following Facebook Messenger Templates are available:
+The following Facebook (Meta) Messenger Templates are available:
 
 - Text & Quick Replies
 - Buttons
@@ -426,7 +426,7 @@ The following Facebook Messenger Templates are available:
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/26ca2e8-webchat.jpg" width="100%" />
 </figure>
 
-The Webchat Channel features the configuration options of our Facebook integration.
+The Webchat Channel features the configuration options of our Facebook (Meta) integration.
 
 As the output format is the same, you can configure the Webchat Channel to use your output from the Facebook tab or manually override it for Webchat-specific customization.
 
