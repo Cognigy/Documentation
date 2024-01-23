@@ -13,9 +13,9 @@
 
 This Node is used to re-execute the Flow within one invocation.
 
-Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
+If an Execute Flow Node is used to reach a Flow where a Think Node is present, when the Think node is reached the Flow will stop and start executing at the Start Node of the parent/starting Flow.
 
-Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
+Upon reaching the Think Node, the Flow will stop and then restart executing at the Start Node.
 
 You may specify an input text and input data which will then be treated as a simulated message from the user.
 
