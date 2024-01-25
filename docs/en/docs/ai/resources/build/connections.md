@@ -30,11 +30,12 @@ On the **Connections** page, a list of available connections will be displayed.
 
 To edit a Connection, do the following:
 
-1. Open Cognigy.AI and select the Agent you want to edit. 
-2. Go to **Build > Connections** to open the Connections view with listed Connections.
-3. Click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to edit.
-4. Select **Edit** to open the Connection editor window.
-5. Change configuration settings and click **Save**. 
+1. Open the Cognigy.AI interface.
+2. Select the Agent you want to edit. 
+3. Go to **Build > Connections** to open the Connections view with listed Connections. 
+4. Click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to a Connection you want to edit. 
+5. Select **Edit** to open the Connection editor window. 
+6. Change configuration settings and click **Save**. 
 
 ## Copy the Connection Reference ID
 
@@ -71,6 +72,6 @@ To delete a Connection, do the following:
 
 ## More Information
 
-- [Extensions](../../../ai/resources/manage/extensions/)
+- [Extensions](../../../ai/resources/manage/extensions.md)
 - [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md)
 - [HTTP Request](../../../ai/flow-nodes/services/http-request.md)
