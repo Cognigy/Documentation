@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.65-blue.svg)](../../release-notes/4.65.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../release-notes/4.68.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -15,7 +15,7 @@ Knowledge AI can be used to enhance Natural Language Processing (NLP) and Conver
 
 With the Cognigy Knowledge AI solution, you no longer need to rely solely on [Intents](../nlu/nlu-overview/ml-intents.md) and [Default Replies](../nlu/nlu-overview/overview.md#default-replies) to identify user questions and provide relevant content based on predefined responses. Crafting these question-and-answer pairs can be time-consuming and labor-intensive, requiring ongoing maintenance efforts.
 
-Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as PDF, text, and DOCX files, as well as files in the [Cognigy CTXT](../knowledge-ai/ctxt.md) format. This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
+Instead, Cognigy Knowledge AI lets you upload existing knowledge as documents, such as [PDF](pdf.md), text, and DOCX files, as well as files in the [Cognigy CTXT](../knowledge-ai/ctxt.md) format and [Web Pages](../knowledge-ai/web-page.md). This technology extracts meaningful information from these documents and makes it accessible to Flow designers via the Knowledge AI Nodes. This approach empowers you to build knowledge-based virtual agents quickly and effortlessly, bypassing the limitations of traditional intent-based systems and simplifying the process of creating sophisticated conversational experiences.
 
 ## Prerequisites
 
@@ -87,6 +87,8 @@ Knowledge is organized in a hierarchy of stores, sources, and chunks to enable a
 A _Knowledge Store_ is a container that holds and organizes multiple Knowledge Sources. It provides a centralized and structured environment for managing and categorizing various sources of knowledge.
 The Knowledge Store helps streamline the knowledge management process by grouping related Knowledge Sources, making it easier to organize, search, and retrieve relevant information during runtime.
 
+You can also export and import a Knowledge Store as a [Package](../../ai/resources/manage/packages.md).
+
 The maximum number of stores per project is described in the [Limitations](#limitations) section.
 
 <figure>
@@ -95,18 +97,19 @@ The maximum number of stores per project is described in the [Limitations](#limi
 
 #### Knowledge Source
 
-A _Knowledge Source_ represents the output of transforming various types of files into a structured and accessible format. Each file corresponds uniquely to a specific Knowledge Source, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
+A _Knowledge Source_ represents the output of transforming various types of content into a structured and accessible format. Each content type corresponds uniquely to a specific Knowledge Source, containing valuable knowledge in the form of user manuals, articles, FAQs, and other relevant information.
 
-By breaking down the content of these files into smaller units known as _chunks_, the Knowledge Source becomes a specific collection of organized and structured knowledge.
+By breaking down the content of these sources into smaller units known as _chunks_, the Knowledge Source becomes a specific collection of organized and structured knowledge.
 
 In addition to the main content, you can include other types of information, such as links and dates, in the metadata.
 
-The following types of files are supported:
+The following types of content are supported:
 
 - `.ctxt` (recommended) 
 - `.txt`
 - `.pdf`
 - `.docx`
+- `web page`
 
 The `.ctxt` ([Cognigy text](ctxt.md)) format effectively splits the text into chunks and provides wide possibilities for working with metadata. For other formats, the results of file conversion may produce poorer outcomes.
 
@@ -121,7 +124,7 @@ The maximum number of sources per store is described in the [Limitations](#limit
 Additionally, you can use Source Tags. These tags serve to refine the scope of your knowledge search, allowing you to include only the most pertinent sections of the knowledge base and,
 as a result, improve the accuracy of search outputs.
 
-To apply these tags, specify them when uploading a source file.
+To apply these tags, specify them when uploading a source type.
 For the .ctxt format, you must include them in the [source metadata](ctxt.md#source-metadata),
 while for other formats,
 you need to specify them within the Cognigy.AI interface when creating a new knowledge source.
@@ -200,8 +203,8 @@ The table below presents limitations. These limitations are subject to future ch
 | Maximum number of characters for metadata per Chunk                                                                | 1000          |
 | Maximum number of characters for metadata per Source                                                               | 1000          |
 
-!!! Snapshots
-    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). This feature will be implemented soon.    
+!!! note
+    Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). Instead, you can use [Packages](../resources/manage/packages.md) to import or export Knowledge Stores.   
 
 ## FAQ
 
@@ -217,6 +220,7 @@ The table below presents limitations. These limitations are subject to future ch
 
 - [Cognigy Text Format](ctxt.md)
 - [PDF](pdf.md)
+- [Web Page](../knowledge-ai/web-page.md)
 - [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
 - [LLM](../resources/build/llm.md)
 - [Generative AI](../generative-ai.md)
