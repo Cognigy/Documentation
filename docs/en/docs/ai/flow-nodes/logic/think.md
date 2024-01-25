@@ -13,7 +13,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-This Node is used to re-execute the Flow within a single iteration. The Node is helpful when you need to process user input in the middle of a Flow to retrieve an NLU result.
+This Node is used to re-execute the Flow within a single iteration. The Node is useful when you want to start the Flow again, either with changed text/data or by triggering an intent explicitly.
 
 Upon reaching the Think Node, the Flow will stop and then restart executing at the Start Node.
 This behavior can be changed if you use an Execute Flow Node in the parent Flow to access a child Flow with a Think Node. When the Think Node is reached, the child Flow stops,
