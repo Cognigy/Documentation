@@ -1,0 +1,63 @@
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-bar {
+
+    background: rgb(11, 54, 148);
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-header-title {
+
+    text-align: center;
+    font-size: 20px;
+    font-family: "Mulish";
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message.bot {
+
+    background: rgb(11, 54, 148);
+    font-family: "Mulish";  
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message.user {
+
+    font-family: "Mulish";
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat-toggle].webchat-toggle-button {
+
+    background: rgb(11, 54, 148);
+}
+
+[data-cognigy-webchat-root] .webchat-buttons-template-root {
+
+    font-family: "Mulish";
+}
+
+[data-cognigy-webchat-root] .webchat-buttons-template-header {
+
+    background: rgb(11, 54, 148);
+
+}
+
+[data-cognigy-webchat-root] .webchat-buttons-template-button {
+    background-color: #fffffe;
+    color: rgb(11, 54, 148) !important;
+}
+
+[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-avatar.bot {
+
+    background-image: url("../img/AI-blue.svg");
+    background-size: 80%;
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-root {
+
+    font-family: "Mulish";
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-header-message { 
+    background: rgb(11, 54, 148) !important;
+}
+
+[data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container .webchat-quick-reply-template-reply {
+    color: rgb(11, 54, 148);
+    border-color: rgb(11, 54, 148);
+}

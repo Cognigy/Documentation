@@ -8,8 +8,6 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
-{! _includes/ai-copilot/pricing.md !}
-
 The AI Copilot Nodes allow users to customize the AI Copilot workspace by adding HTML, Adaptive Cards, and IFrame content.
 
 Cognigy.AI supports the following Nodes:

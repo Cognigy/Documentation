@@ -53,34 +53,52 @@ To create your AI Copilot Config, follow these steps:
 3. Choose the placement of your tiles by adding the starting position and size of each tile in your grid.
 4. Add the Project ID you copied earlier to ensure that the Config is mapped to the right Agent.
 
-    ```json
-    {
-      "name": "string",
-      "description": "string",
+   ```json
+   {
+      "name": "AI Copilot Config sample",
+      "description": "A sample configuration for AI Copilot showcasing the layout of tiles",
       "config": {
-        "grid": {
-          "columns": 6,
-          "rows": 9,
-          "gap": 16
-        },
-        "tiles": {
-          "Live Agent": {
-            "x": 1,
-            "y": 1,
-            "columns": 4,
-            "rows": 2
-          },
-          "Voice Gateway": {
-            "x": 1,
-            "y": 1,
-            "columns": 4,
-            "rows": 2
-          }
-        }
+         "grid": {
+            "columns": 3,
+            "rows": 8,
+            "gap": 10
+         },
+         "tiles": {
+            "identity-assist": {
+               "x": 1,
+               "y": 1,
+               "rows": 4,
+               "columns": 1
+            },
+            "transcript-assist": {
+               "x": 2,
+               "y": 1,
+               "rows": 2,
+               "columns": 2
+            },
+            "next-action": {
+               "x": 2,
+               "y": 3,
+               "rows": 2,
+               "columns": 2
+            },
+            "knowledge-assist": {
+               "x": 2,
+               "y": 5,
+               "rows": 4,
+               "columns": 2
+            },
+            "event-assist": {
+               "x": 1,
+               "y": 5,
+               "rows": 4,
+               "columns": 1
+            }
+         }
       },
-      "projectId": "your Project ID"
-    }
-    ```
+      "projectId": "your-project-id"
+   }
+   ```
 5. Create the request by clicking **Try**.
 
 When the request is created, you will see the response code `201`.
@@ -103,14 +121,14 @@ To create your Endpoint, follow these steps:
 
 ## Configure an AI Copilot Flow
 
-1. To configure the first Widget, go into to the AI Copilot Flow.
-2. Add your desired AI Copilot Flow Node. 
-3. Add the content, which will be displayed as a Widget in the AI Copilot Workspace.
-4. Ensure that the tile ID matches the ID chosen in the AI Copilot configuration; this defines the size and placement of the Widget within the Workspace.
+1. To configure your first workspace, go into to the AI Copilot Flow.
+2. Add your desired [AI Copilot Flow Nodes](../ai/flow-nodes/ai-copilot/overview.md). 
+3. Add the content, which will be displayed within the AI Copilot Workspace.
+4. Ensure that the tile ID in the Nodes matches the tile ID chosen in the AI Copilot configuration; this defines the size and placement of the widgets within the Workspace.
 
 ## Explore an AI Copilot workspace
 
-To observe the AI Copilot workspace, start a conversation with your virtual agent
+To observe the AI Copilot workspace, start a conversation with your virtual agent.
 
 At one point, you will be handed over to a human agent. 
 

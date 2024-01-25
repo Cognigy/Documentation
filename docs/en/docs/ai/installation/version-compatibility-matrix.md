@@ -5,9 +5,9 @@ description: "Version compatibility matrix for Cognigy.AI and Infrastructure Com
 hidden: false
 ---
 
-# Cognigy.AI and Insights: Version Compatibility Matrix
+# Cognigy.AI, Insights, and AI Copilot: Version Compatibility Matrix
 
-This matrix outlines the compatibility of Cognigy.AI and Insights product versions with Cognigy infrastructure components,
+This matrix outlines the compatibility of Cognigy.AI, Insights, and AI Copilot product versions with Cognigy infrastructure components,
 such as Kubernetes, MongoDB, and Redis. 
 
 {! _includes/installation/on-prem-compatibility-matrix-note.md !}
@@ -35,6 +35,8 @@ such as Kubernetes, MongoDB, and Redis.
 | 4.64                                        | 1.19-1.26  | 5.0     | 7.0[^**]                 | 2.10    | 3.9      | 3.9 or higher |
 | 4.65                                        | 1.19-1.26  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
 | 4.66                                        | 1.19-1.26  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9+          |
+| 4.67                                        | 1.19-1.26  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9+          |
+| 4.68                                        | 1.19-1.27  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9+          |
 
 [^*]: Stand-alone deployment.
 
