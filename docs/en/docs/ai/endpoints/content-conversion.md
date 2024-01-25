@@ -6,10 +6,11 @@ hidden: false
 
 # Content Conversion
 
-Cognigy provides a wide range of endpoints for its conversational AI platform. Not all of these endpoints can correctly convert your content to the desired output type.
+Cognigy provides a wide range of Endpoints for its conversational AI platform.
+Not all of these Endpoints can correctly convert your content to the desired output type.
 
 The table below shows the [output types](../flow-nodes/message/say.md#output-types)
-that Cognigy can provide for various endpoints and other components,
+that Cognigy can provide for various Endpoints and other components,
 such as the Interaction Panel, xApp: Show Adaptive Card Node, and Live Agent. 
 
 If the Endpoint does not support the selected output type, the system returns a fallback text as a default output. The following table shows whether Cognigy.AI will convert the respective output type (+) or use the fallback text (-).
