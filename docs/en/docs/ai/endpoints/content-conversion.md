@@ -23,7 +23,7 @@ If the Endpoint does not support the selected output type, the system returns a 
 | Live Agent                        | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.5                                          |
 | **Endpoints**                     |      |                         |         |                   |      |       |       |       |                                              |
 | Webchat                           | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.5                                          |
-| Webchat plugin                    | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
+| Webchat plugin                    | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.2                                          |
 | VoiceGateway                      | +    | -                       | -       | -                 | -    | -     | -     | -     | -                                            |
 | WhatsApp                          | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | 8x8                               | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
@@ -32,7 +32,7 @@ If the Endpoint does not support the selected output type, the system returns a 
 | Facebook (Meta) Messenger         | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Azure Bot Services                | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.5                                          |
 | Line                              | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Microsoft Teams                   | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.3                                          |
+| Microsoft Teams                   | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.5                                          |
 | RingCentral Engage                | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Slack                             | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Sunshine Conversations            | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
