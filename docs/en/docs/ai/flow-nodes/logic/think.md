@@ -1,8 +1,9 @@
 ---
- title: "Think" 
- slug: "think" 
- hidden: false 
+title: "Think" 
+slug: "think"
+hidden: false 
 ---
+
 # Think
 
 <figure>
@@ -12,37 +13,20 @@
 ## Description
 <div class="divider"></div>
 
-This Node is used to re-execute the Flow within one invocation.
+This Node is used to re-execute the Flow within a single iteration. The Node is useful when you want to start the Flow again, either with changed text/data or by triggering an intent explicitly.
 
-Upon reaching this Node, the Flow will stop and then restart executing at the Start Node.
-
-You may specify an input text and input data which will then be treated as a simulated message from the user.
-
-!!! note "Think NLU"
-    When a Flow gets executed again via a Think Node, the new message will be sent through the NLU pipeline again, finding Slots and matching Intents.
+Upon reaching the Think Node, the Flow will stop and then restart executing at the Start Node.
+This behavior can be changed if you use an Execute Flow Node in the parent Flow to access a child Flow with a Think Node. When the Think Node is reached, the child Flow stops,
+and execution resumes from the beginning of the parent Flow at its Start node.
 
 ## Settings
 
-| Parameter | Type               | Description                             |
-|-----------|--------------------|-----------------------------------------|
-| Text      | CognigyScript      | A simulated message text from the user. |
-| Data      | CognigyScript JSON | Simulated message data from the user.   |
-
-You can select two **Advanced** options to integrate a Think Node functionality in your Flow:
-
-1. Think Text (default setting)
-2. Trigger Intent
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/558c716-Screen_Shot_057.PNG" width="100%" />
-</figure>
-
-Using the **Trigger Intent** option, you can re-execute the flow while forcing that a specific intent is found, instead of getting the intent result from our NLU engine. It is exactly the same behaviour as described in [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/).
-
-You can trigger an intent with a user input like "cIntent:orderFood", then the intent "orderFood" will be triggered. 
-Using the Think Node you can have the same behaviour by choosing the "Trigger Intent" option, and "orderFood" in the "intent to trigger" field.
+| Parameter         | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Think Action      | Select        | A type of action to execute:<br> - **Think Text (default)** — lets you rerun the Flow with input text and/or input data, which will then be treated as a simulated message from the end user. This input will be sent through the NLU engine again, identifying Slots and matching Intents. This option is selected by default. <br> - **Trigger Intent** — lets you rerun the Flow, ensuring a specific Intent is found instead of relying on the NLU engine. This approach is similar to the process outlined in [Trigger Intent](../../nlu/nlu-overview/trigger-intent.md), where using an input like `cIntent:orderFood` triggers the `orderFood` Intent. You can achieve the same result by selection this option and entering `orderFood` in the **Intent to trigger** field. |
+| Text to think     | CognigyScript | This field appears if the **Think Text (default)** action is selected.<br><br> The provided text serves as a message to emulate user input. This custom data will be available in the `input.text` object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Data to think     | JSON          | This field appears if the **Think Text (default)** action is selected.<br><br> The provided data serves as a message to emulate user input. This custom data will be available in the `input.data` object and can include any additional information that are relevant to the Flow.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Intent to trigger | CognigyScript | This field appears if the **Trigger Intent** action is selected.<br><br> Cognigy will trigger the Intent using the [`cIntent`](../../nlu/nlu-overview/trigger-intent.md) method.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
 ## Alternatives
 
