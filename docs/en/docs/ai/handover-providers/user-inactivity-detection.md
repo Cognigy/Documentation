@@ -81,7 +81,7 @@ To do this, add the Once Node to start the inactivity timer when you receive the
 
 The timer is set in minutes and may vary by up to one minute. If there is no end user input, the timer will expire after the specified time. If an end user input is received before the timeout, the timer will automatically reset and start from the beginning.
 
-Note that after a handover has been performed, Flows (except [AI Copilot](../../ai-copilot/overview.md) flows) are not triggered by user input, even if the Handover Status is set to `queue` or `active`.  When the Handover Status is set to `queue` or `active`, Flows will only be triggered by the inactivity timeout.
+Note that after a handover has been performed, Flows (except [AI Copilot](../../ai-copilot/overview.md) Flows) are not triggered by user input, even if the Handover Status is set to `queue` or `active`.  When the Handover Status is set to `queue` or `active`, Flows will only be triggered by the inactivity timeout.
 
 ## Set up Go To Node
 
