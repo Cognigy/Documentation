@@ -8,7 +8,11 @@ hidden: false
 
 _Connections_ are configurations that empower Cognigy virtual agents to securely interact with external services, systems, or APIs. These configurations involve the encryption, storage, and management of credentials for seamless communication between Cognigy and external resources.
 
-In contrast to other components in Cognigy, you cannot create a Connection from scratch on the Connections page. This page only lists Connections that you have already created, either when adding a new LLM, translation, handover, or voice provider within the [Settings](../manage/settings.md), or when adding a Node that requires credentials.
+In contrast to other components in Cognigy, you cannot create a Connection from scratch on the Connections page.
+This page only lists Connections you have already created
+when adding a Node that requires credentials or adding a new provider for [LLM](../build/llm.md#add-a-model),
+[translation](../../tools/auto-localization.md), [voice](../../tools/voice-preview.md),
+[handover](../../handover-providers/overview.md), or [file storage](../../endpoints/file-storage.md).
 
 The Connections page can be used to edit and delete existing Connections.
 You can copy a Reference ID here or export the Connection as a Package.
