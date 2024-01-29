@@ -10,7 +10,7 @@ hidden: false
 _PCI Vault_ is a specialized software solution designed for collecting end user credit card data during conversations with human agents in contact centers using our AI Copilot product. Cognigy PCI Vault is _[PCI DSS](https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard)_
 (Payment Card Industry Data Security Standard) compliant - a [PCI DSS v3.2.1 compliance certificate](https://trust.cognigy.com/overview/05e85d7e-e354-413e-853f-a95b217c0e85/pci-dss) is available in our [Cognigy Trust Center](https://trust.cognigy.com/).
 
-PCI Vault is a shared SaaS product that can be utilized from by Cognigy customers who have purchased the additional license. Please note that PCI Vault has a tight relationship with AI Copilot, and therefore is only available if AI Copilot has also been purchased. AI Copilot supports multiple Contact Centers.
+PCI Vault is a shared SaaS product that can be utilized by Cognigy customers who have purchased the additional license. Please note that PCI Vault has a tight relationship with AI Copilot, and therefore is only available if AI Copilot has also been purchased. AI Copilot supports multiple Contact Centers.
 
 ## Architecture
 

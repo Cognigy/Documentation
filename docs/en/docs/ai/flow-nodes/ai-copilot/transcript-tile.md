@@ -17,7 +17,7 @@ hidden: false
 
 This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
 
-Additionally, the Transcript Assist Node offers the option to enable Sentiment Analysis,
+Additionally, the Copilot: Transcript Tile offers the option to enable Sentiment Analysis,
 which allows for assessing the user's speech tone.
 This sentiment analysis can provide insights into whether the user's response is positive, negative, or neutral.
 Before using this option,
@@ -35,7 +35,7 @@ and select the appropriate model in the [supported model list](../../resources/b
 
 This Node is well-suited for scenarios involving voice calls,
 where a human agent needs to listen to the user's speech and make quick decisions.
-In such cases, the Transcript Assist Node plays a crucial role in recording and presenting the user's spoken responses.
+In such cases, the Copilot: Transcript Tile plays a crucial role in recording and presenting the user's spoken responses.
 This approach allows human agents to have immediate access to this information,
 thereby facilitating more effective and efficient communication and decision-making during voice call interactions.
 

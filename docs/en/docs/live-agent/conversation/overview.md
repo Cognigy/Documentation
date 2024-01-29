@@ -29,7 +29,7 @@ Each conversation has statuses that are listed in the table.
 | Status    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opened    | This status indicates that a conversation is handed over to a human agent. The conversation can be opened by a user or reopened by a human agent. From this status, the conversation can transition in the following ways:<br>- Move to `Pending` and `Snoozed` statuses. Can be returned from these inactive statuses to the `Open` status.<br>- Move to `Resolved` or `Abandoned` statuses. If the conversation is marked as resolved or abandoned, it cannot be reopened.<br>                                                                                                                                                                                                                                                                                                      |
-| Pending   | This status indicates that a conversation is temporarily paused, awaiting a response from either the customer or a human agent.<br> To mark a conversation as pending, in the upper-right corner of the Conversation page, next to the **Resolve** button, click ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg) ** > Mark as pending**. To reopen the conversation, click **Open**.                                                                                                                                                                                                                                                                                                                                                                           |
+| Pending   | This status indicates that a conversation is temporarily paused, awaiting a response from either the customer or a human agent.<br> To mark a conversation as pending, in the upper-right corner of the Conversation page, next to the **Resolve** button, click ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg) **> Mark as pending**. To reopen the conversation, click **Open**.                                                                                                                                                                                                                                                                                                                                                                            |
 | Snoozed   | This status indicates that a conversation is temporarily suspended until a time trigger or customer response trigger was activated.<br>To mark conversation as snoozed, in the upper-right corner of the Conversation page, next to the **Resolve** button, click ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg). Select one of the following trigger options:<br>- **Snooze Until Next Reply** — the issue will be set aside for now, and the status will change to `Open` upon the next customer reply.<br>- **Snooze Until Tomorrow** — the issue will be set aside for now, and the status will change to `Open` the next day.<br>- **Snooze Until Next Week** — the issue will be set aside for now, and the status will change to `Open` next week.<br> |
 | Abandoned | The status indicates that a conversation is closed because the user left the conversation.<br>To mark a conversation as abandon, in the top right corner of the Conversation page, click **Resolve** and select ![select](https://docs.cognigy.com/live-agent/images/icons/select.svg) **> Abandon and resolve**. Once a conversation is marked as abandoned, its state cannot be changed back to open or pending.<br> Agents with the `Administrator` role can activate the following options in the [Account Settings](../settings/account-settings.md):<br>- Automatically abandon conversations.<br>- Automatically delete abandoned conversations.                                                                                                                               |
 | Resolved  | This status indicates that a conversation is closed because the user's problem has been fixed.<br> To mark a conversation as resolved, in the upper-right corner of the Conversation page, click **Resolve**. Once a conversation is marked as resolved, its state cannot be changed back to open or pending.<br>Agents with the `Administrator` role can activate the following settings in the [Account Settings](../settings/account-settings.md).<br>- Automatically resolve conversations.<br>- Automatically delete conversations that were resolved.<br>                                                                                                                                                                                                                       |
@@ -48,7 +48,7 @@ When a conversation appears in the Live Agent status in the `Open` status, the c
 When a conversation is selected, conversation details will be displayed on the right side of the Live Agent interface.
 These details include the following conversation information: 
 
-- [User Profile Details](#user-profile-details)
+- [Contact Profile Details](#contact-profile-details)
 - [Conversation Actions](#conversation-actions)
 - [Conversation Information](#conversation-information)
 
@@ -57,24 +57,37 @@ These details include the following conversation information:
   <figcaption>Conversation Details</figcaption>
 </figure>
 
-### User Profile Details
+### Contact Profile Details
 
-The following table lists all user items that can be edited and stored as metadata.
+The Contact Profile information is shared at the beginning of the handover process. Live Agent does not store private data to comply with GDPR regulations. Instead, Live Agent only retains a reference to Cognigy.AI. When a human agent enters the conversation, Live Agent requests data from Cognigy.AI.
 
-| User Profile Data     | Description                                          |
-|-----------------------|------------------------------------------------------|
-| Email Address         | User's email address.                                |
-| First Name            | User's first name.                                   |
-| Last Name             | User's last name.                                    |
-| Age                   | User's age.                                          |
-| Birthday              | User's birthday.                                     |
-| Gender                | User's gender.                                       |
-| Location              | User's location.                                     | 
-| Profile Picture       | When available, the URL address of a user's picture. |
-| Accepted GDPR         | User accepted European privacy law: Yes/No           |
-| Goals                 | The user's intention or task.                        |
+If the human agent doesn't leave the conversation page, they may miss contact profile updates. To view profile updates that occur on the Cognigy.AI side, the human agent must reenter the conversation. This can be done by switching to another page within Live Agent and then returning.
 
-To edit profile data click ![edit](../../assets/icons/edit.svg), enter data and confirm with **Submit**. 
+The following table represents data that be edited within Live Agent and stored in the Contact Profile.
+
+| Contact Profile Data | Description                                          |
+|----------------------|------------------------------------------------------|
+| Email Address        | User's email address.                                |
+| First Name           | User's first name.                                   |
+| Last Name            | User's last name.                                    |
+| Age                  | User's age.                                          |
+| Birthday             | User's birthday.                                     |
+| Gender               | User's gender.                                       |
+| Location             | User's location.                                     | 
+| Profile Picture      | When available, the URL address of a user's picture. |
+| Accepted GDPR        | User accepted European privacy law: Yes/No           |
+| Goals                | The user's intention or task.                        |
+
+To modify the Contact Profile, follow these steps:
+
+1. Go to the Live Agent interface. 
+2. In the left-side menu, select Conversations. 
+3. Select a conversation from the list. 
+4. On the right side of the page, navigate to **Conversation Details**. 
+5. On the **Details** tab, Click ![edit](../../assets/icons/edit.svg) to modify the Contact Profile. 
+6. In the Contact Profile window, fill in the fields and click **Submit** to save your changes.
+
+This action will also update the [Contact Profile](../../ai/resources/manage/contact-profiles.md) on the Cognigy.AI side. In Live Agent, cached Contact Profile data will persist for one hour. You can change this parameter if you have an on-premises or dedicated SaaS environment. To do so, add the `COGNIGY_CONTACT_PROFILE_CACHE_TIME` variable in the Live Agent `values.yaml` file and specify the value in seconds.
 
 ### Conversation Actions
 
@@ -106,7 +119,7 @@ This will help the agent understand the history of the customer's issue.
 
 Cognigy provides three assistants for giving human agents support in their service conversations. You can choose the installation that best suits your requirements:
 
-- [Assist Bots](../assistants/assist-bot.md)
+- [AI Copilot Bot](../assistants/ai-copilot-bot.md)
 - [LA AI Copilot](../assistants/la-ai-copilot.md)
 - [AI Copilot Workspace](../assistants/ai-copilot.md)
 

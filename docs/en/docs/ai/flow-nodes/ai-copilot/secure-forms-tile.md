@@ -25,7 +25,7 @@ The Node must be integrated into the AI Copilot Flow, requiring only the Tile ID
 
 | Parameter                | Type          | Description                                                                                                                                    |
 |--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tile ID                  | CognigyScript | The ID that you created in the Agent Assist configuration.                                                                                     |
+| Tile ID                  | CognigyScript | The ID that you created in the AI Copilot configuration.                                                                                     |
 
 ## Use Case
 
