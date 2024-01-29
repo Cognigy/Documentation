@@ -13,7 +13,9 @@ The table below shows the [output types](../flow-nodes/message/say.md#output-typ
 that Cognigy can provide for various Endpoints and other components,
 such as the Interaction Panel, xApp: Show Adaptive Card Node, and Live Agent. 
 
-If the Endpoint does not support the selected output type, the system returns a fallback text as a default output. The following table indicates whether Cognigy.AI will convert the respective output type (+), use the fallback text (-), or indicate that it is not applicable (N/A) to a particular component.
+If the Endpoint does not support the selected output type, the system returns a fallback text as a default output.
+The following table shows whether Cognigy.AI will convert the respective output type (+), use the fallback text (-),
+or indicate that it is not applicable (N/A) to a particular component.
 
 | Component, Endpoint / Output Type | Text | Text with Quick Replies | Gallery | Text with Buttons | List | Audio | Image | Video | Adaptive Card (including supported versions) |
 |-----------------------------------|------|-------------------------|---------|-------------------|------|-------|-------|-------|----------------------------------------------|
