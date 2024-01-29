@@ -57,7 +57,7 @@ Available only in Transactional mode.
 
 ### Grounding
 
-Grounding Knowledge is the foundational information that the AI Agent has access to, enabling it to not only construct factual responses but also understand the context of user queries and generate accurate, contextually relevant, and coherent information. 
+Grounding Knowledge is the foundational information that the virtual agent has access to, enabling it to not only construct factual responses but also understand the context of user queries and generate accurate, contextually relevant, and coherent information. 
 
 | Parameter           | Type                 | Description                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
