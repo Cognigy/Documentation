@@ -71,4 +71,4 @@ To delete a Connection, do the following:
 
 - [Extensions](../../../ai/resources/manage/extensions.md)
 - [Flow Nodes](../../../ai/flow-nodes/flow-nodes-overview.md)
-- [HTTP Request](../../../ai/flow-nodes/services/http-request.md)
+- [Service Nodes](../../../ai/flow-nodes/services/services.md)
