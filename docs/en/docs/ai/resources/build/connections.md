@@ -42,7 +42,7 @@ To copy the Reference ID of a Connection, do the following:
 
 1. Open Cognigy.AI and select the Agent you want to edit.
 2. In the left-side menu, navigate to **Build > Connections**.
-3. On the **Connections** page, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to delete.
+3. On the **Connections** page, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to copy the reference ID.
 4. Select **Copy Reference ID**. The ID will be copied to the clipboard.
 
 ## Export a Connection
@@ -51,7 +51,7 @@ To export a Connection, do the following:
 
 1. Open Cognigy.AI and select the Agent you want to edit.
 2. In the left-side menu, navigate to **Build > Connections**.
-3. On the **Connections** page, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to delete.
+3. On the **Connections** page, click ![vertical-ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Connection you want to export.
 4. Select **Export as package**.  
 
 ## Delete a Connection
