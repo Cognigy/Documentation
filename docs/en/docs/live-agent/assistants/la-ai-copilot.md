@@ -6,6 +6,10 @@ hidden: false
 # LA AI Copilot 
 
 {! _includes/live-agent/assistant-setup.md !}
+ 
+### Supported Output Types
+
+LA AI Copilot supports all output types that can be selected in the [Say](../../ai/flow-nodes/flow-nodes-overview.md#say), [Question](../../ai/flow-nodes/flow-nodes-overview.md#question), or [Optional Question](../../ai/flow-nodes/flow-nodes-overview.md#optional-question) Nodes.
 
 ## Set up an Endpoint
 
@@ -31,7 +35,7 @@ To test LA AI Copilot, follow these steps:
 4. After that, send a message as the user in Webchat.
 
 <figure>
-    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat_f.png" width="50%" />
+    <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat_f.png" width="70%" />
 </figure>
 
 Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand:
@@ -39,15 +43,15 @@ Once the human agent receives this message, the testing behavior will vary depen
 1. The human agent will receive a dropdown menu **Assist**. 
 2. In this menu, the human agent will find the results from the Flow sent via LA AI Copilot.
        <figure>
-           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview_f.png" width="55%" />
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview_f.png" width="65%" />
        </figure>
 3. The human agent can click the blue arrow to forward content to the user.
       <figure>
-           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward_f.png" width="55%" />
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview-forward_f.png" width="80%" />
       </figure>
 
        <figure>
-           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete_f.png" width="50%" />
+           <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-webchat-complete_f.png" width="70%" />
        </figure>
 
 If the testing is successful, the LA AI Copilot setup is complete.

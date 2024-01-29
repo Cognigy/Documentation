@@ -55,6 +55,8 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.68:
+    - release-notes/4.68.md
   - 4.67:
     - release-notes/4.67.md
   - 4.66:
@@ -418,6 +420,7 @@ nav:
     - ai/knowledge-ai/overview.md
     - ai/knowledge-ai/ctxt.md
     - ai/knowledge-ai/pdf.md
+    - ai/knowledge-ai/web-page.md
   - ai/generative-ai.md
   - ai/architecture.md
   - Installation & Configuration:
