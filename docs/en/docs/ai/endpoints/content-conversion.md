@@ -36,7 +36,7 @@ or indicate that it is not applicable (N/A) to a particular component.
 | Facebook (Meta) Messenger         | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Azure Bot Services                | +    | +                       | +       | +                 | +    | +     | +     | +     | 1.5[^*]                                      |
 | Line                              | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
-| Microsoft Teams                   | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.3[^*]                                      |
+| Microsoft Teams                   | +    | -                       | +       | +                 | +    | +     | +     | +     | 1.5[^*]                                      |
 | RingCentral Engage                | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Slack                             | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
 | Sunshine Conversations            | +    | +                       | +       | +                 | +    | +     | +     | +     | -                                            |
