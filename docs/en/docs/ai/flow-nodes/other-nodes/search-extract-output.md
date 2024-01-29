@@ -16,6 +16,8 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
+{! _includes/release-notes/order-property-deprecation.md !}
+
 This Node searches through data within the Knowledge AI solution, extracts a relevant answer via a generative AI model, and creates an output.
 
 Before using this Node,
