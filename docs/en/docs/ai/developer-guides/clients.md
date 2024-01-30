@@ -16,4 +16,4 @@ All clients except the REST API Client connect against Cognigy Endpoints. The RE
 | [Unity 3D Client](https://github.com/Cognigy/CognigyUnity3DClient)        | C#           | Unity3D game-engine integration                                                                                           |
 | [REST Client](https://github.com/Cognigy/RestClient)                      | TypeScript   | A simple client you can use in your projects to connect to a Cognigy.AI REST endpoint.                                    |
 | [REST API Client](https://www.npmjs.com/package/@cognigy/rest-api-client) | TypeScript   | An npm module to connect against the Cognigy API                                                                          |
-| [Cognigy CLI](https://github.com/Cognigy/Cognigy-CLI)                     | Command Line | Cognigy-CLI is a series of tools to interact with your Cognigy.AI virtual agent projects from the command line            |
+| [Cognigy CLI](https://github.com/Cognigy/Cognigy-CLI)                     | TypeScript   | Cognigy-CLI is a series of tools to interact with your Cognigy.AI virtual agent projects from the command line            |
