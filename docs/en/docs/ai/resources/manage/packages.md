@@ -97,7 +97,7 @@ Importing a Package from a newer version into an older version of Cognigy.AI is 
 ### Import a Package
 
 !!! warning "Don't Import Knowledge Stores for Production Use"
-    Do not use Packages to deploy Knowledge to production. The import process may cause downtime for virtual agents, as the current version of the Knowledge Store will be replaced by the packaged version. This process may take some time.
+    Do not use Packages for deploying Knowledge to a production project. This is because virtual agents' Knowledge may be temporarily unavailable during the replacement of Knowledge Stores in the import process.
 
 !!! warning "Using Packages as Templates: Node IDs"
     Node IDs will not change upon import to ensure that hardcoded links between Flows and Nodes do not break. If you need to import a Flow multiple times into the same Project, you can delete and re-create a Node to prevent ID conflicts.
