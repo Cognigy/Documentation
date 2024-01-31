@@ -34,6 +34,8 @@ If you are using AI Copilot as a standalone application, the AI Copilot URL foll
 
 {! _includes/ai-copilot/url-pattern.md !}
 
+If you are utilizing the embedded AI Copilot workspace, you can also use this URL to investigate the workspace before deploying it to production.
+
 ## Transcript Tile
 
 The Transcript Tile in the AI Copilot workspace acts as a chat interface for human agents. It allows them to seamlessly read messages from end users and respond without having to switch back to the main chat interface.
