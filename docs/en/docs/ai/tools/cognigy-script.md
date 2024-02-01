@@ -1,26 +1,22 @@
 ---
- title: "CognigyScript" 
- slug: "cognigy-script" 
- hidden: false 
+title: "CognigyScript" 
+slug: "cognigy-script" 
+hidden: false 
 ---
+
 # CognigyScript
 
-CognigyScript is a superset of JavaScript which gives you access to the [Input](../../ai/tools/interaction-panel/input.md) and [Context](../../ai/tools/interaction-panel/context.md) objects within text and JSON.
-Using CognigyScript, you can execute powerful scripts and tasks, such as building extended outputs you want to return to the client.
-Within text, CognigyScript is written within `{{"{{ }}"}}` tags. 
+_CognigyScript_ is a superset of JavaScript that grants access to the [Input](../../ai/tools/interaction-panel/input.md), [Context](../../ai/tools/interaction-panel/context.md), and [Profile](../../ai/tools/interaction-panel/profile.md) objects within text and JSON. With CognigyScript, you can execute powerful scripts and tasks, including building extended outputs to return to the client.
 
-Example: `{{"{{input.text}}"}}`
+CognigyScript is enclosed within double curly braces (`{{"{{ }}"}}`) tags, for example, `{{"{{input.text}}"}}`. This syntax enables Cognigy to identify and execute the CognigyScript code embedded within the conversation flow.
 
-CognigyScript is essentially JavaScript, but gives you access to the Cognigy objects via exposed variables:
+CognigyScript gives you access to the Cognigy objects via exposed variables:
 
-| Variable | Description                  | Shortcut    | Example                            |
-|----------|------------------------------|-------------|------------------------------------|
-| input    | The Input Object             | ci          | {{ " {{input.text}}" }}            |
-| context  | The Context Object           | cc          | {{ " {{context.selectedHotel}}" }} |
-| profile  | The Contact Profile Object   | cp          | {{ " {{profile.firstname}}" }}     |
-
-!!! note "Shortcuts for variables"
-    You can use following shortcuts for variables: **ci** for input, **cc** for context and **cp** for profil.
+| Object          | Variable  | Shortcut | Example                             | Shortcut Example               |
+|-----------------|-----------|----------|-------------------------------------|--------------------------------|
+| Input           | `input`   | `ci`     | `{{ "{{input.text}}" }}`            | `{{ "{{ci.text}}" }}`          |
+| Context         | `context` | `cc`     | `{{ "{{context.selectedHotel}}" }}` | `{{ "{{cc.selectedHotel}}" }}` |
+| Contact Profile | `profile` | `cp`     | `{{ "{{profile.firstname}}" }}`     | `{{ "{{cp.firstname}}" }}`     |
 
 ## Node Arguments
 
