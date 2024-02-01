@@ -29,16 +29,16 @@ _**Agent Queue**_
 _**Agent Status**_
 :  Agent statuses help manage the availability and workload of human agents, ensure consistent and efficient customer service, and provide transparency regarding the agent's availability to handle chat requests. For more information, read the [Agent Statuses](settings/agents.md) documentation.
 
+_**AI Copilot Bot**_
+:  A tool for assisting the Agents while talking to the customers. It consists of a dedicated Flow to provide information to the Agent. Therefore, it needs to be configured as a separate Flow in Cognigy.AI.
+For more information, read the [AI Copilot Bot](assistants/ai-copilot-bot.md) documentation.
+
 _**API Access Token**_
 :  A data structure that contains authentication and authorization information to use an application. It can be used if you are building an API-based integration and its actions are limited by the user role. For more information, read the [Profile Settings](profile-settings.md) documentation.
 
 _**Assigned (conversations)**_
 :  Every Conversation in Live Agent can have an assignee. An assignee can be manually added to the Conversation via the UI, the API, or automatically via an available round-robin assignment system.
 For more information, read the [Conversation Routing](conversation/conversation-routing/overview.md) documentation.
-
-_**Assist Bot**_
-:  A tool for assisting the Agents while talking to the customers. It consists of a dedicated Flow to provide information to the Agent. Therefore, it needs to be configured as a separate Flow in Cognigy.AI.
-For more information, read the [AI Copilot Bot](assistants/ai-copilot-bot.md) documentation.
 
 _**Attachments**_
 :  In an ongoing Live Agent conversation, both the user and the agent can send files such as images, videos, documents, and forms directly during the conversation. All attachments within account conversations are accessible in the Settings menu.

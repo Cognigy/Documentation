@@ -40,7 +40,7 @@ To test LA AI Copilot, follow these steps:
 
 Once the human agent receives this message, the testing behavior will vary depending on how you configured the Endpoint beforehand:
 
-1. The human agent will receive a dropdown menu **Assist**. 
+1. The human agent will receive a dropdown menu **AI Copilot**. 
 2. In this menu, the human agent will find the results from the Flow sent via LA AI Copilot.
        <figure>
            <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/la-agent-assist-agentview_f.png" width="65%" />

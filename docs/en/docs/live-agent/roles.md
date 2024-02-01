@@ -55,17 +55,17 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 
 ### Inboxes
 
-| Actions                                    | Agent | Supervisor | Administrator  |
-|--------------------------------------------|-------|------------|----------------|
-| Create an Inbox                            |  -    | -          | +              |
-| Edit an Inbox                              |  -    | -          | +              |
-| Delete an Inbox                            |  -    | -          | +              |
-| Create Assist Bot                          |  -    | -          | +              |
-| Edit Assist Bot                            |  -    | -          | +              |
-| Delete Assist Bot                          |  -    | -          | +              |
-| Add Agents to the Inbox                    |  -    | -          | +              |
-| Remove Agents from the Inbox               |  -    | -          | +              |
-| Configure Conversation Assignment Settings |  -    | -          | +              |
+| Actions                                    | Agent | Supervisor | Administrator |
+|--------------------------------------------|-------|------------|---------------|
+| Create an Inbox                            | -     | -          | +             |
+| Edit an Inbox                              | -     | -          | +             |
+| Delete an Inbox                            | -     | -          | +             |
+| Create AI Copilot Bot                      | -     | -          | +             |
+| Edit AI Copilot Bot                        | -     | -          | +             |
+| Delete AI Copilot Bot                      | -     | -          | +             |
+| Add Agents to the Inbox                    | -     | -          | +             |
+| Remove Agents from the Inbox               | -     | -          | +             |
+| Configure Conversation Assignment Settings | -     | -          | +             |
 
 ### Conversations
 
@@ -161,8 +161,8 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 |-------------------------------|-------|------------|---------------|
 | **LA AI Copilot**             |       |            |               |
 | Activate AI Copilot Workspace | +     | +          | +             |
-| **Assist Bot**                |       |            |               |
-| Edit Assist Bot Settings      | +     | +          | +             |
+| **AI Copilot Bot**            |       |            |               |
+| Edit AI Copilot Bot Settings  | +     | +          | +             |
 | Reset Session                 | +     | +          | +             |
 
 ### Account and Profile Settings
