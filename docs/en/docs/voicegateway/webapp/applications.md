@@ -128,7 +128,7 @@ To configure call forwarding, follow these steps:
     === "Create a new outgoing call"
          5.1 From the **Transfer type** list, select **Dial**.<br>
          5.2 *(Optional)* In the **Reason** field, specify the reason for transferring a call, for example, `Cognigy.AI connection wasn't established`. The value will be transmitted in the `"X-Reason": "<reason>"` format within a custom SIP header and will be present in the `.pcap` file on the recipient's side for further analysis.<br>
-         5.3 In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format, starting with a `+` sign.<br>
+         5.3 In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format (E.164), starting with a `+` sign.<br>
          5.4 *(Optional)* In the **Caller ID** field, specify the caller ID. Note that some carriers, such as Twilio, may require a registered number for outgoing calls.
   
 6. Click **Save**.
