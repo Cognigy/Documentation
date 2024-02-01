@@ -122,7 +122,7 @@ To configure call forwarding, follow these steps:
     === "Forward an existing call"
          5.1 From the **Transfer type** list, select **Refer**.<br>
          5.2. *(Optional)* In the **Reason** field, specify the reason for transferring a call, for example, `Cognigy.AI connection wasn't established`. The value will be transmitted in the `"X-Reason": "<reason>"` format within a custom SIP header and will be present in the pcap file on the recipient's side for further analysis.<br>
-         5.3. In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format, starting  with a `+` sign.<br>
+         5.3. In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format (E.164), starting  with a `+` sign.<br>
          5.4  *(Optional)* In the **Referred-by** field, change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. This field helps to filter out unwanted incoming calls. You can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>-**User Identifier** -`sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example: `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.
     
     === "Create a new outgoing call"
