@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 An Execute Flow Node is used to immediately execute another Flow.
 
