@@ -6,6 +6,8 @@ hidden: false
 
 # Action
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../release-notes/4.68.md)
+
 Within a [Code Node](code.md), you can use the functions of the `actions` and `api` classes.
 
 !!! note "Available in Extensions"
@@ -21,8 +23,8 @@ Executes a basic output to the contact, similar to the functionality of the [Say
 
 | Parameter | Type   | Description                                  |
 |-----------|--------|----------------------------------------------|
-| text      | string | The output text which is sent to the contact |
-| data      | any    | The output data which is sent to the contact |
+| text      | string | The output text that is sent to the contact. |
+| data      | any    | The output data that is sent to the contact  |
 
 **Returns**
 
@@ -34,9 +36,9 @@ Adds a defined goal to the **completedGoals** array in the **Input Object**.
 
 **Parameters**
 
-| Parameter | Type   | Description                                                    |
-|-----------|--------|----------------------------------------------------------------|
-| key       | string | name of the goal the will be added to the completedGoals array |
+| Parameter | Type   | Description                                                          |
+|-----------|--------|----------------------------------------------------------------------|
+| key       | string | The name of the goal that will be added to the completedGoals array. |
 
 **Returns**
 
@@ -48,9 +50,9 @@ Sets the time zone offset from UTC.
 
 **Parameters**
 
-| Parameter | Type     | Description              |
-|-----------|----------|--------------------------|
-| offset    | *number* | The time offset in hours |
+| Parameter | Type     | Description               |
+|-----------|----------|---------------------------|
+| offset    | *number* | The time offset in hours. |
 
 **Returns**
 
@@ -62,10 +64,10 @@ Writes a message to the project logs.
 
 **Parameters**
 
-| Parameter | Type   | Description                           |
-|-----------|--------|---------------------------------------|
-| level     | string | The log level, e.g. *debug* or *info* |
-| text      | string | The message for the logs              |
+| Parameter | Type   | Description                                    |
+|-----------|--------|------------------------------------------------|
+| level     | string | The log level, for example, `debug` or `info`. |
+| text      | string | The message for the logs.                      |
 
 **Returns**
 
@@ -119,6 +121,51 @@ Gets the data from the context by the key.
 **Returns**
 
 any : The requested context data
+
+### actions.getConversationTranscript || api.getConversationTranscript
+
+Retrieves the current conversation transcript, including the last 10 user inputs and the associated outputs from the virtual agent.
+
+**Parameters**
+
+| Parameter | Type   | Description                                                                                                                                     |
+|-----------|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| mode      | string | - `json` — returns an array of conversation entries. This option is default. <br> - `string` — returns a stringified version of the transcript. |
+| options   | object | Options to be passed to the function. The example is presented below.                                                                           |
+
+Example Options:
+
+```json
+{
+    "turnLimit": 3 // the number of turns to return
+}
+```
+
+**Returns**
+
+Either the JSON array of conversation entries or the string representation. 
+
+Example JSON:
+
+```json
+[
+    { "source":"user", "text":"hello" },
+    { "source":"bot", "text":"You said: hello" },
+    { "source":"user", "text":"you are an ai agent" },
+    { "source":"bot", "text":"You said: you are an ai agent" },
+    { "source":"user", "text":"show transcript" }
+]
+```
+
+Example string:
+
+```text
+- USER: hello
+- BOT: You said: hello
+- USER: you are an ai agent
+- BOT: You said: you are an ai agent
+- USER: show transcript
+```
 
 ### actions.resetContext || api.resetContext
 

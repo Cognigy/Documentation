@@ -2,7 +2,7 @@ site_name: Cognigy Documentation
 site_description: Documentation of Cognigy products
 site_url: https://docs.cognigy.com/
 site_author: Cognigy
-copyright: Copyright &copy; 2023 <a href="https://www.cognigy.com/">Cognigy</a>
+copyright: Copyright &copy; 2024 <a href="https://www.cognigy.com/">Cognigy</a>
 repo_url: https://github.com/Cognigy/Documentation/
 repo_name: cognigy/documentation
 theme:
@@ -55,6 +55,10 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.69:
+    - release-notes/4.69.md
+  - 4.68:
+    - release-notes/4.68.md
   - 4.67:
     - release-notes/4.67.md
   - 4.66:
@@ -418,6 +422,7 @@ nav:
     - ai/knowledge-ai/overview.md
     - ai/knowledge-ai/ctxt.md
     - ai/knowledge-ai/pdf.md
+    - ai/knowledge-ai/web-page.md
   - ai/generative-ai.md
   - ai/architecture.md
   - Installation & Configuration:

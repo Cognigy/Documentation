@@ -67,9 +67,10 @@ To create a Queue, follow these steps:
 4. In the left-side **Create Queue** window, fill in the following fields:
     - **Name** — enter a unique name of the queue. Save and copy this name for later use.
     - **Division** — select `Home`.
-5. Click **Save**.
-
-Your queue will appear in the queue list.
+5. Click **Save**. Your queue will appear in the queue list.
+6. Open the queue settings by selecting this queue from the list.
+7. Copy the Queue ID from the page URL. To do this, navigate to the page URL and find the ID between `/queues/` and `/general`. For example, in the URL, `https://apps.mypurecloud.de/directory/#/admin/organization/queues/d59d0280-6664-4896-ad42-1a2715b7178e/general`, the ID `d59d0280-6664-4896-ad42-1a2715b7178e` should be copied.
+8. Save the Queue ID for later use in Cognigy.
 
 #### Create an Inbound Message Flow
 
@@ -146,7 +147,7 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI, follow thes
 6. Fill in the following fields:
     - **Host** — enter the login URL for Genesys Cloud customers, which varies by region, such as `mypurecloud.de` for Germany. You can use the base domain like `mypurecloud.com` or `cac1.pure.cloud`, omitting `apps.` or `login.` part. For more on Genesys Cloud regions, refer to [AWS regions for deployment](https://help.mypurecloud.com/articles/aws-regions-for-genesys-cloud-deployment/).
     - **Deployment Name** — specify the Open Messaging platform name that you created [on the Genesys side](#create-a-platform).
-    - **Queue** — enter the Queue name that you created [on the Genesys side](#create-a-queue).
+    - **Queue** — enter the Queue ID that you copied when you created a queue [on the Genesys side](#create-a-queue).
     - **Webhook Secret** — specify the Outbound Notification Webhook Signature Secret Token that you created [on the Genesys side](#create-a-platform).
     - **Client ID** — enter the Client ID that you generated [on the Genesys side](#configure-credentials).
     - **Client Secret** — enter the Client Secret that you generated [on the Genesys side](#configure-credentials). 
