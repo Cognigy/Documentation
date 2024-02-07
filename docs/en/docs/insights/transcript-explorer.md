@@ -15,32 +15,86 @@ The Transcript Explorer enables you to search for key phrases like "booking", "c
 
 An analysis tool that allows you to evaluate messages in detail to enhance your agent, customer service, and overall user experience. The Transcript Explorer enables you to search for key phrases such as booking, cancel, or message within a list of transcripts.
 
-# Transcript Explorer (the title of the page)
+---- explain how Transcript Explorer works, how this feature can help Cognigy customers, how to find Transcript Explorer in the UI
 
-<explain how Transcript Explorer works, how this feature can help Cognigy customers, how to find Transcript Explorer in the UI>
+You can start Cognigy Insights using the top menu bar at the top right side of Cognigy.AI.
+
+1. Click ![user menu](../assets/icons/user-menu.svg) to open the user menu.
+2. Select **Insights** item. The Cognigy Insights overview dashboard will be displayed as default.
+3. In the Insights sidebar menu on the left side, select **Transcript Explorer**. The Transcript Explorer UI will be displayed.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
+  <figcaption>Transcript Explorer displaying a list of sessions</figcaption>
+</figure>
+
 
 ## List of Sessions
-   This list of sessions is opend by default.
-  <table with descriptions for the titles of colums>
+
+This list of sessions is opened by default.
+
+---- table with descriptions for the titles of columns
 
 ## Search for Sessions
 
-  explain how to use the search bar to find a session
+---- explain how to use the search bar to find a session
 
 ## Filter Sessions
-global filters (if needed)
-additional filters (if needed)
+
+To find specific sessions and to inspect them you can use following configurable filters: 
+
+- [Global Filters](#global-filters)
+- [Additional Local Filters](#additional-local-filters)
+
+To open the filter option field, click [insight-filter-black](../assets/icons/insight-filter-black.svg) at the top right side next to the User Menu. 
+
+### Global Filters
+
+The Transcript Exlorer provides following global filters:
+
+- [Time span](global-filter.md#timeframe)
+- [Snapshot](global-filter.md#timeframe)
+- [Endpoint](global-filter.md#timeframe)
+
+For more information, read the [Global Filter](global-filter.md) documentation.
+
+### Additional Local Filters
+
+To open the local filter field, click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)**
+
+- Locales
+- Message Rating
+- Source
+- Goals
+- Flow
+- Contains Step
+- Message count:From
+- Message count:To
+
+#### Reset local filters
+
+You can reset local filters by clicking the "Reset" button. It will appear as soon as you have some filter with a non-default value.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer-reset.png" width="50%" />
+  <figcaption>Reset button appeared after selecting Virtual Agent as an only source.</figcaption>
+</figure>
+
 ## View Session Transcript and Details
-   ### Session Transcript
-     <explain what we can view within a transcript>
-    #### Expert mode
-    #### Playbooks
-   ### Session Details
-   ### Contact Profile Details
+  
+### Session Transcript
+<explain what we can view within a transcript>
+
+#### Expert mode
+
+#### Playbooks
+  
+### Session Details
+
+### Contact Profile Details
 
 
 
-Click **Transcript Explorer** in the Insights sidebar menu.
 
 ## Message research
 
@@ -52,11 +106,6 @@ The customer sessions will be displayed in a list with the following data:
 - Channel
 - Endpoint
 - Date and time of the last message
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
-  <figcaption>Transcript Explorer displaying a list of transcripts (conversations)</figcaption>
-</figure>
 
 - Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
 - Use the [global filter](../insights/global-filter.md) options to configure your research.
@@ -98,16 +147,7 @@ click ![live-follow](../assets/icons/filter.svg) on the search panel and select 
   <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
 </figure>
 
-### Reset local filters
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
-
-You can reset local filters by clicking the "Reset" button. It will appear as soon as you have some filter with a non-default value.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer-reset.png" width="50%" />
-  <figcaption>Reset button appeared after selecting Virtual Agent as an only source.</figcaption>
-</figure>
 
 ## Inspect conversation 
 
