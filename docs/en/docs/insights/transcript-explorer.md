@@ -12,10 +12,37 @@ in detail to improve your Agent, your customer service, and the user experience 
 
 The Transcript Explorer enables you to search for key phrases like "booking", "cancel", "message" in a list of transcripts.
 
+
+An analysis tool that allows you to evaluate messages in detail to enhance your agent, customer service, and overall user experience. The Transcript Explorer enables you to search for key phrases such as booking, cancel, or message within a list of transcripts.
+
+# Transcript Explorer (the title of the page)
+
+<explain how Transcript Explorer works, how this feature can help Cognigy customers, how to find Transcript Explorer in the UI>
+
+## List of Sessions
+   This list of sessions is opend by default.
+  <table with descriptions for the titles of colums>
+
+## Search for Sessions
+
+  explain how to use the search bar to find a session
+
+## Filter Sessions
+global filters (if needed)
+additional filters (if needed)
+## View Session Transcript and Details
+   ### Session Transcript
+     <explain what we can view within a transcript>
+    #### Expert mode
+    #### Playbooks
+   ### Session Details
+   ### Contact Profile Details
+
+
+
 Click **Transcript Explorer** in the Insights sidebar menu.
 
 ## Message research
-<div class="divider"></div>
 
 The customer sessions will be displayed in a list with the following data: 
 
@@ -32,7 +59,7 @@ The customer sessions will be displayed in a list with the following data:
 </figure>
 
 - Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
-- Use the [global filter]({{config.site_url}}insights/global-filter/) options to configure your research.
+- Use the [global filter](../insights/global-filter.md) options to configure your research.
 - You can select one or more message sources such as **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages, click on the filter option Virtual Agent Messages and leave the other options not selected.
 - You can select one or more flows to show only messages that were generated during the selected flow passing.
 
@@ -165,7 +192,7 @@ The message that contains the search text has a gray background.
 
 
 ## Navigating to Message Explorer
-<div class="divider"></div>
+
 With the usage of the Transcript Explorer, Cognigy offers you the possibility to switch directly to the Message Explorer after selecting a conversation, which can show you the previous message and the subsequent message for the selected message. This option supports a more detailed conversation analysis.
 
 To switch from the Transcript Explorer to the Message Explorer, proceed as follows:
@@ -178,5 +205,5 @@ The Message Explorer will be started and displays the selected message with its 
 
 ## More Information 
 
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
+- [Message Explorer](../insights/message-explorer.md)
 
