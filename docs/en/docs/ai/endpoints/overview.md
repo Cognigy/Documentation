@@ -3,6 +3,7 @@ title: "Endpoints"
 slug: "endpoints" 
 hidden: false 
 ---
+
 # Overview
 
 *Endpoints* are connectors between Cognigy virtual agents and external systems or platforms, such as Facebook (Meta) Messenger, Slack, Alexa, and more.
@@ -176,7 +177,7 @@ When enabled, the **Dashbot** feature will collect analytics data for the select
 
 ## Specific Endpoint Settings
 
-You can configure Endpoints in the following additional settings fields:
+You can use the following additional settings for the Endpoint configuration:
 
 - [Data Protection & Analytics](../../ai/endpoints/data-protection-and-analytics.md)
 - [Transformer Functions](../../ai/endpoints/transformers/transformers.md) 
