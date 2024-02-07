@@ -24,7 +24,7 @@ Whenever the HTTP Request Node is triggered during a Flow execution, it will per
 
 ## Limitations
 
-The default timeout for the HTTP Request Node is 15 seconds in a shared SaaS environment (`app`, `app-us`, `au-02`). It can be changed for on-premises installations via the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. For dedicated SaaS installations, contact Cognigy technical support.
+The default timeout for the HTTP Request Node is 15 seconds in a shared SaaS environment. It can be changed for on-premises installations via the `HTTP_NODE_TIMEOUT_IN_SECONDS` environment variable. For dedicated SaaS installations, contact Cognigy technical support.
 
 ## Request Methods
 
