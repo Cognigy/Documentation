@@ -4,7 +4,7 @@ slug: "endpoints"
 hidden: false 
 ---
 
-# Overview
+# Endpoints
 
 *Endpoints* are connectors between Cognigy virtual agents and external systems or platforms, such as Facebook (Meta) Messenger, Slack, Alexa, and more.
 

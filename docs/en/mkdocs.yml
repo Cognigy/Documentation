@@ -146,7 +146,8 @@ nav:
       - ai/resources/build/functions.md
     - Deploy:
       - ai/resources/deploy/deploy.md
-      - ai/endpoints/overview.md
+      - Endpoints:
+        - ai/endpoints/overview.md
       - ai/resources/deploy/snapshots.md
     - Test:
       - ai/resources/test/test.md
