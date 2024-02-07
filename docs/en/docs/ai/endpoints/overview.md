@@ -66,9 +66,7 @@ The following Endpoints provide integrations with third-party products:
 | [Workplace by Facebook (Meta)](workplace-by-fb.md)  | Using the Workplace by Facebook Endpoint integration enables you to connect your Cognigy resources to the Workplace channel.                                                                                               |
 | [8x8](8x8.md)                                       | The 8x8 Endpoint allows connecting virtual agent to the [8x8 platform](https://www.8x8.com/).                                                                                                                              |
 
-## Endpoint Settings
-
-### General Endpoint Settings
+## General Endpoint Settings
 
 Every Endpoint needs to be configured in the following configuration fields:
 
@@ -98,7 +96,7 @@ For more information, read the [Snapshot](../resources/deploy/snapshots.md) arti
 #### Override Snapshot Connections
 
 When Agents use a Snapshot, a toggle **Override Snapshot Connections** will be displayed in the Endpoint editor.
-Enabling this option allows the Endpoint to override the Connections in a Snapshot with Connections from the project. If a Connection is available only in the Snapshot, it will be used regardless of the toggle setting. If necessary, such Connections need to be manually updated.
+Enabling this option allows the Endpoint to override the [Connections](../resources/build/connections.md) in a Snapshot with Connections from the project. If a Connection is available only in the Snapshot, it will be used regardless of the toggle setting. If necessary, such Connections need to be manually updated.
 
 !!! note "Default setting"
     By default, any Endpoint will continue using the Connections from the Snapshot unless the toggle is turned on.

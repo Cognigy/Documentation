@@ -141,5 +141,5 @@ Using shareable URLs provides the following benefits:
 - [Download Report](download-report.md)
 - [Interaction Panel](../ai/tools/interaction-panel/interaction-panel.md)
 - [Snapshots](../ai/resources/deploy/snapshots.md)
-- [Endpoints](../ai/resources/deploy/endpoints.md)
+- [Endpoints](../ai/endpoints/overview.md)
 - [Localization](../ai/resources/manage/localization.md)
