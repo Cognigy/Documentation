@@ -11,9 +11,7 @@ hidden: false
 Endpoints support text-based conversations as well as conversations on your contact center phone lines.
 
 Endpoints convert channel-specific input and output, including images,
-galleries and voice, to the standardized Cognigy Input object.
-This approach enables the development of a [Flow](../resources/build/flows.md) only once,
-following which it can be deployed to various channels by configuring Endpoints.
+galleries and voice, to the standardized Cognigy Input object. This approach enables the development of platform-independent [Flow](../resources/build/flows.md) that require no modification when adding new channels.
 
 ## Endpoint Types
 
@@ -33,11 +31,11 @@ The following Endpoints are specific to the Cognigy.AI platform:
 
 The following Endpoints are provided for custom integrations:
 
-| Generic Endpoint      | Description                                                                                 |
-|-----------------------|---------------------------------------------------------------------------------------------|
-| [REST](rest.md)       | The REST Endpoint lets you connect to a Cognigy Flow directly through a REST interface.     |
-| [Socket](socketio.md) | The Socket Endpoint lets you connect to a Cognigy Flow directly through a socket interface. |
-| [Webhook](webhook.md) | The Webhook Endpoint lets you expose Cognigy Flows via Webhook.                             |
+| Generic Endpoint      | Description                                                                              |
+|-----------------------|------------------------------------------------------------------------------------------|
+| [REST](rest.md)       | The REST Endpoint lets you connect to a Cognigy Flow directly through a REST interface.  |
+| [Socket](socketio.md) | The Socket Endpoint lets you connect to a Cognigy Flow directly through a socket client. |
+| [Webhook](webhook.md) | The Webhook Endpoint lets you expose Cognigy Flows via Webhook.                          |
 
 ### Third-party Endpoints
 
@@ -45,7 +43,7 @@ The following Endpoints provide integrations with third-party products:
 
 | Third-party  Endpoint                               | Description                                                                                                                                                                                                                |
 |-----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Amazon Alexa](amazon-alexa.md)                     | Alexa is Amazon's Virtual Assistant voice AI device. The devices come in different versions, like the Echo, Echo Dot and Echo Show.                                                                                        |
+| [Amazon Alexa](amazon-alexa.md)                     | Alexa is Amazon's Virtual Assistant voice AI device. The Endpoint supports all of the devices, such as the Echo, Echo Dot, and Echo Show.                                                                                  |
 | [Amazon Lex (Beta)](amazon-lex.md)                  | The Amazon Lex Endpoint allows you to connect your Amazon Lex bots with Cognigy.AI. This is achieved by using a Lambda function with your Lex bots.                                                                        |
 | [Avaya CPaaS](avaya-cpaas.md)                       | Using the Avaya CPaaS Endpoint you're able to connect your Cognigy.AI resources to your Avaya CPaaS phone number.                                                                                                          |
 | [Azure Bot Services](azure-bot-services.md)         | The Azure Bot Services Endpoint allows you to connect your virtual agent to all Azure Bot Service channels.                                                                                                                |
@@ -78,13 +76,14 @@ Every Endpoint needs to be configured in the following configuration fields:
 
 ### Snapshot
 
-Endpoints can be pointed to a specific [Snapshot](../resources/deploy/snapshots.md). This enables you to easily deploy different versions of your virtual agent.
+Endpoints can be pointed to a specific [Snapshot](../resources/deploy/snapshots.md)
+if there is at least one Snapshot in the Agent.
+This enables you to easily deploy different versions of your virtual agent.
 
-While an Endpoint is active, you can replace or remove a Snapshot. In this case, consider that there may still be active sessions running on the Endpoint using the old Snapshot.
+While an Endpoint is active, you can replace or remove a Snapshot. Note that active sessions may continue to use the old Snapshot until they time out.
 
-Keep in mind,
-if you have a configuration in which sessions never expire, for example,
-a Webchat Endpoint with [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md), sessions started with enabled persistent history will not automatically expire.
+Keep in mind that if you have a configuration such as a Webchat Endpoint using [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/persistent-history.md),
+the user's browser will retain message history. Even after the session expires, users will still see old messages, but any new message will initiate a new session.
 
 When a Snapshot is replaced with a new one or is deleted, the following rules will be applied to the active session:
 
@@ -124,9 +123,11 @@ To toggle back to the drop-down selection list of Flows, click the **Select from
 
 ### Locale
 
-The [Localization](../resources/manage/localization.md) feature in Cognigy.AI provides tools for enabling multilingual Agents. Here, you can add a Locale that will be applied across an Agent and allow language-specific output messages to be configured within Flows. The system works with fallback layers, which means that a Locale that has no content configured will fall back to another Locale that has.
+The [Localization](../resources/manage/localization.md) feature in Cognigy.AI provides tools for enabling multilingual Agents. 
 
-The **Locale** configuration field of the Endpoint Editor provides all configured and defined locales in a drop-down menu.
+You can add a Locale that will be applied across an Agent and allow language-specific output messages to be configured within Flows. The system works with fallback layers, which means that a Locale that has no content configured will fall back to another Locale that has.
+
+The locale selector is only available if you have created at least one additional locale beforehand.
 
 To select a Locale, do the following:
 
