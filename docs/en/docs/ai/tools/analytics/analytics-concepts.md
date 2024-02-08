@@ -1,8 +1,9 @@
 ---
- title: "Analytics Concepts" 
- slug: "analytics-concepts" 
- hidden: false 
+title: "Analytics Concepts" 
+slug: "analytics-concepts" 
+hidden: false 
 ---
+
 # Analytics Concepts
 
 ## Data Collections
@@ -88,33 +89,48 @@ Analytics data is generated through the whole lifecycle of an input message bein
 
 ## Analytics Steps
 
-<div class="divider"></div>
-
-Analytics Steps are created in Cognigy.AI to track the session paths that users are taking when talking to the virtual agent.
+In Cognigy.AI, Analytics Steps are implemented to monitor the paths users take during interactions with the virtual agent.
 
 ### Creating a Step
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2.0-blue.svg)]({{config.site_url}})
+You can create an analytics step in the following components:
 
-A step entity is either a [Flow Node]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) or an [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/). Each type of entity can be assigned as a step via the settings menu for the respective entity. 
+- [Nodes](#flow-node-steps)
+- [Intents](#intent-steps)
 
 #### Flow Node Steps
 
-A flow node is created as an analytics step by entering a text label in the "Analytics Step" field within the "settings" dropdown menu of the node settings:
+To add an analytics step in the Node, do the following:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/b9e42cf-StepFlow.PNG" width="100%" />
-</figure>
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent.
+3. In the left-side **Agent** menu, select **Build > Flows**.
+4. On the **Flows** page, select the existing Flow or create a new one.
+5. In the Flow editor, select the Node for which you want to add an Analytics step.
+6. Open the Node editor by clicking the Node.
+7. In the Node editor, navigate to **Settings > Analytics Step**. 
+8. In the **Analytics Step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters. 
+9. Click **Save**.
+
+The Step will be recorded in the Analytics database, once the Node is executed.
 
 #### Intent Steps
 
-An intent is created as an analytics step by entering a text label in the "Analytics Step" field within the "Advanced" dropdown menu of the intent settings.
+To add an analytics step in the Intent, do the following:
 
-!!! warning "Step Creation in the Odata Records"
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent.
+3. In the left-side **Agent** menu, select **Build > Flows**.
+4. On the **Flows** page, select the existing Flow or create a new one.
+5. In the upper-right corner, select the **NLU** tab.
+6. On the **Intents** tab, go to the existing Intent or create a new one.
+7. Navigate to **Advanced > Analytics step**.
+8. In the **Analytics step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters.
+9. Click **Save**.
+10. In the upper-right corner, click **Build Model**.
+
+The Step will be recorded in the Analytics database, once the Flow is executed.
+
+!!! note "Step Creation in the OData Records"
     A step will only exist in the OData records after a conversation has triggered it at least once.
-
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/0d04fd1-IntentStep.PNG" width="100%" />
-</figure>
-
+>
