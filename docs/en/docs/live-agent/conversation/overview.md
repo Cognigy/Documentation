@@ -65,18 +65,7 @@ If the human agent doesn't leave the conversation page, they may miss contact pr
 
 The following table represents data that be edited within Live Agent and stored in the Contact Profile.
 
-| Contact Profile Data | Description                                          |
-|----------------------|------------------------------------------------------|
-| Email Address        | User's email address.                                |
-| First Name           | User's first name.                                   |
-| Last Name            | User's last name.                                    |
-| Age                  | User's age.                                          |
-| Birthday             | User's birthday.                                     |
-| Gender               | User's gender.                                       |
-| Location             | User's location.                                     | 
-| Profile Picture      | When available, the URL address of a user's picture. |
-| Accepted GDPR        | User accepted European privacy law: Yes/No           |
-| Goals                | The user's intention or task.                        |
+{! _includes/insights/contact-profile-details.md !}
 
 To modify the Contact Profile, follow these steps:
 
