@@ -6,16 +6,16 @@ hidden: false
 
 # CognigyScript
 
-_CognigyScript_ is a superset of JavaScript that grants access to the [Input](../../ai/tools/interaction-panel/input.md), [Context](../../ai/tools/interaction-panel/context.md), and [Profile](../../ai/tools/interaction-panel/profile.md) objects within a text and JSON. 
+_CognigyScript_ is a superset of JavaScript that provides access to the [Input](../../ai/tools/interaction-panel/input.md), [Context](../../ai/tools/interaction-panel/context.md), and [Profile](../../ai/tools/interaction-panel/profile.md) objects within a text and JSON. 
 
 With CognigyScript, you can add dynamic and executable content to chat or voice conversations.
 
 In the Cognigy.AI interface, fields that accept Cognigy.Script are marked with the ![token](../../assets/icons/token.svg) icon.
 
-In most cases, CognigyScript is enclosed within double curly braces (`{{"{{ }}"}}`) tags,
+In most cases, CognigyScript is enclosed within double curly braces `{{"{{ }}"}}` tags,
 for example, `{{"{{input.text}}"}}`. This syntax enables Cognigy to identify and execute the CognigyScript code embedded within the Flow.
 
-CognigyScript gives you access to the Cognigy objects via exposed variables:
+CognigyScript gives you access to the Cognigy objects via the following variables:
 
 | Object          | Variable  | Shortcut | Example                             | Shortcut Example               |
 |-----------------|-----------|----------|-------------------------------------|--------------------------------|
