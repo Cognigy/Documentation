@@ -25,7 +25,7 @@ The Blind Mode Node provides options for masking data within the logging, analyt
 | Disable Intent Trainer Records | Toggle | Does not record Intents from the conversation.                                                                                                                                                                                                                                                          |
 | Disable Conversations          | Toggle | Does not collect user inputs for [Analytics](../../tools/analytics/analytics.md) data.                                                                                                                                                                                                                  |
 
-Alternatively, if you want to mask data for the entire Flow, you can enable masking at the [Endpoint](../../resources/deploy/endpoints.md) level.
+Alternatively, if you want to mask data for the entire Flow, you can enable masking at the [Endpoint](../../endpoints/overview.md) level.
 
 ## Example
 

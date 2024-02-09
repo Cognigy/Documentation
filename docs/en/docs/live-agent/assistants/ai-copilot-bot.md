@@ -97,5 +97,5 @@ A transcript will be sent to the selected receiver.
 ## More Information
 
 - [Assistants](overview.md)
-- [Endpoints](../../ai/resources/deploy/endpoints.md)
+- [Endpoints](../../ai/endpoints/overview.md)
 - [Inboxes](../settings/inboxes.md)

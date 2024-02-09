@@ -8,7 +8,7 @@
 ## Chart
 
 **Flows** provide a **visual representation of a potential dialog** in a user-friendly interface. 
-Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint]({{config.site_url}}ai/resources/deploy/endpoints/).
+Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint](../../endpoints/overview.md).
 
 !!! tip "How to create a new Flow"
     To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.

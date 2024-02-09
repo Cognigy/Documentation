@@ -6,7 +6,7 @@ hidden: false
 
 # Applications
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.60-blue.svg)](../../release-notes/4.60.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.69-blue.svg)](../../release-notes/4.69.md)
 
 *Applications* are connectors
 that allow the [Endpoint](../getting-started.md#create-a-voice-gateway-endpoint) to be routed to Voice Gateway.
@@ -23,16 +23,16 @@ After creating an application, you can edit or delete it.
 
 ## Settings 
 
-| Settings                                      | Description                                                                                                                                                                                                 | Scope                            |
-|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| Application Name                              | A unique application name.                                                                                                                                                                                  | Account, Service Provider, Admin |
-| Account                                       | Select an account from the list.                                                                                                                                                                            | Account, Service Provider, Admin | 
-| Calling Webhook                               | A Cognigy.AI Endpoint URL for the Web Application that will handle calls.                                                                                                                                   | Account, Service Provider, Admin |
-| Call Status Webhook                           | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status.                                                                                                                        | Account, Service Provider, Admin | 
-| Speech synthesis vendor                       | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin | 
-| Speech recognizer vendor                      | Select a default vendor and set up Language Settings for Speech-To-Text recognition. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field.   | Account, Service Provider, Admin |
-| Use a fallback speech vendor if primary fails | Add an [additional Speech-To-Text or Text-To-Speech](#add-additional-tts-and-stt-vendor) vendor.                                                                                                            | Account, Service Provider, Admin |
-
+| Settings                                                | Description                                                                                                                                                                                                 | Scope                            |
+|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Application Name                                        | A unique application name.                                                                                                                                                                                  | Account, Service Provider, Admin |
+| Account                                                 | Select an account from the list.                                                                                                                                                                            | Account, Service Provider, Admin | 
+| Calling Webhook                                         | A Cognigy.AI Endpoint URL for the Web Application that will handle calls. Specify your Endpoint URL from the Voice Gateway Endpoint. Select the **POST** request type.                                      | Account, Service Provider, Admin |
+| Call Status Webhook                                     | A Cognigy.AI Endpoint URL for the Web Application that will receive the call status. Specify your Endpoint URL from the Voice Gateway Endpoint. Select the **POST** request type.                           | Account, Service Provider, Admin | 
+| Speech synthesis vendor                                 | Select a default vendor and set up Language Settings, Voice for Text-To-Speech output. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field. | Account, Service Provider, Admin | 
+| Speech recognizer vendor                                | Select a default vendor and set up Language Settings for Speech-To-Text recognition. If you have another vendor with the same credentials, specify the alternative name of the vendor in the Label field.   | Account, Service Provider, Admin |
+| Use a fallback speech vendor if primary fails           | Add an [additional Speech-To-Text or Text-To-Speech](#add-additional-tts-and-stt-vendor) vendor.                                                                                                            | Account, Service Provider, Admin |
+| Perform a fallback transfer if webhook connection fails | [Redirect a call](#call-foewarding) if the connection to Cognigy.AI is unavailable for any reason.                                                                                                          | Account, Service Provider, Admin |
 
 ## Add Additional TTS and STT Vendor
 
@@ -76,7 +76,7 @@ To enable recording calls at an application level, follow these steps:
 1. Open the Voice Gateway interface.
 2. In the left-side menu, select **Applications**.
 3. Create a new application or use an existing one.
-4. Scroll down to the **Call recording configuration** section, click the checkbox for **Enable call recording**.
+4. In the **Call recording configuration** section, click the checkbox for **Enable call recording**.
 5. In the **Audio Format** field, choose between `.wav` and `.mp3` formats.
 6. Select a bucket vendor:
 
@@ -104,3 +104,32 @@ To enable recording calls at an application level, follow these steps:
 11. Click **Save**.
 
 All calls from this application will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
+
+## Call Forwarding
+
+When Voice Gateway fails to establish a connection with Cognigy.AI at the beginning of a call, you can forward calls to another number. For example, if the Cognigy.AI virtual agent is unavailable,
+the call will be redirected to the Contact Center, where a human agent,
+instead of a virtual agent, will assist your customer with the issue.
+
+To configure call forwarding, follow these steps:
+
+1. Open the Voice Gateway interface.
+2. In the left-side menu, select **Applications**.
+3. Create a new application or use an existing one.
+4. On the **Edit application** page, activate the **Perform a fallback transfer if webhook connection fails** setting.
+5. Select your preferred method for call redirection:
+
+    === "Forward an existing call"
+         5.1 From the **Transfer type** list, select **Refer**.<br>
+         5.2. *(Optional)* In the **Reason** field, specify the reason for transferring a call, for example, `Cognigy.AI connection wasn't established`. The value will be transmitted in the `"X-Reason": "<reason>"` format within a custom SIP header and will be present in the pcap file on the recipient's side for further analysis.<br>
+         5.3. In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format (E.164), starting  with a `+` sign.<br>
+         5.4  *(Optional)* In the **Referred-by** field, change the original Referred By value, which can be a SIP URI or a user identifier such as a phone number. This field helps to filter out unwanted incoming calls. You can use the following patterns:<br>- **SIP URI** - `sip:[referred-by]@custom.domain.com`. In this case, the entire SIP URI will be sent as the Referred-By header. Example: `"Referred-by": "sip:CognigyOutbound@custom.domain.com"`.<br>-**User Identifier** -`sip:[referred-by]@[SIP FROM Domain from carrier config]`. Example: `"Referred-By": "sip:CognigyOutbound@sip.cognigy.ai"`.
+    
+    === "Create a new outgoing call"
+         5.1 From the **Transfer type** list, select **Dial**.<br>
+         5.2 *(Optional)* In the **Reason** field, specify the reason for transferring a call, for example, `Cognigy.AI connection wasn't established`. The value will be transmitted in the `"X-Reason": "<reason>"` format within a custom SIP header and will be present in the `.pcap` file on the recipient's side for further analysis.<br>
+         5.3 In the **Target** field, specify the telephone number to which the call will be redirected. The number must be in the international format (E.164), starting with a `+` sign.<br>
+         5.4 *(Optional)* In the **Caller ID** field, specify the caller ID. Note that some carriers, such as Twilio, may require a registered number for outgoing calls.
+  
+6. Click **Save**.
+

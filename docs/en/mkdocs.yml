@@ -55,6 +55,8 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.69:
+    - release-notes/4.69.md
   - 4.68:
     - release-notes/4.68.md
   - 4.67:
@@ -144,7 +146,8 @@ nav:
       - ai/resources/build/functions.md
     - Deploy:
       - ai/resources/deploy/deploy.md
-      - ai/resources/deploy/endpoints.md
+      - Endpoints:
+        - ai/endpoints/overview.md
       - ai/resources/deploy/snapshots.md
     - Test:
       - ai/resources/test/test.md
