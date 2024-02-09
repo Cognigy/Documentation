@@ -41,9 +41,9 @@ Using `{{"{{input.text.toUpperCase()}}"}}` will return the text sent by the clie
 
 #### Inline CognigyScript
 
-The double curly braces `{{"{{ }}"}}` denote the usage of CognigyScript within the JSON object.
+The double curly braces `{{"{{ }}"}}` denote the usage of CognigyScript within the JSON object, specifically for fields that accept only JSON.
 
-In this example, the code attempts to fetch the `orders` object from the Context and assign it to `customer_orders`. If `context.orders` doesn't exist, the `customer_orders` key is skipped.
+In the example below, the code attempts to fetch the `orders` object from the Context and assign it to `customer_orders`. If `context.orders` doesn't exist, the `customer_orders` key is skipped.
 
 **Example**
 
@@ -84,7 +84,7 @@ The condition `context.orders === 3` evaluates to true if the `orders` variable,
 
 ## Code Nodes
 
-There is no need to use `{{"{{ }}"}}` tags within a Code Node. Cognigy Script is evaluated as standard JavaScript. The `input`, `context`, `profile` and `actions` variables are exposed by default, as well as `_` and `moment`.
+There is no need to use `{{"{{ }}"}}` tags within a Code Nodeб, even if you specify JSON in the code editor. Cognigy Script is evaluated as standard JavaScript. The `input`, `context`, `profile` and `actions` variables are exposed by default, as well as `_` and `moment`.
 
 **Example**
 
