@@ -80,7 +80,7 @@ There is no need to use `{{"{{ }}"}}` tags within conditions. Cognigy Script is 
 
 **Example**
 
-The condition `context.orders === 3` evaluates to true if the `orders` variable, stored in the context, is equal to `3`.
+The condition `context.orders === 3` evaluates to true if the `orders` variable, stored in the Context, is equal to `3`.
 
 ## Code Nodes
 
