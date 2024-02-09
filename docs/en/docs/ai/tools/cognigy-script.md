@@ -47,7 +47,7 @@ In this example, the code attempts to fetch the `orders` object from the Context
 
 **Example**
 
-```JavaScript
+```JSON
 {
     "customer_orders": "{{ "{{context.orders}}" }}"
 }
@@ -63,7 +63,7 @@ Using CognigyScript is helpful when you want to make requests to an external sys
 
 **Example**
 
-```JavaScript
+```JSON
 {
     "customer_orders": {
         "$cs": {
