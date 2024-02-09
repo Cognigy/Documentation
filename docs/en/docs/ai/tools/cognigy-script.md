@@ -84,7 +84,7 @@ The condition `context.orders === 3` evaluates to true if the `orders` variable,
 
 ## Code Nodes
 
-There is no need to use `{{"{{ }}"}}` tags within a Code Nodeб, even if you specify JSON in the code editor. Cognigy Script is evaluated as standard JavaScript. The `input`, `context`, `profile` and `actions` variables are exposed by default, as well as `_` and `moment`.
+There is no need to use `{{"{{ }}"}}` tags within a Code Node, even if you specify JSON in the code editor. Cognigy Script is evaluated as standard JavaScript. The `input`, `context`, `profile` and `actions` variables are exposed by default, as well as `_` and `moment`.
 
 **Example**
 
