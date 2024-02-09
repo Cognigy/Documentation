@@ -127,7 +127,6 @@ To add an analytics step in the Intent, do the following:
 7. Navigate to **Advanced > Analytics step**.
 8. In the **Analytics step** field, enter a step name. This name cannot contain the following symbols: <code>/:*?"<>|¥!&$§%{}=»,.;+~#`'°µ€</code>, cannot start or end with a whitespace, and must be no longer than 128 characters.
 9. Click **Save**.
-10. In the upper-right corner, click **Build Model**.
 
 The Step will be recorded in the Analytics database, once the Flow is executed.
 
