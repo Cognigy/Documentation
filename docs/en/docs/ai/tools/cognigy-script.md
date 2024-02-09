@@ -6,9 +6,14 @@ hidden: false
 
 # CognigyScript
 
-_CognigyScript_ is a superset of JavaScript that grants access to the [Input](../../ai/tools/interaction-panel/input.md), [Context](../../ai/tools/interaction-panel/context.md), and [Profile](../../ai/tools/interaction-panel/profile.md) objects within text and JSON. With CognigyScript, you can execute powerful scripts and tasks, including building extended outputs to return to the client.
+_CognigyScript_ is a superset of JavaScript that grants access to the [Input](../../ai/tools/interaction-panel/input.md), [Context](../../ai/tools/interaction-panel/context.md), and [Profile](../../ai/tools/interaction-panel/profile.md) objects within a text and JSON. 
 
-CognigyScript is enclosed within double curly braces (`{{"{{ }}"}}`) tags, for example, `{{"{{input.text}}"}}`. This syntax enables Cognigy to identify and execute the CognigyScript code embedded within the conversation flow.
+With CognigyScript, you can add dynamic and executable content to chat or voice conversations.
+
+In the Cognigy.AI interface, fields that accept Cognigy.Script are marked with the ![token](../../assets/icons/token.svg) icon.
+
+In most cases, CognigyScript is enclosed within double curly braces (`{{"{{ }}"}}`) tags,
+for example, `{{"{{input.text}}"}}`. This syntax enables Cognigy to identify and execute the CognigyScript code embedded within the Flow.
 
 CognigyScript gives you access to the Cognigy objects via exposed variables:
 
@@ -20,29 +25,44 @@ CognigyScript gives you access to the Cognigy objects via exposed variables:
 
 ## Node Arguments
 
-Accessing the CognigyScript functionality differs between different types of arguments.
+Accessing the CognigyScript functionality via Nodes varies depending on the types of arguments involved.
 
-### For Text arguments
+### Text arguments
 
-Within text arguments of a Cognigy Flow Node, CognigyScript is written using `{{"{{ }}"}}` tags. It evaluated as it is written. This is indicated by the label `CognigyScript` above the input field.
+The double curly braces `{{"{{ }}"}}` denote the usage of CognigyScript within text arguments.
 
-!!! note "Invalid expressions return an empty string"
-    If the expression is invalid, an empty string is returned.
-
-Example:
-`{{"{{input.text.toUpperCase()}}"}}` would return the text the client sent all in upper case.
-
-**Type Preservation**
-CognigyScript in Node Arguments is always returned as string, unless you force the type to be preserved. You can do this by appending `.preserveType()` to your script.
+If the expression is invalid, an empty string is returned.
 
 Example:
-`{{"{{context.anObject.preserveType()}}"}}` will return whatever `anObject` is, for example a JavaScript Object.
 
-### For JSON arguments
+Using `{{"{{input.text.toUpperCase()}}"}}` will return the text sent by the client in uppercase format.
 
-Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"}}" }}` can be used to run CognigyScript. You may supply a script and a return type. The special notation allows you to define a type. It will then try to convert the value to this type, for example, String "6" to a number, or an Object to a String.
+### JSON arguments
 
-**Example with Typing**
+#### Inline CognigyScript
+
+The double curly braces `{{"{{ }}"}}` denote the usage of CognigyScript within the JSON object.
+
+In this example, the code attempts to fetch the `orders` object from the Context and assign it to `customer_orders`. If `context.orders` doesn't exist, the `customer_orders` key is skipped.
+
+**Example**
+
+```JavaScript
+{
+    "customer_orders": "{{ "{{context.orders}}" }}"
+}
+```
+
+#### Dynamic Data Manipulation
+
+Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"}}"}}` is used to run CognigyScript.
+You can provide both a script and the desired return type.
+For instance, you can convert a string such as `6` into a number or an object into a string.
+
+Using CognigyScript is helpful when you want to make requests to an external system via the HTTP Request Node, passing data from the Context with specific data types.
+
+**Example**
+
 ```JavaScript
 {
     "customer_orders": {
@@ -54,26 +74,20 @@ Within JSON arguments, a special notation `{ "$cs": { "script": "x", "type": "t"
 }
 ```
 
-**Example with Inline CognigyScript**
-```JavaScript
-{
-    "customer_orders": "{{ "{{context.orders}}" }}"
-}
-```
-This would try to retrieve the orders Object from the Context and assign it to customer_orders. If `context.orders` doesn't exist, the "customer_orders" key is simply skipped.
-
 ## IF Conditions and SWITCH Operands
 
-Within conditions, CognigyScript is also written without using `{{"{{ }}"}}` tags. Cognigy Script is evaluated just like standard JavaScript would. That is indicated by the label `CognigyScript (direct)` above the input field.
+There is no need to use `{{"{{ }}"}}` tags within conditions. Cognigy Script is evaluated as standard JavaScript. 
 
-!!! note "Example"
-    The condition `context.orders === 3` would evaluate to `true` if the `orders` variable stored in the `context` is equal to `3`.
+**Example**
+
+The condition `context.orders === 3` evaluates to true if the `orders` variable, stored in the context, is equal to `3`.
 
 ## Code Nodes
 
-Within Code Nodes you don't need to write CognigyScript in {{ " {{ }}" }} tags. The `input`, `context`, `profile` and `actions` variables are exposed by default, as well as `_` and `moment`.
+There is no need to use `{{"{{ }}"}}` tags within a Code Node. Cognigy Script is evaluated as standard JavaScript. The `input`, `context`, `profile` and `actions` variables are exposed by default, as well as `_` and `moment`.
 
 **Example**
+
 ```JavaScript
 const ordercount = context.orders;
 switch(ordercount) {
@@ -89,16 +103,23 @@ switch(ordercount) {
 }
 ```
 
-## Cognigy Objects Life Span
+## Life Span of Cognigy Objects
+
+| Object          | Life Span                                                                                  |
+|-----------------|--------------------------------------------------------------------------------------------|
+| Input           | Recreated with each new user input and the execution of a new Flow.                        |
+| Context         | Maintained throughout the entire conversation.                                             |
+| Contact Profile | Stored persistently to preserve information, such as user names, throughout conversations. |
 
 The picture below shows the life span of the different Cognigy objects:
 
-1. The Input object **input** is created anew on each new user input and each new Flow execution.
-2. The Context object **context** is stored for the duration of the entire conversation.
-3. The Profile object **profile** is stored permanently. That means that information about the user that you want to persist, for example the name of the user, should be stored in the Profile object.
-
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/tools/images/a570379-data.png" width="100%" />
-  <figcaption>Life Span of Cognigy Objects</figcaption>
+  <img class="image-center" src="{{config.site_url}}ai/tools/images/life-span.png" width="100%" />
 </figure>
 
+## More Information
+
+- [Cheat Sheet: CognigyScript](https://support.cognigy.com/hc/en-us/articles/4403321637394-Cheat-Sheet-CognigyScript#general-0-0)
+- [Input](../../ai/tools/interaction-panel/input.md)
+- [Context](../../ai/tools/interaction-panel/context.md)
+- [Profile](../../ai/tools/interaction-panel/profile.md)
