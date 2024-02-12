@@ -22,7 +22,7 @@ or suggest an alternative response.
 The Check Agent Availability Node supports the following handover providers:
 
 - [Cognigy Live Agent](#live-agent)
-- [Genesys Cloud](#genesys-cloud)
+- [Genesys Cloud: Guest Chat and Open Messaging](#genesys-cloud)
 - [Chatwoot](#chatwoot)
 
 ## Settings
@@ -31,12 +31,13 @@ The Check Agent Availability Node supports the following handover providers:
 
 | Parameter           | Type          | Description                                                                   |
 |---------------------|---------------|-------------------------------------------------------------------------------|
-| Skills              | CognigyScript          | A list of skills that should be used to filter the available human agents.    |
+| Skills              | CognigyScript | A list of skills that should be used to filter the available human agents.    |
 | Live Agent Inbox Id | CognigyScript | The ID of your Inbox in Live Agent.                                           |
-| Languages           | CognigyScript          | A list of languages that should be used to filter the available human agents. |
-
+| Languages           | CognigyScript | A list of languages that should be used to filter the available human agents. |
 
 ### Genesys Cloud
+
+These settings applicable to both [Genesys Cloud Guest Chat](../../handover-providers/genesys-cloud-guest-chat.md) and [Genesys Cloud Open Messaging](../../handover-providers/genesys-cloud-open-messaging.md).
 
 | Parameter       | Type | Description                                                                         |
 |-----------------|------|-------------------------------------------------------------------------------------|
@@ -44,9 +45,7 @@ The Check Agent Availability Node supports the following handover providers:
 | Profile Skills  | List | A list of profile skills that should be used to filter the available human agents.  |
 | Language Skills | List | A list of language skills that should be used to filter the available human agents. |
 
-
 ### Chatwoot
-
 
 | Parameter         | Type          | Description                      |
 |-------------------|---------------|----------------------------------|
