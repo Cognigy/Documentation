@@ -10,7 +10,7 @@ _CognigyScript_ is a superset of JavaScript that provides access to the [Input](
 
 With CognigyScript, you can add dynamic and executable content to chat or voice conversations.
 
-In the Cognigy.AI interface, fields that accept Cognigy.Script are marked with the ![token](../../assets/icons/token.svg) icon.
+In the Cognigy.AI interface, fields that accept CognigyScript are marked with the ![token](../../assets/icons/token.svg) icon.
 
 In most cases, CognigyScript is enclosed within double curly braces `{{"{{ }}"}}` tags,
 for example, `{{"{{input.text}}"}}`. This syntax enables Cognigy to identify and execute the CognigyScript code embedded within the Flow.
@@ -33,7 +33,7 @@ The double curly braces `{{"{{ }}"}}` denote the usage of CognigyScript within t
 
 If the expression is invalid, an empty string is returned.
 
-Example:
+**Example**
 
 Using `{{"{{input.text.toUpperCase()}}"}}` will return the text sent by the client in uppercase format.
 

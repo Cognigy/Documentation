@@ -118,7 +118,8 @@ JSON example:
 {
   "synthesizer": {
     "vendor": "microsoft",
-    "language": "de-DE""voice": "en-US-JennyNeural"
+    "language": "de-DE"
+    "voice": "en-US-JennyNeural"
   },
   "recognizer": {
     "vendor": "google",
