@@ -61,12 +61,12 @@ The following properties may be provided in the body of the request:
 
 | Option          | Description  | Required |
 | --------------- | ---------------- | -------- |
-| application_sid | the application to invoke when the call is answered | yes  |
+| application_sid | The application to invoke when the call is answered | yes  |
 | from            | The calling party phone number  | yes      |
-| to              | The destination to dial | yes      |
-| timeLimit       | max length of call in seconds                                             | no       |
-| timeout         | ring no answer timeout, in seconds. <br>Defaults to 60 | no       |
-| tag             | an object containing key-pairs of metadata that will be attached to this call | no       |
+| to              | The destination to Dial to | yes      |
+| timeLimit       | Maximum length of call in seconds                                             | no       |
+| timeout         | Ring `no-answer` timeout, in seconds <br>Default is 60s | no       |
+| tag             | An object containing key-pairs of metadata that will be attached to this call | no       |
 
 
 ### Advanced configurations
