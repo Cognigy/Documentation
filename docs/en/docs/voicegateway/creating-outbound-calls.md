@@ -2,11 +2,10 @@
 
 Outbound calls are created in a few different ways: 
 
-- [Transfer node]() 
-- REST API POST request
-    - with [HTTP node]() form the flow
-    - Postman call
-
+- [Transfer Node](../ai/flow-nodes/vg/transfer.md)
+- REST API POST request:
+  - [HTTP Request Node](../ai/flow-nodes/services/http-request.md)
+  - [Direct API Request via Postman or CLI](#rest-api-post-request)
 
 ## REST API POST request 
 
