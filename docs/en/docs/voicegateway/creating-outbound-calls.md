@@ -11,7 +11,7 @@ Outbound calls are created in a few different ways:
 
 Send a simple HTTP POST request to our API to generate an outbound call. When the call is answered, the specified webhook will be invoked to manage the call.
 
-Authorization is established via a Bearer token that is filled with an [API key value generated]() in our Self-Service Portal.
+Authorization is established via a Bearer token that is filled with an [API key value generated](webapp/accounts.md#account-level-api-keys) in our Self-Service Portal.
 
 === "cURL"
 
