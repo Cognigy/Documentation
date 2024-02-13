@@ -622,6 +622,8 @@ nav:
       - voicegateway/webapp/phone-numbers.md
     - Outbound Call Routing:
       - voicegateway/webapp/outbound-call-routing.md
+  - Creating Outbound Calls:
+    - voicegateway/creating-outbound-calls.md
   - References:
     - Voice Gateway Events:
       - voicegateway/references/events/overview.md
