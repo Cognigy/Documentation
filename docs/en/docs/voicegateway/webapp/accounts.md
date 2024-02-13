@@ -85,3 +85,7 @@ To enable recording calls at an account level, follow these steps:
 9. Click **Save**.
 
 All calls from all applications on this account will be recorded and appear in the [Recent calls](recent-calls.md#call-recordings) page.
+
+#### Account level API keys
+
+Generate a new Account level API key by clicking **Add key**.
