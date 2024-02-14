@@ -1,30 +1,36 @@
 ---
- title: "Transcript Explorer" 
- slug: "transcript-explorer" 
- hidden: false 
+title: "Transcript Explorer" 
+slug: "transcript-explorer" 
+hidden: false 
 ---
+
 # Transcript Explorer
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
 
-The **Transcript Explorer** in [Cognigy Insights](../insights/cognigy-insights.md) is an analysis tool that allows you to evaluate messages in detail to improve your agent, customer service, and overall user experience of your customer. The Transcript Explorer enables you to search for key phrases such as `booking`, `cancel`, or `message` within a list of transcripts. Transcripts are logged conversations between end users and agents.
+The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
+provide better customer service, and enhance the overall user experience.
+It allows you to analyze transcripts of conversations between end-users and agents in detail.
+The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
+For example, you can search for keywords such as booking, canceling, or messaging to find relevant messages quickly.
 
-To call the Transcript Explorer, do the following:
+To open the Transcript Explorer interface, use one of the following options:
 
-1. You have two options for calling up the Transcript Explorer:
+=== "Via Cognigy.AI"
+    1. Open the Cognigy.AI interface.
+    2. In the left-side menu, select an Agent.
+    3. Within the Agent interface, navigate to Insights using one of the following options:
+        - In the left-side **Agent** menu, select **Insights**. 
+        - In the upper-right corner, click ![user menu](../assets/icons/user-menu.svg) **> Insights**.
+    4. The Cognigy Insights Overview dashboard will be displayed by default.
+    5. In the left-side menu, select **Transcript Explorer**.
 
-    === "calling via Cognigy Insights"
-        a. Open your Cognigy.AI interface.<br>
-        b. Click ![user menu](../assets/icons/user-menu.svg) to open the user menu.<br>
-        c. Select **Insights**. The Cognigy Insights overview dashboard will be displayed as default.<br>
-        d. In the Insights sidebar menu on the left side, select **Transcript Explorer**. The Transcript Explorer UI will be displayed.<br>
-    
-    === "calling via direct access"
-        a. Open your Cognigy Insights interface.<br>
-        b. In the Insights sidebar menu on the left side, select **Transcript Explorer**. The Transcript Explorer UI will be displayed.<br>
+=== "Via Insights"
+    1. Open your Cognigy Insights interface.<br>
+    2. In the left-side menu, select **Transcript Explorer**.
 
-2. The Transcript Explorer is ready for your research now.
- 
+The Transcript Explorer interface will be displayed. 
+
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
   <figcaption>Transcript Explorer displaying a list of sessions</figcaption>
@@ -32,24 +38,26 @@ To call the Transcript Explorer, do the following:
 
 ## List of Sessions
 
-When the Transcript Explorer is selected, you will see a list of all sessions that match the global and local filter settings. This list of sessions is opened by default.
+By default, the Transcript Explorer displays a filtered list of sessions for the last months.
 
-|Title        | Description                                                              |
-|-------------|--------------------------------------------------------------------------|
-| Session ID  | Unique identifier for the session.<br> To copy the session ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy session ID**.                                      |
-| Contact ID  | Unique identifier of your profile.<br> To copy the contact ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy contact ID**.                                     |
-| Messages    | Total number of messages in the specific session.                        |
-| Endpoint    | Used Endpoint, for example, Webchat.                                     |
-| Last Message| Selectable order of messages: ascending or descending by time and date   |
+The list of sessions has the following parameters:
+
+| Title        | Description                                                                                                                                                                                                                |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Session ID   | Unique identifier for the session.<br> To copy the session ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy session ID**. |
+| Contact ID   | Unique identifier of your profile.<br> To copy the contact ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy contact ID**. |
+| Messages     | Total number of messages in the specific session.                                                                                                                                                                          |
+| Endpoint     | Used Endpoint, for example, Webchat.                                                                                                                                                                                       |
+| Last Message | Selectable order of messages: ascending or descending by time and date                                                                                                                                                     |
 
 - You can sort the sessions according to the number of included messages in ascending or descending order by clicking on the **Message ![arrow-down-black](../assets/icons/arrow-down-black.svg)** column title.
 
-- You can sort the sessions according date and time order of the last message by clicking on the **Last Message ![arrow-down-black](../assets/icons/arrow-down-black.svg)** column title.
+- You can sort the sessions according to date and time order of the last message by clicking on the **Last Message ![arrow-down-black](../assets/icons/arrow-down-black.svg)** column title.
 
 ## Search for Sessions
 
-The Transcript Explorer interface provides a search field which enables you to search for sessions using pre-filled filter settings.
-Using the search function you will find specific sessions with transcripts by searching for text messages, Session IDs or Contact IDs. Use phrases or keywords to get more accurate search results.
+The Transcript Explorer interface provides a search field that enables you to search for sessions using pre-filled filter settings.
+Using the search function, you will find specific sessions with transcripts by searching for text messages, Session IDs or Contact IDs. Use phrases or keywords to get more accurate search results.
 
 To find specific sessions, do the following:
 
@@ -88,17 +96,17 @@ For more information, read the [Global Filter](global-filter.md) documentation.
 ### Additional Local Filters
 
 You can use the local filter options to refine your research.
-To open the local filter selection, click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)**
+To open the local filter selection, click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)**.
 
-|Additional Local Filter                | Description                                                            |
-|---------------------------------------|------------------------------------------------------------------------|
-| Message Rating                        | Select rating results: <br> Positive <br> None <br> Negative           |
-| Source                                | Select one or more message sources: <br> Virtual Agent Messages <br> User Messages <br> Agent Messages |
-| Goals                                 | Select predefined goals                                                |
-| Flow                                  | Select one or more Flows you want to search for messages that were generated during the selected Flow passing.                       |
-| [Contains Step](#contains-step-filter)| Refine your search results by selecting a predefined analytic step.    |
-| Message count: From                    | You can limit the results to a session containing a minimum number of messages. <br> Use the up and down arrow icons, to set a definite number. <br> Less message counts will not be considered.  |
-| Message count: To                      | You can limit the results to a session containing a minimum number of messages. <br> Use the up and down arrow icons, to set a definite number. <br> Higher message counts will not be considered.             |
+| Additional Local Filter                | Description                                                                                                                                                                                        |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating                         | Select rating results: <br> Positive <br> None <br> Negative                                                                                                                                       |
+| Source                                 | Select one or more message sources: <br> Virtual Agent Messages <br> User Messages <br> Agent Messages                                                                                             |
+| Goals                                  | Select predefined goals                                                                                                                                                                            |
+| Flow                                   | Select one or more Flows you want to search for messages that were generated during the selected Flow passing.                                                                                     |
+| [Contains Step](#contains-step-filter) | Refine your search results by selecting a predefined analytic step.                                                                                                                                |
+| Message count: From                    | You can limit the results to a session containing a minimum number of messages. <br> Use the up and down arrow icons, to set a definite number. <br> Less message counts will not be considered.   |
+| Message count: To                      | You can limit the results to a session containing a minimum number of messages. <br> Use the up and down arrow icons, to set a definite number. <br> Higher message counts will not be considered. |
 
 #### Contains Step filter
 
@@ -131,17 +139,17 @@ The transcript view can be expanded to display more session details. To get them
 
 #### Session Details
 
-|Session Details              | Description                                                          |
-|-----------------------------|----------------------------------------------------------------------|
-| Session ID                  | Unique identifier associated with a session.                         |
-| First Message               | Date and time of the first message.                                  |
-| Last Message                | Date and time of the last message.                                   |
-| User Message Count          | Number of user messages.                                             |
-| Virtual Agent Message Count | Number of virtual agent messages.                                    |
-| Agent Message Count         | Number of Agent messages.                                            |
-| Flow Name                   | The naming of the Flow.                                              |
+| Session Details             | Description                                                                                               |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------|
+| Session ID                  | Unique identifier associated with a session.                                                              |
+| First Message               | Date and time of the first message.                                                                       |
+| Last Message                | Date and time of the last message.                                                                        |
+| User Message Count          | Number of user messages.                                                                                  |
+| Virtual Agent Message Count | Number of virtual agent messages.                                                                         |
+| Agent Message Count         | Number of Agent messages.                                                                                 |
+| Flow Name                   | The naming of the Flow.                                                                                   |
 | Rating                      | User feedback given in conversation: <br>thumbs down icon: rating 0 to 4 / thumbs up icon: rating 5 to 10 |
-| Comment                     | User can write a comment in a conversation which is displayed here.  |
+| Comment                     | User can write a comment in a conversation which is displayed here.                                       |
 
 #### Contact Profile Details
 
