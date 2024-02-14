@@ -42,13 +42,13 @@ By default, the Transcript Explorer displays a filtered list of sessions for the
 
 The list of sessions has the following parameters:
 
-| Title        | Description                                                                                                                                                                                                                |
-|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Session ID   | Unique identifier for the session.<br> To copy the session ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy session ID**. |
-| Contact ID   | Unique identifier of your profile.<br> To copy the contact ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy contact ID**. |
-| Messages     | Total number of messages in the specific session.                                                                                                                                                                          |
-| Endpoint     | Used Endpoint, for example, Webchat.                                                                                                                                                                                       |
-| Last Message | Selectable order of messages: ascending or descending by time and date                                                                                                                                                     |
+| Title        | Description                                                                                                                                                                                                             |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Session ID   | The session unique identifier.<br> To copy the session ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy session ID**.  |
+| Contact ID   | The end user unique identifier.<br> To copy the contact ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy contact ID**. |
+| Messages     | Total number of messages in the specific session.                                                                                                                                                                       |
+| Endpoint     | Used Endpoint, for example, Webchat.                                                                                                                                                                                    |
+| Last Message | Selectable order of messages: ascending or descending by time and date.                                                                                                                                                 |
 
 - You can sort the sessions according to the number of included messages in ascending or descending order by clicking on the **Message ![arrow-down-black](../assets/icons/arrow-down-black.svg)** column title.
 
