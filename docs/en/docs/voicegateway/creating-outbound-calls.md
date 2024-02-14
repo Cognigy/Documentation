@@ -44,7 +44,7 @@ filled with an [API key value](webapp/accounts.md#account-level-api-keys) genera
     ```JSON
     POST /v1/Accounts/<account_sid>/Calls HTTP/1.1
     Host: <base_url>
-    Authorization:  <api_key>
+    Authorization: Bearer <valid-api-token>
     Content-Type: application/json
     
     {
@@ -98,12 +98,12 @@ The following parameters can be provided in the body of the request:
 
 ### Response
 
-The response is an HTTP 201 with a body containing the `call_sid` of the outbound call session and the SIP Call-ID of the INVITE sent by the feature-server. 
+The response is an HTTP `201` with a body containing the `sid` of the outbound call session and the `callid` of the `INVITE` sent by the feature-server. 
 
-```JSON
+```JSON 
 {
     "sid":"98e4dd21-b178-4af1-83b6-3c1582893890",
-    "callId":"8d07a246-f1ac-123b-b8ac-02113b73b840"
+    "callid":"8d07a246-f1ac-123b-b8ac-02113b73b840"
 } 
 ```
 
