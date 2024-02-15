@@ -111,11 +111,16 @@ To reset all filters, at the top of the **Transcript Explorer** page, click the 
 If the **Reset** button is not displayed,
 click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Transcript Explorer** page.
 
-## View Session Transcript and Details
+## View Session Transcript
 
 Session transcripts are logged conversations between end users and agents. 
 The Transcript Explorer enables you to view session transcripts to analyze them for specific details. 
 To view a session transcript, select a session from the list on the **Transcript Explorer** page.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/Transcript_Explorer_profile.png" width="100%" />
+  <figcaption>Session Transcript with Expert Mode</figcaption>
+</figure>
 
 ### Session Transcript
 
@@ -123,6 +128,61 @@ A session transcript shows all the individual messages
 exchanged between the end user and the agent during a conversation.
 When you select a session, the corresponding transcript will be displayed on the right-hand side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
+
+#### Expert mode
+
+Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../ai/tools/interaction-panel/interaction-panel.md#expert-mode) documentation.
+
+This mode provides additional information for conversation messages, including the triggered Intent and its score, the filled Slots, user connected and disconnected events, voice event payloads, xApp session details, and switching to a Flow related to this session.
+
+To activate Expert mode, do the following:
+
+1. Go to the Insights interface.
+2. From the left-side menu, select **Transcript Explorer**.
+3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
+4. At the top of the **Session Transcript** window, activate the **Expert mode** toggle.
+
+#### Playbooks
+
+To create a Playbook of a transcript, do the following:
+
+1. Go to the Insights interface.
+2. From the left-side menu, select **Transcript Explorer**.
+3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
+4. In the upper-right corner of the **Session Transcript** window, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) to open a selection menu.
+5. Select one of the following options:
+    - **Create Playbook** — generate a Playbook to test your Flows.
+    - **Create Playbook with Assertions** — generate a Playbook and its Assertions, which are checks to ensure your Flows behaves as expected during testing.
+
+For more information, read the [Playbooks](../ai/resources/test/playbooks.md) documentation.
+
+#### Open Message-related Flow
+
+To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow**.
+
+To switch from the Transcript Explorer to the corresponding Flow in Cognigy.AI, do the following:
+
+1. Go to the Insights interface.
+2. From the left-side menu, select **Transcript Explorer**.
+3. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
+4. In the **Session Transcript** window, right-click a specific message and select **Open Flow**.
+
+The corresponding Flow in Cognigy.AI will be displayed.
+
+#### Navigate to Message Explorer via a Transcript Message
+
+You can access the [Message Explorer](../insights/message-explorer.md) by selecting a message within the **Session Transcript** window.
+The Message Explorer shows you the previous and subsequent messages for the selected message.
+
+To switch from the selected transcript message to the Message Explorer, follow these steps:
+
+1. On the **Transcript Explorer** page, On the right side of the screen, the transcript will be displayed.
+2. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
+3. In the **Session Transcript** window, right-click a specific message and select **Open in Message Explorer**.
+
+The Message Explorer interface will be opened.
+
+### Session Transcript Details
 
 To get more session details, click ![user-menu](../assets/icons/user-menu.svg) in the upper-left corner of the **Session Transcript** window.
 
@@ -159,63 +219,6 @@ The transcript details include the following sections:
 | Accepted GDPR           | Accepted General Data Protection Regulation  |
 | Goals Completed         | All goals that were achieved in the session. |
 
-#### Expert mode
-
-Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../ai/tools/interaction-panel/interaction-panel.md#expert-mode) documentation.
-
-This mode provides additional information for conversation messages, including the triggered Intent and its score, the filled Slots, user connected and disconnected events, voice event payloads, xApp session details, and switching to a Flow related to this session.
-
-To activate Expert mode, do the following:
-
-1. Go to the Insights interface.
-2. From the left-side menu, select **Transcript Explorer**. 
-3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side. 
-4. At the top of the **Session Transcript** window, activate the **Expert mode** toggle.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/Transcript_Explorer_profile.png" width="100%" />
-  <figcaption>Session Transcript with Expert Mode</figcaption>
-</figure>
-
-#### Playbooks
-
-To create a Playbook of a transcript, do the following: 
-
-1. Go to the Insights interface.
-2. From the left-side menu, select **Transcript Explorer**. 
-3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side. 
-4. In the upper-right corner of the **Session Transcript** window, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) to open a selection menu. 
-5. Select one of the following options:
-     - **Create Playbook** — generate a Playbook to test your Flows.
-     - **Create Playbook with Assertions** — generate a Playbook and its Assertions, which are checks to ensure your Flows behaves as expected during testing.
-
-For more information, read the [Playbooks](../ai/resources/test/playbooks.md) documentation.
-
-#### Open Message-related Flow
-
-To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow**.
-
-To switch from the Transcript Explorer to the corresponding Flow in Cognigy.AI, do the following:
-
-1. Go to the Insights interface.
-2. From the left-side menu, select **Transcript Explorer**.
-3. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
-4. In the **Session Transcript** window, right-click a specific message and select **Open Flow**.
-
-The corresponding Flow in Cognigy.AI will be displayed. 
-
-#### Navigate to Message Explorer via a Transcript Message
-
-You can access the [Message Explorer](../insights/message-explorer.md) by selecting a message within the **Session Transcript** window.
-The Message Explorer shows you the previous and subsequent messages for the selected message.
-
-To switch from the selected transcript message to the Message Explorer, follow these steps:
-
-1. On the **Transcript Explorer** page, On the right side of the screen, the transcript will be displayed. 
-2. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
-3. In the **Session Transcript** window, right-click a specific message and select **Open in Message Explorer**.
-
-The Message Explorer interface will be opened.
 
 ## More Information 
 
