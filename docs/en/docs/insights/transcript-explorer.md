@@ -7,7 +7,7 @@ hidden: false
 
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
 
 The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
