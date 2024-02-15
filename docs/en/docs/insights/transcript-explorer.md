@@ -6,7 +6,7 @@ hidden: false
 
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
 
 The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
@@ -42,127 +42,117 @@ By default, the Transcript Explorer displays a filtered list of sessions for the
 
 The list of sessions has the following parameters:
 
-| Title        | Description                                                                                                                                                                                                             |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Session ID   | The session unique identifier.<br> To copy the session ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy session ID**.  |
-| Contact ID   | The end user unique identifier.<br> To copy the contact ID, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) on the right side of a session to open the selection menu and select **Copy contact ID**. |
-| Messages     | Total number of messages in the specific session.                                                                                                                                                                       |
-| Endpoint     | Used Endpoint, for example, Webchat.                                                                                                                                                                                    |
-| Last Message | Selectable order of messages: ascending or descending by time and date.                                                                                                                                                 |
+| Title        | Description                                                                                                                                                                                                                |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Session ID   | This is a unique identifier assigned to each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
+| Contact ID   | The unique identifier for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.                    |
+| Messages     | The total number of messages within the specific session.                                                                                                                                                                  |
+| Endpoint     | The Endpoint handling the session. such as Webchat or Interaction Panel.                                                                                                                                                   |
+| Last Message | The date and time when the last message was received within the session.                                                                                                                                                   |
 
-- You can sort the sessions according to the number of included messages in ascending or descending order by clicking on the **Message ![arrow-down-black](../assets/icons/arrow-down-black.svg)** column title.
+### Sort Sessions
 
-- You can sort the sessions according to date and time order of the last message by clicking on the **Last Message ![arrow-down-black](../assets/icons/arrow-down-black.svg)** column title.
+To organize the sessions in the list, you can sort them by their Session ID, Messages, or Last Message. To do this, hover your mouse over a column title and select the sorting option you prefer:
+
+- Click the up arrow ![arrow-up-black](../assets/icons/arrow-up-black.svg) to sort in ascending order.
+- Click the down arrow ![arrow-down-black](../assets/icons/arrow-down-black.svg) to sort in descending order.
 
 ## Search for Sessions
 
-The Transcript Explorer interface provides a search field that enables you to search for sessions using pre-filled filter settings.
-Using the search function, you will find specific sessions with transcripts by searching for text messages, Session IDs or Contact IDs. Use phrases or keywords to get more accurate search results.
+You can search using pre-filled filter settings, such as  
 
 To find specific sessions, do the following:
 
-1. Click ![arrow-down-black](../assets/icons/arrow-down-black.svg) in the top left of the Transcript Explorer page.
-2. In the search field type the Agent name or select the Agent in the displayed list you want to view.
-3. Check [global filter](#global-filters) and [local filter](#additional-local-filters) settings and configure them, if required. 
-4. When you changed any settings click **Apply**, to activate the changed filter settings. The list of sessions is immediately updated according to the changed filter settings. 
+1. In the upper-right corner of the Transcript Explorer page, locate the search field.
+2. In the search field, specify text messages (for more precise results, use keywords or phrases), Session ID, or Contact ID.
 
-When the global filter and local filter settings are configured, you can use the search field to enter key phrases used in messages, a session ID, or a contact ID to find sessions smarter. Key phrases, for example, could be `cancel`, `booking`, `message`, `order`, `food`. As a result, you will get a list of all sessions that match your search criteria.
+The Transcript Explorer immediately updates the list of sessions according to the search results.
 
 ## Filter Sessions
 
-When searching for specific sessions, you can use the following configurable filters:
+By default, there is a global filters section at the top of the Transcript Explorer page.
+
+You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
 - [Additional Local Filters](#additional-local-filters)
 
-To open the filter selection, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) at the top right side next to the user menu icon. 
-
-!!! note "Effect of the Negate filter option"
-    When you enable the **Negate** filter option, all filter options except the selected one will be considered. For example, when selecting Agent messages and toggling Negate, all data will be considered except for the Agent messages.
+To hide the filter menu, in the upper-right corner, click ![insight-filter-black](../assets/icons/insight-filter-black.svg). 
 
 ### Global Filters
-
-You can use the [global filter](../insights/global-filter.md) options to configure a research.
-
-The Transcript Explorer provides following global filters to configure a research of sessions:
-
-- [Time span](global-filter.md#timeframe) - Allows to select a specific time period you want to view.
-- [Snapshot](global-filter.md#snapshot) - You can select previously created snapshots - these are exported Agents with the resources they contain.
-- [Endpoint](global-filter.md#endpoints) - You can select already prepared Endpoints which ensure that channel-specific input and output (images, galleries, voice) are converted to the standardized Input object.
-- [Locales](global-filter.md#locales) - You can select the locale to view and analyze. Locales need to be configured previously in your Flow.
 
 For more information, read the [Global Filter](global-filter.md) documentation.
 
 ### Additional Local Filters
 
 You can use the local filter options to refine your research.
-To open the local filter selection, click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)**.
+To open the local filter selection, at the top of the Transcript Explorer page, click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)**.
 
-| Additional Local Filter                | Description                                                                                                                                                                                        |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message Rating                         | Select rating results: <br> Positive <br> None <br> Negative                                                                                                                                       |
-| Source                                 | Select one or more message sources: <br> Virtual Agent Messages <br> User Messages <br> Agent Messages                                                                                             |
-| Goals                                  | Select predefined goals                                                                                                                                                                            |
-| Flow                                   | Select one or more Flows you want to search for messages that were generated during the selected Flow passing.                                                                                     |
-| [Contains Step](#contains-step-filter) | Refine your search results by selecting a predefined analytic step.                                                                                                                                |
-| Message count: From                    | You can limit the results to a session containing a minimum number of messages. <br> Use the up and down arrow icons, to set a definite number. <br> Less message counts will not be considered.   |
-| Message count: To                      | You can limit the results to a session containing a minimum number of messages. <br> Use the up and down arrow icons, to set a definite number. <br> Higher message counts will not be considered. |
+| Filter              | Description                                                                                                                                                                                                                                                                                                                           |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating      | Select the rating criteria for the results: <br> Positive - messages perceived positively <br> None - messages with no particular sentiment <br> Negative - messages perceived negatively                                                                                                                                             |
+| Source              | Choose one or more message sources to filter: <br> - Virtual Agent Messages - messages generated by the virtual agent <br> User Messages - messages sent by users <br> Agent Messages - messages from human agents                                                                                                                    |
+| Goals               | Select from predefined goals to narrow down results according to specific objectives or targets                                                                                                                                                                                                                                       |
+| Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing. Flows represent the paths or sequences of interactions within your system.                                                                                                                                                                   |
+| Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
+| Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
+| Message count: To   | Establish a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with more messages than this threshold will not be included in the results.                                                                                             |
 
-#### Contains Step filter
+#### Exclude Filters
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
+When you toggle the **Negate** option, all filters except the selected one will be analyzed. For example, if you select Agent messages and toggle Negate, all data except Agent messages will be analyzed.
 
-To further refine your search results to include only conversations that contain a specific step,
-click ![arrow-down-black](../assets/icons/arrow-down-black.svg) and select a step in the opened drop-down list. 
+### Reset Filters
 
-!!! note "Analytic Steps"
-    To get a list of analytic steps in your local filter selection, you need to define meaningful descriptions in the Node settings of your Flow in Cognigy.AI that you want to identify and analyze in Cognigy Insights. These steps are recorded in Cognigy Insights once the Nodes are passed. 
+To reset all filters, at the top of the Transcript Explorer page, click the **Reset** button on the right side of the filters.
 
-#### Reset Local Filters
-
-You can reset all changed local filter settings by clicking the **Reset** button on the right side of the filters. If the Reset button is not displayed, click once ![insight-filter-black](../assets/icons/insight-filter-black.svg) at the top right side of the Transcript Explorer page.
-
+If the Reset button is not displayed, click once ![insight-filter-black](../assets/icons/insight-filter-black.svg) at the top right side of the Transcript Explorer page.
 
 ## View Session Transcript and Details
 
-Session Transcripts are logged conversations between end users and agents. The Transcript Explorer enables you to view session transcripts in order to analyze them for specific details. To get a session transcript displayed, click on a session. 
+Session transcripts are logged conversations between end users and agents. 
+The Transcript Explorer enables you to view session transcripts to analyze them for specific details. 
+To display a session transcript, select a session from the list on the Transcript Explorer page.
 
 ### Session Transcript
 
-A session transcript shows all the single messages of the end user and the agent in a conversation. When you click on a session the corresponding transcript will be displayed on the right-hand sideof the page. You can use the scroll bar to navigate through the messages in the transcript. 
-Every displayed user message in the transcript includes the JSON objects data of the user message. To open and research the objects data, click ![expand](../assets/icons/expand.svg). 
+A session transcript shows all the individual messages exchanged between the end user and the agent during a conversation. When you click on a session, the corresponding transcript will be displayed on the right-hand side of the page. You can use the scroll bar to navigate through the messages in the transcript.
 
-The transcript view can be expanded to display more session details. To get them displayed, click ![user-menu](../assets/icons/user-menu.svg) at the top left side of the transcript. The transcript view expands to the left displaying following details:
+To get more session details, expand the transcript view by clicking ![user-menu](../assets/icons/user-menu.svg) at the top-left corner of the transcript.
+Transcript view will display the following details to the left:
 
 - [Session Details](#session-details)
 - [Contact Pofile Details](#contact-profile-details)
 
+<figure>
+  <img class="image-center" src="{{config.site_url}}insights/images/Transcript_Explorer_profile.png" width="100%" />
+  <figcaption>Session Transcript</figcaption>
+</figure>
+
 #### Session Details
 
-| Session Details             | Description                                                                                               |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------|
-| Session ID                  | Unique identifier associated with a session.                                                              |
-| First Message               | Date and time of the first message.                                                                       |
-| Last Message                | Date and time of the last message.                                                                        |
-| User Message Count          | Number of user messages.                                                                                  |
-| Virtual Agent Message Count | Number of virtual agent messages.                                                                         |
-| Agent Message Count         | Number of Agent messages.                                                                                 |
-| Flow Name                   | The naming of the Flow.                                                                                   |
-| Rating                      | User feedback given in conversation: <br>thumbs down icon: rating 0 to 4 / thumbs up icon: rating 5 to 10 |
-| Comment                     | User can write a comment in a conversation which is displayed here.                                       |
+
+| Session Details             | Description                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Session ID                  | The unique identifier assigned to each session.                                                                             |
+| First Message               | The date and time when the first message was sent.                                                                          |
+| Last Message                | The date and time when the last message was sent.                                                                           |
+| User Message Count          | The total number of messages sent by the user.                                                                              |
+| Virtual Agent Message Count | The total number of messages sent by the virtual agent.                                                                     |
+| Agent Message Count         | The total number of messages sent by the human agent.                                                                       |
+| Flow Name                   | The name of the conversation Flow in your Agent.                                                                            |
+| Rating                      | The feedback received from the user in the conversation, displayed as a thumbs-up (5 to 10) or thumbs-down (0 to 4) rating. |
+| Comment                     | Any additional comments provided by the user along with their feedback.                                                     |
 
 #### Contact Profile Details
 
 {! _includes/insights/contact-profile-details.md !}
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/Transcript_Explorer_profile.png" width="100%" />
-  <figcaption>Selected transcript with session details and customer profile data</figcaption>
-</figure>
-
 #### Expert mode
 
 Activating **Expert mode** provides additional information for conversation messages, including the triggered Intent and its score and the filled Slots. You can enable the Expert Mode by toggling the switch at the top of the Transcript panel.
+
+user connected and disconnected events
 
 1. Click on a session you want to view the messages in it. The session transcript will be displayed in a separate page on the right side.
 2. At the top of the page, activate the toggle switch to enable the **Expert mode**. Additional information will then be displayed in the transcript details.
