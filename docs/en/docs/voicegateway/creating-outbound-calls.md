@@ -15,8 +15,8 @@ To initiate an outgoing call, use on of the following methods:
 
 - [Transfer Node](../ai/flow-nodes/vg/transfer.md)
 - REST API request:
-   -  [HTTP Request Node](../ai/flow-nodes/services/http-request.md)
-   -  [API Request via Postman or CLI](#create-an-outbound-call-via-api-request)
+    -  [HTTP Request Node](../ai/flow-nodes/services/http-request.md)
+    -  [API Request via Postman or CLI](#create-an-outbound-call-via-api-request)
 
 ## Create an Outbound Call via API Request
 
@@ -25,7 +25,15 @@ When the call is answered, the specified webhook will be invoked to manage the c
 Authorization is established via a Bearer token.
 This token is filled with an [API key value](webapp/accounts.md#account-level-api-keys) generated in the Voice Gateway Self-Service Portal.
 
-### Request 
+### Request
+
+- [Basic Configuration Request](#basic-configuration-request)
+- [Advanced Configuration Request](#advanced-configuration-request)
+
+#### Basic Configuration Request
+
+The basic configuration provides details for initiating and managing calls, enabling the system to establish a connection between the caller and the callee.
+It also includes call duration, handling unanswered calls, and attaching relevant metadata.
 
 === "cURL"
 
@@ -62,16 +70,6 @@ This token is filled with an [API key value](webapp/accounts.md#account-level-ap
     }
     ```
 
-### Request Parameters
-
-- [Basic Configuration](#basic-configuration)
-- [Advanced Configuration](#advanced-configuration)
-
-#### Basic Configuration
-
-The basic configuration provides details for initiating and managing calls, enabling the system to establish a connection between the caller and the callee.
-It also includes call duration, handling unanswered calls, and attaching relevant metadata.
-
 The following parameters can be provided in the request body:
 
 | Parameter       | Description                                                                          | Required |
@@ -83,11 +81,91 @@ The following parameters can be provided in the request body:
 | timeout         | Ring `no-answer` timeout, in seconds. Default is 60 seconds.                         | No       |
 | tag             | An object containing key-value pairs of metadata that will be attached to this call. | No       |
 
-#### Advanced Configuration
+#### Advanced Configuration Request
 
 The advanced configuration provides a range of features to enhance call handling and management. It includes notifications, interaction hooks, header manipulation and transcription capabilities.
 
-The following parameters can be provided in the request body:
+In the example below,
+we enable the [Answering Machine Detection](references/events/ANSWERING_MACHINE_DETECTION.md) feature
+using the `amd` parameter
+and use the `actionHook` parameter to send the events to the [Webhook](https://webhook.site/) site.
+To limit the call duration, we set a timeout of 30 seconds using the `timeout` parameter.
+If the call is not answered within the specified time, Voice Gateway stops calling.
+We include tags in the `tags` parameter to send custom information about the user,
+such as a custom object, as well as headers to send custom headers.
+
+=== "cURL"
+
+    ```text
+    curl --location --request POST 'https: //<base_url>/v1/Accounts/<account_sid>/Calls' \
+    --header 'Authorization: Bearer <valid-api-token>' \
+    --header 'Accept: application/json' \
+    --header 'Content-Type: application/json' \
+    --data-raw '{
+        "application_sid": "<application_sid>",
+        "from": "<caller's phone number>",
+        "to": {
+            "type": "phone",
+            "number": "<callee's phone number>"
+        },
+        "amd": {
+            "actionHook": "https://webhook.site/<webhook-id>"
+        },
+        "timeout": 30000,
+        "tag": {
+            "env": "app",
+            "internalId": "ABDC1234",
+            "Customer": {
+                "firstName": "Sara",
+                "lastName": "Doe",
+                "mobileNumber": "<callee's phone number>",
+                "email": "sara.doe@cognigy.com",
+                "salutation": "Ms"
+            }
+        },
+        "headers": {
+            "User-to-User": "UUID: <number>"
+        }
+    }'
+    ```
+
+=== "JSON"
+
+    ```JSON
+    POST /v1/Accounts/<account_sid>/Calls HTTP/1.1
+    Host: <base_url>
+    Authorization: Bearer <valid-api-token>
+    Content-Type: application/json
+            
+    {
+      "application_sid": "<application_sid>",
+      "from": "<caller's phone number>",
+      "to": {
+        "type": "phone",
+        "number": "<callee's phone number>"
+      },
+      "amd": {
+        "actionHook": "https://webhook.site/<webhook-id>"
+      },
+      "timeout": 30000,
+      "tag": {
+        "env": "app",
+        "internalId": "ABDC1234",
+        "Customer": {
+          "firstName": "Sara",
+          "lastName": "Doe",
+          "mobileNumber": "<callee's phone number>",
+          "email": "sara.doe@cognigy.com",
+          "salutation": "Ms"
+        }
+      },
+      "headers": {
+        "User-to-User": "UUID: <number>"
+      }
+    }
+    ```
+
+In addition to the [basic configuration parameters](#basic-configuration-request), the following parameters can be provided in the request body:
 
 | Parameter   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Required |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
