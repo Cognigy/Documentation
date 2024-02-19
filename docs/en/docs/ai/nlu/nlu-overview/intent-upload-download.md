@@ -10,7 +10,7 @@ You can upload and download intents from Cognigy. Quickly import intents, edit t
 We currently support two formats
 
 ## CSV
-<div class="divider"></div>
+
 Your CSV should be formatted as follows
 
 * No header
@@ -34,5 +34,15 @@ To illustrate:
 | Intent2      | exampleSentence      | I am hungry                              |
 
 ## JSON
-<div class="divider"></div>
+
 The Cognigy Intent JSON format specifies your intents completely. For more details refer to our API documentation [here](https://api-trial.cognigy.ai/openapi#post-/v2.0).
+
+## Example of Regional Settings: Windows Customize Format
+
+!!! note
+    Regional settings of your operating system influence the delimiter. This change can break a file and cause an upload failure.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai\nlu\images\customize-format.png" width="100%" />
+  <figcaption>Windows operating systems: Customize Format</figcaption>
+</figure>
