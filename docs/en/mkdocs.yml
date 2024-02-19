@@ -198,21 +198,22 @@ nav:
       - ai/flow-nodes/logic/remove-from-context.md
       - ai/flow-nodes/logic/switch-locale.md
       - ai/flow-nodes/logic/trigger-function.md
-    - Profile:
-      - ai/flow-nodes/profile/profile.md
-      - ai/flow-nodes/profile/update-profile.md
-      - ai/flow-nodes/profile/deactivate-profile.md
-      - ai/flow-nodes/profile/delete-profile.md
-      - ai/flow-nodes/profile/activate-profile.md
-      - ai/flow-nodes/profile/merge-profile.md
-      - ai/flow-nodes/profile/complete-goal.md
-      - ai/flow-nodes/profile/blind-mode.md
-    - Services:
-      - ai/flow-nodes/services/services.md
-      - ai/flow-nodes/services/http-request.md
-      - ai/flow-nodes/services/mongo-db.md
-      - ai/flow-nodes/services/ms-sql.md
-      - ai/flow-nodes/services/check-agent-availability.md
+    - Analytics:
+      - ai/flow-nodes/analytics/overview.md
+      - ai/flow-nodes/analytics/update-profile.md
+      - ai/flow-nodes/analytics/deactivate-profile.md
+      - ai/flow-nodes/analytics/delete-profile.md
+      - ai/flow-nodes/analytics/activate-profile.md
+      - ai/flow-nodes/analytics/merge-profile.md
+      - ai/flow-nodes/analytics/complete-goal.md
+      - ai/flow-nodes/analytics/blind-mode.md
+    - Service:
+      - ai/flow-nodes/service/agent-handover.md
+      - ai/flow-nodes/service/services.md
+      - ai/flow-nodes/service/http-request.md
+      - ai/flow-nodes/service/mongo-db.md
+      - ai/flow-nodes/service/ms-sql.md
+      - ai/flow-nodes/service/check-agent-availability.md
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
@@ -231,39 +232,40 @@ nav:
       - ai/flow-nodes/code/channel-output.md
       - ai/flow-nodes/code/ai-default-channel-formats.md
       - ai/flow-nodes/code/analytics-data.md
-    - Voice:
-      - Generic Voice Nodes:
-        - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
-        - ai/flow-nodes/generic-voice-nodes/play-url.md
-        - ai/flow-nodes/generic-voice-nodes/send-metadata.md
-        - ai/flow-nodes/generic-voice-nodes/transfer.md
-        - ai/flow-nodes/generic-voice-nodes/hang-up.md
-        - ai/flow-nodes/generic-voice-nodes/barge-in-config.md
-        - ai/flow-nodes/generic-voice-nodes/continuous-asr-config.md
-        - ai/flow-nodes/generic-voice-nodes/dtmf-collect-config.md
-        - ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md
-        - ai/flow-nodes/generic-voice-nodes/user-input-timeout-config.md
-        - ai/flow-nodes/generic-voice-nodes/mute-speech-input.md
-      - Voice Gateway:
-        - ai/flow-nodes/vg/voice-gateway.md
-        - ai/flow-nodes/vg/dtmf.md
-        - ai/flow-nodes/vg/hangup.md
-        - ai/flow-nodes/vg/parameter-details.md
-        - ai/flow-nodes/vg/play.md
-        - ai/flow-nodes/vg/send-metadata.md
-        - ai/flow-nodes/vg/set-session-config.md
-        - ai/flow-nodes/vg/transfer.md
-        - ai/flow-nodes/vg/call-recording.md
-        - ai/flow-nodes/vg/mute-speech-input.md
-      - Audio Codes:
-        - ai/flow-nodes/audiocodes/audiocodes.md
-        - ai/flow-nodes/audiocodes/send-message.md
-        - ai/flow-nodes/audiocodes/set-session-params.md
-        - ai/flow-nodes/audiocodes/play-url.md
-        - ai/flow-nodes/audiocodes/transfer-vg.md
-        - ai/flow-nodes/audiocodes/hangup.md
-        - ai/flow-nodes/audiocodes/send-meta-data.md
-        - ai/flow-nodes/audiocodes/call-recording.md
+    - Data:
+      - ai/flow-nodes/data/datepicker.md
+    - Generic Voice Nodes:
+      - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
+      - ai/flow-nodes/generic-voice-nodes/play-url.md
+      - ai/flow-nodes/generic-voice-nodes/send-metadata.md
+      - ai/flow-nodes/generic-voice-nodes/transfer.md
+      - ai/flow-nodes/generic-voice-nodes/hang-up.md
+      - ai/flow-nodes/generic-voice-nodes/barge-in-config.md
+      - ai/flow-nodes/generic-voice-nodes/continuous-asr-config.md
+      - ai/flow-nodes/generic-voice-nodes/dtmf-collect-config.md
+      - ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md
+      - ai/flow-nodes/generic-voice-nodes/user-input-timeout-config.md
+      - ai/flow-nodes/generic-voice-nodes/mute-speech-input.md
+    - Voice Gateway:
+      - ai/flow-nodes/vg/voice-gateway.md
+      - ai/flow-nodes/vg/dtmf.md
+      - ai/flow-nodes/vg/hangup.md
+      - ai/flow-nodes/vg/parameter-details.md
+      - ai/flow-nodes/vg/play.md
+      - ai/flow-nodes/vg/send-metadata.md
+      - ai/flow-nodes/vg/set-session-config.md
+      - ai/flow-nodes/vg/transfer.md
+      - ai/flow-nodes/vg/call-recording.md
+      - ai/flow-nodes/vg/mute-speech-input.md
+    - Audio Codes:
+      - ai/flow-nodes/audiocodes/audiocodes.md
+      - ai/flow-nodes/audiocodes/send-message.md
+      - ai/flow-nodes/audiocodes/set-session-params.md
+      - ai/flow-nodes/audiocodes/play-url.md
+      - ai/flow-nodes/audiocodes/transfer-vg.md
+      - ai/flow-nodes/audiocodes/hangup.md
+      - ai/flow-nodes/audiocodes/send-meta-data.md
+      - ai/flow-nodes/audiocodes/call-recording.md
     - AI Copilot:
       - ai/flow-nodes/ai-copilot/overview.md
       - ai/flow-nodes/ai-copilot/identity-tile.md
