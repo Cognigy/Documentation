@@ -7,14 +7,14 @@ hidden: false
 
 # TTS and STT Vendors
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.67-blue.svg)](../../release-notes/4.67.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../release-notes/4.70.md)
 
 The table below shows the TTS (Text-to-Speech) and STT (Speech-to-Text) providers supported by Cognigy Voice Gateway.
 
 | Provider   | TTS | STT |
 |------------|-----|-----|
 | AWS        | +   | +   |
-| Deepgram   | -   | +   |
+| Deepgram   | +   | +   |
 | ElevenLabs | +   | -   |
 | Google     | +   | +   |
 | Microsoft  | +   | +   |
