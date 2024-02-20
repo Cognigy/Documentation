@@ -6,6 +6,8 @@ hidden: false
 
 # Global Filters
 
+[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
+
 Cognigy Insights enables you to select available Endpoint data for analysis using Global Filters.
 Once you have changed a filter setting, the corresponding data will be considered for the analysis report in Insights.
 The Global Filter settings are available in all applications, such as dashboards and explorers, and they affect all applications.
