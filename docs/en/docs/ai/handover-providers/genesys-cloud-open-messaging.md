@@ -156,7 +156,19 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI, follow thes
 
 ### Configure Handover Settings
 
-Add a [Handover to Agent](../tools/agent-handover.md) Node without any additional configuration.
+In [Handover to Agent](../tools/agent-handover.md) Node, configure the following settings:
+
+- **Language** — specify a language for the conversation. For example, `english`, `spanish`, `german`.
+- **Skills** — define skills for the conversation. For example, `escalation`.
+- **Priority** — set the priority for the conversation. For example, `1`. If a priority is set, it triggers a flow in Genesys to prioritize or de-prioritize the conversation within the queue. Note that this functionality requires the appropriate flow to be set up in Genesys.
+- **Custom Attributes** — add custom attributes in the `Key: Value` format, which allows you to include additional information.
+  For example:
+  ```json
+  {
+      "section": "section A",
+      "region": "Europe"
+  }
+  ```
 
 To test connection, click **Open Demo Web Chat**.
 
