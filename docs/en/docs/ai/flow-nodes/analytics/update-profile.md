@@ -10,7 +10,7 @@
 </figure>
 
 ## Description
-<div class="divider"></div>
+
 The Update Profile Node is used to update the users' Contact Profile.
 
 <figure>

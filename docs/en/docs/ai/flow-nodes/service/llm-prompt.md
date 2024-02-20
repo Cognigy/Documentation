@@ -14,7 +14,6 @@ hidden: false
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 The LLM Prompt Node allows using Generative AI for creating relevant content.
 

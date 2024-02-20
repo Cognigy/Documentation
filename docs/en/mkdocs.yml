@@ -172,14 +172,13 @@ nav:
     - ai/flow-nodes/node-usage.md
     - ai/flow-nodes/dynamic-content.md
     - Message:
-      - ai/flow-nodes/message/message.md
+      - ai/flow-nodes/message/overview.md
       - ai/flow-nodes/message/say.md
       - ai/flow-nodes/message/question.md
       - ai/flow-nodes/message/optional-question.md
       - ai/flow-nodes/message/send-smtp-email.md
-      - ai/flow-nodes/message/send-email-notification.md
+      - ai/flow-nodes/message/email-notification.md
       - ai/flow-nodes/message/send-text.md
-      - ai/flow-nodes/message/datepicker.md
     - Logic:
       - ai/flow-nodes/logic/logic.md
       - ai/flow-nodes/logic/if.md
@@ -197,7 +196,6 @@ nav:
       - ai/flow-nodes/logic/add-to-context.md
       - ai/flow-nodes/logic/remove-from-context.md
       - ai/flow-nodes/logic/switch-locale.md
-      - ai/flow-nodes/logic/trigger-function.md
     - Analytics:
       - ai/flow-nodes/analytics/overview.md
       - ai/flow-nodes/analytics/update-profile.md
@@ -207,13 +205,21 @@ nav:
       - ai/flow-nodes/analytics/merge-profile.md
       - ai/flow-nodes/analytics/complete-goal.md
       - ai/flow-nodes/analytics/blind-mode.md
+      - ai/flow-nodes/analytics/overwrite-analytics.md
+      - ai/flow-nodes/analytics/request-rating.md
+      - ai/flow-nodes/analytics/set-rating.md
     - Service:
-      - ai/flow-nodes/service/agent-handover.md
-      - ai/flow-nodes/service/services.md
+      - ai/flow-nodes/service/overview.md
       - ai/flow-nodes/service/http-request.md
       - ai/flow-nodes/service/mongo-db.md
       - ai/flow-nodes/service/ms-sql.md
       - ai/flow-nodes/service/check-agent-availability.md
+      - ai/flow-nodes/service/close-handover.md
+      - ai/flow-nodes/service/gpt-conversation.md
+      - ai/flow-nodes/service/handover-to-agent.md
+      - ai/flow-nodes/service/llm-prompt.md
+      - ai/flow-nodes/service/set-handover-inactivity.md
+      - ai/flow-nodes/service/trigger-function.md      
     - NLU:
       - ai/flow-nodes/nlu/nlu.md
       - ai/flow-nodes/nlu/copy-slots-to-context.md
@@ -277,6 +283,7 @@ nav:
       - ai/flow-nodes/ai-copilot/set-grid.md
       - ai/flow-nodes/ai-copilot/transcript-tile.md
       - ai/flow-nodes/ai-copilot/knowledge-tile.md
+
     - xApp:
       - ai/flow-nodes/xApp/overview.md
       - ai/flow-nodes/xApp/init-xApp-session.md
@@ -284,18 +291,11 @@ nav:
       - ai/flow-nodes/xApp/set-html-xApp-state.md
       - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md
     - Other Nodes:
-      - ai/flow-nodes/other-nodes/other-nodes.md
+      - ai/flow-nodes/other-nodes/overview.md
       - ai/flow-nodes/other-nodes/log-message.md
-      - ai/flow-nodes/other-nodes/overwrite-analytics.md
-      - ai/flow-nodes/other-nodes/set-rating.md
       - ai/flow-nodes/other-nodes/set-translation.md
-      - ai/flow-nodes/other-nodes/request-rating.md
-      - ai/flow-nodes/other-nodes/llm-prompt.md
-      - ai/flow-nodes/other-nodes/gpt-conversation.md
       - ai/flow-nodes/other-nodes/knowledge-search.md
       - ai/flow-nodes/other-nodes/search-extract-output.md
-      - ai/flow-nodes/other-nodes/close-handover.md
-      - ai/flow-nodes/other-nodes/set-handover-inactivity.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md

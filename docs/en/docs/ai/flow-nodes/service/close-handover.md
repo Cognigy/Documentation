@@ -11,7 +11,6 @@ hidden: false
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the virtual agent.
 
@@ -24,4 +23,4 @@ You can use this Node after the [Set Handover Inactivity](set-handover-inactivit
 - [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)
 - [Set Handover Inactivity](set-handover-inactivity.md)
 - [Handover Providers](../../handover-providers/overview.md)
-- [Agent Handover](../../tools/agent-handover.md)
+- [Agent Handover](handover-to-agent.md)

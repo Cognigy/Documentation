@@ -10,7 +10,6 @@
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 The Datepicker Node renders a **visual datepicker** to the user. It comes with many configurable options that are listed below.
 
@@ -22,7 +21,6 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
     The Datepicker is automatically triggered whenever a Question Node with the **Date** type is used. This means that you will rarely need to explicitly add the Datepicker Node itself. 
 
 ## Properties
-<div class="divider"></div>
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6c556ea-datepicker-options1.jpg" width="100%" />
@@ -141,6 +139,7 @@ Disable dates by function - example:
 
 
 ### Advanced Options
+
 The Datepicker comes with four advanced options:
 
 <figure>

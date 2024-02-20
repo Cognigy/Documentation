@@ -10,7 +10,7 @@
 </figure>
 
 ## Description
-<div class="divider"></div>
+
 The Activate Profile Node is used to reactivate a profile that has been deactivated, in case the user disabled data collection by mistake or wants to allow data collection again. The Node doesn't take any parameters, since it just activates the profile of the contact who hit the Node.
 
 !!! tip "Common usage"

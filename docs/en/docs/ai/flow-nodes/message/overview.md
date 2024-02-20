@@ -1,9 +1,9 @@
 ---
- title: "message" 
- slug: "Message" 
+ title: "Message Overview" 
+ slug: "message overview" 
  hidden: false 
 ---
-# Message
+# Message Overview
 
 Message Nodes are used to generate output that is sent back to the user:
 
@@ -11,6 +11,5 @@ Message Nodes are used to generate output that is sent back to the user:
 - [Question](question.md)
 - [Optional Question](optional-question.md)
 - [Send SMTP Email](send-smtp-email.md)
-- [Email Notification](send-email-notification.md)
+- [Email Notification](email-notification.md)
 - [Send Text](send-text.md)
-- [Datepicker](datepicker.md)

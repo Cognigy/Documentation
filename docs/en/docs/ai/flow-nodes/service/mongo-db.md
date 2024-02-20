@@ -26,8 +26,8 @@ The name of the MongoDB collection.
 #### Query
 The MongoDB query in JSON format.
 
- [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/){:target="_blank"}
-
+ [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/)
+  
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
