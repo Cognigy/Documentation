@@ -6,7 +6,7 @@ hidden: false
 
 # Message Explorer
 
-The Message Explorer is a tool in Cognigy Insights that helps you search for specific customer or virtual agent messages within a conversation. It shows messages before and after the selected one. It complements the Transcript Explorer, which provides more session-related details and user profile data.
+The Message Explorer is a tool in Cognigy Insights that helps you search for specific customer or virtual agent messages within a conversation. It shows messages before and after the selected one. It complements the [Transcript Explorer](transcript-explorer.md), which provides more session-related details and user profile data.
 
 The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It answers questions like "How often do customers react similarly?" and "What triggers specific types of responses?"
 
@@ -53,12 +53,6 @@ If there are numerous messages, you can use the blue scroll bars located beside 
 
 If the selected message was sent multiple times and belongs to different conversations, all of the prior and following messages will be displayed so that you can view more than one message in these fields.
 
-| Message fields  | Description                                                     |
-|-----------------|-----------------------------------------------------------------|
-| Prior           | The message that appears before the current message.            |
-| Current Message | The current selected message.                                   |
-| Following       | The message that follows the current message in a conversation. |
-
 To go back to the filtered top messages again, click ![X-icon](../assets/icons/X-icon.svg) in the column title labeled with **Current Message**.
 
 <figure>
@@ -77,10 +71,10 @@ You will then get a list of all messages that match your search.
 
 To find specific messages, follow these steps:
 
-1. Click ![arrow-down-black](../assets/icons/arrow-down-black.svg) at the top left of the Message Explorer page.
-2. In the search field, type the Agent's name or select the Agent from the list displayed.
-3. Check and configure the [global filter](#global-filters) and [additional filter](#additional-filters) settings as required.
-4. Once you have made any changes to the settings, click on **Apply** to activate them. The list of sessions will be updated according to the filter settings you have changed.
+1. In the upper-right corner of the **Message Explorer** page, locate the search field.
+2. In the search field, specify keywords or phrases.
+
+The Message Explorer immediately updates the list of sessions according to the search results.
 
 ## Filter Messages
 
@@ -102,7 +96,7 @@ For more information, read the [Global Filter](global-filter.md) documentation.
 You can use additional filters to refine your research.
 
 To open the **Additional Filters** selection,
-click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
+click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Message Explorer** page.
 
 | Additional  Filter | Description                                                                                                                                                                                                          |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
