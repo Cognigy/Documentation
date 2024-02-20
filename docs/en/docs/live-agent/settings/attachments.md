@@ -15,7 +15,7 @@ These attachments can include various file types; `jpeg`, `jpg`, `png`, `docx`, 
 
 Attachments can provide additional information or media, for example, an invoice or a photo related to the issue a customer is facing.
 
-## Upload an Attachment
+## Upload an Attachment as an Agent
 
 To upload a file in a conversation within Live Agent, follow these steps:
 
