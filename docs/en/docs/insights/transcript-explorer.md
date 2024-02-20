@@ -74,7 +74,7 @@ By default, the Transcript Explorer shows the **Global Filters** section at the 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Local Filters](#additional-local-filters)
+- [Additional Filters](#additional-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner. 
 
@@ -82,17 +82,17 @@ To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-f
 
 For more information, read the [Global Filter](global-filter.md) documentation.
 
-### Additional Local Filters
+### Additional Filters
 
-You can use the Local Filters to refine your research.
+You can use additional filters to refine your research.
 
-To open the **Local Filters** selection,
+To open the **Additional Filters** selection,
 click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
 
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
-| Source              | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> **Agent Messages** — messages sent by human agents.                                                                                                                  |
+| Source              | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                |
 | Goals               | Select from predefined goals to narrow down results according to specific objectives or targets.                                                                                                                                                                                                                                      |
 | Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
