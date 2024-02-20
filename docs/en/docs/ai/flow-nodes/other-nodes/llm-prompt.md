@@ -25,7 +25,7 @@ The Node supports the following modes:
 
 - **Chat**. This mode is activated by default and is preferable for dynamic conversations and interactions with the model.
   It takes into account the context of messages from the user and the bot,
-  depending on the chosen number of transcript turns (messages) in the **Transcript Steps** setting.
+  depending on the chosen number of transcript turns (messages) in the **Transcript Turns** setting.
 - **Prompt**. This mode is preferable for single-turn tasks or generating text based on a single prompt.
 
 If your LLM provider doesn't support Chat mode, Cognigy will automatically convert the Chat request to a Prompt request.
