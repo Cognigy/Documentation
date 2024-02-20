@@ -1,10 +1,10 @@
 ---
-title: "Service" 
-slug: "service" 
+title: "Service Overview" 
+slug: "service overview" 
 hidden: false 
 ---
 
-# Service
+# Service Overview
 
 Service Nodes are used to:
 
@@ -26,4 +26,10 @@ You can use the following Service Nodes:
     - [Run Transaction](ms-sql.md#run-transaction)
     - [Run SQL Query](ms-sql.md#run-query)
     - [Run StoredProcedure](ms-sql.md#run-stored-procedure)
-- [Check Agent Availability](check-agent-availability.md) 
+- [Check Agent Availability](check-agent-availability.md)
+- [Close Handover](close-handover.md)
+- [GPT Conversation](gpt-conversation.md)
+- [Handover to Agent](handover-to-agent.md)
+- [LLM Prompt](llm-prompt.md)
+- [Set Handover Inactivity](set-handover-inactivity.md)
+- [Trigger Function](trigger-function.md)

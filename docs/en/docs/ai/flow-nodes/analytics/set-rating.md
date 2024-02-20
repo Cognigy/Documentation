@@ -12,7 +12,7 @@
 </figure>
 
 ## Description
-<div class="divider"></div>
+
 Cognigy introduces as of release Cognigy.AI (4.9.0) a new Flow Node **Set Rating** which extends the analytical capabilities of Cognigy.AI together with the [Insights]({{config.site_url}}insights/cognigy-insights/) application. 
 
 The Set Rating Node sets the rating and rating comment for a conversation.

@@ -12,7 +12,6 @@ hidden: false
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 The Email Notification Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time. 
 
@@ -111,7 +110,6 @@ The BCC recipients of your email.
 If switched on, the flow execution will **continue directly after** the Send Email Node was triggered. If turned-off, flow execution will **wait until the email is sent**.
 
 ## Email Template
-<div class="divider"></div>
 
 The email will be sent with templating around it, looking roughly like this:
 

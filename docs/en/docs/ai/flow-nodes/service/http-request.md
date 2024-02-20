@@ -11,7 +11,6 @@ hidden: false
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 By using the HTTP Request Node, you can perform an HTTP request to a specific resource from within a Flow.
 
@@ -172,13 +171,12 @@ If HTTP Requests return a status code > 299, the response is considered an error
 If active, the Flow will stop here if the response returned with a status code > 299
 
 ## GET Requests
-<div class="divider"></div>
+
 The GET method configuration prompt has all the fields described above.
 
 The results of the GET request are stored in the context of the flow. You can retrieve the requested data of your GET request by accessing the context with the key you defined in the HTTP Node settings.
 
 ## POST, PUT and PATCH Requests
-<div class="divider"></div>
 
 !!! note "Content-Type Headers"
     The standard Content-Type header is *application/x-www-form-urlencoded*. If you want to send another Content-Type, you have to set the header value specifically or use JSON as described below.
@@ -217,5 +215,5 @@ How to use it:
 When using the Interaction Panel, you can inspect the response in the **INFO** tab.
 
 ## DELETE Requests
-<div class="divider"></div>
+
 The DELETE request configuration prompt exposes the **General Configuration** fields (see above).

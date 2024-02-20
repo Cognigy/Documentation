@@ -11,7 +11,6 @@ hidden: false
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 This node detects and handles user inactivity, freeing up capacity for the human agent team. To configure this node, specify the time in minutes during which the user can be inactive.
 
@@ -40,6 +39,6 @@ To close a handover based on the inactivity event, use the [Close Handover](clos
 ## More Information
 
 - [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)
-- [Agent Handover](../../tools/agent-handover.md)
-- [Set Handover Inactivity](../../flow-nodes/other-nodes/set-handover-inactivity.md)
-- [Close Handover](../../flow-nodes/other-nodes/close-handover.md)
+- [Agent Handover](handover-to-agent.md)
+- [Set Handover Inactivity](set-handover-inactivity.md)
+- [Close Handover](close-handover.md)

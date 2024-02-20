@@ -8,7 +8,6 @@ hidden: false
 Human support **Agent Handover** is a critical tool for incorporating virtual agents into existing contact center workflows. Direct communication between virtual agents and human agents will enrich the experience of a customer beyond the capabilities of a Conversational AI.
 
 ## Handover Processes
-<div class="divider"></div>
 
 If a request from a user is an edge case that is just too specific to be handled by the Bot, the bot can offer the user to be forwarded to a support agent, a real human, that can intercept the conversation and help the customer manually without the need to change channels.
 
@@ -61,6 +60,7 @@ The error reason can either be `unsupported` in case the user channel does not s
 There is also a `Handover Status` [Token]({{config.site_url}}ai/resources/manage/tokens/) which can be used to access the handover status in the Flow.
 
 ### Handling the Handover Status
+
 To configure different behavior of the Virtual Agent based on the Handover status, you can use a `Lookup` Node to handle the different possible outcomes of a Handover. In the `Lookup` Node you can select to lookup on the `Handover Status`.
 
 <figure>
@@ -68,11 +68,10 @@ To configure different behavior of the Virtual Agent based on the Handover statu
 </figure>
 
 ## Handover to Agent Node
-<div class="divider"></div>
 
 The **Handover to Agent** Node has both general and specific settings for each handover provider.
 
-The General settings are described below and the specific settings you can find in the [Handover Providers Overview]({{config.site_url}}ai/handover-providers/overview/).
+The General settings are described below and the specific settings you can find in the [Handover Providers Overview](../../handover-providers/overview.md).
 
 ### Handover Accepted Message
 
@@ -93,7 +92,7 @@ The General settings are described below and the specific settings you can find 
 | Parameter                           | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------------|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Flow Continuation                   | Selector | - Below this Node - the user will be taken to the node below the Handover node once the agent resolves the conversation. In this case, the user would continue in a different flow, but the starting point would be the node below the Handover node. <br> - At current AgentInject Entrypoint - the user will continue the chat at the current agent inject entrypoint. This option allows the agent to guide the user to a specific part of the chat and then give control back to the user. | 
-| Send resolve event to Virtual Agent | Toggle   | Sending an event when the virtual agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Send resolve event to Virtual Agent | Toggle   | Sending an event when the virtual agent resolves a conversation.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 ### Event Settings
 
@@ -102,12 +101,11 @@ The General settings are described below and the specific settings you can find 
 | Send Queue Event  | Toggle | Sending an event to the Flow once the Handover is queued. |
 | Send Active Event | Toggle | Sending an event to the Flow once the Handover is active. |
 
-
 ## Handover Providers
 
-For a list of supported Handover services, refer to the [Handover Providers Overview](../handover-providers/overview.md).
+For a list of supported Handover services, refer to the [Handover Providers Overview](../../handover-providers/overview.md).
 
 ## More Information
 
-- [Check Agent Availability Node](../flow-nodes/services/check-agent-availability.md)
-- [User Inactivity Detection and Handling](../handover-providers/user-inactivity-detection.md)
+- [Check Agent Availability Node](check-agent-availability.md)
+- [User Inactivity Detection and Handling](../../handover-providers/user-inactivity-detection.md)

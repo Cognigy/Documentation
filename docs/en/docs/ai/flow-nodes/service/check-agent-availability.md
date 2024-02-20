@@ -12,7 +12,6 @@ hidden: false
 </figure>
 
 ## Description
-<div class="divider"></div>
 
 This Node checks the availability of agents with specific skills. 
 With this Node, you can manage your Flow,
