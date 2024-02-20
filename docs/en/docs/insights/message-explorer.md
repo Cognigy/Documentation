@@ -98,12 +98,12 @@ You can use additional filters to refine your research.
 To open the **Additional Filters** selection,
 click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Message Explorer** page.
 
-| Additional  Filter | Description                                                                                                                                                                                                          |
-|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                    |
-| Source             | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> **Agent Messages** — messages sent by human agents. |
-| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                             |
-| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                |
+| Additional  Filter | Description                                                                                                                                                                                                            |
+|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                      |
+| Source             | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents. |
+| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                               |
+| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                  |
 
 ### Exclude Filters
 
