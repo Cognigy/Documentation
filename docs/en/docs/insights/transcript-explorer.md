@@ -74,7 +74,7 @@ By default, the Transcript Explorer shows the **Global Filters** section at the 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Local Filters](#additional-local-filters)
+- [Additional Filters](#additional-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner. 
 
@@ -82,11 +82,11 @@ To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-f
 
 For more information, read the [Global Filter](global-filter.md) documentation.
 
-### Additional Local Filters
+### Additional Filters
 
-You can use the Local Filters to refine your research.
+You can use additional filters to refine your research.
 
-To open the **Local Filters** selection,
+To open the **Additional Filters** selection,
 click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
 
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |

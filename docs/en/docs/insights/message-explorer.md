@@ -6,15 +6,9 @@ hidden: false
 
 # Message Explorer
 
-The Message Explorer in [Cognigy Insights](../insights/cognigy-insights.md) is an analysis tool designed for efficiently searching specific customer or virtual agent messages within the context of an ongoing conversation. It provides a comprehensive view by revealing the messages preceding and following a selected one.
+The Message Explorer is a tool in Cognigy Insights that helps you search for specific customer or virtual agent messages within a conversation. It shows messages before and after the selected one. It complements the Transcript Explorer, which provides more session-related details and user profile data.
 
-Message Explorer and Transcript Explorer in Cognigy Insights complement each other.
-The Transcript Explorer shows you more session related details and user profile data, and let you explore a transcript showing messages of a single session.
-In difference to the Transcript Explorer the Message Explorer allows you to view specific messages in an overview in their number of appearances and conversation context. 
-
-What makes the Insights Message Explorer unique is its ability to show you the entire conversation as context around a specific message. This lets you see what the user said before and after a chosen specific message, giving you valuable context for understanding user reactions and motivations.
-
-The Message Explorer helps you answer questions like: "How often do customers react in a similar way?" and "What triggers specific types of responses?
+The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It answers questions like "How often do customers react similarly?" and "What triggers specific types of responses?"
 
 To open the Message Explorer interface, use one of the following options:
 
@@ -40,10 +34,9 @@ The Message Explorer interface will be displayed.
 
 ## Messages
 
-When you start the Message Explorer the first time with default filter settings the Message Explorer scans all sessions of the current selected Agent and will display all these messages for the selected time span, including user messages, virtual agent messages, and agent messages, titled with **Top Messages**.  
-Top messages are the messages that are sent most frequently during the specified time span.
-No other filter is applied by default other then time span set default with **Last 30 Days**.
-That means that the Message Explorer first shows you the most frequent messages from the period you have selected in descending order. The numbers displayed below a message indicate how often this message has occurred in a selected time span.
+When you first open the Message Explorer with default filter settings, it will scan all sessions of the currently selected Agent and display all messages for the selected time span. These messages include user messages, virtual agent messages, and agent messages, and are titled **Top Messages**.
+
+The top messages are the ones that are sent most frequently during the specified time span. By default, the only filter applied is the time span set to **Last 30 Days**. This means that the Message Explorer will first show you the most frequently sent messages from the period you have selected in descending order. The numbers displayed below each message indicate how many times the message has occurred in the selected time span.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/top-messages.png" width="100%" />
@@ -52,19 +45,21 @@ That means that the Message Explorer first shows you the most frequent messages 
 
 ## Explore Messages
 
-When you click on a displayed message, the page view changes and is split into three columns titled with **Prior**, **Current Message**, and **Following**. The message you selected is displayed as current message in the middle. The message before the current message is displayed as prior message and the message behind the current messages is displayed as following message.  
-Every time you click on a message it will be moved to **Current Message** and the context messages before and behind will move respective to **Prior** and **Following**.
-When you select other prior or following messages, you can navigate step by step forward or backward through conversations to analyze the context situation. 
-In a long list of messages you can use the blue scrolling bars indicated  beside the **Prior**, **Current Message**, and **Following** message fields to view all messages.
-If the selected message was sent several times and belongs to different conversations, all these prior and following messages will be displayed so that you can see more than one message in these fields.    
+When you click on a message from the list, the page view will change and split into three columns: **Prior**, **Current Message**, and **Following**. The message you have chosen will be displayed as the current message in the middle column. The message that came before the current message will be displayed in the **Prior** column, and the message that follows the current message will be displayed in the **Following** column.
 
-|Message fields         |    Description                                                      |
-|-----------------------|---------------------------------------------------------------------|
-| Prior                 | The message that appears before the current message.                |
-| Current Message       | The current selected message.                                       |
-| Following             | The message that follows the current message in a conversation.     |
+Every time you click on a message, it will be moved to the **Current Message** column, and the context messages before and after it will move accordingly to the **Prior** and **Following** columns. This allows you to navigate step by step through conversations to analyze the context of the situation, moving forward or backward.
 
-To go back to the filtered top messages again, click ![X-icon](../assets/icons/X-icon.svg) in the column title labelled with **Current Message**.
+If there are numerous messages, you can use the blue scroll bars located beside the **Prior**, **Current Message**, and **Following** message fields to view all of them.
+
+If the selected message was sent multiple times and belongs to different conversations, all of the prior and following messages will be displayed so that you can view more than one message in these fields.
+
+| Message fields  | Description                                                     |
+|-----------------|-----------------------------------------------------------------|
+| Prior           | The message that appears before the current message.            |
+| Current Message | The current selected message.                                   |
+| Following       | The message that follows the current message in a conversation. |
+
+To go back to the filtered top messages again, click ![X-icon](../assets/icons/X-icon.svg) in the column title labeled with **Current Message**.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/message-explorer_exploring-messages.png" width="100%"/>
@@ -73,60 +68,60 @@ To go back to the filtered top messages again, click ![X-icon](../assets/icons/X
 
 ## Search for Messages
 
-The Message Explorer interface provides a search field which enables you to search for messages. Each search takes the filter settings into account. When global filter and local filter settings are configured, you can enter key words in the **![magnifying glass](../assets/icons/magnifying-glass.svg) Search** field at the top of the page to find messages which matches to the key words. As a result, you will get a list of all messages that match your search criteria.
+The Message Explorer interface has a search field that allows you to look for specific messages.
+Your search will be filtered according to the settings you have configured.
+Once you have set your global and additional filter settings,
+you can enter keywords in the **![magnifying glass](../assets/icons/magnifying-glass.svg) Search** field at the top of the page
+to find messages that match your search criteria.
+You will then get a list of all messages that match your search.
 
-To find specific messages, do the following:
+To find specific messages, follow these steps:
 
-1. Click ![arrow-down-black](../assets/icons/arrow-down-black.svg) in the top left of the Message Explorer page.
-2. In the search field type the Agent name or select the Agent in the displayed list you want to view.
-3. Check [global filter](#global-filters) and [local filter](#additional-local-filters) settings and configure them, if required. 
-4. When you changed any settings click **Apply**, to activate the changed filter settings. The list of sessions is immediately updated according to the changed filter settings. 
+1. Click ![arrow-down-black](../assets/icons/arrow-down-black.svg) at the top left of the Message Explorer page.
+2. In the search field, type the Agent's name or select the Agent from the list displayed.
+3. Check and configure the [global filter](#global-filters) and [additional filter](#additional-filters) settings as required.
+4. Once you have made any changes to the settings, click on **Apply** to activate them. The list of sessions will be updated according to the filter settings you have changed.
 
 ## Filter Messages
 
-When searching for specific messages, you can use the following configurable filters:
+By default, the Message Explorer shows the **Global Filters** section at the top of the page.
+
+You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Local Filters](#additional-local-filters)
+- [Additional Filters](#additional-filters)
 
-To open the filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) at the top right side next to the user menu icon. 
-
-!!! note "Effect of the Negate filter option"
-    When you enable the **Negate** filter option, all filter options except the selected one will be considered. For example, when selecting Agent messages and toggling Negate, all data will be considered except for the Agent messages.
-
-!!! warning
-    When you change any settings click **Apply**, to activate the changed filter settings. The displayed messages will immediately be updated according to the changed filter settings. 
+To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner.
 
 ### Global Filters
 
-Using the Global Filter options, you can define the search criteria to find the intended messages you want to evaluate. 
-
-You can use the [global filter](../insights/global-filter.md) options to configure a research.
-
-The Message Explorer provides following global filters to configure a research of messages:
-
-- [Time span](global-filter.md#timeframe) - Allows to select a specific time period you want to view. Default time span setting is **Last 30 days**.
-- [Snapshot](global-filter.md#snapshot) - You can select previously created snapshots - these are exported Agents with the resources they contain.
-- [Endpoint](global-filter.md#endpoints) - You can select already prepared Endpoints which ensure that channel-specific input and output (images, galleries, voice) are converted to the standardized input object.
-- [Locales](global-filter.md#locales) - You can select the locale to view and analyze. Locales need to be configured previously in your Flow.
-
 For more information, read the [Global Filter](global-filter.md) documentation.
 
-### Additional Local Filters
+### Additional Filters
 
-You can use the local filter options to refine your research.
-To open the local filter menu, click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)**.
+You can use additional filters to refine your research.
 
-|Additional Local Filter        | Description                                                                                            |
-|-------------------------------|--------------------------------------------------------------------------------------------------------|
-| Message Rating                | Select rating results to view: <br> Positive <br> None <br> Negative                                   |
-| Source                        | Select one or more message sources: <br> Virtual Agent Messages <br> User Messages <br> Agent Messages |
-| Flow                          | Select one or more Flows you want to search for messages that were generated during the selected Flow passing. |
-| Show payload data             | Payload is the part of transmitted data that is the actual intended message, <br> for example, rating results with comments, and data files. |
- 
-## Reset Filter Settings
+To open the **Additional Filters** selection,
+click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
 
-You can reset all changed local filter settings by clicking the **Reset** button on the right side of the filters. If the Reset button is not displayed, click once ![insight-filter-black](../assets/icons/insight-filter-black.svg) at the top right side of the Transcript Explorer page.
+| Additional  Filter | Description                                                                                                                                                                                                          |
+|--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating     | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                    |
+| Source             | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> **Agent Messages** — messages sent by human agents. |
+| Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                             |
+| Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                |
+
+### Exclude Filters
+
+When you toggle the **Negate** option, all filters except the selected one will be analyzed.
+For example, if you select the **Agent Messages** filter and **Negate**, all data except **Agent Messages** will be analyzed.
+
+### Reset Filters
+
+To reset all filters, at the top of the **Message Explorer** page, click the **Reset** button on the right side of the Global Filters.
+
+If the **Reset** button is not displayed,
+click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Message Explorer** page.
 
 ## More Information
 
