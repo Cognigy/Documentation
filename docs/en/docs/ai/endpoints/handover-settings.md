@@ -5,7 +5,9 @@
 ---
 # Handover Settings
 
-Cognigy.AI supports integrating with various `Live Agent Tools`, so that a user can be transferred to an agent at any point during the conversation by using a [Handover To Agent Node]({{config.site_url}}ai/tools/agent-handover/) in the Flow.
+Cognigy.AI supports integrating with various `Live Agent Tools`,
+so that a user can be transferred to an agent at any point during the conversation
+by using a [Handover to Agent Node](../flow-nodes/service/handover-to-agent.md) in the Flow.
 
 ## Channel Support
 

@@ -156,7 +156,7 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI, follow thes
 
 ### Configure Handover Settings
 
-In [Handover to Agent](../tools/agent-handover.md) Node, configure the following settings:
+In [Handover to Agent](../flow-nodes/service/handover-to-agent.md) Node, configure the following settings:
 
 - **Language** — specify a language for the conversation. For example, `english`, `spanish`, `german`.
 - **Skills** — define skills for the conversation. For example, `escalation`.

@@ -1,9 +1,10 @@
 ---
-title: "Agent Handover" 
-slug: "agent-handover" 
+title: "Handover to Agent" 
+slug: "handover-to-agent" 
 hidden: false 
 ---
-# Agent Handover
+
+# Handover to Agent 
 
 Human support **Agent Handover** is a critical tool for incorporating virtual agents into existing contact center workflows. Direct communication between virtual agents and human agents will enrich the experience of a customer beyond the capabilities of a Conversational AI.
 
