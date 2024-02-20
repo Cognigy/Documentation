@@ -1,182 +1,228 @@
 ---
- title: "Transcript Explorer" 
- slug: "transcript-explorer" 
- hidden: false 
+title: "Transcript Explorer" 
+slug: "transcript-explorer"
+description: "The Insights Transcript Explorer is a powerful analysis tool that helps you improve your agents' performance, provide better customer service, and enhance the overall user experience. It allows you to analyze transcripts of conversations between end-users and agents in detail."
+hidden: false 
 ---
+
 # Transcript Explorer
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.48-blue.svg)](../release-notes/4.48.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
 
-With Transcript Explorer you get an inspection application that enables you to evaluate messages 
-in detail to improve your Agent, your customer service, and the user experience of your customer.
+The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
+provide better customer service, and enhance the overall user experience.
+It allows you to analyze transcripts of conversations between end users and agents in detail.
+The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
+For example, you can search for keywords such as booking, canceling, or messaging to find relevant messages quickly.
 
-The Transcript Explorer enables you to search for key phrases like "booking", "cancel", "message" in a list of transcripts.
+To open the Transcript Explorer, use one of the following options:
 
-Click **Transcript Explorer** in the Insights sidebar menu.
+=== "via Cognigy.AI"
+    1. Open the Cognigy.AI interface.
+    2. In the left-side menu, select an Agent.
+    3. Within the Agent interface, navigate to Insights using one of the following options:
+        - In the left-side **Agent** menu, select **Insights**. 
+        - In the upper-right corner, click ![user menu](../assets/icons/user-menu.svg) **> Insights**.<br>
+        The Cognigy Insights Overview dashboard will be displayed by default.
+    4. In the left-side menu, select **Transcript Explorer**.
 
-## Message research
-<div class="divider"></div>
+=== "Via Insights"
+    1. Open your Cognigy Insights interface.<br>
+    2. In the left-side menu, select **Transcript Explorer**.
 
-The customer sessions will be displayed in a list with the following data: 
-
-- Session ID
-- Contact ID
-- Message Count
-- Channel
-- Endpoint
-- Date and time of the last message
+The Transcript Explorer interface will be displayed. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer.png" width="100%" />
-  <figcaption>Transcript Explorer displaying a list of transcripts (conversations)</figcaption>
+  <figcaption>Transcript Explorer displaying a list of sessions</figcaption>
 </figure>
 
-- Use the local filter options to configure your research. You can find specific sessions with transcripts by searching for text messages, Session ID, or Contact ID. Use phrases or keywords to get more accurate search results. You can copy Session ID or Contact ID by clicking ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
-- Use the [global filter]({{config.site_url}}insights/global-filter/) options to configure your research.
-- You can select one or more message sources such as **Virtual Agent Messages**, **User Messages**, or **Agent Messages** by **local filter** in the top right.  When you want to search only for Virtual Agent-specific messages, click on the filter option Virtual Agent Messages and leave the other options not selected.
-- You can select one or more flows to show only messages that were generated during the selected flow passing.
+## List of Sessions
 
-!!! note
-    Using the Negate slider bar. All filter options except the selected one will be analyzed. For example, when selecting Agent messages and toggling **Negate**, all data will be analyzed except for the Agent-message data.
+By default, the Transcript Explorer displays a filtered list of sessions for the last months.
+
+The list of sessions has the following parameters:
+
+| Title        | Description                                                                                                                                                                                                          |
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Session ID   | The unique identifier assigned to each session. <br> To copy the Session ID, on the right side of the selected session row, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) **> Copy session ID**. |
+| Contact ID   | The unique identifier for the end user. To copy the Contact ID, on the right side of the selected session row, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) **> Copy contact ID**.              |
+| Messages     | The total number of messages within the specific session.                                                                                                                                                            |
+| Endpoint     | The Endpoint handling the session. For example, Cognigy Webchat or the Interaction Panel.                                                                                                                            |
+| Last Message | The date and time when the last message was received within the session.                                                                                                                                             |
+
+### Sort Sessions
+
+To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover your mouse over a column title and select the sorting option you prefer:
+
+- Click the up arrow ![arrow-up-black](../assets/icons/arrow-up-black.svg) to sort in ascending order.
+- Click the down arrow ![arrow-down-black](../assets/icons/arrow-down-black.svg) to sort in descending order.
+
+## Search for Sessions
+
+To find specific sessions, do the following:
+
+1. In the upper-right corner of the **Transcript Explorer** page, locate the search field.
+2. In the search field, specify text messages (for more precise results, use keywords or phrases), Session ID, or Contact ID.
+
+The Transcript Explorer immediately updates the list of sessions according to the search results.
+
+## Filter Sessions
+
+By default, the Transcript Explorer shows the **Global Filters** section at the top of the page.
+
+You can filter sessions by using the following options:
+
+- [Global Filters](#global-filters)
+- [Additional Local Filters](#additional-local-filters)
+
+To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner. 
+
+### Global Filters
+
+For more information, read the [Global Filter](global-filter.md) documentation.
+
+### Additional Local Filters
+
+You can use the Local Filters to refine your research.
+
+To open the **Local Filters** selection,
+click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
+
+| Filter              | Description                                                                                                                                                                                                                                                                                                                           |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
+| Source              | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> **Agent Messages** — messages sent by human agents.                                                                                                                  |
+| Goals               | Select from predefined goals to narrow down results according to specific objectives or targets.                                                                                                                                                                                                                                      |
+| Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
+| Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
+| Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
+| Message count: To   | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with more messages than this threshold will not be included in the results.                                                                                                   |
+
+### Exclude Filters
+
+When you toggle the **Negate** option, all filters except the selected one will be analyzed.
+For example, if you select the **Agent Messages** filter and **Negate**, all data except **Agent Messages** will be analyzed.
+
+### Reset Filters
+
+To reset all filters, at the top of the **Transcript Explorer** page, click the **Reset** button on the right side of the Global Filters.
+
+If the **Reset** button is not displayed,
+click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Transcript Explorer** page.
+
+## View Session Transcript
+
+Session transcripts are logged conversations between end users and agents. 
+The Transcript Explorer enables you to view session transcripts to analyze them for specific details. 
+To view a session transcript, select a session from the list on the **Transcript Explorer** page.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/fd64fcb-Transcript_Explorer_n2.svg" width="100%" />
-  <figcaption>Local filter "Source"</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/Transcript_Explorer_profile.png" width="100%" />
+  <figcaption>Session Transcript with Expert Mode</figcaption>
 </figure>
 
-- You can limit the results to a conversations containing a specific number of messages using "Message count" filters.
+### Session Transcript
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/message-count-filter-inputs.png" width="50%" />
-  <figcaption>Local filters "Message count"</figcaption>
-</figure>
+A session transcript shows all the individual messages
+exchanged between the end user and the agent during a conversation.
+When you select a session, the corresponding transcript will be displayed on the right-hand side of the page.
+You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
-- To limit the results to a conversations containing certain Step, see the [Contains Step](../insights/transcript-explorer.md#contains-step-filter) filter section.
+#### Expert mode
 
-- When global filter options and local filter options are set, enter a key phrase like "booking", "cancel", "schedule", "message" or "appointment" etc. and you will get a list of all messages that match your search criteria.
+Insights' Expert mode is equivalent to the Expert mode in the  [Interaction Panel](../ai/tools/interaction-panel/interaction-panel.md#expert-mode) documentation.
 
-- Transcript Explorer provides a sorting function for "Message count" and "Last message". 
-- Clicking on 'Message count' will sort the listed transcripts by ascending or descending order.
-- Clicking on "Last message" sorts the listed transcripts according to the newest or oldest entries.
+This mode provides additional information for conversation messages, including the triggered Intent and its score, the filled Slots, user connected and disconnected events, voice event payloads, xApp session details, and switching to a Flow related to this session.
 
-### Contains Step filter
+To activate Expert mode, do the following:
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../release-notes/4.49.md)
+1. Go to the Insights interface.
+2. From the left-side menu, select **Transcript Explorer**.
+3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
+4. At the top of the **Session Transcript** window, activate the **Expert mode** toggle.
 
-To further refine your search results to include only conversations that contain a specific step,
-click ![live-follow](../assets/icons/filter.svg) on the search panel and select a step from the list. 
+#### Playbooks
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/contains-step-filter-button.png" width="100%" />
-  <figcaption>List of Steps opened by the filter button (marked red)</figcaption>
-</figure>
+To create a Playbook of a transcript, do the following:
 
-### Reset local filters
+1. Go to the Insights interface.
+2. From the left-side menu, select **Transcript Explorer**.
+3. On the **Transcript Explorer** page, select a session from the list. The session transcript will be displayed in a separate window on the right side.
+4. In the upper-right corner of the **Session Transcript** window, click ![vertical ellipsis](../assets/icons/vertical-ellipsis.svg) to open a selection menu.
+5. Select one of the following options:
+    - **Create Playbook** — generate a Playbook to test your Flows.
+    - **Create Playbook with Assertions** — generate a Playbook and its Assertions, which are checks to ensure your Flows behaves as expected during testing.
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
+For more information, read the [Playbooks](../ai/resources/test/playbooks.md) documentation.
 
-You can reset local filters by clicking the "Reset" button. It will appear as soon as you have some filter with a non-default value.
+#### Open Message-related Flow
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/transcript-explorer-reset.png" width="50%" />
-  <figcaption>Reset button appeared after selecting Virtual Agent as an only source.</figcaption>
-</figure>
+To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration, the Transcript Explorer provides the context menu **Open Flow**.
 
-## Inspect conversation 
+To switch from the Transcript Explorer to the corresponding Flow in Cognigy.AI, do the following:
 
-- To inspect a specific transcript, click on a transcript conversation item in the list, and the transcript details will be displayed on the right-hand side of the Conversation page.
+1. Go to the Insights interface.
+2. From the left-side menu, select **Transcript Explorer**.
+3. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
+4. In the **Session Transcript** window, right-click a specific message and select **Open Flow**.
 
-- Use the scroll bar to navigate through the conversation. 
+The corresponding Flow in Cognigy.AI will be displayed.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/781cb26-Transcript_Explorer_n4.svg" width="100%" />
-  <figcaption>Transcript Explorer: selected transcript displayed for research on the right-hand side</figcaption>
-</figure>
+#### Navigate to Message Explorer via a Transcript Message
 
-When you click on the "profile" icon on the left top side of the Conversation page user's **conversation details** and the user **contact profile details** will be displayed. 
- 
-**Conversation details**:
+You can access the [Message Explorer](../insights/message-explorer.md) by selecting a message within the **Session Transcript** window.
+The Message Explorer shows you the previous and subsequent messages for the selected message.
 
-- Conversation-ID (unique)
-- First message (date and time)
-- Last message (date and time)
-- User messages count (numerical value)
-- Bot messages count (numerical value)
-- Agent messages count (numerical value)
-- Flow name (for example, 00 Main)
-- Rating (User feedback given in conversation: thumbs down icon: rating 0 to 4 / thumbs up icon: rating 5 to 10)
-- Comment (User can write a comment in a conversation which is displayed here)
+To switch from the selected transcript message to the Message Explorer, follow these steps:
 
+1. On the **Transcript Explorer** page, On the right side of the screen, the transcript will be displayed.
+2. On the **Transcript Explorer** page, select a session from the list. The session transcript will appear in a separate window on the right side of the page.
+3. In the **Session Transcript** window, right-click a specific message and select **Open in Message Explorer**.
 
-**Contact profile details**:
+The Message Explorer interface will be opened.
 
-- First Name
-- Last name
-- Email
-- Gender
-- Age
-- Birthday
-- Location 
-- Accepted GDPR (accepted General Data Protection Regulation)
-- Goals completed (all goals that were achieved in the session)
+### Session Transcript Details
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/76ad683-Transcript_Explorer_n5.svg" width="100%" />
-  <figcaption>Selected transcript with displayed customer profile data</figcaption>
-</figure>
+To get more session details, click ![user-menu](../assets/icons/user-menu.svg) in the upper-left corner of the **Session Transcript** window.
 
-### Expert mode
+The transcript details include the following sections:
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.15-blue.svg)]({{config.site_url}})
+- [Session Details](#session-details)
+- [Contact Pofile Details](#contact-profile-details)
 
-You can enable an "Expert Mode" by clicking a toggle on top of the transcript's panel. This will
-provide additional information to conversation messages (if any), such as:
+#### Session Details
 
-- What Intent was triggered and its score
-- What Slots were filled
+| Session Details             | Description                                                                                                                 |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Session ID                  | The unique identifier assigned to each session.                                                                             |
+| First Message               | The date and time when the first message was sent.                                                                          |
+| Last Message                | The date and time when the last message was sent.                                                                           |
+| User Message Count          | The total number of messages sent by the user.                                                                              |
+| Virtual Agent Message Count | The total number of messages sent by the virtual agent.                                                                     |
+| Agent Message Count         | The total number of messages sent by the human agent.                                                                       |
+| Flow Name                   | The name of the conversation Flow in your Agent.                                                                            |
+| Rating                      | The feedback received from the user in the conversation, displayed as a thumbs-up (5 to 10) or thumbs-down (0 to 4) rating. |
+| Comment                     | Any additional comments provided by the user along with their feedback.                                                     |
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/expert-mode.png" width="50%" />
-  <figcaption>Transcript with "Expert mode" enabled </figcaption>
-</figure>
+#### Contact Profile Details
 
-### Open Flow 
-To check your [Flow](../ai/resources/build/flows.md) or to improve the configuration,
-the Transcript Explorer provides the context menu **Open Flow** option
-when right-clicking on a specific message displayed on the Conversation page.
-Clicking the button leads you to the related Flow in Cognigy.AI.
+| Contact Profile Details | Description                                  |
+|-------------------------|----------------------------------------------|
+| First Name              | User's first name.                           |
+| Last name               | User's last name.                            |
+| Email                   | User's email address.                        |
+| Gender                  | User's gender.                               |
+| Age                     | User's age.                                  |
+| Birthday                | User's birthday.                             |
+| Location                | User's location.                             |
+| Accepted GDPR           | Accepted General Data Protection Regulation  |
+| Goals Completed         | All goals that were achieved in the session. |
 
-!!! note
-    The context menu "Open Flow" is not available on "drop off" steps or collapsed steps (steps with arrows). 
-    The "Open Flow" option is not available if there is no corresponding flow in Cognigy. AI or if the data comes from a snapshot.
-
-Using the "Search" field, you can enter keywords to find the messages in which these keywords were used in conversations.
-
-- Enter a keyword in the search field, for example, "appointment". All transcript conversations which include the keyword will now be displayed. 
-- Click on any transcript conversation in the list.
-- The clicked transcript conversation, containing the search string, will be displayed on the Conversation page. 
-The message that contains the search text has a gray background.
-  Also, the matching text within the message itself is highlighted yellow.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/5326ee3-Open_Flow_in_Transcript_Explorer_3.svg" width="100%" />
-  <figcaption>Highlighted keyword in a message and displayed context menu "Open Flow"</figcaption>
-</figure>
-
-
-## Navigating to Message Explorer
-<div class="divider"></div>
-With the usage of the Transcript Explorer, Cognigy offers you the possibility to switch directly to the Message Explorer after selecting a conversation, which can show you the previous message and the subsequent message for the selected message. This option supports a more detailed conversation analysis.
-
-To switch from the Transcript Explorer to the Message Explorer, proceed as follows:
-
-- Select a transcript message in the Transcript Explorer list. On the right side of the screen, the Conversation page appears and displays the conversation flow. 
-
-- Click now on an individual message to analyze the specific conversation situation.
-
-The Message Explorer will be started and displays the selected message with its previous message and the following message on the screen. 
 
 ## More Information 
 
-- [Message Explorer]({{config.site_url}}insights/message-explorer/)
-
+- [Message Explorer](../insights/message-explorer.md)
+- [Insights Glossary](../insights/glossary.md)
+- [Playbooks](../ai/resources/test/playbooks.md)
+- [Interaction Panel](../ai/tools/interaction-panel/interaction-panel.md)

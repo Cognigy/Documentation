@@ -6,88 +6,91 @@ hidden: false
 
 # Global Filters
 
-Cognigy Insights enables you to select available Endpoint data for analysis using global filters. Once you have changed a filter setting, the corresponding data will be considered for the analysis report in Insights. The Global Filter options are available in all applications running in Cognigy Insights, and filter settings have a global effect on all applications.
+Cognigy Insights enables you to select available Endpoint data for analysis using Global Filters.
+Once you have changed a filter setting, the corresponding data will be considered for the analysis report in Insights.
+The Global Filter settings are available in all applications, such as dashboards and explorers, and they affect all applications.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/Insights_overview_dashboard.png" width="100%" />
-  <figcaption>Insights - Global Filter</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/global-filters.png" width="100%" />
+  <figcaption>Global Filters</figcaption>
 </figure>
 
 The following global filters are available:
 
-- [Timeframe](#timeframe)
+- [Time Span](#time-span)
 - [Endpoints](#endpoints)
-- [Snapshot](#snapshot)
-- [Message Rating](#message-rating)
+- [Snapshots](#snapshots)
+- [Locales](#locales)
 
-## Timeframe
+## Time Span
 
 To analyze a defined range of Endpoint data, you can either set a preset time frame or choose specific dates using a date picker.
 
 Available preset time frames include:
 
-- Last 7 days
-- Last 30 days
-- Last 365 days
-- Today
-- This month
-- This year
-- Custom period, providing date and time picker
+| Time Span     | Description                                                             |
+|---------------|-------------------------------------------------------------------------|
+| Last 7 days   | Shows data from the past week.                                          |
+| Last 30 days  | Shows data from the last 30 days.                                       |
+| Last 365 days | Shows data from the previous year. The maximum period for data storage. |
+| Today         | Shows data from from the current day.                                   |
+| This Month    | Shows data from  the current month.                                     |
+| This Year     | Shows data from the current calendar year.                              |
+| Custom Period | Shows data from a user-defined range of dates.                          |
 
-If you have changed a time frame, click **Apply** to confirm and activate the selected time frame.
+If you have changed a time frame, click **Apply** to activate the selected time frame.
 
-### Narrowing Results to Minutes
+### Select a Custom Time Period
 
 You can select hours for the chosen time frame. This might be helpful if you need to narrow the result to a more precise range of times.
 
-To define a date and times, such as hours and minutes, proceed as follows:
+To define a custom time frame, proceed as follows:
 
-1. Click the global time frame filter in the top right corner next to the user menu to open the list of time frames.
-2. Click **Custom Period** for setting an individual time frame.
-3. Enable the **Select time** option using the slide switch.
-4. Click **Start Date** to open a date picker calendar.
-5. Click ![date-picker](../assets/icons/date-picker.svg) and select a start date.
-6. Click ![time-picker](../assets/icons/time-picker.svg)and move the clock hand successively to the required hour and minute in the 24h circle.
-7. Select **End date** and repeat steps 5 and 6. 
-8. Click **Apply** to activate the selected filter settings.
+1. Open the Insights interface.
+2. At the top of the Insights page, go to the **Global Filters** section.
+3. In the **Time Span** filter, select **Custom Period**. 
+4. Activate the **Select time** option to include hours in your selection. 
+5. Click **Start Date** to open a date picker calendar. 
+6. Select both the date and time by adjusting the clock hand to your preferred hour within the 24-hour cycle. 
+7. Select **End Date** to open the date picker calendar once more. 
+8. Similarly, select the end date and time that you desire. 
+9. Click **Apply** to activate the selected filter settings.
 
 ## Endpoints
 
-Endpoints ensure that channel-specific input and output (images, galleries, voice) are converted to the standardized Input object. This way, a Cognigy Flow needs to be developed only once, after which it can be deployed to many channels by configuring Endpoints. Examples of Endpoints include Webchat, Voice Gateway, and Microsoft Teams.
+A connector within Cognigy.AI
+that enables seamless interaction between Cognigy virtual agents and external systems or platforms. Examples of Endpoints include Webchat, Voice Gateway, and Microsoft Teams.
 For more information, read the [Endpoints](../ai/endpoints/overview.md) documentation.
 
 You can select one or more Endpoints to be analyzed.
 
 To use the **Endpoints** filter, proceed as follows:
 
-1. In the top-right corner, click ![insight-filter-blue](../assets/icons/insight-filter-blue.svg) to open the sidebar of global filters.
-2. Click **Endpoints** to open the settings drop-down menu.
-3. Choose one of the following filter settings:
-     - **Interaction Panel** — if you have tested the virtual agent in your Cognigy.AI project using the Interaction Panel, you can fetch these data for analysis in Insights, using this filter. For more information, read the [Interaction Panel](../ai/resources/agents/agents.md#interaction-panel) documentation.
-     - **Endpoints** — select one of the available Endpoints you want to analyze. 
-     - **Type to search** field — enter the name of an Endpoint, click ![filter](../assets/icons/filter.svg) to find the selected Endpoint.
-     - **Negate** — use the slide switch to activate and select the Endpoints you want to exclude for your analysis. All but the selected Endpoints will be considered for analysis.  
-4. Click **Apply** to activate the filter settings. The analytics data will be displayed. 
+1. Open the Insights interface.
+2. At the top of the Insights page, go to the **Global Filters** section. 
+3. Click **Endpoints**.
+4. Use the **Type to search** field to find a specific Endpoint or select Endpoints from the list.
+5. _(Optional)_ Activate the **Negate** option to exclude the Endpoints you don't want to include in your analysis. All Endpoints except the selected ones will be considered for analysis.
+6. _(Optional)_ To view only selected options, click ![filter](../assets/icons/filter.svg) in the **Type to search** field.
+7. _(Optional)_ To reset the search results, click **x** in the **Type to search** filed. 
+8. Click **Apply** to activate the filter settings. The analytics data will be displayed.
 
-After changing the settings, click **Apply** to activate the changed filter settings.
+## Snapshots
 
-## Snapshot
-
-A Snapshot is an exported Agent and includes required resources.
+A snapshot is an immutable form of a virtual agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more.
 For more information, read the [Snapshots](../ai/resources/deploy/snapshots.md) documentation.
 
 To use the **Snapshot** filter, proceed as follows:
 
-1. In the top-right corner, click ![insight-filter-blue](../assets/icons/insight-filter-blue.svg)  to open the sidebar menu of global filters.
-2. Select **Snapshot**.
-3. Select one of the following filter settings:
-     - **Snapshots** — select one of the available Snapshots you want to analyze. 
-     - **Type to search** field — enter the name of a Snapshot, click ![filter](../assets/icons/filter.svg) to find the selected Snapshot.
-     - **None** — select this option to obtain analysis data of all available endpoint data, except for Snapshot data.
-     - **Negate** — use the slide switch to activate and select the Snapshots you want to exclude for your analysis. All but the selected Snapshots will be considered for analysis.  
-4. Click **Apply** to activate the selected filter settings. The analytics data will be displayed. 
-
-After changing the settings, click **Apply** to activate the changed filter settings.
+1. Open the Insights interface.
+2. At the top of the Insights page, go to the **Global Filters** section.
+3. Under **Snapshots**, open the list by clicking on it.
+4. Use the **Type to search** field to find a specific Snapshot or select Snapshots from the list.
+5. *(Optional)* Activate the **Negate** option to exclude the Snapshots you don't want to include in your analysis. All Snapshots except the selected ones will be considered for analysis.
+6.  *(Optional)* Activate the **None** option to obtain analysis data of all available endpoint data, except for Snapshot data.
+7. *(Optional)* To view only selected options, click ![filter](../assets/icons/filter.svg) in the **Type to search** field.
+8. *(Optional)* To reset the search results, click **x** in the **Type to search** field.
+9. Click **Apply** to activate the selected filter settings. The analytics data will be displayed.
 
 ## Locales
 
@@ -96,42 +99,24 @@ For more information, read the [Localization](../ai/resources/manage/localizatio
 
 To use the **Locales** filter, proceed as follows:
 
-1. In the upper-right corner, click ![insight-filter-blue](../assets/icons/insight-filter-blue.svg) to open the sidebar menu of global filters.
-2. Select **Locales**. 
-3. Choose one of the following filter settings:
-     - **Locales** — select one of the available Locales you want to analyze. 
-     - **Type to search** field — enter the language code of a Locale, click ![filter](../assets/icons/filter.svg) to find the selected Locale.
-     - **Negate** — use the slide switch to activate and select the Locales you want to exclude for your analysis. All but the selected Locales will be considered for analysis.  
-4. Click **Apply** to activate the filter settings. The analytics data will be displayed. 
+1. Open the Insights interface.
+2. At the top of the Insights page, navigate to the **Global Filters** section.
+3. Under **Locales**, open the list by clicking on it.
+4. Use the **Type to search** field to find a specific Locale or select Locales from the list.
+5. _(Optional)_ Activate the **Negate** option to exclude the Locales you don't want to include in your analysis. All Locales except the selected ones will be considered for analysis.
+6. _(Optional)_ To view only selected options, click ![filter](../assets/icons/filter.svg) in the **Type to search** field.
+7. _(Optional)_ To reset the search results, click **x** in the **Type to search** field.
+8. Click **Apply** to activate the filter settings. The analytics data will be displayed.
 
-After changing the settings, click **Apply** to activate the changed filter settings.
+## Share Insights URL with Filters
 
-## Message Rating
+When you share a specific URL with global filters applied,
+your team members will see the same data and filters as you have.
 
-This filter allows you to select analytics data based on the last user ratings given in a session. By default, all data is shown, regardless of whether user feedback is given or missing.
-For more information, read the [Request Rating Node](../ai/flow-nodes/other-nodes/request-rating.md) documentation.
+More benefits:
 
-| Settings | Description                                                                 |
-|----------|-----------------------------------------------------------------------------|
-| All      | Default setting. All available rating data will be considered for analysis. |
-| Positive | Only positive rating data will be considered for analysis.                  |
-| None     | No rating data will be considered for analysis.                             |
-| Negative | Only negative rating data will be considered for analysis.                  |
-| Negate   | When enabled, all filter options but the selected are active.               |
-
-After changing the settings, click **Apply** to activate the updated filter settings, and the corresponding analytics data will be displayed.
-
-## Sharing an Application URL
-
-Cognigy helps analyze customer conversations.
-Easily share insights by copying and distributing URLs.
-When you share a specific URL with global filters applied, your team members will see the same data and filters as you.
-This approach ensures consistency across different sessions and scenarios.
-
-Using shareable URLs provides the following benefits:
-
-- You can reload any Insights Page, and it will restore the global filters you previously selected.
-- When reloading an open Transcript in the Transcript Explorer, you will land on the same page with the transcript open.
+- You can reload any Insights page, and it will restore the Global Filters you previously selected.
+- When reloading an open transcript in the Transcript Explorer, you will land on the same page with the transcript open.
 - Reloading the Message Explorer with an applied search result will take you back to the same point as before reloading.
 - Reloading on the Message Explorer while a message is selected will return you to the same state as before reloading.
 
