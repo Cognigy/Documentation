@@ -54,7 +54,7 @@ To enable this mode, go to the [Storage & Streaming Options](#storage--streaming
 
 This is either the prompt for completions or the system message for chat.
 
-Additionally, you can inject the recent conversation into the **Prompt** field by using these tags:
+Additionally, you can inject the recent conversation into the **Instruction (System Message/Prompt)** field by using these tags:
 
 - `@cognigyRecentConversation` — the tag is replaced with a string that can contain up to 10 recent virtual agent and 10 user outputs, for example:
    ```text
@@ -70,7 +70,7 @@ Additionally, you can inject the recent conversation into the **Prompt** field b
     User: userOutput2
     ```
 
-  If you want to access only the last user input, specify `Text` token in the **Prompt** field.
+  If you want to access only the last user input, specify `Text` token in the **Instruction (System Message/Prompt)** field.
 
 
 When adding a tag, ensure that you leave a line break before and after the tag, for example:
@@ -103,7 +103,7 @@ Examples:
 | Stops             | Text      | Up to 4 sequences where the API will stop generating further tokens. The returned text will not contain the stop sequence.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Timeout           | Number    | The maximum amount of milliseconds to wait for a response from the Generative AI Provider.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Response Format   | Select    | Choose the format for the model's output result. You can select one of the following options:<br>- **Default Response Format** — the model returns messages in text format. This option is selected by default.<br>- **JSON Object** — the model returns messages in JSON format. To use this option, instruct the model to generate JSON via a system or user message in the **Instruction (System Message/Prompt)** field. For example, `Take the user message and return it as JSON in the following format {"message": "THE_MESSAGE"}`. Note that this parameter may not be supported by all LLMs. For more information, refer to the LLM provider's API documentation. |
-| Seed              | Number    | Use this parameter for consistent output when referring to the same LLM Prompt Node multiple times. Specify any integer number, for example, `123`. <br>Note that in OpenAI, this parameter is in [Beta](https://platform.openai.com/docs/api-reference/chat/create#chat-create-seed) and is supported only by [certain models](https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter).                                                                                                                                                                                                                                                         |
+| Seed              | Number    | Use this parameter for consistent output when referring to the same LLM Prompt Node multiple times. Specify any integer number, for example, `123`. The number in the Seed field and the prompt in the **Instruction (System Message/Prompt)** field should remain unchanged during subsequent references to the Node.<br>Note that in OpenAI, this parameter is in [Beta](https://platform.openai.com/docs/api-reference/chat/create#chat-create-seed) and is supported only by [certain models](https://cookbook.openai.com/examples/reproducible_outputs_with_the_seed_parameter).                                                                                       |
 
 ### Storage & Streaming Options
 
