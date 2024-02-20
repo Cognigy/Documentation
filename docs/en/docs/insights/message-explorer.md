@@ -8,7 +8,7 @@ hidden: false
 
 The Message Explorer is a tool in Cognigy Insights that helps you search for specific customer or virtual agent messages within a conversation. It shows messages before and after the selected one. It complements the [Transcript Explorer](transcript-explorer.md), which provides more session-related details and user profile data.
 
-The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It answers questions like "How often do customers react similarly?" and "What triggers specific types of responses?"
+The Message Explorer shows the entire conversation as context around a specific message. This helps you understand user reactions and motivations. It can answer questions such as "What triggers specific types of responses?" and "How often do customers react similarly?"
 
 To open the Message Explorer interface, use one of the following options:
 
