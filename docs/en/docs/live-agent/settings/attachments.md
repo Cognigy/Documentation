@@ -29,9 +29,11 @@ To upload a file in a conversation within Live Agent, follow these steps:
 
 The file will be sent to the user and will appear in the chat. The user can download this attachment.
 
-## Request an Attachment
+## Upload an Attachment as an End User
 
 End users can send attachments to human agents by using the **Add attachments** icon in the chat if you set up a [Storage File](../../ai/endpoints/file-storage.md) provider in the Endpoint Settings.
+
+## Request an Attachment with the Plugin
 
 If you are using a [Webchat](../../ai/endpoints/webchat/webchat.md) Endpoint with Live Agent, in addition to the standard Attach file feature, human agents can request an attachment from a user. To enable this functionality, you need to add the [File Upload plugin](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) to the Webchat Endpoint to upload files.
 
