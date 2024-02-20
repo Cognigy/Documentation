@@ -30,7 +30,7 @@ Charts display data based on the global filter settings.
 
 Indicates the total number of currently active user sessions in the last 15 minutes. This widget updates in a regular interval of 30 seconds.
 
-### Sessions Count
+### Total Sessions
 
 Indicates the total number of sessions.
 
