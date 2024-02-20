@@ -12,6 +12,8 @@ hidden: false
 
 ## Description
 
+<div class="divider"></div>
+
 Cognigy is committed to providing you with the tools you need to improve the customer experience of your customers.
 
 Cognigy.AI has integrated analytics reporting functionalities, as well as an OData,
@@ -25,8 +27,6 @@ called **Cognigy Insights**, which entirely replaces the static analytics dashbo
 As of release v4.10, Cognigy provides a completely new designed Analytics solution for Insights.
 
 ## Dashboard
-
-<div class="divider"></div>
 
 Cognigy Insights is a new application that replaces the old and static analytics dashboard. Insights keeps track of the data of your customers while they interact with your virtual agents and makes that data available on a variety of new dashboards and new tools.
 
@@ -66,7 +66,7 @@ The global filters will be visible no matter where you navigate. Once you have c
 
 ## User menu
 
-You can find the [user menu](../ai/tools/user-menu/user-menu.md) in the upper right corner of the screen.
+You can find the [user menu](../ai/tools/user-menu/user-menu.md) in the upper-right corner of the screen.
 
 ## Main menu
 
@@ -81,10 +81,10 @@ You can always go back to Cognigy.AI and your virtual Agent also by clicking the
 
 
 !!! tip "Insights product introduction"
-    To advance your understanding you can see our live presentation of Cognigy Insights here:
-
-    - [Insights product introduction / German](https://youtu.be/kCkUrHM9dQo)
-    - [Insights product introduction / English](https://youtu.be/hYB2iQ_dT5g)
+    To advance your understanding you can see our live presentation of Cognigy Insights here: 
+    
+    - [Insights product introduction (English)](https://youtu.be/hYB2iQ_dT5g)
+    - [Insights product introduction (German)](https://youtu.be/kCkUrHM9dQo)
 
 ## More Information
 
