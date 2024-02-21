@@ -6,7 +6,7 @@ hidden: false
 
 # Intent Upload and Download Formats
 
-You can upload and download intents from Cognigy.AI. Import them quickly, edit using your favorite spreadsheet or developer tools, and move them between Flows.
+You can upload and download Intents from Cognigy.AI. Import them quickly, edit using your favorite spreadsheet or developer tools, and move them between Flows.
 
 The following formats are supported:
 
@@ -21,11 +21,11 @@ Your CSV should be formatted as follows:
 - We automatically detect various CSV formats. If you encounter any issues, use UTF-8 encoding, comma (`,`) as the delimiter, double quotes (`"`) as your quote character, and newline (`\n`) as your line terminator.
 - You are required to fill in the following columns:
 
-| Name	                            | Property type	                                                                                                                       | Value                                                                                                 |
-|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| The intent name of type `string` | The type of property corresponding to Cognigy intent properties: `exampleSentence`, `defaultReply`, `confirmationSentence`, `rules`. | The value of the field. For instance, an example sentence utterance `I want pizza`, of type `string`. |
+| Name	                            | Property type	                                                                                                                         | Value                                                                                                 |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| The Intent name of type `string` | The property type corresponds to the following Cognigy properties: `exampleSentence`, `defaultReply`, `confirmationSentence`, `rules`. | The value of the field. For instance, an example sentence utterance `I want pizza`, of type `string`. |
 
-CSV file example:
+CSV format example:
 
 ```txt
 |--------------|----------------------|------------------------------------------------|
@@ -44,8 +44,38 @@ Keep Regional Settings Consistent on your Operating System. Regional format sett
 
 ## JSON
 
-The Cognigy Intent JSON format specifies your Intents completely.
-For more details, refer to the [Cognigy API](https://api-trial.cognigy.ai/openapi#post-/v2.0).
+JSON format serves as a comprehensive specification for defining Intents within Cognigy.AI.
+
+JSON format example:
+
+```json
+[
+    {
+        "name": "Pizza",
+        "exampleSentences": [
+            "I'd like to order many pizzas",
+            "Do you have any meat pizza options?",
+            "I'm interested in trying a vegan pizza",
+            "Could I have a cheese pizza, please?",
+            "I'm craving pizza right now"
+        ],
+        "rules": [],
+        "tags": [],
+        "condition": "",
+        "disambiguationSentence": "",
+        "childFeatures": false,
+        "biasTowardsParentOrChildIntents": "parents",
+        "parent": "",
+        "defaultReply": {},
+        "entryPoint": "",
+        "isRejectIntent": false,
+        "isDisabled": false,
+        "overrideIntentDefaultRepliesAsExamples": ""
+    }
+]
+```
+
+The provided JSON example illustrates the structure and content of a Cognigy Intent, including details such as Intent name (`Pizza`), example sentences, rules, tags, disambiguation sentence, default reply, and other configurations.
 
 ## More Information
 
