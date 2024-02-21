@@ -46,6 +46,8 @@ Keep Regional Settings Consistent on your Operating System. Regional format sett
 
 JSON format serves as a comprehensive specification for defining Intents within Cognigy.AI.
 
+The provided JSON example illustrates the structure and content of a Cognigy Intent, including details such as Intent name (`Pizza`), example sentences, rules, tags, disambiguation sentence, default reply, and other configurations.
+
 JSON format example:
 
 ```json
@@ -75,7 +77,6 @@ JSON format example:
 ]
 ```
 
-The provided JSON example illustrates the structure and content of a Cognigy Intent, including details such as Intent name (`Pizza`), example sentences, rules, tags, disambiguation sentence, default reply, and other configurations.
 
 ## More Information
 
