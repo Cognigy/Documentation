@@ -18,24 +18,25 @@ The following formats are supported:
 Your CSV should be formatted as follows:
 
 - No header.
-- We auto detect various CSV formats. If you encounter any problems, use UTF-8 encoding, comma (`,`) as the delimiter and double quotes (`"`) as your quote character, and newline (`\n`) as your line terminator. 
+- We automatically detect various CSV formats. If you encounter any issues, use UTF-8 encoding, comma (`,`) as the delimiter, double quotes (`"`) as your quote character, and newline (`\n`) as your line terminator.
 - You are required to fill in the following columns:
 
 | Name	                            | Property type	                                                                                                                       | Value                                                                                                 |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | The intent name of type `string` | The type of property corresponding to Cognigy intent properties: `exampleSentence`, `defaultReply`, `confirmationSentence`, `rules`. | The value of the field. For instance, an example sentence utterance `I want pizza`, of type `string`. |
 
-Example:
+CSV file example:
 
-| Name	        | Property type	       | Value                                    |
-|--------------|----------------------|------------------------------------------|
-| rejectIntent | exampleSentence      | this sentence is invalid, and that is ok |
-| Intent1      | exampleSentence      | I want to go home                        |
-| Intent1      | defaultReply         | Ok go home then                          |
-| Intent1      | defaultReply         | Ok bye then                              |
-| Intent1      | confirmationSentence | Are you sure you want to go home?        |
-| Intent2      | exampleSentence      | I want to order a pizza with cheese      |
-| Intent2      | exampleSentence      | I am hungry                              |
+```txt
+|--------------|----------------------|------------------------------------------------|
+| rejectIntent | exampleSentence      | This request cannot be fulfilled at this time. |
+| Intent1      | exampleSentence      | Could you please assist me with this issue?    |
+| Intent1      | defaultReply         | Your request has been successfully processed.  |
+| Intent1      | defaultReply         | Thank you for your inquiry.                    |
+| Intent1      | confirmationSentence | Are you sure you want to proceed?              |
+| Intent2      | exampleSentence      | I'd like to make a reservation, please.        |
+| Intent2      | exampleSentence      | I need assistance with my account.             |
+```
 
 ### Consistent OS Regional Settings
 
