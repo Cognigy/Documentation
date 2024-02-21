@@ -11,6 +11,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 By using the HTTP Request Node, you can perform an HTTP request to a specific resource from within a Flow.
 

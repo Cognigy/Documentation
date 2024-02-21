@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The Merge Profile Node is used to merge the profile of the contact who hits the node with another contact profile. This is useful in an omnichannel environment, where a contact can talk to your Flow on different platforms, but wants to be recognized as the same person on all platforms.
 

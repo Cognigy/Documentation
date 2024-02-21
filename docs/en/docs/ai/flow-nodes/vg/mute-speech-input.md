@@ -16,7 +16,7 @@ hidden: false
 
 ## Description
 <div class="divider"></div>
-
+  
 This Node controls when speech and DTMF user inputs can be collected in your Flow.
 It prevents speech and DTMF interruptions in specific cases, such as [xApp Flows](https://docs.cognigy.com/ai/xApp/overview/), allowing for a smoother conversation experience.
 By enabling or disabling settings in this Node as needed,

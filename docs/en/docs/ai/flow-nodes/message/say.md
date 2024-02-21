@@ -12,6 +12,7 @@ hidden: false
 
 ## Description
 <div class="divider"></div>
+
 A Say Node is used to send a message to the user.
 
 Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.

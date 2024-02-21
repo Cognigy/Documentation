@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Play URL Node lets you retrieve a WAV file from a URL location and play it back to the user.
 
 | Parameter               | Type          | Description                                                                                         |

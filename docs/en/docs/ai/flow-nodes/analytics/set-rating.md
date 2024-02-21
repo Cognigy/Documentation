@@ -12,6 +12,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 Cognigy introduces as of release Cognigy.AI (4.9.0) a new Flow Node **Set Rating** which extends the analytical capabilities of Cognigy.AI together with the [Insights]({{config.site_url}}insights/cognigy-insights/) application. 
 

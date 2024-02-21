@@ -11,6 +11,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node provides the ability to selectively overwrite the Analytics data that will be stored in [Insights Analytics](../../../insights/cognigy-insights.md).
 

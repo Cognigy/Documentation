@@ -13,6 +13,7 @@ hidden: false
 
 ## Description
 <div class="divider"></div>
+
 The Set Session Params Node configures the AudioCodes Session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
 
 To learn more about session and activity parameters, read [Cognigy Help Center](https://support.cognigy.com/hc/en-us/articles/360017413959).

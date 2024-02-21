@@ -13,6 +13,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.

@@ -13,6 +13,7 @@ hidden: false
 
 ## Description
 <div class="divider"></div>
+
 The Set Session Config Node configures the Voice Gateway session. All parameters set here are valid for the remainder of the session unless overwritten, either directly or by activity parameters.
 
 !!! note "This Node supports Activity Parameters"

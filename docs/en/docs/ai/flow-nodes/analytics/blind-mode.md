@@ -10,6 +10,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 Masking data is important for protecting the privacy of users and their sensitive information. In Cognigy.AI, user inputs and responses are logged and analyzed for training. However, these logs can contain personally identifiable information, such as names, addresses, or other sensitive data.
 

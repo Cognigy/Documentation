@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Hang Up Node will instruct Voice Gateway to end the call.
 
 | Parameter          | Type | Description                                      |

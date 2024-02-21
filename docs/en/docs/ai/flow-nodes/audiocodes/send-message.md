@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Send Message Node sends a text (optionally with SSML) to AudioCodes, which then turns this text into speech (TTS) and outputs it to the caller.
 
 | Parameter               | Type                    | Description                                                                                                |

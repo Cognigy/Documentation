@@ -14,6 +14,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The LLM Prompt Node lets you use prompts with different LLM models to generate text and/or structured content.
 

@@ -11,6 +11,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 Closes the handover conversation in the handover provider, such as Live Agent. If turned off, the user will only be returned to the virtual agent.
 

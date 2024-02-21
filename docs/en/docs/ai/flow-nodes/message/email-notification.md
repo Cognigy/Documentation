@@ -12,6 +12,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The Email Notification Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time. 
 

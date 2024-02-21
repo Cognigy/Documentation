@@ -13,6 +13,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node performs sentiment analysis on the most recent input and provides insights into the emotional tone
 (positive, negative, or neutral) of the last user inputs.

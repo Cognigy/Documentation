@@ -11,6 +11,7 @@ hidden: true
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node creates a widget in the AI Copilot workspace to securely request an end user's credit card information.
 Once the SecureForms widget is integrated into the workspace,

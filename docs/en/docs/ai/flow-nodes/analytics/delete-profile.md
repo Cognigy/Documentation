@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node is used to **delete** a specific contact's profile in case a contact requests it.
 

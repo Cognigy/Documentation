@@ -11,6 +11,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 A **Trigger Function** is used to execute a [Function](../../resources/build/functions.md).
 

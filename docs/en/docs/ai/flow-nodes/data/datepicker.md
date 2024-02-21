@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The Datepicker Node renders a **visual datepicker** to the user. It comes with many configurable options that are listed below.
 

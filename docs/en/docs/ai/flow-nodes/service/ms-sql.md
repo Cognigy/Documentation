@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The SQL Node lets you run queries, transactions or stored procedures on MS-SQL Server.
 

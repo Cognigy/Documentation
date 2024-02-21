@@ -7,6 +7,7 @@
 
 ## Description
 <div class="divider"></div>
+
 In a code node you're able to use a selection of predefined NPM modules. 
 On this page you'll find all the necessary information to run these modules in a code node.
 

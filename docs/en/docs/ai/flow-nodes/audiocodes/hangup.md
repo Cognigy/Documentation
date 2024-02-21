@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Hangup Node will instruct AudioCodes to end the call.
 
 | Parameter | Type          | Description                                              |

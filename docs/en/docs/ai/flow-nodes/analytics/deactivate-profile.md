@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This Node is used to deactivate a specific contact profile in case a contact requests it. This node has one parameter, as it will deactivate the profile of the contact that hits the Node and could also delete the stored profile data if required.
 

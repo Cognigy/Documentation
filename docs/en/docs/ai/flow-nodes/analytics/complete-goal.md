@@ -10,6 +10,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The Complete Goal Node will set a specific goal as completed when the contact hits the Node.
 

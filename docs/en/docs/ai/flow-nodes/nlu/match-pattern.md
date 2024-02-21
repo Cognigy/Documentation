@@ -10,6 +10,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The Match Pattern Node enables a user to find patterns in text and expose them in the [Input Object](../../tools/interaction-panel/input.md).
 

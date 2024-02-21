@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Send Meta Data Node will send meta data via SIP INFO messages to the connected SIP trunk.
 
 | Parameter | Type | Description                                                   |

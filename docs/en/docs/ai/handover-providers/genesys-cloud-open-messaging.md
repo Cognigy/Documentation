@@ -12,9 +12,7 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="80%" />
 </figure>
 
-## Description
-
-<div class="divider"></div>
+<div class="divider"></div><div class="divider"></div>
 
 Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 

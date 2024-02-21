@@ -12,6 +12,7 @@
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 The Clean Text Node enables a user to clean a provided text using the Text Cleaner class, which exposes various functions for cleaning text.
 

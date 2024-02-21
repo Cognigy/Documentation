@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The DTMF Node will play the DTMF digits to the caller.
 
 | Parameter       | Type   | Description                           |

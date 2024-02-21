@@ -11,6 +11,7 @@ hidden: false
 </figure>
 
 ## Description
+<div class="divider"></div>
 
 This node detects and handles user inactivity, freeing up capacity for the human agent team. To configure this node, specify the time in minutes during which the user can be inactive.
 

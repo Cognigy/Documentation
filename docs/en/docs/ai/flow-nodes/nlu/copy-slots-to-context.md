@@ -11,6 +11,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Copy Slots to Context Node is used to store a found Slot in a specific place in the Context.
 
 | Parameter | Type          | Description                                                                                                                                                                                                                                     |

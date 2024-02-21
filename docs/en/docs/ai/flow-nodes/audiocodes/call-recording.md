@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Call Recording Node controls the voice recording capabilities of the conversation.
 
 Recording is done by the SBC (SRC) using the SIPRec protocol and functioning as the Session Recording Client (SRC). The session recording server (SRS) can be for example AudioCodes SmartTAP recording solution or any other SRS.

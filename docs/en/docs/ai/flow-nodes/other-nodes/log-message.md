@@ -11,6 +11,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Log Message Node writes a message into the [Agent Logs]({{config.site_url}}ai/resources/test/logs/);
 
 | Parameter | Type          | Description                                                      |

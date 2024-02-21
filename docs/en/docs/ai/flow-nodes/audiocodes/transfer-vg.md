@@ -12,6 +12,7 @@
 
 ## Description
 <div class="divider"></div>
+
 The Transfer Node lets you pass an active call to a tel or sip target.
 
 | Parameter            | Type          | Description                                                                                                                     |
