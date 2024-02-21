@@ -64,6 +64,9 @@ Even though each Intent can have up to 2000 example sentences, we recommend a mi
 
 When entering the example sentences you can use the **TAB** or **ENTER** key to go to the next NLU example sentence field.
 
+!!! note "Avoid punctuation marks in example sentences"
+    Using punctuation marks in example sentences affects recognition accuracy.
+
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/f97faca-exampleSentences.PNG" width="100%" />
   <figcaption>Machine Learning Intents: Example Sentences</figcaption>
