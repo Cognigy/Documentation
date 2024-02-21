@@ -13,12 +13,12 @@ We currently support two formats
 
 Your CSV should be formatted as follows
 
-* No header
-* We auto detect various CSV formats, if you have any issues use UTF-8 encoding, comma (`,`) as the delimiter  and double quotes ( `"`) as your quote character and newline (`\n`) as your line terminator
-* You will need to populate the following three columns:
+- No header
+- We auto detect various CSV formats, if you have any issues use UTF-8 encoding, comma (`,`) as the delimiter and double quotes ( `"`) as your quote character and newline (`\n`) as your line terminator
+- You will need to populate the following three columns:
 
-| Name	                             | Property type	                                                                                                                         | Value                                                                                        |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+| Name	                             | Property type	                                        | Value                                      |
+|------------------------------------|--------------------------------------------------------|--------------------------------------------|
 | The intent name of type *string*	 | The type of property, corresponding to Cognigy intent properties<br/>*"exampleSentence" "defaultReply" "confirmationSentence" "rules"* | The value of the field, e.g., an example sentence utterance "I want pizza", of type *string* |
 
 To illustrate:
@@ -33,16 +33,20 @@ To illustrate:
 | Intent2      | exampleSentence      | I want to order a pizza with cheese      |
 | Intent2      | exampleSentence      | I am hungry                              |
 
+## Example of Regional Settings: Windows Customize Format
+
+Regional format settings in your operating system influence the delimiter in the CSV file. Make sure that the regional settings match the standard settings. Changes can break a file and cause an upload failure.
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai\nlu\images\customize-format-eng.png" width="100%" />
+  <figcaption>Windows operating system: Customize Format example for the English "Europe" region</figcaption>
+</figure>
+
+<figure>
+  <img class="image-center" src="{{config.site_url}}ai\nlu\images\customize-format-ger.png" width="100%" />
+  <figcaption>Windows operating system: Customize Format example for German "Germany" region</figcaption>
+</figure>
+
 ## JSON
 
 The Cognigy Intent JSON format specifies your intents completely. For more details refer to our API documentation [here](https://api-trial.cognigy.ai/openapi#post-/v2.0).
-
-## Example of Regional Settings: Windows Customize Format
-
-!!! note
-    Regional settings of your operating system influence the delimiter. This change can break a file and cause an upload failure.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai\nlu\images\customize-format.png" width="100%" />
-  <figcaption>Windows operating systems: Customize Format</figcaption>
-</figure>
