@@ -644,7 +644,7 @@ nav:
       - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
       - voicegateway/references/sip-trunk-providers.md
-    - VG Supported Verbs/Hooks
+    - VG Supported Commands:
       - voicegateway/references/verbs-hooks/overview.md
       - voicegateway/references/verbs-hooks/config.md
       - voicegateway/references/verbs-hooks/say.md
@@ -656,6 +656,7 @@ nav:
       - voicegateway/references/verbs-hooks/dtmf.md
       - voicegateway/references/verbs-hooks/refer.md
       - voicegateway/references/verbs-hooks/transcribe.md
+      - voicegateway/references/verbs-hooks/amd.md
   - Glossary:
     - voicegateway/glossary.md
   - Release Notes:
