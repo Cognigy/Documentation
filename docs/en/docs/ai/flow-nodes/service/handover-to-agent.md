@@ -125,12 +125,6 @@ For more information, read the [Salesforce Handover](../../handover-providers/sa
 
 ### Genesys Settings
 
-You need to have an account in [Genesys Cloud](https://login.genesys.pure.cloud/).
-
-#### Configure Handover Settings
-
-In the **Handover to Agent** Node, configure the following settings:
-
 | Parameter             | Description                                                                             | 
 |-----------------------|-----------------------------------------------------------------------------------------|
 | Language              | Specify a language for the conversation. For example, `english`, `spanish`, `german`    |
