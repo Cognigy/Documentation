@@ -155,7 +155,7 @@ To view step operations, right-click the selected Step on the Step Explorer page
 Let's
 consider an example
 in which Nodes are annotated in a Flow where users select a product and payment method and make an order.
-In the image below, it's evident that out of all users, only one completed the order.
+In the image below, it's evident that out of all users, only 1 completed the order.
 
 The following steps are presented:
 
@@ -175,7 +175,7 @@ The following steps are presented:
 
 Let's consider an example in which Nodes and Intents are annotated in a Flow where users select a product and payment method and make an order.
 
-In the image below, it's evident that out of all users, only one completed the order.
+In the image below, it's evident that out of all users, only 2 completed the order.
 
 1. **Greetings**. All 5 users successfully completed the first step, resulting in a 100% completion rate.
 2. **Product Selection**:
