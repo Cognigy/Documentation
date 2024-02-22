@@ -143,7 +143,7 @@ To view step operations, right-click the selected Step on the Step Explorer page
 | Set as Ending Step                    | Places the selected step at the end of the path.                                                                                                                                                                                                                                                                                                            |
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-menu.png" width="100%" />
   <figcaption>Step Explorer Operations</figcaption>
 </figure>
 
