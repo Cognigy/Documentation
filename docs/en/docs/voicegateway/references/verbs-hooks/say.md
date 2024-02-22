@@ -19,6 +19,7 @@ The say command is used to send synthesized speech to the remote party. The text
 ```
 
 You can use the following options in the say command:
+
 | option               |   | required |
 | -------------------- | ------------------------- | -------- |
 | text                 | text to speak; may contain SSML tags | yes |

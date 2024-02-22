@@ -656,6 +656,7 @@ nav:
       - voicegateway/references/verbs-hooks/dtmf.md
       - voicegateway/references/verbs-hooks/refer.md
       - voicegateway/references/verbs-hooks/transcribe.md
+      - voicegateway/references/verbs-hooks/sip-request.md
       - voicegateway/references/verbs-hooks/amd.md
   - Glossary:
     - voicegateway/glossary.md

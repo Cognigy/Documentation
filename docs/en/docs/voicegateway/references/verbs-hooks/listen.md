@@ -7,7 +7,7 @@ Listen command is used to fork and send an audio stream(s) in real-time to your 
 |Format | 16-bit |
 |Encoding| PCM |
 |Sample rate| user-specified |
-|connection type| websocket|
+|Connection type| websocket|
 
 One text frame is sent immediately after the websocket connection is established to send a JSON string with call attributes over an HTTP request. Additional metadata can also be added to this payload using the metadata property.
 
@@ -55,7 +55,7 @@ Any DTMF digits entered by the far end party on the call can optionally be passe
 ## Bidirectional audio
 Audio can also be sent back over the websocket. This audio, if supplied, will be played out to the caller. 
 
-!!! note "Not supported when nested in Dial or Listen"
+!!! warning "Not supported when nested in Dial or Listen"
     Bidirectional audio is not supported when the [Listen]() is nested in the context of a [Dial]() verb
 
 The far-end websocket server supplies bidirectional audio by sending a JSON text frame over the websocket connection:
