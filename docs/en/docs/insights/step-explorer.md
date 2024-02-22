@@ -167,7 +167,7 @@ The following steps are presented:
 6. **Order confirmation**. Finally, only 1 out of the initial 5 users completed this step, resulting in a 50% completion rate. The other 4 users did not confirm their orders.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-node-example.png" width="100%" />
   <figcaption>Step Explorer Node Example</figcaption>
 </figure>
 
@@ -193,7 +193,7 @@ In the image below, it's evident that out of all users, only one completed the o
     - One user who ordered Pizza and one user without a product category completed their orders successfully, resulting in a 50% completion rate (2 users).
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-intent-example.png" width="100%" />
   <figcaption>Step Explorer Intent Example</figcaption>
 </figure>
 
