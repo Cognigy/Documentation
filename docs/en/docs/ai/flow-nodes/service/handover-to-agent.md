@@ -145,13 +145,6 @@ For more information, read the [Genesys Cloud Guest Chat](../../handover-provide
 
 #### Configure 8x8
 
-To continue setup, go to the 8x8 configuration:
-
-{! _includes/ai/providers/8x8/8x8-config.md !}
-
-#### Configure Handover Settings
-
-In the **Handover to Agent** Node, configure the following settings:
 
 | Parameter             | Description   | 
 |-----------------------|---------------|
@@ -159,7 +152,6 @@ In the **Handover to Agent** Node, configure the following settings:
 | 8x8 Queue Id          | Specify the header value required for authenticating API calls to the 8x8 system. <br> You can find this ID in the 8x8 admin console. Navigate to **Channels > Chat API**. In the channel list, find the channel that you created. Copy the **Queue ID** from the channel row.   |
 | 8x8 JSON properties   | Extend 8x8 properties with custom JSON.           |
 
-To check the handover, go to the installation that your server administrator has deployed.
 For more information, read the [8x8 Handover Setup](../../handover-providers/8x8.md#configure-8x8) documentation.  
 
 ### Ring Central Engage Settings
