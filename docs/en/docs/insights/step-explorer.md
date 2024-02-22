@@ -13,40 +13,37 @@ _Step Explorer_ helps you to see how customers navigate through a conversation. 
   <figcaption>Step Explorer</figcaption>
 </figure>
 
-In the left-side menu of Insights, select **Step Explorer**.
+In the left-side menu of Insights, select Step Explorer.
 
-When the Step Explorer is selected, Agent's name is displayed in the top left corner. Insights processes the current Agent's data and the Step Explorer report displays the data-related analytic graphs. If multiple Agents are available in Cognigy.AI, you can select them here in a drop-down menu to analyze each of them.
+When the Step Explorer is selected, the Agent's name is displayed in the top left corner. Insights processes the current Agent's data for analysis, and the Step Explorer report displays the data-related analytic graphs. If multiple Agents are available in Cognigy.AI, you can select them here in a drop-down menu to analyze each of them.
 
-When switching from your Agent in Cognigy.AI to Cognigy Insights,
-all filters are configured so that you can view data related to the active Agent.
-This allows you to monitor the performance of this Agent over a specific time period.
-To switch between Cognigy.AI and the Cognigy Insights application, click the **Insights** option in the user menu.
+When switching from your Agent in Cognigy.AI to Cognigy Insights, all filters are configured so that you can view data related to the active Agent. This allows you to monitor the performance of this Agent over a specific time period. To switch between Cognigy.AI and Insights, click the Insights option in the user menu.
 
-## Before you Begin
+## Before You Begin
 
-Differ from Transcript Explorer and Message Explorer, which gather data automatically based on existing data. For Step Explorer, you need to prepare data to start gathering it. To do so, decide what you want to gather: Node data, Intent data, or both.
+Differing from the Transcript Explorer and Message Explorer, which gather data automatically based on existing data, the Step Explorer requires you to prepare data to start gathering it. To do so, decide what you want to gather: Node data, Intent data, or both.
 
 ### Annotate Actions
 
-For effective use of the Step Explorer, make sure Annotations are defined for evaluating and displaying analytics data.
+For effective use of the Step Explorer, ensure that annotations are defined for evaluating and displaying analytics data.
 
-The Step Explorer offers valuable insights such as:
+The Step Explorer offers valuable insights, including:
 
-- Order Intent Understanding: Track the number of customers who have placed orders.
-- Customer Response Analysis: Understand customer reactions at specific steps, including frequency and quantity.
+- **Order Intent Understanding**. Track the number of customers who have placed orders.
+- **Customer Response Analysis**. Understand customer reactions at specific steps, including frequency and quantity.
 
 #### Annotate Node Actions
 
 To gather data on Node actions, you need to annotate them. This means providing descriptions of the actions to understand how the node works and analyze its performance.
 
-To annotate a Node, do the following:
+To annotate a Node, follow the steps below:
 
 1. Open the Cognigy.AI interface.
-2. In the left-side menu, select an Agent. 
+2. In the left-side menu, select an Agent.
 3. Navigate to **Build > Flows**.
-4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
-5. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or go to or use an existing one.
-6. Open the Node editor by clicking the Node which you want to annotate.
+4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or using an existing one.
+5. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or using an existing one.
+6. Open the Node editor by clicking the Node you want to annotate.
 7. In the Node Editor, go to **Settings > Analytics Step**.
 8. In the **Analytics Step** field, enter a title for the Node's action. For example, if the Node is responsible for selecting multiple products, the step could be titled `Product Selection`.
 9. Click **Save**.
@@ -55,7 +52,7 @@ To annotate a Node, do the following:
 
 To gather data on Intent actions, you need to annotate them. This involves providing descriptions of the actions to understand how the intent works and analyze its performance.
 
-To annotate an Intent, do the following:
+To annotate an Intent, follow these steps:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select an Agent.
@@ -63,15 +60,14 @@ To annotate an Intent, do the following:
 4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
 5. In the upper-right corner of the Flow editor, select the **NLU** tab.
 6. In the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
-7. On the selected Intent page, go to **Advanced > Analytics step**.
-8. In the **Analytics step** section, , provide a title that clearly represents the Intent's action. For example, if the Intent involves selecting a specific product type, such as Pizza, consider naming the step `Pizza Order`, `Pizza Selection`, or `Pizza`.
+7. On the selected Intent page, go to **Advanced > Analytics Step**.
+8. In the **Analytics Step** section, provide a title that clearly represents the Intent's action. For example, if the Intent involves selecting a specific product type, such as Pizza, consider naming the step `Pizza Order`, `Pizza Selection`, or `Pizza`.
 9. Click **Save**.
+
 
 ### Test your Flow
 
-To see the result on the Step Explorer page, test your virtula agent via the Interaction panel or via Demo Webchat.
-
-When data is collected, you can investigate the steps on the Steps Explorer page.
+To view the results on the Step Explorer page, test your virtual agent via the Interaction panel or the Demo Webchat.
 
 ## Filter Steps
 
@@ -101,7 +97,6 @@ click **more filters ![insight-filter-black](../assets/icons/insight-filter-blac
 | Direction      | Select one of the following directions:<br>- **Forward** — the report begins with the first step of the session.<br>- **Backward** — the report starts with the last step of the session. |
 | Starting Step  | Select the step where the analysis starts.                                                                                                                                                |
 | Contains Step  | Select the steps you want to analyze.                                                                                                                                                     |
-
 
 ## Step Overview
 
