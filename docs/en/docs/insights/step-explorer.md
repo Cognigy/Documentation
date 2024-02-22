@@ -3,6 +3,7 @@ title: "Step Explorer"
 slug: "step-explorer" 
 hidden: false 
 ---
+
 # Step Explorer
 
 _Step Explorer_ helps you to see how customers navigate through a conversation. It shows key paths in the conversation, such as how customers react to the Virtual Agent's responses and questions, as well as identifying points where customers disengage, all within a specified time frame.  This information allows you to evaluate and improve your Virtual Agent for better understanding, potentially increasing orders, bookings, or reducing support requests. The Step Explorer lets you explore conversation steps and how they connect with each other.
@@ -19,26 +20,46 @@ When the Step Explorer is selected, Agent's name is displayed in the top left co
 When switching from your Agent in Cognigy.AI to Cognigy Insights,
 all filters are configured so that you can view data related to the active Agent.
 This allows you to monitor the performance of this Agent over a specific time period.
-To switch between Cognigy.AI and the Cognigy Insights application, clickthe **Insights** option in the user menu.
+To switch between Cognigy.AI and the Cognigy Insights application, click the **Insights** option in the user menu.
 
-## Additional Filters
+## Before you Begin
 
-|Filter| Description|
-|------|------------|
-|Starting Step| Conversational [steps](../ai/tools/analytics/analytics-concepts.md#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations](#annotations) in the **Analytics steps** section, for example, with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point.|
+Differ from Transcript Explorer and Message Explorer, which gather data automatically based on existing data. For Step Explorer, you need to prepare data to start gathering it. To do so, decide what you want to gather: Node data, Intent data, or both.
 
-Additionally, you can click a step and choose **Select as starting step** from the context menu.
+### Prepare Nodes
 
-**Direction**
 
-You can choose between **Forward** and **Backward** direction. 
-If you apply the forward direction, the step report starts with the first step (from the conversation's beginning to the end).
-If you apply the backward direction, the step report starts at the last step (from the conversation's end to the beginning).
 
-**Global filter options**
+### Prepare  Intents
 
-The Global Filter options at the bottom apply to all applications running in Cognigy Insights.
-For more information, read [Global Filter](global-filter.md).
+
+
+## Filter Steps
+
+By default, the Step Explorer shows the **Global Filters** section at the top of the page.
+
+You can filter sessions by using the following options:
+
+- [Global Filters](#global-filters)
+- [Additional Filters](#additional-filters)
+
+To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner.
+
+### Global Filters
+
+For more information, read the [Global Filter](global-filter.md) documentation.
+
+### Additional Filters
+
+You can use additional filters to refine your research.
+
+To open the **Additional Filters** selection,
+click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
+
+| Filter        | Description                                                                                                                                                                                                                                                                                                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Starting Step | Conversational [steps](../ai/tools/analytics/analytics-concepts.md#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations](#annotations) in the **Analytics steps** section, for example, with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point. |
+| Direction     | You can choose between **Forward** and **Backward** direction. If you apply the forward direction, the step report starts with the first step (from the conversation's beginning to the end). If you apply the backward direction, the step report starts at the last step (from the conversation's end to the beginning).                                                                 |
 
 ## Annotations
 
