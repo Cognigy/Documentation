@@ -10,7 +10,7 @@ _Step Explorer_ helps you to see how customers navigate through a conversation. 
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/step-explorer.png" width="100%" />
-  <figcaption>Step Explorer UI</figcaption>
+  <figcaption>Step Explorer</figcaption>
 </figure>
 
 In the left-side menu of Insights, select **Step Explorer**.
@@ -26,13 +26,52 @@ To switch between Cognigy.AI and the Cognigy Insights application, click the **I
 
 Differ from Transcript Explorer and Message Explorer, which gather data automatically based on existing data. For Step Explorer, you need to prepare data to start gathering it. To do so, decide what you want to gather: Node data, Intent data, or both.
 
-### Prepare Nodes
+### Annotate Actions
 
+For effective use of the Step Explorer, make sure Annotations are defined for evaluating and displaying analytics data.
 
+The Step Explorer offers valuable insights such as:
 
-### Prepare  Intents
+- Order Intent Understanding: Track the number of customers who have placed orders.
+- Customer Response Analysis: Understand customer reactions at specific steps, including frequency and quantity.
 
+#### Annotate Node Actions
 
+To gather data on Node actions, you need to annotate them. This means providing descriptions of the actions to understand how the node works and analyze its performance.
+
+To annotate a Node, do the following:
+
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent. 
+3. Navigate to **Build > Flows**.
+4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
+5. In the Flow editor, create a new Node by clicking **+** and selecting one from the list or go to or use an existing one.
+6. Open the Node editor by clicking the Node which you want to annotate.
+7. In the Node Editor, go to **Settings > Analytics Step**.
+8. In the **Analytics Step** field, enter a title for the Node's action. For example, if the Node is responsible for selecting multiple products, the step could be titled `Product Selection`.
+9. Click **Save**.
+
+#### Annotate Intent Actions
+
+To gather data on Intent actions, you need to annotate them. This involves providing descriptions of the actions to understand how the intent works and analyze its performance.
+
+To annotate an Intent, do the following:
+
+1. Open the Cognigy.AI interface.
+2. In the left-side menu, select an Agent.
+3. Navigate to **Build > Flows**.
+4. Create a new Flow by clicking **+ New Flow** in the upper-right corner or use an existing one.
+5. In the upper-right corner of the Flow editor, select the **NLU** tab.
+6. In the **Intents** tab, create a new Intent by clicking **+ Create Intent** or use an existing one.
+7. On the selected Intent page, go to **Advanced > Analytics step**.
+8. In the **Analytics step** section, , provide a title that clearly represents the Intent's action. For example, if the Intent involves selecting a specific product type, such as Pizza, consider naming the step `Pizza Order`, `Pizza Selection`, or `Pizza`.
+9. Click **Save**.
+
+### Test your Flow
+
+To see the result on the Step Explorer page, test your virtula agent via the Interaction panel or via Demo Webchat.
+
+When data is collected, you can investigate the steps on the Steps Explorer page.
 
 ## Filter Steps
 
@@ -56,186 +95,111 @@ You can use additional filters to refine your research.
 To open the **Additional Filters** selection,
 click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
 
-| Filter        | Description                                                                                                                                                                                                                                                                                                                                                                                |
-|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Starting Step | Conversational [steps](../ai/tools/analytics/analytics-concepts.md#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations](#annotations) in the **Analytics steps** section, for example, with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point. |
-| Direction     | You can choose between **Forward** and **Backward** direction. If you apply the forward direction, the step report starts with the first step (from the conversation's beginning to the end). If you apply the backward direction, the step report starts at the last step (from the conversation's end to the beginning).                                                                 |
+| Filter         | Description                                                                                                                                                                               |
+|----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Rating | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.         |
+| Direction      | Select one of the following directions:<br>- **Forward** — the report begins with the first step of the session.<br>- **Backward** — the report starts with the last step of the session. |
+| Starting Step  | Select the step where the analysis starts.                                                                                                                                                |
+| Contains Step  | Select the steps you want to analyze.                                                                                                                                                     |
 
-## Annotations
 
-Before working with Step Explorer, you need to annotate certain components in Cognigy.AI. Annotations can be defined in the Node settings of your configured Flow.
-
-To get started, open the Node Editor, navigate to the **Settings** tab, and provide a meaningful Annotation in the Analytics step section. This Annotation should include an informative reference to the configured Node.
-
-For instance, if you're annotating a **Say** Node that initiates a customer conversation with a welcome message, you can enter either `Greetings` or `Welcome New Caller`.
-
-For Order Intents, use the Analytics step field. For example, you can enter `Order Intent triggered` as an annotation.
-
+## Step Overview
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/c2f0e52-Say_Node_Analytics_step_setting_300.svg" width="60%" />
-  <figcaption>Say Node editor with Annotation in the Analytics step section</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-elements.png" width="100%" />
+  <figcaption>Step Explorer Elements</figcaption>
 </figure>
 
-As you name more Flow Nodes with Annotations in the **Analytics step** sections, the Step Explorer data display will provide finer granularity.
+1. **All Starting Steps**. The starting point of the session, when the user enters a session and starts interacting with the bot.
+2. **Analytics Step Name**. The name that you specified in the Node or Intent settings.
+3. **Further Steps view**. Displays actions that follow a specific decision (step) in a session.
+4. **%** (From the previous step). The percentage of end users who reached this step compared to the previous step.
+5. **Drop-off**. The percentage of users who leave a step before finishing it.
 
-!!! warning
-    The Step Explorer requires defined Annotations for the evaluation and display of analytics data.
+## Step Details
 
-The Step Explorer provides the following advantages:
+To view step details, hover the cursor over the step on the Step Explorer page.
 
-- Order Intent understanding (how many customers have ordered something).
-- Understanding of customer reactions at certain steps (how many, how often).
-- You can define different time frames for evaluation.
-- You can display the step report both in **Forward** and **Backward** directions.
-- You can get the step report beginning at a Starting Step.
-- You can click a step to see details.
-- You can select available Snapshots from different virtual agent versions to compare them for improvement purposes.
-
-## Analysis
+| Parameter          | Description                                                                      |
+|--------------------|----------------------------------------------------------------------------------|
+| Step name          | Analytics Step name that you specified in the Node or Intent settings            |
+| Flow Name          | A Flow where the Note or Intent is used.                                         |
+| From previous step | The percentage of end users who reached this step compared to the previous step. |
+| From end step      | The percentage of end users who reached this step compared to the lats step.     |
+| Times              | The total number of end users who reached this step.                             |
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/7bf4ed7-Step_Explorer_n1.png" width="100%" />
-  <figcaption>Step Explorer: Analytic steps displayed in <b>forward direction</b></figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <figcaption>Step Explorer Details</figcaption>
 </figure>
 
-When the **Local Filter** is set to the Forward direction, the Step Explorer displays the conversation analysis results with the conversation's start on the left side and the conversation's end on the right side.
+### Step Operations
 
-Using the Annotations defined previously in Cognigy.AI for your Flow Nodes, the Step Explorer can analyze the conversation steps, and each Annotation is assigned to a specific step. The corresponding conversation data in relation to the defined steps leads to a percentage distribution, which the Step Explorer visualizes on the screen.
+To view step operations, right-click the selected Step on the Step Explorer page.
 
-**Analysis example**
-
-100% of the users went through the starting step at the beginning of a conversation.
-
-99% of the users who started a conversation went through a welcome as a new caller.
-
-66% of the new callers made an appointment - 11% of the new callers initiated a handover request.
-
-51% of the users who made an appointment completed the booking. 
-
-48% of users who made an appointment needed explanations.
-
-89% of users who needed an explanation completed the booking.
-
-!!! note
-    The red-marked areas of a step represent the number of users who dropped off at that point. 
-    You may take an early "drop off" in a conversation to improve your Agent and to inspect with Cognigy's [Message Explorer](message-explorer.md) what the Virtual Agent said before the user dropped off.
-
-- You can get more details displayed when you hover the mouse over any step.   
+| Operation                             | Description                                                                                                                                                                                                                                                                                                                                                 |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Open Flow                             | Opens a related Flow in the Cognigy.AI interface in a new browser tab.                                                                                                                                                                                                                                                                                      |
+| Open Node                             | Opens a related Node in the Cognigy.AI interface in a new browser tab.                                                                                                                                                                                                                                                                                      |                                                                             |
+| Open sessions that took this path     | Tracks the number of sessions following the same sequence of steps, including the selected step, which is useful for understanding user interaction with your application. It helps optimize the user experience, identify successful strategies, and assess the effectiveness of features. Related sessions are displayed on the Transcript Explorer page. |
+| Open sessions which contain this step | Tracks the number of sessions in which end users have completed the selected step. Related sessions are displayed on the Transcript Explorer page.                                                                                                                                                                                                          |
+| Open conversations that ended here    | This option appears in the menu only if you click the Drop-off step. This means that you can view all sessions from which end users leave a step before finishing it.                                                                                                                                                                                       |
+| Set as Starting Step                  | Places the selected step at the beginning of the path.                                                                                                                                                                                                                                                                                                      |
+| Set as Ending Step                    | Places the selected step at the end of the path.                                                                                                                                                                                                                                                                                                            |
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/ddd1d85-Step_Explorer_handover_request_n2_400.svg" width="100%" />
-  <figcaption>Details to the Handover request step</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <figcaption>Step Explorer Operations</figcaption>
 </figure>
 
-- You can select any step as **Starting Step** in the Local Filter settings. The Step Explorer will then visualize the analysis beginning at that step.
 
-- You can change the conversation's **Forward** direction to a **Backward** direction. The Step Explorer will then display the analysis starting on the left side with the end of a conversation.
+## Examples
+
+### Node Annotation
+
+Let's
+consider an example
+in which Nodes are annotated in a Flow where users select a product and payment method and make an order.
+In the image below, it's evident that out of all users, only one completed the order.
+
+The following steps are presented:
+
+1. **Greetings**. All 5 users successfully completed the first step, resulting in a 100% completion rate. 
+2. **Product selection**. All 5 users completed this step, resulting in a 100% completion rate.
+3. **Delivery address specification**. All 5 users provided their delivery addresses, resulting in a 100% completion rate.
+4. **Delivery date specification**. Four out of the initial 5 users completed this step, resulting in an 80% completion rate. One user did not proceed to specify the delivery date.
+5. **Payment method selection**. Only 2 out of the initial 5 users completed this step, resulting in a 50% completion rate. The other 3 users did not proceed to select a payment method.
+6. **Order confirmation**. Finally, only 1 out of the initial 5 users completed this step, resulting in a 50% completion rate. The other 4 users did not confirm their orders.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/7d637e4-Step_Explorer_direction_backward_n3.png" width="100%" />
-  <figcaption>Step Explorer: Analytic steps displayed in backward direction</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <figcaption>Step Explorer Node Example</figcaption>
 </figure>
 
-- You can click a step, for example, **Make an appointment**, and the Step Explorer will change the displayed analysis by a separated display of the selected step and the related analytics data in detail.  
+### Intent Annotation
 
-Fields with an arrow icon are placeholders for hidden steps.
-These hidden steps will be displayed only when you click the arrow field.
-Using arrow fields, make sure that the displayed steps are clearly arranged.
+Let's consider an example in which Nodes and Intents are annotated in a Flow where users select a product and payment method and make an order.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/d54affb-Step_Explorer_make_appointment_n4.png" width="100%" />
-  <figcaption>Example: Separate display of the selected Make an appointment step</figcaption>
-</figure>
+In the image below, it's evident that out of all users, only one completed the order.
 
-**Example step analysis of Make an Appointment**:
-
-**Step label**: 66% of the 'new callers' from the previous step made an appointment.
-**Additional information via hover field**: 66 % of the users who started a conversation made an appointment (the number found by Step Explorer: 5,477).
-
-48% of the users who started to make an appointment needed explanations of what the Agent just did.
-89% of them who needed explanations completed the booking, and all of them dropped off afterward (100%).
-
-48% of the users who started to make an appointment completed the booking.
-
-100% of the users who completed a booking dropped off.
-
-!!! note
-    The rated value of a conversation step relates directly to the previous step value before.
+1. **Greetings**. All 5 users successfully completed the first step, resulting in a 100% completion rate.
+2. **Product Selection**:
+    - Completed by 100% of users (5 users).
+    - 40% selected products from a non-specific category:
+        - 20% selected Coke.
+        - 20% selected Fries.
+        - 20% selected Pizza.
+3. **Delivery address specification**. All 5 users provided their delivery addresses, resulting in a 100% completion rate.
+4. **Payment method selection**:
+    - Not completed by 50% of users who did not select a product category (1 user).
+    - Users who ordered Coke and Fries did not select a payment method, resulting in 100% drop-off for each.
+    - User who selected Pizza completed the step 100% (1 user).
+5. **Order Confirmation**:
+    - One user who ordered Pizza and one user without a product category completed their orders successfully, resulting in a 50% completion rate (2 users).
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/9c01d54-Step_Explorer_make_appointment_n5.svg" width="100%" />
-  <figcaption>Example step: Make an appointment analysis data</figcaption>
-</figure>
-
-**Example of the Completed Booking step and evaluation of additional displayed analytics data**:
-
-89% of the users who needed explanations completed the booking, and all of them dropped off afterward (100%; end of conversation).
-
-**additional information (via hover function)**: 
-
-89% of the users completed the booking from the previous step.
-28% of the users who started a conversation completed the booking.
-The Step Explorer found 2,368 as a total number of completed bookings.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/8e3fdd6-Step_Explorer_completed_booking_n7.svg" width="100%" />
-  <figcaption>Example step: Completed booking analysis data</figcaption>
-</figure>
-
-### Open Flow 
-
-To check your Flow or to improve the configuration, the Step Explorer provides the context menu **Open Flow** option when right-clicking on a specific step.
-For example, clicking **Make an Appointment** takes you to the Flow in Cognigy.AI.
-
-The red-highlighted sections within a step indicate the points where users dropped off. You have the option to intentionally initiate a 'drop-off' in a conversation. This allows you to enhance your agent's performance and analyze what the Virtual Agent said before the user disengaged by using Cognigy's [Message Explorer](message-explorer.md).
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/a040540-Step_Explorer_open_flow_n8.svg" width="100%" />
-  <figcaption>Right-clicking a specific explorer step will provide the "Open Flow" option</figcaption>
-</figure>
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/1135531-Open_Flow_in_Cognigy_2.svg" width="100%" />
-  <figcaption>The "Open Flow" option led to the Flow in Cognigy.AI</figcaption>
-</figure>
-
-### Open Node
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
-
-Calling the context menu on a Step defined in a Node will present the **Open Node** menu
-option. Clicking it opens the Flow Editor with editing mode for the respective Node.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/open-node.png" width="100%" />
-  <figcaption>Context menu of a Step defined in a Node</figcaption>
-</figure>
-
-### Go to Transcript Explorer
-
-If you want to evaluate early drop-offs during conversations to improve your Virtual Agent, click the **Drop off** step to access the **Go to Transcript Explorer** menu. 
-
-This menu allows you to check conversations by searching for keywords that represent the steps when the customer drops off.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/a7e0fdb-Step_Explorer_early_drop_off_situation_4.svg" width="100%" />
-  <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
-</figure>
-
-## Inspecting conversations by Steps taken
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.16-blue.svg)]({{config.site_url}})
-
-In the context menu of a Step, there are two options for inspecting the conversations.
-Activating one of them will open Transcript Explorer showing the following conversations:
-
-- **Open conversations that took this path**. This option displays conversations that followed the exact path of the chosen step. In the illustration below, we have opened a context menu on the **Completed Booking** step. Conversations that followed this path will show only those that contained the following step path: **Welcome New Caller > Make an Appointment > Explain > Completed Booking** steps. 
-- **Open conversations, which contain this step**. This option shows all the conversations, which include the chosen Step. The exact path in this case is not important.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/conversation-path-step-explorer.png" width="100%" />
-  <figcaption>Go to Transcript Explorer to evaluate the conversation steps</figcaption>
+  <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-details.png" width="100%" />
+  <figcaption>Step Explorer Intent Example</figcaption>
 </figure>
 
 ## More Information
