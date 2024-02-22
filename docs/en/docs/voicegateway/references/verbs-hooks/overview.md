@@ -39,4 +39,4 @@ api.output(null, {
 
 ## Using custom VG commands to control Outbound calls
 
-????
+Refer to [Create Outbound Calls]()
