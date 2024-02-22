@@ -21,19 +21,11 @@ all filters are configured so that you can view data related to the active Agent
 This allows you to monitor the performance of this Agent over a specific time period.
 To switch between Cognigy.AI and the Cognigy Insights application, clickthe **Insights** option in the user menu.
 
-## Filter options
+## Additional Filters
 
-Every change in filter settings needs to be confirmed with **Apply** to be active.
-
-**Local filter options**
-
-The Local Filter options at the top are specific to the Step Explorer.
-
-**Starting Step**
-
-Conversational [steps](../ai/tools/analytics/analytics-concepts.md#steps) are only available
-and displayed here when you first have configured the Node settings in your Flow with [annotations](#annotations) in the **Analytics steps** section, for example, with 'Welcome New Caller'. 
-Then you can select the starting step here for Step Explorer processing starting at this point.
+|Filter| Description|
+|------|------------|
+|Starting Step| Conversational [steps](../ai/tools/analytics/analytics-concepts.md#steps) are only available and displayed here when you first have configured the Node settings in your Flow with [annotations](#annotations) in the **Analytics steps** section, for example, with 'Welcome New Caller'. Then you can select the starting step here for Step Explorer processing starting at this point.|
 
 Additionally, you can click a step and choose **Select as starting step** from the context menu.
 
