@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
 
-The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
+The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
 It allows you to analyze transcripts of conversations between end users and agents in detail.
 The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
@@ -17,7 +17,7 @@ For example, you can search for keywords such as booking, canceling, or messagin
 
 To open the Transcript Explorer, use one of the following options:
 
-=== "via Cognigy.AI"
+=== "Via Cognigy.AI"
     1. Open the Cognigy.AI interface.
     2. In the left-side menu, select an Agent.
     3. Within the Agent interface, navigate to Insights using one of the following options:
