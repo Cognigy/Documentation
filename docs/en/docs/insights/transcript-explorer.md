@@ -53,7 +53,7 @@ The list of sessions has the following parameters:
 
 ### Sort Sessions
 
-To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover your mouse over a column title and select the sorting option you prefer:
+To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover the cursor over a column title and select the sorting option you prefer:
 
 - Click the up arrow ![arrow-up-black](../assets/icons/arrow-up-black.svg) to sort in ascending order.
 - Click the down arrow ![arrow-down-black](../assets/icons/arrow-down-black.svg) to sort in descending order.
@@ -118,7 +118,7 @@ To view a session transcript, select a session from the list on the **Transcript
 
 A session transcript shows all the individual messages
 exchanged between the end user and the agent during a conversation.
-When you select a session, the corresponding transcript will be displayed on the right-hand side of the page.
+When you select a session, the corresponding transcript will be displayed on the right side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
 #### Expert mode
