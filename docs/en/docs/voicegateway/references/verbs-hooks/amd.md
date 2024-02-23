@@ -16,11 +16,11 @@ and will send a webhook to `amd` with an indication of whether a human or a mach
 {
   "verb": "dial",
   "actionHook": "/outdial",
-  "callerId": "+495691733312",
+  "callerId": "+49XXXXXXXXXXX",
   "target": [
     {
       "type": "phone",
-      "number": "+49083084888",
+      "number": "+49XXXXXXXXXXX",
       "trunk": "Twilio"
     }
   ],
