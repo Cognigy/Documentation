@@ -98,6 +98,10 @@ click **more filters ![insight-filter-black](../assets/icons/insight-filter-blac
 | Starting Step  | Select the step where the analysis starts.                                                                                                                                                |
 | Contains Step  | Select the steps you want to analyze.                                                                                                                                                     |
 
+{! _includes/insights/exclude-filters.md !}
+
+{! _includes/insights/reset-filters.md !}
+
 ## Step Overview
 
 <figure>
@@ -128,7 +132,7 @@ To view step details, hover the cursor over the step on the Step Explorer page.
   <figcaption>Step Explorer Details</figcaption>
 </figure>
 
-### Step Operations
+## Step Operations
 
 To view step operations, right-click the selected Step on the Step Explorer page.
 
@@ -146,7 +150,6 @@ To view step operations, right-click the selected Step on the Step Explorer page
   <img class="image-center" src="{{config.site_url}}insights/images/step-explorer-menu.png" width="100%" />
   <figcaption>Step Explorer Operations</figcaption>
 </figure>
-
 
 ## Examples
 

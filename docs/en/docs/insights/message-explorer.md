@@ -105,17 +105,9 @@ click **more filters ![insight-filter-black](../assets/icons/insight-filter-blac
 | Flow               | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                               |
 | Show payload data  | Include payload data. Payload is the part of transmitted data that conveys the intended message, such as rating results with comments and data files.                                                                  |
 
-### Exclude Filters
+{! _includes/insights/exclude-filters.md !}
 
-When you toggle the **Negate** option, all filters except the selected one will be analyzed.
-For example, if you select the **Agent Messages** filter and **Negate**, all data except **Agent Messages** will be analyzed.
-
-### Reset Filters
-
-To reset all filters, at the top of the **Message Explorer** page, click the **Reset** button on the right side of the Global Filters.
-
-If the **Reset** button is not displayed,
-click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Message Explorer** page.
+{! _includes/insights/reset-filters.md !}
 
 ## More Information
 

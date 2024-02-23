@@ -99,17 +99,9 @@ click **more filters ![insight-filter-black](../assets/icons/insight-filter-blac
 | Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
 | Message count: To   | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with more messages than this threshold will not be included in the results.                                                                                                   |
 
-### Exclude Filters
+{! _includes/insights/exclude-filters.md !}
 
-When you toggle the **Negate** option, all filters except the selected one will be analyzed.
-For example, if you select the **Agent Messages** filter and **Negate**, all data except **Agent Messages** will be analyzed.
-
-### Reset Filters
-
-To reset all filters, at the top of the **Transcript Explorer** page, click the **Reset** button on the right side of the Global Filters.
-
-If the **Reset** button is not displayed,
-click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Transcript Explorer** page.
+{! _includes/insights/reset-filters.md !}
 
 ## View Session Transcript
 
