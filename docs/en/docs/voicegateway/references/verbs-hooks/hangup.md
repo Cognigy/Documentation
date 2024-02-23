@@ -1,8 +1,14 @@
+---
+title: "Hangup"
+slug: "hangup"
+hidden: false
+---
+
 # Hangup
 
-The hangup command terminates the call and ends the application execution.
+The `hangup` command terminates the call and ends the session.
 
-```
+```json
 {
   "verb": "hangup",
   "headers": {
@@ -11,8 +17,10 @@ The hangup command terminates the call and ends the application execution.
 }
 ```
 
-You can use the following options in the `hangup` command:
+## Configuration
 
-| option  | description                                                    | required   |
-| ------- | -------------------------------------------------------------- | ---------- |
-| headers | an object containing SIP headers to include in the BYE request | no |
+The full set of configuration parameters:
+
+| Parameter | Description                                                     | Required |
+|-----------|-----------------------------------------------------------------|----------|
+| headers   | An object containing SIP headers to include in the BYE request. | No       |

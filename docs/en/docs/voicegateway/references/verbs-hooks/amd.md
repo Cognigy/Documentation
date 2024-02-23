@@ -1,8 +1,18 @@
+---
+title: "Answering Machine Detection (AMD)"
+slug: "amd"
+hidden: false
+---
+
 # Answering Machine Detection (AMD)
 
-The Answering Machine Detection feature can be enabled on outbound calls to provide an indication of whether a call has been answered by a person or a machine. This is done by providing an `amd` property in a [dial] command as shown in the simple example below:
+The Answering Machine Detection feature can be enabled on outbound calls to provide an indication of whether a call has been answered by a person or a machine. To use this feature, provide the `amd` property in a [dial](dial.md) command.
 
-```
+In this example, when the dialed call is answered,
+the answering machine detection feature begins listening to the outbound call
+and will send a webhook to `amd` with an indication of whether a human or a machine has answered the call.
+
+```json
 {
   "verb": "dial",
   "actionHook": "/outdial",
@@ -24,50 +34,50 @@ The Answering Machine Detection feature can be enabled on outbound calls to prov
 }
 ```
 
-In this example, when the dialed call is answered the answering machine detection feature will begin listening to the outbound call leg and will send a webhook to 'amd' with an indication of whether a human or a machine has answered the call.
+Example of a webhook payload:
 
-The payload in the webhook will look something like this:
-
-```
+```json
 {"type":"amd_human_detected"}
 ```
 
 ## Events
-The payload that is included in the `actionHook` will always contain a type property describing the event type. Some event types may also include additional properties.
 
-| type                         | meaning                                           | additional properties                                                                                                                                                                           |
-| ---------------------------- | ------------------------------------------------- | --------- |
-| amd_human_detected           | a human is speaking | {reason, greeting, language} <br> reason is 'short greeting', <br> greeting is the recognized greeting and <br> language is the recognized language |
-| amd_machine_detected         | a machine is speaking | {reason, hint, transcript, language} <br> reason is 'hint' or 'long greeting', <br> hint is the recognized hint <br> transcript is the recognized greeting and<br>language is the recognized language |
-| amd_no_speech_detected       | no speech was detected | none |
-| amd_decision_timeout         | no decision was able to be made in the time given | none |
-| amd_machine_stopped_speaking | machine has completed the greeting                | none |
-| amd_tone_detected            | a beep was detected                               | none |
-| amd_error                    | an error has occurred                             | error - an error message |
-| amd_stopped                  | answering machine detection was stopped           | none|
+The payload included in the `actionHook` always contains a type property describing the event type. 
+Some event types may include additional properties.
 
-It is possible to receive more than one event for a single call. For instance, a possible sequence of events on a call to an answering machine is:
+| Event                        | Description                                        | Additional Properties                                                                                                                                                                                                |
+|------------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| amd_human_detected           | A human is speaking.                               | `{reason, greeting, language}`, where: <br> - `reason` — a short greeting, <br> - `greeting` — is the recognized greeting. <br> - `language` — is the recognized language.                                           |
+| amd_machine_detected         | A machine is speaking.                             | `{reason, hint, transcript, language}`, where: <br> - `reason` — a hint or long greeting. <br> - `hint` — a recognized hint. <br> - `transcript` — a recognized greeting. <br> - `language` — a recognized language. |
+| amd_no_speech_detected       | No speech was detected.                            | None                                                                                                                                                                                                                 |
+| amd_decision_timeout         | No decision was able to be made in the time given. | None                                                                                                                                                                                                                 |
+| amd_machine_stopped_speaking | Machine has completed the greeting.                | None                                                                                                                                                                                                                 |
+| amd_tone_detected            | A beep was detected.                               | None                                                                                                                                                                                                                 |
+| amd_error                    | An error has occurred.                             | Error (an error message)                                                                                                                                                                                             |
+| amd_stopped                  | Answering machine detection was stopped.           | None                                                                                                                                                                                                                 |
 
-1. amd_machine_detected, then
-2. amd_tone_detected, then
-3. amd_machine_stopped_speaking
+
+Multiple events can occur during a single call. For example, on a call to an answering machine, the sequence could be:
+
+1. `amd_machine_detected`
+2. `amd_tone_detected`
+3. `amd_machine_stopped_speaking`
 
 ## Configuration
 
 The full set of configuration parameters:
 
-| property | meaning | required |
-| ---------------------------------- | ------------ | ------------------------ |
-| actionHook                         | webhook to send amd events | yes |
-| thresholdWordCount                 | number of spoken words in a greeting that result in an amd_machine_detected result, default=9  | no           |
-| recognizer                         | speech recognition parameters, used as per [gather]() and [transcribe](), default=application defaults | no |
-| timers                             | object containing various timeouts | no |
-| timers.noSpeechTimeoutMs           | time in milliseconds to wait for speech before returning amd_no_speech_detected, default=5000 | no         |
-| timers.decisionTimeoutMs           | time in milliseconds to wait before returning amd_decision_timeout, default=15000  | no       |
-| timers.toneTimeoutMs               | time in milliseconds to wait to hear a tone, default=20000 | no        |
-| timers.greetingCompletionTimeoutMs | silence in milliseconds to wait for during greeting before returning amd_machine_stopped_speaking , default=2000  | no|
+| Parameter                          | Description                                                                                                                                       | Required |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| actionHook                         | The webhook to send AMD events.                                                                                                                   | Yes      |
+| thresholdWordCount                 | The number of spoken words in a greeting that result in an `amd_machine_detected` result. The default value is `9`.                               | No       |
+| recognizer                         | Speech recognition parameters, used as per the [gather](gather.md) and [transcribe](transcribe.md) functions. The default value is `application`. | No       |
+| timers                             | An object containing various timeouts.                                                                                                            | No       |
+| timers.noSpeechTimeoutMs           | The time in milliseconds to wait for speech before returning `amd_no_speech_detected`. The default value is `5000`.                               | No       |
+| timers.decisionTimeoutMs           | The time in milliseconds to wait before returning `amd_decision_timeout`. The default value is `15000`.                                           | No       |
+| timers.toneTimeoutMs               | The time in milliseconds to wait to hear a tone. The default value is `20000`.                                                                    | No       |
+| timers.greetingCompletionTimeoutMs | The silence in milliseconds to wait for during greeting before returning `amd_machine_stopped_speaking`. The default value is `2000`.             | No       |
 
+## Inbound calls
 
-## Answering machine detection on inbound calls
-
-Answering machine detection can also be performed on an inbound leg by adding an `amd` property to a [config]() command. While it is less common to need to do answering machine detection on an inbound leg, this can be useful when VG is behind a dialer that has placed the outbound call and then connected it to VG by sending an INVITE.
+Answering machine detection can also be applied to incoming calls by including an `amd` property in a [config](config.md) command. Although it's not as typical to require answering machine detection for inbound calls, this capability proves valuable in scenarios where the Voice Gateway is situated behind a dialer. In such cases, the dialer makes the initial outbound call and then links it to the Voice Gateway through an `INVITE` request.

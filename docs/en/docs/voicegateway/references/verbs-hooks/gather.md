@@ -1,8 +1,14 @@
+---
+title: "Gather"
+slug: "gather"
+hidden: false
+---
+
 # Gather
 
 The `gather` command is used to collect DTMF or speech input.
 
-```
+```json
 {
   "verb": "gather",
   "actionHook": "http://example.com/collect",
@@ -28,28 +34,33 @@ The `gather` command is used to collect DTMF or speech input.
 }
 ```
 
-You can use the following options in the `gather` command:
+## Configuration
 
-| option | description | required |
-| -------------------------------------------------------------- | ---------- | -------- |
-| actionHook | webhook POST to invoke with the collected digits or speech. The payload will include a `speech` or `dtmf` property along with the standard attributes | yes      |
-| bargein | allow speech bargein, i.e. kill audio playback if caller begins speaking | no       |
-| dtmfBargein | allow DTMF bargein, i.e. kill audio playback if caller enters DTMF | no       |
-| finishOnKey | DTMF key that signals the end of input | no       |
-| input | array, specifying allowed types of input: ['digits'], ['speech'], or ['digits', 'speech']. Default: ['digits'] | no       |
-| interDigitTimeout | amount of time to wait between digits after minDigits have been entered. | no       |
-| listenDuringPrompt | if false, do not listen for user speech until say or play has completed. Defaults to true | no       |
-| minBargeinWordCount | if bargein is true, only kill speech when this many words are spoken. Defaults to 1 | no       |
-| minDigits | Minimum number of DTMF digits expected to gather. Defaults to 1. | no       |
-| maxDigits | Maximum number of DTMF digits expected to gather| no       |
-| numDigits | Exact number of DTMF digits expected to gather | no       |
-| partialResultHook | Webhook to send interim transcription results to. Partial transcriptions are only generated if this property is set. | no       |
-| play | nested [play]() Command that can be used to prompt the user | no       |
-| recognizer | Speech recognition options | no       |
+The full set of configuration parameters:
 
-In the case of speech input, the `actionHook` payload will include a speech object with the response from e.g. Google speech:
+| Parameter           | Description                                                                                                                                              | Required |
+|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| actionHook          | A webhook POST to invoke with the collected digits or speech. The payload will include a `speech` or `dtmf` property along with the standard attributes. | Yes      |
+| bargein             | Allow speech barge-in, i.e., halt the audio playback if the caller begins speaking.                                                                      | No       |
+| dtmfBargein         | Allow DTMF barge-in, i.e., halt the audio playback if the caller enters DTMF.                                                                            | No       |
+| finishOnKey         | The DTMF key that signals the end of input.                                                                                                              | No       |
+| input               | An array specifying the allowed types of input: `['digits']`, `['speech']`, or `['digits', 'speech']`. The default value is `['digits']`.                | No       |
+| interDigitTimeout   | The amount of time to wait between digits after minDigits have been entered.                                                                             | No       |
+| listenDuringPrompt  | If false, do not listen for user speech until say or play has completed. Defaults to true.                                                               | No       |
+| minBargeinWordCount | If bargein is true, only halt speech when this many words are spoken. Defaults to 1.                                                                     | No       |
+| minDigits           | The minimum number of DTMF digits expected to gather. Defaults to 1.                                                                                     | No       |
+| maxDigits           | The maximum number of DTMF digits expected to gather.                                                                                                    | No       |
+| numDigits           | The exact number of DTMF digits expected to gather.                                                                                                      | No       |
+| partialResultHook   | A webhook to send interim transcription results to. Partial transcriptions are only generated if this property is set.                                   | No       |
+| play                | A nested [play](play.md) command that can be used to prompt the user.                                                                                    | No       |
+| recognizer          | Speech recognition options.                                                                                                                              | No       |
 
-```
+## Example
+
+When speech input is used,
+the `actionHook` payload will contain a speech object with the response from the speech provider, such as Google Speech.
+
+```json
 "speech": {
 			"stability": 0,
 			"is_final": true,
@@ -60,8 +71,8 @@ In the case of speech input, the `actionHook` payload will include a speech obje
 		}
 ```
 
-In the case of digits input, the payload will simple include a digits property indicating the DTMF keys pressed:
+In the case of digits input, the payload will include a `digits` property indicating the DTMF keys pressed:
 
-```
+```json
 "digits": "0276"
 ```

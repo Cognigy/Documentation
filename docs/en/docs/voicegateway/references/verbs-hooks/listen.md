@@ -1,19 +1,28 @@
+---
+title: "Listen"
+slug: "listen"
+hidden: false
+---
+
 # Listen
 
-Listen command is used to fork and send an audio stream(s) in real-time to your application over a websocket connection for processing. Our [Call recording]() feature is based on this command.
+The `listen` command sends real-time audio streams to your application over a WebSocket connection for processing.
+The [Call Recording](../../webapp/recent-calls.md#call-recordings) feature relies on this command.
 
-| Properties | Description  | 
-| --------------- | ------------ |
-|Format | 16-bit |
-|Encoding| PCM |
-|Sample rate| user-specified |
-|Connection type| websocket|
+This table outlines the properties related to the audio streams sent by the `listen` command:
 
-One text frame is sent immediately after the websocket connection is established to send a JSON string with call attributes over an HTTP request. Additional metadata can also be added to this payload using the metadata property.
+| Properties      | Description    | 
+|-----------------|----------------|
+| Format          | 16-bit         |
+| Encoding        | PCM            |
+| Sample rate     | user-specified |
+| Connection type | websocket      |
 
-Listen command can also be nested in a [Dial]() or [Config]() commands, which allows the audio for a call between two parties to be sent to a remote websocket server.
+One text frame is sent immediately after the WebSocket connection is established to send a JSON string with call attributes over an HTTP request. Additional metadata can also be added to this payload using the metadata property.
 
-```
+The `listen` command can also be nested in a [Dial](dial.md) or [Config](config.md) command, allowing the audio for a call between two parties to be sent to a remote WebSocket server.
+
+```json
 {
   "verb": "listen",
   "url": "wss://myrecorder.example.com/calls",
@@ -21,30 +30,33 @@ Listen command can also be nested in a [Dial]() or [Config]() commands, which al
 }
 ```
 
-You can use the following options in the `listen` command:
+## Configuration
 
-| option          | description  | required   |
-| --------------- | ------------ | ---------- |
-| actionHook      | webhook to invoke when listen operation ends. The information will include the duration of the audio stream, and also a 'digits' property if the recording was terminated by a dtmf key. | yes        |
-| finishOnKey     | The set of digits that can end the listen action | no         |
-| maxLength       | the maximum length of the listened audio stream, in secs | no         |
-| metadata        | arbitrary data to add to the JSON payload sent to the remote server when websocket connection is first connected | no         |
-| mixType         | "mono" (send single channel), "stereo" (send dual channel of both calls in a bridge), or "mixed" (send audio from both calls in a bridge in a single mixed audio stream) Default: mono   | no         |
-| passDtmf        | if true, any dtmf digits detected from the caller will be passed over the websocket as text frames in JSON format. Default: false | no         |
-| playBeep        | true, false whether to play a beep at the start of the listen operation. Default: false | no         |
-| sampleRate      | sample rate of audio to send (allowable values: 8000, 16000, 24000, 48000, or 64000). Default: 8000 | no         |
-| timeout         | the number of seconds of silence that terminates the listen operation. | no         |
-| transcribe      | a nested [transcribe]() verb | no         |
-| url             | url of remote server to connect to | yes        |
-| wsAuth.username | HTTP basic auth username to use on websocket connection | no         |
-| wsAuth.password | HTTP basic auth password to use on websocket connection | no |
+The full set of configuration parameters:
 
+| Parameters      | Description                                                                                                                                                                                                                                                        | Required |
+|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| actionHook      | A webhook to invoke when the listen operation ends. The information will include the duration of the audio stream, and also a `digits` property if the recording was terminated by a DTMF key.                                                                     | Yes      |
+| finishOnKey     | The set of digits that can end the listen action.                                                                                                                                                                                                                  | No       |
+| maxLength       | The maximum length of the listened audio stream, in seconds.                                                                                                                                                                                                       | No       |
+| metadata        | Arbitrary data to add to the JSON payload sent to the remote server when the WebSocket connection is first established.                                                                                                                                            | No       |
+| mixType         | The following types can be specified:<br> - `mono` — sends a single channel,<br> - `stereo` — sends a dual channel of both calls in a bridge,<br> - `mixed` — sends audio from both calls in a bridge in a single mixed audio stream. The default value is `mono`. | No       |
+| passDtmf        | If true, any DTMF digits detected from the caller will be passed over the WebSocket as text frames in JSON format. The default value is `false`.                                                                                                                   | No       |
+| playBeep        | True or False. Whether to play a beep at the start of the listen operation. The default value is `false`.                                                                                                                                                          | No       |
+| sampleRate      | The sample rate of audio to send. Allowable values: 8000, 16000, 24000, 48000, or 64000. The default value is `8000`.                                                                                                                                              | No       |
+| timeout         | The number of seconds of silence that terminates the listen operation.                                                                                                                                                                                             | No       |
+| transcribe      | A nested [transcribe](transcribe.md) verb.                                                                                                                                                                                                                         | No       |
+| url             | The URL of the remote server to connect to.                                                                                                                                                                                                                        | Yes      |
+| wsAuth.username | The HTTP basic auth username to use on the WebSocket connection.                                                                                                                                                                                                   | No       |
+| wsAuth.password | The HTTP basic auth password to use on the WebSocket connection.                                                                                                                                                                                                   | No       |
 
 ## Passing DTMF
 
-Any DTMF digits entered by the far end party on the call can optionally be passed to the websocket server as JSON text frames by setting the passDtmf property to true. Each DTMF entry is reported separately in a payload that contains the specific DTMF key that was entered, as well as the duration which is reported in RTP timestamp units. The payload that is sent will look like this:
+Any DTMF digits entered by the far end party on the call can optionally be passed to the WebSocket server as JSON text frames by setting the `passDtmf` property to true. Each DTMF entry is reported separately in a payload containing the specific DTMF key that was entered, along with its duration reported in RTP timestamp units. 
 
-```
+The payload example:
+
+```json
 {
   "event": "dtmf",
   "dtmf": "2",
@@ -52,15 +64,16 @@ Any DTMF digits entered by the far end party on the call can optionally be passe
 }
 ```
 
-## Bidirectional audio
-Audio can also be sent back over the websocket. This audio, if supplied, will be played out to the caller. 
+## Bidirectional Audio
+
+Audio can also be sent back over the WebSocket. This audio, if supplied, will be played out to the caller.
 
 !!! warning "Not supported when nested in Dial or Listen"
-    Bidirectional audio is not supported when the [Listen]() is nested in the context of a [Dial]() verb
+    Bidirectional audio is not supported when the [Listen](listen.md) is nested in the context of a [Dial](dial.md) verb.
 
-The far-end websocket server supplies bidirectional audio by sending a JSON text frame over the websocket connection:
+The far-end WebSocket server supplies bidirectional audio by sending a JSON text frame over the WebSocket connection:
 
-```
+```json
 {
   "type": "playAudio",
   "data": {
@@ -71,31 +84,31 @@ The far-end websocket server supplies bidirectional audio by sending a JSON text
 }
 ```
 
-In the example above, raw (headerless) audio is sent. The audio must comply with the standard properties of encoding and format, with a configurable sample rate of either 8000, 16000, 24000, 32000, 48000, or 64000 khz. 
+In the example above, raw (headerless) audio is sent. The audio must comply with the standard properties of encoding and format, with a configurable sample rate of either 8000, 16000, 24000, 32000, 48000, or 64000 kHz.
 
-Alternatively, a `wave` file format can be supplied by using type "wav" (or "wave"), and in this case no `sampleRate` property is needed. In all cases, the audio must be base64 encoded when sent over the socket.
+Alternatively, a `wave` file format can be supplied by using type `wav` (or `wave`), and in this case, no `sampleRate` property is needed. In all cases, the audio must be base64 encoded when sent over the socket.
 
-If multiple `playAudio` commands are sent before the first has finished playing they will be queued and played in order. You may have up to 10 queued playAudio commands at any time.
+If multiple `playAudio` commands are sent before the first has finished playing, they will be queued and played in order. You may have up to 10 queued `playAudio` commands at any time.
 
-Once a `playAudio` command has finished playing out the audio, a `playDone` JSON text frame will be sent over the websocket connection for confirmation:
+Once a `playAudio` command has finished playing out the audio, a `playDone` JSON text frame will be sent over the WebSocket connection for confirmation.
 
-```
+```json
 {
   "type": "playDone"
 }
 ```
 
-A `killAudio` command can be sent by the websocket server to stop the playback of audio that was started via a previous `playAudio` command:
+A `killAudio` command can be sent by the WebSocket server to stop the playback of audio that was started via a previous `playAudio` command:
 
-```
+```json
 {
   "type": "killAudio"
 }
 ```
 
-If the websocket connection wishes to end the `listen`, it can send a disconnect command:
+If the WebSocket connection wishes to end the `listen`, it can send a disconnect command:
 
-```
+```json
 {
   "type": "disconnect"
 }

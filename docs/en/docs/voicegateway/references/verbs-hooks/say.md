@@ -1,13 +1,19 @@
+---
+title: "Say"
+slug: "say"
+hidden: false
+---
+
 # Say
 
-The say command is used to send synthesized speech to the remote party. The text provided may be either plain text or use SSML tags. 
+The `say` command is used to send synthesized speech to the remote party. The text provided may be either plain text or use SSML tags.
 
 ## Speech vendors
 
-- [Check supported speech vendors]()
-- [Add a custom speech API]()
+- [Check supported speech vendors](../tts-and-stt-vendors.md)
+- [Add a custom speech API](../../webapp/speech-services.md#add-a-custom-speech-vendor)
 
-```
+```json
 {
   "verb": "say",
   "text": "hi there!",
@@ -18,13 +24,15 @@ The say command is used to send synthesized speech to the remote party. The text
 }
 ```
 
-You can use the following options in the say command:
+## Configuration
 
-| option               |   | required |
-| -------------------- | ------------------------- | -------- |
-| text                 | text to speak; may contain SSML tags | yes |
-| synthesizer.vendor   | speech vendor to use for synthesis | no  |
-| synthesizer.language | language code | no  |
-| synthesizer.voice    | voice to use. Check voice lists of vendor used. Defaults to [Application]() setting, if provided.  | no |
-| loop                 | the number of times a text is to be repeated; 0 means repeat forever. Defaults to 1. | no |
-| earlyMedia           | if true and the call has not yet been answered, play the audio without answering call. Defaults to false |
+The full set of configuration parameters:
+
+| Parameter            | Description                                                                                                                                   | Required |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| text                 | The text to speak; may contain SSML tags.                                                                                                     | Yes      |
+| synthesizer.vendor   | The speech vendor to use for synthesis.                                                                                                       | No       |
+| synthesizer.language | The language code,                                                                                                                            | No       |
+| synthesizer.voice    | The voice to use. Check the voice lists of the vendor used. Defaults to the [Application](../../webapp/applications.md) setting, if provided. | No       |
+| loop                 | The number of times the text is to be repeated; 0 means repeat forever. The default value is `1`.                                             | No       |
+| earlyMedia           | If true and the call has not yet been answered, play the audio without answering the call. The default value is `false`.                      | No       |

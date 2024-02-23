@@ -1,8 +1,14 @@
+---
+title: "DTMF"
+slug: "DTMF"
+hidden: false
+---
+
 # DTMF
 
-The `dtmf` command generates a string of DTMF digit signals. These are sent as RTP payloads using [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).
+The `dtmf` command generates a string of DTMF digit signals, which are transmitted as RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).
 
-```
+```json
 {
   "verb": "dtmf",
   "dtmf": "0276",
@@ -10,9 +16,11 @@ The `dtmf` command generates a string of DTMF digit signals. These are sent as R
 }
 ```
 
-You can use the following options in the `dtmf` command:
+## Configuration
 
-| option   | description                                                | required   |
-| -------- | ---------------------------------------------------------- | ---------- |
-| dtmf     | a string containing a sequence of dtmf digits (0-9,\*,#)   | yes        |
-| duration | the length of each digit, in milliseconds <br> Defaults to 500 | no |
+The full set of configuration parameters:
+
+| Parameter | Description                                                      | Required |
+|-----------|------------------------------------------------------------------|----------|
+| dtmf      | A string containing a sequence of DTMF digits (`0-9`, `*`, `#`). | Yes      |
+| duration  | The length of each digit, in milliseconds. Defaults to 500.      | No       |

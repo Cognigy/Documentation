@@ -1,10 +1,16 @@
+---
+title: "Transcribe"
+slug: "transcribe"
+hidden: false
+---
+
 # Transcribe
 
-The transcribe command is used to send real-time transcriptions of speech.
+The `transcribe` command is used to generate real-time transcriptions of speech.
 
-**The transcribe command is only allowed to be nested within a dial or listen verb.** Using transcribe in a dial command allows a long-running transcription of a phone call to be made, while nesting within a listen verb allows transcriptions of recorded messages (e.g. voicemail).
+The `transcribe` command is only allowed to be nested within a [`dial`](dial.md) or [`listen`](listen.md) verb. When used in a `dial` command, it enables long-running transcription of a phone call, while nesting within a `listen` verb enables transcriptions of recorded messages (e.g., voicemail).
 
-```
+```json
 {
   "verb": "transcribe",
   "transcriptionHook": "http://example.com/transcribe",
@@ -16,9 +22,11 @@ The transcribe command is used to send real-time transcriptions of speech.
 }
 ```
 
-You can use the following options in the transcribe command:
+## Configuration
 
-| option | description  | required |
-| ------------| ------- | -------- |
-| recognizer.transcriptionHook | Webhook to receive an HTPP POST when an interim or final transcription is received form a provider | yes  |
-| recognizer | Speech recognition options | yes   |
+The full set of configuration parameters:
+
+| Parameter                    | Description                                                                                         | required |
+|------------------------------|-----------------------------------------------------------------------------------------------------|----------|
+| recognizer.transcriptionHook | Webhook to receive an HTTP POST when an interim or final transcription is received form a provider. | yes      |
+| recognizer                   | Speech recognition options.                                                                         | yes      |
