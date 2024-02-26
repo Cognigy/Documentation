@@ -28,7 +28,7 @@ while nesting within a `listen` command enables transcriptions of recorded messa
 
 The full set of configuration parameters:
 
-| Parameter                    | Description                                                                                         | required |
-|------------------------------|-----------------------------------------------------------------------------------------------------|----------|
-| recognizer.transcriptionHook | Webhook to receive an HTTP POST when an interim or final transcription is received form a provider. | yes      |
-| recognizer                   | Speech recognition options.                                                                         | yes      |
+| Parameter                    | Description                                                                                          | required |
+|------------------------------|------------------------------------------------------------------------------------------------------|----------|
+| recognizer.transcriptionHook | A webhook to receive an HTTP POST when a partial or final transcription is received from a provider. | yes      |
+| recognizer                   | Speech recognition options.                                                                          | yes      |

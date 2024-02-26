@@ -6,7 +6,10 @@ hidden: false
 
 # SIP:request
 
-The `sip:request` command is used to send a SIP `INFO`, `NOTIFY,` or `MESSAGE` request on an established call, which is an in-dialog request. This allows an application to send SIP messages during a call, such as transmitting metadata to the calling SIP endpoint using a SIP INFO message.
+The `sip:request` command is used to send a SIP `INFO`, `NOTIFY,` or `MESSAGE` request on an established call,
+which is an in-dialog request.
+This command allows an application to send SIP messages during a call,
+such as transmitting metadata to the calling SIP endpoint using a SIP `INFO` message.
 
 ```json
 {
@@ -23,12 +26,12 @@ The `sip:request` command is used to send a SIP `INFO`, `NOTIFY,` or `MESSAGE` r
 
 The full set of configuration parameters:
 
-| Parameter  | Description                                                                     | Required |
-|------------|---------------------------------------------------------------------------------|----------|
-| method     | The SIP method, which should be one of INFO, MESSAGE, or NOTIFY`.               | Yes      |
-| headers    | An object containing headers (key-value pairs) to include with the SIP request. | No       |
-| body       | The body of the SIP request, if any.                                            | No       |
-| actionHook | A webhook to call when the SIP request has completed.                           | No       |
+| Parameter  | Description                                                                    | Required |
+|------------|--------------------------------------------------------------------------------|----------|
+| method     | The SIP method, which should be one of `INFO`, `MESSAGE`, or `NOTIFY`.         | Yes      |
+| headers    | An object that holds headers (key-value pairs) to include in the SIP request.  | No       |
+| body       | The body of the SIP request.                                                   | No       |
+| actionHook | A webhook to call when the SIP request has completed.                          | No       |
 
 ### Send a Nested Object
 

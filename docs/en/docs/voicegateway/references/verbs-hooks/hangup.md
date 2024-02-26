@@ -21,6 +21,6 @@ The `hangup` command terminates the call and ends the session.
 
 The full set of configuration parameters:
 
-| Parameter | Description                                                     | Required |
-|-----------|-----------------------------------------------------------------|----------|
-| headers   | An object containing SIP headers to include in the BYE request. | No       |
+| Parameter | Description                                                       | Required |
+|-----------|-------------------------------------------------------------------|----------|
+| headers   | An object containing SIP headers to include in the `BYE` request. | No       |

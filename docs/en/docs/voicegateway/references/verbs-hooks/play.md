@@ -22,14 +22,14 @@ The `play` command is used to stream recorded audio to a call.
 
 You can use the following options in the `play` command:
 
-| Parameters  | Description                                                                                                   | Required |
-|-------------|---------------------------------------------------------------------------------------------------------------|----------|
-| url         | A single URL or an array of URLs (will play in sequence) to a WAV or MP3 file.                                | Yes      |
-| loop        | Number of times to play the URLs. The default value is `1`.                                                   | No       |
-| earlyMedia  | If true and the call has not yet been answered, play the audio without answering the call. Defaults to false. | No       |
-| timeoutSecs | The number of seconds to play the URLs.                                                                       | No       |
-| seekOffset  | How many samples to seek into the URL.                                                                        | No       |
-| actionHook  | Webhook that is called when the `play` command completes.                                                     | No       |
+| Parameters  | Description                                                                                                                                  | Required |
+|-------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| url         | A single WAV or MP3 URL or an array of URLs to play in sequence.                                                                             | Yes      |
+| loop        | The number of times to play the URLs. The default value is `1`.                                                                              | No       |
+| earlyMedia  | If this parameter is `true` and the call has not yet been answered, play the audio without answering the call. The default value is `false`. | No       |
+| timeoutSecs | The number of seconds to play the URLs.                                                                                                      | No       |
+| seekOffset  | The number of samples to seek into the URL.                                                                                                  | No       |
+| actionHook  | A webhook that is called when the `play` command completes.                                                                                  | No       |
 
 ## actionHook Properties
 

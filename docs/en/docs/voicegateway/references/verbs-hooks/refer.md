@@ -6,9 +6,9 @@ hidden: false
 
 # SIP:REFER
 
-The `sip:refer` command is used to transfer a call and disconnect.
+The `sip:refer` command is used to transfer a call and disconnect it.
 
-It will send a SIP `REFER` to the far end carrier/SIP trunk or SIP phone, which must support the `REFER` for the transfer to be completed successfully. After the sip:refer completes successfully, the call leg will have left the VG platform.
+This command sends a `REFER` message to the carrier (SIP trunk) or SIP phone. For the transfer to be successful, the carrier or SIP phone needs to support the `REFER` message. Once the `sip:refer` is successfully completed, the call will be transferred and disconnected from Voice Gateway.
 
 ```json
 {
@@ -22,13 +22,13 @@ It will send a SIP `REFER` to the far end carrier/SIP trunk or SIP phone, which 
 
 The full set of configuration parameters:
 
-| Parameters | Description                                                                                                                   | Required |
-|------------|-------------------------------------------------------------------------------------------------------------------------------|----------|
-| referTo    | A SIP URI or a phone number/user identifier.                                                                                  | Yes      |
-| referredBy | A SIP URI or a phone number/user identifier. If not provided, it will default to the identity of the party being transferred. | No       |
-| actionHook | A webhook to call when the transfer has completed.                                                                            | No       |
-| eventHook  | A webhook to call when `NOTIFY` messages of follow-on call status are received.                                               | No       |
-| headers    | Additional SIP headers to include in the response.                                                                            | No       |
+| Parameters | Description                                                                                                                                | Required |
+|------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| referTo    | A SIP URI or a phone number/user identifier.                                                                                               | Yes      |
+| referredBy | A SIP URI or a phone number/user identifier. If the value is not provided, it will default to the identity of the party being transferred. | No       |
+| actionHook | A webhook to call when the transfer has completed.                                                                                         | No       |
+| eventHook  | A webhook to call when `NOTIFY` messages of follow-on call status are received.                                                            | No       |
+| headers    | Additional SIP headers to include in the response.                                                                                         | No       |
 
 The `sip:refer` command completes when one of the following conditions is met:
 
@@ -40,12 +40,12 @@ The `sip:refer` command completes when one of the following conditions is met:
 
 The actionHook webhook contains the following additional parameters:
 
-| Parameter                  | Description                                                                                                                                                                          |
-|----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| referStatus                | The SIP status response to the `REFER` request.                                                                                                                                      |
-| final_referred_call_status | The final SIP status of the subsequent call to the transferee. This is provided only in the case where the `REFER` is accepted, and `NOTIFY` requests are received from the far end. |
-| eventHook.event            | Transfer status.                                                                                                                                                                     |
-| eventHook.call_status      | Contains a SIP status received in a `NOTIFY` after a successful `REFER`.                                                                                                             |
+| Parameter                  | Description                                                                                                                                                                                                   |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| referStatus                | The SIP status response to the `REFER` request.                                                                                                                                                               |
+| final_referred_call_status | The parameter indicates the final SIP status of the subsequent call to the transferee. This parameter is provided only when the `REFER` is accepted and `NOTIFY` requests are received from the remote party. |
+| eventHook.event            | Transfer status.                                                                                                                                                                                              |
+| eventHook.call_status      | Contains a SIP status received in a `NOTIFY` after a successful `REFER`.                                                                                                                                      |
 
 Example:
 

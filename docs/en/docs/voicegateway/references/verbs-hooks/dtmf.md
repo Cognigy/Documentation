@@ -20,7 +20,7 @@ The `dtmf` command generates a string of DTMF digit signals, which are transmitt
 
 The full set of configuration parameters:
 
-| Parameter | Description                                                      | Required |
-|-----------|------------------------------------------------------------------|----------|
-| dtmf      | A string containing a sequence of DTMF digits (`0-9`, `*`, `#`). | Yes      |
-| duration  | The length of each digit, in milliseconds. Defaults to 500.      | No       |
+| Parameter | Description                                                           | Required |
+|-----------|-----------------------------------------------------------------------|----------|
+| dtmf      | A string containing a sequence of DTMF digits (`0-9`, `*`, `#`).      | Yes      |
+| duration  | The length of each digit in milliseconds. The default value is `500`. | No       |

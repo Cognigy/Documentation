@@ -8,7 +8,7 @@ hidden: false
 
 To create a voice agent,
 you need to build a Flow on the Cognigy.AI side using [Voice Nodes](../../../ai/flow-nodes/vg/voice-gateway.md).
-However, if you need more commands, you can add them using a [Code Node](#custom-commands-in-a-code-node). 
+However, if you require additional commands that are not available in the Voice Nodes, you can add them using a [Code Node](#custom-commands-in-a-code-node). 
 
 ## List of Commands
 
