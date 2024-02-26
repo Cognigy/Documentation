@@ -7,7 +7,7 @@ hidden: false
 
 # Knowledge AI
 
-[![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../release-notes/4.68.md)
+[![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../../release-notes/4.70.md)
 
 {! _includes/ai/terms-of-use-ks.md !}
 
@@ -53,6 +53,11 @@ You can create a preconfigured knowledge store. To do this, follow these steps:
         - **Connection name** — create a unique name for your connection.<br>
         - **apiKey** — add an API Key from your OpenAI account. You can find this key in the [User settings](https://help.openai.com/en/articles/4936850-where-do-i-find-my-secret-api-key) of your OpenAI account.<br>
         - **Custom Model** — this parameter is optional. Add the particular model you want to use. This parameter is helpful when you have multiple types of models on the LLM provider side and intend to utilize a specific model type. For example, if you have GPT-4, you can specify `gpt-4-0613` for your use case. When a custom model is added, the default LLM Model will be ignored. For more information about provider's models, refer to the [OpenAI documentation](https://platform.openai.com/docs/models/overview).<br>
+
+    === "Aleph Alpha"
+        - **Connection name** — create a unique name for your connection.<br>
+        - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>        
+        - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL, for example: `https://api.aleph-alpha.com`.
 
 6. Click **Next**. 
 7. Download the [cognigy-sample.ctxt](https://docs.cognigy.com/ai/images/knowledge-ai/cognigy-sample.ctxt) file in the `.ctxt` format. 

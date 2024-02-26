@@ -22,7 +22,7 @@ Just as within other Nodes, `input`, `context` and `profile` can be accessed (an
 
 The `actions` object provides access to most internal Cognigy functions within the Code Node. For more information, refer to [Actions](actions.md).
 
-The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](../../flow-nodes/code/actions.md#text-cleaner).
+The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](../../flow-nodes/code/modules.md#text-cleaner).
 
 The `lastConversationEntries` array contains the user inputs and bot outputs for the past 10 turns of the conversation in the following format:
 

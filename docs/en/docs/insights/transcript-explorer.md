@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
 
-The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
+The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
 It allows you to analyze transcripts of conversations between end users and agents in detail.
 The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
@@ -17,7 +17,7 @@ For example, you can search for keywords such as booking, canceling, or messagin
 
 To open the Transcript Explorer, use one of the following options:
 
-=== "via Cognigy.AI"
+=== "Via Cognigy.AI"
     1. Open the Cognigy.AI interface.
     2. In the left-side menu, select an Agent.
     3. Within the Agent interface, navigate to Insights using one of the following options:
@@ -53,7 +53,7 @@ The list of sessions has the following parameters:
 
 ### Sort Sessions
 
-To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover your mouse over a column title and select the sorting option you prefer:
+To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover the cursor over a column title and select the sorting option you prefer:
 
 - Click the up arrow ![arrow-up-black](../assets/icons/arrow-up-black.svg) to sort in ascending order.
 - Click the down arrow ![arrow-down-black](../assets/icons/arrow-down-black.svg) to sort in descending order.
@@ -74,7 +74,7 @@ By default, the Transcript Explorer shows the **Global Filters** section at the 
 You can filter sessions by using the following options:
 
 - [Global Filters](#global-filters)
-- [Additional Local Filters](#additional-local-filters)
+- [Additional Filters](#additional-filters)
 
 To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner. 
 
@@ -82,34 +82,26 @@ To hide the Filter menu, click ![insight-filter-black](../assets/icons/insight-f
 
 For more information, read the [Global Filter](global-filter.md) documentation.
 
-### Additional Local Filters
+### Additional Filters
 
-You can use the Local Filters to refine your research.
+You can use additional filters to refine your research.
 
-To open the **Local Filters** selection,
+To open the **Additional Filters** selection,
 click **more filters ![insight-filter-black](../assets/icons/insight-filter-black.svg)** in the **Global Filters** section at the top of the **Transcript Explorer** page.
 
 | Filter              | Description                                                                                                                                                                                                                                                                                                                           |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Rating      | Select the rating criteria: <br> - **Positive** — messages perceived positively. <br>- **None** — messages with no sentiment. <br>- **Negative** — messages perceived negatively.                                                                                                                                                     |
-| Source              | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> **Agent Messages** — messages sent by human agents.                                                                                                                  |
+| Source              | Select one or more message sources: <br> - **Virtual Agent Messages** — messages sent by virtual agents. <br> - **User Messages** — messages sent by users. <br> - **Agent Messages** — messages sent by human agents.                                                                                                                |
 | Goals               | Select from predefined goals to narrow down results according to specific objectives or targets.                                                                                                                                                                                                                                      |
 | Flow                | Specify one or more Flows to filter messages generated during the selected Flow passing.                                                                                                                                                                                                                                              |
 | Contains Step       | Refine your search results by selecting a predefined analytic step. To access analytic steps, ensure you define descriptive names in the Node settings of your Flow within Cognigy.AI. These steps are crucial for identification and analysis within Cognigy Insights, as they are logged once Nodes are passed during interactions. |
 | Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
 | Message count: To   | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with more messages than this threshold will not be included in the results.                                                                                                   |
 
-### Exclude Filters
+{! _includes/insights/exclude-filters.md !}
 
-When you toggle the **Negate** option, all filters except the selected one will be analyzed.
-For example, if you select the **Agent Messages** filter and **Negate**, all data except **Agent Messages** will be analyzed.
-
-### Reset Filters
-
-To reset all filters, at the top of the **Transcript Explorer** page, click the **Reset** button on the right side of the Global Filters.
-
-If the **Reset** button is not displayed,
-click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Transcript Explorer** page.
+{! _includes/insights/reset-filters.md !}
 
 ## View Session Transcript
 
@@ -126,7 +118,7 @@ To view a session transcript, select a session from the list on the **Transcript
 
 A session transcript shows all the individual messages
 exchanged between the end user and the agent during a conversation.
-When you select a session, the corresponding transcript will be displayed on the right-hand side of the page.
+When you select a session, the corresponding transcript will be displayed on the right side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
 #### Expert mode

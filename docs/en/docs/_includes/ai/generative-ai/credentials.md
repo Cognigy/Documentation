@@ -51,10 +51,11 @@
     === "Aleph Alpha"
         8.1 Fill in the following fields:<br>
             - **Connection name** — create a unique name for your connection.<br>
-            - **Token*** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>
+            - **Token** — specify a key that you created in your [Aleph Alpha account](https://docs.aleph-alpha.com/docs/account/#create-a-new-token).<br>
         8.2 Click **Create**.<br>
         8.3 Fill in the remaining field:<br>
-            - **Custom Model** — specify a particular model you want to use, for example, `luminous-base`. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about the provider's models, refer to the [Aleph Alpha documentation](https://docs.aleph-alpha.com/docs/introduction/model-card).<br>  
+            - **Custom Model** — specify a particular model you want to use, for example, `luminous-base`. This parameter is optional. When a custom model is added, the default LLM Model will be ignored. For more information about the provider's models, refer to the [Aleph Alpha documentation](https://docs.aleph-alpha.com/docs/introduction/model-card).<br>
+            - **Custom URL** — this parameter is optional. To control the connection between your clusters and the Aleph Alpha provider, you can route connections through dedicated proxy servers, creating an additional layer of security. To do this, specify the base URL. For example, `https://api.aleph-alpha.com`.
 
 9. To apply changes, click **Save**.
 10. To check if the connection was set up, click **Test**.

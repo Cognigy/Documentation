@@ -1,20 +1,17 @@
 ---
- title: "Timezone" 
- slug: "timezone" 
- hidden: false 
+title: "Time Zone" 
+slug: "timezone"
+hidden: false 
 ---
-# Timezone
 
-## Timezone support
-
-<div class="divider"></div>
+# Time Zone
 
 Insights applications support presenting time-based data with an account to the user's time zone. 
 
 !!! note 
     In OData feed time is always in UTC format. You should take this into account if you compare it with Insights.
 
-## Changing the preferred Time zone
+## Changing the preferred Time Zone
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.14-blue.svg)]({{config.site_url}})
 
@@ -24,15 +21,9 @@ This comes handy if you travel a lot and your device time zone gets updated by y
 
 To change time zone preferences:
 
-- Click on the user icon in the top-right corner.
-- Select **My Profile**.
-
-<figure>
-  <img class="image-center" src="{{config.site_url}}insights/images/user-menu-my-profile.png" width="50%" alt="User menu with 'My profile' option" />
-  <figcaption>User menu with "My profile" option</figcaption>
-</figure>
-
-- Choose preferred time zone in the "Select Timezone" input.
+1. Click on the user icon in the top-right corner.
+2. Select **My Profile**.
+3. Choose preferred time zone in the **Select Time zone** input.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/my-profile-timezone-selection.png" width="100%" alt="Excerpt of the settings on 'My Profile page'" />

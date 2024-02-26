@@ -55,6 +55,7 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - release-notes/4.70.md
   - 4.69:
     - release-notes/4.69.md
   - 4.68:
@@ -623,6 +624,8 @@ nav:
       - voicegateway/webapp/phone-numbers.md
     - Outbound Call Routing:
       - voicegateway/webapp/outbound-call-routing.md
+  - Creating Outbound Calls:
+    - voicegateway/creating-outbound-calls.md
   - References:
     - Voice Gateway Commands:
       - voicegateway/references/verbs-hooks/overview.md
