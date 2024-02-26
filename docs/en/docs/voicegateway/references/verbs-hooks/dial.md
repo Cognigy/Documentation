@@ -48,7 +48,7 @@ In the example, the `dial` command creates a new call and joins it to a parent c
 }
 ```
 
-When multiple endpoints are mentioned in the target array, all the endpoints are dialed at the same time (also known as simring or blast outdial). The call will be connected to the first endpoint that answers the call or completes a call screening application, as specified in the confirmHook property.
+When multiple endpoints are mentioned in the `target` array, all the endpoints are dialed at the same time (also known as simring or blast outdial). The call will be connected to the first endpoint that answers the call or completes a call screening application, as specified in the `confirmHook` property.
 
 There are several types of endpoints that you can dial:
 
@@ -81,12 +81,12 @@ The full set of configuration parameters:
 
 ### PSTN Number
 
-| Parameter   | Description                                                                                                                                                                                                                                                      | Required |
-|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| type        | Select a `phone` type.                                                                                                                                                                                                                                           | Yes      |
-| confirmHook | A webhook that triggers an application on the callee's end after the dialed number answers but before the call is connected. This action will override any `confirmHook` property set on the parent `dial`.                                                      | No       |
-| number      | A telephone number in E.164 format.                                                                                                                                                                                                                              | Yes      |
-| trunk       | If provided, this should be the name of a Carrier that you created in the Voice Gateway Self-Service portal, which you want to use to complete this call. If not provided, Voice Gateway will select one of your configured Carriers that has an outbound trunk. | No       |
+| Parameter   | Description                                                                                                                                                                                                                                                                                      | Required |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| type        | Select a `phone` type.                                                                                                                                                                                                                                                                           | Yes      |
+| confirmHook | A webhook that triggers an application on the callee's end after the dialed number answers but before the call is connected. This action will override any `confirmHook` property set on the parent `dial`.                                                                                      | No       |
+| number      | A telephone number in E.164 format.                                                                                                                                                                                                                                                              | Yes      |
+| trunk       | If provided, this should be the name of a [carrier](../../webapp/carriers.md) that you created in the Voice Gateway Self-Service portal, which you want to use to complete this call. If not provided, Voice Gateway will select one of your configured carriers that has an outbound SIP trunk. | No       |
 
 ### SIP Endpoint
 

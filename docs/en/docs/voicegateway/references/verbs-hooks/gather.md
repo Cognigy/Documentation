@@ -40,12 +40,12 @@ The full set of configuration parameters:
 
 | Parameter           | Description                                                                                                                                                                  | Required |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| actionHook          | A webhook POST to invoke with the collected digits or speech. The payload will include a `speech` or `dtmf` property along with the standard attributes.                     | Yes      |
+| actionHook          | A webhook POST to invoke with the collected digits or speech. The payload includes a `speech` or `dtmf` property along with the standard attributes.                         | Yes      |
 | bargein             | Enable speech barge-in, which pauses audio playback if the caller starts speaking.                                                                                           | No       |
 | dtmfBargein         | Enable DTMF barge-in, which pauses audio playback if the caller enters DTMF tones.                                                                                           | No       |
 | finishOnKey         | The DTMF key that signals the end of input.                                                                                                                                  | No       |
 | input               | An array specifying the allowed types of input: `['digits']`, `['speech']`, or `['digits', 'speech']`. The default value is `['digits']`.                                    | No       |
-| interDigitTimeout   | The amount of time to wait between digits after minDigits have been entered.                                                                                                 | No       |
+| interDigitTimeout   | The amount of time to wait between digits after `minDigits` have been entered.                                                                                               | No       |
 | listenDuringPrompt  | If this parameter is `false`, the system will not listen for user speech until the [`say`](say.md) or [`play`](play.md) commands has completed. The default value is `true`. | No       |
 | minBargeinWordCount | If `bargein` is `true`, only halt speech when this many words are spoken. The default value is `1`.                                                                          | No       |
 | minDigits           | The minimum number of DTMF digits expected to gather. The default value is `1`.                                                                                              | No       |
@@ -71,7 +71,7 @@ the `actionHook` payload will contain a speech object with the response from the
 		}
 ```
 
-In the case of digits input, the payload will include a `digits` property indicating the DTMF keys pressed:
+In the case of digits input, the payload includes a `digits` property indicating the DTMF keys pressed:
 
 ```json
 "digits": "0276"

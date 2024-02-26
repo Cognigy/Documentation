@@ -22,7 +22,7 @@ One text frame is sent immediately
 after the WebSocket connection is established to send a JSON string with call attributes over an HTTP request.
 Additional metadata can also be added to this payload using the `metadata` parameter.
 
-The `listen` command can also be nested in a [Dial](dial.md) or [Config](config.md) command, allowing the audio for a call between two parties to be sent to a remote WebSocket server.
+The `listen` command can also be nested in a [`dial`](dial.md) or [`config`](config.md) command, allowing the audio for a call between two parties to be sent to a remote WebSocket server.
 
 ```json
 {
@@ -45,7 +45,7 @@ The full set of configuration parameters:
 | mixType         | The following types can be specified:<br> - `mono` — sends a single channel,<br> - `stereo` — sends a dual channel of both calls in a bridge,<br> - `mixed` — sends audio from both calls in a bridge in a single mixed audio stream. The default value is `mono`. | No       |
 | passDtmf        | If this parameter is `true`, detected DTMF digits will be sent over WebSocket as JSON text frames. The default value is `false`.                                                                                                                                   | No       |
 | playBeep        | Enable a beep sound when the listen operation starts. The default value is `false`.                                                                                                                                                                                | No       |
-| sampleRate      | The sample rate of audio to send. Allowable values: 8000, 16000, 24000, 48000, or 64000. The default value is `8000`.                                                                                                                                              | No       |
+| sampleRate      | The sample rate of audio to send. Allowable values: `8000`, `16000`, `24000`, `48000`, or `64000`. The default value is `8000`.                                                                                                                                    | No       |
 | timeout         | The number of seconds of silence that terminates the listen operation.                                                                                                                                                                                             | No       |
 | transcribe      | A nested [transcribe](transcribe.md) command.                                                                                                                                                                                                                      | No       |
 | url             | The URL of the remote server to connect to.                                                                                                                                                                                                                        | Yes      |
@@ -70,8 +70,8 @@ The payload example:
 
 Audio can also be sent back over the WebSocket. This audio, if supplied, will be played out to the caller.
 
-!!! warning "Not supported when nested in Dial or Listen"
-    Bidirectional audio is not supported when the [Listen](listen.md) is nested in the context of a [Dial](dial.md) command.
+!!! warning
+    Bidirectional audio is not supported when the [`listen`](listen.md) is nested in the context of a [`dial`](dial.md) command.
 
 The far-end WebSocket server supplies bidirectional audio by sending a JSON text frame over the WebSocket connection:
 
