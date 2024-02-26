@@ -33,7 +33,7 @@ The full set of configuration parameters:
 The `sip:refer` command completes when one of the following conditions is met:
 
 - A failure response is received to the `REFER`.
-- A 202 Accepted response is received in response to the `REFER`, and a `NOTIFY` of the follow-on call status with a final call status is received.
+- A `202 Accepted` response is received in response to the `REFER`, and a `NOTIFY` of the follow-on call status with a final call status is received.
 - The `sip:refer` has an action hook that will provide details of the final result, as well as an event hook that is called for every `NOTIFY` received after a successful `REFER`.
 
 ### actionHook
