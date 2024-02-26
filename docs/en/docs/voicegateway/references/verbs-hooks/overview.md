@@ -8,7 +8,10 @@ hidden: false
 
 To create a voice agent,
 you need to build a Flow on the Cognigy.AI side using [Voice Nodes](../../../ai/flow-nodes/vg/voice-gateway.md).
-However, if you require additional commands that are not available in the Voice Nodes, you can add them using a [Code Node](#custom-commands-in-a-code-node). 
+These Nodes provide the basic commands required for your voice agent. If you require additional commands that are not available in the Voice Nodes,
+you can add them using a [Code Node](#custom-commands-in-a-code-node). 
+
+For incoming calls, you can use Voice Nodes and a Code Node. However, for outgoing calls, you must specify all parameters in the call request body, as described in the [Advanced Configuration Request](../../creating-outbound-calls.md#advanced-configuration-request) section.
 
 ## List of Commands
 
@@ -25,16 +28,16 @@ The table presents the list of supported commands.
 | [Listen](listen.md)                         | This command sends real-time audio streams to your application over a WebSocket connection for processing. The [Call Recording](../../webapp/recent-calls.md#call-recordings) feature relies on this command.      | [Call Recording](../../../ai/flow-nodes/vg/call-recording.md)                                                     |
 | [Play](play.md)                             | This command streams recorded audio to a call.                                                                                                                                                                     | [Play](../../../ai/flow-nodes/vg/play.md)                                                                         |
 | [Say](say.md)                               | This command sends synthesized speech to the remote party. The text provided may be either plain text or use SSML tags.                                                                                            | [Say](../../../ai/flow-nodes/message/say.md#voice-gateway)                                                        |
-| [SIP:request](sip-request.md)               | This command sends a SIP `INFO`, `NOTIFY,` or `MESSAGE` request on an established call, which is an in-dialog request.                                                                                             | -                                                                                                                 |
+| [SIP:request](sip-request.md)               | This command sends a SIP `INFO`, `NOTIFY`, or `MESSAGE` request on an established call, which is an in-dialog request.                                                                                             | -                                                                                                                 |
 | [SIP:REFER](refer.md)                       | This command transfers a call and disconnect.                                                                                                                                                                      | [Transfer](../../../ai/flow-nodes/vg/transfer.md) (**Refer** settings)                                            |
 | [Transcribe](transcribe.md)                 | This command generates real-time transcriptions of speech.                                                                                                                                                         | [Set Session Config](../../../ai/flow-nodes/vg/set-session-config.md)  (**Recognizer - Speech-To-Text** settings) |
 
 ## Custom Commands in a Code Node
 
-The example shows how a [Code Node](../../../ai/flow-nodes/code/code.md) can send a customized `dial` command with an Answering Machine Detection
+The example shows how a [Code Node](../../../ai/flow-nodes/code/code.md) can send a customized [`dial`](dial.md) command with an Answering Machine Detection
 (`amd`) action hook.
 
-```json
+```javascript
 api.output(null, {
     "_cognigy": {
         "_voiceGateway2": {
@@ -60,8 +63,3 @@ api.output(null, {
     }
 })
 ```
-
-## Outbound Calls
-
-You can use custom commands to control outbound calls.
-For more information, refer to [Create Outbound Calls](../../creating-outbound-calls.md).
