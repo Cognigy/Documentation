@@ -30,7 +30,7 @@ The full set of configuration parameters:
 | eventHook  | A webhook to call when `NOTIFY` messages of follow-on call status are received.                                               | No       |
 | headers    | Additional SIP headers to include in the response.                                                                            | No       |
 
-The `sip:refer` verb completes when one of the following conditions is met:
+The `sip:refer` command completes when one of the following conditions is met:
 
 - A failure response is received to the `REFER`.
 - A 202 Accepted response is received in response to the `REFER`, and a `NOTIFY` of the follow-on call status with a final call status is received.

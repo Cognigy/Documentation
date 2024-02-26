@@ -29,7 +29,7 @@ You can use the following options in the `play` command:
 | earlyMedia  | If true and the call has not yet been answered, play the audio without answering the call. Defaults to false. | No       |
 | timeoutSecs | The number of seconds to play the URLs.                                                                       | No       |
 | seekOffset  | How many samples to seek into the URL.                                                                        | No       |
-| actionHook  | Webhook that is called when the play verb completes.                                                          | No       |
+| actionHook  | Webhook that is called when the `play` command completes.                                                     | No       |
 
 ## actionHook Properties
 

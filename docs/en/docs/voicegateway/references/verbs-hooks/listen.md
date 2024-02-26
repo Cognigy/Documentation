@@ -45,7 +45,7 @@ The full set of configuration parameters:
 | playBeep        | True or False. Whether to play a beep at the start of the listen operation. The default value is `false`.                                                                                                                                                          | No       |
 | sampleRate      | The sample rate of audio to send. Allowable values: 8000, 16000, 24000, 48000, or 64000. The default value is `8000`.                                                                                                                                              | No       |
 | timeout         | The number of seconds of silence that terminates the listen operation.                                                                                                                                                                                             | No       |
-| transcribe      | A nested [transcribe](transcribe.md) verb.                                                                                                                                                                                                                         | No       |
+| transcribe      | A nested [transcribe](transcribe.md) command.                                                                                                                                                                                                                      | No       |
 | url             | The URL of the remote server to connect to.                                                                                                                                                                                                                        | Yes      |
 | wsAuth.username | The HTTP basic auth username to use on the WebSocket connection.                                                                                                                                                                                                   | No       |
 | wsAuth.password | The HTTP basic auth password to use on the WebSocket connection.                                                                                                                                                                                                   | No       |
@@ -69,7 +69,7 @@ The payload example:
 Audio can also be sent back over the WebSocket. This audio, if supplied, will be played out to the caller.
 
 !!! warning "Not supported when nested in Dial or Listen"
-    Bidirectional audio is not supported when the [Listen](listen.md) is nested in the context of a [Dial](dial.md) verb.
+    Bidirectional audio is not supported when the [Listen](listen.md) is nested in the context of a [Dial](dial.md) command.
 
 The far-end WebSocket server supplies bidirectional audio by sending a JSON text frame over the WebSocket connection:
 

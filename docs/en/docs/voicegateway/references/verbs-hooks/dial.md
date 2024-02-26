@@ -84,20 +84,20 @@ The full set of configuration parameters:
 | Parameter   | Description                                                                                                                                                                                                                                | Required |
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
 | type        | Select a `phone` type.                                                                                                                                                                                                                     | Yes      |
-| confirmHook | A webhook for an application to run on the callee's end after the dialed number answers but before the call is connected. This will override the confirmHook property set on the parent dial verb, if any.                                 | No       |
+| confirmHook | A webhook for an application to run on the callee's end after the dialed number answers but before the call is connected. This will override the confirmHook property set on the parent `dial` command, if any.                            | No       |
 | number      | A telephone number in E.164 format.                                                                                                                                                                                                        | Yes      |
 | trunk       | If provided, this should be the name of a Carrier that you created in the VG Self-Service portal, which you want to use to complete this call. If not provided, VG will select one of your configured Carriers that has an outbound trunk. | No       |
 
 ### SIP Endpoint
 
-| Parameter     | Description                                                                                                                                                                                                  | Required |
-|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| type          | Select a `sip` type.                                                                                                                                                                                         | Yes      |
-| confirmHook   | A webhook for an application to run on the callee's end after the dialed number answers but before the call is connected. This will override the `confirmHook` property set on the parent dial verb, if any. | No       |
-| sipUri        | SIP URI to send the call to.                                                                                                                                                                                 | Yes      |
-| auth          | Authentication credentials.                                                                                                                                                                                  | No       |
-| auth.username | SIP username.                                                                                                                                                                                                | No       |
-| auth.password | SIP password.                                                                                                                                                                                                | No       |
+| Parameter     | Description                                                                                                                                                                                                       | Required |
+|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| type          | Select a `sip` type.                                                                                                                                                                                              | Yes      |
+| confirmHook   | A webhook for an application to run on the callee's end after the dialed number answers but before the call is connected. This will override the `confirmHook` property set on the parent `dial` command, if any. | No       |
+| sipUri        | SIP URI to send the call to.                                                                                                                                                                                      | Yes      |
+| auth          | Authentication credentials.                                                                                                                                                                                       | No       |
+| auth.username | SIP username.                                                                                                                                                                                                     | No       |
+| auth.password | SIP password.                                                                                                                                                                                                     | No       |
 
 If the SIP Carrier provider requires username/password authentication, specify the credentials in the `auth` property.
 
