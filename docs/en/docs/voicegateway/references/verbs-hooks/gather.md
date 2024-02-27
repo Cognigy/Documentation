@@ -28,7 +28,8 @@ The `gather` command is used to collect DTMF or speech input.
     "text": "To speak to Sales press 1 or say Sales. To speak to customer support press 2 or say Support",
     "synthesizer": {
       "vendor": "Google",
-      "language": "en-US"
+      "language": "en-US",
+      "voice": "en-US-Wavenet-F"
     }
   }
 }
@@ -40,7 +41,7 @@ The full set of configuration parameters:
 
 | Parameter           | Description                                                                                                                                                                  | Required |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| actionHook          | A webhook POST to invoke with the collected digits or speech. The payload includes a `speech` or `dtmf` property along with the standard attributes.                         | Yes      |
+| actionHook          | A webhook POST to send the collected digits or speech. The payload includes a `speech` or `dtmf` property along with the standard attributes.                         | Yes      |
 | bargein             | Enable speech barge-in, which pauses audio playback if the caller starts speaking.                                                                                           | No       |
 | dtmfBargein         | Enable DTMF barge-in, which pauses audio playback if the caller enters DTMF tones.                                                                                           | No       |
 | finishOnKey         | The DTMF key that signals the end of input.                                                                                                                                  | No       |
@@ -51,7 +52,7 @@ The full set of configuration parameters:
 | minDigits           | The minimum number of DTMF digits expected to gather. The default value is `1`.                                                                                              | No       |
 | maxDigits           | The maximum number of DTMF digits expected to gather.                                                                                                                        | No       |
 | numDigits           | The exact number of DTMF digits expected to gather.                                                                                                                          | No       |
-| partialResultHook   | A webhook to send interim transcription results to. Partial transcriptions are only generated if this property is set.                                                       | No       |
+| partialResultHook   | A webhook POST to send interim transcription results to. Partial transcriptions are only generated if this property is set.                                                       | No       |
 | play                | A nested [`play`](play.md) command that can be used to prompt the user.                                                                                                      | No       |
 | recognizer          | Speech recognition options.                                                                                                                                                  | No       |
 

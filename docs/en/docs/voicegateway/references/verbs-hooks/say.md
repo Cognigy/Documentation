@@ -19,7 +19,8 @@ The `say` command is used to send synthesized speech to the remote party. The te
   "text": "hi there!",
   "synthesizer" : {
     "vendor": "google",
-    "language": "en-US"
+    "language": "en-US",
+    "voice": "en-US-Wavenet-F"
   }
 }
 ```
@@ -29,10 +30,10 @@ The `say` command is used to send synthesized speech to the remote party. The te
 The full set of configuration parameters:
 
 | Parameter            | Description                                                                                                                                   | Required |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| text                 | The text to speak. May contain SSML tags.                                                                                                     | Yes      |
-| synthesizer.vendor   | The speech vendor to use for synthesis.                                                                                                       | No       |
-| synthesizer.language | The language code,                                                                                                                            | No       |
-| synthesizer.voice    | The voice to use. Check the voice lists of the vendor used. Defaults to the [Application](../../webapp/applications.md) setting, if provided. | No       |
-| loop                 | The number of times the text is to be repeated; 0 means repeat forever. The default value is `1`.                                             | No       |
-| earlyMedia           | If this parameter is `true` and the call has not yet been answered, play the audio without answering the call. The default value is `false`.  | No       |
+|----------------------|------------------------|----------|
+| text                 | The text to speak. May contain SSML tags. | Yes      |
+| synthesizer.vendor   | The speech vendor to use for synthesis. | No       |
+| synthesizer.language | The language code. Required, if `synthesizer.vendor` is defined | No       |
+| synthesizer.voice    | The voice to use. Check the voice lists of the vendor used. Defaults to the [Application](../../webapp/applications.md) setting, if provided. Required, if `synthesizer.vendor` is defined | No       |
+| loop | The number of times the text is to be repeated; 0 means repeat forever. The default value is `1`. | No       |
+| earlyMedia | If this parameter is `true` and the call has not yet been answered, play the audio without answering the call. The default value is `false`.  | No       |

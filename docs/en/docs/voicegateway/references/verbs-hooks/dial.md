@@ -13,7 +13,7 @@ In the example, the `dial` command creates a new call and joins it to a parent c
 ```json
 {
   "verb": "dial",
-  "actionHook": "/outdial",
+  "actionHook": "dial",
   "callerId": "+491173331212",
   "answerOnBridge": true,
   "dtmfCapture": ["*2", "*3"],
@@ -22,7 +22,7 @@ In the example, the `dial` command creates a new call and joins it to a parent c
     "method": "GET"
   },
   "amd": {
-    "actionHook": "/amd",
+    "actionHook": "amd",
     "disconnectOnAMD": true,
 
   }
@@ -48,7 +48,7 @@ In the example, the `dial` command creates a new call and joins it to a parent c
 }
 ```
 
-When multiple endpoints are mentioned in the `target` array, all the endpoints are dialed at the same time (also known as simring or blast outdial). The call will be connected to the first endpoint that answers the call or completes a call screening application, as specified in the `confirmHook` property.
+When multiple endpoints are mentioned in the `target` array, all the endpoints are dialed at the same time (also known as simring or blast dial). The call will be connected to the first endpoint that answers the call or completes a call screening application, as specified in the `confirmHook` property.
 
 There are several types of endpoints that you can dial:
 
@@ -60,22 +60,22 @@ There are several types of endpoints that you can dial:
 The full set of configuration parameters:
 
 | Parameter      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                | Required |
-|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| actionHook     | A webhook to invoke when the call ends. The webhook includes the [properties](#actionHook-properties) describing the outcome of the call attempt.                                                                                                                                                                                                                                                                                          | No       |
-| amd            | Enable the [Answering Machine Detection](amd.md).                                                                                                                                                                                                                                                                                                                                                                                          | No       |
+|----------------|---------------------------------------|----------|
+| actionHook     | A webhook to receive HTTP POST when the call ends. The webhook includes the [properties](#actionHook-properties) describing the outcome of the call attempt. Default is `dial`| No       |
+| amd            | Enable the [Answering Machine Detection](amd.md).| No       |
 | answerOnBridge | If the parameter for an inbound call is `true`, the call will continue to ring until the dialed number answers. Once the call is answered, a 200 OK message will be sent on the inbound call. However, if this parameter is `false`, the inbound call will be connected as soon as the outbound call is placed.<br>The default value is `false`.                                                                                           | No       |
-| callerId       | The inbound caller's phone number, which is displayed to the number that was dialed. The caller ID must be a valid E.164 number.<br>The default value is the caller ID received from the inbound call.                                                                                                                                                                                                                                     | No       |
+| callerId       | The inbound caller's phone number, which is displayed to the number that was dialed. The caller ID must be a valid E.164 number.<br>The default value is the caller ID received from the inbound call.| No       |
 | confirmHook    | A webhook for an application to run on the callee's end after the dialed number answers but before the call is connected. This allows the caller to provide information to the dialed number, giving them the opportunity to decline the call, before they answer the call. Note that if you want to run different applications on specific destinations, you can specify the `url` property on the nested [target](#target-types) object. | No       |
-| dialMusic      | The URL specifies a WAV or MP3 audio file containing custom audio or ringback tones to play for the caller while the outbound call is ringing.                                                                                                                                                                                                                                                                                             | No       |
-| dtmfCapture    | An array of strings representing DTMF sequences that trigger a mid-call notification to the application via the configured `dtmfHook`.                                                                                                                                                                                                                                                                                                     | No       |
-| dtmfHook       | A notification-only webhook to trigger on `dtmfCapture` entry matches.                                                                                                                                                                                                                                                                                                                                                                     | No       |
-| headers        | An object containing SIP headers to apply to the outbound call attempts.                                                                                                                                                                                                                                                                                                                                                                   | No       |
-| listen         | A nested [listen](listen.md) parameter streams call audio to a remote server via websockets.                                                                                                                                                                                                                                                                                                                                               | No       |
+| dialMusic      | The URL specifies a WAV or MP3 audio file containing custom audio or ringback tones to play for the caller while the outbound call is ringing. | No       |
+| dtmfCapture    | An array of strings representing DTMF sequences that trigger a mid-call notification to the application via the configured `dtmfHook`. | No       |
+| dtmfHook       | A notification-only webhook to trigger on `dtmfCapture` entry matches. | No       |
+| headers        | An object containing SIP headers to apply to the outbound call attempts. | No       |
+| listen         | A nested [listen](listen.md) parameter streams call audio to a remote server via websockets. | No       |
 | referHook      | A webhook to invoke an application when a SIP `REFER` is received on a dialed call. If the application accepts the `REFER`, it should return HTTP status code `200`, and Voice Gateway will send a SIP `202 Accepted`. Any non-success status will cause Voice Gateway to send a SIP response with the same status code. a webhook to invoke an application when a SIP `REFER` is received on a dialed call.                               | No       |
-| target         | An array of up to 10 [destinations](#target-types) to simultaneously dial. The entity to answer the call will be connected to the caller and the rest of the called numbers will be hung up.                                                                                                                                                                                                                                               | Yes      |
-| timeLimit      | The maximum length of the call in seconds.                                                                                                                                                                                                                                                                                                                                                                                                 | No       |
-| timeout        | The ring-no-answer timeout in seconds.<br> The default value is 60.                                                                                                                                                                                                                                                                                                                                                                        | No       |
-| transcribe     | A nested [transcribe](transcribe.md) action, which will cause the call to be transcribed.                                                                                                                                                                                                                                                                                                                                                  | No       |
+| target         | An array of up to 10 [destinations](#target-types) to simultaneously dial. The entity to answer the call will be connected to the caller and the rest of the called numbers will be hung up. | Yes      |
+| timeLimit      | The maximum length of the call in seconds. | No       |
+| timeout        | The ring-no-answer timeout in seconds.<br> The default value is 60. | No       |
+| transcribe     | A nested [transcribe](transcribe.md) action, which will cause the call to be transcribed. | No       |
 
 ## Target Types
 

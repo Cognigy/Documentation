@@ -13,7 +13,7 @@ This command sends a `REFER` message to the carrier (SIP trunk) or SIP phone. Fo
 ```json
 {
   "verb": "sip:refer",
-  "referTo": +49XXXXXXXXXXX,
+  "referTo": "49XXXXXXXXXXX",
   "actionHook": "/action"
 }
 ```
@@ -23,12 +23,12 @@ This command sends a `REFER` message to the carrier (SIP trunk) or SIP phone. Fo
 The full set of configuration parameters:
 
 | Parameters | Description                                                                                                                                | Required |
-|------------|--------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| referTo    | A SIP URI or a phone number/user identifier.                                                                                               | Yes      |
+|------------|----------------------------------------|----------|
+| referTo    | A SIP URI or a phone number/user identifier. | Yes      |
 | referredBy | A SIP URI or a phone number/user identifier. If the value is not provided, it will default to the identity of the party being transferred. | No       |
-| actionHook | A webhook to call when the transfer has completed.                                                                                         | No       |
-| eventHook  | A webhook to call when `NOTIFY` messages of follow-on call status are received.                                                            | No       |
-| headers    | Additional SIP headers to include in the response.                                                                                         | No       |
+| actionHook | A webhook to receive an HTTP POST when the call was completed. Default is `refer`| No       |
+| eventHook  | A webhook to receive an HTTP POST when `NOTIFY` messages of follow-on call status are received. | No       |
+| headers    | Additional SIP headers to include in the response. | No       |
 
 The `sip:refer` command completes when one of the following conditions is met:
 

@@ -114,7 +114,8 @@ JSON-Beispiel:
 {
   "synthesizer": {
     "vendor": "Microsoft",
-    "language": "de-DE""voice": "de-US-JennyNeural"
+    "language": "de-DE",
+    "voice": "de-US-JennyNeural"
   },
   "Erkennung": {
     "vendor": "Google",

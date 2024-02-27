@@ -31,7 +31,7 @@ The full set of configuration parameters:
 | method     | The SIP method, which should be one of `INFO`, `MESSAGE`, or `NOTIFY`.         | Yes      |
 | headers    | An object that holds headers (key-value pairs) to include in the SIP request.  | No       |
 | body       | The body of the SIP request.                                                   | No       |
-| actionHook | A webhook to call when the SIP request has completed.                          | No       |
+| actionHook | A webhook to receive an HTTP POST when the SIP request has completed.                    | No       |
 
 ### Send a Nested Object
 

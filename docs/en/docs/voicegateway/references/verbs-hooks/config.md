@@ -12,7 +12,9 @@ The `config` command allows developers to change the default speech settings dur
 {
   "verb": "config",
   "synthesizer": {
-    "voice": "Jenny"
+    "vendor": "microsoft",
+    "language": "de-DE",
+    "voice": "de-DE-KillianNeural"
   },
   "recognizer": {
     "vendor": "google",
@@ -23,7 +25,7 @@ The `config` command allows developers to change the default speech settings dur
     "input": [
       "speech"
     ],
-    "actionHook: "/userInput"
+    "actionHook": "/userInput"
   }
 }
 ```
@@ -38,7 +40,7 @@ The full set of configuration parameters:
 | bargein                    | A background [`gather`](gather.md) command.                                                                                                                    | No                                         |
 | bargeIn.enable             | If true, begins listening for speech or DTMF input while the session executes other commands. If false, stops any background listening task in progress.       | No                                         |
 | bargeIn.sticky             | If both `bargeIn.enable` and `bargeIn.sticky` are `true`, another background [`gather`](gather.md) will automatically initiate after detecting speech or DTMF. | No                                         |
-| bargeIn.actionHook         | A webhook to call if the user input is collected from the background gather.                                                                                   | No                                         |
+| bargeIn.actionHook         | A webhook to call if the user input is collected from the background gather. Default is `voice`                                                                                  | No                                         |
 | bargeIn.input              | An array specifying the allowed types of input: `['digits']`, `['speech']`, or `['digits', 'speech']`.                                                         | Yes                                        |
 | bargeIn.finishOnKey        | The DTMF key that signals the end of DTMF input.                                                                                                               | No                                         |
 | bargeIn.numDigits          | The exact number of DTMF digits expected to gather.                                                                                                            | No                                         |

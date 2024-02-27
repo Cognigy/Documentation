@@ -43,7 +43,7 @@ api.output(null, {
         "_voiceGateway2": {
             "json": {
                 "verb": "dial",
-                "actionHook": "/outdial",
+                "actionHook": "dial",
                 "callerId": "+49XXXXXXXXXXX",
                 "target": [
                     {
