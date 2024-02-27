@@ -8,7 +8,7 @@ hidden: false
 # Check Agent Availability
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/check-agent-availability.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/services/check-agent-availability.png" width="80%" />
 </figure>
 
 ## Description
@@ -69,7 +69,7 @@ These settings applicable to both [Genesys Cloud Guest Chat](../../handover-prov
 
 ## Example
 
-To build a simple Flow using the Check Agent Availability Node, follow these steps:
+To build a Flow using the Check Agent Availability Node, follow these steps:
 
 1. In the Flow editor, add a **Check Agent Availability Node**.
 2. In the **Check Agent Availability** Node editor, enter the required values. For example, for the Live Agent handover provider, you need to specify **Live Agent Inbox Id**, **Skills**, and **Languages** that help you sort available agents.
@@ -88,7 +88,7 @@ To build a simple Flow using the Check Agent Availability Node, follow these ste
 To test your Flow, use [Demo Webchat](../../endpoints/webchat/integrated-demo-page.md).
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/check-agent-availability-flow.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/services/check-agent-availability-flow.png" width="100%" />
 </figure>
 
 ## More Information

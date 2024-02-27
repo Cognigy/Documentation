@@ -20,7 +20,7 @@ For more information, read the [AI Copilot](../ai-copilot/overview.md) documenta
 
 _**Agent Handover**_
 : A Cognigy feature that allows virtual agents to transfer conversations to human agents when necessary, combining automation with human support for improved customer service. Agent Handover can be integrated in a Flow by using the Handover to Agent Node, with settings that allow connecting to various contact centers, such as Cognigy Live Agent, Genesys, 8x8, Salesforce, and many others.
-For more information, read the [Agent Handover](tools/agent-handover.md) documentation.
+For more information, read the [Agent Handover](nodes/service/handover-to-agent.md) documentation.
 
 _**Agent Settings**_
 : The configuration menu that provides customization options to activate, deactivate, and adjust important settings that affect the performance and results of the agent's NLU and Flow logic.
@@ -231,11 +231,11 @@ For more information, read the [Building the NLU Model](nlu/nlu-overview/ml-inte
 
 _**Node Editor**_
 : A graphical interface where users can modify the settings of individual Nodes to define their behavior within the Flow.
-For more information, read the [Node](flow-nodes/flow-nodes-overview.md) documentation.
+For more information, read the [Node](nodes/overview.md) documentation.
 
 _**Nodes**_
 : Fundamental building blocks that are used to construct Flows and define the logic of virtual agents. Each node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
-For more information, read the [Nodes](flow-nodes/flow-nodes-overview.md) documentation.
+For more information, read the [Nodes](nodes/overview.md) documentation.
 
 ## O
 
@@ -270,7 +270,7 @@ _**Slot**_
 For more information, read the [Slots](nlu/slot-mapping/slot-mapping.md) documentation.
 
 _**Snapshot**_
-: A snapshot is an immutable form of a Virtual Agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more. Snapshots can be used to create a copy of a Virtual Agent for deployment, to create backups, or to revert to an earlier state if needed.
+: A snapshot is an immutable form of a virtual agent in Cognigy.AI that includes various resources such as Flows, Lexicons, Connections, Functions, and more. Snapshots can be used to create a copy of a virtual agent for deployment, to create backups, or to revert to an earlier state if needed.
 For more information, read the [Snapshots](resources/deploy/snapshots.md) documentation.
 
 _**State**_

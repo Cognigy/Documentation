@@ -8,7 +8,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../release-notes/4.68.md)
 
-Within a [Code Node](code.md), you can use the functions of the `actions` and `api` classes.
+Within a [Code Node](overview.md), you can use the functions of the `actions` and `api` classes.
 
 !!! note "Available in Extensions"
     The following functions are available in Extensions as well. There, one can use the `api` object and, for example, execute an `api.say()`.

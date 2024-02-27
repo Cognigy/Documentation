@@ -6,7 +6,7 @@ hidden: false
 # Close Handover
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/close-handover.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/close-handover.png" width="80%" />
   <figcaption>Close Handover</figcaption>
 </figure>
 

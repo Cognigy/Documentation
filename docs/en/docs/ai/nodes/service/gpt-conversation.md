@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.48(Research preview)-purple.svg)](../../../release-notes/4.48.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/gpt-conversation.png" width="80%" />
 </figure>
 
 ## Description
@@ -18,7 +18,7 @@ hidden: false
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
 
-The GPT Conversation Node processes and comprehends natural language input from users and utilizes this input to generate relevant and contextually appropriate responses. The Node configuration includes defining a persona, knowledge, and task for the bot, allowing it to generate AI-based responses to user inputs and trigger actions. The GPT Conversation Node can support the entire conversation using Large Language Models (LLMs).
+The GPT Conversation Node processes and comprehends natural language input from users and utilizes this input to generate relevant and contextual appropriate responses. The Node configuration includes defining a persona, knowledge, and task for the bot, allowing it to generate AI-based responses to user inputs and trigger actions. The GPT Conversation Node can support the entire conversation using Large Language Models (LLMs).
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 
@@ -62,7 +62,7 @@ Grounding Knowledge is the foundational information that the virtual agent has a
 |---------------------|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Grounding Mode      | Select               | Choose how grounding knowledge is acquired. The following modes are available: <br> - **Perform Knowledge Search** — retrieves data from the specific Knowledge Store.<br> - **Enter Custom Grounding Knowledge** — retrieves data from the knowledge you provided in the **Grounding Knowledge** field.<br> - **Do not inject grounding knowledge** — deactivates grounding mode. |
 | Knowledge Store     | Select/CognigyScript | This field appears if you selected the **Perform Knowledge Search** grounding mode. <br><br>Select the Knowledge Store to use. You can add a value manually using CognigyScript.                                                                                                                                                                                                   |
-| Grounding Knowledge | CognigyScript        | This field appears if you selected the **Enter Custom Grounding Knowledge** grounding mode. <br><br>Custom definable knowledge helping the virtual agent to build a factual response.                                                                                                                                                                                                                  |
+| Grounding Knowledge | CognigyScript        | This field appears if you selected the **Enter Custom Grounding Knowledge** grounding mode. <br><br>Custom definable knowledge helping the virtual agent to build a factual response.                                                                                                                                                                                              |
 | Injected Slots      | CognigyScript        | Slots you want to send to the virtual agent. They will be appended to the user input.                                                                                                                                                                                                                                                                                              |
 
 ### Advanced
@@ -94,7 +94,7 @@ This video shows a live example of how the GPT Conversation Node can generate te
   <iframe width="560" height="315" src="https://www.youtube.com/embed/WKJO4_JfIFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
-At 0:12 second, the user receives the expected answer from the virtual agent in the form of generated Conversational AI text:
+At 0:12 seconds, the user receives the expected answer from the virtual agent in the form of generated Conversational AI text.
 
 ```text
 Sorry to hear about the emergency, <user name>. 
@@ -118,13 +118,13 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
          3.2 Enter `context.action` in the **Operator** field.<br>
          3.3 Click **Save Node**.
            <figure>
-           <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup.png" width="80%" />
+           <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/gpt-conversation-lookup.png" width="80%" />
          </figure>
       4. Go to the Case of the Lookup Node:<br>
          4.1 Paste`checkAppointment` in the **Value** field.<br>
          4.2 Click **Save Node**.
        <figure>
-           <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-lookup-case.png" width="80%" />
+           <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/gpt-conversation-lookup-case.png" width="80%" />
          </figure>
       5. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       6. Test this Flow via the Interaction Panel.
@@ -139,7 +139,7 @@ For both Nodes, you need to specify the action in the **Available Actions** fiel
          3.3 Select **exists** from the list.
          3.4 Click **Save Node**.
          <figure>
-           <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/gpt-conversation-if.png" width="80%" />
+           <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/gpt-conversation-if.png" width="80%" />
          </figure>
       4. In the Flow editor, add the additional Say Node with the **Text** type output. You can also use the HTTP Node.
       5. Test this Flow via the Interaction Panel.

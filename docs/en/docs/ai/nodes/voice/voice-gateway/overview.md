@@ -1,20 +1,20 @@
 ---
- title: "Cognigy Voice Gateway" 
- slug: "cognigy-vg" 
- hidden: true 
+title: "Voice Gateway Nodes" 
+slug: "cognigy-vg" 
+hidden: true 
 ---
 
-# Cognigy Voice Gateway: Nodes Overview
+# Voice Gateway Nodes
 
-Cognigy Voice Gateway Nodes expose functionality provided by [Cognigy Voice Gateway](https://www.cognigy.com/products/voice-gateway){:target="\_blank"} directly in the Flow Editor.
+Voice Gateway Nodes help you build a voice bot using [Voice Gateway configuration](../../../../voicegateway/overview.md).
 
-The Nodes are installed by default from Cognigy.AI 4.23.0 on.
+You can use the following Voice Gateway Nodes:
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/overview.png" width="80%" />
-  <figcaption>Voice Gateway Nodes</figcaption>
-</figure>
-
-!!! warning "Rebranding of Voice Gateway with AudioCodes"
-    With the native Cognigy Voice Gateway integration to Cognigy AI, the AudioCodes implementation will be rebranded from Voice Gateway to AudioCodes.
-    This applies to the Flow Nodes and the Endpoint.
+- [DTMF](dtmf.md)
+- [Hang UP](hangup.md)
+- [Play](play.md)
+- [Send Metadata](send-metadata.md)
+- [Set Session Config](set-session-config.md)
+- [Transfer](transfer.md)
+- [Call Recording](call-recording.md)
+- [Mute Speech Input](mute-speech-input.md)

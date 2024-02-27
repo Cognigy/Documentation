@@ -1,7 +1,7 @@
 ---
- title: "xApps" 
- slug: "overview" 
- hidden: false 
+title: "xApps" 
+slug: "overview" 
+hidden: false 
 ---
 
 # xApp Flow Nodes

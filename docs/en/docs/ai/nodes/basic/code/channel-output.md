@@ -31,7 +31,7 @@ See the next sections for the required format.
 ## AI Default Channel
 <div class="divider"></div>
 
-Cognigy AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/).
+Cognigy AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format]({{config.site_url}}ai/nodes/code/ai-default-channel-formats/).
 
 ## Alexa
 <div class="divider"></div>

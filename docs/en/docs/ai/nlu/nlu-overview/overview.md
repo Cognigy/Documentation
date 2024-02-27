@@ -63,13 +63,13 @@ Intent Entrypoints can be used to alter the Entrypoint in the Flow after the NLU
 </figure>
 
 ### Default Replies
-Intents can be configured with direct output (answers) in the form of so-called **Default Replies**. Default Replies are integrated [**Say**]({{config.site_url}}ai/flow-nodes/message/say/) and can be configured with channel-specific output.
+Intents can be configured with direct output (answers) in the form of so-called **Default Replies**. Default Replies are integrated [Say](../../nodes/basic/say.md) and can be configured with channel-specific output.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nlu/images/intent_settings_default_replies_training.png" width="100%" />
 </figure>
 
-You can override the setting to use the **Default Replies** as example sentences per each individual Intent. Per default, the setting is set to **Use Flow Settings**, meaning we will use the Flow [Settings]({{config.site_url}}ai/resources/manage/settings/). 
+You can override the setting to use the **Default Replies** as example sentences per each individual Intent. Per default, the setting is set to **Use Flow Settings**, meaning we will use the Flow [Settings](../../resources/manage/settings.md). 
 
 If this feature is enabled, the NLU will also use the configured default replies to train, improving the match rate for the configured intent.
 
@@ -223,7 +223,8 @@ The Flow is now ready to take different kinds of utterances and automatically as
 ### Advanced Slot Filler Options
 
 #### Additional Validation
-A [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/) condition which must return `true` in order for the match to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
+
+A [CognigyScript](../../tools/cognigy-script.md) condition which must return `true` in order for the match to be considered valid. An example would be an additional validation on an Email Question of `input.slots.EMAIL[0].endsWith("cognigy.com")` which would guarantee that only cognigy.com email addresses pass the validation.
 
 #### Result Location
 The location of a filled slot result is determined by default by the slot type (e.g., `input.slots.EMAIL[0]` for Email Questions). This can be overwritten using this setting (e.g., `input.slots.EMAIL` would store all found email slots). If the result location doesn't return a value (= is falsy), the answer will be considered invalid.

@@ -1,12 +1,13 @@
 ---
- title: "Datepicker" 
- slug: "datepicker" 
- hidden: false 
+title: "Datepicker" 
+slug: "datepicker"
+hidden: false 
 ---
+
 # Datepicker
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/datepicker.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/datepicker.png" width="80%" />
 </figure>
 
 ## Description
@@ -15,7 +16,7 @@
 The Datepicker Node renders a **visual datepicker** to the user. It comes with many configurable options that are listed below.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/39c5f76-datepicker-widget-webchat.jpg" width="100%" />
 </figure>
 
 !!! tip "Automatically Triggered by Question Nodes"
@@ -24,7 +25,7 @@ The Datepicker Node renders a **visual datepicker** to the user. It comes with m
 ## Properties
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6c556ea-datepicker-options1.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/6c556ea-datepicker-options1.jpg" width="100%" />
 </figure>
 
 ### Datepicker Title
@@ -40,12 +41,12 @@ Mode determines the behavior of the Datepicker.
   * **Range**: This lets the user select a date range. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ffaba00-date-range.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ffaba00-date-range.jpg" width="100%" />
 </figure>
 
 ### Button Texts
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ee3c577-datepicker-buttontext.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ee3c577-datepicker-buttontext.jpg" width="100%" />
 </figure>
 
 #### Open Datepicker Button Text
@@ -61,7 +62,7 @@ This is the text that is shown on the "submit" button that is rendered when the 
 The Datepicker allows you to pricisely configure which dates can be selected. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2573a7e-datepicker-datesettings.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/2573a7e-datepicker-datesettings.jpg" width="100%" />
 </figure>
 
 #### Default Date
@@ -77,7 +78,7 @@ This is the maximum selectable date. If not filled out, it will not have a maxim
 The Datepicker allows you to configure whether times can be selected. If so, it also allows you to configure the default times in detail. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8204cac-datepicker-timesettings.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/8204cac-datepicker-timesettings.jpg" width="100%" />
 </figure>
 
 #### Allow Date & Time
@@ -105,7 +106,7 @@ Enable this setting to show seconds in the Datepicker options.
 The Datepicker can be configured to exclude (or include) specific dates. This is useful in use cases where specific dates should be unavailable - for example, a booking or reservation bot.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c17af07-datepicker-enable-disable.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/c17af07-datepicker-enable-disable.jpg" width="100%" />
 </figure>
 
 #### Enable specific dates
@@ -144,7 +145,7 @@ Disable dates by function - example:
 The Datepicker comes with four advanced options:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7f9dcfe-advanced-options.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/7f9dcfe-advanced-options.jpg" width="100%" />
 </figure>
 
 #### Date Format

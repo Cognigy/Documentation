@@ -8,7 +8,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/email-notification.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/email-notification.png" width="80%" />
 </figure>
 
 ## Description
@@ -115,7 +115,7 @@ If switched on, the flow execution will **continue directly after** the Send Ema
 The email will be sent with templating around it, looking roughly like this:
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/eccd2bc-Screen_Shot_080.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/eccd2bc-Screen_Shot_080.PNG" width="100%" />
 </figure>
 
 The recipient will get the email notification

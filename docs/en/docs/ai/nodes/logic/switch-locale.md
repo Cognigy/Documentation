@@ -6,7 +6,7 @@
 # Switch Locale
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/switch-locale.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/switch-locale.png" width="80%" />
 </figure>
 
 ## Description
@@ -19,20 +19,18 @@ A locale must be pre-configured in order to populate the options available for s
 ## Usage
 <div class="divider"></div>
 
-In order to switch the locale for the current execution, one needs to use a [Think](think.md) Node after the Switch Locale Node. With this functionality, the current Flow will be triggered again -- the new locale will be used instead of the old one.
+To switch the locale for the current execution, one needs to use a [Think](think.md) Node after the Switch Locale Node. With this functionality, the current Flow will be triggered again, but the new locale will be used instead of the old one.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/switch-locale-usage.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/switch-locale-usage.png" width="80%" />
 </figure>
 
 ## Locale Reference ID
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.8.0-blue.svg)]({{config.site_url}})
-
 As of release v4.8 Cognigy Script can be used to switch to another locale by using the locale reference ID. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/d22f5e3-Switch_Locale_example.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/d22f5e3-Switch_Locale_example.svg" width="100%" />
   <figcaption>Switch locale using Cognigy Script</figcaption>
 </figure>
 
@@ -42,7 +40,7 @@ Click on the 'three dots' button on the right side of any available locale to co
 Then open the Switch Locale Node configuration editor and enter the reference ID in the **Locale ID** field when Cognigy Script is activated.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/cda3717-copy_reference_ID_00.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/cda3717-copy_reference_ID_00.svg" width="100%" />
   <figcaption>Copying locale reference ID</figcaption>
 </figure>
 

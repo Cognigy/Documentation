@@ -6,13 +6,15 @@
 # Add To Context
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/add-to-context.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/add-to-context.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-An **Add to Context Node** is used to store information in the Cognigy [Context](../../tools/interaction-panel/context.md), so that it can be used throughout the session on subsequent user inputs. 
+This Node is used to store information in the Cognigy [Context](../../tools/interaction-panel/context.md), so that it can be used throughout the session on subsequent user inputs. 
+
+## Settings
 
 | Parameter | Type         | Description                                                                                                                                                           |
 |-----------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|

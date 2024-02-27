@@ -6,7 +6,7 @@ hidden: false
 # Blind Mode
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/blind-mode.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/profile/blind-mode.png" width="80%" />
 </figure>
 
 ## Description
@@ -34,5 +34,5 @@ By adding a Blind Mode Node, you can turn on masking at a particular point in th
 For example, place the Blind Mode Node before asking for a user's email, turn it on with the Blind Mode on label, and later turn it off with the Blind Mode off label. This way, all user responses to the email question will be entirely masked, and no one will be able to see them in the conversation records and logs.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/blind-mode-example.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/profile/blind-mode-example.png" width="100%" />
 </figure>

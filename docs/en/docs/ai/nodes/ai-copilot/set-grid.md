@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.69-blue.svg)](../../../release-notes/4.69.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/set-grid.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/set-grid.png" width="80%" />
 </figure>
 
 ## Description

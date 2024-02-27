@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/sentiment-tile.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/sentiment-tile.png" width="80%"/>
 </figure>
 
 ## Description
@@ -37,7 +37,7 @@ Before using this Node, set the Generative AI provider in the [Settings](../../g
 Differing from the [Copilot: Transcript Tile](transcript-tile.md) Node, this Node allows you to analyze a larger part of the conversation, extending beyond the user's latest message. This node helps provide a more objective conversation assessment and empowers the management of the customer's overall impression.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/sentiment-tile-example.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/sentiment-tile-example.png" width="80%"/>
   <figcaption>Sentiment Tile Widget in AI Copilot</figcaption>
 </figure>
 

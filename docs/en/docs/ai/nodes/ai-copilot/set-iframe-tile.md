@@ -7,7 +7,7 @@ hidden: false
 # Copilot: IFrame Tile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/set-iframe-tile.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/set-iframe-tile.png" width="80%" />
 </figure>
 
 ## Description

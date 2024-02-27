@@ -6,7 +6,7 @@ hidden: false
 # Send SMTP Email
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/send-smtp-email.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/send-smtp-email.png" width="80%" />
 </figure>
 
 ## Description
@@ -21,10 +21,10 @@ Use the Send Email Node to send an email via an SMTP connection to a recipient.
 [![Version badge](https://img.shields.io/badge/Updated in-v4.49-blue.svg)](../../../release-notes/4.49.md)
 
 Select the Email Provider of the address you want to send from.
-If yours is not listed, you can select "Other SMTP Service" to do a manual configuration.
+If yours is not listed, you can select **Other SMTP Service** to do a manual configuration.
 
 !!! note "Email Service Configuration"
-    Some Email Providers, such as Gmail, will require you to configure your mail account to allow sending mails via SMTP before you can use it.
+    Some email providers, such as Gmail, will require you to configure your mail account to allow sending mail via SMTP before you can use it.
 
 ### SMTP Settings
 
@@ -124,7 +124,7 @@ The BCC recipients of your email.
 
 #### Reply To Address
 
-This email address is the target receiving mails when the recipients reply to your email.
+This email address is the target for receiving mails when recipients reply to your email.
 
 #### Define custom text Email Content
 
@@ -132,7 +132,7 @@ If your content contains non-text content, you can provide a customized text-onl
 
 #### Email Priority
 
-You can use this to set your priority to "high", "normal" (default) or "low".
+You can use this option to set your priority to `high`, `normal` (default), or `low`.
 
 #### Execute Request asynchronous
 

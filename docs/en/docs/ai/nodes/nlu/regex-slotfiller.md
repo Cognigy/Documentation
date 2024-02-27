@@ -6,13 +6,13 @@
 # Regex Slot Filler
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/regex-slot-filler.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/nlu/regex-slot-filler.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags see [**Lexicons & Slots**]({{config.site_url}}ai/resources/build/lexicons/).
+Use this Node to fill Slots using regular expressions. To learn more about Slots and Tags, see [Lexicons & Slots](../../resources/build/lexicons.md).
 
 | Parameter | Type                                                | Description                                        |
 |-----------|-----------------------------------------------------|----------------------------------------------------|

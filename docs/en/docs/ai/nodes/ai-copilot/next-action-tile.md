@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/next-action-tile.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/next-action-tile.png" width="80%"/>
 </figure>
 
 ## Description
@@ -34,7 +34,7 @@ For instance, if a user asks about the latest release version, the agent can giv
 {! _includes/ai/nodes/forwarder.md !}
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/next-action-tile-example.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/next-action-tile-example.png" width="80%"/>
   <figcaption>The Next Action Tile Widget in AI Copilot</figcaption>
 </figure>
 

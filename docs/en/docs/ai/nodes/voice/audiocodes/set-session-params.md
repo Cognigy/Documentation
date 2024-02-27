@@ -7,7 +7,7 @@ hidden: false
 # Set Session Params
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/set-session-parameters.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/audiocodes/set-session-parameters.png" width="80%" />
   <figcaption>AudioCodes Set Session Parameters</figcaption>
 </figure>
 

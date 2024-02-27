@@ -5,7 +5,7 @@ hidden: false
 ---
 # Step Explorer
 
-_Step Explorer_ helps you to see how customers navigate through a conversation. It shows key paths in the conversation, such as how customers react to the Virtual Agent's responses and questions, as well as identifying points where customers disengage, all within a specified time frame.  This information allows you to evaluate and improve your Virtual Agent for better understanding, potentially increasing orders, bookings, or reducing support requests. The Step Explorer lets you explore conversation steps and how they connect with each other.
+_Step Explorer_ helps you to see how customers navigate through a conversation. It shows key paths in the conversation, such as how customers react to the virtual agent's responses and questions, as well as identifying points where customers disengage, all within a specified time frame.  This information allows you to evaluate and improve your virtual agent for better understanding, potentially increasing orders, bookings, or reducing support requests. The Step Explorer lets you explore conversation steps and how they connect with each other.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/step-explorer.png" width="100%" />
@@ -106,7 +106,7 @@ Using the Annotations defined previously in Cognigy.AI for your Flow Nodes, the 
 
 !!! note
     The red-marked areas of a step represent the number of users who dropped off at that point. 
-    You may take an early "drop off" in a conversation to improve your Agent and to inspect with Cognigy's [Message Explorer](message-explorer.md) what the Virtual Agent said before the user dropped off.
+    You may take an early "drop off" in a conversation to improve your Agent and to inspect with Cognigy's [Message Explorer](message-explorer.md) what the virtual agent said before the user dropped off.
 
 - You can get more details displayed when you hover the mouse over any step.   
 
@@ -175,7 +175,7 @@ The Step Explorer found 2,368 as a total number of completed bookings.
 To check your Flow or to improve the configuration, the Step Explorer provides the context menu **Open Flow** option when right-clicking on a specific step.
 For example, clicking **Make an Appointment** takes you to the Flow in Cognigy.AI.
 
-The red-highlighted sections within a step indicate the points where users dropped off. You have the option to intentionally initiate a 'drop-off' in a conversation. This allows you to enhance your agent's performance and analyze what the Virtual Agent said before the user disengaged by using Cognigy's [Message Explorer](message-explorer.md).
+The red-highlighted sections within a step indicate the points where users dropped off. You have the option to intentionally initiate a 'drop-off' in a conversation. This allows you to enhance your agent's performance and analyze what the virtual agent said before the user disengaged by using Cognigy's [Message Explorer](message-explorer.md).
 
 <figure>
   <img class="image-center" src="{{config.site_url}}insights/images/a040540-Step_Explorer_open_flow_n8.svg" width="100%" />
@@ -201,7 +201,7 @@ option. Clicking it opens the Flow Editor with editing mode for the respective N
 
 ### Go to Transcript Explorer
 
-If you want to evaluate early drop-offs during conversations to improve your Virtual Agent, click the **Drop off** step to access the **Go to Transcript Explorer** menu. 
+If you want to evaluate early drop-offs during conversations to improve your virtual agent, click the **Drop off** step to access the **Go to Transcript Explorer** menu. 
 
 This menu allows you to check conversations by searching for keywords that represent the steps when the customer drops off.
 

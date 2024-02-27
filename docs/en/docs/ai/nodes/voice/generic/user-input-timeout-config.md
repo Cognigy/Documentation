@@ -9,7 +9,7 @@
 [![Version badge](https://img.shields.io/badge/Updated in-v4.45-blue.svg)](../../../../release-notes/4.45.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/user-input-timeout-config.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/generic-voice/user-input-timeout-config.png" width="80%" />
   <figcaption>Generic User Input Timeout - Config</figcaption>
 </figure>
 
@@ -23,6 +23,6 @@ Once the settings are executed, they will remain in effect for the duration of t
 
 | Parameter             | Type     | Description                                                                                                                                 |
 |-----------------------|----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| User No Input Mode    | Dropdown | Define the action if a user does not provide input to the Virtual Agent in time.                                                            |
+| User No Input Mode    | Dropdown | Define the action if a user does not provide input to the virtual agent in time.                                                            |
 | User No Input Timeout | Number   | Define the timeout for user input in  milliseconds.                                                                                         |
-| User No Input Retries | Number   | Define the number of retries for the Virtual Agent to request input from the user before ending the call. The maximum value is 999 retries. |
+| User No Input Retries | Number   | Define the number of retries for the virtual agent to request input from the user before ending the call. The maximum value is 999 retries. |

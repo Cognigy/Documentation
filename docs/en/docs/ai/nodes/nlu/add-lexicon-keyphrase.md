@@ -6,13 +6,13 @@
 # Add Lexicon Keyphrase
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/add-lexicon-keyphrase.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/nlu/add-lexicon-keyphrase.png" width="80%" />
 </figure>
 
 ## Description
 <div class="divider"></div>
 
-Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons]({{config.site_url}}ai/resources/build/lexicons/)  from within your Flow using [CognigyScript]({{config.site_url}}ai/tools/cognigy-script/).
+Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons](../../resources/build/lexicons.md)  from within your Flow using [CognigyScript](../../tools/cognigy-script.md).
 
 | Parameter   | Type                         | Description                                   |
 |-------------|------------------------------|-----------------------------------------------|

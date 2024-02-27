@@ -7,7 +7,7 @@
 # Send Metadata
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/send-metadata.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/vg/send-metadata.png" width="80%" />
   <figcaption>Voice Gateway Send Metadata Node</figcaption>
 </figure>
 

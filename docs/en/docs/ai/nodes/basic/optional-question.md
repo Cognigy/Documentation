@@ -6,7 +6,7 @@
 # Optional Question
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/optional-question.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/optional-question.png" width="80%" />
 </figure>
 
 ## Description
@@ -32,33 +32,33 @@ An Optional Question Node is used to ask a question that requests specific infor
 !!! info "Question Types"
     There are different types of queries that you can use, which are described in detail below:
 
-| Type        | Required user input to answer question                                                                                                                                                                                                  |
-|-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Text        | Any text input                                                                                                                                                                                                                          |
-| Yes / No	   | A positive or negative response                                                                                                                                                                                                         |
-| Intent      | One of the trained [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) must be identified from the user's response                                                                                                            |
-| Slot        | A [System Slot]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/#system-defined-slots) or [Lexicon Slot]({{config.site_url}}ai/resources/build/lexicons/) must be detected within the user's response. The slot is defined by name. |
-| Date        | Any date (system-defined)                                                                                                                                                                                                               |
-| Number      | Any number (system-defined)                                                                                                                                                                                                             |
-| Temperature | Any temperature (system-defined)                                                                                                                                                                                                        |
-| Age         | Any age (system-defined)                                                                                                                                                                                                                |
-| Duration    | Any time duration (system-defined)                                                                                                                                                                                                      |
-| Email       | Any email address (system-defined)                                                                                                                                                                                                      |
-| Money       | Any monetary value (system-defined)                                                                                                                                                                                                     |
-| URL         | Any reference/address to a resource on the Internet for example, http://example.com                                                                                                                                                     |
-| Percentage  | Any percentage (system-defined)                                                                                                                                                                                                         |
-| Regex       | Any custom data format defined by a regex expression must be detected in the user's response                                                                                                                                            |
-| Data        | Any data (input.data) input                                                                                                                                                                                                             |
+| Type        | Required user input to answer question                                                                                                                                                                      |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Text        | Any text input                                                                                                                                                                                              |
+| Yes / No	   | A positive or negative response                                                                                                                                                                             |
+| Intent      | One of the trained [Intents](../../nlu/nlu-overview/ml-intents.md) must be identified from the user's response                                                                                              |
+| Slot        | A [System Slot](../../nlu/slot-mapping/slot-mapping.md#system-defined-slots) or [Lexicon Slot](../../resources/build/lexicons.md) must be detected within the user's response. The slot is defined by name. |
+| Date        | Any date (system-defined)                                                                                                                                                                                   |
+| Number      | Any number (system-defined)                                                                                                                                                                                 |
+| Temperature | Any temperature (system-defined)                                                                                                                                                                            |
+| Age         | Any age (system-defined)                                                                                                                                                                                    |
+| Duration    | Any time duration (system-defined)                                                                                                                                                                          |
+| Email       | Any email address (system-defined)                                                                                                                                                                          |
+| Money       | Any monetary value (system-defined)                                                                                                                                                                         |
+| URL         | Any reference/address to a resource on the Internet for example, http://example.com                                                                                                                         |
+| Percentage  | Any percentage (system-defined)                                                                                                                                                                             |
+| Regex       | Any custom data format defined by a regex expression must be detected in the user's response                                                                                                                |
+| Data        | Any data (input.data) input                                                                                                                                                                                 |
 
 !!! info "Supported Data formats for System Defined slots"
-    All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping]({{config.site_url}}ai/nlu/slot-mapping/slot-mapping/) page.
+    All data formats supported by the Cognigy NLU for system slot mapping are listed on the [Slot Mapping](../../nlu/slot-mapping/slot-mapping.md) page.
 ## Channels and Output types
 <div class="divider"></div>
 
-Question node output types carry the same functionality as the [**Say Node**]({{config.site_url}}ai/flow-nodes/message/say/).
+Question node output types carry the same functionality as the [Say Node](../basic/say.md).
 
 !!! success "Date Questions"
-    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [**Datepicker**]({{config.site_url}}ai/flow-nodes/message/datepicker/) for more information. 
+    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [Datepicker](../data/datepicker.md) for more information. 
 ## Advanced
 <div class="divider"></div>
 
@@ -77,17 +77,17 @@ The difference with a regular Question Node is that the Optional Question Node d
 Lets you decide on which user input the CognigyScript after Answer should be executed.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/711c019-optional-question-advanced.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/711c019-optional-question-advanced.jpg" width="100%" />
 </figure>
 
 ## Result Storage
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c04587d-context.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/c04587d-context.jpg" width="100%" />
 </figure>
 
-If Store Result in Context is enabled, the Question Result will also be stored in the [**Context**]({{config.site_url}}ai/tools/interaction-panel/context/) object. 
+If Store Result in Context is enabled, the Question Result will also be stored in the [Context](../../tools/interaction-panel/context.md) object. 
 
 ## Question Information in Input
 <div class="divider"></div>
@@ -105,4 +105,4 @@ When an Optional Question is "active", meaning an answer is being waited for, in
 
 ## AI-enhanced output
 
-To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md) article.

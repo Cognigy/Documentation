@@ -6,7 +6,7 @@
 # MS SQL
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/run-sql-query.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/services/run-sql-query.png" width="80%" />
 </figure>
 
 ## Description

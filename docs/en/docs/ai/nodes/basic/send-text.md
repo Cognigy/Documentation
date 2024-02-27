@@ -1,12 +1,13 @@
 ---
- title: "Send Text" 
- slug: "send-text" 
- hidden: false 
+title: "Send Text" 
+slug: "send-text" 
+hidden: false 
 ---
+
 # Send Text
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/send-text.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/send-text.png" width="80%" />
 </figure>
 
 ## Description
@@ -14,7 +15,10 @@
 
 Use the Send Text Node if you want to output simple text. 
 
-## Properties
-<div class="divider"></div>
-### Text Message
-A configurable text message.
+## Settings
+
+| Parameter    | Type          | Description                  |
+|--------------|---------------|------------------------------|
+| Text Message | CognigyScript | A configurable text message. |
+
+

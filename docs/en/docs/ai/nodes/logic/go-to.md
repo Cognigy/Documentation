@@ -5,7 +5,7 @@
 ---
 # Go To
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/go-to.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/go-to.png" width="80%" />
 </figure>
 
 ## Description
@@ -26,7 +26,7 @@ Select the target Node that is switched to whenever the Flow execution triggers 
 A Node must be set as an Entrypoint before it can be selected. To set any Node as an Entrypoint, use the [Set Entrypoint](../node-usage.md#set-entrypoint) setting.
 
 !!! note "Using Go To and Execute together"
-    A Go To Node will overwrite the execution of an Execute Flow Node. If a Flow containing a Go To Node is executed, after an Execute Flow Node, the Go To Node will stop the original execution and the session will stay In the Go To Node's destination Flow. This will prevent the Execute Flow Node's normal behavior, of returning to the Flow it is located in.
+    A Go To Node will overwrite the execution of an Execute Flow Node. If a Flow containing a Go To Node is executed, after an Execute Flow Node, the Go To Node will stop the original execution and the session will stay In the Go To Node's destination Flow. This action will prevent the normal behavior of the Execute Flow Node, which returns to the Flow it is located in.
 
 ## Advanced
 
@@ -44,9 +44,9 @@ If the Execution Mode is set to **Go to Node and continue**, you can overwrite t
 
 ### Parse Intents
 
-The user decides whether we should  **parse intents** within the sub Flow. This is disabled by default.
+The user decides whether we should **parse intents** within the sub Flow. This is disabled by default.
 
-If the **Parse Intents** setting is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+If the **Parse Intents** setting is enabled, Cognigy NLU will reparse the Intents in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text).
 
 This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Intents in the sub Flow. This will not score based on Intents in the parent Flow.
 
@@ -54,7 +54,7 @@ This setting will parse the input into the sub Flow, and the NLU will then score
 
 The user decides whether we should **parse slots** within the sub Flow. This is disabled by default.
 
-If the **Parse Slots** setting is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text)
+If the **Parse Slots** setting is enabled, Cognigy NLU will reparse the Slots in the target Flow, in the target Flow, using either [input.text](../../tools/interaction-panel/input.md#accessing-the-input-object) or the [Optionally Injected Text](#optionally-injected-text).
 
 This setting will parse the input into the sub Flow, and the NLU will then score this text using the available Slots in the sub Flow. This will not score based on Slots in the parent Flow.
 

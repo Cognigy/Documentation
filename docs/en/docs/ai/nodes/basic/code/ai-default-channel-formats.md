@@ -5,11 +5,11 @@
 ---
 # AI Default Channel Formats
 
-As described in [Channel Output]({{config.site_url}}ai/flow-nodes/code/channel-output/), you can send JSON-formatted output directly against your [Endpoints](../../../endpoints/overview.md) for it to be output to the respective channels.
+As described in [Channel Output]({{config.site_url}}ai/nodes/code/channel-output/), you can send JSON-formatted output directly against your [Endpoints](../../../endpoints/overview.md) for it to be output to the respective channels.
 
-The AI Default Channel is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels (see our [Say]({{config.site_url}}ai/flow-nodes/message/say/) Node documentation for more information).
+The AI Default Channel is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels (see our [Say]({{config.site_url}}ai/nodes/message/say/) Node documentation for more information).
 
-Using the [Code](code.md) Node, you can also send JSON-formatted output to the Endpoints for the AI Default Channel, and it will handle the conversion into the appropriate content. The required payload formats are described below. 
+Using the [Code](overview.md) Node, you can also send JSON-formatted output to the Endpoints for the AI Default Channel, and it will handle the conversion into the appropriate content. The required payload formats are described below. 
 
 ## Payload Formats
 <div class="divider"></div>
@@ -18,12 +18,12 @@ Using the [Code](code.md) Node, you can also send JSON-formatted output to the E
 Sends text to the Endpoint.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9fc53d9-say_in_nodde.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/9fc53d9-say_in_nodde.png" width="100%" />
   <figcaption>Text in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ade750b-say_in_webchat.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ade750b-say_in_webchat.png" width="100%" />
   <figcaption>Text in Webchat</figcaption>
 </figure>
 
@@ -36,17 +36,17 @@ actions.output("Your text", null);
 Sends text and a number of quick reply buttons.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c3989d9-Say_Node_quick_replies.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/c3989d9-Say_Node_quick_replies.PNG" width="100%" />
   <figcaption>Quick Replies in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1414533-Say_Node_text_with_quick_reply.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/1414533-Say_Node_text_with_quick_reply.png" width="100%" />
   <figcaption>Quick Reply Detailed Settings</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/a8c2356-Webchat_quick_reply_buttons.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/a8c2356-Webchat_quick_reply_buttons.PNG" width="100%" />
   <figcaption>Webchat Quick Replies</figcaption>
 </figure>
 
@@ -91,17 +91,17 @@ actions.output(null, {
 Outputs a carousel of cards.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3f7ebfd-gallery_say_node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/3f7ebfd-gallery_say_node.png" width="100%" />
   <figcaption>Gallery in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7f7fa36-Gallery_Button_Settings.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/7f7fa36-Gallery_Button_Settings.png" width="100%" />
   <figcaption>Gallery Button Settings</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/5868040-gallery_web_chat.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/5868040-gallery_web_chat.png" width="100%" />
   <figcaption>Gallery in Webchat</figcaption>
 </figure>
 
@@ -162,17 +162,17 @@ actions.output(null, {
 Outputs text with a list of buttons.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/a2bfb8c-Buttons_in_Editor.AI.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/a2bfb8c-Buttons_in_Editor.AI.png" width="100%" />
   <figcaption>Text with Buttons in Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/52ff65d-Text_with_Buttons.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/52ff65d-Text_with_Buttons.PNG" width="100%" />
   <figcaption>Text with Buttons Detailed Settings</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8278835-test_with_buttons_in_web_chat.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/8278835-test_with_buttons_in_web_chat.png" width="100%" />
   <figcaption>Text with Buttons in Webchat</figcaption>
 </figure>
 
@@ -223,17 +223,17 @@ actions.output(null, {
 Outputs a list.
 
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2a940c5-Edit_Node_list.svg" width="100%" />
+<img class="image-center" src="{{config.site_url}}ai/nodes/images/2a940c5-Edit_Node_list.svg" width="100%" />
 <figcaption>List in Say Node</figcaption>
 </figure>
 
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2fff87d-Say_list_option_order_3.svg" width="100%" />
+<img class="image-center" src="{{config.site_url}}ai/nodes/images/2fff87d-Say_list_option_order_3.svg" width="100%" />
 <figcaption>Say Node settings</figcaption>
 </figure>
 
 <figure>
-<img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/483e566-Webchat_Say_node_list_items.svg" width="100%" />
+<img class="image-center" src="{{config.site_url}}ai/nodes/images/483e566-Webchat_Say_node_list_items.svg" width="100%" />
 <figcaption>List in webchat</figcaption>
 </figure>
 
@@ -318,12 +318,12 @@ actions.output(null, {
 Outputs audio from a URL.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/bb4f85f-Audio_and_Details_in_Say_Node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/bb4f85f-Audio_and_Details_in_Say_Node.png" width="100%" />
   <figcaption>Audio and Details in the Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/eef7261-audio_in_webchat.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/eef7261-audio_in_webchat.png" width="100%" />
   <figcaption>Audio in Webchat</figcaption>
 </figure>
 
@@ -346,12 +346,12 @@ actions.output(null, {
 Outputs image from a URL.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Image.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/Image.png" width="100%" />
   <figcaption>Image and Details in the Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/Image in Webchat.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/Image in Webchat.png" width="100%" />
   <figcaption>Image in Webchat</figcaption>
 </figure>
 
@@ -374,12 +374,12 @@ actions.output(null, {
 Outputs video from a URL. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/47700b9-video_in_Say_Node.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/47700b9-video_in_Say_Node.png" width="100%" />
   <figcaption>Video and Details in the Say Node</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/2ab75df-video_in_web_chat.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/2ab75df-video_in_web_chat.png" width="100%" />
   <figcaption>Video in Webchat</figcaption>
 </figure>
 
@@ -402,7 +402,7 @@ actions.output(null, {
 Outputs an adaptive card. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/code/adaptive-card.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/code/adaptive-card.png" width="80%" />
   <figcaption>Adaptive card in Webchat</figcaption>
 </figure>
 

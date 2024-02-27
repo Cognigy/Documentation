@@ -6,7 +6,7 @@
 # Update Profile
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/profile/update-profile.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/profile/update-profile.png" width="80%" />
 </figure>
 
 ## Description
@@ -15,13 +15,15 @@
 The Update Profile Node is used to update the users' Contact Profile.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/18cbc8a-update-profile.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/18cbc8a-update-profile.jpg" width="100%" />
 </figure>
 
 The available `Key` options are all defined fields in the Profile Schema of this Project.
 
  
-If the key used is an invalid value, it will not perform any function. For a list of default profile property keys, see the [Contact Profiles Page]({{config.site_url}}ai/resources/manage/contact-profiles/)
+If the key used is an invalid value, it will not perform any function.
+For a list of default profile property keys,
+see the [Contact Profiles](../../resources/manage/contact-profiles.md) page.
 
 | Parameter | Type          | Description                                          |
 |-----------|---------------|------------------------------------------------------|

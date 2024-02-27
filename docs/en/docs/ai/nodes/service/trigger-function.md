@@ -6,7 +6,7 @@
 # Trigger Function
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/trigger-function.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/trigger-function.png" width="80%" />
   <figcaption>Conversation flow structure for an IF Node</figcaption>
 </figure>
 
@@ -20,5 +20,5 @@ If the Function was successfully scheduled, it will execute the "On Scheduled" b
 ## Configuration
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/trigger-function-configuration.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/trigger-function-configuration.png" width="80%" />
 </figure>

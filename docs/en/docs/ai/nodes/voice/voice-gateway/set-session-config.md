@@ -7,7 +7,7 @@ hidden: false
 # Set Session Config
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/vg/set-session-config.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/vg/set-session-config.png" width="80%" />
   <figcaption>Voice Gateway Set Session Config Node</figcaption>
 </figure>
 

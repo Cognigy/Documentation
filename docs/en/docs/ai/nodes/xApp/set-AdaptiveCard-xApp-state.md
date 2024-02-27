@@ -7,7 +7,7 @@
 # xApp: Show Adaptive Card
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/xApp/set-AdaptiveCard-xApp-state.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/xApp/set-AdaptiveCard-xApp-state.png" width="80%" />
 </figure>
 
 ## Description

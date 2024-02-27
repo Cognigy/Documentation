@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/knowledge-tile.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/knowledge-tile.png" width="80%"/>
 </figure>
 
 ## Description
@@ -77,7 +77,7 @@ To use the Copilot: Knowledge AI widget, configure the following Flow:
     If the Flow is not working or issues arise with the Knowledge Source, try creating a new Agent and running the Flow in it.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/knowledge-tile-flow.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/knowledge-tile-flow.png" width="80%"/>
   <figcaption>The Knowledge Tile Flow</figcaption>
 </figure>
 
@@ -86,7 +86,7 @@ Test your Flow by using a [Demo Webchat](../../endpoints/webchat/integrated-demo
 {! _includes/ai/nodes/forwarder.md !}
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/knowledge-tile-example.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/knowledge-tile-example.png" width="80%"/>
   <figcaption>The Knowledge Tile Widget in AI Copilot</figcaption>
 </figure>
 

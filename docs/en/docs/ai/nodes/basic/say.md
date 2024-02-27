@@ -7,7 +7,7 @@ hidden: false
 # Say
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/say.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/say.png" width="80%" />
 </figure>
 
 ## Description
@@ -17,7 +17,7 @@ A Say Node is used to send a message to the user.
 
 Depending on the current Channel, additional rich media formats are available. Add a new channel output by clicking the **+** icon and selecting the channel that corresponds to the channel endpoint that will be deployed.
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ea04ba5-channels.jpg" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ea04ba5-channels.jpg" width="80%" />
   <figcaption>The say node menu with all channel output types enabled.</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ If there is a Channel-specific configuration for the current Channel, this confi
 ## AI (default channel) 
 <div class="divider"></div>
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/894062b-1AI.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/894062b-1AI.jpg" width="100%" />
 </figure>
 
 
@@ -43,15 +43,15 @@ The AI Channel allows for the configuration of different **Output Types**. Not a
 
 ### Text
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6746960-node-say.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/6746960-node-say.jpg" width="100%" />
 </figure>
 
-The **Text** Output Type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript]({{config.site_url}}/ai/tools/cognigy-script/) and [Tokens]({{config.site_url}}/ai/resources/manage/tokens/) that can be added by clicking the **AI** button at the end of each field.
+The **Text** Output Type renders text and emojis (if supported by the channel). The text field also supports [CognigyScript](../../tools/cognigy-script.md) and [Tokens](../../resources/manage/tokens.md) that can be added by clicking the **AI** button at the end of each field.
 
 !!! tip "Channel Support"
     The **Text** Output Type is currently converted to compatible output on all channels. Keep in mind that **emojis** may not render properly on all channels.
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9f49b00-OutputTypeText.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/9f49b00-OutputTypeText.jpg" width="100%" />
 </figure>
 
 Multiple text messages can be added for conversational variation. When multiple text messages are configured, the delivery order is controlled by the *linear* and *loop* settings available in the ***options*** dropdown menu.
@@ -61,7 +61,7 @@ Multiple text messages can be added for conversational variation. When multiple 
 
 #### Text Options
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37689d0-SayOptions.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/37689d0-SayOptions.jpg" width="100%" />
 </figure>
 
 When sending simple text output, Cognigy.AI dialog nodes provide options for configuring the behavior of output and attaching data to the message. The configuration options and their functions are listed below:
@@ -80,19 +80,19 @@ When sending simple text output, Cognigy.AI dialog nodes provide options for con
     * Linear + looping (for example, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5...)
 ### Text with Quick Replies
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/5f55583-say-node-qr.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/5f55583-say-node-qr.jpg" width="100%" />
 </figure>
 
 Text with Quick Replies can be used to show the user a number of configurable Quick Replies. Quick Replies are pre-defined answers that are rendered as input chips.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/01d80fd-Say_Node_quick_replies_2.jpg" width="50%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/01d80fd-Say_Node_quick_replies_2.jpg" width="50%" />
 </figure>
 
 The click action can be configured to be **Phone Number** or **Send Postback**.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3dbf220-select_button_type.jpg" width="50%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/3dbf220-select_button_type.jpg" width="50%" />
 </figure>
 
 #### Postback Value
@@ -103,7 +103,7 @@ When this option is configured, clicking the Quick Reply will try to open the ph
 
 #### Trigger Intent
 The Trigger Intent feature allows you to manually trigger an Intent by writing cIntent:, followed by the desired intent name in your text input, the regular Intent mapping will be ignored.
-More information see [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/trigger-intent/)
+More information see [Trigger Intent](../../nlu/nlu-overview/trigger-intent.md)
 
 !!! warning "Channel Support"
     The **Text with Quick Replies** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
@@ -112,39 +112,39 @@ More information see [Trigger Intent]({{config.site_url}}ai/nlu/nlu-overview/tri
 Galleries are powerful visual widgets that are ideal for showing a list of options with images. They are typically used to show a number of products or other items that can be browsed.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/243f107-Say_order_taxi_2.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/243f107-Say_order_taxi_2.PNG" width="100%" />
 </figure>
 
 A gallery can be configured with a number of cards. A card contains an image, a title and a subtitle and can be configured with (optional) buttons.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/cd2a3a1-SAY_gallery_cards_1.PNG" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/cd2a3a1-SAY_gallery_cards_1.PNG" width="75%" />
 </figure>
 
 !!! warning "Channel Support"
     The **Gallery** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### Text with Buttons
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c7c32f9-say-buttons.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/c7c32f9-say-buttons.jpg" width="100%" />
 </figure>
 
 **Text with Buttons** is a similar **Output Type** to **Text with Quick Replies**. The difference comes from the way the widget is rendered, which resembles a vertical list of button options. It can be configured in a similar fashion.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6554383-textbuttons.PNG" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/6554383-textbuttons.PNG" width="75%" />
 </figure>
 
 !!! warning "Channel Support"
     The **Text with Buttons** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack** and **RingCentral Engage**.
 ### List
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1c5a0c7-list1.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/1c5a0c7-list1.PNG" width="100%" />
 </figure>
 
 **List** output allows a customized list of items to be displayed with many configuration options such as the header image, buttons, images and more. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/782c02f-list2.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/782c02f-list2.PNG" width="100%" />
 </figure>
 
 The first list item can optionally be converted to a header item that houses the list title, subtitle and button. Each additional list item can have a title, subtitle, image and button added. The list can also have a button added at the bottom.
@@ -153,39 +153,39 @@ The first list item can optionally be converted to a header item that houses the
     The **List** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Azure Bot Services**, **RingCentral Engage**, **UserLike** and **Line**.
 ### Audio
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/7c58ec2-node-audio.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/7c58ec2-node-audio.jpg" width="100%" />
 </figure>
 
 The **Audio Output Type** can render audio output in case this is supported by the channel. It can be configured, by providing it with a URL to an audio file.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/86d62bf-audio.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/86d62bf-audio.jpg" width="100%" />
 </figure>
 
 !!! warning "Channel Support"
     The **Audio** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
 ### Image
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/506f002-Say_image.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/506f002-Say_image.svg" width="100%" />
 </figure>
 
 Image Output Types display an image in a similar fashion to the gallery. The image output, however, only outputs one particular image.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/c8fd6f9-Output_Type_image.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/c8fd6f9-Output_Type_image.svg" width="100%" />
 </figure>
 
 !!! warning "Channel Support"
     The **Image** Output Type is currently converted to compatible output on all the following channels: **Webchat**, **Messenger**, **Line**, **Azure Bot Service**, **Sunshine Conversations**, **Slack**.
 ### Video
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f8b5cdf-Say_video.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/f8b5cdf-Say_video.svg" width="100%" />
 </figure>
 
 The Video Output Type allows you to configure a video output. It takes a URL as an input parameter and will start playing the video automatically if this is supported by the channel.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/f71165b-Output_Type_video.svg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/f71165b-Output_Type_video.svg" width="100%" />
 </figure>
 
 !!! warning "Channel Support"
@@ -210,7 +210,7 @@ To create an adaptive card, use the [Adaptive Card Designer](https://adaptivecar
     Cognigy supports the limited number of versions for Adaptive Card, so using the latest versions may cause issues. We recommend using [supported versions](../../endpoints/content-conversion.md) for better compatibility.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-output-type.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/say/adaptive-card-output-type.png" width="80%" />
 </figure>
 
 ??? info "Adaptive Card JSON example"
@@ -294,7 +294,7 @@ To navigate between your inputs, use ![back arrow](../../../assets/icons/back-ar
 To replace the current Adaptive Card with a new one, click ![recycle bin](../../../assets/icons/recycle-bin.svg).
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/say/adaptive-card-type-generative-ai.png" width="80%" />
 </figure>
 
 ??? info "Generative AI Adaptive Card JSON example"
@@ -332,7 +332,7 @@ To replace the current Adaptive Card with a new one, click ![recycle bin](../../
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1ebe307-alexa.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/1ebe307-alexa.jpg" width="100%" />
 </figure>
 
 Defines what an Amazon Echo enabled system will say as an answer. 
@@ -383,7 +383,7 @@ For further details see the [Amazon Alexa Documentation](https://developer.amazo
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/16b8fc7-messenger.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/16b8fc7-messenger.jpg" width="100%" />
     <div style="text-align: center;"><a href="https://developers.facebook.com/docs/messenger-platform/reference/send-api" target="_blank">Link: Messenger Send API</a></div>
 </figure>
 
@@ -415,7 +415,7 @@ The following Facebook (Meta) Messenger Templates are available:
     }
     ``` 
 
-    See more under [Code Nodes]({{config.site_url}}ai/flow-nodes/code/code/)
+    See more under [Code Nodes]({{config.site_url}}ai/nodes/code/code/)
 
 !!! danger "Location Button Deprecation"
     The Quick Reply Button "Location" to send a users location has been deprecated by Facebook Messenger and is no longer available. Remove it if you have it in an older Flow, as Facebook Messenger will reject the full message if there is still a location quick reply defined.
@@ -424,7 +424,7 @@ The following Facebook (Meta) Messenger Templates are available:
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/26ca2e8-webchat.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/26ca2e8-webchat.jpg" width="100%" />
 </figure>
 
 The Webchat Channel features the configuration options of our Facebook (Meta) integration.
@@ -436,7 +436,7 @@ The Webchat will render HTML markup for outputs from the DEFAULT tab's text as w
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/8313bb3-line.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/8313bb3-line.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://developers.line.me/en/docs/messaging-api/" target="_blank">Link: LINE Message API</a></div>
 </figure>
 
@@ -454,7 +454,7 @@ The **LINE** tab provides two methods for creating and editing a message which i
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/6404b3e-twilio.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/6404b3e-twilio.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/voice/twiml" target="_blank">Link: Twilio Documentation</a></div>
 </figure>
 
@@ -477,7 +477,7 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/9819b1c-twiliosms.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/9819b1c-twiliosms.jpg" width="100%" />
   <div style="text-align: center;"><a href="https://www.twilio.com/docs/sms/twiml/message" target="_blank">Link: Twilio SMS Documentation</a></div>
 </figure>
 
@@ -494,11 +494,11 @@ In the endpoint editor of your **Twilio Endpoint** you can select the **Amazon P
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/892e801-teams.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/892e801-teams.jpg" width="100%" />
 </figure>
 
 !!! note "Teams Cards"
-    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint]({{config.site_url}}ai/endpoints/azure-bot-services#section-3-sending-messages-to-a-teams-bot/) page for information on how to send messages.
+    Structured content in Microsoft Teams is sent as so-called Cards. Refer to [Deployment a Microsoft Teams Endpoint](../../endpoints/azure-bot-services.md) page for information on how to send messages.
 <!-- need to change the link above  -->
 
 <div style="text-align: center; padding: 0px;"><a href="https://docs.microsoft.com/en-us/azure/bot-service/rest-api/bot-framework-rest-connector-add-rich-cards?view=azure-bot-service-3.0" target="_blank">Link: Microsoft Teams Documentation</a></div>
@@ -610,8 +610,6 @@ The **Bandwidth** tab provides two methods to create and edit messages that are 
 ## URL opening options in the existing browser tab in Webchat Widget
 <div class="divider"></div>
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.5.0-blue.svg)]({{config.site_url}})
-
 As of release v4.5, you can decide to open a URL in the same Webchat Widget window or in a new one when using Say Node option Text with Buttons, Gallery or List.
 
 **Say Node example using Text with Buttons**
@@ -626,49 +624,49 @@ As of release v4.5, you can decide to open a URL in the same Webchat Widget wind
 7. Depending on the configuration the URL will be opened in a separate tab or in the same tab.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3492532-Show_URL_in_same_tab.PNG" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/3492532-Show_URL_in_same_tab.PNG" width="75%" />
 </figure>
 
 Say Node configuration with 'URL Target' setting "Open URL in the same tab".
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
 </figure>
 
 Webchat with button "Show URL in same tab".
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/320961c-Cognigy_Website_same_tab.png" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/320961c-Cognigy_Website_same_tab.png" width="75%" />
 </figure>
 
 URL has been opened in the same tab.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3014d6c-Show_URL_in_new_tab.PNG" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/3014d6c-Show_URL_in_new_tab.PNG" width="75%" />
 </figure>
 
 Say Node configuration with 'URL Target' setting "Open URL in new tab".
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/83e1500-Webchat_conversation_same_tab.PNG" width="75%" />
 </figure>
 
 Webchat with button "Show URL in new tab".
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/af2f15e-URL_opened_in_new_tab.png" width="75%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/af2f15e-URL_opened_in_new_tab.png" width="75%" />
 </figure>
 
 URL has been opened in a new tab.
 
 ## AI-enhanced output
 
-To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md#rephrase-bot-outputs) article.
+To use AI-enhanced bot output rephrasing, read the [Generative AI](../../generative-ai.md) article.
 
 ## Handover Settings
 
 When using a handover, such as to a live agent, you can choose who receives the message from the virtual agent:
 
-- User and Agent — by default, both the end user and the human agent will receive the message.
-- User only — the end user will receive the message.
-- Agent only — the responsible human agent will receive the message.
+- **User and Agent** — by default, both the end user and the human agent will receive the message.
+- **User only** — the end user will receive the message.
+- **Agent only** — the responsible human agent will receive the message.

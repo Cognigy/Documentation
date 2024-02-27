@@ -10,7 +10,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.63-blue.svg)](../../../release-notes/4.63.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/other/search-extract-output.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/other/search-extract-output.png" width="80%"/>
 </figure>
 
 ## Description

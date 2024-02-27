@@ -1,15 +1,17 @@
 ---
- title: "Message Overview" 
- slug: "message overview" 
- hidden: false 
+title: "Basic Nodes" 
+slug: "basic-nodes" 
+hidden: false 
 ---
-# Message Overview
 
-Message Nodes are used to generate output that is sent back to the user:
+# Basic Nodes
+
+Basic Nodes are the fundamental Nodes you will need to create a Flow.
+
+You can use the following Basic Nodes:
 
 - [Say](say.md)
 - [Question](question.md)
 - [Optional Question](optional-question.md)
-- [Send SMTP Email](send-smtp-email.md)
-- [Email Notification](email-notification.md)
 - [Send Text](send-text.md)
+- [Code](code/overview.md)

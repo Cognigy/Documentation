@@ -6,7 +6,7 @@
 # Match Pattern
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/nlu/match-pattern.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/nlu/match-pattern.png" width="80%" />
 </figure>
 
 ## Description

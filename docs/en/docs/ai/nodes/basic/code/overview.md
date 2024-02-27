@@ -8,7 +8,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.68-blue.svg)](../../../../release-notes/4.68.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/code/code.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/code/code.png" width="80%" />
 </figure>
 
 ## Description
@@ -110,7 +110,7 @@ For example:
 - `conditionalEntryPointWasExecuted`
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/3c5a246-Screen_Shot_008.PNG" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/3c5a246-Screen_Shot_008.PNG" width="100%" />
 </figure>
 
 Additionally, if you've run a Flow before, the `context` object benefits from full IntelliSense support. When working with the `context` object in your code, you'll receive auto-complete suggestions based on the current context, making accessing and using the relevant information easier.

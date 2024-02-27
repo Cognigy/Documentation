@@ -74,7 +74,7 @@ To start using Salesforce as a handover provider with Cognigy.AI, follow these s
 
 ### Configure Handover Settings
 
-In the Salesforce settings of the [Handover to Agent](../flow-nodes/service/handover-to-agent.md) Node,
+In the Salesforce settings of the [Handover to Agent](../nodes/service/handover-to-agent.md) Node,
 configure the following settings:
 
 - **Send Transcript as a first message** — the setting allows Salesforce to receive conversation transcript as a first message. It is turned off by default.

@@ -1,12 +1,13 @@
 ---
- title: "Hangup" 
- slug: "hangup" 
- hidden: false 
+title: "Hang Up" 
+slug: "hangup"
+hidden: false 
 ---
-# Hangup
+
+# Hang Up
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/audiocodes/hang-up.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/audiocodes/hang-up.png" width="80%" />
   <figcaption>AudioCodes Hang Up</figcaption>
 </figure>
 

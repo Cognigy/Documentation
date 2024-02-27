@@ -8,7 +8,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.58-blue.svg)](../../../release-notes/4.58.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup.png" width="80%" />
 </figure>
 
 ## Description
@@ -21,7 +21,7 @@ The `operand` can be set manually to `Intent`, `State`, `Type` and `Mode`, or cu
 If you choose CognigyScript as the operand, you must use direct CognigyScript similar to the [If Node](../logic/if.md). You can also select to parse the CognigyScript as a string or not.
 
 !!! warning "Case Sensitivity"
-    All Lookup Case Nodes are case sensitive. Be careful to use the correct upper or lower case spelling in the **Value** field of your Case Nodes.
+    All Lookup Case Nodes are case-sensitive. Ensure that you use the correct upper or lower case spelling in the **Value** field of your Case Nodes.
 
 ### An alternative to nested IF Nodes
 
@@ -42,64 +42,64 @@ However, you can also select a level via the "Intent Level" dropdown if Intents 
 In this case, only the Intents of the chosen level are selectable in the Intent dropdown menu of the Case Nodes.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-intent.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-intent.png" width="100%" />
   <figcaption>An intent type Lookup Node with 3 cases</figcaption>
 </figure>
 
-!!! note "Want to know more about using Intents?"
-    Find more information about building Flows with intents on the **[NLU Overview Page](../../nlu/nlu-overview/overview.md)**.
+For more information about building Flows with Intents, refer to the [NLU Overview](../../nlu/nlu-overview/overview.md) page.
 
 ### Text
 
 By changing the lookup type to **Text**, the Flow will select a case that matches the value of `input.text`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-text.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-text.png" width="100%" />
   <figcaption>A Text type Lookup Node with 2 cases</figcaption>
 </figure>
 
 ### State
 
-By changing the lookup type to **[State](../../tools/interaction-panel/state.md)**, the Flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
+By changing the lookup type to [State](../../tools/interaction-panel/state.md), the Flow will select a case that matches the value of `input.state`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-state.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-state.png" width="100%" />
   <figcaption>A State type Lookup Node with 3 cases</figcaption>
 </figure>
 
-!!! note "What is State??"
-    States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. Find out more on the **[States Page]({{config.site_url}}ai/tools/interaction-panel/state/)**.
+States allow limitations to be placed on a conversation that restrict the valid Intents that the NLU has access to. For more information, refer to the [States](../../tools/interaction-panel/state.md) page.
 
 ### Type
 
 By changing the lookup type to **Type**, the Flow will select a case that matches the value of `input.type`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-type.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-type.png" width="100%" />
   <figcaption>A Type Lookup Node with 3 cases</figcaption>
 </figure>
 
 !!! note "What is Type?"
-    The **Type** is defined as a classification of the last user message as determined by the NLU. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer.* 
+    The **Type** is defined as a classification of the last user message as determined by the NLU. The type is an [Input](../../tools/interaction-panel/input.md) variable that can be one of the following values: Statement, Command, Greeting, BGreeting, whQuestion, howQuestion, ynQuestion, pAnswer or nAnswer. 
 
 ### Mode
 
 By changing the lookup type to **Mode**, the Flow will select a case that matches the value of `input.mode`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-mode.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-mode.png" width="100%" />
   <figcaption>A Mode type Lookup Node with 2 cases</figcaption>
 </figure>
 
 !!! note "What is Mode?"
-    The **Mode** provides information on what was contained in the last user message. The type is an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
+    The **Mode** provides information on what was contained in the last user message. The type is an [Input](../../tools/interaction-panel/input.md) variable that can be one of the following values: *TextOnly or TextData.* (Data only messages have an implicitly defined text that includes `DATA_ONLY_MESSAGE_` followed by a randomly generated string of 20 characters)
 
 ### Handover Status
 
-By changing the lookup type to **Handover Status**, the Flow will select a case that matches the value of `input.handover.status`. The case values must manually be written for type of lookup.
+By changing the lookup type to **Handover Status**,
+the Flow will select a case that matches the value of `input.handover.status`.
+The case values must manually be written for a type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-handover-status.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-handover-status.png" width="100%" />
   <figcaption>A Handover Status type Lookup Node with 4 cases</figcaption>
 </figure>
 
@@ -118,12 +118,12 @@ The table below shows handover statuses that you can select in the Case Node.
 By changing the lookup type to **CognigyScript**, the Flow will select a case that matches the value of any variable that is entered in the "Operator" field, either by using a *token* or by writing the variable path in *CognigyScript*. This feature makes it possible to change the Flow path based on any variable in the `input`, `context` or `profile`. The case values must manually be written for this type of lookup.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-cognigy-script.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-cognigy-script.png" width="100%" />
   <figcaption>Setting the Lookup type to CognigyScript</figcaption>
 </figure>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/lookup-cognigy-script-example.png" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/lookup-cognigy-script-example.png" width="100%" />
   <figcaption>A CognigyScript type Lookup Node with 3 cases based on a profile variable</figcaption>
 </figure>
 

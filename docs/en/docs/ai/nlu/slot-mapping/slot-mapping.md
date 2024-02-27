@@ -184,7 +184,7 @@ Cognigy.AI automatically detects the following Slots. All system-defined slot ta
 ---
 
 !!! tip "Time Zone & Date Slots"
-    Detection of dates depends on the time zone set for the [Agent](../../resources/manage/settings.md#timezone) or [Actions](../../flow-nodes/code/actions.md#actionssettimezoneoffset--apisettimezoneoffset).
+    Detection of dates depends on the time zone set for the [Agent](../../resources/manage/settings.md#timezone) or [Actions](../../nodes/basic/code/actions.md#actionssettimezoneoffset--apisettimezoneoffset).
 
 The following tables provide an overview of supported input patterns and formats. 
 

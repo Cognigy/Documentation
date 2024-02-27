@@ -33,7 +33,7 @@ User: Certainly
 Virtual agent: Let's start!
 ```
 
-Yes/No Intents feature is supported in the [Question](../../flow-nodes/message/question.md), [Optional Question](../../flow-nodes/message/optional-question.md) and [Code](../../flow-nodes/code/code.md) Nodes.
+Yes/No Intents feature is supported in the [Question](../../nodes/basic/question.md), [Optional Question](../../nodes/basic/optional-question.md) and [Code](../../nodes/basic/code/overview.md) Nodes.
 
 To set up this feature, do the following:
 
@@ -247,7 +247,7 @@ Yes/No Intents are evaluated independently of regular Intents and do not overwri
 
 **Q4**: Are Yes/No Intents independent of standard intent scoring?
 
-**A4**: Yes, the Yes/No Intents are completely independent of standard intent scoring (`input.intentScore` or `input.nlu.intentMapperResults`). They specifically find the types `nAnswer` and `yAnswer` within the Flow. These types are used for the **Yes/No** type in [Question Nodes](../../flow-nodes/message/question.md) and for [confirming intents](ml-intents.md), similar to [confirmation words](../../resources/manage/settings.md#additional-confirmation-words).
+**A4**: Yes, the Yes/No Intents are completely independent of standard intent scoring (`input.intentScore` or `input.nlu.intentMapperResults`). They specifically find the types `nAnswer` and `yAnswer` within the Flow. These types are used for the **Yes/No** type in [Question Nodes](../../nodes/basic/question.md) and for [confirming intents](ml-intents.md), similar to [confirmation words](../../resources/manage/settings.md#additional-confirmation-words).
 
 **Q5**: How are Yes/No Intents evaluated when the Execute Flow node is used with and without the **Parse Intents** toggled on?
 

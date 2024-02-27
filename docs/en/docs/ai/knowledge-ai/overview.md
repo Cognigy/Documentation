@@ -188,25 +188,25 @@ or rearrange the order of content to ensure the accuracy and relevance of the kn
 
 You will receive a response generated from the absorbed Knowledge.
 
-To learn more about the Search Extract Output Node, refer to the [related article](../flow-nodes/other-nodes/search-extract-output.md).
+To learn more about the Search Extract Output Node, refer to the [related article](../nodes/other-nodes/search-extract-output.md).
 
 ## Limitations
 
 The table below presents limitations. These limitations are subject to future changes by Cognigy.
 
-| Description                                                                                                        | Current Limit |
-|--------------------------------------------------------------------------------------------------------------------|---------------|
-| Maximum number of Knowledge Stores per project                                                                     | 10            |
-| Maximum number of Knowledge Sources per Store                                                                      | 10            |
-| Maximum file upload size for creating a Knowledge Source                                                           | 10 MB         |
-| Maximum number of source tags per Knowledge Source                                                                 | 10            |
-| Maximum number of source tags per [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md) | 5             |
-| Maximum number of Chunks per Knowledge Source                                                                      | 1000          |
-| Maximum number of Source metadata pairs                                                                            | 20            |
-| Maximum number of Chunk metadata pairs                                                                             | 20            |
-| Maximum number of characters for text per Chunk                                                                    | 2000          |
-| Maximum number of characters for metadata per Chunk                                                                | 1000          |
-| Maximum number of characters for metadata per Source                                                               | 1000          |
+| Description                                                                                                     | Current Limit |
+|-----------------------------------------------------------------------------------------------------------------|---------------|
+| Maximum number of Knowledge Stores per project                                                                  | 10            |
+| Maximum number of Knowledge Sources per Store                                                                   | 10            |
+| Maximum file upload size for creating a Knowledge Source                                                        | 10 MB         |
+| Maximum number of source tags per Knowledge Source                                                              | 10            |
+| Maximum number of source tags per [Search Extract Output Node](../nodes/other-nodes/search-extract-output.md)   | 5             |
+| Maximum number of Chunks per Knowledge Source                                                                   | 1000          |
+| Maximum number of Source metadata pairs                                                                         | 20            |
+| Maximum number of Chunk metadata pairs                                                                          | 20            |
+| Maximum number of characters for text per Chunk                                                                 | 2000          |
+| Maximum number of characters for metadata per Chunk                                                             | 1000          |
+| Maximum number of characters for metadata per Source                                                            | 1000          |
 
 !!! note
     Knowledge AI specific objects, such as Stores, Sources and Chunks, **are not** a part of Cognigy.AI [Snapshots](../resources/deploy/snapshots.md). Instead, you can use [Packages](../resources/manage/packages.md) to import or export Knowledge Stores.   
@@ -226,6 +226,6 @@ The table below presents limitations. These limitations are subject to future ch
 - [Cognigy Text Format](ctxt.md)
 - [PDF](pdf.md)
 - [Web Page](../knowledge-ai/web-page.md)
-- [Search Extract Output Node](../flow-nodes/other-nodes/search-extract-output.md)
+- [Search Extract Output Node](../nodes/other-nodes/search-extract-output.md)
 - [LLM](../resources/build/llm.md)
 - [Generative AI](../generative-ai.md)

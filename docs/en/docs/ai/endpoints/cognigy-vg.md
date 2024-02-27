@@ -18,7 +18,7 @@ Within our Cognigy.AI platform, you can connect Cognigy virtual agents to your c
 
 ## Voice Gateway Specific Nodes
 
-Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../flow-nodes/vg/voice-gateway.md) for more information.
+Cognigy.AI comes with built-in Nodes to control Voice Gateway. See [Voice Gateway Nodes](../nodes/voice/voice-gateway/overview.md) for more information.
 
 ## Call Meta Data
 
@@ -65,7 +65,7 @@ Voice Gateway identifies information about the caller and adds it to the Cognigy
 ```
 
 !!! note "NumberMetaData in Tokens"
-    All of the above are available as [Tokens]({{config.site_url}}ai/resources/manage/tokens/) inside Cognigy Text fields as well.
+    All of the above are available as [Tokens](../resources/manage/tokens.md) inside Cognigy Text fields as well.
 
 ## Generic Settings
 
@@ -94,7 +94,7 @@ Allows activating call events for a Flow.
 Select a call event from the [Voice Gateway Events](../../voicegateway/references/events/overview.md) list.
 This event that will trigger the action.
 
-If you have configured the same call event in both the Endpoint and the [Lookup](../flow-nodes/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
+If you have configured the same call event in both the Endpoint and the [Lookup](../nodes/logic/lookup.md) Node, the Endpoint settings will overwrite the Node settings.
 
 ### Call Event Settings
 

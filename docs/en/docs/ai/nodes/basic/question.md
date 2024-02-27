@@ -8,7 +8,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Updated in-v4.66-blue.svg)](../../../release-notes/4.66.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/question.png" width="80%" />
 </figure>
 
 ## Description
@@ -79,7 +79,7 @@ Question Nodes have a selection of types that determine the validation used befo
 Question node output types carry the same functionality as the [Say Node](say.md).
 
 !!! tip "Date Questions"
-    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [Datepicker](datepicker.md) for more information. 
+    In case the Question Type Date has been selected, the Question Node will automatically render a Datepicker if the channel permits. Refer to [Datepicker](../data/datepicker.md) for more information. 
 
 ## Reprompt Options
 
@@ -157,13 +157,13 @@ Skips the reprompt if an Intent was found in the input.
 Question results are always stored in `input.result`.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-context.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/question-context.png" width="60%" />
 </figure>
 
 If **Store Result in Context** is enabled, the Question Result will also be stored in the [Context](../../tools/interaction-panel/context.md) object. 
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-profile-storage.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/question-profile-storage.png" width="60%" />
 </figure>
 
 If **Store Result to Contact Profile** is enabled, the Question Result will also be stored in the [Profile](../../tools/interaction-panel/profile.md) object.
@@ -206,7 +206,7 @@ As of Release v4.4.0, we added the option **Handover to Human Agent**. Open the 
 When this escalation is hit, the conversation is handed to an agent, who can then help you finish the question step and hand it back.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-escalation-to-handover.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/question-escalation-to-handover.png" width="60%" />
 </figure>
 
 ## Reconfirmation Settings
@@ -235,7 +235,7 @@ This setting, when enabled, stores a more detailed JSON object under the result 
 When enabled, this setting will skip the Question if the answer is already provided in the input text.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/message/question-skip-if-answer-in-input.png" width="60%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/message/question-skip-if-answer-in-input.png" width="60%" />
 </figure>
 
 ### Additional Validation
@@ -253,7 +253,7 @@ This setting determines how long a user can have been "away" from the Node after
 <div class="divider"></div>
 
 !!! warning "Question Nodes and Intent Execution"
-    Question Nodes - by default - will be triggered again and again until a valid answer has been provided. In order to avoid this, you can opt for an [**Optional Question**]({{config.site_url}}ai/flow-nodes/message/optional-question/) or you can change the **Intent Execution** setting.
+    Question Nodes, by default, will be triggered repeatedly until a valid answer is provided. To avoid this, you can opt for an Optional Question or change the Intent Execution setting.
 
 !!! tip "Slot Fillers"
     Questions can be combined with **Slot Fillers** to create a so-called "Missing Pattern". This mechanism keeps asking the user for the missing information in a very natural way, until all questions have been answered.
@@ -261,7 +261,7 @@ This setting determines how long a user can have been "away" from the Node after
 ## Question Information in Input
 <div class="divider"></div>
 
-When a Question is "active", meaning an answer is being waited for, information about the Question is added to the Input object.
+When a question is active, indicating that an answer is awaited, information regarding the question is added to the Input object.
 
 ```JSON
 "activeQuestion": {

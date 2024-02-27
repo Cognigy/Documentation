@@ -9,7 +9,7 @@ hidden: false
 [![Version badge](https://img.shields.io/badge/Added in-v4.60-blue.svg)](../../../release-notes/4.60.md)
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/transcript-tile.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/transcript-tile.png" width="80%"/>
 </figure>
 
 ## Description
@@ -40,7 +40,7 @@ This approach allows human agents to have immediate access to this information,
 thereby facilitating more effective and efficient communication and decision-making during voice call interactions.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/ai-copilot/transcript-tile-example.png" width="80%"/>
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/transcript-tile-example.png" width="80%"/>
     <figcaption>Transcript Tile Widget in AI Copilot</figcaption>
 </figure>
 

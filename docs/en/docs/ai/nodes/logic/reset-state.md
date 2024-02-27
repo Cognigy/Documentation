@@ -6,7 +6,7 @@
 # Reset State
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/reset-state.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/reset-state.png" width="80%" />
 </figure>
 
 ## Description

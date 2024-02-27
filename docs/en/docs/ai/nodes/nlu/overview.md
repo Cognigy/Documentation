@@ -3,9 +3,12 @@ title: "NLU"
 slug: "nlu" 
 hidden: false 
 ---
+
 # NLU
 
-NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources:
+NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth level, enabling interactions with system resources.
+
+You can use the following NLU Nodes:
 
 - [Copy Slots To Context](copy-slots-to-context.md)
 - [Add Lexicon Keyphrase](add-lexicon-keyphrase.md)

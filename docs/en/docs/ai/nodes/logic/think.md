@@ -7,7 +7,7 @@ hidden: false
 # Think
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/logic/think.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/logic/think.png" width="80%" />
 </figure>
 
 ## Description

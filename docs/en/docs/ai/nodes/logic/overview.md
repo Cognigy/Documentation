@@ -1,11 +1,14 @@
 ---
- title: "Logic" 
- slug: "logic" 
- hidden: false 
+title: "Logic" 
+slug: "logic" 
+hidden: false 
 ---
+
 # Logic
 
 Logic Nodes allow you to customize your Flow's behavior. You can use them to control which parts of the Flow should run based on conditions or integrate with other Flows.
+
+You can use the following Logic Nodes:
 
 - [If](if.md)
 - [Lookup](lookup.md)

@@ -42,7 +42,7 @@ The Transcript Tile in the AI Copilot workspace acts as a chat interface for hum
 
 To activate the Transcript Tile feature for the AI Copilot workspace, go to the **Endpoint Settings** editor and then to the **Copilot** section. This Tile is recommended only for contact centers that use a standalone AI Copilot workspace, such as the one provided by Genesys.
 
-The Transcript Tile feature is intended specifically for [chat use cases](chat.md). For voice-related scenarios, use the [Copilot: Transcript Tile](../ai/flow-nodes/ai-copilot/transcript-tile.md) Node.
+The Transcript Tile feature is intended specifically for [chat use cases](chat.md). For voice-related scenarios, use the [Copilot: Transcript Tile](../ai/nodes/ai-copilot/transcript-tile.md) Node.
 
 | Setting                                                                                            | Description                                                                                                                                                                               |
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ The Transcript Tile feature is intended specifically for [chat use cases](chat.m
 
 - [AI Copilot Workspace](overview.md)
 - [Getting started with AI Copilot](getting-started.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../ai/nodes/ai-copilot/overview.md)
 - [AI Copilot Embedding](embedding.md)
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)

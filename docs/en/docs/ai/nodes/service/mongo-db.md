@@ -6,7 +6,7 @@
 # Mongo DB
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/services/mongo-db-find.png" width="80%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/services/mongo-db-find.png" width="80%" />
 </figure>
 
 ## Description
@@ -18,7 +18,7 @@ The MongoDB nodes lets you execute a range of operations on your MongoDB.
 <div class="divider"></div>
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/1f1446e-mongo-operations.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/1f1446e-mongo-operations.jpg" width="100%" />
 </figure>
 
 ### Find
@@ -30,7 +30,7 @@ The MongoDB query in JSON format.
  [MongoDB Documentation: Find](https://docs.mongodb.com/manual/reference/method/db.collection.find/)
   
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
 
 #### Result Storage
@@ -40,7 +40,7 @@ This section lets you configure where to store the result of the MongoDB request
 The advanced section exposes a number of extra settings.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37fb69f-mongodb-projection.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/37fb69f-mongodb-projection.jpg" width="100%" />
 </figure>
 
 ##### Projection
@@ -77,7 +77,7 @@ The MongoDB query in JSON format.
  [MongoDB Documentation: FindOne](https://docs.mongodb.com/manual/reference/method/db.collection.findOne/){:target="_blank"}
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
 
 #### Result Storage
@@ -87,7 +87,7 @@ This section lets you configure where to store the result of the MongoDB request
 The advanced section exposes a number of extra settings.
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/37fb69f-mongodb-projection.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/37fb69f-mongodb-projection.jpg" width="100%" />
 </figure>
 
 ##### Projection
@@ -130,7 +130,7 @@ The MongoDB update payload in JSON format.
  [MongoDB Documentation: UpdateOne](https://docs.mongodb.com/manual/reference/method/db.collection.updateOne/){:target="_blank"}
 
 <figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
+  <img class="image-center" src="{{config.site_url}}ai/nodes/images/0db9cb2-db-resultstorage.jpg" width="100%" />
 </figure>
 
 #### Result Storage

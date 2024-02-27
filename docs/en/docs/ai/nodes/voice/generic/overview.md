@@ -1,17 +1,23 @@
 ---
- title: "Generic Voice Nodes" 
- slug: "generic-voice-nodes" 
- hidden: false 
+title: "Generic Voice Nodes" 
+slug: "generic-voice-nodes" 
+hidden: false 
 ---
 
 # Generic Voice Nodes
 
-The Generic Voice Nodes allow Users to use a set of nodes for their voice flows which is not related to one specific endpoint. Voice nodes are compatible with both Voice Integrations, AudioCodes and VoiceGateway.
+The Generic Voice Nodes are a set of Nodes for creating voice Flows that are not specific to one Endpoint.
+These Voice Nodes are compatible with both voice integrations: AudioCodes and Voice Gateway.
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/flow-nodes/images/generic-voice/overview.png" width="80%" />
-  <figcaption>Generic Voice Nodes</figcaption>
-</figure>
+You can use the following Generic Voice Nodes:
 
-!!! note "Usage recommendation"
-    A general recommendation to use the Generic Voice Nodes for your voice flows to be more flexible while creating voice bots.
+- [Play URL](play-url.md)
+- [Send Metadata](send-metadata.md)
+- [Transfer](transfer.md)
+- [Hang Up](hang-up.md)
+- [Barge In - Config](barge-in-config.md)
+- [Continuous ASR - Config](continuous-asr-config.md)
+- [DTMF Collect - Config](dtmf-collect-config.md)
+- [Session Speech Parameters - Config](session-speech-parameters-config.md)
+- [User Input Timeout - Config](user-input-timeout-config.md)
+- [Mute Speech Input](mute-speech-input.md)
