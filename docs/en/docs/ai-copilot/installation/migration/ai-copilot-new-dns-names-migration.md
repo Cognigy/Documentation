@@ -27,7 +27,7 @@ Before starting the migration, accomplish the following preliminary tasks.
 
 ### Update Your `values.yaml` File
 
-Locate the `agentAssistBackend` and `agentAssistFrontend` sections in your `values.yaml` file. You will make changes here to specify the new DNS names while retaining the old ones for the transition period.
+Under the top level `ingress` section of your `values.yaml` file, locate the `agentAssistBackend` and `agentAssistFrontend` blocks. You will need to make some changes here to specify the new DNS names, while also retaining the old (legacy) ones for the transition period. Below is an example of how to update the `values.yaml` file:
 
 ```yaml
 agentAssistBackend:
@@ -56,8 +56,9 @@ Ensure the new DNS names are correctly configured in your DNS provider's setting
 After updating your `values.yaml` file with the new and legacy DNS names, proceed with the Helm upgrade command. This will apply the DNS changes to your environment.
 
 ```bash
-    helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version 4.68.0 --values cognigy-ai-values.yaml
+    helm upgrade --install --namespace cognigy-ai cognigy-ai oci://cognigy.azurecr.io/helm/cognigy.ai --version <helm-chart-version> --values cognigy-ai-values.yaml
 ```
+ℹ️Replace `<helm-chart-version>` with the version of the Helm chart you are using. The migration guide is based on the assumption that you are using at least version **4.68.0** of the Helm chart.
 
 ### Monitor the Transition
 
