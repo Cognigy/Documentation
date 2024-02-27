@@ -18,12 +18,12 @@ This DNS name change is designed to ensure minimal service interruption. AI Copi
 
 ## Prerequisites
 
-- Ensure you have administrative access to your DNS settings.
-- Backup your current `values.yaml` file.
+- Live Agent Helm chart version **4.68.0** or later
 
 ## Pre-Migration Tasks
 
-Before starting the migration, accomplish the following preliminary tasks.
+- Ensure you have administrative access to your DNS settings.
+- Backup your current `values.yaml` file.
 
 ### Update Your `values.yaml` File
 
