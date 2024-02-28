@@ -25,7 +25,7 @@
 
 
 ## Codecs supported
-The following codecs are supported:
+The following audio codecs are supported:
 
 - G.711 - ulaw and alaw (preferred)
 - OPUS
