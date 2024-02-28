@@ -6,9 +6,9 @@ hidden: false
 
 # SIP:request
 
-The `sip:request` command is used to send a SIP `INFO`, `NOTIFY,` or `MESSAGE` request on an established call,
+The `sip:request` verb is used to send a SIP `INFO`, `NOTIFY,` or `MESSAGE` request on an established call,
 which is an in-dialog request.
-This command allows an application to send SIP messages during a call,
+This verb allows an application to send SIP messages during a call,
 such as transmitting metadata to the calling SIP endpoint using a SIP `INFO` message.
 
 ```json

@@ -6,7 +6,7 @@ hidden: false
 
 # DTMF
 
-The `dtmf` command generates a string of DTMF digit signals, which are transmitted as RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).
+The `dtmf` verb generates a string of DTMF digit signals, which are transmitted as RTP payloads according to [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).
 
 ```json
 {

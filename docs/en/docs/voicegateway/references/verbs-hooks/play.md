@@ -6,7 +6,7 @@ hidden: false
 
 # Play
 
-The `play` command is used to stream recorded audio to a call.
+The `play` verb is used to stream recorded audio to a call.
 
 ```json
 {
@@ -20,7 +20,7 @@ The `play` command is used to stream recorded audio to a call.
 
 ### Configuration
 
-You can use the following options in the `play` command:
+You can use the following options in the `play` verb:
 
 | Parameters  | Description                                                                                                                                  | Required |
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -29,7 +29,7 @@ You can use the following options in the `play` command:
 | earlyMedia  | If this parameter is `true` and the call has not yet been answered, play the audio without answering the call. The default value is `false`. | No       |
 | timeoutSecs | The number of seconds to play the URLs.                                                                                                      | No       |
 | seekOffset  | The number of samples to seek into the URL.                                                                                                  | No       |
-| actionHook  | A webhook to receive an HTTP POST when the `play` command completes. | No       |
+| actionHook  | A webhook to receive an HTTP POST when the `play` verb completes. | No       |
 
 ## actionHook Properties
 

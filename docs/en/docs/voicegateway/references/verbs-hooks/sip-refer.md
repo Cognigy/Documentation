@@ -6,9 +6,9 @@ hidden: false
 
 # SIP:REFER
 
-The `sip:refer` command is used to transfer a call and disconnect it.
+The `sip:refer` verb is used to transfer a call and disconnect it.
 
-This command sends a `REFER` message to the carrier (SIP trunk) or SIP phone. For the transfer to be successful, the carrier or SIP phone needs to support the `REFER` message. Once the `sip:refer` is successfully completed, the call will be transferred and disconnected from Voice Gateway.
+This verb sends a `REFER` message to the carrier (SIP trunk) or SIP phone. For the transfer to be successful, the carrier or SIP phone needs to support the `REFER` message. Once the `sip:refer` is successfully completed, the call will be transferred and disconnected from Voice Gateway.
 
 ```json
 {
@@ -30,7 +30,7 @@ The full set of configuration parameters:
 | eventHook  | A webhook to receive an HTTP POST when `NOTIFY` messages of follow-on call status are received. | No       |
 | headers    | Additional SIP headers to include in the response. | No       |
 
-The `sip:refer` command completes when one of the following conditions is met:
+The `sip:refer` verb completes when one of the following conditions is met:
 
 - A failure response is received to the `REFER`.
 - A `202 Accepted` response is received in response to the `REFER`, and a `NOTIFY` of the follow-on call status with a final call status is received.

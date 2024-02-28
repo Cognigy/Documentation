@@ -6,7 +6,7 @@ hidden: false
 
 # Gather
 
-The `gather` command is used to collect DTMF or speech input.
+The `gather` verb is used to collect DTMF or speech input.
 
 ```json
 {
@@ -47,13 +47,13 @@ The full set of configuration parameters:
 | finishOnKey         | The DTMF key that signals the end of input.                                                                                                                                  | No       |
 | input               | An array specifying the allowed types of input: `['digits']`, `['speech']`, or `['digits', 'speech']`. The default value is `['digits']`.                                    | No       |
 | interDigitTimeout   | The amount of time to wait between digits after `minDigits` have been entered.                                                                                               | No       |
-| listenDuringPrompt  | If this parameter is `false`, the system will not listen for user speech until the [`say`](say.md) or [`play`](play.md) commands has completed. The default value is `true`. | No       |
+| listenDuringPrompt  | If this parameter is `false`, the system will not listen for user speech until the [`say`](say.md) or [`play`](play.md) verbs has completed. The default value is `true`. | No       |
 | minBargeinWordCount | If `bargein` is `true`, only halt speech when this many words are spoken. The default value is `1`.                                                                          | No       |
 | minDigits           | The minimum number of DTMF digits expected to gather. The default value is `1`.                                                                                              | No       |
 | maxDigits           | The maximum number of DTMF digits expected to gather.                                                                                                                        | No       |
 | numDigits           | The exact number of DTMF digits expected to gather.                                                                                                                          | No       |
 | partialResultHook   | A webhook POST to send interim transcription results to. Partial transcriptions are only generated if this property is set.                                                       | No       |
-| play                | A nested [`play`](play.md) command that can be used to prompt the user.                                                                                                      | No       |
+| play                | A nested [`play`](play.md) verb that can be used to prompt the user.                                                                                                      | No       |
 | recognizer          | Speech recognition options.                                                                                                                                                  | No       |
 
 ## Example

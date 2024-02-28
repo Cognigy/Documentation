@@ -6,9 +6,9 @@ hidden: false
 
 # Dial
 
-The `dial` command initiates a new call by connecting to a telephone number, a registered SIP user, or a SIP URI.
+The `dial` verb initiates a new call by connecting to a telephone number, a registered SIP user, or a SIP URI.
 
-In the example, the `dial` command creates a new call and joins it to a parent call. The `target` property specifies multiple call destinations attempted simultaneously.
+In the example, the `dial` verb creates a new call and joins it to a parent call. The `target` property specifies multiple call destinations attempted simultaneously.
 
 ```json
 {
@@ -103,7 +103,7 @@ If the SIP Carrier provider requires username/password authentication, specify t
 
 ## actionHook properties
 
-After the `dial` command ends, the `actionHook` will be triggered and it will contain the following properties:
+After the `dial` verb ends, the `actionHook` will be triggered and it will contain the following properties:
 
 | Property Name   | Description                                                                                           |
 |-----------------|-------------------------------------------------------------------------------------------------------|

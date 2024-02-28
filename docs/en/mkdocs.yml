@@ -627,7 +627,7 @@ nav:
   - Creating Outbound Calls:
     - voicegateway/creating-outbound-calls.md
   - References:
-    - Voice Gateway Commands:
+    - Voice Gateway Verbs:
       - voicegateway/references/verbs-hooks/overview.md
       - voicegateway/references/verbs-hooks/amd.md
       - voicegateway/references/verbs-hooks/config.md

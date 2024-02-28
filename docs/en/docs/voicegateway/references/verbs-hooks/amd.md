@@ -6,7 +6,7 @@ hidden: false
 
 # Answering Machine Detection (AMD)
 
-The Answering Machine Detection (AMD) feature can be enabled on outbound calls to provide an indication of whether a call has been answered by a person or a machine. To use this feature, provide the `amd` property in a [dial](dial.md) command.
+The Answering Machine Detection (AMD) feature can be enabled on outbound calls to provide an indication of whether a call has been answered by a person or a machine. To use this feature, provide the `amd` property in a [dial](dial.md) verb.
 
 In this example, the Answering Machine Detection feature is activated as soon as the call is answered, and later sends a webhook to `amd` to determine if a human or a machine has answered the call.
 
@@ -81,4 +81,4 @@ Multiple events can occur during a single call. For example, on a call to an ans
 
 ## Inbound calls
 
-You can use Answering Machine Detection for incoming calls by adding an `amd` property in a [`config`](config.md) command. It can be useful in situations where Voice Gateway is located behind a dialer. In these cases, the dialer initiates the outbound call and then links it to Voice Gateway via an `INVITE` request.
+You can use Answering Machine Detection for incoming calls by adding an `amd` property in a [`config`](config.md) verb. It can be useful in situations where Voice Gateway is located behind a dialer. In these cases, the dialer initiates the outbound call and then links it to Voice Gateway via an `INVITE` request.

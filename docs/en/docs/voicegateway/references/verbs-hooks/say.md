@@ -6,7 +6,7 @@ hidden: false
 
 # Say
 
-The `say` command is used to send synthesized speech to the remote party. The text provided may be either plain text or use SSML tags.
+The `say` verb is used to send synthesized speech to the remote party. The text provided may be either plain text or use SSML tags.
 
 ## Speech vendors
 

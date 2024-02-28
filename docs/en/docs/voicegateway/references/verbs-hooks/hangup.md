@@ -6,7 +6,7 @@ hidden: false
 
 # Hangup
 
-The `hangup` command terminates the call and ends the session.
+The `hangup` verb terminates the call and ends the session.
 
 ```json
 {

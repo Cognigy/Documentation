@@ -6,11 +6,11 @@ hidden: false
 
 # Transcribe
 
-The `transcribe` command is used to generate real-time transcriptions of speech.
+The `transcribe` verb is used to generate real-time transcriptions of speech.
 
-The `transcribe` command is only allowed to be nested within a [`dial`](dial.md) or [`listen`](listen.md) command.
-When used in a `dial` command, it enables long-running transcription of a phone call,
-while nesting within a `listen` command enables transcriptions of recorded messages, such as voicemail.
+The `transcribe` verb is only allowed to be nested within a [`dial`](dial.md) or [`listen`](listen.md) verb.
+When used in a `dial` verb, it enables long-running transcription of a phone call,
+while nesting within a `listen` verb enables transcriptions of recorded messages, such as voicemail.
 
 ```json
 {

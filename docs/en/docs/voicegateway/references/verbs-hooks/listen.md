@@ -6,10 +6,10 @@ hidden: false
 
 # Listen
 
-The `listen` command sends real-time audio streams to your application over a WebSocket connection for processing.
-The [Call Recording](../../webapp/recent-calls.md#call-recordings) feature relies on this command.
+The `listen` verb sends real-time audio streams to your application over a WebSocket connection for processing.
+The [Call Recording](../../webapp/recent-calls.md#call-recordings) feature relies on this verb.
 
-This table outlines the properties related to the audio streams sent by the `listen` command:
+This table outlines the properties related to the audio streams sent by the `listen` verb:
 
 | Properties      | Description    | 
 |-----------------|----------------|
@@ -22,7 +22,7 @@ One text frame is sent immediately
 after the WebSocket connection is established to send a JSON string with call attributes over an HTTP request.
 Additional metadata can also be added to this payload using the `metadata` parameter.
 
-The `listen` command can also be nested in a [`dial`](dial.md) or [`config`](config.md) command, allowing the audio for a call between two parties to be sent to a remote WebSocket server.
+The `listen` verb can also be nested in a [`dial`](dial.md) or [`config`](config.md) verb, allowing the audio for a call between two parties to be sent to a remote WebSocket server.
 
 ```json
 {
@@ -47,7 +47,7 @@ The full set of configuration parameters:
 | playBeep        | Enable a beep sound when the listen operation starts. The default value is `false`.                                                                                                                                                                                | No       |
 | sampleRate      | The sample rate of audio to send. Allowable values: `8000`, `16000`, `24000`, `48000`, or `64000`. The default value is `8000`.                                                                                                                                    | No       |
 | timeout         | The number of seconds of silence that terminates the listen operation.                                                                                                                                                                                             | No       |
-| transcribe      | A nested [transcribe](transcribe.md) command.                                                                                                                                                                                                                      | No       |
+| transcribe      | A nested [transcribe](transcribe.md) verb.                                                                                                                                                                                                                      | No       |
 | url             | The URL of the remote server to connect to.                                                                                                                                                                                                                        | Yes      |
 | wsAuth.username | The HTTP basic auth username to use on the WebSocket connection.                                                                                                                                                                                                   | No       |
 | wsAuth.password | The HTTP basic auth password to use on the WebSocket connection.                                                                                                                                                                                                   | No       |
@@ -71,7 +71,7 @@ The payload example:
 Audio can also be sent back over the WebSocket. This audio, if supplied, will be played out to the caller.
 
 !!! warning
-    Bidirectional audio is not supported when the [`listen`](listen.md) is nested in the context of a [`dial`](dial.md) command.
+    Bidirectional audio is not supported when the [`listen`](listen.md) is nested in the context of a [`dial`](dial.md) verb.
 
 The far-end WebSocket server supplies bidirectional audio by sending a JSON text frame over the WebSocket connection:
 
@@ -90,9 +90,9 @@ In the example above, raw (headerless) audio is sent. The audio must comply with
 
 Alternatively, a `wave` file format can be supplied by using type `wav` (or `wave`), and in this case, no `sampleRate` property is needed. In all cases, the audio must be base64 encoded when sent over the socket.
 
-If multiple `playAudio` commands are sent before the first has finished playing, they will be queued and played in order. You may have up to 10 queued `playAudio` commands at any time.
+If multiple `playAudio` verbs are sent before the first has finished playing, they will be queued and played in order. You may have up to 10 queued `playAudio` verbs at any time.
 
-Once a `playAudio` command has finished playing out the audio, a `playDone` JSON text frame will be sent over the WebSocket connection for confirmation.
+Once a `playAudio` verb has finished playing out the audio, a `playDone` JSON text frame will be sent over the WebSocket connection for confirmation.
 
 ```json
 {
@@ -100,7 +100,7 @@ Once a `playAudio` command has finished playing out the audio, a `playDone` JSON
 }
 ```
 
-A `killAudio` command can be sent by the WebSocket server to stop the playback of audio that was started via a previous `playAudio` command:
+A `killAudio` verb can be sent by the WebSocket server to stop the playback of audio that was started via a previous `playAudio` verb:
 
 ```json
 {
@@ -108,7 +108,7 @@ A `killAudio` command can be sent by the WebSocket server to stop the playback o
 }
 ```
 
-If the WebSocket connection wishes to end the `listen`, it can send a disconnect command:
+If the WebSocket connection wishes to end the `listen`, it can send a disconnect verb:
 
 ```json
 {
