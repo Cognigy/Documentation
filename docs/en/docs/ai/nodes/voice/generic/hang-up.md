@@ -14,7 +14,6 @@
 <div class="divider"></div>
 
 The Hang Up Node will instruct the system to end the call.
-<br/><br/>
 
 | Parameter          | Type | Description                                            |
 |--------------------|------|--------------------------------------------------------|

@@ -15,9 +15,9 @@
 
 <div class="divider"></div>
 The Barge In - Config Node is a session config that enables the interruption of the bot.
-<br/><br/>
+
 When executed, the settings will apply for the remainder of the session.
-<br/><br/>
+
 
 | Parameter                | Type          | Description                                                                                                                                    |
 |--------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -95,18 +95,76 @@ The Wait for Input Node waits for user input and continues Flow execution.
 
 The Sleep Node pauses execution for a number of milliseconds. This Node used to be known as the Pause Node. 
 
+### [Reset State](./logic/reset-state.md)
+
+With the Reset State Node, the Flow's [State](../tools/interaction-panel/state.md) can be reset.
+
 ### [Set State](./logic/set-state.md)
 
 With the Set State Node, the Flow's [State](../tools/interaction-panel/state.md) can be changed.
 
-### [Reset State](./logic/reset-state.md)
+### [Add To Context](./logic/add-to-context.md) 
 
-With the Reset State Node, the Flow's [State](../tools/interaction-panel/state.md) can be reset.
+This Node is used to store information in the Cognigy [Context](../tools/interaction-panel/context.md), so that it can be used throughout the session on subsequent user inputs.
+
+### [Remove From Context](./logic/remove-from-context.md)
+
+This Node is used to remove information from the Cognigy [Context](../tools/interaction-panel/context.md).
+
+### [Switch Locale](./logic/switch-locale.md)
+
+This Node is used to change to an alternate [Locale](../resources/manage/localization.md) during a conversation. It is common to use this node after language detection or based on the region of the user to execute a change to the conversational language or structure based on an assessment of the user's region or spoken language.
 
 ## [Voice Nodes](voice/overview.md)
 <div class="divider"></div>
 
 Voice Nodes are for developing a voice agent.
+
+### [Generic Voice Nodes](voice/generic/overview.md)
+
+#### [Barge In - Config](voice/generic/barge-in-config.md)
+
+This Node is a session config that enables the interruption of the bot.
+
+When executed, the settings will apply for the remainder of the session.
+
+#### [Continuous ASR - Config](voice/generic/continuous-asr-config.md)
+
+Continuous ASR enables the system to concatenate multiple STT recognitions of the user and then send them as a single textual message to the bot.
+
+#### [DTMF Collect - Config](voice/generic/dtmf-collect-config.md)
+
+Enables capturing of DTMF signals by the bot during the entire call session.
+
+When executed, the settings will apply for the remainder of the session.
+
+#### [Hang Up](voice/generic/hang-up.md)
+
+The Hang Up Node will instruct the system to end the call.
+
+#### [Mute Speech Input](voice/generic/mute-speech-input.md)
+
+This Node controls when speech user inputs can be collected in your Flow.
+
+#### [Play URL](voice/generic/play-url.md)
+
+The Play URL Node lets you stream a sound file into the call with the ability to loop it. MP3 and WAV encoded files are supported.
+
+#### [Send Metadata](voice/generic/send-metadata.md)
+
+The Send Meta Data Node sends metadata via SIP INFO messages to the connected SIP trunk.
+
+#### [Session Speech Parameters - Config](voice/generic/session-speech-parameters-config.md)
+
+This Node enables the change of speech parameters during the Flow.
+
+#### [Transfer](voice/generic/transfer.md)
+
+This Node lets pass an active call to a tel or sip target.
+
+#### [User Input Timeout - Config](voice/generic/user-input-timeout-config.md)
+
+This Node defines the action that the virtual agent should take if it does not receive any input from the user within a certain timeframe.
 
 ## [Analytics Nodes](./analytics/overview.md)
 <div class="divider"></div>
@@ -119,7 +177,7 @@ This Node can be used to activate a [Contact Profile](../resources/manage/contac
 
 ### [Deactivate Profile](./analytics/deactivate-profile.md)
 
-Can be used to deactivate the [Contact Profile](../resources/manage/contact-profiles.md).
+This Node can be used to deactivate the [Contact Profile](../resources/manage/contact-profiles.md).
 
 ### [Update Profile](./analytics/update-profile.md)
 

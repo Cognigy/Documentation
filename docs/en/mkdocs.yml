@@ -206,16 +206,17 @@ nav:
         - ai/nodes/voice/overview.md
         - Generic Voice Nodes:
             - ai/nodes/voice/generic/overview.md
-            - ai/nodes/voice/generic/play-url.md
-            - ai/nodes/voice/generic/send-metadata.md
-            - ai/nodes/voice/generic/transfer.md
-            - ai/nodes/voice/generic/hang-up.md
             - ai/nodes/voice/generic/barge-in-config.md
             - ai/nodes/voice/generic/continuous-asr-config.md
             - ai/nodes/voice/generic/dtmf-collect-config.md
-            - ai/nodes/voice/generic/session-speech-parameters-config.md
-            - ai/nodes/voice/generic/user-input-timeout-config.md
+            - ai/nodes/voice/generic/hang-up.md
             - ai/nodes/voice/generic/mute-speech-input.md
+            - ai/nodes/voice/generic/play-url.md
+            - ai/nodes/voice/generic/send-metadata.md
+            - ai/nodes/voice/generic/session-speech-parameters-config.md
+            - ai/nodes/voice/generic/transfer.md
+            - ai/nodes/voice/generic/user-input-timeout-config.md
+
         - Voice Gateway:
             - ai/nodes/voice/voice-gateway/overview.md
             - ai/nodes/voice/voice-gateway/dtmf.md
