@@ -479,4 +479,4 @@ This Node searches through data within the Knowledge AI solution, extracts a rel
 
 ### [Set Translation](other-nodes/set-translation.md)
 
-This Node enables the override of real-time translation settings for the ongoing session. Translation settings are defined on the [Agent Settings](../../resources/manage/settings.md) page.
+This Node enables the override of real-time translation settings for the ongoing session. Translation settings are defined on the [Agent Settings](../resources/manage/settings.md) page.
