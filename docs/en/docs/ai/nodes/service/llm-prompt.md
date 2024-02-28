@@ -16,7 +16,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-The LLM Prompt Node lets you use prompts with different LLM models to generate text and/or structured content.
+The LLM Prompt Node lets you use prompts with different LLM models to generate text or structured content.
 
 Before using this Node, set the Generative AI provider in the [Settings](../../generative-ai.md#set-up-generative-ai).
 You can configure the Node to either use the default model defined in the Settings or choose a specific configured LLM.

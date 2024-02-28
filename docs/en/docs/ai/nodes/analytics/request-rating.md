@@ -15,8 +15,6 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-Cognigy introduces as of release Cognigy.AI (4.10.0) a new Flow Node Request Rating. 
-
 The Request Rating Node is used to request a rating. If the Node is triggered in your webchat conversation, you will see the rating dialog.
 
 <figure>

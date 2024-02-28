@@ -12,10 +12,10 @@ The xApp Flow Nodes allow creating xApps, flexible micro-web applications for cu
 
 Cognigy.AI supports the following Nodes:
 
- - [xApp: Init Session](init-xApp-session.md)
- - [xApp: Get Session PIN](get-xApp-session-PIN.md)
- - [xApp: Show HTML](set-html-xApp-state.md)
- - [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
+- [xApp: Init Session](init-xApp-session.md)
+- [xApp: Get Session PIN](get-xApp-session-PIN.md)
+- [xApp: Show Adaptive Card](set-AdaptiveCard-xApp-state.md)
+- [xApp: Show HTML](set-html-xApp-state.md)
    
 ## More Information
 

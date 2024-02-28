@@ -13,7 +13,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-This node detects and handles user inactivity, freeing up capacity for the human agent team. To configure this node, specify the time in minutes during which the user can be inactive.
+This Node detects and handles user inactivity, freeing up capacity for the human agent team. To configure this node, specify the time in minutes during which the user can be inactive.
 
 To use the Node, first configure the [Lookup](../logic/lookup.md) Node to enable different inactivity behaviors.
 

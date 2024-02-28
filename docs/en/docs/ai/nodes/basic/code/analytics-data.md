@@ -7,7 +7,7 @@
 ## Description
 <div class="divider"></div>
 
-Within a [Code Node]({{config.site_url}}ai/nodes/code/code/) you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
+Within a [Code Node](overview.md) you can modify certain parts of the analytics data to get more control of what exactly is written to analytics.
 
 You can access the analytics data in a code node by using the key `analyticsdata`. For example:
 
@@ -29,7 +29,7 @@ The following fields can be overwritten in a Code Node:
 | intentScore    | The score of the intent that was found                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Number          |
 | inputText      | The input text.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | String          |
 | inputData      | The input data object.                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | {"key":"value"} |
-| state          | The [State]({{config.site_url}}ai/tools/interaction-panel/state/) the Flow is currently in                                                                                                                                                                                                                                                                                                                                                                                                | String          |
+| state          | The [State](../../../tools/interaction-panel/state.md) the Flow is currently in                                                                                                                                                                                                                                                                                                                                                                                                           | String          |
 | slots          | The slots that were found in the user's input                                                                                                                                                                                                                                                                                                                                                                                                                                             | Object          |
 | completedGoals | A list of goals the user has completed                                                                                                                                                                                                                                                                                                                                                                                                                                                    | List of Strings |
 | understood     | Whether the input was understood. An input is counted as understood if an Intent or a Slot is found, the input is marked as understood via the Code Node or Overwrite Analytics Node, or the type of sentence is pAnswer, nAnswer, or Greeting (if Confirmation Word logic is activated). In all other cases, it is marked as not understood, except if there is an active handover (without activation of an agent Assist Flow) or a message has been marked as `Don't count` or `Null`. | Boolean         |
@@ -58,7 +58,7 @@ analyticsdata.custom2 = JSON.stringify(customData);
 ``` 
 
 !!! warning "Max length of custom fields"
-    You can store a maximum of 512 characters as the value for each of the custom fields
+    You can store a maximum of 512 characters as the value for each custom field.
 
 ## Analytics data life span
 <div class="divider"></div>

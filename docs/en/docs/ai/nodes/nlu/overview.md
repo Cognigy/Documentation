@@ -10,16 +10,15 @@ NLU Flow Nodes extend the toolset provided by the basic nodes to a more in-depth
 
 You can use the following NLU Nodes:
 
-- [Copy Slots To Context](copy-slots-to-context.md)
 - [Add Lexicon Keyphrase](add-lexicon-keyphrase.md)
+- [Clean Text](clean-text.md)
+- [Copy Slots To Context](copy-slots-to-context.md)
 - [Disable Slot Fillers](disable-slot-fillers.md)
 - [Enable Slot Fillers](enable-slot-fillers.md)
 - [Execute Cognigy NLU](execute-cognigy-nlu.md)
-- [Clean Text](clean-text.md)
 - [Fuzzy Search](fuzzy-search.md)
 - [Match Pattern](match-pattern.md)
 - [Regex Slot Filler](regex-slotfiller.md)
-
 
 <blockquote class="callout callout_info" theme="📘">
     <span class="callout-icon">▶️</span>

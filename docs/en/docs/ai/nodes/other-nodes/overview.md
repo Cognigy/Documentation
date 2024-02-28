@@ -8,7 +8,7 @@ hidden: false
 
 Nodes without assigned categories:
 
-- [Log Message](log-message.md)
-- [Set Translation](set-translation.md)
 - [Knowledge Search](knowledge-search.md)
+- [Log Message](log-message.md)
 - [Search Extract Output](search-extract-output.md)
+- [Set Translation](set-translation.md)

@@ -14,7 +14,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the node is saved. If the transpilation fails the code will be saved and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code.
+Code Nodes enable a Flow creator to execute custom JavaScript or TypeScript code within the Flow. The editor has full IntelliSense and exposes all Cognigy objects and actions. For better performance, the TypeScript code will be transpiled when the node is saved. If the transpilation fails, the code will be saved and an error icon will appear in the top right corner of the Code Node, indicating that there is a potential issue with the code.
 
 The execution of the Code Node will be synchronous, the Flow will continue after the Code Node has finished executing.
 
@@ -22,7 +22,7 @@ Just as within other Nodes, `input`, `context` and `profile` can be accessed (an
 
 The `actions` object provides access to most internal Cognigy functions within the Code Node. For more information, refer to [Actions](actions.md).
 
-The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](er).
+The `getTextCleaner` function allows you to get access to an instance of the [Text Cleaner](modules.md#text-cleaner).
 
 The `lastConversationEntries` array contains the user inputs and bot outputs for the past 10 turns of the conversation in the following format:
 
@@ -43,8 +43,8 @@ For convenience, the `lodash` ([https://lodash.com/](https://lodash.com/)) and `
 
 ## Restrictions
 
-- Maximum number of characters in the code editor is 200K.
-- Maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed under input.codeNodeError.message. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../../resources/manage/extensions.md#extension-marketplace).
+- The maximum number of characters in the code editor is 200K.
+- The maximum code execution time is 1 second. If the limit is exceeded, an error is returned, and the message can be accessed under input.codeNodeError.message. The maximum execution time is not configurable. To run code that takes longer than one second to execute, we recommend using custom [Extensions](../../../resources/manage/extensions.md#extension-marketplace).
 
 ## Sending Facebook JSON
 <div class="divider"></div>

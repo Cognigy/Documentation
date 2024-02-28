@@ -13,7 +13,7 @@
 ## Description
 <div class="divider"></div>
 
-A **Trigger Function** is used to execute a [Function](../../resources/build/functions.md).
+This Node is used to execute a [Function](../../resources/build/functions.md).
 
 If the Function was successfully scheduled, it will execute the "On Scheduled" branch, otherwise it will execute the "On Scheduling Failed" branch.
 

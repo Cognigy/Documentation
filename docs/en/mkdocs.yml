@@ -219,24 +219,26 @@ nav:
 
         - Voice Gateway:
             - ai/nodes/voice/voice-gateway/overview.md
+            - ai/nodes/voice/voice-gateway/call-recording.md
             - ai/nodes/voice/voice-gateway/dtmf.md
             - ai/nodes/voice/voice-gateway/hangup.md
+            - ai/nodes/voice/voice-gateway/mute-speech-input.md
             - ai/nodes/voice/voice-gateway/parameter-details.md
             - ai/nodes/voice/voice-gateway/play.md
             - ai/nodes/voice/voice-gateway/send-metadata.md
             - ai/nodes/voice/voice-gateway/set-session-config.md
             - ai/nodes/voice/voice-gateway/transfer.md
-            - ai/nodes/voice/voice-gateway/call-recording.md
-            - ai/nodes/voice/voice-gateway/mute-speech-input.md
+
         - AudioCodes:
             - ai/nodes/voice/audiocodes/overview.md
+            - ai/nodes/voice/audiocodes/call-recording.md
+            - ai/nodes/voice/audiocodes/hangup.md
+            - ai/nodes/voice/audiocodes/play-url.md
+            - ai/nodes/voice/audiocodes/send-meta-data.md
             - ai/nodes/voice/audiocodes/send-message.md
             - ai/nodes/voice/audiocodes/set-session-params.md
-            - ai/nodes/voice/audiocodes/play-url.md
             - ai/nodes/voice/audiocodes/transfer-vg.md
-            - ai/nodes/voice/audiocodes/hangup.md
-            - ai/nodes/voice/audiocodes/send-meta-data.md
-            - ai/nodes/voice/audiocodes/call-recording.md
+
     - Analytics:
       - ai/nodes/analytics/overview.md
       - ai/nodes/analytics/update-profile.md
@@ -251,27 +253,28 @@ nav:
       - ai/nodes/analytics/set-rating.md
     - Service:
       - ai/nodes/service/overview.md
-      - ai/nodes/service/http-request.md
-      - ai/nodes/service/mongo-db.md
-      - ai/nodes/service/ms-sql.md
       - ai/nodes/service/check-agent-availability.md
       - ai/nodes/service/close-handover.md
       - ai/nodes/service/gpt-conversation.md
       - ai/nodes/service/handover-to-agent.md
+      - ai/nodes/service/http-request.md
       - ai/nodes/service/llm-prompt.md
+      - ai/nodes/service/mongo-db.md
+      - ai/nodes/service/ms-sql.md
       - ai/nodes/service/set-handover-inactivity.md
       - ai/nodes/service/trigger-function.md      
     - NLU:
       - ai/nodes/nlu/overview.md
+      - ai/nodes/nlu/add-lexicon-keyphrase.md
+      - ai/nodes/nlu/clean-text.md
       - ai/nodes/nlu/copy-slots-to-context.md
       - ai/nodes/nlu/disable-slot-fillers.md
       - ai/nodes/nlu/enable-slot-fillers.md
-      - ai/nodes/nlu/add-lexicon-keyphrase.md
       - ai/nodes/nlu/execute-cognigy-nlu.md
-      - ai/nodes/nlu/regex-slotfiller.md
-      - ai/nodes/nlu/match-pattern.md
       - ai/nodes/nlu/fuzzy-search.md
-      - ai/nodes/nlu/clean-text.md
+      - ai/nodes/nlu/match-pattern.md
+      - ai/nodes/nlu/regex-slotfiller.md
+
     - Data:
       - ai/nodes/data/overview.md
       - ai/nodes/data/datepicker.md

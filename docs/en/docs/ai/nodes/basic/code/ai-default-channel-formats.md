@@ -5,9 +5,9 @@
 ---
 # AI Default Channel Formats
 
-As described in [Channel Output]({{config.site_url}}ai/nodes/code/channel-output/), you can send JSON-formatted output directly against your [Endpoints](../../../endpoints/overview.md) for it to be output to the respective channels.
+As described in [Channel Output](channel-output.md), you can send JSON-formatted output directly against your [Endpoints](../../../endpoints/overview.md) for it to be output to the respective channels.
 
-The AI Default Channel is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels (see our [Say]({{config.site_url}}ai/nodes/message/say/) Node documentation for more information).
+The AI Default Channel is special in a way that content from the Default Channel is automatically converted into the correct payloads for all other channels (see our [Say](../../basic/say.md) Node documentation for more information).
 
 Using the [Code](overview.md) Node, you can also send JSON-formatted output to the Endpoints for the AI Default Channel, and it will handle the conversion into the appropriate content. The required payload formats are described below. 
 

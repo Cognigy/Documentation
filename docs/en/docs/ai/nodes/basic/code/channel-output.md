@@ -31,7 +31,7 @@ See the next sections for the required format.
 ## AI Default Channel
 <div class="divider"></div>
 
-Cognigy AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format]({{config.site_url}}ai/nodes/code/ai-default-channel-formats/).
+Cognigy AI Default Channel has a specific channel format which you can find more about at [AI Default Channel Format](ai-default-channel-formats.md).
 
 ## Alexa
 <div class="divider"></div>
@@ -199,7 +199,7 @@ The following outputs a simple confirm prompt to the contact:
 ## Smooch
 <div class="divider"></div>
 
-[:link: Smooch messaging API](https://docs.smooch.io/rest/?shell#message-types)
+[Smooch messaging API](https://docs.smooch.io/rest/?shell#message-types)
 
 ### Example
 ---
