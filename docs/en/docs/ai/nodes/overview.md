@@ -17,7 +17,7 @@ Node Categories:
 - [Service](#service-nodes)
 - [NLU](#nlu-nodes)
 - [Data](#data-nodes)
-- [AI Copilot](#ai-copilot)
+- [AI Copilot](#ai-copilot-nodes)
 - [xApps](#xApps)
 - [Other](other-nodes/overview.md)
 
@@ -393,7 +393,7 @@ The Send Email Node can be used to send an email message directly from within th
 
 This Node allows you to send quick and easy emails during sessions or for in-house communications without requiring any provider settings to be set up in the UI. Instead, you can configure the necessary provider settings in the environment variables and secrets. Only one provider can be set up at a time.
 
-## [AI Copilot](ai-copilot/overview.md)
+## [AI Copilot Nodes](ai-copilot/overview.md)
 <div class="divider"></div>
 
 Nodes for creating the AI Copilot workspace.
@@ -436,7 +436,7 @@ This Node updates the existing AI Copilot workspace grid in the AI Copilot Confi
 
 This Node captures the most recent customer response and displays it on a designated Widget within the AI Copilot Workspace.
 
-## [xApps](xApp/overview.md)
+## [xApp Nodes](xApp/overview.md)
 <div class="divider"></div>
 
 Nodes for creating xApps.

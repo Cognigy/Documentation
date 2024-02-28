@@ -282,27 +282,28 @@ nav:
       - ai/nodes/data/email-notification.md
     - AI Copilot:
       - ai/nodes/ai-copilot/overview.md
+      - ai/nodes/ai-copilot/set-adaptive-card-tile.md
+      - ai/nodes/ai-copilot/set-html-tile.md
+      - ai/nodes/ai-copilot/set-iframe-tile.md
       - ai/nodes/ai-copilot/identity-tile.md
+      - ai/nodes/ai-copilot/knowledge-tile.md
       - ai/nodes/ai-copilot/next-action-tile.md
       - ai/nodes/ai-copilot/sentiment-tile.md
-      - ai/nodes/ai-copilot/set-html-tile.md
-      - ai/nodes/ai-copilot/set-adaptive-card-tile.md
-      - ai/nodes/ai-copilot/set-iframe-tile.md
       - ai/nodes/ai-copilot/set-grid.md
       - ai/nodes/ai-copilot/transcript-tile.md
-      - ai/nodes/ai-copilot/knowledge-tile.md
+
     - xApps:
       - ai/nodes/xApp/overview.md
       - ai/nodes/xApp/init-xApp-session.md
       - ai/nodes/xApp/get-xApp-session-PIN.md
-      - ai/nodes/xApp/set-html-xApp-state.md
       - ai/nodes/xApp/set-AdaptiveCard-xApp-state.md
+      - ai/nodes/xApp/set-html-xApp-state.md
     - Other Nodes:
       - ai/nodes/other-nodes/overview.md
-      - ai/nodes/other-nodes/log-message.md
-      - ai/nodes/other-nodes/set-translation.md
       - ai/nodes/other-nodes/knowledge-search.md
+      - ai/nodes/other-nodes/log-message.md
       - ai/nodes/other-nodes/search-extract-output.md
+      - ai/nodes/other-nodes/set-translation.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
