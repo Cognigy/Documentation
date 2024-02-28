@@ -627,20 +627,6 @@ nav:
   - Creating Outbound Calls:
     - voicegateway/creating-outbound-calls.md
   - References:
-    - Voice Gateway Verbs:
-      - voicegateway/references/verbs-hooks/overview.md
-      - voicegateway/references/verbs-hooks/amd.md
-      - voicegateway/references/verbs-hooks/config.md
-      - voicegateway/references/verbs-hooks/dial.md
-      - voicegateway/references/verbs-hooks/dtmf.md
-      - voicegateway/references/verbs-hooks/gather.md
-      - voicegateway/references/verbs-hooks/hangup.md
-      - voicegateway/references/verbs-hooks/listen.md
-      - voicegateway/references/verbs-hooks/play.md
-      - voicegateway/references/verbs-hooks/say.md
-      - voicegateway/references/verbs-hooks/sip-refer.md
-      - voicegateway/references/verbs-hooks/sip-request.md
-      - voicegateway/references/verbs-hooks/transcribe.md
     - Voice Gateway Events:
       - voicegateway/references/events/overview.md
       - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
@@ -661,6 +647,20 @@ nav:
       - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
       - voicegateway/references/sip-trunk-providers.md
+    - Voice Gateway Verbs:
+      - voicegateway/references/verbs-hooks/overview.md
+      - voicegateway/references/verbs-hooks/amd.md
+      - voicegateway/references/verbs-hooks/config.md
+      - voicegateway/references/verbs-hooks/dial.md
+      - voicegateway/references/verbs-hooks/dtmf.md
+      - voicegateway/references/verbs-hooks/gather.md
+      - voicegateway/references/verbs-hooks/hangup.md
+      - voicegateway/references/verbs-hooks/listen.md
+      - voicegateway/references/verbs-hooks/play.md
+      - voicegateway/references/verbs-hooks/say.md
+      - voicegateway/references/verbs-hooks/sip-refer.md
+      - voicegateway/references/verbs-hooks/sip-request.md
+      - voicegateway/references/verbs-hooks/transcribe.md
   - Glossary:
     - voicegateway/glossary.md
   - Release Notes:
