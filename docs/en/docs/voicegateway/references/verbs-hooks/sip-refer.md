@@ -1,6 +1,6 @@
 ---
-title: "SIP:REFER"
-slug: "SIP:REFER"
+title: "SIP:refer"
+slug: "SIP:refer"
 hidden: false
 ---
 
