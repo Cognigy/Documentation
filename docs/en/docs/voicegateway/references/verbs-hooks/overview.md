@@ -8,9 +8,7 @@ hidden: false
 
 To create a voice agent,
 you need to build a Flow on the Cognigy.AI side using [Voice Nodes](../../../ai/flow-nodes/vg/voice-gateway.md).
-These Nodes provide the basic verbs required for your voice agent. If you require additional verb that are not available in the Voice Nodes,
-you can add them using a [Code Node](#custom-verbs-in-a-code-node). 
-
+These Nodes provide the basic verbs required for your voice agent. If you require additional verbs that are not available in the Voice Nodes, you can add them using a [Code Node](#custom-verbs-in-a-code-node). 
 For incoming calls, you can use Voice Nodes and a Code Node. However, for outgoing calls, you must specify all parameters in the call request body, as described in the [Advanced Configuration Request](../../creating-outbound-calls.md#advanced-configuration-request) section.
 
 ## List of Verbs
