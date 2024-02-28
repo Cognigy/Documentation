@@ -4,7 +4,7 @@ slug: "vg-verbs"
 hidden: false
 ---
 
-# Voice Gateway Verb
+# Voice Gateway Verbs
 
 To create a voice agent,
 you need to build a Flow on the Cognigy.AI side using [Voice Nodes](../../../ai/flow-nodes/vg/voice-gateway.md).
