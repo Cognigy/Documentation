@@ -13,7 +13,7 @@ This verb sends a `REFER` message to the carrier (SIP trunk) or SIP phone. For t
 ```json
 {
   "verb": "sip:refer",
-  "referTo": "49XXXXXXXXXXX",
+  "referTo": "+49XXXXXXXXXXX",
   "actionHook": "/action"
 }
 ```

@@ -17,7 +17,7 @@ such as transmitting metadata to the calling SIP endpoint using a SIP `INFO` mes
   "method": "INFO",
   "headers": {
     "X-Metadata": "my sip metadata"
-  }
+  },
   "actionHook": "/info"
 }
 ```
