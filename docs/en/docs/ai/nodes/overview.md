@@ -24,6 +24,7 @@ Node Categories:
 If you want to create a custom Node, go to the [Extensions](../resources/manage/extensions.md) section.
 
 Note that Nodes in the Cognigy.AI interface can belong to multiple categories for easy navigation. For example, the Code Node is in Basic and Data categories, the MongoDB Nodes are in Service and Data, and the Look up Node are in Logic and Basic.
+In the Node reference below, each node is assigned to a single category to avoid duplicates.
 
 ## [Basic Nodes](basic/overview.md)
 <div class="divider"></div>
@@ -121,6 +122,8 @@ This Node is used to change to an alternate [Locale](../resources/manage/localiz
 Voice Nodes are for developing a voice agent.
 
 ### [Generic Voice Nodes](voice/generic/overview.md)
+
+The Generic Voice Nodes are a set of Nodes for creating voice Flows that are not specific to one Endpoint. These Voice Nodes are compatible with both voice integrations: AudioCodes and Voice Gateway.
 
 #### [Barge In - Config](voice/generic/barge-in-config.md)
 
