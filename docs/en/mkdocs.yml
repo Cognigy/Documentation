@@ -659,6 +659,20 @@ nav:
       - voicegateway/references/tts-and-stt-vendors.md
     - SIP Trunk Providers:
       - voicegateway/references/sip-trunk-providers.md
+    - Voice Gateway Verbs:
+      - voicegateway/references/verbs/overview.md
+      - voicegateway/references/verbs/amd.md
+      - voicegateway/references/verbs/config.md
+      - voicegateway/references/verbs/dial.md
+      - voicegateway/references/verbs/dtmf.md
+      - voicegateway/references/verbs/gather.md
+      - voicegateway/references/verbs/hangup.md
+      - voicegateway/references/verbs/listen.md
+      - voicegateway/references/verbs/play.md
+      - voicegateway/references/verbs/say.md
+      - voicegateway/references/verbs/sip-refer.md
+      - voicegateway/references/verbs/sip-request.md
+      - voicegateway/references/verbs/transcribe.md
   - Glossary:
     - voicegateway/glossary.md
   - Release Notes:
