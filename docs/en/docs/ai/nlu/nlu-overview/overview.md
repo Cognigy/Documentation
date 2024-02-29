@@ -36,6 +36,9 @@ Machine learning models work best with comparable amount of information on all i
 Make sure you do not have intents that are only a single word or sentence without useful information. Such intents may reduce the overall efficacy of the model.
 If the NLU predicts the utterance is out of scope of the intent model, no intent will be triggered and intent will be set to ``null`` in the [Input]({{config.site_url}}/ai/tools/interaction-panel/input/) object. You can add examples to the [Reject Intent]({{config.site_url}}ai/nlu/nlu-overview/reject-intents/) to intentionally prevent the NLU from recognizing any user inputs that are outside the scope of the virtual agent.
 
+!!! note "Avoid punctuation marks in example sentences"
+    Using punctuation marks in example sentences affects recognition accuracy. 
+
 ### NLU model feedback
 
 As soon as the model is trained, Cognigy NLU is able to provide feedback regarding the model's performance. This is shown using different colors, with green being good, orange being suboptimal and red being bad. Additional information is given on mouse-hover.

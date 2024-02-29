@@ -9,7 +9,7 @@ hidden: false
 
 [![Version badge](https://img.shields.io/badge/Updated in-v4.70-blue.svg)](../release-notes/4.70.md)
 
-The _Transcript Explorer_ is a powerful analysis tool that helps you improve your agent's performance,
+The _Transcript Explorer_ is an analytics tool in Cognigy Insights that helps you improve your agent's performance,
 provide better customer service, and enhance the overall user experience.
 It allows you to analyze transcripts of conversations between end users and agents in detail.
 The Transcript Explorer has a search feature that lets you look for specific phrases within a list of transcripts.
@@ -17,7 +17,7 @@ For example, you can search for keywords such as booking, canceling, or messagin
 
 To open the Transcript Explorer, use one of the following options:
 
-=== "via Cognigy.AI"
+=== "Via Cognigy.AI"
     1. Open the Cognigy.AI interface.
     2. In the left-side menu, select an Agent.
     3. Within the Agent interface, navigate to Insights using one of the following options:
@@ -53,7 +53,7 @@ The list of sessions has the following parameters:
 
 ### Sort Sessions
 
-To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover your mouse over a column title and select the sorting option you prefer:
+To organize the sessions in the list, you can sort them by their `Session ID`, `Messages`, or `Last Message` parameters. To do this, hover the cursor over a column title and select the sorting option you prefer:
 
 - Click the up arrow ![arrow-up-black](../assets/icons/arrow-up-black.svg) to sort in ascending order.
 - Click the down arrow ![arrow-down-black](../assets/icons/arrow-down-black.svg) to sort in descending order.
@@ -99,17 +99,9 @@ click **more filters ![insight-filter-black](../assets/icons/insight-filter-blac
 | Message count: From | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with fewer messages than this threshold will not be included in the results.                                                                                                  |
 | Message count: To   | Set a minimum threshold for the number of messages in a session to be considered. Use the up and down arrow icons to specify the exact number. Sessions with more messages than this threshold will not be included in the results.                                                                                                   |
 
-### Exclude Filters
+{! _includes/insights/exclude-filters.md !}
 
-When you toggle the **Negate** option, all filters except the selected one will be analyzed.
-For example, if you select the **Agent Messages** filter and **Negate**, all data except **Agent Messages** will be analyzed.
-
-### Reset Filters
-
-To reset all filters, at the top of the **Transcript Explorer** page, click the **Reset** button on the right side of the Global Filters.
-
-If the **Reset** button is not displayed,
-click ![insight-filter-black](../assets/icons/insight-filter-black.svg) in the upper-right corner of the **Transcript Explorer** page.
+{! _includes/insights/reset-filters.md !}
 
 ## View Session Transcript
 
@@ -126,7 +118,7 @@ To view a session transcript, select a session from the list on the **Transcript
 
 A session transcript shows all the individual messages
 exchanged between the end user and the agent during a conversation.
-When you select a session, the corresponding transcript will be displayed on the right-hand side of the page.
+When you select a session, the corresponding transcript will be displayed on the right side of the page.
 You can use the scroll bar to navigate through the messages in the **Session Transcript** window.
 
 #### Expert mode
