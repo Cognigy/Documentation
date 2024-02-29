@@ -22,7 +22,7 @@ This data is accessed by connecting to the [OData Analytics Endpoint]({{config.s
 
 ### Inputs
 
-This collection consists of one entry per user input. It contains detailed data about the input message such as NLU results (intents & slots), goals achieved and more. The inputs collection is different from the other 4 collections as it can be adjusted by the flow logic using the [Overwrite Analytics]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) or [Code]({{config.site_url}}ai/flow-nodes/code/code/) nodes. This process is explained below.
+This collection consists of one entry per user input. It contains detailed data about the input message such as NLU results (intents & slots), goals achieved and more. The inputs collection is different from the other 4 collections as it can be adjusted by the flow logic using the [Overwrite Analytics]({{config.site_url}}ai/nodes/other-nodes/overwrite-analytics/) or [Code]({{config.site_url}}ai/nodes/code/code/) nodes. This process is explained below.
 
 
 ### Chat History
@@ -31,7 +31,7 @@ This collection contains one record per user input, one record per virtual agent
 
 ### Steps
 
-This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question]({{config.site_url}}ai/flow-nodes/message/question/) Nodes and [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) are automatically created with an attached analytics step but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
+This collection contains one record per analytics step that exists in a flow. A step can be either a flow node or an intent. Both [Question]({{config.site_url}}ai/nodes/message/question/) Nodes and [Intents]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) are automatically created with an attached analytics step but any other flow node can also be created as a step. The primary function of this record is to act as a reference list of entity id's to retrieve the current label of each analytics step for backwards compatibility of data records as the analytics step label can be updated from Cognigy.AI at any time.
 
 
 ### Executed Steps
@@ -83,7 +83,7 @@ Analytics data is generated through the whole lifecycle of an input message bein
 	}
 	```
 
-2. While a Flow is processing the Input, the Flow can overwrite the initialized data. This can be done by using the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/) or [Code Node]({{config.site_url}}ai/flow-nodes/code/code/) 
+2. While a Flow is processing the Input, the Flow can overwrite the initialized data. This can be done by using the [Overwrite Analytics Node]({{config.site_url}}ai/nodes/other-nodes/overwrite-analytics/) or [Code Node]({{config.site_url}}ai/nodes/code/code/) 
 
 3. When the Flow Execution finished, Cognigy.AI adds final analytics information (such as execution time) to the Analytics Record before storing it to the database
 

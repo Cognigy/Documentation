@@ -228,6 +228,6 @@ To check if the xApp was deployed as expected, copy and paste the Endpoint URL i
 
 ## More Information
 
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [xApp Nodes](../../nodes/xApp/overview.md)
 - [Build an xApp](overview.md)
 - [xApps](../overview.md)

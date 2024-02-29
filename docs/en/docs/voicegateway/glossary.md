@@ -112,12 +112,12 @@ _**Voice Gateway Flow**_
 : A structured sequence of interactions designed for voice-enabled applications within the Cognigy.AI platform.
 You can start your Voice Gateway project by creating a voice Flow in Cognigy.AI.
 Every Node that offers text-based messages can be used in a Voice Flow.
-In a voice conversation, the Virtual Agent responds with a text-based message for every user input.
+In a voice conversation, the virtual agent responds with a text-based message for every user input.
 Voice conversations happen on a turn-by-turn basis, meaning that all dialogue outputs triggered by the Flow will be bundled into one message and delivered across the phone line.
 For more information, read the [Create Voice Gateway Flow](getting-started.md#create-a-voice-gateway-flow) documentation.
 
 _**Voice Gateway Flow Nodes**_
-: Cognigy Voice Gateway Nodes expose the functionality provided by Cognigy Voice Gateway directly in the Flow Editor. For more information, read the [Voice Gateway: Nodes Overview](../ai/flow-nodes/vg/voice-gateway.md) documentation.
+: Cognigy Voice Gateway Nodes expose the functionality provided by Cognigy Voice Gateway directly in the Flow Editor. For more information, read the [Voice Gateway: Nodes Overview](../ai/nodes/voice/voice-gateway/overview.md) documentation.
 
 _**Voice Gateway Self-Service Portal**_
 : A web-based interface that empowers users to manage their accounts, settings, and preferences for Cognigy Voice Gateway. For more information, read the [Voice Gateway Self-Service Portal](webapp/overview.md) documentation.

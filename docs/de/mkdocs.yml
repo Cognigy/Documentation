@@ -480,6 +480,7 @@ nav:
     - ai-copilot/installation/installation-process.md
     - Migration Guides:
       - ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
+      - ai-copilot/installation/migration/ai-copilot-new-dns-names-migration.md
   - ai-copilot/contact-center-integration.md
   - ai-copilot/configuration.md
   - ai-copilot/embedding.md

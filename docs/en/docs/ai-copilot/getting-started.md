@@ -110,7 +110,7 @@ To create your Endpoint, follow these steps:
 1. Go to the Cognigy.AI interface.
 2. In the left-side menu, select **Deploy > Endpoint**.
 3. Click **+New Endpoint**. 
-4. In the **New Endpoint** window, add an Endpoint name and select your Virtual Agent Flow that hands you over to a human agent. 
+4. In the **New Endpoint** window, add an Endpoint name and select your virtual agent Flow that hands you over to a human agent. 
 5. In the **Endpoint type** list, select your desired Endpoint. 
 6. Click **Save**. 
 7. Go to **Handover Settings**. 
@@ -122,7 +122,7 @@ To create your Endpoint, follow these steps:
 ## Configure an AI Copilot Flow
 
 1. To configure your first workspace, go into to the AI Copilot Flow.
-2. Add your desired [AI Copilot Flow Nodes](../ai/flow-nodes/ai-copilot/overview.md). 
+2. Add your desired [AI Copilot Flow Nodes](../ai/nodes/ai-copilot/overview.md). 
 3. Add the content, which will be displayed within the AI Copilot Workspace.
 4. Ensure that the tile ID in the Nodes matches the tile ID chosen in the AI Copilot configuration; this defines the size and placement of the widgets within the Workspace.
 
@@ -146,7 +146,7 @@ The widgets will populate their content once the customer starts the conversatio
 
 - [AI Copilot Workspace](overview.md)
 - [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../ai/nodes/ai-copilot/overview.md)
 - [AI Copilot Embedding](embedding.md)
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)

@@ -8,7 +8,7 @@
 ## Endpoints
 <div class="divider"></div>
 
-Virtual Agents need to be deployed to channels in order for them to be available to the general audience. This process uses so-called Endpoints.
+Virtual agents need to be deployed to channels in order for them to be available to the general audience. This process uses so-called Endpoints.
 
 Head over to [Endpoints](../../endpoints/overview.md) for more information.
 

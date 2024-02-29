@@ -27,7 +27,7 @@ The Indicator charts presents real-time data that refreshes every 30 seconds.
 
 ### Goals reached 
 
-Indicates the total number of [completed goals](../ai/flow-nodes/profile/complete-goal.md). 
+Indicates the total number of [completed goals](../ai/nodes/analytics/complete-goal.md). 
 
 Source table:
 

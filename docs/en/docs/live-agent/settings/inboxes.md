@@ -52,7 +52,7 @@ Each Inbox ID represents the connection from Cognigy.AI to Live Agent and is use
 
 To connect an Inbox to Cognigy.AI,
 copy the ID of the Inbox
-and specify it in the **Live Agent Settings** section in the [Handover to Agent](../../ai/tools/agent-handover.md) Node on the Cognigy.AI side.
+and specify it in the **Live Agent Settings** section in the [Handover to Agent](../../ai/nodes/service/handover-to-agent.md) Node on the Cognigy.AI side.
 
 To copy an Inbox ID, follow these steps:
 

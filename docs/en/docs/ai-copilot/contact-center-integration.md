@@ -20,7 +20,7 @@ Cognigy provides native integration with the following contact centers:
 - [AI Copilot Workspace](overview.md)
 - [Getting started with AI Copilot](getting-started.md)
 - [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../ai/nodes/ai-copilot/overview.md)
 - [AI Copilot Embedding](embedding.md)
 - [AI Copilot for Voice](voice/voice-overview.md)
 - [AI Copilot for Chat](chat.md)

@@ -168,133 +168,143 @@ nav:
       - ai/resources/manage/members.md
       - ai/resources/manage/contact-profiles.md
       - ai/resources/manage/packages.md
-  - Flow Nodes:
-    - ai/flow-nodes/flow-nodes-overview.md
-    - ai/flow-nodes/node-usage.md
-    - ai/flow-nodes/dynamic-content.md
-    - Message:
-      - ai/flow-nodes/message/message.md
-      - ai/flow-nodes/message/say.md
-      - ai/flow-nodes/message/question.md
-      - ai/flow-nodes/message/optional-question.md
-      - ai/flow-nodes/message/send-smtp-email.md
-      - ai/flow-nodes/message/send-email-notification.md
-      - ai/flow-nodes/message/send-text.md
-      - ai/flow-nodes/message/datepicker.md
+  - Nodes:
+    - ai/nodes/overview.md
+    - ai/nodes/node-usage.md
+    - ai/nodes/dynamic-content.md
+    - Basic:
+      - ai/nodes/basic/overview.md
+      - ai/nodes/basic/say.md
+      - ai/nodes/basic/question.md
+      - ai/nodes/basic/optional-question.md
+      - ai/nodes/basic/send-text.md
+      - Code:
+          - ai/nodes/basic/code/overview.md
+          - ai/nodes/basic/code/actions.md
+          - ai/nodes/basic/code/modules.md
+          - ai/nodes/basic/code/channel-output.md
+          - ai/nodes/basic/code/ai-default-channel-formats.md
+          - ai/nodes/basic/code/analytics-data.md
     - Logic:
-      - ai/flow-nodes/logic/logic.md
-      - ai/flow-nodes/logic/if.md
-      - ai/flow-nodes/logic/lookup.md
-      - ai/flow-nodes/logic/go-to.md
-      - ai/flow-nodes/logic/execute-flow.md
-      - ai/flow-nodes/logic/think.md
-      - ai/flow-nodes/logic/once.md
-      - ai/flow-nodes/logic/interval.md
-      - ai/flow-nodes/logic/stop-and-return.md
-      - ai/flow-nodes/logic/wait-for-input.md
-      - ai/flow-nodes/logic/sleep.md
-      - ai/flow-nodes/logic/reset-state.md
-      - ai/flow-nodes/logic/set-state.md
-      - ai/flow-nodes/logic/add-to-context.md
-      - ai/flow-nodes/logic/remove-from-context.md
-      - ai/flow-nodes/logic/switch-locale.md
-      - ai/flow-nodes/logic/trigger-function.md
-    - Profile:
-      - ai/flow-nodes/profile/profile.md
-      - ai/flow-nodes/profile/update-profile.md
-      - ai/flow-nodes/profile/deactivate-profile.md
-      - ai/flow-nodes/profile/delete-profile.md
-      - ai/flow-nodes/profile/activate-profile.md
-      - ai/flow-nodes/profile/merge-profile.md
-      - ai/flow-nodes/profile/complete-goal.md
-      - ai/flow-nodes/profile/blind-mode.md
-    - Services:
-      - ai/flow-nodes/services/services.md
-      - ai/flow-nodes/services/http-request.md
-      - ai/flow-nodes/services/mongo-db.md
-      - ai/flow-nodes/services/ms-sql.md
-      - ai/flow-nodes/services/check-agent-availability.md
-    - NLU:
-      - ai/flow-nodes/nlu/nlu.md
-      - ai/flow-nodes/nlu/copy-slots-to-context.md
-      - ai/flow-nodes/nlu/disable-slot-fillers.md
-      - ai/flow-nodes/nlu/enable-slot-fillers.md
-      - ai/flow-nodes/nlu/add-lexicon-keyphrase.md
-      - ai/flow-nodes/nlu/execute-cognigy-nlu.md
-      - ai/flow-nodes/nlu/regex-slotfiller.md
-      - ai/flow-nodes/nlu/match-pattern.md
-      - ai/flow-nodes/nlu/fuzzy-search.md
-      - ai/flow-nodes/nlu/clean-text.md
-    - Code:
-      - ai/flow-nodes/code/code.md
-      - ai/flow-nodes/code/actions.md
-      - ai/flow-nodes/code/modules.md
-      - ai/flow-nodes/code/channel-output.md
-      - ai/flow-nodes/code/ai-default-channel-formats.md
-      - ai/flow-nodes/code/analytics-data.md
+      - ai/nodes/logic/overview.md
+      - ai/nodes/logic/add-to-context.md
+      - ai/nodes/logic/execute-flow.md
+      - ai/nodes/logic/go-to.md
+      - ai/nodes/logic/if.md
+      - ai/nodes/logic/interval.md
+      - ai/nodes/logic/lookup.md
+      - ai/nodes/logic/once.md
+      - ai/nodes/logic/remove-from-context.md
+      - ai/nodes/logic/reset-state.md
+      - ai/nodes/logic/set-state.md
+      - ai/nodes/logic/stop-and-return.md
+      - ai/nodes/logic/switch-locale.md
+      - ai/nodes/logic/sleep.md
+      - ai/nodes/logic/think.md
+      - ai/nodes/logic/wait-for-input.md
+
     - Voice:
-      - Generic Voice Nodes:
-        - ai/flow-nodes/generic-voice-nodes/generic-voice-nodes.md
-        - ai/flow-nodes/generic-voice-nodes/play-url.md
-        - ai/flow-nodes/generic-voice-nodes/send-metadata.md
-        - ai/flow-nodes/generic-voice-nodes/transfer.md
-        - ai/flow-nodes/generic-voice-nodes/hang-up.md
-        - ai/flow-nodes/generic-voice-nodes/barge-in-config.md
-        - ai/flow-nodes/generic-voice-nodes/continuous-asr-config.md
-        - ai/flow-nodes/generic-voice-nodes/dtmf-collect-config.md
-        - ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md
-        - ai/flow-nodes/generic-voice-nodes/user-input-timeout-config.md
-        - ai/flow-nodes/generic-voice-nodes/mute-speech-input.md
-      - Voice Gateway:
-        - ai/flow-nodes/vg/voice-gateway.md
-        - ai/flow-nodes/vg/dtmf.md
-        - ai/flow-nodes/vg/hangup.md
-        - ai/flow-nodes/vg/parameter-details.md
-        - ai/flow-nodes/vg/play.md
-        - ai/flow-nodes/vg/send-metadata.md
-        - ai/flow-nodes/vg/set-session-config.md
-        - ai/flow-nodes/vg/transfer.md
-        - ai/flow-nodes/vg/call-recording.md
-        - ai/flow-nodes/vg/mute-speech-input.md
-      - Audio Codes:
-        - ai/flow-nodes/audiocodes/audiocodes.md
-        - ai/flow-nodes/audiocodes/send-message.md
-        - ai/flow-nodes/audiocodes/set-session-params.md
-        - ai/flow-nodes/audiocodes/play-url.md
-        - ai/flow-nodes/audiocodes/transfer-vg.md
-        - ai/flow-nodes/audiocodes/hangup.md
-        - ai/flow-nodes/audiocodes/send-meta-data.md
-        - ai/flow-nodes/audiocodes/call-recording.md
+        - ai/nodes/voice/overview.md
+        - Generic Voice Nodes:
+            - ai/nodes/voice/generic/overview.md
+            - ai/nodes/voice/generic/barge-in-config.md
+            - ai/nodes/voice/generic/continuous-asr-config.md
+            - ai/nodes/voice/generic/dtmf-collect-config.md
+            - ai/nodes/voice/generic/hang-up.md
+            - ai/nodes/voice/generic/mute-speech-input.md
+            - ai/nodes/voice/generic/play-url.md
+            - ai/nodes/voice/generic/send-metadata.md
+            - ai/nodes/voice/generic/session-speech-parameters-config.md
+            - ai/nodes/voice/generic/transfer.md
+            - ai/nodes/voice/generic/user-input-timeout-config.md
+
+        - Voice Gateway:
+            - ai/nodes/voice/voice-gateway/overview.md
+            - ai/nodes/voice/voice-gateway/call-recording.md
+            - ai/nodes/voice/voice-gateway/dtmf.md
+            - ai/nodes/voice/voice-gateway/hangup.md
+            - ai/nodes/voice/voice-gateway/mute-speech-input.md
+            - ai/nodes/voice/voice-gateway/parameter-details.md
+            - ai/nodes/voice/voice-gateway/play.md
+            - ai/nodes/voice/voice-gateway/send-metadata.md
+            - ai/nodes/voice/voice-gateway/set-session-config.md
+            - ai/nodes/voice/voice-gateway/transfer.md
+
+        - AudioCodes:
+            - ai/nodes/voice/audiocodes/overview.md
+            - ai/nodes/voice/audiocodes/call-recording.md
+            - ai/nodes/voice/audiocodes/hangup.md
+            - ai/nodes/voice/audiocodes/play-url.md
+            - ai/nodes/voice/audiocodes/send-meta-data.md
+            - ai/nodes/voice/audiocodes/send-message.md
+            - ai/nodes/voice/audiocodes/set-session-params.md
+            - ai/nodes/voice/audiocodes/transfer-vg.md
+
+    - Analytics:
+      - ai/nodes/analytics/overview.md
+      - ai/nodes/analytics/update-profile.md
+      - ai/nodes/analytics/deactivate-profile.md
+      - ai/nodes/analytics/delete-profile.md
+      - ai/nodes/analytics/activate-profile.md
+      - ai/nodes/analytics/merge-profile.md
+      - ai/nodes/analytics/complete-goal.md
+      - ai/nodes/analytics/blind-mode.md
+      - ai/nodes/analytics/overwrite-analytics.md
+      - ai/nodes/analytics/request-rating.md
+      - ai/nodes/analytics/set-rating.md
+    - Service:
+      - ai/nodes/service/overview.md
+      - ai/nodes/service/check-agent-availability.md
+      - ai/nodes/service/close-handover.md
+      - ai/nodes/service/gpt-conversation.md
+      - ai/nodes/service/handover-to-agent.md
+      - ai/nodes/service/http-request.md
+      - ai/nodes/service/llm-prompt.md
+      - ai/nodes/service/mongo-db.md
+      - ai/nodes/service/ms-sql.md
+      - ai/nodes/service/set-handover-inactivity.md
+      - ai/nodes/service/trigger-function.md      
+    - NLU:
+      - ai/nodes/nlu/overview.md
+      - ai/nodes/nlu/add-lexicon-keyphrase.md
+      - ai/nodes/nlu/clean-text.md
+      - ai/nodes/nlu/copy-slots-to-context.md
+      - ai/nodes/nlu/disable-slot-fillers.md
+      - ai/nodes/nlu/enable-slot-fillers.md
+      - ai/nodes/nlu/execute-cognigy-nlu.md
+      - ai/nodes/nlu/fuzzy-search.md
+      - ai/nodes/nlu/match-pattern.md
+      - ai/nodes/nlu/regex-slotfiller.md
+
+    - Data:
+      - ai/nodes/data/overview.md
+      - ai/nodes/data/datepicker.md
+      - ai/nodes/data/send-smtp-email.md
+      - ai/nodes/data/email-notification.md
     - AI Copilot:
-      - ai/flow-nodes/ai-copilot/overview.md
-      - ai/flow-nodes/ai-copilot/identity-tile.md
-      - ai/flow-nodes/ai-copilot/next-action-tile.md
-      - ai/flow-nodes/ai-copilot/sentiment-tile.md
-      - ai/flow-nodes/ai-copilot/set-html-tile.md
-      - ai/flow-nodes/ai-copilot/set-adaptive-card-tile.md
-      - ai/flow-nodes/ai-copilot/set-iframe-tile.md
-      - ai/flow-nodes/ai-copilot/set-grid.md
-      - ai/flow-nodes/ai-copilot/transcript-tile.md
-      - ai/flow-nodes/ai-copilot/knowledge-tile.md
-    - xApp:
-      - ai/flow-nodes/xApp/overview.md
-      - ai/flow-nodes/xApp/init-xApp-session.md
-      - ai/flow-nodes/xApp/get-xApp-session-PIN.md
-      - ai/flow-nodes/xApp/set-html-xApp-state.md
-      - ai/flow-nodes/xApp/set-AdaptiveCard-xApp-state.md
+      - ai/nodes/ai-copilot/overview.md
+      - ai/nodes/ai-copilot/set-adaptive-card-tile.md
+      - ai/nodes/ai-copilot/set-html-tile.md
+      - ai/nodes/ai-copilot/set-iframe-tile.md
+      - ai/nodes/ai-copilot/identity-tile.md
+      - ai/nodes/ai-copilot/knowledge-tile.md
+      - ai/nodes/ai-copilot/next-action-tile.md
+      - ai/nodes/ai-copilot/sentiment-tile.md
+      - ai/nodes/ai-copilot/set-grid.md
+      - ai/nodes/ai-copilot/transcript-tile.md
+
+    - xApps:
+      - ai/nodes/xApp/overview.md
+      - ai/nodes/xApp/init-xApp-session.md
+      - ai/nodes/xApp/get-xApp-session-PIN.md
+      - ai/nodes/xApp/set-AdaptiveCard-xApp-state.md
+      - ai/nodes/xApp/set-html-xApp-state.md
     - Other Nodes:
-      - ai/flow-nodes/other-nodes/other-nodes.md
-      - ai/flow-nodes/other-nodes/log-message.md
-      - ai/flow-nodes/other-nodes/overwrite-analytics.md
-      - ai/flow-nodes/other-nodes/set-rating.md
-      - ai/flow-nodes/other-nodes/set-translation.md
-      - ai/flow-nodes/other-nodes/request-rating.md
-      - ai/flow-nodes/other-nodes/llm-prompt.md
-      - ai/flow-nodes/other-nodes/gpt-conversation.md
-      - ai/flow-nodes/other-nodes/knowledge-search.md
-      - ai/flow-nodes/other-nodes/search-extract-output.md
-      - ai/flow-nodes/other-nodes/close-handover.md
-      - ai/flow-nodes/other-nodes/set-handover-inactivity.md
+      - ai/nodes/other-nodes/overview.md
+      - ai/nodes/other-nodes/knowledge-search.md
+      - ai/nodes/other-nodes/log-message.md
+      - ai/nodes/other-nodes/search-extract-output.md
+      - ai/nodes/other-nodes/set-translation.md
   - NLU:
     - NLU Overview:
       - ai/nlu/nlu-overview/overview.md
@@ -345,7 +355,6 @@ nav:
     - ai/tools/voice-preview.md
     - ai/tools/hotkeys.md
     - ai/tools/management-ui.md
-    - ai/tools/agent-handover.md
     - ai/tools/auto-localization.md
     - ai/tools/real-time-translation.md
     - ai/tools/text-cleaner.md
@@ -370,13 +379,14 @@ nav:
       - ai/endpoints/webchat/webchat.md
     - Voice Gateway:
       - ai/endpoints/cognigy-vg.md
-    - ai/endpoints/audiocodes.md
+    - ai/endpoints/overview.md
     - ai/endpoints/rest.md
     - ai/endpoints/socketio.md
     - ai/endpoints/webhook.md
     - ai/endpoints/voice-copilot.md
     - ai/endpoints/amazon-lex.md
     - ai/endpoints/amazon-alexa.md
+    - ai/endpoints/audiocodes.md
     - ai/endpoints/avaya-cpaas.md
     - ai/endpoints/azure-bot-services.md
     - ai/endpoints/dialogflow.md
@@ -496,7 +506,9 @@ nav:
     - ai-copilot/installation/prerequisites.md
     - ai-copilot/installation/installation-process.md
     - Migration Guides:
+      - ai-copilot/installation/migration/contents.md
       - ai-copilot/installation/migration/agent-assist-to-cognigy-ai-helm-chart-migration.md
+      - ai-copilot/installation/migration/ai-copilot-new-dns-names-migration.md
   - ai-copilot/contact-center-integration.md
   - ai-copilot/configuration.md
   - ai-copilot/embedding.md

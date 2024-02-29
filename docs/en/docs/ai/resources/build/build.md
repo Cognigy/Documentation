@@ -5,7 +5,7 @@
 ---
 # Build
 
-The Build section allows for the creation of resources that help shape your Virtual Agent. 
+The Build section allows for the creation of resources that help shape your virtual agent. 
 
 ## Flows
 
@@ -20,7 +20,7 @@ Head over to [Flows]({{config.site_url}}ai/resources/build/flows/) for more info
 
 ## Lexicons
 
-**Lexicons** are collections of **domain-specific Keyphrases** (also known as **Entities**) that can be attached to a **Flow**. A **Lexicon** can be seen as a dictionary, that allows the **Virtual Agent** to "understand" specific words, like car brands, product groups or zip codes.
+**Lexicons** are collections of **domain-specific Keyphrases** (also known as **Entities**) that can be attached to a **Flow**. A **Lexicon** can be seen as a dictionary, that allows the **virtual agent** to "understand" specific words, like car brands, product groups or zip codes.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/resources/images/62602a8-lexicon-small.jpg" width="100%" />

@@ -93,4 +93,4 @@ This process ensures that all Intents are automatically translated.
 ## More Information
 
 - [Localization](../resources/manage/localization.md)
-- [Switch Locale Node](../flow-nodes/logic/switch-locale.md)
+- [Switch Locale Node](../nodes/logic/switch-locale.md)

@@ -213,4 +213,4 @@ To check the virtual agent's performance, access the installation that your serv
 
 ## What's Next?
 
-Now you can configure Say, Question, and Optional Question Nodes by selecting the [Genesys](../flow-nodes/message/say.md#genesys) channel in the Node Editor settings. It's important to create messages that are compatible with the Genesys Endpoint, as the Genesys channel supports a [limited set of output types](content-conversion.md).
+Now you can configure Say, Question, and Optional Question Nodes by selecting the [Genesys](../nodes/basic/say.md#genesys) channel in the Node Editor settings. It's important to create messages that are compatible with the Genesys Endpoint, as the Genesys channel supports a [limited set of output types](content-conversion.md).
