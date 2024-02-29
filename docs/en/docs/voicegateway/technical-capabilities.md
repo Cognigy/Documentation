@@ -50,22 +50,22 @@ The following audio codecs are supported:
 - Support for configurable music on hold
 
 ### Call Management
-- Support for generating outbound calls via REST API
+- Support for [generating outbound calls via REST API](../voicegateway/creating-outbound-calls.md)
 - Support for performing operations on calls in progress via REST API
 
 ### STT and TTS providers
-- Support for many [speech vendors]() as well as custom speech API to add your own
-- Support for fallback speech configuration in case primary provider fails
+- Support for many [speech vendors](../voicegateway/references/tts-and-stt-vendors.md) as well as custom speech API to add your own
+- Support for [fallback speech configuration](../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor) in case primary provider fails
 
 ### Call Recording and Storage
 - Support for call recording via integration with third-party SIPREC server
 - Support for pause/resume transcription and recording (avoid collection of PII data)
-- Support for call recording with no third-party components, recordings streamed to customers preferred cloud storage (S3, S3 compatible, Google cloud storage, or Azure cloud storage)
+- Support for call recording with no third-party components, [recordings streamed to customers preferred cloud storage](../voicegateway/webapp/recent-calls.md#call-recordings)
 
 ### Call Quality Monitoring and Optimization
-- Observability features include open telemetry tracing of call events
-- Visual view of speech latency (text to speech and speech to text) on individual call basis
-- Caching of TTS audio when possible to reduce costs
+- Observability features include [open telemetry tracing of call events]((../voicegateway/webapp/recent-calls.md#call-tracing))
+- Visual view of [speech latency](../voicegateway/webapp/recent-calls.md#call-recordings) (text to speech and speech to text) on individual call basis
+- [Caching of TTS audio](../voicegateway/webapp/accounts.md#tts-promptcaching) when possible to reduce costs
 
 
 Get in touch with us via an email to [support@cognigy.com](mailto:support@cognigy.com) for any further or more specific questions on the VG Technical Capabilities.
