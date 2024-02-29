@@ -19,8 +19,6 @@ You cannot configure Alexa, Slack, WhatsApp, and other channels and expect trans
 
 ## Settings
 
-The configuration options and their functions are listed below.
-
 | Parameter                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Translation Enabled                        | Whether translation is activated in the Endpoint or not.<br/>Can be enabled using the slide bar.                                                                                                                                                                                                                                                                                                                                                                                                  |

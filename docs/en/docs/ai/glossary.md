@@ -234,7 +234,7 @@ _**Node Editor**_
 For more information, read the [Node](nodes/overview.md) documentation.
 
 _**Nodes**_
-: Fundamental building blocks that are used to construct Flows and define the logic of virtual agents. Each node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
+: Fundamental building blocks that are used to construct Flows and define the logic of virtual agents. Each Node represents a specific action, decision point, or interaction within the Flow. Users can create, configure, and connect Nodes to design complex conversational experiences.
 For more information, read the [Nodes](nodes/overview.md) documentation.
 
 ## O

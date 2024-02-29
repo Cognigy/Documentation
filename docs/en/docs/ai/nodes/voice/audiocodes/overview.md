@@ -10,10 +10,10 @@ AudioCodes Nodes help you build a voice bot using [AudioCodes configuration](htt
 
 You can use the following Voice Gateway Nodes:
 
-- [Send Message](send-message.md)
-- [Set Session Parameters](set-session-params.md)
-- [Play URL](play-url.md)
-- [Transfer](transfer-vg.md)
-- [Hang Up](hangup.md)
-- [Send Meta Data](send-meta-data.md)
 - [Call Recording](call-recording.md)
+- [Hang Up](hangup.md)
+- [Play URL](play-url.md)
+- [Send Message](send-message.md)
+- [Send Meta Data](send-meta-data.md)
+- [Set Session Parameters](set-session-params.md)
+- [Transfer](transfer-vg.md)

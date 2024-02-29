@@ -187,21 +187,22 @@ nav:
           - ai/nodes/basic/code/analytics-data.md
     - Logic:
       - ai/nodes/logic/overview.md
-      - ai/nodes/logic/if.md
-      - ai/nodes/logic/lookup.md
-      - ai/nodes/logic/go-to.md
+      - ai/nodes/logic/add-to-context.md
       - ai/nodes/logic/execute-flow.md
-      - ai/nodes/logic/think.md
-      - ai/nodes/logic/once.md
+      - ai/nodes/logic/go-to.md
+      - ai/nodes/logic/if.md
       - ai/nodes/logic/interval.md
-      - ai/nodes/logic/stop-and-return.md
-      - ai/nodes/logic/wait-for-input.md
-      - ai/nodes/logic/sleep.md
+      - ai/nodes/logic/lookup.md
+      - ai/nodes/logic/once.md
+      - ai/nodes/logic/remove-from-context.md
       - ai/nodes/logic/reset-state.md
       - ai/nodes/logic/set-state.md
-      - ai/nodes/logic/add-to-context.md
-      - ai/nodes/logic/remove-from-context.md
+      - ai/nodes/logic/stop-and-return.md
       - ai/nodes/logic/switch-locale.md
+      - ai/nodes/logic/sleep.md
+      - ai/nodes/logic/think.md
+      - ai/nodes/logic/wait-for-input.md
+
     - Voice:
         - ai/nodes/voice/overview.md
         - Generic Voice Nodes:

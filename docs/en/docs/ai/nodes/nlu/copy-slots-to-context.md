@@ -14,6 +14,8 @@
 
 The Copy Slots to Context Node is used to store a found Slot in a specific place in the Context.
 
+## Settings
+
 | Parameter | Type          | Description                                                                                                                                                                                                                                     |
 |-----------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Key       | CognigyScript | The place in the Context where the found Slot should be stored.                                                                                                                                                                                 |

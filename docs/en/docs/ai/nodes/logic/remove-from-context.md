@@ -14,6 +14,8 @@ hidden: false
 
 This Node is used to remove information from the Cognigy [Context](../../tools/interaction-panel/context.md). 
 
+## Settings
+
 | Parameter | Type         | Description                                                                                              |
 |-----------|--------------|----------------------------------------------------------------------------------------------------------|
 | Key       | Cognigy Text | The key you want to remove. This can be a key nested with dot, for example, `my.first.key`.              |

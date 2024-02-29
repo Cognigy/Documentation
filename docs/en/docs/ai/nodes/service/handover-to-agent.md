@@ -25,7 +25,7 @@ A handover process contains the following steps:
 
 1. **Identifying Edge Cases**. When a user request is too specific for the virtual agent, it can suggest forwarding the user to a human agent without changing channels.
 
-2. **Integration with Agent Handover**. Once the **Handover to Agent** Node is triggered, it sends a handover request to the contact center configured  in the [Endpoint Handover Settings](../../endpoints/handover-settings.md), allowing a human agent to take over the conversation.
+2. **Integration with Agent Handover**. Once the **Handover to Agent** Node is triggered, it sends a handover request to the contact center configured in the [Endpoint Handover Settings](../../endpoints/handover-settings.md), allowing a human agent to take over the conversation.
 
 3. **Flow Pausing and Resumption**. When a handover is initiated, the Flow pauses until the customer cancels the request or an agent finishes the conversation. Upon completion, the Flow resumes execution below the Handover to Agent Node.
 
@@ -140,7 +140,9 @@ Example for parameter **Custom Attributes**:
   "region": "Europe"
 }
 ```
-For more information, read the [Genesys Cloud Guest Chat](../../handover-providers/genesys-cloud-guest-chat.md#prerequisites) documentation.
+For more information,
+read
+the [Genesys Cloud Guest Chat](../../handover-providers/genesys-cloud-guest-chat.md#prerequisites) and [Genesys Cloud Open Messaging](../../handover-providers/genesys-cloud-open-messaging.md) documentation.
 
 ### 8x8 Settings
 

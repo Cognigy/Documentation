@@ -14,6 +14,8 @@
 
 The Log Message Node writes a message into the [Agent Logs](../../resources/test/logs.md).
 
+## Settings
+
 | Parameter | Type          | Description                                                      |
 |-----------|---------------|------------------------------------------------------------------|
 | Message   | CognigyScript | The message to log                                               |

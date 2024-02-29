@@ -12,7 +12,7 @@
 ## Description
 <div class="divider"></div>
 
-The MongoDB nodes lets you execute a range of operations on your MongoDB.
+The MongoDB Nodes let you execute a range of operations on your MongoDB.
 
 ## Nodes
 <div class="divider"></div>

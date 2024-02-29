@@ -11,13 +11,13 @@ These Voice Nodes are compatible with both voice integrations: AudioCodes and Vo
 
 You can use the following Generic Voice Nodes:
 
-- [Play URL](play-url.md)
-- [Send Metadata](send-metadata.md)
-- [Transfer](transfer.md)
-- [Hang Up](hang-up.md)
 - [Barge In - Config](barge-in-config.md)
 - [Continuous ASR - Config](continuous-asr-config.md)
 - [DTMF Collect - Config](dtmf-collect-config.md)
-- [Session Speech Parameters - Config](session-speech-parameters-config.md)
-- [User Input Timeout - Config](user-input-timeout-config.md)
+- [Hang Up](hang-up.md)
 - [Mute Speech Input](mute-speech-input.md)
+- [Play URL](play-url.md)
+- [Send Metadata](send-metadata.md)
+- [Session Speech Parameters - Config](session-speech-parameters-config.md)
+- [Transfer](transfer.md)
+- [User Input Timeout - Config](user-input-timeout-config.md)

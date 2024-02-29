@@ -34,7 +34,7 @@ To remove a Node, you can either delete or cut it. If you choose to cut the Node
 </figure>
 
 !!! note "Flow Editor Hotkeys"
-    For a full list of flow editor keyboard shortcuts, see the [Hotkeys Page]({{config.site_url}}ai/tools/hotkeys/).
+    For a full list of flow editor keyboard shortcuts, see the [Hotkeys Page](../tools/hotkeys.md).
 
 ## Copy a Node
 <div class="divider"></div>
@@ -72,7 +72,7 @@ Adding a Label replaces the bottom text line of a Node. This allows you to have 
 
 <div class="divider"></div>
 
-Any flow node can be added as an entrypoint for the flow. This means that a [Go To Node]({{config.site_url}}ai/nodes/logic/go-to/) or an [Execute Flow Node]({{config.site_url}}ai/nodes/logic/execute-flow/) can be set to start directly at any node. The **Start Node** is the default entrypoint for the flow and both [Question Nodes]({{config.site_url}}ai/nodes/message/question/) and [Optional Question Nodes]({{config.site_url}}ai/nodes/message/optional-question/) will be automatically assigned as an optional entrypoint when they are added. 
+Any flow node can be added as an entrypoint for the flow. This means that a [Go To Node](logic/go-to.md) or an [Execute Flow Node](logic/execute-flow.md) can be set to start directly at any node. The **Start Node** is the default entrypoint for the flow and both [Question Nodes]({{config.site_url}}ai/nodes/message/question/) and [Optional Question Nodes]({{config.site_url}}ai/nodes/message/optional-question/) will be automatically assigned as an optional entrypoint when they are added. 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/9d7d9bc-SetEntrypoint1.jpg" width="100%" />
 </figure>
@@ -80,7 +80,7 @@ Any flow node can be added as an entrypoint for the flow. This means that a [Go 
 Any other node can be manually assigned as a flow entrypoint by opening the node editing menu and selecting the three dot menu from the top right hand corner. The option to "Set Entrypoint" can be selected which will add this node to the list of available entrypoints.
 
 !!! note "Naming Entrypoints"
-    It is helpful to define unique names for each entry point node using the [label]({{config.site_url}}ai/nodes/node-usage/#add-label) feature. This means that users will be able to easily differentiate when selecting them from a list of options. For example, all Question nodes will be called "Question" unless the label is manually adjusted.
+    It is helpful to define unique names for each entry point node using the [label](#add-label) feature. This means that users will be able to easily differentiate when selecting them from a list of options. For example, all Question nodes will be called "Question" unless the label is manually adjusted.
 
 ## Warning
 

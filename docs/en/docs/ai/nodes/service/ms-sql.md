@@ -18,9 +18,9 @@ The SQL Node lets you run queries, transactions or stored procedures on MS-SQL S
 ---
 Choose an Operation from the dropdown:
 
-  * [Run Query](#run-query)
-  * [Run Transaction](#run-transaction)
-  * [Run Stored Procedure](#run-stored-procedure)
+* [Run Query](#run-query)
+* [Run Transaction](#run-transaction)
+* [Run Stored Procedure](#run-stored-procedure)
 
 ### Connection
 ---

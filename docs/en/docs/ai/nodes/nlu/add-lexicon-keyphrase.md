@@ -14,6 +14,8 @@
 
 Use the Add Lexicon Keyphrase Node to add new Keyphrases to [Lexicons](../../resources/build/lexicons.md)  from within your Flow using [CognigyScript](../../tools/cognigy-script.md).
 
+## Settings
+
 | Parameter   | Type                         | Description                                   |
 |-------------|------------------------------|-----------------------------------------------|
 | LexiconName | CognigyScript                | TThe name of the Lexicon you want to update   |
