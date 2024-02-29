@@ -31,7 +31,7 @@ Each column on the Step Explorer page represents a Node or Intent [annotated](#b
   <figcaption>Step Explorer</figcaption>
 </figure>
 
-## Before You Begin
+## Before you Begin
 
 Differing from the Transcript Explorer and Message Explorer tools,
 the Step Explorer requires you to prepare data on the Cognigy.AI side to start gathering it.

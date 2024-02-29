@@ -179,9 +179,9 @@ Result:
 
 Indicates the time-related number of understood messages and misunderstood messages in percentages displayed in a bar chart.
 
-A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/flow-nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/). 
+A message is counted as understood if it has triggered an intent, a slot is matched, or it is marked as understood via the [Code Node](https://docs.cognigy.com/ai/nodes/code/analytics-data/) or [Overwrite Analytics Node](https://docs.cognigy.com/ai/nodes/other-nodes/overwrite-analytics/). 
 A message is not counted as understood
-if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/flow-nodes/other-nodes/overwrite-analytics/)
+if it is marked as `Don't count` in the [Overwrite Analytics Node](https://docs.cognigy.com/ai/nodes/other-nodes/overwrite-analytics/)
 or sent during an active handover
 without configuring [LA AI Copilot](https://docs.cognigy.com/ai/handover-providers/la-agent-assist-overview/) Flow. 
 

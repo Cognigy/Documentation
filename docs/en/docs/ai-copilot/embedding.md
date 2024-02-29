@@ -22,5 +22,5 @@ To display the AI Copilot Workspace, add a value in the respective field:
 - [AI Copilot](overview.md)
 - [Getting started with AI Copilot](getting-started.md)
 - [AI Copilot Configuration](configuration.md)
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../ai/nodes/ai-copilot/overview.md)
 - [Integration with Contact Centers](contact-center-integration.md)

@@ -59,7 +59,7 @@ This value is the **Microsoft App Password** of your Bot, also referred to as th
 This value is the **SSO Connection Name** when using this endpoint with an SSO integration.
 
 !!! note "Help Center"
-    More detailed information on how to set up an **Azure Bot Services** Endpoint refer to our Help Center articles [**here**](https://support.cognigy.com/hc/en-us/articles/360016183720).
+    More detailed information on how to set up an **Azure Bot Services** Endpoint refer to the [Help Center articles](https://support.cognigy.com/hc/en-us/articles/360016183720).
 
 ### Microsoft Teams
 
@@ -67,7 +67,7 @@ This value is the **SSO Connection Name** when using this endpoint with an SSO i
 
 As of release v4.9 the display changes for clicked postback buttons in a Microsoft Teams chat. 
 
-When clicking the postback button in a [quick reply]({{config.site_url}}ai/flow-nodes/message/say/#text-with-quick-replies), [gallery]({{config.site_url}}ai/flow-nodes/message/say/#gallery), [list]({{config.site_url}}ai/flow-nodes/message/say/#list), or [button]({{config.site_url}}ai/flow-nodes/message/say/#text-with-buttons) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
+When clicking the postback button in a [quick reply](../nodes/basic/say.md#text-with-quick-replies), [gallery](../nodes/basic/say.md#gallery), [list](../nodes/basic/say.md#list), or [button](../nodes/basic/say.md#text-with-buttons) configuration, the button title is displayed now on the user side of the chat. For other Azure bot service channels, this change is not relevant.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/Azure_Bot_Service_with_Microsoft_Teams_chat_1.svg" width="100%" />

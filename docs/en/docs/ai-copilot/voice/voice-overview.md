@@ -24,7 +24,7 @@ The voice configuration contains the following parts:
 - [AI Copilot Workspace](../overview.md)
 - [Getting started with AI Copilot](../getting-started.md)
 - [AI Copilot Configuration](../configuration.md)
-- [AI Copilot Nodes](../../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../../ai/nodes/ai-copilot/overview.md)
 - [AI Copilot Embedding](../embedding.md)
 - [AI Copilot for Chat](../chat.md)
 - [Integration with Contact Centers](../contact-center-integration.md)

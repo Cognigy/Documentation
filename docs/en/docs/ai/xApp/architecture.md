@@ -79,4 +79,4 @@ deactivate f
 
 - [Overview](overview.md)
 - [Build an xApp](build/overview.md)
-- [xApp Nodes](../flow-nodes/xApp/overview.md)
+- [xApp Nodes](../nodes/xApp/overview.md)

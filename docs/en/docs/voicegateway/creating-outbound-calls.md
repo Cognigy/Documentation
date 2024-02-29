@@ -13,9 +13,9 @@ Before initiating an outbound call, ensure you configure an [application](webapp
 
 To initiate an outgoing call, use on of the following methods:
 
-- [Transfer Node](../ai/flow-nodes/vg/transfer.md)
+- [Transfer Node](../ai/nodes/voice/voice-gateway/transfer.md)
 - REST API request:
-    -  [HTTP Request Node](../ai/flow-nodes/services/http-request.md)
+    -  [HTTP Request Node](../ai/nodes/service/http-request.md)
     -  [API Request via Postman or CLI](#create-an-outbound-call-via-api-request)
 
 ## Create an Outbound Call via API Request
@@ -208,7 +208,7 @@ Sequence of interactions:
 3. The voice agent initiates a transfer to the call center via Voice Gateway.
 4. The call center receives the transferred call.
 
-To implement this use case, utilize a [Transfer Node](../ai/flow-nodes/vg/transfer.md) in your voice Flow.
+To implement this use case, utilize a [Transfer Node](../ai/nodes/voice/voice-gateway/transfer.md) in your voice Flow.
 
 ### Make a Follow-up Call
 
@@ -222,7 +222,7 @@ Sequence of interactions:
 2. The voice agent triggers an outbound call to the user via a third-party service and Voice Gateway.
 3. The user receives the outbound call initiated by the voice agent.
 
-To implement this use case, utilize an [HTTP Request Node](../ai/flow-nodes/services/http-request.md) in your voice Flow, or create an [API Request via Postman or CLI](#create-an-outbound-call-via-api-request).
+To implement this use case, utilize an [HTTP Request Node](../ai/nodes/service/http-request.md) in your voice Flow, or create an [API Request via Postman or CLI](#create-an-outbound-call-via-api-request).
 
 ## More Information
 

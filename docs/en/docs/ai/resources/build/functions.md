@@ -4,6 +4,7 @@ slug: "functions"
 description: "Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API."
 hidden: false 
 ---
+
 # Functions 
 
 Cognigy Functions are code blocks that can be executed within your Cognigy.AI installation and assist you with long-running asynchronous processes, such as interacting with third-party systems through HTTP API.
@@ -17,7 +18,8 @@ You can start using Functions by navigating to **Build > Functions** in the left
 
 ## Limitations
 
-The maximum runtime for an instance of a Cognigy Function is limited to 15 minutes. If you have On-premise environment, you can change this limit.
+The maximum runtime for an instance of a Cognigy Function is limited to 15 minutes.
+If you have an On-premise environment, you can change this limit.
 
 ## Configuration and Monitoring
 
@@ -104,13 +106,13 @@ For more information, read the [OpenAPI](https://api-trial.cognigy.ai/openapi#po
 
 ### Using a Node
 
-To trigger a Function from a Flow, use the [Trigger Function](../../flow-nodes/logic/trigger-function.md) Node.
+To trigger a Function from a Flow, use the [Trigger Function](../../nodes/service/trigger-function.md) Node.
 
 ## More Information
 
-- [Inject & Notify]({{config.site_url}}ai/endpoints/inject-and-notify/)
+- [Inject & Notify](../../endpoints/inject-and-notify.md)
 - [OpenAPI documentation](https://api-trial.cognigy.ai/openapi#post-/v2.0/functions/-functionId-/trigger)
-- [Trigger Function]({{config.site_url}}ai/flow-nodes/logic/trigger-function/)
+- [Trigger Function](../../nodes/service/trigger-function.md))
 
 <!--
 

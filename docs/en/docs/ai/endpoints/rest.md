@@ -75,4 +75,4 @@ The response contains the output text, output data and the outputStack, which is
 ```
 
 !!! note "AI Default Channel Formats"
-    You can find out more about the format for the default channels [**here**]({{config.site_url}}ai/flow-nodes/code/ai-default-channel-formats/)
+    You can find out more about the format for the default channels [**here**](../nodes/basic/code/ai-default-channel-formats.md).

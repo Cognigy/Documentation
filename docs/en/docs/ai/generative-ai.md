@@ -139,18 +139,18 @@ You can configure the following Run-Time Generative AI features:
 
 ### LLM Prompt Node
 
-The [LLM Prompt Node](./flow-nodes/other-nodes/llm-prompt.md) enables you to run a prompt against an LLM and either output the message or store it in the Input or Context objects.
+The [LLM Prompt Node](nodes/service/llm-prompt.md) enables you to run a prompt against an LLM and either output the message or store it in the Input or Context objects.
 
 ### GPT Conversation Node
 
 !!! warning
     This Node is part of Cognigy's large-language-model research efforts and is intended solely as a preview feature. The GPT Conversation Node is not intended for production use.
 
-The [GPT Conversation Node](./flow-nodes/other-nodes/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determinig the next best action and outputing relevant messages to the customer.
+The [GPT Conversation Node](nodes/service/gpt-conversation.md) enables an LLM to orchestrate a complete conversation, including determinig the next best action and outputing relevant messages to the customer.
 
 ### Rephrasing Virtual Agent Outputs
 
-To use AI-enhanced bot output rephrasing in [Say](../ai/flow-nodes/message/say.md), [Question](../ai/flow-nodes/message/question.md), and [Optional Question](../ai/flow-nodes/message/optional-question.md) Nodes, do the following:
+To use AI-enhanced bot output rephrasing in [Say](nodes/basic/say.md), [Question](nodes/basic/question.md), and [Optional Question](nodes/basic/optional-question.md) Nodes, do the following:
 
 1. Open the existing Flow.
 2. Add one of the Nodes: Say, Question, or Optional Question.
@@ -170,11 +170,11 @@ Check in the interactive panel if your Flow works as expected.
 
 ### LLM-powered Question Reprompts
 
-The [Question Node](../ai/flow-nodes/message/question.md#reprompt-message) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
+The [Question Node](nodes/basic/question.md#reprompt-message) includes a feature to output a prompt to the user when they have answered a question incorrectly. Instead of using static text, you can use LLMs to generate a more dynamic and personalized output.
 
 ### Search Extract Output Node
 
-The [Search Extract Output Node](../ai/flow-nodes/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](../ai/knowledge-ai/overview.md) to execute a search within a Knowledge Store, extracts a relevant answer via a generative AI model, and creates an output.
+The [Search Extract Output Node](nodes/other-nodes/search-extract-output.md) uses Cognigy [Knowledge AI](../ai/knowledge-ai/overview.md) to execute a search within a Knowledge Store, extracts a relevant answer via a generative AI model, and creates an output.
 
 ## FAQ
 
@@ -189,7 +189,7 @@ The [Search Extract Output Node](../ai/flow-nodes/other-nodes/search-extract-out
 ## More Information
 
 - [Flows](../ai/resources/build/flows.md)
-- [Flow Nodes](../ai/flow-nodes/flow-nodes-overview.md)
+- [Flow Nodes](nodes/overview.md)
 - [Intents](../ai/nlu/nlu-overview/overview.md#intents)
 - [Lexicons](../ai/resources/build/lexicons.md)
 - [LLMs](../ai/resources/build/llm.md)

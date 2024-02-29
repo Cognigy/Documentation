@@ -16,9 +16,9 @@ These functions support the English (`en`) and German (`de`) locales.
 
 The functions are available in the following entities:
 
-- [Clean Text Node](../flow-nodes/nlu/clean-text.md)
-- [Question Nodes](../flow-nodes/message/question.md#answer-pre-processing)
-- [Code Node](../flow-nodes/code/actions.md#text-cleaner)
+- [Clean Text Node](../nodes/nlu/clean-text.md)
+- [Question Nodes](../nodes/basic/question.md#answer-pre-processing)
+- [Code Node](../nodes/basic/code/actions.md#text-cleaner)
 - [Transformers](../endpoints/transformers/transformers.md#text-cleaner-class)
 
 ## Functions

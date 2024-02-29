@@ -86,9 +86,9 @@ High-level description of the process:
 
 To empower your human agents to securely access end user credit card data via PCI Vault, configuration of the following resources is a prerequisite:
 
-- A Flow using the [Handover to Agent](../ai/tools/agent-handover.md) Flow Node to initiate a handover to a human agent.
+- A Flow using the [Handover to Agent](../ai/nodes/service/handover-to-agent.md) Flow Node to initiate a handover to a human agent.
 - Handover with one of the supported Contact Centers is configured. An example might be the handover integration with [Cognigy Live Agent](../live-agent/overview.md).
-- Usage of AI Copilot and the additional [Copilot: SecureForms Tile Node](../ai/flow-nodes/ai-copilot/secure-forms-tile.md) Flow Node which is used to initiate the entire credit card collection process.
+- Usage of AI Copilot and the additional [Copilot: SecureForms Tile Node](../ai/nodes/ai-copilot/secure-forms-tile.md) Flow Node which is used to initiate the entire credit card collection process.
 - An Endpoint through which AI Copilot, the Handover Provider and respective Contact Center settings are configured.
 
 ## Test your Configuration
@@ -130,5 +130,5 @@ Once the card details are received, the human agent can process the payment on b
 
 ## More Information
 
-- [AI Copilot Nodes](../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../ai/nodes/ai-copilot/overview.md)
 - [Endpoints](../ai/endpoints/overview.md)

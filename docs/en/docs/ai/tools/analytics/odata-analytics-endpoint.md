@@ -127,7 +127,7 @@ You control and manage the data available in the OData Endpoint via the agent se
 
 - If you enable *Mask Sensitive Analytics* the *inputText* and *inputData* fields will be masked.
 
-Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/#blind-mode) nodes that will disable or mask analytics data available in OData according to your node settings.
+Furthermore, you can control analytics logging behavior inside a Flow using [Blind Mode]({{config.site_url}}ai/nodes/nodes-overview/#blind-mode) nodes that will disable or mask analytics data available in OData according to your node settings.
 
 ## Cognigy.AI OData Collections
 
@@ -152,7 +152,7 @@ See [here]({{config.site_url}}ai/tools/interaction-panel/input/) for more inform
 
 **Description**
 
-Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Analytics record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/flow-nodes/other-nodes/overwrite-analytics/).
+Each time a contact sends a message to a Cognigy.AI Flow, Cognigy.AI creates an Analytics record with detailed analytics logs about the interaction. Each interaction is exposed in the analytics endpoint as single line item. Data written to this collection is committed at the end of the flow execution, therefore it is possible to overwrite the data contained within this collection via use of the [Overwrite Analytics Node]({{config.site_url}}ai/nodes/other-nodes/overwrite-analytics/).
 
 **Example Query**
 
@@ -271,7 +271,7 @@ When retrieving this collection, the endpoint will return the following fields:
 
 ### Steps
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-flow-nodes-and-intents)
+[![Version badge](https://img.shields.io/badge/Added in-v4.2-blue.svg)](../../release-notes/pre-4.30.md#analytics-steps-for-nodes-and-intents)
 
 **Description**
 

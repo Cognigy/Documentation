@@ -22,15 +22,15 @@ Within your agent, from the left toolbar click **Manage** --> **Settings** to ac
 
 ### Yes/No logic
 
-Add a specific [Yes/No logic](../../nlu/nlu-overview/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../nlu/nlu-overview/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../flow-nodes/flow-nodes-overview.md#question) .
+Add a specific [Yes/No logic](../../nlu/nlu-overview/yes-no-intents.md) within your Flow to confirm and negate an [Intent](../../nlu/nlu-overview/ml-intents.md) or the **Yes/No** type of [Question Nodes](../../nodes/overview.md#question) .
 
 ### Additional confirmation words
 
-Add your own customized responses to confirm an [Intent](../../nlu/nlu-overview/ml-intents.md) and [Question Nodes](../../flow-nodes/flow-nodes-overview.md#question).
+Add your own customized responses to confirm an [Intent](../../nlu/nlu-overview/ml-intents.md) and [Question Nodes](../../nodes/overview.md#question).
 
 ### Additional negative confirmation words 
 
-Add your own customized responses to negate an [Intent](../../nlu/nlu-overview/ml-intents.md) and [Question Nodes](../../flow-nodes/flow-nodes-overview.md#question).
+Add your own customized responses to negate an [Intent](../../nlu/nlu-overview/ml-intents.md) and [Question Nodes](../../nodes/overview.md#question).
 
 ### Continue **main** Flow after attached Flow
 

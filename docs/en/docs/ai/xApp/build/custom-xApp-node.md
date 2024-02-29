@@ -59,6 +59,6 @@ Once implemented, the generated HTML will appear within the app screen, similar 
 
 ## More Information
 
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [xApp Nodes](../../nodes/xApp/overview.md)
 - [Build an xApp](overview.md)
 - [xApps](../overview.md)
