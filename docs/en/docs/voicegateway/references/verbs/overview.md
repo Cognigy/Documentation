@@ -13,7 +13,7 @@ For incoming calls, you can use Voice Nodes and a Code Node. However, for outgoi
 
 ## List of Verbs
 
-The table presents the list of supported Verbs.
+The table presents the list of supported verbs.
 
 | Verb                                        | Description                                                                                                                                                                                                  | Node Analogue                                                                                                                 |
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -27,7 +27,7 @@ The table presents the list of supported Verbs.
 | [Play](play.md)                             | This verb streams recorded audio to a call.                                                                                                                                                                  | [Play](../../../ai/nodes/voice/voice-gateway/play.md)                                                                         |
 | [Say](say.md)                               | This verb sends synthesized speech to the remote party. The text provided may be either plain text or use SSML tags.                                                                                         | [Say](../../../ai/nodes/basic/say.md#voice-gateway)                                                                           |
 | [SIP:request](sip-request.md)               | This verb sends a SIP `INFO`, `NOTIFY`, or `MESSAGE` request on an established call, which is an in-dialog request.                                                                                          | [Send Metadata](../../../ai/nodes/voice/voice-gateway/send-metadata.md)                                                       |
-| [SIP:REFER](sip-refer.md)                   | This verb transfers a call and disconnect.                                                                                                                                                                   | [Transfer](../../../ai/nodes/voice/voice-gateway/transfer.md) (**Refer** settings)                                            |
+| [SIP:refer](sip-refer.md)                   | This verb transfers a call and disconnect.                                                                                                                                                                   | [Transfer](../../../ai/nodes/voice/voice-gateway/transfer.md) (**Refer** settings)                                            |
 | [Transcribe](transcribe.md)                 | This verb generates real-time transcriptions of speech.                                                                                                                                                      | [Set Session Config](../../../ai/nodes/voice/voice-gateway/set-session-config.md)  (**Recognizer - Speech-To-Text** settings) |
 
 ## Custom Verbs in a Code Node
