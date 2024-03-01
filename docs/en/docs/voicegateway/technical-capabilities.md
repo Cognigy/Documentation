@@ -15,6 +15,8 @@ Additionally, the article describes the use of STT and TTS providers and emphasi
 
 ## Supported Protocols
 
+The following protocols are supported:
+
 | Protocol                                                       | Supported Functionality                                                                                                                          |
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | SIP                                                            | SIP signaling, as specified in [IETF RFC 3261](https://datatracker.ietf.org/doc/html/rfc3261).                                                   |
@@ -41,10 +43,10 @@ Additionally, the article describes the use of STT and TTS providers and emphasi
 The following audio codecs are supported:
 
 - `G.711`:
-    - `A-law` (preferred)
-    - `U-law`
-- `OPUS`
-- `G.722`
+    - `A-law` (preferred).
+    - `U-law`.
+- `OPUS`.
+- `G.722`.
 
 ## Features
 
