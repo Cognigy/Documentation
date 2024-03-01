@@ -84,12 +84,10 @@ The following audio codecs are supported:
 
 ### Call Quality Monitoring and Optimization
 
-The grammar in the provided sentences appears to be correct. Here they are:
-
 - Observability features include [tracing call events with open telemetry](webapp/recent-calls.md#call-tracing).
 - Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTX and STT) on each call.
 - [Caching of TTS audio](webapp/accounts.md#tts-prompt-caching) when possible to reduce costs.
-- 
+
 ## Technical Support
 
 For any further or more specific questions about the Voice Gateway technical capabilities, contact [Cognigy technical support](../help/get-help.md).
