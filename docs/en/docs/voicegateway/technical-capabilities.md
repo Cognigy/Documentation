@@ -87,7 +87,7 @@ The following audio codecs are supported:
 ### Call Quality Monitoring and Optimization
 
 - Observability features include [tracing call events with open telemetry](webapp/recent-calls.md#call-tracing).
-- Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTX and STT) on each call.
+- Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTS and STT) on each call.
 - [Caching of TTS audio](webapp/accounts.md#tts-prompt-caching) when possible to reduce costs.
 
 ## Technical Support
