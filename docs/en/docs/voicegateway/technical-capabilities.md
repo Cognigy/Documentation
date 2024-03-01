@@ -42,8 +42,8 @@ The following protocols are supported:
 
 The following audio codecs are supported:
 
-- `G.711`:
-    - `A-law` (preferred).
+- `G.711` (preferred):
+    - `A-law`.
     - `U-law`.
 - `OPUS`.
 - `G.722`.
