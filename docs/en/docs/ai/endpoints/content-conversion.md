@@ -9,7 +9,7 @@ hidden: false
 Cognigy provides a wide range of Endpoints for its conversational AI platform.
 Not all of these Endpoints can correctly convert your content to the desired output type.
 
-The table below shows the [output types](../flow-nodes/message/say.md#output-types)
+The table below shows the [output types](../nodes/basic/say.md#output-types)
 that Cognigy can provide for various Endpoints and other components,
 such as the Interaction Panel, xApp: Show Adaptive Card Node, and Live Agent. 
 

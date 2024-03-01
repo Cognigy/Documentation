@@ -83,4 +83,4 @@ To localize all Intents within your Flow, follow these steps:
 ## More Information
 
 - [Automatic Translation](../../tools/auto-localization.md)
-- [Switch Locale Node](../../flow-nodes/logic/switch-locale.md)
+- [Switch Locale Node](../../nodes/logic/switch-locale.md)

@@ -56,7 +56,7 @@ Result:
 The Webchat conversation between a user and the virtual agent begins.
 At any point in the conversation, if the user expresses a desire to speak to a human agent,
 such as saying `I would like to talk to a human agent`,
-Cognigy Virtual Agent recognizes this intent, stops the Flow execution,
+Cognigy virtual agent recognizes this intent, stops the Flow execution,
 and transfers the conversation to a Live Agent who can then take over and continue the interaction.
 
 <figure>

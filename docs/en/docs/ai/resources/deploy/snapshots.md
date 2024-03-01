@@ -1,8 +1,9 @@
 ---
- title: "Snapshots" 
- slug: "snapshots" 
- hidden: false 
+title: "Snapshots" 
+slug: "snapshots"
+hidden: false 
 ---
+
 # Snapshots
 
 _Snapshots_ are immutable forms of your virtual agent, including the following resources:
@@ -22,8 +23,8 @@ Once a resource has been included in a Snapshot, that resource within the Snapsh
 
 Snapshots can be used in the following cases:
 
-- To create an immutable just-in-time copy of all relevant resources of a virtual agent, allowing this specific version to be deployed through Endpoints while your developers are already working on the next version of your virtual agent.
-- To create a backup of your virtual agent, enabling you to revert to an earlier state if needed.
+- To create an immutable just-in-time copy of all relevant resources of a virtual agent. This copy can be deployed through Endpoints, which allows you to use the current version of your virtual agent while your developers are working on the next version.
+- To create a backup of your virtual agent, which enables you to return to the previous state if necessary.
 
 ## Restrictions
 
@@ -67,7 +68,7 @@ You can download Snapshots you have created previously. This is useful if you wa
 
 To download a Snapshot, follow these steps:
 
-1. When you Snapshot has been created, click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to download from the list.
+1. When your Snapshot has been created, click ![vertical ellipsis](../../../assets/icons/vertical-ellipsis.svg) on the right side next to the Snapshot you want to download from the list.
 2. Select **Prepare Download**. A downloadable Snapshot package will be created. A success notification will appear once your Snapshot package is prepared.
 3. Click ![snapshot download](../../../assets/icons/snapshot-download.svg) on the right side next to the previously prepared Snapshot
    in order to initiate the download.
@@ -180,7 +181,7 @@ Remember that **Snapshots do not need to be restored** for Endpoints to use thei
 
 ### Use Multiple Virtual Agents with Multiple Cognigy.AI Systems
 
-You can go one step further compared to the [Using Multiple Virtual Agents](#use-multiple-virtual-agents) concept if you have multiple physically separated Cognigy.AI installations.
+You can go one step further compared to the [Using Multiple virtual agents](#use-multiple-virtual-agents) concept if you have multiple physically separated Cognigy.AI installations.
 
 Let's assume that you have the following environments:
 
@@ -209,5 +210,5 @@ as productive interaction only happens on this system.
 
 ## More Information
 
-- [Endpoints](endpoints.md)
+- [Endpoints](../../endpoints/overview.md)
 - [Flows](../build/flows.md)

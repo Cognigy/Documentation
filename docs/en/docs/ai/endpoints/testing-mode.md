@@ -12,7 +12,7 @@ Testing Mode for Endpoints allows to send messages to existing Endpoints that ar
 
 You can use them to:
 
-- Periodically check the availability of your Virtual Agent.
+- Periodically check the availability of your virtual agent.
 - Run End-To-End tests given the conditions of particular End-User environments.
 
 ## Availability

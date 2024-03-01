@@ -12,9 +12,7 @@ hidden: false
   <img class="image-center" src="{{config.site_url}}ai/handover-providers/images/genesys.svg" width="80%" />
 </figure>
 
-## Description
-
-<div class="divider"></div>
+<div class="divider"></div><div class="divider"></div>
 
 Cognigy includes Genesys Cloud as an additional handover provider, allowing Cognigy users to connect with human agents from Genesys Cloud.
 
@@ -156,7 +154,7 @@ To start using Genesys Cloud as a handover provider with Cognigy.AI, follow thes
 
 ### Configure Handover Settings
 
-In [Handover to Agent](../tools/agent-handover.md) Node, configure the following settings:
+In [Handover to Agent](../nodes/service/handover-to-agent.md) Node, configure the following settings:
 
 - **Language** — specify a language for the conversation. For example, `english`, `spanish`, `german`.
 - **Skills** — define skills for the conversation. For example, `escalation`.

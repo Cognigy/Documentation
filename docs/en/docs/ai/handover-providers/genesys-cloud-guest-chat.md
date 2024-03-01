@@ -29,7 +29,7 @@ The Genesys Cloud Guest Chat handover is based on [Genesys Guest Chat APIs](http
 
 ### Configure Handover Settings
 
-In [Handover to Agent](../tools/agent-handover.md) Node, configure the following settings:
+In [Handover to Agent](../nodes/service/handover-to-agent.md) Node, configure the following settings:
 
 - **Language** — specify a language for the conversation. For example, `english`, `spanish`, `german`.
 - **Skills** — define skills for the conversation. For example, `escalation`.

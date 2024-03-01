@@ -8,7 +8,7 @@ hidden: false
 
 {! _includes/ai-copilot/genesys-note.md !}
 
-When using the Cognigy Voice Gateway, add a [Transfer](../../ai/flow-nodes/vg/transfer.md) Node to hand over the call to a human agent. 
+When using the Cognigy Voice Gateway, add a [Transfer](../../ai/nodes/voice/voice-gateway/transfer.md) Node to hand over the call to a human agent. 
 
 To transfer the call, select the **Dial** option to remain in the session and transcribe the audio streams.
 
@@ -45,7 +45,7 @@ Activate the **Enable Copilot** toggle to generate a Header Key. This header key
 - [AI Copilot Workspace](../overview.md)
 - [Getting started with AI Copilot](../getting-started.md)
 - [AI Copilot Configuration](../configuration.md)
-- [AI Copilot Nodes](../../ai/flow-nodes/ai-copilot/overview.md)
+- [AI Copilot Nodes](../../ai/nodes/ai-copilot/overview.md)
 - [AI Copilot Embedding](../embedding.md)
 - [AI Copilot for Chat](../chat.md)
 - [Integration with Contact Centers](../contact-center-integration.md)

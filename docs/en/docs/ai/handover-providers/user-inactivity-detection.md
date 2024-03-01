@@ -131,10 +131,10 @@ Test your Flow via the demo Webchat and any connected providers, for example, Co
 
 ## More Information
 
-- [Set Handover Inactivity](../flow-nodes/other-nodes/set-handover-inactivity.md)
-- [Close Handover](../flow-nodes/other-nodes/close-handover.md)
+- [Set Handover Inactivity](../nodes/service/set-handover-inactivity.md)
+- [Close Handover](../nodes/service/close-handover.md)
 - [Handover Providers](overview.md)
-- [Agent Handover](../tools/agent-handover.md)
+- [Agent Handover](../nodes/service/handover-to-agent.md)
 
 
 

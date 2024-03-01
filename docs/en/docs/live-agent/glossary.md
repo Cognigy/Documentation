@@ -109,7 +109,7 @@ _**Inbox ID**_
 ## L
 
 _**LA Copilot**_
-: LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered Virtual Agents when conversing with the customer. Using this functionality, during an active handover, fully configurable virtual agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
+: LA Copilot allows human agents using Cognigy Live Agent to be assisted by AI-powered virtual agents when conversing with the customer. Using this functionality, during an active handover, fully configurable virtual agent messages can be displayed to the human agent based on customer messages to best assist the customer. For more information, read the [LA Copilot](assistants/overview.md) documentation.
 
 _**Labels**_
 : Tags that help you to categorize and prioritize conversations, providing additional context and information about the content or status of each conversation. For more information, read the [Labels](settings/labels.md) documentation.

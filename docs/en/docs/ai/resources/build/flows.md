@@ -8,7 +8,7 @@
 ## Chart
 
 **Flows** provide a **visual representation of a potential dialog** in a user-friendly interface. 
-Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input]({{config.site_url}}ai/tools/interaction-panel/input/) object comes in through an [Endpoint](../../endpoints/overview.md).
+Flows are composed of individual **Nodes** with different functionalities, ranging from generating output to collecting back-end information, and are executed as soon as an [Input](../../tools/interaction-panel/input.md) object comes in through an [Endpoint](../../endpoints/overview.md).
 
 !!! tip "How to create a new Flow"
     To build your first Flow, go to [Design a Flow and add a Message](https://support.cognigy.com/hc/en-us/articles/360014524180-Design-a-Flow-and-add-a-Message) in the Cognigy Help Center.
@@ -29,7 +29,7 @@ Flows are executed from top to bottom and use a logic-based system to determine 
   <img class="image-center" src="{{config.site_url}}ai/resources/images/Node-Create-Menu.png" width="100%" />
 </figure>
 
-Head over to [**Flow Nodes**]({{config.site_url}}ai/flow-nodes/flow-nodes-overview/) for more information on the different types of **Nodes**.
+Head over to [**Flow Nodes**]({{config.site_url}}ai/nodes/nodes-overview/) for more information on the different types of **Nodes**.
 
 ## Entry Points
 <div class="divider"></div>
@@ -53,7 +53,7 @@ In some cases there are **multiple Entry Points.** This can be the case if an Op
 
 In addition to the visual **Chart**, Flows also contain a tab named **NLU**. This section leads to the **Natural Language Understanding** that is relevant to this particular Flow.
 
-Refer to [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/) to learn more.
+Refer to [NLU Overview](../../nlu/nlu-overview/overview.md) to learn more.
 
 ## Settings
 <div class="divider"></div>
@@ -61,16 +61,16 @@ Refer to [NLU Overview]({{config.site_url}}ai/nlu/nlu-overview/overview/) to lea
 Certain settings can be configured per Flow. 
 
 #### Flow Configuration
-Information about the Flow Configuration Settings can be found here: [Flow Settings]({{config.site_url}}ai/resources/manage/settings/#general-flow-logic).
+Information about the Flow Configuration Settings can be found here: [Flow Settings](../../resources/manage/settings.md).
 
 #### Default Context
-Can be used as a starting point for the Flow's Context object. Head over to [Context]({{config.site_url}}ai/tools/interaction-panel/context/) for more information.
+Can be used as a starting point for the Flow's Context object. Head over to [Context](../../tools/interaction-panel/context.md) for more information.
 
 #### Locale Settings
 
 [![Version badge](https://img.shields.io/badge/Added in-v4.32.0-blue.svg)]({{config.site_url}})
 
-Activate this setting to inherit the [Intent]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) model from [fallback]({{config.site_url}}ai/resources/manage/localization/) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) on the Intents page and error badge on NLU tab are hidden, also the [Build Model]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) button in Settings, Chart and NLU is disabled.
+Activate this setting to inherit the [Intent](../../nlu/nlu-overview/ml-intents.md) model from [fallback](../../resources/manage/localization.md) Locale. The Locale Settings tab is disabled for fallback Locale and enabled for alternative Locales. By default, the **Inherit Intent model from fallback locale** toggle is deactivated. Once activated, [training indicator]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) on the Intents page and error badge on NLU tab are hidden, also the [Build Model]({{config.site_url}}ai/nlu/nlu-overview/ml-intents/) button in Settings, Chart and NLU is disabled.
 
 <img src="{{config.site_url}}ai/images/locale-settings.png" width="100%" />
 

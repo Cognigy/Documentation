@@ -31,4 +31,4 @@ You can access Voice Gateway events either in the input object `input.data.event
 
 The Output Transformer is executed after processing the flow. For example, if you receive the `CALL_COMPLETED` event, write some metrics in the transformer via HTTP request.
 
-You can also utilize a **Lookup** Node with the [Call Event Status](../../../ai/flow-nodes/logic/lookup.md#call-event-status) type for reusing these events, streamlining call handling and improving efficiency.
+You can also utilize a **Lookup** Node with the [Call Event Status](../../../ai/nodes/logic/lookup.md#call-event-status) type for reusing these events, streamlining call handling and improving efficiency.

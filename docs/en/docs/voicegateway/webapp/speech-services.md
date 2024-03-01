@@ -51,9 +51,9 @@ To add a custom speech vendor, follow these steps:
 
 To start using your speech provider,
 you need to specify the provider name in the **Custom** parameter of the relevant Nodes,
-such as [Set Session Config](../../ai/flow-nodes/vg/set-session-config.md),
-[Say](../../ai/flow-nodes/message/say.md#voice-gateway), [Question](../../ai/flow-nodes/message/question.md) or [Optional Question](../../ai/flow-nodes/message/optional-question.md),
-or [Session Speech Parameters Config](../../ai/flow-nodes/generic-voice-nodes/session-speech-parameters-config.md).
+such as [Set Session Config](../../ai/nodes/voice/voice-gateway/set-session-config.md),
+[Say](../../ai/nodes/basic/say.md#voice-gateway), [Question](../../ai/nodes/basic/question.md) or [Optional Question](../../ai/nodes/basic/optional-question.md),
+or [Session Speech Parameters Config](../../ai/nodes/voice/generic/session-speech-parameters-config.md).
 
 ## More Information
 

@@ -123,6 +123,6 @@ The conversation should progress only when the user enters data through the xApp
 
 ## More Information
 
-- [xApp Nodes](../../flow-nodes/xApp/overview.md)
+- [xApp Nodes](../../nodes/xApp/overview.md)
 - [Build an xApp](overview.md)
 - [xApps](../overview.md)
