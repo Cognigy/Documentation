@@ -64,7 +64,7 @@ The following audio codecs are supported:
 - Mid-call SIP INFO requests.
 - P-Asserted-Identity header to identify caller.
 - Receiving compact SIP headers.
-- Receiving re-INVITE with no SDP.
+- Receiving re-INVITE with no Session Description Protocol (SDP).
 - Answering machine detection.
 - Configurable music on hold.
 
@@ -76,7 +76,7 @@ The following audio codecs are supported:
 ### STT and TTS providers
 
 - [Many speech providers](../voicegateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-a-custom-speech-vendor) tailored to your needs.
-- [Fallback speech configuration](../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor) in case the primary vendor fails.
+- [Fallback speech configuration](../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor) if the primary vendor fails.
 
 ### Call Recording and Storage
 
