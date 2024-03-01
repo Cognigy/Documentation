@@ -32,7 +32,7 @@ Additionally, the article describes the use of STT and TTS providers and emphasi
 | DTMF - SIP INFO                                                | Receiving DTMF via SIP INFO, as specified in [RFC 2976](https://www.rfc-editor.org/rfc/rfc2976).                                                 |
 | SIP OPTIONS                                                    | OPTIONS pings to allow remote SIP gateways and Session Border Controllers (SBCs) to test the health of the Voice Gateway SBCs.                   |
 | Session timers                                                 | SIP session timers, as specified in [RFC 4028](https://datatracker.ietf.org/doc/html/rfc4028).                                                   |
-| SIP UPDATE                                                     | SIP UPDATE method to refresh SIP session.                                                                                                        |
+| SIP UPDATE                                                     | The SIP UPDATE method to refresh SIP session.                                                                                                    |
 | STUN                                                           | Session Traversal Utilities for NAT (STUN), as specified in [RFC 5389](https://datatracker.ietf.org/doc/html/rfc5389).                           |
 | Diversion Indication in SIP                                    | The Diversion header, as specified in [RFC 5806](https://datatracker.ietf.org/doc/html/rfc5806).                                                 |
 
@@ -50,7 +50,7 @@ The following audio codecs are supported:
 
 ### Trunk management and Routing
 
-- Transferring calls via [SIP REFER](https://datatracker.ietf.org/doc/html/rfc3515) or SIP INVITE.
+- Transferring calls via [SIP REFER](https://datatracker.ietf.org/doc/html/rfc3515) or [SIP INVITE](https://datatracker.ietf.org/doc/html/rfc3261).
 - Multiple SIP trunks per customer.
 - Configuring SIP trunks with options like tech prefix, SIP Diversion header, Outbound authentication (including `REGISTER`).
 - Routing calls based on a trunk group, Direct Inward Dialing (DID), or DID range.
