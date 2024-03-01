@@ -1,71 +1,95 @@
+---
+title: "Voice Gateway Technical Capabilities"
+slug: "technical-capabilities"
+description: "This article is intended for individuals considering Voice Gateway for their telecommunication needs and outlines its technical capabilities."
+hidden: false
+---
+
 # Voice Gateway Technical Capabilities
 
-## Protocols supported
+This article is intended for individuals considering Voice Gateway for their telecommunication needs. 
+It provides a detailed overview of the platform's extensive technical capabilities, including support for various protocols such as SIP and RTP, as well as audio codecs. 
+The description highlights several features, including call routing, custom SIP headers, and call recording integration,
+which address diverse requirements.
+Additionally, the article describes the use of STT and TTS providers and emphasizes the advanced tools for monitoring call quality.
 
-| Protocol                           | Description                                                                                                         |
-|------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| SIP                                | Support for SIP signaling as specified in [IETF RFC 3261](https://datatracker.ietf.org/doc/html/rfc3261)            |
-| SIPS                               | Support for SIP over TLS signaling (also specified in RFC 3261)                                                      |
-| SIP over websockets                | Support for SIP over secure websockets, as specified in [RFC 7118](https://datatracker.ietf.org/doc/html/rfc7118)   |
-| RTP                                | Support for Real-time Transport protocol as specified in [RFC 3550](https://datatracker.ietf.org/doc/html/rfc3550)  |
-| SRTP                               | Support for encrypted media using Secure Real-time Transport Protocol (SRTP), as specified in [RFC 3711](https://datatracker.ietf.org/doc/html/rfc3711) |
-| RTCP                               | The RTP Control Protocol (RTCP) is supported to provide quality of service (QoS) statistics for RTP media streams   |
-| Session Description Protocol (SDP) | As specified in [RFC 4566](https://datatracker.ietf.org/doc/html/rfc4566)                                            |
-| Offer/Answer Model with the Session Description Protocol (SDP) | The offer/answer model for negotiating SIP sessions, as specified in [RFC 3264](https://datatracker.ietf.org/doc/html/rfc3264) |
-| DTMF | The use of RTP payloads to carry DMTF events, as specified in [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833) |
-| SIP Digest Authentication | SIP Digest Authentication to challenge and authenticate sip devices, as specified in [RFC 8760](https://datatracker.ietf.org/doc/html/rfc8760) |
-| SIPREC                             | Support for acting as either a SIPREC client or server in order to accomplish call recording, as specified in [RFC 7866](https://datatracker.ietf.org/doc/html/rfc7866) |
-| WebRTC clients                     | Support for receiving calls from Webrtc clients, e.g. web browsers or native mobile apps                            |
-| DTMF - SIP INFO                    | Support for receiving DTMF via SIP INFO, as specified in [RFC 2976](https://www.rfc-editor.org/rfc/rfc2976)         |
-| SIP OPTIONS                        | The VG supports OPTIONS pings to allow remote SIP gateways and Session Border Controllers (SBCs) to test the health of the VG SBCs |
-| Session timers                     | Support for SIP session timers, as specified in [RFC 4028](https://datatracker.ietf.org/doc/html/rfc4028)           |
-| SIP UPDATE                         | Support for SIP UPDATE method to refresh SIP Session                                                                |
-| STUN                               | Support for Session Traversal Utilities for NAT (STUN), as specified in [RFC 5389](https://datatracker.ietf.org/doc/html/rfc5389) |
-|  Diversion Indication in SIP | Support for Diversion header, as specified in [RFC 5806](https://datatracker.ietf.org/doc/html/rfc5806)             |
+## Supported Protocols
 
+| Protocol                                                       | Supported Functionality                                                                                                                        |
+|----------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
+| SIP                                                            | SIP signaling as specified in [IETF RFC 3261](https://datatracker.ietf.org/doc/html/rfc3261).                                                  |
+| SIPS                                                           | SIP over TLS signaling (also specified in RFC 3261).                                                                                           |
+| SIP over WebSockets                                            | SIP over secure WebSockets, as specified in [RFC 7118](https://datatracker.ietf.org/doc/html/rfc7118).                                         |
+| RTP                                                            | Real-time Transport Protocol as specified in [RFC 3550](https://datatracker.ietf.org/doc/html/rfc3550).                                        |
+| SRTP                                                           | Encrypted media using Secure Real-time Transport Protocol (SRTP), as specified in [RFC 3711](https://datatracker.ietf.org/doc/html/rfc3711).   |
+| RTCP                                                           | The RTP Control Protocol (RTCP) provides quality of service (QoS) statistics for RTP media streams.                                            |
+| Session Description Protocol (SDP)                             | Session Description Protocol (SDP), as specified in [RFC 4566](https://datatracker.ietf.org/doc/html/rfc4566).                                 |
+| Offer/Answer Model with the Session Description Protocol (SDP) | The offer or answer model for negotiating SIP sessions, as specified in [RFC 3264](https://datatracker.ietf.org/doc/html/rfc3264).             |
+| DTMF                                                           | The use of RTP payloads to carry DMTF events, as specified in [RFC 2833](https://datatracker.ietf.org/doc/html/rfc2833).                       |
+| SIP Digest Authentication                                      | SIP Digest Authentication challenges and authenticates SIP devices, as specified in [RFC 8760](https://datatracker.ietf.org/doc/html/rfc8760). |
+| SIPREC                                                         | Acting as a SIPREC client or server to accomplish call recording, as specified in [RFC 7866](https://datatracker.ietf.org/doc/html/rfc7866).   |
+| WebRTC clients                                                 | Receiving calls from WebRTC clients, such as web browsers or native mobile apps.                                                               |
+| DTMF - SIP INFO                                                | Receiving DTMF via SIP INFO, as specified in [RFC 2976](https://www.rfc-editor.org/rfc/rfc2976).                                               |
+| SIP OPTIONS                                                    | OPTIONS pings to allow remote SIP gateways and Session Border Controllers (SBCs) to test the health of the Voice Gateway SBCs.                 |
+| Session timers                                                 | SIP session timers, as specified in [RFC 4028](https://datatracker.ietf.org/doc/html/rfc4028).                                                 |
+| SIP UPDATE                                                     | SIP UPDATE method to refresh SIP session.                                                                                                      |
+| STUN                                                           | Session Traversal Utilities for NAT (STUN), as specified in [RFC 5389](https://datatracker.ietf.org/doc/html/rfc5389).                         |
+| Diversion Indication in SIP                                    | Diversion header, as specified in [RFC 5806](https://datatracker.ietf.org/doc/html/rfc5806).                                                   |
 
-## Codecs supported
+## Supported Codecs
+
 The following audio codecs are supported:
 
-- G.711 - ulaw and alaw (preferred)
-- OPUS
-- G.722
+- `G.711`:
+    - `A-law` (preferred)
+    - `U-law`
+- `OPUS`
+- `G.722`
 
 ## Features
 
-### Trunk management & Routing
-- Support for transferring calls via [SIP REFER](https://datatracker.ietf.org/doc/html/rfc3515) or SIP INVITE
-- Support for multiple SIP trunks per customer
-- Support for configuring SIP trunks with options like tech prefix, SIP Diversion header, Outbound authentication (including REGISTER)
-- Routing calls based on trunk group, DID, or DID range
-- Support for least-cost routing selection of outbound trunk
+### Trunk management and Routing
+
+- Transferring calls via [SIP REFER](https://datatracker.ietf.org/doc/html/rfc3515) or SIP INVITE.
+- Multiple SIP trunks per customer.
+- Configuring SIP trunks with options like tech prefix, SIP Diversion header, Outbound authentication (including `REGISTER`).
+- Routing calls based on a trunk group, DID, or DID range.
+- Least-cost routing selection of outbound trunk.
 
 ### Call Features 
-- Support for custom SIP headers on inbound and outbound calls
-- Support for mid-call SIP INFO requests
-- Support for P-Asserted-Identity header to identify caller
-- Support for receiving compact SIP headers
-- Support for receiving re-INVITE with no SDP
-- Support for answering machine detection
-- Support for configurable music on hold
+
+- Custom SIP headers on inbound and outbound calls.
+- Mid-call SIP INFO requests.
+- P-Asserted-Identity header to identify caller.
+- Receiving compact SIP headers.
+- Receiving re-INVITE with no SDP.
+- Answering machine detection.
+- Configurable music on hold.
 
 ### Call Management
-- Support for [generating outbound calls via REST API](../voicegateway/creating-outbound-calls.md)
-- Support for performing operations on calls in progress via REST API
+
+- [Creating outbound calls via REST API](../voicegateway/creating-outbound-calls.md).
+- Performing operations on calls in progress via REST API.
 
 ### STT and TTS providers
-- Support for many [speech vendors](../voicegateway/references/tts-and-stt-vendors.md) as well as custom speech API to add your own
-- Support for [fallback speech configuration](../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor) in case primary provider fails
+
+- [Many speech providers](../voicegateway/references/tts-and-stt-vendors.md) are available, along with the option to integrate [custom speech API](webapp/speech-services.md#add-a-custom-speech-vendor) tailored to your needs.
+- [Fallback speech configuration](../voicegateway/webapp/applications.md#add-additional-tts-and-stt-vendor) in case the primary vendor fails.
 
 ### Call Recording and Storage
-- Support for call recording via integration with third-party SIPREC server
-- Support for pause/resume transcription and recording (avoid collection of PII data)
-- Support for call recording with no third-party components, [recordings streamed to customers preferred cloud storage](../voicegateway/webapp/recent-calls.md#call-recordings)
+
+- Call recording via integration with a third-party SIPREC server.
+- Pausing or resuming transcription and recording to avoid the collection of Personally Identifiable Information (PII).
+- Call recording with no third-party components, [recordings streamed to the preferred cloud storage](../voicegateway/webapp/recent-calls.md#call-recordings).
 
 ### Call Quality Monitoring and Optimization
-- Observability features include [open telemetry tracing of call events]((../voicegateway/webapp/recent-calls.md#call-tracing))
-- Visual view of [speech latency](../voicegateway/webapp/recent-calls.md#call-recordings) (text to speech and speech to text) on individual call basis
-- [Caching of TTS audio](../voicegateway/webapp/accounts.md#tts-promptcaching) when possible to reduce costs
 
+The grammar in the provided sentences appears to be correct. Here they are:
 
-Get in touch with us via an email to [support@cognigy.com](mailto:support@cognigy.com) for any further or more specific questions on the VG Technical Capabilities.
+- Observability features include [tracing call events with open telemetry](webapp/recent-calls.md#call-tracing).
+- Visual view of [speech latency](webapp/recent-calls.md#call-recordings) (TTX and STT) on each call.
+- [Caching of TTS audio](webapp/accounts.md#tts-prompt-caching) when possible to reduce costs.
+- 
+## Technical Support
+
+For any further or more specific questions about the Voice Gateway technical capabilities, contact [Cognigy technical support](../help/get-help.md).
