@@ -27,6 +27,7 @@ This Node helps guide a conversation flow and ensures that the system responds e
 | Type            | Select        | Choose from the following types: <br> - **Text** — the text you want to display in the next action widget.<br>- **Knowledge Assist** — the text from the Knowledge Store to display in the next action widget. |
 | Text            | CognigyScript | Enter the text you want to display in the next action widget.                                                                                                                                                  |
 | Knowledge Store | Select        | Choose a store from the list to allow the Node to retrieve the data.                                                                                                                                           |
+
 ### Search Settings
 
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
