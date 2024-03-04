@@ -8,7 +8,7 @@ hidden: false
 
 In this page we provide a reference of the SIP response codes and their meanings to give clarity on the actions to be taken in case they are received. This should help the Voice Gateway user to be able to troubleshoot their Voice calls and bots. These response code will usually be visible to you in Cognigy.AI Logs or your Agent as "sip_status" key value or in a [downloaded PCAPs](../webapp/recent-calls.md) for the specific call. 
 
-Please also always refer to the [Alerts page](../webapp/alerts.md) in the Self-Service Portal to see if any alertings were received.
+In case case of troubleshooting please consider to have a look at the [Alerts page](../webapp/alerts.md) in the Self-Service Portal to see if any alertings were received.
 
 ## Meaning & Actions
 
