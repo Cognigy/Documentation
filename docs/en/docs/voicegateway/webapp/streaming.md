@@ -6,7 +6,7 @@ hidden: false
 
 # Streaming
 
-In the context of Text-to-Speech (TTS), _streaming_ technology enables instant speech responses from virtual agents, creating a more seamless and natural conversational experience for users.
+In the context of Text-to-Speech (TTS), _streaming_ technology enables instant speech responses from voice agents, creating a more seamless and natural conversational experience for users.
 
 ## Traditional TTS vs. Streaming TTS
 
