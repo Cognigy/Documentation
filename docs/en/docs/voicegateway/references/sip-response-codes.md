@@ -143,7 +143,7 @@ Please also always refer to the [Alerts page](../webapp/alerts.md) in the Self-S
 **Actions**
 
 - If it was a normal rejection of a call, no further action can be taken to establish the call. If necessary, try contacting the user through alternative means.
-- If this response was not expected, check your Self-Service Portal configurations of your Carrier as well as the Alerts page.
+- If this response was not expected, check your Self-Service Portal configurations of your Carrier as well as the [Alerts page](../webapp/alerts.md).
 - Check Cognigy AI logs for any error log messages that could indicate the root cause.
 
 
