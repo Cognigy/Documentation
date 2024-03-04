@@ -28,6 +28,7 @@ This Node helps guide a conversation flow and ensures that the system responds e
 | Text            | CognigyScript | Enter the text you want to display in the next action widget.                                                                                                                                                  |
 | Knowledge Store | Select        | Choose a store from the list to allow the Node to retrieve the data.                                                                                                                                           |
 
+
 ### Search Settings
 
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
