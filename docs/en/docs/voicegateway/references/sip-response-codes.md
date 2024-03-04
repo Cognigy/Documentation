@@ -68,7 +68,7 @@ Please also always refer to the [Alerts page](../webapp/alerts.md) in the Self-S
 **Actions**
 - Please check the Carrier or Phone numbers configurations in the Self-Service-Portal. 
 - Verify the request URI provided in your Transfer node is correct. The issue may be due to a mistyped address or an outdated record.
-- If there are large amounts of these this should investigated and possibly the source IP blocked.
+- A high volume of these SIP status codes could indicate a SIP spam attempt. Investigate further for troubleshooting and possible IP blocking.
 
 ### **408 Request Timeout**
 
