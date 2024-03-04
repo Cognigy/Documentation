@@ -56,7 +56,7 @@ Please also always refer to the [Alerts page](../webapp/alerts.md) in the Self-S
 
 - Check the request credentials (e.g., username and password) and permissions.
 - Ensure the request is being sent to the correct server and endpoint.
-- If there are large amounts of these this should investigate and possibly the source IP blocked.
+- If there are large amounts of requests with status 403 from the same IP - this IP should probably be blocked.
 
 ### **404 Not Found**
 
