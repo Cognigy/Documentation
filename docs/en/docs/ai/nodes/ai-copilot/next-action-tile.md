@@ -29,6 +29,7 @@ This Node helps guide a conversation flow and ensures that the system responds e
 | Knowledge Store | Select        | Choose a store from the list to allow the Node to retrieve the data.                                                                                                                                           |
 
 
+
 ### Search Settings
 
 | Parameter                 | Type          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
