@@ -147,4 +147,4 @@ Please also always refer to the [Alerts page](../webapp/alerts.md) in the Self-S
 - Check Cognigy AI logs for any error log messages that could indicate the root cause.
 
 
-If you cannot resolve your issue, please contact Cognigy Cutsomer Support.
+If you cannot resolve your issue, please contact Cognigy Customer Support.
