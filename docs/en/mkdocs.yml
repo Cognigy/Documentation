@@ -608,6 +608,8 @@ nav:
     - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
+  - Technical Capabilities:
+    - voicegateway/technical-capabilities.md
   - Installation & Configuration:
     - voicegateway/installation/overview.md
     - Browser Requirements:
