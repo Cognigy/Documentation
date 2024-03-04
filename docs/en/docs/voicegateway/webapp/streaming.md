@@ -28,3 +28,8 @@ To enable streaming for voice agent, follow these steps:
 4. On the **Add Speech service** page, enable the **Use Streaming** option. Note that the **Use for text-to-speech** option must also be activated.
 5. _(Optional)_ To ensure a smoother and more tailored TTS output, customize the streaming settings. These settings include parameters for optimizing streaming latency, stability, similarity boost, and speaker boost. To configure these settings, activate Extra Options at the end of the page and change the desired parameters.
 6. Click **Save**.
+
+## More Information
+
+- [Speech Services](speech-services.md)
+- [TTS and STT vendors](../references/tts-and-stt-vendors.md)
