@@ -24,8 +24,8 @@ Only files in `PDF` and `DOCX` are supported.
 
 This feature is available in the following environments:
 
-- Cognigy Trial.
-- Cognigy dedicated and shared SaaS.
+- Trial.
+- Dedicated and shared SaaS.
   Only for a limited number of customers.
   If you want to use this feature, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
 - [On-premises](#on-premises). To use this feature, set up Azure AI Document Intelligence connection and provide an API key.
@@ -55,7 +55,8 @@ The extracted text is presented in Markdown format in the Chunk editor.
 
 ### Formats
 
-Examples of elements into which text can be transformed during content conversion from source files in DOCX or PDF format.
+Examples of elements
+into which text can be transformed during content conversion from source files in DOCX or PDF formats.
 
 #### Headers
 
@@ -79,6 +80,8 @@ H3:
 ```
 
 #### Images
+
+If there are images in your source file, they are not converted; they can be replaced with the following HTML tag:
 
 ```txt
 `<figure>
@@ -106,7 +109,7 @@ Number list:
 
 #### Metadata
 
-This JSON snippet specifies page numbering, indicating that the chunk's text starts on source file page 1 and ends on page 2.
+The metadata indicates that the chunk's text starts on source file page 1 and ends on page 2.
 
 ```txt
 {
@@ -127,7 +130,7 @@ This JSON snippet specifies page numbering, indicating that the chunk's text sta
 
 ### DOCX
 
-The table compares two strategies, the default and the new one, by listing the elements that can be converted. The comparison is provided for source files in the DOCX format.
+The table compares two strategies, the default and the new one, by listing the elements that can be converted. The comparison is provided for source files in DOCX format.
 
 | **Element**               | **Default Strategy**                                                                                        | **New Strategy**                                                                                   |
 |---------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -210,7 +213,7 @@ In the case of the New Chunk Strategy, the system splits this text into 5 logica
 ### PDF
 
 The table compares two strategies, the default and the new one, by listing the elements that can be converted.
-The comparison is provided for source files in the PDF format.
+The comparison is provided for source files in PDF format.
 
 | **Element**               | **Default Strategy**                                                   | **New Strategy**                                                                                                            |
 |---------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
