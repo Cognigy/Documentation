@@ -1,20 +1,20 @@
 ---
 title: "New Chunk Strategy"
 slug: "New Chunk Strategy"
-description: "Knowledge AI New Chunk Strategy"
+description: "The New Chunk Strategy is powered by Azure AI Document Intelligence and creates semantic chunks, resulting in more accurate answers, as compared to fixed-length chunking that is used by default."
 hidden: false
 ---
 
 # Knowledge AI: New Chunk Strategy
 
-The new chunk strategy is powered by Azure AI Document Intelligence and creates semantic chunks,
+The New Chunk Strategy is powered by [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence) and creates semantic chunks,
 resulting in more accurate answers, as compared to fixed-length chunking that is used by default.
  
 The new chunk strategy has the following advantages:
 
 - **Improved quality of responses**. Breaking down the text into blocks of meaning allows the virtual agent to more accurately understand the context and find the necessary information to formulate a response. This approach helps to enhance the quality of responses, as the virtual agent may only need to find one chunk to provide the correct answer.
-- **Effective use of Markdown**. Markdown allows the virtual agent to recognize headers, tables, images, links, and differentiate them from regular text. This approach adds an additional level of context, helping the virtual agent better understand the structure and organization of information in the text.
-- **Improved ability to reference the source**. Adding the page number of the source file to the metadata for each chunk can help track information source in lengthy documents.
+- **Effective use of Markdown**. Markdown allows the virtual agent to recognize headers, tables, images, links, and differentiate them from a regular text. This approach adds an additional level of context, helping the virtual agent better understand the structure and organization of information in the text.
+- **Improved ability to reference the source**. Adding the page number of the source file to the metadata for each chunk can help track an information source in lengthy documents.
 
 ## Supported Formats
 
@@ -28,9 +28,9 @@ This feature is available in the following environments:
 - Cognigy dedicated and shared SaaS.
   Only for a limited number of customers.
   If you want to use this feature, contact [Cognigy technical support](https://docs.cognigy.com/help/get-help/).
-- On-premises. To use this feature, set up  Azure AI Document Intelligence connection and provide an API key. The installation instruction is provided below.
+- [On-premises](#on-premises). To use this feature, set up Azure AI Document Intelligence connection and provide an API key.
 
-### On-Premises: Azure AI Document Intelligence Configuration 
+### On-Premises
 
 #### Prerequisites
 
@@ -51,10 +51,11 @@ The following environment variables must be specified in the `values.yaml` file 
 This strategy is applied when `.preset_ca` is appended to the file name of an uploaded file. For example, `cognigy.preset_ca.pdf`, where `cognigy` is the initial file name,
 `.preset_ca` is the preset to apply the new chunk strategy, and `.pdf` is the file extension.
 
-Extracted text is presented in Markdown format in the Chunk editor.
+The extracted text is presented in Markdown format in the Chunk editor.
 
 ### Formats
 
+Examples of elements into which text can be transformed during content conversion from source files in DOCX or PDF format.
 
 #### Headers
 
@@ -101,10 +102,11 @@ Number list:
 1. Gather Ingredients
 2. Prepare Ingredients
 3. Assemble Sandwich
-4. Serve
 ```
 
 #### Metadata
+
+This JSON snippet specifies page numbering, indicating that the chunk's text starts on source file page 1 and ends on page 2.
 
 ```txt
 {
@@ -123,170 +125,189 @@ Number list:
 | NLU Training | Train NLU based on example content | Zero-shot learning |
 ```
 
-## Examples
+### DOCX
 
-Let's assume that we have an example in PDF. 
+The table compares two strategies, the default and the new one, by listing the elements that can be converted. The comparison is provided for source files in the DOCX format.
 
-### Default Strategy
+| **Element**               | **Default Strategy**                                                                                        | **New Strategy**                                                                                   |
+|---------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Titles                    | Titles are omitted.                                                                                         | Most titles are not converted or partially converted. Some titles can be converted as simple text. |
+| Text Blocks               | Due to conversion challenges, certain text blocks may be excluded. The text is divided into equal segments. | The majority of the text is logically segmented and converted.                                     |
+| Lists                     | Bullet and numeral lists are not converted or are partially converted.                                      | Bullet and numeral lists are not converted or are partially converted.                             |
+| Tables                    | Not converted.                                                                                              | Can be converted.                                                                                  |
+| Images and Graphics       | Not converted.                                                                                              | Not converted.                                                                                     |
+| Metadata                  | Metadata isn't included by default.                                                                         | The number of the source page can be included.                                                     |
+| Hyperlinks (URLs)         | Not converted.                                                                                              | Not converted.                                                                                     |
+| Styling and Formatting    | Not converted.                                                                                              | Not converted.                                                                                     |
+| Formulae and Calculations | Not converted.                                                                                              | Only simple formulas are converted, including signs such as `*`, `-`, `=`, `+`.                    |
+
+Let's consider an example in [DOCX](https://docs.cognigy.com/ai/images/knowledge-ai/new-call-tracing-sample.docx).
+
+#### Default Strategy
+
+In the case of the Default Chunk Strategy, the system splits this text into 5 equal chunks.
 
 ??? note "Default Chunk Splitting"
+
     1.
     ```txt
-    Currently,	conversation	designers	are	in	both	a	creator	role	as	well	as	a	QA	role.	They	need	to	predict,	design,	
-    and	create	conversational	experiences	while	at	the	same	time	handling	aspects	such	as	optimization,	tone	of	
-    voice	and	adherence	to	other	corporate	branding	and	style	guidelines.	
-    The	core	concept	of	designing	conversations	is	figuring	out	the	most	natural	and	effective	way	for	
-    conversations	to	follow.	That	is	creating	the	best
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. 
+    VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
     ```
     
     2.
     ```txt
-    possible	conversation	a	user	can	have.		You	still	want	a	
-    human	to	design	that	for	now	at	least.	However,	LLMs	can	get	designers	to	a	first	draft	in	seconds.	For	
-    experienced	conversation	designers,	it	can	provide	clear	value	and	accelerate	productivity,	but	you	cannot	
-    substitute	professional	design	and	expertise	with	automation.	To	use	a	metaphor,	it’s	a	way	to	do	your	
-    homework	faster,	but	won’t	necessarily	guarantee	a
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
     ```
     
     3.
     ```txt
-    better	grade.	
-    Conversation Designer / 
-    Bot Designer
-    Here’s how Generative AI can do that today:
-    Business Impact by Role
-    Task Traditional Method Cognigy.AI with Generative AI
-    Flow/Process Building Manual node by node creation  Write	a	3-sentence	description.	
-    1 Click
-    <5 seconds
-    Generating intent
-    examples for NLU training
-    Brainstorm and manually type out 10
-    sentences
-    Describe	intent	in	several	words	
-    1 Click
-    <5 seconds
-    NLU Training Train	NLU	based	on	example	content Zero-shot learning
-    Building a lexicon Manually	type	out
+    Recognizing this complex landscape, at Cognigy, we’re excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
     ```
     
     4.
     ```txt
-    lexicon	terms	and	
-    synonyms	or	prepare	and	upload	a	.CSV	
-    file	
-    1 sentence or less description
-    1 Click
-    <5	seconds	wait	
-    Personalized Responses Write	standard	responses	with	a	few	
-    slots	for	variables	that	can	be	customized	
-    (names,	dates,	times)
-    Select	a	single	dropdown	in	“AI-
-    Enhanced	Output”	option	and	
-    one click
-    Response variants Manually	add	new	lines	and	type	multiple	
-    variations	of	a	response	in	a	bot	flow
-    1 Click
-    Bot testing Manually	build	a	“playbook”
+    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. 
+    Now, Cognigy’s Call Tracing feature offers an actionable visualization of all activities taking place during the call, such as speech recognition and connections, 
+    together with the call recording waveforms. 
+    This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
     ```
     
     5.
     ```txt
-        of	specific	
-    user responses and then click a button to
-    automatically run them through the bot
-    Create	a	flexible	“playbook”	of	user	
-    responses using more dynamic
-    language	(vs.	scripted)	
-    In	terms	of	response	content	for	conversation	designers,	AI	will	move	towards	the	creator	role	and	humans	to	
-    more	of	a	support	role,	focusing	on	prompt	engineering,	quality	assurance,	optimizations	and	the	AI	agent’s	
-    adherence	to	brand	guidelines	and	style.	
-    A Guide to Generative AI
-    ```
-    
-    6.
-    ```txt
-     for Contact Centers
-    12cognigy.com
-    For	the	Head	of	Conversational	AI,	the	changes	will	be	less	impactful	compared	to	others.	Already	tasked	with	
-    managing	AI	implementation	and	balancing	automation	with	human	intervention,	they	will	continue	to	focus	
-    on	designing	engaging	conversation	flows,	establishing	relevant	KPIs,	and	managing	costs.	
-    They	will	continue	to	oversee	the	development,	deployment,	and	continuous	improvement	of	AI-powered
-    ```
-    
-    7.
-    ```txt
-    customer	service	systems,	while	ensuring	performance	and	alignment	with	organizational	CX	objectives	and	
-    strategy.	However,	the	role	will	require	a	deeper	understanding	of	the	rapidly	changing	Generative	AI	and	
-    Large	Language	Model	landscape.	This	includes	the	technical	differences,	strengths	and	weaknesses	of	each	
-    model,	costs	and	best	practices	in	production.	Finally,	the	benefits,	costs	and	effort	required	for	custom	
-    trained	models	and	their	value	for	the	company
-    ```
-    
-    8.
-    ```txt
-        based	on	size,	contact	volume,	automation	potential	and	so	
-    forth	will	also	land	with	the	Head	of	CAI.
-    • Overseeing	the	development,	deployment,	
-    and	continuous	improvement	of	AI-powered	
-    customer service systems
-    • Developing and implementing best practices for
-    when	and	how	to	use	Generative	AI
-    • Ensuring conversation designs are natural,
-    engaging, and tailored to customer needs
-    • Striking	the	right	balance	between	automation	
-    and human intervention in customer
-    interactions
-    • Establishing and monitoring KPIs for
-    ```
-    
-    9.
-    ```txt
-     AI systems
-    in addition to traditional human-centered ones
-    • Managing	costs	associated	with	AI	system	
-    development,	maintenance	and	API	usages	(e.g.	
-    to	OpenAI)	while	maximizing	ROI
-    • Staying	up	to	date	with	advancements	in	
-    Generative	AI	and	LLM	technology	and	its	
-    potential in contact center operations
-    Head of Conversational AI / 
-    Digital Assistants
-    Key job role changes include:
-    While	LLMs	can	deliver	amazing	human-like	and	
-    contextual	responses,	they	do	incur	additional	
-    costs	per
-    ```
-    
-    10.
-    ```txt
-        conversation.	Is	the	additional	cost	of	
-    the	LLM	worthwhile	for	say	every	package	tracking	
-    conversation?	Probably	not.	
-    Food for Thought:
-    Business Impact by Role
-    A Guide to Generative AI for Contact Centers
-    13cognigy.com
-    
+    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. 
+    It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.
     ```
 
-### New Strategy
+#### New Strategy
+
+In the case of the New Chunk Strategy, the system splits this text into 5 logical chunks.
 
 ???+ note "New Chunk Splitting"
 
     1.
     ```txt
-    Conversation Designer / Bot Designer
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
+    ```
+    2.
+    ```txt
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
+    ```
+    3.
+    ```txt
+    Recognizing this complex landscape, at Cognigy, we’re excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
+    ```
+    4.
+    ```txt
+    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. Now, Cognigy’s Call Tracing feature offers an actionable visualization of all activities taking place during the call, such as speech recognition and connections, together with the call recording waveforms. This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
+    ```
+    5.
+    ```txt
+    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. 
+    It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.
+    ```
+
+### PDF
+
+The table compares two strategies, the default and the new one, by listing the elements that can be converted.
+The comparison is provided for source files in the PDF format.
+
+| **Element**               | **Default Strategy**                                                   | **New Strategy**                                                                                                            |
+|---------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| Titles                    | Titles are omitted.                                                    | Titles are converted into headers of various levels.                                                                        |
+| Footers                   | Footers are converted as simple text.                                  | Not converted.                                                                                                              |
+| Text Blocks               | The text is divided into equal segments.                               | The text is divided into logics segments.                                                                                   |
+| Lists                     | Bullet and numeral lists are not converted or are partially converted. | Bullet and numeral lists are  converted into markdown.                                                                      |
+| Tables                    | Not converted.                                                         | Tables are  converted into markdown.                                                                                        |
+| Images and Graphics       | Not converted.                                                         | Images and graphics are not converted, but their placeholders are marked as `<figure>![](figures/0)</figure>` in the chunk. |
+| Metadata                  | Metadata isn't included by default.                                    | The number of the source page is included by default.                                                                       |
+| Hyperlinks (URLs)         | Not converted.                                                         | Not converted.                                                                                                              |
+| Styling and Formatting    | Not converted.                                                         | Not converted.                                                                                                              |
+| Formulae and Calculations | Not converted.                                                         | Only simple formulas are converted, including signs such as `*`, `-`, `=`, `+`.                                             |
+
+Let's consider an example in [PDF](https://docs.cognigy.com/ai/images/knowledge-ai/new-call-tracing-sample.pdf). 
+
+#### Default Strategy
+
+In the case of the Default Chunk Strategy, the system splits this text into 4 equal chunks.
+
+??? note "Default Chunk Splitting"
+    1.
+    ```txt
+    Call Tracing: Unlock New
+    Dimensions in VUX
+    Optimization
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a
+    sophisticated endeavor fraught with unique challenges. VUX designers confront intricate
+    variables from timing nuances and intonation accuracy to the unpredictability of human
+    speech and environmental interference.
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a
+    disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled
+    services, these are not mere technicalities but critical pivots on the customer experience
+    journey.
+    Recognizing this complex landscape, at
+    ```
+    
+    2.
+    ```txt
+     Cognigy, we’re excited to introduce the ultimate
+    tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
+    Visualizing the Unseen: How Call Tracing Changes the
+    Game
+    Traditionally, understanding and monitoring voice interaction requires painstaking
+    analysis of transcriptions, user feedback, and basic audio playback. Now, Cognigy’s
+    Call Tracing feature offers an actionable visualization of all activities taking place during
+    the call, such as speech recognition and connections, together with the call recording
+    waveforms. This powerful tool grants VUX designers an unparalleled view of the
+    dynamics of voice interactions
+    ```
+    
+    3.
+    ```txt
+        .
+    Event and soundwave visualization provides an analytical perspective that goes beyond
+    the audio, giving professionals the ability to dissect and understand voice experiences
+    at a granular level. It brings critical elements to the forefront that might not be
+    immediately evident in transcriptions or basic audio playback.
+    Key Topics
+    Topic Description
+    Optimizing Response Timings
+    Identify silence and pauses; analyze call duration; uncover speech
+    recognition latency.
+    Detecting and Resolving Overlapping
+    Speech
+    Resolve speech overlaps; ﬁne-tune settings for seamless
+    interaction.
+    Monitoring Speech Quality Highlight inconsistencies; troubleshoot for service quality.
+    Fine-tuning the
+    ```
+    
+    4.
+    ```txt
+    ASR Model
+    Optimize speech recognition models; enhance recognition
+    accuracy.
+    Conclusion
+    ● Cognigy’s Call Tracing uncovers nuanced expressions, crucial for enhancing user
+    experiences.
+    ● Explore our documentation for insights on the Voice Gateway Self-Service Portal
+    and Call Tracing.
+    ```
+
+#### New Strategy
+
+In the case of the New Chunk Strategy, the system splits this text into 4 logical chunks.
+Elements, such as various types of headers and tables, are converted into the md format. Each chunk has a metadata object that shows the number of the source page where this information was located.
+
+???+ note "New Chunk Splitting"
+
+    1.
+    ```txt
+    Call Tracing: Unlock New Dimensions in VUX Optimization
     ===
-    Currently, conversation designers are in both a creator role as well as a QA role. 
-    They need to predict, design, and create conversational experiences while at the same time handling aspects such as optimization, 
-    tone of voice and adherence to other corporate branding and style guidelines.
-    The core concept of designing conversations is figuring out the most natural and effective way for conversations to follow. 
-    That is creating the best possible conversation a user can have. You still want a human to design that for now at least. 
-    However, LLMs can get designers to a first draft in seconds.
-    For experienced conversation designers, it can provide clear value and accelerate productivity, 
-    but you cannot substitute professional design and expertise with automation. 
-    To use a metaphor, it's a way to do your homework faster, but won't necessarily guarantee a better grade.
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
+    Recognizing this complex landscape, at Cognigy, we're excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
     
     
     {
@@ -294,52 +315,49 @@ Let's assume that we have an example in PDF.
     "lastPage": "1"
     }
     ```
-    
+        
     2.
     ```txt
-    ## Here's how Generative Al can do that today:
-    | Task | Traditional Method | Cognigy.AI with Generative AI |
-    | - | - | - |
-    | Flow/Process Building | Manual node by node creation | Write a 3-sentence description. 1 Click <5 seconds |
-    | Generating intent examples for NLU training | Brainstorm and manually type out 10 sentences | Describe intent in several words 1 Click <5 seconds |
-    | NLU Training | Train NLU based on example content | Zero-shot learning |
-    | Building a lexicon | Manually type out lexicon terms and synonyms or prepare and upload a .CSV file | 1 sentence or less description 1 Click <5 seconds wait |
-    | Personalized Responses | Write standard responses with a few slots for variables that can be customized (names, dates, times) | Select a single dropdown in "Al- Enhanced Output" option and one click |
-    | Response variants | Manually add new lines and type multiple variations of a response in a bot flow | 1 Click |
-    | Bot testing | Manually build a "playbook" of specific user responses and then click a button to automatically run them through the bot | Create a flexible "playbook" of user responses using more dynamic language (vs. scripted) |
-    In terms of response content for conversation designers, AI will move towards the creator role and humans to more of a support role, 
-    focusing on prompt engineering, quality assurance, optimizations and the Al agent's adherence to brand guidelines and style.
-    Head of Conversational AI / Digital Assistants
-    ===
-    For the Head of Conversational AI, the changes will be less impactful compared to others.
-    Already tasked with managing AI implementation and balancing automation with human intervention, they will continue to focus on designing engaging conversation flows, establishing relevant KPIs, and managing costs.
-    They will continue to oversee the development, deployment, and continuous improvement of AI-powered customer service systems, while ensuring performance and alignment with organizational CX objectives and strategy. 
-    However, the role will require a deeper understanding of the rapidly changing Generative AI and Large Language Model landscape. This includes the technical differences, strengths and weaknesses of each model, costs and best practices in production. Finally, the benefits, costs and effort required for custom trained models and their value for the company based on size, contact volume, automation potential and so forth will also land with the Head of CAI.
+    # Visualizing the Unseen: How Call Tracing Changes the Game
+    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. Now, Cognigy's Call Tracing feature offers an actionable visualization of all activities taking place during the call, such as speech recognition and connections, together with the call recording waveforms. This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
+    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.<figure>
+    ![](figures/0)
+    </figure>
     
     {
       "firstPage": "1",
       "lastPage": "2"
     }
     ```
-    
+        
     3.
     ```txt
-    ## Key job role changes include:
-    · Overseeing the development, deployment, and continuous improvement of AI-powered customer service systems
-    · Developing and implementing best practices for when and how to use Generative AI
-    · Ensuring conversation designs are natural, engaging, and tailored to customer needs
-    · Striking the right balance between automation and human intervention in customer interactions
-    · Establishing and monitoring KPIs for Al systems in addition to traditional human-centered ones
-    · Managing costs associated with Al system development, maintenance and API usages (e.g. to OpenAI) while maximizing ROI
-    · Staying up to date with advancements in Generative AI and LLM technology and its potential in contact center operations
-    <figure>
-    ![](figures/0)
-    </figure>
-    Food for Thought:
-    While LLMs can deliver amazing human-like and contextual responses, they do incur additional costs per conversation. Is the additional cost of the LLM worthwhile for say every package tracking conversation? Probably not.
+    # Key Topics
+    | Topic | Description |
+    | - | - |
+    | Optimizing Response Timings | Identify silence and pauses; analyze call duration; uncover speech recognition latency. |
+    | Detecting and Resolving Overlapping Speech | Resolve speech overlaps; fine-tune settings for seamless interaction. |
+    | Monitoring Speech Quality | Highlight inconsistencies; troubleshoot for service quality. |
+    | Fine-tuning the ASR Model | Optimize speech recognition models; enhance recognition accuracy. |
     
     {
       "firstPage": "2",
       "lastPage": "2"
     }
     ```
+    
+    4.
+    ```txt
+    # Conclusion
+    · Cognigy's Call Tracing uncovers nuanced expressions, crucial for enhancing user experiences.
+    . Explore our documentation for insights on the Voice Gateway Self-Service Portal and Call Tracing.
+    
+    {
+      "firstPage": "2",
+      "lastPage": "2"
+    }
+    ```
+
+## More Information
+
+- [PDF](pdf.md)
