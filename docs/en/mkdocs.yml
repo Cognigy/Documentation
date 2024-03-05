@@ -634,6 +634,8 @@ nav:
       - voicegateway/webapp/carriers.md
     - Speech Services:
       - voicegateway/webapp/speech-services.md
+      - Streaming:
+          - voicegateway/webapp/streaming.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
     - Outbound Call Routing:
