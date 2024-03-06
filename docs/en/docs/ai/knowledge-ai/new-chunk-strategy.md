@@ -138,17 +138,17 @@ The comparison is provided for source files in DOCX format.
 !!! warning
     Use Microsoft Word to save files in DOCX format to avoid unexpected results. Other programs, such as Google Docs, may not offer the same level of compatibility.
 
-| **Element**               | **Default Strategy**                                                                                        | **New Strategy**                                                                                   |
-|---------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| Titles                    | Titles are omitted.                                                                                         | Most titles are not converted or partially converted. Some titles can be converted as simple text. |
-| Text Blocks               | Due to conversion challenges, certain text blocks may be excluded. The text is divided into equal segments. | The majority of the text is logically segmented and converted.                                     |
-| Lists                     | Bullet and numeral lists are not converted or are partially converted.                                      | Bullet and numeral lists are not converted or are partially converted.                             |
-| Tables                    | Not converted.                                                                                              | Tables are converted into markdown.                                                                |
-| Images and Graphics       | Not converted.                                                                                              | Not converted.                                                                                     |
-| Metadata                  | Metadata isn't included by default.                                                                         | The number of the source page is included by default.                                              |
-| Hyperlinks (URLs)         | Not converted.                                                                                              | Not converted.                                                                                     |
-| Styling and Formatting    | Not converted.                                                                                              | Not converted.                                                                                     |
-| Formulae and Calculations | Not converted.                                                                                              | Only simple formulas are converted, including signs such as `*`, `-`, `=`, `+`.                    |
+| **Element**               | **Default Strategy**                                                                                        | **New Strategy**                                                                                  |
+|---------------------------|-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Titles                    | Titles are omitted.                                                                                         | Titles are converted into headers of various levels. Some titles can be converted as simple text. |
+| Text Blocks               | Due to conversion challenges, certain text blocks may be excluded. The text is divided into equal segments. | The majority of the text is logically segmented and converted.                                    |
+| Lists                     | Bullet and numeral lists are not converted or are partially converted.                                      | Bullet and numeral lists are not converted or are partially converted.                            |
+| Tables                    | Not converted.                                                                                              | Tables are converted into markdown.                                                               |
+| Images and Graphics       | Not converted.                                                                                              | Not converted.                                                                                    |
+| Metadata                  | Metadata isn't included by default.                                                                         | The number of the source page is included by default.                                             |
+| Hyperlinks (URLs)         | Not converted.                                                                                              | Not converted.                                                                                    |
+| Styling and Formatting    | Not converted.                                                                                              | Not converted.                                                                                    |
+| Formulae and Calculations | Not converted.                                                                                              | Only simple formulas are converted, including signs such as `*`, `-`, `=`, `+`.                   |
 
 Let's consider an example in [DOCX](https://docs.cognigy.com/ai/images/knowledge-ai/new-call-tracing-sample.docx).
 
@@ -268,7 +268,7 @@ The comparison is provided for source files in PDF format.
 |---------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
 | Titles                    | Titles are omitted.                                                    | Titles are converted into headers of various levels.                                                                        |
 | Footers                   | Footers are converted as simple text.                                  | Not converted.                                                                                                              |
-| Text Blocks               | The text is divided into equal segments.                               | The text is divided into logics segments.                                                                                   |
+| Text Blocks               | The text is divided into equal segments.                               | The text is converted and divided into logic segments.                                                                      |
 | Lists                     | Bullet and numeral lists are not converted or are partially converted. | Bullet and numeral lists are  converted into markdown.                                                                      |
 | Tables                    | Not converted.                                                         | Tables are converted into markdown.                                                                                         |
 | Images and Graphics       | Not converted.                                                         | Images and graphics are not converted, but their placeholders are marked as `<figure>![](figures/0)</figure>` in the chunk. |
@@ -368,8 +368,8 @@ Elements, such as various types of headers and tables, are converted into the md
     
     
     {
-    "firstPage": "1",
-    "lastPage": "1"
+      "firstPage": "1",
+      "lastPage": "1"
     }
     ```
         
