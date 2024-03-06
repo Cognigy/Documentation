@@ -1,150 +1,28 @@
 ---
 title: "SIP Response Codes"
 slug: "sip-response-codes"
+description: "The SIP Response Codes page provides guidance on SIP response codes, their meanings, and potential actions to resolve issues, supporting you in troubleshooting voice agents."
 hidden: false
 ---
 
-# SIP Response codes
-
-In this page we provide a reference of the SIP response codes and their meanings to give clarity on the actions to be taken in case they are received. This should help the Voice Gateway user to be able to troubleshoot their Voice calls and bots. These response code will usually be visible to you in Cognigy.AI Logs or your Agent as "sip_status" key value or in a [downloaded PCAP](../webapp/recent-calls.md) for the specific call. 
-
-In case case of troubleshooting please consider to have a look at the [Alerts page](../webapp/alerts.md) in the Self-Service Portal to see if any alertings were received.
-
-## Meaning & Actions
-
-### **200 OK**
-
-**Meaning**
-
-- The call was successfully answered.
-
-**Actions**
-
-- No specific actions required.
-
-### **202 OK**
-
-**Meaning**
-
-- This code is indicating that the request has been accepted for processing, but the processing has not been completed.
-
-**Actions**
-
-- No specific actions required.
-
-### **400 Bad Request**
-
-**Meaning**
-
-- The request could not be understood by the server due to malformed syntax. The client should not repeat the request without modifications.
-
-**Actions**
-
-- Review the request for any syntax errors or missing parameters. Cognigy.AI error message could have clues on what is missing.
-- Ensure that the request conforms to the SIP protocol's standards and requirements.
-- Check for any typos in the SIP URI or the headers.
-- If the problem persists, consult the server logs or documentation for more specific information regarding the error.
-
-### **403 Permission Denied**
-
-**Meaning**
-
-- The server understood the request but refuses to authorize it. This can happen for various reasons, including the user not having the necessary permissions or having wrong credentials.
-- This can also sometimes be a call from a SIP spammer.
-
-**Actions**
-
-- Check the request credentials (e.g., username and password) and permissions.
-- Ensure the request is being sent to the correct server and endpoint.
-- If there are large amounts of requests with status 403 from the same IP - this IP should probably be blocked.
-
-### **404 Not Found**
-
-**Meaning**
-
-- This might be a call to a phone number that is not provisioned in the Voice Gateway database (Self-Service Portal).
-- If there are significant amount of these, this might can also be a SIP spam attempt.
-
-**Actions**
-- Please check the Carrier or Phone numbers configurations in the Self-Service-Portal. 
-- Verify the request URI provided in your Transfer node is correct. The issue may be due to a mistyped address or an outdated record.
-- A high volume of these SIP status codes could indicate a SIP spam attempt. Investigate further for troubleshooting and possible IP blocking.
-
-### **408 Request Timeout**
-
-**Meaning**
-
-- This indicates that the SIP endpoint was unresponsive. The server did not receive a complete request message within the time it was prepared to wait.
-
-**Actions**
-
-- This often indicates network issues or a problem with the server. Try sending the request again after some time or investigate network connectivity problems in a lower level. 
-- Check and compare Voice Gateway PCAP for a specific call with your provider's PCAP for that call.
-
-### **480 Temporarily Unavailable**
-
-**Meaning**
-
-- This code is usually returned if there is no `application` configured for an incoming call. 
-- This can be also be returned, if there are no more resources available to handle a call (system is at a maximum capacity).
-
-**Actions**
-
-- Check if an `application` is properly attached to the Phone number in the Self-Service Portal.
-- Retry after some time. If the issue persists, contact the callee by other means to confirm their availability.
-
-### **487 Request Terminated**
-
-**Meaning**
-
-- This is a call where the caller hung up before we connected them.
-
-**Actions**
-
-- No specific action needed if the termination was intentional. If unexpected, inspect the call flow for issues e.g faulty Code Nodes.
-
-### **488 Not Acceptable Here**
-
-**Meaning**
-
-- This indicates the incoming call requested a codec or a facility in the Session Description Protocol (SDP) that we do not support or sent a parameter that was not acceptable.
-
-**Actions**
-
-- Check the [codecs or any other session parameters](../installation/technical-capabilities.md) being used and ensure they are supported by both the caller and callee.
-
-### **500 Server Internal Error**
-
-**Meaning**
-
-- This indicates an application error of some kind. The server encountered an unexpected condition that prevented it from fulfilling the request. This is a server-side issue.
-
-**Actions**
-
-- Attempt the request later or contact the server administrator if the problem persists. E.g., if Voice Gateway responded with this code contact Customer Support, if it is your carrier responded with this code contact your provider.
-
-### **503 Service Unavailable**
-
-**Meaning**
-
-- This indicates we are not handling the call for a specific reason, which could be that the account is `inactive` or has reached its `max call limit` set.
-
-**Actions**
-
-- Contact Customer Support or your Customer Success Manager at Cognigy.
-
-### **603 Decline**
-
-**Meaning**
-
-- This could indicate that the callee's end system was contacted successfully but the user explicitly rejected the call. 
-- This could also indicate that we did not handle the call for a specific reason, which may include an issue connecting to the Voice Gateway endpoint.
-
-**Actions**
-
-- If it was a normal rejection of a call, no further action can be taken to establish the call. If necessary, try contacting the user through alternative means.
-- If this response was not expected, check your Self-Service Portal configurations of your Carrier as well as the [Alerts page](../webapp/alerts.md).
-- Check Cognigy AI logs for any error log messages that could indicate the root cause.
-
-
-If you cannot resolve your issue, please contact Cognigy Customer Support.
+# SIP Response Codes
+
+This page provides guidance on SIP response codes, their meanings, and potential actions to resolve issues, supporting you in troubleshooting voice agents.
+You can find these codes in Cognigy.AI [Logs](../../ai/resources/test/logs.md) of your Agent under `sip_status`, or in downloaded [PCAPs](../webapp/recent-calls.md#call-details) for specific calls.
+For troubleshooting, check the [Alerts](../webapp/alerts.md) page in the Self-Service Portal for any received alerts.
+
+| Code | Error                   | Description                                                                                                                                                                             | What to Do?                                                                                                                                                                                                                                                                                                                                                                                    |
+|------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 200  | OK                      | The call was successfully answered.                                                                                                                                                     | No specific actions are required.                                                                                                                                                                                                                                                                                                                                                              |
+| 202  | OK                      | The request has been accepted for processing, but the processing has not been completed.                                                                                                | No specific actions are required.                                                                                                                                                                                                                                                                                                                                                              |
+| 400  | Permission Denied       | The server refuses to authorize the request due to various reasons, including the user not having necessary permissions or having wrong credentials.                                    | - Check the request credentials (for example, user name and password) and permissions. <br>- Ensure the request is being sent to the correct server and endpoint. <br>- If there are a large number of requests with status 403 from the same IP, consider blocking the IP.                                                                                                                    |
+| 404  | Not Found               | A call to a phone number not set up in the Voice Gateway Self-Service Portal may indicate a SIP spam attempt.                                                                           | - Check the Carrier or Phone numbers configurations in the Self-Service-Portal. <br>- Verify the request URI provided in your Transfer Node is correct. The issue may be due to a mistyped address or an outdated record. <br>- Investigate further for troubleshooting and possible IP blocking.                                                                                              |
+| 408  | Request Timeout         | The SIP endpoint was unresponsive, and the server did not receive a complete request message within the time it was prepared to wait.                                                   | - This often indicates network issues or a problem with the server. Try sending the request again after some time or investigate network connectivity problems on a lower level. <br>- Check and compare Voice Gateway PCAP for a specific call with your provider's PCAP for that call.                                                                                                       |
+| 480  | Temporarily Unavailable | There is no [application](../webapp/applications.md) configured for an incoming call, or if there are no more resources available to handle a call (the system is at maximum capacity). | - Check if an `application` is properly attached to the Phone number in the Self-Service Portal. <br>- Retry after some time. If the issue persists, contact the callee by other means to confirm their availability.                                                                                                                                                                          |
+| 487  | Request Terminated      | A call is terminated by the caller before the connection is established.                                                                                                                | No specific action is needed if the termination was intentional. If unexpected, inspect the call Flow for issues, for example, faulty Code Nodes.                                                                                                                                                                                                                                              |
+| 488  | Not Acceptable Here     | The incoming call requested a codec or a feature in the Session Description Protocol (SDP) that the Voice Gateway does not support, or it provided an unacceptable parameter.           | Check the codecs or any other session parameters being used and ensure they are supported by both the caller and callee.                                                                                                                                                                                                                                                                       |
+| 500  | Server Internal Error   | The application error. The server encountered an unexpected condition that prevented it from fulfilling the request. This is a server-side issue.                                       | Attempt the request later or contact the server administrator if the problem persists. For example, if the Voice Gateway responded with this code, contact Customer Support. If your carrier responded with this code, contact your provider.                                                                                                                                                  |
+| 503  | Service Unavailable     | Voice Gateway is unable to process the call due to specific reasons, including an `inactive` account status or reaching the `maximum call limit`.                                       | Contact Customer Support or your Customer Success Manager at Cognigy.                                                                                                                                                                                                                                                                                                                          |
+| 603  | Decline                 | The callee's end system was contacted successfully but the user explicitly rejected the call, or there was an issue connecting to the Voice Gateway Endpoint.                           | - If it was a normal rejection of a call, no further action can be taken to establish the call. If necessary, try contacting the user through alternative means. <br>- If this response was not expected, check your Self-Service Portal configurations of your Carrier as well as the Alerts page. <br>- Check Cognigy AI logs for any error log messages that could indicate the root cause. |
+
+If you encounter any difficulties resolving your issue, contact [Cognigy technical support](../../help/get-help.md).
