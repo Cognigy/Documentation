@@ -143,7 +143,7 @@ The comparison is provided for source files in DOCX format.
 | Titles                    | Titles are omitted.                                                                                         | Titles are converted into headers of various levels. Some titles can be converted as simple text. |
 | Text Blocks               | Due to conversion challenges, certain text blocks may be excluded. The text is divided into equal segments. | The majority of the text is logically segmented and converted.                                    |
 | Lists                     | Bullet and numeral lists are not converted or are partially converted.                                      | Bullet and numeral lists are not converted or are partially converted.                            |
-| Tables                    | Not converted.                                                                                              | Tables are converted into markdown.                                                               |
+| Tables                    | Not converted.                                                                                              | Tables are converted.                                                                             |
 | Images and Graphics       | Not converted.                                                                                              | Not converted.                                                                                    |
 | Metadata                  | Metadata isn't included by default.                                                                         | The number of the source page is included by default.                                             |
 | Hyperlinks (URLs)         | Not converted.                                                                                              | Not converted.                                                                                    |
@@ -269,8 +269,8 @@ The comparison is provided for source files in PDF format.
 | Titles                    | Titles are omitted.                                                    | Titles are converted into headers of various levels.                                                                        |
 | Footers                   | Footers are converted as simple text.                                  | Not converted.                                                                                                              |
 | Text Blocks               | The text is divided into equal segments.                               | The text is converted and divided into logic segments.                                                                      |
-| Lists                     | Bullet and numeral lists are not converted or are partially converted. | Bullet and numeral lists are  converted into markdown.                                                                      |
-| Tables                    | Not converted.                                                         | Tables are converted into markdown.                                                                                         |
+| Lists                     | Bullet and numeral lists are not converted or are partially converted. | Bullet and numeral lists are converted.                                                                                     |
+| Tables                    | Not converted.                                                         | Tables are converted.                                                                                                       |
 | Images and Graphics       | Not converted.                                                         | Images and graphics are not converted, but their placeholders are marked as `<figure>![](figures/0)</figure>` in the chunk. |
 | Metadata                  | Metadata isn't included by default.                                    | The number of the source page is included by default.                                                                       |
 | Hyperlinks (URLs)         | Not converted.                                                         | Not converted.                                                                                                              |
@@ -349,7 +349,7 @@ In the case of the Default Chunk Strategy, the system splits this text into 4 eq
 #### New Strategy
 
 In the case of the New Chunk Strategy, the system splits this text into 4 logical chunks.
-Elements, such as various types of headers and tables, are converted into the md format. Each chunk has a metadata object that shows the number of the source page where this information was located.
+Elements, such as various types of headers and tables, are converted into Markdown format. Each chunk has a metadata object that shows the number of the source page where this information was located.
 
 ???+ note "New Chunk Splitting"
 
