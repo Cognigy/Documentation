@@ -56,10 +56,9 @@ This strategy is applied when `.preset_ca` is appended to the file name of an up
 
 The extracted text is presented in Markdown format in the Chunk editor.
 
-### Formats
+### Syntax Elements
 
-Examples of elements
-into which text can be transformed during content conversion from source files in DOCX or PDF formats.
+Examples of syntax elements into which text can be transformed during content conversion from source files in DOCX or PDF formats. Most of these elements are borrowed from the Markdown language.
 
 #### Headers
 
