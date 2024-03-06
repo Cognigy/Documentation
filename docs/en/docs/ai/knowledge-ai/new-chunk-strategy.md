@@ -15,7 +15,7 @@ resulting in more accurate answers, as compared to fixed-length chunking that is
  
 The new chunk strategy has the following advantages:
 
-- **Improved quality of responses**. Breaking down the text into blocks of meaning allows the virtual agent to more accurately understand the context and find the necessary information to formulate a response. This approach helps to enhance the quality of responses, as the virtual agent may only need to find one chunk to provide the correct answer.
+- **Improved quality of responses**. Breaking down the text into blocks of meaning allows the virtual agent to more accurately understand the context and find the necessary information to formulate a higher-quality response.
 - **Effective use of Markdown**. Markdown allows the virtual agent to recognize headers, tables, images, links, and differentiate them from a regular text. This approach adds an additional level of context, helping the virtual agent better understand the structure and organization of information in the text.
 - **Improved ability to reference the source**. Adding the page number of the source file to the metadata for each chunk can help track an information source in lengthy documents.
 
