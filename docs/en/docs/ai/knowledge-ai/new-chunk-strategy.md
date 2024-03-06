@@ -7,7 +7,10 @@ hidden: false
 
 # Knowledge AI: New Chunk Strategy
 
-The New Chunk Strategy is powered by [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence) and creates semantic chunks,
+!!! note
+    This feature is currently in Preview. We encourage you to try it out and provide us with feedback.
+
+The New Chunk Strategy is powered by [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/) and creates semantic chunks,
 resulting in more accurate answers, as compared to fixed-length chunking that is used by default.
  
 The new chunk strategy has the following advantages:
@@ -130,16 +133,20 @@ The metadata indicates that the chunk's text starts on source file page 1 and en
 
 ### DOCX
 
-The table compares two strategies, the default and the new one, by listing the elements that can be converted. The comparison is provided for source files in DOCX format.
+The table compares two strategies, the default and the new one, by listing the elements that can be converted.
+The comparison is provided for source files in DOCX format.
+
+!!! warning
+    Use Microsoft Word to save files in DOCX format to avoid unexpected results. Other programs, such as Google Docs, may not offer the same level of compatibility.
 
 | **Element**               | **Default Strategy**                                                                                        | **New Strategy**                                                                                   |
 |---------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
 | Titles                    | Titles are omitted.                                                                                         | Most titles are not converted or partially converted. Some titles can be converted as simple text. |
 | Text Blocks               | Due to conversion challenges, certain text blocks may be excluded. The text is divided into equal segments. | The majority of the text is logically segmented and converted.                                     |
 | Lists                     | Bullet and numeral lists are not converted or are partially converted.                                      | Bullet and numeral lists are not converted or are partially converted.                             |
-| Tables                    | Not converted.                                                                                              | Can be converted.                                                                                  |
+| Tables                    | Not converted.                                                                                              | Tables are converted into markdown.                                                                |
 | Images and Graphics       | Not converted.                                                                                              | Not converted.                                                                                     |
-| Metadata                  | Metadata isn't included by default.                                                                         | The number of the source page can be included.                                                     |
+| Metadata                  | Metadata isn't included by default.                                                                         | The number of the source page is included by default.                                              |
 | Hyperlinks (URLs)         | Not converted.                                                                                              | Not converted.                                                                                     |
 | Styling and Formatting    | Not converted.                                                                                              | Not converted.                                                                                     |
 | Formulae and Calculations | Not converted.                                                                                              | Only simple formulas are converted, including signs such as `*`, `-`, `=`, `+`.                    |
@@ -154,60 +161,103 @@ In the case of the Default Chunk Strategy, the system splits this text into 5 eq
 
     1.
     ```txt
-    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. 
-    VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is 
+    a sophisticated endeavor fraught with unique challenges. 
+    VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability 
+    of human speech and environmental interference.
     ```
     
     2.
     ```txt
-    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. 
+    For enterprises aiming to scale and perfect their voice-enabled services, 
+    these are not mere technicalities but critical pivots on the customer experience journey.
     ```
     
     3.
     ```txt
-    Recognizing this complex landscape, at Cognigy, we’re excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
+    Recognizing this complex landscape, at Cognigy, we’re excited to introduce the ultimate tool 
+    for developers and VUX designers in their quest for voice excellence: Call Tracing.
     ```
     
     4.
     ```txt
-    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. 
-    Now, Cognigy’s Call Tracing feature offers an actionable visualization of all activities taking place during the call, such as speech recognition and connections, 
+    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions,
+    user feedback, and basic audio playback. 
+    Now, Cognigy’s Call Tracing feature offers an actionable visualization of all activities taking place during the call, 
+    such as speech recognition and connections, 
     together with the call recording waveforms. 
     This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
     ```
     
     5.
     ```txt
-    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. 
+    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, 
+    giving professionals the ability to dissect and understand voice experiences at a granular level. 
     It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.
     ```
 
 #### New Strategy
 
-In the case of the New Chunk Strategy, the system splits this text into 5 logical chunks.
+In the case of the New Chunk Strategy, the system splits this text into 4 logical chunks.
 
 ???+ note "New Chunk Splitting"
 
     1.
     ```txt
-    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
+     Call Tracing: Unlock New Dimensions in VUX Optimization
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. 
+    VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. 
+    For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
+    Recognizing this complex landscape, at Cognigy, 
+    we’re excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
+    
+    {
+      "firstPage": "1",
+      "lastPage": "1"
+    }
     ```
     2.
     ```txt
-    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
+    # Visualizing the Unseen: How Call Tracing Changes the Game
+    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback.
+    Now, Cognigy’s Call Tracing feature offers an actionable visualization of all activities taking place during the call, 
+    such as speech recognition and connections, together with the call recording waveforms. 
+    This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
+    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, 
+    giving professionals the ability to dissect and understand voice experiences at a granular level. 
+    It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.
+    
+    {
+      "firstPage": "1",
+      "lastPage": "1"
+    }
     ```
     3.
     ```txt
-    Recognizing this complex landscape, at Cognigy, we’re excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
+    # Key Topics
+    | Topic | Description |
+    | Optimizing Response Timings | Identify silence and pauses; analyze call duration; uncover speech recognition latency. |
+    | Detecting and Resolving Overlapping Speech | Resolve speech overlaps; fine-tune settings for seamless interaction. |
+    | Monitoring Speech Quality | Highlight inconsistencies; troubleshoot for service quality. |
+    | Fine-tuning the ASR Model | Optimize speech recognition models; enhance recognition accuracy. |
+    
+    {
+      "firstPage": "1",
+      "lastPage": "1"
+    }
     ```
     4.
     ```txt
-    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. Now, Cognigy’s Call Tracing feature offers an actionable visualization of all activities taking place during the call, such as speech recognition and connections, together with the call recording waveforms. This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
-    ```
-    5.
-    ```txt
-    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. 
-    It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.
+    ## Conclusion
+    Cognigy’s Call Tracing uncovers nuanced expressions, crucial for enhancing user experiences.
+    Explore our documentation for insights on the Voice Gateway Self-Service Portal and Call Tracing.
+    
+    {
+      "firstPage": "1",
+      "lastPage": "1"
+    }
     ```
 
 ### PDF
@@ -221,7 +271,7 @@ The comparison is provided for source files in PDF format.
 | Footers                   | Footers are converted as simple text.                                  | Not converted.                                                                                                              |
 | Text Blocks               | The text is divided into equal segments.                               | The text is divided into logics segments.                                                                                   |
 | Lists                     | Bullet and numeral lists are not converted or are partially converted. | Bullet and numeral lists are  converted into markdown.                                                                      |
-| Tables                    | Not converted.                                                         | Tables are  converted into markdown.                                                                                        |
+| Tables                    | Not converted.                                                         | Tables are converted into markdown.                                                                                         |
 | Images and Graphics       | Not converted.                                                         | Images and graphics are not converted, but their placeholders are marked as `<figure>![](figures/0)</figure>` in the chunk. |
 | Metadata                  | Metadata isn't included by default.                                    | The number of the source page is included by default.                                                                       |
 | Hyperlinks (URLs)         | Not converted.                                                         | Not converted.                                                                                                              |
@@ -308,9 +358,14 @@ Elements, such as various types of headers and tables, are converted into the md
     ```txt
     Call Tracing: Unlock New Dimensions in VUX Optimization
     ===
-    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is a sophisticated endeavor fraught with unique challenges. VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability of human speech and environmental interference.
-    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
-    Recognizing this complex landscape, at Cognigy, we're excited to introduce the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
+    In the burgeoning field of voice technology, optimizing Voice User Experience (VUX) is 
+    a sophisticated endeavor fraught with unique challenges. 
+    VUX designers confront intricate variables from timing nuances and intonation accuracy to the unpredictability 
+    of human speech and environmental interference.
+    These factors often present hurdles that can transform an otherwise fluid dialogue into a disjointed exchange. 
+    For enterprises aiming to scale and perfect their voice-enabled services, these are not mere technicalities but critical pivots on the customer experience journey.
+    Recognizing this complex landscape, at Cognigy, we're excited to introduce 
+    the ultimate tool for developers and VUX designers in their quest for voice excellence: Call Tracing.
     
     
     {
@@ -322,8 +377,13 @@ Elements, such as various types of headers and tables, are converted into the md
     2.
     ```txt
     # Visualizing the Unseen: How Call Tracing Changes the Game
-    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. Now, Cognigy's Call Tracing feature offers an actionable visualization of all activities taking place during the call, such as speech recognition and connections, together with the call recording waveforms. This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
-    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.<figure>
+    Traditionally, understanding and monitoring voice interaction requires painstaking analysis of transcriptions, user feedback, and basic audio playback. 
+    Now, Cognigy's Call Tracing feature offers an actionable visualization of all activities taking place during the call, 
+    such as speech recognition and connections, together with the call recording waveforms. 
+    This powerful tool grants VUX designers an unparalleled view of the dynamics of voice interactions.
+    Event and soundwave visualization provides an analytical perspective that goes beyond the audio, giving professionals the ability to dissect and understand voice experiences at a granular level. 
+    It brings critical elements to the forefront that might not be immediately evident in transcriptions or basic audio playback.
+    <figure>
     ![](figures/0)
     </figure>
     
