@@ -13,7 +13,12 @@ Service Nodes are used to:
 
 You can use the following Service Nodes:
 
-- [HTTP Request](http-request.md) 
+- [Check Agent Availability](check-agent-availability.md)
+- [Close Handover](close-handover.md)
+- [GPT Conversation](gpt-conversation.md)
+- [Handover to Agent](handover-to-agent.md)
+- [HTTP Request](http-request.md)
+- [LLM Prompt](llm-prompt.md)
 - [MongoDB](mongo-db.md):
     - [Update Many](mongo-db.md#update-many)
     - [Find One](mongo-db.md#find-one)
@@ -22,14 +27,9 @@ You can use the following Service Nodes:
     - [Find](mongo-db.md#find)
     - [Update One](mongo-db.md#update-one)
     - [MongoDB Aggregate](mongo-db.md#mongodb-aggregate)
-- [My SQL](ms-sql.md):
+- [MS SQL](ms-sql.md):
     - [Run Transaction](ms-sql.md#run-transaction)
     - [Run SQL Query](ms-sql.md#run-query)
     - [Run StoredProcedure](ms-sql.md#run-stored-procedure)
-- [Check Agent Availability](check-agent-availability.md)
-- [Close Handover](close-handover.md)
-- [GPT Conversation](gpt-conversation.md)
-- [Handover to Agent](handover-to-agent.md)
-- [LLM Prompt](llm-prompt.md)
 - [Set Handover Inactivity](set-handover-inactivity.md)
 - [Trigger Function](trigger-function.md)
