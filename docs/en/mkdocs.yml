@@ -244,16 +244,17 @@ nav:
 
     - Analytics:
       - ai/nodes/analytics/overview.md
-      - ai/nodes/analytics/update-profile.md
+      - ai/nodes/analytics/activate-profile.md
+      - ai/nodes/analytics/blind-mode.md
+      - ai/nodes/analytics/complete-goal.md
       - ai/nodes/analytics/deactivate-profile.md
       - ai/nodes/analytics/delete-profile.md
-      - ai/nodes/analytics/activate-profile.md
       - ai/nodes/analytics/merge-profile.md
-      - ai/nodes/analytics/complete-goal.md
-      - ai/nodes/analytics/blind-mode.md
       - ai/nodes/analytics/overwrite-analytics.md
       - ai/nodes/analytics/request-rating.md
       - ai/nodes/analytics/set-rating.md
+      - ai/nodes/analytics/update-profile.md
+
     - Service:
       - ai/nodes/service/overview.md
       - ai/nodes/service/check-agent-availability.md
