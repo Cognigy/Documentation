@@ -646,6 +646,8 @@ nav:
   - Creating Outbound Calls:
     - voicegateway/creating-outbound-calls.md
   - References:
+    - SIP Response Codes:
+      - voicegateway/references/sip-response-codes.md
     - Voice Gateway Events:
       - voicegateway/references/events/overview.md
       - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
