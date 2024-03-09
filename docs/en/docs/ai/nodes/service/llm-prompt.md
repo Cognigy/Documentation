@@ -151,6 +151,11 @@ This will force the LLM Node to use the `claude-3-opus-20240229` model, even tho
 
 The same works for any other supported LLM provider. E.g., you could use the `gpt-4-1106-vision-preview` model on an OpenAI LLM Resource.
 
+See below for documentation of supported models:
+- [Anthropic Models](https://docs.anthropic.com/claude/docs/models-overview)
+- [OpenAI Models](https://platform.openai.com/docs/models)
+- [Aleph Alpha Models](https://docs.aleph-alpha.com/docs/introduction/model-card/)
+
 
 ## More Information
 
