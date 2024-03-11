@@ -18,7 +18,7 @@ As part of our ongoing efforts to rebrand and improve our product offerings, the
 
 ## Prerequisites
 
-- Live Agent Helm chart version 4.68.0 or higher is required.
+- Cognigy.AI Helm chart version 4.68.0 or higher is required.
 
 ## Pre-Migration Tasks
 
