@@ -19,6 +19,9 @@ Supported Endpoints have a configuration tab called `Handover Settings`. In ther
 - [Chatwoot](../handover-providers/chatwoot-handover.md)
 - [RingCentral Engage](../handover-providers/ringcentralengage-handover.md)
 - [Salesforce](../handover-providers/salesforce-handover.md)
+- [Genesys Cloud Guest Chat](../handover-providers/genesys-cloud-guest-chat.md)
+- [Genesys Cloud Open Messaging](../handover-providers/genesys-cloud-open-messaging.md)
+- [8x8](../handover-providers/8x8.md)
 
 The Endpoints that support handover are listed below:
 
