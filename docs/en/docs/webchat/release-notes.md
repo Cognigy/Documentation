@@ -1,10 +1,17 @@
 ---
 title: "Release Notes"
 slug: "webchat-release-notes"
-description: ""
+description: "Find the Cognigy Webchat release notes on GitHub and central Release Notes page."
 hidden: false
 ---
 
 # Webchat Release Notes
+
+Find the Webchat release notes on [GitHub](https://github.com/Cognigy/WebchatWidget/releases) and central Release Notes page.
+
+
+
+
+
 
 

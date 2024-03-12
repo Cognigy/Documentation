@@ -484,16 +484,23 @@ nav:
   - insights/glossary.md
   - Release Notes:
     - insights/release-notes/release-notes.md
-- Webchat Widget:
+- Webchat:
   - Overview:
-    - ai/endpoints/webchat/webchat.md
-  - ai/endpoints/webchat/supported-browsers.md
-  - ai/endpoints/webchat/deploy-webchat-endpoint.md
-  - ai/endpoints/webchat/webchat-features.md
-  - ai/endpoints/webchat/triggering-webchat-plugins.md
-  - ai/endpoints/webchat/integrated-demo-page.md
-  - Release Notes:
-    - ai/endpoints/webchat/release-notes.md
+    - webchat/overview.md
+  - Webchat v3:
+    - webchat/v3/overview.md
+    - webchat/v3/features.md
+    - webchat/v3/configuration.md
+    - webchat/v3/embedding.md
+  - Webchat v2:
+    - webchat/v2/overview.md
+    - webchat/v2/features.md
+    - webchat/v2/configuration.md
+    - webchat/v2/embedding.md
+  - webchat/migration.md
+  - webchat/plugins.md
+  - webchat/demo.md
+  - release-notes.md
 - AI Copilot:
   - Overview:
     - ai-copilot/overview.md
