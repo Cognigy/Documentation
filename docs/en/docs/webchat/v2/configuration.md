@@ -91,16 +91,25 @@ For more information on how to create and trigger plugins, refer to [Webchat Plu
 
 ### Webchat Behavior
 
+The Webchat Behavior settings offer features for initiating conversations that include starting with a text field, button click, or automatic message, with customization options available.
 
-| Parameter (main) |	Parameter (sub)	| Description |
-| --------------- | -- | -- |
-| Start Behavior	| Start Behavior <br>- Start with a Text Field<br>- Start with a Button<br>- Auto Send a Message to the virtual agent |	Start behavior when opening the Webchat. |
-|| Payload | The text that is sent into your Flow. |
-|| Display Text | Text to display as a simulated user input bubble when the virtual agent starts. |
-|| Button Title | The text to display on the Start Button. |
-| Additional Behavior | Message Delay | The amount of time to wait between sending virtual agent replies. Measured in milliseconds. |
-|| Focus Input after Postback | The message input field will receive focus after a Postback button or quick reply button is clicked. |
-|| Enable Connection Status Indicator | Whether to show a warning if the connection is lost during a conversation. The warning will disappear when the connection is re-established. |
+| Parameter      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Start Behavior | This setting allows you to define the initial action when initiating a new conversation with the AI Agent.You can select one of the following modes:<br>- Start with a Text Field - the conversation begins when an end user sends a message.<br>- Start with a Button - the conversation begins when an end user clicks the button that you configured.<br>- Auto Send a Message to the Bot - the conversation begins when the automated message that you configured is sent to the AI Agent. |
+| Text Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This feature allows you to customize the first message that initiates the conversation with the AI Agent, crafting the initial context and tone of the interaction. By customizing this opening message, you can ensure a purposeful and engaging start, aligning the conversation with your objectives from the very beginning.                                                        |
+| Data Payload   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**. This feature allows you to send the additional data to your Flow.                                                                                                                                                                                                                                                                                                                       |
+| Display Text   | This parameter is applicable to modes: **Start with a Button** and **Auto Send a Message to the Bot**.  This feature enables you to present a message as if it were entered by the user when the chat begins. It simulates a user input bubble, creating an immediate, engaging interaction.                                                                                                                                                                                                   |
+| Button Title   | This parameter is applicable to **Start with a Button** mode. This setting allows you to customize the text displayed on the Start Button, serving as the interactive prompt for users to begin their conversation with the AI Agent.                                                                                                                                                                                                                                                          |
+
+#### Additional Behavior
+
+Within the Additional Behavior settings, functionalities such as enhancing user experience and alerting about internet connection issues are available.
+
+| Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                           |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message Delay                      | The amount of time to wait between sending virtual agent replies. Measured in milliseconds.                                                                                                                                                                                                                                                                           |
+| Focus Input after Postback         | This setting ensures that after a Postback button or quick reply button is clicked, the Webchat immediately redirects focus back to the message input field. This function enhances usability by providing a smoother, streamlined user experience, allowing you to continue typing without having to manually click back into the text input field.                  |
+| Enable Connection Status Indicator | This setting, when enabled, shows a warning message if your internet connection is lost during a conversation with the AI agent. This ensures you're aware of any potential interruptions or delays in the chat conversation. The warning will automatically disappear once the internet connection is re-established, indicating that the chat can proceed normally. |
 
 ### Teaser Message Settings
 
