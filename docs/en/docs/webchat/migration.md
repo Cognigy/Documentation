@@ -11,10 +11,11 @@ hidden: false
 
 In the comparison table, learn about the key differences between Webchat version 2 and version 3.
 
-| Feature        | v2  | v3  |
-|----------------|-----|-----|
-| Endpoint Setup |     |     |
-| Embedding      |     |     |
+| Feature              | v2                                                         | v3                                                                 |
+|----------------------|------------------------------------------------------------|--------------------------------------------------------------------|
+| Plugin Compatibility | Compatible with all plugins from Cognigy plugin collection | May not Compatible with all plugins from Cognigy plugin collection |
+| Embedding            | Includes all settings that Webchat Endpoint has.           | Includes all settings that Webchat v3 Endpoint has.                |
+| Webchat Layout       | Standard settings for customizing webchat colors.          | Advanced set for customizing webchat colors
 
 ## How to Migrate
 
