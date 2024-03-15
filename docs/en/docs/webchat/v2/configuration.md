@@ -7,7 +7,7 @@ hidden: false
 
 # Webchat v2: Endpoint Configuration
 
-## Create a Webchat Endpoint
+## Create a Webchat v2 Endpoint
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select an Agent.
@@ -19,9 +19,9 @@ hidden: false
    3.3 Select a relevant Flow from the list.
 6. Click **Save**.
 
-## Generic Endpoint Settings
+## Configure General Settings
 
-Find out about the generic endpoint settings available with this endpoint on the following pages:
+The following General Endpoint settings that are available with this Endpoint:
 
 - [Endpoints Overview](../../ai/endpoints/overview.md)
 - [Data Protection & Analytics](../../ai/endpoints/data-protection-and-analytics.md)
@@ -30,17 +30,22 @@ Find out about the generic endpoint settings available with this endpoint on the
 - [Session Management](../../ai/endpoints/session-management.md)
 - [Handover Settings](../../ai/endpoints/handover-settings.md)
 - [Real Time Translation Settings](../../ai/endpoints/real-time-translation-settings.md)
+- [AI Copilot](../../ai-copilot/overview.md)
+- [File Storage](../../ai/endpoints/file-storage.md)
 
 !!! tip "Supports Inject & Notify"
      You can use the [Inject & Notify](../../ai/endpoints/inject-and-notify.md) functionality with this type of Endpoint.
 
 ## Configure Specific Settings
 
-You can configure almost everything about Webchat to personalize it just for your needs. This includes modifying the colors, adding functionality like file uploads and much more, so that you can present the Conversational AI that you have created in a very nice way. As soon as you have changed a setting, loading or reloading a Website with a Webchat pointing to this Endpoint will show the changes will already have taken effect.
+Customize your webchat to meet your specific needs.
+You can change the colors and add features like file uploads to make your virtual agent more effective.
+Any updates you make will be reflected instantly and seamlessly
+when you load or reload your Website with Webchat linked to the Endpoint.
 
 ### Webchat Layout
 
-The Webchat Layout settings has customization options, such as the title, color scheme, virtual agent and header logos, typing indicators, and input placeholder text.
+The Webchat Layout settings have customization options, such as the title, color scheme, virtual agent and header logos, typing indicators, and input placeholder text.
 
 | Parameter                | 	Description                                                              |
 |--------------------------|---------------------------------------------------------------------------|
@@ -120,62 +125,63 @@ Within the Additional Behavior settings, functionalities such as enhancing user 
 
 ### Unread Message Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-unread-message.png" width="100%" />
-  <figcaption>Unread Message Settings</figcaption>
-</figure>
+The Unread Messages settings help users stay informed about unread messages in Webchat. They include features such as displaying message counts, previews, and notification sounds for timely responses.
 
-| Parameter | Description |
-| -- | -- |
-| Enable Unread Message Title Indicator | Indicate the number of unread messages in the page title every 1000ms. |
-| Enable Unread Message Badge | The webchat shows a badge with the number of unread messages at the toggle button. |
-| Enable Unread Message Preview | The webchat shows a message bubble with the latest-retrieved virtual agent message. |
-| Enable Unread Message Sound Confirmation | Play a notification sound for each incoming unread message. |
+| Parameter                             | Description                                                                                                                                                                                                                                                                                                                  |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Unread Message Title Indicator | If this setting is turned on, it will show the number of unread messages in the browser tab title every 1000 milliseconds. This helps the user to keep track of messages that are yet to be read, ensuring no communication from the AI Agent is missed, especially when the user is multitasking and has several tabs open. |
+| Enable Unread Message Badge           | When this feature is enabled, a badge displaying the count of unread messages will appear on the Webchat toggle button. This ensures users are aware of any new messages or responses from the AI agent that they have yet to view, promoting timely and responsive interactions.                                            |
+| Enable Unread Message Preview         | If you toggle this setting on, the Webchat displays a preview bubble containing the newest message from the agent. This is helpful when the chat interface is minimized, as you can still get an idea of the most recent communication without having to open and read through the entire conversation.                      |
+| Enable Unread Message Sound           | This setting, when turned on, triggers a notification sound every time you receive a new unread message.                                                                                                                                                                                                                     |
 
 ### Conversation Rating Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-conversation-rating.png" width="100%" />
-  <figcaption>Conversation Rating Settings</figcaption>
-</figure>
+The Conversation Rating settings offer a chat rating widget where users can rate their experience and provide feedback.
+You can customize text prompts and confirmation messages ensuring a user-friendly feedback process.
 
-| Parameter | Description |
-| -- | -- |
-| Enable Rating Functionality | Select when a webchat user can give a rating. |
-| Rating Title Text | The title displayed in the rating dialog prompt. |
-| Rating Comment Text | The text is displayed above the comment field in the rating dialog prompt. |
-| Message History Rating Text | The text is displayed in the message history after giving a rating. A text is followed by the icon representing the rating. |
-| Message History Comment Text | The text is displayed in the message history after giving a rating, if there was a comment sent. A text is followed by the actual comment. |
+| Parameter                    | Description                                                                                                                                                                                                                                                                                |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Rating Functionality  | Activating this feature introduces a conversation rating mechanism in the chat options page, letting users rate and provide feedback on their chat experience. By enabling this feature, you can gather direct user feedback to continually improve the AI chat assistant's effectiveness. |
+| Rating Title Text            | This setting allows you to specify the text that would invite users to rate their chat experience. The default text is "Please rate your chat experience".                                                                                                                                 |
+| Rating Comment Text          | The text is displayed above the comment field in the rating dialog prompt.                                                                                                                                                                                                                 |
+| Message History Rating Text  | The text is displayed in the message history after giving a rating. A text is followed by the icon representing the rating.                                                                                                                                                                |
+| Message History Comment Text | The text is displayed in the message history after giving a rating, if there was a comment sent. A text is followed by the actual comment.                                                                                                                                                 |
 
 ### Demo Webchat Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-demo.png" width="100%" />
-  <figcaption>Demo Webchat Settings</figcaption>
-</figure>
+The Cognigy Demo Webchat lets you test integrations with different providers and preview your webchat's appearance before deployment. It's a valuable tool for ensuring your webchat functions and looks as expected prior to launch.
+For more information on how to use this feature, refer to [Demo Webchat](../demo.md).
 
-| Parameter | Description |
-| -- | -- |
-| Enable Demo Webchat | Enables or disables the integrated Demo Webchat for this Endpoint. |
-| Enable Speech-to-Text | Toggle whether the Webchat should feature a microphone button. |
-| Enable Text-to-Speech | Toggle whether the Webchat should read all virtual agent messages aloud. |
-| Background Image | The image that will be displayed behind the Webchat. |
-| Center Webchat | Toggle to `Yes` when the Webchat should be centered and toggle to `No` for locating in the bottom-right corner.|
+### Business Hours
+
+The Business Hours settings offer management of business hours in Webchat. They allow you to restrict Webchat availability by specifying behavior outside business hours, customize messages, set the timezone, and define operational days.
+
+| Parameter                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Business Hours            | When this setting is enabled, the Webchat widget will be available only during the specified business hours. This ensures users that support or assistance through live chat is available during those hours. If a user attempts to engage in chat outside of these hours, you can choose what appears: the Webchat can be hidden, disabled, or present a message informing the user about the non-business hours. This allows companies to effectively manage their customer support and align with their operational timings.                                     |
+| Business Hours Mode              | Select the behavior if the bot is called out of business hours. Choose one of the following modes:<br>- Inform users about calling out of business hours: Users will receive a message in the Webchat interface informing them that they are contacting the bot outside of business hours.<br>- Hide the Webchat Widget: The chat widget will be completely hidden from users outside of business hours.<br>- Disable the Webchat Widget: The chat widget will be visible but disabled, preventing users from interacting with the bot until business hours resume. |
+| Business Hours Information Text  | The parameter is applicable to the following modes: **Inform users about calling out of business hours** and **Disable the Webchat Widget**. The text that will be displayed to users during out-of-business hours.                                                                                                                                                                                                                                                                                                                                                 |
+| Business Hours Information Title | The parameter is applicable to **Inform users about calling out of business hours** mode. The title that will be displayed to users during out-of-business hours.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Timezone                         | The timezone used to calculate the office hours offset.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Start Time                       | Indicates the beginning of the bot's availability each day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| End Time                         | Indicates the end of the bot's availability each day.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| Day of the Week                  | Indicates the operational days for the bot.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+
+### Maintenance
+
+The Maintenance settings offer activating maintenance mode in a chat service, including notification, disabling, or hiding options. It also allows for the customization of maintenance-related messages displayed to users.
+
+| Parameter                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enable Maintenance            | Activating this option will place the chat endpoint into maintenance mode. This setting is ideal for performing updates, testing new features, or conducting behind-the-scenes work without affecting the user experience.                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Maintenance Mode              | Select the behavior of the maintenance mode:<br> - **Inform Users About Maintenance Mode** - keeps the chat visible, displaying a custom message about the maintenance. Best for transparency with users, maintaining engagement without full service.<br>**Disable the Webchat Widget** - removes the chat interface from the site or app during maintenance. Best for major updates where functionality could be impacted, avoiding user confusion.<br>**Hide the Webchat Widget** - temporarily hides the chat widget, allowing for quick accessibility post-maintenance without a page reload. Best for short or frequent maintenance periods for a quick return to functionality. |
+| Maintenance Information Text  | This parameter is applicable to modes: **Inform users about maintenance mode** and **Disable the Webchat Widget**.<br>The text that will be displayed to users during Maintenance Mode. It allows for a customizable message to inform users about the maintenance activity or any other relevant information.                                                                                                                                                                                                                                                                                                                                                                         |
+| Maintenance Information Title | This parameter is applicable to **Inform users about maintenance mode**.<br>The title that will be displayed to users during Maintenance Mode. It's used to briefly describe the nature of the maintenance or to provide a succinct message to the users.                                                                                                                                                                                                                                                                                                                                                                                                                              |
 
 ### Webchat Custom Settings
 
-<figure>
-  <img class="image-center" src="{{config.site_url}}ai/endpoints/images/20833-custom.png" width="100%" />
-  <figcaption>Webchat Custom Settings</figcaption>
-</figure>
-
-This field can be used to configure additional settings not available in the GUI. These settings override GUI settings. Entering malformed JSON might result in crashing the webchat, so use it with caution and at own risk.
-
-## File Storage
-
-[![Version badge](https://img.shields.io/badge/Added in-v4.45-blue.svg)](../../../release-notes/4.45.md)
-
-{! _includes/ai/file-storage.md !}
+The Webchat Custom settings let you adjust the appearance and behavior of a webchat beyond the standard options.
+You can use JSON format for customizations. Note that if the JSON is wrong, the webchat might crash.
 
 ## More Information
 

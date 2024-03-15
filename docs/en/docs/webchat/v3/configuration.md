@@ -7,19 +7,42 @@ hidden: false
 
 # Webchat v3: Endpoint Configuration
 
-## Create a Webchat Endpoint
+## Create a Webchat v3 Endpoint
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select an Agent.
 3. In the left-side **Agent** menu, select **Deploy > Endpoints**.
 4. On the **Endpoints** page, click **+ New Endpoint**.
 5. In the **New Endpoint** section, do the following:
-   3.1 Select the **Webchat** Endpoint type.
+   3.1 Select the **Webchat (v3)** Endpoint type.
    3.2 Add a unique name.
    3.3 Select a relevant Flow from the list.
 6. Click **Save**.
+7. On the **Endpoint Editor** page, 
 
 ## Configure General Settings
+
+The following General Endpoint settings that are available with this Endpoint:
+
+- [Endpoints Overview](../../ai/endpoints/overview.md)
+- [Data Protection & Analytics](../../ai/endpoints/data-protection-and-analytics.md)
+- [Transformer Functions](../../ai/endpoints/transformers/transformers.md)
+- [NLU Connectors](../../ai/resources/build/nlu-connectors.md)
+- [Session Management](../../ai/endpoints/session-management.md)
+- [Handover Settings](../../ai/endpoints/handover-settings.md)
+- [Real Time Translation Settings](../../ai/endpoints/real-time-translation-settings.md)
+- [AI Copilot](../../ai-copilot/overview.md)
+- [File Storage](../../ai/endpoints/file-storage.md)
+
+!!! tip "Supports Inject & Notify"
+You can use the [Inject & Notify](../../ai/endpoints/inject-and-notify.md) functionality with this type of Endpoint.
+
+## Configure Specific Settings
+
+Customize your webchat to meet your specific needs.
+You can change the colors and add features like file uploads to make your virtual agent more effective.
+Any updates you make will be reflected instantly and seamlessly
+when you load or reload your Website with Webchat linked to the Endpoint.
 
 ## Configure Specific Settings
 
@@ -253,7 +276,12 @@ The Privacy Notice settings add privacy notices to the chat interface. It includ
 
 ## Advanced Settings
 
+The Advanced settings offer customization features like adding watermarks and activating maintenance mode for transparent communication during updates. Webchat Custom Settings further enhance customization by allowing specific UI adjustments and feature integrations through JSON formatting.
+
 ### Watermark
+
+The Watermark settings
+users to personalize their chat interface with a watermark that suits their branding or platform, enhancing recognition and customization options
 
 | Parameter      | Description                                                                                                                                                                                                                                                                               |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -273,6 +301,26 @@ The Maintenance settings offer activating maintenance mode in a chat service, in
 
 ### Webchat Custom Settings
 
+The Webchat Custom settings let you adjust the appearance and behavior of a webchat beyond the standard options.
+You can use JSON format for customizations. Note that if the JSON is wrong, the webchat might crash.
+
+The Webchat Custom settings are used:
+
+- To overwrite existing UI values.
+- To add values from embedding files not present in the GUI.
+- To specify parameters for your custom Webchat version in the Endpoint settings.
+- To utilize features from a newer Cognigy.AI version when using an older one.
+
+JSON example:
+
+```JSON
+{
+   "colors": {
+      "primaryColor": "red",
+      "backgroundColor": "red"
+   }
+}
+```
 
 ### Webchat Plugins
 
@@ -282,3 +330,5 @@ For more information on how to create and trigger plugins, refer to [Webchat Plu
 
 ## Demo Webchat Settings
 
+The Cognigy Demo Webchat lets you test integrations with different providers and preview your webchat's appearance before deployment. It's a valuable tool for ensuring your webchat functions and looks as expected prior to launch.
+For more information on how to use this feature, refer to [Demo Webchat](../demo.md).

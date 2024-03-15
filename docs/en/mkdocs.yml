@@ -487,6 +487,8 @@ nav:
 - Webchat:
   - Overview:
     - webchat/overview.md
+  - Getting Started:
+    - webchat/getting-started.md
   - Webchat v3:
     - webchat/v3/overview.md
     - webchat/v3/features.md
