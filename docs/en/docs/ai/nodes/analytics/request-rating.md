@@ -13,7 +13,7 @@ hidden: false
 ## Description
 <div class="divider"></div>
 
-This Node prompts end users to provide feedback or rate their conversation experience using a rating widget in the chat.
+This Node prompts end users to give feedback or rate their conversation experience using a rating widget in the chat.
 The Node is commonly used at the end of a Flow to collect final feedback from conversations with either virtual or human agents.
 This Node is compatible with Cognigy Webchat.
 
