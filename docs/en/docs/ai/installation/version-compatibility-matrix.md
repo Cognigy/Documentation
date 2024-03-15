@@ -38,7 +38,8 @@ such as Kubernetes, MongoDB, and Redis.
 | 4.67                                        | 1.19-1.26  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
 | 4.68                                        | 1.19-1.27  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
 | 4.69                                        | 1.19-1.27  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
-| 4.70                                        | 1.19-1.27  | 5.0     | 7.0[^***]                | 2.10    | 3.9      | 3.9 or higher |
+| 4.70                                        | 1.19-1.27  | 5.0     | 7.2[^***]                | 2.10    | 3.9      | 3.9 or higher |
+| 4.71                                        | 1.19-1.27  | 5.0     | 7.2[^***]                | 2.10    | 3.9      | 3.9 or higher |
 
 [^*]: Stand-alone deployment.
 
@@ -51,5 +52,5 @@ such as Kubernetes, MongoDB, and Redis.
 Version Compatibility Matrix:
 
 - [Live Agent](../../live-agent/installation/deployment/version-compatibility-matrix.md)
-- [Agent Assist Workspace](../../ai-copilot/installation/version-compatibility-matrix.md)
+- [AI Copilot (4.64 and earlier versions)](../../ai-copilot/installation/version-compatibility-matrix.md)
 - [Voice Gateway](../../voicegateway/installation/version-compatibility-matrix.md)

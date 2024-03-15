@@ -19,7 +19,9 @@ The **Genesys** Endpoint allows connecting virtual agent to the [Genesys Cloud C
 - You need to have an account in [Genesys Cloud](https://apps.mypurecloud.de/).
 - Activate the Genesys Endpoint on the Cognigy side:
     - If you have a shared or dedicated SaaS installation, contact Cognigy technical support.
-    - If you have an on-premise installation, specify the following feature flag: `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Endpoint for all organizations in your installation, use `*` instead of a list of organizations.
+    - If you have an on-premise installation, specify the following feature flags: 
+        - `FEATURE_USE_GENESYS_BOT_CONNECTOR_ENDPOINT_WHITELIST="organisation1,organisation2"`. To enable the Genesys Endpoint for all organizations in your installation, use `*` instead of a list of organizations.
+        - `FEATURE_ENABLE_AGENT_ASSIST_WORKSPACE_GENESYS_CREDENTIALS_WHITELIST="organisation1,organisation2"`. Add this feature flag to use Genesys [Notifications APIs](https://developer.genesys.cloud/notificationsalerts/notifications/notifications-apis) with AI Copilot. To enable this feature for all organizations within the Genesys Endpoint in your installation, use `*` instead of a list of organizations.
 
 ## Generic Endpoint Settings
 

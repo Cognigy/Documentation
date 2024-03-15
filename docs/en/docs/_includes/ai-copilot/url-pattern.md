@@ -9,4 +9,4 @@ Where:
 
 For example:
 
-`https://agent-assist-trial.cognigy.ai/?sessionId=session-17738489-e767-4d47-b669-cb0dd2e899e0&userId=52476cc5-710c-40db-8108-e99109f45d91&URLToken=a4d5c86c98f27730311591f28d194510e05ffed30ca148e3344970defd418e7d`
+`https://ai-copilot-trial.cognigy.ai/?sessionId=session-17738489-e767-4d47-b669-cb0dd2e899e0&userId=52476cc5-710c-40db-8108-e99109f45d91&URLToken=a4d5c86c98f27730311591f28d194510e05ffed30ca148e3344970defd418e7d`

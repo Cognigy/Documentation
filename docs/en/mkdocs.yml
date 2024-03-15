@@ -55,6 +55,8 @@ nav:
   - de: /de/
 - Release Notes:
   - release-notes/release-notes.md
+  - 4.71:
+    - release-notes/4.71.md
   - release-notes/4.70.md
   - 4.69:
     - release-notes/4.69.md
@@ -242,16 +244,17 @@ nav:
 
     - Analytics:
       - ai/nodes/analytics/overview.md
-      - ai/nodes/analytics/update-profile.md
+      - ai/nodes/analytics/activate-profile.md
+      - ai/nodes/analytics/blind-mode.md
+      - ai/nodes/analytics/complete-goal.md
       - ai/nodes/analytics/deactivate-profile.md
       - ai/nodes/analytics/delete-profile.md
-      - ai/nodes/analytics/activate-profile.md
       - ai/nodes/analytics/merge-profile.md
-      - ai/nodes/analytics/complete-goal.md
-      - ai/nodes/analytics/blind-mode.md
       - ai/nodes/analytics/overwrite-analytics.md
       - ai/nodes/analytics/request-rating.md
       - ai/nodes/analytics/set-rating.md
+      - ai/nodes/analytics/update-profile.md
+
     - Service:
       - ai/nodes/service/overview.md
       - ai/nodes/service/check-agent-availability.md
@@ -617,6 +620,8 @@ nav:
     - voicegateway/overview.md
   - Getting Started:
     - voicegateway/getting-started.md
+  - Technical Capabilities:
+    - voicegateway/technical-capabilities.md
   - Installation & Configuration:
     - voicegateway/installation/overview.md
     - Browser Requirements:
@@ -641,6 +646,8 @@ nav:
       - voicegateway/webapp/carriers.md
     - Speech Services:
       - voicegateway/webapp/speech-services.md
+      - Streaming:
+          - voicegateway/webapp/streaming.md
     - Phone Numbers:
       - voicegateway/webapp/phone-numbers.md
     - Outbound Call Routing:
@@ -648,6 +655,8 @@ nav:
   - Creating Outbound Calls:
     - voicegateway/creating-outbound-calls.md
   - References:
+    - SIP Response Codes:
+      - voicegateway/references/sip-response-codes.md
     - Voice Gateway Events:
       - voicegateway/references/events/overview.md
       - voicegateway/references/events/ANSWERING_MACHINE_DETECTION.md
