@@ -105,7 +105,7 @@ To test your virtual agent via Demo Webchat, follow these steps:
    <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/agent-reply.png" width="100%" />
     </figure>
-5. When you send your reply, the virtual agent asks you to provide feedback on the Chat Options page. In the upper-right corner of the page, click ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
+5. When you send your reply, the virtual agent asks you to give feedback on the Chat Options page. In the upper-right corner of the page, click ![vertical-ellipsis](../assets/icons/vertical-ellipsis.svg).
    <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/finish-conversation.png" width="100%" />
     </figure>
@@ -113,13 +113,12 @@ To test your virtual agent via Demo Webchat, follow these steps:
    <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/feedback-sent.png" width="100%" />
     </figure>
-7. After submitting feedback, a notification about the sent message will appear at the top of the window. The user can provide feedback an unlimited number of times. 
- 
-  <figure>
+7. After submitting feedback, a notification about the sent message will appear at the top of the window. The user can give feedback an unlimited number of times.
+   <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/feedback-confirmed.png" width="100%" />
-  </figure>
+   </figure>
 
-You can return to the conversation you started and view previous conversations on the homepage. For navigation, use the button **<** in the upper-left corner of the chat.
+You can return to the conversation you started and view earlier conversations on the homepage. For navigation, use the button **<** in the upper-left corner of the chat.
 
 ## What's Next?
 
