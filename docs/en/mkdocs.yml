@@ -505,7 +505,7 @@ nav:
   - webchat/migration.md
   - webchat/plugins.md
   - webchat/demo.md
-  - release-notes.md
+  - webchat/release-notes.md
 - AI Copilot:
   - Overview:
     - ai-copilot/overview.md

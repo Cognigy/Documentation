@@ -11,7 +11,7 @@ The Webchat 3 key features offer comprehensive customization options, including 
 
 ## Customization  
 
-Customization includes a comprehensive suite of features that bolster your brand's presence and enhances user accessibility. Customize the chat interface with your brand’s title and logo, alongside distinct avatars for both virtual and human agents and adjust the color scheme across various elements. Accessibility is prioritized with Text-to-Speech and Speech-to-Text functionalities. Starting behaviour customization sets the tone for engagement, allowing for a tailored initial interaction, such as a greeting message or a start button. Operational settings, including business hours, ensure users are clearly informed about the availability of support. Collectively, these customization options create personalized and efficient webchat experience that aligns closely with your operational requirements and brand image.
+Customization includes a comprehensive suite of features that bolster your brand’s presence and enhances user accessibility. Customize the chat interface with your brand’s title and logo, alongside distinct avatars for both virtual and human agents and adjust the color scheme across various elements. Accessibility is prioritized with Text-to-Speech and Speech-to-Text functionalities. Starting behaviour customization sets the tone for engagement, allowing for a tailored initial interaction, such as a greeting message, or a start button. Operational settings, including business hours, ensure users are clearly informed about the availability of support. Collectively, these customization options create personalized and efficient webchat experience that aligns closely with your operational requirements and brand image.
 
 ## Home Screen
 
@@ -27,7 +27,7 @@ The Conversation Starters Feature can be enabled in the Home Screen Settings and
 
 ### Previous Conversations
 
-The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the AI agent directly from the Webchat home screen. It includes options to customize the 'Previous Conversations' button text and the header of the conversations screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
+The Previous Conversations Feature offers a straightforward way for users to access their past dialogues with the AI agent directly from the Webchat home screen. It includes options to customize the 'Previous Conversations' button text, and the header of the conversation screen, enriching user experience by ensuring continuity and easy reference to previous interactions.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/previous-conversations.png" width="100%" />
@@ -69,7 +69,7 @@ The Privacy Notice Feature is essential for ensuring user trust and compliance b
 
 ### Quick Replies
 
-Using Quick Replies, you can help your users advancing in a conversation by providing example phrases which would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
+Using Quick Replies, you can help your users advancing in a conversation by providing example phrases that would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/quick-replies.png" width="100%" />
@@ -142,7 +142,7 @@ If you need to provide navigation options for users, but do not need the rich st
 ### Date Picker
 
 Anytime your Bot asks for a date input via the Webchat, it will let users select that Date through an interactive Date Picker.
-At first, it will present the user a button which indicates the selection of a date.
+At first, it will present the user a button that indicates the selection of a date.
 
 When clicked, it will open a full-screen overlay for the Webchat. The user can now pick a date based on constraints you defined in the bot.# 
 

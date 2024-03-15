@@ -17,7 +17,7 @@ Embedding Webchat v3 into your website allows you to provide a conversational in
 
 ## Add the Embedding HTML
 
-Сopy the HTML code from the endpoint associated with your virtual agent, which you want to deploy on your website:
+Copy the HTML code from the endpoint associated with your virtual agent, which you want to deploy on your website:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select an Agent.
@@ -112,6 +112,6 @@ Customize Webchat further to align with your brand identity and meet specific in
 
 - [Webchat API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
 - [CSS Customization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
-- [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md). Learn how to implement an ongoing Webchat experience across page navigations.
+- [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md). Learn how to implement an ongoing Webchat experience across page navigation.
 - [Analytics API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
 - [Custom Avatars](https://github.com/Cognigy/WebchatWidget/blob/master/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.

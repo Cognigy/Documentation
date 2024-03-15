@@ -9,7 +9,7 @@ hidden: false
 
 ## Quick Replies
 
-Using Quick Replies, you can help your users advancing in a conversation by providing example phrases which would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
+Using Quick Replies, you can help your users advancing in a conversation by providing example phrases that would fit as a reply. By clicking a Quick Reply, the user will send a pre-configured message defined by you.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/endpoints/images/495f9cb-Screenshot_from_2019-12-09_14-55-49.png" width="100%" />
@@ -73,7 +73,7 @@ If you need to provide navigation options for users, but do not need the rich st
 
 Anytime your Bot asks for a date input via the Webchat, it will let users select that Date through an interactive Date Picker.
 
-At first, it will present the user a button which indicates the selection of a date.
+At first, it will present the user a button that indicates the selection of a date.
 
 
 <figure>

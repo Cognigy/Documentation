@@ -185,7 +185,7 @@ You can use JSON format for customizations. Note that if the JSON is wrong, the 
 
 ## More Information
 
-- [Cognigy Webchat]({{config.site_url}}ai/endpoints/webchat/webchat/)
-- [Webchat Features ]({{config.site_url}}ai/endpoints/webchat/webchat-features/)
-- [Triggering Webchat Plugins ]({{config.site_url}}ai/endpoints/webchat/triggering-webchat-plugins/)
-- [Integrated Demo Page ]({{config.site_url}}ai/endpoints/webchat/integrated-demo-page/)
+- [Cognigy Webchat](overview.md)
+- [Webchat Features ](features.md)
+- [Webchat Plugins ](../plugins.md)
+- [Demo Page](../demo.md)
