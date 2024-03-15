@@ -39,7 +39,7 @@ To build a virtual agent, follow these steps:
 7. In the Say Node editor, go to the Text field and enter the following sentences: `The Cognigy Headquarters is located in Düsseldorf, Germany. Is there anything else I can help you with?`
 8. Click **Save Node**.
 9. Below the Say Node, add the second one.
-10. In the second Say Node, set up the following parameters:
+10. In the second Say Node, set up the following parameters:<br>
     10.1. From the **Question Type** list, select **Gallery**.<br>
     10.2. Click **Add Card**.<br>
     10.3. Click an image card.<br>
@@ -63,12 +63,12 @@ To create a Webchat Endpoint v3, follow these steps:
 
 1. In the left-side **Agent** menu, select **Deploy > Endpoints**.
 2. On the **Endpoints** page, click **+ New Endpoint**.
-3. In the **New Endpoint** section, do the following:
+3. In the **New Endpoint** section, do the following:<br>
    3.1. Select the **Webchat (v3)** Endpoint type.<br>
    3.2. Add a unique name.<br>
    3.3. Select a Flow that you created on the [previous step](#build-a-flow).<br>
 4. Click **Save**.
-5. Customize the Webchat settings within the Endpoint:
+5. Customize the Webchat settings within the Endpoint:<br>
    5.1. Go to the Home Screen settings.<br>
    5.2. In the **Change Welcome Text** field, enter the following text: `Welcome Cognigy User! How can we help you?`.<br>
    5.3. In the Conversation Starters section, activate **Enable Conversation Starters** and click **Add**.<br>
@@ -92,11 +92,11 @@ Once all the webchat settings are configured, proceed to test the virtual agent.
 
 To test your virtual agent via Demo Webchat, follow these steps:
 
-1. In the upper-right corner of the Endpoint Editor settings, select **Open Demo Webchat**. A Home screen of Webchat v3 will be opened.
+1. In the upper-right corner of the Endpoint Editor settings, select **Open Demo Webchat**. A Home screen of Webchat v3 will be opened. 
+2. Click the **I need technical Support** button that triggers the conversation with the virtual agent.
     <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/home-screen.png" width="100%" />
     </figure>
-2. Click the **I need technical Support** button that triggers the conversation with the virtual agent.
 3. Reply to the virtual agent with the following message: `Hi! I'd like to know where the Cognigy Headquarters is located`.
    <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/start-conversation.png" width="100%" />
@@ -113,10 +113,13 @@ To test your virtual agent via Demo Webchat, follow these steps:
    <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/feedback-sent.png" width="100%" />
     </figure>
-7. After submitting feedback, a notification about the sent message will appear at the top of the window. The user can provide feedback an unlimited number of times. Additionally, you can return to the conversation you started and view previous conversations on the homepage. For navigation, use the button **<** in the upper-left corner of the chat.
+7. After submitting feedback, a notification about the sent message will appear at the top of the window. The user can provide feedback an unlimited number of times. 
+ 
   <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/feedback-confirmed.png" width="100%" />
   </figure>
+
+You can return to the conversation you started and view previous conversations on the homepage. For navigation, use the button **<** in the upper-left corner of the chat.
 
 ## What's Next?
 
