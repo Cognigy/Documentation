@@ -7,6 +7,9 @@ hidden: false
 
 # Migration From v2 to v3
 
+The page includes a comparative table outlining the key changes between chat versions to assist you in making migration decisions. 
+Additionally, there is a step-by-step guide for moving to the new version. When making your decision, keep in mind that Webchat v3 is in the preview stage, which may affect its stability and feature completeness compared to stable versions.
+
 ## Feature Comparison
 
 In the table, learn about the key differences between Webchat version 2 and version 3.
@@ -15,7 +18,7 @@ Features that are not available for any of the versions are marked as N/A (Not a
 | Feature                | v2                                                                          | v3                                                                                                                                                                                           |
 |------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Webchat Design         | Basic design requiring additional CSS customization.                        | Enhanced design aligned with contemporary design principles and trends.                                                                                                                      |
-| Plugin Compatibility   | Compatible with all plugins from Cognigy plugin collection                  | May not Compatible with all plugins from Cognigy plugin collection                                                                                                                           |
+| Plugin Compatibility   | Compatible with all plugins from Cognigy plugin collection.                 | May not Compatible with all plugins from Cognigy plugin collection.                                                                                                                          |
 | Embedding              | Includes all settings that Webchat Endpoint has.                            | Includes all settings that Webchat v3 Endpoint has.                                                                                                                                          |
 | Demo Webchat           | Standard Demo Webchat.                                                      | Updated Demo Webchat according to the new Webchat v3 interface.                                                                                                                              |
 | Endpoint Settings Menu | Basic menu with limited navigation.                                         | Updated menu with organized sections for easier navigation.                                                                                                                                  |
@@ -39,8 +42,8 @@ For a smooth migration, follow these steps:
     - Replace the old bundle link with a new bundle for Webchat v3.
     - Within the `initWebchat()` function replace the old Endpoint Config URL with a new Webchat v3 Endpoint Config URL.
     - If you use Webchat settings in the `initWebchat()` function, replace them with the [new ones](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#client-side-configuration) according to Webchat v3 Endpoint settings.
-5. Locally build the Webchat and verify that everything functions as expected. 
-6. Publish the webchat on your website.
+5. Locally build Webchat and verify that everything functions as expected. 
+6. Publish Webchat on your website.
 
 ## More Information
 
