@@ -5,29 +5,45 @@ description: ""
 hidden: false
 ---
 
-# Migration from v2 to v3
+# Migration From v2 to v3
 
 ## Feature Comparison
 
-In the comparison table, learn about the key differences between Webchat version 2 and version 3.
+In the table, learn about the key differences between Webchat version 2 and version 3.
+Features that are not available for any of the versions are marked as N/A (Not applicable).
 
-| Feature                | v2                                                         | v3                                                                                                                                                          |
-|------------------------|------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Webchat Design         | Initial design requiring additional UI/UX customization    | Enhanced webchat design aligned with contemporary design principles and trends.                                                                             |
-| Plugin Compatibility   | Compatible with all plugins from Cognigy plugin collection | May not Compatible with all plugins from Cognigy plugin collection                                                                                          |
-| Embedding              | Includes all settings that Webchat Endpoint has.           | Includes all settings that Webchat v3 Endpoint has.                                                                                                         |
-| Demo Webchat           | Standard Demo Webchat                                      | Updated Demo Webchat according to the new Webchat v3 interface.                                                                                             |
-| Endpoint Settings Menu | Basic menu with limited navigation                         | Updated menu with organized sections for easier navigation.                                                                                                 |
-| Webchat Layout         | Standard set for customizing Webchat colors.               | Advanced set for customizing Webchat colors.                                                                                                                |
-| Conversation Starters  | Not Applicable.                                            | You can use conversation starters to engage visitors with a teaser message, either as an introduction on the homepage.                                      |
-| Conversation Rating    | The rating is displayed directly on the agent chat page.   | The rating is displayed on a separate page in the chat options, allowing users to continue the conversation and evaluate it at any time during the session. |
+| Feature                | v2                                                                          | v3                                                                                                                                                                                           |
+|------------------------|-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Webchat Design         | Basic design requiring additional CSS customization.                        | Enhanced design aligned with contemporary design principles and trends.                                                                                                                      |
+| Plugin Compatibility   | Compatible with all plugins from Cognigy plugin collection                  | May not Compatible with all plugins from Cognigy plugin collection                                                                                                                           |
+| Embedding              | Includes all settings that Webchat Endpoint has.                            | Includes all settings that Webchat v3 Endpoint has.                                                                                                                                          |
+| Demo Webchat           | Standard Demo Webchat.                                                      | Updated Demo Webchat according to the new Webchat v3 interface.                                                                                                                              |
+| Endpoint Settings Menu | Basic menu with limited navigation.                                         | Updated menu with organized sections for easier navigation.                                                                                                                                  |
+| Webchat Layout         | Standard set for customizing Webchat colors.                                | Advanced set for customizing Webchat colors.                                                                                                                                                 |
+| Conversation Starters  | N/A; there is a simplified alternative, the Persistent Menu.                | You can use conversation starters to engage visitors with a teaser message, either as an introduction on the home screen.                                                                    |
+| Teaser Message         | Simplified version with the option to specify only the Teaser Message Text. | Enhanced Teaser messages with ability to add Conversation Starters.                                                                                                                          |
+| Conversation Rating    | The rating is displayed directly on the agent chat page.                    | The rating is displayed on a separate page in the chat options, allowing users to continue the conversation and evaluate it at any time during the session.                                  |
+| Chat Options screen    | N/A                                                                         | Implemented a new Chat Options screen offering the ability to modify the page title, add quick replies, enhance conversation rating, and include a footer.                                   |
+| Privacy Notice screen  | N/A                                                                         | Added the option to include a privacy notice screen containing notice text, title, submit button, and references to the privacy policy document.                                             |
+| Home screen            | N/A                                                                         | Introduced a new Home screen, allowing customization of the welcome message, background color, and image, along with options to add conversation starters and enable previous conversations. |
+| Chat History screen    | N/A                                                                         | Enabled access to view conversations on the new screen via navigation from the home screen.                                                                                                  |
 
 ## How to Migrate
 
 For a smooth migration, follow these steps:
 
-1. Create a [Webchat v3 Endpoint](v3/configuration.md) in Cognigy.AI.
-2. Manually transfer the settings from the old Webchat Endpoint to the Webchat v3 Endpoint.
-3. Update your embedding code according to the new [Embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md) specification.
-4. Use the new bundle for Webchat v3 found on the GitHub Releases page in your embedding code.
-5. Replace the old Endpoint Config URL in the embedding code with the new one from the Webchat v3 Endpoint.
+1. Upgrade to Cognigy.AI version 4.72 or later. 
+2. Create a [Webchat v3 Endpoint](v3/configuration.md) in Cognigy.AI. 
+3. Manually transfer the settings from the old Webchat Endpoint to the Webchat v3 Endpoint.
+4. Update your embedding code according to the new [Embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md) specification:
+    - Replace the old bundle link with a new bundle for Webchat v3.
+    - Within the `initWebchat()` function replace the old Endpoint Config URL with a new Webchat v3 Endpoint Config URL.
+    - If you use Webchat settings in the `initWebchat()` function, replace them with the [new ones](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#client-side-configuration) according to Webchat v3 Endpoint settings.
+5. Locally build the Webchat and verify that everything functions as expected. 
+6. Publish the webchat on your website.
+
+## More Information
+
+- [Webchat v3: Embedding](v3/embedding.md)
+- [Webchat v3](v3/overview.md)
+- [Webchat v2](v2/overview.md)

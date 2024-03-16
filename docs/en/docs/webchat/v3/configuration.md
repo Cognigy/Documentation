@@ -22,7 +22,7 @@ hidden: false
 
 ## Configure General Settings
 
-The following General Endpoint settings that are available with this Endpoint:
+The following general settings are available within this Endpoint:
 
 - [Endpoints Overview](../../ai/endpoints/overview.md)
 - [Data Protection & Analytics](../../ai/endpoints/data-protection-and-analytics.md)
@@ -35,7 +35,7 @@ The following General Endpoint settings that are available with this Endpoint:
 - [File Storage](../../ai/endpoints/file-storage.md)
 
 !!! tip "Supports Inject & Notify"
-You can use the [Inject & Notify](../../ai/endpoints/inject-and-notify.md) functionality with this type of Endpoint.
+    You can use the [Inject & Notify](../../ai/endpoints/inject-and-notify.md) feature with this Endpoint.
 
 ## Configure Specific Settings
 
@@ -43,8 +43,6 @@ Customize your webchat to meet your specific needs.
 You can change the colors and add features like file uploads to make your virtual agent more effective.
 Any updates you make will be reflected instantly and seamlessly
 when you load or reload your Website with Webchat linked to the Endpoint.
-
-## Configure Specific Settings
 
 ### Webchat Layout
 
@@ -59,7 +57,7 @@ settings outline a forthcoming feature allowing separate logos and names for mes
 | Logo URL                                                       | To customize the Logo at the top of the Webchat, simply insert the URL of your desired image. Recommended formats are JPG, JPEG, SVG, PNG, GIF with a size of 28px x 28px.                                                                                                            |
 | Use different logo and name for Virtual & Human Agent Messages | This feature is currently unavailable and will be released soon. By default, the above specified name and logo are applied to messages written by human and virtual agents. By activating this toggle, you can specify separate logos and names for virtual and human agent messages. |
 
-### Colors
+#### Colors
 
 The Colors settings offer parameters for customizing the Webchat v3 interface, including primary and secondary colors.
 Additionally, settings outline forthcoming features: background color adjustments for chat interface,
@@ -86,7 +84,7 @@ The Advanced Layout settings offer parameters for managing the chat interface, f
 | Dynamic Image Aspect Ratio             | The images presented in the 'gallery', 'attachment', or 'top list item' template will not be manipulated to fit a specific aspect ratio. Instead, they will be displayed in their original proportions, filling the full width of the display area without any cropping or distortion.                                                                                                                                                |
 | Disable Input Autocomplete             | Use the 'Disable Input Autocomplete' setting if you want to switch off the ability of the system to automatically suggest and complete words or phrases for all users.                                                                                                                                                                                                                                                                |
 | Enable generic HTML                    | Use the 'Enable generic HTML Styling' setting if you want basic styling applied to HTML content within standard text messages. When this feature is activated, the system applies a general style format to HTML codes, enhancing the appearance of your text messages.                                                                                                                                                               |
-| Allow JavaScript in HTML Message       | Activate the 'Allow JavaScript in HTML Message Content' setting if you want to include JavaScript functionalities, such as 'onclick' or 'onload' attributes, in your HTML messages. Typically, these elements are removed before displaying the message to minimize the risk of harmful content. Note, when this setting is turned on, these elements will not be removed.                                                            |
+| Allow JavaScript in HTML Message       | Activate the 'Allow JavaScript in HTML Message Content' setting if you want to include JavaScript functionalities, such as `onclick` or `onload` attributes, in your HTML messages. Typically, these elements are removed before displaying the message to minimize the risk of harmful content. Note, when this setting is turned on, these elements will not be removed.                                                            |
 | Allow JavaScript in Button/Action URLs | Activate the 'Allow JavaScript in Button/Action URLs' setting if you wish to maintain JavaScript functionalities within button or action URLs in your interface. Usually, 'JavaScript URLs' that start with "javascript:" are removed for security reasons. However, if this setting is activated, such URLs will be preserved, and the embedded JavaScript code will be executed when the user interacts with the button or element. |
 
 ### Webchat Behavior
@@ -152,7 +150,7 @@ The Unread Messages settings help users stay informed about unread messages in W
 | Enable Unread Message Preview         | If you toggle this setting on, the Webchat displays a preview bubble containing the newest message from the agent. This is helpful when the chat interface is minimized, as you can still get an idea of the most recent communication without having to open and read through the entire conversation.                      |
 | Enable Unread Message Sound           | This setting, when turned on, triggers a notification sound every time you receive a new unread message.                                                                                                                                                                                                                     |
 
-## Home Screen
+### Home Screen
 
 The Home Screen settings enable personalization of welcome messages, backgrounds, and button texts, creating a user-friendly and brand-aligned initial chat interface.
 
@@ -166,7 +164,9 @@ The Home Screen settings enable personalization of welcome messages, backgrounds
 
 #### Conversation Starters
 
-The Conversation Starters settings offer pre-defined messages to prompt interactions with virtual agents, enhancing user engagement and streamlining conversation flow. Users can customize messages, choose interaction types (Postback Value or URL), and easily add up to five starters.
+The Conversation Starters settings offer pre-defined messages to prompt interactions with virtual agents, 
+enhancing user engagement and streamlining conversation flow. 
+Users can customize messages, choose interaction types (Postback Value or URL), and add up to five starters.
 
 | Parameter                    | Description                                                                                                                                                                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -179,7 +179,7 @@ The Conversation Starters settings offer pre-defined messages to prompt interact
 
 #### Previous Conversations
 
-The  Previous Conversations settings enable users
+The Previous Conversations settings enable users
 to access past interactions with the AI agent within the last 30 days through a dedicated button on the home screen.
 You can customize the button text and header of the conversation screen to enhance usability and personalization.
 
@@ -189,7 +189,7 @@ You can customize the button text and header of the conversation screen to enhan
 | Previous Conversations Button Text | Lets you customize the text on the 'Previous Conversations' button, which appears only if the feature is enabled. The default label is "Previous conversations."                                     |
 | Previous Conversation Title        | Allows customizing the header of the 'Previous Conversations' screen.                                                                                                                                |
 
-## Teaser Message
+### Teaser Message
 
 The Teaser Message settings include personalized teaser messages, the display of conversation starters, and the ability to define specific actions upon user interaction, such as sending messages or directing users to URLs.
 
@@ -204,11 +204,11 @@ The Teaser Message settings include personalized teaser messages, the display of
 | URL                          | This setting allows you to specify the particular URL the user will be directed to upon selecting a Conversation Starter. This feature can be used to guide users to relevant webpages or resources, enhancing their experience by providing immediate access to needed information.                                                                                       |
 | Add                          | This option allows you to include more Conversation Starters to your list. You can add up to a maximum of 5 Conversation Starters.                                                                                                                                                                                                                                         |
 
-## Chat Options
+### Chat Options
 
 The Chat Options include enabling chat features, such as quick replies and conversation rating, as well as adding a footer section for additional information or navigation links.
 
-### Enable Chat Options
+#### Enable Chat Options
 
 The Enable Chat Options settings offer features such as Quick Replies, Conversation Rating, and Footer,
 enhancing user interaction.
@@ -219,7 +219,7 @@ You can customize the title of the Chat Options screen to personalize user exper
 | Enable Chat Options | Enabling this function introduces additional interactive features such as Quick Replies, Conversation Rating, and Footer that can be accessed from the chat interface. This ensures users have broader options for communication and feedback, enhancing their interaction and overall experience with the AI agent. |
 | Title               | This setting allows you to customize the title of the Chat Options screen. By default, the title is "Chat options".                                                                                                                                                                                                  |
 
-### Quick Replies
+#### Quick Replies
 
 The Quick Replies settings improve chat interactions with pre-defined response options that users can customize, manage, and use to direct users to URLs or trigger specific responses, enhancing the overall conversational experience.
 
@@ -235,7 +235,7 @@ The Quick Replies settings improve chat interactions with pre-defined response o
 | Add                         | This option allows you to include more Conversation Starters to your list. You can add up to a maximum of 5 Quick Replies.                                                                                                                                                                                                                      |
 | TTS toggle label            | This setting is visible only if the "Show text-to-speech toggle" is activated. It allows you to customize the label of the toggle switch that controls the Text-to-Speech feature. By default, the label is set to "Enable text-to-speech".                                                                                                     |
 
-### Conversation Rating
+#### Conversation Rating
 
 The Conversation Rating settings offer a chat rating widget where users can rate their experience and provide feedback.
 You can customize text prompts and confirmation messages ensuring a user-friendly feedback process.
@@ -248,10 +248,11 @@ You can customize text prompts and confirmation messages ensuring a user-friendl
 | Rating Submit Button Text          | This setting allows you to set the text that appears on the button users click to submit their chat ratings and feedback. The default text is "Send feedback".                                                                                                                             |
 | Rating Submitted Event Banner Text | This setting enables you to customize the text that appears in a banner once a user has successfully submitted their rating and feedback. The default message is "Your feedback was submitted", providing users a clear confirmation that their input has been received.                   |
 
-### Footer
+#### Footer
 
 The Footer settings offer a customizable footer section to the chat interface.
-can set a custom title for the footer, specify a URL for redirection upon clicking, and add up to 2 title-URL pairs for additional content..
+You can set a custom title for the footer, specify a URL for redirection upon clicking,
+and add up to 2 title-URL pairs for additional content.
 
 | Parameter     | Description                                                                                                                                                                                                                                             |
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -260,9 +261,11 @@ can set a custom title for the footer, specify a URL for redirection upon clicki
 | URL           | This setting allows you to input the specific URL or web page that users will be redirected to upon clicking the footer. This can be used to direct users to additional resources or specific pages relevant to the information provided in the footer. |
 | Add           | This option allows you to add a new Title + URL pairing to the footer. You can add up to a maximum of 2 pairs for convenience and to ensure the footer stays uncluttered.                                                                               |
 
-## Privacy Notice
+### Privacy Notice
 
-The Privacy Notice settings add privacy notices to the chat interface. It includes options to enable a custom Privacy Notice, set its title and text, customize the submit button, and define the link title and URL for the Privacy Policy. These features ensure users are informed about data handling practices and consent to them, fostering trust and compliance with privacy regulations.
+The Privacy Notice settings add privacy notices to the chat interface.
+It includes options to enable a custom Privacy Notice, set its title and text, customize the Submit button, define the link title and URL for the Privacy Policy. 
+These features ensure users are informed about data handling practices and consent to them, fostering trust and compliance with privacy regulations.
 
 | Parameter                 | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Description |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
@@ -278,19 +281,20 @@ The Privacy Notice settings add privacy notices to the chat interface. It includ
 
 The Advanced settings offer customization features like adding watermarks and activating maintenance mode for transparent communication during updates. Webchat Custom Settings further enhance customization by allowing specific UI adjustments and feature integrations through JSON formatting.
 
-### Watermark
+#### Watermark
 
 The Watermark settings
-users to personalize their chat interface with a watermark that suits their branding or platform, enhancing recognition and customization options
+users to personalize their chat interface with a watermark that suits their branding or platform,
+enhancing recognition and customization options.
 
 | Parameter      | Description                                                                                                                                                                                                                                                                               |
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Watermark      | This option lets you select the type of watermark that appears at the bottom of the chat interface, acting as a subtle brand or platform identifier. You have the ability to choose between Default, Custom and None. If default is selected, the Cognigy.AI Watermark will be displayed. |
 | Watermark Text | Only available when the "Custom" option is selected for the watermark, this field allows you to specify your own text. The default Text is “Powered by Cognigy.AI”.                                                                                                                       |
 
-### Maintenance
+#### Maintenance
 
-The Maintenance settings offer activating maintenance mode in a chat service, including notification, disabling, or hiding options. It also allows for the customization of maintenance-related messages displayed to users.
+The Maintenance settings offer activating maintenance mode in a chat service, including notification, disabling, or hiding options. It allows for the customization of maintenance-related messages displayed to users.
 
 | Parameter                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -301,8 +305,9 @@ The Maintenance settings offer activating maintenance mode in a chat service, in
 
 ### Webchat Custom Settings
 
-The Webchat Custom settings let you adjust the appearance and behavior of a webchat beyond the standard options.
-You can use JSON format for customizations. Note that if the JSON is wrong, the webchat might crash.
+The Webchat Custom settings let adjust the appearance and behavior of a webchat beyond the standard options.
+You can use JSON format for customizations. 
+Note that if the JSON is wrong, the Webchat might crash.
 
 The Webchat Custom settings are used:
 
@@ -328,7 +333,8 @@ Add a link to the webchat plugin.
 Note that you can add multiple plugins.
 For more information on how to create and trigger plugins, refer to [Webchat Plugins](../plugins.md).
 
-## Demo Webchat Settings
+### Demo Webchat Settings
 
-The Cognigy Demo Webchat lets you test integrations with different providers and preview your webchat's appearance before deployment. It's a valuable tool for ensuring your webchat functions and looks as expected prior to launch.
+Demo Webchat lets test integrations with different providers and preview Webchat's appearance before deployment. 
+It's a valuable tool for ensuring your Webchat functions as expected before launch.
 For more information on how to use this feature, refer to [Demo Webchat](../demo.md).
