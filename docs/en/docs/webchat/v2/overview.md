@@ -18,7 +18,7 @@ The **Cognigy Webchat Widget** offers several benefits for seamless integration 
 
 3. **Persistent Chat History**:
     - Webchat retains chat history, ensuring continuity even during in-app navigation.
-    - Users can seamlessly continue conversations without losing context².
+    - Users can seamlessly continue conversations without losing context.
 
 4. **Event Handling**:
     - The Webchat can **react to different events** thrown during conversations.

@@ -3,7 +3,8 @@ title: "Supported Browsers"
 slug: "supported-browsers"
 hidden: false
 ---
-# Supported Browsers
+
+# Webchat v2: Supported Browsers
 
 Cognigy Webchat Widget is compatible with the browsers listed below:
 

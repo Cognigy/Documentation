@@ -12,12 +12,13 @@ Embedding Webchat v3 into your website allows you to provide a conversational in
 ## Prerequisites
 
 - Ability to modify your website's HTML content.
-- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that if you specify parameters that are already configured in Endpoint Settings, these parameters will overwrite the Endpoint settings.
+- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that if you specify parameters in the embedding code that are already configured in Endpoint Settings, the embedding parameters overwrite them.
+    - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they are not available in the Webchat v3 Endpoint settings. 
 - Created a [Webchat v3 Endpoint](configuration.md).
 
 ## Add the Embedding HTML
 
-Copy the HTML code from the endpoint associated with your virtual agent, which you want to deploy on your website:
+Copy the HTML code from the Webchat v3 Endpoint associated with your virtual agent, which you want to deploy on your website:
 
 1. Open the Cognigy.AI interface.
 2. In the left-side menu, select an Agent.
@@ -27,7 +28,7 @@ Copy the HTML code from the endpoint associated with your virtual agent, which y
 6. Copy the HTML code by hovering over the code editor and clicking the **Copy to clipboard** button.
 7. The HTML code contains the following entities:
     - The Webchat JavaScript bundle. This bundle, hosted externally on GitHub, ensures that your webpage loads the latest version of Webchat v3.
-    - The `initWebchat()` function. This function initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v2 Endpoint to connect to.
+    - The `initWebchat()` function. This function initializes the Cognigy Webchat widget with the provided configuration. The `initWebchat()` function is called with a single argument, which is the Config URL of the Webchat v3 Endpoint to connect to.
       This file contains the necessary JavaScript code to initialize and display the Cognigy Webchat widget on the webpage.
    
     ```html
@@ -50,31 +51,49 @@ If you have custom [plugins](../plugins.md) or [stylesheets](https://github.com/
 
 Note that plugins suitable for Webchat v2 may not be compatible with Webchat v3.
 
-## Customize the Initialization Settings
+## Customize the Webchat Settings
 
-You can customize the initialization settings according to your requirements:
-    - `userId` - assign a unique ID to each user.
-    - `sessionId` - assign a session ID for the current chat session.
-    - `settings` - customize the webchat behavior. In the example:
-       - `disableLocalStorage` - disable local storage of chat history.
-       - `useSessionStorage` - determine whether to use session storage.
+You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#client-side-configuration) according to your requirements:
+
+- `colors` - customize a Webchat v3 color. In the example:
+  `primaryColor` - change the primary color.
+- `behavior` - customize Webchat behavior by adjusting Webchat v3 Endpoint settings. In the example:
+    - `enableTypingIndicator` - activate a typing indicator to show when the virtual agent is replying.
+    - `messageDelay` - set the time interval, in milliseconds, between virtual agent's messages.
+    - `enableSTT` - enable the speech-to-text button in the Reply section of the chat.
+- `embeddingConfiguration` - activate settings related to Webchat browser embedding. These settings are not configurable via the Endpoint Editor.
+      - `awaitEndpointConfig` - wait for the loading of the endpoint configuration. This setting is a necessary precondition for the maintenance settings.
+- `maintenance` - configure maintenance mode to prevent users from using Webchat during maintenance. In the example:
+    - `mode` - inform the user about maintenance mode. Choose to either "hide" the Webchat Widget, "disable" it or "inform" the user about maintenance mode.
+    - `text` - a text displayed to users during maintenance mode. For example: `The agent is currently in maintenance mode, please try again later`.
+    - `title` - a title displayed to the user during maintenance mode if the mode is set to "inform". For example, "Maintenance Hours". Leave empty for no header.
 
 Example:
 
 ```html
 <script>
-    initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
-        userId: "user2",
-        sessionId: "session2",
-        settings: {
-            disableLocalStorage: true,
-            useSessionStorage: false
-        }
-    }).then(function (webchat) {
-        window.cognigyWebchat = webchat;
-        webchat.sendMessage("text",{name:"tom"});
-        webchat.open();
-    });
+  initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
+    settings: {
+      colors: {
+        primaryColor: "#fab",
+      },
+      behavior: {
+        enableTypingIndicator: true,
+        messageDelay: 5,
+        enableSTT: true,
+      },
+      embeddingConfiguration: {
+        awaitEndpointConfig: true,
+      },
+      maintenance: {
+        enabled: true,
+        mode: "inform",
+        text: "The agent is currently in maintenance mode, try again later",
+        title: "Maintenance hours",
+      },
+    },
+  }
+  );
 </script>
 ```
 
@@ -85,23 +104,33 @@ After implementing the code, open your webpage in a browser to test the function
 ```html
 <html lang="en">
 <body>
-    <script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.19/webchat.js"></script>
-    <script src="./path/to/myPlugin.js"></script>
-    <link rel="stylesheet" href="./path/to/myStylesheet.css"/>
-    <script>
-        initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
-            userId: "user2",
-            sessionId: "session2",
-            // Set endpoint settings
-            settings:{"disableLocalStorage": true, "useSessionStorage": false}
-        }).then(function (webchat) {
-            window.cognigyWebchat = webchat;
-            // send message:
-            webchat.sendMessage("text",{name:"tom"})
-            // open Webchat Widget
-            webchat.open();
-        })
-    </script>
+<script src="https://github.com/Cognigy/WebchatWidget/releases/download/v3.0.0-beta.19/webchat.js"></script>
+<script src="./path/to/myPlugin.js"></script>
+<link rel="stylesheet" href="./path/to/myStylesheet.css" />
+<script>
+    initWebchat('https://endpoint-trial.cognigy.ai/URLTOKEN', {
+      settings: {
+        colors: {
+          primaryColor: "#fab",
+        },
+        behavior: {
+          enableTypingIndicator: true,
+          messageDelay: 5,
+          enableSTT: true,
+        },
+        embeddingConfiguration: {
+          awaitEndpointConfig: true,
+        },
+        maintenance: {
+          enabled: true,
+          mode: "inform",
+          text: "The agent is currently in maintenance mode, try again later",
+          title: "Maintenance hours",
+        },
+      },
+    }
+    );
+  </script>
 </body>
 </html>
 ```
@@ -112,6 +141,5 @@ Customize Webchat further to align with your brand identity and meet specific in
 
 - [Webchat API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
 - [CSS Customization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
-- [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md). Learn how to implement an ongoing Webchat experience across page navigation.
 - [Analytics API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
 - [Custom Avatars](https://github.com/Cognigy/WebchatWidget/blob/master/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.

@@ -5,6 +5,7 @@ description: "Cognigy Webchat is a graphical chat component you can seamlessly e
 hidden: false
 ---
 
+
 # Cognigy Webchat 
 
 _Cognigy Webchat_ is a chat component that can be embedded into your website. It enables visitors to interact with a Conversational AI system powered by Cognigy.AI.

@@ -493,12 +493,16 @@ nav:
   - Getting Started:
     - webchat/getting-started.md
   - Webchat v3:
-    - webchat/v3/overview.md
+    - Overview:
+       - webchat/v3/overview.md
+    - webchat/v3/supported-browsers.md
     - webchat/v3/features.md
     - webchat/v3/configuration.md
     - webchat/v3/embedding.md
   - Webchat v2:
-    - webchat/v2/overview.md
+    - Overview:
+      - webchat/v2/overview.md
+    - webchat/v2/supported-browsers.md
     - webchat/v2/features.md
     - webchat/v2/configuration.md
     - webchat/v2/embedding.md

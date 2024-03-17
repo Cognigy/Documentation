@@ -8,10 +8,3 @@ hidden: false
 # Webchat Release Notes
 
 Find the Webchat release notes on [GitHub](https://github.com/Cognigy/WebchatWidget/releases) and central [Release Notes](../release-notes/release-notes.md) page.
-
-
-
-
-
-
-
