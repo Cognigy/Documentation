@@ -8,35 +8,56 @@ hidden: false
 
 # Cognigy Webchat 
 
-_Cognigy Webchat_ is a chat component that can be embedded into your website. It enables visitors to interact with a Conversational AI system powered by Cognigy.AI.
+_Cognigy Webchat_ is an effective communication tool that assists businesses in interacting with their customers in a seamless manner. Its main function is to facilitate real-time communication through text or voice, which aids businesses in providing immediate support, collecting feedback, and engaging with users effectively. Webchat can be easily embedded into websites, enabling visitors to communicate with Conversational AI agents powered by Cognigy.AI.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/cognigy-webchat-v3.png" width="100%" />
   <figcaption>Cognigy Webchat v3</figcaption>
 </figure>
 
-## Powerful Conversational AI Integration
+## Who are Cognigy Webchat's Users?
 
-The Webchat allows you to implement conversational AI directly into your website.
-It's an excellent tool for showcasing bots during quick demonstrations.
+Webchat caters to a wide range of users across various sectors. 
+It is particularly beneficial for businesses looking to enhance customer service, developers seeking customizable solutions, and end users seeking convenient and efficient communication channels. 
+Webchat is adaptable to retail, healthcare, finance, and other industries, making it suitable for any organization aiming to improve customer engagement and streamline communication processes.
 
-## Free of Charge
+## Benefits of Cognigy Webchat
 
-The Webchat is an opensource product and free of charge.
-You can download it from the Cognigy Webchat GitHub repository.
+Cognigy supports two Webchat versions: [v2](v2/overview.md) and [v3 (preview)](v3/overview.md).
+You can easily switch between the reliable stable version and the innovative preview version to explore new features.
 
-## Customizable User Experience
+Benefits applicable to both versions:
 
-Beyond regular text messages, the Webchat can present content and interactive inputs in various ways.
-Full style customization using CSS ensures it blends seamlessly with your website’s design.
+### Free of Charge
 
-## Webchat Plugins
+The Cognigy Webchat widget is an open-source Webchat component, available free of charge. It offers transparency, flexibility, and opportunities for collaboration and customization.
+Fork the [Cognigy Webchat GitHub](https://github.com/Cognigy/WebchatWidget) repository and implement a custom Webchat version.
 
-Extend functionality by loading additional plugins.
-Plugins can provide special input methods or expressive message displays.
-Explore the Webchat Plugins GitHub repository for existing plugins or learn how to write your own.
+### User-Friendly Interface and UI Customization
 
-## Easy Embedding
+Customizable themes, layouts, and responsive design provided by Webchat guarantee a smooth user experience across various devices.
+Businesses can tailor Webchat to match their branding, enhancing brand identity and user engagement.
 
-Follow the embedding instructions on GitHub to integrate the Webchat within your website.
-The expressive technical documentation provides examples for integrators.
+### Functional Extensibility
+
+Webchat offers a range of [plugins](plugins.md), allowing users to extend its functionalities according to their specific requirements.
+
+### Conversational Abilities
+
+Powered by AI-driven conversation capabilities and natural language processing (NLP), Webchat supports various interactions, including text and voice, enabling natural and engaging conversations.
+
+### Rich Media Support
+
+Webchat provides comprehensive support for multimedia content such as images, videos, audios, galleries, and other rich media formats, enhancing communication and user engagement.
+
+### Scalability and Performance
+
+Webchat is designed to handle varying volumes of users and messages, ensuring reliability, scalability, and optimal performance, even under high-demand scenarios.
+
+### Easy Embedding
+
+Webchat offers easy deployment options and integrates smoothly with existing websites or platforms, minimizing implementation time and effort.
+
+### Support
+
+Various support options, including [community forums](https://support.cognigy.com/hc/en-us/community/topics) and [direct support channels](../help/get-help.md), ensure users receive timely assistance and guidance whenever needed.

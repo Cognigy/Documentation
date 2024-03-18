@@ -95,7 +95,7 @@ The following tables show single role permissions of Agents, Supervisors and Adm
 | Delete Attachments                             | -     | -          | +             |
 | Download Attachments                           | -     | -          | +             |
 
-[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../ai/endpoints/webchat/deploy-webchat-endpoint.md#persistent-menu).
+[^2]: By default, human agents cannot request files from users. To enable this feature, you need to install the [File Upload](https://github.com/Cognigy/WebchatPlugins/tree/master/plugins/file-upload) plugin in the [Webchat Endpoint](../webchat/v2/configuration.md#persistent-menu).
 
 ### Audit Logs
 

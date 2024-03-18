@@ -1,11 +1,13 @@
 ---
 title: "Endpoint Configuration"
 slug: "configuration"
-description: ""
+description: "To prepare the Cognigy virtual agent for your website, you need to deploy it by creating a Webchat v2 Endpoint and customize the agent to fit your needs using the Webchat v2 Endpoint settings."
 hidden: false
 ---
 
 # Webchat v2: Endpoint Configuration
+
+To prepare the virtual agent for your website, you need to deploy it by [creating a Webchat v2 Endpoint](#create-a-webchat-v2-endpoint) and customize the agent to fit your needs using the [Webchat v2 Endpoint settings](#configure-specific-settings).
 
 ## Create a Webchat v2 Endpoint
 
@@ -34,7 +36,7 @@ The following General Endpoint settings that are available with this Endpoint:
 - [File Storage](../../ai/endpoints/file-storage.md)
 
 !!! tip "Supports Inject & Notify"
-     You can use the [Inject & Notify](../../ai/endpoints/inject-and-notify.md) functionality with this type of Endpoint.
+    You can use the [Inject & Notify](../../ai/endpoints/inject-and-notify.md) feature with this Endpoint.
 
 ## Configure Specific Settings
 

@@ -379,7 +379,7 @@ nav:
       - ai/endpoints/transformers/inject-transformer.md
     - ai/endpoints/inject-and-notify.md
     - Cognigy Webchat:
-      - ai/endpoints/webchat/webchat.md
+      - webchat/overview.md
     - Voice Gateway:
       - ai/endpoints/cognigy-vg.md
     - ai/endpoints/overview.md
@@ -492,7 +492,7 @@ nav:
     - webchat/overview.md
   - Getting Started:
     - webchat/getting-started.md
-  - Webchat v3:
+  - Webchat v3 (Preview):
     - Overview:
        - webchat/v3/overview.md
     - webchat/v3/supported-browsers.md

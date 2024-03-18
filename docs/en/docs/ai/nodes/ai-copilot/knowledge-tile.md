@@ -81,7 +81,7 @@ To use the Copilot: Knowledge AI widget, configure the following Flow:
   <figcaption>The Knowledge Tile Flow</figcaption>
 </figure>
 
-Test your Flow by using a [Demo Webchat](../../endpoints/webchat/integrated-demo-page.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
+Test your Flow by using a [Demo Webchat](../../../webchat/demo.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
 
 {! _includes/ai/nodes/forwarder.md !}
 

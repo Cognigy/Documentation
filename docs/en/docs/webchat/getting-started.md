@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 slug: "getting-started"
-description: "In the Getting Started Cognigy Webchat v3 tutorial, you will create a virtual agent from scratch, build a conversation using Basic Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode."
+description: "In the Getting Started Cognigy Webchat v3 tutorial, you will create a virtual agent from scratch, build a conversation using Cognigy.AI Nodes, deploy this agent using Webchat v3, and test the Flow in Demo Webchat mode."
 hidden: false
 ---
 

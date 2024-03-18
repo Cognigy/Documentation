@@ -52,11 +52,11 @@ If you have custom [plugins](../plugins.md) or [stylesheets](https://github.com/
 
 You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md#client-side-configuration) according to your requirements:
 
-- `userId` - assign a unique ID to each user.
-- `sessionId` - assign a session ID for the current chat session.
-- `settings` - customize the Webchat behavior by changing the Webchat Endpoint settings. In the example:
-    - `disableLocalStorage` - disable local storage of chat history.
-    - `useSessionStorage` - determine whether to use session storage.
+- `userId` — assign a unique ID to each user.
+- `sessionId` — assign a session ID for the current chat session.
+- `settings` — customize the Webchat v2 behavior by changing the Webchat Endpoint settings. In the example:
+    - `disableLocalStorage` — disable local storage of chat history.
+    - `useSessionStorage` — determine whether to use session storage.
 
 Example:
 

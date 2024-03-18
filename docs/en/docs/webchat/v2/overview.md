@@ -6,24 +6,27 @@ hidden: false
 
 # Webchat v2
 
-The **Cognigy Webchat Widget** offers several benefits for seamless integration into your website:
+_Webchat v2_ is a stable version of Cognigy Webchat, which is compatible with any version of Cognigy.AI.
 
-1. **User Interaction**:
-    - Visitors can **interact** with your **Conversational AI** system directly through the Webchat.
-    - It provides a **graphical chat interface** for a smooth user experience.
+Benefits of Webchat v2:
 
-2. **Customization**:
-    - **Full style customization** using **CSS** allows you to match the Webchat's appearance to your website's design.
-    - You can tweak parameters such as **widget colors**, **fonts**, **buttons**, **input/output styles**, and even **avatars**¹⁴.
+- **User Interaction**. Users can interact with your Conversational AI system directly through the Webchat widget. It provides a graphical chat interface for a smooth user experience.
+- **Customization**. Using CSS allows you to match the Webchat's appearance to your website's design. You can tweak parameters such as widget colors, fonts, buttons, input/output styles, and even avatars.
+- **Persistent Chat History**. Webchat retains chat history, ensuring continuity even during in-app navigation. Users can seamlessly continue conversations without losing context.
+- **Easy Embedding**. Simple JavaScript embedding allows you to integrate Webchat into your website effortlessly.
 
-3. **Persistent Chat History**:
-    - Webchat retains chat history, ensuring continuity even during in-app navigation.
-    - Users can seamlessly continue conversations without losing context.
+<figure>
+  <img class="image-center" src="{{config.site_url}}webchat/images/webchat-v2.png" width="100%" />
+  <figcaption>Cognigy Webchat v2</figcaption>
+</figure>
 
-4. **Event Handling**:
-    - The Webchat can **react to different events** thrown during conversations.
-    - This flexibility enables dynamic responses based on user actions or system triggers.
+## How to Start with Webchat v2?
 
-5. **Easy Embedding**:
-    - **Simple JavaScript embedding** allows you to integrate Webchat into your website effortlessly.
-    - No complex setup required; just follow the documentation
+Familiarize yourself with the Webchat v2 Documentation. Start by reading the documentation provided for Webchat v2.
+These articles provide you with a fundamental understanding of its features, functionality, and how to integrate it into your project:
+
+1. [Key Features](features.md). Explore the Webchat v2 features.
+2. [Supported Browsers](supported-browsers.md). Explore the supported browsers for Webchat v2.
+3. [Configuration](configuration.md). Create a Webchat v2 Endpoint and customize various settings within it.
+4. Test your Webchat v2 using the embedded [Demo Webchat](../demo.md) within the Endpoint settings, or build Webchat v2 locally using [developer tools](https://github.com/Cognigy/WebchatWidget?tab=readme-ov-file#building-your-webchat).
+5. [Embedding](embedding.md). Launch the Webchat v2 version on your website.

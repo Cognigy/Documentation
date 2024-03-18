@@ -7,6 +7,8 @@ hidden: false
 
 # Webchat 3: Embedding
 
+{! _includes/webchat/preview.md !}
+
 Embedding Webchat v3 into your website allows you to provide a conversational interface powered by virtual agents, enhancing user interaction and support. This process involves several key steps, from setting up your Cognigy Endpoint to configuring the widget's appearance and behavior on your website.
 
 ## Prerequisites
@@ -55,18 +57,18 @@ Note that plugins suitable for Webchat v2 may not be compatible with Webchat v3.
 
 You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#client-side-configuration) according to your requirements:
 
-- `colors` - customize a Webchat v3 color. In the example:
-  `primaryColor` - change the primary color.
-- `behavior` - customize Webchat behavior by adjusting Webchat v3 Endpoint settings. In the example:
-    - `enableTypingIndicator` - activate a typing indicator to show when the virtual agent is replying.
-    - `messageDelay` - set the time interval, in milliseconds, between virtual agent's messages.
-    - `enableSTT` - enable the speech-to-text button in the Reply section of the chat.
-- `embeddingConfiguration` - activate settings related to Webchat browser embedding. These settings are not configurable via the Endpoint Editor.
-      - `awaitEndpointConfig` - wait for the loading of the endpoint configuration. This setting is a necessary precondition for the maintenance settings.
-- `maintenance` - configure maintenance mode to prevent users from using Webchat during maintenance. In the example:
-    - `mode` - inform the user about maintenance mode. Choose to either "hide" the Webchat Widget, "disable" it or "inform" the user about maintenance mode.
-    - `text` - a text displayed to users during maintenance mode. For example: `The agent is currently in maintenance mode, please try again later`.
-    - `title` - a title displayed to the user during maintenance mode if the mode is set to "inform". For example, "Maintenance Hours". Leave empty for no header.
+- `colors` — customize a Webchat v3 color. In the example:
+  `primaryColor` — change the primary color.
+- `behavior` — customize the Webchat v3 behavior by adjusting Webchat v3 Endpoint settings. In the example:
+    - `enableTypingIndicator` — activate a typing indicator to show when the virtual agent is replying.
+    - `messageDelay` — set the time interval, in milliseconds, between virtual agent's messages.
+    - `enableSTT` — enable the speech-to-text button in the Reply section of the chat.
+- `embeddingConfiguration` — activate settings related to Webchat browser embedding. These settings are not configurable via the Endpoint Editor.
+      - `awaitEndpointConfig` — wait for the loading of the endpoint configuration. This setting is a necessary precondition for the maintenance settings.
+- `maintenance` — configure maintenance mode to prevent users from using Webchat during maintenance. In the example:
+    - `mode` — informing the user about maintenance mode. Choose to either `hide` the Webchat widget, `disable` it or `inform` the user about maintenance mode.
+    - `text` — a text displayed to users during maintenance mode. For example: `The agent is currently in maintenance mode, please try again later`.
+    - `title` — a title displayed to the user during maintenance mode if the mode is set to `inform`. For example, `Maintenance Hours`. Leave empty for no header.
 
 Example:
 
@@ -97,7 +99,7 @@ Example:
 </script>
 ```
 
-## Test Your Webchat
+## Test your Webchat
 
 After implementing the code, open your webpage in a browser to test the functionality.
 
