@@ -24,6 +24,8 @@ For a Cognigy.AI installation with English as the default NLU language, we recom
 - Kubernetes worker nodes are distributed across 3 Availability Zones (AZ) for high availability setup.
 - 250 GB of block SSD storage for application databases (250 GB x 3 for 3-replica MongoDB setup).
 - 10 GB of file system storage (EFS or other NFS-compatible equivalents) for application assets.
+- A dedicated and isolated VPC (Virtual Private Cloud on AWS) or VNET (Virtual Network on Azure) with at least /18 private IP address space for a production Kubernetes cluster.
+
 
 !!! warning "General-purpose machines"
     Choosing general-purpose machines instead of compute-optimized machines will have a negative impact on the performance of our software. We advise you to choose compute-optimized machines with high CPU clock speeds and reserved CPU budgets. This is especially important if you plan to install multiple natural language understanding services.
