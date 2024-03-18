@@ -51,8 +51,8 @@ The Webchat Layout settings have customization options, such as the title, color
 
 | Parameter                | 	Description                                                              |
 |--------------------------|---------------------------------------------------------------------------|
-| Webchat Title            | The text to display within the webchat header.                            |
-| Color Scheme             | The main colors for the Webchat, for example, #008080.                    |
+| Webchat Title            | The text to display within the Webchat header.                            |
+| Color Scheme             | The main colors for the Webchat widget, for example, #008080.             |
 | Bot Avatar Logo URL      | A URL linking to the logo that should be the virtual agent's avatar.      |
 | Header Logo URL          | A URL linking to the logo that should be displayed in the Webchat header. |
 | Enable Typing Indicators | Enables a typing indicator while the virtual agent is replying.           |
@@ -75,7 +75,7 @@ The Advanced Layout settings offer parameters for managing the chat interface, f
 | Allow JavaScript in Button/Action URLs   | By default, 'JavaScript URLs' starting with javascript: will get removed. If this setting is enabled, they will not be removed and the JavaScript code will get executed when the user clicks the button/element.                                                                                            |
 
 !!! note "Text Input Sanitization"
-    Text Input Sanitization is enabled by default for security reasons, before sending text from the Webchat to the NLU. This changes characters which are reserved by HTML, as for example `**",',&,<,>**`, to an entity name. For example **&** will have **amp;** appended to the input.
+    Text Input Sanitization is enabled by default for security reasons, before sending text from the Webchat widget to the NLU. This changes characters which are reserved by HTML, as for example `**",',&,<,>**`, to an entity name. For example **&** will have **amp;** appended to the input.
     This can cause issues in your Agent if a condition or Intent is only triggered by the reserved character in its original form. If you need to circumvent this issue, toggle **Allow JavaScript in HTML Message Content** to be enabled.
 
 #### Persistent Menu
@@ -92,7 +92,7 @@ The Persistent Menu ensures quick access to different conversation stages, guide
 
 #### Webchat Plugins
 
-Add a link to the webchat plugin.
+Add a link to the Webchat plugin.
 Note that you can add multiple plugins.
 For more information on how to create and trigger plugins, refer to [Webchat Plugins](../plugins.md).
 
@@ -115,7 +115,7 @@ Within the Additional Behavior settings, functionalities such as enhancing user 
 | Parameter                          | Description                                                                                                                                                                                                                                                                                                                                                           |
 |------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message Delay                      | The amount of time to wait between sending virtual agent replies. Measured in milliseconds.                                                                                                                                                                                                                                                                           |
-| Focus Input after Postback         | This setting ensures that after a Postback button or quick reply button is clicked, the Webchat immediately redirects focus back to the message input field. This function enhances usability by providing a smoother, streamlined user experience, allowing you to continue typing without having to manually click back into the text input field.                  |
+| Focus Input after Postback         | This setting ensures that after a Postback button or quick reply button is clicked, the Webchat widget immediately redirects focus back to the message input field. This function enhances usability by providing a smoother, streamlined user experience, allowing you to continue typing without having to manually click back into the text input field.           |
 | Enable Connection Status Indicator | This setting, when enabled, shows a warning message if your internet connection is lost during a conversation with the AI agent. This ensures you're aware of any potential interruptions or delays in the chat conversation. The warning will automatically disappear once the internet connection is re-established, indicating that the chat can proceed normally. |
 
 ### Teaser Message Settings
@@ -133,7 +133,7 @@ The Unread Messages settings help users stay informed about unread messages in W
 |---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Enable Unread Message Title Indicator | If this setting is turned on, it will show the number of unread messages in the browser tab title every 1000 milliseconds. This helps the user to keep track of messages that are yet to be read, ensuring no communication from the AI Agent is missed, especially when the user is multitasking and has several tabs open. |
 | Enable Unread Message Badge           | When this feature is enabled, a badge displaying the count of unread messages will appear on the Webchat toggle button. This ensures users are aware of any new messages or responses from the AI agent that they have yet to view, promoting timely and responsive interactions.                                            |
-| Enable Unread Message Preview         | If you toggle this setting on, the Webchat displays a preview bubble containing the newest message from the agent. This is helpful when the chat interface is minimized, as you can still get an idea of the most recent communication without having to open and read through the entire conversation.                      |
+| Enable Unread Message Preview         | If you toggle this setting on, the Webchat widget displays a preview bubble containing the newest message from the agent. This is helpful when the chat interface is minimized, as you can still get an idea of the most recent communication without having to open and read through the entire conversation.               |
 | Enable Unread Message Sound           | This setting, when turned on, triggers a notification sound every time you receive a new unread message.                                                                                                                                                                                                                     |
 
 ### Conversation Rating Settings
@@ -160,7 +160,7 @@ The Business Hours settings offer management of business hours in Webchat. They 
 
 | Parameter                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enable Business Hours            | When this setting is enabled, the Webchat widget will be available only during the specified business hours. This ensures users that support or assistance through live chat is available during those hours. If a user attempts to engage in chat outside of these hours, you can choose what appears: the Webchat can be hidden, disabled, or present a message informing the user about the non-business hours. This allows companies to effectively manage their customer support and align with their operational timings.                                     |
+| Enable Business Hours            | When this setting is enabled, the Webchat widget will be available only during the specified business hours. This ensures users that support or assistance through live chat is available during those hours. If a user attempts to engage in chat outside of these hours, you can choose what appears: the Webchat widget can be hidden, disabled, or present a message informing the user about the non-business hours. This allows companies to effectively manage their customer support and align with their operational timings.                              |
 | Business Hours Mode              | Select the behavior if the bot is called out of business hours. Choose one of the following modes:<br>- Inform users about calling out of business hours: Users will receive a message in the Webchat interface informing them that they are contacting the bot outside of business hours.<br>- Hide the Webchat Widget: The chat widget will be completely hidden from users outside of business hours.<br>- Disable the Webchat Widget: The chat widget will be visible but disabled, preventing users from interacting with the bot until business hours resume. |
 | Business Hours Information Text  | The parameter is applicable to the following modes: **Inform users about calling out of business hours** and **Disable the Webchat Widget**. The text that will be displayed to users during out-of-business hours.                                                                                                                                                                                                                                                                                                                                                 |
 | Business Hours Information Title | The parameter is applicable to **Inform users about calling out of business hours** mode. The title that will be displayed to users during out-of-business hours.                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -183,7 +183,7 @@ The Maintenance settings offer activating maintenance mode in a chat service, in
 ### Webchat Custom Settings
 
 The Webchat Custom settings let you adjust the appearance and behavior of a webchat beyond the standard options.
-You can use JSON format for customizations. Note that if the JSON is wrong, the webchat might crash.
+You can use JSON format for customizations. Note that if the JSON is wrong, the Webchat widget might crash.
 
 ## More Information
 

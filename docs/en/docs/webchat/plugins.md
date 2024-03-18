@@ -111,7 +111,7 @@ actions. output('' , {
 
 ### Extensions
 
-You can build an [Extension](../ai/resources/manage/extensions.md) that sends a message triggering the webchat plugin, simplifying the process to only include necessary parameters.
+You can build an [Extension](../ai/resources/manage/extensions.md) that sends a message triggering the Webchat plugin, simplifying the process to only include necessary parameters.
 
 Custom module example:
 

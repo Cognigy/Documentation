@@ -71,7 +71,7 @@ If you need to provide navigation options for users, but do not need the rich st
 
 ## Date Picker
 
-Anytime your Bot asks for a date input via the Webchat, it will let users select that Date through an interactive Date Picker.
+Anytime your Bot asks for a date input via the Webchat widget, it will let users select that Date through an interactive Date Picker.
 
 At first, it will present the user a button that indicates the selection of a date.
 
@@ -79,7 +79,7 @@ At first, it will present the user a button that indicates the selection of a da
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/date-picker-selection-date.png" width="100%" />
 </figure>
 
-When clicked, it will open a full-screen overlay for the Webchat. The user can now pick a date based on constraints you defined in the bot.
+When clicked, it will open a full-screen overlay for the Webchat widget. The user can now pick a date based on constraints you defined in the bot.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/date-picker.png" width="100%" />

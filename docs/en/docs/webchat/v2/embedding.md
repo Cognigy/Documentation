@@ -41,7 +41,7 @@ Copy the HTML code from the Webchat v2 Endpoint associated with your virtual age
 
 ## Include Custom Plugins and Stylesheets
 
-If you have custom [plugins](../plugins.md) or [stylesheets](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md) for the webchat, include them by adding the appropriate `<script>` and `<link>` tags respectively. Replace the placeholders with the paths to your custom files.
+If you have custom [plugins](../plugins.md) or [stylesheets](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md) for the Webchat widget, include them by adding the appropriate `<script>` and `<link>` tags respectively. Replace the placeholders with the paths to your custom files.
 
 ```html
 <script src="./path/to/myPlugin.js"></script>
@@ -113,7 +113,7 @@ After implementing the code, open your webpage in a browser to test the function
 Customize Webchat further to align with your brand identity and meet specific interaction goals:
 
 - [Webchat API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/webchat-api.md). Use the Webchat API to create tightly coupled integrations.
-- [CSS Customization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md). Customize the look and feel of the Webchat to match the design language of your website.
+- [CSS Customization](https://github.com/Cognigy/WebchatWidget/blob/master/docs/css-customization.md). Customize the look and feel of the Webchat widget to match the design language of your website.
 - [Persistent History](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md). Learn how to save user's chat history, so they can refer to them later.
 - [Analytics API](https://github.com/Cognigy/WebchatWidget/blob/master/docs/analytics-api.md). Get notified and react to events that happen in your Webchat.
 - [Custom Avatars](https://github.com/Cognigy/WebchatWidget/blob/master/docs/custom-avatars.md). Change the avatar of the bot or user during the conversation.
