@@ -13,10 +13,10 @@ Embedding Webchat v3 into your website allows you to provide a conversational in
 
 ## Prerequisites
 
-- Ability to modify your website's HTML content.
-- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that if you specify parameters in the embedding code that are already configured in Endpoint Settings, the embedding parameters overwrite them.
-    - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they are not available in the Webchat v3 Endpoint settings. 
-- Created a [Webchat v3 Endpoint](configuration.md).
+- Ability to modify the HTML content of your website.
+- Familiarity with Webchat v3 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
+      - Note that some settings are [specific to embedding](https://github.com/Cognigy/WebchatWidget/blob/v3/docs/embedding.md#embedding-configuration), as they are not available in the Webchat v3 Endpoint settings. 
+- Create a [Webchat v3 Endpoint](configuration.md).
 
 ## Add the Embedding HTML
 
@@ -64,7 +64,7 @@ You can customize the [Webchat settings](https://github.com/Cognigy/WebchatWidge
     - `messageDelay` — set the time interval, in milliseconds, between virtual agent's messages.
     - `enableSTT` — enable the speech-to-text button in the Reply section of the chat.
 - `embeddingConfiguration` — activate settings related to Webchat browser embedding. These settings are not configurable via the Endpoint Editor.
-      - `awaitEndpointConfig` — wait for the loading of the endpoint configuration. This setting is a necessary precondition for the maintenance settings.
+    - `awaitEndpointConfig` — wait for the loading of the endpoint configuration. This setting is a necessary precondition for the maintenance settings.
 - `maintenance` — configure maintenance mode to prevent users from using Webchat during maintenance. In the example:
     - `mode` — informing the user about maintenance mode. Choose to either `hide` the Webchat widget, `disable` it or `inform` the user about maintenance mode.
     - `text` — a text displayed to users during maintenance mode. For example: `The agent is currently in maintenance mode, please try again later`.

@@ -104,7 +104,7 @@ Once the Webchat v3 settings are configured, proceed to test the virtual agent.
 To test your virtual agent via Demo Webchat, follow these steps:
 
 1. In the upper-right corner of the **Endpoint Editor** page, select **Open Demo Webchat**. A home screen of Webchat v3 opens. 
-2. Click the **I need technical Support** button that triggers a conversation with the virtual agent.
+2. Click the button **I need technical Support** that triggers a conversation with the virtual agent.
     <figure>
       <img class="image-center" src="{{config.site_url}}webchat/images/getting-started/home-screen.png" width="100%" />
     </figure>

@@ -27,7 +27,8 @@ If you want to showcase structured content interactively, you can use the Galler
 
 ## List
 
-Using the List Template, you can present 2-4 list options to a user. This is preferably used over a Gallery Template in case the user has to see all options at a glance.
+Using the List Template, you can present 2–4 list options to a user.
+This is preferably used over a Gallery Template in case the user has to see all options at a glance.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/v2/list.png" width="100%" />
@@ -71,7 +72,8 @@ If you need to provide navigation options for users, but do not need the rich st
 
 ## Date Picker
 
-Anytime your Bot asks for a date input via the Webchat widget, it will let users select that Date through an interactive Date Picker.
+Anytime your Bot asks for a date input via the Webchat widget,
+it will let users select that Date through an interactive Date Picker.
 
 At first, it will present the user a button that indicates the selection of a date.
 

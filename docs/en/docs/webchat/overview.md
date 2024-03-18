@@ -8,7 +8,7 @@ hidden: false
 
 # Cognigy Webchat 
 
-_Cognigy Webchat_ is an effective communication tool that assists businesses in interacting with their customers in a seamless manner. Its main function is to facilitate real-time communication through text or voice, which aids businesses in providing immediate support, collecting feedback, and engaging with users effectively. Webchat can be easily embedded into websites, enabling visitors to communicate with Conversational AI agents powered by Cognigy.AI.
+_Cognigy Webchat_ is an effective communication tool that assists businesses in interacting with their customers in a seamless manner. Its main function is to facilitate real-time communication through text or voice messages, which aids businesses in providing immediate support, collecting feedback, and engaging with users effectively. Webchat can be easily embedded into websites, enabling visitors to communicate with Conversational AI agents powered by Cognigy.AI.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/cognigy-webchat-v3.png" width="100%" />
@@ -44,7 +44,7 @@ Webchat offers a range of [plugins](plugins.md), allowing users to extend its fu
 
 ### Conversational Abilities
 
-Powered by AI-driven conversation capabilities and natural language processing (NLP), Webchat supports various interactions, including text and voice, enabling natural and engaging conversations.
+Powered by AI-driven conversation capabilities and natural language processing (NLP), Webchat supports various interactions, including text and voice messages, enabling natural and engaging conversations.
 
 ### Rich Media Support
 

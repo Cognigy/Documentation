@@ -45,7 +45,7 @@ It provides a user-friendly start with options to customize these messages and t
   <img class="image-center" src="{{config.site_url}}webchat/images/v3/conversation-starters.png" width="100%" />
 </figure>
 
-To configure conversation starters, refer to the [Home Screen](configuration.md#conversation-starters) settings.
+To configure the conversation starters, refer to the [Home Screen](configuration.md#conversation-starters) settings.
 
 ### Previous Conversations
 
@@ -81,13 +81,13 @@ To configure the Chat Options page, refer to the [Chat Options](configuration.md
 
 The Quick Replies feature at the top of the Chat Option screen simplifies interactions by offering instant responses or directing users to more information. Users can easily choose from these options to address common questions or navigate to additional resources.
 
-To configure quick replies, refer to the [Quick Replies](configuration.md#quick-replies) settings.
+To configure the quick replies, refer to the [Quick Replies](configuration.md#quick-replies) settings.
 
 ### Conversation Rating
 
 The Conversation Rating feature in chat options allows users to rate and provide feedback on their chat experience, crucial for improving assistant performance. It offers customizable settings including the invitation to rate, placeholder for comments, submit button text, and a confirmation banner message. This streamlined feedback mechanism engages users directly, making it easier to gather and act on valuable user insights.
 
-To configure conversation rating, refer to the [Conversation Rating](configuration.md#conversation-rating) settings.
+To configure the conversation rating, refer to the [Conversation Rating](configuration.md#conversation-rating) settings.
 
 ## Privacy Notice
 

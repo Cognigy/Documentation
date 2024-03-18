@@ -11,9 +11,9 @@ Embedding Webchat v2 into your website allows you to provide a conversational in
 
 ## Prerequisites
 
-- Ability to modify your website's HTML content.
-- Familiarity with Webchat v2 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md). Note that if you specify parameters in the embedding code that are already configured in Endpoint Settings, the embedding parameters overwrite them.
-- Created a [Webchat Endpoint](configuration.md).
+- Ability to modify the HTML content of your website.
+- Familiarity with Webchat v2 [embedding parameters](https://github.com/Cognigy/WebchatWidget/blob/master/docs/embedding.md). Note that specifying parameters in the embedding code that are already configured in Endpoint Settings will overwrite them.
+- Create a [Webchat Endpoint](configuration.md).
 
 ## Add the Embedding HTML
 

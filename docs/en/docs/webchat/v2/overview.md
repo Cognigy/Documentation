@@ -13,7 +13,7 @@ Benefits of Webchat v2:
 - **User Interaction**. Users can interact with your Conversational AI system directly through the Webchat widget. It provides a graphical chat interface for a smooth user experience.
 - **Customization**. Using CSS allows you to match the Webchat's appearance to your website's design. You can tweak parameters such as widget colors, fonts, buttons, input/output styles, and even avatars.
 - **Persistent Chat History**. Webchat retains chat history, ensuring continuity even during in-app navigation. Users can seamlessly continue conversations without losing context.
-- **Easy Embedding**. Simple JavaScript embedding allows you to integrate Webchat into your website effortlessly.
+- **Easy Embedding**. JavaScript embedding allows you to integrate Webchat into your website effortlessly.
 
 <figure>
   <img class="image-center" src="{{config.site_url}}webchat/images/webchat-v2.png" width="100%" />
