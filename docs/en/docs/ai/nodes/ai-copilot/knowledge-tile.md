@@ -6,7 +6,7 @@ hidden: false
 
 # Copilot: Knowledge Tile
 
-[![Version badge](https://img.shields.io/badge/Added in-v4.66-blue.svg)](../../../release-notes/4.66.md)
+[![Version badge](https://img.shields.io/badge/Added in-v4.72-blue.svg)](../../../release-notes/4.72.md)
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/knowledge-tile.png" width="80%"/>
@@ -38,6 +38,10 @@ For more information, refer to the [Configuration](#configuration) section.
 |-----------------|---------------|----------------------------------------------------------------------|
 | Tile ID         | CognigyScript | The ID that you created in the AI Copilot configuration.             |
 | Knowledge Store | Select        | Select a store from the list to allow the Node to retrieve the data. |
+
+### Enable Copy to Clipboard Button
+
+{! _includes/ai/nodes/forwarder.md !}
 
 ### Search Settings
 
@@ -82,8 +86,6 @@ To use the Copilot: Knowledge AI widget, configure the following Flow:
 </figure>
 
 Test your Flow by using a [Demo Webchat](../../endpoints/webchat/integrated-demo-page.md) in the Webchat Endpoint. You can use Live Agent as a handover provider or any other available provider.
-
-{! _includes/ai/nodes/forwarder.md !}
 
 <figure>
   <img class="image-center" src="{{config.site_url}}ai/nodes/images/ai-copilot/knowledge-tile-example.png" width="80%"/>
