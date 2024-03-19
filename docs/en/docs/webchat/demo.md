@@ -18,7 +18,7 @@ To start using Demo Webchat, follow these steps:
 3. On the **Endpoints** page, select existing Webchat Endpoint or create a new one by clicking **+ New Endpoint**.
 4. In the upper-right corner of the Endpoint editor, click **Open Demo Webchat**.
 
-The Webchat Demo Page will display a website that contains a Webchat you have configured in the Webchat settings within the Endpoint in Cognigy.AI.
+The Webchat Demo Page will display a website that contains a Webchat widget you have configured in the Endpoint Settings in Cognigy.AI.
 
 ### Manually Defining the User ID
 
