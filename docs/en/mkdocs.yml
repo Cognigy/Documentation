@@ -305,6 +305,7 @@ nav:
     - Other Nodes:
       - ai/nodes/other-nodes/overview.md
       - ai/nodes/other-nodes/knowledge-search.md
+      - ai/nodes/other-nodes/llm-entity-extract.md
       - ai/nodes/other-nodes/log-message.md
       - ai/nodes/other-nodes/search-extract-output.md
       - ai/nodes/other-nodes/set-translation.md
